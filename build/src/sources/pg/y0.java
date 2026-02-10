@@ -1,94 +1,43 @@
 package pg;
 
-import java.util.AbstractCollection;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class y0 extends AbstractCollection {
+final class y0 implements zi.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final y0 f44208a = new y0();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f44209b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f44210c;
 
     /* renamed from: d  reason: collision with root package name */
-    final Map f44988d;
+    private static final zi.c f44211d;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public y0(Map map) {
-        this.f44988d = map;
+    static {
+        c.b a10 = zi.c.a("logEventKey");
+        f fVar = new f();
+        fVar.a(1);
+        f44209b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("eventCount");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f44210c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("inferenceDurationStats");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f44211d = a12.b(fVar3.b()).a();
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final void clear() {
-        this.f44988d.clear();
+    private y0() {
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean contains(Object obj) {
-        return this.f44988d.containsValue(obj);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean isEmpty() {
-        return this.f44988d.isEmpty();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
-    public final Iterator iterator() {
-        return new v0(this.f44988d.entrySet().iterator());
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean remove(Object obj) {
-        try {
-            return super.remove(obj);
-        } catch (UnsupportedOperationException unused) {
-            for (Map.Entry entry : this.f44988d.entrySet()) {
-                if (ze.a(obj, entry.getValue())) {
-                    this.f44988d.remove(entry.getKey());
-                    return true;
-                }
-            }
-            return false;
-        }
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean removeAll(Collection collection) {
-        try {
-            if (collection != null) {
-                return super.removeAll(collection);
-            }
-            throw null;
-        } catch (UnsupportedOperationException unused) {
-            HashSet hashSet = new HashSet();
-            for (Map.Entry entry : this.f44988d.entrySet()) {
-                if (collection.contains(entry.getValue())) {
-                    hashSet.add(entry.getKey());
-                }
-            }
-            return this.f44988d.keySet().removeAll(hashSet);
-        }
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean retainAll(Collection collection) {
-        try {
-            if (collection != null) {
-                return super.retainAll(collection);
-            }
-            throw null;
-        } catch (UnsupportedOperationException unused) {
-            HashSet hashSet = new HashSet();
-            for (Map.Entry entry : this.f44988d.entrySet()) {
-                if (collection.contains(entry.getValue())) {
-                    hashSet.add(entry.getKey());
-                }
-            }
-            return this.f44988d.keySet().retainAll(hashSet);
-        }
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final int size() {
-        return this.f44988d.size();
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

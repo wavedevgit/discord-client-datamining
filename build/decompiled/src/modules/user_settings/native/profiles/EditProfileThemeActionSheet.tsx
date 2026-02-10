@@ -33,20 +33,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = {};
-    var8 = {};
-    var10 = 3;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.BACKGROUND_SURFACE_HIGH;
-    var8.backgroundColor = var12;
-    var3.container = var8;
     var8 = {
         'tintColor': null,
         'marginLeft': 4,
         'width': 20,
         'height': 20
     };
+    var10 = 3;
     var12 = var5[var10];
     var12 = var11.bind(var0)(var12);
     var12 = var12.colors;
@@ -187,4 +180,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 5258, 5261, 1234, 6672, 5430, 3279, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 5258, 5261, 1234, 6673, 5431, 3279, 2]);

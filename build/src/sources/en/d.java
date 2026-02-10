@@ -1,90 +1,105 @@
 package en;
 
 import android.view.View;
-import android.view.ViewParent;
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.r0;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function4;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.Reflection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface d extends LifecycleOwner {
+public final class d implements en.b {
 
-    /* renamed from: f */
-    public static final a f21675f = a.f21676a;
+    /* renamed from: d  reason: collision with root package name */
+    private final Object f21779d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f21780e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Function0 f21781i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final c0 f21782o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    static final class a extends Lambda implements Function1 {
 
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f21783d = new a();
+
+        a() {
+            super(1);
+        }
+
+        @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
-        static final /* synthetic */ a f21676a = new a();
-
-        /* renamed from: en.d$a$a */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0290a extends Lambda implements Function1 {
-
-            /* renamed from: d */
-            public static final C0290a f21677d = new C0290a();
-
-            C0290a() {
-                super(1);
-            }
-
-            @Override // kotlin.jvm.functions.Function1
-            /* renamed from: a */
-            public final Lifecycle invoke(View v10) {
-                Intrinsics.checkNotNullParameter(v10, "v");
-                return a.f21676a.b(v10);
-            }
-        }
-
-        private a() {
-        }
-
-        public final Lifecycle b(View view) {
-            View view2;
-            LifecycleOwner a10;
-            ViewParent parent = view.getParent();
-            Lifecycle lifecycle = null;
-            if (parent instanceof View) {
-                view2 = (View) parent;
-            } else {
-                view2 = null;
-            }
-            if (view2 != null && (a10 = c.f21674a.a(view2)) != null) {
-                lifecycle = a10.getLifecycle();
-            }
-            if (lifecycle != null) {
-                return lifecycle;
-            }
-            throw new IllegalStateException(("Expected parent or context of " + view + " to have or be a ViewTreeLifecycleOwner").toString());
-        }
-
-        public static /* synthetic */ void e(a aVar, View view, Function1 function1, int i10, Object obj) {
-            if ((i10 & 2) != 0) {
-                function1 = C0290a.f21677d;
-            }
-            aVar.d(view, function1);
-        }
-
-        public final d c(View view) {
-            Intrinsics.checkNotNullParameter(view, "view");
-            LifecycleOwner a10 = r0.a(view);
-            if (a10 instanceof d) {
-                return (d) a10;
-            }
-            return null;
-        }
-
-        public final void d(View view, Function1 findParentLifecycle) {
-            Intrinsics.checkNotNullParameter(view, "view");
-            Intrinsics.checkNotNullParameter(findParentLifecycle, "findParentLifecycle");
-            b bVar = new b(findParentLifecycle, false, 2, null);
-            r0.b(view, bVar);
-            view.addOnAttachStateChangeListener(bVar);
+        public final Object invoke(d outer) {
+            Intrinsics.checkNotNullParameter(outer, "outer");
+            return outer.d();
         }
     }
 
-    void d();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class b extends Lambda implements Function4 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final b f21784d = new b();
+
+        b() {
+            super(4);
+        }
+
+        public final void a(View view, Function2 innerShowRendering, d outerRendering, a0 viewEnvironment) {
+            Intrinsics.checkNotNullParameter(view, "view");
+            Intrinsics.checkNotNullParameter(innerShowRendering, "innerShowRendering");
+            Intrinsics.checkNotNullParameter(outerRendering, "outerRendering");
+            Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
+            if (!outerRendering.c()) {
+                e.c(view, outerRendering.b());
+            }
+            innerShowRendering.invoke(outerRendering.d(), viewEnvironment);
+            if (outerRendering.c()) {
+                e.c(view, outerRendering.b());
+            }
+        }
+
+        @Override // kotlin.jvm.functions.Function4
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
+            a((View) obj, (Function2) obj2, (d) obj3, (a0) obj4);
+            return Unit.f31765a;
+        }
+    }
+
+    public d(Object wrapped, boolean z10, Function0 function0) {
+        Intrinsics.checkNotNullParameter(wrapped, "wrapped");
+        this.f21779d = wrapped;
+        this.f21780e = z10;
+        this.f21781i = function0;
+        this.f21782o = new i(Reflection.getOrCreateKotlinClass(d.class), a.f21783d, null, b.f21784d, 4, null);
+    }
+
+    @Override // en.b
+    public c0 a() {
+        return this.f21782o;
+    }
+
+    public final Function0 b() {
+        return this.f21781i;
+    }
+
+    public final boolean c() {
+        return this.f21780e;
+    }
+
+    public final Object d() {
+        return this.f21779d;
+    }
+
+    public /* synthetic */ d(Object obj, boolean z10, Function0 function0, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(obj, (i10 & 2) != 0 ? false : z10, (i10 & 4) != 0 ? null : function0);
+    }
 }

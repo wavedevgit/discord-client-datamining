@@ -11,16 +11,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class i implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28556d;
+    private String f28756d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28557e;
+    private String f28757e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28558i;
+    private String f28758i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f28559o;
+    private Map f28759o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -56,19 +56,19 @@ public final class i implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        iVar.f28558i = e3Var.q1();
+                        iVar.f28758i = e3Var.m1();
                         break;
                     case 1:
-                        iVar.f28556d = e3Var.q1();
+                        iVar.f28756d = e3Var.m1();
                         break;
                     case 2:
-                        iVar.f28557e = e3Var.q1();
+                        iVar.f28757e = e3Var.m1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.u1(iLogger, concurrentHashMap, o02);
+                        e3Var.p1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -79,37 +79,37 @@ public final class i implements w1 {
     }
 
     public void d(String str) {
-        this.f28556d = str;
+        this.f28756d = str;
     }
 
     public void e(String str) {
-        this.f28557e = str;
+        this.f28757e = str;
     }
 
     public void f(String str) {
-        this.f28558i = str;
+        this.f28758i = str;
     }
 
     public void g(Map map) {
-        this.f28559o = map;
+        this.f28759o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28556d != null) {
-            f3Var.e("city").f(this.f28556d);
+        if (this.f28756d != null) {
+            f3Var.e("city").f(this.f28756d);
         }
-        if (this.f28557e != null) {
-            f3Var.e("country_code").f(this.f28557e);
+        if (this.f28757e != null) {
+            f3Var.e("country_code").f(this.f28757e);
         }
-        if (this.f28558i != null) {
-            f3Var.e("region").f(this.f28558i);
+        if (this.f28758i != null) {
+            f3Var.e("region").f(this.f28758i);
         }
-        Map map = this.f28559o;
+        Map map = this.f28759o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28559o.get(str);
+                Object obj = this.f28759o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

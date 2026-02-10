@@ -20,14 +20,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/guild_antiraid/getGuildSafetyAlertsChannelId.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun70434: for (var _fun70434_ip = 0;;) switch (_fun70434_ip) {
+        _fun70299: for (var _fun70299_ip = 0;;) switch (_fun70299_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.safetyAlertsChannelId;
                 var2 = null;
                 if (!(var2 == var0)) {
-                    _fun70434_ip = 21;
-                    continue _fun70434
+                    _fun70299_ip = 21;
+                    continue _fun70299
                 }
             case 15:
                 var0 = var1.publicUpdatesChannelId;

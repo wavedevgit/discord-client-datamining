@@ -7,32 +7,32 @@ import java.util.Map;
 public class o {
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f4143b = true;
+    private static boolean f3840b = true;
 
     /* renamed from: d  reason: collision with root package name */
-    private static volatile o f4145d;
+    private static volatile o f3842d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f4147a = Collections.EMPTY_MAP;
+    private final Map f3844a = Collections.EMPTY_MAP;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Class f4144c = c();
+    private static final Class f3841c = c();
 
     /* renamed from: e  reason: collision with root package name */
-    static final o f4146e = new o(true);
+    static final o f3843e = new o(true);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f4148a;
+        private final Object f3845a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f4149b;
+        private final int f3846b;
 
         a(Object obj, int i10) {
-            this.f4148a = obj;
-            this.f4149b = i10;
+            this.f3845a = obj;
+            this.f3846b = i10;
         }
 
         public boolean equals(Object obj) {
@@ -40,14 +40,14 @@ public class o {
                 return false;
             }
             a aVar = (a) obj;
-            if (this.f4148a != aVar.f4148a || this.f4149b != aVar.f4149b) {
+            if (this.f3845a != aVar.f3845a || this.f3846b != aVar.f3846b) {
                 return false;
             }
             return true;
         }
 
         public int hashCode() {
-            return (System.identityHashCode(this.f4148a) * 65535) + this.f4149b;
+            return (System.identityHashCode(this.f3845a) * 65535) + this.f3846b;
         }
     }
 
@@ -56,18 +56,18 @@ public class o {
 
     public static o b() {
         o oVar;
-        o oVar2 = f4145d;
+        o oVar2 = f3842d;
         if (oVar2 == null) {
             synchronized (o.class) {
                 try {
-                    oVar = f4145d;
+                    oVar = f3842d;
                     if (oVar == null) {
-                        if (f4143b) {
+                        if (f3840b) {
                             oVar = n.a();
                         } else {
-                            oVar = f4146e;
+                            oVar = f3843e;
                         }
-                        f4145d = oVar;
+                        f3842d = oVar;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -87,7 +87,7 @@ public class o {
     }
 
     public w.c a(o0 o0Var, int i10) {
-        android.support.v4.media.session.b.a(this.f4147a.get(new a(o0Var, i10)));
+        android.support.v4.media.session.b.a(this.f3844a.get(new a(o0Var, i10)));
         return null;
     }
 }

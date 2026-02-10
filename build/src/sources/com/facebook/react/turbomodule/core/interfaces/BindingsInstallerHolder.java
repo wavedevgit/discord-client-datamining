@@ -1,7 +1,7 @@
 package com.facebook.react.turbomodule.core.interfaces;
 
 import com.facebook.jni.HybridData;
-import fb.a;
+import gb.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;

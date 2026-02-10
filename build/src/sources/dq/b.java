@@ -1,39 +1,32 @@
 package dq;
 
-import android.os.Parcelable;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import kotlin.collections.o0;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.Lazy;
+import kotlin.jvm.functions.Function0;
+import rr.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b extends Parcelable {
+public abstract class b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final Map f21018a = new LinkedHashMap();
-
-        public final a a(String str, Function1 cb2) {
-            Intrinsics.checkNotNullParameter(cb2, "cb");
-            if (str == null) {
-                return this;
-            }
-            this.f21018a.put(str, cb2);
-            return this;
+    /* renamed from: a  reason: collision with root package name */
+    private static final Lazy f20956a = l.a(new Function0() { // from class: dq.a
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            boolean c10;
+            c10 = b.c();
+            return Boolean.valueOf(c10);
         }
+    });
 
-        public final List b() {
-            return o0.A(this.f21018a);
-        }
+    public static final boolean b() {
+        return ((Boolean) f20956a.getValue()).booleanValue();
     }
 
-    List P();
-
-    List getComponents();
-
-    StepStyles.UiStepStyle getStyles();
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean c() {
+        try {
+            Class.forName("androidx.test.espresso.Espresso");
+            return true;
+        } catch (ClassNotFoundException unused) {
+            return false;
+        }
+    }
 }

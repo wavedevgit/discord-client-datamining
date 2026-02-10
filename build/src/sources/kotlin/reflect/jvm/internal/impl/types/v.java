@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.error.ErrorType;
 public class v implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeParameterUpperBoundEraser f34821d;
+    private final TypeParameterUpperBoundEraser f34530d;
 
     public v(TypeParameterUpperBoundEraser typeParameterUpperBoundEraser) {
-        this.f34821d = typeParameterUpperBoundEraser;
+        this.f34530d = typeParameterUpperBoundEraser;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ErrorType c10;
-        c10 = TypeParameterUpperBoundEraser.c(this.f34821d);
+        c10 = TypeParameterUpperBoundEraser.c(this.f34530d);
         return c10;
     }
 }

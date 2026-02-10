@@ -1,5 +1,5 @@
 package com.facebook.yoga;
-@sb.a
+@tb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public enum YogaLogLevel {
     ERROR(0),
@@ -11,13 +11,13 @@ public enum YogaLogLevel {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f11421d;
+    private final int f11561d;
 
     YogaLogLevel(int i10) {
-        this.f11421d = i10;
+        this.f11561d = i10;
     }
 
-    @sb.a
+    @tb.a
     public static YogaLogLevel fromInt(int i10) {
         if (i10 != 0) {
             if (i10 != 1) {

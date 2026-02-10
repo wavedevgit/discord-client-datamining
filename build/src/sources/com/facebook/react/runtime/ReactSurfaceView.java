@@ -72,7 +72,7 @@ public class ReactSurfaceView extends ReactRootView {
         Intrinsics.checkNotNullParameter(event, "event");
         if (this.jsPointerDispatcher == null) {
             if (ReactFeatureFlags.dispatchPointerEvents) {
-                p8.a.J(TAG, "Unable to dispatch pointer events to JS before the dispatcher is available");
+                q8.a.J(TAG, "Unable to dispatch pointer events to JS before the dispatcher is available");
                 return;
             }
             return;
@@ -86,7 +86,7 @@ public class ReactSurfaceView extends ReactRootView {
             }
             return;
         }
-        p8.a.J(TAG, "Unable to dispatch pointer events to JS as the React instance has not been attached");
+        q8.a.J(TAG, "Unable to dispatch pointer events to JS as the React instance has not been attached");
     }
 
     @Override // com.facebook.react.ReactRootView
@@ -105,7 +105,7 @@ public class ReactSurfaceView extends ReactRootView {
             jSTouchDispatcher.handleTouchEvent(event, eventDispatcher$ReactAndroid_release, reactContext);
             return;
         }
-        p8.a.J(TAG, "Unable to dispatch touch events to JS as the React instance has not been attached");
+        q8.a.J(TAG, "Unable to dispatch touch events to JS as the React instance has not been attached");
     }
 
     @Override // com.facebook.react.ReactRootView
@@ -213,7 +213,7 @@ public class ReactSurfaceView extends ReactRootView {
     protected void onMeasure(int i10, int i11) {
         int i12;
         int i13;
-        qb.a.c(0L, "ReactSurfaceView.onMeasure");
+        rb.a.c(0L, "ReactSurfaceView.onMeasure");
         int mode = View.MeasureSpec.getMode(i10);
         if (mode != Integer.MIN_VALUE && mode != 0) {
             i12 = View.MeasureSpec.getSize(i10);
@@ -244,7 +244,7 @@ public class ReactSurfaceView extends ReactRootView {
         this.heightMeasureSpec = i11;
         Point viewportOffset = getViewportOffset();
         this.surface.updateLayoutSpecs$ReactAndroid_release(i10, i11, viewportOffset.x, viewportOffset.y);
-        qb.a.i(0L);
+        rb.a.i(0L);
     }
 
     @Override // com.facebook.react.ReactRootView, android.view.ViewGroup, android.view.ViewParent

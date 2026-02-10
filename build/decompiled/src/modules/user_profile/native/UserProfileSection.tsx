@@ -20,8 +20,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
-    var11 = 1;
-    var3 = var5[var11];
+    var9 = 1;
+    var3 = var5[var9];
     var3 = var4.bind(var0)(var3);
     var3 = var3.View;
     var _closure1_slot2 = var3;
@@ -37,11 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = {};
-    var8 = {};
-    var9 = 4;
-    var8.marginLeft = var9;
-    var3.guildIcon = var8;
-    var12 = 'row';
+    var11 = 'row';
     var8 = {
         'flexDirection': 'row',
         'marginBottom': 12,
@@ -49,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.titleContainer = var8;
     var8 = {};
-    var8.flexDirection = var12;
+    var8.flexDirection = var11;
     var3.title = var8;
     var8 = {
         'marginHorizontal': 12,
@@ -58,7 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.section = var8;
     var8 = {};
-    var8.borderWidth = var11;
+    var8.borderWidth = var9;
+    var9 = 4;
     var11 = var5[var9];
     var11 = var10.bind(var0)(var11);
     var11 = var11.radii;
@@ -79,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileSection.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun78787: for (var _fun78787_ip = 0;;) switch (_fun78787_ip) {
+        _fun78652: for (var _fun78652_ip = 0;;) switch (_fun78652_ip) {
             case 0:
                 var2 = arg0;
                 var19 = var2.title;
@@ -126,19 +123,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var10;
                 var2 = copyDataProperties(var23, var22);
                 if (!(var9 != var1)) {
-                    _fun78787_ip = 174;
-                    continue _fun78787
+                    _fun78652_ip = 174;
+                    continue _fun78652
                 }
             case 170:
                 if (!(var9 == var0)) {
-                    _fun78787_ip = 188;
-                    continue _fun78787
+                    _fun78652_ip = 188;
+                    continue _fun78652
                 }
             case 174:
                 var1 = var15.contentContainer;
                 var1 = var1.borderColor;
-                _fun78787_ip = 248;
-                continue _fun78787;
+                _fun78652_ip = 248;
+                continue _fun78652;
             case 188:
                 var17 = _closure1_slot0;
                 var18 = _closure1_slot1;
@@ -170,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var9 != var19;
                 var6 = null;
                 if (!var5) {
-                    _fun78787_ip = 438;
-                    continue _fun78787
+                    _fun78652_ip = 438;
+                    continue _fun78652
                 }
             case 310:
                 var12 = _closure1_slot4;
@@ -213,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var9 = null;
                 if (!var11) {
-                    _fun78787_ip = 464;
-                    continue _fun78787
+                    _fun78652_ip = 464;
+                    continue _fun78652
                 }
             case 461:
                 var9 = var10;
@@ -231,4 +228,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3161, 5437, 3241, 5436, 3942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3161, 5438, 3241, 5437, 3942, 2]);

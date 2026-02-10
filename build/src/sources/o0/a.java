@@ -7,17 +7,17 @@ import o0.c;
 final class a extends c.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LifecycleOwner f41330a;
+    private final LifecycleOwner f40060a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final f.b f41331b;
+    private final f.b f40061b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(LifecycleOwner lifecycleOwner, f.b bVar) {
         if (lifecycleOwner != null) {
-            this.f41330a = lifecycleOwner;
+            this.f40060a = lifecycleOwner;
             if (bVar != null) {
-                this.f41331b = bVar;
+                this.f40061b = bVar;
                 return;
             }
             throw new NullPointerException("Null cameraId");
@@ -27,12 +27,12 @@ final class a extends c.a {
 
     @Override // o0.c.a
     public f.b b() {
-        return this.f41331b;
+        return this.f40061b;
     }
 
     @Override // o0.c.a
     public LifecycleOwner c() {
-        return this.f41330a;
+        return this.f40060a;
     }
 
     public boolean equals(Object obj) {
@@ -41,7 +41,7 @@ final class a extends c.a {
         }
         if (obj instanceof c.a) {
             c.a aVar = (c.a) obj;
-            if (this.f41330a.equals(aVar.c()) && this.f41331b.equals(aVar.b())) {
+            if (this.f40060a.equals(aVar.c()) && this.f40061b.equals(aVar.b())) {
                 return true;
             }
         }
@@ -49,10 +49,10 @@ final class a extends c.a {
     }
 
     public int hashCode() {
-        return ((this.f41330a.hashCode() ^ 1000003) * 1000003) ^ this.f41331b.hashCode();
+        return ((this.f40060a.hashCode() ^ 1000003) * 1000003) ^ this.f40061b.hashCode();
     }
 
     public String toString() {
-        return "Key{lifecycleOwner=" + this.f41330a + ", cameraId=" + this.f41331b + "}";
+        return "Key{lifecycleOwner=" + this.f40060a + ", cameraId=" + this.f40061b + "}";
     }
 }

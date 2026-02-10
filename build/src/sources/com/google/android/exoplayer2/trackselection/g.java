@@ -3,11 +3,11 @@ package com.google.android.exoplayer2.trackselection;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.Timeline;
 import java.util.List;
-import je.l;
-import ne.y;
-import qd.r;
-import qd.u0;
-import sd.o;
+import ke.l;
+import oe.y;
+import rd.r;
+import rd.u0;
+import td.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface g extends l {
 
@@ -15,13 +15,13 @@ public interface g extends l {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final u0 f13101a;
+        public final u0 f13241a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int[] f13102b;
+        public final int[] f13242b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f13103c;
+        public final int f13243c;
 
         public a(u0 u0Var, int... iArr) {
             this(u0Var, iArr, 0);
@@ -31,26 +31,24 @@ public interface g extends l {
             if (iArr.length == 0) {
                 y.d("ETSDefinition", "Empty tracks are not allowed", new IllegalArgumentException());
             }
-            this.f13101a = u0Var;
-            this.f13102b = iArr;
-            this.f13103c = i10;
+            this.f13241a = u0Var;
+            this.f13242b = iArr;
+            this.f13243c = i10;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface b {
-        g[] a(a[] aVarArr, le.e eVar, r.b bVar, Timeline timeline);
+        g[] a(a[] aVarArr, me.e eVar, r.b bVar, Timeline timeline);
     }
 
     boolean a(int i10, long j10);
 
-    default boolean b(long j10, sd.f fVar, List list) {
-        return false;
-    }
-
-    int c();
+    int b();
 
     void disable();
+
+    void e(long j10, long j11, long j12, List list, o[] oVarArr);
 
     void enable();
 
@@ -63,7 +61,9 @@ public interface g extends l {
     default void i() {
     }
 
-    void l(long j10, long j11, long j12, List list, o[] oVarArr);
+    default boolean k(long j10, td.f fVar, List list) {
+        return false;
+    }
 
     default void m(boolean z10) {
     }

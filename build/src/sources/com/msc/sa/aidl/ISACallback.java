@@ -24,15 +24,15 @@ public interface ISACallback extends IInterface {
         private static class a implements ISACallback {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f17251c;
+            private IBinder f17391c;
 
             a(IBinder iBinder) {
-                this.f17251c = iBinder;
+                this.f17391c = iBinder;
             }
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f17251c;
+                return this.f17391c;
             }
         }
 

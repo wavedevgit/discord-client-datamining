@@ -1,41 +1,36 @@
 package ol;
 
-import android.net.Uri;
+import android.media.MediaFormat;
+import android.view.Surface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b extends d {
+public interface b {
+    c a(int i10);
 
-    /* renamed from: e  reason: collision with root package name */
-    private final a f43243e;
+    int b(long j10);
 
-    /* renamed from: i  reason: collision with root package name */
-    private final Uri f43244i;
+    int c(long j10);
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public enum a {
-        DATA_SOURCE("data source error");
-        
+    Surface createInputSurface();
 
-        /* renamed from: d  reason: collision with root package name */
-        private final String f43247d;
+    c d(int i10);
 
-        a(String str) {
-            this.f43247d = str;
-        }
-    }
+    void e(c cVar);
 
-    public b(a aVar, Uri uri, Throwable th2) {
-        super(th2);
-        this.f43243e = aVar;
-        this.f43244i = uri;
-    }
+    void f(MediaFormat mediaFormat);
 
-    @Override // java.lang.Throwable
-    public String getMessage() {
-        return "Failed to create media source due to a " + this.f43243e.f43247d;
-    }
+    void g();
 
-    @Override // ol.d, java.lang.Throwable
-    public String toString() {
-        return super.toString() + "\nFailed to create media source due to a " + this.f43243e.f43247d + "\nUri: " + this.f43244i;
-    }
+    String getName();
+
+    MediaFormat getOutputFormat();
+
+    void h(int i10);
+
+    boolean isRunning();
+
+    void release();
+
+    void start();
+
+    void stop();
 }

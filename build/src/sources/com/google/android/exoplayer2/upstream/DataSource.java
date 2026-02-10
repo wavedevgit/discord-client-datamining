@@ -3,9 +3,9 @@ package com.google.android.exoplayer2.upstream;
 import android.net.Uri;
 import java.util.Collections;
 import java.util.Map;
-import le.c0;
+import me.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface DataSource extends le.j {
+public interface DataSource extends me.j {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface Factory {
@@ -20,7 +20,7 @@ public interface DataSource extends le.j {
         return Collections.EMPTY_MAP;
     }
 
-    void j(c0 c0Var);
+    void i(c0 c0Var);
 
     Uri m();
 }

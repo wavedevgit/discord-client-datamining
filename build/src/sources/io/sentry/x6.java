@@ -9,25 +9,25 @@ import java.util.Map;
 public final class x6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private io.sentry.protocol.x f29134d;
+    private io.sentry.protocol.x f29334d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Double f29135e;
+    private Double f29335e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29136i;
+    private String f29336i;
 
     /* renamed from: o  reason: collision with root package name */
-    private a7 f29137o;
+    private a7 f29337o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Integer f29138p;
+    private Integer f29338p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f29139q;
+    private Map f29339q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f29140r;
+    private Map f29340r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -86,28 +86,28 @@ public final class x6 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        num = e3Var.j1();
+                        num = e3Var.g1();
                         break;
                     case 1:
-                        str = e3Var.q1();
+                        str = e3Var.m1();
                         break;
                     case 2:
                         d10 = e3Var.n0();
                         break;
                     case 3:
-                        a7Var = (a7) e3Var.G0(iLogger, new a7.a());
+                        a7Var = (a7) e3Var.E0(iLogger, new a7.a());
                         break;
                     case 4:
-                        map = e3Var.t1(iLogger, new y6.a());
+                        map = e3Var.o1(iLogger, new y6.a());
                         break;
                     case 5:
-                        xVar = (io.sentry.protocol.x) e3Var.G0(iLogger, new x.a());
+                        xVar = (io.sentry.protocol.x) e3Var.E0(iLogger, new x.a());
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.u1(iLogger, hashMap, o02);
+                        e3Var.p1(iLogger, hashMap, o02);
                         break;
                 }
             }
@@ -141,41 +141,41 @@ public final class x6 implements w1 {
     }
 
     public x6(io.sentry.protocol.x xVar, Double d10, String str, a7 a7Var) {
-        this.f29134d = xVar;
-        this.f29135e = d10;
-        this.f29136i = str;
-        this.f29137o = a7Var;
+        this.f29334d = xVar;
+        this.f29335e = d10;
+        this.f29336i = str;
+        this.f29337o = a7Var;
     }
 
     public void a(Map map) {
-        this.f29139q = map;
+        this.f29339q = map;
     }
 
     public void b(Integer num) {
-        this.f29138p = num;
+        this.f29338p = num;
     }
 
     public void c(Map map) {
-        this.f29140r = map;
+        this.f29340r = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("timestamp").j(iLogger, k.c(this.f29135e));
-        f3Var.e("trace_id").j(iLogger, this.f29134d);
-        f3Var.e("body").f(this.f29136i);
-        f3Var.e("level").j(iLogger, this.f29137o);
-        if (this.f29138p != null) {
-            f3Var.e("severity_number").j(iLogger, this.f29138p);
+        f3Var.e("timestamp").j(iLogger, k.c(this.f29335e));
+        f3Var.e("trace_id").j(iLogger, this.f29334d);
+        f3Var.e("body").f(this.f29336i);
+        f3Var.e("level").j(iLogger, this.f29337o);
+        if (this.f29338p != null) {
+            f3Var.e("severity_number").j(iLogger, this.f29338p);
         }
-        if (this.f29139q != null) {
-            f3Var.e("attributes").j(iLogger, this.f29139q);
+        if (this.f29339q != null) {
+            f3Var.e("attributes").j(iLogger, this.f29339q);
         }
-        Map map = this.f29140r;
+        Map map = this.f29340r;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29140r.get(str));
+                f3Var.e(str).j(iLogger, this.f29340r.get(str));
             }
         }
         f3Var.D();

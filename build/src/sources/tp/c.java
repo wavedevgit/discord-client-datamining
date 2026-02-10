@@ -1,53 +1,27 @@
 package tp;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import androidx.viewbinding.ViewBinding;
-import rp.m;
-import rp.n;
+import cr.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements ViewBinding {
+public final class c implements cr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f50846a;
+    private final b f50893a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public final ImageView f50847b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final ImageView f50848c;
-
-    private c(View view, ImageView imageView, ImageView imageView2) {
-        this.f50846a = view;
-        this.f50847b = imageView;
-        this.f50848c = imageView2;
+    public c(b bVar) {
+        this.f50893a = bVar;
     }
 
-    public static c a(View view) {
-        int i10 = m.f49139e;
-        ImageView imageView = (ImageView) e4.a.a(view, i10);
-        if (imageView != null) {
-            i10 = m.f49140f;
-            ImageView imageView2 = (ImageView) e4.a.a(view, i10);
-            if (imageView2 != null) {
-                return new c(view, imageView, imageView2);
-            }
-        }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    public static c a(b bVar) {
+        return new c(bVar);
     }
 
-    public static c b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
-        if (viewGroup != null) {
-            layoutInflater.inflate(n.f49150c, viewGroup);
-            return a(viewGroup);
-        }
-        throw new NullPointerException("parent");
+    public static a b(b bVar) {
+        return (a) g.d(bVar.a());
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    public View getRoot() {
-        return this.f50846a;
+    @Override // javax.inject.Provider
+    /* renamed from: c */
+    public a get() {
+        return b(this.f50893a);
     }
 }

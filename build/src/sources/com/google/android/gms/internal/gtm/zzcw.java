@@ -1,7 +1,7 @@
 package com.google.android.gms.internal.gtm;
 
 import android.os.Handler;
-import gf.q;
+import hf.q;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class zzcw {

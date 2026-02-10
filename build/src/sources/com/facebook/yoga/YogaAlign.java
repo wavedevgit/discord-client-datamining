@@ -13,13 +13,13 @@ public enum YogaAlign {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f11389d;
+    private final int f11529d;
 
     YogaAlign(int i10) {
-        this.f11389d = i10;
+        this.f11529d = i10;
     }
 
     public int d() {
-        return this.f11389d;
+        return this.f11529d;
     }
 }

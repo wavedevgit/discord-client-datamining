@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var10;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -21,8 +21,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
-    var12 = 1;
-    var3 = var5[var12];
+    var3 = 1;
+    var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var6 = var3.Image;
     var _closure1_slot3 = var6;
@@ -40,77 +40,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = {};
-    var11 = 24;
     var8 = {
         'width': 232,
         'height': 108,
         'marginBottom': 24
     };
     var3.image = var8;
-    var8 = {
-        'alignItems': 'center',
-        'alignSelf': 'stretch',
-        'backgroundColor': null,
-        'marginTop': 24,
-        'padding': 16,
-        'borderRadius': null,
-        'flexDirection': 'row'
-    };
-    var9 = 4;
-    var13 = var5[var9];
-    var13 = var10.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.BACKGROUND_BASE_LOWEST;
-    var8.backgroundColor = var13;
-    var13 = var5[var9];
-    var13 = var10.bind(var0)(var13);
-    var13 = var13.radii;
-    var13 = var13.sm;
-    var8.borderRadius = var13;
-    var3.getApp = var8;
-    var8 = {
-        'marginRight': 12,
-        'width': 40,
-        'height': 40,
-        'alignItems': 'center',
-        'justifyContent': 'center'
-    };
-    var13 = var5[var9];
-    var13 = var10.bind(var0)(var13);
-    var13 = var13.radii;
-    var13 = var13.xs;
-    var8.borderRadius = var13;
-    var13 = var5[var9];
-    var13 = var10.bind(var0)(var13);
-    var13 = var13.unsafe_rawColors;
-    var13 = var13.CRUNCHYROLL;
-    var8.backgroundColor = var13;
-    var3.appLogoBox = var8;
-    var8 = {
-        'width': 32,
-        'height': 32
-    };
-    var3.appLogo = var8;
-    var8 = {};
-    var8.flex = var12;
-    var3.getAppTitle = var8;
-    var8 = {};
-    var8.marginTop = var11;
-    var3.installButton = var8;
-    var8 = {};
-    var11 = 8;
-    var8.marginLeft = var11;
-    var3.icon = var8;
-    var8 = {};
-    var9 = var5[var9];
-    var9 = var10.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.INTERACTIVE_TEXT_ACTIVE;
-    var8.color = var9;
-    var3.externalLinkIcon = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = 11;
+    var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -124,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var0.bind(var3)();
         var14 = _closure1_slot0;
         var15 = _closure1_slot2;
-        var0 = 5;
+        var0 = 4;
         var0 = var15[var0];
         var1 = var14.bind(var3)(var0);
         var0 = var1.useTwoWayLinkStyles;
@@ -141,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot3;
         var5 = {};
         var16 = _closure1_slot1;
-        var9 = 6;
+        var9 = 5;
         var9 = var15[var9];
         var9 = var16.bind(var3)(var9);
         var5.source = var9;
@@ -150,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var7.bind(var3)(var6, var5);
         var5 = new Array(3);
         var5[0] = var6;
-        var6 = 7;
+        var6 = 6;
         var8 = var15[var6];
         var8 = var14.bind(var3)(var8);
         var9 = var8.Text;
@@ -160,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var11 = var12.title;
         var8.style = var11;
-        var11 = 8;
+        var11 = 7;
         var13 = var15[var11];
         var13 = var14.bind(var3)(var13);
         var18 = var13.intl;
@@ -198,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var2.bind(var3)(var1, var4);
         var4 = new Array(2);
         var4[0] = var5;
-        var5 = 9;
+        var5 = 8;
         var5 = var15[var5];
         var5 = var14.bind(var3)(var5);
         var6 = var5.SafeAreaPaddingView;
@@ -207,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.bottom = var8;
         var8 = var12.footerContainer;
         var5.style = var8;
-        var13 = 10;
+        var13 = 9;
         var8 = var15[var13];
         var9 = var16.bind(var3)(var8);
         var8 = {};
@@ -244,4 +182,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5383, 5930, 3942, 1234, 4736, 4875, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 5384, 5931, 3942, 1234, 4736, 4875, 2]);

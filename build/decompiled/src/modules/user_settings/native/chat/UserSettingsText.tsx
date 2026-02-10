@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/user_settings/native/chat/UserSettingsText.tsx';
     var6 = var7.bind(var8)(var6);
     var6 = function() {
-        _fun85976: for (var _fun85976_ip = 0;;) switch (_fun85976_ip) {
+        _fun85980: for (var _fun85980_ip = 0;;) switch (_fun85980_ip) {
             case 0:
                 var14 = _closure1_slot0;
                 var11 = _closure1_slot2;
@@ -673,12 +673,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = {};
                 var15 = null;
                 if (var16) {
-                    _fun85976_ip = 1696;
-                    continue _fun85976
+                    _fun85980_ip = 1696;
+                    continue _fun85980
                 }
             case 1685:
                 var16 = function() {
-                    _fun85986: for (var _fun85986_ip = 0;;) switch (_fun85986_ip) {
+                    _fun85990: for (var _fun85990_ip = 0;;) switch (_fun85990_ip) {
                         case 0:
                             var6 = _closure1_slot14;
                             var2 = _closure1_slot0;
@@ -772,8 +772,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.bind(var2)();
                             var3 = _closure1_slot15;
                             if (var0) {
-                                _fun85986_ip = 368;
-                                continue _fun85986
+                                _fun85990_ip = 368;
+                                continue _fun85990
                             }
                         case 320:
                             var2 = _closure1_slot4;
@@ -787,8 +787,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5[2] = var6;
                             var0.children = var5;
                             var0 = var3.bind(var4)(var2, var0);
-                            _fun85986_ip = 400;
-                            continue _fun85986;
+                            _fun85990_ip = 400;
+                            continue _fun85990;
                         case 368:
                             var2 = _closure1_slot16;
                             var1 = {};
@@ -1097,4 +1097,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.setVideoUploadQuality = var3;
     var2.setImageDescriptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3119, 1354, 3199, 660, 4876, 33, 671, 795, 1348, 7695, 566, 3111, 1469, 7295, 5430, 6728, 4086, 1234, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3119, 1354, 3199, 660, 4876, 33, 671, 795, 1348, 7671, 566, 3111, 1469, 7296, 5431, 6729, 4086, 1234, 478, 2]);

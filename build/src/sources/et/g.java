@@ -1,41 +1,89 @@
 package et;
 
-import ht.e;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import ys.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements KSerializer {
+public interface g {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final g f22121a = new g();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a implements g {
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f22122b = ht.j.b("kotlinx.datetime.LocalTime", e.i.f26526a);
+        /* renamed from: a  reason: collision with root package name */
+        private final Object f22088a;
 
-    private g() {
+        public a(Object conflicting) {
+            Intrinsics.checkNotNullParameter(conflicting, "conflicting");
+            this.f22088a = conflicting;
+        }
+
+        @Override // et.g
+        public String a() {
+            return "attempted to overwrite the existing value '" + this.f22088a + '\'';
+        }
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public ys.i deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return i.a.b(ys.i.Companion, decoder.z(), null, 2, null);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b implements g {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f22089a = new b();
+
+        private b() {
+        }
+
+        @Override // et.g
+        public String a() {
+            return "expected an Int value";
+        }
     }
 
-    @Override // ft.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, ys.i value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.F(value.toString());
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class c implements g {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final int f22090a;
+
+        public c(int i10) {
+            this.f22090a = i10;
+        }
+
+        @Override // et.g
+        public String a() {
+            return "expected at least " + this.f22090a + " digits";
+        }
     }
 
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f22122b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class d implements g {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final int f22091a;
+
+        public d(int i10) {
+            this.f22091a = i10;
+        }
+
+        @Override // et.g
+        public String a() {
+            return "expected at most " + this.f22091a + " digits";
+        }
     }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class e implements g {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final String f22092a;
+
+        public e(String expected) {
+            Intrinsics.checkNotNullParameter(expected, "expected");
+            this.f22092a = expected;
+        }
+
+        @Override // et.g
+        public String a() {
+            return "expected '" + this.f22092a + '\'';
+        }
+    }
+
+    String a();
 }

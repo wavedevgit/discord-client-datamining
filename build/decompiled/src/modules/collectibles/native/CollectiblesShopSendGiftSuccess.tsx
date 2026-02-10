@@ -83,10 +83,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.PX_24;
     var8.marginBottom = var9;
     var3.description = var8;
-    var8 = {};
-    var9 = '100%';
-    var8.width = var9;
-    var3.closeButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
     var3 = 12;
@@ -220,4 +216,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 9594, 3938, 3942, 1234, 5973, 4085, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 9572, 3938, 3942, 1234, 5974, 4085, 2]);

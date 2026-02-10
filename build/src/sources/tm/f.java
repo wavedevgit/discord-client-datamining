@@ -1,34 +1,33 @@
 package tm;
 
-import android.animation.ArgbEvaluator;
-import android.animation.ValueAnimator;
 import android.app.Activity;
+import android.os.Build;
+import android.view.View;
 import android.view.Window;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.WindowInsetsControllerCompat;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import androidx.core.view.d1;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.UiThreadUtil;
-import java.lang.ref.WeakReference;
-import java.util.Map;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class f {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f50807e = new a(null);
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f50881d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactApplicationContext f50808a;
+    private final ReactApplicationContext f50882a;
 
     /* renamed from: b  reason: collision with root package name */
-    private h f50809b;
+    private final nm.f f50883b;
 
     /* renamed from: c  reason: collision with root package name */
-    private WindowInsetsControllerCompat f50810c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private WeakReference f50811d;
+    private final int f50884c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -42,156 +41,135 @@ public final class f {
 
     public f(ReactApplicationContext mReactContext) {
         Intrinsics.checkNotNullParameter(mReactContext, "mReactContext");
-        this.f50808a = mReactContext;
-        this.f50809b = new h(mReactContext);
-        this.f50811d = new WeakReference(null);
-    }
-
-    private final WindowInsetsControllerCompat g() {
-        String str;
-        Activity currentActivity = this.f50808a.getCurrentActivity();
-        if (this.f50810c == null || !Intrinsics.areEqual(currentActivity, this.f50811d.get())) {
-            if (currentActivity == null) {
-                pm.a aVar = pm.a.f45109a;
-                str = g.f50812a;
-                pm.a.f(aVar, str, "StatusBarManagerCompatModule: can not get `WindowInsetsControllerCompat` because current activity is null.", null, 4, null);
-                return this.f50810c;
-            }
-            Window window = currentActivity.getWindow();
-            this.f50811d = new WeakReference(currentActivity);
-            this.f50810c = new WindowInsetsControllerCompat(window, window.getDecorView());
-        }
-        return this.f50810c;
-    }
-
-    private final boolean h() {
-        vm.c r10 = r();
-        if (r10 != null) {
-            return r10.getActive();
-        }
-        return false;
+        this.f50882a = mReactContext;
+        this.f50883b = new nm.f();
+        this.f50884c = k();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void j(Activity activity, boolean z10, int i10) {
-        final Window window = activity.getWindow();
-        if (z10) {
-            ValueAnimator ofObject = ValueAnimator.ofObject(new ArgbEvaluator(), Integer.valueOf(window.getStatusBarColor()), Integer.valueOf(i10));
-            ofObject.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: tm.e
-                @Override // android.animation.ValueAnimator.AnimatorUpdateListener
-                public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    f.k(window, valueAnimator);
+    public static final void g(boolean z10, f fVar, final View view, Activity activity, final boolean z11) {
+        Object obj;
+        if (Build.VERSION.SDK_INT >= 30 && !z10) {
+            fVar.f50883b.x(view, new Function1() { // from class: tm.d
+                @Override // kotlin.jvm.functions.Function1
+                public final Object invoke(Object obj2) {
+                    Unit h10;
+                    h10 = f.h(view, z11, (d1) obj2);
+                    return h10;
                 }
             });
-            ofObject.setDuration(300L).setStartDelay(0L);
-            ofObject.start();
             return;
         }
-        window.setStatusBarColor(i10);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void k(Window window, ValueAnimator animator) {
-        Intrinsics.checkNotNullParameter(animator, "animator");
-        Object animatedValue = animator.getAnimatedValue();
-        Intrinsics.checkNotNull(animatedValue, "null cannot be cast to non-null type kotlin.Int");
-        window.setStatusBarColor(((Integer) animatedValue).intValue());
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void m(boolean z10, f fVar) {
-        if (z10) {
-            WindowInsetsControllerCompat g10 = fVar.g();
-            if (g10 != null) {
-                g10.b(WindowInsetsCompat.p.g());
-                return;
-            }
-            return;
-        }
-        WindowInsetsControllerCompat g11 = fVar.g();
-        if (g11 != null) {
-            g11.g(WindowInsetsCompat.p.g());
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void o(f fVar, String str) {
-        WindowInsetsControllerCompat g10 = fVar.g();
-        if (g10 != null) {
-            g10.e(Intrinsics.areEqual(str, "dark-content"));
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void q(f fVar, boolean z10) {
-        vm.c r10 = fVar.r();
-        if (r10 != null) {
-            r10.k(z10);
-        }
-    }
-
-    private final vm.c r() {
-        return vm.e.f52800a.a();
-    }
-
-    public final Map f() {
-        return this.f50809b.a();
-    }
-
-    public final void i(final int i10, final boolean z10) {
-        String str;
-        if (!h()) {
-            this.f50809b.b(i10, z10);
-            return;
-        }
-        final Activity currentActivity = this.f50808a.getCurrentActivity();
-        if (currentActivity == null) {
-            pm.a aVar = pm.a.f45109a;
-            str = g.f50812a;
-            pm.a.f(aVar, str, "StatusBarManagerCompatModule: Ignored status bar change, current activity is null.", null, 4, null);
-            return;
-        }
-        UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.d
-            @Override // java.lang.Runnable
-            public final void run() {
-                f.j(currentActivity, z10, i10);
-            }
-        });
-    }
-
-    public final void l(final boolean z10) {
-        UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.a
-            @Override // java.lang.Runnable
-            public final void run() {
-                f.m(z10, this);
-            }
-        });
-    }
-
-    public final void n(final String style) {
-        Intrinsics.checkNotNullParameter(style, "style");
-        if (!h()) {
-            this.f50809b.c(style);
+        InputMethodManager inputMethodManager = null;
+        if (activity != null) {
+            obj = activity.getSystemService("input_method");
         } else {
+            obj = null;
+        }
+        if (obj instanceof InputMethodManager) {
+            inputMethodManager = (InputMethodManager) obj;
+        }
+        if (inputMethodManager != null) {
+            inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
+        j(z11, view);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit h(final View view, final boolean z10, d1 insetsController) {
+        Intrinsics.checkNotNullParameter(insetsController, "insetsController");
+        insetsController.a(false);
+        view.post(new Runnable() { // from class: tm.e
+            @Override // java.lang.Runnable
+            public final void run() {
+                f.i(z10, view);
+            }
+        });
+        return Unit.f31765a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void i(boolean z10, View view) {
+        j(z10, view);
+    }
+
+    private static final void j(boolean z10, View view) {
+        if (!z10) {
+            view.clearFocus();
+        }
+    }
+
+    private final int k() {
+        Window window;
+        WindowManager.LayoutParams attributes;
+        Activity currentActivity = this.f50882a.getCurrentActivity();
+        if (currentActivity != null && (window = currentActivity.getWindow()) != null && (attributes = window.getAttributes()) != null) {
+            return attributes.softInputMode;
+        }
+        return 0;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void o() {
+        vm.a.f52536a.a();
+    }
+
+    private final void q(final int i10) {
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.c
+            @Override // java.lang.Runnable
+            public final void run() {
+                f.r(f.this, i10);
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void r(f fVar, int i10) {
+        Activity currentActivity;
+        Window window;
+        if (fVar.k() != i10 && (currentActivity = fVar.f50882a.getCurrentActivity()) != null && (window = currentActivity.getWindow()) != null) {
+            window.setSoftInputMode(i10);
+        }
+    }
+
+    public final void f(final boolean z10, final boolean z11) {
+        final Activity currentActivity = this.f50882a.getCurrentActivity();
+        final EditText b10 = vm.a.f52536a.b();
+        if (b10 != null) {
+            UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.a
+                @Override // java.lang.Runnable
+                public final void run() {
+                    f.g(z11, this, b10, currentActivity, z10);
+                }
+            });
+        }
+    }
+
+    public final void m() {
+        q(this.f50884c);
+    }
+
+    public final void n(String direction) {
+        Intrinsics.checkNotNullParameter(direction, "direction");
+        if (Intrinsics.areEqual(direction, "current")) {
             UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.b
                 @Override // java.lang.Runnable
                 public final void run() {
-                    f.o(f.this, style);
+                    f.o();
                 }
             });
+            return;
+        }
+        EditText b10 = vm.a.f52536a.b();
+        if (b10 != null) {
+            vm.c.f52539a.j(direction, b10);
         }
     }
 
-    public final void p(final boolean z10) {
-        if (!h()) {
-            this.f50809b.d(z10);
-        } else {
-            UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.c
-                @Override // java.lang.Runnable
-                public final void run() {
-                    f.q(f.this, z10);
-                }
-            });
-        }
+    public final void p(int i10) {
+        q(i10);
+    }
+
+    public final void l() {
     }
 }

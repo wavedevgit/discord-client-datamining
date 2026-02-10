@@ -23,7 +23,7 @@ public final class RootViewUtil {
             if (parent == null) {
                 return null;
             }
-            db.a.a(parent instanceof View);
+            eb.a.a(parent instanceof View);
             reactView = (View) parent;
         }
         return (RootView) reactView;

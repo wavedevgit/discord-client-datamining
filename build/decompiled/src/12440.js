@@ -1,46 +1,24 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2) { // Environment: var0
-        _fun94934: for (var _fun94934_ip = 0;;) switch (_fun94934_ip) {
+    var1 = function(arg0) { // Environment: var0
+        _fun94923: for (var _fun94923_ip = 0;;) switch (_fun94923_ip) {
             case 0:
-                var0 = arg2;
-                var2 = this;
-                if (var0) {
-                    _fun94934_ip = 40;
-                    continue _fun94934
-                }
-            case 9:
-                var1 = var2.getReverseMap;
-                var2 = var1.bind(var2)();
                 var1 = arg0;
-                var2 = var2[var1];
-                var1 = 'keypress';
-                if (!var2) {
-                    _fun94934_ip = 37;
-                    continue _fun94934
+                var0 = var1.stopPropagation;
+                if (var0) {
+                    _fun94923_ip = 22;
+                    continue _fun94923
                 }
-            case 33:
-                var1 = 'keydown';
-            case 37:
-                var0 = var1;
-            case 40:
-                var1 = 'keypress';
-                var1 = var1 === var0;
-                if (!var1) {
-                    _fun94934_ip = 59;
-                    continue _fun94934
-                }
-            case 51:
-                var2 = arg1;
-                var1 = var2.length;
-            case 59:
-                if (!var1) {
-                    _fun94934_ip = 66;
-                    continue _fun94934
-                }
-            case 62:
-                var0 = 'keydown';
-            case 66:
+            case 12:
+                var0 = true;
+                var1.cancelBubble = var0;
+                _fun94923_ip = 32;
+                continue _fun94923;
+            case 22:
+                var0 = var1.stopPropagation;
+                var0 = var0.bind(var1)();
+            case 32:
+                var0 = undefined;
                 return var0;
         }
     };

@@ -1,37 +1,43 @@
 package tj;
 
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.text.TextUtils;
-import java.util.Locale;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
+public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final gf.i f50660a = new gf.i("CommonUtils", "");
+    private final Map f50858a = new HashMap();
 
-    public static String a(Context context) {
-        try {
-            return String.valueOf(context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode);
-        } catch (PackageManager.NameNotFoundException e10) {
-            f50660a.c("CommonUtils", "Exception thrown when trying to get app version ".concat(e10.toString()));
-            return "";
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final Class f50859a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final gj.b f50860b;
+
+        public a(Class cls, gj.b bVar) {
+            this.f50859a = cls;
+            this.f50860b = bVar;
+        }
+
+        final gj.b a() {
+            return this.f50860b;
+        }
+
+        final Class b() {
+            return this.f50859a;
         }
     }
 
-    public static String b(Locale locale) {
-        if (com.google.android.gms.common.util.k.c()) {
-            return locale.toLanguageTag();
+    public c(Set set) {
+        Iterator it = set.iterator();
+        while (it.hasNext()) {
+            a aVar = (a) it.next();
+            this.f50858a.put(aVar.b(), aVar.a());
         }
-        StringBuilder sb2 = new StringBuilder(locale.getLanguage());
-        if (!TextUtils.isEmpty(locale.getCountry())) {
-            sb2.append("-");
-            sb2.append(locale.getCountry());
-        }
-        if (!TextUtils.isEmpty(locale.getVariant())) {
-            sb2.append("-");
-            sb2.append(locale.getVariant());
-        }
-        return sb2.toString();
     }
 }

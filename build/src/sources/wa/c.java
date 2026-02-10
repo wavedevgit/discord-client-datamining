@@ -1,31 +1,55 @@
 package wa;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c extends b {
+public final class c {
 
-    /* renamed from: h  reason: collision with root package name */
-    private final f f53558h;
+    /* renamed from: a  reason: collision with root package name */
+    public static final c f53366a;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c(va.d bitmapPool, b2.d decodeBuffers, f platformDecoderOptions) {
-        super(bitmapPool, decodeBuffers, platformDecoderOptions);
-        Intrinsics.checkNotNullParameter(bitmapPool, "bitmapPool");
-        Intrinsics.checkNotNullParameter(decodeBuffers, "decodeBuffers");
-        Intrinsics.checkNotNullParameter(platformDecoderOptions, "platformDecoderOptions");
-        this.f53558h = platformDecoderOptions;
+    /* renamed from: b  reason: collision with root package name */
+    public static final int f53367b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static int f53368c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static volatile b f53369d;
+
+    static {
+        c cVar = new c();
+        f53366a = cVar;
+        f53367b = cVar.b();
+        f53368c = 384;
     }
 
-    @Override // wa.b
-    public int d(int i10, int i11, BitmapFactory.Options options) {
-        Bitmap.Config config;
-        Intrinsics.checkNotNullParameter(options, "options");
-        config = options.outConfig;
-        if (config == null) {
-            config = Bitmap.Config.ARGB_8888;
+    private c() {
+    }
+
+    public static final b a() {
+        if (f53369d == null) {
+            synchronized (c.class) {
+                try {
+                    if (f53369d == null) {
+                        f53369d = new b(f53368c, f53367b);
+                    }
+                    Unit unit = Unit.f31765a;
+                } catch (Throwable th2) {
+                    throw th2;
+                }
+            }
         }
-        return cb.d.i(i10, i11, config);
+        b bVar = f53369d;
+        Intrinsics.checkNotNull(bVar);
+        return bVar;
+    }
+
+    private final int b() {
+        int min = (int) Math.min(Runtime.getRuntime().maxMemory(), 2147483647L);
+        if (min > 16777216) {
+            return (min / 4) * 3;
+        }
+        return min / 2;
     }
 }

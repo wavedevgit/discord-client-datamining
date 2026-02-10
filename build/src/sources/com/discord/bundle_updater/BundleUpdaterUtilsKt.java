@@ -1,7 +1,7 @@
 package com.discord.bundle_updater;
 
 import android.content.res.AssetManager;
-import bs.r;
+import cs.r;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -45,7 +45,7 @@ public final class BundleUpdaterUtilsKt {
             String h10 = r.h(bufferedReader);
             json2.a();
             AppManifest appManifest = (AppManifest) json2.b(AppManifest.Companion.serializer(), h10);
-            bs.c.a(bufferedReader, null);
+            cs.c.a(bufferedReader, null);
             return appManifest;
         } finally {
         }
@@ -55,6 +55,6 @@ public final class BundleUpdaterUtilsKt {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 }

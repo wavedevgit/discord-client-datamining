@@ -47,7 +47,7 @@ final class HttpEngineProviderSingleton {
 
     private boolean shouldOverrideWithHttpEngine(Context context) {
         try {
-            return getReflectionValueAsBool(ExperimentalCronetEngine.class.getDeclaredMethod("shouldOverrideWithHttpEngine", ig.a.a(Context.class, context)).invoke(null, ig.a.b(Context.class, context)));
+            return getReflectionValueAsBool(ExperimentalCronetEngine.class.getDeclaredMethod("shouldOverrideWithHttpEngine", jg.a.a(Context.class, context)).invoke(null, jg.a.b(Context.class, context)));
         } catch (Throwable unused) {
             return false;
         }

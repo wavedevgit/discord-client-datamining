@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'updateScrollOffset';
         var0.key = var1;
         var1 = function arg0, arg1, arg2() {
-            _fun45754: for (var _fun45754_ip = 0;;) switch (_fun45754_ip) {
+            _fun45747: for (var _fun45747_ip = 0;;) switch (_fun45747_ip) {
                 case 0:
                     var7 = arg0;
                     var6 = arg1;
@@ -86,19 +86,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var4.isHorizontal;
                     var1 = var1.bind(var4)();
                     if (!var6) {
-                        _fun45754_ip = 69;
-                        continue _fun45754
+                        _fun45747_ip = 69;
+                        continue _fun45747
                     }
                 case 41:
                     var3 = var0.updateVelocityHistory;
                     if (var1) {
-                        _fun45754_ip = 59;
-                        continue _fun45754
+                        _fun45747_ip = 59;
+                        continue _fun45747
                     }
                 case 52:
                     var2 = var6.y;
-                    _fun45754_ip = 64;
-                    continue _fun45754;
+                    _fun45747_ip = 64;
+                    continue _fun45747;
                 case 59:
                     var2 = var6.x;
                 case 64:
@@ -109,15 +109,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0.enableOffsetProjection;
                     var10 = var7;
                     if (!var2) {
-                        _fun45754_ip = 123;
-                        continue _fun45754
+                        _fun45747_ip = 123;
+                        continue _fun45747
                     }
                 case 91:
                     var2 = var0.forceDisableOffsetProjection;
                     var10 = var7;
                     if (var2) {
-                        _fun45754_ip = 123;
-                        continue _fun45754
+                        _fun45747_ip = 123;
+                        continue _fun45747
                     }
                 case 103:
                     var6 = var0.getProjectedScrollOffset;
@@ -125,13 +125,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var10 = var6.bind(var0)(var7, var2);
                 case 123:
                     if (var1) {
-                        _fun45754_ip = 133;
-                        continue _fun45754
+                        _fun45747_ip = 133;
+                        continue _fun45747
                     }
                 case 126:
                     var2 = var5.height;
-                    _fun45754_ip = 138;
-                    continue _fun45754;
+                    _fun45747_ip = 138;
+                    continue _fun45747;
                 case 133:
                     var2 = var5.width;
                 case 138:
@@ -140,24 +140,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = 2;
                     var9 = var2 * var6;
                     if (var3) {
-                        _fun45754_ip = 166;
-                        continue _fun45754
+                        _fun45747_ip = 166;
+                        continue _fun45747
                     }
                 case 158:
                     var2 = var0.smallMultiplier;
-                    _fun45754_ip = 172;
-                    continue _fun45754;
+                    _fun45747_ip = 172;
+                    continue _fun45747;
                 case 166:
                     var2 = var0.largeMultiplier;
                 case 172:
                     if (var3) {
-                        _fun45754_ip = 183;
-                        continue _fun45754
+                        _fun45747_ip = 183;
+                        continue _fun45747
                     }
                 case 175:
                     var3 = var0.largeMultiplier;
-                    _fun45754_ip = 189;
-                    continue _fun45754;
+                    _fun45747_ip = 189;
+                    continue _fun45747;
                 case 183:
                     var3 = var0.smallMultiplier;
                 case 189:
@@ -184,21 +184,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var4.getLayoutSize;
                     var2 = var2.bind(var4)();
                     if (var1) {
-                        _fun45754_ip = 305;
-                        continue _fun45754
+                        _fun45747_ip = 305;
+                        continue _fun45747
                     }
                 case 298:
                     var1 = var2.height;
-                    _fun45754_ip = 310;
-                    continue _fun45754;
+                    _fun45747_ip = 310;
+                    continue _fun45747;
                 case 305:
                     var1 = var2.width;
                 case 310:
                     var3 = var9;
                     var2 = var5;
                     if (!(var2 > var1)) {
-                        _fun45754_ip = 348;
-                        continue _fun45754
+                        _fun45747_ip = 348;
+                        continue _fun45747
                     }
                 case 320:
                     var5 = var5 - var1;
@@ -216,8 +216,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0.bind(var1)(var2);
                     var0 = undefined;
                     if (var2) {
-                        _fun45754_ip = 391;
-                        continue _fun45754
+                        _fun45747_ip = 391;
+                        continue _fun45747
                     }
                 case 388:
                     var0 = var1;
@@ -253,7 +253,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'isScrollingBackward';
         var0.key = var5;
         var5 = function() {
-            _fun45756: for (var _fun45756_ip = 0;;) switch (_fun45756_ip) {
+            _fun45749: for (var _fun45749_ip = 0;;) switch (_fun45749_ip) {
                 case 0:
                     var7 = this;
                     var0 = var7.velocityHistory;
@@ -266,15 +266,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = 0;
                     var0 = 0;
                     if (!var2) {
-                        _fun45756_ip = 111;
-                        continue _fun45756
+                        _fun45749_ip = 111;
+                        continue _fun45749
                     }
                 case 33:
                     var2 = var7.velocityHistory;
                     var2 = var2[var3];
                     if (!(!(var2 > var6))) {
-                        _fun45756_ip = 75;
-                        continue _fun45756
+                        _fun45749_ip = 75;
+                        continue _fun45749
                     }
                 case 47:
                     var2 = var7.velocityHistory;
@@ -282,14 +282,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var9 = var5;
                     var8 = var4;
                     if (!(var2 < var6)) {
-                        _fun45756_ip = 81;
-                        continue _fun45756
+                        _fun45749_ip = 81;
+                        continue _fun45749
                     }
                 case 67:
                     var8 = var4 + 1;
                     var9 = var5;
-                    _fun45756_ip = 81;
-                    continue _fun45756;
+                    _fun45749_ip = 81;
+                    continue _fun45749;
                 case 75:
                     var9 = var5 + 1;
                     var8 = var4;
@@ -302,8 +302,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var5;
                     var0 = var4;
                     if (var3 < var2) {
-                        _fun45756_ip = 33;
-                        continue _fun45756
+                        _fun45749_ip = 33;
+                        continue _fun45749
                     }
                 case 111:
                     var0 = var1 < var0;
@@ -316,7 +316,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getMedianVelocity';
         var0.key = var5;
         var5 = function() {
-            _fun45757: for (var _fun45757_ip = 0;;) switch (_fun45757_ip) {
+            _fun45750: for (var _fun45750_ip = 0;;) switch (_fun45750_ip) {
                 case 0:
                     var2 = _closure1_slot2;
                     var0 = this;
@@ -336,8 +336,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var4 % var0;
                     var3 = 1;
                     if (!(var2 !== var3)) {
-                        _fun45757_ip = 86;
-                        continue _fun45757
+                        _fun45750_ip = 86;
+                        continue _fun45750
                     }
                 case 60:
                     var2 = var4 / var0;
@@ -378,7 +378,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'computeVisibleIndices';
         var0.key = var5;
         var5 = function arg0() {
-            _fun45760: for (var _fun45760_ip = 0;;) switch (_fun45760_ip) {
+            _fun45753: for (var _fun45753_ip = 0;;) switch (_fun45753_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = var3.getWindowsSize;
@@ -388,13 +388,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = this;
                     var2 = var2.scrollOffset;
                     if (var0) {
-                        _fun45760_ip = 42;
-                        continue _fun45760
+                        _fun45753_ip = 42;
+                        continue _fun45753
                     }
                 case 35:
                     var0 = var1.height;
-                    _fun45760_ip = 47;
-                    continue _fun45760;
+                    _fun45753_ip = 47;
+                    continue _fun45753;
                 case 42:
                     var0 = var1.width;
                 case 47:
@@ -420,14 +420,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'setScrollDirection';
         var0.key = var5;
         var5 = function arg0() {
-            _fun45762: for (var _fun45762_ip = 0;;) switch (_fun45762_ip) {
+            _fun45755: for (var _fun45755_ip = 0;;) switch (_fun45755_ip) {
                 case 0:
                     var1 = this;
                     var2 = 'forward';
                     var0 = arg0;
                     if (!(var2 !== var0)) {
-                        _fun45762_ip = 58;
-                        continue _fun45762
+                        _fun45755_ip = 58;
+                        continue _fun45755
                     }
                 case 14:
                     var0 = [0, 0, 0];
@@ -437,8 +437,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1.velocityHistory = var0;
                     var0 = 0;
                     var1.velocityIndex = var0;
-                    _fun45762_ip = 82;
-                    continue _fun45762;
+                    _fun45755_ip = 82;
+                    continue _fun45755;
                 case 58:
                     var0 = [0, 0, 0, 0.1, 0.1];
                     var1.velocityHistory = var0;
@@ -455,21 +455,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'resetVelocityHistory';
         var0.key = var5;
         var4 = function() {
-            _fun45763: for (var _fun45763_ip = 0;;) switch (_fun45763_ip) {
+            _fun45756: for (var _fun45756_ip = 0;;) switch (_fun45756_ip) {
                 case 0:
                     var2 = this;
                     var0 = var2.isScrollingBackward;
                     var0 = var0.bind(var2)();
                     var1 = var2.setScrollDirection;
                     if (var0) {
-                        _fun45763_ip = 33;
-                        continue _fun45763
+                        _fun45756_ip = 33;
+                        continue _fun45756
                     }
                 case 22:
                     var0 = 'forward';
                     var0 = var1.bind(var2)(var0);
-                    _fun45763_ip = 44;
-                    continue _fun45763;
+                    _fun45756_ip = 44;
+                    continue _fun45756;
                 case 33:
                     var0 = 'backward';
                     var0 = var1.bind(var2)(var0);

@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = function() { // Environment: var1
         var3 = _closure1_slot1;
         var2 = function arg0, arg1() {
-            _fun45676: for (var _fun45676_ip = 0;;) switch (_fun45676_ip) {
+            _fun45669: for (var _fun45669_ip = 0;;) switch (_fun45669_ip) {
                 case 0:
                     var3 = arg1;
                     var1 = this;
@@ -54,16 +54,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var5 != var3;
                     var5 = 0;
                     if (!var6) {
-                        _fun45676_ip = 107;
-                        continue _fun45676
+                        _fun45669_ip = 107;
+                        continue _fun45669
                     }
                 case 104:
                     var5 = var3;
                 case 107:
                     var1.currentAverage = var5;
                     if (!(var0 === var3)) {
-                        _fun45676_ip = 119;
-                        continue _fun45676
+                        _fun45669_ip = 119;
+                        continue _fun45669
                     }
                 case 117:
                     var4 = 0;
@@ -92,7 +92,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'addValue';
         var0.key = var5;
         var5 = function arg0() {
-            _fun45678: for (var _fun45678_ip = 0;;) switch (_fun45678_ip) {
+            _fun45671: for (var _fun45671_ip = 0;;) switch (_fun45671_ip) {
                 case 0:
                     var5 = arg0;
                     var2 = this;
@@ -102,13 +102,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var0[var4];
                     var0 = undefined;
                     if (!(var0 !== var6)) {
-                        _fun45678_ip = 40;
-                        continue _fun45678
+                        _fun45671_ip = 40;
+                        continue _fun45671
                     }
                 case 32:
                     var1 = var2.currentCount;
-                    _fun45678_ip = 53;
-                    continue _fun45678;
+                    _fun45671_ip = 53;
+                    continue _fun45671;
                 case 40:
                     var7 = var2.currentCount;
                     var3 = 1;
@@ -124,8 +124,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = var3 != var6;
                     var3 = 0;
                     if (!var7) {
-                        _fun45678_ip = 97;
-                        continue _fun45678
+                        _fun45671_ip = 97;
+                        continue _fun45671
                     }
                 case 94:
                     var3 = var6;
@@ -194,7 +194,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'addValue';
         var0.key = var1;
         var1 = function arg0, arg1() {
-            _fun45682: for (var _fun45682_ip = 0;;) switch (_fun45682_ip) {
+            _fun45675: for (var _fun45675_ip = 0;;) switch (_fun45675_ip) {
                 case 0:
                     var4 = arg1;
                     var1 = this;
@@ -202,8 +202,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var2.get;
                     var2 = var0.bind(var2)(var4);
                     if (var2) {
-                        _fun45682_ip = 78;
-                        continue _fun45682
+                        _fun45675_ip = 78;
+                        continue _fun45675
                     }
                 case 25:
                     var5 = _closure1_slot2;
@@ -236,7 +236,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getCurrentValue';
         var0.key = var5;
         var5 = function arg0() {
-            _fun45683: for (var _fun45683_ip = 0;;) switch (_fun45683_ip) {
+            _fun45676: for (var _fun45676_ip = 0;;) switch (_fun45676_ip) {
                 case 0:
                     var2 = this;
                     var3 = var2.averageWindows;
@@ -247,15 +247,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var0 == var3;
                     var1 = undefined;
                     if (var4) {
-                        _fun45683_ip = 39;
-                        continue _fun45683
+                        _fun45676_ip = 39;
+                        continue _fun45676
                     }
                 case 33:
                     var1 = var3.currentValue;
                 case 39:
                     if (!(var0 == var1)) {
-                        _fun45683_ip = 49;
-                        continue _fun45683
+                        _fun45676_ip = 49;
+                        continue _fun45676
                     }
                 case 43:
                     var1 = var2.defaultValue;
@@ -263,8 +263,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 0;
                     if (!var2) {
-                        _fun45683_ip = 61;
-                        continue _fun45683
+                        _fun45676_ip = 61;
+                        continue _fun45676
                     }
                 case 58:
                     var0 = var1;

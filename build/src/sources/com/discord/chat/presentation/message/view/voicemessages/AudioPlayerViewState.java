@@ -123,7 +123,7 @@ public final class AudioPlayerViewState {
         AudioPlayerManager.AudioSource audioSource = this.audioSource;
         if (audioSource != null) {
             AudioPlayerManager.INSTANCE.setCurrentProgress(audioSource, f10, j10);
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
         return null;
     }

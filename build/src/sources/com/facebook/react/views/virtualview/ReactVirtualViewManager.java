@@ -102,11 +102,11 @@ public final class ReactVirtualViewManager extends ViewGroupManager<ReactVirtual
             z10 = ReactVirtualViewKt.IS_DEBUG_BUILD;
             if (z10) {
                 String valueOf = String.valueOf(view.getId());
-                p8.a.b("ReactVirtualView:setNativeId", ((Object) valueOf) + " [" + view.getId() + "][" + view.getNativeId$ReactAndroid_release() + "]");
+                q8.a.b("ReactVirtualView:setNativeId", ((Object) valueOf) + " [" + view.getId() + "][" + view.getNativeId$ReactAndroid_release() + "]");
                 return;
             }
             String valueOf2 = String.valueOf(view.getId());
-            p8.a.J("ReactVirtualView:setNativeId", ((Object) valueOf2) + " [" + view.getId() + "][" + view.getNativeId$ReactAndroid_release() + "]");
+            q8.a.J("ReactVirtualView:setNativeId", ((Object) valueOf2) + " [" + view.getId() + "][" + view.getNativeId$ReactAndroid_release() + "]");
         }
     }
 

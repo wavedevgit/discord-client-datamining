@@ -1,153 +1,221 @@
 package pe;
 
+import android.content.Context;
 import android.graphics.SurfaceTexture;
-import android.media.MediaFormat;
-import android.opengl.GLES20;
-import android.opengl.Matrix;
-import com.google.android.exoplayer2.Format;
-import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicBoolean;
-import ne.r0;
-import ne.t;
-import ne.y;
-/* JADX INFO: Access modifiers changed from: package-private */
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Message;
+import android.view.Surface;
+import oe.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class i implements oe.l, a {
-
-    /* renamed from: t  reason: collision with root package name */
-    private int f43897t;
-
-    /* renamed from: u  reason: collision with root package name */
-    private SurfaceTexture f43898u;
-
-    /* renamed from: x  reason: collision with root package name */
-    private byte[] f43901x;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final AtomicBoolean f43889d = new AtomicBoolean();
-
-    /* renamed from: e  reason: collision with root package name */
-    private final AtomicBoolean f43890e = new AtomicBoolean(true);
-
-    /* renamed from: i  reason: collision with root package name */
-    private final g f43891i = new g();
+public final class i extends Surface {
 
     /* renamed from: o  reason: collision with root package name */
-    private final c f43892o = new c();
+    private static int f43197o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final r0 f43893p = new r0();
+    private static boolean f43198p;
 
-    /* renamed from: q  reason: collision with root package name */
-    private final r0 f43894q = new r0();
+    /* renamed from: d  reason: collision with root package name */
+    public final boolean f43199d;
 
-    /* renamed from: r  reason: collision with root package name */
-    private final float[] f43895r = new float[16];
+    /* renamed from: e  reason: collision with root package name */
+    private final b f43200e;
 
-    /* renamed from: s  reason: collision with root package name */
-    private final float[] f43896s = new float[16];
+    /* renamed from: i  reason: collision with root package name */
+    private boolean f43201i;
 
-    /* renamed from: v  reason: collision with root package name */
-    private volatile int f43899v = 0;
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static class b extends HandlerThread implements Handler.Callback {
 
-    /* renamed from: w  reason: collision with root package name */
-    private int f43900w = -1;
+        /* renamed from: d  reason: collision with root package name */
+        private oe.m f43202d;
 
-    private void h(byte[] bArr, int i10, long j10) {
-        e eVar;
-        byte[] bArr2 = this.f43901x;
-        int i11 = this.f43900w;
-        this.f43901x = bArr;
-        if (i10 == -1) {
-            i10 = this.f43899v;
+        /* renamed from: e  reason: collision with root package name */
+        private Handler f43203e;
+
+        /* renamed from: i  reason: collision with root package name */
+        private Error f43204i;
+
+        /* renamed from: o  reason: collision with root package name */
+        private RuntimeException f43205o;
+
+        /* renamed from: p  reason: collision with root package name */
+        private i f43206p;
+
+        public b() {
+            super("ExoPlayer:PlaceholderSurface");
         }
-        this.f43900w = i10;
-        if (i11 == i10 && Arrays.equals(bArr2, this.f43901x)) {
-            return;
-        }
-        byte[] bArr3 = this.f43901x;
-        if (bArr3 != null) {
-            eVar = f.a(bArr3, this.f43900w);
-        } else {
-            eVar = null;
-        }
-        if (eVar == null || !g.c(eVar)) {
-            eVar = e.b(this.f43900w);
-        }
-        this.f43894q.a(j10, eVar);
-    }
 
-    @Override // oe.l
-    public void a(long j10, long j11, Format format, MediaFormat mediaFormat) {
-        this.f43893p.a(j11, Long.valueOf(j10));
-        h(format.G, format.H, j11);
-    }
-
-    @Override // pe.a
-    public void b(long j10, float[] fArr) {
-        this.f43892o.e(j10, fArr);
-    }
-
-    @Override // pe.a
-    public void c() {
-        this.f43893p.c();
-        this.f43892o.d();
-        this.f43890e.set(true);
-    }
-
-    public void e(float[] fArr, boolean z10) {
-        GLES20.glClear(16384);
-        try {
-            t.b();
-        } catch (t.a e10) {
-            y.d("SceneRenderer", "Failed to draw a frame", e10);
+        private void b(int i10) {
+            boolean z10;
+            oe.a.e(this.f43202d);
+            this.f43202d.h(i10);
+            SurfaceTexture g10 = this.f43202d.g();
+            if (i10 != 0) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            this.f43206p = new i(this, g10, z10);
         }
-        if (this.f43889d.compareAndSet(true, false)) {
-            ((SurfaceTexture) ne.a.e(this.f43898u)).updateTexImage();
+
+        private void d() {
+            oe.a.e(this.f43202d);
+            this.f43202d.i();
+        }
+
+        public i a(int i10) {
+            boolean z10;
+            start();
+            this.f43203e = new Handler(getLooper(), this);
+            this.f43202d = new oe.m(this.f43203e);
+            synchronized (this) {
+                z10 = false;
+                this.f43203e.obtainMessage(1, i10, 0).sendToTarget();
+                while (this.f43206p == null && this.f43205o == null && this.f43204i == null) {
+                    try {
+                        wait();
+                    } catch (InterruptedException unused) {
+                        z10 = true;
+                    }
+                }
+            }
+            if (z10) {
+                Thread.currentThread().interrupt();
+            }
+            RuntimeException runtimeException = this.f43205o;
+            if (runtimeException == null) {
+                Error error = this.f43204i;
+                if (error == null) {
+                    return (i) oe.a.e(this.f43206p);
+                }
+                throw error;
+            }
+            throw runtimeException;
+        }
+
+        public void c() {
+            oe.a.e(this.f43203e);
+            this.f43203e.sendEmptyMessage(2);
+        }
+
+        @Override // android.os.Handler.Callback
+        public boolean handleMessage(Message message) {
+            int i10 = message.what;
             try {
-                t.b();
-            } catch (t.a e11) {
-                y.d("SceneRenderer", "Failed to draw a frame", e11);
-            }
-            if (this.f43890e.compareAndSet(true, false)) {
-                t.j(this.f43895r);
-            }
-            long timestamp = this.f43898u.getTimestamp();
-            Long l10 = (Long) this.f43893p.g(timestamp);
-            if (l10 != null) {
-                this.f43892o.c(this.f43895r, l10.longValue());
-            }
-            e eVar = (e) this.f43894q.j(timestamp);
-            if (eVar != null) {
-                this.f43891i.d(eVar);
+                if (i10 != 1) {
+                    if (i10 != 2) {
+                        return true;
+                    }
+                    try {
+                        d();
+                    } finally {
+                        try {
+                            return true;
+                        } finally {
+                        }
+                    }
+                    return true;
+                }
+                try {
+                    b(message.arg1);
+                    synchronized (this) {
+                        notify();
+                    }
+                } catch (Error e10) {
+                    oe.y.d("PlaceholderSurface", "Failed to initialize placeholder surface", e10);
+                    this.f43204i = e10;
+                    synchronized (this) {
+                        notify();
+                    }
+                } catch (RuntimeException e11) {
+                    oe.y.d("PlaceholderSurface", "Failed to initialize placeholder surface", e11);
+                    this.f43205o = e11;
+                    synchronized (this) {
+                        notify();
+                    }
+                } catch (t.a e12) {
+                    oe.y.d("PlaceholderSurface", "Failed to initialize placeholder surface", e12);
+                    this.f43205o = new IllegalStateException(e12);
+                    synchronized (this) {
+                        notify();
+                    }
+                }
+                return true;
+            } catch (Throwable th2) {
+                synchronized (this) {
+                    notify();
+                    throw th2;
+                }
             }
         }
-        Matrix.multiplyMM(this.f43896s, 0, fArr, 0, this.f43895r, 0);
-        this.f43891i.a(this.f43897t, this.f43896s, z10);
     }
 
-    public SurfaceTexture f() {
-        try {
-            GLES20.glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
-            t.b();
-            this.f43891i.b();
-            t.b();
-            this.f43897t = t.f();
-        } catch (t.a e10) {
-            y.d("SceneRenderer", "Failed to initialize the renderer", e10);
-        }
-        SurfaceTexture surfaceTexture = new SurfaceTexture(this.f43897t);
-        this.f43898u = surfaceTexture;
-        surfaceTexture.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() { // from class: pe.h
-            @Override // android.graphics.SurfaceTexture.OnFrameAvailableListener
-            public final void onFrameAvailable(SurfaceTexture surfaceTexture2) {
-                i.this.f43889d.set(true);
+    private static int a(Context context) {
+        if (oe.t.h(context)) {
+            if (oe.t.i()) {
+                return 1;
             }
-        });
-        return this.f43898u;
+            return 2;
+        }
+        return 0;
     }
 
-    public void g(int i10) {
-        this.f43899v = i10;
+    public static synchronized boolean b(Context context) {
+        boolean z10;
+        synchronized (i.class) {
+            try {
+                z10 = true;
+                if (!f43198p) {
+                    f43197o = a(context);
+                    f43198p = true;
+                }
+                if (f43197o == 0) {
+                    z10 = false;
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        return z10;
+    }
+
+    public static i c(Context context, boolean z10) {
+        boolean z11;
+        int i10 = 0;
+        if (z10 && !b(context)) {
+            z11 = false;
+        } else {
+            z11 = true;
+        }
+        oe.a.g(z11);
+        b bVar = new b();
+        if (z10) {
+            i10 = f43197o;
+        }
+        return bVar.a(i10);
+    }
+
+    @Override // android.view.Surface
+    public void release() {
+        super.release();
+        synchronized (this.f43200e) {
+            try {
+                if (!this.f43201i) {
+                    this.f43200e.c();
+                    this.f43201i = true;
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+    }
+
+    private i(b bVar, SurfaceTexture surfaceTexture, boolean z10) {
+        super(surfaceTexture);
+        this.f43200e = bVar;
+        this.f43199d = z10;
     }
 }

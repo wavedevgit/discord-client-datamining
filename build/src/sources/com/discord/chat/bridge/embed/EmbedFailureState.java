@@ -2,7 +2,7 @@ package com.discord.chat.bridge.embed;
 
 import com.discord.serialization.IntEnum;
 import com.discord.serialization.IntEnumSerializer;
-import ft.m;
+import gt.m;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -58,7 +58,7 @@ public final class EmbedFailureState implements IntEnum {
     static {
         EmbedFailureState[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = xr.a.a($values);
+        $ENTRIES = yr.a.a($values);
         Companion = new Companion(null);
     }
 

@@ -17,14 +17,14 @@ import org.jetbrains.annotations.NotNull;
 public final class CapturedTypeConstructorImpl implements CapturedTypeConstructor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeProjection f34177a;
+    private final TypeProjection f33886a;
 
     /* renamed from: b  reason: collision with root package name */
-    private NewCapturedTypeConstructor f34178b;
+    private NewCapturedTypeConstructor f33887b;
 
     public CapturedTypeConstructorImpl(@NotNull TypeProjection projection) {
         Intrinsics.checkNotNullParameter(projection, "projection");
-        this.f34177a = projection;
+        this.f33886a = projection;
         getProjection().getProjectionKind();
         Variance variance = Variance.INVARIANT;
     }
@@ -42,7 +42,7 @@ public final class CapturedTypeConstructorImpl implements CapturedTypeConstructo
     }
 
     public final NewCapturedTypeConstructor getNewTypeConstructor() {
-        return this.f34178b;
+        return this.f33887b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -54,7 +54,7 @@ public final class CapturedTypeConstructorImpl implements CapturedTypeConstructo
     @Override // kotlin.reflect.jvm.internal.impl.resolve.calls.inference.CapturedTypeConstructor
     @NotNull
     public TypeProjection getProjection() {
-        return this.f34177a;
+        return this.f33886a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -76,7 +76,7 @@ public final class CapturedTypeConstructorImpl implements CapturedTypeConstructo
     }
 
     public final void setNewTypeConstructor(NewCapturedTypeConstructor newCapturedTypeConstructor) {
-        this.f34178b = newCapturedTypeConstructor;
+        this.f33887b = newCapturedTypeConstructor;
     }
 
     @NotNull

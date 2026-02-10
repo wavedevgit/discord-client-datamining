@@ -1,0 +1,25 @@
+package kc;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class d implements cc.b {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    private static final class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private static final d f30826a = new d();
+    }
+
+    public static d a() {
+        return a.f30826a;
+    }
+
+    public static kc.a c() {
+        return (kc.a) cc.d.c(b.b(), "Cannot return null from a non-@Nullable @Provides method");
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public kc.a get() {
+        return c();
+    }
+}

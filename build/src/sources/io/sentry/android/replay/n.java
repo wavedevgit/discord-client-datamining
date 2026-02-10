@@ -22,7 +22,7 @@ public final class n {
     static {
         n[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = xr.a.a($values);
+        $ENTRIES = yr.a.a($values);
     }
 
     private n(String str, int i10) {

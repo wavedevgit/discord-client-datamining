@@ -47,8 +47,8 @@ public final class CapturePageConfig_RuleSetJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 list = (List) this.nullableListOfRuleAdapter.fromJson(reader);
             }

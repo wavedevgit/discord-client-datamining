@@ -9,14 +9,14 @@ import java.security.NoSuchAlgorithmException;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f13794a = new Object();
+    private static final Object f13934a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int f13795b = 0;
+    public static final /* synthetic */ int f13935b = 0;
 
     public static byte[] a(Context context, String str) {
         MessageDigest b10;
-        PackageInfo e10 = pf.c.a(context).e(str, 64);
+        PackageInfo e10 = qf.c.a(context).e(str, 64);
         Signature[] signatureArr = e10.signatures;
         if (signatureArr != null && signatureArr.length == 1 && (b10 = b("SHA1")) != null) {
             return b10.digest(e10.signatures[0].toByteArray());

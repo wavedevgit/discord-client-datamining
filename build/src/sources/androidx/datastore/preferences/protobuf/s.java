@@ -10,138 +10,138 @@ import java.util.Map;
 final class s {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final s f4230d = new s(true);
+    private static final s f3927d = new s(true);
 
     /* renamed from: a  reason: collision with root package name */
-    private final g1 f4231a;
+    private final g1 f3928a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f4232b;
+    private boolean f3929b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f4233c;
+    private boolean f3930c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f4234a;
+        static final /* synthetic */ int[] f3931a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f4235b;
+        static final /* synthetic */ int[] f3932b;
 
         static {
             int[] iArr = new int[q1.b.values().length];
-            f4235b = iArr;
+            f3932b = iArr;
             try {
-                iArr[q1.b.f4180i.ordinal()] = 1;
+                iArr[q1.b.f3877i.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f4235b[q1.b.f4181o.ordinal()] = 2;
+                f3932b[q1.b.f3878o.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f4235b[q1.b.f4182p.ordinal()] = 3;
+                f3932b[q1.b.f3879p.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f4235b[q1.b.f4183q.ordinal()] = 4;
+                f3932b[q1.b.f3880q.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f4235b[q1.b.f4184r.ordinal()] = 5;
+                f3932b[q1.b.f3881r.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f4235b[q1.b.f4185s.ordinal()] = 6;
+                f3932b[q1.b.f3882s.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f4235b[q1.b.f4186t.ordinal()] = 7;
+                f3932b[q1.b.f3883t.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f4235b[q1.b.f4187u.ordinal()] = 8;
+                f3932b[q1.b.f3884u.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f4235b[q1.b.f4189w.ordinal()] = 9;
+                f3932b[q1.b.f3886w.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f4235b[q1.b.f4190x.ordinal()] = 10;
+                f3932b[q1.b.f3887x.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f4235b[q1.b.f4188v.ordinal()] = 11;
+                f3932b[q1.b.f3885v.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f4235b[q1.b.f4191y.ordinal()] = 12;
+                f3932b[q1.b.f3888y.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f4235b[q1.b.f4192z.ordinal()] = 13;
+                f3932b[q1.b.f3889z.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f4235b[q1.b.B.ordinal()] = 14;
+                f3932b[q1.b.B.ordinal()] = 14;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f4235b[q1.b.C.ordinal()] = 15;
+                f3932b[q1.b.C.ordinal()] = 15;
             } catch (NoSuchFieldError unused15) {
             }
             try {
-                f4235b[q1.b.D.ordinal()] = 16;
+                f3932b[q1.b.D.ordinal()] = 16;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                f4235b[q1.b.E.ordinal()] = 17;
+                f3932b[q1.b.E.ordinal()] = 17;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                f4235b[q1.b.A.ordinal()] = 18;
+                f3932b[q1.b.A.ordinal()] = 18;
             } catch (NoSuchFieldError unused18) {
             }
             int[] iArr2 = new int[q1.c.values().length];
-            f4234a = iArr2;
+            f3931a = iArr2;
             try {
                 iArr2[q1.c.INT.ordinal()] = 1;
             } catch (NoSuchFieldError unused19) {
             }
             try {
-                f4234a[q1.c.LONG.ordinal()] = 2;
+                f3931a[q1.c.LONG.ordinal()] = 2;
             } catch (NoSuchFieldError unused20) {
             }
             try {
-                f4234a[q1.c.FLOAT.ordinal()] = 3;
+                f3931a[q1.c.FLOAT.ordinal()] = 3;
             } catch (NoSuchFieldError unused21) {
             }
             try {
-                f4234a[q1.c.DOUBLE.ordinal()] = 4;
+                f3931a[q1.c.DOUBLE.ordinal()] = 4;
             } catch (NoSuchFieldError unused22) {
             }
             try {
-                f4234a[q1.c.BOOLEAN.ordinal()] = 5;
+                f3931a[q1.c.BOOLEAN.ordinal()] = 5;
             } catch (NoSuchFieldError unused23) {
             }
             try {
-                f4234a[q1.c.STRING.ordinal()] = 6;
+                f3931a[q1.c.STRING.ordinal()] = 6;
             } catch (NoSuchFieldError unused24) {
             }
             try {
-                f4234a[q1.c.BYTE_STRING.ordinal()] = 7;
+                f3931a[q1.c.BYTE_STRING.ordinal()] = 7;
             } catch (NoSuchFieldError unused25) {
             }
             try {
-                f4234a[q1.c.ENUM.ordinal()] = 8;
+                f3931a[q1.c.ENUM.ordinal()] = 8;
             } catch (NoSuchFieldError unused26) {
             }
             try {
-                f4234a[q1.c.MESSAGE.ordinal()] = 9;
+                f3931a[q1.c.MESSAGE.ordinal()] = 9;
             } catch (NoSuchFieldError unused27) {
             }
         }
@@ -159,20 +159,20 @@ final class s {
     }
 
     private s() {
-        this.f4231a = g1.q(16);
+        this.f3928a = g1.q(16);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int b(q1.b bVar, int i10, Object obj) {
         int P = j.P(i10);
-        if (bVar == q1.b.f4189w) {
+        if (bVar == q1.b.f3886w) {
             P *= 2;
         }
         return P + c(bVar, obj);
     }
 
     static int c(q1.b bVar, Object obj) {
-        switch (a.f4235b[bVar.ordinal()]) {
+        switch (a.f3932b[bVar.ordinal()]) {
             case 1:
                 return j.i(((Double) obj).doubleValue());
             case 2:
@@ -259,7 +259,7 @@ final class s {
 
     private static boolean m(q1.b bVar, Object obj) {
         y.a(obj);
-        switch (a.f4234a[bVar.a().ordinal()]) {
+        switch (a.f3931a[bVar.a().ordinal()]) {
             case 1:
                 return obj instanceof Integer;
             case 2:
@@ -311,7 +311,7 @@ final class s {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void u(j jVar, q1.b bVar, int i10, Object obj) {
-        if (bVar == q1.b.f4189w) {
+        if (bVar == q1.b.f3886w) {
             jVar.r0(i10, (o0) obj);
             return;
         }
@@ -320,7 +320,7 @@ final class s {
     }
 
     static void v(j jVar, q1.b bVar, Object obj) {
-        switch (a.f4235b[bVar.ordinal()]) {
+        switch (a.f3932b[bVar.ordinal()]) {
             case 1:
                 jVar.i0(((Double) obj).doubleValue());
                 return;
@@ -393,25 +393,25 @@ final class s {
     /* renamed from: a */
     public s clone() {
         s r10 = r();
-        for (int i10 = 0; i10 < this.f4231a.k(); i10++) {
-            Map.Entry j10 = this.f4231a.j(i10);
+        for (int i10 = 0; i10 < this.f3928a.k(); i10++) {
+            Map.Entry j10 = this.f3928a.j(i10);
             android.support.v4.media.session.b.a(j10.getKey());
             r10.s(null, j10.getValue());
         }
-        for (Map.Entry entry : this.f4231a.m()) {
+        for (Map.Entry entry : this.f3928a.m()) {
             android.support.v4.media.session.b.a(entry.getKey());
             r10.s(null, entry.getValue());
         }
-        r10.f4233c = this.f4233c;
+        r10.f3930c = this.f3930c;
         return r10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Iterator e() {
-        if (this.f4233c) {
-            return new b0(this.f4231a.h().iterator());
+        if (this.f3930c) {
+            return new b0(this.f3928a.h().iterator());
         }
-        return this.f4231a.h().iterator();
+        return this.f3928a.h().iterator();
     }
 
     public boolean equals(Object obj) {
@@ -421,15 +421,15 @@ final class s {
         if (!(obj instanceof s)) {
             return false;
         }
-        return this.f4231a.equals(((s) obj).f4231a);
+        return this.f3928a.equals(((s) obj).f3928a);
     }
 
     public int f() {
         int i10 = 0;
-        for (int i11 = 0; i11 < this.f4231a.k(); i11++) {
-            i10 += g(this.f4231a.j(i11));
+        for (int i11 = 0; i11 < this.f3928a.k(); i11++) {
+            i10 += g(this.f3928a.j(i11));
         }
-        for (Map.Entry entry : this.f4231a.m()) {
+        for (Map.Entry entry : this.f3928a.m()) {
             i10 += g(entry);
         }
         return i10;
@@ -437,12 +437,12 @@ final class s {
 
     public int h() {
         int i10 = 0;
-        for (int i11 = 0; i11 < this.f4231a.k(); i11++) {
-            Map.Entry j10 = this.f4231a.j(i11);
+        for (int i11 = 0; i11 < this.f3928a.k(); i11++) {
+            Map.Entry j10 = this.f3928a.j(i11);
             android.support.v4.media.session.b.a(j10.getKey());
             i10 += d(null, j10.getValue());
         }
-        for (Map.Entry entry : this.f4231a.m()) {
+        for (Map.Entry entry : this.f3928a.m()) {
             android.support.v4.media.session.b.a(entry.getKey());
             i10 += d(null, entry.getValue());
         }
@@ -450,21 +450,21 @@ final class s {
     }
 
     public int hashCode() {
-        return this.f4231a.hashCode();
+        return this.f3928a.hashCode();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean j() {
-        return this.f4231a.isEmpty();
+        return this.f3928a.isEmpty();
     }
 
     public boolean k() {
-        for (int i10 = 0; i10 < this.f4231a.k(); i10++) {
-            if (!l(this.f4231a.j(i10))) {
+        for (int i10 = 0; i10 < this.f3928a.k(); i10++) {
+            if (!l(this.f3928a.j(i10))) {
                 return false;
             }
         }
-        for (Map.Entry entry : this.f4231a.m()) {
+        for (Map.Entry entry : this.f3928a.m()) {
             if (!l(entry)) {
                 return false;
             }
@@ -473,25 +473,25 @@ final class s {
     }
 
     public Iterator n() {
-        if (this.f4233c) {
-            return new b0(this.f4231a.entrySet().iterator());
+        if (this.f3930c) {
+            return new b0(this.f3928a.entrySet().iterator());
         }
-        return this.f4231a.entrySet().iterator();
+        return this.f3928a.entrySet().iterator();
     }
 
     public void o() {
-        if (this.f4232b) {
+        if (this.f3929b) {
             return;
         }
-        this.f4231a.p();
-        this.f4232b = true;
+        this.f3928a.p();
+        this.f3929b = true;
     }
 
     public void p(s sVar) {
-        for (int i10 = 0; i10 < sVar.f4231a.k(); i10++) {
-            q(sVar.f4231a.j(i10));
+        for (int i10 = 0; i10 < sVar.f3928a.k(); i10++) {
+            q(sVar.f3928a.j(i10));
         }
-        for (Map.Entry entry : sVar.f4231a.m()) {
+        for (Map.Entry entry : sVar.f3928a.m()) {
             q(entry);
         }
     }
@@ -511,7 +511,7 @@ final class s {
         } else {
             t(bVar.getLiteType(), obj);
         }
-        this.f4231a.r(bVar, obj);
+        this.f3928a.r(bVar, obj);
     }
 
     private s(boolean z10) {
@@ -520,7 +520,7 @@ final class s {
     }
 
     private s(g1 g1Var) {
-        this.f4231a = g1Var;
+        this.f3928a = g1Var;
         o();
     }
 }

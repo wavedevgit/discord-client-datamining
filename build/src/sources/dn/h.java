@@ -1,18 +1,190 @@
 package dn;
 
+import cn.q;
+import cn.t;
+import cn.w;
+import dn.e;
+import dn.f;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
+import kotlin.jvm.internal.Ref;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class h {
-    public static final boolean a(Object me2, Object you) {
-        Intrinsics.checkNotNullParameter(me2, "me");
-        Intrinsics.checkNotNullParameter(you, "you");
-        if (!Intrinsics.areEqual(Reflection.getOrCreateKotlinClass(me2.getClass()), Reflection.getOrCreateKotlinClass(you.getClass()))) {
-            return false;
+public final class h implements f.a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private Map f20876a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final CoroutineContext f20877b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final Function1 f20878c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final t.c f20879d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final t f20880e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final d f20881f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private dn.a f20882g;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ Ref.ObjectRef f20883d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ h f20884e;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(Ref.ObjectRef objectRef, h hVar) {
+            super(1, Intrinsics.Kotlin.class, "acceptChildOutput", "createChildNode$acceptChildOutput(Lkotlin/jvm/internal/Ref$ObjectRef;Lcom/squareup/workflow1/internal/SubtreeManager;Ljava/lang/Object;)Ljava/lang/Object;", 0);
+            this.f20883d = objectRef;
+            this.f20884e = hVar;
         }
-        if (!(me2 instanceof g)) {
-            return true;
+
+        @Override // kotlin.jvm.functions.Function1
+        public final Object invoke(Object obj) {
+            return h.e(this.f20883d, this.f20884e, obj);
         }
-        return Intrinsics.areEqual(((g) me2).c(), ((g) you).c());
+    }
+
+    public h(Map map, CoroutineContext contextForChildren, Function1 emitActionToParent, t.c cVar, t interceptor, d dVar) {
+        Intrinsics.checkNotNullParameter(contextForChildren, "contextForChildren");
+        Intrinsics.checkNotNullParameter(emitActionToParent, "emitActionToParent");
+        Intrinsics.checkNotNullParameter(interceptor, "interceptor");
+        this.f20876a = map;
+        this.f20877b = contextForChildren;
+        this.f20878c = emitActionToParent;
+        this.f20879d = cVar;
+        this.f20880e = interceptor;
+        this.f20881f = dVar;
+        this.f20882g = new dn.a();
+    }
+
+    /* JADX WARN: Type inference failed for: r12v1, types: [T, dn.i] */
+    private final i d(q qVar, Object obj, String str, Function1 function1) {
+        cn.m mVar;
+        k a10 = l.a(qVar, str);
+        Ref.ObjectRef objectRef = new Ref.ObjectRef();
+        Map map = this.f20876a;
+        if (map == null) {
+            mVar = null;
+        } else {
+            mVar = (cn.m) map.get(a10);
+        }
+        ?? iVar = new i(qVar, function1, new j(a10, qVar.b(), obj, mVar, this.f20877b, new a(objectRef, this), this.f20879d, this.f20880e, this.f20881f));
+        objectRef.element = iVar;
+        return iVar;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Object e(Ref.ObjectRef objectRef, h hVar, Object obj) {
+        i iVar;
+        T t10 = objectRef.element;
+        if (t10 == 0) {
+            Intrinsics.throwUninitializedPropertyAccessException("node");
+            iVar = null;
+        } else {
+            iVar = (i) t10;
+        }
+        return hVar.f20878c.invoke(iVar.c(obj));
+    }
+
+    @Override // dn.f.a
+    public Object a(q child, Object obj, String key, Function1 handler) {
+        e eVar;
+        e eVar2;
+        e eVar3;
+        Intrinsics.checkNotNullParameter(child, "child");
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        eVar = this.f20882g.f20838b;
+        for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
+            if (((i) b10).h(child, key)) {
+                throw new IllegalArgumentException(("Expected keys to be unique for " + w.j(child) + ": key=\"" + key + '\"').toString());
+            }
+        }
+        dn.a aVar = this.f20882g;
+        eVar2 = aVar.f20837a;
+        e.a b11 = eVar2.b();
+        i iVar = null;
+        e.a aVar2 = null;
+        while (true) {
+            if (b11 == null) {
+                break;
+            } else if (((i) b11).h(child, key)) {
+                if (aVar2 == null) {
+                    eVar2.e(b11.a());
+                } else {
+                    aVar2.b(b11.a());
+                }
+                if (Intrinsics.areEqual(eVar2.c(), b11)) {
+                    eVar2.f(aVar2);
+                }
+                b11.b(null);
+                iVar = b11;
+            } else {
+                aVar2 = b11;
+                b11 = b11.a();
+            }
+        }
+        if (iVar == null) {
+            iVar = d(child, obj, key, handler);
+        }
+        eVar3 = aVar.f20838b;
+        eVar3.d(iVar);
+        i iVar2 = iVar;
+        iVar2.j(handler);
+        return iVar2.i(child.b(), obj);
+    }
+
+    public final void c() {
+        e eVar;
+        e eVar2;
+        e eVar3;
+        e eVar4;
+        dn.a aVar = this.f20882g;
+        eVar = aVar.f20837a;
+        for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
+            j.e(((i) b10).g(), null, 1, null);
+        }
+        eVar2 = aVar.f20837a;
+        eVar3 = aVar.f20838b;
+        aVar.f20837a = eVar3;
+        aVar.f20838b = eVar2;
+        eVar4 = aVar.f20838b;
+        eVar4.a();
+        this.f20876a = null;
+    }
+
+    public final Map f() {
+        e eVar;
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        eVar = this.f20882g.f20837a;
+        for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
+            i iVar = (i) b10;
+            linkedHashMap.put(iVar.d(), iVar.g().o(iVar.f().b()));
+        }
+        return linkedHashMap;
+    }
+
+    public final void g(xs.d selector) {
+        e eVar;
+        Intrinsics.checkNotNullParameter(selector, "selector");
+        eVar = this.f20882g.f20837a;
+        for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
+            ((i) b10).g().p(selector);
+        }
     }
 }

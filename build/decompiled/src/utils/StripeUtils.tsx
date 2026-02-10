@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun29582_ip = 575;
+                            _fun29582_ip = 579;
                             continue _fun29582
                         }
                     case 10:
@@ -89,65 +89,65 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = var13.bind(var14)(var12);
                         var1.url = var12;
                         var1 = var2.bind(var7)(var1);
-                        SaveGenerator(address = 100);
-                    case 98:
+                        SaveGenerator(address = 104);
+                    case 102:
                         return var1;
-                    case 100:
+                    case 104:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun29582_ip = 556;
+                            _fun29582_ip = 560;
                             continue _fun29582
                         }
-                    case 109:
+                    case 113:
                         var2 = var1.body;
                         var6 = var2.stripe_payment_intent_client_secret;
                         var2 = _closure1_slot9;
                         var2 = var2.bind(var3)();
-                        SaveGenerator(address = 132);
-                    case 130:
+                        SaveGenerator(address = 136);
+                    case 134:
                         return var2;
-                    case 132:
+                    case 136:
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun29582_ip = 553;
+                            _fun29582_ip = 557;
                             continue _fun29582
                         }
-                    case 141:
+                    case 145:
                         var9 = var2;
                         var7 = null;
                         if (!(var7 != var2)) {
-                            _fun29582_ip = 538;
+                            _fun29582_ip = 542;
                             continue _fun29582
                         }
-                    case 153:
+                    case 157:
                         var13 = var9;
                         var12 = var13.retrievePaymentIntent;
                         var3 = var6;
                         var3 = var12.bind(var13)(var3);
-                        SaveGenerator(address = 174);
-                    case 172:
+                        SaveGenerator(address = 178);
+                    case 176:
                         return var3;
-                    case 174:
+                    case 178:
                         ResumeGenerator(result_out_reg = 3, return_bool_out_reg = 12);
                         if (var12) {
-                            _fun29582_ip = 535;
+                            _fun29582_ip = 539;
                             continue _fun29582
                         }
-                    case 183:
+                    case 187:
                         var12 = var3.error;
                         var5 = var12;
                         var11 = var3.paymentIntent;
                         if (!(var7 == var12)) {
-                            _fun29582_ip = 521;
+                            _fun29582_ip = 525;
                             continue _fun29582
                         }
-                    case 204:
+                    case 208:
                         var12 = var11;
                         if (!(var7 != var12)) {
-                            _fun29582_ip = 506;
+                            _fun29582_ip = 510;
                             continue _fun29582
                         }
-                    case 214:
+                    case 218:
                         var4 = {};
                         var14 = var11;
                         var15 = var14.status;
@@ -156,74 +156,74 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var14 = var15 === var14;
                         var13 = var14;
                         if (!var14) {
-                            _fun29582_ip = 257;
+                            _fun29582_ip = 261;
                             continue _fun29582
                         }
-                    case 244:
+                    case 248:
                         var14 = var11;
                         var14 = var14.last_payment_error;
                         var13 = var7 != var14;
-                    case 257:
+                    case 261:
                         var12 = var13;
                         if (!var13) {
-                            _fun29582_ip = 282;
+                            _fun29582_ip = 286;
                             continue _fun29582
                         }
-                    case 263:
+                    case 267:
                         var13 = var11;
                         var13 = var13.last_payment_error;
                         var13 = var13.payment_method;
                         var12 = var7 != var13;
-                    case 282:
+                    case 286:
                         if (!var12) {
-                            _fun29582_ip = 314;
+                            _fun29582_ip = 318;
                             continue _fun29582
                         }
-                    case 285:
+                    case 289:
                         var13 = var4;
                         var12 = var11;
                         var12 = var12.last_payment_error;
                         var12 = var12.payment_method;
                         var12 = var12.id;
                         var13.payment_method = var12;
-                    case 314:
+                    case 318:
                         var12 = var11;
                         var13 = var12.status;
                         var12 = _closure1_slot8;
                         var12 = var12.REQUIRES_PAYMENT_METHOD;
                         if (!(var12 !== var13)) {
-                            _fun29582_ip = 445;
+                            _fun29582_ip = 449;
                             continue _fun29582
                         }
-                    case 336:
+                    case 340:
                         var12 = _closure1_slot8;
                         var12 = var12.REQUIRES_CONFIRMATION;
                         if (!(var12 !== var13)) {
-                            _fun29582_ip = 445;
+                            _fun29582_ip = 449;
                             continue _fun29582
                         }
-                    case 350:
+                    case 354:
                         var12 = _closure1_slot8;
                         var12 = var12.REQUIRES_ACTION;
                         if (!(var12 !== var13)) {
-                            _fun29582_ip = 445;
+                            _fun29582_ip = 449;
                             continue _fun29582
                         }
-                    case 364:
+                    case 368:
                         var12 = _closure1_slot8;
                         var12 = var12.SUCCEEDED;
                         if (!(var12 !== var13)) {
-                            _fun29582_ip = 440;
+                            _fun29582_ip = 444;
                             continue _fun29582
                         }
-                    case 378:
+                    case 382:
                         var12 = _closure1_slot8;
                         var12 = var12.PROCESSING;
                         if (!(var12 !== var13)) {
-                            _fun29582_ip = 440;
+                            _fun29582_ip = 444;
                             continue _fun29582
                         }
-                    case 392:
+                    case 396:
                         var10 = _closure1_slot8;
                         var10 = var10.CANCELED;
                         var10 = {};
@@ -234,75 +234,75 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = 'Invalid Payment Intent status: ';
                         var11 = var12.bind(var11)(var13);
                         var10.error = var11;
-                    case 437: // try_end0
+                    case 441: // try_end0
                         return var10;
-                    case 440:
+                    case 444:
                         var10 = {};
                         return var10;
-                    case 445: // try_start_1
+                    case 449: // try_start_1
                         var10 = var9;
                         var9 = var10.confirmCardPayment;
                         var4 = var9.bind(var10)(var6, var4);
-                        SaveGenerator(address = 464);
-                    case 462:
+                        SaveGenerator(address = 468);
+                    case 466:
                         return var4;
-                    case 464:
+                    case 468:
                         ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 6);
                         if (var6) {
-                            _fun29582_ip = 503;
+                            _fun29582_ip = 507;
                             continue _fun29582
                         }
-                    case 470:
+                    case 474:
                         var6 = var4.error;
                         var8 = var6;
                         if (!(var7 == var6)) {
-                            _fun29582_ip = 486;
+                            _fun29582_ip = 490;
                             continue _fun29582
                         }
-                    case 482:
-                        var6 = {};
-                        _fun29582_ip = 500;
-                        continue _fun29582;
                     case 486:
+                        var6 = {};
+                        _fun29582_ip = 504;
+                        continue _fun29582;
+                    case 490:
                         var7 = {};
                         var8 = var8.message;
                         var7.error = var8;
                         var6 = var7;
-                    case 500: // try_end1
+                    case 504: // try_end1
                         return var6;
-                    case 503:
+                    case 507:
                         return var4;
-                    case 506: // try_start_2
+                    case 510: // try_start_2
                         var4 = {};
                         var6 = 'payment intent does not exist';
                         var4.error = var6;
-                    case 518: // try_end2
+                    case 522: // try_end2
                         return var4;
-                    case 521: // try_start_3
+                    case 525: // try_start_3
                         var4 = {};
                         var5 = var5.message;
                         var4.error = var5;
-                    case 532: // try_end3
+                    case 536: // try_end3
                         return var4;
-                    case 535:
+                    case 539:
                         return var3;
-                    case 538: // try_start_4
+                    case 542: // try_start_4
                         var3 = {};
                         var4 = 'unable to load stripe';
                         var3.error = var4;
-                    case 550: // try_end4
+                    case 554: // try_end4
                         return var3;
-                    case 553:
+                    case 557:
                         return var2;
-                    case 556:
+                    case 560:
                         return var1;
-                    case 559: // catch_target0 // catch_target1 // catch_target2 // catch_target3 // catch_target4
+                    case 563: // catch_target0 // catch_target1 // catch_target2 // catch_target3 // catch_target4
                         CatchBlockStart(arg_register = 2);
                         var1 = {};
                         var2 = var2.message;
                         var1.error = var2;
                         return var1;
-                    case 575:
+                    case 579:
                         return var0;
                 }
             };

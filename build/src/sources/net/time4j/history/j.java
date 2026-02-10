@@ -1,6 +1,6 @@
 package net.time4j.history;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum j implements rt.i {
+public enum j implements st.i {
     BC,
     AD,
     HISPANIC,
@@ -12,29 +12,29 @@ public enum j implements rt.i {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f39462a;
+        static final /* synthetic */ int[] f38554a;
 
         static {
             int[] iArr = new int[j.values().length];
-            f39462a = iArr;
+            f38554a = iArr;
             try {
                 iArr[j.BC.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f39462a[j.AD.ordinal()] = 2;
+                f38554a[j.AD.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f39462a[j.HISPANIC.ordinal()] = 3;
+                f38554a[j.HISPANIC.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f39462a[j.BYZANTINE.ordinal()] = 4;
+                f38554a[j.BYZANTINE.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f39462a[j.AB_URBE_CONDITA.ordinal()] = 5;
+                f38554a[j.AB_URBE_CONDITA.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -42,23 +42,23 @@ public enum j implements rt.i {
 
     public int a(int i10) {
         try {
-            int i11 = a.f39462a[ordinal()];
+            int i11 = a.f38554a[ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3) {
                         if (i11 != 4) {
                             if (i11 == 5) {
-                                return pt.c.l(i10, 753);
+                                return qt.c.l(i10, 753);
                             }
                             throw new UnsupportedOperationException(name());
                         }
-                        return pt.c.l(i10, 5508);
+                        return qt.c.l(i10, 5508);
                     }
-                    return pt.c.l(i10, 38);
+                    return qt.c.l(i10, 38);
                 }
                 return i10;
             }
-            return pt.c.l(1, i10);
+            return qt.c.l(1, i10);
         } catch (ArithmeticException unused) {
             throw new IllegalArgumentException("Out of range: " + i10);
         }
@@ -68,23 +68,23 @@ public enum j implements rt.i {
     public int d(j jVar, int i10) {
         int a10 = jVar.a(i10);
         try {
-            int i11 = a.f39462a[ordinal()];
+            int i11 = a.f38554a[ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3) {
                         if (i11 != 4) {
                             if (i11 == 5) {
-                                return pt.c.e(a10, 753);
+                                return qt.c.e(a10, 753);
                             }
                             throw new UnsupportedOperationException(name());
                         }
-                        return pt.c.e(a10, 5508);
+                        return qt.c.e(a10, 5508);
                     }
-                    return pt.c.e(a10, 38);
+                    return qt.c.e(a10, 38);
                 }
                 return a10;
             }
-            return pt.c.l(1, a10);
+            return qt.c.l(1, a10);
         } catch (ArithmeticException unused) {
             throw new IllegalArgumentException("Out of range: " + i10);
         }

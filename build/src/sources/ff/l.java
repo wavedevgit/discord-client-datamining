@@ -1,14 +1,16 @@
 package ff;
-
-import ef.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class l {
-    public abstract void a();
+public final class l extends UnsupportedOperationException {
 
-    public abstract com.google.android.gms.common.d[] b();
+    /* renamed from: d  reason: collision with root package name */
+    private final com.google.android.gms.common.d f22617d;
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public abstract void c(a.b bVar, yg.k kVar);
+    public l(com.google.android.gms.common.d dVar) {
+        this.f22617d = dVar;
+    }
 
-    public abstract boolean d();
+    @Override // java.lang.Throwable
+    public String getMessage() {
+        return "Missing ".concat(String.valueOf(this.f22617d));
+    }
 }

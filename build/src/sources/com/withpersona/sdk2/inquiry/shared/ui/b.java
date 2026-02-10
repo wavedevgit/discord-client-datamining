@@ -2,22 +2,22 @@ package com.withpersona.sdk2.inquiry.shared.ui;
 
 import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends y5.c {
+public final class b extends z5.c {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ ThemeableLottieAnimationView f19557d;
+    final /* synthetic */ ThemeableLottieAnimationView f19697d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(ThemeableLottieAnimationView themeableLottieAnimationView) {
-        this.f19557d = themeableLottieAnimationView;
+        this.f19697d = themeableLottieAnimationView;
     }
 
-    @Override // y5.c
+    @Override // z5.c
     /* renamed from: d */
-    public Integer a(y5.b bVar) {
+    public Integer a(z5.b bVar) {
         Map map;
         Integer num;
-        map = this.f19557d.A;
+        map = this.f19697d.A;
         if (bVar != null) {
             num = (Integer) bVar.g();
         } else {

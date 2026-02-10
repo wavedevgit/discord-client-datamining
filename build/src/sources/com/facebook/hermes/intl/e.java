@@ -12,10 +12,10 @@ public abstract class e {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public da.b f10284a;
+        public ea.b f10424a;
 
         /* renamed from: b  reason: collision with root package name */
-        public HashMap f10285b = new HashMap();
+        public HashMap f10425b = new HashMap();
     }
 
     public static String a(String[] strArr, String str) {
@@ -32,7 +32,7 @@ public abstract class e {
         return str;
     }
 
-    public static ULocale b(da.b bVar) {
+    public static ULocale b(ea.b bVar) {
         boolean[] zArr = new boolean[1];
         ULocale acceptLanguage = ULocale.acceptLanguage(new ULocale[]{(ULocale) bVar.c()}, ULocale.getAvailableLocales(), zArr);
         if (!zArr[0] && acceptLanguage != null) {
@@ -44,22 +44,22 @@ public abstract class e {
     public static a c(String[] strArr) {
         a aVar = new a();
         for (String str : strArr) {
-            da.b b10 = da.g.b(str);
+            ea.b b10 = ea.g.b(str);
             ULocale b11 = b(b10);
             if (b11 != null) {
-                aVar.f10284a = da.h.k(b11);
-                aVar.f10285b = b10.a();
+                aVar.f10424a = ea.h.k(b11);
+                aVar.f10425b = b10.a();
                 return aVar;
             }
         }
-        aVar.f10284a = da.h.i();
+        aVar.f10424a = ea.h.i();
         return aVar;
     }
 
     public static String[] d(String[] strArr) {
         ArrayList arrayList = new ArrayList();
         for (String str : strArr) {
-            if (b(da.g.b(str)) != null) {
+            if (b(ea.g.b(str)) != null) {
                 arrayList.add(str);
             }
         }
@@ -81,15 +81,15 @@ public abstract class e {
     public static a g(String[] strArr, String[] strArr2) {
         a aVar = new a();
         for (String str : strArr) {
-            da.b b10 = da.g.b(str);
+            ea.b b10 = ea.g.b(str);
             String a10 = a(strArr2, b10.e());
             if (!a10.isEmpty()) {
-                aVar.f10284a = da.g.b(a10);
-                aVar.f10285b = b10.a();
+                aVar.f10424a = ea.g.b(a10);
+                aVar.f10425b = b10.a();
                 return aVar;
             }
         }
-        aVar.f10284a = da.g.a();
+        aVar.f10424a = ea.g.a();
         return aVar;
     }
 
@@ -97,7 +97,7 @@ public abstract class e {
         ArrayList arrayList = new ArrayList();
         String[] e10 = e();
         for (String str : strArr) {
-            String a10 = a(e10, da.g.b(str).e());
+            String a10 = a(e10, ea.g.b(str).e());
             if (a10 != null && !a10.isEmpty()) {
                 arrayList.add(str);
             }

@@ -1,71 +1,65 @@
 package og;
 
-import yi.c;
+import java.util.Arrays;
+import java.util.Collection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class b1 implements yi.d {
+abstract class b1 extends c1 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final b1 f41846a = new b1();
+    Object[] f40778a = new Object[4];
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f41847b;
+    int f40779b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f41848c;
+    boolean f40780c;
 
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f41849d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f41850e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f41851f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final yi.c f41852g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final yi.c f41853h;
-
-    static {
-        c.b a10 = yi.c.a("errorCode");
-        f fVar = new f();
-        fVar.a(1);
-        f41847b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("hasResult");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f41848c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("isColdCall");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f41849d = a12.b(fVar3.b()).a();
-        c.b a13 = yi.c.a("imageInfo");
-        f fVar4 = new f();
-        fVar4.a(4);
-        f41850e = a13.b(fVar4.b()).a();
-        c.b a14 = yi.c.a("options");
-        f fVar5 = new f();
-        fVar5.a(5);
-        f41851f = a14.b(fVar5.b()).a();
-        c.b a15 = yi.c.a("detectedBarcodeFormats");
-        f fVar6 = new f();
-        fVar6.a(6);
-        f41852g = a15.b(fVar6.b()).a();
-        c.b a16 = yi.c.a("detectedBarcodeValueTypes");
-        f fVar7 = new f();
-        fVar7.a(7);
-        f41853h = a16.b(fVar7.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b1(int i10) {
     }
 
-    private b1() {
+    private final void d(int i10) {
+        Object[] objArr = this.f40778a;
+        int length = objArr.length;
+        if (length < i10) {
+            int i11 = length + (length >> 1) + 1;
+            if (i11 < i10) {
+                int highestOneBit = Integer.highestOneBit(i10 - 1);
+                i11 = highestOneBit + highestOneBit;
+            }
+            if (i11 < 0) {
+                i11 = Integer.MAX_VALUE;
+            }
+            this.f40778a = Arrays.copyOf(objArr, i11);
+            this.f40780c = false;
+        } else if (this.f40780c) {
+            this.f40778a = (Object[]) objArr.clone();
+            this.f40780c = false;
+        }
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    public final b1 b(Object obj) {
+        obj.getClass();
+        d(this.f40779b + 1);
+        Object[] objArr = this.f40778a;
+        int i10 = this.f40779b;
+        this.f40779b = i10 + 1;
+        objArr[i10] = obj;
+        return this;
+    }
+
+    public final c1 c(Iterable iterable) {
+        if (iterable instanceof Collection) {
+            Collection collection = (Collection) iterable;
+            d(this.f40779b + collection.size());
+            if (collection instanceof d1) {
+                this.f40779b = ((d1) collection).b(this.f40778a, this.f40779b);
+                return this;
+            }
+        }
+        for (Object obj : iterable) {
+            a(obj);
+        }
+        return this;
     }
 }

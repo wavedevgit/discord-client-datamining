@@ -4,7 +4,7 @@ import android.content.pm.ApplicationInfo;
 import android.text.TextUtils;
 import com.google.android.gms.common.util.VisibleForTesting;
 import com.google.android.gms.common.util.l;
-import gf.q;
+import hf.q;
 import java.util.HashSet;
 import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */

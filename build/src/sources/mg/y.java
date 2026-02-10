@@ -1,54 +1,69 @@
 package mg;
+
+import java.util.List;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class y extends d0 {
+public final class y extends z {
 
-    /* renamed from: a  reason: collision with root package name */
-    private String f37202a;
+    /* renamed from: i  reason: collision with root package name */
+    final transient int f37102i;
 
-    /* renamed from: b  reason: collision with root package name */
-    private boolean f37203b;
+    /* renamed from: o  reason: collision with root package name */
+    final transient int f37103o;
 
-    /* renamed from: c  reason: collision with root package name */
-    private int f37204c;
+    /* renamed from: p  reason: collision with root package name */
+    final /* synthetic */ z f37104p;
 
-    /* renamed from: d  reason: collision with root package name */
-    private byte f37205d;
-
-    @Override // mg.d0
-    public final d0 a(boolean z10) {
-        this.f37203b = true;
-        this.f37205d = (byte) (1 | this.f37205d);
-        return this;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public y(z zVar, int i10, int i11) {
+        this.f37104p = zVar;
+        this.f37102i = i10;
+        this.f37103o = i11;
     }
 
-    @Override // mg.d0
-    public final d0 b(int i10) {
-        this.f37204c = 1;
-        this.f37205d = (byte) (this.f37205d | 2);
-        return this;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // mg.w
+    public final Object[] b() {
+        return this.f37104p.b();
     }
 
-    @Override // mg.d0
-    public final e0 c() {
-        String str;
-        if (this.f37205d == 3 && (str = this.f37202a) != null) {
-            return new a0(str, this.f37203b, this.f37204c, null);
-        }
-        StringBuilder sb2 = new StringBuilder();
-        if (this.f37202a == null) {
-            sb2.append(" libraryName");
-        }
-        if ((this.f37205d & 1) == 0) {
-            sb2.append(" enableFirelog");
-        }
-        if ((this.f37205d & 2) == 0) {
-            sb2.append(" firelogEventType");
-        }
-        throw new IllegalStateException("Missing required properties:".concat(sb2.toString()));
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // mg.w
+    public final int c() {
+        return this.f37104p.c() + this.f37102i;
     }
 
-    public final d0 d(String str) {
-        this.f37202a = "common";
-        return this;
+    @Override // mg.w
+    final int d() {
+        return this.f37104p.c() + this.f37102i + this.f37103o;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // mg.w
+    public final boolean f() {
+        return true;
+    }
+
+    @Override // java.util.List
+    public final Object get(int i10) {
+        t.a(i10, this.f37103o, "index");
+        return this.f37104p.get(i10 + this.f37102i);
+    }
+
+    @Override // mg.z
+    public final z h(int i10, int i11) {
+        t.c(i10, i11, this.f37103o);
+        int i12 = this.f37102i;
+        return this.f37104p.subList(i10 + i12, i11 + i12);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.f37103o;
+    }
+
+    @Override // mg.z, java.util.List
+    public final /* bridge */ /* synthetic */ List subList(int i10, int i11) {
+        return subList(i10, i11);
     }
 }

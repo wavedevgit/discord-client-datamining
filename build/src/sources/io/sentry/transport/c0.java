@@ -7,16 +7,16 @@ public abstract class c0 {
     public static final class b extends c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f28925a;
+        private final int f29125a;
 
         b(int i10) {
             super();
-            this.f28925a = i10;
+            this.f29125a = i10;
         }
 
         @Override // io.sentry.transport.c0
         public int c() {
-            return this.f28925a;
+            return this.f29125a;
         }
 
         @Override // io.sentry.transport.c0
@@ -29,7 +29,7 @@ public abstract class c0 {
     private static final class c extends c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        static final c f28926a = new c();
+        static final c f29126a = new c();
 
         private c() {
             super();
@@ -55,7 +55,7 @@ public abstract class c0 {
     }
 
     public static c0 e() {
-        return c.f28926a;
+        return c.f29126a;
     }
 
     public abstract int c();

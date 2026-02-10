@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19837a;
+    private final m.b f19977a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19838b;
+    private final h f19978b;
 
     public TransitionInquiryRequest_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("componentParams");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19837a = a10;
+        this.f19977a = a10;
         h f10 = moshi.f(a0.j(Map.class, String.class, ComponentParam.class), x0.d(), "componentParams");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19838b = f10;
+        this.f19978b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,14 +37,14 @@ public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
         reader.u();
         Map map = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19837a);
+            int J = reader.J(this.f19977a);
             if (J != -1) {
                 if (J == 0) {
-                    map = (Map) this.f19838b.fromJson(reader);
+                    map = (Map) this.f19978b.fromJson(reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -58,7 +58,7 @@ public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
         if (attributes != null) {
             writer.k();
             writer.J("componentParams");
-            this.f19838b.toJson(writer, attributes.a());
+            this.f19978b.toJson(writer, attributes.a());
             writer.s();
             return;
         }

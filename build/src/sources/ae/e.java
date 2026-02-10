@@ -1,216 +1,171 @@
 package ae;
 
-import ae.e;
+import java.nio.ByteBuffer;
 import java.util.ArrayDeque;
-import java.util.PriorityQueue;
-import kotlin.jvm.internal.LongCompanionObject;
-import ne.w0;
-import qc.g;
-import zd.h;
-import zd.k;
-import zd.l;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.util.Deque;
+import java.util.List;
+import oi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class e implements h {
+public final class e implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayDeque f590a = new ArrayDeque();
+    private final c f738a = new c();
 
     /* renamed from: b  reason: collision with root package name */
-    private final ArrayDeque f591b;
+    private final k f739b = new k();
 
     /* renamed from: c  reason: collision with root package name */
-    private final PriorityQueue f592c;
+    private final Deque f740c = new ArrayDeque();
 
     /* renamed from: d  reason: collision with root package name */
-    private b f593d;
+    private int f741d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f594e;
+    private boolean f742e;
 
-    /* renamed from: f  reason: collision with root package name */
-    private long f595f;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    class a extends l {
+        a() {
+        }
+
+        @Override // rc.g
+        public void t() {
+            e.this.i(this);
+        }
+    }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class b extends k implements Comparable {
+    public static final class b implements g {
 
-        /* renamed from: u  reason: collision with root package name */
-        private long f596u;
+        /* renamed from: d  reason: collision with root package name */
+        private final long f744d;
 
-        private b() {
+        /* renamed from: e  reason: collision with root package name */
+        private final s f745e;
+
+        public b(long j10, s sVar) {
+            this.f744d = j10;
+            this.f745e = sVar;
         }
 
-        @Override // java.lang.Comparable
-        /* renamed from: A */
-        public int compareTo(b bVar) {
-            if (n() != bVar.n()) {
-                if (!n()) {
-                    return -1;
-                }
-                return 1;
+        @Override // ae.g
+        public int a(long j10) {
+            if (this.f744d > j10) {
+                return 0;
             }
-            long j10 = this.f46659p - bVar.f46659p;
-            if (j10 == 0) {
-                j10 = this.f596u - bVar.f596u;
-                if (j10 == 0) {
-                    return 0;
-                }
+            return -1;
+        }
+
+        @Override // ae.g
+        public List d(long j10) {
+            if (j10 >= this.f744d) {
+                return this.f745e;
             }
-            if (j10 <= 0) {
-                return -1;
+            return s.t();
+        }
+
+        @Override // ae.g
+        public long e(int i10) {
+            boolean z10;
+            if (i10 == 0) {
+                z10 = true;
+            } else {
+                z10 = false;
             }
+            oe.a.a(z10);
+            return this.f744d;
+        }
+
+        @Override // ae.g
+        public int f() {
             return 1;
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class c extends l {
-
-        /* renamed from: q  reason: collision with root package name */
-        private g.a f597q;
-
-        public c(g.a aVar) {
-            this.f597q = aVar;
-        }
-
-        @Override // qc.g
-        public final void t() {
-            this.f597q.a(this);
-        }
-    }
-
     public e() {
-        for (int i10 = 0; i10 < 10; i10++) {
-            this.f590a.add(new b());
+        for (int i10 = 0; i10 < 2; i10++) {
+            this.f740c.addFirst(new a());
         }
-        this.f591b = new ArrayDeque();
-        for (int i11 = 0; i11 < 2; i11++) {
-            this.f591b.add(new c(new g.a() { // from class: ae.d
-                @Override // qc.g.a
-                public final void a(g gVar) {
-                    e.this.n((e.c) gVar);
-                }
-            }));
-        }
-        this.f592c = new PriorityQueue();
+        this.f741d = 0;
     }
 
-    private void m(b bVar) {
-        bVar.h();
-        this.f590a.add(bVar);
-    }
-
-    @Override // zd.h
-    public void a(long j10) {
-        this.f594e = j10;
-    }
-
-    protected abstract zd.g e();
-
-    protected abstract void f(k kVar);
-
-    @Override // qc.d
-    public void flush() {
-        this.f595f = 0L;
-        this.f594e = 0L;
-        while (!this.f592c.isEmpty()) {
-            m((b) w0.j((b) this.f592c.poll()));
-        }
-        b bVar = this.f593d;
-        if (bVar != null) {
-            m(bVar);
-            this.f593d = null;
-        }
-    }
-
-    @Override // qc.d
-    /* renamed from: g */
-    public k d() {
+    /* JADX INFO: Access modifiers changed from: private */
+    public void i(l lVar) {
         boolean z10;
-        if (this.f593d == null) {
+        if (this.f740c.size() < 2) {
             z10 = true;
         } else {
             z10 = false;
         }
-        ne.a.g(z10);
-        if (this.f590a.isEmpty()) {
-            return null;
-        }
-        b bVar = (b) this.f590a.pollFirst();
-        this.f593d = bVar;
-        return bVar;
+        oe.a.g(z10);
+        oe.a.a(!this.f740c.contains(lVar));
+        lVar.h();
+        this.f740c.addFirst(lVar);
     }
 
-    @Override // qc.d
-    /* renamed from: h */
-    public l b() {
-        if (this.f591b.isEmpty()) {
+    @Override // rc.d
+    /* renamed from: f */
+    public k d() {
+        oe.a.g(!this.f742e);
+        if (this.f741d != 0) {
             return null;
         }
-        while (!this.f592c.isEmpty() && ((b) w0.j((b) this.f592c.peek())).f46659p <= this.f594e) {
-            b bVar = (b) w0.j((b) this.f592c.poll());
-            if (bVar.n()) {
-                l lVar = (l) w0.j((l) this.f591b.pollFirst());
+        this.f741d = 1;
+        return this.f739b;
+    }
+
+    @Override // rc.d
+    public void flush() {
+        oe.a.g(!this.f742e);
+        this.f739b.h();
+        this.f741d = 0;
+    }
+
+    @Override // rc.d
+    /* renamed from: g */
+    public l b() {
+        oe.a.g(!this.f742e);
+        if (this.f741d == 2 && !this.f740c.isEmpty()) {
+            l lVar = (l) this.f740c.removeFirst();
+            if (this.f739b.n()) {
                 lVar.g(4);
-                m(bVar);
-                return lVar;
+            } else {
+                k kVar = this.f739b;
+                lVar.u(this.f739b.f47777p, new b(kVar.f47777p, this.f738a.a(((ByteBuffer) oe.a.e(kVar.f47775i)).array())), 0L);
             }
-            f(bVar);
-            if (k()) {
-                zd.g e10 = e();
-                l lVar2 = (l) w0.j((l) this.f591b.pollFirst());
-                lVar2.u(bVar.f46659p, e10, LongCompanionObject.MAX_VALUE);
-                m(bVar);
-                return lVar2;
-            }
-            m(bVar);
+            this.f739b.h();
+            this.f741d = 0;
+            return lVar;
         }
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final l i() {
-        return (l) this.f591b.pollFirst();
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final long j() {
-        return this.f594e;
-    }
-
-    protected abstract boolean k();
-
-    @Override // qc.d
-    /* renamed from: l */
+    @Override // rc.d
+    /* renamed from: h */
     public void c(k kVar) {
         boolean z10;
-        if (kVar == this.f593d) {
+        boolean z11 = true;
+        oe.a.g(!this.f742e);
+        if (this.f741d == 1) {
             z10 = true;
         } else {
             z10 = false;
         }
-        ne.a.a(z10);
-        b bVar = (b) kVar;
-        if (bVar.m()) {
-            m(bVar);
-        } else {
-            long j10 = this.f595f;
-            this.f595f = 1 + j10;
-            bVar.f596u = j10;
-            this.f592c.add(bVar);
+        oe.a.g(z10);
+        if (this.f739b != kVar) {
+            z11 = false;
         }
-        this.f593d = null;
+        oe.a.a(z11);
+        this.f741d = 2;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public void n(l lVar) {
-        lVar.h();
-        this.f591b.add(lVar);
-    }
-
-    @Override // qc.d
+    @Override // rc.d
     public void release() {
+        this.f742e = true;
+    }
+
+    @Override // ae.h
+    public void a(long j10) {
     }
 }

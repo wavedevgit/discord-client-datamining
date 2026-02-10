@@ -6,25 +6,25 @@ import java.util.Map;
 public final class y3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final t8 f29153a;
+    private final t8 f29353a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Double f29154b;
+    private final Double f29354b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f29155c;
+    private final Map f29355c;
 
     public y3(t8 t8Var, i iVar, Double d10, Map map) {
-        this.f29153a = (t8) io.sentry.util.y.c(t8Var, "transactionContexts is required");
-        this.f29154b = d10;
-        this.f29155c = map == null ? Collections.EMPTY_MAP : map;
+        this.f29353a = (t8) io.sentry.util.y.c(t8Var, "transactionContexts is required");
+        this.f29354b = d10;
+        this.f29355c = map == null ? Collections.EMPTY_MAP : map;
     }
 
     public Double a() {
-        return this.f29154b;
+        return this.f29354b;
     }
 
     public t8 b() {
-        return this.f29153a;
+        return this.f29353a;
     }
 }

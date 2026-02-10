@@ -49,7 +49,7 @@ public final class ReactChoreographer {
         static {
             CallbackType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = xr.a.a($values);
+            $ENTRIES = yr.a.a($values);
         }
 
         private CallbackType(String str, int i10, int i11) {
@@ -133,12 +133,12 @@ public final class ReactChoreographer {
                             pollFirst.doFrame(j10);
                             reactChoreographer.totalCallbacks--;
                         } else {
-                            p8.a.m(ReactConstants.TAG, "Tried to execute non-existent frame callback");
+                            q8.a.m(ReactConstants.TAG, "Tried to execute non-existent frame callback");
                         }
                     }
                 }
                 reactChoreographer.maybeRemoveFrameCallback();
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -161,7 +161,7 @@ public final class ReactChoreographer {
         } else {
             z10 = false;
         }
-        db.a.a(z10);
+        eb.a.a(z10);
         if (this.totalCallbacks == 0 && this.hasPostedCallback) {
             ChoreographerProvider.Choreographer choreographer2 = this.choreographer$1;
             if (choreographer2 != null) {
@@ -192,7 +192,7 @@ public final class ReactChoreographer {
     public static final void postFrameCallbackOnChoreographer$lambda$6(ReactChoreographer reactChoreographer) {
         synchronized (reactChoreographer.callbackQueues) {
             reactChoreographer.postFrameCallbackOnChoreographer();
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
         }
     }
 
@@ -207,9 +207,9 @@ public final class ReactChoreographer {
             if (i10 <= 0) {
                 z10 = false;
             }
-            db.a.a(z10);
+            eb.a.a(z10);
             postFrameCallbackOnChoreographer();
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
         }
     }
 
@@ -221,9 +221,9 @@ public final class ReactChoreographer {
                     this.totalCallbacks--;
                     maybeRemoveFrameCallback();
                 } else {
-                    p8.a.m(ReactConstants.TAG, "Tried to remove non-existent frame callback");
+                    q8.a.m(ReactConstants.TAG, "Tried to remove non-existent frame callback");
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }

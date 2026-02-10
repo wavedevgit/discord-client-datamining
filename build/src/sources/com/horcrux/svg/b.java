@@ -11,30 +11,30 @@ import java.util.ArrayList;
 public class b extends RenderableView {
 
     /* renamed from: d  reason: collision with root package name */
-    private SVGLength f16802d;
+    private SVGLength f16942d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SVGLength f16803e;
+    private SVGLength f16943e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SVGLength f16804i;
+    private SVGLength f16944i;
 
     public b(ReactContext reactContext) {
         super(reactContext);
     }
 
     public void c(Dynamic dynamic) {
-        this.f16802d = SVGLength.b(dynamic);
+        this.f16942d = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void d(Dynamic dynamic) {
-        this.f16803e = SVGLength.b(dynamic);
+        this.f16943e = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void e(Dynamic dynamic) {
-        this.f16804i = SVGLength.b(dynamic);
+        this.f16944i = SVGLength.b(dynamic);
         invalidate();
     }
 
@@ -42,9 +42,9 @@ public class b extends RenderableView {
     @Override // com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     public Path getPath(Canvas canvas, Paint paint) {
         Path path = new Path();
-        double relativeOnWidth = relativeOnWidth(this.f16802d);
-        double relativeOnHeight = relativeOnHeight(this.f16803e);
-        double relativeOnOther = relativeOnOther(this.f16804i);
+        double relativeOnWidth = relativeOnWidth(this.f16942d);
+        double relativeOnHeight = relativeOnHeight(this.f16943e);
+        double relativeOnOther = relativeOnOther(this.f16944i);
         path.addCircle((float) relativeOnWidth, (float) relativeOnHeight, (float) relativeOnOther, Path.Direction.CW);
         ArrayList<i0> arrayList = new ArrayList<>();
         this.elements = arrayList;

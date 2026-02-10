@@ -22,13 +22,13 @@ public final class j extends g {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static j t(Context context, e eVar, c cVar) {
         j jVar = new j(context, eVar, cVar, new d(eVar));
-        jVar.z(androidx.vectordrawable.graphics.drawable.f.b(context.getResources(), ah.e.f710b, null));
+        jVar.z(androidx.vectordrawable.graphics.drawable.f.b(context.getResources(), bh.e.f6698b, null));
         return jVar;
     }
 
     private boolean w() {
-        mh.a aVar = this.f15255i;
-        if (aVar == null || aVar.a(this.f15253d.getContentResolver()) != 0.0f) {
+        nh.a aVar = this.f15395i;
+        if (aVar == null || aVar.a(this.f15393d.getContentResolver()) != 0.0f) {
             return false;
         }
         return true;
@@ -42,28 +42,28 @@ public final class j extends g {
         if (!getBounds().isEmpty() && isVisible() && canvas.getClipBounds(rect)) {
             if (w() && (drawable = this.C) != null) {
                 drawable.setBounds(getBounds());
-                s1.a.n(this.C, this.f15254e.f15224c[0]);
+                s1.a.n(this.C, this.f15394e.f15364c[0]);
                 this.C.draw(canvas);
                 return;
             }
             canvas.save();
             this.A.g(canvas, getBounds(), h(), k(), j());
-            int i11 = this.f15254e.f15228g;
+            int i11 = this.f15394e.f15368g;
             int alpha = getAlpha();
             if (i11 == 0) {
-                this.A.d(canvas, this.f15265x, 0.0f, 1.0f, this.f15254e.f15225d, alpha, 0);
+                this.A.d(canvas, this.f15405x, 0.0f, 1.0f, this.f15394e.f15365d, alpha, 0);
                 i10 = i11;
             } else {
-                List list = this.B.f15275b;
+                List list = this.B.f15415b;
                 alpha = 0;
                 i10 = i11;
-                this.A.d(canvas, this.f15265x, ((h.a) list.get(list.size() - 1)).f15271b, 1.0f + ((h.a) this.B.f15275b.get(0)).f15270a, this.f15254e.f15225d, 0, i10);
+                this.A.d(canvas, this.f15405x, ((h.a) list.get(list.size() - 1)).f15411b, 1.0f + ((h.a) this.B.f15415b.get(0)).f15410a, this.f15394e.f15365d, 0, i10);
             }
-            for (int i12 = 0; i12 < this.B.f15275b.size(); i12++) {
-                h.a aVar = (h.a) this.B.f15275b.get(i12);
-                this.A.c(canvas, this.f15265x, aVar, getAlpha());
+            for (int i12 = 0; i12 < this.B.f15415b.size(); i12++) {
+                h.a aVar = (h.a) this.B.f15415b.get(i12);
+                this.A.c(canvas, this.f15405x, aVar, getAlpha());
                 if (i12 > 0 && i10 > 0) {
-                    this.A.d(canvas, this.f15265x, ((h.a) this.B.f15275b.get(i12 - 1)).f15271b, aVar.f15270a, this.f15254e.f15225d, alpha, i10);
+                    this.A.d(canvas, this.f15405x, ((h.a) this.B.f15415b.get(i12 - 1)).f15411b, aVar.f15410a, this.f15394e.f15365d, alpha, i10);
                 }
             }
             canvas.restore();

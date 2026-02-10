@@ -1,44 +1,60 @@
 package j8;
 
-import java.util.Collection;
+import android.net.Uri;
+import com.facebook.cache.common.CacheKey;
+import java.util.List;
+import p8.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface e {
+public class e implements CacheKey {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface a {
-        long a();
+    /* renamed from: a  reason: collision with root package name */
+    final List f30063a;
 
-        String getId();
-
-        long getSize();
+    public e(List list) {
+        this.f30063a = (List) j.g(list);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface b {
-        h8.a a(Object obj);
-
-        void b(i8.i iVar, Object obj);
-
-        boolean l();
+    @Override // com.facebook.cache.common.CacheKey
+    public String a() {
+        return ((CacheKey) this.f30063a.get(0)).a();
     }
 
-    void a();
+    @Override // com.facebook.cache.common.CacheKey
+    public boolean b(Uri uri) {
+        for (int i10 = 0; i10 < this.f30063a.size(); i10++) {
+            if (((CacheKey) this.f30063a.get(i10)).b(uri)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
-    long b(a aVar);
+    @Override // com.facebook.cache.common.CacheKey
+    public boolean c() {
+        return false;
+    }
 
-    void c();
+    public List d() {
+        return this.f30063a;
+    }
 
-    boolean d(String str, Object obj);
+    @Override // com.facebook.cache.common.CacheKey
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof e) {
+            return this.f30063a.equals(((e) obj).f30063a);
+        }
+        return false;
+    }
 
-    b e(String str, Object obj);
+    @Override // com.facebook.cache.common.CacheKey
+    public int hashCode() {
+        return this.f30063a.hashCode();
+    }
 
-    boolean f(String str, Object obj);
-
-    h8.a g(String str, Object obj);
-
-    Collection h();
-
-    boolean isExternal();
-
-    long remove(String str);
+    public String toString() {
+        return "MultiCacheKey:" + this.f30063a.toString();
+    }
 }

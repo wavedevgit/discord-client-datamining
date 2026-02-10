@@ -1,152 +1,173 @@
 package rs;
 
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Ref;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.LongCompanionObject;
+import kotlin.reflect.KFunction;
+import kotlinx.coroutines.CancellableContinuation;
+import us.e0;
+import us.h0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f implements Flow {
+public abstract class f {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final m f49272a = new m(-1, null, null, 0);
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final int f49273b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final int f49274c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Flow f49306d;
+    public static final e0 f49275d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Function1 f49307e;
+    private static final e0 f49276e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final e0 f49277f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final e0 f49278g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private static final e0 f49279h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final Function2 f49308i;
+    private static final e0 f49280i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private static final e0 f49281j;
+
+    /* renamed from: k  reason: collision with root package name */
+    private static final e0 f49282k;
+
+    /* renamed from: l  reason: collision with root package name */
+    private static final e0 f49283l;
+
+    /* renamed from: m  reason: collision with root package name */
+    private static final e0 f49284m;
+
+    /* renamed from: n  reason: collision with root package name */
+    private static final e0 f49285n;
+
+    /* renamed from: o  reason: collision with root package name */
+    private static final e0 f49286o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final e0 f49287p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private static final e0 f49288q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private static final e0 f49289r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private static final e0 f49290s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a implements FlowCollector {
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
 
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f49310e;
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f49291d = new a();
 
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ FlowCollector f49311i;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* renamed from: rs.f$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0632a extends kotlin.coroutines.jvm.internal.d {
-
-            /* renamed from: d  reason: collision with root package name */
-            /* synthetic */ Object f49312d;
-
-            /* renamed from: i  reason: collision with root package name */
-            int f49314i;
-
-            C0632a(Continuation continuation) {
-                super(continuation);
-            }
-
-            @Override // kotlin.coroutines.jvm.internal.a
-            public final Object invokeSuspend(Object obj) {
-                this.f49312d = obj;
-                this.f49314i |= Integer.MIN_VALUE;
-                return a.this.emit(null, this);
-            }
+        a() {
+            super(2, f.class, "createSegment", "createSegment(JLkotlinx/coroutines/channels/ChannelSegment;)Lkotlinx/coroutines/channels/ChannelSegment;", 1);
         }
 
-        a(Ref.ObjectRef objectRef, FlowCollector flowCollector) {
-            this.f49310e = objectRef;
-            this.f49311i = flowCollector;
+        public final m a(long j10, m mVar) {
+            return f.x(j10, mVar);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-        /* JADX WARN: Removed duplicated region for block: B:14:0x0031  */
-        /* JADX WARN: Type inference failed for: r7v4, types: [T, java.lang.Object] */
-        @Override // kotlinx.coroutines.flow.FlowCollector
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object emit(java.lang.Object r6, kotlin.coroutines.Continuation r7) {
-            /*
-                r5 = this;
-                boolean r0 = r7 instanceof rs.f.a.C0632a
-                if (r0 == 0) goto L13
-                r0 = r7
-                rs.f$a$a r0 = (rs.f.a.C0632a) r0
-                int r1 = r0.f49314i
-                r2 = -2147483648(0xffffffff80000000, float:-0.0)
-                r3 = r1 & r2
-                if (r3 == 0) goto L13
-                int r1 = r1 - r2
-                r0.f49314i = r1
-                goto L18
-            L13:
-                rs.f$a$a r0 = new rs.f$a$a
-                r0.<init>(r7)
-            L18:
-                java.lang.Object r7 = r0.f49312d
-                java.lang.Object r1 = wr.b.f()
-                int r2 = r0.f49314i
-                r3 = 1
-                if (r2 == 0) goto L31
-                if (r2 != r3) goto L29
-                kotlin.c.b(r7)
-                goto L67
-            L29:
-                java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
-                java.lang.String r7 = "call to 'resume' before 'invoke' with coroutine"
-                r6.<init>(r7)
-                throw r6
-            L31:
-                kotlin.c.b(r7)
-                rs.f r7 = rs.f.this
-                kotlin.jvm.functions.Function1 r7 = r7.f49307e
-                java.lang.Object r7 = r7.invoke(r6)
-                kotlin.jvm.internal.Ref$ObjectRef r2 = r5.f49310e
-                T r2 = r2.element
-                ts.e0 r4 = ss.t.f50147a
-                if (r2 == r4) goto L58
-                rs.f r4 = rs.f.this
-                kotlin.jvm.functions.Function2 r4 = r4.f49308i
-                java.lang.Object r2 = r4.invoke(r2, r7)
-                java.lang.Boolean r2 = (java.lang.Boolean) r2
-                boolean r2 = r2.booleanValue()
-                if (r2 != 0) goto L55
-                goto L58
-            L55:
-                kotlin.Unit r6 = kotlin.Unit.f32056a
-                return r6
-            L58:
-                kotlin.jvm.internal.Ref$ObjectRef r2 = r5.f49310e
-                r2.element = r7
-                kotlinx.coroutines.flow.FlowCollector r7 = r5.f49311i
-                r0.f49314i = r3
-                java.lang.Object r6 = r7.emit(r6, r0)
-                if (r6 != r1) goto L67
-                return r1
-            L67:
-                kotlin.Unit r6 = kotlin.Unit.f32056a
-                return r6
-            */
-            throw new UnsupportedOperationException("Method not decompiled: rs.f.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).longValue(), (m) obj2);
         }
     }
 
-    public f(Flow flow, Function1 function1, Function2 function2) {
-        this.f49306d = flow;
-        this.f49307e = function1;
-        this.f49308i = function2;
+    static {
+        int e10;
+        int e11;
+        e10 = h0.e("kotlinx.coroutines.bufferedChannel.segmentSize", 32, 0, 0, 12, null);
+        f49273b = e10;
+        e11 = h0.e("kotlinx.coroutines.bufferedChannel.expandBufferCompletionWaitIterations", 10000, 0, 0, 12, null);
+        f49274c = e11;
+        f49275d = new e0("BUFFERED");
+        f49276e = new e0("SHOULD_BUFFER");
+        f49277f = new e0("S_RESUMING_BY_RCV");
+        f49278g = new e0("RESUMING_BY_EB");
+        f49279h = new e0("POISONED");
+        f49280i = new e0("DONE_RCV");
+        f49281j = new e0("INTERRUPTED_SEND");
+        f49282k = new e0("INTERRUPTED_RCV");
+        f49283l = new e0("CHANNEL_CLOSED");
+        f49284m = new e0("SUSPEND");
+        f49285n = new e0("SUSPEND_NO_WAITER");
+        f49286o = new e0("FAILED");
+        f49287p = new e0("NO_RECEIVE_RESULT");
+        f49288q = new e0("CLOSE_HANDLER_CLOSED");
+        f49289r = new e0("CLOSE_HANDLER_INVOKED");
+        f49290s = new e0("NO_CLOSE_CAUSE");
     }
 
-    /* JADX WARN: Type inference failed for: r1v0, types: [T, ts.e0] */
-    @Override // kotlinx.coroutines.flow.Flow
-    public Object collect(FlowCollector flowCollector, Continuation continuation) {
-        Ref.ObjectRef objectRef = new Ref.ObjectRef();
-        objectRef.element = ss.t.f50147a;
-        Object collect = this.f49306d.collect(new a(objectRef, flowCollector), continuation);
-        if (collect == wr.b.f()) {
-            return collect;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final long A(int i10) {
+        if (i10 != 0) {
+            if (i10 != Integer.MAX_VALUE) {
+                return i10;
+            }
+            return LongCompanionObject.MAX_VALUE;
         }
-        return Unit.f32056a;
+        return 0L;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean B(CancellableContinuation cancellableContinuation, Object obj, Function3 function3) {
+        Object w10 = cancellableContinuation.w(obj, null, function3);
+        if (w10 != null) {
+            cancellableContinuation.A(w10);
+            return true;
+        }
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static /* synthetic */ boolean C(CancellableContinuation cancellableContinuation, Object obj, Function3 function3, int i10, Object obj2) {
+        if ((i10 & 2) != 0) {
+            function3 = null;
+        }
+        return B(cancellableContinuation, obj, function3);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final long v(long j10, boolean z10) {
+        long j11;
+        if (z10) {
+            j11 = 4611686018427387904L;
+        } else {
+            j11 = 0;
+        }
+        return j11 + j10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final long w(long j10, int i10) {
+        return (i10 << 60) + j10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final m x(long j10, m mVar) {
+        return new m(j10, mVar, mVar.y(), 0);
+    }
+
+    public static final KFunction y() {
+        return a.f49291d;
+    }
+
+    public static final e0 z() {
+        return f49283l;
     }
 }

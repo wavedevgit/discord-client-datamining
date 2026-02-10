@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'utils/getDevicePixelRatio.web.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function() {
-        _fun60351: for (var _fun60351_ip = 0;;) switch (_fun60351_ip) {
+        _fun60197: for (var _fun60197_ip = 0;;) switch (_fun60197_ip) {
             case 0:
                 var0 = global;
                 var0 = var0.window;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = 1;
                 if (!var2) {
-                    _fun60351_ip = 29;
-                    continue _fun60351
+                    _fun60197_ip = 29;
+                    continue _fun60197
                 }
             case 26:
                 var0 = var1;

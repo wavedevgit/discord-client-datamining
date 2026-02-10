@@ -1,95 +1,28 @@
 package bb;
 
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
-import com.facebook.imagepipeline.common.ImageDecodeOptions;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import android.graphics.Bitmap;
+import com.facebook.common.references.CloseableReference;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-import q1.j;
-import qa.c;
-import sa.e;
-import sa.k;
-import sa.o;
-import w8.f;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements c {
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final a f6504c = new a(null);
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f6505a;
+    public static final b f6434a = new b();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Map f6506b;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private a() {
-        }
+    private b() {
     }
 
-    public b(Resources resources) {
-        Intrinsics.checkNotNullParameter(resources, "resources");
-        this.f6505a = resources;
-        this.f6506b = new ConcurrentHashMap();
-    }
-
-    private final int b(String str) {
-        Map map = this.f6506b;
-        Object obj = map.get(str);
-        if (obj == null) {
-            Uri parse = Uri.parse(str);
-            Intrinsics.checkNotNullExpressionValue(parse, "parse(...)");
-            obj = Integer.valueOf(c(parse));
-            map.put(str, obj);
-        }
-        return ((Number) obj).intValue();
-    }
-
-    private final int c(Uri uri) {
-        Integer intOrNull;
-        if (!f.o(uri) && !f.q(uri)) {
-            throw new IllegalStateException(("Unsupported uri " + uri).toString());
-        }
-        List<String> pathSegments = uri.getPathSegments();
-        Intrinsics.checkNotNullExpressionValue(pathSegments, "getPathSegments(...)");
-        String str = (String) CollectionsKt.B0(pathSegments);
-        if (str != null && (intOrNull = StringsKt.toIntOrNull(str)) != null) {
-            return intOrNull.intValue();
-        }
-        String path = uri.getPath();
-        throw new IllegalStateException(("Unable to read resource ID from " + path).toString());
-    }
-
-    @Override // qa.c
-    public e a(k encodedImage, int i10, o qualityInfo, ImageDecodeOptions options) {
-        Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
-        Intrinsics.checkNotNullParameter(qualityInfo, "qualityInfo");
-        Intrinsics.checkNotNullParameter(options, "options");
-        try {
-            String Y = encodedImage.Y();
-            if (Y != null) {
-                Drawable f10 = j.f(this.f6505a, b(Y), null);
-                if (f10 == null) {
-                    return null;
-                }
-                return new sa.j(f10);
+    public static final boolean a(a aVar, CloseableReference closeableReference) {
+        if (aVar != null && closeableReference != null) {
+            Object J = closeableReference.J();
+            Intrinsics.checkNotNullExpressionValue(J, "get(...)");
+            Bitmap bitmap = (Bitmap) J;
+            if (aVar.a()) {
+                bitmap.setHasAlpha(true);
             }
-            throw new IllegalStateException("No source in encoded image");
-        } catch (Throwable th2) {
-            p8.a.n("XmlFormatDecoder", "Cannot decode xml", th2);
-            return null;
+            aVar.b(bitmap);
+            return true;
         }
+        return false;
     }
 }

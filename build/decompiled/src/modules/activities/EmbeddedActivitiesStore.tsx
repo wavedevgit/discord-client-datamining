@@ -3493,4 +3493,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '0';
     var2.ACTIVITIES_GUILD_ID_SENTINEL_FOR_PRIVATE_CHANNELS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 1216, 1372, 1672, 1621, 3458, 7985, 660, 7989, 3083, 12672, 1229, 8035, 806, 8027, 8021, 478, 1647, 4547, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 1216, 1372, 1672, 1621, 3458, 7960, 660, 7964, 3083, 12659, 1229, 8010, 806, 8002, 7996, 478, 1647, 4547, 566, 2]);

@@ -9,7 +9,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class e extends h {
 
     /* renamed from: f  reason: collision with root package name */
-    private final BroadcastReceiver f41506f;
+    private final BroadcastReceiver f40236f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends BroadcastReceiver {
@@ -29,25 +29,25 @@ public abstract class e extends h {
         super(context, taskExecutor);
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(taskExecutor, "taskExecutor");
-        this.f41506f = new a();
+        this.f40236f = new a();
     }
 
     @Override // o4.h
     public void h() {
         String str;
         k4.m e10 = k4.m.e();
-        str = f.f41508a;
+        str = f.f40238a;
         e10.a(str, getClass().getSimpleName() + ": registering receiver");
-        d().registerReceiver(this.f41506f, j());
+        d().registerReceiver(this.f40236f, j());
     }
 
     @Override // o4.h
     public void i() {
         String str;
         k4.m e10 = k4.m.e();
-        str = f.f41508a;
+        str = f.f40238a;
         e10.a(str, getClass().getSimpleName() + ": unregistering receiver");
-        d().unregisterReceiver(this.f41506f);
+        d().unregisterReceiver(this.f40236f);
     }
 
     public abstract IntentFilter j();

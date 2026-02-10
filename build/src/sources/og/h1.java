@@ -1,43 +1,63 @@
 package og;
 
-import yi.c;
+import java.util.List;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class h1 implements yi.d {
+public final class h1 extends i1 {
 
-    /* renamed from: a  reason: collision with root package name */
-    static final h1 f42121a = new h1();
+    /* renamed from: o  reason: collision with root package name */
+    final transient int f40924o;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42122b;
+    /* renamed from: p  reason: collision with root package name */
+    final transient int f40925p;
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42123c;
+    /* renamed from: q  reason: collision with root package name */
+    final /* synthetic */ i1 f40926q;
 
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42124d;
-
-    static {
-        c.b a10 = yi.c.a("logEventKey");
-        f fVar = new f();
-        fVar.a(1);
-        f42122b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("eventCount");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42123c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("inferenceDurationStats");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42124d = a12.b(fVar3.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public h1(i1 i1Var, int i10, int i11) {
+        this.f40926q = i1Var;
+        this.f40924o = i10;
+        this.f40925p = i11;
     }
 
-    private h1() {
+    @Override // og.d1
+    final int c() {
+        return this.f40926q.d() + this.f40924o + this.f40925p;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // og.d1
+    public final int d() {
+        return this.f40926q.d() + this.f40924o;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // og.d1
+    public final Object[] e() {
+        return this.f40926q.e();
+    }
+
+    @Override // og.i1
+    public final i1 f(int i10, int i11) {
+        t.d(i10, i11, this.f40925p);
+        int i12 = this.f40924o;
+        return this.f40926q.subList(i10 + i12, i11 + i12);
+    }
+
+    @Override // java.util.List
+    public final Object get(int i10) {
+        t.a(i10, this.f40925p, "index");
+        return this.f40926q.get(i10 + this.f40924o);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.f40925p;
+    }
+
+    @Override // og.i1, java.util.List
+    public final /* bridge */ /* synthetic */ List subList(int i10, int i11) {
+        return subList(i10, i11);
     }
 }

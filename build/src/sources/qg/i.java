@@ -1,70 +1,94 @@
 package qg;
 
 import java.util.Collection;
-import java.util.ConcurrentModificationException;
-import java.util.Iterator;
-import java.util.List;
+import java.util.Map;
+import java.util.Set;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-class i implements Iterator {
-
-    /* renamed from: d  reason: collision with root package name */
-    final Iterator f47136d;
-
-    /* renamed from: e  reason: collision with root package name */
-    final Collection f47137e;
+public final class i extends z0 {
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ j f47138i;
+    final transient Map f45877i;
+
+    /* renamed from: o  reason: collision with root package name */
+    final /* synthetic */ q f45878o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public i(j jVar, Iterator it) {
-        this.f47138i = jVar;
-        this.f47137e = jVar.f47187e;
-        this.f47136d = it;
+    public i(q qVar, Map map) {
+        this.f45878o = qVar;
+        this.f45877i = map;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final void a() {
-        this.f47138i.zzb();
-        if (this.f47138i.f47187e == this.f47137e) {
-            return;
-        }
-        throw new ConcurrentModificationException();
+    @Override // qg.z0
+    protected final Set a() {
+        return new g(this);
     }
 
-    @Override // java.util.Iterator
-    public final boolean hasNext() {
-        a();
-        return this.f47136d.hasNext();
-    }
-
-    @Override // java.util.Iterator
-    public final Object next() {
-        a();
-        return this.f47136d.next();
-    }
-
-    @Override // java.util.Iterator
-    public final void remove() {
-        int i10;
-        this.f47136d.remove();
-        m mVar = this.f47138i.f47190p;
-        i10 = mVar.f47423o;
-        mVar.f47423o = i10 - 1;
-        this.f47138i.c();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public i(j jVar) {
-        Iterator it;
-        this.f47138i = jVar;
-        Collection collection = jVar.f47187e;
-        this.f47137e = collection;
-        if (collection instanceof List) {
-            it = ((List) collection).listIterator();
+    @Override // java.util.AbstractMap, java.util.Map
+    public final void clear() {
+        Map map;
+        Map map2 = this.f45877i;
+        q qVar = this.f45878o;
+        map = qVar.f46176i;
+        if (map2 == map) {
+            qVar.q();
         } else {
-            it = collection.iterator();
+            t0.a(new h(this));
         }
-        this.f47136d = it;
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final boolean containsKey(Object obj) {
+        return a1.b(this.f45877i, obj);
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final boolean equals(Object obj) {
+        if (this != obj && !this.f45877i.equals(obj)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final /* bridge */ /* synthetic */ Object get(Object obj) {
+        Collection collection = (Collection) a1.a(this.f45877i, obj);
+        if (collection == null) {
+            return null;
+        }
+        return this.f45878o.h(obj, collection);
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final int hashCode() {
+        return this.f45877i.hashCode();
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final Set keySet() {
+        return this.f45878o.c();
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final /* bridge */ /* synthetic */ Object remove(Object obj) {
+        Collection collection = (Collection) this.f45877i.remove(obj);
+        if (collection == null) {
+            return null;
+        }
+        Collection g10 = this.f45878o.g();
+        g10.addAll(collection);
+        q.l(this.f45878o, collection.size());
+        collection.clear();
+        return g10;
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final int size() {
+        return this.f45877i.size();
+    }
+
+    @Override // java.util.AbstractMap
+    public final String toString() {
+        return this.f45877i.toString();
     }
 }

@@ -1,73 +1,45 @@
 package et;
 
-import kotlin.Lazy;
-import kotlin.jvm.functions.Function0;
+import et.g;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import kotlin.jvm.internal.Reflection;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.DeserializationStrategy;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.SealedClassSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Encoder;
-import qr.l;
-import qr.o;
-import ys.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b extends jt.b {
+public final class b extends e {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f22110a = new b();
+    /* renamed from: c  reason: collision with root package name */
+    private final String f22082c;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f22111b = l.b(o.f48092e, a.f22112d);
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public b(java.lang.String r4) {
+        /*
+            r3 = this;
+            java.lang.String r0 = "expected"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r0)
+            int r0 = r4.length()
+            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "the predefined string "
+            r1.append(r2)
+            r1.append(r4)
+            java.lang.String r1 = r1.toString()
+            r2 = 0
+            r3.<init>(r0, r1, r2)
+            r3.f22082c = r4
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: et.b.<init>(java.lang.String):void");
+    }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function0 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f22112d = new a();
-
-        a() {
-            super(0);
+    @Override // et.e
+    public g a(Object obj, CharSequence input, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(input, "input");
+        if (Intrinsics.areEqual(input.subSequence(i10, i11).toString(), this.f22082c)) {
+            return null;
         }
-
-        @Override // kotlin.jvm.functions.Function0
-        /* renamed from: a */
-        public final SealedClassSerializer invoke() {
-            return new SealedClassSerializer("kotlinx.datetime.DateTimeUnit", Reflection.getOrCreateKotlinClass(ys.c.class), new KClass[]{Reflection.getOrCreateKotlinClass(c.C0757c.class), Reflection.getOrCreateKotlinClass(c.d.class), Reflection.getOrCreateKotlinClass(c.e.class)}, new KSerializer[]{d.f22113a, h.f22123a, i.f22127a});
-        }
-    }
-
-    private b() {
-    }
-
-    private final SealedClassSerializer g() {
-        return (SealedClassSerializer) f22111b.getValue();
-    }
-
-    @Override // jt.b
-    public DeserializationStrategy d(kotlinx.serialization.encoding.c decoder, String str) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return g().d(decoder, str);
-    }
-
-    @Override // jt.b
-    public KClass e() {
-        return Reflection.getOrCreateKotlinClass(ys.c.class);
-    }
-
-    @Override // jt.b
-    /* renamed from: f */
-    public ft.o c(Encoder encoder, ys.c value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        return g().c(encoder, value);
-    }
-
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return g().getDescriptor();
+        return new g.e(this.f22082c);
     }
 }

@@ -73,11 +73,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'paddingHorizontal': 16
     };
     var3.infoText = var8;
-    var8 = {
-        'marginTop': 8,
-        'marginBottom': 16
-    };
-    var3.form = var8;
     var8 = {};
     var8.marginTop = var11;
     var3.dismissButtonContainer = var8;
@@ -357,4 +352,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4933, 11793, 8242, 1234, 3942, 4084, 4698, 4695, 3279, 3150, 4086, 6732, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4933, 11788, 8217, 1234, 3942, 4084, 4698, 4695, 3279, 3150, 4086, 6733, 2]);

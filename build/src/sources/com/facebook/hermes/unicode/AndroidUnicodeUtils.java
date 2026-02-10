@@ -1,6 +1,6 @@
 package com.facebook.hermes.unicode;
 
-import fb.a;
+import gb.a;
 import java.text.Collator;
 import java.text.DateFormat;
 import java.text.Normalizer;

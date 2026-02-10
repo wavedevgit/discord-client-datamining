@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.styling;
 
-import an.c;
+import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -82,8 +82,8 @@ public final class LocalImageComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.E0();
-                    reader.S();
+                    reader.C0();
+                    reader.T();
                     break;
                 case 0:
                     localImageStrokeColorStyle = (AttributeStyles.LocalImageStrokeColorStyle) this.nullableLocalImageStrokeColorStyleAdapter.fromJson(reader);
@@ -126,7 +126,7 @@ public final class LocalImageComponentStyleJsonAdapter extends h {
         AttributeStyles.LocalImageStrokeColorStyle localImageStrokeColorStyle2 = localImageStrokeColorStyle;
         Constructor<LocalImageComponentStyle> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = LocalImageComponentStyle.class.getDeclaredConstructor(AttributeStyles.LocalImageStrokeColorStyle.class, AttributeStyles.LocalImageFillColorStyle.class, AttributeStyles.LocalImageHeightStyle.class, AttributeStyles.LocalImageWidthStyle.class, AttributeStyles.LocalImageJustifyStyle.class, AttributeStyles.LocalImageMarginStyle.class, Integer.TYPE, c.f1164c);
+            constructor = LocalImageComponentStyle.class.getDeclaredConstructor(AttributeStyles.LocalImageStrokeColorStyle.class, AttributeStyles.LocalImageFillColorStyle.class, AttributeStyles.LocalImageHeightStyle.class, AttributeStyles.LocalImageWidthStyle.class, AttributeStyles.LocalImageJustifyStyle.class, AttributeStyles.LocalImageMarginStyle.class, Integer.TYPE, c.f7152c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

@@ -24,7 +24,7 @@ import kotlin.reflect.jvm.internal.impl.types.error.ErrorTypeKind;
 import kotlin.reflect.jvm.internal.impl.types.error.ErrorUtils;
 import kotlin.reflect.jvm.internal.impl.types.typeUtil.TypeUtilsKt;
 import org.jetbrains.annotations.NotNull;
-import qr.p;
+import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class KClassValue extends ConstantValue<Value> {
     @NotNull
@@ -73,34 +73,34 @@ public final class KClassValue extends ConstantValue<Value> {
         public static final class LocalClass extends Value {
 
             /* renamed from: a  reason: collision with root package name */
-            private final KotlinType f34200a;
+            private final KotlinType f33909a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public LocalClass(@NotNull KotlinType type) {
                 super(null);
                 Intrinsics.checkNotNullParameter(type, "type");
-                this.f34200a = type;
+                this.f33909a = type;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof LocalClass) && Intrinsics.areEqual(this.f34200a, ((LocalClass) obj).f34200a);
+                return (obj instanceof LocalClass) && Intrinsics.areEqual(this.f33909a, ((LocalClass) obj).f33909a);
             }
 
             @NotNull
             public final KotlinType getType() {
-                return this.f34200a;
+                return this.f33909a;
             }
 
             public int hashCode() {
-                return this.f34200a.hashCode();
+                return this.f33909a.hashCode();
             }
 
             @NotNull
             public String toString() {
-                return "LocalClass(type=" + this.f34200a + ')';
+                return "LocalClass(type=" + this.f33909a + ')';
             }
         }
 
@@ -108,43 +108,43 @@ public final class KClassValue extends ConstantValue<Value> {
         public static final class NormalClass extends Value {
 
             /* renamed from: a  reason: collision with root package name */
-            private final ClassLiteralValue f34201a;
+            private final ClassLiteralValue f33910a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public NormalClass(@NotNull ClassLiteralValue value) {
                 super(null);
                 Intrinsics.checkNotNullParameter(value, "value");
-                this.f34201a = value;
+                this.f33910a = value;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof NormalClass) && Intrinsics.areEqual(this.f34201a, ((NormalClass) obj).f34201a);
+                return (obj instanceof NormalClass) && Intrinsics.areEqual(this.f33910a, ((NormalClass) obj).f33910a);
             }
 
             public final int getArrayDimensions() {
-                return this.f34201a.getArrayNestedness();
+                return this.f33910a.getArrayNestedness();
             }
 
             @NotNull
             public final ClassId getClassId() {
-                return this.f34201a.getClassId();
+                return this.f33910a.getClassId();
             }
 
             @NotNull
             public final ClassLiteralValue getValue() {
-                return this.f34201a;
+                return this.f33910a;
             }
 
             public int hashCode() {
-                return this.f34201a.hashCode();
+                return this.f33910a.hashCode();
             }
 
             @NotNull
             public String toString() {
-                return "NormalClass(value=" + this.f34201a + ')';
+                return "NormalClass(value=" + this.f33910a + ')';
             }
         }
 

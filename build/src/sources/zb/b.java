@@ -1,200 +1,249 @@
 package zb;
 
-import java.util.Map;
-import zb.i;
+import com.appsflyer.AdRevenueScheme;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class b extends i {
+public final class b implements aj.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f56095a;
+    public static final aj.a f56153a = new b();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Integer f56096b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final h f56097c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final long f56098d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final long f56099e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final Map f56100f;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* renamed from: zb.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0768b extends i.a {
+    private static final class a implements zi.d {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f56101a;
+        static final a f56154a = new a();
 
         /* renamed from: b  reason: collision with root package name */
-        private Integer f56102b;
+        private static final zi.c f56155b = zi.c.d("sdkVersion");
 
         /* renamed from: c  reason: collision with root package name */
-        private h f56103c;
+        private static final zi.c f56156c = zi.c.d("model");
 
         /* renamed from: d  reason: collision with root package name */
-        private Long f56104d;
+        private static final zi.c f56157d = zi.c.d("hardware");
 
         /* renamed from: e  reason: collision with root package name */
-        private Long f56105e;
+        private static final zi.c f56158e = zi.c.d("device");
 
         /* renamed from: f  reason: collision with root package name */
-        private Map f56106f;
+        private static final zi.c f56159f = zi.c.d("product");
 
-        @Override // zb.i.a
-        public i d() {
-            String str = "";
-            if (this.f56101a == null) {
-                str = " transportName";
-            }
-            if (this.f56103c == null) {
-                str = str + " encodedPayload";
-            }
-            if (this.f56104d == null) {
-                str = str + " eventMillis";
-            }
-            if (this.f56105e == null) {
-                str = str + " uptimeMillis";
-            }
-            if (this.f56106f == null) {
-                str = str + " autoMetadata";
-            }
-            if (str.isEmpty()) {
-                return new b(this.f56101a, this.f56102b, this.f56103c, this.f56104d.longValue(), this.f56105e.longValue(), this.f56106f);
-            }
-            throw new IllegalStateException("Missing required properties:" + str);
+        /* renamed from: g  reason: collision with root package name */
+        private static final zi.c f56160g = zi.c.d("osBuild");
+
+        /* renamed from: h  reason: collision with root package name */
+        private static final zi.c f56161h = zi.c.d("manufacturer");
+
+        /* renamed from: i  reason: collision with root package name */
+        private static final zi.c f56162i = zi.c.d("fingerprint");
+
+        /* renamed from: j  reason: collision with root package name */
+        private static final zi.c f56163j = zi.c.d("locale");
+
+        /* renamed from: k  reason: collision with root package name */
+        private static final zi.c f56164k = zi.c.d(AdRevenueScheme.COUNTRY);
+
+        /* renamed from: l  reason: collision with root package name */
+        private static final zi.c f56165l = zi.c.d("mccMnc");
+
+        /* renamed from: m  reason: collision with root package name */
+        private static final zi.c f56166m = zi.c.d("applicationBuild");
+
+        private a() {
         }
 
-        @Override // zb.i.a
-        protected Map e() {
-            Map map = this.f56106f;
-            if (map != null) {
-                return map;
-            }
-            throw new IllegalStateException("Property \"autoMetadata\" has not been set");
-        }
-
-        /* JADX INFO: Access modifiers changed from: protected */
-        @Override // zb.i.a
-        public i.a f(Map map) {
-            if (map != null) {
-                this.f56106f = map;
-                return this;
-            }
-            throw new NullPointerException("Null autoMetadata");
-        }
-
-        @Override // zb.i.a
-        public i.a g(Integer num) {
-            this.f56102b = num;
-            return this;
-        }
-
-        @Override // zb.i.a
-        public i.a h(h hVar) {
-            if (hVar != null) {
-                this.f56103c = hVar;
-                return this;
-            }
-            throw new NullPointerException("Null encodedPayload");
-        }
-
-        @Override // zb.i.a
-        public i.a i(long j10) {
-            this.f56104d = Long.valueOf(j10);
-            return this;
-        }
-
-        @Override // zb.i.a
-        public i.a j(String str) {
-            if (str != null) {
-                this.f56101a = str;
-                return this;
-            }
-            throw new NullPointerException("Null transportName");
-        }
-
-        @Override // zb.i.a
-        public i.a k(long j10) {
-            this.f56105e = Long.valueOf(j10);
-            return this;
+        @Override // zi.d
+        /* renamed from: b */
+        public void a(zb.a aVar, zi.e eVar) {
+            eVar.d(f56155b, aVar.m());
+            eVar.d(f56156c, aVar.j());
+            eVar.d(f56157d, aVar.f());
+            eVar.d(f56158e, aVar.d());
+            eVar.d(f56159f, aVar.l());
+            eVar.d(f56160g, aVar.k());
+            eVar.d(f56161h, aVar.h());
+            eVar.d(f56162i, aVar.e());
+            eVar.d(f56163j, aVar.g());
+            eVar.d(f56164k, aVar.c());
+            eVar.d(f56165l, aVar.i());
+            eVar.d(f56166m, aVar.b());
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // zb.i
-    public Map c() {
-        return this.f56100f;
-    }
+    /* renamed from: zb.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    private static final class C0797b implements zi.d {
 
-    @Override // zb.i
-    public Integer d() {
-        return this.f56096b;
-    }
+        /* renamed from: a  reason: collision with root package name */
+        static final C0797b f56167a = new C0797b();
 
-    @Override // zb.i
-    public h e() {
-        return this.f56097c;
-    }
+        /* renamed from: b  reason: collision with root package name */
+        private static final zi.c f56168b = zi.c.d("logRequest");
 
-    public boolean equals(Object obj) {
-        Integer num;
-        if (obj == this) {
-            return true;
+        private C0797b() {
         }
-        if (obj instanceof i) {
-            i iVar = (i) obj;
-            if (this.f56095a.equals(iVar.j()) && ((num = this.f56096b) != null ? num.equals(iVar.d()) : iVar.d() == null) && this.f56097c.equals(iVar.e()) && this.f56098d == iVar.f() && this.f56099e == iVar.k() && this.f56100f.equals(iVar.c())) {
-                return true;
-            }
+
+        @Override // zi.d
+        /* renamed from: b */
+        public void a(j jVar, zi.e eVar) {
+            eVar.d(f56168b, jVar.c());
         }
-        return false;
     }
 
-    @Override // zb.i
-    public long f() {
-        return this.f56098d;
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    private static final class c implements zi.d {
 
-    public int hashCode() {
-        int hashCode;
-        int hashCode2 = (this.f56095a.hashCode() ^ 1000003) * 1000003;
-        Integer num = this.f56096b;
-        if (num == null) {
-            hashCode = 0;
-        } else {
-            hashCode = num.hashCode();
+        /* renamed from: a  reason: collision with root package name */
+        static final c f56169a = new c();
+
+        /* renamed from: b  reason: collision with root package name */
+        private static final zi.c f56170b = zi.c.d("clientType");
+
+        /* renamed from: c  reason: collision with root package name */
+        private static final zi.c f56171c = zi.c.d("androidClientInfo");
+
+        private c() {
         }
-        long j10 = this.f56098d;
-        long j11 = this.f56099e;
-        return ((((((((hashCode2 ^ hashCode) * 1000003) ^ this.f56097c.hashCode()) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003) ^ ((int) (j11 ^ (j11 >>> 32)))) * 1000003) ^ this.f56100f.hashCode();
+
+        @Override // zi.d
+        /* renamed from: b */
+        public void a(k kVar, zi.e eVar) {
+            eVar.d(f56170b, kVar.c());
+            eVar.d(f56171c, kVar.b());
+        }
     }
 
-    @Override // zb.i
-    public String j() {
-        return this.f56095a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    private static final class d implements zi.d {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final d f56172a = new d();
+
+        /* renamed from: b  reason: collision with root package name */
+        private static final zi.c f56173b = zi.c.d("eventTimeMs");
+
+        /* renamed from: c  reason: collision with root package name */
+        private static final zi.c f56174c = zi.c.d("eventCode");
+
+        /* renamed from: d  reason: collision with root package name */
+        private static final zi.c f56175d = zi.c.d("eventUptimeMs");
+
+        /* renamed from: e  reason: collision with root package name */
+        private static final zi.c f56176e = zi.c.d("sourceExtension");
+
+        /* renamed from: f  reason: collision with root package name */
+        private static final zi.c f56177f = zi.c.d("sourceExtensionJsonProto3");
+
+        /* renamed from: g  reason: collision with root package name */
+        private static final zi.c f56178g = zi.c.d("timezoneOffsetSeconds");
+
+        /* renamed from: h  reason: collision with root package name */
+        private static final zi.c f56179h = zi.c.d("networkConnectionInfo");
+
+        private d() {
+        }
+
+        @Override // zi.d
+        /* renamed from: b */
+        public void a(l lVar, zi.e eVar) {
+            eVar.a(f56173b, lVar.c());
+            eVar.d(f56174c, lVar.b());
+            eVar.a(f56175d, lVar.d());
+            eVar.d(f56176e, lVar.f());
+            eVar.d(f56177f, lVar.g());
+            eVar.a(f56178g, lVar.h());
+            eVar.d(f56179h, lVar.e());
+        }
     }
 
-    @Override // zb.i
-    public long k() {
-        return this.f56099e;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    private static final class e implements zi.d {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final e f56180a = new e();
+
+        /* renamed from: b  reason: collision with root package name */
+        private static final zi.c f56181b = zi.c.d("requestTimeMs");
+
+        /* renamed from: c  reason: collision with root package name */
+        private static final zi.c f56182c = zi.c.d("requestUptimeMs");
+
+        /* renamed from: d  reason: collision with root package name */
+        private static final zi.c f56183d = zi.c.d("clientInfo");
+
+        /* renamed from: e  reason: collision with root package name */
+        private static final zi.c f56184e = zi.c.d("logSource");
+
+        /* renamed from: f  reason: collision with root package name */
+        private static final zi.c f56185f = zi.c.d("logSourceName");
+
+        /* renamed from: g  reason: collision with root package name */
+        private static final zi.c f56186g = zi.c.d("logEvent");
+
+        /* renamed from: h  reason: collision with root package name */
+        private static final zi.c f56187h = zi.c.d("qosTier");
+
+        private e() {
+        }
+
+        @Override // zi.d
+        /* renamed from: b */
+        public void a(m mVar, zi.e eVar) {
+            eVar.a(f56181b, mVar.g());
+            eVar.a(f56182c, mVar.h());
+            eVar.d(f56183d, mVar.b());
+            eVar.d(f56184e, mVar.d());
+            eVar.d(f56185f, mVar.e());
+            eVar.d(f56186g, mVar.c());
+            eVar.d(f56187h, mVar.f());
+        }
     }
 
-    public String toString() {
-        return "EventInternal{transportName=" + this.f56095a + ", code=" + this.f56096b + ", encodedPayload=" + this.f56097c + ", eventMillis=" + this.f56098d + ", uptimeMillis=" + this.f56099e + ", autoMetadata=" + this.f56100f + "}";
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    private static final class f implements zi.d {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final f f56188a = new f();
+
+        /* renamed from: b  reason: collision with root package name */
+        private static final zi.c f56189b = zi.c.d("networkType");
+
+        /* renamed from: c  reason: collision with root package name */
+        private static final zi.c f56190c = zi.c.d("mobileSubtype");
+
+        private f() {
+        }
+
+        @Override // zi.d
+        /* renamed from: b */
+        public void a(o oVar, zi.e eVar) {
+            eVar.d(f56189b, oVar.c());
+            eVar.d(f56190c, oVar.b());
+        }
     }
 
-    private b(String str, Integer num, h hVar, long j10, long j11, Map map) {
-        this.f56095a = str;
-        this.f56096b = num;
-        this.f56097c = hVar;
-        this.f56098d = j10;
-        this.f56099e = j11;
-        this.f56100f = map;
+    private b() {
+    }
+
+    @Override // aj.a
+    public void a(aj.b bVar) {
+        C0797b c0797b = C0797b.f56167a;
+        bVar.a(j.class, c0797b);
+        bVar.a(zb.d.class, c0797b);
+        e eVar = e.f56180a;
+        bVar.a(m.class, eVar);
+        bVar.a(g.class, eVar);
+        c cVar = c.f56169a;
+        bVar.a(k.class, cVar);
+        bVar.a(zb.e.class, cVar);
+        a aVar = a.f56154a;
+        bVar.a(zb.a.class, aVar);
+        bVar.a(zb.c.class, aVar);
+        d dVar = d.f56172a;
+        bVar.a(l.class, dVar);
+        bVar.a(zb.f.class, dVar);
+        f fVar = f.f56188a;
+        bVar.a(o.class, fVar);
+        bVar.a(i.class, fVar);
     }
 }

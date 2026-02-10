@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/native/voice/KrispLogo.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function() {
-        _fun68711: for (var _fun68711_ip = 0;;) switch (_fun68711_ip) {
+        _fun68576: for (var _fun68576_ip = 0;;) switch (_fun68576_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var4 = _closure1_slot2;
@@ -146,15 +146,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 if (var0) {
-                    _fun68711_ip = 105;
-                    continue _fun68711
+                    _fun68576_ip = 105;
+                    continue _fun68576
                 }
             case 91:
                 var0 = 12;
                 var0 = var2[var0];
                 var6 = var1.bind(var3)(var0);
-                _fun68711_ip = 117;
-                continue _fun68711;
+                _fun68576_ip = 117;
+                continue _fun68576;
             case 105:
                 var0 = 11;
                 var0 = var2[var0];
@@ -219,4 +219,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.handleKrispLinkPressed = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3198, 660, 33, 1686, 795, 1234, 3146, 566, 3207, 8551, 8552, 3942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3198, 660, 33, 1686, 795, 1234, 3146, 566, 3207, 8529, 8530, 3942, 2]);

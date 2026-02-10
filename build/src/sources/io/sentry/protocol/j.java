@@ -12,34 +12,34 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class j implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28563d;
+    private String f28763d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f28564e;
+    private Integer f28764e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28565i;
+    private String f28765i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f28566o;
+    private String f28766o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Integer f28567p;
+    private Integer f28767p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f28568q;
+    private String f28768q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Boolean f28569r;
+    private Boolean f28769r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f28570s;
+    private String f28770s;
 
     /* renamed from: t  reason: collision with root package name */
-    private String f28571t;
+    private String f28771t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Map f28572u;
+    private Map f28772u;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -111,37 +111,37 @@ public final class j implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        jVar.f28571t = e3Var.q1();
+                        jVar.f28771t = e3Var.m1();
                         break;
                     case 1:
-                        jVar.f28565i = e3Var.q1();
+                        jVar.f28765i = e3Var.m1();
                         break;
                     case 2:
-                        jVar.f28569r = e3Var.y0();
+                        jVar.f28769r = e3Var.w0();
                         break;
                     case 3:
-                        jVar.f28564e = e3Var.j1();
+                        jVar.f28764e = e3Var.g1();
                         break;
                     case 4:
-                        jVar.f28563d = e3Var.q1();
+                        jVar.f28763d = e3Var.m1();
                         break;
                     case 5:
-                        jVar.f28566o = e3Var.q1();
+                        jVar.f28766o = e3Var.m1();
                         break;
                     case 6:
-                        jVar.f28570s = e3Var.q1();
+                        jVar.f28770s = e3Var.m1();
                         break;
                     case 7:
-                        jVar.f28568q = e3Var.q1();
+                        jVar.f28768q = e3Var.m1();
                         break;
                     case '\b':
-                        jVar.f28567p = e3Var.j1();
+                        jVar.f28767p = e3Var.g1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.u1(iLogger, concurrentHashMap, o02);
+                        e3Var.p1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -160,7 +160,7 @@ public final class j implements w1 {
         }
         if (obj != null && j.class == obj.getClass()) {
             j jVar = (j) obj;
-            if (io.sentry.util.y.a(this.f28563d, jVar.f28563d) && io.sentry.util.y.a(this.f28564e, jVar.f28564e) && io.sentry.util.y.a(this.f28565i, jVar.f28565i) && io.sentry.util.y.a(this.f28566o, jVar.f28566o) && io.sentry.util.y.a(this.f28567p, jVar.f28567p) && io.sentry.util.y.a(this.f28568q, jVar.f28568q) && io.sentry.util.y.a(this.f28569r, jVar.f28569r) && io.sentry.util.y.a(this.f28570s, jVar.f28570s) && io.sentry.util.y.a(this.f28571t, jVar.f28571t)) {
+            if (io.sentry.util.y.a(this.f28763d, jVar.f28763d) && io.sentry.util.y.a(this.f28764e, jVar.f28764e) && io.sentry.util.y.a(this.f28765i, jVar.f28765i) && io.sentry.util.y.a(this.f28766o, jVar.f28766o) && io.sentry.util.y.a(this.f28767p, jVar.f28767p) && io.sentry.util.y.a(this.f28768q, jVar.f28768q) && io.sentry.util.y.a(this.f28769r, jVar.f28769r) && io.sentry.util.y.a(this.f28770s, jVar.f28770s) && io.sentry.util.y.a(this.f28771t, jVar.f28771t)) {
                 return true;
             }
         }
@@ -168,47 +168,47 @@ public final class j implements w1 {
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f28563d, this.f28564e, this.f28565i, this.f28566o, this.f28567p, this.f28568q, this.f28569r, this.f28570s, this.f28571t);
+        return io.sentry.util.y.b(this.f28763d, this.f28764e, this.f28765i, this.f28766o, this.f28767p, this.f28768q, this.f28769r, this.f28770s, this.f28771t);
     }
 
     public void j(Map map) {
-        this.f28572u = map;
+        this.f28772u = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28563d != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28563d);
+        if (this.f28763d != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28763d);
         }
-        if (this.f28564e != null) {
-            f3Var.e(StackTraceHelper.ID_KEY).i(this.f28564e);
+        if (this.f28764e != null) {
+            f3Var.e(StackTraceHelper.ID_KEY).i(this.f28764e);
         }
-        if (this.f28565i != null) {
-            f3Var.e("vendor_id").f(this.f28565i);
+        if (this.f28765i != null) {
+            f3Var.e("vendor_id").f(this.f28765i);
         }
-        if (this.f28566o != null) {
-            f3Var.e("vendor_name").f(this.f28566o);
+        if (this.f28766o != null) {
+            f3Var.e("vendor_name").f(this.f28766o);
         }
-        if (this.f28567p != null) {
-            f3Var.e("memory_size").i(this.f28567p);
+        if (this.f28767p != null) {
+            f3Var.e("memory_size").i(this.f28767p);
         }
-        if (this.f28568q != null) {
-            f3Var.e("api_type").f(this.f28568q);
+        if (this.f28768q != null) {
+            f3Var.e("api_type").f(this.f28768q);
         }
-        if (this.f28569r != null) {
-            f3Var.e("multi_threaded_rendering").k(this.f28569r);
+        if (this.f28769r != null) {
+            f3Var.e("multi_threaded_rendering").k(this.f28769r);
         }
-        if (this.f28570s != null) {
-            f3Var.e("version").f(this.f28570s);
+        if (this.f28770s != null) {
+            f3Var.e("version").f(this.f28770s);
         }
-        if (this.f28571t != null) {
-            f3Var.e("npot_support").f(this.f28571t);
+        if (this.f28771t != null) {
+            f3Var.e("npot_support").f(this.f28771t);
         }
-        Map map = this.f28572u;
+        Map map = this.f28772u;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28572u.get(str);
+                Object obj = this.f28772u.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -218,15 +218,15 @@ public final class j implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(j jVar) {
-        this.f28563d = jVar.f28563d;
-        this.f28564e = jVar.f28564e;
-        this.f28565i = jVar.f28565i;
-        this.f28566o = jVar.f28566o;
-        this.f28567p = jVar.f28567p;
-        this.f28568q = jVar.f28568q;
-        this.f28569r = jVar.f28569r;
-        this.f28570s = jVar.f28570s;
-        this.f28571t = jVar.f28571t;
-        this.f28572u = io.sentry.util.c.b(jVar.f28572u);
+        this.f28763d = jVar.f28763d;
+        this.f28764e = jVar.f28764e;
+        this.f28765i = jVar.f28765i;
+        this.f28766o = jVar.f28766o;
+        this.f28767p = jVar.f28767p;
+        this.f28768q = jVar.f28768q;
+        this.f28769r = jVar.f28769r;
+        this.f28770s = jVar.f28770s;
+        this.f28771t = jVar.f28771t;
+        this.f28772u = io.sentry.util.c.b(jVar.f28772u);
     }
 }

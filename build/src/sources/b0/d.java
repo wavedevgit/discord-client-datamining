@@ -6,7 +6,7 @@ import java.util.Comparator;
 public final class d implements Comparator {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f6318d;
+    private boolean f6243d;
 
     public d() {
         this(false);
@@ -16,13 +16,13 @@ public final class d implements Comparator {
     /* renamed from: a */
     public int compare(Size size, Size size2) {
         int signum = Long.signum((size.getWidth() * size.getHeight()) - (size2.getWidth() * size2.getHeight()));
-        if (this.f6318d) {
+        if (this.f6243d) {
             return signum * (-1);
         }
         return signum;
     }
 
     public d(boolean z10) {
-        this.f6318d = z10;
+        this.f6243d = z10;
     }
 }

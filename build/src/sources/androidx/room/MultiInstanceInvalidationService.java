@@ -18,16 +18,16 @@ import r3.k;
 public final class MultiInstanceInvalidationService extends Service {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f5493d;
+    private int f5190d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f5494e = new LinkedHashMap();
+    private final Map f5191e = new LinkedHashMap();
 
     /* renamed from: i  reason: collision with root package name */
-    private final RemoteCallbackList f5495i = new b();
+    private final RemoteCallbackList f5192i = new b();
 
     /* renamed from: o  reason: collision with root package name */
-    private final k.a f5496o = new a();
+    private final k.a f5193o = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends k.a {
@@ -35,49 +35,7 @@ public final class MultiInstanceInvalidationService extends Service {
         }
 
         @Override // r3.k
-        public void Y(int i10, String[] tables) {
-            Intrinsics.checkNotNullParameter(tables, "tables");
-            RemoteCallbackList a10 = MultiInstanceInvalidationService.this.a();
-            MultiInstanceInvalidationService multiInstanceInvalidationService = MultiInstanceInvalidationService.this;
-            synchronized (a10) {
-                String str = (String) multiInstanceInvalidationService.b().get(Integer.valueOf(i10));
-                if (str == null) {
-                    Log.w("ROOM", "Remote invalidation client ID not registered");
-                    return;
-                }
-                int beginBroadcast = multiInstanceInvalidationService.a().beginBroadcast();
-                for (int i11 = 0; i11 < beginBroadcast; i11++) {
-                    Object broadcastCookie = multiInstanceInvalidationService.a().getBroadcastCookie(i11);
-                    Intrinsics.checkNotNull(broadcastCookie, "null cannot be cast to non-null type kotlin.Int");
-                    Integer num = (Integer) broadcastCookie;
-                    int intValue = num.intValue();
-                    String str2 = (String) multiInstanceInvalidationService.b().get(num);
-                    if (i10 != intValue && Intrinsics.areEqual(str, str2)) {
-                        try {
-                            ((j) multiInstanceInvalidationService.a().getBroadcastItem(i11)).m(tables);
-                        } catch (RemoteException e10) {
-                            Log.w("ROOM", "Error invoking a remote callback", e10);
-                        }
-                    }
-                }
-                multiInstanceInvalidationService.a().finishBroadcast();
-                Unit unit = Unit.f32056a;
-            }
-        }
-
-        @Override // r3.k
-        public void a0(j callback, int i10) {
-            Intrinsics.checkNotNullParameter(callback, "callback");
-            RemoteCallbackList a10 = MultiInstanceInvalidationService.this.a();
-            MultiInstanceInvalidationService multiInstanceInvalidationService = MultiInstanceInvalidationService.this;
-            synchronized (a10) {
-                multiInstanceInvalidationService.a().unregister(callback);
-                String str = (String) multiInstanceInvalidationService.b().remove(Integer.valueOf(i10));
-            }
-        }
-
-        @Override // r3.k
-        public int x(j callback, String str) {
+        public int D(j callback, String str) {
             Intrinsics.checkNotNullParameter(callback, "callback");
             int i10 = 0;
             if (str == null) {
@@ -102,6 +60,48 @@ public final class MultiInstanceInvalidationService extends Service {
             }
             return i10;
         }
+
+        @Override // r3.k
+        public void Y(int i10, String[] tables) {
+            Intrinsics.checkNotNullParameter(tables, "tables");
+            RemoteCallbackList a10 = MultiInstanceInvalidationService.this.a();
+            MultiInstanceInvalidationService multiInstanceInvalidationService = MultiInstanceInvalidationService.this;
+            synchronized (a10) {
+                String str = (String) multiInstanceInvalidationService.b().get(Integer.valueOf(i10));
+                if (str == null) {
+                    Log.w("ROOM", "Remote invalidation client ID not registered");
+                    return;
+                }
+                int beginBroadcast = multiInstanceInvalidationService.a().beginBroadcast();
+                for (int i11 = 0; i11 < beginBroadcast; i11++) {
+                    Object broadcastCookie = multiInstanceInvalidationService.a().getBroadcastCookie(i11);
+                    Intrinsics.checkNotNull(broadcastCookie, "null cannot be cast to non-null type kotlin.Int");
+                    Integer num = (Integer) broadcastCookie;
+                    int intValue = num.intValue();
+                    String str2 = (String) multiInstanceInvalidationService.b().get(num);
+                    if (i10 != intValue && Intrinsics.areEqual(str, str2)) {
+                        try {
+                            ((j) multiInstanceInvalidationService.a().getBroadcastItem(i11)).p(tables);
+                        } catch (RemoteException e10) {
+                            Log.w("ROOM", "Error invoking a remote callback", e10);
+                        }
+                    }
+                }
+                multiInstanceInvalidationService.a().finishBroadcast();
+                Unit unit = Unit.f31765a;
+            }
+        }
+
+        @Override // r3.k
+        public void c0(j callback, int i10) {
+            Intrinsics.checkNotNullParameter(callback, "callback");
+            RemoteCallbackList a10 = MultiInstanceInvalidationService.this.a();
+            MultiInstanceInvalidationService multiInstanceInvalidationService = MultiInstanceInvalidationService.this;
+            synchronized (a10) {
+                multiInstanceInvalidationService.a().unregister(callback);
+                String str = (String) multiInstanceInvalidationService.b().remove(Integer.valueOf(i10));
+            }
+        }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -119,24 +119,24 @@ public final class MultiInstanceInvalidationService extends Service {
     }
 
     public final RemoteCallbackList a() {
-        return this.f5495i;
+        return this.f5192i;
     }
 
     public final Map b() {
-        return this.f5494e;
+        return this.f5191e;
     }
 
     public final int c() {
-        return this.f5493d;
+        return this.f5190d;
     }
 
     public final void d(int i10) {
-        this.f5493d = i10;
+        this.f5190d = i10;
     }
 
     @Override // android.app.Service
     public IBinder onBind(Intent intent) {
         Intrinsics.checkNotNullParameter(intent, "intent");
-        return this.f5496o;
+        return this.f5193o;
     }
 }

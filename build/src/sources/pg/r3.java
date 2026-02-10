@@ -1,43 +1,43 @@
 package pg;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class r3 implements yi.d {
+final class r3 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r3 f44710a = new r3();
+    static final r3 f43910a = new r3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44711b;
+    private static final zi.c f43911b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44712c;
+    private static final zi.c f43912c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44713d;
+    private static final zi.c f43913d;
 
     static {
-        c.b a10 = yi.c.a("errorCode");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f44711b = a10.b(s1Var.b()).a();
-        c.b a11 = yi.c.a("imageInfo");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f44712c = a11.b(s1Var2.b()).a();
-        c.b a12 = yi.c.a("isColdCall");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f44713d = a12.b(s1Var3.b()).a();
+        c.b a10 = zi.c.a("identifyLanguageConfidenceThreshold");
+        f fVar = new f();
+        fVar.a(1);
+        f43911b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("identifyAllLanguagesConfidenceThreshold");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f43912c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("confidenceThreshold");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f43913d = a12.b(fVar3.b()).a();
     }
 
     private r3() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
+        zi.e eVar = (zi.e) obj2;
         throw null;
     }
 }

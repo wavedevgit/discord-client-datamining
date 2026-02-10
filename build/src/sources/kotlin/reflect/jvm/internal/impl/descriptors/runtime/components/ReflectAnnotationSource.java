@@ -9,16 +9,16 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectAnnotationSource implements SourceElement {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Annotation f32651a;
+    private final Annotation f32360a;
 
     public ReflectAnnotationSource(@NotNull Annotation annotation) {
         Intrinsics.checkNotNullParameter(annotation, "annotation");
-        this.f32651a = annotation;
+        this.f32360a = annotation;
     }
 
     @NotNull
     public final Annotation getAnnotation() {
-        return this.f32651a;
+        return this.f32360a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.SourceElement

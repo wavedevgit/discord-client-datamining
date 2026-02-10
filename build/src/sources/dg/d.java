@@ -1,32 +1,19 @@
 package dg;
 
-import android.os.Binder;
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
+import com.google.android.gms.common.api.Status;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class d extends Binder implements IInterface {
-    /* JADX INFO: Access modifiers changed from: protected */
-    public d(String str) {
-        attachInterface(this, str);
+final class d extends z {
+
+    /* renamed from: c  reason: collision with root package name */
+    final /* synthetic */ zg.k f20717c;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public d(e eVar, zg.k kVar) {
+        this.f20717c = kVar;
     }
 
-    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
-
-    @Override // android.os.Binder
-    public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (i10 > 16777215) {
-            if (super.onTransact(i10, parcel, parcel2, i11)) {
-                return true;
-            }
-        } else {
-            parcel.enforceInterface(getInterfaceDescriptor());
-        }
-        return e(i10, parcel, parcel2, i11);
-    }
-
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this;
+    @Override // dg.a0
+    public final void P(Status status, we.g gVar) {
+        gf.r.a(status, gVar, this.f20717c);
     }
 }

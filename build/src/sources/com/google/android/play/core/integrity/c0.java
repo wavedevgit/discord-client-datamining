@@ -6,40 +6,40 @@ import android.os.RemoteException;
 public final class c0 extends i0 {
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ long f16122i;
+    final /* synthetic */ long f16262i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ yg.k f16123o;
+    final /* synthetic */ zg.k f16263o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ j0 f16124p;
+    final /* synthetic */ j0 f16264p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c0(j0 j0Var, yg.k kVar, int i10, long j10, yg.k kVar2) {
+    public c0(j0 j0Var, zg.k kVar, int i10, long j10, zg.k kVar2) {
         super(j0Var, kVar);
-        this.f16122i = j10;
-        this.f16123o = kVar2;
-        this.f16124p = j0Var;
+        this.f16262i = j10;
+        this.f16263o = kVar2;
+        this.f16264p = j0Var;
     }
 
-    @Override // ki.u0
+    @Override // li.u0
     protected final void b() {
-        ki.t0 t0Var;
-        if (j0.j(this.f16124p)) {
+        li.t0 t0Var;
+        if (j0.j(this.f16264p)) {
             super.a(new b(-2, null));
-        } else if (j0.i(this.f16124p, 0)) {
+        } else if (j0.i(this.f16264p, 0)) {
             super.a(new b(-14, null));
         } else {
             try {
-                j0 j0Var = this.f16124p;
-                ((ki.l0) j0Var.f16177f.e()).s(j0.b(j0Var, this.f16122i, 0), new h0(this.f16124p, this.f16123o));
+                j0 j0Var = this.f16264p;
+                ((li.l0) j0Var.f16317f.e()).f0(j0.b(j0Var, this.f16262i, 0), new h0(this.f16264p, this.f16263o));
             } catch (RemoteException e10) {
-                j0 j0Var2 = this.f16124p;
-                long j10 = this.f16122i;
-                t0Var = j0Var2.f16172a;
+                j0 j0Var2 = this.f16264p;
+                long j10 = this.f16262i;
+                t0Var = j0Var2.f16312a;
                 t0Var.b(e10, "warmUpIntegrityToken(%s)", Long.valueOf(j10));
-                this.f16123o.d(new b(-100, e10));
+                this.f16263o.d(new b(-100, e10));
             }
         }
     }

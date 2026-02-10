@@ -14,72 +14,72 @@ import sun.misc.Unsafe;
 public final class y2 implements g3 {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final int[] f14370o = new int[0];
+    private static final int[] f14510o = new int[0];
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Unsafe f14371p = g4.l();
+    private static final Unsafe f14511p = g4.l();
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f14372a;
+    private final int[] f14512a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object[] f14373b;
+    private final Object[] f14513b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f14374c;
+    private final int f14514c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f14375d;
+    private final int f14515d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v2 f14376e;
+    private final v2 f14516e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f14377f;
+    private final boolean f14517f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int[] f14378g;
+    private final int[] f14518g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f14379h;
+    private final int f14519h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f14380i;
+    private final int f14520i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final k2 f14381j;
+    private final k2 f14521j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final w3 f14382k;
+    private final w3 f14522k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final f1 f14383l;
+    private final f1 f14523l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final a3 f14384m;
+    private final a3 f14524m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final q2 f14385n;
+    private final q2 f14525n;
 
     private y2(int[] iArr, Object[] objArr, int i10, int i11, v2 v2Var, int i12, boolean z10, int[] iArr2, int i13, int i14, a3 a3Var, k2 k2Var, w3 w3Var, f1 f1Var, q2 q2Var) {
-        this.f14372a = iArr;
-        this.f14373b = objArr;
-        this.f14374c = i10;
-        this.f14375d = i11;
+        this.f14512a = iArr;
+        this.f14513b = objArr;
+        this.f14514c = i10;
+        this.f14515d = i11;
         boolean z11 = false;
         if (f1Var != null && f1Var.f(v2Var)) {
             z11 = true;
         }
-        this.f14377f = z11;
-        this.f14378g = iArr2;
-        this.f14379h = i13;
-        this.f14380i = i14;
-        this.f14384m = a3Var;
-        this.f14381j = k2Var;
-        this.f14382k = w3Var;
-        this.f14383l = f1Var;
-        this.f14376e = v2Var;
-        this.f14385n = q2Var;
+        this.f14517f = z11;
+        this.f14518g = iArr2;
+        this.f14519h = i13;
+        this.f14520i = i14;
+        this.f14524m = a3Var;
+        this.f14521j = k2Var;
+        this.f14522k = w3Var;
+        this.f14523l = f1Var;
+        this.f14516e = v2Var;
+        this.f14525n = q2Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -114,15 +114,15 @@ public final class y2 implements g3 {
     }
 
     private final int E(int i10) {
-        return this.f14372a[i10 + 2];
+        return this.f14512a[i10 + 2];
     }
 
     private final int F(int i10, int i11) {
-        int length = (this.f14372a.length / 3) - 1;
+        int length = (this.f14512a.length / 3) - 1;
         while (i11 <= length) {
             int i12 = (length + i11) >>> 1;
             int i13 = i12 * 3;
-            int i14 = this.f14372a[i13];
+            int i14 = this.f14512a[i13];
             if (i10 == i14) {
                 return i13;
             }
@@ -140,7 +140,7 @@ public final class y2 implements g3 {
     }
 
     private final int H(int i10) {
-        return this.f14372a[i10 + 1];
+        return this.f14512a[i10 + 1];
     }
 
     private static long I(Object obj, long j10) {
@@ -149,11 +149,11 @@ public final class y2 implements g3 {
 
     private final u1 J(int i10) {
         int i11 = i10 / 3;
-        return (u1) this.f14373b[i11 + i11 + 1];
+        return (u1) this.f14513b[i11 + i11 + 1];
     }
 
     private final g3 K(int i10) {
-        Object[] objArr = this.f14373b;
+        Object[] objArr = this.f14513b;
         int i11 = i10 / 3;
         int i12 = i11 + i11;
         g3 g3Var = (g3) objArr[i12];
@@ -161,13 +161,13 @@ public final class y2 implements g3 {
             return g3Var;
         }
         g3 b10 = d3.a().b((Class) objArr[i12 + 1]);
-        this.f14373b[i12] = b10;
+        this.f14513b[i12] = b10;
         return b10;
     }
 
     private final Object L(int i10) {
         int i11 = i10 / 3;
-        return this.f14373b[i11 + i11];
+        return this.f14513b[i11 + i11];
     }
 
     private final Object M(Object obj, int i10) {
@@ -176,7 +176,7 @@ public final class y2 implements g3 {
         if (!r(obj, i10)) {
             return K.k();
         }
-        Object object = f14371p.getObject(obj, H);
+        Object object = f14511p.getObject(obj, H);
         if (u(object)) {
             return object;
         }
@@ -192,7 +192,7 @@ public final class y2 implements g3 {
         if (!v(obj, i10, i11)) {
             return K.k();
         }
-        Object object = f14371p.getObject(obj, H(i11) & 1048575);
+        Object object = f14511p.getObject(obj, H(i11) & 1048575);
         if (u(object)) {
             return object;
         }
@@ -228,7 +228,7 @@ public final class y2 implements g3 {
         if (!r(obj2, i10)) {
             return;
         }
-        Unsafe unsafe = f14371p;
+        Unsafe unsafe = f14511p;
         long H = H(i10) & 1048575;
         Object object = unsafe.getObject(obj2, H);
         if (object != null) {
@@ -254,15 +254,15 @@ public final class y2 implements g3 {
             K.e(object2, object);
             return;
         }
-        throw new IllegalStateException("Source subfield " + this.f14372a[i10] + " is present but null: " + obj2.toString());
+        throw new IllegalStateException("Source subfield " + this.f14512a[i10] + " is present but null: " + obj2.toString());
     }
 
     private final void l(Object obj, Object obj2, int i10) {
-        int i11 = this.f14372a[i10];
+        int i11 = this.f14512a[i10];
         if (!v(obj2, i11, i10)) {
             return;
         }
-        Unsafe unsafe = f14371p;
+        Unsafe unsafe = f14511p;
         long H = H(i10) & 1048575;
         Object object = unsafe.getObject(obj2, H);
         if (object != null) {
@@ -288,7 +288,7 @@ public final class y2 implements g3 {
             K.e(object2, object);
             return;
         }
-        throw new IllegalStateException("Source subfield " + this.f14372a[i10] + " is present but null: " + obj2.toString());
+        throw new IllegalStateException("Source subfield " + this.f14512a[i10] + " is present but null: " + obj2.toString());
     }
 
     private final void m(Object obj, int i10) {
@@ -305,12 +305,12 @@ public final class y2 implements g3 {
     }
 
     private final void o(Object obj, int i10, Object obj2) {
-        f14371p.putObject(obj, H(i10) & 1048575, obj2);
+        f14511p.putObject(obj, H(i10) & 1048575, obj2);
         m(obj, i10);
     }
 
     private final void p(Object obj, int i10, int i11, Object obj2) {
-        f14371p.putObject(obj, H(i11) & 1048575, obj2);
+        f14511p.putObject(obj, H(i11) & 1048575, obj2);
         n(obj, i10, i11);
     }
 
@@ -373,7 +373,7 @@ public final class y2 implements g3 {
                         }
                         return true;
                     } else if (k10 instanceof r0) {
-                        if (r0.f14322e.equals(k10)) {
+                        if (r0.f14462e.equals(k10)) {
                             return false;
                         }
                         return true;
@@ -386,7 +386,7 @@ public final class y2 implements g3 {
                     }
                     return true;
                 case 10:
-                    if (r0.f14322e.equals(g4.k(obj, j11))) {
+                    if (r0.f14462e.equals(g4.k(obj, j11))) {
                         return false;
                     }
                     return true;
@@ -521,16 +521,16 @@ public final class y2 implements g3 {
         int w24;
         y2 y2Var = this;
         Object obj2 = obj;
-        Unsafe unsafe = f14371p;
+        Unsafe unsafe = f14511p;
         int i14 = 1048575;
         int i15 = 0;
         int i16 = 0;
         int i17 = 0;
         int i18 = 1048575;
-        while (i15 < y2Var.f14372a.length) {
+        while (i15 < y2Var.f14512a.length) {
             int H = y2Var.H(i15);
             int G = G(H);
-            int[] iArr = y2Var.f14372a;
+            int[] iArr = y2Var.f14512a;
             int i19 = iArr[i15];
             int i20 = iArr[i15 + 2];
             int i21 = i20 & i14;
@@ -549,7 +549,7 @@ public final class y2 implements g3 {
             }
             int i22 = H & i14;
             if (G >= k1.X.zza()) {
-                k1.f14237k0.zza();
+                k1.f14377k0.zza();
             }
             int i23 = i17;
             long j10 = i22;
@@ -791,7 +791,7 @@ public final class y2 implements g3 {
                     break;
                 case 20:
                     List list = (List) unsafe.getObject(obj2, j10);
-                    int i27 = i3.f14216d;
+                    int i27 = i3.f14356d;
                     if (list.size() != 0) {
                         n10 = i3.n(list) + (list.size() * z0.w(i19 << 3));
                         i17 = n10 + i23;
@@ -801,7 +801,7 @@ public final class y2 implements g3 {
                     i17 = n10 + i23;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
                     List list2 = (List) unsafe.getObject(obj2, j10);
-                    int i28 = i3.f14216d;
+                    int i28 = i3.f14356d;
                     size = list2.size();
                     if (size != 0) {
                         s10 = i3.s(list2);
@@ -815,7 +815,7 @@ public final class y2 implements g3 {
                     i17 = i23 + o10;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
                     List list3 = (List) unsafe.getObject(obj2, j10);
-                    int i29 = i3.f14216d;
+                    int i29 = i3.f14356d;
                     size = list3.size();
                     if (size != 0) {
                         s10 = i3.m(list3);
@@ -836,7 +836,7 @@ public final class y2 implements g3 {
                     i17 = i23 + o10;
                     break;
                 case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
-                    int i30 = i3.f14216d;
+                    int i30 = i3.f14356d;
                     int size2 = ((List) unsafe.getObject(obj2, j10)).size();
                     if (size2 != 0) {
                         o10 = size2 * (z0.w(i19 << 3) + 1);
@@ -847,19 +847,19 @@ public final class y2 implements g3 {
                     i17 = i23 + o10;
                 case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
                     List list4 = (List) unsafe.getObject(obj2, j10);
-                    int i31 = i3.f14216d;
+                    int i31 = i3.f14356d;
                     int size3 = list4.size();
                     if (size3 != 0) {
                         n10 = z0.w(i19 << 3) * size3;
                         if (list4 instanceof e2) {
                             e2 e2Var = (e2) list4;
                             for (int i32 = 0; i32 < size3; i32++) {
-                                Object Y = e2Var.Y(i32);
-                                if (Y instanceof r0) {
-                                    int d12 = ((r0) Y).d();
+                                Object Z = e2Var.Z(i32);
+                                if (Z instanceof r0) {
+                                    int d12 = ((r0) Z).d();
                                     n10 += z0.w(d12) + d12;
                                 } else {
-                                    n10 += z0.v((String) Y);
+                                    n10 += z0.v((String) Z);
                                 }
                             }
                         } else {
@@ -881,7 +881,7 @@ public final class y2 implements g3 {
                 case 27:
                     List list5 = (List) unsafe.getObject(obj2, j10);
                     g3 K = y2Var.K(i15);
-                    int i34 = i3.f14216d;
+                    int i34 = i3.f14356d;
                     int size4 = list5.size();
                     if (size4 == 0) {
                         w18 = 0;
@@ -895,7 +895,7 @@ public final class y2 implements g3 {
                     break;
                 case 28:
                     List list6 = (List) unsafe.getObject(obj2, j10);
-                    int i36 = i3.f14216d;
+                    int i36 = i3.f14356d;
                     int size5 = list6.size();
                     if (size5 == 0) {
                         w19 = 0;
@@ -910,7 +910,7 @@ public final class y2 implements g3 {
                     break;
                 case 29:
                     List list7 = (List) unsafe.getObject(obj2, j10);
-                    int i38 = i3.f14216d;
+                    int i38 = i3.f14356d;
                     size = list7.size();
                     if (size != 0) {
                         s10 = i3.r(list7);
@@ -924,7 +924,7 @@ public final class y2 implements g3 {
                     i17 = i23 + o10;
                 case 30:
                     List list8 = (List) unsafe.getObject(obj2, j10);
-                    int i39 = i3.f14216d;
+                    int i39 = i3.f14356d;
                     size = list8.size();
                     if (size != 0) {
                         s10 = i3.h(list8);
@@ -946,7 +946,7 @@ public final class y2 implements g3 {
                     break;
                 case ChatViewRecyclerTypes.AUTO_MODERATION_NOTIFICATION_EMBED /* 33 */:
                     List list9 = (List) unsafe.getObject(obj2, j10);
-                    int i40 = i3.f14216d;
+                    int i40 = i3.f14356d;
                     size = list9.size();
                     if (size != 0) {
                         s10 = i3.p(list9);
@@ -960,7 +960,7 @@ public final class y2 implements g3 {
                     i17 = i23 + o10;
                 case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
                     List list10 = (List) unsafe.getObject(obj2, j10);
-                    int i41 = i3.f14216d;
+                    int i41 = i3.f14356d;
                     size = list10.size();
                     if (size != 0) {
                         s10 = i3.q(list10);
@@ -1050,7 +1050,7 @@ public final class y2 implements g3 {
                     i17 = i23;
                     break;
                 case 42:
-                    int i42 = i3.f14216d;
+                    int i42 = i3.f14356d;
                     l10 = ((List) unsafe.getObject(obj2, j10)).size();
                     if (l10 > 0) {
                         w20 = z0.w(i19 << 3);
@@ -1130,7 +1130,7 @@ public final class y2 implements g3 {
                 case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
                     List list11 = (List) unsafe.getObject(obj2, j10);
                     g3 K2 = y2Var.K(i15);
-                    int i43 = i3.f14216d;
+                    int i43 = i3.f14356d;
                     int size6 = list11.size();
                     if (size6 == 0) {
                         i13 = 0;
@@ -1347,17 +1347,17 @@ public final class y2 implements g3 {
             i15 += 3;
             i14 = 1048575;
         }
-        w3 w3Var = y2Var.f14382k;
+        w3 w3Var = y2Var.f14522k;
         int a10 = i17 + w3Var.a(w3Var.d(obj2));
-        if (y2Var.f14377f) {
-            j1 b10 = y2Var.f14383l.b(obj2);
+        if (y2Var.f14517f) {
+            j1 b10 = y2Var.f14523l.b(obj2);
             int i46 = 0;
-            for (int i47 = 0; i47 < b10.f14220a.b(); i47++) {
-                Map.Entry g10 = b10.f14220a.g(i47);
+            for (int i47 = 0; i47 < b10.f14360a.b(); i47++) {
+                Map.Entry g10 = b10.f14360a.g(i47);
                 android.support.v4.media.session.b.a(g10.getKey());
                 i46 += j1.b(null, g10.getValue());
             }
-            for (Map.Entry entry2 : b10.f14220a.c()) {
+            for (Map.Entry entry2 : b10.f14360a.c()) {
                 android.support.v4.media.session.b.a(entry2.getKey());
                 i46 += j1.b(null, entry2.getValue());
             }
@@ -1375,7 +1375,7 @@ public final class y2 implements g3 {
                 q1Var.zza = 0;
                 q1Var.t();
             }
-            int[] iArr = this.f14372a;
+            int[] iArr = this.f14512a;
             for (int i10 = 0; i10 < iArr.length; i10 += 3) {
                 int H = H(i10);
                 int i11 = 1048575 & H;
@@ -1416,10 +1416,10 @@ public final class y2 implements g3 {
                             case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
                             case 48:
                             case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
-                                this.f14381j.a(obj, j10);
+                                this.f14521j.a(obj, j10);
                                 break;
                             case 50:
-                                Unsafe unsafe = f14371p;
+                                Unsafe unsafe = f14511p;
                                 Object object = unsafe.getObject(obj, j10);
                                 if (object != null) {
                                     ((p2) object).c();
@@ -1429,17 +1429,17 @@ public final class y2 implements g3 {
                                     break;
                                 }
                         }
-                    } else if (v(obj, this.f14372a[i10], i10)) {
-                        K(i10).b(f14371p.getObject(obj, j10));
+                    } else if (v(obj, this.f14512a[i10], i10)) {
+                        K(i10).b(f14511p.getObject(obj, j10));
                     }
                 }
                 if (r(obj, i10)) {
-                    K(i10).b(f14371p.getObject(obj, j10));
+                    K(i10).b(f14511p.getObject(obj, j10));
                 }
             }
-            this.f14382k.g(obj);
-            if (this.f14377f) {
-                this.f14383l.d(obj);
+            this.f14522k.g(obj);
+            if (this.f14517f) {
+                this.f14523l.d(obj);
             }
         }
     }
@@ -1456,9 +1456,9 @@ public final class y2 implements g3 {
         int floatToIntBits;
         int i11;
         int i12 = 0;
-        for (int i13 = 0; i13 < this.f14372a.length; i13 += 3) {
+        for (int i13 = 0; i13 < this.f14512a.length; i13 += 3) {
             int H = H(i13);
-            int[] iArr = this.f14372a;
+            int[] iArr = this.f14512a;
             int i14 = 1048575 & H;
             int G = G(H);
             int i15 = iArr[i13];
@@ -1468,7 +1468,7 @@ public final class y2 implements g3 {
                 case 0:
                     i10 = i12 * 53;
                     doubleToLongBits = Double.doubleToLongBits(g4.f(obj, j10));
-                    byte[] bArr = y1.f14367d;
+                    byte[] bArr = y1.f14507d;
                     floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                     i12 = i10 + floatToIntBits;
                     break;
@@ -1480,14 +1480,14 @@ public final class y2 implements g3 {
                 case 2:
                     i10 = i12 * 53;
                     doubleToLongBits = g4.i(obj, j10);
-                    byte[] bArr2 = y1.f14367d;
+                    byte[] bArr2 = y1.f14507d;
                     floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                     i12 = i10 + floatToIntBits;
                     break;
                 case 3:
                     i10 = i12 * 53;
                     doubleToLongBits = g4.i(obj, j10);
-                    byte[] bArr3 = y1.f14367d;
+                    byte[] bArr3 = y1.f14507d;
                     floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                     i12 = i10 + floatToIntBits;
                     break;
@@ -1499,7 +1499,7 @@ public final class y2 implements g3 {
                 case 5:
                     i10 = i12 * 53;
                     doubleToLongBits = g4.i(obj, j10);
-                    byte[] bArr4 = y1.f14367d;
+                    byte[] bArr4 = y1.f14507d;
                     floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                     i12 = i10 + floatToIntBits;
                     break;
@@ -1549,7 +1549,7 @@ public final class y2 implements g3 {
                 case 14:
                     i10 = i12 * 53;
                     doubleToLongBits = g4.i(obj, j10);
-                    byte[] bArr5 = y1.f14367d;
+                    byte[] bArr5 = y1.f14507d;
                     floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                     i12 = i10 + floatToIntBits;
                     break;
@@ -1561,7 +1561,7 @@ public final class y2 implements g3 {
                 case 16:
                     i10 = i12 * 53;
                     doubleToLongBits = g4.i(obj, j10);
-                    byte[] bArr6 = y1.f14367d;
+                    byte[] bArr6 = y1.f14507d;
                     floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                     i12 = i10 + floatToIntBits;
                     break;
@@ -1618,7 +1618,7 @@ public final class y2 implements g3 {
                     if (v(obj, i15, i13)) {
                         i10 = i12 * 53;
                         doubleToLongBits = Double.doubleToLongBits(B(obj, j10));
-                        byte[] bArr7 = y1.f14367d;
+                        byte[] bArr7 = y1.f14507d;
                         floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                         i12 = i10 + floatToIntBits;
                         break;
@@ -1638,7 +1638,7 @@ public final class y2 implements g3 {
                     if (v(obj, i15, i13)) {
                         i10 = i12 * 53;
                         doubleToLongBits = I(obj, j10);
-                        byte[] bArr8 = y1.f14367d;
+                        byte[] bArr8 = y1.f14507d;
                         floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                         i12 = i10 + floatToIntBits;
                         break;
@@ -1649,7 +1649,7 @@ public final class y2 implements g3 {
                     if (v(obj, i15, i13)) {
                         i10 = i12 * 53;
                         doubleToLongBits = I(obj, j10);
-                        byte[] bArr9 = y1.f14367d;
+                        byte[] bArr9 = y1.f14507d;
                         floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                         i12 = i10 + floatToIntBits;
                         break;
@@ -1669,7 +1669,7 @@ public final class y2 implements g3 {
                     if (v(obj, i15, i13)) {
                         i10 = i12 * 53;
                         doubleToLongBits = I(obj, j10);
-                        byte[] bArr10 = y1.f14367d;
+                        byte[] bArr10 = y1.f14507d;
                         floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                         i12 = i10 + floatToIntBits;
                         break;
@@ -1752,7 +1752,7 @@ public final class y2 implements g3 {
                     if (v(obj, i15, i13)) {
                         i10 = i12 * 53;
                         doubleToLongBits = I(obj, j10);
-                        byte[] bArr11 = y1.f14367d;
+                        byte[] bArr11 = y1.f14507d;
                         floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                         i12 = i10 + floatToIntBits;
                         break;
@@ -1772,7 +1772,7 @@ public final class y2 implements g3 {
                     if (v(obj, i15, i13)) {
                         i10 = i12 * 53;
                         doubleToLongBits = I(obj, j10);
-                        byte[] bArr12 = y1.f14367d;
+                        byte[] bArr12 = y1.f14507d;
                         floatToIntBits = (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
                         i12 = i10 + floatToIntBits;
                         break;
@@ -1790,9 +1790,9 @@ public final class y2 implements g3 {
                     }
             }
         }
-        int hashCode = (i12 * 53) + this.f14382k.d(obj).hashCode();
-        if (this.f14377f) {
-            return (hashCode * 53) + this.f14383l.b(obj).f14220a.hashCode();
+        int hashCode = (i12 * 53) + this.f14522k.d(obj).hashCode();
+        if (this.f14517f) {
+            return (hashCode * 53) + this.f14523l.b(obj).f14360a.hashCode();
         }
         return hashCode;
     }
@@ -1801,10 +1801,10 @@ public final class y2 implements g3 {
     public final void e(Object obj, Object obj2) {
         i(obj);
         obj2.getClass();
-        for (int i10 = 0; i10 < this.f14372a.length; i10 += 3) {
+        for (int i10 = 0; i10 < this.f14512a.length; i10 += 3) {
             int H = H(i10);
             int i11 = 1048575 & H;
-            int[] iArr = this.f14372a;
+            int[] iArr = this.f14512a;
             int G = G(H);
             int i12 = iArr[i10];
             long j10 = i11;
@@ -1975,10 +1975,10 @@ public final class y2 implements g3 {
                 case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
                 case 48:
                 case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
-                    this.f14381j.b(obj, obj2, j10);
+                    this.f14521j.b(obj, obj2, j10);
                     break;
                 case 50:
-                    int i13 = i3.f14216d;
+                    int i13 = i3.f14356d;
                     g4.x(obj, j10, q2.a(g4.k(obj, j10), g4.k(obj2, j10)));
                     break;
                 case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
@@ -2019,16 +2019,16 @@ public final class y2 implements g3 {
                     break;
             }
         }
-        i3.x(this.f14382k, obj, obj2);
-        if (this.f14377f) {
-            i3.w(this.f14383l, obj, obj2);
+        i3.x(this.f14522k, obj, obj2);
+        if (this.f14517f) {
+            i3.w(this.f14523l, obj, obj2);
         }
     }
 
     @Override // com.google.android.gms.internal.play_billing.g3
     public final boolean f(Object obj, Object obj2) {
         boolean g10;
-        for (int i10 = 0; i10 < this.f14372a.length; i10 += 3) {
+        for (int i10 = 0; i10 < this.f14512a.length; i10 += 3) {
             int H = H(i10);
             long j10 = H & 1048575;
             switch (G(H)) {
@@ -2188,11 +2188,11 @@ public final class y2 implements g3 {
                 return false;
             }
         }
-        if (!this.f14382k.d(obj).equals(this.f14382k.d(obj2))) {
+        if (!this.f14522k.d(obj).equals(this.f14522k.d(obj2))) {
             return false;
         }
-        if (this.f14377f) {
-            return this.f14383l.b(obj).equals(this.f14383l.b(obj2));
+        if (this.f14517f) {
+            return this.f14523l.b(obj).equals(this.f14523l.b(obj2));
         }
         return true;
     }
@@ -2221,18 +2221,18 @@ public final class y2 implements g3 {
         int i12 = 0;
         int i13 = 0;
         int i14 = 1048575;
-        while (i12 < this.f14379h) {
-            int[] iArr = this.f14378g;
-            int[] iArr2 = this.f14372a;
+        while (i12 < this.f14519h) {
+            int[] iArr = this.f14518g;
+            int[] iArr2 = this.f14512a;
             int i15 = iArr[i12];
             int i16 = iArr2[i15];
             int H = H(i15);
-            int i17 = this.f14372a[i15 + 2];
+            int i17 = this.f14512a[i15 + 2];
             int i18 = i17 & 1048575;
             int i19 = 1 << (i17 >>> 20);
             if (i18 != i14) {
                 if (i18 != 1048575) {
-                    i13 = f14371p.getInt(obj, i18);
+                    i13 = f14511p.getInt(obj, i18);
                 }
                 i11 = i13;
                 i10 = i18;
@@ -2279,7 +2279,7 @@ public final class y2 implements g3 {
             i13 = i11;
         }
         Object obj3 = obj;
-        if (this.f14377f && !this.f14383l.b(obj3).h()) {
+        if (this.f14517f && !this.f14523l.b(obj3).h()) {
             return false;
         }
         return true;
@@ -2287,7 +2287,7 @@ public final class y2 implements g3 {
 
     @Override // com.google.android.gms.internal.play_billing.g3
     public final Object k() {
-        return ((q1) this.f14376e).k();
+        return ((q1) this.f14516e).k();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -2298,14 +2298,14 @@ public final class y2 implements g3 {
         r27.putInt(r2, r9, r14);
      */
     /* JADX WARN: Code restructure failed: missing block: B:549:0x0cee, code lost:
-        r0 = r11.f14379h;
+        r0 = r11.f14519h;
      */
     /* JADX WARN: Code restructure failed: missing block: B:551:0x0cf2, code lost:
-        if (r0 >= r11.f14380i) goto L72;
+        if (r0 >= r11.f14520i) goto L72;
      */
     /* JADX WARN: Code restructure failed: missing block: B:552:0x0cf4, code lost:
-        r1 = r11.f14378g;
-        r3 = r11.f14372a;
+        r1 = r11.f14518g;
+        r3 = r11.f14512a;
         r1 = r1[r0];
         r3 = r3[r1];
         r3 = com.google.android.gms.internal.play_billing.g4.k(r2, r11.H(r1) & 1048575);

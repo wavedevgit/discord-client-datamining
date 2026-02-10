@@ -1,43 +1,68 @@
 package og;
 
-import yi.c;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class w0 implements yi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final w0 f42651a = new w0();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42652b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42653c;
+final class w0 extends j0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42654d;
+    private final Object f41427d;
 
-    static {
-        c.b a10 = yi.c.a("logEventKey");
-        f fVar = new f();
-        fVar.a(1);
-        f42652b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("eventCount");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42653c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("inferenceDurationStats");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42654d = a12.b(fVar3.b()).a();
+    /* renamed from: e  reason: collision with root package name */
+    private int f41428e;
+
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ y0 f41429i;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public w0(y0 y0Var, int i10) {
+        this.f41429i = y0Var;
+        this.f41427d = y0.j(y0Var, i10);
+        this.f41428e = i10;
     }
 
-    private w0() {
+    private final void a() {
+        int z10;
+        int i10 = this.f41428e;
+        if (i10 == -1 || i10 >= this.f41429i.size() || !r.a(this.f41427d, y0.j(this.f41429i, this.f41428e))) {
+            z10 = this.f41429i.z(this.f41427d);
+            this.f41428e = z10;
+        }
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // og.j0, java.util.Map.Entry
+    public final Object getKey() {
+        return this.f41427d;
+    }
+
+    @Override // og.j0, java.util.Map.Entry
+    public final Object getValue() {
+        Map o10 = this.f41429i.o();
+        if (o10 != null) {
+            return o10.get(this.f41427d);
+        }
+        a();
+        int i10 = this.f41428e;
+        if (i10 == -1) {
+            return null;
+        }
+        return y0.m(this.f41429i, i10);
+    }
+
+    @Override // java.util.Map.Entry
+    public final Object setValue(Object obj) {
+        Map o10 = this.f41429i.o();
+        if (o10 != null) {
+            return o10.put(this.f41427d, obj);
+        }
+        a();
+        int i10 = this.f41428e;
+        if (i10 == -1) {
+            this.f41429i.put(this.f41427d, obj);
+            return null;
+        }
+        y0 y0Var = this.f41429i;
+        Object m10 = y0.m(y0Var, i10);
+        y0.q(y0Var, this.f41428e, obj);
+        return m10;
     }
 }

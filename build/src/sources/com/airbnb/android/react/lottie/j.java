@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j extends Event {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f7697b = new a(null);
+    public static final a f7836b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Throwable f7698a;
+    private final Throwable f7837a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -28,7 +28,7 @@ public final class j extends Event {
     public j(int i10, int i11, Throwable error) {
         super(i10, i11);
         Intrinsics.checkNotNullParameter(error, "error");
-        this.f7698a = error;
+        this.f7837a = error;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -40,7 +40,7 @@ public final class j extends Event {
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
-        createMap.putString("error", this.f7698a.getMessage());
+        createMap.putString("error", this.f7837a.getMessage());
         return createMap;
     }
 

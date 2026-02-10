@@ -5,7 +5,7 @@ import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.audio.e;
 import com.google.android.exoplayer2.decoder.DecoderCounters;
 import com.google.android.exoplayer2.decoder.DecoderReuseEvaluation;
-import ne.w0;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface e {
 
@@ -13,76 +13,76 @@ public interface e {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Handler f12124a;
+        private final Handler f12264a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final e f12125b;
+        private final e f12265b;
 
         public a(Handler handler, e eVar) {
             Handler handler2;
             if (eVar != null) {
-                handler2 = (Handler) ne.a.e(handler);
+                handler2 = (Handler) oe.a.e(handler);
             } else {
                 handler2 = null;
             }
-            this.f12124a = handler2;
-            this.f12125b = eVar;
+            this.f12264a = handler2;
+            this.f12265b = eVar;
         }
 
         public static /* synthetic */ void d(a aVar, Format format, DecoderReuseEvaluation decoderReuseEvaluation) {
-            ((e) w0.j(aVar.f12125b)).C(format);
-            ((e) w0.j(aVar.f12125b)).n(format, decoderReuseEvaluation);
+            ((e) w0.j(aVar.f12265b)).C(format);
+            ((e) w0.j(aVar.f12265b)).n(format, decoderReuseEvaluation);
         }
 
         public static /* synthetic */ void i(a aVar, DecoderCounters decoderCounters) {
             aVar.getClass();
             decoderCounters.c();
-            ((e) w0.j(aVar.f12125b)).l(decoderCounters);
+            ((e) w0.j(aVar.f12265b)).l(decoderCounters);
         }
 
         public void k(final Exception exc) {
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.j
+                handler.post(new Runnable() { // from class: oc.j
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12125b)).q(exc);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12265b)).q(exc);
                     }
                 });
             }
         }
 
         public void l(final Exception exc) {
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.o
+                handler.post(new Runnable() { // from class: oc.o
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12125b)).a(exc);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12265b)).a(exc);
                     }
                 });
             }
         }
 
         public void m(final String str, final long j10, final long j11) {
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.i
+                handler.post(new Runnable() { // from class: oc.i
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12125b)).f(str, j10, j11);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12265b)).f(str, j10, j11);
                     }
                 });
             }
         }
 
         public void n(final String str) {
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.f
+                handler.post(new Runnable() { // from class: oc.f
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12125b)).e(str);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12265b)).e(str);
                     }
                 });
             }
@@ -90,9 +90,9 @@ public interface e {
 
         public void o(final DecoderCounters decoderCounters) {
             decoderCounters.c();
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.m
+                handler.post(new Runnable() { // from class: oc.m
                     @Override // java.lang.Runnable
                     public final void run() {
                         e.a.i(e.a.this, decoderCounters);
@@ -102,21 +102,21 @@ public interface e {
         }
 
         public void p(final DecoderCounters decoderCounters) {
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.l
+                handler.post(new Runnable() { // from class: oc.l
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12125b)).c(decoderCounters);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12265b)).c(decoderCounters);
                     }
                 });
             }
         }
 
         public void q(final Format format, final DecoderReuseEvaluation decoderReuseEvaluation) {
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.n
+                handler.post(new Runnable() { // from class: oc.n
                     @Override // java.lang.Runnable
                     public final void run() {
                         e.a.d(e.a.this, format, decoderReuseEvaluation);
@@ -126,36 +126,36 @@ public interface e {
         }
 
         public void r(final long j10) {
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.k
+                handler.post(new Runnable() { // from class: oc.k
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12125b)).i(j10);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12265b)).i(j10);
                     }
                 });
             }
         }
 
         public void s(final boolean z10) {
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.h
+                handler.post(new Runnable() { // from class: oc.h
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12125b)).onSkipSilenceEnabledChanged(z10);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12265b)).onSkipSilenceEnabledChanged(z10);
                     }
                 });
             }
         }
 
         public void t(final int i10, final long j10, final long j11) {
-            Handler handler = this.f12124a;
+            Handler handler = this.f12264a;
             if (handler != null) {
-                handler.post(new Runnable() { // from class: nc.g
+                handler.post(new Runnable() { // from class: oc.g
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12125b)).r(i10, j10, j11);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12265b)).r(i10, j10, j11);
                     }
                 });
             }

@@ -1,37 +1,28 @@
 package af;
-
-import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements Parcelable.Creator {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void c(a aVar, Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.e(parcel, 1, aVar.b(), false);
-        hf.c.b(parcel, a10);
-    }
+public class b {
 
-    @Override // android.os.Parcelable.Creator
-    /* renamed from: a */
-    public a createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        Bundle bundle = null;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            if (hf.b.l(r10) != 1) {
-                hf.b.z(parcel, r10);
-            } else {
-                bundle = hf.b.a(parcel, r10);
-            }
+    /* renamed from: a  reason: collision with root package name */
+    private int f755a = 1;
+
+    public b a(Object obj) {
+        int hashCode;
+        int i10 = this.f755a * 31;
+        if (obj == null) {
+            hashCode = 0;
+        } else {
+            hashCode = obj.hashCode();
         }
-        hf.b.k(parcel, A);
-        return new a(bundle);
+        this.f755a = i10 + hashCode;
+        return this;
     }
 
-    @Override // android.os.Parcelable.Creator
-    /* renamed from: b */
-    public a[] newArray(int i10) {
-        return new a[i10];
+    public int b() {
+        return this.f755a;
+    }
+
+    public final b c(boolean z10) {
+        this.f755a = (this.f755a * 31) + (z10 ? 1 : 0);
+        return this;
     }
 }

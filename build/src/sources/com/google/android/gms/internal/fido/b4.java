@@ -5,33 +5,33 @@ import java.util.logging.Logger;
 final class b4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final t0 f13929a = new t0();
+    private final t0 f14069a = new t0();
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f13930b;
+    private final String f14070b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile Logger f13931c;
+    private volatile Logger f14071c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b4(Class cls) {
-        this.f13930b = cls.getName();
+        this.f14070b = cls.getName();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Logger a() {
-        Logger logger = this.f13931c;
+        Logger logger = this.f14071c;
         if (logger != null) {
             return logger;
         }
-        synchronized (this.f13929a) {
+        synchronized (this.f14069a) {
             try {
-                Logger logger2 = this.f13931c;
+                Logger logger2 = this.f14071c;
                 if (logger2 != null) {
                     return logger2;
                 }
-                Logger logger3 = Logger.getLogger(this.f13930b);
-                this.f13931c = logger3;
+                Logger logger3 = Logger.getLogger(this.f14070b);
+                this.f14071c = logger3;
                 return logger3;
             } catch (Throwable th2) {
                 throw th2;

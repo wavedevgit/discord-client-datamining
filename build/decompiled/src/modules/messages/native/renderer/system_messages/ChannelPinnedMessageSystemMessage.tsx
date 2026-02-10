@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ChannelPinnedMessageSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56069: for (var _fun56069_ip = 0;;) switch (_fun56069_ip) {
+        _fun56072: for (var _fun56072_ip = 0;;) switch (_fun56072_ip) {
             case 0:
                 var3 = arg0;
                 var9 = var3.message;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = 'username';
                 var10 = null;
                 if (!(var16 === var13)) {
-                    _fun56069_ip = 208;
-                    continue _fun56069
+                    _fun56072_ip = 208;
+                    continue _fun56072
                 }
             case 205:
                 var10 = var12;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.roleColor = var12;
                 var10 = null;
                 if (!var15) {
-                    _fun56069_ip = 226;
-                    continue _fun56069
+                    _fun56072_ip = 226;
+                    continue _fun56072
                 }
             case 223:
                 var10 = var14;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = 'dot';
                 var10 = var10 === var13;
                 if (!var10) {
-                    _fun56069_ip = 246;
-                    continue _fun56069
+                    _fun56072_ip = 246;
+                    continue _fun56072
                 }
             case 242:
                 var10 = var11 != var12;
@@ -126,4 +126,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createChannelPinnedMessageSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6743, 6744, 1234, 6745, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6744, 6745, 1234, 6746, 2]);

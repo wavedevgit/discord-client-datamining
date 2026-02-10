@@ -7,15 +7,15 @@ import java.util.List;
 public final class QueryProductDetailsParams {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.google.android.gms.internal.play_billing.j f7886a;
+    private final com.google.android.gms.internal.play_billing.j f8026a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private com.google.android.gms.internal.play_billing.j f7887a;
+        private com.google.android.gms.internal.play_billing.j f8027a;
 
-        /* synthetic */ a(a6.j0 j0Var) {
+        /* synthetic */ a(b6.j0 j0Var) {
         }
 
         public QueryProductDetailsParams a() {
@@ -33,7 +33,7 @@ public final class QueryProductDetailsParams {
                     }
                 }
                 if (hashSet.size() <= 1) {
-                    this.f7887a = com.google.android.gms.internal.play_billing.j.j(list);
+                    this.f8027a = com.google.android.gms.internal.play_billing.j.j(list);
                     return this;
                 }
                 throw new IllegalArgumentException("All products should be of the same product type.");
@@ -46,27 +46,27 @@ public final class QueryProductDetailsParams {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f7888a;
+        private final String f8028a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f7889b;
+        private final String f8029b;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private String f7890a;
+            private String f8030a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f7891b;
+            private String f8031b;
 
-            /* synthetic */ a(a6.k0 k0Var) {
+            /* synthetic */ a(b6.k0 k0Var) {
             }
 
             public b a() {
-                if (!"first_party".equals(this.f7891b)) {
-                    if (this.f7890a != null) {
-                        if (this.f7891b != null) {
+                if (!"first_party".equals(this.f8031b)) {
+                    if (this.f8030a != null) {
+                        if (this.f8031b != null) {
                             return new b(this, null);
                         }
                         throw new IllegalArgumentException("Product type must be provided.");
@@ -77,19 +77,19 @@ public final class QueryProductDetailsParams {
             }
 
             public a b(String str) {
-                this.f7890a = str;
+                this.f8030a = str;
                 return this;
             }
 
             public a c(String str) {
-                this.f7891b = str;
+                this.f8031b = str;
                 return this;
             }
         }
 
-        /* synthetic */ b(a aVar, a6.l0 l0Var) {
-            this.f7888a = aVar.f7890a;
-            this.f7889b = aVar.f7891b;
+        /* synthetic */ b(a aVar, b6.l0 l0Var) {
+            this.f8028a = aVar.f8030a;
+            this.f8029b = aVar.f8031b;
         }
 
         public static a a() {
@@ -97,16 +97,16 @@ public final class QueryProductDetailsParams {
         }
 
         public final String b() {
-            return this.f7888a;
+            return this.f8028a;
         }
 
         public final String c() {
-            return this.f7889b;
+            return this.f8029b;
         }
     }
 
-    /* synthetic */ QueryProductDetailsParams(a aVar, a6.m0 m0Var) {
-        this.f7886a = aVar.f7887a;
+    /* synthetic */ QueryProductDetailsParams(a aVar, b6.m0 m0Var) {
+        this.f8026a = aVar.f8027a;
     }
 
     public static a a() {
@@ -114,10 +114,10 @@ public final class QueryProductDetailsParams {
     }
 
     public final com.google.android.gms.internal.play_billing.j b() {
-        return this.f7886a;
+        return this.f8026a;
     }
 
     public final String c() {
-        return ((b) this.f7886a.get(0)).c();
+        return ((b) this.f8026a.get(0)).c();
     }
 }

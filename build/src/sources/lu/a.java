@@ -1,132 +1,136 @@
 package lu;
 
-import android.os.Build;
-import android.security.NetworkSecurityPolicy;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import javax.net.ssl.SSLSocket;
-import javax.net.ssl.X509TrustManager;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import kotlin.jvm.internal.Intrinsics;
-import mu.i;
-import mu.j;
-import mu.k;
+import okio.Sink;
+import okio.Source;
+import ru.x;
+import ru.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a extends h {
+public interface a {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final C0489a f36795e = new C0489a(null);
+    /* renamed from: a  reason: collision with root package name */
+    public static final C0520a f36663a = C0520a.f36665a;
 
-    /* renamed from: f  reason: collision with root package name */
-    private static final boolean f36796f;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final List f36797d;
+    /* renamed from: b  reason: collision with root package name */
+    public static final a f36664b = new C0520a.C0521a();
 
     /* renamed from: lu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0489a {
-        public /* synthetic */ C0489a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    public static final class C0520a {
 
-        public final h a() {
-            if (b()) {
-                return new a();
-            }
-            return null;
-        }
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ C0520a f36665a = new C0520a();
 
-        public final boolean b() {
-            return a.f36796f;
-        }
-
-        private C0489a() {
-        }
-    }
-
-    static {
-        boolean z10;
-        if (h.f36825a.h() && Build.VERSION.SDK_INT >= 29) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        f36796f = z10;
-    }
-
-    public a() {
-        k[] kVarArr = {mu.a.f38346a.a(), new j(mu.f.f38354f.d()), new j(i.f38368a.a()), new j(mu.g.f38362a.a())};
-        ArrayList arrayList = new ArrayList();
-        for (Object obj : CollectionsKt.q(kVarArr)) {
-            if (((k) obj).a()) {
-                arrayList.add(obj);
-            }
-        }
-        this.f36797d = arrayList;
-    }
-
-    @Override // lu.h
-    public ou.c c(X509TrustManager trustManager) {
-        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
-        mu.b a10 = mu.b.f38347d.a(trustManager);
-        if (a10 != null) {
-            return a10;
-        }
-        return super.c(trustManager);
-    }
-
-    @Override // lu.h
-    public void e(SSLSocket sslSocket, String str, List protocols) {
-        Object obj;
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        Intrinsics.checkNotNullParameter(protocols, "protocols");
-        Iterator it = this.f36797d.iterator();
-        while (true) {
-            if (it.hasNext()) {
-                obj = it.next();
-                if (((k) obj).b(sslSocket)) {
-                    break;
+        /* renamed from: lu.a$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        private static final class C0521a implements a {
+            @Override // lu.a
+            public void a(File directory) {
+                Intrinsics.checkNotNullParameter(directory, "directory");
+                File[] listFiles = directory.listFiles();
+                if (listFiles != null) {
+                    for (File file : listFiles) {
+                        if (file.isDirectory()) {
+                            Intrinsics.checkNotNullExpressionValue(file, "file");
+                            a(file);
+                        }
+                        if (!file.delete()) {
+                            throw new IOException("failed to delete " + file);
+                        }
+                    }
+                    return;
                 }
-            } else {
-                obj = null;
-                break;
+                throw new IOException("not a readable directory: " + directory);
             }
-        }
-        k kVar = (k) obj;
-        if (kVar != null) {
-            kVar.d(sslSocket, str, protocols);
-        }
-    }
 
-    @Override // lu.h
-    public String h(SSLSocket sslSocket) {
-        Object obj;
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        Iterator it = this.f36797d.iterator();
-        while (true) {
-            if (it.hasNext()) {
-                obj = it.next();
-                if (((k) obj).b(sslSocket)) {
-                    break;
+            @Override // lu.a
+            public boolean b(File file) {
+                Intrinsics.checkNotNullParameter(file, "file");
+                return file.exists();
+            }
+
+            @Override // lu.a
+            public Sink c(File file) {
+                Intrinsics.checkNotNullParameter(file, "file");
+                try {
+                    return x.a(file);
+                } catch (FileNotFoundException unused) {
+                    file.getParentFile().mkdirs();
+                    return x.a(file);
                 }
-            } else {
-                obj = null;
-                break;
+            }
+
+            @Override // lu.a
+            public long d(File file) {
+                Intrinsics.checkNotNullParameter(file, "file");
+                return file.length();
+            }
+
+            @Override // lu.a
+            public Source e(File file) {
+                Intrinsics.checkNotNullParameter(file, "file");
+                return x.j(file);
+            }
+
+            @Override // lu.a
+            public Sink f(File file) {
+                Sink g10;
+                Sink g11;
+                Intrinsics.checkNotNullParameter(file, "file");
+                try {
+                    g11 = y.g(file, false, 1, null);
+                    return g11;
+                } catch (FileNotFoundException unused) {
+                    file.getParentFile().mkdirs();
+                    g10 = y.g(file, false, 1, null);
+                    return g10;
+                }
+            }
+
+            @Override // lu.a
+            public void g(File from, File to2) {
+                Intrinsics.checkNotNullParameter(from, "from");
+                Intrinsics.checkNotNullParameter(to2, "to");
+                h(to2);
+                if (from.renameTo(to2)) {
+                    return;
+                }
+                throw new IOException("failed to rename " + from + " to " + to2);
+            }
+
+            @Override // lu.a
+            public void h(File file) {
+                Intrinsics.checkNotNullParameter(file, "file");
+                if (!file.delete() && file.exists()) {
+                    throw new IOException("failed to delete " + file);
+                }
+            }
+
+            public String toString() {
+                return "FileSystem.SYSTEM";
             }
         }
-        k kVar = (k) obj;
-        if (kVar == null) {
-            return null;
+
+        private C0520a() {
         }
-        return kVar.c(sslSocket);
     }
 
-    @Override // lu.h
-    public boolean j(String hostname) {
-        Intrinsics.checkNotNullParameter(hostname, "hostname");
-        return NetworkSecurityPolicy.getInstance().isCleartextTrafficPermitted(hostname);
-    }
+    void a(File file);
+
+    boolean b(File file);
+
+    Sink c(File file);
+
+    long d(File file);
+
+    Source e(File file);
+
+    Sink f(File file);
+
+    void g(File file, File file2);
+
+    void h(File file);
 }

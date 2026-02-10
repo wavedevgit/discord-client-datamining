@@ -62,7 +62,7 @@ public final class ChatLoadingView extends ChatListConstraintLayout {
         button4.setTextColor(i10);
         Button button5 = this.binding.button;
         Intrinsics.checkNotNullExpressionValue(button5, "button");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button5, false, new View.OnClickListener() { // from class: v6.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button5, false, new View.OnClickListener() { // from class: w6.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 Function0.this.invoke();

@@ -1,120 +1,153 @@
 package rb;
 
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
-import android.text.style.ReplacementSpan;
+import com.facebook.systrace.TraceListener;
+import kotlin.enums.EnumEntries;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a extends ReplacementSpan {
+public final class a {
 
-    /* renamed from: d  reason: collision with root package name */
-    protected int f48765d;
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f47748a = new a();
 
-    /* renamed from: e  reason: collision with root package name */
-    protected int f48766e;
+    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* renamed from: rb.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class EnumC0653a {
 
-    /* renamed from: i  reason: collision with root package name */
-    private Rect f48767i;
+        /* renamed from: e  reason: collision with root package name */
+        public static final EnumC0653a f47749e = new EnumC0653a("THREAD", 0, 't');
 
-    /* renamed from: o  reason: collision with root package name */
-    private final int f48768o;
+        /* renamed from: i  reason: collision with root package name */
+        public static final EnumC0653a f47750i = new EnumC0653a("PROCESS", 1, 'p');
 
-    /* renamed from: p  reason: collision with root package name */
-    private final Paint.FontMetricsInt f48769p;
+        /* renamed from: o  reason: collision with root package name */
+        public static final EnumC0653a f47751o = new EnumC0653a("GLOBAL", 2, 'g');
 
-    /* renamed from: q  reason: collision with root package name */
-    private final Drawable f48770q;
+        /* renamed from: p  reason: collision with root package name */
+        private static final /* synthetic */ EnumC0653a[] f47752p;
 
-    /* renamed from: r  reason: collision with root package name */
-    private final Rect f48771r;
+        /* renamed from: q  reason: collision with root package name */
+        private static final /* synthetic */ EnumEntries f47753q;
 
-    public a(Drawable drawable, int i10) {
-        this(drawable, i10, new Rect());
-    }
+        /* renamed from: d  reason: collision with root package name */
+        private final char f47754d;
 
-    protected int a(Paint.FontMetricsInt fontMetricsInt) {
-        int i10;
-        int c10 = c(fontMetricsInt.ascent, fontMetricsInt.descent);
-        int i11 = this.f48766e + c10;
-        if (this.f48768o == 2) {
-            Rect rect = this.f48771r;
-            i10 = c10 - rect.top;
-            i11 += rect.bottom;
-        } else {
-            i10 = c10 - this.f48771r.top;
+        static {
+            EnumC0653a[] a10 = a();
+            f47752p = a10;
+            f47753q = yr.a.a(a10);
         }
-        e(fontMetricsInt, i10, i11);
-        return this.f48765d;
+
+        private EnumC0653a(String str, int i10, char c10) {
+            this.f47754d = c10;
+        }
+
+        private static final /* synthetic */ EnumC0653a[] a() {
+            return new EnumC0653a[]{f47749e, f47750i, f47751o};
+        }
+
+        public static EnumC0653a valueOf(String str) {
+            return (EnumC0653a) Enum.valueOf(EnumC0653a.class, str);
+        }
+
+        public static EnumC0653a[] values() {
+            return (EnumC0653a[]) f47752p.clone();
+        }
     }
 
-    protected int b(int i10, int i11, int i12, int i13, int i14) {
-        Paint.FontMetricsInt fontMetricsInt = this.f48769p;
-        return i10 + c(fontMetricsInt.ascent, fontMetricsInt.descent);
+    private a() {
     }
 
-    protected int c(int i10, int i11) {
-        int i12 = this.f48768o;
-        if (i12 != 0) {
-            if (i12 != 2) {
-                return (-this.f48766e) - this.f48771r.bottom;
+    public static final void a(long j10, String sectionName, int i10) {
+        Intrinsics.checkNotNullParameter(sectionName, "sectionName");
+        c4.a.a(sectionName, i10);
+    }
+
+    public static final void b(long j10, String sectionName, int i10, long j11) {
+        Intrinsics.checkNotNullParameter(sectionName, "sectionName");
+        a(j10, sectionName, i10);
+    }
+
+    public static final void c(long j10, String sectionName) {
+        Intrinsics.checkNotNullParameter(sectionName, "sectionName");
+        c4.a.c(sectionName);
+    }
+
+    public static final void d(long j10, String sectionName, String[] args, int i10) {
+        Intrinsics.checkNotNullParameter(sectionName, "sectionName");
+        Intrinsics.checkNotNullParameter(args, "args");
+        String e10 = f47748a.e(args, i10);
+        c4.a.c(sectionName + "|" + e10);
+    }
+
+    private final String e(String[] strArr, int i10) {
+        StringBuilder sb2 = new StringBuilder();
+        for (int i11 = 1; i11 < i10; i11 += 2) {
+            String str = strArr[i11 - 1];
+            String str2 = strArr[i11];
+            sb2.append(str);
+            sb2.append('=');
+            sb2.append(str2);
+            if (i11 < i10 - 1) {
+                sb2.append(';');
             }
-            Rect rect = this.f48771r;
-            int i13 = rect.bottom;
-            return (i10 + (((((i11 - i10) + rect.top) + i13) - this.f48766e) / 2)) - i13;
         }
-        return (i11 - this.f48766e) - this.f48771r.bottom;
+        String sb3 = sb2.toString();
+        Intrinsics.checkNotNullExpressionValue(sb3, "toString(...)");
+        return sb3;
     }
 
-    public void d() {
-        Rect bounds = this.f48770q.getBounds();
-        this.f48767i = bounds;
-        int width = bounds.width();
-        Rect rect = this.f48771r;
-        this.f48765d = width + rect.left + rect.right;
-        this.f48766e = this.f48767i.height();
+    public static final void f(long j10, String sectionName, int i10) {
+        Intrinsics.checkNotNullParameter(sectionName, "sectionName");
+        g(j10, sectionName, i10);
     }
 
-    @Override // android.text.style.ReplacementSpan
-    public void draw(Canvas canvas, CharSequence charSequence, int i10, int i11, float f10, int i12, int i13, int i14, Paint paint) {
-        paint.getFontMetricsInt(this.f48769p);
-        Paint.FontMetricsInt fontMetricsInt = this.f48769p;
-        int b10 = b(i13, fontMetricsInt.ascent, fontMetricsInt.descent, i12, i14);
-        float f11 = f10 + this.f48771r.left;
-        canvas.translate(f11, b10);
-        this.f48770q.draw(canvas);
-        canvas.translate(-f11, -b10);
+    public static final void g(long j10, String sectionName, int i10) {
+        Intrinsics.checkNotNullParameter(sectionName, "sectionName");
+        c4.a.d(sectionName, i10);
     }
 
-    protected void e(Paint.FontMetricsInt fontMetricsInt, int i10, int i11) {
-        if (i10 < fontMetricsInt.ascent) {
-            fontMetricsInt.ascent = i10;
-        }
-        if (i10 < fontMetricsInt.top) {
-            fontMetricsInt.top = i10;
-        }
-        if (i11 > fontMetricsInt.descent) {
-            fontMetricsInt.descent = i11;
-        }
-        if (i11 > fontMetricsInt.bottom) {
-            fontMetricsInt.bottom = i11;
+    public static final void h(long j10, String sectionName, int i10, long j11) {
+        Intrinsics.checkNotNullParameter(sectionName, "sectionName");
+        g(j10, sectionName, i10);
+    }
+
+    public static final void i(long j10) {
+        c4.a.f();
+    }
+
+    public static final boolean j(long j10) {
+        return false;
+    }
+
+    public static final void l(long j10, String sectionName, int i10) {
+        Intrinsics.checkNotNullParameter(sectionName, "sectionName");
+        a(j10, sectionName, i10);
+    }
+
+    public static final void m(long j10, String counterName, int i10) {
+        Intrinsics.checkNotNullParameter(counterName, "counterName");
+        c4.a.j(counterName, i10);
+    }
+
+    public static final void o(long j10, String sectionName, Runnable block) {
+        Intrinsics.checkNotNullParameter(sectionName, "sectionName");
+        Intrinsics.checkNotNullParameter(block, "block");
+        c(j10, sectionName);
+        try {
+            block.run();
+        } finally {
+            i(j10);
         }
     }
 
-    @Override // android.text.style.ReplacementSpan
-    public int getSize(Paint paint, CharSequence charSequence, int i10, int i11, Paint.FontMetricsInt fontMetricsInt) {
-        d();
-        if (fontMetricsInt == null) {
-            return this.f48765d;
-        }
-        return a(fontMetricsInt);
+    public static final void k(TraceListener traceListener) {
     }
 
-    public a(Drawable drawable, int i10, Rect rect) {
-        this.f48769p = new Paint.FontMetricsInt();
-        this.f48770q = drawable;
-        this.f48768o = i10;
-        this.f48771r = rect;
-        d();
+    public static final void p(TraceListener traceListener) {
+    }
+
+    public static final void n(long j10, String str, EnumC0653a enumC0653a) {
     }
 }

@@ -44,7 +44,7 @@ public final class ShadowNodeRegistry {
             if (this.thread == null) {
                 this.thread = currentThread;
             }
-            db.a.a(Intrinsics.areEqual(this.thread, currentThread));
+            eb.a.a(Intrinsics.areEqual(this.thread, currentThread));
         }
     }
 

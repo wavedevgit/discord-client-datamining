@@ -18,6 +18,6 @@ public abstract class NativeReanimatedModuleSpec extends ReactContextBaseJavaMod
     }
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract boolean installTurboModule();
 }

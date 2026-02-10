@@ -16,53 +16,53 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import ke.l;
-import ke.m;
-import ke.o;
-import ni.s;
-import qd.u0;
+import le.l;
+import le.m;
+import le.o;
+import oi.s;
+import rd.u0;
 @Deprecated
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class TrackSelectionView extends LinearLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f13197d;
+    private final int f13337d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final LayoutInflater f13198e;
+    private final LayoutInflater f13338e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CheckedTextView f13199i;
+    private final CheckedTextView f13339i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final CheckedTextView f13200o;
+    private final CheckedTextView f13340o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final b f13201p;
+    private final b f13341p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f13202q;
+    private final List f13342q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Map f13203r;
+    private final Map f13343r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f13204s;
+    private boolean f13344s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f13205t;
+    private boolean f13345t;
 
     /* renamed from: u  reason: collision with root package name */
-    private o f13206u;
+    private o f13346u;
 
     /* renamed from: v  reason: collision with root package name */
-    private CheckedTextView[][] f13207v;
+    private CheckedTextView[][] f13347v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f13208w;
+    private boolean f13348w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Comparator f13209x;
+    private Comparator f13349x;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -81,18 +81,18 @@ public class TrackSelectionView extends LinearLayout {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Tracks.a f13211a;
+        public final Tracks.a f13351a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f13212b;
+        public final int f13352b;
 
         public c(Tracks.a aVar, int i10) {
-            this.f13211a = aVar;
-            this.f13212b = i10;
+            this.f13351a = aVar;
+            this.f13352b = i10;
         }
 
         public Format a() {
-            return this.f13211a.c(this.f13212b);
+            return this.f13351a.c(this.f13352b);
         }
     }
 
@@ -103,9 +103,9 @@ public class TrackSelectionView extends LinearLayout {
     public static Map b(Map map, List list, boolean z10) {
         HashMap hashMap = new HashMap();
         for (int i10 = 0; i10 < list.size(); i10++) {
-            je.o oVar = (je.o) map.get(((Tracks.a) list.get(i10)).b());
+            ke.o oVar = (ke.o) map.get(((Tracks.a) list.get(i10)).b());
             if (oVar != null && (z10 || hashMap.isEmpty())) {
-                hashMap.put(oVar.f29909d, oVar);
+                hashMap.put(oVar.f30860d, oVar);
             }
         }
         return hashMap;
@@ -113,9 +113,9 @@ public class TrackSelectionView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c(View view) {
-        if (view == this.f13199i) {
+        if (view == this.f13339i) {
             e();
-        } else if (view == this.f13200o) {
+        } else if (view == this.f13340o) {
             d();
         } else {
             f(view);
@@ -124,59 +124,59 @@ public class TrackSelectionView extends LinearLayout {
     }
 
     private void d() {
-        this.f13208w = false;
-        this.f13203r.clear();
+        this.f13348w = false;
+        this.f13343r.clear();
     }
 
     private void e() {
-        this.f13208w = true;
-        this.f13203r.clear();
+        this.f13348w = true;
+        this.f13343r.clear();
     }
 
     private void f(View view) {
         boolean z10 = false;
-        this.f13208w = false;
-        c cVar = (c) ne.a.e(view.getTag());
-        u0 b10 = cVar.f13211a.b();
-        int i10 = cVar.f13212b;
-        je.o oVar = (je.o) this.f13203r.get(b10);
+        this.f13348w = false;
+        c cVar = (c) oe.a.e(view.getTag());
+        u0 b10 = cVar.f13351a.b();
+        int i10 = cVar.f13352b;
+        ke.o oVar = (ke.o) this.f13343r.get(b10);
         if (oVar == null) {
-            if (!this.f13205t && this.f13203r.size() > 0) {
-                this.f13203r.clear();
+            if (!this.f13345t && this.f13343r.size() > 0) {
+                this.f13343r.clear();
             }
-            this.f13203r.put(b10, new je.o(b10, s.u(Integer.valueOf(i10))));
+            this.f13343r.put(b10, new ke.o(b10, s.u(Integer.valueOf(i10))));
             return;
         }
-        ArrayList arrayList = new ArrayList(oVar.f29910e);
+        ArrayList arrayList = new ArrayList(oVar.f30861e);
         boolean isChecked = ((CheckedTextView) view).isChecked();
-        boolean g10 = g(cVar.f13211a);
+        boolean g10 = g(cVar.f13351a);
         z10 = (g10 || h()) ? true : true;
         if (isChecked && z10) {
             arrayList.remove(Integer.valueOf(i10));
             if (arrayList.isEmpty()) {
-                this.f13203r.remove(b10);
+                this.f13343r.remove(b10);
             } else {
-                this.f13203r.put(b10, new je.o(b10, arrayList));
+                this.f13343r.put(b10, new ke.o(b10, arrayList));
             }
         } else if (!isChecked) {
             if (g10) {
                 arrayList.add(Integer.valueOf(i10));
-                this.f13203r.put(b10, new je.o(b10, arrayList));
+                this.f13343r.put(b10, new ke.o(b10, arrayList));
                 return;
             }
-            this.f13203r.put(b10, new je.o(b10, s.u(Integer.valueOf(i10))));
+            this.f13343r.put(b10, new ke.o(b10, s.u(Integer.valueOf(i10))));
         }
     }
 
     private boolean g(Tracks.a aVar) {
-        if (this.f13204s && aVar.e()) {
+        if (this.f13344s && aVar.e()) {
             return true;
         }
         return false;
     }
 
     private boolean h() {
-        if (this.f13205t && this.f13202q.size() > 1) {
+        if (this.f13345t && this.f13342q.size() > 1) {
             return true;
         }
         return false;
@@ -184,22 +184,22 @@ public class TrackSelectionView extends LinearLayout {
 
     private void i() {
         boolean z10;
-        this.f13199i.setChecked(this.f13208w);
-        CheckedTextView checkedTextView = this.f13200o;
-        if (!this.f13208w && this.f13203r.size() == 0) {
+        this.f13339i.setChecked(this.f13348w);
+        CheckedTextView checkedTextView = this.f13340o;
+        if (!this.f13348w && this.f13343r.size() == 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         checkedTextView.setChecked(z10);
-        for (int i10 = 0; i10 < this.f13207v.length; i10++) {
-            je.o oVar = (je.o) this.f13203r.get(((Tracks.a) this.f13202q.get(i10)).b());
+        for (int i10 = 0; i10 < this.f13347v.length; i10++) {
+            ke.o oVar = (ke.o) this.f13343r.get(((Tracks.a) this.f13342q.get(i10)).b());
             int i11 = 0;
             while (true) {
-                CheckedTextView[] checkedTextViewArr = this.f13207v[i10];
+                CheckedTextView[] checkedTextViewArr = this.f13347v[i10];
                 if (i11 < checkedTextViewArr.length) {
                     if (oVar != null) {
-                        this.f13207v[i10][i11].setChecked(oVar.f29910e.contains(Integer.valueOf(((c) ne.a.e(checkedTextViewArr[i11].getTag())).f13212b)));
+                        this.f13347v[i10][i11].setChecked(oVar.f30861e.contains(Integer.valueOf(((c) oe.a.e(checkedTextViewArr[i11].getTag())).f13352b)));
                     } else {
                         checkedTextViewArr[i11].setChecked(false);
                     }
@@ -214,50 +214,50 @@ public class TrackSelectionView extends LinearLayout {
         for (int childCount = getChildCount() - 1; childCount >= 3; childCount--) {
             removeViewAt(childCount);
         }
-        if (this.f13202q.isEmpty()) {
-            this.f13199i.setEnabled(false);
-            this.f13200o.setEnabled(false);
+        if (this.f13342q.isEmpty()) {
+            this.f13339i.setEnabled(false);
+            this.f13340o.setEnabled(false);
             return;
         }
-        this.f13199i.setEnabled(true);
-        this.f13200o.setEnabled(true);
-        this.f13207v = new CheckedTextView[this.f13202q.size()];
+        this.f13339i.setEnabled(true);
+        this.f13340o.setEnabled(true);
+        this.f13347v = new CheckedTextView[this.f13342q.size()];
         boolean h10 = h();
-        for (int i11 = 0; i11 < this.f13202q.size(); i11++) {
-            Tracks.a aVar = (Tracks.a) this.f13202q.get(i11);
+        for (int i11 = 0; i11 < this.f13342q.size(); i11++) {
+            Tracks.a aVar = (Tracks.a) this.f13342q.get(i11);
             boolean g10 = g(aVar);
-            CheckedTextView[][] checkedTextViewArr = this.f13207v;
-            int i12 = aVar.f11910d;
+            CheckedTextView[][] checkedTextViewArr = this.f13347v;
+            int i12 = aVar.f12050d;
             checkedTextViewArr[i11] = new CheckedTextView[i12];
             c[] cVarArr = new c[i12];
-            for (int i13 = 0; i13 < aVar.f11910d; i13++) {
+            for (int i13 = 0; i13 < aVar.f12050d; i13++) {
                 cVarArr[i13] = new c(aVar, i13);
             }
-            Comparator comparator = this.f13209x;
+            Comparator comparator = this.f13349x;
             if (comparator != null) {
                 Arrays.sort(cVarArr, comparator);
             }
             for (int i14 = 0; i14 < i12; i14++) {
                 if (i14 == 0) {
-                    addView(this.f13198e.inflate(l.f31643a, (ViewGroup) this, false));
+                    addView(this.f13338e.inflate(l.f35863a, (ViewGroup) this, false));
                 }
                 if (!g10 && !h10) {
                     i10 = 17367055;
                 } else {
                     i10 = 17367056;
                 }
-                CheckedTextView checkedTextView = (CheckedTextView) this.f13198e.inflate(i10, (ViewGroup) this, false);
-                checkedTextView.setBackgroundResource(this.f13197d);
-                checkedTextView.setText(this.f13206u.a(cVarArr[i14].a()));
+                CheckedTextView checkedTextView = (CheckedTextView) this.f13338e.inflate(i10, (ViewGroup) this, false);
+                checkedTextView.setBackgroundResource(this.f13337d);
+                checkedTextView.setText(this.f13346u.a(cVarArr[i14].a()));
                 checkedTextView.setTag(cVarArr[i14]);
                 if (aVar.h(i14)) {
                     checkedTextView.setFocusable(true);
-                    checkedTextView.setOnClickListener(this.f13201p);
+                    checkedTextView.setOnClickListener(this.f13341p);
                 } else {
                     checkedTextView.setFocusable(false);
                     checkedTextView.setEnabled(false);
                 }
-                this.f13207v[i11][i14] = checkedTextView;
+                this.f13347v[i11][i14] = checkedTextView;
                 addView(checkedTextView);
             }
         }
@@ -265,27 +265,27 @@ public class TrackSelectionView extends LinearLayout {
     }
 
     public boolean getIsDisabled() {
-        return this.f13208w;
+        return this.f13348w;
     }
 
-    public Map<u0, je.o> getOverrides() {
-        return this.f13203r;
+    public Map<u0, ke.o> getOverrides() {
+        return this.f13343r;
     }
 
     public void setAllowAdaptiveSelections(boolean z10) {
-        if (this.f13204s != z10) {
-            this.f13204s = z10;
+        if (this.f13344s != z10) {
+            this.f13344s = z10;
             j();
         }
     }
 
     public void setAllowMultipleOverrides(boolean z10) {
-        if (this.f13205t != z10) {
-            this.f13205t = z10;
-            if (!z10 && this.f13203r.size() > 1) {
-                Map b10 = b(this.f13203r, this.f13202q, false);
-                this.f13203r.clear();
-                this.f13203r.putAll(b10);
+        if (this.f13345t != z10) {
+            this.f13345t = z10;
+            if (!z10 && this.f13343r.size() > 1) {
+                Map b10 = b(this.f13343r, this.f13342q, false);
+                this.f13343r.clear();
+                this.f13343r.putAll(b10);
             }
             j();
         }
@@ -293,7 +293,7 @@ public class TrackSelectionView extends LinearLayout {
 
     public void setShowDisableOption(boolean z10) {
         int i10;
-        CheckedTextView checkedTextView = this.f13199i;
+        CheckedTextView checkedTextView = this.f13339i;
         if (z10) {
             i10 = 0;
         } else {
@@ -303,7 +303,7 @@ public class TrackSelectionView extends LinearLayout {
     }
 
     public void setTrackNameProvider(o oVar) {
-        this.f13206u = (o) ne.a.e(oVar);
+        this.f13346u = (o) oe.a.e(oVar);
         j();
     }
 
@@ -313,29 +313,29 @@ public class TrackSelectionView extends LinearLayout {
         setSaveFromParentEnabled(false);
         TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(new int[]{16843534});
         int resourceId = obtainStyledAttributes.getResourceId(0, 0);
-        this.f13197d = resourceId;
+        this.f13337d = resourceId;
         obtainStyledAttributes.recycle();
         LayoutInflater from = LayoutInflater.from(context);
-        this.f13198e = from;
+        this.f13338e = from;
         b bVar = new b();
-        this.f13201p = bVar;
-        this.f13206u = new ke.e(getResources());
-        this.f13202q = new ArrayList();
-        this.f13203r = new HashMap();
+        this.f13341p = bVar;
+        this.f13346u = new le.e(getResources());
+        this.f13342q = new ArrayList();
+        this.f13343r = new HashMap();
         CheckedTextView checkedTextView = (CheckedTextView) from.inflate(17367055, (ViewGroup) this, false);
-        this.f13199i = checkedTextView;
+        this.f13339i = checkedTextView;
         checkedTextView.setBackgroundResource(resourceId);
-        checkedTextView.setText(m.f31662q);
+        checkedTextView.setText(m.f35882q);
         checkedTextView.setEnabled(false);
         checkedTextView.setFocusable(true);
         checkedTextView.setOnClickListener(bVar);
         checkedTextView.setVisibility(8);
         addView(checkedTextView);
-        addView(from.inflate(l.f31643a, (ViewGroup) this, false));
+        addView(from.inflate(l.f35863a, (ViewGroup) this, false));
         CheckedTextView checkedTextView2 = (CheckedTextView) from.inflate(17367055, (ViewGroup) this, false);
-        this.f13200o = checkedTextView2;
+        this.f13340o = checkedTextView2;
         checkedTextView2.setBackgroundResource(resourceId);
-        checkedTextView2.setText(m.f31661p);
+        checkedTextView2.setText(m.f35881p);
         checkedTextView2.setEnabled(false);
         checkedTextView2.setFocusable(true);
         checkedTextView2.setOnClickListener(bVar);

@@ -13,23 +13,23 @@ import com.google.android.gms.internal.play_billing.v5;
 public final class v implements t {
 
     /* renamed from: b  reason: collision with root package name */
-    private l5 f8028b;
+    private l5 f8168b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w f8029c;
+    private final w f8169c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v(Context context, l5 l5Var) {
-        this.f8029c = new w(context);
-        this.f8028b = l5Var;
+        this.f8169c = new w(context);
+        this.f8168b = l5Var;
     }
 
     @Override // com.android.billingclient.api.t
     public final void a(v4 v4Var, int i10) {
         try {
-            k5 k5Var = (k5) this.f8028b.h();
+            k5 k5Var = (k5) this.f8168b.h();
             k5Var.l(i10);
-            this.f8028b = (l5) k5Var.f();
+            this.f8168b = (l5) k5Var.f();
             b(v4Var);
         } catch (Throwable th2) {
             com.google.android.gms.internal.play_billing.a0.j("BillingLogger", "Unable to log.", th2);
@@ -43,9 +43,9 @@ public final class v implements t {
         }
         try {
             u5 F = v5.F();
-            F.o(this.f8028b);
+            F.o(this.f8168b);
             F.m(v4Var);
-            this.f8029c.a((v5) F.f());
+            this.f8169c.a((v5) F.f());
         } catch (Throwable th2) {
             com.google.android.gms.internal.play_billing.a0.j("BillingLogger", "Unable to log.", th2);
         }
@@ -58,9 +58,9 @@ public final class v implements t {
         }
         try {
             u5 F = v5.F();
-            F.o(this.f8028b);
+            F.o(this.f8168b);
             F.q(c6Var);
-            this.f8029c.a((v5) F.f());
+            this.f8169c.a((v5) F.f());
         } catch (Throwable th2) {
             com.google.android.gms.internal.play_billing.a0.j("BillingLogger", "Unable to log.", th2);
         }
@@ -69,9 +69,9 @@ public final class v implements t {
     @Override // com.android.billingclient.api.t
     public final void d(r4 r4Var, int i10) {
         try {
-            k5 k5Var = (k5) this.f8028b.h();
+            k5 k5Var = (k5) this.f8168b.h();
             k5Var.l(i10);
-            this.f8028b = (l5) k5Var.f();
+            this.f8168b = (l5) k5Var.f();
             e(r4Var);
         } catch (Throwable th2) {
             com.google.android.gms.internal.play_billing.a0.j("BillingLogger", "Unable to log.", th2);
@@ -85,9 +85,9 @@ public final class v implements t {
         }
         try {
             u5 F = v5.F();
-            F.o(this.f8028b);
+            F.o(this.f8168b);
             F.l(r4Var);
-            this.f8029c.a((v5) F.f());
+            this.f8169c.a((v5) F.f());
         } catch (Throwable th2) {
             com.google.android.gms.internal.play_billing.a0.j("BillingLogger", "Unable to log.", th2);
         }

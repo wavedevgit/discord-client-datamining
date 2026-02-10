@@ -1,48 +1,131 @@
 package v5;
 
-import android.graphics.Color;
-import w5.c;
+import android.util.Pair;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class g implements n0 {
+public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f52238a = new g();
+    private final e f52151a;
 
-    private g() {
+    public g(e eVar) {
+        this.f52151a = eVar;
     }
 
-    @Override // v5.n0
-    /* renamed from: b */
-    public Integer a(w5.c cVar, float f10) {
-        boolean z10;
-        double d10;
-        if (cVar.m() == c.b.BEGIN_ARRAY) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
+    private static String b(String str, c cVar, boolean z10) {
+        String str2;
         if (z10) {
-            cVar.x();
-        }
-        double nextDouble = cVar.nextDouble();
-        double nextDouble2 = cVar.nextDouble();
-        double nextDouble3 = cVar.nextDouble();
-        if (cVar.m() == c.b.NUMBER) {
-            d10 = cVar.nextDouble();
+            str2 = cVar.d();
         } else {
-            d10 = 1.0d;
+            str2 = cVar.f52150d;
         }
-        if (z10) {
-            cVar.v();
+        String replaceAll = str.replaceAll("\\W+", "");
+        int length = 242 - str2.length();
+        if (replaceAll.length() > length) {
+            replaceAll = d(replaceAll, length);
         }
-        if (nextDouble <= 1.0d && nextDouble2 <= 1.0d && nextDouble3 <= 1.0d) {
-            nextDouble *= 255.0d;
-            nextDouble2 *= 255.0d;
-            nextDouble3 *= 255.0d;
-            if (d10 <= 1.0d) {
-                d10 *= 255.0d;
+        return "lottie_cache_" + replaceAll + str2;
+    }
+
+    private File c(String str) {
+        File file = new File(e(), b(str, c.JSON, false));
+        if (file.exists()) {
+            return file;
+        }
+        File file2 = new File(e(), b(str, c.ZIP, false));
+        if (file2.exists()) {
+            return file2;
+        }
+        File file3 = new File(e(), b(str, c.GZIP, false));
+        if (file3.exists()) {
+            return file3;
+        }
+        return null;
+    }
+
+    private static String d(String str, int i10) {
+        try {
+            byte[] digest = MessageDigest.getInstance("MD5").digest(str.getBytes());
+            StringBuilder sb2 = new StringBuilder();
+            for (byte b10 : digest) {
+                sb2.append(String.format("%02x", Byte.valueOf(b10)));
             }
+            return sb2.toString();
+        } catch (NoSuchAlgorithmException unused) {
+            return str.substring(0, i10);
         }
-        return Integer.valueOf(Color.argb((int) d10, (int) nextDouble, (int) nextDouble2, (int) nextDouble3));
+    }
+
+    private File e() {
+        File a10 = this.f52151a.a();
+        if (a10.isFile()) {
+            a10.delete();
+        }
+        if (!a10.exists()) {
+            a10.mkdirs();
+        }
+        return a10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public Pair a(String str) {
+        c cVar;
+        try {
+            File c10 = c(str);
+            if (c10 == null) {
+                return null;
+            }
+            FileInputStream fileInputStream = new FileInputStream(c10);
+            if (c10.getAbsolutePath().endsWith(".zip")) {
+                cVar = c.ZIP;
+            } else if (c10.getAbsolutePath().endsWith(".gz")) {
+                cVar = c.GZIP;
+            } else {
+                cVar = c.JSON;
+            }
+            y5.d.a("Cache hit for " + str + " at " + c10.getAbsolutePath());
+            return new Pair(cVar, fileInputStream);
+        } catch (FileNotFoundException unused) {
+            return null;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void f(String str, c cVar) {
+        File file = new File(e(), b(str, cVar, true));
+        File file2 = new File(file.getAbsolutePath().replace(".temp", ""));
+        boolean renameTo = file.renameTo(file2);
+        y5.d.a("Copying temp file to real file (" + file2 + ")");
+        if (!renameTo) {
+            y5.d.c("Unable to rename cache file " + file.getAbsolutePath() + " to " + file2.getAbsolutePath() + ".");
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public File g(String str, InputStream inputStream, c cVar) {
+        File file = new File(e(), b(str, cVar, true));
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            byte[] bArr = new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
+            while (true) {
+                int read = inputStream.read(bArr);
+                if (read != -1) {
+                    fileOutputStream.write(bArr, 0, read);
+                } else {
+                    fileOutputStream.flush();
+                    fileOutputStream.close();
+                    return file;
+                }
+            }
+        } finally {
+            inputStream.close();
+        }
     }
 }

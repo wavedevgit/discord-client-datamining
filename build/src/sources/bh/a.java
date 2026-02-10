@@ -1,41 +1,16 @@
 package bh;
-
-import android.animation.TimeInterpolator;
-import android.view.animation.DecelerateInterpolator;
-import android.view.animation.LinearInterpolator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final TimeInterpolator f6754a = new LinearInterpolator();
+    public static int f6613a = 2130837536;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final TimeInterpolator f6755b = new h3.b();
+    public static int f6614b = 2130837537;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final TimeInterpolator f6756c = new h3.a();
+    public static int f6615c = 2130837538;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final TimeInterpolator f6757d = new h3.c();
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final TimeInterpolator f6758e = new DecelerateInterpolator();
-
-    public static float a(float f10, float f11, float f12) {
-        return f10 + (f12 * (f11 - f10));
-    }
-
-    public static float b(float f10, float f11, float f12, float f13, float f14) {
-        if (f14 <= f12) {
-            return f10;
-        }
-        if (f14 >= f13) {
-            return f11;
-        }
-        return a(f10, f11, (f14 - f12) / (f13 - f12));
-    }
-
-    public static int c(int i10, int i11, float f10) {
-        return i10 + Math.round(f10 * (i11 - i10));
-    }
+    public static int f6616d = 2130837539;
 }

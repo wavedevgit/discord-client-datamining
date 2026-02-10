@@ -1,30 +1,24 @@
 package xf;
-
-import android.os.Parcel;
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class l implements Parcelable.Creator {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void c(k kVar, Parcel parcel, int i10) {
-        hf.c.b(parcel, hf.c.a(parcel));
+public enum l implements a {
+    ED256(-260),
+    ED512(-261),
+    ED25519(-8),
+    ES256(-7),
+    ECDH_HKDF_256(-25),
+    ES384(-35),
+    ES512(-36);
+    
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f54938d;
+
+    l(int i10) {
+        this.f54938d = i10;
     }
 
-    @Override // android.os.Parcelable.Creator
-    /* renamed from: a */
-    public k createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            hf.b.l(r10);
-            hf.b.z(parcel, r10);
-        }
-        hf.b.k(parcel, A);
-        return new k();
-    }
-
-    @Override // android.os.Parcelable.Creator
-    /* renamed from: b */
-    public k[] newArray(int i10) {
-        return new k[i10];
+    @Override // xf.a
+    public int a() {
+        return this.f54938d;
     }
 }

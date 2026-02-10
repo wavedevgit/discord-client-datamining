@@ -32,7 +32,7 @@ public final class ModuleSpec {
             ReactModule reactModule = (ReactModule) type.getAnnotation(ReactModule.class);
             if (reactModule == null) {
                 String name = type.getName();
-                p8.a.J(ModuleSpec.TAG, "Could not find @ReactModule annotation on " + name + ". Creating the module eagerly to get the name. Consider adding the annotation.");
+                q8.a.J(ModuleSpec.TAG, "Could not find @ReactModule annotation on " + name + ". Creating the module eagerly to get the name. Consider adding the annotation.");
                 Object obj = provider.get();
                 Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
                 return new ModuleSpec(provider, ((NativeModule) obj).getName(), null);

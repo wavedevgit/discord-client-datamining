@@ -14,15 +14,15 @@ import android.os.Parcelable;
 final class m3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f15893a;
+    private final Context f16033a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final NotificationManager f15894b;
+    private final NotificationManager f16034b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m3(Context context) {
-        this.f15893a = context;
-        this.f15894b = (NotificationManager) context.getSystemService("notification");
+        this.f16033a = context;
+        this.f16034b = (NotificationManager) context.getSystemService("notification");
     }
 
     private final synchronized void c(String str) {
@@ -30,8 +30,8 @@ final class m3 {
             str = "File downloads by Play";
         }
         try {
-            wh.f.a();
-            this.f15894b.createNotificationChannel(com.google.android.gms.common.e.a("playcore-assetpacks-service-notification-channel", str, 2));
+            xh.f.a();
+            this.f16034b.createNotificationChannel(com.google.android.gms.common.e.a("playcore-assetpacks-service-notification-channel", str, 2));
         } catch (Throwable th2) {
             throw th2;
         }
@@ -42,9 +42,9 @@ final class m3 {
         Notification.Builder timeoutAfter;
         PendingIntent activity;
         if (Build.VERSION.SDK_INT < 26) {
-            timeoutAfter = new Notification.Builder(this.f15893a).setPriority(-2);
+            timeoutAfter = new Notification.Builder(this.f16033a).setPriority(-2);
         } else {
-            timeoutAfter = wh.e.a(this.f15893a, "playcore-assetpacks-service-notification-channel").setTimeoutAfter(bundle.getLong("notification_timeout", 600000L));
+            timeoutAfter = xh.e.a(this.f16033a, "playcore-assetpacks-service-notification-channel").setTimeoutAfter(bundle.getLong("notification_timeout", 600000L));
         }
         Parcelable parcelable = bundle.getParcelable("notification_on_click_intent");
         if (parcelable instanceof PendingIntent) {
@@ -66,7 +66,7 @@ final class m3 {
                 intent.setData(Uri.parse(string3));
             }
             intent.putExtra("error_doc_id", bundle.getString("notification_intent_extra_error_dialog_document_id"));
-            activity = PendingIntent.getActivity(this.f15893a, 0, intent, 201326592);
+            activity = PendingIntent.getActivity(this.f16033a, 0, intent, 201326592);
         }
         if (activity != null) {
             timeoutAfter.setContentIntent(activity);

@@ -11,30 +11,30 @@ import java.util.concurrent.atomic.AtomicLong;
 public class b implements ThreadFactory {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ThreadFactory f16276e = Executors.defaultThreadFactory();
+    private static final ThreadFactory f16416e = Executors.defaultThreadFactory();
 
     /* renamed from: a  reason: collision with root package name */
-    private final AtomicLong f16277a = new AtomicLong();
+    private final AtomicLong f16417a = new AtomicLong();
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f16278b;
+    private final String f16418b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f16279c;
+    private final int f16419c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final StrictMode.ThreadPolicy f16280d;
+    private final StrictMode.ThreadPolicy f16420d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(String str, int i10, StrictMode.ThreadPolicy threadPolicy) {
-        this.f16278b = str;
-        this.f16279c = i10;
-        this.f16280d = threadPolicy;
+        this.f16418b = str;
+        this.f16419c = i10;
+        this.f16420d = threadPolicy;
     }
 
     public static /* synthetic */ void a(b bVar, Runnable runnable) {
-        Process.setThreadPriority(bVar.f16279c);
-        StrictMode.ThreadPolicy threadPolicy = bVar.f16280d;
+        Process.setThreadPriority(bVar.f16419c);
+        StrictMode.ThreadPolicy threadPolicy = bVar.f16420d;
         if (threadPolicy != null) {
             StrictMode.setThreadPolicy(threadPolicy);
         }
@@ -43,13 +43,13 @@ public class b implements ThreadFactory {
 
     @Override // java.util.concurrent.ThreadFactory
     public Thread newThread(final Runnable runnable) {
-        Thread newThread = f16276e.newThread(new Runnable() { // from class: com.google.firebase.concurrent.a
+        Thread newThread = f16416e.newThread(new Runnable() { // from class: com.google.firebase.concurrent.a
             @Override // java.lang.Runnable
             public final void run() {
                 b.a(b.this, runnable);
             }
         });
-        newThread.setName(String.format(Locale.ROOT, "%s Thread #%d", this.f16278b, Long.valueOf(this.f16277a.getAndIncrement())));
+        newThread.setName(String.format(Locale.ROOT, "%s Thread #%d", this.f16418b, Long.valueOf(this.f16417a.getAndIncrement())));
         return newThread;
     }
 }

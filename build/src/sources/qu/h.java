@@ -1,109 +1,197 @@
 package qu;
 
-import java.util.List;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import java.io.Closeable;
+import java.io.IOException;
+import java.util.Random;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Sink;
-import okio.Source;
-import qu.c0;
+import okio.Buffer;
+import okio.BufferedSink;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class h {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f48279a = new a(null);
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final h f48280b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final c0 f48281c;
+public final class h implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h f48282d;
+    private final boolean f47297d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: e  reason: collision with root package name */
+    private final BufferedSink f47298e;
 
-        private a() {
+    /* renamed from: i  reason: collision with root package name */
+    private final Random f47299i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final boolean f47300o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final boolean f47301p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private final long f47302q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private final Buffer f47303r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private final Buffer f47304s;
+
+    /* renamed from: t  reason: collision with root package name */
+    private boolean f47305t;
+
+    /* renamed from: u  reason: collision with root package name */
+    private a f47306u;
+
+    /* renamed from: v  reason: collision with root package name */
+    private final byte[] f47307v;
+
+    /* renamed from: w  reason: collision with root package name */
+    private final Buffer.a f47308w;
+
+    public h(boolean z10, BufferedSink sink, Random random, boolean z11, boolean z12, long j10) {
+        byte[] bArr;
+        Intrinsics.checkNotNullParameter(sink, "sink");
+        Intrinsics.checkNotNullParameter(random, "random");
+        this.f47297d = z10;
+        this.f47298e = sink;
+        this.f47299i = random;
+        this.f47300o = z11;
+        this.f47301p = z12;
+        this.f47302q = j10;
+        this.f47303r = new Buffer();
+        this.f47304s = sink.e();
+        if (z10) {
+            bArr = new byte[4];
+        } else {
+            bArr = null;
         }
+        this.f47307v = bArr;
+        this.f47308w = z10 ? new Buffer.a() : null;
     }
 
-    static {
-        h rVar;
+    private final void g(int i10, ByteString byteString) {
+        if (!this.f47305t) {
+            int G = byteString.G();
+            if (G <= 125) {
+                this.f47304s.writeByte(i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                if (this.f47297d) {
+                    this.f47304s.writeByte(G | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                    Random random = this.f47299i;
+                    byte[] bArr = this.f47307v;
+                    Intrinsics.checkNotNull(bArr);
+                    random.nextBytes(bArr);
+                    this.f47304s.write(this.f47307v);
+                    if (G > 0) {
+                        long size = this.f47304s.size();
+                        this.f47304s.Y1(byteString);
+                        Buffer buffer = this.f47304s;
+                        Buffer.a aVar = this.f47308w;
+                        Intrinsics.checkNotNull(aVar);
+                        buffer.O0(aVar);
+                        this.f47308w.m(size);
+                        f.f47281a.b(this.f47308w, this.f47307v);
+                        this.f47308w.close();
+                    }
+                } else {
+                    this.f47304s.writeByte(G);
+                    this.f47304s.Y1(byteString);
+                }
+                this.f47298e.flush();
+                return;
+            }
+            throw new IllegalArgumentException("Payload size must be less than or equal to 125");
+        }
+        throw new IOException("closed");
+    }
+
+    public final void a(int i10, ByteString byteString) {
+        ByteString byteString2 = ByteString.f42342p;
+        if (i10 != 0 || byteString != null) {
+            if (i10 != 0) {
+                f.f47281a.c(i10);
+            }
+            Buffer buffer = new Buffer();
+            buffer.writeShort(i10);
+            if (byteString != null) {
+                buffer.Y1(byteString);
+            }
+            byteString2 = buffer.I1();
+        }
         try {
-            Class.forName("java.nio.file.Files");
-            rVar = new w();
-        } catch (ClassNotFoundException unused) {
-            rVar = new r();
+            g(8, byteString2);
+        } finally {
+            this.f47305t = true;
         }
-        f48280b = rVar;
-        c0.a aVar = c0.f48236e;
-        String property = System.getProperty("java.io.tmpdir");
-        Intrinsics.checkNotNullExpressionValue(property, "getProperty(...)");
-        f48281c = c0.a.e(aVar, property, false, 1, null);
-        ClassLoader classLoader = ru.h.class.getClassLoader();
-        Intrinsics.checkNotNullExpressionValue(classLoader, "getClassLoader(...)");
-        f48282d = new ru.h(classLoader, false, null, 4, null);
     }
 
-    public final Sink a(c0 file) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        return b(file, false);
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        a aVar = this.f47306u;
+        if (aVar != null) {
+            aVar.close();
+        }
     }
 
-    public abstract Sink b(c0 c0Var, boolean z10);
-
-    public abstract void c(c0 c0Var, c0 c0Var2);
-
-    public final void d(c0 dir) {
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        e(dir, false);
+    public final void k(int i10, ByteString data) {
+        int i11;
+        Intrinsics.checkNotNullParameter(data, "data");
+        if (!this.f47305t) {
+            this.f47303r.Y1(data);
+            int i12 = i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            if (this.f47300o && data.G() >= this.f47302q) {
+                a aVar = this.f47306u;
+                if (aVar == null) {
+                    aVar = new a(this.f47301p);
+                    this.f47306u = aVar;
+                }
+                aVar.a(this.f47303r);
+                i12 = i10 | 192;
+            }
+            long size = this.f47303r.size();
+            this.f47304s.writeByte(i12);
+            if (this.f47297d) {
+                i11 = IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            } else {
+                i11 = 0;
+            }
+            if (size <= 125) {
+                this.f47304s.writeByte(i11 | ((int) size));
+            } else if (size <= 65535) {
+                this.f47304s.writeByte(i11 | 126);
+                this.f47304s.writeShort((int) size);
+            } else {
+                this.f47304s.writeByte(i11 | 127);
+                this.f47304s.a2(size);
+            }
+            if (this.f47297d) {
+                Random random = this.f47299i;
+                byte[] bArr = this.f47307v;
+                Intrinsics.checkNotNull(bArr);
+                random.nextBytes(bArr);
+                this.f47304s.write(this.f47307v);
+                if (size > 0) {
+                    Buffer buffer = this.f47303r;
+                    Buffer.a aVar2 = this.f47308w;
+                    Intrinsics.checkNotNull(aVar2);
+                    buffer.O0(aVar2);
+                    this.f47308w.m(0L);
+                    f.f47281a.b(this.f47308w, this.f47307v);
+                    this.f47308w.close();
+                }
+            }
+            this.f47304s.u0(this.f47303r, size);
+            this.f47298e.S();
+            return;
+        }
+        throw new IOException("closed");
     }
 
-    public final void e(c0 dir, boolean z10) {
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        ru.c.a(this, dir, z10);
+    public final void m(ByteString payload) {
+        Intrinsics.checkNotNullParameter(payload, "payload");
+        g(9, payload);
     }
 
-    public final void f(c0 dir) {
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        g(dir, false);
+    public final void n(ByteString payload) {
+        Intrinsics.checkNotNullParameter(payload, "payload");
+        g(10, payload);
     }
-
-    public abstract void g(c0 c0Var, boolean z10);
-
-    public final void h(c0 path) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        i(path, false);
-    }
-
-    public abstract void i(c0 c0Var, boolean z10);
-
-    public final boolean j(c0 path) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        return ru.c.b(this, path);
-    }
-
-    public abstract List k(c0 c0Var);
-
-    public final g l(c0 path) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        return ru.c.c(this, path);
-    }
-
-    public abstract g m(c0 c0Var);
-
-    public abstract f n(c0 c0Var);
-
-    public final Sink o(c0 file) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        return p(file, false);
-    }
-
-    public abstract Sink p(c0 c0Var, boolean z10);
-
-    public abstract Source q(c0 c0Var);
 }

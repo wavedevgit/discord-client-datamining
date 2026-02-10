@@ -13,16 +13,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f28497d;
+    private List f28697d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f28498e;
+    private Map f28698e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Boolean f28499i;
+    private Boolean f28699i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f28500o;
+    private Map f28700o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -58,19 +58,19 @@ public final class b0 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        b0Var.f28497d = e3Var.g2(iLogger, new SentryStackFrame.a());
+                        b0Var.f28697d = e3Var.f2(iLogger, new SentryStackFrame.a());
                         break;
                     case 1:
-                        b0Var.f28498e = io.sentry.util.c.b((Map) e3Var.U1());
+                        b0Var.f28698e = io.sentry.util.c.b((Map) e3Var.T1());
                         break;
                     case 2:
-                        b0Var.f28499i = e3Var.y0();
+                        b0Var.f28699i = e3Var.w0();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.u1(iLogger, concurrentHashMap, o02);
+                        e3Var.p1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -84,37 +84,37 @@ public final class b0 implements w1 {
     }
 
     public List d() {
-        return this.f28497d;
+        return this.f28697d;
     }
 
     public void e(List list) {
-        this.f28497d = list;
+        this.f28697d = list;
     }
 
     public void f(Boolean bool) {
-        this.f28499i = bool;
+        this.f28699i = bool;
     }
 
     public void g(Map map) {
-        this.f28500o = map;
+        this.f28700o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28497d != null) {
-            f3Var.e("frames").j(iLogger, this.f28497d);
+        if (this.f28697d != null) {
+            f3Var.e("frames").j(iLogger, this.f28697d);
         }
-        if (this.f28498e != null) {
-            f3Var.e("registers").j(iLogger, this.f28498e);
+        if (this.f28698e != null) {
+            f3Var.e("registers").j(iLogger, this.f28698e);
         }
-        if (this.f28499i != null) {
-            f3Var.e("snapshot").k(this.f28499i);
+        if (this.f28699i != null) {
+            f3Var.e("snapshot").k(this.f28699i);
         }
-        Map map = this.f28500o;
+        Map map = this.f28700o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28500o.get(str);
+                Object obj = this.f28700o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -123,6 +123,6 @@ public final class b0 implements w1 {
     }
 
     public b0(List list) {
-        this.f28497d = list;
+        this.f28697d = list;
     }
 }

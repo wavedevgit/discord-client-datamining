@@ -15,7 +15,7 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f32090d = new a(null);
+    public static final a f31799d = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -105,22 +105,22 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
     public class b implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f32091d;
+        private int f31800d;
 
         public b() {
         }
 
         protected final int a() {
-            return this.f32091d;
+            return this.f31800d;
         }
 
         protected final void b(int i10) {
-            this.f32091d = i10;
+            this.f31800d = i10;
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f32091d < d.this.size()) {
+            if (this.f31800d < d.this.size()) {
                 return true;
             }
             return false;
@@ -130,8 +130,8 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
         public Object next() {
             if (hasNext()) {
                 d dVar = d.this;
-                int i10 = this.f32091d;
-                this.f32091d = i10 + 1;
+                int i10 = this.f31800d;
+                this.f31800d = i10 + 1;
                 return dVar.get(i10);
             }
             throw new NoSuchElementException();
@@ -147,7 +147,7 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
     private class c extends b implements ListIterator, KMappedMarker {
         public c(int i10) {
             super();
-            d.f32090d.c(i10, d.this.size());
+            d.f31799d.c(i10, d.this.size());
             b(i10);
         }
 
@@ -192,34 +192,34 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
 
     /* renamed from: kotlin.collections.d$d  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class C0454d extends d implements RandomAccess {
+    private static final class C0481d extends d implements RandomAccess {
 
         /* renamed from: e  reason: collision with root package name */
-        private final d f32094e;
+        private final d f31803e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f32095i;
+        private final int f31804i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f32096o;
+        private int f31805o;
 
-        public C0454d(d list, int i10, int i11) {
+        public C0481d(d list, int i10, int i11) {
             Intrinsics.checkNotNullParameter(list, "list");
-            this.f32094e = list;
-            this.f32095i = i10;
-            d.f32090d.d(i10, i11, list.size());
-            this.f32096o = i11 - i10;
+            this.f31803e = list;
+            this.f31804i = i10;
+            d.f31799d.d(i10, i11, list.size());
+            this.f31805o = i11 - i10;
         }
 
         @Override // kotlin.collections.b
         public int c() {
-            return this.f32096o;
+            return this.f31805o;
         }
 
         @Override // kotlin.collections.d, java.util.List
         public Object get(int i10) {
-            d.f32090d.b(i10, this.f32096o);
-            return this.f32094e.get(this.f32095i + i10);
+            d.f31799d.b(i10, this.f31805o);
+            return this.f31803e.get(this.f31804i + i10);
         }
     }
 
@@ -241,7 +241,7 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
         if (!(obj instanceof List)) {
             return false;
         }
-        return f32090d.f(this, (Collection) obj);
+        return f31799d.f(this, (Collection) obj);
     }
 
     @Override // java.util.List
@@ -249,7 +249,7 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
 
     @Override // java.util.Collection, java.util.List
     public int hashCode() {
-        return f32090d.g(this);
+        return f31799d.g(this);
     }
 
     @Override // java.util.List
@@ -297,7 +297,7 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
 
     @Override // java.util.List
     public List subList(int i10, int i11) {
-        return new C0454d(this, i10, i11);
+        return new C0481d(this, i10, i11);
     }
 
     @Override // java.util.List

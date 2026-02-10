@@ -1,415 +1,191 @@
 package gu;
 
-import java.io.IOException;
-import java.io.InterruptedIOException;
-import java.lang.ref.Reference;
-import java.lang.ref.WeakReference;
-import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.RejectedExecutionException;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLSocketFactory;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.Call;
-import okhttp3.Dispatcher;
-import okhttp3.HttpUrl;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
+import kotlin.jvm.internal.LongCompanionObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements Call {
-    private volatile boolean A;
-    private volatile gu.c B;
-    private volatile f C;
+public final class e {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final OkHttpClient f25632d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Request f25633e;
+    /* renamed from: h  reason: collision with root package name */
+    public static final b f24819h = new b(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f25634i;
+    public static final e f24820i = new e(new c(du.e.N(du.e.f20987i + " TaskRunner", true)));
 
-    /* renamed from: o  reason: collision with root package name */
-    private final g f25635o;
+    /* renamed from: j  reason: collision with root package name */
+    private static final Logger f24821j;
 
-    /* renamed from: p  reason: collision with root package name */
-    private final okhttp3.e f25636p;
+    /* renamed from: a  reason: collision with root package name */
+    private final a f24822a;
 
-    /* renamed from: q  reason: collision with root package name */
-    private final c f25637q;
+    /* renamed from: b  reason: collision with root package name */
+    private int f24823b;
 
-    /* renamed from: r  reason: collision with root package name */
-    private final AtomicBoolean f25638r;
+    /* renamed from: c  reason: collision with root package name */
+    private boolean f24824c;
 
-    /* renamed from: s  reason: collision with root package name */
-    private Object f25639s;
+    /* renamed from: d  reason: collision with root package name */
+    private long f24825d;
 
-    /* renamed from: t  reason: collision with root package name */
-    private d f25640t;
+    /* renamed from: e  reason: collision with root package name */
+    private final List f24826e;
 
-    /* renamed from: u  reason: collision with root package name */
-    private f f25641u;
+    /* renamed from: f  reason: collision with root package name */
+    private final List f24827f;
 
-    /* renamed from: v  reason: collision with root package name */
-    private boolean f25642v;
-
-    /* renamed from: w  reason: collision with root package name */
-    private gu.c f25643w;
-
-    /* renamed from: x  reason: collision with root package name */
-    private boolean f25644x;
-
-    /* renamed from: y  reason: collision with root package name */
-    private boolean f25645y;
-
-    /* renamed from: z  reason: collision with root package name */
-    private boolean f25646z;
+    /* renamed from: g  reason: collision with root package name */
+    private final Runnable f24828g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public final class a implements Runnable {
+    public interface a {
+        void a(e eVar, long j10);
 
-        /* renamed from: d  reason: collision with root package name */
-        private final bu.b f25647d;
+        void b(e eVar);
 
-        /* renamed from: e  reason: collision with root package name */
-        private volatile AtomicInteger f25648e;
+        long c();
 
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ e f25649i;
+        void execute(Runnable runnable);
+    }
 
-        public a(e eVar, bu.b responseCallback) {
-            Intrinsics.checkNotNullParameter(responseCallback, "responseCallback");
-            this.f25649i = eVar;
-            this.f25647d = responseCallback;
-            this.f25648e = new AtomicInteger(0);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b {
+        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
 
-        public final void a(ExecutorService executorService) {
-            Intrinsics.checkNotNullParameter(executorService, "executorService");
-            Dispatcher t10 = this.f25649i.k().t();
-            if (cu.e.f20042h && Thread.holdsLock(t10)) {
-                throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + t10);
+        public final Logger a() {
+            return e.f24821j;
+        }
+
+        private b() {
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class c implements a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final ThreadPoolExecutor f24829a;
+
+        public c(ThreadFactory threadFactory) {
+            Intrinsics.checkNotNullParameter(threadFactory, "threadFactory");
+            this.f24829a = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue(), threadFactory);
+        }
+
+        @Override // gu.e.a
+        public void a(e taskRunner, long j10) {
+            Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
+            long j11 = j10 / 1000000;
+            long j12 = j10 - (1000000 * j11);
+            if (j11 <= 0 && j10 <= 0) {
+                return;
             }
-            try {
-                try {
-                    executorService.execute(this);
-                } catch (RejectedExecutionException e10) {
-                    InterruptedIOException interruptedIOException = new InterruptedIOException("executor rejected");
-                    interruptedIOException.initCause(e10);
-                    this.f25649i.v(interruptedIOException);
-                    this.f25647d.onFailure(this.f25649i, interruptedIOException);
-                    this.f25649i.k().t().h(this);
-                }
-            } catch (Throwable th2) {
-                this.f25649i.k().t().h(this);
-                throw th2;
-            }
+            taskRunner.wait(j11, (int) j12);
         }
 
-        public final e b() {
-            return this.f25649i;
+        @Override // gu.e.a
+        public void b(e taskRunner) {
+            Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
+            taskRunner.notify();
         }
 
-        public final AtomicInteger c() {
-            return this.f25648e;
+        @Override // gu.e.a
+        public long c() {
+            return System.nanoTime();
         }
 
-        public final String d() {
-            return this.f25649i.q().n().i();
+        @Override // gu.e.a
+        public void execute(Runnable runnable) {
+            Intrinsics.checkNotNullParameter(runnable, "runnable");
+            this.f24829a.execute(runnable);
         }
+    }
 
-        public final void e(a other) {
-            Intrinsics.checkNotNullParameter(other, "other");
-            this.f25648e = other.f25648e;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class d implements Runnable {
+        d() {
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            boolean z10;
-            Throwable th2;
-            IOException e10;
-            OkHttpClient k10;
-            e eVar = this.f25649i;
-            Thread currentThread = Thread.currentThread();
-            String name = currentThread.getName();
-            currentThread.setName("OkHttp " + this.f25649i.w());
-            try {
-                eVar.f25637q.v();
-                try {
-                    z10 = true;
-                    try {
-                        this.f25647d.onResponse(eVar, eVar.r());
-                        k10 = eVar.k();
-                    } catch (IOException e11) {
-                        e10 = e11;
-                        if (z10) {
-                            lu.h.f36825a.g().k("Callback failure for " + eVar.D(), 4, e10);
-                        } else {
-                            this.f25647d.onFailure(eVar, e10);
-                        }
-                        k10 = eVar.k();
-                        k10.t().h(this);
-                    } catch (Throwable th3) {
-                        th2 = th3;
-                        eVar.cancel();
-                        if (!z10) {
-                            IOException iOException = new IOException("canceled due to " + th2);
-                            qr.e.a(iOException, th2);
-                            this.f25647d.onFailure(eVar, iOException);
-                        }
-                        throw th2;
-                    }
-                } catch (IOException e12) {
-                    z10 = false;
-                    e10 = e12;
-                } catch (Throwable th4) {
-                    z10 = false;
-                    th2 = th4;
+            gu.a d10;
+            long j10;
+            while (true) {
+                e eVar = e.this;
+                synchronized (eVar) {
+                    d10 = eVar.d();
                 }
-                k10.t().h(this);
-            } finally {
-                currentThread.setName(name);
-            }
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b extends WeakReference {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final Object f25650a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(e referent, Object obj) {
-            super(referent);
-            Intrinsics.checkNotNullParameter(referent, "referent");
-            this.f25650a = obj;
-        }
-
-        public final Object a() {
-            return this.f25650a;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class c extends okio.c {
-        c() {
-        }
-
-        @Override // okio.c
-        protected void B() {
-            e.this.cancel();
-        }
-    }
-
-    public e(OkHttpClient client, Request originalRequest, boolean z10) {
-        Intrinsics.checkNotNullParameter(client, "client");
-        Intrinsics.checkNotNullParameter(originalRequest, "originalRequest");
-        this.f25632d = client;
-        this.f25633e = originalRequest;
-        this.f25634i = z10;
-        this.f25635o = client.o().a();
-        this.f25636p = client.v().a(this);
-        c cVar = new c();
-        cVar.g(client.k(), TimeUnit.MILLISECONDS);
-        this.f25637q = cVar;
-        this.f25638r = new AtomicBoolean();
-        this.f25646z = true;
-    }
-
-    private final IOException B(IOException iOException) {
-        if (this.f25642v || !this.f25637q.w()) {
-            return iOException;
-        }
-        InterruptedIOException interruptedIOException = new InterruptedIOException("timeout");
-        if (iOException != null) {
-            interruptedIOException.initCause(iOException);
-        }
-        return interruptedIOException;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final String D() {
-        String str;
-        String str2;
-        StringBuilder sb2 = new StringBuilder();
-        if (C()) {
-            str = "canceled ";
-        } else {
-            str = "";
-        }
-        sb2.append(str);
-        if (this.f25634i) {
-            str2 = "web socket";
-        } else {
-            str2 = "call";
-        }
-        sb2.append(str2);
-        sb2.append(" to ");
-        sb2.append(w());
-        return sb2.toString();
-    }
-
-    private final IOException d(IOException iOException) {
-        Socket x10;
-        boolean z10 = cu.e.f20042h;
-        if (z10 && Thread.holdsLock(this)) {
-            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
-        }
-        f fVar = this.f25641u;
-        if (fVar != null) {
-            if (z10 && Thread.holdsLock(fVar)) {
-                throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + fVar);
-            }
-            synchronized (fVar) {
-                x10 = x();
-            }
-            if (this.f25641u == null) {
-                if (x10 != null) {
-                    cu.e.n(x10);
+                if (d10 == null) {
+                    return;
                 }
-                this.f25636p.l(this, fVar);
-            } else if (x10 != null) {
-                throw new IllegalStateException("Check failed.");
-            }
-        }
-        IOException B = B(iOException);
-        if (iOException != null) {
-            okhttp3.e eVar = this.f25636p;
-            Intrinsics.checkNotNull(B);
-            eVar.e(this, B);
-            return B;
-        }
-        this.f25636p.d(this);
-        return B;
-    }
-
-    private final void e() {
-        this.f25639s = lu.h.f36825a.g().i("response.body().close()");
-        this.f25636p.f(this);
-    }
-
-    private final okhttp3.a h(HttpUrl httpUrl) {
-        SSLSocketFactory sSLSocketFactory;
-        HostnameVerifier hostnameVerifier;
-        bu.c cVar;
-        if (httpUrl.j()) {
-            sSLSocketFactory = this.f25632d.O();
-            hostnameVerifier = this.f25632d.z();
-            cVar = this.f25632d.m();
-        } else {
-            sSLSocketFactory = null;
-            hostnameVerifier = null;
-            cVar = null;
-        }
-        return new okhttp3.a(httpUrl.i(), httpUrl.o(), this.f25632d.u(), this.f25632d.N(), sSLSocketFactory, hostnameVerifier, cVar, this.f25632d.J(), this.f25632d.I(), this.f25632d.H(), this.f25632d.q(), this.f25632d.K());
-    }
-
-    public final void A() {
-        if (!this.f25642v) {
-            this.f25642v = true;
-            this.f25637q.w();
-            return;
-        }
-        throw new IllegalStateException("Check failed.");
-    }
-
-    @Override // okhttp3.Call
-    public boolean C() {
-        return this.A;
-    }
-
-    @Override // okhttp3.Call
-    public void J0(bu.b responseCallback) {
-        Intrinsics.checkNotNullParameter(responseCallback, "responseCallback");
-        if (this.f25638r.compareAndSet(false, true)) {
-            e();
-            this.f25632d.t().c(new a(this, responseCallback));
-            return;
-        }
-        throw new IllegalStateException("Already Executed");
-    }
-
-    public final void c(f connection) {
-        Intrinsics.checkNotNullParameter(connection, "connection");
-        if (cu.e.f20042h && !Thread.holdsLock(connection)) {
-            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
-        } else if (this.f25641u == null) {
-            this.f25641u = connection;
-            connection.n().add(new b(this, this.f25639s));
-        } else {
-            throw new IllegalStateException("Check failed.");
-        }
-    }
-
-    @Override // okhttp3.Call
-    public void cancel() {
-        if (this.A) {
-            return;
-        }
-        this.A = true;
-        gu.c cVar = this.B;
-        if (cVar != null) {
-            cVar.b();
-        }
-        f fVar = this.C;
-        if (fVar != null) {
-            fVar.d();
-        }
-        this.f25636p.g(this);
-    }
-
-    @Override // okhttp3.Call
-    public Response execute() {
-        if (this.f25638r.compareAndSet(false, true)) {
-            this.f25637q.v();
-            e();
-            try {
-                this.f25632d.t().d(this);
-                return r();
-            } finally {
-                this.f25632d.t().i(this);
-            }
-        }
-        throw new IllegalStateException("Already Executed");
-    }
-
-    /* renamed from: f */
-    public e clone() {
-        return new e(this.f25632d, this.f25633e, this.f25634i);
-    }
-
-    @Override // okhttp3.Call
-    public Request g() {
-        return this.f25633e;
-    }
-
-    public final void i(Request request, boolean z10) {
-        Intrinsics.checkNotNullParameter(request, "request");
-        if (this.f25643w == null) {
-            synchronized (this) {
-                if (!this.f25645y) {
-                    if (!this.f25644x) {
-                        Unit unit = Unit.f32056a;
-                    } else {
-                        throw new IllegalStateException("Check failed.");
-                    }
+                gu.d d11 = d10.d();
+                Intrinsics.checkNotNull(d11);
+                e eVar2 = e.this;
+                boolean isLoggable = e.f24819h.a().isLoggable(Level.FINE);
+                if (isLoggable) {
+                    j10 = d11.h().g().c();
+                    gu.b.c(d10, d11, "starting");
                 } else {
-                    throw new IllegalStateException("cannot make a new request because the previous response is still open: please call response.close()");
+                    j10 = -1;
+                }
+                try {
+                    eVar2.j(d10);
+                    Unit unit = Unit.f31765a;
+                    if (isLoggable) {
+                        long c10 = d11.h().g().c() - j10;
+                        gu.b.c(d10, d11, "finished run in " + gu.b.b(c10));
+                    }
+                } catch (Throwable th2) {
+                    if (isLoggable) {
+                        gu.b.c(d10, d11, "failed a run in " + gu.b.b(d11.h().g().c() - j10));
+                    }
+                    throw th2;
                 }
             }
-            if (z10) {
-                this.f25640t = new d(this.f25635o, h(request.n()), this, this.f25636p);
+        }
+    }
+
+    static {
+        Logger logger = Logger.getLogger(e.class.getName());
+        Intrinsics.checkNotNullExpressionValue(logger, "getLogger(TaskRunner::class.java.name)");
+        f24821j = logger;
+    }
+
+    public e(a backend) {
+        Intrinsics.checkNotNullParameter(backend, "backend");
+        this.f24822a = backend;
+        this.f24823b = 10000;
+        this.f24826e = new ArrayList();
+        this.f24827f = new ArrayList();
+        this.f24828g = new d();
+    }
+
+    private final void c(gu.a aVar, long j10) {
+        if (du.e.f20986h && !Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
+        }
+        gu.d d10 = aVar.d();
+        Intrinsics.checkNotNull(d10);
+        if (d10.c() == aVar) {
+            boolean d11 = d10.d();
+            d10.m(false);
+            d10.l(null);
+            this.f24826e.remove(d10);
+            if (j10 != -1 && !d11 && !d10.g()) {
+                d10.k(aVar, j10, true);
+            }
+            if (!d10.e().isEmpty()) {
+                this.f24827f.add(d10);
                 return;
             }
             return;
@@ -417,259 +193,149 @@ public final class e implements Call {
         throw new IllegalStateException("Check failed.");
     }
 
-    public final void j(boolean z10) {
-        gu.c cVar;
-        synchronized (this) {
-            if (this.f25646z) {
-                Unit unit = Unit.f32056a;
-            } else {
-                throw new IllegalStateException("released");
-            }
+    private final void e(gu.a aVar) {
+        if (du.e.f20986h && !Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
-        if (z10 && (cVar = this.B) != null) {
-            cVar.d();
+        aVar.g(-1L);
+        gu.d d10 = aVar.d();
+        Intrinsics.checkNotNull(d10);
+        d10.e().remove(aVar);
+        this.f24827f.remove(d10);
+        d10.l(aVar);
+        this.f24826e.add(d10);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void j(gu.a aVar) {
+        if (du.e.f20986h && Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
-        this.f25643w = null;
-    }
-
-    public final OkHttpClient k() {
-        return this.f25632d;
-    }
-
-    public final f l() {
-        return this.f25641u;
-    }
-
-    public final okhttp3.e m() {
-        return this.f25636p;
-    }
-
-    public final boolean n() {
-        return this.f25634i;
-    }
-
-    public final gu.c o() {
-        return this.f25643w;
-    }
-
-    public final Request q() {
-        return this.f25633e;
-    }
-
-    public final Response r() {
-        ArrayList arrayList = new ArrayList();
-        CollectionsKt.B(arrayList, this.f25632d.A());
-        arrayList.add(new hu.j(this.f25632d));
-        arrayList.add(new hu.a(this.f25632d.r()));
-        arrayList.add(new eu.a(this.f25632d.j()));
-        arrayList.add(gu.a.f25599a);
-        if (!this.f25634i) {
-            CollectionsKt.B(arrayList, this.f25632d.D());
-        }
-        arrayList.add(new hu.b(this.f25634i));
-        boolean z10 = false;
+        Thread currentThread = Thread.currentThread();
+        String name = currentThread.getName();
+        currentThread.setName(aVar.b());
         try {
-            try {
-                Response a10 = new hu.g(this, arrayList, 0, null, this.f25633e, this.f25632d.n(), this.f25632d.L(), this.f25632d.R()).a(this.f25633e);
-                if (!C()) {
-                    v(null);
-                    return a10;
-                }
-                cu.e.m(a10);
-                throw new IOException("Canceled");
-            } catch (IOException e10) {
-                z10 = true;
-                IOException v10 = v(e10);
-                Intrinsics.checkNotNull(v10, "null cannot be cast to non-null type kotlin.Throwable");
-                throw v10;
+            long f10 = aVar.f();
+            synchronized (this) {
+                c(aVar, f10);
+                Unit unit = Unit.f31765a;
             }
+            currentThread.setName(name);
         } catch (Throwable th2) {
-            if (!z10) {
-                v(null);
-            }
-            throw th2;
-        }
-    }
-
-    public final gu.c t(hu.g chain) {
-        Intrinsics.checkNotNullParameter(chain, "chain");
-        synchronized (this) {
-            if (this.f25646z) {
-                if (!this.f25645y) {
-                    if (!this.f25644x) {
-                        Unit unit = Unit.f32056a;
-                    } else {
-                        throw new IllegalStateException("Check failed.");
-                    }
-                } else {
-                    throw new IllegalStateException("Check failed.");
-                }
-            } else {
-                throw new IllegalStateException("released");
-            }
-        }
-        d dVar = this.f25640t;
-        Intrinsics.checkNotNull(dVar);
-        gu.c cVar = new gu.c(this, this.f25636p, dVar, dVar.a(this.f25632d, chain));
-        this.f25643w = cVar;
-        this.B = cVar;
-        synchronized (this) {
-            this.f25644x = true;
-            this.f25645y = true;
-        }
-        if (!this.A) {
-            return cVar;
-        }
-        throw new IOException("Canceled");
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:17:0x0021 A[Catch: all -> 0x0017, TryCatch #0 {all -> 0x0017, blocks: (B:8:0x0012, B:17:0x0021, B:19:0x0025, B:20:0x0027, B:22:0x002c, B:27:0x0035, B:29:0x0039, B:34:0x0042, B:14:0x001b), top: B:46:0x0012 }] */
-    /* JADX WARN: Removed duplicated region for block: B:19:0x0025 A[Catch: all -> 0x0017, TryCatch #0 {all -> 0x0017, blocks: (B:8:0x0012, B:17:0x0021, B:19:0x0025, B:20:0x0027, B:22:0x002c, B:27:0x0035, B:29:0x0039, B:34:0x0042, B:14:0x001b), top: B:46:0x0012 }] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.io.IOException u(gu.c r2, boolean r3, boolean r4, java.io.IOException r5) {
-        /*
-            r1 = this;
-            java.lang.String r0 = "exchange"
-            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
-            gu.c r0 = r1.B
-            boolean r2 = kotlin.jvm.internal.Intrinsics.areEqual(r2, r0)
-            if (r2 != 0) goto Le
-            goto L58
-        Le:
-            monitor-enter(r1)
-            r2 = 0
-            if (r3 == 0) goto L19
-            boolean r0 = r1.f25644x     // Catch: java.lang.Throwable -> L17
-            if (r0 != 0) goto L1f
-            goto L19
-        L17:
-            r2 = move-exception
-            goto L59
-        L19:
-            if (r4 == 0) goto L41
-            boolean r0 = r1.f25645y     // Catch: java.lang.Throwable -> L17
-            if (r0 == 0) goto L41
-        L1f:
-            if (r3 == 0) goto L23
-            r1.f25644x = r2     // Catch: java.lang.Throwable -> L17
-        L23:
-            if (r4 == 0) goto L27
-            r1.f25645y = r2     // Catch: java.lang.Throwable -> L17
-        L27:
-            boolean r3 = r1.f25644x     // Catch: java.lang.Throwable -> L17
-            r4 = 1
-            if (r3 != 0) goto L32
-            boolean r0 = r1.f25645y     // Catch: java.lang.Throwable -> L17
-            if (r0 != 0) goto L32
-            r0 = r4
-            goto L33
-        L32:
-            r0 = r2
-        L33:
-            if (r3 != 0) goto L3e
-            boolean r3 = r1.f25645y     // Catch: java.lang.Throwable -> L17
-            if (r3 != 0) goto L3e
-            boolean r3 = r1.f25646z     // Catch: java.lang.Throwable -> L17
-            if (r3 != 0) goto L3e
-            r2 = r4
-        L3e:
-            r3 = r2
-            r2 = r0
-            goto L42
-        L41:
-            r3 = r2
-        L42:
-            kotlin.Unit r4 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> L17
-            monitor-exit(r1)
-            if (r2 == 0) goto L51
-            r2 = 0
-            r1.B = r2
-            gu.f r2 = r1.f25641u
-            if (r2 == 0) goto L51
-            r2.s()
-        L51:
-            if (r3 == 0) goto L58
-            java.io.IOException r2 = r1.d(r5)
-            return r2
-        L58:
-            return r5
-        L59:
-            monitor-exit(r1)
-            throw r2
-        */
-        throw new UnsupportedOperationException("Method not decompiled: gu.e.u(gu.c, boolean, boolean, java.io.IOException):java.io.IOException");
-    }
-
-    public final IOException v(IOException iOException) {
-        boolean z10;
-        synchronized (this) {
-            try {
-                z10 = false;
-                if (this.f25646z) {
-                    this.f25646z = false;
-                    if (!this.f25644x && !this.f25645y) {
-                        z10 = true;
-                    }
-                }
-                Unit unit = Unit.f32056a;
-            } catch (Throwable th2) {
+            synchronized (this) {
+                c(aVar, -1L);
+                Unit unit2 = Unit.f31765a;
+                currentThread.setName(name);
                 throw th2;
             }
         }
-        if (z10) {
-            return d(iOException);
-        }
-        return iOException;
     }
 
-    public final String w() {
-        return this.f25633e.n().q();
-    }
-
-    public final Socket x() {
-        f fVar = this.f25641u;
-        Intrinsics.checkNotNull(fVar);
-        if (cu.e.f20042h && !Thread.holdsLock(fVar)) {
-            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + fVar);
+    public final gu.a d() {
+        boolean z10;
+        if (du.e.f20986h && !Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
-        List n10 = fVar.n();
-        Iterator it = n10.iterator();
-        int i10 = 0;
-        while (true) {
-            if (it.hasNext()) {
-                if (Intrinsics.areEqual(((Reference) it.next()).get(), this)) {
+        while (!this.f24827f.isEmpty()) {
+            long c10 = this.f24822a.c();
+            Iterator it = this.f24827f.iterator();
+            long j10 = LongCompanionObject.MAX_VALUE;
+            gu.a aVar = null;
+            while (true) {
+                if (it.hasNext()) {
+                    gu.a aVar2 = (gu.a) ((gu.d) it.next()).e().get(0);
+                    long max = Math.max(0L, aVar2.c() - c10);
+                    if (max > 0) {
+                        j10 = Math.min(max, j10);
+                    } else if (aVar != null) {
+                        z10 = true;
+                        break;
+                    } else {
+                        aVar = aVar2;
+                    }
+                } else {
+                    z10 = false;
                     break;
                 }
-                i10++;
-            } else {
-                i10 = -1;
-                break;
             }
-        }
-        if (i10 != -1) {
-            n10.remove(i10);
-            this.f25641u = null;
-            if (n10.isEmpty()) {
-                fVar.C(System.nanoTime());
-                if (this.f25635o.c(fVar)) {
-                    return fVar.E();
+            if (aVar != null) {
+                e(aVar);
+                if (z10 || (!this.f24824c && !this.f24827f.isEmpty())) {
+                    this.f24822a.execute(this.f24828g);
+                }
+                return aVar;
+            } else if (this.f24824c) {
+                if (j10 < this.f24825d - c10) {
+                    this.f24822a.b(this);
+                }
+                return null;
+            } else {
+                this.f24824c = true;
+                this.f24825d = c10 + j10;
+                try {
+                    try {
+                        this.f24822a.a(this, j10);
+                    } catch (InterruptedException unused) {
+                        f();
+                    }
+                } finally {
+                    this.f24824c = false;
                 }
             }
-            return null;
         }
-        throw new IllegalStateException("Check failed.");
+        return null;
     }
 
-    public final boolean y() {
-        d dVar = this.f25640t;
-        Intrinsics.checkNotNull(dVar);
-        return dVar.e();
+    public final void f() {
+        int size = this.f24826e.size();
+        while (true) {
+            size--;
+            if (-1 >= size) {
+                break;
+            }
+            ((gu.d) this.f24826e.get(size)).b();
+        }
+        for (int size2 = this.f24827f.size() - 1; -1 < size2; size2--) {
+            gu.d dVar = (gu.d) this.f24827f.get(size2);
+            dVar.b();
+            if (dVar.e().isEmpty()) {
+                this.f24827f.remove(size2);
+            }
+        }
     }
 
-    public final void z(f fVar) {
-        this.C = fVar;
+    public final a g() {
+        return this.f24822a;
+    }
+
+    public final void h(gu.d taskQueue) {
+        Intrinsics.checkNotNullParameter(taskQueue, "taskQueue");
+        if (du.e.f20986h && !Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
+        }
+        if (taskQueue.c() == null) {
+            if (!taskQueue.e().isEmpty()) {
+                du.e.c(this.f24827f, taskQueue);
+            } else {
+                this.f24827f.remove(taskQueue);
+            }
+        }
+        if (this.f24824c) {
+            this.f24822a.b(this);
+        } else {
+            this.f24822a.execute(this.f24828g);
+        }
+    }
+
+    public final gu.d i() {
+        int i10;
+        synchronized (this) {
+            i10 = this.f24823b;
+            this.f24823b = i10 + 1;
+        }
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append('Q');
+        sb2.append(i10);
+        return new gu.d(this, sb2.toString());
     }
 }

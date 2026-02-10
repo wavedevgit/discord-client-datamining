@@ -20,8 +20,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var6 = var3.bind(var0)(var6);
     var _closure1_slot2 = var6;
-    var10 = 1;
-    var3 = var5[var10];
+    var3 = 1;
+    var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.View;
     var _closure1_slot3 = var3;
@@ -43,9 +43,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'top': '10%'
     };
     var3.container = var9;
-    var9 = {};
-    var9.flex = var10;
-    var3.pressable = var9;
     var9 = {
         'textAlign': 'center',
         'marginTop': 16,
@@ -125,4 +122,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3162, 8217, 3942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3162, 8192, 3942, 2]);

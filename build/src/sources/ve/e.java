@@ -1,18 +1,15 @@
 package ve;
 
-import android.app.Activity;
+import af.i;
 import android.content.Context;
+import android.os.Looper;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import ff.a;
+import ff.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class e {
-    public static c a(Activity activity) {
-        return new cg.e((Activity) gf.q.l(activity), new m());
-    }
-
-    public static h b(Activity activity) {
-        return new cg.k((Activity) gf.q.l(activity), new v());
-    }
-
-    public static h c(Context context) {
-        return new cg.k((Context) gf.q.l(context), new v());
+final class e extends a.AbstractC0331a {
+    @Override // ff.a.AbstractC0331a
+    public final /* synthetic */ a.f a(Context context, Looper looper, hf.d dVar, Object obj, e.a aVar, e.b bVar) {
+        return new i(context, looper, dVar, (GoogleSignInOptions) obj, aVar, bVar);
     }
 }

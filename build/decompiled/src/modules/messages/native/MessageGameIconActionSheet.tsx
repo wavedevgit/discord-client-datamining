@@ -1,14 +1,14 @@
 // modules/messages/native/MessageGameIconActionSheet.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun79803: for (var _fun79803_ip = 0;;) switch (_fun79803_ip) {
+    _fun79668: for (var _fun79668_ip = 0;;) switch (_fun79668_ip) {
         case 0:
             var4 = require;
-            var12 = metroImportDefault;
+            var11 = metroImportDefault;
             var2 = exports;
             var5 = dependencyMap;
             var _closure1_slot0 = var4;
-            var _closure1_slot1 = var12;
+            var _closure1_slot1 = var11;
             var _closure1_slot2 = var5;
             var0 = global;
             var7 = var0.Object;
@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot3 = var3;
             var3 = 2;
             var3 = var5[var3];
-            var3 = var12.bind(var0)(var3);
+            var3 = var11.bind(var0)(var3);
             var _closure1_slot4 = var3;
             var3 = 3;
             var3 = var5[var3];
@@ -53,30 +53,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'paddingHorizontal': 24,
                 'paddingTop': 8
             };
-            var11 = 6;
-            var11 = var5[var11];
-            var13 = var4.bind(var0)(var11);
-            var11 = var13.isAndroid;
-            var13 = var11.bind(var13)();
-            var11 = 0;
-            if (!var13) {
-                _fun79803_ip = 226;
-                continue _fun79803
+            var12 = 6;
+            var12 = var5[var12];
+            var13 = var4.bind(var0)(var12);
+            var12 = var13.isAndroid;
+            var12 = var12.bind(var13)();
+            if (!var12) {
+                _fun79668_ip = 224;
+                continue _fun79668
             }
-        case 223:
-            var11 = 16;
-        case 226:
-            var8.paddingBottom = var11;
+        case 221:
+            var10 = 16;
+        case 224:
+            var8.paddingBottom = var10;
             var3.contentWrapper = var8;
-            var8 = {};
-            var8.paddingTop = var10;
-            var3.content = var8;
-            var10 = 'row';
-            var8 = {
-                'flexDirection': 'row',
-                'alignItems': 'center'
-            };
-            var3.gameContainer = var8;
             var8 = {
                 'flexDirection': 'column',
                 'justifyContent': 'flex-start',
@@ -84,23 +74,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var3.gameDescriptionWrapper = var8;
             var8 = {
-                'marginLeft': 4294967288,
-                'marginRight': 8
-            };
-            var3.gameWrapper = var8;
-            var8 = {
                 'width': 56,
                 'height': 56,
                 'marginRight': 8
             };
-            var11 = 7;
-            var11 = var5[var11];
-            var11 = var12.bind(var0)(var11);
-            var11 = var11.radii;
-            var11 = var11.sm;
-            var8.borderRadius = var11;
+            var10 = 7;
+            var10 = var5[var10];
+            var10 = var11.bind(var0)(var10);
+            var10 = var10.radii;
+            var10 = var10.sm;
+            var8.borderRadius = var10;
             var3.gameIcon = var8;
             var8 = {};
+            var10 = 'row';
             var8.flexDirection = var10;
             var3.gameDescriptionWrapperOuter = var8;
             var8 = {};
@@ -115,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/messages/native/MessageGameIconActionSheet.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function arg0() {
-                _fun79804: for (var _fun79804_ip = 0;;) switch (_fun79804_ip) {
+                _fun79669: for (var _fun79669_ip = 0;;) switch (_fun79669_ip) {
                     case 0:
                         var1 = arg0;
                         var2 = var1.applicationId;
@@ -145,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var13 == var23;
                         var0 = null;
                         if (var1) {
-                            _fun79804_ip = 622;
-                            continue _fun79804
+                            _fun79669_ip = 622;
+                            continue _fun79669
                         }
                     case 97:
                         var3 = _closure1_slot6;
@@ -180,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var13 == var23;
                         var14 = undefined;
                         if (var15) {
-                            _fun79804_ip = 229;
-                            continue _fun79804
+                            _fun79669_ip = 229;
+                            continue _fun79669
                         }
                     case 215:
                         var18 = var23.getIconURL;
@@ -191,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var13 != var14;
                         var13 = '';
                         if (!var15) {
-                            _fun79804_ip = 243;
-                            continue _fun79804
+                            _fun79669_ip = 243;
+                            continue _fun79669
                         }
                     case 240:
                         var13 = var14;
@@ -289,4 +275,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3455, 660, 33, 1297, 478, 671, 566, 4933, 4086, 3942, 5384, 1234, 1686, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3455, 660, 33, 1297, 478, 671, 566, 4933, 4086, 3942, 5385, 1234, 1686, 2]);

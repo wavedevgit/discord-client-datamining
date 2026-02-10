@@ -85,13 +85,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = 'hidden';
     var8.overflow = var11;
     var3.videoContainer = var8;
-    var8 = {};
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.BACKGROUND_BASE_LOW;
-    var8.backgroundColor = var11;
-    var3.video = var8;
     var8 = {
         'marginTop': 16,
         'alignItems': 'center'
@@ -199,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var17.container;
         var4.style = var7;
         var7 = function arg0() {
-            _fun103283: for (var _fun103283_ip = 0;;) switch (_fun103283_ip) {
+            _fun103263: for (var _fun103263_ip = 0;;) switch (_fun103263_ip) {
                 case 0:
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -211,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure2_slot3;
                     var1 = var3;
                     if (!var0) {
-                        _fun103283_ip = 51;
-                        continue _fun103283
+                        _fun103263_ip = 51;
+                        continue _fun103263
                     }
                 case 44:
                     var0 = 2;
@@ -410,4 +403,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 660, 1369, 33, 1297, 671, 5414, 632, 4933, 1234, 8924, 3942, 4875, 8224, 3279, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 660, 1369, 33, 1297, 671, 5415, 632, 4933, 1234, 8902, 3942, 4875, 8199, 3279, 2]);

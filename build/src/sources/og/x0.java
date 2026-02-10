@@ -1,50 +1,36 @@
 package og;
 
-import yi.c;
+import java.util.AbstractCollection;
+import java.util.Iterator;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class x0 implements yi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final x0 f42708a = new x0();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42709b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42710c;
+final class x0 extends AbstractCollection {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42711d;
+    final /* synthetic */ y0 f41455d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42712e;
-
-    static {
-        c.b a10 = yi.c.a("errorCode");
-        f fVar = new f();
-        fVar.a(1);
-        f42709b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("isColdCall");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42710c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("imageInfo");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42711d = a12.b(fVar3.b()).a();
-        c.b a13 = yi.c.a("options");
-        f fVar4 = new f();
-        fVar4.a(4);
-        f42712e = a13.b(fVar4.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public x0(y0 y0Var) {
+        this.f41455d = y0Var;
     }
 
-    private x0() {
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final void clear() {
+        this.f41455d.clear();
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
+    public final Iterator iterator() {
+        y0 y0Var = this.f41455d;
+        Map o10 = y0Var.o();
+        if (o10 != null) {
+            return o10.values().iterator();
+        }
+        return new r0(y0Var);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final int size() {
+        return this.f41455d.size();
     }
 }

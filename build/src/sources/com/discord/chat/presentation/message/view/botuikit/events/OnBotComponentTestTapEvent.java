@@ -2,7 +2,7 @@ package com.discord.chat.presentation.message.view.botuikit.events;
 
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import ft.m;
+import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
@@ -46,8 +46,8 @@ public final class OnBotComponentTestTapEvent implements ReactEvent {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(OnBotComponentTestTapEvent onBotComponentTestTapEvent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        if (compositeEncoder.A(serialDescriptor, 0) || !onBotComponentTestTapEvent.dummy) {
-            compositeEncoder.y(serialDescriptor, 0, onBotComponentTestTapEvent.dummy);
+        if (compositeEncoder.z(serialDescriptor, 0) || !onBotComponentTestTapEvent.dummy) {
+            compositeEncoder.x(serialDescriptor, 0, onBotComponentTestTapEvent.dummy);
         }
     }
 

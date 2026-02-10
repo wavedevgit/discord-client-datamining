@@ -2,89 +2,89 @@ package net.time4j.calendar;
 
 import net.time4j.a1;
 import net.time4j.y0;
-import rt.t;
-import rt.z;
+import st.t;
+import st.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 class s implements z {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a1 f39310d;
+    private final a1 f38402d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final t f39311e;
+    private final t f38403e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(a1 a1Var, t tVar) {
-        this.f39310d = a1Var;
-        this.f39311e = tVar;
+        this.f38402d = a1Var;
+        this.f38403e = tVar;
     }
 
-    private static y0 h(long j10) {
-        return y0.h(pt.c.d(j10 + 5, 7) + 1);
+    private static y0 j(long j10) {
+        return y0.h(qt.c.d(j10 + 5, 7) + 1);
     }
 
-    @Override // rt.z
+    @Override // st.z
     /* renamed from: b */
-    public rt.p a(rt.g gVar) {
+    public st.p a(st.g gVar) {
         return null;
     }
 
-    @Override // rt.z
+    @Override // st.z
     /* renamed from: c */
-    public rt.p g(rt.g gVar) {
+    public st.p g(st.g gVar) {
         return null;
     }
 
-    @Override // rt.z
+    @Override // st.z
     /* renamed from: d */
-    public y0 k(rt.g gVar) {
-        rt.k kVar = (rt.k) this.f39311e.apply(gVar);
-        if ((gVar.i() + 7) - y(gVar).e(this.f39310d) > kVar.a()) {
-            return h(kVar.a());
+    public y0 h(st.g gVar) {
+        st.k kVar = (st.k) this.f38403e.apply(gVar);
+        if ((gVar.i() + 7) - y(gVar).e(this.f38402d) > kVar.a()) {
+            return j(kVar.a());
         }
-        return this.f39310d.f().f(6);
+        return this.f38402d.f().f(6);
     }
 
-    @Override // rt.z
+    @Override // st.z
     /* renamed from: e */
-    public y0 o(rt.g gVar) {
-        rt.k kVar = (rt.k) this.f39311e.apply(gVar);
-        if ((gVar.i() + 1) - y(gVar).e(this.f39310d) < kVar.d()) {
-            return h(kVar.d());
+    public y0 m(st.g gVar) {
+        st.k kVar = (st.k) this.f38403e.apply(gVar);
+        if ((gVar.i() + 1) - y(gVar).e(this.f38402d) < kVar.d()) {
+            return j(kVar.d());
         }
-        return this.f39310d.f();
+        return this.f38402d.f();
     }
 
-    @Override // rt.z
+    @Override // st.z
     /* renamed from: f */
-    public y0 y(rt.g gVar) {
-        return h(gVar.i());
+    public y0 y(st.g gVar) {
+        return j(gVar.i());
     }
 
-    @Override // rt.z
-    /* renamed from: i */
-    public boolean n(rt.g gVar, y0 y0Var) {
+    @Override // st.z
+    /* renamed from: l */
+    public boolean k(st.g gVar, y0 y0Var) {
         if (y0Var == null) {
             return false;
         }
-        int e10 = y(gVar).e(this.f39310d);
-        long i10 = (gVar.i() + y0Var.e(this.f39310d)) - e10;
-        rt.k kVar = (rt.k) this.f39311e.apply(gVar);
+        int e10 = y(gVar).e(this.f38402d);
+        long i10 = (gVar.i() + y0Var.e(this.f38402d)) - e10;
+        st.k kVar = (st.k) this.f38403e.apply(gVar);
         if (i10 < kVar.d() || i10 > kVar.a()) {
             return false;
         }
         return true;
     }
 
-    @Override // rt.z
-    /* renamed from: j */
-    public rt.g u(rt.g gVar, y0 y0Var, boolean z10) {
+    @Override // st.z
+    /* renamed from: o */
+    public st.g s(st.g gVar, y0 y0Var, boolean z10) {
         if (y0Var != null) {
-            int e10 = y(gVar).e(this.f39310d);
-            long i10 = (gVar.i() + y0Var.e(this.f39310d)) - e10;
-            rt.k kVar = (rt.k) this.f39311e.apply(gVar);
+            int e10 = y(gVar).e(this.f38402d);
+            long i10 = (gVar.i() + y0Var.e(this.f38402d)) - e10;
+            st.k kVar = (st.k) this.f38403e.apply(gVar);
             if (i10 >= kVar.d() && i10 <= kVar.a()) {
-                return (rt.g) kVar.b(i10);
+                return (st.g) kVar.b(i10);
             }
             throw new IllegalArgumentException("New day out of supported range.");
         }

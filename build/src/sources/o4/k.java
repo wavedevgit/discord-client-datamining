@@ -9,12 +9,12 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f41520a;
+    private static final String f40250a;
 
     static {
         String i10 = k4.m.i("NetworkStateTracker");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"NetworkStateTracker\")");
-        f41520a = i10;
+        f40250a = i10;
     }
 
     public static final h a(Context context, r4.b taskExecutor) {
@@ -50,7 +50,7 @@ public abstract class k {
             }
             return q4.j.b(a10, 16);
         } catch (SecurityException e10) {
-            k4.m.e().d(f41520a, "Unable to validate active network", e10);
+            k4.m.e().d(f40250a, "Unable to validate active network", e10);
             return false;
         }
     }

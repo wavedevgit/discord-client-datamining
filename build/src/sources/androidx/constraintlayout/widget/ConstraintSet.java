@@ -26,201 +26,201 @@ import org.xmlpull.v1.XmlPullParserException;
 public class ConstraintSet {
 
     /* renamed from: g  reason: collision with root package name */
-    private static final int[] f2936g = {0, 4, 8};
+    private static final int[] f2633g = {0, 4, 8};
 
     /* renamed from: h  reason: collision with root package name */
-    private static SparseIntArray f2937h = new SparseIntArray();
+    private static SparseIntArray f2634h = new SparseIntArray();
 
     /* renamed from: i  reason: collision with root package name */
-    private static SparseIntArray f2938i = new SparseIntArray();
+    private static SparseIntArray f2635i = new SparseIntArray();
 
     /* renamed from: a  reason: collision with root package name */
-    public String f2939a = "";
+    public String f2636a = "";
 
     /* renamed from: b  reason: collision with root package name */
-    private String[] f2940b = new String[0];
+    private String[] f2637b = new String[0];
 
     /* renamed from: c  reason: collision with root package name */
-    public int f2941c = 0;
+    public int f2638c = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private HashMap f2942d = new HashMap();
+    private HashMap f2639d = new HashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f2943e = true;
+    private boolean f2640e = true;
 
     /* renamed from: f  reason: collision with root package name */
-    private HashMap f2944f = new HashMap();
+    private HashMap f2641f = new HashMap();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        int f2945a;
+        int f2642a;
 
         /* renamed from: b  reason: collision with root package name */
-        String f2946b;
+        String f2643b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final d f2947c = new d();
+        public final d f2644c = new d();
 
         /* renamed from: d  reason: collision with root package name */
-        public final c f2948d = new c();
+        public final c f2645d = new c();
 
         /* renamed from: e  reason: collision with root package name */
-        public final b f2949e = new b();
+        public final b f2646e = new b();
 
         /* renamed from: f  reason: collision with root package name */
-        public final e f2950f = new e();
+        public final e f2647f = new e();
 
         /* renamed from: g  reason: collision with root package name */
-        public HashMap f2951g = new HashMap();
+        public HashMap f2648g = new HashMap();
 
         /* renamed from: h  reason: collision with root package name */
-        C0028a f2952h;
+        C0030a f2649h;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: androidx.constraintlayout.widget.ConstraintSet$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static class C0028a {
+        public static class C0030a {
 
             /* renamed from: a  reason: collision with root package name */
-            int[] f2953a = new int[10];
+            int[] f2650a = new int[10];
 
             /* renamed from: b  reason: collision with root package name */
-            int[] f2954b = new int[10];
+            int[] f2651b = new int[10];
 
             /* renamed from: c  reason: collision with root package name */
-            int f2955c = 0;
+            int f2652c = 0;
 
             /* renamed from: d  reason: collision with root package name */
-            int[] f2956d = new int[10];
+            int[] f2653d = new int[10];
 
             /* renamed from: e  reason: collision with root package name */
-            float[] f2957e = new float[10];
+            float[] f2654e = new float[10];
 
             /* renamed from: f  reason: collision with root package name */
-            int f2958f = 0;
+            int f2655f = 0;
 
             /* renamed from: g  reason: collision with root package name */
-            int[] f2959g = new int[5];
+            int[] f2656g = new int[5];
 
             /* renamed from: h  reason: collision with root package name */
-            String[] f2960h = new String[5];
+            String[] f2657h = new String[5];
 
             /* renamed from: i  reason: collision with root package name */
-            int f2961i = 0;
+            int f2658i = 0;
 
             /* renamed from: j  reason: collision with root package name */
-            int[] f2962j = new int[4];
+            int[] f2659j = new int[4];
 
             /* renamed from: k  reason: collision with root package name */
-            boolean[] f2963k = new boolean[4];
+            boolean[] f2660k = new boolean[4];
 
             /* renamed from: l  reason: collision with root package name */
-            int f2964l = 0;
+            int f2661l = 0;
 
-            C0028a() {
+            C0030a() {
             }
 
             void a(int i10, float f10) {
-                int i11 = this.f2958f;
-                int[] iArr = this.f2956d;
+                int i11 = this.f2655f;
+                int[] iArr = this.f2653d;
                 if (i11 >= iArr.length) {
-                    this.f2956d = Arrays.copyOf(iArr, iArr.length * 2);
-                    float[] fArr = this.f2957e;
-                    this.f2957e = Arrays.copyOf(fArr, fArr.length * 2);
+                    this.f2653d = Arrays.copyOf(iArr, iArr.length * 2);
+                    float[] fArr = this.f2654e;
+                    this.f2654e = Arrays.copyOf(fArr, fArr.length * 2);
                 }
-                int[] iArr2 = this.f2956d;
-                int i12 = this.f2958f;
+                int[] iArr2 = this.f2653d;
+                int i12 = this.f2655f;
                 iArr2[i12] = i10;
-                float[] fArr2 = this.f2957e;
-                this.f2958f = i12 + 1;
+                float[] fArr2 = this.f2654e;
+                this.f2655f = i12 + 1;
                 fArr2[i12] = f10;
             }
 
             void b(int i10, int i11) {
-                int i12 = this.f2955c;
-                int[] iArr = this.f2953a;
+                int i12 = this.f2652c;
+                int[] iArr = this.f2650a;
                 if (i12 >= iArr.length) {
-                    this.f2953a = Arrays.copyOf(iArr, iArr.length * 2);
-                    int[] iArr2 = this.f2954b;
-                    this.f2954b = Arrays.copyOf(iArr2, iArr2.length * 2);
+                    this.f2650a = Arrays.copyOf(iArr, iArr.length * 2);
+                    int[] iArr2 = this.f2651b;
+                    this.f2651b = Arrays.copyOf(iArr2, iArr2.length * 2);
                 }
-                int[] iArr3 = this.f2953a;
-                int i13 = this.f2955c;
+                int[] iArr3 = this.f2650a;
+                int i13 = this.f2652c;
                 iArr3[i13] = i10;
-                int[] iArr4 = this.f2954b;
-                this.f2955c = i13 + 1;
+                int[] iArr4 = this.f2651b;
+                this.f2652c = i13 + 1;
                 iArr4[i13] = i11;
             }
 
             void c(int i10, String str) {
-                int i11 = this.f2961i;
-                int[] iArr = this.f2959g;
+                int i11 = this.f2658i;
+                int[] iArr = this.f2656g;
                 if (i11 >= iArr.length) {
-                    this.f2959g = Arrays.copyOf(iArr, iArr.length * 2);
-                    String[] strArr = this.f2960h;
-                    this.f2960h = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+                    this.f2656g = Arrays.copyOf(iArr, iArr.length * 2);
+                    String[] strArr = this.f2657h;
+                    this.f2657h = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
                 }
-                int[] iArr2 = this.f2959g;
-                int i12 = this.f2961i;
+                int[] iArr2 = this.f2656g;
+                int i12 = this.f2658i;
                 iArr2[i12] = i10;
-                String[] strArr2 = this.f2960h;
-                this.f2961i = i12 + 1;
+                String[] strArr2 = this.f2657h;
+                this.f2658i = i12 + 1;
                 strArr2[i12] = str;
             }
 
             void d(int i10, boolean z10) {
-                int i11 = this.f2964l;
-                int[] iArr = this.f2962j;
+                int i11 = this.f2661l;
+                int[] iArr = this.f2659j;
                 if (i11 >= iArr.length) {
-                    this.f2962j = Arrays.copyOf(iArr, iArr.length * 2);
-                    boolean[] zArr = this.f2963k;
-                    this.f2963k = Arrays.copyOf(zArr, zArr.length * 2);
+                    this.f2659j = Arrays.copyOf(iArr, iArr.length * 2);
+                    boolean[] zArr = this.f2660k;
+                    this.f2660k = Arrays.copyOf(zArr, zArr.length * 2);
                 }
-                int[] iArr2 = this.f2962j;
-                int i12 = this.f2964l;
+                int[] iArr2 = this.f2659j;
+                int i12 = this.f2661l;
                 iArr2[i12] = i10;
-                boolean[] zArr2 = this.f2963k;
-                this.f2964l = i12 + 1;
+                boolean[] zArr2 = this.f2660k;
+                this.f2661l = i12 + 1;
                 zArr2[i12] = z10;
             }
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public void d(int i10, ConstraintLayout.LayoutParams layoutParams) {
-            this.f2945a = i10;
-            b bVar = this.f2949e;
-            bVar.f2984j = layoutParams.f2868e;
-            bVar.f2986k = layoutParams.f2870f;
-            bVar.f2988l = layoutParams.f2872g;
-            bVar.f2990m = layoutParams.f2874h;
-            bVar.f2992n = layoutParams.f2876i;
-            bVar.f2994o = layoutParams.f2878j;
-            bVar.f2996p = layoutParams.f2880k;
-            bVar.f2998q = layoutParams.f2882l;
-            bVar.f3000r = layoutParams.f2884m;
-            bVar.f3001s = layoutParams.f2886n;
-            bVar.f3002t = layoutParams.f2888o;
-            bVar.f3003u = layoutParams.f2896s;
-            bVar.f3004v = layoutParams.f2898t;
-            bVar.f3005w = layoutParams.f2900u;
-            bVar.f3006x = layoutParams.f2902v;
-            bVar.f3007y = layoutParams.G;
-            bVar.f3008z = layoutParams.H;
+            this.f2642a = i10;
+            b bVar = this.f2646e;
+            bVar.f2681j = layoutParams.f2565e;
+            bVar.f2683k = layoutParams.f2567f;
+            bVar.f2685l = layoutParams.f2569g;
+            bVar.f2687m = layoutParams.f2571h;
+            bVar.f2689n = layoutParams.f2573i;
+            bVar.f2691o = layoutParams.f2575j;
+            bVar.f2693p = layoutParams.f2577k;
+            bVar.f2695q = layoutParams.f2579l;
+            bVar.f2697r = layoutParams.f2581m;
+            bVar.f2698s = layoutParams.f2583n;
+            bVar.f2699t = layoutParams.f2585o;
+            bVar.f2700u = layoutParams.f2593s;
+            bVar.f2701v = layoutParams.f2595t;
+            bVar.f2702w = layoutParams.f2597u;
+            bVar.f2703x = layoutParams.f2599v;
+            bVar.f2704y = layoutParams.G;
+            bVar.f2705z = layoutParams.H;
             bVar.A = layoutParams.I;
-            bVar.B = layoutParams.f2890p;
-            bVar.C = layoutParams.f2892q;
-            bVar.D = layoutParams.f2894r;
+            bVar.B = layoutParams.f2587p;
+            bVar.C = layoutParams.f2589q;
+            bVar.D = layoutParams.f2591r;
             bVar.E = layoutParams.X;
             bVar.F = layoutParams.Y;
             bVar.G = layoutParams.Z;
-            bVar.f2980h = layoutParams.f2864c;
-            bVar.f2976f = layoutParams.f2860a;
-            bVar.f2978g = layoutParams.f2862b;
-            bVar.f2972d = ((ViewGroup.MarginLayoutParams) layoutParams).width;
-            bVar.f2974e = ((ViewGroup.MarginLayoutParams) layoutParams).height;
+            bVar.f2677h = layoutParams.f2561c;
+            bVar.f2673f = layoutParams.f2557a;
+            bVar.f2675g = layoutParams.f2559b;
+            bVar.f2669d = ((ViewGroup.MarginLayoutParams) layoutParams).width;
+            bVar.f2671e = ((ViewGroup.MarginLayoutParams) layoutParams).height;
             bVar.H = ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin;
             bVar.I = ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin;
             bVar.J = ((ViewGroup.MarginLayoutParams) layoutParams).topMargin;
@@ -230,59 +230,59 @@ public class ConstraintSet {
             bVar.W = layoutParams.L;
             bVar.Y = layoutParams.O;
             bVar.X = layoutParams.N;
-            bVar.f2993n0 = layoutParams.f2861a0;
-            bVar.f2995o0 = layoutParams.f2863b0;
+            bVar.f2690n0 = layoutParams.f2558a0;
+            bVar.f2692o0 = layoutParams.f2560b0;
             bVar.Z = layoutParams.P;
-            bVar.f2967a0 = layoutParams.Q;
-            bVar.f2969b0 = layoutParams.T;
-            bVar.f2971c0 = layoutParams.U;
-            bVar.f2973d0 = layoutParams.R;
-            bVar.f2975e0 = layoutParams.S;
-            bVar.f2977f0 = layoutParams.V;
-            bVar.f2979g0 = layoutParams.W;
-            bVar.f2991m0 = layoutParams.f2865c0;
-            bVar.P = layoutParams.f2906x;
-            bVar.R = layoutParams.f2908z;
-            bVar.O = layoutParams.f2904w;
-            bVar.Q = layoutParams.f2907y;
+            bVar.f2664a0 = layoutParams.Q;
+            bVar.f2666b0 = layoutParams.T;
+            bVar.f2668c0 = layoutParams.U;
+            bVar.f2670d0 = layoutParams.R;
+            bVar.f2672e0 = layoutParams.S;
+            bVar.f2674f0 = layoutParams.V;
+            bVar.f2676g0 = layoutParams.W;
+            bVar.f2688m0 = layoutParams.f2562c0;
+            bVar.P = layoutParams.f2603x;
+            bVar.R = layoutParams.f2605z;
+            bVar.O = layoutParams.f2601w;
+            bVar.Q = layoutParams.f2604y;
             bVar.T = layoutParams.A;
             bVar.S = layoutParams.B;
             bVar.U = layoutParams.C;
-            bVar.f2999q0 = layoutParams.f2867d0;
+            bVar.f2696q0 = layoutParams.f2564d0;
             bVar.L = layoutParams.getMarginEnd();
-            this.f2949e.M = layoutParams.getMarginStart();
+            this.f2646e.M = layoutParams.getMarginStart();
         }
 
         public void b(ConstraintLayout.LayoutParams layoutParams) {
-            b bVar = this.f2949e;
-            layoutParams.f2868e = bVar.f2984j;
-            layoutParams.f2870f = bVar.f2986k;
-            layoutParams.f2872g = bVar.f2988l;
-            layoutParams.f2874h = bVar.f2990m;
-            layoutParams.f2876i = bVar.f2992n;
-            layoutParams.f2878j = bVar.f2994o;
-            layoutParams.f2880k = bVar.f2996p;
-            layoutParams.f2882l = bVar.f2998q;
-            layoutParams.f2884m = bVar.f3000r;
-            layoutParams.f2886n = bVar.f3001s;
-            layoutParams.f2888o = bVar.f3002t;
-            layoutParams.f2896s = bVar.f3003u;
-            layoutParams.f2898t = bVar.f3004v;
-            layoutParams.f2900u = bVar.f3005w;
-            layoutParams.f2902v = bVar.f3006x;
+            b bVar = this.f2646e;
+            layoutParams.f2565e = bVar.f2681j;
+            layoutParams.f2567f = bVar.f2683k;
+            layoutParams.f2569g = bVar.f2685l;
+            layoutParams.f2571h = bVar.f2687m;
+            layoutParams.f2573i = bVar.f2689n;
+            layoutParams.f2575j = bVar.f2691o;
+            layoutParams.f2577k = bVar.f2693p;
+            layoutParams.f2579l = bVar.f2695q;
+            layoutParams.f2581m = bVar.f2697r;
+            layoutParams.f2583n = bVar.f2698s;
+            layoutParams.f2585o = bVar.f2699t;
+            layoutParams.f2593s = bVar.f2700u;
+            layoutParams.f2595t = bVar.f2701v;
+            layoutParams.f2597u = bVar.f2702w;
+            layoutParams.f2599v = bVar.f2703x;
             ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin = bVar.H;
             ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin = bVar.I;
             ((ViewGroup.MarginLayoutParams) layoutParams).topMargin = bVar.J;
             ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin = bVar.K;
             layoutParams.A = bVar.T;
             layoutParams.B = bVar.S;
-            layoutParams.f2906x = bVar.P;
-            layoutParams.f2908z = bVar.R;
-            layoutParams.G = bVar.f3007y;
-            layoutParams.H = bVar.f3008z;
-            layoutParams.f2890p = bVar.B;
-            layoutParams.f2892q = bVar.C;
-            layoutParams.f2894r = bVar.D;
+            layoutParams.f2603x = bVar.P;
+            layoutParams.f2605z = bVar.R;
+            layoutParams.G = bVar.f2704y;
+            layoutParams.H = bVar.f2705z;
+            layoutParams.f2587p = bVar.B;
+            layoutParams.f2589q = bVar.C;
+            layoutParams.f2591r = bVar.D;
             layoutParams.I = bVar.A;
             layoutParams.X = bVar.E;
             layoutParams.Y = bVar.F;
@@ -290,41 +290,41 @@ public class ConstraintSet {
             layoutParams.L = bVar.W;
             layoutParams.O = bVar.Y;
             layoutParams.N = bVar.X;
-            layoutParams.f2861a0 = bVar.f2993n0;
-            layoutParams.f2863b0 = bVar.f2995o0;
+            layoutParams.f2558a0 = bVar.f2690n0;
+            layoutParams.f2560b0 = bVar.f2692o0;
             layoutParams.P = bVar.Z;
-            layoutParams.Q = bVar.f2967a0;
-            layoutParams.T = bVar.f2969b0;
-            layoutParams.U = bVar.f2971c0;
-            layoutParams.R = bVar.f2973d0;
-            layoutParams.S = bVar.f2975e0;
-            layoutParams.V = bVar.f2977f0;
-            layoutParams.W = bVar.f2979g0;
+            layoutParams.Q = bVar.f2664a0;
+            layoutParams.T = bVar.f2666b0;
+            layoutParams.U = bVar.f2668c0;
+            layoutParams.R = bVar.f2670d0;
+            layoutParams.S = bVar.f2672e0;
+            layoutParams.V = bVar.f2674f0;
+            layoutParams.W = bVar.f2676g0;
             layoutParams.Z = bVar.G;
-            layoutParams.f2864c = bVar.f2980h;
-            layoutParams.f2860a = bVar.f2976f;
-            layoutParams.f2862b = bVar.f2978g;
-            ((ViewGroup.MarginLayoutParams) layoutParams).width = bVar.f2972d;
-            ((ViewGroup.MarginLayoutParams) layoutParams).height = bVar.f2974e;
-            String str = bVar.f2991m0;
+            layoutParams.f2561c = bVar.f2677h;
+            layoutParams.f2557a = bVar.f2673f;
+            layoutParams.f2559b = bVar.f2675g;
+            ((ViewGroup.MarginLayoutParams) layoutParams).width = bVar.f2669d;
+            ((ViewGroup.MarginLayoutParams) layoutParams).height = bVar.f2671e;
+            String str = bVar.f2688m0;
             if (str != null) {
-                layoutParams.f2865c0 = str;
+                layoutParams.f2562c0 = str;
             }
-            layoutParams.f2867d0 = bVar.f2999q0;
+            layoutParams.f2564d0 = bVar.f2696q0;
             layoutParams.setMarginStart(bVar.M);
-            layoutParams.setMarginEnd(this.f2949e.L);
+            layoutParams.setMarginEnd(this.f2646e.L);
             layoutParams.a();
         }
 
         /* renamed from: c */
         public a clone() {
             a aVar = new a();
-            aVar.f2949e.a(this.f2949e);
-            aVar.f2948d.a(this.f2948d);
-            aVar.f2947c.a(this.f2947c);
-            aVar.f2950f.a(this.f2950f);
-            aVar.f2945a = this.f2945a;
-            aVar.f2952h = this.f2952h;
+            aVar.f2646e.a(this.f2646e);
+            aVar.f2645d.a(this.f2645d);
+            aVar.f2644c.a(this.f2644c);
+            aVar.f2647f.a(this.f2647f);
+            aVar.f2642a = this.f2642a;
+            aVar.f2649h = this.f2649h;
             return aVar;
         }
     }
@@ -333,94 +333,94 @@ public class ConstraintSet {
     public static class b {
 
         /* renamed from: r0  reason: collision with root package name */
-        private static SparseIntArray f2965r0;
+        private static SparseIntArray f2662r0;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f2972d;
+        public int f2669d;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f2974e;
+        public int f2671e;
 
         /* renamed from: k0  reason: collision with root package name */
-        public int[] f2987k0;
+        public int[] f2684k0;
 
         /* renamed from: l0  reason: collision with root package name */
-        public String f2989l0;
+        public String f2686l0;
 
         /* renamed from: m0  reason: collision with root package name */
-        public String f2991m0;
+        public String f2688m0;
 
         /* renamed from: a  reason: collision with root package name */
-        public boolean f2966a = false;
+        public boolean f2663a = false;
 
         /* renamed from: b  reason: collision with root package name */
-        public boolean f2968b = false;
+        public boolean f2665b = false;
 
         /* renamed from: c  reason: collision with root package name */
-        public boolean f2970c = false;
+        public boolean f2667c = false;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f2976f = -1;
+        public int f2673f = -1;
 
         /* renamed from: g  reason: collision with root package name */
-        public int f2978g = -1;
+        public int f2675g = -1;
 
         /* renamed from: h  reason: collision with root package name */
-        public float f2980h = -1.0f;
+        public float f2677h = -1.0f;
 
         /* renamed from: i  reason: collision with root package name */
-        public boolean f2982i = true;
+        public boolean f2679i = true;
 
         /* renamed from: j  reason: collision with root package name */
-        public int f2984j = -1;
+        public int f2681j = -1;
 
         /* renamed from: k  reason: collision with root package name */
-        public int f2986k = -1;
+        public int f2683k = -1;
 
         /* renamed from: l  reason: collision with root package name */
-        public int f2988l = -1;
+        public int f2685l = -1;
 
         /* renamed from: m  reason: collision with root package name */
-        public int f2990m = -1;
+        public int f2687m = -1;
 
         /* renamed from: n  reason: collision with root package name */
-        public int f2992n = -1;
+        public int f2689n = -1;
 
         /* renamed from: o  reason: collision with root package name */
-        public int f2994o = -1;
+        public int f2691o = -1;
 
         /* renamed from: p  reason: collision with root package name */
-        public int f2996p = -1;
+        public int f2693p = -1;
 
         /* renamed from: q  reason: collision with root package name */
-        public int f2998q = -1;
+        public int f2695q = -1;
 
         /* renamed from: r  reason: collision with root package name */
-        public int f3000r = -1;
+        public int f2697r = -1;
 
         /* renamed from: s  reason: collision with root package name */
-        public int f3001s = -1;
+        public int f2698s = -1;
 
         /* renamed from: t  reason: collision with root package name */
-        public int f3002t = -1;
+        public int f2699t = -1;
 
         /* renamed from: u  reason: collision with root package name */
-        public int f3003u = -1;
+        public int f2700u = -1;
 
         /* renamed from: v  reason: collision with root package name */
-        public int f3004v = -1;
+        public int f2701v = -1;
 
         /* renamed from: w  reason: collision with root package name */
-        public int f3005w = -1;
+        public int f2702w = -1;
 
         /* renamed from: x  reason: collision with root package name */
-        public int f3006x = -1;
+        public int f2703x = -1;
 
         /* renamed from: y  reason: collision with root package name */
-        public float f3007y = 0.5f;
+        public float f2704y = 0.5f;
 
         /* renamed from: z  reason: collision with root package name */
-        public float f3008z = 0.5f;
+        public float f2705z = 0.5f;
         public String A = null;
         public int B = -1;
         public int C = 0;
@@ -449,147 +449,147 @@ public class ConstraintSet {
         public int Z = 0;
 
         /* renamed from: a0  reason: collision with root package name */
-        public int f2967a0 = 0;
+        public int f2664a0 = 0;
 
         /* renamed from: b0  reason: collision with root package name */
-        public int f2969b0 = 0;
+        public int f2666b0 = 0;
 
         /* renamed from: c0  reason: collision with root package name */
-        public int f2971c0 = 0;
+        public int f2668c0 = 0;
 
         /* renamed from: d0  reason: collision with root package name */
-        public int f2973d0 = 0;
+        public int f2670d0 = 0;
 
         /* renamed from: e0  reason: collision with root package name */
-        public int f2975e0 = 0;
+        public int f2672e0 = 0;
 
         /* renamed from: f0  reason: collision with root package name */
-        public float f2977f0 = 1.0f;
+        public float f2674f0 = 1.0f;
 
         /* renamed from: g0  reason: collision with root package name */
-        public float f2979g0 = 1.0f;
+        public float f2676g0 = 1.0f;
 
         /* renamed from: h0  reason: collision with root package name */
-        public int f2981h0 = -1;
+        public int f2678h0 = -1;
 
         /* renamed from: i0  reason: collision with root package name */
-        public int f2983i0 = 0;
+        public int f2680i0 = 0;
 
         /* renamed from: j0  reason: collision with root package name */
-        public int f2985j0 = -1;
+        public int f2682j0 = -1;
 
         /* renamed from: n0  reason: collision with root package name */
-        public boolean f2993n0 = false;
+        public boolean f2690n0 = false;
 
         /* renamed from: o0  reason: collision with root package name */
-        public boolean f2995o0 = false;
+        public boolean f2692o0 = false;
 
         /* renamed from: p0  reason: collision with root package name */
-        public boolean f2997p0 = true;
+        public boolean f2694p0 = true;
 
         /* renamed from: q0  reason: collision with root package name */
-        public int f2999q0 = 0;
+        public int f2696q0 = 0;
 
         static {
             SparseIntArray sparseIntArray = new SparseIntArray();
-            f2965r0 = sparseIntArray;
+            f2662r0 = sparseIntArray;
             sparseIntArray.append(androidx.constraintlayout.widget.d.C5, 24);
-            f2965r0.append(androidx.constraintlayout.widget.d.D5, 25);
-            f2965r0.append(androidx.constraintlayout.widget.d.F5, 28);
-            f2965r0.append(androidx.constraintlayout.widget.d.G5, 29);
-            f2965r0.append(androidx.constraintlayout.widget.d.L5, 35);
-            f2965r0.append(androidx.constraintlayout.widget.d.K5, 34);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3169l5, 4);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3161k5, 3);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3145i5, 1);
-            f2965r0.append(androidx.constraintlayout.widget.d.T5, 6);
-            f2965r0.append(androidx.constraintlayout.widget.d.U5, 7);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3225s5, 17);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3233t5, 18);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3241u5, 19);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3113e5, 90);
-            f2965r0.append(androidx.constraintlayout.widget.d.Q4, 26);
-            f2965r0.append(androidx.constraintlayout.widget.d.H5, 31);
-            f2965r0.append(androidx.constraintlayout.widget.d.I5, 32);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3217r5, 10);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3209q5, 9);
-            f2965r0.append(androidx.constraintlayout.widget.d.X5, 13);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3080a6, 16);
-            f2965r0.append(androidx.constraintlayout.widget.d.Y5, 14);
-            f2965r0.append(androidx.constraintlayout.widget.d.V5, 11);
-            f2965r0.append(androidx.constraintlayout.widget.d.Z5, 15);
-            f2965r0.append(androidx.constraintlayout.widget.d.W5, 12);
-            f2965r0.append(androidx.constraintlayout.widget.d.O5, 38);
-            f2965r0.append(androidx.constraintlayout.widget.d.A5, 37);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3281z5, 39);
-            f2965r0.append(androidx.constraintlayout.widget.d.N5, 40);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3273y5, 20);
-            f2965r0.append(androidx.constraintlayout.widget.d.M5, 36);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3201p5, 5);
-            f2965r0.append(androidx.constraintlayout.widget.d.B5, 91);
-            f2965r0.append(androidx.constraintlayout.widget.d.J5, 91);
-            f2965r0.append(androidx.constraintlayout.widget.d.E5, 91);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3153j5, 91);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3137h5, 91);
-            f2965r0.append(androidx.constraintlayout.widget.d.T4, 23);
-            f2965r0.append(androidx.constraintlayout.widget.d.V4, 27);
-            f2965r0.append(androidx.constraintlayout.widget.d.X4, 30);
-            f2965r0.append(androidx.constraintlayout.widget.d.Y4, 8);
-            f2965r0.append(androidx.constraintlayout.widget.d.U4, 33);
-            f2965r0.append(androidx.constraintlayout.widget.d.W4, 2);
-            f2965r0.append(androidx.constraintlayout.widget.d.R4, 22);
-            f2965r0.append(androidx.constraintlayout.widget.d.S4, 21);
-            f2965r0.append(androidx.constraintlayout.widget.d.P5, 41);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3249v5, 42);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3129g5, 87);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3121f5, 88);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3089b6, 76);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3177m5, 61);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3193o5, 62);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3185n5, 63);
-            f2965r0.append(androidx.constraintlayout.widget.d.S5, 69);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3265x5, 70);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3097c5, 71);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3079a5, 72);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3088b5, 73);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3105d5, 74);
-            f2965r0.append(androidx.constraintlayout.widget.d.Z4, 75);
-            f2965r0.append(androidx.constraintlayout.widget.d.Q5, 84);
-            f2965r0.append(androidx.constraintlayout.widget.d.R5, 86);
-            f2965r0.append(androidx.constraintlayout.widget.d.Q5, 83);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3257w5, 85);
-            f2965r0.append(androidx.constraintlayout.widget.d.P5, 87);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3249v5, 88);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3222s2, 89);
-            f2965r0.append(androidx.constraintlayout.widget.d.f3113e5, 90);
+            f2662r0.append(androidx.constraintlayout.widget.d.D5, 25);
+            f2662r0.append(androidx.constraintlayout.widget.d.F5, 28);
+            f2662r0.append(androidx.constraintlayout.widget.d.G5, 29);
+            f2662r0.append(androidx.constraintlayout.widget.d.L5, 35);
+            f2662r0.append(androidx.constraintlayout.widget.d.K5, 34);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2866l5, 4);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2858k5, 3);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2842i5, 1);
+            f2662r0.append(androidx.constraintlayout.widget.d.T5, 6);
+            f2662r0.append(androidx.constraintlayout.widget.d.U5, 7);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2922s5, 17);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2930t5, 18);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2938u5, 19);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2810e5, 90);
+            f2662r0.append(androidx.constraintlayout.widget.d.Q4, 26);
+            f2662r0.append(androidx.constraintlayout.widget.d.H5, 31);
+            f2662r0.append(androidx.constraintlayout.widget.d.I5, 32);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2914r5, 10);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2906q5, 9);
+            f2662r0.append(androidx.constraintlayout.widget.d.X5, 13);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2777a6, 16);
+            f2662r0.append(androidx.constraintlayout.widget.d.Y5, 14);
+            f2662r0.append(androidx.constraintlayout.widget.d.V5, 11);
+            f2662r0.append(androidx.constraintlayout.widget.d.Z5, 15);
+            f2662r0.append(androidx.constraintlayout.widget.d.W5, 12);
+            f2662r0.append(androidx.constraintlayout.widget.d.O5, 38);
+            f2662r0.append(androidx.constraintlayout.widget.d.A5, 37);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2978z5, 39);
+            f2662r0.append(androidx.constraintlayout.widget.d.N5, 40);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2970y5, 20);
+            f2662r0.append(androidx.constraintlayout.widget.d.M5, 36);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2898p5, 5);
+            f2662r0.append(androidx.constraintlayout.widget.d.B5, 91);
+            f2662r0.append(androidx.constraintlayout.widget.d.J5, 91);
+            f2662r0.append(androidx.constraintlayout.widget.d.E5, 91);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2850j5, 91);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2834h5, 91);
+            f2662r0.append(androidx.constraintlayout.widget.d.T4, 23);
+            f2662r0.append(androidx.constraintlayout.widget.d.V4, 27);
+            f2662r0.append(androidx.constraintlayout.widget.d.X4, 30);
+            f2662r0.append(androidx.constraintlayout.widget.d.Y4, 8);
+            f2662r0.append(androidx.constraintlayout.widget.d.U4, 33);
+            f2662r0.append(androidx.constraintlayout.widget.d.W4, 2);
+            f2662r0.append(androidx.constraintlayout.widget.d.R4, 22);
+            f2662r0.append(androidx.constraintlayout.widget.d.S4, 21);
+            f2662r0.append(androidx.constraintlayout.widget.d.P5, 41);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2946v5, 42);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2826g5, 87);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2818f5, 88);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2786b6, 76);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2874m5, 61);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2890o5, 62);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2882n5, 63);
+            f2662r0.append(androidx.constraintlayout.widget.d.S5, 69);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2962x5, 70);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2794c5, 71);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2776a5, 72);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2785b5, 73);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2802d5, 74);
+            f2662r0.append(androidx.constraintlayout.widget.d.Z4, 75);
+            f2662r0.append(androidx.constraintlayout.widget.d.Q5, 84);
+            f2662r0.append(androidx.constraintlayout.widget.d.R5, 86);
+            f2662r0.append(androidx.constraintlayout.widget.d.Q5, 83);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2954w5, 85);
+            f2662r0.append(androidx.constraintlayout.widget.d.P5, 87);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2946v5, 88);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2919s2, 89);
+            f2662r0.append(androidx.constraintlayout.widget.d.f2810e5, 90);
         }
 
         public void a(b bVar) {
-            this.f2966a = bVar.f2966a;
-            this.f2972d = bVar.f2972d;
-            this.f2968b = bVar.f2968b;
-            this.f2974e = bVar.f2974e;
-            this.f2976f = bVar.f2976f;
-            this.f2978g = bVar.f2978g;
-            this.f2980h = bVar.f2980h;
-            this.f2982i = bVar.f2982i;
-            this.f2984j = bVar.f2984j;
-            this.f2986k = bVar.f2986k;
-            this.f2988l = bVar.f2988l;
-            this.f2990m = bVar.f2990m;
-            this.f2992n = bVar.f2992n;
-            this.f2994o = bVar.f2994o;
-            this.f2996p = bVar.f2996p;
-            this.f2998q = bVar.f2998q;
-            this.f3000r = bVar.f3000r;
-            this.f3001s = bVar.f3001s;
-            this.f3002t = bVar.f3002t;
-            this.f3003u = bVar.f3003u;
-            this.f3004v = bVar.f3004v;
-            this.f3005w = bVar.f3005w;
-            this.f3006x = bVar.f3006x;
-            this.f3007y = bVar.f3007y;
-            this.f3008z = bVar.f3008z;
+            this.f2663a = bVar.f2663a;
+            this.f2669d = bVar.f2669d;
+            this.f2665b = bVar.f2665b;
+            this.f2671e = bVar.f2671e;
+            this.f2673f = bVar.f2673f;
+            this.f2675g = bVar.f2675g;
+            this.f2677h = bVar.f2677h;
+            this.f2679i = bVar.f2679i;
+            this.f2681j = bVar.f2681j;
+            this.f2683k = bVar.f2683k;
+            this.f2685l = bVar.f2685l;
+            this.f2687m = bVar.f2687m;
+            this.f2689n = bVar.f2689n;
+            this.f2691o = bVar.f2691o;
+            this.f2693p = bVar.f2693p;
+            this.f2695q = bVar.f2695q;
+            this.f2697r = bVar.f2697r;
+            this.f2698s = bVar.f2698s;
+            this.f2699t = bVar.f2699t;
+            this.f2700u = bVar.f2700u;
+            this.f2701v = bVar.f2701v;
+            this.f2702w = bVar.f2702w;
+            this.f2703x = bVar.f2703x;
+            this.f2704y = bVar.f2704y;
+            this.f2705z = bVar.f2705z;
             this.A = bVar.A;
             this.B = bVar.B;
             this.C = bVar.C;
@@ -616,49 +616,49 @@ public class ConstraintSet {
             this.X = bVar.X;
             this.Y = bVar.Y;
             this.Z = bVar.Z;
-            this.f2967a0 = bVar.f2967a0;
-            this.f2969b0 = bVar.f2969b0;
-            this.f2971c0 = bVar.f2971c0;
-            this.f2973d0 = bVar.f2973d0;
-            this.f2975e0 = bVar.f2975e0;
-            this.f2977f0 = bVar.f2977f0;
-            this.f2979g0 = bVar.f2979g0;
-            this.f2981h0 = bVar.f2981h0;
-            this.f2983i0 = bVar.f2983i0;
-            this.f2985j0 = bVar.f2985j0;
-            this.f2991m0 = bVar.f2991m0;
-            int[] iArr = bVar.f2987k0;
-            if (iArr != null && bVar.f2989l0 == null) {
-                this.f2987k0 = Arrays.copyOf(iArr, iArr.length);
+            this.f2664a0 = bVar.f2664a0;
+            this.f2666b0 = bVar.f2666b0;
+            this.f2668c0 = bVar.f2668c0;
+            this.f2670d0 = bVar.f2670d0;
+            this.f2672e0 = bVar.f2672e0;
+            this.f2674f0 = bVar.f2674f0;
+            this.f2676g0 = bVar.f2676g0;
+            this.f2678h0 = bVar.f2678h0;
+            this.f2680i0 = bVar.f2680i0;
+            this.f2682j0 = bVar.f2682j0;
+            this.f2688m0 = bVar.f2688m0;
+            int[] iArr = bVar.f2684k0;
+            if (iArr != null && bVar.f2686l0 == null) {
+                this.f2684k0 = Arrays.copyOf(iArr, iArr.length);
             } else {
-                this.f2987k0 = null;
+                this.f2684k0 = null;
             }
-            this.f2989l0 = bVar.f2989l0;
-            this.f2993n0 = bVar.f2993n0;
-            this.f2995o0 = bVar.f2995o0;
-            this.f2997p0 = bVar.f2997p0;
-            this.f2999q0 = bVar.f2999q0;
+            this.f2686l0 = bVar.f2686l0;
+            this.f2690n0 = bVar.f2690n0;
+            this.f2692o0 = bVar.f2692o0;
+            this.f2694p0 = bVar.f2694p0;
+            this.f2696q0 = bVar.f2696q0;
         }
 
         void b(Context context, AttributeSet attributeSet) {
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, androidx.constraintlayout.widget.d.P4);
-            this.f2968b = true;
+            this.f2665b = true;
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i10 = 0; i10 < indexCount; i10++) {
                 int index = obtainStyledAttributes.getIndex(i10);
-                int i11 = f2965r0.get(index);
+                int i11 = f2662r0.get(index);
                 switch (i11) {
                     case 1:
-                        this.f3000r = ConstraintSet.u(obtainStyledAttributes, index, this.f3000r);
+                        this.f2697r = ConstraintSet.u(obtainStyledAttributes, index, this.f2697r);
                         break;
                     case 2:
                         this.K = obtainStyledAttributes.getDimensionPixelSize(index, this.K);
                         break;
                     case 3:
-                        this.f2998q = ConstraintSet.u(obtainStyledAttributes, index, this.f2998q);
+                        this.f2695q = ConstraintSet.u(obtainStyledAttributes, index, this.f2695q);
                         break;
                     case 4:
-                        this.f2996p = ConstraintSet.u(obtainStyledAttributes, index, this.f2996p);
+                        this.f2693p = ConstraintSet.u(obtainStyledAttributes, index, this.f2693p);
                         break;
                     case 5:
                         this.A = obtainStyledAttributes.getString(index);
@@ -673,10 +673,10 @@ public class ConstraintSet {
                         this.L = obtainStyledAttributes.getDimensionPixelSize(index, this.L);
                         break;
                     case 9:
-                        this.f3006x = ConstraintSet.u(obtainStyledAttributes, index, this.f3006x);
+                        this.f2703x = ConstraintSet.u(obtainStyledAttributes, index, this.f2703x);
                         break;
                     case 10:
-                        this.f3005w = ConstraintSet.u(obtainStyledAttributes, index, this.f3005w);
+                        this.f2702w = ConstraintSet.u(obtainStyledAttributes, index, this.f2702w);
                         break;
                     case 11:
                         this.R = obtainStyledAttributes.getDimensionPixelSize(index, this.R);
@@ -697,31 +697,31 @@ public class ConstraintSet {
                         this.P = obtainStyledAttributes.getDimensionPixelSize(index, this.P);
                         break;
                     case 17:
-                        this.f2976f = obtainStyledAttributes.getDimensionPixelOffset(index, this.f2976f);
+                        this.f2673f = obtainStyledAttributes.getDimensionPixelOffset(index, this.f2673f);
                         break;
                     case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                        this.f2978g = obtainStyledAttributes.getDimensionPixelOffset(index, this.f2978g);
+                        this.f2675g = obtainStyledAttributes.getDimensionPixelOffset(index, this.f2675g);
                         break;
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                        this.f2980h = obtainStyledAttributes.getFloat(index, this.f2980h);
+                        this.f2677h = obtainStyledAttributes.getFloat(index, this.f2677h);
                         break;
                     case 20:
-                        this.f3007y = obtainStyledAttributes.getFloat(index, this.f3007y);
+                        this.f2704y = obtainStyledAttributes.getFloat(index, this.f2704y);
                         break;
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                        this.f2974e = obtainStyledAttributes.getLayoutDimension(index, this.f2974e);
+                        this.f2671e = obtainStyledAttributes.getLayoutDimension(index, this.f2671e);
                         break;
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                        this.f2972d = obtainStyledAttributes.getLayoutDimension(index, this.f2972d);
+                        this.f2669d = obtainStyledAttributes.getLayoutDimension(index, this.f2669d);
                         break;
                     case 23:
                         this.H = obtainStyledAttributes.getDimensionPixelSize(index, this.H);
                         break;
                     case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                        this.f2984j = ConstraintSet.u(obtainStyledAttributes, index, this.f2984j);
+                        this.f2681j = ConstraintSet.u(obtainStyledAttributes, index, this.f2681j);
                         break;
                     case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
-                        this.f2986k = ConstraintSet.u(obtainStyledAttributes, index, this.f2986k);
+                        this.f2683k = ConstraintSet.u(obtainStyledAttributes, index, this.f2683k);
                         break;
                     case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
                         this.G = obtainStyledAttributes.getInt(index, this.G);
@@ -730,31 +730,31 @@ public class ConstraintSet {
                         this.I = obtainStyledAttributes.getDimensionPixelSize(index, this.I);
                         break;
                     case 28:
-                        this.f2988l = ConstraintSet.u(obtainStyledAttributes, index, this.f2988l);
+                        this.f2685l = ConstraintSet.u(obtainStyledAttributes, index, this.f2685l);
                         break;
                     case 29:
-                        this.f2990m = ConstraintSet.u(obtainStyledAttributes, index, this.f2990m);
+                        this.f2687m = ConstraintSet.u(obtainStyledAttributes, index, this.f2687m);
                         break;
                     case 30:
                         this.M = obtainStyledAttributes.getDimensionPixelSize(index, this.M);
                         break;
                     case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
-                        this.f3003u = ConstraintSet.u(obtainStyledAttributes, index, this.f3003u);
+                        this.f2700u = ConstraintSet.u(obtainStyledAttributes, index, this.f2700u);
                         break;
                     case 32:
-                        this.f3004v = ConstraintSet.u(obtainStyledAttributes, index, this.f3004v);
+                        this.f2701v = ConstraintSet.u(obtainStyledAttributes, index, this.f2701v);
                         break;
                     case ChatViewRecyclerTypes.AUTO_MODERATION_NOTIFICATION_EMBED /* 33 */:
                         this.J = obtainStyledAttributes.getDimensionPixelSize(index, this.J);
                         break;
                     case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
-                        this.f2994o = ConstraintSet.u(obtainStyledAttributes, index, this.f2994o);
+                        this.f2691o = ConstraintSet.u(obtainStyledAttributes, index, this.f2691o);
                         break;
                     case ChatViewRecyclerTypes.INFO_LINK /* 35 */:
-                        this.f2992n = ConstraintSet.u(obtainStyledAttributes, index, this.f2992n);
+                        this.f2689n = ConstraintSet.u(obtainStyledAttributes, index, this.f2689n);
                         break;
                     case ChatViewRecyclerTypes.SAFETY_POLICY_NOTICE /* 36 */:
-                        this.f3008z = obtainStyledAttributes.getFloat(index, this.f3008z);
+                        this.f2705z = obtainStyledAttributes.getFloat(index, this.f2705z);
                         break;
                     case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
                         this.W = obtainStyledAttributes.getFloat(index, this.W);
@@ -788,34 +788,34 @@ public class ConstraintSet {
                             default:
                                 switch (i11) {
                                     case 69:
-                                        this.f2977f0 = obtainStyledAttributes.getFloat(index, 1.0f);
+                                        this.f2674f0 = obtainStyledAttributes.getFloat(index, 1.0f);
                                         continue;
                                     case 70:
-                                        this.f2979g0 = obtainStyledAttributes.getFloat(index, 1.0f);
+                                        this.f2676g0 = obtainStyledAttributes.getFloat(index, 1.0f);
                                         continue;
                                     case 71:
                                         Log.e("ConstraintSet", "CURRENTLY UNSUPPORTED");
                                         continue;
                                     case 72:
-                                        this.f2981h0 = obtainStyledAttributes.getInt(index, this.f2981h0);
+                                        this.f2678h0 = obtainStyledAttributes.getInt(index, this.f2678h0);
                                         continue;
                                     case 73:
-                                        this.f2983i0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2983i0);
+                                        this.f2680i0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2680i0);
                                         continue;
                                     case 74:
-                                        this.f2989l0 = obtainStyledAttributes.getString(index);
+                                        this.f2686l0 = obtainStyledAttributes.getString(index);
                                         continue;
                                     case 75:
-                                        this.f2997p0 = obtainStyledAttributes.getBoolean(index, this.f2997p0);
+                                        this.f2694p0 = obtainStyledAttributes.getBoolean(index, this.f2694p0);
                                         continue;
                                     case 76:
-                                        this.f2999q0 = obtainStyledAttributes.getInt(index, this.f2999q0);
+                                        this.f2696q0 = obtainStyledAttributes.getInt(index, this.f2696q0);
                                         continue;
                                     case 77:
-                                        this.f3001s = ConstraintSet.u(obtainStyledAttributes, index, this.f3001s);
+                                        this.f2698s = ConstraintSet.u(obtainStyledAttributes, index, this.f2698s);
                                         continue;
                                     case 78:
-                                        this.f3002t = ConstraintSet.u(obtainStyledAttributes, index, this.f3002t);
+                                        this.f2699t = ConstraintSet.u(obtainStyledAttributes, index, this.f2699t);
                                         continue;
                                     case 79:
                                         this.U = obtainStyledAttributes.getDimensionPixelSize(index, this.U);
@@ -827,37 +827,37 @@ public class ConstraintSet {
                                         this.Z = obtainStyledAttributes.getInt(index, this.Z);
                                         continue;
                                     case 82:
-                                        this.f2967a0 = obtainStyledAttributes.getInt(index, this.f2967a0);
+                                        this.f2664a0 = obtainStyledAttributes.getInt(index, this.f2664a0);
                                         continue;
                                     case 83:
-                                        this.f2971c0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2971c0);
+                                        this.f2668c0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2668c0);
                                         continue;
                                     case 84:
-                                        this.f2969b0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2969b0);
+                                        this.f2666b0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2666b0);
                                         continue;
                                     case 85:
-                                        this.f2975e0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2975e0);
+                                        this.f2672e0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2672e0);
                                         continue;
                                     case 86:
-                                        this.f2973d0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2973d0);
+                                        this.f2670d0 = obtainStyledAttributes.getDimensionPixelSize(index, this.f2670d0);
                                         continue;
                                     case 87:
-                                        this.f2993n0 = obtainStyledAttributes.getBoolean(index, this.f2993n0);
+                                        this.f2690n0 = obtainStyledAttributes.getBoolean(index, this.f2690n0);
                                         continue;
                                     case 88:
-                                        this.f2995o0 = obtainStyledAttributes.getBoolean(index, this.f2995o0);
+                                        this.f2692o0 = obtainStyledAttributes.getBoolean(index, this.f2692o0);
                                         continue;
                                     case 89:
-                                        this.f2991m0 = obtainStyledAttributes.getString(index);
+                                        this.f2688m0 = obtainStyledAttributes.getString(index);
                                         continue;
                                     case 90:
-                                        this.f2982i = obtainStyledAttributes.getBoolean(index, this.f2982i);
+                                        this.f2679i = obtainStyledAttributes.getBoolean(index, this.f2679i);
                                         continue;
                                     case 91:
-                                        Log.w("ConstraintSet", "unused attribute 0x" + Integer.toHexString(index) + "   " + f2965r0.get(index));
+                                        Log.w("ConstraintSet", "unused attribute 0x" + Integer.toHexString(index) + "   " + f2662r0.get(index));
                                         continue;
                                     default:
-                                        Log.w("ConstraintSet", "Unknown attribute 0x" + Integer.toHexString(index) + "   " + f2965r0.get(index));
+                                        Log.w("ConstraintSet", "Unknown attribute 0x" + Integer.toHexString(index) + "   " + f2662r0.get(index));
                                         continue;
                                         continue;
                                 }
@@ -872,139 +872,139 @@ public class ConstraintSet {
     public static class c {
 
         /* renamed from: o  reason: collision with root package name */
-        private static SparseIntArray f3009o;
+        private static SparseIntArray f2706o;
 
         /* renamed from: a  reason: collision with root package name */
-        public boolean f3010a = false;
+        public boolean f2707a = false;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f3011b = -1;
+        public int f2708b = -1;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f3012c = 0;
+        public int f2709c = 0;
 
         /* renamed from: d  reason: collision with root package name */
-        public String f3013d = null;
+        public String f2710d = null;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f3014e = -1;
+        public int f2711e = -1;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f3015f = 0;
+        public int f2712f = 0;
 
         /* renamed from: g  reason: collision with root package name */
-        public float f3016g = Float.NaN;
+        public float f2713g = Float.NaN;
 
         /* renamed from: h  reason: collision with root package name */
-        public int f3017h = -1;
+        public int f2714h = -1;
 
         /* renamed from: i  reason: collision with root package name */
-        public float f3018i = Float.NaN;
+        public float f2715i = Float.NaN;
 
         /* renamed from: j  reason: collision with root package name */
-        public float f3019j = Float.NaN;
+        public float f2716j = Float.NaN;
 
         /* renamed from: k  reason: collision with root package name */
-        public int f3020k = -1;
+        public int f2717k = -1;
 
         /* renamed from: l  reason: collision with root package name */
-        public String f3021l = null;
+        public String f2718l = null;
 
         /* renamed from: m  reason: collision with root package name */
-        public int f3022m = -3;
+        public int f2719m = -3;
 
         /* renamed from: n  reason: collision with root package name */
-        public int f3023n = -1;
+        public int f2720n = -1;
 
         static {
             SparseIntArray sparseIntArray = new SparseIntArray();
-            f3009o = sparseIntArray;
-            sparseIntArray.append(androidx.constraintlayout.widget.d.f3138h6, 1);
-            f3009o.append(androidx.constraintlayout.widget.d.f3154j6, 2);
-            f3009o.append(androidx.constraintlayout.widget.d.f3186n6, 3);
-            f3009o.append(androidx.constraintlayout.widget.d.f3130g6, 4);
-            f3009o.append(androidx.constraintlayout.widget.d.f3122f6, 5);
-            f3009o.append(androidx.constraintlayout.widget.d.f3114e6, 6);
-            f3009o.append(androidx.constraintlayout.widget.d.f3146i6, 7);
-            f3009o.append(androidx.constraintlayout.widget.d.f3178m6, 8);
-            f3009o.append(androidx.constraintlayout.widget.d.f3170l6, 9);
-            f3009o.append(androidx.constraintlayout.widget.d.f3162k6, 10);
+            f2706o = sparseIntArray;
+            sparseIntArray.append(androidx.constraintlayout.widget.d.f2835h6, 1);
+            f2706o.append(androidx.constraintlayout.widget.d.f2851j6, 2);
+            f2706o.append(androidx.constraintlayout.widget.d.f2883n6, 3);
+            f2706o.append(androidx.constraintlayout.widget.d.f2827g6, 4);
+            f2706o.append(androidx.constraintlayout.widget.d.f2819f6, 5);
+            f2706o.append(androidx.constraintlayout.widget.d.f2811e6, 6);
+            f2706o.append(androidx.constraintlayout.widget.d.f2843i6, 7);
+            f2706o.append(androidx.constraintlayout.widget.d.f2875m6, 8);
+            f2706o.append(androidx.constraintlayout.widget.d.f2867l6, 9);
+            f2706o.append(androidx.constraintlayout.widget.d.f2859k6, 10);
         }
 
         public void a(c cVar) {
-            this.f3010a = cVar.f3010a;
-            this.f3011b = cVar.f3011b;
-            this.f3013d = cVar.f3013d;
-            this.f3014e = cVar.f3014e;
-            this.f3015f = cVar.f3015f;
-            this.f3018i = cVar.f3018i;
-            this.f3016g = cVar.f3016g;
-            this.f3017h = cVar.f3017h;
+            this.f2707a = cVar.f2707a;
+            this.f2708b = cVar.f2708b;
+            this.f2710d = cVar.f2710d;
+            this.f2711e = cVar.f2711e;
+            this.f2712f = cVar.f2712f;
+            this.f2715i = cVar.f2715i;
+            this.f2713g = cVar.f2713g;
+            this.f2714h = cVar.f2714h;
         }
 
         void b(Context context, AttributeSet attributeSet) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, androidx.constraintlayout.widget.d.f3106d6);
-            this.f3010a = true;
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, androidx.constraintlayout.widget.d.f2803d6);
+            this.f2707a = true;
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i10 = 0; i10 < indexCount; i10++) {
                 int index = obtainStyledAttributes.getIndex(i10);
-                switch (f3009o.get(index)) {
+                switch (f2706o.get(index)) {
                     case 1:
-                        this.f3018i = obtainStyledAttributes.getFloat(index, this.f3018i);
+                        this.f2715i = obtainStyledAttributes.getFloat(index, this.f2715i);
                         break;
                     case 2:
-                        this.f3014e = obtainStyledAttributes.getInt(index, this.f3014e);
+                        this.f2711e = obtainStyledAttributes.getInt(index, this.f2711e);
                         break;
                     case 3:
                         if (obtainStyledAttributes.peekValue(index).type == 3) {
-                            this.f3013d = obtainStyledAttributes.getString(index);
+                            this.f2710d = obtainStyledAttributes.getString(index);
                             break;
                         } else {
-                            this.f3013d = i1.a.f26589c[obtainStyledAttributes.getInteger(index, 0)];
+                            this.f2710d = i1.a.f26631c[obtainStyledAttributes.getInteger(index, 0)];
                             break;
                         }
                     case 4:
-                        this.f3015f = obtainStyledAttributes.getInt(index, 0);
+                        this.f2712f = obtainStyledAttributes.getInt(index, 0);
                         break;
                     case 5:
-                        this.f3011b = ConstraintSet.u(obtainStyledAttributes, index, this.f3011b);
+                        this.f2708b = ConstraintSet.u(obtainStyledAttributes, index, this.f2708b);
                         break;
                     case 6:
-                        this.f3012c = obtainStyledAttributes.getInteger(index, this.f3012c);
+                        this.f2709c = obtainStyledAttributes.getInteger(index, this.f2709c);
                         break;
                     case 7:
-                        this.f3016g = obtainStyledAttributes.getFloat(index, this.f3016g);
+                        this.f2713g = obtainStyledAttributes.getFloat(index, this.f2713g);
                         break;
                     case 8:
-                        this.f3020k = obtainStyledAttributes.getInteger(index, this.f3020k);
+                        this.f2717k = obtainStyledAttributes.getInteger(index, this.f2717k);
                         break;
                     case 9:
-                        this.f3019j = obtainStyledAttributes.getFloat(index, this.f3019j);
+                        this.f2716j = obtainStyledAttributes.getFloat(index, this.f2716j);
                         break;
                     case 10:
                         int i11 = obtainStyledAttributes.peekValue(index).type;
                         if (i11 == 1) {
                             int resourceId = obtainStyledAttributes.getResourceId(index, -1);
-                            this.f3023n = resourceId;
+                            this.f2720n = resourceId;
                             if (resourceId != -1) {
-                                this.f3022m = -2;
+                                this.f2719m = -2;
                                 break;
                             } else {
                                 break;
                             }
                         } else if (i11 == 3) {
                             String string = obtainStyledAttributes.getString(index);
-                            this.f3021l = string;
+                            this.f2718l = string;
                             if (string.indexOf("/") > 0) {
-                                this.f3023n = obtainStyledAttributes.getResourceId(index, -1);
-                                this.f3022m = -2;
+                                this.f2720n = obtainStyledAttributes.getResourceId(index, -1);
+                                this.f2719m = -2;
                                 break;
                             } else {
-                                this.f3022m = -1;
+                                this.f2719m = -1;
                                 break;
                             }
                         } else {
-                            this.f3022m = obtainStyledAttributes.getInteger(index, this.f3023n);
+                            this.f2719m = obtainStyledAttributes.getInteger(index, this.f2720n);
                             break;
                         }
                 }
@@ -1017,43 +1017,43 @@ public class ConstraintSet {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public boolean f3024a = false;
+        public boolean f2721a = false;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f3025b = 0;
+        public int f2722b = 0;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f3026c = 0;
+        public int f2723c = 0;
 
         /* renamed from: d  reason: collision with root package name */
-        public float f3027d = 1.0f;
+        public float f2724d = 1.0f;
 
         /* renamed from: e  reason: collision with root package name */
-        public float f3028e = Float.NaN;
+        public float f2725e = Float.NaN;
 
         public void a(d dVar) {
-            this.f3024a = dVar.f3024a;
-            this.f3025b = dVar.f3025b;
-            this.f3027d = dVar.f3027d;
-            this.f3028e = dVar.f3028e;
-            this.f3026c = dVar.f3026c;
+            this.f2721a = dVar.f2721a;
+            this.f2722b = dVar.f2722b;
+            this.f2724d = dVar.f2724d;
+            this.f2725e = dVar.f2725e;
+            this.f2723c = dVar.f2723c;
         }
 
         void b(Context context, AttributeSet attributeSet) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, androidx.constraintlayout.widget.d.f3258w6);
-            this.f3024a = true;
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, androidx.constraintlayout.widget.d.f2955w6);
+            this.f2721a = true;
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i10 = 0; i10 < indexCount; i10++) {
                 int index = obtainStyledAttributes.getIndex(i10);
-                if (index == androidx.constraintlayout.widget.d.f3274y6) {
-                    this.f3027d = obtainStyledAttributes.getFloat(index, this.f3027d);
-                } else if (index == androidx.constraintlayout.widget.d.f3266x6) {
-                    this.f3025b = obtainStyledAttributes.getInt(index, this.f3025b);
-                    this.f3025b = ConstraintSet.f2936g[this.f3025b];
+                if (index == androidx.constraintlayout.widget.d.f2971y6) {
+                    this.f2724d = obtainStyledAttributes.getFloat(index, this.f2724d);
+                } else if (index == androidx.constraintlayout.widget.d.f2963x6) {
+                    this.f2722b = obtainStyledAttributes.getInt(index, this.f2722b);
+                    this.f2722b = ConstraintSet.f2633g[this.f2722b];
                 } else if (index == androidx.constraintlayout.widget.d.A6) {
-                    this.f3026c = obtainStyledAttributes.getInt(index, this.f3026c);
-                } else if (index == androidx.constraintlayout.widget.d.f3282z6) {
-                    this.f3028e = obtainStyledAttributes.getFloat(index, this.f3028e);
+                    this.f2723c = obtainStyledAttributes.getInt(index, this.f2723c);
+                } else if (index == androidx.constraintlayout.widget.d.f2979z6) {
+                    this.f2725e = obtainStyledAttributes.getFloat(index, this.f2725e);
                 }
             }
             obtainStyledAttributes.recycle();
@@ -1064,127 +1064,127 @@ public class ConstraintSet {
     public static class e {
 
         /* renamed from: o  reason: collision with root package name */
-        private static SparseIntArray f3029o;
+        private static SparseIntArray f2726o;
 
         /* renamed from: a  reason: collision with root package name */
-        public boolean f3030a = false;
+        public boolean f2727a = false;
 
         /* renamed from: b  reason: collision with root package name */
-        public float f3031b = 0.0f;
+        public float f2728b = 0.0f;
 
         /* renamed from: c  reason: collision with root package name */
-        public float f3032c = 0.0f;
+        public float f2729c = 0.0f;
 
         /* renamed from: d  reason: collision with root package name */
-        public float f3033d = 0.0f;
+        public float f2730d = 0.0f;
 
         /* renamed from: e  reason: collision with root package name */
-        public float f3034e = 1.0f;
+        public float f2731e = 1.0f;
 
         /* renamed from: f  reason: collision with root package name */
-        public float f3035f = 1.0f;
+        public float f2732f = 1.0f;
 
         /* renamed from: g  reason: collision with root package name */
-        public float f3036g = Float.NaN;
+        public float f2733g = Float.NaN;
 
         /* renamed from: h  reason: collision with root package name */
-        public float f3037h = Float.NaN;
+        public float f2734h = Float.NaN;
 
         /* renamed from: i  reason: collision with root package name */
-        public int f3038i = -1;
+        public int f2735i = -1;
 
         /* renamed from: j  reason: collision with root package name */
-        public float f3039j = 0.0f;
+        public float f2736j = 0.0f;
 
         /* renamed from: k  reason: collision with root package name */
-        public float f3040k = 0.0f;
+        public float f2737k = 0.0f;
 
         /* renamed from: l  reason: collision with root package name */
-        public float f3041l = 0.0f;
+        public float f2738l = 0.0f;
 
         /* renamed from: m  reason: collision with root package name */
-        public boolean f3042m = false;
+        public boolean f2739m = false;
 
         /* renamed from: n  reason: collision with root package name */
-        public float f3043n = 0.0f;
+        public float f2740n = 0.0f;
 
         static {
             SparseIntArray sparseIntArray = new SparseIntArray();
-            f3029o = sparseIntArray;
+            f2726o = sparseIntArray;
             sparseIntArray.append(androidx.constraintlayout.widget.d.N6, 1);
-            f3029o.append(androidx.constraintlayout.widget.d.O6, 2);
-            f3029o.append(androidx.constraintlayout.widget.d.P6, 3);
-            f3029o.append(androidx.constraintlayout.widget.d.L6, 4);
-            f3029o.append(androidx.constraintlayout.widget.d.M6, 5);
-            f3029o.append(androidx.constraintlayout.widget.d.H6, 6);
-            f3029o.append(androidx.constraintlayout.widget.d.I6, 7);
-            f3029o.append(androidx.constraintlayout.widget.d.J6, 8);
-            f3029o.append(androidx.constraintlayout.widget.d.K6, 9);
-            f3029o.append(androidx.constraintlayout.widget.d.Q6, 10);
-            f3029o.append(androidx.constraintlayout.widget.d.R6, 11);
-            f3029o.append(androidx.constraintlayout.widget.d.S6, 12);
+            f2726o.append(androidx.constraintlayout.widget.d.O6, 2);
+            f2726o.append(androidx.constraintlayout.widget.d.P6, 3);
+            f2726o.append(androidx.constraintlayout.widget.d.L6, 4);
+            f2726o.append(androidx.constraintlayout.widget.d.M6, 5);
+            f2726o.append(androidx.constraintlayout.widget.d.H6, 6);
+            f2726o.append(androidx.constraintlayout.widget.d.I6, 7);
+            f2726o.append(androidx.constraintlayout.widget.d.J6, 8);
+            f2726o.append(androidx.constraintlayout.widget.d.K6, 9);
+            f2726o.append(androidx.constraintlayout.widget.d.Q6, 10);
+            f2726o.append(androidx.constraintlayout.widget.d.R6, 11);
+            f2726o.append(androidx.constraintlayout.widget.d.S6, 12);
         }
 
         public void a(e eVar) {
-            this.f3030a = eVar.f3030a;
-            this.f3031b = eVar.f3031b;
-            this.f3032c = eVar.f3032c;
-            this.f3033d = eVar.f3033d;
-            this.f3034e = eVar.f3034e;
-            this.f3035f = eVar.f3035f;
-            this.f3036g = eVar.f3036g;
-            this.f3037h = eVar.f3037h;
-            this.f3038i = eVar.f3038i;
-            this.f3039j = eVar.f3039j;
-            this.f3040k = eVar.f3040k;
-            this.f3041l = eVar.f3041l;
-            this.f3042m = eVar.f3042m;
-            this.f3043n = eVar.f3043n;
+            this.f2727a = eVar.f2727a;
+            this.f2728b = eVar.f2728b;
+            this.f2729c = eVar.f2729c;
+            this.f2730d = eVar.f2730d;
+            this.f2731e = eVar.f2731e;
+            this.f2732f = eVar.f2732f;
+            this.f2733g = eVar.f2733g;
+            this.f2734h = eVar.f2734h;
+            this.f2735i = eVar.f2735i;
+            this.f2736j = eVar.f2736j;
+            this.f2737k = eVar.f2737k;
+            this.f2738l = eVar.f2738l;
+            this.f2739m = eVar.f2739m;
+            this.f2740n = eVar.f2740n;
         }
 
         void b(Context context, AttributeSet attributeSet) {
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, androidx.constraintlayout.widget.d.G6);
-            this.f3030a = true;
+            this.f2727a = true;
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i10 = 0; i10 < indexCount; i10++) {
                 int index = obtainStyledAttributes.getIndex(i10);
-                switch (f3029o.get(index)) {
+                switch (f2726o.get(index)) {
                     case 1:
-                        this.f3031b = obtainStyledAttributes.getFloat(index, this.f3031b);
+                        this.f2728b = obtainStyledAttributes.getFloat(index, this.f2728b);
                         break;
                     case 2:
-                        this.f3032c = obtainStyledAttributes.getFloat(index, this.f3032c);
+                        this.f2729c = obtainStyledAttributes.getFloat(index, this.f2729c);
                         break;
                     case 3:
-                        this.f3033d = obtainStyledAttributes.getFloat(index, this.f3033d);
+                        this.f2730d = obtainStyledAttributes.getFloat(index, this.f2730d);
                         break;
                     case 4:
-                        this.f3034e = obtainStyledAttributes.getFloat(index, this.f3034e);
+                        this.f2731e = obtainStyledAttributes.getFloat(index, this.f2731e);
                         break;
                     case 5:
-                        this.f3035f = obtainStyledAttributes.getFloat(index, this.f3035f);
+                        this.f2732f = obtainStyledAttributes.getFloat(index, this.f2732f);
                         break;
                     case 6:
-                        this.f3036g = obtainStyledAttributes.getDimension(index, this.f3036g);
+                        this.f2733g = obtainStyledAttributes.getDimension(index, this.f2733g);
                         break;
                     case 7:
-                        this.f3037h = obtainStyledAttributes.getDimension(index, this.f3037h);
+                        this.f2734h = obtainStyledAttributes.getDimension(index, this.f2734h);
                         break;
                     case 8:
-                        this.f3039j = obtainStyledAttributes.getDimension(index, this.f3039j);
+                        this.f2736j = obtainStyledAttributes.getDimension(index, this.f2736j);
                         break;
                     case 9:
-                        this.f3040k = obtainStyledAttributes.getDimension(index, this.f3040k);
+                        this.f2737k = obtainStyledAttributes.getDimension(index, this.f2737k);
                         break;
                     case 10:
-                        this.f3041l = obtainStyledAttributes.getDimension(index, this.f3041l);
+                        this.f2738l = obtainStyledAttributes.getDimension(index, this.f2738l);
                         break;
                     case 11:
-                        this.f3042m = true;
-                        this.f3043n = obtainStyledAttributes.getDimension(index, this.f3043n);
+                        this.f2739m = true;
+                        this.f2740n = obtainStyledAttributes.getDimension(index, this.f2740n);
                         break;
                     case 12:
-                        this.f3038i = ConstraintSet.u(obtainStyledAttributes, index, this.f3038i);
+                        this.f2735i = ConstraintSet.u(obtainStyledAttributes, index, this.f2735i);
                         break;
                 }
             }
@@ -1193,181 +1193,181 @@ public class ConstraintSet {
     }
 
     static {
-        f2937h.append(androidx.constraintlayout.widget.d.f3140i0, 25);
-        f2937h.append(androidx.constraintlayout.widget.d.f3148j0, 26);
-        f2937h.append(androidx.constraintlayout.widget.d.f3164l0, 29);
-        f2937h.append(androidx.constraintlayout.widget.d.f3172m0, 30);
-        f2937h.append(androidx.constraintlayout.widget.d.f3220s0, 36);
-        f2937h.append(androidx.constraintlayout.widget.d.f3212r0, 35);
-        f2937h.append(androidx.constraintlayout.widget.d.P, 4);
-        f2937h.append(androidx.constraintlayout.widget.d.O, 3);
-        f2937h.append(androidx.constraintlayout.widget.d.K, 1);
-        f2937h.append(androidx.constraintlayout.widget.d.M, 91);
-        f2937h.append(androidx.constraintlayout.widget.d.L, 92);
-        f2937h.append(androidx.constraintlayout.widget.d.B0, 6);
-        f2937h.append(androidx.constraintlayout.widget.d.C0, 7);
-        f2937h.append(androidx.constraintlayout.widget.d.W, 17);
-        f2937h.append(androidx.constraintlayout.widget.d.X, 18);
-        f2937h.append(androidx.constraintlayout.widget.d.Y, 19);
-        f2937h.append(androidx.constraintlayout.widget.d.G, 99);
-        f2937h.append(androidx.constraintlayout.widget.d.f3091c, 27);
-        f2937h.append(androidx.constraintlayout.widget.d.f3180n0, 32);
-        f2937h.append(androidx.constraintlayout.widget.d.f3188o0, 33);
-        f2937h.append(androidx.constraintlayout.widget.d.V, 10);
-        f2937h.append(androidx.constraintlayout.widget.d.U, 9);
-        f2937h.append(androidx.constraintlayout.widget.d.F0, 13);
-        f2937h.append(androidx.constraintlayout.widget.d.I0, 16);
-        f2937h.append(androidx.constraintlayout.widget.d.G0, 14);
-        f2937h.append(androidx.constraintlayout.widget.d.D0, 11);
-        f2937h.append(androidx.constraintlayout.widget.d.H0, 15);
-        f2937h.append(androidx.constraintlayout.widget.d.E0, 12);
-        f2937h.append(androidx.constraintlayout.widget.d.f3244v0, 40);
-        f2937h.append(androidx.constraintlayout.widget.d.f3124g0, 39);
-        f2937h.append(androidx.constraintlayout.widget.d.f3116f0, 41);
-        f2937h.append(androidx.constraintlayout.widget.d.f3236u0, 42);
-        f2937h.append(androidx.constraintlayout.widget.d.f3108e0, 20);
-        f2937h.append(androidx.constraintlayout.widget.d.f3228t0, 37);
-        f2937h.append(androidx.constraintlayout.widget.d.T, 5);
-        f2937h.append(androidx.constraintlayout.widget.d.f3132h0, 87);
-        f2937h.append(androidx.constraintlayout.widget.d.f3204q0, 87);
-        f2937h.append(androidx.constraintlayout.widget.d.f3156k0, 87);
-        f2937h.append(androidx.constraintlayout.widget.d.N, 87);
-        f2937h.append(androidx.constraintlayout.widget.d.J, 87);
-        f2937h.append(androidx.constraintlayout.widget.d.f3131h, 24);
-        f2937h.append(androidx.constraintlayout.widget.d.f3147j, 28);
-        f2937h.append(androidx.constraintlayout.widget.d.f3243v, 31);
-        f2937h.append(androidx.constraintlayout.widget.d.f3251w, 8);
-        f2937h.append(androidx.constraintlayout.widget.d.f3139i, 34);
-        f2937h.append(androidx.constraintlayout.widget.d.f3155k, 2);
-        f2937h.append(androidx.constraintlayout.widget.d.f3115f, 23);
-        f2937h.append(androidx.constraintlayout.widget.d.f3123g, 21);
-        f2937h.append(androidx.constraintlayout.widget.d.f3252w0, 95);
-        f2937h.append(androidx.constraintlayout.widget.d.Z, 96);
-        f2937h.append(androidx.constraintlayout.widget.d.f3107e, 22);
-        f2937h.append(androidx.constraintlayout.widget.d.f3163l, 43);
-        f2937h.append(androidx.constraintlayout.widget.d.f3267y, 44);
-        f2937h.append(androidx.constraintlayout.widget.d.f3227t, 45);
-        f2937h.append(androidx.constraintlayout.widget.d.f3235u, 46);
-        f2937h.append(androidx.constraintlayout.widget.d.f3219s, 60);
-        f2937h.append(androidx.constraintlayout.widget.d.f3203q, 47);
-        f2937h.append(androidx.constraintlayout.widget.d.f3211r, 48);
-        f2937h.append(androidx.constraintlayout.widget.d.f3171m, 49);
-        f2937h.append(androidx.constraintlayout.widget.d.f3179n, 50);
-        f2937h.append(androidx.constraintlayout.widget.d.f3187o, 51);
-        f2937h.append(androidx.constraintlayout.widget.d.f3195p, 52);
-        f2937h.append(androidx.constraintlayout.widget.d.f3259x, 53);
-        f2937h.append(androidx.constraintlayout.widget.d.f3260x0, 54);
-        f2937h.append(androidx.constraintlayout.widget.d.f3074a0, 55);
-        f2937h.append(androidx.constraintlayout.widget.d.f3268y0, 56);
-        f2937h.append(androidx.constraintlayout.widget.d.f3083b0, 57);
-        f2937h.append(androidx.constraintlayout.widget.d.f3276z0, 58);
-        f2937h.append(androidx.constraintlayout.widget.d.f3092c0, 59);
-        f2937h.append(androidx.constraintlayout.widget.d.Q, 61);
-        f2937h.append(androidx.constraintlayout.widget.d.S, 62);
-        f2937h.append(androidx.constraintlayout.widget.d.R, 63);
-        f2937h.append(androidx.constraintlayout.widget.d.f3275z, 64);
-        f2937h.append(androidx.constraintlayout.widget.d.S0, 65);
-        f2937h.append(androidx.constraintlayout.widget.d.F, 66);
-        f2937h.append(androidx.constraintlayout.widget.d.T0, 67);
-        f2937h.append(androidx.constraintlayout.widget.d.L0, 79);
-        f2937h.append(androidx.constraintlayout.widget.d.f3099d, 38);
-        f2937h.append(androidx.constraintlayout.widget.d.K0, 68);
-        f2937h.append(androidx.constraintlayout.widget.d.A0, 69);
-        f2937h.append(androidx.constraintlayout.widget.d.f3100d0, 70);
-        f2937h.append(androidx.constraintlayout.widget.d.J0, 97);
-        f2937h.append(androidx.constraintlayout.widget.d.D, 71);
-        f2937h.append(androidx.constraintlayout.widget.d.B, 72);
-        f2937h.append(androidx.constraintlayout.widget.d.C, 73);
-        f2937h.append(androidx.constraintlayout.widget.d.E, 74);
-        f2937h.append(androidx.constraintlayout.widget.d.A, 75);
-        f2937h.append(androidx.constraintlayout.widget.d.M0, 76);
-        f2937h.append(androidx.constraintlayout.widget.d.f3196p0, 77);
-        f2937h.append(androidx.constraintlayout.widget.d.U0, 78);
-        f2937h.append(androidx.constraintlayout.widget.d.I, 80);
-        f2937h.append(androidx.constraintlayout.widget.d.H, 81);
-        f2937h.append(androidx.constraintlayout.widget.d.N0, 82);
-        f2937h.append(androidx.constraintlayout.widget.d.R0, 83);
-        f2937h.append(androidx.constraintlayout.widget.d.Q0, 84);
-        f2937h.append(androidx.constraintlayout.widget.d.P0, 85);
-        f2937h.append(androidx.constraintlayout.widget.d.O0, 86);
-        f2938i.append(androidx.constraintlayout.widget.d.Y3, 6);
-        f2938i.append(androidx.constraintlayout.widget.d.Y3, 7);
-        f2938i.append(androidx.constraintlayout.widget.d.T2, 27);
-        f2938i.append(androidx.constraintlayout.widget.d.f3087b4, 13);
-        f2938i.append(androidx.constraintlayout.widget.d.f3112e4, 16);
-        f2938i.append(androidx.constraintlayout.widget.d.f3096c4, 14);
-        f2938i.append(androidx.constraintlayout.widget.d.Z3, 11);
-        f2938i.append(androidx.constraintlayout.widget.d.f3104d4, 15);
-        f2938i.append(androidx.constraintlayout.widget.d.f3078a4, 12);
-        f2938i.append(androidx.constraintlayout.widget.d.S3, 40);
-        f2938i.append(androidx.constraintlayout.widget.d.L3, 39);
-        f2938i.append(androidx.constraintlayout.widget.d.K3, 41);
-        f2938i.append(androidx.constraintlayout.widget.d.R3, 42);
-        f2938i.append(androidx.constraintlayout.widget.d.J3, 20);
-        f2938i.append(androidx.constraintlayout.widget.d.Q3, 37);
-        f2938i.append(androidx.constraintlayout.widget.d.D3, 5);
-        f2938i.append(androidx.constraintlayout.widget.d.M3, 87);
-        f2938i.append(androidx.constraintlayout.widget.d.P3, 87);
-        f2938i.append(androidx.constraintlayout.widget.d.N3, 87);
-        f2938i.append(androidx.constraintlayout.widget.d.A3, 87);
-        f2938i.append(androidx.constraintlayout.widget.d.f3279z3, 87);
-        f2938i.append(androidx.constraintlayout.widget.d.Y2, 24);
-        f2938i.append(androidx.constraintlayout.widget.d.f3077a3, 28);
-        f2938i.append(androidx.constraintlayout.widget.d.f3175m3, 31);
-        f2938i.append(androidx.constraintlayout.widget.d.f3183n3, 8);
-        f2938i.append(androidx.constraintlayout.widget.d.Z2, 34);
-        f2938i.append(androidx.constraintlayout.widget.d.f3086b3, 2);
-        f2938i.append(androidx.constraintlayout.widget.d.W2, 23);
-        f2938i.append(androidx.constraintlayout.widget.d.X2, 21);
-        f2938i.append(androidx.constraintlayout.widget.d.T3, 95);
-        f2938i.append(androidx.constraintlayout.widget.d.E3, 96);
-        f2938i.append(androidx.constraintlayout.widget.d.V2, 22);
-        f2938i.append(androidx.constraintlayout.widget.d.f3095c3, 43);
-        f2938i.append(androidx.constraintlayout.widget.d.f3199p3, 44);
-        f2938i.append(androidx.constraintlayout.widget.d.f3159k3, 45);
-        f2938i.append(androidx.constraintlayout.widget.d.f3167l3, 46);
-        f2938i.append(androidx.constraintlayout.widget.d.f3151j3, 60);
-        f2938i.append(androidx.constraintlayout.widget.d.f3135h3, 47);
-        f2938i.append(androidx.constraintlayout.widget.d.f3143i3, 48);
-        f2938i.append(androidx.constraintlayout.widget.d.f3103d3, 49);
-        f2938i.append(androidx.constraintlayout.widget.d.f3111e3, 50);
-        f2938i.append(androidx.constraintlayout.widget.d.f3119f3, 51);
-        f2938i.append(androidx.constraintlayout.widget.d.f3127g3, 52);
-        f2938i.append(androidx.constraintlayout.widget.d.f3191o3, 53);
-        f2938i.append(androidx.constraintlayout.widget.d.U3, 54);
-        f2938i.append(androidx.constraintlayout.widget.d.F3, 55);
-        f2938i.append(androidx.constraintlayout.widget.d.V3, 56);
-        f2938i.append(androidx.constraintlayout.widget.d.G3, 57);
-        f2938i.append(androidx.constraintlayout.widget.d.W3, 58);
-        f2938i.append(androidx.constraintlayout.widget.d.H3, 59);
-        f2938i.append(androidx.constraintlayout.widget.d.C3, 62);
-        f2938i.append(androidx.constraintlayout.widget.d.B3, 63);
-        f2938i.append(androidx.constraintlayout.widget.d.f3207q3, 64);
-        f2938i.append(androidx.constraintlayout.widget.d.f3200p4, 65);
-        f2938i.append(androidx.constraintlayout.widget.d.f3255w3, 66);
-        f2938i.append(androidx.constraintlayout.widget.d.f3208q4, 67);
-        f2938i.append(androidx.constraintlayout.widget.d.f3136h4, 79);
-        f2938i.append(androidx.constraintlayout.widget.d.U2, 38);
-        f2938i.append(androidx.constraintlayout.widget.d.f3144i4, 98);
-        f2938i.append(androidx.constraintlayout.widget.d.f3128g4, 68);
-        f2938i.append(androidx.constraintlayout.widget.d.X3, 69);
-        f2938i.append(androidx.constraintlayout.widget.d.I3, 70);
-        f2938i.append(androidx.constraintlayout.widget.d.f3239u3, 71);
-        f2938i.append(androidx.constraintlayout.widget.d.f3223s3, 72);
-        f2938i.append(androidx.constraintlayout.widget.d.f3231t3, 73);
-        f2938i.append(androidx.constraintlayout.widget.d.f3247v3, 74);
-        f2938i.append(androidx.constraintlayout.widget.d.f3215r3, 75);
-        f2938i.append(androidx.constraintlayout.widget.d.f3152j4, 76);
-        f2938i.append(androidx.constraintlayout.widget.d.O3, 77);
-        f2938i.append(androidx.constraintlayout.widget.d.f3216r4, 78);
-        f2938i.append(androidx.constraintlayout.widget.d.f3271y3, 80);
-        f2938i.append(androidx.constraintlayout.widget.d.f3263x3, 81);
-        f2938i.append(androidx.constraintlayout.widget.d.f3160k4, 82);
-        f2938i.append(androidx.constraintlayout.widget.d.f3192o4, 83);
-        f2938i.append(androidx.constraintlayout.widget.d.f3184n4, 84);
-        f2938i.append(androidx.constraintlayout.widget.d.f3176m4, 85);
-        f2938i.append(androidx.constraintlayout.widget.d.f3168l4, 86);
-        f2938i.append(androidx.constraintlayout.widget.d.f3120f4, 97);
+        f2634h.append(androidx.constraintlayout.widget.d.f2837i0, 25);
+        f2634h.append(androidx.constraintlayout.widget.d.f2845j0, 26);
+        f2634h.append(androidx.constraintlayout.widget.d.f2861l0, 29);
+        f2634h.append(androidx.constraintlayout.widget.d.f2869m0, 30);
+        f2634h.append(androidx.constraintlayout.widget.d.f2917s0, 36);
+        f2634h.append(androidx.constraintlayout.widget.d.f2909r0, 35);
+        f2634h.append(androidx.constraintlayout.widget.d.P, 4);
+        f2634h.append(androidx.constraintlayout.widget.d.O, 3);
+        f2634h.append(androidx.constraintlayout.widget.d.K, 1);
+        f2634h.append(androidx.constraintlayout.widget.d.M, 91);
+        f2634h.append(androidx.constraintlayout.widget.d.L, 92);
+        f2634h.append(androidx.constraintlayout.widget.d.B0, 6);
+        f2634h.append(androidx.constraintlayout.widget.d.C0, 7);
+        f2634h.append(androidx.constraintlayout.widget.d.W, 17);
+        f2634h.append(androidx.constraintlayout.widget.d.X, 18);
+        f2634h.append(androidx.constraintlayout.widget.d.Y, 19);
+        f2634h.append(androidx.constraintlayout.widget.d.G, 99);
+        f2634h.append(androidx.constraintlayout.widget.d.f2788c, 27);
+        f2634h.append(androidx.constraintlayout.widget.d.f2877n0, 32);
+        f2634h.append(androidx.constraintlayout.widget.d.f2885o0, 33);
+        f2634h.append(androidx.constraintlayout.widget.d.V, 10);
+        f2634h.append(androidx.constraintlayout.widget.d.U, 9);
+        f2634h.append(androidx.constraintlayout.widget.d.F0, 13);
+        f2634h.append(androidx.constraintlayout.widget.d.I0, 16);
+        f2634h.append(androidx.constraintlayout.widget.d.G0, 14);
+        f2634h.append(androidx.constraintlayout.widget.d.D0, 11);
+        f2634h.append(androidx.constraintlayout.widget.d.H0, 15);
+        f2634h.append(androidx.constraintlayout.widget.d.E0, 12);
+        f2634h.append(androidx.constraintlayout.widget.d.f2941v0, 40);
+        f2634h.append(androidx.constraintlayout.widget.d.f2821g0, 39);
+        f2634h.append(androidx.constraintlayout.widget.d.f2813f0, 41);
+        f2634h.append(androidx.constraintlayout.widget.d.f2933u0, 42);
+        f2634h.append(androidx.constraintlayout.widget.d.f2805e0, 20);
+        f2634h.append(androidx.constraintlayout.widget.d.f2925t0, 37);
+        f2634h.append(androidx.constraintlayout.widget.d.T, 5);
+        f2634h.append(androidx.constraintlayout.widget.d.f2829h0, 87);
+        f2634h.append(androidx.constraintlayout.widget.d.f2901q0, 87);
+        f2634h.append(androidx.constraintlayout.widget.d.f2853k0, 87);
+        f2634h.append(androidx.constraintlayout.widget.d.N, 87);
+        f2634h.append(androidx.constraintlayout.widget.d.J, 87);
+        f2634h.append(androidx.constraintlayout.widget.d.f2828h, 24);
+        f2634h.append(androidx.constraintlayout.widget.d.f2844j, 28);
+        f2634h.append(androidx.constraintlayout.widget.d.f2940v, 31);
+        f2634h.append(androidx.constraintlayout.widget.d.f2948w, 8);
+        f2634h.append(androidx.constraintlayout.widget.d.f2836i, 34);
+        f2634h.append(androidx.constraintlayout.widget.d.f2852k, 2);
+        f2634h.append(androidx.constraintlayout.widget.d.f2812f, 23);
+        f2634h.append(androidx.constraintlayout.widget.d.f2820g, 21);
+        f2634h.append(androidx.constraintlayout.widget.d.f2949w0, 95);
+        f2634h.append(androidx.constraintlayout.widget.d.Z, 96);
+        f2634h.append(androidx.constraintlayout.widget.d.f2804e, 22);
+        f2634h.append(androidx.constraintlayout.widget.d.f2860l, 43);
+        f2634h.append(androidx.constraintlayout.widget.d.f2964y, 44);
+        f2634h.append(androidx.constraintlayout.widget.d.f2924t, 45);
+        f2634h.append(androidx.constraintlayout.widget.d.f2932u, 46);
+        f2634h.append(androidx.constraintlayout.widget.d.f2916s, 60);
+        f2634h.append(androidx.constraintlayout.widget.d.f2900q, 47);
+        f2634h.append(androidx.constraintlayout.widget.d.f2908r, 48);
+        f2634h.append(androidx.constraintlayout.widget.d.f2868m, 49);
+        f2634h.append(androidx.constraintlayout.widget.d.f2876n, 50);
+        f2634h.append(androidx.constraintlayout.widget.d.f2884o, 51);
+        f2634h.append(androidx.constraintlayout.widget.d.f2892p, 52);
+        f2634h.append(androidx.constraintlayout.widget.d.f2956x, 53);
+        f2634h.append(androidx.constraintlayout.widget.d.f2957x0, 54);
+        f2634h.append(androidx.constraintlayout.widget.d.f2771a0, 55);
+        f2634h.append(androidx.constraintlayout.widget.d.f2965y0, 56);
+        f2634h.append(androidx.constraintlayout.widget.d.f2780b0, 57);
+        f2634h.append(androidx.constraintlayout.widget.d.f2973z0, 58);
+        f2634h.append(androidx.constraintlayout.widget.d.f2789c0, 59);
+        f2634h.append(androidx.constraintlayout.widget.d.Q, 61);
+        f2634h.append(androidx.constraintlayout.widget.d.S, 62);
+        f2634h.append(androidx.constraintlayout.widget.d.R, 63);
+        f2634h.append(androidx.constraintlayout.widget.d.f2972z, 64);
+        f2634h.append(androidx.constraintlayout.widget.d.S0, 65);
+        f2634h.append(androidx.constraintlayout.widget.d.F, 66);
+        f2634h.append(androidx.constraintlayout.widget.d.T0, 67);
+        f2634h.append(androidx.constraintlayout.widget.d.L0, 79);
+        f2634h.append(androidx.constraintlayout.widget.d.f2796d, 38);
+        f2634h.append(androidx.constraintlayout.widget.d.K0, 68);
+        f2634h.append(androidx.constraintlayout.widget.d.A0, 69);
+        f2634h.append(androidx.constraintlayout.widget.d.f2797d0, 70);
+        f2634h.append(androidx.constraintlayout.widget.d.J0, 97);
+        f2634h.append(androidx.constraintlayout.widget.d.D, 71);
+        f2634h.append(androidx.constraintlayout.widget.d.B, 72);
+        f2634h.append(androidx.constraintlayout.widget.d.C, 73);
+        f2634h.append(androidx.constraintlayout.widget.d.E, 74);
+        f2634h.append(androidx.constraintlayout.widget.d.A, 75);
+        f2634h.append(androidx.constraintlayout.widget.d.M0, 76);
+        f2634h.append(androidx.constraintlayout.widget.d.f2893p0, 77);
+        f2634h.append(androidx.constraintlayout.widget.d.U0, 78);
+        f2634h.append(androidx.constraintlayout.widget.d.I, 80);
+        f2634h.append(androidx.constraintlayout.widget.d.H, 81);
+        f2634h.append(androidx.constraintlayout.widget.d.N0, 82);
+        f2634h.append(androidx.constraintlayout.widget.d.R0, 83);
+        f2634h.append(androidx.constraintlayout.widget.d.Q0, 84);
+        f2634h.append(androidx.constraintlayout.widget.d.P0, 85);
+        f2634h.append(androidx.constraintlayout.widget.d.O0, 86);
+        f2635i.append(androidx.constraintlayout.widget.d.Y3, 6);
+        f2635i.append(androidx.constraintlayout.widget.d.Y3, 7);
+        f2635i.append(androidx.constraintlayout.widget.d.T2, 27);
+        f2635i.append(androidx.constraintlayout.widget.d.f2784b4, 13);
+        f2635i.append(androidx.constraintlayout.widget.d.f2809e4, 16);
+        f2635i.append(androidx.constraintlayout.widget.d.f2793c4, 14);
+        f2635i.append(androidx.constraintlayout.widget.d.Z3, 11);
+        f2635i.append(androidx.constraintlayout.widget.d.f2801d4, 15);
+        f2635i.append(androidx.constraintlayout.widget.d.f2775a4, 12);
+        f2635i.append(androidx.constraintlayout.widget.d.S3, 40);
+        f2635i.append(androidx.constraintlayout.widget.d.L3, 39);
+        f2635i.append(androidx.constraintlayout.widget.d.K3, 41);
+        f2635i.append(androidx.constraintlayout.widget.d.R3, 42);
+        f2635i.append(androidx.constraintlayout.widget.d.J3, 20);
+        f2635i.append(androidx.constraintlayout.widget.d.Q3, 37);
+        f2635i.append(androidx.constraintlayout.widget.d.D3, 5);
+        f2635i.append(androidx.constraintlayout.widget.d.M3, 87);
+        f2635i.append(androidx.constraintlayout.widget.d.P3, 87);
+        f2635i.append(androidx.constraintlayout.widget.d.N3, 87);
+        f2635i.append(androidx.constraintlayout.widget.d.A3, 87);
+        f2635i.append(androidx.constraintlayout.widget.d.f2976z3, 87);
+        f2635i.append(androidx.constraintlayout.widget.d.Y2, 24);
+        f2635i.append(androidx.constraintlayout.widget.d.f2774a3, 28);
+        f2635i.append(androidx.constraintlayout.widget.d.f2872m3, 31);
+        f2635i.append(androidx.constraintlayout.widget.d.f2880n3, 8);
+        f2635i.append(androidx.constraintlayout.widget.d.Z2, 34);
+        f2635i.append(androidx.constraintlayout.widget.d.f2783b3, 2);
+        f2635i.append(androidx.constraintlayout.widget.d.W2, 23);
+        f2635i.append(androidx.constraintlayout.widget.d.X2, 21);
+        f2635i.append(androidx.constraintlayout.widget.d.T3, 95);
+        f2635i.append(androidx.constraintlayout.widget.d.E3, 96);
+        f2635i.append(androidx.constraintlayout.widget.d.V2, 22);
+        f2635i.append(androidx.constraintlayout.widget.d.f2792c3, 43);
+        f2635i.append(androidx.constraintlayout.widget.d.f2896p3, 44);
+        f2635i.append(androidx.constraintlayout.widget.d.f2856k3, 45);
+        f2635i.append(androidx.constraintlayout.widget.d.f2864l3, 46);
+        f2635i.append(androidx.constraintlayout.widget.d.f2848j3, 60);
+        f2635i.append(androidx.constraintlayout.widget.d.f2832h3, 47);
+        f2635i.append(androidx.constraintlayout.widget.d.f2840i3, 48);
+        f2635i.append(androidx.constraintlayout.widget.d.f2800d3, 49);
+        f2635i.append(androidx.constraintlayout.widget.d.f2808e3, 50);
+        f2635i.append(androidx.constraintlayout.widget.d.f2816f3, 51);
+        f2635i.append(androidx.constraintlayout.widget.d.f2824g3, 52);
+        f2635i.append(androidx.constraintlayout.widget.d.f2888o3, 53);
+        f2635i.append(androidx.constraintlayout.widget.d.U3, 54);
+        f2635i.append(androidx.constraintlayout.widget.d.F3, 55);
+        f2635i.append(androidx.constraintlayout.widget.d.V3, 56);
+        f2635i.append(androidx.constraintlayout.widget.d.G3, 57);
+        f2635i.append(androidx.constraintlayout.widget.d.W3, 58);
+        f2635i.append(androidx.constraintlayout.widget.d.H3, 59);
+        f2635i.append(androidx.constraintlayout.widget.d.C3, 62);
+        f2635i.append(androidx.constraintlayout.widget.d.B3, 63);
+        f2635i.append(androidx.constraintlayout.widget.d.f2904q3, 64);
+        f2635i.append(androidx.constraintlayout.widget.d.f2897p4, 65);
+        f2635i.append(androidx.constraintlayout.widget.d.f2952w3, 66);
+        f2635i.append(androidx.constraintlayout.widget.d.f2905q4, 67);
+        f2635i.append(androidx.constraintlayout.widget.d.f2833h4, 79);
+        f2635i.append(androidx.constraintlayout.widget.d.U2, 38);
+        f2635i.append(androidx.constraintlayout.widget.d.f2841i4, 98);
+        f2635i.append(androidx.constraintlayout.widget.d.f2825g4, 68);
+        f2635i.append(androidx.constraintlayout.widget.d.X3, 69);
+        f2635i.append(androidx.constraintlayout.widget.d.I3, 70);
+        f2635i.append(androidx.constraintlayout.widget.d.f2936u3, 71);
+        f2635i.append(androidx.constraintlayout.widget.d.f2920s3, 72);
+        f2635i.append(androidx.constraintlayout.widget.d.f2928t3, 73);
+        f2635i.append(androidx.constraintlayout.widget.d.f2944v3, 74);
+        f2635i.append(androidx.constraintlayout.widget.d.f2912r3, 75);
+        f2635i.append(androidx.constraintlayout.widget.d.f2849j4, 76);
+        f2635i.append(androidx.constraintlayout.widget.d.O3, 77);
+        f2635i.append(androidx.constraintlayout.widget.d.f2913r4, 78);
+        f2635i.append(androidx.constraintlayout.widget.d.f2968y3, 80);
+        f2635i.append(androidx.constraintlayout.widget.d.f2960x3, 81);
+        f2635i.append(androidx.constraintlayout.widget.d.f2857k4, 82);
+        f2635i.append(androidx.constraintlayout.widget.d.f2889o4, 83);
+        f2635i.append(androidx.constraintlayout.widget.d.f2881n4, 84);
+        f2635i.append(androidx.constraintlayout.widget.d.f2873m4, 85);
+        f2635i.append(androidx.constraintlayout.widget.d.f2865l4, 86);
+        f2635i.append(androidx.constraintlayout.widget.d.f2817f4, 97);
     }
 
     private String E(int i10) {
@@ -1428,7 +1428,7 @@ public class ConstraintSet {
         if (z10) {
             iArr = androidx.constraintlayout.widget.d.S2;
         } else {
-            iArr = androidx.constraintlayout.widget.d.f3082b;
+            iArr = androidx.constraintlayout.widget.d.f2779b;
         }
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr);
         y(aVar, obtainStyledAttributes, z10);
@@ -1437,10 +1437,10 @@ public class ConstraintSet {
     }
 
     private a r(int i10) {
-        if (!this.f2944f.containsKey(Integer.valueOf(i10))) {
-            this.f2944f.put(Integer.valueOf(i10), new a());
+        if (!this.f2641f.containsKey(Integer.valueOf(i10))) {
+            this.f2641f.put(Integer.valueOf(i10), new a());
         }
-        return (a) this.f2944f.get(Integer.valueOf(i10));
+        return (a) this.f2641f.get(Integer.valueOf(i10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1502,28 +1502,28 @@ public class ConstraintSet {
             androidx.constraintlayout.widget.ConstraintLayout$LayoutParams r4 = (androidx.constraintlayout.widget.ConstraintLayout.LayoutParams) r4
             if (r7 != 0) goto L3d
             r4.width = r2
-            r4.f2861a0 = r5
+            r4.f2558a0 = r5
             return
         L3d:
             r4.height = r2
-            r4.f2863b0 = r5
+            r4.f2560b0 = r5
             return
         L42:
             boolean r6 = r4 instanceof androidx.constraintlayout.widget.ConstraintSet.b
             if (r6 == 0) goto L54
             androidx.constraintlayout.widget.ConstraintSet$b r4 = (androidx.constraintlayout.widget.ConstraintSet.b) r4
             if (r7 != 0) goto L4f
-            r4.f2972d = r2
-            r4.f2993n0 = r5
+            r4.f2669d = r2
+            r4.f2690n0 = r5
             return
         L4f:
-            r4.f2974e = r2
-            r4.f2995o0 = r5
+            r4.f2671e = r2
+            r4.f2692o0 = r5
             return
         L54:
-            boolean r6 = r4 instanceof androidx.constraintlayout.widget.ConstraintSet.a.C0028a
+            boolean r6 = r4 instanceof androidx.constraintlayout.widget.ConstraintSet.a.C0030a
             if (r6 == 0) goto L71
-            androidx.constraintlayout.widget.ConstraintSet$a$a r4 = (androidx.constraintlayout.widget.ConstraintSet.a.C0028a) r4
+            androidx.constraintlayout.widget.ConstraintSet$a$a r4 = (androidx.constraintlayout.widget.ConstraintSet.a.C0030a) r4
             if (r7 != 0) goto L67
             r6 = 23
             r4.b(r6, r2)
@@ -1568,8 +1568,8 @@ public class ConstraintSet {
                         } else if (obj instanceof b) {
                             ((b) obj).A = trim2;
                             return;
-                        } else if (obj instanceof a.C0028a) {
-                            ((a.C0028a) obj).c(5, trim2);
+                        } else if (obj instanceof a.C0030a) {
+                            ((a.C0030a) obj).c(5, trim2);
                             return;
                         } else {
                             return;
@@ -1590,21 +1590,21 @@ public class ConstraintSet {
                             } else if (obj instanceof b) {
                                 b bVar = (b) obj;
                                 if (i10 == 0) {
-                                    bVar.f2972d = 0;
+                                    bVar.f2669d = 0;
                                     bVar.W = parseFloat;
                                     return;
                                 }
-                                bVar.f2974e = 0;
+                                bVar.f2671e = 0;
                                 bVar.V = parseFloat;
-                            } else if (obj instanceof a.C0028a) {
-                                a.C0028a c0028a = (a.C0028a) obj;
+                            } else if (obj instanceof a.C0030a) {
+                                a.C0030a c0030a = (a.C0030a) obj;
                                 if (i10 == 0) {
-                                    c0028a.b(23, 0);
-                                    c0028a.a(39, parseFloat);
+                                    c0030a.b(23, 0);
+                                    c0030a.a(39, parseFloat);
                                     return;
                                 }
-                                c0028a.b(21, 0);
-                                c0028a.a(40, parseFloat);
+                                c0030a.b(21, 0);
+                                c0030a.a(40, parseFloat);
                             }
                         } else if ("parent".equalsIgnoreCase(trim)) {
                             float max = Math.max(0.0f, Math.min(1.0f, Float.parseFloat(trim2)));
@@ -1622,23 +1622,23 @@ public class ConstraintSet {
                             } else if (obj instanceof b) {
                                 b bVar2 = (b) obj;
                                 if (i10 == 0) {
-                                    bVar2.f2972d = 0;
-                                    bVar2.f2977f0 = max;
+                                    bVar2.f2669d = 0;
+                                    bVar2.f2674f0 = max;
                                     bVar2.Z = 2;
                                     return;
                                 }
-                                bVar2.f2974e = 0;
-                                bVar2.f2979g0 = max;
-                                bVar2.f2967a0 = 2;
-                            } else if (obj instanceof a.C0028a) {
-                                a.C0028a c0028a2 = (a.C0028a) obj;
+                                bVar2.f2671e = 0;
+                                bVar2.f2676g0 = max;
+                                bVar2.f2664a0 = 2;
+                            } else if (obj instanceof a.C0030a) {
+                                a.C0030a c0030a2 = (a.C0030a) obj;
                                 if (i10 == 0) {
-                                    c0028a2.b(23, 0);
-                                    c0028a2.b(54, 2);
+                                    c0030a2.b(23, 0);
+                                    c0030a2.b(54, 2);
                                     return;
                                 }
-                                c0028a2.b(21, 0);
-                                c0028a2.b(55, 2);
+                                c0030a2.b(21, 0);
+                                c0030a2.b(55, 2);
                             }
                         }
                     } catch (NumberFormatException unused) {
@@ -1699,434 +1699,434 @@ public class ConstraintSet {
         int indexCount = typedArray.getIndexCount();
         for (int i10 = 0; i10 < indexCount; i10++) {
             int index = typedArray.getIndex(i10);
-            if (index != androidx.constraintlayout.widget.d.f3099d && androidx.constraintlayout.widget.d.f3243v != index && androidx.constraintlayout.widget.d.f3251w != index) {
-                aVar.f2948d.f3010a = true;
-                aVar.f2949e.f2968b = true;
-                aVar.f2947c.f3024a = true;
-                aVar.f2950f.f3030a = true;
+            if (index != androidx.constraintlayout.widget.d.f2796d && androidx.constraintlayout.widget.d.f2940v != index && androidx.constraintlayout.widget.d.f2948w != index) {
+                aVar.f2645d.f2707a = true;
+                aVar.f2646e.f2665b = true;
+                aVar.f2644c.f2721a = true;
+                aVar.f2647f.f2727a = true;
             }
-            switch (f2937h.get(index)) {
+            switch (f2634h.get(index)) {
                 case 1:
-                    b bVar = aVar.f2949e;
-                    bVar.f3000r = u(typedArray, index, bVar.f3000r);
+                    b bVar = aVar.f2646e;
+                    bVar.f2697r = u(typedArray, index, bVar.f2697r);
                     break;
                 case 2:
-                    b bVar2 = aVar.f2949e;
+                    b bVar2 = aVar.f2646e;
                     bVar2.K = typedArray.getDimensionPixelSize(index, bVar2.K);
                     break;
                 case 3:
-                    b bVar3 = aVar.f2949e;
-                    bVar3.f2998q = u(typedArray, index, bVar3.f2998q);
+                    b bVar3 = aVar.f2646e;
+                    bVar3.f2695q = u(typedArray, index, bVar3.f2695q);
                     break;
                 case 4:
-                    b bVar4 = aVar.f2949e;
-                    bVar4.f2996p = u(typedArray, index, bVar4.f2996p);
+                    b bVar4 = aVar.f2646e;
+                    bVar4.f2693p = u(typedArray, index, bVar4.f2693p);
                     break;
                 case 5:
-                    aVar.f2949e.A = typedArray.getString(index);
+                    aVar.f2646e.A = typedArray.getString(index);
                     break;
                 case 6:
-                    b bVar5 = aVar.f2949e;
+                    b bVar5 = aVar.f2646e;
                     bVar5.E = typedArray.getDimensionPixelOffset(index, bVar5.E);
                     break;
                 case 7:
-                    b bVar6 = aVar.f2949e;
+                    b bVar6 = aVar.f2646e;
                     bVar6.F = typedArray.getDimensionPixelOffset(index, bVar6.F);
                     break;
                 case 8:
-                    b bVar7 = aVar.f2949e;
+                    b bVar7 = aVar.f2646e;
                     bVar7.L = typedArray.getDimensionPixelSize(index, bVar7.L);
                     break;
                 case 9:
-                    b bVar8 = aVar.f2949e;
-                    bVar8.f3006x = u(typedArray, index, bVar8.f3006x);
+                    b bVar8 = aVar.f2646e;
+                    bVar8.f2703x = u(typedArray, index, bVar8.f2703x);
                     break;
                 case 10:
-                    b bVar9 = aVar.f2949e;
-                    bVar9.f3005w = u(typedArray, index, bVar9.f3005w);
+                    b bVar9 = aVar.f2646e;
+                    bVar9.f2702w = u(typedArray, index, bVar9.f2702w);
                     break;
                 case 11:
-                    b bVar10 = aVar.f2949e;
+                    b bVar10 = aVar.f2646e;
                     bVar10.R = typedArray.getDimensionPixelSize(index, bVar10.R);
                     break;
                 case 12:
-                    b bVar11 = aVar.f2949e;
+                    b bVar11 = aVar.f2646e;
                     bVar11.S = typedArray.getDimensionPixelSize(index, bVar11.S);
                     break;
                 case 13:
-                    b bVar12 = aVar.f2949e;
+                    b bVar12 = aVar.f2646e;
                     bVar12.O = typedArray.getDimensionPixelSize(index, bVar12.O);
                     break;
                 case 14:
-                    b bVar13 = aVar.f2949e;
+                    b bVar13 = aVar.f2646e;
                     bVar13.Q = typedArray.getDimensionPixelSize(index, bVar13.Q);
                     break;
                 case 15:
-                    b bVar14 = aVar.f2949e;
+                    b bVar14 = aVar.f2646e;
                     bVar14.T = typedArray.getDimensionPixelSize(index, bVar14.T);
                     break;
                 case 16:
-                    b bVar15 = aVar.f2949e;
+                    b bVar15 = aVar.f2646e;
                     bVar15.P = typedArray.getDimensionPixelSize(index, bVar15.P);
                     break;
                 case 17:
-                    b bVar16 = aVar.f2949e;
-                    bVar16.f2976f = typedArray.getDimensionPixelOffset(index, bVar16.f2976f);
+                    b bVar16 = aVar.f2646e;
+                    bVar16.f2673f = typedArray.getDimensionPixelOffset(index, bVar16.f2673f);
                     break;
                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                    b bVar17 = aVar.f2949e;
-                    bVar17.f2978g = typedArray.getDimensionPixelOffset(index, bVar17.f2978g);
+                    b bVar17 = aVar.f2646e;
+                    bVar17.f2675g = typedArray.getDimensionPixelOffset(index, bVar17.f2675g);
                     break;
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                    b bVar18 = aVar.f2949e;
-                    bVar18.f2980h = typedArray.getFloat(index, bVar18.f2980h);
+                    b bVar18 = aVar.f2646e;
+                    bVar18.f2677h = typedArray.getFloat(index, bVar18.f2677h);
                     break;
                 case 20:
-                    b bVar19 = aVar.f2949e;
-                    bVar19.f3007y = typedArray.getFloat(index, bVar19.f3007y);
+                    b bVar19 = aVar.f2646e;
+                    bVar19.f2704y = typedArray.getFloat(index, bVar19.f2704y);
                     break;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                    b bVar20 = aVar.f2949e;
-                    bVar20.f2974e = typedArray.getLayoutDimension(index, bVar20.f2974e);
+                    b bVar20 = aVar.f2646e;
+                    bVar20.f2671e = typedArray.getLayoutDimension(index, bVar20.f2671e);
                     break;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                    d dVar = aVar.f2947c;
-                    dVar.f3025b = typedArray.getInt(index, dVar.f3025b);
-                    d dVar2 = aVar.f2947c;
-                    dVar2.f3025b = f2936g[dVar2.f3025b];
+                    d dVar = aVar.f2644c;
+                    dVar.f2722b = typedArray.getInt(index, dVar.f2722b);
+                    d dVar2 = aVar.f2644c;
+                    dVar2.f2722b = f2633g[dVar2.f2722b];
                     break;
                 case 23:
-                    b bVar21 = aVar.f2949e;
-                    bVar21.f2972d = typedArray.getLayoutDimension(index, bVar21.f2972d);
+                    b bVar21 = aVar.f2646e;
+                    bVar21.f2669d = typedArray.getLayoutDimension(index, bVar21.f2669d);
                     break;
                 case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                    b bVar22 = aVar.f2949e;
+                    b bVar22 = aVar.f2646e;
                     bVar22.H = typedArray.getDimensionPixelSize(index, bVar22.H);
                     break;
                 case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
-                    b bVar23 = aVar.f2949e;
-                    bVar23.f2984j = u(typedArray, index, bVar23.f2984j);
+                    b bVar23 = aVar.f2646e;
+                    bVar23.f2681j = u(typedArray, index, bVar23.f2681j);
                     break;
                 case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
-                    b bVar24 = aVar.f2949e;
-                    bVar24.f2986k = u(typedArray, index, bVar24.f2986k);
+                    b bVar24 = aVar.f2646e;
+                    bVar24.f2683k = u(typedArray, index, bVar24.f2683k);
                     break;
                 case 27:
-                    b bVar25 = aVar.f2949e;
+                    b bVar25 = aVar.f2646e;
                     bVar25.G = typedArray.getInt(index, bVar25.G);
                     break;
                 case 28:
-                    b bVar26 = aVar.f2949e;
+                    b bVar26 = aVar.f2646e;
                     bVar26.I = typedArray.getDimensionPixelSize(index, bVar26.I);
                     break;
                 case 29:
-                    b bVar27 = aVar.f2949e;
-                    bVar27.f2988l = u(typedArray, index, bVar27.f2988l);
+                    b bVar27 = aVar.f2646e;
+                    bVar27.f2685l = u(typedArray, index, bVar27.f2685l);
                     break;
                 case 30:
-                    b bVar28 = aVar.f2949e;
-                    bVar28.f2990m = u(typedArray, index, bVar28.f2990m);
+                    b bVar28 = aVar.f2646e;
+                    bVar28.f2687m = u(typedArray, index, bVar28.f2687m);
                     break;
                 case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
-                    b bVar29 = aVar.f2949e;
+                    b bVar29 = aVar.f2646e;
                     bVar29.M = typedArray.getDimensionPixelSize(index, bVar29.M);
                     break;
                 case 32:
-                    b bVar30 = aVar.f2949e;
-                    bVar30.f3003u = u(typedArray, index, bVar30.f3003u);
+                    b bVar30 = aVar.f2646e;
+                    bVar30.f2700u = u(typedArray, index, bVar30.f2700u);
                     break;
                 case ChatViewRecyclerTypes.AUTO_MODERATION_NOTIFICATION_EMBED /* 33 */:
-                    b bVar31 = aVar.f2949e;
-                    bVar31.f3004v = u(typedArray, index, bVar31.f3004v);
+                    b bVar31 = aVar.f2646e;
+                    bVar31.f2701v = u(typedArray, index, bVar31.f2701v);
                     break;
                 case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
-                    b bVar32 = aVar.f2949e;
+                    b bVar32 = aVar.f2646e;
                     bVar32.J = typedArray.getDimensionPixelSize(index, bVar32.J);
                     break;
                 case ChatViewRecyclerTypes.INFO_LINK /* 35 */:
-                    b bVar33 = aVar.f2949e;
-                    bVar33.f2994o = u(typedArray, index, bVar33.f2994o);
+                    b bVar33 = aVar.f2646e;
+                    bVar33.f2691o = u(typedArray, index, bVar33.f2691o);
                     break;
                 case ChatViewRecyclerTypes.SAFETY_POLICY_NOTICE /* 36 */:
-                    b bVar34 = aVar.f2949e;
-                    bVar34.f2992n = u(typedArray, index, bVar34.f2992n);
+                    b bVar34 = aVar.f2646e;
+                    bVar34.f2689n = u(typedArray, index, bVar34.f2689n);
                     break;
                 case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
-                    b bVar35 = aVar.f2949e;
-                    bVar35.f3008z = typedArray.getFloat(index, bVar35.f3008z);
+                    b bVar35 = aVar.f2646e;
+                    bVar35.f2705z = typedArray.getFloat(index, bVar35.f2705z);
                     break;
                 case ChatViewRecyclerTypes.POLL_IMAGE_ONLY /* 38 */:
-                    aVar.f2945a = typedArray.getResourceId(index, aVar.f2945a);
+                    aVar.f2642a = typedArray.getResourceId(index, aVar.f2642a);
                     break;
                 case ChatViewRecyclerTypes.SAFETY_SYSTEM_NOTIFICATION /* 39 */:
-                    b bVar36 = aVar.f2949e;
+                    b bVar36 = aVar.f2646e;
                     bVar36.W = typedArray.getFloat(index, bVar36.W);
                     break;
                 case 40:
-                    b bVar37 = aVar.f2949e;
+                    b bVar37 = aVar.f2646e;
                     bVar37.V = typedArray.getFloat(index, bVar37.V);
                     break;
                 case 41:
-                    b bVar38 = aVar.f2949e;
+                    b bVar38 = aVar.f2646e;
                     bVar38.X = typedArray.getInt(index, bVar38.X);
                     break;
                 case 42:
-                    b bVar39 = aVar.f2949e;
+                    b bVar39 = aVar.f2646e;
                     bVar39.Y = typedArray.getInt(index, bVar39.Y);
                     break;
                 case ChatViewRecyclerTypes.FORWARD_HEADER /* 43 */:
-                    d dVar3 = aVar.f2947c;
-                    dVar3.f3027d = typedArray.getFloat(index, dVar3.f3027d);
+                    d dVar3 = aVar.f2644c;
+                    dVar3.f2724d = typedArray.getFloat(index, dVar3.f2724d);
                     break;
                 case ChatViewRecyclerTypes.FORWARD_BREADCRUMB /* 44 */:
-                    e eVar = aVar.f2950f;
-                    eVar.f3042m = true;
-                    eVar.f3043n = typedArray.getDimension(index, eVar.f3043n);
+                    e eVar = aVar.f2647f;
+                    eVar.f2739m = true;
+                    eVar.f2740n = typedArray.getDimension(index, eVar.f2740n);
                     break;
                 case ChatViewRecyclerTypes.REACTION_BURST_REACTION /* 45 */:
-                    e eVar2 = aVar.f2950f;
-                    eVar2.f3032c = typedArray.getFloat(index, eVar2.f3032c);
+                    e eVar2 = aVar.f2647f;
+                    eVar2.f2729c = typedArray.getFloat(index, eVar2.f2729c);
                     break;
                 case 46:
-                    e eVar3 = aVar.f2950f;
-                    eVar3.f3033d = typedArray.getFloat(index, eVar3.f3033d);
+                    e eVar3 = aVar.f2647f;
+                    eVar3.f2730d = typedArray.getFloat(index, eVar3.f2730d);
                     break;
                 case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
-                    e eVar4 = aVar.f2950f;
-                    eVar4.f3034e = typedArray.getFloat(index, eVar4.f3034e);
+                    e eVar4 = aVar.f2647f;
+                    eVar4.f2731e = typedArray.getFloat(index, eVar4.f2731e);
                     break;
                 case 48:
-                    e eVar5 = aVar.f2950f;
-                    eVar5.f3035f = typedArray.getFloat(index, eVar5.f3035f);
+                    e eVar5 = aVar.f2647f;
+                    eVar5.f2732f = typedArray.getFloat(index, eVar5.f2732f);
                     break;
                 case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
-                    e eVar6 = aVar.f2950f;
-                    eVar6.f3036g = typedArray.getDimension(index, eVar6.f3036g);
+                    e eVar6 = aVar.f2647f;
+                    eVar6.f2733g = typedArray.getDimension(index, eVar6.f2733g);
                     break;
                 case 50:
-                    e eVar7 = aVar.f2950f;
-                    eVar7.f3037h = typedArray.getDimension(index, eVar7.f3037h);
+                    e eVar7 = aVar.f2647f;
+                    eVar7.f2734h = typedArray.getDimension(index, eVar7.f2734h);
                     break;
                 case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
-                    e eVar8 = aVar.f2950f;
-                    eVar8.f3039j = typedArray.getDimension(index, eVar8.f3039j);
+                    e eVar8 = aVar.f2647f;
+                    eVar8.f2736j = typedArray.getDimension(index, eVar8.f2736j);
                     break;
                 case ChatViewRecyclerTypes.REFERRAL /* 52 */:
-                    e eVar9 = aVar.f2950f;
-                    eVar9.f3040k = typedArray.getDimension(index, eVar9.f3040k);
+                    e eVar9 = aVar.f2647f;
+                    eVar9.f2737k = typedArray.getDimension(index, eVar9.f2737k);
                     break;
                 case ChatViewRecyclerTypes.GUILD_PROFILE_INVITE /* 53 */:
-                    e eVar10 = aVar.f2950f;
-                    eVar10.f3041l = typedArray.getDimension(index, eVar10.f3041l);
+                    e eVar10 = aVar.f2647f;
+                    eVar10.f2738l = typedArray.getDimension(index, eVar10.f2738l);
                     break;
                 case ChatViewRecyclerTypes.APP_MESSAGE_EMBED /* 54 */:
-                    b bVar40 = aVar.f2949e;
+                    b bVar40 = aVar.f2646e;
                     bVar40.Z = typedArray.getInt(index, bVar40.Z);
                     break;
                 case ChatViewRecyclerTypes.ACTIVITY_RICH_PRESENCE_INVITE_EMBED /* 55 */:
-                    b bVar41 = aVar.f2949e;
-                    bVar41.f2967a0 = typedArray.getInt(index, bVar41.f2967a0);
+                    b bVar41 = aVar.f2646e;
+                    bVar41.f2664a0 = typedArray.getInt(index, bVar41.f2664a0);
                     break;
                 case ChatViewRecyclerTypes.SHARED_CUSTOM_THEME_EMBED /* 56 */:
-                    b bVar42 = aVar.f2949e;
-                    bVar42.f2969b0 = typedArray.getDimensionPixelSize(index, bVar42.f2969b0);
+                    b bVar42 = aVar.f2646e;
+                    bVar42.f2666b0 = typedArray.getDimensionPixelSize(index, bVar42.f2666b0);
                     break;
                 case ChatViewRecyclerTypes.PREMIUM_GROUP_INVITE /* 57 */:
-                    b bVar43 = aVar.f2949e;
-                    bVar43.f2971c0 = typedArray.getDimensionPixelSize(index, bVar43.f2971c0);
+                    b bVar43 = aVar.f2646e;
+                    bVar43.f2668c0 = typedArray.getDimensionPixelSize(index, bVar43.f2668c0);
                     break;
                 case 58:
-                    b bVar44 = aVar.f2949e;
-                    bVar44.f2973d0 = typedArray.getDimensionPixelSize(index, bVar44.f2973d0);
+                    b bVar44 = aVar.f2646e;
+                    bVar44.f2670d0 = typedArray.getDimensionPixelSize(index, bVar44.f2670d0);
                     break;
                 case 59:
-                    b bVar45 = aVar.f2949e;
-                    bVar45.f2975e0 = typedArray.getDimensionPixelSize(index, bVar45.f2975e0);
+                    b bVar45 = aVar.f2646e;
+                    bVar45.f2672e0 = typedArray.getDimensionPixelSize(index, bVar45.f2672e0);
                     break;
                 case 60:
-                    e eVar11 = aVar.f2950f;
-                    eVar11.f3031b = typedArray.getFloat(index, eVar11.f3031b);
+                    e eVar11 = aVar.f2647f;
+                    eVar11.f2728b = typedArray.getFloat(index, eVar11.f2728b);
                     break;
                 case 61:
-                    b bVar46 = aVar.f2949e;
+                    b bVar46 = aVar.f2646e;
                     bVar46.B = u(typedArray, index, bVar46.B);
                     break;
                 case 62:
-                    b bVar47 = aVar.f2949e;
+                    b bVar47 = aVar.f2646e;
                     bVar47.C = typedArray.getDimensionPixelSize(index, bVar47.C);
                     break;
                 case NotificationData.MESSAGE_TYPE_EMOJI_ADDED /* 63 */:
-                    b bVar48 = aVar.f2949e;
+                    b bVar48 = aVar.f2646e;
                     bVar48.D = typedArray.getFloat(index, bVar48.D);
                     break;
                 case 64:
-                    c cVar = aVar.f2948d;
-                    cVar.f3011b = u(typedArray, index, cVar.f3011b);
+                    c cVar = aVar.f2645d;
+                    cVar.f2708b = u(typedArray, index, cVar.f2708b);
                     break;
                 case 65:
                     if (typedArray.peekValue(index).type == 3) {
-                        aVar.f2948d.f3013d = typedArray.getString(index);
+                        aVar.f2645d.f2710d = typedArray.getString(index);
                         break;
                     } else {
-                        aVar.f2948d.f3013d = i1.a.f26589c[typedArray.getInteger(index, 0)];
+                        aVar.f2645d.f2710d = i1.a.f26631c[typedArray.getInteger(index, 0)];
                         break;
                     }
                 case 66:
-                    aVar.f2948d.f3015f = typedArray.getInt(index, 0);
+                    aVar.f2645d.f2712f = typedArray.getInt(index, 0);
                     break;
                 case 67:
-                    c cVar2 = aVar.f2948d;
-                    cVar2.f3018i = typedArray.getFloat(index, cVar2.f3018i);
+                    c cVar2 = aVar.f2645d;
+                    cVar2.f2715i = typedArray.getFloat(index, cVar2.f2715i);
                     break;
                 case 68:
-                    d dVar4 = aVar.f2947c;
-                    dVar4.f3028e = typedArray.getFloat(index, dVar4.f3028e);
+                    d dVar4 = aVar.f2644c;
+                    dVar4.f2725e = typedArray.getFloat(index, dVar4.f2725e);
                     break;
                 case 69:
-                    aVar.f2949e.f2977f0 = typedArray.getFloat(index, 1.0f);
+                    aVar.f2646e.f2674f0 = typedArray.getFloat(index, 1.0f);
                     break;
                 case 70:
-                    aVar.f2949e.f2979g0 = typedArray.getFloat(index, 1.0f);
+                    aVar.f2646e.f2676g0 = typedArray.getFloat(index, 1.0f);
                     break;
                 case 71:
                     Log.e("ConstraintSet", "CURRENTLY UNSUPPORTED");
                     break;
                 case 72:
-                    b bVar49 = aVar.f2949e;
-                    bVar49.f2981h0 = typedArray.getInt(index, bVar49.f2981h0);
+                    b bVar49 = aVar.f2646e;
+                    bVar49.f2678h0 = typedArray.getInt(index, bVar49.f2678h0);
                     break;
                 case 73:
-                    b bVar50 = aVar.f2949e;
-                    bVar50.f2983i0 = typedArray.getDimensionPixelSize(index, bVar50.f2983i0);
+                    b bVar50 = aVar.f2646e;
+                    bVar50.f2680i0 = typedArray.getDimensionPixelSize(index, bVar50.f2680i0);
                     break;
                 case 74:
-                    aVar.f2949e.f2989l0 = typedArray.getString(index);
+                    aVar.f2646e.f2686l0 = typedArray.getString(index);
                     break;
                 case 75:
-                    b bVar51 = aVar.f2949e;
-                    bVar51.f2997p0 = typedArray.getBoolean(index, bVar51.f2997p0);
+                    b bVar51 = aVar.f2646e;
+                    bVar51.f2694p0 = typedArray.getBoolean(index, bVar51.f2694p0);
                     break;
                 case 76:
-                    c cVar3 = aVar.f2948d;
-                    cVar3.f3014e = typedArray.getInt(index, cVar3.f3014e);
+                    c cVar3 = aVar.f2645d;
+                    cVar3.f2711e = typedArray.getInt(index, cVar3.f2711e);
                     break;
                 case 77:
-                    aVar.f2949e.f2991m0 = typedArray.getString(index);
+                    aVar.f2646e.f2688m0 = typedArray.getString(index);
                     break;
                 case 78:
-                    d dVar5 = aVar.f2947c;
-                    dVar5.f3026c = typedArray.getInt(index, dVar5.f3026c);
+                    d dVar5 = aVar.f2644c;
+                    dVar5.f2723c = typedArray.getInt(index, dVar5.f2723c);
                     break;
                 case 79:
-                    c cVar4 = aVar.f2948d;
-                    cVar4.f3016g = typedArray.getFloat(index, cVar4.f3016g);
+                    c cVar4 = aVar.f2645d;
+                    cVar4.f2713g = typedArray.getFloat(index, cVar4.f2713g);
                     break;
                 case 80:
-                    b bVar52 = aVar.f2949e;
-                    bVar52.f2993n0 = typedArray.getBoolean(index, bVar52.f2993n0);
+                    b bVar52 = aVar.f2646e;
+                    bVar52.f2690n0 = typedArray.getBoolean(index, bVar52.f2690n0);
                     break;
                 case BuildConfig.REACT_NATIVE_MINOR_VERSION /* 81 */:
-                    b bVar53 = aVar.f2949e;
-                    bVar53.f2995o0 = typedArray.getBoolean(index, bVar53.f2995o0);
+                    b bVar53 = aVar.f2646e;
+                    bVar53.f2692o0 = typedArray.getBoolean(index, bVar53.f2692o0);
                     break;
                 case 82:
-                    c cVar5 = aVar.f2948d;
-                    cVar5.f3012c = typedArray.getInteger(index, cVar5.f3012c);
+                    c cVar5 = aVar.f2645d;
+                    cVar5.f2709c = typedArray.getInteger(index, cVar5.f2709c);
                     break;
                 case 83:
-                    e eVar12 = aVar.f2950f;
-                    eVar12.f3038i = u(typedArray, index, eVar12.f3038i);
+                    e eVar12 = aVar.f2647f;
+                    eVar12.f2735i = u(typedArray, index, eVar12.f2735i);
                     break;
                 case 84:
-                    c cVar6 = aVar.f2948d;
-                    cVar6.f3020k = typedArray.getInteger(index, cVar6.f3020k);
+                    c cVar6 = aVar.f2645d;
+                    cVar6.f2717k = typedArray.getInteger(index, cVar6.f2717k);
                     break;
                 case 85:
-                    c cVar7 = aVar.f2948d;
-                    cVar7.f3019j = typedArray.getFloat(index, cVar7.f3019j);
+                    c cVar7 = aVar.f2645d;
+                    cVar7.f2716j = typedArray.getFloat(index, cVar7.f2716j);
                     break;
                 case 86:
                     int i11 = typedArray.peekValue(index).type;
                     if (i11 == 1) {
-                        aVar.f2948d.f3023n = typedArray.getResourceId(index, -1);
-                        c cVar8 = aVar.f2948d;
-                        if (cVar8.f3023n != -1) {
-                            cVar8.f3022m = -2;
+                        aVar.f2645d.f2720n = typedArray.getResourceId(index, -1);
+                        c cVar8 = aVar.f2645d;
+                        if (cVar8.f2720n != -1) {
+                            cVar8.f2719m = -2;
                             break;
                         } else {
                             break;
                         }
                     } else if (i11 == 3) {
-                        aVar.f2948d.f3021l = typedArray.getString(index);
-                        if (aVar.f2948d.f3021l.indexOf("/") > 0) {
-                            aVar.f2948d.f3023n = typedArray.getResourceId(index, -1);
-                            aVar.f2948d.f3022m = -2;
+                        aVar.f2645d.f2718l = typedArray.getString(index);
+                        if (aVar.f2645d.f2718l.indexOf("/") > 0) {
+                            aVar.f2645d.f2720n = typedArray.getResourceId(index, -1);
+                            aVar.f2645d.f2719m = -2;
                             break;
                         } else {
-                            aVar.f2948d.f3022m = -1;
+                            aVar.f2645d.f2719m = -1;
                             break;
                         }
                     } else {
-                        c cVar9 = aVar.f2948d;
-                        cVar9.f3022m = typedArray.getInteger(index, cVar9.f3023n);
+                        c cVar9 = aVar.f2645d;
+                        cVar9.f2719m = typedArray.getInteger(index, cVar9.f2720n);
                         break;
                     }
                 case 87:
-                    Log.w("ConstraintSet", "unused attribute 0x" + Integer.toHexString(index) + "   " + f2937h.get(index));
+                    Log.w("ConstraintSet", "unused attribute 0x" + Integer.toHexString(index) + "   " + f2634h.get(index));
                     break;
                 case 88:
                 case 89:
                 case 90:
                 default:
-                    Log.w("ConstraintSet", "Unknown attribute 0x" + Integer.toHexString(index) + "   " + f2937h.get(index));
+                    Log.w("ConstraintSet", "Unknown attribute 0x" + Integer.toHexString(index) + "   " + f2634h.get(index));
                     break;
                 case 91:
-                    b bVar54 = aVar.f2949e;
-                    bVar54.f3001s = u(typedArray, index, bVar54.f3001s);
+                    b bVar54 = aVar.f2646e;
+                    bVar54.f2698s = u(typedArray, index, bVar54.f2698s);
                     break;
                 case 92:
-                    b bVar55 = aVar.f2949e;
-                    bVar55.f3002t = u(typedArray, index, bVar55.f3002t);
+                    b bVar55 = aVar.f2646e;
+                    bVar55.f2699t = u(typedArray, index, bVar55.f2699t);
                     break;
                 case 93:
-                    b bVar56 = aVar.f2949e;
+                    b bVar56 = aVar.f2646e;
                     bVar56.N = typedArray.getDimensionPixelSize(index, bVar56.N);
                     break;
                 case 94:
-                    b bVar57 = aVar.f2949e;
+                    b bVar57 = aVar.f2646e;
                     bVar57.U = typedArray.getDimensionPixelSize(index, bVar57.U);
                     break;
                 case 95:
-                    v(aVar.f2949e, typedArray, index, 0);
+                    v(aVar.f2646e, typedArray, index, 0);
                     break;
                 case 96:
-                    v(aVar.f2949e, typedArray, index, 1);
+                    v(aVar.f2646e, typedArray, index, 1);
                     break;
                 case 97:
-                    b bVar58 = aVar.f2949e;
-                    bVar58.f2999q0 = typedArray.getInt(index, bVar58.f2999q0);
+                    b bVar58 = aVar.f2646e;
+                    bVar58.f2696q0 = typedArray.getInt(index, bVar58.f2696q0);
                     break;
             }
         }
-        b bVar59 = aVar.f2949e;
-        if (bVar59.f2989l0 != null) {
-            bVar59.f2987k0 = null;
+        b bVar59 = aVar.f2646e;
+        if (bVar59.f2686l0 != null) {
+            bVar59.f2684k0 = null;
         }
     }
 
     private static void z(a aVar, TypedArray typedArray) {
         int indexCount = typedArray.getIndexCount();
-        a.C0028a c0028a = new a.C0028a();
-        aVar.f2952h = c0028a;
-        aVar.f2948d.f3010a = false;
-        aVar.f2949e.f2968b = false;
-        aVar.f2947c.f3024a = false;
-        aVar.f2950f.f3030a = false;
+        a.C0030a c0030a = new a.C0030a();
+        aVar.f2649h = c0030a;
+        aVar.f2645d.f2707a = false;
+        aVar.f2646e.f2665b = false;
+        aVar.f2644c.f2721a = false;
+        aVar.f2647f.f2727a = false;
         for (int i10 = 0; i10 < indexCount; i10++) {
             int index = typedArray.getIndex(i10);
-            switch (f2938i.get(index)) {
+            switch (f2635i.get(index)) {
                 case 2:
-                    c0028a.b(2, typedArray.getDimensionPixelSize(index, aVar.f2949e.K));
+                    c0030a.b(2, typedArray.getDimensionPixelSize(index, aVar.f2646e.K));
                     break;
                 case 3:
                 case 4:
@@ -2147,332 +2147,332 @@ public class ConstraintSet {
                 case 91:
                 case 92:
                 default:
-                    Log.w("ConstraintSet", "Unknown attribute 0x" + Integer.toHexString(index) + "   " + f2937h.get(index));
+                    Log.w("ConstraintSet", "Unknown attribute 0x" + Integer.toHexString(index) + "   " + f2634h.get(index));
                     break;
                 case 5:
-                    c0028a.c(5, typedArray.getString(index));
+                    c0030a.c(5, typedArray.getString(index));
                     break;
                 case 6:
-                    c0028a.b(6, typedArray.getDimensionPixelOffset(index, aVar.f2949e.E));
+                    c0030a.b(6, typedArray.getDimensionPixelOffset(index, aVar.f2646e.E));
                     break;
                 case 7:
-                    c0028a.b(7, typedArray.getDimensionPixelOffset(index, aVar.f2949e.F));
+                    c0030a.b(7, typedArray.getDimensionPixelOffset(index, aVar.f2646e.F));
                     break;
                 case 8:
-                    c0028a.b(8, typedArray.getDimensionPixelSize(index, aVar.f2949e.L));
+                    c0030a.b(8, typedArray.getDimensionPixelSize(index, aVar.f2646e.L));
                     break;
                 case 11:
-                    c0028a.b(11, typedArray.getDimensionPixelSize(index, aVar.f2949e.R));
+                    c0030a.b(11, typedArray.getDimensionPixelSize(index, aVar.f2646e.R));
                     break;
                 case 12:
-                    c0028a.b(12, typedArray.getDimensionPixelSize(index, aVar.f2949e.S));
+                    c0030a.b(12, typedArray.getDimensionPixelSize(index, aVar.f2646e.S));
                     break;
                 case 13:
-                    c0028a.b(13, typedArray.getDimensionPixelSize(index, aVar.f2949e.O));
+                    c0030a.b(13, typedArray.getDimensionPixelSize(index, aVar.f2646e.O));
                     break;
                 case 14:
-                    c0028a.b(14, typedArray.getDimensionPixelSize(index, aVar.f2949e.Q));
+                    c0030a.b(14, typedArray.getDimensionPixelSize(index, aVar.f2646e.Q));
                     break;
                 case 15:
-                    c0028a.b(15, typedArray.getDimensionPixelSize(index, aVar.f2949e.T));
+                    c0030a.b(15, typedArray.getDimensionPixelSize(index, aVar.f2646e.T));
                     break;
                 case 16:
-                    c0028a.b(16, typedArray.getDimensionPixelSize(index, aVar.f2949e.P));
+                    c0030a.b(16, typedArray.getDimensionPixelSize(index, aVar.f2646e.P));
                     break;
                 case 17:
-                    c0028a.b(17, typedArray.getDimensionPixelOffset(index, aVar.f2949e.f2976f));
+                    c0030a.b(17, typedArray.getDimensionPixelOffset(index, aVar.f2646e.f2673f));
                     break;
                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                    c0028a.b(18, typedArray.getDimensionPixelOffset(index, aVar.f2949e.f2978g));
+                    c0030a.b(18, typedArray.getDimensionPixelOffset(index, aVar.f2646e.f2675g));
                     break;
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                    c0028a.a(19, typedArray.getFloat(index, aVar.f2949e.f2980h));
+                    c0030a.a(19, typedArray.getFloat(index, aVar.f2646e.f2677h));
                     break;
                 case 20:
-                    c0028a.a(20, typedArray.getFloat(index, aVar.f2949e.f3007y));
+                    c0030a.a(20, typedArray.getFloat(index, aVar.f2646e.f2704y));
                     break;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                    c0028a.b(21, typedArray.getLayoutDimension(index, aVar.f2949e.f2974e));
+                    c0030a.b(21, typedArray.getLayoutDimension(index, aVar.f2646e.f2671e));
                     break;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                    c0028a.b(22, f2936g[typedArray.getInt(index, aVar.f2947c.f3025b)]);
+                    c0030a.b(22, f2633g[typedArray.getInt(index, aVar.f2644c.f2722b)]);
                     break;
                 case 23:
-                    c0028a.b(23, typedArray.getLayoutDimension(index, aVar.f2949e.f2972d));
+                    c0030a.b(23, typedArray.getLayoutDimension(index, aVar.f2646e.f2669d));
                     break;
                 case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                    c0028a.b(24, typedArray.getDimensionPixelSize(index, aVar.f2949e.H));
+                    c0030a.b(24, typedArray.getDimensionPixelSize(index, aVar.f2646e.H));
                     break;
                 case 27:
-                    c0028a.b(27, typedArray.getInt(index, aVar.f2949e.G));
+                    c0030a.b(27, typedArray.getInt(index, aVar.f2646e.G));
                     break;
                 case 28:
-                    c0028a.b(28, typedArray.getDimensionPixelSize(index, aVar.f2949e.I));
+                    c0030a.b(28, typedArray.getDimensionPixelSize(index, aVar.f2646e.I));
                     break;
                 case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
-                    c0028a.b(31, typedArray.getDimensionPixelSize(index, aVar.f2949e.M));
+                    c0030a.b(31, typedArray.getDimensionPixelSize(index, aVar.f2646e.M));
                     break;
                 case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
-                    c0028a.b(34, typedArray.getDimensionPixelSize(index, aVar.f2949e.J));
+                    c0030a.b(34, typedArray.getDimensionPixelSize(index, aVar.f2646e.J));
                     break;
                 case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
-                    c0028a.a(37, typedArray.getFloat(index, aVar.f2949e.f3008z));
+                    c0030a.a(37, typedArray.getFloat(index, aVar.f2646e.f2705z));
                     break;
                 case ChatViewRecyclerTypes.POLL_IMAGE_ONLY /* 38 */:
-                    int resourceId = typedArray.getResourceId(index, aVar.f2945a);
-                    aVar.f2945a = resourceId;
-                    c0028a.b(38, resourceId);
+                    int resourceId = typedArray.getResourceId(index, aVar.f2642a);
+                    aVar.f2642a = resourceId;
+                    c0030a.b(38, resourceId);
                     break;
                 case ChatViewRecyclerTypes.SAFETY_SYSTEM_NOTIFICATION /* 39 */:
-                    c0028a.a(39, typedArray.getFloat(index, aVar.f2949e.W));
+                    c0030a.a(39, typedArray.getFloat(index, aVar.f2646e.W));
                     break;
                 case 40:
-                    c0028a.a(40, typedArray.getFloat(index, aVar.f2949e.V));
+                    c0030a.a(40, typedArray.getFloat(index, aVar.f2646e.V));
                     break;
                 case 41:
-                    c0028a.b(41, typedArray.getInt(index, aVar.f2949e.X));
+                    c0030a.b(41, typedArray.getInt(index, aVar.f2646e.X));
                     break;
                 case 42:
-                    c0028a.b(42, typedArray.getInt(index, aVar.f2949e.Y));
+                    c0030a.b(42, typedArray.getInt(index, aVar.f2646e.Y));
                     break;
                 case ChatViewRecyclerTypes.FORWARD_HEADER /* 43 */:
-                    c0028a.a(43, typedArray.getFloat(index, aVar.f2947c.f3027d));
+                    c0030a.a(43, typedArray.getFloat(index, aVar.f2644c.f2724d));
                     break;
                 case ChatViewRecyclerTypes.FORWARD_BREADCRUMB /* 44 */:
-                    c0028a.d(44, true);
-                    c0028a.a(44, typedArray.getDimension(index, aVar.f2950f.f3043n));
+                    c0030a.d(44, true);
+                    c0030a.a(44, typedArray.getDimension(index, aVar.f2647f.f2740n));
                     break;
                 case ChatViewRecyclerTypes.REACTION_BURST_REACTION /* 45 */:
-                    c0028a.a(45, typedArray.getFloat(index, aVar.f2950f.f3032c));
+                    c0030a.a(45, typedArray.getFloat(index, aVar.f2647f.f2729c));
                     break;
                 case 46:
-                    c0028a.a(46, typedArray.getFloat(index, aVar.f2950f.f3033d));
+                    c0030a.a(46, typedArray.getFloat(index, aVar.f2647f.f2730d));
                     break;
                 case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
-                    c0028a.a(47, typedArray.getFloat(index, aVar.f2950f.f3034e));
+                    c0030a.a(47, typedArray.getFloat(index, aVar.f2647f.f2731e));
                     break;
                 case 48:
-                    c0028a.a(48, typedArray.getFloat(index, aVar.f2950f.f3035f));
+                    c0030a.a(48, typedArray.getFloat(index, aVar.f2647f.f2732f));
                     break;
                 case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
-                    c0028a.a(49, typedArray.getDimension(index, aVar.f2950f.f3036g));
+                    c0030a.a(49, typedArray.getDimension(index, aVar.f2647f.f2733g));
                     break;
                 case 50:
-                    c0028a.a(50, typedArray.getDimension(index, aVar.f2950f.f3037h));
+                    c0030a.a(50, typedArray.getDimension(index, aVar.f2647f.f2734h));
                     break;
                 case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
-                    c0028a.a(51, typedArray.getDimension(index, aVar.f2950f.f3039j));
+                    c0030a.a(51, typedArray.getDimension(index, aVar.f2647f.f2736j));
                     break;
                 case ChatViewRecyclerTypes.REFERRAL /* 52 */:
-                    c0028a.a(52, typedArray.getDimension(index, aVar.f2950f.f3040k));
+                    c0030a.a(52, typedArray.getDimension(index, aVar.f2647f.f2737k));
                     break;
                 case ChatViewRecyclerTypes.GUILD_PROFILE_INVITE /* 53 */:
-                    c0028a.a(53, typedArray.getDimension(index, aVar.f2950f.f3041l));
+                    c0030a.a(53, typedArray.getDimension(index, aVar.f2647f.f2738l));
                     break;
                 case ChatViewRecyclerTypes.APP_MESSAGE_EMBED /* 54 */:
-                    c0028a.b(54, typedArray.getInt(index, aVar.f2949e.Z));
+                    c0030a.b(54, typedArray.getInt(index, aVar.f2646e.Z));
                     break;
                 case ChatViewRecyclerTypes.ACTIVITY_RICH_PRESENCE_INVITE_EMBED /* 55 */:
-                    c0028a.b(55, typedArray.getInt(index, aVar.f2949e.f2967a0));
+                    c0030a.b(55, typedArray.getInt(index, aVar.f2646e.f2664a0));
                     break;
                 case ChatViewRecyclerTypes.SHARED_CUSTOM_THEME_EMBED /* 56 */:
-                    c0028a.b(56, typedArray.getDimensionPixelSize(index, aVar.f2949e.f2969b0));
+                    c0030a.b(56, typedArray.getDimensionPixelSize(index, aVar.f2646e.f2666b0));
                     break;
                 case ChatViewRecyclerTypes.PREMIUM_GROUP_INVITE /* 57 */:
-                    c0028a.b(57, typedArray.getDimensionPixelSize(index, aVar.f2949e.f2971c0));
+                    c0030a.b(57, typedArray.getDimensionPixelSize(index, aVar.f2646e.f2668c0));
                     break;
                 case 58:
-                    c0028a.b(58, typedArray.getDimensionPixelSize(index, aVar.f2949e.f2973d0));
+                    c0030a.b(58, typedArray.getDimensionPixelSize(index, aVar.f2646e.f2670d0));
                     break;
                 case 59:
-                    c0028a.b(59, typedArray.getDimensionPixelSize(index, aVar.f2949e.f2975e0));
+                    c0030a.b(59, typedArray.getDimensionPixelSize(index, aVar.f2646e.f2672e0));
                     break;
                 case 60:
-                    c0028a.a(60, typedArray.getFloat(index, aVar.f2950f.f3031b));
+                    c0030a.a(60, typedArray.getFloat(index, aVar.f2647f.f2728b));
                     break;
                 case 62:
-                    c0028a.b(62, typedArray.getDimensionPixelSize(index, aVar.f2949e.C));
+                    c0030a.b(62, typedArray.getDimensionPixelSize(index, aVar.f2646e.C));
                     break;
                 case NotificationData.MESSAGE_TYPE_EMOJI_ADDED /* 63 */:
-                    c0028a.a(63, typedArray.getFloat(index, aVar.f2949e.D));
+                    c0030a.a(63, typedArray.getFloat(index, aVar.f2646e.D));
                     break;
                 case 64:
-                    c0028a.b(64, u(typedArray, index, aVar.f2948d.f3011b));
+                    c0030a.b(64, u(typedArray, index, aVar.f2645d.f2708b));
                     break;
                 case 65:
                     if (typedArray.peekValue(index).type == 3) {
-                        c0028a.c(65, typedArray.getString(index));
+                        c0030a.c(65, typedArray.getString(index));
                         break;
                     } else {
-                        c0028a.c(65, i1.a.f26589c[typedArray.getInteger(index, 0)]);
+                        c0030a.c(65, i1.a.f26631c[typedArray.getInteger(index, 0)]);
                         break;
                     }
                 case 66:
-                    c0028a.b(66, typedArray.getInt(index, 0));
+                    c0030a.b(66, typedArray.getInt(index, 0));
                     break;
                 case 67:
-                    c0028a.a(67, typedArray.getFloat(index, aVar.f2948d.f3018i));
+                    c0030a.a(67, typedArray.getFloat(index, aVar.f2645d.f2715i));
                     break;
                 case 68:
-                    c0028a.a(68, typedArray.getFloat(index, aVar.f2947c.f3028e));
+                    c0030a.a(68, typedArray.getFloat(index, aVar.f2644c.f2725e));
                     break;
                 case 69:
-                    c0028a.a(69, typedArray.getFloat(index, 1.0f));
+                    c0030a.a(69, typedArray.getFloat(index, 1.0f));
                     break;
                 case 70:
-                    c0028a.a(70, typedArray.getFloat(index, 1.0f));
+                    c0030a.a(70, typedArray.getFloat(index, 1.0f));
                     break;
                 case 71:
                     Log.e("ConstraintSet", "CURRENTLY UNSUPPORTED");
                     break;
                 case 72:
-                    c0028a.b(72, typedArray.getInt(index, aVar.f2949e.f2981h0));
+                    c0030a.b(72, typedArray.getInt(index, aVar.f2646e.f2678h0));
                     break;
                 case 73:
-                    c0028a.b(73, typedArray.getDimensionPixelSize(index, aVar.f2949e.f2983i0));
+                    c0030a.b(73, typedArray.getDimensionPixelSize(index, aVar.f2646e.f2680i0));
                     break;
                 case 74:
-                    c0028a.c(74, typedArray.getString(index));
+                    c0030a.c(74, typedArray.getString(index));
                     break;
                 case 75:
-                    c0028a.d(75, typedArray.getBoolean(index, aVar.f2949e.f2997p0));
+                    c0030a.d(75, typedArray.getBoolean(index, aVar.f2646e.f2694p0));
                     break;
                 case 76:
-                    c0028a.b(76, typedArray.getInt(index, aVar.f2948d.f3014e));
+                    c0030a.b(76, typedArray.getInt(index, aVar.f2645d.f2711e));
                     break;
                 case 77:
-                    c0028a.c(77, typedArray.getString(index));
+                    c0030a.c(77, typedArray.getString(index));
                     break;
                 case 78:
-                    c0028a.b(78, typedArray.getInt(index, aVar.f2947c.f3026c));
+                    c0030a.b(78, typedArray.getInt(index, aVar.f2644c.f2723c));
                     break;
                 case 79:
-                    c0028a.a(79, typedArray.getFloat(index, aVar.f2948d.f3016g));
+                    c0030a.a(79, typedArray.getFloat(index, aVar.f2645d.f2713g));
                     break;
                 case 80:
-                    c0028a.d(80, typedArray.getBoolean(index, aVar.f2949e.f2993n0));
+                    c0030a.d(80, typedArray.getBoolean(index, aVar.f2646e.f2690n0));
                     break;
                 case BuildConfig.REACT_NATIVE_MINOR_VERSION /* 81 */:
-                    c0028a.d(81, typedArray.getBoolean(index, aVar.f2949e.f2995o0));
+                    c0030a.d(81, typedArray.getBoolean(index, aVar.f2646e.f2692o0));
                     break;
                 case 82:
-                    c0028a.b(82, typedArray.getInteger(index, aVar.f2948d.f3012c));
+                    c0030a.b(82, typedArray.getInteger(index, aVar.f2645d.f2709c));
                     break;
                 case 83:
-                    c0028a.b(83, u(typedArray, index, aVar.f2950f.f3038i));
+                    c0030a.b(83, u(typedArray, index, aVar.f2647f.f2735i));
                     break;
                 case 84:
-                    c0028a.b(84, typedArray.getInteger(index, aVar.f2948d.f3020k));
+                    c0030a.b(84, typedArray.getInteger(index, aVar.f2645d.f2717k));
                     break;
                 case 85:
-                    c0028a.a(85, typedArray.getFloat(index, aVar.f2948d.f3019j));
+                    c0030a.a(85, typedArray.getFloat(index, aVar.f2645d.f2716j));
                     break;
                 case 86:
                     int i11 = typedArray.peekValue(index).type;
                     if (i11 == 1) {
-                        aVar.f2948d.f3023n = typedArray.getResourceId(index, -1);
-                        c0028a.b(89, aVar.f2948d.f3023n);
-                        c cVar = aVar.f2948d;
-                        if (cVar.f3023n != -1) {
-                            cVar.f3022m = -2;
-                            c0028a.b(88, -2);
+                        aVar.f2645d.f2720n = typedArray.getResourceId(index, -1);
+                        c0030a.b(89, aVar.f2645d.f2720n);
+                        c cVar = aVar.f2645d;
+                        if (cVar.f2720n != -1) {
+                            cVar.f2719m = -2;
+                            c0030a.b(88, -2);
                             break;
                         } else {
                             break;
                         }
                     } else if (i11 == 3) {
-                        aVar.f2948d.f3021l = typedArray.getString(index);
-                        c0028a.c(90, aVar.f2948d.f3021l);
-                        if (aVar.f2948d.f3021l.indexOf("/") > 0) {
-                            aVar.f2948d.f3023n = typedArray.getResourceId(index, -1);
-                            c0028a.b(89, aVar.f2948d.f3023n);
-                            aVar.f2948d.f3022m = -2;
-                            c0028a.b(88, -2);
+                        aVar.f2645d.f2718l = typedArray.getString(index);
+                        c0030a.c(90, aVar.f2645d.f2718l);
+                        if (aVar.f2645d.f2718l.indexOf("/") > 0) {
+                            aVar.f2645d.f2720n = typedArray.getResourceId(index, -1);
+                            c0030a.b(89, aVar.f2645d.f2720n);
+                            aVar.f2645d.f2719m = -2;
+                            c0030a.b(88, -2);
                             break;
                         } else {
-                            aVar.f2948d.f3022m = -1;
-                            c0028a.b(88, -1);
+                            aVar.f2645d.f2719m = -1;
+                            c0030a.b(88, -1);
                             break;
                         }
                     } else {
-                        c cVar2 = aVar.f2948d;
-                        cVar2.f3022m = typedArray.getInteger(index, cVar2.f3023n);
-                        c0028a.b(88, aVar.f2948d.f3022m);
+                        c cVar2 = aVar.f2645d;
+                        cVar2.f2719m = typedArray.getInteger(index, cVar2.f2720n);
+                        c0030a.b(88, aVar.f2645d.f2719m);
                         break;
                     }
                 case 87:
-                    Log.w("ConstraintSet", "unused attribute 0x" + Integer.toHexString(index) + "   " + f2937h.get(index));
+                    Log.w("ConstraintSet", "unused attribute 0x" + Integer.toHexString(index) + "   " + f2634h.get(index));
                     break;
                 case 93:
-                    c0028a.b(93, typedArray.getDimensionPixelSize(index, aVar.f2949e.N));
+                    c0030a.b(93, typedArray.getDimensionPixelSize(index, aVar.f2646e.N));
                     break;
                 case 94:
-                    c0028a.b(94, typedArray.getDimensionPixelSize(index, aVar.f2949e.U));
+                    c0030a.b(94, typedArray.getDimensionPixelSize(index, aVar.f2646e.U));
                     break;
                 case 95:
-                    v(c0028a, typedArray, index, 0);
+                    v(c0030a, typedArray, index, 0);
                     break;
                 case 96:
-                    v(c0028a, typedArray, index, 1);
+                    v(c0030a, typedArray, index, 1);
                     break;
                 case 97:
-                    c0028a.b(97, typedArray.getInt(index, aVar.f2949e.f2999q0));
+                    c0030a.b(97, typedArray.getInt(index, aVar.f2646e.f2696q0));
                     break;
                 case 98:
-                    if (m1.b.f36871d) {
-                        int resourceId2 = typedArray.getResourceId(index, aVar.f2945a);
-                        aVar.f2945a = resourceId2;
+                    if (m1.b.f36730d) {
+                        int resourceId2 = typedArray.getResourceId(index, aVar.f2642a);
+                        aVar.f2642a = resourceId2;
                         if (resourceId2 == -1) {
-                            aVar.f2946b = typedArray.getString(index);
+                            aVar.f2643b = typedArray.getString(index);
                             break;
                         } else {
                             break;
                         }
                     } else if (typedArray.peekValue(index).type == 3) {
-                        aVar.f2946b = typedArray.getString(index);
+                        aVar.f2643b = typedArray.getString(index);
                         break;
                     } else {
-                        aVar.f2945a = typedArray.getResourceId(index, aVar.f2945a);
+                        aVar.f2642a = typedArray.getResourceId(index, aVar.f2642a);
                         break;
                     }
                 case 99:
-                    c0028a.d(99, typedArray.getBoolean(index, aVar.f2949e.f2982i));
+                    c0030a.d(99, typedArray.getBoolean(index, aVar.f2646e.f2679i));
                     break;
             }
         }
     }
 
     public void A(int i10, float f10) {
-        r(i10).f2949e.f3007y = f10;
+        r(i10).f2646e.f2704y = f10;
     }
 
     public void B(int i10, float f10) {
-        r(i10).f2949e.W = f10;
+        r(i10).f2646e.W = f10;
     }
 
     public void C(int i10, int i11, int i12) {
         a r10 = r(i10);
         switch (i11) {
             case 1:
-                r10.f2949e.H = i12;
+                r10.f2646e.H = i12;
                 return;
             case 2:
-                r10.f2949e.I = i12;
+                r10.f2646e.I = i12;
                 return;
             case 3:
-                r10.f2949e.J = i12;
+                r10.f2646e.J = i12;
                 return;
             case 4:
-                r10.f2949e.K = i12;
+                r10.f2646e.K = i12;
                 return;
             case 5:
-                r10.f2949e.N = i12;
+                r10.f2646e.N = i12;
                 return;
             case 6:
-                r10.f2949e.M = i12;
+                r10.f2646e.M = i12;
                 return;
             case 7:
-                r10.f2949e.L = i12;
+                r10.f2646e.L = i12;
                 return;
             default:
                 throw new IllegalArgumentException("unknown constraint");
@@ -2480,7 +2480,7 @@ public class ConstraintSet {
     }
 
     public void D(int i10, float f10) {
-        r(i10).f2949e.f3008z = f10;
+        r(i10).f2646e.f2705z = f10;
     }
 
     public void c(ConstraintLayout constraintLayout) {
@@ -2493,36 +2493,36 @@ public class ConstraintSet {
     public void d(ConstraintLayout constraintLayout, boolean z10) {
         View findViewById;
         int childCount = constraintLayout.getChildCount();
-        HashSet hashSet = new HashSet(this.f2944f.keySet());
+        HashSet hashSet = new HashSet(this.f2641f.keySet());
         for (int i10 = 0; i10 < childCount; i10++) {
             View childAt = constraintLayout.getChildAt(i10);
             int id2 = childAt.getId();
-            if (!this.f2944f.containsKey(Integer.valueOf(id2))) {
+            if (!this.f2641f.containsKey(Integer.valueOf(id2))) {
                 Log.w("ConstraintSet", "id unknown " + m1.a.a(childAt));
-            } else if (this.f2943e && id2 == -1) {
+            } else if (this.f2640e && id2 == -1) {
                 throw new RuntimeException("All children of ConstraintLayout must have ids to use ConstraintSet");
             } else {
                 if (id2 != -1) {
-                    if (this.f2944f.containsKey(Integer.valueOf(id2))) {
+                    if (this.f2641f.containsKey(Integer.valueOf(id2))) {
                         hashSet.remove(Integer.valueOf(id2));
-                        a aVar = (a) this.f2944f.get(Integer.valueOf(id2));
+                        a aVar = (a) this.f2641f.get(Integer.valueOf(id2));
                         if (aVar != null) {
                             if (childAt instanceof Barrier) {
-                                aVar.f2949e.f2985j0 = 1;
+                                aVar.f2646e.f2682j0 = 1;
                                 Barrier barrier = (Barrier) childAt;
                                 barrier.setId(id2);
-                                barrier.setType(aVar.f2949e.f2981h0);
-                                barrier.setMargin(aVar.f2949e.f2983i0);
-                                barrier.setAllowsGoneWidget(aVar.f2949e.f2997p0);
-                                b bVar = aVar.f2949e;
-                                int[] iArr = bVar.f2987k0;
+                                barrier.setType(aVar.f2646e.f2678h0);
+                                barrier.setMargin(aVar.f2646e.f2680i0);
+                                barrier.setAllowsGoneWidget(aVar.f2646e.f2694p0);
+                                b bVar = aVar.f2646e;
+                                int[] iArr = bVar.f2684k0;
                                 if (iArr != null) {
                                     barrier.setReferencedIds(iArr);
                                 } else {
-                                    String str = bVar.f2989l0;
+                                    String str = bVar.f2686l0;
                                     if (str != null) {
-                                        bVar.f2987k0 = o(barrier, str);
-                                        barrier.setReferencedIds(aVar.f2949e.f2987k0);
+                                        bVar.f2684k0 = o(barrier, str);
+                                        barrier.setReferencedIds(aVar.f2646e.f2684k0);
                                     }
                                 }
                             }
@@ -2530,22 +2530,22 @@ public class ConstraintSet {
                             layoutParams.a();
                             aVar.b(layoutParams);
                             if (z10) {
-                                androidx.constraintlayout.widget.a.c(childAt, aVar.f2951g);
+                                androidx.constraintlayout.widget.a.c(childAt, aVar.f2648g);
                             }
                             childAt.setLayoutParams(layoutParams);
-                            d dVar = aVar.f2947c;
-                            if (dVar.f3026c == 0) {
-                                childAt.setVisibility(dVar.f3025b);
+                            d dVar = aVar.f2644c;
+                            if (dVar.f2723c == 0) {
+                                childAt.setVisibility(dVar.f2722b);
                             }
-                            childAt.setAlpha(aVar.f2947c.f3027d);
-                            childAt.setRotation(aVar.f2950f.f3031b);
-                            childAt.setRotationX(aVar.f2950f.f3032c);
-                            childAt.setRotationY(aVar.f2950f.f3033d);
-                            childAt.setScaleX(aVar.f2950f.f3034e);
-                            childAt.setScaleY(aVar.f2950f.f3035f);
-                            e eVar = aVar.f2950f;
-                            if (eVar.f3038i != -1) {
-                                if (((View) childAt.getParent()).findViewById(aVar.f2950f.f3038i) != null) {
+                            childAt.setAlpha(aVar.f2644c.f2724d);
+                            childAt.setRotation(aVar.f2647f.f2728b);
+                            childAt.setRotationX(aVar.f2647f.f2729c);
+                            childAt.setRotationY(aVar.f2647f.f2730d);
+                            childAt.setScaleX(aVar.f2647f.f2731e);
+                            childAt.setScaleY(aVar.f2647f.f2732f);
+                            e eVar = aVar.f2647f;
+                            if (eVar.f2735i != -1) {
+                                if (((View) childAt.getParent()).findViewById(aVar.f2647f.f2735i) != null) {
                                     float top = (findViewById.getTop() + findViewById.getBottom()) / 2.0f;
                                     float left = (findViewById.getLeft() + findViewById.getRight()) / 2.0f;
                                     if (childAt.getRight() - childAt.getLeft() > 0 && childAt.getBottom() - childAt.getTop() > 0) {
@@ -2554,19 +2554,19 @@ public class ConstraintSet {
                                     }
                                 }
                             } else {
-                                if (!Float.isNaN(eVar.f3036g)) {
-                                    childAt.setPivotX(aVar.f2950f.f3036g);
+                                if (!Float.isNaN(eVar.f2733g)) {
+                                    childAt.setPivotX(aVar.f2647f.f2733g);
                                 }
-                                if (!Float.isNaN(aVar.f2950f.f3037h)) {
-                                    childAt.setPivotY(aVar.f2950f.f3037h);
+                                if (!Float.isNaN(aVar.f2647f.f2734h)) {
+                                    childAt.setPivotY(aVar.f2647f.f2734h);
                                 }
                             }
-                            childAt.setTranslationX(aVar.f2950f.f3039j);
-                            childAt.setTranslationY(aVar.f2950f.f3040k);
-                            childAt.setTranslationZ(aVar.f2950f.f3041l);
-                            e eVar2 = aVar.f2950f;
-                            if (eVar2.f3042m) {
-                                childAt.setElevation(eVar2.f3043n);
+                            childAt.setTranslationX(aVar.f2647f.f2736j);
+                            childAt.setTranslationY(aVar.f2647f.f2737k);
+                            childAt.setTranslationZ(aVar.f2647f.f2738l);
+                            e eVar2 = aVar.f2647f;
+                            if (eVar2.f2739m) {
+                                childAt.setElevation(eVar2.f2740n);
                             }
                         }
                     } else {
@@ -2578,30 +2578,30 @@ public class ConstraintSet {
         Iterator it = hashSet.iterator();
         while (it.hasNext()) {
             Integer num = (Integer) it.next();
-            a aVar2 = (a) this.f2944f.get(num);
+            a aVar2 = (a) this.f2641f.get(num);
             if (aVar2 != null) {
-                if (aVar2.f2949e.f2985j0 == 1) {
+                if (aVar2.f2646e.f2682j0 == 1) {
                     Barrier barrier2 = new Barrier(constraintLayout.getContext());
                     barrier2.setId(num.intValue());
-                    b bVar2 = aVar2.f2949e;
-                    int[] iArr2 = bVar2.f2987k0;
+                    b bVar2 = aVar2.f2646e;
+                    int[] iArr2 = bVar2.f2684k0;
                     if (iArr2 != null) {
                         barrier2.setReferencedIds(iArr2);
                     } else {
-                        String str2 = bVar2.f2989l0;
+                        String str2 = bVar2.f2686l0;
                         if (str2 != null) {
-                            bVar2.f2987k0 = o(barrier2, str2);
-                            barrier2.setReferencedIds(aVar2.f2949e.f2987k0);
+                            bVar2.f2684k0 = o(barrier2, str2);
+                            barrier2.setReferencedIds(aVar2.f2646e.f2684k0);
                         }
                     }
-                    barrier2.setType(aVar2.f2949e.f2981h0);
-                    barrier2.setMargin(aVar2.f2949e.f2983i0);
+                    barrier2.setType(aVar2.f2646e.f2678h0);
+                    barrier2.setMargin(aVar2.f2646e.f2680i0);
                     ConstraintLayout.LayoutParams generateDefaultLayoutParams = constraintLayout.generateDefaultLayoutParams();
                     barrier2.o();
                     aVar2.b(generateDefaultLayoutParams);
                     constraintLayout.addView(barrier2, generateDefaultLayoutParams);
                 }
-                if (aVar2.f2949e.f2966a) {
+                if (aVar2.f2646e.f2663a) {
                     View guideline = new Guideline(constraintLayout.getContext());
                     guideline.setId(num.intValue());
                     ConstraintLayout.LayoutParams generateDefaultLayoutParams2 = constraintLayout.generateDefaultLayoutParams();
@@ -2624,182 +2624,182 @@ public class ConstraintSet {
 
     public void f(ConstraintLayout constraintLayout) {
         int childCount = constraintLayout.getChildCount();
-        this.f2944f.clear();
+        this.f2641f.clear();
         for (int i10 = 0; i10 < childCount; i10++) {
             View childAt = constraintLayout.getChildAt(i10);
             ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) childAt.getLayoutParams();
             int id2 = childAt.getId();
-            if (this.f2943e && id2 == -1) {
+            if (this.f2640e && id2 == -1) {
                 throw new RuntimeException("All children of ConstraintLayout must have ids to use ConstraintSet");
             }
-            if (!this.f2944f.containsKey(Integer.valueOf(id2))) {
-                this.f2944f.put(Integer.valueOf(id2), new a());
+            if (!this.f2641f.containsKey(Integer.valueOf(id2))) {
+                this.f2641f.put(Integer.valueOf(id2), new a());
             }
-            a aVar = (a) this.f2944f.get(Integer.valueOf(id2));
+            a aVar = (a) this.f2641f.get(Integer.valueOf(id2));
             if (aVar != null) {
-                aVar.f2951g = androidx.constraintlayout.widget.a.a(this.f2942d, childAt);
+                aVar.f2648g = androidx.constraintlayout.widget.a.a(this.f2639d, childAt);
                 aVar.d(id2, layoutParams);
-                aVar.f2947c.f3025b = childAt.getVisibility();
-                aVar.f2947c.f3027d = childAt.getAlpha();
-                aVar.f2950f.f3031b = childAt.getRotation();
-                aVar.f2950f.f3032c = childAt.getRotationX();
-                aVar.f2950f.f3033d = childAt.getRotationY();
-                aVar.f2950f.f3034e = childAt.getScaleX();
-                aVar.f2950f.f3035f = childAt.getScaleY();
+                aVar.f2644c.f2722b = childAt.getVisibility();
+                aVar.f2644c.f2724d = childAt.getAlpha();
+                aVar.f2647f.f2728b = childAt.getRotation();
+                aVar.f2647f.f2729c = childAt.getRotationX();
+                aVar.f2647f.f2730d = childAt.getRotationY();
+                aVar.f2647f.f2731e = childAt.getScaleX();
+                aVar.f2647f.f2732f = childAt.getScaleY();
                 float pivotX = childAt.getPivotX();
                 float pivotY = childAt.getPivotY();
                 if (pivotX != 0.0d || pivotY != 0.0d) {
-                    e eVar = aVar.f2950f;
-                    eVar.f3036g = pivotX;
-                    eVar.f3037h = pivotY;
+                    e eVar = aVar.f2647f;
+                    eVar.f2733g = pivotX;
+                    eVar.f2734h = pivotY;
                 }
-                aVar.f2950f.f3039j = childAt.getTranslationX();
-                aVar.f2950f.f3040k = childAt.getTranslationY();
-                aVar.f2950f.f3041l = childAt.getTranslationZ();
-                e eVar2 = aVar.f2950f;
-                if (eVar2.f3042m) {
-                    eVar2.f3043n = childAt.getElevation();
+                aVar.f2647f.f2736j = childAt.getTranslationX();
+                aVar.f2647f.f2737k = childAt.getTranslationY();
+                aVar.f2647f.f2738l = childAt.getTranslationZ();
+                e eVar2 = aVar.f2647f;
+                if (eVar2.f2739m) {
+                    eVar2.f2740n = childAt.getElevation();
                 }
                 if (childAt instanceof Barrier) {
                     Barrier barrier = (Barrier) childAt;
-                    aVar.f2949e.f2997p0 = barrier.getAllowsGoneWidget();
-                    aVar.f2949e.f2987k0 = barrier.getReferencedIds();
-                    aVar.f2949e.f2981h0 = barrier.getType();
-                    aVar.f2949e.f2983i0 = barrier.getMargin();
+                    aVar.f2646e.f2694p0 = barrier.getAllowsGoneWidget();
+                    aVar.f2646e.f2684k0 = barrier.getReferencedIds();
+                    aVar.f2646e.f2678h0 = barrier.getType();
+                    aVar.f2646e.f2680i0 = barrier.getMargin();
                 }
             }
         }
     }
 
     public void g(int i10, int i11, int i12, int i13) {
-        if (!this.f2944f.containsKey(Integer.valueOf(i10))) {
-            this.f2944f.put(Integer.valueOf(i10), new a());
+        if (!this.f2641f.containsKey(Integer.valueOf(i10))) {
+            this.f2641f.put(Integer.valueOf(i10), new a());
         }
-        a aVar = (a) this.f2944f.get(Integer.valueOf(i10));
+        a aVar = (a) this.f2641f.get(Integer.valueOf(i10));
         if (aVar == null) {
             return;
         }
         switch (i11) {
             case 1:
                 if (i13 == 1) {
-                    b bVar = aVar.f2949e;
-                    bVar.f2984j = i12;
-                    bVar.f2986k = -1;
+                    b bVar = aVar.f2646e;
+                    bVar.f2681j = i12;
+                    bVar.f2683k = -1;
                     return;
                 } else if (i13 == 2) {
-                    b bVar2 = aVar.f2949e;
-                    bVar2.f2986k = i12;
-                    bVar2.f2984j = -1;
+                    b bVar2 = aVar.f2646e;
+                    bVar2.f2683k = i12;
+                    bVar2.f2681j = -1;
                     return;
                 } else {
                     throw new IllegalArgumentException("left to " + E(i13) + " undefined");
                 }
             case 2:
                 if (i13 == 1) {
-                    b bVar3 = aVar.f2949e;
-                    bVar3.f2988l = i12;
-                    bVar3.f2990m = -1;
+                    b bVar3 = aVar.f2646e;
+                    bVar3.f2685l = i12;
+                    bVar3.f2687m = -1;
                     return;
                 } else if (i13 == 2) {
-                    b bVar4 = aVar.f2949e;
-                    bVar4.f2990m = i12;
-                    bVar4.f2988l = -1;
+                    b bVar4 = aVar.f2646e;
+                    bVar4.f2687m = i12;
+                    bVar4.f2685l = -1;
                     return;
                 } else {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 }
             case 3:
                 if (i13 == 3) {
-                    b bVar5 = aVar.f2949e;
-                    bVar5.f2992n = i12;
-                    bVar5.f2994o = -1;
-                    bVar5.f3000r = -1;
-                    bVar5.f3001s = -1;
-                    bVar5.f3002t = -1;
+                    b bVar5 = aVar.f2646e;
+                    bVar5.f2689n = i12;
+                    bVar5.f2691o = -1;
+                    bVar5.f2697r = -1;
+                    bVar5.f2698s = -1;
+                    bVar5.f2699t = -1;
                     return;
                 } else if (i13 == 4) {
-                    b bVar6 = aVar.f2949e;
-                    bVar6.f2994o = i12;
-                    bVar6.f2992n = -1;
-                    bVar6.f3000r = -1;
-                    bVar6.f3001s = -1;
-                    bVar6.f3002t = -1;
+                    b bVar6 = aVar.f2646e;
+                    bVar6.f2691o = i12;
+                    bVar6.f2689n = -1;
+                    bVar6.f2697r = -1;
+                    bVar6.f2698s = -1;
+                    bVar6.f2699t = -1;
                     return;
                 } else {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 }
             case 4:
                 if (i13 == 4) {
-                    b bVar7 = aVar.f2949e;
-                    bVar7.f2998q = i12;
-                    bVar7.f2996p = -1;
-                    bVar7.f3000r = -1;
-                    bVar7.f3001s = -1;
-                    bVar7.f3002t = -1;
+                    b bVar7 = aVar.f2646e;
+                    bVar7.f2695q = i12;
+                    bVar7.f2693p = -1;
+                    bVar7.f2697r = -1;
+                    bVar7.f2698s = -1;
+                    bVar7.f2699t = -1;
                     return;
                 } else if (i13 == 3) {
-                    b bVar8 = aVar.f2949e;
-                    bVar8.f2996p = i12;
-                    bVar8.f2998q = -1;
-                    bVar8.f3000r = -1;
-                    bVar8.f3001s = -1;
-                    bVar8.f3002t = -1;
+                    b bVar8 = aVar.f2646e;
+                    bVar8.f2693p = i12;
+                    bVar8.f2695q = -1;
+                    bVar8.f2697r = -1;
+                    bVar8.f2698s = -1;
+                    bVar8.f2699t = -1;
                     return;
                 } else {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 }
             case 5:
                 if (i13 == 5) {
-                    b bVar9 = aVar.f2949e;
-                    bVar9.f3000r = i12;
-                    bVar9.f2998q = -1;
-                    bVar9.f2996p = -1;
-                    bVar9.f2992n = -1;
-                    bVar9.f2994o = -1;
+                    b bVar9 = aVar.f2646e;
+                    bVar9.f2697r = i12;
+                    bVar9.f2695q = -1;
+                    bVar9.f2693p = -1;
+                    bVar9.f2689n = -1;
+                    bVar9.f2691o = -1;
                     return;
                 } else if (i13 == 3) {
-                    b bVar10 = aVar.f2949e;
-                    bVar10.f3001s = i12;
-                    bVar10.f2998q = -1;
-                    bVar10.f2996p = -1;
-                    bVar10.f2992n = -1;
-                    bVar10.f2994o = -1;
+                    b bVar10 = aVar.f2646e;
+                    bVar10.f2698s = i12;
+                    bVar10.f2695q = -1;
+                    bVar10.f2693p = -1;
+                    bVar10.f2689n = -1;
+                    bVar10.f2691o = -1;
                     return;
                 } else if (i13 == 4) {
-                    b bVar11 = aVar.f2949e;
-                    bVar11.f3002t = i12;
-                    bVar11.f2998q = -1;
-                    bVar11.f2996p = -1;
-                    bVar11.f2992n = -1;
-                    bVar11.f2994o = -1;
+                    b bVar11 = aVar.f2646e;
+                    bVar11.f2699t = i12;
+                    bVar11.f2695q = -1;
+                    bVar11.f2693p = -1;
+                    bVar11.f2689n = -1;
+                    bVar11.f2691o = -1;
                     return;
                 } else {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 }
             case 6:
                 if (i13 == 6) {
-                    b bVar12 = aVar.f2949e;
-                    bVar12.f3004v = i12;
-                    bVar12.f3003u = -1;
+                    b bVar12 = aVar.f2646e;
+                    bVar12.f2701v = i12;
+                    bVar12.f2700u = -1;
                     return;
                 } else if (i13 == 7) {
-                    b bVar13 = aVar.f2949e;
-                    bVar13.f3003u = i12;
-                    bVar13.f3004v = -1;
+                    b bVar13 = aVar.f2646e;
+                    bVar13.f2700u = i12;
+                    bVar13.f2701v = -1;
                     return;
                 } else {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 }
             case 7:
                 if (i13 == 7) {
-                    b bVar14 = aVar.f2949e;
-                    bVar14.f3006x = i12;
-                    bVar14.f3005w = -1;
+                    b bVar14 = aVar.f2646e;
+                    bVar14.f2703x = i12;
+                    bVar14.f2702w = -1;
                     return;
                 } else if (i13 == 6) {
-                    b bVar15 = aVar.f2949e;
-                    bVar15.f3005w = i12;
-                    bVar15.f3006x = -1;
+                    b bVar15 = aVar.f2646e;
+                    bVar15.f2702w = i12;
+                    bVar15.f2703x = -1;
                     return;
                 } else {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
@@ -2810,137 +2810,137 @@ public class ConstraintSet {
     }
 
     public void h(int i10, int i11, int i12, int i13, int i14) {
-        if (!this.f2944f.containsKey(Integer.valueOf(i10))) {
-            this.f2944f.put(Integer.valueOf(i10), new a());
+        if (!this.f2641f.containsKey(Integer.valueOf(i10))) {
+            this.f2641f.put(Integer.valueOf(i10), new a());
         }
-        a aVar = (a) this.f2944f.get(Integer.valueOf(i10));
+        a aVar = (a) this.f2641f.get(Integer.valueOf(i10));
         if (aVar == null) {
             return;
         }
         switch (i11) {
             case 1:
                 if (i13 == 1) {
-                    b bVar = aVar.f2949e;
-                    bVar.f2984j = i12;
-                    bVar.f2986k = -1;
+                    b bVar = aVar.f2646e;
+                    bVar.f2681j = i12;
+                    bVar.f2683k = -1;
                 } else if (i13 == 2) {
-                    b bVar2 = aVar.f2949e;
-                    bVar2.f2986k = i12;
-                    bVar2.f2984j = -1;
+                    b bVar2 = aVar.f2646e;
+                    bVar2.f2683k = i12;
+                    bVar2.f2681j = -1;
                 } else {
                     throw new IllegalArgumentException("Left to " + E(i13) + " undefined");
                 }
-                aVar.f2949e.H = i14;
+                aVar.f2646e.H = i14;
                 return;
             case 2:
                 if (i13 == 1) {
-                    b bVar3 = aVar.f2949e;
-                    bVar3.f2988l = i12;
-                    bVar3.f2990m = -1;
+                    b bVar3 = aVar.f2646e;
+                    bVar3.f2685l = i12;
+                    bVar3.f2687m = -1;
                 } else if (i13 != 2) {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 } else {
-                    b bVar4 = aVar.f2949e;
-                    bVar4.f2990m = i12;
-                    bVar4.f2988l = -1;
+                    b bVar4 = aVar.f2646e;
+                    bVar4.f2687m = i12;
+                    bVar4.f2685l = -1;
                 }
-                aVar.f2949e.I = i14;
+                aVar.f2646e.I = i14;
                 return;
             case 3:
                 if (i13 == 3) {
-                    b bVar5 = aVar.f2949e;
-                    bVar5.f2992n = i12;
-                    bVar5.f2994o = -1;
-                    bVar5.f3000r = -1;
-                    bVar5.f3001s = -1;
-                    bVar5.f3002t = -1;
+                    b bVar5 = aVar.f2646e;
+                    bVar5.f2689n = i12;
+                    bVar5.f2691o = -1;
+                    bVar5.f2697r = -1;
+                    bVar5.f2698s = -1;
+                    bVar5.f2699t = -1;
                 } else if (i13 != 4) {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 } else {
-                    b bVar6 = aVar.f2949e;
-                    bVar6.f2994o = i12;
-                    bVar6.f2992n = -1;
-                    bVar6.f3000r = -1;
-                    bVar6.f3001s = -1;
-                    bVar6.f3002t = -1;
+                    b bVar6 = aVar.f2646e;
+                    bVar6.f2691o = i12;
+                    bVar6.f2689n = -1;
+                    bVar6.f2697r = -1;
+                    bVar6.f2698s = -1;
+                    bVar6.f2699t = -1;
                 }
-                aVar.f2949e.J = i14;
+                aVar.f2646e.J = i14;
                 return;
             case 4:
                 if (i13 == 4) {
-                    b bVar7 = aVar.f2949e;
-                    bVar7.f2998q = i12;
-                    bVar7.f2996p = -1;
-                    bVar7.f3000r = -1;
-                    bVar7.f3001s = -1;
-                    bVar7.f3002t = -1;
+                    b bVar7 = aVar.f2646e;
+                    bVar7.f2695q = i12;
+                    bVar7.f2693p = -1;
+                    bVar7.f2697r = -1;
+                    bVar7.f2698s = -1;
+                    bVar7.f2699t = -1;
                 } else if (i13 != 3) {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 } else {
-                    b bVar8 = aVar.f2949e;
-                    bVar8.f2996p = i12;
-                    bVar8.f2998q = -1;
-                    bVar8.f3000r = -1;
-                    bVar8.f3001s = -1;
-                    bVar8.f3002t = -1;
+                    b bVar8 = aVar.f2646e;
+                    bVar8.f2693p = i12;
+                    bVar8.f2695q = -1;
+                    bVar8.f2697r = -1;
+                    bVar8.f2698s = -1;
+                    bVar8.f2699t = -1;
                 }
-                aVar.f2949e.K = i14;
+                aVar.f2646e.K = i14;
                 return;
             case 5:
                 if (i13 == 5) {
-                    b bVar9 = aVar.f2949e;
-                    bVar9.f3000r = i12;
-                    bVar9.f2998q = -1;
-                    bVar9.f2996p = -1;
-                    bVar9.f2992n = -1;
-                    bVar9.f2994o = -1;
+                    b bVar9 = aVar.f2646e;
+                    bVar9.f2697r = i12;
+                    bVar9.f2695q = -1;
+                    bVar9.f2693p = -1;
+                    bVar9.f2689n = -1;
+                    bVar9.f2691o = -1;
                     return;
                 } else if (i13 == 3) {
-                    b bVar10 = aVar.f2949e;
-                    bVar10.f3001s = i12;
-                    bVar10.f2998q = -1;
-                    bVar10.f2996p = -1;
-                    bVar10.f2992n = -1;
-                    bVar10.f2994o = -1;
+                    b bVar10 = aVar.f2646e;
+                    bVar10.f2698s = i12;
+                    bVar10.f2695q = -1;
+                    bVar10.f2693p = -1;
+                    bVar10.f2689n = -1;
+                    bVar10.f2691o = -1;
                     return;
                 } else if (i13 != 4) {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 } else {
-                    b bVar11 = aVar.f2949e;
-                    bVar11.f3002t = i12;
-                    bVar11.f2998q = -1;
-                    bVar11.f2996p = -1;
-                    bVar11.f2992n = -1;
-                    bVar11.f2994o = -1;
+                    b bVar11 = aVar.f2646e;
+                    bVar11.f2699t = i12;
+                    bVar11.f2695q = -1;
+                    bVar11.f2693p = -1;
+                    bVar11.f2689n = -1;
+                    bVar11.f2691o = -1;
                     return;
                 }
             case 6:
                 if (i13 == 6) {
-                    b bVar12 = aVar.f2949e;
-                    bVar12.f3004v = i12;
-                    bVar12.f3003u = -1;
+                    b bVar12 = aVar.f2646e;
+                    bVar12.f2701v = i12;
+                    bVar12.f2700u = -1;
                 } else if (i13 != 7) {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 } else {
-                    b bVar13 = aVar.f2949e;
-                    bVar13.f3003u = i12;
-                    bVar13.f3004v = -1;
+                    b bVar13 = aVar.f2646e;
+                    bVar13.f2700u = i12;
+                    bVar13.f2701v = -1;
                 }
-                aVar.f2949e.M = i14;
+                aVar.f2646e.M = i14;
                 return;
             case 7:
                 if (i13 == 7) {
-                    b bVar14 = aVar.f2949e;
-                    bVar14.f3006x = i12;
-                    bVar14.f3005w = -1;
+                    b bVar14 = aVar.f2646e;
+                    bVar14.f2703x = i12;
+                    bVar14.f2702w = -1;
                 } else if (i13 != 6) {
                     throw new IllegalArgumentException("right to " + E(i13) + " undefined");
                 } else {
-                    b bVar15 = aVar.f2949e;
-                    bVar15.f3005w = i12;
-                    bVar15.f3006x = -1;
+                    b bVar15 = aVar.f2646e;
+                    bVar15.f2702w = i12;
+                    bVar15.f2703x = -1;
                 }
-                aVar.f2949e.L = i14;
+                aVar.f2646e.L = i14;
                 return;
             default:
                 throw new IllegalArgumentException(E(i11) + " to " + E(i13) + " unknown");
@@ -2948,30 +2948,30 @@ public class ConstraintSet {
     }
 
     public void i(int i10, int i11, int i12, float f10) {
-        b bVar = r(i10).f2949e;
+        b bVar = r(i10).f2646e;
         bVar.B = i11;
         bVar.C = i12;
         bVar.D = f10;
     }
 
     public void j(int i10, int i11) {
-        r(i10).f2949e.Z = i11;
+        r(i10).f2646e.Z = i11;
     }
 
     public void k(int i10, int i11) {
-        r(i10).f2949e.f2974e = i11;
+        r(i10).f2646e.f2671e = i11;
     }
 
     public void l(int i10, int i11) {
-        r(i10).f2949e.f2972d = i11;
+        r(i10).f2646e.f2669d = i11;
     }
 
     public void m(int i10, boolean z10) {
-        r(i10).f2949e.f2995o0 = z10;
+        r(i10).f2646e.f2692o0 = z10;
     }
 
     public void n(int i10, boolean z10) {
-        r(i10).f2949e.f2993n0 = z10;
+        r(i10).f2646e.f2690n0 = z10;
     }
 
     public void p(int i10, int i11, int i12, int i13, int[] iArr, float[] fArr, int i14) {
@@ -2980,16 +2980,16 @@ public class ConstraintSet {
                 throw new IllegalArgumentException("must have 2 or more widgets in a chain");
             }
             if (fArr != null) {
-                r(iArr[0]).f2949e.V = fArr[0];
+                r(iArr[0]).f2646e.V = fArr[0];
             }
-            r(iArr[0]).f2949e.Y = i14;
+            r(iArr[0]).f2646e.Y = i14;
             h(iArr[0], 3, i10, i11, 0);
             for (int i15 = 1; i15 < iArr.length; i15++) {
                 int i16 = i15 - 1;
                 h(iArr[i15], 3, iArr[i16], 4, 0);
                 h(iArr[i16], 4, iArr[i15], 3, 0);
                 if (fArr != null) {
-                    r(iArr[i15]).f2949e.V = fArr[i15];
+                    r(iArr[i15]).f2646e.V = fArr[i15];
                 }
             }
             h(iArr[iArr.length - 1], 4, i12, i13, 0);
@@ -3008,9 +3008,9 @@ public class ConstraintSet {
                     String name = xml.getName();
                     a q10 = q(context, Xml.asAttributeSet(xml), false);
                     if (name.equalsIgnoreCase("Guideline")) {
-                        q10.f2949e.f2966a = true;
+                        q10.f2646e.f2663a = true;
                     }
-                    this.f2944f.put(Integer.valueOf(q10.f2945a), q10);
+                    this.f2641f.put(Integer.valueOf(q10.f2642a), q10);
                     continue;
                 }
             }

@@ -1,16 +1,164 @@
 package ah;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static int f625a = 2130837536;
+import android.net.Uri;
+import g2.a0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class a extends a0 {
 
-    /* renamed from: b  reason: collision with root package name */
-    public static int f626b = 2130837537;
-
-    /* renamed from: c  reason: collision with root package name */
-    public static int f627c = 2130837538;
+    /* renamed from: k  reason: collision with root package name */
+    public static final b f777k = new b(null);
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f628d = 2130837539;
+    private final String f778d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final String f779e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final String f780f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final String f781g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final String f782h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Uri f783i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private final String f784j;
+
+    /* renamed from: ah.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class C0010a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private String f785a = "";
+
+        /* renamed from: b  reason: collision with root package name */
+        private String f786b = "";
+
+        /* renamed from: c  reason: collision with root package name */
+        private String f787c;
+
+        /* renamed from: d  reason: collision with root package name */
+        private String f788d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private String f789e;
+
+        /* renamed from: f  reason: collision with root package name */
+        private Uri f790f;
+
+        /* renamed from: g  reason: collision with root package name */
+        private String f791g;
+
+        public final a a() {
+            return new a(this.f785a, this.f786b, this.f787c, this.f788d, this.f789e, this.f790f, this.f791g);
+        }
+
+        public final C0010a b(String str) {
+            this.f787c = str;
+            return this;
+        }
+
+        public final C0010a c(String str) {
+            this.f788d = str;
+            return this;
+        }
+
+        public final C0010a d(String str) {
+            this.f789e = str;
+            return this;
+        }
+
+        public final C0010a e(String id2) {
+            Intrinsics.checkNotNullParameter(id2, "id");
+            this.f785a = id2;
+            return this;
+        }
+
+        public final C0010a f(String idToken) {
+            Intrinsics.checkNotNullParameter(idToken, "idToken");
+            this.f786b = idToken;
+            return this;
+        }
+
+        public final C0010a g(String str) {
+            this.f791g = str;
+            return this;
+        }
+
+        public final C0010a h(Uri uri) {
+            this.f790f = uri;
+            return this;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class b {
+        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+        }
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public a(java.lang.String r3, java.lang.String r4, java.lang.String r5, java.lang.String r6, java.lang.String r7, android.net.Uri r8, java.lang.String r9) {
+        /*
+            r2 = this;
+            java.lang.String r0 = "id"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
+            java.lang.String r1 = "idToken"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r1)
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r1)
+            android.os.Bundle r0 = new android.os.Bundle
+            r0.<init>()
+            java.lang.String r1 = "com.google.android.libraries.identity.googleid.BUNDLE_KEY_ID"
+            r0.putString(r1, r3)
+            java.lang.String r1 = "com.google.android.libraries.identity.googleid.BUNDLE_KEY_ID_TOKEN"
+            r0.putString(r1, r4)
+            java.lang.String r1 = "com.google.android.libraries.identity.googleid.BUNDLE_KEY_DISPLAY_NAME"
+            r0.putString(r1, r5)
+            java.lang.String r1 = "com.google.android.libraries.identity.googleid.BUNDLE_KEY_FAMILY_NAME"
+            r0.putString(r1, r6)
+            java.lang.String r1 = "com.google.android.libraries.identity.googleid.BUNDLE_KEY_GIVEN_NAME"
+            r0.putString(r1, r7)
+            java.lang.String r1 = "com.google.android.libraries.identity.googleid.BUNDLE_KEY_PHONE_NUMBER"
+            r0.putString(r1, r9)
+            java.lang.String r1 = "com.google.android.libraries.identity.googleid.BUNDLE_KEY_PROFILE_PICTURE_URI"
+            r0.putParcelable(r1, r8)
+            java.lang.String r1 = "com.google.android.libraries.identity.googleid.TYPE_GOOGLE_ID_TOKEN_CREDENTIAL"
+            r2.<init>(r1, r0)
+            r2.f778d = r3
+            r2.f779e = r4
+            r2.f780f = r5
+            r2.f781g = r6
+            r2.f782h = r7
+            r2.f783i = r8
+            r2.f784j = r9
+            int r3 = r3.length()
+            if (r3 <= 0) goto L60
+            int r3 = r4.length()
+            if (r3 <= 0) goto L58
+            return
+        L58:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.String r4 = "idToken should not be empty"
+            r3.<init>(r4)
+            throw r3
+        L60:
+            java.lang.IllegalArgumentException r3 = new java.lang.IllegalArgumentException
+            java.lang.String r4 = "id should not be empty"
+            r3.<init>(r4)
+            throw r3
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ah.a.<init>(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, android.net.Uri, java.lang.String):void");
+    }
 }

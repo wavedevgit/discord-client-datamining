@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
-import an.c;
+import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressAutocompleteRequestJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19768a;
+    private final m.b f19908a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19769b;
+    private final h f19909b;
 
     public AddressAutocompleteRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19768a = a10;
+        this.f19908a = a10;
         h f10 = moshi.f(AddressAutocompleteRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19769b = f10;
+        this.f19909b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,14 +36,14 @@ public final class AddressAutocompleteRequestJsonAdapter extends h {
         reader.u();
         AddressAutocompleteRequest.Meta meta = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19768a);
+            int J = reader.J(this.f19908a);
             if (J != -1) {
-                if (J == 0 && (meta = (AddressAutocompleteRequest.Meta) this.f19769b.fromJson(reader)) == null) {
+                if (J == 0 && (meta = (AddressAutocompleteRequest.Meta) this.f19909b.fromJson(reader)) == null) {
                     throw c.x("meta", "meta", reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -60,7 +60,7 @@ public final class AddressAutocompleteRequestJsonAdapter extends h {
         if (addressAutocompleteRequest != null) {
             writer.k();
             writer.J("meta");
-            this.f19769b.toJson(writer, addressAutocompleteRequest.a());
+            this.f19909b.toJson(writer, addressAutocompleteRequest.a());
             writer.s();
             return;
         }

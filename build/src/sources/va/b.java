@@ -1,105 +1,178 @@
 package va;
 
-import android.graphics.Bitmap;
+import com.facebook.imagepipeline.producers.ProducerContext;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private int f52333a;
+public final class b implements d {
 
     /* renamed from: b  reason: collision with root package name */
-    private long f52334b;
+    public static final a f52171b = new a(null);
 
-    /* renamed from: c  reason: collision with root package name */
-    private final int f52335c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final int f52336d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final s8.c f52337e;
+    /* renamed from: a  reason: collision with root package name */
+    private final List f52172a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class a implements s8.c {
-        a() {
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
 
-        @Override // s8.c
-        /* renamed from: a */
-        public void release(Bitmap bitmap) {
+        private a() {
+        }
+    }
+
+    public b(Set set) {
+        if (set == null) {
+            this.f52172a = new ArrayList();
+            return;
+        }
+        ArrayList arrayList = new ArrayList(set.size());
+        this.f52172a = arrayList;
+        CollectionsKt.m0(set, arrayList);
+    }
+
+    @Override // va.d
+    public void a(ProducerContext producerContext) {
+        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
+        for (d dVar : this.f52172a) {
             try {
-                b.this.a(bitmap);
-            } finally {
-                bitmap.recycle();
+                dVar.a(producerContext);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onRequestStart", e10);
             }
         }
     }
 
-    public b(int i10, int i11) {
-        boolean z10;
-        if (i10 > 0) {
-            z10 = true;
-        } else {
-            z10 = false;
+    @Override // com.facebook.imagepipeline.producers.y0
+    public void b(ProducerContext producerContext, String producerName, boolean z10) {
+        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
+        Intrinsics.checkNotNullParameter(producerName, "producerName");
+        for (d dVar : this.f52172a) {
+            try {
+                dVar.b(producerContext, producerName, z10);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onProducerFinishWithSuccess", e10);
+            }
         }
-        o8.j.b(Boolean.valueOf(z10));
-        o8.j.b(Boolean.valueOf(i11 > 0));
-        this.f52335c = i10;
-        this.f52336d = i11;
-        this.f52337e = new a();
     }
 
-    public synchronized void a(Bitmap bitmap) {
-        boolean z10;
-        int j10 = cb.d.j(bitmap);
-        boolean z11 = false;
-        if (this.f52333a > 0) {
-            z10 = true;
-        } else {
-            z10 = false;
+    @Override // com.facebook.imagepipeline.producers.y0
+    public void c(ProducerContext producerContext, String str, Map map) {
+        for (d dVar : this.f52172a) {
+            try {
+                dVar.c(producerContext, str, map);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onProducerFinishWithCancellation", e10);
+            }
         }
-        o8.j.c(z10, "No bitmaps registered.");
-        long j11 = j10;
-        if (j11 <= this.f52334b) {
-            z11 = true;
+    }
+
+    @Override // com.facebook.imagepipeline.producers.y0
+    public void d(ProducerContext producerContext, String producerName) {
+        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
+        Intrinsics.checkNotNullParameter(producerName, "producerName");
+        for (d dVar : this.f52172a) {
+            try {
+                dVar.d(producerContext, producerName);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onProducerStart", e10);
+            }
         }
-        o8.j.d(z11, "Bitmap size bigger than the total registered size: %d, %d", Integer.valueOf(j10), Long.valueOf(this.f52334b));
-        this.f52334b -= j11;
-        this.f52333a--;
     }
 
-    public synchronized int b() {
-        return this.f52333a;
+    @Override // va.d
+    public void e(ProducerContext producerContext) {
+        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
+        for (d dVar : this.f52172a) {
+            try {
+                dVar.e(producerContext);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onRequestSuccess", e10);
+            }
+        }
     }
 
-    public synchronized int c() {
-        return this.f52335c;
-    }
-
-    public synchronized int d() {
-        return this.f52336d;
-    }
-
-    public s8.c e() {
-        return this.f52337e;
-    }
-
-    public synchronized long f() {
-        return this.f52334b;
-    }
-
-    public synchronized boolean g(Bitmap bitmap) {
-        int j10 = cb.d.j(bitmap);
-        int i10 = this.f52333a;
-        if (i10 < this.f52335c) {
-            long j11 = this.f52334b;
-            long j12 = j10;
-            if (j11 + j12 <= this.f52336d) {
-                this.f52333a = i10 + 1;
-                this.f52334b = j11 + j12;
+    @Override // com.facebook.imagepipeline.producers.y0
+    public boolean f(ProducerContext producerContext, String producerName) {
+        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
+        Intrinsics.checkNotNullParameter(producerName, "producerName");
+        List<d> list = this.f52172a;
+        if ((list instanceof Collection) && list.isEmpty()) {
+            return false;
+        }
+        for (d dVar : list) {
+            if (dVar.f(producerContext, producerName)) {
                 return true;
             }
         }
         return false;
+    }
+
+    @Override // va.d
+    public void g(ProducerContext producerContext) {
+        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
+        for (d dVar : this.f52172a) {
+            try {
+                dVar.g(producerContext);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onRequestCancellation", e10);
+            }
+        }
+    }
+
+    @Override // com.facebook.imagepipeline.producers.y0
+    public void h(ProducerContext producerContext, String producerName, String producerEventName) {
+        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
+        Intrinsics.checkNotNullParameter(producerName, "producerName");
+        Intrinsics.checkNotNullParameter(producerEventName, "producerEventName");
+        for (d dVar : this.f52172a) {
+            try {
+                dVar.h(producerContext, producerName, producerEventName);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onIntermediateChunkStart", e10);
+            }
+        }
+    }
+
+    @Override // va.d
+    public void i(ProducerContext producerContext, Throwable throwable) {
+        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
+        Intrinsics.checkNotNullParameter(throwable, "throwable");
+        for (d dVar : this.f52172a) {
+            try {
+                dVar.i(producerContext, throwable);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onRequestFailure", e10);
+            }
+        }
+    }
+
+    @Override // com.facebook.imagepipeline.producers.y0
+    public void j(ProducerContext producerContext, String str, Map map) {
+        for (d dVar : this.f52172a) {
+            try {
+                dVar.j(producerContext, str, map);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onProducerFinishWithSuccess", e10);
+            }
+        }
+    }
+
+    @Override // com.facebook.imagepipeline.producers.y0
+    public void k(ProducerContext producerContext, String str, Throwable th2, Map map) {
+        for (d dVar : this.f52172a) {
+            try {
+                dVar.k(producerContext, str, th2, map);
+            } catch (Exception e10) {
+                q8.a.n("ForwardingRequestListener2", "InternalListener exception in onProducerFinishWithFailure", e10);
+            }
+        }
     }
 }

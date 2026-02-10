@@ -18,19 +18,19 @@ import org.jetbrains.annotations.NotNull;
 public class DeserializedAnnotations implements Annotations {
 
     /* renamed from: e  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f34417e = {Reflection.property1(new PropertyReference1Impl(DeserializedAnnotations.class, "annotations", "getAnnotations()Ljava/util/List;", 0))};
+    static final /* synthetic */ KProperty[] f34126e = {Reflection.property1(new PropertyReference1Impl(DeserializedAnnotations.class, "annotations", "getAnnotations()Ljava/util/List;", 0))};
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotNullLazyValue f34418d;
+    private final NotNullLazyValue f34127d;
 
     public DeserializedAnnotations(@NotNull StorageManager storageManager, @NotNull Function0<? extends List<? extends AnnotationDescriptor>> compute) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(compute, "compute");
-        this.f34418d = storageManager.createLazyValue(compute);
+        this.f34127d = storageManager.createLazyValue(compute);
     }
 
     private final List b() {
-        return (List) StorageKt.getValue(this.f34418d, this, f34417e[0]);
+        return (List) StorageKt.getValue(this.f34127d, this, f34126e[0]);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations

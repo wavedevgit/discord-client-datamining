@@ -1,12 +1,12 @@
 package com.facebook.imagepipeline.memory;
 
 import android.graphics.Bitmap;
-import o8.j;
-import va.a0;
-import va.z;
+import p8.j;
+import wa.a0;
+import wa.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class c extends a implements va.d {
-    public c(r8.d dVar, z zVar, a0 a0Var, boolean z10) {
+public class c extends a implements wa.d {
+    public c(s8.d dVar, z zVar, a0 a0Var, boolean z10) {
         super(dVar, zVar, a0Var, z10);
         s();
     }

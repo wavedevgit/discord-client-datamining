@@ -995,7 +995,7 @@ public final class ErrorResponse {
         public static final ErrorJsonAdapterFactory INSTANCE = new ErrorJsonAdapterFactory();
         @NotNull
         private static final String LABEL_KEY = "code";
-        private static final zm.b adapterFactory = zm.b.b(Error.class, LABEL_KEY).e(Error.InactiveTemplateError.class, "inactive_template_error").e(Error.InvalidConfigError.class, "invalid_config").e(Error.UnauthenticatedError.class, "unauthenticated").e(Error.InconsistentTransitionError.class, "inconsistent_transition_error").e(Error.TransitionFromTerminalStateError.class, "transition_from_terminal_state_error").e(Error.FieldNotFoundError.class, "field_not_found_error").e(Error.RateLimitExceededError.class, "rate_limit_exceeded").e(Error.InvalidFieldValueError.class, "invalid_field_value_error").e(Error.UnknownError.class, "unknown_error").d(UnknownErrorAdapter.INSTANCE);
+        private static final an.b adapterFactory = an.b.b(Error.class, LABEL_KEY).e(Error.InactiveTemplateError.class, "inactive_template_error").e(Error.InvalidConfigError.class, "invalid_config").e(Error.UnauthenticatedError.class, "unauthenticated").e(Error.InconsistentTransitionError.class, "inconsistent_transition_error").e(Error.TransitionFromTerminalStateError.class, "transition_from_terminal_state_error").e(Error.FieldNotFoundError.class, "field_not_found_error").e(Error.RateLimitExceededError.class, "rate_limit_exceeded").e(Error.InvalidFieldValueError.class, "invalid_field_value_error").e(Error.UnknownError.class, "unknown_error").d(UnknownErrorAdapter.INSTANCE);
 
         private ErrorJsonAdapterFactory() {
         }
@@ -1039,7 +1039,7 @@ public final class ErrorResponse {
             mVar.u();
             while (mVar.hasNext()) {
                 if (!Intrinsics.areEqual(mVar.o0(), LABEL_KEY)) {
-                    mVar.S();
+                    mVar.T();
                 } else {
                     return true;
                 }
@@ -1069,7 +1069,7 @@ public final class ErrorResponse {
                 } else if (Intrinsics.areEqual(o02, "title")) {
                     str = JsonReaderUtilsKt.nextStringOrNull(mVar);
                 } else {
-                    mVar.S();
+                    mVar.T();
                 }
             }
             mVar.D();
@@ -1080,9 +1080,9 @@ public final class ErrorResponse {
         public void toJson(@NotNull t tVar, Error.UnknownError unknownError) {
             tVar.k();
             tVar.J("originalCode");
-            tVar.w1(unknownError != null ? unknownError.getOriginalCode() : null);
+            tVar.r1(unknownError != null ? unknownError.getOriginalCode() : null);
             tVar.J("title");
-            tVar.w1(unknownError != null ? unknownError.getTitle() : null);
+            tVar.r1(unknownError != null ? unknownError.getTitle() : null);
             tVar.s();
         }
     }

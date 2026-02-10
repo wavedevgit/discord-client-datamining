@@ -4,7 +4,7 @@ import android.annotation.SuppressLint;
 import com.facebook.jni.HybridClassBase;
 import com.facebook.react.fabric.FabricSoLoader;
 import com.facebook.react.uimanager.events.BatchEventDispatchedListener;
-import fb.a;
+import gb.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.jetbrains.annotations.NotNull;

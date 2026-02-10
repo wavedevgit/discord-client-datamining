@@ -1,60 +1,15 @@
 package ee;
 
-import java.util.Collections;
-import java.util.List;
-import ne.w0;
-import zd.g;
+import android.text.Spannable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class d implements g {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final List f21485d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final List f21486e;
-
-    public d(List list, List list2) {
-        this.f21485d = list;
-        this.f21486e = list2;
-    }
-
-    @Override // zd.g
-    public int a(long j10) {
-        int d10 = w0.d(this.f21486e, Long.valueOf(j10), false, false);
-        if (d10 < this.f21486e.size()) {
-            return d10;
+public abstract class d {
+    public static void a(Spannable spannable, Object obj, int i10, int i11, int i12) {
+        Object[] spans;
+        for (Object obj2 : spannable.getSpans(i10, i11, obj.getClass())) {
+            if (spannable.getSpanStart(obj2) == i10 && spannable.getSpanEnd(obj2) == i11 && spannable.getSpanFlags(obj2) == i12) {
+                spannable.removeSpan(obj2);
+            }
         }
-        return -1;
-    }
-
-    @Override // zd.g
-    public List d(long j10) {
-        int f10 = w0.f(this.f21486e, Long.valueOf(j10), true, false);
-        if (f10 == -1) {
-            return Collections.EMPTY_LIST;
-        }
-        return (List) this.f21485d.get(f10);
-    }
-
-    @Override // zd.g
-    public long e(int i10) {
-        boolean z10;
-        boolean z11 = false;
-        if (i10 >= 0) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        ne.a.a(z10);
-        if (i10 < this.f21486e.size()) {
-            z11 = true;
-        }
-        ne.a.a(z11);
-        return ((Long) this.f21486e.get(i10)).longValue();
-    }
-
-    @Override // zd.g
-    public int f() {
-        return this.f21486e.size();
+        spannable.setSpan(obj, i10, i11, i12);
     }
 }

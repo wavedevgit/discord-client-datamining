@@ -5,29 +5,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Environment: var0
-        _fun97387: for (var _fun97387_ip = 0;;) switch (_fun97387_ip) {
+        _fun97386: for (var _fun97386_ip = 0;;) switch (_fun97386_ip) {
             case 0:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 0;
-                var0 = var4[var0];
-                var2 = undefined;
-                var5 = var3.bind(var2)(var0);
-                var1 = arg0;
-                var0 = 'string';
-                var1 = var5.bind(var2)(var1, var0);
-                var0 = 1;
-                var0 = var4[var0];
-                var0 = var3.bind(var2)(var0);
-                var2 = var0.bind(var2)(var1);
-                var0 = var1;
-                if (var2) {
-                    _fun97387_ip = 63;
-                    continue _fun97387
+                var2 = arg0;
+                var1 = 'object';
+                var0 = typeof var2;
+                if (!(var1 !== var0)) {
+                    _fun97386_ip = 45;
+                    continue _fun97386
                 }
-            case 60:
-                var0 = '' + var1;
-            case 63:
+            case 14:
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var3.bind(var1)(var0);
+                var0 = var0.bind(var1)(var2);
+                _fun97386_ip = 51;
+                continue _fun97386;
+            case 45:
+                var1 = null;
+                var0 = var1 !== var2;
+            case 51:
                 return var0;
         }
     };
@@ -35,4 +35,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12718, 12732]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12718]);

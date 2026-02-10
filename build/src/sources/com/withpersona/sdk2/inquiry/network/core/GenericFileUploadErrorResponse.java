@@ -27,7 +27,7 @@ public final class GenericFileUploadErrorResponse {
 
         @NotNull
         public final h.e getAdapter() {
-            return zm.b.b(DocumentErrorResponse.class, "code").e(DocumentErrorResponse.DisabledFileTypeError.class, "document-generic-disabled-file-type-error").e(DocumentErrorResponse.FileLimitExceededError.class, "document-generic-file-limit-exceeded-error").e(DocumentErrorResponse.PageLimitExceededError.class, "document-generic-page-limit-exceeded-error").e(DocumentErrorResponse.MalformedFileError.class, "document-generic-malformed-file-error").e(DocumentErrorResponse.MalformedImageError.class, "document-generic-malformed-image-error").e(DocumentErrorResponse.MalformedPdfError.class, "document-generic-malformed-pdf-error").e(DocumentErrorResponse.GovernmentIdDimensionSizeError.class, "document-government-id-dimension-size-error").d(UnknownErrorAdapter.INSTANCE);
+            return an.b.b(DocumentErrorResponse.class, "code").e(DocumentErrorResponse.DisabledFileTypeError.class, "document-generic-disabled-file-type-error").e(DocumentErrorResponse.FileLimitExceededError.class, "document-generic-file-limit-exceeded-error").e(DocumentErrorResponse.PageLimitExceededError.class, "document-generic-page-limit-exceeded-error").e(DocumentErrorResponse.MalformedFileError.class, "document-generic-malformed-file-error").e(DocumentErrorResponse.MalformedImageError.class, "document-generic-malformed-image-error").e(DocumentErrorResponse.MalformedPdfError.class, "document-generic-malformed-pdf-error").e(DocumentErrorResponse.GovernmentIdDimensionSizeError.class, "document-government-id-dimension-size-error").d(UnknownErrorAdapter.INSTANCE);
         }
 
         private Companion() {
@@ -870,7 +870,7 @@ public final class GenericFileUploadErrorResponse {
                 } else if (Intrinsics.areEqual(o02, "code")) {
                     str2 = JsonReaderUtilsKt.nextStringOrNull(mVar);
                 } else {
-                    mVar.S();
+                    mVar.T();
                 }
             }
             mVar.D();
@@ -884,9 +884,9 @@ public final class GenericFileUploadErrorResponse {
         public void toJson(@NotNull t tVar, DocumentErrorResponse.UnknownError unknownError) {
             tVar.k();
             tVar.J("title");
-            tVar.w1(unknownError != null ? unknownError.getTitle() : null);
+            tVar.r1(unknownError != null ? unknownError.getTitle() : null);
             tVar.J("code");
-            tVar.w1(unknownError != null ? unknownError.getCode() : null);
+            tVar.r1(unknownError != null ? unknownError.getCode() : null);
             tVar.s();
         }
     }

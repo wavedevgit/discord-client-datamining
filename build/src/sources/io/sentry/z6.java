@@ -9,10 +9,10 @@ import java.util.Map;
 public final class z6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f29196d;
+    private List f29396d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f29197e;
+    private Map f29397e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -29,9 +29,9 @@ public final class z6 implements w1 {
                     if (hashMap == null) {
                         hashMap = new HashMap();
                     }
-                    e3Var.u1(iLogger, hashMap, o02);
+                    e3Var.p1(iLogger, hashMap, o02);
                 } else {
-                    list = e3Var.g2(iLogger, new x6.a());
+                    list = e3Var.f2(iLogger, new x6.a());
                 }
             }
             e3Var.D();
@@ -47,25 +47,25 @@ public final class z6 implements w1 {
     }
 
     public z6(List list) {
-        this.f29196d = list;
+        this.f29396d = list;
     }
 
     public List a() {
-        return this.f29196d;
+        return this.f29396d;
     }
 
     public void b(Map map) {
-        this.f29197e = map;
+        this.f29397e = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e(AlertFragment.ARG_ITEMS).j(iLogger, this.f29196d);
-        Map map = this.f29197e;
+        f3Var.e(AlertFragment.ARG_ITEMS).j(iLogger, this.f29396d);
+        Map map = this.f29397e;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29197e.get(str));
+                f3Var.e(str).j(iLogger, this.f29397e.get(str));
             }
         }
         f3Var.D();

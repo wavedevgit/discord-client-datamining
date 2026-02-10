@@ -1,48 +1,26 @@
 package gf;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import ff.a;
+import gf.q;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class v0 implements Parcelable.Creator {
-    @Override // android.os.Parcelable.Creator
-    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        int i10 = 0;
-        boolean z10 = false;
-        boolean z11 = false;
-        int i11 = 0;
-        int i12 = 0;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            int l10 = hf.b.l(r10);
-            if (l10 != 1) {
-                if (l10 != 2) {
-                    if (l10 != 3) {
-                        if (l10 != 4) {
-                            if (l10 != 5) {
-                                hf.b.z(parcel, r10);
-                            } else {
-                                i12 = hf.b.t(parcel, r10);
-                            }
-                        } else {
-                            i11 = hf.b.t(parcel, r10);
-                        }
-                    } else {
-                        z11 = hf.b.m(parcel, r10);
-                    }
-                } else {
-                    z10 = hf.b.m(parcel, r10);
-                }
-            } else {
-                i10 = hf.b.t(parcel, r10);
-            }
-        }
-        hf.b.k(parcel, A);
-        return new s(i10, z10, z11, i11, i12);
+public final class v0 extends q {
+
+    /* renamed from: d  reason: collision with root package name */
+    final /* synthetic */ q.a f24381d;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public v0(q.a aVar, com.google.android.gms.common.d[] dVarArr, boolean z10, int i10) {
+        super(dVarArr, z10, i10);
+        this.f24381d = aVar;
     }
 
-    @Override // android.os.Parcelable.Creator
-    public final /* synthetic */ Object[] newArray(int i10) {
-        return new s[i10];
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gf.q
+    public final void b(a.b bVar, zg.k kVar) {
+        m mVar;
+        mVar = this.f24381d.f24357a;
+        mVar.accept(bVar, kVar);
     }
 }

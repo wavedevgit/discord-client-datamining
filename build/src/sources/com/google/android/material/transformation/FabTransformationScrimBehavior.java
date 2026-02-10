@@ -9,8 +9,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import bh.b;
-import bh.h;
+import ch.b;
+import ch.h;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,52 +19,52 @@ import java.util.List;
 public class FabTransformationScrimBehavior extends ExpandableTransformationBehavior {
 
     /* renamed from: i  reason: collision with root package name */
-    private final h f15636i;
+    private final h f15776i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final h f15637o;
+    private final h f15777o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f15638a;
+        final /* synthetic */ boolean f15778a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f15639b;
+        final /* synthetic */ View f15779b;
 
         a(boolean z10, View view) {
-            this.f15638a = z10;
-            this.f15639b = view;
+            this.f15778a = z10;
+            this.f15779b = view;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            if (!this.f15638a) {
-                this.f15639b.setVisibility(4);
+            if (!this.f15778a) {
+                this.f15779b.setVisibility(4);
             }
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            if (this.f15638a) {
-                this.f15639b.setVisibility(0);
+            if (this.f15778a) {
+                this.f15779b.setVisibility(0);
             }
         }
     }
 
     public FabTransformationScrimBehavior() {
-        this.f15636i = new h(75L, 150L);
-        this.f15637o = new h(0L, 150L);
+        this.f15776i = new h(75L, 150L);
+        this.f15777o = new h(0L, 150L);
     }
 
     private void O(View view, boolean z10, boolean z11, List list, List list2) {
         h hVar;
         ObjectAnimator ofFloat;
         if (z10) {
-            hVar = this.f15636i;
+            hVar = this.f15776i;
         } else {
-            hVar = this.f15637o;
+            hVar = this.f15777o;
         }
         if (z10) {
             if (!z11) {
@@ -100,7 +100,7 @@ public class FabTransformationScrimBehavior extends ExpandableTransformationBeha
 
     public FabTransformationScrimBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f15636i = new h(75L, 150L);
-        this.f15637o = new h(0L, 150L);
+        this.f15776i = new h(75L, 150L);
+        this.f15777o = new h(0L, 150L);
     }
 }

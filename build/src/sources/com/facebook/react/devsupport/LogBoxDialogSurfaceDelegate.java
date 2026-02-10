@@ -26,7 +26,7 @@ public final class LogBoxDialogSurfaceDelegate implements SurfaceDelegate {
     @Override // com.facebook.react.common.SurfaceDelegate
     public void createContentView(@NotNull String appKey) {
         Intrinsics.checkNotNullParameter(appKey, "appKey");
-        db.a.b(Intrinsics.areEqual(appKey, "LogBox"), "This surface manager can only create LogBox React application");
+        eb.a.b(Intrinsics.areEqual(appKey, "LogBox"), "This surface manager can only create LogBox React application");
         View createRootView = this.devSupportManager.createRootView("LogBox");
         this.reactRootView = createRootView;
         if (createRootView == null) {

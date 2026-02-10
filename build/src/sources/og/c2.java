@@ -1,64 +1,78 @@
 package og;
 
-import yi.c;
+import java.util.Objects;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c2 implements yi.d {
+public final class c2 extends k1 {
 
-    /* renamed from: a  reason: collision with root package name */
-    static final c2 f41880a = new c2();
+    /* renamed from: o  reason: collision with root package name */
+    final transient Object[] f40810o;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f41881b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f41882c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f41883d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f41884e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f41885f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final yi.c f41886g;
-
-    static {
-        c.b a10 = yi.c.a("cameraSource");
-        f fVar = new f();
-        fVar.a(1);
-        f41881b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("eventType");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f41882c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("requestedPreviewHeight");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f41883d = a12.b(fVar3.b()).a();
-        c.b a13 = yi.c.a("requestedPreviewWidth");
-        f fVar4 = new f();
-        fVar4.a(4);
-        f41884e = a13.b(fVar4.b()).a();
-        c.b a14 = yi.c.a("actualPreviewHeight");
-        f fVar5 = new f();
-        fVar5.a(5);
-        f41885f = a14.b(fVar5.b()).a();
-        c.b a15 = yi.c.a("actualPreviewWidth");
-        f fVar6 = new f();
-        fVar6.a(6);
-        f41886g = a15.b(fVar6.b()).a();
+    private c2(Object obj, Object[] objArr, int i10) {
+        this.f40810o = objArr;
     }
 
-    private c2() {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static c2 g(int i10, Object[] objArr, j1 j1Var) {
+        Object obj = objArr[0];
+        Objects.requireNonNull(obj);
+        Object obj2 = objArr[1];
+        Objects.requireNonNull(obj2);
+        n0.b(obj, obj2);
+        return new c2(null, objArr, 1);
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // og.k1
+    final d1 a() {
+        return new b2(this.f40810o, 1, 1);
+    }
+
+    @Override // og.k1
+    final l1 d() {
+        return new z1(this, this.f40810o, 0, 1);
+    }
+
+    @Override // og.k1
+    final l1 e() {
+        return new a2(this, new b2(this.f40810o, 0, 1));
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:10:0x001c A[RETURN] */
+    /* JADX WARN: Removed duplicated region for block: B:9:0x001b A[RETURN] */
+    @Override // og.k1, java.util.Map
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final java.lang.Object get(java.lang.Object r4) {
+        /*
+            r3 = this;
+            r0 = 0
+            if (r4 != 0) goto L5
+        L3:
+            r4 = r0
+            goto L19
+        L5:
+            java.lang.Object[] r1 = r3.f40810o
+            r2 = 0
+            r2 = r1[r2]
+            java.util.Objects.requireNonNull(r2)
+            boolean r4 = r2.equals(r4)
+            if (r4 == 0) goto L3
+            r4 = 1
+            r4 = r1[r4]
+            java.util.Objects.requireNonNull(r4)
+        L19:
+            if (r4 != 0) goto L1c
+            return r0
+        L1c:
+            return r4
+        */
+        throw new UnsupportedOperationException("Method not decompiled: og.c2.get(java.lang.Object):java.lang.Object");
+    }
+
+    @Override // java.util.Map
+    public final int size() {
+        return 1;
     }
 }

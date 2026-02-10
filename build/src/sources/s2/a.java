@@ -15,34 +15,34 @@ import s2.b;
 public abstract class a extends BaseAdapter implements Filterable, b.a {
 
     /* renamed from: d  reason: collision with root package name */
-    protected boolean f49691d;
+    protected boolean f49494d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected boolean f49692e;
+    protected boolean f49495e;
 
     /* renamed from: i  reason: collision with root package name */
-    protected Cursor f49693i;
+    protected Cursor f49496i;
 
     /* renamed from: o  reason: collision with root package name */
-    protected Context f49694o;
+    protected Context f49497o;
 
     /* renamed from: p  reason: collision with root package name */
-    protected int f49695p;
+    protected int f49498p;
 
     /* renamed from: q  reason: collision with root package name */
-    protected C0647a f49696q;
+    protected C0663a f49499q;
 
     /* renamed from: r  reason: collision with root package name */
-    protected DataSetObserver f49697r;
+    protected DataSetObserver f49500r;
 
     /* renamed from: s  reason: collision with root package name */
-    protected s2.b f49698s;
+    protected s2.b f49501s;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: s2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public class C0647a extends ContentObserver {
-        C0647a() {
+    public class C0663a extends ContentObserver {
+        C0663a() {
             super(new Handler());
         }
 
@@ -66,14 +66,14 @@ public abstract class a extends BaseAdapter implements Filterable, b.a {
         @Override // android.database.DataSetObserver
         public void onChanged() {
             a aVar = a.this;
-            aVar.f49691d = true;
+            aVar.f49494d = true;
             aVar.notifyDataSetChanged();
         }
 
         @Override // android.database.DataSetObserver
         public void onInvalidated() {
             a aVar = a.this;
-            aVar.f49691d = false;
+            aVar.f49494d = false;
             aVar.notifyDataSetInvalidated();
         }
     }
@@ -97,7 +97,7 @@ public abstract class a extends BaseAdapter implements Filterable, b.a {
 
     @Override // s2.b.a
     public Cursor c() {
-        return this.f49693i;
+        return this.f49496i;
     }
 
     public abstract CharSequence convertToString(Cursor cursor);
@@ -109,35 +109,35 @@ public abstract class a extends BaseAdapter implements Filterable, b.a {
         boolean z10 = false;
         if ((i10 & 1) == 1) {
             i10 |= 2;
-            this.f49692e = true;
+            this.f49495e = true;
         } else {
-            this.f49692e = false;
+            this.f49495e = false;
         }
         if (cursor != null) {
             z10 = true;
         }
-        this.f49693i = cursor;
-        this.f49691d = z10;
-        this.f49694o = context;
+        this.f49496i = cursor;
+        this.f49494d = z10;
+        this.f49497o = context;
         if (z10) {
             i11 = cursor.getColumnIndexOrThrow("_id");
         } else {
             i11 = -1;
         }
-        this.f49695p = i11;
+        this.f49498p = i11;
         if ((i10 & 2) == 2) {
-            this.f49696q = new C0647a();
-            this.f49697r = new b();
+            this.f49499q = new C0663a();
+            this.f49500r = new b();
         } else {
-            this.f49696q = null;
-            this.f49697r = null;
+            this.f49499q = null;
+            this.f49500r = null;
         }
         if (z10) {
-            C0647a c0647a = this.f49696q;
-            if (c0647a != null) {
-                cursor.registerContentObserver(c0647a);
+            C0663a c0663a = this.f49499q;
+            if (c0663a != null) {
+                cursor.registerContentObserver(c0663a);
             }
-            DataSetObserver dataSetObserver = this.f49697r;
+            DataSetObserver dataSetObserver = this.f49500r;
             if (dataSetObserver != null) {
                 cursor.registerDataSetObserver(dataSetObserver);
             }
@@ -151,7 +151,7 @@ public abstract class a extends BaseAdapter implements Filterable, b.a {
     @Override // android.widget.Adapter
     public int getCount() {
         Cursor cursor;
-        if (this.f49691d && (cursor = this.f49693i) != null) {
+        if (this.f49494d && (cursor = this.f49496i) != null) {
             return cursor.getCount();
         }
         return 0;
@@ -159,12 +159,12 @@ public abstract class a extends BaseAdapter implements Filterable, b.a {
 
     @Override // android.widget.BaseAdapter, android.widget.SpinnerAdapter
     public View getDropDownView(int i10, View view, ViewGroup viewGroup) {
-        if (this.f49691d) {
-            this.f49693i.moveToPosition(i10);
+        if (this.f49494d) {
+            this.f49496i.moveToPosition(i10);
             if (view == null) {
-                view = f(this.f49694o, this.f49693i, viewGroup);
+                view = f(this.f49497o, this.f49496i, viewGroup);
             }
-            d(view, this.f49694o, this.f49693i);
+            d(view, this.f49497o, this.f49496i);
             return view;
         }
         return null;
@@ -172,18 +172,18 @@ public abstract class a extends BaseAdapter implements Filterable, b.a {
 
     @Override // android.widget.Filterable
     public Filter getFilter() {
-        if (this.f49698s == null) {
-            this.f49698s = new s2.b(this);
+        if (this.f49501s == null) {
+            this.f49501s = new s2.b(this);
         }
-        return this.f49698s;
+        return this.f49501s;
     }
 
     @Override // android.widget.Adapter
     public Object getItem(int i10) {
         Cursor cursor;
-        if (this.f49691d && (cursor = this.f49693i) != null) {
+        if (this.f49494d && (cursor = this.f49496i) != null) {
             cursor.moveToPosition(i10);
-            return this.f49693i;
+            return this.f49496i;
         }
         return null;
     }
@@ -191,20 +191,20 @@ public abstract class a extends BaseAdapter implements Filterable, b.a {
     @Override // android.widget.Adapter
     public long getItemId(int i10) {
         Cursor cursor;
-        if (!this.f49691d || (cursor = this.f49693i) == null || !cursor.moveToPosition(i10)) {
+        if (!this.f49494d || (cursor = this.f49496i) == null || !cursor.moveToPosition(i10)) {
             return 0L;
         }
-        return this.f49693i.getLong(this.f49695p);
+        return this.f49496i.getLong(this.f49498p);
     }
 
     @Override // android.widget.Adapter
     public View getView(int i10, View view, ViewGroup viewGroup) {
-        if (this.f49691d) {
-            if (this.f49693i.moveToPosition(i10)) {
+        if (this.f49494d) {
+            if (this.f49496i.moveToPosition(i10)) {
                 if (view == null) {
-                    view = g(this.f49694o, this.f49693i, viewGroup);
+                    view = g(this.f49497o, this.f49496i, viewGroup);
                 }
-                d(view, this.f49694o, this.f49693i);
+                d(view, this.f49497o, this.f49496i);
                 return view;
             }
             throw new IllegalStateException("couldn't move cursor to position " + i10);
@@ -214,43 +214,43 @@ public abstract class a extends BaseAdapter implements Filterable, b.a {
 
     protected void h() {
         Cursor cursor;
-        if (this.f49692e && (cursor = this.f49693i) != null && !cursor.isClosed()) {
-            this.f49691d = this.f49693i.requery();
+        if (this.f49495e && (cursor = this.f49496i) != null && !cursor.isClosed()) {
+            this.f49494d = this.f49496i.requery();
         }
     }
 
     public Cursor i(Cursor cursor) {
-        Cursor cursor2 = this.f49693i;
+        Cursor cursor2 = this.f49496i;
         if (cursor == cursor2) {
             return null;
         }
         if (cursor2 != null) {
-            C0647a c0647a = this.f49696q;
-            if (c0647a != null) {
-                cursor2.unregisterContentObserver(c0647a);
+            C0663a c0663a = this.f49499q;
+            if (c0663a != null) {
+                cursor2.unregisterContentObserver(c0663a);
             }
-            DataSetObserver dataSetObserver = this.f49697r;
+            DataSetObserver dataSetObserver = this.f49500r;
             if (dataSetObserver != null) {
                 cursor2.unregisterDataSetObserver(dataSetObserver);
             }
         }
-        this.f49693i = cursor;
+        this.f49496i = cursor;
         if (cursor != null) {
-            C0647a c0647a2 = this.f49696q;
-            if (c0647a2 != null) {
-                cursor.registerContentObserver(c0647a2);
+            C0663a c0663a2 = this.f49499q;
+            if (c0663a2 != null) {
+                cursor.registerContentObserver(c0663a2);
             }
-            DataSetObserver dataSetObserver2 = this.f49697r;
+            DataSetObserver dataSetObserver2 = this.f49500r;
             if (dataSetObserver2 != null) {
                 cursor.registerDataSetObserver(dataSetObserver2);
             }
-            this.f49695p = cursor.getColumnIndexOrThrow("_id");
-            this.f49691d = true;
+            this.f49498p = cursor.getColumnIndexOrThrow("_id");
+            this.f49494d = true;
             notifyDataSetChanged();
             return cursor2;
         }
-        this.f49695p = -1;
-        this.f49691d = false;
+        this.f49498p = -1;
+        this.f49494d = false;
         notifyDataSetInvalidated();
         return cursor2;
     }

@@ -14,22 +14,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun25593: for (var _fun25593_ip = 0;;) switch (_fun25593_ip) {
+                _fun25592: for (var _fun25592_ip = 0;;) switch (_fun25592_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun25593_ip = 115;
-                            continue _fun25593
+                            _fun25592_ip = 115;
+                            continue _fun25592
                         }
                     case 10:
                         var4 = null;
                         var3 = var4 != var1;
                         var2 = null;
                         if (!var3) {
-                            _fun25593_ip = 109;
-                            continue _fun25593
+                            _fun25592_ip = 109;
+                            continue _fun25592
                         }
                     case 21:
                         var5 = var1.paymentGateway;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var3.BRAINTREE;
                         var2 = null;
                         if (!(var5 === var3)) {
-                            _fun25593_ip = 109;
-                            continue _fun25593
+                            _fun25592_ip = 109;
+                            continue _fun25592
                         }
                     case 46:
                         var5 = _closure1_slot0;
@@ -55,15 +55,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 82:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun25593_ip = 112;
-                            continue _fun25593
+                            _fun25592_ip = 112;
+                            continue _fun25592
                         }
                     case 88:
                         var3 = var4 != var1;
                         var2 = null;
                         if (!var3) {
-                            _fun25593_ip = 109;
-                            continue _fun25593
+                            _fun25592_ip = 109;
+                            continue _fun25592
                         }
                     case 97:
                         var3 = {};
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGatewayCheckoutContext = var3;
     var3 = function arg0, arg1() {
-        _fun25596: for (var _fun25596_ip = 0;;) switch (_fun25596_ip) {
+        _fun25595: for (var _fun25595_ip = 0;;) switch (_fun25595_ip) {
             case 0:
                 var6 = arg1;
                 var2 = _closure1_slot1;
@@ -161,6 +161,46 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var4 = var2.bind(var0)(var1);
                 var3 = var4.captureException;
+                var2 = {};
+                var9 = var2;
+                var8 = var6;
+                var1 = copyDataProperties(var9, var8);
+                var5 = {};
+                var1 = null;
+                var7 = var1 == var6;
+                var1 = undefined;
+                if (var7) {
+                    _fun25595_ip = 65;
+                    continue _fun25595
+                }
+            case 59:
+                var1 = var6.tags;
+            case 65:
+                var9 = var5;
+                var8 = var1;
+                var1 = copyDataProperties(var9, var8);
+                var6 = 'billing';
+                var1 = 'app_context';
+                var5[var1] = var6;
+                var1 = 'tags';
+                var2[var1] = var5;
+                var1 = arg0;
+                var1 = var3.bind(var4)(var1, var2);
+                return var0;
+        }
+    };
+    var2.captureBillingException = var3;
+    var3 = function arg0, arg1() {
+        _fun25596: for (var _fun25596_ip = 0;;) switch (_fun25596_ip) {
+            case 0:
+                var6 = arg1;
+                var2 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var0 = 3;
+                var1 = var1[var0];
+                var0 = undefined;
+                var4 = var2.bind(var0)(var1);
+                var3 = var4.captureMessage;
                 var2 = {};
                 var9 = var2;
                 var8 = var6;
@@ -189,49 +229,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.captureBillingException = var3;
-    var3 = function arg0, arg1() {
-        _fun25597: for (var _fun25597_ip = 0;;) switch (_fun25597_ip) {
-            case 0:
-                var6 = arg1;
-                var2 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var0 = 3;
-                var1 = var1[var0];
-                var0 = undefined;
-                var4 = var2.bind(var0)(var1);
-                var3 = var4.captureMessage;
-                var2 = {};
-                var9 = var2;
-                var8 = var6;
-                var1 = copyDataProperties(var9, var8);
-                var5 = {};
-                var1 = null;
-                var7 = var1 == var6;
-                var1 = undefined;
-                if (var7) {
-                    _fun25597_ip = 65;
-                    continue _fun25597
-                }
-            case 59:
-                var1 = var6.tags;
-            case 65:
-                var9 = var5;
-                var8 = var1;
-                var1 = copyDataProperties(var9, var8);
-                var6 = 'billing';
-                var1 = 'app_context';
-                var5[var1] = var6;
-                var1 = 'tags';
-                var2[var1] = var5;
-                var1 = arg0;
-                var1 = var3.bind(var4)(var1, var2);
-                return var0;
-        }
-    };
     var2.captureBillingMessage = var3;
     var1 = function arg0, arg1() {
-        _fun25598: for (var _fun25598_ip = 0;;) switch (_fun25598_ip) {
+        _fun25597: for (var _fun25597_ip = 0;;) switch (_fun25597_ip) {
             case 0:
                 var2 = arg0;
                 var3 = arg1;
@@ -239,8 +239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0 === var2;
                 var4 = var0;
                 if (!var0) {
-                    _fun25598_ip = 32;
-                    continue _fun25598
+                    _fun25597_ip = 32;
+                    continue _fun25597
                 }
             case 22:
                 var1 = 'P1Y';
@@ -248,79 +248,79 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 32:
                 var1 = true;
                 if (!(var4 !== var1)) {
-                    _fun25598_ip = 177;
-                    continue _fun25598
+                    _fun25597_ip = 177;
+                    continue _fun25597
                 }
             case 41:
                 var4 = var0;
                 if (!var0) {
-                    _fun25598_ip = 57;
-                    continue _fun25598
+                    _fun25597_ip = 57;
+                    continue _fun25597
                 }
             case 47:
                 var5 = 'P6M';
                 var4 = var5 === var3;
             case 57:
                 if (!(var4 !== var1)) {
-                    _fun25598_ip = 172;
-                    continue _fun25598
+                    _fun25597_ip = 172;
+                    continue _fun25597
                 }
             case 61:
                 if (!var0) {
-                    _fun25598_ip = 74;
-                    continue _fun25598
+                    _fun25597_ip = 74;
+                    continue _fun25597
                 }
             case 64:
                 var4 = 'P3M';
                 var0 = var4 === var3;
             case 74:
                 if (!(var0 !== var1)) {
-                    _fun25598_ip = 167;
-                    continue _fun25598
+                    _fun25597_ip = 167;
+                    continue _fun25597
                 }
             case 78:
                 var0 = 'P3M';
                 var0 = var0 === var2;
                 var4 = var0;
                 if (!var0) {
-                    _fun25598_ip = 104;
-                    continue _fun25598
+                    _fun25597_ip = 104;
+                    continue _fun25597
                 }
             case 94:
                 var5 = 'P1Y';
                 var4 = var5 === var3;
             case 104:
                 if (!(var4 !== var1)) {
-                    _fun25598_ip = 162;
-                    continue _fun25598
+                    _fun25597_ip = 162;
+                    continue _fun25597
                 }
             case 108:
                 if (!var0) {
-                    _fun25598_ip = 121;
-                    continue _fun25598
+                    _fun25597_ip = 121;
+                    continue _fun25597
                 }
             case 111:
                 var4 = 'P6M';
                 var0 = var4 === var3;
             case 121:
                 if (!(var0 !== var1)) {
-                    _fun25598_ip = 157;
-                    continue _fun25598
+                    _fun25597_ip = 157;
+                    continue _fun25597
                 }
             case 125:
                 var0 = 'P6M';
                 var0 = var0 === var2;
                 if (!var0) {
-                    _fun25598_ip = 148;
-                    continue _fun25598
+                    _fun25597_ip = 148;
+                    continue _fun25597
                 }
             case 138:
                 var2 = 'P1Y';
                 var0 = var2 === var3;
             case 148:
                 if (!(var0 !== var1)) {
-                    _fun25598_ip = 157;
-                    continue _fun25598
+                    _fun25597_ip = 157;
+                    continue _fun25597
                 }
             case 152:
                 var0 = 1;

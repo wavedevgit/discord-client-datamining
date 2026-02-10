@@ -23,7 +23,7 @@ public final class Format implements g {
     public final float F;
     public final byte[] G;
     public final int H;
-    public final oe.c I;
+    public final pe.c I;
     public final int J;
     public final int K;
     public final int L;
@@ -36,135 +36,135 @@ public final class Format implements g {
     private int S;
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f11576d;
+    public final String f11716d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f11577e;
+    public final String f11717e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f11578i;
+    public final String f11718i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f11579o;
+    public final int f11719o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final int f11580p;
+    public final int f11720p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final int f11581q;
+    public final int f11721q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final int f11582r;
+    public final int f11722r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final int f11583s;
+    public final int f11723s;
 
     /* renamed from: t  reason: collision with root package name */
-    public final String f11584t;
+    public final String f11724t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final Metadata f11585u;
+    public final Metadata f11725u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final String f11586v;
+    public final String f11726v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final String f11587w;
+    public final String f11727w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final int f11588x;
+    public final int f11728x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final List f11589y;
+    public final List f11729y;
 
     /* renamed from: z  reason: collision with root package name */
-    public final rc.m f11590z;
+    public final sc.m f11730z;
     private static final Format T = new b().G();
-    private static final String U = ne.w0.B0(0);
-    private static final String V = ne.w0.B0(1);
-    private static final String W = ne.w0.B0(2);
-    private static final String X = ne.w0.B0(3);
-    private static final String Y = ne.w0.B0(4);
-    private static final String Z = ne.w0.B0(5);
+    private static final String U = oe.w0.B0(0);
+    private static final String V = oe.w0.B0(1);
+    private static final String W = oe.w0.B0(2);
+    private static final String X = oe.w0.B0(3);
+    private static final String Y = oe.w0.B0(4);
+    private static final String Z = oe.w0.B0(5);
 
     /* renamed from: a0  reason: collision with root package name */
-    private static final String f11550a0 = ne.w0.B0(6);
+    private static final String f11690a0 = oe.w0.B0(6);
 
     /* renamed from: b0  reason: collision with root package name */
-    private static final String f11551b0 = ne.w0.B0(7);
+    private static final String f11691b0 = oe.w0.B0(7);
 
     /* renamed from: c0  reason: collision with root package name */
-    private static final String f11552c0 = ne.w0.B0(8);
+    private static final String f11692c0 = oe.w0.B0(8);
 
     /* renamed from: d0  reason: collision with root package name */
-    private static final String f11553d0 = ne.w0.B0(9);
+    private static final String f11693d0 = oe.w0.B0(9);
 
     /* renamed from: e0  reason: collision with root package name */
-    private static final String f11554e0 = ne.w0.B0(10);
+    private static final String f11694e0 = oe.w0.B0(10);
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final String f11555f0 = ne.w0.B0(11);
+    private static final String f11695f0 = oe.w0.B0(11);
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final String f11556g0 = ne.w0.B0(12);
+    private static final String f11696g0 = oe.w0.B0(12);
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final String f11557h0 = ne.w0.B0(13);
+    private static final String f11697h0 = oe.w0.B0(13);
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final String f11558i0 = ne.w0.B0(14);
+    private static final String f11698i0 = oe.w0.B0(14);
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final String f11559j0 = ne.w0.B0(15);
+    private static final String f11699j0 = oe.w0.B0(15);
 
     /* renamed from: k0  reason: collision with root package name */
-    private static final String f11560k0 = ne.w0.B0(16);
+    private static final String f11700k0 = oe.w0.B0(16);
 
     /* renamed from: l0  reason: collision with root package name */
-    private static final String f11561l0 = ne.w0.B0(17);
+    private static final String f11701l0 = oe.w0.B0(17);
 
     /* renamed from: m0  reason: collision with root package name */
-    private static final String f11562m0 = ne.w0.B0(18);
+    private static final String f11702m0 = oe.w0.B0(18);
 
     /* renamed from: n0  reason: collision with root package name */
-    private static final String f11563n0 = ne.w0.B0(19);
+    private static final String f11703n0 = oe.w0.B0(19);
 
     /* renamed from: o0  reason: collision with root package name */
-    private static final String f11564o0 = ne.w0.B0(20);
+    private static final String f11704o0 = oe.w0.B0(20);
 
     /* renamed from: p0  reason: collision with root package name */
-    private static final String f11565p0 = ne.w0.B0(21);
+    private static final String f11705p0 = oe.w0.B0(21);
 
     /* renamed from: q0  reason: collision with root package name */
-    private static final String f11566q0 = ne.w0.B0(22);
+    private static final String f11706q0 = oe.w0.B0(22);
 
     /* renamed from: r0  reason: collision with root package name */
-    private static final String f11567r0 = ne.w0.B0(23);
+    private static final String f11707r0 = oe.w0.B0(23);
 
     /* renamed from: s0  reason: collision with root package name */
-    private static final String f11568s0 = ne.w0.B0(24);
+    private static final String f11708s0 = oe.w0.B0(24);
 
     /* renamed from: t0  reason: collision with root package name */
-    private static final String f11569t0 = ne.w0.B0(25);
+    private static final String f11709t0 = oe.w0.B0(25);
 
     /* renamed from: u0  reason: collision with root package name */
-    private static final String f11570u0 = ne.w0.B0(26);
+    private static final String f11710u0 = oe.w0.B0(26);
 
     /* renamed from: v0  reason: collision with root package name */
-    private static final String f11571v0 = ne.w0.B0(27);
+    private static final String f11711v0 = oe.w0.B0(27);
 
     /* renamed from: w0  reason: collision with root package name */
-    private static final String f11572w0 = ne.w0.B0(28);
+    private static final String f11712w0 = oe.w0.B0(28);
 
     /* renamed from: x0  reason: collision with root package name */
-    private static final String f11573x0 = ne.w0.B0(29);
+    private static final String f11713x0 = oe.w0.B0(29);
 
     /* renamed from: y0  reason: collision with root package name */
-    private static final String f11574y0 = ne.w0.B0(30);
+    private static final String f11714y0 = oe.w0.B0(30);
 
     /* renamed from: z0  reason: collision with root package name */
-    private static final String f11575z0 = ne.w0.B0(31);
-    public static final g.a A0 = new g.a() { // from class: lc.w
+    private static final String f11715z0 = oe.w0.B0(31);
+    public static final g.a A0 = new g.a() { // from class: mc.w
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             Format e10;
@@ -183,82 +183,82 @@ public final class Format implements g {
         private int F;
 
         /* renamed from: a  reason: collision with root package name */
-        private String f11591a;
+        private String f11731a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f11592b;
+        private String f11732b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f11593c;
+        private String f11733c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f11594d;
+        private int f11734d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f11595e;
+        private int f11735e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f11596f;
+        private int f11736f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f11597g;
+        private int f11737g;
 
         /* renamed from: h  reason: collision with root package name */
-        private String f11598h;
+        private String f11738h;
 
         /* renamed from: i  reason: collision with root package name */
-        private Metadata f11599i;
+        private Metadata f11739i;
 
         /* renamed from: j  reason: collision with root package name */
-        private String f11600j;
+        private String f11740j;
 
         /* renamed from: k  reason: collision with root package name */
-        private String f11601k;
+        private String f11741k;
 
         /* renamed from: l  reason: collision with root package name */
-        private int f11602l;
+        private int f11742l;
 
         /* renamed from: m  reason: collision with root package name */
-        private List f11603m;
+        private List f11743m;
 
         /* renamed from: n  reason: collision with root package name */
-        private rc.m f11604n;
+        private sc.m f11744n;
 
         /* renamed from: o  reason: collision with root package name */
-        private long f11605o;
+        private long f11745o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f11606p;
+        private int f11746p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f11607q;
+        private int f11747q;
 
         /* renamed from: r  reason: collision with root package name */
-        private float f11608r;
+        private float f11748r;
 
         /* renamed from: s  reason: collision with root package name */
-        private int f11609s;
+        private int f11749s;
 
         /* renamed from: t  reason: collision with root package name */
-        private float f11610t;
+        private float f11750t;
 
         /* renamed from: u  reason: collision with root package name */
-        private byte[] f11611u;
+        private byte[] f11751u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f11612v;
+        private int f11752v;
 
         /* renamed from: w  reason: collision with root package name */
-        private oe.c f11613w;
+        private pe.c f11753w;
 
         /* renamed from: x  reason: collision with root package name */
-        private int f11614x;
+        private int f11754x;
 
         /* renamed from: y  reason: collision with root package name */
-        private int f11615y;
+        private int f11755y;
 
         /* renamed from: z  reason: collision with root package name */
-        private int f11616z;
+        private int f11756z;
 
         public Format G() {
             return new Format(this);
@@ -270,27 +270,27 @@ public final class Format implements g {
         }
 
         public b I(int i10) {
-            this.f11596f = i10;
+            this.f11736f = i10;
             return this;
         }
 
         public b J(int i10) {
-            this.f11614x = i10;
+            this.f11754x = i10;
             return this;
         }
 
         public b K(String str) {
-            this.f11598h = str;
+            this.f11738h = str;
             return this;
         }
 
-        public b L(oe.c cVar) {
-            this.f11613w = cVar;
+        public b L(pe.c cVar) {
+            this.f11753w = cVar;
             return this;
         }
 
         public b M(String str) {
-            this.f11600j = str;
+            this.f11740j = str;
             return this;
         }
 
@@ -299,8 +299,8 @@ public final class Format implements g {
             return this;
         }
 
-        public b O(rc.m mVar) {
-            this.f11604n = mVar;
+        public b O(sc.m mVar) {
+            this.f11744n = mVar;
             return this;
         }
 
@@ -315,102 +315,102 @@ public final class Format implements g {
         }
 
         public b R(float f10) {
-            this.f11608r = f10;
+            this.f11748r = f10;
             return this;
         }
 
         public b S(int i10) {
-            this.f11607q = i10;
+            this.f11747q = i10;
             return this;
         }
 
         public b T(int i10) {
-            this.f11591a = Integer.toString(i10);
+            this.f11731a = Integer.toString(i10);
             return this;
         }
 
         public b U(String str) {
-            this.f11591a = str;
+            this.f11731a = str;
             return this;
         }
 
         public b V(List list) {
-            this.f11603m = list;
+            this.f11743m = list;
             return this;
         }
 
         public b W(String str) {
-            this.f11592b = str;
+            this.f11732b = str;
             return this;
         }
 
         public b X(String str) {
-            this.f11593c = str;
+            this.f11733c = str;
             return this;
         }
 
         public b Y(int i10) {
-            this.f11602l = i10;
+            this.f11742l = i10;
             return this;
         }
 
         public b Z(Metadata metadata) {
-            this.f11599i = metadata;
+            this.f11739i = metadata;
             return this;
         }
 
         public b a0(int i10) {
-            this.f11616z = i10;
+            this.f11756z = i10;
             return this;
         }
 
         public b b0(int i10) {
-            this.f11597g = i10;
+            this.f11737g = i10;
             return this;
         }
 
         public b c0(float f10) {
-            this.f11610t = f10;
+            this.f11750t = f10;
             return this;
         }
 
         public b d0(byte[] bArr) {
-            this.f11611u = bArr;
+            this.f11751u = bArr;
             return this;
         }
 
         public b e0(int i10) {
-            this.f11595e = i10;
+            this.f11735e = i10;
             return this;
         }
 
         public b f0(int i10) {
-            this.f11609s = i10;
+            this.f11749s = i10;
             return this;
         }
 
         public b g0(String str) {
-            this.f11601k = str;
+            this.f11741k = str;
             return this;
         }
 
         public b h0(int i10) {
-            this.f11615y = i10;
+            this.f11755y = i10;
             return this;
         }
 
         public b i0(int i10) {
-            this.f11594d = i10;
+            this.f11734d = i10;
             return this;
         }
 
         public b j0(int i10) {
-            this.f11612v = i10;
+            this.f11752v = i10;
             return this;
         }
 
         public b k0(long j10) {
-            this.f11605o = j10;
+            this.f11745o = j10;
             return this;
         }
 
@@ -425,23 +425,23 @@ public final class Format implements g {
         }
 
         public b n0(int i10) {
-            this.f11606p = i10;
+            this.f11746p = i10;
             return this;
         }
 
         public b() {
-            this.f11596f = -1;
-            this.f11597g = -1;
-            this.f11602l = -1;
-            this.f11605o = LongCompanionObject.MAX_VALUE;
-            this.f11606p = -1;
-            this.f11607q = -1;
-            this.f11608r = -1.0f;
-            this.f11610t = 1.0f;
-            this.f11612v = -1;
-            this.f11614x = -1;
-            this.f11615y = -1;
-            this.f11616z = -1;
+            this.f11736f = -1;
+            this.f11737g = -1;
+            this.f11742l = -1;
+            this.f11745o = LongCompanionObject.MAX_VALUE;
+            this.f11746p = -1;
+            this.f11747q = -1;
+            this.f11748r = -1.0f;
+            this.f11750t = 1.0f;
+            this.f11752v = -1;
+            this.f11754x = -1;
+            this.f11755y = -1;
+            this.f11756z = -1;
             this.C = -1;
             this.D = -1;
             this.E = -1;
@@ -449,32 +449,32 @@ public final class Format implements g {
         }
 
         private b(Format format) {
-            this.f11591a = format.f11576d;
-            this.f11592b = format.f11577e;
-            this.f11593c = format.f11578i;
-            this.f11594d = format.f11579o;
-            this.f11595e = format.f11580p;
-            this.f11596f = format.f11581q;
-            this.f11597g = format.f11582r;
-            this.f11598h = format.f11584t;
-            this.f11599i = format.f11585u;
-            this.f11600j = format.f11586v;
-            this.f11601k = format.f11587w;
-            this.f11602l = format.f11588x;
-            this.f11603m = format.f11589y;
-            this.f11604n = format.f11590z;
-            this.f11605o = format.A;
-            this.f11606p = format.B;
-            this.f11607q = format.C;
-            this.f11608r = format.D;
-            this.f11609s = format.E;
-            this.f11610t = format.F;
-            this.f11611u = format.G;
-            this.f11612v = format.H;
-            this.f11613w = format.I;
-            this.f11614x = format.J;
-            this.f11615y = format.K;
-            this.f11616z = format.L;
+            this.f11731a = format.f11716d;
+            this.f11732b = format.f11717e;
+            this.f11733c = format.f11718i;
+            this.f11734d = format.f11719o;
+            this.f11735e = format.f11720p;
+            this.f11736f = format.f11721q;
+            this.f11737g = format.f11722r;
+            this.f11738h = format.f11724t;
+            this.f11739i = format.f11725u;
+            this.f11740j = format.f11726v;
+            this.f11741k = format.f11727w;
+            this.f11742l = format.f11728x;
+            this.f11743m = format.f11729y;
+            this.f11744n = format.f11730z;
+            this.f11745o = format.A;
+            this.f11746p = format.B;
+            this.f11747q = format.C;
+            this.f11748r = format.D;
+            this.f11749s = format.E;
+            this.f11750t = format.F;
+            this.f11751u = format.G;
+            this.f11752v = format.H;
+            this.f11753w = format.I;
+            this.f11754x = format.J;
+            this.f11755y = format.K;
+            this.f11756z = format.L;
             this.A = format.M;
             this.B = format.N;
             this.C = format.O;
@@ -491,10 +491,10 @@ public final class Format implements g {
     /* JADX INFO: Access modifiers changed from: private */
     public static Format e(Bundle bundle) {
         b bVar = new b();
-        ne.d.c(bundle);
+        oe.d.c(bundle);
         String string = bundle.getString(U);
         Format format = T;
-        bVar.U((String) d(string, format.f11576d)).W((String) d(bundle.getString(V), format.f11577e)).X((String) d(bundle.getString(W), format.f11578i)).i0(bundle.getInt(X, format.f11579o)).e0(bundle.getInt(Y, format.f11580p)).I(bundle.getInt(Z, format.f11581q)).b0(bundle.getInt(f11550a0, format.f11582r)).K((String) d(bundle.getString(f11551b0), format.f11584t)).Z((Metadata) d((Metadata) bundle.getParcelable(f11552c0), format.f11585u)).M((String) d(bundle.getString(f11553d0), format.f11586v)).g0((String) d(bundle.getString(f11554e0), format.f11587w)).Y(bundle.getInt(f11555f0, format.f11588x));
+        bVar.U((String) d(string, format.f11716d)).W((String) d(bundle.getString(V), format.f11717e)).X((String) d(bundle.getString(W), format.f11718i)).i0(bundle.getInt(X, format.f11719o)).e0(bundle.getInt(Y, format.f11720p)).I(bundle.getInt(Z, format.f11721q)).b0(bundle.getInt(f11690a0, format.f11722r)).K((String) d(bundle.getString(f11691b0), format.f11724t)).Z((Metadata) d((Metadata) bundle.getParcelable(f11692c0), format.f11725u)).M((String) d(bundle.getString(f11693d0), format.f11726v)).g0((String) d(bundle.getString(f11694e0), format.f11727w)).Y(bundle.getInt(f11695f0, format.f11728x));
         ArrayList arrayList = new ArrayList();
         int i10 = 0;
         while (true) {
@@ -505,20 +505,20 @@ public final class Format implements g {
             arrayList.add(byteArray);
             i10++;
         }
-        b O = bVar.V(arrayList).O((rc.m) bundle.getParcelable(f11557h0));
-        String str = f11558i0;
+        b O = bVar.V(arrayList).O((sc.m) bundle.getParcelable(f11697h0));
+        String str = f11698i0;
         Format format2 = T;
-        O.k0(bundle.getLong(str, format2.A)).n0(bundle.getInt(f11559j0, format2.B)).S(bundle.getInt(f11560k0, format2.C)).R(bundle.getFloat(f11561l0, format2.D)).f0(bundle.getInt(f11562m0, format2.E)).c0(bundle.getFloat(f11563n0, format2.F)).d0(bundle.getByteArray(f11564o0)).j0(bundle.getInt(f11565p0, format2.H));
-        Bundle bundle2 = bundle.getBundle(f11566q0);
+        O.k0(bundle.getLong(str, format2.A)).n0(bundle.getInt(f11699j0, format2.B)).S(bundle.getInt(f11700k0, format2.C)).R(bundle.getFloat(f11701l0, format2.D)).f0(bundle.getInt(f11702m0, format2.E)).c0(bundle.getFloat(f11703n0, format2.F)).d0(bundle.getByteArray(f11704o0)).j0(bundle.getInt(f11705p0, format2.H));
+        Bundle bundle2 = bundle.getBundle(f11706q0);
         if (bundle2 != null) {
-            bVar.L((oe.c) oe.c.f41645w.a(bundle2));
+            bVar.L((pe.c) pe.c.f43105w.a(bundle2));
         }
-        bVar.J(bundle.getInt(f11567r0, format2.J)).h0(bundle.getInt(f11568s0, format2.K)).a0(bundle.getInt(f11569t0, format2.L)).P(bundle.getInt(f11570u0, format2.M)).Q(bundle.getInt(f11571v0, format2.N)).H(bundle.getInt(f11572w0, format2.O)).l0(bundle.getInt(f11574y0, format2.P)).m0(bundle.getInt(f11575z0, format2.Q)).N(bundle.getInt(f11573x0, format2.R));
+        bVar.J(bundle.getInt(f11707r0, format2.J)).h0(bundle.getInt(f11708s0, format2.K)).a0(bundle.getInt(f11709t0, format2.L)).P(bundle.getInt(f11710u0, format2.M)).Q(bundle.getInt(f11711v0, format2.N)).H(bundle.getInt(f11712w0, format2.O)).l0(bundle.getInt(f11714y0, format2.P)).m0(bundle.getInt(f11715z0, format2.Q)).N(bundle.getInt(f11713x0, format2.R));
         return bVar.G();
     }
 
     private static String h(int i10) {
-        return f11556g0 + "_" + Integer.toString(i10, 36);
+        return f11696g0 + "_" + Integer.toString(i10, 36);
     }
 
     public static String i(Format format) {
@@ -527,35 +527,35 @@ public final class Format implements g {
         }
         StringBuilder sb2 = new StringBuilder();
         sb2.append("id=");
-        sb2.append(format.f11576d);
+        sb2.append(format.f11716d);
         sb2.append(", mimeType=");
-        sb2.append(format.f11587w);
-        if (format.f11583s != -1) {
+        sb2.append(format.f11727w);
+        if (format.f11723s != -1) {
             sb2.append(", bitrate=");
-            sb2.append(format.f11583s);
+            sb2.append(format.f11723s);
         }
-        if (format.f11584t != null) {
+        if (format.f11724t != null) {
             sb2.append(", codecs=");
-            sb2.append(format.f11584t);
+            sb2.append(format.f11724t);
         }
-        if (format.f11590z != null) {
+        if (format.f11730z != null) {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
             int i10 = 0;
             while (true) {
-                rc.m mVar = format.f11590z;
-                if (i10 >= mVar.f48886o) {
+                sc.m mVar = format.f11730z;
+                if (i10 >= mVar.f49711o) {
                     break;
                 }
-                UUID uuid = mVar.o(i10).f48888e;
-                if (uuid.equals(lc.d.f36021b)) {
+                UUID uuid = mVar.i(i10).f49713e;
+                if (uuid.equals(mc.d.f36851b)) {
                     linkedHashSet.add("cenc");
-                } else if (uuid.equals(lc.d.f36022c)) {
+                } else if (uuid.equals(mc.d.f36852c)) {
                     linkedHashSet.add("clearkey");
-                } else if (uuid.equals(lc.d.f36024e)) {
+                } else if (uuid.equals(mc.d.f36854e)) {
                     linkedHashSet.add("playready");
-                } else if (uuid.equals(lc.d.f36023d)) {
+                } else if (uuid.equals(mc.d.f36853d)) {
                     linkedHashSet.add("widevine");
-                } else if (uuid.equals(lc.d.f36020a)) {
+                } else if (uuid.equals(mc.d.f36850a)) {
                     linkedHashSet.add("universal");
                 } else {
                     linkedHashSet.add("unknown (" + uuid + ")");
@@ -563,7 +563,7 @@ public final class Format implements g {
                 i10++;
             }
             sb2.append(", drm=[");
-            mi.g.d(',').b(sb2, linkedHashSet);
+            ni.g.d(',').b(sb2, linkedHashSet);
             sb2.append(']');
         }
         if (format.B != -1 && format.C != -1) {
@@ -572,7 +572,7 @@ public final class Format implements g {
             sb2.append("x");
             sb2.append(format.C);
         }
-        oe.c cVar = format.I;
+        pe.c cVar = format.I;
         if (cVar != null && cVar.g()) {
             sb2.append(", color=");
             sb2.append(format.I.j());
@@ -589,78 +589,78 @@ public final class Format implements g {
             sb2.append(", sample_rate=");
             sb2.append(format.K);
         }
-        if (format.f11578i != null) {
+        if (format.f11718i != null) {
             sb2.append(", language=");
-            sb2.append(format.f11578i);
+            sb2.append(format.f11718i);
         }
-        if (format.f11577e != null) {
+        if (format.f11717e != null) {
             sb2.append(", label=");
-            sb2.append(format.f11577e);
+            sb2.append(format.f11717e);
         }
-        if (format.f11579o != 0) {
+        if (format.f11719o != 0) {
             ArrayList arrayList = new ArrayList();
-            if ((format.f11579o & 4) != 0) {
+            if ((format.f11719o & 4) != 0) {
                 arrayList.add("auto");
             }
-            if ((format.f11579o & 1) != 0) {
+            if ((format.f11719o & 1) != 0) {
                 arrayList.add("default");
             }
-            if ((format.f11579o & 2) != 0) {
+            if ((format.f11719o & 2) != 0) {
                 arrayList.add("forced");
             }
             sb2.append(", selectionFlags=[");
-            mi.g.d(',').b(sb2, arrayList);
+            ni.g.d(',').b(sb2, arrayList);
             sb2.append("]");
         }
-        if (format.f11580p != 0) {
+        if (format.f11720p != 0) {
             ArrayList arrayList2 = new ArrayList();
-            if ((format.f11580p & 1) != 0) {
+            if ((format.f11720p & 1) != 0) {
                 arrayList2.add("main");
             }
-            if ((format.f11580p & 2) != 0) {
+            if ((format.f11720p & 2) != 0) {
                 arrayList2.add("alt");
             }
-            if ((format.f11580p & 4) != 0) {
+            if ((format.f11720p & 4) != 0) {
                 arrayList2.add("supplementary");
             }
-            if ((format.f11580p & 8) != 0) {
+            if ((format.f11720p & 8) != 0) {
                 arrayList2.add("commentary");
             }
-            if ((format.f11580p & 16) != 0) {
+            if ((format.f11720p & 16) != 0) {
                 arrayList2.add("dub");
             }
-            if ((format.f11580p & 32) != 0) {
+            if ((format.f11720p & 32) != 0) {
                 arrayList2.add("emergency");
             }
-            if ((format.f11580p & 64) != 0) {
+            if ((format.f11720p & 64) != 0) {
                 arrayList2.add("caption");
             }
-            if ((format.f11580p & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
+            if ((format.f11720p & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
                 arrayList2.add("subtitle");
             }
-            if ((format.f11580p & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
+            if ((format.f11720p & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
                 arrayList2.add("sign");
             }
-            if ((format.f11580p & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
+            if ((format.f11720p & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
                 arrayList2.add("describes-video");
             }
-            if ((format.f11580p & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
+            if ((format.f11720p & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
                 arrayList2.add("describes-music");
             }
-            if ((format.f11580p & RecyclerView.ItemAnimator.FLAG_MOVED) != 0) {
+            if ((format.f11720p & RecyclerView.ItemAnimator.FLAG_MOVED) != 0) {
                 arrayList2.add("enhanced-intelligibility");
             }
-            if ((format.f11580p & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
+            if ((format.f11720p & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
                 arrayList2.add("transcribes-dialog");
             }
-            if ((format.f11580p & 8192) != 0) {
+            if ((format.f11720p & 8192) != 0) {
                 arrayList2.add("easy-read");
             }
-            if ((format.f11580p & 16384) != 0) {
+            if ((format.f11720p & 16384) != 0) {
                 arrayList2.add("trick-play");
             }
             sb2.append(", roleFlags=[");
-            mi.g.d(',').b(sb2, arrayList2);
+            ni.g.d(',').b(sb2, arrayList2);
             sb2.append("]");
         }
         return sb2.toString();
@@ -682,7 +682,7 @@ public final class Format implements g {
         if (obj != null && Format.class == obj.getClass()) {
             Format format = (Format) obj;
             int i11 = this.S;
-            if ((i11 == 0 || (i10 = format.S) == 0 || i11 == i10) && this.f11579o == format.f11579o && this.f11580p == format.f11580p && this.f11581q == format.f11581q && this.f11582r == format.f11582r && this.f11588x == format.f11588x && this.A == format.A && this.B == format.B && this.C == format.C && this.E == format.E && this.H == format.H && this.J == format.J && this.K == format.K && this.L == format.L && this.M == format.M && this.N == format.N && this.O == format.O && this.P == format.P && this.Q == format.Q && this.R == format.R && Float.compare(this.D, format.D) == 0 && Float.compare(this.F, format.F) == 0 && ne.w0.c(this.f11576d, format.f11576d) && ne.w0.c(this.f11577e, format.f11577e) && ne.w0.c(this.f11584t, format.f11584t) && ne.w0.c(this.f11586v, format.f11586v) && ne.w0.c(this.f11587w, format.f11587w) && ne.w0.c(this.f11578i, format.f11578i) && Arrays.equals(this.G, format.G) && ne.w0.c(this.f11585u, format.f11585u) && ne.w0.c(this.I, format.I) && ne.w0.c(this.f11590z, format.f11590z) && g(format)) {
+            if ((i11 == 0 || (i10 = format.S) == 0 || i11 == i10) && this.f11719o == format.f11719o && this.f11720p == format.f11720p && this.f11721q == format.f11721q && this.f11722r == format.f11722r && this.f11728x == format.f11728x && this.A == format.A && this.B == format.B && this.C == format.C && this.E == format.E && this.H == format.H && this.J == format.J && this.K == format.K && this.L == format.L && this.M == format.M && this.N == format.N && this.O == format.O && this.P == format.P && this.Q == format.Q && this.R == format.R && Float.compare(this.D, format.D) == 0 && Float.compare(this.F, format.F) == 0 && oe.w0.c(this.f11716d, format.f11716d) && oe.w0.c(this.f11717e, format.f11717e) && oe.w0.c(this.f11724t, format.f11724t) && oe.w0.c(this.f11726v, format.f11726v) && oe.w0.c(this.f11727w, format.f11727w) && oe.w0.c(this.f11718i, format.f11718i) && Arrays.equals(this.G, format.G) && oe.w0.c(this.f11725u, format.f11725u) && oe.w0.c(this.I, format.I) && oe.w0.c(this.f11730z, format.f11730z) && g(format)) {
                 return true;
             }
         }
@@ -699,11 +699,11 @@ public final class Format implements g {
     }
 
     public boolean g(Format format) {
-        if (this.f11589y.size() != format.f11589y.size()) {
+        if (this.f11729y.size() != format.f11729y.size()) {
             return false;
         }
-        for (int i10 = 0; i10 < this.f11589y.size(); i10++) {
-            if (!Arrays.equals((byte[]) this.f11589y.get(i10), (byte[]) format.f11589y.get(i10))) {
+        for (int i10 = 0; i10 < this.f11729y.size(); i10++) {
+            if (!Arrays.equals((byte[]) this.f11729y.get(i10), (byte[]) format.f11729y.get(i10))) {
                 return false;
             }
         }
@@ -718,7 +718,7 @@ public final class Format implements g {
         int hashCode4;
         int hashCode5;
         if (this.S == 0) {
-            String str = this.f11576d;
+            String str = this.f11716d;
             int i11 = 0;
             if (str == null) {
                 hashCode = 0;
@@ -726,46 +726,46 @@ public final class Format implements g {
                 hashCode = str.hashCode();
             }
             int i12 = (527 + hashCode) * 31;
-            String str2 = this.f11577e;
+            String str2 = this.f11717e;
             if (str2 != null) {
                 i10 = str2.hashCode();
             } else {
                 i10 = 0;
             }
             int i13 = (i12 + i10) * 31;
-            String str3 = this.f11578i;
+            String str3 = this.f11718i;
             if (str3 == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str3.hashCode();
             }
-            int i14 = (((((((((i13 + hashCode2) * 31) + this.f11579o) * 31) + this.f11580p) * 31) + this.f11581q) * 31) + this.f11582r) * 31;
-            String str4 = this.f11584t;
+            int i14 = (((((((((i13 + hashCode2) * 31) + this.f11719o) * 31) + this.f11720p) * 31) + this.f11721q) * 31) + this.f11722r) * 31;
+            String str4 = this.f11724t;
             if (str4 == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = str4.hashCode();
             }
             int i15 = (i14 + hashCode3) * 31;
-            Metadata metadata = this.f11585u;
+            Metadata metadata = this.f11725u;
             if (metadata == null) {
                 hashCode4 = 0;
             } else {
                 hashCode4 = metadata.hashCode();
             }
             int i16 = (i15 + hashCode4) * 31;
-            String str5 = this.f11586v;
+            String str5 = this.f11726v;
             if (str5 == null) {
                 hashCode5 = 0;
             } else {
                 hashCode5 = str5.hashCode();
             }
             int i17 = (i16 + hashCode5) * 31;
-            String str6 = this.f11587w;
+            String str6 = this.f11727w;
             if (str6 != null) {
                 i11 = str6.hashCode();
             }
-            this.S = ((((((((((((((((((((((((((((((((((i17 + i11) * 31) + this.f11588x) * 31) + ((int) this.A)) * 31) + this.B) * 31) + this.C) * 31) + Float.floatToIntBits(this.D)) * 31) + this.E) * 31) + Float.floatToIntBits(this.F)) * 31) + this.H) * 31) + this.J) * 31) + this.K) * 31) + this.L) * 31) + this.M) * 31) + this.N) * 31) + this.O) * 31) + this.P) * 31) + this.Q) * 31) + this.R;
+            this.S = ((((((((((((((((((((((((((((((((((i17 + i11) * 31) + this.f11728x) * 31) + ((int) this.A)) * 31) + this.B) * 31) + this.C) * 31) + Float.floatToIntBits(this.D)) * 31) + this.E) * 31) + Float.floatToIntBits(this.F)) * 31) + this.H) * 31) + this.J) * 31) + this.K) * 31) + this.L) * 31) + this.M) * 31) + this.N) * 31) + this.O) * 31) + this.P) * 31) + this.Q) * 31) + this.R;
         }
         return this.S;
     }
@@ -776,80 +776,80 @@ public final class Format implements g {
         if (this == format) {
             return this;
         }
-        int k10 = ne.c0.k(this.f11587w);
-        String str2 = format.f11576d;
-        String str3 = format.f11577e;
+        int k10 = oe.c0.k(this.f11727w);
+        String str2 = format.f11716d;
+        String str3 = format.f11717e;
         if (str3 == null) {
-            str3 = this.f11577e;
+            str3 = this.f11717e;
         }
-        String str4 = this.f11578i;
-        if ((k10 == 3 || k10 == 1) && (str = format.f11578i) != null) {
+        String str4 = this.f11718i;
+        if ((k10 == 3 || k10 == 1) && (str = format.f11718i) != null) {
             str4 = str;
         }
-        int i10 = this.f11581q;
+        int i10 = this.f11721q;
         if (i10 == -1) {
-            i10 = format.f11581q;
+            i10 = format.f11721q;
         }
-        int i11 = this.f11582r;
+        int i11 = this.f11722r;
         if (i11 == -1) {
-            i11 = format.f11582r;
+            i11 = format.f11722r;
         }
-        String str5 = this.f11584t;
+        String str5 = this.f11724t;
         if (str5 == null) {
-            String M = ne.w0.M(format.f11584t, k10);
-            if (ne.w0.f1(M).length == 1) {
+            String M = oe.w0.M(format.f11724t, k10);
+            if (oe.w0.f1(M).length == 1) {
                 str5 = M;
             }
         }
-        Metadata metadata = this.f11585u;
+        Metadata metadata = this.f11725u;
         if (metadata == null) {
-            b10 = format.f11585u;
+            b10 = format.f11725u;
         } else {
-            b10 = metadata.b(format.f11585u);
+            b10 = metadata.b(format.f11725u);
         }
         float f10 = this.D;
         if (f10 == -1.0f && k10 == 2) {
             f10 = format.D;
         }
-        int i12 = this.f11579o | format.f11579o;
-        return b().U(str2).W(str3).X(str4).i0(i12).e0(this.f11580p | format.f11580p).I(i10).b0(i11).K(str5).Z(b10).O(rc.m.l(format.f11590z, this.f11590z)).R(f10).G();
+        int i12 = this.f11719o | format.f11719o;
+        return b().U(str2).W(str3).X(str4).i0(i12).e0(this.f11720p | format.f11720p).I(i10).b0(i11).K(str5).Z(b10).O(sc.m.h(format.f11730z, this.f11730z)).R(f10).G();
     }
 
     public String toString() {
-        return "Format(" + this.f11576d + ", " + this.f11577e + ", " + this.f11586v + ", " + this.f11587w + ", " + this.f11584t + ", " + this.f11583s + ", " + this.f11578i + ", [" + this.B + ", " + this.C + ", " + this.D + ", " + this.I + "], [" + this.J + ", " + this.K + "])";
+        return "Format(" + this.f11716d + ", " + this.f11717e + ", " + this.f11726v + ", " + this.f11727w + ", " + this.f11724t + ", " + this.f11723s + ", " + this.f11718i + ", [" + this.B + ", " + this.C + ", " + this.D + ", " + this.I + "], [" + this.J + ", " + this.K + "])";
     }
 
     private Format(b bVar) {
-        this.f11576d = bVar.f11591a;
-        this.f11577e = bVar.f11592b;
-        this.f11578i = ne.w0.M0(bVar.f11593c);
-        this.f11579o = bVar.f11594d;
-        this.f11580p = bVar.f11595e;
-        int i10 = bVar.f11596f;
-        this.f11581q = i10;
-        int i11 = bVar.f11597g;
-        this.f11582r = i11;
-        this.f11583s = i11 != -1 ? i11 : i10;
-        this.f11584t = bVar.f11598h;
-        this.f11585u = bVar.f11599i;
-        this.f11586v = bVar.f11600j;
-        this.f11587w = bVar.f11601k;
-        this.f11588x = bVar.f11602l;
-        this.f11589y = bVar.f11603m == null ? Collections.EMPTY_LIST : bVar.f11603m;
-        rc.m mVar = bVar.f11604n;
-        this.f11590z = mVar;
-        this.A = bVar.f11605o;
-        this.B = bVar.f11606p;
-        this.C = bVar.f11607q;
-        this.D = bVar.f11608r;
-        this.E = bVar.f11609s == -1 ? 0 : bVar.f11609s;
-        this.F = bVar.f11610t == -1.0f ? 1.0f : bVar.f11610t;
-        this.G = bVar.f11611u;
-        this.H = bVar.f11612v;
-        this.I = bVar.f11613w;
-        this.J = bVar.f11614x;
-        this.K = bVar.f11615y;
-        this.L = bVar.f11616z;
+        this.f11716d = bVar.f11731a;
+        this.f11717e = bVar.f11732b;
+        this.f11718i = oe.w0.M0(bVar.f11733c);
+        this.f11719o = bVar.f11734d;
+        this.f11720p = bVar.f11735e;
+        int i10 = bVar.f11736f;
+        this.f11721q = i10;
+        int i11 = bVar.f11737g;
+        this.f11722r = i11;
+        this.f11723s = i11 != -1 ? i11 : i10;
+        this.f11724t = bVar.f11738h;
+        this.f11725u = bVar.f11739i;
+        this.f11726v = bVar.f11740j;
+        this.f11727w = bVar.f11741k;
+        this.f11728x = bVar.f11742l;
+        this.f11729y = bVar.f11743m == null ? Collections.EMPTY_LIST : bVar.f11743m;
+        sc.m mVar = bVar.f11744n;
+        this.f11730z = mVar;
+        this.A = bVar.f11745o;
+        this.B = bVar.f11746p;
+        this.C = bVar.f11747q;
+        this.D = bVar.f11748r;
+        this.E = bVar.f11749s == -1 ? 0 : bVar.f11749s;
+        this.F = bVar.f11750t == -1.0f ? 1.0f : bVar.f11750t;
+        this.G = bVar.f11751u;
+        this.H = bVar.f11752v;
+        this.I = bVar.f11753w;
+        this.J = bVar.f11754x;
+        this.K = bVar.f11755y;
+        this.L = bVar.f11756z;
         this.M = bVar.A == -1 ? 0 : bVar.A;
         this.N = bVar.B != -1 ? bVar.B : 0;
         this.O = bVar.C;

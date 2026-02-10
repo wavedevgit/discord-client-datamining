@@ -108,4 +108,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.QuestPlacementType = var3;
     var2.QuestPlacementPlatform = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5283, 2, 5284, 5285]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5284, 2, 5285, 5286]);

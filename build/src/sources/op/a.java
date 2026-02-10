@@ -1,22 +1,144 @@
 package op;
 
-import java.util.List;
-import kotlin.Metadata;
-import kotlin.coroutines.Continuation;
-import okhttp3.MultipartBody;
-import org.jetbrains.annotations.NotNull;
-import vv.z;
-import xv.i;
-import xv.k;
-import xv.l;
-import xv.o;
-import xv.q;
-import xv.s;
-@Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001J8\u0010\t\u001a\u0006\u0012\u0002\b\u00030\b2\b\b\u0001\u0010\u0003\u001a\u00020\u00022\b\b\u0001\u0010\u0004\u001a\u00020\u00022\u000e\b\u0001\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005H§@¢\u0006\u0004\b\t\u0010\n¨\u0006\u000b"}, d2 = {"Lop/a;", "", "", "sessionToken", "inquiryId", "", "Lokhttp3/MultipartBody$b;", "body", "Lvv/z;", "a", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "selfie_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import androidx.camera.view.PreviewView;
+import androidx.constraintlayout.widget.Barrier;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import com.withpersona.sdk2.camera.camera2.Camera2PreviewView;
+import com.withpersona.sdk2.inquiry.selfie.view.OldSelfieOverlayView;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import np.w0;
+import np.x0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    @k({"Accept: multipart/form-data"})
-    @o("/api/internal/verify/v1/inquiries/{inquiryId}/transition")
-    @l
-    Object a(@i("Authorization") @NotNull String str, @s("inquiryId") @NotNull String str2, @q @NotNull List<MultipartBody.b> list, @NotNull Continuation<? super z<?>> continuation);
+public final class a implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final ConstraintLayout f42544a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final Button f42545b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final Camera2PreviewView f42546c;
+
+    /* renamed from: d  reason: collision with root package name */
+    public final View f42547d;
+
+    /* renamed from: e  reason: collision with root package name */
+    public final TextView f42548e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public final TextView f42549f;
+
+    /* renamed from: g  reason: collision with root package name */
+    public final ProgressBar f42550g;
+
+    /* renamed from: h  reason: collision with root package name */
+    public final Pi2NavigationBar f42551h;
+
+    /* renamed from: i  reason: collision with root package name */
+    public final Barrier f42552i;
+
+    /* renamed from: j  reason: collision with root package name */
+    public final FrameLayout f42553j;
+
+    /* renamed from: k  reason: collision with root package name */
+    public final PreviewView f42554k;
+
+    /* renamed from: l  reason: collision with root package name */
+    public final OldSelfieOverlayView f42555l;
+
+    /* renamed from: m  reason: collision with root package name */
+    public final TextView f42556m;
+
+    private a(ConstraintLayout constraintLayout, Button button, Camera2PreviewView camera2PreviewView, View view, TextView textView, TextView textView2, ProgressBar progressBar, Pi2NavigationBar pi2NavigationBar, Barrier barrier, FrameLayout frameLayout, PreviewView previewView, OldSelfieOverlayView oldSelfieOverlayView, TextView textView3) {
+        this.f42544a = constraintLayout;
+        this.f42545b = button;
+        this.f42546c = camera2PreviewView;
+        this.f42547d = view;
+        this.f42548e = textView;
+        this.f42549f = textView2;
+        this.f42550g = progressBar;
+        this.f42551h = pi2NavigationBar;
+        this.f42552i = barrier;
+        this.f42553j = frameLayout;
+        this.f42554k = previewView;
+        this.f42555l = oldSelfieOverlayView;
+        this.f42556m = textView3;
+    }
+
+    public static a a(View view) {
+        View a10;
+        int i10 = w0.f39530g;
+        Button button = (Button) e4.a.a(view, i10);
+        if (button != null) {
+            i10 = w0.f39531h;
+            Camera2PreviewView camera2PreviewView = (Camera2PreviewView) e4.a.a(view, i10);
+            if (camera2PreviewView != null && (a10 = e4.a.a(view, (i10 = w0.f39532i))) != null) {
+                i10 = w0.f39537n;
+                TextView textView = (TextView) e4.a.a(view, i10);
+                if (textView != null) {
+                    i10 = w0.f39543t;
+                    TextView textView2 = (TextView) e4.a.a(view, i10);
+                    if (textView2 != null) {
+                        i10 = w0.A;
+                        ProgressBar progressBar = (ProgressBar) e4.a.a(view, i10);
+                        if (progressBar != null) {
+                            i10 = w0.E;
+                            Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
+                            if (pi2NavigationBar != null) {
+                                i10 = w0.I;
+                                Barrier barrier = (Barrier) e4.a.a(view, i10);
+                                if (barrier != null) {
+                                    i10 = w0.J;
+                                    FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
+                                    if (frameLayout != null) {
+                                        i10 = w0.K;
+                                        PreviewView previewView = (PreviewView) e4.a.a(view, i10);
+                                        if (previewView != null) {
+                                            i10 = w0.T;
+                                            OldSelfieOverlayView oldSelfieOverlayView = (OldSelfieOverlayView) e4.a.a(view, i10);
+                                            if (oldSelfieOverlayView != null) {
+                                                i10 = w0.Y;
+                                                TextView textView3 = (TextView) e4.a.a(view, i10);
+                                                if (textView3 != null) {
+                                                    return new a((ConstraintLayout) view, button, camera2PreviewView, a10, textView, textView2, progressBar, pi2NavigationBar, barrier, frameLayout, previewView, oldSelfieOverlayView, textView3);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    }
+
+    public static a c(LayoutInflater layoutInflater) {
+        return d(layoutInflater, null, false);
+    }
+
+    public static a d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(x0.f39562a, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public ConstraintLayout getRoot() {
+        return this.f42544a;
+    }
 }

@@ -1,7 +1,7 @@
 package com.facebook.common.time;
 
-import o8.d;
-import v8.c;
+import p8.d;
+import w8.c;
 @d
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class AwakeTimeSinceBootClock implements c {
@@ -16,13 +16,13 @@ public class AwakeTimeSinceBootClock implements c {
         return INSTANCE;
     }
 
-    @Override // v8.c, v8.b
+    @Override // w8.c, w8.b
     @d
     public /* bridge */ /* synthetic */ long now() {
         return super.now();
     }
 
-    @Override // v8.c, v8.b
+    @Override // w8.c, w8.b
     @d
     public long nowNanos() {
         return System.nanoTime();

@@ -1,17 +1,26 @@
 package og;
 
-import java.util.HashMap;
-import java.util.Map;
-/* JADX INFO: Access modifiers changed from: package-private */
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class ic {
+final class ic implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f42178a = new HashMap();
+    static final ic f40959a = new ic();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static boolean a(String str) {
-        jc.a();
-        return Boolean.parseBoolean("");
+    static {
+        c.b a10 = zi.c.a("detectionType");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+    }
+
+    private ic() {
+    }
+
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

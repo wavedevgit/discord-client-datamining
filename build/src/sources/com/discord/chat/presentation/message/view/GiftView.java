@@ -192,11 +192,11 @@ public final class GiftView extends CardView {
             i10 = 0;
         }
         ((GenericDraweeHierarchy) this.binding.splash.getHierarchy()).w(i10);
-        int l10 = r1.c.l(valid.getBackgroundColor(), fs.a.c(valid.getSplashOpacity() * ((float) SetSpanOperation.SPAN_MAX_PRIORITY)));
+        int l10 = r1.c.l(valid.getBackgroundColor(), gs.a.c(valid.getSplashOpacity() * ((float) SetSpanOperation.SPAN_MAX_PRIORITY)));
         SimpleDraweeView simpleDraweeView = this.binding.splash;
         ImageRequest fromUri = ImageRequest.fromUri(valid.getSplashUrl());
         if (fromUri != null) {
-            aVar = ((PipelineDraweeControllerBuilder) ((PipelineDraweeControllerBuilder) ((PipelineDraweeControllerBuilder) e9.d.g().E(ImageRequestBuilder.b(fromUri).J(new PostProcessor.Composite(PostProcessor.Grayscale.INSTANCE, new PostProcessor.Gradient(PostProcessor.Gradient.Direction.TopToBottom, l10, valid.getBackgroundColor(), 0.0f, 0.5f, 8, null)).create()).a())).B("splash-" + valid.getGiftCode() + "-" + valid.getSplashUrl())).b(this.binding.splash.getController())).build();
+            aVar = ((PipelineDraweeControllerBuilder) ((PipelineDraweeControllerBuilder) ((PipelineDraweeControllerBuilder) f9.d.g().E(ImageRequestBuilder.b(fromUri).J(new PostProcessor.Composite(PostProcessor.Grayscale.INSTANCE, new PostProcessor.Gradient(PostProcessor.Gradient.Direction.TopToBottom, l10, valid.getBackgroundColor(), 0.0f, 0.5f, 8, null)).create()).a())).B("splash-" + valid.getGiftCode() + "-" + valid.getSplashUrl())).b(this.binding.splash.getController())).build();
         } else {
             aVar = null;
         }
@@ -361,11 +361,11 @@ public final class GiftView extends CardView {
                 dCDButton.setEnabled(valid.getCanBeAccepted());
                 Intrinsics.checkNotNull(dCDButton);
             } else {
-                throw new qr.p();
+                throw new rr.p();
             }
             this.lastState = new Companion.State.Resolved(accessory.getItemId().longValue());
         } else {
-            throw new qr.p();
+            throw new rr.p();
         }
     }
 

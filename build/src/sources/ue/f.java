@@ -1,30 +1,35 @@
 package ue;
+
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class f {
+public final class f extends jf.a {
+    public static final Parcelable.Creator<f> CREATOR = new g();
 
-    /* renamed from: a  reason: collision with root package name */
-    protected Boolean f51471a;
+    /* renamed from: d  reason: collision with root package name */
+    private final String f51552d;
 
-    /* renamed from: b  reason: collision with root package name */
-    protected String f51472b;
+    /* renamed from: e  reason: collision with root package name */
+    private final int f51553e;
 
-    public f() {
-        this.f51471a = Boolean.FALSE;
+    public f(String str, int i10) {
+        this.f51552d = str;
+        this.f51553e = i10;
     }
 
-    public final f a(String str) {
-        this.f51472b = str;
-        return this;
+    public final int b() {
+        return this.f51553e;
     }
 
-    public f(g gVar) {
-        boolean z10;
-        String str;
-        this.f51471a = Boolean.FALSE;
-        g.b(gVar);
-        z10 = gVar.f51475e;
-        this.f51471a = Boolean.valueOf(z10);
-        str = gVar.f51476i;
-        this.f51472b = str;
+    public final String c() {
+        return this.f51552d;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i10) {
+        int a10 = jf.c.a(parcel);
+        jf.c.s(parcel, 1, this.f51552d, false);
+        jf.c.l(parcel, 2, this.f51553e);
+        jf.c.b(parcel, a10);
     }
 }

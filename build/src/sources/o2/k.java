@@ -29,97 +29,97 @@ import kotlin.text.StringsKt;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import qr.v;
-import ve.a;
-import wf.a0;
-import wf.j;
-import wf.m;
-import wf.o;
-import wf.q;
-import wf.r;
-import wf.t;
-import wf.u;
-import wf.w;
+import rr.v;
+import we.a;
+import xf.a0;
+import xf.j;
+import xf.m;
+import xf.o;
+import xf.q;
+import xf.r;
+import xf.t;
+import xf.u;
+import xf.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f41470a = new a(null);
+    public static final a f40200a = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f41471b = "clientDataJSON";
+    private static final String f40201b = "clientDataJSON";
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f41472c = "attestationObject";
+    private static final String f40202c = "attestationObject";
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f41473d = "authenticatorData";
+    private static final String f40203d = "authenticatorData";
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f41474e = "signature";
+    private static final String f40204e = "signature";
 
     /* renamed from: f  reason: collision with root package name */
-    private static final String f41475f = "userHandle";
+    private static final String f40205f = "userHandle";
 
     /* renamed from: g  reason: collision with root package name */
-    private static final String f41476g = "response";
+    private static final String f40206g = "response";
 
     /* renamed from: h  reason: collision with root package name */
-    private static final String f41477h = StackTraceHelper.ID_KEY;
+    private static final String f40207h = StackTraceHelper.ID_KEY;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f41478i = "rawId";
+    private static final String f40208i = "rawId";
 
     /* renamed from: j  reason: collision with root package name */
-    private static final String f41479j = "type";
+    private static final String f40209j = "type";
 
     /* renamed from: k  reason: collision with root package name */
-    private static final String f41480k = "rpId";
+    private static final String f40210k = "rpId";
 
     /* renamed from: l  reason: collision with root package name */
-    private static final String f41481l = "challenge";
+    private static final String f40211l = "challenge";
 
     /* renamed from: m  reason: collision with root package name */
-    private static final String f41482m = AppsFlyerProperties.APP_ID;
+    private static final String f40212m = AppsFlyerProperties.APP_ID;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final String f41483n = "thirdPartyPayment";
+    private static final String f40213n = "thirdPartyPayment";
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f41484o = "authenticatorSelection";
+    private static final String f40214o = "authenticatorSelection";
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f41485p = "requireResidentKey";
+    private static final String f40215p = "requireResidentKey";
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f41486q = "residentKey";
+    private static final String f40216q = "residentKey";
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String f41487r = "authenticatorAttachment";
+    private static final String f40217r = "authenticatorAttachment";
 
     /* renamed from: s  reason: collision with root package name */
-    private static final String f41488s = "timeout";
+    private static final String f40218s = "timeout";
 
     /* renamed from: t  reason: collision with root package name */
-    private static final String f41489t = "excludeCredentials";
+    private static final String f40219t = "excludeCredentials";
 
     /* renamed from: u  reason: collision with root package name */
-    private static final String f41490u = "transports";
+    private static final String f40220u = "transports";
 
     /* renamed from: v  reason: collision with root package name */
-    private static final String f41491v = "rp";
+    private static final String f40221v = "rp";
 
     /* renamed from: w  reason: collision with root package name */
-    private static final String f41492w = StackTraceHelper.NAME_KEY;
+    private static final String f40222w = StackTraceHelper.NAME_KEY;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final String f41493x = "icon";
+    private static final String f40223x = "icon";
 
     /* renamed from: y  reason: collision with root package name */
-    private static final String f41494y = "alg";
+    private static final String f40224y = "alg";
 
     /* renamed from: z  reason: collision with root package name */
-    private static final String f41495z = "user";
+    private static final String f40225z = "user";
     private static final String A = "displayName";
     private static final String B = "userVerificationMethod";
     private static final String C = "keyProtectionType";
@@ -168,19 +168,19 @@ public abstract class k {
         }
 
         public final String A() {
-            return k.f41488s;
+            return k.f40218s;
         }
 
         public final String B() {
-            return k.f41490u;
+            return k.f40220u;
         }
 
         public final String C() {
-            return k.f41479j;
+            return k.f40209j;
         }
 
         public final String D() {
-            return k.f41495z;
+            return k.f40225z;
         }
 
         public final LinkedHashMap E() {
@@ -188,7 +188,7 @@ public abstract class k {
         }
 
         public final void G(JSONObject json, r.a builder) {
-            wf.z zVar;
+            xf.z zVar;
             Intrinsics.checkNotNullParameter(json, "json");
             Intrinsics.checkNotNullParameter(builder, "builder");
             if (json.has(m())) {
@@ -198,7 +198,7 @@ public abstract class k {
                 String optString = jSONObject.optString(w(), "");
                 Intrinsics.checkNotNull(optString);
                 if (optString.length() > 0) {
-                    zVar = wf.z.a(optString);
+                    zVar = xf.z.a(optString);
                 } else {
                     zVar = null;
                 }
@@ -206,7 +206,7 @@ public abstract class k {
                 String optString2 = jSONObject.optString(l(), "");
                 Intrinsics.checkNotNull(optString2);
                 if (optString2.length() > 0) {
-                    aVar.b(wf.b.a(optString2));
+                    aVar.b(xf.b.a(optString2));
                 }
                 builder.e(aVar.a());
             }
@@ -221,7 +221,7 @@ public abstract class k {
                 String optString = jSONObject.optString(j(), "");
                 Intrinsics.checkNotNull(optString);
                 if (optString.length() > 0) {
-                    aVar.b(new wf.n(optString));
+                    aVar.b(new xf.n(optString));
                 }
                 if (jSONObject.optBoolean(z(), false)) {
                     aVar.c(new o(true));
@@ -275,7 +275,7 @@ public abstract class k {
                             } else {
                                 arrayList = null;
                             }
-                            arrayList2.add(new wf.s(string2, a10, arrayList));
+                            arrayList2.add(new xf.s(string2, a10, arrayList));
                         } else {
                             throw new JSONException("PublicKeyCredentialDescriptor id value is not found or unexpectedly empty");
                         }
@@ -292,7 +292,7 @@ public abstract class k {
             if (optString.length() != 0) {
                 str = optString;
             }
-            builder.b(wf.c.a(str));
+            builder.b(xf.c.a(str));
         }
 
         public final void K(JSONObject json, r.a builder) {
@@ -363,12 +363,12 @@ public abstract class k {
 
         public final h2.e M(q cred) {
             Intrinsics.checkNotNullParameter(cred, "cred");
-            wf.i h10 = cred.h();
+            xf.i h10 = cred.h();
             Intrinsics.checkNotNullExpressionValue(h10, "getResponse(...)");
-            if (!(h10 instanceof wf.h)) {
+            if (!(h10 instanceof xf.h)) {
                 return null;
             }
-            wf.h hVar = (wf.h) h10;
+            xf.h hVar = (xf.h) h10;
             m b10 = hVar.b();
             Intrinsics.checkNotNullExpressionValue(b10, "getErrorCode(...)");
             i2.e eVar = (i2.e) E().get(b10);
@@ -383,8 +383,8 @@ public abstract class k {
             }
         }
 
-        public final String N(ve.i cred) {
-            wf.i iVar;
+        public final String N(we.i cred) {
+            xf.i iVar;
             Intrinsics.checkNotNullParameter(cred, "cred");
             JSONObject jSONObject = new JSONObject();
             q l10 = cred.l();
@@ -394,8 +394,8 @@ public abstract class k {
                 iVar = null;
             }
             Intrinsics.checkNotNull(iVar);
-            if (!(iVar instanceof wf.h)) {
-                if (iVar instanceof wf.f) {
+            if (!(iVar instanceof xf.h)) {
+                if (iVar instanceof xf.f) {
                     try {
                         String j10 = l10.j();
                         Intrinsics.checkNotNullExpressionValue(j10, "toJson(...)");
@@ -409,7 +409,7 @@ public abstract class k {
                 Intrinsics.checkNotNullExpressionValue(jSONObject2, "toString(...)");
                 return jSONObject2;
             }
-            wf.h hVar = (wf.h) iVar;
+            xf.h hVar = (xf.h) iVar;
             m b10 = hVar.b();
             Intrinsics.checkNotNullExpressionValue(b10, "getErrorCode(...)");
             throw b(b10, hVar.d());
@@ -437,23 +437,23 @@ public abstract class k {
 
         public final boolean c(int i10) {
             try {
-                wf.k.a(i10);
+                xf.k.a(i10);
                 return true;
             } catch (Throwable unused) {
                 return false;
             }
         }
 
-        public final wf.r d(g2.f request, Context context) {
+        public final xf.r d(g2.f request, Context context) {
             Intrinsics.checkNotNullParameter(request, "request");
             Intrinsics.checkNotNullParameter(context, "context");
             if (F(context, 241217000L)) {
-                return new wf.r(request.g());
+                return new xf.r(request.g());
             }
             return e(new JSONObject(request.g()));
         }
 
-        public final wf.r e(JSONObject json) {
+        public final xf.r e(JSONObject json) {
             Intrinsics.checkNotNullParameter(json, "json");
             r.a aVar = new r.a();
             K(json, aVar);
@@ -462,14 +462,14 @@ public abstract class k {
             I(json, aVar);
             G(json, aVar);
             H(json, aVar);
-            wf.r a10 = aVar.a();
+            xf.r a10 = aVar.a();
             Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
             return a10;
         }
 
         public final a.c f(e0 option) {
             Intrinsics.checkNotNullParameter(option, "option");
-            a.c a10 = new a.c.C0692a().c(true).b(option.f()).a();
+            a.c a10 = new a.c.C0745a().c(true).b(option.f()).a();
             Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
             return a10;
         }
@@ -480,7 +480,7 @@ public abstract class k {
             String optString = jSONObject.optString(y(), "");
             Intrinsics.checkNotNull(optString);
             if (optString.length() != 0) {
-                a.d a10 = new a.d.C0693a().d(true).c(optString).b(h(jSONObject)).a();
+                a.d a10 = new a.d.C0746a().d(true).c(optString).b(h(jSONObject)).a();
                 Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
                 return a10;
             }
@@ -488,11 +488,11 @@ public abstract class k {
         }
 
         public final String i() {
-            return k.f41494y;
+            return k.f40224y;
         }
 
         public final String j() {
-            return k.f41482m;
+            return k.f40212m;
         }
 
         public final String k() {
@@ -500,15 +500,15 @@ public abstract class k {
         }
 
         public final String l() {
-            return k.f41487r;
+            return k.f40217r;
         }
 
         public final String m() {
-            return k.f41484o;
+            return k.f40214o;
         }
 
         public final String n() {
-            return k.f41481l;
+            return k.f40211l;
         }
 
         public final String o() {
@@ -516,7 +516,7 @@ public abstract class k {
         }
 
         public final String p() {
-            return k.f41489t;
+            return k.f40219t;
         }
 
         public final String q() {
@@ -524,15 +524,15 @@ public abstract class k {
         }
 
         public final String r() {
-            return k.f41493x;
+            return k.f40223x;
         }
 
         public final String s() {
-            return k.f41477h;
+            return k.f40207h;
         }
 
         public final String t() {
-            return k.f41492w;
+            return k.f40222w;
         }
 
         public final String u() {
@@ -540,23 +540,23 @@ public abstract class k {
         }
 
         public final String v() {
-            return k.f41485p;
+            return k.f40215p;
         }
 
         public final String w() {
-            return k.f41486q;
+            return k.f40216q;
         }
 
         public final String x() {
-            return k.f41491v;
+            return k.f40221v;
         }
 
         public final String y() {
-            return k.f41480k;
+            return k.f40210k;
         }
 
         public final String z() {
-            return k.f41483n;
+            return k.f40213n;
         }
 
         private a() {
@@ -568,7 +568,7 @@ public abstract class k {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f41496a = new b();
+        public static final b f40226a = new b();
 
         private b() {
         }

@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'op': 102,
         'w': 1280,
         'h': 720,
-        'nm': 'FrameEffect_02-5_Out',
+        'nm': 'FrameEffect_02-4_Out',
         'ddd': 0
     };
     var0 = {
@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'tc': ''
     };
     var1.meta = var0;
-    var6 = 3;
+    var5 = 3;
     var7 = 0;
     var0 = new Array(2);
     var2 = {
@@ -49,42 +49,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'bm': 0
     };
     var3 = {};
-    var5 = {
+    var6 = {
         'a': 0,
         'k': 100,
         'ix': 11
     };
-    var3.o = var5;
-    var5 = {
+    var3.o = var6;
+    var6 = {
         'a': 0,
         'k': 0,
         'ix': 10
     };
-    var3.r = var5;
-    var5 = {
+    var3.r = var6;
+    var6 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
     var8 = [19.875, 20.125, 0];
-    var5.k = var8;
-    var3.p = var5;
-    var5 = {
+    var6.k = var8;
+    var3.p = var6;
+    var6 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
     var8 = [17.25, 17.25, 0];
-    var5.k = var8;
-    var3.a = var5;
+    var6.k = var8;
+    var3.a = var6;
     var8 = {
         'a': 0,
         'k': null,
         'ix': 6
     };
-    var5 = [108.7, 108.7, 100];
-    var8.k = var5;
-    var5 = 6;
+    var6 = [108.7, 108.7, 100];
+    var8.k = var6;
+    var6 = 6;
     var3.s = var8;
     var4.ks = var3;
     var3 = new Array(1);
@@ -149,10 +149,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = new Array(2);
     var4[0] = var8;
     var8 = {};
-    var10 = 54;
-    var8.t = var10;
-    var9 = [342.4, 720, 0];
-    var8.s = var9;
+    var9 = 54;
+    var8.t = var9;
+    var10 = [342.4, 720, 0];
+    var8.s = var10;
     var4[1] = var8;
     var3.k = var4;
     var0.p = var3;
@@ -191,7 +191,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'h': 40,
         'ip': 0,
         'op': 55,
-        'st': 4294967272,
+        'st': 4294967281,
         'bm': 0
     };
     var3 = {};
@@ -212,60 +212,60 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var9 = {};
+    var12 = {};
     var8 = {
         'x': 0.575,
         'y': 1
     };
-    var9.i = var8;
+    var12.i = var8;
     var8 = {
         'x': 0.699,
         'y': 0
     };
-    var9.o = var8;
-    var9.t = var7;
+    var12.o = var8;
+    var8 = 9;
+    var12.t = var8;
     var8 = [465.988];
     var14 = -410;
     var8[1] = var14;
     var8[2] = var7;
-    var9.s = var8;
-    var12 = new Array(3);
+    var12.s = var8;
+    var10 = new Array(3);
     var8 = -138.328;
-    var12[0] = var8;
-    var12[1] = var7;
-    var12[2] = var7;
-    var9.to = var12;
-    var12 = [138.328, 0, 0];
-    var9.ti = var12;
-    var12 = new Array(2);
-    var12[0] = var9;
-    var13 = {};
-    var9 = 45;
-    var13.t = var9;
-    var15 = new Array(3);
+    var10[0] = var8;
+    var10[1] = var7;
+    var10[2] = var7;
+    var12.to = var10;
+    var10 = [138.328, 0, 0];
+    var12.ti = var10;
+    var10 = new Array(2);
+    var10[0] = var12;
+    var12 = {};
+    var12.t = var9;
+    var13 = new Array(3);
     var9 = -363.982;
-    var15[0] = var9;
-    var15[1] = var14;
-    var15[2] = var7;
-    var13.s = var15;
-    var12[1] = var13;
-    var4.k = var12;
+    var13[0] = var9;
+    var13[1] = var14;
+    var13[2] = var7;
+    var12.s = var13;
+    var10[1] = var12;
+    var4.k = var10;
     var3.p = var4;
     var4 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var12 = [20, 40, 0];
-    var4.k = var12;
+    var10 = [20, 40, 0];
+    var4.k = var10;
     var3.a = var4;
     var4 = {
         'a': 0,
         'k': null,
         'ix': 6
     };
-    var12 = [341.7, 341.7, 100];
-    var4.k = var12;
+    var10 = [341.7, 341.7, 100];
+    var4.k = var10;
     var3.s = var4;
     var2.ks = var3;
     var0[1] = var2;
@@ -283,7 +283,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'h': 40,
         'ip': 0,
         'op': 55,
-        'st': 4294967275,
+        'st': 4294967278,
         'bm': 0
     };
     var3 = {};
@@ -304,41 +304,41 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var12 = {};
-    var13 = {
+    var10 = {};
+    var12 = {
         'x': 0.575,
         'y': 1
     };
-    var12.i = var13;
-    var13 = {
+    var10.i = var12;
+    var12 = {
         'x': 0.699,
         'y': 0
     };
-    var12.o = var13;
-    var12.t = var6;
+    var10.o = var12;
+    var10.t = var6;
     var6 = [465.988];
     var13 = -272;
     var6[1] = var13;
     var6[2] = var7;
-    var12.s = var6;
+    var10.s = var6;
     var6 = new Array(3);
     var6[0] = var8;
     var6[1] = var7;
     var6[2] = var7;
-    var12.to = var6;
+    var10.to = var6;
     var6 = [138.328, 0, 0];
-    var12.ti = var6;
+    var10.ti = var6;
     var6 = new Array(2);
-    var6[0] = var12;
-    var12 = {};
-    var15 = 48;
-    var12.t = var15;
-    var15 = new Array(3);
-    var15[0] = var9;
-    var15[1] = var13;
-    var15[2] = var7;
-    var12.s = var15;
-    var6[1] = var12;
+    var6[0] = var10;
+    var10 = {};
+    var12 = 51;
+    var10.t = var12;
+    var12 = new Array(3);
+    var12[0] = var9;
+    var12[1] = var13;
+    var12[2] = var7;
+    var10.s = var12;
+    var6[1] = var10;
     var4.k = var6;
     var3.p = var4;
     var4 = {
@@ -373,7 +373,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'h': 40,
         'ip': 0,
         'op': 55,
-        'st': 4294967278,
+        'st': 4294967275,
         'bm': 0
     };
     var3 = {};
@@ -395,16 +395,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ix': 2
     };
     var6 = {};
-    var12 = {
+    var10 = {
         'x': 0.575,
         'y': 1
     };
-    var6.i = var12;
-    var12 = {
+    var6.i = var10;
+    var10 = {
         'x': 0.699,
         'y': 0
     };
-    var6.o = var12;
+    var6.o = var10;
     var6.t = var5;
     var5 = [465.988];
     var12 = -136;
@@ -421,13 +421,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = new Array(2);
     var5[0] = var6;
     var6 = {};
-    var15 = 51;
-    var6.t = var15;
-    var15 = new Array(3);
-    var15[0] = var9;
-    var15[1] = var12;
-    var15[2] = var7;
-    var6.s = var15;
+    var10 = 48;
+    var6.t = var10;
+    var10 = new Array(3);
+    var10[0] = var9;
+    var10[1] = var12;
+    var10[2] = var7;
+    var6.s = var10;
     var5[1] = var6;
     var4.k = var5;
     var3.p = var4;
@@ -463,7 +463,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'h': 40,
         'ip': 0,
         'op': 55,
-        'st': 4294967281,
+        'st': 4294967272,
         'bm': 0
     };
     var3 = {};
@@ -495,8 +495,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'y': 0
     };
     var6.o = var5;
-    var5 = 9;
-    var6.t = var5;
+    var6.t = var7;
     var5 = [465.988, 0, 0];
     var6.s = var5;
     var5 = new Array(3);
@@ -509,6 +508,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = new Array(2);
     var5[0] = var6;
     var6 = {};
+    var10 = 45;
     var6.t = var10;
     var10 = new Array(3);
     var10[0] = var9;

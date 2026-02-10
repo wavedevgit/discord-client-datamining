@@ -13,18 +13,18 @@ public abstract class p0 {
     public static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Fragment f4783d;
+        final /* synthetic */ Fragment f4480d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Fragment fragment) {
             super(0);
-            this.f4783d = fragment;
+            this.f4480d = fragment;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final ViewModelProvider.Factory invoke() {
-            return this.f4783d.getDefaultViewModelProviderFactory();
+            return this.f4480d.getDefaultViewModelProviderFactory();
         }
     }
 

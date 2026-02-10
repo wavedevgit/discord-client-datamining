@@ -6,14 +6,14 @@ import android.os.Message;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.f;
 import com.google.android.exoplayer2.w1;
-import gd.b;
-import gd.c;
-import gd.d;
+import hd.b;
+import hd.c;
+import hd.d;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
-import lc.x;
-import ne.w0;
+import mc.x;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a extends f implements Handler.Callback {
     private final b A;
@@ -21,7 +21,7 @@ public final class a extends f implements Handler.Callback {
     private final Handler C;
     private final c D;
     private final boolean E;
-    private gd.a F;
+    private hd.a F;
     private boolean G;
     private boolean H;
     private long I;
@@ -29,18 +29,18 @@ public final class a extends f implements Handler.Callback {
     private long K;
 
     public a(d dVar, Looper looper) {
-        this(dVar, looper, b.f24976a);
+        this(dVar, looper, b.f25887a);
     }
 
     private void a0(Metadata metadata, List list) {
         for (int i10 = 0; i10 < metadata.e(); i10++) {
             Format y10 = metadata.d(i10).y();
             if (y10 != null && this.A.a(y10)) {
-                gd.a b10 = this.A.b(y10);
-                byte[] bArr = (byte[]) ne.a.e(metadata.d(i10).j2());
+                hd.a b10 = this.A.b(y10);
+                byte[] bArr = (byte[]) oe.a.e(metadata.d(i10).j2());
                 this.D.h();
                 this.D.u(bArr.length);
-                ((ByteBuffer) w0.j(this.D.f46657i)).put(bArr);
+                ((ByteBuffer) w0.j(this.D.f47775i)).put(bArr);
                 this.D.v();
                 Metadata a10 = b10.a(this.D);
                 if (a10 != null) {
@@ -60,11 +60,11 @@ public final class a extends f implements Handler.Callback {
         } else {
             z10 = false;
         }
-        ne.a.g(z10);
+        oe.a.g(z10);
         if (this.K != -9223372036854775807L) {
             z11 = true;
         }
-        ne.a.g(z11);
+        oe.a.g(z11);
         return j10 - this.K;
     }
 
@@ -84,7 +84,7 @@ public final class a extends f implements Handler.Callback {
     private boolean e0(long j10) {
         boolean z10;
         Metadata metadata = this.J;
-        if (metadata != null && (this.E || metadata.f12622e <= b0(j10))) {
+        if (metadata != null && (this.E || metadata.f12762e <= b0(j10))) {
             c0(this.J);
             this.J = null;
             z10 = true;
@@ -108,18 +108,18 @@ public final class a extends f implements Handler.Callback {
                     return;
                 }
                 c cVar = this.D;
-                cVar.f24977t = this.I;
+                cVar.f25888t = this.I;
                 cVar.v();
-                Metadata a10 = ((gd.a) w0.j(this.F)).a(this.D);
+                Metadata a10 = ((hd.a) w0.j(this.F)).a(this.D);
                 if (a10 != null) {
                     ArrayList arrayList = new ArrayList(a10.e());
                     a0(a10, arrayList);
                     if (!arrayList.isEmpty()) {
-                        this.J = new Metadata(b0(this.D.f46659p), arrayList);
+                        this.J = new Metadata(b0(this.D.f47777p), arrayList);
                     }
                 }
             } else if (X == -5) {
-                this.I = ((Format) ne.a.e(J.f36077b)).A;
+                this.I = ((Format) oe.a.e(J.f36907b)).A;
             }
         }
     }
@@ -143,7 +143,7 @@ public final class a extends f implements Handler.Callback {
         this.F = this.A.b(formatArr[0]);
         Metadata metadata = this.J;
         if (metadata != null) {
-            this.J = metadata.c((metadata.f12622e + this.K) - j11);
+            this.J = metadata.c((metadata.f12762e + this.K) - j11);
         }
         this.K = j11;
     }
@@ -201,9 +201,9 @@ public final class a extends f implements Handler.Callback {
 
     public a(d dVar, Looper looper, b bVar, boolean z10) {
         super(5);
-        this.B = (d) ne.a.e(dVar);
+        this.B = (d) oe.a.e(dVar);
         this.C = looper == null ? null : w0.v(looper, this);
-        this.A = (b) ne.a.e(bVar);
+        this.A = (b) oe.a.e(bVar);
         this.E = z10;
         this.D = new c();
         this.K = -9223372036854775807L;

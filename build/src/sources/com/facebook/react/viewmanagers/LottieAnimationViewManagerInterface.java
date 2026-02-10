@@ -24,6 +24,8 @@ public interface LottieAnimationViewManagerInterface<T extends View> extends Vie
 
     void setEnableMergePathsAndroidForKitKatAndAbove(T t10, boolean z10);
 
+    void setEnableSafeModeAndroid(T t10, boolean z10);
+
     void setHardwareAccelerationAndroid(T t10, boolean z10);
 
     void setImageAssetsFolder(T t10, String str);

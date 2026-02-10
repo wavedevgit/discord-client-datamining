@@ -1,10 +1,10 @@
 package com.facebook.common.references;
 
 import com.facebook.common.references.CloseableReference;
-import o8.j;
+import p8.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class a extends CloseableReference {
-    private a(s8.d dVar, CloseableReference.c cVar, Throwable th2) {
+    private a(t8.d dVar, CloseableReference.c cVar, Throwable th2) {
         super(dVar, cVar, th2);
     }
 
@@ -12,22 +12,22 @@ public class a extends CloseableReference {
         String name;
         try {
             synchronized (this) {
-                if (this.f9841d) {
+                if (this.f9981d) {
                     super.finalize();
                     return;
                 }
-                Object f10 = this.f9842e.f();
+                Object f10 = this.f9982e.f();
                 Integer valueOf = Integer.valueOf(System.identityHashCode(this));
-                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f9842e));
+                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f9982e));
                 if (f10 == null) {
                     name = null;
                 } else {
                     name = f10.getClass().getName();
                 }
-                p8.a.L("DefaultCloseableReference", "Finalized without closing: %x %x (type = %s)", valueOf, valueOf2, name);
-                CloseableReference.c cVar = this.f9843i;
+                q8.a.L("DefaultCloseableReference", "Finalized without closing: %x %x (type = %s)", valueOf, valueOf2, name);
+                CloseableReference.c cVar = this.f9983i;
                 if (cVar != null) {
-                    cVar.b(this.f9842e, this.f9844o);
+                    cVar.a(this.f9982e, this.f9984o);
                 }
                 close();
                 super.finalize();
@@ -42,10 +42,10 @@ public class a extends CloseableReference {
     /* renamed from: k */
     public CloseableReference clone() {
         Throwable th2;
-        j.i(F0());
-        s8.d dVar = this.f9842e;
-        CloseableReference.c cVar = this.f9843i;
-        if (this.f9844o != null) {
+        j.i(D0());
+        t8.d dVar = this.f9982e;
+        CloseableReference.c cVar = this.f9983i;
+        if (this.f9984o != null) {
             th2 = new Throwable();
         } else {
             th2 = null;
@@ -54,7 +54,7 @@ public class a extends CloseableReference {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public a(Object obj, s8.c cVar, CloseableReference.c cVar2, Throwable th2) {
+    public a(Object obj, t8.c cVar, CloseableReference.c cVar2, Throwable th2) {
         super(obj, cVar, cVar2, th2, true);
     }
 }

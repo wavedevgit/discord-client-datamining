@@ -14,22 +14,22 @@ import org.jetbrains.annotations.NotNull;
 public final class VerifyDeviceIntegrityRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19238a;
+    private final m.b f19378a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19239b;
+    private final com.squareup.moshi.h f19379b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile Constructor f19240c;
+    private volatile Constructor f19380c;
 
     public VerifyDeviceIntegrityRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19238a = a10;
+        this.f19378a = a10;
         com.squareup.moshi.h f10 = moshi.f(VerifyDeviceIntegrityRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19239b = f10;
+        this.f19379b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -40,25 +40,25 @@ public final class VerifyDeviceIntegrityRequestJsonAdapter extends com.squareup.
         VerifyDeviceIntegrityRequest.Meta meta = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19238a);
+            int J = reader.J(this.f19378a);
             if (J != -1) {
                 if (J == 0) {
-                    meta = (VerifyDeviceIntegrityRequest.Meta) this.f19239b.fromJson(reader);
+                    meta = (VerifyDeviceIntegrityRequest.Meta) this.f19379b.fromJson(reader);
                     i10 = -2;
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
         if (i10 == -2) {
             return new VerifyDeviceIntegrityRequest(meta);
         }
-        Constructor constructor = this.f19240c;
+        Constructor constructor = this.f19380c;
         if (constructor == null) {
-            constructor = VerifyDeviceIntegrityRequest.class.getDeclaredConstructor(VerifyDeviceIntegrityRequest.Meta.class, Integer.TYPE, an.c.f1164c);
-            this.f19240c = constructor;
+            constructor = VerifyDeviceIntegrityRequest.class.getDeclaredConstructor(VerifyDeviceIntegrityRequest.Meta.class, Integer.TYPE, bn.c.f7152c);
+            this.f19380c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         Object newInstance = constructor.newInstance(meta, Integer.valueOf(i10), null);
@@ -73,7 +73,7 @@ public final class VerifyDeviceIntegrityRequestJsonAdapter extends com.squareup.
         if (verifyDeviceIntegrityRequest != null) {
             writer.k();
             writer.J("meta");
-            this.f19239b.toJson(writer, verifyDeviceIntegrityRequest.a());
+            this.f19379b.toJson(writer, verifyDeviceIntegrityRequest.a());
             writer.s();
             return;
         }

@@ -9,21 +9,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var0 = function arg0() {
-        _fun109002: for (var _fun109002_ip = 0;;) switch (_fun109002_ip) {
+        _fun108982: for (var _fun108982_ip = 0;;) switch (_fun108982_ip) {
             case 0:
                 var2 = arg0;
                 var0 = _closure1_slot5;
                 var0 = var0.RED;
                 if (!(var0 !== var2)) {
-                    _fun109002_ip = 104;
-                    continue _fun109002
+                    _fun108982_ip = 104;
+                    continue _fun108982
                 }
             case 20:
                 var0 = _closure1_slot5;
                 var0 = var0.YELLOW;
                 if (!(var0 !== var2)) {
-                    _fun109002_ip = 38;
-                    continue _fun109002
+                    _fun108982_ip = 38;
+                    continue _fun108982
                 }
             case 34:
                 var0 = undefined;
@@ -66,21 +66,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var0;
     var0 = function arg0() {
-        _fun109003: for (var _fun109003_ip = 0;;) switch (_fun109003_ip) {
+        _fun108983: for (var _fun108983_ip = 0;;) switch (_fun108983_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot5;
                 var1 = var1.RED;
                 if (!(var1 !== var2)) {
-                    _fun109003_ip = 73;
-                    continue _fun109003
+                    _fun108983_ip = 73;
+                    continue _fun108983
                 }
             case 20:
                 var1 = _closure1_slot5;
                 var1 = var1.YELLOW;
                 if (!(var1 !== var2)) {
-                    _fun109003_ip = 38;
-                    continue _fun109003
+                    _fun108983_ip = 38;
+                    continue _fun108983
                 }
             case 34:
                 var1 = undefined;

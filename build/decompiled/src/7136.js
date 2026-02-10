@@ -1,45 +1,76 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
+    var1 = exports;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var3.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var3 = dependencyMap;
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = require;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var3 = var3.useRef;
-    var _closure1_slot0 = var3;
-    var3 = {};
-    var _closure1_slot1 = var3;
-    var1 = function arg0() {
-        _fun58324: for (var _fun58324_ip = 0;;) switch (_fun58324_ip) {
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1() {
+        _fun58328: for (var _fun58328_ip = 0;;) switch (_fun58328_ip) {
             case 0:
-                var0 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = undefined;
-                var0 = var0.bind(var2)(var3);
-                var1 = var0.current;
-                if (!(var1 === var3)) {
-                    _fun58324_ip = 40;
-                    continue _fun58324
+                var4 = arg0;
+                var3 = arg1;
+                var1 = var4.length;
+                var0 = var3.length;
+                if (!(var1 === var0)) {
+                    _fun58328_ip = 105;
+                    continue _fun58328
                 }
-            case 27:
-                var1 = arg0;
-                var1 = var1.bind(var2)();
-                var0.current = var1;
-            case 40:
-                var0 = var0.current;
+            case 20:
+                var0 = var3.length;
+                var2 = 0;
+                if (!(var2 < var0)) {
+                    _fun58328_ip = 101;
+                    continue _fun58328
+                }
+            case 31:
+                var0 = var4.length;
+                var0 = var2 < var0;
+                var1 = global;
+                var2 = 0;
+                if (!var0) {
+                    _fun58328_ip = 101;
+                    continue _fun58328
+                }
+            case 47:
+                var7 = var1.Object;
+                var6 = var7.is;
+                var5 = var4[var2];
+                var0 = var3[var2];
+                var0 = var6.bind(var7)(var5, var0);
+                if (var0) {
+                    _fun58328_ip = 80;
+                    continue _fun58328
+                }
+            case 76:
+                var0 = false;
+                return var0;
+            case 80:
+                var2 = var2 + 1;
+                var0 = var3.length;
+                if (!(var2 < var0)) {
+                    _fun58328_ip = 101;
+                    continue _fun58328
+                }
+            case 92:
+                var0 = var4.length;
+                if (var2 < var0) {
+                    _fun58328_ip = 47;
+                    continue _fun58328
+                }
+            case 101:
+                var0 = true;
+                return var0;
+            case 105:
+                var0 = false;
                 return var0;
         }
     };
-    var2.default = var1;
+    var1.default = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

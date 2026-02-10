@@ -1,48 +1,68 @@
 package kt;
 
-import ht.k;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import kotlin.Result;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+import kotlin.reflect.KType;
 import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import kotlinx.serialization.json.JsonNull;
-import lt.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class v implements KSerializer {
+final class v implements s1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final v f35574a = new v();
+    private final Function2 f35225a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f35575b = ht.j.e("kotlinx.serialization.json.JsonNull", k.b.f26536a, new SerialDescriptor[0], null, 8, null);
+    private final ConcurrentHashMap f35226b;
 
-    private v() {
+    public v(Function2 compute) {
+        Intrinsics.checkNotNullParameter(compute, "compute");
+        this.f35225a = compute;
+        this.f35226b = new ConcurrentHashMap();
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public JsonNull deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        p.g(decoder);
-        if (!decoder.D()) {
-            decoder.j();
-            return JsonNull.INSTANCE;
+    @Override // kt.s1
+    public Object a(KClass key, List types) {
+        ConcurrentHashMap concurrentHashMap;
+        Object b10;
+        Object putIfAbsent;
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(types, "types");
+        ConcurrentHashMap concurrentHashMap2 = this.f35226b;
+        Class b11 = es.a.b(key);
+        Object obj = concurrentHashMap2.get(b11);
+        if (obj == null && (putIfAbsent = concurrentHashMap2.putIfAbsent(b11, (obj = new r1()))) != null) {
+            obj = putIfAbsent;
         }
-        throw new c0("Expected 'null' literal");
-    }
-
-    @Override // ft.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, JsonNull value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        p.h(encoder);
-        encoder.n();
-    }
-
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f35575b;
+        r1 r1Var = (r1) obj;
+        List<KType> list = types;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (KType kType : list) {
+            arrayList.add(new r0(kType));
+        }
+        concurrentHashMap = r1Var.f35210a;
+        Object obj2 = concurrentHashMap.get(arrayList);
+        if (obj2 == null) {
+            try {
+                Result.a aVar = Result.f31762e;
+                b10 = Result.b((KSerializer) this.f35225a.invoke(key, types));
+            } catch (Throwable th2) {
+                Result.a aVar2 = Result.f31762e;
+                b10 = Result.b(kotlin.c.a(th2));
+            }
+            Result a10 = Result.a(b10);
+            Object putIfAbsent2 = concurrentHashMap.putIfAbsent(arrayList, a10);
+            if (putIfAbsent2 == null) {
+                obj2 = a10;
+            } else {
+                obj2 = putIfAbsent2;
+            }
+        }
+        Intrinsics.checkNotNullExpressionValue(obj2, "getOrPut(...)");
+        return ((Result) obj2).j();
     }
 }

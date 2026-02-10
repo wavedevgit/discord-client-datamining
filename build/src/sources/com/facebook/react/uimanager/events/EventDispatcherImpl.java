@@ -90,9 +90,9 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
 
         @Override // java.lang.Runnable
         public void run() {
-            qb.a.c(0L, "DispatchEventsRunnable");
+            rb.a.c(0L, "DispatchEventsRunnable");
             try {
-                qb.a.f(0L, "ScheduleDispatchFrameCallback", EventDispatcherImpl.this.hasDispatchScheduledCount.getAndIncrement());
+                rb.a.f(0L, "ScheduleDispatchFrameCallback", EventDispatcherImpl.this.hasDispatchScheduledCount.getAndIncrement());
                 EventDispatcherImpl.this.hasDispatchScheduled = false;
                 Object obj = EventDispatcherImpl.this.eventsToDispatchLock;
                 EventDispatcherImpl eventDispatcherImpl = EventDispatcherImpl.this;
@@ -105,7 +105,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
                         for (int i11 = 0; i11 < i10; i11++) {
                             Event event = eventDispatcherImpl.eventsToDispatch[i11];
                             if (event != null) {
-                                qb.a.f(0L, event.getEventName(), event.getUniqueID());
+                                rb.a.f(0L, event.getEventName(), event.getUniqueID());
                                 event.dispatchModern(eventDispatcherImpl.reactEventEmitter);
                                 event.dispose();
                             }
@@ -113,7 +113,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
                         eventDispatcherImpl.clearEventsToDispatch();
                         eventDispatcherImpl.eventCookieToLastEventIdx.clear();
                     }
-                    Unit unit = Unit.f32056a;
+                    Unit unit = Unit.f31765a;
                 }
                 Iterator it = EventDispatcherImpl.this.postEventDispatchListeners.iterator();
                 Intrinsics.checkNotNullExpressionValue(it, "iterator(...)");
@@ -121,7 +121,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
                     ((BatchEventDispatchedListener) it.next()).onBatchEventDispatched();
                 }
             } finally {
-                qb.a.i(0L);
+                rb.a.i(0L);
             }
         }
     }
@@ -144,16 +144,16 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
             } else {
                 post();
             }
-            qb.a.c(0L, "ScheduleDispatchFrameCallback");
+            rb.a.c(0L, "ScheduleDispatchFrameCallback");
             try {
                 EventDispatcherImpl.this.moveStagedEventsToDispatchQueue();
                 if (!EventDispatcherImpl.this.hasDispatchScheduled) {
                     EventDispatcherImpl.this.hasDispatchScheduled = true;
-                    qb.a.l(0L, "ScheduleDispatchFrameCallback", EventDispatcherImpl.this.hasDispatchScheduledCount.get());
+                    rb.a.l(0L, "ScheduleDispatchFrameCallback", EventDispatcherImpl.this.hasDispatchScheduledCount.get());
                     EventDispatcherImpl.this.reactContext.runOnJSQueueThread(EventDispatcherImpl.this.dispatchEventsRunnable);
                 }
             } finally {
-                qb.a.i(0L);
+                rb.a.i(0L);
             }
         }
 
@@ -308,7 +308,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
                         }
                     }
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             }
             this.eventStaging.clear();
         }
@@ -348,8 +348,8 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
             }
             synchronized (this.eventsStagingLock) {
                 this.eventStaging.add(event);
-                qb.a.l(0L, event.getEventName(), event.getUniqueID());
-                Unit unit = Unit.f32056a;
+                rb.a.l(0L, event.getEventName(), event.getUniqueID());
+                Unit unit = Unit.f31765a;
             }
             maybePostFrameCallbackFromNonUI();
             return;
@@ -358,7 +358,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
     }
 
     @Override // com.facebook.react.uimanager.events.EventDispatcher
-    @qr.c
+    @rr.c
     public void onCatalystInstanceDestroyed() {
         UiThreadUtil.runOnUiThread(new Runnable() { // from class: com.facebook.react.uimanager.events.a
             @Override // java.lang.Runnable

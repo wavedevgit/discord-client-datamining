@@ -3,55 +3,55 @@ package q1;
 final class n {
 
     /* renamed from: k  reason: collision with root package name */
-    static final n f46425k = k(b.f46391c, (float) ((b.h(50.0f) * 63.66197723675813d) / 100.0d), 50.0f, 2.0f, false);
+    static final n f45180k = k(b.f45146c, (float) ((b.h(50.0f) * 63.66197723675813d) / 100.0d), 50.0f, 2.0f, false);
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f46426a;
+    private final float f45181a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f46427b;
+    private final float f45182b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f46428c;
+    private final float f45183c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f46429d;
+    private final float f45184d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f46430e;
+    private final float f45185e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f46431f;
+    private final float f45186f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float[] f46432g;
+    private final float[] f45187g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f46433h;
+    private final float f45188h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f46434i;
+    private final float f45189i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final float f46435j;
+    private final float f45190j;
 
     private n(float f10, float f11, float f12, float f13, float f14, float f15, float[] fArr, float f16, float f17, float f18) {
-        this.f46431f = f10;
-        this.f46426a = f11;
-        this.f46427b = f12;
-        this.f46428c = f13;
-        this.f46429d = f14;
-        this.f46430e = f15;
-        this.f46432g = fArr;
-        this.f46433h = f16;
-        this.f46434i = f17;
-        this.f46435j = f18;
+        this.f45186f = f10;
+        this.f45181a = f11;
+        this.f45182b = f12;
+        this.f45183c = f13;
+        this.f45184d = f14;
+        this.f45185e = f15;
+        this.f45187g = fArr;
+        this.f45188h = f16;
+        this.f45189i = f17;
+        this.f45190j = f18;
     }
 
     static n k(float[] fArr, float f10, float f11, float f12, boolean z10) {
         float d10;
         float exp;
-        float[][] fArr2 = b.f46389a;
+        float[][] fArr2 = b.f45144a;
         float f13 = fArr[0];
         float[] fArr3 = fArr2[0];
         float f14 = fArr[1];
@@ -99,51 +99,51 @@ final class n {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float a() {
-        return this.f46426a;
+        return this.f45181a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float b() {
-        return this.f46429d;
+        return this.f45184d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float c() {
-        return this.f46433h;
+        return this.f45188h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float d() {
-        return this.f46434i;
+        return this.f45189i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float e() {
-        return this.f46431f;
+        return this.f45186f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float f() {
-        return this.f46427b;
+        return this.f45182b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float g() {
-        return this.f46430e;
+        return this.f45185e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float h() {
-        return this.f46428c;
+        return this.f45183c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float[] i() {
-        return this.f46432g;
+        return this.f45187g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float j() {
-        return this.f46435j;
+        return this.f45190j;
     }
 }

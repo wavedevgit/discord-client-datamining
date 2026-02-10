@@ -14,19 +14,19 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class g extends b implements w1 {
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28850i;
+    private String f29050i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f28851o;
+    private int f29051o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f28852p;
+    private int f29052p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f28853q;
+    private Map f29053q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f28854r;
+    private Map f29054r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -60,31 +60,31 @@ public final class g extends b implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        Integer j12 = e3Var.j1();
-                        if (j12 != null) {
-                            i10 = j12.intValue();
+                        Integer g12 = e3Var.g1();
+                        if (g12 != null) {
+                            i10 = g12.intValue();
                         }
-                        gVar.f28851o = i10;
+                        gVar.f29051o = i10;
                         break;
                     case 1:
-                        String q12 = e3Var.q1();
-                        if (q12 == null) {
-                            q12 = "";
+                        String m12 = e3Var.m1();
+                        if (m12 == null) {
+                            m12 = "";
                         }
-                        gVar.f28850i = q12;
+                        gVar.f29050i = m12;
                         break;
                     case 2:
-                        Integer j13 = e3Var.j1();
-                        if (j13 != null) {
-                            i10 = j13.intValue();
+                        Integer g13 = e3Var.g1();
+                        if (g13 != null) {
+                            i10 = g13.intValue();
                         }
-                        gVar.f28852p = i10;
+                        gVar.f29052p = i10;
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.u1(iLogger, concurrentHashMap, o02);
+                        e3Var.p1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -107,7 +107,7 @@ public final class g extends b implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.u1(iLogger, hashMap, o02);
+                        e3Var.p1(iLogger, hashMap, o02);
                     }
                 } else {
                     c(gVar, e3Var, iLogger);
@@ -121,18 +121,18 @@ public final class g extends b implements w1 {
 
     public g() {
         super(c.Meta);
-        this.f28850i = "";
+        this.f29050i = "";
     }
 
     private void j(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("href").f(this.f28850i);
-        f3Var.e("height").b(this.f28851o);
-        f3Var.e("width").b(this.f28852p);
-        Map map = this.f28853q;
+        f3Var.e("href").f(this.f29050i);
+        f3Var.e("height").b(this.f29051o);
+        f3Var.e("width").b(this.f29052p);
+        Map map = this.f29053q;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28853q.get(str);
+                Object obj = this.f29053q.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -149,7 +149,7 @@ public final class g extends b implements w1 {
             return false;
         }
         g gVar = (g) obj;
-        if (this.f28851o == gVar.f28851o && this.f28852p == gVar.f28852p && y.a(this.f28850i, gVar.f28850i)) {
+        if (this.f29051o == gVar.f29051o && this.f29052p == gVar.f29052p && y.a(this.f29050i, gVar.f29050i)) {
             return true;
         }
         return false;
@@ -157,29 +157,29 @@ public final class g extends b implements w1 {
 
     @Override // io.sentry.rrweb.b
     public int hashCode() {
-        return y.b(Integer.valueOf(super.hashCode()), this.f28850i, Integer.valueOf(this.f28851o), Integer.valueOf(this.f28852p));
+        return y.b(Integer.valueOf(super.hashCode()), this.f29050i, Integer.valueOf(this.f29051o), Integer.valueOf(this.f29052p));
     }
 
     public void k(Map map) {
-        this.f28854r = map;
+        this.f29054r = map;
     }
 
     public void l(int i10) {
-        this.f28851o = i10;
+        this.f29051o = i10;
     }
 
     public void m(Map map) {
-        this.f28853q = map;
+        this.f29053q = map;
     }
 
     public void n(int i10) {
-        this.f28852p = i10;
+        this.f29052p = i10;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        new b.C0406b().a(this, f3Var, iLogger);
+        new b.C0432b().a(this, f3Var, iLogger);
         f3Var.e("data");
         j(f3Var, iLogger);
         f3Var.D();

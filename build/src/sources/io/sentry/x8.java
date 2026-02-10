@@ -8,19 +8,19 @@ import java.util.Map;
 public final class x8 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.protocol.x f29141d;
+    private final io.sentry.protocol.x f29341d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29142e;
+    private String f29342e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29143i;
+    private String f29343i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f29144o;
+    private String f29344o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f29145p;
+    private Map f29345p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -65,13 +65,13 @@ public final class x8 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        str3 = e3Var.q1();
+                        str3 = e3Var.m1();
                         break;
                     case 1:
-                        str = e3Var.q1();
+                        str = e3Var.m1();
                         break;
                     case 2:
-                        str2 = e3Var.q1();
+                        str2 = e3Var.m1();
                         break;
                     case 3:
                         xVar = new x.a().a(e3Var, iLogger);
@@ -80,7 +80,7 @@ public final class x8 implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.u1(iLogger, hashMap, o02);
+                        e3Var.p1(iLogger, hashMap, o02);
                         break;
                 }
             }
@@ -97,40 +97,40 @@ public final class x8 implements w1 {
     }
 
     public x8(io.sentry.protocol.x xVar, String str, String str2, String str3) {
-        this.f29141d = xVar;
-        this.f29142e = str;
-        this.f29143i = str2;
-        this.f29144o = str3;
+        this.f29341d = xVar;
+        this.f29342e = str;
+        this.f29343i = str2;
+        this.f29344o = str3;
     }
 
     public void a(Map map) {
-        this.f29145p = map;
+        this.f29345p = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
         f3Var.e("event_id");
-        this.f29141d.serialize(f3Var, iLogger);
-        if (this.f29142e != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29142e);
+        this.f29341d.serialize(f3Var, iLogger);
+        if (this.f29342e != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29342e);
         }
-        if (this.f29143i != null) {
-            f3Var.e("email").f(this.f29143i);
+        if (this.f29343i != null) {
+            f3Var.e("email").f(this.f29343i);
         }
-        if (this.f29144o != null) {
-            f3Var.e("comments").f(this.f29144o);
+        if (this.f29344o != null) {
+            f3Var.e("comments").f(this.f29344o);
         }
-        Map map = this.f29145p;
+        Map map = this.f29345p;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29145p.get(str));
+                f3Var.e(str).j(iLogger, this.f29345p.get(str));
             }
         }
         f3Var.D();
     }
 
     public String toString() {
-        return "UserFeedback{eventId=" + this.f29141d + ", name='" + this.f29142e + "', email='" + this.f29143i + "', comments='" + this.f29144o + "'}";
+        return "UserFeedback{eventId=" + this.f29341d + ", name='" + this.f29342e + "', email='" + this.f29343i + "', comments='" + this.f29344o + "'}";
     }
 }

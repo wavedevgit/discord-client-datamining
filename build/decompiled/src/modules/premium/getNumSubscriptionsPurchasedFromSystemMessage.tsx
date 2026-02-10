@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/premium/getNumSubscriptionsPurchasedFromSystemMessage.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun56172: for (var _fun56172_ip = 0;;) switch (_fun56172_ip) {
+        _fun56175: for (var _fun56175_ip = 0;;) switch (_fun56175_ip) {
             case 0:
                 var0 = global;
                 var3 = var0.Number;
@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 1;
                 var0 = var3;
                 if (var2) {
-                    _fun56172_ip = 55;
-                    continue _fun56172
+                    _fun56175_ip = 55;
+                    continue _fun56175
                 }
             case 43:
                 var2 = 0;
                 var0 = var3;
                 if (!(var2 !== var1)) {
-                    _fun56172_ip = 55;
-                    continue _fun56172
+                    _fun56175_ip = 55;
+                    continue _fun56175
                 }
             case 52:
                 var0 = var1;

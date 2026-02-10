@@ -1,35 +1,45 @@
 package y5;
+
+import android.util.Log;
+import java.util.HashSet;
+import java.util.Set;
+import l5.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class c {
+public class c implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f55050a;
+    private static final Set f55507a = new HashSet();
 
-    /* renamed from: b  reason: collision with root package name */
-    private o5.a f55051b;
-
-    /* renamed from: c  reason: collision with root package name */
-    protected Object f55052c;
-
-    public c() {
-        this.f55050a = new b();
-        this.f55052c = null;
+    @Override // l5.z
+    public void a(String str) {
+        d(str, null);
     }
 
-    public Object a(b bVar) {
-        return this.f55052c;
+    @Override // l5.z
+    public void b(String str, Throwable th2) {
+        if (l5.e.f35678a) {
+            Log.d("LOTTIE", str, th2);
+        }
     }
 
-    public final Object b(float f10, float f11, Object obj, Object obj2, float f12, float f13, float f14) {
-        return a(this.f55050a.h(f10, f11, obj, obj2, f12, f13, f14));
+    @Override // l5.z
+    public void c(String str) {
+        e(str, null);
     }
 
-    public final void c(o5.a aVar) {
-        this.f55051b = aVar;
+    @Override // l5.z
+    public void d(String str, Throwable th2) {
+        Set set = f55507a;
+        if (set.contains(str)) {
+            return;
+        }
+        Log.w("LOTTIE", str, th2);
+        set.add(str);
     }
 
-    public c(Object obj) {
-        this.f55050a = new b();
-        this.f55052c = obj;
+    public void e(String str, Throwable th2) {
+        if (l5.e.f35678a) {
+            Log.d("LOTTIE", str, th2);
+        }
     }
 }

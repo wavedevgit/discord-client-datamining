@@ -11,16 +11,16 @@ import java.util.ArrayList;
 public final class a extends FragmentTransaction implements FragmentManager.o {
 
     /* renamed from: t  reason: collision with root package name */
-    final FragmentManager f4622t;
+    final FragmentManager f4319t;
 
     /* renamed from: u  reason: collision with root package name */
-    boolean f4623u;
+    boolean f4320u;
 
     /* renamed from: v  reason: collision with root package name */
-    int f4624v;
+    int f4321v;
 
     /* renamed from: w  reason: collision with root package name */
-    boolean f4625w;
+    boolean f4322w;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: Illegal instructions before constructor call */
@@ -43,10 +43,10 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
         L18:
             r2.<init>(r0, r1)
             r0 = -1
-            r2.f4624v = r0
+            r2.f4321v = r0
             r0 = 0
-            r2.f4625w = r0
-            r2.f4622t = r3
+            r2.f4322w = r0
+            r2.f4319t = r3
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: androidx.fragment.app.a.<init>(androidx.fragment.app.FragmentManager):void");
@@ -54,54 +54,54 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void A() {
-        for (int size = this.f4590c.size() - 1; size >= 0; size--) {
-            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4590c.get(size);
-            Fragment fragment = aVar.f4608b;
+        for (int size = this.f4287c.size() - 1; size >= 0; size--) {
+            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4287c.get(size);
+            Fragment fragment = aVar.f4305b;
             if (fragment != null) {
-                fragment.mBeingSaved = this.f4625w;
+                fragment.mBeingSaved = this.f4322w;
                 fragment.setPopDirection(true);
-                fragment.setNextTransition(FragmentManager.r1(this.f4595h));
-                fragment.setSharedElementNames(this.f4604q, this.f4603p);
+                fragment.setNextTransition(FragmentManager.r1(this.f4292h));
+                fragment.setSharedElementNames(this.f4301q, this.f4300p);
             }
-            switch (aVar.f4607a) {
+            switch (aVar.f4304a) {
                 case 1:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.u1(fragment, true);
-                    this.f4622t.m1(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.u1(fragment, true);
+                    this.f4319t.m1(fragment);
                     break;
                 case 2:
                 default:
-                    throw new IllegalArgumentException("Unknown cmd: " + aVar.f4607a);
+                    throw new IllegalArgumentException("Unknown cmd: " + aVar.f4304a);
                 case 3:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.l(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.l(fragment);
                     break;
                 case 4:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.A1(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.A1(fragment);
                     break;
                 case 5:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.u1(fragment, true);
-                    this.f4622t.L0(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.u1(fragment, true);
+                    this.f4319t.L0(fragment);
                     break;
                 case 6:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.q(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.q(fragment);
                     break;
                 case 7:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.u1(fragment, true);
-                    this.f4622t.B(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.u1(fragment, true);
+                    this.f4319t.B(fragment);
                     break;
                 case 8:
-                    this.f4622t.y1(null);
+                    this.f4319t.y1(null);
                     break;
                 case 9:
-                    this.f4622t.y1(fragment);
+                    this.f4319t.y1(fragment);
                     break;
                 case 10:
-                    this.f4622t.x1(fragment, aVar.f4614h);
+                    this.f4319t.x1(fragment, aVar.f4311h);
                     break;
             }
         }
@@ -111,31 +111,31 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
     public Fragment B(ArrayList arrayList, Fragment fragment) {
         Fragment fragment2 = fragment;
         int i10 = 0;
-        while (i10 < this.f4590c.size()) {
-            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4590c.get(i10);
-            int i11 = aVar.f4607a;
+        while (i10 < this.f4287c.size()) {
+            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4287c.get(i10);
+            int i11 = aVar.f4304a;
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3 && i11 != 6) {
                         if (i11 != 7) {
                             if (i11 == 8) {
-                                this.f4590c.add(i10, new FragmentTransaction.a(9, fragment2, true));
-                                aVar.f4609c = true;
+                                this.f4287c.add(i10, new FragmentTransaction.a(9, fragment2, true));
+                                aVar.f4306c = true;
                                 i10++;
-                                fragment2 = aVar.f4608b;
+                                fragment2 = aVar.f4305b;
                             }
                         }
                     } else {
-                        arrayList.remove(aVar.f4608b);
-                        Fragment fragment3 = aVar.f4608b;
+                        arrayList.remove(aVar.f4305b);
+                        Fragment fragment3 = aVar.f4305b;
                         if (fragment3 == fragment2) {
-                            this.f4590c.add(i10, new FragmentTransaction.a(9, fragment3));
+                            this.f4287c.add(i10, new FragmentTransaction.a(9, fragment3));
                             i10++;
                             fragment2 = null;
                         }
                     }
                 } else {
-                    Fragment fragment4 = aVar.f4608b;
+                    Fragment fragment4 = aVar.f4305b;
                     int i12 = fragment4.mContainerId;
                     boolean z10 = false;
                     for (int size = arrayList.size() - 1; size >= 0; size--) {
@@ -145,56 +145,56 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
                                 z10 = true;
                             } else {
                                 if (fragment5 == fragment2) {
-                                    this.f4590c.add(i10, new FragmentTransaction.a(9, fragment5, true));
+                                    this.f4287c.add(i10, new FragmentTransaction.a(9, fragment5, true));
                                     i10++;
                                     fragment2 = null;
                                 }
                                 FragmentTransaction.a aVar2 = new FragmentTransaction.a(3, fragment5, true);
-                                aVar2.f4610d = aVar.f4610d;
-                                aVar2.f4612f = aVar.f4612f;
-                                aVar2.f4611e = aVar.f4611e;
-                                aVar2.f4613g = aVar.f4613g;
-                                this.f4590c.add(i10, aVar2);
+                                aVar2.f4307d = aVar.f4307d;
+                                aVar2.f4309f = aVar.f4309f;
+                                aVar2.f4308e = aVar.f4308e;
+                                aVar2.f4310g = aVar.f4310g;
+                                this.f4287c.add(i10, aVar2);
                                 arrayList.remove(fragment5);
                                 i10++;
                             }
                         }
                     }
                     if (z10) {
-                        this.f4590c.remove(i10);
+                        this.f4287c.remove(i10);
                         i10--;
                     } else {
-                        aVar.f4607a = 1;
-                        aVar.f4609c = true;
+                        aVar.f4304a = 1;
+                        aVar.f4306c = true;
                         arrayList.add(fragment4);
                     }
                 }
                 i10++;
             }
-            arrayList.add(aVar.f4608b);
+            arrayList.add(aVar.f4305b);
             i10++;
         }
         return fragment2;
     }
 
     public String C() {
-        return this.f4598k;
+        return this.f4295k;
     }
 
     public void D() {
-        if (this.f4606s != null) {
-            for (int i10 = 0; i10 < this.f4606s.size(); i10++) {
-                ((Runnable) this.f4606s.get(i10)).run();
+        if (this.f4303s != null) {
+            for (int i10 = 0; i10 < this.f4303s.size(); i10++) {
+                ((Runnable) this.f4303s.get(i10)).run();
             }
-            this.f4606s = null;
+            this.f4303s = null;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Fragment E(ArrayList arrayList, Fragment fragment) {
-        for (int size = this.f4590c.size() - 1; size >= 0; size--) {
-            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4590c.get(size);
-            int i10 = aVar.f4607a;
+        for (int size = this.f4287c.size() - 1; size >= 0; size--) {
+            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4287c.get(size);
+            int i10 = aVar.f4304a;
             if (i10 != 1) {
                 if (i10 != 3) {
                     switch (i10) {
@@ -202,16 +202,16 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
                             fragment = null;
                             break;
                         case 9:
-                            fragment = aVar.f4608b;
+                            fragment = aVar.f4305b;
                             break;
                         case 10:
-                            aVar.f4615i = aVar.f4614h;
+                            aVar.f4312i = aVar.f4311h;
                             break;
                     }
                 }
-                arrayList.add(aVar.f4608b);
+                arrayList.add(aVar.f4305b);
             }
-            arrayList.remove(aVar.f4608b);
+            arrayList.remove(aVar.f4305b);
         }
         return fragment;
     }
@@ -223,8 +223,8 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
         }
         arrayList.add(this);
         arrayList2.add(Boolean.FALSE);
-        if (this.f4596i) {
-            this.f4622t.k(this);
+        if (this.f4293i) {
+            this.f4319t.k(this);
             return true;
         }
         return true;
@@ -243,26 +243,26 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
     @Override // androidx.fragment.app.FragmentTransaction
     public void i() {
         k();
-        this.f4622t.g0(this, false);
+        this.f4319t.g0(this, false);
     }
 
     @Override // androidx.fragment.app.FragmentTransaction
     public void j() {
         k();
-        this.f4622t.g0(this, true);
+        this.f4319t.g0(this, true);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // androidx.fragment.app.FragmentTransaction
     public void l(int i10, Fragment fragment, String str, int i11) {
         super.l(i10, fragment, str, i11);
-        fragment.mFragmentManager = this.f4622t;
+        fragment.mFragmentManager = this.f4319t;
     }
 
     @Override // androidx.fragment.app.FragmentTransaction
     public FragmentTransaction m(Fragment fragment) {
         FragmentManager fragmentManager = fragment.mFragmentManager;
-        if (fragmentManager != null && fragmentManager != this.f4622t) {
+        if (fragmentManager != null && fragmentManager != this.f4319t) {
             throw new IllegalStateException("Cannot remove Fragment attached to a different FragmentManager. Fragment " + fragment.toString() + " is already attached to a FragmentManager.");
         }
         return super.m(fragment);
@@ -272,13 +272,13 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
         StringBuilder sb2 = new StringBuilder((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
         sb2.append("BackStackEntry{");
         sb2.append(Integer.toHexString(System.identityHashCode(this)));
-        if (this.f4624v >= 0) {
+        if (this.f4321v >= 0) {
             sb2.append(" #");
-            sb2.append(this.f4624v);
+            sb2.append(this.f4321v);
         }
-        if (this.f4598k != null) {
+        if (this.f4295k != null) {
             sb2.append(" ");
-            sb2.append(this.f4598k);
+            sb2.append(this.f4295k);
         }
         sb2.append("}");
         return sb2.toString();
@@ -287,17 +287,17 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void u(int i10) {
         FragmentTransaction.a aVar;
-        if (this.f4596i) {
+        if (this.f4293i) {
             if (FragmentManager.O0(2)) {
                 Log.v("FragmentManager", "Bump nesting in " + this + " by " + i10);
             }
-            int size = this.f4590c.size();
+            int size = this.f4287c.size();
             for (int i11 = 0; i11 < size; i11++) {
-                Fragment fragment = ((FragmentTransaction.a) this.f4590c.get(i11)).f4608b;
+                Fragment fragment = ((FragmentTransaction.a) this.f4287c.get(i11)).f4305b;
                 if (fragment != null) {
                     fragment.mBackStackNesting += i10;
                     if (FragmentManager.O0(2)) {
-                        Log.v("FragmentManager", "Bump nesting of " + aVar.f4608b + " to " + aVar.f4608b.mBackStackNesting);
+                        Log.v("FragmentManager", "Bump nesting of " + aVar.f4305b + " to " + aVar.f4305b.mBackStackNesting);
                     }
                 }
             }
@@ -306,22 +306,22 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void v() {
-        int size = this.f4590c.size() - 1;
+        int size = this.f4287c.size() - 1;
         while (size >= 0) {
-            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4590c.get(size);
-            if (aVar.f4609c) {
-                if (aVar.f4607a == 8) {
-                    aVar.f4609c = false;
-                    this.f4590c.remove(size - 1);
+            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4287c.get(size);
+            if (aVar.f4306c) {
+                if (aVar.f4304a == 8) {
+                    aVar.f4306c = false;
+                    this.f4287c.remove(size - 1);
                     size--;
                 } else {
-                    int i10 = aVar.f4608b.mContainerId;
-                    aVar.f4607a = 2;
-                    aVar.f4609c = false;
+                    int i10 = aVar.f4305b.mContainerId;
+                    aVar.f4304a = 2;
+                    aVar.f4306c = false;
                     for (int i11 = size - 1; i11 >= 0; i11--) {
-                        FragmentTransaction.a aVar2 = (FragmentTransaction.a) this.f4590c.get(i11);
-                        if (aVar2.f4609c && aVar2.f4608b.mContainerId == i10) {
-                            this.f4590c.remove(i11);
+                        FragmentTransaction.a aVar2 = (FragmentTransaction.a) this.f4287c.get(i11);
+                        if (aVar2.f4306c && aVar2.f4305b.mContainerId == i10) {
+                            this.f4287c.remove(i11);
                             size--;
                         }
                     }
@@ -333,23 +333,23 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int w(boolean z10, boolean z11) {
-        if (!this.f4623u) {
+        if (!this.f4320u) {
             if (FragmentManager.O0(2)) {
                 Log.v("FragmentManager", "Commit: " + this);
                 PrintWriter printWriter = new PrintWriter(new q0("FragmentManager"));
                 x("  ", printWriter);
                 printWriter.close();
             }
-            this.f4623u = true;
-            if (this.f4596i) {
-                this.f4624v = this.f4622t.o();
+            this.f4320u = true;
+            if (this.f4293i) {
+                this.f4321v = this.f4319t.o();
             } else {
-                this.f4624v = -1;
+                this.f4321v = -1;
             }
             if (z11) {
-                this.f4622t.d0(this, z10);
+                this.f4319t.d0(this, z10);
             }
-            return this.f4624v;
+            return this.f4321v;
         }
         throw new IllegalStateException("commit already called");
     }
@@ -363,52 +363,52 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
         if (z10) {
             printWriter.print(str);
             printWriter.print("mName=");
-            printWriter.print(this.f4598k);
+            printWriter.print(this.f4295k);
             printWriter.print(" mIndex=");
-            printWriter.print(this.f4624v);
+            printWriter.print(this.f4321v);
             printWriter.print(" mCommitted=");
-            printWriter.println(this.f4623u);
-            if (this.f4595h != 0) {
+            printWriter.println(this.f4320u);
+            if (this.f4292h != 0) {
                 printWriter.print(str);
                 printWriter.print("mTransition=#");
-                printWriter.print(Integer.toHexString(this.f4595h));
+                printWriter.print(Integer.toHexString(this.f4292h));
             }
-            if (this.f4591d != 0 || this.f4592e != 0) {
+            if (this.f4288d != 0 || this.f4289e != 0) {
                 printWriter.print(str);
                 printWriter.print("mEnterAnim=#");
-                printWriter.print(Integer.toHexString(this.f4591d));
+                printWriter.print(Integer.toHexString(this.f4288d));
                 printWriter.print(" mExitAnim=#");
-                printWriter.println(Integer.toHexString(this.f4592e));
+                printWriter.println(Integer.toHexString(this.f4289e));
             }
-            if (this.f4593f != 0 || this.f4594g != 0) {
+            if (this.f4290f != 0 || this.f4291g != 0) {
                 printWriter.print(str);
                 printWriter.print("mPopEnterAnim=#");
-                printWriter.print(Integer.toHexString(this.f4593f));
+                printWriter.print(Integer.toHexString(this.f4290f));
                 printWriter.print(" mPopExitAnim=#");
-                printWriter.println(Integer.toHexString(this.f4594g));
+                printWriter.println(Integer.toHexString(this.f4291g));
             }
-            if (this.f4599l != 0 || this.f4600m != null) {
+            if (this.f4296l != 0 || this.f4297m != null) {
                 printWriter.print(str);
                 printWriter.print("mBreadCrumbTitleRes=#");
-                printWriter.print(Integer.toHexString(this.f4599l));
+                printWriter.print(Integer.toHexString(this.f4296l));
                 printWriter.print(" mBreadCrumbTitleText=");
-                printWriter.println(this.f4600m);
+                printWriter.println(this.f4297m);
             }
-            if (this.f4601n != 0 || this.f4602o != null) {
+            if (this.f4298n != 0 || this.f4299o != null) {
                 printWriter.print(str);
                 printWriter.print("mBreadCrumbShortTitleRes=#");
-                printWriter.print(Integer.toHexString(this.f4601n));
+                printWriter.print(Integer.toHexString(this.f4298n));
                 printWriter.print(" mBreadCrumbShortTitleText=");
-                printWriter.println(this.f4602o);
+                printWriter.println(this.f4299o);
             }
         }
-        if (!this.f4590c.isEmpty()) {
+        if (!this.f4287c.isEmpty()) {
             printWriter.print(str);
             printWriter.println("Operations:");
-            int size = this.f4590c.size();
+            int size = this.f4287c.size();
             for (int i10 = 0; i10 < size; i10++) {
-                FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4590c.get(i10);
-                switch (aVar.f4607a) {
+                FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4287c.get(i10);
+                switch (aVar.f4304a) {
                     case 0:
                         str2 = "NULL";
                         break;
@@ -443,7 +443,7 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
                         str2 = "OP_SET_MAX_LIFECYCLE";
                         break;
                     default:
-                        str2 = "cmd=" + aVar.f4607a;
+                        str2 = "cmd=" + aVar.f4304a;
                         break;
                 }
                 printWriter.print(str);
@@ -452,21 +452,21 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
                 printWriter.print(": ");
                 printWriter.print(str2);
                 printWriter.print(" ");
-                printWriter.println(aVar.f4608b);
+                printWriter.println(aVar.f4305b);
                 if (z10) {
-                    if (aVar.f4610d != 0 || aVar.f4611e != 0) {
+                    if (aVar.f4307d != 0 || aVar.f4308e != 0) {
                         printWriter.print(str);
                         printWriter.print("enterAnim=#");
-                        printWriter.print(Integer.toHexString(aVar.f4610d));
+                        printWriter.print(Integer.toHexString(aVar.f4307d));
                         printWriter.print(" exitAnim=#");
-                        printWriter.println(Integer.toHexString(aVar.f4611e));
+                        printWriter.println(Integer.toHexString(aVar.f4308e));
                     }
-                    if (aVar.f4612f != 0 || aVar.f4613g != 0) {
+                    if (aVar.f4309f != 0 || aVar.f4310g != 0) {
                         printWriter.print(str);
                         printWriter.print("popEnterAnim=#");
-                        printWriter.print(Integer.toHexString(aVar.f4612f));
+                        printWriter.print(Integer.toHexString(aVar.f4309f));
                         printWriter.print(" popExitAnim=#");
-                        printWriter.println(Integer.toHexString(aVar.f4613g));
+                        printWriter.println(Integer.toHexString(aVar.f4310g));
                     }
                 }
             }
@@ -475,55 +475,55 @@ public final class a extends FragmentTransaction implements FragmentManager.o {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void z() {
-        int size = this.f4590c.size();
+        int size = this.f4287c.size();
         for (int i10 = 0; i10 < size; i10++) {
-            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4590c.get(i10);
-            Fragment fragment = aVar.f4608b;
+            FragmentTransaction.a aVar = (FragmentTransaction.a) this.f4287c.get(i10);
+            Fragment fragment = aVar.f4305b;
             if (fragment != null) {
-                fragment.mBeingSaved = this.f4625w;
+                fragment.mBeingSaved = this.f4322w;
                 fragment.setPopDirection(false);
-                fragment.setNextTransition(this.f4595h);
-                fragment.setSharedElementNames(this.f4603p, this.f4604q);
+                fragment.setNextTransition(this.f4292h);
+                fragment.setSharedElementNames(this.f4300p, this.f4301q);
             }
-            switch (aVar.f4607a) {
+            switch (aVar.f4304a) {
                 case 1:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.u1(fragment, false);
-                    this.f4622t.l(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.u1(fragment, false);
+                    this.f4319t.l(fragment);
                     break;
                 case 2:
                 default:
-                    throw new IllegalArgumentException("Unknown cmd: " + aVar.f4607a);
+                    throw new IllegalArgumentException("Unknown cmd: " + aVar.f4304a);
                 case 3:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.m1(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.m1(fragment);
                     break;
                 case 4:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.L0(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.L0(fragment);
                     break;
                 case 5:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.u1(fragment, false);
-                    this.f4622t.A1(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.u1(fragment, false);
+                    this.f4319t.A1(fragment);
                     break;
                 case 6:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.B(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.B(fragment);
                     break;
                 case 7:
-                    fragment.setAnimations(aVar.f4610d, aVar.f4611e, aVar.f4612f, aVar.f4613g);
-                    this.f4622t.u1(fragment, false);
-                    this.f4622t.q(fragment);
+                    fragment.setAnimations(aVar.f4307d, aVar.f4308e, aVar.f4309f, aVar.f4310g);
+                    this.f4319t.u1(fragment, false);
+                    this.f4319t.q(fragment);
                     break;
                 case 8:
-                    this.f4622t.y1(fragment);
+                    this.f4319t.y1(fragment);
                     break;
                 case 9:
-                    this.f4622t.y1(null);
+                    this.f4319t.y1(null);
                     break;
                 case 10:
-                    this.f4622t.x1(fragment, aVar.f4615i);
+                    this.f4319t.x1(fragment, aVar.f4312i);
                     break;
             }
         }

@@ -16,7 +16,7 @@ public class i0 extends h0 {
         SessionConfiguration sessionConfiguration = (SessionConfiguration) pVar.j();
         b2.e.g(sessionConfiguration);
         try {
-            this.f48383a.createCaptureSession(sessionConfiguration);
+            this.f47357a.createCaptureSession(sessionConfiguration);
         } catch (CameraAccessException e10) {
             throw f.e(e10);
         }

@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__packager_asset': true,
         'httpServerLocation': '/assets/modules/overlay/web/v3',
         'scales': null,
-        'hash': 'c6ffb47f3eed3036128ae4e17be6bb01',
+        'hash': '66d83060766d226639a5aac747783e22',
         'name': 'OverlayWidgets.compiled.messages',
         'type': 'jsona'
     };

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun70635: for (var _fun70635_ip = 0;;) switch (_fun70635_ip) {
+        _fun70500: for (var _fun70500_ip = 0;;) switch (_fun70500_ip) {
             case 0:
                 var17 = arg0;
                 var _closure2_slot0 = var17;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var20 == var23;
                 var21 = undefined;
                 if (var24) {
-                    _fun70635_ip = 494;
-                    continue _fun70635
+                    _fun70500_ip = 494;
+                    continue _fun70500
                 }
             case 489:
                 var21 = var23.label;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var20 != var21;
                 var20 = 'unset';
                 if (!var23) {
-                    _fun70635_ip = 508;
-                    continue _fun70635
+                    _fun70500_ip = 508;
+                    continue _fun70500
                 }
             case 505:
                 var20 = var21;
@@ -247,18 +247,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.BACKGROUND_MOD_SUBTLE;
     var8.borderColor = var10;
     var3.card = var8;
-    var10 = 8;
-    var8 = {
-        'flex': 1,
-        'marginTop': 8,
-        'alignItems': 'center'
-    };
-    var3.information = var8;
     var8 = {
         'marginTop': 4,
         'textAlign': 'center'
     };
     var3.cta = var8;
+    var10 = 8;
     var8 = {
         'marginTop': 8,
         'textAlign': 'center'
@@ -375,4 +369,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NotificationSettingsChannelMessageUnread = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8843, 3942, 1234, 4904, 8850, 8841, 3279, 8852, 1307, 8833, 8854, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8821, 3942, 1234, 4904, 8828, 8819, 3279, 8830, 1307, 8811, 8832, 2]);

@@ -10,10 +10,10 @@ import x4.k;
 public interface c extends h.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f52175a = b.f52177a;
+    public static final b f52096a = b.f52098a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final c f52176b = new a();
+    public static final c f52097b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements c {
@@ -25,7 +25,7 @@ public interface c extends h.b {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ b f52177a = new b();
+        static final /* synthetic */ b f52098a = new b();
 
         private b() {
         }
@@ -33,17 +33,17 @@ public interface c extends h.b {
 
     /* renamed from: v4.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public interface InterfaceC0684c {
+    public interface InterfaceC0721c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f52178a = a.f52180a;
+        public static final a f52099a = a.f52101a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final InterfaceC0684c f52179b = new InterfaceC0684c() { // from class: v4.d
-            @Override // v4.c.InterfaceC0684c
+        public static final InterfaceC0721c f52100b = new InterfaceC0721c() { // from class: v4.d
+            @Override // v4.c.InterfaceC0721c
             public final c a(g5.h hVar) {
                 c b10;
-                b10 = c.InterfaceC0684c.b(hVar);
+                b10 = c.InterfaceC0721c.b(hVar);
                 return b10;
             }
         };
@@ -53,7 +53,7 @@ public interface c extends h.b {
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            static final /* synthetic */ a f52180a = new a();
+            static final /* synthetic */ a f52101a = new a();
 
             private a() {
             }
@@ -61,7 +61,7 @@ public interface c extends h.b {
 
         /* JADX INFO: Access modifiers changed from: private */
         static c b(g5.h hVar) {
-            return c.f52176b;
+            return c.f52097b;
         }
 
         c a(g5.h hVar);

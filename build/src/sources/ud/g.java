@@ -1,44 +1,20 @@
 package ud;
 
-import java.util.Collections;
-import java.util.List;
+import com.google.android.exoplayer2.upstream.a;
+import java.util.Map;
+import vd.i;
+import vd.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class g {
-
-    /* renamed from: a  reason: collision with root package name */
-    public final String f51400a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final long f51401b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final List f51402c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public final List f51403d;
-
-    /* renamed from: e  reason: collision with root package name */
-    public final e f51404e;
-
-    public g(String str, long j10, List list, List list2) {
-        this(str, j10, list, list2, null);
+public abstract class g {
+    public static com.google.android.exoplayer2.upstream.a a(j jVar, String str, i iVar, int i10, Map map) {
+        return new a.b().i(iVar.b(str)).h(iVar.f52270a).g(iVar.f52271b).f(b(jVar, iVar)).b(i10).e(map).a();
     }
 
-    public int a(int i10) {
-        int size = this.f51402c.size();
-        for (int i11 = 0; i11 < size; i11++) {
-            if (((a) this.f51402c.get(i11)).f51356b == i10) {
-                return i11;
-            }
+    public static String b(j jVar, i iVar) {
+        String k10 = jVar.k();
+        if (k10 != null) {
+            return k10;
         }
-        return -1;
-    }
-
-    public g(String str, long j10, List list, List list2, e eVar) {
-        this.f51400a = str;
-        this.f51401b = j10;
-        this.f51402c = Collections.unmodifiableList(list);
-        this.f51403d = Collections.unmodifiableList(list2);
-        this.f51404e = eVar;
+        return iVar.b(((vd.b) jVar.f52276c.get(0)).f52221a).toString();
     }
 }

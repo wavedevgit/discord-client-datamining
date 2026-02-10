@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.steps.ui.network;
 
-import an.c;
+import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressAutocompleteResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19747a;
+    private final m.b f19887a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19748b;
+    private final h f19888b;
 
     public AddressAutocompleteResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19747a = a10;
+        this.f19887a = a10;
         h f10 = moshi.f(Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19748b = f10;
+        this.f19888b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,14 +36,14 @@ public final class AddressAutocompleteResponseJsonAdapter extends h {
         reader.u();
         Meta meta = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19747a);
+            int J = reader.J(this.f19887a);
             if (J != -1) {
-                if (J == 0 && (meta = (Meta) this.f19748b.fromJson(reader)) == null) {
+                if (J == 0 && (meta = (Meta) this.f19888b.fromJson(reader)) == null) {
                     throw c.x("meta", "meta", reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -60,7 +60,7 @@ public final class AddressAutocompleteResponseJsonAdapter extends h {
         if (addressAutocompleteResponse != null) {
             writer.k();
             writer.J("meta");
-            this.f19748b.toJson(writer, addressAutocompleteResponse.a());
+            this.f19888b.toJson(writer, addressAutocompleteResponse.a());
             writer.s();
             return;
         }

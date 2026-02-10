@@ -7,34 +7,33 @@ import android.os.Parcel;
 public abstract class a implements IInterface {
 
     /* renamed from: c  reason: collision with root package name */
-    private final IBinder f21511c;
+    private final IBinder f21645c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f21512d;
+    private final String f21646d = "com.google.android.gms.auth.api.phone.internal.ISmsRetrieverApiService";
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(IBinder iBinder, String str) {
-        this.f21511c = iBinder;
-        this.f21512d = str;
+        this.f21645c = iBinder;
     }
 
     @Override // android.os.IInterface
-    public IBinder asBinder() {
-        return this.f21511c;
+    public final IBinder asBinder() {
+        return this.f21645c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public Parcel e() {
+    public final Parcel e() {
         Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f21512d);
+        obtain.writeInterfaceToken(this.f21646d);
         return obtain;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public void f(int i10, Parcel parcel) {
+    public final void f(int i10, Parcel parcel) {
         Parcel obtain = Parcel.obtain();
         try {
-            this.f21511c.transact(i10, parcel, obtain, 0);
+            this.f21645c.transact(i10, parcel, obtain, 0);
             obtain.readException();
         } finally {
             parcel.recycle();

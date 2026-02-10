@@ -10,7 +10,7 @@ public interface y0 {
     void d(long j10);
 
     default io.sentry.protocol.x e(SentryEvent sentryEvent, IScope iScope) {
-        return m(sentryEvent, iScope, null);
+        return l(sentryEvent, iScope, null);
     }
 
     default boolean f() {
@@ -21,11 +21,7 @@ public interface y0 {
 
     void h(z6 z6Var);
 
-    io.sentry.transport.a0 i();
-
-    boolean isEnabled();
-
-    default io.sentry.protocol.x j(String str, SentryLevel sentryLevel, IScope iScope) {
+    default io.sentry.protocol.x i(String str, SentryLevel sentryLevel, IScope iScope) {
         SentryEvent sentryEvent = new SentryEvent();
         io.sentry.protocol.m mVar = new io.sentry.protocol.m();
         mVar.f(str);
@@ -34,9 +30,13 @@ public interface y0 {
         return e(sentryEvent, iScope);
     }
 
-    io.sentry.protocol.x k(l5 l5Var, Hint hint);
+    boolean isEnabled();
 
-    io.sentry.protocol.x l(m3 m3Var, IScope iScope);
+    io.sentry.transport.a0 j();
 
-    io.sentry.protocol.x m(SentryEvent sentryEvent, IScope iScope, Hint hint);
+    io.sentry.protocol.x k(m3 m3Var, IScope iScope);
+
+    io.sentry.protocol.x l(SentryEvent sentryEvent, IScope iScope, Hint hint);
+
+    io.sentry.protocol.x m(l5 l5Var, Hint hint);
 }

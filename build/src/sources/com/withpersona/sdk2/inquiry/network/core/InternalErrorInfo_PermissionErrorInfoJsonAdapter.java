@@ -35,17 +35,17 @@ public final class InternalErrorInfo_PermissionErrorInfoJsonAdapter extends h {
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
-                throw an.c.x("message", "message", mVar);
+                throw bn.c.x("message", "message", mVar);
             }
         }
         mVar.D();
         if (str != null) {
             return new InternalErrorInfo.PermissionErrorInfo(str);
         }
-        throw an.c.o("message", "message", mVar);
+        throw bn.c.o("message", "message", mVar);
     }
 
     @Override // com.squareup.moshi.h

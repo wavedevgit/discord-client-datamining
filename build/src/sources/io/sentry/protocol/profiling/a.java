@@ -17,19 +17,19 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f28629d = new ArrayList();
+    private List f28829d = new ArrayList();
 
     /* renamed from: e  reason: collision with root package name */
-    private List f28630e = new ArrayList();
+    private List f28830e = new ArrayList();
 
     /* renamed from: i  reason: collision with root package name */
-    private List f28631i = new ArrayList();
+    private List f28831i = new ArrayList();
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f28632o = new HashMap();
+    private Map f28832o = new HashMap();
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f28633p;
+    private Map f28833p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b implements m1 {
@@ -71,42 +71,42 @@ public final class a implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        List g22 = e3Var.g2(iLogger, new SentryStackFrame.a());
-                        if (g22 == null) {
+                        List f22 = e3Var.f2(iLogger, new SentryStackFrame.a());
+                        if (f22 == null) {
                             break;
                         } else {
-                            aVar.f28631i = g22;
+                            aVar.f28831i = f22;
                             break;
                         }
                     case 1:
-                        List list = (List) e3Var.G0(iLogger, new c());
+                        List list = (List) e3Var.E0(iLogger, new c());
                         if (list == null) {
                             break;
                         } else {
-                            aVar.f28630e = list;
+                            aVar.f28830e = list;
                             break;
                         }
                     case 2:
-                        List g23 = e3Var.g2(iLogger, new b.a());
-                        if (g23 == null) {
+                        List f23 = e3Var.f2(iLogger, new b.a());
+                        if (f23 == null) {
                             break;
                         } else {
-                            aVar.f28629d = g23;
+                            aVar.f28829d = f23;
                             break;
                         }
                     case 3:
-                        Map t12 = e3Var.t1(iLogger, new c.a());
-                        if (t12 == null) {
+                        Map o12 = e3Var.o1(iLogger, new c.a());
+                        if (o12 == null) {
                             break;
                         } else {
-                            aVar.f28632o = t12;
+                            aVar.f28832o = o12;
                             break;
                         }
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.u1(iLogger, concurrentHashMap, o02);
+                        e3Var.p1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -142,20 +142,20 @@ public final class a implements w1 {
     }
 
     public void e(Map map) {
-        this.f28633p = map;
+        this.f28833p = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("samples").j(iLogger, this.f28629d);
-        f3Var.e("stacks").j(iLogger, this.f28630e);
-        f3Var.e("frames").j(iLogger, this.f28631i);
-        f3Var.e("thread_metadata").j(iLogger, this.f28632o);
-        Map map = this.f28633p;
+        f3Var.e("samples").j(iLogger, this.f28829d);
+        f3Var.e("stacks").j(iLogger, this.f28830e);
+        f3Var.e("frames").j(iLogger, this.f28831i);
+        f3Var.e("thread_metadata").j(iLogger, this.f28832o);
+        Map map = this.f28833p;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28633p.get(str));
+                f3Var.e(str).j(iLogger, this.f28833p.get(str));
             }
         }
         f3Var.D();

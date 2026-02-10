@@ -65,20 +65,20 @@ public class RNFSManager extends ReactContextBaseJavaModule {
     class a extends j {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ File f17761b;
+        final /* synthetic */ File f17901b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Promise f17762c;
+        final /* synthetic */ Promise f17902c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f17763d;
+        final /* synthetic */ String f17903d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(File file, Promise promise, String str) {
             super();
-            this.f17761b = file;
-            this.f17762c = promise;
-            this.f17763d = str;
+            this.f17901b = file;
+            this.f17902c = promise;
+            this.f17903d = str;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -86,12 +86,12 @@ public class RNFSManager extends ReactContextBaseJavaModule {
         /* renamed from: b */
         public void onPostExecute(Exception exc) {
             if (exc == null) {
-                this.f17761b.delete();
-                this.f17762c.resolve(Boolean.TRUE);
+                this.f17901b.delete();
+                this.f17902c.resolve(Boolean.TRUE);
                 return;
             }
             exc.printStackTrace();
-            RNFSManager.this.reject(this.f17762c, this.f17763d, exc);
+            RNFSManager.this.reject(this.f17902c, this.f17903d, exc);
         }
     }
 
@@ -99,16 +99,16 @@ public class RNFSManager extends ReactContextBaseJavaModule {
     class b extends j {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Promise f17765b;
+        final /* synthetic */ Promise f17905b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ String f17766c;
+        final /* synthetic */ String f17906c;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Promise promise, String str) {
             super();
-            this.f17765b = promise;
-            this.f17766c = str;
+            this.f17905b = promise;
+            this.f17906c = str;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -116,11 +116,11 @@ public class RNFSManager extends ReactContextBaseJavaModule {
         /* renamed from: b */
         public void onPostExecute(Exception exc) {
             if (exc == null) {
-                this.f17765b.resolve(null);
+                this.f17905b.resolve(null);
                 return;
             }
             exc.printStackTrace();
-            RNFSManager.this.reject(this.f17765b, this.f17766c, exc);
+            RNFSManager.this.reject(this.f17905b, this.f17906c, exc);
         }
     }
 
@@ -128,52 +128,52 @@ public class RNFSManager extends ReactContextBaseJavaModule {
     class c implements a.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f17768a;
+        final /* synthetic */ int f17908a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Promise f17769b;
+        final /* synthetic */ Promise f17909b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ ReadableMap f17770c;
+        final /* synthetic */ ReadableMap f17910c;
 
         c(int i10, Promise promise, ReadableMap readableMap) {
-            this.f17768a = i10;
-            this.f17769b = promise;
-            this.f17770c = readableMap;
+            this.f17908a = i10;
+            this.f17909b = promise;
+            this.f17910c = readableMap;
         }
 
         @Override // com.rnfs.a.c
         public void a(com.rnfs.b bVar) {
-            if (bVar.f17799c != null) {
-                RNFSManager.this.reject(this.f17769b, this.f17770c.getString("toFile"), bVar.f17799c);
+            if (bVar.f17939c != null) {
+                RNFSManager.this.reject(this.f17909b, this.f17910c.getString("toFile"), bVar.f17939c);
                 return;
             }
             WritableMap createMap = Arguments.createMap();
-            createMap.putInt("jobId", this.f17768a);
-            createMap.putInt("statusCode", bVar.f17797a);
-            createMap.putDouble("bytesWritten", bVar.f17798b);
-            this.f17769b.resolve(createMap);
+            createMap.putInt("jobId", this.f17908a);
+            createMap.putInt("statusCode", bVar.f17937a);
+            createMap.putDouble("bytesWritten", bVar.f17938b);
+            this.f17909b.resolve(createMap);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class d implements a.InterfaceC0214a {
+    class d implements a.InterfaceC0241a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f17772a;
+        final /* synthetic */ int f17912a;
 
         d(int i10) {
-            this.f17772a = i10;
+            this.f17912a = i10;
         }
 
-        @Override // com.rnfs.a.InterfaceC0214a
+        @Override // com.rnfs.a.InterfaceC0241a
         public void a(int i10, long j10, Map map) {
             WritableMap createMap = Arguments.createMap();
             for (Map.Entry entry : map.entrySet()) {
                 createMap.putString((String) entry.getKey(), (String) entry.getValue());
             }
             WritableMap createMap2 = Arguments.createMap();
-            createMap2.putInt("jobId", this.f17772a);
+            createMap2.putInt("jobId", this.f17912a);
             createMap2.putInt("statusCode", i10);
             createMap2.putDouble("contentLength", j10);
             createMap2.putMap("headers", createMap);
@@ -186,16 +186,16 @@ public class RNFSManager extends ReactContextBaseJavaModule {
     class e implements a.b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f17774a;
+        final /* synthetic */ int f17914a;
 
         e(int i10) {
-            this.f17774a = i10;
+            this.f17914a = i10;
         }
 
         @Override // com.rnfs.a.b
         public void a(long j10, long j11) {
             WritableMap createMap = Arguments.createMap();
-            createMap.putInt("jobId", this.f17774a);
+            createMap.putInt("jobId", this.f17914a);
             createMap.putDouble("contentLength", j10);
             createMap.putDouble("bytesWritten", j11);
             RNFSManager rNFSManager = RNFSManager.this;
@@ -207,32 +207,32 @@ public class RNFSManager extends ReactContextBaseJavaModule {
     class f implements g.b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f17776a;
+        final /* synthetic */ int f17916a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Promise f17777b;
+        final /* synthetic */ Promise f17917b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ ReadableMap f17778c;
+        final /* synthetic */ ReadableMap f17918c;
 
         f(int i10, Promise promise, ReadableMap readableMap) {
-            this.f17776a = i10;
-            this.f17777b = promise;
-            this.f17778c = readableMap;
+            this.f17916a = i10;
+            this.f17917b = promise;
+            this.f17918c = readableMap;
         }
 
         @Override // com.rnfs.g.b
         public void a(com.rnfs.h hVar) {
-            if (hVar.f17816c != null) {
-                RNFSManager.this.reject(this.f17777b, this.f17778c.getString("toUrl"), hVar.f17816c);
+            if (hVar.f17956c != null) {
+                RNFSManager.this.reject(this.f17917b, this.f17918c.getString("toUrl"), hVar.f17956c);
                 return;
             }
             WritableMap createMap = Arguments.createMap();
-            createMap.putInt("jobId", this.f17776a);
-            createMap.putInt("statusCode", hVar.f17814a);
-            createMap.putMap("headers", hVar.f17815b);
-            createMap.putString("body", hVar.f17817d);
-            this.f17777b.resolve(createMap);
+            createMap.putInt("jobId", this.f17916a);
+            createMap.putInt("statusCode", hVar.f17954a);
+            createMap.putMap("headers", hVar.f17955b);
+            createMap.putString("body", hVar.f17957d);
+            this.f17917b.resolve(createMap);
         }
     }
 
@@ -240,16 +240,16 @@ public class RNFSManager extends ReactContextBaseJavaModule {
     class g implements g.a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f17780a;
+        final /* synthetic */ int f17920a;
 
         g(int i10) {
-            this.f17780a = i10;
+            this.f17920a = i10;
         }
 
         @Override // com.rnfs.g.a
         public void a() {
             WritableMap createMap = Arguments.createMap();
-            createMap.putInt("jobId", this.f17780a);
+            createMap.putInt("jobId", this.f17920a);
             RNFSManager rNFSManager = RNFSManager.this;
             rNFSManager.sendEvent(rNFSManager.getReactApplicationContext(), "UploadBegin", createMap);
         }
@@ -259,16 +259,16 @@ public class RNFSManager extends ReactContextBaseJavaModule {
     class h implements g.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f17782a;
+        final /* synthetic */ int f17922a;
 
         h(int i10) {
-            this.f17782a = i10;
+            this.f17922a = i10;
         }
 
         @Override // com.rnfs.g.c
         public void a(int i10, int i11) {
             WritableMap createMap = Arguments.createMap();
-            createMap.putInt("jobId", this.f17782a);
+            createMap.putInt("jobId", this.f17922a);
             createMap.putInt("totalBytesExpectedToSend", i10);
             createMap.putInt("totalBytesSent", i11);
             RNFSManager rNFSManager = RNFSManager.this;
@@ -280,10 +280,10 @@ public class RNFSManager extends ReactContextBaseJavaModule {
     class i implements MediaScannerConnection.MediaScannerConnectionClient {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Promise f17784a;
+        final /* synthetic */ Promise f17924a;
 
         i(Promise promise) {
-            this.f17784a = promise;
+            this.f17924a = promise;
         }
 
         @Override // android.media.MediaScannerConnection.MediaScannerConnectionClient
@@ -292,7 +292,7 @@ public class RNFSManager extends ReactContextBaseJavaModule {
 
         @Override // android.media.MediaScannerConnection.OnScanCompletedListener
         public void onScanCompleted(String str, Uri uri) {
-            this.f17784a.resolve(str);
+            this.f17924a.resolve(str);
         }
     }
 
@@ -601,19 +601,19 @@ public class RNFSManager extends ReactContextBaseJavaModule {
             boolean z10 = readableMap.getBoolean("hasBeginCallback");
             boolean z11 = readableMap.getBoolean("hasProgressCallback");
             com.rnfs.a aVar = new com.rnfs.a();
-            aVar.f17787a = url;
-            aVar.f17788b = file;
-            aVar.f17789c = map;
-            aVar.f17790d = i11;
-            aVar.f17791e = i12;
-            aVar.f17792f = i13;
-            aVar.f17793g = i14;
-            aVar.f17794h = new c(i10, promise, readableMap);
+            aVar.f17927a = url;
+            aVar.f17928b = file;
+            aVar.f17929c = map;
+            aVar.f17930d = i11;
+            aVar.f17931e = i12;
+            aVar.f17932f = i13;
+            aVar.f17933g = i14;
+            aVar.f17934h = new c(i10, promise, readableMap);
             if (z10) {
-                aVar.f17795i = new d(i10);
+                aVar.f17935i = new d(i10);
             }
             if (z11) {
-                aVar.f17796j = new e(i10);
+                aVar.f17936j = new e(i10);
             }
             com.rnfs.c cVar = new com.rnfs.c();
             cVar.execute(aVar);
@@ -1124,18 +1124,18 @@ public class RNFSManager extends ReactContextBaseJavaModule {
             for (int i11 = 0; i11 < array.size(); i11++) {
                 arrayList.add(array.getMap(i11));
             }
-            gVar.f17805a = url;
-            gVar.f17806b = arrayList;
-            gVar.f17808d = map;
-            gVar.f17810f = string;
-            gVar.f17809e = map2;
-            gVar.f17807c = z10;
-            gVar.f17811g = new f(i10, promise, readableMap);
+            gVar.f17945a = url;
+            gVar.f17946b = arrayList;
+            gVar.f17948d = map;
+            gVar.f17950f = string;
+            gVar.f17949e = map2;
+            gVar.f17947c = z10;
+            gVar.f17951g = new f(i10, promise, readableMap);
             if (z11) {
-                gVar.f17813i = new g(i10);
+                gVar.f17953i = new g(i10);
             }
             if (z12) {
-                gVar.f17812h = new h(i10);
+                gVar.f17952h = new h(i10);
             }
             com.rnfs.i iVar = new com.rnfs.i();
             iVar.execute(gVar);

@@ -1,32 +1,29 @@
 package we;
 
-import android.content.Context;
-import com.google.android.gms.tasks.Task;
-import ef.a;
-import ef.d;
+import android.app.PendingIntent;
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class b extends d {
+public final class b extends jf.a {
+    @NonNull
+    public static final Parcelable.Creator<b> CREATOR = new l();
 
-    /* renamed from: k  reason: collision with root package name */
-    private static final a.g f53713k;
+    /* renamed from: d  reason: collision with root package name */
+    private final PendingIntent f53685d;
 
-    /* renamed from: l  reason: collision with root package name */
-    private static final a.AbstractC0286a f53714l;
-
-    /* renamed from: m  reason: collision with root package name */
-    private static final ef.a f53715m;
-
-    static {
-        a.g gVar = new a.g();
-        f53713k = gVar;
-        c cVar = new c();
-        f53714l = cVar;
-        f53715m = new ef.a("SmsRetriever.API", cVar, gVar);
+    public b(PendingIntent pendingIntent) {
+        this.f53685d = (PendingIntent) hf.q.l(pendingIntent);
     }
 
-    public b(Context context) {
-        super(context, f53715m, a.d.f21490c, d.a.f21502c);
+    public PendingIntent b() {
+        return this.f53685d;
     }
 
-    public abstract Task C();
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        int a10 = jf.c.a(parcel);
+        jf.c.q(parcel, 1, b(), i10, false);
+        jf.c.b(parcel, a10);
+    }
 }

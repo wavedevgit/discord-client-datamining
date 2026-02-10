@@ -51,8 +51,8 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.E0();
-                    reader.S();
+                    reader.C0();
+                    reader.T();
                     break;
                 case 0:
                     simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);

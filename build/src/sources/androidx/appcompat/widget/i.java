@@ -8,55 +8,55 @@ import android.widget.CompoundButton;
 class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CompoundButton f2132a;
+    private final CompoundButton f1829a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ColorStateList f2133b = null;
+    private ColorStateList f1830b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private PorterDuff.Mode f2134c = null;
+    private PorterDuff.Mode f1831c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f2135d = false;
+    private boolean f1832d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f2136e = false;
+    private boolean f1833e = false;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f2137f;
+    private boolean f1834f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(CompoundButton compoundButton) {
-        this.f2132a = compoundButton;
+        this.f1829a = compoundButton;
     }
 
     void a() {
-        Drawable a10 = androidx.core.widget.d.a(this.f2132a);
+        Drawable a10 = androidx.core.widget.d.a(this.f1829a);
         if (a10 != null) {
-            if (this.f2135d || this.f2136e) {
+            if (this.f1832d || this.f1833e) {
                 Drawable mutate = s1.a.r(a10).mutate();
-                if (this.f2135d) {
-                    s1.a.o(mutate, this.f2133b);
+                if (this.f1832d) {
+                    s1.a.o(mutate, this.f1830b);
                 }
-                if (this.f2136e) {
-                    s1.a.p(mutate, this.f2134c);
+                if (this.f1833e) {
+                    s1.a.p(mutate, this.f1831c);
                 }
                 if (mutate.isStateful()) {
-                    mutate.setState(this.f2132a.getDrawableState());
+                    mutate.setState(this.f1829a.getDrawableState());
                 }
-                this.f2132a.setButtonDrawable(mutate);
+                this.f1829a.setButtonDrawable(mutate);
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList b() {
-        return this.f2133b;
+        return this.f1830b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public PorterDuff.Mode c() {
-        return this.f2134c;
+        return this.f1831c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -69,12 +69,12 @@ class i {
     public void d(android.util.AttributeSet r11, int r12) {
         /*
             r10 = this;
-            android.widget.CompoundButton r0 = r10.f2132a
+            android.widget.CompoundButton r0 = r10.f1829a
             android.content.Context r0 = r0.getContext()
             int[] r1 = f.j.U0
             r2 = 0
             androidx.appcompat.widget.v0 r1 = androidx.appcompat.widget.v0.v(r0, r11, r1, r12, r2)
-            android.widget.CompoundButton r3 = r10.f2132a
+            android.widget.CompoundButton r3 = r10.f1829a
             android.content.Context r4 = r3.getContext()
             int[] r5 = f.j.U0
             android.content.res.TypedArray r7 = r1.r()
@@ -88,7 +88,7 @@ class i {
             int r11 = f.j.W0     // Catch: java.lang.Throwable -> L3d
             int r11 = r1.n(r11, r2)     // Catch: java.lang.Throwable -> L3d
             if (r11 == 0) goto L40
-            android.widget.CompoundButton r12 = r10.f2132a     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
+            android.widget.CompoundButton r12 = r10.f1829a     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
             android.content.Context r0 = r12.getContext()     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
             android.graphics.drawable.Drawable r11 = g.a.b(r0, r11)     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
             r12.setButtonDrawable(r11)     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
@@ -104,7 +104,7 @@ class i {
             int r11 = f.j.V0     // Catch: java.lang.Throwable -> L3d
             int r11 = r1.n(r11, r2)     // Catch: java.lang.Throwable -> L3d
             if (r11 == 0) goto L5d
-            android.widget.CompoundButton r12 = r10.f2132a     // Catch: java.lang.Throwable -> L3d
+            android.widget.CompoundButton r12 = r10.f1829a     // Catch: java.lang.Throwable -> L3d
             android.content.Context r0 = r12.getContext()     // Catch: java.lang.Throwable -> L3d
             android.graphics.drawable.Drawable r11 = g.a.b(r0, r11)     // Catch: java.lang.Throwable -> L3d
             r12.setButtonDrawable(r11)     // Catch: java.lang.Throwable -> L3d
@@ -112,7 +112,7 @@ class i {
             int r11 = f.j.X0     // Catch: java.lang.Throwable -> L3d
             boolean r11 = r1.s(r11)     // Catch: java.lang.Throwable -> L3d
             if (r11 == 0) goto L70
-            android.widget.CompoundButton r11 = r10.f2132a     // Catch: java.lang.Throwable -> L3d
+            android.widget.CompoundButton r11 = r10.f1829a     // Catch: java.lang.Throwable -> L3d
             int r12 = f.j.X0     // Catch: java.lang.Throwable -> L3d
             android.content.res.ColorStateList r12 = r1.c(r12)     // Catch: java.lang.Throwable -> L3d
             androidx.core.widget.d.d(r11, r12)     // Catch: java.lang.Throwable -> L3d
@@ -120,7 +120,7 @@ class i {
             int r11 = f.j.Y0     // Catch: java.lang.Throwable -> L3d
             boolean r11 = r1.s(r11)     // Catch: java.lang.Throwable -> L3d
             if (r11 == 0) goto L89
-            android.widget.CompoundButton r11 = r10.f2132a     // Catch: java.lang.Throwable -> L3d
+            android.widget.CompoundButton r11 = r10.f1829a     // Catch: java.lang.Throwable -> L3d
             int r12 = f.j.Y0     // Catch: java.lang.Throwable -> L3d
             r0 = -1
             int r12 = r1.k(r12, r0)     // Catch: java.lang.Throwable -> L3d
@@ -139,25 +139,25 @@ class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e() {
-        if (this.f2137f) {
-            this.f2137f = false;
+        if (this.f1834f) {
+            this.f1834f = false;
             return;
         }
-        this.f2137f = true;
+        this.f1834f = true;
         a();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(ColorStateList colorStateList) {
-        this.f2133b = colorStateList;
-        this.f2135d = true;
+        this.f1830b = colorStateList;
+        this.f1832d = true;
         a();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(PorterDuff.Mode mode) {
-        this.f2134c = mode;
-        this.f2136e = true;
+        this.f1831c = mode;
+        this.f1833e = true;
         a();
     }
 }

@@ -9,28 +9,28 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 public class b implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ClassDescriptor f33092d;
+    private final ClassDescriptor f32801d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final RawSubstitution f33093e;
+    private final RawSubstitution f32802e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SimpleType f33094i;
+    private final SimpleType f32803i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JavaTypeAttributes f33095o;
+    private final JavaTypeAttributes f32804o;
 
     public b(ClassDescriptor classDescriptor, RawSubstitution rawSubstitution, SimpleType simpleType, JavaTypeAttributes javaTypeAttributes) {
-        this.f33092d = classDescriptor;
-        this.f33093e = rawSubstitution;
-        this.f33094i = simpleType;
-        this.f33095o = javaTypeAttributes;
+        this.f32801d = classDescriptor;
+        this.f32802e = rawSubstitution;
+        this.f32803i = simpleType;
+        this.f32804o = javaTypeAttributes;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         SimpleType c10;
-        c10 = RawSubstitution.c(this.f33092d, this.f33093e, this.f33094i, this.f33095o, (KotlinTypeRefiner) obj);
+        c10 = RawSubstitution.c(this.f32801d, this.f32802e, this.f32803i, this.f32804o, (KotlinTypeRefiner) obj);
         return c10;
     }
 }

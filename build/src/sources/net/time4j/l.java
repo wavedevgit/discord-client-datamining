@@ -3,16 +3,16 @@ package net.time4j;
 import java.io.InvalidObjectException;
 import java.math.BigDecimal;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class l extends rt.e implements d1 {
+final class l extends st.e implements d1 {
     private static final long serialVersionUID = -4837430960549551204L;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient BigDecimal f39529d;
+    private final transient BigDecimal f38621d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(String str, BigDecimal bigDecimal) {
         super(str);
-        this.f39529d = bigDecimal;
+        this.f38621d = bigDecimal;
     }
 
     private Object readResolve() {
@@ -23,34 +23,34 @@ final class l extends rt.e implements d1 {
         throw new InvalidObjectException(name());
     }
 
-    @Override // rt.p
+    @Override // st.p
     public boolean A() {
         return false;
     }
 
-    @Override // rt.p
+    @Override // st.p
     public boolean D() {
         return true;
     }
 
-    @Override // rt.e
+    @Override // st.e
     protected boolean E() {
         return true;
     }
 
-    @Override // rt.p
+    @Override // st.p
     /* renamed from: F */
     public BigDecimal e() {
-        return this.f39529d;
+        return this.f38621d;
     }
 
-    @Override // rt.p
+    @Override // st.p
     /* renamed from: G */
     public BigDecimal B() {
         return BigDecimal.ZERO;
     }
 
-    @Override // rt.p
+    @Override // st.p
     public Class getType() {
         return BigDecimal.class;
     }

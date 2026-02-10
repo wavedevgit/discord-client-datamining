@@ -12,16 +12,16 @@ public class l extends k {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final OutputConfiguration f49674a;
+        final OutputConfiguration f49477a;
 
         /* renamed from: b  reason: collision with root package name */
-        String f49675b;
+        String f49478b;
 
         /* renamed from: c  reason: collision with root package name */
-        long f49676c = 1;
+        long f49479c = 1;
 
         a(OutputConfiguration outputConfiguration) {
-            this.f49674a = outputConfiguration;
+            this.f49477a = outputConfiguration;
         }
 
         public boolean equals(Object obj) {
@@ -29,7 +29,7 @@ public class l extends k {
                 return false;
             }
             a aVar = (a) obj;
-            if (!Objects.equals(this.f49674a, aVar.f49674a) || this.f49676c != aVar.f49676c || !Objects.equals(this.f49675b, aVar.f49675b)) {
+            if (!Objects.equals(this.f49477a, aVar.f49477a) || this.f49479c != aVar.f49479c || !Objects.equals(this.f49478b, aVar.f49478b)) {
                 return false;
             }
             return true;
@@ -37,16 +37,16 @@ public class l extends k {
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = this.f49674a.hashCode() ^ 31;
+            int hashCode2 = this.f49477a.hashCode() ^ 31;
             int i10 = (hashCode2 << 5) - hashCode2;
-            String str = this.f49675b;
+            String str = this.f49478b;
             if (str == null) {
                 hashCode = 0;
             } else {
                 hashCode = str.hashCode();
             }
             int i11 = hashCode ^ i10;
-            return Long.hashCode(this.f49676c) ^ ((i11 << 5) - i11);
+            return Long.hashCode(this.f49479c) ^ ((i11 << 5) - i11);
         }
     }
 
@@ -67,17 +67,17 @@ public class l extends k {
 
     @Override // s.k, s.j.a
     public void c(long j10) {
-        ((a) this.f49679a).f49676c = j10;
+        ((a) this.f49482a).f49479c = j10;
     }
 
     @Override // s.k, s.j.a
     public void d(String str) {
-        ((a) this.f49679a).f49675b = str;
+        ((a) this.f49482a).f49478b = str;
     }
 
     @Override // s.k, s.j.a
     public String e() {
-        return ((a) this.f49679a).f49675b;
+        return ((a) this.f49482a).f49478b;
     }
 
     @Override // s.k, s.j.a
@@ -87,8 +87,8 @@ public class l extends k {
 
     @Override // s.k, s.j.a
     public Object h() {
-        b2.e.a(this.f49679a instanceof a);
-        return ((a) this.f49679a).f49674a;
+        b2.e.a(this.f49482a instanceof a);
+        return ((a) this.f49482a).f49477a;
     }
 
     @Override // s.k, s.o

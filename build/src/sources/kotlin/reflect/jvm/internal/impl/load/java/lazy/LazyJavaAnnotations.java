@@ -18,30 +18,30 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaAnnotations implements Annotations {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaResolverContext f32915d;
+    private final LazyJavaResolverContext f32624d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JavaAnnotationOwner f32916e;
+    private final JavaAnnotationOwner f32625e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f32917i;
+    private final boolean f32626i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final MemoizedFunctionToNullable f32918o;
+    private final MemoizedFunctionToNullable f32627o;
 
     public LazyJavaAnnotations(@NotNull LazyJavaResolverContext c10, @NotNull JavaAnnotationOwner annotationOwner, boolean z10) {
         Intrinsics.checkNotNullParameter(c10, "c");
         Intrinsics.checkNotNullParameter(annotationOwner, "annotationOwner");
-        this.f32915d = c10;
-        this.f32916e = annotationOwner;
-        this.f32917i = z10;
-        this.f32918o = c10.getComponents().getStorageManager().createMemoizedFunctionWithNullableValues(new c(this));
+        this.f32624d = c10;
+        this.f32625e = annotationOwner;
+        this.f32626i = z10;
+        this.f32627o = c10.getComponents().getStorageManager().createMemoizedFunctionWithNullableValues(new c(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final AnnotationDescriptor c(LazyJavaAnnotations lazyJavaAnnotations, JavaAnnotation annotation) {
         Intrinsics.checkNotNullParameter(annotation, "annotation");
-        return JavaAnnotationMapper.INSTANCE.mapOrResolveJavaAnnotation(annotation, lazyJavaAnnotations.f32915d, lazyJavaAnnotations.f32917i);
+        return JavaAnnotationMapper.INSTANCE.mapOrResolveJavaAnnotation(annotation, lazyJavaAnnotations.f32624d, lazyJavaAnnotations.f32626i);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
@@ -49,11 +49,11 @@ public final class LazyJavaAnnotations implements Annotations {
     public AnnotationDescriptor mo1195findAnnotation(@NotNull FqName fqName) {
         AnnotationDescriptor annotationDescriptor;
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        JavaAnnotation findAnnotation = this.f32916e.findAnnotation(fqName);
-        if (findAnnotation != null && (annotationDescriptor = (AnnotationDescriptor) this.f32918o.invoke(findAnnotation)) != null) {
+        JavaAnnotation findAnnotation = this.f32625e.findAnnotation(fqName);
+        if (findAnnotation != null && (annotationDescriptor = (AnnotationDescriptor) this.f32627o.invoke(findAnnotation)) != null) {
             return annotationDescriptor;
         }
-        return JavaAnnotationMapper.INSTANCE.findMappedJavaAnnotation(fqName, this.f32916e, this.f32915d);
+        return JavaAnnotationMapper.INSTANCE.findMappedJavaAnnotation(fqName, this.f32625e, this.f32624d);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
@@ -63,7 +63,7 @@ public final class LazyJavaAnnotations implements Annotations {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
     public boolean isEmpty() {
-        if (this.f32916e.getAnnotations().isEmpty() && !this.f32916e.isDeprecatedInJavaDoc()) {
+        if (this.f32625e.getAnnotations().isEmpty() && !this.f32625e.isDeprecatedInJavaDoc()) {
             return true;
         }
         return false;
@@ -72,7 +72,7 @@ public final class LazyJavaAnnotations implements Annotations {
     @Override // java.lang.Iterable
     @NotNull
     public Iterator<AnnotationDescriptor> iterator() {
-        return k.H(k.U(k.R(CollectionsKt.b0(this.f32916e.getAnnotations()), this.f32918o), JavaAnnotationMapper.INSTANCE.findMappedJavaAnnotation(StandardNames.FqNames.deprecated, this.f32916e, this.f32915d))).iterator();
+        return k.H(k.U(k.R(CollectionsKt.b0(this.f32625e.getAnnotations()), this.f32627o), JavaAnnotationMapper.INSTANCE.findMappedJavaAnnotation(StandardNames.FqNames.deprecated, this.f32625e, this.f32624d))).iterator();
     }
 
     public /* synthetic */ LazyJavaAnnotations(LazyJavaResolverContext lazyJavaResolverContext, JavaAnnotationOwner javaAnnotationOwner, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

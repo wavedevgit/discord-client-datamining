@@ -17,7 +17,7 @@ public final class ReactNativeFeatureFlags {
     private static Function0<? extends ReactNativeFeatureFlagsAccessor> accessorProvider;
 
     static {
-        Function0<? extends ReactNativeFeatureFlagsAccessor> function0 = new Function0() { // from class: gb.a
+        Function0<? extends ReactNativeFeatureFlagsAccessor> function0 = new Function0() { // from class: hb.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ReactNativeFeatureFlagsCxxAccessor accessorProvider$lambda$0;

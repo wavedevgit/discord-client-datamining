@@ -17,8 +17,8 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import le.w;
-import ne.w0;
+import me.w;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class ReactExoplayerViewManager extends ViewGroupManager<g> {
     private static final String PROP_BUFFER_CONFIG = "bufferConfig";
@@ -105,7 +105,7 @@ public class ReactExoplayerViewManager extends ViewGroupManager<g> {
         String[] strArr;
         String str;
         MapBuilder.Builder builder = MapBuilder.builder();
-        for (String str2 : i.f8267c) {
+        for (String str2 : i.f8407c) {
             if (ReactNativeFeatureFlags.enableFabricRenderer()) {
                 str = ViewProps.TOP + str2.replaceFirst("^on", "");
             } else {

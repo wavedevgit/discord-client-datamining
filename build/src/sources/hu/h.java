@@ -1,44 +1,27 @@
 package hu;
 
+import cu.k;
+import java.util.LinkedHashSet;
+import java.util.Set;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.MediaType;
-import okhttp3.ResponseBody;
-import okio.BufferedSource;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h extends ResponseBody {
+public final class h {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f26558d;
+    /* renamed from: a  reason: collision with root package name */
+    private final Set f26594a = new LinkedHashSet();
 
-    /* renamed from: e  reason: collision with root package name */
-    private final long f26559e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final BufferedSource f26560i;
-
-    public h(String str, long j10, BufferedSource source) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        this.f26558d = str;
-        this.f26559e = j10;
-        this.f26560i = source;
+    public final synchronized void a(k route) {
+        Intrinsics.checkNotNullParameter(route, "route");
+        this.f26594a.remove(route);
     }
 
-    @Override // okhttp3.ResponseBody
-    public long contentLength() {
-        return this.f26559e;
+    public final synchronized void b(k failedRoute) {
+        Intrinsics.checkNotNullParameter(failedRoute, "failedRoute");
+        this.f26594a.add(failedRoute);
     }
 
-    @Override // okhttp3.ResponseBody
-    public MediaType contentType() {
-        String str = this.f26558d;
-        if (str != null) {
-            return MediaType.f42920e.c(str);
-        }
-        return null;
-    }
-
-    @Override // okhttp3.ResponseBody
-    public BufferedSource source() {
-        return this.f26560i;
+    public final synchronized boolean c(k route) {
+        Intrinsics.checkNotNullParameter(route, "route");
+        return this.f26594a.contains(route);
     }
 }

@@ -2,13 +2,13 @@ package com.swmansion.reanimated.nativeProxy;
 
 import com.facebook.jni.HybridData;
 import com.swmansion.reanimated.NodesManager;
-@fb.a
+@gb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class AnimationFrameCallback implements NodesManager.OnAnimationFrame {
-    @fb.a
+    @gb.a
     private final HybridData mHybridData;
 
-    @fb.a
+    @gb.a
     private AnimationFrameCallback(HybridData hybridData) {
         this.mHybridData = hybridData;
     }

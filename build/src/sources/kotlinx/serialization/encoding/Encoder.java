@@ -1,6 +1,6 @@
 package kotlinx.serialization.encoding;
 
-import ft.o;
+import gt.o;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -19,12 +19,12 @@ public interface Encoder {
         public static void c(Encoder encoder, o serializer, Object obj) {
             Intrinsics.checkNotNullParameter(serializer, "serializer");
             if (serializer.getDescriptor().b()) {
-                encoder.v(serializer, obj);
+                encoder.h(serializer, obj);
             } else if (obj == null) {
-                encoder.n();
+                encoder.o();
             } else {
-                encoder.w();
-                encoder.v(serializer, obj);
+                encoder.v();
+                encoder.h(serializer, obj);
             }
         }
 
@@ -34,11 +34,11 @@ public interface Encoder {
         }
     }
 
-    void B(int i10);
+    void A(int i10);
 
-    void F(String str);
+    void E(String str);
 
-    mt.b a();
+    nt.b a();
 
     CompositeEncoder b(SerialDescriptor serialDescriptor);
 
@@ -46,25 +46,25 @@ public interface Encoder {
 
     void g(byte b10);
 
-    CompositeEncoder h(SerialDescriptor serialDescriptor, int i10);
+    void h(o oVar, Object obj);
 
-    void i(SerialDescriptor serialDescriptor, int i10);
+    CompositeEncoder j(SerialDescriptor serialDescriptor, int i10);
 
-    Encoder j(SerialDescriptor serialDescriptor);
+    void k(SerialDescriptor serialDescriptor, int i10);
 
-    void k(long j10);
+    Encoder l(SerialDescriptor serialDescriptor);
 
-    void n();
+    void m(long j10);
 
-    void p(short s10);
+    void o();
 
-    void q(boolean z10);
+    void q(short s10);
+
+    void r(boolean z10);
 
     void t(float f10);
 
     void u(char c10);
 
-    void v(o oVar, Object obj);
-
-    void w();
+    void v();
 }

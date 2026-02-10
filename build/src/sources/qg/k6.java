@@ -1,38 +1,36 @@
 package qg;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class k6 implements yi.d {
+final class k6 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k6 f47359a = new k6();
+    static final k6 f45969a = new k6();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f45970b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f45971c;
 
     static {
-        c.b a10 = yi.c.a("supportedFormats");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("durationMs");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = yi.c.a("errorCode");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
-        c.b a13 = yi.c.a("allowManualInput");
-        v1 v1Var4 = new v1();
-        v1Var4.a(4);
-        a13.b(v1Var4.b()).a();
+        c.b a10 = zi.c.a("inferenceCommonLogEvent");
+        s1 s1Var = new s1();
+        s1Var.a(1);
+        f45970b = a10.b(s1Var.b()).a();
+        c.b a11 = zi.c.a("imageInfo");
+        s1 s1Var2 = new s1();
+        s1Var2.a(2);
+        f45971c = a11.b(s1Var2.b()).a();
     }
 
     private k6() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
+        zi.e eVar = (zi.e) obj2;
         throw null;
     }
 }

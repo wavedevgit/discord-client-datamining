@@ -20,43 +20,43 @@ import java.lang.reflect.Method;
 public class f0 extends ListView {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rect f2086d;
+    private final Rect f1783d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f2087e;
+    private int f1784e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f2088i;
+    private int f1785i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f2089o;
+    private int f1786o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f2090p;
+    private int f1787p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f2091q;
+    private int f1788q;
 
     /* renamed from: r  reason: collision with root package name */
-    private d f2092r;
+    private d f1789r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f2093s;
+    private boolean f1790s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f2094t;
+    private boolean f1791t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f2095u;
+    private boolean f1792u;
 
     /* renamed from: v  reason: collision with root package name */
-    private androidx.core.view.r0 f2096v;
+    private androidx.core.view.r0 f1793v;
 
     /* renamed from: w  reason: collision with root package name */
-    private androidx.core.widget.g f2097w;
+    private androidx.core.widget.g f1794w;
 
     /* renamed from: x  reason: collision with root package name */
-    f f2098x;
+    f f1795x;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -70,16 +70,16 @@ public class f0 extends ListView {
     static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private static Method f2099a;
+        private static Method f1796a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static Method f2100b;
+        private static Method f1797b;
 
         /* renamed from: c  reason: collision with root package name */
-        private static Method f2101c;
+        private static Method f1798c;
 
         /* renamed from: d  reason: collision with root package name */
-        private static boolean f2102d;
+        private static boolean f1799d;
 
         static {
             try {
@@ -87,29 +87,29 @@ public class f0 extends ListView {
                 Class cls2 = Boolean.TYPE;
                 Class cls3 = Float.TYPE;
                 Method declaredMethod = AbsListView.class.getDeclaredMethod("positionSelector", cls, View.class, cls2, cls3, cls3);
-                f2099a = declaredMethod;
+                f1796a = declaredMethod;
                 declaredMethod.setAccessible(true);
                 Method declaredMethod2 = AdapterView.class.getDeclaredMethod("setSelectedPositionInt", cls);
-                f2100b = declaredMethod2;
+                f1797b = declaredMethod2;
                 declaredMethod2.setAccessible(true);
                 Method declaredMethod3 = AdapterView.class.getDeclaredMethod("setNextSelectedPositionInt", cls);
-                f2101c = declaredMethod3;
+                f1798c = declaredMethod3;
                 declaredMethod3.setAccessible(true);
-                f2102d = true;
+                f1799d = true;
             } catch (NoSuchMethodException e10) {
                 e10.printStackTrace();
             }
         }
 
         static boolean a() {
-            return f2102d;
+            return f1799d;
         }
 
         static void b(f0 f0Var, int i10, View view) {
             try {
-                f2099a.invoke(f0Var, Integer.valueOf(i10), view, Boolean.FALSE, -1, -1);
-                f2100b.invoke(f0Var, Integer.valueOf(i10));
-                f2101c.invoke(f0Var, Integer.valueOf(i10));
+                f1796a.invoke(f0Var, Integer.valueOf(i10), view, Boolean.FALSE, -1, -1);
+                f1797b.invoke(f0Var, Integer.valueOf(i10));
+                f1798c.invoke(f0Var, Integer.valueOf(i10));
             } catch (IllegalAccessException e10) {
                 e10.printStackTrace();
             } catch (InvocationTargetException e11) {
@@ -135,41 +135,41 @@ public class f0 extends ListView {
     public static class d extends h.a {
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f2103e;
+        private boolean f1800e;
 
         d(Drawable drawable) {
             super(drawable);
-            this.f2103e = true;
+            this.f1800e = true;
         }
 
         void b(boolean z10) {
-            this.f2103e = z10;
+            this.f1800e = z10;
         }
 
         @Override // h.a, android.graphics.drawable.Drawable
         public void draw(Canvas canvas) {
-            if (this.f2103e) {
+            if (this.f1800e) {
                 super.draw(canvas);
             }
         }
 
         @Override // h.a, android.graphics.drawable.Drawable
         public void setHotspot(float f10, float f11) {
-            if (this.f2103e) {
+            if (this.f1800e) {
                 super.setHotspot(f10, f11);
             }
         }
 
         @Override // h.a, android.graphics.drawable.Drawable
         public void setHotspotBounds(int i10, int i11, int i12, int i13) {
-            if (this.f2103e) {
+            if (this.f1800e) {
                 super.setHotspotBounds(i10, i11, i12, i13);
             }
         }
 
         @Override // h.a, android.graphics.drawable.Drawable
         public boolean setState(int[] iArr) {
-            if (this.f2103e) {
+            if (this.f1800e) {
                 return super.setState(iArr);
             }
             return false;
@@ -177,7 +177,7 @@ public class f0 extends ListView {
 
         @Override // h.a, android.graphics.drawable.Drawable
         public boolean setVisible(boolean z10, boolean z11) {
-            if (this.f2103e) {
+            if (this.f1800e) {
                 return super.setVisible(z10, z11);
             }
             return false;
@@ -189,7 +189,7 @@ public class f0 extends ListView {
     public static class e {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final Field f2104a;
+        private static final Field f1801a;
 
         static {
             Field field = null;
@@ -199,11 +199,11 @@ public class f0 extends ListView {
             } catch (NoSuchFieldException e10) {
                 e10.printStackTrace();
             }
-            f2104a = field;
+            f1801a = field;
         }
 
         static boolean a(AbsListView absListView) {
-            Field field = f2104a;
+            Field field = f1801a;
             if (field != null) {
                 try {
                     return field.getBoolean(absListView);
@@ -216,7 +216,7 @@ public class f0 extends ListView {
         }
 
         static void b(AbsListView absListView, boolean z10) {
-            Field field = f2104a;
+            Field field = f1801a;
             if (field != null) {
                 try {
                     field.set(absListView, Boolean.valueOf(z10));
@@ -235,7 +235,7 @@ public class f0 extends ListView {
 
         public void a() {
             f0 f0Var = f0.this;
-            f0Var.f2098x = null;
+            f0Var.f1795x = null;
             f0Var.removeCallbacks(this);
         }
 
@@ -246,35 +246,35 @@ public class f0 extends ListView {
         @Override // java.lang.Runnable
         public void run() {
             f0 f0Var = f0.this;
-            f0Var.f2098x = null;
+            f0Var.f1795x = null;
             f0Var.drawableStateChanged();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0(Context context, boolean z10) {
-        super(context, null, f.a.f22222y);
-        this.f2086d = new Rect();
-        this.f2087e = 0;
-        this.f2088i = 0;
-        this.f2089o = 0;
-        this.f2090p = 0;
-        this.f2094t = z10;
+        super(context, null, f.a.f22177y);
+        this.f1783d = new Rect();
+        this.f1784e = 0;
+        this.f1785i = 0;
+        this.f1786o = 0;
+        this.f1787p = 0;
+        this.f1791t = z10;
         setCacheColorHint(0);
     }
 
     private void a() {
-        this.f2095u = false;
+        this.f1792u = false;
         setPressed(false);
         drawableStateChanged();
-        View childAt = getChildAt(this.f2091q - getFirstVisiblePosition());
+        View childAt = getChildAt(this.f1788q - getFirstVisiblePosition());
         if (childAt != null) {
             childAt.setPressed(false);
         }
-        androidx.core.view.r0 r0Var = this.f2096v;
+        androidx.core.view.r0 r0Var = this.f1793v;
         if (r0Var != null) {
             r0Var.c();
-            this.f2096v = null;
+            this.f1793v = null;
         }
     }
 
@@ -284,19 +284,19 @@ public class f0 extends ListView {
 
     private void c(Canvas canvas) {
         Drawable selector;
-        if (!this.f2086d.isEmpty() && (selector = getSelector()) != null) {
-            selector.setBounds(this.f2086d);
+        if (!this.f1783d.isEmpty() && (selector = getSelector()) != null) {
+            selector.setBounds(this.f1783d);
             selector.draw(canvas);
         }
     }
 
     private void f(int i10, View view) {
-        Rect rect = this.f2086d;
+        Rect rect = this.f1783d;
         rect.set(view.getLeft(), view.getTop(), view.getRight(), view.getBottom());
-        rect.left -= this.f2087e;
-        rect.top -= this.f2088i;
-        rect.right += this.f2089o;
-        rect.bottom += this.f2090p;
+        rect.left -= this.f1784e;
+        rect.top -= this.f1785i;
+        rect.right += this.f1786o;
+        rect.bottom += this.f1787p;
         boolean k10 = k();
         if (view.isEnabled() != k10) {
             l(!k10);
@@ -320,7 +320,7 @@ public class f0 extends ListView {
         }
         f(i10, view);
         if (z10) {
-            Rect rect = this.f2086d;
+            Rect rect = this.f1783d;
             float exactCenterX = rect.exactCenterX();
             float exactCenterY = rect.exactCenterY();
             if (getVisibility() != 0) {
@@ -341,17 +341,17 @@ public class f0 extends ListView {
 
     private void i(View view, int i10, float f10, float f11) {
         View childAt;
-        this.f2095u = true;
+        this.f1792u = true;
         a.a(this, f10, f11);
         if (!isPressed()) {
             setPressed(true);
         }
         layoutChildren();
-        int i11 = this.f2091q;
+        int i11 = this.f1788q;
         if (i11 != -1 && (childAt = getChildAt(i11 - getFirstVisiblePosition())) != null && childAt != view && childAt.isPressed()) {
             childAt.setPressed(false);
         }
-        this.f2091q = i10;
+        this.f1788q = i10;
         a.a(view, f10 - view.getLeft(), f11 - view.getTop());
         if (!view.isPressed()) {
             view.setPressed(true);
@@ -362,7 +362,7 @@ public class f0 extends ListView {
     }
 
     private void j(boolean z10) {
-        d dVar = this.f2092r;
+        d dVar = this.f1789r;
         if (dVar != null) {
             dVar.b(z10);
         }
@@ -384,7 +384,7 @@ public class f0 extends ListView {
     }
 
     private boolean m() {
-        return this.f2095u;
+        return this.f1792u;
     }
 
     private void n() {
@@ -455,7 +455,7 @@ public class f0 extends ListView {
 
     @Override // android.widget.AbsListView, android.view.ViewGroup, android.view.View
     protected void drawableStateChanged() {
-        if (this.f2098x != null) {
+        if (this.f1795x != null) {
             return;
         }
         super.drawableStateChanged();
@@ -528,19 +528,19 @@ public class f0 extends ListView {
             r7.a()
         L4d:
             if (r3 == 0) goto L65
-            androidx.core.widget.g r9 = r7.f2097w
+            androidx.core.widget.g r9 = r7.f1794w
             if (r9 != 0) goto L5a
             androidx.core.widget.g r9 = new androidx.core.widget.g
             r9.<init>(r7)
-            r7.f2097w = r9
+            r7.f1794w = r9
         L5a:
-            androidx.core.widget.g r9 = r7.f2097w
+            androidx.core.widget.g r9 = r7.f1794w
             r9.m(r1)
-            androidx.core.widget.g r9 = r7.f2097w
+            androidx.core.widget.g r9 = r7.f1794w
             r9.onTouch(r7, r8)
             return r3
         L65:
-            androidx.core.widget.g r8 = r7.f2097w
+            androidx.core.widget.g r8 = r7.f1794w
             if (r8 == 0) goto L6c
             r8.m(r2)
         L6c:
@@ -551,7 +551,7 @@ public class f0 extends ListView {
 
     @Override // android.view.ViewGroup, android.view.View
     public boolean hasFocus() {
-        if (!this.f2094t && !super.hasFocus()) {
+        if (!this.f1791t && !super.hasFocus()) {
             return false;
         }
         return true;
@@ -559,7 +559,7 @@ public class f0 extends ListView {
 
     @Override // android.view.View
     public boolean hasWindowFocus() {
-        if (!this.f2094t && !super.hasWindowFocus()) {
+        if (!this.f1791t && !super.hasWindowFocus()) {
             return false;
         }
         return true;
@@ -567,7 +567,7 @@ public class f0 extends ListView {
 
     @Override // android.view.View
     public boolean isFocused() {
-        if (!this.f2094t && !super.isFocused()) {
+        if (!this.f1791t && !super.isFocused()) {
             return false;
         }
         return true;
@@ -575,7 +575,7 @@ public class f0 extends ListView {
 
     @Override // android.view.View
     public boolean isInTouchMode() {
-        if ((this.f2094t && this.f2093s) || super.isInTouchMode()) {
+        if ((this.f1791t && this.f1790s) || super.isInTouchMode()) {
             return true;
         }
         return false;
@@ -583,7 +583,7 @@ public class f0 extends ListView {
 
     @Override // android.widget.ListView, android.widget.AbsListView, android.widget.AdapterView, android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
-        this.f2098x = null;
+        this.f1795x = null;
         super.onDetachedFromWindow();
     }
 
@@ -594,9 +594,9 @@ public class f0 extends ListView {
             return super.onHoverEvent(motionEvent);
         }
         int actionMasked = motionEvent.getActionMasked();
-        if (actionMasked == 10 && this.f2098x == null) {
+        if (actionMasked == 10 && this.f1795x == null) {
             f fVar = new f();
-            this.f2098x = fVar;
+            this.f1795x = fVar;
             fVar.b();
         }
         boolean onHoverEvent = super.onHoverEvent(motionEvent);
@@ -623,9 +623,9 @@ public class f0 extends ListView {
     @Override // android.widget.AbsListView, android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         if (motionEvent.getAction() == 0) {
-            this.f2091q = pointToPosition((int) motionEvent.getX(), (int) motionEvent.getY());
+            this.f1788q = pointToPosition((int) motionEvent.getX(), (int) motionEvent.getY());
         }
-        f fVar = this.f2098x;
+        f fVar = this.f1795x;
         if (fVar != null) {
             fVar.a();
         }
@@ -634,7 +634,7 @@ public class f0 extends ListView {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setListSelectionHidden(boolean z10) {
-        this.f2093s = z10;
+        this.f1790s = z10;
     }
 
     @Override // android.widget.AbsListView
@@ -645,15 +645,15 @@ public class f0 extends ListView {
         } else {
             dVar = null;
         }
-        this.f2092r = dVar;
+        this.f1789r = dVar;
         super.setSelector(dVar);
         Rect rect = new Rect();
         if (drawable != null) {
             drawable.getPadding(rect);
         }
-        this.f2087e = rect.left;
-        this.f2088i = rect.top;
-        this.f2089o = rect.right;
-        this.f2090p = rect.bottom;
+        this.f1784e = rect.left;
+        this.f1785i = rect.top;
+        this.f1786o = rect.right;
+        this.f1787p = rect.bottom;
     }
 }

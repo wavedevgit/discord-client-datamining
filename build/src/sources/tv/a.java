@@ -1,15 +1,30 @@
 package tv;
-
-import qv.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
-    char a();
+public abstract class a implements d {
+    @Override // tv.d
+    public boolean a() {
+        return false;
+    }
 
-    int b();
+    @Override // tv.d
+    public boolean c(rv.a aVar) {
+        return false;
+    }
 
-    int c(b bVar, b bVar2);
+    @Override // tv.d
+    public boolean d() {
+        return false;
+    }
 
-    char d();
+    @Override // tv.d
+    public void h() {
+    }
 
-    void e(w wVar, w wVar2, int i10);
+    @Override // tv.d
+    public void e(sv.a aVar) {
+    }
+
+    @Override // tv.d
+    public void g(CharSequence charSequence) {
+    }
 }

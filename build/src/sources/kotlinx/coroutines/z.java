@@ -2,8 +2,8 @@ package kotlinx.coroutines;
 
 import java.util.concurrent.CancellationException;
 import kotlin.coroutines.CoroutineContext;
-import os.n0;
-import os.z0;
+import ps.n0;
+import ps.z0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class z {
     public static final CompletableJob a(Job job) {

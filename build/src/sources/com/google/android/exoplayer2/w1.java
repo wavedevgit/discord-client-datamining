@@ -21,27 +21,27 @@ public interface w1 {
         return i10 & 384;
     }
 
-    static int k(int i10, int i11, int i12, int i13, int i14) {
+    static int l(int i10, int i11, int i12, int i13, int i14) {
         return i10 | i11 | i12 | i13 | i14;
     }
 
-    static int l(int i10) {
+    static int m(int i10) {
         return i10 & 32;
     }
 
-    static int m(int i10) {
+    static int n(int i10) {
         return i10 & 24;
     }
 
-    static int r(int i10) {
+    static int s(int i10) {
         return i10 & 64;
     }
 
     static int u(int i10, int i11, int i12) {
-        return k(i10, i11, i12, 0, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+        return l(i10, i11, i12, 0, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
     }
 
-    void E(a aVar);
+    void D(a aVar);
 
     int a(Format format);
 

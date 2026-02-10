@@ -1,7 +1,7 @@
 package x3;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface k extends i {
-    int U();
+    long T0();
 
-    long X0();
+    int V();
 }

@@ -2,31 +2,31 @@ package net.time4j.calendar.service;
 
 import java.io.InvalidObjectException;
 import net.time4j.calendar.q;
-import rt.p;
-import rt.x;
+import st.p;
+import st.x;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d extends st.d implements q {
-    private final Class<rt.q> chrono;
+public abstract class d extends tt.d implements q {
+    private final Class<st.q> chrono;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient char f39316e;
+    private final transient char f38408e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient boolean f39317i;
+    private final transient boolean f38409i;
 
     public d(String str, Class cls, char c10, boolean z10) {
         super(str);
         this.chrono = cls;
-        this.f39316e = c10;
-        this.f39317i = z10;
+        this.f38408e = c10;
+        this.f38409i = z10;
     }
 
-    @Override // rt.p
+    @Override // st.p
     public boolean A() {
         return true;
     }
 
-    @Override // rt.p
+    @Override // st.p
     public boolean D() {
         return false;
     }
@@ -36,14 +36,14 @@ public abstract class d extends st.d implements q {
         return this.chrono;
     }
 
-    @Override // rt.e, rt.p
+    @Override // st.e, st.p
     public char d() {
-        return this.f39316e;
+        return this.f38408e;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // rt.e
-    public boolean l(rt.e eVar) {
+    @Override // st.e
+    public boolean j(st.e eVar) {
         if (this.chrono == ((d) eVar).chrono) {
             return true;
         }

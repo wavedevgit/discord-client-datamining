@@ -25,58 +25,58 @@ import kotlin.text.StringsKt;
 public class o {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a f48569q = new a(null);
+    public static final a f47543q = new a(null);
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String[] f48570r = {"UPDATE", "DELETE", "INSERT"};
+    private static final String[] f47544r = {"UPDATE", "DELETE", "INSERT"};
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f48571a;
+    private final u f47545a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f48572b;
+    private final Map f47546b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f48573c;
+    private final Map f47547c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f48574d;
+    private final Map f47548d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String[] f48575e;
+    private final String[] f47549e;
 
     /* renamed from: f  reason: collision with root package name */
-    private r3.c f48576f;
+    private r3.c f47550f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final AtomicBoolean f48577g;
+    private final AtomicBoolean f47551g;
 
     /* renamed from: h  reason: collision with root package name */
-    private volatile boolean f48578h;
+    private volatile boolean f47552h;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile x3.k f48579i;
+    private volatile x3.k f47553i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final b f48580j;
+    private final b f47554j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final m f48581k;
+    private final m f47555k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final m.b f48582l;
+    private final m.b f47556l;
 
     /* renamed from: m  reason: collision with root package name */
-    private r f48583m;
+    private r f47557m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Object f48584n;
+    private final Object f47558n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Object f48585o;
+    private final Object f47559o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final Runnable f48586p;
+    public final Runnable f47560p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -87,7 +87,7 @@ public class o {
         public final void a(x3.g database) {
             Intrinsics.checkNotNullParameter(database, "database");
             if (database.c2()) {
-                database.l0();
+                database.m0();
             } else {
                 database.H();
             }
@@ -107,19 +107,19 @@ public class o {
     public static final class b {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f48587e = new a(null);
+        public static final a f47561e = new a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        private final long[] f48588a;
+        private final long[] f47562a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean[] f48589b;
+        private final boolean[] f47563b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int[] f48590c;
+        private final int[] f47564c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f48591d;
+        private boolean f47565d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a {
@@ -132,19 +132,19 @@ public class o {
         }
 
         public b(int i10) {
-            this.f48588a = new long[i10];
-            this.f48589b = new boolean[i10];
-            this.f48590c = new int[i10];
+            this.f47562a = new long[i10];
+            this.f47563b = new boolean[i10];
+            this.f47564c = new int[i10];
         }
 
         public final int[] a() {
             boolean z10;
             synchronized (this) {
                 try {
-                    if (!this.f48591d) {
+                    if (!this.f47565d) {
                         return null;
                     }
-                    long[] jArr = this.f48588a;
+                    long[] jArr = this.f47562a;
                     int length = jArr.length;
                     int i10 = 0;
                     int i11 = 0;
@@ -156,22 +156,22 @@ public class o {
                         } else {
                             z10 = false;
                         }
-                        boolean[] zArr = this.f48589b;
+                        boolean[] zArr = this.f47563b;
                         if (z10 != zArr[i11]) {
-                            int[] iArr = this.f48590c;
+                            int[] iArr = this.f47564c;
                             if (!z10) {
                                 i13 = 2;
                             }
                             iArr[i11] = i13;
                         } else {
-                            this.f48590c[i11] = 0;
+                            this.f47564c[i11] = 0;
                         }
                         zArr[i11] = z10;
                         i10++;
                         i11 = i12;
                     }
-                    this.f48591d = false;
-                    return (int[]) this.f48590c.clone();
+                    this.f47565d = false;
+                    return (int[]) this.f47564c.clone();
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -185,15 +185,15 @@ public class o {
                 try {
                     z10 = false;
                     for (int i10 : tableIds) {
-                        long[] jArr = this.f48588a;
+                        long[] jArr = this.f47562a;
                         long j10 = jArr[i10];
                         jArr[i10] = 1 + j10;
                         if (j10 == 0) {
                             z10 = true;
-                            this.f48591d = true;
+                            this.f47565d = true;
                         }
                     }
-                    Unit unit = Unit.f32056a;
+                    Unit unit = Unit.f31765a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -208,15 +208,15 @@ public class o {
                 try {
                     z10 = false;
                     for (int i10 : tableIds) {
-                        long[] jArr = this.f48588a;
+                        long[] jArr = this.f47562a;
                         long j10 = jArr[i10];
                         jArr[i10] = j10 - 1;
                         if (j10 == 1) {
                             z10 = true;
-                            this.f48591d = true;
+                            this.f47565d = true;
                         }
                     }
-                    Unit unit = Unit.f32056a;
+                    Unit unit = Unit.f31765a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -226,9 +226,9 @@ public class o {
 
         public final void d() {
             synchronized (this) {
-                Arrays.fill(this.f48589b, false);
-                this.f48591d = true;
-                Unit unit = Unit.f32056a;
+                Arrays.fill(this.f47563b, false);
+                this.f47565d = true;
+                Unit unit = Unit.f31765a;
             }
         }
     }
@@ -237,15 +237,15 @@ public class o {
     public static abstract class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String[] f48592a;
+        private final String[] f47566a;
 
         public c(String[] tables) {
             Intrinsics.checkNotNullParameter(tables, "tables");
-            this.f48592a = tables;
+            this.f47566a = tables;
         }
 
         public final String[] a() {
-            return this.f48592a;
+            return this.f47566a;
         }
 
         public abstract boolean b();
@@ -257,16 +257,16 @@ public class o {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final c f48593a;
+        private final c f47567a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int[] f48594b;
+        private final int[] f47568b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String[] f48595c;
+        private final String[] f47569c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Set f48596d;
+        private final Set f47570d;
 
         public d(c observer, int[] tableIds, String[] tableNames) {
             boolean z10;
@@ -274,9 +274,9 @@ public class o {
             Intrinsics.checkNotNullParameter(observer, "observer");
             Intrinsics.checkNotNullParameter(tableIds, "tableIds");
             Intrinsics.checkNotNullParameter(tableNames, "tableNames");
-            this.f48593a = observer;
-            this.f48594b = tableIds;
-            this.f48595c = tableNames;
+            this.f47567a = observer;
+            this.f47568b = tableIds;
+            this.f47569c = tableNames;
             if (tableNames.length == 0) {
                 z10 = true;
             } else {
@@ -287,7 +287,7 @@ public class o {
             } else {
                 d10 = x0.d();
             }
-            this.f48596d = d10;
+            this.f47570d = d10;
             if (tableIds.length == tableNames.length) {
                 return;
             }
@@ -295,32 +295,32 @@ public class o {
         }
 
         public final int[] a() {
-            return this.f48594b;
+            return this.f47568b;
         }
 
         public final void b(Set invalidatedTablesIds) {
             Set d10;
             Intrinsics.checkNotNullParameter(invalidatedTablesIds, "invalidatedTablesIds");
-            int[] iArr = this.f48594b;
+            int[] iArr = this.f47568b;
             int length = iArr.length;
             if (length != 0) {
                 int i10 = 0;
                 if (length != 1) {
                     Set b10 = x0.b();
-                    int[] iArr2 = this.f48594b;
+                    int[] iArr2 = this.f47568b;
                     int length2 = iArr2.length;
                     int i11 = 0;
                     while (i10 < length2) {
                         int i12 = i11 + 1;
                         if (invalidatedTablesIds.contains(Integer.valueOf(iArr2[i10]))) {
-                            b10.add(this.f48595c[i11]);
+                            b10.add(this.f47569c[i11]);
                         }
                         i10++;
                         i11 = i12;
                     }
                     d10 = x0.a(b10);
                 } else if (invalidatedTablesIds.contains(Integer.valueOf(iArr[0]))) {
-                    d10 = this.f48596d;
+                    d10 = this.f47570d;
                 } else {
                     d10 = x0.d();
                 }
@@ -328,7 +328,7 @@ public class o {
                 d10 = x0.d();
             }
             if (!d10.isEmpty()) {
-                this.f48593a.c(d10);
+                this.f47567a.c(d10);
             }
         }
 
@@ -336,12 +336,12 @@ public class o {
             Set d10;
             String[] strArr;
             Intrinsics.checkNotNullParameter(tables, "tables");
-            int length = this.f48595c.length;
+            int length = this.f47569c.length;
             if (length != 0) {
                 if (length != 1) {
                     Set b10 = x0.b();
                     for (String str : tables) {
-                        for (String str2 : this.f48595c) {
+                        for (String str2 : this.f47569c) {
                             if (StringsKt.A(str2, str, true)) {
                                 b10.add(str2);
                             }
@@ -353,8 +353,8 @@ public class o {
                     int i10 = 0;
                     while (true) {
                         if (i10 < length2) {
-                            if (StringsKt.A(tables[i10], this.f48595c[0], true)) {
-                                d10 = this.f48596d;
+                            if (StringsKt.A(tables[i10], this.f47569c[0], true)) {
+                                d10 = this.f47570d;
                                 break;
                             }
                             i10++;
@@ -368,7 +368,7 @@ public class o {
                 d10 = x0.d();
             }
             if (!d10.isEmpty()) {
-                this.f48593a.c(d10);
+                this.f47567a.c(d10);
             }
         }
     }
@@ -388,14 +388,14 @@ public class o {
                 } finally {
                 }
             }
-            Unit unit = Unit.f32056a;
-            bs.c.a(y10, null);
+            Unit unit = Unit.f31765a;
+            cs.c.a(y10, null);
             Set a10 = x0.a(b10);
             if (!a10.isEmpty()) {
                 if (o.this.d() != null) {
                     x3.k d10 = o.this.d();
                     if (d10 != null) {
-                        d10.U();
+                        d10.V();
                         return a10;
                     }
                     throw new IllegalArgumentException("Required value was null.");
@@ -421,8 +421,8 @@ public class o {
             if (r2.isEmpty() != false) goto L49;
          */
         /* JADX WARN: Code restructure failed: missing block: B:46:0x00c9, code lost:
-            r0 = r4.f48597d.f();
-            r1 = r4.f48597d;
+            r0 = r4.f47571d.f();
+            r1 = r4.f47571d;
          */
         /* JADX WARN: Code restructure failed: missing block: B:47:0x00d1, code lost:
             monitor-enter(r0);
@@ -440,7 +440,7 @@ public class o {
             r1 = move-exception;
          */
         /* JADX WARN: Code restructure failed: missing block: B:54:0x00f2, code lost:
-            r1 = kotlin.Unit.f32056a;
+            r1 = kotlin.Unit.f31765a;
          */
         /* JADX WARN: Code restructure failed: missing block: B:55:0x00f4, code lost:
             monitor-exit(r0);
@@ -474,16 +474,16 @@ public class o {
         Intrinsics.checkNotNullParameter(shadowTablesMap, "shadowTablesMap");
         Intrinsics.checkNotNullParameter(viewTables, "viewTables");
         Intrinsics.checkNotNullParameter(tableNames, "tableNames");
-        this.f48571a = database;
-        this.f48572b = shadowTablesMap;
-        this.f48573c = viewTables;
-        this.f48577g = new AtomicBoolean(false);
-        this.f48580j = new b(tableNames.length);
-        this.f48581k = new m(database);
-        this.f48582l = new m.b();
-        this.f48584n = new Object();
-        this.f48585o = new Object();
-        this.f48574d = new LinkedHashMap();
+        this.f47545a = database;
+        this.f47546b = shadowTablesMap;
+        this.f47547c = viewTables;
+        this.f47551g = new AtomicBoolean(false);
+        this.f47554j = new b(tableNames.length);
+        this.f47555k = new m(database);
+        this.f47556l = new m.b();
+        this.f47558n = new Object();
+        this.f47559o = new Object();
+        this.f47548d = new LinkedHashMap();
         int length = tableNames.length;
         String[] strArr = new String[length];
         for (int i10 = 0; i10 < length; i10++) {
@@ -492,8 +492,8 @@ public class o {
             Intrinsics.checkNotNullExpressionValue(US, "US");
             String lowerCase = str2.toLowerCase(US);
             Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
-            this.f48574d.put(lowerCase, Integer.valueOf(i10));
-            String str3 = (String) this.f48572b.get(tableNames[i10]);
+            this.f47548d.put(lowerCase, Integer.valueOf(i10));
+            String str3 = (String) this.f47546b.get(tableNames[i10]);
             if (str3 != null) {
                 Intrinsics.checkNotNullExpressionValue(US, "US");
                 str = str3.toLowerCase(US);
@@ -506,33 +506,33 @@ public class o {
             }
             strArr[i10] = lowerCase;
         }
-        this.f48575e = strArr;
-        for (Map.Entry entry : this.f48572b.entrySet()) {
+        this.f47549e = strArr;
+        for (Map.Entry entry : this.f47546b.entrySet()) {
             Locale US2 = Locale.US;
             Intrinsics.checkNotNullExpressionValue(US2, "US");
             String lowerCase2 = ((String) entry.getValue()).toLowerCase(US2);
             Intrinsics.checkNotNullExpressionValue(lowerCase2, "this as java.lang.String).toLowerCase(locale)");
-            if (this.f48574d.containsKey(lowerCase2)) {
+            if (this.f47548d.containsKey(lowerCase2)) {
                 Intrinsics.checkNotNullExpressionValue(US2, "US");
                 String lowerCase3 = ((String) entry.getKey()).toLowerCase(US2);
                 Intrinsics.checkNotNullExpressionValue(lowerCase3, "this as java.lang.String).toLowerCase(locale)");
-                Map map = this.f48574d;
+                Map map = this.f47548d;
                 map.put(lowerCase3, o0.j(map, lowerCase2));
             }
         }
-        this.f48586p = new e();
+        this.f47560p = new e();
     }
 
     private final String[] n(String[] strArr) {
         Set b10 = x0.b();
         for (String str : strArr) {
-            Map map = this.f48573c;
+            Map map = this.f47547c;
             Locale US = Locale.US;
             Intrinsics.checkNotNullExpressionValue(US, "US");
             String lowerCase = str.toLowerCase(US);
             Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
             if (map.containsKey(lowerCase)) {
-                Map map2 = this.f48573c;
+                Map map2 = this.f47547c;
                 Intrinsics.checkNotNullExpressionValue(US, "US");
                 String lowerCase2 = str.toLowerCase(US);
                 Intrinsics.checkNotNullExpressionValue(lowerCase2, "this as java.lang.String).toLowerCase(locale)");
@@ -549,22 +549,22 @@ public class o {
     }
 
     private final void q(x3.g gVar, int i10) {
-        gVar.O("INSERT OR IGNORE INTO room_table_modification_log VALUES(" + i10 + ", 0)");
-        String str = this.f48575e[i10];
-        for (String str2 : f48570r) {
-            String str3 = "CREATE TEMP TRIGGER IF NOT EXISTS " + f48569q.b(str, str2) + " AFTER " + str2 + " ON `" + str + "` BEGIN UPDATE room_table_modification_log SET invalidated = 1 WHERE table_id = " + i10 + " AND invalidated = 0; END";
+        gVar.P("INSERT OR IGNORE INTO room_table_modification_log VALUES(" + i10 + ", 0)");
+        String str = this.f47549e[i10];
+        for (String str2 : f47544r) {
+            String str3 = "CREATE TEMP TRIGGER IF NOT EXISTS " + f47543q.b(str, str2) + " AFTER " + str2 + " ON `" + str + "` BEGIN UPDATE room_table_modification_log SET invalidated = 1 WHERE table_id = " + i10 + " AND invalidated = 0; END";
             Intrinsics.checkNotNullExpressionValue(str3, "StringBuilder().apply(builderAction).toString()");
-            gVar.O(str3);
+            gVar.P(str3);
         }
     }
 
     private final void r(x3.g gVar, int i10) {
         String[] strArr;
-        String str = this.f48575e[i10];
-        for (String str2 : f48570r) {
-            String str3 = "DROP TRIGGER IF EXISTS " + f48569q.b(str, str2);
+        String str = this.f47549e[i10];
+        for (String str2 : f47544r) {
+            String str3 = "DROP TRIGGER IF EXISTS " + f47543q.b(str, str2);
             Intrinsics.checkNotNullExpressionValue(str3, "StringBuilder().apply(builderAction).toString()");
-            gVar.O(str3);
+            gVar.P(str3);
         }
     }
 
@@ -574,7 +574,7 @@ public class o {
         String[] n10 = n(observer.a());
         ArrayList arrayList = new ArrayList(n10.length);
         for (String str : n10) {
-            Map map = this.f48574d;
+            Map map = this.f47548d;
             Locale US = Locale.US;
             Intrinsics.checkNotNullExpressionValue(US, "US");
             String lowerCase = str.toLowerCase(US);
@@ -588,22 +588,22 @@ public class o {
         }
         int[] g12 = CollectionsKt.g1(arrayList);
         d dVar2 = new d(observer, g12, n10);
-        synchronized (this.f48582l) {
-            dVar = (d) this.f48582l.g(observer, dVar2);
+        synchronized (this.f47556l) {
+            dVar = (d) this.f47556l.g(observer, dVar2);
         }
-        if (dVar == null && this.f48580j.b(Arrays.copyOf(g12, g12.length))) {
+        if (dVar == null && this.f47554j.b(Arrays.copyOf(g12, g12.length))) {
             s();
         }
     }
 
     public final boolean c() {
-        if (!this.f48571a.w()) {
+        if (!this.f47545a.w()) {
             return false;
         }
-        if (!this.f48578h) {
-            this.f48571a.m().getWritableDatabase();
+        if (!this.f47552h) {
+            this.f47545a.m().getWritableDatabase();
         }
-        if (!this.f48578h) {
+        if (!this.f47552h) {
             Log.e("ROOM", "database is not initialized even though it is open");
             return false;
         }
@@ -611,54 +611,54 @@ public class o {
     }
 
     public final x3.k d() {
-        return this.f48579i;
+        return this.f47553i;
     }
 
     public final u e() {
-        return this.f48571a;
+        return this.f47545a;
     }
 
     public final m.b f() {
-        return this.f48582l;
+        return this.f47556l;
     }
 
     public final AtomicBoolean g() {
-        return this.f48577g;
+        return this.f47551g;
     }
 
     public final Map h() {
-        return this.f48574d;
+        return this.f47548d;
     }
 
     public final void i(x3.g database) {
         Intrinsics.checkNotNullParameter(database, "database");
-        synchronized (this.f48585o) {
-            if (this.f48578h) {
+        synchronized (this.f47559o) {
+            if (this.f47552h) {
                 Log.e("ROOM", "Invalidation tracker is initialized twice :/.");
                 return;
             }
-            database.O("PRAGMA temp_store = MEMORY;");
-            database.O("PRAGMA recursive_triggers='ON';");
-            database.O("CREATE TEMP TABLE room_table_modification_log (table_id INTEGER PRIMARY KEY, invalidated INTEGER NOT NULL DEFAULT 0)");
+            database.P("PRAGMA temp_store = MEMORY;");
+            database.P("PRAGMA recursive_triggers='ON';");
+            database.P("CREATE TEMP TABLE room_table_modification_log (table_id INTEGER PRIMARY KEY, invalidated INTEGER NOT NULL DEFAULT 0)");
             t(database);
-            this.f48579i = database.k1("UPDATE room_table_modification_log SET invalidated = 0 WHERE invalidated = 1");
-            this.f48578h = true;
-            Unit unit = Unit.f32056a;
+            this.f47553i = database.h1("UPDATE room_table_modification_log SET invalidated = 0 WHERE invalidated = 1");
+            this.f47552h = true;
+            Unit unit = Unit.f31765a;
         }
     }
 
     public final void j(String... tables) {
         Intrinsics.checkNotNullParameter(tables, "tables");
-        synchronized (this.f48582l) {
+        synchronized (this.f47556l) {
             try {
-                for (Map.Entry entry : this.f48582l) {
+                for (Map.Entry entry : this.f47556l) {
                     Intrinsics.checkNotNullExpressionValue(entry, "(observer, wrapper)");
                     d dVar = (d) entry.getValue();
                     if (!((c) entry.getKey()).b()) {
                         dVar.c(tables);
                     }
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -666,31 +666,31 @@ public class o {
     }
 
     public final void k() {
-        synchronized (this.f48585o) {
-            this.f48578h = false;
-            this.f48580j.d();
-            Unit unit = Unit.f32056a;
+        synchronized (this.f47559o) {
+            this.f47552h = false;
+            this.f47554j.d();
+            Unit unit = Unit.f31765a;
         }
     }
 
     public void l() {
-        if (this.f48577g.compareAndSet(false, true)) {
-            r3.c cVar = this.f48576f;
+        if (this.f47551g.compareAndSet(false, true)) {
+            r3.c cVar = this.f47550f;
             if (cVar != null) {
                 cVar.j();
             }
-            this.f48571a.n().execute(this.f48586p);
+            this.f47545a.n().execute(this.f47560p);
         }
     }
 
     public void m(c observer) {
         d dVar;
         Intrinsics.checkNotNullParameter(observer, "observer");
-        synchronized (this.f48582l) {
-            dVar = (d) this.f48582l.h(observer);
+        synchronized (this.f47556l) {
+            dVar = (d) this.f47556l.h(observer);
         }
         if (dVar != null) {
-            b bVar = this.f48580j;
+            b bVar = this.f47554j;
             int[] a10 = dVar.a();
             if (bVar.c(Arrays.copyOf(a10, a10.length))) {
                 s();
@@ -700,7 +700,7 @@ public class o {
 
     public final void o(r3.c autoCloser) {
         Intrinsics.checkNotNullParameter(autoCloser, "autoCloser");
-        this.f48576f = autoCloser;
+        this.f47550f = autoCloser;
         autoCloser.m(new Runnable() { // from class: r3.n
             @Override // java.lang.Runnable
             public final void run() {
@@ -713,26 +713,26 @@ public class o {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(serviceIntent, "serviceIntent");
-        this.f48583m = new r(context, name, serviceIntent, this, this.f48571a.n());
+        this.f47557m = new r(context, name, serviceIntent, this, this.f47545a.n());
     }
 
     public final void s() {
-        if (!this.f48571a.w()) {
+        if (!this.f47545a.w()) {
             return;
         }
-        t(this.f48571a.m().getWritableDatabase());
+        t(this.f47545a.m().getWritableDatabase());
     }
 
     public final void t(x3.g database) {
         Intrinsics.checkNotNullParameter(database, "database");
-        if (!database.R1()) {
+        if (!database.Q1()) {
             try {
-                Lock k10 = this.f48571a.k();
+                Lock k10 = this.f47545a.k();
                 k10.lock();
-                synchronized (this.f48584n) {
-                    int[] a10 = this.f48580j.a();
+                synchronized (this.f47558n) {
+                    int[] a10 = this.f47554j.a();
                     if (a10 != null) {
-                        f48569q.a(database);
+                        f47543q.a(database);
                         int length = a10.length;
                         int i10 = 0;
                         int i11 = 0;
@@ -749,9 +749,9 @@ public class o {
                             i10++;
                             i11 = i13;
                         }
-                        database.j0();
-                        database.v0();
-                        Unit unit = Unit.f32056a;
+                        database.k0();
+                        database.t0();
+                        Unit unit = Unit.f31765a;
                     }
                 }
                 k10.unlock();

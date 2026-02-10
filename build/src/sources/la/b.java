@@ -1,128 +1,51 @@
 package la;
 
-import android.net.Uri;
-import com.facebook.cache.common.CacheKey;
-import com.facebook.common.time.RealtimeSinceBootClock;
-import com.facebook.imagepipeline.common.ImageDecodeOptions;
-import com.facebook.imagepipeline.common.ResizeOptions;
-import com.facebook.imagepipeline.common.RotationOptions;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import com.facebook.common.references.CloseableReference;
+import java.io.IOException;
+import s8.i;
+import s8.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements CacheKey {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final String f35951a;
+public class b {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ResizeOptions f35952b;
+    private static final byte[] f35791b = {-1, -40, -1, -37, 0, 67, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -64, 0, 17, 8};
 
     /* renamed from: c  reason: collision with root package name */
-    private final RotationOptions f35953c;
+    private static final byte[] f35792c = {3, 1, 34, 0, 2, 17, 0, 3, 17, 0, -1, -60, 0, 31, 0, 0, 1, 5, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, -1, -60, 0, -75, 16, 0, 2, 1, 3, 3, 2, 4, 3, 5, 5, 4, 4, 0, 0, 1, 125, 1, 2, 3, 0, 4, 17, 5, 18, 33, 49, 65, 6, 19, 81, 97, 7, 34, 113, 20, 50, -127, -111, -95, 8, 35, 66, -79, -63, 21, 82, -47, -16, 36, 51, 98, 114, -126, 9, 10, 22, 23, 24, 25, 26, 37, 38, 39, 40, 41, 42, 52, 53, 54, 55, 56, 57, 58, 67, 68, 69, 70, 71, 72, 73, 74, 83, 84, 85, 86, 87, 88, 89, 90, 99, 100, 101, 102, 103, 104, 105, 106, 115, 116, 117, 118, 119, 120, 121, 122, -125, -124, -123, -122, -121, -120, -119, -118, -110, -109, -108, -107, -106, -105, -104, -103, -102, -94, -93, -92, -91, -90, -89, -88, -87, -86, -78, -77, -76, -75, -74, -73, -72, -71, -70, -62, -61, -60, -59, -58, -57, -56, -55, -54, -46, -45, -44, -43, -42, -41, -40, -39, -38, -31, -30, -29, -28, -27, -26, -25, -24, -23, -22, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -1, -60, 0, 31, 1, 0, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, -1, -60, 0, -75, 17, 0, 2, 1, 2, 4, 4, 3, 4, 7, 5, 4, 4, 0, 1, 2, 119, 0, 1, 2, 3, 17, 4, 5, 33, 49, 6, 18, 65, 81, 7, 97, 113, 19, 34, 50, -127, 8, 20, 66, -111, -95, -79, -63, 9, 35, 51, 82, -16, 21, 98, 114, -47, 10, 22, 36, 52, -31, 37, -15, 23, 24, 25, 26, 38, 39, 40, 41, 42, 53, 54, 55, 56, 57, 58, 67, 68, 69, 70, 71, 72, 73, 74, 83, 84, 85, 86, 87, 88, 89, 90, 99, 100, 101, 102, 103, 104, 105, 106, 115, 116, 117, 118, 119, 120, 121, 122, -126, -125, -124, -123, -122, -121, -120, -119, -118, -110, -109, -108, -107, -106, -105, -104, -103, -102, -94, -93, -92, -91, -90, -89, -88, -87, -86, -78, -77, -76, -75, -74, -73, -72, -71, -70, -62, -61, -60, -59, -58, -57, -56, -55, -54, -46, -45, -44, -43, -42, -41, -40, -39, -38, -30, -29, -28, -27, -26, -25, -24, -23, -22, -14, -13, -12, -11, -10, -9, -8, -7, -6, -1, -38, 0, 12, 3, 1, 0, 2, 17, 3, 17, 0, 63, 0, -114, -118, 40, -96, 15, -1, -39};
 
-    /* renamed from: d  reason: collision with root package name */
-    private final ImageDecodeOptions f35954d;
+    /* renamed from: a  reason: collision with root package name */
+    private final i f35793a;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final CacheKey f35955e;
+    public b(i iVar) {
+        this.f35793a = iVar;
+    }
 
-    /* renamed from: f  reason: collision with root package name */
-    private final String f35956f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private Object f35957g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private final int f35958h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final long f35959i;
-
-    public b(String sourceString, ResizeOptions resizeOptions, RotationOptions rotationOptions, ImageDecodeOptions imageDecodeOptions, CacheKey cacheKey, String str) {
-        int i10;
-        int i11;
-        Intrinsics.checkNotNullParameter(sourceString, "sourceString");
-        Intrinsics.checkNotNullParameter(rotationOptions, "rotationOptions");
-        Intrinsics.checkNotNullParameter(imageDecodeOptions, "imageDecodeOptions");
-        this.f35951a = sourceString;
-        this.f35952b = resizeOptions;
-        this.f35953c = rotationOptions;
-        this.f35954d = imageDecodeOptions;
-        this.f35955e = cacheKey;
-        this.f35956f = str;
-        int hashCode = sourceString.hashCode() * 31;
-        if (resizeOptions != null) {
-            i10 = resizeOptions.hashCode();
-        } else {
-            i10 = 0;
+    public CloseableReference a(short s10, short s11) {
+        k kVar = null;
+        try {
+            try {
+                i iVar = this.f35793a;
+                byte[] bArr = f35791b;
+                int length = bArr.length;
+                byte[] bArr2 = f35792c;
+                kVar = iVar.e(length + bArr2.length + 4);
+                kVar.write(bArr);
+                kVar.write((byte) (s11 >> 8));
+                kVar.write((byte) (s11 & 255));
+                kVar.write((byte) (s10 >> 8));
+                kVar.write((byte) (s10 & 255));
+                kVar.write(bArr2);
+                CloseableReference H0 = CloseableReference.H0(kVar.a());
+                kVar.close();
+                return H0;
+            } catch (IOException e10) {
+                throw new RuntimeException(e10);
+            }
+        } catch (Throwable th2) {
+            if (kVar != null) {
+                kVar.close();
+            }
+            throw th2;
         }
-        int hashCode2 = (((((hashCode + i10) * 31) + rotationOptions.hashCode()) * 31) + imageDecodeOptions.hashCode()) * 31;
-        if (cacheKey != null) {
-            i11 = cacheKey.hashCode();
-        } else {
-            i11 = 0;
-        }
-        this.f35958h = ((hashCode2 + i11) * 31) + (str != null ? str.hashCode() : 0);
-        this.f35959i = RealtimeSinceBootClock.get().now();
-    }
-
-    @Override // com.facebook.cache.common.CacheKey
-    public String a() {
-        return this.f35951a;
-    }
-
-    @Override // com.facebook.cache.common.CacheKey
-    public boolean b(Uri uri) {
-        Intrinsics.checkNotNullParameter(uri, "uri");
-        String a10 = a();
-        String uri2 = uri.toString();
-        Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
-        return StringsKt.V(a10, uri2, false, 2, null);
-    }
-
-    @Override // com.facebook.cache.common.CacheKey
-    public boolean c() {
-        return false;
-    }
-
-    public final void d(Object obj) {
-        this.f35957g = obj;
-    }
-
-    @Override // com.facebook.cache.common.CacheKey
-    public boolean equals(Object obj) {
-        Class<?> cls;
-        if (this == obj) {
-            return true;
-        }
-        if (obj != null) {
-            cls = obj.getClass();
-        } else {
-            cls = null;
-        }
-        if (!Intrinsics.areEqual(b.class, cls)) {
-            return false;
-        }
-        Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type com.facebook.imagepipeline.cache.BitmapMemoryCacheKey");
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f35951a, bVar.f35951a) && Intrinsics.areEqual(this.f35952b, bVar.f35952b) && Intrinsics.areEqual(this.f35953c, bVar.f35953c) && Intrinsics.areEqual(this.f35954d, bVar.f35954d) && Intrinsics.areEqual(this.f35955e, bVar.f35955e) && Intrinsics.areEqual(this.f35956f, bVar.f35956f)) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // com.facebook.cache.common.CacheKey
-    public int hashCode() {
-        return this.f35958h;
-    }
-
-    public String toString() {
-        String str = this.f35951a;
-        ResizeOptions resizeOptions = this.f35952b;
-        RotationOptions rotationOptions = this.f35953c;
-        ImageDecodeOptions imageDecodeOptions = this.f35954d;
-        CacheKey cacheKey = this.f35955e;
-        String str2 = this.f35956f;
-        return "BitmapMemoryCacheKey(sourceString=" + str + ", resizeOptions=" + resizeOptions + ", rotationOptions=" + rotationOptions + ", imageDecodeOptions=" + imageDecodeOptions + ", postprocessorCacheKey=" + cacheKey + ", postprocessorName=" + str2 + ")";
     }
 }

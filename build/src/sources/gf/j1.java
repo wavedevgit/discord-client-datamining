@@ -1,71 +1,105 @@
 package gf;
 
-import android.content.ComponentName;
-import android.os.Handler;
-import android.os.Message;
-import android.util.Log;
-import java.util.Objects;
-/* JADX INFO: Access modifiers changed from: package-private */
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
+import java.lang.ref.WeakReference;
+import java.util.WeakHashMap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class j1 implements Handler.Callback {
+public final class j1 extends Fragment implements h {
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final WeakHashMap f24338e = new WeakHashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ k1 f25142d;
+    private final i1 f24339d = new i1();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ j1(k1 k1Var, byte[] bArr) {
-        Objects.requireNonNull(k1Var);
-        this.f25142d = k1Var;
+    public static j1 x(FragmentActivity fragmentActivity) {
+        j1 j1Var;
+        FragmentManager supportFragmentManager = fragmentActivity.getSupportFragmentManager();
+        WeakHashMap weakHashMap = f24338e;
+        WeakReference weakReference = (WeakReference) weakHashMap.get(fragmentActivity);
+        if (weakReference != null && (j1Var = (j1) weakReference.get()) != null) {
+            return j1Var;
+        }
+        try {
+            j1 j1Var2 = (j1) supportFragmentManager.o0("SLifecycleFragmentImpl");
+            if (j1Var2 == null || j1Var2.isRemoving()) {
+                j1Var2 = new j1();
+                supportFragmentManager.r().e(j1Var2, "SLifecycleFragmentImpl").h();
+            }
+            weakHashMap.put(fragmentActivity, new WeakReference(j1Var2));
+            return j1Var2;
+        } catch (ClassCastException e10) {
+            throw new IllegalStateException("Fragment with tag SLifecycleFragmentImpl is not a SupportLifecycleFragmentImpl", e10);
+        }
     }
 
-    @Override // android.os.Handler.Callback
-    public final boolean handleMessage(Message message) {
-        int i10 = message.what;
-        if (i10 != 0) {
-            if (i10 != 1) {
-                return false;
-            }
-            k1 k1Var = this.f25142d;
-            synchronized (k1Var.f()) {
-                try {
-                    h1 h1Var = (h1) message.obj;
-                    i1 i1Var = (i1) k1Var.f().get(h1Var);
-                    if (i1Var != null && i1Var.e() == 3) {
-                        String valueOf = String.valueOf(h1Var);
-                        StringBuilder sb2 = new StringBuilder(valueOf.length() + 47);
-                        sb2.append("Timeout waiting for ServiceConnection callback ");
-                        sb2.append(valueOf);
-                        Log.e("GmsClientSupervisor", sb2.toString(), new Exception());
-                        ComponentName i11 = i1Var.i();
-                        if (i11 == null) {
-                            i11 = h1Var.c();
-                        }
-                        if (i11 == null) {
-                            String b10 = h1Var.b();
-                            q.l(b10);
-                            i11 = new ComponentName(b10, "unknown");
-                        }
-                        i1Var.onServiceDisconnected(i11);
-                    }
-                } finally {
-                }
-            }
-            return true;
-        }
-        k1 k1Var2 = this.f25142d;
-        synchronized (k1Var2.f()) {
-            try {
-                h1 h1Var2 = (h1) message.obj;
-                i1 i1Var2 = (i1) k1Var2.f().get(h1Var2);
-                if (i1Var2 != null && i1Var2.g()) {
-                    if (i1Var2.d()) {
-                        i1Var2.a("GmsClientSupervisor");
-                    }
-                    k1Var2.f().remove(h1Var2);
-                }
-            } finally {
-            }
-        }
-        return true;
+    @Override // gf.h
+    public final g b(String str, Class cls) {
+        return this.f24339d.a(str, cls);
+    }
+
+    @Override // gf.h
+    public final void d(String str, g gVar) {
+        this.f24339d.b(str, gVar);
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public final void dump(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
+        super.dump(str, fileDescriptor, printWriter, strArr);
+        this.f24339d.j(str, fileDescriptor, printWriter, strArr);
+    }
+
+    @Override // gf.h
+    public final Activity n() {
+        return getActivity();
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public final void onActivityResult(int i10, int i11, Intent intent) {
+        super.onActivityResult(i10, i11, intent);
+        this.f24339d.f(i10, i11, intent);
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public final void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        this.f24339d.c(bundle);
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public final void onDestroy() {
+        super.onDestroy();
+        this.f24339d.i();
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public final void onResume() {
+        super.onResume();
+        this.f24339d.e();
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public final void onSaveInstanceState(Bundle bundle) {
+        super.onSaveInstanceState(bundle);
+        this.f24339d.g(bundle);
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public final void onStart() {
+        super.onStart();
+        this.f24339d.d();
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public final void onStop() {
+        super.onStop();
+        this.f24339d.h();
     }
 }

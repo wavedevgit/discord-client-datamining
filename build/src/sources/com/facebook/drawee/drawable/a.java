@@ -9,70 +9,70 @@ import android.graphics.drawable.Drawable;
 public abstract class a extends Drawable implements Drawable.Callback, TransformCallback, a0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private TransformCallback f9925d;
+    private TransformCallback f10065d;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Drawable[] f9927i;
+    private final Drawable[] f10067i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final c[] f9928o;
+    private final c[] f10068o;
 
     /* renamed from: e  reason: collision with root package name */
-    private final DrawableProperties f9926e = new DrawableProperties();
+    private final DrawableProperties f10066e = new DrawableProperties();
 
     /* renamed from: p  reason: collision with root package name */
-    private final Rect f9929p = new Rect();
+    private final Rect f10069p = new Rect();
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f9930q = false;
+    private boolean f10070q = false;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f9931r = false;
+    private boolean f10071r = false;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f9932s = false;
+    private boolean f10072s = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.facebook.drawee.drawable.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public class C0145a implements c {
+    public class C0172a implements c {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f9933d;
+        final /* synthetic */ int f10073d;
 
-        C0145a(int i10) {
-            this.f9933d = i10;
+        C0172a(int i10) {
+            this.f10073d = i10;
         }
 
         @Override // com.facebook.drawee.drawable.c
         public Drawable getDrawable() {
-            return a.this.b(this.f9933d);
+            return a.this.b(this.f10073d);
         }
 
         @Override // com.facebook.drawee.drawable.c
         public Drawable setDrawable(Drawable drawable) {
-            return a.this.e(this.f9933d, drawable);
+            return a.this.e(this.f10073d, drawable);
         }
     }
 
     public a(Drawable[] drawableArr) {
         int i10 = 0;
-        o8.j.g(drawableArr);
-        this.f9927i = drawableArr;
+        p8.j.g(drawableArr);
+        this.f10067i = drawableArr;
         while (true) {
-            Drawable[] drawableArr2 = this.f9927i;
+            Drawable[] drawableArr2 = this.f10067i;
             if (i10 < drawableArr2.length) {
                 d.d(drawableArr2[i10], this, this);
                 i10++;
             } else {
-                this.f9928o = new c[drawableArr2.length];
+                this.f10068o = new c[drawableArr2.length];
                 return;
             }
         }
     }
 
     private c a(int i10) {
-        return new C0145a(i10);
+        return new C0172a(i10);
     }
 
     public Drawable b(int i10) {
@@ -83,12 +83,12 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
         } else {
             z10 = false;
         }
-        o8.j.b(Boolean.valueOf(z10));
-        if (i10 < this.f9927i.length) {
+        p8.j.b(Boolean.valueOf(z10));
+        if (i10 < this.f10067i.length) {
             z11 = true;
         }
-        o8.j.b(Boolean.valueOf(z11));
-        return this.f9927i[i10];
+        p8.j.b(Boolean.valueOf(z11));
+        return this.f10067i[i10];
     }
 
     public c c(int i10) {
@@ -99,20 +99,20 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
         } else {
             z10 = false;
         }
-        o8.j.b(Boolean.valueOf(z10));
-        if (i10 < this.f9928o.length) {
+        p8.j.b(Boolean.valueOf(z10));
+        if (i10 < this.f10068o.length) {
             z11 = true;
         }
-        o8.j.b(Boolean.valueOf(z11));
-        c[] cVarArr = this.f9928o;
+        p8.j.b(Boolean.valueOf(z11));
+        c[] cVarArr = this.f10068o;
         if (cVarArr[i10] == null) {
             cVarArr[i10] = a(i10);
         }
-        return this.f9928o[i10];
+        return this.f10068o[i10];
     }
 
     public int d() {
-        return this.f9927i.length;
+        return this.f10067i.length;
     }
 
     public Drawable e(int i10, Drawable drawable) {
@@ -123,23 +123,23 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
         } else {
             z10 = false;
         }
-        o8.j.b(Boolean.valueOf(z10));
-        if (i10 >= this.f9927i.length) {
+        p8.j.b(Boolean.valueOf(z10));
+        if (i10 >= this.f10067i.length) {
             z11 = false;
         }
-        o8.j.b(Boolean.valueOf(z11));
-        Drawable drawable2 = this.f9927i[i10];
+        p8.j.b(Boolean.valueOf(z11));
+        Drawable drawable2 = this.f10067i[i10];
         if (drawable != drawable2) {
-            if (drawable != null && this.f9932s) {
+            if (drawable != null && this.f10072s) {
                 drawable.mutate();
             }
-            d.d(this.f9927i[i10], null, null);
+            d.d(this.f10067i[i10], null, null);
             d.d(drawable, null, null);
-            d.e(drawable, this.f9926e);
+            d.e(drawable, this.f10066e);
             d.a(drawable, this);
             d.d(drawable, this, this);
-            this.f9931r = false;
-            this.f9927i[i10] = drawable;
+            this.f10071r = false;
+            this.f10067i[i10] = drawable;
             invalidateSelf();
         }
         return drawable2;
@@ -150,7 +150,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
         int i10 = 0;
         int i11 = -1;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 >= drawableArr.length) {
                 break;
             }
@@ -171,7 +171,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
         int i10 = 0;
         int i11 = -1;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 >= drawableArr.length) {
                 break;
             }
@@ -189,13 +189,13 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
 
     @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        if (this.f9927i.length == 0) {
+        if (this.f10067i.length == 0) {
             return -2;
         }
         int i10 = 1;
         int i11 = -1;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null) {
@@ -215,9 +215,9 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
         rect.top = 0;
         rect.right = 0;
         rect.bottom = 0;
-        Rect rect2 = this.f9929p;
+        Rect rect2 = this.f10069p;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null) {
@@ -236,7 +236,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
 
     @Override // com.facebook.drawee.drawable.TransformCallback
     public void getRootBounds(RectF rectF) {
-        TransformCallback transformCallback = this.f9925d;
+        TransformCallback transformCallback = this.f10065d;
         if (transformCallback != null) {
             transformCallback.getRootBounds(rectF);
         } else {
@@ -246,7 +246,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
 
     @Override // com.facebook.drawee.drawable.TransformCallback
     public void getTransform(Matrix matrix) {
-        TransformCallback transformCallback = this.f9925d;
+        TransformCallback transformCallback = this.f10065d;
         if (transformCallback != null) {
             transformCallback.getTransform(matrix);
         } else {
@@ -261,33 +261,33 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
 
     @Override // android.graphics.drawable.Drawable
     public boolean isStateful() {
-        if (!this.f9931r) {
-            this.f9930q = false;
+        if (!this.f10071r) {
+            this.f10070q = false;
             int i10 = 0;
             while (true) {
-                Drawable[] drawableArr = this.f9927i;
+                Drawable[] drawableArr = this.f10067i;
                 boolean z10 = true;
                 if (i10 >= drawableArr.length) {
                     break;
                 }
                 Drawable drawable = drawableArr[i10];
-                boolean z11 = this.f9930q;
+                boolean z11 = this.f10070q;
                 if (drawable == null || !drawable.isStateful()) {
                     z10 = false;
                 }
-                this.f9930q = z11 | z10;
+                this.f10070q = z11 | z10;
                 i10++;
             }
-            this.f9931r = true;
+            this.f10071r = true;
         }
-        return this.f9930q;
+        return this.f10070q;
     }
 
     @Override // android.graphics.drawable.Drawable
     public Drawable mutate() {
         int i10 = 0;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null) {
@@ -295,7 +295,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
                 }
                 i10++;
             } else {
-                this.f9932s = true;
+                this.f10072s = true;
                 return this;
             }
         }
@@ -305,7 +305,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
     protected void onBoundsChange(Rect rect) {
         int i10 = 0;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null) {
@@ -323,7 +323,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
         int i11 = 0;
         boolean z10 = false;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i11 < drawableArr.length) {
                 Drawable drawable = drawableArr[i11];
                 if (drawable != null && drawable.setLevel(i10)) {
@@ -341,7 +341,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
         int i10 = 0;
         boolean z10 = false;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null && drawable.setState(iArr)) {
@@ -361,10 +361,10 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f9926e.c(colorFilter);
+        this.f10066e.c(colorFilter);
         int i10 = 0;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null) {
@@ -379,10 +379,10 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
 
     @Override // android.graphics.drawable.Drawable
     public void setDither(boolean z10) {
-        this.f9926e.d(z10);
+        this.f10066e.d(z10);
         int i10 = 0;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null) {
@@ -397,10 +397,10 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
 
     @Override // android.graphics.drawable.Drawable
     public void setFilterBitmap(boolean z10) {
-        this.f9926e.e(z10);
+        this.f10066e.e(z10);
         int i10 = 0;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null) {
@@ -417,7 +417,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
     public void setHotspot(float f10, float f11) {
         int i10 = 0;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null) {
@@ -432,7 +432,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
 
     @Override // com.facebook.drawee.drawable.a0
     public void setTransformCallback(TransformCallback transformCallback) {
-        this.f9925d = transformCallback;
+        this.f10065d = transformCallback;
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -440,7 +440,7 @@ public abstract class a extends Drawable implements Drawable.Callback, Transform
         boolean visible = super.setVisible(z10, z11);
         int i10 = 0;
         while (true) {
-            Drawable[] drawableArr = this.f9927i;
+            Drawable[] drawableArr = this.f10067i;
             if (i10 < drawableArr.length) {
                 Drawable drawable = drawableArr[i10];
                 if (drawable != null) {

@@ -1,23 +1,42 @@
 package kt;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import jt.e;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.json.JsonElement;
-import kotlinx.serialization.json.JsonObject;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class x {
+public final class x implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f35576a = new LinkedHashMap();
+    public static final x f35235a = new x();
 
-    public final JsonObject a() {
-        return new JsonObject(this.f35576a);
+    /* renamed from: b  reason: collision with root package name */
+    private static final SerialDescriptor f35236b = new g2("kotlin.Double", e.d.f30479a);
+
+    private x() {
     }
 
-    public final JsonElement b(String key, JsonElement element) {
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(element, "element");
-        return (JsonElement) this.f35576a.put(key, element);
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: a */
+    public Double deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        return Double.valueOf(decoder.v());
+    }
+
+    public void b(Encoder encoder, double d10) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        encoder.f(d10);
+    }
+
+    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return f35236b;
+    }
+
+    @Override // gt.o
+    public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
+        b(encoder, ((Number) obj).doubleValue());
     }
 }

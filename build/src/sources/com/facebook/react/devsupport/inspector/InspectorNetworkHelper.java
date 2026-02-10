@@ -1,8 +1,8 @@
 package com.facebook.react.devsupport.inspector;
 
-import bs.c;
-import bu.b;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import cs.c;
+import cu.b;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -44,7 +44,7 @@ public final class InspectorNetworkHelper {
                 okHttpClient = null;
             }
             okHttpClient.a(b10).J0(new b() { // from class: com.facebook.react.devsupport.inspector.InspectorNetworkHelper$loadNetworkResource$1
-                @Override // bu.b
+                @Override // cu.b
                 public void onFailure(Call call, IOException e10) {
                     Intrinsics.checkNotNullParameter(call, "call");
                     Intrinsics.checkNotNullParameter(e10, "e");
@@ -54,7 +54,7 @@ public final class InspectorNetworkHelper {
                     InspectorNetworkRequestListener.this.onError(e10.getMessage());
                 }
 
-                @Override // bu.b
+                @Override // cu.b
                 public void onResponse(Call call, Response response) {
                     Intrinsics.checkNotNullParameter(call, "call");
                     Intrinsics.checkNotNullParameter(response, "response");
@@ -77,11 +77,11 @@ public final class InspectorNetworkHelper {
                                 }
                                 inspectorNetworkRequestListener.onData(new String(bArr, 0, read, Charsets.UTF_8));
                             }
-                            Unit unit = Unit.f32056a;
+                            Unit unit = Unit.f31765a;
                             c.a(byteStream, null);
                         }
                         inspectorNetworkRequestListener.onCompletion();
-                        Unit unit2 = Unit.f32056a;
+                        Unit unit2 = Unit.f31765a;
                         c.a(a10, null);
                     } catch (IOException e10) {
                         InspectorNetworkRequestListener.this.onError(e10.getMessage());

@@ -1,4 +1,34 @@
 package og;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c8 {
+final class c8 implements zi.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final c8 f40819a = new c8();
+
+    static {
+        c.b a10 = zi.c.a("modelType");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("isDownloaded");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("modelName");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
+    }
+
+    private c8() {
+    }
+
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
+    }
 }

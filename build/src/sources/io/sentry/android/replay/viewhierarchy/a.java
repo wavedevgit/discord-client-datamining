@@ -8,27 +8,27 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.text.StringsKt;
-import qr.l;
+import rr.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f27907a = new a();
+    public static final a f28107a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f27908b = l.a(C0396a.f27910d);
+    private static final Lazy f28108b = l.a(C0422a.f28110d);
 
     /* renamed from: c  reason: collision with root package name */
-    public static final int f27909c = 8;
+    public static final int f28109c = 8;
 
     /* renamed from: io.sentry.android.replay.viewhierarchy.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class C0396a extends Lambda implements Function0 {
+    static final class C0422a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0396a f27910d = new C0396a();
+        public static final C0422a f28110d = new C0422a();
 
-        C0396a() {
+        C0422a() {
             super(0);
         }
 

@@ -1,121 +1,73 @@
 package bh;
-
-import android.animation.Animator;
-import android.animation.TimeInterpolator;
-import android.animation.ValueAnimator;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.DecelerateInterpolator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class h {
+public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private long f6767a;
+    public static int f6739a = 2131558456;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f6768b;
+    public static int f6740b = 2131558457;
 
     /* renamed from: c  reason: collision with root package name */
-    private TimeInterpolator f6769c;
+    public static int f6741c = 2131558458;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f6770d;
+    public static int f6742d = 2131558467;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f6771e;
+    public static int f6743e = 2131558468;
 
-    public h(long j10, long j11) {
-        this.f6769c = null;
-        this.f6770d = 0;
-        this.f6771e = 1;
-        this.f6767a = j10;
-        this.f6768b = j11;
-    }
+    /* renamed from: f  reason: collision with root package name */
+    public static int f6744f = 2131558469;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static h b(ValueAnimator valueAnimator) {
-        h hVar = new h(valueAnimator.getStartDelay(), valueAnimator.getDuration(), f(valueAnimator));
-        hVar.f6770d = valueAnimator.getRepeatCount();
-        hVar.f6771e = valueAnimator.getRepeatMode();
-        return hVar;
-    }
+    /* renamed from: g  reason: collision with root package name */
+    public static int f6745g = 2131558521;
 
-    private static TimeInterpolator f(ValueAnimator valueAnimator) {
-        TimeInterpolator interpolator = valueAnimator.getInterpolator();
-        if (!(interpolator instanceof AccelerateDecelerateInterpolator) && interpolator != null) {
-            if (interpolator instanceof AccelerateInterpolator) {
-                return a.f6756c;
-            }
-            if (interpolator instanceof DecelerateInterpolator) {
-                return a.f6757d;
-            }
-            return interpolator;
-        }
-        return a.f6755b;
-    }
+    /* renamed from: h  reason: collision with root package name */
+    public static int f6746h = 2131558522;
 
-    public void a(Animator animator) {
-        animator.setStartDelay(c());
-        animator.setDuration(d());
-        animator.setInterpolator(e());
-        if (animator instanceof ValueAnimator) {
-            ValueAnimator valueAnimator = (ValueAnimator) animator;
-            valueAnimator.setRepeatCount(g());
-            valueAnimator.setRepeatMode(h());
-        }
-    }
+    /* renamed from: i  reason: collision with root package name */
+    public static int f6747i = 2131558523;
 
-    public long c() {
-        return this.f6767a;
-    }
+    /* renamed from: j  reason: collision with root package name */
+    public static int f6748j = 2131558525;
 
-    public long d() {
-        return this.f6768b;
-    }
+    /* renamed from: k  reason: collision with root package name */
+    public static int f6749k = 2131558526;
 
-    public TimeInterpolator e() {
-        TimeInterpolator timeInterpolator = this.f6769c;
-        if (timeInterpolator != null) {
-            return timeInterpolator;
-        }
-        return a.f6755b;
-    }
+    /* renamed from: l  reason: collision with root package name */
+    public static int f6750l = 2131558527;
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof h)) {
-            return false;
-        }
-        h hVar = (h) obj;
-        if (c() != hVar.c() || d() != hVar.d() || g() != hVar.g() || h() != hVar.h()) {
-            return false;
-        }
-        return e().getClass().equals(hVar.e().getClass());
-    }
+    /* renamed from: m  reason: collision with root package name */
+    public static int f6751m = 2131558556;
 
-    public int g() {
-        return this.f6770d;
-    }
+    /* renamed from: n  reason: collision with root package name */
+    public static int f6752n = 2131558557;
 
-    public int h() {
-        return this.f6771e;
-    }
+    /* renamed from: o  reason: collision with root package name */
+    public static int f6753o = 2131558558;
 
-    public int hashCode() {
-        return (((((((((int) (c() ^ (c() >>> 32))) * 31) + ((int) (d() ^ (d() >>> 32)))) * 31) + e().getClass().hashCode()) * 31) + g()) * 31) + h();
-    }
+    /* renamed from: p  reason: collision with root package name */
+    public static int f6754p = 2131558560;
 
-    public String toString() {
-        return '\n' + getClass().getName() + '{' + Integer.toHexString(System.identityHashCode(this)) + " delay: " + c() + " duration: " + d() + " interpolator: " + e().getClass() + " repeatCount: " + g() + " repeatMode: " + h() + "}\n";
-    }
+    /* renamed from: q  reason: collision with root package name */
+    public static int f6755q = 2131558562;
 
-    public h(long j10, long j11, TimeInterpolator timeInterpolator) {
-        this.f6770d = 0;
-        this.f6771e = 1;
-        this.f6767a = j10;
-        this.f6768b = j11;
-        this.f6769c = timeInterpolator;
-    }
+    /* renamed from: r  reason: collision with root package name */
+    public static int f6756r = 2131558565;
+
+    /* renamed from: s  reason: collision with root package name */
+    public static int f6757s = 2131558566;
+
+    /* renamed from: t  reason: collision with root package name */
+    public static int f6758t = 2131558567;
+
+    /* renamed from: u  reason: collision with root package name */
+    public static int f6759u = 2131558568;
+
+    /* renamed from: v  reason: collision with root package name */
+    public static int f6760v = 2131558571;
+
+    /* renamed from: w  reason: collision with root package name */
+    public static int f6761w = 2131558572;
 }

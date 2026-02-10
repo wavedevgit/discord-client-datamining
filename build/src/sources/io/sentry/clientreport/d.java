@@ -6,23 +6,23 @@ import io.sentry.util.y;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f28053a;
+    private final String f28253a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f28054b;
+    private final String f28254b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(String str, String str2) {
-        this.f28053a = str;
-        this.f28054b = str2;
+        this.f28253a = str;
+        this.f28254b = str2;
     }
 
     public String a() {
-        return this.f28054b;
+        return this.f28254b;
     }
 
     public String b() {
-        return this.f28053a;
+        return this.f28253a;
     }
 
     public boolean equals(Object obj) {

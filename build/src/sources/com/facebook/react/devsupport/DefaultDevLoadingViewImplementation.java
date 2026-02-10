@@ -69,7 +69,7 @@ public final class DefaultDevLoadingViewImplementation implements DevLoadingView
         }
         Activity currentActivity = this.reactInstanceDevHelper.getCurrentActivity();
         if (currentActivity == null) {
-            p8.a.m(ReactConstants.TAG, "Unable to display loading message because react activity isn't available");
+            q8.a.m(ReactConstants.TAG, "Unable to display loading message because react activity isn't available");
             return;
         }
         try {
@@ -88,7 +88,7 @@ public final class DefaultDevLoadingViewImplementation implements DevLoadingView
             this.devLoadingView = textView;
             this.devLoadingPopup = popupWindow2;
         } catch (WindowManager.BadTokenException unused) {
-            p8.a.m(ReactConstants.TAG, "Unable to display loading message because react activity isn't active, message: " + str);
+            q8.a.m(ReactConstants.TAG, "Unable to display loading message because react activity isn't active, message: " + str);
         }
     }
 

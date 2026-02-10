@@ -1,84 +1,93 @@
 package jt;
 
-import java.util.Iterator;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a implements KSerializer {
-    public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
+public final class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final String f30464a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private List f30465b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final List f30466c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Set f30467d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final List f30468e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final List f30469f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final List f30470g;
+
+    public a(String serialName) {
+        Intrinsics.checkNotNullParameter(serialName, "serialName");
+        this.f30464a = serialName;
+        this.f30465b = CollectionsKt.l();
+        this.f30466c = new ArrayList();
+        this.f30467d = new HashSet();
+        this.f30468e = new ArrayList();
+        this.f30469f = new ArrayList();
+        this.f30470g = new ArrayList();
     }
 
-    public static /* synthetic */ void i(a aVar, kotlinx.serialization.encoding.c cVar, int i10, Object obj, boolean z10, int i11, Object obj2) {
-        if (obj2 == null) {
-            if ((i11 & 8) != 0) {
-                z10 = true;
-            }
-            aVar.h(cVar, i10, obj, z10);
+    public static /* synthetic */ void b(a aVar, String str, SerialDescriptor serialDescriptor, List list, boolean z10, int i10, Object obj) {
+        if ((i10 & 4) != 0) {
+            list = CollectionsKt.l();
+        }
+        if ((i10 & 8) != 0) {
+            z10 = false;
+        }
+        aVar.a(str, serialDescriptor, list, z10);
+    }
+
+    public final void a(String elementName, SerialDescriptor descriptor, List annotations, boolean z10) {
+        Intrinsics.checkNotNullParameter(elementName, "elementName");
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        Intrinsics.checkNotNullParameter(annotations, "annotations");
+        if (this.f30467d.add(elementName)) {
+            this.f30466c.add(elementName);
+            this.f30468e.add(descriptor);
+            this.f30469f.add(annotations);
+            this.f30470g.add(Boolean.valueOf(z10));
             return;
         }
-        throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: readElement");
+        throw new IllegalArgumentException(("Element with name '" + elementName + "' is already registered in " + this.f30464a).toString());
     }
 
-    private final int j(kotlinx.serialization.encoding.c cVar, Object obj) {
-        int k10 = cVar.k(getDescriptor());
-        c(obj, k10);
-        return k10;
+    public final List c() {
+        return this.f30465b;
     }
 
-    protected abstract Object a();
-
-    protected abstract int b(Object obj);
-
-    protected abstract void c(Object obj, int i10);
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public abstract Iterator d(Object obj);
-
-    @Override // kotlinx.serialization.DeserializationStrategy
-    public Object deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return f(decoder, null);
+    public final List d() {
+        return this.f30469f;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public abstract int e(Object obj);
-
-    public final Object f(Decoder decoder, Object obj) {
-        Object a10;
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        if (obj == null || (a10 = k(obj)) == null) {
-            a10 = a();
-        }
-        Object obj2 = a10;
-        int b10 = b(obj2);
-        kotlinx.serialization.encoding.c b11 = decoder.b(getDescriptor());
-        if (!b11.p()) {
-            while (true) {
-                int o10 = b11.o(getDescriptor());
-                if (o10 == -1) {
-                    break;
-                }
-                i(this, b11, b10 + o10, obj2, false, 8, null);
-            }
-        } else {
-            g(b11, obj2, b10, j(b11, obj2));
-        }
-        b11.c(getDescriptor());
-        return l(obj2);
+    public final List e() {
+        return this.f30468e;
     }
 
-    protected abstract void g(kotlinx.serialization.encoding.c cVar, Object obj, int i10, int i11);
+    public final List f() {
+        return this.f30466c;
+    }
 
-    protected abstract void h(kotlinx.serialization.encoding.c cVar, int i10, Object obj, boolean z10);
+    public final List g() {
+        return this.f30470g;
+    }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public abstract Object k(Object obj);
-
-    protected abstract Object l(Object obj);
-
-    private a() {
+    public final void h(List list) {
+        Intrinsics.checkNotNullParameter(list, "<set-?>");
+        this.f30465b = list;
     }
 }

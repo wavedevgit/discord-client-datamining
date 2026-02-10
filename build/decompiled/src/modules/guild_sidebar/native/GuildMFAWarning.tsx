@@ -25,13 +25,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*() { // Environment: var2
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun102650: for (var _fun102650_ip = 0;;) switch (_fun102650_ip) {
+                _fun102628: for (var _fun102628_ip = 0;;) switch (_fun102628_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun102650_ip = 123;
-                            continue _fun102650
+                            _fun102628_ip = 123;
+                            continue _fun102628
                         }
                     case 7:
                         var5 = _closure1_slot0;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 54:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                         if (var4) {
-                            _fun102650_ip = 120;
-                            continue _fun102650
+                            _fun102628_ip = 120;
+                            continue _fun102628
                         }
                     case 60:
                         var7 = var1.default;
@@ -262,4 +262,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getScaledGuildMFAWarningHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 660, 33, 1297, 671, 7049, 1686, 1307, 3146, 4904, 13373, 3942, 1234, 4878, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 660, 33, 1297, 671, 7050, 1686, 1307, 3146, 4904, 13360, 3942, 1234, 4878, 2]);

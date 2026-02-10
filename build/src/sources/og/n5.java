@@ -1,57 +1,34 @@
 package og;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class n5 implements yi.d {
+final class n5 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n5 f42359a = new n5();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42360b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42361c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42362d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42363e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f42364f;
+    static final n5 f41175a = new n5();
 
     static {
-        c.b a10 = yi.c.a("inferenceCommonLogEvent");
-        f fVar = new f();
-        fVar.a(1);
-        f42360b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("smartReplies");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42361c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("resultStatus");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42362d = a12.b(fVar3.b()).a();
-        c.b a13 = yi.c.a("suggestionsCount");
-        f fVar4 = new f();
-        fVar4.a(4);
-        f42363e = a13.b(fVar4.b()).a();
-        c.b a14 = yi.c.a("blacklistErrorCode");
-        f fVar5 = new f();
-        fVar5.a(5);
-        f42364f = a14.b(fVar5.b()).a();
+        c.b a10 = zi.c.a("logEventKey");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("eventCount");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("inferenceDurationStats");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
     private n5() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
+        zi.e eVar = (zi.e) obj2;
         throw null;
     }
 }

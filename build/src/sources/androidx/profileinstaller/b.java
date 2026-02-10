@@ -18,63 +18,63 @@ import java.util.concurrent.Executor;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AssetManager f5092a;
+    private final AssetManager f4789a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f5093b;
+    private final Executor f4790b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f.c f5094c;
+    private final f.c f4791c;
 
     /* renamed from: e  reason: collision with root package name */
-    private final File f5096e;
+    private final File f4793e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f5097f;
+    private final String f4794f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f5098g;
+    private final String f4795g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f5099h;
+    private final String f4796h;
 
     /* renamed from: j  reason: collision with root package name */
-    private c[] f5101j;
+    private c[] f4798j;
 
     /* renamed from: k  reason: collision with root package name */
-    private byte[] f5102k;
+    private byte[] f4799k;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f5100i = false;
+    private boolean f4797i = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private final byte[] f5095d = d();
+    private final byte[] f4792d = d();
 
     public b(AssetManager assetManager, Executor executor, f.c cVar, String str, String str2, String str3, File file) {
-        this.f5092a = assetManager;
-        this.f5093b = executor;
-        this.f5094c = cVar;
-        this.f5097f = str;
-        this.f5098g = str2;
-        this.f5099h = str3;
-        this.f5096e = file;
+        this.f4789a = assetManager;
+        this.f4790b = executor;
+        this.f4791c = cVar;
+        this.f4794f = str;
+        this.f4795g = str2;
+        this.f4796h = str3;
+        this.f4793e = file;
     }
 
     private b b(c[] cVarArr, byte[] bArr) {
         InputStream g10;
         try {
-            g10 = g(this.f5092a, this.f5099h);
+            g10 = g(this.f4789a, this.f4796h);
         } catch (FileNotFoundException e10) {
-            this.f5094c.a(9, e10);
+            this.f4791c.a(9, e10);
         } catch (IOException e11) {
-            this.f5094c.a(7, e11);
+            this.f4791c.a(7, e11);
         } catch (IllegalStateException e12) {
-            this.f5101j = null;
-            this.f5094c.a(8, e12);
+            this.f4798j = null;
+            this.f4791c.a(8, e12);
         }
         if (g10 != null) {
             try {
-                this.f5101j = g.r(g10, g.p(g10, g.f5122b), bArr, cVarArr);
+                this.f4798j = g.r(g10, g.p(g10, g.f4819b), bArr, cVarArr);
                 g10.close();
                 return this;
             } catch (Throwable th2) {
@@ -93,7 +93,7 @@ public class b {
     }
 
     private void c() {
-        if (this.f5100i) {
+        if (this.f4797i) {
             return;
         }
         throw new IllegalStateException("This device doesn't support aot. Did you call deviceSupportsAotProfile()?");
@@ -102,20 +102,20 @@ public class b {
     private static byte[] d() {
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 31) {
-            return i.f5134a;
+            return i.f4831a;
         }
         switch (i10) {
             case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
             case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
-                return i.f5138e;
+                return i.f4835e;
             case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
-                return i.f5137d;
+                return i.f4834d;
             case 27:
-                return i.f5136c;
+                return i.f4833c;
             case 28:
             case 29:
             case 30:
-                return i.f5135b;
+                return i.f4832b;
             default:
                 return null;
         }
@@ -123,12 +123,12 @@ public class b {
 
     private InputStream f(AssetManager assetManager) {
         try {
-            return g(assetManager, this.f5098g);
+            return g(assetManager, this.f4795g);
         } catch (FileNotFoundException e10) {
-            this.f5094c.a(6, e10);
+            this.f4791c.a(6, e10);
             return null;
         } catch (IOException e11) {
-            this.f5094c.a(7, e11);
+            this.f4791c.a(7, e11);
             return null;
         }
     }
@@ -139,7 +139,7 @@ public class b {
         } catch (FileNotFoundException e10) {
             String message = e10.getMessage();
             if (message != null && message.contains("compressed")) {
-                this.f5094c.b(5, null);
+                this.f4791c.b(5, null);
             }
             return null;
         }
@@ -149,25 +149,25 @@ public class b {
         try {
             try {
                 try {
-                    c[] x10 = g.x(inputStream, g.p(inputStream, g.f5121a), this.f5097f);
+                    c[] x10 = g.x(inputStream, g.p(inputStream, g.f4818a), this.f4794f);
                     try {
                         inputStream.close();
                         return x10;
                     } catch (IOException e10) {
-                        this.f5094c.a(7, e10);
+                        this.f4791c.a(7, e10);
                         return x10;
                     }
                 } catch (IllegalStateException e11) {
-                    this.f5094c.a(8, e11);
+                    this.f4791c.a(8, e11);
                     try {
                         inputStream.close();
                     } catch (IOException e12) {
-                        this.f5094c.a(7, e12);
+                        this.f4791c.a(7, e12);
                     }
                     return null;
                 }
             } catch (IOException e13) {
-                this.f5094c.a(7, e13);
+                this.f4791c.a(7, e13);
                 inputStream.close();
                 return null;
             }
@@ -175,7 +175,7 @@ public class b {
             try {
                 inputStream.close();
             } catch (IOException e14) {
-                this.f5094c.a(7, e14);
+                this.f4791c.a(7, e14);
             }
             throw th2;
         }
@@ -190,27 +190,27 @@ public class b {
     }
 
     private void k(final int i10, final Object obj) {
-        this.f5093b.execute(new Runnable() { // from class: p3.a
+        this.f4790b.execute(new Runnable() { // from class: p3.a
             @Override // java.lang.Runnable
             public final void run() {
-                androidx.profileinstaller.b.this.f5094c.a(i10, obj);
+                androidx.profileinstaller.b.this.f4791c.a(i10, obj);
             }
         });
     }
 
     public boolean e() {
-        if (this.f5095d == null) {
+        if (this.f4792d == null) {
             k(3, Integer.valueOf(Build.VERSION.SDK_INT));
             return false;
         }
-        if (this.f5096e.exists()) {
-            if (!this.f5096e.canWrite()) {
+        if (this.f4793e.exists()) {
+            if (!this.f4793e.canWrite()) {
                 k(4, null);
                 return false;
             }
         } else {
             try {
-                if (!this.f5096e.createNewFile()) {
+                if (!this.f4793e.createNewFile()) {
                     k(4, null);
                     return false;
                 }
@@ -219,20 +219,20 @@ public class b {
                 return false;
             }
         }
-        this.f5100i = true;
+        this.f4797i = true;
         return true;
     }
 
     public b h() {
         b b10;
         c();
-        if (this.f5095d != null) {
-            InputStream f10 = f(this.f5092a);
+        if (this.f4792d != null) {
+            InputStream f10 = f(this.f4789a);
             if (f10 != null) {
-                this.f5101j = i(f10);
+                this.f4798j = i(f10);
             }
-            c[] cVarArr = this.f5101j;
-            if (cVarArr != null && j() && (b10 = b(cVarArr, this.f5095d)) != null) {
+            c[] cVarArr = this.f4798j;
+            if (cVarArr != null && j() && (b10 = b(cVarArr, this.f4792d)) != null) {
                 return b10;
             }
         }
@@ -241,8 +241,8 @@ public class b {
 
     public b l() {
         ByteArrayOutputStream byteArrayOutputStream;
-        c[] cVarArr = this.f5101j;
-        byte[] bArr = this.f5095d;
+        c[] cVarArr = this.f4798j;
+        byte[] bArr = this.f4792d;
         if (cVarArr != null && bArr != null) {
             c();
             try {
@@ -258,26 +258,26 @@ public class b {
                     throw th2;
                 }
             } catch (IOException e10) {
-                this.f5094c.a(7, e10);
+                this.f4791c.a(7, e10);
             } catch (IllegalStateException e11) {
-                this.f5094c.a(8, e11);
+                this.f4791c.a(8, e11);
             }
             if (!g.C(byteArrayOutputStream, bArr, cVarArr)) {
-                this.f5094c.a(5, null);
-                this.f5101j = null;
+                this.f4791c.a(5, null);
+                this.f4798j = null;
                 byteArrayOutputStream.close();
                 return this;
             }
-            this.f5102k = byteArrayOutputStream.toByteArray();
+            this.f4799k = byteArrayOutputStream.toByteArray();
             byteArrayOutputStream.close();
-            this.f5101j = null;
+            this.f4798j = null;
         }
         return this;
     }
 
     /* JADX WARN: Type inference failed for: r2v0, types: [byte[], androidx.profileinstaller.c[]] */
     public boolean m() {
-        byte[] bArr = this.f5102k;
+        byte[] bArr = this.f4799k;
         if (bArr == null) {
             return false;
         }
@@ -286,7 +286,7 @@ public class b {
             try {
                 ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bArr);
                 try {
-                    FileOutputStream fileOutputStream = new FileOutputStream(this.f5096e);
+                    FileOutputStream fileOutputStream = new FileOutputStream(this.f4793e);
                     FileChannel channel = fileOutputStream.getChannel();
                     try {
                         FileLock tryLock = channel.tryLock();
@@ -325,8 +325,8 @@ public class b {
                 return false;
             }
         } finally {
-            this.f5102k = null;
-            this.f5101j = null;
+            this.f4799k = null;
+            this.f4798j = null;
         }
     }
 }

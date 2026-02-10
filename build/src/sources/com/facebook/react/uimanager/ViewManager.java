@@ -158,9 +158,9 @@ public abstract class ViewManager<T extends View, C extends ReactShadowNode> ext
         T prepareToRecycleView;
         Context context = t10.getContext();
         if (context == null) {
-            p8.a.m(TAG, "onDropViewInstance: view [" + t10.getId() + "] has a null context");
+            q8.a.m(TAG, "onDropViewInstance: view [" + t10.getId() + "] has a null context");
         } else if (!(context instanceof ThemedReactContext)) {
-            p8.a.m(TAG, "onDropViewInstance: view [" + t10.getId() + "] has a context that is not a ThemedReactContext: " + context);
+            q8.a.m(TAG, "onDropViewInstance: view [" + t10.getId() + "] has a context that is not a ThemedReactContext: " + context);
         } else {
             ThemedReactContext themedReactContext = (ThemedReactContext) context;
             boolean z10 = false;
@@ -169,7 +169,7 @@ public abstract class ViewManager<T extends View, C extends ReactShadowNode> ext
                 if (prepareToRecycleView.getParent() == null) {
                     z10 = true;
                 }
-                db.a.b(z10, "Recycled view [" + t10.getId() + "] should not be attached to a parent. View: " + t10 + " Parent: " + prepareToRecycleView.getParent() + " ThemedReactContext: " + themedReactContext);
+                eb.a.b(z10, "Recycled view [" + t10.getId() + "] should not be attached to a parent. View: " + t10 + " Parent: " + prepareToRecycleView.getParent() + " ThemedReactContext: " + themedReactContext);
                 recyclableViewStack.push(prepareToRecycleView);
             }
         }

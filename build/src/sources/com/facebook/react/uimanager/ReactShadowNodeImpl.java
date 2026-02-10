@@ -401,7 +401,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
         } else {
             z10 = false;
         }
-        db.a.a(z10);
+        eb.a.a(z10);
         return this.mRootTag;
     }
 
@@ -442,7 +442,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final ThemedReactContext getThemedContext() {
-        return (ThemedReactContext) db.a.c(this.mThemedContext);
+        return (ThemedReactContext) eb.a.c(this.mThemedContext);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -452,7 +452,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final String getViewClass() {
-        return (String) db.a.c(this.mViewClassName);
+        return (String) eb.a.c(this.mViewClassName);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -586,7 +586,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
             i10 += childAt.getTotalNativeNodeContributionToParent();
             childAt.dispose();
         }
-        ((ArrayList) db.a.c(this.mChildren)).clear();
+        ((ArrayList) eb.a.c(this.mChildren)).clear();
         markUpdated();
         this.mTotalNativeChildren -= i10;
         updateNativeChildrenCountInParent(-i10);
@@ -698,17 +698,17 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
         } else {
             z11 = false;
         }
-        db.a.b(z11, "Must remove from no opt parent first");
+        eb.a.b(z11, "Must remove from no opt parent first");
         if (this.mNativeParent == null) {
             z12 = true;
         } else {
             z12 = false;
         }
-        db.a.b(z12, "Must remove from native parent first");
+        eb.a.b(z12, "Must remove from native parent first");
         if (getNativeChildCount() == 0) {
             z13 = true;
         }
-        db.a.b(z13, "Must remove all native children first");
+        eb.a.b(z13, "Must remove all native children first");
         this.mIsLayoutOnly = z10;
     }
 
@@ -819,7 +819,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setStyleHeight(float f10) {
-        this.mYogaNode.Q(f10);
+        this.mYogaNode.P(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -935,8 +935,8 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final void addNativeChildAt(ReactShadowNodeImpl reactShadowNodeImpl, int i10) {
-        db.a.a(getNativeKind() == NativeKind.PARENT);
-        db.a.a(reactShadowNodeImpl.getNativeKind() != NativeKind.NONE);
+        eb.a.a(getNativeKind() == NativeKind.PARENT);
+        eb.a.a(reactShadowNodeImpl.getNativeKind() != NativeKind.NONE);
         if (this.mNativeChildren == null) {
             this.mNativeChildren = new ArrayList<>(4);
         }
@@ -998,7 +998,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final int indexOfNativeChild(ReactShadowNodeImpl reactShadowNodeImpl) {
-        db.a.c(this.mNativeChildren);
+        eb.a.c(this.mNativeChildren);
         return this.mNativeChildren.indexOf(reactShadowNodeImpl);
     }
 
@@ -1032,7 +1032,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final ReactShadowNodeImpl removeNativeChildAt(int i10) {
-        db.a.c(this.mNativeChildren);
+        eb.a.c(this.mNativeChildren);
         ReactShadowNodeImpl remove = this.mNativeChildren.remove(i10);
         remove.mNativeParent = null;
         return remove;

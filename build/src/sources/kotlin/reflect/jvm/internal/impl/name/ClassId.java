@@ -12,13 +12,13 @@ public final class ClassId {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final FqName f33872a;
+    private final FqName f33581a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final FqName f33873b;
+    private final FqName f33582b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f33874c;
+    private final boolean f33583c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -71,9 +71,9 @@ public final class ClassId {
     public ClassId(@NotNull FqName packageFqName, @NotNull FqName relativeClassName, boolean z10) {
         Intrinsics.checkNotNullParameter(packageFqName, "packageFqName");
         Intrinsics.checkNotNullParameter(relativeClassName, "relativeClassName");
-        this.f33872a = packageFqName;
-        this.f33873b = relativeClassName;
-        this.f33874c = z10;
+        this.f33581a = packageFqName;
+        this.f33582b = relativeClassName;
+        this.f33583c = z10;
         relativeClassName.isRoot();
     }
 
@@ -92,24 +92,24 @@ public final class ClassId {
 
     @NotNull
     public final FqName asSingleFqName() {
-        if (this.f33872a.isRoot()) {
-            return this.f33873b;
+        if (this.f33581a.isRoot()) {
+            return this.f33582b;
         }
-        return new FqName(this.f33872a.asString() + '.' + this.f33873b.asString());
+        return new FqName(this.f33581a.asString() + '.' + this.f33582b.asString());
     }
 
     @NotNull
     public final String asString() {
-        if (this.f33872a.isRoot()) {
-            return a(this.f33873b);
+        if (this.f33581a.isRoot()) {
+            return a(this.f33582b);
         }
-        return StringsKt.I(this.f33872a.asString(), '.', '/', false, 4, null) + "/" + a(this.f33873b);
+        return StringsKt.I(this.f33581a.asString(), '.', '/', false, 4, null) + "/" + a(this.f33582b);
     }
 
     @NotNull
     public final ClassId createNestedClassId(@NotNull Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return new ClassId(this.f33872a, this.f33873b.child(name), this.f33874c);
+        return new ClassId(this.f33581a, this.f33582b.child(name), this.f33583c);
     }
 
     public boolean equals(Object obj) {
@@ -118,49 +118,49 @@ public final class ClassId {
         }
         if (obj instanceof ClassId) {
             ClassId classId = (ClassId) obj;
-            return Intrinsics.areEqual(this.f33872a, classId.f33872a) && Intrinsics.areEqual(this.f33873b, classId.f33873b) && this.f33874c == classId.f33874c;
+            return Intrinsics.areEqual(this.f33581a, classId.f33581a) && Intrinsics.areEqual(this.f33582b, classId.f33582b) && this.f33583c == classId.f33583c;
         }
         return false;
     }
 
     public final ClassId getOuterClassId() {
-        FqName parent = this.f33873b.parent();
+        FqName parent = this.f33582b.parent();
         if (!parent.isRoot()) {
-            return new ClassId(this.f33872a, parent, this.f33874c);
+            return new ClassId(this.f33581a, parent, this.f33583c);
         }
         return null;
     }
 
     @NotNull
     public final FqName getPackageFqName() {
-        return this.f33872a;
+        return this.f33581a;
     }
 
     @NotNull
     public final FqName getRelativeClassName() {
-        return this.f33873b;
+        return this.f33582b;
     }
 
     @NotNull
     public final Name getShortClassName() {
-        return this.f33873b.shortName();
+        return this.f33582b.shortName();
     }
 
     public int hashCode() {
-        return (((this.f33872a.hashCode() * 31) + this.f33873b.hashCode()) * 31) + Boolean.hashCode(this.f33874c);
+        return (((this.f33581a.hashCode() * 31) + this.f33582b.hashCode()) * 31) + Boolean.hashCode(this.f33583c);
     }
 
     public final boolean isLocal() {
-        return this.f33874c;
+        return this.f33583c;
     }
 
     public final boolean isNestedClass() {
-        return !this.f33873b.parent().isRoot();
+        return !this.f33582b.parent().isRoot();
     }
 
     @NotNull
     public String toString() {
-        if (this.f33872a.isRoot()) {
+        if (this.f33581a.isRoot()) {
             return '/' + asString();
         }
         return asString();

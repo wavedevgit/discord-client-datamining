@@ -1,7 +1,7 @@
 // modules/premium/powerups/native/GuildPowerupsLevelsSection.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun102887: for (var _fun102887_ip = 0;;) switch (_fun102887_ip) {
+    _fun102867: for (var _fun102867_ip = 0;;) switch (_fun102867_ip) {
         case 0:
             var4 = require;
             var10 = metroImportDefault;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.bind(var6)();
             var11 = 325;
             if (!var3) {
-                _fun102887_ip = 218;
-                continue _fun102887
+                _fun102867_ip = 218;
+                continue _fun102867
             }
         case 212:
             var11 = 300;
@@ -66,13 +66,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var4.bind(var0)(var3);
             var6 = var7.createStyles;
             var3 = {};
-            var8 = {};
-            var13 = var5[var9];
-            var13 = var10.bind(var0)(var13);
-            var13 = var13.spacing;
-            var13 = var13.PX_16;
-            var8.padding = var13;
-            var3.headerContainer = var8;
             var8 = {
                 'width': 250,
                 'marginEnd': null,
@@ -296,4 +289,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 671, 479, 1297, 1464, 13415, 13443, 1234, 1892, 9523, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 671, 479, 1297, 1464, 13402, 13430, 1234, 1892, 9501, 2]);

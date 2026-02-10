@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.codedlinks;
 
 import com.facebook.react.uimanager.ViewProps;
-import ft.m;
+import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;

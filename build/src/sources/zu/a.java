@@ -1,83 +1,64 @@
 package zu;
 
+import cv.d;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
-import zu.b;
+import kotlin.collections.CollectionsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements su.b, b {
+public final class a implements tu.b, cv.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f56683a = new a();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* renamed from: zu.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0807a extends Lambda implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final C0807a f56684d = new C0807a();
-
-        C0807a() {
-            super(2);
-        }
-
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 == i11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            return Boolean.valueOf(z10);
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
-        }
-    }
+    public static final a f56702a = new a();
 
     private a() {
     }
 
-    @Override // bv.a
-    public Object a(Object obj) {
-        return b.a.f(this, obj);
-    }
-
-    @Override // tu.c
-    public boolean b(List list, Function2 function2) {
-        return b.a.b(this, list, function2);
-    }
-
-    @Override // tu.a
-    public Boolean c(Object obj) {
-        return b.a.g(this, obj);
+    public boolean a(Object obj) {
+        return d.a.a(this, obj);
     }
 
     @Override // tu.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return b.a.d(this, comparable, comparable2);
-    }
-
-    @Override // bv.c
-    public Object e(Object obj) {
-        return b.a.e(this, obj);
-    }
-
-    @Override // tu.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return b.a.c(this, comparable, comparable2);
-    }
-
-    public boolean h(Object obj, Function2 function2) {
-        return b.a.a(this, obj, function2);
-    }
-
-    @Override // su.b
-    /* renamed from: i */
-    public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(h(obj, C0807a.f56684d));
+    public Object f(Object obj, Object obj2) {
+        Object obj3;
+        List c10 = dw.a.c(obj);
+        List<Object> list = c10;
+        boolean z10 = list instanceof Collection;
+        if (!z10 || !list.isEmpty()) {
+            for (Object obj4 : list) {
+                if (!(obj4 instanceof Boolean)) {
+                    Iterator it = list.iterator();
+                    while (true) {
+                        if (it.hasNext()) {
+                            obj3 = it.next();
+                            if (!f56702a.a(obj3)) {
+                                break;
+                            }
+                        } else {
+                            obj3 = null;
+                            break;
+                        }
+                    }
+                    if (obj3 == null) {
+                        return CollectionsKt.z0(c10);
+                    }
+                    return obj3;
+                }
+            }
+        }
+        boolean z11 = true;
+        if (!z10 || !list.isEmpty()) {
+            Iterator it2 = list.iterator();
+            while (true) {
+                if (!it2.hasNext()) {
+                    break;
+                }
+                if (!f56702a.a(it2.next())) {
+                    z11 = false;
+                    break;
+                }
+            }
+        }
+        return Boolean.valueOf(z11);
     }
 }

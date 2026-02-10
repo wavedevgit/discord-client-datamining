@@ -1,7 +1,12 @@
 package ff;
-
-import android.content.ServiceConnection;
-import ef.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class j implements a.f, ServiceConnection {
+public abstract class j {
+
+    /* renamed from: a  reason: collision with root package name */
+    private k f22616a;
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public j(k kVar) {
+        this.f22616a = kVar;
+    }
 }

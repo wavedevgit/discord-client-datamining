@@ -3,30 +3,30 @@ package y0;
 public abstract class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private long f54921a;
+    private long f55398a;
 
     /* renamed from: b  reason: collision with root package name */
-    private p f54922b;
+    private p f55399b;
 
     public p(long j10) {
-        this.f54921a = j10;
+        this.f55398a = j10;
     }
 
     public abstract p a(long j10);
 
     public final p b() {
-        return this.f54922b;
+        return this.f55399b;
     }
 
     public final long c() {
-        return this.f54921a;
+        return this.f55398a;
     }
 
     public final void d(p pVar) {
-        this.f54922b = pVar;
+        this.f55399b = pVar;
     }
 
     public final void e(long j10) {
-        this.f54921a = j10;
+        this.f55398a = j10;
     }
 }

@@ -9,49 +9,49 @@ import java.util.concurrent.ScheduledExecutorService;
 final class b {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final b f51255d = new b();
+    private static final b f51225d = new b();
 
     /* renamed from: a  reason: collision with root package name */
-    private final ExecutorService f51256a;
+    private final ExecutorService f51226a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ScheduledExecutorService f51257b;
+    private final ScheduledExecutorService f51227b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f51258c;
+    private final Executor f51228c;
 
     /* renamed from: u4.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class ExecutorC0676b implements Executor {
+    private static class ExecutorC0710b implements Executor {
 
         /* renamed from: d  reason: collision with root package name */
-        private ThreadLocal f51259d;
+        private ThreadLocal f51229d;
 
-        private ExecutorC0676b() {
-            this.f51259d = new ThreadLocal();
+        private ExecutorC0710b() {
+            this.f51229d = new ThreadLocal();
         }
 
         private int a() {
-            Integer num = (Integer) this.f51259d.get();
+            Integer num = (Integer) this.f51229d.get();
             if (num == null) {
                 num = 0;
             }
             int intValue = num.intValue() - 1;
             if (intValue == 0) {
-                this.f51259d.remove();
+                this.f51229d.remove();
                 return intValue;
             }
-            this.f51259d.set(Integer.valueOf(intValue));
+            this.f51229d.set(Integer.valueOf(intValue));
             return intValue;
         }
 
         private int b() {
-            Integer num = (Integer) this.f51259d.get();
+            Integer num = (Integer) this.f51229d.get();
             if (num == null) {
                 num = 0;
             }
             int intValue = num.intValue() + 1;
-            this.f51259d.set(Integer.valueOf(intValue));
+            this.f51229d.set(Integer.valueOf(intValue));
             return intValue;
         }
 
@@ -78,18 +78,18 @@ final class b {
         } else {
             b10 = u4.a.b();
         }
-        this.f51256a = b10;
-        this.f51257b = Executors.newSingleThreadScheduledExecutor();
-        this.f51258c = new ExecutorC0676b();
+        this.f51226a = b10;
+        this.f51227b = Executors.newSingleThreadScheduledExecutor();
+        this.f51228c = new ExecutorC0710b();
     }
 
     public static ExecutorService a() {
-        return f51255d.f51256a;
+        return f51225d.f51226a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Executor b() {
-        return f51255d.f51258c;
+        return f51225d.f51228c;
     }
 
     private static boolean c() {

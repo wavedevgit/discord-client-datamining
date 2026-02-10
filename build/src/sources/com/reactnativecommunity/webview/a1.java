@@ -6,22 +6,22 @@ import java.util.Map;
 public final class a1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a1 f17488a = new a1();
+    public static final a1 f17628a = new a1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f17489b = new LinkedHashMap();
+    private static final Map f17629b = new LinkedHashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f17490c = new LinkedHashMap();
+    private static final Map f17630c = new LinkedHashMap();
 
     private a1() {
     }
 
     public final Map a() {
-        return f17489b;
+        return f17629b;
     }
 
     public final Map b() {
-        return f17490c;
+        return f17630c;
     }
 }

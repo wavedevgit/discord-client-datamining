@@ -6,7 +6,7 @@ import android.content.res.Resources;
 public abstract class j extends k {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final int f13779f = k.f13780a;
+    public static final int f13919f = k.f13920a;
 
     public static Resources d(Context context) {
         return k.d(context);

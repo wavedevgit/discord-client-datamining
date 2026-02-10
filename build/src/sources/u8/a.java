@@ -1,83 +1,143 @@
 package u8;
 
-import java.io.FilterInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import android.os.Environment;
+import android.os.StatFs;
+import android.os.SystemClock;
+import java.io.File;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+import p8.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class a extends FilterInputStream {
+public class a {
+
+    /* renamed from: h  reason: collision with root package name */
+    private static a f51337h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private static final long f51338i = TimeUnit.MINUTES.toMillis(2);
+
+    /* renamed from: b  reason: collision with root package name */
+    private volatile File f51340b;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f51297d;
+    private volatile File f51342d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f51298e;
+    private long f51343e;
 
-    public a(InputStream inputStream, int i10) {
-        super(inputStream);
-        inputStream.getClass();
-        if (i10 >= 0) {
-            this.f51297d = i10;
-            this.f51298e = -1;
-            return;
-        }
-        throw new IllegalArgumentException("limit must be >= 0");
+    /* renamed from: a  reason: collision with root package name */
+    private volatile StatFs f51339a = null;
+
+    /* renamed from: c  reason: collision with root package name */
+    private volatile StatFs f51341c = null;
+
+    /* renamed from: g  reason: collision with root package name */
+    private volatile boolean f51345g = false;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final Lock f51344f = new ReentrantLock();
+
+    /* renamed from: u8.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public enum EnumC0711a {
+        INTERNAL,
+        EXTERNAL
     }
 
-    @Override // java.io.FilterInputStream, java.io.InputStream
-    public int available() {
-        return Math.min(((FilterInputStream) this).in.available(), this.f51297d);
+    protected a() {
     }
 
-    @Override // java.io.FilterInputStream, java.io.InputStream
-    public void mark(int i10) {
-        if (((FilterInputStream) this).in.markSupported()) {
-            ((FilterInputStream) this).in.mark(i10);
-            this.f51298e = this.f51297d;
-        }
+    protected static StatFs a(String str) {
+        return new StatFs(str);
     }
 
-    @Override // java.io.FilterInputStream, java.io.InputStream
-    public int read() {
-        if (this.f51297d == 0) {
-            return -1;
-        }
-        int read = ((FilterInputStream) this).in.read();
-        if (read != -1) {
-            this.f51297d--;
-        }
-        return read;
-    }
-
-    @Override // java.io.FilterInputStream, java.io.InputStream
-    public void reset() {
-        if (((FilterInputStream) this).in.markSupported()) {
-            if (this.f51298e != -1) {
-                ((FilterInputStream) this).in.reset();
-                this.f51297d = this.f51298e;
-                return;
+    private void b() {
+        if (!this.f51345g) {
+            this.f51344f.lock();
+            try {
+                if (!this.f51345g) {
+                    this.f51340b = Environment.getDataDirectory();
+                    this.f51342d = Environment.getExternalStorageDirectory();
+                    g();
+                    this.f51345g = true;
+                }
+            } finally {
+                this.f51344f.unlock();
             }
-            throw new IOException("mark not set");
         }
-        throw new IOException("mark is not supported");
     }
 
-    @Override // java.io.FilterInputStream, java.io.InputStream
-    public long skip(long j10) {
-        long skip = ((FilterInputStream) this).in.skip(Math.min(j10, this.f51297d));
-        this.f51297d = (int) (this.f51297d - skip);
-        return skip;
+    public static synchronized a d() {
+        a aVar;
+        synchronized (a.class) {
+            try {
+                if (f51337h == null) {
+                    f51337h = new a();
+                }
+                aVar = f51337h;
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        return aVar;
     }
 
-    @Override // java.io.FilterInputStream, java.io.InputStream
-    public int read(byte[] bArr, int i10, int i11) {
-        int i12 = this.f51297d;
-        if (i12 == 0) {
-            return -1;
+    private void e() {
+        if (this.f51344f.tryLock()) {
+            try {
+                if (SystemClock.uptimeMillis() - this.f51343e > f51338i) {
+                    g();
+                }
+            } finally {
+                this.f51344f.unlock();
+            }
         }
-        int read = ((FilterInputStream) this).in.read(bArr, i10, Math.min(i11, i12));
-        if (read > 0) {
-            this.f51297d -= read;
+    }
+
+    private void g() {
+        this.f51339a = h(this.f51339a, this.f51340b);
+        this.f51341c = h(this.f51341c, this.f51342d);
+        this.f51343e = SystemClock.uptimeMillis();
+    }
+
+    private StatFs h(StatFs statFs, File file) {
+        if (file != null && file.exists()) {
+            try {
+                if (statFs == null) {
+                    return a(file.getAbsolutePath());
+                }
+                statFs.restat(file.getAbsolutePath());
+                return statFs;
+            } catch (IllegalArgumentException unused) {
+            } catch (Throwable th2) {
+                throw n.a(th2);
+            }
         }
-        return read;
+        return null;
+    }
+
+    public long c(EnumC0711a enumC0711a) {
+        StatFs statFs;
+        b();
+        e();
+        if (enumC0711a == EnumC0711a.INTERNAL) {
+            statFs = this.f51339a;
+        } else {
+            statFs = this.f51341c;
+        }
+        if (statFs != null) {
+            return statFs.getBlockSizeLong() * statFs.getAvailableBlocksLong();
+        }
+        return 0L;
+    }
+
+    public boolean f(EnumC0711a enumC0711a, long j10) {
+        b();
+        long c10 = c(enumC0711a);
+        if (c10 <= 0 || c10 < j10) {
+            return true;
+        }
+        return false;
     }
 }

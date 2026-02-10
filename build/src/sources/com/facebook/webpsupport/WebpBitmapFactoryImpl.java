@@ -12,15 +12,15 @@ import java.io.FileDescriptor;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import o8.d;
-import x8.a;
-import x8.b;
+import p8.d;
+import y8.a;
+import y8.b;
 @d
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class WebpBitmapFactoryImpl implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static a f11378a;
+    private static a f11518a;
 
     private static byte[] c(InputStream inputStream, BitmapFactory.Options options) {
         byte[] bArr;
@@ -43,7 +43,7 @@ public class WebpBitmapFactoryImpl implements b {
         if (options != null && (bitmap = options.inBitmap) != null && bitmap.isMutable()) {
             return options.inBitmap;
         }
-        return f11378a.a(i10, i11, Bitmap.Config.ARGB_8888);
+        return f11518a.a(i10, i11, Bitmap.Config.ARGB_8888);
     }
 
     private static void d(String str) {
@@ -252,8 +252,8 @@ public class WebpBitmapFactoryImpl implements b {
         }
     }
 
-    @SuppressLint({"NewApi"})
     @d
+    @SuppressLint({"NewApi"})
     private static boolean shouldPremultiply(BitmapFactory.Options options) {
         if (options != null) {
             return options.inPremultiplied;
@@ -261,14 +261,14 @@ public class WebpBitmapFactoryImpl implements b {
         return true;
     }
 
-    @Override // x8.b
-    public void a(a aVar) {
-        f11378a = aVar;
+    @Override // y8.b
+    public Bitmap a(FileDescriptor fileDescriptor, Rect rect, BitmapFactory.Options options) {
+        return hookDecodeFileDescriptor(fileDescriptor, rect, options);
     }
 
-    @Override // x8.b
-    public Bitmap b(FileDescriptor fileDescriptor, Rect rect, BitmapFactory.Options options) {
-        return hookDecodeFileDescriptor(fileDescriptor, rect, options);
+    @Override // y8.b
+    public void b(a aVar) {
+        f11518a = aVar;
     }
 
     @d

@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.interfaces.DraweeHierarchy;
 import com.facebook.drawee.view.AspectRatioMeasure;
-import o8.h;
+import p8.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class a extends ImageView {
     private static boolean sGlobalLegacyVisibilityHandlingEnabled = false;
@@ -35,12 +35,12 @@ public abstract class a extends ImageView {
 
     private void a(Context context) {
         try {
-            if (ya.b.d()) {
-                ya.b.a("DraweeView#init");
+            if (za.b.d()) {
+                za.b.a("DraweeView#init");
             }
             if (this.mInitialised) {
-                if (ya.b.d()) {
-                    ya.b.b();
+                if (za.b.d()) {
+                    za.b.b();
                     return;
                 }
                 return;
@@ -50,8 +50,8 @@ public abstract class a extends ImageView {
             this.mDraweeHolder = DraweeHolder.c(null, context);
             ColorStateList imageTintList = getImageTintList();
             if (imageTintList == null) {
-                if (ya.b.d()) {
-                    ya.b.b();
+                if (za.b.d()) {
+                    za.b.b();
                     return;
                 }
                 return;
@@ -61,12 +61,12 @@ public abstract class a extends ImageView {
                 z10 = false;
             }
             this.mLegacyVisibilityHandlingEnabled = z10;
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
             }
         } catch (Throwable th2) {
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
             }
             throw th2;
         }
@@ -160,11 +160,11 @@ public abstract class a extends ImageView {
     @Override // android.widget.ImageView, android.view.View
     protected void onMeasure(int i10, int i11) {
         AspectRatioMeasure.Spec spec = this.mMeasureSpec;
-        spec.f10071a = i10;
-        spec.f10072b = i11;
+        spec.f10211a = i10;
+        spec.f10212b = i11;
         AspectRatioMeasure.b(spec, this.mAspectRatio, getLayoutParams(), getPaddingLeft() + getPaddingRight(), getPaddingTop() + getPaddingBottom());
         AspectRatioMeasure.Spec spec2 = this.mMeasureSpec;
-        super.onMeasure(spec2.f10071a, spec2.f10072b);
+        super.onMeasure(spec2.f10211a, spec2.f10212b);
     }
 
     @Override // android.view.View

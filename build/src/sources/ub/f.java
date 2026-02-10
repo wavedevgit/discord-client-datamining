@@ -1,7 +1,10 @@
 package ub;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class f {
-
-    /* renamed from: a  reason: collision with root package name */
-    public long f51329a;
+abstract class f {
+    public static boolean a(CharSequence charSequence) {
+        if (charSequence != null && charSequence.length() != 0) {
+            return false;
+        }
+        return true;
+    }
 }

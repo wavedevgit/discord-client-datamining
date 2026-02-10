@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.row;
 
 import com.discord.chat.bridge.ChangeType;
-import ft.m;
+import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;

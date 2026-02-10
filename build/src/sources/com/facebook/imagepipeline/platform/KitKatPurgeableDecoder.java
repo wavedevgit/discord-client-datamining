@@ -6,20 +6,20 @@ import android.graphics.BitmapFactory;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.facebook.common.references.CloseableReference;
 import com.facebook.imagepipeline.nativecode.DalvikPurgeableDecoder;
-import o8.d;
-import o8.j;
-import r8.h;
-@TargetApi(ChatViewRecyclerTypes.INTERACTION_STATUS)
+import p8.d;
+import p8.j;
+import s8.h;
 @d
+@TargetApi(ChatViewRecyclerTypes.INTERACTION_STATUS)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.facebook.imagepipeline.memory.d f10553c;
+    private final com.facebook.imagepipeline.memory.d f10693c;
 
     @d
     public KitKatPurgeableDecoder(com.facebook.imagepipeline.memory.d dVar) {
-        this.f10553c = dVar;
+        this.f10693c = dVar;
     }
 
     private static void h(byte[] bArr, int i10) {
@@ -31,7 +31,7 @@ public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
     protected Bitmap c(CloseableReference closeableReference, BitmapFactory.Options options) {
         h hVar = (h) closeableReference.J();
         int size = hVar.size();
-        CloseableReference a10 = this.f10553c.a(size);
+        CloseableReference a10 = this.f10693c.a(size);
         try {
             byte[] bArr = (byte[]) a10.J();
             hVar.q(0, bArr, 0, size);
@@ -48,7 +48,7 @@ public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
         if (DalvikPurgeableDecoder.e(closeableReference, i10)) {
             bArr = null;
         } else {
-            bArr = DalvikPurgeableDecoder.f10539b;
+            bArr = DalvikPurgeableDecoder.f10679b;
         }
         h hVar = (h) closeableReference.J();
         if (i10 <= hVar.size()) {
@@ -58,7 +58,7 @@ public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
         }
         j.b(Boolean.valueOf(z10));
         int i11 = i10 + 2;
-        CloseableReference a10 = this.f10553c.a(i11);
+        CloseableReference a10 = this.f10693c.a(i11);
         try {
             byte[] bArr2 = (byte[]) a10.J();
             hVar.q(0, bArr2, 0, i10);

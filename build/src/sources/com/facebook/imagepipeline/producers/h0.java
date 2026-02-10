@@ -17,39 +17,39 @@ import java.util.concurrent.Executor;
 public class h0 extends j0 implements m1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Class f10667d = h0.class;
+    private static final Class f10807d = h0.class;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String[] f10668e = {"_id", "_data"};
+    private static final String[] f10808e = {"_id", "_data"};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final String[] f10669f = {"_data"};
+    private static final String[] f10809f = {"_data"};
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Rect f10670g = new Rect(0, 0, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, 384);
+    private static final Rect f10810g = new Rect(0, 0, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, 384);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Rect f10671h = new Rect(0, 0, 96, 96);
+    private static final Rect f10811h = new Rect(0, 0, 96, 96);
 
     /* renamed from: c  reason: collision with root package name */
-    private final ContentResolver f10672c;
+    private final ContentResolver f10812c;
 
-    public h0(Executor executor, r8.i iVar, ContentResolver contentResolver) {
+    public h0(Executor executor, s8.i iVar, ContentResolver contentResolver) {
         super(executor, iVar);
-        this.f10672c = contentResolver;
+        this.f10812c = contentResolver;
     }
 
-    private sa.k g(Uri uri, ResizeOptions resizeOptions) {
+    private ta.k g(Uri uri, ResizeOptions resizeOptions) {
         Cursor query;
-        sa.k j10;
-        if (resizeOptions == null || (query = this.f10672c.query(uri, f10668e, null, null, null)) == null) {
+        ta.k j10;
+        if (resizeOptions == null || (query = this.f10812c.query(uri, f10808e, null, null, null)) == null) {
             return null;
         }
         try {
             if (query.moveToFirst() && (j10 = j(resizeOptions, query.getLong(query.getColumnIndex("_id")))) != null) {
                 int columnIndex = query.getColumnIndex("_data");
                 if (columnIndex >= 0) {
-                    j10.D1(i(query.getString(columnIndex)));
+                    j10.z1(i(query.getString(columnIndex)));
                 }
                 query.close();
                 return j10;
@@ -72,25 +72,25 @@ public class h0 extends j0 implements m1 {
     private static int i(String str) {
         if (str != null) {
             try {
-                return cb.g.a(new ExifInterface(str).getAttributeInt("Orientation", 1));
+                return db.g.a(new ExifInterface(str).getAttributeInt("Orientation", 1));
             } catch (IOException e10) {
-                p8.a.l(f10667d, e10, "Unable to retrieve thumbnail rotation for %s", str);
+                q8.a.l(f10807d, e10, "Unable to retrieve thumbnail rotation for %s", str);
                 return 0;
             }
         }
         return 0;
     }
 
-    private sa.k j(ResizeOptions resizeOptions, long j10) {
+    private ta.k j(ResizeOptions resizeOptions, long j10) {
         Cursor queryMiniThumbnail;
         int columnIndex;
         int k10 = k(resizeOptions);
-        if (k10 == 0 || (queryMiniThumbnail = MediaStore.Images.Thumbnails.queryMiniThumbnail(this.f10672c, j10, k10, f10669f)) == null) {
+        if (k10 == 0 || (queryMiniThumbnail = MediaStore.Images.Thumbnails.queryMiniThumbnail(this.f10812c, j10, k10, f10809f)) == null) {
             return null;
         }
         try {
             if (queryMiniThumbnail.moveToFirst() && (columnIndex = queryMiniThumbnail.getColumnIndex("_data")) >= 0) {
-                String str = (String) o8.j.g(queryMiniThumbnail.getString(columnIndex));
+                String str = (String) p8.j.g(queryMiniThumbnail.getString(columnIndex));
                 if (new File(str).exists()) {
                     return e(new FileInputStream(str), h(str));
                 }
@@ -102,11 +102,11 @@ public class h0 extends j0 implements m1 {
     }
 
     private static int k(ResizeOptions resizeOptions) {
-        Rect rect = f10671h;
+        Rect rect = f10811h;
         if (n1.b(rect.width(), rect.height(), resizeOptions)) {
             return 3;
         }
-        Rect rect2 = f10670g;
+        Rect rect2 = f10810g;
         if (n1.b(rect2.width(), rect2.height(), resizeOptions)) {
             return 1;
         }
@@ -115,14 +115,14 @@ public class h0 extends j0 implements m1 {
 
     @Override // com.facebook.imagepipeline.producers.m1
     public boolean a(ResizeOptions resizeOptions) {
-        Rect rect = f10670g;
+        Rect rect = f10810g;
         return n1.b(rect.width(), rect.height(), resizeOptions);
     }
 
     @Override // com.facebook.imagepipeline.producers.j0
-    protected sa.k d(ImageRequest imageRequest) {
+    protected ta.k d(ImageRequest imageRequest) {
         Uri sourceUri = imageRequest.getSourceUri();
-        if (w8.f.k(sourceUri)) {
+        if (x8.f.k(sourceUri)) {
             return g(sourceUri, imageRequest.getResizeOptions());
         }
         return null;

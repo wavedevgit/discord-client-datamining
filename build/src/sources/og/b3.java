@@ -1,29 +1,32 @@
 package og;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class b3 implements yi.d {
+public final class b3 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final b3 f41856a = new b3();
+    private e3 f40784a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f41857b;
+    private Integer f40785b;
 
-    static {
-        c.b a10 = yi.c.a("errorCode");
-        f fVar = new f();
-        fVar.a(1);
-        f41857b = a10.b(fVar.b()).a();
+    /* renamed from: c  reason: collision with root package name */
+    private yd f40786c;
+
+    public final b3 a(Integer num) {
+        this.f40785b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        return this;
     }
 
-    private b3() {
+    public final b3 b(yd ydVar) {
+        this.f40786c = ydVar;
+        return this;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    public final b3 c(e3 e3Var) {
+        this.f40784a = e3Var;
+        return this;
+    }
+
+    public final g3 e() {
+        return new g3(this, null);
     }
 }

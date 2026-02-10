@@ -4,72 +4,72 @@ import com.google.android.exoplayer2.audio.d;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.ShortBuffer;
-import ne.w0;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class p implements d {
 
     /* renamed from: b  reason: collision with root package name */
-    private int f12304b;
+    private int f12444b;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f12305c = 1.0f;
+    private float f12445c = 1.0f;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f12306d = 1.0f;
+    private float f12446d = 1.0f;
 
     /* renamed from: e  reason: collision with root package name */
-    private d.a f12307e;
+    private d.a f12447e;
 
     /* renamed from: f  reason: collision with root package name */
-    private d.a f12308f;
+    private d.a f12448f;
 
     /* renamed from: g  reason: collision with root package name */
-    private d.a f12309g;
+    private d.a f12449g;
 
     /* renamed from: h  reason: collision with root package name */
-    private d.a f12310h;
+    private d.a f12450h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f12311i;
+    private boolean f12451i;
 
     /* renamed from: j  reason: collision with root package name */
-    private o f12312j;
+    private o f12452j;
 
     /* renamed from: k  reason: collision with root package name */
-    private ByteBuffer f12313k;
+    private ByteBuffer f12453k;
 
     /* renamed from: l  reason: collision with root package name */
-    private ShortBuffer f12314l;
+    private ShortBuffer f12454l;
 
     /* renamed from: m  reason: collision with root package name */
-    private ByteBuffer f12315m;
+    private ByteBuffer f12455m;
 
     /* renamed from: n  reason: collision with root package name */
-    private long f12316n;
+    private long f12456n;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f12317o;
+    private long f12457o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f12318p;
+    private boolean f12458p;
 
     public p() {
-        d.a aVar = d.a.f12119e;
-        this.f12307e = aVar;
-        this.f12308f = aVar;
-        this.f12309g = aVar;
-        this.f12310h = aVar;
-        ByteBuffer byteBuffer = d.f12118a;
-        this.f12313k = byteBuffer;
-        this.f12314l = byteBuffer.asShortBuffer();
-        this.f12315m = byteBuffer;
-        this.f12304b = -1;
+        d.a aVar = d.a.f12259e;
+        this.f12447e = aVar;
+        this.f12448f = aVar;
+        this.f12449g = aVar;
+        this.f12450h = aVar;
+        ByteBuffer byteBuffer = d.f12258a;
+        this.f12453k = byteBuffer;
+        this.f12454l = byteBuffer.asShortBuffer();
+        this.f12455m = byteBuffer;
+        this.f12444b = -1;
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public final boolean a() {
-        if (this.f12308f.f12120a != -1) {
-            if (Math.abs(this.f12305c - 1.0f) >= 1.0E-4f || Math.abs(this.f12306d - 1.0f) >= 1.0E-4f || this.f12308f.f12120a != this.f12307e.f12120a) {
+        if (this.f12448f.f12260a != -1) {
+            if (Math.abs(this.f12445c - 1.0f) >= 1.0E-4f || Math.abs(this.f12446d - 1.0f) >= 1.0E-4f || this.f12448f.f12260a != this.f12447e.f12260a) {
                 return true;
             }
             return false;
@@ -80,23 +80,23 @@ public class p implements d {
     @Override // com.google.android.exoplayer2.audio.d
     public final ByteBuffer b() {
         int k10;
-        o oVar = this.f12312j;
+        o oVar = this.f12452j;
         if (oVar != null && (k10 = oVar.k()) > 0) {
-            if (this.f12313k.capacity() < k10) {
+            if (this.f12453k.capacity() < k10) {
                 ByteBuffer order = ByteBuffer.allocateDirect(k10).order(ByteOrder.nativeOrder());
-                this.f12313k = order;
-                this.f12314l = order.asShortBuffer();
+                this.f12453k = order;
+                this.f12454l = order.asShortBuffer();
             } else {
-                this.f12313k.clear();
-                this.f12314l.clear();
+                this.f12453k.clear();
+                this.f12454l.clear();
             }
-            oVar.j(this.f12314l);
-            this.f12317o += k10;
-            this.f12313k.limit(k10);
-            this.f12315m = this.f12313k;
+            oVar.j(this.f12454l);
+            this.f12457o += k10;
+            this.f12453k.limit(k10);
+            this.f12455m = this.f12453k;
         }
-        ByteBuffer byteBuffer = this.f12315m;
-        this.f12315m = d.f12118a;
+        ByteBuffer byteBuffer = this.f12455m;
+        this.f12455m = d.f12258a;
         return byteBuffer;
     }
 
@@ -107,15 +107,15 @@ public class p implements d {
         }
         ShortBuffer asShortBuffer = byteBuffer.asShortBuffer();
         int remaining = byteBuffer.remaining();
-        this.f12316n += remaining;
-        ((o) ne.a.e(this.f12312j)).t(asShortBuffer);
+        this.f12456n += remaining;
+        ((o) oe.a.e(this.f12452j)).t(asShortBuffer);
         byteBuffer.position(byteBuffer.position() + remaining);
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public final boolean d() {
-        if (this.f12318p) {
-            o oVar = this.f12312j;
+        if (this.f12458p) {
+            o oVar = this.f12452j;
             if (oVar == null || oVar.k() == 0) {
                 return true;
             }
@@ -126,15 +126,15 @@ public class p implements d {
 
     @Override // com.google.android.exoplayer2.audio.d
     public final d.a e(d.a aVar) {
-        if (aVar.f12122c == 2) {
-            int i10 = this.f12304b;
+        if (aVar.f12262c == 2) {
+            int i10 = this.f12444b;
             if (i10 == -1) {
-                i10 = aVar.f12120a;
+                i10 = aVar.f12260a;
             }
-            this.f12307e = aVar;
-            d.a aVar2 = new d.a(i10, aVar.f12121b, 2);
-            this.f12308f = aVar2;
-            this.f12311i = true;
+            this.f12447e = aVar;
+            d.a aVar2 = new d.a(i10, aVar.f12261b, 2);
+            this.f12448f = aVar2;
+            this.f12451i = true;
             return aVar2;
         }
         throw new d.b(aVar);
@@ -142,80 +142,80 @@ public class p implements d {
 
     @Override // com.google.android.exoplayer2.audio.d
     public final void f() {
-        o oVar = this.f12312j;
+        o oVar = this.f12452j;
         if (oVar != null) {
             oVar.s();
         }
-        this.f12318p = true;
+        this.f12458p = true;
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public final void flush() {
         if (a()) {
-            d.a aVar = this.f12307e;
-            this.f12309g = aVar;
-            d.a aVar2 = this.f12308f;
-            this.f12310h = aVar2;
-            if (this.f12311i) {
-                this.f12312j = new o(aVar.f12120a, aVar.f12121b, this.f12305c, this.f12306d, aVar2.f12120a);
+            d.a aVar = this.f12447e;
+            this.f12449g = aVar;
+            d.a aVar2 = this.f12448f;
+            this.f12450h = aVar2;
+            if (this.f12451i) {
+                this.f12452j = new o(aVar.f12260a, aVar.f12261b, this.f12445c, this.f12446d, aVar2.f12260a);
             } else {
-                o oVar = this.f12312j;
+                o oVar = this.f12452j;
                 if (oVar != null) {
                     oVar.i();
                 }
             }
         }
-        this.f12315m = d.f12118a;
-        this.f12316n = 0L;
-        this.f12317o = 0L;
-        this.f12318p = false;
+        this.f12455m = d.f12258a;
+        this.f12456n = 0L;
+        this.f12457o = 0L;
+        this.f12458p = false;
     }
 
     public final long g(long j10) {
-        if (this.f12317o >= 1024) {
-            long l10 = this.f12316n - ((o) ne.a.e(this.f12312j)).l();
-            int i10 = this.f12310h.f12120a;
-            int i11 = this.f12309g.f12120a;
+        if (this.f12457o >= 1024) {
+            long l10 = this.f12456n - ((o) oe.a.e(this.f12452j)).l();
+            int i10 = this.f12450h.f12260a;
+            int i11 = this.f12449g.f12260a;
             if (i10 == i11) {
-                return w0.X0(j10, l10, this.f12317o);
+                return w0.X0(j10, l10, this.f12457o);
             }
-            return w0.X0(j10, l10 * i10, this.f12317o * i11);
+            return w0.X0(j10, l10 * i10, this.f12457o * i11);
         }
-        return (long) (this.f12305c * j10);
+        return (long) (this.f12445c * j10);
     }
 
     public final void h(float f10) {
-        if (this.f12306d != f10) {
-            this.f12306d = f10;
-            this.f12311i = true;
+        if (this.f12446d != f10) {
+            this.f12446d = f10;
+            this.f12451i = true;
         }
     }
 
     public final void i(float f10) {
-        if (this.f12305c != f10) {
-            this.f12305c = f10;
-            this.f12311i = true;
+        if (this.f12445c != f10) {
+            this.f12445c = f10;
+            this.f12451i = true;
         }
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public final void reset() {
-        this.f12305c = 1.0f;
-        this.f12306d = 1.0f;
-        d.a aVar = d.a.f12119e;
-        this.f12307e = aVar;
-        this.f12308f = aVar;
-        this.f12309g = aVar;
-        this.f12310h = aVar;
-        ByteBuffer byteBuffer = d.f12118a;
-        this.f12313k = byteBuffer;
-        this.f12314l = byteBuffer.asShortBuffer();
-        this.f12315m = byteBuffer;
-        this.f12304b = -1;
-        this.f12311i = false;
-        this.f12312j = null;
-        this.f12316n = 0L;
-        this.f12317o = 0L;
-        this.f12318p = false;
+        this.f12445c = 1.0f;
+        this.f12446d = 1.0f;
+        d.a aVar = d.a.f12259e;
+        this.f12447e = aVar;
+        this.f12448f = aVar;
+        this.f12449g = aVar;
+        this.f12450h = aVar;
+        ByteBuffer byteBuffer = d.f12258a;
+        this.f12453k = byteBuffer;
+        this.f12454l = byteBuffer.asShortBuffer();
+        this.f12455m = byteBuffer;
+        this.f12444b = -1;
+        this.f12451i = false;
+        this.f12452j = null;
+        this.f12456n = 0L;
+        this.f12457o = 0L;
+        this.f12458p = false;
     }
 }

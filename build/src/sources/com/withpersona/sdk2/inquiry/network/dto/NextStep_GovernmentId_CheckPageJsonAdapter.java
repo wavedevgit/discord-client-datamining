@@ -52,17 +52,17 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw an.c.x("buttonSubmit", "btnSubmit", reader);
+                    throw bn.c.x("buttonSubmit", "btnSubmit", reader);
                 }
             } else if (J == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw an.c.x("buttonRetake", "btnRetake", reader);
+                    throw bn.c.x("buttonRetake", "btnRetake", reader);
                 }
             } else if (J == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
@@ -73,9 +73,9 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
             if (str2 != null) {
                 return new NextStep.GovernmentId.CheckPage(str, str2, str3);
             }
-            throw an.c.o("buttonRetake", "btnRetake", reader);
+            throw bn.c.o("buttonRetake", "btnRetake", reader);
         }
-        throw an.c.o("buttonSubmit", "btnSubmit", reader);
+        throw bn.c.o("buttonSubmit", "btnSubmit", reader);
     }
 
     @Override // com.squareup.moshi.h

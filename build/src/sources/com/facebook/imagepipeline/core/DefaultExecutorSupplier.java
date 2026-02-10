@@ -6,28 +6,28 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import na.n;
-import na.w;
+import oa.n;
+import oa.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class DefaultExecutorSupplier implements n {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f10356f = new a(null);
+    public static final a f10496f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f10357a;
+    private final Executor f10497a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f10358b;
+    private final Executor f10498b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f10359c;
+    private final Executor f10499c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Executor f10360d;
+    private final Executor f10500d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ScheduledExecutorService f10361e;
+    private final ScheduledExecutorService f10501e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -42,53 +42,53 @@ public final class DefaultExecutorSupplier implements n {
     public DefaultExecutorSupplier(int i10) {
         ExecutorService newFixedThreadPool = Executors.newFixedThreadPool(2, new w(10, "FrescoIoBoundExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newFixedThreadPool, "newFixedThreadPool(...)");
-        this.f10357a = newFixedThreadPool;
+        this.f10497a = newFixedThreadPool;
         ExecutorService newFixedThreadPool2 = Executors.newFixedThreadPool(i10, new w(10, "FrescoDecodeExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newFixedThreadPool2, "newFixedThreadPool(...)");
-        this.f10358b = newFixedThreadPool2;
+        this.f10498b = newFixedThreadPool2;
         ExecutorService newFixedThreadPool3 = Executors.newFixedThreadPool(i10, new w(10, "FrescoBackgroundExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newFixedThreadPool3, "newFixedThreadPool(...)");
-        this.f10359c = newFixedThreadPool3;
+        this.f10499c = newFixedThreadPool3;
         ExecutorService newFixedThreadPool4 = Executors.newFixedThreadPool(1, new w(10, "FrescoLightWeightBackgroundExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newFixedThreadPool4, "newFixedThreadPool(...)");
-        this.f10360d = newFixedThreadPool4;
+        this.f10500d = newFixedThreadPool4;
         ScheduledExecutorService newScheduledThreadPool = Executors.newScheduledThreadPool(i10, new w(10, "FrescoBackgroundExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newScheduledThreadPool, "newScheduledThreadPool(...)");
-        this.f10361e = newScheduledThreadPool;
+        this.f10501e = newScheduledThreadPool;
     }
 
-    @Override // na.n
+    @Override // oa.n
     public Executor a() {
-        return this.f10360d;
+        return this.f10500d;
     }
 
-    @Override // na.n
+    @Override // oa.n
     public Executor b() {
-        return this.f10357a;
+        return this.f10497a;
     }
 
-    @Override // na.n
+    @Override // oa.n
     public ScheduledExecutorService c() {
-        return this.f10361e;
+        return this.f10501e;
     }
 
-    @Override // na.n
+    @Override // oa.n
     public Executor d() {
-        return this.f10358b;
+        return this.f10498b;
     }
 
-    @Override // na.n
+    @Override // oa.n
     public Executor e() {
-        return this.f10359c;
+        return this.f10499c;
     }
 
-    @Override // na.n
+    @Override // oa.n
     public Executor f() {
-        return this.f10357a;
+        return this.f10497a;
     }
 
-    @Override // na.n
+    @Override // oa.n
     public Executor g() {
-        return this.f10357a;
+        return this.f10497a;
     }
 }

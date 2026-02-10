@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'startTracking';
         var0.key = var1;
         var1 = function() {
-            _fun45656: for (var _fun45656_ip = 0;;) switch (_fun45656_ip) {
+            _fun45649: for (var _fun45649_ip = 0;;) switch (_fun45649_ip) {
                 case 0:
                     var2 = this;
                     var0 = var2.rendersWithoutCommit;
@@ -80,8 +80,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1.PlatformConfig;
                     var1 = var1.trackAverageRenderTimeForOffsetProjection;
                     if (!var1) {
-                        _fun45656_ip = 74;
-                        continue _fun45656
+                        _fun45649_ip = 74;
+                        continue _fun45649
                     }
                 case 58:
                     var4 = var2.lastTimerStartedAt;
@@ -89,8 +89,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var3 === var4;
                 case 74:
                     if (!var1) {
-                        _fun45656_ip = 100;
-                        continue _fun45656
+                        _fun45649_ip = 100;
+                        continue _fun45649
                     }
                 case 77:
                     var1 = global;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'markRenderComplete';
         var0.key = var5;
         var5 = function() {
-            _fun45657: for (var _fun45657_ip = 0;;) switch (_fun45657_ip) {
+            _fun45650: for (var _fun45650_ip = 0;;) switch (_fun45650_ip) {
                 case 0:
                     var2 = this;
                     var0 = 0;
@@ -123,8 +123,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1.PlatformConfig;
                     var1 = var1.trackAverageRenderTimeForOffsetProjection;
                     if (!var1) {
-                        _fun45657_ip = 67;
-                        continue _fun45657
+                        _fun45650_ip = 67;
+                        continue _fun45650
                     }
                 case 51:
                     var4 = var2.lastTimerStartedAt;
@@ -132,8 +132,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var3 !== var4;
                 case 67:
                     if (!var1) {
-                        _fun45657_ip = 126;
-                        continue _fun45657
+                        _fun45650_ip = 126;
+                        continue _fun45650
                     }
                 case 70:
                     var4 = var2.renderTimeAvgWindow;
@@ -180,7 +180,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getAverageRenderTime';
         var0.key = var5;
         var4 = function() {
-            _fun45660: for (var _fun45660_ip = 0;;) switch (_fun45660_ip) {
+            _fun45653: for (var _fun45653_ip = 0;;) switch (_fun45653_ip) {
                 case 0:
                     var1 = this;
                     var3 = _closure1_slot0;
@@ -192,13 +192,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.PlatformConfig;
                     var0 = var0.trackAverageRenderTimeForOffsetProjection;
                     if (var0) {
-                        _fun45660_ip = 51;
-                        continue _fun45660
+                        _fun45653_ip = 51;
+                        continue _fun45653
                     }
                 case 43:
                     var0 = var1.defaultRenderTime;
-                    _fun45660_ip = 124;
-                    continue _fun45660;
+                    _fun45653_ip = 124;
+                    continue _fun45653;
                 case 51:
                     var5 = global;
                     var4 = var5.Math;

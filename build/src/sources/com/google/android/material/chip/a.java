@@ -1,6 +1,5 @@
 package com.google.android.material.chip;
 
-import ah.k;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
@@ -20,16 +19,17 @@ import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import bh.k;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
 import com.google.android.material.internal.j;
 import com.google.android.material.internal.l;
 import com.google.android.material.internal.o;
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
-import nh.d;
-import oh.b;
-import qh.g;
+import oh.d;
+import ph.b;
 import r1.c;
+import rh.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class a extends g implements Drawable.Callback, j.b {
     private static final int[] U0 = {16842910};
@@ -72,134 +72,134 @@ public class a extends g implements Drawable.Callback, j.b {
     private Drawable Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    private ColorStateList f14822a0;
+    private ColorStateList f14962a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private float f14823b0;
+    private float f14963b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private CharSequence f14824c0;
+    private CharSequence f14964c0;
 
     /* renamed from: d0  reason: collision with root package name */
-    private boolean f14825d0;
+    private boolean f14965d0;
 
     /* renamed from: e0  reason: collision with root package name */
-    private boolean f14826e0;
+    private boolean f14966e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private Drawable f14827f0;
+    private Drawable f14967f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private ColorStateList f14828g0;
+    private ColorStateList f14968g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private bh.g f14829h0;
+    private ch.g f14969h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    private bh.g f14830i0;
+    private ch.g f14970i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private float f14831j0;
+    private float f14971j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private float f14832k0;
+    private float f14972k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private float f14833l0;
+    private float f14973l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private float f14834m0;
+    private float f14974m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private float f14835n0;
+    private float f14975n0;
 
     /* renamed from: o0  reason: collision with root package name */
-    private float f14836o0;
+    private float f14976o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    private float f14837p0;
+    private float f14977p0;
 
     /* renamed from: q0  reason: collision with root package name */
-    private float f14838q0;
+    private float f14978q0;
 
     /* renamed from: r0  reason: collision with root package name */
-    private final Context f14839r0;
+    private final Context f14979r0;
 
     /* renamed from: s0  reason: collision with root package name */
-    private final Paint f14840s0;
+    private final Paint f14980s0;
 
     /* renamed from: t0  reason: collision with root package name */
-    private final Paint f14841t0;
+    private final Paint f14981t0;
 
     /* renamed from: u0  reason: collision with root package name */
-    private final Paint.FontMetrics f14842u0;
+    private final Paint.FontMetrics f14982u0;
 
     /* renamed from: v0  reason: collision with root package name */
-    private final RectF f14843v0;
+    private final RectF f14983v0;
 
     /* renamed from: w0  reason: collision with root package name */
-    private final PointF f14844w0;
+    private final PointF f14984w0;
 
     /* renamed from: x0  reason: collision with root package name */
-    private final Path f14845x0;
+    private final Path f14985x0;
 
     /* renamed from: y0  reason: collision with root package name */
-    private final j f14846y0;
+    private final j f14986y0;
 
     /* renamed from: z0  reason: collision with root package name */
-    private int f14847z0;
+    private int f14987z0;
 
     /* renamed from: com.google.android.material.chip.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0173a {
+    public interface InterfaceC0200a {
         void a();
     }
 
     private a(Context context, AttributeSet attributeSet, int i10, int i11) {
         super(context, attributeSet, i10, i11);
         this.N = -1.0f;
-        this.f14840s0 = new Paint(1);
-        this.f14842u0 = new Paint.FontMetrics();
-        this.f14843v0 = new RectF();
-        this.f14844w0 = new PointF();
-        this.f14845x0 = new Path();
+        this.f14980s0 = new Paint(1);
+        this.f14982u0 = new Paint.FontMetrics();
+        this.f14983v0 = new RectF();
+        this.f14984w0 = new PointF();
+        this.f14985x0 = new Path();
         this.H0 = SetSpanOperation.SPAN_MAX_PRIORITY;
         this.L0 = PorterDuff.Mode.SRC_IN;
         this.P0 = new WeakReference(null);
         N(context);
-        this.f14839r0 = context;
+        this.f14979r0 = context;
         j jVar = new j(this);
-        this.f14846y0 = jVar;
+        this.f14986y0 = jVar;
         this.R = "";
         jVar.f().density = context.getResources().getDisplayMetrics().density;
-        this.f14841t0 = null;
+        this.f14981t0 = null;
         int[] iArr = U0;
         setState(iArr);
         l2(iArr);
         this.R0 = true;
-        if (b.f42806a) {
+        if (b.f44266a) {
             V0.setTint(-1);
         }
     }
 
     private void A0(Canvas canvas, Rect rect) {
         if (!this.T0) {
-            this.f14840s0.setColor(this.f14847z0);
-            this.f14840s0.setStyle(Paint.Style.FILL);
-            this.f14843v0.set(rect);
-            canvas.drawRoundRect(this.f14843v0, I0(), I0(), this.f14840s0);
+            this.f14980s0.setColor(this.f14987z0);
+            this.f14980s0.setStyle(Paint.Style.FILL);
+            this.f14983v0.set(rect);
+            canvas.drawRoundRect(this.f14983v0, I0(), I0(), this.f14980s0);
         }
     }
 
     private void B0(Canvas canvas, Rect rect) {
         if (P2()) {
-            o0(rect, this.f14843v0);
-            RectF rectF = this.f14843v0;
+            o0(rect, this.f14983v0);
+            RectF rectF = this.f14983v0;
             float f10 = rectF.left;
             float f11 = rectF.top;
             canvas.translate(f10, f11);
-            this.Y.setBounds(0, 0, (int) this.f14843v0.width(), (int) this.f14843v0.height());
-            if (b.f42806a) {
+            this.Y.setBounds(0, 0, (int) this.f14983v0.width(), (int) this.f14983v0.height());
+            if (b.f44266a) {
                 this.Z.setBounds(this.Y.getBounds());
                 this.Z.jumpToCurrentState();
                 this.Z.draw(canvas);
@@ -211,74 +211,74 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     private void C0(Canvas canvas, Rect rect) {
-        this.f14840s0.setColor(this.D0);
-        this.f14840s0.setStyle(Paint.Style.FILL);
-        this.f14843v0.set(rect);
+        this.f14980s0.setColor(this.D0);
+        this.f14980s0.setStyle(Paint.Style.FILL);
+        this.f14983v0.set(rect);
         if (!this.T0) {
-            canvas.drawRoundRect(this.f14843v0, I0(), I0(), this.f14840s0);
+            canvas.drawRoundRect(this.f14983v0, I0(), I0(), this.f14980s0);
             return;
         }
-        h(new RectF(rect), this.f14845x0);
-        super.p(canvas, this.f14840s0, this.f14845x0, u());
+        h(new RectF(rect), this.f14985x0);
+        super.p(canvas, this.f14980s0, this.f14985x0, u());
     }
 
     private void D0(Canvas canvas, Rect rect) {
         Canvas canvas2;
-        Paint paint = this.f14841t0;
+        Paint paint = this.f14981t0;
         if (paint != null) {
             paint.setColor(c.l(-16777216, 127));
-            canvas.drawRect(rect, this.f14841t0);
+            canvas.drawRect(rect, this.f14981t0);
             if (O2() || N2()) {
-                l0(rect, this.f14843v0);
-                canvas.drawRect(this.f14843v0, this.f14841t0);
+                l0(rect, this.f14983v0);
+                canvas.drawRect(this.f14983v0, this.f14981t0);
             }
             if (this.R != null) {
                 canvas2 = canvas;
-                canvas2.drawLine(rect.left, rect.exactCenterY(), rect.right, rect.exactCenterY(), this.f14841t0);
+                canvas2.drawLine(rect.left, rect.exactCenterY(), rect.right, rect.exactCenterY(), this.f14981t0);
             } else {
                 canvas2 = canvas;
             }
             if (P2()) {
-                o0(rect, this.f14843v0);
-                canvas2.drawRect(this.f14843v0, this.f14841t0);
+                o0(rect, this.f14983v0);
+                canvas2.drawRect(this.f14983v0, this.f14981t0);
             }
-            this.f14841t0.setColor(c.l(-65536, 127));
-            n0(rect, this.f14843v0);
-            canvas2.drawRect(this.f14843v0, this.f14841t0);
-            this.f14841t0.setColor(c.l(-16711936, 127));
-            p0(rect, this.f14843v0);
-            canvas2.drawRect(this.f14843v0, this.f14841t0);
+            this.f14981t0.setColor(c.l(-65536, 127));
+            n0(rect, this.f14983v0);
+            canvas2.drawRect(this.f14983v0, this.f14981t0);
+            this.f14981t0.setColor(c.l(-16711936, 127));
+            p0(rect, this.f14983v0);
+            canvas2.drawRect(this.f14983v0, this.f14981t0);
         }
     }
 
     private void E0(Canvas canvas, Rect rect) {
         boolean z10;
         if (this.R != null) {
-            Paint.Align t02 = t0(rect, this.f14844w0);
-            r0(rect, this.f14843v0);
-            if (this.f14846y0.e() != null) {
-                this.f14846y0.f().drawableState = getState();
-                this.f14846y0.l(this.f14839r0);
+            Paint.Align t02 = t0(rect, this.f14984w0);
+            r0(rect, this.f14983v0);
+            if (this.f14986y0.e() != null) {
+                this.f14986y0.f().drawableState = getState();
+                this.f14986y0.l(this.f14979r0);
             }
-            this.f14846y0.f().setTextAlign(t02);
+            this.f14986y0.f().setTextAlign(t02);
             int i10 = 0;
-            if (Math.round(this.f14846y0.g(h1().toString())) > Math.round(this.f14843v0.width())) {
+            if (Math.round(this.f14986y0.g(h1().toString())) > Math.round(this.f14983v0.width())) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             if (z10) {
                 i10 = canvas.save();
-                canvas.clipRect(this.f14843v0);
+                canvas.clipRect(this.f14983v0);
             }
             CharSequence charSequence = this.R;
             if (z10 && this.Q0 != null) {
-                charSequence = TextUtils.ellipsize(charSequence, this.f14846y0.f(), this.f14843v0.width(), this.Q0);
+                charSequence = TextUtils.ellipsize(charSequence, this.f14986y0.f(), this.f14983v0.width(), this.Q0);
             }
             CharSequence charSequence2 = charSequence;
             int length = charSequence2.length();
-            PointF pointF = this.f14844w0;
-            canvas.drawText(charSequence2, 0, length, pointF.x, pointF.y, this.f14846y0.f());
+            PointF pointF = this.f14984w0;
+            canvas.drawText(charSequence2, 0, length, pointF.x, pointF.y, this.f14986y0.f());
             if (z10) {
                 canvas.restoreToCount(i10);
             }
@@ -286,7 +286,7 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     private boolean N2() {
-        if (this.f14826e0 && this.f14827f0 != null && this.F0) {
+        if (this.f14966e0 && this.f14967f0 != null && this.F0) {
             return true;
         }
         return false;
@@ -329,13 +329,13 @@ public class a extends g implements Drawable.Callback, j.b {
     private float Z0() {
         Drawable drawable;
         if (this.F0) {
-            drawable = this.f14827f0;
+            drawable = this.f14967f0;
         } else {
             drawable = this.T;
         }
         float f10 = this.V;
         if (f10 <= 0.0f && drawable != null) {
-            f10 = (float) Math.ceil(o.d(this.f14839r0, 24));
+            f10 = (float) Math.ceil(o.d(this.f14979r0, 24));
             if (drawable.getIntrinsicHeight() <= f10) {
                 return drawable.getIntrinsicHeight();
             }
@@ -346,7 +346,7 @@ public class a extends g implements Drawable.Callback, j.b {
     private float a1() {
         Drawable drawable;
         if (this.F0) {
-            drawable = this.f14827f0;
+            drawable = this.f14967f0;
         } else {
             drawable = this.T;
         }
@@ -374,7 +374,7 @@ public class a extends g implements Drawable.Callback, j.b {
                 if (drawable.isStateful()) {
                     drawable.setState(W0());
                 }
-                s1.a.o(drawable, this.f14822a0);
+                s1.a.o(drawable, this.f14962a0);
                 return;
             }
             Drawable drawable2 = this.T;
@@ -392,7 +392,7 @@ public class a extends g implements Drawable.Callback, j.b {
         if (!O2() && !N2()) {
             return;
         }
-        float f10 = this.f14831j0 + this.f14832k0;
+        float f10 = this.f14971j0 + this.f14972k0;
         float a12 = a1();
         if (s1.a.f(this) == 0) {
             float f11 = rect.left + f10;
@@ -420,7 +420,7 @@ public class a extends g implements Drawable.Callback, j.b {
     private void n0(Rect rect, RectF rectF) {
         rectF.set(rect);
         if (P2()) {
-            float f10 = this.f14838q0 + this.f14837p0 + this.f14823b0 + this.f14836o0 + this.f14835n0;
+            float f10 = this.f14978q0 + this.f14977p0 + this.f14963b0 + this.f14976o0 + this.f14975n0;
             if (s1.a.f(this) == 0) {
                 rectF.right = rect.right - f10;
             } else {
@@ -444,18 +444,18 @@ public class a extends g implements Drawable.Callback, j.b {
     private void o0(Rect rect, RectF rectF) {
         rectF.setEmpty();
         if (P2()) {
-            float f10 = this.f14838q0 + this.f14837p0;
+            float f10 = this.f14978q0 + this.f14977p0;
             if (s1.a.f(this) == 0) {
                 float f11 = rect.right - f10;
                 rectF.right = f11;
-                rectF.left = f11 - this.f14823b0;
+                rectF.left = f11 - this.f14963b0;
             } else {
                 float f12 = rect.left + f10;
                 rectF.left = f12;
-                rectF.right = f12 + this.f14823b0;
+                rectF.right = f12 + this.f14963b0;
             }
             float exactCenterY = rect.exactCenterY();
-            float f13 = this.f14823b0;
+            float f13 = this.f14963b0;
             float f14 = exactCenterY - (f13 / 2.0f);
             rectF.top = f14;
             rectF.bottom = f14 + f13;
@@ -465,7 +465,7 @@ public class a extends g implements Drawable.Callback, j.b {
     private void p0(Rect rect, RectF rectF) {
         rectF.setEmpty();
         if (P2()) {
-            float f10 = this.f14838q0 + this.f14837p0 + this.f14823b0 + this.f14836o0 + this.f14835n0;
+            float f10 = this.f14978q0 + this.f14977p0 + this.f14963b0 + this.f14976o0 + this.f14975n0;
             if (s1.a.f(this) == 0) {
                 float f11 = rect.right;
                 rectF.right = f11;
@@ -483,8 +483,8 @@ public class a extends g implements Drawable.Callback, j.b {
     private void r0(Rect rect, RectF rectF) {
         rectF.setEmpty();
         if (this.R != null) {
-            float m02 = this.f14831j0 + m0() + this.f14834m0;
-            float q02 = this.f14838q0 + q0() + this.f14835n0;
+            float m02 = this.f14971j0 + m0() + this.f14974m0;
+            float q02 = this.f14978q0 + q0() + this.f14975n0;
             if (s1.a.f(this) == 0) {
                 rectF.left = rect.left + m02;
                 rectF.right = rect.right - q02;
@@ -505,8 +505,8 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     private float s0() {
-        this.f14846y0.f().getFontMetrics(this.f14842u0);
-        Paint.FontMetrics fontMetrics = this.f14842u0;
+        this.f14986y0.f().getFontMetrics(this.f14982u0);
+        Paint.FontMetrics fontMetrics = this.f14982u0;
         return (fontMetrics.descent + fontMetrics.ascent) / 2.0f;
     }
 
@@ -525,27 +525,27 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     private boolean u0() {
-        if (this.f14826e0 && this.f14827f0 != null && this.f14825d0) {
+        if (this.f14966e0 && this.f14967f0 != null && this.f14965d0) {
             return true;
         }
         return false;
     }
 
     private void u1(AttributeSet attributeSet, int i10, int i11) {
-        TypedArray i12 = l.i(this.f14839r0, attributeSet, k.f1043x0, i10, i11, new int[0]);
-        this.T0 = i12.hasValue(k.f905i1);
-        b2(nh.c.a(this.f14839r0, i12, k.V0));
-        F1(nh.c.a(this.f14839r0, i12, k.I0));
+        TypedArray i12 = l.i(this.f14979r0, attributeSet, k.f7031x0, i10, i11, new int[0]);
+        this.T0 = i12.hasValue(k.f6893i1);
+        b2(oh.c.a(this.f14979r0, i12, k.V0));
+        F1(oh.c.a(this.f14979r0, i12, k.I0));
         T1(i12.getDimension(k.Q0, 0.0f));
         if (i12.hasValue(k.J0)) {
             H1(i12.getDimension(k.J0, 0.0f));
         }
-        X1(nh.c.a(this.f14839r0, i12, k.T0));
+        X1(oh.c.a(this.f14979r0, i12, k.T0));
         Z1(i12.getDimension(k.U0, 0.0f));
-        y2(nh.c.a(this.f14839r0, i12, k.f895h1));
+        y2(oh.c.a(this.f14979r0, i12, k.f6883h1));
         D2(i12.getText(k.C0));
-        d f10 = nh.c.f(this.f14839r0, i12, k.f1052y0);
-        f10.l(i12.getDimension(k.f1061z0, f10.j()));
+        d f10 = oh.c.f(this.f14979r0, i12, k.f7040y0);
+        f10.l(i12.getDimension(k.f7049z0, f10.j()));
         E2(f10);
         int i13 = i12.getInt(k.A0, 0);
         if (i13 != 1) {
@@ -563,35 +563,35 @@ public class a extends g implements Drawable.Callback, j.b {
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "chipIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "chipIconVisible") == null) {
             S1(i12.getBoolean(k.M0, false));
         }
-        L1(nh.c.d(this.f14839r0, i12, k.L0));
+        L1(oh.c.d(this.f14979r0, i12, k.L0));
         if (i12.hasValue(k.O0)) {
-            P1(nh.c.a(this.f14839r0, i12, k.O0));
+            P1(oh.c.a(this.f14979r0, i12, k.O0));
         }
         N1(i12.getDimension(k.N0, -1.0f));
-        o2(i12.getBoolean(k.f845c1, false));
+        o2(i12.getBoolean(k.f6833c1, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconVisible") == null) {
             o2(i12.getBoolean(k.X0, false));
         }
-        c2(nh.c.d(this.f14839r0, i12, k.W0));
-        m2(nh.c.a(this.f14839r0, i12, k.f835b1));
+        c2(oh.c.d(this.f14979r0, i12, k.W0));
+        m2(oh.c.a(this.f14979r0, i12, k.f6823b1));
         h2(i12.getDimension(k.Z0, 0.0f));
         x1(i12.getBoolean(k.D0, false));
         E1(i12.getBoolean(k.H0, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "checkedIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "checkedIconVisible") == null) {
             E1(i12.getBoolean(k.F0, false));
         }
-        z1(nh.c.d(this.f14839r0, i12, k.E0));
+        z1(oh.c.d(this.f14979r0, i12, k.E0));
         if (i12.hasValue(k.G0)) {
-            B1(nh.c.a(this.f14839r0, i12, k.G0));
+            B1(oh.c.a(this.f14979r0, i12, k.G0));
         }
-        B2(bh.g.b(this.f14839r0, i12, k.f915j1));
-        r2(bh.g.b(this.f14839r0, i12, k.f865e1));
+        B2(ch.g.b(this.f14979r0, i12, k.f6903j1));
+        r2(ch.g.b(this.f14979r0, i12, k.f6853e1));
         V1(i12.getDimension(k.S0, 0.0f));
-        v2(i12.getDimension(k.f885g1, 0.0f));
-        t2(i12.getDimension(k.f875f1, 0.0f));
-        J2(i12.getDimension(k.f935l1, 0.0f));
-        G2(i12.getDimension(k.f925k1, 0.0f));
-        j2(i12.getDimension(k.f825a1, 0.0f));
+        v2(i12.getDimension(k.f6873g1, 0.0f));
+        t2(i12.getDimension(k.f6863f1, 0.0f));
+        J2(i12.getDimension(k.f6923l1, 0.0f));
+        G2(i12.getDimension(k.f6913k1, 0.0f));
+        j2(i12.getDimension(k.f6813a1, 0.0f));
         e2(i12.getDimension(k.Y0, 0.0f));
         J1(i12.getDimension(k.K0, 0.0f));
         x2(i12.getDimensionPixelSize(k.B0, Integer.MAX_VALUE));
@@ -606,13 +606,13 @@ public class a extends g implements Drawable.Callback, j.b {
 
     private void w0(Canvas canvas, Rect rect) {
         if (N2()) {
-            l0(rect, this.f14843v0);
-            RectF rectF = this.f14843v0;
+            l0(rect, this.f14983v0);
+            RectF rectF = this.f14983v0;
             float f10 = rectF.left;
             float f11 = rectF.top;
             canvas.translate(f10, f11);
-            this.f14827f0.setBounds(0, 0, (int) this.f14843v0.width(), (int) this.f14843v0.height());
-            this.f14827f0.draw(canvas);
+            this.f14967f0.setBounds(0, 0, (int) this.f14983v0.width(), (int) this.f14983v0.height());
+            this.f14967f0.draw(canvas);
             canvas.translate(-f10, -f11);
         }
     }
@@ -631,14 +631,14 @@ public class a extends g implements Drawable.Callback, j.b {
         boolean onStateChange = super.onStateChange(iArr);
         ColorStateList colorStateList = this.K;
         if (colorStateList != null) {
-            i10 = colorStateList.getColorForState(iArr, this.f14847z0);
+            i10 = colorStateList.getColorForState(iArr, this.f14987z0);
         } else {
             i10 = 0;
         }
         int l10 = l(i10);
         boolean z14 = true;
-        if (this.f14847z0 != l10) {
-            this.f14847z0 = l10;
+        if (this.f14987z0 != l10) {
+            this.f14987z0 = l10;
             onStateChange = true;
         }
         ColorStateList colorStateList2 = this.L;
@@ -652,7 +652,7 @@ public class a extends g implements Drawable.Callback, j.b {
             this.A0 = l11;
             onStateChange = true;
         }
-        int i16 = gh.a.i(l10, l11);
+        int i16 = hh.a.i(l10, l11);
         if (this.B0 != i16) {
             z10 = true;
         } else {
@@ -689,8 +689,8 @@ public class a extends g implements Drawable.Callback, j.b {
                 onStateChange = true;
             }
         }
-        if (this.f14846y0.e() != null && this.f14846y0.e().i() != null) {
-            i14 = this.f14846y0.e().i().getColorForState(iArr, this.E0);
+        if (this.f14986y0.e() != null && this.f14986y0.e().i() != null) {
+            i14 = this.f14986y0.e().i().getColorForState(iArr, this.E0);
         } else {
             i14 = 0;
         }
@@ -698,12 +698,12 @@ public class a extends g implements Drawable.Callback, j.b {
             this.E0 = i14;
             onStateChange = true;
         }
-        if (n1(getState(), 16842912) && this.f14825d0) {
+        if (n1(getState(), 16842912) && this.f14965d0) {
             z12 = true;
         } else {
             z12 = false;
         }
-        if (this.F0 != z12 && this.f14827f0 != null) {
+        if (this.F0 != z12 && this.f14967f0 != null) {
             float m02 = m0();
             this.F0 = z12;
             if (m02 != m0()) {
@@ -731,8 +731,8 @@ public class a extends g implements Drawable.Callback, j.b {
         if (s1(this.T)) {
             z14 |= this.T.setState(iArr);
         }
-        if (s1(this.f14827f0)) {
-            z14 |= this.f14827f0.setState(iArr);
+        if (s1(this.f14967f0)) {
+            z14 |= this.f14967f0.setState(iArr);
         }
         if (s1(this.Y)) {
             int[] iArr3 = new int[iArr.length + iArr2.length];
@@ -740,7 +740,7 @@ public class a extends g implements Drawable.Callback, j.b {
             System.arraycopy(iArr2, 0, iArr3, iArr.length, iArr2.length);
             z14 |= this.Y.setState(iArr3);
         }
-        if (b.f42806a && s1(this.Z)) {
+        if (b.f44266a && s1(this.Z)) {
             z14 |= this.Z.setState(iArr2);
         }
         if (z14) {
@@ -754,22 +754,22 @@ public class a extends g implements Drawable.Callback, j.b {
 
     private void x0(Canvas canvas, Rect rect) {
         if (!this.T0) {
-            this.f14840s0.setColor(this.A0);
-            this.f14840s0.setStyle(Paint.Style.FILL);
-            this.f14840s0.setColorFilter(l1());
-            this.f14843v0.set(rect);
-            canvas.drawRoundRect(this.f14843v0, I0(), I0(), this.f14840s0);
+            this.f14980s0.setColor(this.A0);
+            this.f14980s0.setStyle(Paint.Style.FILL);
+            this.f14980s0.setColorFilter(l1());
+            this.f14983v0.set(rect);
+            canvas.drawRoundRect(this.f14983v0, I0(), I0(), this.f14980s0);
         }
     }
 
     private void y0(Canvas canvas, Rect rect) {
         if (O2()) {
-            l0(rect, this.f14843v0);
-            RectF rectF = this.f14843v0;
+            l0(rect, this.f14983v0);
+            RectF rectF = this.f14983v0;
             float f10 = rectF.left;
             float f11 = rectF.top;
             canvas.translate(f10, f11);
-            this.T.setBounds(0, 0, (int) this.f14843v0.width(), (int) this.f14843v0.height());
+            this.T.setBounds(0, 0, (int) this.f14983v0.width(), (int) this.f14983v0.height());
             this.T.draw(canvas);
             canvas.translate(-f10, -f11);
         }
@@ -777,21 +777,21 @@ public class a extends g implements Drawable.Callback, j.b {
 
     private void z0(Canvas canvas, Rect rect) {
         if (this.P > 0.0f && !this.T0) {
-            this.f14840s0.setColor(this.C0);
-            this.f14840s0.setStyle(Paint.Style.STROKE);
+            this.f14980s0.setColor(this.C0);
+            this.f14980s0.setStyle(Paint.Style.STROKE);
             if (!this.T0) {
-                this.f14840s0.setColorFilter(l1());
+                this.f14980s0.setColorFilter(l1());
             }
-            RectF rectF = this.f14843v0;
+            RectF rectF = this.f14983v0;
             float f10 = this.P;
             rectF.set(rect.left + (f10 / 2.0f), rect.top + (f10 / 2.0f), rect.right - (f10 / 2.0f), rect.bottom - (f10 / 2.0f));
             float f11 = this.N - (this.P / 2.0f);
-            canvas.drawRoundRect(this.f14843v0, f11, f11, this.f14840s0);
+            canvas.drawRoundRect(this.f14983v0, f11, f11, this.f14980s0);
         }
     }
 
     public void A1(int i10) {
-        z1(g.a.b(this.f14839r0, i10));
+        z1(g.a.b(this.f14979r0, i10));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -800,29 +800,29 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void B1(ColorStateList colorStateList) {
-        if (this.f14828g0 != colorStateList) {
-            this.f14828g0 = colorStateList;
+        if (this.f14968g0 != colorStateList) {
+            this.f14968g0 = colorStateList;
             if (u0()) {
-                s1.a.o(this.f14827f0, colorStateList);
+                s1.a.o(this.f14967f0, colorStateList);
             }
             onStateChange(getState());
         }
     }
 
-    public void B2(bh.g gVar) {
-        this.f14829h0 = gVar;
+    public void B2(ch.g gVar) {
+        this.f14969h0 = gVar;
     }
 
     public void C1(int i10) {
-        B1(g.a.a(this.f14839r0, i10));
+        B1(g.a.a(this.f14979r0, i10));
     }
 
     public void C2(int i10) {
-        B2(bh.g.c(this.f14839r0, i10));
+        B2(ch.g.c(this.f14979r0, i10));
     }
 
     public void D1(int i10) {
-        E1(this.f14839r0.getResources().getBoolean(i10));
+        E1(this.f14979r0.getResources().getBoolean(i10));
     }
 
     public void D2(CharSequence charSequence) {
@@ -831,22 +831,22 @@ public class a extends g implements Drawable.Callback, j.b {
         }
         if (!TextUtils.equals(this.R, charSequence)) {
             this.R = charSequence;
-            this.f14846y0.k(true);
+            this.f14986y0.k(true);
             invalidateSelf();
             v1();
         }
     }
 
     public void E1(boolean z10) {
-        if (this.f14826e0 != z10) {
+        if (this.f14966e0 != z10) {
             boolean N2 = N2();
-            this.f14826e0 = z10;
+            this.f14966e0 = z10;
             boolean N22 = N2();
             if (N2 != N22) {
                 if (N22) {
-                    k0(this.f14827f0);
+                    k0(this.f14967f0);
                 } else {
-                    Q2(this.f14827f0);
+                    Q2(this.f14967f0);
                 }
                 invalidateSelf();
                 v1();
@@ -855,11 +855,11 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void E2(d dVar) {
-        this.f14846y0.j(dVar, this.f14839r0);
+        this.f14986y0.j(dVar, this.f14979r0);
     }
 
     public Drawable F0() {
-        return this.f14827f0;
+        return this.f14967f0;
     }
 
     public void F1(ColorStateList colorStateList) {
@@ -870,20 +870,20 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void F2(int i10) {
-        E2(new d(this.f14839r0, i10));
+        E2(new d(this.f14979r0, i10));
     }
 
     public ColorStateList G0() {
-        return this.f14828g0;
+        return this.f14968g0;
     }
 
     public void G1(int i10) {
-        F1(g.a.a(this.f14839r0, i10));
+        F1(g.a.a(this.f14979r0, i10));
     }
 
     public void G2(float f10) {
-        if (this.f14835n0 != f10) {
-            this.f14835n0 = f10;
+        if (this.f14975n0 != f10) {
+            this.f14975n0 = f10;
             invalidateSelf();
             v1();
         }
@@ -901,7 +901,7 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void H2(int i10) {
-        G2(this.f14839r0.getResources().getDimension(i10));
+        G2(this.f14979r0.getResources().getDimension(i10));
     }
 
     public float I0() {
@@ -912,33 +912,33 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void I1(int i10) {
-        H1(this.f14839r0.getResources().getDimension(i10));
+        H1(this.f14979r0.getResources().getDimension(i10));
     }
 
     public void I2(float f10) {
         d i12 = i1();
         if (i12 != null) {
             i12.l(f10);
-            this.f14846y0.f().setTextSize(f10);
+            this.f14986y0.f().setTextSize(f10);
             a();
         }
     }
 
     public float J0() {
-        return this.f14838q0;
+        return this.f14978q0;
     }
 
     public void J1(float f10) {
-        if (this.f14838q0 != f10) {
-            this.f14838q0 = f10;
+        if (this.f14978q0 != f10) {
+            this.f14978q0 = f10;
             invalidateSelf();
             v1();
         }
     }
 
     public void J2(float f10) {
-        if (this.f14834m0 != f10) {
-            this.f14834m0 = f10;
+        if (this.f14974m0 != f10) {
+            this.f14974m0 = f10;
             invalidateSelf();
             v1();
         }
@@ -953,11 +953,11 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void K1(int i10) {
-        J1(this.f14839r0.getResources().getDimension(i10));
+        J1(this.f14979r0.getResources().getDimension(i10));
     }
 
     public void K2(int i10) {
-        J2(this.f14839r0.getResources().getDimension(i10));
+        J2(this.f14979r0.getResources().getDimension(i10));
     }
 
     public float L0() {
@@ -1000,7 +1000,7 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void M1(int i10) {
-        L1(g.a.b(this.f14839r0, i10));
+        L1(g.a.b(this.f14979r0, i10));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1025,11 +1025,11 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public float O0() {
-        return this.f14831j0;
+        return this.f14971j0;
     }
 
     public void O1(int i10) {
-        N1(this.f14839r0.getResources().getDimension(i10));
+        N1(this.f14979r0.getResources().getDimension(i10));
     }
 
     public ColorStateList P0() {
@@ -1052,7 +1052,7 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void Q1(int i10) {
-        P1(g.a.a(this.f14839r0, i10));
+        P1(g.a.a(this.f14979r0, i10));
     }
 
     public Drawable R0() {
@@ -1064,11 +1064,11 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void R1(int i10) {
-        S1(this.f14839r0.getResources().getBoolean(i10));
+        S1(this.f14979r0.getResources().getBoolean(i10));
     }
 
     public CharSequence S0() {
-        return this.f14824c0;
+        return this.f14964c0;
     }
 
     public void S1(boolean z10) {
@@ -1089,7 +1089,7 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public float T0() {
-        return this.f14837p0;
+        return this.f14977p0;
     }
 
     public void T1(float f10) {
@@ -1101,20 +1101,20 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public float U0() {
-        return this.f14823b0;
+        return this.f14963b0;
     }
 
     public void U1(int i10) {
-        T1(this.f14839r0.getResources().getDimension(i10));
+        T1(this.f14979r0.getResources().getDimension(i10));
     }
 
     public float V0() {
-        return this.f14836o0;
+        return this.f14976o0;
     }
 
     public void V1(float f10) {
-        if (this.f14831j0 != f10) {
-            this.f14831j0 = f10;
+        if (this.f14971j0 != f10) {
+            this.f14971j0 = f10;
             invalidateSelf();
             v1();
         }
@@ -1125,11 +1125,11 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void W1(int i10) {
-        V1(this.f14839r0.getResources().getDimension(i10));
+        V1(this.f14979r0.getResources().getDimension(i10));
     }
 
     public ColorStateList X0() {
-        return this.f14822a0;
+        return this.f14962a0;
     }
 
     public void X1(ColorStateList colorStateList) {
@@ -1147,13 +1147,13 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void Y1(int i10) {
-        X1(g.a.a(this.f14839r0, i10));
+        X1(g.a.a(this.f14979r0, i10));
     }
 
     public void Z1(float f10) {
         if (this.P != f10) {
             this.P = f10;
-            this.f14840s0.setStrokeWidth(f10);
+            this.f14980s0.setStrokeWidth(f10);
             if (this.T0) {
                 super.g0(f10);
             }
@@ -1168,15 +1168,15 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void a2(int i10) {
-        Z1(this.f14839r0.getResources().getDimension(i10));
+        Z1(this.f14979r0.getResources().getDimension(i10));
     }
 
     public TextUtils.TruncateAt b1() {
         return this.Q0;
     }
 
-    public bh.g c1() {
-        return this.f14830i0;
+    public ch.g c1() {
+        return this.f14970i0;
     }
 
     public void c2(Drawable drawable) {
@@ -1190,7 +1190,7 @@ public class a extends g implements Drawable.Callback, j.b {
                 drawable2 = null;
             }
             this.Y = drawable2;
-            if (b.f42806a) {
+            if (b.f44266a) {
                 S2();
             }
             float q03 = q0();
@@ -1206,17 +1206,17 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public float d1() {
-        return this.f14833l0;
+        return this.f14973l0;
     }
 
     public void d2(CharSequence charSequence) {
-        if (this.f14824c0 != charSequence) {
-            this.f14824c0 = a2.a.c().h(charSequence);
+        if (this.f14964c0 != charSequence) {
+            this.f14964c0 = a2.a.c().h(charSequence);
             invalidateSelf();
         }
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable
+    @Override // rh.g, android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         Canvas canvas2;
         int i10;
@@ -1225,7 +1225,7 @@ public class a extends g implements Drawable.Callback, j.b {
             int i11 = this.H0;
             if (i11 < 255) {
                 canvas2 = canvas;
-                i10 = ch.a.a(canvas2, bounds.left, bounds.top, bounds.right, bounds.bottom, i11);
+                i10 = dh.a.a(canvas2, bounds.left, bounds.top, bounds.right, bounds.bottom, i11);
             } else {
                 canvas2 = canvas;
                 i10 = 0;
@@ -1251,12 +1251,12 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public float e1() {
-        return this.f14832k0;
+        return this.f14972k0;
     }
 
     public void e2(float f10) {
-        if (this.f14837p0 != f10) {
-            this.f14837p0 = f10;
+        if (this.f14977p0 != f10) {
+            this.f14977p0 = f10;
             invalidateSelf();
             if (P2()) {
                 v1();
@@ -1269,18 +1269,18 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void f2(int i10) {
-        e2(this.f14839r0.getResources().getDimension(i10));
+        e2(this.f14979r0.getResources().getDimension(i10));
     }
 
-    public bh.g g1() {
-        return this.f14829h0;
+    public ch.g g1() {
+        return this.f14969h0;
     }
 
     public void g2(int i10) {
-        c2(g.a.b(this.f14839r0, i10));
+        c2(g.a.b(this.f14979r0, i10));
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable
+    @Override // rh.g, android.graphics.drawable.Drawable
     public int getAlpha() {
         return this.H0;
     }
@@ -1297,15 +1297,15 @@ public class a extends g implements Drawable.Callback, j.b {
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        return Math.min(Math.round(this.f14831j0 + m0() + this.f14834m0 + this.f14846y0.g(h1().toString()) + this.f14835n0 + q0() + this.f14838q0), this.S0);
+        return Math.min(Math.round(this.f14971j0 + m0() + this.f14974m0 + this.f14986y0.g(h1().toString()) + this.f14975n0 + q0() + this.f14978q0), this.S0);
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable
+    @Override // rh.g, android.graphics.drawable.Drawable
     public int getOpacity() {
         return -3;
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable
+    @Override // rh.g, android.graphics.drawable.Drawable
     public void getOutline(Outline outline) {
         Outline outline2;
         if (this.T0) {
@@ -1328,8 +1328,8 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void h2(float f10) {
-        if (this.f14823b0 != f10) {
-            this.f14823b0 = f10;
+        if (this.f14963b0 != f10) {
+            this.f14963b0 = f10;
             invalidateSelf();
             if (P2()) {
                 v1();
@@ -1338,11 +1338,11 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public d i1() {
-        return this.f14846y0.e();
+        return this.f14986y0.e();
     }
 
     public void i2(int i10) {
-        h2(this.f14839r0.getResources().getDimension(i10));
+        h2(this.f14979r0.getResources().getDimension(i10));
     }
 
     @Override // android.graphics.drawable.Drawable.Callback
@@ -1353,10 +1353,10 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable
+    @Override // rh.g, android.graphics.drawable.Drawable
     public boolean isStateful() {
         if (!r1(this.K) && !r1(this.L) && !r1(this.O)) {
-            if ((!this.N0 || !r1(this.O0)) && !t1(this.f14846y0.e()) && !u0() && !s1(this.T) && !s1(this.f14827f0) && !r1(this.K0)) {
+            if ((!this.N0 || !r1(this.O0)) && !t1(this.f14986y0.e()) && !u0() && !s1(this.T) && !s1(this.f14967f0) && !r1(this.K0)) {
                 return false;
             }
             return true;
@@ -1365,12 +1365,12 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public float j1() {
-        return this.f14835n0;
+        return this.f14975n0;
     }
 
     public void j2(float f10) {
-        if (this.f14836o0 != f10) {
-            this.f14836o0 = f10;
+        if (this.f14976o0 != f10) {
+            this.f14976o0 = f10;
             invalidateSelf();
             if (P2()) {
                 v1();
@@ -1379,11 +1379,11 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public float k1() {
-        return this.f14834m0;
+        return this.f14974m0;
     }
 
     public void k2(int i10) {
-        j2(this.f14839r0.getResources().getDimension(i10));
+        j2(this.f14979r0.getResources().getDimension(i10));
     }
 
     public boolean l2(int[] iArr) {
@@ -1402,7 +1402,7 @@ public class a extends g implements Drawable.Callback, j.b {
         if (!O2() && !N2()) {
             return 0.0f;
         }
-        return this.f14832k0 + a1() + this.f14833l0;
+        return this.f14972k0 + a1() + this.f14973l0;
     }
 
     public boolean m1() {
@@ -1410,8 +1410,8 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void m2(ColorStateList colorStateList) {
-        if (this.f14822a0 != colorStateList) {
-            this.f14822a0 = colorStateList;
+        if (this.f14962a0 != colorStateList) {
+            this.f14962a0 = colorStateList;
             if (P2()) {
                 s1.a.o(this.Y, colorStateList);
             }
@@ -1420,11 +1420,11 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void n2(int i10) {
-        m2(g.a.a(this.f14839r0, i10));
+        m2(g.a.a(this.f14979r0, i10));
     }
 
     public boolean o1() {
-        return this.f14825d0;
+        return this.f14965d0;
     }
 
     public void o2(boolean z10) {
@@ -1451,7 +1451,7 @@ public class a extends g implements Drawable.Callback, j.b {
             onLayoutDirectionChanged |= s1.a.m(this.T, i10);
         }
         if (N2()) {
-            onLayoutDirectionChanged |= s1.a.m(this.f14827f0, i10);
+            onLayoutDirectionChanged |= s1.a.m(this.f14967f0, i10);
         }
         if (P2()) {
             onLayoutDirectionChanged |= s1.a.m(this.Y, i10);
@@ -1470,7 +1470,7 @@ public class a extends g implements Drawable.Callback, j.b {
             onLevelChange |= this.T.setLevel(i10);
         }
         if (N2()) {
-            onLevelChange |= this.f14827f0.setLevel(i10);
+            onLevelChange |= this.f14967f0.setLevel(i10);
         }
         if (P2()) {
             onLevelChange |= this.Y.setLevel(i10);
@@ -1481,7 +1481,7 @@ public class a extends g implements Drawable.Callback, j.b {
         return onLevelChange;
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable, com.google.android.material.internal.j.b
+    @Override // rh.g, android.graphics.drawable.Drawable, com.google.android.material.internal.j.b
     public boolean onStateChange(int[] iArr) {
         if (this.T0) {
             super.onStateChange(iArr);
@@ -1493,14 +1493,14 @@ public class a extends g implements Drawable.Callback, j.b {
         return s1(this.Y);
     }
 
-    public void p2(InterfaceC0173a interfaceC0173a) {
-        this.P0 = new WeakReference(interfaceC0173a);
+    public void p2(InterfaceC0200a interfaceC0200a) {
+        this.P0 = new WeakReference(interfaceC0200a);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float q0() {
         if (P2()) {
-            return this.f14836o0 + this.f14823b0 + this.f14837p0;
+            return this.f14976o0 + this.f14963b0 + this.f14977p0;
         }
         return 0.0f;
     }
@@ -1513,12 +1513,12 @@ public class a extends g implements Drawable.Callback, j.b {
         this.Q0 = truncateAt;
     }
 
-    public void r2(bh.g gVar) {
-        this.f14830i0 = gVar;
+    public void r2(ch.g gVar) {
+        this.f14970i0 = gVar;
     }
 
     public void s2(int i10) {
-        r2(bh.g.c(this.f14839r0, i10));
+        r2(ch.g.c(this.f14979r0, i10));
     }
 
     @Override // android.graphics.drawable.Drawable.Callback
@@ -1529,7 +1529,7 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable
+    @Override // rh.g, android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
         if (this.H0 != i10) {
             this.H0 = i10;
@@ -1537,7 +1537,7 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable
+    @Override // rh.g, android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
         if (this.I0 != colorFilter) {
             this.I0 = colorFilter;
@@ -1545,7 +1545,7 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable
+    @Override // rh.g, android.graphics.drawable.Drawable
     public void setTintList(ColorStateList colorStateList) {
         if (this.K0 != colorStateList) {
             this.K0 = colorStateList;
@@ -1553,7 +1553,7 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    @Override // qh.g, android.graphics.drawable.Drawable
+    @Override // rh.g, android.graphics.drawable.Drawable
     public void setTintMode(PorterDuff.Mode mode) {
         if (this.L0 != mode) {
             this.L0 = mode;
@@ -1569,7 +1569,7 @@ public class a extends g implements Drawable.Callback, j.b {
             visible |= this.T.setVisible(z10, z11);
         }
         if (N2()) {
-            visible |= this.f14827f0.setVisible(z10, z11);
+            visible |= this.f14967f0.setVisible(z10, z11);
         }
         if (P2()) {
             visible |= this.Y.setVisible(z10, z11);
@@ -1584,7 +1584,7 @@ public class a extends g implements Drawable.Callback, j.b {
         pointF.set(0.0f, 0.0f);
         Paint.Align align = Paint.Align.LEFT;
         if (this.R != null) {
-            float m02 = this.f14831j0 + m0() + this.f14834m0;
+            float m02 = this.f14971j0 + m0() + this.f14974m0;
             if (s1.a.f(this) == 0) {
                 pointF.x = rect.left + m02;
             } else {
@@ -1597,9 +1597,9 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void t2(float f10) {
-        if (this.f14833l0 != f10) {
+        if (this.f14973l0 != f10) {
             float m02 = m0();
-            this.f14833l0 = f10;
+            this.f14973l0 = f10;
             float m03 = m0();
             invalidateSelf();
             if (m02 != m03) {
@@ -1609,7 +1609,7 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void u2(int i10) {
-        t2(this.f14839r0.getResources().getDimension(i10));
+        t2(this.f14979r0.getResources().getDimension(i10));
     }
 
     @Override // android.graphics.drawable.Drawable.Callback
@@ -1621,16 +1621,16 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     protected void v1() {
-        InterfaceC0173a interfaceC0173a = (InterfaceC0173a) this.P0.get();
-        if (interfaceC0173a != null) {
-            interfaceC0173a.a();
+        InterfaceC0200a interfaceC0200a = (InterfaceC0200a) this.P0.get();
+        if (interfaceC0200a != null) {
+            interfaceC0200a.a();
         }
     }
 
     public void v2(float f10) {
-        if (this.f14832k0 != f10) {
+        if (this.f14972k0 != f10) {
             float m02 = m0();
-            this.f14832k0 = f10;
+            this.f14972k0 = f10;
             float m03 = m0();
             invalidateSelf();
             if (m02 != m03) {
@@ -1640,12 +1640,12 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void w2(int i10) {
-        v2(this.f14839r0.getResources().getDimension(i10));
+        v2(this.f14979r0.getResources().getDimension(i10));
     }
 
     public void x1(boolean z10) {
-        if (this.f14825d0 != z10) {
-            this.f14825d0 = z10;
+        if (this.f14965d0 != z10) {
+            this.f14965d0 = z10;
             float m02 = m0();
             if (!z10 && this.F0) {
                 this.F0 = false;
@@ -1663,7 +1663,7 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void y1(int i10) {
-        x1(this.f14839r0.getResources().getBoolean(i10));
+        x1(this.f14979r0.getResources().getBoolean(i10));
     }
 
     public void y2(ColorStateList colorStateList) {
@@ -1675,12 +1675,12 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void z1(Drawable drawable) {
-        if (this.f14827f0 != drawable) {
+        if (this.f14967f0 != drawable) {
             float m02 = m0();
-            this.f14827f0 = drawable;
+            this.f14967f0 = drawable;
             float m03 = m0();
-            Q2(this.f14827f0);
-            k0(this.f14827f0);
+            Q2(this.f14967f0);
+            k0(this.f14967f0);
             invalidateSelf();
             if (m02 != m03) {
                 v1();
@@ -1689,6 +1689,6 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     public void z2(int i10) {
-        y2(g.a.a(this.f14839r0, i10));
+        y2(g.a.a(this.f14979r0, i10));
     }
 }

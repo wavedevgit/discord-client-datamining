@@ -1,173 +1,229 @@
 package zc;
 
-import java.util.ArrayDeque;
-import lc.l0;
-import tc.l;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import com.google.android.exoplayer2.Format;
+import com.google.android.exoplayer2.metadata.Metadata;
+import com.reactnativecommunity.clipboard.ClipboardModule;
+import oe.h0;
+import uc.k;
+import uc.l;
+import uc.m;
+import uc.y;
+import uc.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class a implements c {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final byte[] f56161a = new byte[8];
+public final class a implements k {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ArrayDeque f56162b = new ArrayDeque();
+    private m f56297b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final g f56163c = new g();
+    private int f56298c;
 
     /* renamed from: d  reason: collision with root package name */
-    private zc.b f56164d;
+    private int f56299d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f56165e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private int f56166f;
+    private int f56300e;
 
     /* renamed from: g  reason: collision with root package name */
-    private long f56167g;
+    private nd.b f56302g;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class b {
+    /* renamed from: h  reason: collision with root package name */
+    private l f56303h;
 
-        /* renamed from: a  reason: collision with root package name */
-        private final int f56168a;
+    /* renamed from: i  reason: collision with root package name */
+    private c f56304i;
 
-        /* renamed from: b  reason: collision with root package name */
-        private final long f56169b;
+    /* renamed from: j  reason: collision with root package name */
+    private cd.k f56305j;
 
-        private b(int i10, long j10) {
-            this.f56168a = i10;
-            this.f56169b = j10;
+    /* renamed from: a  reason: collision with root package name */
+    private final h0 f56296a = new h0(6);
+
+    /* renamed from: f  reason: collision with root package name */
+    private long f56301f = -1;
+
+    private void b(l lVar) {
+        this.f56296a.Q(2);
+        lVar.n(this.f56296a.e(), 0, 2);
+        lVar.h(this.f56296a.N() - 2);
+    }
+
+    private void e() {
+        g(new Metadata.b[0]);
+        ((m) oe.a.e(this.f56297b)).q();
+        this.f56297b.j(new z.b(-9223372036854775807L));
+        this.f56298c = 6;
+    }
+
+    private static nd.b f(String str, long j10) {
+        b a10;
+        if (j10 == -1 || (a10 = e.a(str)) == null) {
+            return null;
+        }
+        return a10.a(j10);
+    }
+
+    private void g(Metadata.b... bVarArr) {
+        ((m) oe.a.e(this.f56297b)).c(IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, 4).c(new Format.b().M(ClipboardModule.MIMETYPE_JPEG).Z(new Metadata(bVarArr)).G());
+    }
+
+    private int i(l lVar) {
+        this.f56296a.Q(2);
+        lVar.n(this.f56296a.e(), 0, 2);
+        return this.f56296a.N();
+    }
+
+    private void j(l lVar) {
+        this.f56296a.Q(2);
+        lVar.readFully(this.f56296a.e(), 0, 2);
+        int N = this.f56296a.N();
+        this.f56299d = N;
+        if (N == 65498) {
+            if (this.f56301f != -1) {
+                this.f56298c = 4;
+            } else {
+                e();
+            }
+        } else if ((N < 65488 || N > 65497) && N != 65281) {
+            this.f56298c = 1;
         }
     }
 
-    private long c(l lVar) {
+    private void k(l lVar) {
+        String B;
+        if (this.f56299d == 65505) {
+            h0 h0Var = new h0(this.f56300e);
+            lVar.readFully(h0Var.e(), 0, this.f56300e);
+            if (this.f56302g == null && "http://ns.adobe.com/xap/1.0/".equals(h0Var.B()) && (B = h0Var.B()) != null) {
+                nd.b f10 = f(B, lVar.getLength());
+                this.f56302g = f10;
+                if (f10 != null) {
+                    this.f56301f = f10.f38163o;
+                }
+            }
+        } else {
+            lVar.k(this.f56300e);
+        }
+        this.f56298c = 0;
+    }
+
+    private void l(l lVar) {
+        this.f56296a.Q(2);
+        lVar.readFully(this.f56296a.e(), 0, 2);
+        this.f56300e = this.f56296a.N() - 2;
+        this.f56298c = 2;
+    }
+
+    private void m(l lVar) {
+        if (!lVar.c(this.f56296a.e(), 0, 1, true)) {
+            e();
+            return;
+        }
         lVar.e();
-        while (true) {
-            lVar.n(this.f56161a, 0, 4);
-            int c10 = g.c(this.f56161a[0]);
-            if (c10 != -1 && c10 <= 4) {
-                int a10 = (int) g.a(this.f56161a, c10, false);
-                if (this.f56164d.f(a10)) {
-                    lVar.k(c10);
-                    return a10;
-                }
-            }
-            lVar.k(1);
+        if (this.f56305j == null) {
+            this.f56305j = new cd.k();
+        }
+        c cVar = new c(lVar, this.f56301f);
+        this.f56304i = cVar;
+        if (this.f56305j.d(cVar)) {
+            this.f56305j.c(new d(this.f56301f, (m) oe.a.e(this.f56297b)));
+            n();
+            return;
+        }
+        e();
+    }
+
+    private void n() {
+        g((Metadata.b) oe.a.e(this.f56302g));
+        this.f56298c = 5;
+    }
+
+    @Override // uc.k
+    public void a(long j10, long j11) {
+        if (j10 == 0) {
+            this.f56298c = 0;
+            this.f56305j = null;
+        } else if (this.f56298c == 5) {
+            ((cd.k) oe.a.e(this.f56305j)).a(j10, j11);
         }
     }
 
-    private double d(l lVar, int i10) {
-        long e10 = e(lVar, i10);
-        if (i10 == 4) {
-            return Float.intBitsToFloat((int) e10);
-        }
-        return Double.longBitsToDouble(e10);
+    @Override // uc.k
+    public void c(m mVar) {
+        this.f56297b = mVar;
     }
 
-    private long e(l lVar, int i10) {
-        lVar.readFully(this.f56161a, 0, i10);
-        long j10 = 0;
-        for (int i11 = 0; i11 < i10; i11++) {
-            j10 = (j10 << 8) | (this.f56161a[i11] & 255);
+    @Override // uc.k
+    public boolean d(l lVar) {
+        if (i(lVar) != 65496) {
+            return false;
         }
-        return j10;
+        int i10 = i(lVar);
+        this.f56299d = i10;
+        if (i10 == 65504) {
+            b(lVar);
+            this.f56299d = i(lVar);
+        }
+        if (this.f56299d != 65505) {
+            return false;
+        }
+        lVar.h(2);
+        this.f56296a.Q(6);
+        lVar.n(this.f56296a.e(), 0, 6);
+        if (this.f56296a.J() != 1165519206 || this.f56296a.N() != 0) {
+            return false;
+        }
+        return true;
     }
 
-    private static String f(l lVar, int i10) {
-        if (i10 == 0) {
-            return "";
-        }
-        byte[] bArr = new byte[i10];
-        lVar.readFully(bArr, 0, i10);
-        while (i10 > 0 && bArr[i10 - 1] == 0) {
-            i10--;
-        }
-        return new String(bArr, 0, i10);
-    }
-
-    @Override // zc.c
-    public boolean a(l lVar) {
-        ne.a.i(this.f56164d);
-        while (true) {
-            b bVar = (b) this.f56162b.peek();
-            if (bVar != null && lVar.getPosition() >= bVar.f56169b) {
-                this.f56164d.a(((b) this.f56162b.pop()).f56168a);
-                return true;
-            }
-            if (this.f56165e == 0) {
-                long d10 = this.f56163c.d(lVar, true, false, 4);
-                if (d10 == -2) {
-                    d10 = c(lVar);
-                }
-                if (d10 == -1) {
-                    return false;
-                }
-                this.f56166f = (int) d10;
-                this.f56165e = 1;
-            }
-            if (this.f56165e == 1) {
-                this.f56167g = this.f56163c.d(lVar, false, true, 8);
-                this.f56165e = 2;
-            }
-            int e10 = this.f56164d.e(this.f56166f);
-            if (e10 != 0) {
-                if (e10 != 1) {
-                    if (e10 != 2) {
-                        if (e10 != 3) {
-                            if (e10 != 4) {
-                                if (e10 == 5) {
-                                    long j10 = this.f56167g;
-                                    if (j10 != 4 && j10 != 8) {
-                                        throw l0.a("Invalid float size: " + this.f56167g, null);
-                                    }
-                                    this.f56164d.c(this.f56166f, d(lVar, (int) j10));
-                                    this.f56165e = 0;
-                                    return true;
-                                }
-                                throw l0.a("Invalid element type " + e10, null);
+    @Override // uc.k
+    public int h(l lVar, y yVar) {
+        int i10 = this.f56298c;
+        if (i10 != 0) {
+            if (i10 != 1) {
+                if (i10 != 2) {
+                    if (i10 != 4) {
+                        if (i10 != 5) {
+                            if (i10 == 6) {
+                                return -1;
                             }
-                            this.f56164d.b(this.f56166f, (int) this.f56167g, lVar);
-                            this.f56165e = 0;
-                            return true;
+                            throw new IllegalStateException();
                         }
-                        long j11 = this.f56167g;
-                        if (j11 <= 2147483647L) {
-                            this.f56164d.g(this.f56166f, f(lVar, (int) j11));
-                            this.f56165e = 0;
-                            return true;
+                        if (this.f56304i == null || lVar != this.f56303h) {
+                            this.f56303h = lVar;
+                            this.f56304i = new c(lVar, this.f56301f);
                         }
-                        throw l0.a("String element size: " + this.f56167g, null);
+                        int h10 = ((cd.k) oe.a.e(this.f56305j)).h(this.f56304i, yVar);
+                        if (h10 == 1) {
+                            yVar.f51535a += this.f56301f;
+                        }
+                        return h10;
                     }
-                    long j12 = this.f56167g;
-                    if (j12 <= 8) {
-                        this.f56164d.d(this.f56166f, e(lVar, (int) j12));
-                        this.f56165e = 0;
-                        return true;
+                    long position = lVar.getPosition();
+                    long j10 = this.f56301f;
+                    if (position != j10) {
+                        yVar.f51535a = j10;
+                        return 1;
                     }
-                    throw l0.a("Invalid integer size: " + this.f56167g, null);
+                    m(lVar);
+                    return 0;
                 }
-                long position = lVar.getPosition();
-                this.f56162b.push(new b(this.f56166f, this.f56167g + position));
-                this.f56164d.h(this.f56166f, position, this.f56167g);
-                this.f56165e = 0;
-                return true;
+                k(lVar);
+                return 0;
             }
-            lVar.k((int) this.f56167g);
-            this.f56165e = 0;
+            l(lVar);
+            return 0;
         }
+        j(lVar);
+        return 0;
     }
 
-    @Override // zc.c
-    public void b(zc.b bVar) {
-        this.f56164d = bVar;
-    }
-
-    @Override // zc.c
-    public void reset() {
-        this.f56165e = 0;
-        this.f56162b.clear();
-        this.f56163c.e();
+    @Override // uc.k
+    public void release() {
+        cd.k kVar = this.f56305j;
+        if (kVar != null) {
+            kVar.release();
+        }
     }
 }

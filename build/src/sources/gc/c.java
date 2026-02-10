@@ -1,112 +1,80 @@
 package gc;
 
-import gc.f;
-import java.util.Set;
+import ac.o;
+import ac.t;
+import bc.m;
+import hc.x;
+import java.util.concurrent.Executor;
+import java.util.logging.Logger;
+import jc.b;
+import yb.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c extends f.b {
+public class c implements e {
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final Logger f24115f = Logger.getLogger(t.class.getName());
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f24906a;
+    private final x f24116a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f24907b;
+    private final Executor f24117b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f24908c;
+    private final bc.e f24118c;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    static final class b extends f.b.a {
+    /* renamed from: d  reason: collision with root package name */
+    private final ic.d f24119d;
 
-        /* renamed from: a  reason: collision with root package name */
-        private Long f24909a;
+    /* renamed from: e  reason: collision with root package name */
+    private final jc.b f24120e;
 
-        /* renamed from: b  reason: collision with root package name */
-        private Long f24910b;
+    public c(Executor executor, bc.e eVar, x xVar, ic.d dVar, jc.b bVar) {
+        this.f24117b = executor;
+        this.f24118c = eVar;
+        this.f24116a = xVar;
+        this.f24119d = dVar;
+        this.f24120e = bVar;
+    }
 
-        /* renamed from: c  reason: collision with root package name */
-        private Set f24911c;
+    public static /* synthetic */ Object b(c cVar, o oVar, ac.i iVar) {
+        cVar.f24119d.v1(oVar, iVar);
+        cVar.f24116a.b(oVar, 1);
+        return null;
+    }
 
-        @Override // gc.f.b.a
-        public f.b a() {
-            String str = "";
-            if (this.f24909a == null) {
-                str = " delta";
+    public static /* synthetic */ void c(final c cVar, final o oVar, j jVar, ac.i iVar) {
+        cVar.getClass();
+        try {
+            m a10 = cVar.f24118c.a(oVar.b());
+            if (a10 == null) {
+                String format = String.format("Transport backend '%s' is not registered", oVar.b());
+                f24115f.warning(format);
+                jVar.a(new IllegalArgumentException(format));
+                return;
             }
-            if (this.f24910b == null) {
-                str = str + " maxAllowedDelay";
-            }
-            if (this.f24911c == null) {
-                str = str + " flags";
-            }
-            if (str.isEmpty()) {
-                return new c(this.f24909a.longValue(), this.f24910b.longValue(), this.f24911c);
-            }
-            throw new IllegalStateException("Missing required properties:" + str);
-        }
-
-        @Override // gc.f.b.a
-        public f.b.a b(long j10) {
-            this.f24909a = Long.valueOf(j10);
-            return this;
-        }
-
-        @Override // gc.f.b.a
-        public f.b.a c(Set set) {
-            if (set != null) {
-                this.f24911c = set;
-                return this;
-            }
-            throw new NullPointerException("Null flags");
-        }
-
-        @Override // gc.f.b.a
-        public f.b.a d(long j10) {
-            this.f24910b = Long.valueOf(j10);
-            return this;
+            final ac.i a11 = a10.a(iVar);
+            cVar.f24120e.m(new b.a() { // from class: gc.b
+                @Override // jc.b.a
+                public final Object execute() {
+                    return c.b(c.this, oVar, a11);
+                }
+            });
+            jVar.a(null);
+        } catch (Exception e10) {
+            Logger logger = f24115f;
+            logger.warning("Error scheduling event " + e10.getMessage());
+            jVar.a(e10);
         }
     }
 
-    @Override // gc.f.b
-    long b() {
-        return this.f24906a;
-    }
-
-    @Override // gc.f.b
-    Set c() {
-        return this.f24908c;
-    }
-
-    @Override // gc.f.b
-    long d() {
-        return this.f24907b;
-    }
-
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof f.b) {
-            f.b bVar = (f.b) obj;
-            if (this.f24906a == bVar.b() && this.f24907b == bVar.d() && this.f24908c.equals(bVar.c())) {
-                return true;
+    @Override // gc.e
+    public void a(final o oVar, final ac.i iVar, final j jVar) {
+        this.f24117b.execute(new Runnable() { // from class: gc.a
+            @Override // java.lang.Runnable
+            public final void run() {
+                c.c(c.this, oVar, jVar, iVar);
             }
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        long j10 = this.f24906a;
-        long j11 = this.f24907b;
-        return ((((((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003) ^ ((int) ((j11 >>> 32) ^ j11))) * 1000003) ^ this.f24908c.hashCode();
-    }
-
-    public String toString() {
-        return "ConfigValue{delta=" + this.f24906a + ", maxAllowedDelay=" + this.f24907b + ", flags=" + this.f24908c + "}";
-    }
-
-    private c(long j10, long j11, Set set) {
-        this.f24906a = j10;
-        this.f24907b = j11;
-        this.f24908c = set;
+        });
     }
 }

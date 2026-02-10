@@ -3,17 +3,15 @@ package st;
 import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface u {
-    String[] a(String str, Locale locale, v vVar, m mVar);
+    f0 a();
 
-    String[] c(String str, Locale locale, v vVar);
+    x b();
 
-    String[] d(String str, Locale locale, v vVar, m mVar);
+    int c();
 
-    boolean e(Locale locale);
+    String g(y yVar, Locale locale);
 
-    String[] f(String str, Locale locale, v vVar, m mVar, boolean z10);
+    o h(Object obj, d dVar);
 
-    String[] h(String str, Locale locale, v vVar, m mVar);
-
-    boolean i(String str);
+    Object i(q qVar, d dVar, boolean z10, boolean z11);
 }

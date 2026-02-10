@@ -1,66 +1,61 @@
 package ge;
 
-import android.text.TextUtils;
-import com.facebook.react.uimanager.ViewProps;
-import java.util.regex.Pattern;
-import ni.u;
+import ae.g;
+import java.util.Collections;
+import java.util.List;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class b {
+final class b implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pattern f24978d = Pattern.compile("\\s+");
+    private final ae.b[] f24261d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final u f24979e = u.v("auto", ViewProps.NONE);
+    private final long[] f24262e;
 
-    /* renamed from: f  reason: collision with root package name */
-    private static final u f24980f = u.w("dot", "sesame", "circle");
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final u f24981g = u.v("filled", "open");
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final u f24982h = u.w("after", "before", "outside");
-
-    /* renamed from: a  reason: collision with root package name */
-    public final int f24983a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final int f24984b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final int f24985c;
-
-    private b(int i10, int i11, int i12) {
-        this.f24983a = i10;
-        this.f24984b = i11;
-        this.f24985c = i12;
+    public b(ae.b[] bVarArr, long[] jArr) {
+        this.f24261d = bVarArr;
+        this.f24262e = jArr;
     }
 
-    public static b a(String str) {
-        if (str == null) {
-            return null;
+    @Override // ae.g
+    public int a(long j10) {
+        int e10 = w0.e(this.f24262e, j10, false, false);
+        if (e10 < this.f24262e.length) {
+            return e10;
         }
-        String e10 = mi.b.e(str.trim());
-        if (e10.isEmpty()) {
-            return null;
-        }
-        return b(u.p(TextUtils.split(e10, f24978d)));
+        return -1;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:19:0x004b  */
-    /* JADX WARN: Removed duplicated region for block: B:30:0x007a  */
-    /* JADX WARN: Removed duplicated region for block: B:48:0x00cf  */
-    /* JADX WARN: Removed duplicated region for block: B:59:0x00ee  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private static ge.b b(ni.u r7) {
-        /*
-            Method dump skipped, instructions count: 248
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: ge.b.b(ni.u):ge.b");
+    @Override // ae.g
+    public List d(long j10) {
+        ae.b bVar;
+        int i10 = w0.i(this.f24262e, j10, true, false);
+        if (i10 != -1 && (bVar = this.f24261d[i10]) != ae.b.C) {
+            return Collections.singletonList(bVar);
+        }
+        return Collections.EMPTY_LIST;
+    }
+
+    @Override // ae.g
+    public long e(int i10) {
+        boolean z10;
+        boolean z11 = false;
+        if (i10 >= 0) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        oe.a.a(z10);
+        if (i10 < this.f24262e.length) {
+            z11 = true;
+        }
+        oe.a.a(z11);
+        return this.f24262e[i10];
+    }
+
+    @Override // ae.g
+    public int f() {
+        return this.f24262e.length;
     }
 }

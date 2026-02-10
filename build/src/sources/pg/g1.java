@@ -1,57 +1,64 @@
 package pg;
 
-import java.util.Iterator;
-import java.util.Map;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class g1 extends s0 {
+final class g1 implements zi.d {
 
-    /* renamed from: i  reason: collision with root package name */
-    private final transient r0 f44281i;
+    /* renamed from: a  reason: collision with root package name */
+    static final g1 f43550a = new g1();
 
-    /* renamed from: o  reason: collision with root package name */
-    private final transient Object[] f44282o;
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f43551b;
 
-    /* renamed from: p  reason: collision with root package name */
-    private final transient int f44283p;
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f43552c;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public g1(r0 r0Var, Object[] objArr, int i10, int i11) {
-        this.f44281i = r0Var;
-        this.f44282o = objArr;
-        this.f44283p = i11;
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f43553d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final zi.c f43554e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final zi.c f43555f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final zi.c f43556g;
+
+    static {
+        c.b a10 = zi.c.a("errorCode");
+        f fVar = new f();
+        fVar.a(1);
+        f43551b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("isColdCall");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f43552c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("imageInfo");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f43553d = a12.b(fVar3.b()).a();
+        c.b a13 = zi.c.a("detectorOptions");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f43554e = a13.b(fVar4.b()).a();
+        c.b a14 = zi.c.a("contourDetectedFaces");
+        f fVar5 = new f();
+        fVar5.a(5);
+        f43555f = a14.b(fVar5.b()).a();
+        c.b a15 = zi.c.a("nonContourDetectedFaces");
+        f fVar6 = new f();
+        fVar6.a(6);
+        f43556g = a15.b(fVar6.b()).a();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // pg.k0
-    public final int b(Object[] objArr, int i10) {
-        return f().b(objArr, 0);
+    private g1() {
     }
 
-    @Override // pg.k0, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean contains(Object obj) {
-        if (obj instanceof Map.Entry) {
-            Map.Entry entry = (Map.Entry) obj;
-            Object key = entry.getKey();
-            Object value = entry.getValue();
-            if (value != null && value.equals(this.f44281i.get(key))) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    @Override // pg.s0
-    final p0 g() {
-        return new f1(this);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    public final /* synthetic */ Iterator iterator() {
-        return f().listIterator(0);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final int size() {
-        return this.f44283p;
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

@@ -1,35 +1,56 @@
 package r5;
-
-import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class i implements m {
+public class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f48699a;
+    Object f47711a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f48700b;
+    Object f47712b;
 
-    public i(b bVar, b bVar2) {
-        this.f48699a = bVar;
-        this.f48700b = bVar2;
-    }
-
-    @Override // r5.m
-    public o5.a a() {
-        return new o5.n(this.f48699a.a(), this.f48700b.a());
-    }
-
-    @Override // r5.m
-    public List b() {
-        throw new UnsupportedOperationException("Cannot call getKeyframes on AnimatableSplitDimensionPathValue.");
-    }
-
-    @Override // r5.m
-    public boolean isStatic() {
-        if (this.f48699a.isStatic() && this.f48700b.isStatic()) {
+    private static boolean a(Object obj, Object obj2) {
+        if (obj != obj2) {
+            if (obj == null || !obj.equals(obj2)) {
+                return false;
+            }
             return true;
         }
-        return false;
+        return true;
+    }
+
+    public void b(Object obj, Object obj2) {
+        this.f47711a = obj;
+        this.f47712b = obj2;
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof b2.c)) {
+            return false;
+        }
+        b2.c cVar = (b2.c) obj;
+        if (!a(cVar.f6309a, this.f47711a) || !a(cVar.f6310b, this.f47712b)) {
+            return false;
+        }
+        return true;
+    }
+
+    public int hashCode() {
+        int hashCode;
+        Object obj = this.f47711a;
+        int i10 = 0;
+        if (obj == null) {
+            hashCode = 0;
+        } else {
+            hashCode = obj.hashCode();
+        }
+        Object obj2 = this.f47712b;
+        if (obj2 != null) {
+            i10 = obj2.hashCode();
+        }
+        return hashCode ^ i10;
+    }
+
+    public String toString() {
+        return "Pair{" + this.f47711a + " " + this.f47712b + "}";
     }
 }

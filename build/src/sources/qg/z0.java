@@ -1,34 +1,38 @@
 package qg;
 
-import java.util.Iterator;
-import java.util.Map;
+import java.util.AbstractMap;
+import java.util.Collection;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class z0 extends m1 {
+abstract class z0 extends AbstractMap {
 
     /* renamed from: d  reason: collision with root package name */
-    final Map f47807d;
+    private transient Set f46543d;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public z0(Map map) {
-        map.getClass();
-        this.f47807d = map;
+    /* renamed from: e  reason: collision with root package name */
+    private transient Collection f46544e;
+
+    abstract Set a();
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final Set entrySet() {
+        Set set = this.f46543d;
+        if (set == null) {
+            Set a10 = a();
+            this.f46543d = a10;
+            return a10;
+        }
+        return set;
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean contains(Object obj) {
-        return this.f47807d.containsKey(obj);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean isEmpty() {
-        return this.f47807d.isEmpty();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    public abstract Iterator iterator();
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final int size() {
-        return this.f47807d.size();
+    @Override // java.util.AbstractMap, java.util.Map
+    public final Collection values() {
+        Collection collection = this.f46544e;
+        if (collection == null) {
+            y0 y0Var = new y0(this);
+            this.f46544e = y0Var;
+            return y0Var;
+        }
+        return collection;
     }
 }

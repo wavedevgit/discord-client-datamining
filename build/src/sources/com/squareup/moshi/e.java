@@ -11,10 +11,10 @@ import java.util.Set;
 abstract class e extends h {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final h.e f17899b = new a();
+    public static final h.e f18039b = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f17900a;
+    private final h f18040a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements h.e {
@@ -101,7 +101,7 @@ abstract class e extends h {
         Collection c10 = c();
         mVar.x();
         while (mVar.hasNext()) {
-            c10.add(this.f17900a.fromJson(mVar));
+            c10.add(this.f18040a.fromJson(mVar));
         }
         mVar.v();
         return c10;
@@ -112,16 +112,16 @@ abstract class e extends h {
     public void e(t tVar, Collection collection) {
         tVar.a();
         for (Object obj : collection) {
-            this.f17900a.toJson(tVar, obj);
+            this.f18040a.toJson(tVar, obj);
         }
         tVar.n();
     }
 
     public String toString() {
-        return this.f17900a + ".collection()";
+        return this.f18040a + ".collection()";
     }
 
     private e(h hVar) {
-        this.f17900a = hVar;
+        this.f18040a = hVar;
     }
 }

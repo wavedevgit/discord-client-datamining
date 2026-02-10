@@ -1,43 +1,15 @@
 package og;
 
-import yi.c;
+import java.util.ListIterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class h2 implements yi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final h2 f42125a = new h2();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42126b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42127c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42128d;
-
-    static {
-        c.b a10 = yi.c.a("inferenceCommonLogEvent");
-        f fVar = new f();
-        fVar.a(1);
-        f42126b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("options");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42127c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("imageInfo");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42128d = a12.b(fVar3.b()).a();
+public abstract class h2 extends g2 implements ListIterator {
+    @Override // java.util.ListIterator
+    public final void add(Object obj) {
+        throw new UnsupportedOperationException();
     }
 
-    private h2() {
-    }
-
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // java.util.ListIterator
+    public final void set(Object obj) {
+        throw new UnsupportedOperationException();
     }
 }

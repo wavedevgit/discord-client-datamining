@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public final class NumberAdapter {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final NumberAdapter f19752a = new NumberAdapter();
+    public static final NumberAdapter f19892a = new NumberAdapter();
 
     private NumberAdapter() {
     }

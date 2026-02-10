@@ -14,23 +14,23 @@ public final class m extends l {
     @Override // com.facebook.drawee.drawable.l, android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        if (ya.b.d()) {
-            ya.b.a("RoundedNinePatchDrawable#draw");
+        if (za.b.d()) {
+            za.b.a("RoundedNinePatchDrawable#draw");
         }
         if (!k()) {
             super.draw(canvas);
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
                 return;
             }
             return;
         }
         m();
         l();
-        canvas.clipPath(this.f9990p);
+        canvas.clipPath(this.f10130p);
         super.draw(canvas);
-        if (ya.b.d()) {
-            ya.b.b();
+        if (za.b.d()) {
+            za.b.b();
         }
     }
 }

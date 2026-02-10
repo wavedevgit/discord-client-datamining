@@ -30,7 +30,7 @@ public abstract class Transition implements Cloneable {
     private static final k Z = new a();
 
     /* renamed from: a0  reason: collision with root package name */
-    private static ThreadLocal f5577a0 = new ThreadLocal();
+    private static ThreadLocal f5274a0 = new ThreadLocal();
     private ArrayList E;
     private ArrayList F;
     private h[] G;
@@ -42,49 +42,49 @@ public abstract class Transition implements Cloneable {
     long W;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f5578d = getClass().getName();
+    private String f5275d = getClass().getName();
 
     /* renamed from: e  reason: collision with root package name */
-    private long f5579e = -1;
+    private long f5276e = -1;
 
     /* renamed from: i  reason: collision with root package name */
-    long f5580i = -1;
+    long f5277i = -1;
 
     /* renamed from: o  reason: collision with root package name */
-    private TimeInterpolator f5581o = null;
+    private TimeInterpolator f5278o = null;
 
     /* renamed from: p  reason: collision with root package name */
-    ArrayList f5582p = new ArrayList();
+    ArrayList f5279p = new ArrayList();
 
     /* renamed from: q  reason: collision with root package name */
-    ArrayList f5583q = new ArrayList();
+    ArrayList f5280q = new ArrayList();
 
     /* renamed from: r  reason: collision with root package name */
-    private ArrayList f5584r = null;
+    private ArrayList f5281r = null;
 
     /* renamed from: s  reason: collision with root package name */
-    private ArrayList f5585s = null;
+    private ArrayList f5282s = null;
 
     /* renamed from: t  reason: collision with root package name */
-    private ArrayList f5586t = null;
+    private ArrayList f5283t = null;
 
     /* renamed from: u  reason: collision with root package name */
-    private ArrayList f5587u = null;
+    private ArrayList f5284u = null;
 
     /* renamed from: v  reason: collision with root package name */
-    private ArrayList f5588v = null;
+    private ArrayList f5285v = null;
 
     /* renamed from: w  reason: collision with root package name */
-    private ArrayList f5589w = null;
+    private ArrayList f5286w = null;
 
     /* renamed from: x  reason: collision with root package name */
-    private ArrayList f5590x = null;
+    private ArrayList f5287x = null;
 
     /* renamed from: y  reason: collision with root package name */
-    private ArrayList f5591y = null;
+    private ArrayList f5288y = null;
 
     /* renamed from: z  reason: collision with root package name */
-    private ArrayList f5592z = null;
+    private ArrayList f5289z = null;
     private d0 A = new d0();
     private d0 B = new d0();
     a0 C = null;
@@ -119,15 +119,15 @@ public abstract class Transition implements Cloneable {
     public class b extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ u0.a f5593a;
+        final /* synthetic */ u0.a f5290a;
 
         b(u0.a aVar) {
-            this.f5593a = aVar;
+            this.f5290a = aVar;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            this.f5593a.remove(animator);
+            this.f5290a.remove(animator);
             Transition.this.I.remove(animator);
         }
 
@@ -155,30 +155,30 @@ public abstract class Transition implements Cloneable {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        View f5596a;
+        View f5293a;
 
         /* renamed from: b  reason: collision with root package name */
-        String f5597b;
+        String f5294b;
 
         /* renamed from: c  reason: collision with root package name */
-        c0 f5598c;
+        c0 f5295c;
 
         /* renamed from: d  reason: collision with root package name */
-        WindowId f5599d;
+        WindowId f5296d;
 
         /* renamed from: e  reason: collision with root package name */
-        Transition f5600e;
+        Transition f5297e;
 
         /* renamed from: f  reason: collision with root package name */
-        Animator f5601f;
+        Animator f5298f;
 
         d(View view, String str, Transition transition, WindowId windowId, c0 c0Var, Animator animator) {
-            this.f5596a = view;
-            this.f5597b = str;
-            this.f5598c = c0Var;
-            this.f5599d = windowId;
-            this.f5600e = transition;
-            this.f5601f = animator;
+            this.f5293a = view;
+            this.f5294b = str;
+            this.f5295c = c0Var;
+            this.f5296d = windowId;
+            this.f5297e = transition;
+            this.f5298f = animator;
         }
     }
 
@@ -204,31 +204,31 @@ public abstract class Transition implements Cloneable {
     public class g extends w implements z, b.r {
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f5605d;
+        private boolean f5302d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f5606e;
+        private boolean f5303e;
 
         /* renamed from: f  reason: collision with root package name */
-        private SpringAnimation f5607f;
+        private SpringAnimation f5304f;
 
         /* renamed from: i  reason: collision with root package name */
-        private Runnable f5610i;
+        private Runnable f5307i;
 
         /* renamed from: a  reason: collision with root package name */
-        private long f5602a = -1;
+        private long f5299a = -1;
 
         /* renamed from: b  reason: collision with root package name */
-        private ArrayList f5603b = null;
+        private ArrayList f5300b = null;
 
         /* renamed from: c  reason: collision with root package name */
-        private ArrayList f5604c = null;
+        private ArrayList f5301c = null;
 
         /* renamed from: g  reason: collision with root package name */
-        private Consumer[] f5608g = null;
+        private Consumer[] f5305g = null;
 
         /* renamed from: h  reason: collision with root package name */
-        private final f0 f5609h = new f0();
+        private final f0 f5306h = new f0();
 
         g() {
         }
@@ -240,60 +240,60 @@ public abstract class Transition implements Cloneable {
                     Transition y02 = ((a0) Transition.this).y0(0);
                     Transition transition = y02.N;
                     y02.N = null;
-                    Transition.this.l0(-1L, gVar.f5602a);
+                    Transition.this.l0(-1L, gVar.f5299a);
                     Transition.this.l0(c10, -1L);
-                    gVar.f5602a = c10;
-                    Runnable runnable = gVar.f5610i;
+                    gVar.f5299a = c10;
+                    Runnable runnable = gVar.f5307i;
                     if (runnable != null) {
                         runnable.run();
                     }
                     Transition.this.P.clear();
                     if (transition != null) {
-                        transition.b0(i.f5613b, true);
+                        transition.b0(i.f5310b, true);
                         return;
                     }
                     return;
                 }
-                Transition.this.b0(i.f5613b, false);
+                Transition.this.b0(i.f5310b, false);
                 return;
             }
             gVar.getClass();
         }
 
         private void g() {
-            ArrayList arrayList = this.f5604c;
+            ArrayList arrayList = this.f5301c;
             if (arrayList != null && !arrayList.isEmpty()) {
-                int size = this.f5604c.size();
-                if (this.f5608g == null) {
-                    this.f5608g = new Consumer[size];
+                int size = this.f5301c.size();
+                if (this.f5305g == null) {
+                    this.f5305g = new Consumer[size];
                 }
-                Consumer[] consumerArr = (Consumer[]) this.f5604c.toArray(this.f5608g);
-                this.f5608g = null;
+                Consumer[] consumerArr = (Consumer[]) this.f5301c.toArray(this.f5305g);
+                this.f5305g = null;
                 for (int i10 = 0; i10 < size; i10++) {
                     consumerArr[i10].accept(this);
                     consumerArr[i10] = null;
                 }
-                this.f5608g = consumerArr;
+                this.f5305g = consumerArr;
             }
         }
 
         private void h() {
-            if (this.f5607f != null) {
+            if (this.f5304f != null) {
                 return;
             }
-            this.f5609h.a(AnimationUtils.currentAnimationTimeMillis(), (float) this.f5602a);
-            this.f5607f = new SpringAnimation(new b3.c());
+            this.f5306h.a(AnimationUtils.currentAnimationTimeMillis(), (float) this.f5299a);
+            this.f5304f = new SpringAnimation(new b3.c());
             androidx.dynamicanimation.animation.c cVar = new androidx.dynamicanimation.animation.c();
             cVar.d(1.0f);
             cVar.f(200.0f);
-            this.f5607f.y(cVar);
-            this.f5607f.n((float) this.f5602a);
-            this.f5607f.c(this);
-            this.f5607f.o(this.f5609h.b());
-            this.f5607f.j((float) (c() + 1));
-            this.f5607f.k(-1.0f);
-            this.f5607f.l(4.0f);
-            this.f5607f.b(new b.q() { // from class: androidx.transition.q
+            this.f5304f.y(cVar);
+            this.f5304f.n((float) this.f5299a);
+            this.f5304f.c(this);
+            this.f5304f.o(this.f5306h.b());
+            this.f5304f.j((float) (c() + 1));
+            this.f5304f.k(-1.0f);
+            this.f5304f.l(4.0f);
+            this.f5304f.b(new b.q() { // from class: androidx.transition.q
                 @Override // androidx.dynamicanimation.animation.b.q
                 public final void a(androidx.dynamicanimation.animation.b bVar, boolean z10, float f10, float f11) {
                     Transition.g.f(Transition.g.this, bVar, z10, f10, f11);
@@ -304,14 +304,14 @@ public abstract class Transition implements Cloneable {
         @Override // androidx.transition.z
         public void a() {
             h();
-            this.f5607f.t((float) (c() + 1));
+            this.f5304f.t((float) (c() + 1));
         }
 
         @Override // androidx.dynamicanimation.animation.b.r
         public void b(androidx.dynamicanimation.animation.b bVar, float f10, float f11) {
             long max = Math.max(-1L, Math.min(c() + 1, Math.round(f10)));
-            Transition.this.l0(max, this.f5602a);
-            this.f5602a = max;
+            Transition.this.l0(max, this.f5299a);
+            this.f5299a = max;
             g();
         }
 
@@ -322,25 +322,25 @@ public abstract class Transition implements Cloneable {
 
         @Override // androidx.transition.z
         public void d(long j10) {
-            if (this.f5607f == null) {
-                if (j10 != this.f5602a && isReady()) {
-                    if (!this.f5606e) {
-                        if (j10 == 0 && this.f5602a > 0) {
+            if (this.f5304f == null) {
+                if (j10 != this.f5299a && isReady()) {
+                    if (!this.f5303e) {
+                        if (j10 == 0 && this.f5299a > 0) {
                             j10 = -1;
                         } else {
                             long c10 = c();
-                            if (j10 == c10 && this.f5602a < c10) {
+                            if (j10 == c10 && this.f5299a < c10) {
                                 j10 = 1 + c10;
                             }
                         }
-                        long j11 = this.f5602a;
+                        long j11 = this.f5299a;
                         if (j10 != j11) {
                             Transition.this.l0(j10, j11);
-                            this.f5602a = j10;
+                            this.f5299a = j10;
                         }
                     }
                     g();
-                    this.f5609h.a(AnimationUtils.currentAnimationTimeMillis(), (float) j10);
+                    this.f5306h.a(AnimationUtils.currentAnimationTimeMillis(), (float) j10);
                     return;
                 }
                 return;
@@ -350,9 +350,9 @@ public abstract class Transition implements Cloneable {
 
         @Override // androidx.transition.z
         public void e(Runnable runnable) {
-            this.f5610i = runnable;
+            this.f5307i = runnable;
             h();
-            this.f5607f.t(0.0f);
+            this.f5304f.t(0.0f);
         }
 
         void i() {
@@ -360,20 +360,20 @@ public abstract class Transition implements Cloneable {
             if (c() == 0) {
                 j10 = 1;
             }
-            Transition.this.l0(j10, this.f5602a);
-            this.f5602a = j10;
+            Transition.this.l0(j10, this.f5299a);
+            this.f5299a = j10;
         }
 
         @Override // androidx.transition.z
         public boolean isReady() {
-            return this.f5605d;
+            return this.f5302d;
         }
 
         public void j() {
-            this.f5605d = true;
-            ArrayList arrayList = this.f5603b;
+            this.f5302d = true;
+            ArrayList arrayList = this.f5300b;
             if (arrayList != null) {
-                this.f5603b = null;
+                this.f5300b = null;
                 for (int i10 = 0; i10 < arrayList.size(); i10++) {
                     ((Consumer) arrayList.get(i10)).accept(this);
                 }
@@ -383,7 +383,7 @@ public abstract class Transition implements Cloneable {
 
         @Override // androidx.transition.w, androidx.transition.Transition.h
         public void onTransitionCancel(Transition transition) {
-            this.f5606e = true;
+            this.f5303e = true;
         }
     }
 
@@ -413,7 +413,7 @@ public abstract class Transition implements Cloneable {
     public interface i {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final i f5612a = new i() { // from class: androidx.transition.r
+        public static final i f5309a = new i() { // from class: androidx.transition.r
             @Override // androidx.transition.Transition.i
             public final void b(Transition.h hVar, Transition transition, boolean z10) {
                 hVar.onTransitionStart(transition, z10);
@@ -421,7 +421,7 @@ public abstract class Transition implements Cloneable {
         };
 
         /* renamed from: b  reason: collision with root package name */
-        public static final i f5613b = new i() { // from class: androidx.transition.s
+        public static final i f5310b = new i() { // from class: androidx.transition.s
             @Override // androidx.transition.Transition.i
             public final void b(Transition.h hVar, Transition transition, boolean z10) {
                 hVar.onTransitionEnd(transition, z10);
@@ -429,7 +429,7 @@ public abstract class Transition implements Cloneable {
         };
 
         /* renamed from: c  reason: collision with root package name */
-        public static final i f5614c = new i() { // from class: androidx.transition.t
+        public static final i f5311c = new i() { // from class: androidx.transition.t
             @Override // androidx.transition.Transition.i
             public final void b(Transition.h hVar, Transition transition, boolean z10) {
                 hVar.onTransitionCancel(transition);
@@ -437,7 +437,7 @@ public abstract class Transition implements Cloneable {
         };
 
         /* renamed from: d  reason: collision with root package name */
-        public static final i f5615d = new i() { // from class: androidx.transition.u
+        public static final i f5312d = new i() { // from class: androidx.transition.u
             @Override // androidx.transition.Transition.i
             public final void b(Transition.h hVar, Transition transition, boolean z10) {
                 hVar.onTransitionPause(transition);
@@ -445,7 +445,7 @@ public abstract class Transition implements Cloneable {
         };
 
         /* renamed from: e  reason: collision with root package name */
-        public static final i f5616e = new i() { // from class: androidx.transition.v
+        public static final i f5313e = new i() { // from class: androidx.transition.v
             @Override // androidx.transition.Transition.i
             public final void b(Transition.h hVar, Transition transition, boolean z10) {
                 hVar.onTransitionResume(transition);
@@ -456,18 +456,18 @@ public abstract class Transition implements Cloneable {
     }
 
     private static u0.a G() {
-        u0.a aVar = (u0.a) f5577a0.get();
+        u0.a aVar = (u0.a) f5274a0.get();
         if (aVar == null) {
             u0.a aVar2 = new u0.a();
-            f5577a0.set(aVar2);
+            f5274a0.set(aVar2);
             return aVar2;
         }
         return aVar;
     }
 
     private static boolean U(c0 c0Var, c0 c0Var2, String str) {
-        Object obj = c0Var.f5668a.get(str);
-        Object obj2 = c0Var2.f5668a.get(str);
+        Object obj = c0Var.f5365a.get(str);
+        Object obj2 = c0Var2.f5365a.get(str);
         if (obj == null && obj2 == null) {
             return false;
         }
@@ -499,7 +499,7 @@ public abstract class Transition implements Cloneable {
         c0 c0Var;
         for (int size = aVar.size() - 1; size >= 0; size--) {
             View view = (View) aVar.f(size);
-            if (view != null && T(view) && (c0Var = (c0) aVar2.remove(view)) != null && T(c0Var.f5669b)) {
+            if (view != null && T(view) && (c0Var = (c0) aVar2.remove(view)) != null && T(c0Var.f5366b)) {
                 this.E.add((c0) aVar.h(size));
                 this.F.add(c0Var);
             }
@@ -543,8 +543,8 @@ public abstract class Transition implements Cloneable {
     }
 
     private void Z(d0 d0Var, d0 d0Var2) {
-        u0.a aVar = new u0.a(d0Var.f5679a);
-        u0.a aVar2 = new u0.a(d0Var2.f5679a);
+        u0.a aVar = new u0.a(d0Var.f5376a);
+        u0.a aVar2 = new u0.a(d0Var2.f5376a);
         int i10 = 0;
         while (true) {
             int[] iArr = this.D;
@@ -554,13 +554,13 @@ public abstract class Transition implements Cloneable {
                     if (i11 != 2) {
                         if (i11 != 3) {
                             if (i11 == 4) {
-                                X(aVar, aVar2, d0Var.f5681c, d0Var2.f5681c);
+                                X(aVar, aVar2, d0Var.f5378c, d0Var2.f5378c);
                             }
                         } else {
-                            V(aVar, aVar2, d0Var.f5680b, d0Var2.f5680b);
+                            V(aVar, aVar2, d0Var.f5377b, d0Var2.f5377b);
                         }
                     } else {
-                        Y(aVar, aVar2, d0Var.f5682d, d0Var2.f5682d);
+                        Y(aVar, aVar2, d0Var.f5379d, d0Var2.f5379d);
                     }
                 } else {
                     W(aVar, aVar2);
@@ -598,14 +598,14 @@ public abstract class Transition implements Cloneable {
     private void e(u0.a aVar, u0.a aVar2) {
         for (int i10 = 0; i10 < aVar.size(); i10++) {
             c0 c0Var = (c0) aVar.j(i10);
-            if (T(c0Var.f5669b)) {
+            if (T(c0Var.f5366b)) {
                 this.E.add(c0Var);
                 this.F.add(null);
             }
         }
         for (int i11 = 0; i11 < aVar2.size(); i11++) {
             c0 c0Var2 = (c0) aVar2.j(i11);
-            if (T(c0Var2.f5669b)) {
+            if (T(c0Var2.f5366b)) {
                 this.F.add(c0Var2);
                 this.E.add(null);
             }
@@ -613,38 +613,38 @@ public abstract class Transition implements Cloneable {
     }
 
     private static void f(d0 d0Var, View view, c0 c0Var) {
-        d0Var.f5679a.put(view, c0Var);
+        d0Var.f5376a.put(view, c0Var);
         int id2 = view.getId();
         if (id2 >= 0) {
-            if (d0Var.f5680b.indexOfKey(id2) >= 0) {
-                d0Var.f5680b.put(id2, null);
+            if (d0Var.f5377b.indexOfKey(id2) >= 0) {
+                d0Var.f5377b.put(id2, null);
             } else {
-                d0Var.f5680b.put(id2, view);
+                d0Var.f5377b.put(id2, view);
             }
         }
         String I = androidx.core.view.h0.I(view);
         if (I != null) {
-            if (d0Var.f5682d.containsKey(I)) {
-                d0Var.f5682d.put(I, null);
+            if (d0Var.f5379d.containsKey(I)) {
+                d0Var.f5379d.put(I, null);
             } else {
-                d0Var.f5682d.put(I, view);
+                d0Var.f5379d.put(I, view);
             }
         }
         if (view.getParent() instanceof ListView) {
             ListView listView = (ListView) view.getParent();
             if (listView.getAdapter().hasStableIds()) {
                 long itemIdAtPosition = listView.getItemIdAtPosition(listView.getPositionForView(view));
-                if (d0Var.f5681c.e(itemIdAtPosition) >= 0) {
-                    View view2 = (View) d0Var.f5681c.d(itemIdAtPosition);
+                if (d0Var.f5378c.e(itemIdAtPosition) >= 0) {
+                    View view2 = (View) d0Var.f5378c.d(itemIdAtPosition);
                     if (view2 != null) {
                         view2.setHasTransientState(false);
-                        d0Var.f5681c.h(itemIdAtPosition, null);
+                        d0Var.f5378c.h(itemIdAtPosition, null);
                         return;
                     }
                     return;
                 }
                 view.setHasTransientState(true);
-                d0Var.f5681c.h(itemIdAtPosition, view);
+                d0Var.f5378c.h(itemIdAtPosition, view);
             }
         }
     }
@@ -659,15 +659,15 @@ public abstract class Transition implements Cloneable {
     private void j(View view, boolean z10) {
         if (view != null) {
             int id2 = view.getId();
-            ArrayList arrayList = this.f5586t;
+            ArrayList arrayList = this.f5283t;
             if (arrayList == null || !arrayList.contains(Integer.valueOf(id2))) {
-                ArrayList arrayList2 = this.f5587u;
+                ArrayList arrayList2 = this.f5284u;
                 if (arrayList2 == null || !arrayList2.contains(view)) {
-                    ArrayList arrayList3 = this.f5588v;
+                    ArrayList arrayList3 = this.f5285v;
                     if (arrayList3 != null) {
                         int size = arrayList3.size();
                         for (int i10 = 0; i10 < size; i10++) {
-                            if (((Class) this.f5588v.get(i10)).isInstance(view)) {
+                            if (((Class) this.f5285v.get(i10)).isInstance(view)) {
                                 return;
                             }
                         }
@@ -679,7 +679,7 @@ public abstract class Transition implements Cloneable {
                         } else {
                             i(c0Var);
                         }
-                        c0Var.f5670c.add(this);
+                        c0Var.f5367c.add(this);
                         k(c0Var);
                         if (z10) {
                             f(this.A, view, c0Var);
@@ -688,15 +688,15 @@ public abstract class Transition implements Cloneable {
                         }
                     }
                     if (view instanceof ViewGroup) {
-                        ArrayList arrayList4 = this.f5590x;
+                        ArrayList arrayList4 = this.f5287x;
                         if (arrayList4 == null || !arrayList4.contains(Integer.valueOf(id2))) {
-                            ArrayList arrayList5 = this.f5591y;
+                            ArrayList arrayList5 = this.f5288y;
                             if (arrayList5 == null || !arrayList5.contains(view)) {
-                                ArrayList arrayList6 = this.f5592z;
+                                ArrayList arrayList6 = this.f5289z;
                                 if (arrayList6 != null) {
                                     int size2 = arrayList6.size();
                                     for (int i11 = 0; i11 < size2; i11++) {
-                                        if (((Class) this.f5592z.get(i11)).isInstance(view)) {
+                                        if (((Class) this.f5289z.get(i11)).isInstance(view)) {
                                             return;
                                         }
                                     }
@@ -737,7 +737,7 @@ public abstract class Transition implements Cloneable {
                 if (c0Var == null) {
                     return null;
                 }
-                if (c0Var.f5669b == view) {
+                if (c0Var.f5366b == view) {
                     break;
                 }
                 i10++;
@@ -758,7 +758,7 @@ public abstract class Transition implements Cloneable {
     }
 
     public String B() {
-        return this.f5578d;
+        return this.f5275d;
     }
 
     public k D() {
@@ -778,23 +778,23 @@ public abstract class Transition implements Cloneable {
     }
 
     public long H() {
-        return this.f5579e;
+        return this.f5276e;
     }
 
     public List I() {
-        return this.f5582p;
+        return this.f5279p;
     }
 
     public List J() {
-        return this.f5584r;
+        return this.f5281r;
     }
 
     public List K() {
-        return this.f5585s;
+        return this.f5282s;
     }
 
     public List L() {
-        return this.f5583q;
+        return this.f5280q;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -817,11 +817,11 @@ public abstract class Transition implements Cloneable {
         } else {
             d0Var = this.B;
         }
-        return (c0) d0Var.f5679a.get(view);
+        return (c0) d0Var.f5376a.get(view);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean Q() {
+    public boolean P() {
         return !this.I.isEmpty();
     }
 
@@ -839,7 +839,7 @@ public abstract class Transition implements Cloneable {
                     }
                 }
             } else {
-                for (String str2 : c0Var.f5668a.keySet()) {
+                for (String str2 : c0Var.f5365a.keySet()) {
                     if (U(c0Var, c0Var2, str2)) {
                         return true;
                     }
@@ -854,36 +854,36 @@ public abstract class Transition implements Cloneable {
         ArrayList arrayList;
         ArrayList arrayList2;
         int id2 = view.getId();
-        ArrayList arrayList3 = this.f5586t;
+        ArrayList arrayList3 = this.f5283t;
         if (arrayList3 != null && arrayList3.contains(Integer.valueOf(id2))) {
             return false;
         }
-        ArrayList arrayList4 = this.f5587u;
+        ArrayList arrayList4 = this.f5284u;
         if (arrayList4 != null && arrayList4.contains(view)) {
             return false;
         }
-        ArrayList arrayList5 = this.f5588v;
+        ArrayList arrayList5 = this.f5285v;
         if (arrayList5 != null) {
             int size = arrayList5.size();
             for (int i10 = 0; i10 < size; i10++) {
-                if (((Class) this.f5588v.get(i10)).isInstance(view)) {
+                if (((Class) this.f5285v.get(i10)).isInstance(view)) {
                     return false;
                 }
             }
         }
-        if (this.f5589w != null && androidx.core.view.h0.I(view) != null && this.f5589w.contains(androidx.core.view.h0.I(view))) {
+        if (this.f5286w != null && androidx.core.view.h0.I(view) != null && this.f5286w.contains(androidx.core.view.h0.I(view))) {
             return false;
         }
-        if ((this.f5582p.size() == 0 && this.f5583q.size() == 0 && (((arrayList = this.f5585s) == null || arrayList.isEmpty()) && ((arrayList2 = this.f5584r) == null || arrayList2.isEmpty()))) || this.f5582p.contains(Integer.valueOf(id2)) || this.f5583q.contains(view)) {
+        if ((this.f5279p.size() == 0 && this.f5280q.size() == 0 && (((arrayList = this.f5282s) == null || arrayList.isEmpty()) && ((arrayList2 = this.f5281r) == null || arrayList2.isEmpty()))) || this.f5279p.contains(Integer.valueOf(id2)) || this.f5280q.contains(view)) {
             return true;
         }
-        ArrayList arrayList6 = this.f5584r;
+        ArrayList arrayList6 = this.f5281r;
         if (arrayList6 != null && arrayList6.contains(androidx.core.view.h0.I(view))) {
             return true;
         }
-        if (this.f5585s != null) {
-            for (int i11 = 0; i11 < this.f5585s.size(); i11++) {
-                if (((Class) this.f5585s.get(i11)).isInstance(view)) {
+        if (this.f5282s != null) {
+            for (int i11 = 0; i11 < this.f5282s.size(); i11++) {
+                if (((Class) this.f5282s.get(i11)).isInstance(view)) {
                     return true;
                 }
             }
@@ -915,7 +915,7 @@ public abstract class Transition implements Cloneable {
                 animator.pause();
             }
             this.J = animatorArr;
-            b0(i.f5615d, false);
+            b0(i.f5312d, false);
             this.L = true;
         }
     }
@@ -931,11 +931,11 @@ public abstract class Transition implements Cloneable {
             animator.cancel();
         }
         this.J = animatorArr;
-        b0(i.f5614c, false);
+        b0(i.f5311c, false);
     }
 
     public Transition d(View view) {
-        this.f5583q.add(view);
+        this.f5280q.add(view);
         return this;
     }
 
@@ -950,25 +950,25 @@ public abstract class Transition implements Cloneable {
         WindowId windowId = viewGroup.getWindowId();
         for (int i10 = size - 1; i10 >= 0; i10--) {
             Animator animator = (Animator) G.f(i10);
-            if (animator != null && (dVar = (d) G.get(animator)) != null && dVar.f5596a != null && windowId.equals(dVar.f5599d)) {
-                c0 c0Var = dVar.f5598c;
-                View view = dVar.f5596a;
+            if (animator != null && (dVar = (d) G.get(animator)) != null && dVar.f5293a != null && windowId.equals(dVar.f5296d)) {
+                c0 c0Var = dVar.f5295c;
+                View view = dVar.f5293a;
                 c0 O = O(view, true);
                 c0 A = A(view, true);
                 if (O == null && A == null) {
-                    A = (c0) this.B.f5679a.get(view);
+                    A = (c0) this.B.f5376a.get(view);
                 }
-                if ((O != null || A != null) && dVar.f5600e.S(c0Var, A)) {
-                    Transition transition = dVar.f5600e;
+                if ((O != null || A != null) && dVar.f5297e.S(c0Var, A)) {
+                    Transition transition = dVar.f5297e;
                     if (transition.F().V != null) {
                         animator.cancel();
                         transition.I.remove(animator);
                         G.remove(animator);
                         if (transition.I.size() == 0) {
-                            transition.b0(i.f5614c, false);
+                            transition.b0(i.f5311c, false);
                             if (!transition.M) {
                                 transition.M = true;
-                                transition.b0(i.f5613b, false);
+                                transition.b0(i.f5310b, false);
                             }
                         }
                     } else if (!animator.isRunning() && !animator.isStarted()) {
@@ -998,13 +998,13 @@ public abstract class Transition implements Cloneable {
             d dVar = (d) G.get(animator);
             if (animator != null && dVar != null) {
                 if (w() >= 0) {
-                    dVar.f5601f.setDuration(w());
+                    dVar.f5298f.setDuration(w());
                 }
                 if (H() >= 0) {
-                    dVar.f5601f.setStartDelay(H() + dVar.f5601f.getStartDelay());
+                    dVar.f5298f.setStartDelay(H() + dVar.f5298f.getStartDelay());
                 }
                 if (z() != null) {
-                    dVar.f5601f.setInterpolator(z());
+                    dVar.f5298f.setInterpolator(z());
                 }
                 this.I.add(animator);
                 this.U = Math.max(this.U, f.a(animator));
@@ -1028,7 +1028,7 @@ public abstract class Transition implements Cloneable {
     }
 
     public Transition g0(View view) {
-        this.f5583q.remove(view);
+        this.f5280q.remove(view);
         return this;
     }
 
@@ -1062,7 +1062,7 @@ public abstract class Transition implements Cloneable {
                     animator.resume();
                 }
                 this.J = animatorArr;
-                b0(i.f5616e, false);
+                b0(i.f5313e, false);
             }
             this.L = false;
         }
@@ -1089,9 +1089,9 @@ public abstract class Transition implements Cloneable {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void k(c0 c0Var) {
         String[] b10;
-        if (this.Q != null && !c0Var.f5668a.isEmpty() && (b10 = this.Q.b()) != null) {
+        if (this.Q != null && !c0Var.f5365a.isEmpty() && (b10 = this.Q.b()) != null) {
             for (String str : b10) {
-                if (!c0Var.f5668a.containsKey(str)) {
+                if (!c0Var.f5365a.containsKey(str)) {
                     this.Q.a(c0Var);
                     return;
                 }
@@ -1119,7 +1119,7 @@ public abstract class Transition implements Cloneable {
         int i11 = (j11 > 0L ? 1 : (j11 == 0L ? 0 : -1));
         if ((i11 < 0 && j10 >= 0) || (j11 > M && j10 <= M)) {
             this.M = false;
-            b0(i.f5612a, z10);
+            b0(i.f5309a, z10);
         }
         int size = this.I.size();
         Animator[] animatorArr = (Animator[]) this.I.toArray(this.J);
@@ -1138,7 +1138,7 @@ public abstract class Transition implements Cloneable {
             if (i12 > 0) {
                 this.M = true;
             }
-            b0(i.f5613b, z10);
+            b0(i.f5310b, z10);
         }
     }
 
@@ -1148,11 +1148,11 @@ public abstract class Transition implements Cloneable {
         ArrayList arrayList2;
         u0.a aVar;
         n(z10);
-        if ((this.f5582p.size() <= 0 && this.f5583q.size() <= 0) || (((arrayList = this.f5584r) != null && !arrayList.isEmpty()) || ((arrayList2 = this.f5585s) != null && !arrayList2.isEmpty()))) {
+        if ((this.f5279p.size() <= 0 && this.f5280q.size() <= 0) || (((arrayList = this.f5281r) != null && !arrayList.isEmpty()) || ((arrayList2 = this.f5282s) != null && !arrayList2.isEmpty()))) {
             j(viewGroup, z10);
         } else {
-            for (int i10 = 0; i10 < this.f5582p.size(); i10++) {
-                View findViewById = viewGroup.findViewById(((Integer) this.f5582p.get(i10)).intValue());
+            for (int i10 = 0; i10 < this.f5279p.size(); i10++) {
+                View findViewById = viewGroup.findViewById(((Integer) this.f5279p.get(i10)).intValue());
                 if (findViewById != null) {
                     c0 c0Var = new c0(findViewById);
                     if (z10) {
@@ -1160,7 +1160,7 @@ public abstract class Transition implements Cloneable {
                     } else {
                         i(c0Var);
                     }
-                    c0Var.f5670c.add(this);
+                    c0Var.f5367c.add(this);
                     k(c0Var);
                     if (z10) {
                         f(this.A, findViewById, c0Var);
@@ -1169,15 +1169,15 @@ public abstract class Transition implements Cloneable {
                     }
                 }
             }
-            for (int i11 = 0; i11 < this.f5583q.size(); i11++) {
-                View view = (View) this.f5583q.get(i11);
+            for (int i11 = 0; i11 < this.f5280q.size(); i11++) {
+                View view = (View) this.f5280q.get(i11);
                 c0 c0Var2 = new c0(view);
                 if (z10) {
                     l(c0Var2);
                 } else {
                     i(c0Var2);
                 }
-                c0Var2.f5670c.add(this);
+                c0Var2.f5367c.add(this);
                 k(c0Var2);
                 if (z10) {
                     f(this.A, view, c0Var2);
@@ -1190,33 +1190,33 @@ public abstract class Transition implements Cloneable {
             int size = aVar.size();
             ArrayList arrayList3 = new ArrayList(size);
             for (int i12 = 0; i12 < size; i12++) {
-                arrayList3.add((View) this.A.f5682d.remove((String) this.S.f(i12)));
+                arrayList3.add((View) this.A.f5379d.remove((String) this.S.f(i12)));
             }
             for (int i13 = 0; i13 < size; i13++) {
                 View view2 = (View) arrayList3.get(i13);
                 if (view2 != null) {
-                    this.A.f5682d.put((String) this.S.j(i13), view2);
+                    this.A.f5379d.put((String) this.S.j(i13), view2);
                 }
             }
         }
     }
 
     public Transition m0(long j10) {
-        this.f5580i = j10;
+        this.f5277i = j10;
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void n(boolean z10) {
         if (z10) {
-            this.A.f5679a.clear();
-            this.A.f5680b.clear();
-            this.A.f5681c.a();
+            this.A.f5376a.clear();
+            this.A.f5377b.clear();
+            this.A.f5378c.a();
             return;
         }
-        this.B.f5679a.clear();
-        this.B.f5680b.clear();
-        this.B.f5681c.a();
+        this.B.f5376a.clear();
+        this.B.f5377b.clear();
+        this.B.f5378c.a();
     }
 
     public void n0(e eVar) {
@@ -1243,7 +1243,7 @@ public abstract class Transition implements Cloneable {
     }
 
     public Transition o0(TimeInterpolator timeInterpolator) {
-        this.f5581o = timeInterpolator;
+        this.f5278o = timeInterpolator;
         return this;
     }
 
@@ -1289,10 +1289,10 @@ public abstract class Transition implements Cloneable {
         while (i12 < size) {
             c0 c0Var2 = (c0) arrayList.get(i12);
             c0 c0Var3 = (c0) arrayList2.get(i12);
-            if (c0Var2 != null && !c0Var2.f5670c.contains(this)) {
+            if (c0Var2 != null && !c0Var2.f5367c.contains(this)) {
                 c0Var2 = null;
             }
-            if (c0Var3 != null && !c0Var3.f5670c.contains(this)) {
+            if (c0Var3 != null && !c0Var3.f5367c.contains(this)) {
                 c0Var3 = null;
             }
             if ((c0Var2 == null && c0Var3 == null) || ((c0Var2 != null && c0Var3 != null && !S(c0Var2, c0Var3)) || (q10 = q(viewGroup, c0Var2, c0Var3)) == null)) {
@@ -1301,21 +1301,21 @@ public abstract class Transition implements Cloneable {
                 i11 = i12;
             } else {
                 if (c0Var3 != null) {
-                    View view3 = c0Var3.f5669b;
+                    View view3 = c0Var3.f5366b;
                     String[] N = N();
                     if (N != null && N.length > 0) {
                         c0Var = new c0(view3);
                         i10 = size;
                         z11 = z10;
-                        c0 c0Var4 = (c0) d0Var2.f5679a.get(view3);
+                        c0 c0Var4 = (c0) d0Var2.f5376a.get(view3);
                         i11 = i12;
                         if (c0Var4 != null) {
                             int i13 = 0;
                             while (i13 < N.length) {
-                                Map map = c0Var.f5668a;
+                                Map map = c0Var.f5365a;
                                 int i14 = i13;
                                 String str = N[i14];
-                                map.put(str, c0Var4.f5668a.get(str));
+                                map.put(str, c0Var4.f5365a.get(str));
                                 i13 = i14 + 1;
                                 N = N;
                             }
@@ -1325,9 +1325,9 @@ public abstract class Transition implements Cloneable {
                         while (true) {
                             if (i15 < size2) {
                                 d dVar = (d) G.get((Animator) G.f(i15));
-                                if (dVar.f5598c != null && dVar.f5596a == view3) {
+                                if (dVar.f5295c != null && dVar.f5293a == view3) {
                                     view2 = view3;
-                                    if (dVar.f5597b.equals(B()) && dVar.f5598c.equals(c0Var)) {
+                                    if (dVar.f5294b.equals(B()) && dVar.f5295c.equals(c0Var)) {
                                         animator2 = null;
                                         break;
                                     }
@@ -1357,7 +1357,7 @@ public abstract class Transition implements Cloneable {
                     i10 = size;
                     z11 = z10;
                     i11 = i12;
-                    view = c0Var2.f5669b;
+                    view = c0Var2.f5366b;
                     c0Var = null;
                 }
                 if (animator != null) {
@@ -1391,20 +1391,20 @@ public abstract class Transition implements Cloneable {
         if (sparseIntArray.size() != 0) {
             for (int i16 = 0; i16 < sparseIntArray.size(); i16++) {
                 d dVar3 = (d) G.get((Animator) this.P.get(sparseIntArray.keyAt(i16)));
-                dVar3.f5601f.setStartDelay((sparseIntArray.valueAt(i16) - j10) + dVar3.f5601f.getStartDelay());
+                dVar3.f5298f.setStartDelay((sparseIntArray.valueAt(i16) - j10) + dVar3.f5298f.getStartDelay());
             }
         }
     }
 
     public Transition r0(long j10) {
-        this.f5579e = j10;
+        this.f5276e = j10;
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void s0() {
         if (this.K == 0) {
-            b0(i.f5612a, false);
+            b0(i.f5309a, false);
             this.M = false;
         }
         this.K++;
@@ -1425,37 +1425,37 @@ public abstract class Transition implements Cloneable {
         sb2.append("@");
         sb2.append(Integer.toHexString(hashCode()));
         sb2.append(": ");
-        if (this.f5580i != -1) {
+        if (this.f5277i != -1) {
             sb2.append("dur(");
-            sb2.append(this.f5580i);
+            sb2.append(this.f5277i);
             sb2.append(") ");
         }
-        if (this.f5579e != -1) {
+        if (this.f5276e != -1) {
             sb2.append("dly(");
-            sb2.append(this.f5579e);
+            sb2.append(this.f5276e);
             sb2.append(") ");
         }
-        if (this.f5581o != null) {
+        if (this.f5278o != null) {
             sb2.append("interp(");
-            sb2.append(this.f5581o);
+            sb2.append(this.f5278o);
             sb2.append(") ");
         }
-        if (this.f5582p.size() > 0 || this.f5583q.size() > 0) {
+        if (this.f5279p.size() > 0 || this.f5280q.size() > 0) {
             sb2.append("tgts(");
-            if (this.f5582p.size() > 0) {
-                for (int i10 = 0; i10 < this.f5582p.size(); i10++) {
+            if (this.f5279p.size() > 0) {
+                for (int i10 = 0; i10 < this.f5279p.size(); i10++) {
                     if (i10 > 0) {
                         sb2.append(", ");
                     }
-                    sb2.append(this.f5582p.get(i10));
+                    sb2.append(this.f5279p.get(i10));
                 }
             }
-            if (this.f5583q.size() > 0) {
-                for (int i11 = 0; i11 < this.f5583q.size(); i11++) {
+            if (this.f5280q.size() > 0) {
+                for (int i11 = 0; i11 < this.f5280q.size(); i11++) {
                     if (i11 > 0) {
                         sb2.append(", ");
                     }
-                    sb2.append(this.f5583q.get(i11));
+                    sb2.append(this.f5280q.get(i11));
                 }
             }
             sb2.append(")");
@@ -1472,15 +1472,15 @@ public abstract class Transition implements Cloneable {
         int i10 = this.K - 1;
         this.K = i10;
         if (i10 == 0) {
-            b0(i.f5613b, false);
-            for (int i11 = 0; i11 < this.A.f5681c.k(); i11++) {
-                View view = (View) this.A.f5681c.l(i11);
+            b0(i.f5310b, false);
+            for (int i11 = 0; i11 < this.A.f5378c.k(); i11++) {
+                View view = (View) this.A.f5378c.l(i11);
                 if (view != null) {
                     view.setHasTransientState(false);
                 }
             }
-            for (int i12 = 0; i12 < this.B.f5681c.k(); i12++) {
-                View view2 = (View) this.B.f5681c.l(i12);
+            for (int i12 = 0; i12 < this.B.f5378c.k(); i12++) {
+                View view2 = (View) this.B.f5378c.l(i12);
                 if (view2 != null) {
                     view2.setHasTransientState(false);
                 }
@@ -1499,7 +1499,7 @@ public abstract class Transition implements Cloneable {
             G.clear();
             for (int i10 = size - 1; i10 >= 0; i10--) {
                 d dVar = (d) aVar.j(i10);
-                if (dVar.f5596a != null && windowId.equals(dVar.f5599d)) {
+                if (dVar.f5293a != null && windowId.equals(dVar.f5296d)) {
                     ((Animator) aVar.f(i10)).end();
                 }
             }
@@ -1507,7 +1507,7 @@ public abstract class Transition implements Cloneable {
     }
 
     public long w() {
-        return this.f5580i;
+        return this.f5277i;
     }
 
     public Rect x() {
@@ -1523,6 +1523,6 @@ public abstract class Transition implements Cloneable {
     }
 
     public TimeInterpolator z() {
-        return this.f5581o;
+        return this.f5278o;
     }
 }

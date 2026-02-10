@@ -3,16 +3,16 @@ package com.google.android.play.core.integrity;
 import com.google.android.gms.common.api.Status;
 import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b extends ef.b {
+public class b extends ff.b {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Throwable f16119e;
+    private final Throwable f16259e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10, Throwable th2) {
-        super(new Status(i10, String.format(Locale.ROOT, "Standard Integrity API error (%d): %s.", Integer.valueOf(i10), bi.b.a(i10))));
+        super(new Status(i10, String.format(Locale.ROOT, "Standard Integrity API error (%d): %s.", Integer.valueOf(i10), ci.b.a(i10))));
         if (i10 != 0) {
-            this.f16119e = th2;
+            this.f16259e = th2;
             return;
         }
         throw new IllegalArgumentException("ErrorCode should not be 0.");
@@ -20,6 +20,6 @@ public class b extends ef.b {
 
     @Override // java.lang.Throwable
     public final synchronized Throwable getCause() {
-        return this.f16119e;
+        return this.f16259e;
     }
 }

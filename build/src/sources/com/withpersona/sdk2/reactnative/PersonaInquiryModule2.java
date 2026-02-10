@@ -28,13 +28,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import oq.a;
-import oq.c;
-import oq.e;
-import oq.f;
-import oq.g;
 import org.jetbrains.annotations.NotNull;
-import uq.b;
+import pq.a;
+import pq.c;
+import pq.e;
+import pq.f;
+import pq.g;
+import vq.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements ActivityEventListener {
     private static final String ACCESS_TOKEN = "sessionToken";
@@ -86,7 +86,7 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                     createMap4.putString("captureMethod", eVar.a().name());
                     createMap4.putString("side", eVar.c().name());
                     WritableArray createArray4 = Arguments.createArray();
-                    for (e.c cVar2 : eVar.i2()) {
+                    for (e.c cVar2 : eVar.h2()) {
                         WritableMap createMap5 = Arguments.createMap();
                         createMap5.putString("absoluteFilePath", cVar2.a().getAbsolutePath());
                         createArray4.pushMap(createMap5);
@@ -99,7 +99,7 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
             } else if (gVar instanceof g.c) {
                 g.c cVar3 = (g.c) gVar;
                 ReadableMap selfieCaptureToMap = selfieCaptureToMap(cVar3.p());
-                ReadableMap selfieCaptureToMap2 = selfieCaptureToMap(cVar3.f2());
+                ReadableMap selfieCaptureToMap2 = selfieCaptureToMap(cVar3.e2());
                 ReadableMap selfieCaptureToMap3 = selfieCaptureToMap(cVar3.o2());
                 createMap2.putMap("centerCapture", selfieCaptureToMap);
                 createMap2.putMap("leftCapture", selfieCaptureToMap2);
@@ -299,9 +299,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str11 = null;
             }
             if (str11 != null && str11.equals("server")) {
-                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f52133a));
+                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f52993a));
             } else {
-                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f52133a));
+                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f52993a));
             }
             InquiryBuilder theme = fromInquiry.theme(clientThemeSource2);
             if (readableMap.hasKey(ACCESS_TOKEN)) {
@@ -336,9 +336,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str4 = null;
             }
             if (str4 != null && str4.equals("server")) {
-                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f52133a));
+                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f52993a));
             } else {
-                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f52133a));
+                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f52993a));
             }
             InquiryTemplateBuilder theme2 = fromTemplateVersion.theme(clientThemeSource);
             if (readableMap.hasKey(REFERENCE_ID)) {

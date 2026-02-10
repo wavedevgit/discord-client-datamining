@@ -6,12 +6,12 @@ import android.util.Log;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f13796a = {"android.", "com.android.", "dalvik.", "java.", "javax."};
+    private static final String[] f13936a = {"android.", "com.android.", "dalvik.", "java.", "javax."};
 
     public static boolean a(Context context, Throwable th2) {
         try {
-            gf.q.l(context);
-            gf.q.l(th2);
+            hf.q.l(context);
+            hf.q.l(th2);
             return false;
         } catch (Exception e10) {
             Log.e("CrashUtils", "Error adding exception to DropBox!", e10);

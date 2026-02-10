@@ -1,21 +1,21 @@
 package com.google.android.play.core.assetpacks;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class p3 implements xh.t {
+public final class p3 implements yh.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final xh.w f15942a;
+    private final yh.w f16082a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final xh.w f15943b;
+    private final yh.w f16083b;
 
-    public p3(xh.w wVar, xh.w wVar2) {
-        this.f15942a = wVar;
-        this.f15943b = wVar2;
+    public p3(yh.w wVar, yh.w wVar2) {
+        this.f16082a = wVar;
+        this.f16083b = wVar2;
     }
 
-    @Override // xh.w
+    @Override // yh.w
     public final /* bridge */ /* synthetic */ Object a() {
-        xh.w wVar = this.f15943b;
-        return new o3((n0) this.f15942a.a(), (q3) wVar.a());
+        yh.w wVar = this.f16083b;
+        return new o3((n0) this.f16082a.a(), (q3) wVar.a());
     }
 }

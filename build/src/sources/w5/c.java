@@ -1,204 +1,87 @@
 package w5;
 
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import java.io.Closeable;
-import java.io.IOException;
-import java.util.Arrays;
-import okio.Buffer;
-import okio.BufferedSource;
-import okio.ByteString;
-import qu.a0;
+import android.graphics.PointF;
+import x5.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public abstract class c implements Closeable {
+public abstract class c {
 
-    /* renamed from: r  reason: collision with root package name */
-    private static final String[] f53498r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
+    /* renamed from: a  reason: collision with root package name */
+    private static final c.a f53256a = c.a.a("a", "p", "s", "rz", "r", "o", "so", "eo", "sk", "sa");
 
-    /* renamed from: d  reason: collision with root package name */
-    int f53499d;
+    /* renamed from: b  reason: collision with root package name */
+    private static final c.a f53257b = c.a.a("k");
 
-    /* renamed from: e  reason: collision with root package name */
-    int[] f53500e = new int[32];
-
-    /* renamed from: i  reason: collision with root package name */
-    String[] f53501i = new String[32];
-
-    /* renamed from: o  reason: collision with root package name */
-    int[] f53502o = new int[32];
-
-    /* renamed from: p  reason: collision with root package name */
-    boolean f53503p;
-
-    /* renamed from: q  reason: collision with root package name */
-    boolean f53504q;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        final String[] f53505a;
-
-        /* renamed from: b  reason: collision with root package name */
-        final a0 f53506b;
-
-        private a(String[] strArr, a0 a0Var) {
-            this.f53505a = strArr;
-            this.f53506b = a0Var;
-        }
-
-        public static a a(String... strArr) {
-            try {
-                ByteString[] byteStringArr = new ByteString[strArr.length];
-                Buffer buffer = new Buffer();
-                for (int i10 = 0; i10 < strArr.length; i10++) {
-                    c.y(buffer, strArr[i10]);
-                    buffer.readByte();
-                    byteStringArr[i10] = buffer.K1();
-                }
-                return new a((String[]) strArr.clone(), a0.l(byteStringArr));
-            } catch (IOException e10) {
-                throw new AssertionError(e10);
+    private static boolean a(s5.e eVar) {
+        if (eVar != null) {
+            if (!eVar.isStatic() || !((PointF) ((z5.a) eVar.b().get(0)).f56053b).equals(0.0f, 0.0f)) {
+                return false;
             }
+            return true;
         }
+        return true;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public enum b {
-        BEGIN_ARRAY,
-        END_ARRAY,
-        BEGIN_OBJECT,
-        END_OBJECT,
-        NAME,
-        STRING,
-        NUMBER,
-        BOOLEAN,
-        NULL,
-        END_DOCUMENT
-    }
-
-    static {
-        for (int i10 = 0; i10 <= 31; i10++) {
-            f53498r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
+    private static boolean b(s5.o oVar) {
+        if (oVar != null) {
+            if ((oVar instanceof s5.i) || !oVar.isStatic() || !((PointF) ((z5.a) oVar.b().get(0)).f56053b).equals(0.0f, 0.0f)) {
+                return false;
+            }
+            return true;
         }
-        String[] strArr = f53498r;
-        strArr[34] = "\\\"";
-        strArr[92] = "\\\\";
-        strArr[9] = "\\t";
-        strArr[8] = "\\b";
-        strArr[10] = "\\n";
-        strArr[13] = "\\r";
-        strArr[12] = "\\f";
+        return true;
     }
 
-    public static c k(BufferedSource bufferedSource) {
-        return new e(bufferedSource);
+    private static boolean c(s5.b bVar) {
+        if (bVar != null) {
+            if (!bVar.isStatic() || ((Float) ((z5.a) bVar.b().get(0)).f56053b).floatValue() != 0.0f) {
+                return false;
+            }
+            return true;
+        }
+        return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Removed duplicated region for block: B:16:0x002b  */
+    private static boolean d(s5.g gVar) {
+        if (gVar != null) {
+            if (!gVar.isStatic() || !((z5.d) ((z5.a) gVar.b().get(0)).f56053b).a(1.0f, 1.0f)) {
+                return false;
+            }
+            return true;
+        }
+        return true;
+    }
+
+    private static boolean e(s5.b bVar) {
+        if (bVar != null) {
+            if (!bVar.isStatic() || ((Float) ((z5.a) bVar.b().get(0)).f56053b).floatValue() != 0.0f) {
+                return false;
+            }
+            return true;
+        }
+        return true;
+    }
+
+    private static boolean f(s5.b bVar) {
+        if (bVar != null) {
+            if (!bVar.isStatic() || ((Float) ((z5.a) bVar.b().get(0)).f56053b).floatValue() != 0.0f) {
+                return false;
+            }
+            return true;
+        }
+        return true;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:22:0x0069  */
+    /* JADX WARN: Removed duplicated region for block: B:23:0x0086  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public static void y(okio.BufferedSink r7, java.lang.String r8) {
+    public static s5.n g(x5.c r26, l5.i r27) {
         /*
-            java.lang.String[] r0 = w5.c.f53498r
-            r1 = 34
-            r7.writeByte(r1)
-            int r2 = r8.length()
-            r3 = 0
-            r4 = r3
-        Ld:
-            if (r3 >= r2) goto L36
-            char r5 = r8.charAt(r3)
-            r6 = 128(0x80, float:1.794E-43)
-            if (r5 >= r6) goto L1c
-            r5 = r0[r5]
-            if (r5 != 0) goto L29
-            goto L33
-        L1c:
-            r6 = 8232(0x2028, float:1.1535E-41)
-            if (r5 != r6) goto L23
-            java.lang.String r5 = "\\u2028"
-            goto L29
-        L23:
-            r6 = 8233(0x2029, float:1.1537E-41)
-            if (r5 != r6) goto L33
-            java.lang.String r5 = "\\u2029"
-        L29:
-            if (r4 >= r3) goto L2e
-            r7.z0(r8, r4, r3)
-        L2e:
-            r7.q0(r5)
-            int r4 = r3 + 1
-        L33:
-            int r3 = r3 + 1
-            goto Ld
-        L36:
-            if (r4 >= r2) goto L3b
-            r7.z0(r8, r4, r2)
-        L3b:
-            r7.writeByte(r1)
-            return
+            Method dump skipped, instructions count: 324
+            To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: w5.c.y(okio.BufferedSink, java.lang.String):void");
-    }
-
-    public abstract void D();
-
-    public abstract void S();
-
-    public abstract String e1();
-
-    public abstract boolean g();
-
-    public abstract boolean hasNext();
-
-    public abstract b m();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final void n(int i10) {
-        int i11 = this.f53499d;
-        int[] iArr = this.f53500e;
-        if (i11 == iArr.length) {
-            if (i11 != 256) {
-                this.f53500e = Arrays.copyOf(iArr, iArr.length * 2);
-                String[] strArr = this.f53501i;
-                this.f53501i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
-                int[] iArr2 = this.f53502o;
-                this.f53502o = Arrays.copyOf(iArr2, iArr2.length * 2);
-            } else {
-                throw new w5.a("Nesting too deep at " + t());
-            }
-        }
-        int[] iArr3 = this.f53500e;
-        int i12 = this.f53499d;
-        this.f53499d = i12 + 1;
-        iArr3[i12] = i10;
-    }
-
-    public abstract double nextDouble();
-
-    public abstract int nextInt();
-
-    public abstract String o0();
-
-    public abstract int p(a aVar);
-
-    public abstract void s();
-
-    public final String t() {
-        return d.a(this.f53499d, this.f53500e, this.f53501i, this.f53502o);
-    }
-
-    public abstract void u();
-
-    public abstract void v();
-
-    public abstract void x();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final w5.b z(String str) {
-        throw new w5.b(str + " at path " + t());
+        throw new UnsupportedOperationException("Method not decompiled: w5.c.g(x5.c, l5.i):s5.n");
     }
 }

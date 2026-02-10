@@ -1,10 +1,23 @@
 package ep;
+
+import cr.h;
+import ep.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class g {
+public final class g implements e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f22100a = 2131362790;
+    private final f f21963a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public static int f22101b = 2131362802;
+    g(f fVar) {
+        this.f21963a = fVar;
+    }
+
+    public static h b(f fVar) {
+        return cr.e.a(new g(fVar));
+    }
+
+    @Override // ep.e.a
+    public e a(String str) {
+        return this.f21963a.b(str);
+    }
 }

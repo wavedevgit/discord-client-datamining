@@ -104,22 +104,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.getBraintreeSDK = var3;
     var1 = function() {
-        _fun25607: for (var _fun25607_ip = 0;;) switch (_fun25607_ip) {
+        _fun25606: for (var _fun25606_ip = 0;;) switch (_fun25606_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var0 = var2.getClient;
                 var3 = var0.bind(var2)();
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun25607_ip = 36;
-                    continue _fun25607
+                    _fun25606_ip = 36;
+                    continue _fun25606
                 }
             case 23:
                 var2 = _closure1_slot5;
                 var0 = undefined;
                 var0 = var2.bind(var0)(var3);
-                _fun25607_ip = 63;
-                continue _fun25607;
+                _fun25606_ip = 63;
+                continue _fun25606;
             case 36:
                 var2 = _closure1_slot4;
                 var1 = undefined;

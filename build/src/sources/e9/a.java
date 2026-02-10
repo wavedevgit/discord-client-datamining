@@ -1,92 +1,89 @@
 package e9;
-
-import android.content.res.Resources;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import com.facebook.drawee.drawable.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class a implements ra.a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Resources f21375a;
+public abstract class a {
+    public static int A = 25;
+    public static int B = 26;
+    public static int C = 27;
+    public static int D = 28;
+    public static int F = 0;
+    public static int G = 1;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ra.a f21376b;
+    public static int f21183b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ra.a f21377c;
+    public static int f21184c = 1;
 
-    public a(Resources resources, ra.a aVar, ra.a aVar2) {
-        this.f21375a = resources;
-        this.f21376b = aVar;
-        this.f21377c = aVar2;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f21185d = 2;
 
-    private static boolean c(sa.f fVar) {
-        if (fVar.a1() != 1 && fVar.a1() != 0) {
-            return true;
-        }
-        return false;
-    }
+    /* renamed from: e  reason: collision with root package name */
+    public static int f21186e = 3;
 
-    private static boolean d(sa.f fVar) {
-        if (fVar.p1() != 0 && fVar.p1() != -1) {
-            return true;
-        }
-        return false;
-    }
+    /* renamed from: f  reason: collision with root package name */
+    public static int f21187f = 4;
 
-    @Override // ra.a
-    public Drawable a(sa.e eVar) {
-        try {
-            if (ya.b.d()) {
-                ya.b.a("DefaultDrawableFactory#createDrawable");
-            }
-            if (eVar instanceof sa.f) {
-                sa.f fVar = (sa.f) eVar;
-                BitmapDrawable bitmapDrawable = new BitmapDrawable(this.f21375a, fVar.M1());
-                if (!d(fVar) && !c(fVar)) {
-                    if (ya.b.d()) {
-                        ya.b.b();
-                    }
-                    return bitmapDrawable;
-                }
-                g gVar = new g(bitmapDrawable, fVar.p1(), fVar.a1());
-                if (ya.b.d()) {
-                    ya.b.b();
-                }
-                return gVar;
-            }
-            ra.a aVar = this.f21376b;
-            if (aVar != null && aVar.b(eVar)) {
-                Drawable a10 = this.f21376b.a(eVar);
-                if (ya.b.d()) {
-                    ya.b.b();
-                }
-                return a10;
-            }
-            ra.a aVar2 = this.f21377c;
-            if (aVar2 != null && aVar2.b(eVar)) {
-                Drawable a11 = this.f21377c.a(eVar);
-                if (ya.b.d()) {
-                    ya.b.b();
-                }
-                return a11;
-            }
-            if (ya.b.d()) {
-                ya.b.b();
-            }
-            return null;
-        } catch (Throwable th2) {
-            if (ya.b.d()) {
-                ya.b.b();
-            }
-            throw th2;
-        }
-    }
+    /* renamed from: g  reason: collision with root package name */
+    public static int f21188g = 5;
 
-    @Override // ra.a
-    public boolean b(sa.e eVar) {
-        return true;
-    }
+    /* renamed from: h  reason: collision with root package name */
+    public static int f21189h = 6;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f21190i = 7;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f21191j = 8;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f21192k = 9;
+
+    /* renamed from: l  reason: collision with root package name */
+    public static int f21193l = 10;
+
+    /* renamed from: m  reason: collision with root package name */
+    public static int f21194m = 11;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static int f21195n = 12;
+
+    /* renamed from: o  reason: collision with root package name */
+    public static int f21196o = 13;
+
+    /* renamed from: p  reason: collision with root package name */
+    public static int f21197p = 14;
+
+    /* renamed from: q  reason: collision with root package name */
+    public static int f21198q = 15;
+
+    /* renamed from: r  reason: collision with root package name */
+    public static int f21199r = 16;
+
+    /* renamed from: s  reason: collision with root package name */
+    public static int f21200s = 17;
+
+    /* renamed from: t  reason: collision with root package name */
+    public static int f21201t = 18;
+
+    /* renamed from: u  reason: collision with root package name */
+    public static int f21202u = 19;
+
+    /* renamed from: v  reason: collision with root package name */
+    public static int f21203v = 20;
+
+    /* renamed from: w  reason: collision with root package name */
+    public static int f21204w = 21;
+
+    /* renamed from: x  reason: collision with root package name */
+    public static int f21205x = 22;
+
+    /* renamed from: y  reason: collision with root package name */
+    public static int f21206y = 23;
+
+    /* renamed from: z  reason: collision with root package name */
+    public static int f21207z = 24;
+
+    /* renamed from: a  reason: collision with root package name */
+    public static int[] f21182a = {2130968619, 2130968678, 2130969088, 2130969089, 2130969090, 2130969592, 2130969662, 2130969663, 2130969680, 2130969683, 2130969684, 2130969685, 2130969711, 2130969712, 2130969733, 2130969734, 2130969735, 2130969736, 2130969737, 2130969739, 2130969740, 2130969741, 2130969742, 2130969743, 2130969744, 2130969745, 2130969746, 2130969747, 2130970107};
+    public static int[] E = {2130968618, 2130968620, 2130968678, 2130969088, 2130969089, 2130969090, 2130969592, 2130969662, 2130969663, 2130969680, 2130969683, 2130969684, 2130969685, 2130969711, 2130969712, 2130969733, 2130969734, 2130969735, 2130969736, 2130969737, 2130969739, 2130969740, 2130969741, 2130969742, 2130969743, 2130969744, 2130969745, 2130969746, 2130969747, 2130970107};
 }

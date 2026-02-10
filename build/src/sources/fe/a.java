@@ -1,345 +1,408 @@
 package fe;
 
-import android.text.Html;
-import android.text.Spanned;
-import android.text.TextUtils;
-import com.discord.misc.utilities.logThrottle.LogThrottleSingleton;
+import ae.b;
+import ae.f;
+import ae.g;
+import android.graphics.PointF;
+import android.text.Layout;
+import android.text.SpannableString;
+import android.text.style.BackgroundColorSpan;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.StrikethroughSpan;
+import android.text.style.StyleSpan;
+import android.text.style.UnderlineSpan;
+import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
+import fe.c;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import mi.d;
-import ne.h0;
-import ne.y;
-import ne.z;
-import zd.f;
-import zd.g;
+import oe.h0;
+import oe.w0;
+import oe.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a extends f {
 
-    /* renamed from: q  reason: collision with root package name */
-    private static final Pattern f23172q = Pattern.compile("\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*-->\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*");
-
-    /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f23173r = Pattern.compile("\\{\\\\.*?\\}");
+    /* renamed from: t  reason: collision with root package name */
+    private static final Pattern f22555t = Pattern.compile("(?:(\\d+):)?(\\d+):(\\d+)[:.](\\d+)");
 
     /* renamed from: o  reason: collision with root package name */
-    private final StringBuilder f23174o;
+    private final boolean f22556o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ArrayList f23175p;
+    private final b f22557p;
 
-    public a() {
-        super("SubripDecoder");
-        this.f23174o = new StringBuilder();
-        this.f23175p = new ArrayList();
+    /* renamed from: q  reason: collision with root package name */
+    private Map f22558q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private float f22559r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private float f22560s;
+
+    public a(List list) {
+        super("SsaDecoder");
+        this.f22559r = -3.4028235E38f;
+        this.f22560s = -3.4028235E38f;
+        if (list != null && !list.isEmpty()) {
+            this.f22556o = true;
+            String E = w0.E((byte[]) list.get(0));
+            oe.a.a(E.startsWith("Format:"));
+            this.f22557p = (b) oe.a.e(b.a(E));
+            H(new h0((byte[]) list.get(1)), ni.d.f38904c);
+            return;
+        }
+        this.f22556o = false;
+        this.f22557p = null;
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code restructure failed: missing block: B:10:0x0031, code lost:
-        if (r15.equals("{\\an9}") != false) goto L10;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:14:0x003d, code lost:
-        if (r15.equals("{\\an7}") != false) goto L36;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:17:0x0044, code lost:
-        if (r15.equals("{\\an6}") != false) goto L10;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:21:0x0050, code lost:
-        if (r15.equals("{\\an4}") != false) goto L36;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:24:0x0057, code lost:
-        if (r15.equals("{\\an3}") != false) goto L10;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:25:0x0059, code lost:
-        r14.l(2);
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:28:0x0066, code lost:
-        if (r15.equals("{\\an1}") != false) goto L36;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:29:0x0068, code lost:
-        r14.l(0);
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:35:0x007b, code lost:
-        if (r15.equals("{\\an9}") != false) goto L15;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:38:0x0082, code lost:
-        if (r15.equals("{\\an8}") != false) goto L15;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:41:0x0089, code lost:
-        if (r15.equals("{\\an7}") != false) goto L15;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:42:0x008b, code lost:
-        r14.i(0);
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:47:0x00a2, code lost:
-        if (r15.equals("{\\an3}") != false) goto L27;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:50:0x00a9, code lost:
-        if (r15.equals("{\\an2}") != false) goto L27;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:53:0x00b0, code lost:
-        if (r15.equals("{\\an1}") != false) goto L27;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:54:0x00b2, code lost:
-        r14.i(2);
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private zd.b B(android.text.Spanned r14, java.lang.String r15) {
-        /*
-            r13 = this;
-            zd.b$b r0 = new zd.b$b
-            r0.<init>()
-            zd.b$b r14 = r0.o(r14)
-            if (r15 != 0) goto L10
-            zd.b r14 = r14.a()
-            return r14
-        L10:
-            int r0 = r15.hashCode()
-            r1 = 2
-            r2 = 1
-            java.lang.String r3 = "{\\an1}"
-            java.lang.String r4 = "{\\an2}"
-            java.lang.String r5 = "{\\an3}"
-            java.lang.String r6 = "{\\an4}"
-            java.lang.String r7 = "{\\an5}"
-            java.lang.String r8 = "{\\an6}"
-            java.lang.String r9 = "{\\an7}"
-            java.lang.String r10 = "{\\an8}"
-            java.lang.String r11 = "{\\an9}"
-            r12 = 0
-            switch(r0) {
-                case -685620710: goto L62;
-                case -685620679: goto L5d;
-                case -685620648: goto L53;
-                case -685620617: goto L4c;
-                case -685620586: goto L47;
-                case -685620555: goto L40;
-                case -685620524: goto L39;
-                case -685620493: goto L34;
-                case -685620462: goto L2d;
-                default: goto L2c;
+    private static int B(long j10, List list, List list2) {
+        int i10;
+        ArrayList arrayList;
+        int size = list.size() - 1;
+        while (true) {
+            if (size >= 0) {
+                if (((Long) list.get(size)).longValue() == j10) {
+                    return size;
+                }
+                if (((Long) list.get(size)).longValue() < j10) {
+                    i10 = size + 1;
+                    break;
+                }
+                size--;
+            } else {
+                i10 = 0;
+                break;
             }
-        L2c:
-            goto L6c
-        L2d:
-            boolean r0 = r15.equals(r11)
-            if (r0 == 0) goto L6c
-            goto L59
-        L34:
-            boolean r0 = r15.equals(r10)
-            goto L6c
-        L39:
-            boolean r0 = r15.equals(r9)
-            if (r0 == 0) goto L6c
-            goto L68
-        L40:
-            boolean r0 = r15.equals(r8)
-            if (r0 == 0) goto L6c
-            goto L59
-        L47:
-            boolean r0 = r15.equals(r7)
-            goto L6c
-        L4c:
-            boolean r0 = r15.equals(r6)
-            if (r0 == 0) goto L6c
-            goto L68
-        L53:
-            boolean r0 = r15.equals(r5)
-            if (r0 == 0) goto L6c
-        L59:
-            r14.l(r1)
-            goto L6f
-        L5d:
-            boolean r0 = r15.equals(r4)
-            goto L6c
-        L62:
-            boolean r0 = r15.equals(r3)
-            if (r0 == 0) goto L6c
-        L68:
-            r14.l(r12)
-            goto L6f
-        L6c:
-            r14.l(r2)
-        L6f:
-            int r0 = r15.hashCode()
-            switch(r0) {
-                case -685620710: goto Lac;
-                case -685620679: goto La5;
-                case -685620648: goto L9e;
-                case -685620617: goto L99;
-                case -685620586: goto L94;
-                case -685620555: goto L8f;
-                case -685620524: goto L85;
-                case -685620493: goto L7e;
-                case -685620462: goto L77;
-                default: goto L76;
-            }
-        L76:
-            goto Lb6
-        L77:
-            boolean r15 = r15.equals(r11)
-            if (r15 == 0) goto Lb6
-            goto L8b
-        L7e:
-            boolean r15 = r15.equals(r10)
-            if (r15 == 0) goto Lb6
-            goto L8b
-        L85:
-            boolean r15 = r15.equals(r9)
-            if (r15 == 0) goto Lb6
-        L8b:
-            r14.i(r12)
-            goto Lb9
-        L8f:
-            boolean r15 = r15.equals(r8)
-            goto Lb6
-        L94:
-            boolean r15 = r15.equals(r7)
-            goto Lb6
-        L99:
-            boolean r15 = r15.equals(r6)
-            goto Lb6
-        L9e:
-            boolean r15 = r15.equals(r5)
-            if (r15 == 0) goto Lb6
-            goto Lb2
-        La5:
-            boolean r15 = r15.equals(r4)
-            if (r15 == 0) goto Lb6
-            goto Lb2
-        Lac:
-            boolean r15 = r15.equals(r3)
-            if (r15 == 0) goto Lb6
-        Lb2:
-            r14.i(r1)
-            goto Lb9
-        Lb6:
-            r14.i(r2)
-        Lb9:
-            int r15 = r14.d()
-            float r15 = D(r15)
-            zd.b$b r15 = r14.k(r15)
-            int r14 = r14.c()
-            float r14 = D(r14)
-            zd.b$b r14 = r15.h(r14, r12)
-            zd.b r14 = r14.a()
-            return r14
-        */
-        throw new UnsupportedOperationException("Method not decompiled: fe.a.B(android.text.Spanned, java.lang.String):zd.b");
+        }
+        list.add(i10, Long.valueOf(j10));
+        if (i10 == 0) {
+            arrayList = new ArrayList();
+        } else {
+            arrayList = new ArrayList((Collection) list2.get(i10 - 1));
+        }
+        list2.add(i10, arrayList);
+        return i10;
     }
 
-    private Charset C(h0 h0Var) {
+    private static float C(int i10) {
+        if (i10 != 0) {
+            if (i10 != 1) {
+                if (i10 != 2) {
+                    return -3.4028235E38f;
+                }
+                return 0.95f;
+            }
+            return 0.5f;
+        }
+        return 0.05f;
+    }
+
+    private static ae.b D(String str, c cVar, c.b bVar, float f10, float f11) {
+        SpannableString spannableString = new SpannableString(str);
+        b.C0009b o10 = new b.C0009b().o(spannableString);
+        if (cVar != null) {
+            if (cVar.f22568c != null) {
+                spannableString.setSpan(new ForegroundColorSpan(cVar.f22568c.intValue()), 0, spannableString.length(), 33);
+            }
+            if (cVar.f22575j == 3 && cVar.f22569d != null) {
+                spannableString.setSpan(new BackgroundColorSpan(cVar.f22569d.intValue()), 0, spannableString.length(), 33);
+            }
+            float f12 = cVar.f22570e;
+            if (f12 != -3.4028235E38f && f11 != -3.4028235E38f) {
+                o10.q(f12 / f11, 1);
+            }
+            boolean z10 = cVar.f22571f;
+            if (z10 && cVar.f22572g) {
+                spannableString.setSpan(new StyleSpan(3), 0, spannableString.length(), 33);
+            } else if (z10) {
+                spannableString.setSpan(new StyleSpan(1), 0, spannableString.length(), 33);
+            } else if (cVar.f22572g) {
+                spannableString.setSpan(new StyleSpan(2), 0, spannableString.length(), 33);
+            }
+            if (cVar.f22573h) {
+                spannableString.setSpan(new UnderlineSpan(), 0, spannableString.length(), 33);
+            }
+            if (cVar.f22574i) {
+                spannableString.setSpan(new StrikethroughSpan(), 0, spannableString.length(), 33);
+            }
+        }
+        int i10 = bVar.f22591a;
+        if (i10 == -1) {
+            if (cVar != null) {
+                i10 = cVar.f22567b;
+            } else {
+                i10 = -1;
+            }
+        }
+        o10.p(N(i10)).l(M(i10)).i(L(i10));
+        PointF pointF = bVar.f22592b;
+        if (pointF != null && f11 != -3.4028235E38f && f10 != -3.4028235E38f) {
+            o10.k(pointF.x / f10);
+            o10.h(bVar.f22592b.y / f11, 0);
+        } else {
+            o10.k(C(o10.d()));
+            o10.h(C(o10.c()), 0);
+        }
+        return o10.a();
+    }
+
+    private Charset E(h0 h0Var) {
         Charset P = h0Var.P();
         if (P != null) {
             return P;
         }
-        return d.f37219c;
+        return ni.d.f38904c;
     }
 
-    static float D(int i10) {
-        if (i10 != 0) {
-            if (i10 != 1) {
-                if (i10 == 2) {
-                    return 0.92f;
-                }
-                throw new IllegalArgumentException();
-            }
-            return 0.5f;
+    private void F(String str, b bVar, List list, List list2) {
+        c cVar;
+        int i10;
+        oe.a.a(str.startsWith("Dialogue:"));
+        String[] split = str.substring(9).split(",", bVar.f22565e);
+        if (split.length != bVar.f22565e) {
+            y.i("SsaDecoder", "Skipping dialogue line with fewer columns than format: " + str);
+            return;
         }
-        return 0.08f;
-    }
-
-    private static long E(Matcher matcher, int i10) {
-        long j10;
-        String group = matcher.group(i10 + 1);
-        if (group != null) {
-            j10 = Long.parseLong(group) * LogThrottleSingleton.RATE_LIMIT_ONE_HOUR;
+        long K = K(split[bVar.f22561a]);
+        if (K == -9223372036854775807L) {
+            y.i("SsaDecoder", "Skipping invalid timing: " + str);
+            return;
+        }
+        long K2 = K(split[bVar.f22562b]);
+        if (K2 == -9223372036854775807L) {
+            y.i("SsaDecoder", "Skipping invalid timing: " + str);
+            return;
+        }
+        Map map = this.f22558q;
+        if (map != null && (i10 = bVar.f22563c) != -1) {
+            cVar = (c) map.get(split[i10].trim());
         } else {
-            j10 = 0;
+            cVar = null;
         }
-        long parseLong = j10 + (Long.parseLong((String) ne.a.e(matcher.group(i10 + 2))) * LogThrottleSingleton.RATE_LIMIT_ONE_MINUTE) + (Long.parseLong((String) ne.a.e(matcher.group(i10 + 3))) * 1000);
-        String group2 = matcher.group(i10 + 4);
-        if (group2 != null) {
-            parseLong += Long.parseLong(group2);
+        String str2 = split[bVar.f22564d];
+        ae.b D = D(c.b.d(str2).replace("\\N", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE).replace("\\n", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE).replace("\\h", " "), cVar, c.b.b(str2), this.f22559r, this.f22560s);
+        int B = B(K2, list2, list);
+        for (int B2 = B(K, list2, list); B2 < B; B2++) {
+            ((List) list.get(B2)).add(D);
         }
-        return parseLong * 1000;
     }
 
-    private String F(String str, ArrayList arrayList) {
-        String trim = str.trim();
-        StringBuilder sb2 = new StringBuilder(trim);
-        Matcher matcher = f23173r.matcher(trim);
-        int i10 = 0;
-        while (matcher.find()) {
-            String group = matcher.group();
-            arrayList.add(group);
-            int start = matcher.start() - i10;
-            int length = group.length();
-            sb2.replace(start, start + length, "");
-            i10 += length;
+    private void G(h0 h0Var, List list, List list2, Charset charset) {
+        b bVar;
+        if (this.f22556o) {
+            bVar = this.f22557p;
+        } else {
+            bVar = null;
         }
-        return sb2.toString();
-    }
-
-    @Override // zd.f
-    protected g z(byte[] bArr, int i10, boolean z10) {
-        String str;
-        ArrayList arrayList = new ArrayList();
-        z zVar = new z();
-        h0 h0Var = new h0(bArr, i10);
-        Charset C = C(h0Var);
         while (true) {
-            String t10 = h0Var.t(C);
-            int i11 = 0;
-            if (t10 == null) {
-                break;
-            } else if (t10.length() != 0) {
-                try {
-                    Integer.parseInt(t10);
-                    String t11 = h0Var.t(C);
-                    if (t11 == null) {
-                        y.i("SubripDecoder", "Unexpected end");
-                        break;
-                    }
-                    Matcher matcher = f23172q.matcher(t11);
-                    if (matcher.matches()) {
-                        zVar.a(E(matcher, 1));
-                        zVar.a(E(matcher, 6));
-                        this.f23174o.setLength(0);
-                        this.f23175p.clear();
-                        for (String t12 = h0Var.t(C); !TextUtils.isEmpty(t12); t12 = h0Var.t(C)) {
-                            if (this.f23174o.length() > 0) {
-                                this.f23174o.append("<br>");
-                            }
-                            this.f23174o.append(F(t12, this.f23175p));
-                        }
-                        Spanned fromHtml = Html.fromHtml(this.f23174o.toString());
-                        while (true) {
-                            if (i11 < this.f23175p.size()) {
-                                str = (String) this.f23175p.get(i11);
-                                if (str.matches("\\{\\\\an[1-9]\\}")) {
-                                    break;
-                                }
-                                i11++;
-                            } else {
-                                str = null;
-                                break;
-                            }
-                        }
-                        arrayList.add(B(fromHtml, str));
-                        arrayList.add(zd.b.C);
+            String t10 = h0Var.t(charset);
+            if (t10 != null) {
+                if (t10.startsWith("Format:")) {
+                    bVar = b.a(t10);
+                } else if (t10.startsWith("Dialogue:")) {
+                    if (bVar == null) {
+                        y.i("SsaDecoder", "Skipping dialogue line before complete format: " + t10);
                     } else {
-                        y.i("SubripDecoder", "Skipping invalid timing: " + t11);
+                        F(t10, bVar, list, list2);
                     }
-                } catch (NumberFormatException unused) {
-                    y.i("SubripDecoder", "Skipping invalid index: " + t10);
+                }
+            } else {
+                return;
+            }
+        }
+    }
+
+    private void H(h0 h0Var, Charset charset) {
+        while (true) {
+            String t10 = h0Var.t(charset);
+            if (t10 != null) {
+                if ("[Script Info]".equalsIgnoreCase(t10)) {
+                    I(h0Var, charset);
+                } else if ("[V4+ Styles]".equalsIgnoreCase(t10)) {
+                    this.f22558q = J(h0Var, charset);
+                } else if ("[V4 Styles]".equalsIgnoreCase(t10)) {
+                    y.f("SsaDecoder", "[V4 Styles] are not supported");
+                } else if ("[Events]".equalsIgnoreCase(t10)) {
+                    return;
+                }
+            } else {
+                return;
+            }
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:24:0x0059 A[SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:4:0x0006  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private void I(oe.h0 r5, java.nio.charset.Charset r6) {
+        /*
+            r4 = this;
+        L0:
+            java.lang.String r0 = r5.t(r6)
+            if (r0 == 0) goto L59
+            int r1 = r5.a()
+            if (r1 == 0) goto L14
+            char r1 = r5.h(r6)
+            r2 = 91
+            if (r1 == r2) goto L59
+        L14:
+            java.lang.String r1 = ":"
+            java.lang.String[] r0 = r0.split(r1)
+            int r1 = r0.length
+            r2 = 2
+            if (r1 == r2) goto L1f
+            goto L0
+        L1f:
+            r1 = 0
+            r1 = r0[r1]
+            java.lang.String r1 = r1.trim()
+            java.lang.String r1 = ni.b.e(r1)
+            r1.getClass()
+            java.lang.String r2 = "playresx"
+            boolean r2 = r1.equals(r2)
+            r3 = 1
+            if (r2 != 0) goto L4c
+            java.lang.String r2 = "playresy"
+            boolean r1 = r1.equals(r2)
+            if (r1 != 0) goto L3f
+            goto L0
+        L3f:
+            r0 = r0[r3]     // Catch: java.lang.NumberFormatException -> L0
+            java.lang.String r0 = r0.trim()     // Catch: java.lang.NumberFormatException -> L0
+            float r0 = java.lang.Float.parseFloat(r0)     // Catch: java.lang.NumberFormatException -> L0
+            r4.f22560s = r0     // Catch: java.lang.NumberFormatException -> L0
+            goto L0
+        L4c:
+            r0 = r0[r3]     // Catch: java.lang.NumberFormatException -> L0
+            java.lang.String r0 = r0.trim()     // Catch: java.lang.NumberFormatException -> L0
+            float r0 = java.lang.Float.parseFloat(r0)     // Catch: java.lang.NumberFormatException -> L0
+            r4.f22559r = r0     // Catch: java.lang.NumberFormatException -> L0
+            goto L0
+        L59:
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: fe.a.I(oe.h0, java.nio.charset.Charset):void");
+    }
+
+    private static Map J(h0 h0Var, Charset charset) {
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        c.a aVar = null;
+        while (true) {
+            String t10 = h0Var.t(charset);
+            if (t10 == null || (h0Var.a() != 0 && h0Var.h(charset) == '[')) {
+                break;
+            } else if (t10.startsWith("Format:")) {
+                aVar = c.a.a(t10);
+            } else if (t10.startsWith("Style:")) {
+                if (aVar == null) {
+                    y.i("SsaDecoder", "Skipping 'Style:' line before 'Format:' line: " + t10);
+                } else {
+                    c b10 = c.b(t10, aVar);
+                    if (b10 != null) {
+                        linkedHashMap.put(b10.f22566a, b10);
+                    }
                 }
             }
         }
-        return new b((zd.b[]) arrayList.toArray(new zd.b[0]), zVar.d());
+        return linkedHashMap;
+    }
+
+    private static long K(String str) {
+        Matcher matcher = f22555t.matcher(str.trim());
+        if (!matcher.matches()) {
+            return -9223372036854775807L;
+        }
+        return (Long.parseLong((String) w0.j(matcher.group(1))) * 3600000000L) + (Long.parseLong((String) w0.j(matcher.group(2))) * 60000000) + (Long.parseLong((String) w0.j(matcher.group(3))) * 1000000) + (Long.parseLong((String) w0.j(matcher.group(4))) * 10000);
+    }
+
+    private static int L(int i10) {
+        switch (i10) {
+            case -1:
+                return Integer.MIN_VALUE;
+            case 0:
+            default:
+                y.i("SsaDecoder", "Unknown alignment: " + i10);
+                return Integer.MIN_VALUE;
+            case 1:
+            case 2:
+            case 3:
+                return 2;
+            case 4:
+            case 5:
+            case 6:
+                return 1;
+            case 7:
+            case 8:
+            case 9:
+                return 0;
+        }
+    }
+
+    private static int M(int i10) {
+        switch (i10) {
+            case -1:
+                return Integer.MIN_VALUE;
+            case 0:
+            default:
+                y.i("SsaDecoder", "Unknown alignment: " + i10);
+                return Integer.MIN_VALUE;
+            case 1:
+            case 4:
+            case 7:
+                return 0;
+            case 2:
+            case 5:
+            case 8:
+                return 1;
+            case 3:
+            case 6:
+            case 9:
+                return 2;
+        }
+    }
+
+    private static Layout.Alignment N(int i10) {
+        switch (i10) {
+            case -1:
+                return null;
+            case 0:
+            default:
+                y.i("SsaDecoder", "Unknown alignment: " + i10);
+                return null;
+            case 1:
+            case 4:
+            case 7:
+                return Layout.Alignment.ALIGN_NORMAL;
+            case 2:
+            case 5:
+            case 8:
+                return Layout.Alignment.ALIGN_CENTER;
+            case 3:
+            case 6:
+            case 9:
+                return Layout.Alignment.ALIGN_OPPOSITE;
+        }
+    }
+
+    @Override // ae.f
+    protected g z(byte[] bArr, int i10, boolean z10) {
+        ArrayList arrayList = new ArrayList();
+        ArrayList arrayList2 = new ArrayList();
+        h0 h0Var = new h0(bArr, i10);
+        Charset E = E(h0Var);
+        if (!this.f22556o) {
+            H(h0Var, E);
+        }
+        G(h0Var, arrayList, arrayList2, E);
+        return new d(arrayList, arrayList2);
     }
 }

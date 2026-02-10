@@ -1,33 +1,33 @@
 package com.google.android.gms.auth.api.signin.internal;
 
+import af.g;
+import af.x;
 import android.os.Bundle;
 import androidx.loader.app.LoaderManager;
-import ef.e;
+import ff.e;
 import n3.b;
-import ze.g;
-import ze.x;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class a implements LoaderManager.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ SignInHubActivity f13702a;
+    final /* synthetic */ SignInHubActivity f13842a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ a(SignInHubActivity signInHubActivity, x xVar) {
-        this.f13702a = signInHubActivity;
+        this.f13842a = signInHubActivity;
     }
 
     @Override // androidx.loader.app.LoaderManager.a
     public final /* bridge */ /* synthetic */ void b(b bVar, Object obj) {
         Void r32 = (Void) obj;
-        SignInHubActivity signInHubActivity = this.f13702a;
+        SignInHubActivity signInHubActivity = this.f13842a;
         signInHubActivity.setResult(SignInHubActivity.x(signInHubActivity), SignInHubActivity.y(signInHubActivity));
-        this.f13702a.finish();
+        this.f13842a.finish();
     }
 
     @Override // androidx.loader.app.LoaderManager.a
     public final b c(int i10, Bundle bundle) {
-        return new g(this.f13702a, e.b());
+        return new g(this.f13842a, e.b());
     }
 
     @Override // androidx.loader.app.LoaderManager.a

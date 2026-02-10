@@ -97,7 +97,7 @@ public final class FrameBasedAnimationDriver extends AnimationDriver {
                 String str = "Calculated frame index should never be lower than 0. Called with frameTimeNanos " + j10 + " and mStartFrameTimeNanos " + this.startFrameTimeNanos;
                 if (!ReactBuildConfig.DEBUG) {
                     if (this.logCount < 100) {
-                        p8.a.J(ReactConstants.TAG, str);
+                        q8.a.J(ReactConstants.TAG, str);
                         this.logCount++;
                         return;
                     }

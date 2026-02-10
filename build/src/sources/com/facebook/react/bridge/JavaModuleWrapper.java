@@ -17,7 +17,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0001\u0018\u0000 '2\u00020\u0001:\u0003%&'B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\b\u0010\u0016\u001a\u00020\u0017H\u0003J\u0018\u0010 \u001a\u00020\u00172\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020$H\u0007R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u0010\b\u001a\u0012\u0012\u0004\u0012\u00020\n0\tj\b\u0012\u0004\u0012\u00020\n`\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u0010\f\u001a\u0012\u0012\u0004\u0012\u00020\r0\tj\b\u0012\u0004\u0012\u00020\r`\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u000e\u001a\u00020\u000f8G¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0012\u001a\u00020\u00138G¢\u0006\u0006\u001a\u0004\b\u0014\u0010\u0015R\u0017\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\r0\u00198G¢\u0006\u0006\u001a\u0004\b\u001a\u0010\u001bR\u0011\u0010\u001c\u001a\u00020\u001d8G¢\u0006\u0006\u001a\u0004\b\u001e\u0010\u001f¨\u0006("}, d2 = {"Lcom/facebook/react/bridge/JavaModuleWrapper;", "", "jsInstance", "Lcom/facebook/react/bridge/JSInstance;", "moduleHolder", "Lcom/facebook/react/bridge/ModuleHolder;", "<init>", "(Lcom/facebook/react/bridge/JSInstance;Lcom/facebook/react/bridge/ModuleHolder;)V", "methods", "Ljava/util/ArrayList;", "Lcom/facebook/react/bridge/JavaModuleWrapper$NativeMethod;", "Lkotlin/collections/ArrayList;", "descs", "Lcom/facebook/react/bridge/JavaModuleWrapper$MethodDescriptor;", "module", "Lcom/facebook/react/bridge/BaseJavaModule;", "getModule", "()Lcom/facebook/react/bridge/BaseJavaModule;", StackTraceHelper.NAME_KEY, "", "getName", "()Ljava/lang/String;", "findMethods", "", "methodDescriptors", "", "getMethodDescriptors", "()Ljava/util/List;", "constants", "Lcom/facebook/react/bridge/NativeMap;", "getConstants", "()Lcom/facebook/react/bridge/NativeMap;", "invoke", "methodId", "", "parameters", "Lcom/facebook/react/bridge/ReadableNativeArray;", "NativeMethod", "MethodDescriptor", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@fb.a
+@gb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class JavaModuleWrapper {
     @NotNull
@@ -43,16 +43,16 @@ public final class JavaModuleWrapper {
     }
 
     @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u000b\b\u0007\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R \u0010\u0004\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR \u0010\n\u001a\u0004\u0018\u00010\u000b8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR \u0010\u0010\u001a\u0004\u0018\u00010\u000b8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\r\"\u0004\b\u0012\u0010\u000fR \u0010\u0013\u001a\u0004\u0018\u00010\u000b8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\r\"\u0004\b\u0015\u0010\u000f¨\u0006\u0016"}, d2 = {"Lcom/facebook/react/bridge/JavaModuleWrapper$MethodDescriptor;", "", "<init>", "()V", "method", "Ljava/lang/reflect/Method;", "getMethod", "()Ljava/lang/reflect/Method;", "setMethod", "(Ljava/lang/reflect/Method;)V", "signature", "", "getSignature", "()Ljava/lang/String;", "setSignature", "(Ljava/lang/String;)V", StackTraceHelper.NAME_KEY, "getName", "setName", "type", "getType", "setType", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    @fb.a
+    @gb.a
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class MethodDescriptor {
-        @fb.a
+        @gb.a
         private Method method;
-        @fb.a
+        @gb.a
         private String name;
-        @fb.a
+        @gb.a
         private String signature;
-        @fb.a
+        @gb.a
         private String type;
 
         public final Method getMethod() {
@@ -110,9 +110,9 @@ public final class JavaModuleWrapper {
         this.descs = new ArrayList<>();
     }
 
-    @fb.a
+    @gb.a
     private final void findMethods() {
-        qb.a.c(0L, "findMethods");
+        rb.a.c(0L, "findMethods");
         Class<?> cls = this.moduleHolder.getModule().getClass();
         Class<? super Object> superclass = cls.getSuperclass();
         if (superclass != null && TurboModule.class.isAssignableFrom(superclass)) {
@@ -137,23 +137,23 @@ public final class JavaModuleWrapper {
                 this.descs.add(methodDescriptor);
             }
         }
-        qb.a.i(0L);
+        rb.a.i(0L);
     }
 
-    @fb.a
+    @gb.a
     @NotNull
     public final NativeMap getConstants() {
         WritableNativeMap uIManagerConstantsAsWritableMap;
         String name = getName();
-        qb.b.a(0L, "JavaModuleWrapper.getConstants").b("moduleName", name).c();
+        rb.b.a(0L, "JavaModuleWrapper.getConstants").b("moduleName", name).c();
         ReactMarker.logMarker(ReactMarkerConstants.GET_CONSTANTS_START, name);
-        qb.a.c(0L, "module.getModule");
+        rb.a.c(0L, "module.getModule");
         BaseJavaModule module = getModule();
-        qb.a.i(0L);
-        qb.a.c(0L, "module.getConstants");
+        rb.a.i(0L);
+        rb.a.c(0L, "module.getConstants");
         Map<String, Object> constants = module.getConstants();
-        qb.a.i(0L);
-        qb.a.c(0L, "create WritableNativeMap");
+        rb.a.i(0L);
+        rb.a.c(0L, "create WritableNativeMap");
         ReactMarker.logMarker(ReactMarkerConstants.CONVERT_CONSTANTS_START, name);
         try {
             if (Intrinsics.areEqual(name, UIManagerModule.NAME) && (uIManagerConstantsAsWritableMap = UIManagerConstantsCache.getInstance().getUIManagerConstantsAsWritableMap()) != null) {
@@ -164,13 +164,13 @@ public final class JavaModuleWrapper {
             return makeNativeMap;
         } finally {
             ReactMarker.logMarker(ReactMarkerConstants.CONVERT_CONSTANTS_END, name);
-            qb.a.i(0L);
+            rb.a.i(0L);
             ReactMarker.logMarker(ReactMarkerConstants.GET_CONSTANTS_END, name);
-            qb.b.b(0L).c();
+            rb.b.b(0L).c();
         }
     }
 
-    @fb.a
+    @gb.a
     @NotNull
     public final List<MethodDescriptor> getMethodDescriptors() {
         if (this.descs.isEmpty()) {
@@ -179,7 +179,7 @@ public final class JavaModuleWrapper {
         return this.descs;
     }
 
-    @fb.a
+    @gb.a
     @NotNull
     public final BaseJavaModule getModule() {
         NativeModule module = this.moduleHolder.getModule();
@@ -187,13 +187,13 @@ public final class JavaModuleWrapper {
         return (BaseJavaModule) module;
     }
 
-    @fb.a
+    @gb.a
     @NotNull
     public final String getName() {
         return this.moduleHolder.getName();
     }
 
-    @fb.a
+    @gb.a
     public final void invoke(int i10, @NotNull ReadableNativeArray parameters) {
         Intrinsics.checkNotNullParameter(parameters, "parameters");
         if (i10 >= this.methods.size()) {

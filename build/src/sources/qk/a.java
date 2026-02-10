@@ -1,271 +1,336 @@
 package qk;
 
-import hk.p;
-import lk.b;
-import lk.g;
-import lk.k;
+import ik.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f47945a;
+    private final mk.b f46587a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final mk.b f47946b;
+    private final mk.b f46588b;
 
-    public a(b bVar) {
-        this.f47945a = bVar;
-        this.f47946b = new mk.b(bVar);
+    /* renamed from: c  reason: collision with root package name */
+    private final e f46589c;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public a(mk.b bVar) {
+        int i10 = bVar.i();
+        if (i10 >= 8 && i10 <= 144 && (i10 & 1) == 0) {
+            this.f46589c = j(bVar);
+            mk.b a10 = a(bVar);
+            this.f46587a = a10;
+            this.f46588b = new mk.b(a10.l(), a10.i());
+            return;
+        }
+        throw g.a();
     }
 
-    private p a(p[] pVarArr) {
-        p pVar = pVarArr[0];
-        p pVar2 = pVarArr[1];
-        p pVar3 = pVarArr[2];
-        p pVar4 = pVarArr[3];
-        int j10 = j(pVar, pVar4);
-        p h10 = h(pVar, pVar2, (j(pVar2, pVar4) + 1) * 4);
-        p h11 = h(pVar3, pVar2, (j10 + 1) * 4);
-        int j11 = j(h10, pVar4);
-        int j12 = j(h11, pVar4);
-        float f10 = j11 + 1;
-        p pVar5 = new p(pVar4.c() + ((pVar3.c() - pVar2.c()) / f10), pVar4.d() + ((pVar3.d() - pVar2.d()) / f10));
-        float f11 = j12 + 1;
-        p pVar6 = new p(pVar4.c() + ((pVar.c() - pVar2.c()) / f11), pVar4.d() + ((pVar.d() - pVar2.d()) / f11));
-        if (!e(pVar5)) {
-            if (!e(pVar6)) {
-                return null;
-            }
-        } else if (!e(pVar6) || j(h10, pVar5) + j(h11, pVar5) > j(h10, pVar6) + j(h11, pVar6)) {
-            return pVar5;
-        }
-        return pVar6;
-    }
-
-    private p[] c(p[] pVarArr) {
-        p pVar = pVarArr[0];
-        p pVar2 = pVarArr[1];
-        p pVar3 = pVarArr[3];
-        p pVar4 = pVarArr[2];
-        int j10 = j(pVar, pVar2);
-        int j11 = j(pVar2, pVar3);
-        int j12 = j(pVar3, pVar4);
-        int j13 = j(pVar4, pVar);
-        p[] pVarArr2 = {pVar4, pVar, pVar2, pVar3};
-        if (j10 > j11) {
-            pVarArr2[0] = pVar;
-            pVarArr2[1] = pVar2;
-            pVarArr2[2] = pVar3;
-            pVarArr2[3] = pVar4;
-            j10 = j11;
-        }
-        if (j10 > j12) {
-            pVarArr2[0] = pVar2;
-            pVarArr2[1] = pVar3;
-            pVarArr2[2] = pVar4;
-            pVarArr2[3] = pVar;
-        } else {
-            j12 = j10;
-        }
-        if (j12 > j13) {
-            pVarArr2[0] = pVar3;
-            pVarArr2[1] = pVar4;
-            pVarArr2[2] = pVar;
-            pVarArr2[3] = pVar2;
-        }
-        return pVarArr2;
-    }
-
-    private p[] d(p[] pVarArr) {
-        p pVar = pVarArr[0];
-        p pVar2 = pVarArr[1];
-        p pVar3 = pVarArr[2];
-        p pVar4 = pVarArr[3];
-        int j10 = (j(pVar, pVar4) + 1) * 4;
-        if (j(h(pVar2, pVar3, j10), pVar) < j(h(pVar3, pVar2, j10), pVar4)) {
-            pVarArr[0] = pVar;
-            pVarArr[1] = pVar2;
-            pVarArr[2] = pVar3;
-            pVarArr[3] = pVar4;
-            return pVarArr;
-        }
-        pVarArr[0] = pVar2;
-        pVarArr[1] = pVar3;
-        pVarArr[2] = pVar4;
-        pVarArr[3] = pVar;
-        return pVarArr;
-    }
-
-    private boolean e(p pVar) {
-        if (pVar.c() >= 0.0f && pVar.c() <= this.f47945a.l() - 1 && pVar.d() > 0.0f && pVar.d() <= this.f47945a.i() - 1) {
-            return true;
-        }
-        return false;
-    }
-
-    private static p f(p pVar, float f10, float f11) {
-        float f12;
-        float f13;
-        float c10 = pVar.c();
-        float d10 = pVar.d();
-        if (c10 < f10) {
-            f12 = c10 - 1.0f;
-        } else {
-            f12 = c10 + 1.0f;
-        }
-        if (d10 < f11) {
-            f13 = d10 - 1.0f;
-        } else {
-            f13 = d10 + 1.0f;
-        }
-        return new p(f12, f13);
-    }
-
-    private static b g(b bVar, p pVar, p pVar2, p pVar3, p pVar4, int i10, int i11) {
-        float f10 = i10 - 0.5f;
-        float f11 = i11 - 0.5f;
-        return k.b().c(bVar, i10, i11, 0.5f, 0.5f, f10, 0.5f, f10, f11, 0.5f, f11, pVar.c(), pVar.d(), pVar4.c(), pVar4.d(), pVar3.c(), pVar3.d(), pVar2.c(), pVar2.d());
-    }
-
-    private static p h(p pVar, p pVar2, int i10) {
-        float f10 = i10 + 1;
-        return new p(pVar.c() + ((pVar2.c() - pVar.c()) / f10), pVar.d() + ((pVar2.d() - pVar.d()) / f10));
-    }
-
-    private p[] i(p[] pVarArr) {
-        p pVar = pVarArr[0];
-        p pVar2 = pVarArr[1];
-        p pVar3 = pVarArr[2];
-        p pVar4 = pVarArr[3];
-        p h10 = h(pVar, pVar2, (j(pVar3, pVar4) + 1) * 4);
-        p h11 = h(pVar3, pVar2, (j(pVar, pVar4) + 1) * 4);
-        int j10 = j(h10, pVar4);
-        int i10 = j10 + 1;
-        int j11 = j(h11, pVar4);
-        int i11 = j11 + 1;
-        if ((i10 & 1) == 1) {
-            i10 = j10 + 2;
-        }
-        if ((i11 & 1) == 1) {
-            i11 = j11 + 2;
-        }
-        float c10 = (((pVar.c() + pVar2.c()) + pVar3.c()) + pVar4.c()) / 4.0f;
-        float d10 = (((pVar.d() + pVar2.d()) + pVar3.d()) + pVar4.d()) / 4.0f;
-        p f10 = f(pVar, c10, d10);
-        p f11 = f(pVar2, c10, d10);
-        p f12 = f(pVar3, c10, d10);
-        p f13 = f(pVar4, c10, d10);
-        int i12 = i11 * 4;
-        int i13 = i10 * 4;
-        return new p[]{h(h(f10, f11, i12), f13, i13), h(h(f11, f10, i12), f12, i13), h(h(f12, f13, i12), f11, i13), h(h(f13, f12, i12), f10, i13)};
-    }
-
-    private int j(p pVar, p pVar2) {
-        boolean z10;
-        int i10;
-        int i11;
-        int i12;
-        int i13;
-        int i14;
-        int c10 = (int) pVar.c();
-        int d10 = (int) pVar.d();
-        int c11 = (int) pVar2.c();
-        int i15 = 1;
-        int min = Math.min(this.f47945a.i() - 1, (int) pVar2.d());
-        int i16 = 0;
-        if (Math.abs(min - d10) > Math.abs(c11 - c10)) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        if (z10) {
-            d10 = c10;
-            c10 = d10;
-            min = c11;
-            c11 = min;
-        }
-        int abs = Math.abs(c11 - c10);
-        int abs2 = Math.abs(min - d10);
-        int i17 = (-abs) / 2;
-        if (d10 < min) {
-            i10 = 1;
-        } else {
-            i10 = -1;
-        }
-        if (c10 >= c11) {
-            i15 = -1;
-        }
-        b bVar = this.f47945a;
-        if (z10) {
-            i11 = d10;
-        } else {
-            i11 = c10;
-        }
-        if (z10) {
-            i12 = c10;
-        } else {
-            i12 = d10;
-        }
-        boolean e10 = bVar.e(i11, i12);
-        while (c10 != c11) {
-            b bVar2 = this.f47945a;
-            if (z10) {
-                i13 = d10;
-            } else {
-                i13 = c10;
-            }
-            if (z10) {
-                i14 = c10;
-            } else {
-                i14 = d10;
-            }
-            boolean e11 = bVar2.e(i13, i14);
-            if (e11 != e10) {
-                i16++;
-                e10 = e11;
-            }
-            i17 += abs2;
-            if (i17 > 0) {
-                if (d10 == min) {
-                    return i16;
+    private mk.b a(mk.b bVar) {
+        int f10 = this.f46589c.f();
+        int e10 = this.f46589c.e();
+        if (bVar.i() == f10) {
+            int c10 = this.f46589c.c();
+            int b10 = this.f46589c.b();
+            int i10 = f10 / c10;
+            int i11 = e10 / b10;
+            mk.b bVar2 = new mk.b(i11 * b10, i10 * c10);
+            for (int i12 = 0; i12 < i10; i12++) {
+                int i13 = i12 * c10;
+                for (int i14 = 0; i14 < i11; i14++) {
+                    int i15 = i14 * b10;
+                    for (int i16 = 0; i16 < c10; i16++) {
+                        int i17 = ((c10 + 2) * i12) + 1 + i16;
+                        int i18 = i13 + i16;
+                        for (int i19 = 0; i19 < b10; i19++) {
+                            if (bVar.e(((b10 + 2) * i14) + 1 + i19, i17)) {
+                                bVar2.q(i15 + i19, i18);
+                            }
+                        }
+                    }
                 }
-                d10 += i10;
-                i17 -= abs;
             }
-            c10 += i15;
+            return bVar2;
         }
-        return i16;
+        throw new IllegalArgumentException("Dimension of bitMatrix must match the version size");
     }
 
-    public g b() {
-        int i10;
-        p[] d10 = d(c(this.f47946b.c()));
-        p a10 = a(d10);
-        d10[3] = a10;
-        if (a10 != null) {
-            p[] i11 = i(d10);
-            p pVar = i11[0];
-            p pVar2 = i11[1];
-            p pVar3 = i11[2];
-            p pVar4 = i11[3];
-            int j10 = j(pVar, pVar4);
-            int i12 = j10 + 1;
-            int j11 = j(pVar3, pVar4);
-            int i13 = j11 + 1;
-            if ((i12 & 1) == 1) {
-                i12 = j10 + 2;
-            }
-            if ((i13 & 1) == 1) {
-                i13 = j11 + 2;
-            }
-            if (i12 * 4 < i13 * 6 && i13 * 4 < i12 * 6) {
-                i10 = Math.max(i12, i13);
-                i13 = i10;
-            } else {
-                i10 = i12;
-            }
-            return new g(g(this.f47945a, pVar, pVar2, pVar3, pVar4, i10, i13), new p[]{pVar, pVar2, pVar3, pVar4});
+    private int d(int i10, int i11) {
+        int i12 = i10 - 1;
+        int i13 = (h(i12, 0, i10, i11) ? 1 : 0) << 1;
+        if (h(i12, 1, i10, i11)) {
+            i13 |= 1;
         }
-        throw hk.k.a();
+        int i14 = i13 << 1;
+        if (h(i12, 2, i10, i11)) {
+            i14 |= 1;
+        }
+        int i15 = i14 << 1;
+        if (h(0, i11 - 2, i10, i11)) {
+            i15 |= 1;
+        }
+        int i16 = i15 << 1;
+        int i17 = i11 - 1;
+        if (h(0, i17, i10, i11)) {
+            i16 |= 1;
+        }
+        int i18 = i16 << 1;
+        if (h(1, i17, i10, i11)) {
+            i18 |= 1;
+        }
+        int i19 = i18 << 1;
+        if (h(2, i17, i10, i11)) {
+            i19 |= 1;
+        }
+        int i20 = i19 << 1;
+        if (h(3, i17, i10, i11)) {
+            return i20 | 1;
+        }
+        return i20;
+    }
+
+    private int e(int i10, int i11) {
+        int i12 = (h(i10 + (-3), 0, i10, i11) ? 1 : 0) << 1;
+        if (h(i10 - 2, 0, i10, i11)) {
+            i12 |= 1;
+        }
+        int i13 = i12 << 1;
+        if (h(i10 - 1, 0, i10, i11)) {
+            i13 |= 1;
+        }
+        int i14 = i13 << 1;
+        if (h(0, i11 - 4, i10, i11)) {
+            i14 |= 1;
+        }
+        int i15 = i14 << 1;
+        if (h(0, i11 - 3, i10, i11)) {
+            i15 |= 1;
+        }
+        int i16 = i15 << 1;
+        if (h(0, i11 - 2, i10, i11)) {
+            i16 |= 1;
+        }
+        int i17 = i16 << 1;
+        int i18 = i11 - 1;
+        if (h(0, i18, i10, i11)) {
+            i17 |= 1;
+        }
+        int i19 = i17 << 1;
+        if (h(1, i18, i10, i11)) {
+            return i19 | 1;
+        }
+        return i19;
+    }
+
+    private int f(int i10, int i11) {
+        int i12 = i10 - 1;
+        int i13 = (h(i12, 0, i10, i11) ? 1 : 0) << 1;
+        int i14 = i11 - 1;
+        if (h(i12, i14, i10, i11)) {
+            i13 |= 1;
+        }
+        int i15 = i13 << 1;
+        int i16 = i11 - 3;
+        if (h(0, i16, i10, i11)) {
+            i15 |= 1;
+        }
+        int i17 = i15 << 1;
+        int i18 = i11 - 2;
+        if (h(0, i18, i10, i11)) {
+            i17 |= 1;
+        }
+        int i19 = i17 << 1;
+        if (h(0, i14, i10, i11)) {
+            i19 |= 1;
+        }
+        int i20 = i19 << 1;
+        if (h(1, i16, i10, i11)) {
+            i20 |= 1;
+        }
+        int i21 = i20 << 1;
+        if (h(1, i18, i10, i11)) {
+            i21 |= 1;
+        }
+        int i22 = i21 << 1;
+        if (h(1, i14, i10, i11)) {
+            return i22 | 1;
+        }
+        return i22;
+    }
+
+    private int g(int i10, int i11) {
+        int i12 = (h(i10 + (-3), 0, i10, i11) ? 1 : 0) << 1;
+        if (h(i10 - 2, 0, i10, i11)) {
+            i12 |= 1;
+        }
+        int i13 = i12 << 1;
+        if (h(i10 - 1, 0, i10, i11)) {
+            i13 |= 1;
+        }
+        int i14 = i13 << 1;
+        if (h(0, i11 - 2, i10, i11)) {
+            i14 |= 1;
+        }
+        int i15 = i14 << 1;
+        int i16 = i11 - 1;
+        if (h(0, i16, i10, i11)) {
+            i15 |= 1;
+        }
+        int i17 = i15 << 1;
+        if (h(1, i16, i10, i11)) {
+            i17 |= 1;
+        }
+        int i18 = i17 << 1;
+        if (h(2, i16, i10, i11)) {
+            i18 |= 1;
+        }
+        int i19 = i18 << 1;
+        if (h(3, i16, i10, i11)) {
+            return i19 | 1;
+        }
+        return i19;
+    }
+
+    private boolean h(int i10, int i11, int i12, int i13) {
+        if (i10 < 0) {
+            i10 += i12;
+            i11 += 4 - ((i12 + 4) & 7);
+        }
+        if (i11 < 0) {
+            i11 += i13;
+            i10 += 4 - ((i13 + 4) & 7);
+        }
+        if (i10 >= i12) {
+            i10 -= i12;
+        }
+        this.f46588b.q(i11, i10);
+        return this.f46587a.e(i11, i10);
+    }
+
+    private int i(int i10, int i11, int i12, int i13) {
+        int i14 = i10 - 2;
+        int i15 = i11 - 2;
+        int i16 = (h(i14, i15, i12, i13) ? 1 : 0) << 1;
+        int i17 = i11 - 1;
+        if (h(i14, i17, i12, i13)) {
+            i16 |= 1;
+        }
+        int i18 = i16 << 1;
+        int i19 = i10 - 1;
+        if (h(i19, i15, i12, i13)) {
+            i18 |= 1;
+        }
+        int i20 = i18 << 1;
+        if (h(i19, i17, i12, i13)) {
+            i20 |= 1;
+        }
+        int i21 = i20 << 1;
+        if (h(i19, i11, i12, i13)) {
+            i21 |= 1;
+        }
+        int i22 = i21 << 1;
+        if (h(i10, i15, i12, i13)) {
+            i22 |= 1;
+        }
+        int i23 = i22 << 1;
+        if (h(i10, i17, i12, i13)) {
+            i23 |= 1;
+        }
+        int i24 = i23 << 1;
+        if (h(i10, i11, i12, i13)) {
+            return i24 | 1;
+        }
+        return i24;
+    }
+
+    private static e j(mk.b bVar) {
+        return e.h(bVar.i(), bVar.l());
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public e b() {
+        return this.f46589c;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public byte[] c() {
+        byte[] bArr = new byte[this.f46589c.g()];
+        int i10 = this.f46587a.i();
+        int l10 = this.f46587a.l();
+        int i11 = 0;
+        boolean z10 = false;
+        int i12 = 0;
+        boolean z11 = false;
+        boolean z12 = false;
+        boolean z13 = false;
+        int i13 = 4;
+        while (true) {
+            if (i13 == i10 && i11 == 0 && !z10) {
+                bArr[i12] = (byte) d(i10, l10);
+                i13 -= 2;
+                i11 += 2;
+                i12++;
+                z10 = true;
+            } else {
+                int i14 = i10 - 2;
+                if (i13 == i14 && i11 == 0 && (l10 & 3) != 0 && !z11) {
+                    bArr[i12] = (byte) e(i10, l10);
+                    i13 -= 2;
+                    i11 += 2;
+                    i12++;
+                    z11 = true;
+                } else if (i13 == i10 + 4 && i11 == 2 && (l10 & 7) == 0 && !z12) {
+                    bArr[i12] = (byte) f(i10, l10);
+                    i13 -= 2;
+                    i11 += 2;
+                    i12++;
+                    z12 = true;
+                } else if (i13 == i14 && i11 == 0 && (l10 & 7) == 4 && !z13) {
+                    bArr[i12] = (byte) g(i10, l10);
+                    i13 -= 2;
+                    i11 += 2;
+                    i12++;
+                    z13 = true;
+                } else {
+                    while (true) {
+                        if (i13 < i10 && i11 >= 0 && !this.f46588b.e(i11, i13)) {
+                            bArr[i12] = (byte) i(i13, i11, i10, l10);
+                            i12++;
+                        }
+                        int i15 = i13 - 2;
+                        int i16 = i11 + 2;
+                        if (i15 < 0 || i16 >= l10) {
+                            break;
+                        }
+                        i13 = i15;
+                        i11 = i16;
+                    }
+                    int i17 = i13 - 1;
+                    int i18 = i11 + 5;
+                    while (true) {
+                        if (i17 >= 0 && i18 < l10 && !this.f46588b.e(i18, i17)) {
+                            bArr[i12] = (byte) i(i17, i18, i10, l10);
+                            i12++;
+                        }
+                        int i19 = i17 + 2;
+                        int i20 = i18 - 2;
+                        if (i19 >= i10 || i20 < 0) {
+                            break;
+                        }
+                        i17 = i19;
+                        i18 = i20;
+                    }
+                    i13 = i17 + 5;
+                    i11 = i18 - 1;
+                }
+            }
+            if (i13 >= i10 && i11 >= l10) {
+                break;
+            }
+        }
+        if (i12 == this.f46589c.g()) {
+            return bArr;
+        }
+        throw g.a();
     }
 }

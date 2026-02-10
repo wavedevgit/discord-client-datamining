@@ -11,35 +11,35 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c extends f {
 
     /* renamed from: d  reason: collision with root package name */
-    private final WeakReference f5064d;
+    private final WeakReference f4761d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Choreographer f5065e;
+    private final Choreographer f4762e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final g.b f5066f;
+    private final g.b f4763f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f5067g;
+    private final List f4764g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final FrameData f5068h;
+    private final FrameData f4765h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final a f5069i;
+    private final a f4766i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends o3.f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ JankStats f5070a;
+        final /* synthetic */ JankStats f4767a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ c f5071b;
+        final /* synthetic */ c f4768b;
 
         a(JankStats jankStats, c cVar) {
-            this.f5070a = jankStats;
-            this.f5071b = cVar;
+            this.f4767a = jankStats;
+            this.f4768b = cVar;
         }
     }
 
@@ -48,36 +48,36 @@ public abstract class c extends f {
         super(jankStats);
         Intrinsics.checkNotNullParameter(jankStats, "jankStats");
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f5064d = new WeakReference(view);
+        this.f4761d = new WeakReference(view);
         Choreographer choreographer = Choreographer.getInstance();
         Intrinsics.checkNotNullExpressionValue(choreographer, "getInstance()");
-        this.f5065e = choreographer;
-        this.f5066f = g.f5084f.b(view);
+        this.f4762e = choreographer;
+        this.f4763f = g.f4781f.b(view);
         ArrayList arrayList = new ArrayList();
-        this.f5067g = arrayList;
-        this.f5068h = new FrameData(0L, 0L, false, arrayList);
-        this.f5069i = new a(jankStats, this);
+        this.f4764g = arrayList;
+        this.f4765h = new FrameData(0L, 0L, false, arrayList);
+        this.f4766i = new a(jankStats, this);
     }
 
     public final WeakReference d() {
-        return this.f5064d;
+        return this.f4761d;
     }
 
     public final long e(View view) {
-        return b.f5062d.b(view);
+        return b.f4759d.b(view);
     }
 
     public final long f() {
-        Object obj = b.f5062d.a().get(this.f5065e);
+        Object obj = b.f4759d.a().get(this.f4762e);
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.Long");
         return ((Long) obj).longValue();
     }
 
     public final g.b g() {
-        return this.f5066f;
+        return this.f4763f;
     }
 
     public final List h() {
-        return this.f5067g;
+        return this.f4764g;
     }
 }

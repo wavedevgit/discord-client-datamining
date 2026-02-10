@@ -1,30 +1,29 @@
 package ep;
 
-import com.squareup.workflow1.ui.backstack.BackStackContainer;
-import java.util.Set;
-import kotlin.collections.x0;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class e {
+public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f22098a = new a(null);
+    private final b f21960a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final String f21961b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        public final Set a() {
-            return x0.i(b.f22092q, BackStackContainer.f18050i);
-        }
-
-        private a() {
-        }
+    public interface a {
+        e a(String str);
     }
 
-    public static final Set a() {
-        return f22098a.a();
+    public e(b logger, String subsystem) {
+        Intrinsics.checkNotNullParameter(logger, "logger");
+        Intrinsics.checkNotNullParameter(subsystem, "subsystem");
+        this.f21960a = logger;
+        this.f21961b = subsystem;
+    }
+
+    public final void a(String message) {
+        Intrinsics.checkNotNullParameter(message, "message");
+        this.f21960a.f(this.f21961b, ep.a.f21932i, message);
     }
 }

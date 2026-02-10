@@ -1,43 +1,122 @@
 package vk;
 
-import java.util.List;
+import uk.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class a {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static lk.a a(List list) {
-        int size = list.size() * 2;
-        int i10 = size - 1;
-        if (((b) list.get(list.size() - 1)).c() == null) {
-            i10 = size - 2;
-        }
-        lk.a aVar = new lk.a(i10 * 12);
-        int i11 = 0;
-        int b10 = ((b) list.get(0)).c().b();
-        for (int i12 = 11; i12 >= 0; i12--) {
-            if (((1 << i12) & b10) != 0) {
-                aVar.r(i11);
+public abstract class a extends k {
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int[] f52477b;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int[] f52480e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final int[] f52481f;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final int[] f52476a = new int[4];
+
+    /* renamed from: c  reason: collision with root package name */
+    private final float[] f52478c = new float[4];
+
+    /* renamed from: d  reason: collision with root package name */
+    private final float[] f52479d = new float[4];
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public a() {
+        int[] iArr = new int[8];
+        this.f52477b = iArr;
+        this.f52480e = new int[iArr.length / 2];
+        this.f52481f = new int[iArr.length / 2];
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public static void g(int[] iArr, float[] fArr) {
+        int i10 = 0;
+        float f10 = fArr[0];
+        for (int i11 = 1; i11 < iArr.length; i11++) {
+            float f11 = fArr[i11];
+            if (f11 < f10) {
+                i10 = i11;
+                f10 = f11;
             }
-            i11++;
         }
-        for (int i13 = 1; i13 < list.size(); i13++) {
-            b bVar = (b) list.get(i13);
-            int b11 = bVar.b().b();
-            for (int i14 = 11; i14 >= 0; i14--) {
-                if (((1 << i14) & b11) != 0) {
-                    aVar.r(i11);
+        iArr[i10] = iArr[i10] - 1;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public static void n(int[] iArr, float[] fArr) {
+        int i10 = 0;
+        float f10 = fArr[0];
+        for (int i11 = 1; i11 < iArr.length; i11++) {
+            float f11 = fArr[i11];
+            if (f11 > f10) {
+                i10 = i11;
+                f10 = f11;
+            }
+        }
+        iArr[i10] = iArr[i10] + 1;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public static boolean o(int[] iArr) {
+        int i10;
+        float f10 = (iArr[0] + iArr[1]) / ((iArr[2] + i10) + iArr[3]);
+        if (f10 >= 0.7916667f && f10 <= 0.89285713f) {
+            int i11 = Integer.MAX_VALUE;
+            int i12 = Integer.MIN_VALUE;
+            for (int i13 : iArr) {
+                if (i13 > i12) {
+                    i12 = i13;
                 }
-                i11++;
-            }
-            if (bVar.c() != null) {
-                int b12 = bVar.c().b();
-                for (int i15 = 11; i15 >= 0; i15--) {
-                    if (((1 << i15) & b12) != 0) {
-                        aVar.r(i11);
-                    }
-                    i11++;
+                if (i13 < i11) {
+                    i11 = i13;
                 }
             }
+            if (i12 < i11 * 10) {
+                return true;
+            }
         }
-        return aVar;
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public static int p(int[] iArr, int[][] iArr2) {
+        for (int i10 = 0; i10 < iArr2.length; i10++) {
+            if (k.d(iArr, iArr2[i10], 0.45f) < 0.2f) {
+                return i10;
+            }
+        }
+        throw ik.k.a();
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final int[] h() {
+        return this.f52477b;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final int[] i() {
+        return this.f52476a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final int[] j() {
+        return this.f52481f;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final float[] k() {
+        return this.f52479d;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final int[] l() {
+        return this.f52480e;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final float[] m() {
+        return this.f52478c;
     }
 }

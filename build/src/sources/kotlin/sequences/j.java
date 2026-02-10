@@ -11,9 +11,9 @@ public abstract class j {
 
     public final Object g(Sequence sequence, Continuation continuation) {
         Object d10 = d(sequence.iterator(), continuation);
-        if (d10 == wr.b.f()) {
+        if (d10 == xr.b.f()) {
             return d10;
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 }

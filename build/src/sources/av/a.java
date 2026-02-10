@@ -1,24 +1,24 @@
 package av;
 
-import av.c;
+import av.b;
 import java.util.List;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Lambda;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements su.b, c {
+public final class a implements tu.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f6301a = new a();
+    public static final a f6213a = new a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: av.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0089a extends Lambda implements Function2 {
+    public static final class C0121a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0089a f6302d = new C0089a();
+        public static final C0121a f6214d = new C0121a();
 
-        C0089a() {
+        C0121a() {
             super(2);
         }
 
@@ -41,43 +41,43 @@ public final class a implements su.b, c {
     private a() {
     }
 
-    @Override // av.c, bv.a
+    @Override // cv.a
     public Object a(Object obj) {
-        return c.a.f(this, obj);
+        return b.a.f(this, obj);
     }
 
-    @Override // tu.c
+    @Override // uu.c
     public boolean b(List list, Function2 function2) {
-        return c.a.b(this, list, function2);
+        return b.a.b(this, list, function2);
     }
 
-    @Override // tu.a
+    @Override // uu.a
     public Boolean c(Object obj) {
-        return c.a.g(this, obj);
+        return b.a.g(this, obj);
     }
 
-    @Override // tu.b
+    @Override // uu.b
     public List d(Comparable comparable, Comparable comparable2) {
-        return c.a.d(this, comparable, comparable2);
+        return b.a.d(this, comparable, comparable2);
     }
 
-    @Override // bv.c
+    @Override // cv.c
     public Object e(Object obj) {
-        return c.a.e(this, obj);
+        return b.a.e(this, obj);
     }
 
-    @Override // tu.b
+    @Override // uu.b
     public List g(Comparable comparable, Comparable comparable2) {
-        return c.a.c(this, comparable, comparable2);
+        return b.a.c(this, comparable, comparable2);
     }
 
     public boolean h(Object obj, Function2 function2) {
-        return c.a.a(this, obj, function2);
+        return b.a.a(this, obj, function2);
     }
 
-    @Override // su.b
+    @Override // tu.b
     /* renamed from: i */
     public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(!h(obj, C0089a.f6302d));
+        return Boolean.valueOf(h(obj, C0121a.f6214d));
     }
 }

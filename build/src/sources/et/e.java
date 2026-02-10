@@ -1,41 +1,31 @@
 package et;
 
-import ht.e;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import ys.e;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements KSerializer {
+public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f22117a = new e();
+    private final Integer f22086a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f22118b = ht.j.b("kotlinx.datetime.Instant", e.i.f26526a);
+    private final String f22087b;
 
-    private e() {
+    public /* synthetic */ e(Integer num, String str, DefaultConstructorMarker defaultConstructorMarker) {
+        this(num, str);
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public ys.e deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return e.a.g(ys.e.Companion, decoder.z(), null, 2, null);
+    public abstract g a(Object obj, CharSequence charSequence, int i10, int i11);
+
+    public Integer b() {
+        return this.f22086a;
     }
 
-    @Override // ft.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, ys.e value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.F(value.toString());
+    public final String c() {
+        return this.f22087b;
     }
 
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f22118b;
+    private e(Integer num, String str) {
+        this.f22086a = num;
+        this.f22087b = str;
     }
 }

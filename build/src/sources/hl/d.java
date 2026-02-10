@@ -1,5 +1,11 @@
 package hl;
+
+import com.facebook.react.bridge.Dynamic;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface d {
-    void a(c cVar);
+public class d extends k {
+    @Override // hl.k
+    /* renamed from: d */
+    public String c(Dynamic dynamic) {
+        return dynamic.asString();
+    }
 }

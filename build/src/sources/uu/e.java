@@ -1,33 +1,24 @@
 package uu;
 
-import java.util.ArrayList;
-import java.util.List;
 import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements su.b {
+public final class e implements tu.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f52141a = new e();
+    private final Function1 f52063a;
 
-    private e() {
+    public e(Function1 function1) {
+        this.f52063a = function1;
     }
 
-    private final List a(List list) {
-        List e10;
-        ArrayList arrayList = new ArrayList();
-        for (Object obj : list) {
-            if (obj instanceof List) {
-                e10 = (List) obj;
-            } else {
-                e10 = CollectionsKt.e(obj);
-            }
-            CollectionsKt.B(arrayList, e10);
-        }
-        return arrayList;
-    }
-
-    @Override // su.b
+    @Override // tu.b
     public Object f(Object obj, Object obj2) {
-        return a(cw.a.c(obj));
+        Object firstOrNull = CollectionsKt.firstOrNull(dw.a.c(obj));
+        Function1 function1 = this.f52063a;
+        if (function1 != null) {
+            function1.invoke(firstOrNull);
+        }
+        return firstOrNull;
     }
 }

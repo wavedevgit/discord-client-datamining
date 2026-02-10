@@ -7,13 +7,13 @@ import kotlin.enums.EnumEntries;
 public final class ClassKind {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ ClassKind[] f32347e;
+    private static final /* synthetic */ ClassKind[] f32056e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32348i;
+    private static final /* synthetic */ EnumEntries f32057i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f32349d;
+    private final String f32058d;
     public static final ClassKind CLASS = new ClassKind("CLASS", 0, "class");
     public static final ClassKind INTERFACE = new ClassKind("INTERFACE", 1, "interface");
     public static final ClassKind ENUM_CLASS = new ClassKind("ENUM_CLASS", 2, "enum class");
@@ -23,12 +23,12 @@ public final class ClassKind {
 
     static {
         ClassKind[] a10 = a();
-        f32347e = a10;
-        f32348i = xr.a.a(a10);
+        f32056e = a10;
+        f32057i = yr.a.a(a10);
     }
 
     private ClassKind(String str, int i10, String str2) {
-        this.f32349d = str2;
+        this.f32058d = str2;
     }
 
     private static final /* synthetic */ ClassKind[] a() {
@@ -40,7 +40,7 @@ public final class ClassKind {
     }
 
     public static ClassKind[] values() {
-        return (ClassKind[]) f32347e.clone();
+        return (ClassKind[]) f32056e.clone();
     }
 
     public final boolean isSingleton() {

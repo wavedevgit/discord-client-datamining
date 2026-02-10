@@ -93,7 +93,7 @@ public final class RemoteImage implements UiComponentConfig {
         static {
             ContentType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = xr.a.a($values);
+            $ENTRIES = yr.a.a($values);
             Companion = new Companion(null);
         }
 

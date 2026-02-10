@@ -1,15 +1,15 @@
 package com.brentvatne.exoplayer;
 
 import android.content.Context;
-import le.r;
+import me.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class c implements f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r f8211a;
+    private final r f8351a;
 
     public c(Context context) {
-        this.f8211a = new r.b(context).a();
+        this.f8351a = new r.b(context).a();
     }
 
     @Override // com.brentvatne.exoplayer.f
@@ -19,6 +19,6 @@ public class c implements f {
 
     @Override // com.brentvatne.exoplayer.f
     public r b() {
-        return this.f8211a;
+        return this.f8351a;
     }
 }

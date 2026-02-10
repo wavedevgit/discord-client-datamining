@@ -1,74 +1,106 @@
 package le;
-
-import com.google.android.exoplayer2.upstream.DataSource;
-import java.io.InputStream;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class n extends InputStream {
+public abstract class n {
+    public static int A = 14;
+    public static int B = 15;
+    public static int C = 16;
+    public static int D = 17;
+    public static int E = 18;
+    public static int F = 19;
+    public static int G = 20;
+    public static int I = 2;
+    public static int J = 6;
+    public static int K = 7;
+    public static int L = 8;
+    public static int M = 9;
+    public static int N = 12;
+    public static int O = 14;
+    public static int P = 20;
+    public static int Q = 22;
+    public static int R = 23;
+    public static int S = 24;
+    public static int T = 28;
+    public static int U = 29;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final DataSource f36172d;
+    /* renamed from: b  reason: collision with root package name */
+    public static int f35889b = 0;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.a f36173e;
+    /* renamed from: f  reason: collision with root package name */
+    public static int f35893f = 0;
 
-    /* renamed from: q  reason: collision with root package name */
-    private long f36177q;
+    /* renamed from: g  reason: collision with root package name */
+    public static int f35894g = 1;
 
-    /* renamed from: o  reason: collision with root package name */
-    private boolean f36175o = false;
-
-    /* renamed from: p  reason: collision with root package name */
-    private boolean f36176p = false;
+    /* renamed from: h  reason: collision with root package name */
+    public static int f35895h = 2;
 
     /* renamed from: i  reason: collision with root package name */
-    private final byte[] f36174i = new byte[1];
+    public static int f35896i = 3;
 
-    public n(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar) {
-        this.f36172d = dataSource;
-        this.f36173e = aVar;
-    }
+    /* renamed from: j  reason: collision with root package name */
+    public static int f35897j = 4;
 
-    private void a() {
-        if (!this.f36175o) {
-            this.f36172d.b(this.f36173e);
-            this.f36175o = true;
-        }
-    }
+    /* renamed from: k  reason: collision with root package name */
+    public static int f35898k = 5;
 
-    @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        if (!this.f36176p) {
-            this.f36172d.close();
-            this.f36176p = true;
-        }
-    }
+    /* renamed from: l  reason: collision with root package name */
+    public static int f35899l = 6;
 
-    public void g() {
-        a();
-    }
+    /* renamed from: m  reason: collision with root package name */
+    public static int f35900m = 7;
 
-    @Override // java.io.InputStream
-    public int read() {
-        if (read(this.f36174i) == -1) {
-            return -1;
-        }
-        return this.f36174i[0] & 255;
-    }
+    /* renamed from: n  reason: collision with root package name */
+    public static int f35901n = 8;
 
-    @Override // java.io.InputStream
-    public int read(byte[] bArr) {
-        return read(bArr, 0, bArr.length);
-    }
+    /* renamed from: o  reason: collision with root package name */
+    public static int f35902o = 9;
 
-    @Override // java.io.InputStream
-    public int read(byte[] bArr, int i10, int i11) {
-        ne.a.g(!this.f36176p);
-        a();
-        int read = this.f36172d.read(bArr, i10, i11);
-        if (read == -1) {
-            return -1;
-        }
-        this.f36177q += read;
-        return read;
-    }
+    /* renamed from: p  reason: collision with root package name */
+    public static int f35903p = 10;
+
+    /* renamed from: q  reason: collision with root package name */
+    public static int f35904q = 11;
+
+    /* renamed from: r  reason: collision with root package name */
+    public static int f35905r = 12;
+
+    /* renamed from: s  reason: collision with root package name */
+    public static int f35906s = 13;
+
+    /* renamed from: y  reason: collision with root package name */
+    public static int f35912y = 5;
+
+    /* renamed from: z  reason: collision with root package name */
+    public static int f35913z = 8;
+
+    /* renamed from: a  reason: collision with root package name */
+    public static int[] f35888a = {2130969710};
+
+    /* renamed from: c  reason: collision with root package name */
+    public static int[] f35890c = {2130969693, 2130969787};
+
+    /* renamed from: d  reason: collision with root package name */
+    public static int[] f35891d = {16843173, 16843551, 16844359, 2130968633, 2130969288};
+
+    /* renamed from: e  reason: collision with root package name */
+    public static int[] f35892e = {2130968621, 2130968622, 2130968706, 2130968707, 2130968747, 2130969668, 2130969669, 2130969756, 2130969757, 2130969758, 2130969759, 2130969760, 2130970051, 2130970095};
+
+    /* renamed from: t  reason: collision with root package name */
+    public static int[] f35907t = {2130969146, 2130969147, 2130969148, 2130969149, 2130969150, 2130969151, 2130969152, 2130969153};
+
+    /* renamed from: u  reason: collision with root package name */
+    public static int[] f35908u = {16844082, 16844083, 16844095, 16844143, 16844144, 2130969144, 2130969154, 2130969155, 2130969156, 2130970077};
+
+    /* renamed from: v  reason: collision with root package name */
+    public static int[] f35909v = {16843165, 16843166, 16843169, 16843170, 16843171, 16843172, 16843265, 16843275, 16844048, 16844049, 16844050, 16844051};
+
+    /* renamed from: w  reason: collision with root package name */
+    public static int[] f35910w = {16843173, 16844052};
+
+    /* renamed from: x  reason: collision with root package name */
+    public static int[] f35911x = {2130968621, 2130968622, 2130968706, 2130968707, 2130968747, 2130968944, 2130969668, 2130969669, 2130969709, 2130969756, 2130969757, 2130969758, 2130969759, 2130969760, 2130969802, 2130969803, 2130969804, 2130969805, 2130969806, 2130969808, 2130970018, 2130970051, 2130970095};
+    public static int[] H = {2130968621, 2130968622, 2130968669, 2130968707, 2130968747, 2130968944, 2130968989, 2130969201, 2130969202, 2130969284, 2130969668, 2130969669, 2130969670, 2130969709, 2130969710, 2130969756, 2130969757, 2130969758, 2130969759, 2130969760, 2130969801, 2130969806, 2130969808, 2130969811, 2130969885, 2130970018, 2130970051, 2130970095, 2130970101, 2130970102};
+    public static int[] V = {16842948, 16842987, 16842993, 2130969091, 2130969092, 2130969093, 2130969094, 2130969095, 2130969298, 2130969713, 2130969827, 2130969845};
+    public static int[] W = {2130968621, 2130968622, 2130968644, 2130968706, 2130968707, 2130968747, 2130968944, 2130969668, 2130969669, 2130969709, 2130969756, 2130969757, 2130969758, 2130969759, 2130969760, 2130969802, 2130969803, 2130969804, 2130969805, 2130969806, 2130969807, 2130969808, 2130969809, 2130970018, 2130970051, 2130970095};
+    public static int[] X = {2130968621, 2130968622, 2130968644, 2130968650, 2130968669, 2130968706, 2130968707, 2130968747, 2130968944, 2130968989, 2130969201, 2130969202, 2130969284, 2130969668, 2130969669, 2130969670, 2130969709, 2130969710, 2130969756, 2130969757, 2130969758, 2130969759, 2130969760, 2130969801, 2130969806, 2130969807, 2130969808, 2130969809, 2130969811, 2130969885, 2130970018, 2130970051, 2130970095, 2130970101, 2130970102};
 }

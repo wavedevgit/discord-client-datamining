@@ -48,8 +48,8 @@ public final class AttributeStyles_InputCheckboxFontWeightStyleJsonAdapter exten
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 fontWeightContainer = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
             } else if (J == 1) {

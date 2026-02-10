@@ -38,7 +38,7 @@ final class RiveFileKt$rememberRiveFile$1 extends k implements Function2<u, Cont
         if (r7 == r0) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0052, code lost:
-        if (r1.f2(r3, r6) == r0) goto L16;
+        if (r1.e2(r3, r6) == r0) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0054, code lost:
         return r0;
@@ -51,7 +51,7 @@ final class RiveFileKt$rememberRiveFile$1 extends k implements Function2<u, Cont
     public final java.lang.Object invokeSuspend(@org.jetbrains.annotations.NotNull java.lang.Object r7) {
         /*
             r6 = this;
-            java.lang.Object r0 = wr.b.f()
+            java.lang.Object r0 = xr.b.f()
             int r1 = r6.label
             r2 = 2
             r3 = 1
@@ -93,16 +93,16 @@ final class RiveFileKt$rememberRiveFile$1 extends k implements Function2<u, Cont
             r7 = 0
             r6.L$0 = r7
             r6.label = r2
-            java.lang.Object r7 = r1.f2(r3, r6)
+            java.lang.Object r7 = r1.e2(r3, r6)
             if (r7 != r0) goto L55
         L54:
             return r0
         L55:
-            qr.h r7 = new qr.h
+            rr.h r7 = new rr.h
             r7.<init>()
             throw r7
         L5b:
-            kotlin.Unit r7 = kotlin.Unit.f32056a
+            kotlin.Unit r7 = kotlin.Unit.f31765a
             return r7
         */
         throw new UnsupportedOperationException("Method not decompiled: app.rive.RiveFileKt$rememberRiveFile$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -110,6 +110,6 @@ final class RiveFileKt$rememberRiveFile$1 extends k implements Function2<u, Cont
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull u uVar, Continuation<? super Unit> continuation) {
-        return ((RiveFileKt$rememberRiveFile$1) create(uVar, continuation)).invokeSuspend(Unit.f32056a);
+        return ((RiveFileKt$rememberRiveFile$1) create(uVar, continuation)).invokeSuspend(Unit.f31765a);
     }
 }

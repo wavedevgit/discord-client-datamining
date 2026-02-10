@@ -2,36 +2,42 @@ package ss;
 
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h extends g {
-    public /* synthetic */ h(Flow flow, CoroutineContext coroutineContext, int i10, qs.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(flow, (i11 & 2) != 0 ? kotlin.coroutines.e.f32130d : coroutineContext, (i11 & 4) != 0 ? -3 : i10, (i11 & 8) != 0 ? qs.a.f48114d : aVar);
-    }
+public abstract /* synthetic */ class h {
 
-    @Override // ss.e
-    protected e h(CoroutineContext coroutineContext, int i10, qs.a aVar) {
-        return new h(this.f50090o, coroutineContext, i10, aVar);
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a implements Flow {
 
-    @Override // ss.e
-    public Flow j() {
-        return this.f50090o;
-    }
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ Object f50148d;
 
-    @Override // ss.g
-    protected Object q(FlowCollector flowCollector, Continuation continuation) {
-        Object collect = this.f50090o.collect(flowCollector, continuation);
-        if (collect == wr.b.f()) {
-            return collect;
+        public a(Object obj) {
+            this.f50148d = obj;
         }
-        return Unit.f32056a;
+
+        @Override // kotlinx.coroutines.flow.Flow
+        public Object collect(FlowCollector flowCollector, Continuation continuation) {
+            Object emit = flowCollector.emit(this.f50148d, continuation);
+            if (emit == xr.b.f()) {
+                return emit;
+            }
+            return Unit.f31765a;
+        }
     }
 
-    public h(Flow flow, CoroutineContext coroutineContext, int i10, qs.a aVar) {
-        super(flow, coroutineContext, i10, aVar);
+    public static final Flow a(Function2 function2) {
+        return new b(function2, null, 0, null, 14, null);
+    }
+
+    public static final Flow b(Function2 function2) {
+        return new z(function2);
+    }
+
+    public static final Flow c(Object obj) {
+        return new a(obj);
     }
 }

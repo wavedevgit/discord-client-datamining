@@ -1,33 +1,108 @@
 package al;
-
-import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class b {
 
+    /* renamed from: f  reason: collision with root package name */
+    public static final b f802f = new b(929, 3);
+
     /* renamed from: a  reason: collision with root package name */
-    private final lk.b f1108a;
+    private final int[] f803a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f1109b;
+    private final int[] f804b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f1110c;
+    private final c f805c;
 
-    public b(lk.b bVar, List list, int i10) {
-        this.f1108a = bVar;
-        this.f1109b = list;
-        this.f1110c = i10;
+    /* renamed from: d  reason: collision with root package name */
+    private final c f806d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f807e;
+
+    private b(int i10, int i11) {
+        this.f807e = i10;
+        this.f803a = new int[i10];
+        this.f804b = new int[i10];
+        int i12 = 1;
+        for (int i13 = 0; i13 < i10; i13++) {
+            this.f803a[i13] = i12;
+            i12 = (i12 * i11) % i10;
+        }
+        for (int i14 = 0; i14 < i10 - 1; i14++) {
+            this.f804b[this.f803a[i14]] = i14;
+        }
+        this.f805c = new c(this, new int[]{0});
+        this.f806d = new c(this, new int[]{1});
     }
 
-    public lk.b a() {
-        return this.f1108a;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int a(int i10, int i11) {
+        return (i10 + i11) % this.f807e;
     }
 
-    public List b() {
-        return this.f1109b;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c b(int i10, int i11) {
+        if (i10 >= 0) {
+            if (i11 == 0) {
+                return this.f805c;
+            }
+            int[] iArr = new int[i10 + 1];
+            iArr[0] = i11;
+            return new c(this, iArr);
+        }
+        throw new IllegalArgumentException();
     }
 
-    public int c() {
-        return this.f1110c;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int c(int i10) {
+        return this.f803a[i10];
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c d() {
+        return this.f806d;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int e() {
+        return this.f807e;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c f() {
+        return this.f805c;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int g(int i10) {
+        if (i10 != 0) {
+            return this.f803a[(this.f807e - this.f804b[i10]) - 1];
+        }
+        throw new ArithmeticException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int h(int i10) {
+        if (i10 != 0) {
+            return this.f804b[i10];
+        }
+        throw new IllegalArgumentException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int i(int i10, int i11) {
+        if (i10 != 0 && i11 != 0) {
+            int[] iArr = this.f803a;
+            int[] iArr2 = this.f804b;
+            return iArr[(iArr2[i10] + iArr2[i11]) % (this.f807e - 1)];
+        }
+        return 0;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int j(int i10, int i11) {
+        int i12 = this.f807e;
+        return ((i10 + i12) - i11) % i12;
     }
 }

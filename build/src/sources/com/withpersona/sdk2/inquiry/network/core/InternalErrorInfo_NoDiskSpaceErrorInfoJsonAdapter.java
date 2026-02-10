@@ -38,12 +38,12 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw an.c.x("message", "message", mVar);
+                    throw bn.c.x("message", "message", mVar);
                 }
                 i10 = -2;
             } else {
@@ -56,7 +56,7 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
         }
         Constructor<InternalErrorInfo.NoDiskSpaceErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, an.c.f1164c);
+            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, bn.c.f7152c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, Integer.valueOf(i10), null);

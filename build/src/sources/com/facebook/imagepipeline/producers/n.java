@@ -6,19 +6,19 @@ import com.facebook.imagepipeline.request.ImageRequest;
 import java.io.ByteArrayInputStream;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class n extends j0 {
-    public n(r8.i iVar) {
-        super(m8.a.a(), iVar);
+    public n(s8.i iVar) {
+        super(n8.a.a(), iVar);
     }
 
     static byte[] g(String str) {
-        o8.j.b(Boolean.valueOf(str.substring(0, 5).equals("data:")));
+        p8.j.b(Boolean.valueOf(str.substring(0, 5).equals("data:")));
         int indexOf = str.indexOf(44);
         String substring = str.substring(indexOf + 1, str.length());
         if (h(str.substring(0, indexOf))) {
             return Base64.decode(substring, 0);
         }
         String decode = Uri.decode(substring);
-        o8.j.g(decode);
+        p8.j.g(decode);
         return decode.getBytes();
     }
 
@@ -31,7 +31,7 @@ public class n extends j0 {
     }
 
     @Override // com.facebook.imagepipeline.producers.j0
-    protected sa.k d(ImageRequest imageRequest) {
+    protected ta.k d(ImageRequest imageRequest) {
         byte[] g10 = g(imageRequest.getSourceUri().toString());
         return c(new ByteArrayInputStream(g10), g10.length);
     }

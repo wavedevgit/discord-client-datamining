@@ -152,7 +152,7 @@ public final class ViewManagerPropertyUpdater {
         try {
             return (T) Class.forName(name + "$$PropsSetter").newInstance();
         } catch (ClassNotFoundException unused) {
-            p8.a.J(TAG, "Could not find generated setter for " + cls);
+            q8.a.J(TAG, "Could not find generated setter for " + cls);
             return null;
         } catch (IllegalAccessException e10) {
             throw new RuntimeException("Unable to instantiate methods getter for " + name, e10);
@@ -201,7 +201,7 @@ public final class ViewManagerPropertyUpdater {
         return hashMap;
     }
 
-    @qr.c
+    @rr.c
     public static final <T extends ViewManagerDelegate<V>, V extends View> void updateProps(@NotNull T delegate, @NotNull V view, @NotNull ReactStylesDiffMap props) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(view, "view");
@@ -214,7 +214,7 @@ public final class ViewManagerPropertyUpdater {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @qr.c
+    @rr.c
     public static final <V extends View> void updateProps(@NotNull ViewManager<V, ?> manager, @NotNull V view, @NotNull ReactStylesDiffMap props) {
         Intrinsics.checkNotNullParameter(manager, "manager");
         Intrinsics.checkNotNullParameter(view, "view");
@@ -228,7 +228,7 @@ public final class ViewManagerPropertyUpdater {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @qr.c
+    @rr.c
     public static final <T extends ReactShadowNode<T>> void updateProps(@NotNull T node, @NotNull ReactStylesDiffMap props) {
         Intrinsics.checkNotNullParameter(node, "node");
         Intrinsics.checkNotNullParameter(props, "props");

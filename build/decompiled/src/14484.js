@@ -1,158 +1,25 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = global;
-    var2 = var0.IntlMessageFormat;
-    var1 = var2.__addLocaleData;
-    var0 = {};
-    var3 = 'pl';
-    var0.locale = var3;
-    var3 = function arg0, arg1() {
-        _fun112778: for (var _fun112778_ip = 0;;) switch (_fun112778_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = global;
-                var2 = var0.String;
-                var0 = undefined;
-                var3 = var2.bind(var0)(var1);
-                var2 = var3.split;
-                var0 = '.';
-                var0 = var2.bind(var3)(var0);
-                var8 = 0;
-                var9 = var0[var8];
-                var3 = 1;
-                var0 = var0[var3];
-                var4 = !var0;
-                var2 = var9.slice;
-                var0 = -1;
-                var7 = var2.bind(var9)(var0);
-                var2 = var9.slice;
-                var0 = -2;
-                var6 = var2.bind(var9)(var0);
-                var5 = 'other';
-                var2 = arg1;
-                var0 = var5;
-                if (var2) {
-                    _fun112778_ip = 231;
-                    continue _fun112778
-                }
-            case 96:
-                if (!(var3 == var1)) {
-                    _fun112778_ip = 107;
-                    continue _fun112778
-                }
-            case 100:
-                var1 = 'one';
-                if (var4) {
-                    _fun112778_ip = 228;
-                    continue _fun112778
-                }
-            case 107:
-                if (!var4) {
-                    _fun112778_ip = 154;
-                    continue _fun112778
-                }
-            case 110:
-                var2 = 2;
-                if (!(var7 >= var2)) {
-                    _fun112778_ip = 154;
-                    continue _fun112778
-                }
-            case 117:
-                var2 = 4;
-                if (!(var7 <= var2)) {
-                    _fun112778_ip = 154;
-                    continue _fun112778
-                }
-            case 124:
-                var2 = 12;
-                var10 = var6 < var2;
-                var11 = 'few';
-                var2 = var11;
-                if (var10) {
-                    _fun112778_ip = 225;
-                    continue _fun112778
-                }
-            case 141:
-                var10 = 14;
-                var10 = var6 > var10;
-                var2 = var11;
-                if (var10) {
-                    _fun112778_ip = 225;
-                    continue _fun112778
-                }
-            case 154:
-                if (!var4) {
-                    _fun112778_ip = 169;
-                    continue _fun112778
-                }
-            case 157:
-                if (!(var3 != var9)) {
-                    _fun112778_ip = 169;
-                    continue _fun112778
-                }
-            case 161:
-                if (!(var8 != var7)) {
-                    _fun112778_ip = 218;
-                    continue _fun112778
-                }
-            case 165:
-                if (!(var3 != var7)) {
-                    _fun112778_ip = 218;
-                    continue _fun112778
-                }
-            case 169:
-                if (!var4) {
-                    _fun112778_ip = 186;
-                    continue _fun112778
-                }
-            case 172:
-                var3 = 5;
-                if (!(var7 >= var3)) {
-                    _fun112778_ip = 186;
-                    continue _fun112778
-                }
-            case 179:
-                var3 = 9;
-                if (!(!(var7 <= var3))) {
-                    _fun112778_ip = 218;
-                    continue _fun112778
-                }
-            case 186:
-                var3 = var5;
-                if (!var4) {
-                    _fun112778_ip = 222;
-                    continue _fun112778
-                }
-            case 192:
-                var4 = 12;
-                var4 = var6 >= var4;
-                var3 = var5;
-                if (!var4) {
-                    _fun112778_ip = 222;
-                    continue _fun112778
-                }
-            case 205:
-                var4 = 14;
-                var4 = var6 <= var4;
-                var3 = var5;
-                if (!var4) {
-                    _fun112778_ip = 222;
-                    continue _fun112778
-                }
-            case 218:
-                var3 = 'many';
-            case 222:
-                var2 = var3;
-            case 225:
-                var1 = var2;
-            case 228:
-                var0 = var1;
-            case 231:
-                return var0;
-        }
-    };
-    var0.pluralRuleFunction = var3;
-    var0 = var1.bind(var2)(var0);
+    var2 = exports;
+    var1 = global;
+    var4 = var1.RegExp;
     var0 = undefined;
+    var3 = '^(?:(?:[a-z]{2,3}(?:-[a-z]{3}(?:-[a-z]{3}){0,2})?|[a-z]{4}|[a-z]{5,8})(?:-[a-z]{4})?(?:-(?:[a-z]{2}|\\d{3}))?(?:-(?:[a-z0-9]{5,8}|\\d[a-z0-9]{3}))*(?:-[0-9a-wy-z](?:-[a-z0-9]{2,8})+)*(?:-x(?:-[a-z0-9]{1,8})+)?|x(?:-[a-z0-9]{1,8})+|(?:(?:en-GB-oed|i-(?:ami|bnn|default|enochian|hak|klingon|lux|mingo|navajo|pwn|tao|tay|tsu)|sgn-(?:BE-FR|BE-NL|CH-DE))|(?:art-lojban|cel-gaulish|no-bok|no-nyn|zh-(?:guoyu|hakka|min|min-nan|xiang))))$';
+    var7 = 'i';
+    var5 = var4.bind(var0)(var3, var7);
+    var4 = var1.RegExp;
+    var3 = '^(?!x).*?-((?:[a-z0-9]{5,8}|\\d[a-z0-9]{3}))-(?:\\w{4,8}-(?!x-))*\\1\\b';
+    var4 = var4.bind(var0)(var3, var7);
+    var6 = var1.RegExp;
+    var3 = '^(?!x).*?-([0-9a-wy-z])-(?:\\w+-(?!x-))*\\1\\b';
+    var3 = var6.bind(var0)(var3, var7);
+    var7 = var1.RegExp;
+    var6 = '-[0-9a-wy-z](?:-[a-z0-9]{2,8})+';
+    var1 = 'ig';
+    var1 = var7.bind(var0)(var6, var1);
+    var2.expBCP47Syntax = var5;
+    var2.expVariantDupes = var4;
+    var2.expSingletonDupes = var3;
+    var2.expExtSequences = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

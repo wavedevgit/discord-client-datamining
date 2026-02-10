@@ -6,13 +6,13 @@ import com.google.android.exoplayer2.upstream.i;
 import com.google.android.exoplayer2.upstream.j;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import lc.l0;
-import le.m;
+import mc.l0;
+import me.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class g implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f13405a;
+    private final int f13545a;
 
     public g() {
         this(-1);
@@ -20,16 +20,16 @@ public class g implements i {
 
     @Override // com.google.android.exoplayer2.upstream.i
     public long a(i.c cVar) {
-        IOException iOException = cVar.f13424c;
+        IOException iOException = cVar.f13564c;
         if (!(iOException instanceof l0) && !(iOException instanceof FileNotFoundException) && !(iOException instanceof h.b) && !(iOException instanceof j.h) && !m.a(iOException)) {
-            return Math.min((cVar.f13425d - 1) * 1000, 5000);
+            return Math.min((cVar.f13565d - 1) * 1000, 5000);
         }
         return -9223372036854775807L;
     }
 
     @Override // com.google.android.exoplayer2.upstream.i
     public int b(int i10) {
-        int i11 = this.f13405a;
+        int i11 = this.f13545a;
         if (i11 == -1) {
             if (i10 == 7) {
                 return 6;
@@ -41,7 +41,7 @@ public class g implements i {
 
     @Override // com.google.android.exoplayer2.upstream.i
     public i.b c(i.a aVar, i.c cVar) {
-        if (!e(cVar.f13424c)) {
+        if (!e(cVar.f13564c)) {
             return null;
         }
         if (aVar.a(1)) {
@@ -57,7 +57,7 @@ public class g implements i {
         if (!(iOException instanceof h.f)) {
             return false;
         }
-        int i10 = ((h.f) iOException).f13410o;
+        int i10 = ((h.f) iOException).f13550o;
         if (i10 != 403 && i10 != 404 && i10 != 410 && i10 != 416 && i10 != 500 && i10 != 503) {
             return false;
         }
@@ -65,6 +65,6 @@ public class g implements i {
     }
 
     public g(int i10) {
-        this.f13405a = i10;
+        this.f13545a = i10;
     }
 }

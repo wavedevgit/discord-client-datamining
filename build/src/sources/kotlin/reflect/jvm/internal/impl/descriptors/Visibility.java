@@ -6,16 +6,16 @@ import org.jetbrains.annotations.NotNull;
 public abstract class Visibility {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f32384a;
+    private final String f32093a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f32385b;
+    private final boolean f32094b;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public Visibility(String name, boolean z10) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f32384a = name;
-        this.f32385b = z10;
+        this.f32093a = name;
+        this.f32094b = z10;
     }
 
     public Integer compareTo(@NotNull Visibility visibility) {
@@ -25,11 +25,11 @@ public abstract class Visibility {
 
     @NotNull
     public String getInternalDisplayName() {
-        return this.f32384a;
+        return this.f32093a;
     }
 
     public final boolean isPublicAPI() {
-        return this.f32385b;
+        return this.f32094b;
     }
 
     @NotNull

@@ -3,27 +3,27 @@ package d1;
 public final class y {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f20244a;
+    private final float f20477a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f20245b;
+    private final float f20478b;
 
     public y(float f10, float f11) {
-        this.f20244a = f10;
-        this.f20245b = f11;
+        this.f20477a = f10;
+        this.f20478b = f11;
     }
 
     public final float a() {
-        return this.f20244a;
+        return this.f20477a;
     }
 
     public final float b() {
-        return this.f20245b;
+        return this.f20478b;
     }
 
     public final float[] c() {
-        float f10 = this.f20244a;
-        float f11 = this.f20245b;
+        float f10 = this.f20477a;
+        float f11 = this.f20478b;
         return new float[]{f10 / f11, 1.0f, ((1.0f - f10) - f11) / f11};
     }
 
@@ -35,17 +35,17 @@ public final class y {
             return false;
         }
         y yVar = (y) obj;
-        if (Float.compare(this.f20244a, yVar.f20244a) == 0 && Float.compare(this.f20245b, yVar.f20245b) == 0) {
+        if (Float.compare(this.f20477a, yVar.f20477a) == 0 && Float.compare(this.f20478b, yVar.f20478b) == 0) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (Float.hashCode(this.f20244a) * 31) + Float.hashCode(this.f20245b);
+        return (Float.hashCode(this.f20477a) * 31) + Float.hashCode(this.f20478b);
     }
 
     public String toString() {
-        return "WhitePoint(x=" + this.f20244a + ", y=" + this.f20245b + ')';
+        return "WhitePoint(x=" + this.f20477a + ", y=" + this.f20478b + ')';
     }
 }

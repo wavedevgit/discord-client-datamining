@@ -63,7 +63,7 @@ public final class BundleDownloader {
                     bundleInfo.setFilesChangedCount$ReactAndroid_release(jSONObject.getInt("filesChangedCount"));
                     return bundleInfo;
                 } catch (JSONException e10) {
-                    p8.a.n(BundleDownloader.TAG, "Invalid bundle info: ", e10);
+                    q8.a.n(BundleDownloader.TAG, "Invalid bundle info: ", e10);
                     return null;
                 }
             }
@@ -108,7 +108,7 @@ public final class BundleDownloader {
                 jSONObject.put("filesChangedCount", this.filesChangedCount);
                 return jSONObject.toString();
             } catch (JSONException e10) {
-                p8.a.n(BundleDownloader.TAG, "Can't serialize bundle info: ", e10);
+                q8.a.n(BundleDownloader.TAG, "Can't serialize bundle info: ", e10);
                 return null;
             }
         }
@@ -131,17 +131,17 @@ public final class BundleDownloader {
                     bundleInfo.setFilesChangedCount$ReactAndroid_release(Integer.parseInt(c10));
                 } catch (NumberFormatException e10) {
                     bundleInfo.setFilesChangedCount$ReactAndroid_release(BundleDownloader.FILES_CHANGED_COUNT_NOT_BUILT_BY_BUNDLER);
-                    p8.a.n(BundleDownloader.TAG, "Can't populate bundle info: ", e10);
+                    q8.a.n(BundleDownloader.TAG, "Can't populate bundle info: ", e10);
                 }
             }
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public final boolean storePlainJSInFile(BufferedSource bufferedSource, File file) {
-            Sink c10 = qu.b.a().c(file);
+            Sink c10 = ru.b.a().c(file);
             try {
-                bufferedSource.e2(c10);
-                bs.c.a(c10, null);
+                bufferedSource.d2(c10);
+                cs.c.a(c10, null);
                 return true;
             } finally {
             }
@@ -166,13 +166,13 @@ public final class BundleDownloader {
     /* JADX INFO: Access modifiers changed from: private */
     public final void processBundleResult(String str, int i10, Headers headers, BufferedSource bufferedSource, File file, BundleInfo bundleInfo, DevBundleDownloadListener devBundleDownloadListener) {
         if (i10 != 200) {
-            String S1 = bufferedSource.S1();
-            DebugServerException parse = DebugServerException.Companion.parse(str, S1);
+            String R1 = bufferedSource.R1();
+            DebugServerException parse = DebugServerException.Companion.parse(str, R1);
             if (parse != null) {
                 devBundleDownloadListener.onFailure(parse);
                 return;
             }
-            String str2 = "The development server returned response error code: " + i10 + "\n\nURL: " + str + "\n\nBody:\n" + S1;
+            String str2 = "The development server returned response error code: " + i10 + "\n\nURL: " + str + "\n\nBody:\n" + R1;
             Intrinsics.checkNotNullExpressionValue(str2, "toString(...)");
             devBundleDownloadListener.onFailure(new DebugServerException(str2));
             return;
@@ -214,10 +214,10 @@ public final class BundleDownloader {
                         if (headers.containsKey("X-Http-Status")) {
                             g11 = Integer.parseInt(headers.getOrDefault("X-Http-Status", "0"));
                         }
-                        this.processBundleResult(str, g11, Headers.f42896e.a(headers), body, file, bundleInfo, devBundleDownloadListener);
+                        this.processBundleResult(str, g11, Headers.f42023e.a(headers), body, file, bundleInfo, devBundleDownloadListener);
                     } else if (headers.containsKey("Content-Type") && Intrinsics.areEqual(headers.get("Content-Type"), "application/json")) {
                         try {
-                            JSONObject jSONObject = new JSONObject(body.S1());
+                            JSONObject jSONObject = new JSONObject(body.R1());
                             if (jSONObject.has("status")) {
                                 str3 = jSONObject.getString("status");
                             } else {
@@ -234,7 +234,7 @@ public final class BundleDownloader {
                             }
                             devBundleDownloadListener.onProgress(str3, num, num2);
                         } catch (JSONException e10) {
-                            p8.a.m(ReactConstants.TAG, "Error parsing progress JSON. " + e10);
+                            q8.a.m(ReactConstants.TAG, "Error parsing progress JSON. " + e10);
                         }
                     }
                 }
@@ -272,11 +272,11 @@ public final class BundleDownloader {
             Call a10 = this.client.a(requestBuilder.l(str).a("Accept", "multipart/mixed").b());
             this.downloadBundleFromURLCall = a10;
             if (a10 != null) {
-                a10.J0(new bu.b() { // from class: com.facebook.react.devsupport.BundleDownloader$downloadBundleFromURL$1
+                a10.J0(new cu.b() { // from class: com.facebook.react.devsupport.BundleDownloader$downloadBundleFromURL$1
                     /* JADX WARN: Code restructure failed: missing block: B:4:0x0013, code lost:
                         r0 = r4.this$0.downloadBundleFromURLCall;
                      */
-                    @Override // bu.b
+                    @Override // cu.b
                     /*
                         Code decompiled incorrectly, please refer to instructions dump.
                         To view partially-correct add '--show-bad-code' argument
@@ -333,7 +333,7 @@ public final class BundleDownloader {
                     /* JADX WARN: Type inference failed for: r11v2 */
                     /* JADX WARN: Type inference failed for: r11v4 */
                     /* JADX WARN: Type inference failed for: r11v5, types: [okhttp3.Call] */
-                    @Override // bu.b
+                    @Override // cu.b
                     /*
                         Code decompiled incorrectly, please refer to instructions dump.
                         To view partially-correct add '--show-bad-code' argument
@@ -374,7 +374,7 @@ public final class BundleDownloader {
                             java.lang.String r11 = r11.toString()     // Catch: java.lang.Throwable -> L79
                             java.lang.String r2 = "content-type"
                             r3 = 2
-                            java.lang.String r2 = okhttp3.Response.Y(r12, r2, r8, r3, r8)     // Catch: java.lang.Throwable -> L79
+                            java.lang.String r2 = okhttp3.Response.Z(r12, r2, r8, r3, r8)     // Catch: java.lang.Throwable -> L79
                             if (r2 != 0) goto L4a
                             java.lang.String r2 = ""
                         L4a:
@@ -386,7 +386,7 @@ public final class BundleDownloader {
                             boolean r2 = r3.find()     // Catch: java.lang.Throwable -> L79
                             if (r2 == 0) goto L7c
                             java.lang.String r1 = r3.group(r1)     // Catch: java.lang.Throwable -> L79
-                            java.lang.Object r1 = db.a.c(r1)     // Catch: java.lang.Throwable -> L79
+                            java.lang.Object r1 = eb.a.c(r1)     // Catch: java.lang.Throwable -> L79
                             r3 = r1
                             java.lang.String r3 = (java.lang.String) r3     // Catch: java.lang.Throwable -> L79
                             kotlin.jvm.internal.Intrinsics.checkNotNull(r3)     // Catch: java.lang.Throwable -> L79
@@ -423,11 +423,11 @@ public final class BundleDownloader {
                             r1 = r0
                             goto La7
                         L9a:
-                            kotlin.Unit r0 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> L97
-                            bs.c.a(r12, r8)     // Catch: java.lang.Throwable -> La5
+                            kotlin.Unit r0 = kotlin.Unit.f31765a     // Catch: java.lang.Throwable -> L97
+                            cs.c.a(r12, r8)     // Catch: java.lang.Throwable -> La5
                         L9f:
-                            kotlin.Unit r12 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> La5
-                            bs.c.a(r11, r8)
+                            kotlin.Unit r12 = kotlin.Unit.f31765a     // Catch: java.lang.Throwable -> La5
+                            cs.c.a(r11, r8)
                             return
                         La5:
                             r0 = move-exception
@@ -436,17 +436,17 @@ public final class BundleDownloader {
                             throw r1     // Catch: java.lang.Throwable -> La8
                         La8:
                             r0 = move-exception
-                            bs.c.a(r12, r1)     // Catch: java.lang.Throwable -> La5
+                            cs.c.a(r12, r1)     // Catch: java.lang.Throwable -> La5
                             throw r0     // Catch: java.lang.Throwable -> La5
                         Lad:
                             com.facebook.react.devsupport.BundleDownloader.access$setDownloadBundleFromURLCall$p(r0, r8)     // Catch: java.lang.Throwable -> La5
-                            bs.c.a(r11, r8)
+                            cs.c.a(r11, r8)
                             return
                         Lb4:
                             throw r12     // Catch: java.lang.Throwable -> Lb5
                         Lb5:
                             r0 = move-exception
-                            bs.c.a(r11, r12)
+                            cs.c.a(r11, r12)
                             throw r0
                         */
                         throw new UnsupportedOperationException("Method not decompiled: com.facebook.react.devsupport.BundleDownloader$downloadBundleFromURL$1.onResponse(okhttp3.Call, okhttp3.Response):void");

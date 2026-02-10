@@ -18,7 +18,7 @@ import org.json.JSONObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ComponentDeserializerKt {
     @NotNull
-    private static final Json json = b.b(null, new Function1() { // from class: z6.a
+    private static final Json json = b.b(null, new Function1() { // from class: a7.a
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Object obj) {
             Unit json$lambda$0;
@@ -60,6 +60,6 @@ public final class ComponentDeserializerKt {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 }

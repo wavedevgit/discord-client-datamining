@@ -22,10 +22,10 @@ import m2.b;
 public abstract class b extends m2.a {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f36876f = new a(null);
+    public static final a f36735f = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final Context f36877e;
+    private final Context f36736e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -33,60 +33,60 @@ public abstract class b extends m2.a {
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: m2.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0494a extends Lambda implements Function0 {
+        public static final class C0526a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function1 f36878d;
+            final /* synthetic */ Function1 f36737d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Ref.ObjectRef f36879e;
+            final /* synthetic */ Ref.ObjectRef f36738e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0494a(Function1 function1, Ref.ObjectRef objectRef) {
+            C0526a(Function1 function1, Ref.ObjectRef objectRef) {
                 super(0);
-                this.f36878d = function1;
-                this.f36879e = objectRef;
+                this.f36737d = function1;
+                this.f36738e = objectRef;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m1204invoke();
-                return Unit.f32056a;
+                return Unit.f31765a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
             public final void m1204invoke() {
-                this.f36878d.invoke(this.f36879e.element);
+                this.f36737d.invoke(this.f36738e.element);
             }
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: m2.b$a$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0495b extends Lambda implements Function0 {
+        public static final class C0527b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function1 f36880d;
+            final /* synthetic */ Function1 f36739d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Ref.ObjectRef f36881e;
+            final /* synthetic */ Ref.ObjectRef f36740e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0495b(Function1 function1, Ref.ObjectRef objectRef) {
+            C0527b(Function1 function1, Ref.ObjectRef objectRef) {
                 super(0);
-                this.f36880d = function1;
-                this.f36881e = objectRef;
+                this.f36739d = function1;
+                this.f36740e = objectRef;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m1205invoke();
-                return Unit.f32056a;
+                return Unit.f31765a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
             public final void m1205invoke() {
-                this.f36880d.invoke(this.f36881e.element);
+                this.f36739d.invoke(this.f36740e.element);
             }
         }
 
@@ -121,7 +121,7 @@ public abstract class b extends m2.a {
                 if (i10 == 0) {
                     objectRef.element = new h2.c(b());
                 }
-                cancelOnError.invoke(cancellationSignal, new C0494a(onError, objectRef));
+                cancelOnError.invoke(cancellationSignal, new C0526a(onError, objectRef));
                 return true;
             }
             return false;
@@ -138,7 +138,7 @@ public abstract class b extends m2.a {
                 if (i10 == 0) {
                     objectRef.element = new k(b());
                 }
-                cancelOnError.invoke(cancellationSignal, new C0495b(onError, objectRef));
+                cancelOnError.invoke(cancellationSignal, new C0527b(onError, objectRef));
                 return true;
             }
             return false;
@@ -151,23 +151,23 @@ public abstract class b extends m2.a {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: m2.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0496b extends Lambda implements Function0 {
+    public static final class C0528b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Executor f36882d;
+        final /* synthetic */ Executor f36741d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ j f36883e;
+        final /* synthetic */ j f36742e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Object f36884i;
+        final /* synthetic */ Object f36743i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        C0496b(Executor executor, j jVar, Object obj) {
+        C0528b(Executor executor, j jVar, Object obj) {
             super(0);
-            this.f36882d = executor;
-            this.f36883e = jVar;
-            this.f36884i = obj;
+            this.f36741d = executor;
+            this.f36742e = jVar;
+            this.f36743i = obj;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -178,18 +178,18 @@ public abstract class b extends m2.a {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1206invoke();
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1206invoke() {
-            Executor executor = this.f36882d;
-            final j jVar = this.f36883e;
-            final Object obj = this.f36884i;
+            Executor executor = this.f36741d;
+            final j jVar = this.f36742e;
+            final Object obj = this.f36743i;
             executor.execute(new Runnable() { // from class: m2.c
                 @Override // java.lang.Runnable
                 public final void run() {
-                    b.C0496b.b(j.this, obj);
+                    b.C0528b.b(j.this, obj);
                 }
             });
         }
@@ -199,22 +199,22 @@ public abstract class b extends m2.a {
     public b(Context context) {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f36877e = context;
+        this.f36736e = context;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public static final void e(CancellationSignal cancellationSignal, Function0 function0) {
-        f36876f.a(cancellationSignal, function0);
+        f36735f.a(cancellationSignal, function0);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public static final boolean g(int i10, Function2 function2, Function1 function1, CancellationSignal cancellationSignal) {
-        return f36876f.d(i10, function2, function1, cancellationSignal);
+        return f36735f.d(i10, function2, function1, cancellationSignal);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public static final boolean h(int i10, Function2 function2, Function1 function1, CancellationSignal cancellationSignal) {
-        return f36876f.e(i10, function2, function1, cancellationSignal);
+        return f36735f.e(i10, function2, function1, cancellationSignal);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -226,7 +226,7 @@ public abstract class b extends m2.a {
         if (!resultData.getBoolean("FAILURE_RESPONSE")) {
             return false;
         }
-        e(cancellationSignal, new C0496b(executor, callback, conversionFn.invoke(resultData.getString("EXCEPTION_TYPE"), resultData.getString("EXCEPTION_MESSAGE"))));
+        e(cancellationSignal, new C0528b(executor, callback, conversionFn.invoke(resultData.getString("EXCEPTION_TYPE"), resultData.getString("EXCEPTION_MESSAGE"))));
         return true;
     }
 }

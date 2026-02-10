@@ -3,19 +3,19 @@ package androidx.datastore.preferences.protobuf;
 abstract class l0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final j0 f4128a = c();
+    private static final j0 f3825a = c();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final j0 f4129b = new k0();
+    private static final j0 f3826b = new k0();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static j0 a() {
-        return f4128a;
+        return f3825a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static j0 b() {
-        return f4129b;
+        return f3826b;
     }
 
     private static j0 c() {

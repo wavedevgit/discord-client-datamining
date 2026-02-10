@@ -13,58 +13,58 @@ import kotlin.collections.i;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.LongCompanionObject;
 import kotlin.text.Charsets;
-import qu.a0;
-import qu.d0;
-import qu.g0;
-import qu.h0;
-import qu.i0;
-import qu.x;
+import ru.a0;
+import ru.d0;
+import ru.g0;
+import ru.h0;
+import ru.i0;
+import ru.x;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class Buffer implements BufferedSource, BufferedSink, Cloneable, ByteChannel {
 
     /* renamed from: d  reason: collision with root package name */
-    public g0 f43203d;
+    public g0 f42330d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f43204e;
+    private long f42331e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Closeable {
 
         /* renamed from: d  reason: collision with root package name */
-        public Buffer f43205d;
+        public Buffer f42332d;
 
         /* renamed from: e  reason: collision with root package name */
-        public boolean f43206e;
+        public boolean f42333e;
 
         /* renamed from: i  reason: collision with root package name */
-        private g0 f43207i;
+        private g0 f42334i;
 
         /* renamed from: p  reason: collision with root package name */
-        public byte[] f43209p;
+        public byte[] f42336p;
 
         /* renamed from: o  reason: collision with root package name */
-        public long f43208o = -1;
+        public long f42335o = -1;
 
         /* renamed from: q  reason: collision with root package name */
-        public int f43210q = -1;
+        public int f42337q = -1;
 
         /* renamed from: r  reason: collision with root package name */
-        public int f43211r = -1;
+        public int f42338r = -1;
 
         public final g0 a() {
-            return this.f43207i;
+            return this.f42334i;
         }
 
         @Override // java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            if (this.f43205d != null) {
-                this.f43205d = null;
+            if (this.f42332d != null) {
+                this.f42332d = null;
                 n(null);
-                this.f43208o = -1L;
-                this.f43209p = null;
-                this.f43210q = -1;
-                this.f43211r = -1;
+                this.f42335o = -1L;
+                this.f42336p = null;
+                this.f42337q = -1;
+                this.f42338r = -1;
                 return;
             }
             throw new IllegalStateException("not attached to a buffer");
@@ -72,15 +72,15 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
 
         public final int g() {
             long j10;
-            long j11 = this.f43208o;
-            Buffer buffer = this.f43205d;
+            long j11 = this.f42335o;
+            Buffer buffer = this.f42332d;
             Intrinsics.checkNotNull(buffer);
             if (j11 != buffer.size()) {
-                long j12 = this.f43208o;
+                long j12 = this.f42335o;
                 if (j12 == -1) {
                     j10 = 0;
                 } else {
-                    j10 = j12 + (this.f43211r - this.f43210q);
+                    j10 = j12 + (this.f42338r - this.f42337q);
                 }
                 return m(j10);
             }
@@ -88,9 +88,9 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         }
 
         public final long k(long j10) {
-            Buffer buffer = this.f43205d;
+            Buffer buffer = this.f42332d;
             if (buffer != null) {
-                if (this.f43206e) {
+                if (this.f42333e) {
                     long size = buffer.size();
                     int i10 = (j10 > size ? 1 : (j10 == size ? 0 : -1));
                     if (i10 <= 0) {
@@ -100,26 +100,26 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
                                 if (j11 <= 0) {
                                     break;
                                 }
-                                g0 g0Var = buffer.f43203d;
+                                g0 g0Var = buffer.f42330d;
                                 Intrinsics.checkNotNull(g0Var);
-                                g0 g0Var2 = g0Var.f48278g;
+                                g0 g0Var2 = g0Var.f49396g;
                                 Intrinsics.checkNotNull(g0Var2);
-                                int i11 = g0Var2.f48274c;
-                                long j12 = i11 - g0Var2.f48273b;
+                                int i11 = g0Var2.f49392c;
+                                long j12 = i11 - g0Var2.f49391b;
                                 if (j12 <= j11) {
-                                    buffer.f43203d = g0Var2.b();
+                                    buffer.f42330d = g0Var2.b();
                                     h0.b(g0Var2);
                                     j11 -= j12;
                                 } else {
-                                    g0Var2.f48274c = i11 - ((int) j11);
+                                    g0Var2.f49392c = i11 - ((int) j11);
                                     break;
                                 }
                             }
                             n(null);
-                            this.f43208o = j10;
-                            this.f43209p = null;
-                            this.f43210q = -1;
-                            this.f43211r = -1;
+                            this.f42335o = j10;
+                            this.f42336p = null;
+                            this.f42337q = -1;
+                            this.f42338r = -1;
                         } else {
                             throw new IllegalArgumentException(("newSize < 0: " + j10).toString());
                         }
@@ -127,22 +127,22 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
                         long j13 = j10 - size;
                         boolean z10 = true;
                         while (j13 > 0) {
-                            g0 x12 = buffer.x1(1);
-                            int min = (int) Math.min(j13, 8192 - x12.f48274c);
-                            x12.f48274c += min;
+                            g0 s12 = buffer.s1(1);
+                            int min = (int) Math.min(j13, 8192 - s12.f49392c);
+                            s12.f49392c += min;
                             j13 -= min;
                             if (z10) {
-                                n(x12);
-                                this.f43208o = size;
-                                this.f43209p = x12.f48272a;
-                                int i12 = x12.f48274c;
-                                this.f43210q = i12 - min;
-                                this.f43211r = i12;
+                                n(s12);
+                                this.f42335o = size;
+                                this.f42336p = s12.f49390a;
+                                int i12 = s12.f49392c;
+                                this.f42337q = i12 - min;
+                                this.f42338r = i12;
                                 z10 = false;
                             }
                         }
                     }
-                    buffer.Y0(j10);
+                    buffer.W0(j10);
                     return size;
                 }
                 throw new IllegalStateException("resizeBuffer() only permitted for read/write buffers");
@@ -152,20 +152,20 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
 
         public final int m(long j10) {
             g0 g0Var;
-            Buffer buffer = this.f43205d;
+            Buffer buffer = this.f42332d;
             if (buffer != null) {
                 int i10 = (j10 > (-1L) ? 1 : (j10 == (-1L) ? 0 : -1));
                 if (i10 >= 0 && j10 <= buffer.size()) {
                     if (i10 != 0 && j10 != buffer.size()) {
                         long size = buffer.size();
-                        g0 g0Var2 = buffer.f43203d;
+                        g0 g0Var2 = buffer.f42330d;
                         long j11 = 0;
                         if (a() != null) {
-                            long j12 = this.f43208o;
-                            int i11 = this.f43210q;
+                            long j12 = this.f42335o;
+                            int i11 = this.f42337q;
                             g0 a10 = a();
                             Intrinsics.checkNotNull(a10);
-                            long j13 = j12 - (i11 - a10.f48273b);
+                            long j13 = j12 - (i11 - a10.f49391b);
                             if (j13 > j10) {
                                 g0Var = g0Var2;
                                 g0Var2 = a();
@@ -180,52 +180,52 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
                         if (size - j10 > j10 - j11) {
                             while (true) {
                                 Intrinsics.checkNotNull(g0Var);
-                                int i12 = g0Var.f48274c;
-                                int i13 = g0Var.f48273b;
+                                int i12 = g0Var.f49392c;
+                                int i13 = g0Var.f49391b;
                                 if (j10 < (i12 - i13) + j11) {
                                     break;
                                 }
                                 j11 += i12 - i13;
-                                g0Var = g0Var.f48277f;
+                                g0Var = g0Var.f49395f;
                             }
                         } else {
                             while (size > j10) {
                                 Intrinsics.checkNotNull(g0Var2);
-                                g0Var2 = g0Var2.f48278g;
+                                g0Var2 = g0Var2.f49396g;
                                 Intrinsics.checkNotNull(g0Var2);
-                                size -= g0Var2.f48274c - g0Var2.f48273b;
+                                size -= g0Var2.f49392c - g0Var2.f49391b;
                             }
                             j11 = size;
                             g0Var = g0Var2;
                         }
-                        if (this.f43206e) {
+                        if (this.f42333e) {
                             Intrinsics.checkNotNull(g0Var);
-                            if (g0Var.f48275d) {
+                            if (g0Var.f49393d) {
                                 g0 f10 = g0Var.f();
-                                if (buffer.f43203d == g0Var) {
-                                    buffer.f43203d = f10;
+                                if (buffer.f42330d == g0Var) {
+                                    buffer.f42330d = f10;
                                 }
                                 g0Var = g0Var.c(f10);
-                                g0 g0Var3 = g0Var.f48278g;
+                                g0 g0Var3 = g0Var.f49396g;
                                 Intrinsics.checkNotNull(g0Var3);
                                 g0Var3.b();
                             }
                         }
                         n(g0Var);
-                        this.f43208o = j10;
+                        this.f42335o = j10;
                         Intrinsics.checkNotNull(g0Var);
-                        this.f43209p = g0Var.f48272a;
-                        int i14 = g0Var.f48273b + ((int) (j10 - j11));
-                        this.f43210q = i14;
-                        int i15 = g0Var.f48274c;
-                        this.f43211r = i15;
+                        this.f42336p = g0Var.f49390a;
+                        int i14 = g0Var.f49391b + ((int) (j10 - j11));
+                        this.f42337q = i14;
+                        int i15 = g0Var.f49392c;
+                        this.f42338r = i15;
                         return i15 - i14;
                     }
                     n(null);
-                    this.f43208o = j10;
-                    this.f43209p = null;
-                    this.f43210q = -1;
-                    this.f43211r = -1;
+                    this.f42335o = j10;
+                    this.f42336p = null;
+                    this.f42337q = -1;
+                    this.f42338r = -1;
                     return -1;
                 }
                 throw new ArrayIndexOutOfBoundsException("offset=" + j10 + " > size=" + buffer.size());
@@ -234,7 +234,7 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         }
 
         public final void n(g0 g0Var) {
-            this.f43207i = g0Var;
+            this.f42334i = g0Var;
         }
     }
 
@@ -267,95 +267,55 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         }
     }
 
-    public static /* synthetic */ a O0(Buffer buffer, a aVar, int i10, Object obj) {
+    public static /* synthetic */ a R0(Buffer buffer, a aVar, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             aVar = okio.b.d();
         }
-        return buffer.L0(aVar);
-    }
-
-    @Override // okio.BufferedSink
-    /* renamed from: A1 */
-    public Buffer write(byte[] source) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        return write(source, 0, source.length);
-    }
-
-    @Override // okio.BufferedSink
-    public long B0(Source source) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        long j10 = 0;
-        while (true) {
-            long read = source.read(this, 8192L);
-            if (read != -1) {
-                j10 += read;
-            } else {
-                return j10;
-            }
-        }
+        return buffer.O0(aVar);
     }
 
     @Override // okio.BufferedSource
-    public boolean D0(long j10) {
-        if (this.f43204e >= j10) {
+    public boolean B0(long j10) {
+        if (this.f42331e >= j10) {
             return true;
         }
         return false;
     }
 
-    @Override // okio.BufferedSink
-    /* renamed from: D1 */
-    public Buffer write(byte[] source, int i10, int i11) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        long j10 = i11;
-        okio.b.b(source.length, i10, j10);
-        int i12 = i11 + i10;
-        while (i10 < i12) {
-            g0 x12 = x1(1);
-            int min = Math.min(i12 - i10, 8192 - x12.f48274c);
-            int i13 = i10 + min;
-            i.f(source, x12.f48272a, x12.f48274c, i10, i13);
-            x12.f48274c += min;
-            i10 = i13;
-        }
-        Y0(size() + j10);
-        return this;
-    }
-
-    public long F0(ByteString bytes, long j10) {
+    public long D0(ByteString bytes, long j10) {
         int i10;
         long j11 = j10;
         Intrinsics.checkNotNullParameter(bytes, "bytes");
         if (bytes.G() > 0) {
             long j12 = 0;
             if (j11 >= 0) {
-                g0 g0Var = this.f43203d;
+                g0 g0Var = this.f42330d;
                 if (g0Var == null) {
                     return -1L;
                 }
                 if (size() - j11 < j11) {
                     j12 = size();
                     while (j12 > j11) {
-                        g0Var = g0Var.f48278g;
+                        g0Var = g0Var.f49396g;
                         Intrinsics.checkNotNull(g0Var);
-                        j12 -= g0Var.f48274c - g0Var.f48273b;
+                        j12 -= g0Var.f49392c - g0Var.f49391b;
                     }
                     byte[] u10 = bytes.u();
                     byte b10 = u10[0];
                     int G = bytes.G();
                     long size = (size() - G) + 1;
                     while (j12 < size) {
-                        byte[] bArr = g0Var.f48272a;
+                        byte[] bArr = g0Var.f49390a;
                         long j13 = size;
-                        int min = (int) Math.min(g0Var.f48274c, (g0Var.f48273b + size) - j12);
-                        i10 = (int) ((g0Var.f48273b + j11) - j12);
+                        int min = (int) Math.min(g0Var.f49392c, (g0Var.f49391b + size) - j12);
+                        i10 = (int) ((g0Var.f49391b + j11) - j12);
                         while (i10 < min) {
-                            if (bArr[i10] != b10 || !ru.a.c(g0Var, i10 + 1, u10, 1, G)) {
+                            if (bArr[i10] != b10 || !su.a.c(g0Var, i10 + 1, u10, 1, G)) {
                                 i10++;
                             }
                         }
-                        j12 += g0Var.f48274c - g0Var.f48273b;
-                        g0Var = g0Var.f48277f;
+                        j12 += g0Var.f49392c - g0Var.f49391b;
+                        g0Var = g0Var.f49395f;
                         Intrinsics.checkNotNull(g0Var);
                         j11 = j12;
                         size = j13;
@@ -363,11 +323,11 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
                     return -1L;
                 }
                 while (true) {
-                    long j14 = (g0Var.f48274c - g0Var.f48273b) + j12;
+                    long j14 = (g0Var.f49392c - g0Var.f49391b) + j12;
                     if (j14 > j11) {
                         break;
                     }
-                    g0Var = g0Var.f48277f;
+                    g0Var = g0Var.f49395f;
                     Intrinsics.checkNotNull(g0Var);
                     j12 = j14;
                 }
@@ -376,21 +336,21 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
                 int G2 = bytes.G();
                 long size2 = (size() - G2) + 1;
                 while (j12 < size2) {
-                    byte[] bArr2 = g0Var.f48272a;
-                    int min2 = (int) Math.min(g0Var.f48274c, (g0Var.f48273b + size2) - j12);
-                    i10 = (int) ((g0Var.f48273b + j11) - j12);
+                    byte[] bArr2 = g0Var.f49390a;
+                    int min2 = (int) Math.min(g0Var.f49392c, (g0Var.f49391b + size2) - j12);
+                    i10 = (int) ((g0Var.f49391b + j11) - j12);
                     while (i10 < min2) {
-                        if (bArr2[i10] == b11 && ru.a.c(g0Var, i10 + 1, u11, 1, G2)) {
+                        if (bArr2[i10] == b11 && su.a.c(g0Var, i10 + 1, u11, 1, G2)) {
                         }
                         i10++;
                     }
-                    j12 += g0Var.f48274c - g0Var.f48273b;
-                    g0Var = g0Var.f48277f;
+                    j12 += g0Var.f49392c - g0Var.f49391b;
+                    g0Var = g0Var.f49395f;
                     Intrinsics.checkNotNull(g0Var);
                     j11 = j12;
                 }
                 return -1L;
-                return (i10 - g0Var.f48273b) + j12;
+                return (i10 - g0Var.f49391b) + j12;
             }
             throw new IllegalArgumentException(("fromIndex < 0: " + j11).toString());
         }
@@ -398,75 +358,80 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
     }
 
     @Override // okio.BufferedSource
-    public String H0() {
-        return h0(LongCompanionObject.MAX_VALUE);
+    public String D1(Charset charset) {
+        Intrinsics.checkNotNullParameter(charset, "charset");
+        return V0(this.f42331e, charset);
     }
 
     @Override // okio.BufferedSource
-    public String H1(Charset charset) {
-        Intrinsics.checkNotNullParameter(charset, "charset");
-        return V0(this.f43204e, charset);
+    public int E1(a0 options) {
+        Intrinsics.checkNotNullParameter(options, "options");
+        int f10 = su.a.f(this, options, false, 2, null);
+        if (f10 == -1) {
+            return -1;
+        }
+        skip(options.g()[f10].G());
+        return f10;
     }
 
-    @Override // okio.BufferedSink
-    /* renamed from: I */
-    public Buffer R() {
-        return this;
+    @Override // okio.BufferedSource
+    public String F0() {
+        return i0(LongCompanionObject.MAX_VALUE);
     }
 
-    public long I0(ByteString targetBytes, long j10) {
+    public long G0(ByteString targetBytes, long j10) {
         int i10;
         int i11;
         Intrinsics.checkNotNullParameter(targetBytes, "targetBytes");
         long j11 = 0;
         if (j10 >= 0) {
-            g0 g0Var = this.f43203d;
+            g0 g0Var = this.f42330d;
             if (g0Var == null) {
                 return -1L;
             }
             if (size() - j10 < j10) {
                 j11 = size();
                 while (j11 > j10) {
-                    g0Var = g0Var.f48278g;
+                    g0Var = g0Var.f49396g;
                     Intrinsics.checkNotNull(g0Var);
-                    j11 -= g0Var.f48274c - g0Var.f48273b;
+                    j11 -= g0Var.f49392c - g0Var.f49391b;
                 }
                 if (targetBytes.G() == 2) {
-                    byte j12 = targetBytes.j(0);
-                    byte j13 = targetBytes.j(1);
+                    byte k10 = targetBytes.k(0);
+                    byte k11 = targetBytes.k(1);
                     while (j11 < size()) {
-                        byte[] bArr = g0Var.f48272a;
-                        i10 = (int) ((g0Var.f48273b + j10) - j11);
-                        int i12 = g0Var.f48274c;
+                        byte[] bArr = g0Var.f49390a;
+                        i10 = (int) ((g0Var.f49391b + j10) - j11);
+                        int i12 = g0Var.f49392c;
                         while (i10 < i12) {
                             byte b10 = bArr[i10];
-                            if (b10 != j12 && b10 != j13) {
+                            if (b10 != k10 && b10 != k11) {
                                 i10++;
                             }
-                            i11 = g0Var.f48273b;
+                            i11 = g0Var.f49391b;
                         }
-                        j11 += g0Var.f48274c - g0Var.f48273b;
-                        g0Var = g0Var.f48277f;
+                        j11 += g0Var.f49392c - g0Var.f49391b;
+                        g0Var = g0Var.f49395f;
                         Intrinsics.checkNotNull(g0Var);
                         j10 = j11;
                     }
                 } else {
                     byte[] u10 = targetBytes.u();
                     while (j11 < size()) {
-                        byte[] bArr2 = g0Var.f48272a;
-                        i10 = (int) ((g0Var.f48273b + j10) - j11);
-                        int i13 = g0Var.f48274c;
+                        byte[] bArr2 = g0Var.f49390a;
+                        i10 = (int) ((g0Var.f49391b + j10) - j11);
+                        int i13 = g0Var.f49392c;
                         while (i10 < i13) {
                             byte b11 = bArr2[i10];
                             for (byte b12 : u10) {
                                 if (b11 == b12) {
-                                    i11 = g0Var.f48273b;
+                                    i11 = g0Var.f49391b;
                                 }
                             }
                             i10++;
                         }
-                        j11 += g0Var.f48274c - g0Var.f48273b;
-                        g0Var = g0Var.f48277f;
+                        j11 += g0Var.f49392c - g0Var.f49391b;
+                        g0Var = g0Var.f49395f;
                         Intrinsics.checkNotNull(g0Var);
                         j10 = j11;
                     }
@@ -474,50 +439,50 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
                 return -1L;
             }
             while (true) {
-                long j14 = (g0Var.f48274c - g0Var.f48273b) + j11;
-                if (j14 > j10) {
+                long j12 = (g0Var.f49392c - g0Var.f49391b) + j11;
+                if (j12 > j10) {
                     break;
                 }
-                g0Var = g0Var.f48277f;
+                g0Var = g0Var.f49395f;
                 Intrinsics.checkNotNull(g0Var);
-                j11 = j14;
+                j11 = j12;
             }
             if (targetBytes.G() == 2) {
-                byte j15 = targetBytes.j(0);
-                byte j16 = targetBytes.j(1);
+                byte k12 = targetBytes.k(0);
+                byte k13 = targetBytes.k(1);
                 while (j11 < size()) {
-                    byte[] bArr3 = g0Var.f48272a;
-                    i10 = (int) ((g0Var.f48273b + j10) - j11);
-                    int i14 = g0Var.f48274c;
+                    byte[] bArr3 = g0Var.f49390a;
+                    i10 = (int) ((g0Var.f49391b + j10) - j11);
+                    int i14 = g0Var.f49392c;
                     while (i10 < i14) {
                         byte b13 = bArr3[i10];
-                        if (b13 != j15 && b13 != j16) {
+                        if (b13 != k12 && b13 != k13) {
                             i10++;
                         }
-                        i11 = g0Var.f48273b;
+                        i11 = g0Var.f49391b;
                     }
-                    j11 += g0Var.f48274c - g0Var.f48273b;
-                    g0Var = g0Var.f48277f;
+                    j11 += g0Var.f49392c - g0Var.f49391b;
+                    g0Var = g0Var.f49395f;
                     Intrinsics.checkNotNull(g0Var);
                     j10 = j11;
                 }
             } else {
                 byte[] u11 = targetBytes.u();
                 while (j11 < size()) {
-                    byte[] bArr4 = g0Var.f48272a;
-                    i10 = (int) ((g0Var.f48273b + j10) - j11);
-                    int i15 = g0Var.f48274c;
+                    byte[] bArr4 = g0Var.f49390a;
+                    i10 = (int) ((g0Var.f49391b + j10) - j11);
+                    int i15 = g0Var.f49392c;
                     while (i10 < i15) {
                         byte b14 = bArr4[i10];
                         for (byte b15 : u11) {
                             if (b14 == b15) {
-                                i11 = g0Var.f48273b;
+                                i11 = g0Var.f49391b;
                             }
                         }
                         i10++;
                     }
-                    j11 += g0Var.f48274c - g0Var.f48273b;
-                    g0Var = g0Var.f48277f;
+                    j11 += g0Var.f49392c - g0Var.f49391b;
+                    g0Var = g0Var.f49395f;
                     Intrinsics.checkNotNull(g0Var);
                     j10 = j11;
                 }
@@ -528,42 +493,27 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         throw new IllegalArgumentException(("fromIndex < 0: " + j10).toString());
     }
 
-    @Override // okio.BufferedSink
-    /* renamed from: J */
-    public Buffer g0() {
-        return this;
-    }
-
-    public boolean K0(long j10, ByteString bytes, int i10, int i11) {
+    public boolean H0(long j10, ByteString bytes, int i10, int i11) {
         Intrinsics.checkNotNullParameter(bytes, "bytes");
         if (j10 < 0 || i10 < 0 || i11 < 0 || size() - j10 < i11 || bytes.G() - i10 < i11) {
             return false;
         }
         for (int i12 = 0; i12 < i11; i12++) {
-            if (Y(i12 + j10) != bytes.j(i10 + i12)) {
+            if (Z(i12 + j10) != bytes.k(i10 + i12)) {
                 return false;
             }
         }
         return true;
     }
 
-    @Override // okio.BufferedSource
-    public ByteString K1() {
-        return f1(size());
-    }
-
-    public final a L0(a unsafeCursor) {
-        Intrinsics.checkNotNullParameter(unsafeCursor, "unsafeCursor");
-        return ru.a.a(this, unsafeCursor);
-    }
-
-    @Override // okio.BufferedSource
-    public Buffer M() {
+    @Override // okio.BufferedSink
+    /* renamed from: I */
+    public Buffer S() {
         return this;
     }
 
     @Override // okio.BufferedSource
-    public byte[] N0(long j10) {
+    public byte[] I0(long j10) {
         if (j10 >= 0 && j10 <= 2147483647L) {
             if (size() >= j10) {
                 byte[] bArr = new byte[(int) j10];
@@ -576,78 +526,69 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
     }
 
     @Override // okio.BufferedSource
-    public short P0() {
-        return okio.b.j(readShort());
-    }
-
-    @Override // okio.BufferedSource
-    public int P1() {
-        return okio.b.h(readInt());
-    }
-
-    @Override // okio.BufferedSource
-    public long Q0() {
-        return okio.b.i(readLong());
-    }
-
-    @Override // okio.BufferedSource
-    public String S1() {
-        return V0(this.f43204e, Charsets.UTF_8);
+    public ByteString I1() {
+        return c1(size());
     }
 
     @Override // okio.BufferedSink
-    /* renamed from: T1 */
-    public Buffer writeByte(int i10) {
-        g0 x12 = x1(1);
-        byte[] bArr = x12.f48272a;
-        int i11 = x12.f48274c;
-        x12.f48274c = i11 + 1;
-        bArr[i11] = (byte) i10;
-        Y0(size() + 1);
+    /* renamed from: J */
+    public Buffer h0() {
         return this;
     }
 
     @Override // okio.BufferedSource
-    public void U0(long j10) {
-        if (this.f43204e >= j10) {
+    public short K0() {
+        return okio.b.j(readShort());
+    }
+
+    @Override // okio.BufferedSource
+    public long L0() {
+        return okio.b.i(readLong());
+    }
+
+    @Override // okio.BufferedSource
+    public Buffer M() {
+        return this;
+    }
+
+    public final a O0(a unsafeCursor) {
+        Intrinsics.checkNotNullParameter(unsafeCursor, "unsafeCursor");
+        return su.a.a(this, unsafeCursor);
+    }
+
+    @Override // okio.BufferedSource
+    public int O1() {
+        return okio.b.h(readInt());
+    }
+
+    @Override // okio.BufferedSource
+    public void Q0(long j10) {
+        if (this.f42331e >= j10) {
             return;
         }
         throw new EOFException();
     }
 
-    public String V0(long j10, Charset charset) {
-        Intrinsics.checkNotNullParameter(charset, "charset");
-        int i10 = (j10 > 0L ? 1 : (j10 == 0L ? 0 : -1));
-        if (i10 >= 0 && j10 <= 2147483647L) {
-            if (this.f43204e >= j10) {
-                if (i10 == 0) {
-                    return "";
-                }
-                g0 g0Var = this.f43203d;
-                Intrinsics.checkNotNull(g0Var);
-                int i11 = g0Var.f48273b;
-                if (i11 + j10 > g0Var.f48274c) {
-                    return new String(N0(j10), charset);
-                }
-                int i12 = (int) j10;
-                String str = new String(g0Var.f48272a, i11, i12, charset);
-                int i13 = g0Var.f48273b + i12;
-                g0Var.f48273b = i13;
-                this.f43204e -= j10;
-                if (i13 == g0Var.f48274c) {
-                    this.f43203d = g0Var.b();
-                    h0.b(g0Var);
-                }
-                return str;
-            }
-            throw new EOFException();
-        }
-        throw new IllegalArgumentException(("byteCount: " + j10).toString());
+    @Override // okio.BufferedSource
+    public String R1() {
+        return V0(this.f42331e, Charsets.UTF_8);
     }
 
     @Override // okio.BufferedSink
-    /* renamed from: V1 */
-    public Buffer W0(long j10) {
+    /* renamed from: S1 */
+    public Buffer writeByte(int i10) {
+        g0 s12 = s1(1);
+        byte[] bArr = s12.f49390a;
+        int i11 = s12.f49392c;
+        s12.f49392c = i11 + 1;
+        bArr[i11] = (byte) i10;
+        W0(size() + 1);
+        return this;
+    }
+
+    @Override // okio.BufferedSink
+    /* renamed from: U1 */
+    public Buffer S0(long j10) {
         boolean z10;
         int i10 = (j10 > 0L ? 1 : (j10 == 0L ? 0 : -1));
         if (i10 == 0) {
@@ -719,32 +660,60 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         if (z10) {
             i11++;
         }
-        g0 x12 = x1(i11);
-        byte[] bArr = x12.f48272a;
-        int i12 = x12.f48274c + i11;
+        g0 s12 = s1(i11);
+        byte[] bArr = s12.f49390a;
+        int i12 = s12.f49392c + i11;
         while (j10 != 0) {
             long j11 = 10;
             i12--;
-            bArr[i12] = ru.a.b()[(int) (j10 % j11)];
+            bArr[i12] = su.a.b()[(int) (j10 % j11)];
             j10 /= j11;
         }
         if (z10) {
             bArr[i12 - 1] = 45;
         }
-        x12.f48274c += i11;
-        Y0(size() + i11);
+        s12.f49392c += i11;
+        W0(size() + i11);
         return this;
     }
 
-    @Override // okio.BufferedSource
-    public long X(ByteString bytes) {
-        Intrinsics.checkNotNullParameter(bytes, "bytes");
-        return F0(bytes, 0L);
+    public String V0(long j10, Charset charset) {
+        Intrinsics.checkNotNullParameter(charset, "charset");
+        int i10 = (j10 > 0L ? 1 : (j10 == 0L ? 0 : -1));
+        if (i10 >= 0 && j10 <= 2147483647L) {
+            if (this.f42331e >= j10) {
+                if (i10 == 0) {
+                    return "";
+                }
+                g0 g0Var = this.f42330d;
+                Intrinsics.checkNotNull(g0Var);
+                int i11 = g0Var.f49391b;
+                if (i11 + j10 > g0Var.f49392c) {
+                    return new String(I0(j10), charset);
+                }
+                int i12 = (int) j10;
+                String str = new String(g0Var.f49390a, i11, i12, charset);
+                int i13 = g0Var.f49391b + i12;
+                g0Var.f49391b = i13;
+                this.f42331e -= j10;
+                if (i13 == g0Var.f49392c) {
+                    this.f42330d = g0Var.b();
+                    h0.b(g0Var);
+                }
+                return str;
+            }
+            throw new EOFException();
+        }
+        throw new IllegalArgumentException(("byteCount: " + j10).toString());
+    }
+
+    public final void W0(long j10) {
+        this.f42331e = j10;
     }
 
     @Override // okio.BufferedSink
-    /* renamed from: X1 */
-    public Buffer J1(long j10) {
+    /* renamed from: W1 */
+    public Buffer H1(long j10) {
         if (j10 == 0) {
             return writeByte(48);
         }
@@ -760,42 +729,53 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         long j20 = j19 + (j19 >>> 8);
         long j21 = j20 + (j20 >>> 16);
         int i10 = (int) ((((j21 & 63) + ((j21 >>> 32) & 63)) + 3) / 4);
-        g0 x12 = x1(i10);
-        byte[] bArr = x12.f48272a;
-        int i11 = x12.f48274c;
+        g0 s12 = s1(i10);
+        byte[] bArr = s12.f49390a;
+        int i11 = s12.f49392c;
         for (int i12 = (i11 + i10) - 1; i12 >= i11; i12--) {
-            bArr[i12] = ru.a.b()[(int) (15 & j10)];
+            bArr[i12] = su.a.b()[(int) (15 & j10)];
             j10 >>>= 4;
         }
-        x12.f48274c += i10;
-        Y0(size() + i10);
+        s12.f49392c += i10;
+        W0(size() + i10);
         return this;
     }
 
-    public final byte Y(long j10) {
+    @Override // okio.BufferedSource
+    public long Y(ByteString bytes) {
+        Intrinsics.checkNotNullParameter(bytes, "bytes");
+        return D0(bytes, 0L);
+    }
+
+    @Override // okio.BufferedSource
+    public String Y0(long j10) {
+        return V0(j10, Charsets.UTF_8);
+    }
+
+    public final byte Z(long j10) {
         okio.b.b(size(), j10, 1L);
-        g0 g0Var = this.f43203d;
+        g0 g0Var = this.f42330d;
         if (g0Var != null) {
             if (size() - j10 < j10) {
                 long size = size();
                 while (size > j10) {
-                    g0Var = g0Var.f48278g;
+                    g0Var = g0Var.f49396g;
                     Intrinsics.checkNotNull(g0Var);
-                    size -= g0Var.f48274c - g0Var.f48273b;
+                    size -= g0Var.f49392c - g0Var.f49391b;
                 }
                 Intrinsics.checkNotNull(g0Var);
-                return g0Var.f48272a[(int) ((g0Var.f48273b + j10) - size)];
+                return g0Var.f49390a[(int) ((g0Var.f49391b + j10) - size)];
             }
             long j11 = 0;
             while (true) {
-                long j12 = (g0Var.f48274c - g0Var.f48273b) + j11;
+                long j12 = (g0Var.f49392c - g0Var.f49391b) + j11;
                 if (j12 <= j10) {
-                    g0Var = g0Var.f48277f;
+                    g0Var = g0Var.f49395f;
                     Intrinsics.checkNotNull(g0Var);
                     j11 = j12;
                 } else {
                     Intrinsics.checkNotNull(g0Var);
-                    return g0Var.f48272a[(int) ((g0Var.f48273b + j10) - j11)];
+                    return g0Var.f49390a[(int) ((g0Var.f49391b + j10) - j11)];
                 }
             }
         } else {
@@ -804,38 +784,36 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         }
     }
 
-    public final void Y0(long j10) {
-        this.f43204e = j10;
-    }
-
-    public final long a() {
-        return this.f43204e;
-    }
-
     @Override // okio.BufferedSink
-    /* renamed from: a2 */
+    /* renamed from: Z1 */
     public Buffer writeInt(int i10) {
-        g0 x12 = x1(4);
-        byte[] bArr = x12.f48272a;
-        int i11 = x12.f48274c;
+        g0 s12 = s1(4);
+        byte[] bArr = s12.f49390a;
+        int i11 = s12.f49392c;
         bArr[i11] = (byte) ((i10 >>> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
         bArr[i11 + 1] = (byte) ((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
         bArr[i11 + 2] = (byte) ((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
         bArr[i11 + 3] = (byte) (i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
-        x12.f48274c = i11 + 4;
-        Y0(size() + 4);
+        s12.f49392c = i11 + 4;
+        W0(size() + 4);
         return this;
     }
 
-    @Override // okio.BufferedSource
-    public String b1(long j10) {
-        return V0(j10, Charsets.UTF_8);
+    public final long a() {
+        return this.f42331e;
     }
 
-    public Buffer b2(long j10) {
-        g0 x12 = x1(8);
-        byte[] bArr = x12.f48272a;
-        int i10 = x12.f48274c;
+    public final ByteString a1() {
+        if (size() <= 2147483647L) {
+            return r1((int) size());
+        }
+        throw new IllegalStateException(("size > Int.MAX_VALUE: " + size()).toString());
+    }
+
+    public Buffer a2(long j10) {
+        g0 s12 = s1(8);
+        byte[] bArr = s12.f49390a;
+        int i10 = s12.f49392c;
         bArr[i10] = (byte) ((j10 >>> 56) & 255);
         bArr[i10 + 1] = (byte) ((j10 >>> 48) & 255);
         bArr[i10 + 2] = (byte) ((j10 >>> 40) & 255);
@@ -844,9 +822,25 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         bArr[i10 + 5] = (byte) ((j10 >>> 16) & 255);
         bArr[i10 + 6] = (byte) ((j10 >>> 8) & 255);
         bArr[i10 + 7] = (byte) (j10 & 255);
-        x12.f48274c = i10 + 8;
-        Y0(size() + 8);
+        s12.f49392c = i10 + 8;
+        W0(size() + 8);
         return this;
+    }
+
+    @Override // okio.BufferedSource
+    public ByteString c1(long j10) {
+        if (j10 >= 0 && j10 <= 2147483647L) {
+            if (size() >= j10) {
+                if (j10 >= 4096) {
+                    ByteString r12 = r1((int) j10);
+                    skip(j10);
+                    return r12;
+                }
+                return new ByteString(I0(j10));
+            }
+            throw new EOFException();
+        }
+        throw new IllegalArgumentException(("byteCount: " + j10).toString());
     }
 
     @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
@@ -854,32 +848,13 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
     }
 
     @Override // okio.BufferedSource
-    public void d0(Buffer sink, long j10) {
+    public long d2(Sink sink) {
         Intrinsics.checkNotNullParameter(sink, "sink");
-        if (size() >= j10) {
-            sink.w0(this, j10);
-        } else {
-            sink.w0(this, size());
-            throw new EOFException();
+        long size = size();
+        if (size > 0) {
+            sink.u0(this, size);
         }
-    }
-
-    public final ByteString d1() {
-        if (size() <= 2147483647L) {
-            return w1((int) size());
-        }
-        throw new IllegalStateException(("size > Int.MAX_VALUE: " + size()).toString());
-    }
-
-    @Override // okio.BufferedSource
-    public int d2(a0 options) {
-        Intrinsics.checkNotNullParameter(options, "options");
-        int f10 = ru.a.f(this, options, false, 2, null);
-        if (f10 == -1) {
-            return -1;
-        }
-        skip(options.g()[f10].G());
-        return f10;
+        return size;
     }
 
     @Override // okio.BufferedSource, okio.BufferedSink
@@ -888,77 +863,27 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
     }
 
     @Override // okio.BufferedSource
-    public long e0(byte b10, long j10, long j11) {
-        g0 g0Var;
-        int i10;
-        long j12 = 0;
-        if (0 <= j10 && j10 <= j11) {
-            if (j11 > size()) {
-                j11 = size();
-            }
-            if (j10 == j11 || (g0Var = this.f43203d) == null) {
-                return -1L;
-            }
-            if (size() - j10 < j10) {
-                j12 = size();
-                while (j12 > j10) {
-                    g0Var = g0Var.f48278g;
-                    Intrinsics.checkNotNull(g0Var);
-                    j12 -= g0Var.f48274c - g0Var.f48273b;
-                }
-                while (j12 < j11) {
-                    byte[] bArr = g0Var.f48272a;
-                    int min = (int) Math.min(g0Var.f48274c, (g0Var.f48273b + j11) - j12);
-                    i10 = (int) ((g0Var.f48273b + j10) - j12);
-                    while (i10 < min) {
-                        if (bArr[i10] != b10) {
-                            i10++;
-                        }
-                    }
-                    j12 += g0Var.f48274c - g0Var.f48273b;
-                    g0Var = g0Var.f48277f;
-                    Intrinsics.checkNotNull(g0Var);
-                    j10 = j12;
-                }
-                return -1L;
-            }
-            while (true) {
-                long j13 = (g0Var.f48274c - g0Var.f48273b) + j12;
-                if (j13 > j10) {
-                    break;
-                }
-                g0Var = g0Var.f48277f;
-                Intrinsics.checkNotNull(g0Var);
-                j12 = j13;
-            }
-            while (j12 < j11) {
-                byte[] bArr2 = g0Var.f48272a;
-                int min2 = (int) Math.min(g0Var.f48274c, (g0Var.f48273b + j11) - j12);
-                i10 = (int) ((g0Var.f48273b + j10) - j12);
-                while (i10 < min2) {
-                    if (bArr2[i10] != b10) {
-                        i10++;
-                    }
-                }
-                j12 += g0Var.f48274c - g0Var.f48273b;
-                g0Var = g0Var.f48277f;
-                Intrinsics.checkNotNull(g0Var);
-                j10 = j12;
-            }
-            return -1L;
-            return (i10 - g0Var.f48273b) + j12;
+    public void e0(Buffer sink, long j10) {
+        Intrinsics.checkNotNullParameter(sink, "sink");
+        if (size() >= j10) {
+            sink.u0(this, j10);
+        } else {
+            sink.u0(this, size());
+            throw new EOFException();
         }
-        throw new IllegalArgumentException(("size=" + size() + " fromIndex=" + j10 + " toIndex=" + j11).toString());
     }
 
-    @Override // okio.BufferedSource
-    public long e2(Sink sink) {
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        long size = size();
-        if (size > 0) {
-            sink.w0(this, size);
-        }
-        return size;
+    @Override // okio.BufferedSink
+    /* renamed from: e2 */
+    public Buffer writeShort(int i10) {
+        g0 s12 = s1(2);
+        byte[] bArr = s12.f49390a;
+        int i11 = s12.f49392c;
+        bArr[i11] = (byte) ((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+        bArr[i11 + 1] = (byte) (i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
+        s12.f49392c = i11 + 2;
+        W0(size() + 2);
+        return this;
     }
 
     public boolean equals(Object obj) {
@@ -975,35 +900,35 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         if (size() == 0) {
             return true;
         }
-        g0 g0Var = this.f43203d;
+        g0 g0Var = this.f42330d;
         Intrinsics.checkNotNull(g0Var);
-        g0 g0Var2 = buffer.f43203d;
+        g0 g0Var2 = buffer.f42330d;
         Intrinsics.checkNotNull(g0Var2);
-        int i10 = g0Var.f48273b;
-        int i11 = g0Var2.f48273b;
+        int i10 = g0Var.f49391b;
+        int i11 = g0Var2.f49391b;
         long j10 = 0;
         while (j10 < size()) {
-            long min = Math.min(g0Var.f48274c - i10, g0Var2.f48274c - i11);
+            long min = Math.min(g0Var.f49392c - i10, g0Var2.f49392c - i11);
             long j11 = 0;
             while (j11 < min) {
                 int i12 = i10 + 1;
                 int i13 = i11 + 1;
-                if (g0Var.f48272a[i10] != g0Var2.f48272a[i11]) {
+                if (g0Var.f49390a[i10] != g0Var2.f49390a[i11]) {
                     return false;
                 }
                 j11++;
                 i10 = i12;
                 i11 = i13;
             }
-            if (i10 == g0Var.f48274c) {
-                g0Var = g0Var.f48277f;
+            if (i10 == g0Var.f49392c) {
+                g0Var = g0Var.f49395f;
                 Intrinsics.checkNotNull(g0Var);
-                i10 = g0Var.f48273b;
+                i10 = g0Var.f49391b;
             }
-            if (i11 == g0Var2.f48274c) {
-                g0Var2 = g0Var2.f48277f;
+            if (i11 == g0Var2.f49392c) {
+                g0Var2 = g0Var2.f49395f;
                 Intrinsics.checkNotNull(g0Var2);
-                i11 = g0Var2.f48273b;
+                i11 = g0Var2.f49391b;
             }
             j10 += min;
         }
@@ -1011,38 +936,67 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
     }
 
     @Override // okio.BufferedSource
-    public long f0(ByteString targetBytes) {
-        Intrinsics.checkNotNullParameter(targetBytes, "targetBytes");
-        return I0(targetBytes, 0L);
-    }
-
-    @Override // okio.BufferedSource
-    public ByteString f1(long j10) {
-        if (j10 >= 0 && j10 <= 2147483647L) {
-            if (size() >= j10) {
-                if (j10 >= 4096) {
-                    ByteString w12 = w1((int) j10);
-                    skip(j10);
-                    return w12;
-                }
-                return new ByteString(N0(j10));
+    public long f0(byte b10, long j10, long j11) {
+        g0 g0Var;
+        int i10;
+        long j12 = 0;
+        if (0 <= j10 && j10 <= j11) {
+            if (j11 > size()) {
+                j11 = size();
             }
-            throw new EOFException();
+            if (j10 == j11 || (g0Var = this.f42330d) == null) {
+                return -1L;
+            }
+            if (size() - j10 < j10) {
+                j12 = size();
+                while (j12 > j10) {
+                    g0Var = g0Var.f49396g;
+                    Intrinsics.checkNotNull(g0Var);
+                    j12 -= g0Var.f49392c - g0Var.f49391b;
+                }
+                while (j12 < j11) {
+                    byte[] bArr = g0Var.f49390a;
+                    int min = (int) Math.min(g0Var.f49392c, (g0Var.f49391b + j11) - j12);
+                    i10 = (int) ((g0Var.f49391b + j10) - j12);
+                    while (i10 < min) {
+                        if (bArr[i10] != b10) {
+                            i10++;
+                        }
+                    }
+                    j12 += g0Var.f49392c - g0Var.f49391b;
+                    g0Var = g0Var.f49395f;
+                    Intrinsics.checkNotNull(g0Var);
+                    j10 = j12;
+                }
+                return -1L;
+            }
+            while (true) {
+                long j13 = (g0Var.f49392c - g0Var.f49391b) + j12;
+                if (j13 > j10) {
+                    break;
+                }
+                g0Var = g0Var.f49395f;
+                Intrinsics.checkNotNull(g0Var);
+                j12 = j13;
+            }
+            while (j12 < j11) {
+                byte[] bArr2 = g0Var.f49390a;
+                int min2 = (int) Math.min(g0Var.f49392c, (g0Var.f49391b + j11) - j12);
+                i10 = (int) ((g0Var.f49391b + j10) - j12);
+                while (i10 < min2) {
+                    if (bArr2[i10] != b10) {
+                        i10++;
+                    }
+                }
+                j12 += g0Var.f49392c - g0Var.f49391b;
+                g0Var = g0Var.f49395f;
+                Intrinsics.checkNotNull(g0Var);
+                j10 = j12;
+            }
+            return -1L;
+            return (i10 - g0Var.f49391b) + j12;
         }
-        throw new IllegalArgumentException(("byteCount: " + j10).toString());
-    }
-
-    @Override // okio.BufferedSink
-    /* renamed from: f2 */
-    public Buffer writeShort(int i10) {
-        g0 x12 = x1(2);
-        byte[] bArr = x12.f48272a;
-        int i11 = x12.f48274c;
-        bArr[i11] = (byte) ((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
-        bArr[i11 + 1] = (byte) (i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
-        x12.f48274c = i11 + 2;
-        Y0(size() + 2);
-        return this;
+        throw new IllegalArgumentException(("size=" + size() + " fromIndex=" + j10 + " toIndex=" + j11).toString());
     }
 
     @Override // okio.BufferedSink, okio.Sink, java.io.Flushable
@@ -1050,35 +1004,19 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
     }
 
     @Override // okio.BufferedSource
-    public String h0(long j10) {
-        if (j10 >= 0) {
-            long j11 = LongCompanionObject.MAX_VALUE;
-            if (j10 != LongCompanionObject.MAX_VALUE) {
-                j11 = j10 + 1;
-            }
-            long j12 = j11;
-            long e02 = e0((byte) 10, 0L, j12);
-            if (e02 != -1) {
-                return ru.a.d(this, e02);
-            }
-            if (j12 < size() && Y(j12 - 1) == 13 && Y(j12) == 10) {
-                return ru.a.d(this, j12);
-            }
-            Buffer buffer = new Buffer();
-            z(buffer, 0L, Math.min(32, size()));
-            throw new EOFException("\\n not found: limit=" + Math.min(size(), j10) + " content=" + buffer.K1().q() + (char) 8230);
-        }
-        throw new IllegalArgumentException(("limit < 0: " + j10).toString());
+    public long g0(ByteString targetBytes) {
+        Intrinsics.checkNotNullParameter(targetBytes, "targetBytes");
+        return G0(targetBytes, 0L);
     }
 
-    public Buffer h2(String string, int i10, int i11, Charset charset) {
+    public Buffer g2(String string, int i10, int i11, Charset charset) {
         Intrinsics.checkNotNullParameter(string, "string");
         Intrinsics.checkNotNullParameter(charset, "charset");
         if (i10 >= 0) {
             if (i11 >= i10) {
                 if (i11 <= string.length()) {
                     if (Intrinsics.areEqual(charset, Charsets.UTF_8)) {
-                        return z0(string, i10, i11);
+                        return x0(string, i10, i11);
                     }
                     String substring = string.substring(i10, i11);
                     Intrinsics.checkNotNullExpressionValue(substring, "substring(...)");
@@ -1093,27 +1031,49 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         throw new IllegalArgumentException(("beginIndex < 0: " + i10).toString());
     }
 
+    public Buffer h2(String string, Charset charset) {
+        Intrinsics.checkNotNullParameter(string, "string");
+        Intrinsics.checkNotNullParameter(charset, "charset");
+        return g2(string, 0, string.length(), charset);
+    }
+
     public int hashCode() {
-        g0 g0Var = this.f43203d;
+        g0 g0Var = this.f42330d;
         if (g0Var == null) {
             return 0;
         }
         int i10 = 1;
         do {
-            int i11 = g0Var.f48274c;
-            for (int i12 = g0Var.f48273b; i12 < i11; i12++) {
-                i10 = (i10 * 31) + g0Var.f48272a[i12];
+            int i11 = g0Var.f49392c;
+            for (int i12 = g0Var.f49391b; i12 < i11; i12++) {
+                i10 = (i10 * 31) + g0Var.f49390a[i12];
             }
-            g0Var = g0Var.f48277f;
+            g0Var = g0Var.f49395f;
             Intrinsics.checkNotNull(g0Var);
-        } while (g0Var != this.f43203d);
+        } while (g0Var != this.f42330d);
         return i10;
     }
 
-    public Buffer i2(String string, Charset charset) {
-        Intrinsics.checkNotNullParameter(string, "string");
-        Intrinsics.checkNotNullParameter(charset, "charset");
-        return h2(string, 0, string.length(), charset);
+    @Override // okio.BufferedSource
+    public String i0(long j10) {
+        if (j10 >= 0) {
+            long j11 = LongCompanionObject.MAX_VALUE;
+            if (j10 != LongCompanionObject.MAX_VALUE) {
+                j11 = j10 + 1;
+            }
+            long j12 = j11;
+            long f02 = f0((byte) 10, 0L, j12);
+            if (f02 != -1) {
+                return su.a.d(this, f02);
+            }
+            if (j12 < size() && Z(j12 - 1) == 13 && Z(j12) == 10) {
+                return su.a.d(this, j12);
+            }
+            Buffer buffer = new Buffer();
+            z(buffer, 0L, Math.min(32, size()));
+            throw new EOFException("\\n not found: limit=" + Math.min(size(), j10) + " content=" + buffer.I1().q() + (char) 8230);
+        }
+        throw new IllegalArgumentException(("limit < 0: " + j10).toString());
     }
 
     @Override // java.nio.channels.Channel
@@ -1121,15 +1081,28 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         return true;
     }
 
+    @Override // okio.BufferedSource
+    public byte[] j1() {
+        return I0(size());
+    }
+
     @Override // okio.BufferedSink
     /* renamed from: j2 */
     public Buffer q0(String string) {
         Intrinsics.checkNotNullParameter(string, "string");
-        return z0(string, 0, string.length());
+        return x0(string, 0, string.length());
     }
 
     public final void k() {
         skip(size());
+    }
+
+    @Override // okio.BufferedSource
+    public boolean k1() {
+        if (this.f42331e == 0) {
+            return true;
+        }
+        return false;
     }
 
     @Override // okio.BufferedSink
@@ -1140,11 +1113,6 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
     /* renamed from: m */
     public Buffer clone() {
         return y();
-    }
-
-    @Override // okio.BufferedSource
-    public byte[] m1() {
-        return N0(size());
     }
 
     /* JADX WARN: Removed duplicated region for block: B:32:0x0095  */
@@ -1167,11 +1135,11 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
             r1 = r0
             r4 = r2
         Ld:
-            qu.g0 r6 = r14.f43203d
+            ru.g0 r6 = r14.f42330d
             kotlin.jvm.internal.Intrinsics.checkNotNull(r6)
-            byte[] r7 = r6.f48272a
-            int r8 = r6.f48273b
-            int r9 = r6.f48274c
+            byte[] r7 = r6.f49390a
+            int r8 = r6.f49391b
+            int r9 = r6.f49392c
         L18:
             if (r8 >= r9) goto L93
             r10 = r7[r8]
@@ -1209,14 +1177,14 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         L4c:
             okio.Buffer r0 = new okio.Buffer
             r0.<init>()
-            okio.Buffer r0 = r0.J1(r4)
+            okio.Buffer r0 = r0.H1(r4)
             okio.Buffer r0 = r0.writeByte(r10)
             java.lang.NumberFormatException r1 = new java.lang.NumberFormatException
             java.lang.StringBuilder r2 = new java.lang.StringBuilder
             r2.<init>()
             java.lang.String r3 = "Number too large: "
             r2.append(r3)
-            java.lang.String r0 = r0.S1()
+            java.lang.String r0 = r0.R1()
             r2.append(r0)
             java.lang.String r0 = r2.toString()
             r1.<init>(r0)
@@ -1238,21 +1206,21 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
             throw r0
         L93:
             if (r8 != r9) goto L9f
-            qu.g0 r7 = r6.b()
-            r14.f43203d = r7
-            qu.h0.b(r6)
+            ru.g0 r7 = r6.b()
+            r14.f42330d = r7
+            ru.h0.b(r6)
             goto La1
         L9f:
-            r6.f48273b = r8
+            r6.f49391b = r8
         La1:
             if (r1 != 0) goto La7
-            qu.g0 r6 = r14.f43203d
+            ru.g0 r6 = r14.f42330d
             if (r6 != 0) goto Ld
         La7:
             long r1 = r14.size()
             long r6 = (long) r0
             long r1 = r1 - r6
-            r14.Y0(r1)
+            r14.W0(r1)
             return r4
         Lb1:
             java.io.EOFException r0 = new java.io.EOFException
@@ -1267,303 +1235,19 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         if (size == 0) {
             return 0L;
         }
-        g0 g0Var = this.f43203d;
+        g0 g0Var = this.f42330d;
         Intrinsics.checkNotNull(g0Var);
-        g0 g0Var2 = g0Var.f48278g;
+        g0 g0Var2 = g0Var.f49396g;
         Intrinsics.checkNotNull(g0Var2);
-        int i10 = g0Var2.f48274c;
-        if (i10 < 8192 && g0Var2.f48276e) {
-            return size - (i10 - g0Var2.f48273b);
+        int i10 = g0Var2.f49392c;
+        if (i10 < 8192 && g0Var2.f49394e) {
+            return size - (i10 - g0Var2.f49391b);
         }
         return size;
     }
 
-    @Override // okio.BufferedSource
-    public boolean n1() {
-        if (this.f43204e == 0) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // okio.BufferedSource
-    public InputStream n2() {
-        return new b();
-    }
-
-    @Override // okio.BufferedSink
-    /* renamed from: o2 */
-    public Buffer z0(String string, int i10, int i11) {
-        char charAt;
-        char c10;
-        Intrinsics.checkNotNullParameter(string, "string");
-        if (i10 >= 0) {
-            if (i11 >= i10) {
-                if (i11 <= string.length()) {
-                    while (i10 < i11) {
-                        char charAt2 = string.charAt(i10);
-                        if (charAt2 < 128) {
-                            g0 x12 = x1(1);
-                            byte[] bArr = x12.f48272a;
-                            int i12 = x12.f48274c - i10;
-                            int min = Math.min(i11, 8192 - i12);
-                            int i13 = i10 + 1;
-                            bArr[i10 + i12] = (byte) charAt2;
-                            while (true) {
-                                i10 = i13;
-                                if (i10 >= min || (charAt = string.charAt(i10)) >= 128) {
-                                    break;
-                                }
-                                i13 = i10 + 1;
-                                bArr[i10 + i12] = (byte) charAt;
-                            }
-                            int i14 = x12.f48274c;
-                            int i15 = (i12 + i10) - i14;
-                            x12.f48274c = i14 + i15;
-                            Y0(size() + i15);
-                        } else {
-                            if (charAt2 < 2048) {
-                                g0 x13 = x1(2);
-                                byte[] bArr2 = x13.f48272a;
-                                int i16 = x13.f48274c;
-                                bArr2[i16] = (byte) ((charAt2 >> 6) | 192);
-                                bArr2[i16 + 1] = (byte) ((charAt2 & '?') | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                                x13.f48274c = i16 + 2;
-                                Y0(size() + 2);
-                            } else if (charAt2 >= 55296 && charAt2 <= 57343) {
-                                int i17 = i10 + 1;
-                                if (i17 < i11) {
-                                    c10 = string.charAt(i17);
-                                } else {
-                                    c10 = 0;
-                                }
-                                if (charAt2 <= 56319 && 56320 <= c10 && c10 < 57344) {
-                                    int i18 = (((charAt2 & 1023) << 10) | (c10 & 1023)) + 65536;
-                                    g0 x14 = x1(4);
-                                    byte[] bArr3 = x14.f48272a;
-                                    int i19 = x14.f48274c;
-                                    bArr3[i19] = (byte) ((i18 >> 18) | 240);
-                                    bArr3[i19 + 1] = (byte) (((i18 >> 12) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                                    bArr3[i19 + 2] = (byte) (((i18 >> 6) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                                    bArr3[i19 + 3] = (byte) ((i18 & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                                    x14.f48274c = i19 + 4;
-                                    Y0(size() + 4);
-                                    i10 += 2;
-                                } else {
-                                    writeByte(63);
-                                    i10 = i17;
-                                }
-                            } else {
-                                g0 x15 = x1(3);
-                                byte[] bArr4 = x15.f48272a;
-                                int i20 = x15.f48274c;
-                                bArr4[i20] = (byte) ((charAt2 >> '\f') | 224);
-                                bArr4[i20 + 1] = (byte) ((63 & (charAt2 >> 6)) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                                bArr4[i20 + 2] = (byte) ((charAt2 & '?') | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                                x15.f48274c = i20 + 3;
-                                Y0(size() + 3);
-                            }
-                            i10++;
-                        }
-                    }
-                    return this;
-                }
-                throw new IllegalArgumentException(("endIndex > string.length: " + i11 + " > " + string.length()).toString());
-            }
-            throw new IllegalArgumentException(("endIndex < beginIndex: " + i11 + " < " + i10).toString());
-        }
-        throw new IllegalArgumentException(("beginIndex < 0: " + i10).toString());
-    }
-
-    public Buffer p2(int i10) {
-        if (i10 < 128) {
-            writeByte(i10);
-            return this;
-        } else if (i10 < 2048) {
-            g0 x12 = x1(2);
-            byte[] bArr = x12.f48272a;
-            int i11 = x12.f48274c;
-            bArr[i11] = (byte) ((i10 >> 6) | 192);
-            bArr[i11 + 1] = (byte) ((i10 & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-            x12.f48274c = i11 + 2;
-            Y0(size() + 2);
-            return this;
-        } else if (55296 <= i10 && i10 < 57344) {
-            writeByte(63);
-            return this;
-        } else if (i10 < 65536) {
-            g0 x13 = x1(3);
-            byte[] bArr2 = x13.f48272a;
-            int i12 = x13.f48274c;
-            bArr2[i12] = (byte) ((i10 >> 12) | 224);
-            bArr2[i12 + 1] = (byte) (((i10 >> 6) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-            bArr2[i12 + 2] = (byte) ((i10 & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-            x13.f48274c = i12 + 3;
-            Y0(size() + 3);
-            return this;
-        } else if (i10 <= 1114111) {
-            g0 x14 = x1(4);
-            byte[] bArr3 = x14.f48272a;
-            int i13 = x14.f48274c;
-            bArr3[i13] = (byte) ((i10 >> 18) | 240);
-            bArr3[i13 + 1] = (byte) (((i10 >> 12) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-            bArr3[i13 + 2] = (byte) (((i10 >> 6) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-            bArr3[i13 + 3] = (byte) ((i10 & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-            x14.f48274c = i13 + 4;
-            Y0(size() + 4);
-            return this;
-        } else {
-            throw new IllegalArgumentException("Unexpected code point: 0x" + okio.b.l(i10));
-        }
-    }
-
-    @Override // okio.BufferedSource
-    public BufferedSource peek() {
-        return x.d(new d0(this));
-    }
-
-    @Override // java.nio.channels.ReadableByteChannel
-    public int read(ByteBuffer sink) {
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        g0 g0Var = this.f43203d;
-        if (g0Var == null) {
-            return -1;
-        }
-        int min = Math.min(sink.remaining(), g0Var.f48274c - g0Var.f48273b);
-        sink.put(g0Var.f48272a, g0Var.f48273b, min);
-        int i10 = g0Var.f48273b + min;
-        g0Var.f48273b = i10;
-        this.f43204e -= min;
-        if (i10 == g0Var.f48274c) {
-            this.f43203d = g0Var.b();
-            h0.b(g0Var);
-        }
-        return min;
-    }
-
-    @Override // okio.BufferedSource
-    public byte readByte() {
-        if (size() != 0) {
-            g0 g0Var = this.f43203d;
-            Intrinsics.checkNotNull(g0Var);
-            int i10 = g0Var.f48273b;
-            int i11 = g0Var.f48274c;
-            int i12 = i10 + 1;
-            byte b10 = g0Var.f48272a[i10];
-            Y0(size() - 1);
-            if (i12 == i11) {
-                this.f43203d = g0Var.b();
-                h0.b(g0Var);
-                return b10;
-            }
-            g0Var.f48273b = i12;
-            return b10;
-        }
-        throw new EOFException();
-    }
-
-    @Override // okio.BufferedSource
-    public void readFully(byte[] sink) {
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        int i10 = 0;
-        while (i10 < sink.length) {
-            int read = read(sink, i10, sink.length - i10);
-            if (read != -1) {
-                i10 += read;
-            } else {
-                throw new EOFException();
-            }
-        }
-    }
-
-    @Override // okio.BufferedSource
-    public int readInt() {
-        if (size() >= 4) {
-            g0 g0Var = this.f43203d;
-            Intrinsics.checkNotNull(g0Var);
-            int i10 = g0Var.f48273b;
-            int i11 = g0Var.f48274c;
-            if (i11 - i10 < 4) {
-                return ((readByte() & 255) << 24) | ((readByte() & 255) << 16) | ((readByte() & 255) << 8) | (readByte() & 255);
-            }
-            byte[] bArr = g0Var.f48272a;
-            int i12 = ((bArr[i10 + 1] & 255) << 16) | ((bArr[i10] & 255) << 24);
-            int i13 = i10 + 3;
-            int i14 = i10 + 4;
-            int i15 = (bArr[i13] & 255) | i12 | ((bArr[i10 + 2] & 255) << 8);
-            Y0(size() - 4);
-            if (i14 == i11) {
-                this.f43203d = g0Var.b();
-                h0.b(g0Var);
-                return i15;
-            }
-            g0Var.f48273b = i14;
-            return i15;
-        }
-        throw new EOFException();
-    }
-
-    @Override // okio.BufferedSource
-    public long readLong() {
-        if (size() >= 8) {
-            g0 g0Var = this.f43203d;
-            Intrinsics.checkNotNull(g0Var);
-            int i10 = g0Var.f48273b;
-            int i11 = g0Var.f48274c;
-            if (i11 - i10 < 8) {
-                return ((readInt() & 4294967295L) << 32) | (4294967295L & readInt());
-            }
-            byte[] bArr = g0Var.f48272a;
-            long j10 = ((bArr[i10] & 255) << 56) | ((bArr[i10 + 1] & 255) << 48) | ((bArr[i10 + 2] & 255) << 40);
-            int i12 = i10 + 7;
-            int i13 = i10 + 8;
-            long j11 = j10 | ((bArr[i10 + 3] & 255) << 32) | ((bArr[i10 + 4] & 255) << 24) | ((bArr[i10 + 5] & 255) << 16) | ((bArr[i10 + 6] & 255) << 8) | (bArr[i12] & 255);
-            Y0(size() - 8);
-            if (i13 == i11) {
-                this.f43203d = g0Var.b();
-                h0.b(g0Var);
-                return j11;
-            }
-            g0Var.f48273b = i13;
-            return j11;
-        }
-        throw new EOFException();
-    }
-
-    @Override // okio.BufferedSource
-    public short readShort() {
-        if (size() >= 2) {
-            g0 g0Var = this.f43203d;
-            Intrinsics.checkNotNull(g0Var);
-            int i10 = g0Var.f48273b;
-            int i11 = g0Var.f48274c;
-            if (i11 - i10 < 2) {
-                return (short) (((readByte() & 255) << 8) | (readByte() & 255));
-            }
-            byte[] bArr = g0Var.f48272a;
-            int i12 = i10 + 1;
-            int i13 = i10 + 2;
-            int i14 = (bArr[i12] & 255) | ((bArr[i10] & 255) << 8);
-            Y0(size() - 2);
-            if (i13 == i11) {
-                this.f43203d = g0Var.b();
-                h0.b(g0Var);
-            } else {
-                g0Var.f48273b = i13;
-            }
-            return (short) i14;
-        }
-        throw new EOFException();
-    }
-
-    @Override // okio.BufferedSource
-    public boolean s0(long j10, ByteString bytes) {
-        Intrinsics.checkNotNullParameter(bytes, "bytes");
-        return K0(j10, bytes, 0, bytes.G());
-    }
-
     /* JADX WARN: Code restructure failed: missing block: B:39:0x00a2, code lost:
-        Y0(size() - r1);
+        W0(size() - r1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x00ab, code lost:
         if (r2 == false) goto L58;
@@ -1590,7 +1274,7 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         r1 = "Expected a digit or '-'";
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x00e4, code lost:
-        throw new java.lang.NumberFormatException(r1 + " but was 0x" + okio.b.k(Y(r17)));
+        throw new java.lang.NumberFormatException(r1 + " but was 0x" + okio.b.k(Z(r17)));
      */
     /* JADX WARN: Code restructure failed: missing block: B:52:0x00ea, code lost:
         throw new java.io.EOFException();
@@ -1609,31 +1293,366 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public long s1() {
+    public long n1() {
         /*
             Method dump skipped, instructions count: 246
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: okio.Buffer.s1():long");
+        throw new UnsupportedOperationException("Method not decompiled: okio.Buffer.n1():long");
+    }
+
+    @Override // okio.BufferedSource
+    public InputStream n2() {
+        return new b();
+    }
+
+    @Override // okio.BufferedSink
+    /* renamed from: o2 */
+    public Buffer x0(String string, int i10, int i11) {
+        char charAt;
+        char c10;
+        Intrinsics.checkNotNullParameter(string, "string");
+        if (i10 >= 0) {
+            if (i11 >= i10) {
+                if (i11 <= string.length()) {
+                    while (i10 < i11) {
+                        char charAt2 = string.charAt(i10);
+                        if (charAt2 < 128) {
+                            g0 s12 = s1(1);
+                            byte[] bArr = s12.f49390a;
+                            int i12 = s12.f49392c - i10;
+                            int min = Math.min(i11, 8192 - i12);
+                            int i13 = i10 + 1;
+                            bArr[i10 + i12] = (byte) charAt2;
+                            while (true) {
+                                i10 = i13;
+                                if (i10 >= min || (charAt = string.charAt(i10)) >= 128) {
+                                    break;
+                                }
+                                i13 = i10 + 1;
+                                bArr[i10 + i12] = (byte) charAt;
+                            }
+                            int i14 = s12.f49392c;
+                            int i15 = (i12 + i10) - i14;
+                            s12.f49392c = i14 + i15;
+                            W0(size() + i15);
+                        } else {
+                            if (charAt2 < 2048) {
+                                g0 s13 = s1(2);
+                                byte[] bArr2 = s13.f49390a;
+                                int i16 = s13.f49392c;
+                                bArr2[i16] = (byte) ((charAt2 >> 6) | 192);
+                                bArr2[i16 + 1] = (byte) ((charAt2 & '?') | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                                s13.f49392c = i16 + 2;
+                                W0(size() + 2);
+                            } else if (charAt2 >= 55296 && charAt2 <= 57343) {
+                                int i17 = i10 + 1;
+                                if (i17 < i11) {
+                                    c10 = string.charAt(i17);
+                                } else {
+                                    c10 = 0;
+                                }
+                                if (charAt2 <= 56319 && 56320 <= c10 && c10 < 57344) {
+                                    int i18 = (((charAt2 & 1023) << 10) | (c10 & 1023)) + 65536;
+                                    g0 s14 = s1(4);
+                                    byte[] bArr3 = s14.f49390a;
+                                    int i19 = s14.f49392c;
+                                    bArr3[i19] = (byte) ((i18 >> 18) | 240);
+                                    bArr3[i19 + 1] = (byte) (((i18 >> 12) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                                    bArr3[i19 + 2] = (byte) (((i18 >> 6) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                                    bArr3[i19 + 3] = (byte) ((i18 & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                                    s14.f49392c = i19 + 4;
+                                    W0(size() + 4);
+                                    i10 += 2;
+                                } else {
+                                    writeByte(63);
+                                    i10 = i17;
+                                }
+                            } else {
+                                g0 s15 = s1(3);
+                                byte[] bArr4 = s15.f49390a;
+                                int i20 = s15.f49392c;
+                                bArr4[i20] = (byte) ((charAt2 >> '\f') | 224);
+                                bArr4[i20 + 1] = (byte) ((63 & (charAt2 >> 6)) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                                bArr4[i20 + 2] = (byte) ((charAt2 & '?') | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                                s15.f49392c = i20 + 3;
+                                W0(size() + 3);
+                            }
+                            i10++;
+                        }
+                    }
+                    return this;
+                }
+                throw new IllegalArgumentException(("endIndex > string.length: " + i11 + " > " + string.length()).toString());
+            }
+            throw new IllegalArgumentException(("endIndex < beginIndex: " + i11 + " < " + i10).toString());
+        }
+        throw new IllegalArgumentException(("beginIndex < 0: " + i10).toString());
+    }
+
+    public Buffer p2(int i10) {
+        if (i10 < 128) {
+            writeByte(i10);
+            return this;
+        } else if (i10 < 2048) {
+            g0 s12 = s1(2);
+            byte[] bArr = s12.f49390a;
+            int i11 = s12.f49392c;
+            bArr[i11] = (byte) ((i10 >> 6) | 192);
+            bArr[i11 + 1] = (byte) ((i10 & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            s12.f49392c = i11 + 2;
+            W0(size() + 2);
+            return this;
+        } else if (55296 <= i10 && i10 < 57344) {
+            writeByte(63);
+            return this;
+        } else if (i10 < 65536) {
+            g0 s13 = s1(3);
+            byte[] bArr2 = s13.f49390a;
+            int i12 = s13.f49392c;
+            bArr2[i12] = (byte) ((i10 >> 12) | 224);
+            bArr2[i12 + 1] = (byte) (((i10 >> 6) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            bArr2[i12 + 2] = (byte) ((i10 & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            s13.f49392c = i12 + 3;
+            W0(size() + 3);
+            return this;
+        } else if (i10 <= 1114111) {
+            g0 s14 = s1(4);
+            byte[] bArr3 = s14.f49390a;
+            int i13 = s14.f49392c;
+            bArr3[i13] = (byte) ((i10 >> 18) | 240);
+            bArr3[i13 + 1] = (byte) (((i10 >> 12) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            bArr3[i13 + 2] = (byte) (((i10 >> 6) & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            bArr3[i13 + 3] = (byte) ((i10 & 63) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            s14.f49392c = i13 + 4;
+            W0(size() + 4);
+            return this;
+        } else {
+            throw new IllegalArgumentException("Unexpected code point: 0x" + okio.b.l(i10));
+        }
+    }
+
+    @Override // okio.BufferedSource
+    public BufferedSource peek() {
+        return x.d(new d0(this));
+    }
+
+    @Override // okio.BufferedSource
+    public boolean r0(long j10, ByteString bytes) {
+        Intrinsics.checkNotNullParameter(bytes, "bytes");
+        return H0(j10, bytes, 0, bytes.G());
+    }
+
+    public final ByteString r1(int i10) {
+        if (i10 == 0) {
+            return ByteString.f42342p;
+        }
+        okio.b.b(size(), 0L, i10);
+        g0 g0Var = this.f42330d;
+        int i11 = 0;
+        int i12 = 0;
+        int i13 = 0;
+        while (i12 < i10) {
+            Intrinsics.checkNotNull(g0Var);
+            int i14 = g0Var.f49392c;
+            int i15 = g0Var.f49391b;
+            if (i14 != i15) {
+                i12 += i14 - i15;
+                i13++;
+                g0Var = g0Var.f49395f;
+            } else {
+                throw new AssertionError("s.limit == s.pos");
+            }
+        }
+        byte[][] bArr = new byte[i13];
+        int[] iArr = new int[i13 * 2];
+        g0 g0Var2 = this.f42330d;
+        int i16 = 0;
+        while (i11 < i10) {
+            Intrinsics.checkNotNull(g0Var2);
+            bArr[i16] = g0Var2.f49390a;
+            i11 += g0Var2.f49392c - g0Var2.f49391b;
+            iArr[i16] = Math.min(i11, i10);
+            iArr[i16 + i13] = g0Var2.f49391b;
+            g0Var2.f49393d = true;
+            i16++;
+            g0Var2 = g0Var2.f49395f;
+        }
+        return new i0(bArr, iArr);
+    }
+
+    @Override // java.nio.channels.ReadableByteChannel
+    public int read(ByteBuffer sink) {
+        Intrinsics.checkNotNullParameter(sink, "sink");
+        g0 g0Var = this.f42330d;
+        if (g0Var == null) {
+            return -1;
+        }
+        int min = Math.min(sink.remaining(), g0Var.f49392c - g0Var.f49391b);
+        sink.put(g0Var.f49390a, g0Var.f49391b, min);
+        int i10 = g0Var.f49391b + min;
+        g0Var.f49391b = i10;
+        this.f42331e -= min;
+        if (i10 == g0Var.f49392c) {
+            this.f42330d = g0Var.b();
+            h0.b(g0Var);
+        }
+        return min;
+    }
+
+    @Override // okio.BufferedSource
+    public byte readByte() {
+        if (size() != 0) {
+            g0 g0Var = this.f42330d;
+            Intrinsics.checkNotNull(g0Var);
+            int i10 = g0Var.f49391b;
+            int i11 = g0Var.f49392c;
+            int i12 = i10 + 1;
+            byte b10 = g0Var.f49390a[i10];
+            W0(size() - 1);
+            if (i12 == i11) {
+                this.f42330d = g0Var.b();
+                h0.b(g0Var);
+                return b10;
+            }
+            g0Var.f49391b = i12;
+            return b10;
+        }
+        throw new EOFException();
+    }
+
+    @Override // okio.BufferedSource
+    public void readFully(byte[] sink) {
+        Intrinsics.checkNotNullParameter(sink, "sink");
+        int i10 = 0;
+        while (i10 < sink.length) {
+            int read = read(sink, i10, sink.length - i10);
+            if (read != -1) {
+                i10 += read;
+            } else {
+                throw new EOFException();
+            }
+        }
+    }
+
+    @Override // okio.BufferedSource
+    public int readInt() {
+        if (size() >= 4) {
+            g0 g0Var = this.f42330d;
+            Intrinsics.checkNotNull(g0Var);
+            int i10 = g0Var.f49391b;
+            int i11 = g0Var.f49392c;
+            if (i11 - i10 < 4) {
+                return ((readByte() & 255) << 24) | ((readByte() & 255) << 16) | ((readByte() & 255) << 8) | (readByte() & 255);
+            }
+            byte[] bArr = g0Var.f49390a;
+            int i12 = ((bArr[i10 + 1] & 255) << 16) | ((bArr[i10] & 255) << 24);
+            int i13 = i10 + 3;
+            int i14 = i10 + 4;
+            int i15 = (bArr[i13] & 255) | i12 | ((bArr[i10 + 2] & 255) << 8);
+            W0(size() - 4);
+            if (i14 == i11) {
+                this.f42330d = g0Var.b();
+                h0.b(g0Var);
+                return i15;
+            }
+            g0Var.f49391b = i14;
+            return i15;
+        }
+        throw new EOFException();
+    }
+
+    @Override // okio.BufferedSource
+    public long readLong() {
+        if (size() >= 8) {
+            g0 g0Var = this.f42330d;
+            Intrinsics.checkNotNull(g0Var);
+            int i10 = g0Var.f49391b;
+            int i11 = g0Var.f49392c;
+            if (i11 - i10 < 8) {
+                return ((readInt() & 4294967295L) << 32) | (4294967295L & readInt());
+            }
+            byte[] bArr = g0Var.f49390a;
+            long j10 = ((bArr[i10] & 255) << 56) | ((bArr[i10 + 1] & 255) << 48) | ((bArr[i10 + 2] & 255) << 40);
+            int i12 = i10 + 7;
+            int i13 = i10 + 8;
+            long j11 = j10 | ((bArr[i10 + 3] & 255) << 32) | ((bArr[i10 + 4] & 255) << 24) | ((bArr[i10 + 5] & 255) << 16) | ((bArr[i10 + 6] & 255) << 8) | (bArr[i12] & 255);
+            W0(size() - 8);
+            if (i13 == i11) {
+                this.f42330d = g0Var.b();
+                h0.b(g0Var);
+                return j11;
+            }
+            g0Var.f49391b = i13;
+            return j11;
+        }
+        throw new EOFException();
+    }
+
+    @Override // okio.BufferedSource
+    public short readShort() {
+        if (size() >= 2) {
+            g0 g0Var = this.f42330d;
+            Intrinsics.checkNotNull(g0Var);
+            int i10 = g0Var.f49391b;
+            int i11 = g0Var.f49392c;
+            if (i11 - i10 < 2) {
+                return (short) (((readByte() & 255) << 8) | (readByte() & 255));
+            }
+            byte[] bArr = g0Var.f49390a;
+            int i12 = i10 + 1;
+            int i13 = i10 + 2;
+            int i14 = (bArr[i12] & 255) | ((bArr[i10] & 255) << 8);
+            W0(size() - 2);
+            if (i13 == i11) {
+                this.f42330d = g0Var.b();
+                h0.b(g0Var);
+            } else {
+                g0Var.f49391b = i13;
+            }
+            return (short) i14;
+        }
+        throw new EOFException();
+    }
+
+    public final g0 s1(int i10) {
+        if (i10 >= 1 && i10 <= 8192) {
+            g0 g0Var = this.f42330d;
+            if (g0Var == null) {
+                g0 c10 = h0.c();
+                this.f42330d = c10;
+                c10.f49396g = c10;
+                c10.f49395f = c10;
+                return c10;
+            }
+            Intrinsics.checkNotNull(g0Var);
+            g0 g0Var2 = g0Var.f49396g;
+            Intrinsics.checkNotNull(g0Var2);
+            if (g0Var2.f49392c + i10 <= 8192 && g0Var2.f49394e) {
+                return g0Var2;
+            }
+            return g0Var2.c(h0.c());
+        }
+        throw new IllegalArgumentException("unexpected capacity");
     }
 
     public final long size() {
-        return this.f43204e;
+        return this.f42331e;
     }
 
     @Override // okio.BufferedSource
     public void skip(long j10) {
         while (j10 > 0) {
-            g0 g0Var = this.f43203d;
+            g0 g0Var = this.f42330d;
             if (g0Var != null) {
-                int min = (int) Math.min(j10, g0Var.f48274c - g0Var.f48273b);
+                int min = (int) Math.min(j10, g0Var.f49392c - g0Var.f49391b);
                 long j11 = min;
-                Y0(size() - j11);
+                W0(size() - j11);
                 j10 -= j11;
-                int i10 = g0Var.f48273b + min;
-                g0Var.f48273b = i10;
-                if (i10 == g0Var.f48274c) {
-                    this.f43203d = g0Var.b();
+                int i10 = g0Var.f49391b + min;
+                g0Var.f49391b = i10;
+                if (i10 == g0Var.f49392c) {
+                    this.f42330d = g0Var.b();
                     h0.b(g0Var);
                 }
             } else {
@@ -1644,15 +1663,15 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
 
     @Override // okio.Source
     public Timeout timeout() {
-        return Timeout.f43220e;
+        return Timeout.f42347e;
     }
 
     public String toString() {
-        return d1().toString();
+        return a1().toString();
     }
 
     @Override // okio.Sink
-    public void w0(Buffer source, long j10) {
+    public void u0(Buffer source, long j10) {
         g0 g0Var;
         g0 g0Var2;
         int i10;
@@ -1660,55 +1679,55 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         if (source != this) {
             okio.b.b(source.size(), 0L, j10);
             while (j10 > 0) {
-                g0 g0Var3 = source.f43203d;
+                g0 g0Var3 = source.f42330d;
                 Intrinsics.checkNotNull(g0Var3);
-                int i11 = g0Var3.f48274c;
-                Intrinsics.checkNotNull(source.f43203d);
-                if (j10 < i11 - g0Var.f48273b) {
-                    g0 g0Var4 = this.f43203d;
+                int i11 = g0Var3.f49392c;
+                Intrinsics.checkNotNull(source.f42330d);
+                if (j10 < i11 - g0Var.f49391b) {
+                    g0 g0Var4 = this.f42330d;
                     if (g0Var4 != null) {
                         Intrinsics.checkNotNull(g0Var4);
-                        g0Var2 = g0Var4.f48278g;
+                        g0Var2 = g0Var4.f49396g;
                     } else {
                         g0Var2 = null;
                     }
-                    if (g0Var2 != null && g0Var2.f48276e) {
-                        long j11 = g0Var2.f48274c + j10;
-                        if (g0Var2.f48275d) {
+                    if (g0Var2 != null && g0Var2.f49394e) {
+                        long j11 = g0Var2.f49392c + j10;
+                        if (g0Var2.f49393d) {
                             i10 = 0;
                         } else {
-                            i10 = g0Var2.f48273b;
+                            i10 = g0Var2.f49391b;
                         }
                         if (j11 - i10 <= 8192) {
-                            g0 g0Var5 = source.f43203d;
+                            g0 g0Var5 = source.f42330d;
                             Intrinsics.checkNotNull(g0Var5);
                             g0Var5.g(g0Var2, (int) j10);
-                            source.Y0(source.size() - j10);
-                            Y0(size() + j10);
+                            source.W0(source.size() - j10);
+                            W0(size() + j10);
                             return;
                         }
                     }
-                    g0 g0Var6 = source.f43203d;
+                    g0 g0Var6 = source.f42330d;
                     Intrinsics.checkNotNull(g0Var6);
-                    source.f43203d = g0Var6.e((int) j10);
+                    source.f42330d = g0Var6.e((int) j10);
                 }
-                g0 g0Var7 = source.f43203d;
+                g0 g0Var7 = source.f42330d;
                 Intrinsics.checkNotNull(g0Var7);
-                long j12 = g0Var7.f48274c - g0Var7.f48273b;
-                source.f43203d = g0Var7.b();
-                g0 g0Var8 = this.f43203d;
+                long j12 = g0Var7.f49392c - g0Var7.f49391b;
+                source.f42330d = g0Var7.b();
+                g0 g0Var8 = this.f42330d;
                 if (g0Var8 == null) {
-                    this.f43203d = g0Var7;
-                    g0Var7.f48278g = g0Var7;
-                    g0Var7.f48277f = g0Var7;
+                    this.f42330d = g0Var7;
+                    g0Var7.f49396g = g0Var7;
+                    g0Var7.f49395f = g0Var7;
                 } else {
                     Intrinsics.checkNotNull(g0Var8);
-                    g0 g0Var9 = g0Var8.f48278g;
+                    g0 g0Var9 = g0Var8.f49396g;
                     Intrinsics.checkNotNull(g0Var9);
                     g0Var9.c(g0Var7).a();
                 }
-                source.Y0(source.size() - j12);
-                Y0(size() + j12);
+                source.W0(source.size() - j12);
+                W0(size() + j12);
                 j10 -= j12;
             }
             return;
@@ -1716,63 +1735,19 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         throw new IllegalArgumentException("source == this");
     }
 
-    public final ByteString w1(int i10) {
-        if (i10 == 0) {
-            return ByteString.f43215p;
-        }
-        okio.b.b(size(), 0L, i10);
-        g0 g0Var = this.f43203d;
-        int i11 = 0;
-        int i12 = 0;
-        int i13 = 0;
-        while (i12 < i10) {
-            Intrinsics.checkNotNull(g0Var);
-            int i14 = g0Var.f48274c;
-            int i15 = g0Var.f48273b;
-            if (i14 != i15) {
-                i12 += i14 - i15;
-                i13++;
-                g0Var = g0Var.f48277f;
-            } else {
-                throw new AssertionError("s.limit == s.pos");
-            }
-        }
-        byte[][] bArr = new byte[i13];
-        int[] iArr = new int[i13 * 2];
-        g0 g0Var2 = this.f43203d;
-        int i16 = 0;
-        while (i11 < i10) {
-            Intrinsics.checkNotNull(g0Var2);
-            bArr[i16] = g0Var2.f48272a;
-            i11 += g0Var2.f48274c - g0Var2.f48273b;
-            iArr[i16] = Math.min(i11, i10);
-            iArr[i16 + i13] = g0Var2.f48273b;
-            g0Var2.f48275d = true;
-            i16++;
-            g0Var2 = g0Var2.f48277f;
-        }
-        return new i0(bArr, iArr);
+    @Override // okio.BufferedSink
+    /* renamed from: u1 */
+    public Buffer Y1(ByteString byteString) {
+        Intrinsics.checkNotNullParameter(byteString, "byteString");
+        byteString.O(this, 0, byteString.G());
+        return this;
     }
 
-    public final g0 x1(int i10) {
-        if (i10 >= 1 && i10 <= 8192) {
-            g0 g0Var = this.f43203d;
-            if (g0Var == null) {
-                g0 c10 = h0.c();
-                this.f43203d = c10;
-                c10.f48278g = c10;
-                c10.f48277f = c10;
-                return c10;
-            }
-            Intrinsics.checkNotNull(g0Var);
-            g0 g0Var2 = g0Var.f48278g;
-            Intrinsics.checkNotNull(g0Var2);
-            if (g0Var2.f48274c + i10 <= 8192 && g0Var2.f48276e) {
-                return g0Var2;
-            }
-            return g0Var2.c(h0.c());
-        }
-        throw new IllegalArgumentException("unexpected capacity");
+    @Override // okio.BufferedSink
+    /* renamed from: w1 */
+    public Buffer write(byte[] source) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        return write(source, 0, source.length);
     }
 
     public final Buffer y() {
@@ -1780,19 +1755,19 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         if (size() == 0) {
             return buffer;
         }
-        g0 g0Var = this.f43203d;
+        g0 g0Var = this.f42330d;
         Intrinsics.checkNotNull(g0Var);
         g0 d10 = g0Var.d();
-        buffer.f43203d = d10;
-        d10.f48278g = d10;
-        d10.f48277f = d10;
-        for (g0 g0Var2 = g0Var.f48277f; g0Var2 != g0Var; g0Var2 = g0Var2.f48277f) {
-            g0 g0Var3 = d10.f48278g;
+        buffer.f42330d = d10;
+        d10.f49396g = d10;
+        d10.f49395f = d10;
+        for (g0 g0Var2 = g0Var.f49395f; g0Var2 != g0Var; g0Var2 = g0Var2.f49395f) {
+            g0 g0Var3 = d10.f49396g;
             Intrinsics.checkNotNull(g0Var3);
             Intrinsics.checkNotNull(g0Var2);
             g0Var3.c(g0Var2.d());
         }
-        buffer.Y0(size());
+        buffer.W0(size());
         return buffer;
     }
 
@@ -1801,39 +1776,39 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         long j12 = j10;
         okio.b.b(size(), j12, j11);
         if (j11 != 0) {
-            out.Y0(out.size() + j11);
-            g0 g0Var = this.f43203d;
+            out.W0(out.size() + j11);
+            g0 g0Var = this.f42330d;
             while (true) {
                 Intrinsics.checkNotNull(g0Var);
-                int i10 = g0Var.f48274c;
-                int i11 = g0Var.f48273b;
+                int i10 = g0Var.f49392c;
+                int i11 = g0Var.f49391b;
                 if (j12 < i10 - i11) {
                     break;
                 }
                 j12 -= i10 - i11;
-                g0Var = g0Var.f48277f;
+                g0Var = g0Var.f49395f;
             }
             g0 g0Var2 = g0Var;
             long j13 = j11;
             while (j13 > 0) {
                 Intrinsics.checkNotNull(g0Var2);
                 g0 d10 = g0Var2.d();
-                int i12 = d10.f48273b + ((int) j12);
-                d10.f48273b = i12;
-                d10.f48274c = Math.min(i12 + ((int) j13), d10.f48274c);
-                g0 g0Var3 = out.f43203d;
+                int i12 = d10.f49391b + ((int) j12);
+                d10.f49391b = i12;
+                d10.f49392c = Math.min(i12 + ((int) j13), d10.f49392c);
+                g0 g0Var3 = out.f42330d;
                 if (g0Var3 == null) {
-                    d10.f48278g = d10;
-                    d10.f48277f = d10;
-                    out.f43203d = d10;
+                    d10.f49396g = d10;
+                    d10.f49395f = d10;
+                    out.f42330d = d10;
                 } else {
                     Intrinsics.checkNotNull(g0Var3);
-                    g0 g0Var4 = g0Var3.f48278g;
+                    g0 g0Var4 = g0Var3.f49396g;
                     Intrinsics.checkNotNull(g0Var4);
                     g0Var4.c(d10);
                 }
-                j13 -= d10.f48274c - d10.f48273b;
-                g0Var2 = g0Var2.f48277f;
+                j13 -= d10.f49392c - d10.f49391b;
+                g0Var2 = g0Var2.f49395f;
                 j12 = 0;
             }
         }
@@ -1841,10 +1816,35 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
     }
 
     @Override // okio.BufferedSink
+    public long z0(Source source) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        long j10 = 0;
+        while (true) {
+            long read = source.read(this, 8192L);
+            if (read != -1) {
+                j10 += read;
+            } else {
+                return j10;
+            }
+        }
+    }
+
+    @Override // okio.BufferedSink
     /* renamed from: z1 */
-    public Buffer Z1(ByteString byteString) {
-        Intrinsics.checkNotNullParameter(byteString, "byteString");
-        byteString.O(this, 0, byteString.G());
+    public Buffer write(byte[] source, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        long j10 = i11;
+        okio.b.b(source.length, i10, j10);
+        int i12 = i11 + i10;
+        while (i10 < i12) {
+            g0 s12 = s1(1);
+            int min = Math.min(i12 - i10, 8192 - s12.f49392c);
+            int i13 = i10 + min;
+            i.f(source, s12.f49390a, s12.f49392c, i10, i13);
+            s12.f49392c += min;
+            i10 = i13;
+        }
+        W0(size() + j10);
         return this;
     }
 
@@ -1887,31 +1887,31 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
         int remaining = source.remaining();
         int i10 = remaining;
         while (i10 > 0) {
-            g0 x12 = x1(1);
-            int min = Math.min(i10, 8192 - x12.f48274c);
-            source.get(x12.f48272a, x12.f48274c, min);
+            g0 s12 = s1(1);
+            int min = Math.min(i10, 8192 - s12.f49392c);
+            source.get(s12.f49390a, s12.f49392c, min);
             i10 -= min;
-            x12.f48274c += min;
+            s12.f49392c += min;
         }
-        this.f43204e += remaining;
+        this.f42331e += remaining;
         return remaining;
     }
 
     public int read(byte[] sink, int i10, int i11) {
         Intrinsics.checkNotNullParameter(sink, "sink");
         okio.b.b(sink.length, i10, i11);
-        g0 g0Var = this.f43203d;
+        g0 g0Var = this.f42330d;
         if (g0Var == null) {
             return -1;
         }
-        int min = Math.min(i11, g0Var.f48274c - g0Var.f48273b);
-        byte[] bArr = g0Var.f48272a;
-        int i12 = g0Var.f48273b;
+        int min = Math.min(i11, g0Var.f49392c - g0Var.f49391b);
+        byte[] bArr = g0Var.f49390a;
+        int i12 = g0Var.f49391b;
         i.f(bArr, sink, i10, i12, i12 + min);
-        g0Var.f48273b += min;
-        Y0(size() - min);
-        if (g0Var.f48273b == g0Var.f48274c) {
-            this.f43203d = g0Var.b();
+        g0Var.f49391b += min;
+        W0(size() - min);
+        if (g0Var.f49391b == g0Var.f49392c) {
+            this.f42330d = g0Var.b();
             h0.b(g0Var);
         }
         return min;
@@ -1927,7 +1927,7 @@ public final class Buffer implements BufferedSource, BufferedSink, Cloneable, By
             if (j10 > size()) {
                 j10 = size();
             }
-            sink.w0(this, j10);
+            sink.u0(this, j10);
             return j10;
         }
         throw new IllegalArgumentException(("byteCount < 0: " + j10).toString());

@@ -10,21 +10,21 @@ import p.a;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Range f51159a;
+    private final Range f51129a;
 
     public a(d2 d2Var) {
         AeFpsRangeLegacyQuirk aeFpsRangeLegacyQuirk = (AeFpsRangeLegacyQuirk) d2Var.b(AeFpsRangeLegacyQuirk.class);
         if (aeFpsRangeLegacyQuirk == null) {
-            this.f51159a = null;
+            this.f51129a = null;
         } else {
-            this.f51159a = aeFpsRangeLegacyQuirk.d();
+            this.f51129a = aeFpsRangeLegacyQuirk.d();
         }
     }
 
-    public void a(a.C0575a c0575a) {
-        Range range = this.f51159a;
+    public void a(a.C0606a c0606a) {
+        Range range = this.f51129a;
         if (range != null) {
-            c0575a.g(CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE, range, r0.c.REQUIRED);
+            c0606a.g(CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE, range, r0.c.REQUIRED);
         }
     }
 }

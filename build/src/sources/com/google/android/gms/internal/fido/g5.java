@@ -5,11 +5,11 @@ import java.util.Arrays;
 public final class g5 extends l5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f13972d;
+    private final long f14112d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g5(long j10) {
-        this.f13972d = j10;
+        this.f14112d = j10;
     }
 
     @Override // java.lang.Comparable
@@ -18,33 +18,33 @@ public final class g5 extends l5 {
         if (zza() != l5Var.zza()) {
             return zza() - l5Var.zza();
         }
-        return Long.compare(Math.abs(this.f13972d), Math.abs(((g5) l5Var).f13972d));
+        return Long.compare(Math.abs(this.f14112d), Math.abs(((g5) l5Var).f14112d));
     }
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (obj != null && g5.class == obj.getClass() && this.f13972d == ((g5) obj).f13972d) {
+        if (obj != null && g5.class == obj.getClass() && this.f14112d == ((g5) obj).f14112d) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(zza()), Long.valueOf(this.f13972d)});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(zza()), Long.valueOf(this.f14112d)});
     }
 
     public final long n() {
-        return this.f13972d;
+        return this.f14112d;
     }
 
     public final String toString() {
-        return Long.toString(this.f13972d);
+        return Long.toString(this.f14112d);
     }
 
     @Override // com.google.android.gms.internal.fido.l5
     protected final int zza() {
-        return l5.e(this.f13972d >= 0 ? (byte) 0 : (byte) 32);
+        return l5.e(this.f14112d >= 0 ? (byte) 0 : (byte) 32);
     }
 }

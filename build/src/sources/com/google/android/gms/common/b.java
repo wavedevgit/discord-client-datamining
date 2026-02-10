@@ -5,37 +5,37 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.annotation.NonNull;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
-import gf.o;
+import hf.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b extends hf.a {
+public final class b extends jf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    final int f13748d;
+    final int f13888d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f13749e;
+    private final int f13889e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final PendingIntent f13750i;
+    private final PendingIntent f13890i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f13751o;
+    private final String f13891o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f13752p;
+    private final Integer f13892p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final b f13747q = new b(0);
+    public static final b f13887q = new b(0);
     @NonNull
     public static final Parcelable.Creator<b> CREATOR = new q();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10, int i11, PendingIntent pendingIntent, String str, Integer num) {
-        this.f13748d = i10;
-        this.f13749e = i11;
-        this.f13750i = pendingIntent;
-        this.f13751o = str;
-        this.f13752p = num;
+        this.f13888d = i10;
+        this.f13889e = i11;
+        this.f13890i = pendingIntent;
+        this.f13891o = str;
+        this.f13892p = num;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -112,19 +112,19 @@ public final class b extends hf.a {
     }
 
     public Integer b() {
-        return this.f13752p;
+        return this.f13892p;
     }
 
     public int c() {
-        return this.f13749e;
+        return this.f13889e;
     }
 
     public String d() {
-        return this.f13751o;
+        return this.f13891o;
     }
 
     public PendingIntent e() {
-        return this.f13750i;
+        return this.f13890i;
     }
 
     public boolean equals(Object obj) {
@@ -135,43 +135,43 @@ public final class b extends hf.a {
             return false;
         }
         b bVar = (b) obj;
-        if (this.f13749e == bVar.f13749e && gf.o.a(this.f13750i, bVar.f13750i) && gf.o.a(this.f13751o, bVar.f13751o) && gf.o.a(this.f13752p, bVar.f13752p)) {
+        if (this.f13889e == bVar.f13889e && hf.o.a(this.f13890i, bVar.f13890i) && hf.o.a(this.f13891o, bVar.f13891o) && hf.o.a(this.f13892p, bVar.f13892p)) {
             return true;
         }
         return false;
     }
 
     public boolean f() {
-        return (this.f13749e == 0 || this.f13750i == null) ? false : true;
+        return (this.f13889e == 0 || this.f13890i == null) ? false : true;
     }
 
     public boolean h() {
-        return this.f13749e == 0;
+        return this.f13889e == 0;
     }
 
     public int hashCode() {
-        return gf.o.b(Integer.valueOf(this.f13749e), this.f13750i, this.f13751o, this.f13752p);
+        return hf.o.b(Integer.valueOf(this.f13889e), this.f13890i, this.f13891o, this.f13892p);
     }
 
     public String toString() {
-        o.a c10 = gf.o.c(this);
-        c10.a("statusCode", i(this.f13749e));
-        c10.a("resolution", this.f13750i);
-        c10.a("message", this.f13751o);
-        c10.a("clientMethodKey", this.f13752p);
+        o.a c10 = hf.o.c(this);
+        c10.a("statusCode", i(this.f13889e));
+        c10.a("resolution", this.f13890i);
+        c10.a("message", this.f13891o);
+        c10.a("clientMethodKey", this.f13892p);
         return c10.toString();
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f13748d;
-        int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, i11);
-        hf.c.l(parcel, 2, c());
-        hf.c.q(parcel, 3, e(), i10, false);
-        hf.c.s(parcel, 4, d(), false);
-        hf.c.n(parcel, 5, b(), false);
-        hf.c.b(parcel, a10);
+        int i11 = this.f13888d;
+        int a10 = jf.c.a(parcel);
+        jf.c.l(parcel, 1, i11);
+        jf.c.l(parcel, 2, c());
+        jf.c.q(parcel, 3, e(), i10, false);
+        jf.c.s(parcel, 4, d(), false);
+        jf.c.n(parcel, 5, b(), false);
+        jf.c.b(parcel, a10);
     }
 
     public b(int i10) {

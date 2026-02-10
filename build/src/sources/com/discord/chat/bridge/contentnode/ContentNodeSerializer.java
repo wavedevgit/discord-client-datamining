@@ -1,6 +1,6 @@
 package com.discord.chat.bridge.contentnode;
 
-import ht.e;
+import jt.e;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -19,10 +19,10 @@ public final class ContentNodeSerializer implements KSerializer {
     private ContentNodeSerializer() {
     }
 
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
-        return ht.j.b("ContentNode", e.i.f26526a);
+        return jt.j.b("ContentNode", e.i.f30484a);
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -30,12 +30,12 @@ public final class ContentNodeSerializer implements KSerializer {
     public ContentNode deserialize(@NotNull Decoder decoder) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
         try {
-            if (decoder instanceof kt.f) {
-                JsonElement g10 = ((kt.f) decoder).g();
+            if (decoder instanceof lt.f) {
+                JsonElement g10 = ((lt.f) decoder).g();
                 if (g10 instanceof JsonPrimitive) {
                     return new TextContentNode(((JsonPrimitive) g10).b());
                 }
-                return (ContentNode) ((kt.f) decoder).d().d(ContentNodeKt.access$getSealedClassSerializer$p(), g10);
+                return (ContentNode) ((lt.f) decoder).d().d(ContentNodeKt.access$getSealedClassSerializer$p(), g10);
             }
             throw new IllegalArgumentException("Failed requirement.");
         } catch (Exception e10) {
@@ -43,7 +43,7 @@ public final class ContentNodeSerializer implements KSerializer {
         }
     }
 
-    @Override // ft.o
+    @Override // gt.o
     public void serialize(@NotNull Encoder encoder, @NotNull ContentNode value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");

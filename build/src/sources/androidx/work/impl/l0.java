@@ -7,6 +7,6 @@ class l0 extends s3.b {
 
     @Override // s3.b
     public void a(x3.g gVar) {
-        gVar.O("ALTER TABLE `WorkSpec` ADD COLUMN `stop_reason` INTEGER NOT NULL DEFAULT -256");
+        gVar.P("ALTER TABLE `WorkSpec` ADD COLUMN `stop_reason` INTEGER NOT NULL DEFAULT -256");
     }
 }

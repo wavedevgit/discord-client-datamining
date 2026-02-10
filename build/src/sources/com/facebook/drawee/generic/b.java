@@ -20,7 +20,7 @@ import com.facebook.drawee.generic.a;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Drawable f10059a = new ColorDrawable(0);
+    private static final Drawable f10199a = new ColorDrawable(0);
 
     private static Drawable a(Drawable drawable, a aVar, Resources resources) {
         if (drawable instanceof BitmapDrawable) {
@@ -37,7 +37,7 @@ public abstract class b {
             b(g10, aVar);
             return g10;
         } else {
-            p8.a.L("WrappingUtils", "Don't know how to round that drawable: %s", drawable);
+            q8.a.L("WrappingUtils", "Don't know how to round that drawable: %s", drawable);
             return drawable;
         }
     }
@@ -66,28 +66,28 @@ public abstract class b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Drawable d(Drawable drawable, a aVar, Resources resources) {
         try {
-            if (ya.b.d()) {
-                ya.b.a("WrappingUtils#maybeApplyLeafRounding");
+            if (za.b.d()) {
+                za.b.a("WrappingUtils#maybeApplyLeafRounding");
             }
-            if (drawable != null && aVar != null && aVar.m() == a.EnumC0146a.BITMAP_ONLY) {
+            if (drawable != null && aVar != null && aVar.m() == a.EnumC0173a.BITMAP_ONLY) {
                 if (drawable instanceof f) {
                     c c10 = c((f) drawable);
-                    c10.setDrawable(a(c10.setDrawable(f10059a), aVar, resources));
+                    c10.setDrawable(a(c10.setDrawable(f10199a), aVar, resources));
                     return drawable;
                 }
                 Drawable a10 = a(drawable, aVar, resources);
-                if (ya.b.d()) {
-                    ya.b.b();
+                if (za.b.d()) {
+                    za.b.b();
                 }
                 return a10;
             }
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
             }
             return drawable;
         } finally {
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
             }
         }
     }
@@ -95,22 +95,22 @@ public abstract class b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Drawable e(Drawable drawable, a aVar) {
         try {
-            if (ya.b.d()) {
-                ya.b.a("WrappingUtils#maybeWrapWithRoundedOverlayColor");
+            if (za.b.d()) {
+                za.b.a("WrappingUtils#maybeWrapWithRoundedOverlayColor");
             }
-            if (drawable != null && aVar != null && aVar.m() == a.EnumC0146a.OVERLAY_COLOR) {
+            if (drawable != null && aVar != null && aVar.m() == a.EnumC0173a.OVERLAY_COLOR) {
                 k kVar = new k(drawable);
                 b(kVar, aVar);
                 kVar.j(aVar.h());
                 return kVar;
             }
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
             }
             return drawable;
         } finally {
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
             }
         }
     }
@@ -122,21 +122,21 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Drawable g(Drawable drawable, ScalingUtils$ScaleType scalingUtils$ScaleType, PointF pointF) {
-        if (ya.b.d()) {
-            ya.b.a("WrappingUtils#maybeWrapWithScaleType");
+        if (za.b.d()) {
+            za.b.a("WrappingUtils#maybeWrapWithScaleType");
         }
         if (drawable != null && scalingUtils$ScaleType != null) {
             n nVar = new n(drawable, scalingUtils$ScaleType);
             if (pointF != null) {
                 nVar.m(pointF);
             }
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
             }
             return nVar;
         }
-        if (ya.b.d()) {
-            ya.b.b();
+        if (za.b.d()) {
+            za.b.b();
         }
         return drawable;
     }
@@ -155,11 +155,11 @@ public abstract class b {
     public static void i(c cVar, a aVar, Resources resources) {
         c c10 = c(cVar);
         Drawable drawable = c10.getDrawable();
-        if (aVar != null && aVar.m() == a.EnumC0146a.BITMAP_ONLY) {
+        if (aVar != null && aVar.m() == a.EnumC0173a.BITMAP_ONLY) {
             if (drawable instanceof h) {
                 b((h) drawable, aVar);
             } else if (drawable != null) {
-                c10.setDrawable(f10059a);
+                c10.setDrawable(f10199a);
                 c10.setDrawable(a(drawable, aVar, resources));
             }
         } else if (drawable instanceof h) {
@@ -170,16 +170,16 @@ public abstract class b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void j(c cVar, a aVar) {
         Drawable drawable = cVar.getDrawable();
-        if (aVar != null && aVar.m() == a.EnumC0146a.OVERLAY_COLOR) {
+        if (aVar != null && aVar.m() == a.EnumC0173a.OVERLAY_COLOR) {
             if (drawable instanceof k) {
                 k kVar = (k) drawable;
                 b(kVar, aVar);
                 kVar.j(aVar.h());
                 return;
             }
-            cVar.setDrawable(e(cVar.setDrawable(f10059a), aVar));
+            cVar.setDrawable(e(cVar.setDrawable(f10199a), aVar));
         } else if (drawable instanceof k) {
-            Drawable drawable2 = f10059a;
+            Drawable drawable2 = f10199a;
             cVar.setDrawable(((k) drawable).setCurrent(drawable2));
             drawable2.setCallback(null);
         }
@@ -187,9 +187,9 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static n k(c cVar, ScalingUtils$ScaleType scalingUtils$ScaleType) {
-        Drawable f10 = f(cVar.setDrawable(f10059a), scalingUtils$ScaleType);
+        Drawable f10 = f(cVar.setDrawable(f10199a), scalingUtils$ScaleType);
         cVar.setDrawable(f10);
-        o8.j.h(f10, "Parent has no child drawable!");
+        p8.j.h(f10, "Parent has no child drawable!");
         return (n) f10;
     }
 }

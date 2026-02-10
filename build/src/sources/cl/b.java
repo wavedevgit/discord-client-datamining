@@ -1,90 +1,66 @@
 package cl;
 
-import cl.j;
+import dl.f;
+import fl.c;
+import fl.g;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final int f7508a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final byte[] f7509b;
-
-    private b(int i10, byte[] bArr) {
-        this.f7508a = i10;
-        this.f7509b = bArr;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static b[] b(byte[] bArr, j jVar, f fVar) {
-        int i10;
-        if (bArr.length == jVar.h()) {
-            j.b f10 = jVar.f(fVar);
-            j.a[] a10 = f10.a();
-            int i11 = 0;
-            for (j.a aVar : a10) {
-                i11 += aVar.a();
-            }
-            b[] bVarArr = new b[i11];
-            int i12 = 0;
-            for (j.a aVar2 : a10) {
-                int i13 = 0;
-                while (i13 < aVar2.a()) {
-                    int b10 = aVar2.b();
-                    bVarArr[i12] = new b(b10, new byte[f10.b() + b10]);
-                    i13++;
-                    i12++;
-                }
-            }
-            int length = bVarArr[0].f7509b.length;
-            int i14 = i11 - 1;
-            while (i14 >= 0 && bVarArr[i14].f7509b.length != length) {
-                i14--;
-            }
-            int i15 = i14 + 1;
-            int b11 = length - f10.b();
-            int i16 = 0;
-            for (int i17 = 0; i17 < b11; i17++) {
-                int i18 = 0;
-                while (i18 < i12) {
-                    bVarArr[i18].f7509b[i17] = bArr[i16];
-                    i18++;
-                    i16++;
-                }
-            }
-            int i19 = i15;
-            while (i19 < i12) {
-                bVarArr[i19].f7509b[b11] = bArr[i16];
-                i19++;
-                i16++;
-            }
-            int length2 = bVarArr[0].f7509b.length;
-            while (b11 < length2) {
-                int i20 = 0;
-                while (i20 < i12) {
-                    if (i20 < i15) {
-                        i10 = b11;
-                    } else {
-                        i10 = b11 + 1;
+public final class b {
+    private static mk.b b(g gVar, int i10, int i11, int i12) {
+        fl.b a10 = gVar.a();
+        if (a10 != null) {
+            int e10 = a10.e();
+            int d10 = a10.d();
+            int i13 = i12 * 2;
+            int i14 = e10 + i13;
+            int i15 = i13 + d10;
+            int max = Math.max(i10, i14);
+            int max2 = Math.max(i11, i15);
+            int min = Math.min(max / i14, max2 / i15);
+            int i16 = (max - (e10 * min)) / 2;
+            int i17 = (max2 - (d10 * min)) / 2;
+            mk.b bVar = new mk.b(max, max2);
+            int i18 = 0;
+            while (i18 < d10) {
+                int i19 = 0;
+                int i20 = i16;
+                while (i19 < e10) {
+                    if (a10.b(i19, i18) == 1) {
+                        bVar.r(i20, i17, min, min);
                     }
-                    bVarArr[i20].f7509b[i10] = bArr[i16];
-                    i20++;
-                    i16++;
+                    i19++;
+                    i20 += min;
                 }
-                b11++;
+                i18++;
+                i17 += min;
             }
-            return bVarArr;
+            return bVar;
         }
-        throw new IllegalArgumentException();
+        throw new IllegalStateException();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public byte[] a() {
-        return this.f7509b;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int c() {
-        return this.f7508a;
+    public mk.b a(String str, ik.a aVar, int i10, int i11, Map map) {
+        if (!str.isEmpty()) {
+            if (aVar == ik.a.QR_CODE) {
+                if (i10 >= 0 && i11 >= 0) {
+                    f fVar = f.L;
+                    int i12 = 4;
+                    if (map != null) {
+                        ik.f fVar2 = ik.f.ERROR_CORRECTION;
+                        if (map.containsKey(fVar2)) {
+                            fVar = f.valueOf(map.get(fVar2).toString());
+                        }
+                        ik.f fVar3 = ik.f.MARGIN;
+                        if (map.containsKey(fVar3)) {
+                            i12 = Integer.parseInt(map.get(fVar3).toString());
+                        }
+                    }
+                    return b(c.n(str, fVar, map), i10, i11, i12);
+                }
+                throw new IllegalArgumentException("Requested dimensions are too small: " + i10 + 'x' + i11);
+            }
+            throw new IllegalArgumentException("Can only encode QR_CODE, but got " + aVar);
+        }
+        throw new IllegalArgumentException("Found empty contents");
     }
 }

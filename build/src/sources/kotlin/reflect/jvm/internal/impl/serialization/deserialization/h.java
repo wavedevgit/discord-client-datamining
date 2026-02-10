@@ -8,24 +8,24 @@ import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf;
 public class h implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final MemberDeserializer f34533d;
+    private final MemberDeserializer f34242d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f34534e;
+    private final boolean f34243e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ProtoBuf.Property f34535i;
+    private final ProtoBuf.Property f34244i;
 
     public h(MemberDeserializer memberDeserializer, boolean z10, ProtoBuf.Property property) {
-        this.f34533d = memberDeserializer;
-        this.f34534e = z10;
-        this.f34535i = property;
+        this.f34242d = memberDeserializer;
+        this.f34243e = z10;
+        this.f34244i = property;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List n10;
-        n10 = MemberDeserializer.n(this.f34533d, this.f34534e, this.f34535i);
+        n10 = MemberDeserializer.n(this.f34242d, this.f34243e, this.f34244i);
         return n10;
     }
 }

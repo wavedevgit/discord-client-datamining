@@ -13,38 +13,38 @@ import android.provider.Settings;
 import android.util.Pair;
 import com.google.android.exoplayer2.Format;
 import java.util.Arrays;
-import ne.c0;
-import ne.w0;
-import ni.s;
-import ni.t;
-import ni.t0;
-import ni.u;
+import oe.c0;
+import oe.w0;
+import oi.s;
+import oi.t;
+import oi.t0;
+import oi.u;
 import org.webrtc.MediaStreamTrack;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f12093c = new a(new int[]{2}, 10);
+    public static final a f12233c = new a(new int[]{2}, 10);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ni.s f12094d = ni.s.w(2, 5, 6);
+    private static final oi.s f12234d = oi.s.w(2, 5, 6);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final t f12095e = new t.a().f(5, 6).f(17, 6).f(7, 6).f(30, 10).f(18, 6).f(6, 8).f(8, 8).f(14, 8).c();
+    private static final t f12235e = new t.a().f(5, 6).f(17, 6).f(7, 6).f(30, 10).f(18, 6).f(6, 8).f(8, 8).f(14, 8).c();
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f12096a;
+    private final int[] f12236a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f12097b;
+    private final int f12237b;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: com.google.android.exoplayer2.audio.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0158a {
+    public static final class C0185a {
         private static final u a() {
             u.a i10 = new u.a().i(8, 7);
-            int i11 = w0.f39060a;
+            int i11 = w0.f40711a;
             if (i11 >= 31) {
                 i10.i(26, 27);
             }
@@ -55,7 +55,7 @@ public final class a {
         }
 
         public static final boolean b(Context context) {
-            AudioDeviceInfo[] devices = ((AudioManager) ne.a.e((AudioManager) context.getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND))).getDevices(2);
+            AudioDeviceInfo[] devices = ((AudioManager) oe.a.e((AudioManager) context.getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND))).getDevices(2);
             u a10 = a();
             for (AudioDeviceInfo audioDeviceInfo : devices) {
                 if (a10.contains(Integer.valueOf(audioDeviceInfo.getType()))) {
@@ -71,16 +71,16 @@ public final class a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final android.media.AudioAttributes f12098a = new AudioAttributes.Builder().setUsage(1).setContentType(3).setFlags(0).build();
+        private static final android.media.AudioAttributes f12238a = new AudioAttributes.Builder().setUsage(1).setContentType(3).setFlags(0).build();
 
-        public static ni.s a() {
-            s.a j10 = ni.s.j();
-            t0 s10 = a.f12095e.keySet().s();
+        public static oi.s a() {
+            s.a j10 = oi.s.j();
+            t0 s10 = a.f12235e.keySet().s();
             while (s10.hasNext()) {
                 Integer num = (Integer) s10.next();
                 int intValue = num.intValue();
-                if (w0.f39060a >= 34 || intValue != 30) {
-                    if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setChannelMask(12).setEncoding(intValue).setSampleRate(48000).build(), f12098a)) {
+                if (w0.f40711a >= 34 || intValue != 30) {
+                    if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setChannelMask(12).setEncoding(intValue).setSampleRate(48000).build(), f12238a)) {
                         j10.a(num);
                     }
                 }
@@ -91,7 +91,7 @@ public final class a {
 
         public static int b(int i10, int i11) {
             for (int i12 = 10; i12 > 0; i12--) {
-                if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setEncoding(i10).setSampleRate(i11).setChannelMask(w0.H(i12)).build(), f12098a)) {
+                if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setEncoding(i10).setSampleRate(i11).setChannelMask(w0.H(i12)).build(), f12238a)) {
                     return i12;
                 }
             }
@@ -102,17 +102,17 @@ public final class a {
     public a(int[] iArr, int i10) {
         if (iArr != null) {
             int[] copyOf = Arrays.copyOf(iArr, iArr.length);
-            this.f12096a = copyOf;
+            this.f12236a = copyOf;
             Arrays.sort(copyOf);
         } else {
-            this.f12096a = new int[0];
+            this.f12236a = new int[0];
         }
-        this.f12097b = i10;
+        this.f12237b = i10;
     }
 
     private static boolean b() {
-        if (w0.f39060a >= 17) {
-            String str = w0.f39062c;
+        if (w0.f40711a >= 17) {
+            String str = w0.f40713c;
             if ("Amazon".equals(str) || "Xiaomi".equals(str)) {
                 return true;
             }
@@ -127,34 +127,34 @@ public final class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static a d(Context context, Intent intent) {
-        int i10 = w0.f39060a;
-        if (i10 >= 23 && C0158a.b(context)) {
-            return f12093c;
+        int i10 = w0.f40711a;
+        if (i10 >= 23 && C0185a.b(context)) {
+            return f12233c;
         }
         u.a aVar = new u.a();
         if (b() && Settings.Global.getInt(context.getContentResolver(), "external_surround_sound_enabled", 0) == 1) {
-            aVar.j(f12094d);
+            aVar.j(f12234d);
         }
         if (i10 >= 29 && (w0.H0(context) || w0.C0(context))) {
             aVar.j(b.a());
-            return new a(pi.e.l(aVar.l()), 10);
+            return new a(qi.e.l(aVar.l()), 10);
         } else if (intent != null && intent.getIntExtra("android.media.extra.AUDIO_PLUG_STATE", 0) == 1) {
             int[] intArrayExtra = intent.getIntArrayExtra("android.media.extra.ENCODINGS");
             if (intArrayExtra != null) {
-                aVar.j(pi.e.c(intArrayExtra));
+                aVar.j(qi.e.c(intArrayExtra));
             }
-            return new a(pi.e.l(aVar.l()), intent.getIntExtra("android.media.extra.MAX_CHANNEL_COUNT", 10));
+            return new a(qi.e.l(aVar.l()), intent.getIntExtra("android.media.extra.MAX_CHANNEL_COUNT", 10));
         } else {
             u l10 = aVar.l();
             if (!l10.isEmpty()) {
-                return new a(pi.e.l(l10), 10);
+                return new a(qi.e.l(l10), 10);
             }
-            return f12093c;
+            return f12233c;
         }
     }
 
     private static int e(int i10) {
-        int i11 = w0.f39060a;
+        int i11 = w0.f40711a;
         if (i11 <= 28) {
             if (i10 == 7) {
                 i10 = 8;
@@ -162,7 +162,7 @@ public final class a {
                 i10 = 6;
             }
         }
-        if (i11 <= 26 && "fugu".equals(w0.f39061b) && i10 == 1) {
+        if (i11 <= 26 && "fugu".equals(w0.f40712b) && i10 == 1) {
             i10 = 2;
         }
         return w0.H(i10);
@@ -177,10 +177,10 @@ public final class a {
     }
 
     private static int h(int i10, int i11) {
-        if (w0.f39060a >= 29) {
+        if (w0.f40711a >= 29) {
             return b.b(i10, i11);
         }
-        return ((Integer) ne.a.e((Integer) f12095e.getOrDefault(Integer.valueOf(i10), 0))).intValue();
+        return ((Integer) oe.a.e((Integer) f12235e.getOrDefault(Integer.valueOf(i10), 0))).intValue();
     }
 
     public boolean equals(Object obj) {
@@ -191,15 +191,15 @@ public final class a {
             return false;
         }
         a aVar = (a) obj;
-        if (Arrays.equals(this.f12096a, aVar.f12096a) && this.f12097b == aVar.f12097b) {
+        if (Arrays.equals(this.f12236a, aVar.f12236a) && this.f12237b == aVar.f12237b) {
             return true;
         }
         return false;
     }
 
     public Pair f(Format format) {
-        int f10 = c0.f((String) ne.a.e(format.f11587w), format.f11584t);
-        if (!f12095e.containsKey(Integer.valueOf(f10))) {
+        int f10 = c0.f((String) oe.a.e(format.f11727w), format.f11724t);
+        if (!f12235e.containsKey(Integer.valueOf(f10))) {
             return null;
         }
         if (f10 == 18 && !j(18)) {
@@ -212,11 +212,11 @@ public final class a {
         }
         int i10 = format.J;
         if (i10 != -1 && f10 != 18) {
-            if (format.f11587w.equals("audio/vnd.dts.uhd;profile=p2")) {
+            if (format.f11727w.equals("audio/vnd.dts.uhd;profile=p2")) {
                 if (i10 > 10) {
                     return null;
                 }
-            } else if (i10 > this.f12097b) {
+            } else if (i10 > this.f12237b) {
                 return null;
             }
         } else {
@@ -234,7 +234,7 @@ public final class a {
     }
 
     public int hashCode() {
-        return this.f12097b + (Arrays.hashCode(this.f12096a) * 31);
+        return this.f12237b + (Arrays.hashCode(this.f12236a) * 31);
     }
 
     public boolean i(Format format) {
@@ -245,13 +245,13 @@ public final class a {
     }
 
     public boolean j(int i10) {
-        if (Arrays.binarySearch(this.f12096a, i10) >= 0) {
+        if (Arrays.binarySearch(this.f12236a, i10) >= 0) {
             return true;
         }
         return false;
     }
 
     public String toString() {
-        return "AudioCapabilities[maxChannelCount=" + this.f12097b + ", supportedEncodings=" + Arrays.toString(this.f12096a) + "]";
+        return "AudioCapabilities[maxChannelCount=" + this.f12237b + ", supportedEncodings=" + Arrays.toString(this.f12236a) + "]";
     }
 }

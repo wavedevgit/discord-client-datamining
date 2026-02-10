@@ -12,28 +12,28 @@ public final class b extends l {
     private static final long serialVersionUID = 1749643877954103721L;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient int f39648e;
+    private final transient int f38740e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient a f39649i;
+    private final transient a f38741i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient j f39650o;
+    private final transient j f38742o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient q f39651p;
+    private final transient q f38743p;
 
     /* renamed from: q  reason: collision with root package name */
-    private transient int f39652q = 0;
+    private transient int f38744q = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10, List list, List list2, boolean z10, boolean z11) {
-        this.f39648e = i10;
+        this.f38740e = i10;
         a aVar = new a(list, z10, z11);
-        this.f39649i = aVar;
+        this.f38741i = aVar;
         q n10 = aVar.n();
-        this.f39651p = n10;
-        this.f39650o = new j(n10, list2, z10);
+        this.f38743p = n10;
+        this.f38742o = new j(n10, list2, z10);
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
@@ -45,38 +45,38 @@ public final class b extends l {
     }
 
     @Override // net.time4j.tz.m
-    public q a(pt.a aVar, pt.g gVar) {
-        return this.f39649i.m(aVar, gVar, this.f39650o);
+    public List a(qt.a aVar, qt.g gVar) {
+        return this.f38741i.p(aVar, gVar, this.f38742o);
     }
 
     @Override // net.time4j.tz.m
-    public q b(pt.f fVar) {
-        if (fVar.m() < this.f39651p.g()) {
-            return this.f39649i.b(fVar);
-        }
-        q b10 = this.f39650o.b(fVar);
-        if (b10 == null) {
-            return this.f39651p;
-        }
-        return b10;
-    }
-
-    @Override // net.time4j.tz.m
-    public List c(pt.a aVar, pt.g gVar) {
-        return this.f39649i.p(aVar, gVar, this.f39650o);
-    }
-
-    @Override // net.time4j.tz.m
-    public boolean d() {
-        if (!this.f39650o.d() && !this.f39649i.d()) {
+    public boolean b() {
+        if (!this.f38742o.b() && !this.f38741i.b()) {
             return false;
         }
         return true;
     }
 
     @Override // net.time4j.tz.m
-    public p e() {
-        return this.f39649i.e();
+    public p c() {
+        return this.f38741i.c();
+    }
+
+    @Override // net.time4j.tz.m
+    public q d(qt.f fVar) {
+        if (fVar.o() < this.f38743p.g()) {
+            return this.f38741i.d(fVar);
+        }
+        q d10 = this.f38742o.d(fVar);
+        if (d10 == null) {
+            return this.f38743p;
+        }
+        return d10;
+    }
+
+    @Override // net.time4j.tz.m
+    public q e(qt.a aVar, qt.g gVar) {
+        return this.f38741i.m(aVar, gVar, this.f38742o);
     }
 
     public boolean equals(Object obj) {
@@ -85,7 +85,7 @@ public final class b extends l {
         }
         if (obj instanceof b) {
             b bVar = (b) obj;
-            if (this.f39649i.l(bVar.f39649i, this.f39648e, bVar.f39648e) && this.f39650o.n().equals(bVar.f39650o.n())) {
+            if (this.f38741i.l(bVar.f38741i, this.f38740e, bVar.f38740e) && this.f38742o.n().equals(bVar.f38742o.n())) {
                 return true;
             }
         }
@@ -93,10 +93,10 @@ public final class b extends l {
     }
 
     public int hashCode() {
-        int i10 = this.f39652q;
+        int i10 = this.f38744q;
         if (i10 == 0) {
-            int q10 = this.f39649i.q(this.f39648e) + (this.f39650o.n().hashCode() * 37);
-            this.f39652q = q10;
+            int q10 = this.f38741i.q(this.f38740e) + (this.f38742o.n().hashCode() * 37);
+            this.f38744q = q10;
             return q10;
         }
         return i10;
@@ -104,23 +104,23 @@ public final class b extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List k() {
-        return this.f39650o.n();
+        return this.f38742o.n();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void l(ObjectOutput objectOutput) {
-        this.f39649i.t(this.f39648e, objectOutput);
+        this.f38741i.t(this.f38740e, objectOutput);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(32);
         sb2.append(b.class.getName());
         sb2.append("[transition-count=");
-        sb2.append(this.f39648e);
+        sb2.append(this.f38740e);
         sb2.append(",hash=");
         sb2.append(hashCode());
         sb2.append(",last-rules=");
-        sb2.append(this.f39650o.n());
+        sb2.append(this.f38742o.n());
         sb2.append(']');
         return sb2.toString();
     }

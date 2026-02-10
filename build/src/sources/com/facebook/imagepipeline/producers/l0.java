@@ -11,10 +11,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class l0 extends j0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f10721d = new a(null);
+    public static final a f10861d = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private final Resources f10722c;
+    private final Resources f10862c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -38,18 +38,18 @@ public final class l0 extends j0 {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public l0(Executor executor, r8.i pooledByteBufferFactory, Resources resources) {
+    public l0(Executor executor, s8.i pooledByteBufferFactory, Resources resources) {
         super(executor, pooledByteBufferFactory);
         Intrinsics.checkNotNullParameter(executor, "executor");
         Intrinsics.checkNotNullParameter(pooledByteBufferFactory, "pooledByteBufferFactory");
         Intrinsics.checkNotNullParameter(resources, "resources");
-        this.f10722c = resources;
+        this.f10862c = resources;
     }
 
     private final int g(ImageRequest imageRequest) {
         AssetFileDescriptor assetFileDescriptor = null;
         try {
-            assetFileDescriptor = this.f10722c.openRawResourceFd(f10721d.b(imageRequest));
+            assetFileDescriptor = this.f10862c.openRawResourceFd(f10861d.b(imageRequest));
             int length = (int) assetFileDescriptor.getLength();
             try {
                 assetFileDescriptor.close();
@@ -77,9 +77,9 @@ public final class l0 extends j0 {
     }
 
     @Override // com.facebook.imagepipeline.producers.j0
-    protected sa.k d(ImageRequest imageRequest) {
+    protected ta.k d(ImageRequest imageRequest) {
         Intrinsics.checkNotNullParameter(imageRequest, "imageRequest");
-        return e(this.f10722c.openRawResource(f10721d.b(imageRequest)), g(imageRequest));
+        return e(this.f10862c.openRawResource(f10861d.b(imageRequest)), g(imageRequest));
     }
 
     @Override // com.facebook.imagepipeline.producers.j0

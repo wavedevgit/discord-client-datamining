@@ -46,17 +46,17 @@ public final class NextStep_CompleteJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0 && (str = (String) this.stringAdapter.fromJson(reader)) == null) {
-                throw an.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                throw bn.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
             }
         }
         reader.D();
         if (str != null) {
             return new NextStep.Complete(str);
         }
-        throw an.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw bn.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h

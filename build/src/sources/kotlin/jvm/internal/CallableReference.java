@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-import ds.b;
+import es.b;
 import java.io.Serializable;
 import java.lang.annotation.Annotation;
 import java.util.List;

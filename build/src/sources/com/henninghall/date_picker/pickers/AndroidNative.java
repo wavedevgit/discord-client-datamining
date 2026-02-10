@@ -19,16 +19,16 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
     private boolean B0;
 
     /* renamed from: w0  reason: collision with root package name */
-    private a.InterfaceC0192a f16699w0;
+    private a.InterfaceC0219a f16839w0;
 
     /* renamed from: x0  reason: collision with root package name */
-    private int f16700x0;
+    private int f16840x0;
 
     /* renamed from: y0  reason: collision with root package name */
-    private a.b f16701y0;
+    private a.b f16841y0;
 
     /* renamed from: z0  reason: collision with root package name */
-    private boolean f16702z0;
+    private boolean f16842z0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -38,8 +38,8 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
 
         @Override // java.lang.Runnable
         public void run() {
-            AndroidNative.this.f16702z0 = false;
-            AndroidNative.this.f16699w0.b();
+            AndroidNative.this.f16842z0 = false;
+            AndroidNative.this.f16839w0.b();
         }
     }
 
@@ -48,24 +48,24 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
     public class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ AndroidNative f16704d;
+        final /* synthetic */ AndroidNative f16844d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ boolean f16705e;
+        final /* synthetic */ boolean f16845e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ boolean f16706i;
+        final /* synthetic */ boolean f16846i;
 
         b(AndroidNative androidNative, boolean z10, boolean z11) {
-            this.f16704d = androidNative;
-            this.f16705e = z10;
-            this.f16706i = z11;
+            this.f16844d = androidNative;
+            this.f16845e = z10;
+            this.f16846i = z11;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            AndroidNative.this.p0(this.f16704d, this.f16705e);
-            if (this.f16706i) {
+            AndroidNative.this.p0(this.f16844d, this.f16845e);
+            if (this.f16846i) {
                 AndroidNative.this.s0();
             }
         }
@@ -75,18 +75,18 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
     class c implements b.j {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ com.henninghall.date_picker.pickers.a f16708a;
+        final /* synthetic */ com.henninghall.date_picker.pickers.a f16848a;
 
         c(com.henninghall.date_picker.pickers.a aVar) {
-            this.f16708a = aVar;
+            this.f16848a = aVar;
         }
 
         @Override // com.henninghall.date_picker.generated.b.j
         public void a(com.henninghall.date_picker.generated.b bVar, int i10, int i11) {
-            if (AndroidNative.this.f16701y0 != null) {
-                AndroidNative.this.f16701y0.a(this.f16708a, i10, i11);
+            if (AndroidNative.this.f16841y0 != null) {
+                AndroidNative.this.f16841y0.a(this.f16848a, i10, i11);
             }
-            if (AndroidNative.this.f16700x0 == 0) {
+            if (AndroidNative.this.f16840x0 == 0) {
                 AndroidNative.this.s0();
             }
         }
@@ -100,10 +100,10 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
         @Override // com.henninghall.date_picker.generated.b.i
         public void a(com.henninghall.date_picker.generated.b bVar, int i10) {
             AndroidNative.this.r0(i10);
-            AndroidNative.this.f16700x0 = i10;
+            AndroidNative.this.f16840x0 = i10;
             if (i10 != 0) {
                 AndroidNative.this.B0 = true;
-                AndroidNative.this.f16699w0.b();
+                AndroidNative.this.f16839w0.b();
             }
         }
     }
@@ -117,14 +117,14 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
         @Override // java.lang.Runnable
         public void run() {
             AndroidNative.this.B0 = false;
-            AndroidNative.this.f16699w0.a();
-            AndroidNative.this.f16699w0.b();
+            AndroidNative.this.f16839w0.a();
+            AndroidNative.this.f16839w0.b();
         }
     }
 
     public AndroidNative(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f16700x0 = 0;
+        this.f16840x0 = 0;
         this.A0 = new Handler();
     }
 
@@ -234,7 +234,7 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
 
     /* JADX INFO: Access modifiers changed from: private */
     public void r0(int i10) {
-        if (this.f16700x0 != 0 && i10 == 0) {
+        if (this.f16840x0 != 0 && i10 == 0) {
             s0();
         }
     }
@@ -257,8 +257,8 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
         if (i10 != value) {
             int e10 = o.e(value, i10, getMaxValue(), getWrapSelectorWheel());
             int abs = Math.abs(e10);
-            this.f16702z0 = true;
-            this.f16699w0.b();
+            this.f16842z0 = true;
+            this.f16839w0.b();
             this.A0.postDelayed(new a(), abs * 100);
             for (int i11 = 0; i11 < abs; i11++) {
                 if (e10 > 0) {
@@ -279,7 +279,7 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
 
     @Override // com.henninghall.date_picker.pickers.a
     public boolean c() {
-        if (!this.B0 && !this.f16702z0) {
+        if (!this.B0 && !this.f16842z0) {
             return false;
         }
         return true;
@@ -304,12 +304,12 @@ public class AndroidNative extends com.henninghall.date_picker.generated.b imple
 
     @Override // com.henninghall.date_picker.pickers.a
     public void setOnValueChangeListenerInScrolling(a.b bVar) {
-        this.f16701y0 = bVar;
+        this.f16841y0 = bVar;
     }
 
     @Override // com.henninghall.date_picker.pickers.a
-    public void setOnValueChangedListener(a.InterfaceC0192a interfaceC0192a) {
-        this.f16699w0 = interfaceC0192a;
+    public void setOnValueChangedListener(a.InterfaceC0219a interfaceC0219a) {
+        this.f16839w0 = interfaceC0219a;
         super.setOnValueChangedListener(new c(this));
         super.setOnScrollListener(new d());
     }

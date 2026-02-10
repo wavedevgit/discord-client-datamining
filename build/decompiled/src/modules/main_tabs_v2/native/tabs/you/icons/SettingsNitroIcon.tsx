@@ -2,7 +2,6 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
@@ -47,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var6.container = var3;
     var3 = {};
-    var11 = 4;
-    var3.marginLeft = var11;
+    var10 = 4;
+    var3.marginLeft = var10;
     var6.spacing = var3;
     var3 = {
         'height': '200%',
@@ -56,16 +55,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'opacity': 0.15,
         'position': 'absolute'
     };
-    var10 = var5[var11];
-    var10 = var12.bind(var0)(var10);
+    var11 = var5[var10];
+    var10 = metroImportDefault;
+    var10 = var10.bind(var0)(var11);
     var10 = var10.colors;
     var10 = var10.WHITE;
     var3.backgroundColor = var10;
-    var13 = {};
+    var11 = {};
     var10 = '30deg';
-    var13.rotate = var10;
+    var11.rotate = var10;
     var10 = new Array(1);
-    var10[0] = var13;
+    var10[0] = var11;
     var3.transform = var10;
     var6.slant = var3;
     var3 = {
@@ -79,13 +79,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'left': 20
     };
     var6.small = var10;
-    var10 = {};
-    var11 = var5[var11];
-    var11 = var12.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.WHITE;
-    var10.color = var11;
-    var6.icon = var10;
     var6 = var8.bind(var9)(var6);
     var _closure1_slot5 = var6;
     var6 = var7.memo;
@@ -172,4 +165,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5800, 4878, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5801, 4878, 1234, 2]);

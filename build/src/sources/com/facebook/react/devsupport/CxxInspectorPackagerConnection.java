@@ -18,7 +18,7 @@ import org.jetbrains.annotations.NotNull;
 public final class CxxInspectorPackagerConnection implements IInspectorPackagerConnection {
     @NotNull
     public static final Companion Companion = new Companion(null);
-    @fb.a
+    @gb.a
     @NotNull
     private final HybridData mHybridData;
 
@@ -54,7 +54,7 @@ public final class CxxInspectorPackagerConnection implements IInspectorPackagerC
             this.mHandler = new Handler(Looper.getMainLooper());
         }
 
-        @fb.a
+        @gb.a
         @NotNull
         public final IWebSocket connectWebSocket(String str, @NotNull WebSocketDelegate delegate) {
             Intrinsics.checkNotNullParameter(delegate, "delegate");
@@ -76,7 +76,7 @@ public final class CxxInspectorPackagerConnection implements IInspectorPackagerC
             throw new IllegalArgumentException("Required value was null.");
         }
 
-        @fb.a
+        @gb.a
         public final void scheduleCallback(@NotNull Runnable runnable, long j10) {
             Intrinsics.checkNotNullParameter(runnable, "runnable");
             this.mHandler.postDelayed(runnable, j10);
@@ -95,13 +95,13 @@ public final class CxxInspectorPackagerConnection implements IInspectorPackagerC
 
     /* JADX INFO: Access modifiers changed from: private */
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\b\u0003\u0018\u00002\u00020\u0001B\u0011\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\"\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\t2\b\u0010\n\u001a\u0004\u0018\u00010\u000bH\u0086 ¢\u0006\u0002\u0010\fJ\u0013\u0010\r\u001a\u00020\u00072\b\u0010\u000e\u001a\u0004\u0018\u00010\u000bH\u0086 J\t\u0010\u000f\u001a\u00020\u0007H\u0086 J\t\u0010\u0010\u001a\u00020\u0007H\u0086 J\b\u0010\u0011\u001a\u00020\u0007H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0012"}, d2 = {"Lcom/facebook/react/devsupport/CxxInspectorPackagerConnection$WebSocketDelegate;", "Ljava/io/Closeable;", "mHybridData", "Lcom/facebook/jni/HybridData;", "<init>", "(Lcom/facebook/jni/HybridData;)V", "didFailWithError", "", "posixCode", "", "error", "", "(Ljava/lang/Integer;Ljava/lang/String;)V", "didReceiveMessage", "message", "didOpen", "didClose", "close", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    @fb.a
+    @gb.a
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class WebSocketDelegate implements Closeable {
         @NotNull
         private final HybridData mHybridData;
 
-        @fb.a
+        @gb.a
         public WebSocketDelegate(@NotNull HybridData mHybridData) {
             Intrinsics.checkNotNullParameter(mHybridData, "mHybridData");
             this.mHybridData = mHybridData;

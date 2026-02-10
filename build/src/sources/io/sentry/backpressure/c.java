@@ -3,13 +3,13 @@ package io.sentry.backpressure;
 public final class c implements b {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final c f27961d = new c();
+    private static final c f28161d = new c();
 
     private c() {
     }
 
     public static c b() {
-        return f27961d;
+        return f28161d;
     }
 
     @Override // io.sentry.backpressure.b

@@ -1,44 +1,116 @@
 package af;
 
-import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.text.TextUtils;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+import org.json.JSONException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c extends hf.a {
+public class c {
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final Lock f756c = new ReentrantLock();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Bundle f602d;
+    private static c f757d;
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f601e = new a(null);
-    @NotNull
-    public static final Parcelable.Creator<c> CREATOR = new d();
+    /* renamed from: a  reason: collision with root package name */
+    private final Lock f758a = new ReentrantLock();
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a {
-        private a() {
+    /* renamed from: b  reason: collision with root package name */
+    private final SharedPreferences f759b;
+
+    c(Context context) {
+        this.f759b = context.getSharedPreferences("com.google.android.gms.signin", 0);
+    }
+
+    public static c b(Context context) {
+        hf.q.l(context);
+        Lock lock = f756c;
+        lock.lock();
+        try {
+            if (f757d == null) {
+                f757d = new c(context.getApplicationContext());
+            }
+            c cVar = f757d;
+            lock.unlock();
+            return cVar;
+        } catch (Throwable th2) {
+            f756c.unlock();
+            throw th2;
         }
+    }
 
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    private static final String i(String str, String str2) {
+        return str + ":" + str2;
+    }
+
+    public void a() {
+        this.f758a.lock();
+        try {
+            this.f759b.edit().clear().apply();
+        } finally {
+            this.f758a.unlock();
         }
     }
 
-    public c(Bundle responseBundle) {
-        Intrinsics.checkNotNullParameter(responseBundle, "responseBundle");
-        this.f602d = responseBundle;
+    public GoogleSignInAccount c() {
+        String g10;
+        String g11 = g("defaultGoogleSignInAccount");
+        if (!TextUtils.isEmpty(g11) && (g10 = g(i("googleSignInAccount", g11))) != null) {
+            try {
+                return GoogleSignInAccount.p(g10);
+            } catch (JSONException unused) {
+            }
+        }
+        return null;
     }
 
-    public final Bundle b() {
-        return this.f602d;
+    public GoogleSignInOptions d() {
+        String g10;
+        String g11 = g("defaultGoogleSignInAccount");
+        if (!TextUtils.isEmpty(g11) && (g10 = g(i("googleSignInOptions", g11))) != null) {
+            try {
+                return GoogleSignInOptions.o(g10);
+            } catch (JSONException unused) {
+            }
+        }
+        return null;
     }
 
-    @Override // android.os.Parcelable
-    public void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        d.c(this, dest, i10);
+    public String e() {
+        return g("refreshToken");
+    }
+
+    public void f(GoogleSignInAccount googleSignInAccount, GoogleSignInOptions googleSignInOptions) {
+        hf.q.l(googleSignInAccount);
+        hf.q.l(googleSignInOptions);
+        h("defaultGoogleSignInAccount", googleSignInAccount.q());
+        hf.q.l(googleSignInAccount);
+        hf.q.l(googleSignInOptions);
+        String q10 = googleSignInAccount.q();
+        h(i("googleSignInAccount", q10), googleSignInAccount.r());
+        h(i("googleSignInOptions", q10), googleSignInOptions.t());
+    }
+
+    protected final String g(String str) {
+        this.f758a.lock();
+        try {
+            return this.f759b.getString(str, null);
+        } finally {
+            this.f758a.unlock();
+        }
+    }
+
+    protected final void h(String str, String str2) {
+        this.f758a.lock();
+        try {
+            this.f759b.edit().putString(str, str2).apply();
+        } finally {
+            this.f758a.unlock();
+        }
     }
 }

@@ -1,44 +1,32 @@
 package wv;
 
-import com.squareup.moshi.j;
-import com.squareup.moshi.m;
-import okhttp3.ResponseBody;
-import okio.BufferedSource;
-import okio.ByteString;
-import vv.h;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.Executor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class c implements h {
+class c {
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f54184b = ByteString.f("EFBBBF");
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a extends c {
+        @Override // wv.c
+        List a(Executor executor) {
+            return Arrays.asList(new g(), new i(executor));
+        }
 
-    /* renamed from: a  reason: collision with root package name */
-    private final com.squareup.moshi.h f54185a;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c(com.squareup.moshi.h hVar) {
-        this.f54185a = hVar;
+        @Override // wv.c
+        List b() {
+            return Collections.singletonList(new t());
+        }
     }
 
-    @Override // vv.h
-    /* renamed from: b */
-    public Object a(ResponseBody responseBody) {
-        BufferedSource source = responseBody.source();
-        try {
-            ByteString byteString = f54184b;
-            if (source.s0(0L, byteString)) {
-                source.skip(byteString.G());
-            }
-            m p10 = m.p(source);
-            Object fromJson = this.f54185a.fromJson(p10);
-            if (p10.s() == m.c.END_DOCUMENT) {
-                responseBody.close();
-                return fromJson;
-            }
-            throw new j("JSON document was not fully consumed.");
-        } catch (Throwable th2) {
-            responseBody.close();
-            throw th2;
-        }
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public List a(Executor executor) {
+        return Collections.singletonList(new i(executor));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public List b() {
+        return Collections.EMPTY_LIST;
     }
 }

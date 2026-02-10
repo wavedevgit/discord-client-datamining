@@ -64,7 +64,7 @@ public final class DevLoadingModule extends NativeDevLoadingViewSpec {
 
     @Override // com.facebook.fbreact.specs.NativeDevLoadingViewSpec
     public void hide() {
-        UiThreadUtil.runOnUiThread(new Runnable() { // from class: kb.a
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: lb.a
             @Override // java.lang.Runnable
             public final void run() {
                 DevLoadingModule.hide$lambda$1(DevLoadingModule.this);
@@ -75,7 +75,7 @@ public final class DevLoadingModule extends NativeDevLoadingViewSpec {
     @Override // com.facebook.fbreact.specs.NativeDevLoadingViewSpec
     public void showMessage(@NotNull final String message, Double d10, Double d11) {
         Intrinsics.checkNotNullParameter(message, "message");
-        UiThreadUtil.runOnUiThread(new Runnable() { // from class: kb.b
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: lb.b
             @Override // java.lang.Runnable
             public final void run() {
                 DevLoadingModule.showMessage$lambda$0(DevLoadingModule.this, message);

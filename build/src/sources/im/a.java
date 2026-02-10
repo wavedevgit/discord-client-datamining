@@ -1,171 +1,55 @@
 package im;
 
-import android.net.Uri;
-import android.util.Base64;
-import android.webkit.MimeTypeMap;
-import com.facebook.react.bridge.Arguments;
-import com.facebook.react.bridge.ReadableMap;
-import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.devsupport.StackTraceHelper;
-import java.util.Locale;
+import com.facebook.react.uimanager.events.Event;
+import com.facebook.react.uimanager.events.RCTEventEmitter;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.Charsets;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Uri f26840a;
+public final class a extends Event {
 
     /* renamed from: b  reason: collision with root package name */
-    private String f26841b;
+    public static final C0403a f27023b = new C0403a(null);
 
-    /* renamed from: c  reason: collision with root package name */
-    private Long f26842c;
+    /* renamed from: a  reason: collision with root package name */
+    private final WritableMap f27024a;
 
-    /* renamed from: d  reason: collision with root package name */
-    private String f26843d;
+    /* renamed from: im.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0403a {
+        public /* synthetic */ C0403a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-    /* renamed from: e  reason: collision with root package name */
-    private String f26844e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private String[] f26845f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private String f26846g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private String f26847h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private Boolean f26848i;
-
-    public a(Uri forUri) {
-        Intrinsics.checkNotNullParameter(forUri, "forUri");
-        this.f26840a = forUri;
+        private C0403a() {
+        }
     }
 
-    private final ReadableMap d() {
-        Long l10;
-        String str;
-        WritableMap createMap = Arguments.createMap();
-        Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
-        createMap.putString(StackTraceHelper.NAME_KEY, this.f26841b);
-        createMap.putString("uri", this.f26840a.toString());
-        if (this.f26842c != null) {
-            createMap.putDouble("size", l10.longValue());
-        } else {
-            createMap.putNull("size");
-        }
-        String str2 = this.f26843d;
-        String str3 = null;
-        if (str2 != null) {
-            str = str2.toLowerCase(Locale.ROOT);
-            Intrinsics.checkNotNullExpressionValue(str, "toLowerCase(...)");
-        } else {
-            str = null;
-        }
-        createMap.putString("type", str);
-        String str4 = this.f26843d;
-        if (str4 != null) {
-            str3 = str4.toLowerCase(Locale.ROOT);
-            Intrinsics.checkNotNullExpressionValue(str3, "toLowerCase(...)");
-        }
-        createMap.putString("nativeType", str3);
-        String[] strArr = this.f26845f;
-        if (strArr != null) {
-            WritableArray createArray = Arguments.createArray();
-            Intrinsics.checkNotNullExpressionValue(createArray, "createArray(...)");
-            for (String str5 : strArr) {
-                WritableMap createMap2 = Arguments.createMap();
-                Intrinsics.checkNotNullExpressionValue(createMap2, "createMap(...)");
-                String extensionFromMimeType = MimeTypeMap.getSingleton().getExtensionFromMimeType(str5);
-                createMap2.putString("mimeType", str5);
-                createMap2.putString("extension", extensionFromMimeType);
-                createArray.pushMap(createMap2);
-            }
-            createMap.putArray("convertibleToMimeTypes", createArray);
-        } else {
-            createMap.putNull("convertibleToMimeTypes");
-        }
-        createMap.putString("error", this.f26844e);
-        Boolean bool = this.f26848i;
-        if (bool != null) {
-            createMap.putBoolean("isVirtual", bool.booleanValue());
-        } else {
-            createMap.putNull("isVirtual");
-        }
-        String str6 = this.f26846g;
-        if (str6 != null) {
-            byte[] bytes = str6.getBytes(Charsets.UTF_8);
-            Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
-            String encodeToString = Base64.encodeToString(bytes, 0);
-            createMap.putString("bookmarkStatus", "success");
-            createMap.putString("bookmark", encodeToString);
-            return createMap;
-        }
-        String str7 = this.f26847h;
-        if (str7 != null) {
-            createMap.putString("bookmarkStatus", "error");
-            createMap.putString("bookmarkError", str7);
-        }
-        return createMap;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(int i10, WritableMap mEventData) {
+        super(i10);
+        Intrinsics.checkNotNullParameter(mEventData, "mEventData");
+        this.f27024a = mEventData;
     }
 
-    public final a a(Uri bookmark) {
-        Intrinsics.checkNotNullParameter(bookmark, "bookmark");
-        this.f26846g = bookmark.toString();
-        return this;
-    }
-
-    public final a b(String str) {
-        this.f26847h = str;
-        return this;
-    }
-
-    public final ReadableMap c() {
-        return d();
-    }
-
-    public final Uri e() {
-        return this.f26840a;
-    }
-
-    public final boolean f() {
-        if (this.f26843d != null) {
-            return true;
-        }
+    @Override // com.facebook.react.uimanager.events.Event
+    public boolean canCoalesce() {
         return false;
     }
 
-    public final a g(String str) {
-        this.f26844e = str;
-        return this;
+    @Override // com.facebook.react.uimanager.events.Event
+    public void dispatch(RCTEventEmitter rctEventEmitter) {
+        Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
+        rctEventEmitter.receiveEvent(getViewTag(), internal_getEventNameCompat(), this.f27024a);
     }
 
-    public final a h(String str) {
-        this.f26843d = str;
-        return this;
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
     }
 
-    public final a i(String str) {
-        this.f26841b = str;
-        return this;
-    }
-
-    public final a j(String[] strArr) {
-        this.f26845f = strArr;
-        return this;
-    }
-
-    public final a k(Long l10) {
-        this.f26842c = l10;
-        return this;
-    }
-
-    public final a l(boolean z10) {
-        this.f26848i = Boolean.valueOf(z10);
-        return this;
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topHttpError";
     }
 }

@@ -46,12 +46,12 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw an.c.x("title", "title", mVar);
+                    throw bn.c.x("title", "title", mVar);
                 }
                 i10 &= -2;
             } else if (J == 1) {
@@ -68,7 +68,7 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
         }
         Constructor<GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, an.c.f1164c);
+            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, bn.c.f7152c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, str2, errorDetails, Integer.valueOf(i10), null);

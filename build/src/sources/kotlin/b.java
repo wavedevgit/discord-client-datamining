@@ -10,40 +10,40 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.TypeIntrinsics;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends qr.b implements Continuation {
+public final class b extends rr.b implements Continuation {
 
     /* renamed from: d  reason: collision with root package name */
-    private Function3 f32058d;
+    private Function3 f31767d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f32059e;
+    private Object f31768e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Continuation f32060i;
+    private Continuation f31769i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Object f32061o;
+    private Object f31770o;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b(Function3 block, Object obj) {
         super(null);
         Object obj2;
         Intrinsics.checkNotNullParameter(block, "block");
-        this.f32058d = block;
-        this.f32059e = obj;
+        this.f31767d = block;
+        this.f31768e = obj;
         Intrinsics.checkNotNull(this, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
-        this.f32060i = this;
-        obj2 = a.f32057a;
-        this.f32061o = obj2;
+        this.f31769i = this;
+        obj2 = a.f31766a;
+        this.f31770o = obj2;
     }
 
-    @Override // qr.b
+    @Override // rr.b
     public Object b(Object obj, Continuation continuation) {
         Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
-        this.f32060i = continuation;
-        this.f32059e = obj;
-        Object f10 = wr.b.f();
-        if (f10 == wr.b.f()) {
+        this.f31769i = continuation;
+        this.f31768e = obj;
+        Object f10 = xr.b.f();
+        if (f10 == xr.b.f()) {
             g.c(continuation);
         }
         return f10;
@@ -54,28 +54,28 @@ public final class b extends qr.b implements Continuation {
         Object obj2;
         Object invoke;
         while (true) {
-            Object obj3 = this.f32061o;
-            Continuation continuation = this.f32060i;
+            Object obj3 = this.f31770o;
+            Continuation continuation = this.f31769i;
             if (continuation != null) {
-                obj = a.f32057a;
+                obj = a.f31766a;
                 if (!Result.d(obj, obj3)) {
-                    obj2 = a.f32057a;
-                    this.f32061o = obj2;
+                    obj2 = a.f31766a;
+                    this.f31770o = obj2;
                     continuation.resumeWith(obj3);
                 } else {
                     try {
-                        Function3 function3 = this.f32058d;
-                        Object obj4 = this.f32059e;
+                        Function3 function3 = this.f31767d;
+                        Object obj4 = this.f31768e;
                         if (!(function3 instanceof kotlin.coroutines.jvm.internal.a)) {
-                            invoke = wr.b.e(function3, this, obj4, continuation);
+                            invoke = xr.b.e(function3, this, obj4, continuation);
                         } else {
                             invoke = ((Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function3, 3)).invoke(this, obj4, continuation);
                         }
-                        if (invoke != wr.b.f()) {
+                        if (invoke != xr.b.f()) {
                             continuation.resumeWith(Result.b(invoke));
                         }
                     } catch (Throwable th2) {
-                        Result.a aVar = Result.f32053e;
+                        Result.a aVar = Result.f31762e;
                         continuation.resumeWith(Result.b(c.a(th2)));
                     }
                 }
@@ -88,12 +88,12 @@ public final class b extends qr.b implements Continuation {
 
     @Override // kotlin.coroutines.Continuation
     public CoroutineContext getContext() {
-        return e.f32130d;
+        return e.f31839d;
     }
 
     @Override // kotlin.coroutines.Continuation
     public void resumeWith(Object obj) {
-        this.f32060i = null;
-        this.f32061o = obj;
+        this.f31769i = null;
+        this.f31770o = obj;
     }
 }

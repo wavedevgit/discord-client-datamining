@@ -1,102 +1,70 @@
 package cd;
 
-import lc.l0;
-import ne.h0;
-import tc.b0;
-import tc.k;
-import tc.l;
-import tc.m;
-import tc.p;
-import tc.y;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class d implements k {
+abstract class d {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final p f7356d = new p() { // from class: cd.c
-        @Override // tc.p
-        public final k[] b() {
-            return d.b();
-        }
-    };
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private m f7357a;
+        /* renamed from: a  reason: collision with root package name */
+        public final long[] f7396a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private i f7358b;
+        /* renamed from: b  reason: collision with root package name */
+        public final int[] f7397b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private boolean f7359c;
+        /* renamed from: c  reason: collision with root package name */
+        public final int f7398c;
 
-    public static /* synthetic */ k[] b() {
-        return new k[]{new d()};
-    }
+        /* renamed from: d  reason: collision with root package name */
+        public final long[] f7399d;
 
-    private static h0 e(h0 h0Var) {
-        h0Var.U(0);
-        return h0Var;
-    }
+        /* renamed from: e  reason: collision with root package name */
+        public final int[] f7400e;
 
-    private boolean g(l lVar) {
-        f fVar = new f();
-        if (fVar.a(lVar, true) && (fVar.f7366b & 2) == 2) {
-            int min = Math.min(fVar.f7373i, 8);
-            h0 h0Var = new h0(min);
-            lVar.n(h0Var.e(), 0, min);
-            if (b.p(e(h0Var))) {
-                this.f7358b = new b();
-            } else if (j.r(e(h0Var))) {
-                this.f7358b = new j();
-            } else if (h.o(e(h0Var))) {
-                this.f7358b = new h();
-            }
-            return true;
-        }
-        return false;
-    }
+        /* renamed from: f  reason: collision with root package name */
+        public final long f7401f;
 
-    @Override // tc.k
-    public void a(long j10, long j11) {
-        i iVar = this.f7358b;
-        if (iVar != null) {
-            iVar.m(j10, j11);
+        private b(long[] jArr, int[] iArr, int i10, long[] jArr2, int[] iArr2, long j10) {
+            this.f7396a = jArr;
+            this.f7397b = iArr;
+            this.f7398c = i10;
+            this.f7399d = jArr2;
+            this.f7400e = iArr2;
+            this.f7401f = j10;
         }
     }
 
-    @Override // tc.k
-    public void c(m mVar) {
-        this.f7357a = mVar;
-    }
-
-    @Override // tc.k
-    public int d(l lVar, y yVar) {
-        ne.a.i(this.f7357a);
-        if (this.f7358b == null) {
-            if (g(lVar)) {
-                lVar.e();
-            } else {
-                throw l0.a("Failed to determine bitstream type", null);
+    public static b a(int i10, long[] jArr, int[] iArr, long j10) {
+        int i11 = 8192 / i10;
+        int i12 = 0;
+        for (int i13 : iArr) {
+            i12 += w0.l(i13, i11);
+        }
+        long[] jArr2 = new long[i12];
+        int[] iArr2 = new int[i12];
+        long[] jArr3 = new long[i12];
+        int[] iArr3 = new int[i12];
+        int i14 = 0;
+        int i15 = 0;
+        int i16 = 0;
+        for (int i17 = 0; i17 < iArr.length; i17++) {
+            int i18 = iArr[i17];
+            long j11 = jArr[i17];
+            while (i18 > 0) {
+                int min = Math.min(i11, i18);
+                jArr2[i15] = j11;
+                int i19 = i10 * min;
+                iArr2[i15] = i19;
+                i16 = Math.max(i16, i19);
+                jArr3[i15] = i14 * j10;
+                iArr3[i15] = 1;
+                j11 += iArr2[i15];
+                i14 += min;
+                i18 -= min;
+                i15++;
             }
         }
-        if (!this.f7359c) {
-            b0 c10 = this.f7357a.c(0, 1);
-            this.f7357a.s();
-            this.f7358b.d(this.f7357a, c10);
-            this.f7359c = true;
-        }
-        return this.f7358b.g(lVar, yVar);
-    }
-
-    @Override // tc.k
-    public boolean f(l lVar) {
-        try {
-            return g(lVar);
-        } catch (l0 unused) {
-            return false;
-        }
-    }
-
-    @Override // tc.k
-    public void release() {
+        return new b(jArr2, iArr2, i16, jArr3, iArr3, j10 * i14);
     }
 }

@@ -17,7 +17,7 @@ import kotlin.collections.CollectionsKt;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import qr.v;
+import rr.v;
 import u3.f;
 import u3.g;
 import w1.c;
@@ -25,19 +25,19 @@ import w1.c;
 public final class a implements m {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0067a f5504e = new C0067a(null);
+    public static final C0069a f5201e = new C0069a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final f f5505d;
+    private final f f5202d;
 
     /* renamed from: androidx.savedstate.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0067a {
-        public /* synthetic */ C0067a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0069a {
+        public /* synthetic */ C0069a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0067a() {
+        private C0069a() {
         }
     }
 
@@ -45,11 +45,11 @@ public final class a implements m {
     public static final class b implements SavedStateRegistry.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Set f5506a;
+        private final Set f5203a;
 
         public b(SavedStateRegistry registry) {
             Intrinsics.checkNotNullParameter(registry, "registry");
-            this.f5506a = new LinkedHashSet();
+            this.f5203a = new LinkedHashSet();
             registry.c("androidx.savedstate.Restarter", this);
         }
 
@@ -67,19 +67,19 @@ public final class a implements m {
                 pairArr = (Pair[]) arrayList.toArray(new Pair[0]);
             }
             Bundle a10 = c.a((Pair[]) Arrays.copyOf(pairArr, pairArr.length));
-            g.d(g.a(a10), "classes_to_restore", CollectionsKt.h1(this.f5506a));
+            g.d(g.a(a10), "classes_to_restore", CollectionsKt.h1(this.f5203a));
             return a10;
         }
 
         public final void b(String className) {
             Intrinsics.checkNotNullParameter(className, "className");
-            this.f5506a.add(className);
+            this.f5203a.add(className);
         }
     }
 
     public a(f owner) {
         Intrinsics.checkNotNullParameter(owner, "owner");
-        this.f5505d = owner;
+        this.f5202d = owner;
     }
 
     private final void a(String str) {
@@ -92,7 +92,7 @@ public final class a implements m {
                 try {
                     Object newInstance = declaredConstructor.newInstance(null);
                     Intrinsics.checkNotNull(newInstance);
-                    ((SavedStateRegistry.a) newInstance).a(this.f5505d);
+                    ((SavedStateRegistry.a) newInstance).a(this.f5202d);
                 } catch (Exception e10) {
                     throw new RuntimeException("Failed to instantiate " + str, e10);
                 }
@@ -110,7 +110,7 @@ public final class a implements m {
         Intrinsics.checkNotNullParameter(event, "event");
         if (event == Lifecycle.a.ON_CREATE) {
             source.getLifecycle().d(this);
-            Bundle a10 = this.f5505d.getSavedStateRegistry().a("androidx.savedstate.Restarter");
+            Bundle a10 = this.f5202d.getSavedStateRegistry().a("androidx.savedstate.Restarter");
             if (a10 != null) {
                 List<String> e10 = u3.b.e(u3.b.a(a10), "classes_to_restore");
                 if (e10 != null) {

@@ -1,6 +1,6 @@
 package okhttp3;
 
-import bu.j;
+import cu.j;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
@@ -11,10 +11,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f43170a = new b(null);
+    public static final b f42297a = new b(null);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final e f43171b = new a();
+    public static final e f42298b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends e {
@@ -100,12 +100,12 @@ public abstract class e {
         Intrinsics.checkNotNullParameter(proxy, "proxy");
     }
 
-    public void k(Call call, bu.e connection) {
+    public void k(Call call, cu.e connection) {
         Intrinsics.checkNotNullParameter(call, "call");
         Intrinsics.checkNotNullParameter(connection, "connection");
     }
 
-    public void l(Call call, bu.e connection) {
+    public void l(Call call, cu.e connection) {
         Intrinsics.checkNotNullParameter(call, "call");
         Intrinsics.checkNotNullParameter(connection, "connection");
     }

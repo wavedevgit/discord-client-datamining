@@ -17,24 +17,24 @@ public interface l extends j {
     public static final class a implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ViewTreeObserver f25853e;
+        final /* synthetic */ ViewTreeObserver f24987e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ b f25854i;
+        final /* synthetic */ b f24988i;
 
         a(ViewTreeObserver viewTreeObserver, b bVar) {
-            this.f25853e = viewTreeObserver;
-            this.f25854i = bVar;
+            this.f24987e = viewTreeObserver;
+            this.f24988i = bVar;
         }
 
         public final void a(Throwable th2) {
-            l.this.e(this.f25853e, this.f25854i);
+            l.this.e(this.f24987e, this.f24988i);
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((Throwable) obj);
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
     }
 
@@ -42,27 +42,27 @@ public interface l extends j {
     public static final class b implements ViewTreeObserver.OnPreDrawListener {
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f25855d;
+        private boolean f24989d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ViewTreeObserver f25857i;
+        final /* synthetic */ ViewTreeObserver f24991i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ CancellableContinuation f25858o;
+        final /* synthetic */ CancellableContinuation f24992o;
 
         b(ViewTreeObserver viewTreeObserver, CancellableContinuation cancellableContinuation) {
-            this.f25857i = viewTreeObserver;
-            this.f25858o = cancellableContinuation;
+            this.f24991i = viewTreeObserver;
+            this.f24992o = cancellableContinuation;
         }
 
         @Override // android.view.ViewTreeObserver.OnPreDrawListener
         public boolean onPreDraw() {
             i size = l.this.getSize();
             if (size != null) {
-                l.this.e(this.f25857i, this);
-                if (!this.f25855d) {
-                    this.f25855d = true;
-                    this.f25858o.resumeWith(Result.b(size));
+                l.this.e(this.f24991i, this);
+                if (!this.f24989d) {
+                    this.f24989d = true;
+                    this.f24992o.resumeWith(Result.b(size));
                 }
             }
             return true;
@@ -74,14 +74,14 @@ public interface l extends j {
         if (size != null) {
             return size;
         }
-        kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(wr.b.c(continuation), 1);
+        kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(xr.b.c(continuation), 1);
         eVar.H();
         ViewTreeObserver viewTreeObserver = lVar.getView().getViewTreeObserver();
         b bVar = new b(viewTreeObserver, eVar);
         viewTreeObserver.addOnPreDrawListener(bVar);
         eVar.c(new a(viewTreeObserver, bVar));
         Object B = eVar.B();
-        if (B == wr.b.f()) {
+        if (B == xr.b.f()) {
             kotlin.coroutines.jvm.internal.g.c(continuation);
         }
         return B;
@@ -89,7 +89,7 @@ public interface l extends j {
 
     private default c c(int i10, int i11, int i12) {
         if (i10 == -2) {
-            return c.b.f25834a;
+            return c.b.f24968a;
         }
         int i13 = i10 - i12;
         if (i13 > 0) {

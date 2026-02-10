@@ -1,7 +1,7 @@
 package com.facebook.yoga;
 
 import com.facebook.soloader.SoLoader;
-@sb.a
+@tb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class YogaNative {
     static {

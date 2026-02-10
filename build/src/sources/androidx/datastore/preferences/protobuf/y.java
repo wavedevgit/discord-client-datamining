@@ -8,19 +8,19 @@ import java.util.RandomAccess;
 public abstract class y {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Charset f4296a = Charset.forName("UTF-8");
+    static final Charset f3993a = Charset.forName("UTF-8");
 
     /* renamed from: b  reason: collision with root package name */
-    static final Charset f4297b = Charset.forName("ISO-8859-1");
+    static final Charset f3994b = Charset.forName("ISO-8859-1");
 
     /* renamed from: c  reason: collision with root package name */
-    public static final byte[] f4298c;
+    public static final byte[] f3995c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final ByteBuffer f4299d;
+    public static final ByteBuffer f3996d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final h f4300e;
+    public static final h f3997e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -38,9 +38,9 @@ public abstract class y {
 
     static {
         byte[] bArr = new byte[0];
-        f4298c = bArr;
-        f4299d = ByteBuffer.wrap(bArr);
-        f4300e = h.h(bArr);
+        f3995c = bArr;
+        f3996d = ByteBuffer.wrap(bArr);
+        f3997e = h.h(bArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -83,7 +83,7 @@ public abstract class y {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object h(Object obj, Object obj2) {
-        return ((o0) obj).toBuilder().P((o0) obj2).s();
+        return ((o0) obj).toBuilder().Q((o0) obj2).s();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -95,6 +95,6 @@ public abstract class y {
     }
 
     public static String j(byte[] bArr) {
-        return new String(bArr, f4296a);
+        return new String(bArr, f3993a);
     }
 }

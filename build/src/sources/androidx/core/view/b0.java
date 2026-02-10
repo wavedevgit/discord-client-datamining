@@ -11,29 +11,29 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f3787a;
+    private final c f3484a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final View f3788a;
+        private final View f3485a;
 
         a(View view) {
-            this.f3788a = view;
+            this.f3485a = view;
         }
 
         @Override // androidx.core.view.b0.c
         void a() {
-            View view = this.f3788a;
+            View view = this.f3485a;
             if (view != null) {
-                ((InputMethodManager) view.getContext().getSystemService("input_method")).hideSoftInputFromWindow(this.f3788a.getWindowToken(), 0);
+                ((InputMethodManager) view.getContext().getSystemService("input_method")).hideSoftInputFromWindow(this.f3485a.getWindowToken(), 0);
             }
         }
 
         @Override // androidx.core.view.b0.c
         void b() {
-            final View view = this.f3788a;
+            final View view = this.f3485a;
             if (view != null) {
                 if (!view.isInEditMode() && !view.onCheckIsTextEditor()) {
                     view = view.getRootView().findFocus();
@@ -41,7 +41,7 @@ public final class b0 {
                     view.requestFocus();
                 }
                 if (view == null) {
-                    view = this.f3788a.getRootView().findViewById(16908290);
+                    view = this.f3485a.getRootView().findViewById(16908290);
                 }
                 if (view != null && view.hasWindowFocus()) {
                     view.post(new Runnable() { // from class: androidx.core.view.a0
@@ -67,32 +67,32 @@ public final class b0 {
 
     public b0(View view) {
         if (Build.VERSION.SDK_INT >= 30) {
-            this.f3787a = new b(view);
+            this.f3484a = new b(view);
         } else {
-            this.f3787a = new a(view);
+            this.f3484a = new a(view);
         }
     }
 
     public void a() {
-        this.f3787a.a();
+        this.f3484a.a();
     }
 
     public void b() {
-        this.f3787a.b();
+        this.f3484a.b();
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class b extends a {
 
         /* renamed from: b  reason: collision with root package name */
-        private View f3789b;
+        private View f3486b;
 
         /* renamed from: c  reason: collision with root package name */
-        private WindowInsetsController f3790c;
+        private WindowInsetsController f3487c;
 
         b(View view) {
             super(view);
-            this.f3789b = view;
+            this.f3486b = view;
         }
 
         public static /* synthetic */ void d(AtomicBoolean atomicBoolean, WindowInsetsController windowInsetsController, int i10) {
@@ -108,9 +108,9 @@ public final class b0 {
         @Override // androidx.core.view.b0.a, androidx.core.view.b0.c
         void a() {
             View view;
-            WindowInsetsController windowInsetsController = this.f3790c;
+            WindowInsetsController windowInsetsController = this.f3487c;
             if (windowInsetsController == null) {
-                View view2 = this.f3789b;
+                View view2 = this.f3486b;
                 if (view2 != null) {
                     windowInsetsController = view2.getWindowInsetsController();
                 } else {
@@ -126,8 +126,8 @@ public final class b0 {
                     }
                 };
                 windowInsetsController.addOnControllableInsetsChangedListener(onControllableInsetsChangedListener);
-                if (!atomicBoolean.get() && (view = this.f3789b) != null) {
-                    ((InputMethodManager) view.getContext().getSystemService("input_method")).hideSoftInputFromWindow(this.f3789b.getWindowToken(), 0);
+                if (!atomicBoolean.get() && (view = this.f3486b) != null) {
+                    ((InputMethodManager) view.getContext().getSystemService("input_method")).hideSoftInputFromWindow(this.f3486b.getWindowToken(), 0);
                 }
                 windowInsetsController.removeOnControllableInsetsChangedListener(onControllableInsetsChangedListener);
                 windowInsetsController.hide(WindowInsets.Type.ime());
@@ -138,13 +138,13 @@ public final class b0 {
 
         @Override // androidx.core.view.b0.a, androidx.core.view.b0.c
         void b() {
-            View view = this.f3789b;
+            View view = this.f3486b;
             if (view != null && Build.VERSION.SDK_INT < 33) {
                 ((InputMethodManager) view.getContext().getSystemService("input_method")).isActive();
             }
-            WindowInsetsController windowInsetsController = this.f3790c;
+            WindowInsetsController windowInsetsController = this.f3487c;
             if (windowInsetsController == null) {
-                View view2 = this.f3789b;
+                View view2 = this.f3486b;
                 if (view2 != null) {
                     windowInsetsController = view2.getWindowInsetsController();
                 } else {
@@ -159,12 +159,12 @@ public final class b0 {
 
         b(WindowInsetsController windowInsetsController) {
             super(null);
-            this.f3790c = windowInsetsController;
+            this.f3487c = windowInsetsController;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b0(WindowInsetsController windowInsetsController) {
-        this.f3787a = new b(windowInsetsController);
+        this.f3484a = new b(windowInsetsController);
     }
 }

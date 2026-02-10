@@ -1,21 +1,69 @@
 package gu;
 
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.Interceptor;
-import okhttp3.Response;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements Interceptor {
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f25599a = new a();
+    private final String f24808a;
 
-    private a() {
+    /* renamed from: b  reason: collision with root package name */
+    private final boolean f24809b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private d f24810c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private long f24811d;
+
+    public a(String name, boolean z10) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f24808a = name;
+        this.f24809b = z10;
+        this.f24811d = -1L;
     }
 
-    @Override // okhttp3.Interceptor
-    public Response intercept(Interceptor.Chain chain) {
-        Intrinsics.checkNotNullParameter(chain, "chain");
-        hu.g gVar = (hu.g) chain;
-        return hu.g.c(gVar, 0, gVar.d().t(gVar), null, 0, 0, 0, 61, null).a(gVar.i());
+    public final boolean a() {
+        return this.f24809b;
+    }
+
+    public final String b() {
+        return this.f24808a;
+    }
+
+    public final long c() {
+        return this.f24811d;
+    }
+
+    public final d d() {
+        return this.f24810c;
+    }
+
+    public final void e(d queue) {
+        Intrinsics.checkNotNullParameter(queue, "queue");
+        d dVar = this.f24810c;
+        if (dVar == queue) {
+            return;
+        }
+        if (dVar == null) {
+            this.f24810c = queue;
+            return;
+        }
+        throw new IllegalStateException("task is in multiple queues");
+    }
+
+    public abstract long f();
+
+    public final void g(long j10) {
+        this.f24811d = j10;
+    }
+
+    public String toString() {
+        return this.f24808a;
+    }
+
+    public /* synthetic */ a(String str, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str, (i10 & 2) != 0 ? true : z10);
     }
 }

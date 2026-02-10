@@ -1,8 +1,5 @@
 package com.google.android.material.timepicker;
 
-import ah.h;
-import ah.j;
-import ah.k;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
@@ -26,6 +23,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.h0;
+import bh.h;
+import bh.j;
+import bh.k;
 import com.google.android.material.timepicker.ClockHandView;
 import java.util.Arrays;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -35,40 +35,40 @@ class ClockFaceView extends d implements ClockHandView.b {
     private final ColorStateList C;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ClockHandView f15563o;
+    private final ClockHandView f15703o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Rect f15564p;
+    private final Rect f15704p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final RectF f15565q;
+    private final RectF f15705q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Rect f15566r;
+    private final Rect f15706r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final SparseArray f15567s;
+    private final SparseArray f15707s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final androidx.core.view.a f15568t;
+    private final androidx.core.view.a f15708t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final int[] f15569u;
+    private final int[] f15709u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final float[] f15570v;
+    private final float[] f15710v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final int f15571w;
+    private final int f15711w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final int f15572x;
+    private final int f15712x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final int f15573y;
+    private final int f15713y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final int f15574z;
+    private final int f15714z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements ViewTreeObserver.OnPreDrawListener {
@@ -81,7 +81,7 @@ class ClockFaceView extends d implements ClockHandView.b {
                 return true;
             }
             ClockFaceView.this.getViewTreeObserver().removeOnPreDrawListener(this);
-            ClockFaceView.this.l(((ClockFaceView.this.getHeight() / 2) - ClockFaceView.this.f15563o.i()) - ClockFaceView.this.f15571w);
+            ClockFaceView.this.l(((ClockFaceView.this.getHeight() / 2) - ClockFaceView.this.f15703o.i()) - ClockFaceView.this.f15711w);
             return true;
         }
     }
@@ -94,24 +94,24 @@ class ClockFaceView extends d implements ClockHandView.b {
         @Override // androidx.core.view.a
         public void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
             super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
-            int intValue = ((Integer) view.getTag(ah.f.f737r)).intValue();
+            int intValue = ((Integer) view.getTag(bh.f.f6725r)).intValue();
             if (intValue > 0) {
-                accessibilityNodeInfoCompat.d1((View) ClockFaceView.this.f15567s.get(intValue - 1));
+                accessibilityNodeInfoCompat.d1((View) ClockFaceView.this.f15707s.get(intValue - 1));
             }
             accessibilityNodeInfoCompat.z0(AccessibilityNodeInfoCompat.g.b(0, 1, intValue, 1, false, view.isSelected()));
             accessibilityNodeInfoCompat.x0(true);
-            accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3757i);
+            accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3454i);
         }
 
         @Override // androidx.core.view.a
         public boolean performAccessibilityAction(View view, int i10, Bundle bundle) {
             if (i10 == 16) {
                 long uptimeMillis = SystemClock.uptimeMillis();
-                view.getHitRect(ClockFaceView.this.f15564p);
-                float centerX = ClockFaceView.this.f15564p.centerX();
-                float centerY = ClockFaceView.this.f15564p.centerY();
-                ClockFaceView.this.f15563o.onTouchEvent(MotionEvent.obtain(uptimeMillis, uptimeMillis, 0, centerX, centerY, 0));
-                ClockFaceView.this.f15563o.onTouchEvent(MotionEvent.obtain(uptimeMillis, uptimeMillis, 1, centerX, centerY, 0));
+                view.getHitRect(ClockFaceView.this.f15704p);
+                float centerX = ClockFaceView.this.f15704p.centerX();
+                float centerY = ClockFaceView.this.f15704p.centerY();
+                ClockFaceView.this.f15703o.onTouchEvent(MotionEvent.obtain(uptimeMillis, uptimeMillis, 0, centerX, centerY, 0));
+                ClockFaceView.this.f15703o.onTouchEvent(MotionEvent.obtain(uptimeMillis, uptimeMillis, 1, centerX, centerY, 0));
                 return true;
             }
             return super.performAccessibilityAction(view, i10, bundle);
@@ -119,15 +119,15 @@ class ClockFaceView extends d implements ClockHandView.b {
     }
 
     public ClockFaceView(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, ah.b.B);
+        this(context, attributeSet, bh.b.B);
     }
 
     private void t() {
         boolean z10;
-        RectF e10 = this.f15563o.e();
+        RectF e10 = this.f15703o.e();
         TextView v10 = v(e10);
-        for (int i10 = 0; i10 < this.f15567s.size(); i10++) {
-            TextView textView = (TextView) this.f15567s.get(i10);
+        for (int i10 = 0; i10 < this.f15707s.size(); i10++) {
+            TextView textView = (TextView) this.f15707s.get(i10);
             if (textView != null) {
                 if (textView == v10) {
                     z10 = true;
@@ -142,28 +142,28 @@ class ClockFaceView extends d implements ClockHandView.b {
     }
 
     private RadialGradient u(RectF rectF, TextView textView) {
-        textView.getHitRect(this.f15564p);
-        this.f15565q.set(this.f15564p);
-        textView.getLineBounds(0, this.f15566r);
-        RectF rectF2 = this.f15565q;
-        Rect rect = this.f15566r;
+        textView.getHitRect(this.f15704p);
+        this.f15705q.set(this.f15704p);
+        textView.getLineBounds(0, this.f15706r);
+        RectF rectF2 = this.f15705q;
+        Rect rect = this.f15706r;
         rectF2.inset(rect.left, rect.top);
-        if (!RectF.intersects(rectF, this.f15565q)) {
+        if (!RectF.intersects(rectF, this.f15705q)) {
             return null;
         }
-        return new RadialGradient(rectF.centerX() - this.f15565q.left, rectF.centerY() - this.f15565q.top, rectF.width() * 0.5f, this.f15569u, this.f15570v, Shader.TileMode.CLAMP);
+        return new RadialGradient(rectF.centerX() - this.f15705q.left, rectF.centerY() - this.f15705q.top, rectF.width() * 0.5f, this.f15709u, this.f15710v, Shader.TileMode.CLAMP);
     }
 
     private TextView v(RectF rectF) {
         float f10 = Float.MAX_VALUE;
         TextView textView = null;
-        for (int i10 = 0; i10 < this.f15567s.size(); i10++) {
-            TextView textView2 = (TextView) this.f15567s.get(i10);
+        for (int i10 = 0; i10 < this.f15707s.size(); i10++) {
+            TextView textView2 = (TextView) this.f15707s.get(i10);
             if (textView2 != null) {
-                textView2.getHitRect(this.f15564p);
-                this.f15565q.set(this.f15564p);
-                this.f15565q.union(rectF);
-                float width = this.f15565q.width() * this.f15565q.height();
+                textView2.getHitRect(this.f15704p);
+                this.f15705q.set(this.f15704p);
+                this.f15705q.union(rectF);
+                float width = this.f15705q.width() * this.f15705q.height();
                 if (width < f10) {
                     textView = textView2;
                     f10 = width;
@@ -179,34 +179,34 @@ class ClockFaceView extends d implements ClockHandView.b {
 
     private void y(int i10) {
         LayoutInflater from = LayoutInflater.from(getContext());
-        int size = this.f15567s.size();
+        int size = this.f15707s.size();
         boolean z10 = false;
         for (int i11 = 0; i11 < Math.max(this.A.length, size); i11++) {
-            TextView textView = (TextView) this.f15567s.get(i11);
+            TextView textView = (TextView) this.f15707s.get(i11);
             if (i11 >= this.A.length) {
                 removeView(textView);
-                this.f15567s.remove(i11);
+                this.f15707s.remove(i11);
             } else {
                 if (textView == null) {
-                    textView = (TextView) from.inflate(h.f757g, (ViewGroup) this, false);
-                    this.f15567s.put(i11, textView);
+                    textView = (TextView) from.inflate(h.f6745g, (ViewGroup) this, false);
+                    this.f15707s.put(i11, textView);
                     addView(textView);
                 }
                 textView.setText(this.A[i11]);
-                textView.setTag(ah.f.f737r, Integer.valueOf(i11));
+                textView.setTag(bh.f.f6725r, Integer.valueOf(i11));
                 int i12 = (i11 / 12) + 1;
-                textView.setTag(ah.f.f732m, Integer.valueOf(i12));
+                textView.setTag(bh.f.f6720m, Integer.valueOf(i12));
                 if (i12 > 1) {
                     z10 = true;
                 }
-                h0.n0(textView, this.f15568t);
+                h0.n0(textView, this.f15708t);
                 textView.setTextColor(this.C);
                 if (i10 != 0) {
                     textView.setContentDescription(getResources().getString(i10, this.A[i11]));
                 }
             }
         }
-        this.f15563o.p(z10);
+        this.f15703o.p(z10);
     }
 
     @Override // com.google.android.material.timepicker.ClockHandView.b
@@ -221,7 +221,7 @@ class ClockFaceView extends d implements ClockHandView.b {
     public void l(int i10) {
         if (i10 != k()) {
             super.l(i10);
-            this.f15563o.l(k());
+            this.f15703o.l(k());
         }
     }
 
@@ -229,8 +229,8 @@ class ClockFaceView extends d implements ClockHandView.b {
     @Override // com.google.android.material.timepicker.d
     public void n() {
         super.n();
-        for (int i10 = 0; i10 < this.f15567s.size(); i10++) {
-            ((TextView) this.f15567s.get(i10)).setVisibility(0);
+        for (int i10 = 0; i10 < this.f15707s.size(); i10++) {
+            ((TextView) this.f15707s.get(i10)).setVisibility(0);
         }
     }
 
@@ -251,7 +251,7 @@ class ClockFaceView extends d implements ClockHandView.b {
     @Override // androidx.constraintlayout.widget.ConstraintLayout, android.view.View
     public void onMeasure(int i10, int i11) {
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
-        int w10 = (int) (this.f15574z / w(this.f15572x / displayMetrics.heightPixels, this.f15573y / displayMetrics.widthPixels, 1.0f));
+        int w10 = (int) (this.f15714z / w(this.f15712x / displayMetrics.heightPixels, this.f15713y / displayMetrics.widthPixels, 1.0f));
         int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(w10, 1073741824);
         setMeasuredDimension(w10, w10);
         super.onMeasure(makeMeasureSpec, makeMeasureSpec);
@@ -264,34 +264,34 @@ class ClockFaceView extends d implements ClockHandView.b {
 
     public ClockFaceView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f15564p = new Rect();
-        this.f15565q = new RectF();
-        this.f15566r = new Rect();
-        this.f15567s = new SparseArray();
-        this.f15570v = new float[]{0.0f, 0.9f, 1.0f};
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f990r1, i10, j.f822z);
+        this.f15704p = new Rect();
+        this.f15705q = new RectF();
+        this.f15706r = new Rect();
+        this.f15707s = new SparseArray();
+        this.f15710v = new float[]{0.0f, 0.9f, 1.0f};
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f6978r1, i10, j.f6810z);
         Resources resources = getResources();
-        ColorStateList a10 = nh.c.a(context, obtainStyledAttributes, k.f1008t1);
+        ColorStateList a10 = oh.c.a(context, obtainStyledAttributes, k.f6996t1);
         this.C = a10;
-        LayoutInflater.from(context).inflate(h.f758h, (ViewGroup) this, true);
-        ClockHandView clockHandView = (ClockHandView) findViewById(ah.f.f731l);
-        this.f15563o = clockHandView;
-        this.f15571w = resources.getDimensionPixelSize(ah.d.f702t);
+        LayoutInflater.from(context).inflate(h.f6746h, (ViewGroup) this, true);
+        ClockHandView clockHandView = (ClockHandView) findViewById(bh.f.f6719l);
+        this.f15703o = clockHandView;
+        this.f15711w = resources.getDimensionPixelSize(bh.d.f6690t);
         int colorForState = a10.getColorForState(new int[]{16842913}, a10.getDefaultColor());
-        this.f15569u = new int[]{colorForState, colorForState, a10.getDefaultColor()};
+        this.f15709u = new int[]{colorForState, colorForState, a10.getDefaultColor()};
         clockHandView.b(this);
-        int defaultColor = g.a.a(context, ah.c.f670f).getDefaultColor();
-        ColorStateList a11 = nh.c.a(context, obtainStyledAttributes, k.f999s1);
+        int defaultColor = g.a.a(context, bh.c.f6658f).getDefaultColor();
+        ColorStateList a11 = oh.c.a(context, obtainStyledAttributes, k.f6987s1);
         setBackgroundColor(a11 != null ? a11.getDefaultColor() : defaultColor);
         getViewTreeObserver().addOnPreDrawListener(new a());
         setFocusable(true);
         obtainStyledAttributes.recycle();
-        this.f15568t = new b();
+        this.f15708t = new b();
         String[] strArr = new String[12];
         Arrays.fill(strArr, "");
         x(strArr, 0);
-        this.f15572x = resources.getDimensionPixelSize(ah.d.I);
-        this.f15573y = resources.getDimensionPixelSize(ah.d.J);
-        this.f15574z = resources.getDimensionPixelSize(ah.d.f704v);
+        this.f15712x = resources.getDimensionPixelSize(bh.d.I);
+        this.f15713y = resources.getDimensionPixelSize(bh.d.J);
+        this.f15714z = resources.getDimensionPixelSize(bh.d.f6692v);
     }
 }

@@ -1,113 +1,184 @@
 package ef;
 
+import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.os.Looper;
-import ef.e;
-import gf.c;
-import gf.q;
-import java.util.Set;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Parcelable;
+import android.text.TextUtils;
+import android.util.Log;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import ef.y;
+import java.lang.ref.SoftReference;
+import java.util.Objects;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import zg.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a {
+public abstract class a extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AbstractC0286a f21487a;
+    private static SoftReference f21603a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g f21488b;
+    private static SoftReference f21604b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final String f21489c;
-
-    /* renamed from: ef.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractC0286a extends e {
-        public f a(Context context, Looper looper, gf.d dVar, Object obj, e.a aVar, e.b bVar) {
-            return b(context, looper, dVar, obj, aVar, bVar);
-        }
-
-        public f b(Context context, Looper looper, gf.d dVar, Object obj, ff.d dVar2, ff.k kVar) {
-            throw new UnsupportedOperationException("buildClient must be implemented");
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface b {
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class c {
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface d {
-
-        /* renamed from: c  reason: collision with root package name */
-        public static final C0287a f21490c = new C0287a(null);
-
-        /* renamed from: ef.a$d$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class C0287a implements d {
-            /* synthetic */ C0287a(m mVar) {
+    private final int e(Context context, Intent intent) {
+        PendingIntent pendingIntent = (PendingIntent) intent.getParcelableExtra("pending_intent");
+        if (pendingIntent != null) {
+            try {
+                pendingIntent.send();
+            } catch (PendingIntent.CanceledException unused) {
+                Log.e("CloudMessagingReceiver", "Notification pending intent canceled");
             }
         }
+        Bundle extras = intent.getExtras();
+        if (extras != null) {
+            extras.remove("pending_intent");
+        } else {
+            extras = new Bundle();
+        }
+        if (Objects.equals(intent.getAction(), "com.google.firebase.messaging.NOTIFICATION_DISMISS")) {
+            c(context, extras);
+            return -1;
+        }
+        Log.e("CloudMessagingReceiver", "Unknown notification action");
+        return 500;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class e {
+    protected Executor a() {
+        ExecutorService executorService;
+        synchronized (a.class) {
+            try {
+                SoftReference softReference = f21603a;
+                if (softReference != null) {
+                    executorService = (ExecutorService) softReference.get();
+                } else {
+                    executorService = null;
+                }
+                if (executorService == null) {
+                    hg.e.a();
+                    executorService = Executors.unconfigurableExecutorService(Executors.newCachedThreadPool(new pf.a("firebase-iid-executor")));
+                    f21603a = new SoftReference(executorService);
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        return executorService;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface f extends b {
-        boolean a();
+    protected abstract int b(Context context, com.google.android.gms.cloudmessaging.a aVar);
 
-        void b(String str);
+    protected abstract void c(Context context, Bundle bundle);
 
-        boolean c();
-
-        String d();
-
-        void e(c.InterfaceC0337c interfaceC0337c);
-
-        boolean f();
-
-        boolean g();
-
-        Set i();
-
-        void k(gf.j jVar, Set set);
-
-        void l();
-
-        void m(c.e eVar);
-
-        int n();
-
-        com.google.android.gms.common.d[] o();
-
-        String p();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ void d(Intent intent, final Context context, boolean z10, BroadcastReceiver.PendingResult pendingResult) {
+        Intent intent2;
+        int i10;
+        try {
+            Parcelable parcelableExtra = intent.getParcelableExtra("wrapped_intent");
+            Executor executor = null;
+            if (parcelableExtra instanceof Intent) {
+                intent2 = (Intent) parcelableExtra;
+            } else {
+                intent2 = null;
+            }
+            if (intent2 != null) {
+                i10 = e(context, intent2);
+            } else if (intent.getExtras() == null) {
+                i10 = 500;
+            } else {
+                final com.google.android.gms.cloudmessaging.a aVar = new com.google.android.gms.cloudmessaging.a(intent);
+                final CountDownLatch countDownLatch = new CountDownLatch(1);
+                synchronized (a.class) {
+                    SoftReference softReference = f21604b;
+                    if (softReference != null) {
+                        executor = (Executor) softReference.get();
+                    }
+                    if (executor == null) {
+                        hg.e.a();
+                        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new pf.a("pscm-ack-executor"));
+                        threadPoolExecutor.allowCoreThreadTimeOut(true);
+                        executor = Executors.unconfigurableExecutorService(threadPoolExecutor);
+                        f21604b = new SoftReference(executor);
+                    }
+                }
+                executor.execute(new Runnable() { // from class: com.google.android.gms.cloudmessaging.d
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        Task c10;
+                        a aVar2 = aVar;
+                        if (TextUtils.isEmpty(aVar2.c())) {
+                            c10 = m.f(null);
+                        } else {
+                            Bundle bundle = new Bundle();
+                            bundle.putString("google.message_id", aVar2.c());
+                            Integer d10 = aVar2.d();
+                            if (d10 != null) {
+                                bundle.putInt("google.product_id", d10.intValue());
+                            }
+                            Context context2 = context;
+                            bundle.putBoolean("supports_message_handled", true);
+                            c10 = y.b(context2).c(2, bundle);
+                        }
+                        final CountDownLatch countDownLatch2 = countDownLatch;
+                        c10.c(new Executor() { // from class: ef.i
+                            @Override // java.util.concurrent.Executor
+                            public final void execute(Runnable runnable) {
+                                runnable.run();
+                            }
+                        }, new OnCompleteListener() { // from class: ef.j
+                            @Override // com.google.android.gms.tasks.OnCompleteListener
+                            public final void onComplete(Task task) {
+                                countDownLatch2.countDown();
+                            }
+                        });
+                    }
+                });
+                int b10 = b(context, aVar);
+                try {
+                    if (!countDownLatch.await(TimeUnit.SECONDS.toMillis(1L), TimeUnit.MILLISECONDS)) {
+                        Log.w("CloudMessagingReceiver", "Message ack timed out");
+                    }
+                } catch (InterruptedException e10) {
+                    Log.w("CloudMessagingReceiver", "Message ack failed: ".concat(e10.toString()));
+                }
+                i10 = b10;
+            }
+            if (z10 && pendingResult != null) {
+                pendingResult.setResultCode(i10);
+            }
+            if (pendingResult != null) {
+                pendingResult.finish();
+            }
+        } catch (Throwable th2) {
+            if (pendingResult != null) {
+                pendingResult.finish();
+            }
+            throw th2;
+        }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class g extends c {
-    }
-
-    public a(String str, AbstractC0286a abstractC0286a, g gVar) {
-        q.m(abstractC0286a, "Cannot construct an Api with a null ClientBuilder");
-        q.m(gVar, "Cannot construct an Api with a null ClientKey");
-        this.f21489c = str;
-        this.f21487a = abstractC0286a;
-        this.f21488b = gVar;
-    }
-
-    public final AbstractC0286a a() {
-        return this.f21487a;
-    }
-
-    public final c b() {
-        return this.f21488b;
-    }
-
-    public final String c() {
-        return this.f21489c;
+    @Override // android.content.BroadcastReceiver
+    public final void onReceive(final Context context, final Intent intent) {
+        if (intent == null) {
+            return;
+        }
+        final boolean isOrderedBroadcast = isOrderedBroadcast();
+        final BroadcastReceiver.PendingResult goAsync = goAsync();
+        a().execute(new Runnable() { // from class: ef.k
+            @Override // java.lang.Runnable
+            public final void run() {
+                a.this.d(intent, context, isOrderedBroadcast, goAsync);
+            }
+        });
     }
 }

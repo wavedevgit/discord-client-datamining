@@ -8,11 +8,11 @@ import kotlinx.coroutines.a0;
 public final class b implements AutoCloseable, CoroutineScope {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext f36887d;
+    private final CoroutineContext f36746d;
 
     public b(CoroutineContext coroutineContext) {
         Intrinsics.checkNotNullParameter(coroutineContext, "coroutineContext");
-        this.f36887d = coroutineContext;
+        this.f36746d = coroutineContext;
     }
 
     @Override // java.lang.AutoCloseable
@@ -22,6 +22,6 @@ public final class b implements AutoCloseable, CoroutineScope {
 
     @Override // kotlinx.coroutines.CoroutineScope
     public CoroutineContext getCoroutineContext() {
-        return this.f36887d;
+        return this.f36746d;
     }
 }

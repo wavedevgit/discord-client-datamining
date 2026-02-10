@@ -18,19 +18,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ScopesHolderForClass<T extends MemberScope> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ClassDescriptor f32378a;
+    private final ClassDescriptor f32087a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f32379b;
+    private final Function1 f32088b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final KotlinTypeRefiner f32380c;
+    private final KotlinTypeRefiner f32089c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotNullLazyValue f32381d;
+    private final NotNullLazyValue f32090d;
 
     /* renamed from: e  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32377e = {Reflection.property1(new PropertyReference1Impl(ScopesHolderForClass.class, "scopeForOwnerModule", "getScopeForOwnerModule()Lorg/jetbrains/kotlin/resolve/scopes/MemberScope;", 0))};
+    static final /* synthetic */ KProperty[] f32086e = {Reflection.property1(new PropertyReference1Impl(ScopesHolderForClass.class, "scopeForOwnerModule", "getScopeForOwnerModule()Lorg/jetbrains/kotlin/resolve/scopes/MemberScope;", 0))};
     @NotNull
     public static final Companion Companion = new Companion(null);
 
@@ -59,36 +59,36 @@ public final class ScopesHolderForClass<T extends MemberScope> {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final MemberScope c(ScopesHolderForClass scopesHolderForClass, KotlinTypeRefiner kotlinTypeRefiner) {
-        return (MemberScope) scopesHolderForClass.f32379b.invoke(kotlinTypeRefiner);
+        return (MemberScope) scopesHolderForClass.f32088b.invoke(kotlinTypeRefiner);
     }
 
     private final MemberScope d() {
-        return (MemberScope) StorageKt.getValue(this.f32381d, this, f32377e[0]);
+        return (MemberScope) StorageKt.getValue(this.f32090d, this, f32086e[0]);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final MemberScope e(ScopesHolderForClass scopesHolderForClass) {
-        return (MemberScope) scopesHolderForClass.f32379b.invoke(scopesHolderForClass.f32380c);
+        return (MemberScope) scopesHolderForClass.f32088b.invoke(scopesHolderForClass.f32089c);
     }
 
     @NotNull
     public final T getScope(@NotNull KotlinTypeRefiner kotlinTypeRefiner) {
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
-        if (!kotlinTypeRefiner.isRefinementNeededForModule(DescriptorUtilsKt.getModule(this.f32378a))) {
+        if (!kotlinTypeRefiner.isRefinementNeededForModule(DescriptorUtilsKt.getModule(this.f32087a))) {
             return (T) d();
         }
-        TypeConstructor typeConstructor = this.f32378a.getTypeConstructor();
+        TypeConstructor typeConstructor = this.f32087a.getTypeConstructor();
         Intrinsics.checkNotNullExpressionValue(typeConstructor, "getTypeConstructor(...)");
         if (!kotlinTypeRefiner.isRefinementNeededForTypeConstructor(typeConstructor)) {
             return (T) d();
         }
-        return (T) kotlinTypeRefiner.getOrPutScopeForClass(this.f32378a, new h(this, kotlinTypeRefiner));
+        return (T) kotlinTypeRefiner.getOrPutScopeForClass(this.f32087a, new h(this, kotlinTypeRefiner));
     }
 
     private ScopesHolderForClass(ClassDescriptor classDescriptor, StorageManager storageManager, Function1 function1, KotlinTypeRefiner kotlinTypeRefiner) {
-        this.f32378a = classDescriptor;
-        this.f32379b = function1;
-        this.f32380c = kotlinTypeRefiner;
-        this.f32381d = storageManager.createLazyValue(new g(this));
+        this.f32087a = classDescriptor;
+        this.f32088b = function1;
+        this.f32089c = kotlinTypeRefiner;
+        this.f32090d = storageManager.createLazyValue(new g(this));
     }
 }

@@ -1,61 +1,16 @@
 package ff;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import java.io.FileDescriptor;
-import java.io.PrintWriter;
+import com.google.android.gms.common.api.Status;
+import java.util.concurrent.TimeUnit;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class g {
 
-    /* renamed from: d  reason: collision with root package name */
-    protected final h f23233d;
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public g(h hVar) {
-        this.f23233d = hVar;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public interface a {
+        void a(Status status);
     }
 
-    public static h c(Activity activity) {
-        return d(new f(activity));
-    }
+    public abstract void addStatusListener(a aVar);
 
-    protected static h d(f fVar) {
-        if (fVar.a()) {
-            return j1.x(fVar.d());
-        }
-        if (fVar.b()) {
-            return g1.a(fVar.c());
-        }
-        throw new IllegalArgumentException("Can't get fragment for unexpected activity.");
-    }
-
-    public Activity b() {
-        Activity n10 = this.f23233d.n();
-        gf.q.l(n10);
-        return n10;
-    }
-
-    public abstract void e(int i10, int i11, Intent intent);
-
-    public void g() {
-    }
-
-    public void h() {
-    }
-
-    public void j() {
-    }
-
-    public void k() {
-    }
-
-    public void f(Bundle bundle) {
-    }
-
-    public void i(Bundle bundle) {
-    }
-
-    public void a(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-    }
+    public abstract k await(long j10, TimeUnit timeUnit);
 }

@@ -5,14 +5,14 @@ import com.facebook.react.bridge.WritableMap;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f17814a;
+    public int f17954a;
 
     /* renamed from: b  reason: collision with root package name */
-    public WritableMap f17815b;
+    public WritableMap f17955b;
 
     /* renamed from: c  reason: collision with root package name */
-    public Exception f17816c;
+    public Exception f17956c;
 
     /* renamed from: d  reason: collision with root package name */
-    public String f17817d;
+    public String f17957d;
 }

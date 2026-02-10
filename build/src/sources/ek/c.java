@@ -1,20 +1,15 @@
 package ek;
 
-import com.google.android.gms.dynamite.DynamiteModule;
-import java.util.concurrent.atomic.AtomicReference;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.o;
+import androidx.lifecycle.w;
+import com.google.android.gms.tasks.Task;
+import java.io.Closeable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    public static boolean a(AtomicReference atomicReference, String str) {
-        boolean z10;
-        if (atomicReference.get() != null) {
-            return ((Boolean) atomicReference.get()).booleanValue();
-        }
-        if (DynamiteModule.a(tj.i.c().b(), str) > 0) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        atomicReference.set(Boolean.valueOf(z10));
-        return z10;
-    }
+public interface c extends Closeable, o, ff.f {
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    @w(Lifecycle.a.ON_DESTROY)
+    void close();
+
+    Task h(ak.a aVar);
 }

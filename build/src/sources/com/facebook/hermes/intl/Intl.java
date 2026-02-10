@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-@fb.a
+@gb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class Intl {
     private static List a(List list) {
@@ -24,27 +24,27 @@ public class Intl {
                         arrayList.add(a10);
                     }
                 } else {
-                    throw new da.f("Incorrect locale information provided");
+                    throw new ea.f("Incorrect locale information provided");
                 }
             } else {
-                throw new da.f("Incorrect locale information provided");
+                throw new ea.f("Incorrect locale information provided");
             }
         }
         return arrayList;
     }
 
-    @fb.a
+    @gb.a
     public static List<String> getCanonicalLocales(List<String> list) {
         return a(list);
     }
 
-    @fb.a
+    @gb.a
     public static String toLocaleLowerCase(List<String> list, String str) {
-        return UCharacter.toLowerCase((ULocale) e.c((String[]) list.toArray(new String[list.size()])).f10284a.h(), str);
+        return UCharacter.toLowerCase((ULocale) e.c((String[]) list.toArray(new String[list.size()])).f10424a.h(), str);
     }
 
-    @fb.a
+    @gb.a
     public static String toLocaleUpperCase(List<String> list, String str) {
-        return UCharacter.toUpperCase((ULocale) e.c((String[]) list.toArray(new String[list.size()])).f10284a.h(), str);
+        return UCharacter.toUpperCase((ULocale) e.c((String[]) list.toArray(new String[list.size()])).f10424a.h(), str);
     }
 }

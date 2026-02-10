@@ -125,7 +125,7 @@ public final class AppearanceModule extends NativeAppearanceSpec {
     @Override // com.facebook.fbreact.specs.NativeAppearanceSpec
     public void setColorScheme(@NotNull final String style) {
         Intrinsics.checkNotNullParameter(style, "style");
-        UiThreadUtil.runOnUiThread(new Runnable() { // from class: ib.a
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: jb.a
             @Override // java.lang.Runnable
             public final void run() {
                 AppearanceModule.setColorScheme$lambda$0(style);

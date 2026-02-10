@@ -31,13 +31,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = '../discord_common/js/packages/design/components/Icon/getIconSize.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun103551: for (var _fun103551_ip = 0;;) switch (_fun103551_ip) {
+        _fun103531: for (var _fun103531_ip = 0;;) switch (_fun103531_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'custom';
                 if (!(var0 !== var1)) {
-                    _fun103551_ip = 34;
-                    continue _fun103551
+                    _fun103531_ip = 34;
+                    continue _fun103531
                 }
             case 11:
                 var0 = _closure1_slot0;

@@ -8,19 +8,19 @@ import android.os.Build;
 import com.facebook.common.references.CloseableReference;
 import com.facebook.soloader.g;
 import java.util.Locale;
-import o8.j;
-import o8.n;
-import r8.h;
-import sa.k;
-@o8.d
+import p8.j;
+import p8.n;
+import s8.h;
+import ta.k;
+@p8.d
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class DalvikPurgeableDecoder implements wa.d {
+public abstract class DalvikPurgeableDecoder implements xa.d {
 
     /* renamed from: b  reason: collision with root package name */
-    protected static final byte[] f10539b;
+    protected static final byte[] f10679b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final va.b f10540a = va.c.a();
+    private final wa.b f10680a = wa.c.a();
 
     @g
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -40,7 +40,7 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
 
     static {
         b.a();
-        f10539b = new byte[]{-1, -39};
+        f10679b = new byte[]{-1, -39};
     }
 
     public static boolean e(CloseableReference closeableReference, int i10) {
@@ -62,10 +62,10 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
         return options;
     }
 
-    @o8.d
+    @p8.d
     private static native void nativePinBitmap(Bitmap bitmap);
 
-    @Override // wa.d
+    @Override // xa.d
     public CloseableReference a(k kVar, Bitmap.Config config, Rect rect, ColorSpace colorSpace) {
         BitmapFactory.Options f10 = f(kVar.J(), config);
         if (Build.VERSION.SDK_INT >= 26) {
@@ -80,7 +80,7 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
         }
     }
 
-    @Override // wa.d
+    @Override // xa.d
     public CloseableReference b(k kVar, Bitmap.Config config, Rect rect, int i10, ColorSpace colorSpace) {
         BitmapFactory.Options f10 = f(kVar.J(), config);
         if (Build.VERSION.SDK_INT >= 26) {
@@ -103,12 +103,12 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
         j.g(bitmap);
         try {
             nativePinBitmap(bitmap);
-            if (this.f10540a.g(bitmap)) {
-                return CloseableReference.O0(bitmap, this.f10540a.e());
+            if (this.f10680a.g(bitmap)) {
+                return CloseableReference.R0(bitmap, this.f10680a.e());
             }
-            int j10 = cb.d.j(bitmap);
+            int j10 = db.d.j(bitmap);
             bitmap.recycle();
-            throw new ma.c(String.format(Locale.US, "Attempted to pin a bitmap of size %d bytes. The current pool count is %d, the current pool size is %d bytes. The current pool max count is %d, the current pool max size is %d bytes.", Integer.valueOf(j10), Integer.valueOf(this.f10540a.b()), Long.valueOf(this.f10540a.f()), Integer.valueOf(this.f10540a.c()), Integer.valueOf(this.f10540a.d())));
+            throw new na.c(String.format(Locale.US, "Attempted to pin a bitmap of size %d bytes. The current pool count is %d, the current pool size is %d bytes. The current pool max count is %d, the current pool max size is %d bytes.", Integer.valueOf(j10), Integer.valueOf(this.f10680a.b()), Long.valueOf(this.f10680a.f()), Integer.valueOf(this.f10680a.c()), Integer.valueOf(this.f10680a.d())));
         } catch (Exception e10) {
             bitmap.recycle();
             throw n.a(e10);

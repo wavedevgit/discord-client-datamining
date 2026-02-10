@@ -1,25 +1,25 @@
 package com.facebook.imagepipeline.memory;
 
 import com.facebook.common.references.CloseableReference;
-import o8.j;
-import va.a0;
-import va.u;
-import va.z;
+import p8.j;
+import wa.a0;
+import wa.u;
+import wa.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final s8.c f10529a;
+    private final t8.c f10669a;
 
     /* renamed from: b  reason: collision with root package name */
-    final b f10530b;
+    final b f10670b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class a implements s8.c {
+    class a implements t8.c {
         a() {
         }
 
-        @Override // s8.c
+        @Override // t8.c
         /* renamed from: a */
         public void release(byte[] bArr) {
             d.this.b(bArr);
@@ -29,33 +29,33 @@ public class d {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class b extends e {
-        public b(r8.d dVar, z zVar, a0 a0Var) {
+        public b(s8.d dVar, z zVar, a0 a0Var) {
             super(dVar, zVar, a0Var);
         }
 
         @Override // com.facebook.imagepipeline.memory.a
         com.facebook.imagepipeline.memory.b x(int i10) {
-            return new h(p(i10), this.f10514c.f52415g, 0);
+            return new h(p(i10), this.f10654c.f53442g, 0);
         }
     }
 
-    public d(r8.d dVar, z zVar) {
+    public d(s8.d dVar, z zVar) {
         boolean z10;
-        if (zVar.f52415g > 0) {
+        if (zVar.f53442g > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         j.b(Boolean.valueOf(z10));
-        this.f10530b = new b(dVar, zVar, u.h());
-        this.f10529a = new a();
+        this.f10670b = new b(dVar, zVar, u.h());
+        this.f10669a = new a();
     }
 
     public CloseableReference a(int i10) {
-        return CloseableReference.O0((byte[]) this.f10530b.get(i10), this.f10529a);
+        return CloseableReference.R0((byte[]) this.f10670b.get(i10), this.f10669a);
     }
 
     public void b(byte[] bArr) {
-        this.f10530b.release(bArr);
+        this.f10670b.release(bArr);
     }
 }

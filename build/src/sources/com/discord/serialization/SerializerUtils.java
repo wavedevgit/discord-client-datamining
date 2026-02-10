@@ -1,9 +1,9 @@
 package com.discord.serialization;
 
 import com.discord.serialization.SerializerUtils;
-import is.c;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import js.c;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -120,7 +120,7 @@ public final class SerializerUtils {
     public static final Unit findErroringFields$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @NotNull
@@ -128,7 +128,7 @@ public final class SerializerUtils {
         boolean parseProperty;
         Intrinsics.checkNotNullParameter(jsonString, "jsonString");
         Intrinsics.checkNotNullParameter(deserializerClass, "deserializerClass");
-        JsonElement g10 = b.b(null, new Function1() { // from class: c8.a
+        JsonElement g10 = b.b(null, new Function1() { // from class: d8.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit findErroringFields$lambda$0;

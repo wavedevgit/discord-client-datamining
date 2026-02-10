@@ -18,13 +18,13 @@ import kotlin.text.StringsKt;
 public final class g0 extends j0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f10654d = new a(null);
+    public static final a f10794d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String[] f10655e = {"_id", "_data"};
+    private static final String[] f10795e = {"_id", "_data"};
 
     /* renamed from: c  reason: collision with root package name */
-    private final ContentResolver f10656c;
+    private final ContentResolver f10796c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -37,19 +37,19 @@ public final class g0 extends j0 {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public g0(Executor executor, r8.i pooledByteBufferFactory, ContentResolver contentResolver) {
+    public g0(Executor executor, s8.i pooledByteBufferFactory, ContentResolver contentResolver) {
         super(executor, pooledByteBufferFactory);
         Intrinsics.checkNotNullParameter(executor, "executor");
         Intrinsics.checkNotNullParameter(pooledByteBufferFactory, "pooledByteBufferFactory");
         Intrinsics.checkNotNullParameter(contentResolver, "contentResolver");
-        this.f10656c = contentResolver;
+        this.f10796c = contentResolver;
     }
 
-    private final sa.k g(Uri uri) {
+    private final ta.k g(Uri uri) {
         try {
-            ParcelFileDescriptor openFileDescriptor = this.f10656c.openFileDescriptor(uri, "r");
+            ParcelFileDescriptor openFileDescriptor = this.f10796c.openFileDescriptor(uri, "r");
             if (openFileDescriptor != null) {
-                sa.k e10 = e(new FileInputStream(openFileDescriptor.getFileDescriptor()), (int) openFileDescriptor.getStatSize());
+                ta.k e10 = e(new FileInputStream(openFileDescriptor.getFileDescriptor()), (int) openFileDescriptor.getStatSize());
                 Intrinsics.checkNotNullExpressionValue(e10, "getEncodedImage(...)");
                 openFileDescriptor.close();
                 return e10;
@@ -61,23 +61,23 @@ public final class g0 extends j0 {
     }
 
     @Override // com.facebook.imagepipeline.producers.j0
-    protected sa.k d(ImageRequest imageRequest) {
-        sa.k g10;
+    protected ta.k d(ImageRequest imageRequest) {
+        ta.k g10;
         InputStream createInputStream;
         Intrinsics.checkNotNullParameter(imageRequest, "imageRequest");
         Uri sourceUri = imageRequest.getSourceUri();
         Intrinsics.checkNotNullExpressionValue(sourceUri, "getSourceUri(...)");
-        if (w8.f.l(sourceUri)) {
+        if (x8.f.l(sourceUri)) {
             String uri = sourceUri.toString();
             Intrinsics.checkNotNullExpressionValue(uri, "toString(...)");
             if (StringsKt.z(uri, "/photo", false, 2, null)) {
-                createInputStream = this.f10656c.openInputStream(sourceUri);
+                createInputStream = this.f10796c.openInputStream(sourceUri);
             } else {
                 String uri2 = sourceUri.toString();
                 Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
                 if (StringsKt.z(uri2, "/display_photo", false, 2, null)) {
                     try {
-                        AssetFileDescriptor openAssetFileDescriptor = this.f10656c.openAssetFileDescriptor(sourceUri, "r");
+                        AssetFileDescriptor openAssetFileDescriptor = this.f10796c.openAssetFileDescriptor(sourceUri, "r");
                         if (openAssetFileDescriptor != null) {
                             createInputStream = openAssetFileDescriptor.createInputStream();
                         } else {
@@ -87,7 +87,7 @@ public final class g0 extends j0 {
                         throw new IOException("Contact photo does not exist: " + sourceUri);
                     }
                 } else {
-                    InputStream openContactPhotoInputStream = ContactsContract.Contacts.openContactPhotoInputStream(this.f10656c, sourceUri);
+                    InputStream openContactPhotoInputStream = ContactsContract.Contacts.openContactPhotoInputStream(this.f10796c, sourceUri);
                     if (openContactPhotoInputStream != null) {
                         createInputStream = openContactPhotoInputStream;
                     } else {
@@ -99,10 +99,10 @@ public final class g0 extends j0 {
                 return e(createInputStream, -1);
             }
             throw new IllegalStateException("Required value was null.");
-        } else if (w8.f.k(sourceUri) && (g10 = g(sourceUri)) != null) {
+        } else if (x8.f.k(sourceUri) && (g10 = g(sourceUri)) != null) {
             return g10;
         } else {
-            InputStream openInputStream = this.f10656c.openInputStream(sourceUri);
+            InputStream openInputStream = this.f10796c.openInputStream(sourceUri);
             if (openInputStream != null) {
                 return e(openInputStream, -1);
             }

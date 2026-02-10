@@ -2,30 +2,84 @@ package xf;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class k extends hf.a {
+public class k implements Parcelable {
+    @NonNull
+    public static final Parcelable.Creator<k> CREATOR = new q1();
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f54673d = new a(null);
-    @NotNull
-    public static final Parcelable.Creator<k> CREATOR = new l();
+    private final xf.a f54927d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a {
-        private a() {
-        }
-
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    public static class a extends Exception {
+        public a(int i10) {
+            super("Algorithm with COSE value " + i10 + " not supported");
         }
     }
 
+    k(xf.a aVar) {
+        this.f54927d = (xf.a) hf.q.l(aVar);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public static k a(int i10) {
+        l[] values;
+        x xVar;
+        if (i10 == x.LEGACY_RS1.a()) {
+            xVar = x.RS1;
+        } else {
+            x[] values2 = x.values();
+            int length = values2.length;
+            int i11 = 0;
+            while (true) {
+                if (i11 < length) {
+                    x xVar2 = values2[i11];
+                    if (xVar2.a() == i10) {
+                        xVar = xVar2;
+                        break;
+                    }
+                    i11++;
+                } else {
+                    for (x xVar3 : l.values()) {
+                        if (xVar3.a() == i10) {
+                            xVar = xVar3;
+                        }
+                    }
+                    throw new a(i10);
+                }
+            }
+        }
+        return new k(xVar);
+    }
+
+    public int b() {
+        return this.f54927d.a();
+    }
+
     @Override // android.os.Parcelable
-    public void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        l.c(this, dest, i10);
+    public int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof k) || this.f54927d.a() != ((k) obj).f54927d.a()) {
+            return false;
+        }
+        return true;
+    }
+
+    public int hashCode() {
+        return hf.o.b(this.f54927d);
+    }
+
+    public final String toString() {
+        String valueOf = String.valueOf(this.f54927d);
+        return "COSEAlgorithmIdentifier{algorithm=" + valueOf + "}";
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        parcel.writeInt(this.f54927d.a());
     }
 }

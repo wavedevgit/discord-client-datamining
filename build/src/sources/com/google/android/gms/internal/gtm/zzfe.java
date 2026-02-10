@@ -6,7 +6,7 @@ import android.os.Build;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
 import com.google.android.gms.common.util.VisibleForTesting;
-import gf.q;
+import hf.q;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
@@ -17,7 +17,7 @@ import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.Locale;
 import java.util.Map;
-import se.n;
+import te.n;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class zzfe extends zzbs {
@@ -42,8 +42,8 @@ public final class zzfe extends zzbs {
         /*
             r5 = this;
             java.lang.String r0 = "Error closing http post connection output stream"
-            gf.q.l(r6)
-            gf.q.l(r7)
+            hf.q.l(r6)
+            hf.q.l(r7)
             int r1 = r7.length
             java.lang.String r2 = "POST bytes, url"
             java.lang.Integer r3 = java.lang.Integer.valueOf(r1)

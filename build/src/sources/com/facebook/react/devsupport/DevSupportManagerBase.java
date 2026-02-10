@@ -286,7 +286,7 @@ public abstract class DevSupportManagerBase implements DevSupportManager {
             sb2.append(cause.getMessage());
         }
         if (exc instanceof JavascriptException) {
-            p8.a.n(ReactConstants.TAG, "Exception in native call from JS", exc);
+            q8.a.n(ReactConstants.TAG, "Exception in native call from JS", exc);
             showNewError(exc.getMessage(), new StackFrame[0], -1, ErrorType.JS);
             return;
         }
@@ -428,7 +428,7 @@ public abstract class DevSupportManagerBase implements DevSupportManager {
             }
             this.devLoadingViewVisible = true;
         } catch (MalformedURLException e10) {
-            p8.a.m(ReactConstants.TAG, "Bundle url format is invalid. \n\n" + e10);
+            q8.a.m(ReactConstants.TAG, "Bundle url format is invalid. \n\n" + e10);
         }
     }
 
@@ -443,7 +443,7 @@ public abstract class DevSupportManagerBase implements DevSupportManager {
                 }
             });
         } else {
-            p8.a.m(ReactConstants.TAG, "Unable to launch change bundle location because react activity is not available");
+            q8.a.m(ReactConstants.TAG, "Unable to launch change bundle location because react activity is not available");
         }
     }
 
@@ -492,7 +492,7 @@ public abstract class DevSupportManagerBase implements DevSupportManager {
         if (!devSupportManagerBase.devSettings.isFpsDebugEnabled()) {
             Activity currentActivity = devSupportManagerBase.reactInstanceDevHelper.getCurrentActivity();
             if (currentActivity == null) {
-                p8.a.m(ReactConstants.TAG, "Unable to get reference to react activity");
+                q8.a.m(ReactConstants.TAG, "Unable to get reference to react activity");
             } else {
                 DebugOverlayController.Companion.requestPermission(currentActivity);
             }
@@ -756,7 +756,7 @@ public abstract class DevSupportManagerBase implements DevSupportManager {
                     }
                 }
             } catch (PackageManager.NameNotFoundException unused) {
-                p8.a.m(ReactConstants.TAG, "DevSupport is unable to get current app info");
+                q8.a.m(ReactConstants.TAG, "DevSupport is unable to get current app info");
             }
         }
         return false;
@@ -858,7 +858,7 @@ public abstract class DevSupportManagerBase implements DevSupportManager {
                 if (devBundleDownloadListener != null) {
                     devBundleDownloadListener.onFailure(cause);
                 }
-                p8.a.n(ReactConstants.TAG, "Unable to download JS bundle", cause);
+                q8.a.n(ReactConstants.TAG, "Unable to download JS bundle", cause);
                 DevSupportManagerBase.this.reportBundleLoadingFailure(cause);
                 callback.onError(cause);
             }
@@ -1126,7 +1126,7 @@ public abstract class DevSupportManagerBase implements DevSupportManager {
                 }
                 return;
             }
-            p8.a.m(ReactConstants.TAG, "Unable to launch dev options menu because react activity isn't available");
+            q8.a.m(ReactConstants.TAG, "Unable to launch dev options menu because react activity isn't available");
         }
     }
 
@@ -1138,7 +1138,7 @@ public abstract class DevSupportManagerBase implements DevSupportManager {
     @Override // com.facebook.react.devsupport.interfaces.DevSupportManager
     public void showNewJavaError(String str, @NotNull Throwable e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
-        p8.a.n(ReactConstants.TAG, "Exception in native call", e10);
+        q8.a.n(ReactConstants.TAG, "Exception in native call", e10);
         showNewError(str, StackTraceHelper.convertJavaStackTrace(e10), -1, ErrorType.NATIVE);
     }
 

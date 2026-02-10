@@ -1,8 +1,18 @@
 package mg;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class x {
-    public static void a() {
-        w.a();
-        s0.b();
+final class x extends v {
+
+    /* renamed from: i  reason: collision with root package name */
+    private final z f37101i;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public x(z zVar, int i10) {
+        super(zVar.size(), i10);
+        this.f37101i = zVar;
+    }
+
+    @Override // mg.v
+    protected final Object a(int i10) {
+        return this.f37101i.get(i10);
     }
 }

@@ -1,17 +1,11 @@
 package hl;
 
-import android.view.accessibility.AccessibilityManager;
-import java.util.Locale;
+import com.facebook.react.bridge.Dynamic;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final AccessibilityManager f26178a = (AccessibilityManager) com.henninghall.date_picker.c.f16579a.getApplicationContext().getSystemService("accessibility");
-
-    /* renamed from: b  reason: collision with root package name */
-    private static Locale f26179b = Locale.getDefault();
-
-    public static void a(Locale locale) {
-        f26179b = locale;
+public class a extends k {
+    @Override // hl.k
+    /* renamed from: d */
+    public String c(Dynamic dynamic) {
+        return dynamic.asString();
     }
 }

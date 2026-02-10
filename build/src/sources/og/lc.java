@@ -1,64 +1,34 @@
 package og;
 
-import java.util.List;
-/* JADX INFO: Access modifiers changed from: package-private */
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class lc extends mc {
+final class lc implements zi.d {
 
-    /* renamed from: i  reason: collision with root package name */
-    final transient int f42293i;
+    /* renamed from: a  reason: collision with root package name */
+    static final lc f41120a = new lc();
 
-    /* renamed from: o  reason: collision with root package name */
-    final transient int f42294o;
-
-    /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ mc f42295p;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public lc(mc mcVar, int i10, int i11) {
-        this.f42295p = mcVar;
-        this.f42293i = i10;
-        this.f42294o = i11;
+    static {
+        c.b a10 = zi.c.a("language");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("durationMs");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("errorCode");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
-    @Override // og.la
-    final int c() {
-        return this.f42295p.d() + this.f42293i + this.f42294o;
+    private lc() {
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // og.la
-    public final int d() {
-        return this.f42295p.d() + this.f42293i;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // og.la
-    public final Object[] e() {
-        return this.f42295p.e();
-    }
-
-    @Override // og.mc
-    public final mc f(int i10, int i11) {
-        f4.c(i10, i11, this.f42294o);
-        mc mcVar = this.f42295p;
-        int i12 = this.f42293i;
-        return mcVar.subList(i10 + i12, i11 + i12);
-    }
-
-    @Override // java.util.List
-    public final Object get(int i10) {
-        f4.a(i10, this.f42294o, "index");
-        return this.f42295p.get(i10 + this.f42293i);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
-    public final int size() {
-        return this.f42294o;
-    }
-
-    @Override // og.mc, java.util.List
-    public final /* bridge */ /* synthetic */ List subList(int i10, int i11) {
-        return subList(i10, i11);
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

@@ -8,10 +8,10 @@ import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.scroll.ReactHorizontalScrollView;
 import com.facebook.react.views.scroll.ReactScrollView;
 import com.facebook.react.views.view.ReactViewGroup;
-import kn.d0;
-import kn.v;
 import kotlin.jvm.internal.Intrinsics;
-import qr.p;
+import ln.d0;
+import ln.v;
+import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class m implements d0 {
 
@@ -19,7 +19,7 @@ public final class m implements d0 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f18107a;
+        public static final /* synthetic */ int[] f18247a;
 
         static {
             int[] iArr = new int[PointerEvents.values().length];
@@ -39,11 +39,11 @@ public final class m implements d0 {
                 iArr[PointerEvents.AUTO.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
-            f18107a = iArr;
+            f18247a = iArr;
         }
     }
 
-    @Override // kn.d0
+    @Override // ln.d0
     public v a(View view) {
         PointerEvents pointerEvents;
         Intrinsics.checkNotNullParameter(view, "view");
@@ -54,29 +54,29 @@ public final class m implements d0 {
         }
         if (!view.isEnabled()) {
             if (pointerEvents == PointerEvents.AUTO) {
-                return v.f31940e;
+                return v.f36160e;
             }
             if (pointerEvents == PointerEvents.BOX_ONLY) {
-                return v.f31939d;
+                return v.f36159d;
             }
         }
-        int i10 = a.f18107a[pointerEvents.ordinal()];
+        int i10 = a.f18247a[pointerEvents.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 == 4) {
-                        return v.f31942o;
+                        return v.f36162o;
                     }
                     throw new p();
                 }
-                return v.f31939d;
+                return v.f36159d;
             }
-            return v.f31940e;
+            return v.f36160e;
         }
-        return v.f31941i;
+        return v.f36161i;
     }
 
-    @Override // kn.d0
+    @Override // ln.d0
     public boolean b(ViewGroup view) {
         Intrinsics.checkNotNullParameter(view, "view");
         if (view.getClipChildren()) {
@@ -99,7 +99,7 @@ public final class m implements d0 {
         }
     }
 
-    @Override // kn.d0
+    @Override // ln.d0
     public View c(ViewGroup parent, int i10) {
         Intrinsics.checkNotNullParameter(parent, "parent");
         if (parent instanceof ReactViewGroup) {

@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.steps.ui.network;
 
-import an.c;
+import bn.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class SuggestionJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19755a;
+    private final m.b f19895a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19756b;
+    private final h f19896b;
 
     public SuggestionJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "address");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19755a = a10;
+        this.f19895a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19756b = f10;
+        this.f19896b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,21 +38,21 @@ public final class SuggestionJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19755a);
+            int J = reader.J(this.f19895a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f19756b.fromJson(reader)) == null) {
+                    if (J == 1 && (str2 = (String) this.f19896b.fromJson(reader)) == null) {
                         throw c.x("address", "address", reader);
                     }
                 } else {
-                    str = (String) this.f19756b.fromJson(reader);
+                    str = (String) this.f19896b.fromJson(reader);
                     if (str == null) {
                         throw c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -72,9 +72,9 @@ public final class SuggestionJsonAdapter extends h {
         if (suggestion != null) {
             writer.k();
             writer.J(StackTraceHelper.ID_KEY);
-            this.f19756b.toJson(writer, suggestion.b());
+            this.f19896b.toJson(writer, suggestion.b());
             writer.J("address");
-            this.f19756b.toJson(writer, suggestion.a());
+            this.f19896b.toJson(writer, suggestion.a());
             writer.s();
             return;
         }

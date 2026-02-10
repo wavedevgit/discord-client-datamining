@@ -7,35 +7,35 @@ import java.io.Closeable;
 import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface g extends Closeable {
-    Cursor G1(String str);
+    Cursor C1(String str);
 
     void H();
 
     List L();
 
-    Cursor N(j jVar, CancellationSignal cancellationSignal);
+    Cursor N0(j jVar);
 
-    void O(String str);
+    Cursor O(j jVar, CancellationSignal cancellationSignal);
 
-    boolean R1();
+    void P(String str);
 
-    Cursor S0(j jVar);
+    boolean Q1();
 
     boolean c2();
 
+    k h1(String str);
+
     boolean isOpen();
 
-    void j0();
+    void k0();
 
-    void k0(String str, Object[] objArr);
+    void l0(String str, Object[] objArr);
 
-    k k1(String str);
-
-    void l0();
+    void m0();
 
     String t();
 
-    void v0();
+    void t0();
 
-    int y1(String str, int i10, ContentValues contentValues, String str2, Object[] objArr);
+    int t1(String str, int i10, ContentValues contentValues, String str2, Object[] objArr);
 }

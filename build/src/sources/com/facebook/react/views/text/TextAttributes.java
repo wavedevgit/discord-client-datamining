@@ -183,7 +183,7 @@ public final class TextAttributes {
 
     public final void setMaxFontSizeMultiplier(float f10) {
         if (f10 != 0.0f && f10 < 1.0f && !Float.isNaN(f10)) {
-            p8.a.J(ReactConstants.TAG, "maxFontSizeMultiplier must be NaN, 0, or >= 1");
+            q8.a.J(ReactConstants.TAG, "maxFontSizeMultiplier must be NaN, 0, or >= 1");
             this.maxFontSizeMultiplier = Float.NaN;
             return;
         }

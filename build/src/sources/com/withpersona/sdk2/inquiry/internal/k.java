@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import com.airbnb.lottie.LottieAnimationView;
 import com.withpersona.sdk2.inquiry.internal.n;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyle;
-import dn.c0;
-import dn.k;
+import en.c0;
+import en.k;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
@@ -18,41 +18,41 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
-import uo.f2;
-import uo.g2;
-import uo.h2;
+import vo.f2;
+import vo.g2;
+import vo.h2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class k implements dn.k {
+public final class k implements en.k {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f18940f = new a(null);
+    public static final a f19080f = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final View f18941b;
+    private final View f19081b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final LottieAnimationView f18942c;
+    private final LottieAnimationView f19082c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f18943d;
+    private final Integer f19083d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f18944e;
+    private Integer f19084e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ c0 f18945a;
+        private final /* synthetic */ c0 f19085a;
 
         /* renamed from: com.withpersona.sdk2.inquiry.internal.k$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        /* synthetic */ class C0240a extends FunctionReferenceImpl implements Function1 {
+        /* synthetic */ class C0267a extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0240a f18946d = new C0240a();
+            public static final C0267a f19086d = new C0267a();
 
-            C0240a() {
+            C0267a() {
                 super(1, k.class, "<init>", "<init>(Landroid/view/View;)V", 0);
             }
 
@@ -68,53 +68,53 @@ public final class k implements dn.k {
             this();
         }
 
-        @Override // dn.c0
+        @Override // en.c0
         /* renamed from: b */
-        public View a(n.d.b initialRendering, dn.a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
+        public View a(n.d.b initialRendering, en.a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f18945a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f19085a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
-        @Override // dn.c0
+        @Override // en.c0
         public KClass getType() {
-            return this.f18945a.getType();
+            return this.f19085a.getType();
         }
 
         private a() {
-            k.a aVar = dn.k.f20913a;
-            this.f18945a = new dn.m(Reflection.getOrCreateKotlinClass(n.d.b.class), g2.f52000f, C0240a.f18946d);
+            k.a aVar = en.k.f21834a;
+            this.f19085a = new en.m(Reflection.getOrCreateKotlinClass(n.d.b.class), g2.f52860f, C0267a.f19086d);
         }
     }
 
     public k(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f18941b = view;
-        View findViewById = view.findViewById(f2.f51960a);
+        this.f19081b = view;
+        View findViewById = view.findViewById(f2.f52820a);
         Intrinsics.checkNotNullExpressionValue(findViewById, "findViewById(...)");
         LottieAnimationView lottieAnimationView = (LottieAnimationView) findViewById;
-        this.f18942c = lottieAnimationView;
+        this.f19082c = lottieAnimationView;
         Context context = view.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        Integer f10 = rp.s.f(context, jp.a.f30822n, null, false, 6, null);
-        this.f18943d = f10;
+        Integer f10 = sp.s.f(context, kp.a.f34914n, null, false, 6, null);
+        this.f19083d = f10;
         if (f10 != null) {
             k(f10.intValue());
             lottieAnimationView.v();
             return;
         }
-        lottieAnimationView.l(new q5.e("**"), l5.a0.f35814b, new y5.e() { // from class: uo.x
-            @Override // y5.e
-            public final Object a(y5.b bVar) {
+        lottieAnimationView.l(new r5.e("**"), l5.b0.f35649b, new z5.e() { // from class: vo.x
+            @Override // z5.e
+            public final Object a(z5.b bVar) {
                 Integer g10;
                 g10 = com.withpersona.sdk2.inquiry.internal.k.g(com.withpersona.sdk2.inquiry.internal.k.this, bVar);
                 return g10;
             }
         });
-        lottieAnimationView.l(new q5.e("**"), l5.a0.f35813a, new y5.e() { // from class: uo.y
-            @Override // y5.e
-            public final Object a(y5.b bVar) {
+        lottieAnimationView.l(new r5.e("**"), l5.b0.f35648a, new z5.e() { // from class: vo.y
+            @Override // z5.e
+            public final Object a(z5.b bVar) {
                 Integer h10;
                 h10 = com.withpersona.sdk2.inquiry.internal.k.h(com.withpersona.sdk2.inquiry.internal.k.this, bVar);
                 return h10;
@@ -123,17 +123,17 @@ public final class k implements dn.k {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Integer g(k kVar, y5.b bVar) {
-        Context context = kVar.f18941b.getContext();
+    public static final Integer g(k kVar, z5.b bVar) {
+        Context context = kVar.f19081b.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        return Integer.valueOf(j(kVar, context, ah.b.f651m, null, false, 6, null));
+        return Integer.valueOf(j(kVar, context, bh.b.f6639m, null, false, 6, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Integer h(k kVar, y5.b bVar) {
-        Context context = kVar.f18941b.getContext();
+    public static final Integer h(k kVar, z5.b bVar) {
+        Context context = kVar.f19081b.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        return Integer.valueOf(j(kVar, context, f.a.f22219v, null, false, 6, null));
+        return Integer.valueOf(j(kVar, context, f.a.f22174v, null, false, 6, null));
     }
 
     private final int i(Context context, int i10, TypedValue typedValue, boolean z10) {
@@ -152,52 +152,52 @@ public final class k implements dn.k {
     }
 
     private final void k(int i10) {
-        Integer num = this.f18944e;
+        Integer num = this.f19084e;
         if (num != null && num.intValue() == i10) {
             return;
         }
-        this.f18944e = Integer.valueOf(i10);
-        this.f18942c.m();
-        this.f18942c.setMinFrame(0);
-        this.f18942c.setAnimation(i10);
-        this.f18942c.playAnimation();
+        this.f19084e = Integer.valueOf(i10);
+        this.f19082c.m();
+        this.f19082c.setMinFrame(0);
+        this.f19082c.setAnimation(i10);
+        this.f19082c.playAnimation();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(n.d.b bVar) {
         bVar.a().invoke();
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Integer n(int i10, y5.b bVar) {
+    public static final Integer n(int i10, z5.b bVar) {
         return Integer.valueOf(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Integer o(int i10, y5.b bVar) {
+    public static final Integer o(int i10, z5.b bVar) {
         return Integer.valueOf(i10);
     }
 
-    @Override // dn.k
+    @Override // en.k
     /* renamed from: l */
-    public void a(final n.d.b rendering, dn.a0 viewEnvironment) {
+    public void a(final n.d.b rendering, en.a0 viewEnvironment) {
         k kVar;
         int j10;
         Integer backgroundColorValue;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        if (rendering.c() && this.f18943d == null) {
-            k(h2.f52008a);
-            this.f18942c.setScaleX(0.5f);
-            this.f18942c.setScaleY(0.5f);
+        if (rendering.c() && this.f19083d == null) {
+            k(h2.f52868a);
+            this.f19082c.setScaleX(0.5f);
+            this.f19082c.setScaleY(0.5f);
         }
         if (rendering.c()) {
-            Context context = this.f18941b.getContext();
+            Context context = this.f19081b.getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            Integer f10 = rp.s.f(context, jp.a.f30821m, null, false, 6, null);
+            Integer f10 = sp.s.f(context, kp.a.f34913m, null, false, 6, null);
             if (f10 != null) {
-                this.f18941b.setBackground(androidx.core.content.a.e(this.f18941b.getContext(), f10.intValue()));
+                this.f19081b.setBackground(androidx.core.content.a.e(this.f19081b.getContext(), f10.intValue()));
             }
         }
         StepStyle b10 = rendering.b();
@@ -205,31 +205,31 @@ public final class k implements dn.k {
             j10 = backgroundColorValue.intValue();
             kVar = this;
         } else {
-            Context context2 = this.f18941b.getContext();
+            Context context2 = this.f19081b.getContext();
             Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
             kVar = this;
             j10 = j(kVar, context2, 16842801, null, false, 6, null);
         }
-        aq.c.a(viewEnvironment, j10);
+        bq.c.a(viewEnvironment, j10);
         StepStyle b11 = rendering.b();
         if (b11 != null) {
             Integer backgroundColorValue2 = b11.getBackgroundColorValue();
             if (backgroundColorValue2 != null) {
-                kVar.f18941b.setBackgroundColor(backgroundColorValue2.intValue());
+                kVar.f19081b.setBackgroundColor(backgroundColorValue2.intValue());
             }
-            Context context3 = kVar.f18941b.getContext();
+            Context context3 = kVar.f19081b.getContext();
             Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
-            Drawable a10 = mq.c.a(b11, context3);
+            Drawable a10 = nq.c.a(b11, context3);
             if (a10 != null) {
-                kVar.f18941b.setBackground(a10);
+                kVar.f19081b.setBackground(a10);
             }
-            if (kVar.f18943d == null) {
+            if (kVar.f19083d == null) {
                 Integer fillColorValue = b11.getFillColorValue();
                 if (fillColorValue != null) {
                     final int intValue = fillColorValue.intValue();
-                    kVar.f18942c.l(new q5.e("**"), l5.a0.f35813a, new y5.e() { // from class: uo.u
-                        @Override // y5.e
-                        public final Object a(y5.b bVar) {
+                    kVar.f19082c.l(new r5.e("**"), l5.b0.f35648a, new z5.e() { // from class: vo.u
+                        @Override // z5.e
+                        public final Object a(z5.b bVar) {
                             Integer n10;
                             n10 = com.withpersona.sdk2.inquiry.internal.k.n(intValue, bVar);
                             return n10;
@@ -239,9 +239,9 @@ public final class k implements dn.k {
                 Integer strokeColorValue = b11.getStrokeColorValue();
                 if (strokeColorValue != null) {
                     final int intValue2 = strokeColorValue.intValue();
-                    kVar.f18942c.l(new q5.e("**"), l5.a0.f35814b, new y5.e() { // from class: uo.v
-                        @Override // y5.e
-                        public final Object a(y5.b bVar) {
+                    kVar.f19082c.l(new r5.e("**"), l5.b0.f35649b, new z5.e() { // from class: vo.v
+                        @Override // z5.e
+                        public final Object a(z5.b bVar) {
                             Integer o10;
                             o10 = com.withpersona.sdk2.inquiry.internal.k.o(intValue2, bVar);
                             return o10;
@@ -250,7 +250,7 @@ public final class k implements dn.k {
                 }
             }
         }
-        dn.e.c(kVar.f18941b, new Function0() { // from class: uo.w
+        en.e.c(kVar.f19081b, new Function0() { // from class: vo.w
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit m10;

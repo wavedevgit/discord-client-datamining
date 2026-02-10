@@ -24,7 +24,7 @@ import java.util.Map;
 public class UIImplementation {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f11232a = 0;
+    public static final /* synthetic */ int f11372a = 0;
     protected final EventDispatcher mEventDispatcher;
     private long mLastCalculateLayoutTime;
     protected LayoutUpdateListener mLayoutUpdateListener;
@@ -52,7 +52,7 @@ public class UIImplementation {
     }
 
     private void assertNodeDoesNotNeedCustomLayoutForChildren(ReactShadowNode reactShadowNode) {
-        ViewManager viewManager = (ViewManager) db.a.c(this.mViewManagers.get(reactShadowNode.getViewClass()));
+        ViewManager viewManager = (ViewManager) eb.a.c(this.mViewManagers.get(reactShadowNode.getViewClass()));
         if (viewManager instanceof IViewManagerWithChildren) {
             IViewManagerWithChildren iViewManagerWithChildren = (IViewManagerWithChildren) viewManager;
             if (iViewManagerWithChildren != null && iViewManagerWithChildren.needsCustomLayoutForChildren()) {
@@ -69,7 +69,7 @@ public class UIImplementation {
         }
         String str2 = "Unable to execute operation " + str + " on view with tag: " + i10 + ", since the view does not exist";
         if (!ReactBuildConfig.DEBUG) {
-            p8.a.J(ReactConstants.TAG, str2);
+            q8.a.J(ReactConstants.TAG, str2);
             return false;
         }
         throw new IllegalViewOperationException(str2);
@@ -88,7 +88,7 @@ public class UIImplementation {
             i10 = Math.round(reactShadowNode.getLayoutX());
             i11 = Math.round(reactShadowNode.getLayoutY());
             for (ReactShadowNode parent = reactShadowNode.getParent(); parent != reactShadowNode2; parent = parent.getParent()) {
-                db.a.c(parent);
+                eb.a.c(parent);
                 assertNodeDoesNotNeedCustomLayoutForChildren(parent);
                 i10 += Math.round(parent.getLayoutX());
                 i11 += Math.round(parent.getLayoutY());
@@ -147,7 +147,7 @@ public class UIImplementation {
 
     protected void calculateRootLayout(ReactShadowNode reactShadowNode) {
         float size;
-        qb.b.a(0L, "cssRoot.calculateLayout").a("rootTag", reactShadowNode.getReactTag()).c();
+        rb.b.a(0L, "cssRoot.calculateLayout").a("rootTag", reactShadowNode.getReactTag()).c();
         long uptimeMillis = SystemClock.uptimeMillis();
         try {
             int intValue = reactShadowNode.getWidthMeasureSpec().intValue();
@@ -163,7 +163,7 @@ public class UIImplementation {
             }
             reactShadowNode.calculateLayout(size, f10);
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
             this.mLastCalculateLayoutTime = SystemClock.uptimeMillis() - uptimeMillis;
         }
     }
@@ -199,7 +199,7 @@ public class UIImplementation {
             try {
                 ReactShadowNode<?> createShadowNode = createShadowNode(str);
                 ReactShadowNode<?> node = this.mShadowNodeRegistry.getNode(i11);
-                db.a.d(node, "Root node with tag " + i11 + " doesn't exist");
+                eb.a.d(node, "Root node with tag " + i11 + " doesn't exist");
                 createShadowNode.setReactTag(i10);
                 createShadowNode.setViewClassName(str);
                 createShadowNode.setRootTag(node.getReactTag());
@@ -226,14 +226,14 @@ public class UIImplementation {
     }
 
     public void dispatchViewUpdates(int i10) {
-        qb.b.a(0L, "UIImplementation.dispatchViewUpdates").a("batchId", i10).c();
+        rb.b.a(0L, "UIImplementation.dispatchViewUpdates").a("batchId", i10).c();
         long uptimeMillis = SystemClock.uptimeMillis();
         try {
             updateViewHierarchy();
             this.mNativeViewHierarchyOptimizer.onBatchComplete();
             this.mOperationsQueue.dispatchViewUpdates(i10, uptimeMillis, this.mLastCalculateLayoutTime);
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
         }
     }
 
@@ -419,7 +419,7 @@ public class UIImplementation {
         if (resolveShadowNode != null) {
             return resolveShadowNode.getRootTag();
         }
-        p8.a.J(ReactConstants.TAG, "Warning : attempted to resolve a non-existent react shadow node. reactTag=" + i10);
+        q8.a.J(ReactConstants.TAG, "Warning : attempted to resolve a non-existent react shadow node. reactTag=" + i10);
         return 0;
     }
 
@@ -484,7 +484,7 @@ public class UIImplementation {
     public void setViewLocalData(int i10, Object obj) {
         ReactShadowNode<?> node = this.mShadowNodeRegistry.getNode(i10);
         if (node == null) {
-            p8.a.J(ReactConstants.TAG, "Attempt to set local data for view with unknown tag: " + i10);
+            q8.a.J(ReactConstants.TAG, "Attempt to set local data for view with unknown tag: " + i10);
             return;
         }
         node.setLocalData(obj);
@@ -499,7 +499,7 @@ public class UIImplementation {
     public void updateInsetsPadding(int i10, int i11, int i12, int i13, int i14) {
         ReactShadowNode<?> node = this.mShadowNodeRegistry.getNode(i10);
         if (node == null) {
-            p8.a.J(ReactConstants.TAG, "Tried to update size of non-existent tag: " + i10);
+            q8.a.J(ReactConstants.TAG, "Tried to update size of non-existent tag: " + i10);
             return;
         }
         node.setPadding(4, i12);
@@ -512,7 +512,7 @@ public class UIImplementation {
     public void updateNodeSize(int i10, int i11, int i12) {
         ReactShadowNode<?> node = this.mShadowNodeRegistry.getNode(i10);
         if (node == null) {
-            p8.a.J(ReactConstants.TAG, "Tried to update size of non-existent tag: " + i10);
+            q8.a.J(ReactConstants.TAG, "Tried to update size of non-existent tag: " + i10);
             return;
         }
         node.setStyleWidth(i11);
@@ -523,7 +523,7 @@ public class UIImplementation {
     public void updateRootView(int i10, int i11, int i12) {
         ReactShadowNode<?> node = this.mShadowNodeRegistry.getNode(i10);
         if (node == null) {
-            p8.a.J(ReactConstants.TAG, "Tried to update non-existent root tag: " + i10);
+            q8.a.J(ReactConstants.TAG, "Tried to update non-existent root tag: " + i10);
             return;
         }
         updateRootView(node, i11, i12);
@@ -549,33 +549,33 @@ public class UIImplementation {
     }
 
     protected void updateViewHierarchy() {
-        qb.a.c(0L, "UIImplementation.updateViewHierarchy");
+        rb.a.c(0L, "UIImplementation.updateViewHierarchy");
         for (int i10 = 0; i10 < this.mShadowNodeRegistry.getRootNodeCount(); i10++) {
             try {
                 ReactShadowNode<?> node = this.mShadowNodeRegistry.getNode(this.mShadowNodeRegistry.getRootTag(i10));
                 if (node.getWidthMeasureSpec() != null && node.getHeightMeasureSpec() != null) {
-                    qb.b.a(0L, "UIImplementation.notifyOnBeforeLayoutRecursive").a("rootTag", node.getReactTag()).c();
+                    rb.b.a(0L, "UIImplementation.notifyOnBeforeLayoutRecursive").a("rootTag", node.getReactTag()).c();
                     notifyOnBeforeLayoutRecursive(node);
-                    qb.a.i(0L);
+                    rb.a.i(0L);
                     calculateRootLayout(node);
-                    qb.b.a(0L, "UIImplementation.applyUpdatesRecursive").a("rootTag", node.getReactTag()).c();
+                    rb.b.a(0L, "UIImplementation.applyUpdatesRecursive").a("rootTag", node.getReactTag()).c();
                     ArrayList arrayList = new ArrayList();
                     applyUpdatesRecursive(node, 0.0f, 0.0f, arrayList);
                     for (ReactShadowNode reactShadowNode : arrayList) {
                         this.mEventDispatcher.dispatchEvent(OnLayoutEvent.obtain(-1, reactShadowNode.getReactTag(), reactShadowNode.getScreenX(), reactShadowNode.getScreenY(), reactShadowNode.getScreenWidth(), reactShadowNode.getScreenHeight()));
                     }
-                    qb.a.i(0L);
+                    rb.a.i(0L);
                     LayoutUpdateListener layoutUpdateListener = this.mLayoutUpdateListener;
                     if (layoutUpdateListener != null) {
                         this.mOperationsQueue.enqueueLayoutUpdateFinished(node, layoutUpdateListener);
                     }
                 }
             } catch (Throwable th2) {
-                qb.a.i(0L);
+                rb.a.i(0L);
                 throw th2;
             }
         }
-        qb.a.i(0L);
+        rb.a.i(0L);
     }
 
     @Deprecated

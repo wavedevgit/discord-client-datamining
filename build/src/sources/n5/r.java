@@ -3,51 +3,51 @@ package n5;
 import android.graphics.Path;
 import java.util.ArrayList;
 import java.util.List;
-import l5.a0;
+import l5.b0;
 import o5.a;
-import s5.t;
+import t5.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class r implements m, a.b, k {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f38659b;
+    private final String f37956b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f38660c;
+    private final boolean f37957c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.airbnb.lottie.n f38661d;
+    private final com.airbnb.lottie.n f37958d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final o5.m f38662e;
+    private final o5.m f37959e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f38663f;
+    private boolean f37960f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Path f38658a = new Path();
+    private final Path f37955a = new Path();
 
     /* renamed from: g  reason: collision with root package name */
-    private final b f38664g = new b();
+    private final b f37961g = new b();
 
-    public r(com.airbnb.lottie.n nVar, t5.b bVar, s5.r rVar) {
-        this.f38659b = rVar.b();
-        this.f38660c = rVar.d();
-        this.f38661d = nVar;
+    public r(com.airbnb.lottie.n nVar, u5.b bVar, t5.r rVar) {
+        this.f37956b = rVar.b();
+        this.f37957c = rVar.d();
+        this.f37958d = nVar;
         o5.m a10 = rVar.c().a();
-        this.f38662e = a10;
+        this.f37959e = a10;
         bVar.i(a10);
         a10.a(this);
     }
 
-    private void f() {
-        this.f38663f = false;
-        this.f38661d.invalidateSelf();
+    private void g() {
+        this.f37960f = false;
+        this.f37958d.invalidateSelf();
     }
 
     @Override // o5.a.b
     public void a() {
-        f();
+        g();
     }
 
     @Override // n5.c
@@ -58,8 +58,8 @@ public class r implements m, a.b, k {
             if (cVar instanceof u) {
                 u uVar = (u) cVar;
                 if (uVar.j() == t.a.SIMULTANEOUSLY) {
-                    this.f38664g.a(uVar);
-                    uVar.c(this);
+                    this.f37961g.a(uVar);
+                    uVar.d(this);
                 }
             }
             if (cVar instanceof s) {
@@ -69,44 +69,44 @@ public class r implements m, a.b, k {
                 arrayList.add((s) cVar);
             }
         }
-        this.f38662e.r(arrayList);
+        this.f37959e.r(arrayList);
     }
 
-    @Override // q5.f
-    public void c(q5.e eVar, int i10, List list, q5.e eVar2) {
-        x5.i.k(eVar, i10, list, eVar2, this);
-    }
-
-    @Override // q5.f
-    public void d(Object obj, y5.c cVar) {
-        if (obj == a0.P) {
-            this.f38662e.o(cVar);
+    @Override // r5.f
+    public void d(Object obj, z5.c cVar) {
+        if (obj == b0.P) {
+            this.f37959e.o(cVar);
         }
+    }
+
+    @Override // r5.f
+    public void e(r5.e eVar, int i10, List list, r5.e eVar2) {
+        y5.i.k(eVar, i10, list, eVar2, this);
     }
 
     @Override // n5.c
     public String getName() {
-        return this.f38659b;
+        return this.f37956b;
     }
 
     @Override // n5.m
     public Path t() {
-        if (this.f38663f && !this.f38662e.k()) {
-            return this.f38658a;
+        if (this.f37960f && !this.f37959e.k()) {
+            return this.f37955a;
         }
-        this.f38658a.reset();
-        if (this.f38660c) {
-            this.f38663f = true;
-            return this.f38658a;
+        this.f37955a.reset();
+        if (this.f37957c) {
+            this.f37960f = true;
+            return this.f37955a;
         }
-        Path path = (Path) this.f38662e.h();
+        Path path = (Path) this.f37959e.h();
         if (path == null) {
-            return this.f38658a;
+            return this.f37955a;
         }
-        this.f38658a.set(path);
-        this.f38658a.setFillType(Path.FillType.EVEN_ODD);
-        this.f38664g.b(this.f38658a);
-        this.f38663f = true;
-        return this.f38658a;
+        this.f37955a.set(path);
+        this.f37955a.setFillType(Path.FillType.EVEN_ODD);
+        this.f37961g.b(this.f37955a);
+        this.f37960f = true;
+        return this.f37955a;
     }
 }

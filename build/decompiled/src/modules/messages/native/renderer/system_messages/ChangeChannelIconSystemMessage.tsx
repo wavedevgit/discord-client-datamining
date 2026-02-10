@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ChangeChannelIconSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56067: for (var _fun56067_ip = 0;;) switch (_fun56067_ip) {
+        _fun56070: for (var _fun56070_ip = 0;;) switch (_fun56070_ip) {
             case 0:
                 var3 = arg0;
                 var11 = var3.message;
@@ -66,29 +66,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var12 == var6;
                 var4 = undefined;
                 if (var5) {
-                    _fun56067_ip = 178;
-                    continue _fun56067
+                    _fun56070_ip = 178;
+                    continue _fun56070
                 }
             case 153:
                 var5 = var6.isGroupDM;
                 var5 = var12 == var5;
                 var4 = undefined;
                 if (var5) {
-                    _fun56067_ip = 178;
-                    continue _fun56067
+                    _fun56070_ip = 178;
+                    continue _fun56070
                 }
             case 168:
                 var5 = var6.isGroupDM;
                 var4 = var5.bind(var6)();
             case 178:
                 if (!(var12 != var4)) {
-                    _fun56067_ip = 185;
-                    continue _fun56067
+                    _fun56070_ip = 185;
+                    continue _fun56070
                 }
             case 182:
                 if (var4) {
-                    _fun56067_ip = 255;
-                    continue _fun56067
+                    _fun56070_ip = 255;
+                    continue _fun56070
                 }
             case 185:
                 var5 = _closure1_slot0;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.username = var14;
                 var4.usernameOnClick = var9;
                 var4 = var6.bind(var7)(var5, var4);
-                _fun56067_ip = 377;
-                continue _fun56067;
+                _fun56070_ip = 377;
+                continue _fun56070;
             case 255:
                 var6 = _closure1_slot0;
                 var15 = _closure1_slot2;
@@ -129,8 +129,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var12 == var13;
                 var12 = undefined;
                 if (var14) {
-                    _fun56067_ip = 346;
-                    continue _fun56067
+                    _fun56070_ip = 346;
+                    continue _fun56070
                 }
             case 340:
                 var12 = var13.linkColor;
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createChangeChannelIconSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6735, 3982, 1234, 6745, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6736, 3982, 1234, 6746, 2]);

@@ -1,59 +1,41 @@
 package cn;
 
-import kotlin.jvm.internal.Intrinsics;
+import cn.t;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlinx.coroutines.CoroutineScope;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e {
+public final class e implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    private a f7588a;
+    public static final e f7730a = new e();
 
-    /* renamed from: b  reason: collision with root package name */
-    private a f7589b;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface a {
-        a a();
-
-        void b(a aVar);
+    private e() {
     }
 
-    public final void a() {
-        this.f7588a = null;
-        this.f7589b = null;
+    @Override // cn.t
+    public Object a(Object obj, i iVar, Function2 function2, t.c cVar) {
+        return t.a.a(this, obj, iVar, function2, cVar);
     }
 
-    public final a b() {
-        return this.f7588a;
+    @Override // cn.t
+    public i b(Object obj, Function1 function1, t.c cVar) {
+        return t.a.e(this, obj, function1, cVar);
     }
 
-    public final a c() {
-        return this.f7589b;
+    @Override // cn.t
+    public Object c(Object obj, Object obj2, a aVar, Function3 function3, t.c cVar) {
+        return t.a.c(this, obj, obj2, aVar, function3, cVar);
     }
 
-    public final void d(a node) {
-        Intrinsics.checkNotNullParameter(node, "node");
-        if (node.a() == null) {
-            a aVar = this.f7589b;
-            if (aVar == null) {
-                if (this.f7588a == null) {
-                    this.f7588a = node;
-                    this.f7589b = node;
-                    return;
-                }
-                throw new IllegalStateException("Check failed.");
-            }
-            f(node);
-            aVar.b(node);
-            return;
-        }
-        throw new IllegalArgumentException("Expected node to not be linked.");
+    @Override // cn.t
+    public void d(CoroutineScope coroutineScope, t.c cVar) {
+        t.a.d(this, coroutineScope, cVar);
     }
 
-    public final void e(a aVar) {
-        this.f7588a = aVar;
-    }
-
-    public final void f(a aVar) {
-        this.f7589b = aVar;
+    @Override // cn.t
+    public Object e(Object obj, Object obj2, Object obj3, Function3 function3, t.c cVar) {
+        return t.a.b(this, obj, obj2, obj3, function3, cVar);
     }
 }

@@ -1,136 +1,32 @@
 package pg;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class f8 implements zi.a {
+public final class f8 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final zi.a f44266a = new f8();
+    private ma f43545a;
 
-    private f8() {
+    /* renamed from: b  reason: collision with root package name */
+    private e8 f43546b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private z7 f43547c;
+
+    public final f8 c(e8 e8Var) {
+        this.f43546b = e8Var;
+        return this;
     }
 
-    @Override // zi.a
-    public final void a(zi.b bVar) {
-        bVar.a(ga.class, w5.f44873a);
-        bVar.a(hc.class, x7.f44967a);
-        bVar.a(ha.class, x5.f44952a);
-        bVar.a(la.class, z5.f45042a);
-        bVar.a(ia.class, y5.f45007a);
-        bVar.a(ja.class, a6.f43958a);
-        bVar.a(a9.class, e5.f44214a);
-        bVar.a(z8.class, d5.f44074a);
-        bVar.a(v9.class, p5.f44630a);
-        bVar.a(bc.class, p7.f44647a);
-        bVar.a(y8.class, c5.f44018a);
-        bVar.a(x8.class, b5.f43985a);
-        bVar.a(wa.class, m6.f44523a);
-        bVar.a(ad.class, l5.f44478a);
-        bVar.a(r9.class, n5.f44560a);
-        bVar.a(n9.class, k5.f44448a);
-        bVar.a(za.class, n6.f44565a);
-        bVar.a(yb.class, m7.f44530a);
-        bVar.a(zb.class, n7.f44567a);
-        bVar.a(xb.class, l7.f44488a);
-        bVar.a(pa.class, h6.f44334a);
-        bVar.a(zc.class, l4.f44476a);
-        bVar.a(qa.class, i6.f44384a);
-        bVar.a(ab.class, o6.f44602a);
-        bVar.a(db.class, r6.f44726a);
-        bVar.a(cb.class, q6.f44681a);
-        bVar.a(bb.class, p6.f44641a);
-        bVar.a(ib.class, w6.f44924a);
-        bVar.a(jb.class, x6.f44960a);
-        bVar.a(mb.class, z6.f45047a);
-        bVar.a(kb.class, y6.f45017a);
-        bVar.a(oa.class, f6.f44257a);
-        bVar.a(nb.class, a7.f43963a);
-        bVar.a(ob.class, b7.f43991a);
-        bVar.a(pb.class, c7.f44024a);
-        bVar.a(qb.class, d7.f44085a);
-        bVar.a(wb.class, j7.f44419a);
-        bVar.a(vb.class, k7.f44458a);
-        bVar.a(hb.class, s6.f44763a);
-        bVar.a(z9.class, u5.f44821a);
-        bVar.a(fb.class, u6.f44825a);
-        bVar.a(eb.class, t6.f44799a);
-        bVar.a(gb.class, v6.f44854a);
-        bVar.a(ac.class, o7.f44605a);
-        bVar.a(lc.class, b8.f43997a);
-        bVar.a(m8.class, q4.f44674a);
-        bVar.a(k8.class, o4.f44595a);
-        bVar.a(j8.class, n4.f44556a);
-        bVar.a(l8.class, p4.f44626a);
-        bVar.a(o8.class, s4.f44755a);
-        bVar.a(n8.class, r4.f44714a);
-        bVar.a(p8.class, t4.f44791a);
-        bVar.a(q8.class, u4.f44817a);
-        bVar.a(r8.class, v4.f44848a);
-        bVar.a(s8.class, w4.f44869a);
-        bVar.a(t8.class, x4.f44948a);
-        bVar.a(g3.class, h4.f44321a);
-        bVar.a(i3.class, j4.f44408a);
-        bVar.a(h3.class, i4.f44371a);
-        bVar.a(x9.class, s5.f44759a);
-        bVar.a(b9.class, g5.f44290a);
-        bVar.a(g2.class, k3.f44439a);
-        bVar.a(f2.class, l3.f44471a);
-        bVar.a(e9.class, i5.f44377a);
-        bVar.a(i2.class, m3.f44504a);
-        bVar.a(h2.class, n3.f44550a);
-        bVar.a(s2.class, s3.f44751a);
-        bVar.a(q2.class, t3.f44784a);
-        bVar.a(k2.class, o3.f44591a);
-        bVar.a(j2.class, p3.f44618a);
-        bVar.a(u2.class, u3.f44813a);
-        bVar.a(t2.class, v3.f44843a);
-        bVar.a(w2.class, w3.f44865a);
-        bVar.a(v2.class, x3.f44942a);
-        bVar.a(f3.class, f4.f44253a);
-        bVar.a(e3.class, g4.f44284a);
-        bVar.a(y2.class, y3.f44998a);
-        bVar.a(x2.class, z3.f45032a);
-        bVar.a(a3.class, a4.f43951a);
-        bVar.a(z2.class, b4.f43980a);
-        bVar.a(uc.class, s7.f44768a);
-        bVar.a(nc.class, h5.f44323a);
-        bVar.a(rc.class, e6.f44220a);
-        bVar.a(qc.class, d6.f44080a);
-        bVar.a(oc.class, m5.f44515a);
-        bVar.a(tc.class, r7.f44730a);
-        bVar.a(sc.class, q7.f44687a);
-        bVar.a(vc.class, t7.f44802a);
-        bVar.a(pc.class, q5.f44678a);
-        bVar.a(yc.class, d8.f44089a);
-        bVar.a(xc.class, e8.f44226a);
-        bVar.a(wc.class, c8.f44028a);
-        bVar.a(cc.class, u7.f44827a);
-        bVar.a(w9.class, r5.f44718a);
-        bVar.a(aa.class, v5.f44852a);
-        bVar.a(h8.class, m4.f44508a);
-        bVar.a(s9.class, o5.f44598a);
-        bVar.a(y9.class, t5.f44795a);
-        bVar.a(f9.class, j5.f44413a);
-        bVar.a(na.class, c6.f44021a);
-        bVar.a(ma.class, b6.f43988a);
-        bVar.a(e2.class, j3.f44400a);
-        bVar.a(ic.class, y7.f45022a);
-        bVar.a(kc.class, a8.f43970a);
-        bVar.a(jc.class, z7.f45053a);
-        bVar.a(g8.class, k4.f44443a);
-        bVar.a(w8.class, a5.f43955a);
-        bVar.a(v8.class, z4.f45037a);
-        bVar.a(u8.class, y4.f45002a);
-        bVar.a(ra.class, j6.f44417a);
-        bVar.a(ta.class, l6.f44485a);
-        bVar.a(sa.class, k6.f44455a);
-        bVar.a(m2.class, q3.f44670a);
-        bVar.a(l2.class, r3.f44710a);
-        bVar.a(rb.class, e7.f44223a);
-        bVar.a(ub.class, i7.f44386a);
-        bVar.a(sb.class, f7.f44262a);
-        bVar.a(tb.class, g7.f44300a);
-        bVar.a(c3.class, c4.f44014a);
-        bVar.a(b3.class, d4.f44069a);
-        bVar.a(ec.class, w7.f44927a);
-        bVar.a(dc.class, v7.f44856a);
+    public final f8 d(z7 z7Var) {
+        this.f43547c = z7Var;
+        return this;
+    }
+
+    public final f8 e(ma maVar) {
+        this.f43545a = maVar;
+        return this;
+    }
+
+    public final h8 f() {
+        return new h8(this, null);
     }
 }

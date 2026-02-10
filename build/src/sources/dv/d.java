@@ -1,70 +1,44 @@
 package dv;
 
-import dv.e;
+import dv.c;
 import java.util.List;
-import kotlin.jvm.functions.Function2;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements su.b, e {
+public final class d implements tu.b, c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f21202a = new d();
+    public static final d f20991a = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function2 {
+    static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f21203d = new a();
+        public static final a f20992d = new a();
 
         a() {
-            super(2);
+            super(1);
         }
 
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 <= i11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            return Boolean.valueOf(z10);
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        @Override // kotlin.jvm.functions.Function1
+        /* renamed from: a */
+        public final Double invoke(List it) {
+            Intrinsics.checkNotNullParameter(it, "it");
+            return CollectionsKt.D0(it);
         }
     }
 
     private d() {
     }
 
-    @Override // tu.c
-    public boolean b(List list, Function2 function2) {
-        return e.a.b(this, list, function2);
-    }
-
-    @Override // tu.a
-    public Boolean c(Object obj) {
-        return e.a.f(this, obj);
+    public Double a(Object obj, Function1 function1) {
+        return c.a.a(this, obj, function1);
     }
 
     @Override // tu.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return e.a.e(this, comparable, comparable2);
-    }
-
-    public boolean e(List list, Function2 function2) {
-        return e.a.c(this, list, function2);
-    }
-
-    @Override // su.b
     public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(e(cw.a.c(obj), a.f21203d));
-    }
-
-    @Override // tu.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return e.a.d(this, comparable, comparable2);
+        return a(obj, a.f20992d);
     }
 }

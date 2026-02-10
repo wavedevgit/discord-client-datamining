@@ -1,52 +1,119 @@
 package aq;
 
-import android.graphics.Color;
-import android.view.Window;
-import androidx.core.view.WindowInsetsControllerCompat;
+import android.os.Parcel;
+import android.os.Parcelable;
 import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public final class a implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<a> CREATOR = new C0100a();
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Window f6278a;
+    /* renamed from: d  reason: collision with root package name */
+    private final boolean f5993d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final boolean f6279b;
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f5994e;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f6280c;
+    /* renamed from: i  reason: collision with root package name */
+    private final boolean f5995i;
 
-    public a(Window window, boolean z10, boolean z11) {
-        Intrinsics.checkNotNullParameter(window, "window");
-        this.f6278a = window;
-        this.f6279b = z10;
-        this.f6280c = z11;
-    }
+    /* renamed from: o  reason: collision with root package name */
+    private final boolean f5996o;
 
-    private final void b(Window window, int i10) {
-        boolean z10;
-        int rgb = Color.rgb(Color.red(i10), Color.green(i10), Color.blue(i10));
-        double d10 = r1.c.d(-1, rgb);
-        double d11 = r1.c.d(-16777216, rgb);
-        WindowInsetsControllerCompat windowInsetsControllerCompat = new WindowInsetsControllerCompat(window, window.getDecorView());
-        boolean z11 = false;
-        if (this.f6279b) {
-            if (d10 < d11) {
-                z10 = true;
+    /* renamed from: p  reason: collision with root package name */
+    private final boolean f5997p;
+
+    /* renamed from: aq.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0100a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final a createFromParcel(Parcel parcel) {
+            boolean z10;
+            boolean z11;
+            boolean z12;
+            boolean z13;
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            boolean z14 = false;
+            boolean z15 = true;
+            if (parcel.readInt() != 0) {
+                z10 = false;
+                z14 = true;
             } else {
                 z10 = false;
             }
-            windowInsetsControllerCompat.d(z10);
-        }
-        if (this.f6280c) {
-            if (d10 < d11) {
+            if (parcel.readInt() != 0) {
                 z11 = true;
+            } else {
+                z11 = true;
+                z15 = z10;
             }
-            windowInsetsControllerCompat.e(z11);
+            if (parcel.readInt() != 0) {
+                z12 = z11;
+            } else {
+                z12 = z11;
+                z11 = z10;
+            }
+            if (parcel.readInt() != 0) {
+                z13 = z12;
+            } else {
+                z13 = z12;
+                z12 = z10;
+            }
+            if (parcel.readInt() == 0) {
+                z13 = z10;
+            }
+            return new a(z14, z15, z11, z12, z13);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final a[] newArray(int i10) {
+            return new a[i10];
         }
     }
 
-    public final void a(int i10) {
-        b(this.f6278a, i10);
+    public a(boolean z10, boolean z11, boolean z12, boolean z13, boolean z14) {
+        this.f5993d = z10;
+        this.f5994e = z11;
+        this.f5995i = z12;
+        this.f5996o = z13;
+        this.f5997p = z14;
+    }
+
+    public final boolean a() {
+        return this.f5996o;
+    }
+
+    public final boolean b() {
+        return this.f5993d;
+    }
+
+    public final boolean c() {
+        return this.f5994e;
+    }
+
+    public final boolean d() {
+        return this.f5995i;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public final boolean e() {
+        return this.f5997p;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeInt(this.f5993d ? 1 : 0);
+        dest.writeInt(this.f5994e ? 1 : 0);
+        dest.writeInt(this.f5995i ? 1 : 0);
+        dest.writeInt(this.f5996o ? 1 : 0);
+        dest.writeInt(this.f5997p ? 1 : 0);
     }
 }

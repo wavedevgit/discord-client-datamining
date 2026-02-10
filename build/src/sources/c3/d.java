@@ -3,12 +3,12 @@ package c3;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static d f7222a;
+    private static d f7321a;
 
     public static d a() {
-        if (f7222a == null) {
-            f7222a = new e();
+        if (f7321a == null) {
+            f7321a = new e();
         }
-        return f7222a;
+        return f7321a;
     }
 }

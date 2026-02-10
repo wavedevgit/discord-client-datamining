@@ -5,16 +5,16 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class a extends e {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final C0374a f26591b = new C0374a(null);
+    public static final C0396a f26633b = new C0396a(null);
 
     /* renamed from: i2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0374a {
-        public /* synthetic */ C0374a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0396a {
+        public /* synthetic */ C0396a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0374a() {
+        private C0396a() {
         }
     }
 

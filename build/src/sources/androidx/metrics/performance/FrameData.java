@@ -6,45 +6,45 @@ import kotlin.jvm.internal.Intrinsics;
 public class FrameData {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f5048a;
+    private final List f4745a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f5049b;
+    private long f4746b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f5050c;
+    private long f4747c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f5051d;
+    private boolean f4748d;
 
     public FrameData(long j10, long j11, boolean z10, List states) {
         Intrinsics.checkNotNullParameter(states, "states");
-        this.f5048a = states;
-        this.f5049b = j10;
-        this.f5050c = j11;
-        this.f5051d = z10;
+        this.f4745a = states;
+        this.f4746b = j10;
+        this.f4747c = j11;
+        this.f4748d = z10;
     }
 
     public final long a() {
-        return this.f5050c;
+        return this.f4747c;
     }
 
     public final long b() {
-        return this.f5049b;
+        return this.f4746b;
     }
 
     public final List c() {
-        return this.f5048a;
+        return this.f4745a;
     }
 
     public final boolean d() {
-        return this.f5051d;
+        return this.f4748d;
     }
 
     public final void e(long j10, long j11, boolean z10) {
-        this.f5049b = j10;
-        this.f5050c = j11;
-        this.f5051d = z10;
+        this.f4746b = j10;
+        this.f4747c = j11;
+        this.f4748d = z10;
     }
 
     public boolean equals(Object obj) {
@@ -63,17 +63,17 @@ public class FrameData {
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type androidx.metrics.performance.FrameData");
         FrameData frameData = (FrameData) obj;
-        if (this.f5049b == frameData.f5049b && this.f5050c == frameData.f5050c && this.f5051d == frameData.f5051d && Intrinsics.areEqual(this.f5048a, frameData.f5048a)) {
+        if (this.f4746b == frameData.f4746b && this.f4747c == frameData.f4747c && this.f4748d == frameData.f4748d && Intrinsics.areEqual(this.f4745a, frameData.f4745a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((Long.hashCode(this.f5049b) * 31) + Long.hashCode(this.f5050c)) * 31) + Boolean.hashCode(this.f5051d)) * 31) + this.f5048a.hashCode();
+        return (((((Long.hashCode(this.f4746b) * 31) + Long.hashCode(this.f4747c)) * 31) + Boolean.hashCode(this.f4748d)) * 31) + this.f4745a.hashCode();
     }
 
     public String toString() {
-        return "FrameData(frameStartNanos=" + this.f5049b + ", frameDurationUiNanos=" + this.f5050c + ", isJank=" + this.f5051d + ", states=" + this.f5048a + ')';
+        return "FrameData(frameStartNanos=" + this.f4746b + ", frameDurationUiNanos=" + this.f4747c + ", isJank=" + this.f4748d + ", states=" + this.f4745a + ')';
     }
 }

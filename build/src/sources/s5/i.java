@@ -1,47 +1,35 @@
 package s5;
+
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class i {
+public class i implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f49763a;
+    private final b f49517a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r5.h f49764b;
+    private final b f49518b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final r5.d f49765c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f49766d;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public enum a {
-        MASK_MODE_ADD,
-        MASK_MODE_SUBTRACT,
-        MASK_MODE_INTERSECT,
-        MASK_MODE_NONE
+    public i(b bVar, b bVar2) {
+        this.f49517a = bVar;
+        this.f49518b = bVar2;
     }
 
-    public i(a aVar, r5.h hVar, r5.d dVar, boolean z10) {
-        this.f49763a = aVar;
-        this.f49764b = hVar;
-        this.f49765c = dVar;
-        this.f49766d = z10;
+    @Override // s5.o
+    public o5.a a() {
+        return new o5.n(this.f49517a.a(), this.f49518b.a());
     }
 
-    public a a() {
-        return this.f49763a;
+    @Override // s5.o
+    public List b() {
+        throw new UnsupportedOperationException("Cannot call getKeyframes on AnimatableSplitDimensionPathValue.");
     }
 
-    public r5.h b() {
-        return this.f49764b;
-    }
-
-    public r5.d c() {
-        return this.f49765c;
-    }
-
-    public boolean d() {
-        return this.f49766d;
+    @Override // s5.o
+    public boolean isStatic() {
+        if (this.f49517a.isStatic() && this.f49518b.isStatic()) {
+            return true;
+        }
+        return false;
     }
 }

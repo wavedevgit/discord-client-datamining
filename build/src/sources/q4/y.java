@@ -5,16 +5,16 @@ import androidx.work.impl.WorkDatabase;
 public class y implements k4.s {
 
     /* renamed from: c  reason: collision with root package name */
-    static final String f46544c = k4.m.i("WorkProgressUpdater");
+    static final String f45299c = k4.m.i("WorkProgressUpdater");
 
     /* renamed from: a  reason: collision with root package name */
-    final WorkDatabase f46545a;
+    final WorkDatabase f45300a;
 
     /* renamed from: b  reason: collision with root package name */
-    final r4.b f46546b;
+    final r4.b f45301b;
 
     public y(WorkDatabase workDatabase, r4.b bVar) {
-        this.f46545a = workDatabase;
-        this.f46546b = bVar;
+        this.f45300a = workDatabase;
+        this.f45301b = bVar;
     }
 }

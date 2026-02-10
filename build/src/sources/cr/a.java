@@ -1,28 +1,40 @@
 package cr;
 
-import java.net.URLEncoder;
-import kotlin.text.Charsets;
-import su.b;
-import yv.o;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements b, o {
+abstract class a implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f20013a = new a();
+    private final Map f20157a;
 
-    private a() {
-    }
+    /* renamed from: cr.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static abstract class AbstractC0291a {
 
-    public String a(Object obj) {
-        return o.a.a(this, obj);
-    }
+        /* renamed from: a  reason: collision with root package name */
+        final LinkedHashMap f20158a;
 
-    @Override // su.b
-    public Object f(Object obj, Object obj2) {
-        String a10 = a(obj);
-        if (a10 != null) {
-            return URLEncoder.encode(a10, Charsets.UTF_8.name());
+        /* JADX INFO: Access modifiers changed from: package-private */
+        public AbstractC0291a(int i10) {
+            this.f20158a = b.c(i10);
         }
-        return null;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        public AbstractC0291a a(Object obj, h hVar) {
+            this.f20158a.put(g.c(obj, "key"), (h) g.c(hVar, "provider"));
+            return this;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public a(Map map) {
+        this.f20157a = Collections.unmodifiableMap(map);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final Map a() {
+        return this.f20157a;
     }
 }

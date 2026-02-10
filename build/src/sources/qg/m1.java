@@ -1,17 +1,32 @@
 package qg;
 
-import java.util.AbstractSet;
-import java.util.Collection;
+import java.util.Iterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class m1 extends AbstractSet {
-    @Override // java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean removeAll(Collection collection) {
-        return n1.b(this, collection);
+abstract class m1 implements Iterator {
+
+    /* renamed from: d  reason: collision with root package name */
+    final Iterator f46017d;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public m1(Iterator it) {
+        it.getClass();
+        this.f46017d = it;
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean retainAll(Collection collection) {
-        collection.getClass();
-        return super.retainAll(collection);
+    abstract Object a(Object obj);
+
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        return this.f46017d.hasNext();
+    }
+
+    @Override // java.util.Iterator
+    public final Object next() {
+        return a(this.f46017d.next());
+    }
+
+    @Override // java.util.Iterator
+    public final void remove() {
+        this.f46017d.remove();
     }
 }

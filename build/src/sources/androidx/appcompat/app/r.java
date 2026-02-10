@@ -9,28 +9,28 @@ import java.lang.reflect.Field;
 abstract class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private static Field f1528a;
+    private static Field f1225a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f1529b;
+    private static boolean f1226b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Class f1530c;
+    private static Class f1227c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static boolean f1531d;
+    private static boolean f1228d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static Field f1532e;
+    private static Field f1229e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static boolean f1533f;
+    private static boolean f1230f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static Field f1534g;
+    private static Field f1231g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static boolean f1535h;
+    private static boolean f1232h;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void a(Resources resources) {
@@ -42,17 +42,17 @@ abstract class r {
 
     private static void b(Resources resources) {
         Object obj;
-        if (!f1535h) {
+        if (!f1232h) {
             try {
                 Field declaredField = Resources.class.getDeclaredField("mResourcesImpl");
-                f1534g = declaredField;
+                f1231g = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException e10) {
                 Log.e("ResourcesFlusher", "Could not retrieve Resources#mResourcesImpl field", e10);
             }
-            f1535h = true;
+            f1232h = true;
         }
-        Field field = f1534g;
+        Field field = f1231g;
         if (field != null) {
             Object obj2 = null;
             try {
@@ -62,17 +62,17 @@ abstract class r {
                 obj = null;
             }
             if (obj != null) {
-                if (!f1529b) {
+                if (!f1226b) {
                     try {
                         Field declaredField2 = obj.getClass().getDeclaredField("mDrawableCache");
-                        f1528a = declaredField2;
+                        f1225a = declaredField2;
                         declaredField2.setAccessible(true);
                     } catch (NoSuchFieldException e12) {
                         Log.e("ResourcesFlusher", "Could not retrieve ResourcesImpl#mDrawableCache field", e12);
                     }
-                    f1529b = true;
+                    f1226b = true;
                 }
-                Field field2 = f1528a;
+                Field field2 = f1225a;
                 if (field2 != null) {
                     try {
                         obj2 = field2.get(obj);
@@ -89,27 +89,27 @@ abstract class r {
 
     private static void c(Object obj) {
         LongSparseArray longSparseArray;
-        if (!f1531d) {
+        if (!f1228d) {
             try {
-                f1530c = Class.forName("android.content.res.ThemedResourceCache");
+                f1227c = Class.forName("android.content.res.ThemedResourceCache");
             } catch (ClassNotFoundException e10) {
                 Log.e("ResourcesFlusher", "Could not find ThemedResourceCache class", e10);
             }
-            f1531d = true;
+            f1228d = true;
         }
-        Class cls = f1530c;
+        Class cls = f1227c;
         if (cls != null) {
-            if (!f1533f) {
+            if (!f1230f) {
                 try {
                     Field declaredField = cls.getDeclaredField("mUnthemedEntries");
-                    f1532e = declaredField;
+                    f1229e = declaredField;
                     declaredField.setAccessible(true);
                 } catch (NoSuchFieldException e11) {
                     Log.e("ResourcesFlusher", "Could not retrieve ThemedResourceCache#mUnthemedEntries field", e11);
                 }
-                f1533f = true;
+                f1230f = true;
             }
-            Field field = f1532e;
+            Field field = f1229e;
             if (field != null) {
                 try {
                     longSparseArray = (LongSparseArray) field.get(obj);

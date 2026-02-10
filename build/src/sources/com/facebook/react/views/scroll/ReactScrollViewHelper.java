@@ -333,7 +333,7 @@ public final class ReactScrollViewHelper {
         int i10 = lastStateUpdateScroll.x;
         int i11 = lastStateUpdateScroll.y;
         if (DEBUG_MODE) {
-            p8.a.u(TAG, "updateFabricScrollState[%d] scrollX %d scrollY %d", Integer.valueOf(t10.getId()), Integer.valueOf(i10), Integer.valueOf(i11));
+            q8.a.u(TAG, "updateFabricScrollState[%d] scrollX %d scrollY %d", Integer.valueOf(t10.getId()), Integer.valueOf(i10), Integer.valueOf(i11));
         }
         StateWrapper stateWrapper = t10.getStateWrapper();
         if (stateWrapper != null) {
@@ -418,7 +418,7 @@ public final class ReactScrollViewHelper {
             r1.append(r3)
             java.lang.String r3 = r1.toString()
             java.lang.String r1 = "ReactNative"
-            p8.a.J(r1, r3)
+            q8.a.J(r1, r3)
             return r0
         L4a:
             r3 = 0
@@ -442,7 +442,7 @@ public final class ReactScrollViewHelper {
         if (Intrinsics.areEqual(ViewProps.END, str)) {
             return 3;
         }
-        p8.a.J(ReactConstants.TAG, "wrong snap alignment value: " + str);
+        q8.a.J(ReactConstants.TAG, "wrong snap alignment value: " + str);
         return 0;
     }
 
@@ -541,7 +541,7 @@ public final class ReactScrollViewHelper {
     /* JADX WARN: Multi-variable type inference failed */
     public static final <T extends ViewGroup & HasFlingAnimator & HasScrollState & HasStateWrapper> void smoothScrollTo(T t10, int i10, int i11) {
         if (DEBUG_MODE) {
-            p8.a.u(TAG, "smoothScrollTo[%d] x %d y %d", Integer.valueOf(t10.getId()), Integer.valueOf(i10), Integer.valueOf(i11));
+            q8.a.u(TAG, "smoothScrollTo[%d] x %d y %d", Integer.valueOf(t10.getId()), Integer.valueOf(i10), Integer.valueOf(i11));
         }
         T t11 = t10;
         ValueAnimator flingAnimator = t11.getFlingAnimator();
@@ -621,7 +621,7 @@ public final class ReactScrollViewHelper {
     /* JADX WARN: Multi-variable type inference failed */
     public final <T extends ViewGroup & HasScrollState & HasStateWrapper> void updateFabricScrollState(T t10, int i10, int i11) {
         if (DEBUG_MODE) {
-            p8.a.u(TAG, "updateFabricScrollState[%d] scrollX %d scrollY %d", Integer.valueOf(t10.getId()), Integer.valueOf(i10), Integer.valueOf(i11));
+            q8.a.u(TAG, "updateFabricScrollState[%d] scrollX %d scrollY %d", Integer.valueOf(t10.getId()), Integer.valueOf(i10), Integer.valueOf(i11));
         }
         if (ViewUtil.getUIManagerType(t10.getId()) == 1 || t10.getStateWrapper() == null) {
             return;

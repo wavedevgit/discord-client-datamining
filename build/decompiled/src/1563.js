@@ -227,35 +227,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var0 = !var2;
                                             case 198:
                                                 if (!var0) {
-                                                    _fun17563_ip = 327;
+                                                    _fun17563_ip = 339;
                                                     continue _fun17563
                                                 }
                                             case 204:
                                                 var0 = 'scrollToTop';
                                                 var0 = var0 in var1;
                                                 if (var0) {
-                                                    _fun17563_ip = 317;
+                                                    _fun17563_ip = 329;
                                                     continue _fun17563
                                                 }
                                             case 215:
                                                 var0 = 'scrollTo';
                                                 var0 = var0 in var1;
                                                 if (var0) {
-                                                    _fun17563_ip = 294;
+                                                    _fun17563_ip = 302;
                                                     continue _fun17563
                                                 }
                                             case 226:
                                                 var0 = 'scrollToOffset';
                                                 var0 = var0 in var1;
                                                 if (var0) {
-                                                    _fun17563_ip = 271;
+                                                    _fun17563_ip = 275;
                                                     continue _fun17563
                                                 }
                                             case 237:
                                                 var0 = 'scrollResponderScrollTo';
                                                 var0 = var0 in var1;
                                                 if (!var0) {
-                                                    _fun17563_ip = 327;
+                                                    _fun17563_ip = 339;
                                                     continue _fun17563
                                                 }
                                             case 248:
@@ -265,30 +265,30 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     'animated': true
                                                 };
                                                 var0 = var2.bind(var1)(var0);
-                                                _fun17563_ip = 327;
+                                                _fun17563_ip = 339;
                                                 continue _fun17563;
-                                            case 271:
+                                            case 275:
                                                 var2 = var1.scrollToOffset;
                                                 var0 = {
                                                     'offset': 0,
                                                     'animated': true
                                                 };
                                                 var0 = var2.bind(var1)(var0);
-                                                _fun17563_ip = 327;
+                                                _fun17563_ip = 339;
                                                 continue _fun17563;
-                                            case 294:
+                                            case 302:
                                                 var2 = var1.scrollTo;
                                                 var0 = {
                                                     'y': 0,
                                                     'animated': true
                                                 };
                                                 var0 = var2.bind(var1)(var0);
-                                                _fun17563_ip = 327;
+                                                _fun17563_ip = 339;
                                                 continue _fun17563;
-                                            case 317:
+                                            case 329:
                                                 var0 = var1.scrollToTop;
                                                 var0 = var0.bind(var1)();
-                                            case 327:
+                                            case 339:
                                                 var0 = undefined;
                                                 return var0;
                                         }

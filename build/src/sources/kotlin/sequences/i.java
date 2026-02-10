@@ -12,22 +12,22 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 final class i extends j implements Iterator, Continuation, KMappedMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f34942d;
+    private int f34651d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f34943e;
+    private Object f34652e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Iterator f34944i;
+    private Iterator f34653i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Continuation f34945o;
+    private Continuation f34654o;
 
     private final Throwable i() {
-        int i10 = this.f34942d;
+        int i10 = this.f34651d;
         if (i10 != 4) {
             if (i10 != 5) {
-                return new IllegalStateException("Unexpected state of the iterator: " + this.f34942d);
+                return new IllegalStateException("Unexpected state of the iterator: " + this.f34651d);
             }
             return new IllegalStateException("Iterator has failed.");
         }
@@ -43,46 +43,46 @@ final class i extends j implements Iterator, Continuation, KMappedMarker {
 
     @Override // kotlin.sequences.j
     public Object b(Object obj, Continuation continuation) {
-        this.f34943e = obj;
-        this.f34942d = 3;
-        this.f34945o = continuation;
-        Object f10 = wr.b.f();
-        if (f10 == wr.b.f()) {
+        this.f34652e = obj;
+        this.f34651d = 3;
+        this.f34654o = continuation;
+        Object f10 = xr.b.f();
+        if (f10 == xr.b.f()) {
             kotlin.coroutines.jvm.internal.g.c(continuation);
         }
-        if (f10 == wr.b.f()) {
+        if (f10 == xr.b.f()) {
             return f10;
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @Override // kotlin.sequences.j
     public Object d(Iterator it, Continuation continuation) {
         if (!it.hasNext()) {
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
-        this.f34944i = it;
-        this.f34942d = 2;
-        this.f34945o = continuation;
-        Object f10 = wr.b.f();
-        if (f10 == wr.b.f()) {
+        this.f34653i = it;
+        this.f34651d = 2;
+        this.f34654o = continuation;
+        Object f10 = xr.b.f();
+        if (f10 == xr.b.f()) {
             kotlin.coroutines.jvm.internal.g.c(continuation);
         }
-        if (f10 == wr.b.f()) {
+        if (f10 == xr.b.f()) {
             return f10;
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @Override // kotlin.coroutines.Continuation
     public CoroutineContext getContext() {
-        return kotlin.coroutines.e.f32130d;
+        return kotlin.coroutines.e.f31839d;
     }
 
     @Override // java.util.Iterator
     public boolean hasNext() {
         while (true) {
-            int i10 = this.f34942d;
+            int i10 = this.f34651d;
             if (i10 != 0) {
                 if (i10 != 1) {
                     if (i10 == 2 || i10 == 3) {
@@ -93,42 +93,42 @@ final class i extends j implements Iterator, Continuation, KMappedMarker {
                     }
                     throw i();
                 }
-                Iterator it = this.f34944i;
+                Iterator it = this.f34653i;
                 Intrinsics.checkNotNull(it);
                 if (it.hasNext()) {
-                    this.f34942d = 2;
+                    this.f34651d = 2;
                     return true;
                 }
-                this.f34944i = null;
+                this.f34653i = null;
             }
-            this.f34942d = 5;
-            Continuation continuation = this.f34945o;
+            this.f34651d = 5;
+            Continuation continuation = this.f34654o;
             Intrinsics.checkNotNull(continuation);
-            this.f34945o = null;
-            Result.a aVar = Result.f32053e;
-            continuation.resumeWith(Result.b(Unit.f32056a));
+            this.f34654o = null;
+            Result.a aVar = Result.f31762e;
+            continuation.resumeWith(Result.b(Unit.f31765a));
         }
     }
 
     public final void k(Continuation continuation) {
-        this.f34945o = continuation;
+        this.f34654o = continuation;
     }
 
     @Override // java.util.Iterator
     public Object next() {
-        int i10 = this.f34942d;
+        int i10 = this.f34651d;
         if (i10 != 0 && i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    this.f34942d = 0;
-                    Object obj = this.f34943e;
-                    this.f34943e = null;
+                    this.f34651d = 0;
+                    Object obj = this.f34652e;
+                    this.f34652e = null;
                     return obj;
                 }
                 throw i();
             }
-            this.f34942d = 1;
-            Iterator it = this.f34944i;
+            this.f34651d = 1;
+            Iterator it = this.f34653i;
             Intrinsics.checkNotNull(it);
             return it.next();
         }
@@ -143,6 +143,6 @@ final class i extends j implements Iterator, Continuation, KMappedMarker {
     @Override // kotlin.coroutines.Continuation
     public void resumeWith(Object obj) {
         kotlin.c.b(obj);
-        this.f34942d = 4;
+        this.f34651d = 4;
     }
 }

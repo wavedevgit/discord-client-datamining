@@ -3,21 +3,21 @@ package com.linkedin.android.litr.io;
 public class MediaRange {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f17223a;
+    private final long f17363a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f17224b;
+    private final long f17364b;
 
     public MediaRange(long j10, long j11) {
-        this.f17223a = j10;
-        this.f17224b = j11;
+        this.f17363a = j10;
+        this.f17364b = j11;
     }
 
     public long a() {
-        return this.f17224b;
+        return this.f17364b;
     }
 
     public long b() {
-        return this.f17223a;
+        return this.f17363a;
     }
 }

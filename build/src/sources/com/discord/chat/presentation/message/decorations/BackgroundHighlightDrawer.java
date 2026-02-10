@@ -13,21 +13,21 @@ import org.jetbrains.annotations.NotNull;
 public final class BackgroundHighlightDrawer extends HighlightedMessageDrawer {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public BackgroundHighlightDrawer(@NotNull Context context) {
-        super(context, new Function1() { // from class: w6.a
+        super(context, new Function1() { // from class: x6.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Integer _init_$lambda$0;
                 _init_$lambda$0 = BackgroundHighlightDrawer._init_$lambda$0((ChatListItem) obj);
                 return _init_$lambda$0;
             }
-        }, new Function1() { // from class: w6.b
+        }, new Function1() { // from class: x6.b
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Integer _init_$lambda$1;
                 _init_$lambda$1 = BackgroundHighlightDrawer._init_$lambda$1((ChatListItem) obj);
                 return _init_$lambda$1;
             }
-        }, new Function1() { // from class: w6.c
+        }, new Function1() { // from class: x6.c
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 boolean _init_$lambda$2;

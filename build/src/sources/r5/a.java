@@ -1,29 +1,55 @@
 package r5;
 
-import java.util.List;
+import android.graphics.PointF;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class a extends n {
-    public a(List list) {
-        super(list);
+public class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final PointF f47672a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final PointF f47673b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final PointF f47674c;
+
+    public a() {
+        this.f47672a = new PointF();
+        this.f47673b = new PointF();
+        this.f47674c = new PointF();
     }
 
-    @Override // r5.m
-    public o5.a a() {
-        return new o5.b(this.f48715a);
+    public PointF a() {
+        return this.f47672a;
     }
 
-    @Override // r5.n, r5.m
-    public /* bridge */ /* synthetic */ List b() {
-        return super.b();
+    public PointF b() {
+        return this.f47673b;
     }
 
-    @Override // r5.n, r5.m
-    public /* bridge */ /* synthetic */ boolean isStatic() {
-        return super.isStatic();
+    public PointF c() {
+        return this.f47674c;
     }
 
-    @Override // r5.n
-    public /* bridge */ /* synthetic */ String toString() {
-        return super.toString();
+    public void d(float f10, float f11) {
+        this.f47672a.set(f10, f11);
+    }
+
+    public void e(float f10, float f11) {
+        this.f47673b.set(f10, f11);
+    }
+
+    public void f(float f10, float f11) {
+        this.f47674c.set(f10, f11);
+    }
+
+    public String toString() {
+        return String.format("v=%.2f,%.2f cp1=%.2f,%.2f cp2=%.2f,%.2f", Float.valueOf(this.f47674c.x), Float.valueOf(this.f47674c.y), Float.valueOf(this.f47672a.x), Float.valueOf(this.f47672a.y), Float.valueOf(this.f47673b.x), Float.valueOf(this.f47673b.y));
+    }
+
+    public a(PointF pointF, PointF pointF2, PointF pointF3) {
+        this.f47672a = pointF;
+        this.f47673b = pointF2;
+        this.f47674c = pointF3;
     }
 }

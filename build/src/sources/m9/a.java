@@ -1,95 +1,84 @@
 package m9;
 
 import android.content.Context;
-import android.view.MotionEvent;
-import android.view.ViewConfiguration;
+import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import com.facebook.drawee.drawable.ScalingUtils$ScaleType;
+import com.facebook.drawee.generic.GenericDraweeHierarchyBuilder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    InterfaceC0500a f36932a;
-
-    /* renamed from: b  reason: collision with root package name */
-    final float f36933b;
-
-    /* renamed from: c  reason: collision with root package name */
-    boolean f36934c;
-
-    /* renamed from: d  reason: collision with root package name */
-    boolean f36935d;
-
-    /* renamed from: e  reason: collision with root package name */
-    long f36936e;
-
-    /* renamed from: f  reason: collision with root package name */
-    float f36937f;
-
-    /* renamed from: g  reason: collision with root package name */
-    float f36938g;
-
-    /* renamed from: m9.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface InterfaceC0500a {
-        boolean a();
-    }
-
-    public a(Context context) {
-        this.f36933b = ViewConfiguration.get(context).getScaledTouchSlop();
-        a();
-    }
-
-    public static a c(Context context) {
-        return new a(context);
-    }
-
-    public void a() {
-        this.f36932a = null;
-        e();
-    }
-
-    public boolean b() {
-        return this.f36934c;
-    }
-
-    public boolean d(MotionEvent motionEvent) {
-        InterfaceC0500a interfaceC0500a;
-        int action = motionEvent.getAction();
-        if (action != 0) {
-            if (action != 1) {
-                if (action != 2) {
-                    if (action == 3) {
-                        this.f36934c = false;
-                        this.f36935d = false;
-                    }
-                } else if (Math.abs(motionEvent.getX() - this.f36937f) > this.f36933b || Math.abs(motionEvent.getY() - this.f36938g) > this.f36933b) {
-                    this.f36935d = false;
-                }
-            } else {
-                this.f36934c = false;
-                if (Math.abs(motionEvent.getX() - this.f36937f) > this.f36933b || Math.abs(motionEvent.getY() - this.f36938g) > this.f36933b) {
-                    this.f36935d = false;
-                }
-                if (this.f36935d && motionEvent.getEventTime() - this.f36936e <= ViewConfiguration.getLongPressTimeout() && (interfaceC0500a = this.f36932a) != null) {
-                    interfaceC0500a.a();
-                }
-                this.f36935d = false;
-            }
-        } else {
-            this.f36934c = true;
-            this.f36935d = true;
-            this.f36936e = motionEvent.getEventTime();
-            this.f36937f = motionEvent.getX();
-            this.f36938g = motionEvent.getY();
+public abstract class a {
+    public static Drawable a(Context context, TypedArray typedArray, int i10) {
+        int resourceId = typedArray.getResourceId(i10, 0);
+        if (resourceId == 0) {
+            return null;
         }
-        return true;
+        return context.getDrawable(resourceId);
     }
 
-    public void e() {
-        this.f36934c = false;
-        this.f36935d = false;
+    private static com.facebook.drawee.generic.a b(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
+        if (genericDraweeHierarchyBuilder.s() == null) {
+            genericDraweeHierarchyBuilder.K(new com.facebook.drawee.generic.a());
+        }
+        return genericDraweeHierarchyBuilder.s();
     }
 
-    public void f(InterfaceC0500a interfaceC0500a) {
-        this.f36932a = interfaceC0500a;
+    public static ScalingUtils$ScaleType c(TypedArray typedArray, int i10) {
+        switch (typedArray.getInt(i10, -2)) {
+            case -1:
+                return null;
+            case 0:
+                return ScalingUtils$ScaleType.f10054a;
+            case 1:
+                return ScalingUtils$ScaleType.f10057d;
+            case 2:
+                return ScalingUtils$ScaleType.f10058e;
+            case 3:
+                return ScalingUtils$ScaleType.f10059f;
+            case 4:
+                return ScalingUtils$ScaleType.f10060g;
+            case 5:
+                return ScalingUtils$ScaleType.f10061h;
+            case 6:
+                return ScalingUtils$ScaleType.f10062i;
+            case 7:
+                return ScalingUtils$ScaleType.f10063j;
+            case 8:
+                return ScalingUtils$ScaleType.f10064k;
+            default:
+                throw new RuntimeException("XML attribute not specified!");
+        }
+    }
+
+    public static GenericDraweeHierarchyBuilder d(Context context, AttributeSet attributeSet) {
+        if (za.b.d()) {
+            za.b.a("GenericDraweeHierarchyBuilder#inflateBuilder");
+        }
+        GenericDraweeHierarchyBuilder e10 = e(new GenericDraweeHierarchyBuilder(context.getResources()), context, attributeSet);
+        if (za.b.d()) {
+            za.b.b();
+        }
+        return e10;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:115:0x01c4, code lost:
+        if (r13 != false) goto L121;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:116:0x01c6, code lost:
+        r4 = true;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:131:0x01e4, code lost:
+        if (r15 != false) goto L121;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static com.facebook.drawee.generic.GenericDraweeHierarchyBuilder e(com.facebook.drawee.generic.GenericDraweeHierarchyBuilder r17, android.content.Context r18, android.util.AttributeSet r19) {
+        /*
+            Method dump skipped, instructions count: 569
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: m9.a.e(com.facebook.drawee.generic.GenericDraweeHierarchyBuilder, android.content.Context, android.util.AttributeSet):com.facebook.drawee.generic.GenericDraweeHierarchyBuilder");
     }
 }

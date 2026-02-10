@@ -1,0 +1,67 @@
+package rg;
+
+import android.content.Context;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class fk implements mj {
+
+    /* renamed from: a  reason: collision with root package name */
+    private gj.b f48209a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final gj.b f48210b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final oj f48211c;
+
+    public fk(Context context, oj ojVar) {
+        this.f48211c = ojVar;
+        com.google.android.datatransport.cct.a aVar = com.google.android.datatransport.cct.a.f11658g;
+        ac.t.f(context);
+        final yb.i g10 = ac.t.c().g(aVar);
+        if (aVar.a().contains(yb.c.b("json"))) {
+            this.f48209a = new vi.w(new gj.b() { // from class: rg.ck
+                @Override // gj.b
+                public final Object get() {
+                    return yb.i.this.a("FIREBASE_ML_SDK", byte[].class, yb.c.b("json"), new yb.g() { // from class: rg.ek
+                        @Override // yb.g
+                        public final Object apply(Object obj) {
+                            return (byte[]) obj;
+                        }
+                    });
+                }
+            });
+        }
+        this.f48210b = new vi.w(new gj.b() { // from class: rg.dk
+            @Override // gj.b
+            public final Object get() {
+                return yb.i.this.a("FIREBASE_ML_SDK", byte[].class, yb.c.b("proto"), new yb.g() { // from class: rg.bk
+                    @Override // yb.g
+                    public final Object apply(Object obj) {
+                        return (byte[]) obj;
+                    }
+                });
+            }
+        });
+    }
+
+    static yb.d b(oj ojVar, lj ljVar) {
+        int a10 = ojVar.a();
+        if (ljVar.zza() != 0) {
+            return yb.d.e(ljVar.a(a10, false));
+        }
+        return yb.d.g(ljVar.a(a10, false));
+    }
+
+    @Override // rg.mj
+    public final void a(lj ljVar) {
+        if (this.f48211c.a() == 0) {
+            gj.b bVar = this.f48209a;
+            if (bVar != null) {
+                ((yb.h) bVar.get()).a(b(this.f48211c, ljVar));
+                return;
+            }
+            return;
+        }
+        ((yb.h) this.f48210b.get()).a(b(this.f48211c, ljVar));
+    }
+}

@@ -1,35 +1,36 @@
 package bn;
 
-import bn.r;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
+import com.squareup.moshi.h;
+import com.squareup.moshi.m;
+import com.squareup.moshi.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class b extends r {
+public final class b extends h {
 
-    /* renamed from: c  reason: collision with root package name */
-    private final o f6873c;
+    /* renamed from: a  reason: collision with root package name */
+    private final h f7149a;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f6874d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Object f6875e;
-
-    public b(o worker, String renderKey, Object obj) {
-        Intrinsics.checkNotNullParameter(worker, "worker");
-        Intrinsics.checkNotNullParameter(renderKey, "renderKey");
-        this.f6873c = worker;
-        this.f6874d = renderKey;
-        this.f6875e = obj;
+    public b(h hVar) {
+        this.f7149a = hVar;
     }
 
-    @Override // bn.r
-    public void a(r.c cVar) {
-        Intrinsics.checkNotNullParameter(cVar, "<this>");
-        cVar.d(this.f6875e);
+    @Override // com.squareup.moshi.h
+    public Object fromJson(m mVar) {
+        if (mVar.s() == m.c.NULL) {
+            return mVar.m();
+        }
+        return this.f7149a.fromJson(mVar);
+    }
+
+    @Override // com.squareup.moshi.h
+    public void toJson(t tVar, Object obj) {
+        if (obj == null) {
+            tVar.Q();
+        } else {
+            this.f7149a.toJson(tVar, obj);
+        }
     }
 
     public String toString() {
-        return ((Object) Reflection.getOrCreateKotlinClass(b.class).getQualifiedName()) + "(worker=" + this.f6873c + ", key=\"" + this.f6874d + "\")";
+        return this.f7149a + ".nullSafe()";
     }
 }

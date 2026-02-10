@@ -5,18 +5,18 @@ import java.util.List;
 final class r extends o {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ x f15955e;
+    final /* synthetic */ x f16095e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public r(x xVar, yg.k kVar) {
+    public r(x xVar, zg.k kVar) {
         super(xVar, kVar);
-        this.f15955e = xVar;
+        this.f16095e = xVar;
     }
 
-    @Override // com.google.android.play.core.assetpacks.o, xh.d0
-    public final void r(List list) {
-        super.r(list);
-        this.f15916c.e(x.x(this.f15955e, list));
+    @Override // com.google.android.play.core.assetpacks.o, yh.d0
+    public final void v(List list) {
+        super.v(list);
+        this.f16056c.e(x.x(this.f16095e, list));
     }
 }

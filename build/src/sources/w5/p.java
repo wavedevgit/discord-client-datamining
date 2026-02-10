@@ -1,0 +1,90 @@
+package w5;
+
+import android.graphics.Path;
+import java.util.Collections;
+import x5.c;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public abstract class p {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final c.a f53295a = c.a.a("nm", "g", "o", "t", "s", "e", "r", "hd");
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final c.a f53296b = c.a.a("p", "k");
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static t5.e a(x5.c cVar, l5.i iVar) {
+        t5.g gVar;
+        Path.FillType fillType;
+        s5.d dVar = null;
+        Path.FillType fillType2 = Path.FillType.WINDING;
+        String str = null;
+        t5.g gVar2 = null;
+        s5.c cVar2 = null;
+        s5.f fVar = null;
+        s5.f fVar2 = null;
+        boolean z10 = false;
+        while (cVar.hasNext()) {
+            switch (cVar.p(f53295a)) {
+                case 0:
+                    str = cVar.b1();
+                    break;
+                case 1:
+                    cVar.u();
+                    int i10 = -1;
+                    while (cVar.hasNext()) {
+                        int p10 = cVar.p(f53296b);
+                        if (p10 != 0) {
+                            if (p10 != 1) {
+                                cVar.s();
+                                cVar.T();
+                            } else {
+                                cVar2 = d.g(cVar, iVar, i10);
+                            }
+                        } else {
+                            i10 = cVar.nextInt();
+                        }
+                    }
+                    cVar.D();
+                    break;
+                case 2:
+                    dVar = d.h(cVar, iVar);
+                    break;
+                case 3:
+                    if (cVar.nextInt() == 1) {
+                        gVar = t5.g.LINEAR;
+                    } else {
+                        gVar = t5.g.RADIAL;
+                    }
+                    gVar2 = gVar;
+                    break;
+                case 4:
+                    fVar = d.i(cVar, iVar);
+                    break;
+                case 5:
+                    fVar2 = d.i(cVar, iVar);
+                    break;
+                case 6:
+                    if (cVar.nextInt() == 1) {
+                        fillType = Path.FillType.WINDING;
+                    } else {
+                        fillType = Path.FillType.EVEN_ODD;
+                    }
+                    fillType2 = fillType;
+                    break;
+                case 7:
+                    z10 = cVar.g();
+                    break;
+                default:
+                    cVar.s();
+                    cVar.T();
+                    break;
+            }
+        }
+        if (dVar == null) {
+            dVar = new s5.d(Collections.singletonList(new z5.a(100)));
+        }
+        return new t5.e(str, gVar2, fillType2, cVar2, dVar, fVar, fVar2, null, null, z10);
+    }
+}

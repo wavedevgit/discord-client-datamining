@@ -130,8 +130,8 @@ public final class ButtonVerifyPersonaComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.E0();
-                    reader.S();
+                    reader.C0();
+                    reader.T();
                     break;
                 case 0:
                     buttonBasedPaddingStyle = (AttributeStyles.ButtonBasedPaddingStyle) this.nullableButtonBasedPaddingStyleAdapter.fromJson(reader);

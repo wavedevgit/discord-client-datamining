@@ -3,9 +3,9 @@ package com.discord.image.fresco.config;
 import com.facebook.imagepipeline.cache.MemoryCacheParams;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import la.o;
+import ma.o;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000 \t2\u00020\u0001:\u0001\tB\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u000f\u0010\u0007\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0007\u0010\b¨\u0006\n"}, d2 = {"Lcom/discord/image/fresco/config/FrescoBitmapSupplier;", "Lla/o;", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "Lcom/facebook/imagepipeline/cache/MemoryCacheParams;", "get", "()Lcom/facebook/imagepipeline/cache/MemoryCacheParams;", "Companion", "fresco_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000 \t2\u00020\u0001:\u0001\tB\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u000f\u0010\u0007\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0007\u0010\b¨\u0006\n"}, d2 = {"Lcom/discord/image/fresco/config/FrescoBitmapSupplier;", "Lma/o;", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "Lcom/facebook/imagepipeline/cache/MemoryCacheParams;", "get", "()Lcom/facebook/imagepipeline/cache/MemoryCacheParams;", "Companion", "fresco_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class FrescoBitmapSupplier extends o {
     @NotNull
@@ -44,11 +44,11 @@ public final class FrescoBitmapSupplier extends o {
         throw new UnsupportedOperationException("Method not decompiled: com.discord.image.fresco.config.FrescoBitmapSupplier.<init>(android.content.Context):void");
     }
 
-    @Override // la.o, com.facebook.common.internal.Supplier
+    @Override // ma.o, com.facebook.common.internal.Supplier
     @NotNull
     public MemoryCacheParams get() {
         MemoryCacheParams memoryCacheParams = super.get();
-        int i10 = memoryCacheParams.f10316a;
-        return new MemoryCacheParams(i10, memoryCacheParams.f10317b, memoryCacheParams.f10318c, memoryCacheParams.f10319d, i10 / 3, 0L, 32, null);
+        int i10 = memoryCacheParams.f10456a;
+        return new MemoryCacheParams(i10, memoryCacheParams.f10457b, memoryCacheParams.f10458c, memoryCacheParams.f10459d, i10 / 3, 0L, 32, null);
     }
 }

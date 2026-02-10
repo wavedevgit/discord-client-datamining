@@ -11,7 +11,7 @@ import p.a;
 public class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f51160a;
+    private final boolean f51130a;
 
     public a0() {
         boolean z10;
@@ -20,7 +20,7 @@ public class a0 {
         } else {
             z10 = false;
         }
-        this.f51160a = z10;
+        this.f51130a = z10;
     }
 
     public p0 a(p0 p0Var) {
@@ -30,14 +30,14 @@ public class a0 {
             aVar.f(w0Var);
         }
         aVar.e(p0Var.g());
-        a.C0575a c0575a = new a.C0575a();
-        c0575a.f(CaptureRequest.FLASH_MODE, 0);
-        aVar.e(c0575a.c());
+        a.C0606a c0606a = new a.C0606a();
+        c0606a.f(CaptureRequest.FLASH_MODE, 0);
+        aVar.e(c0606a.c());
         return aVar.h();
     }
 
     public boolean b(List list, boolean z10) {
-        if (this.f51160a && z10) {
+        if (this.f51130a && z10) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
                 Integer num = (Integer) ((CaptureRequest) it.next()).get(CaptureRequest.FLASH_MODE);

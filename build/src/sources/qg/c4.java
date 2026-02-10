@@ -1,50 +1,43 @@
 package qg;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c4 implements yi.d {
+final class c4 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c4 f47034a = new c4();
+    static final c4 f45528a = new c4();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f45529b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f45530c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f45531d;
 
     static {
-        c.b a10 = yi.c.a("durationMs");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("handledErrors");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = yi.c.a("partiallyHandledErrors");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
-        c.b a13 = yi.c.a("unhandledErrors");
-        v1 v1Var4 = new v1();
-        v1Var4.a(4);
-        a13.b(v1Var4.b()).a();
-        c.b a14 = yi.c.a("modelNamespace");
-        v1 v1Var5 = new v1();
-        v1Var5.a(5);
-        a14.b(v1Var5.b()).a();
-        c.b a15 = yi.c.a("delegateFilter");
-        v1 v1Var6 = new v1();
-        v1Var6.a(6);
-        a15.b(v1Var6.b()).a();
-        c.b a16 = yi.c.a("httpResponseCode");
-        v1 v1Var7 = new v1();
-        v1Var7.a(7);
-        a16.b(v1Var7.b()).a();
+        c.b a10 = zi.c.a("logEventKey");
+        s1 s1Var = new s1();
+        s1Var.a(1);
+        f45529b = a10.b(s1Var.b()).a();
+        c.b a11 = zi.c.a("eventCount");
+        s1 s1Var2 = new s1();
+        s1Var2.a(2);
+        f45530c = a11.b(s1Var2.b()).a();
+        c.b a12 = zi.c.a("inferenceDurationStats");
+        s1 s1Var3 = new s1();
+        s1Var3.a(3);
+        f45531d = a12.b(s1Var3.b()).a();
     }
 
     private c4() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
+        zi.e eVar = (zi.e) obj2;
         throw null;
     }
 }

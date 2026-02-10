@@ -15,7 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.q0;
 import com.google.firebase.messaging.v0;
-import ej.a;
+import fj.a;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
@@ -26,50 +26,50 @@ import java.util.concurrent.TimeUnit;
 public class FirebaseMessaging {
 
     /* renamed from: m  reason: collision with root package name */
-    private static v0 f16366m;
+    private static v0 f16506m;
 
     /* renamed from: o  reason: collision with root package name */
-    static ScheduledExecutorService f16368o;
+    static ScheduledExecutorService f16508o;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ri.e f16369a;
+    private final si.e f16509a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f16370b;
+    private final Context f16510b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c0 f16371c;
+    private final c0 f16511c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final q0 f16372d;
+    private final q0 f16512d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f16373e;
+    private final a f16513e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Executor f16374f;
+    private final Executor f16514f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Executor f16375g;
+    private final Executor f16515g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Task f16376h;
+    private final Task f16516h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final h0 f16377i;
+    private final h0 f16517i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f16378j;
+    private boolean f16518j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Application.ActivityLifecycleCallbacks f16379k;
+    private final Application.ActivityLifecycleCallbacks f16519k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final long f16365l = TimeUnit.HOURS.toSeconds(8);
+    private static final long f16505l = TimeUnit.HOURS.toSeconds(8);
 
     /* renamed from: n  reason: collision with root package name */
-    static fj.b f16367n = new fj.b() { // from class: com.google.firebase.messaging.q
-        @Override // fj.b
+    static gj.b f16507n = new gj.b() { // from class: com.google.firebase.messaging.q
+        @Override // gj.b
         public final Object get() {
             return FirebaseMessaging.d();
         }
@@ -80,22 +80,22 @@ public class FirebaseMessaging {
     public class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final cj.d f16380a;
+        private final dj.d f16520a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f16381b;
+        private boolean f16521b;
 
         /* renamed from: c  reason: collision with root package name */
-        private cj.b f16382c;
+        private dj.b f16522c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Boolean f16383d;
+        private Boolean f16523d;
 
-        a(cj.d dVar) {
-            this.f16380a = dVar;
+        a(dj.d dVar) {
+            this.f16520a = dVar;
         }
 
-        public static /* synthetic */ void a(a aVar, cj.a aVar2) {
+        public static /* synthetic */ void a(a aVar, dj.a aVar2) {
             if (aVar.c()) {
                 FirebaseMessaging.this.B();
             }
@@ -104,7 +104,7 @@ public class FirebaseMessaging {
         private Boolean d() {
             ApplicationInfo applicationInfo;
             Bundle bundle;
-            Context j10 = FirebaseMessaging.this.f16369a.j();
+            Context j10 = FirebaseMessaging.this.f16509a.j();
             SharedPreferences sharedPreferences = j10.getSharedPreferences("com.google.firebase.messaging", 0);
             if (sharedPreferences.contains("auto_init")) {
                 return Boolean.valueOf(sharedPreferences.getBoolean("auto_init", false));
@@ -122,22 +122,22 @@ public class FirebaseMessaging {
 
         synchronized void b() {
             try {
-                if (this.f16381b) {
+                if (this.f16521b) {
                     return;
                 }
                 Boolean d10 = d();
-                this.f16383d = d10;
+                this.f16523d = d10;
                 if (d10 == null) {
-                    cj.b bVar = new cj.b() { // from class: com.google.firebase.messaging.z
-                        @Override // cj.b
-                        public final void a(cj.a aVar) {
+                    dj.b bVar = new dj.b() { // from class: com.google.firebase.messaging.z
+                        @Override // dj.b
+                        public final void a(dj.a aVar) {
                             FirebaseMessaging.a.a(FirebaseMessaging.a.this, aVar);
                         }
                     };
-                    this.f16382c = bVar;
-                    this.f16380a.a(ri.b.class, bVar);
+                    this.f16522c = bVar;
+                    this.f16520a.a(si.b.class, bVar);
                 }
-                this.f16381b = true;
+                this.f16521b = true;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -147,11 +147,11 @@ public class FirebaseMessaging {
             boolean s10;
             try {
                 b();
-                Boolean bool = this.f16383d;
+                Boolean bool = this.f16523d;
                 if (bool != null) {
                     s10 = bool.booleanValue();
                 } else {
-                    s10 = FirebaseMessaging.this.f16369a.s();
+                    s10 = FirebaseMessaging.this.f16509a.s();
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -161,12 +161,12 @@ public class FirebaseMessaging {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public FirebaseMessaging(ri.e eVar, ej.a aVar, fj.b bVar, fj.b bVar2, gj.e eVar2, fj.b bVar3, cj.d dVar) {
+    public FirebaseMessaging(si.e eVar, fj.a aVar, gj.b bVar, gj.b bVar2, hj.e eVar2, gj.b bVar3, dj.d dVar) {
         this(eVar, aVar, bVar, bVar2, eVar2, bVar3, dVar, new h0(eVar.j()));
     }
 
     private synchronized void A() {
-        if (!this.f16378j) {
+        if (!this.f16518j) {
             C(0L);
         }
     }
@@ -179,11 +179,11 @@ public class FirebaseMessaging {
     }
 
     public static /* synthetic */ Task a(FirebaseMessaging firebaseMessaging, String str, v0.a aVar, String str2) {
-        o(firebaseMessaging.f16370b).f(firebaseMessaging.p(), str, str2, firebaseMessaging.f16377i.a());
-        if (aVar == null || !str2.equals(aVar.f16520a)) {
+        o(firebaseMessaging.f16510b).f(firebaseMessaging.p(), str, str2, firebaseMessaging.f16517i.a());
+        if (aVar == null || !str2.equals(aVar.f16660a)) {
             firebaseMessaging.v(str2);
         }
-        return yg.m.f(str2);
+        return zg.m.f(str2);
     }
 
     public static /* synthetic */ void b(FirebaseMessaging firebaseMessaging) {
@@ -192,7 +192,7 @@ public class FirebaseMessaging {
         }
     }
 
-    public static /* synthetic */ void c(FirebaseMessaging firebaseMessaging, yg.k kVar) {
+    public static /* synthetic */ void c(FirebaseMessaging firebaseMessaging, zg.k kVar) {
         firebaseMessaging.getClass();
         try {
             kVar.c(firebaseMessaging.k());
@@ -201,7 +201,7 @@ public class FirebaseMessaging {
         }
     }
 
-    public static /* synthetic */ xb.i d() {
+    public static /* synthetic */ yb.i d() {
         return null;
     }
 
@@ -215,11 +215,11 @@ public class FirebaseMessaging {
 
     @NonNull
     @Keep
-    static synchronized FirebaseMessaging getInstance(@NonNull ri.e eVar) {
+    static synchronized FirebaseMessaging getInstance(@NonNull si.e eVar) {
         FirebaseMessaging firebaseMessaging;
         synchronized (FirebaseMessaging.class) {
             firebaseMessaging = (FirebaseMessaging) eVar.i(FirebaseMessaging.class);
-            gf.q.m(firebaseMessaging, "Firebase Messaging component is not present");
+            hf.q.m(firebaseMessaging, "Firebase Messaging component is not present");
         }
         return firebaseMessaging;
     }
@@ -233,7 +233,7 @@ public class FirebaseMessaging {
     public static synchronized FirebaseMessaging n() {
         FirebaseMessaging firebaseMessaging;
         synchronized (FirebaseMessaging.class) {
-            firebaseMessaging = getInstance(ri.e.k());
+            firebaseMessaging = getInstance(si.e.k());
         }
         return firebaseMessaging;
     }
@@ -242,10 +242,10 @@ public class FirebaseMessaging {
         v0 v0Var;
         synchronized (FirebaseMessaging.class) {
             try {
-                if (f16366m == null) {
-                    f16366m = new v0(context);
+                if (f16506m == null) {
+                    f16506m = new v0(context);
                 }
-                v0Var = f16366m;
+                v0Var = f16506m;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -254,19 +254,19 @@ public class FirebaseMessaging {
     }
 
     private String p() {
-        if ("[DEFAULT]".equals(this.f16369a.l())) {
+        if ("[DEFAULT]".equals(this.f16509a.l())) {
             return "";
         }
-        return this.f16369a.n();
+        return this.f16509a.n();
     }
 
-    public static xb.i s() {
-        return (xb.i) f16367n.get();
+    public static yb.i s() {
+        return (yb.i) f16507n.get();
     }
 
     private void t() {
-        this.f16371c.e().f(this.f16374f, new yg.g() { // from class: com.google.firebase.messaging.w
-            @Override // yg.g
+        this.f16511c.e().f(this.f16514f, new zg.g() { // from class: com.google.firebase.messaging.w
+            @Override // zg.g
             public final void onSuccess(Object obj) {
                 FirebaseMessaging.f(FirebaseMessaging.this, (com.google.android.gms.cloudmessaging.a) obj);
             }
@@ -275,33 +275,33 @@ public class FirebaseMessaging {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void u() {
-        l0.c(this.f16370b);
-        n0.f(this.f16370b, this.f16371c, z());
+        l0.c(this.f16510b);
+        n0.f(this.f16510b, this.f16511c, z());
         if (z()) {
             t();
         }
     }
 
     private void v(String str) {
-        if ("[DEFAULT]".equals(this.f16369a.l())) {
+        if ("[DEFAULT]".equals(this.f16509a.l())) {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
-                Log.d("FirebaseMessaging", "Invoking onNewToken for app: " + this.f16369a.l());
+                Log.d("FirebaseMessaging", "Invoking onNewToken for app: " + this.f16509a.l());
             }
             Intent intent = new Intent("com.google.firebase.messaging.NEW_TOKEN");
             intent.putExtra("token", str);
-            new m(this.f16370b).g(intent);
+            new m(this.f16510b).g(intent);
         }
     }
 
     private boolean z() {
-        l0.c(this.f16370b);
-        if (!l0.d(this.f16370b)) {
+        l0.c(this.f16510b);
+        if (!l0.d(this.f16510b)) {
             return false;
         }
-        if (this.f16369a.i(si.a.class) != null) {
+        if (this.f16509a.i(ti.a.class) != null) {
             return true;
         }
-        if (!g0.a() || f16367n == null) {
+        if (!g0.a() || f16507n == null) {
             return false;
         }
         return true;
@@ -309,12 +309,12 @@ public class FirebaseMessaging {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void C(long j10) {
-        l(new w0(this, Math.min(Math.max(30L, 2 * j10), f16365l)), j10);
-        this.f16378j = true;
+        l(new w0(this, Math.min(Math.max(30L, 2 * j10), f16505l)), j10);
+        this.f16518j = true;
     }
 
     boolean D(v0.a aVar) {
-        if (aVar != null && !aVar.b(this.f16377i.a())) {
+        if (aVar != null && !aVar.b(this.f16517i.a())) {
             return false;
         }
         return true;
@@ -324,16 +324,16 @@ public class FirebaseMessaging {
     public String k() {
         final v0.a r10 = r();
         if (!D(r10)) {
-            return r10.f16520a;
+            return r10.f16660a;
         }
-        final String c10 = h0.c(this.f16369a);
+        final String c10 = h0.c(this.f16509a);
         try {
-            return (String) yg.m.a(this.f16372d.b(c10, new q0.a() { // from class: com.google.firebase.messaging.x
+            return (String) zg.m.a(this.f16512d.b(c10, new q0.a() { // from class: com.google.firebase.messaging.x
                 @Override // com.google.firebase.messaging.q0.a
                 public final Task start() {
                     Task q10;
-                    q10 = r0.f16371c.f().q(r0.f16375g, new yg.j() { // from class: com.google.firebase.messaging.y
-                        @Override // yg.j
+                    q10 = r0.f16511c.f().q(r0.f16515g, new zg.j() { // from class: com.google.firebase.messaging.y
+                        @Override // zg.j
                         public final Task a(Object obj) {
                             return FirebaseMessaging.a(FirebaseMessaging.this, r2, r3, (String) obj);
                         }
@@ -350,10 +350,10 @@ public class FirebaseMessaging {
     public void l(Runnable runnable, long j10) {
         synchronized (FirebaseMessaging.class) {
             try {
-                if (f16368o == null) {
-                    f16368o = new ScheduledThreadPoolExecutor(1, new of.a("TAG"));
+                if (f16508o == null) {
+                    f16508o = new ScheduledThreadPoolExecutor(1, new pf.a("TAG"));
                 }
-                f16368o.schedule(runnable, j10, TimeUnit.SECONDS);
+                f16508o.schedule(runnable, j10, TimeUnit.SECONDS);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -362,12 +362,12 @@ public class FirebaseMessaging {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Context m() {
-        return this.f16370b;
+        return this.f16510b;
     }
 
     public Task q() {
-        final yg.k kVar = new yg.k();
-        this.f16374f.execute(new Runnable() { // from class: com.google.firebase.messaging.v
+        final zg.k kVar = new zg.k();
+        this.f16514f.execute(new Runnable() { // from class: com.google.firebase.messaging.v
             @Override // java.lang.Runnable
             public final void run() {
                 FirebaseMessaging.c(FirebaseMessaging.this, kVar);
@@ -377,41 +377,41 @@ public class FirebaseMessaging {
     }
 
     v0.a r() {
-        return o(this.f16370b).d(p(), h0.c(this.f16369a));
+        return o(this.f16510b).d(p(), h0.c(this.f16509a));
     }
 
     public boolean w() {
-        return this.f16373e.c();
+        return this.f16513e.c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean x() {
-        return this.f16377i.g();
+        return this.f16517i.g();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void y(boolean z10) {
-        this.f16378j = z10;
+        this.f16518j = z10;
     }
 
-    FirebaseMessaging(ri.e eVar, ej.a aVar, fj.b bVar, fj.b bVar2, gj.e eVar2, fj.b bVar3, cj.d dVar, h0 h0Var) {
+    FirebaseMessaging(si.e eVar, fj.a aVar, gj.b bVar, gj.b bVar2, hj.e eVar2, gj.b bVar3, dj.d dVar, h0 h0Var) {
         this(eVar, aVar, bVar3, dVar, h0Var, new c0(eVar, h0Var, bVar, bVar2, eVar2), n.f(), n.c(), n.b());
     }
 
-    FirebaseMessaging(ri.e eVar, ej.a aVar, fj.b bVar, cj.d dVar, h0 h0Var, c0 c0Var, Executor executor, Executor executor2, Executor executor3) {
-        this.f16378j = false;
-        f16367n = bVar;
-        this.f16369a = eVar;
-        this.f16373e = new a(dVar);
+    FirebaseMessaging(si.e eVar, fj.a aVar, gj.b bVar, dj.d dVar, h0 h0Var, c0 c0Var, Executor executor, Executor executor2, Executor executor3) {
+        this.f16518j = false;
+        f16507n = bVar;
+        this.f16509a = eVar;
+        this.f16513e = new a(dVar);
         Context j10 = eVar.j();
-        this.f16370b = j10;
+        this.f16510b = j10;
         p pVar = new p();
-        this.f16379k = pVar;
-        this.f16377i = h0Var;
-        this.f16371c = c0Var;
-        this.f16372d = new q0(executor);
-        this.f16374f = executor2;
-        this.f16375g = executor3;
+        this.f16519k = pVar;
+        this.f16517i = h0Var;
+        this.f16511c = c0Var;
+        this.f16512d = new q0(executor);
+        this.f16514f = executor2;
+        this.f16515g = executor3;
         Context j11 = eVar.j();
         if (j11 instanceof Application) {
             ((Application) j11).registerActivityLifecycleCallbacks(pVar);
@@ -419,7 +419,7 @@ public class FirebaseMessaging {
             Log.w("FirebaseMessaging", "Context " + j11 + " was not an application, can't register for lifecycle callbacks. Some notification events may be dropped as a result.");
         }
         if (aVar != null) {
-            aVar.a(new a.InterfaceC0289a() { // from class: com.google.firebase.messaging.r
+            aVar.a(new a.InterfaceC0334a() { // from class: com.google.firebase.messaging.r
             });
         }
         executor2.execute(new Runnable() { // from class: com.google.firebase.messaging.s
@@ -429,9 +429,9 @@ public class FirebaseMessaging {
             }
         });
         Task e10 = a1.e(this, h0Var, c0Var, j10, n.g());
-        this.f16376h = e10;
-        e10.f(executor2, new yg.g() { // from class: com.google.firebase.messaging.t
-            @Override // yg.g
+        this.f16516h = e10;
+        e10.f(executor2, new zg.g() { // from class: com.google.firebase.messaging.t
+            @Override // zg.g
             public final void onSuccess(Object obj) {
                 FirebaseMessaging.h(FirebaseMessaging.this, (a1) obj);
             }

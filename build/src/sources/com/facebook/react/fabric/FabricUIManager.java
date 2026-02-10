@@ -134,9 +134,9 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
         public void doFrameGuarded(long j10) {
             this.mIsScheduled = false;
             if (!this.mIsMountingEnabled) {
-                p8.a.J(FabricUIManager.TAG, "Not flushing pending UI operations: exception was previously thrown");
+                q8.a.J(FabricUIManager.TAG, "Not flushing pending UI operations: exception was previously thrown");
             } else if (FabricUIManager.this.mDestroyed) {
-                p8.a.J(FabricUIManager.TAG, "Not flushing pending UI operations: FabricUIManager is destroyed");
+                q8.a.J(FabricUIManager.TAG, "Not flushing pending UI operations: FabricUIManager is destroyed");
             } else {
                 if ((FabricUIManager.this.mDriveCxxAnimations || FabricUIManager.this.mDriveCxxNativeAnimated) && FabricUIManager.this.mBinding != null) {
                     FabricUIManager.this.mBinding.driveCxxAnimations();
@@ -159,7 +159,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
                         schedule();
                         FabricUIManager.this.mSynchronousEvents.clear();
                     } catch (Exception e10) {
-                        p8.a.n(FabricUIManager.TAG, "Exception thrown when executing UIFrameGuarded", e10);
+                        q8.a.n(FabricUIManager.TAG, "Exception thrown when executing UIFrameGuarded", e10);
                         this.mIsMountingEnabled = false;
                         throw e10;
                     }
@@ -283,7 +283,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
         longStreamingStats4.add(transactionEndDuration);
         LongStreamingStats longStreamingStats5 = DevToolsReactPerfLogger.streamingBatchExecutionStats;
         longStreamingStats5.add(batchExecutionDuration);
-        p8.a.v(TAG, "Statistics of Fabric commit #%d:\n - Total commit time: %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n - Layout time: %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n - Diffing time: %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n - FinishTransaction (Diffing + JNI serialization): %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n - Mounting: %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n", Long.valueOf(fabricCommitPoint.getCommitNumber()), Long.valueOf(commitDuration), Double.valueOf(longStreamingStats.getAverage()), Double.valueOf(longStreamingStats.getMedian()), Long.valueOf(longStreamingStats.getMax()), Long.valueOf(layoutDuration), Double.valueOf(longStreamingStats2.getAverage()), Double.valueOf(longStreamingStats2.getMedian()), Long.valueOf(longStreamingStats2.getMax()), Long.valueOf(diffDuration), Double.valueOf(longStreamingStats3.getAverage()), Double.valueOf(longStreamingStats3.getMedian()), Long.valueOf(longStreamingStats3.getMax()), Long.valueOf(transactionEndDuration), Double.valueOf(longStreamingStats4.getAverage()), Double.valueOf(longStreamingStats4.getMedian()), Long.valueOf(longStreamingStats4.getMax()), Long.valueOf(batchExecutionDuration), Double.valueOf(longStreamingStats5.getAverage()), Double.valueOf(longStreamingStats5.getMedian()), Long.valueOf(longStreamingStats5.getMax()));
+        q8.a.v(TAG, "Statistics of Fabric commit #%d:\n - Total commit time: %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n - Layout time: %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n - Diffing time: %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n - FinishTransaction (Diffing + JNI serialization): %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n - Mounting: %d ms. Avg: %.2f. Median: %.2f ms. Max: %d ms.\n", Long.valueOf(fabricCommitPoint.getCommitNumber()), Long.valueOf(commitDuration), Double.valueOf(longStreamingStats.getAverage()), Double.valueOf(longStreamingStats.getMedian()), Long.valueOf(longStreamingStats.getMax()), Long.valueOf(layoutDuration), Double.valueOf(longStreamingStats2.getAverage()), Double.valueOf(longStreamingStats2.getMedian()), Long.valueOf(longStreamingStats2.getMax()), Long.valueOf(diffDuration), Double.valueOf(longStreamingStats3.getAverage()), Double.valueOf(longStreamingStats3.getMedian()), Long.valueOf(longStreamingStats3.getMax()), Long.valueOf(transactionEndDuration), Double.valueOf(longStreamingStats4.getAverage()), Double.valueOf(longStreamingStats4.getMedian()), Long.valueOf(longStreamingStats4.getMax()), Long.valueOf(batchExecutionDuration), Double.valueOf(longStreamingStats5.getAverage()), Double.valueOf(longStreamingStats5.getMedian()), Long.valueOf(longStreamingStats5.getMax()));
     }
 
     private MountItem createIntBufferBatchMountItem(int i10, int[] iArr, Object[] objArr, int i11) {
@@ -341,7 +341,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
         if (z11) {
             j17 = uptimeMillis;
             BatchMountItem batchMountItem = (BatchMountItem) mountItem;
-            db.a.d(batchMountItem, "BatchMountItem is null");
+            eb.a.d(batchMountItem, "BatchMountItem is null");
             z10 = !batchMountItem.isBatchEmpty();
         } else {
             j17 = uptimeMillis;
@@ -364,7 +364,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
             this.mDispatchViewUpdatesTime = SystemClock.uptimeMillis();
         }
         if (z13) {
-            db.a.d(mountItem, "MountItem is null");
+            eb.a.d(mountItem, "MountItem is null");
             this.mMountItemDispatcher.addMountItem(mountItem);
             GuardedRunnable guardedRunnable = new GuardedRunnable(this.mReactApplicationContext) { // from class: com.facebook.react.fabric.FabricUIManager.3
                 @Override // com.facebook.react.bridge.GuardedRunnable
@@ -404,9 +404,9 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
         this.mMountingManager.startSurface(rootViewTag, new ThemedReactContext(this.mReactApplicationContext, t10.getContext(), reactRoot.getSurfaceID(), rootViewTag), t10);
         String jSModuleName = reactRoot.getJSModuleName();
         if (ReactNativeFeatureFlags.enableFabricLogs()) {
-            p8.a.d(str, "Starting surface for module: %s and reactTag: %d", jSModuleName, Integer.valueOf(rootViewTag));
+            q8.a.d(str, "Starting surface for module: %s and reactTag: %d", jSModuleName, Integer.valueOf(rootViewTag));
         }
-        db.a.d(this.mBinding, "Binding in FabricUIManager is null");
+        eb.a.d(this.mBinding, "Binding in FabricUIManager is null");
         this.mBinding.startSurface(rootViewTag, jSModuleName, (NativeMap) writableMap);
         return rootViewTag;
     }
@@ -548,7 +548,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
             themedReactContext = null;
         }
         if (themedReactContext == null) {
-            p8.a.L(TAG, "Couldn't get context for surfaceId %d in getThemeData", Integer.valueOf(i10));
+            q8.a.L(TAG, "Couldn't get context for surfaceId %d in getThemeData", Integer.valueOf(i10));
             return false;
         }
         float[] defaultTextInputPadding = UIManagerHelper.getDefaultTextInputPadding(themedReactContext);
@@ -576,7 +576,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
     @Override // com.facebook.react.bridge.UIManager
     public void invalidate() {
         String str = TAG;
-        p8.a.s(str, "FabricUIManager.invalidate");
+        q8.a.s(str, "FabricUIManager.invalidate");
         DevToolsReactPerfLogger devToolsReactPerfLogger = this.mDevToolsReactPerfLogger;
         if (devToolsReactPerfLogger != null) {
             devToolsReactPerfLogger.removeDevToolsReactPerfLoggerListener(FABRIC_PERF_LOGGER);
@@ -625,7 +625,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
                 return 0L;
             }
             reactContext = surfaceManagerEnforced.getContext();
-            db.a.d(reactContext, "Context in SurfaceMountingManager is null. surfaceId: " + i10);
+            eb.a.d(reactContext, "Context in SurfaceMountingManager is null. surfaceId: " + i10);
         } else {
             reactContext = this.mReactApplicationContext;
         }
@@ -647,7 +647,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
                 return 0L;
             }
             context = surfaceManagerEnforced.getContext();
-            db.a.d(context, "Context in SurfaceMountingManager is null. surfaceId: " + i10);
+            eb.a.d(context, "Context in SurfaceMountingManager is null. surfaceId: " + i10);
         } else {
             context = this.mReactApplicationContext;
         }
@@ -786,7 +786,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
                     return;
                 }
                 String str = FabricUIManager.TAG;
-                p8.a.m(str, "setJSResponder skipped, surface no longer available [" + i10 + "]");
+                q8.a.m(str, "setJSResponder skipped, surface no longer available [" + i10 + "]");
             }
 
             @Override // com.facebook.react.fabric.mounting.mountitems.MountItem
@@ -807,11 +807,11 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
         Context context = t10.getContext();
         ThemedReactContext themedReactContext = new ThemedReactContext(this.mReactApplicationContext, context, str, rootViewTag);
         if (ReactNativeFeatureFlags.enableFabricLogs()) {
-            p8.a.d(TAG, "Starting surface for module: %s and reactTag: %d", str, Integer.valueOf(rootViewTag));
+            q8.a.d(TAG, "Starting surface for module: %s and reactTag: %d", str, Integer.valueOf(rootViewTag));
         }
         this.mMountingManager.startSurface(rootViewTag, themedReactContext, t10);
         Point viewportOffset = UiThreadUtil.isOnUiThread() ? RootViewUtil.getViewportOffset(t10) : new Point(0, 0);
-        db.a.d(this.mBinding, "Binding in FabricUIManager is null");
+        eb.a.d(this.mBinding, "Binding in FabricUIManager is null");
         this.mBinding.startSurfaceWithConstraints(rootViewTag, str, (NativeMap) writableMap, LayoutMetricsConversions.getMinSize(i10), LayoutMetricsConversions.getMaxSize(i10), LayoutMetricsConversions.getMinSize(i11), LayoutMetricsConversions.getMaxSize(i11), viewportOffset.x, viewportOffset.y, I18nUtil.getInstance().isRTL(context), I18nUtil.getInstance().doLeftAndRightSwapInRTL(context));
         return rootViewTag;
     }
@@ -822,7 +822,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
             return;
         }
         this.mMountingManager.stopSurface(surfaceHandlerBinding.getSurfaceId());
-        db.a.d(this.mBinding, "Binding in FabricUIManager is null");
+        eb.a.d(this.mBinding, "Binding in FabricUIManager is null");
         this.mBinding.stopSurfaceWithSurfaceHandler(surfaceHandlerBinding);
     }
 
@@ -877,7 +877,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
             } else {
                 str = "<hidden>";
             }
-            p8.a.d(str2, "SynchronouslyUpdateViewOnUIThread for tag %d: %s", valueOf, str);
+            q8.a.d(str2, "SynchronouslyUpdateViewOnUIThread for tag %d: %s", valueOf, str);
         }
         mountItem.execute(this.mMountingManager);
         ReactMarker.logFabricMarker(ReactMarkerConstants.FABRIC_UPDATE_UI_MAIN_THREAD_END, null, i11);
@@ -888,7 +888,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
         boolean z10;
         boolean z11;
         if (ReactNativeFeatureFlags.enableFabricLogs()) {
-            p8.a.c(TAG, "Updating Root Layout Specs for [%d]", Integer.valueOf(i10));
+            q8.a.c(TAG, "Updating Root Layout Specs for [%d]", Integer.valueOf(i10));
         }
         SurfaceMountingManager surfaceManager = this.mMountingManager.getSurfaceManager(i10);
         if (surfaceManager == null) {
@@ -904,7 +904,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
             z10 = false;
             z11 = false;
         }
-        db.a.d(this.mBinding, "Binding in FabricUIManager is null");
+        eb.a.d(this.mBinding, "Binding in FabricUIManager is null");
         this.mBinding.setConstraints(i10, LayoutMetricsConversions.getMinSize(i11), LayoutMetricsConversions.getMaxSize(i11), LayoutMetricsConversions.getMinSize(i12), LayoutMetricsConversions.getMaxSize(i12), i13, i14, z10, z11);
     }
 
@@ -931,10 +931,10 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
     @Override // com.facebook.react.uimanager.events.SynchronousEventReceiver
     public void receiveEvent(int i10, int i11, String str, boolean z10, WritableMap writableMap, int i12, boolean z11) {
         if (ReactBuildConfig.DEBUG && i10 == -1) {
-            p8.a.d(TAG, "Emitted event without surfaceId: [%d] %s", Integer.valueOf(i11), str);
+            q8.a.d(TAG, "Emitted event without surfaceId: [%d] %s", Integer.valueOf(i11), str);
         }
         if (this.mDestroyed) {
-            p8.a.m(TAG, "Attempted to receiveEvent after destruction");
+            q8.a.m(TAG, "Attempted to receiveEvent after destruction");
             return;
         }
         EventEmitterWrapper eventEmitter = this.mMountingManager.getEventEmitter(i10, i11);
@@ -944,7 +944,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
                 return;
             }
             String str2 = TAG;
-            p8.a.s(str2, "Unable to invoke event: " + str + " for reactTag: " + i11);
+            q8.a.s(str2, "Unable to invoke event: " + str + " for reactTag: " + i11);
         } else if (z11) {
             UiThreadUtil.assertOnUiThread();
             if (this.mSynchronousEvents.add(new SynchronousEvent(i10, i11, str))) {
@@ -968,7 +968,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
     @Override // com.facebook.react.bridge.UIManager
     public void stopSurface(int i10) {
         this.mMountingManager.stopSurface(i10);
-        db.a.d(this.mBinding, "Binding in FabricUIManager is null");
+        eb.a.d(this.mBinding, "Binding in FabricUIManager is null");
         this.mBinding.stopSurface(i10);
     }
 
@@ -999,7 +999,7 @@ public class FabricUIManager implements UIManager, LifecycleEventListener, UIBlo
             nextRootViewTag = ReactRootViewTagGenerator.getNextRootViewTag();
         }
         this.mMountingManager.startSurface(nextRootViewTag, new ThemedReactContext(this.mReactApplicationContext, context, surfaceHandlerBinding.getModuleName(), nextRootViewTag), view);
-        db.a.d(this.mBinding, "Binding in FabricUIManager is null");
+        eb.a.d(this.mBinding, "Binding in FabricUIManager is null");
         this.mBinding.startSurfaceWithSurfaceHandler(nextRootViewTag, surfaceHandlerBinding, view != null);
     }
 }

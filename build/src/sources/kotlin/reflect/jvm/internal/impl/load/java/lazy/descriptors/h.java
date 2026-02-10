@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class h implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaClassDescriptor f33034d;
+    private final LazyJavaClassDescriptor f32743d;
 
     public h(LazyJavaClassDescriptor lazyJavaClassDescriptor) {
-        this.f33034d = lazyJavaClassDescriptor;
+        this.f32743d = lazyJavaClassDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List e10;
-        e10 = LazyJavaClassDescriptor.e(this.f33034d);
+        e10 = LazyJavaClassDescriptor.e(this.f32743d);
         return e10;
     }
 }

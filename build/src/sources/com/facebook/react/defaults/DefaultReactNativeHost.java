@@ -64,7 +64,7 @@ public abstract class DefaultReactNativeHost extends ReactNativeHost {
         return new FabricUIManagerProviderImpl(componentFactory, viewManagerRegistry).createUIManager(reactApplicationContext);
     }
 
-    @qr.c
+    @rr.c
     protected static /* synthetic */ void isHermesEnabled$annotations() {
     }
 

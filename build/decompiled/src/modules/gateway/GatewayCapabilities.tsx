@@ -20,14 +20,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/gateway/GatewayCapabilities.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun95440: for (var _fun95440_ip = 0;;) switch (_fun95440_ip) {
+        _fun95428: for (var _fun95428_ip = 0;;) switch (_fun95428_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.useChannelObfuscation;
                 var0 = 1734655;
                 if (!var1) {
-                    _fun95440_ip = 24;
-                    continue _fun95440
+                    _fun95428_ip = 24;
+                    continue _fun95428
                 }
             case 18:
                 var0 = 1767423;

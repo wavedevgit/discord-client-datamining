@@ -16,7 +16,7 @@ import java.util.Map;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import qr.p;
+import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class UiComponentError implements Parcelable {
     @NotNull
@@ -33,9 +33,9 @@ public abstract class UiComponentError implements Parcelable {
             y10.u();
             while (y10.hasNext()) {
                 if (Intrinsics.areEqual(y10.o0(), "type")) {
-                    return y10.e1();
+                    return y10.b1();
                 }
-                y10.S();
+                y10.T();
             }
             return null;
         }
@@ -79,7 +79,7 @@ public abstract class UiComponentError implements Parcelable {
             } else if (uiComponentError instanceof UiInputInternationalDbComponentError) {
                 d10.c(UiInputInternationalDbComponentError.class).toJson(tVar, uiComponentError);
             } else if (uiComponentError == null) {
-                tVar.P();
+                tVar.Q();
             } else {
                 throw new p();
             }

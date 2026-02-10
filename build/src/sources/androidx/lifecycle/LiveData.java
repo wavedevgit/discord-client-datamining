@@ -7,37 +7,37 @@ import m.b;
 public abstract class LiveData {
 
     /* renamed from: k  reason: collision with root package name */
-    static final Object f4867k = new Object();
+    static final Object f4564k = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    final Object f4868a;
+    final Object f4565a;
 
     /* renamed from: b  reason: collision with root package name */
-    private m.b f4869b;
+    private m.b f4566b;
 
     /* renamed from: c  reason: collision with root package name */
-    int f4870c;
+    int f4567c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f4871d;
+    private boolean f4568d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Object f4872e;
+    private volatile Object f4569e;
 
     /* renamed from: f  reason: collision with root package name */
-    volatile Object f4873f;
+    volatile Object f4570f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f4874g;
+    private int f4571g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f4875h;
+    private boolean f4572h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f4876i;
+    private boolean f4573i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Runnable f4877j;
+    private final Runnable f4574j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
@@ -47,9 +47,9 @@ public abstract class LiveData {
         @Override // java.lang.Runnable
         public void run() {
             Object obj;
-            synchronized (LiveData.this.f4868a) {
-                obj = LiveData.this.f4873f;
-                LiveData.this.f4873f = LiveData.f4867k;
+            synchronized (LiveData.this.f4565a) {
+                obj = LiveData.this.f4570f;
+                LiveData.this.f4570f = LiveData.f4564k;
             }
             LiveData.this.o(obj);
         }
@@ -71,21 +71,21 @@ public abstract class LiveData {
     class c extends d implements m {
 
         /* renamed from: p  reason: collision with root package name */
-        final LifecycleOwner f4880p;
+        final LifecycleOwner f4577p;
 
         c(LifecycleOwner lifecycleOwner, Observer observer) {
             super(observer);
-            this.f4880p = lifecycleOwner;
+            this.f4577p = lifecycleOwner;
         }
 
         @Override // androidx.lifecycle.LiveData.d
         void b() {
-            this.f4880p.getLifecycle().d(this);
+            this.f4577p.getLifecycle().d(this);
         }
 
         @Override // androidx.lifecycle.LiveData.d
         boolean c(LifecycleOwner lifecycleOwner) {
-            if (this.f4880p == lifecycleOwner) {
+            if (this.f4577p == lifecycleOwner) {
                 return true;
             }
             return false;
@@ -93,21 +93,21 @@ public abstract class LiveData {
 
         @Override // androidx.lifecycle.LiveData.d
         boolean d() {
-            return this.f4880p.getLifecycle().b().d(Lifecycle.State.f4849o);
+            return this.f4577p.getLifecycle().b().d(Lifecycle.State.f4546o);
         }
 
         @Override // androidx.lifecycle.m
         public void k(LifecycleOwner lifecycleOwner, Lifecycle.a aVar) {
-            Lifecycle.State b10 = this.f4880p.getLifecycle().b();
-            if (b10 == Lifecycle.State.f4846d) {
-                LiveData.this.n(this.f4882d);
+            Lifecycle.State b10 = this.f4577p.getLifecycle().b();
+            if (b10 == Lifecycle.State.f4543d) {
+                LiveData.this.n(this.f4579d);
                 return;
             }
             Lifecycle.State state = null;
             while (state != b10) {
                 a(d());
                 state = b10;
-                b10 = this.f4880p.getLifecycle().b();
+                b10 = this.f4577p.getLifecycle().b();
             }
         }
     }
@@ -117,22 +117,22 @@ public abstract class LiveData {
     public abstract class d {
 
         /* renamed from: d  reason: collision with root package name */
-        final Observer f4882d;
+        final Observer f4579d;
 
         /* renamed from: e  reason: collision with root package name */
-        boolean f4883e;
+        boolean f4580e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f4884i = -1;
+        int f4581i = -1;
 
         d(Observer observer) {
-            this.f4882d = observer;
+            this.f4579d = observer;
         }
 
         void a(boolean z10) {
             int i10;
-            if (z10 != this.f4883e) {
-                this.f4883e = z10;
+            if (z10 != this.f4580e) {
+                this.f4580e = z10;
                 LiveData liveData = LiveData.this;
                 if (z10) {
                     i10 = 1;
@@ -140,7 +140,7 @@ public abstract class LiveData {
                     i10 = -1;
                 }
                 liveData.c(i10);
-                if (this.f4883e) {
+                if (this.f4580e) {
                     LiveData.this.e(this);
                 }
             }
@@ -157,13 +157,13 @@ public abstract class LiveData {
     }
 
     public LiveData(Object obj) {
-        this.f4868a = new Object();
-        this.f4869b = new m.b();
-        this.f4870c = 0;
-        this.f4873f = f4867k;
-        this.f4877j = new a();
-        this.f4872e = obj;
-        this.f4874g = 0;
+        this.f4565a = new Object();
+        this.f4566b = new m.b();
+        this.f4567c = 0;
+        this.f4570f = f4564k;
+        this.f4574j = new a();
+        this.f4569e = obj;
+        this.f4571g = 0;
     }
 
     static void b(String str) {
@@ -174,33 +174,33 @@ public abstract class LiveData {
     }
 
     private void d(d dVar) {
-        if (dVar.f4883e) {
+        if (dVar.f4580e) {
             if (!dVar.d()) {
                 dVar.a(false);
                 return;
             }
-            int i10 = dVar.f4884i;
-            int i11 = this.f4874g;
+            int i10 = dVar.f4581i;
+            int i11 = this.f4571g;
             if (i10 >= i11) {
                 return;
             }
-            dVar.f4884i = i11;
-            dVar.f4882d.a(this.f4872e);
+            dVar.f4581i = i11;
+            dVar.f4579d.a(this.f4569e);
         }
     }
 
     void c(int i10) {
         boolean z10;
         boolean z11;
-        int i11 = this.f4870c;
-        this.f4870c = i10 + i11;
-        if (this.f4871d) {
+        int i11 = this.f4567c;
+        this.f4567c = i10 + i11;
+        if (this.f4568d) {
             return;
         }
-        this.f4871d = true;
+        this.f4568d = true;
         while (true) {
             try {
-                int i12 = this.f4870c;
+                int i12 = this.f4567c;
                 if (i11 != i12) {
                     if (i11 == 0 && i12 > 0) {
                         z10 = true;
@@ -219,43 +219,43 @@ public abstract class LiveData {
                     }
                     i11 = i12;
                 } else {
-                    this.f4871d = false;
+                    this.f4568d = false;
                     return;
                 }
             } catch (Throwable th2) {
-                this.f4871d = false;
+                this.f4568d = false;
                 throw th2;
             }
         }
     }
 
     void e(d dVar) {
-        if (this.f4875h) {
-            this.f4876i = true;
+        if (this.f4572h) {
+            this.f4573i = true;
             return;
         }
-        this.f4875h = true;
+        this.f4572h = true;
         do {
-            this.f4876i = false;
+            this.f4573i = false;
             if (dVar != null) {
                 d(dVar);
                 dVar = null;
             } else {
-                b.d d10 = this.f4869b.d();
+                b.d d10 = this.f4566b.d();
                 while (d10.hasNext()) {
                     d((d) ((Map.Entry) d10.next()).getValue());
-                    if (this.f4876i) {
+                    if (this.f4573i) {
                         break;
                     }
                 }
             }
-        } while (this.f4876i);
-        this.f4875h = false;
+        } while (this.f4573i);
+        this.f4572h = false;
     }
 
     public Object f() {
-        Object obj = this.f4872e;
-        if (obj != f4867k) {
+        Object obj = this.f4569e;
+        if (obj != f4564k) {
             return obj;
         }
         return null;
@@ -263,11 +263,11 @@ public abstract class LiveData {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int g() {
-        return this.f4874g;
+        return this.f4571g;
     }
 
     public boolean h() {
-        if (this.f4870c > 0) {
+        if (this.f4567c > 0) {
             return true;
         }
         return false;
@@ -275,9 +275,9 @@ public abstract class LiveData {
 
     public void i(LifecycleOwner lifecycleOwner, Observer observer) {
         b("observe");
-        if (lifecycleOwner.getLifecycle().b() != Lifecycle.State.f4846d) {
+        if (lifecycleOwner.getLifecycle().b() != Lifecycle.State.f4543d) {
             c cVar = new c(lifecycleOwner, observer);
-            d dVar = (d) this.f4869b.g(observer, cVar);
+            d dVar = (d) this.f4566b.g(observer, cVar);
             if (dVar != null && !dVar.c(lifecycleOwner)) {
                 throw new IllegalArgumentException("Cannot add the same observer with different lifecycles");
             }
@@ -291,7 +291,7 @@ public abstract class LiveData {
     public void j(Observer observer) {
         b("observeForever");
         b bVar = new b(observer);
-        d dVar = (d) this.f4869b.g(observer, bVar);
+        d dVar = (d) this.f4566b.g(observer, bVar);
         if (!(dVar instanceof c)) {
             if (dVar != null) {
                 return;
@@ -311,23 +311,23 @@ public abstract class LiveData {
     /* JADX INFO: Access modifiers changed from: protected */
     public void m(Object obj) {
         boolean z10;
-        synchronized (this.f4868a) {
-            if (this.f4873f == f4867k) {
+        synchronized (this.f4565a) {
+            if (this.f4570f == f4564k) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f4873f = obj;
+            this.f4570f = obj;
         }
         if (!z10) {
             return;
         }
-        l.c.g().c(this.f4877j);
+        l.c.g().c(this.f4574j);
     }
 
     public void n(Observer observer) {
         b("removeObserver");
-        d dVar = (d) this.f4869b.h(observer);
+        d dVar = (d) this.f4566b.h(observer);
         if (dVar == null) {
             return;
         }
@@ -338,19 +338,19 @@ public abstract class LiveData {
     /* JADX INFO: Access modifiers changed from: protected */
     public void o(Object obj) {
         b("setValue");
-        this.f4874g++;
-        this.f4872e = obj;
+        this.f4571g++;
+        this.f4569e = obj;
         e(null);
     }
 
     public LiveData() {
-        this.f4868a = new Object();
-        this.f4869b = new m.b();
-        this.f4870c = 0;
-        Object obj = f4867k;
-        this.f4873f = obj;
-        this.f4877j = new a();
-        this.f4872e = obj;
-        this.f4874g = -1;
+        this.f4565a = new Object();
+        this.f4566b = new m.b();
+        this.f4567c = 0;
+        Object obj = f4564k;
+        this.f4570f = obj;
+        this.f4574j = new a();
+        this.f4569e = obj;
+        this.f4571g = -1;
     }
 }

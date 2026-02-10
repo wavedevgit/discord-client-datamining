@@ -32,15 +32,15 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends b {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final C0413a f29752r = new C0413a(null);
+    public static final C0447a f30006r = new C0447a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private final i2.e f29753q;
+    private final i2.e f30007q;
 
     /* renamed from: j2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0413a {
-        public /* synthetic */ C0413a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0447a {
+        public /* synthetic */ C0447a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -48,7 +48,7 @@ public final class a extends b {
             Object b10;
             Intrinsics.checkNotNullParameter(type, "type");
             try {
-                c.a aVar = c.f29756a;
+                c.a aVar = c.f30010a;
                 a aVar2 = new a(new b0(), null, 2, null);
                 if (Intrinsics.areEqual(type, "androidx.credentials.TYPE_CREATE_PUBLIC_KEY_CREDENTIAL_DOM_EXCEPTION/androidx.credentials.TYPE_ABORT_ERROR")) {
                     b10 = aVar.b(new i2.a(), str, aVar2);
@@ -173,7 +173,7 @@ public final class a extends b {
             }
         }
 
-        private C0413a() {
+        private C0447a() {
         }
     }
 
@@ -185,6 +185,6 @@ public final class a extends b {
     public a(i2.e domError, CharSequence charSequence) {
         super("androidx.credentials.TYPE_CREATE_PUBLIC_KEY_CREDENTIAL_DOM_EXCEPTION/" + domError.a(), charSequence);
         Intrinsics.checkNotNullParameter(domError, "domError");
-        this.f29753q = domError;
+        this.f30007q = domError;
     }
 }

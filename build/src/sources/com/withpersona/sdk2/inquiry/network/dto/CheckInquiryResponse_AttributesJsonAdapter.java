@@ -67,8 +67,8 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.E0();
-                    reader.S();
+                    reader.C0();
+                    reader.T();
                     break;
                 case 0:
                     str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -81,7 +81,7 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
                     if (nextStep != null) {
                         break;
                     } else {
-                        throw an.c.x("nextStep", "nextStep", reader);
+                        throw bn.c.x("nextStep", "nextStep", reader);
                     }
                 case 3:
                     map = (Map) this.nullableMapOfStringInquiryFieldAdapter.fromJson(reader);
@@ -91,7 +91,7 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
                     if (waitForTransitionConfig != null) {
                         break;
                     } else {
-                        throw an.c.x("waitForTransitionConfig", "waitForTransition", reader);
+                        throw bn.c.x("waitForTransitionConfig", "waitForTransition", reader);
                     }
                 case 5:
                     str3 = (String) this.nullableStringAdapter.fromJson(reader);
@@ -103,9 +103,9 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
             if (waitForTransitionConfig != null) {
                 return new CheckInquiryResponse.Attributes(str, str2, nextStep, map, waitForTransitionConfig, str3);
             }
-            throw an.c.o("waitForTransitionConfig", "waitForTransition", reader);
+            throw bn.c.o("waitForTransitionConfig", "waitForTransition", reader);
         }
-        throw an.c.o("nextStep", "nextStep", reader);
+        throw bn.c.o("nextStep", "nextStep", reader);
     }
 
     @Override // com.squareup.moshi.h

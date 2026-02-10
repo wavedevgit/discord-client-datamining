@@ -1,77 +1,61 @@
 package kt;
 
-import ht.e;
+import java.util.Iterator;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import kotlin.text.StringsKt;
-import kotlin.text.e0;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Encoder;
-import kotlinx.serialization.json.JsonElement;
-import lt.g0;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlinx.serialization.encoding.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class s implements KSerializer {
+public abstract class s extends a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final s f35572a = new s();
+    private final KSerializer f35212a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f35573b = ht.j.b("kotlinx.serialization.json.JsonLiteral", e.i.f26526a);
-
-    private s() {
+    public /* synthetic */ s(KSerializer kSerializer, DefaultConstructorMarker defaultConstructorMarker) {
+        this(kSerializer);
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public r deserialize(Decoder decoder) {
+    @Override // kt.a
+    protected final void g(kotlinx.serialization.encoding.c decoder, Object obj, int i10, int i11) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
-        JsonElement g10 = p.d(decoder).g();
-        if (g10 instanceof r) {
-            return (r) g10;
+        if (i11 >= 0) {
+            for (int i12 = 0; i12 < i11; i12++) {
+                h(decoder, i10 + i12, obj, false);
+            }
+            return;
         }
-        throw g0.e(-1, "Unexpected JSON element, expected JsonLiteral, had " + Reflection.getOrCreateKotlinClass(g10.getClass()), g10.toString());
+        throw new IllegalArgumentException("Size must be known in advance when using READ_ALL");
     }
 
-    @Override // ft.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, r value) {
+    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
+    public abstract SerialDescriptor getDescriptor();
+
+    @Override // kt.a
+    protected void h(kotlinx.serialization.encoding.c decoder, int i10, Object obj, boolean z10) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        n(obj, i10, c.a.c(decoder, getDescriptor(), i10, this.f35212a, null, 8, null));
+    }
+
+    protected abstract void n(Object obj, int i10, Object obj2);
+
+    @Override // gt.o
+    public void serialize(Encoder encoder, Object obj) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        p.h(encoder);
-        if (value.c()) {
-            encoder.F(value.b());
-        } else if (value.d() != null) {
-            encoder.j(value.d()).F(value.b());
-        } else {
-            Long t10 = StringsKt.t(value.b());
-            if (t10 != null) {
-                encoder.k(t10.longValue());
-                return;
-            }
-            qr.b0 h10 = e0.h(value.b());
-            if (h10 != null) {
-                encoder.j(gt.a.J(qr.b0.f48064e).getDescriptor()).k(h10.h());
-                return;
-            }
-            Double p10 = StringsKt.p(value.b());
-            if (p10 != null) {
-                encoder.f(p10.doubleValue());
-                return;
-            }
-            Boolean j12 = StringsKt.j1(value.b());
-            if (j12 != null) {
-                encoder.q(j12.booleanValue());
-            } else {
-                encoder.F(value.b());
-            }
+        int e10 = e(obj);
+        SerialDescriptor descriptor = getDescriptor();
+        CompositeEncoder j10 = encoder.j(descriptor, e10);
+        Iterator d10 = d(obj);
+        for (int i10 = 0; i10 < e10; i10++) {
+            j10.F(getDescriptor(), i10, this.f35212a, d10.next());
         }
+        j10.c(descriptor);
     }
 
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f35573b;
+    private s(KSerializer kSerializer) {
+        super(null);
+        this.f35212a = kSerializer;
     }
 }

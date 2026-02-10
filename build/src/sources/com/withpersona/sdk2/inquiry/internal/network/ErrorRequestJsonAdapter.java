@@ -13,25 +13,25 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19174a;
+    private final m.b f19314a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19175b;
+    private final com.squareup.moshi.h f19315b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f19176c;
+    private final com.squareup.moshi.h f19316c;
 
     public ErrorRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("errorType", "debugDescription");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19174a = a10;
+        this.f19314a = a10;
         com.squareup.moshi.h f10 = moshi.f(ErrorRequest.a.class, x0.d(), "errorType");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19175b = f10;
+        this.f19315b = f10;
         com.squareup.moshi.h f11 = moshi.f(Object.class, x0.d(), "debugDescription");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19176c = f11;
+        this.f19316c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -42,28 +42,28 @@ public final class ErrorRequestJsonAdapter extends com.squareup.moshi.h {
         ErrorRequest.a aVar = null;
         Object obj = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19174a);
+            int J = reader.J(this.f19314a);
             if (J != -1) {
                 if (J != 0) {
                     if (J == 1) {
-                        obj = this.f19176c.fromJson(reader);
+                        obj = this.f19316c.fromJson(reader);
                     }
                 } else {
-                    aVar = (ErrorRequest.a) this.f19175b.fromJson(reader);
+                    aVar = (ErrorRequest.a) this.f19315b.fromJson(reader);
                     if (aVar == null) {
-                        throw an.c.x("errorType", "errorType", reader);
+                        throw bn.c.x("errorType", "errorType", reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
         if (aVar != null) {
             return new ErrorRequest(aVar, obj);
         }
-        throw an.c.o("errorType", "errorType", reader);
+        throw bn.c.o("errorType", "errorType", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -73,9 +73,9 @@ public final class ErrorRequestJsonAdapter extends com.squareup.moshi.h {
         if (errorRequest != null) {
             writer.k();
             writer.J("errorType");
-            this.f19175b.toJson(writer, errorRequest.b());
+            this.f19315b.toJson(writer, errorRequest.b());
             writer.J("debugDescription");
-            this.f19176c.toJson(writer, errorRequest.a());
+            this.f19316c.toJson(writer, errorRequest.a());
             writer.s();
             return;
         }

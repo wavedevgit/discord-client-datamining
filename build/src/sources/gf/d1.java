@@ -1,39 +1,26 @@
 package gf;
 
-import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
+import android.app.Dialog;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class d1 extends hf.a {
-    public static final Parcelable.Creator<d1> CREATOR = new e1();
+final class d1 extends k0 {
 
-    /* renamed from: d  reason: collision with root package name */
-    Bundle f25093d;
+    /* renamed from: a  reason: collision with root package name */
+    final /* synthetic */ Dialog f24281a;
 
-    /* renamed from: e  reason: collision with root package name */
-    com.google.android.gms.common.d[] f25094e;
-
-    /* renamed from: i  reason: collision with root package name */
-    int f25095i;
-
-    /* renamed from: o  reason: collision with root package name */
-    e f25096o;
+    /* renamed from: b  reason: collision with root package name */
+    final /* synthetic */ e1 f24282b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public d1(Bundle bundle, com.google.android.gms.common.d[] dVarArr, int i10, e eVar) {
-        this.f25093d = bundle;
-        this.f25094e = dVarArr;
-        this.f25095i = i10;
-        this.f25096o = eVar;
+    public d1(e1 e1Var, Dialog dialog) {
+        this.f24282b = e1Var;
+        this.f24281a = dialog;
     }
 
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.e(parcel, 1, this.f25093d, false);
-        hf.c.v(parcel, 2, this.f25094e, i10, false);
-        hf.c.l(parcel, 3, this.f25095i);
-        hf.c.q(parcel, 4, this.f25096o, i10, false);
-        hf.c.b(parcel, a10);
+    @Override // gf.k0
+    public final void a() {
+        this.f24282b.f24312e.o();
+        if (this.f24281a.isShowing()) {
+            this.f24281a.dismiss();
+        }
     }
 }

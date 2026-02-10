@@ -1,242 +1,129 @@
 package zs;
 
+import at.p0;
+import j$.time.ZoneOffset;
+import j$.time.format.DateTimeFormatter;
+import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import org.jetbrains.annotations.NotNull;
+@gt.m(with = ft.j.class)
+@Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\n\b\u0007\u0018\u0000 \u00152\u00020\u0001:\u0002\u0010\u0016B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u000f\u0010\u0007\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0007\u0010\bJ\u001a\u0010\u000b\u001a\u00020\n2\b\u0010\t\u001a\u0004\u0018\u00010\u0001H\u0096\u0002¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\u000e\u001a\u00020\rH\u0016¢\u0006\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0003\u001a\u00020\u00028\u0000X\u0080\u0004¢\u0006\f\n\u0004\b\u0010\u0010\u0011\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0014\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u0010\u0010\b¨\u0006\u0017"}, d2 = {"Lzs/k;", "", "j$/time/ZoneOffset", "zoneOffset", "<init>", "(Lj$/time/ZoneOffset;)V", "", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "toString", "()Ljava/lang/String;", "a", "Lj$/time/ZoneOffset;", "getZoneOffset$kotlinx_datetime", "()Lj$/time/ZoneOffset;", "totalSeconds", "Companion", "b", "kotlinx-datetime"}, k = 1, mv = {1, 9, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class k implements h, k0, n0, dt.c {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final v f56585a;
+public final class k {
+    @NotNull
+    public static final a Companion = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final w f56586b;
+    private static final k f56676b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final x f56587c;
+    /* renamed from: a  reason: collision with root package name */
+    private final ZoneOffset f56677a;
 
-    /* renamed from: d  reason: collision with root package name */
-    private String f56588d;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-    public k(v date, w time, x offset, String str) {
-        Intrinsics.checkNotNullParameter(date, "date");
-        Intrinsics.checkNotNullParameter(time, "time");
-        Intrinsics.checkNotNullParameter(offset, "offset");
-        this.f56585a = date;
-        this.f56586b = time;
-        this.f56587c = offset;
-        this.f56588d = str;
+        public static /* synthetic */ k b(a aVar, CharSequence charSequence, at.n nVar, int i10, Object obj) {
+            if ((i10 & 2) != 0) {
+                nVar = n.a();
+            }
+            return aVar.a(charSequence, nVar);
+        }
+
+        public final k a(CharSequence input, at.n format) {
+            DateTimeFormatter f10;
+            k i10;
+            DateTimeFormatter g10;
+            k i11;
+            DateTimeFormatter h10;
+            k i12;
+            Intrinsics.checkNotNullParameter(input, "input");
+            Intrinsics.checkNotNullParameter(format, "format");
+            b bVar = b.f56678a;
+            if (format == bVar.b()) {
+                h10 = m.h();
+                Intrinsics.checkNotNullExpressionValue(h10, "access$getIsoFormat(...)");
+                i12 = m.i(input, h10);
+                return i12;
+            } else if (format == bVar.c()) {
+                g10 = m.g();
+                Intrinsics.checkNotNullExpressionValue(g10, "access$getIsoBasicFormat(...)");
+                i11 = m.i(input, g10);
+                return i11;
+            } else if (format == bVar.a()) {
+                f10 = m.f();
+                Intrinsics.checkNotNullExpressionValue(f10, "access$getFourDigitsFormat(...)");
+                i10 = m.i(input, f10);
+                return i10;
+            } else {
+                return (k) format.a(input);
+            }
+        }
+
+        @NotNull
+        public final KSerializer serializer() {
+            return ft.j.f23237a;
+        }
+
+        private a() {
+        }
     }
 
-    @Override // zs.h
-    public void A(Integer num) {
-        this.f56585a.A(num);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f56678a = new b();
+
+        private b() {
+        }
+
+        public final at.n a() {
+            return p0.b();
+        }
+
+        public final at.n b() {
+            return p0.c();
+        }
+
+        public final at.n c() {
+            return p0.d();
+        }
     }
 
-    @Override // zs.h
-    public Integer B() {
-        return this.f56585a.B();
+    static {
+        ZoneOffset UTC = ZoneOffset.UTC;
+        Intrinsics.checkNotNullExpressionValue(UTC, "UTC");
+        f56676b = new k(UTC);
     }
 
-    @Override // zs.k0
-    public void C(Integer num) {
-        this.f56586b.C(num);
+    public k(ZoneOffset zoneOffset) {
+        Intrinsics.checkNotNullParameter(zoneOffset, "zoneOffset");
+        this.f56677a = zoneOffset;
     }
 
-    @Override // zs.h
-    public void D(Integer num) {
-        this.f56585a.D(num);
-    }
-
-    @Override // zs.k0
-    public void E(g gVar) {
-        this.f56586b.E(gVar);
-    }
-
-    @Override // dt.c
-    /* renamed from: F */
-    public k copy() {
-        return new k(this.f56585a.copy(), this.f56586b.copy(), this.f56587c.copy(), this.f56588d);
-    }
-
-    public final v G() {
-        return this.f56585a;
-    }
-
-    public final x H() {
-        return this.f56587c;
-    }
-
-    public final w I() {
-        return this.f56586b;
-    }
-
-    public final String J() {
-        return this.f56588d;
-    }
-
-    public final void K(String str) {
-        this.f56588d = str;
-    }
-
-    @Override // zs.k0
-    public Integer a() {
-        return this.f56586b.a();
-    }
-
-    @Override // zs.n0
-    public Integer b() {
-        return this.f56587c.b();
-    }
-
-    @Override // zs.k0
-    public Integer c() {
-        return this.f56586b.c();
-    }
-
-    @Override // zs.k0
-    public Integer d() {
-        return this.f56586b.d();
-    }
-
-    @Override // zs.k0
-    public Integer e() {
-        return this.f56586b.e();
+    public final int a() {
+        return this.f56677a.getTotalSeconds();
     }
 
     public boolean equals(Object obj) {
-        if (obj instanceof k) {
-            k kVar = (k) obj;
-            if (Intrinsics.areEqual(kVar.f56585a, this.f56585a) && Intrinsics.areEqual(kVar.f56586b, this.f56586b) && Intrinsics.areEqual(kVar.f56587c, this.f56587c) && Intrinsics.areEqual(kVar.f56588d, this.f56588d)) {
-                return true;
-            }
-            return false;
+        if ((obj instanceof k) && Intrinsics.areEqual(this.f56677a, ((k) obj).f56677a)) {
+            return true;
         }
         return false;
     }
 
-    @Override // zs.h
-    public Integer f() {
-        return this.f56585a.f();
-    }
-
-    @Override // zs.h
-    public Integer g() {
-        return this.f56585a.g();
-    }
-
-    @Override // zs.k0
-    public Integer h() {
-        return this.f56586b.h();
-    }
-
     public int hashCode() {
-        int i10;
-        int hashCode = (this.f56585a.hashCode() ^ this.f56586b.hashCode()) ^ this.f56587c.hashCode();
-        String str = this.f56588d;
-        if (str != null) {
-            i10 = str.hashCode();
-        } else {
-            i10 = 0;
-        }
-        return hashCode ^ i10;
+        return this.f56677a.hashCode();
     }
 
-    @Override // zs.h
-    public Integer i() {
-        return this.f56585a.i();
-    }
-
-    @Override // zs.n0
-    public Boolean isNegative() {
-        return this.f56587c.isNegative();
-    }
-
-    @Override // zs.n0
-    public Integer j() {
-        return this.f56587c.j();
-    }
-
-    @Override // zs.n0
-    public void k(Boolean bool) {
-        this.f56587c.k(bool);
-    }
-
-    @Override // zs.n0
-    public void l(Integer num) {
-        this.f56587c.l(num);
-    }
-
-    @Override // zs.k0
-    public void m(Integer num) {
-        this.f56586b.m(num);
-    }
-
-    @Override // zs.h
-    public void n(Integer num) {
-        this.f56585a.n(num);
-    }
-
-    @Override // zs.n0
-    public void o(Integer num) {
-        this.f56587c.o(num);
-    }
-
-    @Override // zs.n0
-    public void p(Integer num) {
-        this.f56587c.p(num);
-    }
-
-    @Override // zs.k0
-    public g q() {
-        return this.f56586b.q();
-    }
-
-    @Override // zs.k0
-    public void r(Integer num) {
-        this.f56586b.r(num);
-    }
-
-    @Override // zs.k0
-    public void s(Integer num) {
-        this.f56586b.s(num);
-    }
-
-    @Override // zs.h
-    public void t(Integer num) {
-        this.f56585a.t(num);
-    }
-
-    @Override // zs.k0
-    public void u(at.a aVar) {
-        this.f56586b.u(aVar);
-    }
-
-    @Override // zs.n0
-    public Integer v() {
-        return this.f56587c.v();
-    }
-
-    @Override // zs.k0
-    public void w(Integer num) {
-        this.f56586b.w(num);
-    }
-
-    @Override // zs.h
-    public void x(Integer num) {
-        this.f56585a.x(num);
-    }
-
-    @Override // zs.k0
-    public at.a y() {
-        return this.f56586b.y();
-    }
-
-    @Override // zs.h
-    public Integer z() {
-        return this.f56585a.z();
-    }
-
-    public /* synthetic */ k(v vVar, w wVar, x xVar, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? new v(null, null, null, null, null, 31, null) : vVar, (i10 & 2) != 0 ? new w(null, null, null, null, null, null, 63, null) : wVar, (i10 & 4) != 0 ? new x(null, null, null, null, 15, null) : xVar, (i10 & 8) != 0 ? null : str);
+    public String toString() {
+        String zoneOffset = this.f56677a.toString();
+        Intrinsics.checkNotNullExpressionValue(zoneOffset, "toString(...)");
+        return zoneOffset;
     }
 }

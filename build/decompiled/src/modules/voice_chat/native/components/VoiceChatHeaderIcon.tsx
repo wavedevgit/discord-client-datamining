@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun68716: for (var _fun68716_ip = 0;;) switch (_fun68716_ip) {
+        _fun68581: for (var _fun68581_ip = 0;;) switch (_fun68581_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.children;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.source = var10;
                 var10 = null;
                 if (!(var10 == var8)) {
-                    _fun68716_ip = 133;
-                    continue _fun68716
+                    _fun68581_ip = 133;
+                    continue _fun68581
                 }
             case 107:
                 var10 = _closure1_slot1;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var3);
-    var11 = 0;
-    var6 = var5[var11];
+    var0 = 0;
+    var6 = var5[var0];
     var3 = arg3;
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
@@ -104,24 +104,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'padding': 6
     };
     var9 = 6;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.lg;
-    var8.borderRadius = var12;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
-    var8.backgroundColor = var12;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.lg;
+    var8.borderRadius = var11;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.colors;
+    var11 = var11.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
+    var8.backgroundColor = var11;
     var3.headerButton = var8;
     var8 = {};
-    var12 = 0.6;
-    var8.opacity = var12;
+    var11 = 0.6;
+    var8.opacity = var11;
     var3.disabledOpacity = var8;
-    var8 = {};
-    var8.margin = var11;
-    var3.headerIcon = var8;
     var8 = {
         'marginRight': 12,
         'height': null,
@@ -156,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_chat/native/components/VoiceChatHeaderIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun68717: for (var _fun68717_ip = 0;;) switch (_fun68717_ip) {
+        _fun68582: for (var _fun68582_ip = 0;;) switch (_fun68582_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.accessibilityLabel;
@@ -186,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(2);
                 var6[0] = var8;
                 if (!var7) {
-                    _fun68717_ip = 122;
-                    continue _fun68717
+                    _fun68582_ip = 122;
+                    continue _fun68582
                 }
             case 116:
                 var7 = var11.disabledOpacity;
@@ -277,4 +274,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.VoiceChatCallScreenHeaderIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3948, 660, 33, 1297, 671, 4703, 566, 8501, 22, 3161, 4904, 4086, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3948, 660, 33, 1297, 671, 4703, 566, 8476, 22, 3161, 4904, 4086, 2]);

@@ -81,12 +81,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'alignItems': 'center'
     };
     var3.contextRow = var8;
-    var8 = {
-        'width': 16,
-        'height': 16,
-        'marginStart': 8
-    };
-    var3.icon = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
     var3 = 14;
@@ -96,14 +90,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateRolePreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun117734: for (var _fun117734_ip = 0;;) switch (_fun117734_ip) {
+        _fun117693: for (var _fun117693_ip = 0;;) switch (_fun117693_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.content;
                 var3 = undefined;
                 if (!(var10 === var3)) {
-                    _fun117734_ip = 72;
-                    continue _fun117734
+                    _fun117693_ip = 72;
+                    continue _fun117693
                 }
             case 14:
                 var5 = _closure1_slot0;
@@ -259,4 +253,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildRoleSubscriptionRolePreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 33, 1297, 671, 1234, 632, 3960, 4704, 3942, 668, 9352, 6804, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 33, 1297, 671, 1234, 632, 3960, 4704, 3942, 668, 9330, 6805, 2]);

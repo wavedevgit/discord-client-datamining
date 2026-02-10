@@ -90,7 +90,7 @@ import com.discord.reactevents.ReactEvents;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Reflection;
 import org.jetbrains.annotations.NotNull;
-import qr.v;
+import rr.v;
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\b\u0010\u0000\u001a\u00020\u0001H\u0000¨\u0006\u0002"}, d2 = {"createChatReactEvents", "Lcom/discord/reactevents/ReactEvents;", "chat_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class CreateChatReactEventsKt {

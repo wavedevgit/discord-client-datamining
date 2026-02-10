@@ -3,17 +3,17 @@ package com.facebook.animated.webp;
 import android.graphics.Bitmap;
 import com.facebook.imagepipeline.common.ImageDecodeOptions;
 import com.facebook.imagepipeline.nativecode.f;
-import ga.b;
-import ga.c;
+import ha.b;
+import ha.c;
 import java.nio.ByteBuffer;
-import o8.d;
-import o8.j;
+import p8.d;
+import p8.j;
 @d
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class WebPImage implements c, ha.c {
+public class WebPImage implements c, ia.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Bitmap.Config f9811a = null;
+    private Bitmap.Config f9951a = null;
     @d
     private long mNativeContext;
 
@@ -26,7 +26,7 @@ public class WebPImage implements c, ha.c {
         byteBuffer.rewind();
         WebPImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer);
         if (imageDecodeOptions != null) {
-            nativeCreateFromDirectByteBuffer.f9811a = imageDecodeOptions.f10335i;
+            nativeCreateFromDirectByteBuffer.f9951a = imageDecodeOptions.f10475i;
         }
         return nativeCreateFromDirectByteBuffer;
     }
@@ -42,7 +42,7 @@ public class WebPImage implements c, ha.c {
         j.b(Boolean.valueOf(z10));
         WebPImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10);
         if (imageDecodeOptions != null) {
-            nativeCreateFromNativeMemory.f9811a = imageDecodeOptions.f10335i;
+            nativeCreateFromNativeMemory.f9951a = imageDecodeOptions.f10475i;
         }
         return nativeCreateFromNativeMemory;
     }
@@ -71,25 +71,25 @@ public class WebPImage implements c, ha.c {
 
     private native int nativeGetWidth();
 
-    @Override // ga.c
+    @Override // ha.c
     public int[] A() {
         return nativeGetFrameDurations();
     }
 
-    @Override // ga.c
+    @Override // ha.c
     public int a() {
         return nativeGetFrameCount();
     }
 
-    @Override // ga.c
+    @Override // ha.c
     public int b() {
         return nativeGetLoopCount();
     }
 
-    @Override // ga.c
+    @Override // ha.c
     public b c(int i10) {
         b.a aVar;
-        b.EnumC0335b enumC0335b;
+        b.EnumC0380b enumC0380b;
         WebPFrame z10 = z(i10);
         try {
             int b10 = z10.b();
@@ -103,11 +103,11 @@ public class WebPImage implements c, ha.c {
             }
             b.a aVar2 = aVar;
             if (z10.e()) {
-                enumC0335b = b.EnumC0335b.DISPOSE_TO_BACKGROUND;
+                enumC0380b = b.EnumC0380b.DISPOSE_TO_BACKGROUND;
             } else {
-                enumC0335b = b.EnumC0335b.DISPOSE_DO_NOT;
+                enumC0380b = b.EnumC0380b.DISPOSE_DO_NOT;
             }
-            b bVar = new b(i10, b10, c10, width, height, aVar2, enumC0335b);
+            b bVar = new b(i10, b10, c10, width, height, aVar2, enumC0380b);
             z10.dispose();
             return bVar;
         } catch (Throwable th2) {
@@ -116,12 +116,12 @@ public class WebPImage implements c, ha.c {
         }
     }
 
-    @Override // ha.c
+    @Override // ia.c
     public c d(ByteBuffer byteBuffer, ImageDecodeOptions imageDecodeOptions) {
         return f(byteBuffer, imageDecodeOptions);
     }
 
-    @Override // ha.c
+    @Override // ia.c
     public c e(long j10, int i10, ImageDecodeOptions imageDecodeOptions) {
         return g(j10, i10, imageDecodeOptions);
     }
@@ -130,35 +130,35 @@ public class WebPImage implements c, ha.c {
         nativeFinalize();
     }
 
-    @Override // ga.c
+    @Override // ha.c
     public int getHeight() {
         return nativeGetHeight();
     }
 
-    @Override // ga.c
+    @Override // ha.c
     public int getWidth() {
         return nativeGetWidth();
     }
 
-    @Override // ga.c
+    @Override // ha.c
     /* renamed from: h */
     public WebPFrame z(int i10) {
         return nativeGetFrame(i10);
     }
 
-    @Override // ga.c
+    @Override // ha.c
     public int w() {
         return nativeGetSizeInBytes();
     }
 
-    @Override // ga.c
+    @Override // ha.c
     public boolean x() {
         return true;
     }
 
-    @Override // ga.c
+    @Override // ha.c
     public Bitmap.Config y() {
-        return this.f9811a;
+        return this.f9951a;
     }
 
     @d

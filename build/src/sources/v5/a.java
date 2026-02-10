@@ -1,65 +1,85 @@
 package v5;
 
-import java.util.ArrayList;
-import w5.c;
+import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public abstract class a {
+public class a implements d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52224a = c.a.a("k", "x", "y");
+    /* renamed from: d  reason: collision with root package name */
+    private final HttpURLConnection f52145d;
 
-    public static r5.e a(w5.c cVar, l5.i iVar) {
-        ArrayList arrayList = new ArrayList();
-        if (cVar.m() == c.b.BEGIN_ARRAY) {
-            cVar.x();
-            while (cVar.hasNext()) {
-                arrayList.add(z.a(cVar, iVar));
-            }
-            cVar.v();
-            u.b(arrayList);
-        } else {
-            arrayList.add(new y5.a(s.e(cVar, x5.j.e())));
-        }
-        return new r5.e(arrayList);
+    public a(HttpURLConnection httpURLConnection) {
+        this.f52145d = httpURLConnection;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static r5.m b(w5.c cVar, l5.i iVar) {
-        cVar.u();
-        r5.e eVar = null;
-        r5.b bVar = null;
-        boolean z10 = false;
-        r5.b bVar2 = null;
-        while (cVar.m() != c.b.END_OBJECT) {
-            int p10 = cVar.p(f52224a);
-            if (p10 != 0) {
-                if (p10 != 1) {
-                    if (p10 != 2) {
-                        cVar.s();
-                        cVar.S();
-                    } else if (cVar.m() == c.b.STRING) {
-                        cVar.S();
-                        z10 = true;
-                    } else {
-                        bVar = d.e(cVar, iVar);
-                    }
-                } else if (cVar.m() == c.b.STRING) {
-                    cVar.S();
-                    z10 = true;
+    private String a(HttpURLConnection httpURLConnection) {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getErrorStream()));
+        StringBuilder sb2 = new StringBuilder();
+        while (true) {
+            try {
+                String readLine = bufferedReader.readLine();
+                if (readLine != null) {
+                    sb2.append(readLine);
+                    sb2.append('\n');
                 } else {
-                    bVar2 = d.e(cVar, iVar);
+                    try {
+                        break;
+                    } catch (Exception unused) {
+                    }
                 }
-            } else {
-                eVar = a(cVar, iVar);
+            } catch (Throwable th2) {
+                try {
+                    bufferedReader.close();
+                } catch (Exception unused2) {
+                }
+                throw th2;
             }
         }
-        cVar.D();
-        if (z10) {
-            iVar.a("Lottie doesn't support expressions.");
+        bufferedReader.close();
+        return sb2.toString();
+    }
+
+    @Override // v5.d
+    public String B1() {
+        try {
+            if (isSuccessful()) {
+                return null;
+            }
+            return "Unable to fetch " + this.f52145d.getURL() + ". Failed with " + this.f52145d.getResponseCode() + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + a(this.f52145d);
+        } catch (IOException e10) {
+            y5.d.d("get error failed ", e10);
+            return e10.getMessage();
         }
-        if (eVar != null) {
-            return eVar;
+    }
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f52145d.disconnect();
+    }
+
+    @Override // v5.d
+    public boolean isSuccessful() {
+        try {
+            if (this.f52145d.getResponseCode() / 100 != 2) {
+                return false;
+            }
+            return true;
+        } catch (IOException unused) {
+            return false;
         }
-        return new r5.i(bVar2, bVar);
+    }
+
+    @Override // v5.d
+    public String p0() {
+        return this.f52145d.getContentType();
+    }
+
+    @Override // v5.d
+    public InputStream v0() {
+        return this.f52145d.getInputStream();
     }
 }

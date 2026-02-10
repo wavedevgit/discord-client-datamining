@@ -1,7 +1,7 @@
 // modules/gateway/GatewaySocketSingleton.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun95034: for (var _fun95034_ip = 0;;) switch (_fun95034_ip) {
+    _fun95022: for (var _fun95022_ip = 0;;) switch (_fun95022_ip) {
         case 0:
             var6 = require;
             var9 = metroImportDefault;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = new var16[var1](var15, var14);
             var1 = var1 instanceof Object ? var1 : var8;
             var8 = function() { // Environment: var5
-                _fun95035: for (var _fun95035_ip = 0;;) switch (_fun95035_ip) {
+                _fun95023: for (var _fun95023_ip = 0;;) switch (_fun95023_ip) {
                     case 0:
                         var1 = _closure1_slot3;
                         var0 = var1.getToken;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = 'handleIdentify called';
                         var1 = var5.bind(var6)(var1, var4);
                         if (!(var0 != var3)) {
-                            _fun95035_ip = 254;
-                            continue _fun95035
+                            _fun95023_ip = 254;
+                            continue _fun95023
                         }
                     case 61:
                         var9 = _closure1_slot0;
@@ -132,13 +132,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = 'gateway_connect_reasons';
                         var3[var4] = var5;
                         if (!(var0 == var6)) {
-                            _fun95035_ip = 208;
-                            continue _fun95035
+                            _fun95023_ip = 208;
+                            continue _fun95023
                         }
                     case 204:
                         var4 = {};
-                        _fun95035_ip = 218;
-                        continue _fun95035;
+                        _fun95023_ip = 218;
+                        continue _fun95023;
                     case 208:
                         var5 = {};
                         var5.installation_id = var6;
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var10.isDesktop;
             var8 = var8.bind(var10)();
             if (!var8) {
-                _fun95034_ip = 309;
-                continue _fun95034
+                _fun95022_ip = 309;
+                continue _fun95022
             }
         case 268:
             var8 = 9;
@@ -268,4 +268,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.localVoiceState = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3, 12464, 12502, 12505, 5335, 795, 659, 478, 3076, 1444, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3, 12460, 12498, 12501, 5336, 795, 659, 478, 3076, 1444, 806, 2]);

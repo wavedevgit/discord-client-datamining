@@ -1,71 +1,154 @@
 package uo;
 
-import com.withpersona.sdk2.inquiry.internal.network.CreateInquirySessionResponse;
+import android.os.Parcel;
+import android.os.Parcelable;
 import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
+public interface b extends Parcelable {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public /* synthetic */ class a {
+    public static final class a implements b {
+        @NotNull
+        public static final Parcelable.Creator<a> CREATOR = new C0717a();
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51924a;
+        /* renamed from: d  reason: collision with root package name */
+        private final String f51734d;
 
-        /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51925b;
+        /* renamed from: e  reason: collision with root package name */
+        private final String f51735e;
 
-        static {
-            int[] iArr = new int[CreateInquirySessionResponse.GpsCollectionRequirement.values().length];
-            try {
-                iArr[CreateInquirySessionResponse.GpsCollectionRequirement.REQUIRE.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
+        /* renamed from: uo.b$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0717a implements Parcelable.Creator {
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final a createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return new a(parcel.readString(), parcel.readString());
             }
-            try {
-                iArr[CreateInquirySessionResponse.GpsCollectionRequirement.OPTIONAL.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
+
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final a[] newArray(int i10) {
+                return new a[i10];
             }
-            try {
-                iArr[CreateInquirySessionResponse.GpsCollectionRequirement.NONE.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
+        }
+
+        public a(String name, String path) {
+            Intrinsics.checkNotNullParameter(name, "name");
+            Intrinsics.checkNotNullParameter(path, "path");
+            this.f51734d = name;
+            this.f51735e = path;
+        }
+
+        @Override // android.os.Parcelable
+        public final int describeContents() {
+            return 0;
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
             }
-            f51924a = iArr;
-            int[] iArr2 = new int[CreateInquirySessionResponse.GpsPrecisionRequirement.values().length];
-            try {
-                iArr2[CreateInquirySessionResponse.GpsPrecisionRequirement.PRECISE.ordinal()] = 1;
-            } catch (NoSuchFieldError unused4) {
+            if (!(obj instanceof a)) {
+                return false;
             }
-            try {
-                iArr2[CreateInquirySessionResponse.GpsPrecisionRequirement.ROUGH.ordinal()] = 2;
-            } catch (NoSuchFieldError unused5) {
+            a aVar = (a) obj;
+            if (Intrinsics.areEqual(this.f51734d, aVar.f51734d) && Intrinsics.areEqual(this.f51735e, aVar.f51735e)) {
+                return true;
             }
-            f51925b = iArr2;
+            return false;
+        }
+
+        public int hashCode() {
+            return (this.f51734d.hashCode() * 31) + this.f51735e.hashCode();
+        }
+
+        public String toString() {
+            String str = this.f51734d;
+            String str2 = this.f51735e;
+            return "PageChange(name=" + str + ", path=" + str2 + ")";
+        }
+
+        @Override // android.os.Parcelable
+        public final void writeToParcel(Parcel dest, int i10) {
+            Intrinsics.checkNotNullParameter(dest, "dest");
+            dest.writeString(this.f51734d);
+            dest.writeString(this.f51735e);
         }
     }
 
-    public static final yp.a a(CreateInquirySessionResponse.GpsCollectionRequirement gpsCollectionRequirement) {
-        Intrinsics.checkNotNullParameter(gpsCollectionRequirement, "<this>");
-        int i10 = a.f51924a[gpsCollectionRequirement.ordinal()];
-        if (i10 != 1) {
-            if (i10 != 2) {
-                if (i10 == 3) {
-                    return yp.a.f55585i;
-                }
-                throw new qr.p();
-            }
-            return yp.a.f55584e;
-        }
-        return yp.a.f55583d;
-    }
+    /* renamed from: uo.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0718b implements b {
+        @NotNull
+        public static final Parcelable.Creator<C0718b> CREATOR = new a();
 
-    public static final yp.e b(CreateInquirySessionResponse.GpsPrecisionRequirement gpsPrecisionRequirement) {
-        Intrinsics.checkNotNullParameter(gpsPrecisionRequirement, "<this>");
-        int i10 = a.f51925b[gpsPrecisionRequirement.ordinal()];
-        if (i10 != 1) {
-            if (i10 == 2) {
-                return yp.e.f55595d;
+        /* renamed from: d  reason: collision with root package name */
+        private final String f51736d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private final String f51737e;
+
+        /* renamed from: uo.b$b$a */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class a implements Parcelable.Creator {
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final C0718b createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return new C0718b(parcel.readString(), parcel.readString());
             }
-            throw new qr.p();
+
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final C0718b[] newArray(int i10) {
+                return new C0718b[i10];
+            }
         }
-        return yp.e.f55596e;
+
+        public C0718b(String inquiryId, String sessionToken) {
+            Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
+            Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
+            this.f51736d = inquiryId;
+            this.f51737e = sessionToken;
+        }
+
+        @Override // android.os.Parcelable
+        public final int describeContents() {
+            return 0;
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (!(obj instanceof C0718b)) {
+                return false;
+            }
+            C0718b c0718b = (C0718b) obj;
+            if (Intrinsics.areEqual(this.f51736d, c0718b.f51736d) && Intrinsics.areEqual(this.f51737e, c0718b.f51737e)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return (this.f51736d.hashCode() * 31) + this.f51737e.hashCode();
+        }
+
+        public String toString() {
+            String str = this.f51736d;
+            String str2 = this.f51737e;
+            return "StartEvent(inquiryId=" + str + ", sessionToken=" + str2 + ")";
+        }
+
+        @Override // android.os.Parcelable
+        public final void writeToParcel(Parcel dest, int i10) {
+            Intrinsics.checkNotNullParameter(dest, "dest");
+            dest.writeString(this.f51736d);
+            dest.writeString(this.f51737e);
+        }
     }
 }

@@ -1,37 +1,19 @@
 package ea;
-
-import com.facebook.hermes.instrumentation.HermesSamplingProfiler;
-import com.facebook.hermes.reactexecutor.HermesExecutor;
-import com.facebook.react.bridge.JavaScriptExecutor;
-import com.facebook.react.bridge.JavaScriptExecutorFactory;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a implements JavaScriptExecutorFactory {
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f21400a = true;
+    public static final String[] f21208a = {"best fit", "lookup"};
 
     /* renamed from: b  reason: collision with root package name */
-    private String f21401b = "";
+    public static final String[] f21209b = {"search", "standard", "invalid"};
 
-    @Override // com.facebook.react.bridge.JavaScriptExecutorFactory
-    public JavaScriptExecutor create() {
-        return new HermesExecutor(this.f21400a, this.f21401b);
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static final String[] f21210c = {"base", "accent", "case", "variant"};
 
-    @Override // com.facebook.react.bridge.JavaScriptExecutorFactory
-    public void startSamplingProfiler() {
-        HermesSamplingProfiler.enable();
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static final String[] f21211d = {"upper", "lower", "false"};
 
-    @Override // com.facebook.react.bridge.JavaScriptExecutorFactory
-    public void stopSamplingProfiler(String filename) {
-        Intrinsics.checkNotNullParameter(filename, "filename");
-        HermesSamplingProfiler.dumpSampledTraceToFile(filename);
-        HermesSamplingProfiler.disable();
-    }
-
-    public String toString() {
-        return "JSIExecutor+HermesRuntime";
-    }
+    /* renamed from: e  reason: collision with root package name */
+    public static final String[] f21212e = {"sort", "search"};
 }

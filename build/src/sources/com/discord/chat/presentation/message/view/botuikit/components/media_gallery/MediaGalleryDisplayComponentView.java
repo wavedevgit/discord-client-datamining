@@ -79,7 +79,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
             Intrinsics.checkNotNullExpressionValue(itemView, "itemView");
             onMediaItemClicked.invoke(itemView, component.getId(), Integer.valueOf(component.getItems().indexOf(item)), item.getPortalId());
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -91,7 +91,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
         if (mediaItemEventHandlers != null && (onMediaItemLongClicked = mediaItemEventHandlers.getOnMediaItemLongClicked()) != null) {
             onMediaItemLongClicked.invoke(component.getId(), Integer.valueOf(component.getItems().indexOf(item)));
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -102,7 +102,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
         if (mediaItemEventHandlers != null && (onMediaItemSpoilerClicked = mediaItemEventHandlers.getOnMediaItemSpoilerClicked()) != null) {
             onMediaItemSpoilerClicked.invoke();
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -112,7 +112,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
         if (mediaItemEventHandlers != null && (onMediaItemObscureToggle = mediaItemEventHandlers.getOnMediaItemObscureToggle()) != null) {
             onMediaItemObscureToggle.invoke(Boolean.valueOf(z10));
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -123,7 +123,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
         if (mediaItemEventHandlers != null && (onMediaItemAltTextButtonClicked = mediaItemEventHandlers.getOnMediaItemAltTextButtonClicked()) != null) {
             onMediaItemAltTextButtonClicked.invoke(altText);
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @NotNull
@@ -178,35 +178,35 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
         this.binding = inflate;
         MosaicLayoutManager mosaicLayoutManager = new MosaicLayoutManager(context);
         this.mosaicLayoutManager = mosaicLayoutManager;
-        MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter = new MediaGalleryDisplayComponentAdapter(context, new Function3() { // from class: y6.k
+        MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter = new MediaGalleryDisplayComponentAdapter(context, new Function3() { // from class: z6.k
             @Override // kotlin.jvm.functions.Function3
             public final Object invoke(Object obj, Object obj2, Object obj3) {
                 Unit _init_$lambda$0;
                 _init_$lambda$0 = MediaGalleryDisplayComponentView._init_$lambda$0(MediaGalleryDisplayComponentView.this, (MediaGalleryDisplayComponent) obj, (MediaGalleryItem) obj2, (MessagePartViewHolder) obj3);
                 return _init_$lambda$0;
             }
-        }, new Function2() { // from class: y6.l
+        }, new Function2() { // from class: z6.l
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit _init_$lambda$1;
                 _init_$lambda$1 = MediaGalleryDisplayComponentView._init_$lambda$1(MediaGalleryDisplayComponentView.this, (MediaGalleryDisplayComponent) obj, (MediaGalleryItem) obj2);
                 return _init_$lambda$1;
             }
-        }, new Function1() { // from class: y6.m
+        }, new Function1() { // from class: z6.m
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit _init_$lambda$2;
                 _init_$lambda$2 = MediaGalleryDisplayComponentView._init_$lambda$2(MediaGalleryDisplayComponentView.this, (MediaGalleryItem) obj);
                 return _init_$lambda$2;
             }
-        }, new Function1() { // from class: y6.n
+        }, new Function1() { // from class: z6.n
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit _init_$lambda$3;
                 _init_$lambda$3 = MediaGalleryDisplayComponentView._init_$lambda$3(MediaGalleryDisplayComponentView.this, ((Boolean) obj).booleanValue());
                 return _init_$lambda$3;
             }
-        }, new Function1() { // from class: y6.o
+        }, new Function1() { // from class: z6.o
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit _init_$lambda$4;

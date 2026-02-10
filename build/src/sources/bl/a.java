@@ -1,142 +1,324 @@
 package bl;
 
-import cl.e;
-import cl.i;
-import com.google.zxing.Result;
-import hk.c;
-import hk.k;
-import hk.m;
-import hk.o;
-import hk.p;
+import ik.c;
+import ik.p;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import lk.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a implements m {
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final p[] f6837b = new p[0];
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f6838a = new e();
+    private static final int[] f7091a = {0, 4, 1, 5};
 
-    private static lk.b b(lk.b bVar) {
-        int[] k10 = bVar.k();
-        int[] f10 = bVar.f();
-        if (k10 != null && f10 != null) {
-            float c10 = c(k10, bVar);
-            int i10 = k10[1];
-            int i11 = f10[1];
-            int i12 = k10[0];
-            int i13 = f10[0];
-            if (i12 < i13 && i10 < i11) {
-                int i14 = i11 - i10;
-                if (i14 != i13 - i12 && (i13 = i12 + i14) >= bVar.l()) {
-                    throw k.a();
-                }
-                int round = Math.round(((i13 - i12) + 1) / c10);
-                int round2 = Math.round((i14 + 1) / c10);
-                if (round > 0 && round2 > 0) {
-                    if (round2 == round) {
-                        int i15 = (int) (c10 / 2.0f);
-                        int i16 = i10 + i15;
-                        int i17 = i12 + i15;
-                        int i18 = (((int) ((round - 1) * c10)) + i17) - i13;
-                        if (i18 > 0) {
-                            if (i18 <= i15) {
-                                i17 -= i18;
-                            } else {
-                                throw k.a();
-                            }
-                        }
-                        int i19 = (((int) ((round2 - 1) * c10)) + i16) - i11;
-                        if (i19 > 0) {
-                            if (i19 <= i15) {
-                                i16 -= i19;
-                            } else {
-                                throw k.a();
-                            }
-                        }
-                        lk.b bVar2 = new lk.b(round, round2);
-                        for (int i20 = 0; i20 < round2; i20++) {
-                            int i21 = ((int) (i20 * c10)) + i16;
-                            for (int i22 = 0; i22 < round; i22++) {
-                                if (bVar.e(((int) (i22 * c10)) + i17, i21)) {
-                                    bVar2.q(i22, i20);
-                                }
-                            }
-                        }
-                        return bVar2;
-                    }
-                    throw k.a();
-                }
-                throw k.a();
-            }
-            throw k.a();
+    /* renamed from: b  reason: collision with root package name */
+    private static final int[] f7092b = {6, 2, 7, 3};
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final int[] f7093c = {8, 1, 1, 1, 1, 1, 1, 3};
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final int[] f7094d = {7, 1, 1, 3, 1, 1, 1, 2, 1};
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final int[] f7095e = {0, 180, 270, 90};
+
+    private static mk.b a(mk.b bVar, int i10) {
+        if (i10 % 360 == 0) {
+            return bVar;
         }
-        throw k.a();
+        mk.b clone = bVar.clone();
+        clone.m(i10);
+        return clone;
     }
 
-    private static float c(int[] iArr, lk.b bVar) {
-        int i10 = bVar.i();
-        int l10 = bVar.l();
-        int i11 = iArr[0];
-        boolean z10 = true;
-        int i12 = iArr[1];
+    private static void b(p[] pVarArr, p[] pVarArr2, int[] iArr) {
+        for (int i10 = 0; i10 < iArr.length; i10++) {
+            pVarArr[iArr[i10]] = pVarArr2[i10];
+        }
+    }
+
+    public static b c(c cVar, Map map, boolean z10) {
+        int[] iArr;
+        mk.b a10 = cVar.a();
+        for (int i10 : f7095e) {
+            mk.b a11 = a(a10, i10);
+            List d10 = d(z10, a11);
+            if (!d10.isEmpty()) {
+                return new b(a11, d10, i10);
+            }
+        }
+        return new b(a10, new ArrayList(), 0);
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:10:0x001d, code lost:
+        if (r4 != 0) goto L11;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:12:0x0020, code lost:
+        r3 = r0.iterator();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:14:0x0028, code lost:
+        if (r3.hasNext() == false) goto L24;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:15:0x002a, code lost:
+        r4 = (ik.p[]) r3.next();
+        r7 = r4[1];
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:16:0x0032, code lost:
+        if (r7 == null) goto L17;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:17:0x0034, code lost:
+        r2 = (int) java.lang.Math.max(r2, r7.d());
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:18:0x003e, code lost:
+        r4 = r4[3];
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:19:0x0040, code lost:
+        if (r4 == null) goto L23;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x0042, code lost:
+        r2 = java.lang.Math.max(r2, (int) r4.d());
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static java.util.List d(boolean r8, mk.b r9) {
+        /*
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+            r1 = 0
+            r2 = r1
+            r3 = r2
+        L8:
+            r4 = r3
+        L9:
+            int r5 = r9.i()
+            if (r2 >= r5) goto L7a
+            ik.p[] r3 = g(r9, r2, r3)
+            r5 = r3[r1]
+            r6 = 1
+            if (r5 != 0) goto L50
+            r5 = 3
+            r7 = r3[r5]
+            if (r7 != 0) goto L50
+            if (r4 != 0) goto L20
+            goto L7a
+        L20:
+            java.util.Iterator r3 = r0.iterator()
+        L24:
+            boolean r4 = r3.hasNext()
+            if (r4 == 0) goto L4c
+            java.lang.Object r4 = r3.next()
+            ik.p[] r4 = (ik.p[]) r4
+            r7 = r4[r6]
+            if (r7 == 0) goto L3e
+            float r2 = (float) r2
+            float r7 = r7.d()
+            float r2 = java.lang.Math.max(r2, r7)
+            int r2 = (int) r2
+        L3e:
+            r4 = r4[r5]
+            if (r4 == 0) goto L24
+            float r4 = r4.d()
+            int r4 = (int) r4
+            int r2 = java.lang.Math.max(r2, r4)
+            goto L24
+        L4c:
+            int r2 = r2 + 5
+            r3 = r1
+            goto L8
+        L50:
+            r0.add(r3)
+            if (r8 != 0) goto L56
+            goto L7a
+        L56:
+            r2 = 2
+            r4 = r3[r2]
+            if (r4 == 0) goto L69
+            float r4 = r4.c()
+            int r4 = (int) r4
+            r2 = r3[r2]
+            float r2 = r2.d()
+        L66:
+            int r2 = (int) r2
+            r3 = r4
+            goto L78
+        L69:
+            r2 = 4
+            r4 = r3[r2]
+            float r4 = r4.c()
+            int r4 = (int) r4
+            r2 = r3[r2]
+            float r2 = r2.d()
+            goto L66
+        L78:
+            r4 = r6
+            goto L9
+        L7a:
+            return r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: bl.a.d(boolean, mk.b):java.util.List");
+    }
+
+    private static int[] e(mk.b bVar, int i10, int i11, int i12, int[] iArr, int[] iArr2) {
+        Arrays.fill(iArr2, 0, iArr2.length, 0);
         int i13 = 0;
-        while (i11 < l10 && i12 < i10) {
-            if (z10 != bVar.e(i11, i12)) {
-                i13++;
-                if (i13 == 5) {
-                    break;
+        while (bVar.e(i10, i11) && i10 > 0) {
+            int i14 = i13 + 1;
+            if (i13 >= 3) {
+                break;
+            }
+            i10--;
+            i13 = i14;
+        }
+        int length = iArr.length;
+        int i15 = i10;
+        int i16 = 0;
+        boolean z10 = false;
+        while (i10 < i12) {
+            if (bVar.e(i10, i11) != z10) {
+                iArr2[i16] = iArr2[i16] + 1;
+            } else {
+                if (i16 == length - 1) {
+                    if (h(iArr2, iArr) < 0.42f) {
+                        return new int[]{i15, i10};
+                    }
+                    i15 += iArr2[0] + iArr2[1];
+                    int i17 = i16 - 1;
+                    System.arraycopy(iArr2, 2, iArr2, 0, i17);
+                    iArr2[i17] = 0;
+                    iArr2[i16] = 0;
+                    i16--;
+                } else {
+                    i16++;
                 }
+                iArr2[i16] = 1;
                 z10 = !z10;
             }
-            i11++;
-            i12++;
+            i10++;
         }
-        if (i11 != l10 && i12 != i10) {
-            return (i11 - iArr[0]) / 7.0f;
+        if (i16 == length - 1 && h(iArr2, iArr) < 0.42f) {
+            return new int[]{i15, i10 - 1};
         }
-        throw k.a();
+        return null;
     }
 
-    @Override // hk.m
-    public final Result a(c cVar, Map map) {
-        p[] b10;
-        lk.e eVar;
-        if (map != null && map.containsKey(hk.e.PURE_BARCODE)) {
-            eVar = this.f6838a.c(b(cVar.a()), map);
-            b10 = f6837b;
-        } else {
-            g e10 = new dl.c(cVar.a()).e(map);
-            lk.e c10 = this.f6838a.c(e10.a(), map);
-            b10 = e10.b();
-            eVar = c10;
+    private static p[] f(mk.b bVar, int i10, int i11, int i12, int i13, int i14, int[] iArr) {
+        int i15;
+        boolean z10;
+        int[] e10;
+        p[] pVarArr = new p[4];
+        int[] iArr2 = iArr;
+        int[] iArr3 = new int[iArr2.length];
+        int i16 = i12;
+        while (true) {
+            if (i16 < i10) {
+                int[] e11 = e(bVar, i13, i16, i11, iArr2, iArr3);
+                if (e11 != null) {
+                    int[] iArr4 = e11;
+                    while (true) {
+                        i15 = i16;
+                        if (i15 <= 0 || (e10 = e(bVar, i13, i15 - 1, i11, iArr, iArr3)) == null) {
+                            break;
+                        }
+                        iArr4 = e10;
+                    }
+                    float f10 = i15;
+                    pVarArr[0] = new p(iArr4[0], f10);
+                    pVarArr[1] = new p(iArr4[1], f10);
+                    z10 = true;
+                } else {
+                    i16 += 5;
+                    iArr2 = iArr;
+                }
+            } else {
+                i15 = i16;
+                z10 = false;
+                break;
+            }
         }
-        if (eVar.f() instanceof i) {
-            ((i) eVar.f()).a(b10);
+        int i17 = i15 + 1;
+        if (z10) {
+            int[] iArr5 = {(int) pVarArr[0].c(), (int) pVarArr[1].c()};
+            int i18 = i17;
+            int i19 = 0;
+            while (i18 < i10) {
+                int[] e12 = e(bVar, iArr5[0], i18, i11, iArr, iArr3);
+                if (e12 != null && Math.abs(iArr5[0] - e12[0]) < 5 && Math.abs(iArr5[1] - e12[1]) < 5) {
+                    iArr5 = e12;
+                    i19 = 0;
+                } else if (i19 > 25) {
+                    break;
+                } else {
+                    i19++;
+                }
+                i18++;
+            }
+            i17 = i18 - (i19 + 1);
+            float f11 = i17;
+            pVarArr[2] = new p(iArr5[0], f11);
+            pVarArr[3] = new p(iArr5[1], f11);
         }
-        Result result = new Result(eVar.k(), eVar.g(), b10, hk.a.QR_CODE);
-        List a10 = eVar.a();
-        if (a10 != null) {
-            result.h(o.BYTE_SEGMENTS, a10);
+        if (i17 - i15 < i14) {
+            Arrays.fill(pVarArr, (Object) null);
         }
-        String b11 = eVar.b();
-        if (b11 != null) {
-            result.h(o.ERROR_CORRECTION_LEVEL, b11);
-        }
-        if (eVar.l()) {
-            result.h(o.STRUCTURED_APPEND_SEQUENCE, Integer.valueOf(eVar.i()));
-            result.h(o.STRUCTURED_APPEND_PARITY, Integer.valueOf(eVar.h()));
-        }
-        result.h(o.ERRORS_CORRECTED, eVar.d());
-        o oVar = o.SYMBOLOGY_IDENTIFIER;
-        result.h(oVar, "]Q" + eVar.j());
-        return result;
+        return pVarArr;
     }
 
-    @Override // hk.m
-    public void reset() {
+    private static p[] g(mk.b bVar, int i10, int i11) {
+        int i12 = bVar.i();
+        int l10 = bVar.l();
+        p[] pVarArr = new p[8];
+        int i13 = 10;
+        int i14 = i10;
+        int i15 = i11;
+        b(pVarArr, f(bVar, i12, l10, i14, i15, 10, f7093c), f7091a);
+        p pVar = pVarArr[4];
+        if (pVar != null) {
+            int c10 = (int) pVar.c();
+            int d10 = (int) pVarArr[4].d();
+            p pVar2 = pVarArr[5];
+            if (pVar2 != null) {
+                i13 = (int) Math.max((((int) pVar2.d()) - d10) * 0.5f, 10.0f);
+            }
+            i14 = d10;
+            i15 = c10;
+        }
+        b(pVarArr, f(bVar, i12, l10, i14, i15, i13, f7094d), f7092b);
+        return pVarArr;
+    }
+
+    private static float h(int[] iArr, int[] iArr2) {
+        float f10;
+        int length = iArr.length;
+        int i10 = 0;
+        int i11 = 0;
+        for (int i12 = 0; i12 < length; i12++) {
+            i10 += iArr[i12];
+            i11 += iArr2[i12];
+        }
+        if (i10 < i11) {
+            return Float.POSITIVE_INFINITY;
+        }
+        float f11 = i10;
+        float f12 = f11 / i11;
+        float f13 = 0.8f * f12;
+        float f14 = 0.0f;
+        for (int i13 = 0; i13 < length; i13++) {
+            float f15 = iArr2[i13] * f12;
+            float f16 = iArr[i13];
+            if (f16 > f15) {
+                f10 = f16 - f15;
+            } else {
+                f10 = f15 - f16;
+            }
+            if (f10 > f13) {
+                return Float.POSITIVE_INFINITY;
+            }
+            f14 += f10;
+        }
+        return f14 / f11;
     }
 }

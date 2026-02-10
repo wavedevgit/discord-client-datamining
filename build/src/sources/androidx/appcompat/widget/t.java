@@ -8,7 +8,7 @@ import android.widget.SeekBar;
 public class t extends SeekBar {
 
     /* renamed from: d  reason: collision with root package name */
-    private final u f2245d;
+    private final u f1942d;
 
     public t(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, f.a.H);
@@ -17,26 +17,26 @@ public class t extends SeekBar {
     @Override // android.widget.AbsSeekBar, android.widget.ProgressBar, android.view.View
     protected void drawableStateChanged() {
         super.drawableStateChanged();
-        this.f2245d.h();
+        this.f1942d.h();
     }
 
     @Override // android.widget.AbsSeekBar, android.widget.ProgressBar, android.view.View
     public void jumpDrawablesToCurrentState() {
         super.jumpDrawablesToCurrentState();
-        this.f2245d.i();
+        this.f1942d.i();
     }
 
     @Override // android.widget.AbsSeekBar, android.widget.ProgressBar, android.view.View
     protected synchronized void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        this.f2245d.g(canvas);
+        this.f1942d.g(canvas);
     }
 
     public t(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         r0.a(this, getContext());
         u uVar = new u(this);
-        this.f2245d = uVar;
+        this.f1942d = uVar;
         uVar.c(attributeSet, i10);
     }
 }

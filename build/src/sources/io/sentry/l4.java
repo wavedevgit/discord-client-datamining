@@ -3,13 +3,13 @@ package io.sentry;
 public final class l4 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final l4 f28325a = new l4();
+    private static final l4 f28525a = new l4();
 
     private l4() {
     }
 
     public static l4 g() {
-        return f28325a;
+        return f28525a;
     }
 
     @Override // io.sentry.w0
@@ -78,8 +78,8 @@ public final class l4 implements w0 {
     }
 
     @Override // io.sentry.w0
-    public io.sentry.transport.a0 i() {
-        return b5.v().i();
+    public void i(Throwable th2, ISpan iSpan, String str) {
+        b5.v().i(th2, iSpan, str);
     }
 
     @Override // io.sentry.w0
@@ -88,23 +88,23 @@ public final class l4 implements w0 {
     }
 
     @Override // io.sentry.w0
-    public void j(Throwable th2, ISpan iSpan, String str) {
-        b5.v().j(th2, iSpan, str);
+    public io.sentry.transport.a0 j() {
+        return b5.v().j();
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x k(l5 l5Var, Hint hint) {
-        return b5.v().k(l5Var, hint);
+    public e1 k() {
+        return b5.v().k();
     }
 
     @Override // io.sentry.w0
-    public e1 l() {
-        return b5.v().l();
-    }
-
-    @Override // io.sentry.w0
-    public void m() {
+    public void l() {
         b5.r();
+    }
+
+    @Override // io.sentry.w0
+    public io.sentry.protocol.x m(l5 l5Var, Hint hint) {
+        return b5.v().m(l5Var, hint);
     }
 
     @Override // io.sentry.w0
@@ -113,7 +113,7 @@ public final class l4 implements w0 {
     }
 
     @Override // io.sentry.w0
-    public void q() {
+    public void p() {
         b5.Q();
     }
 

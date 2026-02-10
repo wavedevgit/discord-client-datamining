@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_calls/native/audio_output_selector/showAudioOutputSelector.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun67109: for (var _fun67109_ip = 0;;) switch (_fun67109_ip) {
+        _fun66946: for (var _fun66946_ip = 0;;) switch (_fun66946_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -45,22 +45,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isAndroid;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun67109_ip = 68;
-                    continue _fun67109
+                    _fun66946_ip = 68;
+                    continue _fun66946
                 }
             case 38:
                 var2 = _closure1_slot3;
                 var3 = var2.AudioRoutePicker;
                 var2 = null;
                 if (!(var2 != var3)) {
-                    _fun67109_ip = 156;
-                    continue _fun67109
+                    _fun66946_ip = 156;
+                    continue _fun66946
                 }
             case 54:
                 var2 = var3.showAudioPicker;
                 var2 = var2.bind(var3)();
-                _fun67109_ip = 156;
-                continue _fun67109;
+                _fun66946_ip = 156;
+                continue _fun66946;
             case 68:
                 var4 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -89,4 +89,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showAudioOutputSelector = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 8299, 478, 3279, 8300, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 8274, 478, 3279, 8275, 1307, 2]);

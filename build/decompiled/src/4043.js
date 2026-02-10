@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.controlEdgeToEdgeValues = var3;
     var1 = function() {
-        _fun37420: for (var _fun37420_ip = 0;;) switch (_fun37420_ip) {
+        _fun37413: for (var _fun37413_ip = 0;;) switch (_fun37413_ip) {
             case 0:
                 var0 = _closure1_slot0;
                 var3 = var0.TurboModuleRegistry;
@@ -27,8 +27,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = null;
                 var0 = var1 != var0;
                 if (var0) {
-                    _fun37420_ip = 108;
-                    continue _fun37420
+                    _fun37413_ip = 108;
+                    continue _fun37413
                 }
             case 38:
                 var2 = _closure1_slot0;
@@ -39,8 +39,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var1 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun37420_ip = 77;
-                    continue _fun37420
+                    _fun37413_ip = 77;
+                    continue _fun37413
                 }
             case 71:
                 var3 = var4.getConstants;
@@ -48,8 +48,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1 == var3;
                 var2 = undefined;
                 if (var1) {
-                    _fun37420_ip = 102;
-                    continue _fun37420
+                    _fun37413_ip = 102;
+                    continue _fun37413
                 }
             case 86:
                 var1 = var3.call;

@@ -3,14 +3,14 @@ package com.facebook.imagepipeline.producers;
 import com.facebook.imagepipeline.common.Priority;
 import com.facebook.imagepipeline.request.ImageRequest;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface ProducerContext extends y9.a {
+public interface ProducerContext extends z9.a {
     Priority C();
 
-    ImageRequest.RequestLevel E0();
+    ImageRequest.RequestLevel C0();
 
     ImageRequest I();
 
-    boolean P();
+    boolean Q();
 
     Object a();
 
@@ -18,7 +18,7 @@ public interface ProducerContext extends y9.a {
 
     String getId();
 
-    na.r k();
+    oa.r k();
 
     void m(String str, String str2);
 

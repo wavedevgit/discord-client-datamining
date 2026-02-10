@@ -6,7 +6,7 @@ import android.graphics.PorterDuffXfermode;
 import android.os.Build;
 import android.os.LocaleList;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import x5.i;
+import y5.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class a extends Paint {
     public a() {

@@ -116,12 +116,12 @@ public class UIViewOperationQueue {
             this.mThemedContext = themedReactContext;
             this.mClassName = str;
             this.mInitialProps = reactStylesDiffMap;
-            qb.a.l(0L, "createView", this.mTag);
+            rb.a.l(0L, "createView", this.mTag);
         }
 
         @Override // com.facebook.react.uimanager.UIViewOperationQueue.UIOperation
         public void execute() {
-            qb.a.f(0L, "createView", this.mTag);
+            rb.a.f(0L, "createView", this.mTag);
             UIViewOperationQueue.this.mNativeViewHierarchyManager.createView(this.mThemedContext, this.mTag, this.mClassName, this.mInitialProps);
         }
     }
@@ -244,17 +244,17 @@ public class UIViewOperationQueue {
         @Override // com.facebook.react.uimanager.GuardedFrameCallback
         public void doFrameGuarded(long j10) {
             if (UIViewOperationQueue.this.mIsInIllegalUIState) {
-                p8.a.J(ReactConstants.TAG, "Not flushing pending UI operations because of previously thrown Exception");
+                q8.a.J(ReactConstants.TAG, "Not flushing pending UI operations because of previously thrown Exception");
                 return;
             }
-            qb.a.c(0L, "dispatchNonBatchedUIOperations");
+            rb.a.c(0L, "dispatchNonBatchedUIOperations");
             try {
                 dispatchPendingNonBatchedOperations(j10);
-                qb.a.i(0L);
+                rb.a.i(0L);
                 UIViewOperationQueue.this.flushPendingBatches();
                 ReactChoreographer.getInstance().postFrameCallback(ReactChoreographer.CallbackType.DISPATCH_UI, this);
             } catch (Throwable th2) {
-                qb.a.i(0L);
+                rb.a.i(0L);
                 throw th2;
             }
         }
@@ -490,12 +490,12 @@ public class UIViewOperationQueue {
             this.mWidth = i14;
             this.mHeight = i15;
             this.mLayoutDirection = yogaDirection;
-            qb.a.l(0L, "updateLayout", this.mTag);
+            rb.a.l(0L, "updateLayout", this.mTag);
         }
 
         @Override // com.facebook.react.uimanager.UIViewOperationQueue.UIOperation
         public void execute() {
-            qb.a.f(0L, "updateLayout", this.mTag);
+            rb.a.f(0L, "updateLayout", this.mTag);
             UIViewOperationQueue.this.mNativeViewHierarchyManager.updateLayout(this.mParentTag, this.mTag, this.mX, this.mY, this.mWidth, this.mHeight, this.mLayoutDirection);
         }
     }
@@ -554,7 +554,7 @@ public class UIViewOperationQueue {
     /* JADX INFO: Access modifiers changed from: private */
     public void flushPendingBatches() {
         if (this.mIsInIllegalUIState) {
-            p8.a.J(ReactConstants.TAG, "Not flushing pending UI operations because of previously thrown Exception");
+            q8.a.J(ReactConstants.TAG, "Not flushing pending UI operations because of previously thrown Exception");
             return;
         }
         synchronized (this.mDispatchRunnablesLock) {
@@ -570,8 +570,8 @@ public class UIViewOperationQueue {
                     this.mProfiledBatchBatchedExecutionTime = SystemClock.uptimeMillis() - uptimeMillis;
                     this.mProfiledBatchNonBatchedExecutionTime = this.mNonBatchedExecutionTotalTime;
                     this.mIsProfilingNextBatch = false;
-                    qb.a.b(0L, "batchedExecutionTime", 0, uptimeMillis * 1000000);
-                    qb.a.g(0L, "batchedExecutionTime", 0);
+                    rb.a.b(0L, "batchedExecutionTime", 0, uptimeMillis * 1000000);
+                    rb.a.g(0L, "batchedExecutionTime", 0);
                 }
                 this.mNonBatchedExecutionTotalTime = 0L;
             }
@@ -585,7 +585,7 @@ public class UIViewOperationQueue {
     public void dispatchViewUpdates(final int i10, final long j10, final long j11) {
         ArrayList<DispatchCommandViewOperation> arrayList;
         final ArrayList<UIOperation> arrayList2;
-        qb.b.a(0L, "UIViewOperationQueue.dispatchViewUpdates").a("batchId", i10).c();
+        rb.b.a(0L, "UIViewOperationQueue.dispatchViewUpdates").a("batchId", i10).c();
         try {
             final long uptimeMillis = SystemClock.uptimeMillis();
             final long currentThreadTimeMillis = SystemClock.currentThreadTimeMillis();
@@ -618,7 +618,7 @@ public class UIViewOperationQueue {
             Runnable runnable = new Runnable() { // from class: com.facebook.react.uimanager.UIViewOperationQueue.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    qb.b.a(0L, "DispatchUI").a("BatchId", i10).c();
+                    rb.b.a(0L, "DispatchUI").a("BatchId", i10).c();
                     try {
                         try {
                             long uptimeMillis2 = SystemClock.uptimeMillis();
@@ -664,29 +664,29 @@ public class UIViewOperationQueue {
                                 UIViewOperationQueue uIViewOperationQueue = UIViewOperationQueue.this;
                                 uIViewOperationQueue.mProfiledBatchRunEndTime = uIViewOperationQueue.mProfiledBatchCommitEndTime;
                                 UIViewOperationQueue.this.mThreadCpuTime = currentThreadTimeMillis;
-                                qb.a.b(0L, "delayBeforeDispatchViewUpdates", 0, UIViewOperationQueue.this.mProfiledBatchCommitStartTime * 1000000);
-                                qb.a.h(0L, "delayBeforeDispatchViewUpdates", 0, UIViewOperationQueue.this.mProfiledBatchDispatchViewUpdatesTime * 1000000);
-                                qb.a.b(0L, "delayBeforeBatchRunStart", 0, UIViewOperationQueue.this.mProfiledBatchDispatchViewUpdatesTime * 1000000);
-                                qb.a.h(0L, "delayBeforeBatchRunStart", 0, UIViewOperationQueue.this.mProfiledBatchRunStartTime * 1000000);
+                                rb.a.b(0L, "delayBeforeDispatchViewUpdates", 0, UIViewOperationQueue.this.mProfiledBatchCommitStartTime * 1000000);
+                                rb.a.h(0L, "delayBeforeDispatchViewUpdates", 0, UIViewOperationQueue.this.mProfiledBatchDispatchViewUpdatesTime * 1000000);
+                                rb.a.b(0L, "delayBeforeBatchRunStart", 0, UIViewOperationQueue.this.mProfiledBatchDispatchViewUpdatesTime * 1000000);
+                                rb.a.h(0L, "delayBeforeBatchRunStart", 0, UIViewOperationQueue.this.mProfiledBatchRunStartTime * 1000000);
                             }
                             UIViewOperationQueue.this.mNativeViewHierarchyManager.clearLayoutAnimation();
                             if (UIViewOperationQueue.this.mViewHierarchyUpdateDebugListener != null) {
                                 UIViewOperationQueue.this.mViewHierarchyUpdateDebugListener.onViewHierarchyUpdateFinished();
                             }
-                            qb.a.i(0L);
+                            rb.a.i(0L);
                         } catch (Exception e11) {
                             UIViewOperationQueue.this.mIsInIllegalUIState = true;
                             throw e11;
                         }
                     } catch (Throwable th3) {
-                        qb.a.i(0L);
+                        rb.a.i(0L);
                         throw th3;
                     }
                 }
             };
-            qb.b.a(0L, "acquiring mDispatchRunnablesLock").a("batchId", i10).c();
+            rb.b.a(0L, "acquiring mDispatchRunnablesLock").a("batchId", i10).c();
             synchronized (this.mDispatchRunnablesLock) {
-                qb.a.i(0L);
+                rb.a.i(0L);
                 this.mDispatchUIRunnables.add(runnable);
             }
             if (!this.mIsDispatchUIFrameCallbackEnqueued) {
@@ -697,9 +697,9 @@ public class UIViewOperationQueue {
                     }
                 });
             }
-            qb.a.i(0L);
+            rb.a.i(0L);
         } catch (Throwable th2) {
-            qb.a.i(0L);
+            rb.a.i(0L);
             throw th2;
         }
     }

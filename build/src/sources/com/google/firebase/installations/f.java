@@ -1,14 +1,14 @@
 package com.google.firebase.installations;
 
-import yg.k;
+import zg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 class f implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    final k f16355a;
+    final k f16495a;
 
     public f(k kVar) {
-        this.f16355a = kVar;
+        this.f16495a = kVar;
     }
 
     @Override // com.google.firebase.installations.h
@@ -17,11 +17,11 @@ class f implements h {
     }
 
     @Override // com.google.firebase.installations.h
-    public boolean b(hj.d dVar) {
+    public boolean b(ij.d dVar) {
         if (!dVar.l() && !dVar.k() && !dVar.i()) {
             return false;
         }
-        this.f16355a.e(dVar.d());
+        this.f16495a.e(dVar.d());
         return true;
     }
 }

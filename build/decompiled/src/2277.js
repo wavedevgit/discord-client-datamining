@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__packager_asset': true,
         'httpServerLocation': '/assets/modules/premium/game_server',
         'scales': null,
-        'hash': '83bfadc8a89675101800ea0c2b5fc7fc',
+        'hash': 'e0208577b7418c826ffafa1683bc99b6',
         'name': 'GameServer.compiled.messages',
         'type': 'jsona'
     };

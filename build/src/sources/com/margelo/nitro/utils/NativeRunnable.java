@@ -2,7 +2,7 @@ package com.margelo.nitro.utils;
 
 import androidx.annotation.Keep;
 import com.facebook.jni.HybridData;
-import fb.a;
+import gb.a;
 import kotlin.Metadata;
 import org.jetbrains.annotations.NotNull;
 @Keep

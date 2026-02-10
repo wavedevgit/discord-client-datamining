@@ -1,5 +1,66 @@
 package s5;
+
+import java.util.Arrays;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public interface c {
-    n5.c a(com.airbnb.lottie.n nVar, l5.i iVar, t5.b bVar);
+public class c extends p {
+    public c(List list) {
+        super(d(list));
+    }
+
+    private static z5.a c(z5.a aVar) {
+        t5.d dVar = (t5.d) aVar.f56053b;
+        t5.d dVar2 = (t5.d) aVar.f56054c;
+        if (dVar != null && dVar2 != null && dVar.e().length != dVar2.e().length) {
+            float[] e10 = e(dVar.e(), dVar2.e());
+            return aVar.b(dVar.b(e10), dVar2.b(e10));
+        }
+        return aVar;
+    }
+
+    private static List d(List list) {
+        for (int i10 = 0; i10 < list.size(); i10++) {
+            list.set(i10, c((z5.a) list.get(i10)));
+        }
+        return list;
+    }
+
+    static float[] e(float[] fArr, float[] fArr2) {
+        int length = fArr.length + fArr2.length;
+        float[] fArr3 = new float[length];
+        System.arraycopy(fArr, 0, fArr3, 0, fArr.length);
+        System.arraycopy(fArr2, 0, fArr3, fArr.length, fArr2.length);
+        Arrays.sort(fArr3);
+        float f10 = Float.NaN;
+        int i10 = 0;
+        for (int i11 = 0; i11 < length; i11++) {
+            float f11 = fArr3[i11];
+            if (f11 != f10) {
+                fArr3[i10] = f11;
+                i10++;
+                f10 = fArr3[i11];
+            }
+        }
+        return Arrays.copyOfRange(fArr3, 0, i10);
+    }
+
+    @Override // s5.o
+    public o5.a a() {
+        return new o5.e(this.f49540a);
+    }
+
+    @Override // s5.p, s5.o
+    public /* bridge */ /* synthetic */ List b() {
+        return super.b();
+    }
+
+    @Override // s5.p, s5.o
+    public /* bridge */ /* synthetic */ boolean isStatic() {
+        return super.isStatic();
+    }
+
+    @Override // s5.p
+    public /* bridge */ /* synthetic */ String toString() {
+        return super.toString();
+    }
 }

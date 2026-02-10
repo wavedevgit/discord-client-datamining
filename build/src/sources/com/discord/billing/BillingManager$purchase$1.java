@@ -64,7 +64,7 @@ public final class BillingManager$purchase$1 extends kotlin.coroutines.jvm.inter
                 return;
             }
             booleanRef.element = true;
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
             Intrinsics.checkNotNull(billingResult);
             isNotOk = billingManager.isNotOk(billingResult);
             if (isNotOk) {
@@ -108,7 +108,7 @@ public final class BillingManager$purchase$1 extends kotlin.coroutines.jvm.inter
         Object suspendUntilReady$default;
         BillingManager.ClientReadyState clientReadyState;
         BillingClient billingClient;
-        Object f10 = wr.b.f();
+        Object f10 = xr.b.f();
         int i10 = this.label;
         try {
             if (i10 != 0) {
@@ -137,7 +137,7 @@ public final class BillingManager$purchase$1 extends kotlin.coroutines.jvm.inter
         }
         if (clientReadyState == BillingManager.ClientReadyState.TIMEOUT) {
             this.$onError.invoke(new BillingManagerException.BillingClientNotReadyException());
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
         final Ref.BooleanRef booleanRef = new Ref.BooleanRef();
         billingClient = this.this$0.billingClient;
@@ -155,17 +155,17 @@ public final class BillingManager$purchase$1 extends kotlin.coroutines.jvm.inter
         final String str5 = this.$offerId;
         final Activity activity = this.$activity;
         final Function0<Unit> function0 = this.$onSuccess;
-        billingClient.i(create, new a6.h() { // from class: com.discord.billing.h
-            @Override // a6.h
+        billingClient.i(create, new b6.h() { // from class: com.discord.billing.h
+            @Override // b6.h
             public final void a(BillingResult billingResult, List list) {
                 BillingManager$purchase$1.invokeSuspend$lambda$1(BillingManager.this, function1, str, str2, str3, str4, str5, activity, function0, booleanRef, billingResult, list);
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$purchase$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
+        return ((BillingManager$purchase$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
     }
 }

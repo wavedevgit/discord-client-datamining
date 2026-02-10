@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var0 = function() {
-        _fun77938: for (var _fun77938_ip = 0;;) switch (_fun77938_ip) {
+        _fun77803: for (var _fun77803_ip = 0;;) switch (_fun77803_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun77938_ip = 76;
-                continue _fun77938;
+                _fun77803_ip = 76;
+                continue _fun77803;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
         var3 = function() {
-            _fun77942: for (var _fun77942_ip = 0;;) switch (_fun77942_ip) {
+            _fun77807: for (var _fun77807_ip = 0;;) switch (_fun77807_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -117,16 +117,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot12;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun77942_ip = 69;
-                        continue _fun77942
+                        _fun77807_ip = 69;
+                        continue _fun77807
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun77942_ip = 105;
-                    continue _fun77942;
+                    _fun77807_ip = 105;
+                    continue _fun77807;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -152,14 +152,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.key = var0;
         var0 = function() {
             var1 = function() {
-                _fun77944: for (var _fun77944_ip = 0;;) switch (_fun77944_ip) {
+                _fun77809: for (var _fun77809_ip = 0;;) switch (_fun77809_ip) {
                     case 0:
                         var2 = _closure1_slot9;
                         var1 = _closure1_slot8;
                         var1 = var1.NotResolved;
                         if (!(var2 === var1)) {
-                            _fun77944_ip = 86;
-                            continue _fun77944
+                            _fun77809_ip = 86;
+                            continue _fun77809
                         }
                     case 21:
                         var1 = _closure1_slot8;
@@ -214,15 +214,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = function arg0() {
             var1 = arg0;
             var2 = function arg0() {
-                _fun77947: for (var _fun77947_ip = 0;;) switch (_fun77947_ip) {
+                _fun77812: for (var _fun77812_ip = 0;;) switch (_fun77812_ip) {
                     case 0:
                         var7 = arg0;
                         var _closure4_slot0 = var7;
                         var1 = _closure1_slot11;
                         var1 = var7 in var1;
                         if (var1) {
-                            _fun77947_ip = 238;
-                            continue _fun77947
+                            _fun77812_ip = 238;
+                            continue _fun77812
                         }
                     case 26:
                         var3 = _closure1_slot0;
@@ -235,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var1.bind(var3)(var7);
                         var3 = null;
                         if (!(var3 == var1)) {
-                            _fun77947_ip = 112;
-                            continue _fun77947
+                            _fun77812_ip = 112;
+                            continue _fun77812
                         }
                     case 65:
                         var3 = {};
@@ -250,8 +250,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6.state = var8;
                         var3[var7] = var6;
                         _closure1_slot11 = var3;
-                        _fun77947_ip = 238;
-                        continue _fun77947;
+                        _fun77812_ip = 238;
+                        continue _fun77812;
                     case 112:
                         var3 = {};
                         var10 = _closure1_slot11;
@@ -331,21 +331,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = var7.bind(var0)(var3);
     var3 = {};
     var9 = function arg0() {
-        _fun77950: for (var _fun77950_ip = 0;;) switch (_fun77950_ip) {
+        _fun77815: for (var _fun77815_ip = 0;;) switch (_fun77815_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.url;
                 var5 = var0.override;
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun77950_ip = 35;
-                    continue _fun77950
+                    _fun77815_ip = 35;
+                    continue _fun77815
                 }
             case 20:
                 var0 = _closure1_slot8;
                 var6 = var0.Resolved;
-                _fun77950_ip = 48;
-                continue _fun77950;
+                _fun77815_ip = 48;
+                continue _fun77815;
             case 35:
                 var0 = _closure1_slot8;
                 var6 = var0.Invalid;

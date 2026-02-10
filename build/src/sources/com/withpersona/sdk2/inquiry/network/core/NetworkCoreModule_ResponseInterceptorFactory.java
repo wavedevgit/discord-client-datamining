@@ -1,9 +1,9 @@
 package com.withpersona.sdk2.inquiry.network.core;
 
-import br.g;
+import cr.g;
 import okhttp3.Interceptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_ResponseInterceptorFactory implements br.d {
+public final class NetworkCoreModule_ResponseInterceptorFactory implements cr.d {
     private final NetworkCoreModule module;
 
     public NetworkCoreModule_ResponseInterceptorFactory(NetworkCoreModule networkCoreModule) {

@@ -10,59 +10,72 @@ import okio.BufferedSink;
 public abstract class t implements Closeable, Flushable {
 
     /* renamed from: p  reason: collision with root package name */
-    String f17967p;
+    String f18107p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f17968q;
+    boolean f18108q;
 
     /* renamed from: r  reason: collision with root package name */
-    boolean f17969r;
+    boolean f18109r;
 
     /* renamed from: s  reason: collision with root package name */
-    boolean f17970s;
+    boolean f18110s;
 
     /* renamed from: d  reason: collision with root package name */
-    int f17963d = 0;
+    int f18103d = 0;
 
     /* renamed from: e  reason: collision with root package name */
-    int[] f17964e = new int[32];
+    int[] f18104e = new int[32];
 
     /* renamed from: i  reason: collision with root package name */
-    String[] f17965i = new String[32];
+    String[] f18105i = new String[32];
 
     /* renamed from: o  reason: collision with root package name */
-    int[] f17966o = new int[32];
+    int[] f18106o = new int[32];
 
     /* renamed from: t  reason: collision with root package name */
-    int f17971t = -1;
+    int f18111t = -1;
 
-    public static t Y(BufferedSink bufferedSink) {
+    public static t Z(BufferedSink bufferedSink) {
         return new p(bufferedSink);
     }
 
     public final void A(boolean z10) {
-        this.f17968q = z10;
+        this.f18108q = z10;
     }
 
     public final boolean C() {
-        return this.f17968q;
+        return this.f18108q;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final int E0() {
-        int i10 = this.f17963d;
+    public final int C0() {
+        int i10 = this.f18103d;
         if (i10 != 0) {
-            return this.f17964e[i10 - 1];
+            return this.f18104e[i10 - 1];
         }
         throw new IllegalStateException("JsonWriter is closed.");
     }
 
-    public final void F0() {
-        int E0 = E0();
-        if (E0 != 5 && E0 != 3) {
+    public final void D0() {
+        int C0 = C0();
+        if (C0 != 5 && C0 != 3) {
             throw new IllegalStateException("Nesting problem.");
         }
-        this.f17970s = true;
+        this.f18110s = true;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final void G0(int i10) {
+        int[] iArr = this.f18104e;
+        int i11 = this.f18103d;
+        this.f18103d = i11 + 1;
+        iArr[i11] = i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final void H0(int i10) {
+        this.f18104e[this.f18103d - 1] = i10;
     }
 
     public final t I(Object obj) {
@@ -92,73 +105,60 @@ public abstract class t implements Closeable, Flushable {
             n();
             return this;
         } else if (obj instanceof String) {
-            w1((String) obj);
+            r1((String) obj);
             return this;
         } else if (obj instanceof Boolean) {
-            x1(((Boolean) obj).booleanValue());
+            s1(((Boolean) obj).booleanValue());
             return this;
         } else if (obj instanceof Double) {
-            O0(((Double) obj).doubleValue());
+            R0(((Double) obj).doubleValue());
             return this;
         } else if (obj instanceof Long) {
             V0(((Long) obj).longValue());
             return this;
         } else if (obj instanceof Number) {
-            d1((Number) obj);
+            a1((Number) obj);
             return this;
         } else if (obj == null) {
-            P();
+            Q();
             return this;
         } else {
             throw new IllegalArgumentException("Unsupported type: " + obj.getClass().getName());
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final void I0(int i10) {
-        int[] iArr = this.f17964e;
-        int i11 = this.f17963d;
-        this.f17963d = i11 + 1;
-        iArr[i11] = i10;
-    }
-
     public abstract t J(String str);
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final void J0(int i10) {
-        this.f17964e[this.f17963d - 1] = i10;
-    }
-
-    public void K0(String str) {
+    public void J0(String str) {
         if (str.isEmpty()) {
             str = null;
         }
-        this.f17967p = str;
+        this.f18107p = str;
     }
 
-    public final void L0(boolean z10) {
-        this.f17969r = z10;
+    public final void O0(boolean z10) {
+        this.f18109r = z10;
     }
 
-    public abstract t O0(double d10);
+    public abstract t Q();
 
-    public abstract t P();
+    public abstract t R0(double d10);
 
     public abstract t V0(long j10);
 
-    public abstract t Y0(Boolean bool);
+    public abstract t W0(Boolean bool);
 
     public abstract t a();
 
-    public abstract t d1(Number number);
+    public abstract t a1(Number number);
 
     public final int g() {
-        int E0 = E0();
-        if (E0 != 5 && E0 != 3 && E0 != 2 && E0 != 1) {
+        int C0 = C0();
+        if (C0 != 5 && C0 != 3 && C0 != 2 && C0 != 1) {
             throw new IllegalStateException("Nesting problem.");
         }
-        int i10 = this.f17971t;
-        this.f17971t = this.f17963d;
+        int i10 = this.f18111t;
+        this.f18111t = this.f18103d;
         return i10;
     }
 
@@ -166,21 +166,21 @@ public abstract class t implements Closeable, Flushable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean m() {
-        int i10 = this.f17963d;
-        int[] iArr = this.f17964e;
+        int i10 = this.f18103d;
+        int[] iArr = this.f18104e;
         if (i10 != iArr.length) {
             return false;
         }
         if (i10 != 256) {
-            this.f17964e = Arrays.copyOf(iArr, iArr.length * 2);
-            String[] strArr = this.f17965i;
-            this.f17965i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
-            int[] iArr2 = this.f17966o;
-            this.f17966o = Arrays.copyOf(iArr2, iArr2.length * 2);
+            this.f18104e = Arrays.copyOf(iArr, iArr.length * 2);
+            String[] strArr = this.f18105i;
+            this.f18105i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+            int[] iArr2 = this.f18106o;
+            this.f18106o = Arrays.copyOf(iArr2, iArr2.length * 2);
             if (this instanceof s) {
                 s sVar = (s) this;
-                Object[] objArr = sVar.f17961u;
-                sVar.f17961u = Arrays.copyOf(objArr, objArr.length * 2);
+                Object[] objArr = sVar.f18101u;
+                sVar.f18101u = Arrays.copyOf(objArr, objArr.length * 2);
                 return true;
             }
             return true;
@@ -191,21 +191,21 @@ public abstract class t implements Closeable, Flushable {
     public abstract t n();
 
     public final void p(int i10) {
-        this.f17971t = i10;
+        this.f18111t = i10;
     }
+
+    public abstract t r1(String str);
 
     public abstract t s();
 
+    public abstract t s1(boolean z10);
+
     public final String t() {
-        return n.a(this.f17963d, this.f17964e, this.f17965i, this.f17966o);
+        return n.a(this.f18103d, this.f18104e, this.f18105i, this.f18106o);
     }
 
-    public abstract t w1(String str);
-
-    public abstract t x1(boolean z10);
-
     public final String y() {
-        String str = this.f17967p;
+        String str = this.f18107p;
         if (str != null) {
             return str;
         }
@@ -213,6 +213,6 @@ public abstract class t implements Closeable, Flushable {
     }
 
     public final boolean z() {
-        return this.f17969r;
+        return this.f18109r;
     }
 }

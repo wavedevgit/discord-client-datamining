@@ -1,7 +1,6 @@
 package com.facebook.react.modules.fresco;
 
 import android.content.Context;
-import bu.i;
 import com.facebook.imagepipeline.backends.okhttp3.a;
 import com.facebook.imagepipeline.core.DownsampleMode;
 import com.facebook.imagepipeline.core.ImagePipeline;
@@ -16,8 +15,9 @@ import com.facebook.react.modules.network.CookieJarContainer;
 import com.facebook.react.modules.network.ForwardingCookieHandler;
 import com.facebook.react.modules.network.OkHttpClientProvider;
 import com.facebook.react.turbomodule.core.interfaces.TurboModule;
-import e9.b;
-import e9.d;
+import cu.i;
+import f9.b;
+import f9.d;
 import java.util.HashSet;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -61,7 +61,7 @@ public class FrescoModule extends ReactContextBaseJavaModule implements ModuleDa
             ((CookieJarContainer) c10).setCookieJar(new i(new ForwardingCookieHandler()));
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            ImagePipelineConfig.Builder Y = a.a(applicationContext, createClient).W(new ReactOkHttpNetworkFetcher(createClient)).U(DownsampleMode.f10363e).Y(hashSet);
+            ImagePipelineConfig.Builder Y = a.a(applicationContext, createClient).W(new ReactOkHttpNetworkFetcher(createClient)).U(DownsampleMode.f10503e).Y(hashSet);
             Y.b().e(true);
             return Y;
         }
@@ -125,7 +125,7 @@ public class FrescoModule extends ReactContextBaseJavaModule implements ModuleDa
             d.d(reactApplicationContext.getApplicationContext(), imagePipelineConfig, e10.e());
             hasBeenInitialized = true;
         } else if (this.config != null) {
-            p8.a.J(ReactConstants.TAG, "Fresco has already been initialized with a different config. The new Fresco configuration will be ignored!");
+            q8.a.J(ReactConstants.TAG, "Fresco has already been initialized with a different config. The new Fresco configuration will be ignored!");
         }
         this.config = null;
     }

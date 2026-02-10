@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
@@ -20,8 +20,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
-    var9 = 1;
-    var3 = var5[var9];
+    var3 = 1;
+    var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.View;
     var _closure1_slot2 = var3;
@@ -35,10 +35,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = {};
-    var8 = {};
-    var10 = 'row';
-    var8.flexDirection = var10;
-    var3.container = var8;
     var8 = {
         'width': 32,
         'height': 32,
@@ -47,26 +43,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'alignItems': 'center',
         'justifyContent': 'center'
     };
-    var10 = 4;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.BACKGROUND_MOD_SUBTLE;
-    var8.backgroundColor = var12;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.round;
-    var8.borderRadius = var12;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.spacing;
-    var10 = var10.PX_4;
-    var8.marginRight = var10;
+    var9 = 4;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.colors;
+    var11 = var11.BACKGROUND_MOD_SUBTLE;
+    var8.backgroundColor = var11;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.round;
+    var8.borderRadius = var11;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.spacing;
+    var9 = var9.PX_4;
+    var8.marginRight = var9;
     var3.indexContainer = var8;
-    var8 = {};
-    var8.flex = var9;
-    var3.tipContainer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot4 = var3;
     var3 = 7;

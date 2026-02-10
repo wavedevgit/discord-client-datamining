@@ -51,21 +51,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var12.colors;
     var12 = var12.BACKGROUND_SURFACE_HIGH;
     var8.backgroundColor = var12;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.lg;
-    var8.borderRadius = var12;
-    var12 = 'hidden';
-    var8.overflow = var12;
-    var3.tips = var8;
-    var8 = {};
     var10 = var5[var10];
     var10 = var11.bind(var0)(var10);
-    var10 = var10.spacing;
-    var10 = var10.PX_16;
-    var8.marginBottom = var10;
-    var3.tipRow = var8;
+    var10 = var10.radii;
+    var10 = var10.lg;
+    var8.borderRadius = var10;
+    var10 = 'hidden';
+    var8.overflow = var10;
+    var3.tips = var8;
     var8 = {};
     var8.textAlign = var9;
     var3.text = var8;
@@ -78,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/shared/native/SafetyTipsSection.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73110: for (var _fun73110_ip = 0;;) switch (_fun73110_ip) {
+        _fun72975: for (var _fun72975_ip = 0;;) switch (_fun72975_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.description;
@@ -123,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var20 = 8;
                 if (!var7) {
-                    _fun73110_ip = 283;
-                    continue _fun73110
+                    _fun72975_ip = 283;
+                    continue _fun72975
                 }
             case 177:
                 var14 = _closure1_slot4;
@@ -213,4 +206,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4080, 6013, 3942, 1234, 6498, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4080, 6014, 3942, 1234, 6499, 2]);

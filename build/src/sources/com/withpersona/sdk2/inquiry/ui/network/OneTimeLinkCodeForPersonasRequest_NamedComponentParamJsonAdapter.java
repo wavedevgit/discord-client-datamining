@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
-import an.c;
+import bn.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -15,25 +15,25 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeForPersonasRequest_NamedComponentParamJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19819a;
+    private final m.b f19959a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19820b;
+    private final h f19960b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f19821c;
+    private final h f19961c;
 
     public OneTimeLinkCodeForPersonasRequest_NamedComponentParamJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.NAME_KEY, "value");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19819a = a10;
+        this.f19959a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.NAME_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19820b = f10;
+        this.f19960b = f10;
         h f11 = moshi.f(ComponentParam.class, x0.d(), "value");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19821c = f11;
+        this.f19961c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -44,21 +44,21 @@ public final class OneTimeLinkCodeForPersonasRequest_NamedComponentParamJsonAdap
         String str = null;
         ComponentParam componentParam = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19819a);
+            int J = reader.J(this.f19959a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (componentParam = (ComponentParam) this.f19821c.fromJson(reader)) == null) {
+                    if (J == 1 && (componentParam = (ComponentParam) this.f19961c.fromJson(reader)) == null) {
                         throw c.x("value__", "value", reader);
                     }
                 } else {
-                    str = (String) this.f19820b.fromJson(reader);
+                    str = (String) this.f19960b.fromJson(reader);
                     if (str == null) {
                         throw c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -78,9 +78,9 @@ public final class OneTimeLinkCodeForPersonasRequest_NamedComponentParamJsonAdap
         if (namedComponentParam != null) {
             writer.k();
             writer.J(StackTraceHelper.NAME_KEY);
-            this.f19820b.toJson(writer, namedComponentParam.a());
+            this.f19960b.toJson(writer, namedComponentParam.a());
             writer.J("value");
-            this.f19821c.toJson(writer, namedComponentParam.b());
+            this.f19961c.toJson(writer, namedComponentParam.b());
             writer.s();
             return;
         }

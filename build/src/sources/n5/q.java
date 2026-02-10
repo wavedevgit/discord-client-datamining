@@ -8,27 +8,27 @@ import o5.a;
 public class q implements s, a.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.airbnb.lottie.n f38654a;
+    private final com.airbnb.lottie.n f37951a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f38655b;
+    private final String f37952b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final o5.a f38656c;
+    private final o5.a f37953c;
 
     /* renamed from: d  reason: collision with root package name */
-    private s5.o f38657d;
+    private t5.o f37954d;
 
-    public q(com.airbnb.lottie.n nVar, t5.b bVar, s5.n nVar2) {
-        this.f38654a = nVar;
-        this.f38655b = nVar2.c();
+    public q(com.airbnb.lottie.n nVar, u5.b bVar, t5.n nVar2) {
+        this.f37951a = nVar;
+        this.f37952b = nVar2.c();
         o5.a a10 = nVar2.b().a();
-        this.f38656c = a10;
+        this.f37953c = a10;
         bVar.i(a10);
         a10.a(this);
     }
 
-    private static int c(int i10, int i11) {
+    private static int d(int i10, int i11) {
         int i12 = i10 / i11;
         if ((i10 ^ i11) < 0 && i11 * i12 != i10) {
             return i12 - 1;
@@ -36,11 +36,11 @@ public class q implements s, a.b {
         return i12;
     }
 
-    private static int d(int i10, int i11) {
-        return i10 - (c(i10, i11) * i11);
+    private static int e(int i10, int i11) {
+        return i10 - (d(i10, i11) * i11);
     }
 
-    private s5.o i(s5.o oVar) {
+    private t5.o i(t5.o oVar) {
         PointF c10;
         PointF b10;
         boolean z10;
@@ -48,8 +48,8 @@ public class q implements s, a.b {
         boolean d10 = oVar.d();
         int i10 = 0;
         for (int size = a10.size() - 1; size >= 0; size--) {
-            q5.a aVar = (q5.a) a10.get(size);
-            q5.a aVar2 = (q5.a) a10.get(d(size - 1, a10.size()));
+            r5.a aVar = (r5.a) a10.get(size);
+            r5.a aVar2 = (r5.a) a10.get(e(size - 1, a10.size()));
             if (size == 0 && !d10) {
                 c10 = oVar.b();
             } else {
@@ -72,25 +72,21 @@ public class q implements s, a.b {
                 i10++;
             }
         }
-        s5.o oVar2 = this.f38657d;
+        t5.o oVar2 = this.f37954d;
         if (oVar2 == null || oVar2.a().size() != i10) {
             ArrayList arrayList = new ArrayList(i10);
             for (int i11 = 0; i11 < i10; i11++) {
-                arrayList.add(new q5.a());
+                arrayList.add(new r5.a());
             }
-            this.f38657d = new s5.o(new PointF(0.0f, 0.0f), false, arrayList);
+            this.f37954d = new t5.o(new PointF(0.0f, 0.0f), false, arrayList);
         }
-        this.f38657d.e(d10);
-        return this.f38657d;
+        this.f37954d.e(d10);
+        return this.f37954d;
     }
 
     @Override // o5.a.b
     public void a() {
-        this.f38654a.invalidateSelf();
-    }
-
-    public o5.a f() {
-        return this.f38656c;
+        this.f37951a.invalidateSelf();
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:25:0x009e, code lost:
@@ -101,12 +97,16 @@ public class q implements s, a.b {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public s5.o h(s5.o r19) {
+    public t5.o c(t5.o r19) {
         /*
             Method dump skipped, instructions count: 408
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: n5.q.h(s5.o):s5.o");
+        throw new UnsupportedOperationException("Method not decompiled: n5.q.c(t5.o):t5.o");
+    }
+
+    public o5.a g() {
+        return this.f37953c;
     }
 
     @Override // n5.c

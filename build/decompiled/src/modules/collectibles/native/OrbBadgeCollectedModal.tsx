@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot11 = var0;
     var0 = function arg0() {
-        _fun88352: for (var _fun88352_ip = 0;;) switch (_fun88352_ip) {
+        _fun88353: for (var _fun88353_ip = 0;;) switch (_fun88353_ip) {
             case 0:
                 var1 = arg0;
                 var6 = var1.modalKey;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var5;
                 var7 = _closure1_slot6;
                 if (var4) {
-                    _fun88352_ip = 281;
-                    continue _fun88352
+                    _fun88353_ip = 281;
+                    continue _fun88353
                 }
             case 175:
                 var5 = _closure1_slot0;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var19.background;
                 var4.style = var6;
                 var5 = var7.bind(var3)(var5, var4);
-                _fun88352_ip = 341;
-                continue _fun88352;
+                _fun88353_ip = 341;
+                continue _fun88353;
             case 281:
                 var10 = _closure1_slot1;
                 var11 = _closure1_slot2;
@@ -334,10 +334,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
     var _closure1_slot3 = var3;
-    var11 = 1;
-    var3 = var5[var11];
+    var9 = 1;
+    var3 = var5[var9];
     var3 = var4.bind(var0)(var3);
-    var9 = var3.StyleSheet;
+    var11 = var3.StyleSheet;
     var3 = var3.View;
     var _closure1_slot4 = var3;
     var3 = 2;
@@ -357,30 +357,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.createStyles;
     var3 = {};
     var8 = {};
-    var8.flex = var11;
+    var8.flex = var9;
     var3.root = var8;
     var8 = {};
-    var15 = var9.absoluteFillObject;
+    var15 = var11.absoluteFillObject;
     var16 = var8;
-    var9 = copyDataProperties(var16, var15);
+    var11 = copyDataProperties(var16, var15);
     var3.background = var8;
-    var9 = 'row';
     var12 = 'center';
-    var8 = {
-        'flexDirection': 'row',
-        'alignItems': 'center',
-        'justifyContent': 'space-between'
-    };
-    var3.header = var8;
-    var8 = {};
-    var8.flexDirection = var9;
-    var9 = 5;
-    var13 = var5[var9];
-    var13 = var10.bind(var0)(var13);
-    var13 = var13.spacing;
-    var13 = var13.PX_8;
-    var8.padding = var13;
-    var3.orbsBalance = var8;
     var8 = {
         'width': 172,
         'height': 172,
@@ -388,7 +372,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.orbBadge = var8;
     var8 = {};
-    var8.flex = var11;
+    var8.flex = var9;
     var3.main = var8;
     var8 = {
         'paddingTop': '50%',
@@ -396,6 +380,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'flex': 1,
         'justifyContent': 'space-between'
     };
+    var9 = 5;
     var11 = var5[var9];
     var11 = var10.bind(var0)(var11);
     var11 = var11.spacing;
@@ -574,4 +559,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 671, 4705, 4561, 4875, 10131, 9624, 566, 4704, 10127, 8924, 10128, 4736, 11323, 3942, 1234, 4084, 5637, 11324, 5837, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 671, 4705, 4561, 4875, 10109, 9602, 566, 4704, 10105, 8902, 10106, 4736, 11318, 3942, 1234, 4084, 5638, 11319, 5838, 2]);

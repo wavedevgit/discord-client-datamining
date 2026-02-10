@@ -13,25 +13,25 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18826a;
+    private final m.b f18966a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18827b;
+    private final com.squareup.moshi.h f18967b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f18828c;
+    private final com.squareup.moshi.h f18968c;
 
     public FallbackModeService_UploadUrlRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("expected-content-length", "expected-content-type");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18826a = a10;
+        this.f18966a = a10;
         com.squareup.moshi.h f10 = moshi.f(Long.TYPE, x0.d(), "expectedContentLength");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18827b = f10;
+        this.f18967b = f10;
         com.squareup.moshi.h f11 = moshi.f(String.class, x0.d(), "expectedContentType");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18828c = f11;
+        this.f18968c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -42,21 +42,21 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
         Long l10 = null;
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18826a);
+            int J = reader.J(this.f18966a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str = (String) this.f18828c.fromJson(reader)) == null) {
-                        throw an.c.x("expectedContentType", "expected-content-type", reader);
+                    if (J == 1 && (str = (String) this.f18968c.fromJson(reader)) == null) {
+                        throw bn.c.x("expectedContentType", "expected-content-type", reader);
                     }
                 } else {
-                    l10 = (Long) this.f18827b.fromJson(reader);
+                    l10 = (Long) this.f18967b.fromJson(reader);
                     if (l10 == null) {
-                        throw an.c.x("expectedContentLength", "expected-content-length", reader);
+                        throw bn.c.x("expectedContentLength", "expected-content-length", reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -65,9 +65,9 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
             if (str != null) {
                 return new FallbackModeService.UploadUrlRequest(longValue, str);
             }
-            throw an.c.o("expectedContentType", "expected-content-type", reader);
+            throw bn.c.o("expectedContentType", "expected-content-type", reader);
         }
-        throw an.c.o("expectedContentLength", "expected-content-length", reader);
+        throw bn.c.o("expectedContentLength", "expected-content-length", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -77,9 +77,9 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
         if (uploadUrlRequest != null) {
             writer.k();
             writer.J("expected-content-length");
-            this.f18827b.toJson(writer, Long.valueOf(uploadUrlRequest.a()));
+            this.f18967b.toJson(writer, Long.valueOf(uploadUrlRequest.a()));
             writer.J("expected-content-type");
-            this.f18828c.toJson(writer, uploadUrlRequest.b());
+            this.f18968c.toJson(writer, uploadUrlRequest.b());
             writer.s();
             return;
         }

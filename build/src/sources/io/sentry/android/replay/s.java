@@ -9,25 +9,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class s {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f27769g = new a(null);
+    public static final a f27969g = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f27770a;
+    private final int f27970a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f27771b;
+    private final int f27971b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f27772c;
+    private final float f27972c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f27773d;
+    private final float f27973d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f27774e;
+    private final int f27974e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f27775f;
+    private final int f27975f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -48,7 +48,7 @@ public final class s {
             Intrinsics.checkNotNullParameter(sessionReplay, "sessionReplay");
             float f10 = i11;
             float f11 = i10;
-            Pair a10 = qr.v.a(Integer.valueOf(a(fs.a.c((f10 / context.getResources().getDisplayMetrics().density) * sessionReplay.m().sizeScale))), Integer.valueOf(a(fs.a.c((f11 / context.getResources().getDisplayMetrics().density) * sessionReplay.m().sizeScale))));
+            Pair a10 = rr.v.a(Integer.valueOf(a(gs.a.c((f10 / context.getResources().getDisplayMetrics().density) * sessionReplay.m().sizeScale))), Integer.valueOf(a(gs.a.c((f11 / context.getResources().getDisplayMetrics().density) * sessionReplay.m().sizeScale))));
             int intValue = ((Number) a10.a()).intValue();
             int intValue2 = ((Number) a10.b()).intValue();
             return new s(intValue2, intValue, intValue2 / f11, intValue / f10, sessionReplay.d(), sessionReplay.m().bitRate);
@@ -59,32 +59,32 @@ public final class s {
     }
 
     public s(int i10, int i11, float f10, float f11, int i12, int i13) {
-        this.f27770a = i10;
-        this.f27771b = i11;
-        this.f27772c = f10;
-        this.f27773d = f11;
-        this.f27774e = i12;
-        this.f27775f = i13;
+        this.f27970a = i10;
+        this.f27971b = i11;
+        this.f27972c = f10;
+        this.f27973d = f11;
+        this.f27974e = i12;
+        this.f27975f = i13;
     }
 
     public final int a() {
-        return this.f27775f;
+        return this.f27975f;
     }
 
     public final int b() {
-        return this.f27774e;
+        return this.f27974e;
     }
 
     public final int c() {
-        return this.f27771b;
+        return this.f27971b;
     }
 
     public final int d() {
-        return this.f27770a;
+        return this.f27970a;
     }
 
     public final float e() {
-        return this.f27772c;
+        return this.f27972c;
     }
 
     public boolean equals(Object obj) {
@@ -93,20 +93,20 @@ public final class s {
         }
         if (obj instanceof s) {
             s sVar = (s) obj;
-            return this.f27770a == sVar.f27770a && this.f27771b == sVar.f27771b && Float.compare(this.f27772c, sVar.f27772c) == 0 && Float.compare(this.f27773d, sVar.f27773d) == 0 && this.f27774e == sVar.f27774e && this.f27775f == sVar.f27775f;
+            return this.f27970a == sVar.f27970a && this.f27971b == sVar.f27971b && Float.compare(this.f27972c, sVar.f27972c) == 0 && Float.compare(this.f27973d, sVar.f27973d) == 0 && this.f27974e == sVar.f27974e && this.f27975f == sVar.f27975f;
         }
         return false;
     }
 
     public final float f() {
-        return this.f27773d;
+        return this.f27973d;
     }
 
     public int hashCode() {
-        return (((((((((Integer.hashCode(this.f27770a) * 31) + Integer.hashCode(this.f27771b)) * 31) + Float.hashCode(this.f27772c)) * 31) + Float.hashCode(this.f27773d)) * 31) + Integer.hashCode(this.f27774e)) * 31) + Integer.hashCode(this.f27775f);
+        return (((((((((Integer.hashCode(this.f27970a) * 31) + Integer.hashCode(this.f27971b)) * 31) + Float.hashCode(this.f27972c)) * 31) + Float.hashCode(this.f27973d)) * 31) + Integer.hashCode(this.f27974e)) * 31) + Integer.hashCode(this.f27975f);
     }
 
     public String toString() {
-        return "ScreenshotRecorderConfig(recordingWidth=" + this.f27770a + ", recordingHeight=" + this.f27771b + ", scaleFactorX=" + this.f27772c + ", scaleFactorY=" + this.f27773d + ", frameRate=" + this.f27774e + ", bitRate=" + this.f27775f + ')';
+        return "ScreenshotRecorderConfig(recordingWidth=" + this.f27970a + ", recordingHeight=" + this.f27971b + ", scaleFactorX=" + this.f27972c + ", scaleFactorY=" + this.f27973d + ", frameRate=" + this.f27974e + ", bitRate=" + this.f27975f + ')';
     }
 }

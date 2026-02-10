@@ -16,7 +16,7 @@ public abstract class NativeSafeAreaContextSpec extends ReactContextBaseJavaModu
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule
-    @fb.a
+    @gb.a
     public final Map<String, Object> getConstants() {
         Map<String, Object> typedExportedConstants = getTypedExportedConstants();
         if (ReactBuildConfig.DEBUG || ReactBuildConfig.IS_INTERNAL_BUILD) {

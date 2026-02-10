@@ -17,43 +17,43 @@ import java.util.List;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    protected static final Class f3525a;
+    protected static final Class f3222a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected static final Field f3526b;
+    protected static final Field f3223b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected static final Field f3527c;
+    protected static final Field f3224c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected static final Method f3528d;
+    protected static final Method f3225d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected static final Method f3529e;
+    protected static final Method f3226e;
 
     /* renamed from: f  reason: collision with root package name */
-    protected static final Method f3530f;
+    protected static final Method f3227f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Handler f3531g = new Handler(Looper.getMainLooper());
+    private static final Handler f3228g = new Handler(Looper.getMainLooper());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ d f3532d;
+        final /* synthetic */ d f3229d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Object f3533e;
+        final /* synthetic */ Object f3230e;
 
         a(d dVar, Object obj) {
-            this.f3532d = dVar;
-            this.f3533e = obj;
+            this.f3229d = dVar;
+            this.f3230e = obj;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f3532d.f3538d = this.f3533e;
+            this.f3229d.f3235d = this.f3230e;
         }
     }
 
@@ -61,19 +61,19 @@ public abstract class e {
     class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Application f3534d;
+        final /* synthetic */ Application f3231d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ d f3535e;
+        final /* synthetic */ d f3232e;
 
         b(Application application, d dVar) {
-            this.f3534d = application;
-            this.f3535e = dVar;
+            this.f3231d = application;
+            this.f3232e = dVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f3534d.unregisterActivityLifecycleCallbacks(this.f3535e);
+            this.f3231d.unregisterActivityLifecycleCallbacks(this.f3232e);
         }
     }
 
@@ -82,24 +82,24 @@ public abstract class e {
     public class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f3536d;
+        final /* synthetic */ Object f3233d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Object f3537e;
+        final /* synthetic */ Object f3234e;
 
         c(Object obj, Object obj2) {
-            this.f3536d = obj;
-            this.f3537e = obj2;
+            this.f3233d = obj;
+            this.f3234e = obj2;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                Method method = e.f3528d;
+                Method method = e.f3225d;
                 if (method != null) {
-                    method.invoke(this.f3536d, this.f3537e, Boolean.FALSE, "AppCompat recreation");
+                    method.invoke(this.f3233d, this.f3234e, Boolean.FALSE, "AppCompat recreation");
                 } else {
-                    e.f3529e.invoke(this.f3536d, this.f3537e, Boolean.FALSE);
+                    e.f3226e.invoke(this.f3233d, this.f3234e, Boolean.FALSE);
                 }
             } catch (RuntimeException e10) {
                 if (e10.getClass() == RuntimeException.class && e10.getMessage() != null && e10.getMessage().startsWith("Unable to stop")) {
@@ -115,26 +115,26 @@ public abstract class e {
     private static final class d implements Application.ActivityLifecycleCallbacks {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f3538d;
+        Object f3235d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Activity f3539e;
+        private Activity f3236e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f3540i;
+        private final int f3237i;
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f3541o = false;
+        private boolean f3238o = false;
 
         /* renamed from: p  reason: collision with root package name */
-        private boolean f3542p = false;
+        private boolean f3239p = false;
 
         /* renamed from: q  reason: collision with root package name */
-        private boolean f3543q = false;
+        private boolean f3240q = false;
 
         d(Activity activity) {
-            this.f3539e = activity;
-            this.f3540i = activity.hashCode();
+            this.f3236e = activity;
+            this.f3237i = activity.hashCode();
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
@@ -143,17 +143,17 @@ public abstract class e {
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityDestroyed(Activity activity) {
-            if (this.f3539e == activity) {
-                this.f3539e = null;
-                this.f3542p = true;
+            if (this.f3236e == activity) {
+                this.f3236e = null;
+                this.f3239p = true;
             }
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPaused(Activity activity) {
-            if (this.f3542p && !this.f3543q && !this.f3541o && e.h(this.f3538d, this.f3540i, activity)) {
-                this.f3543q = true;
-                this.f3538d = null;
+            if (this.f3239p && !this.f3240q && !this.f3238o && e.h(this.f3235d, this.f3237i, activity)) {
+                this.f3240q = true;
+                this.f3235d = null;
             }
         }
 
@@ -167,8 +167,8 @@ public abstract class e {
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityStarted(Activity activity) {
-            if (this.f3539e == activity) {
-                this.f3541o = true;
+            if (this.f3236e == activity) {
+                this.f3238o = true;
             }
         }
 
@@ -179,12 +179,12 @@ public abstract class e {
 
     static {
         Class a10 = a();
-        f3525a = a10;
-        f3526b = b();
-        f3527c = f();
-        f3528d = d(a10);
-        f3529e = c(a10);
-        f3530f = e(a10);
+        f3222a = a10;
+        f3223b = b();
+        f3224c = f();
+        f3225d = d(a10);
+        f3226e = c(a10);
+        f3227f = e(a10);
     }
 
     private static Class a() {
@@ -265,9 +265,9 @@ public abstract class e {
 
     protected static boolean h(Object obj, int i10, Activity activity) {
         try {
-            Object obj2 = f3527c.get(activity);
+            Object obj2 = f3224c.get(activity);
             if (obj2 == obj && activity.hashCode() == i10) {
-                f3531g.postAtFrontOfQueue(new c(f3526b.get(activity), obj2));
+                f3228g.postAtFrontOfQueue(new c(f3223b.get(activity), obj2));
                 return true;
             }
             return false;
@@ -283,24 +283,24 @@ public abstract class e {
         if (Build.VERSION.SDK_INT >= 28) {
             activity.recreate();
             return true;
-        } else if (g() && f3530f == null) {
+        } else if (g() && f3227f == null) {
             return false;
         } else {
-            if (f3529e == null && f3528d == null) {
+            if (f3226e == null && f3225d == null) {
                 return false;
             }
             try {
-                Object obj2 = f3527c.get(activity);
-                if (obj2 == null || (obj = f3526b.get(activity)) == null) {
+                Object obj2 = f3224c.get(activity);
+                if (obj2 == null || (obj = f3223b.get(activity)) == null) {
                     return false;
                 }
                 Application application = activity.getApplication();
                 d dVar = new d(activity);
                 application.registerActivityLifecycleCallbacks(dVar);
-                Handler handler = f3531g;
+                Handler handler = f3228g;
                 handler.post(new a(dVar, obj2));
                 if (g()) {
-                    Method method = f3530f;
+                    Method method = f3227f;
                     Boolean bool = Boolean.FALSE;
                     method.invoke(obj, obj2, null, null, 0, bool, null, null, bool, bool);
                 } else {

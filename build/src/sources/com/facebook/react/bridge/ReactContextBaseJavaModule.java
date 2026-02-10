@@ -10,7 +10,7 @@ public abstract class ReactContextBaseJavaModule extends BaseJavaModule {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @qr.c
+    @rr.c
     public final Activity getCurrentActivity() {
         return getReactApplicationContext().getCurrentActivity();
     }

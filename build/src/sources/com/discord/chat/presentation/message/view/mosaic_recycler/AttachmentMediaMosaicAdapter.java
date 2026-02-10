@@ -78,13 +78,13 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$2(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, ImageAttachmentMessageAccessory imageAttachmentMessageAccessory) {
         attachmentMediaMosaicAdapter.onItemSpoilerClicked.invoke(imageAttachmentMessageAccessory);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$3(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, boolean z10) {
         attachmentMediaMosaicAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -105,13 +105,13 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$6(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, VideoAttachmentMessageAccessory videoAttachmentMessageAccessory) {
         attachmentMediaMosaicAdapter.onItemSpoilerClicked.invoke(videoAttachmentMessageAccessory);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$7(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, boolean z10) {
         attachmentMediaMosaicAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
@@ -148,7 +148,7 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
     @SuppressLint({"NotifyDataSetChanged"})
     public final void setMediaItems(@NotNull List<? extends MessageAttachmentAccessory> items, boolean z10) {
         Intrinsics.checkNotNullParameter(items, "items");
-        e.C0066e c10 = e.c(new ItemDiffer(this.items, items), false);
+        e.C0068e c10 = e.c(new ItemDiffer(this.items, items), false);
         Intrinsics.checkNotNullExpressionValue(c10, "calculateDiff(...)");
         this.items.clear();
         this.items.addAll(items);
@@ -171,26 +171,26 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
             MessageAttachmentAccessory messageAttachmentAccessory = this.items.get(i10);
             Intrinsics.checkNotNull(messageAttachmentAccessory, "null cannot be cast to non-null type com.discord.chat.presentation.message.messagepart.ImageAttachmentMessageAccessory");
             final ImageAttachmentMessageAccessory imageAttachmentMessageAccessory = (ImageAttachmentMessageAccessory) messageAttachmentAccessory;
-            ((MosaicItemMessageAttachmentImageViewHolder) holder).bindAttachment(chatEventHandler, imageAttachmentMessageAccessory, getItemCount() == 1, new View.OnClickListener() { // from class: c7.a
+            ((MosaicItemMessageAttachmentImageViewHolder) holder).bindAttachment(chatEventHandler, imageAttachmentMessageAccessory, getItemCount() == 1, new View.OnClickListener() { // from class: d7.a
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     AttachmentMediaMosaicAdapter.onBindViewHolder$lambda$0(AttachmentMediaMosaicAdapter.this, imageAttachmentMessageAccessory, holder, view);
                 }
-            }, new View.OnLongClickListener() { // from class: c7.b
+            }, new View.OnLongClickListener() { // from class: d7.b
                 @Override // android.view.View.OnLongClickListener
                 public final boolean onLongClick(View view) {
                     boolean onBindViewHolder$lambda$1;
                     onBindViewHolder$lambda$1 = AttachmentMediaMosaicAdapter.onBindViewHolder$lambda$1(AttachmentMediaMosaicAdapter.this, imageAttachmentMessageAccessory, view);
                     return onBindViewHolder$lambda$1;
                 }
-            }, new Function0() { // from class: c7.c
+            }, new Function0() { // from class: d7.c
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit onBindViewHolder$lambda$2;
                     onBindViewHolder$lambda$2 = AttachmentMediaMosaicAdapter.onBindViewHolder$lambda$2(AttachmentMediaMosaicAdapter.this, imageAttachmentMessageAccessory);
                     return onBindViewHolder$lambda$2;
                 }
-            }, new Function1() { // from class: c7.d
+            }, new Function1() { // from class: d7.d
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit onBindViewHolder$lambda$3;
@@ -202,26 +202,26 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
             MessageAttachmentAccessory messageAttachmentAccessory2 = this.items.get(i10);
             Intrinsics.checkNotNull(messageAttachmentAccessory2, "null cannot be cast to non-null type com.discord.chat.presentation.message.messagepart.VideoAttachmentMessageAccessory");
             final VideoAttachmentMessageAccessory videoAttachmentMessageAccessory = (VideoAttachmentMessageAccessory) messageAttachmentAccessory2;
-            ((MosaicItemMessageAttachmentVideoViewHolder) holder).bindAttachment(chatEventHandler, videoAttachmentMessageAccessory, getItemCount() == 1, new View.OnClickListener() { // from class: c7.e
+            ((MosaicItemMessageAttachmentVideoViewHolder) holder).bindAttachment(chatEventHandler, videoAttachmentMessageAccessory, getItemCount() == 1, new View.OnClickListener() { // from class: d7.e
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     AttachmentMediaMosaicAdapter.onBindViewHolder$lambda$4(AttachmentMediaMosaicAdapter.this, videoAttachmentMessageAccessory, holder, view);
                 }
-            }, new View.OnLongClickListener() { // from class: c7.f
+            }, new View.OnLongClickListener() { // from class: d7.f
                 @Override // android.view.View.OnLongClickListener
                 public final boolean onLongClick(View view) {
                     boolean onBindViewHolder$lambda$5;
                     onBindViewHolder$lambda$5 = AttachmentMediaMosaicAdapter.onBindViewHolder$lambda$5(AttachmentMediaMosaicAdapter.this, videoAttachmentMessageAccessory, view);
                     return onBindViewHolder$lambda$5;
                 }
-            }, new Function0() { // from class: c7.g
+            }, new Function0() { // from class: d7.g
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit onBindViewHolder$lambda$6;
                     onBindViewHolder$lambda$6 = AttachmentMediaMosaicAdapter.onBindViewHolder$lambda$6(AttachmentMediaMosaicAdapter.this, videoAttachmentMessageAccessory);
                     return onBindViewHolder$lambda$6;
                 }
-            }, new Function1() { // from class: c7.h
+            }, new Function1() { // from class: d7.h
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit onBindViewHolder$lambda$7;

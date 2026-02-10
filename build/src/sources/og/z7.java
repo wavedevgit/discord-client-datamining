@@ -1,78 +1,101 @@
 package og;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class z7 {
+final class z7 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Long f42795a;
+    static final z7 f41711a = new z7();
 
     /* renamed from: b  reason: collision with root package name */
-    private final x7 f42796b;
+    private static final zi.c f41712b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r7 f42797c;
+    private static final zi.c f41713c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f42798d;
+    private static final zi.c f41714d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Integer f42799e;
+    private static final zi.c f41715e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Integer f42800f;
+    private static final zi.c f41716f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Integer f42801g;
+    private static final zi.c f41717g;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ z7(w7 w7Var, y7 y7Var) {
-        Long l10;
-        x7 x7Var;
-        r7 r7Var;
-        Integer num;
-        Integer num2;
-        Integer num3;
-        Integer num4;
-        l10 = w7Var.f42686a;
-        this.f42795a = l10;
-        x7Var = w7Var.f42687b;
-        this.f42796b = x7Var;
-        r7Var = w7Var.f42688c;
-        this.f42797c = r7Var;
-        num = w7Var.f42689d;
-        this.f42798d = num;
-        num2 = w7Var.f42690e;
-        this.f42799e = num2;
-        num3 = w7Var.f42691f;
-        this.f42800f = num3;
-        num4 = w7Var.f42692g;
-        this.f42801g = num4;
+    /* renamed from: h  reason: collision with root package name */
+    private static final zi.c f41718h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private static final zi.c f41719i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private static final zi.c f41720j;
+
+    /* renamed from: k  reason: collision with root package name */
+    private static final zi.c f41721k;
+
+    static {
+        c.b a10 = zi.c.a("durationMs");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        f41712b = a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("errorCode");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        f41713c = a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("isColdCall");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        f41714d = a12.b(l2Var3.b()).a();
+        c.b a13 = zi.c.a("autoManageModelOnBackground");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        f41715e = a13.b(l2Var4.b()).a();
+        c.b a14 = zi.c.a("autoManageModelOnLowMemory");
+        l2 l2Var5 = new l2();
+        l2Var5.a(5);
+        f41716f = a14.b(l2Var5.b()).a();
+        c.b a15 = zi.c.a("isNnApiEnabled");
+        l2 l2Var6 = new l2();
+        l2Var6.a(6);
+        f41717g = a15.b(l2Var6.b()).a();
+        c.b a16 = zi.c.a("eventsCount");
+        l2 l2Var7 = new l2();
+        l2Var7.a(7);
+        f41718h = a16.b(l2Var7.b()).a();
+        c.b a17 = zi.c.a("otherErrors");
+        l2 l2Var8 = new l2();
+        l2Var8.a(8);
+        f41719i = a17.b(l2Var8.b()).a();
+        c.b a18 = zi.c.a("remoteConfigValueForAcceleration");
+        l2 l2Var9 = new l2();
+        l2Var9.a(9);
+        f41720j = a18.b(l2Var9.b()).a();
+        c.b a19 = zi.c.a("isAccelerated");
+        l2 l2Var10 = new l2();
+        l2Var10.a(10);
+        f41721k = a19.b(l2Var10.b()).a();
     }
 
-    public final r7 a() {
-        return this.f42797c;
+    private z7() {
     }
 
-    public final x7 b() {
-        return this.f42796b;
-    }
-
-    public final Integer c() {
-        return this.f42798d;
-    }
-
-    public final Integer d() {
-        return this.f42800f;
-    }
-
-    public final Integer e() {
-        return this.f42799e;
-    }
-
-    public final Integer f() {
-        return this.f42801g;
-    }
-
-    public final Long g() {
-        return this.f42795a;
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        le leVar = (le) obj;
+        zi.e eVar = (zi.e) obj2;
+        eVar.d(f41712b, leVar.e());
+        eVar.d(f41713c, leVar.a());
+        eVar.d(f41714d, leVar.d());
+        eVar.d(f41715e, leVar.b());
+        eVar.d(f41716f, leVar.c());
+        eVar.d(f41717g, null);
+        eVar.d(f41718h, null);
+        eVar.d(f41719i, null);
+        eVar.d(f41720j, null);
+        eVar.d(f41721k, null);
     }
 }

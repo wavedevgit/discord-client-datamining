@@ -2,7 +2,7 @@ package com.discord.react_gesture_handler.passthrough_touch.events;
 
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import ft.m;
+import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;

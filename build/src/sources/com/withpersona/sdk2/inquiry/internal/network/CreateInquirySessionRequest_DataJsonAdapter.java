@@ -14,22 +14,22 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionRequest_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19146a;
+    private final m.b f19286a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19147b;
+    private final com.squareup.moshi.h f19287b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile Constructor f19148c;
+    private volatile Constructor f19288c;
 
     public CreateInquirySessionRequest_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19146a = a10;
+        this.f19286a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19147b = f10;
+        this.f19287b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -40,21 +40,21 @@ public final class CreateInquirySessionRequest_DataJsonAdapter extends com.squar
         String str = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19146a);
+            int J = reader.J(this.f19286a);
             if (J != -1) {
                 if (J == 0) {
-                    str = (String) this.f19147b.fromJson(reader);
+                    str = (String) this.f19287b.fromJson(reader);
                     if (str != null) {
                         i10 = -2;
                     } else {
-                        throw an.c.x("type", "type", reader);
+                        throw bn.c.x("type", "type", reader);
                     }
                 } else {
                     continue;
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -62,10 +62,10 @@ public final class CreateInquirySessionRequest_DataJsonAdapter extends com.squar
             Intrinsics.checkNotNull(str, "null cannot be cast to non-null type kotlin.String");
             return new CreateInquirySessionRequest.Data(str);
         }
-        Constructor constructor = this.f19148c;
+        Constructor constructor = this.f19288c;
         if (constructor == null) {
-            constructor = CreateInquirySessionRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, an.c.f1164c);
-            this.f19148c = constructor;
+            constructor = CreateInquirySessionRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, bn.c.f7152c);
+            this.f19288c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         Object newInstance = constructor.newInstance(str, Integer.valueOf(i10), null);
@@ -80,7 +80,7 @@ public final class CreateInquirySessionRequest_DataJsonAdapter extends com.squar
         if (data != null) {
             writer.k();
             writer.J("type");
-            this.f19147b.toJson(writer, data.a());
+            this.f19287b.toJson(writer, data.a());
             writer.s();
             return;
         }

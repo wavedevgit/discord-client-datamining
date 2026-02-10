@@ -35,10 +35,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.TimeoutException;
-import ne.x;
-import pe.l;
-import qd.o0;
-import qd.r;
+import oe.x;
+import qe.l;
+import rd.o0;
+import rd.r;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class i0 extends com.google.android.exoplayer2.e implements Player {
@@ -53,8 +53,8 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     private int I;
     private boolean J;
     private int K;
-    private lc.t0 L;
-    private qd.o0 M;
+    private mc.t0 L;
+    private rd.o0 M;
     private boolean N;
     private Player.Commands O;
     private MediaMetadata P;
@@ -65,168 +65,168 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     private Object U;
     private Surface V;
     private SurfaceHolder W;
-    private pe.l X;
+    private qe.l X;
     private boolean Y;
     private TextureView Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    private int f12508a0;
+    private int f12648a0;
 
     /* renamed from: b  reason: collision with root package name */
-    final je.r f12509b;
+    final ke.r f12649b;
 
     /* renamed from: b0  reason: collision with root package name */
-    private int f12510b0;
+    private int f12650b0;
 
     /* renamed from: c  reason: collision with root package name */
-    final Player.Commands f12511c;
+    final Player.Commands f12651c;
 
     /* renamed from: c0  reason: collision with root package name */
-    private ne.l0 f12512c0;
+    private oe.l0 f12652c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ne.h f12513d;
+    private final oe.h f12653d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private DecoderCounters f12514d0;
+    private DecoderCounters f12654d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Context f12515e;
+    private final Context f12655e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private DecoderCounters f12516e0;
+    private DecoderCounters f12656e0;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Player f12517f;
+    private final Player f12657f;
 
     /* renamed from: f0  reason: collision with root package name */
-    private int f12518f0;
+    private int f12658f0;
 
     /* renamed from: g  reason: collision with root package name */
-    private final v1[] f12519g;
+    private final v1[] f12659g;
 
     /* renamed from: g0  reason: collision with root package name */
-    private AudioAttributes f12520g0;
+    private AudioAttributes f12660g0;
 
     /* renamed from: h  reason: collision with root package name */
-    private final je.q f12521h;
+    private final ke.q f12661h;
 
     /* renamed from: h0  reason: collision with root package name */
-    private float f12522h0;
+    private float f12662h0;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ne.u f12523i;
+    private final oe.u f12663i;
 
     /* renamed from: i0  reason: collision with root package name */
-    private boolean f12524i0;
+    private boolean f12664i0;
 
     /* renamed from: j  reason: collision with root package name */
-    private final t0.f f12525j;
+    private final t0.f f12665j;
 
     /* renamed from: j0  reason: collision with root package name */
-    private CueGroup f12526j0;
+    private CueGroup f12666j0;
 
     /* renamed from: k  reason: collision with root package name */
-    private final t0 f12527k;
+    private final t0 f12667k;
 
     /* renamed from: k0  reason: collision with root package name */
-    private boolean f12528k0;
+    private boolean f12668k0;
 
     /* renamed from: l  reason: collision with root package name */
-    private final ne.x f12529l;
+    private final oe.x f12669l;
 
     /* renamed from: l0  reason: collision with root package name */
-    private boolean f12530l0;
+    private boolean f12670l0;
 
     /* renamed from: m  reason: collision with root package name */
-    private final CopyOnWriteArraySet f12531m;
+    private final CopyOnWriteArraySet f12671m;
 
     /* renamed from: m0  reason: collision with root package name */
-    private boolean f12532m0;
+    private boolean f12672m0;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Timeline.b f12533n;
+    private final Timeline.b f12673n;
 
     /* renamed from: n0  reason: collision with root package name */
-    private boolean f12534n0;
+    private boolean f12674n0;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f12535o;
+    private final List f12675o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private DeviceInfo f12536o0;
+    private DeviceInfo f12676o0;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f12537p;
+    private final boolean f12677p;
 
     /* renamed from: p0  reason: collision with root package name */
-    private VideoSize f12538p0;
+    private VideoSize f12678p0;
 
     /* renamed from: q  reason: collision with root package name */
-    private final r.a f12539q;
+    private final r.a f12679q;
 
     /* renamed from: q0  reason: collision with root package name */
-    private MediaMetadata f12540q0;
+    private MediaMetadata f12680q0;
 
     /* renamed from: r  reason: collision with root package name */
-    private final mc.a f12541r;
+    private final nc.a f12681r;
 
     /* renamed from: r0  reason: collision with root package name */
-    private r1 f12542r0;
+    private r1 f12682r0;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Looper f12543s;
+    private final Looper f12683s;
 
     /* renamed from: s0  reason: collision with root package name */
-    private int f12544s0;
+    private int f12684s0;
 
     /* renamed from: t  reason: collision with root package name */
-    private final le.e f12545t;
+    private final me.e f12685t;
 
     /* renamed from: t0  reason: collision with root package name */
-    private int f12546t0;
+    private int f12686t0;
 
     /* renamed from: u  reason: collision with root package name */
-    private final long f12547u;
+    private final long f12687u;
 
     /* renamed from: u0  reason: collision with root package name */
-    private long f12548u0;
+    private long f12688u0;
 
     /* renamed from: v  reason: collision with root package name */
-    private final long f12549v;
+    private final long f12689v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final ne.e f12550w;
+    private final oe.e f12690w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final c f12551x;
+    private final c f12691x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final d f12552y;
+    private final d f12692y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final com.google.android.exoplayer2.b f12553z;
+    private final com.google.android.exoplayer2.b f12693z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class b {
-        public static mc.t1 a(Context context, i0 i0Var, boolean z10) {
+        public static nc.t1 a(Context context, i0 i0Var, boolean z10) {
             LogSessionId logSessionId;
             com.google.android.exoplayer2.analytics.c f10 = com.google.android.exoplayer2.analytics.c.f(context);
             if (f10 == null) {
-                ne.y.i("ExoPlayerImpl", "MediaMetricsService unavailable.");
+                oe.y.i("ExoPlayerImpl", "MediaMetricsService unavailable.");
                 logSessionId = LogSessionId.LOG_SESSION_ID_NONE;
-                return new mc.t1(logSessionId);
+                return new nc.t1(logSessionId);
             }
             if (z10) {
                 i0Var.q1(f10);
             }
-            return new mc.t1(f10.m());
+            return new nc.t1(f10.m());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public final class c implements oe.y, com.google.android.exoplayer2.audio.e, zd.m, gd.d, SurfaceHolder.Callback, TextureView.SurfaceTextureListener, l.b, d.b, b.InterfaceC0161b, y1.b, lc.i {
+    public final class c implements pe.y, com.google.android.exoplayer2.audio.e, ae.m, hd.d, SurfaceHolder.Callback, TextureView.SurfaceTextureListener, l.b, d.b, b.InterfaceC0188b, y1.b, mc.i {
         private c() {
         }
 
@@ -243,87 +243,87 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
 
         @Override // com.google.android.exoplayer2.audio.e
         public void a(Exception exc) {
-            i0.this.f12541r.a(exc);
+            i0.this.f12681r.a(exc);
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void b(String str) {
-            i0.this.f12541r.b(str);
+            i0.this.f12681r.b(str);
         }
 
         @Override // com.google.android.exoplayer2.audio.e
         public void c(DecoderCounters decoderCounters) {
-            i0.this.f12516e0 = decoderCounters;
-            i0.this.f12541r.c(decoderCounters);
+            i0.this.f12656e0 = decoderCounters;
+            i0.this.f12681r.c(decoderCounters);
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void d(String str, long j10, long j11) {
-            i0.this.f12541r.d(str, j10, j11);
+            i0.this.f12681r.d(str, j10, j11);
         }
 
         @Override // com.google.android.exoplayer2.audio.e
         public void e(String str) {
-            i0.this.f12541r.e(str);
+            i0.this.f12681r.e(str);
         }
 
         @Override // com.google.android.exoplayer2.audio.e
         public void f(String str, long j10, long j11) {
-            i0.this.f12541r.f(str, j10, j11);
+            i0.this.f12681r.f(str, j10, j11);
         }
 
-        @Override // com.google.android.exoplayer2.b.InterfaceC0161b
+        @Override // com.google.android.exoplayer2.b.InterfaceC0188b
         public void g() {
             i0.this.s2(false, -1, 3);
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void h(Format format, DecoderReuseEvaluation decoderReuseEvaluation) {
             i0.this.R = format;
-            i0.this.f12541r.h(format, decoderReuseEvaluation);
+            i0.this.f12681r.h(format, decoderReuseEvaluation);
         }
 
         @Override // com.google.android.exoplayer2.audio.e
         public void i(long j10) {
-            i0.this.f12541r.i(j10);
+            i0.this.f12681r.i(j10);
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void j(Exception exc) {
-            i0.this.f12541r.j(exc);
+            i0.this.f12681r.j(exc);
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void k(DecoderCounters decoderCounters) {
-            i0.this.f12541r.k(decoderCounters);
+            i0.this.f12681r.k(decoderCounters);
             i0.this.R = null;
-            i0.this.f12514d0 = null;
+            i0.this.f12654d0 = null;
         }
 
         @Override // com.google.android.exoplayer2.audio.e
         public void l(DecoderCounters decoderCounters) {
-            i0.this.f12541r.l(decoderCounters);
+            i0.this.f12681r.l(decoderCounters);
             i0.this.S = null;
-            i0.this.f12516e0 = null;
+            i0.this.f12656e0 = null;
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void m(int i10, long j10) {
-            i0.this.f12541r.m(i10, j10);
+            i0.this.f12681r.m(i10, j10);
         }
 
         @Override // com.google.android.exoplayer2.audio.e
         public void n(Format format, DecoderReuseEvaluation decoderReuseEvaluation) {
             i0.this.S = format;
-            i0.this.f12541r.n(format, decoderReuseEvaluation);
+            i0.this.f12681r.n(format, decoderReuseEvaluation);
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void o(Object obj, long j10) {
-            i0.this.f12541r.o(obj, j10);
+            i0.this.f12681r.o(obj, j10);
             if (i0.this.U == obj) {
-                i0.this.f12529l.k(26, new x.a() { // from class: lc.t
-                    @Override // ne.x.a
+                i0.this.f12669l.k(26, new x.a() { // from class: mc.t
+                    @Override // oe.x.a
                     public final void invoke(Object obj2) {
                         ((Player.b) obj2).onRenderedFirstFrame();
                     }
@@ -331,45 +331,45 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
             }
         }
 
-        @Override // zd.m
+        @Override // ae.m
         public void onCues(final List list) {
-            i0.this.f12529l.k(27, new x.a() { // from class: com.google.android.exoplayer2.j0
-                @Override // ne.x.a
+            i0.this.f12669l.k(27, new x.a() { // from class: com.google.android.exoplayer2.j0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onCues(list);
                 }
             });
         }
 
-        @Override // gd.d
+        @Override // hd.d
         public void onMetadata(final Metadata metadata) {
             i0 i0Var = i0.this;
-            i0Var.f12540q0 = i0Var.f12540q0.b().K(metadata).H();
+            i0Var.f12680q0 = i0Var.f12680q0.b().K(metadata).H();
             MediaMetadata t12 = i0.this.t1();
             if (!t12.equals(i0.this.P)) {
                 i0.this.P = t12;
-                i0.this.f12529l.h(14, new x.a() { // from class: com.google.android.exoplayer2.l0
-                    @Override // ne.x.a
+                i0.this.f12669l.h(14, new x.a() { // from class: com.google.android.exoplayer2.l0
+                    @Override // oe.x.a
                     public final void invoke(Object obj) {
                         ((Player.b) obj).onMediaMetadataChanged(i0.this.P);
                     }
                 });
             }
-            i0.this.f12529l.h(28, new x.a() { // from class: com.google.android.exoplayer2.m0
-                @Override // ne.x.a
+            i0.this.f12669l.h(28, new x.a() { // from class: com.google.android.exoplayer2.m0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onMetadata(Metadata.this);
                 }
             });
-            i0.this.f12529l.f();
+            i0.this.f12669l.f();
         }
 
         @Override // com.google.android.exoplayer2.audio.e
         public void onSkipSilenceEnabledChanged(final boolean z10) {
-            if (i0.this.f12524i0 != z10) {
-                i0.this.f12524i0 = z10;
-                i0.this.f12529l.k(23, new x.a() { // from class: com.google.android.exoplayer2.p0
-                    @Override // ne.x.a
+            if (i0.this.f12664i0 != z10) {
+                i0.this.f12664i0 = z10;
+                i0.this.f12669l.k(23, new x.a() { // from class: com.google.android.exoplayer2.p0
+                    @Override // oe.x.a
                     public final void invoke(Object obj) {
                         ((Player.b) obj).onSkipSilenceEnabledChanged(z10);
                     }
@@ -399,36 +399,36 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         public void onSurfaceTextureUpdated(SurfaceTexture surfaceTexture) {
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void onVideoSizeChanged(final VideoSize videoSize) {
-            i0.this.f12538p0 = videoSize;
-            i0.this.f12529l.k(25, new x.a() { // from class: com.google.android.exoplayer2.q0
-                @Override // ne.x.a
+            i0.this.f12678p0 = videoSize;
+            i0.this.f12669l.k(25, new x.a() { // from class: com.google.android.exoplayer2.q0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onVideoSizeChanged(VideoSize.this);
                 }
             });
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void p(DecoderCounters decoderCounters) {
-            i0.this.f12514d0 = decoderCounters;
-            i0.this.f12541r.p(decoderCounters);
+            i0.this.f12654d0 = decoderCounters;
+            i0.this.f12681r.p(decoderCounters);
         }
 
         @Override // com.google.android.exoplayer2.audio.e
         public void q(Exception exc) {
-            i0.this.f12541r.q(exc);
+            i0.this.f12681r.q(exc);
         }
 
         @Override // com.google.android.exoplayer2.audio.e
         public void r(int i10, long j10, long j11) {
-            i0.this.f12541r.r(i10, j10, j11);
+            i0.this.f12681r.r(i10, j10, j11);
         }
 
-        @Override // oe.y
+        @Override // pe.y
         public void s(long j10, int i10) {
-            i0.this.f12541r.s(j10, i10);
+            i0.this.f12681r.s(j10, i10);
         }
 
         @Override // android.view.SurfaceHolder.Callback
@@ -454,10 +454,10 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         @Override // com.google.android.exoplayer2.y1.b
         public void t(int i10) {
             final DeviceInfo w12 = i0.w1(i0.this.B);
-            if (!w12.equals(i0.this.f12536o0)) {
-                i0.this.f12536o0 = w12;
-                i0.this.f12529l.k(29, new x.a() { // from class: com.google.android.exoplayer2.o0
-                    @Override // ne.x.a
+            if (!w12.equals(i0.this.f12676o0)) {
+                i0.this.f12676o0 = w12;
+                i0.this.f12669l.k(29, new x.a() { // from class: com.google.android.exoplayer2.o0
+                    @Override // oe.x.a
                     public final void invoke(Object obj) {
                         ((Player.b) obj).onDeviceInfoChanged(DeviceInfo.this);
                     }
@@ -465,36 +465,36 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
             }
         }
 
-        @Override // pe.l.b
+        @Override // qe.l.b
         public void u(Surface surface) {
             i0.this.l2(null);
         }
 
-        @Override // pe.l.b
+        @Override // qe.l.b
         public void v(Surface surface) {
             i0.this.l2(surface);
         }
 
         @Override // com.google.android.exoplayer2.y1.b
         public void w(final int i10, final boolean z10) {
-            i0.this.f12529l.k(30, new x.a() { // from class: com.google.android.exoplayer2.n0
-                @Override // ne.x.a
+            i0.this.f12669l.k(30, new x.a() { // from class: com.google.android.exoplayer2.n0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onDeviceVolumeChanged(i10, z10);
                 }
             });
         }
 
-        @Override // lc.i
+        @Override // mc.i
         public void z(boolean z10) {
             i0.this.v2();
         }
 
-        @Override // zd.m
+        @Override // ae.m
         public void onCues(final CueGroup cueGroup) {
-            i0.this.f12526j0 = cueGroup;
-            i0.this.f12529l.k(27, new x.a() { // from class: com.google.android.exoplayer2.k0
-                @Override // ne.x.a
+            i0.this.f12666j0 = cueGroup;
+            i0.this.f12669l.k(27, new x.a() { // from class: com.google.android.exoplayer2.k0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onCues(CueGroup.this);
                 }
@@ -504,30 +504,30 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class d implements oe.l, pe.a, s1.b {
+    public static final class d implements pe.l, qe.a, s1.b {
 
         /* renamed from: d  reason: collision with root package name */
-        private oe.l f12555d;
+        private pe.l f12695d;
 
         /* renamed from: e  reason: collision with root package name */
-        private pe.a f12556e;
+        private qe.a f12696e;
 
         /* renamed from: i  reason: collision with root package name */
-        private oe.l f12557i;
+        private pe.l f12697i;
 
         /* renamed from: o  reason: collision with root package name */
-        private pe.a f12558o;
+        private qe.a f12698o;
 
         private d() {
         }
 
-        @Override // oe.l
+        @Override // pe.l
         public void a(long j10, long j11, Format format, MediaFormat mediaFormat) {
             long j12;
             long j13;
             Format format2;
             MediaFormat mediaFormat2;
-            oe.l lVar = this.f12557i;
+            pe.l lVar = this.f12697i;
             if (lVar != null) {
                 lVar.a(j10, j11, format, mediaFormat);
                 mediaFormat2 = mediaFormat;
@@ -540,57 +540,57 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
                 format2 = format;
                 mediaFormat2 = mediaFormat;
             }
-            oe.l lVar2 = this.f12555d;
+            pe.l lVar2 = this.f12695d;
             if (lVar2 != null) {
                 lVar2.a(j12, j13, format2, mediaFormat2);
             }
         }
 
-        @Override // pe.a
+        @Override // qe.a
         public void b(long j10, float[] fArr) {
-            pe.a aVar = this.f12558o;
+            qe.a aVar = this.f12698o;
             if (aVar != null) {
                 aVar.b(j10, fArr);
             }
-            pe.a aVar2 = this.f12556e;
+            qe.a aVar2 = this.f12696e;
             if (aVar2 != null) {
                 aVar2.b(j10, fArr);
             }
         }
 
-        @Override // pe.a
+        @Override // qe.a
         public void c() {
-            pe.a aVar = this.f12558o;
+            qe.a aVar = this.f12698o;
             if (aVar != null) {
                 aVar.c();
             }
-            pe.a aVar2 = this.f12556e;
+            qe.a aVar2 = this.f12696e;
             if (aVar2 != null) {
                 aVar2.c();
             }
         }
 
         @Override // com.google.android.exoplayer2.s1.b
-        public void n(int i10, Object obj) {
+        public void o(int i10, Object obj) {
             if (i10 != 7) {
                 if (i10 != 8) {
                     if (i10 != 10000) {
                         return;
                     }
-                    pe.l lVar = (pe.l) obj;
+                    qe.l lVar = (qe.l) obj;
                     if (lVar == null) {
-                        this.f12557i = null;
-                        this.f12558o = null;
+                        this.f12697i = null;
+                        this.f12698o = null;
                         return;
                     }
-                    this.f12557i = lVar.getVideoFrameMetadataListener();
-                    this.f12558o = lVar.getCameraMotionListener();
+                    this.f12697i = lVar.getVideoFrameMetadataListener();
+                    this.f12698o = lVar.getCameraMotionListener();
                     return;
                 }
-                this.f12556e = (pe.a) obj;
+                this.f12696e = (qe.a) obj;
                 return;
             }
-            this.f12555d = (oe.l) obj;
+            this.f12695d = (pe.l) obj;
         }
     }
 
@@ -599,104 +599,104 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     public static final class e implements a1 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f12559a;
+        private final Object f12699a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Timeline f12560b;
+        private Timeline f12700b;
 
         public e(Object obj, Timeline timeline) {
-            this.f12559a = obj;
-            this.f12560b = timeline;
+            this.f12699a = obj;
+            this.f12700b = timeline;
         }
 
         @Override // com.google.android.exoplayer2.a1
         public Object a() {
-            return this.f12559a;
+            return this.f12699a;
         }
 
         @Override // com.google.android.exoplayer2.a1
         public Timeline b() {
-            return this.f12560b;
+            return this.f12700b;
         }
     }
 
     static {
-        lc.u.a("goog.exo.exoplayer");
+        mc.u.a("goog.exo.exoplayer");
     }
 
     public i0(k kVar, Player player) {
         boolean z10;
         i0 i0Var;
-        mc.t1 a10;
+        nc.t1 a10;
         AudioAttributes audioAttributes;
         boolean z11;
         boolean z12;
-        ne.h hVar = new ne.h();
-        this.f12513d = hVar;
+        oe.h hVar = new oe.h();
+        this.f12653d = hVar;
         try {
-            ne.y.f("ExoPlayerImpl", "Init " + Integer.toHexString(System.identityHashCode(this)) + " [ExoPlayerLib/2.19.1] [" + ne.w0.f39064e + "]");
-            Context applicationContext = kVar.f12576a.getApplicationContext();
-            this.f12515e = applicationContext;
-            mc.a aVar = (mc.a) kVar.f12584i.apply(kVar.f12577b);
-            this.f12541r = aVar;
-            this.f12520g0 = kVar.f12586k;
-            this.f12508a0 = kVar.f12592q;
-            this.f12510b0 = kVar.f12593r;
-            this.f12524i0 = kVar.f12590o;
-            this.E = kVar.f12600y;
+            oe.y.f("ExoPlayerImpl", "Init " + Integer.toHexString(System.identityHashCode(this)) + " [ExoPlayerLib/2.19.1] [" + oe.w0.f40715e + "]");
+            Context applicationContext = kVar.f12716a.getApplicationContext();
+            this.f12655e = applicationContext;
+            nc.a aVar = (nc.a) kVar.f12724i.apply(kVar.f12717b);
+            this.f12681r = aVar;
+            this.f12660g0 = kVar.f12726k;
+            this.f12648a0 = kVar.f12732q;
+            this.f12650b0 = kVar.f12733r;
+            this.f12664i0 = kVar.f12730o;
+            this.E = kVar.f12740y;
             c cVar = new c();
-            this.f12551x = cVar;
+            this.f12691x = cVar;
             d dVar = new d();
-            this.f12552y = dVar;
-            Handler handler = new Handler(kVar.f12585j);
-            v1[] a11 = ((lc.s0) kVar.f12579d.get()).a(handler, cVar, cVar, cVar, cVar);
-            this.f12519g = a11;
+            this.f12692y = dVar;
+            Handler handler = new Handler(kVar.f12725j);
+            v1[] a11 = ((mc.s0) kVar.f12719d.get()).a(handler, cVar, cVar, cVar, cVar);
+            this.f12659g = a11;
             if (a11.length > 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            ne.a.g(z10);
-            je.q qVar = (je.q) kVar.f12581f.get();
-            this.f12521h = qVar;
-            this.f12539q = (r.a) kVar.f12580e.get();
-            le.e eVar = (le.e) kVar.f12583h.get();
-            this.f12545t = eVar;
-            this.f12537p = kVar.f12594s;
-            this.L = kVar.f12595t;
-            this.f12547u = kVar.f12596u;
-            this.f12549v = kVar.f12597v;
-            this.N = kVar.f12601z;
-            Looper looper = kVar.f12585j;
-            this.f12543s = looper;
-            ne.e eVar2 = kVar.f12577b;
-            this.f12550w = eVar2;
+            oe.a.g(z10);
+            ke.q qVar = (ke.q) kVar.f12721f.get();
+            this.f12661h = qVar;
+            this.f12679q = (r.a) kVar.f12720e.get();
+            me.e eVar = (me.e) kVar.f12723h.get();
+            this.f12685t = eVar;
+            this.f12677p = kVar.f12734s;
+            this.L = kVar.f12735t;
+            this.f12687u = kVar.f12736u;
+            this.f12689v = kVar.f12737v;
+            this.N = kVar.f12741z;
+            Looper looper = kVar.f12725j;
+            this.f12683s = looper;
+            oe.e eVar2 = kVar.f12717b;
+            this.f12690w = eVar2;
             if (player == null) {
                 i0Var = this;
             } else {
                 i0Var = player;
             }
-            this.f12517f = i0Var;
-            this.f12529l = new ne.x(looper, eVar2, new x.b() { // from class: com.google.android.exoplayer2.s
-                @Override // ne.x.b
-                public final void a(Object obj, ne.q qVar2) {
-                    ((Player.b) obj).onEvents(i0.this.f12517f, new Player.Events(qVar2));
+            this.f12657f = i0Var;
+            this.f12669l = new oe.x(looper, eVar2, new x.b() { // from class: com.google.android.exoplayer2.s
+                @Override // oe.x.b
+                public final void a(Object obj, oe.q qVar2) {
+                    ((Player.b) obj).onEvents(i0.this.f12657f, new Player.Events(qVar2));
                 }
             });
-            this.f12531m = new CopyOnWriteArraySet();
-            this.f12535o = new ArrayList();
+            this.f12671m = new CopyOnWriteArraySet();
+            this.f12675o = new ArrayList();
             this.M = new o0.a(0);
-            je.r rVar = new je.r(new lc.r0[a11.length], new com.google.android.exoplayer2.trackselection.g[a11.length], Tracks.f11901e, null);
-            this.f12509b = rVar;
-            this.f12533n = new Timeline.b();
-            Player.Commands e10 = new Player.Commands.a().c(1, 2, 3, 13, 14, 15, 16, 17, 18, 19, 31, 20, 30, 21, 22, 24, 27, 28, 32).d(29, qVar.g()).d(23, kVar.f12591p).d(25, kVar.f12591p).d(33, kVar.f12591p).d(26, kVar.f12591p).d(34, kVar.f12591p).e();
-            this.f12511c = e10;
+            ke.r rVar = new ke.r(new mc.r0[a11.length], new com.google.android.exoplayer2.trackselection.g[a11.length], Tracks.f12041e, null);
+            this.f12649b = rVar;
+            this.f12673n = new Timeline.b();
+            Player.Commands e10 = new Player.Commands.a().c(1, 2, 3, 13, 14, 15, 16, 17, 18, 19, 31, 20, 30, 21, 22, 24, 27, 28, 32).d(29, qVar.g()).d(23, kVar.f12731p).d(25, kVar.f12731p).d(33, kVar.f12731p).d(26, kVar.f12731p).d(34, kVar.f12731p).e();
+            this.f12651c = e10;
             this.O = new Player.Commands.a().b(e10).a(4).a(10).e();
-            this.f12523i = eVar2.c(looper, null);
+            this.f12663i = eVar2.c(looper, null);
             t0.f fVar = new t0.f() { // from class: com.google.android.exoplayer2.t
                 @Override // com.google.android.exoplayer2.t0.f
                 public final void a(t0.e eVar3) {
-                    r0.f12523i.post(new Runnable() { // from class: com.google.android.exoplayer2.y
+                    r0.f12663i.post(new Runnable() { // from class: com.google.android.exoplayer2.y
                         @Override // java.lang.Runnable
                         public final void run() {
                             i0.this.Q1(eVar3);
@@ -704,100 +704,100 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
                     });
                 }
             };
-            this.f12525j = fVar;
-            this.f12542r0 = r1.k(rVar);
+            this.f12665j = fVar;
+            this.f12682r0 = r1.k(rVar);
             aVar.y(i0Var, looper);
-            int i10 = ne.w0.f39060a;
+            int i10 = oe.w0.f40711a;
             if (i10 < 31) {
-                a10 = new mc.t1();
+                a10 = new nc.t1();
             } else {
                 a10 = b.a(applicationContext, this, kVar.A);
             }
-            t0 t0Var = new t0(a11, qVar, rVar, (lc.a0) kVar.f12582g.get(), eVar, this.F, this.G, aVar, this.L, kVar.f12598w, kVar.f12599x, this.N, looper, eVar2, fVar, a10, kVar.B);
-            this.f12527k = t0Var;
-            this.f12522h0 = 1.0f;
+            t0 t0Var = new t0(a11, qVar, rVar, (mc.a0) kVar.f12722g.get(), eVar, this.F, this.G, aVar, this.L, kVar.f12738w, kVar.f12739x, this.N, looper, eVar2, fVar, a10, kVar.B);
+            this.f12667k = t0Var;
+            this.f12662h0 = 1.0f;
             this.F = 0;
             MediaMetadata mediaMetadata = MediaMetadata.T;
             this.P = mediaMetadata;
             this.Q = mediaMetadata;
-            this.f12540q0 = mediaMetadata;
-            this.f12544s0 = -1;
+            this.f12680q0 = mediaMetadata;
+            this.f12684s0 = -1;
             if (i10 < 21) {
-                this.f12518f0 = R1(0);
+                this.f12658f0 = R1(0);
             } else {
-                this.f12518f0 = ne.w0.G(applicationContext);
+                this.f12658f0 = oe.w0.G(applicationContext);
             }
-            this.f12526j0 = CueGroup.f12934i;
-            this.f12528k0 = true;
+            this.f12666j0 = CueGroup.f13074i;
+            this.f12668k0 = true;
             L(aVar);
-            eVar.b(new Handler(looper), aVar);
+            eVar.d(new Handler(looper), aVar);
             r1(cVar);
-            long j10 = kVar.f12578c;
+            long j10 = kVar.f12718c;
             if (j10 > 0) {
                 t0Var.v(j10);
             }
-            com.google.android.exoplayer2.b bVar = new com.google.android.exoplayer2.b(kVar.f12576a, handler, cVar);
-            this.f12553z = bVar;
-            bVar.b(kVar.f12589n);
-            com.google.android.exoplayer2.d dVar2 = new com.google.android.exoplayer2.d(kVar.f12576a, handler, cVar);
+            com.google.android.exoplayer2.b bVar = new com.google.android.exoplayer2.b(kVar.f12716a, handler, cVar);
+            this.f12693z = bVar;
+            bVar.b(kVar.f12729n);
+            com.google.android.exoplayer2.d dVar2 = new com.google.android.exoplayer2.d(kVar.f12716a, handler, cVar);
             this.A = dVar2;
-            if (kVar.f12587l) {
-                audioAttributes = this.f12520g0;
+            if (kVar.f12727l) {
+                audioAttributes = this.f12660g0;
             } else {
                 audioAttributes = null;
             }
             dVar2.m(audioAttributes);
-            if (kVar.f12591p) {
-                y1 y1Var = new y1(kVar.f12576a, handler, cVar);
+            if (kVar.f12731p) {
+                y1 y1Var = new y1(kVar.f12716a, handler, cVar);
                 this.B = y1Var;
-                y1Var.h(ne.w0.k0(this.f12520g0.f12083i));
+                y1Var.h(oe.w0.k0(this.f12660g0.f12223i));
             } else {
                 this.B = null;
             }
-            b2 b2Var = new b2(kVar.f12576a);
+            b2 b2Var = new b2(kVar.f12716a);
             this.C = b2Var;
-            if (kVar.f12588m != 0) {
+            if (kVar.f12728m != 0) {
                 z11 = true;
             } else {
                 z11 = false;
             }
             b2Var.a(z11);
-            c2 c2Var = new c2(kVar.f12576a);
+            c2 c2Var = new c2(kVar.f12716a);
             this.D = c2Var;
-            if (kVar.f12588m == 2) {
+            if (kVar.f12728m == 2) {
                 z12 = true;
             } else {
                 z12 = false;
             }
             c2Var.a(z12);
-            this.f12536o0 = w1(this.B);
-            this.f12538p0 = VideoSize.f13456p;
-            this.f12512c0 = ne.l0.f38990c;
-            qVar.k(this.f12520g0);
-            b2(1, 10, Integer.valueOf(this.f12518f0));
-            b2(2, 10, Integer.valueOf(this.f12518f0));
-            b2(1, 3, this.f12520g0);
-            b2(2, 4, Integer.valueOf(this.f12508a0));
-            b2(2, 5, Integer.valueOf(this.f12510b0));
-            b2(1, 9, Boolean.valueOf(this.f12524i0));
+            this.f12676o0 = w1(this.B);
+            this.f12678p0 = VideoSize.f13596p;
+            this.f12652c0 = oe.l0.f40641c;
+            qVar.k(this.f12660g0);
+            b2(1, 10, Integer.valueOf(this.f12658f0));
+            b2(2, 10, Integer.valueOf(this.f12658f0));
+            b2(1, 3, this.f12660g0);
+            b2(2, 4, Integer.valueOf(this.f12648a0));
+            b2(2, 5, Integer.valueOf(this.f12650b0));
+            b2(1, 9, Boolean.valueOf(this.f12664i0));
             b2(2, 7, dVar);
             b2(6, 8, dVar);
             hVar.f();
         } catch (Throwable th2) {
-            this.f12513d.f();
+            this.f12653d.f();
             throw th2;
         }
     }
 
     private long B1(r1 r1Var) {
-        if (r1Var.f12662b.b()) {
-            r1Var.f12661a.l(r1Var.f12662b.f46865a, this.f12533n);
-            if (r1Var.f12663c == -9223372036854775807L) {
-                return r1Var.f12661a.r(E1(r1Var), this.f12383a).d();
+        if (r1Var.f12802b.b()) {
+            r1Var.f12801a.l(r1Var.f12802b.f47983a, this.f12673n);
+            if (r1Var.f12803c == -9223372036854775807L) {
+                return r1Var.f12801a.r(E1(r1Var), this.f12523a).d();
             }
-            return this.f12533n.p() + ne.w0.p1(r1Var.f12663c);
+            return this.f12673n.p() + oe.w0.p1(r1Var.f12803c);
         }
-        return ne.w0.p1(C1(r1Var));
+        return oe.w0.p1(C1(r1Var));
     }
 
     public static /* synthetic */ void C0(int i10, Player.PositionInfo positionInfo, Player.PositionInfo positionInfo2, Player.b bVar) {
@@ -807,25 +807,25 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
 
     private long C1(r1 r1Var) {
         long j10;
-        if (r1Var.f12661a.u()) {
-            return ne.w0.K0(this.f12548u0);
+        if (r1Var.f12801a.u()) {
+            return oe.w0.K0(this.f12688u0);
         }
-        if (r1Var.f12675o) {
+        if (r1Var.f12815o) {
             j10 = r1Var.m();
         } else {
-            j10 = r1Var.f12678r;
+            j10 = r1Var.f12818r;
         }
-        if (r1Var.f12662b.b()) {
+        if (r1Var.f12802b.b()) {
             return j10;
         }
-        return V1(r1Var.f12661a, r1Var.f12662b, j10);
+        return V1(r1Var.f12801a, r1Var.f12802b, j10);
     }
 
     private int E1(r1 r1Var) {
-        if (r1Var.f12661a.u()) {
-            return this.f12544s0;
+        if (r1Var.f12801a.u()) {
+            return this.f12684s0;
         }
-        return r1Var.f12661a.l(r1Var.f12662b.f46865a, this.f12533n).f11877i;
+        return r1Var.f12801a.l(r1Var.f12802b.f47983a, this.f12673n).f12017i;
     }
 
     private Pair F1(Timeline timeline, Timeline timeline2, int i10, long j10) {
@@ -833,16 +833,16 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         long j11 = -9223372036854775807L;
         int i11 = -1;
         if (!timeline.u() && !timeline2.u()) {
-            Pair n10 = timeline.n(this.f12383a, this.f12533n, i10, ne.w0.K0(j10));
-            Object obj = ((Pair) ne.w0.j(n10)).first;
+            Pair n10 = timeline.n(this.f12523a, this.f12673n, i10, oe.w0.K0(j10));
+            Object obj = ((Pair) oe.w0.j(n10)).first;
             if (timeline2.f(obj) != -1) {
                 return n10;
             }
-            Object z02 = t0.z0(this.f12383a, this.f12533n, this.F, this.G, obj, timeline, timeline2);
+            Object z02 = t0.z0(this.f12523a, this.f12673n, this.F, this.G, obj, timeline, timeline2);
             if (z02 != null) {
-                timeline2.l(z02, this.f12533n);
-                int i12 = this.f12533n.f11877i;
-                return T1(timeline2, i12, timeline2.r(i12, this.f12383a).d());
+                timeline2.l(z02, this.f12673n);
+                int i12 = this.f12673n.f12017i;
+                return T1(timeline2, i12, timeline2.r(i12, this.f12523a).d());
             }
             return T1(timeline2, -1, -9223372036854775807L);
         }
@@ -872,14 +872,14 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         Object obj2;
         long j11;
         int Q = Q();
-        if (!this.f12542r0.f12661a.u()) {
-            r1 r1Var = this.f12542r0;
-            Object obj3 = r1Var.f12662b.f46865a;
-            r1Var.f12661a.l(obj3, this.f12533n);
-            i10 = this.f12542r0.f12661a.f(obj3);
+        if (!this.f12682r0.f12801a.u()) {
+            r1 r1Var = this.f12682r0;
+            Object obj3 = r1Var.f12802b.f47983a;
+            r1Var.f12801a.l(obj3, this.f12673n);
+            i10 = this.f12682r0.f12801a.f(obj3);
             obj2 = obj3;
-            obj = this.f12542r0.f12661a.r(Q, this.f12383a).f11886d;
-            mediaItem = this.f12383a.f11888i;
+            obj = this.f12682r0.f12801a.r(Q, this.f12523a).f12026d;
+            mediaItem = this.f12523a.f12028i;
         } else {
             obj = null;
             i10 = -1;
@@ -887,14 +887,14 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
             obj2 = null;
         }
         int i11 = i10;
-        long p12 = ne.w0.p1(j10);
-        if (this.f12542r0.f12662b.b()) {
-            j11 = ne.w0.p1(M1(this.f12542r0));
+        long p12 = oe.w0.p1(j10);
+        if (this.f12682r0.f12802b.b()) {
+            j11 = oe.w0.p1(M1(this.f12682r0));
         } else {
             j11 = p12;
         }
-        r.b bVar = this.f12542r0.f12662b;
-        return new Player.PositionInfo(obj, Q, mediaItem, obj2, i11, p12, j11, bVar.f46866b, bVar.f46867c);
+        r.b bVar = this.f12682r0.f12802b;
+        return new Player.PositionInfo(obj, Q, mediaItem, obj2, i11, p12, j11, bVar.f47984b, bVar.f47985c);
     }
 
     private Player.PositionInfo J1(int i10, r1 r1Var, int i11) {
@@ -906,13 +906,13 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         long j10;
         long M1;
         Timeline.b bVar = new Timeline.b();
-        if (!r1Var.f12661a.u()) {
-            Object obj3 = r1Var.f12662b.f46865a;
-            r1Var.f12661a.l(obj3, bVar);
-            int i14 = bVar.f11877i;
-            int f10 = r1Var.f12661a.f(obj3);
-            Object obj4 = r1Var.f12661a.r(i14, this.f12383a).f11886d;
-            mediaItem = this.f12383a.f11888i;
+        if (!r1Var.f12801a.u()) {
+            Object obj3 = r1Var.f12802b.f47983a;
+            r1Var.f12801a.l(obj3, bVar);
+            int i14 = bVar.f12017i;
+            int f10 = r1Var.f12801a.f(obj3);
+            Object obj4 = r1Var.f12801a.r(i14, this.f12523a).f12026d;
+            mediaItem = this.f12523a.f12028i;
             obj2 = obj3;
             i13 = f10;
             obj = obj4;
@@ -925,90 +925,90 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
             i13 = -1;
         }
         if (i10 == 0) {
-            if (r1Var.f12662b.b()) {
-                r.b bVar2 = r1Var.f12662b;
-                j10 = bVar.e(bVar2.f46866b, bVar2.f46867c);
+            if (r1Var.f12802b.b()) {
+                r.b bVar2 = r1Var.f12802b;
+                j10 = bVar.e(bVar2.f47984b, bVar2.f47985c);
                 M1 = M1(r1Var);
             } else {
-                if (r1Var.f12662b.f46869e != -1) {
-                    j10 = M1(this.f12542r0);
+                if (r1Var.f12802b.f47987e != -1) {
+                    j10 = M1(this.f12682r0);
                 } else {
-                    j10 = bVar.f11879p + bVar.f11878o;
+                    j10 = bVar.f12019p + bVar.f12018o;
                 }
                 M1 = j10;
             }
-        } else if (r1Var.f12662b.b()) {
-            j10 = r1Var.f12678r;
+        } else if (r1Var.f12802b.b()) {
+            j10 = r1Var.f12818r;
             M1 = M1(r1Var);
         } else {
-            j10 = bVar.f11879p + r1Var.f12678r;
+            j10 = bVar.f12019p + r1Var.f12818r;
             M1 = j10;
         }
-        long p12 = ne.w0.p1(j10);
-        long p13 = ne.w0.p1(M1);
-        r.b bVar3 = r1Var.f12662b;
-        return new Player.PositionInfo(obj, i12, mediaItem, obj2, i13, p12, p13, bVar3.f46866b, bVar3.f46867c);
+        long p12 = oe.w0.p1(j10);
+        long p13 = oe.w0.p1(M1);
+        r.b bVar3 = r1Var.f12802b;
+        return new Player.PositionInfo(obj, i12, mediaItem, obj2, i13, p12, p13, bVar3.f47984b, bVar3.f47985c);
     }
 
     public static /* synthetic */ void K0(r1 r1Var, Player.b bVar) {
-        bVar.onLoadingChanged(r1Var.f12667g);
-        bVar.onIsLoadingChanged(r1Var.f12667g);
+        bVar.onLoadingChanged(r1Var.f12807g);
+        bVar.onIsLoadingChanged(r1Var.f12807g);
     }
 
     private static long M1(r1 r1Var) {
         Timeline.d dVar = new Timeline.d();
         Timeline.b bVar = new Timeline.b();
-        r1Var.f12661a.l(r1Var.f12662b.f46865a, bVar);
-        if (r1Var.f12663c == -9223372036854775807L) {
-            return r1Var.f12661a.r(bVar.f11877i, dVar).e();
+        r1Var.f12801a.l(r1Var.f12802b.f47983a, bVar);
+        if (r1Var.f12803c == -9223372036854775807L) {
+            return r1Var.f12801a.r(bVar.f12017i, dVar).e();
         }
-        return bVar.q() + r1Var.f12663c;
+        return bVar.q() + r1Var.f12803c;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void Q1(t0.e eVar) {
         long j10;
         boolean z10;
-        int i10 = this.H - eVar.f12911c;
+        int i10 = this.H - eVar.f13051c;
         this.H = i10;
         boolean z11 = true;
-        if (eVar.f12912d) {
-            this.I = eVar.f12913e;
+        if (eVar.f13052d) {
+            this.I = eVar.f13053e;
             this.J = true;
         }
-        if (eVar.f12914f) {
-            this.K = eVar.f12915g;
+        if (eVar.f13054f) {
+            this.K = eVar.f13055g;
         }
         if (i10 == 0) {
-            Timeline timeline = eVar.f12910b.f12661a;
-            if (!this.f12542r0.f12661a.u() && timeline.u()) {
-                this.f12544s0 = -1;
-                this.f12548u0 = 0L;
-                this.f12546t0 = 0;
+            Timeline timeline = eVar.f13050b.f12801a;
+            if (!this.f12682r0.f12801a.u() && timeline.u()) {
+                this.f12684s0 = -1;
+                this.f12688u0 = 0L;
+                this.f12686t0 = 0;
             }
             if (!timeline.u()) {
                 List J = ((t1) timeline).J();
-                if (J.size() == this.f12535o.size()) {
+                if (J.size() == this.f12675o.size()) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                ne.a.g(z10);
+                oe.a.g(z10);
                 for (int i11 = 0; i11 < J.size(); i11++) {
-                    ((e) this.f12535o.get(i11)).f12560b = (Timeline) J.get(i11);
+                    ((e) this.f12675o.get(i11)).f12700b = (Timeline) J.get(i11);
                 }
             }
             long j11 = -9223372036854775807L;
             if (this.J) {
-                if (eVar.f12910b.f12662b.equals(this.f12542r0.f12662b) && eVar.f12910b.f12664d == this.f12542r0.f12678r) {
+                if (eVar.f13050b.f12802b.equals(this.f12682r0.f12802b) && eVar.f13050b.f12804d == this.f12682r0.f12818r) {
                     z11 = false;
                 }
                 if (z11) {
-                    if (!timeline.u() && !eVar.f12910b.f12662b.b()) {
-                        r1 r1Var = eVar.f12910b;
-                        j10 = V1(timeline, r1Var.f12662b, r1Var.f12664d);
+                    if (!timeline.u() && !eVar.f13050b.f12802b.b()) {
+                        r1 r1Var = eVar.f13050b;
+                        j10 = V1(timeline, r1Var.f12802b, r1Var.f12804d);
                     } else {
-                        j10 = eVar.f12910b.f12664d;
+                        j10 = eVar.f13050b.f12804d;
                     }
                     j11 = j10;
                 }
@@ -1016,7 +1016,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
                 z11 = false;
             }
             this.J = false;
-            t2(eVar.f12910b, 1, this.K, z11, this.I, j11, -1, false);
+            t2(eVar.f13050b, 1, this.K, z11, this.I, j11, -1, false);
         }
     }
 
@@ -1035,8 +1035,8 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     private r1 S1(r1 r1Var, Timeline timeline, Pair pair) {
         boolean z10;
         r.b bVar;
-        qd.w0 w0Var;
-        je.r rVar;
+        rd.w0 w0Var;
+        ke.r rVar;
         List list;
         int i10;
         long j10;
@@ -1045,152 +1045,152 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         } else {
             z10 = true;
         }
-        ne.a.a(z10);
-        Timeline timeline2 = r1Var.f12661a;
+        oe.a.a(z10);
+        Timeline timeline2 = r1Var.f12801a;
         long B1 = B1(r1Var);
         r1 j11 = r1Var.j(timeline);
         if (timeline.u()) {
             r.b l10 = r1.l();
-            long K0 = ne.w0.K0(this.f12548u0);
-            r1 c10 = j11.d(l10, K0, K0, K0, 0L, qd.w0.f46937o, this.f12509b, ni.s.t()).c(l10);
-            c10.f12676p = c10.f12678r;
+            long K0 = oe.w0.K0(this.f12688u0);
+            r1 c10 = j11.d(l10, K0, K0, K0, 0L, rd.w0.f48055o, this.f12649b, oi.s.t()).c(l10);
+            c10.f12816p = c10.f12818r;
             return c10;
         }
-        Object obj = j11.f12662b.f46865a;
-        boolean equals = obj.equals(((Pair) ne.w0.j(pair)).first);
+        Object obj = j11.f12802b.f47983a;
+        boolean equals = obj.equals(((Pair) oe.w0.j(pair)).first);
         if (!equals) {
             bVar = new r.b(pair.first);
         } else {
-            bVar = j11.f12662b;
+            bVar = j11.f12802b;
         }
         long longValue = ((Long) pair.second).longValue();
-        long K02 = ne.w0.K0(B1);
+        long K02 = oe.w0.K0(B1);
         if (!timeline2.u()) {
-            K02 -= timeline2.l(obj, this.f12533n).q();
+            K02 -= timeline2.l(obj, this.f12673n).q();
         }
         if (!equals || longValue < K02) {
             r.b bVar2 = bVar;
-            ne.a.g(!bVar2.b());
+            oe.a.g(!bVar2.b());
             if (!equals) {
-                w0Var = qd.w0.f46937o;
+                w0Var = rd.w0.f48055o;
             } else {
-                w0Var = j11.f12668h;
+                w0Var = j11.f12808h;
             }
-            qd.w0 w0Var2 = w0Var;
+            rd.w0 w0Var2 = w0Var;
             if (!equals) {
-                rVar = this.f12509b;
+                rVar = this.f12649b;
             } else {
-                rVar = j11.f12669i;
+                rVar = j11.f12809i;
             }
-            je.r rVar2 = rVar;
+            ke.r rVar2 = rVar;
             if (!equals) {
-                list = ni.s.t();
+                list = oi.s.t();
             } else {
-                list = j11.f12670j;
+                list = j11.f12810j;
             }
             r1 c11 = j11.d(bVar2, longValue, longValue, longValue, 0L, w0Var2, rVar2, list).c(bVar2);
-            c11.f12676p = longValue;
+            c11.f12816p = longValue;
             return c11;
         } else if (i10 == 0) {
-            int f10 = timeline.f(j11.f12671k.f46865a);
-            if (f10 != -1 && timeline.j(f10, this.f12533n).f11877i == timeline.l(bVar.f46865a, this.f12533n).f11877i) {
+            int f10 = timeline.f(j11.f12811k.f47983a);
+            if (f10 != -1 && timeline.j(f10, this.f12673n).f12017i == timeline.l(bVar.f47983a, this.f12673n).f12017i) {
                 return j11;
             }
-            timeline.l(bVar.f46865a, this.f12533n);
+            timeline.l(bVar.f47983a, this.f12673n);
             if (bVar.b()) {
-                j10 = this.f12533n.e(bVar.f46866b, bVar.f46867c);
+                j10 = this.f12673n.e(bVar.f47984b, bVar.f47985c);
             } else {
-                j10 = this.f12533n.f11878o;
+                j10 = this.f12673n.f12018o;
             }
             r.b bVar3 = bVar;
-            r1 c12 = j11.d(bVar3, j11.f12678r, j11.f12678r, j11.f12664d, j10 - j11.f12678r, j11.f12668h, j11.f12669i, j11.f12670j).c(bVar3);
-            c12.f12676p = j10;
+            r1 c12 = j11.d(bVar3, j11.f12818r, j11.f12818r, j11.f12804d, j10 - j11.f12818r, j11.f12808h, j11.f12809i, j11.f12810j).c(bVar3);
+            c12.f12816p = j10;
             return c12;
         } else {
             r.b bVar4 = bVar;
-            ne.a.g(!bVar4.b());
-            long max = Math.max(0L, j11.f12677q - (longValue - K02));
-            long j12 = j11.f12676p;
-            if (j11.f12671k.equals(j11.f12662b)) {
+            oe.a.g(!bVar4.b());
+            long max = Math.max(0L, j11.f12817q - (longValue - K02));
+            long j12 = j11.f12816p;
+            if (j11.f12811k.equals(j11.f12802b)) {
                 j12 = longValue + max;
             }
-            r1 d10 = j11.d(bVar4, longValue, longValue, longValue, max, j11.f12668h, j11.f12669i, j11.f12670j);
-            d10.f12676p = j12;
+            r1 d10 = j11.d(bVar4, longValue, longValue, longValue, max, j11.f12808h, j11.f12809i, j11.f12810j);
+            d10.f12816p = j12;
             return d10;
         }
     }
 
     private Pair T1(Timeline timeline, int i10, long j10) {
         if (timeline.u()) {
-            this.f12544s0 = i10;
+            this.f12684s0 = i10;
             if (j10 == -9223372036854775807L) {
                 j10 = 0;
             }
-            this.f12548u0 = j10;
-            this.f12546t0 = 0;
+            this.f12688u0 = j10;
+            this.f12686t0 = 0;
             return null;
         }
         if (i10 == -1 || i10 >= timeline.t()) {
             i10 = timeline.e(this.G);
-            j10 = timeline.r(i10, this.f12383a).d();
+            j10 = timeline.r(i10, this.f12523a).d();
         }
-        return timeline.n(this.f12383a, this.f12533n, i10, ne.w0.K0(j10));
+        return timeline.n(this.f12523a, this.f12673n, i10, oe.w0.K0(j10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void U1(final int i10, final int i11) {
-        if (i10 == this.f12512c0.b() && i11 == this.f12512c0.a()) {
+        if (i10 == this.f12652c0.b() && i11 == this.f12652c0.a()) {
             return;
         }
-        this.f12512c0 = new ne.l0(i10, i11);
-        this.f12529l.k(24, new x.a() { // from class: com.google.android.exoplayer2.v
-            @Override // ne.x.a
+        this.f12652c0 = new oe.l0(i10, i11);
+        this.f12669l.k(24, new x.a() { // from class: com.google.android.exoplayer2.v
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((Player.b) obj).onSurfaceSizeChanged(i10, i11);
             }
         });
-        b2(2, 14, new ne.l0(i10, i11));
+        b2(2, 14, new oe.l0(i10, i11));
     }
 
     private long V1(Timeline timeline, r.b bVar, long j10) {
-        timeline.l(bVar.f46865a, this.f12533n);
-        return j10 + this.f12533n.q();
+        timeline.l(bVar.f47983a, this.f12673n);
+        return j10 + this.f12673n.q();
     }
 
     private r1 Y1(r1 r1Var, int i10, int i11) {
         int E1 = E1(r1Var);
         long B1 = B1(r1Var);
-        Timeline timeline = r1Var.f12661a;
-        int size = this.f12535o.size();
+        Timeline timeline = r1Var.f12801a;
+        int size = this.f12675o.size();
         this.H++;
         Z1(i10, i11);
         Timeline x12 = x1();
         r1 S1 = S1(r1Var, x12, F1(timeline, x12, E1, B1));
-        int i12 = S1.f12665e;
-        if (i12 != 1 && i12 != 4 && i10 < i11 && i11 == size && E1 >= S1.f12661a.t()) {
+        int i12 = S1.f12805e;
+        if (i12 != 1 && i12 != 4 && i10 < i11 && i11 == size && E1 >= S1.f12801a.t()) {
             S1 = S1.h(4);
         }
-        this.f12527k.n0(i10, i11, this.M);
+        this.f12667k.n0(i10, i11, this.M);
         return S1;
     }
 
     private void Z1(int i10, int i11) {
         for (int i12 = i11 - 1; i12 >= i10; i12--) {
-            this.f12535o.remove(i12);
+            this.f12675o.remove(i12);
         }
         this.M = this.M.a(i10, i11);
     }
 
     private void a2() {
         if (this.X != null) {
-            y1(this.f12552y).n(10000).m(null).l();
-            this.X.g(this.f12551x);
+            y1(this.f12692y).n(10000).m(null).l();
+            this.X.g(this.f12691x);
             this.X = null;
         }
         TextureView textureView = this.Z;
         if (textureView != null) {
-            if (textureView.getSurfaceTextureListener() != this.f12551x) {
-                ne.y.i("ExoPlayerImpl", "SurfaceTextureListener already unset or replaced.");
+            if (textureView.getSurfaceTextureListener() != this.f12691x) {
+                oe.y.i("ExoPlayerImpl", "SurfaceTextureListener already unset or replaced.");
             } else {
                 this.Z.setSurfaceTextureListener(null);
             }
@@ -1198,14 +1198,14 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         }
         SurfaceHolder surfaceHolder = this.W;
         if (surfaceHolder != null) {
-            surfaceHolder.removeCallback(this.f12551x);
+            surfaceHolder.removeCallback(this.f12691x);
             this.W = null;
         }
     }
 
     private void b2(int i10, int i11, Object obj) {
         v1[] v1VarArr;
-        for (v1 v1Var : this.f12519g) {
+        for (v1 v1Var : this.f12659g) {
             if (v1Var.e() == i10) {
                 y1(v1Var).n(i11).m(obj).l();
             }
@@ -1214,7 +1214,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c2() {
-        b2(1, 2, Float.valueOf(this.f12522h0 * this.A.g()));
+        b2(1, 2, Float.valueOf(this.f12662h0 * this.A.g()));
     }
 
     private void h2(List list, int i10, long j10, boolean z10) {
@@ -1224,16 +1224,16 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         r1 h10;
         boolean z11;
         int i13 = i10;
-        int E1 = E1(this.f12542r0);
+        int E1 = E1(this.f12682r0);
         long Z = Z();
         this.H++;
-        if (!this.f12535o.isEmpty()) {
-            Z1(0, this.f12535o.size());
+        if (!this.f12675o.isEmpty()) {
+            Z1(0, this.f12675o.size());
         }
         List s12 = s1(0, list);
         Timeline x12 = x1();
         if (!x12.u() && i13 >= x12.t()) {
-            throw new lc.z(x12, i13, j10);
+            throw new mc.z(x12, i13, j10);
         }
         if (z10) {
             i13 = x12.e(this.G);
@@ -1241,14 +1241,14 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         } else if (i13 == -1) {
             i11 = E1;
             j11 = Z;
-            r1 S1 = S1(this.f12542r0, x12, T1(x12, i11, j11));
-            i12 = S1.f12665e;
+            r1 S1 = S1(this.f12682r0, x12, T1(x12, i11, j11));
+            i12 = S1.f12805e;
             if (i11 != -1 && i12 != 1) {
                 i12 = (!x12.u() || i11 >= x12.t()) ? 4 : 2;
             }
             h10 = S1.h(i12);
-            this.f12527k.O0(s12, i11, ne.w0.K0(j11), this.M);
-            if (this.f12542r0.f12662b.f46865a.equals(h10.f12662b.f46865a) && !this.f12542r0.f12661a.u()) {
+            this.f12667k.O0(s12, i11, oe.w0.K0(j11), this.M);
+            if (this.f12682r0.f12802b.f47983a.equals(h10.f12802b.f47983a) && !this.f12682r0.f12801a.u()) {
                 z11 = true;
             } else {
                 z11 = false;
@@ -1258,15 +1258,15 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
             j11 = j10;
         }
         i11 = i13;
-        r1 S12 = S1(this.f12542r0, x12, T1(x12, i11, j11));
-        i12 = S12.f12665e;
+        r1 S12 = S1(this.f12682r0, x12, T1(x12, i11, j11));
+        i12 = S12.f12805e;
         if (i11 != -1) {
             if (x12.u()) {
             }
         }
         h10 = S12.h(i12);
-        this.f12527k.O0(s12, i11, ne.w0.K0(j11), this.M);
-        if (this.f12542r0.f12662b.f46865a.equals(h10.f12662b.f46865a)) {
+        this.f12667k.O0(s12, i11, oe.w0.K0(j11), this.M);
+        if (this.f12682r0.f12802b.f47983a.equals(h10.f12802b.f47983a)) {
         }
         z11 = false;
         t2(h10, 0, 1, z11, 4, C1(h10), -1, false);
@@ -1275,7 +1275,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     private void i2(SurfaceHolder surfaceHolder) {
         this.Y = false;
         this.W = surfaceHolder;
-        surfaceHolder.addCallback(this.f12551x);
+        surfaceHolder.addCallback(this.f12691x);
         Surface surface = this.W.getSurface();
         if (surface != null && surface.isValid()) {
             Rect surfaceFrame = this.W.getSurfaceFrame();
@@ -1297,7 +1297,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         v1[] v1VarArr;
         ArrayList<s1> arrayList = new ArrayList();
         boolean z10 = false;
-        for (v1 v1Var : this.f12519g) {
+        for (v1 v1Var : this.f12659g) {
             if (v1Var.e() == 2) {
                 arrayList.add(y1(v1Var).n(1).m(obj).l());
             }
@@ -1322,31 +1322,31 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         }
         this.U = obj;
         if (z10) {
-            q2(j.i(new lc.v(3), 1003));
+            q2(j.i(new mc.v(3), 1003));
         }
     }
 
     private void q2(j jVar) {
-        r1 r1Var = this.f12542r0;
-        r1 c10 = r1Var.c(r1Var.f12662b);
-        c10.f12676p = c10.f12678r;
-        c10.f12677q = 0L;
+        r1 r1Var = this.f12682r0;
+        r1 c10 = r1Var.c(r1Var.f12802b);
+        c10.f12816p = c10.f12818r;
+        c10.f12817q = 0L;
         r1 h10 = c10.h(1);
         if (jVar != null) {
             h10 = h10.f(jVar);
         }
         this.H++;
-        this.f12527k.i1();
+        this.f12667k.i1();
         t2(h10, 0, 1, false, 5, -9223372036854775807L, -1, false);
     }
 
     private void r2() {
         Player.Commands commands = this.O;
-        Player.Commands I = ne.w0.I(this.f12517f, this.f12511c);
+        Player.Commands I = oe.w0.I(this.f12657f, this.f12651c);
         this.O = I;
         if (!I.equals(commands)) {
-            this.f12529l.h(13, new x.a() { // from class: com.google.android.exoplayer2.z
-                @Override // ne.x.a
+            this.f12669l.h(13, new x.a() { // from class: com.google.android.exoplayer2.z
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onAvailableCommandsChanged(i0.this.O);
                 }
@@ -1357,9 +1357,9 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     private List s1(int i10, List list) {
         ArrayList arrayList = new ArrayList();
         for (int i11 = 0; i11 < list.size(); i11++) {
-            o1.c cVar = new o1.c((qd.r) list.get(i11), this.f12537p);
+            o1.c cVar = new o1.c((rd.r) list.get(i11), this.f12677p);
             arrayList.add(cVar);
-            this.f12535o.add(i11 + i10, new e(cVar.f12648b, cVar.f12647a.X()));
+            this.f12675o.add(i11 + i10, new e(cVar.f12788b, cVar.f12787a.X()));
         }
         this.M = this.M.g(i10, arrayList.size());
         return arrayList;
@@ -1377,16 +1377,16 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         if (z11 && i10 != 1) {
             i12 = 1;
         }
-        r1 r1Var = this.f12542r0;
-        if (r1Var.f12672l == z11 && r1Var.f12673m == i12) {
+        r1 r1Var = this.f12682r0;
+        if (r1Var.f12812l == z11 && r1Var.f12813m == i12) {
             return;
         }
         this.H++;
-        if (r1Var.f12675o) {
+        if (r1Var.f12815o) {
             r1Var = r1Var.a();
         }
         r1 e10 = r1Var.e(z11, i12);
-        this.f12527k.R0(z11, i12);
+        this.f12667k.R0(z11, i12);
         t2(e10, 0, i11, false, 5, -9223372036854775807L, -1, false);
     }
 
@@ -1394,41 +1394,41 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     public MediaMetadata t1() {
         Timeline v10 = v();
         if (v10.u()) {
-            return this.f12540q0;
+            return this.f12680q0;
         }
-        return this.f12540q0.b().J(v10.r(Q(), this.f12383a).f11888i.f11628p).H();
+        return this.f12680q0.b().J(v10.r(Q(), this.f12523a).f12028i.f11768p).H();
     }
 
     private void t2(final r1 r1Var, final int i10, final int i11, boolean z10, final int i12, long j10, int i13, boolean z11) {
         boolean z12;
         boolean z13;
         boolean z14;
-        r1 r1Var2 = this.f12542r0;
-        this.f12542r0 = r1Var;
-        boolean equals = r1Var2.f12661a.equals(r1Var.f12661a);
+        r1 r1Var2 = this.f12682r0;
+        this.f12682r0 = r1Var;
+        boolean equals = r1Var2.f12801a.equals(r1Var.f12801a);
         Pair z15 = z1(r1Var, r1Var2, z10, i12, !equals, z11);
         boolean booleanValue = ((Boolean) z15.first).booleanValue();
         final int intValue = ((Integer) z15.second).intValue();
         MediaMetadata mediaMetadata = this.P;
         final MediaItem mediaItem = null;
         if (booleanValue) {
-            if (!r1Var.f12661a.u()) {
-                mediaItem = r1Var.f12661a.r(r1Var.f12661a.l(r1Var.f12662b.f46865a, this.f12533n).f11877i, this.f12383a).f11888i;
+            if (!r1Var.f12801a.u()) {
+                mediaItem = r1Var.f12801a.r(r1Var.f12801a.l(r1Var.f12802b.f47983a, this.f12673n).f12017i, this.f12523a).f12028i;
             }
-            this.f12540q0 = MediaMetadata.T;
+            this.f12680q0 = MediaMetadata.T;
         }
-        if (booleanValue || !r1Var2.f12670j.equals(r1Var.f12670j)) {
-            this.f12540q0 = this.f12540q0.b().L(r1Var.f12670j).H();
+        if (booleanValue || !r1Var2.f12810j.equals(r1Var.f12810j)) {
+            this.f12680q0 = this.f12680q0.b().L(r1Var.f12810j).H();
             mediaMetadata = t1();
         }
         boolean equals2 = mediaMetadata.equals(this.P);
         this.P = mediaMetadata;
-        if (r1Var2.f12672l != r1Var.f12672l) {
+        if (r1Var2.f12812l != r1Var.f12812l) {
             z12 = true;
         } else {
             z12 = false;
         }
-        if (r1Var2.f12665e != r1Var.f12665e) {
+        if (r1Var2.f12805e != r1Var.f12805e) {
             z13 = true;
         } else {
             z13 = false;
@@ -1436,8 +1436,8 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         if (z13 || z12) {
             v2();
         }
-        boolean z16 = r1Var2.f12667g;
-        boolean z17 = r1Var.f12667g;
+        boolean z16 = r1Var2.f12807g;
+        boolean z17 = r1Var.f12807g;
         if (z16 != z17) {
             z14 = true;
         } else {
@@ -1447,131 +1447,131 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
             u2(z17);
         }
         if (!equals) {
-            this.f12529l.h(0, new x.a() { // from class: com.google.android.exoplayer2.l
-                @Override // ne.x.a
+            this.f12669l.h(0, new x.a() { // from class: com.google.android.exoplayer2.l
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     Player.b bVar = (Player.b) obj;
-                    bVar.onTimelineChanged(r1.this.f12661a, i10);
+                    bVar.onTimelineChanged(r1.this.f12801a, i10);
                 }
             });
         }
         if (z10) {
             final Player.PositionInfo J1 = J1(i12, r1Var2, i13);
             final Player.PositionInfo I1 = I1(j10);
-            this.f12529l.h(11, new x.a() { // from class: com.google.android.exoplayer2.d0
-                @Override // ne.x.a
+            this.f12669l.h(11, new x.a() { // from class: com.google.android.exoplayer2.d0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     i0.C0(i12, J1, I1, (Player.b) obj);
                 }
             });
         }
         if (booleanValue) {
-            this.f12529l.h(1, new x.a() { // from class: com.google.android.exoplayer2.e0
-                @Override // ne.x.a
+            this.f12669l.h(1, new x.a() { // from class: com.google.android.exoplayer2.e0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onMediaItemTransition(MediaItem.this, intValue);
                 }
             });
         }
-        if (r1Var2.f12666f != r1Var.f12666f) {
-            this.f12529l.h(10, new x.a() { // from class: com.google.android.exoplayer2.f0
-                @Override // ne.x.a
+        if (r1Var2.f12806f != r1Var.f12806f) {
+            this.f12669l.h(10, new x.a() { // from class: com.google.android.exoplayer2.f0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
-                    ((Player.b) obj).onPlayerErrorChanged(r1.this.f12666f);
+                    ((Player.b) obj).onPlayerErrorChanged(r1.this.f12806f);
                 }
             });
-            if (r1Var.f12666f != null) {
-                this.f12529l.h(10, new x.a() { // from class: com.google.android.exoplayer2.g0
-                    @Override // ne.x.a
+            if (r1Var.f12806f != null) {
+                this.f12669l.h(10, new x.a() { // from class: com.google.android.exoplayer2.g0
+                    @Override // oe.x.a
                     public final void invoke(Object obj) {
-                        ((Player.b) obj).onPlayerError(r1.this.f12666f);
+                        ((Player.b) obj).onPlayerError(r1.this.f12806f);
                     }
                 });
             }
         }
-        je.r rVar = r1Var2.f12669i;
-        je.r rVar2 = r1Var.f12669i;
+        ke.r rVar = r1Var2.f12809i;
+        ke.r rVar2 = r1Var.f12809i;
         if (rVar != rVar2) {
-            this.f12521h.h(rVar2.f29917e);
-            this.f12529l.h(2, new x.a() { // from class: com.google.android.exoplayer2.h0
-                @Override // ne.x.a
+            this.f12661h.h(rVar2.f30868e);
+            this.f12669l.h(2, new x.a() { // from class: com.google.android.exoplayer2.h0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
-                    ((Player.b) obj).onTracksChanged(r1.this.f12669i.f29916d);
+                    ((Player.b) obj).onTracksChanged(r1.this.f12809i.f30867d);
                 }
             });
         }
         if (!equals2) {
             final MediaMetadata mediaMetadata2 = this.P;
-            this.f12529l.h(14, new x.a() { // from class: com.google.android.exoplayer2.m
-                @Override // ne.x.a
+            this.f12669l.h(14, new x.a() { // from class: com.google.android.exoplayer2.m
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onMediaMetadataChanged(MediaMetadata.this);
                 }
             });
         }
         if (z14) {
-            this.f12529l.h(3, new x.a() { // from class: com.google.android.exoplayer2.n
-                @Override // ne.x.a
+            this.f12669l.h(3, new x.a() { // from class: com.google.android.exoplayer2.n
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     i0.K0(r1.this, (Player.b) obj);
                 }
             });
         }
         if (z13 || z12) {
-            this.f12529l.h(-1, new x.a() { // from class: com.google.android.exoplayer2.o
-                @Override // ne.x.a
+            this.f12669l.h(-1, new x.a() { // from class: com.google.android.exoplayer2.o
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
-                    ((Player.b) obj).onPlayerStateChanged(r0.f12672l, r1.this.f12665e);
+                    ((Player.b) obj).onPlayerStateChanged(r0.f12812l, r1.this.f12805e);
                 }
             });
         }
         if (z13) {
-            this.f12529l.h(4, new x.a() { // from class: com.google.android.exoplayer2.p
-                @Override // ne.x.a
+            this.f12669l.h(4, new x.a() { // from class: com.google.android.exoplayer2.p
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
-                    ((Player.b) obj).onPlaybackStateChanged(r1.this.f12665e);
+                    ((Player.b) obj).onPlaybackStateChanged(r1.this.f12805e);
                 }
             });
         }
         if (z12) {
-            this.f12529l.h(5, new x.a() { // from class: com.google.android.exoplayer2.w
-                @Override // ne.x.a
+            this.f12669l.h(5, new x.a() { // from class: com.google.android.exoplayer2.w
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     Player.b bVar = (Player.b) obj;
-                    bVar.onPlayWhenReadyChanged(r1.this.f12672l, i11);
+                    bVar.onPlayWhenReadyChanged(r1.this.f12812l, i11);
                 }
             });
         }
-        if (r1Var2.f12673m != r1Var.f12673m) {
-            this.f12529l.h(6, new x.a() { // from class: com.google.android.exoplayer2.a0
-                @Override // ne.x.a
+        if (r1Var2.f12813m != r1Var.f12813m) {
+            this.f12669l.h(6, new x.a() { // from class: com.google.android.exoplayer2.a0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
-                    ((Player.b) obj).onPlaybackSuppressionReasonChanged(r1.this.f12673m);
+                    ((Player.b) obj).onPlaybackSuppressionReasonChanged(r1.this.f12813m);
                 }
             });
         }
         if (r1Var2.n() != r1Var.n()) {
-            this.f12529l.h(7, new x.a() { // from class: com.google.android.exoplayer2.b0
-                @Override // ne.x.a
+            this.f12669l.h(7, new x.a() { // from class: com.google.android.exoplayer2.b0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onIsPlayingChanged(r1.this.n());
                 }
             });
         }
-        if (!r1Var2.f12674n.equals(r1Var.f12674n)) {
-            this.f12529l.h(12, new x.a() { // from class: com.google.android.exoplayer2.c0
-                @Override // ne.x.a
+        if (!r1Var2.f12814n.equals(r1Var.f12814n)) {
+            this.f12669l.h(12, new x.a() { // from class: com.google.android.exoplayer2.c0
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
-                    ((Player.b) obj).onPlaybackParametersChanged(r1.this.f12674n);
+                    ((Player.b) obj).onPlaybackParametersChanged(r1.this.f12814n);
                 }
             });
         }
         r2();
-        this.f12529l.f();
-        if (r1Var2.f12675o != r1Var.f12675o) {
-            Iterator it = this.f12531m.iterator();
+        this.f12669l.f();
+        if (r1Var2.f12815o != r1Var.f12815o) {
+            Iterator it = this.f12671m.iterator();
             while (it.hasNext()) {
-                ((lc.i) it.next()).z(r1Var.f12675o);
+                ((mc.i) it.next()).z(r1Var.f12815o);
             }
         }
     }
@@ -1622,17 +1622,17 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
 
     private void w2() {
         IllegalStateException illegalStateException;
-        this.f12513d.c();
+        this.f12653d.c();
         if (Thread.currentThread() != w().getThread()) {
-            String D = ne.w0.D("Player is accessed on the wrong thread.\nCurrent thread: '%s'\nExpected thread: '%s'\nSee https://developer.android.com/guide/topics/media/issues/player-accessed-on-wrong-thread", Thread.currentThread().getName(), w().getThread().getName());
-            if (!this.f12528k0) {
-                if (this.f12530l0) {
+            String D = oe.w0.D("Player is accessed on the wrong thread.\nCurrent thread: '%s'\nExpected thread: '%s'\nSee https://developer.android.com/guide/topics/media/issues/player-accessed-on-wrong-thread", Thread.currentThread().getName(), w().getThread().getName());
+            if (!this.f12668k0) {
+                if (this.f12670l0) {
                     illegalStateException = null;
                 } else {
                     illegalStateException = new IllegalStateException();
                 }
-                ne.y.j("ExoPlayerImpl", D, illegalStateException);
-                this.f12530l0 = true;
+                oe.y.j("ExoPlayerImpl", D, illegalStateException);
+                this.f12670l0 = true;
                 return;
             }
             throw new IllegalStateException(D);
@@ -1640,22 +1640,22 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     }
 
     private Timeline x1() {
-        return new t1(this.f12535o, this.M);
+        return new t1(this.f12675o, this.M);
     }
 
     private s1 y1(s1.b bVar) {
-        int E1 = E1(this.f12542r0);
-        t0 t0Var = this.f12527k;
-        Timeline timeline = this.f12542r0.f12661a;
+        int E1 = E1(this.f12682r0);
+        t0 t0Var = this.f12667k;
+        Timeline timeline = this.f12682r0.f12801a;
         if (E1 == -1) {
             E1 = 0;
         }
-        return new s1(t0Var, bVar, timeline, E1, this.f12550w, t0Var.C());
+        return new s1(t0Var, bVar, timeline, E1, this.f12690w, t0Var.C());
     }
 
     private Pair z1(r1 r1Var, r1 r1Var2, boolean z10, int i10, boolean z11, boolean z12) {
-        Timeline timeline = r1Var2.f12661a;
-        Timeline timeline2 = r1Var.f12661a;
+        Timeline timeline = r1Var2.f12801a;
+        Timeline timeline2 = r1Var.f12801a;
         if (timeline2.u() && timeline.u()) {
             return new Pair(Boolean.FALSE, -1);
         }
@@ -1663,7 +1663,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         if (timeline2.u() != timeline.u()) {
             return new Pair(Boolean.TRUE, 3);
         }
-        if (!timeline.r(timeline.l(r1Var2.f12662b.f46865a, this.f12533n).f11877i, this.f12383a).f11886d.equals(timeline2.r(timeline2.l(r1Var.f12662b.f46865a, this.f12533n).f11877i, this.f12383a).f11886d)) {
+        if (!timeline.r(timeline.l(r1Var2.f12802b.f47983a, this.f12673n).f12017i, this.f12523a).f12026d.equals(timeline2.r(timeline2.l(r1Var.f12802b.f47983a, this.f12673n).f12017i, this.f12523a).f12026d)) {
             if (z10 && i10 == 0) {
                 i11 = 1;
             } else if (z10 && i10 == 1) {
@@ -1672,7 +1672,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
                 throw new IllegalStateException();
             }
             return new Pair(Boolean.TRUE, Integer.valueOf(i11));
-        } else if (z10 && i10 == 0 && r1Var2.f12662b.f46868d < r1Var.f12662b.f46868d) {
+        } else if (z10 && i10 == 0 && r1Var2.f12802b.f47986d < r1Var.f12802b.f47986d) {
             return new Pair(Boolean.TRUE, 0);
         } else {
             if (z10 && i10 == 1 && z12) {
@@ -1690,13 +1690,13 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
 
     public boolean A1() {
         w2();
-        return this.f12542r0.f12675o;
+        return this.f12682r0.f12815o;
     }
 
     @Override // com.google.android.exoplayer2.Player
     public boolean B() {
         w2();
-        return this.f12542r0.f12672l;
+        return this.f12682r0.f12812l;
     }
 
     @Override // com.google.android.exoplayer2.Player
@@ -1704,15 +1704,15 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         w2();
         if (this.G != z10) {
             this.G = z10;
-            this.f12527k.Y0(z10);
-            this.f12529l.h(9, new x.a() { // from class: com.google.android.exoplayer2.x
-                @Override // ne.x.a
+            this.f12667k.Y0(z10);
+            this.f12669l.h(9, new x.a() { // from class: com.google.android.exoplayer2.x
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onShuffleModeEnabledChanged(z10);
                 }
             });
             r2();
-            this.f12529l.f();
+            this.f12669l.f();
         }
     }
 
@@ -1722,19 +1722,19 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         return 3000L;
     }
 
-    public je.m D1() {
+    public ke.m D1() {
         w2();
-        return new je.m(this.f12542r0.f12669i.f29915c);
+        return new ke.m(this.f12682r0.f12809i.f30866c);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int E() {
         w2();
-        if (this.f12542r0.f12661a.u()) {
-            return this.f12546t0;
+        if (this.f12682r0.f12801a.u()) {
+            return this.f12686t0;
         }
-        r1 r1Var = this.f12542r0;
-        return r1Var.f12661a.f(r1Var.f12662b.f46865a);
+        r1 r1Var = this.f12682r0;
+        return r1Var.f12801a.f(r1Var.f12802b.f47983a);
     }
 
     @Override // com.google.android.exoplayer2.Player
@@ -1748,21 +1748,21 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     @Override // com.google.android.exoplayer2.Player
     public VideoSize G() {
         w2();
-        return this.f12538p0;
+        return this.f12678p0;
     }
 
     @Override // com.google.android.exoplayer2.Player
     /* renamed from: H1 */
     public j m() {
         w2();
-        return this.f12542r0.f12666f;
+        return this.f12682r0.f12806f;
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int I() {
         w2();
         if (f()) {
-            return this.f12542r0.f12662b.f46867c;
+            return this.f12682r0.f12802b.f47985c;
         }
         return -1;
     }
@@ -1770,52 +1770,52 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     @Override // com.google.android.exoplayer2.Player
     public long J() {
         w2();
-        return this.f12549v;
+        return this.f12689v;
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long K() {
         w2();
-        return B1(this.f12542r0);
+        return B1(this.f12682r0);
     }
 
     public int K1() {
         w2();
-        return this.f12519g.length;
+        return this.f12659g.length;
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void L(Player.b bVar) {
-        this.f12529l.c((Player.b) ne.a.e(bVar));
+        this.f12669l.c((Player.b) oe.a.e(bVar));
     }
 
     public int L1(int i10) {
         w2();
-        return this.f12519g[i10].e();
+        return this.f12659g[i10].e();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long M() {
         w2();
         if (f()) {
-            r1 r1Var = this.f12542r0;
-            if (r1Var.f12671k.equals(r1Var.f12662b)) {
-                return ne.w0.p1(this.f12542r0.f12676p);
+            r1 r1Var = this.f12682r0;
+            if (r1Var.f12811k.equals(r1Var.f12802b)) {
+                return oe.w0.p1(this.f12682r0.f12816p);
             }
             return getDuration();
         }
         return V();
     }
 
-    public je.q N1() {
+    public ke.q N1() {
         w2();
-        return this.f12521h;
+        return this.f12661h;
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int O() {
         w2();
-        return this.f12542r0.f12665e;
+        return this.f12682r0.f12805e;
     }
 
     public Format O1() {
@@ -1825,13 +1825,13 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
 
     public float P1() {
         w2();
-        return this.f12522h0;
+        return this.f12662h0;
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int Q() {
         w2();
-        int E1 = E1(this.f12542r0);
+        int E1 = E1(this.f12682r0);
         if (E1 == -1) {
             return 0;
         }
@@ -1843,15 +1843,15 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         w2();
         if (this.F != i10) {
             this.F = i10;
-            this.f12527k.V0(i10);
-            this.f12529l.h(8, new x.a() { // from class: com.google.android.exoplayer2.u
-                @Override // ne.x.a
+            this.f12667k.V0(i10);
+            this.f12669l.h(8, new x.a() { // from class: com.google.android.exoplayer2.u
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((Player.b) obj).onRepeatModeChanged(i10);
                 }
             });
             r2();
-            this.f12529l.f();
+            this.f12669l.f();
         }
     }
 
@@ -1882,29 +1882,29 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     @Override // com.google.android.exoplayer2.Player
     public long V() {
         w2();
-        if (this.f12542r0.f12661a.u()) {
-            return this.f12548u0;
+        if (this.f12682r0.f12801a.u()) {
+            return this.f12688u0;
         }
-        r1 r1Var = this.f12542r0;
-        if (r1Var.f12671k.f46868d != r1Var.f12662b.f46868d) {
-            return r1Var.f12661a.r(Q(), this.f12383a).f();
+        r1 r1Var = this.f12682r0;
+        if (r1Var.f12811k.f47986d != r1Var.f12802b.f47986d) {
+            return r1Var.f12801a.r(Q(), this.f12523a).f();
         }
-        long j10 = r1Var.f12676p;
-        if (this.f12542r0.f12671k.b()) {
-            r1 r1Var2 = this.f12542r0;
-            Timeline.b l10 = r1Var2.f12661a.l(r1Var2.f12671k.f46865a, this.f12533n);
-            long i10 = l10.i(this.f12542r0.f12671k.f46866b);
+        long j10 = r1Var.f12816p;
+        if (this.f12682r0.f12811k.b()) {
+            r1 r1Var2 = this.f12682r0;
+            Timeline.b l10 = r1Var2.f12801a.l(r1Var2.f12811k.f47983a, this.f12673n);
+            long i10 = l10.i(this.f12682r0.f12811k.f47984b);
             if (i10 == Long.MIN_VALUE) {
-                j10 = l10.f11878o;
+                j10 = l10.f12018o;
             } else {
                 j10 = i10;
             }
         }
-        r1 r1Var3 = this.f12542r0;
-        return ne.w0.p1(V1(r1Var3.f12661a, r1Var3.f12671k, j10));
+        r1 r1Var3 = this.f12682r0;
+        return oe.w0.p1(V1(r1Var3.f12801a, r1Var3.f12811k, j10));
     }
 
-    public void W1(qd.r rVar, boolean z10, boolean z11) {
+    public void W1(rd.r rVar, boolean z10, boolean z11) {
         w2();
         e2(rVar, z10);
         d();
@@ -1912,13 +1912,13 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
 
     public void X1() {
         AudioTrack audioTrack;
-        ne.y.f("ExoPlayerImpl", "Release " + Integer.toHexString(System.identityHashCode(this)) + " [ExoPlayerLib/2.19.1] [" + ne.w0.f39064e + "] [" + lc.u.b() + "]");
+        oe.y.f("ExoPlayerImpl", "Release " + Integer.toHexString(System.identityHashCode(this)) + " [ExoPlayerLib/2.19.1] [" + oe.w0.f40715e + "] [" + mc.u.b() + "]");
         w2();
-        if (ne.w0.f39060a < 21 && (audioTrack = this.T) != null) {
+        if (oe.w0.f40711a < 21 && (audioTrack = this.T) != null) {
             audioTrack.release();
             this.T = null;
         }
-        this.f12553z.b(false);
+        this.f12693z.b(false);
         y1 y1Var = this.B;
         if (y1Var != null) {
             y1Var.g();
@@ -1926,41 +1926,41 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         this.C.b(false);
         this.D.b(false);
         this.A.i();
-        if (!this.f12527k.j0()) {
-            this.f12529l.k(10, new x.a() { // from class: com.google.android.exoplayer2.q
-                @Override // ne.x.a
+        if (!this.f12667k.j0()) {
+            this.f12669l.k(10, new x.a() { // from class: com.google.android.exoplayer2.q
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
-                    ((Player.b) obj).onPlayerError(j.i(new lc.v(1), 1003));
+                    ((Player.b) obj).onPlayerError(j.i(new mc.v(1), 1003));
                 }
             });
         }
-        this.f12529l.i();
-        this.f12523i.e(null);
-        this.f12545t.a(this.f12541r);
-        r1 r1Var = this.f12542r0;
-        if (r1Var.f12675o) {
-            this.f12542r0 = r1Var.a();
+        this.f12669l.i();
+        this.f12663i.e(null);
+        this.f12685t.a(this.f12681r);
+        r1 r1Var = this.f12682r0;
+        if (r1Var.f12815o) {
+            this.f12682r0 = r1Var.a();
         }
-        r1 h10 = this.f12542r0.h(1);
-        this.f12542r0 = h10;
-        r1 c10 = h10.c(h10.f12662b);
-        this.f12542r0 = c10;
-        c10.f12676p = c10.f12678r;
-        this.f12542r0.f12677q = 0L;
-        this.f12541r.release();
-        this.f12521h.i();
+        r1 h10 = this.f12682r0.h(1);
+        this.f12682r0 = h10;
+        r1 c10 = h10.c(h10.f12802b);
+        this.f12682r0 = c10;
+        c10.f12816p = c10.f12818r;
+        this.f12682r0.f12817q = 0L;
+        this.f12681r.release();
+        this.f12661h.i();
         a2();
         Surface surface = this.V;
         if (surface != null) {
             surface.release();
             this.V = null;
         }
-        if (!this.f12532m0) {
-            this.f12526j0 = CueGroup.f12934i;
-            this.f12534n0 = true;
+        if (!this.f12672m0) {
+            this.f12666j0 = CueGroup.f13074i;
+            this.f12674n0 = true;
             return;
         }
-        android.support.v4.media.session.b.a(ne.a.e(null));
+        android.support.v4.media.session.b.a(oe.a.e(null));
         throw null;
     }
 
@@ -1973,19 +1973,19 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     @Override // com.google.android.exoplayer2.Player
     public long Z() {
         w2();
-        return ne.w0.p1(C1(this.f12542r0));
+        return oe.w0.p1(C1(this.f12682r0));
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long a0() {
         w2();
-        return this.f12547u;
+        return this.f12687u;
     }
 
     @Override // com.google.android.exoplayer2.Player
     public PlaybackParameters c() {
         w2();
-        return this.f12542r0.f12674n;
+        return this.f12682r0.f12814n;
     }
 
     @Override // com.google.android.exoplayer2.Player
@@ -1995,26 +1995,26 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         int i10 = 2;
         int p10 = this.A.p(B, 2);
         s2(B, p10, G1(B, p10));
-        r1 r1Var = this.f12542r0;
-        if (r1Var.f12665e != 1) {
+        r1 r1Var = this.f12682r0;
+        if (r1Var.f12805e != 1) {
             return;
         }
         r1 f10 = r1Var.f(null);
-        if (f10.f12661a.u()) {
+        if (f10.f12801a.u()) {
             i10 = 4;
         }
         r1 h10 = f10.h(i10);
         this.H++;
-        this.f12527k.h0();
+        this.f12667k.h0();
         t2(h10, 1, 1, false, 5, -9223372036854775807L, -1, false);
     }
 
-    public void d2(qd.r rVar) {
+    public void d2(rd.r rVar) {
         w2();
         f2(Collections.singletonList(rVar));
     }
 
-    public void e2(qd.r rVar, boolean z10) {
+    public void e2(rd.r rVar, boolean z10) {
         w2();
         g2(Collections.singletonList(rVar), z10);
     }
@@ -2022,7 +2022,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     @Override // com.google.android.exoplayer2.Player
     public boolean f() {
         w2();
-        return this.f12542r0.f12662b.b();
+        return this.f12682r0.f12802b.b();
     }
 
     public void f2(List list) {
@@ -2033,7 +2033,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     @Override // com.google.android.exoplayer2.Player
     public long g() {
         w2();
-        return ne.w0.p1(this.f12542r0.f12677q);
+        return oe.w0.p1(this.f12682r0.f12817q);
     }
 
     public void g2(List list, boolean z10) {
@@ -2045,10 +2045,10 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     public long getDuration() {
         w2();
         if (f()) {
-            r1 r1Var = this.f12542r0;
-            r.b bVar = r1Var.f12662b;
-            r1Var.f12661a.l(bVar.f46865a, this.f12533n);
-            return ne.w0.p1(this.f12533n.e(bVar.f46866b, bVar.f46867c));
+            r1 r1Var = this.f12682r0;
+            r.b bVar = r1Var.f12802b;
+            r1Var.f12801a.l(bVar.f47983a, this.f12673n);
+            return oe.w0.p1(this.f12673n.e(bVar.f47984b, bVar.f47985c));
         }
         return d0();
     }
@@ -2056,22 +2056,22 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     @Override // com.google.android.exoplayer2.Player
     public void h(Player.b bVar) {
         w2();
-        this.f12529l.j((Player.b) ne.a.e(bVar));
+        this.f12669l.j((Player.b) oe.a.e(bVar));
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void j(SurfaceView surfaceView) {
         SurfaceHolder holder;
         w2();
-        if (surfaceView instanceof oe.k) {
+        if (surfaceView instanceof pe.k) {
             a2();
             l2(surfaceView);
             i2(surfaceView.getHolder());
-        } else if (surfaceView instanceof pe.l) {
+        } else if (surfaceView instanceof qe.l) {
             a2();
-            this.X = (pe.l) surfaceView;
-            y1(this.f12552y).n(10000).m(this.X).l();
-            this.X.d(this.f12551x);
+            this.X = (qe.l) surfaceView;
+            y1(this.f12692y).n(10000).m(this.X).l();
+            this.X.d(this.f12691x);
             l2(this.X.getVideoSurface());
             i2(surfaceView.getHolder());
         } else {
@@ -2087,14 +2087,14 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     public void j2(PlaybackParameters playbackParameters) {
         w2();
         if (playbackParameters == null) {
-            playbackParameters = PlaybackParameters.f11832o;
+            playbackParameters = PlaybackParameters.f11972o;
         }
-        if (this.f12542r0.f12674n.equals(playbackParameters)) {
+        if (this.f12682r0.f12814n.equals(playbackParameters)) {
             return;
         }
-        r1 g10 = this.f12542r0.g(playbackParameters);
+        r1 g10 = this.f12682r0.g(playbackParameters);
         this.H++;
-        this.f12527k.T0(playbackParameters);
+        this.f12667k.T0(playbackParameters);
         t2(g10, 0, 1, false, 5, -9223372036854775807L, -1, false);
     }
 
@@ -2107,12 +2107,12 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         } else {
             z10 = false;
         }
-        ne.a.a(z10);
-        int size = this.f12535o.size();
+        oe.a.a(z10);
+        int size = this.f12675o.size();
         int min = Math.min(i11, size);
         if (i10 < size && i10 != min) {
-            r1 Y1 = Y1(this.f12542r0, i10, min);
-            t2(Y1, 0, 1, !Y1.f12662b.f46865a.equals(this.f12542r0.f12662b.f46865a), 4, C1(Y1), -1, false);
+            r1 Y1 = Y1(this.f12682r0, i10, min);
+            t2(Y1, 0, 1, !Y1.f12802b.f47983a.equals(this.f12682r0.f12802b.f47983a), 4, C1(Y1), -1, false);
         }
     }
 
@@ -2125,34 +2125,34 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         } else {
             z11 = false;
         }
-        ne.a.a(z11);
-        this.f12541r.v();
-        Timeline timeline = this.f12542r0.f12661a;
+        oe.a.a(z11);
+        this.f12681r.x();
+        Timeline timeline = this.f12682r0.f12801a;
         if (!timeline.u() && i10 >= timeline.t()) {
             return;
         }
         this.H++;
         if (f()) {
-            ne.y.i("ExoPlayerImpl", "seekTo ignored because an ad is playing");
-            t0.e eVar = new t0.e(this.f12542r0);
+            oe.y.i("ExoPlayerImpl", "seekTo ignored because an ad is playing");
+            t0.e eVar = new t0.e(this.f12682r0);
             eVar.b(1);
-            this.f12525j.a(eVar);
+            this.f12665j.a(eVar);
             return;
         }
-        r1 r1Var = this.f12542r0;
-        int i12 = r1Var.f12665e;
+        r1 r1Var = this.f12682r0;
+        int i12 = r1Var.f12805e;
         if (i12 == 3 || (i12 == 4 && !timeline.u())) {
-            r1Var = this.f12542r0.h(2);
+            r1Var = this.f12682r0.h(2);
         }
         int Q = Q();
         r1 S1 = S1(r1Var, timeline, T1(timeline, i10, j10));
-        this.f12527k.B0(timeline, i10, ne.w0.K0(j10));
+        this.f12667k.B0(timeline, i10, oe.w0.K0(j10));
         t2(S1, 0, 1, true, 1, C1(S1), Q, z10);
     }
 
     public void m2(int i10) {
         w2();
-        this.f12508a0 = i10;
+        this.f12648a0 = i10;
         b2(2, 4, Integer.valueOf(i10));
     }
 
@@ -2172,7 +2172,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         a2();
         this.Y = true;
         this.W = surfaceHolder;
-        surfaceHolder.addCallback(this.f12551x);
+        surfaceHolder.addCallback(this.f12691x);
         Surface surface = surfaceHolder.getSurface();
         if (surface != null && surface.isValid()) {
             l2(surface);
@@ -2187,19 +2187,19 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     @Override // com.google.android.exoplayer2.Player
     public Tracks o() {
         w2();
-        return this.f12542r0.f12669i.f29916d;
+        return this.f12682r0.f12809i.f30867d;
     }
 
     public void o2(float f10) {
         w2();
-        final float p10 = ne.w0.p(f10, 0.0f, 1.0f);
-        if (this.f12522h0 == p10) {
+        final float p10 = oe.w0.p(f10, 0.0f, 1.0f);
+        if (this.f12662h0 == p10) {
             return;
         }
-        this.f12522h0 = p10;
+        this.f12662h0 = p10;
         c2();
-        this.f12529l.k(22, new x.a() { // from class: com.google.android.exoplayer2.r
-            @Override // ne.x.a
+        this.f12669l.k(22, new x.a() { // from class: com.google.android.exoplayer2.r
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((Player.b) obj).onVolumeChanged(p10);
             }
@@ -2210,36 +2210,36 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         w2();
         this.A.p(B(), 1);
         q2(null);
-        this.f12526j0 = new CueGroup(ni.s.t(), this.f12542r0.f12678r);
+        this.f12666j0 = new CueGroup(oi.s.t(), this.f12682r0.f12818r);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public CueGroup q() {
         w2();
-        return this.f12526j0;
+        return this.f12666j0;
     }
 
     public void q1(AnalyticsListener analyticsListener) {
-        this.f12541r.B((AnalyticsListener) ne.a.e(analyticsListener));
+        this.f12681r.z((AnalyticsListener) oe.a.e(analyticsListener));
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int r() {
         w2();
         if (f()) {
-            return this.f12542r0.f12662b.f46866b;
+            return this.f12682r0.f12802b.f47984b;
         }
         return -1;
     }
 
-    public void r1(lc.i iVar) {
-        this.f12531m.add(iVar);
+    public void r1(mc.i iVar) {
+        this.f12671m.add(iVar);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int u() {
         w2();
-        return this.f12542r0.f12673m;
+        return this.f12682r0.f12813m;
     }
 
     public void u1() {
@@ -2252,7 +2252,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
     @Override // com.google.android.exoplayer2.Player
     public Timeline v() {
         w2();
-        return this.f12542r0.f12661a;
+        return this.f12682r0.f12801a;
     }
 
     public void v1(SurfaceHolder surfaceHolder) {
@@ -2264,7 +2264,7 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
 
     @Override // com.google.android.exoplayer2.Player
     public Looper w() {
-        return this.f12543s;
+        return this.f12683s;
     }
 
     @Override // com.google.android.exoplayer2.Player
@@ -2278,9 +2278,9 @@ public final class i0 extends com.google.android.exoplayer2.e implements Player 
         a2();
         this.Z = textureView;
         if (textureView.getSurfaceTextureListener() != null) {
-            ne.y.i("ExoPlayerImpl", "Replacing existing SurfaceTextureListener.");
+            oe.y.i("ExoPlayerImpl", "Replacing existing SurfaceTextureListener.");
         }
-        textureView.setSurfaceTextureListener(this.f12551x);
+        textureView.setSurfaceTextureListener(this.f12691x);
         if (textureView.isAvailable()) {
             surfaceTexture = textureView.getSurfaceTexture();
         } else {

@@ -7,17 +7,17 @@ import com.facebook.react.modules.network.OkHttpClientProvider;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.h;
 import java.util.Map;
-import le.r;
-import ne.w0;
+import me.r;
+import oe.w0;
 import okhttp3.OkHttpClient;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static DataSource.Factory f8209a;
+    private static DataSource.Factory f8349a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static String f8210b;
+    private static String f8350b;
 
     private static DataSource.Factory a(ReactContext reactContext, r rVar, Map map) {
         return new com.google.android.exoplayer2.upstream.c(reactContext, rVar, b(reactContext, rVar, map));
@@ -25,8 +25,8 @@ public abstract class b {
 
     private static h.c b(ReactContext reactContext, r rVar, Map map) {
         OkHttpClient okHttpClient = OkHttpClientProvider.getOkHttpClient();
-        ((CookieJarContainer) okHttpClient.r()).setCookieJar(new bu.i(new ForwardingCookieHandler(reactContext)));
-        sc.a aVar = new sc.a(okHttpClient, d(reactContext), rVar);
+        ((CookieJarContainer) okHttpClient.r()).setCookieJar(new cu.i(new ForwardingCookieHandler(reactContext)));
+        tc.a aVar = new tc.a(okHttpClient, d(reactContext), rVar);
         if (map != null) {
             aVar.b(map);
         }
@@ -34,20 +34,20 @@ public abstract class b {
     }
 
     public static DataSource.Factory c(ReactContext reactContext, r rVar, Map map) {
-        if (f8209a == null || (map != null && !map.isEmpty())) {
-            f8209a = a(reactContext, rVar, map);
+        if (f8349a == null || (map != null && !map.isEmpty())) {
+            f8349a = a(reactContext, rVar, map);
         }
-        return f8209a;
+        return f8349a;
     }
 
     public static String d(ReactContext reactContext) {
-        if (f8210b == null) {
-            f8210b = w0.r0(reactContext, "ReactNativeVideo");
+        if (f8350b == null) {
+            f8350b = w0.r0(reactContext, "ReactNativeVideo");
         }
-        return f8210b;
+        return f8350b;
     }
 
     public static void e(DataSource.Factory factory) {
-        f8209a = factory;
+        f8349a = factory;
     }
 }

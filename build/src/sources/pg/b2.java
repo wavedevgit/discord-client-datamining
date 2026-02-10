@@ -1,33 +1,29 @@
 package pg;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.Map;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b2 {
+final class b2 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f43977a;
+    static final b2 f43314a = new b2();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f43978b;
+    private static final zi.c f43315b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final yi.d f43979c;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b2(Map map, Map map2, yi.d dVar) {
-        this.f43977a = map;
-        this.f43978b = map2;
-        this.f43979c = dVar;
+    static {
+        c.b a10 = zi.c.a("format");
+        f fVar = new f();
+        fVar.a(1);
+        f43315b = a10.b(fVar.b()).a();
     }
 
-    public final byte[] a(Object obj) {
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        try {
-            new y1(byteArrayOutputStream, this.f43977a, this.f43978b, this.f43979c).i(obj);
-        } catch (IOException unused) {
-        }
-        return byteArrayOutputStream.toByteArray();
+    private b2() {
+    }
+
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

@@ -8,67 +8,67 @@ import android.view.ViewGroup;
 public class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private Context f5735a;
+    private Context f5432a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f5736b = -1;
+    private int f5433b = -1;
 
     /* renamed from: c  reason: collision with root package name */
-    private ViewGroup f5737c;
+    private ViewGroup f5434c;
 
     /* renamed from: d  reason: collision with root package name */
-    private View f5738d;
+    private View f5435d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Runnable f5739e;
+    private Runnable f5436e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Runnable f5740f;
+    private Runnable f5437f;
 
     public n(ViewGroup viewGroup, View view) {
-        this.f5737c = viewGroup;
-        this.f5738d = view;
+        this.f5434c = viewGroup;
+        this.f5435d = view;
     }
 
     public static n c(ViewGroup viewGroup) {
-        return (n) viewGroup.getTag(l.f5729c);
+        return (n) viewGroup.getTag(l.f5426c);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void f(ViewGroup viewGroup, n nVar) {
-        viewGroup.setTag(l.f5729c, nVar);
+        viewGroup.setTag(l.f5426c, nVar);
     }
 
     public void a() {
-        if (this.f5736b > 0 || this.f5738d != null) {
+        if (this.f5433b > 0 || this.f5435d != null) {
             d().removeAllViews();
-            if (this.f5736b > 0) {
-                LayoutInflater.from(this.f5735a).inflate(this.f5736b, this.f5737c);
+            if (this.f5433b > 0) {
+                LayoutInflater.from(this.f5432a).inflate(this.f5433b, this.f5434c);
             } else {
-                this.f5737c.addView(this.f5738d);
+                this.f5434c.addView(this.f5435d);
             }
         }
-        Runnable runnable = this.f5739e;
+        Runnable runnable = this.f5436e;
         if (runnable != null) {
             runnable.run();
         }
-        f(this.f5737c, this);
+        f(this.f5434c, this);
     }
 
     public void b() {
         Runnable runnable;
-        if (c(this.f5737c) == this && (runnable = this.f5740f) != null) {
+        if (c(this.f5434c) == this && (runnable = this.f5437f) != null) {
             runnable.run();
         }
     }
 
     public ViewGroup d() {
-        return this.f5737c;
+        return this.f5434c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean e() {
-        if (this.f5736b > 0) {
+        if (this.f5433b > 0) {
             return true;
         }
         return false;

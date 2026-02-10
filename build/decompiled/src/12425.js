@@ -1,58 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1) { // Environment: var0
-        _fun94907: for (var _fun94907_ip = 0;;) switch (_fun94907_ip) {
-            case 0:
-                var1 = arg1;
-                var0 = var1.className;
-                var2 = ' ';
-                var0 = var2 + var0;
-                var3 = var0 + var2;
-                var2 = var3.indexOf;
-                var0 = ' combokeys ';
-                var2 = var2.bind(var3)(var0);
-                var0 = -1;
-                if (!(!(var2 > var0))) {
-                    _fun94907_ip = 107;
-                    continue _fun94907
-                }
-            case 50:
-                var2 = var1.tagName;
-                var0 = var2.toLowerCase;
-                var3 = var0.bind(var2)();
-                var0 = 'input';
-                var0 = var0 === var3;
-                if (var0) {
-                    _fun94907_ip = 85;
-                    continue _fun94907
-                }
-            case 77:
-                var2 = 'select';
-                var0 = var2 === var3;
-            case 85:
-                if (var0) {
-                    _fun94907_ip = 96;
-                    continue _fun94907
-                }
-            case 88:
-                var2 = 'textarea';
-                var0 = var2 === var3;
-            case 96:
-                if (var0) {
-                    _fun94907_ip = 105;
-                    continue _fun94907
-                }
-            case 99:
-                var0 = var1.isContentEditable;
-            case 105:
-                return var0;
-            case 107:
-                var0 = false;
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
+    _fun94895: for (var _fun94895_ip = 0;;) switch (_fun94895_ip) {
+        case 0:
+            var3 = module;
+            var0 = {
+                8: 'backspace',
+                9: 'tab',
+                13: 'enter',
+                16: 'shift',
+                17: 'ctrl',
+                18: 'alt',
+                20: 'capslock',
+                27: 'esc',
+                32: 'space',
+                33: 'pageup',
+                34: 'pagedown',
+                35: 'end',
+                36: 'home',
+                37: 'left',
+                38: 'up',
+                39: 'right',
+                40: 'down',
+                45: 'ins',
+                46: 'del',
+                91: 'meta',
+                93: 'meta',
+                187: 'plus',
+                189: 'minus',
+                224: 'meta'
+            };
+            var3.exports = var0;
+            var8 = 1;
+            var7 = 111;
+            var6 = 'f';
+            var2 = 96;
+            var1 = 9;
+            var4 = 20;
+        case 42:
+            var10 = var3.exports;
+            var9 = var7 + var8;
+            var0 = var6 + var8;
+            var10[var9] = var0;
+            var8 = var8 + 1;
+            var0 = 0;
+            if (var8 < var4) {
+                _fun94895_ip = 42;
+                continue _fun94895
+            }
+        case 68:
+            var5 = var3.exports;
+            var4 = var0 + var2;
+            var5[var4] = var0;
+            var0 = var0 + 1;
+            if (var0 <= var1) {
+                _fun94895_ip = 68;
+                continue _fun94895
+            }
+        case 88:
+            var0 = undefined;
+            return var0;
+    }
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

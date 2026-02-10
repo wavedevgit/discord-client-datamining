@@ -27,43 +27,43 @@ import java.util.concurrent.ConcurrentHashMap;
 public class w {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final RectF f2284l = new RectF();
+    private static final RectF f1981l = new RectF();
 
     /* renamed from: m  reason: collision with root package name */
-    private static ConcurrentHashMap f2285m = new ConcurrentHashMap();
+    private static ConcurrentHashMap f1982m = new ConcurrentHashMap();
 
     /* renamed from: a  reason: collision with root package name */
-    private int f2286a = 0;
+    private int f1983a = 0;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f2287b = false;
+    private boolean f1984b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f2288c = -1.0f;
+    private float f1985c = -1.0f;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f2289d = -1.0f;
+    private float f1986d = -1.0f;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f2290e = -1.0f;
+    private float f1987e = -1.0f;
 
     /* renamed from: f  reason: collision with root package name */
-    private int[] f2291f = new int[0];
+    private int[] f1988f = new int[0];
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f2292g = false;
+    private boolean f1989g = false;
 
     /* renamed from: h  reason: collision with root package name */
-    private TextPaint f2293h;
+    private TextPaint f1990h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final TextView f2294i;
+    private final TextView f1991i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Context f2295j;
+    private final Context f1992j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final d f2296k;
+    private final d f1993k;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -127,12 +127,12 @@ public class w {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w(TextView textView) {
-        this.f2294i = textView;
-        this.f2295j = textView.getContext();
+        this.f1991i = textView;
+        this.f1992j = textView.getContext();
         if (Build.VERSION.SDK_INT >= 29) {
-            this.f2296k = new c();
+            this.f1993k = new c();
         } else {
-            this.f2296k = new b();
+            this.f1993k = new b();
         }
     }
 
@@ -159,23 +159,23 @@ public class w {
     }
 
     private void c() {
-        this.f2286a = 0;
-        this.f2289d = -1.0f;
-        this.f2290e = -1.0f;
-        this.f2288c = -1.0f;
-        this.f2291f = new int[0];
-        this.f2287b = false;
+        this.f1983a = 0;
+        this.f1986d = -1.0f;
+        this.f1987e = -1.0f;
+        this.f1985c = -1.0f;
+        this.f1988f = new int[0];
+        this.f1984b = false;
     }
 
     private int e(RectF rectF) {
-        int length = this.f2291f.length;
+        int length = this.f1988f.length;
         if (length != 0) {
             int i10 = 1;
             int i11 = length - 1;
             int i12 = 0;
             while (i10 <= i11) {
                 int i13 = (i10 + i11) / 2;
-                if (x(this.f2291f[i13], rectF)) {
+                if (x(this.f1988f[i13], rectF)) {
                     int i14 = i13 + 1;
                     i12 = i10;
                     i10 = i14;
@@ -184,17 +184,17 @@ public class w {
                     i11 = i12;
                 }
             }
-            return this.f2291f[i12];
+            return this.f1988f[i12];
         }
         throw new IllegalStateException("No available text sizes to choose from.");
     }
 
     private static Method k(String str) {
         try {
-            Method method = (Method) f2285m.get(str);
+            Method method = (Method) f1982m.get(str);
             if (method == null && (method = TextView.class.getDeclaredMethod(str, null)) != null) {
                 method.setAccessible(true);
-                f2285m.put(str, method);
+                f1982m.put(str, method);
                 return method;
             }
             return method;
@@ -214,44 +214,44 @@ public class w {
     }
 
     private void s(float f10) {
-        if (f10 != this.f2294i.getPaint().getTextSize()) {
-            this.f2294i.getPaint().setTextSize(f10);
-            boolean isInLayout = this.f2294i.isInLayout();
-            if (this.f2294i.getLayout() != null) {
-                this.f2287b = false;
+        if (f10 != this.f1991i.getPaint().getTextSize()) {
+            this.f1991i.getPaint().setTextSize(f10);
+            boolean isInLayout = this.f1991i.isInLayout();
+            if (this.f1991i.getLayout() != null) {
+                this.f1984b = false;
                 try {
                     Method k10 = k("nullLayouts");
                     if (k10 != null) {
-                        k10.invoke(this.f2294i, null);
+                        k10.invoke(this.f1991i, null);
                     }
                 } catch (Exception e10) {
                     Log.w("ACTVAutoSizeHelper", "Failed to invoke TextView#nullLayouts() method", e10);
                 }
                 if (!isInLayout) {
-                    this.f2294i.requestLayout();
+                    this.f1991i.requestLayout();
                 } else {
-                    this.f2294i.forceLayout();
+                    this.f1991i.forceLayout();
                 }
-                this.f2294i.invalidate();
+                this.f1991i.invalidate();
             }
         }
     }
 
     private boolean u() {
-        if (y() && this.f2286a == 1) {
-            if (!this.f2292g || this.f2291f.length == 0) {
-                int floor = ((int) Math.floor((this.f2290e - this.f2289d) / this.f2288c)) + 1;
+        if (y() && this.f1983a == 1) {
+            if (!this.f1989g || this.f1988f.length == 0) {
+                int floor = ((int) Math.floor((this.f1987e - this.f1986d) / this.f1985c)) + 1;
                 int[] iArr = new int[floor];
                 for (int i10 = 0; i10 < floor; i10++) {
-                    iArr[i10] = Math.round(this.f2289d + (i10 * this.f2288c));
+                    iArr[i10] = Math.round(this.f1986d + (i10 * this.f1985c));
                 }
-                this.f2291f = b(iArr);
+                this.f1988f = b(iArr);
             }
-            this.f2287b = true;
+            this.f1984b = true;
         } else {
-            this.f2287b = false;
+            this.f1984b = false;
         }
-        return this.f2287b;
+        return this.f1984b;
     }
 
     private void v(TypedArray typedArray) {
@@ -261,7 +261,7 @@ public class w {
             for (int i10 = 0; i10 < length; i10++) {
                 iArr[i10] = typedArray.getDimensionPixelSize(i10, -1);
             }
-            this.f2291f = b(iArr);
+            this.f1988f = b(iArr);
             w();
         }
     }
@@ -270,31 +270,31 @@ public class w {
         int[] iArr;
         int length;
         boolean z10;
-        if (this.f2291f.length > 0) {
+        if (this.f1988f.length > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f2292g = z10;
+        this.f1989g = z10;
         if (z10) {
-            this.f2286a = 1;
-            this.f2289d = iArr[0];
-            this.f2290e = iArr[length - 1];
-            this.f2288c = -1.0f;
+            this.f1983a = 1;
+            this.f1986d = iArr[0];
+            this.f1987e = iArr[length - 1];
+            this.f1985c = -1.0f;
         }
         return z10;
     }
 
     private boolean x(int i10, RectF rectF) {
         CharSequence transformation;
-        CharSequence text = this.f2294i.getText();
-        TransformationMethod transformationMethod = this.f2294i.getTransformationMethod();
-        if (transformationMethod != null && (transformation = transformationMethod.getTransformation(text, this.f2294i)) != null) {
+        CharSequence text = this.f1991i.getText();
+        TransformationMethod transformationMethod = this.f1991i.getTransformationMethod();
+        if (transformationMethod != null && (transformation = transformationMethod.getTransformation(text, this.f1991i)) != null) {
             text = transformation;
         }
-        int maxLines = this.f2294i.getMaxLines();
+        int maxLines = this.f1991i.getMaxLines();
         l(i10);
-        StaticLayout d10 = d(text, (Layout.Alignment) m(this.f2294i, "getLayoutAlignment", Layout.Alignment.ALIGN_NORMAL), Math.round(rectF.right), maxLines);
+        StaticLayout d10 = d(text, (Layout.Alignment) m(this.f1991i, "getLayoutAlignment", Layout.Alignment.ALIGN_NORMAL), Math.round(rectF.right), maxLines);
         if ((maxLines != -1 && (d10.getLineCount() > maxLines || d10.getLineEnd(d10.getLineCount() - 1) != text.length())) || d10.getHeight() > rectF.bottom) {
             return false;
         }
@@ -302,18 +302,18 @@ public class w {
     }
 
     private boolean y() {
-        return !(this.f2294i instanceof AppCompatEditText);
+        return !(this.f1991i instanceof AppCompatEditText);
     }
 
     private void z(float f10, float f11, float f12) {
         if (f10 > 0.0f) {
             if (f11 > f10) {
                 if (f12 > 0.0f) {
-                    this.f2286a = 1;
-                    this.f2289d = f10;
-                    this.f2290e = f11;
-                    this.f2288c = f12;
-                    this.f2292g = false;
+                    this.f1983a = 1;
+                    this.f1986d = f10;
+                    this.f1987e = f11;
+                    this.f1985c = f12;
+                    this.f1989g = false;
                     return;
                 }
                 throw new IllegalArgumentException("The auto-size step granularity (" + f12 + "px) is less or equal to (0px)");
@@ -327,23 +327,23 @@ public class w {
     public void a() {
         int measuredWidth;
         if (n()) {
-            if (this.f2287b) {
-                if (this.f2294i.getMeasuredHeight() > 0 && this.f2294i.getMeasuredWidth() > 0) {
-                    if (this.f2296k.b(this.f2294i)) {
+            if (this.f1984b) {
+                if (this.f1991i.getMeasuredHeight() > 0 && this.f1991i.getMeasuredWidth() > 0) {
+                    if (this.f1993k.b(this.f1991i)) {
                         measuredWidth = 1048576;
                     } else {
-                        measuredWidth = (this.f2294i.getMeasuredWidth() - this.f2294i.getTotalPaddingLeft()) - this.f2294i.getTotalPaddingRight();
+                        measuredWidth = (this.f1991i.getMeasuredWidth() - this.f1991i.getTotalPaddingLeft()) - this.f1991i.getTotalPaddingRight();
                     }
-                    int height = (this.f2294i.getHeight() - this.f2294i.getCompoundPaddingBottom()) - this.f2294i.getCompoundPaddingTop();
+                    int height = (this.f1991i.getHeight() - this.f1991i.getCompoundPaddingBottom()) - this.f1991i.getCompoundPaddingTop();
                     if (measuredWidth > 0 && height > 0) {
-                        RectF rectF = f2284l;
+                        RectF rectF = f1981l;
                         synchronized (rectF) {
                             try {
                                 rectF.setEmpty();
                                 rectF.right = measuredWidth;
                                 rectF.bottom = height;
                                 float e10 = e(rectF);
-                                if (e10 != this.f2294i.getTextSize()) {
+                                if (e10 != this.f1991i.getTextSize()) {
                                     t(0, e10);
                                 }
                             } finally {
@@ -356,53 +356,53 @@ public class w {
                     return;
                 }
             }
-            this.f2287b = true;
+            this.f1984b = true;
         }
     }
 
     StaticLayout d(CharSequence charSequence, Layout.Alignment alignment, int i10, int i11) {
-        return a.a(charSequence, alignment, i10, i11, this.f2294i, this.f2293h, this.f2296k);
+        return a.a(charSequence, alignment, i10, i11, this.f1991i, this.f1990h, this.f1993k);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int f() {
-        return Math.round(this.f2290e);
+        return Math.round(this.f1987e);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int g() {
-        return Math.round(this.f2289d);
+        return Math.round(this.f1986d);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int h() {
-        return Math.round(this.f2288c);
+        return Math.round(this.f1985c);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int[] i() {
-        return this.f2291f;
+        return this.f1988f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int j() {
-        return this.f2286a;
+        return this.f1983a;
     }
 
     void l(int i10) {
-        TextPaint textPaint = this.f2293h;
+        TextPaint textPaint = this.f1990h;
         if (textPaint == null) {
-            this.f2293h = new TextPaint();
+            this.f1990h = new TextPaint();
         } else {
             textPaint.reset();
         }
-        this.f2293h.set(this.f2294i.getPaint());
-        this.f2293h.setTextSize(i10);
+        this.f1990h.set(this.f1991i.getPaint());
+        this.f1990h.setTextSize(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean n() {
-        if (y() && this.f2286a != 0) {
+        if (y() && this.f1983a != 0) {
             return true;
         }
         return false;
@@ -414,37 +414,37 @@ public class w {
         float f11;
         float f12;
         int resourceId;
-        TypedArray obtainStyledAttributes = this.f2295j.obtainStyledAttributes(attributeSet, f.j.f22367g0, i10, 0);
-        TextView textView = this.f2294i;
-        androidx.core.view.h0.l0(textView, textView.getContext(), f.j.f22367g0, attributeSet, obtainStyledAttributes, i10, 0);
-        if (obtainStyledAttributes.hasValue(f.j.f22392l0)) {
-            this.f2286a = obtainStyledAttributes.getInt(f.j.f22392l0, 0);
+        TypedArray obtainStyledAttributes = this.f1992j.obtainStyledAttributes(attributeSet, f.j.f22322g0, i10, 0);
+        TextView textView = this.f1991i;
+        androidx.core.view.h0.l0(textView, textView.getContext(), f.j.f22322g0, attributeSet, obtainStyledAttributes, i10, 0);
+        if (obtainStyledAttributes.hasValue(f.j.f22347l0)) {
+            this.f1983a = obtainStyledAttributes.getInt(f.j.f22347l0, 0);
         }
-        if (obtainStyledAttributes.hasValue(f.j.f22387k0)) {
-            f10 = obtainStyledAttributes.getDimension(f.j.f22387k0, -1.0f);
+        if (obtainStyledAttributes.hasValue(f.j.f22342k0)) {
+            f10 = obtainStyledAttributes.getDimension(f.j.f22342k0, -1.0f);
         } else {
             f10 = -1.0f;
         }
-        if (obtainStyledAttributes.hasValue(f.j.f22377i0)) {
-            f11 = obtainStyledAttributes.getDimension(f.j.f22377i0, -1.0f);
+        if (obtainStyledAttributes.hasValue(f.j.f22332i0)) {
+            f11 = obtainStyledAttributes.getDimension(f.j.f22332i0, -1.0f);
         } else {
             f11 = -1.0f;
         }
-        if (obtainStyledAttributes.hasValue(f.j.f22372h0)) {
-            f12 = obtainStyledAttributes.getDimension(f.j.f22372h0, -1.0f);
+        if (obtainStyledAttributes.hasValue(f.j.f22327h0)) {
+            f12 = obtainStyledAttributes.getDimension(f.j.f22327h0, -1.0f);
         } else {
             f12 = -1.0f;
         }
-        if (obtainStyledAttributes.hasValue(f.j.f22382j0) && (resourceId = obtainStyledAttributes.getResourceId(f.j.f22382j0, 0)) > 0) {
+        if (obtainStyledAttributes.hasValue(f.j.f22337j0) && (resourceId = obtainStyledAttributes.getResourceId(f.j.f22337j0, 0)) > 0) {
             TypedArray obtainTypedArray = obtainStyledAttributes.getResources().obtainTypedArray(resourceId);
             v(obtainTypedArray);
             obtainTypedArray.recycle();
         }
         obtainStyledAttributes.recycle();
         if (y()) {
-            if (this.f2286a == 1) {
-                if (!this.f2292g) {
-                    DisplayMetrics displayMetrics = this.f2295j.getResources().getDisplayMetrics();
+            if (this.f1983a == 1) {
+                if (!this.f1989g) {
+                    DisplayMetrics displayMetrics = this.f1992j.getResources().getDisplayMetrics();
                     if (f11 == -1.0f) {
                         f11 = TypedValue.applyDimension(2, 12.0f, displayMetrics);
                     }
@@ -461,13 +461,13 @@ public class w {
             }
             return;
         }
-        this.f2286a = 0;
+        this.f1983a = 0;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(int i10, int i11, int i12, int i13) {
         if (y()) {
-            DisplayMetrics displayMetrics = this.f2295j.getResources().getDisplayMetrics();
+            DisplayMetrics displayMetrics = this.f1992j.getResources().getDisplayMetrics();
             z(TypedValue.applyDimension(i13, i10, displayMetrics), TypedValue.applyDimension(i13, i11, displayMetrics), TypedValue.applyDimension(i13, i12, displayMetrics));
             if (u()) {
                 a();
@@ -484,17 +484,17 @@ public class w {
                 if (i10 == 0) {
                     iArr2 = Arrays.copyOf(iArr, length);
                 } else {
-                    DisplayMetrics displayMetrics = this.f2295j.getResources().getDisplayMetrics();
+                    DisplayMetrics displayMetrics = this.f1992j.getResources().getDisplayMetrics();
                     for (int i11 = 0; i11 < length; i11++) {
                         iArr2[i11] = Math.round(TypedValue.applyDimension(i10, iArr[i11], displayMetrics));
                     }
                 }
-                this.f2291f = b(iArr2);
+                this.f1988f = b(iArr2);
                 if (!w()) {
                     throw new IllegalArgumentException("None of the preset sizes is valid: " + Arrays.toString(iArr));
                 }
             } else {
-                this.f2292g = false;
+                this.f1989g = false;
             }
             if (u()) {
                 a();
@@ -507,7 +507,7 @@ public class w {
         if (y()) {
             if (i10 != 0) {
                 if (i10 == 1) {
-                    DisplayMetrics displayMetrics = this.f2295j.getResources().getDisplayMetrics();
+                    DisplayMetrics displayMetrics = this.f1992j.getResources().getDisplayMetrics();
                     z(TypedValue.applyDimension(2, 12.0f, displayMetrics), TypedValue.applyDimension(2, 112.0f, displayMetrics), 1.0f);
                     if (u()) {
                         a();
@@ -524,7 +524,7 @@ public class w {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void t(int i10, float f10) {
         Resources resources;
-        Context context = this.f2295j;
+        Context context = this.f1992j;
         if (context == null) {
             resources = Resources.getSystem();
         } else {

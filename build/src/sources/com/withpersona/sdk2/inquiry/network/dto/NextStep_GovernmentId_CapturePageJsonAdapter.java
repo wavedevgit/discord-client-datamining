@@ -81,8 +81,8 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                 String str30 = str6;
                 switch (reader.J(this.options)) {
                     case -1:
-                        reader.E0();
-                        reader.S();
+                        reader.C0();
+                        reader.T();
                         str6 = str30;
                         str = str25;
                         str2 = str26;
@@ -105,7 +105,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                             str4 = str28;
                             break;
                         } else {
-                            throw an.c.x("scanFront", "scanFront", reader);
+                            throw bn.c.x("scanFront", "scanFront", reader);
                         }
                     case 2:
                         str3 = (String) this.stringAdapter.fromJson(reader);
@@ -116,7 +116,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                             str4 = str28;
                             break;
                         } else {
-                            throw an.c.x("scanBack", "scanBack", reader);
+                            throw bn.c.x("scanBack", "scanBack", reader);
                         }
                     case 3:
                         str4 = (String) this.stringAdapter.fromJson(reader);
@@ -127,7 +127,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                             str3 = str27;
                             break;
                         } else {
-                            throw an.c.x("scanPdf417", "scanPdf417", reader);
+                            throw bn.c.x("scanPdf417", "scanPdf417", reader);
                         }
                     case 4:
                         str5 = (String) this.stringAdapter.fromJson(reader);
@@ -139,12 +139,12 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                             str4 = str28;
                             continue;
                         } else {
-                            throw an.c.x("scanFrontOrBack", "scanFrontOrBack", reader);
+                            throw bn.c.x("scanFrontOrBack", "scanFrontOrBack", reader);
                         }
                     case 5:
                         str6 = (String) this.stringAdapter.fromJson(reader);
                         if (str6 == null) {
-                            throw an.c.x("scanSignature", "scanSignature", reader);
+                            throw bn.c.x("scanSignature", "scanSignature", reader);
                         }
                         str = str25;
                         str2 = str26;
@@ -154,7 +154,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                     case 6:
                         str7 = (String) this.stringAdapter.fromJson(reader);
                         if (str7 == null) {
-                            throw an.c.x("capturing", "capturing", reader);
+                            throw bn.c.x("capturing", "capturing", reader);
                         }
                         str6 = str30;
                         str = str25;
@@ -165,7 +165,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                     case 7:
                         str8 = (String) this.stringAdapter.fromJson(reader);
                         if (str8 == null) {
-                            throw an.c.x("confirmCapture", "confirmCapture", reader);
+                            throw bn.c.x("confirmCapture", "confirmCapture", reader);
                         }
                         str6 = str30;
                         str = str25;
@@ -322,19 +322,19 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                                         if (str8 != null) {
                                             return new NextStep.GovernmentId.CapturePage(str25, str26, str27, str28, str29, str31, str7, str8, str9, str10, str11, str12, str13, str14, str15, str16, str17, str18, str19, str20, str21, str22, str23, str24);
                                         }
-                                        throw an.c.o("confirmCapture", "confirmCapture", reader);
+                                        throw bn.c.o("confirmCapture", "confirmCapture", reader);
                                     }
-                                    throw an.c.o("capturing", "capturing", reader);
+                                    throw bn.c.o("capturing", "capturing", reader);
                                 }
-                                throw an.c.o("scanSignature", "scanSignature", reader);
+                                throw bn.c.o("scanSignature", "scanSignature", reader);
                             }
-                            throw an.c.o("scanFrontOrBack", "scanFrontOrBack", reader);
+                            throw bn.c.o("scanFrontOrBack", "scanFrontOrBack", reader);
                         }
-                        throw an.c.o("scanPdf417", "scanPdf417", reader);
+                        throw bn.c.o("scanPdf417", "scanPdf417", reader);
                     }
-                    throw an.c.o("scanBack", "scanBack", reader);
+                    throw bn.c.o("scanBack", "scanBack", reader);
                 }
-                throw an.c.o("scanFront", "scanFront", reader);
+                throw bn.c.o("scanFront", "scanFront", reader);
             }
         }
     }

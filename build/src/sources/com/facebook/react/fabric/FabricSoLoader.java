@@ -19,11 +19,11 @@ public final class FabricSoLoader {
         if (didInit) {
             return;
         }
-        qb.a.c(0L, "FabricSoLoader");
+        rb.a.c(0L, "FabricSoLoader");
         ReactMarker.logMarker(ReactMarkerConstants.LOAD_REACT_NATIVE_SO_FILE_START);
         SoLoader.t("fabricjni");
         ReactMarker.logMarker(ReactMarkerConstants.LOAD_REACT_NATIVE_SO_FILE_END);
-        qb.a.i(0L);
+        rb.a.i(0L);
         didInit = true;
     }
 }

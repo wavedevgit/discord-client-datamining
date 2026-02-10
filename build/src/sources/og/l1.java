@@ -1,43 +1,38 @@
 package og;
 
-import yi.c;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class l1 implements yi.d {
+public abstract class l1 extends d1 implements Set {
 
-    /* renamed from: a  reason: collision with root package name */
-    static final l1 f42270a = new l1();
+    /* renamed from: e  reason: collision with root package name */
+    private transient i1 f41110e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42271b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42272c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42273d;
-
-    static {
-        c.b a10 = yi.c.a("logEventKey");
-        f fVar = new f();
-        fVar.a(1);
-        f42271b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("eventCount");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42272c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("inferenceDurationStats");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42273d = a12.b(fVar3.b()).a();
+    @Override // java.util.Collection, java.util.Set
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        return e2.b(this, obj);
     }
 
-    private l1() {
+    public final i1 f() {
+        i1 i1Var = this.f41110e;
+        if (i1Var == null) {
+            i1 g10 = g();
+            this.f41110e = g10;
+            return g10;
+        }
+        return i1Var;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    i1 g() {
+        Object[] array = toArray();
+        int i10 = i1.f40951i;
+        return i1.g(array, array.length);
+    }
+
+    @Override // java.util.Collection, java.util.Set
+    public final int hashCode() {
+        return e2.a(this);
     }
 }

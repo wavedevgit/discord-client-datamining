@@ -1,42 +1,43 @@
 package qg;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class s5 implements yi.d {
+final class s5 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s5 f47557a = new s5();
+    static final s5 f46273a = new s5();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f46274b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f46275c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f46276d;
 
     static {
-        c.b a10 = yi.c.a("inferenceCommonLogEvent");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("options");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = yi.c.a("modelInitializationMs");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
-        c.b a13 = yi.c.a("confidenceThreshold");
-        v1 v1Var4 = new v1();
-        v1Var4.a(4);
-        a13.b(v1Var4.b()).a();
-        c.b a14 = yi.c.a("imageInfo");
-        v1 v1Var5 = new v1();
-        v1Var5.a(5);
-        a14.b(v1Var5.b()).a();
+        c.b a10 = zi.c.a("modelType");
+        s1 s1Var = new s1();
+        s1Var.a(1);
+        f46274b = a10.b(s1Var.b()).a();
+        c.b a11 = zi.c.a("isDownloaded");
+        s1 s1Var2 = new s1();
+        s1Var2.a(2);
+        f46275c = a11.b(s1Var2.b()).a();
+        c.b a12 = zi.c.a("modelName");
+        s1 s1Var3 = new s1();
+        s1Var3.a(3);
+        f46276d = a12.b(s1Var3.b()).a();
     }
 
     private s5() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
+        zi.e eVar = (zi.e) obj2;
         throw null;
     }
 }

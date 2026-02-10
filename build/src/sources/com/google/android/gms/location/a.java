@@ -3,8 +3,8 @@ package com.google.android.gms.location;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.WorkSource;
-import hf.b;
-import lg.p;
+import jf.b;
+import mg.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator

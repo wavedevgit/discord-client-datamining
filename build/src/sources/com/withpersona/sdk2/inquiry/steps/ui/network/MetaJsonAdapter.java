@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.steps.ui.network;
 
-import an.c;
+import bn.c;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -16,19 +16,19 @@ import org.jetbrains.annotations.NotNull;
 public final class MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19750a;
+    private final m.b f19890a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19751b;
+    private final h f19891b;
 
     public MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("predictions");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19750a = a10;
+        this.f19890a = a10;
         h f10 = moshi.f(a0.j(List.class, Suggestion.class), x0.d(), "predictions");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19751b = f10;
+        this.f19891b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,14 +38,14 @@ public final class MetaJsonAdapter extends h {
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19750a);
+            int J = reader.J(this.f19890a);
             if (J != -1) {
-                if (J == 0 && (list = (List) this.f19751b.fromJson(reader)) == null) {
+                if (J == 0 && (list = (List) this.f19891b.fromJson(reader)) == null) {
                     throw c.x("predictions", "predictions", reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -62,7 +62,7 @@ public final class MetaJsonAdapter extends h {
         if (meta != null) {
             writer.k();
             writer.J("predictions");
-            this.f19751b.toJson(writer, meta.a());
+            this.f19891b.toJson(writer, meta.a());
             writer.s();
             return;
         }

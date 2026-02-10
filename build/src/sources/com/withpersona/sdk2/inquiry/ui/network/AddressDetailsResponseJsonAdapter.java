@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
-import an.c;
+import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressDetailsResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19773a;
+    private final m.b f19913a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19774b;
+    private final h f19914b;
 
     public AddressDetailsResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19773a = a10;
+        this.f19913a = a10;
         h f10 = moshi.f(LocationData.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19774b = f10;
+        this.f19914b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,14 +35,14 @@ public final class AddressDetailsResponseJsonAdapter extends h {
         reader.u();
         LocationData locationData = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19773a);
+            int J = reader.J(this.f19913a);
             if (J != -1) {
-                if (J == 0 && (locationData = (LocationData) this.f19774b.fromJson(reader)) == null) {
+                if (J == 0 && (locationData = (LocationData) this.f19914b.fromJson(reader)) == null) {
                     throw c.x("attributes", "attributes", reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -59,7 +59,7 @@ public final class AddressDetailsResponseJsonAdapter extends h {
         if (addressDetailsResponse != null) {
             writer.k();
             writer.J("attributes");
-            this.f19774b.toJson(writer, addressDetailsResponse.a());
+            this.f19914b.toJson(writer, addressDetailsResponse.a());
             writer.s();
             return;
         }

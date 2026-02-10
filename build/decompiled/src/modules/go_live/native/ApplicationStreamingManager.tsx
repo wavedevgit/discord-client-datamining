@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun118323: for (var _fun118323_ip = 0;;) switch (_fun118323_ip) {
+        _fun118283: for (var _fun118283_ip = 0;;) switch (_fun118283_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun118323_ip = 76;
-                continue _fun118323;
+                _fun118283_ip = 76;
+                continue _fun118283;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun118327: for (var _fun118327_ip = 0;;) switch (_fun118327_ip) {
+            _fun118287: for (var _fun118287_ip = 0;;) switch (_fun118287_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -129,16 +129,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot12;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun118327_ip = 69;
-                        continue _fun118327
+                        _fun118287_ip = 69;
+                        continue _fun118287
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun118327_ip = 105;
-                    continue _fun118327;
+                    _fun118287_ip = 105;
+                    continue _fun118287;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -214,14 +214,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'platformHandleStreamStart';
         var4.key = var6;
         var6 = function arg0() {
-            _fun118332: for (var _fun118332_ip = 0;;) switch (_fun118332_ip) {
+            _fun118292: for (var _fun118292_ip = 0;;) switch (_fun118292_ip) {
                 case 0:
                     var0 = arg0;
                     var5 = var0.sourceId;
                     var0 = null;
                     if (!(var0 == var5)) {
-                        _fun118332_ip = 63;
-                        continue _fun118332
+                        _fun118292_ip = 63;
+                        continue _fun118292
                     }
                 case 15:
                     var2 = _closure1_slot11;
@@ -233,8 +233,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = ')';
                     var0 = var4.bind(var3)(var5, var0);
                     var0 = var1.bind(var2)(var0);
-                    _fun118332_ip = 169;
-                    continue _fun118332;
+                    _fun118292_ip = 169;
+                    continue _fun118292;
                 case 63:
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
@@ -299,4 +299,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 3503, 3511, 33, 3, 3937, 15093, 1307, 8280, 15095, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 3503, 3511, 33, 3, 3937, 15080, 1307, 8255, 15082, 2]);

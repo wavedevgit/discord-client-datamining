@@ -1,45 +1,47 @@
 package mj;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import com.google.firebase.messaging.j0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final mj.a f37249a;
+public final class b {
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile mj.a f37250b;
+    private static final b f37177b = new a().a();
 
-    /* renamed from: mj.b$b  reason: collision with other inner class name */
+    /* renamed from: a  reason: collision with root package name */
+    private final mj.a f37178a;
+
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static class C0505b implements mj.a {
-        private C0505b() {
+    public static final class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private mj.a f37179a = null;
+
+        a() {
         }
 
-        @Override // mj.a
-        public ExecutorService a(ThreadFactory threadFactory, c cVar) {
-            return b(1, threadFactory, cVar);
+        public b a() {
+            return new b(this.f37179a);
         }
 
-        public ExecutorService b(int i10, ThreadFactory threadFactory, c cVar) {
-            ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(i10, i10, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), threadFactory);
-            threadPoolExecutor.allowCoreThreadTimeOut(true);
-            return Executors.unconfigurableExecutorService(threadPoolExecutor);
+        public a b(mj.a aVar) {
+            this.f37179a = aVar;
+            return this;
         }
     }
 
-    static {
-        C0505b c0505b = new C0505b();
-        f37249a = c0505b;
-        f37250b = c0505b;
+    b(mj.a aVar) {
+        this.f37178a = aVar;
     }
 
-    public static mj.a a() {
-        return f37250b;
+    public static a b() {
+        return new a();
+    }
+
+    public mj.a a() {
+        return this.f37178a;
+    }
+
+    public byte[] c() {
+        return j0.a(this);
     }
 }

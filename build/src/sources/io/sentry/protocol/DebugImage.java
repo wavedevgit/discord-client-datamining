@@ -93,37 +93,37 @@ public final class DebugImage implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        debugImage.debugFile = e3Var.q1();
+                        debugImage.debugFile = e3Var.m1();
                         break;
                     case 1:
-                        debugImage.imageAddr = e3Var.q1();
+                        debugImage.imageAddr = e3Var.m1();
                         break;
                     case 2:
-                        debugImage.imageSize = e3Var.l1();
+                        debugImage.imageSize = e3Var.i1();
                         break;
                     case 3:
-                        debugImage.codeFile = e3Var.q1();
+                        debugImage.codeFile = e3Var.m1();
                         break;
                     case 4:
-                        debugImage.arch = e3Var.q1();
+                        debugImage.arch = e3Var.m1();
                         break;
                     case 5:
-                        debugImage.type = e3Var.q1();
+                        debugImage.type = e3Var.m1();
                         break;
                     case 6:
-                        debugImage.uuid = e3Var.q1();
+                        debugImage.uuid = e3Var.m1();
                         break;
                     case 7:
-                        debugImage.debugId = e3Var.q1();
+                        debugImage.debugId = e3Var.m1();
                         break;
                     case '\b':
-                        debugImage.codeId = e3Var.q1();
+                        debugImage.codeId = e3Var.m1();
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.u1(iLogger, hashMap, o02);
+                        e3Var.p1(iLogger, hashMap, o02);
                         break;
                 }
             }

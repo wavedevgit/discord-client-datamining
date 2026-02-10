@@ -1,27 +1,47 @@
 package xp;
 
-import br.d;
+import android.content.Context;
+import cs.j;
+import java.io.File;
+import java.util.List;
+import java.util.UUID;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements d {
+public final class c {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class a {
+    /* renamed from: a  reason: collision with root package name */
+    private final File f55263a;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final c f54786a = new c();
+    /* renamed from: b  reason: collision with root package name */
+    private final File f55264b;
+
+    public c(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        File file = new File(context.getFilesDir(), ".com.withpersona.sdk2.inquiry");
+        this.f55263a = file;
+        this.f55264b = new File(file, "sess");
     }
 
-    public static c a() {
-        return a.f54786a;
+    public final void a() {
+        j.r(this.f55264b);
     }
 
-    public static b c() {
-        return new b();
+    public final List b() {
+        return CollectionsKt.e(this.f55264b);
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public b get() {
-        return c();
+    public final File c(String extension) {
+        Intrinsics.checkNotNullParameter(extension, "extension");
+        this.f55264b.mkdirs();
+        File file = this.f55264b;
+        UUID randomUUID = UUID.randomUUID();
+        return new File(file, randomUUID + "." + extension);
+    }
+
+    public final File d(String fileName) {
+        Intrinsics.checkNotNullParameter(fileName, "fileName");
+        this.f55264b.mkdirs();
+        return new File(this.f55264b, fileName);
     }
 }

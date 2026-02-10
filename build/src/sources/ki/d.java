@@ -1,0 +1,39 @@
+package ki;
+
+import android.util.Log;
+import java.util.List;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+final class d implements Runnable {
+
+    /* renamed from: d  reason: collision with root package name */
+    final /* synthetic */ List f30887d;
+
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ ji.d f30888e;
+
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ e f30889i;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public d(e eVar, List list, ji.d dVar) {
+        this.f30889i = eVar;
+        this.f30887d = list;
+        this.f30888e = dVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        g gVar;
+        try {
+            gVar = this.f30889i.f30892c;
+            if (gVar.b(this.f30887d)) {
+                e.d(this.f30889i, this.f30888e);
+            } else {
+                e.c(this.f30889i, this.f30887d, this.f30888e);
+            }
+        } catch (Exception e10) {
+            Log.e("SplitCompat", "Error checking verified files.", e10);
+            this.f30888e.b(-11);
+        }
+    }
+}

@@ -1,34 +1,101 @@
 package yf;
 
-import com.google.android.gms.common.api.Status;
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import xf.i;
-import xf.k;
-import xf.m;
-import yf.a;
+import kotlin.text.StringsKt;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c extends a.AbstractBinderC0750a {
-    @Override // yf.a
-    public void F0(Status status, m mVar) {
-        Intrinsics.checkNotNullParameter(status, "status");
-        throw new UnsupportedOperationException();
+public final class c extends jf.a {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f55597d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final Bundle f55598e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Bundle f55599i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final String f55600o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final String f55601p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private final String f55602q;
+
+    /* renamed from: r  reason: collision with root package name */
+    public static final a f55596r = new a(null);
+    @NotNull
+    public static final Parcelable.Creator<c> CREATOR = new d();
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a {
+        private a() {
+        }
+
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
     }
 
-    @Override // yf.a
-    public void U(Status status, k kVar) {
-        Intrinsics.checkNotNullParameter(status, "status");
-        throw new UnsupportedOperationException();
+    public c(String type, Bundle credentialRetrievalData, Bundle candidateQueryData, String requestMatcher, String requestType, String protocolType) {
+        boolean z10;
+        Intrinsics.checkNotNullParameter(type, "type");
+        Intrinsics.checkNotNullParameter(credentialRetrievalData, "credentialRetrievalData");
+        Intrinsics.checkNotNullParameter(candidateQueryData, "candidateQueryData");
+        Intrinsics.checkNotNullParameter(requestMatcher, "requestMatcher");
+        Intrinsics.checkNotNullParameter(requestType, "requestType");
+        Intrinsics.checkNotNullParameter(protocolType, "protocolType");
+        this.f55597d = type;
+        this.f55598e = credentialRetrievalData;
+        this.f55599i = candidateQueryData;
+        this.f55600o = requestMatcher;
+        this.f55601p = requestType;
+        this.f55602q = protocolType;
+        boolean z11 = true;
+        if (!StringsKt.k0(requestType) && !StringsKt.k0(protocolType)) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        z11 = (!StringsKt.k0(type) && requestType.length() == 0 && protocolType.length() == 0) ? z11 : false;
+        if (!z10 && !z11) {
+            throw new IllegalArgumentException("Either type: " + type + ", or requestType: " + requestType + " and protocolType: " + protocolType + " must be specified, but at least one contains an invalid blank value.");
+        }
     }
 
-    @Override // yf.a
-    public void m0(Status status, i iVar) {
-        Intrinsics.checkNotNullParameter(status, "status");
-        throw new UnsupportedOperationException();
+    public final Bundle b() {
+        return this.f55599i;
     }
 
-    @Override // yf.a
-    public void o0(Status status, xf.a aVar) {
-        Intrinsics.checkNotNullParameter(status, "status");
-        throw new UnsupportedOperationException();
+    public final Bundle c() {
+        return this.f55598e;
+    }
+
+    public final String d() {
+        return this.f55602q;
+    }
+
+    public final String e() {
+        return this.f55600o;
+    }
+
+    public final String f() {
+        return this.f55601p;
+    }
+
+    public final String h() {
+        return this.f55597d;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        d.c(this, dest, i10);
     }
 }

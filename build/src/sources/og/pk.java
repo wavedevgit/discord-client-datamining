@@ -1,0 +1,43 @@
+package og;
+
+import android.content.Context;
+import android.os.SystemClock;
+import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicLong;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class pk {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final hf.w f41258a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final AtomicLong f41259b = new AtomicLong(-1);
+
+    pk(Context context, String str) {
+        this.f41258a = hf.v.b(context, hf.x.a().b("mlkit:vision").a());
+    }
+
+    public static pk a(Context context) {
+        return new pk(context, "mlkit:vision");
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ void b(long j10, Exception exc) {
+        this.f41259b.set(j10);
+    }
+
+    public final synchronized void c(int i10, int i11, long j10, long j11) {
+        AtomicLong atomicLong = this.f41259b;
+        final long elapsedRealtime = SystemClock.elapsedRealtime();
+        if (atomicLong.get() != -1 && elapsedRealtime - this.f41259b.get() <= TimeUnit.MINUTES.toMillis(30L)) {
+            return;
+        }
+        this.f41258a.k(new hf.u(0, Arrays.asList(new hf.n(i10, i11, 0, j10, j11, null, null, 0, -1)))).e(new zg.f() { // from class: og.ok
+            @Override // zg.f
+            public final void onFailure(Exception exc) {
+                pk.this.b(elapsedRealtime, exc);
+            }
+        });
+    }
+}

@@ -1,13 +1,13 @@
 package com.swmansion.reanimated.keyboard;
 
 import com.facebook.jni.HybridData;
-@fb.a
+@gb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class KeyboardWorkletWrapper {
-    @fb.a
+    @gb.a
     private final HybridData mHybridData;
 
-    @fb.a
+    @gb.a
     private KeyboardWorkletWrapper(HybridData hybridData) {
         this.mHybridData = hybridData;
     }

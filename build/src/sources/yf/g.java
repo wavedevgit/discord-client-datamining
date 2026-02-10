@@ -1,45 +1,44 @@
 package yf;
 
-import android.content.Context;
-import android.os.Looper;
-import ef.a;
-import ff.k;
+import android.app.PendingIntent;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class g {
+public final class g extends jf.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final a.g f55357a;
+    /* renamed from: d  reason: collision with root package name */
+    private final PendingIntent f55605d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final a f55358b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final ef.a f55359c;
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f55604e = new a(null);
+    @NotNull
+    public static final Parcelable.Creator<g> CREATOR = new h();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a extends a.AbstractC0286a {
-        a() {
+    public static final class a {
+        private a() {
         }
 
-        @Override // ef.a.AbstractC0286a
-        /* renamed from: c */
-        public d b(Context context, Looper looper, gf.d commonSettings, a.d.C0287a apiOptions, ff.d connectedListener, k connectionFailedListener) {
-            Intrinsics.checkNotNullParameter(context, "context");
-            Intrinsics.checkNotNullParameter(looper, "looper");
-            Intrinsics.checkNotNullParameter(commonSettings, "commonSettings");
-            Intrinsics.checkNotNullParameter(apiOptions, "apiOptions");
-            Intrinsics.checkNotNullParameter(connectedListener, "connectedListener");
-            Intrinsics.checkNotNullParameter(connectionFailedListener, "connectionFailedListener");
-            return new d(context, looper, commonSettings, connectedListener, connectionFailedListener);
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
     }
 
-    static {
-        a.g gVar = new a.g();
-        f55357a = gVar;
-        a aVar = new a();
-        f55358b = aVar;
-        f55359c = new ef.a("IdentityCredentials.API", aVar, gVar);
+    public g(PendingIntent pendingIntent) {
+        Intrinsics.checkNotNullParameter(pendingIntent, "pendingIntent");
+        this.f55605d = pendingIntent;
+    }
+
+    public final PendingIntent b() {
+        return this.f55605d;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        h.c(this, dest, i10);
     }
 }

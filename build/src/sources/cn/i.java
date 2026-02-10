@@ -1,76 +1,136 @@
 package cn;
 
-import bn.q;
-import bn.r;
-import cn.e;
+import kotlin.Lazy;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.TypeIntrinsics;
+import kotlin.jvm.internal.Lambda;
+import okio.Buffer;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i implements e.a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final q f7606a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private Function1 f7607b;
+public final class i {
 
     /* renamed from: c  reason: collision with root package name */
-    private final j f7608c;
+    public static final a f7738c = new a(null);
 
-    /* renamed from: d  reason: collision with root package name */
-    private i f7609d;
+    /* renamed from: a  reason: collision with root package name */
+    private final Function0 f7739a;
 
-    public i(q workflow, Function1 handler, j workflowNode) {
-        Intrinsics.checkNotNullParameter(workflow, "workflow");
-        Intrinsics.checkNotNullParameter(handler, "handler");
-        Intrinsics.checkNotNullParameter(workflowNode, "workflowNode");
-        this.f7606a = workflow;
-        this.f7607b = handler;
-        this.f7608c = workflowNode;
+    /* renamed from: b  reason: collision with root package name */
+    private final Lazy f7740b;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+
+        /* renamed from: cn.i$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        static final class C0157a extends Lambda implements Function0 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ ByteString f7741d;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            C0157a(ByteString byteString) {
+                super(0);
+                this.f7741d = byteString;
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            /* renamed from: a */
+            public final ByteString invoke() {
+                return this.f7741d;
+            }
+        }
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        static final class b extends Lambda implements Function0 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ Function1 f7742d;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            b(Function1 function1) {
+                super(0);
+                this.f7742d = function1;
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            /* renamed from: a */
+            public final ByteString invoke() {
+                Buffer buffer = new Buffer();
+                this.f7742d.invoke(buffer);
+                return buffer.I1();
+            }
+        }
+
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final i a(Function0 lazy) {
+            Intrinsics.checkNotNullParameter(lazy, "lazy");
+            return new i(lazy, null);
+        }
+
+        public final i b(ByteString byteString) {
+            Intrinsics.checkNotNullParameter(byteString, "byteString");
+            return new i(new C0157a(byteString), null);
+        }
+
+        public final i c(Function1 lazy) {
+            Intrinsics.checkNotNullParameter(lazy, "lazy");
+            return a(new b(lazy));
+        }
+
+        private a() {
+        }
     }
 
-    public final r c(Object obj) {
-        return (r) this.f7607b.invoke(obj);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class b extends Lambda implements Function0 {
+        b() {
+            super(0);
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final ByteString invoke() {
+            return (ByteString) i.this.f7739a.invoke();
+        }
     }
 
-    public final k d() {
-        return this.f7608c.h();
+    public /* synthetic */ i(Function0 function0, DefaultConstructorMarker defaultConstructorMarker) {
+        this(function0);
     }
 
-    @Override // cn.e.a
-    /* renamed from: e */
-    public i a() {
-        return this.f7609d;
+    public final ByteString b() {
+        return (ByteString) this.f7740b.getValue();
     }
 
-    public final q f() {
-        return this.f7606a;
+    public boolean equals(Object obj) {
+        i iVar;
+        if (obj instanceof i) {
+            iVar = (i) obj;
+        } else {
+            iVar = null;
+        }
+        if (iVar == null) {
+            return false;
+        }
+        return Intrinsics.areEqual(b(), iVar.b());
     }
 
-    public final j g() {
-        return this.f7608c;
+    public int hashCode() {
+        return b().hashCode();
     }
 
-    public final boolean h(q otherWorkflow, String key) {
-        Intrinsics.checkNotNullParameter(otherWorkflow, "otherWorkflow");
-        Intrinsics.checkNotNullParameter(key, "key");
-        return d().c(otherWorkflow, key);
+    public String toString() {
+        return "Snapshot(" + b() + ')';
     }
 
-    public final Object i(bn.k workflow, Object obj) {
-        Intrinsics.checkNotNullParameter(workflow, "workflow");
-        return this.f7608c.m(workflow, obj);
-    }
-
-    public final void j(Function1 newHandler) {
-        Intrinsics.checkNotNullParameter(newHandler, "newHandler");
-        this.f7607b = (Function1) TypeIntrinsics.beforeCheckcastToFunctionOfArity(newHandler, 1);
-    }
-
-    @Override // cn.e.a
-    /* renamed from: k */
-    public void b(i iVar) {
-        this.f7609d = iVar;
+    private i(Function0 function0) {
+        this.f7739a = function0;
+        this.f7740b = rr.l.a(new b());
     }
 }

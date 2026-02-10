@@ -6,7 +6,7 @@ import org.jetbrains.annotations.NotNull;
 public final class JsonReaderUtilsKt {
     public static final String nextStringOrNull(@NotNull m mVar) {
         if (mVar.s() != m.c.NULL) {
-            return mVar.e1();
+            return mVar.b1();
         }
         return (String) mVar.m();
     }

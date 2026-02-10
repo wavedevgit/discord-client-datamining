@@ -72,7 +72,7 @@ public class JSPointerDispatcher {
         for (TouchTargetHelper.ViewTarget viewTarget : list) {
             sb2.append(String.format("%d, ", Integer.valueOf(viewTarget.getViewId())));
         }
-        p8.a.b(TAG, sb2.toString());
+        q8.a.b(TAG, sb2.toString());
     }
 
     private void dispatchCancelEventForTarget(View view, PointerEvent.PointerEventState pointerEventState, MotionEvent motionEvent, EventDispatcher eventDispatcher) {
@@ -82,13 +82,13 @@ public class JSPointerDispatcher {
         } else {
             z10 = false;
         }
-        db.a.b(z10, "Expected to not have already sent a cancel for this gesture");
+        eb.a.b(z10, "Expected to not have already sent a cancel for this gesture");
         List<TouchTargetHelper.ViewTarget> list = pointerEventState.getHitPathByPointerId().get(Integer.valueOf(pointerEventState.getActivePointerId()));
         if (!list.isEmpty() && view != null) {
             if (isAnyoneListeningForBubblingEvent(list, PointerEventHelper.EVENT.CANCEL, PointerEventHelper.EVENT.CANCEL_CAPTURE)) {
                 int viewId = list.get(0).getViewId();
                 int[] childOffsetRelativeToRoot = getChildOffsetRelativeToRoot(view);
-                ((EventDispatcher) db.a.c(eventDispatcher)).dispatchEvent(PointerEvent.obtain(PointerEventHelper.POINTER_CANCEL, viewId, normalizeToRoot(pointerEventState, childOffsetRelativeToRoot[0], childOffsetRelativeToRoot[1]), motionEvent));
+                ((EventDispatcher) eb.a.c(eventDispatcher)).dispatchEvent(PointerEvent.obtain(PointerEventHelper.POINTER_CANCEL, viewId, normalizeToRoot(pointerEventState, childOffsetRelativeToRoot[0], childOffsetRelativeToRoot[1]), motionEvent));
             }
             incrementCoalescingKey();
             this.mPrimaryPointerId = -1;
@@ -273,7 +273,7 @@ public class JSPointerDispatcher {
             case 4:
             case 8:
             default:
-                p8.a.J(ReactConstants.TAG, "Motion Event was ignored. Action=" + actionMasked + " Target=" + viewId);
+                q8.a.J(ReactConstants.TAG, "Motion Event was ignored. Action=" + actionMasked + " Target=" + viewId);
                 return;
             case 7:
                 float[] fArr = createEventState.getEventCoordinatesByPointerId().get(Integer.valueOf(pointerId));

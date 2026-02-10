@@ -1,46 +1,63 @@
 package wa;
 
-import android.os.Build;
-import androidx.core.util.Pools$SynchronizedPool;
-import java.nio.ByteBuffer;
+import android.graphics.Bitmap;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import va.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class e {
+public class e extends p {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final e f53559a = new e();
+    /* renamed from: c  reason: collision with root package name */
+    public static final a f53370c = new a(null);
 
-    private e() {
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private a() {
+        }
     }
 
-    public static final d a(y poolFactory, boolean z10, boolean z11, f platformDecoderOptions) {
-        Intrinsics.checkNotNullParameter(poolFactory, "poolFactory");
-        Intrinsics.checkNotNullParameter(platformDecoderOptions, "platformDecoderOptions");
-        if (Build.VERSION.SDK_INT >= 26) {
-            va.d b10 = poolFactory.b();
-            Intrinsics.checkNotNullExpressionValue(b10, "getBitmapPool(...)");
-            return new c(b10, b(poolFactory, z11), platformDecoderOptions);
+    @Override // wa.p, wa.v
+    /* renamed from: c */
+    public Bitmap get(int i10) {
+        Bitmap bitmap = (Bitmap) super.get(i10);
+        if (bitmap != null && e(bitmap)) {
+            bitmap.eraseColor(0);
+            return bitmap;
         }
-        va.d b11 = poolFactory.b();
-        Intrinsics.checkNotNullExpressionValue(b11, "getBitmapPool(...)");
-        return new a(b11, b(poolFactory, z11), platformDecoderOptions);
+        return null;
     }
 
-    public static final b2.d b(y poolFactory, boolean z10) {
-        Intrinsics.checkNotNullParameter(poolFactory, "poolFactory");
-        if (z10) {
-            r8.b INSTANCE = r8.b.f48722a;
-            Intrinsics.checkNotNullExpressionValue(INSTANCE, "INSTANCE");
-            return INSTANCE;
+    @Override // wa.v
+    /* renamed from: d */
+    public int a(Bitmap bitmap) {
+        Intrinsics.checkNotNullParameter(bitmap, "bitmap");
+        return db.d.j(bitmap);
+    }
+
+    protected final boolean e(Bitmap bitmap) {
+        if (bitmap == null) {
+            return false;
         }
-        int e10 = poolFactory.e();
-        Pools$SynchronizedPool pools$SynchronizedPool = new Pools$SynchronizedPool(e10);
-        for (int i10 = 0; i10 < e10; i10++) {
-            ByteBuffer allocate = ByteBuffer.allocate(r8.b.c());
-            Intrinsics.checkNotNullExpressionValue(allocate, "allocate(...)");
-            pools$SynchronizedPool.release(allocate);
+        if (bitmap.isRecycled()) {
+            q8.a.O("BitmapPoolBackend", "Cannot reuse a recycled bitmap: %s", bitmap);
+            return false;
+        } else if (!bitmap.isMutable()) {
+            q8.a.O("BitmapPoolBackend", "Cannot reuse an immutable bitmap: %s", bitmap);
+            return false;
+        } else {
+            return true;
         }
-        return pools$SynchronizedPool;
+    }
+
+    @Override // wa.p, wa.v
+    /* renamed from: f */
+    public void put(Bitmap bitmap) {
+        Intrinsics.checkNotNullParameter(bitmap, "bitmap");
+        if (e(bitmap)) {
+            super.put(bitmap);
+        }
     }
 }

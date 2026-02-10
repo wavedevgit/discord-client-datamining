@@ -28,9 +28,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var1];
     var1 = var6.bind(var0)(var1);
     var _closure1_slot4 = var1;
+    var1 = 3;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var6 = var1.InputModes;
+    var _closure1_slot5 = var6;
+    var1 = var1.RTCConnectionStates;
+    var _closure1_slot6 = var1;
     var1 = {};
     var6 = function arg0() {
-        _fun118233: for (var _fun118233_ip = 0;;) switch (_fun118233_ip) {
+        _fun118193: for (var _fun118193_ip = 0;;) switch (_fun118193_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.voiceChannelId;
@@ -43,23 +50,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var2 = undefined;
                 if (var3) {
-                    _fun118233_ip = 55;
-                    continue _fun118233
+                    _fun118193_ip = 55;
+                    continue _fun118193
                 }
             case 45:
                 var3 = var5.isGuildStageVoice;
                 var2 = var3.bind(var5)();
             case 55:
                 if (!var2) {
-                    _fun118233_ip = 76;
-                    continue _fun118233
+                    _fun118193_ip = 76;
+                    continue _fun118193
                 }
             case 58:
                 var7 = var4 == var6;
                 var3 = undefined;
                 if (var7) {
-                    _fun118233_ip = 73;
-                    continue _fun118233
+                    _fun118193_ip = 73;
+                    continue _fun118193
                 }
             case 67:
                 var3 = var6.suppress;
@@ -70,47 +77,85 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var6.getMediaSessionId;
                 var3 = var3.bind(var6)();
                 if (!(var4 != var5)) {
-                    _fun118233_ip = 220;
-                    continue _fun118233
+                    _fun118193_ip = 335;
+                    continue _fun118193
                 }
             case 97:
                 if (!(var4 != var3)) {
-                    _fun118233_ip = 220;
-                    continue _fun118233
+                    _fun118193_ip = 335;
+                    continue _fun118193
                 }
-            case 101:
+            case 104:
+                var4 = _closure1_slot3;
+                var3 = var4.getInputDetectedThisConnection;
+                var3 = var3.bind(var4)();
+                if (var3) {
+                    _fun118193_ip = 335;
+                    continue _fun118193
+                }
+            case 126:
+                var4 = _closure1_slot4;
+                var3 = var4.getState;
+                var4 = var3.bind(var4)();
+                var3 = _closure1_slot6;
+                var3 = var3.RTC_CONNECTED;
+                if (!(var4 === var3)) {
+                    _fun118193_ip = 335;
+                    continue _fun118193
+                }
+            case 157:
+                var4 = _closure1_slot3;
+                var3 = var4.getSettings;
+                var3 = var3.bind(var4)();
+                var4 = var3.mode;
+                var3 = _closure1_slot5;
+                var3 = var3.VOICE_ACTIVITY;
+                if (!(var4 === var3)) {
+                    _fun118193_ip = 335;
+                    continue _fun118193
+                }
+            case 193:
+                var4 = _closure1_slot3;
+                var3 = var4.getSettings;
+                var3 = var3.bind(var4)();
+                var3 = var3.silenceWarning;
+                if (!var3) {
+                    _fun118193_ip = 335;
+                    continue _fun118193
+                }
+            case 216:
                 var4 = _closure1_slot3;
                 var3 = var4.getInputDetected;
                 var4 = var3.bind(var4)();
                 var3 = false;
                 if (!(var3 === var4)) {
-                    _fun118233_ip = 220;
-                    continue _fun118233
+                    _fun118193_ip = 335;
+                    continue _fun118193
                 }
-            case 123:
+            case 238:
                 if (var2) {
-                    _fun118233_ip = 220;
-                    continue _fun118233
+                    _fun118193_ip = 335;
+                    continue _fun118193
                 }
-            case 126:
+            case 241:
                 var3 = _closure1_slot3;
                 var2 = var3.isSelfMute;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun118233_ip = 220;
-                    continue _fun118233
+                    _fun118193_ip = 335;
+                    continue _fun118193
                 }
-            case 143:
+            case 258:
                 var2 = {};
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
-                var1 = 3;
+                var1 = 4;
                 var1 = var4[var1];
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.AVError;
                 var1 = var1.NO_AUDIO_INPUT_DETECTED;
                 var2.type = var1;
-                var1 = 4;
+                var1 = 5;
                 var1 = var4[var1];
                 var3 = var3.bind(var0)(var1);
                 var1 = var3.getVoiceChannelErrorContext;
@@ -120,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var2;
                 return var1;
-            case 220:
+            case 335:
                 return var0;
         }
     };
@@ -138,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1.makeErrorContextKey = var3;
-    var3 = 5;
+    var3 = 6;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -146,4 +191,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AVErrorNoAudioInputDetectedDefinition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3477, 3519, 8076, 15073, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3477, 3519, 660, 8051, 15060, 2]);

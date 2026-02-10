@@ -20,16 +20,16 @@ import org.jetbrains.annotations.NotNull;
 public class SubpackagesScope extends MemberScopeImpl {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ModuleDescriptor f32619a;
+    private final ModuleDescriptor f32328a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final FqName f32620b;
+    private final FqName f32329b;
 
     public SubpackagesScope(@NotNull ModuleDescriptor moduleDescriptor, @NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(moduleDescriptor, "moduleDescriptor");
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        this.f32619a = moduleDescriptor;
-        this.f32620b = fqName;
+        this.f32328a = moduleDescriptor;
+        this.f32329b = fqName;
     }
 
     protected final PackageViewDescriptor a(Name name) {
@@ -37,7 +37,7 @@ public class SubpackagesScope extends MemberScopeImpl {
         if (name.isSpecial()) {
             return null;
         }
-        PackageViewDescriptor packageViewDescriptor = this.f32619a.getPackage(this.f32620b.child(name));
+        PackageViewDescriptor packageViewDescriptor = this.f32328a.getPackage(this.f32329b.child(name));
         if (packageViewDescriptor.isEmpty()) {
             return null;
         }
@@ -58,10 +58,10 @@ public class SubpackagesScope extends MemberScopeImpl {
         if (!kindFilter.acceptsKinds(DescriptorKindFilter.Companion.getPACKAGES_MASK())) {
             return CollectionsKt.l();
         }
-        if (this.f32620b.isRoot() && kindFilter.getExcludes().contains(DescriptorKindExclude.TopLevelPackages.INSTANCE)) {
+        if (this.f32329b.isRoot() && kindFilter.getExcludes().contains(DescriptorKindExclude.TopLevelPackages.INSTANCE)) {
             return CollectionsKt.l();
         }
-        Collection<FqName> subPackagesOf = this.f32619a.getSubPackagesOf(this.f32620b, nameFilter);
+        Collection<FqName> subPackagesOf = this.f32328a.getSubPackagesOf(this.f32329b, nameFilter);
         ArrayList arrayList = new ArrayList(subPackagesOf.size());
         for (FqName fqName : subPackagesOf) {
             Name shortName = fqName.shortName();
@@ -74,6 +74,6 @@ public class SubpackagesScope extends MemberScopeImpl {
 
     @NotNull
     public String toString() {
-        return "subpackages of " + this.f32620b + " from " + this.f32619a;
+        return "subpackages of " + this.f32329b + " from " + this.f32328a;
     }
 }

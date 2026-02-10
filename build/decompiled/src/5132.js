@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'updateViewableItems';
         var0.key = var5;
         var5 = function arg0, arg1, arg2, arg3, arg4() {
-            _fun45828: for (var _fun45828_ip = 0;;) switch (_fun45828_ip) {
+            _fun45821: for (var _fun45821_ip = 0;;) switch (_fun45821_ip) {
                 case 0:
                     var2 = arg4;
                     var0 = this;
@@ -93,8 +93,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var _closure3_slot4 = var0;
                     var3 = undefined;
                     if (!(var3 !== var2)) {
-                        _fun45828_ip = 52;
-                        continue _fun45828
+                        _fun45821_ip = 52;
+                        continue _fun45821
                     }
                 case 46:
                     var0.possiblyViewableIndices = var2;
@@ -104,92 +104,92 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var5 == var4;
                     var2 = undefined;
                     if (var6) {
-                        _fun45828_ip = 75;
-                        continue _fun45828
+                        _fun45821_ip = 75;
+                        continue _fun45821
                     }
                 case 69:
                     var2 = var4.itemVisiblePercentThreshold;
                 case 75:
                     if (!(var5 !== var2)) {
-                        _fun45828_ip = 157;
-                        continue _fun45828
+                        _fun45821_ip = 157;
+                        continue _fun45821
                     }
                 case 79:
                     var4 = var0.viewabilityConfig;
                     var6 = var5 == var4;
                     var2 = undefined;
                     if (var6) {
-                        _fun45828_ip = 100;
-                        continue _fun45828
+                        _fun45821_ip = 100;
+                        continue _fun45821
                     }
                 case 94:
                     var2 = var4.itemVisiblePercentThreshold;
                 case 100:
                     if (!(var3 !== var2)) {
-                        _fun45828_ip = 157;
-                        continue _fun45828
+                        _fun45821_ip = 157;
+                        continue _fun45821
                     }
                 case 104:
                     var4 = var0.viewabilityConfig;
                     var6 = var5 == var4;
                     var2 = undefined;
                     if (var6) {
-                        _fun45828_ip = 125;
-                        continue _fun45828
+                        _fun45821_ip = 125;
+                        continue _fun45821
                     }
                 case 119:
                     var2 = var4.viewAreaCoveragePercentThreshold;
                 case 125:
                     if (!(var5 !== var2)) {
-                        _fun45828_ip = 157;
-                        continue _fun45828
+                        _fun45821_ip = 157;
+                        continue _fun45821
                     }
                 case 129:
                     var4 = var0.viewabilityConfig;
                     var6 = var5 == var4;
                     var2 = undefined;
                     if (var6) {
-                        _fun45828_ip = 150;
-                        continue _fun45828
+                        _fun45821_ip = 150;
+                        continue _fun45821
                     }
                 case 144:
                     var2 = var4.viewAreaCoveragePercentThreshold;
                 case 150:
                     if (!(var3 === var2)) {
-                        _fun45828_ip = 322;
-                        continue _fun45828
+                        _fun45821_ip = 322;
+                        continue _fun45821
                     }
                 case 157:
                     var4 = var0.viewabilityConfig;
                     var6 = var5 == var4;
                     var2 = undefined;
                     if (var6) {
-                        _fun45828_ip = 178;
-                        continue _fun45828
+                        _fun45821_ip = 178;
+                        continue _fun45821
                     }
                 case 172:
                     var2 = var4.waitForInteraction;
                 case 178:
                     if (!(var5 != var2)) {
-                        _fun45828_ip = 197;
-                        continue _fun45828
+                        _fun45821_ip = 197;
+                        continue _fun45821
                     }
                 case 182:
                     if (!var2) {
-                        _fun45828_ip = 197;
-                        continue _fun45828
+                        _fun45821_ip = 197;
+                        continue _fun45821
                     }
                 case 185:
                     var2 = var0.hasInteracted;
                     if (!var2) {
-                        _fun45828_ip = 320;
-                        continue _fun45828
+                        _fun45821_ip = 320;
+                        continue _fun45821
                     }
                 case 197:
                     var6 = var0.possiblyViewableIndices;
                     var4 = var6.filter;
                     var2 = function(arg0) { // Environment: var1
-                        _fun45829: for (var _fun45829_ip = 0;;) switch (_fun45829_ip) {
+                        _fun45822: for (var _fun45822_ip = 0;;) switch (_fun45822_ip) {
                             case 0:
                                 var8 = _closure3_slot4;
                                 var7 = var8.isItemViewable;
@@ -201,8 +201,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var10 = var9 == var1;
                                 var2 = undefined;
                                 if (var10) {
-                                    _fun45829_ip = 48;
-                                    continue _fun45829
+                                    _fun45822_ip = 48;
+                                    continue _fun45822
                                 }
                             case 42:
                                 var2 = var1.viewAreaCoveragePercentThreshold;
@@ -212,8 +212,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var9 = var9 == var1;
                                 var3 = undefined;
                                 if (var9) {
-                                    _fun45829_ip = 73;
-                                    continue _fun45829
+                                    _fun45822_ip = 73;
+                                    continue _fun45822
                                 }
                             case 67:
                                 var3 = var1.itemVisiblePercentThreshold;
@@ -237,8 +237,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = var5 == var6;
                     var2 = undefined;
                     if (var7) {
-                        _fun45828_ip = 249;
-                        continue _fun45828
+                        _fun45821_ip = 249;
+                        continue _fun45821
                     }
                 case 243:
                     var2 = var6.minimumViewTime;
@@ -246,22 +246,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var5 != var2;
                     var5 = 250;
                     if (!var6) {
-                        _fun45828_ip = 262;
-                        continue _fun45828
+                        _fun45821_ip = 262;
+                        continue _fun45821
                     }
                 case 259:
                     var5 = var2;
                 case 262:
                     var2 = 0;
                     if (!(!(var5 > var2))) {
-                        _fun45828_ip = 281;
-                        continue _fun45828
+                        _fun45821_ip = 281;
+                        continue _fun45821
                     }
                 case 268:
                     var2 = var0.checkViewableIndicesChanges;
                     var2 = var2.bind(var0)(var4);
-                    _fun45828_ip = 320;
-                    continue _fun45828;
+                    _fun45821_ip = 320;
+                    continue _fun45821;
                 case 281:
                     var2 = global;
                     var4 = var2.setTimeout;
@@ -312,7 +312,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'checkViewableIndicesChanges';
         var0.key = var5;
         var5 = function arg0() {
-            _fun45831: for (var _fun45831_ip = 0;;) switch (_fun45831_ip) {
+            _fun45824: for (var _fun45824_ip = 0;;) switch (_fun45824_ip) {
                 case 0:
                     var3 = arg0;
                     var4 = this;
@@ -354,16 +354,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = 0;
                     var0 = var0 > var6;
                     if (var0) {
-                        _fun45831_ip = 90;
-                        continue _fun45831
+                        _fun45824_ip = 90;
+                        continue _fun45824
                     }
                 case 81:
                     var5 = var1.length;
                     var0 = var5 > var6;
                 case 90:
                     if (!var0) {
-                        _fun45831_ip = 112;
-                        continue _fun45831
+                        _fun45824_ip = 112;
+                        continue _fun45824
                     }
                 case 93:
                     var4.lastReportedViewableIndices = var3;
@@ -392,7 +392,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'isItemViewable';
         var0.key = var5;
         var4 = function arg0, arg1, arg2, arg3, arg4, arg5, arg6() {
-            _fun45836: for (var _fun45836_ip = 0;;) switch (_fun45836_ip) {
+            _fun45829: for (var _fun45829_ip = 0;;) switch (_fun45829_ip) {
                 case 0:
                     var4 = arg1;
                     var2 = arg3;
@@ -403,42 +403,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = arg0;
                     var5 = var6.bind(var1)(var5);
                     if (!(var1 !== var5)) {
-                        _fun45836_ip = 219;
-                        continue _fun45836
+                        _fun45829_ip = 219;
+                        continue _fun45829
                     }
                 case 32:
                     if (var4) {
-                        _fun45836_ip = 42;
-                        continue _fun45836
+                        _fun45829_ip = 42;
+                        continue _fun45829
                     }
                 case 35:
                     var6 = var5.y;
-                    _fun45836_ip = 47;
-                    continue _fun45836;
+                    _fun45829_ip = 47;
+                    continue _fun45829;
                 case 42:
                     var6 = var5.x;
                 case 47:
                     var1 = arg2;
                     var8 = var6 - var1;
                     if (var4) {
-                        _fun45836_ip = 64;
-                        continue _fun45836
+                        _fun45829_ip = 64;
+                        continue _fun45829
                     }
                 case 57:
                     var1 = var5.height;
-                    _fun45836_ip = 69;
-                    continue _fun45836;
+                    _fun45829_ip = 69;
+                    continue _fun45829;
                 case 64:
                     var1 = var5.width;
                 case 69:
                     if (var4) {
-                        _fun45836_ip = 79;
-                        continue _fun45836
+                        _fun45829_ip = 79;
+                        continue _fun45829
                     }
                 case 72:
                     var4 = var2.height;
-                    _fun45836_ip = 84;
-                    continue _fun45836;
+                    _fun45829_ip = 84;
+                    continue _fun45829;
                 case 79:
                     var4 = var2.width;
                 case 84:
@@ -454,46 +454,46 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = var6 - var5;
                     var6 = var4;
                     if (!(var7 !== var1)) {
-                        _fun45836_ip = 215;
-                        continue _fun45836
+                        _fun45829_ip = 215;
+                        continue _fun45829
                     }
                 case 137:
                     if (!(var2 !== var7)) {
-                        _fun45836_ip = 211;
-                        continue _fun45836
+                        _fun45829_ip = 211;
+                        continue _fun45829
                     }
                 case 141:
                     var4 = null;
                     var5 = var4 != var3;
                     if (var5) {
-                        _fun45836_ip = 156;
-                        continue _fun45836
+                        _fun45829_ip = 156;
+                        continue _fun45829
                     }
                 case 150:
                     var1 = var7 / var1;
-                    _fun45836_ip = 160;
-                    continue _fun45836;
+                    _fun45829_ip = 160;
+                    continue _fun45829;
                 case 156:
                     var1 = var7 / var6;
                 case 160:
                     if (var5) {
-                        _fun45836_ip = 191;
-                        continue _fun45836
+                        _fun45829_ip = 191;
+                        continue _fun45829
                     }
                 case 163:
                     var4 = var4 != var0;
                     var2 = 0;
                     if (!var4) {
-                        _fun45836_ip = 175;
-                        continue _fun45836
+                        _fun45829_ip = 175;
+                        continue _fun45829
                     }
                 case 172:
                     var2 = var0;
                 case 175:
                     var0 = 0.01;
                     var0 = var0 * var2;
-                    _fun45836_ip = 205;
-                    continue _fun45836;
+                    _fun45829_ip = 205;
+                    continue _fun45829;
                 case 191:
                     var2 = 0.01;
                     var0 = var2 * var3;

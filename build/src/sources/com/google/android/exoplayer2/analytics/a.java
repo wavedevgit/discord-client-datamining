@@ -23,79 +23,79 @@ import com.google.android.exoplayer2.video.VideoSize;
 import com.reactnativecommunity.webview.RNCWebViewManager;
 import java.io.IOException;
 import java.util.List;
-import mi.j;
-import ne.q;
-import ne.u;
-import ne.w0;
-import ne.x;
-import ni.s;
-import ni.t;
-import ni.v;
-import qd.r;
+import ni.j;
+import oe.q;
+import oe.u;
+import oe.w0;
+import oe.x;
+import oi.s;
+import oi.t;
+import oi.v;
+import rd.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class a implements mc.a {
+public class a implements nc.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ne.e f11968d;
+    private final oe.e f12108d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Timeline.b f11969e;
+    private final Timeline.b f12109e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Timeline.d f11970i;
+    private final Timeline.d f12110i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final C0157a f11971o;
+    private final C0184a f12111o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final SparseArray f11972p;
+    private final SparseArray f12112p;
 
     /* renamed from: q  reason: collision with root package name */
-    private x f11973q;
+    private x f12113q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Player f11974r;
+    private Player f12114r;
 
     /* renamed from: s  reason: collision with root package name */
-    private u f11975s;
+    private u f12115s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f11976t;
+    private boolean f12116t;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: com.google.android.exoplayer2.analytics.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0157a {
+    public static final class C0184a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Timeline.b f11977a;
+        private final Timeline.b f12117a;
 
         /* renamed from: b  reason: collision with root package name */
-        private s f11978b = s.t();
+        private s f12118b = s.t();
 
         /* renamed from: c  reason: collision with root package name */
-        private t f11979c = t.j();
+        private t f12119c = t.j();
 
         /* renamed from: d  reason: collision with root package name */
-        private r.b f11980d;
+        private r.b f12120d;
 
         /* renamed from: e  reason: collision with root package name */
-        private r.b f11981e;
+        private r.b f12121e;
 
         /* renamed from: f  reason: collision with root package name */
-        private r.b f11982f;
+        private r.b f12122f;
 
-        public C0157a(Timeline.b bVar) {
-            this.f11977a = bVar;
+        public C0184a(Timeline.b bVar) {
+            this.f12117a = bVar;
         }
 
         private void b(t.a aVar, r.b bVar, Timeline timeline) {
             if (bVar != null) {
-                if (timeline.f(bVar.f46865a) != -1) {
+                if (timeline.f(bVar.f47983a) != -1) {
                     aVar.f(bVar, timeline);
                     return;
                 }
-                Timeline timeline2 = (Timeline) this.f11979c.get(bVar);
+                Timeline timeline2 = (Timeline) this.f12119c.get(bVar);
                 if (timeline2 != null) {
                     aVar.f(bVar, timeline2);
                 }
@@ -131,11 +131,11 @@ public class a implements mc.a {
         }
 
         private static boolean i(r.b bVar, Object obj, boolean z10, int i10, int i11, int i12) {
-            if (!bVar.f46865a.equals(obj)) {
+            if (!bVar.f47983a.equals(obj)) {
                 return false;
             }
-            if (!z10 || bVar.f46866b != i10 || bVar.f46867c != i11) {
-                if (z10 || bVar.f46866b != -1 || bVar.f46869e != i12) {
+            if (!z10 || bVar.f47984b != i10 || bVar.f47985c != i11) {
+                if (z10 || bVar.f47984b != -1 || bVar.f47987e != i12) {
                     return false;
                 }
                 return true;
@@ -145,83 +145,83 @@ public class a implements mc.a {
 
         private void m(Timeline timeline) {
             t.a a10 = t.a();
-            if (this.f11978b.isEmpty()) {
-                b(a10, this.f11981e, timeline);
-                if (!j.a(this.f11982f, this.f11981e)) {
-                    b(a10, this.f11982f, timeline);
+            if (this.f12118b.isEmpty()) {
+                b(a10, this.f12121e, timeline);
+                if (!j.a(this.f12122f, this.f12121e)) {
+                    b(a10, this.f12122f, timeline);
                 }
-                if (!j.a(this.f11980d, this.f11981e) && !j.a(this.f11980d, this.f11982f)) {
-                    b(a10, this.f11980d, timeline);
+                if (!j.a(this.f12120d, this.f12121e) && !j.a(this.f12120d, this.f12122f)) {
+                    b(a10, this.f12120d, timeline);
                 }
             } else {
-                for (int i10 = 0; i10 < this.f11978b.size(); i10++) {
-                    b(a10, (r.b) this.f11978b.get(i10), timeline);
+                for (int i10 = 0; i10 < this.f12118b.size(); i10++) {
+                    b(a10, (r.b) this.f12118b.get(i10), timeline);
                 }
-                if (!this.f11978b.contains(this.f11980d)) {
-                    b(a10, this.f11980d, timeline);
+                if (!this.f12118b.contains(this.f12120d)) {
+                    b(a10, this.f12120d, timeline);
                 }
             }
-            this.f11979c = a10.c();
+            this.f12119c = a10.c();
         }
 
         public r.b d() {
-            return this.f11980d;
+            return this.f12120d;
         }
 
         public r.b e() {
-            if (this.f11978b.isEmpty()) {
+            if (this.f12118b.isEmpty()) {
                 return null;
             }
-            return (r.b) v.c(this.f11978b);
+            return (r.b) v.c(this.f12118b);
         }
 
         public Timeline f(r.b bVar) {
-            return (Timeline) this.f11979c.get(bVar);
+            return (Timeline) this.f12119c.get(bVar);
         }
 
         public r.b g() {
-            return this.f11981e;
+            return this.f12121e;
         }
 
         public r.b h() {
-            return this.f11982f;
+            return this.f12122f;
         }
 
         public void j(Player player) {
-            this.f11980d = c(player, this.f11978b, this.f11981e, this.f11977a);
+            this.f12120d = c(player, this.f12118b, this.f12121e, this.f12117a);
         }
 
         public void k(List list, r.b bVar, Player player) {
-            this.f11978b = s.o(list);
+            this.f12118b = s.o(list);
             if (!list.isEmpty()) {
-                this.f11981e = (r.b) list.get(0);
-                this.f11982f = (r.b) ne.a.e(bVar);
+                this.f12121e = (r.b) list.get(0);
+                this.f12122f = (r.b) oe.a.e(bVar);
             }
-            if (this.f11980d == null) {
-                this.f11980d = c(player, this.f11978b, this.f11981e, this.f11977a);
+            if (this.f12120d == null) {
+                this.f12120d = c(player, this.f12118b, this.f12121e, this.f12117a);
             }
             m(player.v());
         }
 
         public void l(Player player) {
-            this.f11980d = c(player, this.f11978b, this.f11981e, this.f11977a);
+            this.f12120d = c(player, this.f12118b, this.f12121e, this.f12117a);
             m(player.v());
         }
     }
 
-    public a(ne.e eVar) {
-        this.f11968d = (ne.e) ne.a.e(eVar);
-        this.f11973q = new x(w0.R(), eVar, new x.b() { // from class: mc.z
-            @Override // ne.x.b
-            public final void a(Object obj, ne.q qVar) {
+    public a(oe.e eVar) {
+        this.f12108d = (oe.e) oe.a.e(eVar);
+        this.f12113q = new x(w0.R(), eVar, new x.b() { // from class: nc.z
+            @Override // oe.x.b
+            public final void a(Object obj, oe.q qVar) {
                 com.google.android.exoplayer2.analytics.a.S((AnalyticsListener) obj, qVar);
             }
         });
         Timeline.b bVar = new Timeline.b();
-        this.f11969e = bVar;
-        this.f11970i = new Timeline.d();
-        this.f11971o = new C0157a(bVar);
-        this.f11972p = new SparseArray();
+        this.f12109e = bVar;
+        this.f12110i = new Timeline.d();
+        this.f12111o = new C0184a(bVar);
+        this.f12112p = new SparseArray();
     }
 
     public static /* synthetic */ void J0(AnalyticsListener.EventTime eventTime, Format format, DecoderReuseEvaluation decoderReuseEvaluation, AnalyticsListener analyticsListener) {
@@ -254,53 +254,53 @@ public class a implements mc.a {
 
     private AnalyticsListener.EventTime W0(r.b bVar) {
         Timeline f10;
-        ne.a.e(this.f11974r);
+        oe.a.e(this.f12114r);
         if (bVar == null) {
             f10 = null;
         } else {
-            f10 = this.f11971o.f(bVar);
+            f10 = this.f12111o.f(bVar);
         }
         if (bVar != null && f10 != null) {
-            return V0(f10, f10.l(bVar.f46865a, this.f11969e).f11877i, bVar);
+            return V0(f10, f10.l(bVar.f47983a, this.f12109e).f12017i, bVar);
         }
-        int Q = this.f11974r.Q();
-        Timeline v10 = this.f11974r.v();
+        int Q = this.f12114r.Q();
+        Timeline v10 = this.f12114r.v();
         if (Q >= v10.t()) {
-            v10 = Timeline.f11864d;
+            v10 = Timeline.f12004d;
         }
         return V0(v10, Q, null);
     }
 
     private AnalyticsListener.EventTime X0() {
-        return W0(this.f11971o.e());
+        return W0(this.f12111o.e());
     }
 
     private AnalyticsListener.EventTime Y0(int i10, r.b bVar) {
-        ne.a.e(this.f11974r);
+        oe.a.e(this.f12114r);
         if (bVar != null) {
-            if (this.f11971o.f(bVar) != null) {
+            if (this.f12111o.f(bVar) != null) {
                 return W0(bVar);
             }
-            return V0(Timeline.f11864d, i10, bVar);
+            return V0(Timeline.f12004d, i10, bVar);
         }
-        Timeline v10 = this.f11974r.v();
+        Timeline v10 = this.f12114r.v();
         if (i10 >= v10.t()) {
-            v10 = Timeline.f11864d;
+            v10 = Timeline.f12004d;
         }
         return V0(v10, i10, null);
     }
 
     private AnalyticsListener.EventTime Z0() {
-        return W0(this.f11971o.g());
+        return W0(this.f12111o.g());
     }
 
     private AnalyticsListener.EventTime a1() {
-        return W0(this.f11971o.h());
+        return W0(this.f12111o.h());
     }
 
     private AnalyticsListener.EventTime b1(PlaybackException playbackException) {
-        qd.q qVar;
-        if ((playbackException instanceof com.google.android.exoplayer2.j) && (qVar = ((com.google.android.exoplayer2.j) playbackException).f12570y) != null) {
+        rd.q qVar;
+        if ((playbackException instanceof com.google.android.exoplayer2.j) && (qVar = ((com.google.android.exoplayer2.j) playbackException).f12710y) != null) {
             return W0(new r.b(qVar));
         }
         return U0();
@@ -309,13 +309,13 @@ public class a implements mc.a {
     /* JADX INFO: Access modifiers changed from: private */
     public void c1() {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 1028, new x.a() { // from class: mc.d1
-            @Override // ne.x.a
+        d1(U0, 1028, new x.a() { // from class: nc.d1
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onPlayerReleased(AnalyticsListener.EventTime.this);
             }
         });
-        this.f11973q.i();
+        this.f12113q.i();
     }
 
     public static /* synthetic */ void j0(AnalyticsListener.EventTime eventTime, int i10, AnalyticsListener analyticsListener) {
@@ -325,7 +325,7 @@ public class a implements mc.a {
 
     public static /* synthetic */ void n0(AnalyticsListener.EventTime eventTime, VideoSize videoSize, AnalyticsListener analyticsListener) {
         analyticsListener.onVideoSizeChanged(eventTime, videoSize);
-        analyticsListener.onVideoSizeChanged(eventTime, videoSize.f13462d, videoSize.f13463e, videoSize.f13464i, videoSize.f13465o);
+        analyticsListener.onVideoSizeChanged(eventTime, videoSize.f13602d, videoSize.f13603e, videoSize.f13604i, videoSize.f13605o);
     }
 
     public static /* synthetic */ void t0(AnalyticsListener.EventTime eventTime, boolean z10, AnalyticsListener analyticsListener) {
@@ -333,107 +333,107 @@ public class a implements mc.a {
         analyticsListener.onIsLoadingChanged(eventTime, z10);
     }
 
-    @Override // rc.u
-    public final void A(int i10, r.b bVar) {
+    @Override // sc.u
+    public final void A(int i10, r.b bVar, final int i11) {
         final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, 1023, new x.a() { // from class: mc.f1
-            @Override // ne.x.a
-            public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onDrmKeysLoaded(AnalyticsListener.EventTime.this);
-            }
-        });
-    }
-
-    @Override // mc.a
-    public void B(AnalyticsListener analyticsListener) {
-        ne.a.e(analyticsListener);
-        this.f11973q.c(analyticsListener);
-    }
-
-    @Override // qd.y
-    public final void C(int i10, r.b bVar, final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData) {
-        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, 1000, new x.a() { // from class: mc.t0
-            @Override // ne.x.a
-            public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onLoadStarted(AnalyticsListener.EventTime.this, loadEventInfo, mediaLoadData);
-            }
-        });
-    }
-
-    @Override // qd.y
-    public final void D(int i10, r.b bVar, final MediaLoadData mediaLoadData) {
-        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, 1005, new x.a() { // from class: mc.n0
-            @Override // ne.x.a
-            public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onUpstreamDiscarded(AnalyticsListener.EventTime.this, mediaLoadData);
-            }
-        });
-    }
-
-    @Override // mc.a
-    public final void E(List list, r.b bVar) {
-        this.f11971o.k(list, bVar, (Player) ne.a.e(this.f11974r));
-    }
-
-    @Override // rc.u
-    public final void F(int i10, r.b bVar) {
-        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, 1027, new x.a() { // from class: mc.e0
-            @Override // ne.x.a
-            public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onDrmSessionReleased(AnalyticsListener.EventTime.this);
-            }
-        });
-    }
-
-    @Override // qd.y
-    public final void G(int i10, r.b bVar, final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData) {
-        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, RNCWebViewManager.COMMAND_CLEAR_HISTORY, new x.a() { // from class: mc.h1
-            @Override // ne.x.a
-            public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onLoadCanceled(AnalyticsListener.EventTime.this, loadEventInfo, mediaLoadData);
-            }
-        });
-    }
-
-    @Override // qd.y
-    public final void H(int i10, r.b bVar, final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData) {
-        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, RNCWebViewManager.COMMAND_CLEAR_CACHE, new x.a() { // from class: mc.i
-            @Override // ne.x.a
-            public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onLoadCompleted(AnalyticsListener.EventTime.this, loadEventInfo, mediaLoadData);
-            }
-        });
-    }
-
-    @Override // rc.u
-    public final void I(int i10, r.b bVar, final Exception exc) {
-        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, new x.a() { // from class: mc.o0
-            @Override // ne.x.a
-            public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onDrmSessionManagerError(AnalyticsListener.EventTime.this, exc);
-            }
-        });
-    }
-
-    @Override // rc.u
-    public final void J(int i10, r.b bVar, final int i11) {
-        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, 1022, new x.a() { // from class: mc.s0
-            @Override // ne.x.a
+        d1(Y0, 1022, new x.a() { // from class: nc.s0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 com.google.android.exoplayer2.analytics.a.j0(AnalyticsListener.EventTime.this, i11, (AnalyticsListener) obj);
             }
         });
     }
 
+    @Override // sc.u
+    public final void B(int i10, r.b bVar, final Exception exc) {
+        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
+        d1(Y0, IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, new x.a() { // from class: nc.o0
+            @Override // oe.x.a
+            public final void invoke(Object obj) {
+                ((AnalyticsListener) obj).onDrmSessionManagerError(AnalyticsListener.EventTime.this, exc);
+            }
+        });
+    }
+
+    @Override // rd.y
+    public final void C(int i10, r.b bVar, final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData) {
+        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
+        d1(Y0, RNCWebViewManager.COMMAND_CLEAR_HISTORY, new x.a() { // from class: nc.h1
+            @Override // oe.x.a
+            public final void invoke(Object obj) {
+                ((AnalyticsListener) obj).onLoadCanceled(AnalyticsListener.EventTime.this, loadEventInfo, mediaLoadData);
+            }
+        });
+    }
+
+    @Override // rd.y
+    public final void D(int i10, r.b bVar, final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData) {
+        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
+        d1(Y0, 1000, new x.a() { // from class: nc.t0
+            @Override // oe.x.a
+            public final void invoke(Object obj) {
+                ((AnalyticsListener) obj).onLoadStarted(AnalyticsListener.EventTime.this, loadEventInfo, mediaLoadData);
+            }
+        });
+    }
+
+    @Override // sc.u
+    public final void E(int i10, r.b bVar) {
+        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
+        d1(Y0, 1025, new x.a() { // from class: nc.g1
+            @Override // oe.x.a
+            public final void invoke(Object obj) {
+                ((AnalyticsListener) obj).onDrmKeysRestored(AnalyticsListener.EventTime.this);
+            }
+        });
+    }
+
+    @Override // rd.y
+    public final void F(int i10, r.b bVar, final MediaLoadData mediaLoadData) {
+        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
+        d1(Y0, 1005, new x.a() { // from class: nc.n0
+            @Override // oe.x.a
+            public final void invoke(Object obj) {
+                ((AnalyticsListener) obj).onUpstreamDiscarded(AnalyticsListener.EventTime.this, mediaLoadData);
+            }
+        });
+    }
+
+    @Override // rd.y
+    public final void G(int i10, r.b bVar, final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData) {
+        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
+        d1(Y0, RNCWebViewManager.COMMAND_CLEAR_CACHE, new x.a() { // from class: nc.i
+            @Override // oe.x.a
+            public final void invoke(Object obj) {
+                ((AnalyticsListener) obj).onLoadCompleted(AnalyticsListener.EventTime.this, loadEventInfo, mediaLoadData);
+            }
+        });
+    }
+
+    @Override // rd.y
+    public final void H(int i10, r.b bVar, final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData, final IOException iOException, final boolean z10) {
+        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
+        d1(Y0, 1003, new x.a() { // from class: nc.p
+            @Override // oe.x.a
+            public final void invoke(Object obj) {
+                ((AnalyticsListener) obj).onLoadError(AnalyticsListener.EventTime.this, loadEventInfo, mediaLoadData, iOException, z10);
+            }
+        });
+    }
+
+    @Override // sc.u
+    public final void J(int i10, r.b bVar) {
+        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
+        d1(Y0, 1026, new x.a() { // from class: nc.z0
+            @Override // oe.x.a
+            public final void invoke(Object obj) {
+                ((AnalyticsListener) obj).onDrmKeysRemoved(AnalyticsListener.EventTime.this);
+            }
+        });
+    }
+
     protected final AnalyticsListener.EventTime U0() {
-        return W0(this.f11971o.d());
+        return W0(this.f12111o.d());
     }
 
     protected final AnalyticsListener.EventTime V0(Timeline timeline, int i10, r.b bVar) {
@@ -444,63 +444,63 @@ public class a implements mc.a {
         } else {
             bVar2 = bVar;
         }
-        long b10 = this.f11968d.b();
-        if (timeline.equals(this.f11974r.v()) && i10 == this.f11974r.Q()) {
+        long b10 = this.f12108d.b();
+        if (timeline.equals(this.f12114r.v()) && i10 == this.f12114r.Q()) {
             z10 = true;
         } else {
             z10 = false;
         }
         long j10 = 0;
         if (bVar2 != null && bVar2.b()) {
-            if (z10 && this.f11974r.r() == bVar2.f46866b && this.f11974r.I() == bVar2.f46867c) {
-                j10 = this.f11974r.Z();
+            if (z10 && this.f12114r.r() == bVar2.f47984b && this.f12114r.I() == bVar2.f47985c) {
+                j10 = this.f12114r.Z();
             }
         } else if (z10) {
-            j10 = this.f11974r.K();
+            j10 = this.f12114r.K();
         } else if (!timeline.u()) {
-            j10 = timeline.r(i10, this.f11970i).d();
+            j10 = timeline.r(i10, this.f12110i).d();
         }
-        return new AnalyticsListener.EventTime(b10, timeline, i10, bVar2, j10, this.f11974r.v(), this.f11974r.Q(), this.f11971o.d(), this.f11974r.Z(), this.f11974r.g());
+        return new AnalyticsListener.EventTime(b10, timeline, i10, bVar2, j10, this.f12114r.v(), this.f12114r.Q(), this.f12111o.d(), this.f12114r.Z(), this.f12114r.g());
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void a(final Exception exc) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1014, new x.a() { // from class: mc.l0
-            @Override // ne.x.a
+        d1(a12, 1014, new x.a() { // from class: nc.l0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onAudioSinkError(AnalyticsListener.EventTime.this, exc);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void b(final String str) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1019, new x.a() { // from class: mc.y0
-            @Override // ne.x.a
+        d1(a12, 1019, new x.a() { // from class: nc.y0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onVideoDecoderReleased(AnalyticsListener.EventTime.this, str);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void c(final DecoderCounters decoderCounters) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1007, new x.a() { // from class: mc.q0
-            @Override // ne.x.a
+        d1(a12, 1007, new x.a() { // from class: nc.q0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onAudioEnabled(AnalyticsListener.EventTime.this, decoderCounters);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void d(final String str, final long j10, final long j11) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1016, new x.a() { // from class: mc.y
-            @Override // ne.x.a
+        d1(a12, 1016, new x.a() { // from class: nc.y
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 com.google.android.exoplayer2.analytics.a.R0(AnalyticsListener.EventTime.this, str, j11, j10, (AnalyticsListener) obj);
             }
@@ -508,125 +508,125 @@ public class a implements mc.a {
     }
 
     protected final void d1(AnalyticsListener.EventTime eventTime, int i10, x.a aVar) {
-        this.f11972p.put(i10, eventTime);
-        this.f11973q.k(i10, aVar);
+        this.f12112p.put(i10, eventTime);
+        this.f12113q.k(i10, aVar);
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void e(final String str) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1012, new x.a() { // from class: mc.b0
-            @Override // ne.x.a
+        d1(a12, 1012, new x.a() { // from class: nc.b0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onAudioDecoderReleased(AnalyticsListener.EventTime.this, str);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void f(final String str, final long j10, final long j11) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1008, new x.a() { // from class: mc.b
-            @Override // ne.x.a
+        d1(a12, 1008, new x.a() { // from class: nc.b
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 com.google.android.exoplayer2.analytics.a.Q0(AnalyticsListener.EventTime.this, str, j11, j10, (AnalyticsListener) obj);
             }
         });
     }
 
-    @Override // qd.y
+    @Override // rd.y
     public final void g(int i10, r.b bVar, final MediaLoadData mediaLoadData) {
         final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, 1004, new x.a() { // from class: mc.n
-            @Override // ne.x.a
+        d1(Y0, 1004, new x.a() { // from class: nc.n
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onDownstreamFormatChanged(AnalyticsListener.EventTime.this, mediaLoadData);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void h(final Format format, final DecoderReuseEvaluation decoderReuseEvaluation) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1017, new x.a() { // from class: mc.u
-            @Override // ne.x.a
+        d1(a12, 1017, new x.a() { // from class: nc.u
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 com.google.android.exoplayer2.analytics.a.K0(AnalyticsListener.EventTime.this, format, decoderReuseEvaluation, (AnalyticsListener) obj);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void i(final long j10) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1010, new x.a() { // from class: mc.d0
-            @Override // ne.x.a
+        d1(a12, 1010, new x.a() { // from class: nc.d0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onAudioPositionAdvancing(AnalyticsListener.EventTime.this, j10);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void j(final Exception exc) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1030, new x.a() { // from class: mc.j1
-            @Override // ne.x.a
+        d1(a12, 1030, new x.a() { // from class: nc.j1
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onVideoCodecError(AnalyticsListener.EventTime.this, exc);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void k(final DecoderCounters decoderCounters) {
         final AnalyticsListener.EventTime Z0 = Z0();
-        d1(Z0, 1020, new x.a() { // from class: mc.i0
-            @Override // ne.x.a
+        d1(Z0, 1020, new x.a() { // from class: nc.i0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onVideoDisabled(AnalyticsListener.EventTime.this, decoderCounters);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void l(final DecoderCounters decoderCounters) {
         final AnalyticsListener.EventTime Z0 = Z0();
-        d1(Z0, 1013, new x.a() { // from class: mc.a0
-            @Override // ne.x.a
+        d1(Z0, 1013, new x.a() { // from class: nc.a0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onAudioDisabled(AnalyticsListener.EventTime.this, decoderCounters);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void m(final int i10, final long j10) {
         final AnalyticsListener.EventTime Z0 = Z0();
-        d1(Z0, 1018, new x.a() { // from class: mc.h0
-            @Override // ne.x.a
+        d1(Z0, 1018, new x.a() { // from class: nc.h0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onDroppedVideoFrames(AnalyticsListener.EventTime.this, i10, j10);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void n(final Format format, final DecoderReuseEvaluation decoderReuseEvaluation) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1009, new x.a() { // from class: mc.d
-            @Override // ne.x.a
+        d1(a12, 1009, new x.a() { // from class: nc.d
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 com.google.android.exoplayer2.analytics.a.J0(AnalyticsListener.EventTime.this, format, decoderReuseEvaluation, (AnalyticsListener) obj);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void o(final Object obj, final long j10) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 26, new x.a() { // from class: mc.b1
-            @Override // ne.x.a
+        d1(a12, 26, new x.a() { // from class: nc.b1
+            @Override // oe.x.a
             public final void invoke(Object obj2) {
                 ((AnalyticsListener) obj2).onRenderedFirstFrame(AnalyticsListener.EventTime.this, obj, j10);
             }
@@ -636,19 +636,19 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public void onAvailableCommandsChanged(final Player.Commands commands) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 13, new x.a() { // from class: mc.t
-            @Override // ne.x.a
+        d1(U0, 13, new x.a() { // from class: nc.t
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onAvailableCommandsChanged(AnalyticsListener.EventTime.this, commands);
             }
         });
     }
 
-    @Override // com.google.android.exoplayer2.Player.b, zd.m
+    @Override // com.google.android.exoplayer2.Player.b, ae.m
     public void onCues(final List list) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 27, new x.a() { // from class: mc.f0
-            @Override // ne.x.a
+        d1(U0, 27, new x.a() { // from class: nc.f0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onCues(AnalyticsListener.EventTime.this, list);
             }
@@ -658,8 +658,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public void onDeviceInfoChanged(final DeviceInfo deviceInfo) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 29, new x.a() { // from class: mc.v0
-            @Override // ne.x.a
+        d1(U0, 29, new x.a() { // from class: nc.v0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onDeviceInfoChanged(AnalyticsListener.EventTime.this, deviceInfo);
             }
@@ -669,8 +669,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public void onDeviceVolumeChanged(final int i10, final boolean z10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 30, new x.a() { // from class: mc.w0
-            @Override // ne.x.a
+        d1(U0, 30, new x.a() { // from class: nc.w0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onDeviceVolumeChanged(AnalyticsListener.EventTime.this, i10, z10);
             }
@@ -684,8 +684,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onIsLoadingChanged(final boolean z10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 3, new x.a() { // from class: mc.e1
-            @Override // ne.x.a
+        d1(U0, 3, new x.a() { // from class: nc.e1
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 com.google.android.exoplayer2.analytics.a.t0(AnalyticsListener.EventTime.this, z10, (AnalyticsListener) obj);
             }
@@ -695,8 +695,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public void onIsPlayingChanged(final boolean z10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 7, new x.a() { // from class: mc.i1
-            @Override // ne.x.a
+        d1(U0, 7, new x.a() { // from class: nc.i1
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onIsPlayingChanged(AnalyticsListener.EventTime.this, z10);
             }
@@ -710,8 +710,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onMediaItemTransition(final MediaItem mediaItem, final int i10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 1, new x.a() { // from class: mc.r
-            @Override // ne.x.a
+        d1(U0, 1, new x.a() { // from class: nc.r
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onMediaItemTransition(AnalyticsListener.EventTime.this, mediaItem, i10);
             }
@@ -721,19 +721,19 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public void onMediaMetadataChanged(final MediaMetadata mediaMetadata) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 14, new x.a() { // from class: mc.f
-            @Override // ne.x.a
+        d1(U0, 14, new x.a() { // from class: nc.f
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onMediaMetadataChanged(AnalyticsListener.EventTime.this, mediaMetadata);
             }
         });
     }
 
-    @Override // com.google.android.exoplayer2.Player.b, gd.d
+    @Override // com.google.android.exoplayer2.Player.b, hd.d
     public final void onMetadata(final Metadata metadata) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 28, new x.a() { // from class: mc.x0
-            @Override // ne.x.a
+        d1(U0, 28, new x.a() { // from class: nc.x0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onMetadata(AnalyticsListener.EventTime.this, metadata);
             }
@@ -743,8 +743,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onPlayWhenReadyChanged(final boolean z10, final int i10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 5, new x.a() { // from class: mc.m
-            @Override // ne.x.a
+        d1(U0, 5, new x.a() { // from class: nc.m
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onPlayWhenReadyChanged(AnalyticsListener.EventTime.this, z10, i10);
             }
@@ -754,8 +754,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onPlaybackParametersChanged(final PlaybackParameters playbackParameters) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 12, new x.a() { // from class: mc.h
-            @Override // ne.x.a
+        d1(U0, 12, new x.a() { // from class: nc.h
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onPlaybackParametersChanged(AnalyticsListener.EventTime.this, playbackParameters);
             }
@@ -765,8 +765,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onPlaybackStateChanged(final int i10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 4, new x.a() { // from class: mc.w
-            @Override // ne.x.a
+        d1(U0, 4, new x.a() { // from class: nc.w
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onPlaybackStateChanged(AnalyticsListener.EventTime.this, i10);
             }
@@ -776,8 +776,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onPlaybackSuppressionReasonChanged(final int i10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 6, new x.a() { // from class: mc.k0
-            @Override // ne.x.a
+        d1(U0, 6, new x.a() { // from class: nc.k0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onPlaybackSuppressionReasonChanged(AnalyticsListener.EventTime.this, i10);
             }
@@ -787,8 +787,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onPlayerError(final PlaybackException playbackException) {
         final AnalyticsListener.EventTime b12 = b1(playbackException);
-        d1(b12, 10, new x.a() { // from class: mc.q
-            @Override // ne.x.a
+        d1(b12, 10, new x.a() { // from class: nc.q
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onPlayerError(AnalyticsListener.EventTime.this, playbackException);
             }
@@ -798,8 +798,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public void onPlayerErrorChanged(final PlaybackException playbackException) {
         final AnalyticsListener.EventTime b12 = b1(playbackException);
-        d1(b12, 10, new x.a() { // from class: mc.j0
-            @Override // ne.x.a
+        d1(b12, 10, new x.a() { // from class: nc.j0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onPlayerErrorChanged(AnalyticsListener.EventTime.this, playbackException);
             }
@@ -809,8 +809,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onPlayerStateChanged(final boolean z10, final int i10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, -1, new x.a() { // from class: mc.j
-            @Override // ne.x.a
+        d1(U0, -1, new x.a() { // from class: nc.j
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onPlayerStateChanged(AnalyticsListener.EventTime.this, z10, i10);
             }
@@ -828,8 +828,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onRepeatModeChanged(final int i10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 8, new x.a() { // from class: mc.c0
-            @Override // ne.x.a
+        d1(U0, 8, new x.a() { // from class: nc.c0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onRepeatModeChanged(AnalyticsListener.EventTime.this, i10);
             }
@@ -839,8 +839,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onShuffleModeEnabledChanged(final boolean z10) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 9, new x.a() { // from class: mc.c
-            @Override // ne.x.a
+        d1(U0, 9, new x.a() { // from class: nc.c
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onShuffleModeChanged(AnalyticsListener.EventTime.this, z10);
             }
@@ -850,8 +850,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onSkipSilenceEnabledChanged(final boolean z10) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 23, new x.a() { // from class: mc.c1
-            @Override // ne.x.a
+        d1(a12, 23, new x.a() { // from class: nc.c1
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onSkipSilenceEnabledChanged(AnalyticsListener.EventTime.this, z10);
             }
@@ -861,8 +861,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onSurfaceSizeChanged(final int i10, final int i11) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 24, new x.a() { // from class: mc.o
-            @Override // ne.x.a
+        d1(a12, 24, new x.a() { // from class: nc.o
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onSurfaceSizeChanged(AnalyticsListener.EventTime.this, i10, i11);
             }
@@ -871,10 +871,10 @@ public class a implements mc.a {
 
     @Override // com.google.android.exoplayer2.Player.b
     public final void onTimelineChanged(Timeline timeline, final int i10) {
-        this.f11971o.l((Player) ne.a.e(this.f11974r));
+        this.f12111o.l((Player) oe.a.e(this.f12114r));
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 0, new x.a() { // from class: mc.r0
-            @Override // ne.x.a
+        d1(U0, 0, new x.a() { // from class: nc.r0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onTimelineChanged(AnalyticsListener.EventTime.this, i10);
             }
@@ -884,8 +884,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public void onTracksChanged(final Tracks tracks) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 2, new x.a() { // from class: mc.g0
-            @Override // ne.x.a
+        d1(U0, 2, new x.a() { // from class: nc.g0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onTracksChanged(AnalyticsListener.EventTime.this, tracks);
             }
@@ -895,8 +895,8 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onVideoSizeChanged(final VideoSize videoSize) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 25, new x.a() { // from class: mc.a1
-            @Override // ne.x.a
+        d1(a12, 25, new x.a() { // from class: nc.a1
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 com.google.android.exoplayer2.analytics.a.n0(AnalyticsListener.EventTime.this, videoSize, (AnalyticsListener) obj);
             }
@@ -906,50 +906,50 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onVolumeChanged(final float f10) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 22, new x.a() { // from class: mc.u0
-            @Override // ne.x.a
+        d1(a12, 22, new x.a() { // from class: nc.u0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onVolumeChanged(AnalyticsListener.EventTime.this, f10);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void p(final DecoderCounters decoderCounters) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1015, new x.a() { // from class: mc.v
-            @Override // ne.x.a
+        d1(a12, 1015, new x.a() { // from class: nc.v
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onVideoEnabled(AnalyticsListener.EventTime.this, decoderCounters);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void q(final Exception exc) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1029, new x.a() { // from class: mc.k1
-            @Override // ne.x.a
+        d1(a12, 1029, new x.a() { // from class: nc.k1
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onAudioCodecError(AnalyticsListener.EventTime.this, exc);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void r(final int i10, final long j10, final long j11) {
         final AnalyticsListener.EventTime a12 = a1();
-        d1(a12, 1011, new x.a() { // from class: mc.e
-            @Override // ne.x.a
+        d1(a12, 1011, new x.a() { // from class: nc.e
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onAudioUnderrun(AnalyticsListener.EventTime.this, i10, j10, j11);
             }
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public void release() {
-        ((u) ne.a.i(this.f11975s)).post(new Runnable() { // from class: mc.g
+        ((u) oe.a.i(this.f12115s)).post(new Runnable() { // from class: nc.g
             @Override // java.lang.Runnable
             public final void run() {
                 com.google.android.exoplayer2.analytics.a.this.c1();
@@ -957,46 +957,62 @@ public class a implements mc.a {
         });
     }
 
-    @Override // mc.a
+    @Override // nc.a
     public final void s(final long j10, final int i10) {
         final AnalyticsListener.EventTime Z0 = Z0();
-        d1(Z0, 1021, new x.a() { // from class: mc.m0
-            @Override // ne.x.a
+        d1(Z0, 1021, new x.a() { // from class: nc.m0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onVideoFrameProcessingOffset(AnalyticsListener.EventTime.this, j10, i10);
             }
         });
     }
 
-    @Override // qd.y
-    public final void t(int i10, r.b bVar, final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData, final IOException iOException, final boolean z10) {
+    @Override // sc.u
+    public final void t(int i10, r.b bVar) {
         final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, 1003, new x.a() { // from class: mc.p
-            @Override // ne.x.a
+        d1(Y0, 1027, new x.a() { // from class: nc.e0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onLoadError(AnalyticsListener.EventTime.this, loadEventInfo, mediaLoadData, iOException, z10);
+                ((AnalyticsListener) obj).onDrmSessionReleased(AnalyticsListener.EventTime.this);
             }
         });
     }
 
-    @Override // le.e.a
-    public final void u(final int i10, final long j10, final long j11) {
+    @Override // sc.u
+    public final void u(int i10, r.b bVar) {
+        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
+        d1(Y0, 1023, new x.a() { // from class: nc.f1
+            @Override // oe.x.a
+            public final void invoke(Object obj) {
+                ((AnalyticsListener) obj).onDrmKeysLoaded(AnalyticsListener.EventTime.this);
+            }
+        });
+    }
+
+    @Override // nc.a
+    public final void v(List list, r.b bVar) {
+        this.f12111o.k(list, bVar, (Player) oe.a.e(this.f12114r));
+    }
+
+    @Override // me.e.a
+    public final void w(final int i10, final long j10, final long j11) {
         final AnalyticsListener.EventTime X0 = X0();
-        d1(X0, 1006, new x.a() { // from class: mc.x
-            @Override // ne.x.a
+        d1(X0, 1006, new x.a() { // from class: nc.x
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onBandwidthEstimate(AnalyticsListener.EventTime.this, i10, j10, j11);
             }
         });
     }
 
-    @Override // mc.a
-    public final void v() {
-        if (!this.f11976t) {
+    @Override // nc.a
+    public final void x() {
+        if (!this.f12116t) {
             final AnalyticsListener.EventTime U0 = U0();
-            this.f11976t = true;
-            d1(U0, -1, new x.a() { // from class: mc.k
-                @Override // ne.x.a
+            this.f12116t = true;
+            d1(U0, -1, new x.a() { // from class: nc.k
+                @Override // oe.x.a
                 public final void invoke(Object obj) {
                     ((AnalyticsListener) obj).onSeekStarted(AnalyticsListener.EventTime.this);
                 }
@@ -1004,68 +1020,52 @@ public class a implements mc.a {
         }
     }
 
-    @Override // rc.u
-    public final void w(int i10, r.b bVar) {
-        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, 1025, new x.a() { // from class: mc.g1
-            @Override // ne.x.a
-            public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onDrmKeysRestored(AnalyticsListener.EventTime.this);
-            }
-        });
-    }
-
-    @Override // mc.a
+    @Override // nc.a
     public void y(final Player player, Looper looper) {
         boolean z10;
-        if (this.f11974r != null && !this.f11971o.f11978b.isEmpty()) {
+        if (this.f12114r != null && !this.f12111o.f12118b.isEmpty()) {
             z10 = false;
         } else {
             z10 = true;
         }
-        ne.a.g(z10);
-        this.f11974r = (Player) ne.a.e(player);
-        this.f11975s = this.f11968d.c(looper, null);
-        this.f11973q = this.f11973q.e(looper, new x.b() { // from class: mc.l
-            @Override // ne.x.b
-            public final void a(Object obj, ne.q qVar) {
+        oe.a.g(z10);
+        this.f12114r = (Player) oe.a.e(player);
+        this.f12115s = this.f12108d.c(looper, null);
+        this.f12113q = this.f12113q.e(looper, new x.b() { // from class: nc.l
+            @Override // oe.x.b
+            public final void a(Object obj, oe.q qVar) {
                 AnalyticsListener analyticsListener = (AnalyticsListener) obj;
-                analyticsListener.onEvents(player, new AnalyticsListener.Events(qVar, com.google.android.exoplayer2.analytics.a.this.f11972p));
+                analyticsListener.onEvents(player, new AnalyticsListener.Events(qVar, com.google.android.exoplayer2.analytics.a.this.f12112p));
             }
         });
     }
 
-    @Override // rc.u
-    public final void z(int i10, r.b bVar) {
-        final AnalyticsListener.EventTime Y0 = Y0(i10, bVar);
-        d1(Y0, 1026, new x.a() { // from class: mc.z0
-            @Override // ne.x.a
-            public final void invoke(Object obj) {
-                ((AnalyticsListener) obj).onDrmKeysRemoved(AnalyticsListener.EventTime.this);
-            }
-        });
+    @Override // nc.a
+    public void z(AnalyticsListener analyticsListener) {
+        oe.a.e(analyticsListener);
+        this.f12113q.c(analyticsListener);
     }
 
     @Override // com.google.android.exoplayer2.Player.b
     public final void onPositionDiscontinuity(final Player.PositionInfo positionInfo, final Player.PositionInfo positionInfo2, final int i10) {
         if (i10 == 1) {
-            this.f11976t = false;
+            this.f12116t = false;
         }
-        this.f11971o.j((Player) ne.a.e(this.f11974r));
+        this.f12111o.j((Player) oe.a.e(this.f12114r));
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 11, new x.a() { // from class: mc.p0
-            @Override // ne.x.a
+        d1(U0, 11, new x.a() { // from class: nc.p0
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 com.google.android.exoplayer2.analytics.a.O0(AnalyticsListener.EventTime.this, i10, positionInfo, positionInfo2, (AnalyticsListener) obj);
             }
         });
     }
 
-    @Override // com.google.android.exoplayer2.Player.b, zd.m
+    @Override // com.google.android.exoplayer2.Player.b, ae.m
     public void onCues(final CueGroup cueGroup) {
         final AnalyticsListener.EventTime U0 = U0();
-        d1(U0, 27, new x.a() { // from class: mc.s
-            @Override // ne.x.a
+        d1(U0, 27, new x.a() { // from class: nc.s
+            @Override // oe.x.a
             public final void invoke(Object obj) {
                 ((AnalyticsListener) obj).onCues(AnalyticsListener.EventTime.this, cueGroup);
             }

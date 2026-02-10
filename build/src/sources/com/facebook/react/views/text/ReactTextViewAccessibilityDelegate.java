@@ -45,7 +45,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
             private int end;
 
             /* renamed from: id  reason: collision with root package name */
-            private int f11274id;
+            private int f11414id;
             private int start;
 
             public final String getDescription() {
@@ -57,7 +57,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
             }
 
             public final int getId() {
-                return this.f11274id;
+                return this.f11414id;
             }
 
             public final int getStart() {
@@ -73,7 +73,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
             }
 
             public final void setId(int i10) {
-                this.f11274id = i10;
+                this.f11414id = i10;
             }
 
             public final void setStart(int i10) {
@@ -90,7 +90,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
                 i.F(clickableSpanArr, new Comparator() { // from class: com.facebook.react.views.text.ReactTextViewAccessibilityDelegate$AccessibilityLinks$special$$inlined$sortBy$1
                     @Override // java.util.Comparator
                     public final int compare(T t10, T t11) {
-                        return tr.a.d(Integer.valueOf(text.getSpanStart((ClickableSpan) t10)), Integer.valueOf(text.getSpanStart((ClickableSpan) t11)));
+                        return ur.a.d(Integer.valueOf(text.getSpanStart((ClickableSpan) t10)), Integer.valueOf(text.getSpanStart((ClickableSpan) t11)));
                     }
                 });
             }

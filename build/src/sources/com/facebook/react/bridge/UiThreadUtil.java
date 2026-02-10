@@ -15,7 +15,7 @@ public final class UiThreadUtil {
     @NotNull
     public static final UiThreadUtil INSTANCE = new UiThreadUtil();
     @NotNull
-    private static final Lazy mainHandler$delegate = qr.l.b(qr.o.f48093i, new Function0() { // from class: com.facebook.react.bridge.y
+    private static final Lazy mainHandler$delegate = rr.l.b(rr.o.f49211i, new Function0() { // from class: com.facebook.react.bridge.y
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Handler mainHandler_delegate$lambda$0;
@@ -29,7 +29,7 @@ public final class UiThreadUtil {
 
     public static final void assertNotOnUiThread() {
         if (ReactNativeFeatureFlags.runtimeCrashUiThreadUtils()) {
-            db.a.b(!isOnUiThread(), "Expected not to run on UI thread!");
+            eb.a.b(!isOnUiThread(), "Expected not to run on UI thread!");
         } else if (ReactBuildConfig.DEBUG) {
             SoftAssertions.assertCondition(!isOnUiThread(), "Expected not to run on UI thread!");
         }
@@ -37,7 +37,7 @@ public final class UiThreadUtil {
 
     public static final void assertOnUiThread() {
         if (ReactNativeFeatureFlags.runtimeCrashUiThreadUtils()) {
-            db.a.b(isOnUiThread(), "Expected to run on UI thread!");
+            eb.a.b(isOnUiThread(), "Expected to run on UI thread!");
         } else if (ReactBuildConfig.DEBUG) {
             SoftAssertions.assertCondition(isOnUiThread(), "Expected to run on UI thread!");
         }

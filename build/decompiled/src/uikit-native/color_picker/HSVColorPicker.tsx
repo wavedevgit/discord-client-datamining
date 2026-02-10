@@ -42,10 +42,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'center';
     var8.alignItems = var9;
     var3.hsvColorPicker = var8;
-    var8 = {};
-    var9 = 12;
-    var8.marginTop = var9;
-    var3.huePicker = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
     var3 = 7;
@@ -55,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/color_picker/HSVColorPicker.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80811: for (var _fun80811_ip = 0;;) switch (_fun80811_ip) {
+        _fun80676: for (var _fun80676_ip = 0;;) switch (_fun80676_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.hue;
@@ -96,24 +92,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = null;
                 var16 = var9;
                 if (!(var11 != var10)) {
-                    _fun80811_ip = 169;
-                    continue _fun80811
+                    _fun80676_ip = 169;
+                    continue _fun80676
                 }
             case 166:
                 var16 = var10;
             case 169:
                 var4.hue = var16;
                 if (!(var11 != var15)) {
-                    _fun80811_ip = 181;
-                    continue _fun80811
+                    _fun80676_ip = 181;
+                    continue _fun80676
                 }
             case 178:
                 var14 = var15;
             case 181:
                 var4.saturation = var14;
                 if (!(var11 != var13)) {
-                    _fun80811_ip = 193;
-                    continue _fun80811
+                    _fun80676_ip = 193;
+                    continue _fun80676
                 }
             case 190:
                 var12 = var13;
@@ -131,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var3)(var5);
                 var5 = {};
                 if (!(var11 != var10)) {
-                    _fun80811_ip = 249;
-                    continue _fun80811
+                    _fun80676_ip = 249;
+                    continue _fun80676
                 }
             case 246:
                 var9 = var10;
@@ -148,4 +144,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3721, 10282, 10283, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3721, 10260, 10261, 2]);

@@ -1,400 +1,672 @@
 package zd;
 
-import android.graphics.Bitmap;
-import android.os.Bundle;
-import android.text.Layout;
-import android.text.Spanned;
-import android.text.SpannedString;
+import android.net.Uri;
 import android.text.TextUtils;
-import com.google.android.exoplayer2.g;
-import ne.w0;
+import android.util.Base64;
+import android.util.Pair;
+import cd.l;
+import cd.p;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import com.google.android.exoplayer2.Format;
+import com.google.android.exoplayer2.upstream.k;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.UUID;
+import mc.l0;
+import oe.w0;
+import org.webrtc.MediaStreamTrack;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+import sc.m;
+import zd.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements com.google.android.exoplayer2.g {
-    public static final b C = new C0770b().o("").a();
-    private static final String D = w0.B0(0);
-    private static final String E = w0.B0(1);
-    private static final String F = w0.B0(2);
-    private static final String G = w0.B0(3);
-    private static final String H = w0.B0(4);
-    private static final String I = w0.B0(5);
-    private static final String J = w0.B0(6);
-    private static final String K = w0.B0(7);
-    private static final String L = w0.B0(8);
-    private static final String M = w0.B0(9);
-    private static final String N = w0.B0(10);
-    private static final String O = w0.B0(11);
-    private static final String P = w0.B0(12);
-    private static final String Q = w0.B0(13);
-    private static final String R = w0.B0(14);
-    private static final String S = w0.B0(15);
-    private static final String T = w0.B0(16);
-    public static final g.a U = new g.a() { // from class: zd.a
-        @Override // com.google.android.exoplayer2.g.a
-        public final com.google.android.exoplayer2.g a(Bundle bundle) {
-            b c10;
-            c10 = b.c(bundle);
-            return c10;
-        }
-    };
-    public final int A;
-    public final float B;
+public class b implements k.a {
 
-    /* renamed from: d  reason: collision with root package name */
-    public final CharSequence f56238d;
-
-    /* renamed from: e  reason: collision with root package name */
-    public final Layout.Alignment f56239e;
-
-    /* renamed from: i  reason: collision with root package name */
-    public final Layout.Alignment f56240i;
-
-    /* renamed from: o  reason: collision with root package name */
-    public final Bitmap f56241o;
-
-    /* renamed from: p  reason: collision with root package name */
-    public final float f56242p;
-
-    /* renamed from: q  reason: collision with root package name */
-    public final int f56243q;
-
-    /* renamed from: r  reason: collision with root package name */
-    public final int f56244r;
-
-    /* renamed from: s  reason: collision with root package name */
-    public final float f56245s;
-
-    /* renamed from: t  reason: collision with root package name */
-    public final int f56246t;
-
-    /* renamed from: u  reason: collision with root package name */
-    public final float f56247u;
-
-    /* renamed from: v  reason: collision with root package name */
-    public final float f56248v;
-
-    /* renamed from: w  reason: collision with root package name */
-    public final boolean f56249w;
-
-    /* renamed from: x  reason: collision with root package name */
-    public final int f56250x;
-
-    /* renamed from: y  reason: collision with root package name */
-    public final int f56251y;
-
-    /* renamed from: z  reason: collision with root package name */
-    public final float f56252z;
+    /* renamed from: a  reason: collision with root package name */
+    private final XmlPullParserFactory f56347a;
 
     /* renamed from: zd.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0770b {
-
-        /* renamed from: a  reason: collision with root package name */
-        private CharSequence f56253a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private Bitmap f56254b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private Layout.Alignment f56255c;
-
-        /* renamed from: d  reason: collision with root package name */
-        private Layout.Alignment f56256d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private float f56257e;
-
-        /* renamed from: f  reason: collision with root package name */
-        private int f56258f;
-
-        /* renamed from: g  reason: collision with root package name */
-        private int f56259g;
-
-        /* renamed from: h  reason: collision with root package name */
-        private float f56260h;
-
-        /* renamed from: i  reason: collision with root package name */
-        private int f56261i;
-
-        /* renamed from: j  reason: collision with root package name */
-        private int f56262j;
-
-        /* renamed from: k  reason: collision with root package name */
-        private float f56263k;
-
-        /* renamed from: l  reason: collision with root package name */
-        private float f56264l;
-
-        /* renamed from: m  reason: collision with root package name */
-        private float f56265m;
-
-        /* renamed from: n  reason: collision with root package name */
-        private boolean f56266n;
-
-        /* renamed from: o  reason: collision with root package name */
-        private int f56267o;
-
-        /* renamed from: p  reason: collision with root package name */
-        private int f56268p;
-
-        /* renamed from: q  reason: collision with root package name */
-        private float f56269q;
-
-        public b a() {
-            return new b(this.f56253a, this.f56255c, this.f56256d, this.f56254b, this.f56257e, this.f56258f, this.f56259g, this.f56260h, this.f56261i, this.f56262j, this.f56263k, this.f56264l, this.f56265m, this.f56266n, this.f56267o, this.f56268p, this.f56269q);
-        }
-
-        public C0770b b() {
-            this.f56266n = false;
-            return this;
-        }
-
-        public int c() {
-            return this.f56259g;
-        }
-
-        public int d() {
-            return this.f56261i;
-        }
-
-        public CharSequence e() {
-            return this.f56253a;
-        }
-
-        public C0770b f(Bitmap bitmap) {
-            this.f56254b = bitmap;
-            return this;
-        }
-
-        public C0770b g(float f10) {
-            this.f56265m = f10;
-            return this;
-        }
-
-        public C0770b h(float f10, int i10) {
-            this.f56257e = f10;
-            this.f56258f = i10;
-            return this;
-        }
-
-        public C0770b i(int i10) {
-            this.f56259g = i10;
-            return this;
-        }
-
-        public C0770b j(Layout.Alignment alignment) {
-            this.f56256d = alignment;
-            return this;
-        }
-
-        public C0770b k(float f10) {
-            this.f56260h = f10;
-            return this;
-        }
-
-        public C0770b l(int i10) {
-            this.f56261i = i10;
-            return this;
-        }
-
-        public C0770b m(float f10) {
-            this.f56269q = f10;
-            return this;
-        }
-
-        public C0770b n(float f10) {
-            this.f56264l = f10;
-            return this;
-        }
-
-        public C0770b o(CharSequence charSequence) {
-            this.f56253a = charSequence;
-            return this;
-        }
-
-        public C0770b p(Layout.Alignment alignment) {
-            this.f56255c = alignment;
-            return this;
-        }
-
-        public C0770b q(float f10, int i10) {
-            this.f56263k = f10;
-            this.f56262j = i10;
-            return this;
-        }
-
-        public C0770b r(int i10) {
-            this.f56268p = i10;
-            return this;
-        }
-
-        public C0770b s(int i10) {
-            this.f56267o = i10;
-            this.f56266n = true;
-            return this;
-        }
-
-        public C0770b() {
-            this.f56253a = null;
-            this.f56254b = null;
-            this.f56255c = null;
-            this.f56256d = null;
-            this.f56257e = -3.4028235E38f;
-            this.f56258f = Integer.MIN_VALUE;
-            this.f56259g = Integer.MIN_VALUE;
-            this.f56260h = -3.4028235E38f;
-            this.f56261i = Integer.MIN_VALUE;
-            this.f56262j = Integer.MIN_VALUE;
-            this.f56263k = -3.4028235E38f;
-            this.f56264l = -3.4028235E38f;
-            this.f56265m = -3.4028235E38f;
-            this.f56266n = false;
-            this.f56267o = -16777216;
-            this.f56268p = Integer.MIN_VALUE;
-        }
-
-        private C0770b(b bVar) {
-            this.f56253a = bVar.f56238d;
-            this.f56254b = bVar.f56241o;
-            this.f56255c = bVar.f56239e;
-            this.f56256d = bVar.f56240i;
-            this.f56257e = bVar.f56242p;
-            this.f56258f = bVar.f56243q;
-            this.f56259g = bVar.f56244r;
-            this.f56260h = bVar.f56245s;
-            this.f56261i = bVar.f56246t;
-            this.f56262j = bVar.f56251y;
-            this.f56263k = bVar.f56252z;
-            this.f56264l = bVar.f56247u;
-            this.f56265m = bVar.f56248v;
-            this.f56266n = bVar.f56249w;
-            this.f56267o = bVar.f56250x;
-            this.f56268p = bVar.A;
-            this.f56269q = bVar.B;
+    public static class C0799b extends l0 {
+        public C0799b(String str) {
+            super("Missing required field: " + str, null, true, 4);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final b c(Bundle bundle) {
-        C0770b c0770b = new C0770b();
-        CharSequence charSequence = bundle.getCharSequence(D);
-        if (charSequence != null) {
-            c0770b.o(charSequence);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static class c extends a {
+
+        /* renamed from: e  reason: collision with root package name */
+        private boolean f56352e;
+
+        /* renamed from: f  reason: collision with root package name */
+        private UUID f56353f;
+
+        /* renamed from: g  reason: collision with root package name */
+        private byte[] f56354g;
+
+        public c(a aVar, String str) {
+            super(aVar, str, "Protection");
         }
-        Layout.Alignment alignment = (Layout.Alignment) bundle.getSerializable(E);
-        if (alignment != null) {
-            c0770b.p(alignment);
+
+        private static p[] q(byte[] bArr) {
+            return new p[]{new p(true, null, 8, r(bArr), 0, 0, null)};
         }
-        Layout.Alignment alignment2 = (Layout.Alignment) bundle.getSerializable(F);
-        if (alignment2 != null) {
-            c0770b.j(alignment2);
+
+        private static byte[] r(byte[] bArr) {
+            StringBuilder sb2 = new StringBuilder();
+            for (int i10 = 0; i10 < bArr.length; i10 += 2) {
+                sb2.append((char) bArr[i10]);
+            }
+            String sb3 = sb2.toString();
+            byte[] decode = Base64.decode(sb3.substring(sb3.indexOf("<KID>") + 5, sb3.indexOf("</KID>")), 0);
+            t(decode, 0, 3);
+            t(decode, 1, 2);
+            t(decode, 4, 5);
+            t(decode, 6, 7);
+            return decode;
         }
-        Bitmap bitmap = (Bitmap) bundle.getParcelable(G);
-        if (bitmap != null) {
-            c0770b.f(bitmap);
+
+        private static String s(String str) {
+            if (str.charAt(0) == '{' && str.charAt(str.length() - 1) == '}') {
+                return str.substring(1, str.length() - 1);
+            }
+            return str;
         }
-        String str = H;
-        if (bundle.containsKey(str)) {
-            String str2 = I;
-            if (bundle.containsKey(str2)) {
-                c0770b.h(bundle.getFloat(str), bundle.getInt(str2));
+
+        private static void t(byte[] bArr, int i10, int i11) {
+            byte b10 = bArr[i10];
+            bArr[i10] = bArr[i11];
+            bArr[i11] = b10;
+        }
+
+        @Override // zd.b.a
+        public Object b() {
+            UUID uuid = this.f56353f;
+            return new a.C0798a(uuid, l.a(uuid, this.f56354g), q(this.f56354g));
+        }
+
+        @Override // zd.b.a
+        public boolean d(String str) {
+            return "ProtectionHeader".equals(str);
+        }
+
+        @Override // zd.b.a
+        public void h(XmlPullParser xmlPullParser) {
+            if ("ProtectionHeader".equals(xmlPullParser.getName())) {
+                this.f56352e = false;
             }
         }
-        String str3 = J;
-        if (bundle.containsKey(str3)) {
-            c0770b.i(bundle.getInt(str3));
-        }
-        String str4 = K;
-        if (bundle.containsKey(str4)) {
-            c0770b.k(bundle.getFloat(str4));
-        }
-        String str5 = L;
-        if (bundle.containsKey(str5)) {
-            c0770b.l(bundle.getInt(str5));
-        }
-        String str6 = N;
-        if (bundle.containsKey(str6)) {
-            String str7 = M;
-            if (bundle.containsKey(str7)) {
-                c0770b.q(bundle.getFloat(str6), bundle.getInt(str7));
+
+        @Override // zd.b.a
+        public void n(XmlPullParser xmlPullParser) {
+            if ("ProtectionHeader".equals(xmlPullParser.getName())) {
+                this.f56352e = true;
+                this.f56353f = UUID.fromString(s(xmlPullParser.getAttributeValue(null, "SystemID")));
             }
         }
-        String str8 = O;
-        if (bundle.containsKey(str8)) {
-            c0770b.n(bundle.getFloat(str8));
-        }
-        String str9 = P;
-        if (bundle.containsKey(str9)) {
-            c0770b.g(bundle.getFloat(str9));
-        }
-        String str10 = Q;
-        if (bundle.containsKey(str10)) {
-            c0770b.s(bundle.getInt(str10));
-        }
-        if (!bundle.getBoolean(R, false)) {
-            c0770b.b();
-        }
-        String str11 = S;
-        if (bundle.containsKey(str11)) {
-            c0770b.r(bundle.getInt(str11));
-        }
-        String str12 = T;
-        if (bundle.containsKey(str12)) {
-            c0770b.m(bundle.getFloat(str12));
-        }
-        return c0770b.a();
-    }
 
-    public C0770b b() {
-        return new C0770b();
-    }
-
-    public boolean equals(Object obj) {
-        Bitmap bitmap;
-        Bitmap bitmap2;
-        if (this == obj) {
-            return true;
-        }
-        if (obj != null && b.class == obj.getClass()) {
-            b bVar = (b) obj;
-            if (TextUtils.equals(this.f56238d, bVar.f56238d) && this.f56239e == bVar.f56239e && this.f56240i == bVar.f56240i && ((bitmap = this.f56241o) != null ? !((bitmap2 = bVar.f56241o) == null || !bitmap.sameAs(bitmap2)) : bVar.f56241o == null) && this.f56242p == bVar.f56242p && this.f56243q == bVar.f56243q && this.f56244r == bVar.f56244r && this.f56245s == bVar.f56245s && this.f56246t == bVar.f56246t && this.f56247u == bVar.f56247u && this.f56248v == bVar.f56248v && this.f56249w == bVar.f56249w && this.f56250x == bVar.f56250x && this.f56251y == bVar.f56251y && this.f56252z == bVar.f56252z && this.A == bVar.A && this.B == bVar.B) {
-                return true;
+        @Override // zd.b.a
+        public void o(XmlPullParser xmlPullParser) {
+            if (this.f56352e) {
+                this.f56354g = Base64.decode(xmlPullParser.getText(), 0);
             }
         }
-        return false;
     }
 
-    public int hashCode() {
-        return mi.j.b(this.f56238d, this.f56239e, this.f56240i, this.f56241o, Float.valueOf(this.f56242p), Integer.valueOf(this.f56243q), Integer.valueOf(this.f56244r), Float.valueOf(this.f56245s), Integer.valueOf(this.f56246t), Float.valueOf(this.f56247u), Float.valueOf(this.f56248v), Boolean.valueOf(this.f56249w), Integer.valueOf(this.f56250x), Integer.valueOf(this.f56251y), Float.valueOf(this.f56252z), Integer.valueOf(this.A), Float.valueOf(this.B));
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static class d extends a {
+
+        /* renamed from: e  reason: collision with root package name */
+        private Format f56355e;
+
+        public d(a aVar, String str) {
+            super(aVar, str, "QualityLevel");
+        }
+
+        private static List q(String str) {
+            ArrayList arrayList = new ArrayList();
+            if (!TextUtils.isEmpty(str)) {
+                byte[] K = w0.K(str);
+                byte[][] i10 = oe.f.i(K);
+                if (i10 == null) {
+                    arrayList.add(K);
+                    return arrayList;
+                }
+                Collections.addAll(arrayList, i10);
+            }
+            return arrayList;
+        }
+
+        private static String r(String str) {
+            if (!str.equalsIgnoreCase("H264") && !str.equalsIgnoreCase("X264") && !str.equalsIgnoreCase("AVC1") && !str.equalsIgnoreCase("DAVC")) {
+                if (!str.equalsIgnoreCase("AAC") && !str.equalsIgnoreCase("AACL") && !str.equalsIgnoreCase("AACH") && !str.equalsIgnoreCase("AACP")) {
+                    if (!str.equalsIgnoreCase("TTML") && !str.equalsIgnoreCase("DFXP")) {
+                        if (!str.equalsIgnoreCase("ac-3") && !str.equalsIgnoreCase("dac3")) {
+                            if (!str.equalsIgnoreCase("ec-3") && !str.equalsIgnoreCase("dec3")) {
+                                if (str.equalsIgnoreCase("dtsc")) {
+                                    return "audio/vnd.dts";
+                                }
+                                if (!str.equalsIgnoreCase("dtsh") && !str.equalsIgnoreCase("dtsl")) {
+                                    if (str.equalsIgnoreCase("dtse")) {
+                                        return "audio/vnd.dts.hd;profile=lbr";
+                                    }
+                                    if (str.equalsIgnoreCase("opus")) {
+                                        return "audio/opus";
+                                    }
+                                    return null;
+                                }
+                                return "audio/vnd.dts.hd";
+                            }
+                            return "audio/eac3";
+                        }
+                        return "audio/ac3";
+                    }
+                    return "application/ttml+xml";
+                }
+                return "audio/mp4a-latm";
+            }
+            return "video/avc";
+        }
+
+        @Override // zd.b.a
+        public Object b() {
+            return this.f56355e;
+        }
+
+        @Override // zd.b.a
+        public void n(XmlPullParser xmlPullParser) {
+            int i10;
+            Format.b bVar = new Format.b();
+            String r10 = r(m(xmlPullParser, "FourCC"));
+            int intValue = ((Integer) c("Type")).intValue();
+            if (intValue == 2) {
+                bVar.M("video/mp4").n0(k(xmlPullParser, "MaxWidth")).S(k(xmlPullParser, "MaxHeight")).V(q(xmlPullParser.getAttributeValue(null, "CodecPrivateData")));
+            } else if (intValue == 1) {
+                if (r10 == null) {
+                    r10 = "audio/mp4a-latm";
+                }
+                int k10 = k(xmlPullParser, "Channels");
+                int k11 = k(xmlPullParser, "SamplingRate");
+                List q10 = q(xmlPullParser.getAttributeValue(null, "CodecPrivateData"));
+                if (q10.isEmpty() && "audio/mp4a-latm".equals(r10)) {
+                    q10 = Collections.singletonList(oc.a.a(k11, k10));
+                }
+                bVar.M("audio/mp4").J(k10).h0(k11).V(q10);
+            } else if (intValue == 3) {
+                String str = (String) c("Subtype");
+                if (str != null) {
+                    if (!str.equals("CAPT")) {
+                        if (str.equals("DESC")) {
+                            i10 = IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
+                        }
+                    } else {
+                        i10 = 64;
+                    }
+                    bVar.M("application/mp4").e0(i10);
+                }
+                i10 = 0;
+                bVar.M("application/mp4").e0(i10);
+            } else {
+                bVar.M("application/mp4");
+            }
+            this.f56355e = bVar.U(xmlPullParser.getAttributeValue(null, "Index")).W((String) c("Name")).g0(r10).I(k(xmlPullParser, "Bitrate")).X((String) c("Language")).G();
+        }
     }
 
-    private b(CharSequence charSequence, Layout.Alignment alignment, Layout.Alignment alignment2, Bitmap bitmap, float f10, int i10, int i11, float f11, int i12, int i13, float f12, float f13, float f14, boolean z10, int i14, int i15, float f15) {
-        if (charSequence == null) {
-            ne.a.e(bitmap);
-        } else {
-            ne.a.a(bitmap == null);
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static class e extends a {
+
+        /* renamed from: e  reason: collision with root package name */
+        private final List f56356e;
+
+        /* renamed from: f  reason: collision with root package name */
+        private int f56357f;
+
+        /* renamed from: g  reason: collision with root package name */
+        private int f56358g;
+
+        /* renamed from: h  reason: collision with root package name */
+        private long f56359h;
+
+        /* renamed from: i  reason: collision with root package name */
+        private long f56360i;
+
+        /* renamed from: j  reason: collision with root package name */
+        private long f56361j;
+
+        /* renamed from: k  reason: collision with root package name */
+        private int f56362k;
+
+        /* renamed from: l  reason: collision with root package name */
+        private boolean f56363l;
+
+        /* renamed from: m  reason: collision with root package name */
+        private a.C0798a f56364m;
+
+        public e(a aVar, String str) {
+            super(aVar, str, "SmoothStreamingMedia");
+            this.f56362k = -1;
+            this.f56364m = null;
+            this.f56356e = new LinkedList();
         }
-        if (charSequence instanceof Spanned) {
-            this.f56238d = SpannedString.valueOf(charSequence);
-        } else if (charSequence != null) {
-            this.f56238d = charSequence.toString();
-        } else {
-            this.f56238d = null;
+
+        @Override // zd.b.a
+        public void a(Object obj) {
+            boolean z10;
+            if (obj instanceof a.b) {
+                this.f56356e.add((a.b) obj);
+            } else if (obj instanceof a.C0798a) {
+                if (this.f56364m == null) {
+                    z10 = true;
+                } else {
+                    z10 = false;
+                }
+                oe.a.g(z10);
+                this.f56364m = (a.C0798a) obj;
+            }
         }
-        this.f56239e = alignment;
-        this.f56240i = alignment2;
-        this.f56241o = bitmap;
-        this.f56242p = f10;
-        this.f56243q = i10;
-        this.f56244r = i11;
-        this.f56245s = f11;
-        this.f56246t = i12;
-        this.f56247u = f13;
-        this.f56248v = f14;
-        this.f56249w = z10;
-        this.f56250x = i14;
-        this.f56251y = i13;
-        this.f56252z = f12;
-        this.A = i15;
-        this.B = f15;
+
+        @Override // zd.b.a
+        public Object b() {
+            int size = this.f56356e.size();
+            a.b[] bVarArr = new a.b[size];
+            this.f56356e.toArray(bVarArr);
+            if (this.f56364m != null) {
+                a.C0798a c0798a = this.f56364m;
+                m mVar = new m(new m.b(c0798a.f56328a, "video/mp4", c0798a.f56329b));
+                for (int i10 = 0; i10 < size; i10++) {
+                    a.b bVar = bVarArr[i10];
+                    int i11 = bVar.f56331a;
+                    if (i11 == 2 || i11 == 1) {
+                        Format[] formatArr = bVar.f56340j;
+                        for (int i12 = 0; i12 < formatArr.length; i12++) {
+                            formatArr[i12] = formatArr[i12].b().O(mVar).G();
+                        }
+                    }
+                }
+            }
+            return new zd.a(this.f56357f, this.f56358g, this.f56359h, this.f56360i, this.f56361j, this.f56362k, this.f56363l, this.f56364m, bVarArr);
+        }
+
+        @Override // zd.b.a
+        public void n(XmlPullParser xmlPullParser) {
+            this.f56357f = k(xmlPullParser, "MajorVersion");
+            this.f56358g = k(xmlPullParser, "MinorVersion");
+            this.f56359h = j(xmlPullParser, "TimeScale", 10000000L);
+            this.f56360i = l(xmlPullParser, "Duration");
+            this.f56361j = j(xmlPullParser, "DVRWindowLength", 0L);
+            this.f56362k = i(xmlPullParser, "LookaheadCount", -1);
+            this.f56363l = g(xmlPullParser, "IsLive", false);
+            p("TimeScale", Long.valueOf(this.f56359h));
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static class f extends a {
+
+        /* renamed from: e  reason: collision with root package name */
+        private final String f56365e;
+
+        /* renamed from: f  reason: collision with root package name */
+        private final List f56366f;
+
+        /* renamed from: g  reason: collision with root package name */
+        private int f56367g;
+
+        /* renamed from: h  reason: collision with root package name */
+        private String f56368h;
+
+        /* renamed from: i  reason: collision with root package name */
+        private long f56369i;
+
+        /* renamed from: j  reason: collision with root package name */
+        private String f56370j;
+
+        /* renamed from: k  reason: collision with root package name */
+        private String f56371k;
+
+        /* renamed from: l  reason: collision with root package name */
+        private int f56372l;
+
+        /* renamed from: m  reason: collision with root package name */
+        private int f56373m;
+
+        /* renamed from: n  reason: collision with root package name */
+        private int f56374n;
+
+        /* renamed from: o  reason: collision with root package name */
+        private int f56375o;
+
+        /* renamed from: p  reason: collision with root package name */
+        private String f56376p;
+
+        /* renamed from: q  reason: collision with root package name */
+        private ArrayList f56377q;
+
+        /* renamed from: r  reason: collision with root package name */
+        private long f56378r;
+
+        public f(a aVar, String str) {
+            super(aVar, str, "StreamIndex");
+            this.f56365e = str;
+            this.f56366f = new LinkedList();
+        }
+
+        private void q(XmlPullParser xmlPullParser) {
+            int s10 = s(xmlPullParser);
+            this.f56367g = s10;
+            p("Type", Integer.valueOf(s10));
+            if (this.f56367g == 3) {
+                this.f56368h = m(xmlPullParser, "Subtype");
+            } else {
+                this.f56368h = xmlPullParser.getAttributeValue(null, "Subtype");
+            }
+            p("Subtype", this.f56368h);
+            String attributeValue = xmlPullParser.getAttributeValue(null, "Name");
+            this.f56370j = attributeValue;
+            p("Name", attributeValue);
+            this.f56371k = m(xmlPullParser, "Url");
+            this.f56372l = i(xmlPullParser, "MaxWidth", -1);
+            this.f56373m = i(xmlPullParser, "MaxHeight", -1);
+            this.f56374n = i(xmlPullParser, "DisplayWidth", -1);
+            this.f56375o = i(xmlPullParser, "DisplayHeight", -1);
+            String attributeValue2 = xmlPullParser.getAttributeValue(null, "Language");
+            this.f56376p = attributeValue2;
+            p("Language", attributeValue2);
+            long i10 = i(xmlPullParser, "TimeScale", -1);
+            this.f56369i = i10;
+            if (i10 == -1) {
+                this.f56369i = ((Long) c("TimeScale")).longValue();
+            }
+            this.f56377q = new ArrayList();
+        }
+
+        private void r(XmlPullParser xmlPullParser) {
+            int size = this.f56377q.size();
+            long j10 = j(xmlPullParser, "t", -9223372036854775807L);
+            int i10 = 1;
+            if (j10 == -9223372036854775807L) {
+                if (size == 0) {
+                    j10 = 0;
+                } else if (this.f56378r != -1) {
+                    j10 = this.f56378r + ((Long) this.f56377q.get(size - 1)).longValue();
+                } else {
+                    throw l0.c("Unable to infer start time", null);
+                }
+            }
+            this.f56377q.add(Long.valueOf(j10));
+            this.f56378r = j(xmlPullParser, "d", -9223372036854775807L);
+            long j11 = j(xmlPullParser, "r", 1L);
+            if (j11 > 1 && this.f56378r == -9223372036854775807L) {
+                throw l0.c("Repeated chunk with unspecified duration", null);
+            }
+            while (true) {
+                long j12 = i10;
+                if (j12 < j11) {
+                    this.f56377q.add(Long.valueOf((this.f56378r * j12) + j10));
+                    i10++;
+                } else {
+                    return;
+                }
+            }
+        }
+
+        private int s(XmlPullParser xmlPullParser) {
+            String attributeValue = xmlPullParser.getAttributeValue(null, "Type");
+            if (attributeValue != null) {
+                if (MediaStreamTrack.AUDIO_TRACK_KIND.equalsIgnoreCase(attributeValue)) {
+                    return 1;
+                }
+                if (MediaStreamTrack.VIDEO_TRACK_KIND.equalsIgnoreCase(attributeValue)) {
+                    return 2;
+                }
+                if ("text".equalsIgnoreCase(attributeValue)) {
+                    return 3;
+                }
+                throw l0.c("Invalid key value[" + attributeValue + "]", null);
+            }
+            throw new C0799b("Type");
+        }
+
+        @Override // zd.b.a
+        public void a(Object obj) {
+            if (obj instanceof Format) {
+                this.f56366f.add((Format) obj);
+            }
+        }
+
+        @Override // zd.b.a
+        public Object b() {
+            Format[] formatArr = new Format[this.f56366f.size()];
+            this.f56366f.toArray(formatArr);
+            return new a.b(this.f56365e, this.f56371k, this.f56367g, this.f56368h, this.f56369i, this.f56370j, this.f56372l, this.f56373m, this.f56374n, this.f56375o, this.f56376p, formatArr, this.f56377q, this.f56378r);
+        }
+
+        @Override // zd.b.a
+        public boolean d(String str) {
+            return "c".equals(str);
+        }
+
+        @Override // zd.b.a
+        public void n(XmlPullParser xmlPullParser) {
+            if ("c".equals(xmlPullParser.getName())) {
+                r(xmlPullParser);
+            } else {
+                q(xmlPullParser);
+            }
+        }
+    }
+
+    public b() {
+        try {
+            this.f56347a = XmlPullParserFactory.newInstance();
+        } catch (XmlPullParserException e10) {
+            throw new RuntimeException("Couldn't create XmlPullParserFactory instance", e10);
+        }
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.k.a
+    /* renamed from: b */
+    public zd.a a(Uri uri, InputStream inputStream) {
+        try {
+            XmlPullParser newPullParser = this.f56347a.newPullParser();
+            newPullParser.setInput(inputStream, null);
+            return (zd.a) new e(null, uri.toString()).f(newPullParser);
+        } catch (XmlPullParserException e10) {
+            throw l0.c(null, e10);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static abstract class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final String f56348a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final String f56349b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final a f56350c;
+
+        /* renamed from: d  reason: collision with root package name */
+        private final List f56351d = new LinkedList();
+
+        public a(a aVar, String str, String str2) {
+            this.f56350c = aVar;
+            this.f56348a = str;
+            this.f56349b = str2;
+        }
+
+        private a e(a aVar, String str, String str2) {
+            if ("QualityLevel".equals(str)) {
+                return new d(aVar, str2);
+            }
+            if ("Protection".equals(str)) {
+                return new c(aVar, str2);
+            }
+            if ("StreamIndex".equals(str)) {
+                return new f(aVar, str2);
+            }
+            return null;
+        }
+
+        protected abstract Object b();
+
+        protected final Object c(String str) {
+            for (int i10 = 0; i10 < this.f56351d.size(); i10++) {
+                Pair pair = (Pair) this.f56351d.get(i10);
+                if (((String) pair.first).equals(str)) {
+                    return pair.second;
+                }
+            }
+            a aVar = this.f56350c;
+            if (aVar == null) {
+                return null;
+            }
+            return aVar.c(str);
+        }
+
+        protected boolean d(String str) {
+            return false;
+        }
+
+        public final Object f(XmlPullParser xmlPullParser) {
+            boolean z10 = false;
+            int i10 = 0;
+            while (true) {
+                int eventType = xmlPullParser.getEventType();
+                if (eventType != 1) {
+                    if (eventType != 2) {
+                        if (eventType != 3) {
+                            if (eventType == 4 && z10 && i10 == 0) {
+                                o(xmlPullParser);
+                            }
+                        } else if (!z10) {
+                            continue;
+                        } else if (i10 > 0) {
+                            i10--;
+                        } else {
+                            String name = xmlPullParser.getName();
+                            h(xmlPullParser);
+                            if (!d(name)) {
+                                return b();
+                            }
+                        }
+                    } else {
+                        String name2 = xmlPullParser.getName();
+                        if (this.f56349b.equals(name2)) {
+                            n(xmlPullParser);
+                            z10 = true;
+                        } else if (z10) {
+                            if (i10 > 0) {
+                                i10++;
+                            } else if (d(name2)) {
+                                n(xmlPullParser);
+                            } else {
+                                a e10 = e(this, name2, this.f56348a);
+                                if (e10 == null) {
+                                    i10 = 1;
+                                } else {
+                                    a(e10.f(xmlPullParser));
+                                }
+                            }
+                        }
+                    }
+                    xmlPullParser.next();
+                } else {
+                    return null;
+                }
+            }
+        }
+
+        protected final boolean g(XmlPullParser xmlPullParser, String str, boolean z10) {
+            String attributeValue = xmlPullParser.getAttributeValue(null, str);
+            if (attributeValue != null) {
+                return Boolean.parseBoolean(attributeValue);
+            }
+            return z10;
+        }
+
+        protected final int i(XmlPullParser xmlPullParser, String str, int i10) {
+            String attributeValue = xmlPullParser.getAttributeValue(null, str);
+            if (attributeValue != null) {
+                try {
+                    return Integer.parseInt(attributeValue);
+                } catch (NumberFormatException e10) {
+                    throw l0.c(null, e10);
+                }
+            }
+            return i10;
+        }
+
+        protected final long j(XmlPullParser xmlPullParser, String str, long j10) {
+            String attributeValue = xmlPullParser.getAttributeValue(null, str);
+            if (attributeValue != null) {
+                try {
+                    return Long.parseLong(attributeValue);
+                } catch (NumberFormatException e10) {
+                    throw l0.c(null, e10);
+                }
+            }
+            return j10;
+        }
+
+        protected final int k(XmlPullParser xmlPullParser, String str) {
+            String attributeValue = xmlPullParser.getAttributeValue(null, str);
+            if (attributeValue != null) {
+                try {
+                    return Integer.parseInt(attributeValue);
+                } catch (NumberFormatException e10) {
+                    throw l0.c(null, e10);
+                }
+            }
+            throw new C0799b(str);
+        }
+
+        protected final long l(XmlPullParser xmlPullParser, String str) {
+            String attributeValue = xmlPullParser.getAttributeValue(null, str);
+            if (attributeValue != null) {
+                try {
+                    return Long.parseLong(attributeValue);
+                } catch (NumberFormatException e10) {
+                    throw l0.c(null, e10);
+                }
+            }
+            throw new C0799b(str);
+        }
+
+        protected final String m(XmlPullParser xmlPullParser, String str) {
+            String attributeValue = xmlPullParser.getAttributeValue(null, str);
+            if (attributeValue != null) {
+                return attributeValue;
+            }
+            throw new C0799b(str);
+        }
+
+        protected abstract void n(XmlPullParser xmlPullParser);
+
+        protected final void p(String str, Object obj) {
+            this.f56351d.add(Pair.create(str, obj));
+        }
+
+        protected void a(Object obj) {
+        }
+
+        protected void h(XmlPullParser xmlPullParser) {
+        }
+
+        protected void o(XmlPullParser xmlPullParser) {
+        }
     }
 }

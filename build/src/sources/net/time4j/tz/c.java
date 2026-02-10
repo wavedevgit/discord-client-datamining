@@ -13,7 +13,7 @@ public final class c extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(k kVar, m mVar) {
-        this(kVar, mVar, l.f39627o);
+        this(kVar, mVar, l.f38719o);
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
@@ -25,21 +25,21 @@ public final class c extends l {
     }
 
     @Override // net.time4j.tz.l
-    public p A(pt.a aVar, pt.g gVar) {
-        List c10 = this.H.c(aVar, gVar);
-        if (c10.size() == 1) {
-            return (p) c10.get(0);
+    public p A(qt.a aVar, qt.g gVar) {
+        List a10 = this.H.a(aVar, gVar);
+        if (a10.size() == 1) {
+            return (p) a10.get(0);
         }
-        return p.t(this.H.a(aVar, gVar).k());
+        return p.t(this.H.e(aVar, gVar).l());
     }
 
     @Override // net.time4j.tz.l
-    public p B(pt.f fVar) {
-        q b10 = this.H.b(fVar);
-        if (b10 == null) {
-            return this.H.e();
+    public p B(qt.f fVar) {
+        q d10 = this.H.d(fVar);
+        if (d10 == null) {
+            return this.H.c();
         }
-        return p.t(b10.k());
+        return p.t(d10.l());
     }
 
     @Override // net.time4j.tz.l
@@ -48,22 +48,22 @@ public final class c extends l {
     }
 
     @Override // net.time4j.tz.l
-    public boolean I(pt.f fVar) {
-        pt.f b10;
-        q b11;
-        q b12 = this.H.b(fVar);
-        if (b12 == null) {
+    public boolean I(qt.f fVar) {
+        qt.f b10;
+        q d10;
+        q d11 = this.H.d(fVar);
+        if (d11 == null) {
             return false;
         }
-        int f10 = b12.f();
+        int f10 = d11.f();
         if (f10 > 0) {
             return true;
         }
-        if (f10 < 0 || !this.H.d() || (b11 = this.H.b((b10 = i.b(b12.g(), 0)))) == null) {
+        if (f10 < 0 || !this.H.b() || (d10 = this.H.d((b10 = i.b(d11.g(), 0)))) == null) {
             return false;
         }
-        if (b11.j() == b12.j()) {
-            if (b11.f() >= 0) {
+        if (d10.k() == d11.k()) {
+            if (d10.f() >= 0) {
                 return false;
             }
             return true;
@@ -77,9 +77,9 @@ public final class c extends l {
     }
 
     @Override // net.time4j.tz.l
-    public boolean K(pt.a aVar, pt.g gVar) {
-        q a10 = this.H.a(aVar, gVar);
-        if (a10 != null && a10.m()) {
+    public boolean K(qt.a aVar, qt.g gVar) {
+        q e10 = this.H.e(aVar, gVar);
+        if (e10 != null && e10.m()) {
             return true;
         }
         return false;

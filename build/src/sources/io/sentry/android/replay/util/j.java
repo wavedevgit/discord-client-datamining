@@ -5,24 +5,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f27858d;
+    private final String f28058d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final /* synthetic */ Runnable f27859e;
+    private final /* synthetic */ Runnable f28059e;
 
     public j(String taskName, Runnable delegate) {
         Intrinsics.checkNotNullParameter(taskName, "taskName");
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f27858d = taskName;
-        this.f27859e = delegate;
+        this.f28058d = taskName;
+        this.f28059e = delegate;
     }
 
     public final String a() {
-        return this.f27858d;
+        return this.f28058d;
     }
 
     @Override // java.lang.Runnable
     public void run() {
-        this.f27859e.run();
+        this.f28059e.run();
     }
 }

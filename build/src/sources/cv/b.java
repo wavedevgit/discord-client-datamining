@@ -1,36 +1,36 @@
 package cv;
 
-import ev.a;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements su.b, ev.a {
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f20046a = new b();
+    private final Object f20287a;
 
-    private b() {
+    public b(Object obj) {
+        this.f20287a = obj;
     }
 
-    @Override // su.b
-    /* renamed from: a */
-    public Double f(Object obj, Object obj2) {
-        List b10 = b(obj);
-        if (b10.size() < 2) {
-            b10 = null;
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        if (b10 != null) {
-            Double d10 = (Double) b10.get(1);
-            Double d11 = (Double) CollectionsKt.o0(b10);
-            if (d11 != null && d10 != null && !Intrinsics.areEqual(d10, 0.0d)) {
-                return Double.valueOf(d11.doubleValue() / d10.doubleValue());
-            }
+        if ((obj instanceof b) && Intrinsics.areEqual(this.f20287a, ((b) obj).f20287a)) {
+            return true;
         }
-        return null;
+        return false;
     }
 
-    public List b(Object obj) {
-        return a.C0316a.c(this, obj);
+    public int hashCode() {
+        Object obj = this.f20287a;
+        if (obj == null) {
+            return 0;
+        }
+        return obj.hashCode();
+    }
+
+    public String toString() {
+        Object obj = this.f20287a;
+        return "SingleNestedValue(value=" + obj + ")";
     }
 }

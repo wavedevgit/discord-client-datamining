@@ -10,8 +10,19 @@ public final class i6 extends l6 implements k6 {
         super(iBinder, "com.android.vending.billing.IInAppBillingService");
     }
 
+    /* JADX WARN: Multi-variable type inference failed */
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle J(int i10, String str, String str2, String str3, String str4, Bundle bundle) {
+    public final void C0(int i10, String str, Bundle bundle, h6 h6Var) {
+        Parcel e10 = e();
+        e10.writeInt(18);
+        e10.writeString(str);
+        n6.c(e10, bundle);
+        e10.writeStrongBinder(h6Var);
+        h(1301, e10);
+    }
+
+    @Override // com.google.android.gms.internal.play_billing.k6
+    public final Bundle N(int i10, String str, String str2, String str3, String str4, Bundle bundle) {
         Parcel e10 = e();
         e10.writeInt(i10);
         e10.writeString(str);
@@ -26,7 +37,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final int R0(int i10, String str, String str2, Bundle bundle) {
+    public final int Q0(int i10, String str, String str2, Bundle bundle) {
         Parcel e10 = e();
         e10.writeInt(i10);
         e10.writeString(str);
@@ -39,7 +50,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle U0(int i10, String str, String str2, Bundle bundle) {
+    public final Bundle T0(int i10, String str, String str2, Bundle bundle) {
         Parcel e10 = e();
         e10.writeInt(9);
         e10.writeString(str);
@@ -80,7 +91,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle h0(int i10, String str, String str2, Bundle bundle) {
+    public final Bundle i0(int i10, String str, String str2, Bundle bundle) {
         Parcel e10 = e();
         e10.writeInt(9);
         e10.writeString(str);
@@ -93,7 +104,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final int l(int i10, String str, String str2) {
+    public final int m(int i10, String str, String str2) {
         Parcel e10 = e();
         e10.writeInt(3);
         e10.writeString(str);
@@ -105,7 +116,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final int l0(int i10, String str, String str2) {
+    public final int m0(int i10, String str, String str2) {
         Parcel e10 = e();
         e10.writeInt(i10);
         e10.writeString(str);
@@ -117,7 +128,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle n0(int i10, String str, String str2, String str3, Bundle bundle) {
+    public final Bundle o0(int i10, String str, String str2, String str3, Bundle bundle) {
         Parcel e10 = e();
         e10.writeInt(6);
         e10.writeString(str);
@@ -131,7 +142,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle t0(int i10, String str, String str2, String str3, String str4) {
+    public final Bundle v0(int i10, String str, String str2, String str3, String str4) {
         Parcel e10 = e();
         e10.writeInt(3);
         e10.writeString(str);
@@ -145,7 +156,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle v(int i10, String str, String str2, String str3) {
+    public final Bundle z(int i10, String str, String str2, String str3) {
         Parcel e10 = e();
         e10.writeInt(3);
         e10.writeString(str);
@@ -155,16 +166,5 @@ public final class i6 extends l6 implements k6 {
         Bundle bundle = (Bundle) n6.a(f10, Bundle.CREATOR);
         f10.recycle();
         return bundle;
-    }
-
-    /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.google.android.gms.internal.play_billing.k6
-    public final void z0(int i10, String str, Bundle bundle, h6 h6Var) {
-        Parcel e10 = e();
-        e10.writeInt(18);
-        e10.writeString(str);
-        n6.c(e10, bundle);
-        e10.writeStrongBinder(h6Var);
-        h(1301, e10);
     }
 }

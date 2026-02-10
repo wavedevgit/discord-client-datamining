@@ -1,10 +1,10 @@
 package com.google.android.gms.auth.api.signin;
 
+import af.v;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
-import ze.v;
 @Deprecated
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class RevocationBoundService extends Service {

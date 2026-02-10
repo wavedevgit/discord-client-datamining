@@ -42,7 +42,7 @@ public abstract class a {
                 }
                 matrixCursor.addRow(objArr);
             }
-            bs.c.a(c10, null);
+            cs.c.a(c10, null);
             return matrixCursor;
         } finally {
         }

@@ -1,27 +1,32 @@
 package ol;
 
-import java.util.Locale;
+import android.media.MediaFormat;
+import android.view.Surface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends d {
+public interface a {
+    c a(int i10);
 
-    /* renamed from: e  reason: collision with root package name */
-    private final long f43241e;
+    int b(long j10);
 
-    /* renamed from: i  reason: collision with root package name */
-    private final long f43242i;
+    int c(long j10);
 
-    public a(long j10, long j11) {
-        this(j10, j11, new Throwable());
-    }
+    c d(int i10);
 
-    @Override // java.lang.Throwable
-    public String getMessage() {
-        return String.format(Locale.ENGLISH, "Insufficient disk space, estimated file size in bytes %d, available disk space in bytes %d", Long.valueOf(this.f43241e), Long.valueOf(this.f43242i));
-    }
+    void e(c cVar);
 
-    public a(long j10, long j11, Throwable th2) {
-        super(th2);
-        this.f43241e = j10;
-        this.f43242i = j11;
-    }
+    void f(MediaFormat mediaFormat, Surface surface);
+
+    void g(int i10, boolean z10);
+
+    String getName();
+
+    MediaFormat getOutputFormat();
+
+    boolean isRunning();
+
+    void release();
+
+    void start();
+
+    void stop();
 }

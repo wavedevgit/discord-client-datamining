@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteException;
 import android.text.TextUtils;
 import com.google.android.gms.common.util.VisibleForTesting;
 import com.google.android.gms.common.util.i;
-import gf.q;
+import hf.q;
 import java.io.Closeable;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import se.n;
+import te.n;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class zzce extends zzbs implements Closeable {

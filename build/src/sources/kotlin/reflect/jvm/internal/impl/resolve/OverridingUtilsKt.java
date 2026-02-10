@@ -17,7 +17,7 @@ public final class OverridingUtilsKt {
     public static final Unit b(SmartSet smartSet, Object obj) {
         Intrinsics.checkNotNull(obj);
         smartSet.add(obj);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX WARN: Multi-variable type inference failed */

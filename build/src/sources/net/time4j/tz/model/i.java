@@ -5,19 +5,19 @@ package net.time4j.tz.model;
 public abstract class i {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final i f39663d;
+    public static final i f38755d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final i f39664e;
+    public static final i f38756e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final i f39665i;
+    public static final i f38757i;
 
     /* renamed from: o  reason: collision with root package name */
-    static final i[] f39666o;
+    static final i[] f38758o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ i[] f39667p;
+    private static final /* synthetic */ i[] f38759p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     enum a extends i {
@@ -28,15 +28,15 @@ public abstract class i {
 
     static {
         a aVar = new a("UTC_TIME", 0);
-        f39663d = aVar;
+        f38755d = aVar;
         i iVar = new i("STANDARD_TIME", 1) { // from class: net.time4j.tz.model.i.b
         };
-        f39664e = iVar;
+        f38756e = iVar;
         i iVar2 = new i("WALL_TIME", 2) { // from class: net.time4j.tz.model.i.c
         };
-        f39665i = iVar2;
-        f39667p = new i[]{aVar, iVar, iVar2};
-        f39666o = values();
+        f38757i = iVar2;
+        f38759p = new i[]{aVar, iVar, iVar2};
+        f38758o = values();
     }
 
     private i(String str, int i10) {
@@ -47,7 +47,7 @@ public abstract class i {
     }
 
     public static i[] values() {
-        return (i[]) f39667p.clone();
+        return (i[]) f38759p.clone();
     }
 
     /* synthetic */ i(String str, int i10, a aVar) {

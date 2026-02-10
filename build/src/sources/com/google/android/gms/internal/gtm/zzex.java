@@ -2,7 +2,7 @@ package com.google.android.gms.internal.gtm;
 
 import android.text.TextUtils;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import gf.q;
+import hf.q;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;

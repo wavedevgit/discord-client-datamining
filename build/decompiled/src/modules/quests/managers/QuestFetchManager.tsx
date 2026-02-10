@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun118072: for (var _fun118072_ip = 0;;) switch (_fun118072_ip) {
+        _fun118031: for (var _fun118031_ip = 0;;) switch (_fun118031_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun118072_ip = 76;
-                continue _fun118072;
+                _fun118031_ip = 76;
+                continue _fun118031;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -115,12 +115,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.Millis;
     var3 = var3.HOUR;
-    var3 = 16;
+    var3 = 17;
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function arg0() {
-            _fun118076: for (var _fun118076_ip = 0;;) switch (_fun118076_ip) {
+            _fun118035: for (var _fun118035_ip = 0;;) switch (_fun118035_ip) {
                 case 0:
                     var5 = this;
                     var2 = 0;
@@ -141,14 +141,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot14;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun118076_ip = 88;
-                        continue _fun118076
+                        _fun118035_ip = 88;
+                        continue _fun118035
                     }
                 case 75:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var5, var10);
-                    _fun118076_ip = 122;
-                    continue _fun118076;
+                    _fun118035_ip = 122;
+                    continue _fun118035;
                 case 88:
                     var7 = global;
                     var8 = var7.Reflect;
@@ -167,6 +167,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.instantiatedAt = var3;
                     var3 = null;
                     var0.initialFetchTimerId = var3;
+                    var0.initialTakeoverFetchTimerId = var3;
                     var0.recurringFetchTimerId = var3;
                     var0.lastFetchAttemptedAt = var2;
                     var0.lastFetchedQuestForLocaleChangeAt = var2;
@@ -182,114 +183,202 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var0.handleQuestsFetchCurrentQuestsBegin = var2;
                     var2 = function() { // Environment: var1
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot2;
-                        var0 = 8;
-                        var2 = var2[var0];
-                        var0 = undefined;
-                        var5 = var3.bind(var0)(var2);
-                        var3 = var5.getIsEligibleForFetchQuestOnPostConnectionOpen;
-                        var2 = {};
-                        var6 = _closure1_slot9;
-                        var6 = var6.QUESTS_MANAGER;
-                        var2.location = var6;
-                        var2 = var3.bind(var5)(var2);
-                        var _closure4_slot0 = var2;
-                        var3 = global;
-                        var7 = var3.window;
-                        var6 = var7.clearTimeout;
-                        var2 = _closure3_slot0;
-                        var5 = var2.initialFetchTimerId;
-                        var5 = var6.bind(var7)(var5);
-                        var7 = var3.window;
-                        var6 = var7.clearTimeout;
-                        var5 = var2.recurringFetchTimerId;
-                        var5 = var6.bind(var7)(var5);
-                        var8 = var3.window;
-                        var7 = var8.setInterval;
-                        var6 = _closure1_slot11;
-                        var5 = function() { // Environment: var1
-                            _fun118079: for (var _fun118079_ip = 0;;) switch (_fun118079_ip) {
-                                case 0:
-                                    var0 = global;
-                                    var1 = var0.Date;
-                                    var0 = var1.now;
-                                    var2 = var0.bind(var1)();
-                                    var1 = _closure3_slot0;
-                                    var1 = var1.lastFetchAttemptedAt;
-                                    var2 = var2 - var1;
-                                    var1 = _closure1_slot10;
-                                    if (!(var2 > var1)) {
-                                        _fun118079_ip = 66;
-                                        continue _fun118079
+                        _fun118037: for (var _fun118037_ip = 0;;) switch (_fun118037_ip) {
+                            case 0:
+                                var8 = _closure1_slot0;
+                                var9 = _closure1_slot2;
+                                var0 = 8;
+                                var2 = var9[var0];
+                                var0 = undefined;
+                                var5 = var8.bind(var0)(var2);
+                                var3 = var5.getIsEligibleForFetchQuestOnPostConnectionOpen;
+                                var2 = {};
+                                var10 = _closure1_slot9;
+                                var6 = var10.QUESTS_MANAGER;
+                                var2.location = var6;
+                                var2 = var3.bind(var5)(var2);
+                                var _closure4_slot0 = var2;
+                                var3 = global;
+                                var11 = var3.window;
+                                var6 = var11.clearTimeout;
+                                var7 = _closure3_slot0;
+                                var5 = var7.initialFetchTimerId;
+                                var5 = var6.bind(var11)(var5);
+                                var11 = var3.window;
+                                var6 = var11.clearTimeout;
+                                var5 = var7.initialTakeoverFetchTimerId;
+                                var5 = var6.bind(var11)(var5);
+                                var11 = var3.window;
+                                var6 = var11.clearTimeout;
+                                var5 = var7.recurringFetchTimerId;
+                                var5 = var6.bind(var11)(var5);
+                                var12 = var3.window;
+                                var11 = var12.setInterval;
+                                var6 = _closure1_slot11;
+                                var5 = function() { // Environment: var1
+                                    _fun118038: for (var _fun118038_ip = 0;;) switch (_fun118038_ip) {
+                                        case 0:
+                                            var0 = global;
+                                            var1 = var0.Date;
+                                            var0 = var1.now;
+                                            var2 = var0.bind(var1)();
+                                            var1 = _closure3_slot0;
+                                            var1 = var1.lastFetchAttemptedAt;
+                                            var2 = var2 - var1;
+                                            var1 = _closure1_slot10;
+                                            if (!(var2 > var1)) {
+                                                _fun118038_ip = 66;
+                                                continue _fun118038
+                                            }
+                                        case 45:
+                                            var2 = _closure3_slot0;
+                                            var1 = var2._fetch;
+                                            var0 = 'post_connect_recurring';
+                                            var0 = var1.bind(var2)(var0);
+                                        case 66:
+                                            var0 = undefined;
+                                            return var0;
                                     }
-                                case 45:
-                                    var2 = _closure3_slot0;
-                                    var1 = var2._fetch;
-                                    var0 = 'post_connect_recurring';
-                                    var0 = var1.bind(var2)(var0);
-                                case 66:
-                                    var0 = undefined;
-                                    return var0;
-                            }
-                        };
-                        var5 = var7.bind(var8)(var5, var6);
-                        var2.recurringFetchTimerId = var5;
-                        var6 = var3.Math;
-                        var5 = var6.floor;
-                        var8 = var3.Math;
-                        var7 = var8.random;
-                        var7 = var7.bind(var8)();
-                        var4 = _closure1_slot12;
-                        var4 = var7 * var4;
-                        var5 = var5.bind(var6)(var4);
-                        var _closure4_slot1 = var5;
-                        var4 = var3.window;
-                        var3 = var4.setTimeout;
-                        var1 = function() { // Environment: var1
-                            _fun118080: for (var _fun118080_ip = 0;;) switch (_fun118080_ip) {
-                                case 0:
-                                    var0 = global;
-                                    var1 = var0.Date;
-                                    var0 = var1.now;
-                                    var2 = var0.bind(var1)();
-                                    var1 = _closure4_slot1;
-                                    var3 = var2 - var1;
-                                    var2 = _closure1_slot8;
-                                    var2 = var2.lastFetchedCurrentQuests;
-                                    if (!(!(var3 < var2))) {
-                                        _fun118080_ip = 95;
-                                        continue _fun118080
+                                };
+                                var5 = var11.bind(var12)(var5, var6);
+                                var7.recurringFetchTimerId = var5;
+                                var11 = var3.Math;
+                                var6 = var11.floor;
+                                var12 = var3.Math;
+                                var5 = var12.random;
+                                var12 = var5.bind(var12)();
+                                var5 = _closure1_slot12;
+                                var5 = var12 * var5;
+                                var5 = var6.bind(var11)(var5);
+                                var _closure4_slot1 = var5;
+                                var12 = var3.window;
+                                var11 = var12.setTimeout;
+                                var6 = function() { // Environment: var1
+                                    _fun118039: for (var _fun118039_ip = 0;;) switch (_fun118039_ip) {
+                                        case 0:
+                                            var0 = global;
+                                            var1 = var0.Date;
+                                            var0 = var1.now;
+                                            var2 = var0.bind(var1)();
+                                            var1 = _closure4_slot1;
+                                            var3 = var2 - var1;
+                                            var2 = _closure1_slot8;
+                                            var2 = var2.lastFetchedCurrentQuests;
+                                            if (!(!(var3 < var2))) {
+                                                _fun118039_ip = 95;
+                                                continue _fun118039
+                                            }
+                                        case 45:
+                                            var0 = _closure4_slot0;
+                                            if (var0) {
+                                                _fun118039_ip = 68;
+                                                continue _fun118039
+                                            }
+                                        case 52:
+                                            var1 = _closure1_slot8;
+                                            var2 = var1.lastFetchedCurrentQuests;
+                                            var1 = 0;
+                                            var0 = var1 === var2;
+                                        case 68:
+                                            if (!var0) {
+                                                _fun118039_ip = 95;
+                                                continue _fun118039
+                                            }
+                                        case 71:
+                                            var2 = _closure3_slot0;
+                                            var1 = var2._fetch;
+                                            var0 = 'post_connect_initial';
+                                            var0 = var1.bind(var2)(var0);
+                                        case 95:
+                                            var0 = undefined;
+                                            return var0;
                                     }
-                                case 45:
-                                    var0 = _closure4_slot0;
-                                    if (var0) {
-                                        _fun118080_ip = 68;
-                                        continue _fun118080
+                                };
+                                var6 = var11.bind(var12)(var6, var5);
+                                var7.initialFetchTimerId = var6;
+                                var6 = 9;
+                                var7 = var9[var6];
+                                var7 = var8.bind(var0)(var7);
+                                var12 = var7.QuestHomeTakeoverRolloutExperiment;
+                                var11 = var12.getConfig;
+                                var7 = {};
+                                var13 = var10.QUESTS_MANAGER;
+                                var7.location = var13;
+                                var7 = var11.bind(var12)(var7);
+                                var7 = var7.enabled;
+                                var6 = var9[var6];
+                                var6 = var8.bind(var0)(var6);
+                                var9 = var6.FetchQuestHomeTakeoverOnConnectionOpenExperiment;
+                                var8 = var9.getConfig;
+                                var6 = {};
+                                var10 = var10.QUESTS_MANAGER;
+                                var6.location = var10;
+                                var6 = var8.bind(var9)(var6);
+                                var6 = var6.enabled;
+                                if (!var7) {
+                                    _fun118037_ip = 476;
+                                    continue _fun118037
+                                }
+                            case 341:
+                                if (!var6) {
+                                    _fun118037_ip = 476;
+                                    continue _fun118037
+                                }
+                            case 347:
+                                var7 = _closure1_slot0;
+                                var8 = _closure1_slot2;
+                                var6 = 10;
+                                var6 = var8[var6];
+                                var8 = var7.bind(var0)(var6);
+                                var7 = var8.getIsEligibleForQuests;
+                                var6 = {};
+                                var9 = _closure1_slot9;
+                                var9 = var9.QUESTS_MANAGER;
+                                var6.location = var9;
+                                var6 = var7.bind(var8)(var6);
+                                if (!var6) {
+                                    _fun118037_ip = 476;
+                                    continue _fun118037
+                                }
+                            case 397:
+                                var7 = var3.Math;
+                                var6 = var7.floor;
+                                var9 = var3.Math;
+                                var8 = var9.random;
+                                var8 = var8.bind(var9)();
+                                var4 = _closure1_slot12;
+                                var4 = var8 * var4;
+                                var4 = var6.bind(var7)(var4);
+                                var5 = var5 + var4;
+                                var2 = _closure3_slot0;
+                                var4 = var3.window;
+                                var3 = var4.setTimeout;
+                                var1 = function() { // Environment: var1
+                                    _fun118040: for (var _fun118040_ip = 0;;) switch (_fun118040_ip) {
+                                        case 0: // try_start_0
+                                            var2 = _closure1_slot0;
+                                            var1 = _closure1_slot2;
+                                            var0 = 11;
+                                            var1 = var1[var0];
+                                            var0 = undefined;
+                                            var1 = var2.bind(var0)(var1);
+                                            var0 = var1.fetchQuestHomeTakeover;
+                                            var0 = var0.bind(var1)();
+                                        case 35: // try_end0
+                                            _fun118040_ip = 39;
+                                            continue _fun118040;
+                                        case 37: // catch_target0
+                                            CatchBlockStart(arg_register = 0);
+                                        case 39:
+                                            var0 = undefined;
+                                            return var0;
                                     }
-                                case 52:
-                                    var1 = _closure1_slot8;
-                                    var2 = var1.lastFetchedCurrentQuests;
-                                    var1 = 0;
-                                    var0 = var1 === var2;
-                                case 68:
-                                    if (!var0) {
-                                        _fun118080_ip = 95;
-                                        continue _fun118080
-                                    }
-                                case 71:
-                                    var2 = _closure3_slot0;
-                                    var1 = var2._fetch;
-                                    var0 = 'post_connect_initial';
-                                    var0 = var1.bind(var2)(var0);
-                                case 95:
-                                    var0 = undefined;
-                                    return var0;
-                            }
-                        };
-                        var1 = var3.bind(var4)(var1, var5);
-                        var2.initialFetchTimerId = var1;
-                        return var0;
+                                };
+                                var1 = var3.bind(var4)(var1, var5);
+                                var2.initialTakeoverFetchTimerId = var1;
+                            case 476:
+                                return var0;
+                        }
                     };
                     var0.handlePostConnectionOpen = var2;
                     var2 = function() { // Environment: var1
@@ -298,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var0.handleRunningGamesChange = var2;
                     var2 = function(arg0) { // Environment: var1
-                        _fun118082: for (var _fun118082_ip = 0;;) switch (_fun118082_ip) {
+                        _fun118042: for (var _fun118042_ip = 0;;) switch (_fun118042_ip) {
                             case 0:
                                 var1 = arg0;
                                 var2 = var1.partial;
@@ -309,22 +398,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var0 in var3;
                                 var0 = !var3;
                                 if (!var3) {
-                                    _fun118082_ip = 44;
-                                    continue _fun118082
+                                    _fun118042_ip = 44;
+                                    continue _fun118042
                                 }
                             case 41:
                                 var0 = !var2;
                             case 44:
                                 if (var0) {
-                                    _fun118082_ip = 50;
-                                    continue _fun118082
+                                    _fun118042_ip = 50;
+                                    continue _fun118042
                                 }
                             case 47:
                                 var0 = var1;
                             case 50:
                                 if (var0) {
-                                    _fun118082_ip = 98;
-                                    continue _fun118082
+                                    _fun118042_ip = 98;
+                                    continue _fun118042
                                 }
                             case 53:
                                 var1 = global;
@@ -338,8 +427,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = var2 <= var1;
                             case 98:
                                 if (var0) {
-                                    _fun118082_ip = 148;
-                                    continue _fun118082
+                                    _fun118042_ip = 148;
+                                    continue _fun118042
                                 }
                             case 101:
                                 var2 = _closure3_slot0;
@@ -363,6 +452,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var4.clearTimeout;
                         var1 = _closure3_slot0;
                         var2 = var1.initialFetchTimerId;
+                        var2 = var3.bind(var4)(var2);
+                        var4 = var0.window;
+                        var3 = var4.clearTimeout;
+                        var2 = var1.initialTakeoverFetchTimerId;
                         var2 = var3.bind(var4)(var2);
                         var3 = var0.window;
                         var2 = var3.clearTimeout;
@@ -402,11 +495,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = '_fetch';
         var4.key = var5;
         var0 = function arg0() {
-            _fun118084: for (var _fun118084_ip = 0;;) switch (_fun118084_ip) {
+            _fun118044: for (var _fun118044_ip = 0;;) switch (_fun118044_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
-                    var0 = 9;
+                    var0 = 10;
                     var1 = var1[var0];
                     var0 = undefined;
                     var4 = var2.bind(var0)(var1);
@@ -418,29 +511,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.bind(var4)(var1);
                     var1 = !var1;
                     if (var1) {
-                        _fun118084_ip = 68;
-                        continue _fun118084
+                        _fun118044_ip = 68;
+                        continue _fun118044
                     }
                 case 58:
                     var2 = _closure1_slot8;
                     var1 = var2.isFetchingCurrentQuests;
                 case 68:
                     if (var1) {
-                        _fun118084_ip = 101;
-                        continue _fun118084
+                        _fun118044_ip = 101;
+                        continue _fun118044
                     }
                 case 71:
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
-                    var2 = 10;
+                    var2 = 12;
                     var2 = var5[var2];
                     var4 = var4.bind(var0)(var2);
                     var2 = var4.isMetaQuest;
                     var1 = var2.bind(var4)();
                 case 101:
                     if (var1) {
-                        _fun118084_ip = 311;
-                        continue _fun118084
+                        _fun118044_ip = 311;
+                        continue _fun118044
                     }
                 case 107:
                     var4 = _closure1_slot0;
@@ -450,19 +543,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var4.bind(var0)(var2);
                     var2 = var6.fetchCurrentQuests;
                     var2 = var2.bind(var6)();
-                    var2 = 12;
+                    var2 = 13;
                     var2 = var5[var2];
                     var4 = var4.bind(var0)(var2);
                     var2 = var4.isMac;
                     var2 = var2.bind(var4)();
                     if (!var2) {
-                        _fun118084_ip = 200;
-                        continue _fun118084
+                        _fun118044_ip = 200;
+                        continue _fun118044
                     }
                 case 162:
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
-                    var4 = 13;
+                    var4 = 14;
                     var4 = var6[var4];
                     var5 = var5.bind(var0)(var4);
                     var4 = var5.getState;
@@ -471,13 +564,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var4 !== var5;
                 case 200:
                     if (var2) {
-                        _fun118084_ip = 252;
-                        continue _fun118084
+                        _fun118044_ip = 252;
+                        continue _fun118044
                     }
                 case 203:
                     var5 = _closure1_slot1;
                     var6 = _closure1_slot2;
-                    var4 = 14;
+                    var4 = 15;
                     var4 = var6[var4];
                     var6 = var5.bind(var0)(var4);
                     var5 = var6.getConfig;
@@ -488,8 +581,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var4.enableNewRequestBehavior;
                 case 252:
                     if (var2) {
-                        _fun118084_ip = 311;
-                        continue _fun118084
+                        _fun118044_ip = 311;
+                        continue _fun118044
                     }
                 case 255:
                     var2 = _closure1_slot0;
@@ -497,7 +590,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var5[var1];
                     var4 = var2.bind(var0)(var1);
                     var3 = var4.fetchQuestToDeliver;
-                    var1 = 15;
+                    var1 = 16;
                     var1 = var5[var1];
                     var1 = var2.bind(var0)(var1);
                     var1 = var1.QuestPlacement;
@@ -524,7 +617,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var3;
     var1 = new var13[var1](var12);
     var1 = var1 instanceof Object ? var1 : var3;
-    var3 = 17;
+    var3 = 18;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -532,4 +625,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 5278, 5280, 667, 15057, 5366, 3525, 5310, 478, 5335, 5291, 5282, 4299, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 5278, 5281, 667, 15044, 5368, 5367, 5311, 3525, 478, 5336, 5292, 5283, 4299, 2]);

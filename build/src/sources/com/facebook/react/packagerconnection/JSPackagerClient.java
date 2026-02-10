@@ -44,13 +44,13 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final Object f11092id;
+        private final Object f11232id;
         final /* synthetic */ JSPackagerClient this$0;
 
         public ResponderImpl(@NotNull JSPackagerClient jSPackagerClient, Object id2) {
             Intrinsics.checkNotNullParameter(id2, "id");
             this.this$0 = jSPackagerClient;
-            this.f11092id = id2;
+            this.f11232id = id2;
         }
 
         @Override // com.facebook.react.packagerconnection.Responder
@@ -59,14 +59,14 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
             try {
                 JSONObject jSONObject = new JSONObject();
                 jSONObject.put("version", 2);
-                jSONObject.put(StackTraceHelper.ID_KEY, this.f11092id);
+                jSONObject.put(StackTraceHelper.ID_KEY, this.f11232id);
                 jSONObject.put("error", error);
                 ReconnectingWebSocket reconnectingWebSocket = this.this$0.webSocket;
                 String jSONObject2 = jSONObject.toString();
                 Intrinsics.checkNotNullExpressionValue(jSONObject2, "toString(...)");
                 reconnectingWebSocket.sendMessage(jSONObject2);
             } catch (Exception e10) {
-                p8.a.n(JSPackagerClient.TAG, "Responding with error failed", e10);
+                q8.a.n(JSPackagerClient.TAG, "Responding with error failed", e10);
             }
         }
 
@@ -76,14 +76,14 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
             try {
                 JSONObject jSONObject = new JSONObject();
                 jSONObject.put("version", 2);
-                jSONObject.put(StackTraceHelper.ID_KEY, this.f11092id);
+                jSONObject.put(StackTraceHelper.ID_KEY, this.f11232id);
                 jSONObject.put("result", result);
                 ReconnectingWebSocket reconnectingWebSocket = this.this$0.webSocket;
                 String jSONObject2 = jSONObject.toString();
                 Intrinsics.checkNotNullExpressionValue(jSONObject2, "toString(...)");
                 reconnectingWebSocket.sendMessage(jSONObject2);
             } catch (Exception e10) {
-                p8.a.n(JSPackagerClient.TAG, "Responding failed", e10);
+                q8.a.n(JSPackagerClient.TAG, "Responding failed", e10);
             }
         }
     }
@@ -107,7 +107,7 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
             new ResponderImpl(this, obj).error(str);
         }
         String str2 = TAG;
-        p8.a.m(str2, "Handling the message failed with reason: " + str);
+        q8.a.m(str2, "Handling the message failed with reason: " + str);
     }
 
     public final void close() {
@@ -129,7 +129,7 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
             Object opt2 = jSONObject.opt("params");
             if (optInt != 2) {
                 String str = TAG;
-                p8.a.m(str, "Message with incompatible or missing version of protocol received: " + optInt);
+                q8.a.m(str, "Message with incompatible or missing version of protocol received: " + optInt);
             } else if (optString == null) {
                 abortOnMessage(opt, "No method provided");
             } else {
@@ -143,7 +143,7 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
                 }
             }
         } catch (Exception e10) {
-            p8.a.n(TAG, "Handling the message failed", e10);
+            q8.a.n(TAG, "Handling the message failed", e10);
         }
     }
 
@@ -161,7 +161,7 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
     @Override // com.facebook.react.packagerconnection.ReconnectingWebSocket.MessageCallback
     public void onMessage(@NotNull ByteString bytes) {
         Intrinsics.checkNotNullParameter(bytes, "bytes");
-        p8.a.J(TAG, "Websocket received message with payload of unexpected type binary");
+        q8.a.J(TAG, "Websocket received message with payload of unexpected type binary");
     }
 
     public /* synthetic */ JSPackagerClient(String str, PackagerConnectionSettings packagerConnectionSettings, Map map, ReconnectingWebSocket.ConnectionCallback connectionCallback, int i10, DefaultConstructorMarker defaultConstructorMarker) {

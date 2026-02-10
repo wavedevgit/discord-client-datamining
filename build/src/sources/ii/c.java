@@ -1,41 +1,60 @@
 package ii;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import java.util.HashSet;
-import java.util.Set;
+import java.io.File;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+final class c extends u {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f26777a;
+    private final File f26861a;
 
-    public c(Context context) {
-        this.f26777a = context;
+    /* renamed from: b  reason: collision with root package name */
+    private final String f26862b;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c(File file, String str) {
+        if (file != null) {
+            this.f26861a = file;
+            if (str != null) {
+                this.f26862b = str;
+                return;
+            }
+            throw new NullPointerException("Null splitId");
+        }
+        throw new NullPointerException("Null splitFile");
     }
 
-    private final SharedPreferences c() {
-        return this.f26777a.getSharedPreferences("playcore_split_install_internal", 0);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // ii.u
+    public final File a() {
+        return this.f26861a;
     }
 
-    public final Set a() {
-        Set<String> hashSet;
-        synchronized (c.class) {
-            try {
-                hashSet = c().getStringSet("modules_to_uninstall_if_emulated", new HashSet());
-                if (hashSet == null) {
-                    hashSet = new HashSet<>();
-                }
-            } catch (Exception unused) {
-                hashSet = new HashSet<>();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // ii.u
+    public final String b() {
+        return this.f26862b;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof u) {
+            u uVar = (u) obj;
+            if (this.f26861a.equals(uVar.a()) && this.f26862b.equals(uVar.b())) {
+                return true;
             }
         }
-        return hashSet;
+        return false;
     }
 
-    public final void b() {
-        synchronized (c.class) {
-            c().edit().putStringSet("modules_to_uninstall_if_emulated", new HashSet()).apply();
-        }
+    public final int hashCode() {
+        return ((this.f26861a.hashCode() ^ 1000003) * 1000003) ^ this.f26862b.hashCode();
+    }
+
+    public final String toString() {
+        String obj = this.f26861a.toString();
+        String str = this.f26862b;
+        return "SplitFileInfo{splitFile=" + obj + ", splitId=" + str + "}";
     }
 }

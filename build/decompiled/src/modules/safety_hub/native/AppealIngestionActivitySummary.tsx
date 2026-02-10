@@ -39,10 +39,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 16;
     var8.marginBottom = var9;
     var3.activity = var8;
-    var8 = {};
-    var9 = 8;
-    var8.marginBottom = var9;
-    var3.sectionTitle = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot4 = var3;
     var3 = 5;
@@ -76,4 +72,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 10233, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 10211, 2]);

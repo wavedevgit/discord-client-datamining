@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import an.c;
+import bn.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -62,8 +62,8 @@ public final class QRCodeJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
@@ -85,7 +85,7 @@ public final class QRCodeJsonAdapter extends h {
         }
         Constructor<QRCode> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = QRCode.class.getDeclaredConstructor(String.class, QRCode.Attributes.class, QRCode.QRCodeComponentStyle.class, Integer.TYPE, c.f1164c);
+            constructor = QRCode.class.getDeclaredConstructor(String.class, QRCode.Attributes.class, QRCode.QRCodeComponentStyle.class, Integer.TYPE, c.f7152c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

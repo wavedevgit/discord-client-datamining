@@ -7,19 +7,19 @@ import x.p0;
 public final class r extends e {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Object f2488o;
+    private final Object f2185o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final p0 f2489p;
+    private final p0 f2186p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Rect f2490q;
+    private Rect f2187q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f2491r;
+    private final int f2188r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final int f2492s;
+    private final int f2189s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(n nVar, p0 p0Var) {
@@ -27,7 +27,7 @@ public final class r extends e {
     }
 
     @Override // androidx.camera.core.e, androidx.camera.core.n
-    public void C0(Rect rect) {
+    public void A0(Rect rect) {
         if (rect != null) {
             Rect rect2 = new Rect(rect);
             if (!rect2.intersect(0, 0, getWidth(), getHeight())) {
@@ -35,36 +35,36 @@ public final class r extends e {
             }
             rect = rect2;
         }
-        synchronized (this.f2488o) {
-            this.f2490q = rect;
+        synchronized (this.f2185o) {
+            this.f2187q = rect;
         }
     }
 
     @Override // androidx.camera.core.e, androidx.camera.core.n
     public p0 E() {
-        return this.f2489p;
+        return this.f2186p;
     }
 
     @Override // androidx.camera.core.e, androidx.camera.core.n
     public int getHeight() {
-        return this.f2492s;
+        return this.f2189s;
     }
 
     @Override // androidx.camera.core.e, androidx.camera.core.n
     public int getWidth() {
-        return this.f2491r;
+        return this.f2188r;
     }
 
     public r(n nVar, Size size, p0 p0Var) {
         super(nVar);
-        this.f2488o = new Object();
+        this.f2185o = new Object();
         if (size == null) {
-            this.f2491r = super.getWidth();
-            this.f2492s = super.getHeight();
+            this.f2188r = super.getWidth();
+            this.f2189s = super.getHeight();
         } else {
-            this.f2491r = size.getWidth();
-            this.f2492s = size.getHeight();
+            this.f2188r = size.getWidth();
+            this.f2189s = size.getHeight();
         }
-        this.f2489p = p0Var;
+        this.f2186p = p0Var;
     }
 }

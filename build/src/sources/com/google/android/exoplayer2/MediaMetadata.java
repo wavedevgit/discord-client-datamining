@@ -31,136 +31,136 @@ public final class MediaMetadata implements g {
     public final Bundle S;
 
     /* renamed from: d  reason: collision with root package name */
-    public final CharSequence f11783d;
+    public final CharSequence f11923d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final CharSequence f11784e;
+    public final CharSequence f11924e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final CharSequence f11785i;
+    public final CharSequence f11925i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final CharSequence f11786o;
+    public final CharSequence f11926o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final CharSequence f11787p;
+    public final CharSequence f11927p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final CharSequence f11788q;
+    public final CharSequence f11928q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final CharSequence f11789r;
+    public final CharSequence f11929r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final u1 f11790s;
+    public final u1 f11930s;
 
     /* renamed from: t  reason: collision with root package name */
-    public final u1 f11791t;
+    public final u1 f11931t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final byte[] f11792u;
+    public final byte[] f11932u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final Integer f11793v;
+    public final Integer f11933v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final Uri f11794w;
+    public final Uri f11934w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final Integer f11795x;
+    public final Integer f11935x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final Integer f11796y;
+    public final Integer f11936y;
 
     /* renamed from: z  reason: collision with root package name */
-    public final Integer f11797z;
+    public final Integer f11937z;
     public static final MediaMetadata T = new b().H();
-    private static final String U = ne.w0.B0(0);
-    private static final String V = ne.w0.B0(1);
-    private static final String W = ne.w0.B0(2);
-    private static final String X = ne.w0.B0(3);
-    private static final String Y = ne.w0.B0(4);
-    private static final String Z = ne.w0.B0(5);
+    private static final String U = oe.w0.B0(0);
+    private static final String V = oe.w0.B0(1);
+    private static final String W = oe.w0.B0(2);
+    private static final String X = oe.w0.B0(3);
+    private static final String Y = oe.w0.B0(4);
+    private static final String Z = oe.w0.B0(5);
 
     /* renamed from: a0  reason: collision with root package name */
-    private static final String f11757a0 = ne.w0.B0(6);
+    private static final String f11897a0 = oe.w0.B0(6);
 
     /* renamed from: b0  reason: collision with root package name */
-    private static final String f11758b0 = ne.w0.B0(8);
+    private static final String f11898b0 = oe.w0.B0(8);
 
     /* renamed from: c0  reason: collision with root package name */
-    private static final String f11759c0 = ne.w0.B0(9);
+    private static final String f11899c0 = oe.w0.B0(9);
 
     /* renamed from: d0  reason: collision with root package name */
-    private static final String f11760d0 = ne.w0.B0(10);
+    private static final String f11900d0 = oe.w0.B0(10);
 
     /* renamed from: e0  reason: collision with root package name */
-    private static final String f11761e0 = ne.w0.B0(11);
+    private static final String f11901e0 = oe.w0.B0(11);
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final String f11762f0 = ne.w0.B0(12);
+    private static final String f11902f0 = oe.w0.B0(12);
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final String f11763g0 = ne.w0.B0(13);
+    private static final String f11903g0 = oe.w0.B0(13);
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final String f11764h0 = ne.w0.B0(14);
+    private static final String f11904h0 = oe.w0.B0(14);
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final String f11765i0 = ne.w0.B0(15);
+    private static final String f11905i0 = oe.w0.B0(15);
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final String f11766j0 = ne.w0.B0(16);
+    private static final String f11906j0 = oe.w0.B0(16);
 
     /* renamed from: k0  reason: collision with root package name */
-    private static final String f11767k0 = ne.w0.B0(17);
+    private static final String f11907k0 = oe.w0.B0(17);
 
     /* renamed from: l0  reason: collision with root package name */
-    private static final String f11768l0 = ne.w0.B0(18);
+    private static final String f11908l0 = oe.w0.B0(18);
 
     /* renamed from: m0  reason: collision with root package name */
-    private static final String f11769m0 = ne.w0.B0(19);
+    private static final String f11909m0 = oe.w0.B0(19);
 
     /* renamed from: n0  reason: collision with root package name */
-    private static final String f11770n0 = ne.w0.B0(20);
+    private static final String f11910n0 = oe.w0.B0(20);
 
     /* renamed from: o0  reason: collision with root package name */
-    private static final String f11771o0 = ne.w0.B0(21);
+    private static final String f11911o0 = oe.w0.B0(21);
 
     /* renamed from: p0  reason: collision with root package name */
-    private static final String f11772p0 = ne.w0.B0(22);
+    private static final String f11912p0 = oe.w0.B0(22);
 
     /* renamed from: q0  reason: collision with root package name */
-    private static final String f11773q0 = ne.w0.B0(23);
+    private static final String f11913q0 = oe.w0.B0(23);
 
     /* renamed from: r0  reason: collision with root package name */
-    private static final String f11774r0 = ne.w0.B0(24);
+    private static final String f11914r0 = oe.w0.B0(24);
 
     /* renamed from: s0  reason: collision with root package name */
-    private static final String f11775s0 = ne.w0.B0(25);
+    private static final String f11915s0 = oe.w0.B0(25);
 
     /* renamed from: t0  reason: collision with root package name */
-    private static final String f11776t0 = ne.w0.B0(26);
+    private static final String f11916t0 = oe.w0.B0(26);
 
     /* renamed from: u0  reason: collision with root package name */
-    private static final String f11777u0 = ne.w0.B0(27);
+    private static final String f11917u0 = oe.w0.B0(27);
 
     /* renamed from: v0  reason: collision with root package name */
-    private static final String f11778v0 = ne.w0.B0(28);
+    private static final String f11918v0 = oe.w0.B0(28);
 
     /* renamed from: w0  reason: collision with root package name */
-    private static final String f11779w0 = ne.w0.B0(29);
+    private static final String f11919w0 = oe.w0.B0(29);
 
     /* renamed from: x0  reason: collision with root package name */
-    private static final String f11780x0 = ne.w0.B0(30);
+    private static final String f11920x0 = oe.w0.B0(30);
 
     /* renamed from: y0  reason: collision with root package name */
-    private static final String f11781y0 = ne.w0.B0(31);
+    private static final String f11921y0 = oe.w0.B0(31);
 
     /* renamed from: z0  reason: collision with root package name */
-    private static final String f11782z0 = ne.w0.B0(32);
-    private static final String A0 = ne.w0.B0(1000);
-    public static final g.a B0 = new g.a() { // from class: lc.k0
+    private static final String f11922z0 = oe.w0.B0(32);
+    private static final String A0 = oe.w0.B0(1000);
+    public static final g.a B0 = new g.a() { // from class: mc.k0
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             MediaMetadata c10;
@@ -180,151 +180,151 @@ public final class MediaMetadata implements g {
         private Bundle G;
 
         /* renamed from: a  reason: collision with root package name */
-        private CharSequence f11798a;
+        private CharSequence f11938a;
 
         /* renamed from: b  reason: collision with root package name */
-        private CharSequence f11799b;
+        private CharSequence f11939b;
 
         /* renamed from: c  reason: collision with root package name */
-        private CharSequence f11800c;
+        private CharSequence f11940c;
 
         /* renamed from: d  reason: collision with root package name */
-        private CharSequence f11801d;
+        private CharSequence f11941d;
 
         /* renamed from: e  reason: collision with root package name */
-        private CharSequence f11802e;
+        private CharSequence f11942e;
 
         /* renamed from: f  reason: collision with root package name */
-        private CharSequence f11803f;
+        private CharSequence f11943f;
 
         /* renamed from: g  reason: collision with root package name */
-        private CharSequence f11804g;
+        private CharSequence f11944g;
 
         /* renamed from: h  reason: collision with root package name */
-        private u1 f11805h;
+        private u1 f11945h;
 
         /* renamed from: i  reason: collision with root package name */
-        private u1 f11806i;
+        private u1 f11946i;
 
         /* renamed from: j  reason: collision with root package name */
-        private byte[] f11807j;
+        private byte[] f11947j;
 
         /* renamed from: k  reason: collision with root package name */
-        private Integer f11808k;
+        private Integer f11948k;
 
         /* renamed from: l  reason: collision with root package name */
-        private Uri f11809l;
+        private Uri f11949l;
 
         /* renamed from: m  reason: collision with root package name */
-        private Integer f11810m;
+        private Integer f11950m;
 
         /* renamed from: n  reason: collision with root package name */
-        private Integer f11811n;
+        private Integer f11951n;
 
         /* renamed from: o  reason: collision with root package name */
-        private Integer f11812o;
+        private Integer f11952o;
 
         /* renamed from: p  reason: collision with root package name */
-        private Boolean f11813p;
+        private Boolean f11953p;
 
         /* renamed from: q  reason: collision with root package name */
-        private Boolean f11814q;
+        private Boolean f11954q;
 
         /* renamed from: r  reason: collision with root package name */
-        private Integer f11815r;
+        private Integer f11955r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Integer f11816s;
+        private Integer f11956s;
 
         /* renamed from: t  reason: collision with root package name */
-        private Integer f11817t;
+        private Integer f11957t;
 
         /* renamed from: u  reason: collision with root package name */
-        private Integer f11818u;
+        private Integer f11958u;
 
         /* renamed from: v  reason: collision with root package name */
-        private Integer f11819v;
+        private Integer f11959v;
 
         /* renamed from: w  reason: collision with root package name */
-        private Integer f11820w;
+        private Integer f11960w;
 
         /* renamed from: x  reason: collision with root package name */
-        private CharSequence f11821x;
+        private CharSequence f11961x;
 
         /* renamed from: y  reason: collision with root package name */
-        private CharSequence f11822y;
+        private CharSequence f11962y;
 
         /* renamed from: z  reason: collision with root package name */
-        private CharSequence f11823z;
+        private CharSequence f11963z;
 
         public MediaMetadata H() {
             return new MediaMetadata(this);
         }
 
         public b I(byte[] bArr, int i10) {
-            if (this.f11807j != null && !ne.w0.c(Integer.valueOf(i10), 3) && ne.w0.c(this.f11808k, 3)) {
+            if (this.f11947j != null && !oe.w0.c(Integer.valueOf(i10), 3) && oe.w0.c(this.f11948k, 3)) {
                 return this;
             }
-            this.f11807j = (byte[]) bArr.clone();
-            this.f11808k = Integer.valueOf(i10);
+            this.f11947j = (byte[]) bArr.clone();
+            this.f11948k = Integer.valueOf(i10);
             return this;
         }
 
         public b J(MediaMetadata mediaMetadata) {
             if (mediaMetadata != null) {
-                CharSequence charSequence = mediaMetadata.f11783d;
+                CharSequence charSequence = mediaMetadata.f11923d;
                 if (charSequence != null) {
                     m0(charSequence);
                 }
-                CharSequence charSequence2 = mediaMetadata.f11784e;
+                CharSequence charSequence2 = mediaMetadata.f11924e;
                 if (charSequence2 != null) {
                     O(charSequence2);
                 }
-                CharSequence charSequence3 = mediaMetadata.f11785i;
+                CharSequence charSequence3 = mediaMetadata.f11925i;
                 if (charSequence3 != null) {
                     N(charSequence3);
                 }
-                CharSequence charSequence4 = mediaMetadata.f11786o;
+                CharSequence charSequence4 = mediaMetadata.f11926o;
                 if (charSequence4 != null) {
                     M(charSequence4);
                 }
-                CharSequence charSequence5 = mediaMetadata.f11787p;
+                CharSequence charSequence5 = mediaMetadata.f11927p;
                 if (charSequence5 != null) {
                     W(charSequence5);
                 }
-                CharSequence charSequence6 = mediaMetadata.f11788q;
+                CharSequence charSequence6 = mediaMetadata.f11928q;
                 if (charSequence6 != null) {
                     l0(charSequence6);
                 }
-                CharSequence charSequence7 = mediaMetadata.f11789r;
+                CharSequence charSequence7 = mediaMetadata.f11929r;
                 if (charSequence7 != null) {
                     U(charSequence7);
                 }
-                u1 u1Var = mediaMetadata.f11790s;
+                u1 u1Var = mediaMetadata.f11930s;
                 if (u1Var != null) {
                     q0(u1Var);
                 }
-                u1 u1Var2 = mediaMetadata.f11791t;
+                u1 u1Var2 = mediaMetadata.f11931t;
                 if (u1Var2 != null) {
                     d0(u1Var2);
                 }
-                byte[] bArr = mediaMetadata.f11792u;
+                byte[] bArr = mediaMetadata.f11932u;
                 if (bArr != null) {
-                    P(bArr, mediaMetadata.f11793v);
+                    P(bArr, mediaMetadata.f11933v);
                 }
-                Uri uri = mediaMetadata.f11794w;
+                Uri uri = mediaMetadata.f11934w;
                 if (uri != null) {
                     Q(uri);
                 }
-                Integer num = mediaMetadata.f11795x;
+                Integer num = mediaMetadata.f11935x;
                 if (num != null) {
                     p0(num);
                 }
-                Integer num2 = mediaMetadata.f11796y;
+                Integer num2 = mediaMetadata.f11936y;
                 if (num2 != null) {
                     o0(num2);
                 }
-                Integer num3 = mediaMetadata.f11797z;
+                Integer num3 = mediaMetadata.f11937z;
                 if (num3 != null) {
                     Y(num3);
                 }
@@ -410,7 +410,7 @@ public final class MediaMetadata implements g {
 
         public b K(Metadata metadata) {
             for (int i10 = 0; i10 < metadata.e(); i10++) {
-                metadata.d(i10).d1(this);
+                metadata.d(i10).a1(this);
             }
             return this;
         }
@@ -419,24 +419,24 @@ public final class MediaMetadata implements g {
             for (int i10 = 0; i10 < list.size(); i10++) {
                 Metadata metadata = (Metadata) list.get(i10);
                 for (int i11 = 0; i11 < metadata.e(); i11++) {
-                    metadata.d(i11).d1(this);
+                    metadata.d(i11).a1(this);
                 }
             }
             return this;
         }
 
         public b M(CharSequence charSequence) {
-            this.f11801d = charSequence;
+            this.f11941d = charSequence;
             return this;
         }
 
         public b N(CharSequence charSequence) {
-            this.f11800c = charSequence;
+            this.f11940c = charSequence;
             return this;
         }
 
         public b O(CharSequence charSequence) {
-            this.f11799b = charSequence;
+            this.f11939b = charSequence;
             return this;
         }
 
@@ -447,13 +447,13 @@ public final class MediaMetadata implements g {
             } else {
                 bArr2 = (byte[]) bArr.clone();
             }
-            this.f11807j = bArr2;
-            this.f11808k = num;
+            this.f11947j = bArr2;
+            this.f11948k = num;
             return this;
         }
 
         public b Q(Uri uri) {
-            this.f11809l = uri;
+            this.f11949l = uri;
             return this;
         }
 
@@ -463,17 +463,17 @@ public final class MediaMetadata implements g {
         }
 
         public b S(CharSequence charSequence) {
-            this.f11822y = charSequence;
+            this.f11962y = charSequence;
             return this;
         }
 
         public b T(CharSequence charSequence) {
-            this.f11823z = charSequence;
+            this.f11963z = charSequence;
             return this;
         }
 
         public b U(CharSequence charSequence) {
-            this.f11804g = charSequence;
+            this.f11944g = charSequence;
             return this;
         }
 
@@ -483,7 +483,7 @@ public final class MediaMetadata implements g {
         }
 
         public b W(CharSequence charSequence) {
-            this.f11802e = charSequence;
+            this.f11942e = charSequence;
             return this;
         }
 
@@ -493,7 +493,7 @@ public final class MediaMetadata implements g {
         }
 
         public b Y(Integer num) {
-            this.f11812o = num;
+            this.f11952o = num;
             return this;
         }
 
@@ -503,12 +503,12 @@ public final class MediaMetadata implements g {
         }
 
         public b a0(Boolean bool) {
-            this.f11813p = bool;
+            this.f11953p = bool;
             return this;
         }
 
         public b b0(Boolean bool) {
-            this.f11814q = bool;
+            this.f11954q = bool;
             return this;
         }
 
@@ -518,37 +518,37 @@ public final class MediaMetadata implements g {
         }
 
         public b d0(u1 u1Var) {
-            this.f11806i = u1Var;
+            this.f11946i = u1Var;
             return this;
         }
 
         public b e0(Integer num) {
-            this.f11817t = num;
+            this.f11957t = num;
             return this;
         }
 
         public b f0(Integer num) {
-            this.f11816s = num;
+            this.f11956s = num;
             return this;
         }
 
         public b g0(Integer num) {
-            this.f11815r = num;
+            this.f11955r = num;
             return this;
         }
 
         public b h0(Integer num) {
-            this.f11820w = num;
+            this.f11960w = num;
             return this;
         }
 
         public b i0(Integer num) {
-            this.f11819v = num;
+            this.f11959v = num;
             return this;
         }
 
         public b j0(Integer num) {
-            this.f11818u = num;
+            this.f11958u = num;
             return this;
         }
 
@@ -558,12 +558,12 @@ public final class MediaMetadata implements g {
         }
 
         public b l0(CharSequence charSequence) {
-            this.f11803f = charSequence;
+            this.f11943f = charSequence;
             return this;
         }
 
         public b m0(CharSequence charSequence) {
-            this.f11798a = charSequence;
+            this.f11938a = charSequence;
             return this;
         }
 
@@ -573,22 +573,22 @@ public final class MediaMetadata implements g {
         }
 
         public b o0(Integer num) {
-            this.f11811n = num;
+            this.f11951n = num;
             return this;
         }
 
         public b p0(Integer num) {
-            this.f11810m = num;
+            this.f11950m = num;
             return this;
         }
 
         public b q0(u1 u1Var) {
-            this.f11805h = u1Var;
+            this.f11945h = u1Var;
             return this;
         }
 
         public b r0(CharSequence charSequence) {
-            this.f11821x = charSequence;
+            this.f11961x = charSequence;
             return this;
         }
 
@@ -596,32 +596,32 @@ public final class MediaMetadata implements g {
         }
 
         private b(MediaMetadata mediaMetadata) {
-            this.f11798a = mediaMetadata.f11783d;
-            this.f11799b = mediaMetadata.f11784e;
-            this.f11800c = mediaMetadata.f11785i;
-            this.f11801d = mediaMetadata.f11786o;
-            this.f11802e = mediaMetadata.f11787p;
-            this.f11803f = mediaMetadata.f11788q;
-            this.f11804g = mediaMetadata.f11789r;
-            this.f11805h = mediaMetadata.f11790s;
-            this.f11806i = mediaMetadata.f11791t;
-            this.f11807j = mediaMetadata.f11792u;
-            this.f11808k = mediaMetadata.f11793v;
-            this.f11809l = mediaMetadata.f11794w;
-            this.f11810m = mediaMetadata.f11795x;
-            this.f11811n = mediaMetadata.f11796y;
-            this.f11812o = mediaMetadata.f11797z;
-            this.f11813p = mediaMetadata.A;
-            this.f11814q = mediaMetadata.B;
-            this.f11815r = mediaMetadata.D;
-            this.f11816s = mediaMetadata.E;
-            this.f11817t = mediaMetadata.F;
-            this.f11818u = mediaMetadata.G;
-            this.f11819v = mediaMetadata.H;
-            this.f11820w = mediaMetadata.I;
-            this.f11821x = mediaMetadata.J;
-            this.f11822y = mediaMetadata.K;
-            this.f11823z = mediaMetadata.L;
+            this.f11938a = mediaMetadata.f11923d;
+            this.f11939b = mediaMetadata.f11924e;
+            this.f11940c = mediaMetadata.f11925i;
+            this.f11941d = mediaMetadata.f11926o;
+            this.f11942e = mediaMetadata.f11927p;
+            this.f11943f = mediaMetadata.f11928q;
+            this.f11944g = mediaMetadata.f11929r;
+            this.f11945h = mediaMetadata.f11930s;
+            this.f11946i = mediaMetadata.f11931t;
+            this.f11947j = mediaMetadata.f11932u;
+            this.f11948k = mediaMetadata.f11933v;
+            this.f11949l = mediaMetadata.f11934w;
+            this.f11950m = mediaMetadata.f11935x;
+            this.f11951n = mediaMetadata.f11936y;
+            this.f11952o = mediaMetadata.f11937z;
+            this.f11953p = mediaMetadata.A;
+            this.f11954q = mediaMetadata.B;
+            this.f11955r = mediaMetadata.D;
+            this.f11956s = mediaMetadata.E;
+            this.f11957t = mediaMetadata.F;
+            this.f11958u = mediaMetadata.G;
+            this.f11959v = mediaMetadata.H;
+            this.f11960w = mediaMetadata.I;
+            this.f11961x = mediaMetadata.J;
+            this.f11962y = mediaMetadata.K;
+            this.f11963z = mediaMetadata.L;
             this.A = mediaMetadata.M;
             this.B = mediaMetadata.N;
             this.C = mediaMetadata.O;
@@ -638,76 +638,76 @@ public final class MediaMetadata implements g {
         Bundle bundle2;
         Bundle bundle3;
         b bVar = new b();
-        b U2 = bVar.m0(bundle.getCharSequence(U)).O(bundle.getCharSequence(V)).N(bundle.getCharSequence(W)).M(bundle.getCharSequence(X)).W(bundle.getCharSequence(Y)).l0(bundle.getCharSequence(Z)).U(bundle.getCharSequence(f11757a0));
-        byte[] byteArray = bundle.getByteArray(f11760d0);
-        String str = f11779w0;
+        b U2 = bVar.m0(bundle.getCharSequence(U)).O(bundle.getCharSequence(V)).N(bundle.getCharSequence(W)).M(bundle.getCharSequence(X)).W(bundle.getCharSequence(Y)).l0(bundle.getCharSequence(Z)).U(bundle.getCharSequence(f11897a0));
+        byte[] byteArray = bundle.getByteArray(f11900d0);
+        String str = f11919w0;
         if (bundle.containsKey(str)) {
             num = Integer.valueOf(bundle.getInt(str));
         } else {
             num = null;
         }
-        U2.P(byteArray, num).Q((Uri) bundle.getParcelable(f11761e0)).r0(bundle.getCharSequence(f11772p0)).S(bundle.getCharSequence(f11773q0)).T(bundle.getCharSequence(f11774r0)).Z(bundle.getCharSequence(f11777u0)).R(bundle.getCharSequence(f11778v0)).k0(bundle.getCharSequence(f11780x0)).X(bundle.getBundle(A0));
-        String str2 = f11758b0;
+        U2.P(byteArray, num).Q((Uri) bundle.getParcelable(f11901e0)).r0(bundle.getCharSequence(f11912p0)).S(bundle.getCharSequence(f11913q0)).T(bundle.getCharSequence(f11914r0)).Z(bundle.getCharSequence(f11917u0)).R(bundle.getCharSequence(f11918v0)).k0(bundle.getCharSequence(f11920x0)).X(bundle.getBundle(A0));
+        String str2 = f11898b0;
         if (bundle.containsKey(str2) && (bundle3 = bundle.getBundle(str2)) != null) {
-            bVar.q0((u1) u1.f13111e.a(bundle3));
+            bVar.q0((u1) u1.f13251e.a(bundle3));
         }
-        String str3 = f11759c0;
+        String str3 = f11899c0;
         if (bundle.containsKey(str3) && (bundle2 = bundle.getBundle(str3)) != null) {
-            bVar.d0((u1) u1.f13111e.a(bundle2));
+            bVar.d0((u1) u1.f13251e.a(bundle2));
         }
-        String str4 = f11762f0;
+        String str4 = f11902f0;
         if (bundle.containsKey(str4)) {
             bVar.p0(Integer.valueOf(bundle.getInt(str4)));
         }
-        String str5 = f11763g0;
+        String str5 = f11903g0;
         if (bundle.containsKey(str5)) {
             bVar.o0(Integer.valueOf(bundle.getInt(str5)));
         }
-        String str6 = f11764h0;
+        String str6 = f11904h0;
         if (bundle.containsKey(str6)) {
             bVar.Y(Integer.valueOf(bundle.getInt(str6)));
         }
-        String str7 = f11782z0;
+        String str7 = f11922z0;
         if (bundle.containsKey(str7)) {
             bVar.a0(Boolean.valueOf(bundle.getBoolean(str7)));
         }
-        String str8 = f11765i0;
+        String str8 = f11905i0;
         if (bundle.containsKey(str8)) {
             bVar.b0(Boolean.valueOf(bundle.getBoolean(str8)));
         }
-        String str9 = f11766j0;
+        String str9 = f11906j0;
         if (bundle.containsKey(str9)) {
             bVar.g0(Integer.valueOf(bundle.getInt(str9)));
         }
-        String str10 = f11767k0;
+        String str10 = f11907k0;
         if (bundle.containsKey(str10)) {
             bVar.f0(Integer.valueOf(bundle.getInt(str10)));
         }
-        String str11 = f11768l0;
+        String str11 = f11908l0;
         if (bundle.containsKey(str11)) {
             bVar.e0(Integer.valueOf(bundle.getInt(str11)));
         }
-        String str12 = f11769m0;
+        String str12 = f11909m0;
         if (bundle.containsKey(str12)) {
             bVar.j0(Integer.valueOf(bundle.getInt(str12)));
         }
-        String str13 = f11770n0;
+        String str13 = f11910n0;
         if (bundle.containsKey(str13)) {
             bVar.i0(Integer.valueOf(bundle.getInt(str13)));
         }
-        String str14 = f11771o0;
+        String str14 = f11911o0;
         if (bundle.containsKey(str14)) {
             bVar.h0(Integer.valueOf(bundle.getInt(str14)));
         }
-        String str15 = f11775s0;
+        String str15 = f11915s0;
         if (bundle.containsKey(str15)) {
             bVar.V(Integer.valueOf(bundle.getInt(str15)));
         }
-        String str16 = f11776t0;
+        String str16 = f11916t0;
         if (bundle.containsKey(str16)) {
             bVar.n0(Integer.valueOf(bundle.getInt(str16)));
         }
-        String str17 = f11781y0;
+        String str17 = f11921y0;
         if (bundle.containsKey(str17)) {
             bVar.c0(Integer.valueOf(bundle.getInt(str17)));
         }
@@ -791,7 +791,7 @@ public final class MediaMetadata implements g {
         }
         if (obj != null && MediaMetadata.class == obj.getClass()) {
             MediaMetadata mediaMetadata = (MediaMetadata) obj;
-            if (ne.w0.c(this.f11783d, mediaMetadata.f11783d) && ne.w0.c(this.f11784e, mediaMetadata.f11784e) && ne.w0.c(this.f11785i, mediaMetadata.f11785i) && ne.w0.c(this.f11786o, mediaMetadata.f11786o) && ne.w0.c(this.f11787p, mediaMetadata.f11787p) && ne.w0.c(this.f11788q, mediaMetadata.f11788q) && ne.w0.c(this.f11789r, mediaMetadata.f11789r) && ne.w0.c(this.f11790s, mediaMetadata.f11790s) && ne.w0.c(this.f11791t, mediaMetadata.f11791t) && Arrays.equals(this.f11792u, mediaMetadata.f11792u) && ne.w0.c(this.f11793v, mediaMetadata.f11793v) && ne.w0.c(this.f11794w, mediaMetadata.f11794w) && ne.w0.c(this.f11795x, mediaMetadata.f11795x) && ne.w0.c(this.f11796y, mediaMetadata.f11796y) && ne.w0.c(this.f11797z, mediaMetadata.f11797z) && ne.w0.c(this.A, mediaMetadata.A) && ne.w0.c(this.B, mediaMetadata.B) && ne.w0.c(this.D, mediaMetadata.D) && ne.w0.c(this.E, mediaMetadata.E) && ne.w0.c(this.F, mediaMetadata.F) && ne.w0.c(this.G, mediaMetadata.G) && ne.w0.c(this.H, mediaMetadata.H) && ne.w0.c(this.I, mediaMetadata.I) && ne.w0.c(this.J, mediaMetadata.J) && ne.w0.c(this.K, mediaMetadata.K) && ne.w0.c(this.L, mediaMetadata.L) && ne.w0.c(this.M, mediaMetadata.M) && ne.w0.c(this.N, mediaMetadata.N) && ne.w0.c(this.O, mediaMetadata.O) && ne.w0.c(this.P, mediaMetadata.P) && ne.w0.c(this.Q, mediaMetadata.Q) && ne.w0.c(this.R, mediaMetadata.R)) {
+            if (oe.w0.c(this.f11923d, mediaMetadata.f11923d) && oe.w0.c(this.f11924e, mediaMetadata.f11924e) && oe.w0.c(this.f11925i, mediaMetadata.f11925i) && oe.w0.c(this.f11926o, mediaMetadata.f11926o) && oe.w0.c(this.f11927p, mediaMetadata.f11927p) && oe.w0.c(this.f11928q, mediaMetadata.f11928q) && oe.w0.c(this.f11929r, mediaMetadata.f11929r) && oe.w0.c(this.f11930s, mediaMetadata.f11930s) && oe.w0.c(this.f11931t, mediaMetadata.f11931t) && Arrays.equals(this.f11932u, mediaMetadata.f11932u) && oe.w0.c(this.f11933v, mediaMetadata.f11933v) && oe.w0.c(this.f11934w, mediaMetadata.f11934w) && oe.w0.c(this.f11935x, mediaMetadata.f11935x) && oe.w0.c(this.f11936y, mediaMetadata.f11936y) && oe.w0.c(this.f11937z, mediaMetadata.f11937z) && oe.w0.c(this.A, mediaMetadata.A) && oe.w0.c(this.B, mediaMetadata.B) && oe.w0.c(this.D, mediaMetadata.D) && oe.w0.c(this.E, mediaMetadata.E) && oe.w0.c(this.F, mediaMetadata.F) && oe.w0.c(this.G, mediaMetadata.G) && oe.w0.c(this.H, mediaMetadata.H) && oe.w0.c(this.I, mediaMetadata.I) && oe.w0.c(this.J, mediaMetadata.J) && oe.w0.c(this.K, mediaMetadata.K) && oe.w0.c(this.L, mediaMetadata.L) && oe.w0.c(this.M, mediaMetadata.M) && oe.w0.c(this.N, mediaMetadata.N) && oe.w0.c(this.O, mediaMetadata.O) && oe.w0.c(this.P, mediaMetadata.P) && oe.w0.c(this.Q, mediaMetadata.Q) && oe.w0.c(this.R, mediaMetadata.R)) {
                 return true;
             }
         }
@@ -799,12 +799,12 @@ public final class MediaMetadata implements g {
     }
 
     public int hashCode() {
-        return mi.j.b(this.f11783d, this.f11784e, this.f11785i, this.f11786o, this.f11787p, this.f11788q, this.f11789r, this.f11790s, this.f11791t, Integer.valueOf(Arrays.hashCode(this.f11792u)), this.f11793v, this.f11794w, this.f11795x, this.f11796y, this.f11797z, this.A, this.B, this.D, this.E, this.F, this.G, this.H, this.I, this.J, this.K, this.L, this.M, this.N, this.O, this.P, this.Q, this.R);
+        return ni.j.b(this.f11923d, this.f11924e, this.f11925i, this.f11926o, this.f11927p, this.f11928q, this.f11929r, this.f11930s, this.f11931t, Integer.valueOf(Arrays.hashCode(this.f11932u)), this.f11933v, this.f11934w, this.f11935x, this.f11936y, this.f11937z, this.A, this.B, this.D, this.E, this.F, this.G, this.H, this.I, this.J, this.K, this.L, this.M, this.N, this.O, this.P, this.Q, this.R);
     }
 
     private MediaMetadata(b bVar) {
-        Boolean bool = bVar.f11813p;
-        Integer num = bVar.f11812o;
+        Boolean bool = bVar.f11953p;
+        Integer num = bVar.f11952o;
         Integer num2 = bVar.F;
         if (bool != null) {
             if (!bool.booleanValue()) {
@@ -819,33 +819,33 @@ public final class MediaMetadata implements g {
                 num2 = Integer.valueOf(e(num.intValue()));
             }
         }
-        this.f11783d = bVar.f11798a;
-        this.f11784e = bVar.f11799b;
-        this.f11785i = bVar.f11800c;
-        this.f11786o = bVar.f11801d;
-        this.f11787p = bVar.f11802e;
-        this.f11788q = bVar.f11803f;
-        this.f11789r = bVar.f11804g;
-        this.f11790s = bVar.f11805h;
-        this.f11791t = bVar.f11806i;
-        this.f11792u = bVar.f11807j;
-        this.f11793v = bVar.f11808k;
-        this.f11794w = bVar.f11809l;
-        this.f11795x = bVar.f11810m;
-        this.f11796y = bVar.f11811n;
-        this.f11797z = num;
+        this.f11923d = bVar.f11938a;
+        this.f11924e = bVar.f11939b;
+        this.f11925i = bVar.f11940c;
+        this.f11926o = bVar.f11941d;
+        this.f11927p = bVar.f11942e;
+        this.f11928q = bVar.f11943f;
+        this.f11929r = bVar.f11944g;
+        this.f11930s = bVar.f11945h;
+        this.f11931t = bVar.f11946i;
+        this.f11932u = bVar.f11947j;
+        this.f11933v = bVar.f11948k;
+        this.f11934w = bVar.f11949l;
+        this.f11935x = bVar.f11950m;
+        this.f11936y = bVar.f11951n;
+        this.f11937z = num;
         this.A = bool;
-        this.B = bVar.f11814q;
-        this.C = bVar.f11815r;
-        this.D = bVar.f11815r;
-        this.E = bVar.f11816s;
-        this.F = bVar.f11817t;
-        this.G = bVar.f11818u;
-        this.H = bVar.f11819v;
-        this.I = bVar.f11820w;
-        this.J = bVar.f11821x;
-        this.K = bVar.f11822y;
-        this.L = bVar.f11823z;
+        this.B = bVar.f11954q;
+        this.C = bVar.f11955r;
+        this.D = bVar.f11955r;
+        this.E = bVar.f11956s;
+        this.F = bVar.f11957t;
+        this.G = bVar.f11958u;
+        this.H = bVar.f11959v;
+        this.I = bVar.f11960w;
+        this.J = bVar.f11961x;
+        this.K = bVar.f11962y;
+        this.L = bVar.f11963z;
         this.M = bVar.A;
         this.N = bVar.B;
         this.O = bVar.C;

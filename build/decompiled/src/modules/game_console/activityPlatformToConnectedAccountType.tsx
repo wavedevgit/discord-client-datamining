@@ -27,28 +27,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_console/activityPlatformToConnectedAccountType.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun70192: for (var _fun70192_ip = 0;;) switch (_fun70192_ip) {
+        _fun70057: for (var _fun70057_ip = 0;;) switch (_fun70057_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot0;
                 var1 = var1.PS4;
                 if (!(var1 !== var2)) {
-                    _fun70192_ip = 64;
-                    continue _fun70192
+                    _fun70057_ip = 64;
+                    continue _fun70057
                 }
             case 20:
                 var1 = _closure1_slot0;
                 var1 = var1.PS5;
                 if (!(var1 !== var2)) {
-                    _fun70192_ip = 64;
-                    continue _fun70192
+                    _fun70057_ip = 64;
+                    continue _fun70057
                 }
             case 34:
                 var1 = _closure1_slot0;
                 var1 = var1.XBOX;
                 if (!(var1 !== var2)) {
-                    _fun70192_ip = 52;
-                    continue _fun70192
+                    _fun70057_ip = 52;
+                    continue _fun70057
                 }
             case 48:
                 var1 = undefined;

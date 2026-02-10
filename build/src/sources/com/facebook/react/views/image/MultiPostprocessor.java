@@ -5,7 +5,7 @@ import com.facebook.cache.common.CacheKey;
 import com.facebook.common.references.CloseableReference;
 import com.facebook.imagepipeline.bitmaps.PlatformBitmapFactory;
 import com.facebook.imagepipeline.request.Postprocessor;
-import i8.e;
+import j8.e;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

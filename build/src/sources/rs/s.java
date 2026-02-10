@@ -1,377 +1,190 @@
 package rs;
 
+import kotlin.Result;
+import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Ref;
-import kotlinx.coroutines.Job;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CancellableContinuation;
+import kotlinx.coroutines.CoroutineScope;
+import ps.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract /* synthetic */ class s {
+public abstract class s {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements Flow {
+    public static final class a extends kotlin.coroutines.jvm.internal.d {
 
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow f49405d;
+        /* renamed from: d */
+        Object f49304d;
 
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function3 f49406e;
+        /* renamed from: e */
+        Object f49305e;
 
-        /* renamed from: rs.s$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0639a extends kotlin.coroutines.jvm.internal.d {
+        /* renamed from: i */
+        /* synthetic */ Object f49306i;
 
-            /* renamed from: d  reason: collision with root package name */
-            /* synthetic */ Object f49407d;
+        /* renamed from: o */
+        int f49307o;
 
-            /* renamed from: e  reason: collision with root package name */
-            int f49408e;
-
-            /* renamed from: o  reason: collision with root package name */
-            Object f49410o;
-
-            /* renamed from: p  reason: collision with root package name */
-            Object f49411p;
-
-            public C0639a(Continuation continuation) {
-                super(continuation);
-            }
-
-            @Override // kotlin.coroutines.jvm.internal.a
-            public final Object invokeSuspend(Object obj) {
-                this.f49407d = obj;
-                this.f49408e |= Integer.MIN_VALUE;
-                return a.this.collect(null, this);
-            }
-        }
-
-        public a(Flow flow, Function3 function3) {
-            this.f49405d = flow;
-            this.f49406e = function3;
-        }
-
-        /* JADX WARN: Code restructure failed: missing block: B:23:0x006c, code lost:
-            if (r6 == r1) goto L21;
-         */
-        /* JADX WARN: Removed duplicated region for block: B:10:0x0024  */
-        /* JADX WARN: Removed duplicated region for block: B:16:0x0040  */
-        /* JADX WARN: Removed duplicated region for block: B:22:0x0057  */
-        @Override // kotlinx.coroutines.flow.Flow
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public java.lang.Object collect(kotlinx.coroutines.flow.FlowCollector r6, kotlin.coroutines.Continuation r7) {
-            /*
-                r5 = this;
-                boolean r0 = r7 instanceof rs.s.a.C0639a
-                if (r0 == 0) goto L13
-                r0 = r7
-                rs.s$a$a r0 = (rs.s.a.C0639a) r0
-                int r1 = r0.f49408e
-                r2 = -2147483648(0xffffffff80000000, float:-0.0)
-                r3 = r1 & r2
-                if (r3 == 0) goto L13
-                int r1 = r1 - r2
-                r0.f49408e = r1
-                goto L18
-            L13:
-                rs.s$a$a r0 = new rs.s$a$a
-                r0.<init>(r7)
-            L18:
-                java.lang.Object r7 = r0.f49407d
-                java.lang.Object r1 = wr.b.f()
-                int r2 = r0.f49408e
-                r3 = 2
-                r4 = 1
-                if (r2 == 0) goto L40
-                if (r2 == r4) goto L34
-                if (r2 != r3) goto L2c
-                kotlin.c.b(r7)
-                goto L6f
-            L2c:
-                java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
-                java.lang.String r7 = "call to 'resume' before 'invoke' with coroutine"
-                r6.<init>(r7)
-                throw r6
-            L34:
-                java.lang.Object r6 = r0.f49411p
-                kotlinx.coroutines.flow.FlowCollector r6 = (kotlinx.coroutines.flow.FlowCollector) r6
-                java.lang.Object r2 = r0.f49410o
-                rs.s$a r2 = (rs.s.a) r2
-                kotlin.c.b(r7)
-                goto L53
-            L40:
-                kotlin.c.b(r7)
-                kotlinx.coroutines.flow.Flow r7 = r5.f49405d
-                r0.f49410o = r5
-                r0.f49411p = r6
-                r0.f49408e = r4
-                java.lang.Object r7 = rs.g.g(r7, r6, r0)
-                if (r7 != r1) goto L52
-                goto L6e
-            L52:
-                r2 = r5
-            L53:
-                java.lang.Throwable r7 = (java.lang.Throwable) r7
-                if (r7 == 0) goto L6f
-                kotlin.jvm.functions.Function3 r2 = r2.f49406e
-                r4 = 0
-                r0.f49410o = r4
-                r0.f49411p = r4
-                r0.f49408e = r3
-                r3 = 6
-                kotlin.jvm.internal.InlineMarker.mark(r3)
-                java.lang.Object r6 = r2.invoke(r6, r7, r0)
-                r7 = 7
-                kotlin.jvm.internal.InlineMarker.mark(r7)
-                if (r6 != r1) goto L6f
-            L6e:
-                return r1
-            L6f:
-                kotlin.Unit r6 = kotlin.Unit.f32056a
-                return r6
-            */
-            throw new UnsupportedOperationException("Method not decompiled: rs.s.a.collect(kotlinx.coroutines.flow.FlowCollector, kotlin.coroutines.Continuation):java.lang.Object");
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b extends kotlin.coroutines.jvm.internal.d {
-
-        /* renamed from: d  reason: collision with root package name */
-        Object f49412d;
-
-        /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f49413e;
-
-        /* renamed from: i  reason: collision with root package name */
-        int f49414i;
-
-        b(Continuation continuation) {
+        a(Continuation continuation) {
             super(continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f49413e = obj;
-            this.f49414i |= Integer.MIN_VALUE;
-            return g.g(null, null, this);
+            this.f49306i = obj;
+            this.f49307o |= Integer.MIN_VALUE;
+            return s.a(null, null, this);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class c implements FlowCollector {
+    public static final class b implements Function1 {
 
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ FlowCollector f49415d;
+        /* renamed from: d */
+        final /* synthetic */ CancellableContinuation f49308d;
 
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f49416e;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class a extends kotlin.coroutines.jvm.internal.d {
-
-            /* renamed from: d  reason: collision with root package name */
-            Object f49417d;
-
-            /* renamed from: e  reason: collision with root package name */
-            /* synthetic */ Object f49418e;
-
-            /* renamed from: o  reason: collision with root package name */
-            int f49420o;
-
-            a(Continuation continuation) {
-                super(continuation);
-            }
-
-            @Override // kotlin.coroutines.jvm.internal.a
-            public final Object invokeSuspend(Object obj) {
-                this.f49418e = obj;
-                this.f49420o |= Integer.MIN_VALUE;
-                return c.this.emit(null, this);
-            }
+        b(CancellableContinuation cancellableContinuation) {
+            this.f49308d = cancellableContinuation;
         }
 
-        c(FlowCollector flowCollector, Ref.ObjectRef objectRef) {
-            this.f49415d = flowCollector;
-            this.f49416e = objectRef;
+        public final void a(Throwable th2) {
+            CancellableContinuation cancellableContinuation = this.f49308d;
+            Result.a aVar = Result.f31762e;
+            cancellableContinuation.resumeWith(Result.b(Unit.f31765a));
         }
 
-        /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-        /* JADX WARN: Removed duplicated region for block: B:18:0x0037  */
-        /* JADX WARN: Type inference failed for: r6v2, types: [java.lang.Throwable] */
-        /* JADX WARN: Type inference failed for: r6v4, types: [java.lang.Throwable, T] */
-        /* JADX WARN: Type inference failed for: r6v6, types: [java.lang.Throwable] */
-        @Override // kotlinx.coroutines.flow.FlowCollector
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object emit(java.lang.Object r5, kotlin.coroutines.Continuation r6) {
-            /*
-                r4 = this;
-                boolean r0 = r6 instanceof rs.s.c.a
-                if (r0 == 0) goto L13
-                r0 = r6
-                rs.s$c$a r0 = (rs.s.c.a) r0
-                int r1 = r0.f49420o
-                r2 = -2147483648(0xffffffff80000000, float:-0.0)
-                r3 = r1 & r2
-                if (r3 == 0) goto L13
-                int r1 = r1 - r2
-                r0.f49420o = r1
-                goto L18
-            L13:
-                rs.s$c$a r0 = new rs.s$c$a
-                r0.<init>(r6)
-            L18:
-                java.lang.Object r6 = r0.f49418e
-                java.lang.Object r1 = wr.b.f()
-                int r2 = r0.f49420o
-                r3 = 1
-                if (r2 == 0) goto L37
-                if (r2 != r3) goto L2f
-                java.lang.Object r5 = r0.f49417d
-                rs.s$c r5 = (rs.s.c) r5
-                kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L2d
-                goto L47
-            L2d:
-                r6 = move-exception
-                goto L4c
-            L2f:
-                java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
-                java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
-                r5.<init>(r6)
-                throw r5
-            L37:
-                kotlin.c.b(r6)
-                kotlinx.coroutines.flow.FlowCollector r6 = r4.f49415d     // Catch: java.lang.Throwable -> L4a
-                r0.f49417d = r4     // Catch: java.lang.Throwable -> L4a
-                r0.f49420o = r3     // Catch: java.lang.Throwable -> L4a
-                java.lang.Object r5 = r6.emit(r5, r0)     // Catch: java.lang.Throwable -> L4a
-                if (r5 != r1) goto L47
-                return r1
-            L47:
-                kotlin.Unit r5 = kotlin.Unit.f32056a
-                return r5
-            L4a:
-                r6 = move-exception
-                r5 = r4
-            L4c:
-                kotlin.jvm.internal.Ref$ObjectRef r5 = r5.f49416e
-                r5.element = r6
-                throw r6
-            */
-            throw new UnsupportedOperationException("Method not decompiled: rs.s.c.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((Throwable) obj);
+            return Unit.f31765a;
         }
     }
 
-    public static final Flow a(Flow flow, Function3 function3) {
-        return new a(flow, function3);
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-    /* JADX WARN: Removed duplicated region for block: B:18:0x0037  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x0023  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x003c  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public static final java.lang.Object b(kotlinx.coroutines.flow.Flow r4, kotlinx.coroutines.flow.FlowCollector r5, kotlin.coroutines.Continuation r6) {
+    public static final java.lang.Object a(kotlinx.coroutines.channels.ProducerScope r4, kotlin.jvm.functions.Function0 r5, kotlin.coroutines.Continuation r6) {
         /*
-            boolean r0 = r6 instanceof rs.s.b
+            boolean r0 = r6 instanceof rs.s.a
             if (r0 == 0) goto L13
             r0 = r6
-            rs.s$b r0 = (rs.s.b) r0
-            int r1 = r0.f49414i
+            rs.s$a r0 = (rs.s.a) r0
+            int r1 = r0.f49307o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f49414i = r1
+            r0.f49307o = r1
             goto L18
         L13:
-            rs.s$b r0 = new rs.s$b
+            rs.s$a r0 = new rs.s$a
             r0.<init>(r6)
         L18:
-            java.lang.Object r6 = r0.f49413e
-            java.lang.Object r1 = wr.b.f()
-            int r2 = r0.f49414i
+            java.lang.Object r6 = r0.f49306i
+            java.lang.Object r1 = xr.b.f()
+            int r2 = r0.f49307o
             r3 = 1
-            if (r2 == 0) goto L37
-            if (r2 != r3) goto L2f
-            java.lang.Object r4 = r0.f49412d
-            kotlin.jvm.internal.Ref$ObjectRef r4 = (kotlin.jvm.internal.Ref.ObjectRef) r4
-            kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L2d
-            goto L4f
-        L2d:
-            r5 = move-exception
-            goto L53
-        L2f:
+            if (r2 == 0) goto L3c
+            if (r2 != r3) goto L34
+            java.lang.Object r4 = r0.f49305e
+            r5 = r4
+            kotlin.jvm.functions.Function0 r5 = (kotlin.jvm.functions.Function0) r5
+            java.lang.Object r4 = r0.f49304d
+            kotlinx.coroutines.channels.ProducerScope r4 = (kotlinx.coroutines.channels.ProducerScope) r4
+            kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L32
+            goto L75
+        L32:
+            r4 = move-exception
+            goto L7b
+        L34:
             java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
             java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
             r4.<init>(r5)
             throw r4
-        L37:
+        L3c:
             kotlin.c.b(r6)
-            kotlin.jvm.internal.Ref$ObjectRef r6 = new kotlin.jvm.internal.Ref$ObjectRef
-            r6.<init>()
-            rs.s$c r2 = new rs.s$c     // Catch: java.lang.Throwable -> L51
-            r2.<init>(r5, r6)     // Catch: java.lang.Throwable -> L51
-            r0.f49412d = r6     // Catch: java.lang.Throwable -> L51
-            r0.f49414i = r3     // Catch: java.lang.Throwable -> L51
-            java.lang.Object r4 = r4.collect(r2, r0)     // Catch: java.lang.Throwable -> L51
-            if (r4 != r1) goto L4f
-            return r1
-        L4f:
-            r4 = 0
-            return r4
-        L51:
-            r5 = move-exception
-            r4 = r6
-        L53:
-            T r4 = r4.element
-            java.lang.Throwable r4 = (java.lang.Throwable) r4
-            boolean r6 = d(r5, r4)
-            if (r6 != 0) goto L76
             kotlin.coroutines.CoroutineContext r6 = r0.getContext()
-            boolean r6 = c(r5, r6)
-            if (r6 != 0) goto L76
-            if (r4 != 0) goto L6a
-            return r5
-        L6a:
-            boolean r6 = r5 instanceof java.util.concurrent.CancellationException
-            if (r6 == 0) goto L72
-            qr.e.a(r4, r5)
-            throw r4
+            kotlinx.coroutines.Job$b r2 = kotlinx.coroutines.Job.f34774h
+            kotlin.coroutines.CoroutineContext$Element r6 = r6.m(r2)
+            if (r6 != r4) goto L7f
+            r0.f49304d = r4     // Catch: java.lang.Throwable -> L32
+            r0.f49305e = r5     // Catch: java.lang.Throwable -> L32
+            r0.f49307o = r3     // Catch: java.lang.Throwable -> L32
+            kotlinx.coroutines.e r6 = new kotlinx.coroutines.e     // Catch: java.lang.Throwable -> L32
+            kotlin.coroutines.Continuation r2 = xr.b.c(r0)     // Catch: java.lang.Throwable -> L32
+            r6.<init>(r2, r3)     // Catch: java.lang.Throwable -> L32
+            r6.H()     // Catch: java.lang.Throwable -> L32
+            rs.s$b r2 = new rs.s$b     // Catch: java.lang.Throwable -> L32
+            r2.<init>(r6)     // Catch: java.lang.Throwable -> L32
+            r4.d(r2)     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r4 = r6.B()     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r6 = xr.b.f()     // Catch: java.lang.Throwable -> L32
+            if (r4 != r6) goto L72
+            kotlin.coroutines.jvm.internal.g.c(r0)     // Catch: java.lang.Throwable -> L32
         L72:
-            qr.e.a(r5, r4)
-            throw r5
-        L76:
-            throw r5
+            if (r4 != r1) goto L75
+            return r1
+        L75:
+            r5.invoke()
+            kotlin.Unit r4 = kotlin.Unit.f31765a
+            return r4
+        L7b:
+            r5.invoke()
+            throw r4
+        L7f:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r5 = "awaitClose() can only be invoked from the producer context"
+            r4.<init>(r5)
+            throw r4
         */
-        throw new UnsupportedOperationException("Method not decompiled: rs.s.b(kotlinx.coroutines.flow.Flow, kotlinx.coroutines.flow.FlowCollector, kotlin.coroutines.Continuation):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: rs.s.a(kotlinx.coroutines.channels.ProducerScope, kotlin.jvm.functions.Function0, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
-    private static final boolean c(Throwable th2, CoroutineContext coroutineContext) {
-        Job job = (Job) coroutineContext.m(Job.f35065h);
-        if (job != null && job.isCancelled()) {
-            return d(th2, job.C());
-        }
-        return false;
+    public static final v b(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, Function2 function2) {
+        return c(coroutineScope, coroutineContext, i10, rs.a.f49232d, c0.f44496d, null, function2);
     }
 
-    private static final boolean d(Throwable th2, Throwable th3) {
-        if (th3 != null && Intrinsics.areEqual(th3, th2)) {
-            return true;
+    public static final v c(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, rs.a aVar, c0 c0Var, Function1 function1, Function2 function2) {
+        t tVar = new t(ps.x.k(coroutineScope, coroutineContext), j.b(i10, aVar, null, 4, null));
+        if (function1 != null) {
+            tVar.Q(function1);
         }
-        return false;
+        tVar.X0(c0Var, tVar, function2);
+        return tVar;
+    }
+
+    public static /* synthetic */ v d(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, Function2 function2, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f31839d;
+        }
+        if ((i11 & 2) != 0) {
+            i10 = 0;
+        }
+        return b(coroutineScope, coroutineContext, i10, function2);
+    }
+
+    public static /* synthetic */ v e(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, rs.a aVar, c0 c0Var, Function1 function1, Function2 function2, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f31839d;
+        }
+        if ((i11 & 2) != 0) {
+            i10 = 0;
+        }
+        if ((i11 & 4) != 0) {
+            aVar = rs.a.f49232d;
+        }
+        if ((i11 & 8) != 0) {
+            c0Var = c0.f44496d;
+        }
+        if ((i11 & 16) != 0) {
+            function1 = null;
+        }
+        Function1 function12 = function1;
+        return c(coroutineScope, coroutineContext, i10, aVar, c0Var, function12, function2);
     }
 }

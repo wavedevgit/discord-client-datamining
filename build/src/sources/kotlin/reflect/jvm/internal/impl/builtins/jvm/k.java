@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaClass
 public class k implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaClassDescriptor f32341d;
+    private final LazyJavaClassDescriptor f32050d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ClassDescriptor f32342e;
+    private final ClassDescriptor f32051e;
 
     public k(LazyJavaClassDescriptor lazyJavaClassDescriptor, ClassDescriptor classDescriptor) {
-        this.f32341d = lazyJavaClassDescriptor;
-        this.f32342e = classDescriptor;
+        this.f32050d = lazyJavaClassDescriptor;
+        this.f32051e = classDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ClassDescriptor p10;
-        p10 = JvmBuiltInsCustomizer.p(this.f32341d, this.f32342e);
+        p10 = JvmBuiltInsCustomizer.p(this.f32050d, this.f32051e);
         return p10;
     }
 }

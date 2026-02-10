@@ -52,7 +52,7 @@ public abstract class MessageAttachmentAccessory extends MessageAccessory {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getUploadItemProps$lambda$0(Function2 function2, UploadContext uploadContext) {
         function2.invoke(uploadContext.getUploaderId(), uploadContext.getUploadItemId());
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @NotNull
@@ -83,7 +83,7 @@ public abstract class MessageAttachmentAccessory extends MessageAccessory {
         Float attachmentsOpacity = getAttachmentsOpacity();
         if (uploaderId != null && uploaderItemId != null && progress != null && attachmentsOpacity != null) {
             final UploadContext uploadContext = new UploadContext(uploaderId, uploaderItemId);
-            return new UploadItemProps(progress.intValue(), uploadContext, attachmentsOpacity.floatValue(), new Function0() { // from class: x6.a
+            return new UploadItemProps(progress.intValue(), uploadContext, attachmentsOpacity.floatValue(), new Function0() { // from class: y6.a
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit uploadItemProps$lambda$0;

@@ -1,168 +1,182 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun68927: for (var _fun68927_ip = 0;;) switch (_fun68927_ip) {
-        case 0:
-            var4 = require;
-            var2 = exports;
-            var5 = dependencyMap;
-            var8 = global;
-            var7 = var8.Object;
-            var6 = var7.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var2, var0, var3);
-            var0 = 0;
-            var3 = var5[var0];
-            var0 = undefined;
-            var3 = var4.bind(var0)(var3);
-            var6 = var3.NativeEventEmitter;
-            var3 = var3.Platform;
-            var7 = 1;
-            var9 = var5[var7];
-            var9 = var4.bind(var0)(var9);
-            var9 = var9.default;
-            if (var9) {
-                _fun68927_ip = 134;
-                continue _fun68927
-            }
-        case 88:
-            var11 = var8.Proxy;
-            var10 = {};
-            var8 = function() {
-                var0 = global;
-                var2 = var0.Error;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = {
+        'UNKNOWN': 0,
+        'OPENING': 1,
+        'OPEN': 2,
+        'CLOSING': 3,
+        'CLOSED': 4
+    };
+    var _closure1_slot2 = var2;
+    var3 = {};
+    var4 = 'function pnpm_compatTs1(e){const{state,KeyboardState}=this.__closure;state.set(e.height>0?KeyboardState.OPENING:KeyboardState.CLOSING);}';
+    var3.code = var4;
+    var _closure1_slot3 = var3;
+    var3 = {};
+    var4 = 'function pnpm_compatTs2(e){const{height}=this.__closure;height.set(e.height);}';
+    var3.code = var4;
+    var _closure1_slot4 = var3;
+    var3 = {};
+    var4 = 'function pnpm_compatTs3(e){const{height}=this.__closure;height.set(e.height);}';
+    var3.code = var4;
+    var _closure1_slot5 = var3;
+    var3 = {};
+    var4 = 'function pnpm_compatTs4(e){const{state,KeyboardState,height}=this.__closure;state.set(e.height>0?KeyboardState.OPEN:KeyboardState.CLOSED);height.set(e.height);}';
+    var3.code = var4;
+    var _closure1_slot6 = var3;
+    var1.KeyboardState = var2;
+    var0 = function() {
+        var5 = _closure1_slot0;
+        var7 = _closure1_slot1;
+        var1 = 0;
+        var2 = var7[var1];
+        var4 = undefined;
+        var3 = var5.bind(var4)(var2);
+        var2 = var3.useSharedValue;
+        var2 = var2.bind(var3)(var1);
+        var _closure2_slot0 = var2;
+        var1 = var7[var1];
+        var9 = var5.bind(var4)(var1);
+        var3 = var9.useSharedValue;
+        var8 = _closure1_slot2;
+        var1 = var8.UNKNOWN;
+        var1 = var3.bind(var9)(var1);
+        var _closure2_slot1 = var1;
+        var3 = 1;
+        var3 = var7[var3];
+        var5 = var5.bind(var4)(var3);
+        var4 = var5.useKeyboardHandler;
+        var3 = {};
+        var7 = function arg0() {
+            _fun68897: for (var _fun68897_ip = 0;;) switch (_fun68897_ip) {
+                case 0:
+                    var2 = _closure2_slot1;
+                    var1 = var2.set;
+                    var0 = arg0;
+                    var3 = var0.height;
+                    var0 = 0;
+                    if (!(!(var3 > var0))) {
+                        _fun68897_ip = 41;
+                        continue _fun68897
                     }
-                });
-                var3 = "The package 'react-native-keyboard-controller' doesn't seem to be linked. Make sure: \n\n- You rebuilt the app after installing the package\n- You are not using Expo Go\n";
-                var4 = var1;
-                var0 = new var4[var2](var3, var2);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-            };
-            var10.get = var8;
-            var8 = var11.prototype;
-            var9 = Object.create(var8, {
-                constructor: {
-                    value: var11
-                }
-            });
-            var14 = {};
-            var15 = var9;
-            var13 = var10;
-            var8 = new var15[var11](var14, var13, var12);
-            var9 = var8 instanceof Object ? var8 : var9;
-            _fun68927_ip = 148;
-            continue _fun68927;
-        case 134:
-            var7 = var5[var7];
-            var7 = var4.bind(var0)(var7);
-            var9 = var7.default;
-        case 148:
-            var7 = 'KeyboardController::';
-            var _closure1_slot0 = var7;
-            var7 = var6.prototype;
-            var7 = Object.create(var7, {
-                constructor: {
-                    value: var6
-                }
-            });
-            var15 = var7;
-            var14 = var9;
-            var6 = new var15[var6](var14, var13);
-            var6 = var6 instanceof Object ? var6 : var7;
-            var _closure1_slot1 = var6;
-            var8 = {};
-            var6 = function arg0, arg1() {
-                var3 = _closure1_slot1;
-                var2 = var3.addListener;
-                var1 = _closure1_slot0;
-                var0 = arg0;
-                var1 = var1 + var0;
-                var0 = arg1;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-            };
-            var8.addListener = var6;
-            var7 = {};
-            var6 = function arg0, arg1() {
-                var3 = _closure1_slot1;
-                var2 = var3.addListener;
-                var1 = _closure1_slot0;
-                var0 = arg0;
-                var1 = var1 + var0;
-                var0 = arg1;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-            };
-            var7.addListener = var6;
-            var6 = {};
-            var10 = function arg0, arg1() {
-                var3 = _closure1_slot1;
-                var2 = var3.addListener;
-                var1 = _closure1_slot0;
-                var0 = arg0;
-                var1 = var1 + var0;
-                var0 = arg1;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-            };
-            var6.addListener = var10;
-            var10 = var3.Version;
-            var3 = 30;
-            if (!(!(var10 >= var3))) {
-                _fun68927_ip = 249;
-                continue _fun68927
+                case 26:
+                    var0 = _closure1_slot2;
+                    var0 = var0.CLOSING;
+                    _fun68897_ip = 54;
+                    continue _fun68897;
+                case 41:
+                    var3 = _closure1_slot2;
+                    var0 = var3.OPENING;
+                case 54:
+                    var0 = var1.bind(var2)(var0);
+                    var0 = undefined;
+                    return var0;
             }
-        case 240:
-            var3 = function(arg0) { // Environment: var1
-                var0 = arg0;
-                var0 = var0.children;
-                return var0;
-            };
-            _fun68927_ip = 266;
-            continue _fun68927;
-        case 249:
-            var10 = 2;
-            var10 = var5[var10];
-            var10 = var4.bind(var0)(var10);
-            var3 = var10.default;
-        case 266:
-            var2.KeyboardControllerNative = var9;
-            var2.KeyboardEvents = var8;
-            var2.FocusedInputEvents = var7;
-            var2.WindowDimensionsEvents = var6;
-            var6 = 3;
-            var7 = var5[var6];
-            var7 = var4.bind(var0)(var7);
-            var7 = var7.default;
-            var2.KeyboardControllerView = var7;
-            var6 = var5[var6];
-            var6 = var4.bind(var0)(var6);
-            var6 = var6.Commands;
-            var2.KeyboardControllerViewCommands = var6;
-            var2.KeyboardGestureArea = var3;
-            var3 = 4;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var3 = var3.default;
-            var2.RCTOverKeyboardView = var3;
-            var3 = 5;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var3 = var3.default;
-            var2.KeyboardBackgroundView = var3;
-            var1 = function(arg0) { // Environment: var1
-                var0 = arg0;
-                var0 = var0.children;
-                return var0;
-            };
-            var2.RCTKeyboardExtender = var1;
+        };
+        var9 = {};
+        var9.state = var1;
+        var9.KeyboardState = var8;
+        var7.__closure = var9;
+        var9 = 14565322463725.0;
+        var7.__workletHash = var9;
+        var9 = _closure1_slot3;
+        var7.__initData = var9;
+        var3.onStart = var7;
+        var7 = function arg0() {
+            var2 = _closure2_slot0;
+            var1 = var2.set;
+            var0 = arg0;
+            var0 = var0.height;
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
             return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 8589, 8590, 8591, 8592, 8593]);
+        };
+        var9 = {};
+        var9.height = var2;
+        var7.__closure = var9;
+        var9 = 10176723030164.0;
+        var7.__workletHash = var9;
+        var9 = _closure1_slot4;
+        var7.__initData = var9;
+        var3.onMove = var7;
+        var7 = function arg0() {
+            var2 = _closure2_slot0;
+            var1 = var2.set;
+            var0 = arg0;
+            var0 = var0.height;
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var9 = {};
+        var9.height = var2;
+        var7.__closure = var9;
+        var9 = 5410731249621.0;
+        var7.__workletHash = var9;
+        var9 = _closure1_slot5;
+        var7.__initData = var9;
+        var3.onInteractive = var7;
+        var0 = function arg0() {
+            _fun68900: for (var _fun68900_ip = 0;;) switch (_fun68900_ip) {
+                case 0:
+                    var0 = arg0;
+                    var4 = _closure2_slot1;
+                    var3 = var4.set;
+                    var5 = var0.height;
+                    var2 = 0;
+                    if (!(!(var5 > var2))) {
+                        _fun68900_ip = 41;
+                        continue _fun68900
+                    }
+                case 26:
+                    var2 = _closure1_slot2;
+                    var2 = var2.CLOSED;
+                    _fun68900_ip = 54;
+                    continue _fun68900;
+                case 41:
+                    var5 = _closure1_slot2;
+                    var2 = var5.OPEN;
+                case 54:
+                    var2 = var3.bind(var4)(var2);
+                    var2 = _closure2_slot0;
+                    var1 = var2.set;
+                    var0 = var0.height;
+                    var0 = var1.bind(var2)(var0);
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var7 = {};
+        var7.state = var1;
+        var7.KeyboardState = var8;
+        var7.height = var2;
+        var0.__closure = var7;
+        var7 = 1401367954247.0;
+        var0.__workletHash = var7;
+        var6 = _closure1_slot6;
+        var0.__initData = var6;
+        var3.onEnd = var0;
+        var0 = new Array(0);
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = {};
+        var0.height = var2;
+        var0.state = var1;
+        return var0;
+    };
+    var1.useAnimatedKeyboard = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3722, 8578]);

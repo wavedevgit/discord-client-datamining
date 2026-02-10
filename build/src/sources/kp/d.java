@@ -1,25 +1,13 @@
 package kp;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements br.d {
+public abstract class d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class a {
+    /* renamed from: a  reason: collision with root package name */
+    public static int f34929a = 2131887101;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final d f35208a = new d();
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static int f34930b = 2131887102;
 
-    public static d a() {
-        return a.f35208a;
-    }
-
-    public static c c() {
-        return new c();
-    }
-
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public c get() {
-        return c();
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f34931c = 2131887103;
 }

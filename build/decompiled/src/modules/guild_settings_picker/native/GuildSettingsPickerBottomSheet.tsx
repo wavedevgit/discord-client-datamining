@@ -40,9 +40,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var8 = {};
     var9 = 16;
-    var8.paddingVertical = var9;
-    var1.container = var8;
-    var8 = {};
     var8.paddingHorizontal = var9;
     var1.content = var8;
     var1 = var6.bind(var7)(var1);
@@ -216,4 +213,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var1;
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 12622, 4933, 5261, 3942, 9352, 12627, 3279, 4875, 44, 8224, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 12609, 4933, 5261, 3942, 9330, 12614, 3279, 4875, 44, 8199, 2]);

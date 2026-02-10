@@ -15,11 +15,11 @@ public abstract class NativeImageCropPickerSpec extends ReactContextBaseJavaModu
     }
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void clean(Promise promise);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void cleanSingle(String str, Promise promise);
 
     @Override // com.facebook.react.bridge.NativeModule
@@ -28,14 +28,14 @@ public abstract class NativeImageCropPickerSpec extends ReactContextBaseJavaModu
     }
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void openCamera(ReadableMap readableMap, Promise promise);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void openCropper(ReadableMap readableMap, Promise promise);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void openPicker(ReadableMap readableMap, Promise promise);
 }

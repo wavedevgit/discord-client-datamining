@@ -2,29 +2,42 @@ package xf;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class n implements Parcelable.Creator {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void c(m mVar, Parcel parcel, int i10) {
-        hf.c.b(parcel, hf.c.a(parcel));
+public class n extends jf.a {
+    @NonNull
+    public static final Parcelable.Creator<n> CREATOR = new w1();
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f54954d;
+
+    public n(String str) {
+        this.f54954d = (String) hf.q.l(str);
     }
 
-    @Override // android.os.Parcelable.Creator
-    /* renamed from: a */
-    public m createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            hf.b.l(r10);
-            hf.b.z(parcel, r10);
+    public String b() {
+        return this.f54954d;
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof n)) {
+            return false;
         }
-        hf.b.k(parcel, A);
-        return new m();
+        return this.f54954d.equals(((n) obj).f54954d);
     }
 
-    @Override // android.os.Parcelable.Creator
-    /* renamed from: b */
-    public m[] newArray(int i10) {
-        return new m[i10];
+    public int hashCode() {
+        return hf.o.b(this.f54954d);
+    }
+
+    public final String toString() {
+        return "FidoAppIdExtension{appid='" + this.f54954d + "'}";
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        int a10 = jf.c.a(parcel);
+        jf.c.s(parcel, 2, b(), false);
+        jf.c.b(parcel, a10);
     }
 }

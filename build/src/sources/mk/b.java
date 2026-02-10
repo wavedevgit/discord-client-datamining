@@ -1,214 +1,311 @@
 package mk;
 
-import hk.k;
-import hk.p;
+import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
+import java.util.Arrays;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final lk.b f37254a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f37255b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f37256c;
+public final class b implements Cloneable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f37257d;
+    private int f37183d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f37258e;
+    private int f37184e;
 
-    /* renamed from: f  reason: collision with root package name */
-    private final int f37259f;
+    /* renamed from: i  reason: collision with root package name */
+    private int f37185i;
 
-    /* renamed from: g  reason: collision with root package name */
-    private final int f37260g;
+    /* renamed from: o  reason: collision with root package name */
+    private int[] f37186o;
 
-    public b(lk.b bVar) {
-        this(bVar, 10, bVar.l() / 2, bVar.i() / 2);
+    public b(int i10) {
+        this(i10, i10);
     }
 
-    private p[] a(p pVar, p pVar2, p pVar3, p pVar4) {
-        float c10 = pVar.c();
-        float d10 = pVar.d();
-        float c11 = pVar2.c();
-        float d11 = pVar2.d();
-        float c12 = pVar3.c();
-        float d12 = pVar3.d();
-        float c13 = pVar4.c();
-        float d13 = pVar4.d();
-        if (c10 < this.f37256c / 2.0f) {
-            return new p[]{new p(c13 - 1.0f, d13 + 1.0f), new p(c11 + 1.0f, d11 + 1.0f), new p(c12 - 1.0f, d12 - 1.0f), new p(c10 + 1.0f, d10 - 1.0f)};
-        }
-        return new p[]{new p(c13 + 1.0f, d13 + 1.0f), new p(c11 + 1.0f, d11 - 1.0f), new p(c12 - 1.0f, d12 + 1.0f), new p(c10 - 1.0f, d10 - 1.0f)};
-    }
-
-    private boolean b(int i10, int i11, int i12, boolean z10) {
-        if (z10) {
-            while (i10 <= i11) {
-                if (this.f37254a.e(i10, i12)) {
-                    return true;
+    private String a(String str, String str2, String str3) {
+        String str4;
+        StringBuilder sb2 = new StringBuilder(this.f37184e * (this.f37183d + 1));
+        for (int i10 = 0; i10 < this.f37184e; i10++) {
+            for (int i11 = 0; i11 < this.f37183d; i11++) {
+                if (e(i11, i10)) {
+                    str4 = str;
+                } else {
+                    str4 = str2;
                 }
-                i10++;
+                sb2.append(str4);
             }
-            return false;
+            sb2.append(str3);
         }
-        while (i10 <= i11) {
-            if (this.f37254a.e(i12, i10)) {
-                return true;
-            }
-            i10++;
+        return sb2.toString();
+    }
+
+    /* renamed from: b */
+    public b clone() {
+        return new b(this.f37183d, this.f37184e, this.f37185i, (int[]) this.f37186o.clone());
+    }
+
+    public void c() {
+        int length = this.f37186o.length;
+        for (int i10 = 0; i10 < length; i10++) {
+            int[] iArr = this.f37186o;
+            iArr[i10] = ~iArr[i10];
+        }
+    }
+
+    public void d(int i10, int i11) {
+        int i12 = (i11 * this.f37185i) + (i10 / 32);
+        int[] iArr = this.f37186o;
+        iArr[i12] = (1 << (i10 & 31)) ^ iArr[i12];
+    }
+
+    public boolean e(int i10, int i11) {
+        if (((this.f37186o[(i11 * this.f37185i) + (i10 / 32)] >>> (i10 & 31)) & 1) != 0) {
+            return true;
         }
         return false;
     }
 
-    private p d(float f10, float f11, float f12, float f13) {
-        int c10 = a.c(a.a(f10, f11, f12, f13));
-        float f14 = c10;
-        float f15 = (f12 - f10) / f14;
-        float f16 = (f13 - f11) / f14;
-        for (int i10 = 0; i10 < c10; i10++) {
-            float f17 = i10;
-            int c11 = a.c((f17 * f15) + f10);
-            int c12 = a.c((f17 * f16) + f11);
-            if (this.f37254a.e(c11, c12)) {
-                return new p(c11, c12);
+    public boolean equals(Object obj) {
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        if (this.f37183d != bVar.f37183d || this.f37184e != bVar.f37184e || this.f37185i != bVar.f37185i || !Arrays.equals(this.f37186o, bVar.f37186o)) {
+            return false;
+        }
+        return true;
+    }
+
+    public int[] f() {
+        int length = this.f37186o.length - 1;
+        while (length >= 0 && this.f37186o[length] == 0) {
+            length--;
+        }
+        if (length < 0) {
+            return null;
+        }
+        int i10 = this.f37185i;
+        int i11 = length / i10;
+        int i12 = (length % i10) * 32;
+        int i13 = 31;
+        while ((this.f37186o[length] >>> i13) == 0) {
+            i13--;
+        }
+        return new int[]{i12 + i13, i11};
+    }
+
+    public int[] h() {
+        int i10 = this.f37183d;
+        int i11 = this.f37184e;
+        int i12 = -1;
+        int i13 = -1;
+        for (int i14 = 0; i14 < this.f37184e; i14++) {
+            int i15 = 0;
+            while (true) {
+                int i16 = this.f37185i;
+                if (i15 < i16) {
+                    int i17 = this.f37186o[(i16 * i14) + i15];
+                    if (i17 != 0) {
+                        if (i14 < i11) {
+                            i11 = i14;
+                        }
+                        if (i14 > i13) {
+                            i13 = i14;
+                        }
+                        int i18 = i15 * 32;
+                        if (i18 < i10) {
+                            int i19 = 0;
+                            while ((i17 << (31 - i19)) == 0) {
+                                i19++;
+                            }
+                            int i20 = i19 + i18;
+                            if (i20 < i10) {
+                                i10 = i20;
+                            }
+                        }
+                        if (i18 + 31 > i12) {
+                            int i21 = 31;
+                            while ((i17 >>> i21) == 0) {
+                                i21--;
+                            }
+                            int i22 = i18 + i21;
+                            if (i22 > i12) {
+                                i12 = i22;
+                            }
+                        }
+                    }
+                    i15++;
+                }
             }
+        }
+        if (i12 >= i10 && i13 >= i11) {
+            return new int[]{i10, i11, (i12 - i10) + 1, (i13 - i11) + 1};
         }
         return null;
     }
 
-    public p[] c() {
-        int i10 = this.f37257d;
-        int i11 = this.f37258e;
-        int i12 = this.f37260g;
-        int i13 = this.f37259f;
-        boolean z10 = false;
-        boolean z11 = false;
-        boolean z12 = false;
-        boolean z13 = false;
-        boolean z14 = false;
-        boolean z15 = true;
-        while (z15) {
-            boolean z16 = false;
-            boolean z17 = true;
-            while (true) {
-                if ((z17 || !z11) && i11 < this.f37256c) {
-                    z17 = b(i12, i13, i11, false);
-                    if (z17) {
-                        i11++;
-                        z11 = true;
-                        z16 = true;
-                    } else if (!z11) {
-                        i11++;
-                    }
-                }
-            }
-            if (i11 < this.f37256c) {
-                boolean z18 = true;
-                while (true) {
-                    if ((z18 || !z12) && i13 < this.f37255b) {
-                        z18 = b(i10, i11, i13, true);
-                        if (z18) {
-                            i13++;
-                            z12 = true;
-                            z16 = true;
-                        } else if (!z12) {
-                            i13++;
-                        }
-                    }
-                }
-                if (i13 < this.f37255b) {
-                    boolean z19 = true;
-                    while (true) {
-                        if ((z19 || !z13) && i10 >= 0) {
-                            z19 = b(i12, i13, i10, false);
-                            if (z19) {
-                                i10--;
-                                z13 = true;
-                                z16 = true;
-                            } else if (!z13) {
-                                i10--;
-                            }
-                        }
-                    }
-                    if (i10 >= 0) {
-                        z15 = z16;
-                        boolean z20 = true;
-                        while (true) {
-                            if ((z20 || !z14) && i12 >= 0) {
-                                z20 = b(i10, i11, i12, true);
-                                if (z20) {
-                                    i12--;
-                                    z15 = true;
-                                    z14 = true;
-                                } else if (!z14) {
-                                    i12--;
-                                }
-                            }
-                        }
-                        if (i12 < 0) {
-                        }
-                    }
-                }
-            }
-            z10 = true;
-            break;
-        }
-        if (!z10) {
-            int i14 = i11 - i10;
-            p pVar = null;
-            p pVar2 = null;
-            for (int i15 = 1; pVar2 == null && i15 < i14; i15++) {
-                pVar2 = d(i10, i13 - i15, i10 + i15, i13);
-            }
-            if (pVar2 != null) {
-                p pVar3 = null;
-                for (int i16 = 1; pVar3 == null && i16 < i14; i16++) {
-                    pVar3 = d(i10, i12 + i16, i10 + i16, i12);
-                }
-                if (pVar3 != null) {
-                    p pVar4 = null;
-                    for (int i17 = 1; pVar4 == null && i17 < i14; i17++) {
-                        pVar4 = d(i11, i12 + i17, i11 - i17, i12);
-                    }
-                    if (pVar4 != null) {
-                        for (int i18 = 1; pVar == null && i18 < i14; i18++) {
-                            pVar = d(i11, i13 - i18, i11 - i18, i13);
-                        }
-                        if (pVar != null) {
-                            return a(pVar, pVar2, pVar4, pVar3);
-                        }
-                        throw k.a();
-                    }
-                    throw k.a();
-                }
-                throw k.a();
-            }
-            throw k.a();
-        }
-        throw k.a();
+    public int hashCode() {
+        int i10 = this.f37183d;
+        return (((((((i10 * 31) + i10) * 31) + this.f37184e) * 31) + this.f37185i) * 31) + Arrays.hashCode(this.f37186o);
     }
 
-    public b(lk.b bVar, int i10, int i11, int i12) {
-        this.f37254a = bVar;
-        int i13 = bVar.i();
-        this.f37255b = i13;
-        int l10 = bVar.l();
-        this.f37256c = l10;
-        int i14 = i10 / 2;
-        int i15 = i11 - i14;
-        this.f37257d = i15;
-        int i16 = i11 + i14;
-        this.f37258e = i16;
-        int i17 = i12 - i14;
-        this.f37260g = i17;
-        int i18 = i12 + i14;
-        this.f37259f = i18;
-        if (i17 < 0 || i15 < 0 || i18 >= i13 || i16 >= l10) {
-            throw k.a();
+    public int i() {
+        return this.f37184e;
+    }
+
+    public a j(int i10, a aVar) {
+        if (aVar != null && aVar.l() >= this.f37183d) {
+            aVar.d();
+        } else {
+            aVar = new a(this.f37183d);
         }
+        int i11 = i10 * this.f37185i;
+        for (int i12 = 0; i12 < this.f37185i; i12++) {
+            aVar.t(i12 * 32, this.f37186o[i11 + i12]);
+        }
+        return aVar;
+    }
+
+    public int[] k() {
+        int[] iArr;
+        int i10 = 0;
+        int i11 = 0;
+        while (true) {
+            iArr = this.f37186o;
+            if (i11 >= iArr.length || iArr[i11] != 0) {
+                break;
+            }
+            i11++;
+        }
+        if (i11 == iArr.length) {
+            return null;
+        }
+        int i12 = this.f37185i;
+        int i13 = i11 / i12;
+        int i14 = (i11 % i12) * 32;
+        while ((iArr[i11] << (31 - i10)) == 0) {
+            i10++;
+        }
+        return new int[]{i14 + i10, i13};
+    }
+
+    public int l() {
+        return this.f37183d;
+    }
+
+    public void m(int i10) {
+        int i11 = i10 % 360;
+        if (i11 != 0) {
+            if (i11 != 90) {
+                if (i11 != 180) {
+                    if (i11 == 270) {
+                        o();
+                        n();
+                        return;
+                    }
+                    throw new IllegalArgumentException("degrees must be a multiple of 0, 90, 180, or 270");
+                }
+                n();
+                return;
+            }
+            o();
+        }
+    }
+
+    public void n() {
+        a aVar = new a(this.f37183d);
+        a aVar2 = new a(this.f37183d);
+        int i10 = (this.f37184e + 1) / 2;
+        for (int i11 = 0; i11 < i10; i11++) {
+            aVar = j(i11, aVar);
+            int i12 = (this.f37184e - 1) - i11;
+            aVar2 = j(i12, aVar2);
+            aVar.q();
+            aVar2.q();
+            t(i11, aVar2);
+            t(i12, aVar);
+        }
+    }
+
+    public void o() {
+        int i10 = this.f37184e;
+        int i11 = this.f37183d;
+        int i12 = (i10 + 31) / 32;
+        int[] iArr = new int[i12 * i11];
+        for (int i13 = 0; i13 < this.f37184e; i13++) {
+            for (int i14 = 0; i14 < this.f37183d; i14++) {
+                if (((this.f37186o[(this.f37185i * i13) + (i14 / 32)] >>> (i14 & 31)) & 1) != 0) {
+                    int i15 = (((i11 - 1) - i14) * i12) + (i13 / 32);
+                    iArr[i15] = (1 << (i13 & 31)) | iArr[i15];
+                }
+            }
+        }
+        this.f37183d = i10;
+        this.f37184e = i11;
+        this.f37185i = i12;
+        this.f37186o = iArr;
+    }
+
+    public void q(int i10, int i11) {
+        int i12 = (i11 * this.f37185i) + (i10 / 32);
+        int[] iArr = this.f37186o;
+        iArr[i12] = (1 << (i10 & 31)) | iArr[i12];
+    }
+
+    public void r(int i10, int i11, int i12, int i13) {
+        if (i11 >= 0 && i10 >= 0) {
+            if (i13 >= 1 && i12 >= 1) {
+                int i14 = i12 + i10;
+                int i15 = i13 + i11;
+                if (i15 <= this.f37184e && i14 <= this.f37183d) {
+                    while (i11 < i15) {
+                        int i16 = this.f37185i * i11;
+                        for (int i17 = i10; i17 < i14; i17++) {
+                            int[] iArr = this.f37186o;
+                            int i18 = (i17 / 32) + i16;
+                            iArr[i18] = iArr[i18] | (1 << (i17 & 31));
+                        }
+                        i11++;
+                    }
+                    return;
+                }
+                throw new IllegalArgumentException("The region must fit inside the matrix");
+            }
+            throw new IllegalArgumentException("Height and width must be at least 1");
+        }
+        throw new IllegalArgumentException("Left and top must be nonnegative");
+    }
+
+    public void t(int i10, a aVar) {
+        int[] i11 = aVar.i();
+        int[] iArr = this.f37186o;
+        int i12 = this.f37185i;
+        System.arraycopy(i11, 0, iArr, i10 * i12, i12);
+    }
+
+    public String toString() {
+        return u("X ", "  ");
+    }
+
+    public String u(String str, String str2) {
+        return a(str, str2, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
+    }
+
+    public b(int i10, int i11) {
+        if (i10 >= 1 && i11 >= 1) {
+            this.f37183d = i10;
+            this.f37184e = i11;
+            int i12 = (i10 + 31) / 32;
+            this.f37185i = i12;
+            this.f37186o = new int[i12 * i11];
+            return;
+        }
+        throw new IllegalArgumentException("Both dimensions must be greater than 0");
+    }
+
+    private b(int i10, int i11, int i12, int[] iArr) {
+        this.f37183d = i10;
+        this.f37184e = i11;
+        this.f37185i = i12;
+        this.f37186o = iArr;
     }
 }

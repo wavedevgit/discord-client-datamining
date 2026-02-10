@@ -16,7 +16,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.StringCompanionObject;
 import org.jetbrains.annotations.NotNull;
-import qb.a;
+import rb.a;
 @Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\b\u0001\u0018\u0000 \u001b2\u00020\u0001:\u0001\u001bB/\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u000e\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007\u0012\u0006\u0010\t\u001a\u00020\u0003¢\u0006\u0004\b\n\u0010\u000bJ\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0002J\b\u0010\u0013\u001a\u00020\u0010H\u0002J\u0010\u0010\u0014\u001a\u00020\u00102\u0006\u0010\u0015\u001a\u00020\u0016H\u0016J\b\u0010\u0017\u001a\u00020\u0003H\u0016J\b\u0010\u0018\u001a\u00020\u0019H\u0016J\b\u0010\u001a\u001a\u00020\u0012H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0018\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\fR\u000e\u0010\t\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001c"}, d2 = {"Lcom/facebook/react/fabric/mounting/mountitems/IntBufferBatchMountItem;", "Lcom/facebook/react/fabric/mounting/mountitems/BatchMountItem;", "surfaceId", "", "intBuffer", "", "objBuffer", "", "", "commitNumber", "<init>", "(I[I[Ljava/lang/Object;I)V", "[Ljava/lang/Object;", "intBufferLen", "objBufferLen", "beginMarkers", "", "reason", "", "endMarkers", "execute", "mountingManager", "Lcom/facebook/react/fabric/mounting/MountingManager;", "getSurfaceId", "isBatchEmpty", "", "toString", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class IntBufferBatchMountItem implements BatchMountItem {
@@ -141,12 +141,12 @@ public final class IntBufferBatchMountItem implements BatchMountItem {
         Intrinsics.checkNotNullParameter(mountingManager, "mountingManager");
         SurfaceMountingManager surfaceManager = mountingManager.getSurfaceManager(this.surfaceId);
         if (surfaceManager == null) {
-            p8.a.o(TAG, "Skipping batch of MountItems; no SurfaceMountingManager found for [%d].", Integer.valueOf(this.surfaceId));
+            q8.a.o(TAG, "Skipping batch of MountItems; no SurfaceMountingManager found for [%d].", Integer.valueOf(this.surfaceId));
         } else if (surfaceManager.isStopped()) {
-            p8.a.o(TAG, "Skipping batch of MountItems; was stopped [%d].", Integer.valueOf(this.surfaceId));
+            q8.a.o(TAG, "Skipping batch of MountItems; was stopped [%d].", Integer.valueOf(this.surfaceId));
         } else {
             if (ReactNativeFeatureFlags.enableFabricLogs()) {
-                p8.a.c(TAG, "Executing IntBufferBatchMountItem on surface [%d]", Integer.valueOf(this.surfaceId));
+                q8.a.c(TAG, "Executing IntBufferBatchMountItem on surface [%d]", Integer.valueOf(this.surfaceId));
             }
             beginMarkers("mountViews");
             int i16 = 0;
@@ -353,7 +353,7 @@ public final class IntBufferBatchMountItem implements BatchMountItem {
                                                             sb2.append(format2);
                                                         } else {
                                                             String str3 = TAG;
-                                                            p8.a.m(str3, "String so far: " + ((Object) sb2));
+                                                            q8.a.m(str3, "String so far: " + ((Object) sb2));
                                                             throw new IllegalArgumentException("Invalid type argument to IntBufferBatchMountItem: " + i19 + " at index: " + i15);
                                                         }
                                                     } else {
@@ -452,13 +452,13 @@ public final class IntBufferBatchMountItem implements BatchMountItem {
             Intrinsics.checkNotNullExpressionValue(sb3, "toString(...)");
             return sb3;
         } catch (Exception e10) {
-            p8.a.n(TAG, "Caught exception trying to print", e10);
+            q8.a.n(TAG, "Caught exception trying to print", e10);
             StringBuilder sb4 = new StringBuilder();
             for (int i28 = 0; i28 < this.intBufferLen; i28++) {
                 sb4.append(this.intBuffer[i28]);
                 sb4.append(", ");
             }
-            p8.a.m(TAG, sb4.toString());
+            q8.a.m(TAG, sb4.toString());
             for (int i29 = 0; i29 < this.objBufferLen; i29++) {
                 String str5 = TAG;
                 Object obj2 = this.objBuffer[i29];
@@ -467,7 +467,7 @@ public final class IntBufferBatchMountItem implements BatchMountItem {
                 } else {
                     str = "null";
                 }
-                p8.a.m(str5, str);
+                q8.a.m(str5, str);
             }
             return "";
         }

@@ -10,61 +10,61 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f27890a;
+    private final long f28090a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MediaMuxer f27891b;
+    private final MediaMuxer f28091b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f27892c;
+    private boolean f28092c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f27893d;
+    private int f28093d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f27894e;
+    private int f28094e;
 
     /* renamed from: f  reason: collision with root package name */
-    private long f27895f;
+    private long f28095f;
 
     public b(String path, float f10) {
         Intrinsics.checkNotNullParameter(path, "path");
-        this.f27890a = ((float) TimeUnit.SECONDS.toMicros(1L)) / f10;
-        this.f27891b = new MediaMuxer(path, 0);
+        this.f28090a = ((float) TimeUnit.SECONDS.toMicros(1L)) / f10;
+        this.f28091b = new MediaMuxer(path, 0);
     }
 
     public long a() {
-        if (this.f27894e == 0) {
+        if (this.f28094e == 0) {
             return 0L;
         }
-        return TimeUnit.MILLISECONDS.convert(this.f27895f + this.f27890a, TimeUnit.MICROSECONDS);
+        return TimeUnit.MILLISECONDS.convert(this.f28095f + this.f28090a, TimeUnit.MICROSECONDS);
     }
 
     public boolean b() {
-        return this.f27892c;
+        return this.f28092c;
     }
 
     public void c(ByteBuffer encodedData, MediaCodec.BufferInfo bufferInfo) {
         Intrinsics.checkNotNullParameter(encodedData, "encodedData");
         Intrinsics.checkNotNullParameter(bufferInfo, "bufferInfo");
-        long j10 = this.f27890a;
-        int i10 = this.f27894e;
-        this.f27894e = i10 + 1;
+        long j10 = this.f28090a;
+        int i10 = this.f28094e;
+        this.f28094e = i10 + 1;
         long j11 = j10 * i10;
-        this.f27895f = j11;
+        this.f28095f = j11;
         bufferInfo.presentationTimeUs = j11;
-        this.f27891b.writeSampleData(this.f27893d, encodedData, bufferInfo);
+        this.f28091b.writeSampleData(this.f28093d, encodedData, bufferInfo);
     }
 
     public void d() {
-        this.f27891b.stop();
-        this.f27891b.release();
+        this.f28091b.stop();
+        this.f28091b.release();
     }
 
     public void e(MediaFormat videoFormat) {
         Intrinsics.checkNotNullParameter(videoFormat, "videoFormat");
-        this.f27893d = this.f27891b.addTrack(videoFormat);
-        this.f27891b.start();
-        this.f27892c = true;
+        this.f28093d = this.f28091b.addTrack(videoFormat);
+        this.f28091b.start();
+        this.f28092c = true;
     }
 }

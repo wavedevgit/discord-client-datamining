@@ -10,7 +10,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.os.PersistableBundle;
-import gf.q;
+import hf.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class zzcy extends zzbs {
     private boolean zza;

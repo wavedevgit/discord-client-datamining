@@ -1,30 +1,50 @@
 package qg;
 
-import yi.c;
+import kotlin.jvm.internal.LongCompanionObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class t9 implements yi.d {
+public final class t9 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final t9 f47590a = new t9();
+    private Long f46319a;
 
-    static {
-        c.b a10 = yi.c.a("detectorOptions");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("errorCode");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
+    /* renamed from: b  reason: collision with root package name */
+    private ca f46320b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private Boolean f46321c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private Boolean f46322d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private Boolean f46323e;
+
+    public final t9 a(Boolean bool) {
+        this.f46322d = bool;
+        return this;
     }
 
-    private t9() {
+    public final t9 b(Boolean bool) {
+        this.f46323e = bool;
+        return this;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    public final t9 c(Long l10) {
+        this.f46319a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        return this;
+    }
+
+    public final t9 d(ca caVar) {
+        this.f46320b = caVar;
+        return this;
+    }
+
+    public final t9 e(Boolean bool) {
+        this.f46321c = bool;
+        return this;
+    }
+
+    public final v9 f() {
+        return new v9(this, null);
     }
 }

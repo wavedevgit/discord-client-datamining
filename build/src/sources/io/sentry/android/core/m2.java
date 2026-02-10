@@ -3,52 +3,52 @@ package io.sentry.android.core;
 final class m2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f27329a;
+    private int f27529a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f27330b;
+    private int f27530b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f27331c;
+    private long f27531c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f27332d;
+    private long f27532d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f27333e;
+    private long f27533e;
 
     public void a(long j10, long j11, boolean z10, boolean z11) {
-        this.f27333e += j10;
+        this.f27533e += j10;
         if (z11) {
-            this.f27332d += j11;
-            this.f27330b++;
+            this.f27532d += j11;
+            this.f27530b++;
         } else if (z10) {
-            this.f27331c += j11;
-            this.f27329a++;
+            this.f27531c += j11;
+            this.f27529a++;
         }
     }
 
     public int b() {
-        return this.f27330b;
+        return this.f27530b;
     }
 
     public long c() {
-        return this.f27332d;
+        return this.f27532d;
     }
 
     public int d() {
-        return this.f27329a;
+        return this.f27529a;
     }
 
     public long e() {
-        return this.f27331c;
+        return this.f27531c;
     }
 
     public int f() {
-        return this.f27329a + this.f27330b;
+        return this.f27529a + this.f27530b;
     }
 
     public long g() {
-        return this.f27333e;
+        return this.f27533e;
     }
 }

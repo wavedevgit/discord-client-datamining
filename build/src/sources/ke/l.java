@@ -1,13 +1,18 @@
 package ke;
+
+import com.google.android.exoplayer2.Format;
+import rd.u0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class l {
+public interface l {
+    Format c(int i10);
 
-    /* renamed from: a  reason: collision with root package name */
-    public static int f31643a = 2131558476;
+    int d(int i10);
 
-    /* renamed from: b  reason: collision with root package name */
-    public static int f31644b = 2131558477;
+    int j(int i10);
 
-    /* renamed from: c  reason: collision with root package name */
-    public static int f31645c = 2131558478;
+    u0 l();
+
+    int length();
+
+    int o(Format format);
 }

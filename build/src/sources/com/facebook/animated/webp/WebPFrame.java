@@ -1,13 +1,13 @@
 package com.facebook.animated.webp;
 
 import android.graphics.Bitmap;
-import ga.d;
+import ha.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class WebPFrame implements d {
-    @o8.d
+    @p8.d
     private long mNativeContext;
 
-    @o8.d
+    @p8.d
     WebPFrame(long j10) {
         this.mNativeContext = j10;
     }
@@ -32,17 +32,17 @@ public class WebPFrame implements d {
 
     private native boolean nativeShouldDisposeToBackgroundColor();
 
-    @Override // ga.d
+    @Override // ha.d
     public void a(int i10, int i11, Bitmap bitmap) {
         nativeRenderFrame(i10, i11, bitmap);
     }
 
-    @Override // ga.d
+    @Override // ha.d
     public int b() {
         return nativeGetXOffset();
     }
 
-    @Override // ga.d
+    @Override // ha.d
     public int c() {
         return nativeGetYOffset();
     }
@@ -51,7 +51,7 @@ public class WebPFrame implements d {
         return nativeIsBlendWithPreviousFrame();
     }
 
-    @Override // ga.d
+    @Override // ha.d
     public void dispose() {
         nativeDispose();
     }
@@ -64,12 +64,12 @@ public class WebPFrame implements d {
         nativeFinalize();
     }
 
-    @Override // ga.d
+    @Override // ha.d
     public int getHeight() {
         return nativeGetHeight();
     }
 
-    @Override // ga.d
+    @Override // ha.d
     public int getWidth() {
         return nativeGetWidth();
     }

@@ -1,27 +1,38 @@
 package ya;
 
-import android.os.Trace;
-import kotlin.jvm.internal.Intrinsics;
-import ya.b;
+import android.graphics.Bitmap;
+import com.facebook.cache.common.CacheKey;
+import com.facebook.imagepipeline.nativecode.NativeRoundingFilter;
+import com.facebook.imagepipeline.request.BasePostprocessor;
+import j8.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a implements b.c {
-    @Override // ya.b.c
-    public void a(String name) {
-        Intrinsics.checkNotNullParameter(name, "name");
-        if (isTracing()) {
-            Trace.beginSection(name);
-        }
+public abstract class a extends BasePostprocessor {
+    private static final boolean ENABLE_ANTI_ALIASING = true;
+    private CacheKey mCacheKey;
+    private final boolean mEnableAntiAliasing;
+
+    public a() {
+        this(true);
     }
 
-    @Override // ya.b.c
-    public void b() {
-        if (isTracing()) {
-            Trace.endSection();
+    @Override // com.facebook.imagepipeline.request.BasePostprocessor, com.facebook.imagepipeline.request.Postprocessor
+    public CacheKey getPostprocessorCacheKey() {
+        if (this.mCacheKey == null) {
+            if (this.mEnableAntiAliasing) {
+                this.mCacheKey = new h("RoundAsCirclePostprocessor#AntiAliased");
+            } else {
+                this.mCacheKey = new h("RoundAsCirclePostprocessor");
+            }
         }
+        return this.mCacheKey;
     }
 
-    @Override // ya.b.c
-    public boolean isTracing() {
-        return false;
+    @Override // com.facebook.imagepipeline.request.BasePostprocessor
+    public void process(Bitmap bitmap) {
+        NativeRoundingFilter.toCircleFast(bitmap, this.mEnableAntiAliasing);
+    }
+
+    public a(boolean z10) {
+        this.mEnableAntiAliasing = z10;
     }
 }

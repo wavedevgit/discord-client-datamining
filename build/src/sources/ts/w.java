@@ -1,59 +1,41 @@
 package ts;
 
-import kotlin.coroutines.CoroutineContext;
-import kotlinx.coroutines.CancellableContinuation;
-import kotlinx.coroutines.CoroutineDispatcher;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.TypeIntrinsics;
+import kotlinx.coroutines.flow.FlowCollector;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class w extends CoroutineDispatcher implements kotlinx.coroutines.k {
+public abstract class w {
 
-    /* renamed from: i  reason: collision with root package name */
-    private final /* synthetic */ kotlinx.coroutines.k f50916i;
+    /* renamed from: a  reason: collision with root package name */
+    private static final Function3 f50999a;
 
-    /* renamed from: o  reason: collision with root package name */
-    private final CoroutineDispatcher f50917o;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
 
-    /* renamed from: p  reason: collision with root package name */
-    private final String f50918p;
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f51000d = new a();
 
-    public w(CoroutineDispatcher coroutineDispatcher, String str) {
-        kotlinx.coroutines.k kVar;
-        if (coroutineDispatcher instanceof kotlinx.coroutines.k) {
-            kVar = (kotlinx.coroutines.k) coroutineDispatcher;
-        } else {
-            kVar = null;
+        a() {
+            super(3, FlowCollector.class, "emit", "emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", 0);
         }
-        this.f50916i = kVar == null ? os.f0.a() : kVar;
-        this.f50917o = coroutineDispatcher;
-        this.f50918p = str;
+
+        @Override // kotlin.jvm.functions.Function3
+        /* renamed from: a */
+        public final Object invoke(FlowCollector flowCollector, Object obj, Continuation continuation) {
+            return flowCollector.emit(obj, continuation);
+        }
     }
 
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void D1(CoroutineContext coroutineContext, Runnable runnable) {
-        this.f50917o.D1(coroutineContext, runnable);
+    static {
+        a aVar = a.f51000d;
+        Intrinsics.checkNotNull(aVar, "null cannot be cast to non-null type kotlin.Function3<kotlinx.coroutines.flow.FlowCollector<kotlin.Any?>, kotlin.Any?, kotlin.coroutines.Continuation<kotlin.Unit>, kotlin.Any?>");
+        f50999a = (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(aVar, 3);
     }
 
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void T1(CoroutineContext coroutineContext, Runnable runnable) {
-        this.f50917o.T1(coroutineContext, runnable);
-    }
-
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public boolean V1(CoroutineContext coroutineContext) {
-        return this.f50917o.V1(coroutineContext);
-    }
-
-    @Override // kotlinx.coroutines.k
-    public os.n0 Y(long j10, Runnable runnable, CoroutineContext coroutineContext) {
-        return this.f50916i.Y(j10, runnable, coroutineContext);
-    }
-
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public String toString() {
-        return this.f50918p;
-    }
-
-    @Override // kotlinx.coroutines.k
-    public void y(long j10, CancellableContinuation cancellableContinuation) {
-        this.f50916i.y(j10, cancellableContinuation);
+    public static final /* synthetic */ Function3 a() {
+        return f50999a;
     }
 }

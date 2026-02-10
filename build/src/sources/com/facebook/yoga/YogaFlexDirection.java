@@ -8,13 +8,13 @@ public enum YogaFlexDirection {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f11405d;
+    private final int f11545d;
 
     YogaFlexDirection(int i10) {
-        this.f11405d = i10;
+        this.f11545d = i10;
     }
 
     public int d() {
-        return this.f11405d;
+        return this.f11545d;
     }
 }

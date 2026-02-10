@@ -5,10 +5,7 @@ import com.discord.chat.bridge.structurabletext.AnnotatedStructurableTextSeriali
 import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import ft.m;
-import jt.h;
-import jt.n2;
-import jt.v1;
+import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -16,6 +13,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
+import kt.h;
+import kt.n2;
+import kt.v1;
 import org.jetbrains.annotations.NotNull;
 @m
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\"\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 ?2\u00020\u0001:\u0002>?BW\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u000e¢\u0006\u0004\b\u0010\u0010\u0011Bg\b\u0010\u0012\u0006\u0010\u0012\u001a\u00020\u0005\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\u0004\b\u0010\u0010\u0015J\u0010\u0010&\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b'\u0010\u0017J\t\u0010(\u001a\u00020\u0005HÆ\u0003J\u000b\u0010)\u001a\u0004\u0018\u00010\u0007HÆ\u0003J\t\u0010*\u001a\u00020\u0005HÆ\u0003J\t\u0010+\u001a\u00020\nHÆ\u0003J\u000b\u0010,\u001a\u0004\u0018\u00010\fHÆ\u0003J\u0010\u0010-\u001a\u0004\u0018\u00010\u000eHÆ\u0003¢\u0006\u0002\u0010#J\u0010\u0010.\u001a\u0004\u0018\u00010\u000eHÆ\u0003¢\u0006\u0002\u0010#Jh\u0010/\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u000eHÆ\u0001¢\u0006\u0004\b0\u00101J\u0013\u00102\u001a\u00020\u000e2\b\u00103\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00104\u001a\u00020\u0005HÖ\u0001J\t\u00105\u001a\u00020\u0007HÖ\u0001J%\u00106\u001a\u0002072\u0006\u00108\u001a\u00020\u00002\u0006\u00109\u001a\u00020:2\u0006\u0010;\u001a\u00020<H\u0001¢\u0006\u0002\b=R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0018\u001a\u0004\b\u0016\u0010\u0017R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0011\u0010\b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001aR\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b \u0010!R\u0015\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\n\n\u0002\u0010$\u001a\u0004\b\"\u0010#R\u0015\u0010\u000f\u001a\u0004\u0018\u00010\u000e¢\u0006\n\n\u0002\u0010$\u001a\u0004\b%\u0010#¨\u0006@"}, d2 = {"Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;", "", "userId", "Lcom/discord/primitives/UserId;", "usernameColor", "", "avatarURL", "", "targetUsernameColor", "content", "Lcom/discord/chat/bridge/structurabletext/AnnotatedStructurableText;", "commandNameBackgroundStyles", "Lcom/discord/chat/bridge/executedcommand/ExecutedCommandBackgroundStyles;", "showAppsIcon", "", "showControllerIcon", "<init>", "(JILjava/lang/String;ILcom/discord/chat/bridge/structurabletext/AnnotatedStructurableText;Lcom/discord/chat/bridge/executedcommand/ExecutedCommandBackgroundStyles;Ljava/lang/Boolean;Ljava/lang/Boolean;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/UserId;ILjava/lang/String;ILcom/discord/chat/bridge/structurabletext/AnnotatedStructurableText;Lcom/discord/chat/bridge/executedcommand/ExecutedCommandBackgroundStyles;Ljava/lang/Boolean;Ljava/lang/Boolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getUserId-re6GcUE", "()J", "J", "getUsernameColor", "()I", "getAvatarURL", "()Ljava/lang/String;", "getTargetUsernameColor", "getContent", "()Lcom/discord/chat/bridge/structurabletext/AnnotatedStructurableText;", "getCommandNameBackgroundStyles", "()Lcom/discord/chat/bridge/executedcommand/ExecutedCommandBackgroundStyles;", "getShowAppsIcon", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getShowControllerIcon", "component1", "component1-re6GcUE", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "copy-zf4QoLg", "(JILjava/lang/String;ILcom/discord/chat/bridge/structurabletext/AnnotatedStructurableText;Lcom/discord/chat/bridge/executedcommand/ExecutedCommandBackgroundStyles;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -74,21 +74,21 @@ public final class ExecutedCommand {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(ExecutedCommand executedCommand, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.s(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1135boximpl(executedCommand.userId));
-        compositeEncoder.x(serialDescriptor, 1, executedCommand.usernameColor);
-        if (compositeEncoder.A(serialDescriptor, 2) || executedCommand.avatarURL != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, executedCommand.avatarURL);
+        compositeEncoder.F(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1135boximpl(executedCommand.userId));
+        compositeEncoder.w(serialDescriptor, 1, executedCommand.usernameColor);
+        if (compositeEncoder.z(serialDescriptor, 2) || executedCommand.avatarURL != null) {
+            compositeEncoder.i(serialDescriptor, 2, n2.f35181a, executedCommand.avatarURL);
         }
-        compositeEncoder.x(serialDescriptor, 3, executedCommand.targetUsernameColor);
-        compositeEncoder.s(serialDescriptor, 4, AnnotatedStructurableTextSerializer.INSTANCE, executedCommand.content);
-        if (compositeEncoder.A(serialDescriptor, 5) || executedCommand.commandNameBackgroundStyles != null) {
-            compositeEncoder.l(serialDescriptor, 5, ExecutedCommandBackgroundStyles$$serializer.INSTANCE, executedCommand.commandNameBackgroundStyles);
+        compositeEncoder.w(serialDescriptor, 3, executedCommand.targetUsernameColor);
+        compositeEncoder.F(serialDescriptor, 4, AnnotatedStructurableTextSerializer.INSTANCE, executedCommand.content);
+        if (compositeEncoder.z(serialDescriptor, 5) || executedCommand.commandNameBackgroundStyles != null) {
+            compositeEncoder.i(serialDescriptor, 5, ExecutedCommandBackgroundStyles$$serializer.INSTANCE, executedCommand.commandNameBackgroundStyles);
         }
-        if (compositeEncoder.A(serialDescriptor, 6) || !Intrinsics.areEqual(executedCommand.showAppsIcon, Boolean.FALSE)) {
-            compositeEncoder.l(serialDescriptor, 6, h.f31053a, executedCommand.showAppsIcon);
+        if (compositeEncoder.z(serialDescriptor, 6) || !Intrinsics.areEqual(executedCommand.showAppsIcon, Boolean.FALSE)) {
+            compositeEncoder.i(serialDescriptor, 6, h.f35145a, executedCommand.showAppsIcon);
         }
-        if (compositeEncoder.A(serialDescriptor, 7) || !Intrinsics.areEqual(executedCommand.showControllerIcon, Boolean.FALSE)) {
-            compositeEncoder.l(serialDescriptor, 7, h.f31053a, executedCommand.showControllerIcon);
+        if (compositeEncoder.z(serialDescriptor, 7) || !Intrinsics.areEqual(executedCommand.showControllerIcon, Boolean.FALSE)) {
+            compositeEncoder.i(serialDescriptor, 7, h.f35145a, executedCommand.showControllerIcon);
         }
     }
 

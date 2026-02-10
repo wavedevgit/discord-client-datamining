@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19203a;
+    private final m.b f19343a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19204b;
+    private final com.squareup.moshi.h f19344b;
 
     public ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type", StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19203a = a10;
+        this.f19343a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19204b = f10;
+        this.f19344b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,18 +37,18 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter e
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19203a);
+            int J = reader.J(this.f19343a);
             if (J != -1) {
                 if (J != 0) {
                     if (J == 1) {
-                        str2 = (String) this.f19204b.fromJson(reader);
+                        str2 = (String) this.f19344b.fromJson(reader);
                     }
                 } else {
-                    str = (String) this.f19204b.fromJson(reader);
+                    str = (String) this.f19344b.fromJson(reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -62,9 +62,9 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter e
         if (relationshipData != null) {
             writer.k();
             writer.J("type");
-            this.f19204b.toJson(writer, relationshipData.b());
+            this.f19344b.toJson(writer, relationshipData.b());
             writer.J(StackTraceHelper.ID_KEY);
-            this.f19204b.toJson(writer, relationshipData.a());
+            this.f19344b.toJson(writer, relationshipData.a());
             writer.s();
             return;
         }

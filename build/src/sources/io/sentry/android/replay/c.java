@@ -6,31 +6,31 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f27562a;
+    private final File f27762a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f27563b;
+    private final int f27763b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f27564c;
+    private final long f27764c;
 
     public c(File video, int i10, long j10) {
         Intrinsics.checkNotNullParameter(video, "video");
-        this.f27562a = video;
-        this.f27563b = i10;
-        this.f27564c = j10;
+        this.f27762a = video;
+        this.f27763b = i10;
+        this.f27764c = j10;
     }
 
     public final File a() {
-        return this.f27562a;
+        return this.f27762a;
     }
 
     public final int b() {
-        return this.f27563b;
+        return this.f27763b;
     }
 
     public final long c() {
-        return this.f27564c;
+        return this.f27764c;
     }
 
     public boolean equals(Object obj) {
@@ -39,16 +39,16 @@ public final class c {
         }
         if (obj instanceof c) {
             c cVar = (c) obj;
-            return Intrinsics.areEqual(this.f27562a, cVar.f27562a) && this.f27563b == cVar.f27563b && this.f27564c == cVar.f27564c;
+            return Intrinsics.areEqual(this.f27762a, cVar.f27762a) && this.f27763b == cVar.f27763b && this.f27764c == cVar.f27764c;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f27562a.hashCode() * 31) + Integer.hashCode(this.f27563b)) * 31) + Long.hashCode(this.f27564c);
+        return (((this.f27762a.hashCode() * 31) + Integer.hashCode(this.f27763b)) * 31) + Long.hashCode(this.f27764c);
     }
 
     public String toString() {
-        return "GeneratedVideo(video=" + this.f27562a + ", frameCount=" + this.f27563b + ", duration=" + this.f27564c + ')';
+        return "GeneratedVideo(video=" + this.f27762a + ", frameCount=" + this.f27763b + ", duration=" + this.f27764c + ')';
     }
 }

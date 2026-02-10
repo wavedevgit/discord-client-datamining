@@ -1,84 +1,37 @@
 package l9;
 
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
-import android.util.AttributeSet;
-import com.facebook.drawee.drawable.ScalingUtils$ScaleType;
-import com.facebook.drawee.generic.GenericDraweeHierarchyBuilder;
+import android.graphics.drawable.Animatable;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a {
-    public static Drawable a(Context context, TypedArray typedArray, int i10) {
-        int resourceId = typedArray.getResourceId(i10, 0);
-        if (resourceId == 0) {
-            return null;
-        }
-        return context.getDrawable(resourceId);
+public final class a extends j9.a {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final b f35786d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private long f35787e = -1;
+
+    /* renamed from: i  reason: collision with root package name */
+    private long f35788i = -1;
+
+    public a(b bVar) {
+        this.f35786d = bVar;
     }
 
-    private static com.facebook.drawee.generic.a b(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
-        if (genericDraweeHierarchyBuilder.s() == null) {
-            genericDraweeHierarchyBuilder.K(new com.facebook.drawee.generic.a());
-        }
-        return genericDraweeHierarchyBuilder.s();
-    }
-
-    public static ScalingUtils$ScaleType c(TypedArray typedArray, int i10) {
-        switch (typedArray.getInt(i10, -2)) {
-            case -1:
-                return null;
-            case 0:
-                return ScalingUtils$ScaleType.f9914a;
-            case 1:
-                return ScalingUtils$ScaleType.f9917d;
-            case 2:
-                return ScalingUtils$ScaleType.f9918e;
-            case 3:
-                return ScalingUtils$ScaleType.f9919f;
-            case 4:
-                return ScalingUtils$ScaleType.f9920g;
-            case 5:
-                return ScalingUtils$ScaleType.f9921h;
-            case 6:
-                return ScalingUtils$ScaleType.f9922i;
-            case 7:
-                return ScalingUtils$ScaleType.f9923j;
-            case 8:
-                return ScalingUtils$ScaleType.f9924k;
-            default:
-                throw new RuntimeException("XML attribute not specified!");
+    @Override // j9.a, com.facebook.drawee.controller.ControllerListener
+    public void onFinalImageSet(String id2, Object obj, Animatable animatable) {
+        Intrinsics.checkNotNullParameter(id2, "id");
+        long currentTimeMillis = System.currentTimeMillis();
+        this.f35788i = currentTimeMillis;
+        b bVar = this.f35786d;
+        if (bVar != null) {
+            bVar.a(currentTimeMillis - this.f35787e);
         }
     }
 
-    public static GenericDraweeHierarchyBuilder d(Context context, AttributeSet attributeSet) {
-        if (ya.b.d()) {
-            ya.b.a("GenericDraweeHierarchyBuilder#inflateBuilder");
-        }
-        GenericDraweeHierarchyBuilder e10 = e(new GenericDraweeHierarchyBuilder(context.getResources()), context, attributeSet);
-        if (ya.b.d()) {
-            ya.b.b();
-        }
-        return e10;
-    }
-
-    /* JADX WARN: Code restructure failed: missing block: B:115:0x01c4, code lost:
-        if (r13 != false) goto L121;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:116:0x01c6, code lost:
-        r4 = true;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:131:0x01e4, code lost:
-        if (r15 != false) goto L121;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static com.facebook.drawee.generic.GenericDraweeHierarchyBuilder e(com.facebook.drawee.generic.GenericDraweeHierarchyBuilder r17, android.content.Context r18, android.util.AttributeSet r19) {
-        /*
-            Method dump skipped, instructions count: 569
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: l9.a.e(com.facebook.drawee.generic.GenericDraweeHierarchyBuilder, android.content.Context, android.util.AttributeSet):com.facebook.drawee.generic.GenericDraweeHierarchyBuilder");
+    @Override // j9.a, com.facebook.drawee.controller.ControllerListener
+    public void onSubmit(String id2, Object obj) {
+        Intrinsics.checkNotNullParameter(id2, "id");
+        this.f35787e = System.currentTimeMillis();
     }
 }

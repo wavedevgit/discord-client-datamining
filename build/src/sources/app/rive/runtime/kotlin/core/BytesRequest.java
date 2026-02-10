@@ -1,10 +1,10 @@
 package app.rive.runtime.kotlin.core;
 
-import c6.e;
 import com.android.volley.k;
 import com.android.volley.m;
 import com.android.volley.n;
 import com.android.volley.p;
+import d6.e;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -34,7 +34,7 @@ public final class BytesRequest extends n {
         byte[] bArr;
         if (kVar != null) {
             try {
-                bArr = kVar.f8074b;
+                bArr = kVar.f8214b;
             } catch (Exception e10) {
                 p a10 = p.a(new m(e10));
                 Intrinsics.checkNotNull(a10);

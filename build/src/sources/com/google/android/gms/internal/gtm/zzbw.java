@@ -1,7 +1,7 @@
 package com.google.android.gms.internal.gtm;
 
 import android.content.Context;
-import gf.q;
+import hf.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class zzbw {
     private final Context zza;

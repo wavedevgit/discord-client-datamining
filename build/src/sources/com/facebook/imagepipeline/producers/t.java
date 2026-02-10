@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final t f10821a = new t();
+    public static final t f10961a = new t();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends Exception {
@@ -19,7 +19,7 @@ public final class t {
     private t() {
     }
 
-    public static final la.j a(ImageRequest imageRequest, la.j jVar, la.j jVar2, Map map) {
+    public static final ma.j a(ImageRequest imageRequest, ma.j jVar, ma.j jVar2, Map map) {
         String diskCacheId;
         Intrinsics.checkNotNullParameter(imageRequest, "imageRequest");
         if (imageRequest.getCacheChoice() == ImageRequest.CacheChoice.SMALL) {
@@ -29,7 +29,7 @@ public final class t {
             return jVar2;
         }
         if (imageRequest.getCacheChoice() == ImageRequest.CacheChoice.DYNAMIC && map != null && (diskCacheId = imageRequest.getDiskCacheId()) != null) {
-            return (la.j) map.get(diskCacheId);
+            return (ma.j) map.get(diskCacheId);
         }
         return null;
     }

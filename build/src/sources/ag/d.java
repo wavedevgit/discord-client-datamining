@@ -1,58 +1,29 @@
 package ag;
 
-import android.content.Context;
 import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Looper;
-import com.facebook.react.views.image.ReactImageView;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class d extends gf.g {
-    /* JADX INFO: Access modifiers changed from: protected */
-    public d(Context context, Looper looper, gf.d dVar, ff.d dVar2, ff.k kVar) {
-        super(context, looper, (int) ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS, dVar, dVar2, kVar);
+public final class d extends a implements f {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public d(IBinder iBinder) {
+        super(iBinder, "com.google.android.gms.ads.identifier.internal.IAdvertisingIdService");
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gf.c
-    public final String D() {
-        return "com.google.android.gms.appset.internal.IAppSetService";
+    @Override // ag.f
+    public final String a() {
+        Parcel f10 = f(1, e());
+        String readString = f10.readString();
+        f10.recycle();
+        return readString;
     }
 
-    @Override // gf.c
-    protected final String E() {
-        return "com.google.android.gms.appset.service.START";
-    }
-
-    @Override // gf.c
-    protected final boolean H() {
-        return true;
-    }
-
-    @Override // gf.c
-    public final boolean Q() {
-        return true;
-    }
-
-    @Override // gf.c, ef.a.f
-    public final int n() {
-        return 212800000;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gf.c
-    public final /* synthetic */ IInterface r(IBinder iBinder) {
-        if (iBinder == null) {
-            return null;
-        }
-        IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.appset.internal.IAppSetService");
-        if (queryLocalInterface instanceof g) {
-            return (g) queryLocalInterface;
-        }
-        return new g(iBinder);
-    }
-
-    @Override // gf.c
-    public final com.google.android.gms.common.d[] u() {
-        return te.h.f50647b;
+    @Override // ag.f
+    public final boolean q(boolean z10) {
+        Parcel e10 = e();
+        c.a(e10, true);
+        Parcel f10 = f(2, e10);
+        boolean b10 = c.b(f10);
+        f10.recycle();
+        return b10;
     }
 }

@@ -1,70 +1,136 @@
 package me;
 
-import java.io.File;
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.net.Uri;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c implements Comparable {
-
-    /* renamed from: d  reason: collision with root package name */
-    public final String f37114d;
+public final class c extends f {
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f37115e;
+    private final AssetManager f36965e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private Uri f36966f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private InputStream f36967g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private long f36968h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long f37116i;
+    private boolean f36969i;
 
-    /* renamed from: o  reason: collision with root package name */
-    public final boolean f37117o;
-
-    /* renamed from: p  reason: collision with root package name */
-    public final File f37118p;
-
-    /* renamed from: q  reason: collision with root package name */
-    public final long f37119q;
-
-    public c(String str, long j10, long j11, long j12, File file) {
-        boolean z10;
-        this.f37114d = str;
-        this.f37115e = j10;
-        this.f37116i = j11;
-        if (file != null) {
-            z10 = true;
-        } else {
-            z10 = false;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a extends m {
+        public a(Throwable th2, int i10) {
+            super(th2, i10);
         }
-        this.f37117o = z10;
-        this.f37118p = file;
-        this.f37119q = j12;
     }
 
-    @Override // java.lang.Comparable
-    /* renamed from: a */
-    public int compareTo(c cVar) {
-        if (!this.f37114d.equals(cVar.f37114d)) {
-            return this.f37114d.compareTo(cVar.f37114d);
+    public c(Context context) {
+        super(false);
+        this.f36965e = context.getAssets();
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.DataSource
+    public long b(com.google.android.exoplayer2.upstream.a aVar) {
+        int i10;
+        try {
+            Uri uri = aVar.f13405a;
+            this.f36966f = uri;
+            String str = (String) oe.a.e(uri.getPath());
+            if (str.startsWith("/android_asset/")) {
+                str = str.substring(15);
+            } else if (str.startsWith("/")) {
+                str = str.substring(1);
+            }
+            q(aVar);
+            InputStream open = this.f36965e.open(str, 1);
+            this.f36967g = open;
+            if (open.skip(aVar.f13411g) >= aVar.f13411g) {
+                long j10 = aVar.f13412h;
+                if (j10 != -1) {
+                    this.f36968h = j10;
+                } else {
+                    long available = this.f36967g.available();
+                    this.f36968h = available;
+                    if (available == 2147483647L) {
+                        this.f36968h = -1L;
+                    }
+                }
+                this.f36969i = true;
+                r(aVar);
+                return this.f36968h;
+            }
+            throw new a(null, 2008);
+        } catch (a e10) {
+            throw e10;
+        } catch (IOException e11) {
+            if (e11 instanceof FileNotFoundException) {
+                i10 = 2005;
+            } else {
+                i10 = 2000;
+            }
+            throw new a(e11, i10);
         }
-        int i10 = ((this.f37115e - cVar.f37115e) > 0L ? 1 : ((this.f37115e - cVar.f37115e) == 0L ? 0 : -1));
-        if (i10 == 0) {
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.DataSource
+    public void close() {
+        this.f36966f = null;
+        try {
+            try {
+                InputStream inputStream = this.f36967g;
+                if (inputStream != null) {
+                    inputStream.close();
+                }
+            } catch (IOException e10) {
+                throw new a(e10, 2000);
+            }
+        } finally {
+            this.f36967g = null;
+            if (this.f36969i) {
+                this.f36969i = false;
+                p();
+            }
+        }
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.DataSource
+    public Uri m() {
+        return this.f36966f;
+    }
+
+    @Override // me.j
+    public int read(byte[] bArr, int i10, int i11) {
+        if (i11 == 0) {
             return 0;
         }
-        if (i10 < 0) {
+        long j10 = this.f36968h;
+        if (j10 == 0) {
             return -1;
         }
-        return 1;
-    }
-
-    public boolean d() {
-        return !this.f37117o;
-    }
-
-    public boolean e() {
-        if (this.f37116i == -1) {
-            return true;
+        if (j10 != -1) {
+            try {
+                i11 = (int) Math.min(j10, i11);
+            } catch (IOException e10) {
+                throw new a(e10, 2000);
+            }
         }
-        return false;
-    }
-
-    public String toString() {
-        return "[" + this.f37115e + ", " + this.f37116i + "]";
+        int read = ((InputStream) w0.j(this.f36967g)).read(bArr, i10, i11);
+        if (read == -1) {
+            return -1;
+        }
+        long j11 = this.f36968h;
+        if (j11 != -1) {
+            this.f36968h = j11 - read;
+        }
+        o(read);
+        return read;
     }
 }

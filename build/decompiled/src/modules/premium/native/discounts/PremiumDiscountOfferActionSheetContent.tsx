@@ -50,11 +50,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'gap': 0
     };
     var10 = 4;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.BACKGROUND_BASE_LOW;
-    var9.backgroundColor = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.colors;
+    var10 = var10.BACKGROUND_BASE_LOW;
+    var9.backgroundColor = var10;
     var3.contentContainer = var9;
     var9 = {
         'marginVertical': 6,
@@ -62,13 +62,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'height': 48
     };
     var3.buttonContainer = var9;
-    var9 = {};
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.colors;
-    var10 = var10.TEXT_SUBTLE;
-    var9.color = var10;
-    var3.learnMoreText = var9;
     var9 = {
         'width': '100%',
         'textAlign': 'center'
@@ -289,4 +282,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 10166, 1234, 5419, 4843, 6013, 3942, 14201, 4084, 5800, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 10144, 1234, 5420, 4843, 6014, 3942, 14188, 4084, 5801, 2]);

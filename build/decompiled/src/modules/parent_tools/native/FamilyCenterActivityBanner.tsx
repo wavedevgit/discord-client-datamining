@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun82696: for (var _fun82696_ip = 0;;) switch (_fun82696_ip) {
+        _fun82566: for (var _fun82566_ip = 0;;) switch (_fun82566_ip) {
             case 0:
                 var0 = _closure1_slot7;
                 var4 = undefined;
@@ -32,19 +32,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.bind(var2)();
                 var0 = null;
                 if (var3) {
-                    _fun82696_ip = 173;
-                    continue _fun82696
+                    _fun82566_ip = 173;
+                    continue _fun82566
                 }
             case 87:
                 if (!var6) {
-                    _fun82696_ip = 95;
-                    continue _fun82696
+                    _fun82566_ip = 95;
+                    continue _fun82566
                 }
             case 90:
                 var0 = null;
                 if (var1) {
-                    _fun82696_ip = 173;
-                    continue _fun82696
+                    _fun82566_ip = 173;
+                    continue _fun82566
                 }
             case 95:
                 var3 = _closure1_slot5;
@@ -59,13 +59,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var9[var5];
                 var5 = var8.bind(var4)(var5);
                 if (var6) {
-                    _fun82696_ip = 149;
-                    continue _fun82696
+                    _fun82566_ip = 149;
+                    continue _fun82566
                 }
             case 141:
                 var6 = var5.FamilyCenterTeenQRCodeButton;
-                _fun82696_ip = 155;
-                continue _fun82696;
+                _fun82566_ip = 155;
+                continue _fun82566;
             case 149:
                 var6 = var5.FamilyCenterParentQRCodeButton;
             case 155:
@@ -115,10 +115,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'flexDirection': 'row'
     };
     var6.container = var9;
-    var9 = {};
-    var10 = 16;
-    var9.marginTop = var10;
-    var6.parent = var9;
     var6 = var7.bind(var8)(var6);
     var _closure1_slot7 = var6;
     var3 = var5[var3];
@@ -176,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/native/FamilyCenterActivityBanner.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun82697: for (var _fun82697_ip = 0;;) switch (_fun82697_ip) {
+        _fun82567: for (var _fun82567_ip = 0;;) switch (_fun82567_ip) {
             case 0:
                 var12 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -252,14 +248,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var15 = _closure1_slot2;
                 if (var9) {
-                    _fun82697_ip = 351;
-                    continue _fun82697
+                    _fun82567_ip = 351;
+                    continue _fun82567
                 }
             case 342:
                 var9 = 12;
                 var9 = var15[var9];
-                _fun82697_ip = 358;
-                continue _fun82697;
+                _fun82567_ip = 358;
+                continue _fun82567;
             case 351:
                 var13 = 11;
                 var9 = var15[var13];
@@ -303,8 +299,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[2] = var5;
                 var5 = null;
                 if (var7) {
-                    _fun82697_ip = 537;
-                    continue _fun82697
+                    _fun82567_ip = 537;
+                    continue _fun82567
                 }
             case 521:
                 var8 = _closure1_slot5;
@@ -320,4 +316,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 6576, 6577, 10549, 671, 10558, 1234, 1860, 10574, 10575, 3942, 5384, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 6577, 6578, 10527, 671, 10536, 1234, 1860, 10552, 10553, 3942, 5385, 2]);

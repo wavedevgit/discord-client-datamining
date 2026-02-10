@@ -1,36 +1,33 @@
 package og;
 
-import yi.c;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class l4 implements yi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final l4 f42281a = new l4();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42282b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42283c;
-
-    static {
-        c.b a10 = yi.c.a("detectorOptions");
-        f fVar = new f();
-        fVar.a(1);
-        f42282b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("errorCode");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42283c = a11.b(fVar2.b()).a();
+public final class l4 implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
+        String[] strArr = null;
+        int i10 = 0;
+        while (parcel.dataPosition() < A) {
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
+            if (l10 != 2) {
+                if (l10 != 3) {
+                    jf.b.z(parcel, r10);
+                } else {
+                    strArr = jf.b.g(parcel, r10);
+                }
+            } else {
+                i10 = jf.b.t(parcel, r10);
+            }
+        }
+        jf.b.k(parcel, A);
+        return new m5(i10, strArr);
     }
 
-    private l4() {
-    }
-
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new m5[i10];
     }
 }

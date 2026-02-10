@@ -29,14 +29,14 @@ public abstract class g {
     public static final class c implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final d[] f46397a;
+        private final d[] f45152a;
 
         public c(d[] dVarArr) {
-            this.f46397a = dVarArr;
+            this.f45152a = dVarArr;
         }
 
         public d[] a() {
-            return this.f46397a;
+            return this.f45152a;
         }
     }
 
@@ -44,54 +44,54 @@ public abstract class g {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f46398a;
+        private final String f45153a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f46399b;
+        private final int f45154b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f46400c;
+        private final boolean f45155c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f46401d;
+        private final String f45156d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f46402e;
+        private final int f45157e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final int f46403f;
+        private final int f45158f;
 
         public d(String str, int i10, boolean z10, String str2, int i11, int i12) {
-            this.f46398a = str;
-            this.f46399b = i10;
-            this.f46400c = z10;
-            this.f46401d = str2;
-            this.f46402e = i11;
-            this.f46403f = i12;
+            this.f45153a = str;
+            this.f45154b = i10;
+            this.f45155c = z10;
+            this.f45156d = str2;
+            this.f45157e = i11;
+            this.f45158f = i12;
         }
 
         public String a() {
-            return this.f46398a;
+            return this.f45153a;
         }
 
         public int b() {
-            return this.f46403f;
+            return this.f45158f;
         }
 
         public int c() {
-            return this.f46402e;
+            return this.f45157e;
         }
 
         public String d() {
-            return this.f46401d;
+            return this.f45156d;
         }
 
         public int e() {
-            return this.f46399b;
+            return this.f45154b;
         }
 
         public boolean f() {
-            return this.f46400c;
+            return this.f45155c;
         }
     }
 
@@ -99,38 +99,38 @@ public abstract class g {
     public static final class e implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f46404a;
+        private final List f45159a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f46405b;
+        private final int f45160b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f46406c;
+        private final int f45161c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f46407d;
+        private final String f45162d;
 
         public e(List list, int i10, int i11, String str) {
-            this.f46404a = list;
-            this.f46406c = i10;
-            this.f46405b = i11;
-            this.f46407d = str;
+            this.f45159a = list;
+            this.f45161c = i10;
+            this.f45160b = i11;
+            this.f45162d = str;
         }
 
         public int a() {
-            return this.f46406c;
+            return this.f45161c;
         }
 
         public List b() {
-            return this.f46404a;
+            return this.f45159a;
         }
 
         public String c() {
-            return this.f46407d;
+            return this.f45162d;
         }
 
         public int d() {
-            return this.f46405b;
+            return this.f45160b;
         }
     }
 
@@ -215,15 +215,15 @@ public abstract class g {
     }
 
     private static b f(XmlPullParser xmlPullParser, Resources resources) {
-        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlPullParser), o1.g.f41413h);
-        String string = obtainAttributes.getString(o1.g.f41414i);
-        String string2 = obtainAttributes.getString(o1.g.f41419n);
-        String string3 = obtainAttributes.getString(o1.g.f41420o);
-        String string4 = obtainAttributes.getString(o1.g.f41416k);
-        int resourceId = obtainAttributes.getResourceId(o1.g.f41415j, 0);
-        int integer = obtainAttributes.getInteger(o1.g.f41417l, 1);
-        int integer2 = obtainAttributes.getInteger(o1.g.f41418m, 500);
-        String string5 = obtainAttributes.getString(o1.g.f41421p);
+        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlPullParser), o1.g.f40143h);
+        String string = obtainAttributes.getString(o1.g.f40144i);
+        String string2 = obtainAttributes.getString(o1.g.f40149n);
+        String string3 = obtainAttributes.getString(o1.g.f40150o);
+        String string4 = obtainAttributes.getString(o1.g.f40146k);
+        int resourceId = obtainAttributes.getResourceId(o1.g.f40145j, 0);
+        int integer = obtainAttributes.getInteger(o1.g.f40147l, 1);
+        int integer2 = obtainAttributes.getInteger(o1.g.f40148m, 500);
+        String string5 = obtainAttributes.getString(o1.g.f40151p);
         obtainAttributes.recycle();
         if (string != null && string2 != null) {
             List c10 = c(resources, resourceId);
@@ -272,17 +272,17 @@ public abstract class g {
         int i12;
         int i13;
         int i14;
-        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlPullParser), o1.g.f41422q);
-        if (obtainAttributes.hasValue(o1.g.f41431z)) {
-            i10 = o1.g.f41431z;
+        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlPullParser), o1.g.f40152q);
+        if (obtainAttributes.hasValue(o1.g.f40161z)) {
+            i10 = o1.g.f40161z;
         } else {
-            i10 = o1.g.f41424s;
+            i10 = o1.g.f40154s;
         }
         int i15 = obtainAttributes.getInt(i10, ReactFontManager.TypefaceStyle.NORMAL);
-        if (obtainAttributes.hasValue(o1.g.f41429x)) {
-            i11 = o1.g.f41429x;
+        if (obtainAttributes.hasValue(o1.g.f40159x)) {
+            i11 = o1.g.f40159x;
         } else {
-            i11 = o1.g.f41425t;
+            i11 = o1.g.f40155t;
         }
         if (1 == obtainAttributes.getInt(i11, 0)) {
             z10 = true;
@@ -292,19 +292,19 @@ public abstract class g {
         if (obtainAttributes.hasValue(o1.g.A)) {
             i12 = o1.g.A;
         } else {
-            i12 = o1.g.f41426u;
+            i12 = o1.g.f40156u;
         }
-        if (obtainAttributes.hasValue(o1.g.f41430y)) {
-            i13 = o1.g.f41430y;
+        if (obtainAttributes.hasValue(o1.g.f40160y)) {
+            i13 = o1.g.f40160y;
         } else {
-            i13 = o1.g.f41427v;
+            i13 = o1.g.f40157v;
         }
         String string = obtainAttributes.getString(i13);
         int i16 = obtainAttributes.getInt(i12, 0);
-        if (obtainAttributes.hasValue(o1.g.f41428w)) {
-            i14 = o1.g.f41428w;
+        if (obtainAttributes.hasValue(o1.g.f40158w)) {
+            i14 = o1.g.f40158w;
         } else {
-            i14 = o1.g.f41423r;
+            i14 = o1.g.f40153r;
         }
         int resourceId = obtainAttributes.getResourceId(i14, 0);
         String string2 = obtainAttributes.getString(i14);

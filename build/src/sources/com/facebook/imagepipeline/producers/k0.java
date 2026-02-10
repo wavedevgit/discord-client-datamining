@@ -9,7 +9,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k0 extends j0 {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f10716c = new a(null);
+    public static final a f10856c = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -22,14 +22,14 @@ public final class k0 extends j0 {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public k0(Executor executor, r8.i pooledByteBufferFactory) {
+    public k0(Executor executor, s8.i pooledByteBufferFactory) {
         super(executor, pooledByteBufferFactory);
         Intrinsics.checkNotNullParameter(executor, "executor");
         Intrinsics.checkNotNullParameter(pooledByteBufferFactory, "pooledByteBufferFactory");
     }
 
     @Override // com.facebook.imagepipeline.producers.j0
-    protected sa.k d(ImageRequest imageRequest) {
+    protected ta.k d(ImageRequest imageRequest) {
         Intrinsics.checkNotNullParameter(imageRequest, "imageRequest");
         return e(new FileInputStream(imageRequest.getSourceFile().toString()), (int) imageRequest.getSourceFile().length());
     }

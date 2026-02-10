@@ -13,11 +13,11 @@ public abstract class NativeKeyboardControllerSpec extends ReactContextBaseJavaM
     }
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void addListener(String str);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void dismiss(boolean z10, boolean z11);
 
     @Override // com.facebook.react.bridge.NativeModule
@@ -26,22 +26,22 @@ public abstract class NativeKeyboardControllerSpec extends ReactContextBaseJavaM
     }
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void preload();
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void removeListeners(double d10);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void setDefaultMode();
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void setFocusTo(String str);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void setInputMode(double d10);
 }

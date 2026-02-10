@@ -41,37 +41,37 @@ public final class JvmProtoBuf {
         public static Parser<JvmFieldSignature> PARSER = new a();
 
         /* renamed from: s  reason: collision with root package name */
-        private static final JvmFieldSignature f33778s;
+        private static final JvmFieldSignature f33487s;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33779e;
+        private final ByteString f33488e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33780i;
+        private int f33489i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33781o;
+        private int f33490o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33782p;
+        private int f33491p;
 
         /* renamed from: q  reason: collision with root package name */
-        private byte f33783q;
+        private byte f33492q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33784r;
+        private int f33493r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<JvmFieldSignature, Builder> implements JvmFieldSignatureOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33785e;
+            private int f33494e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33786i;
+            private int f33495i;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33787o;
+            private int f33496o;
 
             private Builder() {
                 d();
@@ -90,17 +90,17 @@ public final class JvmProtoBuf {
 
             public JvmFieldSignature buildPartial() {
                 JvmFieldSignature jvmFieldSignature = new JvmFieldSignature(this);
-                int i10 = this.f33785e;
+                int i10 = this.f33494e;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                jvmFieldSignature.f33781o = this.f33786i;
+                jvmFieldSignature.f33490o = this.f33495i;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                jvmFieldSignature.f33782p = this.f33787o;
-                jvmFieldSignature.f33780i = i11;
+                jvmFieldSignature.f33491p = this.f33496o;
+                jvmFieldSignature.f33489i = i11;
                 return jvmFieldSignature;
             }
 
@@ -110,14 +110,14 @@ public final class JvmProtoBuf {
             }
 
             public Builder setDesc(int i10) {
-                this.f33785e |= 2;
-                this.f33787o = i10;
+                this.f33494e |= 2;
+                this.f33496o = i10;
                 return this;
             }
 
             public Builder setName(int i10) {
-                this.f33785e |= 1;
-                this.f33786i = i10;
+                this.f33494e |= 1;
+                this.f33495i = i10;
                 return this;
             }
 
@@ -151,7 +151,7 @@ public final class JvmProtoBuf {
                 if (jvmFieldSignature.hasDesc()) {
                     setDesc(jvmFieldSignature.getDesc());
                 }
-                setUnknownFields(getUnknownFields().concat(jvmFieldSignature.f33779e));
+                setUnknownFields(getUnknownFields().concat(jvmFieldSignature.f33488e));
                 return this;
             }
 
@@ -207,17 +207,17 @@ public final class JvmProtoBuf {
 
         static {
             JvmFieldSignature jvmFieldSignature = new JvmFieldSignature(true);
-            f33778s = jvmFieldSignature;
+            f33487s = jvmFieldSignature;
             jvmFieldSignature.l();
         }
 
         public static JvmFieldSignature getDefaultInstance() {
-            return f33778s;
+            return f33487s;
         }
 
         private void l() {
-            this.f33781o = 0;
-            this.f33782p = 0;
+            this.f33490o = 0;
+            this.f33491p = 0;
         }
 
         public static Builder newBuilder() {
@@ -225,11 +225,11 @@ public final class JvmProtoBuf {
         }
 
         public int getDesc() {
-            return this.f33782p;
+            return this.f33491p;
         }
 
         public int getName() {
-            return this.f33781o;
+            return this.f33490o;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -240,32 +240,32 @@ public final class JvmProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33784r;
+            int i11 = this.f33493r;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33780i & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33781o);
+            if ((this.f33489i & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33490o);
             } else {
                 i10 = 0;
             }
-            if ((this.f33780i & 2) == 2) {
-                i10 += CodedOutputStream.computeInt32Size(2, this.f33782p);
+            if ((this.f33489i & 2) == 2) {
+                i10 += CodedOutputStream.computeInt32Size(2, this.f33491p);
             }
-            int size = i10 + this.f33779e.size();
-            this.f33784r = size;
+            int size = i10 + this.f33488e.size();
+            this.f33493r = size;
             return size;
         }
 
         public boolean hasDesc() {
-            if ((this.f33780i & 2) == 2) {
+            if ((this.f33489i & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasName() {
-            if ((this.f33780i & 1) == 1) {
+            if ((this.f33489i & 1) == 1) {
                 return true;
             }
             return false;
@@ -273,27 +273,27 @@ public final class JvmProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33783q;
+            byte b10 = this.f33492q;
             if (b10 == 1) {
                 return true;
             }
             if (b10 == 0) {
                 return false;
             }
-            this.f33783q = (byte) 1;
+            this.f33492q = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            if ((this.f33780i & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33781o);
+            if ((this.f33489i & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33490o);
             }
-            if ((this.f33780i & 2) == 2) {
-                codedOutputStream.writeInt32(2, this.f33782p);
+            if ((this.f33489i & 2) == 2) {
+                codedOutputStream.writeInt32(2, this.f33491p);
             }
-            codedOutputStream.writeRawBytes(this.f33779e);
+            codedOutputStream.writeRawBytes(this.f33488e);
         }
 
         public static Builder newBuilder(JvmFieldSignature jvmFieldSignature) {
@@ -302,7 +302,7 @@ public final class JvmProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public JvmFieldSignature getDefaultInstanceForType() {
-            return f33778s;
+            return f33487s;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -317,20 +317,20 @@ public final class JvmProtoBuf {
 
         private JvmFieldSignature(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33783q = (byte) -1;
-            this.f33784r = -1;
-            this.f33779e = builder.getUnknownFields();
+            this.f33492q = (byte) -1;
+            this.f33493r = -1;
+            this.f33488e = builder.getUnknownFields();
         }
 
         private JvmFieldSignature(boolean z10) {
-            this.f33783q = (byte) -1;
-            this.f33784r = -1;
-            this.f33779e = ByteString.EMPTY;
+            this.f33492q = (byte) -1;
+            this.f33493r = -1;
+            this.f33488e = ByteString.EMPTY;
         }
 
         private JvmFieldSignature(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33783q = (byte) -1;
-            this.f33784r = -1;
+            this.f33492q = (byte) -1;
+            this.f33493r = -1;
             l();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -341,14 +341,14 @@ public final class JvmProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 8) {
-                                this.f33780i |= 1;
-                                this.f33781o = codedInputStream.readInt32();
+                                this.f33489i |= 1;
+                                this.f33490o = codedInputStream.readInt32();
                             } else if (readTag != 16) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
                             } else {
-                                this.f33780i |= 2;
-                                this.f33782p = codedInputStream.readInt32();
+                                this.f33489i |= 2;
+                                this.f33491p = codedInputStream.readInt32();
                             }
                         }
                         z10 = true;
@@ -357,10 +357,10 @@ public final class JvmProtoBuf {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33779e = newOutput.toByteString();
+                            this.f33488e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33779e = newOutput.toByteString();
+                        this.f33488e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -374,10 +374,10 @@ public final class JvmProtoBuf {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33779e = newOutput.toByteString();
+                this.f33488e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33779e = newOutput.toByteString();
+            this.f33488e = newOutput.toByteString();
             e();
         }
     }
@@ -391,37 +391,37 @@ public final class JvmProtoBuf {
         public static Parser<JvmMethodSignature> PARSER = new a();
 
         /* renamed from: s  reason: collision with root package name */
-        private static final JvmMethodSignature f33788s;
+        private static final JvmMethodSignature f33497s;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33789e;
+        private final ByteString f33498e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33790i;
+        private int f33499i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33791o;
+        private int f33500o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33792p;
+        private int f33501p;
 
         /* renamed from: q  reason: collision with root package name */
-        private byte f33793q;
+        private byte f33502q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33794r;
+        private int f33503r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<JvmMethodSignature, Builder> implements JvmMethodSignatureOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33795e;
+            private int f33504e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33796i;
+            private int f33505i;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33797o;
+            private int f33506o;
 
             private Builder() {
                 d();
@@ -440,17 +440,17 @@ public final class JvmProtoBuf {
 
             public JvmMethodSignature buildPartial() {
                 JvmMethodSignature jvmMethodSignature = new JvmMethodSignature(this);
-                int i10 = this.f33795e;
+                int i10 = this.f33504e;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                jvmMethodSignature.f33791o = this.f33796i;
+                jvmMethodSignature.f33500o = this.f33505i;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                jvmMethodSignature.f33792p = this.f33797o;
-                jvmMethodSignature.f33790i = i11;
+                jvmMethodSignature.f33501p = this.f33506o;
+                jvmMethodSignature.f33499i = i11;
                 return jvmMethodSignature;
             }
 
@@ -460,14 +460,14 @@ public final class JvmProtoBuf {
             }
 
             public Builder setDesc(int i10) {
-                this.f33795e |= 2;
-                this.f33797o = i10;
+                this.f33504e |= 2;
+                this.f33506o = i10;
                 return this;
             }
 
             public Builder setName(int i10) {
-                this.f33795e |= 1;
-                this.f33796i = i10;
+                this.f33504e |= 1;
+                this.f33505i = i10;
                 return this;
             }
 
@@ -501,7 +501,7 @@ public final class JvmProtoBuf {
                 if (jvmMethodSignature.hasDesc()) {
                     setDesc(jvmMethodSignature.getDesc());
                 }
-                setUnknownFields(getUnknownFields().concat(jvmMethodSignature.f33789e));
+                setUnknownFields(getUnknownFields().concat(jvmMethodSignature.f33498e));
                 return this;
             }
 
@@ -557,17 +557,17 @@ public final class JvmProtoBuf {
 
         static {
             JvmMethodSignature jvmMethodSignature = new JvmMethodSignature(true);
-            f33788s = jvmMethodSignature;
+            f33497s = jvmMethodSignature;
             jvmMethodSignature.l();
         }
 
         public static JvmMethodSignature getDefaultInstance() {
-            return f33788s;
+            return f33497s;
         }
 
         private void l() {
-            this.f33791o = 0;
-            this.f33792p = 0;
+            this.f33500o = 0;
+            this.f33501p = 0;
         }
 
         public static Builder newBuilder() {
@@ -575,11 +575,11 @@ public final class JvmProtoBuf {
         }
 
         public int getDesc() {
-            return this.f33792p;
+            return this.f33501p;
         }
 
         public int getName() {
-            return this.f33791o;
+            return this.f33500o;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -590,32 +590,32 @@ public final class JvmProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33794r;
+            int i11 = this.f33503r;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33790i & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33791o);
+            if ((this.f33499i & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33500o);
             } else {
                 i10 = 0;
             }
-            if ((this.f33790i & 2) == 2) {
-                i10 += CodedOutputStream.computeInt32Size(2, this.f33792p);
+            if ((this.f33499i & 2) == 2) {
+                i10 += CodedOutputStream.computeInt32Size(2, this.f33501p);
             }
-            int size = i10 + this.f33789e.size();
-            this.f33794r = size;
+            int size = i10 + this.f33498e.size();
+            this.f33503r = size;
             return size;
         }
 
         public boolean hasDesc() {
-            if ((this.f33790i & 2) == 2) {
+            if ((this.f33499i & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasName() {
-            if ((this.f33790i & 1) == 1) {
+            if ((this.f33499i & 1) == 1) {
                 return true;
             }
             return false;
@@ -623,27 +623,27 @@ public final class JvmProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33793q;
+            byte b10 = this.f33502q;
             if (b10 == 1) {
                 return true;
             }
             if (b10 == 0) {
                 return false;
             }
-            this.f33793q = (byte) 1;
+            this.f33502q = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            if ((this.f33790i & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33791o);
+            if ((this.f33499i & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33500o);
             }
-            if ((this.f33790i & 2) == 2) {
-                codedOutputStream.writeInt32(2, this.f33792p);
+            if ((this.f33499i & 2) == 2) {
+                codedOutputStream.writeInt32(2, this.f33501p);
             }
-            codedOutputStream.writeRawBytes(this.f33789e);
+            codedOutputStream.writeRawBytes(this.f33498e);
         }
 
         public static Builder newBuilder(JvmMethodSignature jvmMethodSignature) {
@@ -652,7 +652,7 @@ public final class JvmProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public JvmMethodSignature getDefaultInstanceForType() {
-            return f33788s;
+            return f33497s;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -667,20 +667,20 @@ public final class JvmProtoBuf {
 
         private JvmMethodSignature(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33793q = (byte) -1;
-            this.f33794r = -1;
-            this.f33789e = builder.getUnknownFields();
+            this.f33502q = (byte) -1;
+            this.f33503r = -1;
+            this.f33498e = builder.getUnknownFields();
         }
 
         private JvmMethodSignature(boolean z10) {
-            this.f33793q = (byte) -1;
-            this.f33794r = -1;
-            this.f33789e = ByteString.EMPTY;
+            this.f33502q = (byte) -1;
+            this.f33503r = -1;
+            this.f33498e = ByteString.EMPTY;
         }
 
         private JvmMethodSignature(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33793q = (byte) -1;
-            this.f33794r = -1;
+            this.f33502q = (byte) -1;
+            this.f33503r = -1;
             l();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -691,14 +691,14 @@ public final class JvmProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 8) {
-                                this.f33790i |= 1;
-                                this.f33791o = codedInputStream.readInt32();
+                                this.f33499i |= 1;
+                                this.f33500o = codedInputStream.readInt32();
                             } else if (readTag != 16) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
                             } else {
-                                this.f33790i |= 2;
-                                this.f33792p = codedInputStream.readInt32();
+                                this.f33499i |= 2;
+                                this.f33501p = codedInputStream.readInt32();
                             }
                         }
                         z10 = true;
@@ -707,10 +707,10 @@ public final class JvmProtoBuf {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33789e = newOutput.toByteString();
+                            this.f33498e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33789e = newOutput.toByteString();
+                        this.f33498e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -724,10 +724,10 @@ public final class JvmProtoBuf {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33789e = newOutput.toByteString();
+                this.f33498e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33789e = newOutput.toByteString();
+            this.f33498e = newOutput.toByteString();
             e();
         }
     }
@@ -741,55 +741,55 @@ public final class JvmProtoBuf {
         public static Parser<JvmPropertySignature> PARSER = new a();
 
         /* renamed from: v  reason: collision with root package name */
-        private static final JvmPropertySignature f33798v;
+        private static final JvmPropertySignature f33507v;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33799e;
+        private final ByteString f33508e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33800i;
+        private int f33509i;
 
         /* renamed from: o  reason: collision with root package name */
-        private JvmFieldSignature f33801o;
+        private JvmFieldSignature f33510o;
 
         /* renamed from: p  reason: collision with root package name */
-        private JvmMethodSignature f33802p;
+        private JvmMethodSignature f33511p;
 
         /* renamed from: q  reason: collision with root package name */
-        private JvmMethodSignature f33803q;
+        private JvmMethodSignature f33512q;
 
         /* renamed from: r  reason: collision with root package name */
-        private JvmMethodSignature f33804r;
+        private JvmMethodSignature f33513r;
 
         /* renamed from: s  reason: collision with root package name */
-        private JvmMethodSignature f33805s;
+        private JvmMethodSignature f33514s;
 
         /* renamed from: t  reason: collision with root package name */
-        private byte f33806t;
+        private byte f33515t;
 
         /* renamed from: u  reason: collision with root package name */
-        private int f33807u;
+        private int f33516u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<JvmPropertySignature, Builder> implements JvmPropertySignatureOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33808e;
+            private int f33517e;
 
             /* renamed from: i  reason: collision with root package name */
-            private JvmFieldSignature f33809i = JvmFieldSignature.getDefaultInstance();
+            private JvmFieldSignature f33518i = JvmFieldSignature.getDefaultInstance();
 
             /* renamed from: o  reason: collision with root package name */
-            private JvmMethodSignature f33810o = JvmMethodSignature.getDefaultInstance();
+            private JvmMethodSignature f33519o = JvmMethodSignature.getDefaultInstance();
 
             /* renamed from: p  reason: collision with root package name */
-            private JvmMethodSignature f33811p = JvmMethodSignature.getDefaultInstance();
+            private JvmMethodSignature f33520p = JvmMethodSignature.getDefaultInstance();
 
             /* renamed from: q  reason: collision with root package name */
-            private JvmMethodSignature f33812q = JvmMethodSignature.getDefaultInstance();
+            private JvmMethodSignature f33521q = JvmMethodSignature.getDefaultInstance();
 
             /* renamed from: r  reason: collision with root package name */
-            private JvmMethodSignature f33813r = JvmMethodSignature.getDefaultInstance();
+            private JvmMethodSignature f33522r = JvmMethodSignature.getDefaultInstance();
 
             private Builder() {
                 d();
@@ -808,29 +808,29 @@ public final class JvmProtoBuf {
 
             public JvmPropertySignature buildPartial() {
                 JvmPropertySignature jvmPropertySignature = new JvmPropertySignature(this);
-                int i10 = this.f33808e;
+                int i10 = this.f33517e;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                jvmPropertySignature.f33801o = this.f33809i;
+                jvmPropertySignature.f33510o = this.f33518i;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                jvmPropertySignature.f33802p = this.f33810o;
+                jvmPropertySignature.f33511p = this.f33519o;
                 if ((i10 & 4) == 4) {
                     i11 |= 4;
                 }
-                jvmPropertySignature.f33803q = this.f33811p;
+                jvmPropertySignature.f33512q = this.f33520p;
                 if ((i10 & 8) == 8) {
                     i11 |= 8;
                 }
-                jvmPropertySignature.f33804r = this.f33812q;
+                jvmPropertySignature.f33513r = this.f33521q;
                 if ((i10 & 16) == 16) {
                     i11 |= 16;
                 }
-                jvmPropertySignature.f33805s = this.f33813r;
-                jvmPropertySignature.f33800i = i11;
+                jvmPropertySignature.f33514s = this.f33522r;
+                jvmPropertySignature.f33509i = i11;
                 return jvmPropertySignature;
             }
 
@@ -840,52 +840,52 @@ public final class JvmProtoBuf {
             }
 
             public Builder mergeDelegateMethod(JvmMethodSignature jvmMethodSignature) {
-                if ((this.f33808e & 16) == 16 && this.f33813r != JvmMethodSignature.getDefaultInstance()) {
-                    this.f33813r = JvmMethodSignature.newBuilder(this.f33813r).mergeFrom(jvmMethodSignature).buildPartial();
+                if ((this.f33517e & 16) == 16 && this.f33522r != JvmMethodSignature.getDefaultInstance()) {
+                    this.f33522r = JvmMethodSignature.newBuilder(this.f33522r).mergeFrom(jvmMethodSignature).buildPartial();
                 } else {
-                    this.f33813r = jvmMethodSignature;
+                    this.f33522r = jvmMethodSignature;
                 }
-                this.f33808e |= 16;
+                this.f33517e |= 16;
                 return this;
             }
 
             public Builder mergeField(JvmFieldSignature jvmFieldSignature) {
-                if ((this.f33808e & 1) == 1 && this.f33809i != JvmFieldSignature.getDefaultInstance()) {
-                    this.f33809i = JvmFieldSignature.newBuilder(this.f33809i).mergeFrom(jvmFieldSignature).buildPartial();
+                if ((this.f33517e & 1) == 1 && this.f33518i != JvmFieldSignature.getDefaultInstance()) {
+                    this.f33518i = JvmFieldSignature.newBuilder(this.f33518i).mergeFrom(jvmFieldSignature).buildPartial();
                 } else {
-                    this.f33809i = jvmFieldSignature;
+                    this.f33518i = jvmFieldSignature;
                 }
-                this.f33808e |= 1;
+                this.f33517e |= 1;
                 return this;
             }
 
             public Builder mergeGetter(JvmMethodSignature jvmMethodSignature) {
-                if ((this.f33808e & 4) == 4 && this.f33811p != JvmMethodSignature.getDefaultInstance()) {
-                    this.f33811p = JvmMethodSignature.newBuilder(this.f33811p).mergeFrom(jvmMethodSignature).buildPartial();
+                if ((this.f33517e & 4) == 4 && this.f33520p != JvmMethodSignature.getDefaultInstance()) {
+                    this.f33520p = JvmMethodSignature.newBuilder(this.f33520p).mergeFrom(jvmMethodSignature).buildPartial();
                 } else {
-                    this.f33811p = jvmMethodSignature;
+                    this.f33520p = jvmMethodSignature;
                 }
-                this.f33808e |= 4;
+                this.f33517e |= 4;
                 return this;
             }
 
             public Builder mergeSetter(JvmMethodSignature jvmMethodSignature) {
-                if ((this.f33808e & 8) == 8 && this.f33812q != JvmMethodSignature.getDefaultInstance()) {
-                    this.f33812q = JvmMethodSignature.newBuilder(this.f33812q).mergeFrom(jvmMethodSignature).buildPartial();
+                if ((this.f33517e & 8) == 8 && this.f33521q != JvmMethodSignature.getDefaultInstance()) {
+                    this.f33521q = JvmMethodSignature.newBuilder(this.f33521q).mergeFrom(jvmMethodSignature).buildPartial();
                 } else {
-                    this.f33812q = jvmMethodSignature;
+                    this.f33521q = jvmMethodSignature;
                 }
-                this.f33808e |= 8;
+                this.f33517e |= 8;
                 return this;
             }
 
             public Builder mergeSyntheticMethod(JvmMethodSignature jvmMethodSignature) {
-                if ((this.f33808e & 2) == 2 && this.f33810o != JvmMethodSignature.getDefaultInstance()) {
-                    this.f33810o = JvmMethodSignature.newBuilder(this.f33810o).mergeFrom(jvmMethodSignature).buildPartial();
+                if ((this.f33517e & 2) == 2 && this.f33519o != JvmMethodSignature.getDefaultInstance()) {
+                    this.f33519o = JvmMethodSignature.newBuilder(this.f33519o).mergeFrom(jvmMethodSignature).buildPartial();
                 } else {
-                    this.f33810o = jvmMethodSignature;
+                    this.f33519o = jvmMethodSignature;
                 }
-                this.f33808e |= 2;
+                this.f33517e |= 2;
                 return this;
             }
 
@@ -928,7 +928,7 @@ public final class JvmProtoBuf {
                 if (jvmPropertySignature.hasDelegateMethod()) {
                     mergeDelegateMethod(jvmPropertySignature.getDelegateMethod());
                 }
-                setUnknownFields(getUnknownFields().concat(jvmPropertySignature.f33799e));
+                setUnknownFields(getUnknownFields().concat(jvmPropertySignature.f33508e));
                 return this;
             }
 
@@ -984,12 +984,12 @@ public final class JvmProtoBuf {
 
         static {
             JvmPropertySignature jvmPropertySignature = new JvmPropertySignature(true);
-            f33798v = jvmPropertySignature;
+            f33507v = jvmPropertySignature;
             jvmPropertySignature.o();
         }
 
         public static JvmPropertySignature getDefaultInstance() {
-            return f33798v;
+            return f33507v;
         }
 
         public static Builder newBuilder() {
@@ -997,23 +997,23 @@ public final class JvmProtoBuf {
         }
 
         private void o() {
-            this.f33801o = JvmFieldSignature.getDefaultInstance();
-            this.f33802p = JvmMethodSignature.getDefaultInstance();
-            this.f33803q = JvmMethodSignature.getDefaultInstance();
-            this.f33804r = JvmMethodSignature.getDefaultInstance();
-            this.f33805s = JvmMethodSignature.getDefaultInstance();
+            this.f33510o = JvmFieldSignature.getDefaultInstance();
+            this.f33511p = JvmMethodSignature.getDefaultInstance();
+            this.f33512q = JvmMethodSignature.getDefaultInstance();
+            this.f33513r = JvmMethodSignature.getDefaultInstance();
+            this.f33514s = JvmMethodSignature.getDefaultInstance();
         }
 
         public JvmMethodSignature getDelegateMethod() {
-            return this.f33805s;
+            return this.f33514s;
         }
 
         public JvmFieldSignature getField() {
-            return this.f33801o;
+            return this.f33510o;
         }
 
         public JvmMethodSignature getGetter() {
-            return this.f33803q;
+            return this.f33512q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -1024,70 +1024,70 @@ public final class JvmProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33807u;
+            int i11 = this.f33516u;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33800i & 1) == 1) {
-                i10 = CodedOutputStream.computeMessageSize(1, this.f33801o);
+            if ((this.f33509i & 1) == 1) {
+                i10 = CodedOutputStream.computeMessageSize(1, this.f33510o);
             } else {
                 i10 = 0;
             }
-            if ((this.f33800i & 2) == 2) {
-                i10 += CodedOutputStream.computeMessageSize(2, this.f33802p);
+            if ((this.f33509i & 2) == 2) {
+                i10 += CodedOutputStream.computeMessageSize(2, this.f33511p);
             }
-            if ((this.f33800i & 4) == 4) {
-                i10 += CodedOutputStream.computeMessageSize(3, this.f33803q);
+            if ((this.f33509i & 4) == 4) {
+                i10 += CodedOutputStream.computeMessageSize(3, this.f33512q);
             }
-            if ((this.f33800i & 8) == 8) {
-                i10 += CodedOutputStream.computeMessageSize(4, this.f33804r);
+            if ((this.f33509i & 8) == 8) {
+                i10 += CodedOutputStream.computeMessageSize(4, this.f33513r);
             }
-            if ((this.f33800i & 16) == 16) {
-                i10 += CodedOutputStream.computeMessageSize(5, this.f33805s);
+            if ((this.f33509i & 16) == 16) {
+                i10 += CodedOutputStream.computeMessageSize(5, this.f33514s);
             }
-            int size = i10 + this.f33799e.size();
-            this.f33807u = size;
+            int size = i10 + this.f33508e.size();
+            this.f33516u = size;
             return size;
         }
 
         public JvmMethodSignature getSetter() {
-            return this.f33804r;
+            return this.f33513r;
         }
 
         public JvmMethodSignature getSyntheticMethod() {
-            return this.f33802p;
+            return this.f33511p;
         }
 
         public boolean hasDelegateMethod() {
-            if ((this.f33800i & 16) == 16) {
+            if ((this.f33509i & 16) == 16) {
                 return true;
             }
             return false;
         }
 
         public boolean hasField() {
-            if ((this.f33800i & 1) == 1) {
+            if ((this.f33509i & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasGetter() {
-            if ((this.f33800i & 4) == 4) {
+            if ((this.f33509i & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasSetter() {
-            if ((this.f33800i & 8) == 8) {
+            if ((this.f33509i & 8) == 8) {
                 return true;
             }
             return false;
         }
 
         public boolean hasSyntheticMethod() {
-            if ((this.f33800i & 2) == 2) {
+            if ((this.f33509i & 2) == 2) {
                 return true;
             }
             return false;
@@ -1095,36 +1095,36 @@ public final class JvmProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33806t;
+            byte b10 = this.f33515t;
             if (b10 == 1) {
                 return true;
             }
             if (b10 == 0) {
                 return false;
             }
-            this.f33806t = (byte) 1;
+            this.f33515t = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            if ((this.f33800i & 1) == 1) {
-                codedOutputStream.writeMessage(1, this.f33801o);
+            if ((this.f33509i & 1) == 1) {
+                codedOutputStream.writeMessage(1, this.f33510o);
             }
-            if ((this.f33800i & 2) == 2) {
-                codedOutputStream.writeMessage(2, this.f33802p);
+            if ((this.f33509i & 2) == 2) {
+                codedOutputStream.writeMessage(2, this.f33511p);
             }
-            if ((this.f33800i & 4) == 4) {
-                codedOutputStream.writeMessage(3, this.f33803q);
+            if ((this.f33509i & 4) == 4) {
+                codedOutputStream.writeMessage(3, this.f33512q);
             }
-            if ((this.f33800i & 8) == 8) {
-                codedOutputStream.writeMessage(4, this.f33804r);
+            if ((this.f33509i & 8) == 8) {
+                codedOutputStream.writeMessage(4, this.f33513r);
             }
-            if ((this.f33800i & 16) == 16) {
-                codedOutputStream.writeMessage(5, this.f33805s);
+            if ((this.f33509i & 16) == 16) {
+                codedOutputStream.writeMessage(5, this.f33514s);
             }
-            codedOutputStream.writeRawBytes(this.f33799e);
+            codedOutputStream.writeRawBytes(this.f33508e);
         }
 
         public static Builder newBuilder(JvmPropertySignature jvmPropertySignature) {
@@ -1133,7 +1133,7 @@ public final class JvmProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public JvmPropertySignature getDefaultInstanceForType() {
-            return f33798v;
+            return f33507v;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -1148,20 +1148,20 @@ public final class JvmProtoBuf {
 
         private JvmPropertySignature(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33806t = (byte) -1;
-            this.f33807u = -1;
-            this.f33799e = builder.getUnknownFields();
+            this.f33515t = (byte) -1;
+            this.f33516u = -1;
+            this.f33508e = builder.getUnknownFields();
         }
 
         private JvmPropertySignature(boolean z10) {
-            this.f33806t = (byte) -1;
-            this.f33807u = -1;
-            this.f33799e = ByteString.EMPTY;
+            this.f33515t = (byte) -1;
+            this.f33516u = -1;
+            this.f33508e = ByteString.EMPTY;
         }
 
         private JvmPropertySignature(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33806t = (byte) -1;
-            this.f33807u = -1;
+            this.f33515t = (byte) -1;
+            this.f33516u = -1;
             o();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -1172,53 +1172,53 @@ public final class JvmProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 10) {
-                                JvmFieldSignature.Builder builder = (this.f33800i & 1) == 1 ? this.f33801o.toBuilder() : null;
+                                JvmFieldSignature.Builder builder = (this.f33509i & 1) == 1 ? this.f33510o.toBuilder() : null;
                                 JvmFieldSignature jvmFieldSignature = (JvmFieldSignature) codedInputStream.readMessage(JvmFieldSignature.PARSER, extensionRegistryLite);
-                                this.f33801o = jvmFieldSignature;
+                                this.f33510o = jvmFieldSignature;
                                 if (builder != null) {
                                     builder.mergeFrom(jvmFieldSignature);
-                                    this.f33801o = builder.buildPartial();
+                                    this.f33510o = builder.buildPartial();
                                 }
-                                this.f33800i |= 1;
+                                this.f33509i |= 1;
                             } else if (readTag == 18) {
-                                JvmMethodSignature.Builder builder2 = (this.f33800i & 2) == 2 ? this.f33802p.toBuilder() : null;
+                                JvmMethodSignature.Builder builder2 = (this.f33509i & 2) == 2 ? this.f33511p.toBuilder() : null;
                                 JvmMethodSignature jvmMethodSignature = (JvmMethodSignature) codedInputStream.readMessage(JvmMethodSignature.PARSER, extensionRegistryLite);
-                                this.f33802p = jvmMethodSignature;
+                                this.f33511p = jvmMethodSignature;
                                 if (builder2 != null) {
                                     builder2.mergeFrom(jvmMethodSignature);
-                                    this.f33802p = builder2.buildPartial();
+                                    this.f33511p = builder2.buildPartial();
                                 }
-                                this.f33800i |= 2;
+                                this.f33509i |= 2;
                             } else if (readTag == 26) {
-                                JvmMethodSignature.Builder builder3 = (this.f33800i & 4) == 4 ? this.f33803q.toBuilder() : null;
+                                JvmMethodSignature.Builder builder3 = (this.f33509i & 4) == 4 ? this.f33512q.toBuilder() : null;
                                 JvmMethodSignature jvmMethodSignature2 = (JvmMethodSignature) codedInputStream.readMessage(JvmMethodSignature.PARSER, extensionRegistryLite);
-                                this.f33803q = jvmMethodSignature2;
+                                this.f33512q = jvmMethodSignature2;
                                 if (builder3 != null) {
                                     builder3.mergeFrom(jvmMethodSignature2);
-                                    this.f33803q = builder3.buildPartial();
+                                    this.f33512q = builder3.buildPartial();
                                 }
-                                this.f33800i |= 4;
+                                this.f33509i |= 4;
                             } else if (readTag == 34) {
-                                JvmMethodSignature.Builder builder4 = (this.f33800i & 8) == 8 ? this.f33804r.toBuilder() : null;
+                                JvmMethodSignature.Builder builder4 = (this.f33509i & 8) == 8 ? this.f33513r.toBuilder() : null;
                                 JvmMethodSignature jvmMethodSignature3 = (JvmMethodSignature) codedInputStream.readMessage(JvmMethodSignature.PARSER, extensionRegistryLite);
-                                this.f33804r = jvmMethodSignature3;
+                                this.f33513r = jvmMethodSignature3;
                                 if (builder4 != null) {
                                     builder4.mergeFrom(jvmMethodSignature3);
-                                    this.f33804r = builder4.buildPartial();
+                                    this.f33513r = builder4.buildPartial();
                                 }
-                                this.f33800i |= 8;
+                                this.f33509i |= 8;
                             } else if (readTag != 42) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
                             } else {
-                                JvmMethodSignature.Builder builder5 = (this.f33800i & 16) == 16 ? this.f33805s.toBuilder() : null;
+                                JvmMethodSignature.Builder builder5 = (this.f33509i & 16) == 16 ? this.f33514s.toBuilder() : null;
                                 JvmMethodSignature jvmMethodSignature4 = (JvmMethodSignature) codedInputStream.readMessage(JvmMethodSignature.PARSER, extensionRegistryLite);
-                                this.f33805s = jvmMethodSignature4;
+                                this.f33514s = jvmMethodSignature4;
                                 if (builder5 != null) {
                                     builder5.mergeFrom(jvmMethodSignature4);
-                                    this.f33805s = builder5.buildPartial();
+                                    this.f33514s = builder5.buildPartial();
                                 }
-                                this.f33800i |= 16;
+                                this.f33509i |= 16;
                             }
                         }
                         z10 = true;
@@ -1227,10 +1227,10 @@ public final class JvmProtoBuf {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33799e = newOutput.toByteString();
+                            this.f33508e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33799e = newOutput.toByteString();
+                        this.f33508e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -1244,10 +1244,10 @@ public final class JvmProtoBuf {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33799e = newOutput.toByteString();
+                this.f33508e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33799e = newOutput.toByteString();
+            this.f33508e = newOutput.toByteString();
             e();
         }
     }
@@ -1261,42 +1261,42 @@ public final class JvmProtoBuf {
         public static Parser<StringTableTypes> PARSER = new a();
 
         /* renamed from: s  reason: collision with root package name */
-        private static final StringTableTypes f33814s;
+        private static final StringTableTypes f33523s;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33815e;
+        private final ByteString f33524e;
 
         /* renamed from: i  reason: collision with root package name */
-        private List f33816i;
+        private List f33525i;
 
         /* renamed from: o  reason: collision with root package name */
-        private List f33817o;
+        private List f33526o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33818p;
+        private int f33527p;
 
         /* renamed from: q  reason: collision with root package name */
-        private byte f33819q;
+        private byte f33528q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33820r;
+        private int f33529r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<StringTableTypes, Builder> implements StringTableTypesOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33821e;
+            private int f33530e;
 
             /* renamed from: i  reason: collision with root package name */
-            private List f33822i;
+            private List f33531i;
 
             /* renamed from: o  reason: collision with root package name */
-            private List f33823o;
+            private List f33532o;
 
             private Builder() {
                 List list = Collections.EMPTY_LIST;
-                this.f33822i = list;
-                this.f33823o = list;
+                this.f33531i = list;
+                this.f33532o = list;
                 f();
             }
 
@@ -1309,16 +1309,16 @@ public final class JvmProtoBuf {
             }
 
             private void d() {
-                if ((this.f33821e & 2) != 2) {
-                    this.f33823o = new ArrayList(this.f33823o);
-                    this.f33821e |= 2;
+                if ((this.f33530e & 2) != 2) {
+                    this.f33532o = new ArrayList(this.f33532o);
+                    this.f33530e |= 2;
                 }
             }
 
             private void e() {
-                if ((this.f33821e & 1) != 1) {
-                    this.f33822i = new ArrayList(this.f33822i);
-                    this.f33821e |= 1;
+                if ((this.f33530e & 1) != 1) {
+                    this.f33531i = new ArrayList(this.f33531i);
+                    this.f33530e |= 1;
                 }
             }
 
@@ -1327,16 +1327,16 @@ public final class JvmProtoBuf {
 
             public StringTableTypes buildPartial() {
                 StringTableTypes stringTableTypes = new StringTableTypes(this);
-                if ((this.f33821e & 1) == 1) {
-                    this.f33822i = Collections.unmodifiableList(this.f33822i);
-                    this.f33821e &= -2;
+                if ((this.f33530e & 1) == 1) {
+                    this.f33531i = Collections.unmodifiableList(this.f33531i);
+                    this.f33530e &= -2;
                 }
-                stringTableTypes.f33816i = this.f33822i;
-                if ((this.f33821e & 2) == 2) {
-                    this.f33823o = Collections.unmodifiableList(this.f33823o);
-                    this.f33821e &= -3;
+                stringTableTypes.f33525i = this.f33531i;
+                if ((this.f33530e & 2) == 2) {
+                    this.f33532o = Collections.unmodifiableList(this.f33532o);
+                    this.f33530e &= -3;
                 }
-                stringTableTypes.f33817o = this.f33823o;
+                stringTableTypes.f33526o = this.f33532o;
                 return stringTableTypes;
             }
 
@@ -1369,25 +1369,25 @@ public final class JvmProtoBuf {
                 if (stringTableTypes == StringTableTypes.getDefaultInstance()) {
                     return this;
                 }
-                if (!stringTableTypes.f33816i.isEmpty()) {
-                    if (this.f33822i.isEmpty()) {
-                        this.f33822i = stringTableTypes.f33816i;
-                        this.f33821e &= -2;
+                if (!stringTableTypes.f33525i.isEmpty()) {
+                    if (this.f33531i.isEmpty()) {
+                        this.f33531i = stringTableTypes.f33525i;
+                        this.f33530e &= -2;
                     } else {
                         e();
-                        this.f33822i.addAll(stringTableTypes.f33816i);
+                        this.f33531i.addAll(stringTableTypes.f33525i);
                     }
                 }
-                if (!stringTableTypes.f33817o.isEmpty()) {
-                    if (this.f33823o.isEmpty()) {
-                        this.f33823o = stringTableTypes.f33817o;
-                        this.f33821e &= -3;
+                if (!stringTableTypes.f33526o.isEmpty()) {
+                    if (this.f33532o.isEmpty()) {
+                        this.f33532o = stringTableTypes.f33526o;
+                        this.f33530e &= -3;
                     } else {
                         d();
-                        this.f33823o.addAll(stringTableTypes.f33817o);
+                        this.f33532o.addAll(stringTableTypes.f33526o);
                     }
                 }
-                setUnknownFields(getUnknownFields().concat(stringTableTypes.f33815e));
+                setUnknownFields(getUnknownFields().concat(stringTableTypes.f33524e));
                 return this;
             }
 
@@ -1434,72 +1434,72 @@ public final class JvmProtoBuf {
             public static Parser<Record> PARSER = new a();
 
             /* renamed from: y  reason: collision with root package name */
-            private static final Record f33824y;
+            private static final Record f33533y;
 
             /* renamed from: e  reason: collision with root package name */
-            private final ByteString f33825e;
+            private final ByteString f33534e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33826i;
+            private int f33535i;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33827o;
+            private int f33536o;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33828p;
+            private int f33537p;
 
             /* renamed from: q  reason: collision with root package name */
-            private Object f33829q;
+            private Object f33538q;
 
             /* renamed from: r  reason: collision with root package name */
-            private Operation f33830r;
+            private Operation f33539r;
 
             /* renamed from: s  reason: collision with root package name */
-            private List f33831s;
+            private List f33540s;
 
             /* renamed from: t  reason: collision with root package name */
-            private int f33832t;
+            private int f33541t;
 
             /* renamed from: u  reason: collision with root package name */
-            private List f33833u;
+            private List f33542u;
 
             /* renamed from: v  reason: collision with root package name */
-            private int f33834v;
+            private int f33543v;
 
             /* renamed from: w  reason: collision with root package name */
-            private byte f33835w;
+            private byte f33544w;
 
             /* renamed from: x  reason: collision with root package name */
-            private int f33836x;
+            private int f33545x;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             public static final class Builder extends GeneratedMessageLite.Builder<Record, Builder> implements RecordOrBuilder {
 
                 /* renamed from: e  reason: collision with root package name */
-                private int f33837e;
+                private int f33546e;
 
                 /* renamed from: o  reason: collision with root package name */
-                private int f33839o;
+                private int f33548o;
 
                 /* renamed from: r  reason: collision with root package name */
-                private List f33842r;
+                private List f33551r;
 
                 /* renamed from: s  reason: collision with root package name */
-                private List f33843s;
+                private List f33552s;
 
                 /* renamed from: i  reason: collision with root package name */
-                private int f33838i = 1;
+                private int f33547i = 1;
 
                 /* renamed from: p  reason: collision with root package name */
-                private Object f33840p = "";
+                private Object f33549p = "";
 
                 /* renamed from: q  reason: collision with root package name */
-                private Operation f33841q = Operation.NONE;
+                private Operation f33550q = Operation.NONE;
 
                 private Builder() {
                     List list = Collections.EMPTY_LIST;
-                    this.f33842r = list;
-                    this.f33843s = list;
+                    this.f33551r = list;
+                    this.f33552s = list;
                     f();
                 }
 
@@ -1512,16 +1512,16 @@ public final class JvmProtoBuf {
                 }
 
                 private void d() {
-                    if ((this.f33837e & 32) != 32) {
-                        this.f33843s = new ArrayList(this.f33843s);
-                        this.f33837e |= 32;
+                    if ((this.f33546e & 32) != 32) {
+                        this.f33552s = new ArrayList(this.f33552s);
+                        this.f33546e |= 32;
                     }
                 }
 
                 private void e() {
-                    if ((this.f33837e & 16) != 16) {
-                        this.f33842r = new ArrayList(this.f33842r);
-                        this.f33837e |= 16;
+                    if ((this.f33546e & 16) != 16) {
+                        this.f33551r = new ArrayList(this.f33551r);
+                        this.f33546e |= 16;
                     }
                 }
 
@@ -1530,35 +1530,35 @@ public final class JvmProtoBuf {
 
                 public Record buildPartial() {
                     Record record = new Record(this);
-                    int i10 = this.f33837e;
+                    int i10 = this.f33546e;
                     int i11 = 1;
                     if ((i10 & 1) != 1) {
                         i11 = 0;
                     }
-                    record.f33827o = this.f33838i;
+                    record.f33536o = this.f33547i;
                     if ((i10 & 2) == 2) {
                         i11 |= 2;
                     }
-                    record.f33828p = this.f33839o;
+                    record.f33537p = this.f33548o;
                     if ((i10 & 4) == 4) {
                         i11 |= 4;
                     }
-                    record.f33829q = this.f33840p;
+                    record.f33538q = this.f33549p;
                     if ((i10 & 8) == 8) {
                         i11 |= 8;
                     }
-                    record.f33830r = this.f33841q;
-                    if ((this.f33837e & 16) == 16) {
-                        this.f33842r = Collections.unmodifiableList(this.f33842r);
-                        this.f33837e &= -17;
+                    record.f33539r = this.f33550q;
+                    if ((this.f33546e & 16) == 16) {
+                        this.f33551r = Collections.unmodifiableList(this.f33551r);
+                        this.f33546e &= -17;
                     }
-                    record.f33831s = this.f33842r;
-                    if ((this.f33837e & 32) == 32) {
-                        this.f33843s = Collections.unmodifiableList(this.f33843s);
-                        this.f33837e &= -33;
+                    record.f33540s = this.f33551r;
+                    if ((this.f33546e & 32) == 32) {
+                        this.f33552s = Collections.unmodifiableList(this.f33552s);
+                        this.f33546e &= -33;
                     }
-                    record.f33833u = this.f33843s;
-                    record.f33826i = i11;
+                    record.f33542u = this.f33552s;
+                    record.f33535i = i11;
                     return record;
                 }
 
@@ -1569,20 +1569,20 @@ public final class JvmProtoBuf {
 
                 public Builder setOperation(Operation operation) {
                     operation.getClass();
-                    this.f33837e |= 8;
-                    this.f33841q = operation;
+                    this.f33546e |= 8;
+                    this.f33550q = operation;
                     return this;
                 }
 
                 public Builder setPredefinedIndex(int i10) {
-                    this.f33837e |= 2;
-                    this.f33839o = i10;
+                    this.f33546e |= 2;
+                    this.f33548o = i10;
                     return this;
                 }
 
                 public Builder setRange(int i10) {
-                    this.f33837e |= 1;
-                    this.f33838i = i10;
+                    this.f33546e |= 1;
+                    this.f33547i = i10;
                     return this;
                 }
 
@@ -1617,31 +1617,31 @@ public final class JvmProtoBuf {
                         setPredefinedIndex(record.getPredefinedIndex());
                     }
                     if (record.hasString()) {
-                        this.f33837e |= 4;
-                        this.f33840p = record.f33829q;
+                        this.f33546e |= 4;
+                        this.f33549p = record.f33538q;
                     }
                     if (record.hasOperation()) {
                         setOperation(record.getOperation());
                     }
-                    if (!record.f33831s.isEmpty()) {
-                        if (this.f33842r.isEmpty()) {
-                            this.f33842r = record.f33831s;
-                            this.f33837e &= -17;
+                    if (!record.f33540s.isEmpty()) {
+                        if (this.f33551r.isEmpty()) {
+                            this.f33551r = record.f33540s;
+                            this.f33546e &= -17;
                         } else {
                             e();
-                            this.f33842r.addAll(record.f33831s);
+                            this.f33551r.addAll(record.f33540s);
                         }
                     }
-                    if (!record.f33833u.isEmpty()) {
-                        if (this.f33843s.isEmpty()) {
-                            this.f33843s = record.f33833u;
-                            this.f33837e &= -33;
+                    if (!record.f33542u.isEmpty()) {
+                        if (this.f33552s.isEmpty()) {
+                            this.f33552s = record.f33542u;
+                            this.f33546e &= -33;
                         } else {
                             d();
-                            this.f33843s.addAll(record.f33833u);
+                            this.f33552s.addAll(record.f33542u);
                         }
                     }
-                    setUnknownFields(getUnknownFields().concat(record.f33825e));
+                    setUnknownFields(getUnknownFields().concat(record.f33534e));
                     return this;
                 }
 
@@ -1691,10 +1691,10 @@ public final class JvmProtoBuf {
                 
 
                 /* renamed from: e  reason: collision with root package name */
-                private static Internal.EnumLiteMap f33844e = new a();
+                private static Internal.EnumLiteMap f33553e = new a();
 
                 /* renamed from: d  reason: collision with root package name */
-                private final int f33846d;
+                private final int f33555d;
 
                 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
                 static class a implements Internal.EnumLiteMap {
@@ -1709,12 +1709,12 @@ public final class JvmProtoBuf {
                 }
 
                 Operation(int i10, int i11) {
-                    this.f33846d = i11;
+                    this.f33555d = i11;
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
                 public final int getNumber() {
-                    return this.f33846d;
+                    return this.f33555d;
                 }
 
                 public static Operation valueOf(int i10) {
@@ -1745,12 +1745,12 @@ public final class JvmProtoBuf {
 
             static {
                 Record record = new Record(true);
-                f33824y = record;
+                f33533y = record;
                 record.s();
             }
 
             public static Record getDefaultInstance() {
-                return f33824y;
+                return f33533y;
             }
 
             public static Builder newBuilder() {
@@ -1758,17 +1758,17 @@ public final class JvmProtoBuf {
             }
 
             private void s() {
-                this.f33827o = 1;
-                this.f33828p = 0;
-                this.f33829q = "";
-                this.f33830r = Operation.NONE;
+                this.f33536o = 1;
+                this.f33537p = 0;
+                this.f33538q = "";
+                this.f33539r = Operation.NONE;
                 List list = Collections.EMPTY_LIST;
-                this.f33831s = list;
-                this.f33833u = list;
+                this.f33540s = list;
+                this.f33542u = list;
             }
 
             public Operation getOperation() {
-                return this.f33830r;
+                return this.f33539r;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -1777,119 +1777,119 @@ public final class JvmProtoBuf {
             }
 
             public int getPredefinedIndex() {
-                return this.f33828p;
+                return this.f33537p;
             }
 
             public int getRange() {
-                return this.f33827o;
+                return this.f33536o;
             }
 
             public int getReplaceCharCount() {
-                return this.f33833u.size();
+                return this.f33542u.size();
             }
 
             public List<Integer> getReplaceCharList() {
-                return this.f33833u;
+                return this.f33542u;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
             public int getSerializedSize() {
                 int i10;
-                int i11 = this.f33836x;
+                int i11 = this.f33545x;
                 if (i11 != -1) {
                     return i11;
                 }
-                if ((this.f33826i & 1) == 1) {
-                    i10 = CodedOutputStream.computeInt32Size(1, this.f33827o);
+                if ((this.f33535i & 1) == 1) {
+                    i10 = CodedOutputStream.computeInt32Size(1, this.f33536o);
                 } else {
                     i10 = 0;
                 }
-                if ((this.f33826i & 2) == 2) {
-                    i10 += CodedOutputStream.computeInt32Size(2, this.f33828p);
+                if ((this.f33535i & 2) == 2) {
+                    i10 += CodedOutputStream.computeInt32Size(2, this.f33537p);
                 }
-                if ((this.f33826i & 8) == 8) {
-                    i10 += CodedOutputStream.computeEnumSize(3, this.f33830r.getNumber());
+                if ((this.f33535i & 8) == 8) {
+                    i10 += CodedOutputStream.computeEnumSize(3, this.f33539r.getNumber());
                 }
                 int i12 = 0;
-                for (int i13 = 0; i13 < this.f33831s.size(); i13++) {
-                    i12 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33831s.get(i13)).intValue());
+                for (int i13 = 0; i13 < this.f33540s.size(); i13++) {
+                    i12 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33540s.get(i13)).intValue());
                 }
                 int i14 = i10 + i12;
                 if (!getSubstringIndexList().isEmpty()) {
                     i14 = i14 + 1 + CodedOutputStream.computeInt32SizeNoTag(i12);
                 }
-                this.f33832t = i12;
+                this.f33541t = i12;
                 int i15 = 0;
-                for (int i16 = 0; i16 < this.f33833u.size(); i16++) {
-                    i15 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33833u.get(i16)).intValue());
+                for (int i16 = 0; i16 < this.f33542u.size(); i16++) {
+                    i15 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33542u.get(i16)).intValue());
                 }
                 int i17 = i14 + i15;
                 if (!getReplaceCharList().isEmpty()) {
                     i17 = i17 + 1 + CodedOutputStream.computeInt32SizeNoTag(i15);
                 }
-                this.f33834v = i15;
-                if ((this.f33826i & 4) == 4) {
+                this.f33543v = i15;
+                if ((this.f33535i & 4) == 4) {
                     i17 += CodedOutputStream.computeBytesSize(6, getStringBytes());
                 }
-                int size = i17 + this.f33825e.size();
-                this.f33836x = size;
+                int size = i17 + this.f33534e.size();
+                this.f33545x = size;
                 return size;
             }
 
             public String getString() {
-                Object obj = this.f33829q;
+                Object obj = this.f33538q;
                 if (obj instanceof String) {
                     return (String) obj;
                 }
                 ByteString byteString = (ByteString) obj;
                 String stringUtf8 = byteString.toStringUtf8();
                 if (byteString.isValidUtf8()) {
-                    this.f33829q = stringUtf8;
+                    this.f33538q = stringUtf8;
                 }
                 return stringUtf8;
             }
 
             public ByteString getStringBytes() {
-                Object obj = this.f33829q;
+                Object obj = this.f33538q;
                 if (obj instanceof String) {
                     ByteString copyFromUtf8 = ByteString.copyFromUtf8((String) obj);
-                    this.f33829q = copyFromUtf8;
+                    this.f33538q = copyFromUtf8;
                     return copyFromUtf8;
                 }
                 return (ByteString) obj;
             }
 
             public int getSubstringIndexCount() {
-                return this.f33831s.size();
+                return this.f33540s.size();
             }
 
             public List<Integer> getSubstringIndexList() {
-                return this.f33831s;
+                return this.f33540s;
             }
 
             public boolean hasOperation() {
-                if ((this.f33826i & 8) == 8) {
+                if ((this.f33535i & 8) == 8) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasPredefinedIndex() {
-                if ((this.f33826i & 2) == 2) {
+                if ((this.f33535i & 2) == 2) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasRange() {
-                if ((this.f33826i & 1) == 1) {
+                if ((this.f33535i & 1) == 1) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasString() {
-                if ((this.f33826i & 4) == 4) {
+                if ((this.f33535i & 4) == 4) {
                     return true;
                 }
                 return false;
@@ -1897,47 +1897,47 @@ public final class JvmProtoBuf {
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
             public final boolean isInitialized() {
-                byte b10 = this.f33835w;
+                byte b10 = this.f33544w;
                 if (b10 == 1) {
                     return true;
                 }
                 if (b10 == 0) {
                     return false;
                 }
-                this.f33835w = (byte) 1;
+                this.f33544w = (byte) 1;
                 return true;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
             public void writeTo(CodedOutputStream codedOutputStream) {
                 getSerializedSize();
-                if ((this.f33826i & 1) == 1) {
-                    codedOutputStream.writeInt32(1, this.f33827o);
+                if ((this.f33535i & 1) == 1) {
+                    codedOutputStream.writeInt32(1, this.f33536o);
                 }
-                if ((this.f33826i & 2) == 2) {
-                    codedOutputStream.writeInt32(2, this.f33828p);
+                if ((this.f33535i & 2) == 2) {
+                    codedOutputStream.writeInt32(2, this.f33537p);
                 }
-                if ((this.f33826i & 8) == 8) {
-                    codedOutputStream.writeEnum(3, this.f33830r.getNumber());
+                if ((this.f33535i & 8) == 8) {
+                    codedOutputStream.writeEnum(3, this.f33539r.getNumber());
                 }
                 if (getSubstringIndexList().size() > 0) {
                     codedOutputStream.writeRawVarint32(34);
-                    codedOutputStream.writeRawVarint32(this.f33832t);
+                    codedOutputStream.writeRawVarint32(this.f33541t);
                 }
-                for (int i10 = 0; i10 < this.f33831s.size(); i10++) {
-                    codedOutputStream.writeInt32NoTag(((Integer) this.f33831s.get(i10)).intValue());
+                for (int i10 = 0; i10 < this.f33540s.size(); i10++) {
+                    codedOutputStream.writeInt32NoTag(((Integer) this.f33540s.get(i10)).intValue());
                 }
                 if (getReplaceCharList().size() > 0) {
                     codedOutputStream.writeRawVarint32(42);
-                    codedOutputStream.writeRawVarint32(this.f33834v);
+                    codedOutputStream.writeRawVarint32(this.f33543v);
                 }
-                for (int i11 = 0; i11 < this.f33833u.size(); i11++) {
-                    codedOutputStream.writeInt32NoTag(((Integer) this.f33833u.get(i11)).intValue());
+                for (int i11 = 0; i11 < this.f33542u.size(); i11++) {
+                    codedOutputStream.writeInt32NoTag(((Integer) this.f33542u.get(i11)).intValue());
                 }
-                if ((this.f33826i & 4) == 4) {
+                if ((this.f33535i & 4) == 4) {
                     codedOutputStream.writeBytes(6, getStringBytes());
                 }
-                codedOutputStream.writeRawBytes(this.f33825e);
+                codedOutputStream.writeRawBytes(this.f33534e);
             }
 
             public static Builder newBuilder(Record record) {
@@ -1946,7 +1946,7 @@ public final class JvmProtoBuf {
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
             public Record getDefaultInstanceForType() {
-                return f33824y;
+                return f33533y;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -1961,26 +1961,26 @@ public final class JvmProtoBuf {
 
             private Record(GeneratedMessageLite.Builder builder) {
                 super(builder);
-                this.f33832t = -1;
-                this.f33834v = -1;
-                this.f33835w = (byte) -1;
-                this.f33836x = -1;
-                this.f33825e = builder.getUnknownFields();
+                this.f33541t = -1;
+                this.f33543v = -1;
+                this.f33544w = (byte) -1;
+                this.f33545x = -1;
+                this.f33534e = builder.getUnknownFields();
             }
 
             private Record(boolean z10) {
-                this.f33832t = -1;
-                this.f33834v = -1;
-                this.f33835w = (byte) -1;
-                this.f33836x = -1;
-                this.f33825e = ByteString.EMPTY;
+                this.f33541t = -1;
+                this.f33543v = -1;
+                this.f33544w = (byte) -1;
+                this.f33545x = -1;
+                this.f33534e = ByteString.EMPTY;
             }
 
             private Record(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-                this.f33832t = -1;
-                this.f33834v = -1;
-                this.f33835w = (byte) -1;
-                this.f33836x = -1;
+                this.f33541t = -1;
+                this.f33543v = -1;
+                this.f33544w = (byte) -1;
+                this.f33545x = -1;
                 s();
                 ByteString.Output newOutput = ByteString.newOutput();
                 CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -1992,11 +1992,11 @@ public final class JvmProtoBuf {
                             int readTag = codedInputStream.readTag();
                             if (readTag != 0) {
                                 if (readTag == 8) {
-                                    this.f33826i |= 1;
-                                    this.f33827o = codedInputStream.readInt32();
+                                    this.f33535i |= 1;
+                                    this.f33536o = codedInputStream.readInt32();
                                 } else if (readTag == 16) {
-                                    this.f33826i |= 2;
-                                    this.f33828p = codedInputStream.readInt32();
+                                    this.f33535i |= 2;
+                                    this.f33537p = codedInputStream.readInt32();
                                 } else if (readTag == 24) {
                                     int readEnum = codedInputStream.readEnum();
                                     Operation valueOf = Operation.valueOf(readEnum);
@@ -2004,39 +2004,39 @@ public final class JvmProtoBuf {
                                         newInstance.writeRawVarint32(readTag);
                                         newInstance.writeRawVarint32(readEnum);
                                     } else {
-                                        this.f33826i |= 8;
-                                        this.f33830r = valueOf;
+                                        this.f33535i |= 8;
+                                        this.f33539r = valueOf;
                                     }
                                 } else if (readTag == 32) {
                                     if (!(z11 & true)) {
-                                        this.f33831s = new ArrayList();
+                                        this.f33540s = new ArrayList();
                                         z11 |= true;
                                     }
-                                    this.f33831s.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33540s.add(Integer.valueOf(codedInputStream.readInt32()));
                                 } else if (readTag == 34) {
                                     int pushLimit = codedInputStream.pushLimit(codedInputStream.readRawVarint32());
                                     if (!(z11 & true) && codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33831s = new ArrayList();
+                                        this.f33540s = new ArrayList();
                                         z11 |= true;
                                     }
                                     while (codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33831s.add(Integer.valueOf(codedInputStream.readInt32()));
+                                        this.f33540s.add(Integer.valueOf(codedInputStream.readInt32()));
                                     }
                                     codedInputStream.popLimit(pushLimit);
                                 } else if (readTag == 40) {
                                     if (!(z11 & true)) {
-                                        this.f33833u = new ArrayList();
+                                        this.f33542u = new ArrayList();
                                         z11 |= true;
                                     }
-                                    this.f33833u.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33542u.add(Integer.valueOf(codedInputStream.readInt32()));
                                 } else if (readTag == 42) {
                                     int pushLimit2 = codedInputStream.pushLimit(codedInputStream.readRawVarint32());
                                     if (!(z11 & true) && codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33833u = new ArrayList();
+                                        this.f33542u = new ArrayList();
                                         z11 |= true;
                                     }
                                     while (codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33833u.add(Integer.valueOf(codedInputStream.readInt32()));
+                                        this.f33542u.add(Integer.valueOf(codedInputStream.readInt32()));
                                     }
                                     codedInputStream.popLimit(pushLimit2);
                                 } else if (readTag != 50) {
@@ -2044,26 +2044,26 @@ public final class JvmProtoBuf {
                                     }
                                 } else {
                                     ByteString readBytes = codedInputStream.readBytes();
-                                    this.f33826i |= 4;
-                                    this.f33829q = readBytes;
+                                    this.f33535i |= 4;
+                                    this.f33538q = readBytes;
                                 }
                             }
                             z10 = true;
                         } catch (Throwable th2) {
                             if (z11 & true) {
-                                this.f33831s = Collections.unmodifiableList(this.f33831s);
+                                this.f33540s = Collections.unmodifiableList(this.f33540s);
                             }
                             if (z11 & true) {
-                                this.f33833u = Collections.unmodifiableList(this.f33833u);
+                                this.f33542u = Collections.unmodifiableList(this.f33542u);
                             }
                             try {
                                 newInstance.flush();
                             } catch (IOException unused) {
                             } catch (Throwable th3) {
-                                this.f33825e = newOutput.toByteString();
+                                this.f33534e = newOutput.toByteString();
                                 throw th3;
                             }
-                            this.f33825e = newOutput.toByteString();
+                            this.f33534e = newOutput.toByteString();
                             e();
                             throw th2;
                         }
@@ -2074,19 +2074,19 @@ public final class JvmProtoBuf {
                     }
                 }
                 if (z11 & true) {
-                    this.f33831s = Collections.unmodifiableList(this.f33831s);
+                    this.f33540s = Collections.unmodifiableList(this.f33540s);
                 }
                 if (z11 & true) {
-                    this.f33833u = Collections.unmodifiableList(this.f33833u);
+                    this.f33542u = Collections.unmodifiableList(this.f33542u);
                 }
                 try {
                     newInstance.flush();
                 } catch (IOException unused2) {
                 } catch (Throwable th4) {
-                    this.f33825e = newOutput.toByteString();
+                    this.f33534e = newOutput.toByteString();
                     throw th4;
                 }
-                this.f33825e = newOutput.toByteString();
+                this.f33534e = newOutput.toByteString();
                 e();
             }
         }
@@ -2109,18 +2109,18 @@ public final class JvmProtoBuf {
 
         static {
             StringTableTypes stringTableTypes = new StringTableTypes(true);
-            f33814s = stringTableTypes;
+            f33523s = stringTableTypes;
             stringTableTypes.m();
         }
 
         public static StringTableTypes getDefaultInstance() {
-            return f33814s;
+            return f33523s;
         }
 
         private void m() {
             List list = Collections.EMPTY_LIST;
-            this.f33816i = list;
-            this.f33817o = list;
+            this.f33525i = list;
+            this.f33526o = list;
         }
 
         public static Builder newBuilder() {
@@ -2132,7 +2132,7 @@ public final class JvmProtoBuf {
         }
 
         public List<Integer> getLocalNameList() {
-            return this.f33817o;
+            return this.f33526o;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -2141,60 +2141,60 @@ public final class JvmProtoBuf {
         }
 
         public List<Record> getRecordList() {
-            return this.f33816i;
+            return this.f33525i;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
-            int i10 = this.f33820r;
+            int i10 = this.f33529r;
             if (i10 != -1) {
                 return i10;
             }
             int i11 = 0;
-            for (int i12 = 0; i12 < this.f33816i.size(); i12++) {
-                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33816i.get(i12));
+            for (int i12 = 0; i12 < this.f33525i.size(); i12++) {
+                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33525i.get(i12));
             }
             int i13 = 0;
-            for (int i14 = 0; i14 < this.f33817o.size(); i14++) {
-                i13 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33817o.get(i14)).intValue());
+            for (int i14 = 0; i14 < this.f33526o.size(); i14++) {
+                i13 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33526o.get(i14)).intValue());
             }
             int i15 = i11 + i13;
             if (!getLocalNameList().isEmpty()) {
                 i15 = i15 + 1 + CodedOutputStream.computeInt32SizeNoTag(i13);
             }
-            this.f33818p = i13;
-            int size = i15 + this.f33815e.size();
-            this.f33820r = size;
+            this.f33527p = i13;
+            int size = i15 + this.f33524e.size();
+            this.f33529r = size;
             return size;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33819q;
+            byte b10 = this.f33528q;
             if (b10 == 1) {
                 return true;
             }
             if (b10 == 0) {
                 return false;
             }
-            this.f33819q = (byte) 1;
+            this.f33528q = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            for (int i10 = 0; i10 < this.f33816i.size(); i10++) {
-                codedOutputStream.writeMessage(1, (MessageLite) this.f33816i.get(i10));
+            for (int i10 = 0; i10 < this.f33525i.size(); i10++) {
+                codedOutputStream.writeMessage(1, (MessageLite) this.f33525i.get(i10));
             }
             if (getLocalNameList().size() > 0) {
                 codedOutputStream.writeRawVarint32(42);
-                codedOutputStream.writeRawVarint32(this.f33818p);
+                codedOutputStream.writeRawVarint32(this.f33527p);
             }
-            for (int i11 = 0; i11 < this.f33817o.size(); i11++) {
-                codedOutputStream.writeInt32NoTag(((Integer) this.f33817o.get(i11)).intValue());
+            for (int i11 = 0; i11 < this.f33526o.size(); i11++) {
+                codedOutputStream.writeInt32NoTag(((Integer) this.f33526o.get(i11)).intValue());
             }
-            codedOutputStream.writeRawBytes(this.f33815e);
+            codedOutputStream.writeRawBytes(this.f33524e);
         }
 
         public static Builder newBuilder(StringTableTypes stringTableTypes) {
@@ -2203,7 +2203,7 @@ public final class JvmProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public StringTableTypes getDefaultInstanceForType() {
-            return f33814s;
+            return f33523s;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -2218,23 +2218,23 @@ public final class JvmProtoBuf {
 
         private StringTableTypes(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33818p = -1;
-            this.f33819q = (byte) -1;
-            this.f33820r = -1;
-            this.f33815e = builder.getUnknownFields();
+            this.f33527p = -1;
+            this.f33528q = (byte) -1;
+            this.f33529r = -1;
+            this.f33524e = builder.getUnknownFields();
         }
 
         private StringTableTypes(boolean z10) {
-            this.f33818p = -1;
-            this.f33819q = (byte) -1;
-            this.f33820r = -1;
-            this.f33815e = ByteString.EMPTY;
+            this.f33527p = -1;
+            this.f33528q = (byte) -1;
+            this.f33529r = -1;
+            this.f33524e = ByteString.EMPTY;
         }
 
         private StringTableTypes(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33818p = -1;
-            this.f33819q = (byte) -1;
-            this.f33820r = -1;
+            this.f33527p = -1;
+            this.f33528q = (byte) -1;
+            this.f33529r = -1;
             m();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -2247,27 +2247,27 @@ public final class JvmProtoBuf {
                         if (readTag != 0) {
                             if (readTag == 10) {
                                 if (!(z11 & true)) {
-                                    this.f33816i = new ArrayList();
+                                    this.f33525i = new ArrayList();
                                     z11 |= true;
                                 }
-                                this.f33816i.add(codedInputStream.readMessage(Record.PARSER, extensionRegistryLite));
+                                this.f33525i.add(codedInputStream.readMessage(Record.PARSER, extensionRegistryLite));
                             } else if (readTag == 40) {
                                 if (!(z11 & true)) {
-                                    this.f33817o = new ArrayList();
+                                    this.f33526o = new ArrayList();
                                     z11 |= true;
                                 }
-                                this.f33817o.add(Integer.valueOf(codedInputStream.readInt32()));
+                                this.f33526o.add(Integer.valueOf(codedInputStream.readInt32()));
                             } else if (readTag != 42) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
                             } else {
                                 int pushLimit = codedInputStream.pushLimit(codedInputStream.readRawVarint32());
                                 if (!(z11 & true) && codedInputStream.getBytesUntilLimit() > 0) {
-                                    this.f33817o = new ArrayList();
+                                    this.f33526o = new ArrayList();
                                     z11 |= true;
                                 }
                                 while (codedInputStream.getBytesUntilLimit() > 0) {
-                                    this.f33817o.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33526o.add(Integer.valueOf(codedInputStream.readInt32()));
                                 }
                                 codedInputStream.popLimit(pushLimit);
                             }
@@ -2280,37 +2280,37 @@ public final class JvmProtoBuf {
                     }
                 } catch (Throwable th2) {
                     if (z11 & true) {
-                        this.f33816i = Collections.unmodifiableList(this.f33816i);
+                        this.f33525i = Collections.unmodifiableList(this.f33525i);
                     }
                     if (z11 & true) {
-                        this.f33817o = Collections.unmodifiableList(this.f33817o);
+                        this.f33526o = Collections.unmodifiableList(this.f33526o);
                     }
                     try {
                         newInstance.flush();
                     } catch (IOException unused) {
                     } catch (Throwable th3) {
-                        this.f33815e = newOutput.toByteString();
+                        this.f33524e = newOutput.toByteString();
                         throw th3;
                     }
-                    this.f33815e = newOutput.toByteString();
+                    this.f33524e = newOutput.toByteString();
                     e();
                     throw th2;
                 }
             }
             if (z11 & true) {
-                this.f33816i = Collections.unmodifiableList(this.f33816i);
+                this.f33525i = Collections.unmodifiableList(this.f33525i);
             }
             if (z11 & true) {
-                this.f33817o = Collections.unmodifiableList(this.f33817o);
+                this.f33526o = Collections.unmodifiableList(this.f33526o);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33815e = newOutput.toByteString();
+                this.f33524e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33815e = newOutput.toByteString();
+            this.f33524e = newOutput.toByteString();
             e();
         }
     }

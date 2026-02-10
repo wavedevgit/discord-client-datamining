@@ -7,7 +7,7 @@ import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-@fb.a
+@gb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class Arguments {
 
@@ -250,7 +250,7 @@ public class Arguments {
         return writableNativeArray;
     }
 
-    @fb.a
+    @gb.a
     public static WritableNativeMap makeNativeMap(Map<String, Object> map) {
         WritableNativeMap writableNativeMap = new WritableNativeMap();
         if (map != null) {
@@ -361,7 +361,7 @@ public class Arguments {
         return arrayList;
     }
 
-    @fb.a
+    @gb.a
     public static WritableNativeMap makeNativeMap(Bundle bundle) {
         WritableNativeMap writableNativeMap = new WritableNativeMap();
         if (bundle != null) {

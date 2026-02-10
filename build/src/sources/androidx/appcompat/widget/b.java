@@ -8,7 +8,7 @@ import android.graphics.drawable.Drawable;
 class b extends Drawable {
 
     /* renamed from: a  reason: collision with root package name */
-    final ActionBarContainer f2030a;
+    final ActionBarContainer f1727a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a {
@@ -18,27 +18,27 @@ class b extends Drawable {
     }
 
     public b(ActionBarContainer actionBarContainer) {
-        this.f2030a = actionBarContainer;
+        this.f1727a = actionBarContainer;
     }
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        ActionBarContainer actionBarContainer = this.f2030a;
-        if (actionBarContainer.f1837s) {
-            Drawable drawable = actionBarContainer.f1836r;
+        ActionBarContainer actionBarContainer = this.f1727a;
+        if (actionBarContainer.f1534s) {
+            Drawable drawable = actionBarContainer.f1533r;
             if (drawable != null) {
                 drawable.draw(canvas);
                 return;
             }
             return;
         }
-        Drawable drawable2 = actionBarContainer.f1834p;
+        Drawable drawable2 = actionBarContainer.f1531p;
         if (drawable2 != null) {
             drawable2.draw(canvas);
         }
-        ActionBarContainer actionBarContainer2 = this.f2030a;
-        Drawable drawable3 = actionBarContainer2.f1835q;
-        if (drawable3 != null && actionBarContainer2.f1838t) {
+        ActionBarContainer actionBarContainer2 = this.f1727a;
+        Drawable drawable3 = actionBarContainer2.f1532q;
+        if (drawable3 != null && actionBarContainer2.f1535t) {
             drawable3.draw(canvas);
         }
     }
@@ -50,15 +50,15 @@ class b extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void getOutline(Outline outline) {
-        ActionBarContainer actionBarContainer = this.f2030a;
-        if (actionBarContainer.f1837s) {
-            if (actionBarContainer.f1836r != null) {
-                a.a(actionBarContainer.f1834p, outline);
+        ActionBarContainer actionBarContainer = this.f1727a;
+        if (actionBarContainer.f1534s) {
+            if (actionBarContainer.f1533r != null) {
+                a.a(actionBarContainer.f1531p, outline);
                 return;
             }
             return;
         }
-        Drawable drawable = actionBarContainer.f1834p;
+        Drawable drawable = actionBarContainer.f1531p;
         if (drawable != null) {
             a.a(drawable, outline);
         }

@@ -20,7 +20,7 @@ public final class ReactPackageHelper {
         Intrinsics.checkNotNullParameter(reactPackage, "reactPackage");
         Intrinsics.checkNotNullParameter(reactApplicationContext, "reactApplicationContext");
         String simpleName = reactPackage.getClass().getSimpleName();
-        p8.a.b(ReactConstants.TAG, simpleName + " is not a LazyReactPackage, falling back to old version.");
+        q8.a.b(ReactConstants.TAG, simpleName + " is not a LazyReactPackage, falling back to old version.");
         return new ReactPackageHelper$getNativeModuleIterator$$inlined$Iterable$1(reactPackage.createNativeModules(reactApplicationContext));
     }
 }

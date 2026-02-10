@@ -1,105 +1,164 @@
 package le;
 
-import android.os.Handler;
-import java.util.Iterator;
-import java.util.concurrent.CopyOnWriteArrayList;
-import le.e;
+import android.content.res.Resources;
+import android.text.TextUtils;
+import com.google.android.exoplayer2.Format;
+import java.util.Locale;
+import oe.c0;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface e {
+public class e implements o {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface a {
+    /* renamed from: a  reason: collision with root package name */
+    private final Resources f35828a;
 
-        /* renamed from: le.e$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class C0481a {
+    public e(Resources resources) {
+        this.f35828a = (Resources) oe.a.e(resources);
+    }
 
-            /* renamed from: a  reason: collision with root package name */
-            private final CopyOnWriteArrayList f36153a = new CopyOnWriteArrayList();
-
-            /* JADX INFO: Access modifiers changed from: private */
-            /* renamed from: le.e$a$a$a  reason: collision with other inner class name */
-            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-            public static final class C0482a {
-
-                /* renamed from: a  reason: collision with root package name */
-                private final Handler f36154a;
-
-                /* renamed from: b  reason: collision with root package name */
-                private final a f36155b;
-
-                /* renamed from: c  reason: collision with root package name */
-                private boolean f36156c;
-
-                public C0482a(Handler handler, a aVar) {
-                    this.f36154a = handler;
-                    this.f36155b = aVar;
-                }
-
-                public void d() {
-                    this.f36156c = true;
-                }
-            }
-
-            public void b(Handler handler, a aVar) {
-                ne.a.e(handler);
-                ne.a.e(aVar);
-                d(aVar);
-                this.f36153a.add(new C0482a(handler, aVar));
-            }
-
-            public void c(int i10, long j10, long j11) {
-                final int i11;
-                final long j12;
-                final long j13;
-                Iterator it = this.f36153a.iterator();
-                while (it.hasNext()) {
-                    final C0482a c0482a = (C0482a) it.next();
-                    if (!c0482a.f36156c) {
-                        i11 = i10;
-                        j12 = j10;
-                        j13 = j11;
-                        c0482a.f36154a.post(new Runnable() { // from class: le.d
-                            @Override // java.lang.Runnable
-                            public final void run() {
-                                e.a.C0481a.C0482a.this.f36155b.u(i11, j12, j13);
-                            }
-                        });
-                    } else {
-                        i11 = i10;
-                        j12 = j10;
-                        j13 = j11;
+    private String b(Format format) {
+        int i10 = format.J;
+        if (i10 != -1 && i10 >= 1) {
+            if (i10 != 1) {
+                if (i10 != 2) {
+                    if (i10 != 6 && i10 != 7) {
+                        if (i10 != 8) {
+                            return this.f35828a.getString(m.f35884s);
+                        }
+                        return this.f35828a.getString(m.f35886u);
                     }
-                    i10 = i11;
-                    j10 = j12;
-                    j11 = j13;
+                    return this.f35828a.getString(m.f35885t);
                 }
+                return this.f35828a.getString(m.f35883r);
             }
+            return this.f35828a.getString(m.f35875j);
+        }
+        return "";
+    }
 
-            public void d(a aVar) {
-                Iterator it = this.f36153a.iterator();
-                while (it.hasNext()) {
-                    C0482a c0482a = (C0482a) it.next();
-                    if (c0482a.f36155b == aVar) {
-                        c0482a.d();
-                        this.f36153a.remove(c0482a);
-                    }
+    private String c(Format format) {
+        int i10 = format.f11723s;
+        if (i10 == -1) {
+            return "";
+        }
+        return this.f35828a.getString(m.f35874i, Float.valueOf(i10 / 1000000.0f));
+    }
+
+    private String d(Format format) {
+        if (TextUtils.isEmpty(format.f11717e)) {
+            return "";
+        }
+        return format.f11717e;
+    }
+
+    private String e(Format format) {
+        String j10 = j(f(format), h(format));
+        if (TextUtils.isEmpty(j10)) {
+            return d(format);
+        }
+        return j10;
+    }
+
+    private String f(Format format) {
+        Locale locale;
+        String str = format.f11718i;
+        if (TextUtils.isEmpty(str) || "und".equals(str)) {
+            return "";
+        }
+        if (w0.f40711a >= 21) {
+            locale = Locale.forLanguageTag(str);
+        } else {
+            locale = new Locale(str);
+        }
+        Locale S = w0.S();
+        String displayName = locale.getDisplayName(S);
+        if (TextUtils.isEmpty(displayName)) {
+            return "";
+        }
+        try {
+            int offsetByCodePoints = displayName.offsetByCodePoints(0, 1);
+            return displayName.substring(0, offsetByCodePoints).toUpperCase(S) + displayName.substring(offsetByCodePoints);
+        } catch (IndexOutOfBoundsException unused) {
+            return displayName;
+        }
+    }
+
+    private String g(Format format) {
+        int i10 = format.B;
+        int i11 = format.C;
+        if (i10 != -1 && i11 != -1) {
+            return this.f35828a.getString(m.f35876k, Integer.valueOf(i10), Integer.valueOf(i11));
+        }
+        return "";
+    }
+
+    private String h(Format format) {
+        String str;
+        if ((format.f11720p & 2) != 0) {
+            str = this.f35828a.getString(m.f35877l);
+        } else {
+            str = "";
+        }
+        if ((format.f11720p & 4) != 0) {
+            str = j(str, this.f35828a.getString(m.f35880o));
+        }
+        if ((format.f11720p & 8) != 0) {
+            str = j(str, this.f35828a.getString(m.f35879n));
+        }
+        if ((format.f11720p & 1088) != 0) {
+            return j(str, this.f35828a.getString(m.f35878m));
+        }
+        return str;
+    }
+
+    private static int i(Format format) {
+        int k10 = c0.k(format.f11727w);
+        if (k10 != -1) {
+            return k10;
+        }
+        if (c0.n(format.f11724t) != null) {
+            return 2;
+        }
+        if (c0.c(format.f11724t) != null) {
+            return 1;
+        }
+        if (format.B != -1 || format.C != -1) {
+            return 2;
+        }
+        if (format.J == -1 && format.K == -1) {
+            return -1;
+        }
+        return 1;
+    }
+
+    private String j(String... strArr) {
+        String str = "";
+        for (String str2 : strArr) {
+            if (str2.length() > 0) {
+                if (TextUtils.isEmpty(str)) {
+                    str = str2;
+                } else {
+                    str = this.f35828a.getString(m.f35873h, str, str2);
                 }
             }
         }
-
-        void u(int i10, long j10, long j11);
+        return str;
     }
 
-    void a(a aVar);
-
-    void b(Handler handler, a aVar);
-
-    default long c() {
-        return -9223372036854775807L;
+    @Override // le.o
+    public String a(Format format) {
+        String e10;
+        int i10 = i(format);
+        if (i10 == 2) {
+            e10 = j(h(format), g(format), c(format));
+        } else if (i10 == 1) {
+            e10 = j(e(format), b(format), c(format));
+        } else {
+            e10 = e(format);
+        }
+        if (e10.length() == 0) {
+            return this.f35828a.getString(m.f35887v);
+        }
+        return e10;
     }
-
-    c0 e();
-
-    long f();
 }

@@ -22,41 +22,41 @@ public enum JvmPrimitiveType {
     
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Map f34229p = new HashMap();
+    private static final Map f33938p = new HashMap();
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Map f34230q = new EnumMap(PrimitiveType.class);
+    private static final Map f33939q = new EnumMap(PrimitiveType.class);
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Map f34231r = new HashMap();
+    private static final Map f33940r = new HashMap();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Set f34232s = new HashSet();
+    private static final Set f33941s = new HashSet();
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Map f34233t = new HashMap();
+    private static final Map f33942t = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final PrimitiveType f34235d;
+    private final PrimitiveType f33944d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f34236e;
+    private final String f33945e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f34237i;
+    private final String f33946i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final FqName f34238o;
+    private final FqName f33947o;
 
     static {
         JvmPrimitiveType[] values;
         for (JvmPrimitiveType jvmPrimitiveType : values()) {
-            f34229p.put(jvmPrimitiveType.getJavaKeywordName(), jvmPrimitiveType);
-            f34230q.put(jvmPrimitiveType.getPrimitiveType(), jvmPrimitiveType);
-            f34231r.put(jvmPrimitiveType.getDesc(), jvmPrimitiveType);
-            String replace = jvmPrimitiveType.f34238o.asString().replace('.', '/');
-            f34232s.add(replace);
-            f34233t.put(replace, "(" + jvmPrimitiveType.f34237i + ")L" + replace + ";");
+            f33938p.put(jvmPrimitiveType.getJavaKeywordName(), jvmPrimitiveType);
+            f33939q.put(jvmPrimitiveType.getPrimitiveType(), jvmPrimitiveType);
+            f33940r.put(jvmPrimitiveType.getDesc(), jvmPrimitiveType);
+            String replace = jvmPrimitiveType.f33947o.asString().replace('.', '/');
+            f33941s.add(replace);
+            f33942t.put(replace, "(" + jvmPrimitiveType.f33946i + ")L" + replace + ";");
         }
     }
 
@@ -73,10 +73,10 @@ public enum JvmPrimitiveType {
         if (str3 == null) {
             a(11);
         }
-        this.f34235d = primitiveType;
-        this.f34236e = str;
-        this.f34237i = str2;
-        this.f34238o = new FqName(str3);
+        this.f33944d = primitiveType;
+        this.f33945e = str;
+        this.f33946i = str2;
+        this.f33947o = new FqName(str3);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x0016  */
@@ -290,7 +290,7 @@ public enum JvmPrimitiveType {
         if (str == null) {
             a(3);
         }
-        JvmPrimitiveType jvmPrimitiveType = (JvmPrimitiveType) f34229p.get(str);
+        JvmPrimitiveType jvmPrimitiveType = (JvmPrimitiveType) f33938p.get(str);
         if (jvmPrimitiveType != null) {
             return jvmPrimitiveType;
         }
@@ -299,7 +299,7 @@ public enum JvmPrimitiveType {
 
     @NotNull
     public String getDesc() {
-        String str = this.f34237i;
+        String str = this.f33946i;
         if (str == null) {
             a(14);
         }
@@ -308,7 +308,7 @@ public enum JvmPrimitiveType {
 
     @NotNull
     public String getJavaKeywordName() {
-        String str = this.f34236e;
+        String str = this.f33945e;
         if (str == null) {
             a(13);
         }
@@ -317,7 +317,7 @@ public enum JvmPrimitiveType {
 
     @NotNull
     public PrimitiveType getPrimitiveType() {
-        PrimitiveType primitiveType = this.f34235d;
+        PrimitiveType primitiveType = this.f33944d;
         if (primitiveType == null) {
             a(12);
         }
@@ -326,7 +326,7 @@ public enum JvmPrimitiveType {
 
     @NotNull
     public FqName getWrapperFqName() {
-        FqName fqName = this.f34238o;
+        FqName fqName = this.f33947o;
         if (fqName == null) {
             a(15);
         }
@@ -338,7 +338,7 @@ public enum JvmPrimitiveType {
         if (primitiveType == null) {
             a(5);
         }
-        JvmPrimitiveType jvmPrimitiveType = (JvmPrimitiveType) f34230q.get(primitiveType);
+        JvmPrimitiveType jvmPrimitiveType = (JvmPrimitiveType) f33939q.get(primitiveType);
         if (jvmPrimitiveType == null) {
             a(6);
         }

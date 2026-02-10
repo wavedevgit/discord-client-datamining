@@ -49,7 +49,7 @@ public final class DeserializationErrorView extends ChatListLinearLayout {
         this.binding.exception.setText(causeMessage);
         Button copyButton = this.binding.copyButton;
         Intrinsics.checkNotNullExpressionValue(copyButton, "copyButton");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(copyButton, false, new View.OnClickListener() { // from class: s6.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(copyButton, false, new View.OnClickListener() { // from class: t6.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 DeserializationErrorView.configure$lambda$0(DeserializationErrorView.this, json, view);

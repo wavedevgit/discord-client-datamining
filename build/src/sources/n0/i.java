@@ -12,62 +12,62 @@ import x.x1;
 public class i implements e0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final e0 f38406d;
+    private final e0 f37703d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final o f38407e;
+    private final o f37704e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final p f38408i;
+    private final p f37705i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final x1.b f38409o;
+    private final x1.b f37706o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(e0 e0Var, x1.b bVar, f.a aVar) {
-        this.f38406d = e0Var;
-        this.f38409o = bVar;
-        this.f38407e = new o(e0Var.f(), aVar);
-        this.f38408i = new p(e0Var.m());
+        this.f37703d = e0Var;
+        this.f37706o = bVar;
+        this.f37704e = new o(e0Var.f(), aVar);
+        this.f37705i = new p(e0Var.m());
     }
 
     @Override // a0.e0
     public u1 c() {
-        return this.f38406d.c();
+        return this.f37703d.c();
     }
 
     @Override // x.x1.b
     public void d(x1 x1Var) {
         b0.p.a();
-        this.f38409o.d(x1Var);
+        this.f37706o.d(x1Var);
     }
 
     @Override // x.x1.b
     public void e(x1 x1Var) {
         b0.p.a();
-        this.f38409o.e(x1Var);
+        this.f37706o.e(x1Var);
     }
 
     @Override // a0.e0
     public a0 f() {
-        return this.f38407e;
-    }
-
-    @Override // a0.e0
-    public void i(Collection collection) {
-        throw new UnsupportedOperationException("Operation not supported by VirtualCamera.");
+        return this.f37704e;
     }
 
     @Override // x.x1.b
-    public void j(x1 x1Var) {
+    public void h(x1 x1Var) {
         b0.p.a();
-        this.f38409o.j(x1Var);
+        this.f37706o.h(x1Var);
+    }
+
+    @Override // a0.e0
+    public void j(Collection collection) {
+        throw new UnsupportedOperationException("Operation not supported by VirtualCamera.");
     }
 
     @Override // x.x1.b
     public void k(x1 x1Var) {
         b0.p.a();
-        this.f38409o.k(x1Var);
+        this.f37706o.k(x1Var);
     }
 
     @Override // a0.e0
@@ -77,12 +77,12 @@ public class i implements e0 {
 
     @Override // a0.e0
     public d0 m() {
-        return this.f38408i;
+        return this.f37705i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void n(int i10) {
-        this.f38408i.l(i10);
+        this.f37705i.l(i10);
     }
 
     @Override // a0.e0

@@ -9,19 +9,19 @@ import x3.h;
 public class w extends h.a {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f48663g = new a(null);
+    public static final a f47637g = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private f f48664c;
+    private f f47638c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f48665d;
+    private final b f47639d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f48666e;
+    private final String f47640e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f48667f;
+    private final String f47641f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -31,21 +31,21 @@ public class w extends h.a {
 
         public final boolean a(x3.g db2) {
             Intrinsics.checkNotNullParameter(db2, "db");
-            Cursor G1 = db2.G1("SELECT count(*) FROM sqlite_master WHERE name != 'android_metadata'");
+            Cursor C1 = db2.C1("SELECT count(*) FROM sqlite_master WHERE name != 'android_metadata'");
             try {
                 boolean z10 = false;
-                if (G1.moveToFirst()) {
-                    if (G1.getInt(0) == 0) {
+                if (C1.moveToFirst()) {
+                    if (C1.getInt(0) == 0) {
                         z10 = true;
                     }
                 }
-                bs.c.a(G1, null);
+                cs.c.a(C1, null);
                 return z10;
             } catch (Throwable th2) {
                 try {
                     throw th2;
                 } catch (Throwable th3) {
-                    bs.c.a(G1, th2);
+                    cs.c.a(C1, th2);
                     throw th3;
                 }
             }
@@ -53,21 +53,21 @@ public class w extends h.a {
 
         public final boolean b(x3.g db2) {
             Intrinsics.checkNotNullParameter(db2, "db");
-            Cursor G1 = db2.G1("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name='room_master_table'");
+            Cursor C1 = db2.C1("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name='room_master_table'");
             try {
                 boolean z10 = false;
-                if (G1.moveToFirst()) {
-                    if (G1.getInt(0) != 0) {
+                if (C1.moveToFirst()) {
+                    if (C1.getInt(0) != 0) {
                         z10 = true;
                     }
                 }
-                bs.c.a(G1, null);
+                cs.c.a(C1, null);
                 return z10;
             } catch (Throwable th2) {
                 try {
                     throw th2;
                 } catch (Throwable th3) {
-                    bs.c.a(G1, th2);
+                    cs.c.a(C1, th2);
                     throw th3;
                 }
             }
@@ -81,10 +81,10 @@ public class w extends h.a {
     public static abstract class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f48668a;
+        public final int f47642a;
 
         public b(int i10) {
-            this.f48668a = i10;
+            this.f47642a = i10;
         }
 
         public abstract void a(x3.g gVar);
@@ -106,70 +106,70 @@ public class w extends h.a {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final boolean f48669a;
+        public final boolean f47643a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f48670b;
+        public final String f47644b;
 
         public c(boolean z10, String str) {
-            this.f48669a = z10;
-            this.f48670b = str;
+            this.f47643a = z10;
+            this.f47644b = str;
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public w(f configuration, b delegate, String identityHash, String legacyHash) {
-        super(delegate.f48668a);
+        super(delegate.f47642a);
         Intrinsics.checkNotNullParameter(configuration, "configuration");
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(identityHash, "identityHash");
         Intrinsics.checkNotNullParameter(legacyHash, "legacyHash");
-        this.f48664c = configuration;
-        this.f48665d = delegate;
-        this.f48666e = identityHash;
-        this.f48667f = legacyHash;
+        this.f47638c = configuration;
+        this.f47639d = delegate;
+        this.f47640e = identityHash;
+        this.f47641f = legacyHash;
     }
 
     private final void h(x3.g gVar) {
         c g10;
         String str;
-        if (f48663g.b(gVar)) {
-            Cursor S0 = gVar.S0(new x3.a("SELECT identity_hash FROM room_master_table WHERE id = 42 LIMIT 1"));
+        if (f47637g.b(gVar)) {
+            Cursor N0 = gVar.N0(new x3.a("SELECT identity_hash FROM room_master_table WHERE id = 42 LIMIT 1"));
             try {
-                if (S0.moveToFirst()) {
-                    str = S0.getString(0);
+                if (N0.moveToFirst()) {
+                    str = N0.getString(0);
                 } else {
                     str = null;
                 }
-                bs.c.a(S0, null);
-                if (!Intrinsics.areEqual(this.f48666e, str) && !Intrinsics.areEqual(this.f48667f, str)) {
-                    throw new IllegalStateException("Room cannot verify the data integrity. Looks like you've changed schema but forgot to update the version number. You can simply fix this by increasing the version number. Expected identity hash: " + this.f48666e + ", found: " + str);
+                cs.c.a(N0, null);
+                if (!Intrinsics.areEqual(this.f47640e, str) && !Intrinsics.areEqual(this.f47641f, str)) {
+                    throw new IllegalStateException("Room cannot verify the data integrity. Looks like you've changed schema but forgot to update the version number. You can simply fix this by increasing the version number. Expected identity hash: " + this.f47640e + ", found: " + str);
                 }
                 return;
             } catch (Throwable th2) {
                 try {
                     throw th2;
                 } catch (Throwable th3) {
-                    bs.c.a(S0, th2);
+                    cs.c.a(N0, th2);
                     throw th3;
                 }
             }
         }
-        if (this.f48665d.g(gVar).f48669a) {
-            this.f48665d.e(gVar);
+        if (this.f47639d.g(gVar).f47643a) {
+            this.f47639d.e(gVar);
             j(gVar);
             return;
         }
-        throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g10.f48670b);
+        throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g10.f47644b);
     }
 
     private final void i(x3.g gVar) {
-        gVar.O("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
+        gVar.P("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
     }
 
     private final void j(x3.g gVar) {
         i(gVar);
-        gVar.O(v.a(this.f48666e));
+        gVar.P(v.a(this.f47640e));
     }
 
     @Override // x3.h.a
@@ -181,16 +181,16 @@ public class w extends h.a {
     @Override // x3.h.a
     public void d(x3.g db2) {
         Intrinsics.checkNotNullParameter(db2, "db");
-        boolean a10 = f48663g.a(db2);
-        this.f48665d.a(db2);
+        boolean a10 = f47637g.a(db2);
+        this.f47639d.a(db2);
         if (!a10) {
-            c g10 = this.f48665d.g(db2);
-            if (!g10.f48669a) {
-                throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g10.f48670b);
+            c g10 = this.f47639d.g(db2);
+            if (!g10.f47643a) {
+                throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g10.f47644b);
             }
         }
         j(db2);
-        this.f48665d.c(db2);
+        this.f47639d.c(db2);
     }
 
     @Override // x3.h.a
@@ -204,32 +204,32 @@ public class w extends h.a {
         Intrinsics.checkNotNullParameter(db2, "db");
         super.f(db2);
         h(db2);
-        this.f48665d.d(db2);
-        this.f48664c = null;
+        this.f47639d.d(db2);
+        this.f47638c = null;
     }
 
     @Override // x3.h.a
     public void g(x3.g db2, int i10, int i11) {
         List<s3.b> d10;
         Intrinsics.checkNotNullParameter(db2, "db");
-        f fVar = this.f48664c;
-        if (fVar != null && (d10 = fVar.f48545d.d(i10, i11)) != null) {
-            this.f48665d.f(db2);
+        f fVar = this.f47638c;
+        if (fVar != null && (d10 = fVar.f47519d.d(i10, i11)) != null) {
+            this.f47639d.f(db2);
             for (s3.b bVar : d10) {
                 bVar.a(db2);
             }
-            c g10 = this.f48665d.g(db2);
-            if (g10.f48669a) {
-                this.f48665d.e(db2);
+            c g10 = this.f47639d.g(db2);
+            if (g10.f47643a) {
+                this.f47639d.e(db2);
                 j(db2);
                 return;
             }
-            throw new IllegalStateException("Migration didn't properly handle: " + g10.f48670b);
+            throw new IllegalStateException("Migration didn't properly handle: " + g10.f47644b);
         }
-        f fVar2 = this.f48664c;
+        f fVar2 = this.f47638c;
         if (fVar2 != null && !fVar2.a(i10, i11)) {
-            this.f48665d.b(db2);
-            this.f48665d.a(db2);
+            this.f47639d.b(db2);
+            this.f47639d.a(db2);
             return;
         }
         throw new IllegalStateException("A migration from " + i10 + " to " + i11 + " was required but not found. Please provide the necessary Migration path via RoomDatabase.Builder.addMigration(Migration ...) or allow for destructive migrations via one of the RoomDatabase.Builder.fallbackToDestructiveMigration* methods.");

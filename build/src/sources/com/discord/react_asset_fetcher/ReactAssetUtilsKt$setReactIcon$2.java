@@ -23,9 +23,9 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import os.g;
-import os.m0;
-import wr.b;
+import ps.g;
+import ps.m0;
+import xr.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.react_asset_fetcher.ReactAssetUtilsKt$setReactIcon$2", f = "ReactAssetUtils.kt", l = {72}, m = "invokeSuspend")
@@ -96,7 +96,7 @@ public final class ReactAssetUtilsKt$setReactIcon$2 extends k implements Functio
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Drawable> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
         }
     }
 
@@ -140,11 +140,11 @@ public final class ReactAssetUtilsKt$setReactIcon$2 extends k implements Functio
             obj = g10;
         }
         materialButton.setIcon((Drawable) obj);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ReactAssetUtilsKt$setReactIcon$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
+        return ((ReactAssetUtilsKt$setReactIcon$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
     }
 }

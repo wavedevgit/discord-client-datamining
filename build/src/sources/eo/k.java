@@ -1,27 +1,27 @@
 package eo;
 
-import java.util.Set;
+import android.content.Context;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class k implements br.d {
+public final class k implements cr.d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class a {
+    /* renamed from: a  reason: collision with root package name */
+    private final cr.h f21913a;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final k f21794a = new k();
+    public k(cr.h hVar) {
+        this.f21913a = hVar;
     }
 
-    public static k a() {
-        return a.f21794a;
+    public static k a(cr.h hVar) {
+        return new k(hVar);
     }
 
-    public static Set c() {
-        return (Set) br.g.d(j.a());
+    public static j c(Context context) {
+        return new j(context);
     }
 
     @Override // javax.inject.Provider
     /* renamed from: b */
-    public Set get() {
-        return c();
+    public j get() {
+        return c((Context) this.f21913a.get());
     }
 }

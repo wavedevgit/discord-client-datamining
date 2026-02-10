@@ -1,17 +1,27 @@
 package cq;
 
-import android.content.Context;
-import android.content.res.Resources;
-import kotlin.jvm.internal.Intrinsics;
-import rp.n;
+import java.util.HashMap;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
-    public static final void a(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        try {
-            context.getResources().getLayout(n.f49150c);
-        } catch (Resources.NotFoundException unused) {
-            hi.a.b(context);
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f20126a = new a(null);
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final HashMap f20127b = new HashMap();
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final HashMap a() {
+            return c.f20127b;
+        }
+
+        private a() {
         }
     }
 }

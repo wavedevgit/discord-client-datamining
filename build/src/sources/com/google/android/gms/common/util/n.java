@@ -21,6 +21,6 @@ public abstract class n {
     }
 
     public static boolean b(Context context, int i10, String str) {
-        return pf.c.a(context).f(i10, str);
+        return qf.c.a(context).f(i10, str);
     }
 }

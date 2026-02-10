@@ -114,26 +114,26 @@ public final class NativeModuleRegistry {
 
     public final void notifyJSInstanceDestroy() {
         this.reactApplicationContext.assertOnNativeModulesQueueThread();
-        qb.a.c(0L, "NativeModuleRegistry_notifyJSInstanceDestroy");
+        rb.a.c(0L, "NativeModuleRegistry_notifyJSInstanceDestroy");
         try {
             for (ModuleHolder moduleHolder : this.modules.values()) {
                 moduleHolder.destroy();
             }
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
         }
     }
 
     public final void notifyJSInstanceInitialized() {
         this.reactApplicationContext.assertOnNativeModulesQueueThread("From version React Native v0.44, native modules are explicitly not initialized on the UI thread.");
         ReactMarker.logMarker(ReactMarkerConstants.NATIVE_MODULE_INITIALIZE_START);
-        qb.a.c(0L, "NativeModuleRegistry_notifyJSInstanceInitialized");
+        rb.a.c(0L, "NativeModuleRegistry_notifyJSInstanceInitialized");
         try {
             for (ModuleHolder moduleHolder : this.modules.values()) {
                 moduleHolder.markInitializable$ReactAndroid_release();
             }
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
             ReactMarker.logMarker(ReactMarkerConstants.NATIVE_MODULE_INITIALIZE_END);
         }
     }

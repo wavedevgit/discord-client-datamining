@@ -19,22 +19,22 @@ import org.jetbrains.annotations.NotNull;
 public final class b extends ReactViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.shopify.reactnative.flash_list.a f17845d;
+    private final com.shopify.reactnative.flash_list.a f17985d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f17846e;
+    private boolean f17986e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f17847i;
+    private boolean f17987i;
 
     /* renamed from: o  reason: collision with root package name */
-    private double f17848o;
+    private double f17988o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Comparator {
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
-            return tr.a.d(Integer.valueOf(((d) obj).getIndex()), Integer.valueOf(((d) obj2).getIndex()));
+            return ur.a.d(Integer.valueOf(((d) obj).getIndex()), Integer.valueOf(((d) obj2).getIndex()));
         }
     }
 
@@ -42,8 +42,8 @@ public final class b extends ReactViewGroup {
     public b(Context context) {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f17845d = new com.shopify.reactnative.flash_list.a();
-        this.f17848o = 1.0d;
+        this.f17985d = new com.shopify.reactnative.flash_list.a();
+        this.f17988o = 1.0d;
     }
 
     private final void c() {
@@ -53,15 +53,15 @@ public final class b extends ReactViewGroup {
         if (eventDispatcherForReactTag != null) {
             Context context2 = getContext();
             Intrinsics.checkNotNull(context2, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
-            eventDispatcherForReactTag.dispatchEvent(new c(UIManagerHelper.getSurfaceId((ReactContext) context2), getId(), this.f17845d.d() / this.f17848o, this.f17845d.c() / this.f17848o));
+            eventDispatcherForReactTag.dispatchEvent(new c(UIManagerHelper.getSurfaceId((ReactContext) context2), getId(), this.f17985d.d() / this.f17988o, this.f17985d.c() / this.f17988o));
         }
     }
 
     private final void d() {
         View view;
         View parentScrollView = getParentScrollView();
-        if (!this.f17847i && parentScrollView != null) {
-            if (this.f17845d.e()) {
+        if (!this.f17987i && parentScrollView != null) {
+            if (this.f17985d.e()) {
                 if (getRight() > parentScrollView.getWidth()) {
                     return;
                 }
@@ -77,7 +77,7 @@ public final class b extends ReactViewGroup {
             View footer = getFooter();
             int footerDiff = getFooterDiff();
             if (footerDiff != 0 && footer != null && view != null) {
-                if (this.f17845d.e()) {
+                if (this.f17985d.e()) {
                     footer.offsetLeftAndRight(footerDiff);
                     setRight(getRight() + footerDiff);
                     view.setRight(view.getRight() + footerDiff);
@@ -93,7 +93,7 @@ public final class b extends ReactViewGroup {
     /* JADX WARN: Multi-variable type inference failed */
     private final void e() {
         int top;
-        if (getChildCount() > 1 && !this.f17847i) {
+        if (getChildCount() > 1 && !this.f17987i) {
             int childCount = getChildCount();
             d[] dVarArr = new d[childCount];
             for (int i10 = 0; i10 < childCount; i10++) {
@@ -107,14 +107,14 @@ public final class b extends ReactViewGroup {
             if (childCount > 1) {
                 i.F(dVarArr, new a());
             }
-            com.shopify.reactnative.flash_list.a aVar = this.f17845d;
+            com.shopify.reactnative.flash_list.a aVar = this.f17985d;
             if (aVar.e()) {
                 top = getLeft();
             } else {
                 top = getTop();
             }
             aVar.j(top);
-            this.f17845d.a(dVarArr);
+            this.f17985d.a(dVarArr);
         }
     }
 
@@ -143,10 +143,10 @@ public final class b extends ReactViewGroup {
         int bottom2;
         int top;
         if (getChildCount() == 0) {
-            this.f17845d.i(0);
+            this.f17985d.i(0);
         } else if (getChildCount() == 1) {
             View childAt = getChildAt(0);
-            com.shopify.reactnative.flash_list.a aVar = this.f17845d;
+            com.shopify.reactnative.flash_list.a aVar = this.f17985d;
             if (aVar.e()) {
                 bottom = childAt.getRight();
             } else {
@@ -154,14 +154,14 @@ public final class b extends ReactViewGroup {
             }
             aVar.i(bottom);
         }
-        if (this.f17845d.e()) {
+        if (this.f17985d.e()) {
             bottom2 = getRight();
             top = getLeft();
         } else {
             bottom2 = getBottom();
             top = getTop();
         }
-        return this.f17845d.f() - (bottom2 - top);
+        return this.f17985d.f() - (bottom2 - top);
     }
 
     private final View getParentScrollView() {
@@ -185,58 +185,58 @@ public final class b extends ReactViewGroup {
         d();
         super.dispatchDraw(canvas);
         View parentScrollView = getParentScrollView();
-        if (this.f17846e && parentScrollView != null) {
-            if (this.f17845d.e()) {
+        if (this.f17986e && parentScrollView != null) {
+            if (this.f17985d.e()) {
                 height = parentScrollView.getWidth();
             } else {
                 height = parentScrollView.getHeight();
             }
-            if (this.f17845d.e()) {
+            if (this.f17985d.e()) {
                 scrollY = parentScrollView.getScrollX();
             } else {
                 scrollY = parentScrollView.getScrollY();
             }
-            if (this.f17845d.e()) {
+            if (this.f17985d.e()) {
                 top = getLeft();
             } else {
                 top = getTop();
             }
-            if (this.f17845d.e()) {
+            if (this.f17985d.e()) {
                 bottom = getRight();
             } else {
                 bottom = getBottom();
             }
-            this.f17845d.b(scrollY, Math.max(top - scrollY, 0), Math.max((height + scrollY) - bottom, 0));
+            this.f17985d.b(scrollY, Math.max(top - scrollY, 0), Math.max((height + scrollY) - bottom, 0));
             c();
         }
     }
 
     @NotNull
     public final com.shopify.reactnative.flash_list.a getAlShadow() {
-        return this.f17845d;
+        return this.f17985d;
     }
 
     public final boolean getDisableAutoLayout() {
-        return this.f17847i;
+        return this.f17987i;
     }
 
     public final boolean getEnableInstrumentation() {
-        return this.f17846e;
+        return this.f17986e;
     }
 
     public final double getPixelDensity() {
-        return this.f17848o;
+        return this.f17988o;
     }
 
     public final void setDisableAutoLayout(boolean z10) {
-        this.f17847i = z10;
+        this.f17987i = z10;
     }
 
     public final void setEnableInstrumentation(boolean z10) {
-        this.f17846e = z10;
+        this.f17986e = z10;
     }
 
     public final void setPixelDensity(double d10) {
-        this.f17848o = d10;
+        this.f17988o = d10;
     }
 }

@@ -1,110 +1,67 @@
 package qg;
 
-import java.io.Serializable;
 import java.util.Collection;
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.RandomAccess;
-import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class m extends o implements Serializable {
+class m implements Iterator {
 
-    /* renamed from: i */
-    private transient Map f47422i;
+    /* renamed from: d  reason: collision with root package name */
+    final Iterator f46014d;
 
-    /* renamed from: o */
-    private transient int f47423o;
+    /* renamed from: e  reason: collision with root package name */
+    final Collection f46015e;
 
-    public m(Map map) {
-        if (map.isEmpty()) {
-            this.f47422i = map;
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ n f46016i;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public m(n nVar, Iterator it) {
+        this.f46016i = nVar;
+        this.f46015e = nVar.f46056e;
+        this.f46014d = it;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final void a() {
+        this.f46016i.zzb();
+        if (this.f46016i.f46056e == this.f46015e) {
             return;
         }
-        throw new IllegalArgumentException();
+        throw new ConcurrentModificationException();
     }
 
-    public static /* bridge */ /* synthetic */ int i(m mVar) {
-        return mVar.f47423o;
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        a();
+        return this.f46014d.hasNext();
     }
 
-    public static /* bridge */ /* synthetic */ Map l(m mVar) {
-        return mVar.f47422i;
+    @Override // java.util.Iterator
+    public final Object next() {
+        a();
+        return this.f46014d.next();
     }
 
-    public static /* bridge */ /* synthetic */ void m(m mVar, int i10) {
-        mVar.f47423o = i10;
+    @Override // java.util.Iterator
+    public final void remove() {
+        this.f46014d.remove();
+        q.j(this.f46016i.f46059p);
+        this.f46016i.c();
     }
 
-    public static /* bridge */ /* synthetic */ void n(m mVar, Object obj) {
-        Object obj2;
-        Map map = mVar.f47422i;
-        map.getClass();
-        try {
-            obj2 = map.remove(obj);
-        } catch (ClassCastException | NullPointerException unused) {
-            obj2 = null;
-        }
-        Collection collection = (Collection) obj2;
-        if (collection != null) {
-            int size = collection.size();
-            collection.clear();
-            mVar.f47423o -= size;
-        }
-    }
-
-    @Override // qg.e1
-    public final boolean b(Object obj, Object obj2) {
-        Collection collection = (Collection) this.f47422i.get(obj);
-        if (collection == null) {
-            Collection g10 = g();
-            if (g10.add(obj2)) {
-                this.f47423o++;
-                this.f47422i.put(obj, g10);
-                return true;
-            }
-            throw new AssertionError("New Collection violated the Collection spec");
-        } else if (collection.add(obj2)) {
-            this.f47423o++;
-            return true;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public m(n nVar) {
+        Iterator it;
+        this.f46016i = nVar;
+        Collection collection = nVar.f46056e;
+        this.f46015e = collection;
+        if (collection instanceof List) {
+            it = ((List) collection).listIterator();
         } else {
-            return false;
+            it = collection.iterator();
         }
-    }
-
-    @Override // qg.o
-    final Map e() {
-        return new e(this, this.f47422i);
-    }
-
-    @Override // qg.o
-    final Set f() {
-        return new g(this, this.f47422i);
-    }
-
-    public abstract Collection g();
-
-    public abstract Collection h(Object obj, Collection collection);
-
-    public final Collection j(Object obj) {
-        Collection collection = (Collection) this.f47422i.get(obj);
-        if (collection == null) {
-            collection = g();
-        }
-        return h(obj, collection);
-    }
-
-    public final List k(Object obj, List list, j jVar) {
-        if (list instanceof RandomAccess) {
-            return new h(this, obj, list, jVar);
-        }
-        return new l(this, obj, list, jVar);
-    }
-
-    public final void o() {
-        for (Collection collection : this.f47422i.values()) {
-            collection.clear();
-        }
-        this.f47422i.clear();
-        this.f47423o = 0;
+        this.f46014d = it;
     }
 }

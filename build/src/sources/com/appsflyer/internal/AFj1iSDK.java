@@ -189,7 +189,7 @@ public final class AFj1iSDK {
     public static boolean getMonetizationNetwork(Context context) {
         if (context != null) {
             try {
-                te.a.a(context);
+                ue.a.a(context);
                 return true;
             } catch (Throwable unused) {
                 return false;

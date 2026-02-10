@@ -1,11 +1,37 @@
 package zc;
 
-import tc.l;
+import uc.l;
+import uc.u;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-interface c {
-    boolean a(l lVar);
+final class c extends u {
 
-    void b(b bVar);
+    /* renamed from: b  reason: collision with root package name */
+    private final long f56312b;
 
-    void reset();
+    public c(l lVar, long j10) {
+        super(lVar);
+        boolean z10;
+        if (lVar.getPosition() >= j10) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        oe.a.a(z10);
+        this.f56312b = j10;
+    }
+
+    @Override // uc.u, uc.l
+    public long g() {
+        return super.g() - this.f56312b;
+    }
+
+    @Override // uc.u, uc.l
+    public long getLength() {
+        return super.getLength() - this.f56312b;
+    }
+
+    @Override // uc.u, uc.l
+    public long getPosition() {
+        return super.getPosition() - this.f56312b;
+    }
 }

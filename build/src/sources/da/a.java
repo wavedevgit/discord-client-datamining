@@ -1,19 +1,7 @@
 package da;
+
+import android.graphics.drawable.Drawable;
+import android.text.style.ReplacementSpan;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final String[] f20319a = {"best fit", "lookup"};
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final String[] f20320b = {"search", "standard", "invalid"};
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final String[] f20321c = {"base", "accent", "case", "variant"};
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final String[] f20322d = {"upper", "lower", "false"};
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final String[] f20323e = {"sort", "search"};
+public abstract class a extends ReplacementSpan implements Drawable.Callback {
 }

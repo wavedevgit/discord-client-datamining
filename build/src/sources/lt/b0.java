@@ -1,80 +1,21 @@
 package lt;
 
+import java.io.InputStream;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.DeserializationStrategy;
 import kotlinx.serialization.json.Json;
+import mt.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b0 extends kotlinx.serialization.encoding.a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final a f36685a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final mt.b f36686b;
-
-    public b0(a lexer, Json json) {
-        Intrinsics.checkNotNullParameter(lexer, "lexer");
-        Intrinsics.checkNotNullParameter(json, "json");
-        this.f36685a = lexer;
-        this.f36686b = json.a();
-    }
-
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public byte H() {
-        a aVar = this.f36685a;
-        String q10 = aVar.q();
+public abstract class b0 {
+    public static final Object a(Json json, DeserializationStrategy deserializer, InputStream stream) {
+        Intrinsics.checkNotNullParameter(json, "<this>");
+        Intrinsics.checkNotNullParameter(deserializer, "deserializer");
+        Intrinsics.checkNotNullParameter(stream, "stream");
+        mt.a0 a0Var = new mt.a0(stream);
         try {
-            return kotlin.text.e0.a(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'UByte' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new qr.h();
-        }
-    }
-
-    @Override // kotlinx.serialization.encoding.Decoder, kotlinx.serialization.encoding.c
-    public mt.b a() {
-        return this.f36686b;
-    }
-
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public int h() {
-        a aVar = this.f36685a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.d(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'UInt' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new qr.h();
-        }
-    }
-
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public long l() {
-        a aVar = this.f36685a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.g(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'ULong' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new qr.h();
-        }
-    }
-
-    @Override // kotlinx.serialization.encoding.c
-    public int o(SerialDescriptor descriptor) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        throw new IllegalStateException("unsupported");
-    }
-
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public short s() {
-        a aVar = this.f36685a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.j(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'UShort' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new qr.h();
+            return l0.a(json, deserializer, a0Var);
+        } finally {
+            a0Var.b();
         }
     }
 }

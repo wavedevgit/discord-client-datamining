@@ -3,8 +3,8 @@ package com.discord.device.utils;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.os.Build;
-import bs.c;
-import bs.r;
+import cs.c;
+import cs.r;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -78,7 +78,7 @@ public final class DeviceHardwareInfoKt {
                 if (j10 > j11) {
                     j11 = j10;
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
                 c.a(bufferedReader, null);
             } catch (Exception unused) {
             }

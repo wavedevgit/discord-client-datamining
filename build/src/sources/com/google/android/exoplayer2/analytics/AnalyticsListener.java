@@ -21,9 +21,9 @@ import com.google.android.exoplayer2.trackselection.TrackSelectionParameters;
 import com.google.android.exoplayer2.video.VideoSize;
 import java.io.IOException;
 import java.util.List;
-import mi.j;
-import ne.q;
-import qd.r;
+import ni.j;
+import oe.q;
+import rd.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface AnalyticsListener {
 
@@ -31,46 +31,46 @@ public interface AnalyticsListener {
     public static final class EventTime {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f11924a;
+        public final long f12064a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Timeline f11925b;
+        public final Timeline f12065b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f11926c;
+        public final int f12066c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final r.b f11927d;
+        public final r.b f12067d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final long f11928e;
+        public final long f12068e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final Timeline f11929f;
+        public final Timeline f12069f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f11930g;
+        public final int f12070g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final r.b f11931h;
+        public final r.b f12071h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final long f11932i;
+        public final long f12072i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final long f11933j;
+        public final long f12073j;
 
         public EventTime(long j10, Timeline timeline, int i10, r.b bVar, long j11, Timeline timeline2, int i11, r.b bVar2, long j12, long j13) {
-            this.f11924a = j10;
-            this.f11925b = timeline;
-            this.f11926c = i10;
-            this.f11927d = bVar;
-            this.f11928e = j11;
-            this.f11929f = timeline2;
-            this.f11930g = i11;
-            this.f11931h = bVar2;
-            this.f11932i = j12;
-            this.f11933j = j13;
+            this.f12064a = j10;
+            this.f12065b = timeline;
+            this.f12066c = i10;
+            this.f12067d = bVar;
+            this.f12068e = j11;
+            this.f12069f = timeline2;
+            this.f12070g = i11;
+            this.f12071h = bVar2;
+            this.f12072i = j12;
+            this.f12073j = j13;
         }
 
         public boolean equals(Object obj) {
@@ -79,7 +79,7 @@ public interface AnalyticsListener {
             }
             if (obj != null && EventTime.class == obj.getClass()) {
                 EventTime eventTime = (EventTime) obj;
-                if (this.f11924a == eventTime.f11924a && this.f11926c == eventTime.f11926c && this.f11928e == eventTime.f11928e && this.f11930g == eventTime.f11930g && this.f11932i == eventTime.f11932i && this.f11933j == eventTime.f11933j && j.a(this.f11925b, eventTime.f11925b) && j.a(this.f11927d, eventTime.f11927d) && j.a(this.f11929f, eventTime.f11929f) && j.a(this.f11931h, eventTime.f11931h)) {
+                if (this.f12064a == eventTime.f12064a && this.f12066c == eventTime.f12066c && this.f12068e == eventTime.f12068e && this.f12070g == eventTime.f12070g && this.f12072i == eventTime.f12072i && this.f12073j == eventTime.f12073j && j.a(this.f12065b, eventTime.f12065b) && j.a(this.f12067d, eventTime.f12067d) && j.a(this.f12069f, eventTime.f12069f) && j.a(this.f12071h, eventTime.f12071h)) {
                     return true;
                 }
             }
@@ -87,7 +87,7 @@ public interface AnalyticsListener {
         }
 
         public int hashCode() {
-            return j.b(Long.valueOf(this.f11924a), this.f11925b, Integer.valueOf(this.f11926c), this.f11927d, Long.valueOf(this.f11928e), this.f11929f, Integer.valueOf(this.f11930g), this.f11931h, Long.valueOf(this.f11932i), Long.valueOf(this.f11933j));
+            return j.b(Long.valueOf(this.f12064a), this.f12065b, Integer.valueOf(this.f12066c), this.f12067d, Long.valueOf(this.f12068e), this.f12069f, Integer.valueOf(this.f12070g), this.f12071h, Long.valueOf(this.f12072i), Long.valueOf(this.f12073j));
         }
     }
 
@@ -95,35 +95,35 @@ public interface AnalyticsListener {
     public static final class Events {
 
         /* renamed from: a  reason: collision with root package name */
-        private final q f11934a;
+        private final q f12074a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final SparseArray f11935b;
+        private final SparseArray f12075b;
 
         public Events(q qVar, SparseArray sparseArray) {
-            this.f11934a = qVar;
+            this.f12074a = qVar;
             SparseArray sparseArray2 = new SparseArray(qVar.d());
             for (int i10 = 0; i10 < qVar.d(); i10++) {
                 int c10 = qVar.c(i10);
-                sparseArray2.append(c10, (EventTime) ne.a.e((EventTime) sparseArray.get(c10)));
+                sparseArray2.append(c10, (EventTime) oe.a.e((EventTime) sparseArray.get(c10)));
             }
-            this.f11935b = sparseArray2;
+            this.f12075b = sparseArray2;
         }
 
         public boolean a(int i10) {
-            return this.f11934a.a(i10);
+            return this.f12074a.a(i10);
         }
 
         public int b(int i10) {
-            return this.f11934a.c(i10);
+            return this.f12074a.c(i10);
         }
 
         public EventTime c(int i10) {
-            return (EventTime) ne.a.e((EventTime) this.f11935b.get(i10));
+            return (EventTime) oe.a.e((EventTime) this.f12075b.get(i10));
         }
 
         public int d() {
-            return this.f11934a.d();
+            return this.f12074a.d();
         }
     }
 

@@ -10,55 +10,55 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
-import ni.s;
+import oi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class MediaItem implements com.google.android.exoplayer2.g {
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f11624d;
+    public final String f11764d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final h f11625e;
+    public final h f11765e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final h f11626i;
+    public final h f11766i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final g f11627o;
+    public final g f11767o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final MediaMetadata f11628p;
+    public final MediaMetadata f11768p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final d f11629q;
+    public final d f11769q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final e f11630r;
+    public final e f11770r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final i f11631s;
+    public final i f11771s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final MediaItem f11617t = new c().a();
+    public static final MediaItem f11757t = new c().a();
 
     /* renamed from: u  reason: collision with root package name */
-    private static final String f11618u = ne.w0.B0(0);
+    private static final String f11758u = oe.w0.B0(0);
 
     /* renamed from: v  reason: collision with root package name */
-    private static final String f11619v = ne.w0.B0(1);
+    private static final String f11759v = oe.w0.B0(1);
 
     /* renamed from: w  reason: collision with root package name */
-    private static final String f11620w = ne.w0.B0(2);
+    private static final String f11760w = oe.w0.B0(2);
 
     /* renamed from: x  reason: collision with root package name */
-    private static final String f11621x = ne.w0.B0(3);
+    private static final String f11761x = oe.w0.B0(3);
 
     /* renamed from: y  reason: collision with root package name */
-    private static final String f11622y = ne.w0.B0(4);
+    private static final String f11762y = oe.w0.B0(4);
 
     /* renamed from: z  reason: collision with root package name */
-    private static final String f11623z = ne.w0.B0(5);
-    public static final g.a A = new g.a() { // from class: lc.b0
+    private static final String f11763z = oe.w0.B0(5);
+    public static final g.a A = new g.a() { // from class: mc.b0
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             MediaItem b10;
@@ -71,10 +71,10 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
     public static final class b implements com.google.android.exoplayer2.g {
 
         /* renamed from: i  reason: collision with root package name */
-        private static final String f11632i = ne.w0.B0(0);
+        private static final String f11772i = oe.w0.B0(0);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final g.a f11633o = new g.a() { // from class: lc.c0
+        public static final g.a f11773o = new g.a() { // from class: mc.c0
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 MediaItem.b b10;
@@ -84,22 +84,22 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         };
 
         /* renamed from: d  reason: collision with root package name */
-        public final Uri f11634d;
+        public final Uri f11774d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final Object f11635e;
+        public final Object f11775e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private Uri f11636a;
+            private Uri f11776a;
 
             /* renamed from: b  reason: collision with root package name */
-            private Object f11637b;
+            private Object f11777b;
 
             public a(Uri uri) {
-                this.f11636a = uri;
+                this.f11776a = uri;
             }
 
             public b c() {
@@ -109,8 +109,8 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static b b(Bundle bundle) {
-            Uri uri = (Uri) bundle.getParcelable(f11632i);
-            ne.a.e(uri);
+            Uri uri = (Uri) bundle.getParcelable(f11772i);
+            oe.a.e(uri);
             return new a(uri).c();
         }
 
@@ -122,7 +122,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 return false;
             }
             b bVar = (b) obj;
-            if (this.f11634d.equals(bVar.f11634d) && ne.w0.c(this.f11635e, bVar.f11635e)) {
+            if (this.f11774d.equals(bVar.f11774d) && oe.w0.c(this.f11775e, bVar.f11775e)) {
                 return true;
             }
             return false;
@@ -130,8 +130,8 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
 
         public int hashCode() {
             int i10;
-            int hashCode = this.f11634d.hashCode() * 31;
-            Object obj = this.f11635e;
+            int hashCode = this.f11774d.hashCode() * 31;
+            Object obj = this.f11775e;
             if (obj != null) {
                 i10 = obj.hashCode();
             } else {
@@ -141,8 +141,8 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         }
 
         private b(a aVar) {
-            this.f11634d = aVar.f11636a;
-            this.f11635e = aVar.f11637b;
+            this.f11774d = aVar.f11776a;
+            this.f11775e = aVar.f11777b;
         }
     }
 
@@ -150,95 +150,95 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f11638a;
+        private String f11778a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Uri f11639b;
+        private Uri f11779b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f11640c;
+        private String f11780c;
 
         /* renamed from: g  reason: collision with root package name */
-        private String f11644g;
+        private String f11784g;
 
         /* renamed from: i  reason: collision with root package name */
-        private b f11646i;
+        private b f11786i;
 
         /* renamed from: j  reason: collision with root package name */
-        private Object f11647j;
+        private Object f11787j;
 
         /* renamed from: k  reason: collision with root package name */
-        private MediaMetadata f11648k;
+        private MediaMetadata f11788k;
 
         /* renamed from: d  reason: collision with root package name */
-        private d.a f11641d = new d.a();
+        private d.a f11781d = new d.a();
 
         /* renamed from: e  reason: collision with root package name */
-        private f.a f11642e = new f.a();
+        private f.a f11782e = new f.a();
 
         /* renamed from: f  reason: collision with root package name */
-        private List f11643f = Collections.EMPTY_LIST;
+        private List f11783f = Collections.EMPTY_LIST;
 
         /* renamed from: h  reason: collision with root package name */
-        private ni.s f11645h = ni.s.t();
+        private oi.s f11785h = oi.s.t();
 
         /* renamed from: l  reason: collision with root package name */
-        private g.a f11649l = new g.a();
+        private g.a f11789l = new g.a();
 
         /* renamed from: m  reason: collision with root package name */
-        private i f11650m = i.f11724o;
+        private i f11790m = i.f11864o;
 
         public MediaItem a() {
             boolean z10;
             h hVar;
-            if (this.f11642e.f11685b != null && this.f11642e.f11684a == null) {
+            if (this.f11782e.f11825b != null && this.f11782e.f11824a == null) {
                 z10 = false;
             } else {
                 z10 = true;
             }
-            ne.a.g(z10);
-            Uri uri = this.f11639b;
+            oe.a.g(z10);
+            Uri uri = this.f11779b;
             f fVar = null;
             if (uri != null) {
-                String str = this.f11640c;
-                if (this.f11642e.f11684a != null) {
-                    fVar = this.f11642e.i();
+                String str = this.f11780c;
+                if (this.f11782e.f11824a != null) {
+                    fVar = this.f11782e.i();
                 }
-                hVar = new h(uri, str, fVar, this.f11646i, this.f11643f, this.f11644g, this.f11645h, this.f11647j);
+                hVar = new h(uri, str, fVar, this.f11786i, this.f11783f, this.f11784g, this.f11785h, this.f11787j);
             } else {
                 hVar = null;
             }
-            String str2 = this.f11638a;
+            String str2 = this.f11778a;
             if (str2 == null) {
                 str2 = "";
             }
             String str3 = str2;
-            e g10 = this.f11641d.g();
-            g f10 = this.f11649l.f();
-            MediaMetadata mediaMetadata = this.f11648k;
+            e g10 = this.f11781d.g();
+            g f10 = this.f11789l.f();
+            MediaMetadata mediaMetadata = this.f11788k;
             if (mediaMetadata == null) {
                 mediaMetadata = MediaMetadata.T;
             }
-            return new MediaItem(str3, g10, hVar, f10, mediaMetadata, this.f11650m);
+            return new MediaItem(str3, g10, hVar, f10, mediaMetadata, this.f11790m);
         }
 
         public c b(String str) {
-            this.f11638a = (String) ne.a.e(str);
+            this.f11778a = (String) oe.a.e(str);
             return this;
         }
 
         public c c(List list) {
-            this.f11645h = ni.s.o(list);
+            this.f11785h = oi.s.o(list);
             return this;
         }
 
         public c d(Object obj) {
-            this.f11647j = obj;
+            this.f11787j = obj;
             return this;
         }
 
         public c e(Uri uri) {
-            this.f11639b = uri;
+            this.f11779b = uri;
             return this;
         }
 
@@ -257,25 +257,25 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
     public static class d implements com.google.android.exoplayer2.g {
 
         /* renamed from: q  reason: collision with root package name */
-        public static final d f11651q = new a().f();
+        public static final d f11791q = new a().f();
 
         /* renamed from: r  reason: collision with root package name */
-        private static final String f11652r = ne.w0.B0(0);
+        private static final String f11792r = oe.w0.B0(0);
 
         /* renamed from: s  reason: collision with root package name */
-        private static final String f11653s = ne.w0.B0(1);
+        private static final String f11793s = oe.w0.B0(1);
 
         /* renamed from: t  reason: collision with root package name */
-        private static final String f11654t = ne.w0.B0(2);
+        private static final String f11794t = oe.w0.B0(2);
 
         /* renamed from: u  reason: collision with root package name */
-        private static final String f11655u = ne.w0.B0(3);
+        private static final String f11795u = oe.w0.B0(3);
 
         /* renamed from: v  reason: collision with root package name */
-        private static final String f11656v = ne.w0.B0(4);
+        private static final String f11796v = oe.w0.B0(4);
 
         /* renamed from: w  reason: collision with root package name */
-        public static final g.a f11657w = new g.a() { // from class: lc.d0
+        public static final g.a f11797w = new g.a() { // from class: mc.d0
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 return MediaItem.d.a(bundle);
@@ -283,37 +283,37 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         };
 
         /* renamed from: d  reason: collision with root package name */
-        public final long f11658d;
+        public final long f11798d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final long f11659e;
+        public final long f11799e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final boolean f11660i;
+        public final boolean f11800i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final boolean f11661o;
+        public final boolean f11801o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final boolean f11662p;
+        public final boolean f11802p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private long f11663a;
+            private long f11803a;
 
             /* renamed from: b  reason: collision with root package name */
-            private long f11664b = Long.MIN_VALUE;
+            private long f11804b = Long.MIN_VALUE;
 
             /* renamed from: c  reason: collision with root package name */
-            private boolean f11665c;
+            private boolean f11805c;
 
             /* renamed from: d  reason: collision with root package name */
-            private boolean f11666d;
+            private boolean f11806d;
 
             /* renamed from: e  reason: collision with root package name */
-            private boolean f11667e;
+            private boolean f11807e;
 
             public d f() {
                 return g();
@@ -330,18 +330,18 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 } else {
                     z10 = true;
                 }
-                ne.a.a(z10);
-                this.f11664b = j10;
+                oe.a.a(z10);
+                this.f11804b = j10;
                 return this;
             }
 
             public a i(boolean z10) {
-                this.f11666d = z10;
+                this.f11806d = z10;
                 return this;
             }
 
             public a j(boolean z10) {
-                this.f11665c = z10;
+                this.f11805c = z10;
                 return this;
             }
 
@@ -352,22 +352,22 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 } else {
                     z10 = false;
                 }
-                ne.a.a(z10);
-                this.f11663a = j10;
+                oe.a.a(z10);
+                this.f11803a = j10;
                 return this;
             }
 
             public a l(boolean z10) {
-                this.f11667e = z10;
+                this.f11807e = z10;
                 return this;
             }
         }
 
         public static /* synthetic */ e a(Bundle bundle) {
             a aVar = new a();
-            String str = f11652r;
-            d dVar = f11651q;
-            return aVar.k(bundle.getLong(str, dVar.f11658d)).h(bundle.getLong(f11653s, dVar.f11659e)).j(bundle.getBoolean(f11654t, dVar.f11660i)).i(bundle.getBoolean(f11655u, dVar.f11661o)).l(bundle.getBoolean(f11656v, dVar.f11662p)).g();
+            String str = f11792r;
+            d dVar = f11791q;
+            return aVar.k(bundle.getLong(str, dVar.f11798d)).h(bundle.getLong(f11793s, dVar.f11799e)).j(bundle.getBoolean(f11794t, dVar.f11800i)).i(bundle.getBoolean(f11795u, dVar.f11801o)).l(bundle.getBoolean(f11796v, dVar.f11802p)).g();
         }
 
         public boolean equals(Object obj) {
@@ -378,24 +378,24 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 return false;
             }
             d dVar = (d) obj;
-            if (this.f11658d == dVar.f11658d && this.f11659e == dVar.f11659e && this.f11660i == dVar.f11660i && this.f11661o == dVar.f11661o && this.f11662p == dVar.f11662p) {
+            if (this.f11798d == dVar.f11798d && this.f11799e == dVar.f11799e && this.f11800i == dVar.f11800i && this.f11801o == dVar.f11801o && this.f11802p == dVar.f11802p) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            long j10 = this.f11658d;
-            long j11 = this.f11659e;
-            return (((((((((int) (j10 ^ (j10 >>> 32))) * 31) + ((int) ((j11 >>> 32) ^ j11))) * 31) + (this.f11660i ? 1 : 0)) * 31) + (this.f11661o ? 1 : 0)) * 31) + (this.f11662p ? 1 : 0);
+            long j10 = this.f11798d;
+            long j11 = this.f11799e;
+            return (((((((((int) (j10 ^ (j10 >>> 32))) * 31) + ((int) ((j11 >>> 32) ^ j11))) * 31) + (this.f11800i ? 1 : 0)) * 31) + (this.f11801o ? 1 : 0)) * 31) + (this.f11802p ? 1 : 0);
         }
 
         private d(a aVar) {
-            this.f11658d = aVar.f11663a;
-            this.f11659e = aVar.f11664b;
-            this.f11660i = aVar.f11665c;
-            this.f11661o = aVar.f11666d;
-            this.f11662p = aVar.f11667e;
+            this.f11798d = aVar.f11803a;
+            this.f11799e = aVar.f11804b;
+            this.f11800i = aVar.f11805c;
+            this.f11801o = aVar.f11806d;
+            this.f11802p = aVar.f11807e;
         }
     }
 
@@ -403,7 +403,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
     public static final class e extends d {
 
         /* renamed from: x  reason: collision with root package name */
-        public static final e f11668x = new d.a().g();
+        public static final e f11808x = new d.a().g();
 
         private e(d.a aVar) {
             super(aVar);
@@ -414,54 +414,54 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
     public static final class f implements com.google.android.exoplayer2.g {
 
         /* renamed from: d  reason: collision with root package name */
-        public final UUID f11673d;
+        public final UUID f11813d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final UUID f11674e;
+        public final UUID f11814e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final Uri f11675i;
+        public final Uri f11815i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final ni.t f11676o;
+        public final oi.t f11816o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final ni.t f11677p;
+        public final oi.t f11817p;
 
         /* renamed from: q  reason: collision with root package name */
-        public final boolean f11678q;
+        public final boolean f11818q;
 
         /* renamed from: r  reason: collision with root package name */
-        public final boolean f11679r;
+        public final boolean f11819r;
 
         /* renamed from: s  reason: collision with root package name */
-        public final boolean f11680s;
+        public final boolean f11820s;
 
         /* renamed from: t  reason: collision with root package name */
-        public final ni.s f11681t;
+        public final oi.s f11821t;
 
         /* renamed from: u  reason: collision with root package name */
-        public final ni.s f11682u;
+        public final oi.s f11822u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final byte[] f11683v;
+        private final byte[] f11823v;
 
         /* renamed from: w  reason: collision with root package name */
-        private static final String f11669w = ne.w0.B0(0);
+        private static final String f11809w = oe.w0.B0(0);
 
         /* renamed from: x  reason: collision with root package name */
-        private static final String f11670x = ne.w0.B0(1);
+        private static final String f11810x = oe.w0.B0(1);
 
         /* renamed from: y  reason: collision with root package name */
-        private static final String f11671y = ne.w0.B0(2);
+        private static final String f11811y = oe.w0.B0(2);
 
         /* renamed from: z  reason: collision with root package name */
-        private static final String f11672z = ne.w0.B0(3);
-        private static final String A = ne.w0.B0(4);
-        private static final String B = ne.w0.B0(5);
-        private static final String C = ne.w0.B0(6);
-        private static final String D = ne.w0.B0(7);
-        public static final g.a E = new g.a() { // from class: lc.e0
+        private static final String f11812z = oe.w0.B0(3);
+        private static final String A = oe.w0.B0(4);
+        private static final String B = oe.w0.B0(5);
+        private static final String C = oe.w0.B0(6);
+        private static final String D = oe.w0.B0(7);
+        public static final g.a E = new g.a() { // from class: mc.e0
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 MediaItem.f b10;
@@ -474,40 +474,40 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private UUID f11684a;
+            private UUID f11824a;
 
             /* renamed from: b  reason: collision with root package name */
-            private Uri f11685b;
+            private Uri f11825b;
 
             /* renamed from: c  reason: collision with root package name */
-            private ni.t f11686c;
+            private oi.t f11826c;
 
             /* renamed from: d  reason: collision with root package name */
-            private boolean f11687d;
+            private boolean f11827d;
 
             /* renamed from: e  reason: collision with root package name */
-            private boolean f11688e;
+            private boolean f11828e;
 
             /* renamed from: f  reason: collision with root package name */
-            private boolean f11689f;
+            private boolean f11829f;
 
             /* renamed from: g  reason: collision with root package name */
-            private ni.s f11690g;
+            private oi.s f11830g;
 
             /* renamed from: h  reason: collision with root package name */
-            private byte[] f11691h;
+            private byte[] f11831h;
 
             public f i() {
                 return new f(this);
             }
 
             public a j(boolean z10) {
-                this.f11689f = z10;
+                this.f11829f = z10;
                 return this;
             }
 
             public a k(List list) {
-                this.f11690g = ni.s.o(list);
+                this.f11830g = oi.s.o(list);
                 return this;
             }
 
@@ -518,55 +518,55 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 } else {
                     bArr2 = null;
                 }
-                this.f11691h = bArr2;
+                this.f11831h = bArr2;
                 return this;
             }
 
             public a m(Map map) {
-                this.f11686c = ni.t.c(map);
+                this.f11826c = oi.t.c(map);
                 return this;
             }
 
             public a n(Uri uri) {
-                this.f11685b = uri;
+                this.f11825b = uri;
                 return this;
             }
 
             public a o(boolean z10) {
-                this.f11687d = z10;
+                this.f11827d = z10;
                 return this;
             }
 
             public a p(boolean z10) {
-                this.f11688e = z10;
+                this.f11828e = z10;
                 return this;
             }
 
             public a(UUID uuid) {
-                this.f11684a = uuid;
-                this.f11686c = ni.t.j();
-                this.f11690g = ni.s.t();
+                this.f11824a = uuid;
+                this.f11826c = oi.t.j();
+                this.f11830g = oi.s.t();
             }
 
             private a() {
-                this.f11686c = ni.t.j();
-                this.f11690g = ni.s.t();
+                this.f11826c = oi.t.j();
+                this.f11830g = oi.s.t();
             }
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static f b(Bundle bundle) {
-            UUID fromString = UUID.fromString((String) ne.a.e(bundle.getString(f11669w)));
-            ni.t b10 = ne.d.b(ne.d.f(bundle, f11671y, Bundle.EMPTY));
-            boolean z10 = bundle.getBoolean(f11672z, false);
+            UUID fromString = UUID.fromString((String) oe.a.e(bundle.getString(f11809w)));
+            oi.t b10 = oe.d.b(oe.d.f(bundle, f11811y, Bundle.EMPTY));
+            boolean z10 = bundle.getBoolean(f11812z, false);
             boolean z11 = bundle.getBoolean(A, false);
             boolean z12 = bundle.getBoolean(B, false);
-            ni.s o10 = ni.s.o(ne.d.g(bundle, C, new ArrayList()));
-            return new a(fromString).n((Uri) bundle.getParcelable(f11670x)).m(b10).o(z10).j(z12).p(z11).k(o10).l(bundle.getByteArray(D)).i();
+            oi.s o10 = oi.s.o(oe.d.g(bundle, C, new ArrayList()));
+            return new a(fromString).n((Uri) bundle.getParcelable(f11810x)).m(b10).o(z10).j(z12).p(z11).k(o10).l(bundle.getByteArray(D)).i();
         }
 
         public byte[] c() {
-            byte[] bArr = this.f11683v;
+            byte[] bArr = this.f11823v;
             if (bArr != null) {
                 return Arrays.copyOf(bArr, bArr.length);
             }
@@ -581,7 +581,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 return false;
             }
             f fVar = (f) obj;
-            if (this.f11673d.equals(fVar.f11673d) && ne.w0.c(this.f11675i, fVar.f11675i) && ne.w0.c(this.f11677p, fVar.f11677p) && this.f11678q == fVar.f11678q && this.f11680s == fVar.f11680s && this.f11679r == fVar.f11679r && this.f11682u.equals(fVar.f11682u) && Arrays.equals(this.f11683v, fVar.f11683v)) {
+            if (this.f11813d.equals(fVar.f11813d) && oe.w0.c(this.f11815i, fVar.f11815i) && oe.w0.c(this.f11817p, fVar.f11817p) && this.f11818q == fVar.f11818q && this.f11820s == fVar.f11820s && this.f11819r == fVar.f11819r && this.f11822u.equals(fVar.f11822u) && Arrays.equals(this.f11823v, fVar.f11823v)) {
                 return true;
             }
             return false;
@@ -589,30 +589,30 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
 
         public int hashCode() {
             int i10;
-            int hashCode = this.f11673d.hashCode() * 31;
-            Uri uri = this.f11675i;
+            int hashCode = this.f11813d.hashCode() * 31;
+            Uri uri = this.f11815i;
             if (uri != null) {
                 i10 = uri.hashCode();
             } else {
                 i10 = 0;
             }
-            return ((((((((((((hashCode + i10) * 31) + this.f11677p.hashCode()) * 31) + (this.f11678q ? 1 : 0)) * 31) + (this.f11680s ? 1 : 0)) * 31) + (this.f11679r ? 1 : 0)) * 31) + this.f11682u.hashCode()) * 31) + Arrays.hashCode(this.f11683v);
+            return ((((((((((((hashCode + i10) * 31) + this.f11817p.hashCode()) * 31) + (this.f11818q ? 1 : 0)) * 31) + (this.f11820s ? 1 : 0)) * 31) + (this.f11819r ? 1 : 0)) * 31) + this.f11822u.hashCode()) * 31) + Arrays.hashCode(this.f11823v);
         }
 
         private f(a aVar) {
-            ne.a.g((aVar.f11689f && aVar.f11685b == null) ? false : true);
-            UUID uuid = (UUID) ne.a.e(aVar.f11684a);
-            this.f11673d = uuid;
-            this.f11674e = uuid;
-            this.f11675i = aVar.f11685b;
-            this.f11676o = aVar.f11686c;
-            this.f11677p = aVar.f11686c;
-            this.f11678q = aVar.f11687d;
-            this.f11680s = aVar.f11689f;
-            this.f11679r = aVar.f11688e;
-            this.f11681t = aVar.f11690g;
-            this.f11682u = aVar.f11690g;
-            this.f11683v = aVar.f11691h != null ? Arrays.copyOf(aVar.f11691h, aVar.f11691h.length) : null;
+            oe.a.g((aVar.f11829f && aVar.f11825b == null) ? false : true);
+            UUID uuid = (UUID) oe.a.e(aVar.f11824a);
+            this.f11813d = uuid;
+            this.f11814e = uuid;
+            this.f11815i = aVar.f11825b;
+            this.f11816o = aVar.f11826c;
+            this.f11817p = aVar.f11826c;
+            this.f11818q = aVar.f11827d;
+            this.f11820s = aVar.f11829f;
+            this.f11819r = aVar.f11828e;
+            this.f11821t = aVar.f11830g;
+            this.f11822u = aVar.f11830g;
+            this.f11823v = aVar.f11831h != null ? Arrays.copyOf(aVar.f11831h, aVar.f11831h.length) : null;
         }
     }
 
@@ -620,25 +620,25 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
     public static final class g implements com.google.android.exoplayer2.g {
 
         /* renamed from: q  reason: collision with root package name */
-        public static final g f11692q = new a().f();
+        public static final g f11832q = new a().f();
 
         /* renamed from: r  reason: collision with root package name */
-        private static final String f11693r = ne.w0.B0(0);
+        private static final String f11833r = oe.w0.B0(0);
 
         /* renamed from: s  reason: collision with root package name */
-        private static final String f11694s = ne.w0.B0(1);
+        private static final String f11834s = oe.w0.B0(1);
 
         /* renamed from: t  reason: collision with root package name */
-        private static final String f11695t = ne.w0.B0(2);
+        private static final String f11835t = oe.w0.B0(2);
 
         /* renamed from: u  reason: collision with root package name */
-        private static final String f11696u = ne.w0.B0(3);
+        private static final String f11836u = oe.w0.B0(3);
 
         /* renamed from: v  reason: collision with root package name */
-        private static final String f11697v = ne.w0.B0(4);
+        private static final String f11837v = oe.w0.B0(4);
 
         /* renamed from: w  reason: collision with root package name */
-        public static final g.a f11698w = new g.a() { // from class: lc.f0
+        public static final g.a f11838w = new g.a() { // from class: mc.f0
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 return MediaItem.g.a(bundle);
@@ -646,72 +646,72 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         };
 
         /* renamed from: d  reason: collision with root package name */
-        public final long f11699d;
+        public final long f11839d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final long f11700e;
+        public final long f11840e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final long f11701i;
+        public final long f11841i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final float f11702o;
+        public final float f11842o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final float f11703p;
+        public final float f11843p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private long f11704a = -9223372036854775807L;
+            private long f11844a = -9223372036854775807L;
 
             /* renamed from: b  reason: collision with root package name */
-            private long f11705b = -9223372036854775807L;
+            private long f11845b = -9223372036854775807L;
 
             /* renamed from: c  reason: collision with root package name */
-            private long f11706c = -9223372036854775807L;
+            private long f11846c = -9223372036854775807L;
 
             /* renamed from: d  reason: collision with root package name */
-            private float f11707d = -3.4028235E38f;
+            private float f11847d = -3.4028235E38f;
 
             /* renamed from: e  reason: collision with root package name */
-            private float f11708e = -3.4028235E38f;
+            private float f11848e = -3.4028235E38f;
 
             public g f() {
                 return new g(this);
             }
 
             public a g(long j10) {
-                this.f11706c = j10;
+                this.f11846c = j10;
                 return this;
             }
 
             public a h(float f10) {
-                this.f11708e = f10;
+                this.f11848e = f10;
                 return this;
             }
 
             public a i(long j10) {
-                this.f11705b = j10;
+                this.f11845b = j10;
                 return this;
             }
 
             public a j(float f10) {
-                this.f11707d = f10;
+                this.f11847d = f10;
                 return this;
             }
 
             public a k(long j10) {
-                this.f11704a = j10;
+                this.f11844a = j10;
                 return this;
             }
         }
 
         public static /* synthetic */ g a(Bundle bundle) {
-            String str = f11693r;
-            g gVar = f11692q;
-            return new g(bundle.getLong(str, gVar.f11699d), bundle.getLong(f11694s, gVar.f11700e), bundle.getLong(f11695t, gVar.f11701i), bundle.getFloat(f11696u, gVar.f11702o), bundle.getFloat(f11697v, gVar.f11703p));
+            String str = f11833r;
+            g gVar = f11832q;
+            return new g(bundle.getLong(str, gVar.f11839d), bundle.getLong(f11834s, gVar.f11840e), bundle.getLong(f11835t, gVar.f11841i), bundle.getFloat(f11836u, gVar.f11842o), bundle.getFloat(f11837v, gVar.f11843p));
         }
 
         public boolean equals(Object obj) {
@@ -722,7 +722,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 return false;
             }
             g gVar = (g) obj;
-            if (this.f11699d == gVar.f11699d && this.f11700e == gVar.f11700e && this.f11701i == gVar.f11701i && this.f11702o == gVar.f11702o && this.f11703p == gVar.f11703p) {
+            if (this.f11839d == gVar.f11839d && this.f11840e == gVar.f11840e && this.f11841i == gVar.f11841i && this.f11842o == gVar.f11842o && this.f11843p == gVar.f11843p) {
                 return true;
             }
             return false;
@@ -730,11 +730,11 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
 
         public int hashCode() {
             int i10;
-            long j10 = this.f11699d;
-            long j11 = this.f11700e;
-            long j12 = this.f11701i;
+            long j10 = this.f11839d;
+            long j11 = this.f11840e;
+            long j12 = this.f11841i;
             int i11 = ((((((int) (j10 ^ (j10 >>> 32))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + ((int) ((j12 >>> 32) ^ j12))) * 31;
-            float f10 = this.f11702o;
+            float f10 = this.f11842o;
             int i12 = 0;
             if (f10 != 0.0f) {
                 i10 = Float.floatToIntBits(f10);
@@ -742,7 +742,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 i10 = 0;
             }
             int i13 = (i11 + i10) * 31;
-            float f11 = this.f11703p;
+            float f11 = this.f11843p;
             if (f11 != 0.0f) {
                 i12 = Float.floatToIntBits(f11);
             }
@@ -750,15 +750,15 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         }
 
         private g(a aVar) {
-            this(aVar.f11704a, aVar.f11705b, aVar.f11706c, aVar.f11707d, aVar.f11708e);
+            this(aVar.f11844a, aVar.f11845b, aVar.f11846c, aVar.f11847d, aVar.f11848e);
         }
 
         public g(long j10, long j11, long j12, float f10, float f11) {
-            this.f11699d = j10;
-            this.f11700e = j11;
-            this.f11701i = j12;
-            this.f11702o = f10;
-            this.f11703p = f11;
+            this.f11839d = j10;
+            this.f11840e = j11;
+            this.f11841i = j12;
+            this.f11842o = f10;
+            this.f11843p = f11;
         }
     }
 
@@ -766,51 +766,51 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
     public static final class h implements com.google.android.exoplayer2.g {
 
         /* renamed from: d  reason: collision with root package name */
-        public final Uri f11715d;
+        public final Uri f11855d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final String f11716e;
+        public final String f11856e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final f f11717i;
+        public final f f11857i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final b f11718o;
+        public final b f11858o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final List f11719p;
+        public final List f11859p;
 
         /* renamed from: q  reason: collision with root package name */
-        public final String f11720q;
+        public final String f11860q;
 
         /* renamed from: r  reason: collision with root package name */
-        public final ni.s f11721r;
+        public final oi.s f11861r;
 
         /* renamed from: s  reason: collision with root package name */
-        public final List f11722s;
+        public final List f11862s;
 
         /* renamed from: t  reason: collision with root package name */
-        public final Object f11723t;
+        public final Object f11863t;
 
         /* renamed from: u  reason: collision with root package name */
-        private static final String f11709u = ne.w0.B0(0);
+        private static final String f11849u = oe.w0.B0(0);
 
         /* renamed from: v  reason: collision with root package name */
-        private static final String f11710v = ne.w0.B0(1);
+        private static final String f11850v = oe.w0.B0(1);
 
         /* renamed from: w  reason: collision with root package name */
-        private static final String f11711w = ne.w0.B0(2);
+        private static final String f11851w = oe.w0.B0(2);
 
         /* renamed from: x  reason: collision with root package name */
-        private static final String f11712x = ne.w0.B0(3);
+        private static final String f11852x = oe.w0.B0(3);
 
         /* renamed from: y  reason: collision with root package name */
-        private static final String f11713y = ne.w0.B0(4);
+        private static final String f11853y = oe.w0.B0(4);
 
         /* renamed from: z  reason: collision with root package name */
-        private static final String f11714z = ne.w0.B0(5);
-        private static final String A = ne.w0.B0(6);
-        public static final g.a B = new g.a() { // from class: lc.g0
+        private static final String f11854z = oe.w0.B0(5);
+        private static final String A = oe.w0.B0(6);
+        public static final g.a B = new g.a() { // from class: mc.g0
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 MediaItem.h b10;
@@ -822,39 +822,39 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         /* JADX INFO: Access modifiers changed from: private */
         public static h b(Bundle bundle) {
             f fVar;
-            ni.s d10;
-            ni.s d11;
-            Bundle bundle2 = bundle.getBundle(f11711w);
+            oi.s d10;
+            oi.s d11;
+            Bundle bundle2 = bundle.getBundle(f11851w);
             b bVar = null;
             if (bundle2 == null) {
                 fVar = null;
             } else {
                 fVar = (f) f.E.a(bundle2);
             }
-            Bundle bundle3 = bundle.getBundle(f11712x);
+            Bundle bundle3 = bundle.getBundle(f11852x);
             if (bundle3 != null) {
-                bVar = (b) b.f11633o.a(bundle3);
+                bVar = (b) b.f11773o.a(bundle3);
             }
             b bVar2 = bVar;
-            ArrayList parcelableArrayList = bundle.getParcelableArrayList(f11713y);
+            ArrayList parcelableArrayList = bundle.getParcelableArrayList(f11853y);
             if (parcelableArrayList == null) {
-                d10 = ni.s.t();
+                d10 = oi.s.t();
             } else {
-                d10 = ne.d.d(new g.a() { // from class: lc.h0
+                d10 = oe.d.d(new g.a() { // from class: mc.h0
                     @Override // com.google.android.exoplayer2.g.a
                     public final com.google.android.exoplayer2.g a(Bundle bundle4) {
-                        return pd.c.d(bundle4);
+                        return qd.c.d(bundle4);
                     }
                 }, parcelableArrayList);
             }
-            ni.s sVar = d10;
+            oi.s sVar = d10;
             ArrayList parcelableArrayList2 = bundle.getParcelableArrayList(A);
             if (parcelableArrayList2 == null) {
-                d11 = ni.s.t();
+                d11 = oi.s.t();
             } else {
-                d11 = ne.d.d(k.f11742z, parcelableArrayList2);
+                d11 = oe.d.d(k.f11882z, parcelableArrayList2);
             }
-            return new h((Uri) ne.a.e((Uri) bundle.getParcelable(f11709u)), bundle.getString(f11710v), fVar, bVar2, sVar, bundle.getString(f11714z), d11, null);
+            return new h((Uri) oe.a.e((Uri) bundle.getParcelable(f11849u)), bundle.getString(f11850v), fVar, bVar2, sVar, bundle.getString(f11854z), d11, null);
         }
 
         public boolean equals(Object obj) {
@@ -865,7 +865,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 return false;
             }
             h hVar = (h) obj;
-            if (this.f11715d.equals(hVar.f11715d) && ne.w0.c(this.f11716e, hVar.f11716e) && ne.w0.c(this.f11717i, hVar.f11717i) && ne.w0.c(this.f11718o, hVar.f11718o) && this.f11719p.equals(hVar.f11719p) && ne.w0.c(this.f11720q, hVar.f11720q) && this.f11721r.equals(hVar.f11721r) && ne.w0.c(this.f11723t, hVar.f11723t)) {
+            if (this.f11855d.equals(hVar.f11855d) && oe.w0.c(this.f11856e, hVar.f11856e) && oe.w0.c(this.f11857i, hVar.f11857i) && oe.w0.c(this.f11858o, hVar.f11858o) && this.f11859p.equals(hVar.f11859p) && oe.w0.c(this.f11860q, hVar.f11860q) && this.f11861r.equals(hVar.f11861r) && oe.w0.c(this.f11863t, hVar.f11863t)) {
                 return true;
             }
             return false;
@@ -876,8 +876,8 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
             int hashCode2;
             int hashCode3;
             int hashCode4;
-            int hashCode5 = this.f11715d.hashCode() * 31;
-            String str = this.f11716e;
+            int hashCode5 = this.f11855d.hashCode() * 31;
+            String str = this.f11856e;
             int i10 = 0;
             if (str == null) {
                 hashCode = 0;
@@ -885,48 +885,48 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 hashCode = str.hashCode();
             }
             int i11 = (hashCode5 + hashCode) * 31;
-            f fVar = this.f11717i;
+            f fVar = this.f11857i;
             if (fVar == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = fVar.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            b bVar = this.f11718o;
+            b bVar = this.f11858o;
             if (bVar == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = bVar.hashCode();
             }
-            int hashCode6 = (((i12 + hashCode3) * 31) + this.f11719p.hashCode()) * 31;
-            String str2 = this.f11720q;
+            int hashCode6 = (((i12 + hashCode3) * 31) + this.f11859p.hashCode()) * 31;
+            String str2 = this.f11860q;
             if (str2 == null) {
                 hashCode4 = 0;
             } else {
                 hashCode4 = str2.hashCode();
             }
-            int hashCode7 = (((hashCode6 + hashCode4) * 31) + this.f11721r.hashCode()) * 31;
-            Object obj = this.f11723t;
+            int hashCode7 = (((hashCode6 + hashCode4) * 31) + this.f11861r.hashCode()) * 31;
+            Object obj = this.f11863t;
             if (obj != null) {
                 i10 = obj.hashCode();
             }
             return hashCode7 + i10;
         }
 
-        private h(Uri uri, String str, f fVar, b bVar, List list, String str2, ni.s sVar, Object obj) {
-            this.f11715d = uri;
-            this.f11716e = str;
-            this.f11717i = fVar;
-            this.f11718o = bVar;
-            this.f11719p = list;
-            this.f11720q = str2;
-            this.f11721r = sVar;
-            s.a j10 = ni.s.j();
+        private h(Uri uri, String str, f fVar, b bVar, List list, String str2, oi.s sVar, Object obj) {
+            this.f11855d = uri;
+            this.f11856e = str;
+            this.f11857i = fVar;
+            this.f11858o = bVar;
+            this.f11859p = list;
+            this.f11860q = str2;
+            this.f11861r = sVar;
+            s.a j10 = oi.s.j();
             for (int i10 = 0; i10 < sVar.size(); i10++) {
                 j10.a(((k) sVar.get(i10)).b().j());
             }
-            this.f11722s = j10.k();
-            this.f11723t = obj;
+            this.f11862s = j10.k();
+            this.f11863t = obj;
         }
     }
 
@@ -934,64 +934,64 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
     public static final class i implements com.google.android.exoplayer2.g {
 
         /* renamed from: o  reason: collision with root package name */
-        public static final i f11724o = new a().d();
+        public static final i f11864o = new a().d();
 
         /* renamed from: p  reason: collision with root package name */
-        private static final String f11725p = ne.w0.B0(0);
+        private static final String f11865p = oe.w0.B0(0);
 
         /* renamed from: q  reason: collision with root package name */
-        private static final String f11726q = ne.w0.B0(1);
+        private static final String f11866q = oe.w0.B0(1);
 
         /* renamed from: r  reason: collision with root package name */
-        private static final String f11727r = ne.w0.B0(2);
+        private static final String f11867r = oe.w0.B0(2);
 
         /* renamed from: s  reason: collision with root package name */
-        public static final g.a f11728s = new g.a() { // from class: lc.i0
+        public static final g.a f11868s = new g.a() { // from class: mc.i0
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 MediaItem.i d10;
-                d10 = new MediaItem.i.a().f((Uri) bundle.getParcelable(MediaItem.i.f11725p)).g(bundle.getString(MediaItem.i.f11726q)).e(bundle.getBundle(MediaItem.i.f11727r)).d();
+                d10 = new MediaItem.i.a().f((Uri) bundle.getParcelable(MediaItem.i.f11865p)).g(bundle.getString(MediaItem.i.f11866q)).e(bundle.getBundle(MediaItem.i.f11867r)).d();
                 return d10;
             }
         };
 
         /* renamed from: d  reason: collision with root package name */
-        public final Uri f11729d;
+        public final Uri f11869d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final String f11730e;
+        public final String f11870e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final Bundle f11731i;
+        public final Bundle f11871i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private Uri f11732a;
+            private Uri f11872a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f11733b;
+            private String f11873b;
 
             /* renamed from: c  reason: collision with root package name */
-            private Bundle f11734c;
+            private Bundle f11874c;
 
             public i d() {
                 return new i(this);
             }
 
             public a e(Bundle bundle) {
-                this.f11734c = bundle;
+                this.f11874c = bundle;
                 return this;
             }
 
             public a f(Uri uri) {
-                this.f11732a = uri;
+                this.f11872a = uri;
                 return this;
             }
 
             public a g(String str) {
-                this.f11733b = str;
+                this.f11873b = str;
                 return this;
             }
         }
@@ -1004,7 +1004,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 return false;
             }
             i iVar = (i) obj;
-            if (ne.w0.c(this.f11729d, iVar.f11729d) && ne.w0.c(this.f11730e, iVar.f11730e)) {
+            if (oe.w0.c(this.f11869d, iVar.f11869d) && oe.w0.c(this.f11870e, iVar.f11870e)) {
                 return true;
             }
             return false;
@@ -1012,7 +1012,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
 
         public int hashCode() {
             int hashCode;
-            Uri uri = this.f11729d;
+            Uri uri = this.f11869d;
             int i10 = 0;
             if (uri == null) {
                 hashCode = 0;
@@ -1020,7 +1020,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 hashCode = uri.hashCode();
             }
             int i11 = hashCode * 31;
-            String str = this.f11730e;
+            String str = this.f11870e;
             if (str != null) {
                 i10 = str.hashCode();
             }
@@ -1028,9 +1028,9 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         }
 
         private i(a aVar) {
-            this.f11729d = aVar.f11732a;
-            this.f11730e = aVar.f11733b;
-            this.f11731i = aVar.f11734c;
+            this.f11869d = aVar.f11872a;
+            this.f11870e = aVar.f11873b;
+            this.f11871i = aVar.f11874c;
         }
     }
 
@@ -1045,28 +1045,28 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
     public static class k implements com.google.android.exoplayer2.g {
 
         /* renamed from: s  reason: collision with root package name */
-        private static final String f11735s = ne.w0.B0(0);
+        private static final String f11875s = oe.w0.B0(0);
 
         /* renamed from: t  reason: collision with root package name */
-        private static final String f11736t = ne.w0.B0(1);
+        private static final String f11876t = oe.w0.B0(1);
 
         /* renamed from: u  reason: collision with root package name */
-        private static final String f11737u = ne.w0.B0(2);
+        private static final String f11877u = oe.w0.B0(2);
 
         /* renamed from: v  reason: collision with root package name */
-        private static final String f11738v = ne.w0.B0(3);
+        private static final String f11878v = oe.w0.B0(3);
 
         /* renamed from: w  reason: collision with root package name */
-        private static final String f11739w = ne.w0.B0(4);
+        private static final String f11879w = oe.w0.B0(4);
 
         /* renamed from: x  reason: collision with root package name */
-        private static final String f11740x = ne.w0.B0(5);
+        private static final String f11880x = oe.w0.B0(5);
 
         /* renamed from: y  reason: collision with root package name */
-        private static final String f11741y = ne.w0.B0(6);
+        private static final String f11881y = oe.w0.B0(6);
 
         /* renamed from: z  reason: collision with root package name */
-        public static final g.a f11742z = new g.a() { // from class: lc.j0
+        public static final g.a f11882z = new g.a() { // from class: mc.j0
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 MediaItem.k c10;
@@ -1076,49 +1076,49 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         };
 
         /* renamed from: d  reason: collision with root package name */
-        public final Uri f11743d;
+        public final Uri f11883d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final String f11744e;
+        public final String f11884e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final String f11745i;
+        public final String f11885i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final int f11746o;
+        public final int f11886o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final int f11747p;
+        public final int f11887p;
 
         /* renamed from: q  reason: collision with root package name */
-        public final String f11748q;
+        public final String f11888q;
 
         /* renamed from: r  reason: collision with root package name */
-        public final String f11749r;
+        public final String f11889r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private Uri f11750a;
+            private Uri f11890a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f11751b;
+            private String f11891b;
 
             /* renamed from: c  reason: collision with root package name */
-            private String f11752c;
+            private String f11892c;
 
             /* renamed from: d  reason: collision with root package name */
-            private int f11753d;
+            private int f11893d;
 
             /* renamed from: e  reason: collision with root package name */
-            private int f11754e;
+            private int f11894e;
 
             /* renamed from: f  reason: collision with root package name */
-            private String f11755f;
+            private String f11895f;
 
             /* renamed from: g  reason: collision with root package name */
-            private String f11756g;
+            private String f11896g;
 
             /* JADX INFO: Access modifiers changed from: private */
             public j j() {
@@ -1130,58 +1130,58 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
             }
 
             public a k(String str) {
-                this.f11756g = str;
+                this.f11896g = str;
                 return this;
             }
 
             public a l(String str) {
-                this.f11755f = str;
+                this.f11895f = str;
                 return this;
             }
 
             public a m(String str) {
-                this.f11752c = str;
+                this.f11892c = str;
                 return this;
             }
 
             public a n(String str) {
-                this.f11751b = str;
+                this.f11891b = str;
                 return this;
             }
 
             public a o(int i10) {
-                this.f11754e = i10;
+                this.f11894e = i10;
                 return this;
             }
 
             public a p(int i10) {
-                this.f11753d = i10;
+                this.f11893d = i10;
                 return this;
             }
 
             public a(Uri uri) {
-                this.f11750a = uri;
+                this.f11890a = uri;
             }
 
             private a(k kVar) {
-                this.f11750a = kVar.f11743d;
-                this.f11751b = kVar.f11744e;
-                this.f11752c = kVar.f11745i;
-                this.f11753d = kVar.f11746o;
-                this.f11754e = kVar.f11747p;
-                this.f11755f = kVar.f11748q;
-                this.f11756g = kVar.f11749r;
+                this.f11890a = kVar.f11883d;
+                this.f11891b = kVar.f11884e;
+                this.f11892c = kVar.f11885i;
+                this.f11893d = kVar.f11886o;
+                this.f11894e = kVar.f11887p;
+                this.f11895f = kVar.f11888q;
+                this.f11896g = kVar.f11889r;
             }
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static k c(Bundle bundle) {
-            String string = bundle.getString(f11736t);
-            String string2 = bundle.getString(f11737u);
-            int i10 = bundle.getInt(f11738v, 0);
-            int i11 = bundle.getInt(f11739w, 0);
-            String string3 = bundle.getString(f11740x);
-            return new a((Uri) ne.a.e((Uri) bundle.getParcelable(f11735s))).n(string).m(string2).p(i10).o(i11).l(string3).k(bundle.getString(f11741y)).i();
+            String string = bundle.getString(f11876t);
+            String string2 = bundle.getString(f11877u);
+            int i10 = bundle.getInt(f11878v, 0);
+            int i11 = bundle.getInt(f11879w, 0);
+            String string3 = bundle.getString(f11880x);
+            return new a((Uri) oe.a.e((Uri) bundle.getParcelable(f11875s))).n(string).m(string2).p(i10).o(i11).l(string3).k(bundle.getString(f11881y)).i();
         }
 
         public a b() {
@@ -1196,7 +1196,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 return false;
             }
             k kVar = (k) obj;
-            if (this.f11743d.equals(kVar.f11743d) && ne.w0.c(this.f11744e, kVar.f11744e) && ne.w0.c(this.f11745i, kVar.f11745i) && this.f11746o == kVar.f11746o && this.f11747p == kVar.f11747p && ne.w0.c(this.f11748q, kVar.f11748q) && ne.w0.c(this.f11749r, kVar.f11749r)) {
+            if (this.f11883d.equals(kVar.f11883d) && oe.w0.c(this.f11884e, kVar.f11884e) && oe.w0.c(this.f11885i, kVar.f11885i) && this.f11886o == kVar.f11886o && this.f11887p == kVar.f11887p && oe.w0.c(this.f11888q, kVar.f11888q) && oe.w0.c(this.f11889r, kVar.f11889r)) {
                 return true;
             }
             return false;
@@ -1206,8 +1206,8 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
             int hashCode;
             int hashCode2;
             int hashCode3;
-            int hashCode4 = this.f11743d.hashCode() * 31;
-            String str = this.f11744e;
+            int hashCode4 = this.f11883d.hashCode() * 31;
+            String str = this.f11884e;
             int i10 = 0;
             if (str == null) {
                 hashCode = 0;
@@ -1215,21 +1215,21 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
                 hashCode = str.hashCode();
             }
             int i11 = (hashCode4 + hashCode) * 31;
-            String str2 = this.f11745i;
+            String str2 = this.f11885i;
             if (str2 == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str2.hashCode();
             }
-            int i12 = (((((i11 + hashCode2) * 31) + this.f11746o) * 31) + this.f11747p) * 31;
-            String str3 = this.f11748q;
+            int i12 = (((((i11 + hashCode2) * 31) + this.f11886o) * 31) + this.f11887p) * 31;
+            String str3 = this.f11888q;
             if (str3 == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = str3.hashCode();
             }
             int i13 = (i12 + hashCode3) * 31;
-            String str4 = this.f11749r;
+            String str4 = this.f11889r;
             if (str4 != null) {
                 i10 = str4.hashCode();
             }
@@ -1237,13 +1237,13 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         }
 
         private k(a aVar) {
-            this.f11743d = aVar.f11750a;
-            this.f11744e = aVar.f11751b;
-            this.f11745i = aVar.f11752c;
-            this.f11746o = aVar.f11753d;
-            this.f11747p = aVar.f11754e;
-            this.f11748q = aVar.f11755f;
-            this.f11749r = aVar.f11756g;
+            this.f11883d = aVar.f11890a;
+            this.f11884e = aVar.f11891b;
+            this.f11885i = aVar.f11892c;
+            this.f11886o = aVar.f11893d;
+            this.f11887p = aVar.f11894e;
+            this.f11888q = aVar.f11895f;
+            this.f11889r = aVar.f11896g;
         }
     }
 
@@ -1254,36 +1254,36 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
         e eVar;
         i iVar;
         h hVar;
-        String str = (String) ne.a.e(bundle.getString(f11618u, ""));
-        Bundle bundle2 = bundle.getBundle(f11619v);
+        String str = (String) oe.a.e(bundle.getString(f11758u, ""));
+        Bundle bundle2 = bundle.getBundle(f11759v);
         if (bundle2 == null) {
-            gVar = g.f11692q;
+            gVar = g.f11832q;
         } else {
-            gVar = (g) g.f11698w.a(bundle2);
+            gVar = (g) g.f11838w.a(bundle2);
         }
         g gVar2 = gVar;
-        Bundle bundle3 = bundle.getBundle(f11620w);
+        Bundle bundle3 = bundle.getBundle(f11760w);
         if (bundle3 == null) {
             mediaMetadata = MediaMetadata.T;
         } else {
             mediaMetadata = (MediaMetadata) MediaMetadata.B0.a(bundle3);
         }
         MediaMetadata mediaMetadata2 = mediaMetadata;
-        Bundle bundle4 = bundle.getBundle(f11621x);
+        Bundle bundle4 = bundle.getBundle(f11761x);
         if (bundle4 == null) {
-            eVar = e.f11668x;
+            eVar = e.f11808x;
         } else {
-            eVar = (e) d.f11657w.a(bundle4);
+            eVar = (e) d.f11797w.a(bundle4);
         }
         e eVar2 = eVar;
-        Bundle bundle5 = bundle.getBundle(f11622y);
+        Bundle bundle5 = bundle.getBundle(f11762y);
         if (bundle5 == null) {
-            iVar = i.f11724o;
+            iVar = i.f11864o;
         } else {
-            iVar = (i) i.f11728s.a(bundle5);
+            iVar = (i) i.f11868s.a(bundle5);
         }
         i iVar2 = iVar;
-        Bundle bundle6 = bundle.getBundle(f11623z);
+        Bundle bundle6 = bundle.getBundle(f11763z);
         if (bundle6 == null) {
             hVar = null;
         } else {
@@ -1304,7 +1304,7 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
             return false;
         }
         MediaItem mediaItem = (MediaItem) obj;
-        if (ne.w0.c(this.f11624d, mediaItem.f11624d) && this.f11629q.equals(mediaItem.f11629q) && ne.w0.c(this.f11625e, mediaItem.f11625e) && ne.w0.c(this.f11627o, mediaItem.f11627o) && ne.w0.c(this.f11628p, mediaItem.f11628p) && ne.w0.c(this.f11631s, mediaItem.f11631s)) {
+        if (oe.w0.c(this.f11764d, mediaItem.f11764d) && this.f11769q.equals(mediaItem.f11769q) && oe.w0.c(this.f11765e, mediaItem.f11765e) && oe.w0.c(this.f11767o, mediaItem.f11767o) && oe.w0.c(this.f11768p, mediaItem.f11768p) && oe.w0.c(this.f11771s, mediaItem.f11771s)) {
             return true;
         }
         return false;
@@ -1312,24 +1312,24 @@ public final class MediaItem implements com.google.android.exoplayer2.g {
 
     public int hashCode() {
         int i10;
-        int hashCode = this.f11624d.hashCode() * 31;
-        h hVar = this.f11625e;
+        int hashCode = this.f11764d.hashCode() * 31;
+        h hVar = this.f11765e;
         if (hVar != null) {
             i10 = hVar.hashCode();
         } else {
             i10 = 0;
         }
-        return ((((((((hashCode + i10) * 31) + this.f11627o.hashCode()) * 31) + this.f11629q.hashCode()) * 31) + this.f11628p.hashCode()) * 31) + this.f11631s.hashCode();
+        return ((((((((hashCode + i10) * 31) + this.f11767o.hashCode()) * 31) + this.f11769q.hashCode()) * 31) + this.f11768p.hashCode()) * 31) + this.f11771s.hashCode();
     }
 
     private MediaItem(String str, e eVar, h hVar, g gVar, MediaMetadata mediaMetadata, i iVar) {
-        this.f11624d = str;
-        this.f11625e = hVar;
-        this.f11626i = hVar;
-        this.f11627o = gVar;
-        this.f11628p = mediaMetadata;
-        this.f11629q = eVar;
-        this.f11630r = eVar;
-        this.f11631s = iVar;
+        this.f11764d = str;
+        this.f11765e = hVar;
+        this.f11766i = hVar;
+        this.f11767o = gVar;
+        this.f11768p = mediaMetadata;
+        this.f11769q = eVar;
+        this.f11770r = eVar;
+        this.f11771s = iVar;
     }
 }

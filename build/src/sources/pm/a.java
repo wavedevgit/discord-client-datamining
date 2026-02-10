@@ -1,83 +1,47 @@
 package pm;
-
-import android.util.Log;
-import com.facebook.react.bridge.ReactApplicationContext;
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f45109a = new a();
+    private final double f44336a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final boolean f45110b = true;
+    private final double f44337b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final List f45111c = new ArrayList();
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final long f45112d = System.currentTimeMillis();
-
-    /* renamed from: e  reason: collision with root package name */
-    private static ReactApplicationContext f45113e;
-
-    private a() {
+    public a(double d10, double d11) {
+        this.f44336a = d10;
+        this.f44337b = d11;
     }
 
-    private final void a(String str) {
-        if (f45113e != null && System.currentTimeMillis() - f45112d > 10000) {
-            for (String str2 : f45111c) {
-                ReactApplicationContext reactApplicationContext = f45113e;
-                if (reactApplicationContext != null) {
-                    reactApplicationContext.emitDeviceEvent("KeyboardStateDebugging", "Startup flushed: " + str2);
-                }
-            }
-            f45111c.clear();
-            ReactApplicationContext reactApplicationContext2 = f45113e;
-            if (reactApplicationContext2 != null) {
-                reactApplicationContext2.emitDeviceEvent("KeyboardStateDebugging", str);
-                return;
-            }
-            return;
+    public final double a() {
+        return this.f44337b;
+    }
+
+    public final double b() {
+        return this.f44336a;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        f45111c.add(str);
-    }
-
-    public static /* synthetic */ void c(a aVar, String str, String str2, Throwable th2, int i10, Object obj) {
-        if ((i10 & 4) != 0) {
-            th2 = null;
+        if (!(obj instanceof a)) {
+            return false;
         }
-        aVar.b(str, str2, th2);
-    }
-
-    public static /* synthetic */ void f(a aVar, String str, String str2, Throwable th2, int i10, Object obj) {
-        if ((i10 & 4) != 0) {
-            th2 = null;
+        a aVar = (a) obj;
+        if (Double.compare(this.f44336a, aVar.f44336a) == 0 && Double.compare(this.f44337b, aVar.f44337b) == 0) {
+            return true;
         }
-        aVar.e(str, str2, th2);
+        return false;
     }
 
-    public final void b(String str, String message, Throwable th2) {
-        Intrinsics.checkNotNullParameter(message, "message");
-        if (f45110b) {
-            Log.i(str, message, th2);
-            String str2 = (th2 == null || (str2 = th2.toString()) == null) ? "" : "";
-            a(message + ", " + str2);
-        }
+    public int hashCode() {
+        return (Double.hashCode(this.f44336a) * 31) + Double.hashCode(this.f44337b);
     }
 
-    public final void d(ReactApplicationContext reactApplicationContext) {
-        f45113e = reactApplicationContext;
-    }
-
-    public final void e(String str, String message, Throwable th2) {
-        Intrinsics.checkNotNullParameter(message, "message");
-        if (f45110b) {
-            Log.w(str, message, th2);
-            String str2 = (th2 == null || (str2 = th2.toString()) == null) ? "" : "";
-            a(message + ", " + str2);
-        }
+    public String toString() {
+        double d10 = this.f44336a;
+        double d11 = this.f44337b;
+        return "Dimensions(width=" + d10 + ", height=" + d11 + ")";
     }
 }

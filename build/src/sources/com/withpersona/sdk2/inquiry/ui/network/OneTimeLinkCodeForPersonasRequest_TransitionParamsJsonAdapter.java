@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19822a;
+    private final m.b f19962a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19823b;
+    private final h f19963b;
 
     public OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("componentData");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19822a = a10;
+        this.f19962a = a10;
         h f10 = moshi.f(a0.j(List.class, OneTimeLinkCodeForPersonasRequest.NamedComponentParam.class), x0.d(), "componentData");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19823b = f10;
+        this.f19963b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,14 +37,14 @@ public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19822a);
+            int J = reader.J(this.f19962a);
             if (J != -1) {
                 if (J == 0) {
-                    list = (List) this.f19823b.fromJson(reader);
+                    list = (List) this.f19963b.fromJson(reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -58,7 +58,7 @@ public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter
         if (transitionParams != null) {
             writer.k();
             writer.J("componentData");
-            this.f19823b.toJson(writer, transitionParams.a());
+            this.f19963b.toJson(writer, transitionParams.a());
             writer.s();
             return;
         }

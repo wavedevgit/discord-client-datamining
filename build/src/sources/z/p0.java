@@ -13,103 +13,103 @@ import x.n0;
 public class p0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f55790a;
+    private final int f55886a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final n0.g f55791b;
+    private final n0.g f55887b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Rect f55792c;
+    private final Rect f55888c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f55793d;
+    private final int f55889d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f55794e;
+    private final int f55890e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Matrix f55795f;
+    private final Matrix f55891f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final u0 f55796g;
+    private final u0 f55892g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f55797h;
+    private final String f55893h;
 
     /* renamed from: j  reason: collision with root package name */
-    final ListenableFuture f55799j;
+    final ListenableFuture f55895j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f55800k = -1;
+    private int f55896k = -1;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f55798i = new ArrayList();
+    private final List f55894i = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p0(a0.o0 o0Var, n0.g gVar, Rect rect, int i10, int i11, Matrix matrix, u0 u0Var, ListenableFuture listenableFuture, int i12) {
-        this.f55790a = i12;
-        this.f55791b = gVar;
-        this.f55794e = i11;
-        this.f55793d = i10;
-        this.f55792c = rect;
-        this.f55795f = matrix;
-        this.f55796g = u0Var;
-        this.f55797h = String.valueOf(o0Var.hashCode());
+        this.f55886a = i12;
+        this.f55887b = gVar;
+        this.f55890e = i11;
+        this.f55889d = i10;
+        this.f55888c = rect;
+        this.f55891f = matrix;
+        this.f55892g = u0Var;
+        this.f55893h = String.valueOf(o0Var.hashCode());
         List<a0.q0> a10 = o0Var.a();
         Objects.requireNonNull(a10);
         for (a0.q0 q0Var : a10) {
-            this.f55798i.add(Integer.valueOf(q0Var.getId()));
+            this.f55894i.add(Integer.valueOf(q0Var.getId()));
         }
-        this.f55799j = listenableFuture;
+        this.f55895j = listenableFuture;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ListenableFuture a() {
-        return this.f55799j;
+        return this.f55895j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Rect b() {
-        return this.f55792c;
+        return this.f55888c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c() {
-        return this.f55794e;
+        return this.f55890e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n0.g d() {
-        return this.f55791b;
+        return this.f55887b;
     }
 
     public int e() {
-        return this.f55790a;
+        return this.f55886a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int f() {
-        return this.f55793d;
+        return this.f55889d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Matrix g() {
-        return this.f55795f;
+        return this.f55891f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List h() {
-        return this.f55798i;
+        return this.f55894i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String i() {
-        return this.f55797h;
+        return this.f55893h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean j() {
-        return this.f55796g.g();
+        return this.f55892g.g();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -122,46 +122,46 @@ public class p0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void l(x.o0 o0Var) {
-        this.f55796g.d(o0Var);
+        this.f55892g.d(o0Var);
     }
 
     void m(int i10) {
-        if (this.f55800k != i10) {
-            this.f55800k = i10;
-            this.f55796g.a(i10);
+        if (this.f55896k != i10) {
+            this.f55896k = i10;
+            this.f55892g.a(i10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void n() {
-        this.f55796g.c();
+        this.f55892g.c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o(androidx.camera.core.n nVar) {
-        this.f55796g.f(nVar);
+        this.f55892g.f(nVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(n0.h hVar) {
-        this.f55796g.i(hVar);
+        this.f55892g.i(hVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q() {
-        if (this.f55800k != -1) {
+        if (this.f55896k != -1) {
             m(100);
         }
-        this.f55796g.h();
+        this.f55892g.h();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void r(Bitmap bitmap) {
-        this.f55796g.b(bitmap);
+        this.f55892g.b(bitmap);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void s(x.o0 o0Var) {
-        this.f55796g.e(o0Var);
+        this.f55892g.e(o0Var);
     }
 }

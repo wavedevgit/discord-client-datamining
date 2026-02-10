@@ -12,13 +12,13 @@ import com.google.android.gms.internal.gtm.zzfn;
 public final class AnalyticsJobService extends JobService implements zzfm {
 
     /* renamed from: d  reason: collision with root package name */
-    private zzfn f13648d;
+    private zzfn f13788d;
 
     private final zzfn a() {
-        if (this.f13648d == null) {
-            this.f13648d = new zzfn(this);
+        if (this.f13788d == null) {
+            this.f13788d = new zzfn(this);
         }
-        return this.f13648d;
+        return this.f13788d;
     }
 
     @Override // com.google.android.gms.internal.gtm.zzfm

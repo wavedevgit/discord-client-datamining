@@ -8,36 +8,36 @@ public abstract class s4 {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f46162a;
+        static final /* synthetic */ int[] f44917a;
 
         static {
             int[] iArr = new int[y2.b.values().length];
-            f46162a = iArr;
+            f44917a = iArr;
             try {
                 iArr[y2.b.IMAGE_CAPTURE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f46162a[y2.b.VIDEO_CAPTURE.ordinal()] = 2;
+                f44917a[y2.b.VIDEO_CAPTURE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f46162a[y2.b.STREAM_SHARING.ordinal()] = 3;
+                f44917a[y2.b.STREAM_SHARING.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f46162a[y2.b.PREVIEW.ordinal()] = 4;
+                f44917a[y2.b.PREVIEW.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f46162a[y2.b.IMAGE_ANALYSIS.ordinal()] = 5;
+                f44917a[y2.b.IMAGE_ANALYSIS.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
     }
 
     public static int a(y2.b bVar, int i10) {
-        int i11 = a.f46162a[bVar.ordinal()];
+        int i11 = a.f44917a[bVar.ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 return 1;
@@ -51,7 +51,7 @@ public abstract class s4 {
     }
 
     public static int b(y2.b bVar, int i10) {
-        int i11 = a.f46162a[bVar.ordinal()];
+        int i11 = a.f44917a[bVar.ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 return 1;

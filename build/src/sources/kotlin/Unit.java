@@ -7,7 +7,7 @@ public final class Unit {
     @NotNull
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Unit f32056a = new Unit();
+    public static final Unit f31765a = new Unit();
 
     private Unit() {
     }

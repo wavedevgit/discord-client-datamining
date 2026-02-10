@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var6;
     var4 = function() {
-        _fun34144: for (var _fun34144_ip = 0;;) switch (_fun34144_ip) {
+        _fun34136: for (var _fun34136_ip = 0;;) switch (_fun34136_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -27,8 +27,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var2.UI_THREAD_PROPS_WHITELIST;
                         var2 = var6 in var2;
                         if (!var2) {
-                            _fun34144_ip = 48;
-                            continue _fun34144
+                            _fun34136_ip = 48;
+                            continue _fun34136
                         }
                         case 96: var3 = _closure1_slot0;
                         var4 = _closure1_slot1;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var4;
     var3 = function arg0() {
-        _fun34145: for (var _fun34145_ip = 0;;) switch (_fun34145_ip) {
+        _fun34137: for (var _fun34137_ip = 0;;) switch (_fun34137_ip) {
             case 0:
                 var4 = global;
                 var8 = var4.Object;
@@ -118,8 +118,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.bind(var5)(var2);
                 var2 = var2.length;
                 if (!(var3 !== var2)) {
-                    _fun34145_ip = 179;
-                    continue _fun34145
+                    _fun34137_ip = 179;
+                    continue _fun34137
                 }
             case 171:
                 var1 = _closure1_slot4;
@@ -158,7 +158,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var4.bind(var0)();
     var2.configureProps = var4;
     var4 = function arg0() {
-        _fun34146: for (var _fun34146_ip = 0;;) switch (_fun34146_ip) {
+        _fun34138: for (var _fun34138_ip = 0;;) switch (_fun34138_ip) {
             case 0:
                 var4 = global;
                 var8 = var4.Object;
@@ -195,8 +195,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.bind(var5)(var2);
                 var2 = var2.length;
                 if (!(var3 !== var2)) {
-                    _fun34146_ip = 179;
-                    continue _fun34146
+                    _fun34138_ip = 179;
+                    continue _fun34138
                 }
             case 171:
                 var1 = _closure1_slot4;
@@ -208,7 +208,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.addWhitelistedNativeProps = var4;
     var2.addWhitelistedUIProps = var3;
     var3 = function arg0() {
-        _fun34147: for (var _fun34147_ip = 0;;) switch (_fun34147_ip) {
+        _fun34139: for (var _fun34139_ip = 0;;) switch (_fun34139_ip) {
             case 0:
                 var2 = arg0;
                 var4 = _closure1_slot0;
@@ -221,8 +221,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.bind(var4)(var2);
                 var3 = _closure1_slot2;
                 if (var3) {
-                    _fun34147_ip = 97;
-                    continue _fun34147
+                    _fun34139_ip = 97;
+                    continue _fun34139
                 }
             case 46:
                 var5 = _closure1_slot0;
@@ -242,7 +242,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.configureReanimatedLogger = var3;
     var1 = function arg0() {
-        _fun34148: for (var _fun34148_ip = 0;;) switch (_fun34148_ip) {
+        _fun34140: for (var _fun34140_ip = 0;;) switch (_fun34140_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.uiViewClassName;
@@ -251,8 +251,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.has;
                 var3 = var3.bind(var4)(var2);
                 if (var3) {
-                    _fun34148_ip = 101;
-                    continue _fun34148
+                    _fun34140_ip = 101;
+                    continue _fun34140
                 }
             case 37:
                 var4 = {};
@@ -263,7 +263,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var3.bind(var5)(var6);
                 var3 = var5.forEach;
                 var1 = function(arg0) { // Environment: var1
-                    _fun34149: for (var _fun34149_ip = 0;;) switch (_fun34149_ip) {
+                    _fun34141: for (var _fun34141_ip = 0;;) switch (_fun34141_ip) {
                         case 0:
                             var3 = arg0;
                             var4 = _closure1_slot0;
@@ -276,8 +276,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var1.NATIVE_THREAD_PROPS_WHITELIST;
                             var1 = var3 in var1;
                             if (var1) {
-                                _fun34149_ip = 80;
-                                continue _fun34149
+                                _fun34141_ip = 80;
+                                continue _fun34141
                             }
                         case 47:
                             var4 = _closure1_slot0;
@@ -289,8 +289,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var3 in var2;
                         case 80:
                             if (var1) {
-                                _fun34149_ip = 96;
-                                continue _fun34149
+                                _fun34141_ip = 96;
+                                continue _fun34141
                             }
                         case 83:
                             var2 = _closure2_slot0;

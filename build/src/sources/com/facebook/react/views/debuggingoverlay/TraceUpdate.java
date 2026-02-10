@@ -12,13 +12,13 @@ public final class TraceUpdate {
     private final int color;
 
     /* renamed from: id  reason: collision with root package name */
-    private final int f11255id;
+    private final int f11395id;
     @NotNull
     private final RectF rectangle;
 
     public TraceUpdate(int i10, @NotNull RectF rectangle, int i11) {
         Intrinsics.checkNotNullParameter(rectangle, "rectangle");
-        this.f11255id = i10;
+        this.f11395id = i10;
         this.rectangle = rectangle;
         this.color = i11;
     }
@@ -28,7 +28,7 @@ public final class TraceUpdate {
     }
 
     public final int getId() {
-        return this.f11255id;
+        return this.f11395id;
     }
 
     @NotNull

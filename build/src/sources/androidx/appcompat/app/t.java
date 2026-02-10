@@ -3,26 +3,26 @@ package androidx.appcompat.app;
 class t {
 
     /* renamed from: d  reason: collision with root package name */
-    private static t f1551d;
+    private static t f1248d;
 
     /* renamed from: a  reason: collision with root package name */
-    public long f1552a;
+    public long f1249a;
 
     /* renamed from: b  reason: collision with root package name */
-    public long f1553b;
+    public long f1250b;
 
     /* renamed from: c  reason: collision with root package name */
-    public int f1554c;
+    public int f1251c;
 
     t() {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static t b() {
-        if (f1551d == null) {
-            f1551d = new t();
+        if (f1248d == null) {
+            f1248d = new t();
         }
-        return f1551d;
+        return f1248d;
     }
 
     public void a(long j10, double d10, double d11) {
@@ -36,22 +36,22 @@ class t {
         double d14 = 0.01745329238474369d * d10;
         double sin2 = (Math.sin(-0.10471975803375244d) - (Math.sin(d14) * Math.sin(asin))) / (Math.cos(d14) * Math.cos(asin));
         if (sin2 >= 1.0d) {
-            this.f1554c = 1;
-            this.f1552a = -1L;
-            this.f1553b = -1L;
+            this.f1251c = 1;
+            this.f1249a = -1L;
+            this.f1250b = -1L;
         } else if (sin2 <= -1.0d) {
-            this.f1554c = 0;
-            this.f1552a = -1L;
-            this.f1553b = -1L;
+            this.f1251c = 0;
+            this.f1249a = -1L;
+            this.f1250b = -1L;
         } else {
             double acos = (float) (Math.acos(sin2) / 6.283185307179586d);
-            this.f1552a = Math.round((round + acos) * 8.64E7d) + 946728000000L;
+            this.f1249a = Math.round((round + acos) * 8.64E7d) + 946728000000L;
             long round2 = Math.round((round - acos) * 8.64E7d) + 946728000000L;
-            this.f1553b = round2;
-            if (round2 < j10 && this.f1552a > j10) {
-                this.f1554c = 0;
+            this.f1250b = round2;
+            if (round2 < j10 && this.f1249a > j10) {
+                this.f1251c = 0;
             } else {
-                this.f1554c = 1;
+                this.f1251c = 1;
             }
         }
     }

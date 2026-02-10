@@ -22,34 +22,34 @@ public abstract class NativeDocumentPickerSpec extends ReactContextBaseJavaModul
     }
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract WritableMap isKnownType(String str, String str2);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void keepLocalCopy(ReadableMap readableMap, Promise promise);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void pick(ReadableMap readableMap, Promise promise);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void pickDirectory(ReadableMap readableMap, Promise promise);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void releaseLongTermAccess(ReadableArray readableArray, Promise promise);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void releaseSecureAccess(ReadableArray readableArray, Promise promise);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void saveDocument(ReadableMap readableMap, Promise promise);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void writeDocuments(ReadableMap readableMap, Promise promise);
 }

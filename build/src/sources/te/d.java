@@ -1,27 +1,19 @@
 package te;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import com.google.android.gms.internal.gtm.zzbv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class d extends hf.a {
-    public static final Parcelable.Creator<d> CREATOR = new e();
+public abstract class d extends h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f50642d;
+    private final zzbv f50827d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final String f50643e;
-
-    public d(String str, String str2) {
-        this.f50642d = str;
-        this.f50643e = str2;
+    public d(zzbv zzbvVar) {
+        super(zzbvVar.zzd(), zzbvVar.zzr());
+        this.f50827d = zzbvVar;
     }
 
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.s(parcel, 1, this.f50642d, false);
-        hf.c.s(parcel, 2, this.f50643e, false);
-        hf.c.b(parcel, a10);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final zzbv a() {
+        return this.f50827d;
     }
 }

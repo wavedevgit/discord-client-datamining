@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var10 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var10;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.View;
     var _closure1_slot3 = var3;
-    var11 = 2;
-    var3 = var5[var11];
+    var9 = 2;
+    var3 = var5[var9];
     var3 = var4.bind(var0)(var3);
     var3 = var3.PremiumTypes;
     var _closure1_slot4 = var3;
@@ -44,59 +44,59 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.createStyles;
     var3 = {};
     var8 = {};
-    var9 = 5;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var10 = 5;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.colors;
     var12 = var12.BACKGROUND_BRAND;
     var8.backgroundColor = var12;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.radii;
     var12 = var12.round;
     var8.borderRadius = var12;
     var12 = 6;
     var8.paddingHorizontal = var12;
-    var8.paddingVertical = var11;
+    var8.paddingVertical = var9;
     var3.newIconBadge = var8;
     var8 = {};
-    var11 = 'uppercase';
-    var8.textTransform = var11;
+    var9 = 'uppercase';
+    var8.textTransform = var9;
     var3.newIconBadgeText = var8;
     var8 = {};
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.colors;
     var12 = var12.WHITE;
     var8.backgroundColor = var12;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.radii;
     var12 = var12.md;
     var8.borderRadius = var12;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.spacing;
     var12 = var12.PX_8;
     var8.paddingHorizontal = var12;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.spacing;
     var12 = var12.PX_4;
     var8.paddingVertical = var12;
     var3.limitedTimeBadge = var8;
     var8 = {};
-    var8.textTransform = var11;
+    var8.textTransform = var9;
     var3.limitedTimeBadgeText = var8;
     var8 = {};
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.colors;
     var12 = var12.BACKGROUND_MOD_STRONG;
     var8.backgroundColor = var12;
-    var8.padding = var9;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var8.padding = var10;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.radii;
     var12 = var12.round;
     var8.borderRadius = var12;
@@ -110,27 +110,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'alignItems': 'center',
         'gap': 2
     };
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.unsafe_rawColors;
     var12 = var12.PREMIUM_TIER_2_PINK_FOR_GRADIENTS_2;
     var8.backgroundColor = var12;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.round;
-    var8.borderRadius = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.radii;
+    var10 = var10.round;
+    var8.borderRadius = var10;
     var3.newLockIconBadge = var8;
     var8 = {};
-    var8.textTransform = var11;
+    var8.textTransform = var9;
     var3.newLockIconBadgeText = var8;
-    var8 = {};
-    var9 = var5[var9];
-    var9 = var10.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.INTERACTIVE_TEXT_ACTIVE;
-    var8.tintColor = var9;
-    var3.lockIcon = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
     var3 = 11;
@@ -183,14 +176,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NewBadge = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun51505: for (var _fun51505_ip = 0;;) switch (_fun51505_ip) {
+        _fun51508: for (var _fun51508_ip = 0;;) switch (_fun51508_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.isNew;
                 var4 = undefined;
                 if (!(var0 === var4)) {
-                    _fun51505_ip = 17;
-                    continue _fun51505
+                    _fun51508_ip = 17;
+                    continue _fun51508
                 }
             case 15:
                 var0 = false;
@@ -199,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot7;
                 var9 = var1.bind(var4)();
                 if (var0) {
-                    _fun51505_ip = 156;
-                    continue _fun51505
+                    _fun51508_ip = 156;
+                    continue _fun51508
                 }
             case 36:
                 var2 = _closure1_slot5;
@@ -230,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var4)(var6, var3);
                 var0.children = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun51505_ip = 408;
-                continue _fun51505;
+                _fun51508_ip = 408;
+                continue _fun51508;
             case 156:
                 var3 = _closure1_slot6;
                 var10 = _closure1_slot1;
@@ -297,14 +290,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.LockBadge = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun51506: for (var _fun51506_ip = 0;;) switch (_fun51506_ip) {
+        _fun51509: for (var _fun51509_ip = 0;;) switch (_fun51509_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.isNew;
                 var4 = undefined;
                 if (!(var0 === var4)) {
-                    _fun51506_ip = 17;
-                    continue _fun51506
+                    _fun51509_ip = 17;
+                    continue _fun51509
                 }
             case 15:
                 var0 = false;
@@ -313,8 +306,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot7;
                 var9 = var1.bind(var4)();
                 if (var0) {
-                    _fun51506_ip = 156;
-                    continue _fun51506
+                    _fun51509_ip = 156;
+                    continue _fun51509
                 }
             case 36:
                 var2 = _closure1_slot5;
@@ -344,8 +337,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var4)(var6, var3);
                 var0.children = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun51506_ip = 408;
-                continue _fun51506;
+                _fun51509_ip = 408;
+                continue _fun51509;
             case 156:
                 var3 = _closure1_slot6;
                 var10 = _closure1_slot1;
@@ -454,4 +447,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.LimitedTimeBadge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1623, 33, 1297, 671, 3942, 1234, 5799, 4860, 5800, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1623, 33, 1297, 671, 3942, 1234, 5800, 4860, 5801, 2]);

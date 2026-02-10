@@ -14,13 +14,13 @@ import java.util.Objects;
 public final class y implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28665d;
+    private String f28865d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28666e;
+    private String f28866e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f28667i;
+    private Map f28867i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -39,12 +39,12 @@ public final class y implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.u1(iLogger, hashMap, o02);
+                        e3Var.p1(iLogger, hashMap, o02);
                     } else {
-                        str2 = e3Var.e1();
+                        str2 = e3Var.b1();
                     }
                 } else {
-                    str = e3Var.e1();
+                    str = e3Var.b1();
                 }
             }
             e3Var.D();
@@ -65,20 +65,20 @@ public final class y implements w1 {
     }
 
     public y(String str, String str2) {
-        this.f28665d = (String) io.sentry.util.y.c(str, "name is required.");
-        this.f28666e = (String) io.sentry.util.y.c(str2, "version is required.");
+        this.f28865d = (String) io.sentry.util.y.c(str, "name is required.");
+        this.f28866e = (String) io.sentry.util.y.c(str2, "version is required.");
     }
 
     public String a() {
-        return this.f28665d;
+        return this.f28865d;
     }
 
     public String b() {
-        return this.f28666e;
+        return this.f28866e;
     }
 
     public void c(Map map) {
-        this.f28667i = map;
+        this.f28867i = map;
     }
 
     public boolean equals(Object obj) {
@@ -87,7 +87,7 @@ public final class y implements w1 {
         }
         if (obj != null && y.class == obj.getClass()) {
             y yVar = (y) obj;
-            if (Objects.equals(this.f28665d, yVar.f28665d) && Objects.equals(this.f28666e, yVar.f28666e)) {
+            if (Objects.equals(this.f28865d, yVar.f28865d) && Objects.equals(this.f28866e, yVar.f28866e)) {
                 return true;
             }
         }
@@ -95,18 +95,18 @@ public final class y implements w1 {
     }
 
     public int hashCode() {
-        return Objects.hash(this.f28665d, this.f28666e);
+        return Objects.hash(this.f28865d, this.f28866e);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28665d);
-        f3Var.e("version").f(this.f28666e);
-        Map map = this.f28667i;
+        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28865d);
+        f3Var.e("version").f(this.f28866e);
+        Map map = this.f28867i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28667i.get(str));
+                f3Var.e(str).j(iLogger, this.f28867i.get(str));
             }
         }
         f3Var.D();

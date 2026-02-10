@@ -4,62 +4,62 @@ public interface a {
 
     /* renamed from: com.facebook.hermes.intl.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    static /* synthetic */ class C0147a {
+    static /* synthetic */ class C0174a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f10148a;
+        static final /* synthetic */ int[] f10288a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f10149b;
+        static final /* synthetic */ int[] f10289b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ int[] f10150c;
+        static final /* synthetic */ int[] f10290c;
 
         static {
             int[] iArr = new int[b.values().length];
-            f10150c = iArr;
+            f10290c = iArr;
             try {
                 iArr[b.UPPER.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f10150c[b.LOWER.ordinal()] = 2;
+                f10290c[b.LOWER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f10150c[b.FALSE.ordinal()] = 3;
+                f10290c[b.FALSE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             int[] iArr2 = new int[d.values().length];
-            f10149b = iArr2;
+            f10289b = iArr2;
             try {
                 iArr2[d.SORT.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f10149b[d.SEARCH.ordinal()] = 2;
+                f10289b[d.SEARCH.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             int[] iArr3 = new int[c.values().length];
-            f10148a = iArr3;
+            f10288a = iArr3;
             try {
                 iArr3[c.BASE.ordinal()] = 1;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f10148a[c.ACCENT.ordinal()] = 2;
+                f10288a[c.ACCENT.ordinal()] = 2;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f10148a[c.CASE.ordinal()] = 3;
+                f10288a[c.CASE.ordinal()] = 3;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f10148a[c.VARIANT.ordinal()] = 4;
+                f10288a[c.VARIANT.ordinal()] = 4;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f10148a[c.LOCALE.ordinal()] = 5;
+                f10288a[c.LOCALE.ordinal()] = 5;
             } catch (NoSuchFieldError unused10) {
             }
         }
@@ -73,7 +73,7 @@ public interface a {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = C0147a.f10150c[ordinal()];
+            int i10 = C0174a.f10290c[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
@@ -97,7 +97,7 @@ public interface a {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = C0147a.f10148a[ordinal()];
+            int i10 = C0174a.f10288a[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -124,7 +124,7 @@ public interface a {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = C0147a.f10149b[ordinal()];
+            int i10 = C0174a.f10289b[ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return "search";
@@ -139,13 +139,13 @@ public interface a {
 
     c b();
 
-    a c(boolean z10);
+    a c(ea.b bVar);
 
-    a d(b bVar);
+    a d(boolean z10);
 
-    a e(boolean z10);
+    a e(b bVar);
 
-    a f(da.b bVar);
+    a f(boolean z10);
 
     a g(c cVar);
 }

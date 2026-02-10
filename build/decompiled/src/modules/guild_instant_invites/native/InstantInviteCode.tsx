@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun73534: for (var _fun73534_ip = 0;;) switch (_fun73534_ip) {
+        _fun73399: for (var _fun73399_ip = 0;;) switch (_fun73399_ip) {
             case 0:
                 var0 = arg0;
                 var22 = var0.channel;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0.bind(var1)(var22);
                 var5 = null;
                 if (!(var5 == var12)) {
-                    _fun73534_ip = 90;
-                    continue _fun73534
+                    _fun73399_ip = 90;
+                    continue _fun73399
                 }
             case 64:
                 var1 = _closure1_slot0;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var7;
                 var5 = var5 != var13;
                 if (!var5) {
-                    _fun73534_ip = 556;
-                    continue _fun73534
+                    _fun73399_ip = 556;
+                    continue _fun73399
                 }
             case 313:
                 var8 = _closure1_slot7;
@@ -169,13 +169,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var2, var0, var4);
-    var12 = 0;
-    var7 = var6[var12];
+    var10 = 0;
+    var7 = var6[var10];
     var4 = arg3;
     var0 = undefined;
     var4 = var4.bind(var0)(var7);
-    var13 = 1;
-    var4 = var6[var13];
+    var12 = 1;
+    var4 = var6[var12];
     var4 = var5.bind(var0)(var4);
     var4 = var4.View;
     var _closure1_slot3 = var4;
@@ -199,29 +199,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var5.bind(var0)(var4);
     var7 = var8.createStyles;
     var4 = {};
-    var10 = 8;
-    var9 = {
-        'flexDirection': 'row',
-        'gap': 8,
-        'alignItems': 'center'
-    };
-    var4.inviteDetails = var9;
-    var9 = {};
-    var9.marginRight = var10;
-    var10 = 6;
-    var14 = var6[var10];
-    var14 = var11.bind(var0)(var14);
-    var14 = var14.colors;
-    var14 = var14.MOBILE_TEXT_HEADING_PRIMARY;
-    var9.color = var14;
-    var4.code = var9;
-    var9 = {};
-    var9.flex = var13;
-    var4.flex = var9;
     var9 = {};
     var9.flex = var12;
+    var4.flex = var9;
+    var9 = {};
+    var9.flex = var10;
     var4.channel = var9;
     var9 = {};
+    var10 = 6;
     var10 = var6[var10];
     var10 = var11.bind(var0)(var10);
     var10 = var10.colors;
@@ -288,4 +273,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.InstantInviteDetails = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3102, 1621, 33, 1297, 671, 4809, 4848, 4080, 3942, 4794, 3275, 1234, 9205, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3102, 1621, 33, 1297, 671, 4809, 4848, 4080, 3942, 4794, 3275, 1234, 9183, 2]);

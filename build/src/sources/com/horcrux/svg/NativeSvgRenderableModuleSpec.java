@@ -16,11 +16,11 @@ public abstract class NativeSvgRenderableModuleSpec extends ReactContextBaseJava
     }
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract WritableMap getBBox(Double d10, ReadableMap readableMap);
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract WritableMap getCTM(Double d10);
 
     @Override // com.facebook.react.bridge.NativeModule
@@ -29,26 +29,26 @@ public abstract class NativeSvgRenderableModuleSpec extends ReactContextBaseJava
     }
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract WritableMap getPointAtLength(Double d10, ReadableMap readableMap);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void getRawResource(String str, Promise promise);
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract WritableMap getScreenCTM(Double d10);
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract double getTotalLength(Double d10);
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract boolean isPointInFill(Double d10, ReadableMap readableMap);
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract boolean isPointInStroke(Double d10, ReadableMap readableMap);
 }

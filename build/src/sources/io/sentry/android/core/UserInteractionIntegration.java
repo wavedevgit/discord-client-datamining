@@ -14,40 +14,40 @@ import java.io.Closeable;
 public final class UserInteractionIntegration implements io.sentry.k1, Closeable, Application.ActivityLifecycleCallbacks {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Application f27040d;
+    private final Application f27240d;
 
     /* renamed from: e  reason: collision with root package name */
-    private io.sentry.w0 f27041e;
+    private io.sentry.w0 f27241e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SentryAndroidOptions f27042i;
+    private SentryAndroidOptions f27242i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f27043o;
+    private final boolean f27243o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f27044p;
+    private final boolean f27244p;
 
     public UserInteractionIntegration(Application application, io.sentry.util.u uVar) {
-        this.f27040d = (Application) io.sentry.util.y.c(application, "Application is required");
-        this.f27043o = uVar.d("androidx.core.view.GestureDetectorCompat", this.f27042i);
-        this.f27044p = uVar.d("androidx.lifecycle.Lifecycle", this.f27042i);
+        this.f27240d = (Application) io.sentry.util.y.c(application, "Application is required");
+        this.f27243o = uVar.d("androidx.core.view.GestureDetectorCompat", this.f27242i);
+        this.f27244p = uVar.d("androidx.lifecycle.Lifecycle", this.f27242i);
     }
 
     private void a(Activity activity) {
         Window window = activity.getWindow();
         if (window == null) {
-            SentryAndroidOptions sentryAndroidOptions = this.f27042i;
+            SentryAndroidOptions sentryAndroidOptions = this.f27242i;
             if (sentryAndroidOptions != null) {
                 sentryAndroidOptions.getLogger().c(SentryLevel.INFO, "Window was null in startTracking", new Object[0]);
             }
-        } else if (this.f27041e != null && this.f27042i != null) {
+        } else if (this.f27241e != null && this.f27242i != null) {
             Window.Callback callback = window.getCallback();
             if (callback == null) {
                 callback = new io.sentry.android.core.internal.gestures.b();
             }
             if (!(callback instanceof io.sentry.android.core.internal.gestures.h)) {
-                window.setCallback(new io.sentry.android.core.internal.gestures.h(callback, activity, new io.sentry.android.core.internal.gestures.g(activity, this.f27041e, this.f27042i), this.f27042i));
+                window.setCallback(new io.sentry.android.core.internal.gestures.h(callback, activity, new io.sentry.android.core.internal.gestures.g(activity, this.f27241e, this.f27242i), this.f27242i));
             }
         }
     }
@@ -55,7 +55,7 @@ public final class UserInteractionIntegration implements io.sentry.k1, Closeable
     private void k(Activity activity) {
         Window window = activity.getWindow();
         if (window == null) {
-            SentryAndroidOptions sentryAndroidOptions = this.f27042i;
+            SentryAndroidOptions sentryAndroidOptions = this.f27242i;
             if (sentryAndroidOptions != null) {
                 sentryAndroidOptions.getLogger().c(SentryLevel.INFO, "Window was null in stopTracking", new Object[0]);
                 return;
@@ -76,8 +76,8 @@ public final class UserInteractionIntegration implements io.sentry.k1, Closeable
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f27040d.unregisterActivityLifecycleCallbacks(this);
-        SentryAndroidOptions sentryAndroidOptions = this.f27042i;
+        this.f27240d.unregisterActivityLifecycleCallbacks(this);
+        SentryAndroidOptions sentryAndroidOptions = this.f27242i;
         if (sentryAndroidOptions != null) {
             sentryAndroidOptions.getLogger().c(SentryLevel.DEBUG, "UserInteractionIntegration removed.", new Object[0]);
         }
@@ -92,24 +92,24 @@ public final class UserInteractionIntegration implements io.sentry.k1, Closeable
         } else {
             sentryAndroidOptions = null;
         }
-        this.f27042i = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f27041e = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
-        if (!this.f27042i.isEnableUserInteractionBreadcrumbs() && !this.f27042i.isEnableUserInteractionTracing()) {
+        this.f27242i = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
+        this.f27241e = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
+        if (!this.f27242i.isEnableUserInteractionBreadcrumbs() && !this.f27242i.isEnableUserInteractionTracing()) {
             z10 = false;
         } else {
             z10 = true;
         }
-        ILogger logger = this.f27042i.getLogger();
+        ILogger logger = this.f27242i.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
         logger.c(sentryLevel, "UserInteractionIntegration enabled: %s", Boolean.valueOf(z10));
         if (z10) {
-            if (this.f27043o) {
-                this.f27040d.registerActivityLifecycleCallbacks(this);
-                this.f27042i.getLogger().c(sentryLevel, "UserInteractionIntegration installed.", new Object[0]);
+            if (this.f27243o) {
+                this.f27240d.registerActivityLifecycleCallbacks(this);
+                this.f27242i.getLogger().c(sentryLevel, "UserInteractionIntegration installed.", new Object[0]);
                 io.sentry.util.p.a("UserInteraction");
-                if (this.f27044p) {
+                if (this.f27244p) {
                     Activity b10 = f1.c().b();
-                    if ((b10 instanceof LifecycleOwner) && ((LifecycleOwner) b10).getLifecycle().b() == Lifecycle.State.f4850p) {
+                    if ((b10 instanceof LifecycleOwner) && ((LifecycleOwner) b10).getLifecycle().b() == Lifecycle.State.f4547p) {
                         a(b10);
                         return;
                     }

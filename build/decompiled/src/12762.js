@@ -1,155 +1,76 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1, arg2, arg3) { // Environment: var0
-        _fun97476: for (var _fun97476_ip = 0;;) switch (_fun97476_ip) {
-            case 0:
-                var3 = arg3;
-                var0 = arg0;
-                var2 = arg1;
-                var1 = arg2;
-                var11 = var3;
-                var6 = undefined;
-                var4 = undefined;
-                if (var3) {
-                    _fun97476_ip = 24;
-                    continue _fun97476
-                }
-            case 22:
-                var11 = {};
-            case 24:
-                var3 = var11;
-                var4 = var3.enumerable;
-                var3 = var3.name;
-                if (!(var6 === var3)) {
-                    _fun97476_ip = 46;
-                    continue _fun97476
-                }
-            case 41:
-                var9 = var2;
-                _fun97476_ip = 54;
-                continue _fun97476;
-            case 46:
-                var3 = var11;
-                var9 = var3.name;
-            case 54:
-                var7 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var5 = 0;
-                var5 = var8[var5];
-                var7 = var7.bind(var6)(var5);
-                var5 = var1;
-                var5 = var7.bind(var6)(var5);
-                if (!var5) {
-                    _fun97476_ip = 120;
-                    continue _fun97476
-                }
-            case 87:
-                var7 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var5 = 1;
-                var5 = var8[var5];
-                var8 = var7.bind(var6)(var5);
-                var7 = var1;
-                var5 = var11;
-                var5 = var8.bind(var6)(var7, var9, var5);
-            case 120:
-                var5 = var11;
-                var5 = var5.global;
-                if (var5) {
-                    _fun97476_ip = 283;
-                    continue _fun97476
-                }
-            case 135: // try_start_0
-                var5 = var11;
-                var8 = var5.unsafe;
-                var7 = var0;
-                var5 = var2;
-                if (var8) {
-                    _fun97476_ip = 161;
-                    continue _fun97476
-                }
-            case 155:
-                var8 = delete var7[var5];
-                _fun97476_ip = 170;
-                continue _fun97476;
-            case 161:
-                var5 = var7[var5];
-                if (!var5) {
-                    _fun97476_ip = 170;
-                    continue _fun97476
-                }
-            case 168:
-                var4 = true;
-            case 170: // try_end0
-                _fun97476_ip = 174;
-                continue _fun97476;
-            case 172: // catch_target0
-                CatchBlockStart(arg_register = 5);
-            case 174:
-                var5 = var4;
-                if (var5) {
-                    _fun97476_ip = 268;
-                    continue _fun97476
-                }
-            case 180:
-                var7 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var5 = 3;
-                var5 = var8[var5];
-                var10 = var7.bind(var6)(var5);
-                var9 = var10.f;
-                var8 = var0;
-                var7 = var2;
-                var5 = {};
-                var12 = var1;
-                var5.value = var12;
-                var12 = false;
-                var5.enumerable = var12;
-                var12 = var11.nonConfigurable;
-                var12 = !var12;
-                var5.configurable = var12;
-                var11 = var11.nonWritable;
-                var11 = !var11;
-                var5.writable = var11;
-                var5 = var9.bind(var10)(var8, var7, var5);
-                _fun97476_ip = 327;
-                continue _fun97476;
-            case 268:
-                var8 = var0;
-                var7 = var2;
-                var5 = var1;
-                var8[var7] = var5;
-                _fun97476_ip = 327;
-                continue _fun97476;
-            case 283:
-                if (var4) {
-                    _fun97476_ip = 320;
-                    continue _fun97476
-                }
-            case 286:
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var3 = 2;
-                var3 = var5[var3];
-                var5 = var4.bind(var6)(var3);
-                var4 = var2;
-                var3 = var1;
-                var3 = var5.bind(var6)(var4, var3);
-                _fun97476_ip = 327;
-                continue _fun97476;
-            case 320:
-                var3 = var0;
-                var3[var2] = var1;
-            case 327:
-                return var0;
-        }
+    var1 = {
+        'name': 'react-native-url-polyfill',
+        'version': '2.0.0',
+        'description': 'A lightweight and trustworthy URL polyfill for React Native',
+        'keywords': null,
+        'bugs': null,
+        'homepage': 'https://github.com/charpeni/react-native-url-polyfill',
+        'readme': 'https://github.com/charpeni/react-native-url-polyfill#readme',
+        'repository': null,
+        'main': 'index.js',
+        'types': 'index.d.ts'
     };
-    var0 = arg4;
+    var0 = ['URL', 'URLSearchParams', 'polyfill', 'react native', 'whatwg-url'];
+    var1.keywords = var0;
+    var0 = {};
+    var2 = 'https://github.com/charpeni/react-native-url-polyfill/issues';
+    var0.url = var2;
+    var1.bugs = var0;
+    var0 = {
+        'type': 'git',
+        'url': 'https://github.com/charpeni/react-native-url-polyfill.git'
+    };
+    var1.repository = var0;
+    var0 = {
+        'test': 'jest',
+        'lint': 'eslint .',
+        'prepare': 'husky install',
+        'bundle-size': 'node scripts/bundle-size'
+    };
+    var1.scripts = var0;
+    var0 = 'Nicolas Charpentier <nicolas.charpentier079@gmail.com>';
+    var1.author = var0;
+    var0 = 'MIT';
+    var1.license = var0;
+    var0 = {};
+    var2 = '8.0.0-3';
+    var0['whatwg-url-without-unicode'] = var2;
+    var1.dependencies = var0;
+    var0 = {
+        '@react-native-community/eslint-config': '3.2.0',
+        'detox': '20.9.1',
+        'eslint': '8.44.0',
+        'eslint-plugin-prettier': '4.2.1',
+        'husky': '8.0.3',
+        'jest': '29.5.0',
+        'lint-staged': '13.2.3',
+        'metro-react-native-babel-preset': '0.76.7',
+        'nanoid': '3.3.6',
+        'prettier': '2.8.8',
+        'react': '18.2.0',
+        'react-native': '0.72.1',
+        'react-native-bundle-scale': '1.1.0',
+        'typescript': '5.1.6'
+    };
+    var1.devDependencies = var0;
+    var0 = {};
+    var2 = '*';
+    var0['react-native'] = var2;
+    var1.peerDependencies = var0;
+    var0 = {};
+    var2 = 'react-native';
+    var0.preset = var2;
+    var2 = ['/node_modules/', './platforms/'];
+    var0.testPathIgnorePatterns = var2;
+    var1.jest = var0;
+    var0 = {};
+    var2 = ['eslint --fix'];
+    var0['*.js'] = var2;
+    var1['lint-staged'] = var0;
+    var0 = module;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12731, 12763, 12706, 12759]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

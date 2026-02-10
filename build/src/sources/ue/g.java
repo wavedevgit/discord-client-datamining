@@ -1,57 +1,33 @@
 package ue;
 
-import android.os.Bundle;
-import ef.a;
-import gf.o;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class g implements a.d {
-
-    /* renamed from: o  reason: collision with root package name */
-    public static final g f51473o = new g(new f());
-
-    /* renamed from: d  reason: collision with root package name */
-    private final String f51474d = null;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final boolean f51475e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final String f51476i;
-
-    public g(f fVar) {
-        this.f51475e = fVar.f51471a.booleanValue();
-        this.f51476i = fVar.f51472b;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ String b(g gVar) {
-        String str = gVar.f51474d;
-        return null;
-    }
-
-    public final Bundle a() {
-        Bundle bundle = new Bundle();
-        bundle.putString("consumer_package", null);
-        bundle.putBoolean("force_save_dialog", this.f51475e);
-        bundle.putString("log_session_id", this.f51476i);
-        return bundle;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
+public final class g implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
+        String str = null;
+        int i10 = 0;
+        while (parcel.dataPosition() < A) {
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
+            if (l10 != 1) {
+                if (l10 != 2) {
+                    jf.b.z(parcel, r10);
+                } else {
+                    i10 = jf.b.t(parcel, r10);
+                }
+            } else {
+                str = jf.b.f(parcel, r10);
+            }
         }
-        if (!(obj instanceof g)) {
-            return false;
-        }
-        g gVar = (g) obj;
-        if (o.a(null, null) && this.f51475e == gVar.f51475e && o.a(this.f51476i, gVar.f51476i)) {
-            return true;
-        }
-        return false;
+        jf.b.k(parcel, A);
+        return new f(str, i10);
     }
 
-    public final int hashCode() {
-        return o.b(null, Boolean.valueOf(this.f51475e), this.f51476i);
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new f[i10];
     }
 }

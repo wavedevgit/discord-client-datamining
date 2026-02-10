@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope;
 public class e implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ModuleDescriptor f32237d;
+    private final ModuleDescriptor f31946d;
 
     public e(ModuleDescriptor moduleDescriptor) {
-        this.f32237d = moduleDescriptor;
+        this.f31946d = moduleDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         MemberScope d10;
-        d10 = ReflectionTypes.d(this.f32237d);
+        d10 = ReflectionTypes.d(this.f31946d);
         return d10;
     }
 }

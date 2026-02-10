@@ -1,28 +1,51 @@
 package wd;
 
-import com.google.android.exoplayer2.upstream.k;
-import java.util.List;
+import android.net.Uri;
+import java.util.LinkedHashMap;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class e implements j {
+final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j f53612a;
+    private final LinkedHashMap f53518a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final List f53613b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    class a extends LinkedHashMap {
 
-    public e(j jVar, List list) {
-        this.f53612a = jVar;
-        this.f53613b = list;
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ int f53519d;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(int i10, float f10, boolean z10, int i11) {
+            super(i10, f10, z10);
+            this.f53519d = i11;
+        }
+
+        @Override // java.util.LinkedHashMap
+        protected boolean removeEldestEntry(Map.Entry entry) {
+            if (size() > this.f53519d) {
+                return true;
+            }
+            return false;
+        }
     }
 
-    @Override // wd.j
-    public k.a a(g gVar, f fVar) {
-        return new pd.b(this.f53612a.a(gVar, fVar), this.f53613b);
+    public e(int i10) {
+        this.f53518a = new a(i10 + 1, 1.0f, false, i10);
     }
 
-    @Override // wd.j
-    public k.a b() {
-        return new pd.b(this.f53612a.b(), this.f53613b);
+    public byte[] a(Uri uri) {
+        if (uri == null) {
+            return null;
+        }
+        return (byte[]) this.f53518a.get(uri);
+    }
+
+    public byte[] b(Uri uri, byte[] bArr) {
+        return (byte[]) this.f53518a.put((Uri) oe.a.e(uri), (byte[]) oe.a.e(bArr));
+    }
+
+    public byte[] c(Uri uri) {
+        return (byte[]) this.f53518a.remove(oe.a.e(uri));
     }
 }

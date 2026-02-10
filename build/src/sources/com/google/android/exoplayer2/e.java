@@ -5,7 +5,7 @@ import com.google.android.exoplayer2.Timeline;
 public abstract class e implements Player {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final Timeline.d f12383a = new Timeline.d();
+    protected final Timeline.d f12523a = new Timeline.d();
 
     private int h0() {
         int T = T();
@@ -71,7 +71,7 @@ public abstract class e implements Player {
     @Override // com.google.android.exoplayer2.Player
     public final boolean N() {
         Timeline v10 = v();
-        if (!v10.u() && v10.r(Q(), this.f12383a).f11893s) {
+        if (!v10.u() && v10.r(Q(), this.f12523a).f12033s) {
             return true;
         }
         return false;
@@ -107,7 +107,7 @@ public abstract class e implements Player {
     @Override // com.google.android.exoplayer2.Player
     public final boolean b0() {
         Timeline v10 = v();
-        if (!v10.u() && v10.r(Q(), this.f12383a).g()) {
+        if (!v10.u() && v10.r(Q(), this.f12523a).g()) {
             return true;
         }
         return false;
@@ -122,7 +122,7 @@ public abstract class e implements Player {
         if (duration == 0) {
             return 100;
         }
-        return ne.w0.q((int) ((M * 100) / duration), 0, 100);
+        return oe.w0.q((int) ((M * 100) / duration), 0, 100);
     }
 
     public final long d0() {
@@ -130,7 +130,7 @@ public abstract class e implements Player {
         if (v10.u()) {
             return -9223372036854775807L;
         }
-        return v10.r(Q(), this.f12383a).f();
+        return v10.r(Q(), this.f12523a).f();
     }
 
     @Override // com.google.android.exoplayer2.Player
@@ -205,7 +205,7 @@ public abstract class e implements Player {
     @Override // com.google.android.exoplayer2.Player
     public final boolean t() {
         Timeline v10 = v();
-        if (!v10.u() && v10.r(Q(), this.f12383a).f11894t) {
+        if (!v10.u() && v10.r(Q(), this.f12523a).f12034t) {
             return true;
         }
         return false;

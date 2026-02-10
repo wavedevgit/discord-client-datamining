@@ -1,0 +1,142 @@
+package wa;
+
+import android.util.Log;
+import java.io.Closeable;
+import java.nio.ByteBuffer;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public class h implements q, Closeable {
+
+    /* renamed from: d  reason: collision with root package name */
+    private ByteBuffer f53378d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f53379e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final long f53380i = System.identityHashCode(this);
+
+    public h(int i10) {
+        this.f53378d = ByteBuffer.allocateDirect(i10);
+        this.f53379e = i10;
+    }
+
+    private void m(int i10, q qVar, int i11, int i12) {
+        if (qVar instanceof h) {
+            p8.j.i(!isClosed());
+            p8.j.i(!qVar.isClosed());
+            p8.j.g(this.f53378d);
+            r.b(i10, qVar.getSize(), i11, i12, this.f53379e);
+            this.f53378d.position(i10);
+            ByteBuffer byteBuffer = (ByteBuffer) p8.j.g(qVar.r());
+            byteBuffer.position(i11);
+            byte[] bArr = new byte[i12];
+            this.f53378d.get(bArr, 0, i12);
+            byteBuffer.put(bArr, 0, i12);
+            return;
+        }
+        throw new IllegalArgumentException("Cannot copy two incompatible MemoryChunks");
+    }
+
+    @Override // wa.q
+    public synchronized byte B(int i10) {
+        boolean z10;
+        boolean z11 = true;
+        p8.j.i(!isClosed());
+        if (i10 >= 0) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        p8.j.b(Boolean.valueOf(z10));
+        if (i10 >= this.f53379e) {
+            z11 = false;
+        }
+        p8.j.b(Boolean.valueOf(z11));
+        p8.j.g(this.f53378d);
+        return this.f53378d.get(i10);
+    }
+
+    @Override // wa.q
+    public long G() {
+        throw new UnsupportedOperationException("Cannot get the pointer of a BufferMemoryChunk");
+    }
+
+    @Override // wa.q
+    public long a() {
+        return this.f53380i;
+    }
+
+    @Override // wa.q, java.io.Closeable, java.lang.AutoCloseable
+    public synchronized void close() {
+        this.f53378d = null;
+    }
+
+    @Override // wa.q
+    public synchronized int g(int i10, byte[] bArr, int i11, int i12) {
+        int a10;
+        p8.j.g(bArr);
+        p8.j.i(!isClosed());
+        p8.j.g(this.f53378d);
+        a10 = r.a(i10, i12, this.f53379e);
+        r.b(i10, bArr.length, i11, a10, this.f53379e);
+        this.f53378d.position(i10);
+        this.f53378d.put(bArr, i11, a10);
+        return a10;
+    }
+
+    @Override // wa.q
+    public int getSize() {
+        return this.f53379e;
+    }
+
+    @Override // wa.q
+    public synchronized boolean isClosed() {
+        boolean z10;
+        if (this.f53378d == null) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        return z10;
+    }
+
+    @Override // wa.q
+    public void k(int i10, q qVar, int i11, int i12) {
+        p8.j.g(qVar);
+        if (qVar.a() == a()) {
+            Log.w("BufferMemoryChunk", "Copying from BufferMemoryChunk " + Long.toHexString(a()) + " to BufferMemoryChunk " + Long.toHexString(qVar.a()) + " which are the same ");
+            p8.j.b(Boolean.FALSE);
+        }
+        if (qVar.a() < a()) {
+            synchronized (qVar) {
+                synchronized (this) {
+                    m(i10, qVar, i11, i12);
+                }
+            }
+            return;
+        }
+        synchronized (this) {
+            synchronized (qVar) {
+                m(i10, qVar, i11, i12);
+            }
+        }
+    }
+
+    @Override // wa.q
+    public synchronized int q(int i10, byte[] bArr, int i11, int i12) {
+        int a10;
+        p8.j.g(bArr);
+        p8.j.i(!isClosed());
+        p8.j.g(this.f53378d);
+        a10 = r.a(i10, i12, this.f53379e);
+        r.b(i10, bArr.length, i11, a10, this.f53379e);
+        this.f53378d.position(i10);
+        this.f53378d.get(bArr, i11, a10);
+        return a10;
+    }
+
+    @Override // wa.q
+    public synchronized ByteBuffer r() {
+        return this.f53378d;
+    }
+}

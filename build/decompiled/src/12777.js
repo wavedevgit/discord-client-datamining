@@ -1,66 +1,130 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var2 = exports;
-    var4 = dependencyMap;
-    var1 = {};
-    var5 = 0;
-    var6 = var4[var5];
-    var0 = undefined;
-    var6 = var3.bind(var0)(var6);
-    var7 = var6.URL;
-    var6 = var7.install;
-    var6 = var6.bind(var7)(var1);
-    var5 = var4[var5];
-    var5 = var3.bind(var0)(var5);
-    var6 = var5.URLSearchParams;
-    var5 = var6.install;
-    var5 = var5.bind(var6)(var1);
-    var5 = var1.URL;
-    var2.URL = var5;
-    var1 = var1.URLSearchParams;
-    var2.URLSearchParams = var1;
-    var1 = 1;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.parseURL;
-    var2.parseURL = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.basicURLParse;
-    var2.basicURLParse = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.serializeURL;
-    var2.serializeURL = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.serializeHost;
-    var2.serializeHost = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.serializeInteger;
-    var2.serializeInteger = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.serializeURLOrigin;
-    var2.serializeURLOrigin = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.setTheUsername;
-    var2.setTheUsername = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.setThePassword;
-    var2.setThePassword = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.cannotHaveAUsernamePasswordPort;
-    var2.cannotHaveAUsernamePasswordPort = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.percentDecode;
-    var2.percentDecode = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12778, 12782, 12785]);
+    _fun97715: for (var _fun97715_ip = 0;;) switch (_fun97715_ip) {
+        case 0:
+            var3 = global;
+            var1 = dependencyMap;
+            var0 = 0;
+            var2 = var1[var0];
+            var1 = require;
+            var0 = undefined;
+            var4 = var1.bind(var0)(var2);
+            if (!var4) {
+                _fun97715_ip = 50;
+                continue _fun97715
+            }
+        case 25:
+            var2 = 'object';
+            var1 = typeof var4;
+            if (!(var2 === var1)) {
+                _fun97715_ip = 50;
+                continue _fun97715
+            }
+        case 36:
+            var1 = 'default';
+            var2 = var1 in var4;
+            var1 = var4;
+            if (var2) {
+                _fun97715_ip = 59;
+                continue _fun97715
+            }
+        case 50:
+            var2 = {};
+            var2.default = var4;
+            var1 = var2;
+        case 59:
+            var2 = global;
+            var4 = var2.Intl;
+            var5 = 'undefined';
+            var4 = typeof var4;
+            if (!(var5 !== var4)) {
+                _fun97715_ip = 243;
+                continue _fun97715
+            }
+        case 81:
+            var4 = var2.Intl;
+            var4 = var4.PluralRules;
+            if (!var4) {
+                _fun97715_ip = 124;
+                continue _fun97715
+            }
+        case 96:
+            var4 = var2.Intl;
+            var4 = var4.PluralRules;
+            var4 = var4.prototype;
+            var4 = var4.selectRange;
+            if (var4) {
+                _fun97715_ip = 159;
+                continue _fun97715
+            }
+        case 124:
+            var6 = var2.Intl;
+            var4 = var1.default;
+            var6.PluralRules = var4;
+            var6 = var1.default;
+            var4 = true;
+            var6.polyfill = var4;
+            _fun97715_ip = 339;
+            continue _fun97715;
+        case 159:
+            var4 = ['en', 'es', 'ru', 'zh'];
+            var6 = var2.Intl;
+            var7 = var6.PluralRules;
+            var6 = var7.supportedLocalesOf;
+            var6 = var6.bind(var7)(var4);
+            var6 = var6.length;
+            var4 = var4.length;
+            if (!(var6 < var4)) {
+                _fun97715_ip = 339;
+                continue _fun97715
+            }
+        case 211:
+            var6 = var2.Intl;
+            var4 = var1.default;
+            var6.PluralRules = var4;
+            var6 = var1.default;
+            var4 = true;
+            var6.polyfill = var4;
+            _fun97715_ip = 339;
+            continue _fun97715;
+        case 243:
+            if (!(var0 === var3)) {
+                _fun97715_ip = 308;
+                continue _fun97715
+            }
+        case 247:
+            var4 = var2.window;
+            var4 = typeof var4;
+            if (!(var5 === var4)) {
+                _fun97715_ip = 282;
+                continue _fun97715
+            }
+        case 259:
+            var5 = {};
+            var4 = var1.default;
+            var5.PluralRules = var4;
+            var4 = this;
+            var4.Intl = var5;
+            _fun97715_ip = 326;
+            continue _fun97715;
+        case 282:
+            var4 = var2.window;
+            var2 = {};
+            var5 = var1.default;
+            var2.PluralRules = var5;
+            var4.Intl = var2;
+            _fun97715_ip = 326;
+            continue _fun97715;
+        case 308:
+            var2 = {};
+            var4 = var1.default;
+            var2.PluralRules = var4;
+            var3.Intl = var2;
+        case 326:
+            var2 = var1.default;
+            var1 = true;
+            var2.polyfill = var1;
+        case 339:
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12778]);

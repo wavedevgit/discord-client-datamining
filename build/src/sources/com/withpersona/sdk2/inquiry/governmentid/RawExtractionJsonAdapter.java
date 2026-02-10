@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.governmentid;
 
-import an.c;
+import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class RawExtractionJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18600a;
+    private final m.b f18740a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18601b;
+    private final h f18741b;
 
     public RawExtractionJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type", "value");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18600a = a10;
+        this.f18740a = a10;
         h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18601b = f10;
+        this.f18741b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,21 +37,21 @@ public final class RawExtractionJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18600a);
+            int J = reader.J(this.f18740a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f18601b.fromJson(reader)) == null) {
+                    if (J == 1 && (str2 = (String) this.f18741b.fromJson(reader)) == null) {
                         throw c.x("value__", "value", reader);
                     }
                 } else {
-                    str = (String) this.f18601b.fromJson(reader);
+                    str = (String) this.f18741b.fromJson(reader);
                     if (str == null) {
                         throw c.x("type", "type", reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -71,9 +71,9 @@ public final class RawExtractionJsonAdapter extends h {
         if (rawExtraction != null) {
             writer.k();
             writer.J("type");
-            this.f18601b.toJson(writer, rawExtraction.a());
+            this.f18741b.toJson(writer, rawExtraction.a());
             writer.J("value");
-            this.f18601b.toJson(writer, rawExtraction.b());
+            this.f18741b.toJson(writer, rawExtraction.b());
             writer.s();
             return;
         }

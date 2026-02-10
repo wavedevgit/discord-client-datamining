@@ -1,9 +1,81 @@
 package pc;
 
-import android.database.sqlite.SQLiteDatabase;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.exoplayer2.metadata.Metadata;
+import qi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface b {
-    SQLiteDatabase getReadableDatabase();
+public final class b implements Metadata.b {
+    public static final Parcelable.Creator<b> CREATOR = new a();
 
-    SQLiteDatabase getWritableDatabase();
+    /* renamed from: d  reason: collision with root package name */
+    public final float f43088d;
+
+    /* renamed from: e  reason: collision with root package name */
+    public final float f43089e;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    class a implements Parcelable.Creator {
+        a() {
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public b createFromParcel(Parcel parcel) {
+            return new b(parcel, (a) null);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public b[] newArray(int i10) {
+            return new b[i10];
+        }
+    }
+
+    /* synthetic */ b(Parcel parcel, a aVar) {
+        this(parcel);
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj != null && b.class == obj.getClass()) {
+            b bVar = (b) obj;
+            if (this.f43088d == bVar.f43088d && this.f43089e == bVar.f43089e) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return ((527 + c.a(this.f43088d)) * 31) + c.a(this.f43089e);
+    }
+
+    public String toString() {
+        return "xyz: latitude=" + this.f43088d + ", longitude=" + this.f43089e;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        parcel.writeFloat(this.f43088d);
+        parcel.writeFloat(this.f43089e);
+    }
+
+    public b(float f10, float f11) {
+        oe.a.b(f10 >= -90.0f && f10 <= 90.0f && f11 >= -180.0f && f11 <= 180.0f, "Invalid latitude or longitude");
+        this.f43088d = f10;
+        this.f43089e = f11;
+    }
+
+    private b(Parcel parcel) {
+        this.f43088d = parcel.readFloat();
+        this.f43089e = parcel.readFloat();
+    }
 }

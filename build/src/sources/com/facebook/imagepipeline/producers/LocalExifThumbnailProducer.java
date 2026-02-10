@@ -18,13 +18,13 @@ import java.util.concurrent.Executor;
 public class LocalExifThumbnailProducer implements m1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f10562a;
+    private final Executor f10702a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r8.i f10563b;
+    private final s8.i f10703b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ContentResolver f10564c;
+    private final ContentResolver f10704c;
 
     /* JADX INFO: Access modifiers changed from: private */
     @com.facebook.soloader.g
@@ -42,41 +42,41 @@ public class LocalExifThumbnailProducer implements m1 {
     class a extends e1 {
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ ImageRequest f10566q;
+        final /* synthetic */ ImageRequest f10706q;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Consumer consumer, y0 y0Var, ProducerContext producerContext, String str, ImageRequest imageRequest) {
             super(consumer, y0Var, producerContext, str);
-            this.f10566q = imageRequest;
+            this.f10706q = imageRequest;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // m8.h
+        @Override // n8.h
         /* renamed from: j */
-        public void b(sa.k kVar) {
-            sa.k.k(kVar);
+        public void b(ta.k kVar) {
+            ta.k.k(kVar);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.imagepipeline.producers.e1
         /* renamed from: k */
-        public Map i(sa.k kVar) {
+        public Map i(ta.k kVar) {
             boolean z10;
             if (kVar != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            return o8.f.of("createdThumbnail", Boolean.toString(z10));
+            return p8.f.of("createdThumbnail", Boolean.toString(z10));
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // m8.h
+        @Override // n8.h
         /* renamed from: l */
-        public sa.k c() {
-            ExifInterface g10 = LocalExifThumbnailProducer.this.g(this.f10566q.getSourceUri());
+        public ta.k c() {
+            ExifInterface g10 = LocalExifThumbnailProducer.this.g(this.f10706q.getSourceUri());
             if (g10 != null && g10.hasThumbnail()) {
-                return LocalExifThumbnailProducer.this.e(LocalExifThumbnailProducer.this.f10563b.d((byte[]) o8.j.g(g10.getThumbnail())), g10);
+                return LocalExifThumbnailProducer.this.e(LocalExifThumbnailProducer.this.f10703b.d((byte[]) p8.j.g(g10.getThumbnail())), g10);
             }
             return null;
         }
@@ -86,28 +86,28 @@ public class LocalExifThumbnailProducer implements m1 {
     class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ e1 f10568a;
+        final /* synthetic */ e1 f10708a;
 
         b(e1 e1Var) {
-            this.f10568a = e1Var;
+            this.f10708a = e1Var;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            this.f10568a.a();
+            this.f10708a.a();
         }
     }
 
-    public LocalExifThumbnailProducer(Executor executor, r8.i iVar, ContentResolver contentResolver) {
-        this.f10562a = executor;
-        this.f10563b = iVar;
-        this.f10564c = contentResolver;
+    public LocalExifThumbnailProducer(Executor executor, s8.i iVar, ContentResolver contentResolver) {
+        this.f10702a = executor;
+        this.f10703b = iVar;
+        this.f10704c = contentResolver;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public sa.k e(r8.h hVar, ExifInterface exifInterface) {
+    public ta.k e(s8.h hVar, ExifInterface exifInterface) {
         int i10;
-        Pair d10 = cb.d.d(new r8.j(hVar));
+        Pair d10 = db.d.d(new s8.j(hVar));
         int h10 = h(exifInterface);
         int i11 = -1;
         if (d10 != null) {
@@ -118,23 +118,23 @@ public class LocalExifThumbnailProducer implements m1 {
         if (d10 != null) {
             i11 = ((Integer) d10.second).intValue();
         }
-        CloseableReference K0 = CloseableReference.K0(hVar);
+        CloseableReference H0 = CloseableReference.H0(hVar);
         try {
-            sa.k kVar = new sa.k(K0);
-            CloseableReference.z(K0);
-            kVar.A1(fa.b.f22997b);
-            kVar.D1(h10);
-            kVar.X1(i10);
-            kVar.z1(i11);
+            ta.k kVar = new ta.k(H0);
+            CloseableReference.z(H0);
+            kVar.w1(ga.b.f24082b);
+            kVar.z1(h10);
+            kVar.W1(i10);
+            kVar.u1(i11);
             return kVar;
         } catch (Throwable th2) {
-            CloseableReference.z(K0);
+            CloseableReference.z(H0);
             throw th2;
         }
     }
 
     private int h(ExifInterface exifInterface) {
-        return cb.g.a(Integer.parseInt((String) o8.j.g(exifInterface.getAttribute("Orientation"))));
+        return db.g.a(Integer.parseInt((String) p8.j.g(exifInterface.getAttribute("Orientation"))));
     }
 
     @Override // com.facebook.imagepipeline.producers.m1
@@ -149,7 +149,7 @@ public class LocalExifThumbnailProducer implements m1 {
         producerContext.m("local", "exif");
         a aVar = new a(consumer, y10, producerContext, "LocalExifThumbnailProducer", I);
         producerContext.g(new b(aVar));
-        this.f10562a.execute(aVar);
+        this.f10702a.execute(aVar);
     }
 
     boolean f(String str) {
@@ -164,19 +164,19 @@ public class LocalExifThumbnailProducer implements m1 {
     }
 
     ExifInterface g(Uri uri) {
-        String e10 = w8.f.e(this.f10564c, uri);
+        String e10 = x8.f.e(this.f10704c, uri);
         if (e10 == null) {
             return null;
         }
         try {
         } catch (IOException unused) {
         } catch (StackOverflowError unused2) {
-            p8.a.i(LocalExifThumbnailProducer.class, "StackOverflowError in ExifInterface constructor");
+            q8.a.i(LocalExifThumbnailProducer.class, "StackOverflowError in ExifInterface constructor");
         }
         if (f(e10)) {
             return new ExifInterface(e10);
         }
-        AssetFileDescriptor a10 = w8.f.a(this.f10564c, uri);
+        AssetFileDescriptor a10 = x8.f.a(this.f10704c, uri);
         if (a10 != null) {
             ExifInterface a11 = new Api24Utils().a(a10.getFileDescriptor());
             a10.close();

@@ -1,42 +1,43 @@
 package zo;
 
-import android.content.Context;
-import br.h;
-import dp.e;
-import kotlinx.coroutines.CoroutineDispatcher;
+import androidx.lifecycle.b0;
+import com.withpersona.sdk2.inquiry.FallbackMode;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements br.d {
+public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f56458a;
+    private final FallbackMode f56568a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f56459b;
+    private final vo.f f56569b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f56460c;
+    private final b0 f56570c;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final h f56461d;
-
-    public c(h hVar, h hVar2, h hVar3, h hVar4) {
-        this.f56458a = hVar;
-        this.f56459b = hVar2;
-        this.f56460c = hVar3;
-        this.f56461d = hVar4;
+    public c(FallbackMode fallbackMode, vo.f environment, b0 savedStateHandle) {
+        Intrinsics.checkNotNullParameter(fallbackMode, "fallbackMode");
+        Intrinsics.checkNotNullParameter(environment, "environment");
+        Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
+        this.f56568a = fallbackMode;
+        this.f56569b = environment;
+        this.f56570c = savedStateHandle;
     }
 
-    public static c a(h hVar, h hVar2, h hVar3, h hVar4) {
-        return new c(hVar, hVar2, hVar3, hVar4);
+    public final vo.f a() {
+        return this.f56569b;
     }
 
-    public static a c(Context context, e.a aVar, f fVar, CoroutineDispatcher coroutineDispatcher) {
-        return new a(context, aVar, fVar, coroutineDispatcher);
+    public final FallbackMode b() {
+        return this.f56568a;
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public a get() {
-        return c((Context) this.f56458a.get(), (e.a) this.f56459b.get(), (f) this.f56460c.get(), (CoroutineDispatcher) this.f56461d.get());
+    public final jo.a c(i fallbackModeManager) {
+        Intrinsics.checkNotNullParameter(fallbackModeManager, "fallbackModeManager");
+        return fallbackModeManager;
+    }
+
+    public final b0 d() {
+        return this.f56570c;
     }
 }

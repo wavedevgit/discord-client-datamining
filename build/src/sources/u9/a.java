@@ -1,45 +1,33 @@
 package u9;
 
+import com.facebook.common.references.CloseableReference;
+import java.io.Closeable;
 import kotlin.jvm.internal.Intrinsics;
-import o9.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a implements d {
+public final class a implements Closeable {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final ga.a f51302a;
+    /* renamed from: d  reason: collision with root package name */
+    private int f51349d;
 
-    public a(ga.a animatedDrawableBackend) {
-        Intrinsics.checkNotNullParameter(animatedDrawableBackend, "animatedDrawableBackend");
-        this.f51302a = animatedDrawableBackend;
+    /* renamed from: e  reason: collision with root package name */
+    private final CloseableReference f51350e;
+
+    public a(int i10, CloseableReference bitmap) {
+        Intrinsics.checkNotNullParameter(bitmap, "bitmap");
+        this.f51349d = i10;
+        this.f51350e = bitmap;
     }
 
-    @Override // o9.d
-    public int a() {
-        return this.f51302a.a();
+    public final CloseableReference a() {
+        return this.f51350e;
     }
 
-    @Override // o9.d
-    public int b() {
-        return this.f51302a.b();
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f51350e.close();
     }
 
-    @Override // o9.d
-    public int g() {
-        return this.f51302a.getHeight();
-    }
-
-    @Override // o9.d
-    public int j() {
-        return this.f51302a.d();
-    }
-
-    @Override // o9.d
-    public int l(int i10) {
-        return this.f51302a.g(i10);
-    }
-
-    @Override // o9.d
-    public int n() {
-        return this.f51302a.getWidth();
+    public final int g() {
+        return this.f51349d;
     }
 }

@@ -20,7 +20,7 @@ public final class ReactNativeFeatureFlagsForTests {
     }
 
     public final void setUp() {
-        ReactNativeFeatureFlags.INSTANCE.setAccessorProvider$ReactAndroid_release(new Function0() { // from class: gb.b
+        ReactNativeFeatureFlags.INSTANCE.setAccessorProvider$ReactAndroid_release(new Function0() { // from class: hb.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ReactNativeFeatureFlagsAccessor up$lambda$0;

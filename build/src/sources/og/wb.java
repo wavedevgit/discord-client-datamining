@@ -1,211 +1,42 @@
 package og;
 
-import android.content.Context;
-import android.content.res.Resources;
-import android.os.SystemClock;
-import androidx.core.os.LocaleListCompat;
-import com.google.android.gms.dynamite.DynamiteModule;
-import com.google.android.gms.tasks.Task;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.Callable;
-import java.util.concurrent.TimeUnit;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class wb {
-
-    /* renamed from: k  reason: collision with root package name */
-    private static mc f42693k;
-
-    /* renamed from: l  reason: collision with root package name */
-    private static final oc f42694l = oc.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
+final class wb implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f42695a;
+    static final wb f41441a = new wb();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final String f42696b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final pb f42697c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final tj.m f42698d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Task f42699e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final Task f42700f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final String f42701g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private final int f42702h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Map f42703i = new HashMap();
-
-    /* renamed from: j  reason: collision with root package name */
-    private final Map f42704j = new HashMap();
-
-    public wb(Context context, final tj.m mVar, pb pbVar, String str) {
-        int i10;
-        this.f42695a = context.getPackageName();
-        this.f42696b = tj.c.a(context);
-        this.f42698d = mVar;
-        this.f42697c = pbVar;
-        jc.a();
-        this.f42701g = str;
-        this.f42699e = tj.g.a().b(new Callable() { // from class: og.tb
-            @Override // java.util.concurrent.Callable
-            public final Object call() {
-                return wb.this.a();
-            }
-        });
-        tj.g a10 = tj.g.a();
-        mVar.getClass();
-        this.f42700f = a10.b(new Callable() { // from class: og.ub
-            @Override // java.util.concurrent.Callable
-            public final Object call() {
-                return tj.m.this.a();
-            }
-        });
-        oc ocVar = f42694l;
-        if (ocVar.containsKey(str)) {
-            i10 = DynamiteModule.c(context, (String) ocVar.get(str));
-        } else {
-            i10 = -1;
-        }
-        this.f42702h = i10;
+    static {
+        c.b a10 = zi.c.a("durationMs");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("handledErrors");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("partiallyHandledErrors");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
+        c.b a13 = zi.c.a("unhandledErrors");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        a13.b(l2Var4.b()).a();
+        c.b a14 = zi.c.a("httpResponseCode");
+        l2 l2Var5 = new l2();
+        l2Var5.a(5);
+        a14.b(l2Var5.b()).a();
     }
 
-    private static synchronized mc d() {
-        synchronized (wb.class) {
-            try {
-                mc mcVar = f42693k;
-                if (mcVar != null) {
-                    return mcVar;
-                }
-                LocaleListCompat a10 = w1.e.a(Resources.getSystem().getConfiguration());
-                mb mbVar = new mb();
-                for (int i10 = 0; i10 < a10.f(); i10++) {
-                    mbVar.c(tj.c.b(a10.c(i10)));
-                }
-                mc d10 = mbVar.d();
-                f42693k = d10;
-                return d10;
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
+    private wb() {
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final /* synthetic */ String a() {
-        return gf.m.a().b(this.f42701g);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final /* synthetic */ void b(ob obVar, e8 e8Var, String str) {
-        String a10;
-        obVar.d(e8Var);
-        String a11 = obVar.a();
-        ja jaVar = new ja();
-        jaVar.b(this.f42695a);
-        jaVar.c(this.f42696b);
-        jaVar.h(d());
-        jaVar.g(Boolean.TRUE);
-        jaVar.l(a11);
-        jaVar.j(str);
-        if (this.f42700f.p()) {
-            a10 = (String) this.f42700f.l();
-        } else {
-            a10 = this.f42698d.a();
-        }
-        jaVar.i(a10);
-        jaVar.d(10);
-        jaVar.k(Integer.valueOf(this.f42702h));
-        obVar.c(jaVar);
-        this.f42697c.a(obVar);
-    }
-
-    public final void c(gc gcVar, final e8 e8Var) {
-        r7 r7Var;
-        x7 x7Var;
-        final String b10;
-        long elapsedRealtime = SystemClock.elapsedRealtime();
-        if (this.f42703i.get(e8Var) != null && elapsedRealtime - ((Long) this.f42703i.get(e8Var)).longValue() <= TimeUnit.SECONDS.toMillis(30L)) {
-            return;
-        }
-        this.f42703i.put(e8Var, Long.valueOf(elapsedRealtime));
-        int i10 = gcVar.f42114a;
-        int i11 = gcVar.f42115b;
-        int i12 = gcVar.f42116c;
-        int i13 = gcVar.f42117d;
-        int i14 = gcVar.f42118e;
-        long j10 = gcVar.f42119f;
-        int i15 = gcVar.f42120g;
-        w7 w7Var = new w7();
-        if (i10 != -1) {
-            if (i10 != 35) {
-                if (i10 != 842094169) {
-                    if (i10 != 16) {
-                        if (i10 != 17) {
-                            r7Var = r7.UNKNOWN_FORMAT;
-                        } else {
-                            r7Var = r7.NV21;
-                        }
-                    } else {
-                        r7Var = r7.NV16;
-                    }
-                } else {
-                    r7Var = r7.YV12;
-                }
-            } else {
-                r7Var = r7.YUV_420_888;
-            }
-        } else {
-            r7Var = r7.BITMAP;
-        }
-        w7Var.d(r7Var);
-        if (i11 != 1) {
-            if (i11 != 2) {
-                if (i11 != 3) {
-                    if (i11 != 4) {
-                        x7Var = x7.ANDROID_MEDIA_IMAGE;
-                    } else {
-                        x7Var = x7.FILEPATH;
-                    }
-                } else {
-                    x7Var = x7.BYTEBUFFER;
-                }
-            } else {
-                x7Var = x7.BYTEARRAY;
-            }
-        } else {
-            x7Var = x7.BITMAP;
-        }
-        w7Var.f(x7Var);
-        w7Var.c(Integer.valueOf(i12));
-        w7Var.e(Integer.valueOf(i13));
-        w7Var.g(Integer.valueOf(i14));
-        w7Var.b(Long.valueOf(j10));
-        w7Var.h(Integer.valueOf(i15));
-        z7 j11 = w7Var.j();
-        f8 f8Var = new f8();
-        f8Var.d(j11);
-        final ob e10 = xb.e(f8Var);
-        if (this.f42699e.p()) {
-            b10 = (String) this.f42699e.l();
-        } else {
-            b10 = gf.m.a().b(this.f42701g);
-        }
-        tj.g.d().execute(new Runnable() { // from class: og.vb
-            @Override // java.lang.Runnable
-            public final void run() {
-                wb.this.b(e10, e8Var, b10);
-            }
-        });
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

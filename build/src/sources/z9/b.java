@@ -1,77 +1,41 @@
 package z9;
 
+import aa.b;
+import android.graphics.PointF;
+import android.graphics.Rect;
 import android.net.Uri;
 import java.util.Map;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface b {
+public final class b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a {
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f56149a = new b();
 
-        /* renamed from: n  reason: collision with root package name */
-        public static final C0766a f55963n = new C0766a(null);
-
-        /* renamed from: a  reason: collision with root package name */
-        public Map f55964a;
-
-        /* renamed from: b  reason: collision with root package name */
-        public Map f55965b;
-
-        /* renamed from: c  reason: collision with root package name */
-        public Map f55966c;
-
-        /* renamed from: d  reason: collision with root package name */
-        public Map f55967d;
-
-        /* renamed from: e  reason: collision with root package name */
-        public Map f55968e;
-
-        /* renamed from: f  reason: collision with root package name */
-        public Object f55969f;
-
-        /* renamed from: g  reason: collision with root package name */
-        public Uri f55970g;
-
-        /* renamed from: h  reason: collision with root package name */
-        public int f55971h = -1;
-
-        /* renamed from: i  reason: collision with root package name */
-        public int f55972i = -1;
-
-        /* renamed from: j  reason: collision with root package name */
-        public Object f55973j;
-
-        /* renamed from: k  reason: collision with root package name */
-        public Float f55974k;
-
-        /* renamed from: l  reason: collision with root package name */
-        public Float f55975l;
-
-        /* renamed from: m  reason: collision with root package name */
-        public boolean f55976m;
-
-        /* renamed from: z9.b$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class C0766a {
-            public /* synthetic */ C0766a(DefaultConstructorMarker defaultConstructorMarker) {
-                this();
-            }
-
-            private C0766a() {
-            }
-        }
+    private b() {
     }
 
-    void a(String str, Object obj, a aVar);
-
-    void g(String str, Throwable th2, a aVar);
-
-    void k(String str);
-
-    void n(String str, a aVar);
-
-    void onIntermediateImageSet(String str, Object obj);
-
-    void p(String str, Object obj, a aVar);
+    public static final b.a a(Map componentAttribution, Map shortcutAttribution, Map map, Map map2, Rect rect, String str, PointF pointF, Map map3, Object obj, boolean z10, Uri uri) {
+        Intrinsics.checkNotNullParameter(componentAttribution, "componentAttribution");
+        Intrinsics.checkNotNullParameter(shortcutAttribution, "shortcutAttribution");
+        b.a aVar = new b.a();
+        if (rect != null) {
+            aVar.f439h = rect.width();
+            aVar.f440i = rect.height();
+        }
+        aVar.f441j = str;
+        if (pointF != null) {
+            aVar.f442k = Float.valueOf(pointF.x);
+            aVar.f443l = Float.valueOf(pointF.y);
+        }
+        aVar.f437f = obj;
+        aVar.f444m = z10;
+        aVar.f438g = uri;
+        aVar.f434c = map;
+        aVar.f435d = map3;
+        aVar.f433b = shortcutAttribution;
+        aVar.f432a = componentAttribution;
+        aVar.f436e = map2;
+        return aVar;
+    }
 }

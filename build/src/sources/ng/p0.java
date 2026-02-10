@@ -1,24 +1,14 @@
 package ng;
-
-import android.os.IInterface;
-import android.os.Parcel;
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class p0 {
-    static {
-        p0.class.getClassLoader();
+final class p0 extends uj.e {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public /* synthetic */ p0(o0 o0Var) {
     }
 
-    public static void a(Parcel parcel, Parcelable parcelable) {
-        parcel.writeInt(1);
-        parcelable.writeToParcel(parcel, 0);
-    }
-
-    public static void b(Parcel parcel, IInterface iInterface) {
-        if (iInterface == null) {
-            parcel.writeStrongBinder(null);
-        } else {
-            parcel.writeStrongBinder(iInterface.asBinder());
-        }
+    @Override // uj.e
+    protected final /* bridge */ /* synthetic */ Object a(Object obj) {
+        e0 e0Var = (e0) obj;
+        uj.i c10 = uj.i.c();
+        return new i0(c10.b(), (uj.m) c10.a(uj.m.class), new f0(uj.i.c().b(), e0Var), e0Var.b());
     }
 }

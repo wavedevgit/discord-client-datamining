@@ -4,7 +4,7 @@ import com.discord.primitives.MessageId;
 import com.discord.primitives.MessageId$$serializer;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import ft.m;
+import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
@@ -50,7 +50,7 @@ public final class SharedClientThemeViewedData implements ReactEvent {
 
     public static final /* synthetic */ void write$Self$chat_release(SharedClientThemeViewedData sharedClientThemeViewedData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         MessageId messageId;
-        if (compositeEncoder.A(serialDescriptor, 0) || sharedClientThemeViewedData.messageId != null) {
+        if (compositeEncoder.z(serialDescriptor, 0) || sharedClientThemeViewedData.messageId != null) {
             MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
             String str = sharedClientThemeViewedData.messageId;
             if (str != null) {
@@ -58,7 +58,7 @@ public final class SharedClientThemeViewedData implements ReactEvent {
             } else {
                 messageId = null;
             }
-            compositeEncoder.l(serialDescriptor, 0, messageId$$serializer, messageId);
+            compositeEncoder.i(serialDescriptor, 0, messageId$$serializer, messageId);
         }
     }
 

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var3 = function() {
-        _fun89465: for (var _fun89465_ip = 0;;) switch (_fun89465_ip) {
+        _fun89466: for (var _fun89466_ip = 0;;) switch (_fun89466_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -21,8 +21,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 == var3;
                 var4 = undefined;
                 if (var5) {
-                    _fun89465_ip = 52;
-                    continue _fun89465
+                    _fun89466_ip = 52;
+                    continue _fun89466
                 }
             case 46:
                 var4 = var3.explicitContentNonFriendDm;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var4;
                 var0 = null;
                 if (var3) {
-                    _fun89465_ip = 96;
-                    continue _fun89465
+                    _fun89466_ip = 96;
+                    continue _fun89466
                 }
             case 61:
                 var3 = _closure1_slot0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1 = function() {
-        _fun89466: for (var _fun89466_ip = 0;;) switch (_fun89466_ip) {
+        _fun89467: for (var _fun89467_ip = 0;;) switch (_fun89467_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var0 = var1.getSelectedTeenId;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var2;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun89466_ip = 214;
-                    continue _fun89466
+                    _fun89467_ip = 214;
+                    continue _fun89467
                 }
             case 32:
                 var7 = _closure1_slot0;
@@ -175,4 +175,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useObscuredContentNonFriendsDmSettingValue = var3;
     var2.onObscuredContentNonFriendsDmOnPress = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4593, 7077, 10491, 4258, 10494, 1234, 10488, 1311, 9067, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4593, 7078, 10469, 4258, 10472, 1234, 10466, 1311, 9045, 2]);

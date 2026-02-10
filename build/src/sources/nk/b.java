@@ -1,225 +1,214 @@
 package nk;
-/* JADX INFO: Access modifiers changed from: package-private */
+
+import ik.k;
+import ik.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f40936a;
+    private final mk.b f38939a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f40937b;
+    private final int f38940b;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b(a aVar, int[] iArr) {
-        if (iArr.length != 0) {
-            this.f40936a = aVar;
-            int length = iArr.length;
-            int i10 = 1;
-            if (length > 1 && iArr[0] == 0) {
-                while (i10 < length && iArr[i10] == 0) {
-                    i10++;
+    /* renamed from: c  reason: collision with root package name */
+    private final int f38941c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f38942d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f38943e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final int f38944f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final int f38945g;
+
+    public b(mk.b bVar) {
+        this(bVar, 10, bVar.l() / 2, bVar.i() / 2);
+    }
+
+    private p[] a(p pVar, p pVar2, p pVar3, p pVar4) {
+        float c10 = pVar.c();
+        float d10 = pVar.d();
+        float c11 = pVar2.c();
+        float d11 = pVar2.d();
+        float c12 = pVar3.c();
+        float d12 = pVar3.d();
+        float c13 = pVar4.c();
+        float d13 = pVar4.d();
+        if (c10 < this.f38941c / 2.0f) {
+            return new p[]{new p(c13 - 1.0f, d13 + 1.0f), new p(c11 + 1.0f, d11 + 1.0f), new p(c12 - 1.0f, d12 - 1.0f), new p(c10 + 1.0f, d10 - 1.0f)};
+        }
+        return new p[]{new p(c13 + 1.0f, d13 + 1.0f), new p(c11 + 1.0f, d11 - 1.0f), new p(c12 - 1.0f, d12 + 1.0f), new p(c10 - 1.0f, d10 - 1.0f)};
+    }
+
+    private boolean b(int i10, int i11, int i12, boolean z10) {
+        if (z10) {
+            while (i10 <= i11) {
+                if (this.f38939a.e(i10, i12)) {
+                    return true;
                 }
-                if (i10 == length) {
-                    this.f40937b = new int[]{0};
-                    return;
-                }
-                int[] iArr2 = new int[length - i10];
-                this.f40937b = iArr2;
-                System.arraycopy(iArr, i10, iArr2, 0, iArr2.length);
-                return;
+                i10++;
             }
-            this.f40937b = iArr;
-            return;
-        }
-        throw new IllegalArgumentException();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b a(b bVar) {
-        if (this.f40936a.equals(bVar.f40936a)) {
-            if (g()) {
-                return bVar;
-            }
-            if (bVar.g()) {
-                return this;
-            }
-            int[] iArr = this.f40937b;
-            int[] iArr2 = bVar.f40937b;
-            if (iArr.length <= iArr2.length) {
-                iArr = iArr2;
-                iArr2 = iArr;
-            }
-            int[] iArr3 = new int[iArr.length];
-            int length = iArr.length - iArr2.length;
-            System.arraycopy(iArr, 0, iArr3, 0, length);
-            for (int i10 = length; i10 < iArr.length; i10++) {
-                iArr3[i10] = a.a(iArr2[i10 - length], iArr[i10]);
-            }
-            return new b(this.f40936a, iArr3);
-        }
-        throw new IllegalArgumentException("GenericGFPolys do not have same GenericGF field");
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b[] b(b bVar) {
-        if (this.f40936a.equals(bVar.f40936a)) {
-            if (!bVar.g()) {
-                b g10 = this.f40936a.g();
-                int h10 = this.f40936a.h(bVar.d(bVar.f()));
-                b bVar2 = this;
-                while (bVar2.f() >= bVar.f() && !bVar2.g()) {
-                    int f10 = bVar2.f() - bVar.f();
-                    int j10 = this.f40936a.j(bVar2.d(bVar2.f()), h10);
-                    b j11 = bVar.j(f10, j10);
-                    g10 = g10.a(this.f40936a.b(f10, j10));
-                    bVar2 = bVar2.a(j11);
-                }
-                return new b[]{g10, bVar2};
-            }
-            throw new IllegalArgumentException("Divide by 0");
-        }
-        throw new IllegalArgumentException("GenericGFPolys do not have same GenericGF field");
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int c(int i10) {
-        if (i10 == 0) {
-            return d(0);
-        }
-        if (i10 == 1) {
-            int i11 = 0;
-            for (int i12 : this.f40937b) {
-                i11 = a.a(i11, i12);
-            }
-            return i11;
-        }
-        int[] iArr = this.f40937b;
-        int i13 = iArr[0];
-        int length = iArr.length;
-        for (int i14 = 1; i14 < length; i14++) {
-            i13 = a.a(this.f40936a.j(i10, i13), this.f40937b[i14]);
-        }
-        return i13;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int d(int i10) {
-        int[] iArr = this.f40937b;
-        return iArr[(iArr.length - 1) - i10];
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int[] e() {
-        return this.f40937b;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int f() {
-        return this.f40937b.length - 1;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean g() {
-        if (this.f40937b[0] != 0) {
             return false;
         }
-        return true;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b h(int i10) {
-        if (i10 == 0) {
-            return this.f40936a.g();
-        }
-        if (i10 == 1) {
-            return this;
-        }
-        int length = this.f40937b.length;
-        int[] iArr = new int[length];
-        for (int i11 = 0; i11 < length; i11++) {
-            iArr[i11] = this.f40936a.j(this.f40937b[i11], i10);
-        }
-        return new b(this.f40936a, iArr);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b i(b bVar) {
-        if (this.f40936a.equals(bVar.f40936a)) {
-            if (!g() && !bVar.g()) {
-                int[] iArr = this.f40937b;
-                int length = iArr.length;
-                int[] iArr2 = bVar.f40937b;
-                int length2 = iArr2.length;
-                int[] iArr3 = new int[(length + length2) - 1];
-                for (int i10 = 0; i10 < length; i10++) {
-                    int i11 = iArr[i10];
-                    for (int i12 = 0; i12 < length2; i12++) {
-                        int i13 = i10 + i12;
-                        iArr3[i13] = a.a(iArr3[i13], this.f40936a.j(i11, iArr2[i12]));
-                    }
-                }
-                return new b(this.f40936a, iArr3);
+        while (i10 <= i11) {
+            if (this.f38939a.e(i12, i10)) {
+                return true;
             }
-            return this.f40936a.g();
+            i10++;
         }
-        throw new IllegalArgumentException("GenericGFPolys do not have same GenericGF field");
+        return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b j(int i10, int i11) {
-        if (i10 >= 0) {
-            if (i11 == 0) {
-                return this.f40936a.g();
+    private p d(float f10, float f11, float f12, float f13) {
+        int c10 = a.c(a.a(f10, f11, f12, f13));
+        float f14 = c10;
+        float f15 = (f12 - f10) / f14;
+        float f16 = (f13 - f11) / f14;
+        for (int i10 = 0; i10 < c10; i10++) {
+            float f17 = i10;
+            int c11 = a.c((f17 * f15) + f10);
+            int c12 = a.c((f17 * f16) + f11);
+            if (this.f38939a.e(c11, c12)) {
+                return new p(c11, c12);
             }
-            int length = this.f40937b.length;
-            int[] iArr = new int[i10 + length];
-            for (int i12 = 0; i12 < length; i12++) {
-                iArr[i12] = this.f40936a.j(this.f40937b[i12], i11);
-            }
-            return new b(this.f40936a, iArr);
         }
-        throw new IllegalArgumentException();
+        return null;
     }
 
-    public String toString() {
-        if (g()) {
-            return "0";
-        }
-        StringBuilder sb2 = new StringBuilder(f() * 8);
-        for (int f10 = f(); f10 >= 0; f10--) {
-            int d10 = d(f10);
-            if (d10 != 0) {
-                if (d10 < 0) {
-                    if (f10 == f()) {
-                        sb2.append("-");
-                    } else {
-                        sb2.append(" - ");
-                    }
-                    d10 = -d10;
-                } else if (sb2.length() > 0) {
-                    sb2.append(" + ");
-                }
-                if (f10 == 0 || d10 != 1) {
-                    int i10 = this.f40936a.i(d10);
-                    if (i10 == 0) {
-                        sb2.append('1');
-                    } else if (i10 == 1) {
-                        sb2.append('a');
-                    } else {
-                        sb2.append("a^");
-                        sb2.append(i10);
-                    }
-                }
-                if (f10 != 0) {
-                    if (f10 == 1) {
-                        sb2.append('x');
-                    } else {
-                        sb2.append("x^");
-                        sb2.append(f10);
+    public p[] c() {
+        int i10 = this.f38942d;
+        int i11 = this.f38943e;
+        int i12 = this.f38945g;
+        int i13 = this.f38944f;
+        boolean z10 = false;
+        boolean z11 = false;
+        boolean z12 = false;
+        boolean z13 = false;
+        boolean z14 = false;
+        boolean z15 = true;
+        while (z15) {
+            boolean z16 = false;
+            boolean z17 = true;
+            while (true) {
+                if ((z17 || !z11) && i11 < this.f38941c) {
+                    z17 = b(i12, i13, i11, false);
+                    if (z17) {
+                        i11++;
+                        z11 = true;
+                        z16 = true;
+                    } else if (!z11) {
+                        i11++;
                     }
                 }
             }
+            if (i11 < this.f38941c) {
+                boolean z18 = true;
+                while (true) {
+                    if ((z18 || !z12) && i13 < this.f38940b) {
+                        z18 = b(i10, i11, i13, true);
+                        if (z18) {
+                            i13++;
+                            z12 = true;
+                            z16 = true;
+                        } else if (!z12) {
+                            i13++;
+                        }
+                    }
+                }
+                if (i13 < this.f38940b) {
+                    boolean z19 = true;
+                    while (true) {
+                        if ((z19 || !z13) && i10 >= 0) {
+                            z19 = b(i12, i13, i10, false);
+                            if (z19) {
+                                i10--;
+                                z13 = true;
+                                z16 = true;
+                            } else if (!z13) {
+                                i10--;
+                            }
+                        }
+                    }
+                    if (i10 >= 0) {
+                        z15 = z16;
+                        boolean z20 = true;
+                        while (true) {
+                            if ((z20 || !z14) && i12 >= 0) {
+                                z20 = b(i10, i11, i12, true);
+                                if (z20) {
+                                    i12--;
+                                    z15 = true;
+                                    z14 = true;
+                                } else if (!z14) {
+                                    i12--;
+                                }
+                            }
+                        }
+                        if (i12 < 0) {
+                        }
+                    }
+                }
+            }
+            z10 = true;
+            break;
         }
-        return sb2.toString();
+        if (!z10) {
+            int i14 = i11 - i10;
+            p pVar = null;
+            p pVar2 = null;
+            for (int i15 = 1; pVar2 == null && i15 < i14; i15++) {
+                pVar2 = d(i10, i13 - i15, i10 + i15, i13);
+            }
+            if (pVar2 != null) {
+                p pVar3 = null;
+                for (int i16 = 1; pVar3 == null && i16 < i14; i16++) {
+                    pVar3 = d(i10, i12 + i16, i10 + i16, i12);
+                }
+                if (pVar3 != null) {
+                    p pVar4 = null;
+                    for (int i17 = 1; pVar4 == null && i17 < i14; i17++) {
+                        pVar4 = d(i11, i12 + i17, i11 - i17, i12);
+                    }
+                    if (pVar4 != null) {
+                        for (int i18 = 1; pVar == null && i18 < i14; i18++) {
+                            pVar = d(i11, i13 - i18, i11 - i18, i13);
+                        }
+                        if (pVar != null) {
+                            return a(pVar, pVar2, pVar4, pVar3);
+                        }
+                        throw k.a();
+                    }
+                    throw k.a();
+                }
+                throw k.a();
+            }
+            throw k.a();
+        }
+        throw k.a();
+    }
+
+    public b(mk.b bVar, int i10, int i11, int i12) {
+        this.f38939a = bVar;
+        int i13 = bVar.i();
+        this.f38940b = i13;
+        int l10 = bVar.l();
+        this.f38941c = l10;
+        int i14 = i10 / 2;
+        int i15 = i11 - i14;
+        this.f38942d = i15;
+        int i16 = i11 + i14;
+        this.f38943e = i16;
+        int i17 = i12 - i14;
+        this.f38945g = i17;
+        int i18 = i12 + i14;
+        this.f38944f = i18;
+        if (i17 < 0 || i15 < 0 || i18 >= i13 || i16 >= l10) {
+            throw k.a();
+        }
     }
 }

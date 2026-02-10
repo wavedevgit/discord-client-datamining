@@ -1,92 +1,92 @@
 package zb;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import zb.b;
+import zb.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class i {
+final class i extends o {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final o.c f56249a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final o.b f56250b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class a {
-        public final a a(String str, int i10) {
-            e().put(str, String.valueOf(i10));
+    static final class b extends o.a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private o.c f56251a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private o.b f56252b;
+
+        @Override // zb.o.a
+        public o a() {
+            return new i(this.f56251a, this.f56252b);
+        }
+
+        @Override // zb.o.a
+        public o.a b(o.b bVar) {
+            this.f56252b = bVar;
             return this;
         }
 
-        public final a b(String str, long j10) {
-            e().put(str, String.valueOf(j10));
+        @Override // zb.o.a
+        public o.a c(o.c cVar) {
+            this.f56251a = cVar;
             return this;
         }
+    }
 
-        public final a c(String str, String str2) {
-            e().put(str, str2);
-            return this;
+    @Override // zb.o
+    public o.b b() {
+        return this.f56250b;
+    }
+
+    @Override // zb.o
+    public o.c c() {
+        return this.f56249a;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
         }
-
-        public abstract i d();
-
-        protected abstract Map e();
-
-        protected abstract a f(Map map);
-
-        public abstract a g(Integer num);
-
-        public abstract a h(h hVar);
-
-        public abstract a i(long j10);
-
-        public abstract a j(String str);
-
-        public abstract a k(long j10);
-    }
-
-    public static a a() {
-        return new b.C0768b().f(new HashMap());
-    }
-
-    public final String b(String str) {
-        String str2 = (String) c().get(str);
-        if (str2 == null) {
-            return "";
+        if (obj instanceof o) {
+            o oVar = (o) obj;
+            o.c cVar = this.f56249a;
+            if (cVar != null ? cVar.equals(oVar.c()) : oVar.c() == null) {
+                o.b bVar = this.f56250b;
+                if (bVar != null ? bVar.equals(oVar.b()) : oVar.b() == null) {
+                    return true;
+                }
+            }
         }
-        return str2;
+        return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public abstract Map c();
-
-    public abstract Integer d();
-
-    public abstract h e();
-
-    public abstract long f();
-
-    public final int g(String str) {
-        String str2 = (String) c().get(str);
-        if (str2 == null) {
-            return 0;
+    public int hashCode() {
+        int hashCode;
+        o.c cVar = this.f56249a;
+        int i10 = 0;
+        if (cVar == null) {
+            hashCode = 0;
+        } else {
+            hashCode = cVar.hashCode();
         }
-        return Integer.valueOf(str2).intValue();
-    }
-
-    public final long h(String str) {
-        String str2 = (String) c().get(str);
-        if (str2 == null) {
-            return 0L;
+        int i11 = (hashCode ^ 1000003) * 1000003;
+        o.b bVar = this.f56250b;
+        if (bVar != null) {
+            i10 = bVar.hashCode();
         }
-        return Long.valueOf(str2).longValue();
+        return i11 ^ i10;
     }
 
-    public final Map i() {
-        return Collections.unmodifiableMap(c());
+    public String toString() {
+        return "NetworkConnectionInfo{networkType=" + this.f56249a + ", mobileSubtype=" + this.f56250b + "}";
     }
 
-    public abstract String j();
-
-    public abstract long k();
-
-    public a l() {
-        return new b.C0768b().j(j()).g(d()).h(e()).i(f()).k(k()).f(new HashMap(c()));
+    private i(o.c cVar, o.b bVar) {
+        this.f56249a = cVar;
+        this.f56250b = bVar;
     }
 }

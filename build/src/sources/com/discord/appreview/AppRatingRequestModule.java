@@ -43,14 +43,14 @@ public final class AppRatingRequestModule extends NativeAppRatingRequestModuleSp
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit requestRating$lambda$0(Promise promise) {
         promise.resolve(0);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit requestRating$lambda$1(Promise promise, Exception exception) {
         Intrinsics.checkNotNullParameter(exception, "exception");
         promise.reject(exception);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @NotNull
@@ -65,14 +65,14 @@ public final class AppRatingRequestModule extends NativeAppRatingRequestModuleSp
         if (currentActivity == null) {
             promise.reject(new IllegalStateException("current activity is null"));
         } else {
-            new AppRatingRequester(currentActivity, false, new Function0() { // from class: g6.a
+            new AppRatingRequester(currentActivity, false, new Function0() { // from class: h6.a
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit requestRating$lambda$0;
                     requestRating$lambda$0 = AppRatingRequestModule.requestRating$lambda$0(Promise.this);
                     return requestRating$lambda$0;
                 }
-            }, new Function1() { // from class: g6.b
+            }, new Function1() { // from class: h6.b
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit requestRating$lambda$1;

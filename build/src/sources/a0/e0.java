@@ -48,7 +48,7 @@ public interface e0 extends x.i, x1.b {
         return z.a();
     }
 
-    void i(Collection collection);
+    void j(Collection collection);
 
     void l(Collection collection);
 
@@ -65,7 +65,7 @@ public interface e0 extends x.i, x1.b {
         return true;
     }
 
-    default void h(boolean z10) {
+    default void i(boolean z10) {
     }
 
     default void p(w wVar) {

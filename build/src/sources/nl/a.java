@@ -1,32 +1,45 @@
 package nl;
 
 import android.media.MediaFormat;
-import android.view.Surface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    c a(int i10);
+public class a {
 
-    int b(long j10);
+    /* renamed from: a  reason: collision with root package name */
+    private MediaFormat f38946a;
 
-    int c(long j10);
+    /* renamed from: b  reason: collision with root package name */
+    private MediaFormat f38947b;
 
-    c d(int i10);
+    /* renamed from: c  reason: collision with root package name */
+    private String f38948c;
 
-    void e(c cVar);
+    /* renamed from: d  reason: collision with root package name */
+    private String f38949d;
 
-    void f(MediaFormat mediaFormat, Surface surface);
+    /* renamed from: e  reason: collision with root package name */
+    private long f38950e = -1;
 
-    void g(int i10, boolean z10);
+    public long a() {
+        return this.f38950e;
+    }
 
-    String getName();
+    public void b(String str) {
+        this.f38948c = str;
+    }
 
-    MediaFormat getOutputFormat();
+    public void c(long j10) {
+        this.f38950e = j10;
+    }
 
-    boolean isRunning();
+    public void d(String str) {
+        this.f38949d = str;
+    }
 
-    void release();
+    public void e(MediaFormat mediaFormat) {
+        this.f38946a = mediaFormat;
+    }
 
-    void start();
-
-    void stop();
+    public void f(MediaFormat mediaFormat) {
+        this.f38947b = mediaFormat;
+    }
 }

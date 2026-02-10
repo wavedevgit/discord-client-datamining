@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19226a;
+    private final m.b f19366a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19227b;
+    private final com.squareup.moshi.h f19367b;
 
     public UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.NAME_KEY, "timestamp", "reasonData");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19226a = a10;
+        this.f19366a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.NAME_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19227b = f10;
+        this.f19367b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,28 +38,28 @@ public final class UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter ext
         String str2 = null;
         String str3 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19226a);
+            int J = reader.J(this.f19366a);
             if (J != -1) {
                 if (J != 0) {
                     if (J != 1) {
-                        if (J == 2 && (str3 = (String) this.f19227b.fromJson(reader)) == null) {
-                            throw an.c.x("reasonData", "reasonData", reader);
+                        if (J == 2 && (str3 = (String) this.f19367b.fromJson(reader)) == null) {
+                            throw bn.c.x("reasonData", "reasonData", reader);
                         }
                     } else {
-                        str2 = (String) this.f19227b.fromJson(reader);
+                        str2 = (String) this.f19367b.fromJson(reader);
                         if (str2 == null) {
-                            throw an.c.x("timestamp", "timestamp", reader);
+                            throw bn.c.x("timestamp", "timestamp", reader);
                         }
                     }
                 } else {
-                    str = (String) this.f19227b.fromJson(reader);
+                    str = (String) this.f19367b.fromJson(reader);
                     if (str == null) {
-                        throw an.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                        throw bn.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -68,11 +68,11 @@ public final class UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter ext
                 if (str3 != null) {
                     return new UpdateInquirySessionRequest.AppdomeThreatEvent(str, str2, str3);
                 }
-                throw an.c.o("reasonData", "reasonData", reader);
+                throw bn.c.o("reasonData", "reasonData", reader);
             }
-            throw an.c.o("timestamp", "timestamp", reader);
+            throw bn.c.o("timestamp", "timestamp", reader);
         }
-        throw an.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw bn.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -82,11 +82,11 @@ public final class UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter ext
         if (appdomeThreatEvent != null) {
             writer.k();
             writer.J(StackTraceHelper.NAME_KEY);
-            this.f19227b.toJson(writer, appdomeThreatEvent.a());
+            this.f19367b.toJson(writer, appdomeThreatEvent.a());
             writer.J("timestamp");
-            this.f19227b.toJson(writer, appdomeThreatEvent.c());
+            this.f19367b.toJson(writer, appdomeThreatEvent.c());
             writer.J("reasonData");
-            this.f19227b.toJson(writer, appdomeThreatEvent.b());
+            this.f19367b.toJson(writer, appdomeThreatEvent.b());
             writer.s();
             return;
         }

@@ -8,92 +8,92 @@ import java.util.ArrayList;
 public abstract class FragmentTransaction {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f4588a;
+    private final u f4285a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ClassLoader f4589b;
+    private final ClassLoader f4286b;
 
     /* renamed from: d  reason: collision with root package name */
-    int f4591d;
+    int f4288d;
 
     /* renamed from: e  reason: collision with root package name */
-    int f4592e;
+    int f4289e;
 
     /* renamed from: f  reason: collision with root package name */
-    int f4593f;
+    int f4290f;
 
     /* renamed from: g  reason: collision with root package name */
-    int f4594g;
+    int f4291g;
 
     /* renamed from: h  reason: collision with root package name */
-    int f4595h;
+    int f4292h;
 
     /* renamed from: i  reason: collision with root package name */
-    boolean f4596i;
+    boolean f4293i;
 
     /* renamed from: k  reason: collision with root package name */
-    String f4598k;
+    String f4295k;
 
     /* renamed from: l  reason: collision with root package name */
-    int f4599l;
+    int f4296l;
 
     /* renamed from: m  reason: collision with root package name */
-    CharSequence f4600m;
+    CharSequence f4297m;
 
     /* renamed from: n  reason: collision with root package name */
-    int f4601n;
+    int f4298n;
 
     /* renamed from: o  reason: collision with root package name */
-    CharSequence f4602o;
+    CharSequence f4299o;
 
     /* renamed from: p  reason: collision with root package name */
-    ArrayList f4603p;
+    ArrayList f4300p;
 
     /* renamed from: q  reason: collision with root package name */
-    ArrayList f4604q;
+    ArrayList f4301q;
 
     /* renamed from: s  reason: collision with root package name */
-    ArrayList f4606s;
+    ArrayList f4303s;
 
     /* renamed from: c  reason: collision with root package name */
-    ArrayList f4590c = new ArrayList();
+    ArrayList f4287c = new ArrayList();
 
     /* renamed from: j  reason: collision with root package name */
-    boolean f4597j = true;
+    boolean f4294j = true;
 
     /* renamed from: r  reason: collision with root package name */
-    boolean f4605r = false;
+    boolean f4302r = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        int f4607a;
+        int f4304a;
 
         /* renamed from: b  reason: collision with root package name */
-        Fragment f4608b;
+        Fragment f4305b;
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f4609c;
+        boolean f4306c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f4610d;
+        int f4307d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f4611e;
+        int f4308e;
 
         /* renamed from: f  reason: collision with root package name */
-        int f4612f;
+        int f4309f;
 
         /* renamed from: g  reason: collision with root package name */
-        int f4613g;
+        int f4310g;
 
         /* renamed from: h  reason: collision with root package name */
-        Lifecycle.State f4614h;
+        Lifecycle.State f4311h;
 
         /* renamed from: i  reason: collision with root package name */
-        Lifecycle.State f4615i;
+        Lifecycle.State f4312i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a() {
@@ -101,29 +101,29 @@ public abstract class FragmentTransaction {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a(int i10, Fragment fragment) {
-            this.f4607a = i10;
-            this.f4608b = fragment;
-            this.f4609c = false;
-            Lifecycle.State state = Lifecycle.State.f4850p;
-            this.f4614h = state;
-            this.f4615i = state;
+            this.f4304a = i10;
+            this.f4305b = fragment;
+            this.f4306c = false;
+            Lifecycle.State state = Lifecycle.State.f4547p;
+            this.f4311h = state;
+            this.f4312i = state;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a(int i10, Fragment fragment, boolean z10) {
-            this.f4607a = i10;
-            this.f4608b = fragment;
-            this.f4609c = z10;
-            Lifecycle.State state = Lifecycle.State.f4850p;
-            this.f4614h = state;
-            this.f4615i = state;
+            this.f4304a = i10;
+            this.f4305b = fragment;
+            this.f4306c = z10;
+            Lifecycle.State state = Lifecycle.State.f4547p;
+            this.f4311h = state;
+            this.f4312i = state;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public FragmentTransaction(u uVar, ClassLoader classLoader) {
-        this.f4588a = uVar;
-        this.f4589b = classLoader;
+        this.f4285a = uVar;
+        this.f4286b = classLoader;
     }
 
     public FragmentTransaction b(int i10, Fragment fragment) {
@@ -149,11 +149,11 @@ public abstract class FragmentTransaction {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(a aVar) {
-        this.f4590c.add(aVar);
-        aVar.f4610d = this.f4591d;
-        aVar.f4611e = this.f4592e;
-        aVar.f4612f = this.f4593f;
-        aVar.f4613g = this.f4594g;
+        this.f4287c.add(aVar);
+        aVar.f4307d = this.f4288d;
+        aVar.f4308e = this.f4289e;
+        aVar.f4309f = this.f4290f;
+        aVar.f4310g = this.f4291g;
     }
 
     public abstract int g();
@@ -165,8 +165,8 @@ public abstract class FragmentTransaction {
     public abstract void j();
 
     public FragmentTransaction k() {
-        if (!this.f4596i) {
-            this.f4597j = false;
+        if (!this.f4293i) {
+            this.f4294j = false;
             return this;
         }
         throw new IllegalStateException("This transaction is already being added to the back stack");
@@ -232,10 +232,10 @@ public abstract class FragmentTransaction {
         if (!z10) {
             k();
         }
-        if (this.f4606s == null) {
-            this.f4606s = new ArrayList();
+        if (this.f4303s == null) {
+            this.f4303s = new ArrayList();
         }
-        this.f4606s.add(runnable);
+        this.f4303s.add(runnable);
         return this;
     }
 
@@ -244,15 +244,15 @@ public abstract class FragmentTransaction {
     }
 
     public FragmentTransaction s(int i10, int i11, int i12, int i13) {
-        this.f4591d = i10;
-        this.f4592e = i11;
-        this.f4593f = i12;
-        this.f4594g = i13;
+        this.f4288d = i10;
+        this.f4289e = i11;
+        this.f4290f = i12;
+        this.f4291g = i13;
         return this;
     }
 
     public FragmentTransaction t(boolean z10) {
-        this.f4605r = z10;
+        this.f4302r = z10;
         return this;
     }
 }

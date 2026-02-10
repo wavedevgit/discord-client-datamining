@@ -2,51 +2,51 @@ package com.facebook.cache.disk;
 
 import android.content.Context;
 import com.facebook.common.internal.Supplier;
-import i8.c;
-import i8.f;
-import i8.g;
-import j8.i;
+import j8.c;
+import j8.f;
+import j8.g;
 import java.io.File;
-import o8.j;
-import o8.m;
+import k8.i;
+import p8.j;
+import p8.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class DiskCacheConfig {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f9812a;
+    private final int f9952a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f9813b;
+    private final String f9953b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Supplier f9814c;
+    private final Supplier f9954c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f9815d;
+    private final long f9955d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f9816e;
+    private final long f9956e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long f9817f;
+    private final long f9957f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final i f9818g;
+    private final i f9958g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final i8.a f9819h;
+    private final j8.a f9959h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final c f9820i;
+    private final c f9960i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final l8.b f9821j;
+    private final m8.b f9961j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Context f9822k;
+    private final Context f9962k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f9823l;
+    private final boolean f9963l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Supplier {
@@ -56,8 +56,8 @@ public class DiskCacheConfig {
         @Override // com.facebook.common.internal.Supplier
         /* renamed from: a */
         public File get() {
-            j.g(DiskCacheConfig.this.f9822k);
-            return DiskCacheConfig.this.f9822k.getApplicationContext().getCacheDir();
+            j.g(DiskCacheConfig.this.f9962k);
+            return DiskCacheConfig.this.f9962k.getApplicationContext().getCacheDir();
         }
     }
 
@@ -65,113 +65,113 @@ public class DiskCacheConfig {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f9825a;
+        private int f9965a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f9826b;
+        private String f9966b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Supplier f9827c;
+        private Supplier f9967c;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f9828d;
+        private long f9968d;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f9829e;
+        private long f9969e;
 
         /* renamed from: f  reason: collision with root package name */
-        private long f9830f;
+        private long f9970f;
 
         /* renamed from: g  reason: collision with root package name */
-        private i f9831g;
+        private i f9971g;
 
         /* renamed from: h  reason: collision with root package name */
-        private i8.a f9832h;
+        private j8.a f9972h;
 
         /* renamed from: i  reason: collision with root package name */
-        private c f9833i;
+        private c f9973i;
 
         /* renamed from: j  reason: collision with root package name */
-        private l8.b f9834j;
+        private m8.b f9974j;
 
         /* renamed from: k  reason: collision with root package name */
-        private boolean f9835k;
+        private boolean f9975k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final Context f9836l;
+        private final Context f9976l;
 
         public DiskCacheConfig n() {
             return new DiskCacheConfig(this);
         }
 
         public b o(String str) {
-            this.f9826b = str;
+            this.f9966b = str;
             return this;
         }
 
         public b p(File file) {
-            this.f9827c = m.a(file);
+            this.f9967c = m.a(file);
             return this;
         }
 
         public b q(long j10) {
-            this.f9828d = j10;
+            this.f9968d = j10;
             return this;
         }
 
         private b(Context context) {
-            this.f9825a = 1;
-            this.f9826b = "image_cache";
-            this.f9828d = 41943040L;
-            this.f9829e = 10485760L;
-            this.f9830f = 2097152L;
-            this.f9831g = new j8.c();
-            this.f9836l = context;
+            this.f9965a = 1;
+            this.f9966b = "image_cache";
+            this.f9968d = 41943040L;
+            this.f9969e = 10485760L;
+            this.f9970f = 2097152L;
+            this.f9971g = new k8.c();
+            this.f9976l = context;
         }
     }
 
     protected DiskCacheConfig(b bVar) {
         boolean z10;
-        i8.a aVar;
+        j8.a aVar;
         c cVar;
-        l8.b bVar2;
-        Context context = bVar.f9836l;
-        this.f9822k = context;
-        if (bVar.f9827c == null && context == null) {
+        m8.b bVar2;
+        Context context = bVar.f9976l;
+        this.f9962k = context;
+        if (bVar.f9967c == null && context == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         j.j(z10, "Either a non-null context or a base directory path or supplier must be provided.");
-        if (bVar.f9827c == null && context != null) {
-            bVar.f9827c = new a();
+        if (bVar.f9967c == null && context != null) {
+            bVar.f9967c = new a();
         }
-        this.f9812a = bVar.f9825a;
-        this.f9813b = (String) j.g(bVar.f9826b);
-        this.f9814c = (Supplier) j.g(bVar.f9827c);
-        this.f9815d = bVar.f9828d;
-        this.f9816e = bVar.f9829e;
-        this.f9817f = bVar.f9830f;
-        this.f9818g = (i) j.g(bVar.f9831g);
-        if (bVar.f9832h != null) {
-            aVar = bVar.f9832h;
+        this.f9952a = bVar.f9965a;
+        this.f9953b = (String) j.g(bVar.f9966b);
+        this.f9954c = (Supplier) j.g(bVar.f9967c);
+        this.f9955d = bVar.f9968d;
+        this.f9956e = bVar.f9969e;
+        this.f9957f = bVar.f9970f;
+        this.f9958g = (i) j.g(bVar.f9971g);
+        if (bVar.f9972h != null) {
+            aVar = bVar.f9972h;
         } else {
             aVar = f.b();
         }
-        this.f9819h = aVar;
-        if (bVar.f9833i != null) {
-            cVar = bVar.f9833i;
+        this.f9959h = aVar;
+        if (bVar.f9973i != null) {
+            cVar = bVar.f9973i;
         } else {
             cVar = g.i();
         }
-        this.f9820i = cVar;
-        if (bVar.f9834j != null) {
-            bVar2 = bVar.f9834j;
+        this.f9960i = cVar;
+        if (bVar.f9974j != null) {
+            bVar2 = bVar.f9974j;
         } else {
-            bVar2 = l8.c.b();
+            bVar2 = m8.c.b();
         }
-        this.f9821j = bVar2;
-        this.f9823l = bVar.f9835k;
+        this.f9961j = bVar2;
+        this.f9963l = bVar.f9975k;
     }
 
     public static b m(Context context) {
@@ -179,46 +179,46 @@ public class DiskCacheConfig {
     }
 
     public String b() {
-        return this.f9813b;
+        return this.f9953b;
     }
 
     public Supplier c() {
-        return this.f9814c;
+        return this.f9954c;
     }
 
-    public i8.a d() {
-        return this.f9819h;
+    public j8.a d() {
+        return this.f9959h;
     }
 
     public c e() {
-        return this.f9820i;
+        return this.f9960i;
     }
 
     public long f() {
-        return this.f9815d;
+        return this.f9955d;
     }
 
-    public l8.b g() {
-        return this.f9821j;
+    public m8.b g() {
+        return this.f9961j;
     }
 
     public i h() {
-        return this.f9818g;
+        return this.f9958g;
     }
 
     public boolean i() {
-        return this.f9823l;
+        return this.f9963l;
     }
 
     public long j() {
-        return this.f9816e;
+        return this.f9956e;
     }
 
     public long k() {
-        return this.f9817f;
+        return this.f9957f;
     }
 
     public int l() {
-        return this.f9812a;
+        return this.f9952a;
     }
 }

@@ -12,7 +12,7 @@ import java.util.Set;
 public final class IncorrectJpegMetadataQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f2451a = new HashSet(Arrays.asList("A24"));
+    private static final Set f2148a = new HashSet(Arrays.asList("A24"));
 
     private boolean c(byte[] bArr) {
         byte b10;
@@ -41,7 +41,7 @@ public final class IncorrectJpegMetadataQuirk implements y1 {
     }
 
     private static boolean e() {
-        if ("Samsung".equalsIgnoreCase(Build.BRAND) && f2451a.contains(Build.DEVICE.toUpperCase(Locale.US))) {
+        if ("Samsung".equalsIgnoreCase(Build.BRAND) && f2148a.contains(Build.DEVICE.toUpperCase(Locale.US))) {
             return true;
         }
         return false;
@@ -54,7 +54,7 @@ public final class IncorrectJpegMetadataQuirk implements y1 {
 
     public byte[] f(n nVar) {
         int i10 = 0;
-        ByteBuffer e10 = nVar.c1()[0].e();
+        ByteBuffer e10 = nVar.Z0()[0].e();
         byte[] bArr = new byte[e10.capacity()];
         e10.rewind();
         e10.get(bArr);

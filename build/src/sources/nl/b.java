@@ -1,36 +1,36 @@
 package nl;
 
 import android.media.MediaFormat;
-import android.view.Surface;
+import java.util.ArrayList;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b {
-    c a(int i10);
+public class b {
 
-    int b(long j10);
+    /* renamed from: a  reason: collision with root package name */
+    private List f38951a = new ArrayList(2);
 
-    int c(long j10);
+    public void a(MediaFormat mediaFormat) {
+        a aVar = new a();
+        aVar.e(mediaFormat);
+        this.f38951a.add(aVar);
+    }
 
-    Surface createInputSurface();
+    public List b() {
+        return this.f38951a;
+    }
 
-    c d(int i10);
+    public void c(int i10, long j10) {
+        a aVar = (a) this.f38951a.get(i10);
+        aVar.c(aVar.a() + j10);
+    }
 
-    void e(c cVar);
+    public void d(int i10, MediaFormat mediaFormat) {
+        ((a) this.f38951a.get(i10)).f(mediaFormat);
+    }
 
-    void f(MediaFormat mediaFormat);
-
-    void g();
-
-    String getName();
-
-    MediaFormat getOutputFormat();
-
-    void h(int i10);
-
-    boolean isRunning();
-
-    void release();
-
-    void start();
-
-    void stop();
+    public void e(int i10, String str, String str2) {
+        a aVar = (a) this.f38951a.get(i10);
+        aVar.b(str);
+        aVar.d(str2);
+    }
 }

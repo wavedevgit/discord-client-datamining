@@ -1,7 +1,5 @@
 package com.google.android.material.timepicker;
 
-import ah.j;
-import ah.k;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.TimeInterpolator;
@@ -19,10 +17,12 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import androidx.core.view.h0;
 import androidx.recyclerview.widget.h;
+import bh.j;
+import bh.k;
 import com.google.android.material.internal.o;
 import java.util.ArrayList;
 import java.util.List;
-import lh.g;
+import mh.g;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class ClockHandView extends View {
@@ -33,49 +33,49 @@ public class ClockHandView extends View {
     private int E;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f15577d;
+    private final int f15717d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TimeInterpolator f15578e;
+    private final TimeInterpolator f15718e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ValueAnimator f15579i;
+    private final ValueAnimator f15719i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f15580o;
+    private boolean f15720o;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f15581p;
+    private float f15721p;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f15582q;
+    private float f15722q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f15583r;
+    private boolean f15723r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final int f15584s;
+    private final int f15724s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f15585t;
+    private boolean f15725t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final List f15586u;
+    private final List f15726u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final int f15587v;
+    private final int f15727v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final float f15588w;
+    private final float f15728w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Paint f15589x;
+    private final Paint f15729x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final RectF f15590y;
+    private final RectF f15730y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final int f15591z;
+    private final int f15731z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -95,7 +95,7 @@ public class ClockHandView extends View {
     }
 
     public ClockHandView(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, ah.b.B);
+        this(context, attributeSet, bh.b.B);
     }
 
     public static /* synthetic */ void a(ClockHandView clockHandView, ValueAnimator valueAnimator) {
@@ -105,7 +105,7 @@ public class ClockHandView extends View {
 
     private void c(float f10, float f11) {
         int i10 = 2;
-        if (kh.a.a(getWidth() / 2, getHeight() / 2, f10, f11) > h(2) + o.d(getContext(), 12)) {
+        if (lh.a.a(getWidth() / 2, getHeight() / 2, f10, f11) > h(2) + o.d(getContext(), 12)) {
             i10 = 1;
         }
         this.E = i10;
@@ -119,13 +119,13 @@ public class ClockHandView extends View {
         float h11 = h(this.E);
         float cos = (((float) Math.cos(this.C)) * h11) + f10;
         float f11 = height;
-        this.f15589x.setStrokeWidth(0.0f);
-        canvas.drawCircle(cos, (h11 * ((float) Math.sin(this.C))) + f11, this.f15587v, this.f15589x);
+        this.f15729x.setStrokeWidth(0.0f);
+        canvas.drawCircle(cos, (h11 * ((float) Math.sin(this.C))) + f11, this.f15727v, this.f15729x);
         double sin = Math.sin(this.C);
         double cos2 = Math.cos(this.C);
-        this.f15589x.setStrokeWidth(this.f15591z);
-        canvas.drawLine(f10, f11, width + ((int) (cos2 * r2)), height + ((int) (r2 * sin)), this.f15589x);
-        canvas.drawCircle(f10, f11, this.f15588w, this.f15589x);
+        this.f15729x.setStrokeWidth(this.f15731z);
+        canvas.drawLine(f10, f11, width + ((int) (cos2 * r2)), height + ((int) (r2 * sin)), this.f15729x);
+        canvas.drawCircle(f10, f11, this.f15728w, this.f15729x);
     }
 
     private int f(float f10, float f11) {
@@ -172,7 +172,7 @@ public class ClockHandView extends View {
         if (!z13 && !z10) {
             return false;
         }
-        if (z12 && this.f15580o) {
+        if (z12 && this.f15720o) {
             z14 = true;
         }
         n(f12, z14);
@@ -186,21 +186,21 @@ public class ClockHandView extends View {
         float h10 = h(this.E);
         float width = (getWidth() / 2) + (((float) Math.cos(this.C)) * h10);
         float height = (getHeight() / 2) + (h10 * ((float) Math.sin(this.C)));
-        RectF rectF = this.f15590y;
-        int i10 = this.f15587v;
+        RectF rectF = this.f15730y;
+        int i10 = this.f15727v;
         rectF.set(width - i10, height - i10, width + i10, height + i10);
-        for (b bVar : this.f15586u) {
+        for (b bVar : this.f15726u) {
             bVar.a(f11, z10);
         }
         invalidate();
     }
 
     public void b(b bVar) {
-        this.f15586u.add(bVar);
+        this.f15726u.add(bVar);
     }
 
     public RectF e() {
-        return this.f15590y;
+        return this.f15730y;
     }
 
     public float g() {
@@ -208,7 +208,7 @@ public class ClockHandView extends View {
     }
 
     public int i() {
-        return this.f15587v;
+        return this.f15727v;
     }
 
     public void l(int i10) {
@@ -221,7 +221,7 @@ public class ClockHandView extends View {
     }
 
     public void n(float f10, boolean z10) {
-        ValueAnimator valueAnimator = this.f15579i;
+        ValueAnimator valueAnimator = this.f15719i;
         if (valueAnimator != null) {
             valueAnimator.cancel();
         }
@@ -230,17 +230,17 @@ public class ClockHandView extends View {
             return;
         }
         Pair j10 = j(f10);
-        this.f15579i.setFloatValues(((Float) j10.first).floatValue(), ((Float) j10.second).floatValue());
-        this.f15579i.setDuration(this.f15577d);
-        this.f15579i.setInterpolator(this.f15578e);
-        this.f15579i.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.material.timepicker.a
+        this.f15719i.setFloatValues(((Float) j10.first).floatValue(), ((Float) j10.second).floatValue());
+        this.f15719i.setDuration(this.f15717d);
+        this.f15719i.setInterpolator(this.f15718e);
+        this.f15719i.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.material.timepicker.a
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
                 ClockHandView.a(ClockHandView.this, valueAnimator2);
             }
         });
-        this.f15579i.addListener(new a());
-        this.f15579i.start();
+        this.f15719i.addListener(new a());
+        this.f15719i.start();
     }
 
     @Override // android.view.View
@@ -252,7 +252,7 @@ public class ClockHandView extends View {
     @Override // android.view.View
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         super.onLayout(z10, i10, i11, i12, i13);
-        if (!this.f15579i.isRunning()) {
+        if (!this.f15719i.isRunning()) {
             m(g());
         }
     }
@@ -273,30 +273,30 @@ public class ClockHandView extends View {
                 z10 = false;
                 z12 = false;
             } else {
-                int i10 = (int) (x10 - this.f15581p);
-                int i11 = (int) (y10 - this.f15582q);
-                if ((i10 * i10) + (i11 * i11) > this.f15584s) {
+                int i10 = (int) (x10 - this.f15721p);
+                int i11 = (int) (y10 - this.f15722q);
+                if ((i10 * i10) + (i11 * i11) > this.f15724s) {
                     z13 = true;
                 } else {
                     z13 = false;
                 }
-                this.f15583r = z13;
+                this.f15723r = z13;
                 z11 = this.B;
                 if (actionMasked == 1) {
                     z14 = true;
                 } else {
                     z14 = false;
                 }
-                if (this.f15585t) {
+                if (this.f15725t) {
                     c(x10, y10);
                 }
                 z12 = z14;
                 z10 = false;
             }
         } else {
-            this.f15581p = x10;
-            this.f15582q = y10;
-            this.f15583r = true;
+            this.f15721p = x10;
+            this.f15722q = y10;
+            this.f15723r = true;
             this.B = false;
             z10 = true;
             z11 = false;
@@ -308,34 +308,34 @@ public class ClockHandView extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(boolean z10) {
-        if (this.f15585t && !z10) {
+        if (this.f15725t && !z10) {
             this.E = 1;
         }
-        this.f15585t = z10;
+        this.f15725t = z10;
         invalidate();
     }
 
     public ClockHandView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f15579i = new ValueAnimator();
-        this.f15586u = new ArrayList();
+        this.f15719i = new ValueAnimator();
+        this.f15726u = new ArrayList();
         Paint paint = new Paint();
-        this.f15589x = paint;
-        this.f15590y = new RectF();
+        this.f15729x = paint;
+        this.f15730y = new RectF();
         this.E = 1;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f1017u1, i10, j.f822z);
-        this.f15577d = g.f(context, ah.b.F, h.DEFAULT_DRAG_ANIMATION_DURATION);
-        this.f15578e = g.g(context, ah.b.P, bh.a.f6755b);
-        this.D = obtainStyledAttributes.getDimensionPixelSize(k.f1035w1, 0);
-        this.f15587v = obtainStyledAttributes.getDimensionPixelSize(k.f1044x1, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f7005u1, i10, j.f6810z);
+        this.f15717d = g.f(context, bh.b.F, h.DEFAULT_DRAG_ANIMATION_DURATION);
+        this.f15718e = g.g(context, bh.b.P, ch.a.f7596b);
+        this.D = obtainStyledAttributes.getDimensionPixelSize(k.f7023w1, 0);
+        this.f15727v = obtainStyledAttributes.getDimensionPixelSize(k.f7032x1, 0);
         Resources resources = getResources();
-        this.f15591z = resources.getDimensionPixelSize(ah.d.f703u);
-        this.f15588w = resources.getDimensionPixelSize(ah.d.f701s);
-        int color = obtainStyledAttributes.getColor(k.f1026v1, 0);
+        this.f15731z = resources.getDimensionPixelSize(bh.d.f6691u);
+        this.f15728w = resources.getDimensionPixelSize(bh.d.f6689s);
+        int color = obtainStyledAttributes.getColor(k.f7014v1, 0);
         paint.setAntiAlias(true);
         paint.setColor(color);
         m(0.0f);
-        this.f15584s = ViewConfiguration.get(context).getScaledTouchSlop();
+        this.f15724s = ViewConfiguration.get(context).getScaledTouchSlop();
         h0.x0(this, 2);
         obtainStyledAttributes.recycle();
     }

@@ -1,48 +1,43 @@
 package pg;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class o2 {
+final class o2 implements zi.d {
 
-    /* renamed from: a */
-    private ca f44586a;
+    /* renamed from: a  reason: collision with root package name */
+    static final o2 f43836a = new o2();
 
-    /* renamed from: b */
-    private Boolean f44587b;
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f43837b;
 
-    /* renamed from: c */
-    private n9 f44588c;
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f43838c;
 
-    /* renamed from: d */
-    private Integer f44589d;
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f43839d;
 
-    /* renamed from: e */
-    private Integer f44590e;
-
-    public final o2 a(Integer num) {
-        this.f44589d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
+    static {
+        c.b a10 = zi.c.a("inferenceCommonLogEvent");
+        f fVar = new f();
+        fVar.a(1);
+        f43837b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("options");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f43838c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("imageInfo");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f43839d = a12.b(fVar3.b()).a();
     }
 
-    public final o2 b(n9 n9Var) {
-        this.f44588c = n9Var;
-        return this;
+    private o2() {
     }
 
-    public final o2 c(ca caVar) {
-        this.f44586a = caVar;
-        return this;
-    }
-
-    public final o2 d(Boolean bool) {
-        this.f44587b = bool;
-        return this;
-    }
-
-    public final o2 e(Integer num) {
-        this.f44590e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
-    }
-
-    public final q2 f() {
-        return new q2(this, null);
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

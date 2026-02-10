@@ -1,7 +1,5 @@
 package com.google.android.material.snackbar;
 
-import ah.d;
-import ah.f;
 import android.animation.TimeInterpolator;
 import android.content.Context;
 import android.text.Layout;
@@ -12,25 +10,27 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.view.h0;
-import lh.g;
+import bh.d;
+import bh.f;
+import mh.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class SnackbarContentLayout extends LinearLayout implements a {
 
     /* renamed from: d  reason: collision with root package name */
-    private TextView f15368d;
+    private TextView f15508d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Button f15369e;
+    private Button f15509e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final TimeInterpolator f15370i;
+    private final TimeInterpolator f15510i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f15371o;
+    private int f15511o;
 
     public SnackbarContentLayout(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f15370i = g.g(context, ah.b.P, bh.a.f6755b);
+        this.f15510i = g.g(context, bh.b.P, ch.a.f7596b);
     }
 
     private static void d(View view, int i10, int i11) {
@@ -49,57 +49,57 @@ public class SnackbarContentLayout extends LinearLayout implements a {
         } else {
             z10 = false;
         }
-        if (this.f15368d.getPaddingTop() == i11 && this.f15368d.getPaddingBottom() == i12) {
+        if (this.f15508d.getPaddingTop() == i11 && this.f15508d.getPaddingBottom() == i12) {
             return z10;
         }
-        d(this.f15368d, i11, i12);
+        d(this.f15508d, i11, i12);
         return true;
     }
 
     @Override // com.google.android.material.snackbar.a
     public void a(int i10, int i11) {
-        this.f15368d.setAlpha(0.0f);
+        this.f15508d.setAlpha(0.0f);
         long j10 = i11;
         long j11 = i10;
-        this.f15368d.animate().alpha(1.0f).setDuration(j10).setInterpolator(this.f15370i).setStartDelay(j11).start();
-        if (this.f15369e.getVisibility() == 0) {
-            this.f15369e.setAlpha(0.0f);
-            this.f15369e.animate().alpha(1.0f).setDuration(j10).setInterpolator(this.f15370i).setStartDelay(j11).start();
+        this.f15508d.animate().alpha(1.0f).setDuration(j10).setInterpolator(this.f15510i).setStartDelay(j11).start();
+        if (this.f15509e.getVisibility() == 0) {
+            this.f15509e.setAlpha(0.0f);
+            this.f15509e.animate().alpha(1.0f).setDuration(j10).setInterpolator(this.f15510i).setStartDelay(j11).start();
         }
     }
 
     @Override // com.google.android.material.snackbar.a
     public void b(int i10, int i11) {
-        this.f15368d.setAlpha(1.0f);
+        this.f15508d.setAlpha(1.0f);
         long j10 = i11;
         long j11 = i10;
-        this.f15368d.animate().alpha(0.0f).setDuration(j10).setInterpolator(this.f15370i).setStartDelay(j11).start();
-        if (this.f15369e.getVisibility() == 0) {
-            this.f15369e.setAlpha(1.0f);
-            this.f15369e.animate().alpha(0.0f).setDuration(j10).setInterpolator(this.f15370i).setStartDelay(j11).start();
+        this.f15508d.animate().alpha(0.0f).setDuration(j10).setInterpolator(this.f15510i).setStartDelay(j11).start();
+        if (this.f15509e.getVisibility() == 0) {
+            this.f15509e.setAlpha(1.0f);
+            this.f15509e.animate().alpha(0.0f).setDuration(j10).setInterpolator(this.f15510i).setStartDelay(j11).start();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(float f10) {
         if (f10 != 1.0f) {
-            this.f15369e.setTextColor(gh.a.j(gh.a.d(this, ah.b.f653o), this.f15369e.getCurrentTextColor(), f10));
+            this.f15509e.setTextColor(hh.a.j(hh.a.d(this, bh.b.f6641o), this.f15509e.getCurrentTextColor(), f10));
         }
     }
 
     public Button getActionView() {
-        return this.f15369e;
+        return this.f15509e;
     }
 
     public TextView getMessageView() {
-        return this.f15368d;
+        return this.f15508d;
     }
 
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        this.f15368d = (TextView) findViewById(f.L);
-        this.f15369e = (Button) findViewById(f.K);
+        this.f15508d = (TextView) findViewById(f.L);
+        this.f15509e = (Button) findViewById(f.K);
     }
 
     @Override // android.widget.LinearLayout, android.view.View
@@ -107,15 +107,15 @@ public class SnackbarContentLayout extends LinearLayout implements a {
         boolean z10;
         super.onMeasure(i10, i11);
         if (getOrientation() != 1) {
-            int dimensionPixelSize = getResources().getDimensionPixelSize(d.f687g);
-            int dimensionPixelSize2 = getResources().getDimensionPixelSize(d.f685f);
-            Layout layout = this.f15368d.getLayout();
+            int dimensionPixelSize = getResources().getDimensionPixelSize(d.f6675g);
+            int dimensionPixelSize2 = getResources().getDimensionPixelSize(d.f6673f);
+            Layout layout = this.f15508d.getLayout();
             if (layout != null && layout.getLineCount() > 1) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            if (z10 && this.f15371o > 0 && this.f15369e.getMeasuredWidth() > this.f15371o) {
+            if (z10 && this.f15511o > 0 && this.f15509e.getMeasuredWidth() > this.f15511o) {
                 if (!e(1, dimensionPixelSize, dimensionPixelSize - dimensionPixelSize2)) {
                     return;
                 }
@@ -132,6 +132,6 @@ public class SnackbarContentLayout extends LinearLayout implements a {
     }
 
     public void setMaxInlineActionWidth(int i10) {
-        this.f15371o = i10;
+        this.f15511o = i10;
     }
 }

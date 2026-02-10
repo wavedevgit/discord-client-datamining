@@ -95,7 +95,7 @@ public final class DynamicFromObject implements Dynamic {
             return ReadableType.Array;
         }
         String name = obj.getClass().getName();
-        p8.a.m(ReactConstants.TAG, "Unmapped object type " + name);
+        q8.a.m(ReactConstants.TAG, "Unmapped object type " + name);
         return ReadableType.Null;
     }
 

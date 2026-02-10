@@ -1,22 +1,13 @@
 package da;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface b {
-    HashMap a();
+public final class b {
 
-    ArrayList b(String str);
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f20558a = new b();
 
-    Object c();
+    private b() {
+    }
 
-    b d();
-
-    String e();
-
-    void f(String str, ArrayList arrayList);
-
-    String g();
-
-    Object h();
+    public static final void a(a aVar) {
+    }
 }

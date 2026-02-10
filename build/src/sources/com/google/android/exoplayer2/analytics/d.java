@@ -2,7 +2,7 @@ package com.google.android.exoplayer2.analytics;
 
 import com.google.android.exoplayer2.Timeline;
 import com.google.android.exoplayer2.analytics.AnalyticsListener;
-import qd.r;
+import rd.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface d {
 
@@ -25,11 +25,11 @@ public interface d {
 
     void d(AnalyticsListener.EventTime eventTime);
 
-    boolean e(AnalyticsListener.EventTime eventTime, String str);
+    String e(Timeline timeline, r.b bVar);
 
-    void f(AnalyticsListener.EventTime eventTime, int i10);
+    boolean f(AnalyticsListener.EventTime eventTime, String str);
 
-    void g(AnalyticsListener.EventTime eventTime);
+    void g(AnalyticsListener.EventTime eventTime, int i10);
 
-    String h(Timeline timeline, r.b bVar);
+    void h(AnalyticsListener.EventTime eventTime);
 }

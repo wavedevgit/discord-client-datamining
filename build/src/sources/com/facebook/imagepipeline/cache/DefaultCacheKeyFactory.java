@@ -4,9 +4,9 @@ import android.net.Uri;
 import com.facebook.cache.common.CacheKey;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.Postprocessor;
-import i8.h;
-import la.b;
-import la.k;
+import j8.h;
+import ma.b;
+import ma.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class DefaultCacheKeyFactory implements k {
     private static DefaultCacheKeyFactory sInstance = null;
@@ -31,7 +31,7 @@ public class DefaultCacheKeyFactory implements k {
         sShouldRemoveCallerContextFromCacheKey = z10;
     }
 
-    @Override // la.k
+    @Override // ma.k
     public CacheKey getBitmapCacheKey(ImageRequest imageRequest, Object obj) {
         b bVar = new b(getCacheKeySourceUri(imageRequest.getSourceUri()).toString(), imageRequest.getResizeOptions(), imageRequest.getRotationOptions(), imageRequest.getImageDecodeOptions(), null, null);
         if (sShouldRemoveCallerContextFromCacheKey) {
@@ -46,12 +46,12 @@ public class DefaultCacheKeyFactory implements k {
         return uri;
     }
 
-    @Override // la.k
+    @Override // ma.k
     public CacheKey getEncodedCacheKey(ImageRequest imageRequest, Object obj) {
         return getEncodedCacheKey(imageRequest, imageRequest.getSourceUri(), obj);
     }
 
-    @Override // la.k
+    @Override // ma.k
     public CacheKey getPostprocessedBitmapCacheKey(ImageRequest imageRequest, Object obj) {
         CacheKey cacheKey;
         String str;
@@ -73,7 +73,7 @@ public class DefaultCacheKeyFactory implements k {
         return bVar;
     }
 
-    @Override // la.k
+    @Override // ma.k
     public CacheKey getEncodedCacheKey(ImageRequest imageRequest, Uri uri, Object obj) {
         return new h(getCacheKeySourceUri(uri).toString());
     }

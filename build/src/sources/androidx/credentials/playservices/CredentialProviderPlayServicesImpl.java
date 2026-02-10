@@ -90,20 +90,20 @@ public final class CredentialProviderPlayServicesImpl implements m {
     public static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Executor f3949d;
+        final /* synthetic */ Executor f3646d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ j f3950e;
+        final /* synthetic */ j f3647e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f3951i;
+        final /* synthetic */ Ref.ObjectRef f3648i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Executor executor, j jVar, Ref.ObjectRef objectRef) {
             super(0);
-            this.f3949d = executor;
-            this.f3950e = jVar;
-            this.f3951i = objectRef;
+            this.f3646d = executor;
+            this.f3647e = jVar;
+            this.f3648i = objectRef;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -114,14 +114,14 @@ public final class CredentialProviderPlayServicesImpl implements m {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m8invoke();
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m8invoke() {
-            Executor executor = this.f3949d;
-            final j jVar = this.f3950e;
-            final Ref.ObjectRef objectRef = this.f3951i;
+            Executor executor = this.f3646d;
+            final j jVar = this.f3647e;
+            final Ref.ObjectRef objectRef = this.f3648i;
             executor.execute(new Runnable() { // from class: androidx.credentials.playservices.a
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -136,20 +136,20 @@ public final class CredentialProviderPlayServicesImpl implements m {
     public static final class c extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Exception f3952d;
+        final /* synthetic */ Exception f3649d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Executor f3953e;
+        final /* synthetic */ Executor f3650e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ j f3954i;
+        final /* synthetic */ j f3651i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Exception exc, Executor executor, j jVar) {
             super(0);
-            this.f3952d = exc;
-            this.f3953e = executor;
-            this.f3954i = jVar;
+            this.f3649d = exc;
+            this.f3650e = executor;
+            this.f3651i = jVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -160,15 +160,15 @@ public final class CredentialProviderPlayServicesImpl implements m {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m9invoke();
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m9invoke() {
-            Log.w(CredentialProviderPlayServicesImpl.TAG, "During clear credential sign out failed with " + this.f3952d);
-            Executor executor = this.f3953e;
-            final j jVar = this.f3954i;
-            final Exception exc = this.f3952d;
+            Log.w(CredentialProviderPlayServicesImpl.TAG, "During clear credential sign out failed with " + this.f3649d);
+            Executor executor = this.f3650e;
+            final j jVar = this.f3651i;
+            final Exception exc = this.f3649d;
             executor.execute(new Runnable() { // from class: androidx.credentials.playservices.b
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -182,16 +182,16 @@ public final class CredentialProviderPlayServicesImpl implements m {
     static final class d extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Executor f3955d;
+        final /* synthetic */ Executor f3652d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ j f3956e;
+        final /* synthetic */ j f3653e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(Executor executor, j jVar) {
             super(0);
-            this.f3955d = executor;
-            this.f3956e = jVar;
+            this.f3652d = executor;
+            this.f3653e = jVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -202,13 +202,13 @@ public final class CredentialProviderPlayServicesImpl implements m {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m10invoke();
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m10invoke() {
-            Executor executor = this.f3955d;
-            final j jVar = this.f3956e;
+            Executor executor = this.f3652d;
+            final j jVar = this.f3653e;
             executor.execute(new Runnable() { // from class: androidx.credentials.playservices.c
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -222,16 +222,16 @@ public final class CredentialProviderPlayServicesImpl implements m {
     static final class e extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Executor f3957d;
+        final /* synthetic */ Executor f3654d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ j f3958e;
+        final /* synthetic */ j f3655e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(Executor executor, j jVar) {
             super(0);
-            this.f3957d = executor;
-            this.f3958e = jVar;
+            this.f3654d = executor;
+            this.f3655e = jVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -242,13 +242,13 @@ public final class CredentialProviderPlayServicesImpl implements m {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m11invoke();
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m11invoke() {
-            Executor executor = this.f3957d;
-            final j jVar = this.f3958e;
+            Executor executor = this.f3654d;
+            final j jVar = this.f3655e;
             executor.execute(new Runnable() { // from class: androidx.credentials.playservices.d
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -281,7 +281,7 @@ public final class CredentialProviderPlayServicesImpl implements m {
         Log.w(TAG, "Clearing restore credential failed", e10);
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
         objectRef.element = new h2.b("Clear restore credential failed for unknown reason.");
-        if ((e10 instanceof ef.b) && ((ef.b) e10).b() == 40201) {
+        if ((e10 instanceof ff.b) && ((ff.b) e10).b() == 40201) {
             objectRef.element = new h2.b("The restore credential internal service had a failure.");
         }
         Companion.b(cancellationSignal, new b(executor, jVar, objectRef));
@@ -323,7 +323,7 @@ public final class CredentialProviderPlayServicesImpl implements m {
             return;
         }
         if (request instanceof g2.f) {
-            o2.b.f41433l.a(context).u((g2.f) request, callback, executor, cancellationSignal);
+            o2.b.f40163l.a(context).u((g2.f) request, callback, executor, cancellationSignal);
             return;
         }
         throw new UnsupportedOperationException("Create Credential request is unsupported, not password or publickeycredential");

@@ -1,131 +1,59 @@
 package u5;
 
-import android.util.Pair;
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.RectF;
+import com.airbnb.lottie.n;
+import java.util.Collections;
+import java.util.List;
+import t5.q;
+import w5.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class g {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final e f51291a;
-
-    public g(e eVar) {
-        this.f51291a = eVar;
-    }
-
-    private static String b(String str, c cVar, boolean z10) {
-        String str2;
-        if (z10) {
-            str2 = cVar.d();
-        } else {
-            str2 = cVar.f51290d;
-        }
-        String replaceAll = str.replaceAll("\\W+", "");
-        int length = 242 - str2.length();
-        if (replaceAll.length() > length) {
-            replaceAll = d(replaceAll, length);
-        }
-        return "lottie_cache_" + replaceAll + str2;
-    }
-
-    private File c(String str) {
-        File file = new File(e(), b(str, c.JSON, false));
-        if (file.exists()) {
-            return file;
-        }
-        File file2 = new File(e(), b(str, c.ZIP, false));
-        if (file2.exists()) {
-            return file2;
-        }
-        File file3 = new File(e(), b(str, c.GZIP, false));
-        if (file3.exists()) {
-            return file3;
-        }
-        return null;
-    }
-
-    private static String d(String str, int i10) {
-        try {
-            byte[] digest = MessageDigest.getInstance("MD5").digest(str.getBytes());
-            StringBuilder sb2 = new StringBuilder();
-            for (byte b10 : digest) {
-                sb2.append(String.format("%02x", Byte.valueOf(b10)));
-            }
-            return sb2.toString();
-        } catch (NoSuchAlgorithmException unused) {
-            return str.substring(0, i10);
-        }
-    }
-
-    private File e() {
-        File a10 = this.f51291a.a();
-        if (a10.isFile()) {
-            a10.delete();
-        }
-        if (!a10.exists()) {
-            a10.mkdirs();
-        }
-        return a10;
-    }
+public class g extends b {
+    private final n5.d E;
+    private final c F;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public Pair a(String str) {
-        c cVar;
-        try {
-            File c10 = c(str);
-            if (c10 == null) {
-                return null;
-            }
-            FileInputStream fileInputStream = new FileInputStream(c10);
-            if (c10.getAbsolutePath().endsWith(".zip")) {
-                cVar = c.ZIP;
-            } else if (c10.getAbsolutePath().endsWith(".gz")) {
-                cVar = c.GZIP;
-            } else {
-                cVar = c.JSON;
-            }
-            x5.d.a("Cache hit for " + str + " at " + c10.getAbsolutePath());
-            return new Pair(cVar, fileInputStream);
-        } catch (FileNotFoundException unused) {
-            return null;
-        }
+    public g(n nVar, e eVar, c cVar, l5.i iVar) {
+        super(nVar, eVar);
+        this.F = cVar;
+        n5.d dVar = new n5.d(nVar, this, new q("__container", eVar.o(), false), iVar);
+        this.E = dVar;
+        List list = Collections.EMPTY_LIST;
+        dVar.b(list, list);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void f(String str, c cVar) {
-        File file = new File(e(), b(str, cVar, true));
-        File file2 = new File(file.getAbsolutePath().replace(".temp", ""));
-        boolean renameTo = file.renameTo(file2);
-        x5.d.a("Copying temp file to real file (" + file2 + ")");
-        if (!renameTo) {
-            x5.d.c("Unable to rename cache file " + file.getAbsolutePath() + " to " + file2.getAbsolutePath() + ".");
-        }
+    @Override // u5.b
+    protected void I(r5.e eVar, int i10, List list, r5.e eVar2) {
+        this.E.e(eVar, i10, list, eVar2);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public File g(String str, InputStream inputStream, c cVar) {
-        File file = new File(e(), b(str, cVar, true));
-        try {
-            FileOutputStream fileOutputStream = new FileOutputStream(file);
-            byte[] bArr = new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
-            while (true) {
-                int read = inputStream.read(bArr);
-                if (read != -1) {
-                    fileOutputStream.write(bArr, 0, read);
-                } else {
-                    fileOutputStream.flush();
-                    fileOutputStream.close();
-                    return file;
-                }
-            }
-        } finally {
-            inputStream.close();
+    @Override // u5.b, n5.e
+    public void f(RectF rectF, Matrix matrix, boolean z10) {
+        super.f(rectF, matrix, z10);
+        this.E.f(rectF, this.f51270o, z10);
+    }
+
+    @Override // u5.b
+    void u(Canvas canvas, Matrix matrix, int i10) {
+        this.E.h(canvas, matrix, i10);
+    }
+
+    @Override // u5.b
+    public t5.a x() {
+        t5.a x10 = super.x();
+        if (x10 != null) {
+            return x10;
         }
+        return this.F.x();
+    }
+
+    @Override // u5.b
+    public j z() {
+        j z10 = super.z();
+        if (z10 != null) {
+            return z10;
+        }
+        return this.F.z();
     }
 }

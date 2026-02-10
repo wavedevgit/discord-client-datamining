@@ -57,7 +57,7 @@ public final class StateWrapperImpl extends HybridClassBase implements Reference
     @Override // com.facebook.react.uimanager.StateWrapper
     public ReadableNativeMap getStateData() {
         if (!isValid()) {
-            p8.a.m(TAG, "Race between StateWrapperImpl destruction and getState");
+            q8.a.m(TAG, "Race between StateWrapperImpl destruction and getState");
             return null;
         }
         return getStateDataImpl();
@@ -66,7 +66,7 @@ public final class StateWrapperImpl extends HybridClassBase implements Reference
     @Override // com.facebook.react.uimanager.StateWrapper
     public ReadableMapBuffer getStateDataMapBuffer() {
         if (!isValid()) {
-            p8.a.m(TAG, "Race between StateWrapperImpl destruction and getState");
+            q8.a.m(TAG, "Race between StateWrapperImpl destruction and getState");
             return null;
         }
         return getStateMapBufferDataImpl();
@@ -75,7 +75,7 @@ public final class StateWrapperImpl extends HybridClassBase implements Reference
     @Override // com.facebook.react.uimanager.ReferenceStateWrapper
     public Object getStateDataReference() {
         if (!isValid()) {
-            p8.a.m(TAG, "Race between StateWrapperImpl destruction and getState");
+            q8.a.m(TAG, "Race between StateWrapperImpl destruction and getState");
             return null;
         }
         return getStateDataReferenceImpl();
@@ -102,7 +102,7 @@ public final class StateWrapperImpl extends HybridClassBase implements Reference
     public void updateState(@NotNull WritableMap map) {
         Intrinsics.checkNotNullParameter(map, "map");
         if (!isValid()) {
-            p8.a.m(TAG, "Race between StateWrapperImpl destruction and updateState");
+            q8.a.m(TAG, "Race between StateWrapperImpl destruction and updateState");
         } else {
             updateStateImpl((NativeMap) map);
         }

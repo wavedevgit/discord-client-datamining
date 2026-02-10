@@ -1,28 +1,57 @@
 package ss;
 
-import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.flow.Flow;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface q extends Flow {
+public abstract /* synthetic */ class q {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static /* synthetic */ Flow a(q qVar, CoroutineContext coroutineContext, int i10, qs.a aVar, int i11, Object obj) {
-            if (obj == null) {
-                if ((i11 & 1) != 0) {
-                    coroutineContext = kotlin.coroutines.e.f32130d;
-                }
-                if ((i11 & 2) != 0) {
-                    i10 = -3;
-                }
-                if ((i11 & 4) != 0) {
-                    aVar = qs.a.f48114d;
-                }
-                return qVar.f(coroutineContext, i10, aVar);
-            }
-            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: fuse");
+    /* renamed from: a  reason: collision with root package name */
+    private static final Function1 f50228a = new Function1() { // from class: ss.o
+        @Override // kotlin.jvm.functions.Function1
+        public final Object invoke(Object obj) {
+            Object d10;
+            d10 = q.d(obj);
+            return d10;
         }
+    };
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final Function2 f50229b = new Function2() { // from class: ss.p
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(Object obj, Object obj2) {
+            boolean c10;
+            c10 = q.c(obj, obj2);
+            return Boolean.valueOf(c10);
+        }
+    };
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean c(Object obj, Object obj2) {
+        return Intrinsics.areEqual(obj, obj2);
     }
 
-    Flow f(CoroutineContext coroutineContext, int i10, qs.a aVar);
+    public static final Flow e(Flow flow) {
+        if (flow instanceof j0) {
+            return flow;
+        }
+        return f(flow, f50228a, f50229b);
+    }
+
+    private static final Flow f(Flow flow, Function1 function1, Function2 function2) {
+        if (flow instanceof f) {
+            f fVar = (f) flow;
+            if (fVar.f50132e == function1 && fVar.f50133i == function2) {
+                return flow;
+            }
+        }
+        return new f(flow, function1, function2);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Object d(Object obj) {
+        return obj;
+    }
 }

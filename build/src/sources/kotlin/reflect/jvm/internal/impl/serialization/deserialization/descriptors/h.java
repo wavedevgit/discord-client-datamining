@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptor
 public class h implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedClassDescriptor.DeserializedClassMemberScope f34501d;
+    private final DeserializedClassDescriptor.DeserializedClassMemberScope f34210d;
 
     public h(DeserializedClassDescriptor.DeserializedClassMemberScope deserializedClassMemberScope) {
-        this.f34501d = deserializedClassMemberScope;
+        this.f34210d = deserializedClassMemberScope;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Collection x10;
-        x10 = DeserializedClassDescriptor.DeserializedClassMemberScope.x(this.f34501d);
+        x10 = DeserializedClassDescriptor.DeserializedClassMemberScope.x(this.f34210d);
         return x10;
     }
 }

@@ -81,37 +81,37 @@ public abstract class VirtualView extends ReactViewGroup {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f16755a;
+        static final /* synthetic */ int[] f16895a;
 
         static {
             int[] iArr = new int[SVGLength.UnitType.values().length];
-            f16755a = iArr;
+            f16895a = iArr;
             try {
                 iArr[SVGLength.UnitType.EMS.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f16755a[SVGLength.UnitType.EXS.ordinal()] = 2;
+                f16895a[SVGLength.UnitType.EXS.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f16755a[SVGLength.UnitType.CM.ordinal()] = 3;
+                f16895a[SVGLength.UnitType.CM.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f16755a[SVGLength.UnitType.MM.ordinal()] = 4;
+                f16895a[SVGLength.UnitType.MM.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f16755a[SVGLength.UnitType.IN.ordinal()] = 5;
+                f16895a[SVGLength.UnitType.IN.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f16755a[SVGLength.UnitType.PT.ordinal()] = 6;
+                f16895a[SVGLength.UnitType.PT.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f16755a[SVGLength.UnitType.PC.ordinal()] = 7;
+                f16895a[SVGLength.UnitType.PC.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
         }
@@ -154,7 +154,7 @@ public abstract class VirtualView extends ReactViewGroup {
 
     private double fromRelativeFast(SVGLength sVGLength) {
         double fontSizeFromContext;
-        switch (a.f16755a[sVGLength.f16715b.ordinal()]) {
+        switch (a.f16895a[sVGLength.f16855b.ordinal()]) {
             case 1:
                 fontSizeFromContext = getFontSizeFromContext();
                 break;
@@ -180,7 +180,7 @@ public abstract class VirtualView extends ReactViewGroup {
                 fontSizeFromContext = 1.0d;
                 break;
         }
-        return sVGLength.f16714a * fontSizeFromContext * this.mScale;
+        return sVGLength.f16854a * fontSizeFromContext * this.mScale;
     }
 
     private double getCanvasDiagonal() {
@@ -308,7 +308,7 @@ public abstract class VirtualView extends ReactViewGroup {
         } else if (parent instanceof VirtualView) {
             this.svgView = ((VirtualView) parent).getSvgView();
         } else {
-            p8.a.m(ReactConstants.TAG, "RNSVG: " + getClass().getName() + " should be descendant of a SvgView.");
+            q8.a.m(ReactConstants.TAG, "RNSVG: " + getClass().getName() + " should be descendant of a SvgView.");
         }
         return this.svgView;
     }
@@ -418,12 +418,12 @@ public abstract class VirtualView extends ReactViewGroup {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public double relativeOn(SVGLength sVGLength, float f10) {
-        SVGLength.UnitType unitType = sVGLength.f16715b;
+        SVGLength.UnitType unitType = sVGLength.f16855b;
         if (unitType == SVGLength.UnitType.NUMBER) {
-            return sVGLength.f16714a * this.mScale;
+            return sVGLength.f16854a * this.mScale;
         }
         if (unitType == SVGLength.UnitType.PERCENTAGE) {
-            return (sVGLength.f16714a / 100.0d) * f10;
+            return (sVGLength.f16854a / 100.0d) * f10;
         }
         return fromRelativeFast(sVGLength);
     }
@@ -431,11 +431,11 @@ public abstract class VirtualView extends ReactViewGroup {
     /* JADX INFO: Access modifiers changed from: package-private */
     public double relativeOnFraction(SVGLength sVGLength, float f10) {
         double d10;
-        SVGLength.UnitType unitType = sVGLength.f16715b;
+        SVGLength.UnitType unitType = sVGLength.f16855b;
         if (unitType == SVGLength.UnitType.NUMBER) {
-            d10 = sVGLength.f16714a;
+            d10 = sVGLength.f16854a;
         } else if (unitType == SVGLength.UnitType.PERCENTAGE) {
-            d10 = sVGLength.f16714a / 100.0d;
+            d10 = sVGLength.f16854a / 100.0d;
         } else {
             return fromRelativeFast(sVGLength);
         }
@@ -445,7 +445,7 @@ public abstract class VirtualView extends ReactViewGroup {
     /* JADX INFO: Access modifiers changed from: package-private */
     public double relativeOnHeight(SVGLength sVGLength) {
         SvgView svgView = getSvgView();
-        if (sVGLength.f16715b == SVGLength.UnitType.PERCENTAGE && svgView != null && svgView.getViewBox().height() != 0.0f) {
+        if (sVGLength.f16855b == SVGLength.UnitType.PERCENTAGE && svgView != null && svgView.getViewBox().height() != 0.0f) {
             return relativeOn(sVGLength, svgView.getViewBox().height());
         }
         return relativeOn(sVGLength, getCanvasHeight());
@@ -459,7 +459,7 @@ public abstract class VirtualView extends ReactViewGroup {
     /* JADX INFO: Access modifiers changed from: package-private */
     public double relativeOnWidth(SVGLength sVGLength) {
         SvgView svgView = getSvgView();
-        if (sVGLength.f16715b == SVGLength.UnitType.PERCENTAGE && svgView != null && svgView.getViewBox().width() != 0.0f) {
+        if (sVGLength.f16855b == SVGLength.UnitType.PERCENTAGE && svgView != null && svgView.getViewBox().width() != 0.0f) {
             return relativeOn(sVGLength, svgView.getViewBox().width());
         }
         return relativeOn(sVGLength, getCanvasWidth());
@@ -596,11 +596,11 @@ public abstract class VirtualView extends ReactViewGroup {
                 if (i10 == 0) {
                     f10.setFillType(Path.FillType.EVEN_ODD);
                 } else if (i10 != 1) {
-                    p8.a.J(ReactConstants.TAG, "RNSVG: clipRule: " + this.mClipRule + " unrecognized");
+                    q8.a.J(ReactConstants.TAG, "RNSVG: clipRule: " + this.mClipRule + " unrecognized");
                 }
                 this.mCachedClipPath = f10;
             } else {
-                p8.a.J(ReactConstants.TAG, "RNSVG: Undefined clipPath: " + this.mClipPath);
+                q8.a.J(ReactConstants.TAG, "RNSVG: Undefined clipPath: " + this.mClipPath);
             }
         }
         return getClipPath();
@@ -618,7 +618,7 @@ public abstract class VirtualView extends ReactViewGroup {
                 this.mMatrix.setValues(fArr);
                 this.mInvertible = this.mMatrix.invert(this.mInvMatrix);
             } else if (c10 != -1) {
-                p8.a.J(ReactConstants.TAG, "RNSVG: Transform matrices must be of size 6");
+                q8.a.J(ReactConstants.TAG, "RNSVG: Transform matrices must be of size 6");
             }
         } else {
             this.mMatrix.reset();

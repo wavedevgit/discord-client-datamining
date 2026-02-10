@@ -13,6 +13,6 @@ public abstract class NotificationOnlyHandler implements RequestHandler {
     public final void onRequest(Object obj, @NotNull Responder responder) {
         Intrinsics.checkNotNullParameter(responder, "responder");
         responder.error("Request is not supported");
-        p8.a.m(JSPackagerClient.class.getSimpleName(), "Request is not supported");
+        q8.a.m(JSPackagerClient.class.getSimpleName(), "Request is not supported");
     }
 }

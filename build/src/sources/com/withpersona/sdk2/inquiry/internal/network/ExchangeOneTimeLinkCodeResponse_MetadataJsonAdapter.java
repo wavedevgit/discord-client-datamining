@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19201a;
+    private final m.b f19341a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19202b;
+    private final com.squareup.moshi.h f19342b;
 
     public ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("accessToken");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19201a = a10;
+        this.f19341a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "accessToken");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19202b = f10;
+        this.f19342b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,14 +35,14 @@ public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends c
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19201a);
+            int J = reader.J(this.f19341a);
             if (J != -1) {
                 if (J == 0) {
-                    str = (String) this.f19202b.fromJson(reader);
+                    str = (String) this.f19342b.fromJson(reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -56,7 +56,7 @@ public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends c
         if (metadata != null) {
             writer.k();
             writer.J("accessToken");
-            this.f19202b.toJson(writer, metadata.a());
+            this.f19342b.toJson(writer, metadata.a());
             writer.s();
             return;
         }

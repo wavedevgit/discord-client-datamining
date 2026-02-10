@@ -3,7 +3,7 @@ package com.discord.primitives;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.discord.snowflake.SnowflakePrimitive;
-import ft.m;
+import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

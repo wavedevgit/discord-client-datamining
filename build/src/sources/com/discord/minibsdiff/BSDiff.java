@@ -1,7 +1,7 @@
 package com.discord.minibsdiff;
 
-import bs.c;
 import com.discord.minibsdiff.BSDiff;
+import cs.c;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -109,7 +109,7 @@ public final class BSDiff {
     }
 
     private final Sequence<Integer> chunkRange(final long j10) {
-        return k.R(CollectionsKt.b0(d.t(d.v(0, j10), BUFFER_SIZE_BYTES)), new Function1() { // from class: n7.a
+        return k.R(CollectionsKt.b0(d.t(d.v(0, j10), BUFFER_SIZE_BYTES)), new Function1() { // from class: o7.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 int chunkRange$lambda$0;
@@ -137,7 +137,7 @@ public final class BSDiff {
         try {
             try {
                 INSTANCE.bspatchStreamingInner(randomAccessFile, inputStream, bufferedInputStream, bufferedInputStream2, bufferedInputStream3, bufferedOutputStream);
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
                 try {
                     c.a(bufferedOutputStream, null);
                     c.a(bufferedInputStream3, null);

@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import an.c;
+import bn.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -64,8 +64,8 @@ public final class ClickableStackJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
@@ -87,7 +87,7 @@ public final class ClickableStackJsonAdapter extends h {
         }
         Constructor<ClickableStack> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = ClickableStack.class.getDeclaredConstructor(String.class, ClickableStack.Attributes.class, ClickableStack.ClickableStackComponentStyle.class, Integer.TYPE, c.f1164c);
+            constructor = ClickableStack.class.getDeclaredConstructor(String.class, ClickableStack.Attributes.class, ClickableStack.ClickableStackComponentStyle.class, Integer.TYPE, c.f7152c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

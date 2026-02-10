@@ -1,0 +1,418 @@
+package ed;
+
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import com.google.android.exoplayer2.Format;
+import ed.i0;
+import java.util.Arrays;
+import java.util.Collections;
+import oe.w0;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class o implements m {
+
+    /* renamed from: l  reason: collision with root package name */
+    private static final float[] f21427l = {1.0f, 1.0f, 1.0909091f, 0.90909094f, 1.4545455f, 1.2121212f, 1.0f};
+
+    /* renamed from: a  reason: collision with root package name */
+    private final k0 f21428a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final oe.h0 f21429b;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final u f21432e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private b f21433f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private long f21434g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private String f21435h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private uc.b0 f21436i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private boolean f21437j;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean[] f21430c = new boolean[4];
+
+    /* renamed from: d  reason: collision with root package name */
+    private final a f21431d = new a(IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+
+    /* renamed from: k  reason: collision with root package name */
+    private long f21438k = -9223372036854775807L;
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a {
+
+        /* renamed from: f  reason: collision with root package name */
+        private static final byte[] f21439f = {0, 0, 1};
+
+        /* renamed from: a  reason: collision with root package name */
+        private boolean f21440a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private int f21441b;
+
+        /* renamed from: c  reason: collision with root package name */
+        public int f21442c;
+
+        /* renamed from: d  reason: collision with root package name */
+        public int f21443d;
+
+        /* renamed from: e  reason: collision with root package name */
+        public byte[] f21444e;
+
+        public a(int i10) {
+            this.f21444e = new byte[i10];
+        }
+
+        public void a(byte[] bArr, int i10, int i11) {
+            if (!this.f21440a) {
+                return;
+            }
+            int i12 = i11 - i10;
+            byte[] bArr2 = this.f21444e;
+            int length = bArr2.length;
+            int i13 = this.f21442c;
+            if (length < i13 + i12) {
+                this.f21444e = Arrays.copyOf(bArr2, (i13 + i12) * 2);
+            }
+            System.arraycopy(bArr, i10, this.f21444e, this.f21442c, i12);
+            this.f21442c += i12;
+        }
+
+        public boolean b(int i10, int i11) {
+            int i12 = this.f21441b;
+            if (i12 != 0) {
+                if (i12 != 1) {
+                    if (i12 != 2) {
+                        if (i12 != 3) {
+                            if (i12 == 4) {
+                                if (i10 == 179 || i10 == 181) {
+                                    this.f21442c -= i11;
+                                    this.f21440a = false;
+                                    return true;
+                                }
+                            } else {
+                                throw new IllegalStateException();
+                            }
+                        } else if ((i10 & 240) != 32) {
+                            oe.y.i("H263Reader", "Unexpected start code value");
+                            c();
+                        } else {
+                            this.f21443d = this.f21442c;
+                            this.f21441b = 4;
+                        }
+                    } else if (i10 > 31) {
+                        oe.y.i("H263Reader", "Unexpected start code value");
+                        c();
+                    } else {
+                        this.f21441b = 3;
+                    }
+                } else if (i10 != 181) {
+                    oe.y.i("H263Reader", "Unexpected start code value");
+                    c();
+                } else {
+                    this.f21441b = 2;
+                }
+            } else if (i10 == 176) {
+                this.f21441b = 1;
+                this.f21440a = true;
+            }
+            byte[] bArr = f21439f;
+            a(bArr, 0, bArr.length);
+            return false;
+        }
+
+        public void c() {
+            this.f21440a = false;
+            this.f21442c = 0;
+            this.f21441b = 0;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    private static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final uc.b0 f21445a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private boolean f21446b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private boolean f21447c;
+
+        /* renamed from: d  reason: collision with root package name */
+        private boolean f21448d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private int f21449e;
+
+        /* renamed from: f  reason: collision with root package name */
+        private int f21450f;
+
+        /* renamed from: g  reason: collision with root package name */
+        private long f21451g;
+
+        /* renamed from: h  reason: collision with root package name */
+        private long f21452h;
+
+        public b(uc.b0 b0Var) {
+            this.f21445a = b0Var;
+        }
+
+        public void a(byte[] bArr, int i10, int i11) {
+            boolean z10;
+            if (this.f21447c) {
+                int i12 = this.f21450f;
+                int i13 = (i10 + 1) - i12;
+                if (i13 < i11) {
+                    if (((bArr[i13] & 192) >> 6) == 0) {
+                        z10 = true;
+                    } else {
+                        z10 = false;
+                    }
+                    this.f21448d = z10;
+                    this.f21447c = false;
+                    return;
+                }
+                this.f21450f = i12 + (i11 - i10);
+            }
+        }
+
+        public void b(long j10, int i10, boolean z10) {
+            if (this.f21449e == 182 && z10 && this.f21446b) {
+                long j11 = this.f21452h;
+                if (j11 != -9223372036854775807L) {
+                    this.f21445a.a(j11, this.f21448d ? 1 : 0, (int) (j10 - this.f21451g), i10, null);
+                }
+            }
+            if (this.f21449e != 179) {
+                this.f21451g = j10;
+            }
+        }
+
+        public void c(int i10, long j10) {
+            boolean z10;
+            this.f21449e = i10;
+            this.f21448d = false;
+            boolean z11 = true;
+            if (i10 != 182 && i10 != 179) {
+                z10 = false;
+            } else {
+                z10 = true;
+            }
+            this.f21446b = z10;
+            if (i10 != 182) {
+                z11 = false;
+            }
+            this.f21447c = z11;
+            this.f21450f = 0;
+            this.f21452h = j10;
+        }
+
+        public void d() {
+            this.f21446b = false;
+            this.f21447c = false;
+            this.f21448d = false;
+            this.f21449e = -1;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public o(k0 k0Var) {
+        this.f21428a = k0Var;
+        if (k0Var != null) {
+            this.f21432e = new u(178, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f21429b = new oe.h0();
+            return;
+        }
+        this.f21432e = null;
+        this.f21429b = null;
+    }
+
+    private static Format f(a aVar, int i10, String str) {
+        byte[] copyOf = Arrays.copyOf(aVar.f21444e, aVar.f21442c);
+        oe.g0 g0Var = new oe.g0(copyOf);
+        g0Var.s(i10);
+        g0Var.s(4);
+        g0Var.q();
+        g0Var.r(8);
+        if (g0Var.g()) {
+            g0Var.r(4);
+            g0Var.r(3);
+        }
+        int h10 = g0Var.h(4);
+        float f10 = 1.0f;
+        if (h10 == 15) {
+            int h11 = g0Var.h(8);
+            int h12 = g0Var.h(8);
+            if (h12 == 0) {
+                oe.y.i("H263Reader", "Invalid aspect ratio");
+            } else {
+                f10 = h11 / h12;
+            }
+        } else {
+            float[] fArr = f21427l;
+            if (h10 < fArr.length) {
+                f10 = fArr[h10];
+            } else {
+                oe.y.i("H263Reader", "Invalid aspect ratio");
+            }
+        }
+        if (g0Var.g()) {
+            g0Var.r(2);
+            g0Var.r(1);
+            if (g0Var.g()) {
+                g0Var.r(15);
+                g0Var.q();
+                g0Var.r(15);
+                g0Var.q();
+                g0Var.r(15);
+                g0Var.q();
+                g0Var.r(3);
+                g0Var.r(11);
+                g0Var.q();
+                g0Var.r(15);
+                g0Var.q();
+            }
+        }
+        if (g0Var.h(2) != 0) {
+            oe.y.i("H263Reader", "Unhandled video object layer shape");
+        }
+        g0Var.q();
+        int h13 = g0Var.h(16);
+        g0Var.q();
+        if (g0Var.g()) {
+            if (h13 == 0) {
+                oe.y.i("H263Reader", "Invalid vop_increment_time_resolution");
+            } else {
+                int i11 = 0;
+                for (int i12 = h13 - 1; i12 > 0; i12 >>= 1) {
+                    i11++;
+                }
+                g0Var.r(i11);
+            }
+        }
+        g0Var.q();
+        int h14 = g0Var.h(13);
+        g0Var.q();
+        int h15 = g0Var.h(13);
+        g0Var.q();
+        g0Var.q();
+        return new Format.b().U(str).g0("video/mp4v-es").n0(h14).S(h15).c0(f10).V(Collections.singletonList(copyOf)).G();
+    }
+
+    @Override // ed.m
+    public void a(oe.h0 h0Var) {
+        int i10;
+        oe.a.i(this.f21433f);
+        oe.a.i(this.f21436i);
+        int f10 = h0Var.f();
+        int g10 = h0Var.g();
+        byte[] e10 = h0Var.e();
+        this.f21434g += h0Var.a();
+        this.f21436i.e(h0Var, h0Var.a());
+        while (true) {
+            int c10 = oe.d0.c(e10, f10, g10, this.f21430c);
+            if (c10 == g10) {
+                break;
+            }
+            int i11 = c10 + 3;
+            int i12 = h0Var.e()[i11] & 255;
+            int i13 = c10 - f10;
+            int i14 = 0;
+            if (!this.f21437j) {
+                if (i13 > 0) {
+                    this.f21431d.a(e10, f10, c10);
+                }
+                if (i13 < 0) {
+                    i10 = -i13;
+                } else {
+                    i10 = 0;
+                }
+                if (this.f21431d.b(i12, i10)) {
+                    uc.b0 b0Var = this.f21436i;
+                    a aVar = this.f21431d;
+                    b0Var.c(f(aVar, aVar.f21443d, (String) oe.a.e(this.f21435h)));
+                    this.f21437j = true;
+                }
+            }
+            this.f21433f.a(e10, f10, c10);
+            u uVar = this.f21432e;
+            if (uVar != null) {
+                if (i13 > 0) {
+                    uVar.a(e10, f10, c10);
+                } else {
+                    i14 = -i13;
+                }
+                if (this.f21432e.b(i14)) {
+                    u uVar2 = this.f21432e;
+                    ((oe.h0) w0.j(this.f21429b)).S(this.f21432e.f21571d, oe.d0.q(uVar2.f21571d, uVar2.f21572e));
+                    ((k0) w0.j(this.f21428a)).a(this.f21438k, this.f21429b);
+                }
+                if (i12 == 178 && h0Var.e()[c10 + 2] == 1) {
+                    this.f21432e.e(i12);
+                }
+            }
+            int i15 = g10 - c10;
+            this.f21433f.b(this.f21434g - i15, i15, this.f21437j);
+            this.f21433f.c(i12, this.f21438k);
+            f10 = i11;
+        }
+        if (!this.f21437j) {
+            this.f21431d.a(e10, f10, g10);
+        }
+        this.f21433f.a(e10, f10, g10);
+        u uVar3 = this.f21432e;
+        if (uVar3 != null) {
+            uVar3.a(e10, f10, g10);
+        }
+    }
+
+    @Override // ed.m
+    public void b() {
+        oe.d0.a(this.f21430c);
+        this.f21431d.c();
+        b bVar = this.f21433f;
+        if (bVar != null) {
+            bVar.d();
+        }
+        u uVar = this.f21432e;
+        if (uVar != null) {
+            uVar.d();
+        }
+        this.f21434g = 0L;
+        this.f21438k = -9223372036854775807L;
+    }
+
+    @Override // ed.m
+    public void c(uc.m mVar, i0.d dVar) {
+        dVar.a();
+        this.f21435h = dVar.b();
+        uc.b0 c10 = mVar.c(dVar.c(), 2);
+        this.f21436i = c10;
+        this.f21433f = new b(c10);
+        k0 k0Var = this.f21428a;
+        if (k0Var != null) {
+            k0Var.b(mVar, dVar);
+        }
+    }
+
+    @Override // ed.m
+    public void e(long j10, int i10) {
+        if (j10 != -9223372036854775807L) {
+            this.f21438k = j10;
+        }
+    }
+
+    @Override // ed.m
+    public void d() {
+    }
+}

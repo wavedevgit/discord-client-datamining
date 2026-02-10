@@ -1,55 +1,50 @@
 package hm;
 
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import com.facebook.react.uimanager.events.RCTEventEmitter;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
+import android.net.NetworkInfo;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a extends Event {
+public enum a {
+    CG_2G("2g"),
+    CG_3G("3g"),
+    CG_4G("4g"),
+    CG_5G("5g");
+    
 
-    /* renamed from: b  reason: collision with root package name */
-    public static final C0355a f26208b = new C0355a(null);
+    /* renamed from: d  reason: collision with root package name */
+    public final String f26354d;
 
-    /* renamed from: a  reason: collision with root package name */
-    private final WritableMap f26209a;
+    a(String str) {
+        this.f26354d = str;
+    }
 
-    /* renamed from: hm.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0355a {
-        public /* synthetic */ C0355a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    public static a d(NetworkInfo networkInfo) {
+        if (networkInfo == null) {
+            return null;
         }
-
-        private C0355a() {
+        int subtype = networkInfo.getSubtype();
+        if (subtype != 20) {
+            switch (subtype) {
+                case 1:
+                case 2:
+                case 4:
+                case 7:
+                case 11:
+                    return CG_2G;
+                case 3:
+                case 5:
+                case 6:
+                case 8:
+                case 9:
+                case 10:
+                case 12:
+                case 14:
+                    return CG_3G;
+                case 13:
+                case 15:
+                    return CG_4G;
+                default:
+                    return null;
+            }
         }
-    }
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a(int i10, WritableMap mEventData) {
-        super(i10);
-        Intrinsics.checkNotNullParameter(mEventData, "mEventData");
-        this.f26209a = mEventData;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public boolean canCoalesce() {
-        return false;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public void dispatch(RCTEventEmitter rctEventEmitter) {
-        Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
-        rctEventEmitter.receiveEvent(getViewTag(), internal_getEventNameCompat(), this.f26209a);
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) 0;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return "topHttpError";
+        return CG_5G;
     }
 }

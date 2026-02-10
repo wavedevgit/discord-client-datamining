@@ -6,17 +6,17 @@ import org.jetbrains.annotations.NotNull;
 public final class Name implements Comparable<Name> {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f33883d;
+    private final String f33592d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f33884e;
+    private final boolean f33593e;
 
     private Name(String str, boolean z10) {
         if (str == null) {
             a(0);
         }
-        this.f33883d = str;
-        this.f33884e = z10;
+        this.f33592d = str;
+        this.f33593e = z10;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -116,7 +116,7 @@ public final class Name implements Comparable<Name> {
 
     @NotNull
     public String asString() {
-        String str = this.f33883d;
+        String str = this.f33592d;
         if (str == null) {
             a(1);
         }
@@ -131,7 +131,7 @@ public final class Name implements Comparable<Name> {
             return false;
         }
         Name name = (Name) obj;
-        if (this.f33884e == name.f33884e && this.f33883d.equals(name.f33883d)) {
+        if (this.f33593e == name.f33593e && this.f33592d.equals(name.f33592d)) {
             return true;
         }
         return false;
@@ -139,7 +139,7 @@ public final class Name implements Comparable<Name> {
 
     @NotNull
     public String getIdentifier() {
-        if (!this.f33884e) {
+        if (!this.f33593e) {
             String asString = asString();
             if (asString == null) {
                 a(2);
@@ -150,19 +150,19 @@ public final class Name implements Comparable<Name> {
     }
 
     public int hashCode() {
-        return (this.f33883d.hashCode() * 31) + (this.f33884e ? 1 : 0);
+        return (this.f33592d.hashCode() * 31) + (this.f33593e ? 1 : 0);
     }
 
     public boolean isSpecial() {
-        return this.f33884e;
+        return this.f33593e;
     }
 
     public String toString() {
-        return this.f33883d;
+        return this.f33592d;
     }
 
     @Override // java.lang.Comparable
     public int compareTo(Name name) {
-        return this.f33883d.compareTo(name.f33883d);
+        return this.f33592d.compareTo(name.f33592d);
     }
 }

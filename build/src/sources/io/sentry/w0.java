@@ -37,17 +37,17 @@ public interface w0 {
 
     void h(Breadcrumb breadcrumb, Hint hint);
 
-    io.sentry.transport.a0 i();
+    void i(Throwable th2, ISpan iSpan, String str);
 
     boolean isEnabled();
 
-    void j(Throwable th2, ISpan iSpan, String str);
+    io.sentry.transport.a0 j();
 
-    io.sentry.protocol.x k(l5 l5Var, Hint hint);
+    e1 k();
 
-    e1 l();
+    void l();
 
-    void m();
+    io.sentry.protocol.x m(l5 l5Var, Hint hint);
 
     a1 makeCurrent();
 
@@ -59,11 +59,11 @@ public interface w0 {
         r(null, b4Var);
     }
 
-    default boolean p() {
+    void p();
+
+    default boolean q() {
         return false;
     }
-
-    void q();
 
     void r(d4 d4Var, b4 b4Var);
 
@@ -76,7 +76,7 @@ public interface w0 {
     io.sentry.protocol.x v(m3 m3Var);
 
     default io.sentry.protocol.x w(l5 l5Var) {
-        return k(l5Var, new Hint());
+        return m(l5Var, new Hint());
     }
 
     io.sentry.protocol.x x(SentryEvent sentryEvent, Hint hint);

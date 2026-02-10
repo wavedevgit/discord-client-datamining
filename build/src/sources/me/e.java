@@ -1,65 +1,105 @@
 package me;
 
-import android.net.Uri;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import android.os.Handler;
+import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
+import me.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class e {
+public interface e {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Map f37120a = new HashMap();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public interface a {
 
-    /* renamed from: b  reason: collision with root package name */
-    private final List f37121b = new ArrayList();
+        /* renamed from: me.e$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+        public static final class C0533a {
 
-    private e a(String str, Object obj) {
-        this.f37120a.put((String) ne.a.e(str), ne.a.e(obj));
-        this.f37121b.remove(str);
-        return this;
-    }
+            /* renamed from: a  reason: collision with root package name */
+            private final CopyOnWriteArrayList f36983a = new CopyOnWriteArrayList();
 
-    public static e g(e eVar, long j10) {
-        return eVar.e("exo_len", j10);
-    }
+            /* JADX INFO: Access modifiers changed from: private */
+            /* renamed from: me.e$a$a$a  reason: collision with other inner class name */
+            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+            public static final class C0534a {
 
-    public static e h(e eVar, Uri uri) {
-        if (uri == null) {
-            return eVar.d("exo_redir");
-        }
-        return eVar.f("exo_redir", uri.toString());
-    }
+                /* renamed from: a  reason: collision with root package name */
+                private final Handler f36984a;
 
-    public Map b() {
-        HashMap hashMap = new HashMap(this.f37120a);
-        for (Map.Entry entry : hashMap.entrySet()) {
-            Object value = entry.getValue();
-            if (value instanceof byte[]) {
-                byte[] bArr = (byte[]) value;
-                entry.setValue(Arrays.copyOf(bArr, bArr.length));
+                /* renamed from: b  reason: collision with root package name */
+                private final a f36985b;
+
+                /* renamed from: c  reason: collision with root package name */
+                private boolean f36986c;
+
+                public C0534a(Handler handler, a aVar) {
+                    this.f36984a = handler;
+                    this.f36985b = aVar;
+                }
+
+                public void d() {
+                    this.f36986c = true;
+                }
+            }
+
+            public void b(Handler handler, a aVar) {
+                oe.a.e(handler);
+                oe.a.e(aVar);
+                d(aVar);
+                this.f36983a.add(new C0534a(handler, aVar));
+            }
+
+            public void c(int i10, long j10, long j11) {
+                final int i11;
+                final long j12;
+                final long j13;
+                Iterator it = this.f36983a.iterator();
+                while (it.hasNext()) {
+                    final C0534a c0534a = (C0534a) it.next();
+                    if (!c0534a.f36986c) {
+                        i11 = i10;
+                        j12 = j10;
+                        j13 = j11;
+                        c0534a.f36984a.post(new Runnable() { // from class: me.d
+                            @Override // java.lang.Runnable
+                            public final void run() {
+                                e.a.C0533a.C0534a.this.f36985b.w(i11, j12, j13);
+                            }
+                        });
+                    } else {
+                        i11 = i10;
+                        j12 = j10;
+                        j13 = j11;
+                    }
+                    i10 = i11;
+                    j10 = j12;
+                    j11 = j13;
+                }
+            }
+
+            public void d(a aVar) {
+                Iterator it = this.f36983a.iterator();
+                while (it.hasNext()) {
+                    C0534a c0534a = (C0534a) it.next();
+                    if (c0534a.f36985b == aVar) {
+                        c0534a.d();
+                        this.f36983a.remove(c0534a);
+                    }
+                }
             }
         }
-        return Collections.unmodifiableMap(hashMap);
+
+        void w(int i10, long j10, long j11);
     }
 
-    public List c() {
-        return Collections.unmodifiableList(new ArrayList(this.f37121b));
+    void a(a aVar);
+
+    default long b() {
+        return -9223372036854775807L;
     }
 
-    public e d(String str) {
-        this.f37121b.add(str);
-        this.f37120a.remove(str);
-        return this;
-    }
+    void d(Handler handler, a aVar);
 
-    public e e(String str, long j10) {
-        return a(str, Long.valueOf(j10));
-    }
+    c0 e();
 
-    public e f(String str, String str2) {
-        return a(str, str2);
-    }
+    long f();
 }

@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/utils/trackUserAvatarUpdated.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57563: for (var _fun57563_ip = 0;;) switch (_fun57563_ip) {
+        _fun57569: for (var _fun57569_ip = 0;;) switch (_fun57569_ip) {
             case 0:
                 var1 = arg0;
                 var13 = var1.avatarHash;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1.isGuildProfile;
                 var0 = undefined;
                 if (!(var8 === var0)) {
-                    _fun57563_ip = 29;
-                    continue _fun57563
+                    _fun57569_ip = 29;
+                    continue _fun57569
                 }
             case 27:
                 var8 = false;
             case 29:
                 var6 = var1.avatarAssetOrigin;
                 if (!(var6 === var0)) {
-                    _fun57563_ip = 74;
-                    continue _fun57563
+                    _fun57569_ip = 74;
+                    continue _fun57569
                 }
             case 39:
                 var2 = _closure1_slot0;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7.ARCHIVED_ASSET;
                 var7 = undefined;
                 if (!(var6 === var9)) {
-                    _fun57563_ip = 194;
-                    continue _fun57563
+                    _fun57569_ip = 194;
+                    continue _fun57569
                 }
             case 181:
                 var9 = global;
@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackUserAvatarUpdated = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5775, 795, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5776, 795, 1417, 2]);

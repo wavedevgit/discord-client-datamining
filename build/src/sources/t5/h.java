@@ -1,126 +1,125 @@
 package t5;
-
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.ColorFilter;
-import android.graphics.Matrix;
-import android.graphics.Paint;
-import android.graphics.Path;
-import android.graphics.RectF;
-import com.airbnb.lottie.n;
-import l5.a0;
-import o5.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class h extends b {
-    private final RectF D;
-    private final Paint E;
-    private final float[] F;
-    private final Path G;
-    private final e H;
-    private o5.a I;
-    private o5.a J;
+public enum h {
+    NORMAL,
+    MULTIPLY,
+    SCREEN,
+    OVERLAY,
+    DARKEN,
+    LIGHTEN,
+    COLOR_DODGE,
+    COLOR_BURN,
+    HARD_LIGHT,
+    SOFT_LIGHT,
+    DIFFERENCE,
+    EXCLUSION,
+    HUE,
+    SATURATION,
+    COLOR,
+    LUMINOSITY,
+    ADD,
+    HARD_MIX;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public h(n nVar, e eVar) {
-        super(nVar, eVar);
-        this.D = new RectF();
-        m5.a aVar = new m5.a();
-        this.E = aVar;
-        this.F = new float[8];
-        this.G = new Path();
-        this.H = eVar;
-        aVar.setAlpha(0);
-        aVar.setStyle(Paint.Style.FILL);
-        aVar.setColor(eVar.p());
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    static /* synthetic */ class a {
 
-    @Override // t5.b, q5.f
-    public void d(Object obj, y5.c cVar) {
-        super.d(obj, cVar);
-        if (obj == a0.K) {
-            if (cVar == null) {
-                this.I = null;
-            } else {
-                this.I = new q(cVar);
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f50600a;
+
+        static {
+            int[] iArr = new int[h.values().length];
+            f50600a = iArr;
+            try {
+                iArr[h.NORMAL.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
             }
-        } else if (obj == a0.f35813a) {
-            if (cVar == null) {
-                this.J = null;
-                this.E.setColor(this.H.p());
-                return;
+            try {
+                f50600a[h.MULTIPLY.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
             }
-            this.J = new q(cVar);
+            try {
+                f50600a[h.SCREEN.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f50600a[h.OVERLAY.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                f50600a[h.DARKEN.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
+            try {
+                f50600a[h.LIGHTEN.ordinal()] = 6;
+            } catch (NoSuchFieldError unused6) {
+            }
+            try {
+                f50600a[h.ADD.ordinal()] = 7;
+            } catch (NoSuchFieldError unused7) {
+            }
+            try {
+                f50600a[h.COLOR_DODGE.ordinal()] = 8;
+            } catch (NoSuchFieldError unused8) {
+            }
+            try {
+                f50600a[h.COLOR_BURN.ordinal()] = 9;
+            } catch (NoSuchFieldError unused9) {
+            }
+            try {
+                f50600a[h.HARD_LIGHT.ordinal()] = 10;
+            } catch (NoSuchFieldError unused10) {
+            }
+            try {
+                f50600a[h.SOFT_LIGHT.ordinal()] = 11;
+            } catch (NoSuchFieldError unused11) {
+            }
+            try {
+                f50600a[h.DIFFERENCE.ordinal()] = 12;
+            } catch (NoSuchFieldError unused12) {
+            }
+            try {
+                f50600a[h.EXCLUSION.ordinal()] = 13;
+            } catch (NoSuchFieldError unused13) {
+            }
+            try {
+                f50600a[h.HUE.ordinal()] = 14;
+            } catch (NoSuchFieldError unused14) {
+            }
+            try {
+                f50600a[h.SATURATION.ordinal()] = 15;
+            } catch (NoSuchFieldError unused15) {
+            }
+            try {
+                f50600a[h.COLOR.ordinal()] = 16;
+            } catch (NoSuchFieldError unused16) {
+            }
+            try {
+                f50600a[h.LUMINOSITY.ordinal()] = 17;
+            } catch (NoSuchFieldError unused17) {
+            }
+            try {
+                f50600a[h.HARD_MIX.ordinal()] = 18;
+            } catch (NoSuchFieldError unused18) {
+            }
         }
     }
 
-    @Override // t5.b, n5.e
-    public void e(RectF rectF, Matrix matrix, boolean z10) {
-        super.e(rectF, matrix, z10);
-        this.D.set(0.0f, 0.0f, this.H.r(), this.H.q());
-        this.f50366o.mapRect(this.D);
-        rectF.set(this.D);
-    }
-
-    @Override // t5.b
-    public void u(Canvas canvas, Matrix matrix, int i10) {
-        Integer num;
-        int intValue;
-        int alpha = Color.alpha(this.H.p());
-        if (alpha != 0) {
-            o5.a aVar = this.J;
-            if (aVar == null) {
-                num = null;
-            } else {
-                num = (Integer) aVar.h();
-            }
-            if (num != null) {
-                this.E.setColor(num.intValue());
-            } else {
-                this.E.setColor(this.H.p());
-            }
-            if (this.f50375x.h() == null) {
-                intValue = 100;
-            } else {
-                intValue = ((Integer) this.f50375x.h().h()).intValue();
-            }
-            int i11 = (int) ((i10 / 255.0f) * (((alpha / 255.0f) * intValue) / 100.0f) * 255.0f);
-            this.E.setAlpha(i11);
-            o5.a aVar2 = this.I;
-            if (aVar2 != null) {
-                this.E.setColorFilter((ColorFilter) aVar2.h());
-            }
-            if (i11 > 0) {
-                float[] fArr = this.F;
-                fArr[0] = 0.0f;
-                fArr[1] = 0.0f;
-                fArr[2] = this.H.r();
-                float[] fArr2 = this.F;
-                fArr2[3] = 0.0f;
-                fArr2[4] = this.H.r();
-                this.F[5] = this.H.q();
-                float[] fArr3 = this.F;
-                fArr3[6] = 0.0f;
-                fArr3[7] = this.H.q();
-                matrix.mapPoints(this.F);
-                this.G.reset();
-                Path path = this.G;
-                float[] fArr4 = this.F;
-                path.moveTo(fArr4[0], fArr4[1]);
-                Path path2 = this.G;
-                float[] fArr5 = this.F;
-                path2.lineTo(fArr5[2], fArr5[3]);
-                Path path3 = this.G;
-                float[] fArr6 = this.F;
-                path3.lineTo(fArr6[4], fArr6[5]);
-                Path path4 = this.G;
-                float[] fArr7 = this.F;
-                path4.lineTo(fArr7[6], fArr7[7]);
-                Path path5 = this.G;
-                float[] fArr8 = this.F;
-                path5.lineTo(fArr8[0], fArr8[1]);
-                this.G.close();
-                canvas.drawPath(this.G, this.E);
-            }
+    public r1.a d() {
+        switch (a.f50600a[ordinal()]) {
+            case 2:
+                return r1.a.MODULATE;
+            case 3:
+                return r1.a.SCREEN;
+            case 4:
+                return r1.a.OVERLAY;
+            case 5:
+                return r1.a.DARKEN;
+            case 6:
+                return r1.a.LIGHTEN;
+            case 7:
+                return r1.a.PLUS;
+            default:
+                return null;
         }
     }
 }

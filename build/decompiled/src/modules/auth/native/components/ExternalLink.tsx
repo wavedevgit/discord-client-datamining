@@ -60,8 +60,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.button = var8;
     var8 = {};
-    var3.continue = var8;
-    var8 = {};
     var3.backToLogin = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
@@ -222,4 +220,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 1469, 7604, 1234, 3942, 4875, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 1469, 7580, 1234, 3942, 4875, 2]);

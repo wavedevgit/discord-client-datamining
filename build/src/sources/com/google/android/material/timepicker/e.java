@@ -10,25 +10,25 @@ public class e implements Parcelable {
     public static final Parcelable.Creator<e> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f15609d;
+    private final b f15749d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b f15610e;
+    private final b f15750e;
 
     /* renamed from: i  reason: collision with root package name */
-    final int f15611i;
+    final int f15751i;
 
     /* renamed from: o  reason: collision with root package name */
-    int f15612o;
+    int f15752o;
 
     /* renamed from: p  reason: collision with root package name */
-    int f15613p;
+    int f15753p;
 
     /* renamed from: q  reason: collision with root package name */
-    int f15614q;
+    int f15754q;
 
     /* renamed from: r  reason: collision with root package name */
-    int f15615r;
+    int f15755r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Parcelable.Creator {
@@ -49,13 +49,13 @@ public class e implements Parcelable {
     }
 
     public e(int i10, int i11, int i12, int i13) {
-        this.f15612o = i10;
-        this.f15613p = i11;
-        this.f15614q = i12;
-        this.f15611i = i13;
-        this.f15615r = c(i10);
-        this.f15609d = new b(59);
-        this.f15610e = new b(i13 == 1 ? 23 : 12);
+        this.f15752o = i10;
+        this.f15753p = i11;
+        this.f15754q = i12;
+        this.f15751i = i13;
+        this.f15755r = c(i10);
+        this.f15749d = new b(59);
+        this.f15750e = new b(i13 == 1 ? 23 : 12);
     }
 
     public static String a(Resources resources, CharSequence charSequence) {
@@ -87,22 +87,22 @@ public class e implements Parcelable {
             return false;
         }
         e eVar = (e) obj;
-        if (this.f15612o == eVar.f15612o && this.f15613p == eVar.f15613p && this.f15611i == eVar.f15611i && this.f15614q == eVar.f15614q) {
+        if (this.f15752o == eVar.f15752o && this.f15753p == eVar.f15753p && this.f15751i == eVar.f15751i && this.f15754q == eVar.f15754q) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f15611i), Integer.valueOf(this.f15612o), Integer.valueOf(this.f15613p), Integer.valueOf(this.f15614q)});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f15751i), Integer.valueOf(this.f15752o), Integer.valueOf(this.f15753p), Integer.valueOf(this.f15754q)});
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f15612o);
-        parcel.writeInt(this.f15613p);
-        parcel.writeInt(this.f15614q);
-        parcel.writeInt(this.f15611i);
+        parcel.writeInt(this.f15752o);
+        parcel.writeInt(this.f15753p);
+        parcel.writeInt(this.f15754q);
+        parcel.writeInt(this.f15751i);
     }
 
     protected e(Parcel parcel) {

@@ -13,26 +13,26 @@ enum v {
     
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Map f17053s = new HashMap();
+    private static final Map f17193s = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f17055d;
+    private final String f17195d;
 
     static {
         v[] values;
         int i10;
         for (v vVar : values()) {
-            f17053s.put(vVar.f17055d, vVar);
+            f17193s.put(vVar.f17195d, vVar);
         }
     }
 
     v(String str) {
-        this.f17055d = str;
+        this.f17195d = str;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static v d(String str) {
-        Map map = f17053s;
+        Map map = f17193s;
         if (map.containsKey(str)) {
             return (v) map.get(str);
         }
@@ -41,6 +41,6 @@ enum v {
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f17055d;
+        return this.f17195d;
     }
 }

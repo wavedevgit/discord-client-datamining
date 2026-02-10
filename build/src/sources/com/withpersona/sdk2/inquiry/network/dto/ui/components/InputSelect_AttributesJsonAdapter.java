@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import an.c;
+import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import com.squareup.moshi.a0;
@@ -66,8 +66,8 @@ public final class InputSelect_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.E0();
-                    reader.S();
+                    reader.C0();
+                    reader.T();
                     break;
                 case 0:
                     str = (String) this.nullableStringAdapter.fromJson(reader);

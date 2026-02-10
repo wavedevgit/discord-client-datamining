@@ -58,7 +58,7 @@ public final class BlockedMessageGroupView extends ChatListConstraintLayout {
         int i10;
         Intrinsics.checkNotNullParameter(item, "item");
         Intrinsics.checkNotNullParameter(eventHandler, "eventHandler");
-        setOnClickListener(new View.OnClickListener() { // from class: r6.a
+        setOnClickListener(new View.OnClickListener() { // from class: s6.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 BlockedMessageGroupView.bind$lambda$2(ChatEventHandler.this, item, view);

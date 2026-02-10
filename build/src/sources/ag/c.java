@@ -1,28 +1,20 @@
 package ag;
 
-import android.os.IInterface;
 import android.os.Parcel;
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ClassLoader f606a = c.class.getClassLoader();
+    private static final ClassLoader f775a = c.class.getClassLoader();
 
-    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
-        if (parcel.readInt() == 0) {
-            return null;
-        }
-        return (Parcelable) creator.createFromParcel(parcel);
-    }
-
-    public static void b(Parcel parcel, Parcelable parcelable) {
+    public static void a(Parcel parcel, boolean z10) {
         parcel.writeInt(1);
-        parcelable.writeToParcel(parcel, 0);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    public static void c(Parcel parcel, IInterface iInterface) {
-        parcel.writeStrongBinder(iInterface);
+    public static boolean b(Parcel parcel) {
+        if (parcel.readInt() != 0) {
+            return true;
+        }
+        return false;
     }
 }

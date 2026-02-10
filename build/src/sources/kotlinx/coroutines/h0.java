@@ -5,33 +5,33 @@ import kotlin.coroutines.CoroutineContext;
 public final class h0 extends CoroutineDispatcher {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final h0 f35111i = new h0();
+    public static final h0 f34820i = new h0();
 
     private h0() {
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void D1(CoroutineContext coroutineContext, Runnable runnable) {
-        i0 i0Var = (i0) coroutineContext.m(i0.f35112i);
-        if (i0Var != null) {
-            i0Var.f35113e = true;
-            return;
-        }
-        throw new UnsupportedOperationException("Dispatchers.Unconfined.dispatch function can only be used by the yield function. If you wrap Unconfined dispatcher in your code, make sure you properly delegate isDispatchNeeded and dispatch calls.");
-    }
-
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public boolean V1(CoroutineContext coroutineContext) {
+    public boolean U1(CoroutineContext coroutineContext) {
         return false;
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
-    public CoroutineDispatcher a2(int i10, String str) {
+    public CoroutineDispatcher Z1(int i10, String str) {
         throw new UnsupportedOperationException("limitedParallelism is not supported for Dispatchers.Unconfined");
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public String toString() {
         return "Dispatchers.Unconfined";
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void z1(CoroutineContext coroutineContext, Runnable runnable) {
+        i0 i0Var = (i0) coroutineContext.m(i0.f34821i);
+        if (i0Var != null) {
+            i0Var.f34822e = true;
+            return;
+        }
+        throw new UnsupportedOperationException("Dispatchers.Unconfined.dispatch function can only be used by the yield function. If you wrap Unconfined dispatcher in your code, make sure you properly delegate isDispatchNeeded and dispatch calls.");
     }
 }

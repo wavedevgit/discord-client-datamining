@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/notifications/SettingsNotificationUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun86162: for (var _fun86162_ip = 0;;) switch (_fun86162_ip) {
+        _fun86166: for (var _fun86166_ip = 0;;) switch (_fun86166_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isAndroid;
                 var0 = var0.bind(var2)();
                 if (!var0) {
-                    _fun86162_ip = 91;
-                    continue _fun86162
+                    _fun86166_ip = 91;
+                    continue _fun86166
                 }
             case 37:
                 var2 = global;

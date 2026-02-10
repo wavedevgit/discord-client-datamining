@@ -1,10 +1,21 @@
 package ra;
 
-import android.graphics.drawable.Drawable;
-import sa.e;
+import kotlin.jvm.internal.Intrinsics;
+import ta.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface a {
-    Drawable a(e eVar);
+public final class a extends RuntimeException {
 
-    boolean b(e eVar);
+    /* renamed from: d  reason: collision with root package name */
+    private final k f47730d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(String str, k encodedImage) {
+        super(str);
+        Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
+        this.f47730d = encodedImage;
+    }
+
+    public final k a() {
+        return this.f47730d;
+    }
 }

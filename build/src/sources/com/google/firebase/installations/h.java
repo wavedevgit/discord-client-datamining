@@ -3,5 +3,5 @@ package com.google.firebase.installations;
 interface h {
     boolean a(Exception exc);
 
-    boolean b(hj.d dVar);
+    boolean b(ij.d dVar);
 }

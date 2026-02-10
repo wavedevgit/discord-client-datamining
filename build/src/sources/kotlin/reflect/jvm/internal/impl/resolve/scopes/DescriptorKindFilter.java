@@ -37,49 +37,49 @@ public final class DescriptorKindFilter {
     public static final DescriptorKindFilter VARIABLES;
 
     /* renamed from: c  reason: collision with root package name */
-    private static int f34246c;
+    private static int f33955c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int f34247d;
+    private static final int f33956d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int f34248e;
+    private static final int f33957e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final int f34249f;
+    private static final int f33958f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final int f34250g;
+    private static final int f33959g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final int f34251h;
+    private static final int f33960h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final int f34252i;
+    private static final int f33961i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final int f34253j;
+    private static final int f33962j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final int f34254k;
+    private static final int f33963k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final int f34255l;
+    private static final int f33964l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final int f34256m;
+    private static final int f33965m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final List f34257n;
+    private static final List f33966n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final List f34258o;
+    private static final List f33967o;
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f34259a;
+    private final List f33968a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f34260b;
+    private final int f33969b;
 
     @SourceDebugExtension({"SMAP\nMemberScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MemberScope.kt\norg/jetbrains/kotlin/resolve/scopes/DescriptorKindFilter$Companion\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,261:1\n1#2:262\n3829#3:263\n4344#3,2:264\n*S KotlinDebug\n*F\n+ 1 MemberScope.kt\norg/jetbrains/kotlin/resolve/scopes/DescriptorKindFilter$Companion\n*L\n210#1:263\n210#1:264,2\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -89,23 +89,23 @@ public final class DescriptorKindFilter {
         private static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final int f34261a;
+            private final int f33970a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final String f34262b;
+            private final String f33971b;
 
             public a(int i10, String name) {
                 Intrinsics.checkNotNullParameter(name, "name");
-                this.f34261a = i10;
-                this.f34262b = name;
+                this.f33970a = i10;
+                this.f33971b = name;
             }
 
             public final int a() {
-                return this.f34261a;
+                return this.f33970a;
             }
 
             public final String b() {
-                return this.f34262b;
+                return this.f33971b;
             }
         }
 
@@ -115,41 +115,41 @@ public final class DescriptorKindFilter {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final int a() {
-            int i10 = DescriptorKindFilter.f34246c;
-            DescriptorKindFilter.f34246c <<= 1;
+            int i10 = DescriptorKindFilter.f33955c;
+            DescriptorKindFilter.f33955c <<= 1;
             return i10;
         }
 
         public final int getALL_KINDS_MASK() {
-            return DescriptorKindFilter.f34253j;
+            return DescriptorKindFilter.f33962j;
         }
 
         public final int getCLASSIFIERS_MASK() {
-            return DescriptorKindFilter.f34254k;
+            return DescriptorKindFilter.f33963k;
         }
 
         public final int getFUNCTIONS_MASK() {
-            return DescriptorKindFilter.f34251h;
+            return DescriptorKindFilter.f33960h;
         }
 
         public final int getNON_SINGLETON_CLASSIFIERS_MASK() {
-            return DescriptorKindFilter.f34247d;
+            return DescriptorKindFilter.f33956d;
         }
 
         public final int getPACKAGES_MASK() {
-            return DescriptorKindFilter.f34250g;
+            return DescriptorKindFilter.f33959g;
         }
 
         public final int getSINGLETON_CLASSIFIERS_MASK() {
-            return DescriptorKindFilter.f34248e;
+            return DescriptorKindFilter.f33957e;
         }
 
         public final int getTYPE_ALIASES_MASK() {
-            return DescriptorKindFilter.f34249f;
+            return DescriptorKindFilter.f33958f;
         }
 
         public final int getVARIABLES_MASK() {
-            return DescriptorKindFilter.f34252i;
+            return DescriptorKindFilter.f33961i;
         }
 
         private Companion() {
@@ -162,27 +162,27 @@ public final class DescriptorKindFilter {
         Companion.a aVar2;
         Companion companion = new Companion(null);
         Companion = companion;
-        f34246c = 1;
+        f33955c = 1;
         int a10 = companion.a();
-        f34247d = a10;
+        f33956d = a10;
         int a11 = companion.a();
-        f34248e = a11;
+        f33957e = a11;
         int a12 = companion.a();
-        f34249f = a12;
+        f33958f = a12;
         int a13 = companion.a();
-        f34250g = a13;
+        f33959g = a13;
         int a14 = companion.a();
-        f34251h = a14;
+        f33960h = a14;
         int a15 = companion.a();
-        f34252i = a15;
+        f33961i = a15;
         int a16 = companion.a() - 1;
-        f34253j = a16;
+        f33962j = a16;
         int i10 = a10 | a11 | a12;
-        f34254k = i10;
+        f33963k = i10;
         int i11 = a11 | a14 | a15;
-        f34255l = i11;
+        f33964l = i11;
         int i12 = a14 | a15;
-        f34256m = i12;
+        f33965m = i12;
         ALL = new DescriptorKindFilter(a16, null, 2, null);
         CALLABLES = new DescriptorKindFilter(i12, null, 2, null);
         NON_SINGLETON_CLASSIFIERS = new DescriptorKindFilter(a10, null, 2, null);
@@ -210,7 +210,7 @@ public final class DescriptorKindFilter {
                 descriptorKindFilter = null;
             }
             if (descriptorKindFilter != null) {
-                int i13 = descriptorKindFilter.f34260b;
+                int i13 = descriptorKindFilter.f33969b;
                 String name = field2.getName();
                 Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
                 aVar2 = new Companion.a(i13, name);
@@ -221,7 +221,7 @@ public final class DescriptorKindFilter {
                 arrayList2.add(aVar2);
             }
         }
-        f34257n = arrayList2;
+        f33966n = arrayList2;
         Field[] fields2 = DescriptorKindFilter.class.getFields();
         Intrinsics.checkNotNullExpressionValue(fields2, "getFields(...)");
         ArrayList arrayList3 = new ArrayList();
@@ -252,20 +252,20 @@ public final class DescriptorKindFilter {
                 arrayList5.add(aVar);
             }
         }
-        f34258o = arrayList5;
+        f33967o = arrayList5;
     }
 
     public DescriptorKindFilter(int i10, @NotNull List<? extends DescriptorKindExclude> excludes) {
         Intrinsics.checkNotNullParameter(excludes, "excludes");
-        this.f34259a = excludes;
+        this.f33968a = excludes;
         for (DescriptorKindExclude descriptorKindExclude : excludes) {
             i10 &= ~descriptorKindExclude.getFullyExcludedDescriptorKinds();
         }
-        this.f34260b = i10;
+        this.f33969b = i10;
     }
 
     public final boolean acceptsKinds(int i10) {
-        if ((i10 & this.f34260b) != 0) {
+        if ((i10 & this.f33969b) != 0) {
             return true;
         }
         return false;
@@ -286,7 +286,7 @@ public final class DescriptorKindFilter {
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter");
         DescriptorKindFilter descriptorKindFilter = (DescriptorKindFilter) obj;
-        if (Intrinsics.areEqual(this.f34259a, descriptorKindFilter.f34259a) && this.f34260b == descriptorKindFilter.f34260b) {
+        if (Intrinsics.areEqual(this.f33968a, descriptorKindFilter.f33968a) && this.f33969b == descriptorKindFilter.f33969b) {
             return true;
         }
         return false;
@@ -294,23 +294,23 @@ public final class DescriptorKindFilter {
 
     @NotNull
     public final List<DescriptorKindExclude> getExcludes() {
-        return this.f34259a;
+        return this.f33968a;
     }
 
     public final int getKindMask() {
-        return this.f34260b;
+        return this.f33969b;
     }
 
     public int hashCode() {
-        return (this.f34259a.hashCode() * 31) + this.f34260b;
+        return (this.f33968a.hashCode() * 31) + this.f33969b;
     }
 
     public final DescriptorKindFilter restrictedToKindsOrNull(int i10) {
-        int i11 = i10 & this.f34260b;
+        int i11 = i10 & this.f33969b;
         if (i11 == 0) {
             return null;
         }
-        return new DescriptorKindFilter(i11, this.f34259a);
+        return new DescriptorKindFilter(i11, this.f33968a);
     }
 
     @NotNull
@@ -318,11 +318,11 @@ public final class DescriptorKindFilter {
         Object obj;
         String str;
         String str2;
-        Iterator it = f34257n.iterator();
+        Iterator it = f33966n.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
-                if (((Companion.a) obj).a() == this.f34260b) {
+                if (((Companion.a) obj).a() == this.f33969b) {
                     break;
                 }
             } else {
@@ -338,7 +338,7 @@ public final class DescriptorKindFilter {
         }
         if (str == null) {
             ArrayList arrayList = new ArrayList();
-            for (Companion.a aVar2 : f34258o) {
+            for (Companion.a aVar2 : f33967o) {
                 if (acceptsKinds(aVar2.a())) {
                     str2 = aVar2.b();
                 } else {
@@ -350,7 +350,7 @@ public final class DescriptorKindFilter {
             }
             str = CollectionsKt.x0(arrayList, " | ", null, null, 0, null, null, 62, null);
         }
-        return "DescriptorKindFilter(" + str + ", " + this.f34259a + ')';
+        return "DescriptorKindFilter(" + str + ", " + this.f33968a + ')';
     }
 
     public /* synthetic */ DescriptorKindFilter(int i10, List list, int i11, DefaultConstructorMarker defaultConstructorMarker) {

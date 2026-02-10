@@ -169,12 +169,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var12.INTERACTIVE_TEXT_DEFAULT;
     var8.tintColor = var12;
     var3.navbarRight = var8;
-    var8 = {
-        'height': 120,
-        'resizeMode': 'contain',
-        'alignSelf': 'center'
-    };
-    var3.headerImage = var8;
     var8 = {};
     var12 = var5[var9];
     var12 = var10.bind(var0)(var12);
@@ -212,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_required_action/native/NewTermsModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun115165: for (var _fun115165_ip = 0;;) switch (_fun115165_ip) {
+        _fun115145: for (var _fun115145_ip = 0;;) switch (_fun115145_ip) {
             case 0:
                 var0 = _closure1_slot14;
                 var4 = undefined;
@@ -262,13 +256,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot3;
                 var0 = function*() { // Environment: var15
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun115168: for (var _fun115168_ip = 0;;) switch (_fun115168_ip) {
+                        _fun115148: for (var _fun115148_ip = 0;;) switch (_fun115148_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun115168_ip = 81;
-                                    continue _fun115168
+                                    _fun115148_ip = 81;
+                                    continue _fun115148
                                 }
                             case 7:
                                 var4 = _closure2_slot1;
@@ -288,8 +282,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 60:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                                 if (var4) {
-                                    _fun115168_ip = 78;
-                                    continue _fun115168
+                                    _fun115148_ip = 78;
+                                    continue _fun115148
                                 }
                             case 66:
                                 var3 = _closure2_slot1;
@@ -331,8 +325,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var1;
                 if (var1) {
-                    _fun115165_ip = 1388;
-                    continue _fun115165
+                    _fun115145_ip = 1388;
+                    continue _fun115145
                 }
             case 311:
                 var3 = _closure1_slot13;
@@ -519,14 +513,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var7.loading = var16;
                 var15 = function() {
-                    _fun115169: for (var _fun115169_ip = 0;;) switch (_fun115169_ip) {
+                    _fun115149: for (var _fun115149_ip = 0;;) switch (_fun115149_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = _closure1_slot11;
                             var1 = var1.AGREEMENTS;
                             if (!(var2 === var1)) {
-                                _fun115169_ip = 34;
-                                continue _fun115169
+                                _fun115149_ip = 34;
+                                continue _fun115149
                             }
                         case 24:
                             var1 = _closure2_slot2;
@@ -595,4 +589,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 1366, 660, 33, 1297, 671, 7800, 1234, 4557, 1568, 4708, 4079, 7027, 5264, 481, 3942, 5384, 4084, 6852, 8268, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 1366, 660, 33, 1297, 671, 7775, 1234, 4557, 1568, 4708, 4079, 7028, 5264, 481, 3942, 5385, 4084, 6853, 8243, 2]);

@@ -56,7 +56,7 @@ public final class ViewTransitionCoordinator {
                 break;
             }
             if (ReactBuildConfig.DEBUG) {
-                p8.a.b(TAG, "Executing " + next);
+                q8.a.b(TAG, "Executing " + next);
             }
             it.remove();
             Map<Integer, Set<Integer>> map = this.executedChildIdsForParent;
@@ -159,7 +159,7 @@ public final class ViewTransitionCoordinator {
             linkedList2.add(Integer.valueOf(parentTag));
         }
         if (ReactBuildConfig.DEBUG) {
-            p8.a.b(TAG, "Enqueued operation: " + operation);
+            q8.a.b(TAG, "Enqueued operation: " + operation);
         }
     }
 
@@ -230,7 +230,7 @@ public final class ViewTransitionCoordinator {
                     this.childToParentOrder.remove(Integer.valueOf(i10));
                 }
                 if (ReactBuildConfig.DEBUG) {
-                    p8.a.b(TAG, "Dropping queued delete operation for tag " + i10 + " as the view was re-created");
+                    q8.a.b(TAG, "Dropping queued delete operation for tag " + i10 + " as the view was re-created");
                 }
             }
         }

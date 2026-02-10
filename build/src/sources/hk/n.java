@@ -1,35 +1,57 @@
 package hk;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class n extends Exception {
-
-    /* renamed from: d  reason: collision with root package name */
-    protected static boolean f26159d;
-
-    /* renamed from: e  reason: collision with root package name */
-    protected static final StackTraceElement[] f26160e;
-
-    static {
-        boolean z10;
-        if (System.getProperty("surefire.test.class.path") != null) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        f26159d = z10;
-        f26160e = new StackTraceElement[0];
-    }
-
+final class n extends m {
     /* JADX INFO: Access modifiers changed from: package-private */
-    public n() {
-    }
-
-    @Override // java.lang.Throwable
-    public final synchronized Throwable fillInStackTrace() {
+    @Override // hk.m
+    public Object a(l lVar, i0 i0Var, int i10) {
+        lVar.a(i0Var, i10);
         return null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public n(Throwable th2) {
-        super(th2);
+    @Override // hk.m
+    public p b(Object obj) {
+        android.support.v4.media.session.b.a(obj);
+        throw null;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // hk.m
+    public p c(Object obj) {
+        android.support.v4.media.session.b.a(obj);
+        throw null;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // hk.m
+    public boolean d(i0 i0Var) {
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // hk.m
+    public void e(Object obj) {
+        b(obj).c();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // hk.m
+    public Object f(Object obj, w0 w0Var, Object obj2, l lVar, p pVar, Object obj3, d1 d1Var) {
+        android.support.v4.media.session.b.a(obj2);
+        throw null;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // hk.m
+    public void g(w0 w0Var, Object obj, l lVar, p pVar) {
+        android.support.v4.media.session.b.a(obj);
+        throw null;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // hk.m
+    public void h(f fVar, Object obj, l lVar, p pVar) {
+        android.support.v4.media.session.b.a(obj);
+        throw null;
     }
 }

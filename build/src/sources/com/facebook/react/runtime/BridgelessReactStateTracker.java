@@ -34,7 +34,7 @@ public final class BridgelessReactStateTracker {
 
     public final void enterState(@NotNull String state) {
         Intrinsics.checkNotNullParameter(state, "state");
-        p8.a.J(TAG, state);
+        q8.a.J(TAG, state);
         if (this.shouldTrackStates) {
             this.states.add(state);
         }

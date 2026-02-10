@@ -1,51 +1,69 @@
 package oe;
 
-import ne.h0;
+import android.os.Bundle;
+import android.util.SparseArray;
+import com.google.android.exoplayer2.g;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import oi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class d {
-
-    /* renamed from: a  reason: collision with root package name */
-    public final int f41655a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final int f41656b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final String f41657c;
-
-    private d(int i10, int i11, String str) {
-        this.f41655a = i10;
-        this.f41656b = i11;
-        this.f41657c = str;
+public abstract class d {
+    public static HashMap a(Bundle bundle) {
+        HashMap hashMap = new HashMap();
+        if (bundle != Bundle.EMPTY) {
+            for (String str : bundle.keySet()) {
+                String string = bundle.getString(str);
+                if (string != null) {
+                    hashMap.put(str, string);
+                }
+            }
+        }
+        return hashMap;
     }
 
-    public static d a(h0 h0Var) {
-        String str;
-        h0Var.V(2);
-        int H = h0Var.H();
-        int i10 = H >> 1;
-        int H2 = ((h0Var.H() >> 3) & 31) | ((H & 1) << 5);
-        if (i10 != 4 && i10 != 5 && i10 != 7) {
-            if (i10 == 8) {
-                str = "hev1";
-            } else if (i10 == 9) {
-                str = "avc3";
-            } else {
-                return null;
-            }
-        } else {
-            str = "dvhe";
+    public static oi.t b(Bundle bundle) {
+        if (bundle == Bundle.EMPTY) {
+            return oi.t.j();
         }
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append(str);
-        String str2 = ".0";
-        sb2.append(".0");
-        sb2.append(i10);
-        if (H2 >= 10) {
-            str2 = ".";
+        return oi.t.c(a(bundle));
+    }
+
+    public static void c(Bundle bundle) {
+        if (bundle != null) {
+            bundle.setClassLoader((ClassLoader) w0.j(d.class.getClassLoader()));
         }
-        sb2.append(str2);
-        sb2.append(H2);
-        return new d(i10, H2, sb2.toString());
+    }
+
+    public static oi.s d(g.a aVar, List list) {
+        s.a j10 = oi.s.j();
+        for (int i10 = 0; i10 < list.size(); i10++) {
+            j10.a(aVar.a((Bundle) a.e((Bundle) list.get(i10))));
+        }
+        return j10.k();
+    }
+
+    public static SparseArray e(g.a aVar, SparseArray sparseArray) {
+        SparseArray sparseArray2 = new SparseArray(sparseArray.size());
+        for (int i10 = 0; i10 < sparseArray.size(); i10++) {
+            sparseArray2.put(sparseArray.keyAt(i10), aVar.a((Bundle) sparseArray.valueAt(i10)));
+        }
+        return sparseArray2;
+    }
+
+    public static Bundle f(Bundle bundle, String str, Bundle bundle2) {
+        Bundle bundle3 = bundle.getBundle(str);
+        if (bundle3 != null) {
+            return bundle3;
+        }
+        return bundle2;
+    }
+
+    public static ArrayList g(Bundle bundle, String str, ArrayList arrayList) {
+        ArrayList<Integer> integerArrayList = bundle.getIntegerArrayList(str);
+        if (integerArrayList != null) {
+            return integerArrayList;
+        }
+        return arrayList;
     }
 }

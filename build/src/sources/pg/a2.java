@@ -1,40 +1,50 @@
 package pg;
 
-import java.util.HashMap;
-import java.util.Map;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a2 implements zi.b {
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.d f43946d = new yi.d() { // from class: pg.z1
-        @Override // yi.d
-        public final void a(Object obj, Object obj2) {
-            yi.e eVar = (yi.e) obj2;
-            int i10 = a2.f43947e;
-            throw new yi.b("Couldn't find encoder for type ".concat(String.valueOf(obj.getClass().getCanonicalName())));
-        }
-    };
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final /* synthetic */ int f43947e = 0;
+final class a2 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f43948a = new HashMap();
+    static final a2 f43285a = new a2();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f43949b = new HashMap();
+    private static final zi.c f43286b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final yi.d f43950c = f43946d;
+    private static final zi.c f43287c;
 
-    @Override // zi.b
-    public final /* bridge */ /* synthetic */ zi.b a(Class cls, yi.d dVar) {
-        this.f43948a.put(cls, dVar);
-        this.f43949b.remove(cls);
-        return this;
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f43288d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final zi.c f43289e;
+
+    static {
+        c.b a10 = zi.c.a("durationMs");
+        f fVar = new f();
+        fVar.a(1);
+        f43286b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("detectorOptions");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f43287c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("eventType");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f43288d = a12.b(fVar3.b()).a();
+        c.b a13 = zi.c.a("errorCode");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f43289e = a13.b(fVar4.b()).a();
     }
 
-    public final b2 b() {
-        return new b2(new HashMap(this.f43948a), new HashMap(this.f43949b), this.f43950c);
+    private a2() {
+    }
+
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

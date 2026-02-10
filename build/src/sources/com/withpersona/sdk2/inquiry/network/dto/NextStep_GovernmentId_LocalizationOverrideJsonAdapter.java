@@ -55,8 +55,8 @@ public final class NextStep_GovernmentId_LocalizationOverrideJsonAdapter extends
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.E0();
-                    reader.S();
+                    reader.C0();
+                    reader.T();
                     break;
                 case 0:
                     str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -72,21 +72,21 @@ public final class NextStep_GovernmentId_LocalizationOverrideJsonAdapter extends
                     if (str4 != null) {
                         break;
                     } else {
-                        throw an.c.x("page", "page", reader);
+                        throw bn.c.x("page", "page", reader);
                     }
                 case 4:
                     str5 = (String) this.stringAdapter.fromJson(reader);
                     if (str5 != null) {
                         break;
                     } else {
-                        throw an.c.x("key", "key", reader);
+                        throw bn.c.x("key", "key", reader);
                     }
                 case 5:
                     str6 = (String) this.stringAdapter.fromJson(reader);
                     if (str6 != null) {
                         break;
                     } else {
-                        throw an.c.x("text", "text", reader);
+                        throw bn.c.x("text", "text", reader);
                     }
             }
         }
@@ -96,11 +96,11 @@ public final class NextStep_GovernmentId_LocalizationOverrideJsonAdapter extends
                 if (str6 != null) {
                     return new NextStep.GovernmentId.LocalizationOverride(str, str2, str3, str4, str5, str6);
                 }
-                throw an.c.o("text", "text", reader);
+                throw bn.c.o("text", "text", reader);
             }
-            throw an.c.o("key", "key", reader);
+            throw bn.c.o("key", "key", reader);
         }
-        throw an.c.o("page", "page", reader);
+        throw bn.c.o("page", "page", reader);
     }
 
     @Override // com.squareup.moshi.h

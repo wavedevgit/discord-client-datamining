@@ -1,0 +1,97 @@
+package w5;
+
+import android.graphics.PointF;
+import r5.b;
+import x5.c;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public class i implements n0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final i f53270a = new i();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final c.a f53271b = c.a.a("t", "f", "s", "j", "tr", "lh", "ls", "fc", "sc", "sw", "of", "ps", "sz");
+
+    private i() {
+    }
+
+    @Override // w5.n0
+    /* renamed from: b */
+    public r5.b a(x5.c cVar, float f10) {
+        b.a aVar = b.a.CENTER;
+        cVar.u();
+        b.a aVar2 = aVar;
+        String str = null;
+        String str2 = null;
+        PointF pointF = null;
+        PointF pointF2 = null;
+        float f11 = 0.0f;
+        float f12 = 0.0f;
+        float f13 = 0.0f;
+        float f14 = 0.0f;
+        int i10 = 0;
+        int i11 = 0;
+        int i12 = 0;
+        boolean z10 = true;
+        while (cVar.hasNext()) {
+            switch (cVar.p(f53271b)) {
+                case 0:
+                    str = cVar.b1();
+                    break;
+                case 1:
+                    str2 = cVar.b1();
+                    break;
+                case 2:
+                    f11 = (float) cVar.nextDouble();
+                    break;
+                case 3:
+                    int nextInt = cVar.nextInt();
+                    aVar2 = b.a.CENTER;
+                    if (nextInt <= aVar2.ordinal() && nextInt >= 0) {
+                        aVar2 = b.a.values()[nextInt];
+                        break;
+                    }
+                    break;
+                case 4:
+                    i10 = cVar.nextInt();
+                    break;
+                case 5:
+                    f12 = (float) cVar.nextDouble();
+                    break;
+                case 6:
+                    f13 = (float) cVar.nextDouble();
+                    break;
+                case 7:
+                    i11 = s.d(cVar);
+                    break;
+                case 8:
+                    i12 = s.d(cVar);
+                    break;
+                case 9:
+                    f14 = (float) cVar.nextDouble();
+                    break;
+                case 10:
+                    z10 = cVar.g();
+                    break;
+                case 11:
+                    cVar.x();
+                    PointF pointF3 = new PointF(((float) cVar.nextDouble()) * f10, ((float) cVar.nextDouble()) * f10);
+                    cVar.v();
+                    pointF = pointF3;
+                    break;
+                case 12:
+                    cVar.x();
+                    PointF pointF4 = new PointF(((float) cVar.nextDouble()) * f10, ((float) cVar.nextDouble()) * f10);
+                    cVar.v();
+                    pointF2 = pointF4;
+                    break;
+                default:
+                    cVar.s();
+                    cVar.T();
+                    break;
+            }
+        }
+        cVar.D();
+        return new r5.b(str, str2, f11, aVar2, i10, f12, f13, i11, i12, f14, z10, pointF, pointF2);
+    }
+}

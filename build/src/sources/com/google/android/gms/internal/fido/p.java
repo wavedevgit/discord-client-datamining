@@ -3,10 +3,10 @@ package com.google.android.gms.internal.fido;
 public abstract class p implements Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final n f14042d = new n(null);
+    private static final n f14182d = new n(null);
 
     public static n a() {
-        return f14042d;
+        return f14182d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

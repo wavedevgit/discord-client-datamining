@@ -52,7 +52,7 @@ public final class TouchTargetHelper {
         static {
             TouchTargetReturnType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = xr.a.a($values);
+            $ENTRIES = yr.a.a($values);
         }
 
         private TouchTargetReturnType(String str, int i10) {
@@ -282,7 +282,7 @@ public final class TouchTargetHelper {
             if (i11 != 3) {
                 if (i11 != 4) {
                     if (pointerEvents != PointerEvents.AUTO) {
-                        p8.a.J(ReactConstants.TAG, "Unknown pointer event type: " + pointerEvents);
+                        q8.a.J(ReactConstants.TAG, "Unknown pointer event type: " + pointerEvents);
                     }
                     if ((view instanceof ReactCompoundViewGroup) && isTouchPointInView(fArr[0], fArr[1], view) && ((ReactCompoundViewGroup) view).interceptsTouchEvent(fArr[0], fArr[1])) {
                         if (list != null) {

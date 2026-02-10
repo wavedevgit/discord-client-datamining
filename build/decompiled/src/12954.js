@@ -1,76 +1,45 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
+    var0 = global;
+    var5 = var0.Object;
     var4 = var5.defineProperty;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function() {
-        _fun99409: for (var _fun99409_ip = 0;;) switch (_fun99409_ip) {
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = ['fatal', 'error', 'warning', 'log', 'info', 'debug'];
+    var _closure1_slot0 = var0;
+    var2 = function arg0() {
+        _fun99500: for (var _fun99500_ip = 0;;) switch (_fun99500_ip) {
             case 0:
-                var0 = global;
-                var0 = var0.window;
-                var1 = 'undefined';
-                var0 = typeof var0;
-                var0 = var1 !== var0;
-                if (!var0) {
-                    _fun99409_ip = 151;
-                    continue _fun99409
+                var2 = arg0;
+                var0 = 'warning';
+                var1 = 'warn';
+                if (!(var1 !== var2)) {
+                    _fun99500_ip = 45;
+                    continue _fun99500
                 }
-            case 24:
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 0;
-                var1 = var4[var1];
-                var5 = undefined;
-                var2 = var2.bind(var5)(var1);
-                var1 = var2.isNodeEnv;
-                var1 = var1.bind(var2)();
-                var1 = !var1;
-                if (var1) {
-                    _fun99409_ip = 148;
-                    continue _fun99409
+            case 15:
+                var3 = _closure1_slot0;
+                var1 = var3.includes;
+                var3 = var1.bind(var3)(var2);
+                var1 = 'log';
+                if (!var3) {
+                    _fun99500_ip = 42;
+                    continue _fun99500
                 }
-            case 64:
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var6 = 1;
-                var2 = var2[var6];
-                var2 = var4.bind(var5)(var2);
-                var2 = var2.GLOBAL_OBJ;
-                var2 = var2.process;
-                var2 = var5 !== var2;
-                if (!var2) {
-                    _fun99409_ip = 145;
-                    continue _fun99409
-                }
-            case 103:
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var3 = var3[var6];
-                var3 = var4.bind(var5)(var3);
-                var3 = var3.GLOBAL_OBJ;
-                var3 = var3.process;
-                var4 = var3.type;
-                var3 = 'renderer';
-                var2 = var3 === var4;
-            case 145:
+            case 39:
                 var1 = var2;
-            case 148:
+            case 42:
                 var0 = var1;
-            case 151:
+            case 45:
                 return var0;
         }
     };
-    var1.isBrowser = var0;
+    var1.severityLevelFromString = var2;
+    var1.validSeverityLevels = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12955, 12939]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

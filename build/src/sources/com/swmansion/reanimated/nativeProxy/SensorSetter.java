@@ -1,13 +1,13 @@
 package com.swmansion.reanimated.nativeProxy;
 
 import com.facebook.jni.HybridData;
-@fb.a
+@gb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class SensorSetter {
-    @fb.a
+    @gb.a
     private final HybridData mHybridData;
 
-    @fb.a
+    @gb.a
     private SensorSetter(HybridData hybridData) {
         this.mHybridData = hybridData;
     }

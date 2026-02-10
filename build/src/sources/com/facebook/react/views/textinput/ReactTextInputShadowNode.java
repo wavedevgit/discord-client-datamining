@@ -126,7 +126,7 @@ public final class ReactTextInputShadowNode extends ReactBaseTextShadowNode impl
     @Override // com.facebook.react.uimanager.ReactShadowNodeImpl, com.facebook.react.uimanager.ReactShadowNode
     public void setLocalData(@NotNull Object data) {
         Intrinsics.checkNotNullParameter(data, "data");
-        db.a.a(data instanceof ReactTextInputLocalData);
+        eb.a.a(data instanceof ReactTextInputLocalData);
         this.localData = (ReactTextInputLocalData) data;
         dirty();
     }
@@ -201,7 +201,7 @@ public final class ReactTextInputShadowNode extends ReactBaseTextShadowNode impl
             r1.append(r4)
             java.lang.String r4 = r1.toString()
             java.lang.String r1 = "ReactNative"
-            p8.a.J(r1, r4)
+            q8.a.J(r1, r4)
             r3.mTextBreakStrategy = r0
             return
         L4e:

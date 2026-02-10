@@ -183,7 +183,7 @@ public final class MediaVisualPlaceholderView extends FrameLayout implements Mos
             if (i13 != 2) {
                 if (i13 == 3) {
                     this.binding.imageInvalid.setVisibility(0);
-                    ((GenericDraweeHierarchy) this.binding.imageInvalid.getHierarchy()).t(ScalingUtils$ScaleType.f9918e);
+                    ((GenericDraweeHierarchy) this.binding.imageInvalid.getHierarchy()).t(ScalingUtils$ScaleType.f10058e);
                     this.binding.imageInvalid.clearColorFilter();
                     SimpleDraweeView imageInvalid = this.binding.imageInvalid;
                     Intrinsics.checkNotNullExpressionValue(imageInvalid, "imageInvalid");
@@ -195,10 +195,10 @@ public final class MediaVisualPlaceholderView extends FrameLayout implements Mos
                     ReactAssetUtilsKt.setReactAsset(imageInvalid, reactAsset);
                     return;
                 }
-                throw new qr.p();
+                throw new rr.p();
             }
             this.binding.imageInvalid.setVisibility(0);
-            ((GenericDraweeHierarchy) this.binding.imageInvalid.getHierarchy()).t(ScalingUtils$ScaleType.f9920g);
+            ((GenericDraweeHierarchy) this.binding.imageInvalid.getHierarchy()).t(ScalingUtils$ScaleType.f10060g);
             SimpleDraweeView imageInvalid2 = this.binding.imageInvalid;
             Intrinsics.checkNotNullExpressionValue(imageInvalid2, "imageInvalid");
             ColorUtilsKt.setTintColor(imageInvalid2, Integer.valueOf(ThemeManagerKt.getTheme().getBackgroundModMuted()));

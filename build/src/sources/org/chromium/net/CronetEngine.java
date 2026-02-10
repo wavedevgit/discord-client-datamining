@@ -16,7 +16,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Executor;
-import kv.a;
+import lv.a;
 import org.chromium.net.BidirectionalStream;
 import org.chromium.net.ConnectionMigrationOptions;
 import org.chromium.net.CronetProvider;
@@ -65,13 +65,13 @@ public abstract class CronetEngine {
             @Override // java.util.Comparator
             /* renamed from: a */
             public int compare(CronetProvider.a aVar, CronetProvider.a aVar2) {
-                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar.f43426a.getName())) {
+                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar.f42625a.getName())) {
                     return 1;
                 }
-                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar2.f43426a.getName())) {
+                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar2.f42625a.getName())) {
                     return -1;
                 }
-                return -Builder.compareVersions(aVar.f43426a.getVersion(), aVar2.f43426a.getVersion());
+                return -Builder.compareVersions(aVar.f42625a.getVersion(), aVar2.f42625a.getVersion());
             }
         }
 
@@ -102,29 +102,29 @@ public abstract class CronetEngine {
         }
 
         private static ICronetEngineBuilder createBuilderDelegate(Context context) {
-            hv.a a10 = hv.a.a("CronetEngine#createBuilderDelegate");
+            iv.a a10 = iv.a.a("CronetEngine#createBuilderDelegate");
             try {
                 long uptimeMillis = SystemClock.uptimeMillis();
                 CronetProvider.a aVar = getEnabledCronetProviders(context, new ArrayList(CronetProvider.getAllProviderInfos(context))).get(0);
-                kv.a a11 = kv.d.a(context, aVar.f43427b);
-                a.C0473a c0473a = new a.C0473a();
-                c0473a.f35591e = Boolean.FALSE;
-                c0473a.f35588b = a.C0473a.EnumC0474a.API;
-                c0473a.f35590d = aVar.f43427b;
-                c0473a.f35594h = Process.myUid();
-                c0473a.f35592f = new a.c(ApiVersion.getCronetVersion());
+                lv.a a11 = lv.d.a(context, aVar.f42626b);
+                a.C0522a c0522a = new a.C0522a();
+                c0522a.f36670e = Boolean.FALSE;
+                c0522a.f36667b = a.C0522a.EnumC0523a.API;
+                c0522a.f36669d = aVar.f42626b;
+                c0522a.f36673h = Process.myUid();
+                c0522a.f36671f = new a.c(ApiVersion.getCronetVersion());
                 if (Log.isLoggable(TAG, 3)) {
-                    Log.d(TAG, String.format("Using '%s' provider for creating CronetEngine.Builder.", aVar.f43426a));
+                    Log.d(TAG, String.format("Using '%s' provider for creating CronetEngine.Builder.", aVar.f42625a));
                 }
-                ICronetEngineBuilder iCronetEngineBuilder = aVar.f43426a.createBuilder().mBuilderDelegate;
+                ICronetEngineBuilder iCronetEngineBuilder = aVar.f42625a.createBuilder().mBuilderDelegate;
                 String implCronetVersion = getImplCronetVersion(iCronetEngineBuilder);
                 if (implCronetVersion != null) {
-                    c0473a.f35593g = new a.c(implCronetVersion);
+                    c0522a.f36672g = new a.c(implCronetVersion);
                 }
-                c0473a.f35587a = iCronetEngineBuilder.getLogCronetInitializationRef();
-                c0473a.f35591e = Boolean.TRUE;
-                c0473a.f35589c = (int) (SystemClock.uptimeMillis() - uptimeMillis);
-                a11.a(c0473a);
+                c0522a.f36666a = iCronetEngineBuilder.getLogCronetInitializationRef();
+                c0522a.f36670e = Boolean.TRUE;
+                c0522a.f36668c = (int) (SystemClock.uptimeMillis() - uptimeMillis);
+                a11.a(c0522a);
                 if (a10 != null) {
                     a10.close();
                 }
@@ -145,7 +145,7 @@ public abstract class CronetEngine {
             if (!list.isEmpty()) {
                 Iterator<CronetProvider.a> it = list.iterator();
                 while (it.hasNext()) {
-                    if (!it.next().f43426a.isEnabled()) {
+                    if (!it.next().f42625a.isEnabled()) {
                         it.remove();
                     }
                 }

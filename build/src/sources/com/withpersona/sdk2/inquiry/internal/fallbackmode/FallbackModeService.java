@@ -7,11 +7,11 @@ import kotlin.coroutines.Continuation;
 import kotlin.jvm.internal.Intrinsics;
 import okhttp3.RequestBody;
 import org.jetbrains.annotations.NotNull;
-import vv.z;
-import xv.k;
-import xv.o;
-import xv.y;
-@Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b\bf\u0018\u00002\u00020\u0001:\u0007\u001c\u001d\u001e\u001f !\"J,\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\n\b\u0001\u0010\u0003\u001a\u0004\u0018\u00010\u00022\b\b\u0001\u0010\u0005\u001a\u00020\u0004H§@¢\u0006\u0004\b\b\u0010\tJ \u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00062\b\b\u0001\u0010\u0005\u001a\u00020\nH§@¢\u0006\u0004\b\f\u0010\rJ>\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00140\u00062\b\b\u0001\u0010\u000e\u001a\u00020\u00022\b\b\u0001\u0010\u0010\u001a\u00020\u000f2\b\b\u0001\u0010\u0012\u001a\u00020\u00112\b\b\u0001\u0010\u0005\u001a\u00020\u0013H§@¢\u0006\u0004\b\u0015\u0010\u0016J*\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00010\u00062\b\b\u0001\u0010\u0017\u001a\u00020\u00022\b\b\u0001\u0010\u0019\u001a\u00020\u0018H§@¢\u0006\u0004\b\u001a\u0010\u001b¨\u0006#"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService;", "", "", "sessionToken", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$StatusRequest;", "request", "Lvv/z;", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$StatusResponse;", "b", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$StatusRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$SessionIdRequest;", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$SessionIdResponse;", "d", "(Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$SessionIdRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "authHeader", "Lyo/h;", "productionEndpoint", "", "requestCount", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$UploadUrlRequest;", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$UploadUrlResponse;", "a", "(Ljava/lang/String;Lyo/h;ILcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$UploadUrlRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "url", "Lokhttp3/RequestBody;", "body", "c", "(Ljava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "UploadUrlResponse", "UploadUrlRequest", "StatusRequest", "StatusResponse", "StaticTemplate", "SessionIdRequest", "SessionIdResponse", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import wv.z;
+import yv.k;
+import yv.o;
+import yv.y;
+@Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b\bf\u0018\u00002\u00020\u0001:\u0007\u001c\u001d\u001e\u001f !\"J,\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\n\b\u0001\u0010\u0003\u001a\u0004\u0018\u00010\u00022\b\b\u0001\u0010\u0005\u001a\u00020\u0004H§@¢\u0006\u0004\b\b\u0010\tJ \u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00062\b\b\u0001\u0010\u0005\u001a\u00020\nH§@¢\u0006\u0004\b\f\u0010\rJ>\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00140\u00062\b\b\u0001\u0010\u000e\u001a\u00020\u00022\b\b\u0001\u0010\u0010\u001a\u00020\u000f2\b\b\u0001\u0010\u0012\u001a\u00020\u00112\b\b\u0001\u0010\u0005\u001a\u00020\u0013H§@¢\u0006\u0004\b\u0015\u0010\u0016J*\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00010\u00062\b\b\u0001\u0010\u0017\u001a\u00020\u00022\b\b\u0001\u0010\u0019\u001a\u00020\u0018H§@¢\u0006\u0004\b\u001a\u0010\u001b¨\u0006#"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService;", "", "", "sessionToken", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$StatusRequest;", "request", "Lwv/z;", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$StatusResponse;", "a", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$StatusRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$SessionIdRequest;", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$SessionIdResponse;", "c", "(Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$SessionIdRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "authHeader", "Lzo/h;", "productionEndpoint", "", "requestCount", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$UploadUrlRequest;", "Lcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$UploadUrlResponse;", "d", "(Ljava/lang/String;Lzo/h;ILcom/withpersona/sdk2/inquiry/internal/fallbackmode/FallbackModeService$UploadUrlRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "url", "Lokhttp3/RequestBody;", "body", "b", "(Ljava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "UploadUrlResponse", "UploadUrlRequest", "StatusRequest", "StatusResponse", "StaticTemplate", "SessionIdRequest", "SessionIdResponse", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface FallbackModeService {
 
@@ -21,55 +21,55 @@ public interface FallbackModeService {
     public static final class SessionIdRequest {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18798a;
+        private final String f18938a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f18799b;
+        private final String f18939b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f18800c;
+        private final String f18940c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f18801d;
+        private final String f18941d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f18802e;
+        private final String f18942e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f18803f;
+        private final String f18943f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final String f18804g;
+        private final String f18944g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final InquiryFieldMap f18805h;
+        private final InquiryFieldMap f18945h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f18806i;
+        private final String f18946i;
 
         public SessionIdRequest(@com.squareup.moshi.g(name = "inquiry-template-id") @NotNull String inquiryTemplateId, @com.squareup.moshi.g(name = "inquiry-template-version-id") String str, @com.squareup.moshi.g(name = "inquiry-id") String str2, @com.squareup.moshi.g(name = "reference-id") String str3, @com.squareup.moshi.g(name = "account-id") String str4, String str5, @com.squareup.moshi.g(name = "environment-id") String str6, InquiryFieldMap inquiryFieldMap, @com.squareup.moshi.g(name = "theme-set-id") String str7) {
             Intrinsics.checkNotNullParameter(inquiryTemplateId, "inquiryTemplateId");
-            this.f18798a = inquiryTemplateId;
-            this.f18799b = str;
-            this.f18800c = str2;
-            this.f18801d = str3;
-            this.f18802e = str4;
-            this.f18803f = str5;
-            this.f18804g = str6;
-            this.f18805h = inquiryFieldMap;
-            this.f18806i = str7;
+            this.f18938a = inquiryTemplateId;
+            this.f18939b = str;
+            this.f18940c = str2;
+            this.f18941d = str3;
+            this.f18942e = str4;
+            this.f18943f = str5;
+            this.f18944g = str6;
+            this.f18945h = inquiryFieldMap;
+            this.f18946i = str7;
         }
 
         public final String a() {
-            return this.f18802e;
+            return this.f18942e;
         }
 
         public final String b() {
-            return this.f18803f;
+            return this.f18943f;
         }
 
         public final String c() {
-            return this.f18804g;
+            return this.f18944g;
         }
 
         @NotNull
@@ -79,11 +79,11 @@ public interface FallbackModeService {
         }
 
         public final InquiryFieldMap d() {
-            return this.f18805h;
+            return this.f18945h;
         }
 
         public final String e() {
-            return this.f18800c;
+            return this.f18940c;
         }
 
         public boolean equals(Object obj) {
@@ -92,57 +92,57 @@ public interface FallbackModeService {
             }
             if (obj instanceof SessionIdRequest) {
                 SessionIdRequest sessionIdRequest = (SessionIdRequest) obj;
-                return Intrinsics.areEqual(this.f18798a, sessionIdRequest.f18798a) && Intrinsics.areEqual(this.f18799b, sessionIdRequest.f18799b) && Intrinsics.areEqual(this.f18800c, sessionIdRequest.f18800c) && Intrinsics.areEqual(this.f18801d, sessionIdRequest.f18801d) && Intrinsics.areEqual(this.f18802e, sessionIdRequest.f18802e) && Intrinsics.areEqual(this.f18803f, sessionIdRequest.f18803f) && Intrinsics.areEqual(this.f18804g, sessionIdRequest.f18804g) && Intrinsics.areEqual(this.f18805h, sessionIdRequest.f18805h) && Intrinsics.areEqual(this.f18806i, sessionIdRequest.f18806i);
+                return Intrinsics.areEqual(this.f18938a, sessionIdRequest.f18938a) && Intrinsics.areEqual(this.f18939b, sessionIdRequest.f18939b) && Intrinsics.areEqual(this.f18940c, sessionIdRequest.f18940c) && Intrinsics.areEqual(this.f18941d, sessionIdRequest.f18941d) && Intrinsics.areEqual(this.f18942e, sessionIdRequest.f18942e) && Intrinsics.areEqual(this.f18943f, sessionIdRequest.f18943f) && Intrinsics.areEqual(this.f18944g, sessionIdRequest.f18944g) && Intrinsics.areEqual(this.f18945h, sessionIdRequest.f18945h) && Intrinsics.areEqual(this.f18946i, sessionIdRequest.f18946i);
             }
             return false;
         }
 
         public final String f() {
-            return this.f18798a;
+            return this.f18938a;
         }
 
         public final String g() {
-            return this.f18799b;
+            return this.f18939b;
         }
 
         public final String h() {
-            return this.f18801d;
+            return this.f18941d;
         }
 
         public int hashCode() {
-            int hashCode = this.f18798a.hashCode() * 31;
-            String str = this.f18799b;
+            int hashCode = this.f18938a.hashCode() * 31;
+            String str = this.f18939b;
             int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
-            String str2 = this.f18800c;
+            String str2 = this.f18940c;
             int hashCode3 = (hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31;
-            String str3 = this.f18801d;
+            String str3 = this.f18941d;
             int hashCode4 = (hashCode3 + (str3 == null ? 0 : str3.hashCode())) * 31;
-            String str4 = this.f18802e;
+            String str4 = this.f18942e;
             int hashCode5 = (hashCode4 + (str4 == null ? 0 : str4.hashCode())) * 31;
-            String str5 = this.f18803f;
+            String str5 = this.f18943f;
             int hashCode6 = (hashCode5 + (str5 == null ? 0 : str5.hashCode())) * 31;
-            String str6 = this.f18804g;
+            String str6 = this.f18944g;
             int hashCode7 = (hashCode6 + (str6 == null ? 0 : str6.hashCode())) * 31;
-            InquiryFieldMap inquiryFieldMap = this.f18805h;
+            InquiryFieldMap inquiryFieldMap = this.f18945h;
             int hashCode8 = (hashCode7 + (inquiryFieldMap == null ? 0 : inquiryFieldMap.hashCode())) * 31;
-            String str7 = this.f18806i;
+            String str7 = this.f18946i;
             return hashCode8 + (str7 != null ? str7.hashCode() : 0);
         }
 
         public final String i() {
-            return this.f18806i;
+            return this.f18946i;
         }
 
         public String toString() {
-            String str = this.f18798a;
-            String str2 = this.f18799b;
-            String str3 = this.f18800c;
-            String str4 = this.f18801d;
-            String str5 = this.f18802e;
-            String str6 = this.f18803f;
-            String str7 = this.f18804g;
-            InquiryFieldMap inquiryFieldMap = this.f18805h;
-            String str8 = this.f18806i;
+            String str = this.f18938a;
+            String str2 = this.f18939b;
+            String str3 = this.f18940c;
+            String str4 = this.f18941d;
+            String str5 = this.f18942e;
+            String str6 = this.f18943f;
+            String str7 = this.f18944g;
+            InquiryFieldMap inquiryFieldMap = this.f18945h;
+            String str8 = this.f18946i;
             return "SessionIdRequest(inquiryTemplateId=" + str + ", inquiryTemplateVersion=" + str2 + ", inquiryId=" + str3 + ", referenceId=" + str4 + ", accountId=" + str5 + ", environment=" + str6 + ", environmentId=" + str7 + ", fields=" + inquiryFieldMap + ", themeSetId=" + str8 + ")";
         }
     }
@@ -153,30 +153,30 @@ public interface FallbackModeService {
     public static final class SessionIdResponse {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18807a;
+        private final String f18947a;
 
         public SessionIdResponse(String token) {
             Intrinsics.checkNotNullParameter(token, "token");
-            this.f18807a = token;
+            this.f18947a = token;
         }
 
         public final String a() {
-            return this.f18807a;
+            return this.f18947a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof SessionIdResponse) && Intrinsics.areEqual(this.f18807a, ((SessionIdResponse) obj).f18807a);
+            return (obj instanceof SessionIdResponse) && Intrinsics.areEqual(this.f18947a, ((SessionIdResponse) obj).f18947a);
         }
 
         public int hashCode() {
-            return this.f18807a.hashCode();
+            return this.f18947a.hashCode();
         }
 
         public String toString() {
-            String str = this.f18807a;
+            String str = this.f18947a;
             return "SessionIdResponse(token=" + str + ")";
         }
     }
@@ -187,30 +187,30 @@ public interface FallbackModeService {
     public static final class StaticTemplate {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f18808a;
+        private final List f18948a;
 
         public StaticTemplate(List steps) {
             Intrinsics.checkNotNullParameter(steps, "steps");
-            this.f18808a = steps;
+            this.f18948a = steps;
         }
 
         public final List a() {
-            return this.f18808a;
+            return this.f18948a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof StaticTemplate) && Intrinsics.areEqual(this.f18808a, ((StaticTemplate) obj).f18808a);
+            return (obj instanceof StaticTemplate) && Intrinsics.areEqual(this.f18948a, ((StaticTemplate) obj).f18948a);
         }
 
         public int hashCode() {
-            return this.f18808a.hashCode();
+            return this.f18948a.hashCode();
         }
 
         public String toString() {
-            List list = this.f18808a;
+            List list = this.f18948a;
             return "StaticTemplate(steps=" + list + ")";
         }
     }
@@ -221,14 +221,14 @@ public interface FallbackModeService {
     public static final class StatusRequest {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18809a;
+        private final String f18949a;
 
         public StatusRequest(@com.squareup.moshi.g(name = "inquiry-template-id") String str) {
-            this.f18809a = str;
+            this.f18949a = str;
         }
 
         public final String a() {
-            return this.f18809a;
+            return this.f18949a;
         }
 
         @NotNull
@@ -240,11 +240,11 @@ public interface FallbackModeService {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof StatusRequest) && Intrinsics.areEqual(this.f18809a, ((StatusRequest) obj).f18809a);
+            return (obj instanceof StatusRequest) && Intrinsics.areEqual(this.f18949a, ((StatusRequest) obj).f18949a);
         }
 
         public int hashCode() {
-            String str = this.f18809a;
+            String str = this.f18949a;
             if (str == null) {
                 return 0;
             }
@@ -252,7 +252,7 @@ public interface FallbackModeService {
         }
 
         public String toString() {
-            String str = this.f18809a;
+            String str = this.f18949a;
             return "StatusRequest(inquiryTemplateId=" + str + ")";
         }
     }
@@ -263,14 +263,14 @@ public interface FallbackModeService {
     public static final class StatusResponse {
 
         /* renamed from: a  reason: collision with root package name */
-        private final StaticTemplate f18810a;
+        private final StaticTemplate f18950a;
 
         public StatusResponse(@com.squareup.moshi.g(name = "static-inquiry-template") StaticTemplate staticTemplate) {
-            this.f18810a = staticTemplate;
+            this.f18950a = staticTemplate;
         }
 
         public final StaticTemplate a() {
-            return this.f18810a;
+            return this.f18950a;
         }
 
         @NotNull
@@ -282,11 +282,11 @@ public interface FallbackModeService {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof StatusResponse) && Intrinsics.areEqual(this.f18810a, ((StatusResponse) obj).f18810a);
+            return (obj instanceof StatusResponse) && Intrinsics.areEqual(this.f18950a, ((StatusResponse) obj).f18950a);
         }
 
         public int hashCode() {
-            StaticTemplate staticTemplate = this.f18810a;
+            StaticTemplate staticTemplate = this.f18950a;
             if (staticTemplate == null) {
                 return 0;
             }
@@ -294,7 +294,7 @@ public interface FallbackModeService {
         }
 
         public String toString() {
-            StaticTemplate staticTemplate = this.f18810a;
+            StaticTemplate staticTemplate = this.f18950a;
             return "StatusResponse(staticInquiryTemplate=" + staticTemplate + ")";
         }
     }
@@ -305,23 +305,23 @@ public interface FallbackModeService {
     public static final class UploadUrlRequest {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f18811a;
+        private final long f18951a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f18812b;
+        private final String f18952b;
 
         public UploadUrlRequest(@com.squareup.moshi.g(name = "expected-content-length") long j10, @com.squareup.moshi.g(name = "expected-content-type") @NotNull String expectedContentType) {
             Intrinsics.checkNotNullParameter(expectedContentType, "expectedContentType");
-            this.f18811a = j10;
-            this.f18812b = expectedContentType;
+            this.f18951a = j10;
+            this.f18952b = expectedContentType;
         }
 
         public final long a() {
-            return this.f18811a;
+            return this.f18951a;
         }
 
         public final String b() {
-            return this.f18812b;
+            return this.f18952b;
         }
 
         @NotNull
@@ -336,18 +336,18 @@ public interface FallbackModeService {
             }
             if (obj instanceof UploadUrlRequest) {
                 UploadUrlRequest uploadUrlRequest = (UploadUrlRequest) obj;
-                return this.f18811a == uploadUrlRequest.f18811a && Intrinsics.areEqual(this.f18812b, uploadUrlRequest.f18812b);
+                return this.f18951a == uploadUrlRequest.f18951a && Intrinsics.areEqual(this.f18952b, uploadUrlRequest.f18952b);
             }
             return false;
         }
 
         public int hashCode() {
-            return (Long.hashCode(this.f18811a) * 31) + this.f18812b.hashCode();
+            return (Long.hashCode(this.f18951a) * 31) + this.f18952b.hashCode();
         }
 
         public String toString() {
-            long j10 = this.f18811a;
-            String str = this.f18812b;
+            long j10 = this.f18951a;
+            String str = this.f18952b;
             return "UploadUrlRequest(expectedContentLength=" + j10 + ", expectedContentType=" + str + ")";
         }
     }
@@ -358,46 +358,46 @@ public interface FallbackModeService {
     public static final class UploadUrlResponse {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18813a;
+        private final String f18953a;
 
         public UploadUrlResponse(String location) {
             Intrinsics.checkNotNullParameter(location, "location");
-            this.f18813a = location;
+            this.f18953a = location;
         }
 
         public final String a() {
-            return this.f18813a;
+            return this.f18953a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof UploadUrlResponse) && Intrinsics.areEqual(this.f18813a, ((UploadUrlResponse) obj).f18813a);
+            return (obj instanceof UploadUrlResponse) && Intrinsics.areEqual(this.f18953a, ((UploadUrlResponse) obj).f18953a);
         }
 
         public int hashCode() {
-            return this.f18813a.hashCode();
+            return this.f18953a.hashCode();
         }
 
         public String toString() {
-            String str = this.f18813a;
+            String str = this.f18953a;
             return "UploadUrlResponse(location=" + str + ")";
         }
     }
 
     @k({"Content-Type: application/json"})
-    @o("/part")
-    Object a(@xv.i("Authorization") @NotNull String str, @xv.i("Persona-Fallback-Production-Endpoint") @NotNull yo.h hVar, @xv.i("Persona-Fallback-Request-Count") int i10, @xv.a @NotNull UploadUrlRequest uploadUrlRequest, @NotNull Continuation<? super z<UploadUrlResponse>> continuation);
-
-    @k({"Content-Type: application/json"})
     @o("/template")
-    Object b(@xv.i("Authorization") String str, @xv.a @NotNull StatusRequest statusRequest, @NotNull Continuation<? super z<StatusResponse>> continuation);
+    Object a(@yv.i("Authorization") String str, @NotNull @yv.a StatusRequest statusRequest, @NotNull Continuation<? super z<StatusResponse>> continuation);
 
     @o
-    Object c(@y @NotNull String str, @xv.a @NotNull RequestBody requestBody, @NotNull Continuation<? super z<Object>> continuation);
+    Object b(@NotNull @y String str, @NotNull @yv.a RequestBody requestBody, @NotNull Continuation<? super z<Object>> continuation);
 
     @k({"Content-Type: application/json"})
     @o("/session")
-    Object d(@xv.a @NotNull SessionIdRequest sessionIdRequest, @NotNull Continuation<? super z<SessionIdResponse>> continuation);
+    Object c(@NotNull @yv.a SessionIdRequest sessionIdRequest, @NotNull Continuation<? super z<SessionIdResponse>> continuation);
+
+    @k({"Content-Type: application/json"})
+    @o("/part")
+    Object d(@NotNull @yv.i("Authorization") String str, @NotNull @yv.i("Persona-Fallback-Production-Endpoint") zo.h hVar, @yv.i("Persona-Fallback-Request-Count") int i10, @NotNull @yv.a UploadUrlRequest uploadUrlRequest, @NotNull Continuation<? super z<UploadUrlResponse>> continuation);
 }

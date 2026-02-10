@@ -1,63 +1,39 @@
 package vu;
 
+import cw.a;
 import java.util.List;
 import java.util.Map;
-import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-import vu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements su.a, d {
+public interface a extends cw.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f53038a = new a();
-
-    private a() {
-    }
-
-    @Override // uu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return d.a.f(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // uu.a
-    public uu.b c(List list, Object obj, h hVar) {
-        return d.a.c(this, list, obj, hVar);
-    }
-
-    @Override // vu.d
-    public Object d(c data, h evaluator) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        for (Object obj : data.b()) {
-            if (!f53038a.i(evaluator.a(data.a(), obj))) {
-                return data.c();
-            }
+    /* renamed from: vu.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0728a {
+        public static b a(a aVar, List expressionValues, Object obj, h evaluator) {
+            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
+            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+            List f10 = aVar.f(expressionValues, obj, evaluator);
+            Map a10 = dw.c.a(expressionValues);
+            return new b(f10, a10, aVar.a(a10, expressionValues));
         }
-        return Boolean.TRUE;
+
+        public static Object b(a aVar, Map map, List expressionValues) {
+            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
+            if (map == null) {
+                return dw.c.b(expressionValues);
+            }
+            return null;
+        }
+
+        public static List c(a aVar, List expression, Object obj, h evaluator) {
+            Intrinsics.checkNotNullParameter(expression, "expression");
+            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+            return a.C0299a.a(aVar, expression, obj, evaluator);
+        }
     }
 
-    @Override // su.a
-    public Object e(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return g(obj, obj2, evaluator);
-    }
+    Object a(Map map, List list);
 
-    @Override // bw.a
-    public List f(List list, Object obj, h hVar) {
-        return d.a.h(this, list, obj, hVar);
-    }
-
-    public Object g(Object obj, Object obj2, h hVar) {
-        return d.a.b(this, obj, obj2, hVar);
-    }
-
-    @Override // uu.a
-    /* renamed from: h */
-    public Boolean a(Map map, List list) {
-        return d.a.e(this, map, list);
-    }
-
-    public boolean i(Object obj) {
-        return d.a.i(this, obj);
-    }
+    b c(List list, Object obj, h hVar);
 }

@@ -2,7 +2,7 @@ package com.google.android.gms.internal.gtm;
 
 import android.content.SharedPreferences;
 import com.google.android.gms.common.util.VisibleForTesting;
-import gf.q;
+import hf.q;
 import java.util.UUID;
 import kotlin.jvm.internal.LongCompanionObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */

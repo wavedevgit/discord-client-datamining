@@ -1,83 +1,56 @@
 package im;
 
-import android.util.Log;
-import com.facebook.react.bridge.Promise;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import com.facebook.react.uimanager.events.RCTEventEmitter;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class h {
-
-    /* renamed from: a  reason: collision with root package name */
-    private Promise f26885a;
+public final class h extends Event {
 
     /* renamed from: b  reason: collision with root package name */
-    private String f26886b;
+    public static final a f27037b = new a(null);
 
-    /* renamed from: c  reason: collision with root package name */
-    private final String f26887c;
+    /* renamed from: a  reason: collision with root package name */
+    private final WritableMap f27038a;
 
-    public h(String str) {
-        this.f26887c = str;
-    }
-
-    private void f(Promise promise, String str) {
-        promise.reject("ASYNC_OP_IN_PROGRESS", "Warning: previous promise did not settle and you attempted to overwrite it. You've called \"" + str + "\" while \"" + a() + "\" was already in progress and has not completed yet.");
-    }
-
-    private void g() {
-        this.f26886b = null;
-        this.f26885a = null;
-    }
-
-    public String a() {
-        return this.f26886b;
-    }
-
-    public void b(Exception exc) {
-        String str;
-        if (exc.getLocalizedMessage() != null) {
-            str = exc.getLocalizedMessage();
-        } else if (exc.getMessage() != null) {
-            str = exc.getMessage();
-        } else {
-            str = "unknown error";
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        d(this.f26886b, str, exc);
-    }
 
-    public void c(String str, String str2) {
-        d(str, str2, null);
-    }
-
-    public void d(String str, String str2, Exception exc) {
-        Promise promise = this.f26885a;
-        if (promise == null) {
-            Log.e(this.f26887c, "cannot reject promise because it's null");
-            return;
+        private a() {
         }
-        g();
-        promise.reject(str, str2, exc);
     }
 
-    public void e() {
-        c("OPERATION_CANCELED", "user canceled the document picker");
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public h(int i10, WritableMap mData) {
+        super(i10);
+        Intrinsics.checkNotNullParameter(mData, "mData");
+        this.f27038a = mData;
+        mData.putString("navigationType", "other");
+        mData.putBoolean("isTopFrame", true);
     }
 
-    public void h(Object obj) {
-        Promise promise = this.f26885a;
-        if (promise == null) {
-            Log.e(this.f26887c, "cannot resolve promise because it's null");
-            return;
-        }
-        g();
-        promise.resolve(obj);
+    @Override // com.facebook.react.uimanager.events.Event
+    public boolean canCoalesce() {
+        return false;
     }
 
-    public boolean i(Promise promise, String str) {
-        if (this.f26885a != null) {
-            f(promise, str);
-            return false;
-        }
-        this.f26885a = promise;
-        this.f26886b = str;
-        return true;
+    @Override // com.facebook.react.uimanager.events.Event
+    public void dispatch(RCTEventEmitter rctEventEmitter) {
+        Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
+        rctEventEmitter.receiveEvent(getViewTag(), "topShouldStartLoadWithRequest", this.f27038a);
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topShouldStartLoadWithRequest";
     }
 }

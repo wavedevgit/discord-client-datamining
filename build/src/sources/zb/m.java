@@ -1,39 +1,52 @@
 package zb;
 
-import java.util.concurrent.Executor;
+import java.util.List;
+import zb.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-class m implements Executor {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Executor f56141d;
+public abstract class m {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    static class a implements Runnable {
+    public static abstract class a {
+        public abstract m a();
 
-        /* renamed from: d  reason: collision with root package name */
-        private final Runnable f56142d;
+        public abstract a b(k kVar);
 
-        a(Runnable runnable) {
-            this.f56142d = runnable;
+        public abstract a c(List list);
+
+        abstract a d(Integer num);
+
+        abstract a e(String str);
+
+        public abstract a f(p pVar);
+
+        public abstract a g(long j10);
+
+        public abstract a h(long j10);
+
+        public a i(int i10) {
+            return d(Integer.valueOf(i10));
         }
 
-        @Override // java.lang.Runnable
-        public void run() {
-            try {
-                this.f56142d.run();
-            } catch (Exception e10) {
-                dc.a.d("Executor", "Background execution failure.", e10);
-            }
+        public a j(String str) {
+            return e(str);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public m(Executor executor) {
-        this.f56141d = executor;
+    public static a a() {
+        return new g.b();
     }
 
-    @Override // java.util.concurrent.Executor
-    public void execute(Runnable runnable) {
-        this.f56141d.execute(new a(runnable));
-    }
+    public abstract k b();
+
+    public abstract List c();
+
+    public abstract Integer d();
+
+    public abstract String e();
+
+    public abstract p f();
+
+    public abstract long g();
+
+    public abstract long h();
 }

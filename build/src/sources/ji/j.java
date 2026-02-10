@@ -1,10 +1,15 @@
 package ji;
 
-import java.io.File;
+import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class j implements k {
-    @Override // ji.k
-    public final boolean a(Object obj, File file, File file2) {
-        return new File((String) d0.g(obj.getClass(), "optimizedPathFor", String.class, File.class, file, File.class, file2)).exists();
+public abstract class j {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final AtomicReference f30185a = new AtomicReference(null);
+
+    public static void a(i iVar) {
+        AtomicReference atomicReference = f30185a;
+        while (!p0.d.a(atomicReference, null, iVar) && atomicReference.get() == null) {
+        }
     }
 }

@@ -39,129 +39,129 @@ public final class k1 {
     public static final k1 Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    public static final k1 f14227a0;
+    public static final k1 f14367a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    public static final k1 f14228b0;
+    public static final k1 f14368b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    public static final k1 f14229c0;
+    public static final k1 f14369c0;
 
     /* renamed from: d0  reason: collision with root package name */
-    public static final k1 f14230d0;
+    public static final k1 f14370d0;
 
     /* renamed from: e0  reason: collision with root package name */
-    public static final k1 f14231e0;
+    public static final k1 f14371e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    public static final k1 f14232f0;
+    public static final k1 f14372f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    public static final k1 f14233g0;
+    public static final k1 f14373g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    public static final k1 f14234h0;
+    public static final k1 f14374h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    public static final k1 f14235i0;
+    public static final k1 f14375i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    public static final k1 f14236j0;
+    public static final k1 f14376j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    public static final k1 f14237k0;
+    public static final k1 f14377k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    public static final k1 f14238l0;
+    public static final k1 f14378l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    public static final k1 f14239m0;
+    public static final k1 f14379m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private static final k1[] f14240n0;
+    private static final k1[] f14380n0;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final k1 f14241o;
+    public static final k1 f14381o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private static final /* synthetic */ k1[] f14242o0;
+    private static final /* synthetic */ k1[] f14382o0;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final k1 f14243p;
+    public static final k1 f14383p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final k1 f14244q;
+    public static final k1 f14384q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final k1 f14245r;
+    public static final k1 f14385r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final k1 f14246s;
+    public static final k1 f14386s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final k1 f14247t;
+    public static final k1 f14387t;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final k1 f14248u;
+    public static final k1 f14388u;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final k1 f14249v;
+    public static final k1 f14389v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final k1 f14250w;
+    public static final k1 f14390w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final k1 f14251x;
+    public static final k1 f14391x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final k1 f14252y;
+    public static final k1 f14392y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final k1 f14253z;
+    public static final k1 f14393z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b2 f14254d;
+    private final b2 f14394d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f14255e;
+    private final int f14395e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Class f14256i;
+    private final Class f14396i;
 
     static {
-        b2 b2Var = b2.f14144s;
+        b2 b2Var = b2.f14284s;
         k1 k1Var = new k1("DOUBLE", 0, 0, 1, b2Var);
-        f14241o = k1Var;
-        b2 b2Var2 = b2.f14143r;
+        f14381o = k1Var;
+        b2 b2Var2 = b2.f14283r;
         k1 k1Var2 = new k1("FLOAT", 1, 1, 1, b2Var2);
-        f14243p = k1Var2;
-        b2 b2Var3 = b2.f14142q;
+        f14383p = k1Var2;
+        b2 b2Var3 = b2.f14282q;
         k1 k1Var3 = new k1("INT64", 2, 2, 1, b2Var3);
-        f14244q = k1Var3;
+        f14384q = k1Var3;
         k1 k1Var4 = new k1("UINT64", 3, 3, 1, b2Var3);
-        f14245r = k1Var4;
-        b2 b2Var4 = b2.f14141p;
+        f14385r = k1Var4;
+        b2 b2Var4 = b2.f14281p;
         k1 k1Var5 = new k1("INT32", 4, 4, 1, b2Var4);
-        f14246s = k1Var5;
+        f14386s = k1Var5;
         k1 k1Var6 = new k1("FIXED64", 5, 5, 1, b2Var3);
-        f14247t = k1Var6;
+        f14387t = k1Var6;
         k1 k1Var7 = new k1("FIXED32", 6, 6, 1, b2Var4);
-        f14248u = k1Var7;
-        b2 b2Var5 = b2.f14145t;
+        f14388u = k1Var7;
+        b2 b2Var5 = b2.f14285t;
         k1 k1Var8 = new k1("BOOL", 7, 7, 1, b2Var5);
-        f14249v = k1Var8;
-        b2 b2Var6 = b2.f14146u;
+        f14389v = k1Var8;
+        b2 b2Var6 = b2.f14286u;
         k1 k1Var9 = new k1("STRING", 8, 8, 1, b2Var6);
-        f14250w = k1Var9;
-        b2 b2Var7 = b2.f14149x;
+        f14390w = k1Var9;
+        b2 b2Var7 = b2.f14289x;
         k1 k1Var10 = new k1("MESSAGE", 9, 9, 1, b2Var7);
-        f14251x = k1Var10;
-        b2 b2Var8 = b2.f14147v;
+        f14391x = k1Var10;
+        b2 b2Var8 = b2.f14287v;
         k1 k1Var11 = new k1("BYTES", 10, 10, 1, b2Var8);
-        f14252y = k1Var11;
+        f14392y = k1Var11;
         k1 k1Var12 = new k1("UINT32", 11, 11, 1, b2Var4);
-        f14253z = k1Var12;
-        b2 b2Var9 = b2.f14148w;
+        f14393z = k1Var12;
+        b2 b2Var9 = b2.f14288w;
         k1 k1Var13 = new k1("ENUM", 12, 12, 1, b2Var9);
         A = k1Var13;
         k1 k1Var14 = new k1("SFIXED32", 13, 13, 1, b2Var4);
@@ -215,63 +215,63 @@ public final class k1 {
         k1 k1Var38 = new k1("INT64_LIST_PACKED", 37, 37, 3, b2Var3);
         Z = k1Var38;
         k1 k1Var39 = new k1("UINT64_LIST_PACKED", 38, 38, 3, b2Var3);
-        f14227a0 = k1Var39;
+        f14367a0 = k1Var39;
         k1 k1Var40 = new k1("INT32_LIST_PACKED", 39, 39, 3, b2Var4);
-        f14228b0 = k1Var40;
+        f14368b0 = k1Var40;
         k1 k1Var41 = new k1("FIXED64_LIST_PACKED", 40, 40, 3, b2Var3);
-        f14229c0 = k1Var41;
+        f14369c0 = k1Var41;
         k1 k1Var42 = new k1("FIXED32_LIST_PACKED", 41, 41, 3, b2Var4);
-        f14230d0 = k1Var42;
+        f14370d0 = k1Var42;
         k1 k1Var43 = new k1("BOOL_LIST_PACKED", 42, 42, 3, b2Var5);
-        f14231e0 = k1Var43;
+        f14371e0 = k1Var43;
         k1 k1Var44 = new k1("UINT32_LIST_PACKED", 43, 43, 3, b2Var4);
-        f14232f0 = k1Var44;
+        f14372f0 = k1Var44;
         k1 k1Var45 = new k1("ENUM_LIST_PACKED", 44, 44, 3, b2Var9);
-        f14233g0 = k1Var45;
+        f14373g0 = k1Var45;
         k1 k1Var46 = new k1("SFIXED32_LIST_PACKED", 45, 45, 3, b2Var4);
-        f14234h0 = k1Var46;
+        f14374h0 = k1Var46;
         k1 k1Var47 = new k1("SFIXED64_LIST_PACKED", 46, 46, 3, b2Var3);
-        f14235i0 = k1Var47;
+        f14375i0 = k1Var47;
         k1 k1Var48 = new k1("SINT32_LIST_PACKED", 47, 47, 3, b2Var4);
-        f14236j0 = k1Var48;
+        f14376j0 = k1Var48;
         k1 k1Var49 = new k1("SINT64_LIST_PACKED", 48, 48, 3, b2Var3);
-        f14237k0 = k1Var49;
+        f14377k0 = k1Var49;
         k1 k1Var50 = new k1("GROUP_LIST", 49, 49, 2, b2Var7);
-        f14238l0 = k1Var50;
-        k1 k1Var51 = new k1("MAP", 50, 50, 4, b2.f14140o);
-        f14239m0 = k1Var51;
-        f14242o0 = new k1[]{k1Var, k1Var2, k1Var3, k1Var4, k1Var5, k1Var6, k1Var7, k1Var8, k1Var9, k1Var10, k1Var11, k1Var12, k1Var13, k1Var14, k1Var15, k1Var16, k1Var17, k1Var18, k1Var19, k1Var20, k1Var21, k1Var22, k1Var23, k1Var24, k1Var25, k1Var26, k1Var27, k1Var28, k1Var29, k1Var30, k1Var31, k1Var32, k1Var33, k1Var34, k1Var35, k1Var36, k1Var37, k1Var38, k1Var39, k1Var40, k1Var41, k1Var42, k1Var43, k1Var44, k1Var45, k1Var46, k1Var47, k1Var48, k1Var49, k1Var50, k1Var51};
+        f14378l0 = k1Var50;
+        k1 k1Var51 = new k1("MAP", 50, 50, 4, b2.f14280o);
+        f14379m0 = k1Var51;
+        f14382o0 = new k1[]{k1Var, k1Var2, k1Var3, k1Var4, k1Var5, k1Var6, k1Var7, k1Var8, k1Var9, k1Var10, k1Var11, k1Var12, k1Var13, k1Var14, k1Var15, k1Var16, k1Var17, k1Var18, k1Var19, k1Var20, k1Var21, k1Var22, k1Var23, k1Var24, k1Var25, k1Var26, k1Var27, k1Var28, k1Var29, k1Var30, k1Var31, k1Var32, k1Var33, k1Var34, k1Var35, k1Var36, k1Var37, k1Var38, k1Var39, k1Var40, k1Var41, k1Var42, k1Var43, k1Var44, k1Var45, k1Var46, k1Var47, k1Var48, k1Var49, k1Var50, k1Var51};
         k1[] values = values();
-        f14240n0 = new k1[values.length];
+        f14380n0 = new k1[values.length];
         for (k1 k1Var52 : values) {
-            f14240n0[k1Var52.f14255e] = k1Var52;
+            f14380n0[k1Var52.f14395e] = k1Var52;
         }
     }
 
     private k1(String str, int i10, int i11, int i12, b2 b2Var) {
-        this.f14255e = i11;
-        this.f14254d = b2Var;
+        this.f14395e = i11;
+        this.f14394d = b2Var;
         int i13 = i12 - 1;
         if (i13 != 1) {
             if (i13 != 3) {
-                this.f14256i = null;
+                this.f14396i = null;
             } else {
-                this.f14256i = b2Var.a();
+                this.f14396i = b2Var.a();
             }
         } else {
-            this.f14256i = b2Var.a();
+            this.f14396i = b2Var.a();
         }
         if (i12 == 1) {
-            b2 b2Var2 = b2.f14140o;
+            b2 b2Var2 = b2.f14280o;
             b2Var.ordinal();
         }
     }
 
     public static k1[] values() {
-        return (k1[]) f14242o0.clone();
+        return (k1[]) f14382o0.clone();
     }
 
     public final int zza() {
-        return this.f14255e;
+        return this.f14395e;
     }
 }

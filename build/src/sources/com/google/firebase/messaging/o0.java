@@ -7,25 +7,25 @@ import android.os.Parcelable;
 public class o0 implements Parcelable.Creator {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(RemoteMessage remoteMessage, Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.e(parcel, 2, remoteMessage.f16385d, false);
-        hf.c.b(parcel, a10);
+        int a10 = jf.c.a(parcel);
+        jf.c.e(parcel, 2, remoteMessage.f16525d, false);
+        jf.c.b(parcel, a10);
     }
 
     @Override // android.os.Parcelable.Creator
     /* renamed from: a */
     public RemoteMessage createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
+        int A = jf.b.A(parcel);
         Bundle bundle = null;
         while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            if (hf.b.l(r10) != 2) {
-                hf.b.z(parcel, r10);
+            int r10 = jf.b.r(parcel);
+            if (jf.b.l(r10) != 2) {
+                jf.b.z(parcel, r10);
             } else {
-                bundle = hf.b.a(parcel, r10);
+                bundle = jf.b.a(parcel, r10);
             }
         }
-        hf.b.k(parcel, A);
+        jf.b.k(parcel, A);
         return new RemoteMessage(bundle);
     }
 

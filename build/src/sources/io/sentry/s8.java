@@ -3,42 +3,42 @@ package io.sentry;
 public final class s8 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Boolean f28903a;
+    private final Boolean f29103a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Double f28904b;
+    private final Double f29104b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Double f28905c;
+    private final Double f29105c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Boolean f28906d;
+    private final Boolean f29106d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Double f28907e;
+    private final Double f29107e;
 
     public s8(Boolean bool) {
         this(bool, null);
     }
 
     public Double a() {
-        return this.f28907e;
+        return this.f29107e;
     }
 
     public Boolean b() {
-        return this.f28906d;
+        return this.f29106d;
     }
 
     public Double c() {
-        return this.f28905c;
+        return this.f29105c;
     }
 
     public Double d() {
-        return this.f28904b;
+        return this.f29104b;
     }
 
     public Boolean e() {
-        return this.f28903a;
+        return this.f29103a;
     }
 
     public s8(Boolean bool, Double d10) {
@@ -54,10 +54,10 @@ public final class s8 {
     }
 
     public s8(Boolean bool, Double d10, Double d11, Boolean bool2, Double d12) {
-        this.f28903a = bool;
-        this.f28904b = d10;
-        this.f28905c = d11;
-        this.f28906d = Boolean.valueOf(bool.booleanValue() && bool2.booleanValue());
-        this.f28907e = d12;
+        this.f29103a = bool;
+        this.f29104b = d10;
+        this.f29105c = d11;
+        this.f29106d = Boolean.valueOf(bool.booleanValue() && bool2.booleanValue());
+        this.f29107e = d12;
     }
 }

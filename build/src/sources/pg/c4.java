@@ -1,43 +1,50 @@
 package pg;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c4 implements yi.d {
+final class c4 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c4 f44014a = new c4();
+    static final c4 f43354a = new c4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44015b;
+    private static final zi.c f43355b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44016c;
+    private static final zi.c f43356c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44017d;
+    private static final zi.c f43357d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final zi.c f43358e;
 
     static {
-        c.b a10 = yi.c.a("logEventKey");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f44015b = a10.b(s1Var.b()).a();
-        c.b a11 = yi.c.a("eventCount");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f44016c = a11.b(s1Var2.b()).a();
-        c.b a12 = yi.c.a("inferenceDurationStats");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f44017d = a12.b(s1Var3.b()).a();
+        c.b a10 = zi.c.a("category");
+        f fVar = new f();
+        fVar.a(1);
+        f43355b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("classificationConfidence");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f43356c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("trackingId");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f43357d = a12.b(fVar3.b()).a();
+        c.b a13 = zi.c.a("labelCount");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f43358e = a13.b(fVar4.b()).a();
     }
 
     private c4() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
+        zi.e eVar = (zi.e) obj2;
         throw null;
     }
 }

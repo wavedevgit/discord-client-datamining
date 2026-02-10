@@ -93,7 +93,7 @@ public class DevServerHelper {
         static {
             BundleType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = xr.a.a($values);
+            $ENTRIES = yr.a.a($values);
         }
 
         private BundleType(String str, int i10, String str2) {
@@ -130,7 +130,7 @@ public class DevServerHelper {
         /* JADX INFO: Access modifiers changed from: private */
         public final String createResourceURL(String str, String str2) {
             if (StringsKt.P(str2, "/", false, 2, null)) {
-                p8.a.J(ReactConstants.TAG, "Resource path should not begin with `/`, removing it.");
+                q8.a.J(ReactConstants.TAG, "Resource path should not begin with `/`, removing it.");
                 str2 = str2.substring(1);
                 Intrinsics.checkNotNullExpressionValue(str2, "substring(...)");
             }
@@ -309,7 +309,7 @@ public class DevServerHelper {
         new AsyncTask<Void, Void, Void>() { // from class: com.facebook.react.devsupport.DevServerHelper$closeInspectorConnection$1
             /* JADX INFO: Access modifiers changed from: protected */
             @Override // android.os.AsyncTask
-            @qr.c
+            @rr.c
             public Void doInBackground(Void... params) {
                 IInspectorPackagerConnection iInspectorPackagerConnection;
                 Intrinsics.checkNotNullParameter(params, "params");
@@ -327,7 +327,7 @@ public class DevServerHelper {
         new AsyncTask<Void, Void, Void>() { // from class: com.facebook.react.devsupport.DevServerHelper$closePackagerConnection$1
             /* JADX INFO: Access modifiers changed from: protected */
             @Override // android.os.AsyncTask
-            @qr.c
+            @rr.c
             public Void doInBackground(Void... params) {
                 JSPackagerClient jSPackagerClient;
                 Intrinsics.checkNotNullParameter(params, "params");
@@ -361,8 +361,8 @@ public class DevServerHelper {
         try {
             Response execute = this.client.a(new Request.Builder().l(Companion.createResourceURL(this.packagerConnectionSettings.getDebugServerHost(), resourcePath)).b()).execute();
             if (execute.isSuccessful() && execute.a() != null) {
-                Sink c10 = qu.b.a().c(outputFile);
-                qu.a a10 = qu.b.a();
+                Sink c10 = ru.b.a().c(outputFile);
+                ru.a a10 = ru.b.a();
                 ResponseBody a11 = execute.a();
                 if (a11 != null) {
                     bufferedSource = a11.source();
@@ -370,15 +370,15 @@ public class DevServerHelper {
                     bufferedSource = null;
                 }
                 Intrinsics.checkNotNull(bufferedSource);
-                a10.b(bufferedSource).e2(c10);
-                bs.c.a(c10, null);
-                bs.c.a(execute, null);
+                a10.b(bufferedSource).d2(c10);
+                cs.c.a(c10, null);
+                cs.c.a(execute, null);
                 return outputFile;
             }
-            bs.c.a(execute, null);
+            cs.c.a(execute, null);
             return null;
         } catch (Exception e10) {
-            p8.a.o(ReactConstants.TAG, "Failed to fetch resource synchronously - resourcePath: \"%s\", outputFile: \"%s\"", resourcePath, outputFile.getAbsolutePath(), e10);
+            q8.a.o(ReactConstants.TAG, "Failed to fetch resource synchronously - resourcePath: \"%s\", outputFile: \"%s\"", resourcePath, outputFile.getAbsolutePath(), e10);
             return null;
         }
     }
@@ -422,8 +422,8 @@ public class DevServerHelper {
         StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
         String format = String.format(Locale.US, "http://%s/open-debugger?device=%s", Arrays.copyOf(new Object[]{this.packagerConnectionSettings.getDebugServerHost(), Uri.encode(getInspectorDeviceId())}, 2));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
-        this.client.a(new Request.Builder().l(format).g("POST", RequestBody.Companion.d(null, "")).b()).J0(new bu.b() { // from class: com.facebook.react.devsupport.DevServerHelper$openDebugger$1
-            @Override // bu.b
+        this.client.a(new Request.Builder().l(format).g("POST", RequestBody.Companion.d(null, "")).b()).J0(new cu.b() { // from class: com.facebook.react.devsupport.DevServerHelper$openDebugger$1
+            @Override // cu.b
             public void onFailure(Call call, IOException e10) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(e10, "e");
@@ -435,7 +435,7 @@ public class DevServerHelper {
                 RNLog.w(reactContext2, str2);
             }
 
-            @Override // bu.b
+            @Override // cu.b
             public void onResponse(Call call, Response response) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(response, "response");
@@ -445,12 +445,12 @@ public class DevServerHelper {
 
     public final void openInspectorConnection() {
         if (this.inspectorPackagerConnection != null) {
-            p8.a.J(ReactConstants.TAG, "Inspector connection already open, nooping.");
+            q8.a.J(ReactConstants.TAG, "Inspector connection already open, nooping.");
         } else {
             new AsyncTask<Void, Void, Void>() { // from class: com.facebook.react.devsupport.DevServerHelper$openInspectorConnection$1
                 /* JADX INFO: Access modifiers changed from: protected */
                 @Override // android.os.AsyncTask
-                @qr.c
+                @rr.c
                 public Void doInBackground(Void... params) {
                     Context context;
                     String inspectorDeviceUrl;
@@ -459,7 +459,7 @@ public class DevServerHelper {
                     context = DevServerHelper.this.applicationContext;
                     String str2 = AndroidInfoHelpers.getInspectorHostMetadata(context).get("deviceName");
                     if (str2 == null) {
-                        p8.a.J(ReactConstants.TAG, "Could not get device name from Inspector Host Metadata.");
+                        q8.a.J(ReactConstants.TAG, "Could not get device name from Inspector Host Metadata.");
                         return null;
                     }
                     DevServerHelper devServerHelper = DevServerHelper.this;
@@ -477,12 +477,12 @@ public class DevServerHelper {
     public final void openPackagerConnection(final String str, @NotNull final PackagerCommandListener commandListener) {
         Intrinsics.checkNotNullParameter(commandListener, "commandListener");
         if (this.packagerClient != null) {
-            p8.a.J(ReactConstants.TAG, "Packager connection already open, nooping.");
+            q8.a.J(ReactConstants.TAG, "Packager connection already open, nooping.");
         } else {
             new AsyncTask<Void, Void, Void>() { // from class: com.facebook.react.devsupport.DevServerHelper$openPackagerConnection$1
                 /* JADX INFO: Access modifiers changed from: protected */
                 @Override // android.os.AsyncTask
-                @qr.c
+                @rr.c
                 public Void doInBackground(Void... backgroundParams) {
                     PackagerConnectionSettings packagerConnectionSettings;
                     Intrinsics.checkNotNullParameter(backgroundParams, "backgroundParams");

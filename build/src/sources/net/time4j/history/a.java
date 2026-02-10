@@ -5,27 +5,27 @@ import java.util.Arrays;
 public final class a {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f39408c;
+    private static final int[] f38500c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final h f39409d = h.i(j.AD, 8, 1, 1);
+    private static final h f38501d = h.i(j.AD, 8, 1, 1);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final h f39410e = h.i(j.BC, 45, 1, 1);
+    private static final h f38502e = h.i(j.BC, 45, 1, 1);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f39411f;
+    public static final a f38503f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f39412a;
+    private final int[] f38504a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f39413b;
+    private final b f38505b;
 
     /* renamed from: net.time4j.history.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    class C0540a implements b {
-        C0540a() {
+    class C0554a implements b {
+        C0554a() {
         }
 
         private int b(int i10, int i11) {
@@ -58,7 +58,7 @@ public final class a {
         }
 
         private boolean g(int i10) {
-            if (Arrays.binarySearch(a.this.f39412a, i10) >= 0) {
+            if (Arrays.binarySearch(a.this.f38504a, i10) >= 0) {
                 return true;
             }
             return false;
@@ -67,10 +67,10 @@ public final class a {
         @Override // net.time4j.history.b
         public long a(h hVar) {
             long j10;
-            if (hVar.compareTo(a.f39409d) >= 0) {
-                return c.f39416e.a(hVar);
+            if (hVar.compareTo(a.f38501d) >= 0) {
+                return c.f38508e.a(hVar);
             }
-            if (hVar.compareTo(a.f39410e) >= 0) {
+            if (hVar.compareTo(a.f38502e) >= 0) {
                 int c10 = c(hVar);
                 long j11 = -676021;
                 for (int i10 = 7; i10 >= c10; i10--) {
@@ -91,10 +91,10 @@ public final class a {
 
         @Override // net.time4j.history.b
         public int d(h hVar) {
-            if (hVar.compareTo(a.f39409d) >= 0) {
-                return c.f39416e.d(hVar);
+            if (hVar.compareTo(a.f38501d) >= 0) {
+                return c.f38508e.d(hVar);
             }
-            if (hVar.compareTo(a.f39410e) >= 0) {
+            if (hVar.compareTo(a.f38502e) >= 0) {
                 return b(c(hVar), hVar.f());
             }
             throw new IllegalArgumentException("Not valid before 45 BC: " + hVar);
@@ -106,7 +106,7 @@ public final class a {
             j jVar;
             long j12 = -676021;
             if (j10 >= -676021) {
-                return c.f39416e.e(j10);
+                return c.f38508e.e(j10);
             }
             int i10 = 7;
             while (i10 >= -44) {
@@ -146,7 +146,7 @@ public final class a {
             int c10;
             if (hVar != null && (c10 = c(hVar)) >= -44) {
                 if (c10 >= 8) {
-                    return c.f39416e.f(hVar);
+                    return c.f38508e.f(hVar);
                 }
                 if (hVar.d() <= b(c10, hVar.f())) {
                     return true;
@@ -158,8 +158,8 @@ public final class a {
 
     static {
         int[] iArr = {42, 39, 36, 33, 30, 27, 24, 21, 18, 15, 12, 9};
-        f39408c = iArr;
-        f39411f = new a(iArr);
+        f38500c = iArr;
+        f38503f = new a(iArr);
     }
 
     private a(int... iArr) {
@@ -175,7 +175,7 @@ public final class a {
             i11++;
         }
         Arrays.sort(iArr2);
-        this.f39412a = iArr2;
+        this.f38504a = iArr2;
         if (iArr2.length != 0) {
             int i12 = iArr2[0];
             if (i12 >= -44 && iArr2[iArr2.length - 1] < 8) {
@@ -188,7 +188,7 @@ public final class a {
                         throw new IllegalArgumentException("Contains duplicates: " + Arrays.toString(iArr));
                     }
                 }
-                this.f39413b = new C0540a();
+                this.f38505b = new C0554a();
                 return;
             }
             throw new IllegalArgumentException("Out of range: " + Arrays.toString(iArr));
@@ -197,49 +197,49 @@ public final class a {
     }
 
     public static a f(int... iArr) {
-        if (Arrays.equals(iArr, f39408c)) {
-            return f39411f;
+        if (Arrays.equals(iArr, f38500c)) {
+            return f38503f;
         }
         return new a(iArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b d() {
-        return this.f39413b;
+        return this.f38505b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int[] e() {
-        return this.f39412a;
+        return this.f38504a;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof a) && this.f39412a == ((a) obj).f39412a) {
+        if ((obj instanceof a) && this.f38504a == ((a) obj).f38504a) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(this.f39412a);
+        return Arrays.hashCode(this.f38504a);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        for (int i10 = 0; i10 < this.f39412a.length; i10++) {
+        for (int i10 = 0; i10 < this.f38504a.length; i10++) {
             if (i10 > 0) {
                 sb2.append(", ");
             }
-            int i11 = 1 - this.f39412a[i10];
+            int i11 = 1 - this.f38504a[i10];
             if (i11 > 0) {
                 sb2.append("BC ");
                 sb2.append(i11);
             } else {
                 sb2.append("AD ");
-                sb2.append(this.f39412a[i10]);
+                sb2.append(this.f38504a[i10]);
             }
         }
         return sb2.toString();

@@ -28,33 +28,33 @@ public abstract class ResponseBody implements Closeable {
         public static final class a extends ResponseBody {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ MediaType f43034d;
+            final /* synthetic */ MediaType f42161d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ long f43035e;
+            final /* synthetic */ long f42162e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ BufferedSource f43036i;
+            final /* synthetic */ BufferedSource f42163i;
 
             a(MediaType mediaType, long j10, BufferedSource bufferedSource) {
-                this.f43034d = mediaType;
-                this.f43035e = j10;
-                this.f43036i = bufferedSource;
+                this.f42161d = mediaType;
+                this.f42162e = j10;
+                this.f42163i = bufferedSource;
             }
 
             @Override // okhttp3.ResponseBody
             public long contentLength() {
-                return this.f43035e;
+                return this.f42162e;
             }
 
             @Override // okhttp3.ResponseBody
             public MediaType contentType() {
-                return this.f43034d;
+                return this.f42161d;
             }
 
             @Override // okhttp3.ResponseBody
             public BufferedSource source() {
-                return this.f43036i;
+                return this.f42163i;
             }
         }
 
@@ -75,14 +75,14 @@ public abstract class ResponseBody implements Closeable {
             if (mediaType != null) {
                 Charset d10 = MediaType.d(mediaType, null, 1, null);
                 if (d10 == null) {
-                    MediaType.a aVar = MediaType.f42920e;
+                    MediaType.a aVar = MediaType.f42047e;
                     mediaType = aVar.c(mediaType + "; charset=utf-8");
                 } else {
                     charset = d10;
                 }
             }
-            Buffer i22 = new Buffer().i2(str, charset);
-            return f(i22, mediaType, i22.size());
+            Buffer h22 = new Buffer().h2(str, charset);
+            return f(h22, mediaType, h22.size());
         }
 
         public final ResponseBody b(MediaType mediaType, long j10, BufferedSource content) {
@@ -112,7 +112,7 @@ public abstract class ResponseBody implements Closeable {
 
         public final ResponseBody g(ByteString byteString, MediaType mediaType) {
             Intrinsics.checkNotNullParameter(byteString, "<this>");
-            return f(new Buffer().Z1(byteString), mediaType, byteString.G());
+            return f(new Buffer().Y1(byteString), mediaType, byteString.G());
         }
 
         public final ResponseBody h(byte[] bArr, MediaType mediaType) {
@@ -128,48 +128,48 @@ public abstract class ResponseBody implements Closeable {
     public static final class a extends Reader {
 
         /* renamed from: d  reason: collision with root package name */
-        private final BufferedSource f43037d;
+        private final BufferedSource f42164d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Charset f43038e;
+        private final Charset f42165e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f43039i;
+        private boolean f42166i;
 
         /* renamed from: o  reason: collision with root package name */
-        private Reader f43040o;
+        private Reader f42167o;
 
         public a(BufferedSource source, Charset charset) {
             Intrinsics.checkNotNullParameter(source, "source");
             Intrinsics.checkNotNullParameter(charset, "charset");
-            this.f43037d = source;
-            this.f43038e = charset;
+            this.f42164d = source;
+            this.f42165e = charset;
         }
 
         @Override // java.io.Reader, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
             Unit unit;
-            this.f43039i = true;
-            Reader reader = this.f43040o;
+            this.f42166i = true;
+            Reader reader = this.f42167o;
             if (reader != null) {
                 reader.close();
-                unit = Unit.f32056a;
+                unit = Unit.f31765a;
             } else {
                 unit = null;
             }
             if (unit == null) {
-                this.f43037d.close();
+                this.f42164d.close();
             }
         }
 
         @Override // java.io.Reader
         public int read(char[] cbuf, int i10, int i11) {
             Intrinsics.checkNotNullParameter(cbuf, "cbuf");
-            if (!this.f43039i) {
-                Reader reader = this.f43040o;
+            if (!this.f42166i) {
+                Reader reader = this.f42167o;
                 if (reader == null) {
-                    reader = new InputStreamReader(this.f43037d.n2(), cu.e.J(this.f43037d, this.f43038e));
-                    this.f43040o = reader;
+                    reader = new InputStreamReader(this.f42164d.n2(), du.e.J(this.f42164d, this.f42165e));
+                    this.f42167o = reader;
                 }
                 return reader.read(cbuf, i10, i11);
             }
@@ -202,13 +202,13 @@ public abstract class ResponseBody implements Closeable {
         if (contentLength <= 2147483647L) {
             BufferedSource source = source();
             try {
-                ByteString K1 = source.K1();
-                bs.c.a(source, null);
-                int G = K1.G();
+                ByteString I1 = source.I1();
+                cs.c.a(source, null);
+                int G = I1.G();
                 if (contentLength != -1 && contentLength != G) {
                     throw new IOException("Content-Length (" + contentLength + ") and stream length (" + G + ") disagree");
                 }
-                return K1;
+                return I1;
             } finally {
             }
         } else {
@@ -222,13 +222,13 @@ public abstract class ResponseBody implements Closeable {
         if (contentLength <= 2147483647L) {
             BufferedSource source = source();
             try {
-                byte[] m12 = source.m1();
-                bs.c.a(source, null);
-                int length = m12.length;
+                byte[] j12 = source.j1();
+                cs.c.a(source, null);
+                int length = j12.length;
                 if (contentLength != -1 && contentLength != length) {
                     throw new IOException("Content-Length (" + contentLength + ") and stream length (" + length + ") disagree");
                 }
-                return m12;
+                return j12;
             } finally {
             }
         } else {
@@ -249,7 +249,7 @@ public abstract class ResponseBody implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        cu.e.m(source());
+        du.e.m(source());
     }
 
     public abstract long contentLength();
@@ -262,33 +262,33 @@ public abstract class ResponseBody implements Closeable {
     public final String string() {
         BufferedSource source = source();
         try {
-            String H1 = source.H1(cu.e.J(source, a()));
-            bs.c.a(source, null);
-            return H1;
+            String D1 = source.D1(du.e.J(source, a()));
+            cs.c.a(source, null);
+            return D1;
         } finally {
         }
     }
 
+    @rr.c
     @NotNull
-    @qr.c
     public static final ResponseBody create(MediaType mediaType, long j10, @NotNull BufferedSource bufferedSource) {
         return Companion.b(mediaType, j10, bufferedSource);
     }
 
+    @rr.c
     @NotNull
-    @qr.c
     public static final ResponseBody create(MediaType mediaType, @NotNull String str) {
         return Companion.c(mediaType, str);
     }
 
+    @rr.c
     @NotNull
-    @qr.c
     public static final ResponseBody create(MediaType mediaType, @NotNull ByteString byteString) {
         return Companion.d(mediaType, byteString);
     }
 
+    @rr.c
     @NotNull
-    @qr.c
     public static final ResponseBody create(MediaType mediaType, @NotNull byte[] bArr) {
         return Companion.e(mediaType, bArr);
     }

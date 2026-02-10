@@ -1,16 +1,21 @@
 package pa;
 
-import kotlin.jvm.internal.Intrinsics;
-import s8.d;
+import android.graphics.Bitmap;
+import com.facebook.common.references.CloseableReference;
+import com.facebook.datasource.DataSource;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements a {
-    @Override // pa.a
-    public void a(d reference, Throwable th2) {
-        Intrinsics.checkNotNullParameter(reference, "reference");
-    }
+public abstract class b extends z8.b {
+    protected abstract void onNewResultImpl(Bitmap bitmap);
 
-    @Override // pa.a
-    public boolean b() {
-        return false;
+    @Override // z8.b
+    public void onNewResultImpl(DataSource dataSource) {
+        if (dataSource.isFinished()) {
+            CloseableReference closeableReference = (CloseableReference) dataSource.getResult();
+            try {
+                onNewResultImpl((closeableReference == null || !(closeableReference.J() instanceof ta.d)) ? null : ((ta.d) closeableReference.J()).L1());
+            } finally {
+                CloseableReference.z(closeableReference);
+            }
+        }
     }
 }

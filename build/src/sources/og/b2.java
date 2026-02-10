@@ -1,29 +1,34 @@
 package og;
 
-import yi.c;
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class b2 implements yi.d {
+final class b2 extends i1 {
 
-    /* renamed from: a  reason: collision with root package name */
-    static final b2 f41854a = new b2();
+    /* renamed from: o  reason: collision with root package name */
+    private final transient Object[] f40781o;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f41855b;
+    /* renamed from: p  reason: collision with root package name */
+    private final transient int f40782p;
 
-    static {
-        c.b a10 = yi.c.a("format");
-        f fVar = new f();
-        fVar.a(1);
-        f41855b = a10.b(fVar.b()).a();
+    /* renamed from: q  reason: collision with root package name */
+    private final transient int f40783q = 1;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b2(Object[] objArr, int i10, int i11) {
+        this.f40781o = objArr;
+        this.f40782p = i10;
     }
 
-    private b2() {
+    @Override // java.util.List
+    public final Object get(int i10) {
+        t.a(i10, this.f40783q, "index");
+        Object obj = this.f40781o[i10 + i10 + this.f40782p];
+        Objects.requireNonNull(obj);
+        return obj;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.f40783q;
     }
 }

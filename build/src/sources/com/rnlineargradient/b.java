@@ -17,85 +17,85 @@ import com.facebook.react.uimanager.PixelUtil;
 public class b extends View {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Paint f17822d;
+    private final Paint f17962d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Path f17823e;
+    private Path f17963e;
 
     /* renamed from: i  reason: collision with root package name */
-    private RectF f17824i;
+    private RectF f17964i;
 
     /* renamed from: o  reason: collision with root package name */
-    private LinearGradient f17825o;
+    private LinearGradient f17965o;
 
     /* renamed from: p  reason: collision with root package name */
-    private float[] f17826p;
+    private float[] f17966p;
 
     /* renamed from: q  reason: collision with root package name */
-    private float[] f17827q;
+    private float[] f17967q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float[] f17828r;
+    private float[] f17968r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int[] f17829s;
+    private int[] f17969s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f17830t;
+    private boolean f17970t;
 
     /* renamed from: u  reason: collision with root package name */
-    private float[] f17831u;
+    private float[] f17971u;
 
     /* renamed from: v  reason: collision with root package name */
-    private float f17832v;
+    private float f17972v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int[] f17833w;
+    private int[] f17973w;
 
     /* renamed from: x  reason: collision with root package name */
-    private float[] f17834x;
+    private float[] f17974x;
 
     public b(Context context) {
         super(context);
-        this.f17822d = new Paint(1);
-        this.f17827q = new float[]{0.0f, 0.0f};
-        this.f17828r = new float[]{0.0f, 1.0f};
-        this.f17830t = false;
-        this.f17831u = new float[]{0.5f, 0.5f};
-        this.f17832v = 45.0f;
-        this.f17833w = new int[]{0, 0};
-        this.f17834x = new float[]{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
+        this.f17962d = new Paint(1);
+        this.f17967q = new float[]{0.0f, 0.0f};
+        this.f17968r = new float[]{0.0f, 1.0f};
+        this.f17970t = false;
+        this.f17971u = new float[]{0.5f, 0.5f};
+        this.f17972v = 45.0f;
+        this.f17973w = new int[]{0, 0};
+        this.f17974x = new float[]{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
     }
 
     private void a() {
         float[] fArr;
         float[] fArr2;
-        int[] iArr = this.f17829s;
+        int[] iArr = this.f17969s;
         if (iArr != null) {
-            float[] fArr3 = this.f17826p;
+            float[] fArr3 = this.f17966p;
             if (fArr3 == null || iArr.length == fArr3.length) {
-                if (this.f17830t && this.f17831u != null) {
-                    float[] b10 = b(90.0f - this.f17832v, this.f17833w);
-                    float[] fArr4 = this.f17831u;
+                if (this.f17970t && this.f17971u != null) {
+                    float[] b10 = b(90.0f - this.f17972v, this.f17973w);
+                    float[] fArr4 = this.f17971u;
                     float f10 = fArr4[0];
-                    int[] iArr2 = this.f17833w;
+                    int[] iArr2 = this.f17973w;
                     float[] fArr5 = {f10 * iArr2[0], fArr4[1] * iArr2[1]};
                     fArr = new float[]{fArr5[0] + b10[0], fArr5[1] - b10[1]};
                     fArr2 = new float[]{fArr5[0] - b10[0], fArr5[1] + b10[1]};
                 } else {
-                    float[] fArr6 = this.f17827q;
+                    float[] fArr6 = this.f17967q;
                     float f11 = fArr6[0];
-                    int[] iArr3 = this.f17833w;
+                    int[] iArr3 = this.f17973w;
                     int i10 = iArr3[0];
                     float f12 = fArr6[1];
                     int i11 = iArr3[1];
                     fArr = new float[]{f11 * i10, f12 * i11};
-                    float[] fArr7 = this.f17828r;
+                    float[] fArr7 = this.f17968r;
                     fArr2 = new float[]{fArr7[0] * i10, fArr7[1] * i11};
                 }
-                LinearGradient linearGradient = new LinearGradient(fArr[0], fArr[1], fArr2[0], fArr2[1], this.f17829s, this.f17826p, Shader.TileMode.CLAMP);
-                this.f17825o = linearGradient;
-                this.f17822d.setShader(linearGradient);
+                LinearGradient linearGradient = new LinearGradient(fArr[0], fArr[1], fArr2[0], fArr2[1], this.f17969s, this.f17966p, Shader.TileMode.CLAMP);
+                this.f17965o = linearGradient;
+                this.f17962d.setShader(linearGradient);
                 invalidate();
             }
         }
@@ -141,42 +141,42 @@ public class b extends View {
     }
 
     private void e() {
-        if (this.f17823e == null) {
-            this.f17823e = new Path();
-            this.f17824i = new RectF();
+        if (this.f17963e == null) {
+            this.f17963e = new Path();
+            this.f17964i = new RectF();
         }
-        this.f17823e.reset();
-        RectF rectF = this.f17824i;
-        int[] iArr = this.f17833w;
+        this.f17963e.reset();
+        RectF rectF = this.f17964i;
+        int[] iArr = this.f17973w;
         rectF.set(0.0f, 0.0f, iArr[0], iArr[1]);
-        this.f17823e.addRoundRect(this.f17824i, this.f17834x, Path.Direction.CW);
+        this.f17963e.addRoundRect(this.f17964i, this.f17974x, Path.Direction.CW);
     }
 
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        Path path = this.f17823e;
+        Path path = this.f17963e;
         if (path == null) {
-            canvas.drawPaint(this.f17822d);
+            canvas.drawPaint(this.f17962d);
         } else {
-            canvas.drawPath(path, this.f17822d);
+            canvas.drawPath(path, this.f17962d);
         }
     }
 
     @Override // android.view.View
     protected void onSizeChanged(int i10, int i11, int i12, int i13) {
-        this.f17833w = new int[]{i10, i11};
+        this.f17973w = new int[]{i10, i11};
         e();
         a();
     }
 
     public void setAngle(float f10) {
-        this.f17832v = f10;
+        this.f17972v = f10;
         a();
     }
 
     public void setAngleCenter(ReadableMap readableMap) {
-        this.f17831u = new float[]{(float) readableMap.getDouble("x"), (float) readableMap.getDouble("y")};
+        this.f17971u = new float[]{(float) readableMap.getDouble("x"), (float) readableMap.getDouble("y")};
         a();
     }
 
@@ -186,7 +186,7 @@ public class b extends View {
         for (int i10 = 0; i10 < size; i10++) {
             fArr[i10] = PixelUtil.toPixelFromDIP((float) readableArray.getDouble(i10));
         }
-        this.f17834x = fArr;
+        this.f17974x = fArr;
         e();
         a();
     }
@@ -203,12 +203,12 @@ public class b extends View {
             }
             iArr[i11] = i10;
         }
-        this.f17829s = iArr;
+        this.f17969s = iArr;
         a();
     }
 
     public void setEndPoint(ReadableMap readableMap) {
-        this.f17828r = new float[]{(float) readableMap.getDouble("x"), (float) readableMap.getDouble("y")};
+        this.f17968r = new float[]{(float) readableMap.getDouble("x"), (float) readableMap.getDouble("y")};
         a();
     }
 
@@ -218,17 +218,17 @@ public class b extends View {
         for (int i10 = 0; i10 < size; i10++) {
             fArr[i10] = (float) readableArray.getDouble(i10);
         }
-        this.f17826p = fArr;
+        this.f17966p = fArr;
         a();
     }
 
     public void setStartPoint(ReadableMap readableMap) {
-        this.f17827q = new float[]{(float) readableMap.getDouble("x"), (float) readableMap.getDouble("y")};
+        this.f17967q = new float[]{(float) readableMap.getDouble("x"), (float) readableMap.getDouble("y")};
         a();
     }
 
     public void setUseAngle(boolean z10) {
-        this.f17830t = z10;
+        this.f17970t = z10;
         a();
     }
 }

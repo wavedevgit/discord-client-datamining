@@ -13,23 +13,23 @@ abstract class c {
     class a extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Constructor f17882a;
+        final /* synthetic */ Constructor f18022a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Class f17883b;
+        final /* synthetic */ Class f18023b;
 
         a(Constructor constructor, Class cls) {
-            this.f17882a = constructor;
-            this.f17883b = cls;
+            this.f18022a = constructor;
+            this.f18023b = cls;
         }
 
         @Override // com.squareup.moshi.c
         public Object b() {
-            return this.f17882a.newInstance(null);
+            return this.f18022a.newInstance(null);
         }
 
         public String toString() {
-            return this.f17883b.getName();
+            return this.f18023b.getName();
         }
     }
 
@@ -37,56 +37,56 @@ abstract class c {
     class b extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Method f17884a;
+        final /* synthetic */ Method f18024a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Object f17885b;
+        final /* synthetic */ Object f18025b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Class f17886c;
+        final /* synthetic */ Class f18026c;
 
         b(Method method, Object obj, Class cls) {
-            this.f17884a = method;
-            this.f17885b = obj;
-            this.f17886c = cls;
+            this.f18024a = method;
+            this.f18025b = obj;
+            this.f18026c = cls;
         }
 
         @Override // com.squareup.moshi.c
         public Object b() {
-            return this.f17884a.invoke(this.f17885b, this.f17886c);
+            return this.f18024a.invoke(this.f18025b, this.f18026c);
         }
 
         public String toString() {
-            return this.f17886c.getName();
+            return this.f18026c.getName();
         }
     }
 
     /* renamed from: com.squareup.moshi.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class C0216c extends c {
+    class C0243c extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Method f17887a;
+        final /* synthetic */ Method f18027a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Class f17888b;
+        final /* synthetic */ Class f18028b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ int f17889c;
+        final /* synthetic */ int f18029c;
 
-        C0216c(Method method, Class cls, int i10) {
-            this.f17887a = method;
-            this.f17888b = cls;
-            this.f17889c = i10;
+        C0243c(Method method, Class cls, int i10) {
+            this.f18027a = method;
+            this.f18028b = cls;
+            this.f18029c = i10;
         }
 
         @Override // com.squareup.moshi.c
         public Object b() {
-            return this.f17887a.invoke(null, this.f17888b, Integer.valueOf(this.f17889c));
+            return this.f18027a.invoke(null, this.f18028b, Integer.valueOf(this.f18029c));
         }
 
         public String toString() {
-            return this.f17888b.getName();
+            return this.f18028b.getName();
         }
     }
 
@@ -94,23 +94,23 @@ abstract class c {
     class d extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Method f17890a;
+        final /* synthetic */ Method f18030a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Class f17891b;
+        final /* synthetic */ Class f18031b;
 
         d(Method method, Class cls) {
-            this.f17890a = method;
-            this.f17891b = cls;
+            this.f18030a = method;
+            this.f18031b = cls;
         }
 
         @Override // com.squareup.moshi.c
         public Object b() {
-            return this.f17890a.invoke(null, this.f17891b, Object.class);
+            return this.f18030a.invoke(null, this.f18031b, Object.class);
         }
 
         public String toString() {
-            return this.f17891b.getName();
+            return this.f18031b.getName();
         }
     }
 
@@ -140,7 +140,7 @@ abstract class c {
                 int intValue = ((Integer) declaredMethod.invoke(null, Object.class)).intValue();
                 Method declaredMethod2 = ObjectStreamClass.class.getDeclaredMethod("newInstance", Class.class, Integer.TYPE);
                 declaredMethod2.setAccessible(true);
-                return new C0216c(declaredMethod2, cls, intValue);
+                return new C0243c(declaredMethod2, cls, intValue);
             } catch (IllegalAccessException unused4) {
                 throw new AssertionError();
             }
@@ -151,7 +151,7 @@ abstract class c {
             declaredMethod3.setAccessible(true);
             return new d(declaredMethod3, cls);
         } catch (InvocationTargetException e10) {
-            throw an.c.t(e10);
+            throw bn.c.t(e10);
         }
     }
 

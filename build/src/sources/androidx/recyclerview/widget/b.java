@@ -7,68 +7,68 @@ import java.util.concurrent.Executors;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f5384a;
+    private final Executor f5081a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f5385b;
+    private final Executor f5082b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e.f f5386c;
+    private final e.f f5083c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final Object f5387d = new Object();
+        private static final Object f5084d = new Object();
 
         /* renamed from: e  reason: collision with root package name */
-        private static Executor f5388e;
+        private static Executor f5085e;
 
         /* renamed from: a  reason: collision with root package name */
-        private Executor f5389a;
+        private Executor f5086a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Executor f5390b;
+        private Executor f5087b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final e.f f5391c;
+        private final e.f f5088c;
 
         public a(e.f fVar) {
-            this.f5391c = fVar;
+            this.f5088c = fVar;
         }
 
         public b a() {
-            if (this.f5390b == null) {
-                synchronized (f5387d) {
+            if (this.f5087b == null) {
+                synchronized (f5084d) {
                     try {
-                        if (f5388e == null) {
-                            f5388e = Executors.newFixedThreadPool(2);
+                        if (f5085e == null) {
+                            f5085e = Executors.newFixedThreadPool(2);
                         }
                     } catch (Throwable th2) {
                         throw th2;
                     }
                 }
-                this.f5390b = f5388e;
+                this.f5087b = f5085e;
             }
-            return new b(this.f5389a, this.f5390b, this.f5391c);
+            return new b(this.f5086a, this.f5087b, this.f5088c);
         }
     }
 
     b(Executor executor, Executor executor2, e.f fVar) {
-        this.f5384a = executor;
-        this.f5385b = executor2;
-        this.f5386c = fVar;
+        this.f5081a = executor;
+        this.f5082b = executor2;
+        this.f5083c = fVar;
     }
 
     public Executor a() {
-        return this.f5385b;
+        return this.f5082b;
     }
 
     public e.f b() {
-        return this.f5386c;
+        return this.f5083c;
     }
 
     public Executor c() {
-        return this.f5384a;
+        return this.f5081a;
     }
 }

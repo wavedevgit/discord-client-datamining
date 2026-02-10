@@ -69,22 +69,22 @@ public final class NextStep_Selfie_LocalizationsJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 promptPage = (NextStep.Selfie.PromptPage) this.promptPageAdapter.fromJson(reader);
                 if (promptPage == null) {
-                    throw an.c.x("promptPage", "promptPage", reader);
+                    throw bn.c.x("promptPage", "promptPage", reader);
                 }
             } else if (J == 1) {
                 capturePage = (NextStep.Selfie.CapturePage) this.capturePageAdapter.fromJson(reader);
                 if (capturePage == null) {
-                    throw an.c.x("capturePage", "capturePage", reader);
+                    throw bn.c.x("capturePage", "capturePage", reader);
                 }
             } else if (J == 2) {
                 pendingPage = (NextStep.Selfie.PendingPage) this.pendingPageAdapter.fromJson(reader);
                 if (pendingPage == null) {
-                    throw an.c.x("pendingPage", "pendingPage", reader);
+                    throw bn.c.x("pendingPage", "pendingPage", reader);
                 }
             } else if (J == 3) {
                 cancelDialog = (NextStep.CancelDialog) this.nullableCancelDialogAdapter.fromJson(reader);
@@ -98,11 +98,11 @@ public final class NextStep_Selfie_LocalizationsJsonAdapter extends h {
                 if (pendingPage != null) {
                     return new NextStep.Selfie.Localizations(promptPage, capturePage, pendingPage, cancelDialog, checkPage);
                 }
-                throw an.c.o("pendingPage", "pendingPage", reader);
+                throw bn.c.o("pendingPage", "pendingPage", reader);
             }
-            throw an.c.o("capturePage", "capturePage", reader);
+            throw bn.c.o("capturePage", "capturePage", reader);
         }
-        throw an.c.o("promptPage", "promptPage", reader);
+        throw bn.c.o("promptPage", "promptPage", reader);
     }
 
     @Override // com.squareup.moshi.h

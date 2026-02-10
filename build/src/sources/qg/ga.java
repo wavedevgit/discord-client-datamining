@@ -1,46 +1,56 @@
 package qg;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class ga implements yi.d {
+public final class ga {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ga f47111a = new ga();
+    private final hc f45824a;
 
-    static {
-        c.b a10 = yi.c.a("detectorMode");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("multipleObjectsEnabled");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = yi.c.a("classificationEnabled");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
-        c.b a13 = yi.c.a("maxPerObjectLabelCount");
-        v1 v1Var4 = new v1();
-        v1Var4.a(4);
-        a13.b(v1Var4.b()).a();
-        c.b a14 = yi.c.a("classificationConfidenceThreshold");
-        v1 v1Var5 = new v1();
-        v1Var5.a(5);
-        a14.b(v1Var5.b()).a();
-        c.b a15 = yi.c.a("customLocalModelOptions");
-        v1 v1Var6 = new v1();
-        v1Var6.a(6);
-        a15.b(v1Var6.b()).a();
+    /* renamed from: b  reason: collision with root package name */
+    private final da f45825b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final ba f45826c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final wa f45827d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final za f45828e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final s2 f45829f;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public /* synthetic */ ga(ea eaVar, fa faVar) {
+        this.f45824a = eaVar.f45750a;
+        this.f45825b = eaVar.f45751b;
+        this.f45826c = eaVar.f45752c;
+        this.f45827d = eaVar.f45753d;
+        this.f45828e = eaVar.f45754e;
+        this.f45829f = eaVar.f45755f;
     }
 
-    private ga() {
+    public final s2 a() {
+        return this.f45829f;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    public final ba b() {
+        return this.f45826c;
+    }
+
+    public final da c() {
+        return this.f45825b;
+    }
+
+    public final wa d() {
+        return this.f45827d;
+    }
+
+    public final za e() {
+        return this.f45828e;
+    }
+
+    public final hc f() {
+        return this.f45824a;
     }
 }

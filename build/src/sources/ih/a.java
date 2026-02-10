@@ -1,77 +1,53 @@
 package ih;
 
-import android.content.Context;
-import android.graphics.Color;
-import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import nh.b;
-import r1.c;
+import android.app.Dialog;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.os.Build;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewConfiguration;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a {
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final int f26762f = (int) Math.round(5.1000000000000005d);
-
-    /* renamed from: a  reason: collision with root package name */
-    private final boolean f26763a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f26764b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f26765c;
+public class a implements View.OnTouchListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f26766d;
+    private final Dialog f26850d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f26767e;
+    private final int f26851e;
 
-    public a(Context context) {
-        this(b.b(context, ah.b.f657s, false), gh.a.b(context, ah.b.f656r, 0), gh.a.b(context, ah.b.f655q, 0), gh.a.b(context, ah.b.f653o, 0), context.getResources().getDisplayMetrics().density);
+    /* renamed from: i  reason: collision with root package name */
+    private final int f26852i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final int f26853o;
+
+    public a(Dialog dialog, Rect rect) {
+        this.f26850d = dialog;
+        this.f26851e = rect.left;
+        this.f26852i = rect.top;
+        this.f26853o = ViewConfiguration.get(dialog.getContext()).getScaledWindowTouchSlop();
     }
 
-    private boolean e(int i10) {
-        if (c.l(i10, SetSpanOperation.SPAN_MAX_PRIORITY) == this.f26766d) {
-            return true;
+    @Override // android.view.View.OnTouchListener
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+        View findViewById = view.findViewById(16908290);
+        int left = this.f26851e + findViewById.getLeft();
+        int width = findViewById.getWidth() + left;
+        int top = this.f26852i + findViewById.getTop();
+        if (new RectF(left, top, width, findViewById.getHeight() + top).contains(motionEvent.getX(), motionEvent.getY())) {
+            return false;
         }
-        return false;
-    }
-
-    public float a(float f10) {
-        float f11 = this.f26767e;
-        if (f11 <= 0.0f || f10 <= 0.0f) {
-            return 0.0f;
+        MotionEvent obtain = MotionEvent.obtain(motionEvent);
+        if (motionEvent.getAction() == 1) {
+            obtain.setAction(4);
         }
-        return Math.min(((((float) Math.log1p(f10 / f11)) * 4.5f) + 2.0f) / 100.0f, 1.0f);
-    }
-
-    public int b(int i10, float f10) {
-        int i11;
-        float a10 = a(f10);
-        int alpha = Color.alpha(i10);
-        int j10 = gh.a.j(c.l(i10, SetSpanOperation.SPAN_MAX_PRIORITY), this.f26764b, a10);
-        if (a10 > 0.0f && (i11 = this.f26765c) != 0) {
-            j10 = gh.a.i(j10, c.l(i11, f26762f));
+        if (Build.VERSION.SDK_INT < 28) {
+            obtain.setAction(0);
+            int i10 = this.f26853o;
+            obtain.setLocation((-i10) - 1, (-i10) - 1);
         }
-        return c.l(j10, alpha);
-    }
-
-    public int c(int i10, float f10) {
-        if (this.f26763a && e(i10)) {
-            return b(i10, f10);
-        }
-        return i10;
-    }
-
-    public boolean d() {
-        return this.f26763a;
-    }
-
-    public a(boolean z10, int i10, int i11, int i12, float f10) {
-        this.f26763a = z10;
-        this.f26764b = i10;
-        this.f26765c = i11;
-        this.f26766d = i12;
-        this.f26767e = f10;
+        view.performClick();
+        return this.f26850d.onTouchEvent(obtain);
     }
 }

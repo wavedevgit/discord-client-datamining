@@ -1,10 +1,42 @@
 package ke;
+
+import java.util.List;
+import rd.u0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class k {
+public final class k extends b {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static int f31641a = 2131427336;
+    /* renamed from: h  reason: collision with root package name */
+    private final int f30852h;
 
-    /* renamed from: b  reason: collision with root package name */
-    public static int f31642b = 2131427337;
+    /* renamed from: i  reason: collision with root package name */
+    private final Object f30853i;
+
+    public k(u0 u0Var, int i10, int i11) {
+        this(u0Var, i10, i11, 0, null);
+    }
+
+    @Override // com.google.android.exoplayer2.trackselection.g
+    public int b() {
+        return 0;
+    }
+
+    @Override // com.google.android.exoplayer2.trackselection.g
+    public Object h() {
+        return this.f30853i;
+    }
+
+    @Override // com.google.android.exoplayer2.trackselection.g
+    public int r() {
+        return this.f30852h;
+    }
+
+    public k(u0 u0Var, int i10, int i11, int i12, Object obj) {
+        super(u0Var, new int[]{i10}, i11);
+        this.f30852h = i12;
+        this.f30853i = obj;
+    }
+
+    @Override // com.google.android.exoplayer2.trackselection.g
+    public void e(long j10, long j11, long j12, List list, td.o[] oVarArr) {
+    }
 }

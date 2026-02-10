@@ -1,18 +1,65 @@
 package ne;
 
-import android.os.Handler;
-import android.os.Looper;
+import android.net.Uri;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface e {
+public class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f38953a = new p0();
+    private final Map f38179a = new HashMap();
 
-    long a();
+    /* renamed from: b  reason: collision with root package name */
+    private final List f38180b = new ArrayList();
 
-    long b();
+    private e a(String str, Object obj) {
+        this.f38179a.put((String) oe.a.e(str), oe.a.e(obj));
+        this.f38180b.remove(str);
+        return this;
+    }
 
-    u c(Looper looper, Handler.Callback callback);
+    public static e g(e eVar, long j10) {
+        return eVar.e("exo_len", j10);
+    }
 
-    void d();
+    public static e h(e eVar, Uri uri) {
+        if (uri == null) {
+            return eVar.d("exo_redir");
+        }
+        return eVar.f("exo_redir", uri.toString());
+    }
+
+    public Map b() {
+        HashMap hashMap = new HashMap(this.f38179a);
+        for (Map.Entry entry : hashMap.entrySet()) {
+            Object value = entry.getValue();
+            if (value instanceof byte[]) {
+                byte[] bArr = (byte[]) value;
+                entry.setValue(Arrays.copyOf(bArr, bArr.length));
+            }
+        }
+        return Collections.unmodifiableMap(hashMap);
+    }
+
+    public List c() {
+        return Collections.unmodifiableList(new ArrayList(this.f38180b));
+    }
+
+    public e d(String str) {
+        this.f38180b.add(str);
+        this.f38179a.remove(str);
+        return this;
+    }
+
+    public e e(String str, long j10) {
+        return a(str, Long.valueOf(j10));
+    }
+
+    public e f(String str, String str2) {
+        return a(str, str2);
+    }
 }

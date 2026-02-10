@@ -1,45 +1,70 @@
 package l5;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public enum g0 {
-    AUTOMATIC,
-    HARDWARE,
-    SOFTWARE;
+public abstract class g0 {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static /* synthetic */ class a {
+    /* renamed from: a  reason: collision with root package name */
+    public static int[] f35697a = {2130969405, 2130969406, 2130969407, 2130969408, 2130969409, 2130969410, 2130969411, 2130969412, 2130969413, 2130969414, 2130969415, 2130969416, 2130969417, 2130969418, 2130969419, 2130969420, 2130969421, 2130969422, 2130969423, 2130969424, 2130969425};
 
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f35887a;
+    /* renamed from: b  reason: collision with root package name */
+    public static int f35698b = 0;
 
-        static {
-            int[] iArr = new int[g0.values().length];
-            f35887a = iArr;
-            try {
-                iArr[g0.HARDWARE.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                f35887a[g0.SOFTWARE.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            try {
-                f35887a[g0.AUTOMATIC.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
-        }
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f35699c = 1;
 
-    public boolean d(int i10, boolean z10, int i11) {
-        int i12 = a.f35887a[ordinal()];
-        if (i12 == 1) {
-            return false;
-        }
-        if (i12 == 2) {
-            return true;
-        }
-        if ((!z10 || i10 >= 28) && i11 <= 4 && i10 > 25) {
-            return false;
-        }
-        return true;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f35700d = 2;
+
+    /* renamed from: e  reason: collision with root package name */
+    public static int f35701e = 3;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static int f35702f = 4;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static int f35703g = 5;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static int f35704h = 6;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f35705i = 7;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f35706j = 8;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f35707k = 9;
+
+    /* renamed from: l  reason: collision with root package name */
+    public static int f35708l = 10;
+
+    /* renamed from: m  reason: collision with root package name */
+    public static int f35709m = 11;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static int f35710n = 12;
+
+    /* renamed from: o  reason: collision with root package name */
+    public static int f35711o = 13;
+
+    /* renamed from: p  reason: collision with root package name */
+    public static int f35712p = 14;
+
+    /* renamed from: q  reason: collision with root package name */
+    public static int f35713q = 15;
+
+    /* renamed from: r  reason: collision with root package name */
+    public static int f35714r = 16;
+
+    /* renamed from: s  reason: collision with root package name */
+    public static int f35715s = 17;
+
+    /* renamed from: t  reason: collision with root package name */
+    public static int f35716t = 18;
+
+    /* renamed from: u  reason: collision with root package name */
+    public static int f35717u = 19;
+
+    /* renamed from: v  reason: collision with root package name */
+    public static int f35718v = 20;
 }

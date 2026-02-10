@@ -4,7 +4,7 @@ import com.facebook.common.references.CloseableReference;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class b extends CloseableReference {
     /* JADX INFO: Access modifiers changed from: package-private */
-    public b(Object obj, s8.c cVar, CloseableReference.c cVar2, Throwable th2) {
+    public b(Object obj, t8.c cVar, CloseableReference.c cVar2, Throwable th2) {
         super(obj, cVar, cVar2, th2, true);
     }
 
@@ -16,19 +16,19 @@ public class b extends CloseableReference {
         String name;
         try {
             synchronized (this) {
-                if (this.f9841d) {
+                if (this.f9981d) {
                     return;
                 }
-                Object f10 = this.f9842e.f();
+                Object f10 = this.f9982e.f();
                 Integer valueOf = Integer.valueOf(System.identityHashCode(this));
-                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f9842e));
+                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f9982e));
                 if (f10 == null) {
                     name = null;
                 } else {
                     name = f10.getClass().getName();
                 }
-                p8.a.L("FinalizerCloseableReference", "Finalized without closing: %x %x (type = %s)", valueOf, valueOf2, name);
-                this.f9842e.d();
+                q8.a.L("FinalizerCloseableReference", "Finalized without closing: %x %x (type = %s)", valueOf, valueOf2, name);
+                this.f9982e.d();
             }
         } finally {
             super.finalize();

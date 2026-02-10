@@ -1,7 +1,7 @@
 package com.discord.notifications.api;
 
 import com.discord.primitives.ChannelId;
-import gt.a;
+import ht.a;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
@@ -30,7 +30,7 @@ public final class ChannelListSerializer implements KSerializer {
         return str;
     }
 
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
         return a.h(ChannelId.Companion.serializer()).getDescriptor();
@@ -54,7 +54,7 @@ public final class ChannelListSerializer implements KSerializer {
         return arrayList;
     }
 
-    @Override // ft.o
+    @Override // gt.o
     public void serialize(@NotNull Encoder encoder, @NotNull List<ChannelId> value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");

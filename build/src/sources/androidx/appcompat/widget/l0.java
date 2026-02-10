@@ -43,20 +43,20 @@ public class l0 extends j0 implements k0 {
         private MenuItem B;
 
         /* renamed from: y  reason: collision with root package name */
-        final int f2187y;
+        final int f1884y;
 
         /* renamed from: z  reason: collision with root package name */
-        final int f2188z;
+        final int f1885z;
 
         public c(Context context, boolean z10) {
             super(context, z10);
             if (1 == context.getResources().getConfiguration().getLayoutDirection()) {
-                this.f2187y = 21;
-                this.f2188z = 22;
+                this.f1884y = 21;
+                this.f1885z = 22;
                 return;
             }
-            this.f2187y = 22;
-            this.f2188z = 21;
+            this.f1884y = 22;
+            this.f1885z = 21;
         }
 
         @Override // androidx.appcompat.widget.f0
@@ -130,12 +130,12 @@ public class l0 extends j0 implements k0 {
         public boolean onKeyDown(int i10, KeyEvent keyEvent) {
             androidx.appcompat.view.menu.d dVar;
             ListMenuItemView listMenuItemView = (ListMenuItemView) getSelectedView();
-            if (listMenuItemView != null && i10 == this.f2187y) {
+            if (listMenuItemView != null && i10 == this.f1884y) {
                 if (listMenuItemView.isEnabled() && listMenuItemView.getItemData().hasSubMenu()) {
                     performItemClick(listMenuItemView, getSelectedItemPosition(), getSelectedItemId());
                 }
                 return true;
-            } else if (listMenuItemView != null && i10 == this.f2188z) {
+            } else if (listMenuItemView != null && i10 == this.f1885z) {
                 setSelection(-1);
                 ListAdapter adapter = getAdapter();
                 if (adapter instanceof HeaderViewListAdapter) {

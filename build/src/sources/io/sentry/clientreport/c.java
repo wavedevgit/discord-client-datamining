@@ -17,13 +17,13 @@ import java.util.Map;
 public final class c implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Date f28050d;
+    private final Date f28250d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f28051e;
+    private final List f28251e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f28052i;
+    private Map f28252i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -49,12 +49,12 @@ public final class c implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.u1(iLogger, hashMap, o02);
+                        e3Var.p1(iLogger, hashMap, o02);
                     } else {
-                        date = e3Var.u0(iLogger);
+                        date = e3Var.s0(iLogger);
                     }
                 } else {
-                    arrayList.addAll(e3Var.g2(iLogger, new g.a()));
+                    arrayList.addAll(e3Var.f2(iLogger, new g.a()));
                 }
             }
             e3Var.D();
@@ -71,27 +71,27 @@ public final class c implements w1 {
     }
 
     public c(Date date, List list) {
-        this.f28050d = date;
-        this.f28051e = list;
+        this.f28250d = date;
+        this.f28251e = list;
     }
 
     public List a() {
-        return this.f28051e;
+        return this.f28251e;
     }
 
     public void b(Map map) {
-        this.f28052i = map;
+        this.f28252i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("timestamp").f(k.h(this.f28050d));
-        f3Var.e("discarded_events").j(iLogger, this.f28051e);
-        Map map = this.f28052i;
+        f3Var.e("timestamp").f(k.h(this.f28250d));
+        f3Var.e("discarded_events").j(iLogger, this.f28251e);
+        Map map = this.f28252i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28052i.get(str));
+                f3Var.e(str).j(iLogger, this.f28252i.get(str));
             }
         }
         f3Var.D();

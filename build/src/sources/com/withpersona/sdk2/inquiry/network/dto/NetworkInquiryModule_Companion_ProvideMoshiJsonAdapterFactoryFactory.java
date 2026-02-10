@@ -1,8 +1,8 @@
 package com.withpersona.sdk2.inquiry.network.dto;
 
-import br.d;
-import br.g;
 import com.squareup.moshi.h;
+import cr.d;
+import cr.g;
 import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class NetworkInquiryModule_Companion_ProvideMoshiJsonAdapterFactoryFactory implements d {

@@ -1,56 +1,43 @@
 package pg;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class r1 implements w1 {
+final class r1 implements zi.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final r1 f43903a = new r1();
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f44708b;
+    private static final zi.c f43904b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final v1 f44709c;
+    private static final zi.c f43905c;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public r1(int i10, v1 v1Var) {
-        this.f44708b = i10;
-        this.f44709c = v1Var;
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f43906d;
+
+    static {
+        c.b a10 = zi.c.a("logEventKey");
+        f fVar = new f();
+        fVar.a(1);
+        f43904b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("eventCount");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f43905c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("inferenceDurationStats");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f43906d = a12.b(fVar3.b()).a();
     }
 
-    @Override // java.lang.annotation.Annotation
-    public final Class annotationType() {
-        return w1.class;
+    private r1() {
     }
 
-    @Override // java.lang.annotation.Annotation
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof w1)) {
-            return false;
-        }
-        w1 w1Var = (w1) obj;
-        if (this.f44708b == w1Var.zza() && this.f44709c.equals(w1Var.zzb())) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // java.lang.annotation.Annotation
-    public final int hashCode() {
-        return (this.f44708b ^ 14552422) + (this.f44709c.hashCode() ^ 2041407134);
-    }
-
-    @Override // java.lang.annotation.Annotation
-    public final String toString() {
-        return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f44708b + "intEncoding=" + this.f44709c + ')';
-    }
-
-    @Override // pg.w1
-    public final int zza() {
-        return this.f44708b;
-    }
-
-    @Override // pg.w1
-    public final v1 zzb() {
-        return this.f44709c;
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

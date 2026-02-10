@@ -77,7 +77,7 @@ public abstract class ReactNativeHost {
             pausedInDebuggerOverlayManager.setJSBundleFile(jSBundleFile);
             return pausedInDebuggerOverlayManager;
         }
-        pausedInDebuggerOverlayManager.setBundleAssetName((String) db.a.c(getBundleAssetName()));
+        pausedInDebuggerOverlayManager.setBundleAssetName((String) eb.a.c(getBundleAssetName()));
         return pausedInDebuggerOverlayManager;
     }
 

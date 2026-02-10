@@ -1907,12 +1907,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 0;
                 var4 = var2[var1];
                 if (var4) {
-                    _fun17243_ip = 98;
+                    _fun17243_ip = 102;
                     continue _fun17243
                 }
-            case 94:
-                var4 = '';
             case 98:
+                var4 = '';
+            case 102:
                 var3 = _closure1_slot1;
                 var2 = var3.extract;
                 var1 = var5.url;
@@ -1930,14 +1930,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.bind(var3)(var2, var9);
                 var3 = var2;
                 if (!var3) {
-                    _fun17243_ip = 196;
+                    _fun17243_ip = 200;
                     continue _fun17243
                 }
-            case 180:
+            case 184:
                 var1 = var0.HermesInternal;
                 var1 = var1.concat;
                 var3 = var1.bind(var6)(var2);
-            case 196:
+            case 200:
                 var12 = var5.url;
                 var1 = var12.indexOf;
                 var7 = '#';
@@ -1946,38 +1946,38 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = -1;
                 var1 = var2;
                 if (!(var6 !== var11)) {
-                    _fun17243_ip = 243;
+                    _fun17243_ip = 247;
                     continue _fun17243
                 }
-            case 233:
+            case 237:
                 var6 = var12.slice;
                 var1 = var6.bind(var12)(var11);
-            case 243:
+            case 247:
                 var6 = var5.fragmentIdentifier;
                 if (!var6) {
-                    _fun17243_ip = 303;
+                    _fun17243_ip = 307;
                     continue _fun17243
                 }
-            case 252:
+            case 256:
                 var6 = _closure1_slot6;
                 var6 = var9[var6];
                 if (var6) {
-                    _fun17243_ip = 271;
+                    _fun17243_ip = 275;
                     continue _fun17243
                 }
-            case 263:
+            case 267:
                 var6 = var5.fragmentIdentifier;
-                _fun17243_ip = 287;
+                _fun17243_ip = 291;
                 continue _fun17243;
-            case 271:
+            case 275:
                 var8 = _closure1_slot8;
                 var5 = var5.fragmentIdentifier;
                 var6 = var8.bind(var10)(var5, var9);
-            case 287:
+            case 291:
                 var5 = var0.HermesInternal;
                 var5 = var5.concat;
                 var1 = var5.bind(var7)(var6);
-            case 303:
+            case 307:
                 var0 = var0.HermesInternal;
                 var0 = var0.concat;
                 var0 = var0.bind(var2)(var4, var3, var1);

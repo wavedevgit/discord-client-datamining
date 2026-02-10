@@ -1,25 +1,26 @@
 package x5;
-
-import l5.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public abstract class d {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static y f54573a = new c();
-
-    public static void a(String str) {
-        f54573a.c(str);
-    }
-
-    public static void b(String str, Throwable th2) {
-        f54573a.b(str, th2);
-    }
-
-    public static void c(String str) {
-        f54573a.a(str);
-    }
-
-    public static void d(String str, Throwable th2) {
-        f54573a.d(str, th2);
+abstract class d {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static String a(int i10, int[] iArr, String[] strArr, int[] iArr2) {
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append('$');
+        for (int i11 = 0; i11 < i10; i11++) {
+            int i12 = iArr[i11];
+            if (i12 != 1 && i12 != 2) {
+                if (i12 == 3 || i12 == 4 || i12 == 5) {
+                    sb2.append('.');
+                    String str = strArr[i11];
+                    if (str != null) {
+                        sb2.append(str);
+                    }
+                }
+            } else {
+                sb2.append('[');
+                sb2.append(iArr2[i11]);
+                sb2.append(']');
+            }
+        }
+        return sb2.toString();
     }
 }

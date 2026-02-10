@@ -1,68 +1,82 @@
 package hd;
 
-import com.google.android.exoplayer2.metadata.Metadata;
-import gd.c;
-import gd.e;
-import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import mi.d;
-import ne.g0;
+import com.google.android.exoplayer2.Format;
+import md.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b extends e {
-    private static Metadata c(g0 g0Var) {
-        g0Var.r(12);
-        int d10 = (g0Var.d() + g0Var.h(12)) - 4;
-        g0Var.r(44);
-        g0Var.s(g0Var.h(12));
-        g0Var.r(16);
-        ArrayList arrayList = new ArrayList();
-        while (true) {
-            String str = null;
-            if (g0Var.d() >= d10) {
-                break;
+public interface b {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f25887a = new a();
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    class a implements b {
+        a() {
+        }
+
+        @Override // hd.b
+        public boolean a(Format format) {
+            String str = format.f11727w;
+            if (!"application/id3".equals(str) && !"application/x-emsg".equals(str) && !"application/x-scte35".equals(str) && !"application/x-icy".equals(str) && !"application/vnd.dvb.ait".equals(str)) {
+                return false;
             }
-            g0Var.r(48);
-            int h10 = g0Var.h(8);
-            g0Var.r(4);
-            int d11 = g0Var.d() + g0Var.h(12);
-            String str2 = null;
-            while (g0Var.d() < d11) {
-                int h11 = g0Var.h(8);
-                int h12 = g0Var.h(8);
-                int d12 = g0Var.d() + h12;
-                if (h11 == 2) {
-                    int h13 = g0Var.h(16);
-                    g0Var.r(8);
-                    if (h13 != 3) {
-                    }
-                    while (g0Var.d() < d12) {
-                        str = g0Var.l(g0Var.h(8), d.f37217a);
-                        int h14 = g0Var.h(8);
-                        for (int i10 = 0; i10 < h14; i10++) {
-                            g0Var.s(g0Var.h(8));
+            return true;
+        }
+
+        @Override // hd.b
+        public hd.a b(Format format) {
+            String str = format.f11727w;
+            if (str != null) {
+                char c10 = 65535;
+                switch (str.hashCode()) {
+                    case -1354451219:
+                        if (str.equals("application/vnd.dvb.ait")) {
+                            c10 = 0;
+                            break;
                         }
-                    }
-                } else if (h11 == 21) {
-                    str2 = g0Var.l(h12, d.f37217a);
+                        break;
+                    case -1348231605:
+                        if (str.equals("application/x-icy")) {
+                            c10 = 1;
+                            break;
+                        }
+                        break;
+                    case -1248341703:
+                        if (str.equals("application/id3")) {
+                            c10 = 2;
+                            break;
+                        }
+                        break;
+                    case 1154383568:
+                        if (str.equals("application/x-emsg")) {
+                            c10 = 3;
+                            break;
+                        }
+                        break;
+                    case 1652648887:
+                        if (str.equals("application/x-scte35")) {
+                            c10 = 4;
+                            break;
+                        }
+                        break;
                 }
-                g0Var.p(d12 * 8);
+                switch (c10) {
+                    case 0:
+                        return new id.b();
+                    case 1:
+                        return new ld.a();
+                    case 2:
+                        return new h();
+                    case 3:
+                        return new jd.b();
+                    case 4:
+                        return new od.c();
+                }
             }
-            g0Var.p(d11 * 8);
-            if (str != null && str2 != null) {
-                arrayList.add(new a(h10, str + str2));
-            }
+            throw new IllegalArgumentException("Attempted to create decoder for unsupported MIME type: " + str);
         }
-        if (arrayList.isEmpty()) {
-            return null;
-        }
-        return new Metadata(arrayList);
     }
 
-    @Override // gd.e
-    protected Metadata b(c cVar, ByteBuffer byteBuffer) {
-        if (byteBuffer.get() == 116) {
-            return c(new g0(byteBuffer.array(), byteBuffer.limit()));
-        }
-        return null;
-    }
+    boolean a(Format format);
+
+    hd.a b(Format format);
 }

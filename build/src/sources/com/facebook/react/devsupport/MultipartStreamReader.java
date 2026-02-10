@@ -56,17 +56,17 @@ public final class MultipartStreamReader {
     }
 
     private final void emitChunk(Buffer buffer, boolean z10, ChunkListener chunkListener) {
-        ByteString b10 = ByteString.f43214o.b("\r\n\r\n");
-        long X = buffer.X(b10);
-        if (X == -1) {
+        ByteString b10 = ByteString.f42341o.b("\r\n\r\n");
+        long Y = buffer.Y(b10);
+        if (Y == -1) {
             chunkListener.onChunkComplete(kotlin.collections.o0.i(), buffer, z10);
             return;
         }
         Buffer buffer2 = new Buffer();
         Buffer buffer3 = new Buffer();
-        buffer.read(buffer2, X);
+        buffer.read(buffer2, Y);
         buffer.skip(b10.a());
-        buffer.e2(buffer3);
+        buffer.d2(buffer3);
         chunkListener.onChunkComplete(parseHeaders(buffer2), buffer3, z10);
     }
 
@@ -88,7 +88,7 @@ public final class MultipartStreamReader {
         int i11;
         boolean z11;
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        List k10 = new Regex(CRLF).k(buffer.S1(), 0);
+        List k10 = new Regex(CRLF).k(buffer.R1(), 0);
         if (!k10.isEmpty()) {
             ListIterator listIterator = k10.listIterator(k10.size());
             while (listIterator.hasPrevious()) {

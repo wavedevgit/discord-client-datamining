@@ -45,8 +45,8 @@ public final class AttributeStyles_GovernmentIdNfcScanInputDateStylesJsonAdapter
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 governmentIdNfcScanInputDateStylesContainer = (AttributeStyles.GovernmentIdNfcScanInputDateStylesContainer) this.nullableGovernmentIdNfcScanInputDateStylesContainerAdapter.fromJson(reader);
             }

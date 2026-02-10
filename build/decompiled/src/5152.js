@@ -42,14 +42,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var _closure2_slot2 = var3;
         var2 = _closure1_slot3;
         var1 = function() { // Environment: var1
-            _fun46020: for (var _fun46020_ip = 0;;) switch (_fun46020_ip) {
+            _fun46013: for (var _fun46013_ip = 0;;) switch (_fun46013_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var1 = var2.getIsFirstLayoutComplete;
                     var1 = var1.bind(var2)();
                     if (!var1) {
-                        _fun46020_ip = 32;
-                        continue _fun46020
+                        _fun46013_ip = 32;
+                        continue _fun46013
                     }
                 case 20:
                     var2 = _closure2_slot2;
@@ -57,8 +57,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = !var2;
                 case 32:
                     if (!var1) {
-                        _fun46020_ip = 57;
-                        continue _fun46020
+                        _fun46013_ip = 57;
+                        continue _fun46013
                     }
                 case 35:
                     var2 = _closure2_slot2;
@@ -137,7 +137,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = _closure2_slot4;
             var0 = undefined;
             var1 = function() { // Environment: var1
-                _fun46024: for (var _fun46024_ip = 0;;) switch (_fun46024_ip) {
+                _fun46017: for (var _fun46017_ip = 0;;) switch (_fun46017_ip) {
                     case 0:
                         var1 = _closure2_slot0;
                         var2 = true;
@@ -145,8 +145,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = _closure2_slot1;
                         var1 = null;
                         if (!(var1 != var3)) {
-                            _fun46024_ip = 50;
-                            continue _fun46024
+                            _fun46017_ip = 50;
+                            continue _fun46017
                         }
                     case 25:
                         var4 = _closure2_slot1;

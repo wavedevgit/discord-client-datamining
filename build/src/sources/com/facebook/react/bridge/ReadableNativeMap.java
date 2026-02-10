@@ -78,8 +78,8 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public ReadableNativeMap() {
-        qr.o oVar = qr.o.f48091d;
-        this.keys$delegate = qr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.v
+        rr.o oVar = rr.o.f49209d;
+        this.keys$delegate = rr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.v
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 String[] keys_delegate$lambda$1;
@@ -87,7 +87,7 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
                 return keys_delegate$lambda$1;
             }
         });
-        this.localMap$delegate = qr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.w
+        this.localMap$delegate = rr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.w
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 HashMap localMap_delegate$lambda$2;
@@ -95,7 +95,7 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
                 return localMap_delegate$lambda$2;
             }
         });
-        this.localTypeMap$delegate = qr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.x
+        this.localTypeMap$delegate = rr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.x
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 HashMap localTypeMap_delegate$lambda$3;
@@ -144,7 +144,7 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
 
     private final Object getValue(String str) {
         if (hasKey(str)) {
-            Object c10 = db.a.c(getLocalMap().get(str));
+            Object c10 = eb.a.c(getLocalMap().get(str));
             Intrinsics.checkNotNullExpressionValue(c10, "assertNotNull(...)");
             return c10;
         }
@@ -434,13 +434,13 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
                 case 4:
                     break;
                 case 5:
-                    hashMap.put(str2, ((ReadableNativeMap) db.a.c(getMap(str2))).toHashMap());
+                    hashMap.put(str2, ((ReadableNativeMap) eb.a.c(getMap(str2))).toHashMap());
                     break;
                 case 6:
-                    hashMap.put(str2, ((ReadableArray) db.a.c(getArray(str2))).toArrayList());
+                    hashMap.put(str2, ((ReadableArray) eb.a.c(getArray(str2))).toArrayList());
                     break;
                 default:
-                    throw new qr.p();
+                    throw new rr.p();
             }
         }
         return hashMap;

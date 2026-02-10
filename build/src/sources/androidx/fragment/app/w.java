@@ -12,24 +12,24 @@ import android.view.ViewGroup;
 public class w implements LayoutInflater.Factory2 {
 
     /* renamed from: d  reason: collision with root package name */
-    final FragmentManager f4836d;
+    final FragmentManager f4533d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements View.OnAttachStateChangeListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ k0 f4837d;
+        final /* synthetic */ k0 f4534d;
 
         a(k0 k0Var) {
-            this.f4837d = k0Var;
+            this.f4534d = k0Var;
         }
 
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewAttachedToWindow(View view) {
-            Fragment k10 = this.f4837d.k();
-            this.f4837d.m();
-            t0.u((ViewGroup) k10.mView.getParent(), w.this.f4836d).q();
+            Fragment k10 = this.f4534d.k();
+            this.f4534d.m();
+            t0.u((ViewGroup) k10.mView.getParent(), w.this.f4533d).q();
         }
 
         @Override // android.view.View.OnAttachStateChangeListener
@@ -39,7 +39,7 @@ public class w implements LayoutInflater.Factory2 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w(FragmentManager fragmentManager) {
-        this.f4836d = fragmentManager;
+        this.f4533d = fragmentManager;
     }
 
     @Override // android.view.LayoutInflater.Factory
@@ -51,16 +51,16 @@ public class w implements LayoutInflater.Factory2 {
     public View onCreateView(View view, String str, Context context, AttributeSet attributeSet) {
         k0 A;
         if (FragmentContainerView.class.getName().equals(str)) {
-            return new FragmentContainerView(context, attributeSet, this.f4836d);
+            return new FragmentContainerView(context, attributeSet, this.f4533d);
         }
         if ("fragment".equals(str)) {
             String attributeValue = attributeSet.getAttributeValue(null, "class");
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f3.c.f22476a);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f3.c.f22431a);
             if (attributeValue == null) {
-                attributeValue = obtainStyledAttributes.getString(f3.c.f22477b);
+                attributeValue = obtainStyledAttributes.getString(f3.c.f22432b);
             }
-            int resourceId = obtainStyledAttributes.getResourceId(f3.c.f22478c, -1);
-            String string = obtainStyledAttributes.getString(f3.c.f22479d);
+            int resourceId = obtainStyledAttributes.getResourceId(f3.c.f22433c, -1);
+            String string = obtainStyledAttributes.getString(f3.c.f22434d);
             obtainStyledAttributes.recycle();
             if (attributeValue == null || !u.b(context.getClassLoader(), attributeValue)) {
                 return null;
@@ -69,35 +69,35 @@ public class w implements LayoutInflater.Factory2 {
             if (id2 == -1 && resourceId == -1 && string == null) {
                 throw new IllegalArgumentException(attributeSet.getPositionDescription() + ": Must specify unique android:id, android:tag, or have a parent with an id for " + attributeValue);
             }
-            Fragment n02 = resourceId != -1 ? this.f4836d.n0(resourceId) : null;
+            Fragment n02 = resourceId != -1 ? this.f4533d.n0(resourceId) : null;
             if (n02 == null && string != null) {
-                n02 = this.f4836d.o0(string);
+                n02 = this.f4533d.o0(string);
             }
             if (n02 == null && id2 != -1) {
-                n02 = this.f4836d.n0(id2);
+                n02 = this.f4533d.n0(id2);
             }
             if (n02 == null) {
-                n02 = this.f4836d.z0().a(context.getClassLoader(), attributeValue);
+                n02 = this.f4533d.z0().a(context.getClassLoader(), attributeValue);
                 n02.mFromLayout = true;
                 n02.mFragmentId = resourceId != 0 ? resourceId : id2;
                 n02.mContainerId = id2;
                 n02.mTag = string;
                 n02.mInLayout = true;
-                FragmentManager fragmentManager = this.f4836d;
+                FragmentManager fragmentManager = this.f4533d;
                 n02.mFragmentManager = fragmentManager;
                 n02.mHost = fragmentManager.B0();
-                n02.onInflate(this.f4836d.B0().g(), attributeSet, n02.mSavedFragmentState);
-                A = this.f4836d.l(n02);
+                n02.onInflate(this.f4533d.B0().g(), attributeSet, n02.mSavedFragmentState);
+                A = this.f4533d.l(n02);
                 if (FragmentManager.O0(2)) {
                     Log.v("FragmentManager", "Fragment " + n02 + " has been inflated via the <fragment> tag: id=0x" + Integer.toHexString(resourceId));
                 }
             } else if (!n02.mInLayout) {
                 n02.mInLayout = true;
-                FragmentManager fragmentManager2 = this.f4836d;
+                FragmentManager fragmentManager2 = this.f4533d;
                 n02.mFragmentManager = fragmentManager2;
                 n02.mHost = fragmentManager2.B0();
-                n02.onInflate(this.f4836d.B0().g(), attributeSet, n02.mSavedFragmentState);
-                A = this.f4836d.A(n02);
+                n02.onInflate(this.f4533d.B0().g(), attributeSet, n02.mSavedFragmentState);
+                A = this.f4533d.A(n02);
                 if (FragmentManager.O0(2)) {
                     Log.v("FragmentManager", "Retained Fragment " + n02 + " has been re-attached via the <fragment> tag: id=0x" + Integer.toHexString(resourceId));
                 }

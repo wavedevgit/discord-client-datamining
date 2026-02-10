@@ -356,7 +356,7 @@ public class TextAttributeProps {
             if ("ltr".equals(str)) {
                 return 0;
             }
-            p8.a.J(ReactConstants.TAG, "Invalid layoutDirection: " + str);
+            q8.a.J(ReactConstants.TAG, "Invalid layoutDirection: " + str);
         }
         return -1;
     }
@@ -390,7 +390,7 @@ public class TextAttributeProps {
             } else if ("center".equals(string)) {
                 return 1;
             } else {
-                p8.a.J(ReactConstants.TAG, "Invalid textAlign: " + string);
+                q8.a.J(ReactConstants.TAG, "Invalid textAlign: " + string);
             }
         }
         return 0;
@@ -642,7 +642,7 @@ public class TextAttributeProps {
                 this.mTextTransform = TextTransform.CAPITALIZE;
                 return;
             } else {
-                p8.a.J(ReactConstants.TAG, "Invalid textTransform: " + str);
+                q8.a.J(ReactConstants.TAG, "Invalid textTransform: " + str);
                 this.mTextTransform = TextTransform.NONE;
                 return;
             }

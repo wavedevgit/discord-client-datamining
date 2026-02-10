@@ -2,20 +2,29 @@ package md;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.google.android.exoplayer2.metadata.Metadata;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import md.c;
-import mi.j;
-import ne.w0;
-import ni.m;
+import java.util.Arrays;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c implements Metadata.b {
+public final class c extends i {
     public static final Parcelable.Creator<c> CREATOR = new a();
 
-    /* renamed from: d  reason: collision with root package name */
-    public final List f37106d;
+    /* renamed from: e  reason: collision with root package name */
+    public final String f36916e;
+
+    /* renamed from: i  reason: collision with root package name */
+    public final int f36917i;
+
+    /* renamed from: o  reason: collision with root package name */
+    public final int f36918o;
+
+    /* renamed from: p  reason: collision with root package name */
+    public final long f36919p;
+
+    /* renamed from: q  reason: collision with root package name */
+    public final long f36920q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private final i[] f36921r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -25,9 +34,7 @@ public final class c implements Metadata.b {
         @Override // android.os.Parcelable.Creator
         /* renamed from: a */
         public c createFromParcel(Parcel parcel) {
-            ArrayList arrayList = new ArrayList();
-            parcel.readList(arrayList, b.class.getClassLoader());
-            return new c(arrayList);
+            return new c(parcel);
         }
 
         @Override // android.os.Parcelable.Creator
@@ -37,114 +44,17 @@ public final class c implements Metadata.b {
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class b implements Parcelable {
-
-        /* renamed from: d  reason: collision with root package name */
-        public final long f37108d;
-
-        /* renamed from: e  reason: collision with root package name */
-        public final long f37109e;
-
-        /* renamed from: i  reason: collision with root package name */
-        public final int f37110i;
-
-        /* renamed from: o  reason: collision with root package name */
-        public static final Comparator f37107o = new Comparator() { // from class: md.d
-            @Override // java.util.Comparator
-            public final int compare(Object obj, Object obj2) {
-                int i10;
-                i10 = m.j().e(r1.f37108d, r2.f37108d).e(r1.f37109e, r2.f37109e).d(((c.b) obj).f37110i, ((c.b) obj2).f37110i).i();
-                return i10;
-            }
-        };
-        public static final Parcelable.Creator<b> CREATOR = new a();
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        class a implements Parcelable.Creator {
-            a() {
-            }
-
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: a */
-            public b createFromParcel(Parcel parcel) {
-                return new b(parcel.readLong(), parcel.readLong(), parcel.readInt());
-            }
-
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: b */
-            public b[] newArray(int i10) {
-                return new b[i10];
-            }
-        }
-
-        public b(long j10, long j11, int i10) {
-            boolean z10;
-            if (j10 < j11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            ne.a.a(z10);
-            this.f37108d = j10;
-            this.f37109e = j11;
-            this.f37110i = i10;
-        }
-
-        @Override // android.os.Parcelable
-        public int describeContents() {
-            return 0;
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj) {
-                return true;
-            }
-            if (obj != null && b.class == obj.getClass()) {
-                b bVar = (b) obj;
-                if (this.f37108d == bVar.f37108d && this.f37109e == bVar.f37109e && this.f37110i == bVar.f37110i) {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return j.b(Long.valueOf(this.f37108d), Long.valueOf(this.f37109e), Integer.valueOf(this.f37110i));
-        }
-
-        public String toString() {
-            return w0.D("Segment: startTimeMs=%d, endTimeMs=%d, speedDivisor=%d", Long.valueOf(this.f37108d), Long.valueOf(this.f37109e), Integer.valueOf(this.f37110i));
-        }
-
-        @Override // android.os.Parcelable
-        public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeLong(this.f37108d);
-            parcel.writeLong(this.f37109e);
-            parcel.writeInt(this.f37110i);
-        }
+    public c(String str, int i10, int i11, long j10, long j11, i[] iVarArr) {
+        super("CHAP");
+        this.f36916e = str;
+        this.f36917i = i10;
+        this.f36918o = i11;
+        this.f36919p = j10;
+        this.f36920q = j11;
+        this.f36921r = iVarArr;
     }
 
-    public c(List list) {
-        this.f37106d = list;
-        ne.a.a(!a(list));
-    }
-
-    private static boolean a(List list) {
-        if (list.isEmpty()) {
-            return false;
-        }
-        long j10 = ((b) list.get(0)).f37109e;
-        for (int i10 = 1; i10 < list.size(); i10++) {
-            if (((b) list.get(i10)).f37108d < j10) {
-                return true;
-            }
-            j10 = ((b) list.get(i10)).f37109e;
-        }
-        return false;
-    }
-
-    @Override // android.os.Parcelable
+    @Override // md.i, android.os.Parcelable
     public int describeContents() {
         return 0;
     }
@@ -154,21 +64,50 @@ public final class c implements Metadata.b {
             return true;
         }
         if (obj != null && c.class == obj.getClass()) {
-            return this.f37106d.equals(((c) obj).f37106d);
+            c cVar = (c) obj;
+            if (this.f36917i == cVar.f36917i && this.f36918o == cVar.f36918o && this.f36919p == cVar.f36919p && this.f36920q == cVar.f36920q && w0.c(this.f36916e, cVar.f36916e) && Arrays.equals(this.f36921r, cVar.f36921r)) {
+                return true;
+            }
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f37106d.hashCode();
-    }
-
-    public String toString() {
-        return "SlowMotion: segments=" + this.f37106d;
+        int i10;
+        int i11 = (((((((527 + this.f36917i) * 31) + this.f36918o) * 31) + ((int) this.f36919p)) * 31) + ((int) this.f36920q)) * 31;
+        String str = this.f36916e;
+        if (str != null) {
+            i10 = str.hashCode();
+        } else {
+            i10 = 0;
+        }
+        return i11 + i10;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeList(this.f37106d);
+        parcel.writeString(this.f36916e);
+        parcel.writeInt(this.f36917i);
+        parcel.writeInt(this.f36918o);
+        parcel.writeLong(this.f36919p);
+        parcel.writeLong(this.f36920q);
+        parcel.writeInt(this.f36921r.length);
+        for (i iVar : this.f36921r) {
+            parcel.writeParcelable(iVar, 0);
+        }
+    }
+
+    c(Parcel parcel) {
+        super("CHAP");
+        this.f36916e = (String) w0.j(parcel.readString());
+        this.f36917i = parcel.readInt();
+        this.f36918o = parcel.readInt();
+        this.f36919p = parcel.readLong();
+        this.f36920q = parcel.readLong();
+        int readInt = parcel.readInt();
+        this.f36921r = new i[readInt];
+        for (int i10 = 0; i10 < readInt; i10++) {
+            this.f36921r[i10] = (i) parcel.readParcelable(i.class.getClassLoader());
+        }
     }
 }

@@ -8,11 +8,7 @@ import com.discord.primitives.ChannelId$$serializer;
 import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import ft.b0;
-import jt.a2;
-import jt.h0;
-import jt.n2;
-import jt.p0;
+import gt.b0;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -20,9 +16,13 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
+import kt.a2;
+import kt.h0;
+import kt.n2;
+import kt.p0;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/contentnode/LinkContextData.BindUserMenu.$serializer", "Ljt/h0;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserMenu;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserMenu;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserMenu;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@qr.c
+@rr.c
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/contentnode/LinkContextData.BindUserMenu.$serializer", "Lkt/h0;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserMenu;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserMenu;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserMenu;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements h0 {
     @NotNull
@@ -50,13 +50,13 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
     private LinkContextData$BindUserMenu$$serializer() {
     }
 
-    @Override // jt.h0
+    @Override // kt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        jt.h hVar = jt.h.f31053a;
-        KSerializer u10 = gt.a.u(hVar);
-        p0 p0Var = p0.f31105a;
-        return new KSerializer[]{n2.f31089a, u10, UserId$$serializer.INSTANCE, gt.a.u(p0Var), gt.a.u(p0Var), gt.a.u(p0Var), gt.a.u(RoleColors$$serializer.INSTANCE), gt.a.u(hVar), gt.a.u(ChannelId$$serializer.INSTANCE)};
+        kt.h hVar = kt.h.f35145a;
+        KSerializer u10 = ht.a.u(hVar);
+        p0 p0Var = p0.f35197a;
+        return new KSerializer[]{n2.f35181a, u10, UserId$$serializer.INSTANCE, ht.a.u(p0Var), ht.a.u(p0Var), ht.a.u(p0Var), ht.a.u(RoleColors$$serializer.INSTANCE), ht.a.u(hVar), ht.a.u(ChannelId$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -79,8 +79,8 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
         String str2 = null;
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
-            jt.h hVar = jt.h.f31053a;
-            p0 p0Var = p0.f31105a;
+            kt.h hVar = kt.h.f35145a;
+            p0 p0Var = p0.f35197a;
             str = m10;
             bool = (Boolean) b10.n(serialDescriptor, 7, hVar, null);
             roleColors = (RoleColors) b10.n(serialDescriptor, 6, RoleColors$$serializer.INSTANCE, null);
@@ -114,7 +114,7 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
                         i11 = 7;
                         break;
                     case 1:
-                        bool4 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, bool4);
+                        bool4 = (Boolean) b10.n(serialDescriptor, 1, kt.h.f35145a, bool4);
                         i12 |= 2;
                         i11 = 7;
                         break;
@@ -124,17 +124,17 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
                         i11 = 7;
                         break;
                     case 3:
-                        num6 = (Integer) b10.n(serialDescriptor, 3, p0.f31105a, num6);
+                        num6 = (Integer) b10.n(serialDescriptor, 3, p0.f35197a, num6);
                         i12 |= 8;
                         i11 = 7;
                         break;
                     case 4:
-                        num5 = (Integer) b10.n(serialDescriptor, 4, p0.f31105a, num5);
+                        num5 = (Integer) b10.n(serialDescriptor, 4, p0.f35197a, num5);
                         i12 |= 16;
                         i11 = 7;
                         break;
                     case 5:
-                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f31105a, num4);
+                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f35197a, num4);
                         i12 |= 32;
                         i11 = 7;
                         continue;
@@ -143,7 +143,7 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
                         i12 |= 64;
                         break;
                     case 7:
-                        bool3 = (Boolean) b10.n(serialDescriptor, i11, jt.h.f31053a, bool3);
+                        bool3 = (Boolean) b10.n(serialDescriptor, i11, kt.h.f35145a, bool3);
                         i12 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     case 8:
@@ -169,13 +169,13 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
         return new LinkContextData.BindUserMenu(i10, str, bool2, userId, num3, num2, num, roleColors, bool, channelId, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // ft.o
+    @Override // gt.o
     public final void serialize(@NotNull Encoder encoder, @NotNull LinkContextData.BindUserMenu value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -185,7 +185,7 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
         b10.c(serialDescriptor);
     }
 
-    @Override // jt.h0
+    @Override // kt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

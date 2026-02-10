@@ -1,55 +1,30 @@
 package pu;
 
-import java.io.Closeable;
-import java.util.zip.Inflater;
+import java.util.List;
+import javax.net.ssl.X509TrustManager;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.LongCompanionObject;
-import okio.Buffer;
-import okio.Source;
-import qu.o;
+import mu.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements Closeable {
+public abstract class c {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f45716d;
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f44557a = new a(null);
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Buffer f45717e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Inflater f45718i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private final o f45719o;
-
-    public c(boolean z10) {
-        this.f45716d = z10;
-        Buffer buffer = new Buffer();
-        this.f45717e = buffer;
-        Inflater inflater = new Inflater(true);
-        this.f45718i = inflater;
-        this.f45719o = new o((Source) buffer, inflater);
-    }
-
-    public final void a(Buffer buffer) {
-        Intrinsics.checkNotNullParameter(buffer, "buffer");
-        if (this.f45717e.size() == 0) {
-            if (this.f45716d) {
-                this.f45718i.reset();
-            }
-            this.f45717e.B0(buffer);
-            this.f45717e.writeInt(65535);
-            long bytesRead = this.f45718i.getBytesRead() + this.f45717e.size();
-            do {
-                this.f45719o.a(buffer, LongCompanionObject.MAX_VALUE);
-            } while (this.f45718i.getBytesRead() < bytesRead);
-            return;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        throw new IllegalArgumentException("Failed requirement.");
+
+        public final c a(X509TrustManager trustManager) {
+            Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+            return h.f37655a.g().c(trustManager);
+        }
+
+        private a() {
+        }
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        this.f45719o.close();
-    }
+    public abstract List a(List list, String str);
 }

@@ -4,18 +4,18 @@ import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class l extends ts.a0 {
+public final class l extends us.a0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f35116p = AtomicIntegerFieldUpdater.newUpdater(l.class, "_decision$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f34825p = AtomicIntegerFieldUpdater.newUpdater(l.class, "_decision$volatile");
     private volatile /* synthetic */ int _decision$volatile;
 
     public l(CoroutineContext coroutineContext, Continuation continuation) {
         super(coroutineContext, continuation);
     }
 
-    private final boolean b1() {
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f35116p;
+    private final boolean c1() {
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f34825p;
         do {
             int i10 = atomicIntegerFieldUpdater.get(this);
             if (i10 != 0) {
@@ -24,12 +24,12 @@ public final class l extends ts.a0 {
                 }
                 throw new IllegalStateException("Already resumed");
             }
-        } while (!f35116p.compareAndSet(this, 0, 2));
+        } while (!f34825p.compareAndSet(this, 0, 2));
         return true;
     }
 
-    private final boolean c1() {
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f35116p;
+    private final boolean d1() {
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f34825p;
         do {
             int i10 = atomicIntegerFieldUpdater.get(this);
             if (i10 != 0) {
@@ -38,32 +38,32 @@ public final class l extends ts.a0 {
                 }
                 throw new IllegalStateException("Already suspended");
             }
-        } while (!f35116p.compareAndSet(this, 0, 1));
+        } while (!f34825p.compareAndSet(this, 0, 1));
         return true;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // ts.a0, kotlinx.coroutines.b0
+    @Override // us.a0, kotlinx.coroutines.b0
     public void F(Object obj) {
         S0(obj);
     }
 
-    @Override // ts.a0, kotlinx.coroutines.a
+    @Override // us.a0, kotlinx.coroutines.a
     protected void S0(Object obj) {
-        if (b1()) {
+        if (c1()) {
             return;
         }
-        ts.j.b(wr.b.c(this.f50860o), os.t.a(obj, this.f50860o));
+        us.j.b(xr.b.c(this.f51765o), ps.t.a(obj, this.f51765o));
     }
 
     public final Object Z0() {
-        if (c1()) {
-            return wr.b.f();
+        if (d1()) {
+            return xr.b.f();
         }
         Object h10 = c0.h(e0());
-        if (!(h10 instanceof os.r)) {
+        if (!(h10 instanceof ps.r)) {
             return h10;
         }
-        throw ((os.r) h10).f43573a;
+        throw ((ps.r) h10).f44530a;
     }
 }

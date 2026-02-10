@@ -1,21 +1,21 @@
 package net.time4j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class o implements rt.v {
+public abstract class o implements st.v {
 
     /* renamed from: d  reason: collision with root package name */
-    private final rt.p f39553d;
+    private final st.p f38645d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f39554e;
+    private final int f38646e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public o(rt.p pVar, int i10) {
-        this.f39553d = pVar;
-        this.f39554e = i10;
+    public o(st.p pVar, int i10) {
+        this.f38645d = pVar;
+        this.f38646e = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int a() {
-        return this.f39554e;
+        return this.f38646e;
     }
 }

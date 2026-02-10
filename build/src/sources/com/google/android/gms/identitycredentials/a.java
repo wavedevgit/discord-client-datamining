@@ -4,9 +4,9 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.ResultReceiver;
-import hf.b;
-import hf.c;
 import java.util.ArrayList;
+import jf.b;
+import jf.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a implements Parcelable.Creator {
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -45,7 +45,7 @@ public final class a implements Parcelable.Creator {
                     bundle = b.a(parcel, r10);
                 }
             } else {
-                arrayList = b.j(parcel, r10, xf.c.CREATOR);
+                arrayList = b.j(parcel, r10, yf.c.CREATOR);
             }
         }
         b.k(parcel, A);

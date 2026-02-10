@@ -44,7 +44,7 @@ public final class ColorPropConverter {
                 return Integer.valueOf(colorInstance.toArgb());
             }
         } catch (JSApplicationCausedNativeException e10) {
-            p8.a.M(ReactConstants.TAG, e10, "Error extracting color from WideGamut", new Object[0]);
+            q8.a.M(ReactConstants.TAG, e10, "Error extracting color from WideGamut", new Object[0]);
         }
         return INSTANCE.getColorInteger(obj, context);
     }
@@ -183,7 +183,7 @@ public final class ColorPropConverter {
             Integer color = getColor(obj, context);
             return color != null ? color.intValue() : i10;
         } catch (JSApplicationCausedNativeException e10) {
-            p8.a.M(ReactConstants.TAG, e10, "Error converting ColorValue", new Object[0]);
+            q8.a.M(ReactConstants.TAG, e10, "Error converting ColorValue", new Object[0]);
             return i10;
         }
     }

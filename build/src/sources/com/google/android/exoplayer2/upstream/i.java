@@ -10,31 +10,31 @@ public interface i {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f13416a;
+        public final int f13556a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f13417b;
+        public final int f13557b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f13418c;
+        public final int f13558c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f13419d;
+        public final int f13559d;
 
         public a(int i10, int i11, int i12, int i13) {
-            this.f13416a = i10;
-            this.f13417b = i11;
-            this.f13418c = i12;
-            this.f13419d = i13;
+            this.f13556a = i10;
+            this.f13557b = i11;
+            this.f13558c = i12;
+            this.f13559d = i13;
         }
 
         public boolean a(int i10) {
             if (i10 == 1) {
-                if (this.f13416a - this.f13417b <= 1) {
+                if (this.f13556a - this.f13557b <= 1) {
                     return false;
                 }
                 return true;
-            } else if (this.f13418c - this.f13419d <= 1) {
+            } else if (this.f13558c - this.f13559d <= 1) {
                 return false;
             } else {
                 return true;
@@ -46,10 +46,10 @@ public interface i {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f13420a;
+        public final int f13560a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f13421b;
+        public final long f13561b;
 
         public b(int i10, long j10) {
             boolean z10;
@@ -58,9 +58,9 @@ public interface i {
             } else {
                 z10 = false;
             }
-            ne.a.a(z10);
-            this.f13420a = i10;
-            this.f13421b = j10;
+            oe.a.a(z10);
+            this.f13560a = i10;
+            this.f13561b = j10;
         }
     }
 
@@ -68,22 +68,22 @@ public interface i {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final LoadEventInfo f13422a;
+        public final LoadEventInfo f13562a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final MediaLoadData f13423b;
+        public final MediaLoadData f13563b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final IOException f13424c;
+        public final IOException f13564c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f13425d;
+        public final int f13565d;
 
         public c(LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData, IOException iOException, int i10) {
-            this.f13422a = loadEventInfo;
-            this.f13423b = mediaLoadData;
-            this.f13424c = iOException;
-            this.f13425d = i10;
+            this.f13562a = loadEventInfo;
+            this.f13563b = mediaLoadData;
+            this.f13564c = iOException;
+            this.f13565d = i10;
         }
     }
 

@@ -114,11 +114,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 8;
     var8.marginTop = var9;
     var3.reconnectButton = var8;
-    var8 = {
-        'alignSelf': 'center',
-        'marginLeft': 16
-    };
-    var3.upsellImage = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
     var3 = function arg0() {
@@ -195,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var17[0] = var19;
         var12.contentTypes = var17;
         var16 = function arg0() {
-            _fun83246: for (var _fun83246_ip = 0;;) switch (_fun83246_ip) {
+            _fun83116: for (var _fun83116_ip = 0;;) switch (_fun83116_ip) {
                 case 0:
                     var0 = arg0;
                     var3 = var0.visibleContent;
@@ -203,8 +198,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot0;
                     var0 = null;
                     if (!(var3 === var2)) {
-                        _fun83246_ip = 54;
-                        continue _fun83246
+                        _fun83116_ip = 54;
+                        continue _fun83116
                     }
                 case 28:
                     var4 = _closure1_slot6;
@@ -282,4 +277,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.OneWayToTwoWayLinkUpsell = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 1369, 33, 1297, 671, 4682, 8252, 6008, 3942, 4875, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 1369, 33, 1297, 671, 4682, 8227, 6009, 3942, 4875, 1234, 2]);

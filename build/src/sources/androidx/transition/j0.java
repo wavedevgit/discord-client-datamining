@@ -6,10 +6,10 @@ import android.view.View;
 abstract class j0 extends i0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static boolean f5724d = true;
+    private static boolean f5421d = true;
 
     /* renamed from: e  reason: collision with root package name */
-    private static boolean f5725e = true;
+    private static boolean f5422e = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -28,22 +28,22 @@ abstract class j0 extends i0 {
 
     @Override // androidx.transition.i0
     public void g(View view, Matrix matrix) {
-        if (f5724d) {
+        if (f5421d) {
             try {
                 a.b(view, matrix);
             } catch (NoSuchMethodError unused) {
-                f5724d = false;
+                f5421d = false;
             }
         }
     }
 
     @Override // androidx.transition.i0
     public void h(View view, Matrix matrix) {
-        if (f5725e) {
+        if (f5422e) {
             try {
                 a.c(view, matrix);
             } catch (NoSuchMethodError unused) {
-                f5725e = false;
+                f5422e = false;
             }
         }
     }

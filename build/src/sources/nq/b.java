@@ -2,66 +2,58 @@ package nq;
 
 import android.content.Context;
 import android.view.View;
-import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
-import fq.e0;
-import fq.k5;
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import android.view.ViewGroup;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.withpersona.sdk2.inquiry.network.dto.ui.components.RemoteImage;
+import com.withpersona.sdk2.inquiry.steps.ui.components.f;
+import cq.s;
+import gq.m5;
+import gq.r4;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends View implements a {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final List f41196d;
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b(Context context) {
-        super(context);
-        Intrinsics.checkNotNullParameter(context, "context");
-        this.f41196d = new ArrayList();
-    }
-
-    @Override // nq.a
-    public void a(Map componentParams, boolean z10) {
-        boolean z11;
-        e0 e0Var;
-        Boolean value;
-        Intrinsics.checkNotNullParameter(componentParams, "componentParams");
-        int i10 = 8;
-        if (z10) {
-            setVisibility(8);
-            return;
-        }
-        loop0: while (true) {
-            z11 = false;
-            for (WeakReference weakReference : this.f41196d) {
-                k5 k5Var = (k5) weakReference.get();
-                JsonLogicBoolean jsonLogicBoolean = null;
-                if (k5Var instanceof e0) {
-                    e0Var = (e0) k5Var;
-                } else {
-                    e0Var = null;
-                }
-                if (e0Var != null) {
-                    jsonLogicBoolean = e0Var.getHidden();
-                }
-                if (jsonLogicBoolean != null && (value = jsonLogicBoolean.getValue(componentParams, k5Var)) != null) {
-                    z11 = value.booleanValue();
-                }
+public abstract class b {
+    public static final View b(RemoteImage remoteImage, ConstraintLayout container, boolean z10) {
+        Intrinsics.checkNotNullParameter(remoteImage, "<this>");
+        Intrinsics.checkNotNullParameter(container, "container");
+        Context context = container.getContext();
+        Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
+        final m5 m5Var = new m5(context);
+        View m10 = r4.m(f.k(remoteImage), m5Var, remoteImage);
+        container.addView(m10);
+        ViewGroup.LayoutParams layoutParams = m10.getLayoutParams();
+        if (layoutParams != null) {
+            ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
+            layoutParams2.f2573i = 0;
+            layoutParams2.f2595t = 0;
+            layoutParams2.f2599v = 0;
+            if (z10) {
+                layoutParams2.f2579l = 0;
             }
-            break loop0;
+            m10.setLayoutParams(layoutParams2);
+            s.b(container, new Function0() { // from class: nq.a
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    Unit d10;
+                    d10 = b.d(m5.this);
+                    return d10;
+                }
+            });
+            return m10;
         }
-        if (!z11) {
-            i10 = 0;
-        }
-        setVisibility(i10);
+        throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
     }
 
-    @NotNull
-    public final List<WeakReference<k5>> getAssociatedComponents() {
-        return this.f41196d;
+    public static /* synthetic */ View c(RemoteImage remoteImage, ConstraintLayout constraintLayout, boolean z10, int i10, Object obj) {
+        if ((i10 & 2) != 0) {
+            z10 = false;
+        }
+        return b(remoteImage, constraintLayout, z10);
+    }
+
+    public static final Unit d(m5 m5Var) {
+        m5Var.c();
+        return Unit.f31765a;
     }
 }

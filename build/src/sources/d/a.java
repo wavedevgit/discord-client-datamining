@@ -10,20 +10,20 @@ import org.jetbrains.annotations.NotNull;
 public final class a implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f20057d;
+    private final int f20290d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Intent f20058e;
+    private final Intent f20291e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final b f20056i = new b(null);
+    public static final b f20289i = new b(null);
     @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new C0263a();
+    public static final Parcelable.Creator<a> CREATOR = new C0300a();
 
     /* renamed from: d.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0263a implements Parcelable.Creator {
-        C0263a() {
+    public static final class C0300a implements Parcelable.Creator {
+        C0300a() {
         }
 
         @Override // android.os.Parcelable.Creator
@@ -61,16 +61,16 @@ public final class a implements Parcelable {
     }
 
     public a(int i10, Intent intent) {
-        this.f20057d = i10;
-        this.f20058e = intent;
+        this.f20290d = i10;
+        this.f20291e = intent;
     }
 
     public final Intent a() {
-        return this.f20058e;
+        return this.f20291e;
     }
 
     public final int b() {
-        return this.f20057d;
+        return this.f20290d;
     }
 
     @Override // android.os.Parcelable
@@ -79,21 +79,21 @@ public final class a implements Parcelable {
     }
 
     public String toString() {
-        return "ActivityResult{resultCode=" + f20056i.a(this.f20057d) + ", data=" + this.f20058e + '}';
+        return "ActivityResult{resultCode=" + f20289i.a(this.f20290d) + ", data=" + this.f20291e + '}';
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel dest, int i10) {
         int i11;
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeInt(this.f20057d);
-        if (this.f20058e == null) {
+        dest.writeInt(this.f20290d);
+        if (this.f20291e == null) {
             i11 = 0;
         } else {
             i11 = 1;
         }
         dest.writeInt(i11);
-        Intent intent = this.f20058e;
+        Intent intent = this.f20291e;
         if (intent != null) {
             intent.writeToParcel(dest, i10);
         }

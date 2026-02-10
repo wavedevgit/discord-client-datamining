@@ -1,17 +1,54 @@
 package ac;
 
-import android.content.Context;
+import java.util.Arrays;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class h {
-    public static h a(Context context, jc.a aVar, jc.a aVar2, String str) {
-        return new c(context, aVar, aVar2, str);
+public final class h {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final yb.c f605a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final byte[] f606b;
+
+    public h(yb.c cVar, byte[] bArr) {
+        if (cVar != null) {
+            if (bArr != null) {
+                this.f605a = cVar;
+                this.f606b = bArr;
+                return;
+            }
+            throw new NullPointerException("bytes is null");
+        }
+        throw new NullPointerException("encoding is null");
     }
 
-    public abstract Context b();
+    public byte[] a() {
+        return this.f606b;
+    }
 
-    public abstract String c();
+    public yb.c b() {
+        return this.f605a;
+    }
 
-    public abstract jc.a d();
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof h)) {
+            return false;
+        }
+        h hVar = (h) obj;
+        if (!this.f605a.equals(hVar.f605a)) {
+            return false;
+        }
+        return Arrays.equals(this.f606b, hVar.f606b);
+    }
 
-    public abstract jc.a e();
+    public int hashCode() {
+        return ((this.f605a.hashCode() ^ 1000003) * 1000003) ^ Arrays.hashCode(this.f606b);
+    }
+
+    public String toString() {
+        return "EncodedPayload{encoding=" + this.f605a + ", bytes=[...]}";
+    }
 }

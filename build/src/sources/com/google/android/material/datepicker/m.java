@@ -11,25 +11,25 @@ public final class m implements Comparable, Parcelable {
     public static final Parcelable.Creator<m> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Calendar f14944d;
+    private final Calendar f15084d;
 
     /* renamed from: e  reason: collision with root package name */
-    final int f14945e;
+    final int f15085e;
 
     /* renamed from: i  reason: collision with root package name */
-    final int f14946i;
+    final int f15086i;
 
     /* renamed from: o  reason: collision with root package name */
-    final int f14947o;
+    final int f15087o;
 
     /* renamed from: p  reason: collision with root package name */
-    final int f14948p;
+    final int f15088p;
 
     /* renamed from: q  reason: collision with root package name */
-    final long f14949q;
+    final long f15089q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f14950r;
+    private String f15090r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Parcelable.Creator {
@@ -52,12 +52,12 @@ public final class m implements Comparable, Parcelable {
     private m(Calendar calendar) {
         calendar.set(5, 1);
         Calendar c10 = t.c(calendar);
-        this.f14944d = c10;
-        this.f14945e = c10.get(2);
-        this.f14946i = c10.get(1);
-        this.f14947o = c10.getMaximum(7);
-        this.f14948p = c10.getActualMaximum(5);
-        this.f14949q = c10.getTimeInMillis();
+        this.f15084d = c10;
+        this.f15085e = c10.get(2);
+        this.f15086i = c10.get(1);
+        this.f15087o = c10.getMaximum(7);
+        this.f15088p = c10.getActualMaximum(5);
+        this.f15089q = c10.getTimeInMillis();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -83,7 +83,7 @@ public final class m implements Comparable, Parcelable {
     @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(m mVar) {
-        return this.f14944d.compareTo(mVar.f14944d);
+        return this.f15084d.compareTo(mVar.f15084d);
     }
 
     @Override // android.os.Parcelable
@@ -99,7 +99,7 @@ public final class m implements Comparable, Parcelable {
             return false;
         }
         m mVar = (m) obj;
-        if (this.f14945e == mVar.f14945e && this.f14946i == mVar.f14946i) {
+        if (this.f15085e == mVar.f15085e && this.f15086i == mVar.f15086i) {
             return true;
         }
         return false;
@@ -107,66 +107,66 @@ public final class m implements Comparable, Parcelable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int h(int i10) {
-        int i11 = this.f14944d.get(7);
+        int i11 = this.f15084d.get(7);
         if (i10 <= 0) {
-            i10 = this.f14944d.getFirstDayOfWeek();
+            i10 = this.f15084d.getFirstDayOfWeek();
         }
         int i12 = i11 - i10;
         if (i12 < 0) {
-            return i12 + this.f14947o;
+            return i12 + this.f15087o;
         }
         return i12;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f14945e), Integer.valueOf(this.f14946i)});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f15085e), Integer.valueOf(this.f15086i)});
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public long i(int i10) {
-        Calendar c10 = t.c(this.f14944d);
+        Calendar c10 = t.c(this.f15084d);
         c10.set(5, i10);
         return c10.getTimeInMillis();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public int j(long j10) {
-        Calendar c10 = t.c(this.f14944d);
+    public int l(long j10) {
+        Calendar c10 = t.c(this.f15084d);
         c10.setTimeInMillis(j10);
         return c10.get(5);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String o() {
-        if (this.f14950r == null) {
-            this.f14950r = e.f(this.f14944d.getTimeInMillis());
+        if (this.f15090r == null) {
+            this.f15090r = e.f(this.f15084d.getTimeInMillis());
         }
-        return this.f14950r;
+        return this.f15090r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public long q() {
-        return this.f14944d.getTimeInMillis();
+        return this.f15084d.getTimeInMillis();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m r(int i10) {
-        Calendar c10 = t.c(this.f14944d);
+        Calendar c10 = t.c(this.f15084d);
         c10.add(2, i10);
         return new m(c10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int t(m mVar) {
-        if (this.f14944d instanceof GregorianCalendar) {
-            return ((mVar.f14946i - this.f14946i) * 12) + (mVar.f14945e - this.f14945e);
+        if (this.f15084d instanceof GregorianCalendar) {
+            return ((mVar.f15086i - this.f15086i) * 12) + (mVar.f15085e - this.f15085e);
         }
         throw new IllegalArgumentException("Only Gregorian calendars are supported.");
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f14946i);
-        parcel.writeInt(this.f14945e);
+        parcel.writeInt(this.f15086i);
+        parcel.writeInt(this.f15085e);
     }
 }

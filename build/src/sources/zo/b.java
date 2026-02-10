@@ -1,22 +1,11 @@
 package zo;
 
-import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import yg.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final /* synthetic */ class b implements g {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ Function1 f56457a;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b(Function1 function) {
-        Intrinsics.checkNotNullParameter(function, "function");
-        this.f56457a = function;
-    }
-
-    @Override // yg.g
-    public final /* synthetic */ void onSuccess(Object obj) {
-        this.f56457a.invoke(obj);
+public final class b extends Exception {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(String message) {
+        super(message);
+        Intrinsics.checkNotNullParameter(message, "message");
     }
 }

@@ -1,7 +1,5 @@
 package com.google.android.material.floatingactionbutton;
 
-import ah.d;
-import ah.j;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
@@ -21,61 +19,63 @@ import androidx.appcompat.widget.AppCompatImageHelper;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.h0;
 import b2.e;
-import bh.g;
+import bh.d;
+import bh.j;
+import ch.g;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.floatingactionbutton.b;
 import com.google.android.material.internal.p;
 import java.util.List;
-import qh.k;
-import qh.n;
+import rh.k;
+import rh.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayout.b {
-    private static final int C = j.f804h;
-    private final jh.b A;
+public class FloatingActionButton extends p implements kh.a, n, CoordinatorLayout.b {
+    private static final int C = j.f6792h;
+    private final kh.b A;
     private com.google.android.material.floatingactionbutton.b B;
 
     /* renamed from: e  reason: collision with root package name */
-    private ColorStateList f14981e;
+    private ColorStateList f15121e;
 
     /* renamed from: i  reason: collision with root package name */
-    private PorterDuff.Mode f14982i;
+    private PorterDuff.Mode f15122i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ColorStateList f14983o;
+    private ColorStateList f15123o;
 
     /* renamed from: p  reason: collision with root package name */
-    private PorterDuff.Mode f14984p;
+    private PorterDuff.Mode f15124p;
 
     /* renamed from: q  reason: collision with root package name */
-    private ColorStateList f14985q;
+    private ColorStateList f15125q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f14986r;
+    private int f15126r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f14987s;
+    private int f15127s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f14988t;
+    private int f15128t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f14989u;
+    private int f15129u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f14990v;
+    private int f15130v;
 
     /* renamed from: w  reason: collision with root package name */
-    boolean f14991w;
+    boolean f15131w;
 
     /* renamed from: x  reason: collision with root package name */
-    final Rect f14992x;
+    final Rect f15132x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Rect f14993y;
+    private final Rect f15133y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final AppCompatImageHelper f14994z;
+    private final AppCompatImageHelper f15134z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class Behavior extends BaseBehavior<FloatingActionButton> {
@@ -113,32 +113,32 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class b implements ph.b {
+    public class b implements qh.b {
         b() {
         }
 
-        @Override // ph.b
+        @Override // qh.b
         public void a(int i10, int i11, int i12, int i13) {
-            FloatingActionButton.this.f14992x.set(i10, i11, i12, i13);
+            FloatingActionButton.this.f15132x.set(i10, i11, i12, i13);
             FloatingActionButton floatingActionButton = FloatingActionButton.this;
-            floatingActionButton.setPadding(i10 + floatingActionButton.f14989u, i11 + FloatingActionButton.this.f14989u, i12 + FloatingActionButton.this.f14989u, i13 + FloatingActionButton.this.f14989u);
+            floatingActionButton.setPadding(i10 + floatingActionButton.f15129u, i11 + FloatingActionButton.this.f15129u, i12 + FloatingActionButton.this.f15129u, i13 + FloatingActionButton.this.f15129u);
         }
 
-        @Override // ph.b
+        @Override // qh.b
         public void b(Drawable drawable) {
             if (drawable != null) {
                 FloatingActionButton.super.setBackgroundDrawable(drawable);
             }
         }
 
-        @Override // ph.b
+        @Override // qh.b
         public boolean c() {
-            return FloatingActionButton.this.f14991w;
+            return FloatingActionButton.this.f15131w;
         }
     }
 
     public FloatingActionButton(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, ah.b.f659u);
+        this(context, attributeSet, bh.b.f6647u);
     }
 
     private com.google.android.material.floatingactionbutton.b e() {
@@ -146,16 +146,16 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     }
 
     private int g(int i10) {
-        int i11 = this.f14988t;
+        int i11 = this.f15128t;
         if (i11 != 0) {
             return i11;
         }
         Resources resources = getResources();
         if (i10 != -1) {
             if (i10 != 1) {
-                return resources.getDimensionPixelSize(d.f681d);
+                return resources.getDimensionPixelSize(d.f6669d);
             }
-            return resources.getDimensionPixelSize(d.f679c);
+            return resources.getDimensionPixelSize(d.f6667c);
         } else if (Math.max(resources.getConfiguration().screenWidthDp, resources.getConfiguration().screenHeightDp) < 470) {
             return g(1);
         } else {
@@ -178,7 +178,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
     private void j(Rect rect) {
         int i10 = rect.left;
-        Rect rect2 = this.f14992x;
+        Rect rect2 = this.f15132x;
         rect.left = i10 + rect2.left;
         rect.top += rect2.top;
         rect.right -= rect2.right;
@@ -190,13 +190,13 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
         if (drawable == null) {
             return;
         }
-        ColorStateList colorStateList = this.f14983o;
+        ColorStateList colorStateList = this.f15123o;
         if (colorStateList == null) {
             s1.a.c(drawable);
             return;
         }
         int colorForState = colorStateList.getColorForState(getDrawableState(), 0);
-        PorterDuff.Mode mode = this.f14984p;
+        PorterDuff.Mode mode = this.f15124p;
         if (mode == null) {
             mode = PorterDuff.Mode.SRC_IN;
         }
@@ -207,7 +207,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
         return null;
     }
 
-    @Override // jh.a
+    @Override // kh.a
     public boolean a() {
         return this.A.c();
     }
@@ -225,12 +225,12 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
     @Override // android.view.View
     public ColorStateList getBackgroundTintList() {
-        return this.f14981e;
+        return this.f15121e;
     }
 
     @Override // android.view.View
     public PorterDuff.Mode getBackgroundTintMode() {
-        return this.f14982i;
+        return this.f15122i;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.b
@@ -256,7 +256,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     }
 
     public int getCustomSize() {
-        return this.f14988t;
+        return this.f15128t;
     }
 
     public int getExpandedComponentIdHint() {
@@ -269,7 +269,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
     @Deprecated
     public int getRippleColor() {
-        ColorStateList colorStateList = this.f14985q;
+        ColorStateList colorStateList = this.f15125q;
         if (colorStateList != null) {
             return colorStateList.getDefaultColor();
         }
@@ -277,7 +277,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     }
 
     public ColorStateList getRippleColorStateList() {
-        return this.f14985q;
+        return this.f15125q;
     }
 
     @NonNull
@@ -290,12 +290,12 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     }
 
     public int getSize() {
-        return this.f14987s;
+        return this.f15127s;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int getSizeDimension() {
-        return g(this.f14987s);
+        return g(this.f15127s);
     }
 
     public ColorStateList getSupportBackgroundTintList() {
@@ -307,15 +307,15 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     }
 
     public ColorStateList getSupportImageTintList() {
-        return this.f14983o;
+        return this.f15123o;
     }
 
     public PorterDuff.Mode getSupportImageTintMode() {
-        return this.f14984p;
+        return this.f15124p;
     }
 
     public boolean getUseCompatPadding() {
-        return this.f14991w;
+        return this.f15131w;
     }
 
     void i(a aVar, boolean z10) {
@@ -347,22 +347,22 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     @Override // android.widget.ImageView, android.view.View
     protected void onMeasure(int i10, int i11) {
         int sizeDimension = getSizeDimension();
-        this.f14989u = (sizeDimension - this.f14990v) / 2;
+        this.f15129u = (sizeDimension - this.f15130v) / 2;
         getImpl().c0();
         int min = Math.min(View.resolveSize(sizeDimension, i10), View.resolveSize(sizeDimension, i11));
-        Rect rect = this.f14992x;
+        Rect rect = this.f15132x;
         setMeasuredDimension(rect.left + min + rect.right, min + rect.top + rect.bottom);
     }
 
     @Override // android.view.View
     protected void onRestoreInstanceState(Parcelable parcelable) {
-        if (!(parcelable instanceof sh.a)) {
+        if (!(parcelable instanceof th.a)) {
             super.onRestoreInstanceState(parcelable);
             return;
         }
-        sh.a aVar = (sh.a) parcelable;
+        th.a aVar = (th.a) parcelable;
         super.onRestoreInstanceState(aVar.a());
-        this.A.d((Bundle) e.g((Bundle) aVar.f50013i.get("expandableWidgetHelper")));
+        this.A.d((Bundle) e.g((Bundle) aVar.f50854i.get("expandableWidgetHelper")));
     }
 
     @Override // android.view.View
@@ -371,16 +371,16 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
         if (onSaveInstanceState == null) {
             onSaveInstanceState = new Bundle();
         }
-        sh.a aVar = new sh.a(onSaveInstanceState);
-        aVar.f50013i.put("expandableWidgetHelper", this.A.e());
+        th.a aVar = new th.a(onSaveInstanceState);
+        aVar.f50854i.put("expandableWidgetHelper", this.A.e());
         return aVar;
     }
 
     @Override // android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         if (motionEvent.getAction() == 0) {
-            h(this.f14993y);
-            if (!this.f14993y.contains((int) motionEvent.getX(), (int) motionEvent.getY())) {
+            h(this.f15133y);
+            if (!this.f15133y.contains((int) motionEvent.getX(), (int) motionEvent.getY())) {
                 return false;
             }
         }
@@ -404,16 +404,16 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
     @Override // android.view.View
     public void setBackgroundTintList(ColorStateList colorStateList) {
-        if (this.f14981e != colorStateList) {
-            this.f14981e = colorStateList;
+        if (this.f15121e != colorStateList) {
+            this.f15121e = colorStateList;
             getImpl().I(colorStateList);
         }
     }
 
     @Override // android.view.View
     public void setBackgroundTintMode(PorterDuff.Mode mode) {
-        if (this.f14982i != mode) {
-            this.f14982i = mode;
+        if (this.f15122i != mode) {
+            this.f15122i = mode;
             getImpl().J(mode);
         }
     }
@@ -444,8 +444,8 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
     public void setCustomSize(int i10) {
         if (i10 >= 0) {
-            if (i10 != this.f14988t) {
-                this.f14988t = i10;
+            if (i10 != this.f15128t) {
+                this.f15128t = i10;
                 requestLayout();
                 return;
             }
@@ -484,7 +484,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
         if (getDrawable() != drawable) {
             super.setImageDrawable(drawable);
             getImpl().b0();
-            if (this.f14983o != null) {
+            if (this.f15123o != null) {
                 k();
             }
         }
@@ -492,12 +492,12 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
     @Override // android.widget.ImageView
     public void setImageResource(int i10) {
-        this.f14994z.i(i10);
+        this.f15134z.i(i10);
         k();
     }
 
     public void setMaxImageSize(int i10) {
-        this.f14990v = i10;
+        this.f15130v = i10;
         getImpl().P(i10);
     }
 
@@ -521,7 +521,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
         getImpl().T(z10);
     }
 
-    @Override // qh.n
+    @Override // rh.n
     public void setShapeAppearanceModel(@NonNull k kVar) {
         getImpl().U(kVar);
     }
@@ -535,9 +535,9 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     }
 
     public void setSize(int i10) {
-        this.f14988t = 0;
-        if (i10 != this.f14987s) {
-            this.f14987s = i10;
+        this.f15128t = 0;
+        if (i10 != this.f15127s) {
+            this.f15127s = i10;
             requestLayout();
         }
     }
@@ -551,15 +551,15 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     }
 
     public void setSupportImageTintList(ColorStateList colorStateList) {
-        if (this.f14983o != colorStateList) {
-            this.f14983o = colorStateList;
+        if (this.f15123o != colorStateList) {
+            this.f15123o = colorStateList;
             k();
         }
     }
 
     public void setSupportImageTintMode(PorterDuff.Mode mode) {
-        if (this.f14984p != mode) {
-            this.f14984p = mode;
+        if (this.f15124p != mode) {
+            this.f15124p = mode;
             k();
         }
     }
@@ -583,8 +583,8 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     }
 
     public void setUseCompatPadding(boolean z10) {
-        if (this.f14991w != z10) {
-            this.f14991w = z10;
+        if (this.f15131w != z10) {
+            this.f15131w = z10;
             getImpl().z();
         }
     }
@@ -598,13 +598,13 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     protected static class BaseBehavior<T extends FloatingActionButton> extends CoordinatorLayout.c {
 
         /* renamed from: d  reason: collision with root package name */
-        private Rect f14995d;
+        private Rect f15135d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f14996e;
+        private boolean f15136e;
 
         public BaseBehavior() {
-            this.f14996e = true;
+            this.f15136e = true;
         }
 
         private static boolean J(View view) {
@@ -617,7 +617,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
         private void K(CoordinatorLayout coordinatorLayout, FloatingActionButton floatingActionButton) {
             int i10;
-            Rect rect = floatingActionButton.f14992x;
+            Rect rect = floatingActionButton.f15132x;
             if (rect != null && rect.centerX() > 0 && rect.centerY() > 0) {
                 CoordinatorLayout.f fVar = (CoordinatorLayout.f) floatingActionButton.getLayoutParams();
                 int i11 = 0;
@@ -644,7 +644,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
         private boolean N(View view, FloatingActionButton floatingActionButton) {
             CoordinatorLayout.f fVar = (CoordinatorLayout.f) floatingActionButton.getLayoutParams();
-            if (!this.f14996e || fVar.e() != view.getId() || floatingActionButton.getUserSetVisibility() != 0) {
+            if (!this.f15136e || fVar.e() != view.getId() || floatingActionButton.getUserSetVisibility() != 0) {
                 return false;
             }
             return true;
@@ -654,10 +654,10 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
             if (!N(appBarLayout, floatingActionButton)) {
                 return false;
             }
-            if (this.f14995d == null) {
-                this.f14995d = new Rect();
+            if (this.f15135d == null) {
+                this.f15135d = new Rect();
             }
-            Rect rect = this.f14995d;
+            Rect rect = this.f15135d;
             com.google.android.material.internal.b.a(coordinatorLayout, appBarLayout, rect);
             if (rect.bottom <= appBarLayout.getMinimumHeightForVisibleOverlappingContent()) {
                 floatingActionButton.i(null, false);
@@ -682,7 +682,7 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
         @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
         /* renamed from: I */
         public boolean f(CoordinatorLayout coordinatorLayout, FloatingActionButton floatingActionButton, Rect rect) {
-            Rect rect2 = floatingActionButton.f14992x;
+            Rect rect2 = floatingActionButton.f15132x;
             rect.set(floatingActionButton.getLeft() + rect2.left, floatingActionButton.getTop() + rect2.top, floatingActionButton.getRight() - rect2.right, floatingActionButton.getBottom() - rect2.bottom);
             return true;
         }
@@ -725,15 +725,15 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
 
         @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
         public void k(CoordinatorLayout.f fVar) {
-            if (fVar.f3309h == 0) {
-                fVar.f3309h = 80;
+            if (fVar.f3006h == 0) {
+                fVar.f3006h = 80;
             }
         }
 
         public BaseBehavior(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ah.k.f876f2);
-            this.f14996e = obtainStyledAttributes.getBoolean(ah.k.f886g2, true);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, bh.k.f6864f2);
+            this.f15136e = obtainStyledAttributes.getBoolean(bh.k.f6874g2, true);
             obtainStyledAttributes.recycle();
         }
     }
@@ -747,86 +747,86 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
         /*
             r10 = this;
             int r4 = com.google.android.material.floatingactionbutton.FloatingActionButton.C
-            android.content.Context r11 = th.a.c(r11, r12, r13, r4)
+            android.content.Context r11 = uh.a.c(r11, r12, r13, r4)
             r10.<init>(r11, r12, r13)
             android.graphics.Rect r11 = new android.graphics.Rect
             r11.<init>()
-            r10.f14992x = r11
+            r10.f15132x = r11
             android.graphics.Rect r11 = new android.graphics.Rect
             r11.<init>()
-            r10.f14993y = r11
+            r10.f15133y = r11
             android.content.Context r0 = r10.getContext()
-            int[] r2 = ah.k.P1
+            int[] r2 = bh.k.P1
             r11 = 0
             int[] r5 = new int[r11]
             r1 = r12
             r3 = r13
             android.content.res.TypedArray r12 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r13 = ah.k.R1
-            android.content.res.ColorStateList r13 = nh.c.a(r0, r12, r13)
-            r10.f14981e = r13
-            int r13 = ah.k.S1
+            int r13 = bh.k.R1
+            android.content.res.ColorStateList r13 = oh.c.a(r0, r12, r13)
+            r10.f15121e = r13
+            int r13 = bh.k.S1
             r2 = -1
             int r13 = r12.getInt(r13, r2)
             r5 = 0
             android.graphics.PorterDuff$Mode r13 = com.google.android.material.internal.o.i(r13, r5)
-            r10.f14982i = r13
-            int r13 = ah.k.f846c2
-            android.content.res.ColorStateList r13 = nh.c.a(r0, r12, r13)
-            r10.f14985q = r13
-            int r13 = ah.k.X1
+            r10.f15122i = r13
+            int r13 = bh.k.f6834c2
+            android.content.res.ColorStateList r13 = oh.c.a(r0, r12, r13)
+            r10.f15125q = r13
+            int r13 = bh.k.X1
             int r13 = r12.getInt(r13, r2)
-            r10.f14987s = r13
-            int r13 = ah.k.W1
+            r10.f15127s = r13
+            int r13 = bh.k.W1
             int r13 = r12.getDimensionPixelSize(r13, r11)
-            r10.f14988t = r13
-            int r13 = ah.k.T1
+            r10.f15128t = r13
+            int r13 = bh.k.T1
             int r13 = r12.getDimensionPixelSize(r13, r11)
-            r10.f14986r = r13
-            int r13 = ah.k.U1
+            r10.f15126r = r13
+            int r13 = bh.k.U1
             r2 = 0
             float r13 = r12.getDimension(r13, r2)
-            int r5 = ah.k.Z1
+            int r5 = bh.k.Z1
             float r5 = r12.getDimension(r5, r2)
-            int r6 = ah.k.f836b2
+            int r6 = bh.k.f6824b2
             float r2 = r12.getDimension(r6, r2)
-            int r6 = ah.k.f866e2
+            int r6 = bh.k.f6854e2
             boolean r6 = r12.getBoolean(r6, r11)
-            r10.f14991w = r6
+            r10.f15131w = r6
             android.content.res.Resources r6 = r10.getResources()
-            int r7 = ah.d.X
+            int r7 = bh.d.X
             int r6 = r6.getDimensionPixelSize(r7)
-            int r7 = ah.k.f826a2
+            int r7 = bh.k.f6814a2
             int r7 = r12.getDimensionPixelSize(r7, r11)
             r10.setMaxImageSize(r7)
-            int r7 = ah.k.f856d2
-            bh.g r7 = bh.g.b(r0, r12, r7)
-            int r8 = ah.k.Y1
-            bh.g r8 = bh.g.b(r0, r12, r8)
-            qh.c r9 = qh.k.f47874m
-            qh.k$b r0 = qh.k.g(r0, r1, r3, r4, r9)
-            qh.k r0 = r0.m()
-            int r4 = ah.k.V1
+            int r7 = bh.k.f6844d2
+            ch.g r7 = ch.g.b(r0, r12, r7)
+            int r8 = bh.k.Y1
+            ch.g r8 = ch.g.b(r0, r12, r8)
+            rh.c r9 = rh.k.f48992m
+            rh.k$b r0 = rh.k.g(r0, r1, r3, r4, r9)
+            rh.k r0 = r0.m()
+            int r4 = bh.k.V1
             boolean r11 = r12.getBoolean(r4, r11)
-            int r4 = ah.k.Q1
+            int r4 = bh.k.Q1
             r9 = 1
             boolean r4 = r12.getBoolean(r4, r9)
             r10.setEnabled(r4)
             r12.recycle()
             androidx.appcompat.widget.AppCompatImageHelper r12 = new androidx.appcompat.widget.AppCompatImageHelper
             r12.<init>(r10)
-            r10.f14994z = r12
+            r10.f15134z = r12
             r12.g(r1, r3)
-            jh.b r12 = new jh.b
+            kh.b r12 = new kh.b
             r12.<init>(r10)
             r10.A = r12
             com.google.android.material.floatingactionbutton.b r12 = r10.getImpl()
             r12.U(r0)
             com.google.android.material.floatingactionbutton.b r12 = r10.getImpl()
-            android.content.res.ColorStateList r0 = r10.f14981e
-            android.graphics.PorterDuff$Mode r1 = r10.f14982i
-            android.content.res.ColorStateList r3 = r10.f14985q
-            int r4 = r10.f14986r
+            android.content.res.ColorStateList r0 = r10.f15121e
+            android.graphics.PorterDuff$Mode r1 = r10.f15122i
+            android.content.res.ColorStateList r3 = r10.f15125q
+            int r4 = r10.f15126r
             r12.u(r0, r1, r3, r4)
             com.google.android.material.floatingactionbutton.b r12 = r10.getImpl()
             r12.Q(r6)
@@ -850,9 +850,9 @@ public class FloatingActionButton extends p implements jh.a, n, CoordinatorLayou
     }
 
     public void setRippleColor(ColorStateList colorStateList) {
-        if (this.f14985q != colorStateList) {
-            this.f14985q = colorStateList;
-            getImpl().S(this.f14985q);
+        if (this.f15125q != colorStateList) {
+            this.f15125q = colorStateList;
+            getImpl().S(this.f15125q);
         }
     }
 }

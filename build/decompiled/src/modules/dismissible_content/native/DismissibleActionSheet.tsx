@@ -83,23 +83,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[1] = var4;
         var0 = function() { // Environment: var0
             var0 = function() { // Environment: var0
-                _fun75275: for (var _fun75275_ip = 0;;) switch (_fun75275_ip) {
+                _fun75140: for (var _fun75140_ip = 0;;) switch (_fun75140_ip) {
                     case 0:
                         var1 = _closure2_slot0;
                         var2 = var1.hideSheetOnUnmount;
                         var1 = null;
                         var1 = var1 != var2;
                         if (!var1) {
-                            _fun75275_ip = 32;
-                            continue _fun75275
+                            _fun75140_ip = 32;
+                            continue _fun75140
                         }
                     case 22:
                         var2 = _closure2_slot0;
                         var1 = var2.hideSheetOnUnmount;
                     case 32:
                         if (!var1) {
-                            _fun75275_ip = 81;
-                            continue _fun75275
+                            _fun75140_ip = 81;
+                            continue _fun75140
                         }
                     case 35:
                         var3 = _closure1_slot0;

@@ -1,56 +1,33 @@
 package og;
+
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class e implements j {
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f41925b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final i f41926c;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public e(int i10, i iVar) {
-        this.f41925b = i10;
-        this.f41926c = iVar;
-    }
-
-    @Override // java.lang.annotation.Annotation
-    public final Class annotationType() {
-        return j.class;
-    }
-
-    @Override // java.lang.annotation.Annotation
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+public final class e implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
+        String str = null;
+        int i10 = 0;
+        while (parcel.dataPosition() < A) {
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
+            if (l10 != 2) {
+                if (l10 != 3) {
+                    jf.b.z(parcel, r10);
+                } else {
+                    str = jf.b.f(parcel, r10);
+                }
+            } else {
+                i10 = jf.b.t(parcel, r10);
+            }
         }
-        if (!(obj instanceof j)) {
-            return false;
-        }
-        j jVar = (j) obj;
-        if (this.f41925b == jVar.zza() && this.f41926c.equals(jVar.zzb())) {
-            return true;
-        }
-        return false;
+        jf.b.k(parcel, A);
+        return new ud(i10, str);
     }
 
-    @Override // java.lang.annotation.Annotation
-    public final int hashCode() {
-        return (this.f41925b ^ 14552422) + (this.f41926c.hashCode() ^ 2041407134);
-    }
-
-    @Override // java.lang.annotation.Annotation
-    public final String toString() {
-        return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f41925b + "intEncoding=" + this.f41926c + ')';
-    }
-
-    @Override // og.j
-    public final int zza() {
-        return this.f41925b;
-    }
-
-    @Override // og.j
-    public final i zzb() {
-        return this.f41926c;
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new ud[i10];
     }
 }

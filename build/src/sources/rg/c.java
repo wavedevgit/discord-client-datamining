@@ -1,35 +1,50 @@
 package rg;
 
-import android.os.BadParcelableException;
-import android.os.Parcel;
-import android.os.Parcelable;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c {
-    static {
-        c.class.getClassLoader();
+final class c extends y0 {
+
+    /* renamed from: d  reason: collision with root package name */
+    final /* synthetic */ e f48134d;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c(e eVar) {
+        this.f48134d = eVar;
     }
 
-    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
-        if (parcel.readInt() == 0) {
-            return null;
-        }
-        return (Parcelable) creator.createFromParcel(parcel);
+    @Override // rg.y0
+    final Map b() {
+        return this.f48134d;
     }
 
-    public static void b(Parcel parcel) {
-        int dataAvail = parcel.dataAvail();
-        if (dataAvail <= 0) {
-            return;
+    @Override // rg.y0, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        Set entrySet = this.f48134d.f48174i.entrySet();
+        entrySet.getClass();
+        try {
+            return entrySet.contains(obj);
+        } catch (ClassCastException | NullPointerException unused) {
+            return false;
         }
-        throw new BadParcelableException("Parcel data not fully consumed, unread size: " + dataAvail);
     }
 
-    public static void c(Parcel parcel, Parcelable parcelable) {
-        if (parcelable == null) {
-            parcel.writeInt(0);
-            return;
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    public final Iterator iterator() {
+        return new d(this.f48134d);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean remove(Object obj) {
+        if (!contains(obj)) {
+            return false;
         }
-        parcel.writeInt(1);
-        parcelable.writeToParcel(parcel, 0);
+        Map.Entry entry = (Map.Entry) obj;
+        Objects.requireNonNull(entry);
+        e eVar = this.f48134d;
+        m.n(eVar.f48175o, entry.getKey());
+        return true;
     }
 }

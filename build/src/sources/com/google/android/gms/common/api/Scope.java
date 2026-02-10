@@ -4,28 +4,28 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.annotation.NonNull;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import gf.q;
-import hf.c;
+import hf.q;
+import jf.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class Scope extends hf.a implements ReflectedParcelable {
+public final class Scope extends jf.a implements ReflectedParcelable {
     @NonNull
     public static final Parcelable.Creator<Scope> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    final int f13731d;
+    final int f13871d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f13732e;
+    private final String f13872e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Scope(int i10, String str) {
         q.g(str, "scopeUri must not be null or empty");
-        this.f13731d = i10;
-        this.f13732e = str;
+        this.f13871d = i10;
+        this.f13872e = str;
     }
 
     public String b() {
-        return this.f13732e;
+        return this.f13872e;
     }
 
     public boolean equals(Object obj) {
@@ -35,20 +35,20 @@ public final class Scope extends hf.a implements ReflectedParcelable {
         if (!(obj instanceof Scope)) {
             return false;
         }
-        return this.f13732e.equals(((Scope) obj).f13732e);
+        return this.f13872e.equals(((Scope) obj).f13872e);
     }
 
     public int hashCode() {
-        return this.f13732e.hashCode();
+        return this.f13872e.hashCode();
     }
 
     public String toString() {
-        return this.f13732e;
+        return this.f13872e;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f13731d;
+        int i11 = this.f13871d;
         int a10 = c.a(parcel);
         c.l(parcel, 1, i11);
         c.s(parcel, 2, b(), false);

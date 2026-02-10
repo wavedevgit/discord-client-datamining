@@ -1,25 +1,36 @@
 package p8;
+
+import java.io.FilterOutputStream;
+import java.io.OutputStream;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface c {
-    void d(String str, String str2);
+public class c extends FilterOutputStream {
 
-    void d(String str, String str2, Throwable th2);
+    /* renamed from: d  reason: collision with root package name */
+    private long f43056d;
 
-    void e(String str, String str2);
+    public c(OutputStream outputStream) {
+        super(outputStream);
+        this.f43056d = 0L;
+    }
 
-    void e(String str, String str2, Throwable th2);
+    public long a() {
+        return this.f43056d;
+    }
 
-    void i(String str, String str2);
+    @Override // java.io.FilterOutputStream, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        ((FilterOutputStream) this).out.close();
+    }
 
-    boolean isLoggable(int i10);
+    @Override // java.io.FilterOutputStream, java.io.OutputStream
+    public void write(byte[] bArr, int i10, int i11) {
+        ((FilterOutputStream) this).out.write(bArr, i10, i11);
+        this.f43056d += i11;
+    }
 
-    void v(String str, String str2);
-
-    void w(String str, String str2);
-
-    void w(String str, String str2, Throwable th2);
-
-    void wtf(String str, String str2);
-
-    void wtf(String str, String str2, Throwable th2);
+    @Override // java.io.FilterOutputStream, java.io.OutputStream
+    public void write(int i10) {
+        ((FilterOutputStream) this).out.write(i10);
+        this.f43056d++;
+    }
 }

@@ -18,18 +18,18 @@ public abstract class NativeStatusBarManagerCompatSpec extends ReactContextBaseJ
     }
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void setColor(double d10, boolean z10);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void setHidden(boolean z10);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void setStyle(String str);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void setTranslucent(boolean z10);
 }

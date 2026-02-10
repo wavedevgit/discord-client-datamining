@@ -5,19 +5,19 @@ import com.google.android.gms.dynamite.DynamiteModule;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class f implements DynamiteModule.b {
     @Override // com.google.android.gms.dynamite.DynamiteModule.b
-    public final DynamiteModule.b.C0169b a(Context context, String str, DynamiteModule.b.a aVar) {
-        DynamiteModule.b.C0169b c0169b = new DynamiteModule.b.C0169b();
+    public final DynamiteModule.b.C0196b a(Context context, String str, DynamiteModule.b.a aVar) {
+        DynamiteModule.b.C0196b c0196b = new DynamiteModule.b.C0196b();
         int b10 = aVar.b(context, str);
-        c0169b.f13842a = b10;
+        c0196b.f13982a = b10;
         if (b10 != 0) {
-            c0169b.f13844c = -1;
-            return c0169b;
+            c0196b.f13984c = -1;
+            return c0196b;
         }
         int a10 = aVar.a(context, str, true);
-        c0169b.f13843b = a10;
+        c0196b.f13983b = a10;
         if (a10 != 0) {
-            c0169b.f13844c = 1;
+            c0196b.f13984c = 1;
         }
-        return c0169b;
+        return c0196b;
     }
 }

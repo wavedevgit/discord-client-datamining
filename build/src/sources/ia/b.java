@@ -1,8 +1,40 @@
 package ia;
 
-import android.graphics.Rect;
-import ga.e;
+import com.facebook.fresco.animation.factory.AnimatedFactoryV2Impl;
+import com.facebook.imagepipeline.bitmaps.PlatformBitmapFactory;
+import java.util.concurrent.ExecutorService;
+import kotlin.jvm.internal.Intrinsics;
+import n8.g;
+import oa.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface b {
-    ga.a a(e eVar, Rect rect);
+public final class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f26703a = new b();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static boolean f26704b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static a f26705c;
+
+    private b() {
+    }
+
+    public static final a a(PlatformBitmapFactory platformBitmapFactory, n nVar, ma.n nVar2, boolean z10, boolean z11, int i10, int i11, ExecutorService executorService) {
+        if (!f26704b) {
+            try {
+                Class cls = Boolean.TYPE;
+                Class cls2 = Integer.TYPE;
+                Object newInstance = AnimatedFactoryV2Impl.class.getConstructor(PlatformBitmapFactory.class, n.class, ma.n.class, cls, cls, cls2, cls2, g.class).newInstance(platformBitmapFactory, nVar, nVar2, Boolean.valueOf(z10), Boolean.valueOf(z11), Integer.valueOf(i10), Integer.valueOf(i11), executorService);
+                Intrinsics.checkNotNull(newInstance, "null cannot be cast to non-null type com.facebook.imagepipeline.animated.factory.AnimatedFactory");
+                f26705c = (a) newInstance;
+            } catch (Throwable unused) {
+            }
+            if (f26705c != null) {
+                f26704b = true;
+            }
+        }
+        return f26705c;
+    }
 }

@@ -1,9 +1,9 @@
 package com.dooboolab.rniap;
 
-import a6.l;
-import a6.m;
 import android.app.Activity;
 import android.util.Log;
+import b6.l;
+import b6.m;
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingConfig;
 import com.android.billingclient.api.BillingFlowParams;
@@ -45,10 +45,10 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
 @ReactModule(name = RNIapModule.TAG)
-@Metadata(d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\u0006\n\u0002\b\n\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0007\u0018\u0000 X2\u00020\u00012\u00020\u0002:\u0001YB#\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0005\u0012\b\b\u0002\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\t\u0010\nJ/\u0010\u0013\u001a\u00020\u00122\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\f0\u000b2\u0006\u0010\u000f\u001a\u00020\u000e2\b\b\u0002\u0010\u0011\u001a\u00020\u0010H\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001f\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u000f\u001a\u00020\u000eH\u0002¢\u0006\u0004\b\u0018\u0010\u0019J\u0017\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0002¢\u0006\u0004\b\u001a\u0010\u001bJ)\u0010!\u001a\u00020\u00122\u0006\u0010\u0004\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001d2\b\u0010 \u001a\u0004\u0018\u00010\u001fH\u0002¢\u0006\u0004\b!\u0010\"J\u000f\u0010#\u001a\u00020\u001dH\u0016¢\u0006\u0004\b#\u0010$J)\u0010(\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000e2\u0012\u0010'\u001a\u000e\u0012\u0004\u0012\u00020&\u0012\u0004\u0012\u00020\u00120%¢\u0006\u0004\b(\u0010)J\u001f\u0010+\u001a\u00020\u00122\u0006\u0010*\u001a\u00020\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b+\u0010,J\u0017\u0010-\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b-\u0010\u001bJ\u0017\u0010.\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b.\u0010\u001bJ\u0017\u0010/\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b/\u0010\u001bJ'\u00103\u001a\u00020\u00122\u0006\u00100\u001a\u00020\u001d2\u0006\u00102\u001a\u0002012\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b3\u00104J\u001f\u00105\u001a\u00020\u00122\u0006\u00100\u001a\u00020\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b5\u0010,J\u001f\u00106\u001a\u00020\u00122\u0006\u00100\u001a\u00020\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b6\u0010,J]\u0010=\u001a\u00020\u00122\u0006\u00100\u001a\u00020\u001d2\u0006\u00102\u001a\u0002012\b\u00107\u001a\u0004\u0018\u00010\u001d2\u0006\u00108\u001a\u00020\u00102\b\u00109\u001a\u0004\u0018\u00010\u001d2\b\u0010:\u001a\u0004\u0018\u00010\u001d2\u0006\u0010;\u001a\u0002012\u0006\u0010<\u001a\u00020\u00172\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b=\u0010>J)\u0010A\u001a\u00020\u00122\u0006\u0010?\u001a\u00020\u001d2\b\u0010@\u001a\u0004\u0018\u00010\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bA\u0010BJ)\u0010C\u001a\u00020\u00122\u0006\u0010?\u001a\u00020\u001d2\b\u0010@\u001a\u0004\u0018\u00010\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bC\u0010BJ'\u0010D\u001a\u00020\u00122\u0006\u0010\u0016\u001a\u00020\u00152\u000e\u0010\r\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u000bH\u0016¢\u0006\u0004\bD\u0010EJ\u0017\u0010F\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bF\u0010\u001bJ\u0017\u0010G\u001a\u00020\u00122\u0006\u0010\u001e\u001a\u00020\u001dH\u0007¢\u0006\u0004\bG\u0010HJ\u0017\u0010K\u001a\u00020\u00122\u0006\u0010J\u001a\u00020IH\u0007¢\u0006\u0004\bK\u0010LJ\u0017\u0010M\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bM\u0010\u001bJ\u0017\u0010N\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bN\u0010\u001bR\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0004\u0010OR\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0006\u0010PR\u0014\u0010\b\u001a\u00020\u00078\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\b\u0010QR\u0018\u0010R\u001a\u0004\u0018\u00010&8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bR\u0010SR \u0010V\u001a\u000e\u0012\u0004\u0012\u00020\u001d\u0012\u0004\u0012\u00020U0T8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bV\u0010W¨\u0006Z"}, d2 = {"Lcom/dooboolab/rniap/RNIapModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "La6/k;", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "Lcom/android/billingclient/api/BillingClient$a;", "builder", "Lcom/google/android/gms/common/f;", "googleApiAvailability", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;Lcom/android/billingclient/api/BillingClient$a;Lcom/google/android/gms/common/f;)V", "", "Lcom/android/billingclient/api/Purchase;", "purchases", "Lcom/facebook/react/bridge/Promise;", BaseJavaModule.METHOD_TYPE_PROMISE, "", "expectedResponseCode", "", "consumeItems", "(Ljava/util/List;Lcom/facebook/react/bridge/Promise;I)V", "Lcom/android/billingclient/api/BillingResult;", "billingResult", "", "isValidResult", "(Lcom/android/billingclient/api/BillingResult;Lcom/facebook/react/bridge/Promise;)Z", "sendUnconsumedPurchases", "(Lcom/facebook/react/bridge/Promise;)V", "Lcom/facebook/react/bridge/ReactContext;", "", "eventName", "Lcom/facebook/react/bridge/WritableMap;", "params", "sendEvent", "(Lcom/facebook/react/bridge/ReactContext;Ljava/lang/String;Lcom/facebook/react/bridge/WritableMap;)V", "getName", "()Ljava/lang/String;", "Lkotlin/Function1;", "Lcom/android/billingclient/api/BillingClient;", "callback", "ensureConnection", "(Lcom/facebook/react/bridge/Promise;Lkotlin/jvm/functions/Function1;)V", "feature", "isFeatureSupported", "(Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V", "initConnection", "endConnection", "flushFailedPurchasesCachedAsPending", "type", "Lcom/facebook/react/bridge/ReadableArray;", "skuArr", "getItemsByType", "(Ljava/lang/String;Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/Promise;)V", "getAvailableItemsByType", "getPurchaseHistoryByType", "purchaseToken", "replacementMode", "obfuscatedAccountId", "obfuscatedProfileId", "offerTokenArr", "isOfferPersonalized", "buyItemByType", "(Ljava/lang/String;Lcom/facebook/react/bridge/ReadableArray;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/ReadableArray;ZLcom/facebook/react/bridge/Promise;)V", "token", "developerPayLoad", "acknowledgePurchase", "(Ljava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V", "consumeProduct", "onPurchasesUpdated", "(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V", "startListening", "addListener", "(Ljava/lang/String;)V", "", "count", "removeListeners", "(D)V", "getPackageName", "getStorefront", "Lcom/facebook/react/bridge/ReactApplicationContext;", "Lcom/android/billingclient/api/BillingClient$a;", "Lcom/google/android/gms/common/f;", "billingClientCache", "Lcom/android/billingclient/api/BillingClient;", "", "Lcom/android/billingclient/api/ProductDetails;", "skus", "Ljava/util/Map;", "Companion", "a", "react-native-iap_playRelease"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\u0006\n\u0002\b\n\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0007\u0018\u0000 X2\u00020\u00012\u00020\u0002:\u0001YB#\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0005\u0012\b\b\u0002\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\t\u0010\nJ/\u0010\u0013\u001a\u00020\u00122\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\f0\u000b2\u0006\u0010\u000f\u001a\u00020\u000e2\b\b\u0002\u0010\u0011\u001a\u00020\u0010H\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001f\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u000f\u001a\u00020\u000eH\u0002¢\u0006\u0004\b\u0018\u0010\u0019J\u0017\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0002¢\u0006\u0004\b\u001a\u0010\u001bJ)\u0010!\u001a\u00020\u00122\u0006\u0010\u0004\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001d2\b\u0010 \u001a\u0004\u0018\u00010\u001fH\u0002¢\u0006\u0004\b!\u0010\"J\u000f\u0010#\u001a\u00020\u001dH\u0016¢\u0006\u0004\b#\u0010$J)\u0010(\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000e2\u0012\u0010'\u001a\u000e\u0012\u0004\u0012\u00020&\u0012\u0004\u0012\u00020\u00120%¢\u0006\u0004\b(\u0010)J\u001f\u0010+\u001a\u00020\u00122\u0006\u0010*\u001a\u00020\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b+\u0010,J\u0017\u0010-\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b-\u0010\u001bJ\u0017\u0010.\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b.\u0010\u001bJ\u0017\u0010/\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b/\u0010\u001bJ'\u00103\u001a\u00020\u00122\u0006\u00100\u001a\u00020\u001d2\u0006\u00102\u001a\u0002012\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b3\u00104J\u001f\u00105\u001a\u00020\u00122\u0006\u00100\u001a\u00020\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b5\u0010,J\u001f\u00106\u001a\u00020\u00122\u0006\u00100\u001a\u00020\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b6\u0010,J]\u0010=\u001a\u00020\u00122\u0006\u00100\u001a\u00020\u001d2\u0006\u00102\u001a\u0002012\b\u00107\u001a\u0004\u0018\u00010\u001d2\u0006\u00108\u001a\u00020\u00102\b\u00109\u001a\u0004\u0018\u00010\u001d2\b\u0010:\u001a\u0004\u0018\u00010\u001d2\u0006\u0010;\u001a\u0002012\u0006\u0010<\u001a\u00020\u00172\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\b=\u0010>J)\u0010A\u001a\u00020\u00122\u0006\u0010?\u001a\u00020\u001d2\b\u0010@\u001a\u0004\u0018\u00010\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bA\u0010BJ)\u0010C\u001a\u00020\u00122\u0006\u0010?\u001a\u00020\u001d2\b\u0010@\u001a\u0004\u0018\u00010\u001d2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bC\u0010BJ'\u0010D\u001a\u00020\u00122\u0006\u0010\u0016\u001a\u00020\u00152\u000e\u0010\r\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u000bH\u0016¢\u0006\u0004\bD\u0010EJ\u0017\u0010F\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bF\u0010\u001bJ\u0017\u0010G\u001a\u00020\u00122\u0006\u0010\u001e\u001a\u00020\u001dH\u0007¢\u0006\u0004\bG\u0010HJ\u0017\u0010K\u001a\u00020\u00122\u0006\u0010J\u001a\u00020IH\u0007¢\u0006\u0004\bK\u0010LJ\u0017\u0010M\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bM\u0010\u001bJ\u0017\u0010N\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u000eH\u0007¢\u0006\u0004\bN\u0010\u001bR\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0004\u0010OR\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0006\u0010PR\u0014\u0010\b\u001a\u00020\u00078\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\b\u0010QR\u0018\u0010R\u001a\u0004\u0018\u00010&8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bR\u0010SR \u0010V\u001a\u000e\u0012\u0004\u0012\u00020\u001d\u0012\u0004\u0012\u00020U0T8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bV\u0010W¨\u0006Z"}, d2 = {"Lcom/dooboolab/rniap/RNIapModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "Lb6/k;", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "Lcom/android/billingclient/api/BillingClient$a;", "builder", "Lcom/google/android/gms/common/f;", "googleApiAvailability", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;Lcom/android/billingclient/api/BillingClient$a;Lcom/google/android/gms/common/f;)V", "", "Lcom/android/billingclient/api/Purchase;", "purchases", "Lcom/facebook/react/bridge/Promise;", BaseJavaModule.METHOD_TYPE_PROMISE, "", "expectedResponseCode", "", "consumeItems", "(Ljava/util/List;Lcom/facebook/react/bridge/Promise;I)V", "Lcom/android/billingclient/api/BillingResult;", "billingResult", "", "isValidResult", "(Lcom/android/billingclient/api/BillingResult;Lcom/facebook/react/bridge/Promise;)Z", "sendUnconsumedPurchases", "(Lcom/facebook/react/bridge/Promise;)V", "Lcom/facebook/react/bridge/ReactContext;", "", "eventName", "Lcom/facebook/react/bridge/WritableMap;", "params", "sendEvent", "(Lcom/facebook/react/bridge/ReactContext;Ljava/lang/String;Lcom/facebook/react/bridge/WritableMap;)V", "getName", "()Ljava/lang/String;", "Lkotlin/Function1;", "Lcom/android/billingclient/api/BillingClient;", "callback", "ensureConnection", "(Lcom/facebook/react/bridge/Promise;Lkotlin/jvm/functions/Function1;)V", "feature", "isFeatureSupported", "(Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V", "initConnection", "endConnection", "flushFailedPurchasesCachedAsPending", "type", "Lcom/facebook/react/bridge/ReadableArray;", "skuArr", "getItemsByType", "(Ljava/lang/String;Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/Promise;)V", "getAvailableItemsByType", "getPurchaseHistoryByType", "purchaseToken", "replacementMode", "obfuscatedAccountId", "obfuscatedProfileId", "offerTokenArr", "isOfferPersonalized", "buyItemByType", "(Ljava/lang/String;Lcom/facebook/react/bridge/ReadableArray;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/ReadableArray;ZLcom/facebook/react/bridge/Promise;)V", "token", "developerPayLoad", "acknowledgePurchase", "(Ljava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V", "consumeProduct", "onPurchasesUpdated", "(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V", "startListening", "addListener", "(Ljava/lang/String;)V", "", "count", "removeListeners", "(D)V", "getPackageName", "getStorefront", "Lcom/facebook/react/bridge/ReactApplicationContext;", "Lcom/android/billingclient/api/BillingClient$a;", "Lcom/google/android/gms/common/f;", "billingClientCache", "Lcom/android/billingclient/api/BillingClient;", "", "Lcom/android/billingclient/api/ProductDetails;", "skus", "Ljava/util/Map;", "Companion", "a", "react-native-iap_playRelease"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nRNIapModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RNIapModule.kt\ncom/dooboolab/rniap/RNIapModule\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,760:1\n1869#2:761\n1869#2,2:762\n1870#2:764\n774#2:765\n865#2,2:766\n1869#2:768\n1869#2,2:769\n1869#2,2:771\n1870#2:773\n1869#2:774\n1869#2,2:775\n1870#2:777\n1869#2:778\n1869#2,2:779\n1870#2:781\n1563#2:782\n1634#2,3:783\n1573#2:786\n1604#2,4:787\n774#2:791\n865#2,2:792\n*S KotlinDebug\n*F\n+ 1 RNIapModule.kt\ncom/dooboolab/rniap/RNIapModule\n*L\n624#1:761\n628#1:762,2\n624#1:764\n230#1:765\n230#1:766,2\n304#1:768\n312#1:769,2\n318#1:771,2\n304#1:773\n379#1:774\n383#1:775,2\n379#1:777\n433#1:778\n437#1:779,2\n433#1:781\n488#1:782\n488#1:783,3\n488#1:786\n488#1:787,4\n685#1:791\n685#1:792,2\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class RNIapModule extends ReactContextBaseJavaModule implements a6.k {
+public final class RNIapModule extends ReactContextBaseJavaModule implements b6.k {
     @NotNull
     public static final a Companion = new a(null);
     @NotNull
@@ -76,27 +76,27 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class b implements a6.c {
+    public static final class b implements b6.c {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Promise f9742b;
+        final /* synthetic */ Promise f9882b;
 
         b(Promise promise) {
-            this.f9742b = promise;
+            this.f9882b = promise;
         }
 
-        @Override // a6.c
+        @Override // b6.c
         public void onBillingServiceDisconnected() {
             Log.i(RNIapModule.TAG, "Billing service disconnected");
         }
 
-        @Override // a6.c
+        @Override // b6.c
         public void onBillingSetupFinished(BillingResult billingResult) {
             Intrinsics.checkNotNullParameter(billingResult, "billingResult");
-            if (!RNIapModule.this.isValidResult(billingResult, this.f9742b)) {
+            if (!RNIapModule.this.isValidResult(billingResult, this.f9882b)) {
                 return;
             }
-            d.d(this.f9742b, Boolean.TRUE);
+            d.d(this.f9882b, Boolean.TRUE);
         }
     }
 
@@ -130,15 +130,15 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit acknowledgePurchase$lambda$34(String str, final RNIapModule rNIapModule, final Promise promise, BillingClient billingClient) {
         Intrinsics.checkNotNullParameter(billingClient, "billingClient");
-        a6.a a10 = a6.a.b().b(str).a();
+        b6.a a10 = b6.a.b().b(str).a();
         Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
-        billingClient.a(a10, new a6.b() { // from class: com.dooboolab.rniap.n
-            @Override // a6.b
+        billingClient.a(a10, new b6.b() { // from class: com.dooboolab.rniap.n
+            @Override // b6.b
             public final void a(BillingResult billingResult) {
                 RNIapModule.acknowledgePurchase$lambda$34$lambda$33(RNIapModule.this, promise, billingResult);
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -151,7 +151,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         createMap.putInt("responseCode", billingResult.b());
         createMap.putString("debugMessage", billingResult.a());
-        com.dooboolab.rniap.a a10 = com.dooboolab.rniap.b.f9746a.a(billingResult.b());
+        com.dooboolab.rniap.a a10 = com.dooboolab.rniap.b.f9886a.a(billingResult.b());
         createMap.putString("code", a10.a());
         createMap.putString("message", a10.b());
         d.d(promise, createMap);
@@ -162,7 +162,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         int i11;
         String string;
         Intrinsics.checkNotNullParameter(billingClient, "billingClient");
-        com.dooboolab.rniap.c.f9747a.a(PROMISE_BUY_ITEM, promise);
+        com.dooboolab.rniap.c.f9887a.a(PROMISE_BUY_ITEM, promise);
         if (Intrinsics.areEqual(str, "subs") && readableArray.size() != readableArray2.size()) {
             String str5 = "The number of skus (" + readableArray.size() + ") must match: the number of offerTokens (" + readableArray2.size() + ") for Subscriptions";
             WritableMap createMap = Arguments.createMap();
@@ -172,7 +172,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
             createMap.putString("message", str5);
             rNIapModule.sendEvent(rNIapModule.reactContext, "purchase-error", createMap);
             d.b(promise, PROMISE_BUY_ITEM, str5);
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
         ArrayList<Object> arrayList = readableArray.toArrayList();
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
@@ -200,7 +200,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 createMap2.putString("productId", str6);
                 rNIapModule.sendEvent(rNIapModule.reactContext, "purchase-error", createMap2);
                 d.b(promise, PROMISE_BUY_ITEM, "The sku was not found. Please fetch products first by calling getItems");
-                return Unit.f32056a;
+                return Unit.f31765a;
             }
             BillingFlowParams.b.a c10 = BillingFlowParams.b.a().c(productDetails);
             Intrinsics.checkNotNullExpressionValue(c10, "setProductDetails(...)");
@@ -254,10 +254,10 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         Intrinsics.checkNotNullExpressionValue(a13, "build(...)");
         int b10 = billingClient.g(activity, a13).b();
         if (b10 != 0) {
-            com.dooboolab.rniap.a a14 = com.dooboolab.rniap.b.f9746a.a(b10);
+            com.dooboolab.rniap.a a14 = com.dooboolab.rniap.b.f9886a.a(b10);
             d.b(promise, a14.a(), a14.b());
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     private final void consumeItems(List<? extends Purchase> list, final Promise promise, final int i10) {
@@ -283,37 +283,37 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit consumeItems$lambda$5(Purchase purchase, final int i10, final Promise promise, BillingClient billingClient) {
         Intrinsics.checkNotNullParameter(billingClient, "billingClient");
-        a6.e a10 = a6.e.b().b(purchase.i()).a();
+        b6.e a10 = b6.e.b().b(purchase.i()).a();
         Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
-        billingClient.b(a10, new a6.f() { // from class: com.dooboolab.rniap.q
-            @Override // a6.f
+        billingClient.b(a10, new b6.f() { // from class: com.dooboolab.rniap.q
+            @Override // b6.f
             public final void a(BillingResult billingResult, String str) {
                 RNIapModule.consumeItems$lambda$5$lambda$4(i10, promise, billingResult, str);
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void consumeItems$lambda$5$lambda$4(int i10, Promise promise, BillingResult billingResult, String str) {
         Intrinsics.checkNotNullParameter(billingResult, "billingResult");
         if (billingResult.b() != i10) {
-            com.dooboolab.rniap.b.f9746a.b(promise, billingResult.b());
+            com.dooboolab.rniap.b.f9886a.b(promise, billingResult.b());
         } else {
             d.d(promise, Boolean.TRUE);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit consumeProduct$lambda$36(a6.e eVar, final RNIapModule rNIapModule, final Promise promise, BillingClient billingClient) {
+    public static final Unit consumeProduct$lambda$36(b6.e eVar, final RNIapModule rNIapModule, final Promise promise, BillingClient billingClient) {
         Intrinsics.checkNotNullParameter(billingClient, "billingClient");
-        billingClient.b(eVar, new a6.f() { // from class: com.dooboolab.rniap.v
-            @Override // a6.f
+        billingClient.b(eVar, new b6.f() { // from class: com.dooboolab.rniap.v
+            @Override // b6.f
             public final void a(BillingResult billingResult, String str) {
                 RNIapModule.consumeProduct$lambda$36$lambda$35(RNIapModule.this, promise, billingResult, str);
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -326,7 +326,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         createMap.putInt("responseCode", billingResult.b());
         createMap.putString("debugMessage", billingResult.a());
-        com.dooboolab.rniap.a a10 = com.dooboolab.rniap.b.f9746a.a(billingResult.b());
+        com.dooboolab.rniap.a a10 = com.dooboolab.rniap.b.f9886a.a(billingResult.b());
         createMap.putString("code", a10.a());
         createMap.putString("message", a10.b());
         createMap.putString("purchaseToken", str);
@@ -431,13 +431,13 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit flushFailedPurchasesCachedAsPending$lambda$8(final RNIapModule rNIapModule, final Promise promise, BillingClient billingClient) {
         Intrinsics.checkNotNullParameter(billingClient, "billingClient");
-        billingClient.k(a6.m.a().b("inapp").a(), new a6.j() { // from class: com.dooboolab.rniap.f
-            @Override // a6.j
+        billingClient.k(b6.m.a().b("inapp").a(), new b6.j() { // from class: com.dooboolab.rniap.f
+            @Override // b6.j
             public final void a(BillingResult billingResult, List list) {
                 RNIapModule.flushFailedPurchasesCachedAsPending$lambda$8$lambda$7(RNIapModule.this, promise, billingResult, list);
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -467,18 +467,18 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
     public static final Unit getAvailableItemsByType$lambda$24(final String str, final RNIapModule rNIapModule, final Promise promise, BillingClient billingClient) {
         Intrinsics.checkNotNullParameter(billingClient, "billingClient");
         final WritableNativeArray writableNativeArray = new WritableNativeArray();
-        m.a a10 = a6.m.a();
+        m.a a10 = b6.m.a();
         String str2 = "subs";
         if (!Intrinsics.areEqual(str, "subs")) {
             str2 = "inapp";
         }
-        billingClient.k(a10.b(str2).a(), new a6.j() { // from class: com.dooboolab.rniap.t
-            @Override // a6.j
+        billingClient.k(a10.b(str2).a(), new b6.j() { // from class: com.dooboolab.rniap.t
+            @Override // b6.j
             public final void a(BillingResult billingResult, List list) {
                 RNIapModule.getAvailableItemsByType$lambda$24$lambda$23(RNIapModule.this, promise, writableNativeArray, str, billingResult, list);
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -549,17 +549,17 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         }
         if (arrayList.isEmpty()) {
             d.b(promise, "EMPTY_SKU_LIST", "The SKU list is empty.");
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
         QueryProductDetailsParams a11 = QueryProductDetailsParams.a().b(arrayList).a();
         Intrinsics.checkNotNullExpressionValue(a11, "build(...)");
-        billingClient.i(a11, new a6.h() { // from class: com.dooboolab.rniap.z
-            @Override // a6.h
+        billingClient.i(a11, new b6.h() { // from class: com.dooboolab.rniap.z
+            @Override // b6.h
             public final void a(BillingResult billingResult, List list) {
                 RNIapModule.getItemsByType$lambda$20$lambda$19(RNIapModule.this, promise, billingResult, list);
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -657,18 +657,18 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getPurchaseHistoryByType$lambda$28(String str, final RNIapModule rNIapModule, final Promise promise, BillingClient billingClient) {
         Intrinsics.checkNotNullParameter(billingClient, "billingClient");
-        l.a a10 = a6.l.a();
+        l.a a10 = b6.l.a();
         String str2 = "subs";
         if (!Intrinsics.areEqual(str, "subs")) {
             str2 = "inapp";
         }
-        billingClient.j(a10.b(str2).a(), new a6.i() { // from class: com.dooboolab.rniap.g
-            @Override // a6.i
+        billingClient.j(a10.b(str2).a(), new b6.i() { // from class: com.dooboolab.rniap.g
+            @Override // b6.i
             public final void a(BillingResult billingResult, List list) {
                 RNIapModule.getPurchaseHistoryByType$lambda$28$lambda$27(RNIapModule.this, promise, billingResult, list);
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -714,13 +714,13 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getStorefront$lambda$43(final Promise promise, BillingClient billingClient) {
         Intrinsics.checkNotNullParameter(billingClient, "billingClient");
-        billingClient.d(a6.g.a().a(), new a6.d() { // from class: com.dooboolab.rniap.x
-            @Override // a6.d
+        billingClient.d(b6.g.a().a(), new b6.d() { // from class: com.dooboolab.rniap.x
+            @Override // b6.d
             public final void onBillingConfigResponse(BillingResult billingResult, BillingConfig billingConfig) {
                 RNIapModule.getStorefront$lambda$43$lambda$42(Promise.this, billingResult, billingConfig);
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -756,45 +756,45 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 if (str.equals("IN_APP_MESSAGING")) {
                     str2 = "bbb";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32056a;
+                    return Unit.f31765a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32056a;
+                return Unit.f31765a;
             case 755711666:
                 if (str.equals("PRODUCT_DETAILS")) {
                     str2 = "fff";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32056a;
+                    return Unit.f31765a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32056a;
+                return Unit.f31765a;
             case 808641238:
                 if (str.equals("SUBSCRIPTIONS")) {
                     str2 = "subscriptions";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32056a;
+                    return Unit.f31765a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32056a;
+                return Unit.f31765a;
             case 1739975758:
                 if (str.equals("PRICE_CHANGE_CONFIRMATION")) {
                     str2 = "priceChangeConfirmation";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32056a;
+                    return Unit.f31765a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32056a;
+                return Unit.f31765a;
             case 1785301586:
                 if (str.equals("SUBSCRIPTIONS_UPDATE")) {
                     str2 = "subscriptionsUpdate";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32056a;
+                    return Unit.f31765a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32056a;
+                return Unit.f31765a;
             default:
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32056a;
+                return Unit.f31765a;
         }
     }
 
@@ -803,7 +803,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         int b10 = billingResult.b();
         Log.d(TAG, "responseCode: " + b10);
         if (billingResult.b() != 0) {
-            com.dooboolab.rniap.b.f9746a.b(promise, billingResult.b());
+            com.dooboolab.rniap.b.f9886a.b(promise, billingResult.b());
             return false;
         }
         return true;
@@ -829,15 +829,15 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         Intrinsics.checkNotNullParameter(billingClient, "billingClient");
         String[] strArr = {"inapp", "subs"};
         for (int i10 = 0; i10 < 2; i10++) {
-            billingClient.k(a6.m.a().b(strArr[i10]).a(), new a6.j() { // from class: com.dooboolab.rniap.p
-                @Override // a6.j
+            billingClient.k(b6.m.a().b(strArr[i10]).a(), new b6.j() { // from class: com.dooboolab.rniap.p
+                @Override // b6.j
                 public final void a(BillingResult billingResult, List list) {
                     RNIapModule.sendUnconsumedPurchases$lambda$41$lambda$40(RNIapModule.this, promise, billingResult, list);
                 }
             });
         }
         d.d(promise, Boolean.TRUE);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -900,13 +900,13 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
     public final void consumeProduct(@NotNull String token, String str, @NotNull final Promise promise) {
         Intrinsics.checkNotNullParameter(token, "token");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        final a6.e a10 = a6.e.b().b(token).a();
+        final b6.e a10 = b6.e.b().b(token).a();
         Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
         ensureConnection(promise, new Function1() { // from class: com.dooboolab.rniap.k
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit consumeProduct$lambda$36;
-                consumeProduct$lambda$36 = RNIapModule.consumeProduct$lambda$36(a6.e.this, this, promise, (BillingClient) obj);
+                consumeProduct$lambda$36 = RNIapModule.consumeProduct$lambda$36(b6.e.this, this, promise, (BillingClient) obj);
                 return consumeProduct$lambda$36;
             }
         });
@@ -921,7 +921,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         }
         this.billingClientCache = null;
         this.skus.clear();
-        com.dooboolab.rniap.c.f9747a.b();
+        com.dooboolab.rniap.c.f9887a.b();
         d.d(promise, Boolean.TRUE);
     }
 
@@ -1060,7 +1060,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         });
     }
 
-    @Override // a6.k
+    @Override // b6.k
     public void onPurchasesUpdated(@NotNull BillingResult billingResult, List<? extends Purchase> list) {
         Intrinsics.checkNotNullParameter(billingResult, "billingResult");
         int b10 = billingResult.b();
@@ -1069,7 +1069,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
             Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
             createMap.putInt("responseCode", b10);
             createMap.putString("debugMessage", billingResult.a());
-            com.dooboolab.rniap.b bVar = com.dooboolab.rniap.b.f9746a;
+            com.dooboolab.rniap.b bVar = com.dooboolab.rniap.b.f9886a;
             com.dooboolab.rniap.a a10 = bVar.a(b10);
             createMap.putString("code", a10.a());
             createMap.putString("message", a10.b());
@@ -1109,7 +1109,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 createArray.pushMap(createMap2.copy());
                 sendEvent(this.reactContext, "purchase-updated", createMap2);
             }
-            com.dooboolab.rniap.c.f9747a.d(PROMISE_BUY_ITEM, createArray);
+            com.dooboolab.rniap.c.f9887a.d(PROMISE_BUY_ITEM, createArray);
         } else {
             WritableMap createMap3 = Arguments.createMap();
             Intrinsics.checkNotNullExpressionValue(createMap3, "createMap(...)");
@@ -1117,7 +1117,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
             createMap3.putString("debugMessage", billingResult.a());
             createMap3.putString("extraMessage", "The purchases are null. This is a normal behavior if you have requested DEFERRED proration. If not please report an issue.");
             sendEvent(this.reactContext, "purchase-updated", createMap3);
-            com.dooboolab.rniap.c.f9747a.d(PROMISE_BUY_ITEM, null);
+            com.dooboolab.rniap.c.f9887a.d(PROMISE_BUY_ITEM, null);
         }
     }
 

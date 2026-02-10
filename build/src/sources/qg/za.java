@@ -1,44 +1,18 @@
 package qg;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class za implements yi.d {
+public final class za {
 
     /* renamed from: a  reason: collision with root package name */
-    static final za f47814a = new za();
+    private final ca f46570a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f47815b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f47816c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f47817d;
-
-    static {
-        c.b a10 = yi.c.a("languageOption");
-        v1 v1Var = new v1();
-        v1Var.a(3);
-        f47815b = a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("isUsingLegacyApi");
-        v1 v1Var2 = new v1();
-        v1Var2.a(4);
-        f47816c = a11.b(v1Var2.b()).a();
-        c.b a12 = yi.c.a("sdkVersion");
-        v1 v1Var3 = new v1();
-        v1Var3.a(5);
-        f47817d = a12.b(v1Var3.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public /* synthetic */ za(xa xaVar, ya yaVar) {
+        ca caVar;
+        caVar = xaVar.f46496a;
+        this.f46570a = caVar;
     }
 
-    private za() {
-    }
-
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        yi.e eVar = (yi.e) obj2;
-        eVar.a(f47815b, ((wh) obj).a());
-        eVar.a(f47816c, null);
-        eVar.a(f47817d, null);
+    public final ca a() {
+        return this.f46570a;
     }
 }

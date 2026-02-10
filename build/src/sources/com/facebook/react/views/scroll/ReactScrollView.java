@@ -139,16 +139,16 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
     /* JADX INFO: Access modifiers changed from: private */
     public void disableFpsListener() {
         if (isScrollPerfLoggingEnabled()) {
-            db.a.c(this.mFpsListener);
-            db.a.c(this.mScrollPerfTag);
+            eb.a.c(this.mFpsListener);
+            eb.a.c(this.mScrollPerfTag);
             this.mFpsListener.disable(this.mScrollPerfTag);
         }
     }
 
     private void enableFpsListener() {
         if (isScrollPerfLoggingEnabled()) {
-            db.a.c(this.mFpsListener);
-            db.a.c(this.mScrollPerfTag);
+            eb.a.c(this.mFpsListener);
+            eb.a.c(this.mScrollPerfTag);
             this.mFpsListener.enable(this.mScrollPerfTag);
         }
     }
@@ -462,7 +462,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
 
     @Override // com.facebook.react.uimanager.ReactClippingViewGroup
     public void getClippingRect(Rect rect) {
-        rect.set((Rect) db.a.c(this.mClippingRect));
+        rect.set((Rect) eb.a.c(this.mClippingRect));
     }
 
     public int getFadingEdgeLengthEnd() {
@@ -497,7 +497,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
                 sScrollerField = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException unused) {
-                p8.a.J(ReactConstants.TAG, "Failed to get mScroller field for ScrollView! This app will exhibit the bounce-back scrolling bug :(");
+                q8.a.J(ReactConstants.TAG, "Failed to get mScroller field for ScrollView! This app will exhibit the bounce-back scrolling bug :(");
             }
         }
         Field field = sScrollerField;
@@ -508,7 +508,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
                 if (obj instanceof OverScroller) {
                     overScroller = (OverScroller) obj;
                 } else {
-                    p8.a.J(ReactConstants.TAG, "Failed to cast mScroller field in ScrollView (probably due to OEM changes to AOSP)! This app will exhibit the bounce-back scrolling bug :(");
+                    q8.a.J(ReactConstants.TAG, "Failed to cast mScroller field in ScrollView (probably due to OEM changes to AOSP)! This app will exhibit the bounce-back scrolling bug :(");
                 }
             } catch (IllegalAccessException e10) {
                 throw new RuntimeException("Failed to get mScroller from ScrollView!", e10);
@@ -658,7 +658,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
                 return true;
             }
         } catch (IllegalArgumentException e10) {
-            p8.a.K(ReactConstants.TAG, "Error intercepting touch event.", e10);
+            q8.a.K(ReactConstants.TAG, "Error intercepting touch event.", e10);
         }
         return false;
     }
@@ -918,7 +918,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
         if (childCount > 1) {
             z10 = false;
         }
-        db.a.b(z10, "React Native ScrollView should not have more than one child, it should have exactly 1 child; a content View");
+        eb.a.b(z10, "React Native ScrollView should not have more than one child, it should have exactly 1 child; a content View");
         if (childCount > 0) {
             for (int i11 = 0; i11 < childCount; i11++) {
                 getChildAt(i11).setTranslationY(i10);
@@ -1031,7 +1031,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void onScrollChanged(int i10, int i11, int i12, int i13, boolean z10) {
-        qb.a.c(0L, "ReactScrollView.onScrollChanged");
+        rb.a.c(0L, "ReactScrollView.onScrollChanged");
         try {
             super.onScrollChanged(i10, i11, i12, i13);
             this.mActivelyScrolling = true;
@@ -1041,9 +1041,9 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
                 }
                 ReactScrollViewHelper.updateStateOnScrollChanged(this, this.mOnScrollDispatchHelper.getXFlingVelocity(), this.mOnScrollDispatchHelper.getYFlingVelocity(), z10);
             }
-            qb.a.i(0L);
+            rb.a.i(0L);
         } catch (Throwable th2) {
-            qb.a.i(0L);
+            rb.a.i(0L);
             throw th2;
         }
     }
@@ -1055,16 +1055,16 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
     @Override // com.facebook.react.uimanager.ReactClippingViewGroup
     public void updateClippingRect(Set<Integer> set) {
         if (this.mRemoveClippedSubviews) {
-            qb.a.c(0L, "ReactScrollView.updateClippingRect");
+            rb.a.c(0L, "ReactScrollView.updateClippingRect");
             try {
-                db.a.c(this.mClippingRect);
+                eb.a.c(this.mClippingRect);
                 ReactClippingViewGroupHelper.calculateClippingRect(this, this.mClippingRect);
                 View contentView = getContentView();
                 if (contentView instanceof ReactClippingViewGroup) {
                     ((ReactClippingViewGroup) contentView).updateClippingRect(set);
                 }
             } finally {
-                qb.a.i(0L);
+                rb.a.i(0L);
             }
         }
     }

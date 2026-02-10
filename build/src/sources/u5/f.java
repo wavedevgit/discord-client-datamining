@@ -1,5 +1,23 @@
 package u5;
+
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.RectF;
+import com.airbnb.lottie.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public interface f {
-    d a(String str);
+public class f extends b {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public f(n nVar, e eVar) {
+        super(nVar, eVar);
+    }
+
+    @Override // u5.b, n5.e
+    public void f(RectF rectF, Matrix matrix, boolean z10) {
+        super.f(rectF, matrix, z10);
+        rectF.set(0.0f, 0.0f, 0.0f, 0.0f);
+    }
+
+    @Override // u5.b
+    void u(Canvas canvas, Matrix matrix, int i10) {
+    }
 }

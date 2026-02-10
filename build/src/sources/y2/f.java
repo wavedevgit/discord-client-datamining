@@ -27,43 +27,43 @@ public final class f extends w implements p0 {
 
         public a q(boolean z10) {
             k();
-            ((f) this.f4285e).V(z10);
+            ((f) this.f3982e).V(z10);
             return this;
         }
 
         public a r(double d10) {
             k();
-            ((f) this.f4285e).W(d10);
+            ((f) this.f3982e).W(d10);
             return this;
         }
 
         public a t(float f10) {
             k();
-            ((f) this.f4285e).X(f10);
+            ((f) this.f3982e).X(f10);
             return this;
         }
 
         public a u(int i10) {
             k();
-            ((f) this.f4285e).Y(i10);
+            ((f) this.f3982e).Y(i10);
             return this;
         }
 
         public a v(long j10) {
             k();
-            ((f) this.f4285e).Z(j10);
+            ((f) this.f3982e).Z(j10);
             return this;
         }
 
         public a w(String str) {
             k();
-            ((f) this.f4285e).a0(str);
+            ((f) this.f3982e).a0(str);
             return this;
         }
 
         public a x(e.a aVar) {
             k();
-            ((f) this.f4285e).b0(aVar);
+            ((f) this.f3982e).b0(aVar);
             return this;
         }
 
@@ -85,10 +85,10 @@ public final class f extends w implements p0 {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f54937d;
+        private final int f55414d;
 
         b(int i10) {
-            this.f54937d = i10;
+            this.f55414d = i10;
         }
 
         public static b a(int i10) {
@@ -203,7 +203,7 @@ public final class f extends w implements p0 {
         return 0;
     }
 
-    public long Q() {
+    public long P() {
         if (this.valueCase_ == 4) {
             return ((Long) this.value_).longValue();
         }
@@ -231,7 +231,7 @@ public final class f extends w implements p0 {
     @Override // androidx.datastore.preferences.protobuf.w
     protected final Object m(w.d dVar, Object obj, Object obj2) {
         w0 w0Var;
-        switch (c.f54926a[dVar.ordinal()]) {
+        switch (c.f55403a[dVar.ordinal()]) {
             case 1:
                 return new f();
             case 2:

@@ -1,40 +1,24 @@
 package ts;
 
-import java.util.concurrent.atomic.AtomicReferenceArray;
-import org.jetbrains.annotations.NotNull;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlinx.coroutines.flow.FlowCollector;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class z {
-    @NotNull
-    private volatile AtomicReferenceArray<Object> array;
+public final class z implements FlowCollector {
 
-    public z(int i10) {
-        this.array = new AtomicReferenceArray<>(i10);
+    /* renamed from: d  reason: collision with root package name */
+    private final rs.w f51002d;
+
+    public z(rs.w wVar) {
+        this.f51002d = wVar;
     }
 
-    public final int a() {
-        return this.array.length();
-    }
-
-    public final Object b(int i10) {
-        AtomicReferenceArray<Object> atomicReferenceArray = this.array;
-        if (i10 < atomicReferenceArray.length()) {
-            return atomicReferenceArray.get(i10);
+    @Override // kotlinx.coroutines.flow.FlowCollector
+    public Object emit(Object obj, Continuation continuation) {
+        Object x10 = this.f51002d.x(obj, continuation);
+        if (x10 == xr.b.f()) {
+            return x10;
         }
-        return null;
-    }
-
-    public final void c(int i10, Object obj) {
-        AtomicReferenceArray<Object> atomicReferenceArray = this.array;
-        int length = atomicReferenceArray.length();
-        if (i10 < length) {
-            atomicReferenceArray.set(i10, obj);
-            return;
-        }
-        AtomicReferenceArray<Object> atomicReferenceArray2 = new AtomicReferenceArray<>(kotlin.ranges.d.d(i10 + 1, length * 2));
-        for (int i11 = 0; i11 < length; i11++) {
-            atomicReferenceArray2.set(i11, atomicReferenceArray.get(i11));
-        }
-        atomicReferenceArray2.set(i10, obj);
-        this.array = atomicReferenceArray2;
+        return Unit.f31765a;
     }
 }

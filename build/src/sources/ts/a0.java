@@ -4,42 +4,35 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.jvm.internal.CoroutineStackFrame;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class a0 extends kotlinx.coroutines.a implements CoroutineStackFrame {
+final class a0 implements Continuation, CoroutineStackFrame {
 
-    /* renamed from: o  reason: collision with root package name */
-    public final Continuation f50860o;
+    /* renamed from: d  reason: collision with root package name */
+    private final Continuation f50911d;
 
-    public a0(CoroutineContext coroutineContext, Continuation continuation) {
-        super(coroutineContext, true, true);
-        this.f50860o = continuation;
-    }
+    /* renamed from: e  reason: collision with root package name */
+    private final CoroutineContext f50912e;
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kotlinx.coroutines.b0
-    public void F(Object obj) {
-        j.b(wr.b.c(this.f50860o), os.t.a(obj, this.f50860o));
-    }
-
-    @Override // kotlinx.coroutines.a
-    protected void S0(Object obj) {
-        Continuation continuation = this.f50860o;
-        continuation.resumeWith(os.t.a(obj, continuation));
+    public a0(Continuation continuation, CoroutineContext coroutineContext) {
+        this.f50911d = continuation;
+        this.f50912e = coroutineContext;
     }
 
     @Override // kotlin.coroutines.jvm.internal.CoroutineStackFrame
-    public final CoroutineStackFrame getCallerFrame() {
-        Continuation continuation = this.f50860o;
+    public CoroutineStackFrame getCallerFrame() {
+        Continuation continuation = this.f50911d;
         if (continuation instanceof CoroutineStackFrame) {
             return (CoroutineStackFrame) continuation;
         }
         return null;
     }
 
-    @Override // kotlinx.coroutines.b0
-    protected final boolean l0() {
-        return true;
+    @Override // kotlin.coroutines.Continuation
+    public CoroutineContext getContext() {
+        return this.f50912e;
     }
 
-    public void X0() {
+    @Override // kotlin.coroutines.Continuation
+    public void resumeWith(Object obj) {
+        this.f50911d.resumeWith(obj);
     }
 }

@@ -8,70 +8,70 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var8;
     var3 = function arg0() {
-        _fun37587: for (var _fun37587_ip = 0;;) switch (_fun37587_ip) {
+        _fun37580: for (var _fun37580_ip = 0;;) switch (_fun37580_ip) {
             case 0:
                 var1 = arg0;
                 var2 = _closure1_slot4;
                 var2 = var2.EXTRA_SMALL_10;
                 if (!(var2 !== var1)) {
-                    _fun37587_ip = 181;
-                    continue _fun37587
+                    _fun37580_ip = 181;
+                    continue _fun37580
                 }
             case 23:
                 var2 = _closure1_slot4;
                 var2 = var2.EXTRA_SMALL;
                 if (!(var2 !== var1)) {
-                    _fun37587_ip = 176;
-                    continue _fun37587
+                    _fun37580_ip = 176;
+                    continue _fun37580
                 }
             case 40:
                 var2 = _closure1_slot4;
                 var2 = var2.SMALL;
                 if (!(var2 !== var1)) {
-                    _fun37587_ip = 171;
-                    continue _fun37587
+                    _fun37580_ip = 171;
+                    continue _fun37580
                 }
             case 54:
                 var2 = _closure1_slot4;
                 var2 = var2.SMALL_14;
                 if (!(var2 !== var1)) {
-                    _fun37587_ip = 166;
-                    continue _fun37587
+                    _fun37580_ip = 166;
+                    continue _fun37580
                 }
             case 68:
                 var2 = _closure1_slot4;
                 var2 = var2.SMALL_20;
                 if (!(var2 !== var1)) {
-                    _fun37587_ip = 161;
-                    continue _fun37587
+                    _fun37580_ip = 161;
+                    continue _fun37580
                 }
             case 82:
                 var2 = _closure1_slot4;
                 var2 = var2.MEDIUM;
                 if (!(var2 !== var1)) {
-                    _fun37587_ip = 156;
-                    continue _fun37587
+                    _fun37580_ip = 156;
+                    continue _fun37580
                 }
             case 96:
                 var2 = _closure1_slot4;
                 var2 = var2.LARGE;
                 if (!(var2 !== var1)) {
-                    _fun37587_ip = 151;
-                    continue _fun37587
+                    _fun37580_ip = 151;
+                    continue _fun37580
                 }
             case 110:
                 var2 = _closure1_slot4;
                 var2 = var2.REFRESH_SMALL_16;
                 if (!(var2 !== var1)) {
-                    _fun37587_ip = 146;
-                    continue _fun37587
+                    _fun37580_ip = 146;
+                    continue _fun37580
                 }
             case 124:
                 var0 = _closure1_slot4;
                 var0 = var0.CUSTOM;
                 if (!(var0 !== var1)) {
-                    _fun37587_ip = 142;
-                    continue _fun37587
+                    _fun37580_ip = 142;
+                    continue _fun37580
                 }
             case 138:
                 var0 = undefined;
@@ -164,19 +164,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var8[var6];
     var11 = var7.bind(var0)(var6);
     var10 = var11.createStyles;
-    var6 = function(arg0) { // Environment: var5
+    var6 = function() { // Environment: var5
         var0 = {};
-        var3 = _closure1_slot7;
-        var4 = undefined;
-        var1 = arg0;
-        var1 = var3.bind(var4)(var1);
-        var0.icon = var1;
         var1 = {};
-        var3 = _closure1_slot0;
-        var5 = _closure1_slot1;
+        var4 = _closure1_slot0;
+        var3 = _closure1_slot1;
         var2 = 4;
-        var2 = var5[var2];
-        var2 = var3.bind(var4)(var2);
+        var3 = var3[var2];
+        var2 = undefined;
+        var2 = var4.bind(var2)(var3);
         var2 = var2.colors;
         var2 = var2.INTERACTIVE_TEXT_DEFAULT;
         var1.tintColor = var2;
@@ -188,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var9.memo;
     var10 = var9.forwardRef;
     var5 = function(arg0, arg1) { // Environment: var5
-        _fun37590: for (var _fun37590_ip = 0;;) switch (_fun37590_ip) {
+        _fun37583: for (var _fun37583_ip = 0;;) switch (_fun37583_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.source;
@@ -196,16 +192,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.disableColor;
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun37590_ip = 27;
-                    continue _fun37590
+                    _fun37583_ip = 27;
+                    continue _fun37583
                 }
             case 25:
                 var1 = false;
             case 27:
                 var9 = var0.size;
                 if (!(var9 === var3)) {
-                    _fun37590_ip = 49;
-                    continue _fun37590
+                    _fun37583_ip = 49;
+                    continue _fun37583
                 }
             case 36:
                 var4 = _closure1_slot4;
@@ -214,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.style;
                 var11 = var0.resizeMode;
                 if (!(var11 === var3)) {
-                    _fun37590_ip = 67;
-                    continue _fun37590
+                    _fun37583_ip = 67;
+                    continue _fun37583
                 }
             case 63:
                 var11 = 'cover';
@@ -226,19 +222,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var3)(var9);
                 var8 = undefined;
                 if (var1) {
-                    _fun37590_ip = 121;
-                    continue _fun37590
+                    _fun37583_ip = 121;
+                    continue _fun37583
                 }
             case 94:
                 var1 = null;
                 if (!(var1 == var2)) {
-                    _fun37590_ip = 108;
-                    continue _fun37590
+                    _fun37583_ip = 108;
+                    continue _fun37583
                 }
             case 100:
                 var0 = var0.iconColor;
-                _fun37590_ip = 118;
-                continue _fun37590;
+                _fun37583_ip = 118;
+                continue _fun37583;
             case 108:
                 var1 = {};
                 var1.tintColor = var2;

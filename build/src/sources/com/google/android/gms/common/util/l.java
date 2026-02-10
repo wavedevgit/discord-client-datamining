@@ -4,8 +4,8 @@ import android.app.Application;
 import android.os.Build;
 import android.os.Process;
 import android.os.StrictMode;
-import hg.f0;
-import hg.g0;
+import ig.f0;
+import ig.g0;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,24 +13,24 @@ import java.io.IOException;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static String f13807a;
+    private static String f13947a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static int f13808b;
+    private static int f13948b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Boolean f13809c;
+    private static Boolean f13949c;
 
     public static String a() {
         BufferedReader bufferedReader;
-        if (f13807a == null) {
+        if (f13947a == null) {
             if (Build.VERSION.SDK_INT >= 28) {
-                f13807a = Application.getProcessName();
+                f13947a = Application.getProcessName();
             } else {
-                int i10 = f13808b;
+                int i10 = f13948b;
                 if (i10 == 0) {
                     i10 = Process.myPid();
-                    f13808b = i10;
+                    f13948b = i10;
                 }
                 String str = null;
                 str = null;
@@ -53,7 +53,7 @@ public abstract class l {
                     }
                     try {
                         String readLine = bufferedReader.readLine();
-                        gf.q.l(readLine);
+                        hf.q.l(readLine);
                         str = readLine.trim();
                     } catch (IOException unused2) {
                     } catch (Throwable th3) {
@@ -64,20 +64,20 @@ public abstract class l {
                     }
                     j.a(bufferedReader);
                 }
-                f13807a = str;
+                f13947a = str;
             }
         }
-        return f13807a;
+        return f13947a;
     }
 
     public static boolean b() {
-        Boolean bool = f13809c;
+        Boolean bool = f13949c;
         if (bool == null) {
             if (k.f()) {
                 bool = Boolean.valueOf(Process.isIsolated());
             } else {
                 try {
-                    Object a10 = hg.r.a(Process.class, "isIsolated", new hg.q[0]);
+                    Object a10 = ig.r.a(Process.class, "isIsolated", new ig.q[0]);
                     Object[] objArr = new Object[0];
                     if (a10 != null) {
                         bool = (Boolean) a10;
@@ -88,7 +88,7 @@ public abstract class l {
                     bool = Boolean.FALSE;
                 }
             }
-            f13809c = bool;
+            f13949c = bool;
         }
         return bool.booleanValue();
     }

@@ -1,30 +1,7 @@
 package le;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class h {
-    public static String b(com.google.android.exoplayer2.trackselection.g gVar) {
-        boolean z10;
-        if (gVar != null) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        ne.a.a(z10);
-        int k10 = ne.c0.k(gVar.q().f11587w);
-        if (k10 == -1) {
-            k10 = ne.c0.k(gVar.q().f11586v);
-        }
-        if (k10 == 1) {
-            return "a";
-        }
-        if (k10 == 2) {
-            return "v";
-        }
-        return null;
-    }
 
-    public abstract ni.t a();
-
-    public abstract h c(long j10);
-
-    public abstract h d(String str);
+    /* renamed from: a  reason: collision with root package name */
+    public static int f35831a = 2131100064;
 }

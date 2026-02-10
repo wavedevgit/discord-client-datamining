@@ -240,7 +240,7 @@ public class ReactEditText extends AppCompatEditText {
             if (ReactEditText.Companion.getDEBUG_MODE()) {
                 String str = ReactEditText.this.TAG;
                 int id2 = ReactEditText.this.getId();
-                p8.a.m(str, "onTextChanged[" + id2 + "]: " + ((Object) s10) + " " + i10 + " " + i11 + " " + i12);
+                q8.a.m(str, "onTextChanged[" + id2 + "]: " + ((Object) s10) + " " + i10 + " " + i11 + " " + i12);
             }
             if (!ReactEditText.this.isSettingTextFromJS() && (copyOnWriteArrayList = ReactEditText.this.listeners) != null) {
                 for (TextWatcher textWatcher : copyOnWriteArrayList) {
@@ -448,7 +448,7 @@ public class ReactEditText extends AppCompatEditText {
             int id2 = getId();
             Editable text = getText();
             Spannable text2 = reactTextUpdate.getText();
-            p8.a.m(str, "maybeSetText[" + id2 + "]: current text: " + ((Object) text) + " update: " + ((Object) text2));
+            q8.a.m(str, "maybeSetText[" + id2 + "]: current text: " + ((Object) text) + " update: " + ((Object) text2));
         }
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(reactTextUpdate.getText());
         manageSpans(spannableStringBuilder);
@@ -783,7 +783,7 @@ public class ReactEditText extends AppCompatEditText {
         if (DEBUG_MODE) {
             String str = this.TAG;
             int id2 = getId();
-            p8.a.m(str, "finalize[" + id2 + "] delete cached spannable");
+            q8.a.m(str, "finalize[" + id2 + "] delete cached spannable");
         }
         TextLayoutManager.INSTANCE.deleteCachedSpannableForTag(getId());
     }
@@ -1085,7 +1085,7 @@ public class ReactEditText extends AppCompatEditText {
         if (DEBUG_MODE) {
             String str = this.TAG;
             int id2 = getId();
-            p8.a.m(str, "onSelectionChanged[" + id2 + "]: " + i10 + " " + i11);
+            q8.a.m(str, "onSelectionChanged[" + id2 + "]: " + i10 + " " + i11);
         }
         super.onSelectionChanged(i10, i11);
         if (this.selectionWatcher != null && hasFocus() && (selectionWatcher = this.selectionWatcher) != null) {
@@ -1351,7 +1351,7 @@ public class ReactEditText extends AppCompatEditText {
         if (DEBUG_MODE) {
             String str = this.TAG;
             int id2 = getId();
-            p8.a.m(str, "setSelection[" + id2 + "]: " + i10 + " " + i11);
+            q8.a.m(str, "setSelection[" + id2 + "]: " + i10 + " " + i11);
         }
         super.setSelection(i10, i11);
     }

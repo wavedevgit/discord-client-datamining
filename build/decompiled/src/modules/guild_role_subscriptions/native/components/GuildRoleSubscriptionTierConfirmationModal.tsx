@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierConfirmationModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun117581: for (var _fun117581_ip = 0;;) switch (_fun117581_ip) {
+        _fun117540: for (var _fun117540_ip = 0;;) switch (_fun117540_ip) {
             case 0:
                 var4 = arg0;
                 var17 = var4.onDone;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4.isForGroupSetupModal;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun117581_ip = 29;
-                    continue _fun117581
+                    _fun117540_ip = 29;
+                    continue _fun117540
                 }
             case 27:
                 var6 = false;
@@ -145,13 +145,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot3;
                 var0 = function*() { // Environment: var0
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun117583: for (var _fun117583_ip = 0;;) switch (_fun117583_ip) {
+                        _fun117542: for (var _fun117542_ip = 0;;) switch (_fun117542_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun117583_ip = 89;
-                                    continue _fun117583
+                                    _fun117542_ip = 89;
+                                    continue _fun117542
                                 }
                             case 7: // try_start_0
                                 var3 = _closure2_slot1;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 35:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                                 if (var3) {
-                                    _fun117583_ip = 55;
-                                    continue _fun117583
+                                    _fun117542_ip = 55;
+                                    continue _fun117542
                                 }
                             case 41: // try_end0
                                 var5 = _closure2_slot1;
@@ -232,8 +232,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var30 = var5;
                 var5 = copyDataProperties(var31, var30);
                 if (!var6) {
-                    _fun117581_ip = 805;
-                    continue _fun117581
+                    _fun117540_ip = 805;
+                    continue _fun117540
                 }
             case 421:
                 var10 = _closure1_slot10;
@@ -241,8 +241,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var12 = var11 != var25;
                 if (!var12) {
-                    _fun117581_ip = 634;
-                    continue _fun117581
+                    _fun117540_ip = 634;
+                    continue _fun117540
                 }
             case 441:
                 var17 = _closure1_slot10;
@@ -354,4 +354,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 14972, 33, 1297, 671, 12631, 14983, 14975, 1234, 5981, 4704, 3942, 15007, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 14959, 33, 1297, 671, 12618, 14970, 14962, 1234, 5982, 4704, 3942, 14994, 2]);

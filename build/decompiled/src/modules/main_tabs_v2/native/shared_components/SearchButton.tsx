@@ -57,32 +57,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.borderRadius = var12;
     var7.roundedCorners = var4;
     var4 = {};
-    var12 = var6[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.round;
-    var4.borderRadius = var12;
-    var7.roundedCornersAlt = var4;
-    var4 = {};
     var10 = var6[var10];
     var10 = var11.bind(var0)(var10);
-    var10 = var10.colors;
-    var10 = var10.INTERACTIVE_TEXT_DEFAULT;
-    var4.backgroundColor = var10;
-    var7.icon = var4;
+    var10 = var10.radii;
+    var10 = var10.round;
+    var4.borderRadius = var10;
+    var7.roundedCornersAlt = var4;
     var10 = {};
     var4 = 8;
     var10.marginLeft = var4;
     var7.text = var10;
-    var11 = 'flex-end';
-    var10 = {
-        'flex': 1,
-        'justifyContent': 'flex-end'
-    };
-    var7.tagContainer = var10;
-    var10 = {};
-    var10.alignSelf = var11;
-    var7.tag = var10;
     var7 = var8.bind(var9)(var7);
     var _closure1_slot5 = var7;
     var4 = var6[var4];
@@ -92,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.SEARCH_BAR_HEIGHT = var3;
     var1 = function arg0() {
-        _fun90415: for (var _fun90415_ip = 0;;) switch (_fun90415_ip) {
+        _fun90416: for (var _fun90416_ip = 0;;) switch (_fun90416_ip) {
             case 0:
                 var2 = arg0;
                 var7 = var2.panelVariant;
@@ -117,13 +101,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(3);
                 var6[0] = var9;
                 if (var7) {
-                    _fun90415_ip = 91;
-                    continue _fun90415
+                    _fun90416_ip = 91;
+                    continue _fun90416
                 }
             case 83:
                 var7 = var8.roundedCorners;
-                _fun90415_ip = 97;
-                continue _fun90415;
+                _fun90416_ip = 97;
+                continue _fun90416;
             case 91:
                 var7 = var8.roundedCornersAlt;
             case 97:
@@ -178,4 +162,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SearchButtonContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7082, 3942, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7083, 3942, 1234, 2]);

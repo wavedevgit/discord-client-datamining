@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun51472: for (var _fun51472_ip = 0;;) switch (_fun51472_ip) {
+        _fun51475: for (var _fun51475_ip = 0;;) switch (_fun51475_ip) {
             case 0:
                 var1 = arg0;
                 var11 = var1.user;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var12.bind(var13)(var8, var5);
                 var5 = {};
                 if (!(var3 === var2)) {
-                    _fun51472_ip = 152;
-                    continue _fun51472
+                    _fun51475_ip = 152;
+                    continue _fun51475
                 }
             case 146:
                 var2 = var11.avatarDecoration;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.avatarDecoration = var2;
                 var2 = undefined;
                 if (!var7) {
-                    _fun51472_ip = 165;
-                    continue _fun51472
+                    _fun51475_ip = 165;
+                    continue _fun51475
                 }
             case 162:
                 var2 = var4;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4[var0];
                 var1 = var1.bind(var3)(var0);
                 if (!(var3 === var9)) {
-                    _fun51472_ip = 234;
-                    continue _fun51472
+                    _fun51475_ip = 234;
+                    continue _fun51475
                 }
             case 212:
                 var0 = {};
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var0;
                 var19 = var5;
                 var4 = copyDataProperties(var20, var19);
-                _fun51472_ip = 298;
-                continue _fun51472;
+                _fun51475_ip = 298;
+                continue _fun51475;
             case 234:
                 var4 = {};
                 var7 = _closure1_slot0;
@@ -163,11 +163,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.avatarRow = var8;
     var8 = {};
     var9 = 6;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.BACKGROUND_SURFACE_HIGH;
-    var8.backgroundColor = var11;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.colors;
+    var9 = var9.BACKGROUND_SURFACE_HIGH;
+    var8.backgroundColor = var9;
     var3.avatarStatusStyle = var8;
     var8 = {
         'width': 108,
@@ -176,29 +176,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'marginLeft': 28
     };
     var3.gridContainer = var8;
-    var8 = {
-        'width': 56,
-        'height': 208,
-        'display': 'flex',
-        'alignItems': 'center',
-        'backgroundColor': null,
-        'marginLeft': 12
-    };
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.BACKGROUND_SURFACE_HIGH;
-    var8.backgroundColor = var11;
-    var9 = var5[var9];
-    var9 = var10.bind(var0)(var9);
-    var9 = var9.radii;
-    var9 = var9.xs;
-    var8.borderRadius = var9;
-    var3.columnContainer = var8;
-    var8 = {};
-    var9 = 8;
-    var8.padding = var9;
-    var3.columnAvatarContainer = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
     var3 = 10;
@@ -293,4 +270,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3611, 33, 1297, 671, 566, 5504, 5788, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3611, 33, 1297, 671, 566, 5505, 5789, 2]);

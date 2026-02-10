@@ -20,6 +20,6 @@ public abstract class NativeSvgViewModuleSpec extends ReactContextBaseJavaModule
     }
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void toDataURL(Double d10, ReadableMap readableMap, Callback callback);
 }

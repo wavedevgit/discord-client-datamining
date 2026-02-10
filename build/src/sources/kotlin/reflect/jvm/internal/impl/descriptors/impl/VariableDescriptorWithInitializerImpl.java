@@ -14,13 +14,13 @@ import org.jetbrains.annotations.NotNull;
 public abstract class VariableDescriptorWithInitializerImpl extends VariableDescriptorImpl {
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f32632q;
+    private final boolean f32341q;
 
     /* renamed from: r  reason: collision with root package name */
-    protected NullableLazyValue f32633r;
+    protected NullableLazyValue f32342r;
 
     /* renamed from: s  reason: collision with root package name */
-    protected Function0 f32634s;
+    protected Function0 f32343s;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public VariableDescriptorWithInitializerImpl(@NotNull DeclarationDescriptor declarationDescriptor, @NotNull Annotations annotations, @NotNull Name name, KotlinType kotlinType, boolean z10, @NotNull SourceElement sourceElement) {
@@ -37,7 +37,7 @@ public abstract class VariableDescriptorWithInitializerImpl extends VariableDesc
         if (sourceElement == null) {
             a(3);
         }
-        this.f32632q = z10;
+        this.f32341q = z10;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -67,7 +67,7 @@ public abstract class VariableDescriptorWithInitializerImpl extends VariableDesc
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
     /* renamed from: getCompileTimeInitializer */
     public ConstantValue<?> mo1196getCompileTimeInitializer() {
-        NullableLazyValue nullableLazyValue = this.f32633r;
+        NullableLazyValue nullableLazyValue = this.f32342r;
         if (nullableLazyValue != null) {
             return (ConstantValue) nullableLazyValue.invoke();
         }
@@ -76,18 +76,18 @@ public abstract class VariableDescriptorWithInitializerImpl extends VariableDesc
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
     public boolean isVar() {
-        return this.f32632q;
+        return this.f32341q;
     }
 
     public void setCompileTimeInitializer(NullableLazyValue<ConstantValue<?>> nullableLazyValue, @NotNull Function0<NullableLazyValue<ConstantValue<?>>> function0) {
         if (function0 == null) {
             a(5);
         }
-        this.f32634s = function0;
+        this.f32343s = function0;
         if (nullableLazyValue == null) {
             nullableLazyValue = (NullableLazyValue) function0.invoke();
         }
-        this.f32633r = nullableLazyValue;
+        this.f32342r = nullableLazyValue;
     }
 
     public void setCompileTimeInitializerFactory(@NotNull Function0<NullableLazyValue<ConstantValue<?>>> function0) {

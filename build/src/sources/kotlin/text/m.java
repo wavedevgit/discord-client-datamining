@@ -9,51 +9,51 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class m implements c {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final m f35039i = new m("IGNORE_CASE", 0, 2, 0, 2, null);
+    public static final m f34748i = new m("IGNORE_CASE", 0, 2, 0, 2, null);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final m f35040o = new m("MULTILINE", 1, 8, 0, 2, null);
+    public static final m f34749o = new m("MULTILINE", 1, 8, 0, 2, null);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final m f35041p = new m("LITERAL", 2, 16, 0, 2, null);
+    public static final m f34750p = new m("LITERAL", 2, 16, 0, 2, null);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final m f35042q = new m("UNIX_LINES", 3, 1, 0, 2, null);
+    public static final m f34751q = new m("UNIX_LINES", 3, 1, 0, 2, null);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final m f35043r = new m("COMMENTS", 4, 4, 0, 2, null);
+    public static final m f34752r = new m("COMMENTS", 4, 4, 0, 2, null);
 
     /* renamed from: s  reason: collision with root package name */
-    public static final m f35044s = new m("DOT_MATCHES_ALL", 5, 32, 0, 2, null);
+    public static final m f34753s = new m("DOT_MATCHES_ALL", 5, 32, 0, 2, null);
 
     /* renamed from: t  reason: collision with root package name */
-    public static final m f35045t = new m("CANON_EQ", 6, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 0, 2, null);
+    public static final m f34754t = new m("CANON_EQ", 6, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 0, 2, null);
 
     /* renamed from: u  reason: collision with root package name */
-    private static final /* synthetic */ m[] f35046u;
+    private static final /* synthetic */ m[] f34755u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35047v;
+    private static final /* synthetic */ EnumEntries f34756v;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f35048d;
+    private final int f34757d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f35049e;
+    private final int f34758e;
 
     static {
         m[] a10 = a();
-        f35046u = a10;
-        f35047v = xr.a.a(a10);
+        f34755u = a10;
+        f34756v = yr.a.a(a10);
     }
 
     private m(String str, int i10, int i11, int i12) {
-        this.f35048d = i11;
-        this.f35049e = i12;
+        this.f34757d = i11;
+        this.f34758e = i12;
     }
 
     private static final /* synthetic */ m[] a() {
-        return new m[]{f35039i, f35040o, f35041p, f35042q, f35043r, f35044s, f35045t};
+        return new m[]{f34748i, f34749o, f34750p, f34751q, f34752r, f34753s, f34754t};
     }
 
     public static m valueOf(String str) {
@@ -61,12 +61,12 @@ public final class m implements c {
     }
 
     public static m[] values() {
-        return (m[]) f35046u.clone();
+        return (m[]) f34755u.clone();
     }
 
     @Override // kotlin.text.c
     public int getValue() {
-        return this.f35048d;
+        return this.f34757d;
     }
 
     /* synthetic */ m(String str, int i10, int i11, int i12, int i13, DefaultConstructorMarker defaultConstructorMarker) {

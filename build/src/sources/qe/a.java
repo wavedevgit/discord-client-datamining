@@ -1,47 +1,7 @@
 package qe;
-
-import android.os.Bundle;
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
-import wb.b;
-import wb.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface a extends IInterface {
+public interface a {
+    void b(long j10, float[] fArr);
 
-    /* renamed from: qe.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractBinderC0603a extends b implements a {
-
-        /* renamed from: qe.a$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0604a extends wb.a implements a {
-            C0604a(IBinder iBinder) {
-                super(iBinder);
-            }
-
-            @Override // qe.a
-            public final Bundle c(Bundle bundle) {
-                Parcel e10 = e();
-                c.b(e10, bundle);
-                Parcel f10 = f(e10);
-                Bundle bundle2 = (Bundle) c.a(f10, Bundle.CREATOR);
-                f10.recycle();
-                return bundle2;
-            }
-        }
-
-        public static a e(IBinder iBinder) {
-            if (iBinder == null) {
-                return null;
-            }
-            IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.finsky.externalreferrer.IGetInstallReferrerService");
-            if (queryLocalInterface instanceof a) {
-                return (a) queryLocalInterface;
-            }
-            return new C0604a(iBinder);
-        }
-    }
-
-    Bundle c(Bundle bundle);
+    void c();
 }

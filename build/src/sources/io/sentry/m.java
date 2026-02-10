@@ -12,31 +12,31 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class m implements h {
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f28351f;
+    private final boolean f28551f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final k7 f28352g;
+    private final k7 f28552g;
 
     /* renamed from: a  reason: collision with root package name */
-    private final io.sentry.util.a f28346a = new io.sentry.util.a();
+    private final io.sentry.util.a f28546a = new io.sentry.util.a();
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile Timer f28347b = null;
+    private volatile Timer f28547b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f28348c = new ConcurrentHashMap();
+    private final Map f28548c = new ConcurrentHashMap();
 
     /* renamed from: h  reason: collision with root package name */
-    private final AtomicBoolean f28353h = new AtomicBoolean(false);
+    private final AtomicBoolean f28553h = new AtomicBoolean(false);
 
     /* renamed from: i  reason: collision with root package name */
-    private long f28354i = 0;
+    private long f28554i = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f28349d = new ArrayList();
+    private final List f28549d = new ArrayList();
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f28350e = new ArrayList();
+    private final List f28550e = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -46,7 +46,7 @@ public final class m implements h {
 
         @Override // java.util.TimerTask, java.lang.Runnable
         public void run() {
-            for (t0 t0Var : m.this.f28349d) {
+            for (t0 t0Var : m.this.f28549d) {
                 t0Var.c();
             }
         }
@@ -57,28 +57,28 @@ public final class m implements h {
     public class b extends TimerTask {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ List f28356d;
+        final /* synthetic */ List f28556d;
 
         b(List list) {
-            this.f28356d = list;
+            this.f28556d = list;
         }
 
         @Override // java.util.TimerTask, java.lang.Runnable
         public void run() {
             long currentTimeMillis = System.currentTimeMillis();
-            if (currentTimeMillis - m.this.f28354i > 10) {
-                this.f28356d.clear();
-                m.this.f28354i = currentTimeMillis;
-                k3 k3Var = new k3(m.this.f28352g.getDateProvider().now().h());
-                for (t0 t0Var : m.this.f28349d) {
+            if (currentTimeMillis - m.this.f28554i > 10) {
+                this.f28556d.clear();
+                m.this.f28554i = currentTimeMillis;
+                k3 k3Var = new k3(m.this.f28552g.getDateProvider().now().h());
+                for (t0 t0Var : m.this.f28549d) {
                     t0Var.d(k3Var);
                 }
-                for (c cVar : m.this.f28348c.values()) {
-                    if (cVar.c(k3Var) && cVar.f28359b != null) {
-                        this.f28356d.add(cVar.f28359b);
+                for (c cVar : m.this.f28548c.values()) {
+                    if (cVar.c(k3Var) && cVar.f28559b != null) {
+                        this.f28556d.add(cVar.f28559b);
                     }
                 }
-                for (e1 e1Var : this.f28356d) {
+                for (e1 e1Var : this.f28556d) {
                     m.this.d(e1Var);
                 }
             }
@@ -90,92 +90,92 @@ public final class m implements h {
     public class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f28358a;
+        private final List f28558a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final e1 f28359b;
+        private final e1 f28559b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final long f28360c;
+        private final long f28560c;
 
         /* synthetic */ c(m mVar, e1 e1Var, a aVar) {
             this(e1Var);
         }
 
         boolean c(k3 k3Var) {
-            this.f28358a.add(k3Var);
-            if (this.f28359b != null && m.this.f28352g.getDateProvider().now().h() > this.f28360c + TimeUnit.MILLISECONDS.toNanos(30000L)) {
+            this.f28558a.add(k3Var);
+            if (this.f28559b != null && m.this.f28552g.getDateProvider().now().h() > this.f28560c + TimeUnit.MILLISECONDS.toNanos(30000L)) {
                 return true;
             }
             return false;
         }
 
         private c(e1 e1Var) {
-            this.f28358a = new ArrayList();
-            this.f28359b = e1Var;
-            this.f28360c = m.this.f28352g.getDateProvider().now().h();
+            this.f28558a = new ArrayList();
+            this.f28559b = e1Var;
+            this.f28560c = m.this.f28552g.getDateProvider().now().h();
         }
     }
 
     public m(k7 k7Var) {
         boolean z10 = false;
-        this.f28352g = (k7) io.sentry.util.y.c(k7Var, "The options object is required.");
+        this.f28552g = (k7) io.sentry.util.y.c(k7Var, "The options object is required.");
         for (r0 r0Var : k7Var.getPerformanceCollectors()) {
             if (r0Var instanceof t0) {
-                this.f28349d.add((t0) r0Var);
+                this.f28549d.add((t0) r0Var);
             }
             if (r0Var instanceof s0) {
-                this.f28350e.add((s0) r0Var);
+                this.f28550e.add((s0) r0Var);
             }
         }
-        if (this.f28349d.isEmpty() && this.f28350e.isEmpty()) {
+        if (this.f28549d.isEmpty() && this.f28550e.isEmpty()) {
             z10 = true;
         }
-        this.f28351f = z10;
+        this.f28551f = z10;
     }
 
     @Override // io.sentry.h
     public void a(ISpan iSpan) {
-        for (s0 s0Var : this.f28350e) {
+        for (s0 s0Var : this.f28550e) {
             s0Var.a(iSpan);
         }
     }
 
     @Override // io.sentry.h
     public void b(ISpan iSpan) {
-        for (s0 s0Var : this.f28350e) {
+        for (s0 s0Var : this.f28550e) {
             s0Var.b(iSpan);
         }
     }
 
     @Override // io.sentry.h
     public List c(String str) {
-        c cVar = (c) this.f28348c.remove(str);
-        ILogger logger = this.f28352g.getLogger();
+        c cVar = (c) this.f28548c.remove(str);
+        ILogger logger = this.f28552g.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
         logger.c(sentryLevel, "stop collecting performance info for " + str, new Object[0]);
-        if (this.f28348c.isEmpty()) {
+        if (this.f28548c.isEmpty()) {
             close();
         }
         if (cVar != null) {
-            return cVar.f28358a;
+            return cVar.f28558a;
         }
         return null;
     }
 
     @Override // io.sentry.h
     public void close() {
-        this.f28352g.getLogger().c(SentryLevel.DEBUG, "stop collecting all performance info for transactions", new Object[0]);
-        this.f28348c.clear();
-        for (s0 s0Var : this.f28350e) {
+        this.f28552g.getLogger().c(SentryLevel.DEBUG, "stop collecting all performance info for transactions", new Object[0]);
+        this.f28548c.clear();
+        for (s0 s0Var : this.f28550e) {
             s0Var.clear();
         }
-        if (this.f28353h.getAndSet(false)) {
-            a1 a10 = this.f28346a.a();
+        if (this.f28553h.getAndSet(false)) {
+            a1 a10 = this.f28546a.a();
             try {
-                if (this.f28347b != null) {
-                    this.f28347b.cancel();
-                    this.f28347b = null;
+                if (this.f28547b != null) {
+                    this.f28547b.cancel();
+                    this.f28547b = null;
                 }
                 if (a10 != null) {
                     a10.close();
@@ -195,8 +195,8 @@ public final class m implements h {
 
     @Override // io.sentry.h
     public List d(e1 e1Var) {
-        this.f28352g.getLogger().c(SentryLevel.DEBUG, "stop collecting performance info for transactions %s (%s)", e1Var.getName(), e1Var.q().p().toString());
-        for (s0 s0Var : this.f28350e) {
+        this.f28552g.getLogger().c(SentryLevel.DEBUG, "stop collecting performance info for transactions %s (%s)", e1Var.getName(), e1Var.q().p().toString());
+        for (s0 s0Var : this.f28550e) {
             s0Var.a(e1Var);
         }
         return c(e1Var.f().toString());
@@ -204,37 +204,37 @@ public final class m implements h {
 
     @Override // io.sentry.h
     public void e(e1 e1Var) {
-        if (this.f28351f) {
-            this.f28352g.getLogger().c(SentryLevel.INFO, "No collector found. Performance stats will not be captured during transactions.", new Object[0]);
+        if (this.f28551f) {
+            this.f28552g.getLogger().c(SentryLevel.INFO, "No collector found. Performance stats will not be captured during transactions.", new Object[0]);
             return;
         }
-        for (s0 s0Var : this.f28350e) {
+        for (s0 s0Var : this.f28550e) {
             s0Var.b(e1Var);
         }
         String xVar = e1Var.f().toString();
-        if (!this.f28348c.containsKey(xVar)) {
-            this.f28348c.put(xVar, new c(this, e1Var, null));
+        if (!this.f28548c.containsKey(xVar)) {
+            this.f28548c.put(xVar, new c(this, e1Var, null));
         }
         f(xVar);
     }
 
     @Override // io.sentry.h
     public void f(String str) {
-        if (this.f28351f) {
-            this.f28352g.getLogger().c(SentryLevel.INFO, "No collector found. Performance stats will not be captured during transactions.", new Object[0]);
+        if (this.f28551f) {
+            this.f28552g.getLogger().c(SentryLevel.INFO, "No collector found. Performance stats will not be captured during transactions.", new Object[0]);
             return;
         }
-        if (!this.f28348c.containsKey(str)) {
-            this.f28348c.put(str, new c(this, null, null));
+        if (!this.f28548c.containsKey(str)) {
+            this.f28548c.put(str, new c(this, null, null));
         }
-        if (!this.f28353h.getAndSet(true)) {
-            a1 a10 = this.f28346a.a();
+        if (!this.f28553h.getAndSet(true)) {
+            a1 a10 = this.f28546a.a();
             try {
-                if (this.f28347b == null) {
-                    this.f28347b = new Timer(true);
+                if (this.f28547b == null) {
+                    this.f28547b = new Timer(true);
                 }
-                this.f28347b.schedule(new a(), 0L);
-                this.f28347b.scheduleAtFixedRate(new b(new ArrayList()), 100L, 100L);
+                this.f28547b.schedule(new a(), 0L);
+                this.f28547b.scheduleAtFixedRate(new b(new ArrayList()), 100L, 100L);
                 if (a10 != null) {
                     a10.close();
                 }

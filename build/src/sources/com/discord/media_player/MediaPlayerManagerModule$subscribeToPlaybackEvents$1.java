@@ -42,7 +42,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$1 extends k imple
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            wr.b.f();
+            xr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
                 return (MediaSource) ((Pair) this.L$0).a();
@@ -52,7 +52,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$1 extends k imple
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(Pair<MediaSource, Double> pair, Continuation<? super MediaSource> continuation) {
-            return ((AnonymousClass1) create(pair, continuation)).invokeSuspend(Unit.f32056a);
+            return ((AnonymousClass1) create(pair, continuation)).invokeSuspend(Unit.f31765a);
         }
     }
 
@@ -82,7 +82,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$1 extends k imple
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(MediaSource mediaSource, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(mediaSource, continuation)).invokeSuspend(Unit.f32056a);
+            return ((AnonymousClass2) create(mediaSource, continuation)).invokeSuspend(Unit.f31765a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -90,7 +90,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$1 extends k imple
             ReactEvents reactEvents;
             ReactApplicationContext reactApplicationContext;
             MediaPlayerPlaybackSource mediaPlayerPlaybackSource;
-            wr.b.f();
+            xr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
                 MediaSource mediaSource = (MediaSource) this.L$0;
@@ -102,7 +102,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$1 extends k imple
                     mediaPlayerPlaybackSource = null;
                 }
                 reactEvents.emitModuleEvent(reactApplicationContext, new MediaPlayerPlaybackSourceChanged(mediaPlayerPlaybackSource));
-                return Unit.f32056a;
+                return Unit.f31765a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -122,7 +122,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$1 extends k imple
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = wr.b.f();
+        Object f10 = xr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -132,18 +132,18 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$1 extends k imple
             }
         } else {
             kotlin.c.b(obj);
-            Flow l10 = rs.g.l(rs.g.z(MediaPlayerManager.INSTANCE.getPlaybackRateFlow$media_player_release(), new AnonymousClass1(null)));
+            Flow l10 = ss.g.l(ss.g.z(MediaPlayerManager.INSTANCE.getPlaybackRateFlow$media_player_release(), new AnonymousClass1(null)));
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.this$0, null);
             this.label = 1;
-            if (rs.g.i(l10, anonymousClass2, this) == f10) {
+            if (ss.g.i(l10, anonymousClass2, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$subscribeToPlaybackEvents$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
+        return ((MediaPlayerManagerModule$subscribeToPlaybackEvents$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
     }
 }

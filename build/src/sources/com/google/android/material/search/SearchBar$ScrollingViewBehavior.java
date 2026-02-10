@@ -10,10 +10,10 @@ import com.google.android.material.appbar.AppBarLayout;
 public class SearchBar$ScrollingViewBehavior extends AppBarLayout.ScrollingViewBehavior {
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f15280s;
+    private boolean f15420s;
 
     public SearchBar$ScrollingViewBehavior() {
-        this.f15280s = false;
+        this.f15420s = false;
     }
 
     private void Y(AppBarLayout appBarLayout) {
@@ -29,8 +29,8 @@ public class SearchBar$ScrollingViewBehavior extends AppBarLayout.ScrollingViewB
     @Override // com.google.android.material.appbar.AppBarLayout.ScrollingViewBehavior, androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean l(CoordinatorLayout coordinatorLayout, View view, View view2) {
         boolean l10 = super.l(coordinatorLayout, view, view2);
-        if (!this.f15280s && (view2 instanceof AppBarLayout)) {
-            this.f15280s = true;
+        if (!this.f15420s && (view2 instanceof AppBarLayout)) {
+            this.f15420s = true;
             Y((AppBarLayout) view2);
         }
         return l10;
@@ -38,6 +38,6 @@ public class SearchBar$ScrollingViewBehavior extends AppBarLayout.ScrollingViewB
 
     public SearchBar$ScrollingViewBehavior(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f15280s = false;
+        this.f15420s = false;
     }
 }

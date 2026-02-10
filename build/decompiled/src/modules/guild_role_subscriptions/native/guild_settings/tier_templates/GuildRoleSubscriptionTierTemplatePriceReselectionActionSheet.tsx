@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun117739: for (var _fun117739_ip = 0;;) switch (_fun117739_ip) {
+        _fun117698: for (var _fun117698_ip = 0;;) switch (_fun117698_ip) {
             case 0:
                 var0 = arg0;
                 var18 = var0.price;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var6;
                 var6 = undefined;
                 if (!var7) {
-                    _fun117739_ip = 84;
-                    continue _fun117739
+                    _fun117698_ip = 84;
+                    continue _fun117698
                 }
             case 78:
                 var6 = var9.containerSelected;
@@ -55,14 +55,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var9;
                 var10 = _closure1_slot2;
                 if (var7) {
-                    _fun117739_ip = 168;
-                    continue _fun117739
+                    _fun117698_ip = 168;
+                    continue _fun117698
                 }
             case 159:
                 var7 = 11;
                 var7 = var10[var7];
-                _fun117739_ip = 175;
-                continue _fun117739;
+                _fun117698_ip = 175;
+                continue _fun117698;
             case 168:
                 var9 = 10;
                 var7 = var10[var9];
@@ -240,10 +240,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'center';
     var8.alignSelf = var9;
     var3.backToTemplates = var8;
-    var8 = {};
-    var9 = 0.5;
-    var8.opacity = var9;
-    var3.disabled = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot11 = var3;
     var3 = 22;
@@ -513,4 +509,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1623, 483, 33, 1297, 671, 6852, 4704, 14928, 13741, 3942, 1234, 4606, 10886, 1568, 4933, 4935, 9352, 4875, 3279, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1623, 483, 33, 1297, 671, 6853, 4704, 14915, 13728, 3942, 1234, 4606, 10882, 1568, 4933, 4935, 9330, 4875, 3279, 2]);

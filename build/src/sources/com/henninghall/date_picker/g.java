@@ -3,10 +3,10 @@ package com.henninghall.date_picker;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f16593a;
+    private final n f16733a;
 
     public g(n nVar) {
-        this.f16593a = nVar;
+        this.f16733a = nVar;
     }
 
     private String a(String str) {

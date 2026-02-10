@@ -1,15 +1,29 @@
 package s5;
+
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    final r5.b f49713a;
-
-    public a(r5.b bVar) {
-        this.f49713a = bVar;
+public class a extends p {
+    public a(List list) {
+        super(list);
     }
 
-    public r5.b a() {
-        return this.f49713a;
+    @Override // s5.o
+    public o5.a a() {
+        return new o5.b(this.f49540a);
+    }
+
+    @Override // s5.p, s5.o
+    public /* bridge */ /* synthetic */ List b() {
+        return super.b();
+    }
+
+    @Override // s5.p, s5.o
+    public /* bridge */ /* synthetic */ boolean isStatic() {
+        return super.isStatic();
+    }
+
+    @Override // s5.p
+    public /* bridge */ /* synthetic */ String toString() {
+        return super.toString();
     }
 }

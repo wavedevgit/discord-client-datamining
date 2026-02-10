@@ -43,30 +43,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = {};
-    var8 = {
-        'backgroundColor': null,
-        'paddingTop': 8,
-        'paddingBottom': 64
-    };
-    var9 = 5;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.BACKGROUND_SURFACE_HIGH;
-    var8.backgroundColor = var11;
-    var3.container = var8;
     var8 = {};
+    var9 = 5;
     var11 = var5[var9];
     var11 = var10.bind(var0)(var11);
     var11 = var11.radii;
     var11 = var11.sm;
     var8.borderRadius = var11;
     var3.cardBody = var8;
-    var8 = {
-        'width': 22,
-        'height': 22
-    };
-    var3.checkbox = var8;
     var8 = {
         'height': 1,
         'alignSelf': 'stretch',
@@ -152,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var10 = var9.bind(var3)();
         var9 = var10.map;
         var8 = function(arg0, arg1, arg2) { // Environment: var8
-            _fun72228: for (var _fun72228_ip = 0;;) switch (_fun72228_ip) {
+            _fun72093: for (var _fun72093_ip = 0;;) switch (_fun72093_ip) {
                 case 0:
                     var0 = arg0;
                     var6 = var0.setting;
@@ -202,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = arg1;
                     var5 = null;
                     if (!(var8 !== var9)) {
-                        _fun72228_ip = 175;
-                        continue _fun72228
+                        _fun72093_ip = 175;
+                        continue _fun72093
                     }
                 case 145:
                     var9 = _closure1_slot5;
@@ -235,4 +219,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1233, 33, 1297, 671, 8806, 4933, 5261, 1234, 5430, 6534, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1233, 33, 1297, 671, 8784, 4933, 5261, 1234, 5431, 6535, 2]);

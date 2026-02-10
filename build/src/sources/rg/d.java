@@ -1,59 +1,54 @@
 package rg;
 
-import android.os.Process;
-import android.text.TextUtils;
-import android.util.Log;
-import java.util.IllegalFormatException;
-import java.util.Locale;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class d {
+final class d implements Iterator {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final String f48950a;
+    /* renamed from: d  reason: collision with root package name */
+    final Iterator f48162d;
 
-    public d(String str) {
-        int myUid = Process.myUid();
-        int myPid = Process.myPid();
-        this.f48950a = ("UID: [" + myUid + "]  PID: [" + myPid + "] ").concat(str);
+    /* renamed from: e  reason: collision with root package name */
+    Collection f48163e;
+
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ e f48164i;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public d(e eVar) {
+        this.f48164i = eVar;
+        this.f48162d = eVar.f48174i.entrySet().iterator();
     }
 
-    private static String e(String str, String str2, Object... objArr) {
-        if (objArr.length > 0) {
-            try {
-                str2 = String.format(Locale.US, str2, objArr);
-            } catch (IllegalFormatException e10) {
-                Log.e("PlayCore", "Unable to format ".concat(String.valueOf(str2)), e10);
-                str2 = str2 + " [" + TextUtils.join(", ", objArr) + "]";
-            }
-        }
-        return str + " : " + str2;
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        return this.f48162d.hasNext();
     }
 
-    public final int a(String str, Object... objArr) {
-        if (Log.isLoggable("PlayCore", 6)) {
-            return Log.e("PlayCore", e(this.f48950a, "onError(%d)", objArr));
-        }
-        return 0;
+    @Override // java.util.Iterator
+    public final /* bridge */ /* synthetic */ Object next() {
+        Map.Entry entry = (Map.Entry) this.f48162d.next();
+        this.f48163e = (Collection) entry.getValue();
+        Object key = entry.getKey();
+        return new i0(key, this.f48164i.f48175o.h(key, (Collection) entry.getValue()));
     }
 
-    public final int b(Throwable th2, String str, Object... objArr) {
-        if (Log.isLoggable("PlayCore", 6)) {
-            return Log.e("PlayCore", e(this.f48950a, str, objArr), th2);
+    @Override // java.util.Iterator
+    public final void remove() {
+        boolean z10;
+        int i10;
+        if (this.f48163e != null) {
+            z10 = true;
+        } else {
+            z10 = false;
         }
-        return 0;
-    }
-
-    public final int c(String str, Object... objArr) {
-        if (Log.isLoggable("PlayCore", 4)) {
-            return Log.i("PlayCore", e(this.f48950a, str, objArr));
-        }
-        return 0;
-    }
-
-    public final int d(String str, Object... objArr) {
-        if (Log.isLoggable("PlayCore", 5)) {
-            return Log.w("PlayCore", e(this.f48950a, str, objArr));
-        }
-        return 0;
+        el.d(z10, "no calls to next() since the last call to remove()");
+        this.f48162d.remove();
+        m mVar = this.f48164i.f48175o;
+        i10 = mVar.f48541o;
+        mVar.f48541o = i10 - this.f48163e.size();
+        this.f48163e.clear();
+        this.f48163e = null;
     }
 }

@@ -26,7 +26,7 @@ public abstract class BaseJavaModule implements NativeModule {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final ReactApplicationContext getReactApplicationContext() {
-        return (ReactApplicationContext) db.a.d(this.mReactApplicationContext, "Tried to get ReactApplicationContext even though NativeModule wasn't instantiated with one");
+        return (ReactApplicationContext) eb.a.d(this.mReactApplicationContext, "Tried to get ReactApplicationContext even though NativeModule wasn't instantiated with one");
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -37,7 +37,7 @@ public abstract class BaseJavaModule implements NativeModule {
         }
         String str = "React Native Instance has already disappeared: requested by " + getName();
         if (ReactBuildConfig.DEBUG) {
-            p8.a.J(ReactConstants.TAG, str);
+            q8.a.J(ReactConstants.TAG, str);
             return null;
         }
         ReactSoftExceptionLogger.logSoftException(ReactConstants.TAG, new RuntimeException(str));
@@ -52,7 +52,7 @@ public abstract class BaseJavaModule implements NativeModule {
     public void invalidate() {
     }
 
-    @fb.a
+    @gb.a
     protected void setEventEmitterCallback(CxxCallbackImpl cxxCallbackImpl) {
         this.mEventEmitterCallback = cxxCallbackImpl;
     }

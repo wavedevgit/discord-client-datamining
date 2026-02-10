@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 abstract class n {
     private static Executor a(String str) {
-        return new ThreadPoolExecutor(0, 1, 30L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new of.a(str));
+        return new ThreadPoolExecutor(0, 1, 30L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new pf.a(str));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -21,26 +21,26 @@ abstract class n {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ScheduledExecutorService c() {
-        return new ScheduledThreadPoolExecutor(1, new of.a("Firebase-Messaging-Init"));
+        return new ScheduledThreadPoolExecutor(1, new pf.a("Firebase-Messaging-Init"));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ExecutorService d() {
-        return mj.b.a().a(new of.a("Firebase-Messaging-Intent-Handle"), mj.c.HIGH_SPEED);
+        return nj.b.a().a(new pf.a("Firebase-Messaging-Intent-Handle"), nj.c.HIGH_SPEED);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ExecutorService e() {
-        return Executors.newSingleThreadExecutor(new of.a("Firebase-Messaging-Network-Io"));
+        return Executors.newSingleThreadExecutor(new pf.a("Firebase-Messaging-Network-Io"));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ExecutorService f() {
-        return Executors.newSingleThreadExecutor(new of.a("Firebase-Messaging-Task"));
+        return Executors.newSingleThreadExecutor(new pf.a("Firebase-Messaging-Task"));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ScheduledExecutorService g() {
-        return new ScheduledThreadPoolExecutor(1, new of.a("Firebase-Messaging-Topics-Io"));
+        return new ScheduledThreadPoolExecutor(1, new pf.a("Firebase-Messaging-Topics-Io"));
     }
 }

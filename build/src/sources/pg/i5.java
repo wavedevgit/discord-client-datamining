@@ -1,69 +1,57 @@
 package pg;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class i5 implements yi.d {
+final class i5 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i5 f44377a = new i5();
+    static final i5 f43629a = new i5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44378b;
+    private static final zi.c f43630b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44379c;
+    private static final zi.c f43631c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44380d;
+    private static final zi.c f43632d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f44381e;
+    private static final zi.c f43633e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f44382f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final yi.c f44383g;
+    private static final zi.c f43634f;
 
     static {
-        c.b a10 = yi.c.a("maxMs");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f44378b = a10.b(s1Var.b()).a();
-        c.b a11 = yi.c.a("minMs");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f44379c = a11.b(s1Var2.b()).a();
-        c.b a12 = yi.c.a("avgMs");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f44380d = a12.b(s1Var3.b()).a();
-        c.b a13 = yi.c.a("firstQuartileMs");
-        s1 s1Var4 = new s1();
-        s1Var4.a(4);
-        f44381e = a13.b(s1Var4.b()).a();
-        c.b a14 = yi.c.a("medianMs");
-        s1 s1Var5 = new s1();
-        s1Var5.a(5);
-        f44382f = a14.b(s1Var5.b()).a();
-        c.b a15 = yi.c.a("thirdQuartileMs");
-        s1 s1Var6 = new s1();
-        s1Var6.a(6);
-        f44383g = a15.b(s1Var6.b()).a();
+        c.b a10 = zi.c.a("detectorOptions");
+        f fVar = new f();
+        fVar.a(1);
+        f43630b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("errorCode");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f43631c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("totalInitializationMs");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f43632d = a12.b(fVar3.b()).a();
+        c.b a13 = zi.c.a("loggingInitializationMs");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f43633e = a13.b(fVar4.b()).a();
+        c.b a14 = zi.c.a("otherErrors");
+        f fVar5 = new f();
+        fVar5.a(5);
+        f43634f = a14.b(fVar5.b()).a();
     }
 
     private i5() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        e9 e9Var = (e9) obj;
-        yi.e eVar = (yi.e) obj2;
-        eVar.a(f44378b, e9Var.c());
-        eVar.a(f44379c, e9Var.e());
-        eVar.a(f44380d, e9Var.a());
-        eVar.a(f44381e, e9Var.b());
-        eVar.a(f44382f, e9Var.d());
-        eVar.a(f44383g, e9Var.f());
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

@@ -1,0 +1,55 @@
+package kf;
+
+import android.content.Context;
+import com.google.android.gms.tasks.Task;
+import ff.a;
+import ff.d;
+import gf.m;
+import gf.q;
+import hf.u;
+import hf.w;
+import hf.x;
+import zg.k;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class d extends ff.d implements w {
+
+    /* renamed from: k  reason: collision with root package name */
+    private static final a.g f30870k;
+
+    /* renamed from: l  reason: collision with root package name */
+    private static final a.AbstractC0331a f30871l;
+
+    /* renamed from: m  reason: collision with root package name */
+    private static final ff.a f30872m;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static final /* synthetic */ int f30873n = 0;
+
+    static {
+        a.g gVar = new a.g();
+        f30870k = gVar;
+        c cVar = new c();
+        f30871l = cVar;
+        f30872m = new ff.a("ClientTelemetry.API", cVar, gVar);
+    }
+
+    public d(Context context, x xVar) {
+        super(context, f30872m, xVar, d.a.f22610c);
+    }
+
+    @Override // hf.w
+    public final Task k(final u uVar) {
+        q.a a10 = q.a();
+        a10.d(gg.d.f24395a);
+        a10.c(false);
+        a10.b(new m() { // from class: kf.b
+            @Override // gf.m
+            public final void accept(Object obj, Object obj2) {
+                int i10 = d.f30873n;
+                ((a) ((e) obj).C()).W0(u.this);
+                ((k) obj2).c(null);
+            }
+        });
+        return o(a10.a());
+    }
+}

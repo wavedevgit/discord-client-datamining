@@ -12,38 +12,38 @@ import java.util.ArrayList;
 public class h extends RenderableView {
 
     /* renamed from: d  reason: collision with root package name */
-    private SVGLength f16890d;
+    private SVGLength f17030d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SVGLength f16891e;
+    private SVGLength f17031e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SVGLength f16892i;
+    private SVGLength f17032i;
 
     /* renamed from: o  reason: collision with root package name */
-    private SVGLength f16893o;
+    private SVGLength f17033o;
 
     public h(ReactContext reactContext) {
         super(reactContext);
     }
 
     public void c(Dynamic dynamic) {
-        this.f16890d = SVGLength.b(dynamic);
+        this.f17030d = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void d(Dynamic dynamic) {
-        this.f16891e = SVGLength.b(dynamic);
+        this.f17031e = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void e(Dynamic dynamic) {
-        this.f16892i = SVGLength.b(dynamic);
+        this.f17032i = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void f(Dynamic dynamic) {
-        this.f16893o = SVGLength.b(dynamic);
+        this.f17033o = SVGLength.b(dynamic);
         invalidate();
     }
 
@@ -51,10 +51,10 @@ public class h extends RenderableView {
     @Override // com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     public Path getPath(Canvas canvas, Paint paint) {
         Path path = new Path();
-        double relativeOnWidth = relativeOnWidth(this.f16890d);
-        double relativeOnHeight = relativeOnHeight(this.f16891e);
-        double relativeOnWidth2 = relativeOnWidth(this.f16892i);
-        double relativeOnHeight2 = relativeOnHeight(this.f16893o);
+        double relativeOnWidth = relativeOnWidth(this.f17030d);
+        double relativeOnHeight = relativeOnHeight(this.f17031e);
+        double relativeOnWidth2 = relativeOnWidth(this.f17032i);
+        double relativeOnHeight2 = relativeOnHeight(this.f17033o);
         double d10 = relativeOnWidth - relativeOnWidth2;
         double d11 = relativeOnHeight - relativeOnHeight2;
         double d12 = relativeOnWidth + relativeOnWidth2;

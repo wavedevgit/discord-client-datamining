@@ -1,44 +1,26 @@
 package cn;
 
-import cn.e;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.Job;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements e.a {
+public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f7594a;
+    private final Object f7736a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Job f7595b;
+    private final m f7737b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private g f7596c;
-
-    public g(String key, Job job) {
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(job, "job");
-        this.f7594a = key;
-        this.f7595b = job;
+    public g(Object obj, m snapshot) {
+        Intrinsics.checkNotNullParameter(snapshot, "snapshot");
+        this.f7736a = obj;
+        this.f7737b = snapshot;
     }
 
-    public final Job c() {
-        return this.f7595b;
+    public final Object a() {
+        return this.f7736a;
     }
 
-    public final String d() {
-        return this.f7594a;
-    }
-
-    @Override // cn.e.a
-    /* renamed from: e */
-    public g a() {
-        return this.f7596c;
-    }
-
-    @Override // cn.e.a
-    /* renamed from: f */
-    public void b(g gVar) {
-        this.f7596c = gVar;
+    public final m b() {
+        return this.f7737b;
     }
 }

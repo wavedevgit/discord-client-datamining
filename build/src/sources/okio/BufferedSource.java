@@ -3,60 +3,64 @@ package okio;
 import java.io.InputStream;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.charset.Charset;
-import qu.a0;
+import ru.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface BufferedSource extends Source, ReadableByteChannel {
-    boolean D0(long j10);
+    boolean B0(long j10);
 
-    String H0();
+    String D1(Charset charset);
 
-    String H1(Charset charset);
+    int E1(a0 a0Var);
 
-    ByteString K1();
+    String F0();
+
+    byte[] I0(long j10);
+
+    ByteString I1();
+
+    short K0();
+
+    long L0();
 
     Buffer M();
 
-    byte[] N0(long j10);
+    int O1();
 
-    short P0();
+    void Q0(long j10);
 
-    int P1();
+    String R1();
 
-    long Q0();
+    long Y(ByteString byteString);
 
-    String S1();
+    String Y0(long j10);
 
-    void U0(long j10);
+    ByteString c1(long j10);
 
-    long X(ByteString byteString);
-
-    String b1(long j10);
-
-    void d0(Buffer buffer, long j10);
-
-    int d2(a0 a0Var);
+    long d2(Sink sink);
 
     Buffer e();
 
-    long e0(byte b10, long j10, long j11);
+    void e0(Buffer buffer, long j10);
 
-    long e2(Sink sink);
+    long f0(byte b10, long j10, long j11);
 
-    long f0(ByteString byteString);
+    long g0(ByteString byteString);
 
-    ByteString f1(long j10);
+    String i0(long j10);
 
-    String h0(long j10);
+    byte[] j1();
 
-    byte[] m1();
+    boolean k1();
 
     long m2();
 
-    boolean n1();
+    long n1();
 
     InputStream n2();
 
     BufferedSource peek();
+
+    boolean r0(long j10, ByteString byteString);
 
     byte readByte();
 
@@ -67,10 +71,6 @@ public interface BufferedSource extends Source, ReadableByteChannel {
     long readLong();
 
     short readShort();
-
-    boolean s0(long j10, ByteString byteString);
-
-    long s1();
 
     void skip(long j10);
 }

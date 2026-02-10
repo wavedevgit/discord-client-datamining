@@ -1,70 +1,107 @@
 package pu;
 
-import java.io.Closeable;
-import java.util.zip.Deflater;
+import java.security.GeneralSecurityException;
+import java.security.cert.X509Certificate;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import javax.net.ssl.SSLPeerUnverifiedException;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Buffer;
-import okio.ByteString;
-import okio.Sink;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements Closeable {
+public final class a extends c {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f45711d;
+    /* renamed from: c  reason: collision with root package name */
+    public static final C0621a f44554c = new C0621a(null);
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Buffer f45712e;
+    /* renamed from: b  reason: collision with root package name */
+    private final e f44555b;
 
-    /* renamed from: i  reason: collision with root package name */
-    private final Deflater f45713i;
+    /* renamed from: pu.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0621a {
+        public /* synthetic */ C0621a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-    /* renamed from: o  reason: collision with root package name */
-    private final qu.e f45714o;
-
-    public a(boolean z10) {
-        this.f45711d = z10;
-        Buffer buffer = new Buffer();
-        this.f45712e = buffer;
-        Deflater deflater = new Deflater(-1, true);
-        this.f45713i = deflater;
-        this.f45714o = new qu.e((Sink) buffer, deflater);
+        private C0621a() {
+        }
     }
 
-    private final boolean g(Buffer buffer, ByteString byteString) {
-        return buffer.s0(buffer.size() - byteString.G(), byteString);
+    public a(e trustRootIndex) {
+        Intrinsics.checkNotNullParameter(trustRootIndex, "trustRootIndex");
+        this.f44555b = trustRootIndex;
     }
 
-    public final void a(Buffer buffer) {
-        ByteString byteString;
-        Intrinsics.checkNotNullParameter(buffer, "buffer");
-        if (this.f45712e.size() == 0) {
-            if (this.f45711d) {
-                this.f45713i.reset();
-            }
-            this.f45714o.w0(buffer, buffer.size());
-            this.f45714o.flush();
-            Buffer buffer2 = this.f45712e;
-            byteString = b.f45715a;
-            if (g(buffer2, byteString)) {
-                long size = this.f45712e.size() - 4;
-                Buffer.a O0 = Buffer.O0(this.f45712e, null, 1, null);
-                try {
-                    O0.k(size);
-                    bs.c.a(O0, null);
-                } finally {
+    private final boolean b(X509Certificate x509Certificate, X509Certificate x509Certificate2) {
+        if (!Intrinsics.areEqual(x509Certificate.getIssuerDN(), x509Certificate2.getSubjectDN())) {
+            return false;
+        }
+        try {
+            x509Certificate.verify(x509Certificate2.getPublicKey());
+            return true;
+        } catch (GeneralSecurityException unused) {
+            return false;
+        }
+    }
+
+    @Override // pu.c
+    public List a(List chain, String hostname) {
+        Intrinsics.checkNotNullParameter(chain, "chain");
+        Intrinsics.checkNotNullParameter(hostname, "hostname");
+        ArrayDeque arrayDeque = new ArrayDeque(chain);
+        ArrayList arrayList = new ArrayList();
+        Object removeFirst = arrayDeque.removeFirst();
+        Intrinsics.checkNotNullExpressionValue(removeFirst, "queue.removeFirst()");
+        arrayList.add(removeFirst);
+        boolean z10 = false;
+        for (int i10 = 0; i10 < 9; i10++) {
+            Object obj = arrayList.get(arrayList.size() - 1);
+            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
+            X509Certificate x509Certificate = (X509Certificate) obj;
+            X509Certificate a10 = this.f44555b.a(x509Certificate);
+            if (a10 != null) {
+                if (arrayList.size() > 1 || !Intrinsics.areEqual(x509Certificate, a10)) {
+                    arrayList.add(a10);
+                }
+                if (!b(a10, a10)) {
+                    z10 = true;
+                } else {
+                    return arrayList;
                 }
             } else {
-                this.f45712e.writeByte(0);
+                Iterator it = arrayDeque.iterator();
+                Intrinsics.checkNotNullExpressionValue(it, "queue.iterator()");
+                while (it.hasNext()) {
+                    Object next = it.next();
+                    Intrinsics.checkNotNull(next, "null cannot be cast to non-null type java.security.cert.X509Certificate");
+                    X509Certificate x509Certificate2 = (X509Certificate) next;
+                    if (b(x509Certificate, x509Certificate2)) {
+                        it.remove();
+                        arrayList.add(x509Certificate2);
+                    }
+                }
+                if (!z10) {
+                    throw new SSLPeerUnverifiedException("Failed to find a trusted cert that signed " + x509Certificate);
+                }
+                return arrayList;
             }
-            Buffer buffer3 = this.f45712e;
-            buffer.w0(buffer3, buffer3.size());
-            return;
         }
-        throw new IllegalArgumentException("Failed requirement.");
+        throw new SSLPeerUnverifiedException("Certificate chain too long: " + arrayList);
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        this.f45714o.close();
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if ((obj instanceof a) && Intrinsics.areEqual(((a) obj).f44555b, this.f44555b)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f44555b.hashCode();
     }
 }

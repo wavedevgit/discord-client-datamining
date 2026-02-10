@@ -1,7 +1,7 @@
 // modules/main_tabs_v2/native/AppComponents.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun110738: for (var _fun110738_ip = 0;;) switch (_fun110738_ip) {
+    _fun110718: for (var _fun110718_ip = 0;;) switch (_fun110718_ip) {
         case 0:
             var7 = require;
             var12 = metroImportDefault;
@@ -36,19 +36,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.isIOS;
             var4 = var4.bind(var5)();
             if (var4) {
-                _fun110738_ip = 141;
-                continue _fun110738
+                _fun110718_ip = 141;
+                continue _fun110718
             }
         case 132:
             var14 = function() { // Environment: var1
                 var0 = _closure1_slot2;
                 return var0;
             };
-            _fun110738_ip = 148;
-            continue _fun110738;
+            _fun110718_ip = 148;
+            continue _fun110718;
         case 141:
             var14 = function() { // Environment: var1
-                _fun110739: for (var _fun110739_ip = 0;;) switch (_fun110739_ip) {
+                _fun110719: for (var _fun110719_ip = 0;;) switch (_fun110719_ip) {
                     case 0:
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot1;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var0.bind(var2)();
                         var0 = null;
                         if (var2) {
-                            _fun110739_ip = 44;
-                            continue _fun110739
+                            _fun110719_ip = 44;
+                            continue _fun110719
                         }
                     case 40:
                         var0 = _closure1_slot2;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.bind(var4)();
             var4 = null;
             if (!var3) {
-                _fun110738_ip = 472;
-                continue _fun110738
+                _fun110718_ip = 472;
+                continue _fun110718
             }
         case 446:
             var3 = 8;
@@ -198,4 +198,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 13916, 478, 3920, 13671, 14171, 3919, 14253, 3163, 14257, 14263, 14290, 14304, 14444, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 13903, 478, 3920, 13658, 14158, 3919, 14240, 3163, 14244, 14250, 14277, 14291, 14431, 2]);

@@ -147,7 +147,7 @@ public final class MountingManager {
     public final void enqueuePendingEvent(int i10, int i11, String str, boolean z10, WritableMap writableMap, int i12) {
         SurfaceMountingManager surfaceMountingManager = getSurfaceMountingManager(i10, i11);
         if (surfaceMountingManager == null) {
-            p8.a.d(TAG, "Cannot queue event without valid surface mounting manager for tag: %d, surfaceId: %d", Integer.valueOf(i11), Integer.valueOf(i10));
+            q8.a.d(TAG, "Cannot queue event without valid surface mounting manager for tag: %d, surfaceId: %d", Integer.valueOf(i11), Integer.valueOf(i10));
         } else {
             surfaceMountingManager.enqueuePendingEvent(i11, str, z10, writableMap, i12);
         }
@@ -244,7 +244,7 @@ public final class MountingManager {
         throw new IllegalStateException("Required value was null.");
     }
 
-    @qr.c
+    @rr.c
     public final void receiveCommand(int i10, int i11, int i12, @NotNull ReadableArray commandArgs) {
         Intrinsics.checkNotNullParameter(commandArgs, "commandArgs");
         UiThreadUtil.assertOnUiThread();
@@ -290,7 +290,7 @@ public final class MountingManager {
                 if (num != null) {
                     this.surfaceIdToManager.remove(num);
                     this.stoppedSurfaceIds.remove(num);
-                    p8.a.c(TAG, "Removing stale SurfaceMountingManager: [%d]", num);
+                    q8.a.c(TAG, "Removing stale SurfaceMountingManager: [%d]", num);
                 } else {
                     throw new IllegalStateException("Required value was null.");
                 }
@@ -353,7 +353,7 @@ public final class MountingManager {
             int[] iArr = new int[4];
             View rootViewIfAttached = surfaceMountingManager.getRootViewIfAttached();
             if (rootViewIfAttached == null) {
-                p8.a.o(TAG, "Failed to get root view for surfaceId: %d", Integer.valueOf(i10));
+                q8.a.o(TAG, "Failed to get root view for surfaceId: %d", Integer.valueOf(i10));
                 return;
             }
             measure(rootViewIfAttached, view, iArr);
@@ -361,7 +361,7 @@ public final class MountingManager {
             float dIPFromPixel2 = PixelUtil.toDIPFromPixel(iArr[1]);
             callback.invoke(0, 0, Float.valueOf(PixelUtil.toDIPFromPixel(iArr[2])), Float.valueOf(PixelUtil.toDIPFromPixel(iArr[3])), Float.valueOf(dIPFromPixel), Float.valueOf(dIPFromPixel2));
         } catch (Exception e10) {
-            p8.a.o(TAG, "Failed to get view for reactTag: %d, surfaceId: %d", Integer.valueOf(i11), Integer.valueOf(i10), e10);
+            q8.a.o(TAG, "Failed to get view for reactTag: %d, surfaceId: %d", Integer.valueOf(i11), Integer.valueOf(i10), e10);
         }
     }
 

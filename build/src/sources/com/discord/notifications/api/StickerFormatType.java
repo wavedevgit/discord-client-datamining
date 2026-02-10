@@ -2,7 +2,7 @@ package com.discord.notifications.api;
 
 import com.discord.serialization.IntEnum;
 import com.discord.serialization.IntEnumSerializer;
-import ft.m;
+import gt.m;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -10,7 +10,7 @@ import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.serialization.KSerializer;
 import org.jetbrains.annotations.NotNull;
-import xr.a;
+import yr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @m(with = Serializer.class)

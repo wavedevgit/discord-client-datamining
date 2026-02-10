@@ -9,19 +9,19 @@ public class ParcelableVolumeInfo implements Parcelable {
     public static final Parcelable.Creator<ParcelableVolumeInfo> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public int f1207d;
+    public int f904d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f1208e;
+    public int f905e;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f1209i;
+    public int f906i;
 
     /* renamed from: o  reason: collision with root package name */
-    public int f1210o;
+    public int f907o;
 
     /* renamed from: p  reason: collision with root package name */
-    public int f1211p;
+    public int f908p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Parcelable.Creator {
@@ -42,11 +42,11 @@ public class ParcelableVolumeInfo implements Parcelable {
     }
 
     public ParcelableVolumeInfo(Parcel parcel) {
-        this.f1207d = parcel.readInt();
-        this.f1209i = parcel.readInt();
-        this.f1210o = parcel.readInt();
-        this.f1211p = parcel.readInt();
-        this.f1208e = parcel.readInt();
+        this.f904d = parcel.readInt();
+        this.f906i = parcel.readInt();
+        this.f907o = parcel.readInt();
+        this.f908p = parcel.readInt();
+        this.f905e = parcel.readInt();
     }
 
     @Override // android.os.Parcelable
@@ -56,10 +56,10 @@ public class ParcelableVolumeInfo implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f1207d);
-        parcel.writeInt(this.f1209i);
-        parcel.writeInt(this.f1210o);
-        parcel.writeInt(this.f1211p);
-        parcel.writeInt(this.f1208e);
+        parcel.writeInt(this.f904d);
+        parcel.writeInt(this.f906i);
+        parcel.writeInt(this.f907o);
+        parcel.writeInt(this.f908p);
+        parcel.writeInt(this.f905e);
     }
 }

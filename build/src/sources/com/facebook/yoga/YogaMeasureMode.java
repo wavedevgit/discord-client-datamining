@@ -7,10 +7,10 @@ public enum YogaMeasureMode {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f11426d;
+    private final int f11566d;
 
     YogaMeasureMode(int i10) {
-        this.f11426d = i10;
+        this.f11566d = i10;
     }
 
     public static YogaMeasureMode d(int i10) {

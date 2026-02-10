@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun112887: for (var _fun112887_ip = 0;;) switch (_fun112887_ip) {
+        _fun112867: for (var _fun112867_ip = 0;;) switch (_fun112867_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.node;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var11;
                 var7[1] = var2;
                 var2 = function() { // Environment: var1
-                    _fun112888: for (var _fun112888_ip = 0;;) switch (_fun112888_ip) {
+                    _fun112868: for (var _fun112868_ip = 0;;) switch (_fun112868_ip) {
                         case 0:
                             var0 = {};
                             var2 = _closure2_slot2;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot1;
                             var1 = 'none';
                             if (!var2) {
-                                _fun112888_ip = 28;
-                                continue _fun112888
+                                _fun112868_ip = 28;
+                                continue _fun112868
                             }
                         case 24:
                             var1 = 'underline';
@@ -69,35 +69,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.context;
                 var9 = null;
                 if (!(var9 != var2)) {
-                    _fun112887_ip = 230;
-                    continue _fun112887
+                    _fun112867_ip = 230;
+                    continue _fun112867
                 }
             case 183:
                 var10 = var4.context;
                 var2 = var4.target;
                 var2 = var10[var2];
                 if (!var2) {
-                    _fun112887_ip = 210;
-                    continue _fun112887
+                    _fun112867_ip = 210;
+                    continue _fun112867
                 }
             case 201:
                 var10 = var2.onClick;
                 if (var10) {
-                    _fun112887_ip = 218;
-                    continue _fun112887
+                    _fun112867_ip = 218;
+                    continue _fun112867
                 }
             case 210:
                 var8.onClick = var2;
-                _fun112887_ip = 230;
-                continue _fun112887;
+                _fun112867_ip = 230;
+                continue _fun112867;
             case 218:
                 var2 = var2.onClick;
                 var8.onClick = var2;
             case 230:
                 var2 = var8.onClick;
                 if (!(var9 == var2)) {
-                    _fun112887_ip = 253;
-                    continue _fun112887
+                    _fun112867_ip = 253;
+                    continue _fun112867
                 }
             case 240:
                 var1 = function() { // Environment: var1

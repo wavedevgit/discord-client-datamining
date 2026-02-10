@@ -1,143 +1,248 @@
 package qu;
 
-import java.io.IOException;
-import java.util.zip.Deflater;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Buffer;
-import okio.BufferedSink;
-import okio.Sink;
-import okio.Timeout;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements Sink {
+public final class e {
+
+    /* renamed from: g  reason: collision with root package name */
+    public static final a f47274g = new a(null);
+
+    /* renamed from: a  reason: collision with root package name */
+    public final boolean f47275a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final Integer f47276b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final boolean f47277c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final BufferedSink f48245d;
+    public final Integer f47278d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Deflater f48246e;
+    public final boolean f47279e;
 
-    /* renamed from: i  reason: collision with root package name */
-    private boolean f48247i;
+    /* renamed from: f  reason: collision with root package name */
+    public final boolean f47280f;
 
-    public e(BufferedSink sink, Deflater deflater) {
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        Intrinsics.checkNotNullParameter(deflater, "deflater");
-        this.f48245d = sink;
-        this.f48246e = deflater;
-    }
-
-    private final void a(boolean z10) {
-        g0 x12;
-        int deflate;
-        Buffer e10 = this.f48245d.e();
-        while (true) {
-            x12 = e10.x1(1);
-            if (z10) {
-                try {
-                    Deflater deflater = this.f48246e;
-                    byte[] bArr = x12.f48272a;
-                    int i10 = x12.f48274c;
-                    deflate = deflater.deflate(bArr, i10, 8192 - i10, 2);
-                } catch (NullPointerException e11) {
-                    throw new IOException("Deflater already closed", e11);
-                }
-            } else {
-                Deflater deflater2 = this.f48246e;
-                byte[] bArr2 = x12.f48272a;
-                int i11 = x12.f48274c;
-                deflate = deflater2.deflate(bArr2, i11, 8192 - i11);
-            }
-            if (deflate > 0) {
-                x12.f48274c += deflate;
-                e10.Y0(e10.size() + deflate);
-                this.f48245d.g0();
-            } else if (this.f48246e.needsInput()) {
-                break;
-            }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        if (x12.f48273b == x12.f48274c) {
-            e10.f43203d = x12.b();
-            h0.b(x12);
+
+        /* JADX WARN: Code restructure failed: missing block: B:12:0x0051, code lost:
+            if (r6 != false) goto L16;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:14:0x0054, code lost:
+            if (r2 >= r5) goto L67;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:15:0x0056, code lost:
+            r3 = du.e.p(r14, ';', r2, r5);
+            r6 = du.e.p(r14, '=', r2, r3);
+            r2 = du.e.Z(r14, r2, r6);
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:16:0x0064, code lost:
+            if (r6 >= r3) goto L66;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:17:0x0066, code lost:
+            r6 = kotlin.text.StringsKt.E0(du.e.Z(r14, r6 + 1, r3), "\"");
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:18:0x0073, code lost:
+            r6 = null;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:19:0x0074, code lost:
+            r3 = r3 + 1;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:20:0x007c, code lost:
+            if (kotlin.text.StringsKt.A(r2, "client_max_window_bits", true) == false) goto L24;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:21:0x007e, code lost:
+            if (r7 == null) goto L61;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:22:0x0080, code lost:
+            r11 = true;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:23:0x0081, code lost:
+            if (r6 == null) goto L65;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:24:0x0083, code lost:
+            r7 = kotlin.text.StringsKt.toIntOrNull(r6);
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:25:0x0089, code lost:
+            r7 = null;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:26:0x008a, code lost:
+            if (r7 != null) goto L54;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:27:0x008c, code lost:
+            r2 = r3;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:28:0x008d, code lost:
+            r11 = true;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:29:0x008f, code lost:
+            r2 = r3;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:31:0x0097, code lost:
+            if (kotlin.text.StringsKt.A(r2, "client_no_context_takeover", true) == false) goto L34;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:32:0x0099, code lost:
+            if (r8 == false) goto L29;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:33:0x009b, code lost:
+            r11 = true;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:34:0x009c, code lost:
+            if (r6 == null) goto L31;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:35:0x009e, code lost:
+            r11 = true;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:36:0x009f, code lost:
+            r2 = r3;
+            r8 = true;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:38:0x00a8, code lost:
+            if (kotlin.text.StringsKt.A(r2, "server_max_window_bits", true) == false) goto L37;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:39:0x00aa, code lost:
+            if (r9 == null) goto L51;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:40:0x00ac, code lost:
+            r11 = true;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:41:0x00ad, code lost:
+            if (r6 == null) goto L57;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:42:0x00af, code lost:
+            r9 = kotlin.text.StringsKt.toIntOrNull(r6);
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:43:0x00b5, code lost:
+            r9 = null;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:44:0x00b6, code lost:
+            if (r9 != null) goto L54;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:47:0x00bf, code lost:
+            if (kotlin.text.StringsKt.A(r2, "server_no_context_takeover", true) == false) goto L46;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:48:0x00c1, code lost:
+            if (r10 == false) goto L42;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:49:0x00c3, code lost:
+            r11 = true;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:50:0x00c4, code lost:
+            if (r6 == null) goto L44;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:51:0x00c6, code lost:
+            r11 = true;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:52:0x00c7, code lost:
+            r2 = r3;
+            r10 = true;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:53:0x00ca, code lost:
+            r5 = r2;
+            r6 = true;
+         */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:28:0x008d -> B:14:0x0054). Please submit an issue!!! */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final qu.e a(okhttp3.Headers r21) {
+            /*
+                Method dump skipped, instructions count: 220
+                To view this dump add '--comments-level debug' option
+            */
+            throw new UnsupportedOperationException("Method not decompiled: qu.e.a.a(okhttp3.Headers):qu.e");
+        }
+
+        private a() {
         }
     }
 
-    @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        if (!this.f48247i) {
-            try {
-                g();
-                th = null;
-            } catch (Throwable th2) {
-                th = th2;
-            }
-            try {
-                this.f48246e.end();
-            } catch (Throwable th3) {
-                if (th == null) {
-                    th = th3;
-                }
-            }
-            try {
-                this.f48245d.close();
-            } catch (Throwable th4) {
-                if (th == null) {
-                    th = th4;
-                }
-            }
-            this.f48247i = true;
-            if (th == null) {
-                return;
-            }
-            throw th;
+    public e(boolean z10, Integer num, boolean z11, Integer num2, boolean z12, boolean z13) {
+        this.f47275a = z10;
+        this.f47276b = num;
+        this.f47277c = z11;
+        this.f47278d = num2;
+        this.f47279e = z12;
+        this.f47280f = z13;
+    }
+
+    public final boolean a(boolean z10) {
+        if (z10) {
+            return this.f47277c;
         }
+        return this.f47279e;
     }
 
-    @Override // okio.Sink, java.io.Flushable
-    public void flush() {
-        a(true);
-        this.f48245d.flush();
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof e)) {
+            return false;
+        }
+        e eVar = (e) obj;
+        if (this.f47275a == eVar.f47275a && Intrinsics.areEqual(this.f47276b, eVar.f47276b) && this.f47277c == eVar.f47277c && Intrinsics.areEqual(this.f47278d, eVar.f47278d) && this.f47279e == eVar.f47279e && this.f47280f == eVar.f47280f) {
+            return true;
+        }
+        return false;
     }
 
-    public final void g() {
-        this.f48246e.finish();
-        a(false);
-    }
-
-    @Override // okio.Sink
-    public Timeout timeout() {
-        return this.f48245d.timeout();
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r0v1, types: [int] */
+    /* JADX WARN: Type inference failed for: r0v12 */
+    /* JADX WARN: Type inference failed for: r0v13 */
+    /* JADX WARN: Type inference failed for: r2v3, types: [boolean] */
+    /* JADX WARN: Type inference failed for: r2v6, types: [boolean] */
+    public int hashCode() {
+        int hashCode;
+        boolean z10 = this.f47275a;
+        int i10 = 1;
+        ?? r02 = z10;
+        if (z10) {
+            r02 = 1;
+        }
+        int i11 = r02 * 31;
+        Integer num = this.f47276b;
+        int i12 = 0;
+        if (num == null) {
+            hashCode = 0;
+        } else {
+            hashCode = num.hashCode();
+        }
+        int i13 = (i11 + hashCode) * 31;
+        ?? r22 = this.f47277c;
+        int i14 = r22;
+        if (r22 != 0) {
+            i14 = 1;
+        }
+        int i15 = (i13 + i14) * 31;
+        Integer num2 = this.f47278d;
+        if (num2 != null) {
+            i12 = num2.hashCode();
+        }
+        int i16 = (i15 + i12) * 31;
+        ?? r23 = this.f47279e;
+        int i17 = r23;
+        if (r23 != 0) {
+            i17 = 1;
+        }
+        int i18 = (i16 + i17) * 31;
+        boolean z11 = this.f47280f;
+        if (!z11) {
+            i10 = z11 ? 1 : 0;
+        }
+        return i18 + i10;
     }
 
     public String toString() {
-        return "DeflaterSink(" + this.f48245d + ')';
-    }
-
-    @Override // okio.Sink
-    public void w0(Buffer source, long j10) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        okio.b.b(source.size(), 0L, j10);
-        while (j10 > 0) {
-            g0 g0Var = source.f43203d;
-            Intrinsics.checkNotNull(g0Var);
-            int min = (int) Math.min(j10, g0Var.f48274c - g0Var.f48273b);
-            this.f48246e.setInput(g0Var.f48272a, g0Var.f48273b, min);
-            a(false);
-            long j11 = min;
-            source.Y0(source.size() - j11);
-            int i10 = g0Var.f48273b + min;
-            g0Var.f48273b = i10;
-            if (i10 == g0Var.f48274c) {
-                source.f43203d = g0Var.b();
-                h0.b(g0Var);
-            }
-            j10 -= j11;
-        }
-    }
-
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public e(Sink sink, Deflater deflater) {
-        this(x.c(sink), deflater);
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        Intrinsics.checkNotNullParameter(deflater, "deflater");
+        return "WebSocketExtensions(perMessageDeflate=" + this.f47275a + ", clientMaxWindowBits=" + this.f47276b + ", clientNoContextTakeover=" + this.f47277c + ", serverMaxWindowBits=" + this.f47278d + ", serverNoContextTakeover=" + this.f47279e + ", unknownValues=" + this.f47280f + ')';
     }
 }

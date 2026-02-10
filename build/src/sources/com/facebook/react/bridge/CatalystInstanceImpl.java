@@ -23,7 +23,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
-@fb.a
+@gb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class CatalystInstanceImpl implements CatalystInstance {
     private static final AtomicInteger sNextInstanceIdForTrace;
@@ -60,7 +60,7 @@ public class CatalystInstanceImpl implements CatalystInstance {
         private NativeModuleRegistry mRegistry;
 
         public CatalystInstanceImpl build() {
-            return new CatalystInstanceImpl((ReactQueueConfigurationSpec) db.a.c(this.mReactQueueConfigurationSpec), (JavaScriptExecutor) db.a.c(this.mJSExecutor), (NativeModuleRegistry) db.a.c(this.mRegistry), (JSBundleLoader) db.a.c(this.mJSBundleLoader), (JSExceptionHandler) db.a.c(this.mJSExceptionHandler), this.mInspectorTarget);
+            return new CatalystInstanceImpl((ReactQueueConfigurationSpec) eb.a.c(this.mReactQueueConfigurationSpec), (JavaScriptExecutor) eb.a.c(this.mJSExecutor), (NativeModuleRegistry) eb.a.c(this.mRegistry), (JSBundleLoader) eb.a.c(this.mJSBundleLoader), (JSExceptionHandler) eb.a.c(this.mJSExceptionHandler), this.mInspectorTarget);
         }
 
         public Builder setInspectorTarget(ReactInstanceManagerInspectorTarget reactInstanceManagerInspectorTarget) {
@@ -217,7 +217,7 @@ public class CatalystInstanceImpl implements CatalystInstance {
         } else {
             z10 = false;
         }
-        qb.a.m(0L, this.mJsPendingCallsTitleForTrace, decrementAndGet);
+        rb.a.m(0L, this.mJsPendingCallsTitleForTrace, decrementAndGet);
         if (z10 && !this.mBridgeIdleListeners.isEmpty()) {
             this.mNativeModulesQueueThread.runOnQueue(new Runnable() { // from class: com.facebook.react.bridge.g
                 @Override // java.lang.Runnable
@@ -240,7 +240,7 @@ public class CatalystInstanceImpl implements CatalystInstance {
 
     private TurboModuleRegistry getTurboModuleRegistry() {
         if (ReactNativeNewArchitectureFeatureFlags.useTurboModules()) {
-            return (TurboModuleRegistry) db.a.d(this.mTurboModuleRegistry, "TurboModules are enabled, but mTurboModuleRegistry hasn't been set.");
+            return (TurboModuleRegistry) eb.a.d(this.mTurboModuleRegistry, "TurboModules are enabled, but mTurboModuleRegistry hasn't been set.");
         }
         return null;
     }
@@ -254,7 +254,7 @@ public class CatalystInstanceImpl implements CatalystInstance {
         } else {
             z10 = false;
         }
-        qb.a.m(0L, this.mJsPendingCallsTitleForTrace, andIncrement + 1);
+        rb.a.m(0L, this.mJsPendingCallsTitleForTrace, andIncrement + 1);
         if (z10 && !this.mBridgeIdleListeners.isEmpty()) {
             this.mNativeModulesQueueThread.runOnQueue(new Runnable() { // from class: com.facebook.react.bridge.e
                 @Override // java.lang.Runnable
@@ -299,7 +299,7 @@ public class CatalystInstanceImpl implements CatalystInstance {
         this.mJavaScriptContextHolder.clear();
         this.mHybridData.resetNative();
         getReactQueueConfiguration().destroy();
-        p8.a.J(ReactConstants.TAG, "CatalystInstanceImpl.destroy() end");
+        q8.a.J(ReactConstants.TAG, "CatalystInstanceImpl.destroy() end");
         ReactMarker.logMarker(ReactMarkerConstants.DESTROY_CATALYST_INSTANCE_END);
     }
 
@@ -385,14 +385,14 @@ public class CatalystInstanceImpl implements CatalystInstance {
     @Override // com.facebook.react.bridge.CatalystInstance
     /* renamed from: destroy */
     public void lambda$onNativeException$6() {
-        p8.a.b(ReactConstants.TAG, "CatalystInstanceImpl.destroy() start");
+        q8.a.b(ReactConstants.TAG, "CatalystInstanceImpl.destroy() start");
         UiThreadUtil.assertOnUiThread();
         if (this.mDestroyed) {
             return;
         }
         ReactInstanceManagerInspectorTarget reactInstanceManagerInspectorTarget = this.mInspectorTarget;
         if (reactInstanceManagerInspectorTarget != null) {
-            db.a.b(reactInstanceManagerInspectorTarget.isValid(), "ReactInstanceManager inspector target destroyed before instance was unregistered");
+            eb.a.b(reactInstanceManagerInspectorTarget.isValid(), "ReactInstanceManager inspector target destroyed before instance was unregistered");
         }
         unregisterFromInspector();
         ReactMarker.logMarker(ReactMarkerConstants.DESTROY_CATALYST_INSTANCE_START);
@@ -403,7 +403,7 @@ public class CatalystInstanceImpl implements CatalystInstance {
                 CatalystInstanceImpl.this.lambda$destroy$2();
             }
         });
-        qb.a.p(this.mTraceListener);
+        rb.a.p(this.mTraceListener);
     }
 
     @Override // com.facebook.react.bridge.CatalystInstance
@@ -502,9 +502,9 @@ public class CatalystInstanceImpl implements CatalystInstance {
     @Override // com.facebook.react.bridge.CatalystInstance
     @VisibleForTesting
     public void initialize() {
-        p8.a.b(ReactConstants.TAG, "CatalystInstanceImpl.initialize()");
-        db.a.b(!this.mInitialized, "This catalyst instance has already been initialized");
-        db.a.b(this.mAcceptCalls, "RunJSBundle hasn't completed.");
+        q8.a.b(ReactConstants.TAG, "CatalystInstanceImpl.initialize()");
+        eb.a.b(!this.mInitialized, "This catalyst instance has already been initialized");
+        eb.a.b(this.mAcceptCalls, "RunJSBundle hasn't completed.");
         this.mInitialized = true;
         this.mNativeModulesQueueThread.runOnQueue(new Runnable() { // from class: com.facebook.react.bridge.f
             @Override // java.lang.Runnable
@@ -517,7 +517,7 @@ public class CatalystInstanceImpl implements CatalystInstance {
     @Override // com.facebook.react.bridge.CatalystInstance, com.facebook.react.bridge.JSInstance
     public void invokeCallback(int i10, NativeArrayInterface nativeArrayInterface) {
         if (this.mDestroyed) {
-            p8.a.J(ReactConstants.TAG, "Invoking JS callback after bridge has been destroyed.");
+            q8.a.J(ReactConstants.TAG, "Invoking JS callback after bridge has been destroyed.");
         } else {
             jniCallJSCallback(i10, (NativeArray) nativeArrayInterface);
         }
@@ -557,8 +557,8 @@ public class CatalystInstanceImpl implements CatalystInstance {
 
     @Override // com.facebook.react.bridge.CatalystInstance
     public void runJSBundle() {
-        p8.a.b(ReactConstants.TAG, "CatalystInstanceImpl.runJSBundle()");
-        db.a.b(!this.mJSBundleHasLoaded, "JS bundle was already loaded!");
+        q8.a.b(ReactConstants.TAG, "CatalystInstanceImpl.runJSBundle()");
+        eb.a.b(!this.mJSBundleHasLoaded, "JS bundle was already loaded!");
         this.mJSBundleLoader.loadScript(this);
         synchronized (this.mJSCallsPendingInitLock) {
             try {
@@ -573,7 +573,7 @@ public class CatalystInstanceImpl implements CatalystInstance {
                 throw th2;
             }
         }
-        qb.a.k(this.mTraceListener);
+        rb.a.k(this.mTraceListener);
     }
 
     @Override // com.facebook.react.bridge.CatalystInstance
@@ -603,8 +603,8 @@ public class CatalystInstanceImpl implements CatalystInstance {
         this.mJSCallsPendingInitLock = new Object();
         this.mInitialized = false;
         this.mAcceptCalls = false;
-        p8.a.b(ReactConstants.TAG, "Initializing React Xplat Bridge.");
-        qb.a.c(0L, "createCatalystInstanceImpl");
+        q8.a.b(ReactConstants.TAG, "Initializing React Xplat Bridge.");
+        rb.a.c(0L, "createCatalystInstanceImpl");
         this.mHybridData = initHybrid();
         ReactQueueConfigurationImpl create = ReactQueueConfigurationImpl.create(reactQueueConfigurationSpec, new NativeExceptionHandler());
         this.mReactQueueConfiguration = create;
@@ -617,19 +617,19 @@ public class CatalystInstanceImpl implements CatalystInstance {
         this.mNativeModulesQueueThread = nativeModulesQueueThread;
         this.mTraceListener = new JSProfilerTraceListener(this);
         this.mInspectorTarget = reactInstanceManagerInspectorTarget;
-        qb.a.i(0L);
-        p8.a.b(ReactConstants.TAG, "Initializing React Xplat Bridge before initializeBridge");
-        qb.a.c(0L, "initializeCxxBridge");
+        rb.a.i(0L);
+        q8.a.b(ReactConstants.TAG, "Initializing React Xplat Bridge before initializeBridge");
+        rb.a.c(0L, "initializeCxxBridge");
         initializeBridge(new InstanceCallback(this), javaScriptExecutor, create.getJSQueueThread(), nativeModulesQueueThread, nativeModuleRegistry.getJavaModules(this), nativeModuleRegistry.getCxxModules(), this.mInspectorTarget);
-        p8.a.b(ReactConstants.TAG, "Initializing React Xplat Bridge after initializeBridge");
-        qb.a.i(0L);
+        q8.a.b(ReactConstants.TAG, "Initializing React Xplat Bridge after initializeBridge");
+        rb.a.i(0L);
         this.mJavaScriptContextHolder = new JavaScriptContextHolder(getJavaScriptContext());
     }
 
     public void callFunction(PendingJSCall pendingJSCall) {
         if (this.mDestroyed) {
             String pendingJSCall2 = pendingJSCall.toString();
-            p8.a.J(ReactConstants.TAG, "Calling JS function after bridge has been destroyed: " + pendingJSCall2);
+            q8.a.J(ReactConstants.TAG, "Calling JS function after bridge has been destroyed: " + pendingJSCall2);
             return;
         }
         if (!this.mAcceptCalls) {

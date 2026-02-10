@@ -7,21 +7,21 @@ public abstract class j {
     public static class a extends j {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f39240a;
+        final /* synthetic */ int f38332a;
 
         a(int i10) {
-            this.f39240a = i10;
+            this.f38332a = i10;
         }
 
         @Override // net.time4j.calendar.j
         public int d() {
-            return pt.c.e(this.f39240a, 2636);
+            return qt.c.e(this.f38332a, 2636);
         }
     }
 
     public static j a(int i10) {
         if (i10 >= 1) {
-            return b(pt.c.e(i10, -2333));
+            return b(qt.c.e(i10, -2333));
         }
         throw new IllegalArgumentException("Dangi year must not be smaller than 1: " + i10);
     }
@@ -31,14 +31,14 @@ public abstract class j {
     }
 
     public final int c() {
-        return pt.c.a(d(), 60) + 1;
+        return qt.c.a(d(), 60) + 1;
     }
 
     public abstract int d();
 
     public final c e() {
         int i10 = 60;
-        int c10 = pt.c.c(d() + 1, 60);
+        int c10 = qt.c.c(d() + 1, 60);
         if (c10 != 0) {
             i10 = c10;
         }

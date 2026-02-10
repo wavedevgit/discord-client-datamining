@@ -29,8 +29,8 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_FileLimi
         mVar.u();
         while (mVar.hasNext()) {
             if (mVar.J(this.options) == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             }
         }
         mVar.D();

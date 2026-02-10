@@ -1,4 +1,7 @@
 package ba;
+
+import android.net.Uri;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c extends a {
+public interface c {
+    Uri a(Uri uri, Object obj);
 }

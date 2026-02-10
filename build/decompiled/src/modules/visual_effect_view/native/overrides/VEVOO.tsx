@@ -285,28 +285,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10.paddingBottom = var14;
     var4.scrollViewContent = var10;
     var10 = {};
-    var14 = var6[var11];
-    var14 = var12.bind(var0)(var14);
-    var14 = var14.spacing;
-    var14 = var14.PX_32;
-    var10.width = var14;
-    var14 = var6[var11];
-    var14 = var12.bind(var0)(var14);
-    var14 = var14.spacing;
-    var14 = var14.PX_32;
-    var10.height = var14;
-    var14 = var6[var11];
-    var14 = var12.bind(var0)(var14);
-    var14 = var14.unsafe_rawColors;
-    var14 = var14.PRIMARY_700;
-    var10.backgroundColor = var14;
-    var14 = var6[var11];
-    var14 = var12.bind(var0)(var14);
-    var14 = var14.radii;
-    var14 = var14.sm;
-    var10.borderRadius = var14;
-    var4.tintColor = var10;
-    var10 = {};
     var10.position = var13;
     var13 = var6[var11];
     var13 = var12.bind(var0)(var13);
@@ -325,10 +303,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var17 = var10;
     var11 = copyDataProperties(var17, var16);
     var4.close = var10;
-    var10 = {};
-    var11 = 14;
-    var10.fontSize = var11;
-    var4.radio = var10;
     var4 = var8.bind(var9)(var4);
     var _closure1_slot8 = var4;
     var4 = {};
@@ -337,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var4;
     var4 = var7.memo;
     var3 = function arg0() {
-        _fun100550: for (var _fun100550_ip = 0;;) switch (_fun100550_ip) {
+        _fun100528: for (var _fun100528_ip = 0;;) switch (_fun100528_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -359,8 +333,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var6)(var2, var0);
                 var0 = null;
                 if (!var2) {
-                    _fun100550_ip = 100;
-                    continue _fun100550
+                    _fun100528_ip = 100;
+                    continue _fun100528
                 }
             case 62:
                 var3 = _closure1_slot6;
@@ -398,4 +372,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useVisualEffectViewOverrideSharedStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4004, 807, 33, 1297, 671, 3721, 4081, 4087, 5430, 13094, 13096, 13097, 9173, 4734, 566, 11307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4004, 807, 33, 1297, 671, 3721, 4081, 4087, 5431, 13081, 13083, 13084, 9151, 4734, 566, 11302, 2]);

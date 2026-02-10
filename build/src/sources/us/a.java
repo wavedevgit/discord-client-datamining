@@ -1,40 +1,40 @@
 package us;
 
-import kotlin.Result;
-import kotlin.Unit;
-import kotlin.c;
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.functions.Function2;
-import os.j0;
-import ts.j;
+import java.lang.reflect.Method;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class a {
-    private static final void a(Continuation continuation, Throwable th2) {
-        if (th2 instanceof j0) {
-            th2 = ((j0) th2).getCause();
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final Method f51764a;
+
+    static {
+        Method method;
+        try {
+            method = ScheduledThreadPoolExecutor.class.getMethod("setRemoveOnCancelPolicy", Boolean.TYPE);
+        } catch (Throwable unused) {
+            method = null;
         }
-        Result.a aVar = Result.f32053e;
-        continuation.resumeWith(Result.b(c.a(th2)));
-        throw th2;
+        f51764a = method;
     }
 
-    public static final void b(Continuation continuation, Continuation continuation2) {
+    public static final boolean a(Executor executor) {
+        ScheduledThreadPoolExecutor scheduledThreadPoolExecutor;
+        Method method;
         try {
-            Continuation c10 = wr.b.c(continuation);
-            Result.a aVar = Result.f32053e;
-            j.b(c10, Result.b(Unit.f32056a));
-        } catch (Throwable th2) {
-            a(continuation2, th2);
-        }
-    }
-
-    public static final void c(Function2 function2, Object obj, Continuation continuation) {
-        try {
-            Continuation c10 = wr.b.c(wr.b.a(function2, obj, continuation));
-            Result.a aVar = Result.f32053e;
-            j.b(c10, Result.b(Unit.f32056a));
-        } catch (Throwable th2) {
-            a(continuation, th2);
+            if (executor instanceof ScheduledThreadPoolExecutor) {
+                scheduledThreadPoolExecutor = (ScheduledThreadPoolExecutor) executor;
+            } else {
+                scheduledThreadPoolExecutor = null;
+            }
+            if (scheduledThreadPoolExecutor == null || (method = f51764a) == null) {
+                return false;
+            }
+            method.invoke(scheduledThreadPoolExecutor, Boolean.TRUE);
+            return true;
+        } catch (Throwable unused) {
+            return false;
         }
     }
 }

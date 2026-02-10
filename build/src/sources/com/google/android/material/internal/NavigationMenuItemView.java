@@ -55,7 +55,7 @@ public class NavigationMenuItemView extends d implements k.a {
 
     private StateListDrawable A() {
         TypedValue typedValue = new TypedValue();
-        if (getContext().getTheme().resolveAttribute(f.a.f22217t, typedValue, true)) {
+        if (getContext().getTheme().resolveAttribute(f.a.f22172t, typedValue, true)) {
             StateListDrawable stateListDrawable = new StateListDrawable();
             stateListDrawable.addState(R, new ColorDrawable(typedValue.data));
             stateListDrawable.addState(ViewGroup.EMPTY_STATE_SET, new ColorDrawable(0));
@@ -74,7 +74,7 @@ public class NavigationMenuItemView extends d implements k.a {
     private void setActionView(View view) {
         if (view != null) {
             if (this.L == null) {
-                this.L = (FrameLayout) ((ViewStub) findViewById(ah.f.f726g)).inflate();
+                this.L = (FrameLayout) ((ViewStub) findViewById(bh.f.f6714g)).inflate();
             }
             if (view.getParent() != null) {
                 ((ViewGroup) view.getParent()).removeView(view);
@@ -192,7 +192,7 @@ public class NavigationMenuItemView extends d implements k.a {
             drawable.setBounds(0, 0, i10, i10);
         } else if (this.H) {
             if (this.P == null) {
-                Drawable f10 = q1.j.f(getResources(), ah.e.f719k, getContext().getTheme());
+                Drawable f10 = q1.j.f(getResources(), bh.e.f6707k, getContext().getTheme());
                 this.P = f10;
                 if (f10 != null) {
                     int i11 = this.G;
@@ -253,9 +253,9 @@ public class NavigationMenuItemView extends d implements k.a {
         a aVar = new a();
         this.Q = aVar;
         setOrientation(0);
-        LayoutInflater.from(context).inflate(ah.h.f754d, (ViewGroup) this, true);
-        setIconSize(context.getResources().getDimensionPixelSize(ah.d.f683e));
-        CheckedTextView checkedTextView = (CheckedTextView) findViewById(ah.f.f727h);
+        LayoutInflater.from(context).inflate(bh.h.f6742d, (ViewGroup) this, true);
+        setIconSize(context.getResources().getDimensionPixelSize(bh.d.f6671e));
+        CheckedTextView checkedTextView = (CheckedTextView) findViewById(bh.f.f6715h);
         this.K = checkedTextView;
         checkedTextView.setDuplicateParentStateEnabled(true);
         h0.n0(checkedTextView, aVar);

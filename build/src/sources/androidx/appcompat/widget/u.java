@@ -10,47 +10,47 @@ import android.widget.SeekBar;
 class u extends p {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SeekBar f2250d;
+    private final SeekBar f1947d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Drawable f2251e;
+    private Drawable f1948e;
 
     /* renamed from: f  reason: collision with root package name */
-    private ColorStateList f2252f;
+    private ColorStateList f1949f;
 
     /* renamed from: g  reason: collision with root package name */
-    private PorterDuff.Mode f2253g;
+    private PorterDuff.Mode f1950g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f2254h;
+    private boolean f1951h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f2255i;
+    private boolean f1952i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u(SeekBar seekBar) {
         super(seekBar);
-        this.f2252f = null;
-        this.f2253g = null;
-        this.f2254h = false;
-        this.f2255i = false;
-        this.f2250d = seekBar;
+        this.f1949f = null;
+        this.f1950g = null;
+        this.f1951h = false;
+        this.f1952i = false;
+        this.f1947d = seekBar;
     }
 
     private void f() {
-        Drawable drawable = this.f2251e;
+        Drawable drawable = this.f1948e;
         if (drawable != null) {
-            if (this.f2254h || this.f2255i) {
+            if (this.f1951h || this.f1952i) {
                 Drawable r10 = s1.a.r(drawable.mutate());
-                this.f2251e = r10;
-                if (this.f2254h) {
-                    s1.a.o(r10, this.f2252f);
+                this.f1948e = r10;
+                if (this.f1951h) {
+                    s1.a.o(r10, this.f1949f);
                 }
-                if (this.f2255i) {
-                    s1.a.p(this.f2251e, this.f2253g);
+                if (this.f1952i) {
+                    s1.a.p(this.f1948e, this.f1950g);
                 }
-                if (this.f2251e.isStateful()) {
-                    this.f2251e.setState(this.f2250d.getDrawableState());
+                if (this.f1948e.isStateful()) {
+                    this.f1948e.setState(this.f1947d.getDrawableState());
                 }
             }
         }
@@ -60,21 +60,21 @@ class u extends p {
     @Override // androidx.appcompat.widget.p
     public void c(AttributeSet attributeSet, int i10) {
         super.c(attributeSet, i10);
-        v0 v10 = v0.v(this.f2250d.getContext(), attributeSet, f.j.T, i10, 0);
-        SeekBar seekBar = this.f2250d;
+        v0 v10 = v0.v(this.f1947d.getContext(), attributeSet, f.j.T, i10, 0);
+        SeekBar seekBar = this.f1947d;
         androidx.core.view.h0.l0(seekBar, seekBar.getContext(), f.j.T, attributeSet, v10.r(), i10, 0);
         Drawable h10 = v10.h(f.j.U);
         if (h10 != null) {
-            this.f2250d.setThumb(h10);
+            this.f1947d.setThumb(h10);
         }
         j(v10.g(f.j.V));
         if (v10.s(f.j.X)) {
-            this.f2253g = e0.e(v10.k(f.j.X, -1), this.f2253g);
-            this.f2255i = true;
+            this.f1950g = e0.e(v10.k(f.j.X, -1), this.f1950g);
+            this.f1952i = true;
         }
         if (v10.s(f.j.W)) {
-            this.f2252f = v10.c(f.j.W);
-            this.f2254h = true;
+            this.f1949f = v10.c(f.j.W);
+            this.f1951h = true;
         }
         v10.x();
         f();
@@ -83,12 +83,12 @@ class u extends p {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(Canvas canvas) {
         int i10;
-        if (this.f2251e != null) {
-            int max = this.f2250d.getMax();
+        if (this.f1948e != null) {
+            int max = this.f1947d.getMax();
             int i11 = 1;
             if (max > 1) {
-                int intrinsicWidth = this.f2251e.getIntrinsicWidth();
-                int intrinsicHeight = this.f2251e.getIntrinsicHeight();
+                int intrinsicWidth = this.f1948e.getIntrinsicWidth();
+                int intrinsicHeight = this.f1948e.getIntrinsicHeight();
                 if (intrinsicWidth >= 0) {
                     i10 = intrinsicWidth / 2;
                 } else {
@@ -97,12 +97,12 @@ class u extends p {
                 if (intrinsicHeight >= 0) {
                     i11 = intrinsicHeight / 2;
                 }
-                this.f2251e.setBounds(-i10, -i11, i10, i11);
-                float width = ((this.f2250d.getWidth() - this.f2250d.getPaddingLeft()) - this.f2250d.getPaddingRight()) / max;
+                this.f1948e.setBounds(-i10, -i11, i10, i11);
+                float width = ((this.f1947d.getWidth() - this.f1947d.getPaddingLeft()) - this.f1947d.getPaddingRight()) / max;
                 int save = canvas.save();
-                canvas.translate(this.f2250d.getPaddingLeft(), this.f2250d.getHeight() / 2);
+                canvas.translate(this.f1947d.getPaddingLeft(), this.f1947d.getHeight() / 2);
                 for (int i12 = 0; i12 <= max; i12++) {
-                    this.f2251e.draw(canvas);
+                    this.f1948e.draw(canvas);
                     canvas.translate(width, 0.0f);
                 }
                 canvas.restoreToCount(save);
@@ -112,34 +112,34 @@ class u extends p {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h() {
-        Drawable drawable = this.f2251e;
-        if (drawable != null && drawable.isStateful() && drawable.setState(this.f2250d.getDrawableState())) {
-            this.f2250d.invalidateDrawable(drawable);
+        Drawable drawable = this.f1948e;
+        if (drawable != null && drawable.isStateful() && drawable.setState(this.f1947d.getDrawableState())) {
+            this.f1947d.invalidateDrawable(drawable);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void i() {
-        Drawable drawable = this.f2251e;
+        Drawable drawable = this.f1948e;
         if (drawable != null) {
             drawable.jumpToCurrentState();
         }
     }
 
     void j(Drawable drawable) {
-        Drawable drawable2 = this.f2251e;
+        Drawable drawable2 = this.f1948e;
         if (drawable2 != null) {
             drawable2.setCallback(null);
         }
-        this.f2251e = drawable;
+        this.f1948e = drawable;
         if (drawable != null) {
-            drawable.setCallback(this.f2250d);
-            s1.a.m(drawable, this.f2250d.getLayoutDirection());
+            drawable.setCallback(this.f1947d);
+            s1.a.m(drawable, this.f1947d.getLayoutDirection());
             if (drawable.isStateful()) {
-                drawable.setState(this.f2250d.getDrawableState());
+                drawable.setState(this.f1947d.getDrawableState());
             }
             f();
         }
-        this.f2250d.invalidate();
+        this.f1947d.invalidate();
     }
 }

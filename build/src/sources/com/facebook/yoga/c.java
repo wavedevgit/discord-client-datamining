@@ -2,9 +2,9 @@ package com.facebook.yoga;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class c extends b {
     public void c() {
-        long j10 = this.f11466a;
+        long j10 = this.f11606a;
         if (j10 != 0) {
-            this.f11466a = 0L;
+            this.f11606a = 0L;
             YogaNative.jni_YGConfigFreeJNI(j10);
         }
     }

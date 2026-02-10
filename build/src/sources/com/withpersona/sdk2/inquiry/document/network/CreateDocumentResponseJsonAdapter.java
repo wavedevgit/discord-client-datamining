@@ -16,25 +16,25 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateDocumentResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18483a;
+    private final m.b f18623a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18484b;
+    private final h f18624b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f18485c;
+    private final h f18625c;
 
     public CreateDocumentResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "included");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18483a = a10;
+        this.f18623a = a10;
         h f10 = moshi.f(CreateDocumentResponse.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18484b = f10;
+        this.f18624b = f10;
         h f11 = moshi.f(a0.j(List.class, DocumentFileData.class), x0.d(), "included");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18485c = f11;
+        this.f18625c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -45,28 +45,28 @@ public final class CreateDocumentResponseJsonAdapter extends h {
         CreateDocumentResponse.Data data = null;
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18483a);
+            int J = reader.J(this.f18623a);
             if (J != -1) {
                 if (J != 0) {
                     if (J == 1) {
-                        list = (List) this.f18485c.fromJson(reader);
+                        list = (List) this.f18625c.fromJson(reader);
                     }
                 } else {
-                    data = (CreateDocumentResponse.Data) this.f18484b.fromJson(reader);
+                    data = (CreateDocumentResponse.Data) this.f18624b.fromJson(reader);
                     if (data == null) {
-                        throw an.c.x("data_", "data", reader);
+                        throw bn.c.x("data_", "data", reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
         if (data != null) {
             return new CreateDocumentResponse(data, list);
         }
-        throw an.c.o("data_", "data", reader);
+        throw bn.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -76,9 +76,9 @@ public final class CreateDocumentResponseJsonAdapter extends h {
         if (createDocumentResponse != null) {
             writer.k();
             writer.J("data");
-            this.f18484b.toJson(writer, createDocumentResponse.a());
+            this.f18624b.toJson(writer, createDocumentResponse.a());
             writer.J("included");
-            this.f18485c.toJson(writer, createDocumentResponse.b());
+            this.f18625c.toJson(writer, createDocumentResponse.b());
             writer.s();
             return;
         }

@@ -1,6 +1,6 @@
 package okhttp3;
 
-import gu.e;
+import hu.e;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,35 +18,35 @@ import kotlin.jvm.internal.Intrinsics;
 public final class Dispatcher {
 
     /* renamed from: c  reason: collision with root package name */
-    private Runnable f42891c;
+    private Runnable f42018c;
 
     /* renamed from: d  reason: collision with root package name */
-    private ExecutorService f42892d;
+    private ExecutorService f42019d;
 
     /* renamed from: a  reason: collision with root package name */
-    private int f42889a = 64;
+    private int f42016a = 64;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f42890b = 5;
+    private int f42017b = 5;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ArrayDeque f42893e = new ArrayDeque();
+    private final ArrayDeque f42020e = new ArrayDeque();
 
     /* renamed from: f  reason: collision with root package name */
-    private final ArrayDeque f42894f = new ArrayDeque();
+    private final ArrayDeque f42021f = new ArrayDeque();
 
     /* renamed from: g  reason: collision with root package name */
-    private final ArrayDeque f42895g = new ArrayDeque();
+    private final ArrayDeque f42022g = new ArrayDeque();
 
     private final e.a f(String str) {
-        Iterator it = this.f42894f.iterator();
+        Iterator it = this.f42021f.iterator();
         while (it.hasNext()) {
             e.a aVar = (e.a) it.next();
             if (Intrinsics.areEqual(aVar.d(), str)) {
                 return aVar;
             }
         }
-        Iterator it2 = this.f42893e.iterator();
+        Iterator it2 = this.f42020e.iterator();
         while (it2.hasNext()) {
             e.a aVar2 = (e.a) it2.next();
             if (Intrinsics.areEqual(aVar2.d(), str)) {
@@ -60,8 +60,8 @@ public final class Dispatcher {
         Runnable runnable;
         synchronized (this) {
             if (deque.remove(obj)) {
-                runnable = this.f42891c;
-                Unit unit = Unit.f32056a;
+                runnable = this.f42018c;
+                Unit unit = Unit.f31765a;
             } else {
                 throw new AssertionError("Call wasn't in-flight!");
             }
@@ -74,24 +74,24 @@ public final class Dispatcher {
     private final boolean k() {
         int i10;
         boolean z10;
-        if (cu.e.f20042h && Thread.holdsLock(this)) {
+        if (du.e.f20986h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         ArrayList arrayList = new ArrayList();
         synchronized (this) {
             try {
-                Iterator it = this.f42893e.iterator();
+                Iterator it = this.f42020e.iterator();
                 Intrinsics.checkNotNullExpressionValue(it, "readyAsyncCalls.iterator()");
                 while (it.hasNext()) {
                     e.a asyncCall = (e.a) it.next();
-                    if (this.f42894f.size() >= this.f42889a) {
+                    if (this.f42021f.size() >= this.f42016a) {
                         break;
-                    } else if (asyncCall.c().get() < this.f42890b) {
+                    } else if (asyncCall.c().get() < this.f42017b) {
                         it.remove();
                         asyncCall.c().incrementAndGet();
                         Intrinsics.checkNotNullExpressionValue(asyncCall, "asyncCall");
                         arrayList.add(asyncCall);
-                        this.f42894f.add(asyncCall);
+                        this.f42021f.add(asyncCall);
                     }
                 }
                 if (n() > 0) {
@@ -99,7 +99,7 @@ public final class Dispatcher {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -117,17 +117,17 @@ public final class Dispatcher {
 
     public final synchronized void b() {
         try {
-            Iterator it = this.f42893e.iterator();
+            Iterator it = this.f42020e.iterator();
             while (it.hasNext()) {
                 ((e.a) it.next()).b().cancel();
             }
-            Iterator it2 = this.f42894f.iterator();
+            Iterator it2 = this.f42021f.iterator();
             while (it2.hasNext()) {
                 ((e.a) it2.next()).b().cancel();
             }
-            Iterator it3 = this.f42895g.iterator();
+            Iterator it3 = this.f42022g.iterator();
             while (it3.hasNext()) {
-                ((gu.e) it3.next()).cancel();
+                ((hu.e) it3.next()).cancel();
             }
         } catch (Throwable th2) {
             throw th2;
@@ -139,11 +139,11 @@ public final class Dispatcher {
         Intrinsics.checkNotNullParameter(call, "call");
         synchronized (this) {
             try {
-                this.f42893e.add(call);
+                this.f42020e.add(call);
                 if (!call.b().n() && (f10 = f(call.d())) != null) {
                     call.e(f10);
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -151,20 +151,20 @@ public final class Dispatcher {
         k();
     }
 
-    public final synchronized void d(gu.e call) {
+    public final synchronized void d(hu.e call) {
         Intrinsics.checkNotNullParameter(call, "call");
-        this.f42895g.add(call);
+        this.f42022g.add(call);
     }
 
     public final synchronized ExecutorService e() {
         ExecutorService executorService;
         try {
-            if (this.f42892d == null) {
+            if (this.f42019d == null) {
                 TimeUnit timeUnit = TimeUnit.SECONDS;
                 SynchronousQueue synchronousQueue = new SynchronousQueue();
-                this.f42892d = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, timeUnit, synchronousQueue, cu.e.N(cu.e.f20043i + " Dispatcher", false));
+                this.f42019d = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, timeUnit, synchronousQueue, du.e.N(du.e.f20987i + " Dispatcher", false));
             }
-            executorService = this.f42892d;
+            executorService = this.f42019d;
             Intrinsics.checkNotNull(executorService);
         } catch (Throwable th2) {
             throw th2;
@@ -175,22 +175,22 @@ public final class Dispatcher {
     public final void h(e.a call) {
         Intrinsics.checkNotNullParameter(call, "call");
         call.c().decrementAndGet();
-        g(this.f42894f, call);
+        g(this.f42021f, call);
     }
 
-    public final void i(gu.e call) {
+    public final void i(hu.e call) {
         Intrinsics.checkNotNullParameter(call, "call");
-        g(this.f42895g, call);
+        g(this.f42022g, call);
     }
 
     public final synchronized int j() {
-        return this.f42889a;
+        return this.f42016a;
     }
 
     public final synchronized List l() {
         List unmodifiableList;
         try {
-            ArrayDeque<e.a> arrayDeque = this.f42893e;
+            ArrayDeque<e.a> arrayDeque = this.f42020e;
             ArrayList arrayList = new ArrayList(CollectionsKt.w(arrayDeque, 10));
             for (e.a aVar : arrayDeque) {
                 arrayList.add(aVar.b());
@@ -206,8 +206,8 @@ public final class Dispatcher {
     public final synchronized List m() {
         List unmodifiableList;
         try {
-            ArrayDeque arrayDeque = this.f42895g;
-            ArrayDeque<e.a> arrayDeque2 = this.f42894f;
+            ArrayDeque arrayDeque = this.f42022g;
+            ArrayDeque<e.a> arrayDeque2 = this.f42021f;
             ArrayList arrayList = new ArrayList(CollectionsKt.w(arrayDeque2, 10));
             for (e.a aVar : arrayDeque2) {
                 arrayList.add(aVar.b());
@@ -221,14 +221,14 @@ public final class Dispatcher {
     }
 
     public final synchronized int n() {
-        return this.f42894f.size() + this.f42895g.size();
+        return this.f42021f.size() + this.f42022g.size();
     }
 
     public final void o(int i10) {
         if (i10 >= 1) {
             synchronized (this) {
-                this.f42889a = i10;
-                Unit unit = Unit.f32056a;
+                this.f42016a = i10;
+                Unit unit = Unit.f31765a;
             }
             k();
             return;
@@ -239,8 +239,8 @@ public final class Dispatcher {
     public final void p(int i10) {
         if (i10 >= 1) {
             synchronized (this) {
-                this.f42890b = i10;
-                Unit unit = Unit.f32056a;
+                this.f42017b = i10;
+                Unit unit = Unit.f31765a;
             }
             k();
             return;

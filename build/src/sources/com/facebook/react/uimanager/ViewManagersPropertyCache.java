@@ -526,7 +526,7 @@ public class ViewManagersPropertyCache {
                 this.mSetter.invoke(reactShadowNode, objArr);
                 Arrays.fill(objArr, (Object) null);
             } catch (Throwable th2) {
-                p8.a.j(ViewManager.class, "Error while updating prop " + this.mPropName, th2);
+                q8.a.j(ViewManager.class, "Error while updating prop " + this.mPropName, th2);
                 throw new JSApplicationIllegalArgumentException("Error while updating property '" + this.mPropName + "' in shadow node of type: " + reactShadowNode.getViewClass(), th2);
             }
         }
@@ -547,7 +547,7 @@ public class ViewManagersPropertyCache {
                 this.mSetter.invoke(viewManager, objArr);
                 Arrays.fill(objArr, (Object) null);
             } catch (Throwable th2) {
-                p8.a.j(ViewManager.class, "Error while updating prop " + this.mPropName, th2);
+                q8.a.j(ViewManager.class, "Error while updating prop " + this.mPropName, th2);
                 throw new JSApplicationIllegalArgumentException("Error while updating property '" + this.mPropName + "' of a view managed by: " + viewManager.getName(), th2);
             }
         }

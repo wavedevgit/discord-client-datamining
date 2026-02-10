@@ -12,23 +12,23 @@ import java.util.HashMap;
 class n extends q {
 
     /* renamed from: i  reason: collision with root package name */
-    String f16972i;
+    String f17112i;
 
     /* renamed from: o  reason: collision with root package name */
-    float f16973o;
+    float f17113o;
 
     /* renamed from: p  reason: collision with root package name */
-    float f16974p;
+    float f17114p;
 
     /* renamed from: q  reason: collision with root package name */
-    s f16975q;
+    s f17115q;
 
     public n(ReactContext reactContext) {
         super(reactContext);
     }
 
     private Bitmap k(Context context, Bitmap bitmap) {
-        float max = Math.max(this.f16973o, this.f16974p) * 2.0f;
+        float max = Math.max(this.f17113o, this.f17114p) * 2.0f;
         if (max <= 0.0f) {
             return bitmap;
         }
@@ -50,26 +50,26 @@ class n extends q {
 
     @Override // com.horcrux.svg.q
     public Bitmap c(HashMap hashMap, Bitmap bitmap) {
-        return k(getContext(), q.e(hashMap, bitmap, this.f16972i));
+        return k(getContext(), q.e(hashMap, bitmap, this.f17112i));
     }
 
     public void l(String str) {
-        this.f16975q = s.d(str);
+        this.f17115q = s.d(str);
         invalidate();
     }
 
     public void m(String str) {
-        this.f16972i = str;
+        this.f17112i = str;
         invalidate();
     }
 
     public void n(float f10) {
-        this.f16973o = f10;
+        this.f17113o = f10;
         invalidate();
     }
 
     public void o(float f10) {
-        this.f16974p = f10;
+        this.f17114p = f10;
         invalidate();
     }
 }

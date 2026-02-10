@@ -8,16 +8,16 @@ import java.util.RandomAccess;
 abstract class b0 extends AbstractList implements x1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f14139d;
+    private boolean f14279d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b0(boolean z10) {
-        this.f14139d = z10;
+        this.f14279d = z10;
     }
 
     @Override // com.google.android.gms.internal.play_billing.x1
     public final boolean a() {
-        return this.f14139d;
+        return this.f14279d;
     }
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
@@ -34,7 +34,7 @@ abstract class b0 extends AbstractList implements x1 {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void b() {
-        if (this.f14139d) {
+        if (this.f14279d) {
             return;
         }
         throw new UnsupportedOperationException();
@@ -108,8 +108,8 @@ abstract class b0 extends AbstractList implements x1 {
 
     @Override // com.google.android.gms.internal.play_billing.x1
     public final void zzb() {
-        if (this.f14139d) {
-            this.f14139d = false;
+        if (this.f14279d) {
+            this.f14279d = false;
         }
     }
 

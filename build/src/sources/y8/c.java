@@ -1,134 +1,122 @@
 package y8;
 
-import com.facebook.common.internal.Supplier;
-import com.facebook.datasource.DataSource;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.Executor;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import com.facebook.webpsupport.WebpBitmapFactoryImpl;
+import java.io.UnsupportedEncodingException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class c {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class a implements Supplier {
+    /* renamed from: a  reason: collision with root package name */
+    public static final boolean f55540a = true;
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Throwable f55102a;
+    /* renamed from: b  reason: collision with root package name */
+    public static final boolean f55541b = e();
 
-        a(Throwable th2) {
-            this.f55102a = th2;
-        }
+    /* renamed from: c  reason: collision with root package name */
+    public static b f55542c = null;
 
-        @Override // com.facebook.common.internal.Supplier
-        /* renamed from: a */
-        public DataSource get() {
-            return c.b(this.f55102a);
-        }
-    }
+    /* renamed from: d  reason: collision with root package name */
+    private static boolean f55543d = false;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* renamed from: y8.c$c  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public class ExecutorC0742c implements Executor {
-        ExecutorC0742c() {
-        }
+    /* renamed from: e  reason: collision with root package name */
+    private static final byte[] f55544e = a("RIFF");
 
-        @Override // java.util.concurrent.Executor
-        public void execute(Runnable runnable) {
-            runnable.run();
-        }
-    }
+    /* renamed from: f  reason: collision with root package name */
+    private static final byte[] f55545f = a("WEBP");
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class d {
+    /* renamed from: g  reason: collision with root package name */
+    private static final byte[] f55546g = a("VP8 ");
 
-        /* renamed from: a  reason: collision with root package name */
-        public Object f55106a;
+    /* renamed from: h  reason: collision with root package name */
+    private static final byte[] f55547h = a("VP8L");
 
-        private d() {
-            this.f55106a = null;
+    /* renamed from: i  reason: collision with root package name */
+    private static final byte[] f55548i = a("VP8X");
+
+    private static byte[] a(String str) {
+        try {
+            return str.getBytes("ASCII");
+        } catch (UnsupportedEncodingException e10) {
+            throw new RuntimeException("ASCII not found!", e10);
         }
     }
 
-    public static Supplier a(Throwable th2) {
-        return new a(th2);
+    public static boolean b(byte[] bArr, int i10) {
+        boolean z10;
+        boolean j10 = j(bArr, i10 + 12, f55548i);
+        if ((bArr[i10 + 20] & 2) == 2) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        if (!j10 || !z10) {
+            return false;
+        }
+        return true;
     }
 
-    public static DataSource b(Throwable th2) {
-        i v10 = i.v();
-        v10.n(th2);
-        return v10;
+    public static boolean c(byte[] bArr, int i10, int i11) {
+        if (i11 >= 21 && j(bArr, i10 + 12, f55548i)) {
+            return true;
+        }
+        return false;
     }
 
-    public static Object c(DataSource dataSource) {
-        return d(dataSource, -1L, TimeUnit.MILLISECONDS);
+    public static boolean d(byte[] bArr, int i10) {
+        boolean z10;
+        boolean j10 = j(bArr, i10 + 12, f55548i);
+        if ((bArr[i10 + 20] & 16) == 16) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        if (!j10 || !z10) {
+            return false;
+        }
+        return true;
     }
 
-    public static Object d(DataSource dataSource, long j10, TimeUnit timeUnit) {
-        CountDownLatch countDownLatch = new CountDownLatch(1);
-        d dVar = new d();
-        d dVar2 = new d();
-        dataSource.c(new b(dVar, countDownLatch, dVar2), new ExecutorC0742c());
-        if (j10 < 0) {
-            countDownLatch.await();
-        } else if (!countDownLatch.await(j10, timeUnit)) {
-            throw new TimeoutException();
-        }
-        Object obj = dVar2.f55106a;
-        if (obj == null) {
-            return dVar.f55106a;
-        }
-        throw ((Throwable) obj);
+    private static boolean e() {
+        return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public class b implements e {
+    public static boolean f(byte[] bArr, int i10) {
+        return j(bArr, i10 + 12, f55547h);
+    }
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ d f55103a;
+    public static boolean g(byte[] bArr, int i10) {
+        return j(bArr, i10 + 12, f55546g);
+    }
 
-        /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ CountDownLatch f55104b;
-
-        /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ d f55105c;
-
-        b(d dVar, CountDownLatch countDownLatch, d dVar2) {
-            this.f55103a = dVar;
-            this.f55104b = countDownLatch;
-            this.f55105c = dVar2;
+    public static boolean h(byte[] bArr, int i10, int i11) {
+        if (i11 >= 20 && j(bArr, i10, f55544e) && j(bArr, i10 + 8, f55545f)) {
+            return true;
         }
+        return false;
+    }
 
-        @Override // y8.e
-        public void onCancellation(DataSource dataSource) {
-            this.f55104b.countDown();
+    public static b i() {
+        b bVar;
+        if (f55543d) {
+            return f55542c;
         }
+        try {
+            bVar = (b) WebpBitmapFactoryImpl.class.newInstance();
+        } catch (Throwable unused) {
+            bVar = null;
+        }
+        f55543d = true;
+        return bVar;
+    }
 
-        @Override // y8.e
-        public void onFailure(DataSource dataSource) {
-            try {
-                this.f55105c.f55106a = dataSource.b();
-            } finally {
-                this.f55104b.countDown();
+    private static boolean j(byte[] bArr, int i10, byte[] bArr2) {
+        if (bArr2 == null || bArr == null || bArr2.length + i10 > bArr.length) {
+            return false;
+        }
+        for (int i11 = 0; i11 < bArr2.length; i11++) {
+            if (bArr[i11 + i10] != bArr2[i11]) {
+                return false;
             }
         }
-
-        @Override // y8.e
-        public void onNewResult(DataSource dataSource) {
-            if (!dataSource.isFinished()) {
-                return;
-            }
-            try {
-                this.f55103a.f55106a = dataSource.getResult();
-            } finally {
-                this.f55104b.countDown();
-            }
-        }
-
-        @Override // y8.e
-        public void onProgressUpdate(DataSource dataSource) {
-        }
+        return true;
     }
 }

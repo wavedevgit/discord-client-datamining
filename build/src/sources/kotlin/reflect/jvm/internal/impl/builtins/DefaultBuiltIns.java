@@ -4,14 +4,14 @@ import kotlin.Lazy;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.reflect.jvm.internal.impl.storage.LockBasedStorageManager;
 import org.jetbrains.annotations.NotNull;
-import qr.l;
+import rr.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class DefaultBuiltIns extends KotlinBuiltIns {
     @NotNull
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Lazy f32183g = l.a(b.f32234d);
+    private static final Lazy f31892g = l.a(b.f31943d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -21,7 +21,7 @@ public final class DefaultBuiltIns extends KotlinBuiltIns {
 
         @NotNull
         public final DefaultBuiltIns getInstance() {
-            return (DefaultBuiltIns) DefaultBuiltIns.f32183g.getValue();
+            return (DefaultBuiltIns) DefaultBuiltIns.f31892g.getValue();
         }
 
         private Companion() {

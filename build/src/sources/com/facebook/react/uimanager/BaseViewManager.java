@@ -136,7 +136,7 @@ public abstract class BaseViewManager<T extends View, C extends LayoutShadowNode
     }
 
     private void logUnsupportedPropertyWarning(String str) {
-        p8.a.L(ReactConstants.TAG, "%s doesn't support property '%s'", getName(), str);
+        q8.a.L(ReactConstants.TAG, "%s doesn't support property '%s'", getName(), str);
     }
 
     private static float sanitizeFloatPropertyValue(float f10) {

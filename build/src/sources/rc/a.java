@@ -1,52 +1,55 @@
 package rc;
-
-import ne.w0;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class a {
-    public static byte[] a(byte[] bArr) {
-        if (w0.f39060a >= 27) {
-            return bArr;
-        }
-        return w0.s0(c(w0.E(bArr)));
+public abstract class a {
+
+    /* renamed from: d  reason: collision with root package name */
+    private int f47761d;
+
+    public final void g(int i10) {
+        this.f47761d = i10 | this.f47761d;
     }
 
-    public static byte[] b(byte[] bArr) {
-        if (w0.f39060a >= 27) {
-            return bArr;
-        }
-        try {
-            JSONObject jSONObject = new JSONObject(w0.E(bArr));
-            StringBuilder sb2 = new StringBuilder("{\"keys\":[");
-            JSONArray jSONArray = jSONObject.getJSONArray("keys");
-            for (int i10 = 0; i10 < jSONArray.length(); i10++) {
-                if (i10 != 0) {
-                    sb2.append(",");
-                }
-                JSONObject jSONObject2 = jSONArray.getJSONObject(i10);
-                sb2.append("{\"k\":\"");
-                sb2.append(d(jSONObject2.getString("k")));
-                sb2.append("\",\"kid\":\"");
-                sb2.append(d(jSONObject2.getString("kid")));
-                sb2.append("\",\"kty\":\"");
-                sb2.append(jSONObject2.getString("kty"));
-                sb2.append("\"}");
-            }
-            sb2.append("]}");
-            return w0.s0(sb2.toString());
-        } catch (JSONException e10) {
-            ne.y.d("ClearKeyUtil", "Failed to adjust response data: " + w0.E(bArr), e10);
-            return bArr;
-        }
+    public void h() {
+        this.f47761d = 0;
     }
 
-    private static String c(String str) {
-        return str.replace('+', '-').replace('/', '_');
+    public final void i(int i10) {
+        this.f47761d = (~i10) & this.f47761d;
     }
 
-    private static String d(String str) {
-        return str.replace('-', '+').replace('_', '/');
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final boolean k(int i10) {
+        if ((this.f47761d & i10) == i10) {
+            return true;
+        }
+        return false;
+    }
+
+    public final boolean l() {
+        return k(268435456);
+    }
+
+    public final boolean m() {
+        return k(Integer.MIN_VALUE);
+    }
+
+    public final boolean n() {
+        return k(4);
+    }
+
+    public final boolean o() {
+        return k(134217728);
+    }
+
+    public final boolean q() {
+        return k(1);
+    }
+
+    public final boolean r() {
+        return k(536870912);
+    }
+
+    public final void s(int i10) {
+        this.f47761d = i10;
     }
 }

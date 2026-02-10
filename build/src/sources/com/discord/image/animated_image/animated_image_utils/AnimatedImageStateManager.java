@@ -89,7 +89,7 @@ public final class AnimatedImageStateManager<T> {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final boolean updateWorker(boolean z10) {
-        return workerQueue.updateWorker(this, z10, new Function1() { // from class: h7.a
+        return workerQueue.updateWorker(this, z10, new Function1() { // from class: i7.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit updateWorker$lambda$5;
@@ -103,7 +103,7 @@ public final class AnimatedImageStateManager<T> {
     public static final Unit updateWorker$lambda$5(AnimatedImageStateManager stateManager) {
         Intrinsics.checkNotNullParameter(stateManager, "stateManager");
         stateManager.reload();
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     public final void onAttachedToWindow() {

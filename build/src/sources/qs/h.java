@@ -1,113 +1,47 @@
 package qs;
 
-import java.util.concurrent.CancellationException;
-import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.functions.Function1;
-import kotlinx.coroutines.b0;
-import os.y0;
+import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.Choreographer;
+import kotlin.Result;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class h extends kotlinx.coroutines.a implements g {
+public abstract class h {
 
-    /* renamed from: o  reason: collision with root package name */
-    private final g f48177o;
+    /* renamed from: a  reason: collision with root package name */
+    public static final g f47221a;
+    private static volatile Choreographer choreographer;
 
-    public h(CoroutineContext coroutineContext, g gVar, boolean z10, boolean z11) {
-        super(coroutineContext, z10, z11);
-        this.f48177o = gVar;
-    }
-
-    @Override // kotlinx.coroutines.b0
-    public void M(Throwable th2) {
-        CancellationException G0 = b0.G0(this, th2, null, 1, null);
-        this.f48177o.k(G0);
-        K(G0);
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final g Z0() {
-        return this.f48177o;
-    }
-
-    @Override // qs.v
-    public boolean b() {
-        return this.f48177o.b();
-    }
-
-    @Override // qs.w
-    public void d(Function1 function1) {
-        this.f48177o.d(function1);
-    }
-
-    @Override // qs.w
-    public Object i(Object obj) {
-        return this.f48177o.i(obj);
-    }
-
-    @Override // qs.v
-    public i iterator() {
-        return this.f48177o.iterator();
-    }
-
-    @Override // qs.v
-    public ws.h j() {
-        return this.f48177o.j();
-    }
-
-    @Override // kotlinx.coroutines.b0, kotlinx.coroutines.Job
-    public final void k(CancellationException cancellationException) {
-        if (isCancelled()) {
-            return;
+    static {
+        Object b10;
+        g gVar = null;
+        try {
+            Result.a aVar = Result.f31762e;
+            b10 = Result.b(new f(a(Looper.getMainLooper(), true), null, 2, null));
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f31762e;
+            b10 = Result.b(kotlin.c.a(th2));
         }
-        if (cancellationException == null) {
-            cancellationException = new y0(Q(), null, this);
+        if (!Result.g(b10)) {
+            gVar = b10;
         }
-        M(cancellationException);
+        f47221a = gVar;
     }
 
-    @Override // qs.v
-    public ws.h l() {
-        return this.f48177o.l();
-    }
-
-    @Override // qs.v
-    public Object o() {
-        return this.f48177o.o();
-    }
-
-    @Override // qs.w
-    public boolean offer(Object obj) {
-        return this.f48177o.offer(obj);
-    }
-
-    @Override // qs.v
-    public Object q(Continuation continuation) {
-        Object q10 = this.f48177o.q(continuation);
-        wr.b.f();
-        return q10;
-    }
-
-    @Override // qs.v
-    public Object u(Continuation continuation) {
-        return this.f48177o.u(continuation);
-    }
-
-    @Override // qs.w
-    public boolean v(Throwable th2) {
-        return this.f48177o.v(th2);
-    }
-
-    @Override // qs.w
-    public Object x(Object obj, Continuation continuation) {
-        return this.f48177o.x(obj, continuation);
-    }
-
-    @Override // qs.w
-    public boolean y() {
-        return this.f48177o.y();
-    }
-
-    public final g X0() {
-        return this;
+    public static final Handler a(Looper looper, boolean z10) {
+        if (z10) {
+            if (Build.VERSION.SDK_INT >= 28) {
+                Object invoke = Handler.class.getDeclaredMethod("createAsync", Looper.class).invoke(null, looper);
+                Intrinsics.checkNotNull(invoke, "null cannot be cast to non-null type android.os.Handler");
+                return (Handler) invoke;
+            }
+            try {
+                return (Handler) Handler.class.getDeclaredConstructor(Looper.class, Handler.Callback.class, Boolean.TYPE).newInstance(looper, null, Boolean.TRUE);
+            } catch (NoSuchMethodException unused) {
+                return new Handler(looper);
+            }
+        }
+        return new Handler(looper);
     }
 }

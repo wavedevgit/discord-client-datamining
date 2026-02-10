@@ -1,23 +1,46 @@
 package ng;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class n0 {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static int a(int i10, String str) {
-        if (i10 >= 0) {
-            return i10;
-        }
-        throw new IllegalArgumentException(str + " cannot be negative but was: " + i10);
-    }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void b(Object obj, Object obj2) {
-        if (obj != null) {
-            if (obj2 != null) {
-                return;
-            }
-            String obj3 = obj.toString();
-            throw new NullPointerException("null value in entry: " + obj3 + "=null");
+import android.content.Context;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class n0 implements b0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private gj.b f38869a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final gj.b f38870b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final e0 f38871c;
+
+    public n0(Context context, e0 e0Var) {
+        this.f38871c = e0Var;
+        com.google.android.datatransport.cct.a aVar = com.google.android.datatransport.cct.a.f11658g;
+        ac.t.f(context);
+        final yb.i g10 = ac.t.c().g(aVar);
+        if (aVar.a().contains(yb.c.b("json"))) {
+            this.f38869a = new vi.w(new gj.b() { // from class: ng.k0
+                @Override // gj.b
+                public final Object get() {
+                    return yb.i.this.a("FIREBASE_ML_SDK", byte[].class, yb.c.b("json"), new yb.g() { // from class: ng.m0
+                        @Override // yb.g
+                        public final Object apply(Object obj) {
+                            return (byte[]) obj;
+                        }
+                    });
+                }
+            });
         }
-        throw new NullPointerException("null key in entry: null=".concat(String.valueOf(obj2)));
+        this.f38870b = new vi.w(new gj.b() { // from class: ng.l0
+            @Override // gj.b
+            public final Object get() {
+                return yb.i.this.a("FIREBASE_ML_SDK", byte[].class, yb.c.b("proto"), new yb.g() { // from class: ng.j0
+                    @Override // yb.g
+                    public final Object apply(Object obj) {
+                        return (byte[]) obj;
+                    }
+                });
+            }
+        });
     }
 }

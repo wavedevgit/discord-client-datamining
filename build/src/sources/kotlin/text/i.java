@@ -14,16 +14,16 @@ import kotlin.text.i;
 public final class i implements MatchResult {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Matcher f35029a;
+    private final Matcher f34738a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CharSequence f35030b;
+    private final CharSequence f34739b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f35031c;
+    private final h f34740c;
 
     /* renamed from: d  reason: collision with root package name */
-    private List f35032d;
+    private List f34741d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.collections.d {
@@ -148,14 +148,14 @@ public final class i implements MatchResult {
     public i(Matcher matcher, CharSequence input) {
         Intrinsics.checkNotNullParameter(matcher, "matcher");
         Intrinsics.checkNotNullParameter(input, "input");
-        this.f35029a = matcher;
-        this.f35030b = input;
-        this.f35031c = new b();
+        this.f34738a = matcher;
+        this.f34739b = input;
+        this.f34740c = new b();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final java.util.regex.MatchResult f() {
-        return this.f35029a;
+        return this.f34738a;
     }
 
     @Override // kotlin.text.MatchResult
@@ -165,10 +165,10 @@ public final class i implements MatchResult {
 
     @Override // kotlin.text.MatchResult
     public List b() {
-        if (this.f35032d == null) {
-            this.f35032d = new a();
+        if (this.f34741d == null) {
+            this.f34741d = new a();
         }
-        List list = this.f35032d;
+        List list = this.f34741d;
         Intrinsics.checkNotNull(list);
         return list;
     }
@@ -182,7 +182,7 @@ public final class i implements MatchResult {
 
     @Override // kotlin.text.MatchResult
     public h d() {
-        return this.f35031c;
+        return this.f34740c;
     }
 
     @Override // kotlin.text.MatchResult
@@ -203,10 +203,10 @@ public final class i implements MatchResult {
             i10 = 0;
         }
         int i11 = end + i10;
-        if (i11 <= this.f35030b.length()) {
-            Matcher matcher = this.f35029a.pattern().matcher(this.f35030b);
+        if (i11 <= this.f34739b.length()) {
+            Matcher matcher = this.f34738a.pattern().matcher(this.f34739b);
             Intrinsics.checkNotNullExpressionValue(matcher, "matcher(...)");
-            f10 = l.f(matcher, i11, this.f35030b);
+            f10 = l.f(matcher, i11, this.f34739b);
             return f10;
         }
         return null;

@@ -1,10 +1,9 @@
 package ws;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
+import us.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d {
-    void a(f fVar, Function1 function1);
-
-    void d(h hVar, Function2 function2);
+public final class d extends q {
+    public d() {
+        super(false);
+    }
 }

@@ -1,33 +1,110 @@
 package rg;
 
-import android.content.ComponentName;
-import android.content.ServiceConnection;
-import android.os.IBinder;
-import java.util.Objects;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.RandomAccess;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class m implements ServiceConnection {
+public abstract class m extends o implements Serializable {
 
-    /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ o f48962d;
+    /* renamed from: i */
+    private transient Map f48540i;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ m(o oVar, n nVar) {
-        Objects.requireNonNull(oVar);
-        this.f48962d = oVar;
+    /* renamed from: o */
+    private transient int f48541o;
+
+    public m(Map map) {
+        if (map.isEmpty()) {
+            this.f48540i = map;
+            return;
+        }
+        throw new IllegalArgumentException();
     }
 
-    @Override // android.content.ServiceConnection
-    public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-        o oVar = this.f48962d;
-        o.f(oVar).c("ServiceConnectionImpl.onServiceConnected(%s)", componentName);
-        oVar.c().post(new k(this, iBinder));
+    public static /* bridge */ /* synthetic */ int i(m mVar) {
+        return mVar.f48541o;
     }
 
-    @Override // android.content.ServiceConnection
-    public final void onServiceDisconnected(ComponentName componentName) {
-        o oVar = this.f48962d;
-        o.f(oVar).c("ServiceConnectionImpl.onServiceDisconnected(%s)", componentName);
-        oVar.c().post(new l(this));
+    public static /* bridge */ /* synthetic */ Map l(m mVar) {
+        return mVar.f48540i;
+    }
+
+    public static /* bridge */ /* synthetic */ void m(m mVar, int i10) {
+        mVar.f48541o = i10;
+    }
+
+    public static /* bridge */ /* synthetic */ void n(m mVar, Object obj) {
+        Object obj2;
+        Map map = mVar.f48540i;
+        map.getClass();
+        try {
+            obj2 = map.remove(obj);
+        } catch (ClassCastException | NullPointerException unused) {
+            obj2 = null;
+        }
+        Collection collection = (Collection) obj2;
+        if (collection != null) {
+            int size = collection.size();
+            collection.clear();
+            mVar.f48541o -= size;
+        }
+    }
+
+    @Override // rg.e1
+    public final boolean b(Object obj, Object obj2) {
+        Collection collection = (Collection) this.f48540i.get(obj);
+        if (collection == null) {
+            Collection g10 = g();
+            if (g10.add(obj2)) {
+                this.f48541o++;
+                this.f48540i.put(obj, g10);
+                return true;
+            }
+            throw new AssertionError("New Collection violated the Collection spec");
+        } else if (collection.add(obj2)) {
+            this.f48541o++;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override // rg.o
+    final Map e() {
+        return new e(this, this.f48540i);
+    }
+
+    @Override // rg.o
+    final Set f() {
+        return new g(this, this.f48540i);
+    }
+
+    public abstract Collection g();
+
+    public abstract Collection h(Object obj, Collection collection);
+
+    public final Collection j(Object obj) {
+        Collection collection = (Collection) this.f48540i.get(obj);
+        if (collection == null) {
+            collection = g();
+        }
+        return h(obj, collection);
+    }
+
+    public final List k(Object obj, List list, j jVar) {
+        if (list instanceof RandomAccess) {
+            return new h(this, obj, list, jVar);
+        }
+        return new l(this, obj, list, jVar);
+    }
+
+    public final void o() {
+        for (Collection collection : this.f48540i.values()) {
+            collection.clear();
+        }
+        this.f48540i.clear();
+        this.f48541o = 0;
     }
 }

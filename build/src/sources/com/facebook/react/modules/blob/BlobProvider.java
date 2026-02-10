@@ -6,9 +6,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
-import bs.c;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.bridge.ReactContext;
+import cs.c;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.concurrent.ExecutorService;
@@ -49,7 +49,7 @@ public final class BlobProvider extends ContentProvider {
         try {
             ParcelFileDescriptor.AutoCloseOutputStream autoCloseOutputStream = new ParcelFileDescriptor.AutoCloseOutputStream(parcelFileDescriptor);
             autoCloseOutputStream.write(bArr);
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
             c.a(autoCloseOutputStream, null);
         } catch (IOException unused) {
         }
@@ -113,7 +113,7 @@ public final class BlobProvider extends ContentProvider {
                             try {
                                 ParcelFileDescriptor.AutoCloseOutputStream autoCloseOutputStream = new ParcelFileDescriptor.AutoCloseOutputStream(parcelFileDescriptor2);
                                 autoCloseOutputStream.write(resolve);
-                                Unit unit = Unit.f32056a;
+                                Unit unit = Unit.f31765a;
                                 c.a(autoCloseOutputStream, null);
                                 return parcelFileDescriptor;
                             } catch (IOException unused) {

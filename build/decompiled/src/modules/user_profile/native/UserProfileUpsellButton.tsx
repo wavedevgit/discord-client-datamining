@@ -51,10 +51,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = {};
     var8.marginRight = var9;
     var3.nitroWheel = var8;
-    var8 = {};
-    var9 = 12;
-    var8.marginTop = var9;
-    var3.upsellButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot10 = var3;
     var3 = 11;
@@ -64,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileUpsellButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80781: for (var _fun80781_ip = 0;;) switch (_fun80781_ip) {
+        _fun80646: for (var _fun80646_ip = 0;;) switch (_fun80646_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.analyticsObject;
@@ -160,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.variant = var6;
                 var6 = null;
                 if (!(var6 == var5)) {
-                    _fun80781_ip = 209;
-                    continue _fun80781
+                    _fun80646_ip = 209;
+                    continue _fun80646
                 }
             case 154:
                 var10 = _closure1_slot0;
@@ -199,4 +195,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 1623, 33, 1297, 5777, 795, 4084, 7681, 1234, 5800, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 1623, 33, 1297, 5778, 795, 4084, 7657, 1234, 5801, 2]);

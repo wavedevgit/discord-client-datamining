@@ -77,7 +77,7 @@ public class FragmentActivity extends ComponentActivity implements b.e {
         }
 
         @Override // androidx.fragment.app.FragmentHostCallback, androidx.fragment.app.FragmentContainer
-        public boolean e() {
+        public boolean d() {
             Window window = FragmentActivity.this.getWindow();
             if (window != null && window.peekDecorView() != null) {
                 return true;
@@ -213,11 +213,11 @@ public class FragmentActivity extends ComponentActivity implements b.e {
                     z10 |= w(fragment.getChildFragmentManager(), state);
                 }
                 FragmentViewLifecycleOwner fragmentViewLifecycleOwner = fragment.mViewLifecycleOwner;
-                if (fragmentViewLifecycleOwner != null && fragmentViewLifecycleOwner.getLifecycle().b().d(Lifecycle.State.f4849o)) {
+                if (fragmentViewLifecycleOwner != null && fragmentViewLifecycleOwner.getLifecycle().b().d(Lifecycle.State.f4546o)) {
                     fragment.mViewLifecycleOwner.g(state);
                     z10 = true;
                 }
-                if (fragment.mLifecycleRegistry.b().d(Lifecycle.State.f4849o)) {
+                if (fragment.mLifecycleRegistry.b().d(Lifecycle.State.f4546o)) {
                     fragment.mLifecycleRegistry.o(state);
                     z10 = true;
                 }
@@ -267,7 +267,7 @@ public class FragmentActivity extends ComponentActivity implements b.e {
 
     void markFragmentsCreated() {
         do {
-        } while (w(getSupportFragmentManager(), Lifecycle.State.f4848i));
+        } while (w(getSupportFragmentManager(), Lifecycle.State.f4545i));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

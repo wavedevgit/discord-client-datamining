@@ -6,7 +6,7 @@ import com.discord.image.fresco.config.FrescoConfigKt;
 import com.discord.image.fresco.config.FrescoMemoryTrimmer;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.modules.fresco.FrescoModule;
-import e9.d;
+import f9.d;
 import java.util.concurrent.CountDownLatch;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -51,7 +51,7 @@ public final class FrescoModuleDiscord extends FrescoModule {
             try {
                 FrescoModuleDiscord.Companion.performInit(context);
                 FrescoModuleDiscord.initLatch.countDown();
-                return Unit.f32056a;
+                return Unit.f31765a;
             } catch (Throwable th2) {
                 FrescoModuleDiscord.initLatch.countDown();
                 throw th2;
@@ -76,8 +76,8 @@ public final class FrescoModuleDiscord extends FrescoModule {
             synchronized (this) {
                 if (!FrescoModuleDiscord.asyncInitStarted) {
                     FrescoModuleDiscord.asyncInitStarted = true;
-                    Unit unit = Unit.f32056a;
-                    ur.a.b(true, false, null, "FrescoInitThread", 0, new Function0() { // from class: com.discord.image.fresco.a
+                    Unit unit = Unit.f31765a;
+                    vr.a.b(true, false, null, "FrescoInitThread", 0, new Function0() { // from class: com.discord.image.fresco.a
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
                             Unit startFrescoInitializationAsync$lambda$1;

@@ -1,79 +1,83 @@
 package oo;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.viewbinding.ViewBinding;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
+import ko.m4;
+import ko.n4;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new C0568a();
+public final class a implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final CoordinatorLayout f42423a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final LinearLayout f42424b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final Button f42425c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f43330d;
+    public final ThemeableLottieAnimationView f42426d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f43331e;
+    public final Pi2NavigationBar f42427e;
 
-    /* renamed from: i  reason: collision with root package name */
-    private final String f43332i;
+    /* renamed from: f  reason: collision with root package name */
+    public final TextView f42428f;
 
-    /* renamed from: o  reason: collision with root package name */
-    private final List f43333o;
+    private a(CoordinatorLayout coordinatorLayout, LinearLayout linearLayout, Button button, ThemeableLottieAnimationView themeableLottieAnimationView, Pi2NavigationBar pi2NavigationBar, TextView textView) {
+        this.f42423a = coordinatorLayout;
+        this.f42424b = linearLayout;
+        this.f42425c = button;
+        this.f42426d = themeableLottieAnimationView;
+        this.f42427e = pi2NavigationBar;
+        this.f42428f = textView;
+    }
 
-    /* renamed from: oo.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0568a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final a createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            String readString = parcel.readString();
-            String readString2 = parcel.readString();
-            String readString3 = parcel.readString();
-            int readInt = parcel.readInt();
-            ArrayList arrayList = new ArrayList(readInt);
-            for (int i10 = 0; i10 != readInt; i10++) {
-                arrayList.add(b.CREATOR.createFromParcel(parcel));
+    public static a a(View view) {
+        int i10 = m4.f31412t;
+        LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
+        if (linearLayout != null) {
+            i10 = m4.f31414u;
+            Button button = (Button) e4.a.a(view, i10);
+            if (button != null) {
+                i10 = m4.P;
+                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
+                if (themeableLottieAnimationView != null) {
+                    i10 = m4.Y;
+                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
+                    if (pi2NavigationBar != null) {
+                        i10 = m4.D0;
+                        TextView textView = (TextView) e4.a.a(view, i10);
+                        if (textView != null) {
+                            return new a((CoordinatorLayout) view, linearLayout, button, themeableLottieAnimationView, pi2NavigationBar, textView);
+                        }
+                    }
+                }
             }
-            return new a(readString, readString2, readString3, arrayList);
         }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final a[] newArray(int i10) {
-            return new a[i10];
-        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public a(String merchantId, String nonce, String fieldKeyMobileDriversLicense, List digitalIdRequests) {
-        Intrinsics.checkNotNullParameter(merchantId, "merchantId");
-        Intrinsics.checkNotNullParameter(nonce, "nonce");
-        Intrinsics.checkNotNullParameter(fieldKeyMobileDriversLicense, "fieldKeyMobileDriversLicense");
-        Intrinsics.checkNotNullParameter(digitalIdRequests, "digitalIdRequests");
-        this.f43330d = merchantId;
-        this.f43331e = nonce;
-        this.f43332i = fieldKeyMobileDriversLicense;
-        this.f43333o = digitalIdRequests;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f43330d);
-        dest.writeString(this.f43331e);
-        dest.writeString(this.f43332i);
-        List<b> list = this.f43333o;
-        dest.writeInt(list.size());
-        for (b bVar : list) {
-            bVar.writeToParcel(dest, i10);
+    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(n4.f31544a, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
         }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public CoordinatorLayout getRoot() {
+        return this.f42423a;
     }
 }

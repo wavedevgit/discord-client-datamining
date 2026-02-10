@@ -1,9 +1,15 @@
 package wd;
-
-import com.google.android.exoplayer2.upstream.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface j {
-    k.a a(g gVar, f fVar);
+    boolean a(uc.l lVar);
 
-    k.a b();
+    void b();
+
+    void c(uc.m mVar);
+
+    boolean d();
+
+    boolean e();
+
+    j f();
 }

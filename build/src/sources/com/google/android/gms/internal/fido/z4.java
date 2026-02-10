@@ -6,16 +6,16 @@ import java.nio.charset.Charset;
 public abstract class z4 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final byte[] f14117a;
+    public static final byte[] f14257a;
 
     static {
         Charset.forName("US-ASCII");
         Charset.forName("UTF-8");
         Charset.forName("ISO-8859-1");
         byte[] bArr = new byte[0];
-        f14117a = bArr;
+        f14257a = bArr;
         ByteBuffer.wrap(bArr);
-        int i10 = y4.f14112a;
+        int i10 = y4.f14252a;
         new w4(bArr, 0, 0, false, null).a(0);
     }
 }

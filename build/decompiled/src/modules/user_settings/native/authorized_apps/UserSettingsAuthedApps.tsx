@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/authorized_apps/UserSettingsAuthedApps.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun83050: for (var _fun83050_ip = 0;;) switch (_fun83050_ip) {
+        _fun82920: for (var _fun82920_ip = 0;;) switch (_fun82920_ip) {
             case 0:
                 var0 = _closure1_slot14;
                 var4 = undefined;
@@ -329,22 +329,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot3 = var0;
                 var0 = null;
                 if (!(var0 != var9)) {
-                    _fun83050_ip = 471;
-                    continue _fun83050
+                    _fun82920_ip = 471;
+                    continue _fun82920
                 }
             case 207:
                 var0 = _closure1_slot8;
                 var0 = var0.FETCHED;
                 if (!(var2 === var0)) {
-                    _fun83050_ip = 471;
-                    continue _fun83050
+                    _fun82920_ip = 471;
+                    continue _fun82920
                 }
             case 224:
                 var2 = var9.length;
                 var0 = 0;
                 if (!(var0 !== var2)) {
-                    _fun83050_ip = 309;
-                    continue _fun83050
+                    _fun82920_ip = 309;
+                    continue _fun82920
                 }
             case 235:
                 var3 = _closure1_slot11;
@@ -388,8 +388,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8.bind(var9)(var6);
                 var0.data = var6;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun83050_ip = 469;
-                continue _fun83050;
+                _fun82920_ip = 469;
+                continue _fun82920;
             case 309:
                 var6 = _closure1_slot12;
                 var3 = _closure1_slot4;
@@ -429,8 +429,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.children = var7;
                 var0 = var6.bind(var4)(var3, var2);
             case 469:
-                _fun83050_ip = 511;
-                continue _fun83050;
+                _fun82920_ip = 511;
+                continue _fun82920;
             case 471:
                 var3 = _closure1_slot11;
                 var2 = _closure1_slot5;
@@ -459,7 +459,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun83059: for (var _fun83059_ip = 0;;) switch (_fun83059_ip) {
+            _fun82929: for (var _fun82929_ip = 0;;) switch (_fun82929_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var5 = _closure1_slot0;
@@ -471,8 +471,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.ApplicationDisclosureType;
                     var1 = var1.IP_LOCATION;
                     if (!(var1 !== var2)) {
-                        _fun83059_ip = 196;
-                        continue _fun83059
+                        _fun82929_ip = 196;
+                        continue _fun82929
                     }
                 case 51:
                     var5 = _closure1_slot0;
@@ -482,8 +482,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.ApplicationDisclosureType;
                     var1 = var1.DISPLAYS_ADVERTISEMENTS;
                     if (!(var1 !== var2)) {
-                        _fun83059_ip = 140;
-                        continue _fun83059
+                        _fun82929_ip = 140;
+                        continue _fun82929
                     }
                 case 84:
                     var5 = _closure1_slot11;
@@ -537,4 +537,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.DisclosureIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4586, 660, 33, 1297, 5400, 5494, 5496, 3267, 566, 1469, 1470, 5403, 3942, 1234, 5415, 1417, 4900, 10621, 7295, 7296, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4586, 660, 33, 1297, 5401, 5495, 5497, 3267, 566, 1469, 1470, 5404, 3942, 1234, 5416, 1417, 4900, 10599, 7296, 7297, 2]);

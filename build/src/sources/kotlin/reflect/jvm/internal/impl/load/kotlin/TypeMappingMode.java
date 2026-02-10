@@ -29,34 +29,34 @@ public final class TypeMappingMode {
     public static final TypeMappingMode VALUE_FOR_ANNOTATION;
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f33296a;
+    private final boolean f33005a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f33297b;
+    private final boolean f33006b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f33298c;
+    private final boolean f33007c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f33299d;
+    private final boolean f33008d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f33300e;
+    private final boolean f33009e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final TypeMappingMode f33301f;
+    private final TypeMappingMode f33010f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f33302g;
+    private final boolean f33011g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final TypeMappingMode f33303h;
+    private final TypeMappingMode f33012h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final TypeMappingMode f33304i;
+    private final TypeMappingMode f33013i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f33305j;
+    private final boolean f33014j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -105,44 +105,44 @@ public final class TypeMappingMode {
     }
 
     public final boolean getKotlinCollectionsToJavaCollections() {
-        return this.f33302g;
+        return this.f33011g;
     }
 
     public final boolean getMapTypeAliases() {
-        return this.f33305j;
+        return this.f33014j;
     }
 
     public final boolean getNeedInlineClassWrapping() {
-        return this.f33297b;
+        return this.f33006b;
     }
 
     public final boolean getNeedPrimitiveBoxing() {
-        return this.f33296a;
+        return this.f33005a;
     }
 
     public final boolean isForAnnotationParameter() {
-        return this.f33298c;
+        return this.f33007c;
     }
 
     @NotNull
     public final TypeMappingMode toGenericArgumentMode(@NotNull Variance effectiveVariance, boolean z10) {
         Intrinsics.checkNotNullParameter(effectiveVariance, "effectiveVariance");
-        if (!z10 || !this.f33298c) {
+        if (!z10 || !this.f33007c) {
             int i10 = WhenMappings.$EnumSwitchMapping$0[effectiveVariance.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
-                    TypeMappingMode typeMappingMode = this.f33301f;
+                    TypeMappingMode typeMappingMode = this.f33010f;
                     if (typeMappingMode != null) {
                         return typeMappingMode;
                     }
                 } else {
-                    TypeMappingMode typeMappingMode2 = this.f33304i;
+                    TypeMappingMode typeMappingMode2 = this.f33013i;
                     if (typeMappingMode2 != null) {
                         return typeMappingMode2;
                     }
                 }
             } else {
-                TypeMappingMode typeMappingMode3 = this.f33303h;
+                TypeMappingMode typeMappingMode3 = this.f33012h;
                 if (typeMappingMode3 != null) {
                     return typeMappingMode3;
                 }
@@ -153,20 +153,20 @@ public final class TypeMappingMode {
 
     @NotNull
     public final TypeMappingMode wrapInlineClassesMode() {
-        return new TypeMappingMode(this.f33296a, true, this.f33298c, this.f33299d, this.f33300e, this.f33301f, this.f33302g, this.f33303h, this.f33304i, false, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
+        return new TypeMappingMode(this.f33005a, true, this.f33007c, this.f33008d, this.f33009e, this.f33010f, this.f33011g, this.f33012h, this.f33013i, false, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
     }
 
     public TypeMappingMode(boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, TypeMappingMode typeMappingMode, boolean z15, TypeMappingMode typeMappingMode2, TypeMappingMode typeMappingMode3, boolean z16) {
-        this.f33296a = z10;
-        this.f33297b = z11;
-        this.f33298c = z12;
-        this.f33299d = z13;
-        this.f33300e = z14;
-        this.f33301f = typeMappingMode;
-        this.f33302g = z15;
-        this.f33303h = typeMappingMode2;
-        this.f33304i = typeMappingMode3;
-        this.f33305j = z16;
+        this.f33005a = z10;
+        this.f33006b = z11;
+        this.f33007c = z12;
+        this.f33008d = z13;
+        this.f33009e = z14;
+        this.f33010f = typeMappingMode;
+        this.f33011g = z15;
+        this.f33012h = typeMappingMode2;
+        this.f33013i = typeMappingMode3;
+        this.f33014j = z16;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

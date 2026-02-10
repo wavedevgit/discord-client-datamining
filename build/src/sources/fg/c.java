@@ -1,23 +1,30 @@
 package fg;
 
 import android.os.BadParcelableException;
+import android.os.Binder;
+import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final ClassLoader f23309a = c.class.getClassLoader();
-
-    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
-        if (parcel.readInt() == 0) {
-            return null;
-        }
-        return (Parcelable) creator.createFromParcel(parcel);
+public abstract class c extends Binder implements IInterface {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public c(String str) {
+        attachInterface(this, str);
     }
 
-    public static void b(Parcel parcel) {
+    private boolean h(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (i10 > 16777215) {
+            return super.onTransact(i10, parcel, parcel2, i11);
+        }
+        parcel.enforceInterface(getInterfaceDescriptor());
+        return false;
+    }
+
+    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public void f(Parcel parcel) {
+        int i10 = d.f22633a;
         int dataAvail = parcel.dataAvail();
         if (dataAvail <= 0) {
             return;
@@ -25,20 +32,16 @@ public abstract class c {
         throw new BadParcelableException("Parcel data not fully consumed, unread size: " + dataAvail);
     }
 
-    public static void c(Parcel parcel, Parcelable parcelable) {
-        if (parcelable == null) {
-            parcel.writeInt(0);
-            return;
+    @Override // android.os.Binder
+    public boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (h(i10, parcel, parcel2, i11)) {
+            return true;
         }
-        parcel.writeInt(1);
-        parcelable.writeToParcel(parcel, 0);
+        return e(i10, parcel, parcel2, i11);
     }
 
-    public static void d(Parcel parcel, IInterface iInterface) {
-        if (iInterface == null) {
-            parcel.writeStrongBinder(null);
-        } else {
-            parcel.writeStrongBinder(iInterface.asBinder());
-        }
+    @Override // android.os.IInterface
+    public IBinder asBinder() {
+        return this;
     }
 }

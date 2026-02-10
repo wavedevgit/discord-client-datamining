@@ -72,17 +72,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.titleContainer = var8;
     var8 = {
-        'tintColor': null,
-        'width': 20,
-        'height': 20
-    };
-    var13 = var5[var9];
-    var13 = var10.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.MOBILE_TEXT_HEADING_PRIMARY;
-    var8.tintColor = var13;
-    var3.premiumWheelHeader = var8;
-    var8 = {
         'width': '100%',
         'height': '100%',
         'position': 'absolute',
@@ -119,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileUpsellCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80980: for (var _fun80980_ip = 0;;) switch (_fun80980_ip) {
+        _fun80845: for (var _fun80845_ip = 0;;) switch (_fun80845_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.style;
@@ -172,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = null;
                 var7 = var9 != var22;
                 if (!var7) {
-                    _fun80980_ip = 383;
-                    continue _fun80980
+                    _fun80845_ip = 383;
+                    continue _fun80845
                 }
             case 228:
                 var15 = _closure1_slot8;
@@ -253,8 +242,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.renderIcon = var11;
                 var11 = undefined;
                 if (!var13) {
-                    _fun80980_ip = 495;
-                    continue _fun80980
+                    _fun80845_ip = 495;
+                    continue _fun80845
                 }
             case 488:
                 var11 = function() { // Environment: var12
@@ -295,4 +284,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7032, 660, 33, 1297, 671, 7355, 5800, 3942, 7702, 4875, 4098, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7033, 660, 33, 1297, 671, 10290, 5801, 3942, 7676, 4875, 4098, 2]);

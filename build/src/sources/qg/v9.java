@@ -1,42 +1,58 @@
 package qg;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class v9 implements yi.d {
+public final class v9 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v9 f47638a = new v9();
+    private final Long f46372a;
 
-    static {
-        c.b a10 = yi.c.a("detectorOptions");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("errorCodes");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = yi.c.a("totalInitializationMs");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
-        c.b a13 = yi.c.a("loggingInitializationMs");
-        v1 v1Var4 = new v1();
-        v1Var4.a(4);
-        a13.b(v1Var4.b()).a();
-        c.b a14 = yi.c.a("otherErrors");
-        v1 v1Var5 = new v1();
-        v1Var5.a(5);
-        a14.b(v1Var5.b()).a();
+    /* renamed from: b  reason: collision with root package name */
+    private final ca f46373b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final Boolean f46374c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Boolean f46375d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final Boolean f46376e;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public /* synthetic */ v9(t9 t9Var, u9 u9Var) {
+        Long l10;
+        ca caVar;
+        Boolean bool;
+        Boolean bool2;
+        Boolean bool3;
+        l10 = t9Var.f46319a;
+        this.f46372a = l10;
+        caVar = t9Var.f46320b;
+        this.f46373b = caVar;
+        bool = t9Var.f46321c;
+        this.f46374c = bool;
+        bool2 = t9Var.f46322d;
+        this.f46375d = bool2;
+        bool3 = t9Var.f46323e;
+        this.f46376e = bool3;
     }
 
-    private v9() {
+    public final ca a() {
+        return this.f46373b;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    public final Boolean b() {
+        return this.f46375d;
+    }
+
+    public final Boolean c() {
+        return this.f46376e;
+    }
+
+    public final Boolean d() {
+        return this.f46374c;
+    }
+
+    public final Long e() {
+        return this.f46372a;
     }
 }

@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modal';
     var2.PORTAL_HOST_NAME_MODAL = var3;
     var3 = function arg0() {
-        _fun35369: for (var _fun35369_ip = 0;;) switch (_fun35369_ip) {
+        _fun35361: for (var _fun35361_ip = 0;;) switch (_fun35361_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.children;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 'default';
                 var5 = var2;
                 if (!var1) {
-                    _fun35369_ip = 93;
-                    continue _fun35369
+                    _fun35361_ip = 93;
+                    continue _fun35361
                 }
             case 53:
                 var6 = _closure1_slot0;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var6)();
                 var5 = var2;
                 if (!var1) {
-                    _fun35369_ip = 93;
-                    continue _fun35369
+                    _fun35361_ip = 93;
+                    continue _fun35361
                 }
             case 89:
                 var5 = 'modal';
@@ -101,14 +101,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PortalKeyboard = var3;
     var1 = function arg0() {
-        _fun35370: for (var _fun35370_ip = 0;;) switch (_fun35370_ip) {
+        _fun35362: for (var _fun35362_ip = 0;;) switch (_fun35362_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.name;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun35370_ip = 18;
-                    continue _fun35370
+                    _fun35362_ip = 18;
+                    continue _fun35362
                 }
             case 14:
                 var4 = 'default';

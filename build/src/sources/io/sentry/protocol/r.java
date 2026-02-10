@@ -19,19 +19,19 @@ import java.util.concurrent.CopyOnWriteArraySet;
 public final class r implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28646d;
+    private String f28846d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28647e;
+    private String f28847e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Set f28648i;
+    private Set f28848i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Set f28649o;
+    private Set f28849o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f28650p;
+    private Map f28850p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -76,21 +76,21 @@ public final class r implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        str = e3Var.e1();
+                        str = e3Var.b1();
                         break;
                     case 1:
-                        str2 = e3Var.e1();
+                        str2 = e3Var.b1();
                         break;
                     case 2:
-                        List g22 = e3Var.g2(iLogger, new y.a());
-                        if (g22 == null) {
+                        List f22 = e3Var.f2(iLogger, new y.a());
+                        if (f22 == null) {
                             break;
                         } else {
-                            arrayList.addAll(g22);
+                            arrayList.addAll(f22);
                             break;
                         }
                     case 3:
-                        List list = (List) e3Var.U1();
+                        List list = (List) e3Var.T1();
                         if (list == null) {
                             break;
                         } else {
@@ -101,7 +101,7 @@ public final class r implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.u1(iLogger, hashMap, o02);
+                        e3Var.p1(iLogger, hashMap, o02);
                         break;
                 }
             }
@@ -109,8 +109,8 @@ public final class r implements w1 {
             if (str != null) {
                 if (str2 != null) {
                     r rVar = new r(str, str2);
-                    rVar.f28648i = new CopyOnWriteArraySet(arrayList);
-                    rVar.f28649o = new CopyOnWriteArraySet(arrayList2);
+                    rVar.f28848i = new CopyOnWriteArraySet(arrayList);
+                    rVar.f28849o = new CopyOnWriteArraySet(arrayList2);
                     rVar.j(hashMap);
                     return rVar;
                 }
@@ -125,8 +125,8 @@ public final class r implements w1 {
     }
 
     public r(String str, String str2) {
-        this.f28646d = (String) io.sentry.util.y.c(str, "name is required.");
-        this.f28647e = (String) io.sentry.util.y.c(str2, "version is required.");
+        this.f28846d = (String) io.sentry.util.y.c(str, "name is required.");
+        this.f28847e = (String) io.sentry.util.y.c(str2, "version is required.");
     }
 
     public static r l(r rVar, String str, String str2) {
@@ -149,7 +149,7 @@ public final class r implements w1 {
     }
 
     public Set e() {
-        Set set = this.f28649o;
+        Set set = this.f28849o;
         if (set != null) {
             return set;
         }
@@ -162,7 +162,7 @@ public final class r implements w1 {
         }
         if (obj != null && r.class == obj.getClass()) {
             r rVar = (r) obj;
-            if (this.f28646d.equals(rVar.f28646d) && this.f28647e.equals(rVar.f28647e)) {
+            if (this.f28846d.equals(rVar.f28846d) && this.f28847e.equals(rVar.f28847e)) {
                 return true;
             }
         }
@@ -170,11 +170,11 @@ public final class r implements w1 {
     }
 
     public String f() {
-        return this.f28646d;
+        return this.f28846d;
     }
 
     public Set g() {
-        Set set = this.f28648i;
+        Set set = this.f28848i;
         if (set != null) {
             return set;
         }
@@ -182,30 +182,30 @@ public final class r implements w1 {
     }
 
     public String h() {
-        return this.f28647e;
+        return this.f28847e;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f28646d, this.f28647e);
+        return io.sentry.util.y.b(this.f28846d, this.f28847e);
     }
 
     public void i(String str) {
-        this.f28646d = (String) io.sentry.util.y.c(str, "name is required.");
+        this.f28846d = (String) io.sentry.util.y.c(str, "name is required.");
     }
 
     public void j(Map map) {
-        this.f28650p = map;
+        this.f28850p = map;
     }
 
     public void k(String str) {
-        this.f28647e = (String) io.sentry.util.y.c(str, "version is required.");
+        this.f28847e = (String) io.sentry.util.y.c(str, "version is required.");
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28646d);
-        f3Var.e("version").f(this.f28647e);
+        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28846d);
+        f3Var.e("version").f(this.f28847e);
         Set g10 = g();
         Set e10 = e();
         if (!g10.isEmpty()) {
@@ -214,10 +214,10 @@ public final class r implements w1 {
         if (!e10.isEmpty()) {
             f3Var.e("integrations").j(iLogger, e10);
         }
-        Map map = this.f28650p;
+        Map map = this.f28850p;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28650p.get(str));
+                f3Var.e(str).j(iLogger, this.f28850p.get(str));
             }
         }
         f3Var.D();

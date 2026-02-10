@@ -4,25 +4,25 @@ import android.app.PendingIntent;
 import android.os.DeadObjectException;
 import android.os.RemoteException;
 import com.google.android.gms.common.api.Status;
-import ef.a;
-import ef.e;
-import ef.k;
-import gf.q;
+import ff.a;
+import ff.e;
+import ff.k;
+import hf.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class a extends BasePendingResult {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a.c f13745a;
+    private final a.c f13885a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ef.a f13746b;
+    private final ff.a f13886b;
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public a(ef.a aVar, e eVar) {
+    public a(ff.a aVar, e eVar) {
         super((e) q.m(eVar, "GoogleApiClient must not be null"));
         q.m(aVar, "Api must not be null");
-        this.f13745a = aVar.b();
-        this.f13746b = aVar;
+        this.f13885a = aVar.b();
+        this.f13886b = aVar;
     }
 
     private void g(RemoteException remoteException) {

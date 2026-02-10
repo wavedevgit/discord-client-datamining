@@ -6,23 +6,23 @@ import android.os.Parcelable;
 public final class a implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
+        int A = jf.b.A(parcel);
         String str = null;
         int i10 = 0;
         while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            int l10 = hf.b.l(r10);
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
             if (l10 != 1) {
                 if (l10 != 2) {
-                    hf.b.z(parcel, r10);
+                    jf.b.z(parcel, r10);
                 } else {
-                    str = hf.b.f(parcel, r10);
+                    str = jf.b.f(parcel, r10);
                 }
             } else {
-                i10 = hf.b.t(parcel, r10);
+                i10 = jf.b.t(parcel, r10);
             }
         }
-        hf.b.k(parcel, A);
+        jf.b.k(parcel, A);
         return new Scope(i10, str);
     }
 

@@ -38,7 +38,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
     private final List<String> eagerInitModuleNames;
     @NotNull
     private final ModuleProvider legacyModuleProvider;
-    @fb.a
+    @gb.a
     @NotNull
     private final HybridData mHybridData;
     @NotNull
@@ -57,7 +57,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        @fb.a
+        @gb.a
         public final List<TurboModuleInteropUtils.MethodDescriptor> getMethodDescriptorsFromModule(NativeModule nativeModule) {
             return TurboModuleInteropUtils.getMethodDescriptorsFromModule(nativeModule);
         }
@@ -205,7 +205,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
         return null;
     }
 
-    @fb.a
+    @gb.a
     private final CxxModuleWrapper getLegacyCxxModule(String str) {
         if (!isLegacyModule(str)) {
             return null;
@@ -217,7 +217,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
         return (CxxModuleWrapper) module;
     }
 
-    @fb.a
+    @gb.a
     private final NativeModule getLegacyJavaModule(String str) {
         if (!isLegacyModule(str)) {
             return null;
@@ -232,7 +232,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
     private static /* synthetic */ void getMHybridData$annotations() {
     }
 
-    @fb.a
+    @gb.a
     private static final List<TurboModuleInteropUtils.MethodDescriptor> getMethodDescriptorsFromModule(NativeModule nativeModule) {
         return Companion.getMethodDescriptorsFromModule(nativeModule);
     }
@@ -255,7 +255,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
                 } else {
                     z11 = false;
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
                 if (z11) {
                     TurboModulePerfLogger.moduleCreateConstructStart(str, moduleHolder.getModuleId());
                     NativeModule module2 = this.turboModuleProvider.getModule(str);
@@ -270,7 +270,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
                         }
                         module2.initialize();
                     } else {
-                        p8.a.o(TAG, "getOrCreateModule(): Unable to create module \"%s\" (legacy: %b, turbo: %b)", str, Boolean.valueOf(isLegacyModule(str)), Boolean.valueOf(isTurboModule(str)));
+                        q8.a.o(TAG, "getOrCreateModule(): Unable to create module \"%s\" (legacy: %b, turbo: %b)", str, Boolean.valueOf(isLegacyModule(str)), Boolean.valueOf(isTurboModule(str)));
                     }
                     TurboModulePerfLogger.moduleCreateSetUpEnd(str, moduleHolder.getModuleId());
                     synchronized (moduleHolder) {
@@ -301,7 +301,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
         }
     }
 
-    @fb.a
+    @gb.a
     private final TurboModule getTurboJavaModule(String str) {
         if (!isTurboModule(str)) {
             return null;
@@ -313,7 +313,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
         return (TurboModule) module;
     }
 
-    @fb.a
+    @gb.a
     private final CxxModuleWrapper getTurboLegacyCxxModule(String str) {
         if (!isTurboModule(str)) {
             return null;
@@ -364,16 +364,16 @@ public final class TurboModuleManager implements TurboModuleRegistry {
         Intrinsics.checkNotNullParameter(moduleName, "moduleName");
         synchronized (this.moduleCleanupLock) {
             if (this.moduleCleanupStarted) {
-                p8.a.o(TAG, "getModule(): Tried to get module \"%s\", but TurboModuleManager was tearing down (legacy: %b, turbo: %b)", moduleName, Boolean.valueOf(isLegacyModule(moduleName)), Boolean.valueOf(isTurboModule(moduleName)));
+                q8.a.o(TAG, "getModule(): Tried to get module \"%s\", but TurboModuleManager was tearing down (legacy: %b, turbo: %b)", moduleName, Boolean.valueOf(isLegacyModule(moduleName)), Boolean.valueOf(isTurboModule(moduleName)));
                 return null;
             }
             if (!this.moduleHolders.containsKey(moduleName)) {
                 this.moduleHolders.put(moduleName, new ModuleHolder());
             }
             ModuleHolder moduleHolder = this.moduleHolders.get(moduleName);
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
             if (moduleHolder == null) {
-                p8.a.o(TAG, "getModule(): Tried to get module \"%s\", but moduleHolder was null", moduleName);
+                q8.a.o(TAG, "getModule(): Tried to get module \"%s\", but moduleHolder was null", moduleName);
                 return null;
             }
             ModuleHolder moduleHolder2 = moduleHolder;
@@ -432,7 +432,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
     public void invalidate() {
         synchronized (this.moduleCleanupLock) {
             this.moduleCleanupStarted = true;
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
         }
         for (Map.Entry<String, ModuleHolder> entry : this.moduleHolders.entrySet()) {
             NativeModule orCreateModule = getOrCreateModule(entry.getKey(), entry.getValue(), false);

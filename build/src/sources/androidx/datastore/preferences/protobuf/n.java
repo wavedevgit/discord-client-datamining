@@ -4,20 +4,20 @@ package androidx.datastore.preferences.protobuf;
 public abstract class n {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Class f4136a = c();
+    static final Class f3833a = c();
 
     public static o a() {
-        if (f4136a != null) {
+        if (f3833a != null) {
             try {
                 return b("getEmptyRegistry");
             } catch (Exception unused) {
             }
         }
-        return o.f4146e;
+        return o.f3843e;
     }
 
     private static final o b(String str) {
-        return (o) f4136a.getDeclaredMethod(str, null).invoke(null, null);
+        return (o) f3833a.getDeclaredMethod(str, null).invoke(null, null);
     }
 
     static Class c() {

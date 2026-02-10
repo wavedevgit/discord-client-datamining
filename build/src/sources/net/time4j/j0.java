@@ -2,78 +2,78 @@ package net.time4j;
 
 import java.util.concurrent.TimeUnit;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class j0 implements rt.p {
+class j0 implements st.p {
 
     /* renamed from: o  reason: collision with root package name */
-    static final rt.p f39495o = new j0(g.class, g.f39369d, g.f39374q);
+    static final st.p f38587o = new j0(g.class, g.f38461d, g.f38466q);
 
     /* renamed from: p  reason: collision with root package name */
-    static final rt.p f39496p = new j0(TimeUnit.class, TimeUnit.DAYS, TimeUnit.NANOSECONDS);
+    static final st.p f38588p = new j0(TimeUnit.class, TimeUnit.DAYS, TimeUnit.NANOSECONDS);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f39497d;
+    private final Class f38589d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient Comparable f39498e;
+    private final transient Comparable f38590e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient Comparable f39499i;
+    private final transient Comparable f38591i;
 
     private j0(Class cls, Comparable comparable, Comparable comparable2) {
-        this.f39497d = cls;
-        this.f39498e = comparable;
-        this.f39499i = comparable2;
+        this.f38589d = cls;
+        this.f38590e = comparable;
+        this.f38591i = comparable2;
     }
 
-    @Override // rt.p
+    @Override // st.p
     public boolean A() {
         return false;
     }
 
-    @Override // rt.p
+    @Override // st.p
     public boolean D() {
         return true;
     }
 
     @Override // java.util.Comparator
     /* renamed from: a */
-    public int compare(rt.o oVar, rt.o oVar2) {
-        Comparable comparable = (Comparable) oVar.s(this);
-        Comparable comparable2 = (Comparable) oVar2.s(this);
-        if (this.f39497d == g.class) {
+    public int compare(st.o oVar, st.o oVar2) {
+        Comparable comparable = (Comparable) oVar.t(this);
+        Comparable comparable2 = (Comparable) oVar2.t(this);
+        if (this.f38589d == g.class) {
             return comparable.compareTo(comparable2);
         }
         return comparable2.compareTo(comparable);
     }
 
-    @Override // rt.p
+    @Override // st.p
     /* renamed from: b */
     public Comparable e() {
-        return this.f39499i;
+        return this.f38591i;
     }
 
-    @Override // rt.p
+    @Override // st.p
     /* renamed from: c */
     public Comparable B() {
-        return this.f39498e;
+        return this.f38590e;
     }
 
-    @Override // rt.p
+    @Override // st.p
     public char d() {
         return (char) 0;
     }
 
-    @Override // rt.p
-    public Class getType() {
-        return this.f39497d;
-    }
-
-    @Override // rt.p
-    public boolean i() {
+    @Override // st.p
+    public boolean f() {
         return false;
     }
 
-    @Override // rt.p
+    @Override // st.p
+    public Class getType() {
+        return this.f38589d;
+    }
+
+    @Override // st.p
     public String name() {
         return "PRECISION";
     }

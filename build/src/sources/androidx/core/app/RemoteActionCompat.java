@@ -6,20 +6,20 @@ import androidx.core.graphics.drawable.IconCompat;
 public final class RemoteActionCompat implements d4.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public IconCompat f3498a;
+    public IconCompat f3195a;
 
     /* renamed from: b  reason: collision with root package name */
-    public CharSequence f3499b;
+    public CharSequence f3196b;
 
     /* renamed from: c  reason: collision with root package name */
-    public CharSequence f3500c;
+    public CharSequence f3197c;
 
     /* renamed from: d  reason: collision with root package name */
-    public PendingIntent f3501d;
+    public PendingIntent f3198d;
 
     /* renamed from: e  reason: collision with root package name */
-    public boolean f3502e;
+    public boolean f3199e;
 
     /* renamed from: f  reason: collision with root package name */
-    public boolean f3503f;
+    public boolean f3200f;
 }

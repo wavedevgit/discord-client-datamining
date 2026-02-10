@@ -16,16 +16,16 @@ import java.util.TreeMap;
 final class d extends h {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h.e f17892d = new a();
+    public static final h.e f18032d = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f17893a;
+    private final c f18033a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b[] f17894b;
+    private final b[] f18034b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final m.b f17895c;
+    private final m.b f18035c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements h.e {
@@ -38,17 +38,17 @@ final class d extends h {
             b bVar;
             b bVar2;
             Class g10 = a0.g(type);
-            boolean j10 = an.c.j(g10);
+            boolean j10 = bn.c.j(g10);
             for (Field field : g10.getDeclaredFields()) {
                 if (b(j10, field.getModifiers()) && ((gVar = (g) field.getAnnotation(g.class)) == null || !gVar.ignore())) {
-                    Type q10 = an.c.q(type, g10, field.getGenericType());
-                    Set k10 = an.c.k(field);
+                    Type q10 = bn.c.q(type, g10, field.getGenericType());
+                    Set k10 = bn.c.k(field);
                     String name = field.getName();
                     h f10 = wVar.f(q10, k10, name);
                     field.setAccessible(true);
-                    String m10 = an.c.m(name, gVar);
+                    String m10 = bn.c.m(name, gVar);
                     if (((b) map.put(m10, new b(m10, field, f10))) != null) {
-                        throw new IllegalArgumentException("Conflicting fields:\n    " + bVar2.f17897b + "\n    " + bVar.f17897b);
+                        throw new IllegalArgumentException("Conflicting fields:\n    " + bVar2.f18037b + "\n    " + bVar.f18037b);
                     }
                 }
             }
@@ -81,7 +81,7 @@ final class d extends h {
             if (g10.isInterface() || g10.isEnum() || !set.isEmpty()) {
                 return null;
             }
-            if (an.c.j(g10)) {
+            if (bn.c.j(g10)) {
                 c(type, List.class);
                 c(type, Set.class);
                 c(type, Map.class);
@@ -96,7 +96,7 @@ final class d extends h {
                     if (g10.getEnclosingClass() != null && !Modifier.isStatic(g10.getModifiers())) {
                         throw new IllegalArgumentException("Cannot serialize non-static nested class " + g10.getName());
                     } else if (!Modifier.isAbstract(g10.getModifiers())) {
-                        if (!an.c.i(g10)) {
+                        if (!bn.c.i(g10)) {
                             c a10 = c.a(g10);
                             TreeMap treeMap = new TreeMap();
                             while (type != Object.class) {
@@ -122,48 +122,48 @@ final class d extends h {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f17896a;
+        final String f18036a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Field f17897b;
+        final Field f18037b;
 
         /* renamed from: c  reason: collision with root package name */
-        final h f17898c;
+        final h f18038c;
 
         b(String str, Field field, h hVar) {
-            this.f17896a = str;
-            this.f17897b = field;
-            this.f17898c = hVar;
+            this.f18036a = str;
+            this.f18037b = field;
+            this.f18038c = hVar;
         }
 
         void a(m mVar, Object obj) {
-            this.f17897b.set(obj, this.f17898c.fromJson(mVar));
+            this.f18037b.set(obj, this.f18038c.fromJson(mVar));
         }
 
         void b(t tVar, Object obj) {
-            this.f17898c.toJson(tVar, this.f17897b.get(obj));
+            this.f18038c.toJson(tVar, this.f18037b.get(obj));
         }
     }
 
     d(c cVar, Map map) {
-        this.f17893a = cVar;
-        this.f17894b = (b[]) map.values().toArray(new b[map.size()]);
-        this.f17895c = m.b.a((String[]) map.keySet().toArray(new String[map.size()]));
+        this.f18033a = cVar;
+        this.f18034b = (b[]) map.values().toArray(new b[map.size()]);
+        this.f18035c = m.b.a((String[]) map.keySet().toArray(new String[map.size()]));
     }
 
     @Override // com.squareup.moshi.h
     public Object fromJson(m mVar) {
         try {
-            Object b10 = this.f17893a.b();
+            Object b10 = this.f18033a.b();
             try {
                 mVar.u();
                 while (mVar.hasNext()) {
-                    int J = mVar.J(this.f17895c);
+                    int J = mVar.J(this.f18035c);
                     if (J == -1) {
-                        mVar.E0();
-                        mVar.S();
+                        mVar.C0();
+                        mVar.T();
                     } else {
-                        this.f17894b[J].a(mVar, b10);
+                        this.f18034b[J].a(mVar, b10);
                     }
                 }
                 mVar.D();
@@ -176,7 +176,7 @@ final class d extends h {
         } catch (InstantiationException e10) {
             throw new RuntimeException(e10);
         } catch (InvocationTargetException e11) {
-            throw an.c.t(e11);
+            throw bn.c.t(e11);
         }
     }
 
@@ -185,8 +185,8 @@ final class d extends h {
         b[] bVarArr;
         try {
             tVar.k();
-            for (b bVar : this.f17894b) {
-                tVar.J(bVar.f17896a);
+            for (b bVar : this.f18034b) {
+                tVar.J(bVar.f18036a);
                 bVar.b(tVar, obj);
             }
             tVar.s();
@@ -196,6 +196,6 @@ final class d extends h {
     }
 
     public String toString() {
-        return "JsonAdapter(" + this.f17893a + ")";
+        return "JsonAdapter(" + this.f18033a + ")";
     }
 }

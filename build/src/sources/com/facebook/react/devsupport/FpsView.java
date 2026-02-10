@@ -98,7 +98,7 @@ public final class FpsView extends FrameLayout {
             format = format + format2;
         }
         this.textView.setText(format);
-        p8.a.b(ReactConstants.TAG, format);
+        q8.a.b(ReactConstants.TAG, format);
     }
 
     @Override // android.view.ViewGroup, android.view.View

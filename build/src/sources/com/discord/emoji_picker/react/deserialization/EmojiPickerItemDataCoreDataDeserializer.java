@@ -173,7 +173,7 @@ public final class EmojiPickerItemDataCoreDataDeserializer {
                         } else {
                             z10 = true;
                         }
-                        Unit unit = Unit.f32056a;
+                        Unit unit = Unit.f31765a;
                         emojiPickerItemDataCoreDataDeserializer.deserializeTypeNativeSection(map, arrayList, arrayList2, z11);
                     }
                 } else {
@@ -185,7 +185,7 @@ public final class EmojiPickerItemDataCoreDataDeserializer {
                     } else {
                         z10 = true;
                     }
-                    Unit unit2 = Unit.f32056a;
+                    Unit unit2 = Unit.f31765a;
                     emojiPickerItemDataCoreDataDeserializer2.deserializeTypeEmojiRowSlim(nonNullArray2, r10, z12);
                 }
             } else {

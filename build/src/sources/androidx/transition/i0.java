@@ -8,13 +8,13 @@ import java.lang.reflect.Field;
 abstract class i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f5721a = true;
+    private static boolean f5418a = true;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Field f5722b;
+    private static Field f5419b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f5723c;
+    private static boolean f5420c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -31,11 +31,11 @@ abstract class i0 {
     }
 
     public float b(View view) {
-        if (f5721a) {
+        if (f5418a) {
             try {
                 return a.a(view);
             } catch (NoSuchMethodError unused) {
-                f5721a = false;
+                f5418a = false;
             }
         }
         return view.getAlpha();
@@ -47,32 +47,32 @@ abstract class i0 {
     public abstract void d(View view, int i10, int i11, int i12, int i13);
 
     public void e(View view, float f10) {
-        if (f5721a) {
+        if (f5418a) {
             try {
                 a.b(view, f10);
                 return;
             } catch (NoSuchMethodError unused) {
-                f5721a = false;
+                f5418a = false;
             }
         }
         view.setAlpha(f10);
     }
 
     public void f(View view, int i10) {
-        if (!f5723c) {
+        if (!f5420c) {
             try {
                 Field declaredField = View.class.getDeclaredField("mViewFlags");
-                f5722b = declaredField;
+                f5419b = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException unused) {
                 Log.i("ViewUtilsApi19", "fetchViewFlagsField: ");
             }
-            f5723c = true;
+            f5420c = true;
         }
-        Field field = f5722b;
+        Field field = f5419b;
         if (field != null) {
             try {
-                f5722b.setInt(view, i10 | (field.getInt(view) & (-13)));
+                f5419b.setInt(view, i10 | (field.getInt(view) & (-13)));
             } catch (IllegalAccessException unused2) {
             }
         }

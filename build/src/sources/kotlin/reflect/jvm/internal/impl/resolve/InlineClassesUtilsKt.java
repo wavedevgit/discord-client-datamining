@@ -27,15 +27,15 @@ import org.jetbrains.annotations.NotNull;
 public final class InlineClassesUtilsKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final FqName f34142a;
+    private static final FqName f33851a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ClassId f34143b;
+    private static final ClassId f33852b;
 
     static {
         FqName fqName = new FqName("kotlin.jvm.JvmInline");
-        f34142a = fqName;
-        f34143b = ClassId.Companion.topLevel(fqName);
+        f33851a = fqName;
+        f33852b = ClassId.Companion.topLevel(fqName);
     }
 
     public static final boolean isGetterOfUnderlyingPropertyOfValueClass(@NotNull CallableDescriptor callableDescriptor) {

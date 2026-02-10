@@ -9,24 +9,24 @@ import q4.t;
 public class SystemAlarmService extends s implements g.c {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f5981o = m.i("SystemAlarmService");
+    private static final String f5678o = m.i("SystemAlarmService");
 
     /* renamed from: e  reason: collision with root package name */
-    private g f5982e;
+    private g f5679e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f5983i;
+    private boolean f5680i;
 
     private void f() {
         g gVar = new g(this);
-        this.f5982e = gVar;
+        this.f5679e = gVar;
         gVar.m(this);
     }
 
     @Override // androidx.work.impl.background.systemalarm.g.c
     public void b() {
-        this.f5983i = true;
-        m.e().a(f5981o, "All commands completed in dispatcher");
+        this.f5680i = true;
+        m.e().a(f5678o, "All commands completed in dispatcher");
         t.a();
         stopSelf();
     }
@@ -35,27 +35,27 @@ public class SystemAlarmService extends s implements g.c {
     public void onCreate() {
         super.onCreate();
         f();
-        this.f5983i = false;
+        this.f5680i = false;
     }
 
     @Override // androidx.lifecycle.s, android.app.Service
     public void onDestroy() {
         super.onDestroy();
-        this.f5983i = true;
-        this.f5982e.k();
+        this.f5680i = true;
+        this.f5679e.k();
     }
 
     @Override // androidx.lifecycle.s, android.app.Service
     public int onStartCommand(Intent intent, int i10, int i11) {
         super.onStartCommand(intent, i10, i11);
-        if (this.f5983i) {
-            m.e().f(f5981o, "Re-initializing SystemAlarmDispatcher after a request to shut-down.");
-            this.f5982e.k();
+        if (this.f5680i) {
+            m.e().f(f5678o, "Re-initializing SystemAlarmDispatcher after a request to shut-down.");
+            this.f5679e.k();
             f();
-            this.f5983i = false;
+            this.f5680i = false;
         }
         if (intent != null) {
-            this.f5982e.a(intent, i11);
+            this.f5679e.a(intent, i11);
             return 3;
         }
         return 3;

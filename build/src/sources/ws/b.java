@@ -1,70 +1,62 @@
 package ws;
 
-import kotlin.Unit;
+import java.util.concurrent.Executor;
 import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.FunctionReferenceImpl;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.TypeIntrinsics;
-import os.i0;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlinx.coroutines.CoroutineDispatcher;
+import kotlinx.coroutines.s;
+import us.f0;
+import us.h0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b {
+public final class b extends s implements Executor {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final long f54115a;
+    /* renamed from: o  reason: collision with root package name */
+    public static final b f54037o = new b();
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
+    /* renamed from: p  reason: collision with root package name */
+    private static final CoroutineDispatcher f54038p;
 
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f54116d = new a();
-
-        a() {
-            super(3, b.class, "register", "register(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);
-        }
-
-        public final void a(b bVar, l lVar, Object obj) {
-            bVar.d(lVar, obj);
-        }
-
-        @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-            a((b) obj, (l) obj2, obj3);
-            return Unit.f32056a;
-        }
+    static {
+        int e10;
+        k kVar = k.f54055i;
+        e10 = h0.e("kotlinx.coroutines.io.parallelism", kotlin.ranges.d.d(64, f0.a()), 0, 0, 12, null);
+        f54038p = CoroutineDispatcher.a2(kVar, e10, null, 2, null);
     }
 
-    public b(long j10) {
-        this.f54115a = j10;
+    private b() {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public final void d(final l lVar, Object obj) {
-        if (this.f54115a <= 0) {
-            lVar.c(Unit.f32056a);
-            return;
-        }
-        Runnable runnable = new Runnable() { // from class: ws.a
-            @Override // java.lang.Runnable
-            public final void run() {
-                b.e(l.this, this);
-            }
-        };
-        Intrinsics.checkNotNull(lVar, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation<*>");
-        k kVar = (k) lVar;
-        CoroutineContext context = kVar.getContext();
-        kVar.n(i0.c(context).Y(this.f54115a, runnable, context));
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void S1(CoroutineContext coroutineContext, Runnable runnable) {
+        f54038p.S1(coroutineContext, runnable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void e(l lVar, b bVar) {
-        lVar.e(bVar, Unit.f32056a);
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public CoroutineDispatcher Z1(int i10, String str) {
+        return k.f54055i.Z1(i10, str);
     }
 
-    public final f c() {
-        a aVar = a.f54116d;
-        Intrinsics.checkNotNull(aVar, "null cannot be cast to non-null type kotlin.Function3<@[ParameterName(name = \"clauseObject\")] kotlin.Any, @[ParameterName(name = \"select\")] kotlinx.coroutines.selects.SelectInstance<*>, @[ParameterName(name = \"param\")] kotlin.Any?, kotlin.Unit>");
-        return new g(this, (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(aVar, 3), null, 4, null);
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        throw new IllegalStateException("Cannot be invoked on Dispatchers.IO");
+    }
+
+    @Override // java.util.concurrent.Executor
+    public void execute(Runnable runnable) {
+        z1(kotlin.coroutines.e.f31839d, runnable);
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public String toString() {
+        return "Dispatchers.IO";
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void z1(CoroutineContext coroutineContext, Runnable runnable) {
+        f54038p.z1(coroutineContext, runnable);
+    }
+
+    @Override // kotlinx.coroutines.s
+    public Executor e2() {
+        return this;
     }
 }

@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import an.c;
+import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -78,8 +78,8 @@ public final class VerifyPersonaButton_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.E0();
-                    reader.S();
+                    reader.C0();
+                    reader.T();
                     break;
                 case 0:
                     str = (String) this.stringAdapter.fromJson(reader);
@@ -133,7 +133,7 @@ public final class VerifyPersonaButton_AttributesJsonAdapter extends h {
         String str9 = str;
         Constructor<VerifyPersonaButton.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = VerifyPersonaButton.Attributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, String.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f1164c);
+            constructor = VerifyPersonaButton.Attributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, String.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f7152c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

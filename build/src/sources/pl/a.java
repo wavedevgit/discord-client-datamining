@@ -1,11 +1,27 @@
 package pl;
+
+import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    void a();
+public class a extends d {
 
-    void apply(long j10);
+    /* renamed from: e  reason: collision with root package name */
+    private final long f44299e;
 
-    void b(float[] fArr, int i10);
+    /* renamed from: i  reason: collision with root package name */
+    private final long f44300i;
 
-    void release();
+    public a(long j10, long j11) {
+        this(j10, j11, new Throwable());
+    }
+
+    @Override // java.lang.Throwable
+    public String getMessage() {
+        return String.format(Locale.ENGLISH, "Insufficient disk space, estimated file size in bytes %d, available disk space in bytes %d", Long.valueOf(this.f44299e), Long.valueOf(this.f44300i));
+    }
+
+    public a(long j10, long j11, Throwable th2) {
+        super(th2);
+        this.f44299e = j10;
+        this.f44300i = j11;
+    }
 }

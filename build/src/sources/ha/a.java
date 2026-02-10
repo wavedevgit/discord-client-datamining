@@ -1,11 +1,32 @@
 package ha;
 
-import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Rect;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface a {
-    ra.a a(Context context);
+    int a();
 
-    qa.c b();
+    int b();
 
-    qa.c c();
+    b c(int i10);
+
+    int d();
+
+    void e(int i10, Canvas canvas);
+
+    a f(Rect rect);
+
+    int g(int i10);
+
+    int getHeight();
+
+    int getWidth();
+
+    int h();
+
+    void i(int i10, Canvas canvas);
+
+    int j();
+
+    e k();
 }

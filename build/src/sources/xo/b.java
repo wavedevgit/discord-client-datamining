@@ -1,88 +1,53 @@
 package xo;
 
-import android.content.Context;
-import bs.j;
-import java.io.File;
-import java.lang.Thread;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import androidx.viewbinding.ViewBinding;
+import vo.f2;
+import vo.g2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
+public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f54781a;
+    private final View f55255a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f54782b;
+    public final View f55256b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ho.a f54783c;
+    public final FrameLayout f55257c;
 
-    /* renamed from: d  reason: collision with root package name */
-    private List f54784d;
-
-    public b(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        this.f54782b = true;
-        this.f54783c = new ho.a(context);
-        this.f54784d = CollectionsKt.l();
+    private b(View view, View view2, FrameLayout frameLayout) {
+        this.f55255a = view;
+        this.f55256b = view2;
+        this.f55257c = frameLayout;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void e(b bVar, Thread.UncaughtExceptionHandler uncaughtExceptionHandler, Thread thread, Throwable th2) {
-        Intrinsics.checkNotNull(th2);
-        bVar.c(th2);
-        if (uncaughtExceptionHandler != null) {
-            uncaughtExceptionHandler.uncaughtException(thread, th2);
-        } else {
-            System.exit(1);
-            throw new RuntimeException("System.exit returned normally, while it was supposed to halt JVM.");
-        }
-    }
-
-    public final void b() {
-        this.f54783c.a();
-    }
-
-    public final void c(Throwable e10) {
-        Intrinsics.checkNotNullParameter(e10, "e");
-        if (this.f54782b) {
-            try {
-                this.f54783c.g(e10);
-            } catch (Exception unused) {
-            }
-            try {
-                for (File file : this.f54784d) {
-                    j.r(file);
-                }
-            } catch (Exception unused2) {
+    public static b a(View view) {
+        int i10 = f2.f52826g;
+        View a10 = e4.a.a(view, i10);
+        if (a10 != null) {
+            i10 = f2.f52829j;
+            FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
+            if (frameLayout != null) {
+                return new b(view, a10, frameLayout);
             }
         }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public final synchronized void d() {
-        if (this.f54781a) {
-            return;
+    public static b b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
+        if (viewGroup != null) {
+            layoutInflater.inflate(g2.f52856b, viewGroup);
+            return a(viewGroup);
         }
-        this.f54781a = true;
-        final Thread.UncaughtExceptionHandler defaultUncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
-        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() { // from class: xo.a
-            @Override // java.lang.Thread.UncaughtExceptionHandler
-            public final void uncaughtException(Thread thread, Throwable th2) {
-                b.e(b.this, defaultUncaughtExceptionHandler, thread, th2);
-            }
-        });
+        throw new NullPointerException("parent");
     }
 
-    public final void f(List list) {
-        Intrinsics.checkNotNullParameter(list, "<set-?>");
-        this.f54784d = list;
-    }
-
-    public final synchronized void g() {
-        if (this.f54781a) {
-            this.f54782b = false;
-        }
+    @Override // androidx.viewbinding.ViewBinding
+    public View getRoot() {
+        return this.f55255a;
     }
 }

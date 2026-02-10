@@ -1,33 +1,89 @@
 package te;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import android.text.TextUtils;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class g implements Parcelable.Creator {
-    @Override // android.os.Parcelable.Creator
-    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        String str = null;
-        int i10 = 0;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            int l10 = hf.b.l(r10);
-            if (l10 != 1) {
-                if (l10 != 2) {
-                    hf.b.z(parcel, r10);
-                } else {
-                    i10 = hf.b.t(parcel, r10);
-                }
-            } else {
-                str = hf.b.f(parcel, r10);
-            }
+public abstract class g {
+    private static String a(Object obj, int i10) {
+        if (i10 > 10) {
+            return "ERROR: Recursive toString calls";
         }
-        hf.b.k(parcel, A);
-        return new f(str, i10);
+        if (obj == null) {
+            return "";
+        }
+        if (obj instanceof String) {
+            if (TextUtils.isEmpty((String) obj)) {
+                return "";
+            }
+            return obj.toString();
+        } else if (obj instanceof Integer) {
+            if (((Integer) obj).intValue() == 0) {
+                return "";
+            }
+            return obj.toString();
+        } else if (obj instanceof Long) {
+            if (((Long) obj).longValue() == 0) {
+                return "";
+            }
+            return obj.toString();
+        } else if (obj instanceof Double) {
+            if (((Double) obj).doubleValue() == 0.0d) {
+                return "";
+            }
+            return obj.toString();
+        } else if (obj instanceof Boolean) {
+            if (!((Boolean) obj).booleanValue()) {
+                return "";
+            }
+            return obj.toString();
+        } else if (obj instanceof List) {
+            StringBuilder sb2 = new StringBuilder();
+            if (i10 > 0) {
+                sb2.append("[");
+            }
+            int length = sb2.length();
+            for (Object obj2 : (List) obj) {
+                if (sb2.length() > length) {
+                    sb2.append(", ");
+                }
+                sb2.append(a(obj2, i10 + 1));
+            }
+            if (i10 > 0) {
+                sb2.append("]");
+            }
+            return sb2.toString();
+        } else if (obj instanceof Map) {
+            StringBuilder sb3 = new StringBuilder();
+            boolean z10 = false;
+            int i11 = 0;
+            for (Map.Entry entry : new TreeMap((Map) obj).entrySet()) {
+                String a10 = a(entry.getValue(), i10 + 1);
+                if (!TextUtils.isEmpty(a10)) {
+                    if (i10 > 0 && !z10) {
+                        sb3.append("{");
+                        i11 = sb3.length();
+                        z10 = true;
+                    }
+                    if (sb3.length() > i11) {
+                        sb3.append(", ");
+                    }
+                    sb3.append((String) entry.getKey());
+                    sb3.append('=');
+                    sb3.append(a10);
+                }
+            }
+            if (z10) {
+                sb3.append("}");
+            }
+            return sb3.toString();
+        } else {
+            return obj.toString();
+        }
     }
 
-    @Override // android.os.Parcelable.Creator
-    public final /* synthetic */ Object[] newArray(int i10) {
-        return new f[i10];
+    public static String zza(Object obj) {
+        return a(obj, 0);
     }
 }

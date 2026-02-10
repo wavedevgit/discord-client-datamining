@@ -1,10 +1,25 @@
 package ha;
 
-import com.facebook.imagepipeline.common.ImageDecodeOptions;
-import java.nio.ByteBuffer;
+import android.graphics.Bitmap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface c {
-    ga.c d(ByteBuffer byteBuffer, ImageDecodeOptions imageDecodeOptions);
+    int[] A();
 
-    ga.c e(long j10, int i10, ImageDecodeOptions imageDecodeOptions);
+    int a();
+
+    int b();
+
+    b c(int i10);
+
+    int getHeight();
+
+    int getWidth();
+
+    int w();
+
+    boolean x();
+
+    Bitmap.Config y();
+
+    d z(int i10);
 }

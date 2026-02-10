@@ -1,8 +1,24 @@
 package hf;
+
+import android.accounts.Account;
+import android.os.Binder;
+import android.os.RemoteException;
+import android.util.Log;
+import hf.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a implements d {
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
+public abstract class a extends j.a {
+    public static Account h(j jVar) {
+        if (jVar == null) {
+            return null;
+        }
+        long clearCallingIdentity = Binder.clearCallingIdentity();
+        try {
+            return jVar.zzb();
+        } catch (RemoteException unused) {
+            Log.w("AccountAccessor", "Remote account accessor probably died");
+            return null;
+        } finally {
+            Binder.restoreCallingIdentity(clearCallingIdentity);
+        }
     }
 }

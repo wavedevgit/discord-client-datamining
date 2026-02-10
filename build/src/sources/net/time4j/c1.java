@@ -1,24 +1,24 @@
 package net.time4j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c1 implements rt.o, yt.g {
+public final class c1 implements st.o, zt.g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f39183d;
+    private final a0 f38275d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final net.time4j.tz.l f39184e;
+    private final net.time4j.tz.l f38276e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient i0 f39185i;
+    private final transient i0 f38277i;
 
     private c1(a0 a0Var, net.time4j.tz.l lVar) {
-        this.f39184e = lVar;
+        this.f38276e = lVar;
         net.time4j.tz.p B = lVar.B(a0Var);
-        if (a0Var.j0() && (B.k() != 0 || B.j() % 60 != 0)) {
+        if (a0Var.j0() && (B.l() != 0 || B.k() % 60 != 0)) {
             throw new IllegalArgumentException("Leap second can only be represented  with timezone-offset in full minutes: " + B);
         }
-        this.f39183d = a0Var;
-        this.f39185i = i0.U(a0Var, B);
+        this.f38275d = a0Var;
+        this.f38277i = i0.U(a0Var, B);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -26,17 +26,17 @@ public final class c1 implements rt.o, yt.g {
         return new c1(a0Var, lVar);
     }
 
-    @Override // pt.f
+    @Override // qt.f
     public int a() {
-        return this.f39183d.a();
+        return this.f38275d.a();
     }
 
     public net.time4j.tz.p b() {
-        return this.f39184e.B(this.f39183d);
+        return this.f38276e.B(this.f38275d);
     }
 
     public boolean c() {
-        return this.f39183d.j0();
+        return this.f38275d.j0();
     }
 
     public boolean equals(Object obj) {
@@ -45,7 +45,7 @@ public final class c1 implements rt.o, yt.g {
         }
         if (obj instanceof c1) {
             c1 c1Var = (c1) obj;
-            if (this.f39183d.equals(c1Var.f39183d) && this.f39184e.equals(c1Var.f39184e)) {
+            if (this.f38275d.equals(c1Var.f38275d) && this.f38276e.equals(c1Var.f38276e)) {
                 return true;
             }
         }
@@ -53,88 +53,84 @@ public final class c1 implements rt.o, yt.g {
     }
 
     public int hashCode() {
-        return this.f39183d.hashCode() ^ this.f39184e.hashCode();
+        return this.f38275d.hashCode() ^ this.f38276e.hashCode();
     }
 
-    @Override // yt.g
-    public int j(yt.f fVar) {
-        return this.f39183d.j(fVar);
-    }
-
-    @Override // rt.o
+    @Override // st.o
     public boolean k() {
         return true;
     }
 
-    @Override // pt.f
-    public long m() {
-        return this.f39183d.m();
+    @Override // zt.g
+    public long l(zt.f fVar) {
+        return this.f38275d.l(fVar);
     }
 
-    @Override // rt.o
-    public boolean n(rt.p pVar) {
-        if (!this.f39185i.n(pVar) && !this.f39183d.n(pVar)) {
+    @Override // st.o
+    public Object m(st.p pVar) {
+        if (this.f38277i.s(pVar)) {
+            return this.f38277i.m(pVar);
+        }
+        return this.f38275d.m(pVar);
+    }
+
+    @Override // st.o
+    public Object n(st.p pVar) {
+        Object n10;
+        if (this.f38277i.s(pVar)) {
+            n10 = this.f38277i.n(pVar);
+        } else {
+            n10 = this.f38275d.n(pVar);
+        }
+        if (pVar == g0.J && this.f38277i.f() >= 1972) {
+            i0 i0Var = (i0) this.f38277i.E(pVar, n10);
+            if (!this.f38276e.K(i0Var, i0Var) && i0Var.Y(this.f38276e).n0(1L, o0.SECONDS).j0()) {
+                return pVar.getType().cast(60);
+            }
+        }
+        return n10;
+    }
+
+    @Override // qt.f
+    public long o() {
+        return this.f38275d.o();
+    }
+
+    @Override // zt.g
+    public int q(zt.f fVar) {
+        return this.f38275d.q(fVar);
+    }
+
+    @Override // st.o
+    public boolean s(st.p pVar) {
+        if (!this.f38277i.s(pVar) && !this.f38275d.s(pVar)) {
             return false;
         }
         return true;
     }
 
-    @Override // yt.g
-    public long o(yt.f fVar) {
-        return this.f39183d.o(fVar);
-    }
-
-    @Override // rt.o
-    public int q(rt.p pVar) {
-        if (this.f39183d.j0() && pVar == g0.J) {
-            return 60;
-        }
-        int q10 = this.f39185i.q(pVar);
-        if (q10 == Integer.MIN_VALUE) {
-            return this.f39183d.q(pVar);
-        }
-        return q10;
-    }
-
-    @Override // rt.o
-    public Object s(rt.p pVar) {
-        if (this.f39183d.j0() && pVar == g0.J) {
+    @Override // st.o
+    public Object t(st.p pVar) {
+        if (this.f38275d.j0() && pVar == g0.J) {
             return pVar.getType().cast(60);
         }
-        if (this.f39185i.n(pVar)) {
-            return this.f39185i.s(pVar);
+        if (this.f38277i.s(pVar)) {
+            return this.f38277i.t(pVar);
         }
-        return this.f39183d.s(pVar);
-    }
-
-    @Override // rt.o
-    public Object t(rt.p pVar) {
-        Object t10;
-        if (this.f39185i.n(pVar)) {
-            t10 = this.f39185i.t(pVar);
-        } else {
-            t10 = this.f39183d.t(pVar);
-        }
-        if (pVar == g0.J && this.f39185i.f() >= 1972) {
-            i0 i0Var = (i0) this.f39185i.E(pVar, t10);
-            if (!this.f39184e.K(i0Var, i0Var) && i0Var.Y(this.f39184e).n0(1L, o0.SECONDS).j0()) {
-                return pVar.getType().cast(60);
-            }
-        }
-        return t10;
+        return this.f38275d.t(pVar);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(40);
-        sb2.append(this.f39185i.V());
+        sb2.append(this.f38277i.V());
         sb2.append('T');
-        int h10 = this.f39185i.h();
+        int h10 = this.f38277i.h();
         if (h10 < 10) {
             sb2.append('0');
         }
         sb2.append(h10);
         sb2.append(':');
-        int e10 = this.f39185i.e();
+        int e10 = this.f38277i.e();
         if (e10 < 10) {
             sb2.append('0');
         }
@@ -143,13 +139,13 @@ public final class c1 implements rt.o, yt.g {
         if (c()) {
             sb2.append("60");
         } else {
-            int d10 = this.f39185i.d();
+            int d10 = this.f38277i.d();
             if (d10 < 10) {
                 sb2.append('0');
             }
             sb2.append(d10);
         }
-        int a10 = this.f39185i.a();
+        int a10 = this.f38277i.a();
         if (a10 != 0) {
             g0.M0(sb2, a10);
         }
@@ -163,16 +159,20 @@ public final class c1 implements rt.o, yt.g {
         return sb2.toString();
     }
 
-    @Override // rt.o
+    @Override // st.o
     public net.time4j.tz.k u() {
-        return this.f39184e.z();
+        return this.f38276e.z();
     }
 
-    @Override // rt.o
-    public Object v(rt.p pVar) {
-        if (this.f39185i.n(pVar)) {
-            return this.f39185i.v(pVar);
+    @Override // st.o
+    public int v(st.p pVar) {
+        if (this.f38275d.j0() && pVar == g0.J) {
+            return 60;
         }
-        return this.f39183d.v(pVar);
+        int v10 = this.f38277i.v(pVar);
+        if (v10 == Integer.MIN_VALUE) {
+            return this.f38275d.v(pVar);
+        }
+        return v10;
     }
 }

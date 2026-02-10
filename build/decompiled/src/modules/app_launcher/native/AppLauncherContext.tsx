@@ -14,12 +14,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.useRef;
         var0 = {};
         var4 = function() {
-            _fun62447: for (var _fun62447_ip = 0;;) switch (_fun62447_ip) {
+            _fun62284: for (var _fun62284_ip = 0;;) switch (_fun62284_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
-                        _fun62447_ip = 46;
-                        continue _fun62447
+                        _fun62284_ip = 46;
+                        continue _fun62284
                     }
                 case 10:
                     var0 = global;
@@ -42,12 +42,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.getApplicationCommandManager = var4;
         var4 = function() {
-            _fun62448: for (var _fun62448_ip = 0;;) switch (_fun62448_ip) {
+            _fun62285: for (var _fun62285_ip = 0;;) switch (_fun62285_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
-                        _fun62448_ip = 46;
-                        continue _fun62448
+                        _fun62285_ip = 46;
+                        continue _fun62285
                     }
                 case 10:
                     var0 = global;
@@ -70,12 +70,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.openCustomKeyboard = var4;
         var3 = function() {
-            _fun62449: for (var _fun62449_ip = 0;;) switch (_fun62449_ip) {
+            _fun62286: for (var _fun62286_ip = 0;;) switch (_fun62286_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
-                        _fun62449_ip = 46;
-                        continue _fun62449
+                        _fun62286_ip = 46;
+                        continue _fun62286
                     }
                 case 10:
                     var0 = global;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AppLauncherContext = var4;
     var2.useAppLauncherChatInputRefDummy = var3;
     var3 = function() {
-        _fun62450: for (var _fun62450_ip = 0;;) switch (_fun62450_ip) {
+        _fun62287: for (var _fun62287_ip = 0;;) switch (_fun62287_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.useContext;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun62450_ip = 30;
-                    continue _fun62450
+                    _fun62287_ip = 30;
+                    continue _fun62287
                 }
             case 28:
                 return var0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useRequiredAppLauncherContext = var3;
     var1 = function() {
-        _fun62451: for (var _fun62451_ip = 0;;) switch (_fun62451_ip) {
+        _fun62288: for (var _fun62288_ip = 0;;) switch (_fun62288_ip) {
             case 0:
                 var4 = _closure1_slot2;
                 var3 = var4.useRef;
@@ -277,8 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun62451_ip = 269;
-                    continue _fun62451
+                    _fun62288_ip = 269;
+                    continue _fun62288
                 }
             case 266:
                 var0 = var1;
@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAppLauncherContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3721, 7805, 7806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3721, 7780, 7781, 2]);

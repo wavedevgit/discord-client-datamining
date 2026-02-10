@@ -5,11 +5,11 @@ import java.util.Arrays;
 public final class j5 extends l5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f13995d;
+    private final String f14135d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j5(String str) {
-        this.f13995d = str;
+        this.f14135d = str;
     }
 
     @Override // java.lang.Comparable
@@ -21,8 +21,8 @@ public final class j5 extends l5 {
             length = l5Var.zza();
             length2 = l5.e((byte) 96);
         } else {
-            String str = this.f13995d;
-            String str2 = ((j5) l5Var).f13995d;
+            String str = this.f14135d;
+            String str2 = ((j5) l5Var).f14135d;
             if (str.length() != str2.length()) {
                 length = str2.length();
                 length2 = str.length();
@@ -40,15 +40,15 @@ public final class j5 extends l5 {
         if (obj == null || j5.class != obj.getClass()) {
             return false;
         }
-        return this.f13995d.equals(((j5) obj).f13995d);
+        return this.f14135d.equals(((j5) obj).f14135d);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) 96)), this.f13995d});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) 96)), this.f14135d});
     }
 
     public final String toString() {
-        return "\"" + this.f13995d + "\"";
+        return "\"" + this.f14135d + "\"";
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

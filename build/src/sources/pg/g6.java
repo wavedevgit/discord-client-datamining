@@ -1,47 +1,43 @@
 package pg;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class g6 extends hf.a {
-    public static final Parcelable.Creator<g6> CREATOR = new h7();
+final class g6 implements zi.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final g6 f43570a = new g6();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f43571b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f43572c;
 
     /* renamed from: d  reason: collision with root package name */
-    public int f44294d;
+    private static final zi.c f43573d;
 
-    /* renamed from: e  reason: collision with root package name */
-    public int f44295e;
-
-    /* renamed from: i  reason: collision with root package name */
-    public int f44296i;
-
-    /* renamed from: o  reason: collision with root package name */
-    public boolean f44297o;
-
-    /* renamed from: p  reason: collision with root package name */
-    public boolean f44298p;
-
-    /* renamed from: q  reason: collision with root package name */
-    public float f44299q;
-
-    public g6(int i10, int i11, int i12, boolean z10, boolean z11, float f10) {
-        this.f44294d = i10;
-        this.f44295e = i11;
-        this.f44296i = i12;
-        this.f44297o = z10;
-        this.f44298p = z11;
-        this.f44299q = f10;
+    static {
+        c.b a10 = zi.c.a("language");
+        f fVar = new f();
+        fVar.a(1);
+        f43571b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("durationMs");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f43572c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("errorCode");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f43573d = a12.b(fVar3.b()).a();
     }
 
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 2, this.f44294d);
-        hf.c.l(parcel, 3, this.f44295e);
-        hf.c.l(parcel, 4, this.f44296i);
-        hf.c.c(parcel, 5, this.f44297o);
-        hf.c.c(parcel, 6, this.f44298p);
-        hf.c.j(parcel, 7, this.f44299q);
-        hf.c.b(parcel, a10);
+    private g6() {
+    }
+
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

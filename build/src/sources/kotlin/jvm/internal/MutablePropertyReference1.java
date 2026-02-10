@@ -13,7 +13,6 @@ public abstract class MutablePropertyReference1 extends MutablePropertyReference
         return Reflection.mutableProperty1(this);
     }
 
-    @Override // kotlin.reflect.KProperty1
     public abstract /* synthetic */ Object get(Object obj);
 
     @Override // kotlin.reflect.KProperty1
@@ -26,7 +25,6 @@ public abstract class MutablePropertyReference1 extends MutablePropertyReference
         return get(obj);
     }
 
-    @Override // kotlin.reflect.g
     public abstract /* synthetic */ void set(Object obj, Object obj2);
 
     public MutablePropertyReference1(Object obj) {

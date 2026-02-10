@@ -16,50 +16,50 @@ import kotlin.jvm.internal.Intrinsics;
 public final class y implements x3.h, g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f48681d;
+    private final Context f47655d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f48682e;
+    private final String f47656e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final File f48683i;
+    private final File f47657i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Callable f48684o;
+    private final Callable f47658o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f48685p;
+    private final int f47659p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final x3.h f48686q;
+    private final x3.h f47660q;
 
     /* renamed from: r  reason: collision with root package name */
-    private f f48687r;
+    private f f47661r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f48688s;
+    private boolean f47662s;
 
     public y(Context context, String str, File file, Callable callable, int i10, x3.h delegate) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f48681d = context;
-        this.f48682e = str;
-        this.f48683i = file;
-        this.f48684o = callable;
-        this.f48685p = i10;
-        this.f48686q = delegate;
+        this.f47655d = context;
+        this.f47656e = str;
+        this.f47657i = file;
+        this.f47658o = callable;
+        this.f47659p = i10;
+        this.f47660q = delegate;
     }
 
     private final void a(File file, boolean z10) {
         ReadableByteChannel newChannel;
-        if (this.f48682e != null) {
-            newChannel = Channels.newChannel(this.f48681d.getAssets().open(this.f48682e));
+        if (this.f47656e != null) {
+            newChannel = Channels.newChannel(this.f47655d.getAssets().open(this.f47656e));
             Intrinsics.checkNotNullExpressionValue(newChannel, "newChannel(context.assets.open(copyFromAssetPath))");
-        } else if (this.f48683i != null) {
-            newChannel = new FileInputStream(this.f48683i).getChannel();
+        } else if (this.f47657i != null) {
+            newChannel = new FileInputStream(this.f47657i).getChannel();
             Intrinsics.checkNotNullExpressionValue(newChannel, "FileInputStream(copyFromFile).channel");
         } else {
-            Callable callable = this.f48684o;
+            Callable callable = this.f47658o;
             if (callable != null) {
                 try {
                     newChannel = Channels.newChannel((InputStream) callable.call());
@@ -71,7 +71,7 @@ public final class y implements x3.h, g {
                 throw new IllegalStateException("copyFromAssetPath, copyFromFile and copyFromInputStream are all null!");
             }
         }
-        File intermediateFile = File.createTempFile("room-copy-helper", ".tmp", this.f48681d.getCacheDir());
+        File intermediateFile = File.createTempFile("room-copy-helper", ".tmp", this.f47655d.getCacheDir());
         intermediateFile.deleteOnExit();
         FileChannel output = new FileOutputStream(intermediateFile).getChannel();
         Intrinsics.checkNotNullExpressionValue(output, "output");
@@ -89,7 +89,7 @@ public final class y implements x3.h, g {
     }
 
     private final void g(File file, boolean z10) {
-        f fVar = this.f48687r;
+        f fVar = this.f47661r;
         if (fVar == null) {
             Intrinsics.throwUninitializedPropertyAccessException("databaseConfiguration");
             fVar = null;
@@ -100,15 +100,15 @@ public final class y implements x3.h, g {
     private final void m(boolean z10) {
         String databaseName = getDatabaseName();
         if (databaseName != null) {
-            File databaseFile = this.f48681d.getDatabasePath(databaseName);
-            f fVar = this.f48687r;
+            File databaseFile = this.f47655d.getDatabasePath(databaseName);
+            f fVar = this.f47661r;
             f fVar2 = null;
             if (fVar == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("databaseConfiguration");
                 fVar = null;
             }
-            boolean z11 = fVar.f48560s;
-            File filesDir = this.f48681d.getFilesDir();
+            boolean z11 = fVar.f47534s;
+            File filesDir = this.f47655d.getFilesDir();
             Intrinsics.checkNotNullExpressionValue(filesDir, "context.filesDir");
             z3.a aVar = new z3.a(databaseName, filesDir, z11);
             try {
@@ -126,21 +126,21 @@ public final class y implements x3.h, g {
                 try {
                     Intrinsics.checkNotNullExpressionValue(databaseFile, "databaseFile");
                     int c10 = t3.b.c(databaseFile);
-                    if (c10 == this.f48685p) {
+                    if (c10 == this.f47659p) {
                         aVar.d();
                         return;
                     }
-                    f fVar3 = this.f48687r;
+                    f fVar3 = this.f47661r;
                     if (fVar3 == null) {
                         Intrinsics.throwUninitializedPropertyAccessException("databaseConfiguration");
                     } else {
                         fVar2 = fVar3;
                     }
-                    if (fVar2.a(c10, this.f48685p)) {
+                    if (fVar2.a(c10, this.f47659p)) {
                         aVar.d();
                         return;
                     }
-                    if (this.f48681d.deleteDatabase(databaseName)) {
+                    if (this.f47655d.deleteDatabase(databaseName)) {
                         try {
                             a(databaseFile, z10);
                         } catch (IOException e11) {
@@ -169,7 +169,7 @@ public final class y implements x3.h, g {
     @Override // x3.h, java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
         getDelegate().close();
-        this.f48688s = false;
+        this.f47662s = false;
     }
 
     @Override // x3.h
@@ -179,21 +179,21 @@ public final class y implements x3.h, g {
 
     @Override // r3.g
     public x3.h getDelegate() {
-        return this.f48686q;
+        return this.f47660q;
     }
 
     @Override // x3.h
     public x3.g getWritableDatabase() {
-        if (!this.f48688s) {
+        if (!this.f47662s) {
             m(true);
-            this.f48688s = true;
+            this.f47662s = true;
         }
         return getDelegate().getWritableDatabase();
     }
 
     public final void k(f databaseConfiguration) {
         Intrinsics.checkNotNullParameter(databaseConfiguration, "databaseConfiguration");
-        this.f48687r = databaseConfiguration;
+        this.f47661r = databaseConfiguration;
     }
 
     @Override // x3.h

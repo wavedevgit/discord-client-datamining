@@ -10,19 +10,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorLogJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18670a;
+    private final m.b f18810a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18671b;
+    private final com.squareup.moshi.h f18811b;
 
     public ErrorLogJsonAdapter(@NotNull com.squareup.moshi.w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("info");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18670a = a10;
+        this.f18810a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "info");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18671b = f10;
+        this.f18811b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -32,14 +32,14 @@ public final class ErrorLogJsonAdapter extends com.squareup.moshi.h {
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18670a);
+            int J = reader.J(this.f18810a);
             if (J != -1) {
                 if (J == 0) {
-                    str = (String) this.f18671b.fromJson(reader);
+                    str = (String) this.f18811b.fromJson(reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -53,7 +53,7 @@ public final class ErrorLogJsonAdapter extends com.squareup.moshi.h {
         if (errorLog != null) {
             writer.k();
             writer.J("info");
-            this.f18671b.toJson(writer, errorLog.a());
+            this.f18811b.toJson(writer, errorLog.a());
             writer.s();
             return;
         }

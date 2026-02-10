@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g extends i {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f10653d = new a(null);
+    public static final a f10793d = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -20,7 +20,7 @@ public final class g extends i {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public g(la.w memoryCache, la.k cacheKeyFactory, w0 inputProducer) {
+    public g(ma.w memoryCache, ma.k cacheKeyFactory, w0 inputProducer) {
         super(memoryCache, cacheKeyFactory, inputProducer);
         Intrinsics.checkNotNullParameter(memoryCache, "memoryCache");
         Intrinsics.checkNotNullParameter(cacheKeyFactory, "cacheKeyFactory");

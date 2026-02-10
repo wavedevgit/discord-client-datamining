@@ -11,44 +11,44 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f17669e;
+    public static final a f17809e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final j f17670i = new j("Rive", 0, "rive");
+    public static final j f17810i = new j("Rive", 0, "rive");
 
     /* renamed from: o  reason: collision with root package name */
-    public static final j f17671o = new j("Canvas", 1, "canvas");
+    public static final j f17811o = new j("Canvas", 1, "canvas");
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ j[] f17672p;
+    private static final /* synthetic */ j[] f17812p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f17673q;
+    private static final /* synthetic */ EnumEntries f17813q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f17674d;
+    private final String f17814d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: com.rivereactnative.j$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public /* synthetic */ class C0213a {
+        public /* synthetic */ class C0240a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f17675a;
+            public static final /* synthetic */ int[] f17815a;
 
             static {
                 int[] iArr = new int[j.values().length];
                 try {
-                    iArr[j.f17670i.ordinal()] = 1;
+                    iArr[j.f17810i.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[j.f17671o.ordinal()] = 2;
+                    iArr[j.f17811o.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
-                f17675a = iArr;
+                f17815a = iArr;
             }
         }
 
@@ -60,7 +60,7 @@ public final class j {
             j[] values;
             Intrinsics.checkNotNullParameter(rendererType, "rendererType");
             for (j jVar : j.values()) {
-                if (Intrinsics.areEqual(jVar.f17674d, rendererType)) {
+                if (Intrinsics.areEqual(jVar.f17814d, rendererType)) {
                     return jVar;
                 }
             }
@@ -69,12 +69,12 @@ public final class j {
 
         public final RendererType b(j rnRendererType) {
             Intrinsics.checkNotNullParameter(rnRendererType, "rnRendererType");
-            int i10 = C0213a.f17675a[rnRendererType.ordinal()];
+            int i10 = C0240a.f17815a[rnRendererType.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return RendererType.Canvas;
                 }
-                throw new qr.p();
+                throw new rr.p();
             }
             return RendererType.Rive;
         }
@@ -85,17 +85,17 @@ public final class j {
 
     static {
         j[] a10 = a();
-        f17672p = a10;
-        f17673q = xr.a.a(a10);
-        f17669e = new a(null);
+        f17812p = a10;
+        f17813q = yr.a.a(a10);
+        f17809e = new a(null);
     }
 
     private j(String str, int i10, String str2) {
-        this.f17674d = str2;
+        this.f17814d = str2;
     }
 
     private static final /* synthetic */ j[] a() {
-        return new j[]{f17670i, f17671o};
+        return new j[]{f17810i, f17811o};
     }
 
     public static j valueOf(String str) {
@@ -103,11 +103,11 @@ public final class j {
     }
 
     public static j[] values() {
-        return (j[]) f17672p.clone();
+        return (j[]) f17812p.clone();
     }
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f17674d;
+        return this.f17814d;
     }
 }

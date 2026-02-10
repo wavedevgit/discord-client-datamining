@@ -1,49 +1,19 @@
 package hg;
 
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
+import android.os.Build;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a implements IInterface {
+public abstract class a {
 
-    /* renamed from: c  reason: collision with root package name */
-    private final IBinder f25998c;
+    /* renamed from: a  reason: collision with root package name */
+    public static final int f26124a;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f25999d;
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public a(IBinder iBinder, String str) {
-        this.f25998c = iBinder;
-        this.f25999d = str;
-    }
-
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this.f25998c;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final Parcel e(int i10, Parcel parcel) {
-        Parcel obtain = Parcel.obtain();
-        try {
-            try {
-                this.f25998c.transact(i10, parcel, obtain, 0);
-                obtain.readException();
-                return obtain;
-            } catch (RuntimeException e10) {
-                obtain.recycle();
-                throw e10;
-            }
-        } finally {
-            parcel.recycle();
+    static {
+        int i10;
+        if (Build.VERSION.SDK_INT >= 31) {
+            i10 = 33554432;
+        } else {
+            i10 = 0;
         }
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final Parcel f() {
-        Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f25999d);
-        return obtain;
+        f26124a = i10;
     }
 }

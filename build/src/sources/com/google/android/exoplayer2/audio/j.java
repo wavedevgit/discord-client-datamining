@@ -6,22 +6,22 @@ import java.nio.ByteBuffer;
 final class j extends i {
 
     /* renamed from: i  reason: collision with root package name */
-    private int[] f12179i;
+    private int[] f12319i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int[] f12180j;
+    private int[] f12320j;
 
     @Override // com.google.android.exoplayer2.audio.d
     public void c(ByteBuffer byteBuffer) {
-        int[] iArr = (int[]) ne.a.e(this.f12180j);
+        int[] iArr = (int[]) oe.a.e(this.f12320j);
         int position = byteBuffer.position();
         int limit = byteBuffer.limit();
-        ByteBuffer l10 = l(((limit - position) / this.f12172b.f12123d) * this.f12173c.f12123d);
+        ByteBuffer l10 = l(((limit - position) / this.f12312b.f12263d) * this.f12313c.f12263d);
         while (position < limit) {
             for (int i10 : iArr) {
                 l10.putShort(byteBuffer.getShort((i10 * 2) + position));
             }
-            position += this.f12172b.f12123d;
+            position += this.f12312b.f12263d;
         }
         byteBuffer.position(limit);
         l10.flip();
@@ -31,19 +31,19 @@ final class j extends i {
     public d.a h(d.a aVar) {
         boolean z10;
         boolean z11;
-        int[] iArr = this.f12179i;
+        int[] iArr = this.f12319i;
         if (iArr == null) {
-            return d.a.f12119e;
+            return d.a.f12259e;
         }
-        if (aVar.f12122c == 2) {
-            if (aVar.f12121b != iArr.length) {
+        if (aVar.f12262c == 2) {
+            if (aVar.f12261b != iArr.length) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             for (int i10 = 0; i10 < iArr.length; i10++) {
                 int i11 = iArr[i10];
-                if (i11 < aVar.f12121b) {
+                if (i11 < aVar.f12261b) {
                     if (i11 != i10) {
                         z11 = true;
                     } else {
@@ -55,25 +55,25 @@ final class j extends i {
                 }
             }
             if (z10) {
-                return new d.a(aVar.f12120a, iArr.length, 2);
+                return new d.a(aVar.f12260a, iArr.length, 2);
             }
-            return d.a.f12119e;
+            return d.a.f12259e;
         }
         throw new d.b(aVar);
     }
 
     @Override // com.google.android.exoplayer2.audio.i
     protected void i() {
-        this.f12180j = this.f12179i;
+        this.f12320j = this.f12319i;
     }
 
     @Override // com.google.android.exoplayer2.audio.i
     protected void k() {
-        this.f12180j = null;
-        this.f12179i = null;
+        this.f12320j = null;
+        this.f12319i = null;
     }
 
     public void m(int[] iArr) {
-        this.f12179i = iArr;
+        this.f12319i = iArr;
     }
 }

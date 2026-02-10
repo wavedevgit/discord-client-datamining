@@ -1,23 +1,37 @@
 package dp;
 
-import br.h;
-import dp.e;
+import androidx.activity.result.ActivityResultLauncher;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements e.a {
+public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f21015a;
+    private final ActivityResultLauncher f20934a;
 
-    g(f fVar) {
-        this.f21015a = fVar;
+    /* renamed from: b  reason: collision with root package name */
+    private final ActivityResultLauncher f20935b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final ActivityResultLauncher f20936c;
+
+    public g(ActivityResultLauncher pictureLaunchResultLauncher, ActivityResultLauncher openDocumentsResultLauncher, ActivityResultLauncher selectFromPhotoLibraryLauncher) {
+        Intrinsics.checkNotNullParameter(pictureLaunchResultLauncher, "pictureLaunchResultLauncher");
+        Intrinsics.checkNotNullParameter(openDocumentsResultLauncher, "openDocumentsResultLauncher");
+        Intrinsics.checkNotNullParameter(selectFromPhotoLibraryLauncher, "selectFromPhotoLibraryLauncher");
+        this.f20934a = pictureLaunchResultLauncher;
+        this.f20935b = openDocumentsResultLauncher;
+        this.f20936c = selectFromPhotoLibraryLauncher;
     }
 
-    public static h b(f fVar) {
-        return br.e.a(new g(fVar));
+    public final ActivityResultLauncher a() {
+        return this.f20935b;
     }
 
-    @Override // dp.e.a
-    public e a(String str) {
-        return this.f21015a.b(str);
+    public final ActivityResultLauncher b() {
+        return this.f20936c;
+    }
+
+    public final ActivityResultLauncher c() {
+        return this.f20934a;
     }
 }

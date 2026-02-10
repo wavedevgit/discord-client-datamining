@@ -9,10 +9,10 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 public final class m4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f15895a;
+    private final Context f16035a;
 
     public m4(Context context) {
-        this.f15895a = context;
+        this.f16035a = context;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -30,6 +30,6 @@ public final class m4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Context a() {
-        return this.f15895a;
+        return this.f16035a;
     }
 }

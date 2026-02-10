@@ -38,7 +38,7 @@ public final class SpannableStringBuilderExtensionsKt {
         Intrinsics.checkNotNullParameter(spannableStringBuilder, "<this>");
         Object[] spans = spannableStringBuilder.getSpans(0, spannableStringBuilder.length(), Object.class);
         Intrinsics.checkNotNullExpressionValue(spans, "getSpans(...)");
-        return i.v0(spans, null, null, null, 0, null, new Function1() { // from class: d8.e
+        return i.v0(spans, null, null, null, 0, null, new Function1() { // from class: e8.e
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 CharSequence debugSpans$lambda$7;

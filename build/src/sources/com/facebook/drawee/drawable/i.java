@@ -50,12 +50,12 @@ public class i extends l {
                 Bitmap bitmap = this.Q;
                 Shader.TileMode tileMode = Shader.TileMode.CLAMP;
                 paint.setShader(new BitmapShader(bitmap, tileMode, tileMode));
-                this.f9991q = true;
+                this.f10131q = true;
             }
         }
-        if (this.f9991q && (shader = this.O.getShader()) != null) {
+        if (this.f10131q && (shader = this.O.getShader()) != null) {
             shader.setLocalMatrix(this.I);
-            this.f9991q = false;
+            this.f10131q = false;
         }
         this.O.setFilterBitmap(i());
     }
@@ -67,13 +67,13 @@ public class i extends l {
 
     @Override // com.facebook.drawee.drawable.l, android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        if (ya.b.d()) {
-            ya.b.a("RoundedBitmapDrawable#draw");
+        if (za.b.d()) {
+            za.b.a("RoundedBitmapDrawable#draw");
         }
         if (!k()) {
             super.draw(canvas);
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
                 return;
             }
             return;
@@ -86,20 +86,20 @@ public class i extends l {
         if (!this.S && this.T != null) {
             int save2 = canvas.save();
             canvas.clipRect(this.T);
-            canvas.drawPath(this.f9990p, this.O);
+            canvas.drawPath(this.f10130p, this.O);
             canvas.restoreToCount(save2);
         } else {
-            canvas.drawPath(this.f9990p, this.O);
+            canvas.drawPath(this.f10130p, this.O);
         }
-        float f10 = this.f9989o;
+        float f10 = this.f10129o;
         if (f10 > 0.0f) {
             this.P.setStrokeWidth(f10);
-            this.P.setColor(d.c(this.f9992r, this.O.getAlpha()));
-            canvas.drawPath(this.f9993s, this.P);
+            this.P.setColor(d.c(this.f10132r, this.O.getAlpha()));
+            canvas.drawPath(this.f10133s, this.P);
         }
         canvas.restoreToCount(save);
-        if (ya.b.d()) {
-            ya.b.b();
+        if (za.b.d()) {
+            za.b.b();
         }
     }
 
@@ -120,7 +120,7 @@ public class i extends l {
             if (this.T == null) {
                 this.T = new RectF();
             }
-            this.I.mapRect(this.T, this.f9999y);
+            this.I.mapRect(this.T, this.f10139y);
         }
     }
 

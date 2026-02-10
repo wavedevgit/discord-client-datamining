@@ -8,27 +8,27 @@ import java.util.Arrays;
 final class f1 extends FilterInputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private final e3 f15738d;
+    private final e3 f15878d;
 
     /* renamed from: e  reason: collision with root package name */
-    private byte[] f15739e;
+    private byte[] f15879e;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f15740i;
+    private long f15880i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f15741o;
+    private boolean f15881o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f15742p;
+    private boolean f15882p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f1(InputStream inputStream) {
         super(inputStream);
-        this.f15738d = new e3();
-        this.f15739e = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
-        this.f15741o = false;
-        this.f15742p = false;
+        this.f15878d = new e3();
+        this.f15879e = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
+        this.f15881o = false;
+        this.f15882p = false;
     }
 
     private final int n(byte[] bArr, int i10, int i11) {
@@ -36,55 +36,55 @@ final class f1 extends FilterInputStream {
     }
 
     private final boolean p(int i10) {
-        int n10 = n(this.f15739e, 0, i10);
+        int n10 = n(this.f15879e, 0, i10);
         if (n10 != i10) {
             int i11 = i10 - n10;
-            if (n(this.f15739e, n10, i11) != i11) {
-                this.f15738d.b(this.f15739e, 0, n10);
+            if (n(this.f15879e, n10, i11) != i11) {
+                this.f15878d.b(this.f15879e, 0, n10);
                 return false;
             }
         }
-        this.f15738d.b(this.f15739e, 0, i10);
+        this.f15878d.b(this.f15879e, 0, i10);
         return true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final long a() {
-        return this.f15740i;
+        return this.f15880i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final h4 g() {
         byte[] bArr;
-        if (this.f15740i > 0) {
+        if (this.f15880i > 0) {
             do {
-                bArr = this.f15739e;
+                bArr = this.f15879e;
             } while (read(bArr, 0, bArr.length) != -1);
-            if (this.f15741o && !this.f15742p) {
+            if (this.f15881o && !this.f15882p) {
                 if (!p(30)) {
-                    this.f15741o = true;
-                    return this.f15738d.c();
+                    this.f15881o = true;
+                    return this.f15878d.c();
                 }
-                h4 c10 = this.f15738d.c();
+                h4 c10 = this.f15878d.c();
                 if (c10.d()) {
-                    this.f15742p = true;
+                    this.f15882p = true;
                     return c10;
                 } else if (c10.b() != 4294967295L) {
-                    int a10 = this.f15738d.a() - 30;
-                    int length = this.f15739e.length;
+                    int a10 = this.f15878d.a() - 30;
+                    int length = this.f15879e.length;
                     long j10 = a10;
                     if (j10 > length) {
                         do {
                             length += length;
                         } while (length < j10);
-                        this.f15739e = Arrays.copyOf(this.f15739e, length);
+                        this.f15879e = Arrays.copyOf(this.f15879e, length);
                     }
                     if (!p(a10)) {
-                        this.f15741o = true;
-                        return this.f15738d.c();
+                        this.f15881o = true;
+                        return this.f15878d.c();
                     }
-                    h4 c11 = this.f15738d.c();
-                    this.f15740i = c11.b();
+                    h4 c11 = this.f15878d.c();
+                    this.f15880i = c11.b();
                     return c11;
                 } else {
                     throw new w1("Files bigger than 4GiB are not supported.");
@@ -92,19 +92,19 @@ final class f1 extends FilterInputStream {
             }
             return new v0(null, -1L, -1, false, false, null);
         }
-        if (this.f15741o) {
+        if (this.f15881o) {
         }
         return new v0(null, -1L, -1, false, false, null);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean k() {
-        return this.f15742p;
+        return this.f15882p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean m() {
-        return this.f15741o;
+        return this.f15881o;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
@@ -114,14 +114,14 @@ final class f1 extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final int read(byte[] bArr, int i10, int i11) {
-        long j10 = this.f15740i;
-        if (j10 <= 0 || this.f15741o) {
+        long j10 = this.f15880i;
+        if (j10 <= 0 || this.f15881o) {
             return -1;
         }
         int n10 = n(bArr, i10, (int) Math.min(j10, i11));
-        this.f15740i -= n10;
+        this.f15880i -= n10;
         if (n10 == 0) {
-            this.f15741o = true;
+            this.f15881o = true;
             return 0;
         }
         return n10;

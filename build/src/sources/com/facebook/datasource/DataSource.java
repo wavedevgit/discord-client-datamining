@@ -2,7 +2,7 @@ package com.facebook.datasource;
 
 import java.util.Map;
 import java.util.concurrent.Executor;
-import y8.e;
+import z8.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface DataSource {
     boolean a();

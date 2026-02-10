@@ -1,34 +1,58 @@
 package qg;
 
-import yi.c;
+import kotlin.jvm.internal.LongCompanionObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c9 implements yi.d {
+public final class c9 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c9 f47039a = new c9();
+    private Long f45545a;
 
-    static {
-        c.b a10 = yi.c.a("textEnhancementParam");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("autoWhiteBalanceEnabled");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = yi.c.a("lightnessEnhancementParam");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
+    /* renamed from: b  reason: collision with root package name */
+    private Long f45546b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private Long f45547c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private Long f45548d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private Long f45549e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private Long f45550f;
+
+    public final c9 a(Long l10) {
+        this.f45547c = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        return this;
     }
 
-    private c9() {
+    public final c9 b(Long l10) {
+        this.f45548d = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        return this;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    public final c9 c(Long l10) {
+        this.f45545a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        return this;
+    }
+
+    public final c9 d(Long l10) {
+        this.f45549e = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        return this;
+    }
+
+    public final c9 e(Long l10) {
+        this.f45546b = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        return this;
+    }
+
+    public final c9 f(Long l10) {
+        this.f45550f = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        return this;
+    }
+
+    public final e9 g() {
+        return new e9(this, null);
     }
 }

@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileConfirmThreadRemove.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun72831: for (var _fun72831_ip = 0;;) switch (_fun72831_ip) {
+        _fun72696: for (var _fun72696_ip = 0;;) switch (_fun72696_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.isForumPost;
@@ -67,13 +67,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var12.bind(var3)(var4);
                 var12 = var4.t;
                 if (var5) {
-                    _fun72831_ip = 141;
-                    continue _fun72831
+                    _fun72696_ip = 141;
+                    continue _fun72696
                 }
             case 131:
                 var4 = var12.ZPm8jN;
-                _fun72831_ip = 149;
-                continue _fun72831;
+                _fun72696_ip = 149;
+                continue _fun72696;
             case 141:
                 var4 = var12["8sKSjm"];
             case 149:
@@ -91,13 +91,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var12.bind(var3)(var4);
                 var4 = var4.t;
                 if (var5) {
-                    _fun72831_ip = 220;
-                    continue _fun72831
+                    _fun72696_ip = 220;
+                    continue _fun72696
                 }
             case 210:
                 var5 = var4["hL+Znb"];
-                _fun72831_ip = 228;
-                continue _fun72831;
+                _fun72696_ip = 228;
+                continue _fun72696;
             case 220:
                 var5 = var4["6UGfnx"];
             case 228:

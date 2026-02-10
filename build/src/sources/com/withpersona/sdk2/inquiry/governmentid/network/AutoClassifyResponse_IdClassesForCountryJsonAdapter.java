@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.governmentid.network;
 
-import an.c;
+import bn.c;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -18,25 +18,25 @@ import org.jetbrains.annotations.NotNull;
 public final class AutoClassifyResponse_IdClassesForCountryJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18618a;
+    private final m.b f18758a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18619b;
+    private final h f18759b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f18620c;
+    private final h f18760c;
 
     public AutoClassifyResponse_IdClassesForCountryJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("countryName", "countryCode", "idConfigs");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18618a = a10;
+        this.f18758a = a10;
         h f10 = moshi.f(String.class, x0.d(), "countryName");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18619b = f10;
+        this.f18759b = f10;
         h f11 = moshi.f(a0.j(List.class, Id.class), x0.d(), "idConfigs");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18620c = f11;
+        this.f18760c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -48,28 +48,28 @@ public final class AutoClassifyResponse_IdClassesForCountryJsonAdapter extends h
         String str2 = null;
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18618a);
+            int J = reader.J(this.f18758a);
             if (J != -1) {
                 if (J != 0) {
                     if (J != 1) {
-                        if (J == 2 && (list = (List) this.f18620c.fromJson(reader)) == null) {
+                        if (J == 2 && (list = (List) this.f18760c.fromJson(reader)) == null) {
                             throw c.x("idConfigs", "idConfigs", reader);
                         }
                     } else {
-                        str2 = (String) this.f18619b.fromJson(reader);
+                        str2 = (String) this.f18759b.fromJson(reader);
                         if (str2 == null) {
                             throw c.x("countryCode", "countryCode", reader);
                         }
                     }
                 } else {
-                    str = (String) this.f18619b.fromJson(reader);
+                    str = (String) this.f18759b.fromJson(reader);
                     if (str == null) {
                         throw c.x("countryName", "countryName", reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -92,11 +92,11 @@ public final class AutoClassifyResponse_IdClassesForCountryJsonAdapter extends h
         if (idClassesForCountry != null) {
             writer.k();
             writer.J("countryName");
-            this.f18619b.toJson(writer, idClassesForCountry.b());
+            this.f18759b.toJson(writer, idClassesForCountry.b());
             writer.J("countryCode");
-            this.f18619b.toJson(writer, idClassesForCountry.a());
+            this.f18759b.toJson(writer, idClassesForCountry.a());
             writer.J("idConfigs");
-            this.f18620c.toJson(writer, idClassesForCountry.c());
+            this.f18760c.toJson(writer, idClassesForCountry.c());
             writer.s();
             return;
         }

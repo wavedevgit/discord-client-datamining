@@ -67,7 +67,7 @@ public final class AnimatedPropertyType {
     static {
         AnimatedPropertyType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = xr.a.a($values);
+        $ENTRIES = yr.a.a($values);
         Companion = new Companion(null);
     }
 

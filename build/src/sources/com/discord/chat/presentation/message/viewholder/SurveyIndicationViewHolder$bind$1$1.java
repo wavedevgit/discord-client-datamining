@@ -20,7 +20,7 @@ public /* synthetic */ class SurveyIndicationViewHolder$bind$1$1 extends Functio
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         m728invokentcYbpo(((MessageId) obj).m1092unboximpl(), (LinkContentNode) obj2);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

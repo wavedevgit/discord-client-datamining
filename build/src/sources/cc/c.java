@@ -1,81 +1,23 @@
 package cc;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c {
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final c f7308c = new a().a();
-
-    /* renamed from: a  reason: collision with root package name */
-    private final long f7309a;
+public final class c implements b {
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f7310b;
+    private static final c f7351b = new c(null);
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a {
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f7352a;
 
-        /* renamed from: a  reason: collision with root package name */
-        private long f7311a = 0;
-
-        /* renamed from: b  reason: collision with root package name */
-        private b f7312b = b.REASON_UNKNOWN;
-
-        a() {
-        }
-
-        public c a() {
-            return new c(this.f7311a, this.f7312b);
-        }
-
-        public a b(long j10) {
-            this.f7311a = j10;
-            return this;
-        }
-
-        public a c(b bVar) {
-            this.f7312b = bVar;
-            return this;
-        }
+    private c(Object obj) {
+        this.f7352a = obj;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public enum b implements bj.c {
-        REASON_UNKNOWN(0),
-        MESSAGE_TOO_OLD(1),
-        CACHE_FULL(2),
-        PAYLOAD_TOO_BIG(3),
-        MAX_RETRIES_REACHED(4),
-        INVALID_PAYLOD(5),
-        SERVER_ERROR(6);
-        
-
-        /* renamed from: d  reason: collision with root package name */
-        private final int f7321d;
-
-        b(int i10) {
-            this.f7321d = i10;
-        }
-
-        @Override // bj.c
-        public int getNumber() {
-            return this.f7321d;
-        }
+    public static b a(Object obj) {
+        return new c(d.c(obj, "instance cannot be null"));
     }
 
-    c(long j10, b bVar) {
-        this.f7309a = j10;
-        this.f7310b = bVar;
-    }
-
-    public static a c() {
-        return new a();
-    }
-
-    public long a() {
-        return this.f7309a;
-    }
-
-    public b b() {
-        return this.f7310b;
+    @Override // javax.inject.Provider
+    public Object get() {
+        return this.f7352a;
     }
 }

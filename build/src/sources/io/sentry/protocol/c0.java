@@ -15,37 +15,37 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class c0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Long f28503d;
+    private Long f28703d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f28504e;
+    private Integer f28704e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28505i;
+    private String f28705i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f28506o;
+    private String f28706o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Boolean f28507p;
+    private Boolean f28707p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Boolean f28508q;
+    private Boolean f28708q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Boolean f28509r;
+    private Boolean f28709r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Boolean f28510s;
+    private Boolean f28710s;
 
     /* renamed from: t  reason: collision with root package name */
-    private b0 f28511t;
+    private b0 f28711t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Map f28512u;
+    private Map f28712u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f28513v;
+    private Map f28713v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -123,45 +123,45 @@ public final class c0 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        c0Var.f28509r = e3Var.y0();
+                        c0Var.f28709r = e3Var.w0();
                         break;
                     case 1:
-                        c0Var.f28504e = e3Var.j1();
+                        c0Var.f28704e = e3Var.g1();
                         break;
                     case 2:
-                        Map t12 = e3Var.t1(iLogger, new w6.a());
-                        if (t12 == null) {
+                        Map o12 = e3Var.o1(iLogger, new w6.a());
+                        if (o12 == null) {
                             break;
                         } else {
-                            c0Var.f28512u = new HashMap(t12);
+                            c0Var.f28712u = new HashMap(o12);
                             break;
                         }
                     case 3:
-                        c0Var.f28503d = e3Var.l1();
+                        c0Var.f28703d = e3Var.i1();
                         break;
                     case 4:
-                        c0Var.f28510s = e3Var.y0();
+                        c0Var.f28710s = e3Var.w0();
                         break;
                     case 5:
-                        c0Var.f28505i = e3Var.q1();
+                        c0Var.f28705i = e3Var.m1();
                         break;
                     case 6:
-                        c0Var.f28506o = e3Var.q1();
+                        c0Var.f28706o = e3Var.m1();
                         break;
                     case 7:
-                        c0Var.f28507p = e3Var.y0();
+                        c0Var.f28707p = e3Var.w0();
                         break;
                     case '\b':
-                        c0Var.f28508q = e3Var.y0();
+                        c0Var.f28708q = e3Var.w0();
                         break;
                     case '\t':
-                        c0Var.f28511t = (b0) e3Var.G0(iLogger, new b0.a());
+                        c0Var.f28711t = (b0) e3Var.E0(iLogger, new b0.a());
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.u1(iLogger, concurrentHashMap, o02);
+                        e3Var.p1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -172,82 +172,82 @@ public final class c0 implements w1 {
     }
 
     public void A(Map map) {
-        this.f28513v = map;
+        this.f28713v = map;
     }
 
     public Map k() {
-        return this.f28512u;
+        return this.f28712u;
     }
 
     public Long l() {
-        return this.f28503d;
+        return this.f28703d;
     }
 
     public String m() {
-        return this.f28505i;
+        return this.f28705i;
     }
 
     public b0 n() {
-        return this.f28511t;
+        return this.f28711t;
     }
 
     public Boolean o() {
-        return this.f28508q;
+        return this.f28708q;
     }
 
     public Boolean p() {
-        return this.f28510s;
+        return this.f28710s;
     }
 
     public void q(Boolean bool) {
-        this.f28507p = bool;
+        this.f28707p = bool;
     }
 
     public void r(Boolean bool) {
-        this.f28508q = bool;
+        this.f28708q = bool;
     }
 
     public void s(Boolean bool) {
-        this.f28509r = bool;
+        this.f28709r = bool;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28503d != null) {
-            f3Var.e(StackTraceHelper.ID_KEY).i(this.f28503d);
+        if (this.f28703d != null) {
+            f3Var.e(StackTraceHelper.ID_KEY).i(this.f28703d);
         }
-        if (this.f28504e != null) {
-            f3Var.e("priority").i(this.f28504e);
+        if (this.f28704e != null) {
+            f3Var.e("priority").i(this.f28704e);
         }
-        if (this.f28505i != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28505i);
+        if (this.f28705i != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28705i);
         }
-        if (this.f28506o != null) {
-            f3Var.e("state").f(this.f28506o);
+        if (this.f28706o != null) {
+            f3Var.e("state").f(this.f28706o);
         }
-        if (this.f28507p != null) {
-            f3Var.e("crashed").k(this.f28507p);
+        if (this.f28707p != null) {
+            f3Var.e("crashed").k(this.f28707p);
         }
-        if (this.f28508q != null) {
-            f3Var.e("current").k(this.f28508q);
+        if (this.f28708q != null) {
+            f3Var.e("current").k(this.f28708q);
         }
-        if (this.f28509r != null) {
-            f3Var.e("daemon").k(this.f28509r);
+        if (this.f28709r != null) {
+            f3Var.e("daemon").k(this.f28709r);
         }
-        if (this.f28510s != null) {
-            f3Var.e("main").k(this.f28510s);
+        if (this.f28710s != null) {
+            f3Var.e("main").k(this.f28710s);
         }
-        if (this.f28511t != null) {
-            f3Var.e("stacktrace").j(iLogger, this.f28511t);
+        if (this.f28711t != null) {
+            f3Var.e("stacktrace").j(iLogger, this.f28711t);
         }
-        if (this.f28512u != null) {
-            f3Var.e("held_locks").j(iLogger, this.f28512u);
+        if (this.f28712u != null) {
+            f3Var.e("held_locks").j(iLogger, this.f28712u);
         }
-        Map map = this.f28513v;
+        Map map = this.f28713v;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28513v.get(str);
+                Object obj = this.f28713v.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -256,30 +256,30 @@ public final class c0 implements w1 {
     }
 
     public void t(Map map) {
-        this.f28512u = map;
+        this.f28712u = map;
     }
 
     public void u(Long l10) {
-        this.f28503d = l10;
+        this.f28703d = l10;
     }
 
     public void v(Boolean bool) {
-        this.f28510s = bool;
+        this.f28710s = bool;
     }
 
     public void w(String str) {
-        this.f28505i = str;
+        this.f28705i = str;
     }
 
     public void x(Integer num) {
-        this.f28504e = num;
+        this.f28704e = num;
     }
 
     public void y(b0 b0Var) {
-        this.f28511t = b0Var;
+        this.f28711t = b0Var;
     }
 
     public void z(String str) {
-        this.f28506o = str;
+        this.f28706o = str;
     }
 }

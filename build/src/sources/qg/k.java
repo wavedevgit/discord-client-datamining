@@ -1,67 +1,62 @@
 package qg;
 
-import java.util.List;
-import java.util.ListIterator;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class k extends i implements ListIterator {
+public final class k extends x0 {
 
-    /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ l f47352o;
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ q f45951e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public k(l lVar) {
-        super(lVar);
-        this.f47352o = lVar;
+    public k(q qVar, Map map) {
+        super(map);
+        this.f45951e = qVar;
     }
 
-    @Override // java.util.ListIterator
-    public final void add(Object obj) {
-        int i10;
-        boolean isEmpty = this.f47352o.isEmpty();
-        a();
-        ((ListIterator) this.f47136d).add(obj);
-        m mVar = this.f47352o.f47400q;
-        i10 = mVar.f47423o;
-        mVar.f47423o = i10 + 1;
-        if (isEmpty) {
-            this.f47352o.b();
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final void clear() {
+        t0.a(iterator());
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean containsAll(Collection collection) {
+        return this.f46454d.keySet().containsAll(collection);
+    }
+
+    @Override // java.util.AbstractSet, java.util.Collection, java.util.Set
+    public final boolean equals(Object obj) {
+        if (this != obj && !this.f46454d.keySet().equals(obj)) {
+            return false;
         }
+        return true;
     }
 
-    @Override // java.util.ListIterator
-    public final boolean hasPrevious() {
-        a();
-        return ((ListIterator) this.f47136d).hasPrevious();
+    @Override // java.util.AbstractSet, java.util.Collection, java.util.Set
+    public final int hashCode() {
+        return this.f46454d.keySet().hashCode();
     }
 
-    @Override // java.util.ListIterator
-    public final int nextIndex() {
-        a();
-        return ((ListIterator) this.f47136d).nextIndex();
+    @Override // qg.x0, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    public final Iterator iterator() {
+        return new j(this, this.f46454d.entrySet().iterator());
     }
 
-    @Override // java.util.ListIterator
-    public final Object previous() {
-        a();
-        return ((ListIterator) this.f47136d).previous();
-    }
-
-    @Override // java.util.ListIterator
-    public final int previousIndex() {
-        a();
-        return ((ListIterator) this.f47136d).previousIndex();
-    }
-
-    @Override // java.util.ListIterator
-    public final void set(Object obj) {
-        a();
-        ((ListIterator) this.f47136d).set(obj);
-    }
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public k(l lVar, int i10) {
-        super(lVar, ((List) lVar.f47187e).listIterator(i10));
-        this.f47352o = lVar;
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean remove(Object obj) {
+        Collection collection = (Collection) this.f46454d.remove(obj);
+        if (collection != null) {
+            int size = collection.size();
+            collection.clear();
+            q.l(this.f45951e, size);
+            if (size > 0) {
+                return true;
+            }
+            return false;
+        }
+        return false;
     }
 }

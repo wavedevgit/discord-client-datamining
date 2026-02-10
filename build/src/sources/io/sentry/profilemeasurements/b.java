@@ -16,16 +16,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f28448d;
+    private Map f28648d;
 
     /* renamed from: e  reason: collision with root package name */
-    private double f28449e;
+    private double f28649e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28450i;
+    private String f28650i;
 
     /* renamed from: o  reason: collision with root package name */
-    private double f28451o;
+    private double f28651o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -62,20 +62,20 @@ public final class b implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        String q12 = e3Var.q1();
-                        if (q12 == null) {
+                        String m12 = e3Var.m1();
+                        if (m12 == null) {
                             break;
                         } else {
-                            bVar.f28450i = q12;
+                            bVar.f28650i = m12;
                             break;
                         }
                     case 1:
                         try {
                             d10 = e3Var.n0();
                         } catch (NumberFormatException unused) {
-                            Date u02 = e3Var.u0(iLogger);
-                            if (u02 != null) {
-                                d10 = Double.valueOf(k.b(u02));
+                            Date s02 = e3Var.s0(iLogger);
+                            if (s02 != null) {
+                                d10 = Double.valueOf(k.b(s02));
                             } else {
                                 d10 = null;
                             }
@@ -83,7 +83,7 @@ public final class b implements w1 {
                         if (d10 == null) {
                             break;
                         } else {
-                            bVar.f28449e = d10.doubleValue();
+                            bVar.f28649e = d10.doubleValue();
                             break;
                         }
                     case 2:
@@ -91,14 +91,14 @@ public final class b implements w1 {
                         if (n02 == null) {
                             break;
                         } else {
-                            bVar.f28451o = n02.doubleValue();
+                            bVar.f28651o = n02.doubleValue();
                             break;
                         }
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.u1(iLogger, concurrentHashMap, o02);
+                        e3Var.p1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -117,7 +117,7 @@ public final class b implements w1 {
     }
 
     public void e(Map map) {
-        this.f28448d = map;
+        this.f28648d = map;
     }
 
     public boolean equals(Object obj) {
@@ -126,7 +126,7 @@ public final class b implements w1 {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (y.a(this.f28448d, bVar.f28448d) && this.f28450i.equals(bVar.f28450i) && this.f28451o == bVar.f28451o && this.f28449e == bVar.f28449e) {
+            if (y.a(this.f28648d, bVar.f28648d) && this.f28650i.equals(bVar.f28650i) && this.f28651o == bVar.f28651o && this.f28649e == bVar.f28649e) {
                 return true;
             }
         }
@@ -134,19 +134,19 @@ public final class b implements w1 {
     }
 
     public int hashCode() {
-        return y.b(this.f28448d, this.f28450i, Double.valueOf(this.f28451o));
+        return y.b(this.f28648d, this.f28650i, Double.valueOf(this.f28651o));
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("value").j(iLogger, Double.valueOf(this.f28451o));
-        f3Var.e("elapsed_since_start_ns").j(iLogger, this.f28450i);
-        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28449e)));
-        Map map = this.f28448d;
+        f3Var.e("value").j(iLogger, Double.valueOf(this.f28651o));
+        f3Var.e("elapsed_since_start_ns").j(iLogger, this.f28650i);
+        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28649e)));
+        Map map = this.f28648d;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28448d.get(str);
+                Object obj = this.f28648d.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -155,8 +155,8 @@ public final class b implements w1 {
     }
 
     public b(Long l10, Number number, long j10) {
-        this.f28450i = l10.toString();
-        this.f28451o = number.doubleValue();
-        this.f28449e = k.m(j10);
+        this.f28650i = l10.toString();
+        this.f28651o = number.doubleValue();
+        this.f28649e = k.m(j10);
     }
 }

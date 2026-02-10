@@ -12,37 +12,37 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f43155e = new b(null);
+    public static final b f42282e = new b(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final c[] f43156f;
+    private static final c[] f42283f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final c[] f43157g;
+    private static final c[] f42284g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final d f43158h;
+    public static final d f42285h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final d f43159i;
+    public static final d f42286i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final d f43160j;
+    public static final d f42287j;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final d f43161k;
+    public static final d f42288k;
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f43162a;
+    private final boolean f42289a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f43163b;
+    private final boolean f42290b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String[] f43164c;
+    private final String[] f42291c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String[] f43165d;
+    private final String[] f42292d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class b {
@@ -55,60 +55,60 @@ public final class d {
     }
 
     static {
-        c cVar = c.f43127o1;
-        c cVar2 = c.f43130p1;
-        c cVar3 = c.f43133q1;
-        c cVar4 = c.f43085a1;
-        c cVar5 = c.f43097e1;
-        c cVar6 = c.f43088b1;
-        c cVar7 = c.f43100f1;
-        c cVar8 = c.f43118l1;
-        c cVar9 = c.f43115k1;
+        c cVar = c.f42254o1;
+        c cVar2 = c.f42257p1;
+        c cVar3 = c.f42260q1;
+        c cVar4 = c.f42212a1;
+        c cVar5 = c.f42224e1;
+        c cVar6 = c.f42215b1;
+        c cVar7 = c.f42227f1;
+        c cVar8 = c.f42245l1;
+        c cVar9 = c.f42242k1;
         c[] cVarArr = {cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7, cVar8, cVar9};
-        f43156f = cVarArr;
-        c[] cVarArr2 = {cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7, cVar8, cVar9, c.L0, c.M0, c.f43111j0, c.f43114k0, c.H, c.L, c.f43116l};
-        f43157g = cVarArr2;
+        f42283f = cVarArr;
+        c[] cVarArr2 = {cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7, cVar8, cVar9, c.L0, c.M0, c.f42238j0, c.f42241k0, c.H, c.L, c.f42243l};
+        f42284g = cVarArr2;
         a c10 = new a(true).c((c[]) Arrays.copyOf(cVarArr, cVarArr.length));
         h hVar = h.TLS_1_3;
         h hVar2 = h.TLS_1_2;
-        f43158h = c10.f(hVar, hVar2).d(true).a();
-        f43159i = new a(true).c((c[]) Arrays.copyOf(cVarArr2, cVarArr2.length)).f(hVar, hVar2).d(true).a();
-        f43160j = new a(true).c((c[]) Arrays.copyOf(cVarArr2, cVarArr2.length)).f(hVar, hVar2, h.TLS_1_1, h.TLS_1_0).d(true).a();
-        f43161k = new a(false).a();
+        f42285h = c10.f(hVar, hVar2).d(true).a();
+        f42286i = new a(true).c((c[]) Arrays.copyOf(cVarArr2, cVarArr2.length)).f(hVar, hVar2).d(true).a();
+        f42287j = new a(true).c((c[]) Arrays.copyOf(cVarArr2, cVarArr2.length)).f(hVar, hVar2, h.TLS_1_1, h.TLS_1_0).d(true).a();
+        f42288k = new a(false).a();
     }
 
     public d(boolean z10, boolean z11, String[] strArr, String[] strArr2) {
-        this.f43162a = z10;
-        this.f43163b = z11;
-        this.f43164c = strArr;
-        this.f43165d = strArr2;
+        this.f42289a = z10;
+        this.f42290b = z11;
+        this.f42291c = strArr;
+        this.f42292d = strArr2;
     }
 
     private final d g(SSLSocket sSLSocket, boolean z10) {
         String[] cipherSuitesIntersection;
         String[] tlsVersionsIntersection;
-        if (this.f43164c != null) {
+        if (this.f42291c != null) {
             String[] enabledCipherSuites = sSLSocket.getEnabledCipherSuites();
             Intrinsics.checkNotNullExpressionValue(enabledCipherSuites, "sslSocket.enabledCipherSuites");
-            cipherSuitesIntersection = cu.e.E(enabledCipherSuites, this.f43164c, c.f43086b.c());
+            cipherSuitesIntersection = du.e.E(enabledCipherSuites, this.f42291c, c.f42213b.c());
         } else {
             cipherSuitesIntersection = sSLSocket.getEnabledCipherSuites();
         }
-        if (this.f43165d != null) {
+        if (this.f42292d != null) {
             String[] enabledProtocols = sSLSocket.getEnabledProtocols();
             Intrinsics.checkNotNullExpressionValue(enabledProtocols, "sslSocket.enabledProtocols");
-            tlsVersionsIntersection = cu.e.E(enabledProtocols, this.f43165d, tr.a.f());
+            tlsVersionsIntersection = du.e.E(enabledProtocols, this.f42292d, ur.a.f());
         } else {
             tlsVersionsIntersection = sSLSocket.getEnabledProtocols();
         }
         String[] supportedCipherSuites = sSLSocket.getSupportedCipherSuites();
         Intrinsics.checkNotNullExpressionValue(supportedCipherSuites, "supportedCipherSuites");
-        int x10 = cu.e.x(supportedCipherSuites, "TLS_FALLBACK_SCSV", c.f43086b.c());
+        int x10 = du.e.x(supportedCipherSuites, "TLS_FALLBACK_SCSV", c.f42213b.c());
         if (z10 && x10 != -1) {
             Intrinsics.checkNotNullExpressionValue(cipherSuitesIntersection, "cipherSuitesIntersection");
             String str = supportedCipherSuites[x10];
             Intrinsics.checkNotNullExpressionValue(str, "supportedCipherSuites[indexOfFallbackScsv]");
-            cipherSuitesIntersection = cu.e.o(cipherSuitesIntersection, str);
+            cipherSuitesIntersection = du.e.o(cipherSuitesIntersection, str);
         }
         a aVar = new a(this);
         Intrinsics.checkNotNullExpressionValue(cipherSuitesIntersection, "cipherSuitesIntersection");
@@ -121,19 +121,19 @@ public final class d {
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
         d g10 = g(sslSocket, z10);
         if (g10.i() != null) {
-            sslSocket.setEnabledProtocols(g10.f43165d);
+            sslSocket.setEnabledProtocols(g10.f42292d);
         }
         if (g10.d() != null) {
-            sslSocket.setEnabledCipherSuites(g10.f43164c);
+            sslSocket.setEnabledCipherSuites(g10.f42291c);
         }
     }
 
     public final List d() {
-        String[] strArr = this.f43164c;
+        String[] strArr = this.f42291c;
         if (strArr != null) {
             ArrayList arrayList = new ArrayList(strArr.length);
             for (String str : strArr) {
-                arrayList.add(c.f43086b.b(str));
+                arrayList.add(c.f42213b.b(str));
             }
             return CollectionsKt.h1(arrayList);
         }
@@ -142,15 +142,15 @@ public final class d {
 
     public final boolean e(SSLSocket socket) {
         Intrinsics.checkNotNullParameter(socket, "socket");
-        if (!this.f43162a) {
+        if (!this.f42289a) {
             return false;
         }
-        String[] strArr = this.f43165d;
-        if (strArr != null && !cu.e.u(strArr, socket.getEnabledProtocols(), tr.a.f())) {
+        String[] strArr = this.f42292d;
+        if (strArr != null && !du.e.u(strArr, socket.getEnabledProtocols(), ur.a.f())) {
             return false;
         }
-        String[] strArr2 = this.f43164c;
-        if (strArr2 != null && !cu.e.u(strArr2, socket.getEnabledCipherSuites(), c.f43086b.c())) {
+        String[] strArr2 = this.f42291c;
+        if (strArr2 != null && !du.e.u(strArr2, socket.getEnabledCipherSuites(), c.f42213b.c())) {
             return false;
         }
         return true;
@@ -163,29 +163,29 @@ public final class d {
         if (obj == this) {
             return true;
         }
-        boolean z10 = this.f43162a;
+        boolean z10 = this.f42289a;
         d dVar = (d) obj;
-        if (z10 != dVar.f43162a) {
+        if (z10 != dVar.f42289a) {
             return false;
         }
-        if (z10 && (!Arrays.equals(this.f43164c, dVar.f43164c) || !Arrays.equals(this.f43165d, dVar.f43165d) || this.f43163b != dVar.f43163b)) {
+        if (z10 && (!Arrays.equals(this.f42291c, dVar.f42291c) || !Arrays.equals(this.f42292d, dVar.f42292d) || this.f42290b != dVar.f42290b)) {
             return false;
         }
         return true;
     }
 
     public final boolean f() {
-        return this.f43162a;
+        return this.f42289a;
     }
 
     public final boolean h() {
-        return this.f43163b;
+        return this.f42290b;
     }
 
     public int hashCode() {
         int i10;
-        if (this.f43162a) {
-            String[] strArr = this.f43164c;
+        if (this.f42289a) {
+            String[] strArr = this.f42291c;
             int i11 = 0;
             if (strArr != null) {
                 i10 = Arrays.hashCode(strArr);
@@ -193,21 +193,21 @@ public final class d {
                 i10 = 0;
             }
             int i12 = (527 + i10) * 31;
-            String[] strArr2 = this.f43165d;
+            String[] strArr2 = this.f42292d;
             if (strArr2 != null) {
                 i11 = Arrays.hashCode(strArr2);
             }
-            return ((i12 + i11) * 31) + (!this.f43163b ? 1 : 0);
+            return ((i12 + i11) * 31) + (!this.f42290b ? 1 : 0);
         }
         return 17;
     }
 
     public final List i() {
-        String[] strArr = this.f43165d;
+        String[] strArr = this.f42292d;
         if (strArr != null) {
             ArrayList arrayList = new ArrayList(strArr.length);
             for (String str : strArr) {
-                arrayList.add(h.f43187e.a(str));
+                arrayList.add(h.f42314e.a(str));
             }
             return CollectionsKt.h1(arrayList);
         }
@@ -215,46 +215,46 @@ public final class d {
     }
 
     public String toString() {
-        if (!this.f43162a) {
+        if (!this.f42289a) {
             return "ConnectionSpec()";
         }
-        return "ConnectionSpec(cipherSuites=" + Objects.toString(d(), "[all enabled]") + ", tlsVersions=" + Objects.toString(i(), "[all enabled]") + ", supportsTlsExtensions=" + this.f43163b + ')';
+        return "ConnectionSpec(cipherSuites=" + Objects.toString(d(), "[all enabled]") + ", tlsVersions=" + Objects.toString(i(), "[all enabled]") + ", supportsTlsExtensions=" + this.f42290b + ')';
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f43166a;
+        private boolean f42293a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String[] f43167b;
+        private String[] f42294b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String[] f43168c;
+        private String[] f42295c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f43169d;
+        private boolean f42296d;
 
         public a(boolean z10) {
-            this.f43166a = z10;
+            this.f42293a = z10;
         }
 
         public final d a() {
-            return new d(this.f43166a, this.f43169d, this.f43167b, this.f43168c);
+            return new d(this.f42293a, this.f42296d, this.f42294b, this.f42295c);
         }
 
         public final a b(String... cipherSuites) {
             boolean z10;
             Intrinsics.checkNotNullParameter(cipherSuites, "cipherSuites");
-            if (this.f43166a) {
+            if (this.f42293a) {
                 if (cipherSuites.length == 0) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 if (!z10) {
-                    this.f43167b = (String[]) cipherSuites.clone();
+                    this.f42294b = (String[]) cipherSuites.clone();
                     return this;
                 }
                 throw new IllegalArgumentException("At least one cipher suite is required");
@@ -264,7 +264,7 @@ public final class d {
 
         public final a c(c... cipherSuites) {
             Intrinsics.checkNotNullParameter(cipherSuites, "cipherSuites");
-            if (this.f43166a) {
+            if (this.f42293a) {
                 ArrayList arrayList = new ArrayList(cipherSuites.length);
                 for (c cVar : cipherSuites) {
                     arrayList.add(cVar.c());
@@ -276,8 +276,8 @@ public final class d {
         }
 
         public final a d(boolean z10) {
-            if (this.f43166a) {
-                this.f43169d = z10;
+            if (this.f42293a) {
+                this.f42296d = z10;
                 return this;
             }
             throw new IllegalArgumentException("no TLS extensions for cleartext connections");
@@ -286,14 +286,14 @@ public final class d {
         public final a e(String... tlsVersions) {
             boolean z10;
             Intrinsics.checkNotNullParameter(tlsVersions, "tlsVersions");
-            if (this.f43166a) {
+            if (this.f42293a) {
                 if (tlsVersions.length == 0) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 if (!z10) {
-                    this.f43168c = (String[]) tlsVersions.clone();
+                    this.f42295c = (String[]) tlsVersions.clone();
                     return this;
                 }
                 throw new IllegalArgumentException("At least one TLS version is required");
@@ -303,7 +303,7 @@ public final class d {
 
         public final a f(h... tlsVersions) {
             Intrinsics.checkNotNullParameter(tlsVersions, "tlsVersions");
-            if (this.f43166a) {
+            if (this.f42293a) {
                 ArrayList arrayList = new ArrayList(tlsVersions.length);
                 for (h hVar : tlsVersions) {
                     arrayList.add(hVar.d());
@@ -316,10 +316,10 @@ public final class d {
 
         public a(d connectionSpec) {
             Intrinsics.checkNotNullParameter(connectionSpec, "connectionSpec");
-            this.f43166a = connectionSpec.f();
-            this.f43167b = connectionSpec.f43164c;
-            this.f43168c = connectionSpec.f43165d;
-            this.f43169d = connectionSpec.h();
+            this.f42293a = connectionSpec.f();
+            this.f42294b = connectionSpec.f42291c;
+            this.f42295c = connectionSpec.f42292d;
+            this.f42296d = connectionSpec.h();
         }
     }
 }

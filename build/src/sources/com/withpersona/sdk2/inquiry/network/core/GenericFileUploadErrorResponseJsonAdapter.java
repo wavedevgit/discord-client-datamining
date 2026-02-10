@@ -37,17 +37,17 @@ public final class GenericFileUploadErrorResponseJsonAdapter extends h {
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0 && (list = (List) this.listOfDocumentErrorResponseAdapter.fromJson(mVar)) == null) {
-                throw an.c.x("errors", "errors", mVar);
+                throw bn.c.x("errors", "errors", mVar);
             }
         }
         mVar.D();
         if (list != null) {
             return new GenericFileUploadErrorResponse(list);
         }
-        throw an.c.o("errors", "errors", mVar);
+        throw bn.c.o("errors", "errors", mVar);
     }
 
     @Override // com.squareup.moshi.h

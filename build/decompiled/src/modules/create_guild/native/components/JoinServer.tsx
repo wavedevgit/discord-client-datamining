@@ -53,10 +53,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.NAV_BAR_HEIGHT;
     var8.marginTop = var9;
     var3.contentContainer = var8;
-    var8 = {};
-    var9 = 8;
-    var8.marginLeft = var9;
-    var3.backButton = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
     var3 = 13;
@@ -66,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/create_guild/native/components/JoinServer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81207: for (var _fun81207_ip = 0;;) switch (_fun81207_ip) {
+        _fun81079: for (var _fun81079_ip = 0;;) switch (_fun81079_ip) {
             case 0:
                 var1 = arg0;
                 var13 = var1.initialRoute;
@@ -118,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var13;
                 var2[2] = var0;
                 var0 = function() { // Environment: var6
-                    _fun81208: for (var _fun81208_ip = 0;;) switch (_fun81208_ip) {
+                    _fun81080: for (var _fun81080_ip = 0;;) switch (_fun81080_ip) {
                         case 0:
                             var2 = _closure2_slot7;
                             var1 = var2.setOptions;
@@ -127,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure1_slot5;
                             var3 = var3.JOIN_SERVER;
                             if (!(var6 !== var3)) {
-                                _fun81208_ip = 80;
-                                continue _fun81208
+                                _fun81080_ip = 80;
+                                continue _fun81080
                             }
                         case 38:
                             var7 = _closure1_slot0;
@@ -145,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var3 = var6.bind(var7)(var3);
-                            _fun81208_ip = 120;
-                            continue _fun81208;
+                            _fun81080_ip = 120;
+                            continue _fun81080;
                         case 80:
                             var7 = _closure1_slot0;
                             var6 = _closure1_slot2;
@@ -205,8 +201,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.inviteString = var8;
                 var8 = null;
                 if (!var10) {
-                    _fun81207_ip = 368;
-                    continue _fun81207
+                    _fun81079_ip = 368;
+                    continue _fun81079
                 }
             case 311:
                 var12 = _closure1_slot0;
@@ -233,23 +229,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var4.onInviteChange = var7;
                 var6 = function() {
-                    _fun81212: for (var _fun81212_ip = 0;;) switch (_fun81212_ip) {
+                    _fun81084: for (var _fun81084_ip = 0;;) switch (_fun81084_ip) {
                         case 0:
                             var2 = _closure2_slot3;
                             var0 = var2.trim;
                             var3 = var0.bind(var2)();
                             var0 = '';
                             if (!(var0 === var3)) {
-                                _fun81212_ip = 43;
-                                continue _fun81212
+                                _fun81084_ip = 43;
+                                continue _fun81084
                             }
                         case 25:
                             var4 = _closure2_slot5;
                             var2 = undefined;
                             var0 = true;
                             var0 = var4.bind(var2)(var0);
-                            _fun81212_ip = 199;
-                            continue _fun81212;
+                            _fun81084_ip = 199;
+                            continue _fun81084;
                         case 43:
                             var2 = _closure2_slot6;
                             var5 = undefined;
@@ -274,8 +270,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var2 != var6;
                             var2 = 'Join Guild Modal';
                             if (!var6) {
-                                _fun81212_ip = 143;
-                                continue _fun81212
+                                _fun81084_ip = 143;
+                                continue _fun81084
                             }
                         case 139:
                             var2 = _closure2_slot2;
@@ -311,4 +307,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 7614, 33, 1297, 4703, 1469, 4705, 10336, 4736, 7613, 1234, 5949, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 7590, 33, 1297, 4703, 1469, 4705, 10315, 4736, 7589, 1234, 5950, 2]);

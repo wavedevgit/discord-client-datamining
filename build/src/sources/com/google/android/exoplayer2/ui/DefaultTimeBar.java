@@ -23,9 +23,9 @@ import java.util.Formatter;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.concurrent.CopyOnWriteArraySet;
-import ke.n;
 import kotlin.jvm.internal.LongCompanionObject;
-import ne.w0;
+import le.n;
+import oe.w0;
 @Deprecated
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class DefaultTimeBar extends View implements j {
@@ -54,58 +54,58 @@ public class DefaultTimeBar extends View implements j {
     private long W;
 
     /* renamed from: a0  reason: collision with root package name */
-    private int f13120a0;
+    private int f13260a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private long[] f13121b0;
+    private long[] f13261b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private boolean[] f13122c0;
+    private boolean[] f13262c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rect f13123d;
+    private final Rect f13263d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Rect f13124e;
+    private final Rect f13264e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Rect f13125i;
+    private final Rect f13265i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Rect f13126o;
+    private final Rect f13266o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Paint f13127p;
+    private final Paint f13267p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Paint f13128q;
+    private final Paint f13268q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Paint f13129r;
+    private final Paint f13269r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Paint f13130s;
+    private final Paint f13270s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Paint f13131t;
+    private final Paint f13271t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Paint f13132u;
+    private final Paint f13272u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Drawable f13133v;
+    private final Drawable f13273v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final int f13134w;
+    private final int f13274w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final int f13135x;
+    private final int f13275x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final int f13136y;
+    private final int f13276y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final int f13137z;
+    private final int f13277z;
 
     public DefaultTimeBar(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0);
@@ -114,7 +114,7 @@ public class DefaultTimeBar extends View implements j {
     public static /* synthetic */ void c(DefaultTimeBar defaultTimeBar, ValueAnimator valueAnimator) {
         defaultTimeBar.getClass();
         defaultTimeBar.Q = ((Float) valueAnimator.getAnimatedValue()).floatValue();
-        defaultTimeBar.invalidate(defaultTimeBar.f13123d);
+        defaultTimeBar.invalidate(defaultTimeBar.f13263d);
     }
 
     private static int e(float f10, int i10) {
@@ -126,10 +126,10 @@ public class DefaultTimeBar extends View implements j {
         if (this.U <= 0) {
             return;
         }
-        Rect rect = this.f13126o;
-        int q10 = w0.q(rect.right, rect.left, this.f13124e.right);
-        int centerY = this.f13126o.centerY();
-        Drawable drawable = this.f13133v;
+        Rect rect = this.f13266o;
+        int q10 = w0.q(rect.right, rect.left, this.f13264e.right);
+        int centerY = this.f13266o.centerY();
+        Drawable drawable = this.f13273v;
         if (drawable == null) {
             if (!this.S && !isFocused()) {
                 if (isEnabled()) {
@@ -140,55 +140,55 @@ public class DefaultTimeBar extends View implements j {
             } else {
                 i10 = this.C;
             }
-            canvas.drawCircle(q10, centerY, (int) ((i10 * this.Q) / 2.0f), this.f13132u);
+            canvas.drawCircle(q10, centerY, (int) ((i10 * this.Q) / 2.0f), this.f13272u);
             return;
         }
         int intrinsicWidth = ((int) (drawable.getIntrinsicWidth() * this.Q)) / 2;
-        int intrinsicHeight = ((int) (this.f13133v.getIntrinsicHeight() * this.Q)) / 2;
-        this.f13133v.setBounds(q10 - intrinsicWidth, centerY - intrinsicHeight, q10 + intrinsicWidth, centerY + intrinsicHeight);
-        this.f13133v.draw(canvas);
+        int intrinsicHeight = ((int) (this.f13273v.getIntrinsicHeight() * this.Q)) / 2;
+        this.f13273v.setBounds(q10 - intrinsicWidth, centerY - intrinsicHeight, q10 + intrinsicWidth, centerY + intrinsicHeight);
+        this.f13273v.draw(canvas);
     }
 
     private void g(Canvas canvas) {
         Paint paint;
-        int height = this.f13124e.height();
-        int centerY = this.f13124e.centerY() - (height / 2);
+        int height = this.f13264e.height();
+        int centerY = this.f13264e.centerY() - (height / 2);
         int i10 = height + centerY;
         if (this.U <= 0) {
-            Rect rect = this.f13124e;
-            canvas.drawRect(rect.left, centerY, rect.right, i10, this.f13129r);
+            Rect rect = this.f13264e;
+            canvas.drawRect(rect.left, centerY, rect.right, i10, this.f13269r);
             return;
         }
-        Rect rect2 = this.f13125i;
+        Rect rect2 = this.f13265i;
         int i11 = rect2.left;
         int i12 = rect2.right;
-        int max = Math.max(Math.max(this.f13124e.left, i12), this.f13126o.right);
-        int i13 = this.f13124e.right;
+        int max = Math.max(Math.max(this.f13264e.left, i12), this.f13266o.right);
+        int i13 = this.f13264e.right;
         if (max < i13) {
-            canvas.drawRect(max, centerY, i13, i10, this.f13129r);
+            canvas.drawRect(max, centerY, i13, i10, this.f13269r);
         }
-        int max2 = Math.max(i11, this.f13126o.right);
+        int max2 = Math.max(i11, this.f13266o.right);
         if (i12 > max2) {
-            canvas.drawRect(max2, centerY, i12, i10, this.f13128q);
+            canvas.drawRect(max2, centerY, i12, i10, this.f13268q);
         }
-        if (this.f13126o.width() > 0) {
-            Rect rect3 = this.f13126o;
-            canvas.drawRect(rect3.left, centerY, rect3.right, i10, this.f13127p);
+        if (this.f13266o.width() > 0) {
+            Rect rect3 = this.f13266o;
+            canvas.drawRect(rect3.left, centerY, rect3.right, i10, this.f13267p);
         }
-        if (this.f13120a0 != 0) {
-            long[] jArr = (long[]) ne.a.e(this.f13121b0);
-            boolean[] zArr = (boolean[]) ne.a.e(this.f13122c0);
-            int i14 = this.f13137z / 2;
-            for (int i15 = 0; i15 < this.f13120a0; i15++) {
+        if (this.f13260a0 != 0) {
+            long[] jArr = (long[]) oe.a.e(this.f13261b0);
+            boolean[] zArr = (boolean[]) oe.a.e(this.f13262c0);
+            int i14 = this.f13277z / 2;
+            for (int i15 = 0; i15 < this.f13260a0; i15++) {
                 long r10 = w0.r(jArr[i15], 0L, this.U);
-                Rect rect4 = this.f13124e;
-                int min = rect4.left + Math.min(rect4.width() - this.f13137z, Math.max(0, ((int) ((this.f13124e.width() * r10) / this.U)) - i14));
+                Rect rect4 = this.f13264e;
+                int min = rect4.left + Math.min(rect4.width() - this.f13277z, Math.max(0, ((int) ((this.f13264e.width() * r10) / this.U)) - i14));
                 if (zArr[i15]) {
-                    paint = this.f13131t;
+                    paint = this.f13271t;
                 } else {
-                    paint = this.f13130s;
+                    paint = this.f13270s;
                 }
-                canvas.drawRect(min, centerY, min + this.f13137z, i10, paint);
+                canvas.drawRect(min, centerY, min + this.f13277z, i10, paint);
             }
         }
     }
@@ -210,19 +210,19 @@ public class DefaultTimeBar extends View implements j {
     }
 
     private long getScrubberPosition() {
-        if (this.f13124e.width() > 0 && this.U != -9223372036854775807L) {
-            return (this.f13126o.width() * this.U) / this.f13124e.width();
+        if (this.f13264e.width() > 0 && this.U != -9223372036854775807L) {
+            return (this.f13266o.width() * this.U) / this.f13264e.width();
         }
         return 0L;
     }
 
     private boolean h(float f10, float f11) {
-        return this.f13123d.contains((int) f10, (int) f11);
+        return this.f13263d.contains((int) f10, (int) f11);
     }
 
     private void i(float f10) {
-        Rect rect = this.f13126o;
-        Rect rect2 = this.f13124e;
+        Rect rect = this.f13266o;
+        Rect rect2 = this.f13264e;
         rect.right = w0.q((int) f10, rect2.left, rect2.right);
     }
 
@@ -261,14 +261,14 @@ public class DefaultTimeBar extends View implements j {
     }
 
     private boolean m(Drawable drawable) {
-        if (w0.f39060a >= 23 && n(drawable, getLayoutDirection())) {
+        if (w0.f40711a >= 23 && n(drawable, getLayoutDirection())) {
             return true;
         }
         return false;
     }
 
     private static boolean n(Drawable drawable, int i10) {
-        if (w0.f39060a >= 23 && drawable.setLayoutDirection(i10)) {
+        if (w0.f40711a >= 23 && drawable.setLayoutDirection(i10)) {
             return true;
         }
         return false;
@@ -316,33 +316,33 @@ public class DefaultTimeBar extends View implements j {
 
     private void r() {
         long j10;
-        this.f13125i.set(this.f13124e);
-        this.f13126o.set(this.f13124e);
+        this.f13265i.set(this.f13264e);
+        this.f13266o.set(this.f13264e);
         if (this.S) {
             j10 = this.T;
         } else {
             j10 = this.V;
         }
         if (this.U > 0) {
-            Rect rect = this.f13125i;
-            Rect rect2 = this.f13124e;
-            rect.right = Math.min(rect2.left + ((int) ((this.f13124e.width() * this.W) / this.U)), rect2.right);
-            int width = (int) ((this.f13124e.width() * j10) / this.U);
-            Rect rect3 = this.f13126o;
-            Rect rect4 = this.f13124e;
+            Rect rect = this.f13265i;
+            Rect rect2 = this.f13264e;
+            rect.right = Math.min(rect2.left + ((int) ((this.f13264e.width() * this.W) / this.U)), rect2.right);
+            int width = (int) ((this.f13264e.width() * j10) / this.U);
+            Rect rect3 = this.f13266o;
+            Rect rect4 = this.f13264e;
             rect3.right = Math.min(rect4.left + width, rect4.right);
         } else {
-            Rect rect5 = this.f13125i;
-            int i10 = this.f13124e.left;
+            Rect rect5 = this.f13265i;
+            int i10 = this.f13264e.left;
             rect5.right = i10;
-            this.f13126o.right = i10;
+            this.f13266o.right = i10;
         }
-        invalidate(this.f13123d);
+        invalidate(this.f13263d);
     }
 
     private void s() {
-        Drawable drawable = this.f13133v;
-        if (drawable != null && drawable.isStateful() && this.f13133v.setState(getDrawableState())) {
+        Drawable drawable = this.f13273v;
+        if (drawable != null && drawable.isStateful() && this.f13273v.setState(getDrawableState())) {
             invalidate();
         }
     }
@@ -359,7 +359,7 @@ public class DefaultTimeBar extends View implements j {
 
     @Override // com.google.android.exoplayer2.ui.j
     public void a(j.a aVar) {
-        ne.a.e(aVar);
+        oe.a.e(aVar);
         this.I.add(aVar);
     }
 
@@ -371,10 +371,10 @@ public class DefaultTimeBar extends View implements j {
         } else {
             z10 = true;
         }
-        ne.a.a(z10);
-        this.f13120a0 = i10;
-        this.f13121b0 = jArr;
-        this.f13122c0 = zArr;
+        oe.a.a(z10);
+        this.f13260a0 = i10;
+        this.f13261b0 = jArr;
+        this.f13262c0 = zArr;
         r();
     }
 
@@ -386,7 +386,7 @@ public class DefaultTimeBar extends View implements j {
 
     @Override // com.google.android.exoplayer2.ui.j
     public long getPreferredUpdateDelay() {
-        int j10 = j(this.K, this.f13124e.width());
+        int j10 = j(this.K, this.f13264e.width());
         if (j10 != 0) {
             long j11 = this.U;
             if (j11 != 0 && j11 != -9223372036854775807L) {
@@ -400,7 +400,7 @@ public class DefaultTimeBar extends View implements j {
     @Override // android.view.View
     public void jumpDrawablesToCurrentState() {
         super.jumpDrawablesToCurrentState();
-        Drawable drawable = this.f13133v;
+        Drawable drawable = this.f13273v;
         if (drawable != null) {
             drawable.jumpToCurrentState();
         }
@@ -439,7 +439,7 @@ public class DefaultTimeBar extends View implements j {
         if (this.U <= 0) {
             return;
         }
-        if (w0.f39060a >= 21) {
+        if (w0.f40711a >= 21) {
             accessibilityNodeInfo.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_FORWARD);
             accessibilityNodeInfo.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_BACKWARD);
             return;
@@ -509,19 +509,19 @@ public class DefaultTimeBar extends View implements j {
         } else {
             i14 = this.D;
         }
-        if (this.f13136y == 1) {
-            i15 = (i18 - getPaddingBottom()) - this.f13135x;
-            int i19 = this.f13134w;
+        if (this.f13276y == 1) {
+            i15 = (i18 - getPaddingBottom()) - this.f13275x;
+            int i19 = this.f13274w;
             i16 = ((i18 - getPaddingBottom()) - i19) - Math.max(i14 - (i19 / 2), 0);
         } else {
-            i15 = (i18 - this.f13135x) / 2;
-            i16 = (i18 - this.f13134w) / 2;
+            i15 = (i18 - this.f13275x) / 2;
+            i16 = (i18 - this.f13274w) / 2;
         }
-        this.f13123d.set(paddingLeft, i15, paddingRight, this.f13135x + i15);
-        Rect rect = this.f13124e;
-        Rect rect2 = this.f13123d;
-        rect.set(rect2.left + i14, i16, rect2.right - i14, this.f13134w + i16);
-        if (w0.f39060a >= 29) {
+        this.f13263d.set(paddingLeft, i15, paddingRight, this.f13275x + i15);
+        Rect rect = this.f13264e;
+        Rect rect2 = this.f13263d;
+        rect.set(rect2.left + i14, i16, rect2.right - i14, this.f13274w + i16);
+        if (w0.f40711a >= 29) {
             o(i17, i18);
         }
         r();
@@ -532,9 +532,9 @@ public class DefaultTimeBar extends View implements j {
         int mode = View.MeasureSpec.getMode(i11);
         int size = View.MeasureSpec.getSize(i11);
         if (mode == 0) {
-            size = this.f13135x;
+            size = this.f13275x;
         } else if (mode != 1073741824) {
-            size = Math.min(this.f13135x, size);
+            size = Math.min(this.f13275x, size);
         }
         setMeasuredDimension(View.MeasureSpec.getSize(i10), size);
         s();
@@ -542,7 +542,7 @@ public class DefaultTimeBar extends View implements j {
 
     @Override // android.view.View
     public void onRtlPropertiesChanged(int i10) {
-        Drawable drawable = this.f13133v;
+        Drawable drawable = this.f13273v;
         if (drawable != null && n(drawable, i10)) {
             invalidate();
         }
@@ -652,13 +652,13 @@ public class DefaultTimeBar extends View implements j {
     }
 
     public void setAdMarkerColor(int i10) {
-        this.f13130s.setColor(i10);
-        invalidate(this.f13123d);
+        this.f13270s.setColor(i10);
+        invalidate(this.f13263d);
     }
 
     public void setBufferedColor(int i10) {
-        this.f13128q.setColor(i10);
-        invalidate(this.f13123d);
+        this.f13268q.setColor(i10);
+        invalidate(this.f13263d);
     }
 
     @Override // com.google.android.exoplayer2.ui.j
@@ -697,7 +697,7 @@ public class DefaultTimeBar extends View implements j {
         } else {
             z10 = false;
         }
-        ne.a.a(z10);
+        oe.a.a(z10);
         this.L = i10;
         this.M = -9223372036854775807L;
     }
@@ -709,19 +709,19 @@ public class DefaultTimeBar extends View implements j {
         } else {
             z10 = false;
         }
-        ne.a.a(z10);
+        oe.a.a(z10);
         this.L = -1;
         this.M = j10;
     }
 
     public void setPlayedAdMarkerColor(int i10) {
-        this.f13131t.setColor(i10);
-        invalidate(this.f13123d);
+        this.f13271t.setColor(i10);
+        invalidate(this.f13263d);
     }
 
     public void setPlayedColor(int i10) {
-        this.f13127p.setColor(i10);
-        invalidate(this.f13123d);
+        this.f13267p.setColor(i10);
+        invalidate(this.f13263d);
     }
 
     @Override // com.google.android.exoplayer2.ui.j
@@ -735,13 +735,13 @@ public class DefaultTimeBar extends View implements j {
     }
 
     public void setScrubberColor(int i10) {
-        this.f13132u.setColor(i10);
-        invalidate(this.f13123d);
+        this.f13272u.setColor(i10);
+        invalidate(this.f13263d);
     }
 
     public void setUnplayedColor(int i10) {
-        this.f13129r.setColor(i10);
-        invalidate(this.f13123d);
+        this.f13269r.setColor(i10);
+        invalidate(this.f13263d);
     }
 
     public DefaultTimeBar(Context context, AttributeSet attributeSet, int i10) {
@@ -754,22 +754,22 @@ public class DefaultTimeBar extends View implements j {
 
     public DefaultTimeBar(Context context, AttributeSet attributeSet, int i10, AttributeSet attributeSet2, int i11) {
         super(context, attributeSet, i10);
-        this.f13123d = new Rect();
-        this.f13124e = new Rect();
-        this.f13125i = new Rect();
-        this.f13126o = new Rect();
+        this.f13263d = new Rect();
+        this.f13264e = new Rect();
+        this.f13265i = new Rect();
+        this.f13266o = new Rect();
         Paint paint = new Paint();
-        this.f13127p = paint;
+        this.f13267p = paint;
         Paint paint2 = new Paint();
-        this.f13128q = paint2;
+        this.f13268q = paint2;
         Paint paint3 = new Paint();
-        this.f13129r = paint3;
+        this.f13269r = paint3;
         Paint paint4 = new Paint();
-        this.f13130s = paint4;
+        this.f13270s = paint4;
         Paint paint5 = new Paint();
-        this.f13131t = paint5;
+        this.f13271t = paint5;
         Paint paint6 = new Paint();
-        this.f13132u = paint6;
+        this.f13272u = paint6;
         paint6.setAntiAlias(true);
         this.I = new CopyOnWriteArraySet();
         this.J = new Point();
@@ -783,27 +783,27 @@ public class DefaultTimeBar extends View implements j {
         int e14 = e(f10, 0);
         int e15 = e(f10, 16);
         if (attributeSet2 != null) {
-            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet2, n.f31672e, i10, i11);
+            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet2, n.f35892e, i10, i11);
             try {
-                Drawable drawable = obtainStyledAttributes.getDrawable(n.f31683p);
-                this.f13133v = drawable;
+                Drawable drawable = obtainStyledAttributes.getDrawable(n.f35903p);
+                this.f13273v = drawable;
                 if (drawable != null) {
                     m(drawable);
                     e11 = Math.max(drawable.getMinimumHeight(), e11);
                 }
-                this.f13134w = obtainStyledAttributes.getDimensionPixelSize(n.f31676i, e10);
-                this.f13135x = obtainStyledAttributes.getDimensionPixelSize(n.f31685r, e11);
-                this.f13136y = obtainStyledAttributes.getInt(n.f31675h, 0);
-                this.f13137z = obtainStyledAttributes.getDimensionPixelSize(n.f31674g, e12);
-                this.A = obtainStyledAttributes.getDimensionPixelSize(n.f31684q, e13);
-                this.B = obtainStyledAttributes.getDimensionPixelSize(n.f31681n, e14);
-                this.C = obtainStyledAttributes.getDimensionPixelSize(n.f31682o, e15);
-                int i12 = obtainStyledAttributes.getInt(n.f31679l, -1);
-                int i13 = obtainStyledAttributes.getInt(n.f31680m, -1);
-                int i14 = obtainStyledAttributes.getInt(n.f31677j, -855638017);
-                int i15 = obtainStyledAttributes.getInt(n.f31686s, 872415231);
-                int i16 = obtainStyledAttributes.getInt(n.f31673f, -1291845888);
-                int i17 = obtainStyledAttributes.getInt(n.f31678k, 872414976);
+                this.f13274w = obtainStyledAttributes.getDimensionPixelSize(n.f35896i, e10);
+                this.f13275x = obtainStyledAttributes.getDimensionPixelSize(n.f35905r, e11);
+                this.f13276y = obtainStyledAttributes.getInt(n.f35895h, 0);
+                this.f13277z = obtainStyledAttributes.getDimensionPixelSize(n.f35894g, e12);
+                this.A = obtainStyledAttributes.getDimensionPixelSize(n.f35904q, e13);
+                this.B = obtainStyledAttributes.getDimensionPixelSize(n.f35901n, e14);
+                this.C = obtainStyledAttributes.getDimensionPixelSize(n.f35902o, e15);
+                int i12 = obtainStyledAttributes.getInt(n.f35899l, -1);
+                int i13 = obtainStyledAttributes.getInt(n.f35900m, -1);
+                int i14 = obtainStyledAttributes.getInt(n.f35897j, -855638017);
+                int i15 = obtainStyledAttributes.getInt(n.f35906s, 872415231);
+                int i16 = obtainStyledAttributes.getInt(n.f35893f, -1291845888);
+                int i17 = obtainStyledAttributes.getInt(n.f35898k, 872414976);
                 paint.setColor(i12);
                 paint6.setColor(i13);
                 paint2.setColor(i14);
@@ -816,10 +816,10 @@ public class DefaultTimeBar extends View implements j {
                 throw th2;
             }
         } else {
-            this.f13134w = e10;
-            this.f13135x = e11;
-            this.f13136y = 0;
-            this.f13137z = e12;
+            this.f13274w = e10;
+            this.f13275x = e11;
+            this.f13276y = 0;
+            this.f13277z = e12;
             this.A = e13;
             this.B = e14;
             this.C = e15;
@@ -829,18 +829,18 @@ public class DefaultTimeBar extends View implements j {
             paint3.setColor(872415231);
             paint4.setColor(-1291845888);
             paint5.setColor(872414976);
-            this.f13133v = null;
+            this.f13273v = null;
         }
         StringBuilder sb2 = new StringBuilder();
         this.F = sb2;
         this.G = new Formatter(sb2, Locale.getDefault());
-        this.H = new Runnable() { // from class: ke.c
+        this.H = new Runnable() { // from class: le.c
             @Override // java.lang.Runnable
             public final void run() {
                 DefaultTimeBar.this.q(false);
             }
         };
-        Drawable drawable2 = this.f13133v;
+        Drawable drawable2 = this.f13273v;
         if (drawable2 != null) {
             this.D = (drawable2.getMinimumWidth() + 1) / 2;
         } else {
@@ -849,7 +849,7 @@ public class DefaultTimeBar extends View implements j {
         this.Q = 1.0f;
         ValueAnimator valueAnimator = new ValueAnimator();
         this.P = valueAnimator;
-        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: ke.d
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: le.d
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
                 DefaultTimeBar.c(DefaultTimeBar.this, valueAnimator2);

@@ -1,34 +1,27 @@
 package gf;
-
-import android.os.Bundle;
-import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c1 extends r0 {
+final class c1 {
 
-    /* renamed from: g  reason: collision with root package name */
-    final /* synthetic */ c f25075g;
+    /* renamed from: a  reason: collision with root package name */
+    private final int f24278a;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c1(c cVar, int i10, Bundle bundle) {
-        super(cVar, i10, bundle);
-        Objects.requireNonNull(cVar);
-        this.f25075g = cVar;
+    /* renamed from: b  reason: collision with root package name */
+    private final com.google.android.gms.common.b f24279b;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c1(com.google.android.gms.common.b bVar, int i10) {
+        hf.q.l(bVar);
+        this.f24279b = bVar;
+        this.f24278a = i10;
     }
 
-    @Override // gf.r0
-    protected final boolean e() {
-        this.f25075g.A.a(com.google.android.gms.common.b.f13747q);
-        return true;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final int a() {
+        return this.f24278a;
     }
 
-    @Override // gf.r0
-    protected final void f(com.google.android.gms.common.b bVar) {
-        c cVar = this.f25075g;
-        if (cVar.s() && cVar.X()) {
-            cVar.W(16);
-            return;
-        }
-        cVar.A.a(bVar);
-        cVar.K(bVar);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final com.google.android.gms.common.b b() {
+        return this.f24279b;
     }
 }

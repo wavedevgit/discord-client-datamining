@@ -2,7 +2,7 @@ package com.facebook.jni;
 
 import com.facebook.jni.DestructorThread;
 import com.facebook.jni.annotations.DoNotStripAny;
-import nb.a;
+import ob.a;
 @DoNotStripAny
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class HybridData {

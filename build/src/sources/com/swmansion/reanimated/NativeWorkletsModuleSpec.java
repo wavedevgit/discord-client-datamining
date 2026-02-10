@@ -18,6 +18,6 @@ public abstract class NativeWorkletsModuleSpec extends ReactContextBaseJavaModul
     }
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    @fb.a
+    @gb.a
     public abstract boolean installTurboModule(String str);
 }

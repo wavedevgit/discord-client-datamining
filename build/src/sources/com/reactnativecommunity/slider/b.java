@@ -8,15 +8,15 @@ import com.facebook.react.views.textinput.ReactTextChangedEvent;
 public class b extends Event {
 
     /* renamed from: a  reason: collision with root package name */
-    private final double f17416a;
+    private final double f17556a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f17417b;
+    private final boolean f17557b;
 
     public b(int i10, double d10, boolean z10) {
         super(i10);
-        this.f17416a = d10;
-        this.f17417b = z10;
+        this.f17556a = d10;
+        this.f17557b = z10;
     }
 
     private WritableMap c() {
@@ -28,11 +28,11 @@ public class b extends Event {
     }
 
     public double a() {
-        return this.f17416a;
+        return this.f17556a;
     }
 
     public boolean b() {
-        return this.f17417b;
+        return this.f17557b;
     }
 
     @Override // com.facebook.react.uimanager.events.Event

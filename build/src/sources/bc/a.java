@@ -1,60 +1,95 @@
 package bc;
 
-import javax.inject.Provider;
+import bc.f;
+import java.util.Arrays;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a implements Provider {
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final Object f6507c = new Object();
+final class a extends f {
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile Provider f6508a;
+    private final Iterable f6435a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile Object f6509b = f6507c;
+    private final byte[] f6436b;
 
-    private a(Provider provider) {
-        this.f6508a = provider;
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    static final class b extends f.a {
 
-    public static Provider a(Provider provider) {
-        d.b(provider);
-        if (provider instanceof a) {
-            return provider;
-        }
-        return new a(provider);
-    }
+        /* renamed from: a  reason: collision with root package name */
+        private Iterable f6437a;
 
-    public static Object b(Object obj, Object obj2) {
-        if (obj != f6507c) {
-            if (obj == obj2) {
-                return obj2;
+        /* renamed from: b  reason: collision with root package name */
+        private byte[] f6438b;
+
+        @Override // bc.f.a
+        public f a() {
+            String str = "";
+            if (this.f6437a == null) {
+                str = " events";
             }
-            throw new IllegalStateException("Scoped provider was invoked recursively returning different results: " + obj + " & " + obj2 + ". This is likely due to a circular dependency.");
+            if (str.isEmpty()) {
+                return new a(this.f6437a, this.f6438b);
+            }
+            throw new IllegalStateException("Missing required properties:" + str);
         }
-        return obj2;
+
+        @Override // bc.f.a
+        public f.a b(Iterable iterable) {
+            if (iterable != null) {
+                this.f6437a = iterable;
+                return this;
+            }
+            throw new NullPointerException("Null events");
+        }
+
+        @Override // bc.f.a
+        public f.a c(byte[] bArr) {
+            this.f6438b = bArr;
+            return this;
+        }
     }
 
-    @Override // javax.inject.Provider
-    public Object get() {
-        Object obj;
-        Object obj2 = this.f6509b;
-        Object obj3 = f6507c;
-        if (obj2 == obj3) {
-            synchronized (this) {
-                try {
-                    obj = this.f6509b;
-                    if (obj == obj3) {
-                        obj = this.f6508a.get();
-                        this.f6509b = b(this.f6509b, obj);
-                        this.f6508a = null;
-                    }
-                } catch (Throwable th2) {
-                    throw th2;
+    @Override // bc.f
+    public Iterable b() {
+        return this.f6435a;
+    }
+
+    @Override // bc.f
+    public byte[] c() {
+        return this.f6436b;
+    }
+
+    public boolean equals(Object obj) {
+        byte[] c10;
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof f) {
+            f fVar = (f) obj;
+            if (this.f6435a.equals(fVar.b())) {
+                byte[] bArr = this.f6436b;
+                if (fVar instanceof a) {
+                    c10 = ((a) fVar).f6436b;
+                } else {
+                    c10 = fVar.c();
+                }
+                if (Arrays.equals(bArr, c10)) {
+                    return true;
                 }
             }
-            return obj;
         }
-        return obj2;
+        return false;
+    }
+
+    public int hashCode() {
+        return ((this.f6435a.hashCode() ^ 1000003) * 1000003) ^ Arrays.hashCode(this.f6436b);
+    }
+
+    public String toString() {
+        return "BackendRequest{events=" + this.f6435a + ", extras=" + Arrays.toString(this.f6436b) + "}";
+    }
+
+    private a(Iterable iterable, byte[] bArr) {
+        this.f6435a = iterable;
+        this.f6436b = bArr;
     }
 }

@@ -1,21 +1,35 @@
 package eb;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f21402a = new a();
-
-    private a() {
+public abstract class a {
+    public static void a(boolean z10) {
+        if (z10) {
+            return;
+        }
+        throw new AssertionError();
     }
 
-    public static final int a(int i10, Object obj) {
-        int i11;
-        int i12 = i10 * 31;
-        if (obj != null) {
-            i11 = obj.hashCode();
-        } else {
-            i11 = 0;
+    public static void b(boolean z10, String str) {
+        if (z10) {
+            return;
         }
-        return i12 + i11;
+        throw new AssertionError(str);
+    }
+
+    public static Object c(Object obj) {
+        if (obj != null) {
+            return obj;
+        }
+        throw new AssertionError();
+    }
+
+    public static Object d(Object obj, String str) {
+        if (obj != null) {
+            return obj;
+        }
+        throw new AssertionError(str);
+    }
+
+    public static Object e(Object obj) {
+        return obj;
     }
 }

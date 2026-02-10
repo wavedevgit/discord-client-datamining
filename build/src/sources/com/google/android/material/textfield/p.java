@@ -23,49 +23,49 @@ import kotlin.jvm.internal.LongCompanionObject;
 public class p extends s {
 
     /* renamed from: s  reason: collision with root package name */
-    private static final boolean f15468s = true;
+    private static final boolean f15608s = true;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f15469e;
+    private final int f15609e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f15470f;
+    private final int f15610f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final TimeInterpolator f15471g;
+    private final TimeInterpolator f15611g;
 
     /* renamed from: h  reason: collision with root package name */
-    private AutoCompleteTextView f15472h;
+    private AutoCompleteTextView f15612h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final View.OnClickListener f15473i;
+    private final View.OnClickListener f15613i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final View.OnFocusChangeListener f15474j;
+    private final View.OnFocusChangeListener f15614j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final c.a f15475k;
+    private final c.a f15615k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f15476l;
+    private boolean f15616l;
 
     /* renamed from: m  reason: collision with root package name */
-    private boolean f15477m;
+    private boolean f15617m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f15478n;
+    private boolean f15618n;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f15479o;
+    private long f15619o;
 
     /* renamed from: p  reason: collision with root package name */
-    private AccessibilityManager f15480p;
+    private AccessibilityManager f15620p;
 
     /* renamed from: q  reason: collision with root package name */
-    private ValueAnimator f15481q;
+    private ValueAnimator f15621q;
 
     /* renamed from: r  reason: collision with root package name */
-    private ValueAnimator f15482r;
+    private ValueAnimator f15622r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -76,35 +76,35 @@ public class p extends s {
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             p.this.r();
-            p.this.f15482r.start();
+            p.this.f15622r.start();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(r rVar) {
         super(rVar);
-        this.f15473i = new View.OnClickListener() { // from class: com.google.android.material.textfield.l
+        this.f15613i = new View.OnClickListener() { // from class: com.google.android.material.textfield.l
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 p.this.J();
             }
         };
-        this.f15474j = new View.OnFocusChangeListener() { // from class: com.google.android.material.textfield.m
+        this.f15614j = new View.OnFocusChangeListener() { // from class: com.google.android.material.textfield.m
             @Override // android.view.View.OnFocusChangeListener
             public final void onFocusChange(View view, boolean z10) {
                 p.y(p.this, view, z10);
             }
         };
-        this.f15475k = new c.a() { // from class: com.google.android.material.textfield.n
+        this.f15615k = new c.a() { // from class: com.google.android.material.textfield.n
             @Override // c2.c.a
             public final void onTouchExplorationStateChanged(boolean z10) {
                 p.w(p.this, z10);
             }
         };
-        this.f15479o = LongCompanionObject.MAX_VALUE;
-        this.f15470f = lh.g.f(rVar.getContext(), ah.b.L, 67);
-        this.f15469e = lh.g.f(rVar.getContext(), ah.b.L, 50);
-        this.f15471g = lh.g.g(rVar.getContext(), ah.b.Q, bh.a.f6754a);
+        this.f15619o = LongCompanionObject.MAX_VALUE;
+        this.f15610f = mh.g.f(rVar.getContext(), bh.b.L, 67);
+        this.f15609e = mh.g.f(rVar.getContext(), bh.b.L, 50);
+        this.f15611g = mh.g.g(rVar.getContext(), bh.b.Q, ch.a.f7595a);
     }
 
     public static /* synthetic */ void A(p pVar) {
@@ -121,7 +121,7 @@ public class p extends s {
 
     private ValueAnimator E(int i10, float... fArr) {
         ValueAnimator ofFloat = ValueAnimator.ofFloat(fArr);
-        ofFloat.setInterpolator(this.f15471g);
+        ofFloat.setInterpolator(this.f15611g);
         ofFloat.setDuration(i10);
         ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.material.textfield.i
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
@@ -133,14 +133,14 @@ public class p extends s {
     }
 
     private void F() {
-        this.f15482r = E(this.f15470f, 0.0f, 1.0f);
-        ValueAnimator E = E(this.f15469e, 1.0f, 0.0f);
-        this.f15481q = E;
+        this.f15622r = E(this.f15610f, 0.0f, 1.0f);
+        ValueAnimator E = E(this.f15609e, 1.0f, 0.0f);
+        this.f15621q = E;
         E.addListener(new a());
     }
 
     private boolean G() {
-        long currentTimeMillis = System.currentTimeMillis() - this.f15479o;
+        long currentTimeMillis = System.currentTimeMillis() - this.f15619o;
         if (currentTimeMillis >= 0 && currentTimeMillis <= 300) {
             return false;
         }
@@ -148,73 +148,73 @@ public class p extends s {
     }
 
     private void H(boolean z10) {
-        if (this.f15478n != z10) {
-            this.f15478n = z10;
-            this.f15482r.cancel();
-            this.f15481q.start();
+        if (this.f15618n != z10) {
+            this.f15618n = z10;
+            this.f15622r.cancel();
+            this.f15621q.start();
         }
     }
 
     private void I() {
-        this.f15472h.setOnTouchListener(new View.OnTouchListener() { // from class: com.google.android.material.textfield.j
+        this.f15612h.setOnTouchListener(new View.OnTouchListener() { // from class: com.google.android.material.textfield.j
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
                 return p.z(p.this, view, motionEvent);
             }
         });
-        if (f15468s) {
-            this.f15472h.setOnDismissListener(new AutoCompleteTextView.OnDismissListener() { // from class: com.google.android.material.textfield.k
+        if (f15608s) {
+            this.f15612h.setOnDismissListener(new AutoCompleteTextView.OnDismissListener() { // from class: com.google.android.material.textfield.k
                 @Override // android.widget.AutoCompleteTextView.OnDismissListener
                 public final void onDismiss() {
                     p.A(p.this);
                 }
             });
         }
-        this.f15472h.setThreshold(0);
+        this.f15612h.setThreshold(0);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void J() {
-        if (this.f15472h == null) {
+        if (this.f15612h == null) {
             return;
         }
         if (G()) {
-            this.f15477m = false;
+            this.f15617m = false;
         }
-        if (!this.f15477m) {
-            if (f15468s) {
-                H(!this.f15478n);
+        if (!this.f15617m) {
+            if (f15608s) {
+                H(!this.f15618n);
             } else {
-                this.f15478n = !this.f15478n;
+                this.f15618n = !this.f15618n;
                 r();
             }
-            if (this.f15478n) {
-                this.f15472h.requestFocus();
-                this.f15472h.showDropDown();
+            if (this.f15618n) {
+                this.f15612h.requestFocus();
+                this.f15612h.showDropDown();
                 return;
             }
-            this.f15472h.dismissDropDown();
+            this.f15612h.dismissDropDown();
             return;
         }
-        this.f15477m = false;
+        this.f15617m = false;
     }
 
     private void K() {
-        this.f15477m = true;
-        this.f15479o = System.currentTimeMillis();
+        this.f15617m = true;
+        this.f15619o = System.currentTimeMillis();
     }
 
     public static /* synthetic */ void v(p pVar) {
-        boolean isPopupShowing = pVar.f15472h.isPopupShowing();
+        boolean isPopupShowing = pVar.f15612h.isPopupShowing();
         pVar.H(isPopupShowing);
-        pVar.f15477m = isPopupShowing;
+        pVar.f15617m = isPopupShowing;
     }
 
     public static /* synthetic */ void w(p pVar, boolean z10) {
         int i10;
-        AutoCompleteTextView autoCompleteTextView = pVar.f15472h;
+        AutoCompleteTextView autoCompleteTextView = pVar.f15612h;
         if (autoCompleteTextView != null && !q.a(autoCompleteTextView)) {
-            CheckableImageButton checkableImageButton = pVar.f15509d;
+            CheckableImageButton checkableImageButton = pVar.f15649d;
             if (z10) {
                 i10 = 2;
             } else {
@@ -226,15 +226,15 @@ public class p extends s {
 
     public static /* synthetic */ void x(p pVar, ValueAnimator valueAnimator) {
         pVar.getClass();
-        pVar.f15509d.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
+        pVar.f15649d.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
     }
 
     public static /* synthetic */ void y(p pVar, View view, boolean z10) {
-        pVar.f15476l = z10;
+        pVar.f15616l = z10;
         pVar.r();
         if (!z10) {
             pVar.H(false);
-            pVar.f15477m = false;
+            pVar.f15617m = false;
         }
     }
 
@@ -242,7 +242,7 @@ public class p extends s {
         pVar.getClass();
         if (motionEvent.getAction() == 1) {
             if (pVar.G()) {
-                pVar.f15477m = false;
+                pVar.f15617m = false;
             }
             pVar.J();
             pVar.K();
@@ -252,10 +252,10 @@ public class p extends s {
 
     @Override // com.google.android.material.textfield.s
     public void a(Editable editable) {
-        if (this.f15480p.isTouchExplorationEnabled() && q.a(this.f15472h) && !this.f15509d.hasFocus()) {
-            this.f15472h.dismissDropDown();
+        if (this.f15620p.isTouchExplorationEnabled() && q.a(this.f15612h) && !this.f15649d.hasFocus()) {
+            this.f15612h.dismissDropDown();
         }
-        this.f15472h.post(new Runnable() { // from class: com.google.android.material.textfield.o
+        this.f15612h.post(new Runnable() { // from class: com.google.android.material.textfield.o
             @Override // java.lang.Runnable
             public final void run() {
                 p.v(p.this);
@@ -266,33 +266,33 @@ public class p extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int c() {
-        return ah.i.f780g;
+        return bh.i.f6768g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int d() {
-        if (f15468s) {
-            return ah.e.f716h;
+        if (f15608s) {
+            return bh.e.f6704h;
         }
-        return ah.e.f717i;
+        return bh.e.f6705i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public View.OnFocusChangeListener e() {
-        return this.f15474j;
+        return this.f15614j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public View.OnClickListener f() {
-        return this.f15473i;
+        return this.f15613i;
     }
 
     @Override // com.google.android.material.textfield.s
     public c.a h() {
-        return this.f15475k;
+        return this.f15615k;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -310,7 +310,7 @@ public class p extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public boolean k() {
-        return this.f15476l;
+        return this.f15616l;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -322,23 +322,23 @@ public class p extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public boolean m() {
-        return this.f15478n;
+        return this.f15618n;
     }
 
     @Override // com.google.android.material.textfield.s
     public void n(EditText editText) {
-        this.f15472h = D(editText);
+        this.f15612h = D(editText);
         I();
-        this.f15506a.setErrorIconDrawable((Drawable) null);
-        if (!q.a(editText) && this.f15480p.isTouchExplorationEnabled()) {
-            h0.x0(this.f15509d, 2);
+        this.f15646a.setErrorIconDrawable((Drawable) null);
+        if (!q.a(editText) && this.f15620p.isTouchExplorationEnabled()) {
+            h0.x0(this.f15649d, 2);
         }
-        this.f15506a.setEndIconVisible(true);
+        this.f15646a.setEndIconVisible(true);
     }
 
     @Override // com.google.android.material.textfield.s
     public void o(View view, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
-        if (!q.a(this.f15472h)) {
+        if (!q.a(this.f15612h)) {
             accessibilityNodeInfoCompat.w0(Spinner.class.getName());
         }
         if (accessibilityNodeInfoCompat.g0()) {
@@ -349,8 +349,8 @@ public class p extends s {
     @Override // com.google.android.material.textfield.s
     public void p(View view, AccessibilityEvent accessibilityEvent) {
         boolean z10;
-        if (this.f15480p.isEnabled() && !q.a(this.f15472h)) {
-            if ((accessibilityEvent.getEventType() == 32768 || accessibilityEvent.getEventType() == 8) && this.f15478n && !this.f15472h.isPopupShowing()) {
+        if (this.f15620p.isEnabled() && !q.a(this.f15612h)) {
+            if ((accessibilityEvent.getEventType() == 32768 || accessibilityEvent.getEventType() == 8) && this.f15618n && !this.f15612h.isPopupShowing()) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -366,7 +366,7 @@ public class p extends s {
     @Override // com.google.android.material.textfield.s
     public void s() {
         F();
-        this.f15480p = (AccessibilityManager) this.f15508c.getSystemService("accessibility");
+        this.f15620p = (AccessibilityManager) this.f15648c.getSystemService("accessibility");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -378,11 +378,11 @@ public class p extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public void u() {
-        AutoCompleteTextView autoCompleteTextView = this.f15472h;
+        AutoCompleteTextView autoCompleteTextView = this.f15612h;
         if (autoCompleteTextView != null) {
             autoCompleteTextView.setOnTouchListener(null);
-            if (f15468s) {
-                this.f15472h.setOnDismissListener(null);
+            if (f15608s) {
+                this.f15612h.setOnDismissListener(null);
             }
         }
     }

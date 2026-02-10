@@ -6,32 +6,32 @@ import java.util.concurrent.CopyOnWriteArraySet;
 public final class u6 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile u6 f28980c;
+    private static volatile u6 f29180c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final io.sentry.util.a f28981d = new io.sentry.util.a();
+    private static final io.sentry.util.a f29181d = new io.sentry.util.a();
 
     /* renamed from: e  reason: collision with root package name */
-    private static volatile Boolean f28982e = null;
+    private static volatile Boolean f29182e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final io.sentry.util.a f28983f = new io.sentry.util.a();
+    private static final io.sentry.util.a f29183f = new io.sentry.util.a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f28984a = new CopyOnWriteArraySet();
+    private final Set f29184a = new CopyOnWriteArraySet();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f28985b = new CopyOnWriteArraySet();
+    private final Set f29185b = new CopyOnWriteArraySet();
 
     private u6() {
     }
 
     public static u6 d() {
-        if (f28980c == null) {
-            a1 a10 = f28981d.a();
+        if (f29180c == null) {
+            a1 a10 = f29181d.a();
             try {
-                if (f28980c == null) {
-                    f28980c = new u6();
+                if (f29180c == null) {
+                    f29180c = new u6();
                 }
                 if (a10 != null) {
                     a10.close();
@@ -47,21 +47,21 @@ public final class u6 {
                 throw th2;
             }
         }
-        return f28980c;
+        return f29180c;
     }
 
     public void a(String str) {
         io.sentry.util.y.c(str, "integration is required.");
-        this.f28984a.add(str);
+        this.f29184a.add(str);
     }
 
     public void b(String str, String str2) {
         io.sentry.util.y.c(str, "name is required.");
         io.sentry.util.y.c(str2, "version is required.");
-        this.f28985b.add(new io.sentry.protocol.y(str, str2));
-        a1 a10 = f28983f.a();
+        this.f29185b.add(new io.sentry.protocol.y(str, str2));
+        a1 a10 = f29183f.a();
         try {
-            f28982e = null;
+            f29182e = null;
             if (a10 != null) {
                 a10.close();
             }
@@ -78,14 +78,14 @@ public final class u6 {
     }
 
     public boolean c(ILogger iLogger) {
-        Boolean bool = f28982e;
+        Boolean bool = f29182e;
         if (bool != null) {
             return bool.booleanValue();
         }
-        a1 a10 = f28983f.a();
+        a1 a10 = f29183f.a();
         try {
             boolean z10 = false;
-            for (io.sentry.protocol.y yVar : this.f28985b) {
+            for (io.sentry.protocol.y yVar : this.f29185b) {
                 if (yVar.a().startsWith("maven:io.sentry:") && !"8.27.0".equalsIgnoreCase(yVar.b())) {
                     iLogger.c(SentryLevel.ERROR, "The Sentry SDK has been configured with mixed versions. Expected %s to match core SDK version %s but was %s", yVar.a(), "8.27.0", yVar.b());
                     z10 = true;
@@ -98,7 +98,7 @@ public final class u6 {
                 iLogger.c(sentryLevel, "^^^^^^^^^^^^^^^^^^^^^^^^^^^^", new Object[0]);
                 iLogger.c(sentryLevel, "^^^^^^^^^^^^^^^^^^^^^^^^^^^^", new Object[0]);
             }
-            f28982e = Boolean.valueOf(z10);
+            f29182e = Boolean.valueOf(z10);
             if (a10 != null) {
                 a10.close();
             }
@@ -116,10 +116,10 @@ public final class u6 {
     }
 
     public Set e() {
-        return this.f28984a;
+        return this.f29184a;
     }
 
     public Set f() {
-        return this.f28985b;
+        return this.f29185b;
     }
 }

@@ -10,19 +10,19 @@ public final class Duration implements Comparable {
     @NotNull
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f35055e = new a(null);
+    public static final a f34764e = new a(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final long f35056i = k(0);
+    private static final long f34765i = l(0);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final long f35057o = b.b(4611686018427387903L);
+    private static final long f34766o = b.b(4611686018427387903L);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final long f35058p = b.b(-4611686018427387903L);
+    private static final long f34767p = b.b(-4611686018427387903L);
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f35059d;
+    private final long f34768d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -31,15 +31,15 @@ public final class Duration implements Comparable {
         }
 
         public final long a() {
-            return Duration.f35057o;
+            return Duration.f34766o;
         }
 
         public final long b() {
-            return Duration.f35058p;
+            return Duration.f34767p;
         }
 
         public final long c() {
-            return Duration.f35056i;
+            return Duration.f34765i;
         }
 
         public final long d(String value) {
@@ -56,7 +56,7 @@ public final class Duration implements Comparable {
     }
 
     private /* synthetic */ Duration(long j10) {
-        this.f35059d = j10;
+        this.f34768d = j10;
     }
 
     private static final long A(long j10) {
@@ -80,7 +80,7 @@ public final class Duration implements Comparable {
     }
 
     public static final boolean F(long j10) {
-        if (j10 != f35057o && j10 != f35058p) {
+        if (j10 != f34766o && j10 != f34767p) {
             return false;
         }
         return true;
@@ -117,12 +117,12 @@ public final class Duration implements Comparable {
         }
     }
 
-    public static final double J(long j10, ms.b unit) {
+    public static final double J(long j10, ns.b unit) {
         Intrinsics.checkNotNullParameter(unit, "unit");
-        if (j10 == f35057o) {
+        if (j10 == f34766o) {
             return Double.POSITIVE_INFINITY;
         }
-        if (j10 == f35058p) {
+        if (j10 == f34767p) {
             return Double.NEGATIVE_INFINITY;
         }
         return c.a(A(j10), z(j10), unit);
@@ -175,12 +175,12 @@ public final class Duration implements Comparable {
         return sb2.toString();
     }
 
-    public static final long L(long j10, ms.b unit) {
+    public static final long L(long j10, ns.b unit) {
         Intrinsics.checkNotNullParameter(unit, "unit");
-        if (j10 == f35057o) {
+        if (j10 == f34766o) {
             return LongCompanionObject.MAX_VALUE;
         }
-        if (j10 == f35058p) {
+        if (j10 == f34767p) {
             return Long.MIN_VALUE;
         }
         return c.b(A(j10), z(j10), unit);
@@ -194,10 +194,10 @@ public final class Duration implements Comparable {
         if (j10 == 0) {
             return "0s";
         }
-        if (j10 == f35057o) {
+        if (j10 == f34766o) {
             return "Infinity";
         }
-        if (j10 == f35058p) {
+        if (j10 == f34767p) {
             return "-Infinity";
         }
         boolean G = G(j10);
@@ -329,7 +329,7 @@ public final class Duration implements Comparable {
         return new Duration(j10);
     }
 
-    public static int j(long j10, long j11) {
+    public static int k(long j10, long j11) {
         long j12 = j10 ^ j11;
         if (j12 >= 0 && (((int) j12) & 1) != 0) {
             int i10 = (((int) j10) & 1) - (((int) j11) & 1);
@@ -341,8 +341,8 @@ public final class Duration implements Comparable {
         return Intrinsics.compare(j10, j11);
     }
 
-    public static long k(long j10) {
-        if (ms.a.a()) {
+    public static long l(long j10) {
+        if (ns.a.a()) {
             if (E(j10)) {
                 long A = A(j10);
                 if (-4611686018426999999L <= A && A < 4611686018427000000L) {
@@ -389,26 +389,26 @@ public final class Duration implements Comparable {
     }
 
     public static final long r(long j10) {
-        return L(j10, ms.b.f38335s);
+        return L(j10, ns.b.f40020s);
     }
 
     public static final long s(long j10) {
-        return L(j10, ms.b.f38334r);
+        return L(j10, ns.b.f40019r);
     }
 
     public static final long t(long j10) {
         if (D(j10) && C(j10)) {
             return A(j10);
         }
-        return L(j10, ms.b.f38331o);
+        return L(j10, ns.b.f40016o);
     }
 
     public static final long u(long j10) {
-        return L(j10, ms.b.f38333q);
+        return L(j10, ns.b.f40018q);
     }
 
     public static final long v(long j10) {
-        return L(j10, ms.b.f38332p);
+        return L(j10, ns.b.f40017p);
     }
 
     public static final int w(long j10) {
@@ -438,15 +438,15 @@ public final class Duration implements Comparable {
         return (int) (v(j10) % 60);
     }
 
-    private static final ms.b z(long j10) {
+    private static final ns.b z(long j10) {
         if (E(j10)) {
-            return ms.b.f38329e;
+            return ns.b.f40014e;
         }
-        return ms.b.f38331o;
+        return ns.b.f40016o;
     }
 
     public final /* synthetic */ long O() {
-        return this.f35059d;
+        return this.f34768d;
     }
 
     @Override // java.lang.Comparable
@@ -455,18 +455,18 @@ public final class Duration implements Comparable {
     }
 
     public boolean equals(Object obj) {
-        return m(this.f35059d, obj);
+        return m(this.f34768d, obj);
     }
 
     public int hashCode() {
-        return B(this.f35059d);
+        return B(this.f34768d);
     }
 
     public int i(long j10) {
-        return j(this.f35059d, j10);
+        return k(this.f34768d, j10);
     }
 
     public String toString() {
-        return M(this.f35059d);
+        return M(this.f34768d);
     }
 }

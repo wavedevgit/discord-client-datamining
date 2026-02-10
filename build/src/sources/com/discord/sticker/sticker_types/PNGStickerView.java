@@ -31,7 +31,7 @@ public final class PNGStickerView extends SimpleDraweeView {
     public final void loadGifImage(@NotNull String url, Integer num, Integer num2, boolean z10) {
         int i10;
         Intrinsics.checkNotNullParameter(url, "url");
-        setController(((PipelineDraweeControllerBuilder) e9.d.g().P(url).A(z10)).build());
+        setController(((PipelineDraweeControllerBuilder) f9.d.g().P(url).A(z10)).build());
         int i11 = Integer.MAX_VALUE;
         if (num != null) {
             i10 = num.intValue();
@@ -49,7 +49,7 @@ public final class PNGStickerView extends SimpleDraweeView {
         int i10;
         Intrinsics.checkNotNullParameter(url, "url");
         setImageURI(url);
-        ((GenericDraweeHierarchy) getHierarchy()).t(ScalingUtils$ScaleType.f9918e);
+        ((GenericDraweeHierarchy) getHierarchy()).t(ScalingUtils$ScaleType.f10058e);
         ((GenericDraweeHierarchy) getHierarchy()).z(this.placeholder);
         int i11 = Integer.MAX_VALUE;
         if (num != null) {

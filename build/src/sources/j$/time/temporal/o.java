@@ -3,23 +3,23 @@ package j$.time.temporal;
 public abstract class o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j$.time.b f29565a = new j$.time.b(3);
+    public static final j$.time.b f29819a = new j$.time.b(3);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final j$.time.b f29566b = new j$.time.b(4);
+    public static final j$.time.b f29820b = new j$.time.b(4);
 
     /* renamed from: c  reason: collision with root package name */
-    public static final j$.time.b f29567c = new j$.time.b(5);
+    public static final j$.time.b f29821c = new j$.time.b(5);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final j$.time.b f29568d = new j$.time.b(6);
+    public static final j$.time.b f29822d = new j$.time.b(6);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final j$.time.b f29569e = new j$.time.b(7);
+    public static final j$.time.b f29823e = new j$.time.b(7);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final j$.time.b f29570f = new j$.time.b(8);
+    public static final j$.time.b f29824f = new j$.time.b(8);
 
     /* renamed from: g  reason: collision with root package name */
-    public static final j$.time.b f29571g = new j$.time.b(9);
+    public static final j$.time.b f29825g = new j$.time.b(9);
 }

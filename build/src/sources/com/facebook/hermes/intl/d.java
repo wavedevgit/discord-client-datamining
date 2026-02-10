@@ -3,6 +3,6 @@ package com.facebook.hermes.intl;
 public abstract class d {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static String a(String str) {
-        return da.g.b(str).g();
+        return ea.g.b(str).g();
     }
 }

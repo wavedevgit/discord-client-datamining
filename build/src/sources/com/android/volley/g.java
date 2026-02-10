@@ -5,22 +5,22 @@ import android.text.TextUtils;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f8066a;
+    private final String f8206a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f8067b;
+    private final String f8207b;
 
     public g(String str, String str2) {
-        this.f8066a = str;
-        this.f8067b = str2;
+        this.f8206a = str;
+        this.f8207b = str2;
     }
 
     public final String a() {
-        return this.f8066a;
+        return this.f8206a;
     }
 
     public final String b() {
-        return this.f8067b;
+        return this.f8207b;
     }
 
     public boolean equals(Object obj) {
@@ -29,7 +29,7 @@ public final class g {
         }
         if (obj != null && g.class == obj.getClass()) {
             g gVar = (g) obj;
-            if (TextUtils.equals(this.f8066a, gVar.f8066a) && TextUtils.equals(this.f8067b, gVar.f8067b)) {
+            if (TextUtils.equals(this.f8206a, gVar.f8206a) && TextUtils.equals(this.f8207b, gVar.f8207b)) {
                 return true;
             }
         }
@@ -37,10 +37,10 @@ public final class g {
     }
 
     public int hashCode() {
-        return (this.f8066a.hashCode() * 31) + this.f8067b.hashCode();
+        return (this.f8206a.hashCode() * 31) + this.f8207b.hashCode();
     }
 
     public String toString() {
-        return "Header[name=" + this.f8066a + ",value=" + this.f8067b + "]";
+        return "Header[name=" + this.f8206a + ",value=" + this.f8207b + "]";
     }
 }

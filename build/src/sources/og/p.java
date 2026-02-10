@@ -1,51 +1,48 @@
 package og;
-/* JADX INFO: Access modifiers changed from: package-private */
+
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class p implements yi.g {
-
-    /* renamed from: a  reason: collision with root package name */
-    private boolean f42396a = false;
-
-    /* renamed from: b  reason: collision with root package name */
-    private boolean f42397b = false;
-
-    /* renamed from: c  reason: collision with root package name */
-    private yi.c f42398c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final l f42399d;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public p(l lVar) {
-        this.f42399d = lVar;
-    }
-
-    private final void b() {
-        if (!this.f42396a) {
-            this.f42396a = true;
-            return;
+public final class p implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
+        int i10 = 0;
+        int i11 = 0;
+        int i12 = 0;
+        int i13 = 0;
+        long j10 = 0;
+        while (parcel.dataPosition() < A) {
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
+            if (l10 != 2) {
+                if (l10 != 3) {
+                    if (l10 != 4) {
+                        if (l10 != 5) {
+                            if (l10 != 6) {
+                                jf.b.z(parcel, r10);
+                            } else {
+                                i13 = jf.b.t(parcel, r10);
+                            }
+                        } else {
+                            j10 = jf.b.v(parcel, r10);
+                        }
+                    } else {
+                        i12 = jf.b.t(parcel, r10);
+                    }
+                } else {
+                    i11 = jf.b.t(parcel, r10);
+                }
+            } else {
+                i10 = jf.b.t(parcel, r10);
+            }
         }
-        throw new yi.b("Cannot encode a second value in the ValueEncoderContext");
+        jf.b.k(parcel, A);
+        return new o(i10, i11, i12, j10, i13);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final void a(yi.c cVar, boolean z10) {
-        this.f42396a = false;
-        this.f42398c = cVar;
-        this.f42397b = z10;
-    }
-
-    @Override // yi.g
-    public final yi.g d(String str) {
-        b();
-        this.f42399d.f(this.f42398c, str, this.f42397b);
-        return this;
-    }
-
-    @Override // yi.g
-    public final yi.g e(boolean z10) {
-        b();
-        this.f42399d.g(this.f42398c, z10 ? 1 : 0, this.f42397b);
-        return this;
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new o[i10];
     }
 }

@@ -1,35 +1,33 @@
 package og;
 
-import java.io.OutputStream;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class g extends OutputStream {
-
-    /* renamed from: d  reason: collision with root package name */
-    private long f42089d = 0;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final long a() {
-        return this.f42089d;
-    }
-
-    @Override // java.io.OutputStream
-    public final void write(int i10) {
-        this.f42089d++;
-    }
-
-    @Override // java.io.OutputStream
-    public final void write(byte[] bArr) {
-        this.f42089d += bArr.length;
-    }
-
-    @Override // java.io.OutputStream
-    public final void write(byte[] bArr, int i10, int i11) {
-        int length;
-        int i12;
-        if (i10 >= 0 && i10 <= (length = bArr.length) && i11 >= 0 && (i12 = i10 + i11) <= length && i12 >= 0) {
-            this.f42089d += i11;
-            return;
+public final class g implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
+        String str = null;
+        String str2 = null;
+        while (parcel.dataPosition() < A) {
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
+            if (l10 != 2) {
+                if (l10 != 3) {
+                    jf.b.z(parcel, r10);
+                } else {
+                    str2 = jf.b.f(parcel, r10);
+                }
+            } else {
+                str = jf.b.f(parcel, r10);
+            }
         }
-        throw new IndexOutOfBoundsException();
+        jf.b.k(parcel, A);
+        return new xf(str, str2);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new xf[i10];
     }
 }

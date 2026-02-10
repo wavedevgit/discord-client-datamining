@@ -8,16 +8,16 @@ import java.util.List;
 abstract class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final e0 f4038a = new b();
+    private static final e0 f3735a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final e0 f4039b = new c();
+    private static final e0 f3736b = new c();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class b extends e0 {
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Class f4040c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
+        private static final Class f3737c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
 
         private b() {
             super();
@@ -40,7 +40,7 @@ abstract class e0 {
                 }
                 o1.O(obj, j10, arrayList);
                 return arrayList;
-            } else if (f4040c.isAssignableFrom(f10.getClass())) {
+            } else if (f3737c.isAssignableFrom(f10.getClass())) {
                 ArrayList arrayList2 = new ArrayList(f10.size() + i10);
                 arrayList2.addAll(f10);
                 o1.O(obj, j10, arrayList2);
@@ -69,7 +69,7 @@ abstract class e0 {
             List list = (List) o1.A(obj, j10);
             if (list instanceof d0) {
                 unmodifiableList = ((d0) list).getUnmodifiableView();
-            } else if (!f4040c.isAssignableFrom(list.getClass())) {
+            } else if (!f3737c.isAssignableFrom(list.getClass())) {
                 if ((list instanceof x0) && (list instanceof y.b)) {
                     y.b bVar = (y.b) list;
                     if (bVar.y()) {
@@ -160,12 +160,12 @@ abstract class e0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static e0 a() {
-        return f4038a;
+        return f3735a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static e0 b() {
-        return f4039b;
+        return f3736b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

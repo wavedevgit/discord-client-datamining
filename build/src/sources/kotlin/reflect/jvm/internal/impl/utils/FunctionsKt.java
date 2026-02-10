@@ -9,28 +9,28 @@ import org.jetbrains.annotations.NotNull;
 public final class FunctionsKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Function1 f34869a = kotlin.reflect.jvm.internal.impl.utils.a.f34889d;
+    private static final Function1 f34578a = kotlin.reflect.jvm.internal.impl.utils.a.f34598d;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Function1 f34870b = b.f34891d;
+    private static final Function1 f34579b = b.f34600d;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Function1 f34871c = a.f34875d;
+    private static final Function1 f34580c = a.f34584d;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Function1 f34872d = c.f34892d;
+    private static final Function1 f34581d = c.f34601d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Function2 f34873e = d.f34893d;
+    private static final Function2 f34582e = d.f34602d;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Function3 f34874f = e.f34894d;
+    private static final Function3 f34583f = e.f34603d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f34875d = new a();
+        public static final a f34584d = new a();
 
         a() {
         }
@@ -49,22 +49,22 @@ public final class FunctionsKt {
 
     @NotNull
     public static final <T> Function1<T, Boolean> alwaysTrue() {
-        return f34870b;
+        return f34579b;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit b(Object obj) {
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit c(Object obj, Object obj2) {
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit d(Object obj, Object obj2, Object obj3) {
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -74,6 +74,6 @@ public final class FunctionsKt {
 
     @NotNull
     public static final Function3 getDO_NOTHING_3() {
-        return f34874f;
+        return f34583f;
     }
 }

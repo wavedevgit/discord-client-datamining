@@ -1,227 +1,137 @@
 package y5;
 
-import android.graphics.PointF;
-import android.view.animation.Interpolator;
-import l5.i;
+import android.animation.Animator;
+import android.animation.TimeInterpolator;
+import android.animation.ValueAnimator;
+import android.os.Build;
+import java.util.Set;
+import java.util.concurrent.CopyOnWriteArraySet;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final i f55027a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final Object f55028b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public Object f55029c;
+public abstract class a extends ValueAnimator {
 
     /* renamed from: d  reason: collision with root package name */
-    public final Interpolator f55030d;
+    private final Set f55504d = new CopyOnWriteArraySet();
 
     /* renamed from: e  reason: collision with root package name */
-    public final Interpolator f55031e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public final Interpolator f55032f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final float f55033g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public Float f55034h;
+    private final Set f55505e = new CopyOnWriteArraySet();
 
     /* renamed from: i  reason: collision with root package name */
-    private float f55035i;
+    private final Set f55506i = new CopyOnWriteArraySet();
 
-    /* renamed from: j  reason: collision with root package name */
-    private float f55036j;
-
-    /* renamed from: k  reason: collision with root package name */
-    private int f55037k;
-
-    /* renamed from: l  reason: collision with root package name */
-    private int f55038l;
-
-    /* renamed from: m  reason: collision with root package name */
-    private float f55039m;
-
-    /* renamed from: n  reason: collision with root package name */
-    private float f55040n;
-
-    /* renamed from: o  reason: collision with root package name */
-    public PointF f55041o;
-
-    /* renamed from: p  reason: collision with root package name */
-    public PointF f55042p;
-
-    public a(i iVar, Object obj, Object obj2, Interpolator interpolator, float f10, Float f11) {
-        this.f55035i = -3987645.8f;
-        this.f55036j = -3987645.8f;
-        this.f55037k = 784923401;
-        this.f55038l = 784923401;
-        this.f55039m = Float.MIN_VALUE;
-        this.f55040n = Float.MIN_VALUE;
-        this.f55041o = null;
-        this.f55042p = null;
-        this.f55027a = iVar;
-        this.f55028b = obj;
-        this.f55029c = obj2;
-        this.f55030d = interpolator;
-        this.f55031e = null;
-        this.f55032f = null;
-        this.f55033g = f10;
-        this.f55034h = f11;
-    }
-
-    public boolean a(float f10) {
-        if (f10 >= f() && f10 < c()) {
-            return true;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void a() {
+        for (Animator.AnimatorListener animatorListener : this.f55505e) {
+            animatorListener.onAnimationCancel(this);
         }
-        return false;
     }
 
-    public a b(Object obj, Object obj2) {
-        return new a(obj, obj2);
+    @Override // android.animation.Animator
+    public void addListener(Animator.AnimatorListener animatorListener) {
+        this.f55505e.add(animatorListener);
     }
 
-    public float c() {
-        if (this.f55027a == null) {
-            return 1.0f;
-        }
-        if (this.f55040n == Float.MIN_VALUE) {
-            if (this.f55034h == null) {
-                this.f55040n = 1.0f;
+    @Override // android.animation.Animator
+    public void addPauseListener(Animator.AnimatorPauseListener animatorPauseListener) {
+        this.f55506i.add(animatorPauseListener);
+    }
+
+    @Override // android.animation.ValueAnimator
+    public void addUpdateListener(ValueAnimator.AnimatorUpdateListener animatorUpdateListener) {
+        this.f55504d.add(animatorUpdateListener);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void b(boolean z10) {
+        for (Animator.AnimatorListener animatorListener : this.f55505e) {
+            if (Build.VERSION.SDK_INT >= 26) {
+                animatorListener.onAnimationEnd(this, z10);
             } else {
-                this.f55040n = f() + ((this.f55034h.floatValue() - this.f55033g) / this.f55027a.e());
+                animatorListener.onAnimationEnd(this);
             }
         }
-        return this.f55040n;
     }
 
-    public float d() {
-        if (this.f55036j == -3987645.8f) {
-            this.f55036j = ((Float) this.f55029c).floatValue();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void c() {
+        for (Animator.AnimatorPauseListener animatorPauseListener : this.f55506i) {
+            animatorPauseListener.onAnimationPause(this);
         }
-        return this.f55036j;
     }
 
-    public int e() {
-        if (this.f55038l == 784923401) {
-            this.f55038l = ((Integer) this.f55029c).intValue();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void d() {
+        for (Animator.AnimatorListener animatorListener : this.f55505e) {
+            animatorListener.onAnimationRepeat(this);
         }
-        return this.f55038l;
     }
 
-    public float f() {
-        i iVar = this.f55027a;
-        if (iVar == null) {
-            return 0.0f;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void e() {
+        for (Animator.AnimatorPauseListener animatorPauseListener : this.f55506i) {
+            animatorPauseListener.onAnimationResume(this);
         }
-        if (this.f55039m == Float.MIN_VALUE) {
-            this.f55039m = (this.f55033g - iVar.p()) / this.f55027a.e();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void f(boolean z10) {
+        for (Animator.AnimatorListener animatorListener : this.f55505e) {
+            if (Build.VERSION.SDK_INT >= 26) {
+                animatorListener.onAnimationStart(this, z10);
+            } else {
+                animatorListener.onAnimationStart(this);
+            }
         }
-        return this.f55039m;
     }
 
-    public float g() {
-        if (this.f55035i == -3987645.8f) {
-            this.f55035i = ((Float) this.f55028b).floatValue();
+    @Override // android.animation.ValueAnimator, android.animation.Animator
+    public long getStartDelay() {
+        throw new UnsupportedOperationException("LottieAnimator does not support getStartDelay.");
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void h() {
+        for (ValueAnimator.AnimatorUpdateListener animatorUpdateListener : this.f55504d) {
+            animatorUpdateListener.onAnimationUpdate(this);
         }
-        return this.f55035i;
     }
 
-    public int h() {
-        if (this.f55037k == 784923401) {
-            this.f55037k = ((Integer) this.f55028b).intValue();
-        }
-        return this.f55037k;
+    @Override // android.animation.Animator
+    public void removeAllListeners() {
+        this.f55505e.clear();
     }
 
-    public boolean i() {
-        if (this.f55030d == null && this.f55031e == null && this.f55032f == null) {
-            return true;
-        }
-        return false;
+    @Override // android.animation.ValueAnimator
+    public void removeAllUpdateListeners() {
+        this.f55504d.clear();
     }
 
-    public String toString() {
-        return "Keyframe{startValue=" + this.f55028b + ", endValue=" + this.f55029c + ", startFrame=" + this.f55033g + ", endFrame=" + this.f55034h + ", interpolator=" + this.f55030d + '}';
+    @Override // android.animation.Animator
+    public void removeListener(Animator.AnimatorListener animatorListener) {
+        this.f55505e.remove(animatorListener);
     }
 
-    public a(i iVar, Object obj, Object obj2, Interpolator interpolator, Interpolator interpolator2, float f10, Float f11) {
-        this.f55035i = -3987645.8f;
-        this.f55036j = -3987645.8f;
-        this.f55037k = 784923401;
-        this.f55038l = 784923401;
-        this.f55039m = Float.MIN_VALUE;
-        this.f55040n = Float.MIN_VALUE;
-        this.f55041o = null;
-        this.f55042p = null;
-        this.f55027a = iVar;
-        this.f55028b = obj;
-        this.f55029c = obj2;
-        this.f55030d = null;
-        this.f55031e = interpolator;
-        this.f55032f = interpolator2;
-        this.f55033g = f10;
-        this.f55034h = f11;
+    @Override // android.animation.Animator
+    public void removePauseListener(Animator.AnimatorPauseListener animatorPauseListener) {
+        this.f55506i.remove(animatorPauseListener);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public a(i iVar, Object obj, Object obj2, Interpolator interpolator, Interpolator interpolator2, Interpolator interpolator3, float f10, Float f11) {
-        this.f55035i = -3987645.8f;
-        this.f55036j = -3987645.8f;
-        this.f55037k = 784923401;
-        this.f55038l = 784923401;
-        this.f55039m = Float.MIN_VALUE;
-        this.f55040n = Float.MIN_VALUE;
-        this.f55041o = null;
-        this.f55042p = null;
-        this.f55027a = iVar;
-        this.f55028b = obj;
-        this.f55029c = obj2;
-        this.f55030d = interpolator;
-        this.f55031e = interpolator2;
-        this.f55032f = interpolator3;
-        this.f55033g = f10;
-        this.f55034h = f11;
+    @Override // android.animation.ValueAnimator
+    public void removeUpdateListener(ValueAnimator.AnimatorUpdateListener animatorUpdateListener) {
+        this.f55504d.remove(animatorUpdateListener);
     }
 
-    public a(Object obj) {
-        this.f55035i = -3987645.8f;
-        this.f55036j = -3987645.8f;
-        this.f55037k = 784923401;
-        this.f55038l = 784923401;
-        this.f55039m = Float.MIN_VALUE;
-        this.f55040n = Float.MIN_VALUE;
-        this.f55041o = null;
-        this.f55042p = null;
-        this.f55027a = null;
-        this.f55028b = obj;
-        this.f55029c = obj;
-        this.f55030d = null;
-        this.f55031e = null;
-        this.f55032f = null;
-        this.f55033g = Float.MIN_VALUE;
-        this.f55034h = Float.valueOf(Float.MAX_VALUE);
+    @Override // android.animation.ValueAnimator, android.animation.Animator
+    public void setInterpolator(TimeInterpolator timeInterpolator) {
+        throw new UnsupportedOperationException("LottieAnimator does not support setInterpolator.");
     }
 
-    private a(Object obj, Object obj2) {
-        this.f55035i = -3987645.8f;
-        this.f55036j = -3987645.8f;
-        this.f55037k = 784923401;
-        this.f55038l = 784923401;
-        this.f55039m = Float.MIN_VALUE;
-        this.f55040n = Float.MIN_VALUE;
-        this.f55041o = null;
-        this.f55042p = null;
-        this.f55027a = null;
-        this.f55028b = obj;
-        this.f55029c = obj2;
-        this.f55030d = null;
-        this.f55031e = null;
-        this.f55032f = null;
-        this.f55033g = Float.MIN_VALUE;
-        this.f55034h = Float.valueOf(Float.MAX_VALUE);
+    @Override // android.animation.ValueAnimator, android.animation.Animator
+    public void setStartDelay(long j10) {
+        throw new UnsupportedOperationException("LottieAnimator does not support setStartDelay.");
+    }
+
+    @Override // android.animation.ValueAnimator, android.animation.Animator
+    public ValueAnimator setDuration(long j10) {
+        throw new UnsupportedOperationException("LottieAnimator does not support setDuration.");
     }
 }

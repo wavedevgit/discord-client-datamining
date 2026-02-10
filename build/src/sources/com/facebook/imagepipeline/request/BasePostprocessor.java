@@ -9,7 +9,7 @@ import com.facebook.imagepipeline.bitmaps.PlatformBitmapFactory;
 import com.facebook.imagepipeline.nativecode.Bitmaps;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import na.u;
+import oa.u;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class BasePostprocessor implements Postprocessor {
     public static final Bitmap.Config FALLBACK_BITMAP_CONFIGURATION = Bitmap.Config.ARGB_8888;
@@ -19,7 +19,7 @@ public abstract class BasePostprocessor implements Postprocessor {
         if (u.a() && bitmap.getConfig() == bitmap2.getConfig()) {
             try {
                 if (sCopyBitmap == null) {
-                    int i10 = Bitmaps.f10538a;
+                    int i10 = Bitmaps.f10678a;
                     sCopyBitmap = Bitmaps.class.getDeclaredMethod("copyBitmap", Bitmap.class, Bitmap.class);
                 }
                 sCopyBitmap.invoke(null, bitmap, bitmap2);

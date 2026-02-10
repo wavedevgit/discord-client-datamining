@@ -1,65 +1,56 @@
 package hc;
-/* JADX INFO: Access modifiers changed from: package-private */
+
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b extends k {
+final class b extends f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f25921a;
+    private final kc.a f25815a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final zb.o f25922b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final zb.i f25923c;
+    private final Map f25816b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public b(long j10, zb.o oVar, zb.i iVar) {
-        this.f25921a = j10;
-        if (oVar != null) {
-            this.f25922b = oVar;
-            if (iVar != null) {
-                this.f25923c = iVar;
+    public b(kc.a aVar, Map map) {
+        if (aVar != null) {
+            this.f25815a = aVar;
+            if (map != null) {
+                this.f25816b = map;
                 return;
             }
-            throw new NullPointerException("Null event");
+            throw new NullPointerException("Null values");
         }
-        throw new NullPointerException("Null transportContext");
+        throw new NullPointerException("Null clock");
     }
 
-    @Override // hc.k
-    public zb.i b() {
-        return this.f25923c;
-    }
-
-    @Override // hc.k
-    public long c() {
-        return this.f25921a;
-    }
-
-    @Override // hc.k
-    public zb.o d() {
-        return this.f25922b;
+    @Override // hc.f
+    kc.a e() {
+        return this.f25815a;
     }
 
     public boolean equals(Object obj) {
         if (obj == this) {
             return true;
         }
-        if (obj instanceof k) {
-            k kVar = (k) obj;
-            if (this.f25921a == kVar.c() && this.f25922b.equals(kVar.d()) && this.f25923c.equals(kVar.b())) {
+        if (obj instanceof f) {
+            f fVar = (f) obj;
+            if (this.f25815a.equals(fVar.e()) && this.f25816b.equals(fVar.h())) {
                 return true;
             }
         }
         return false;
     }
 
+    @Override // hc.f
+    Map h() {
+        return this.f25816b;
+    }
+
     public int hashCode() {
-        long j10 = this.f25921a;
-        return ((((((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003) ^ this.f25922b.hashCode()) * 1000003) ^ this.f25923c.hashCode();
+        return ((this.f25815a.hashCode() ^ 1000003) * 1000003) ^ this.f25816b.hashCode();
     }
 
     public String toString() {
-        return "PersistedEvent{id=" + this.f25921a + ", transportContext=" + this.f25922b + ", event=" + this.f25923c + "}";
+        return "SchedulerConfig{clock=" + this.f25815a + ", values=" + this.f25816b + "}";
     }
 }

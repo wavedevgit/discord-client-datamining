@@ -1,7 +1,5 @@
 package com.google.android.material.timepicker;
 
-import ah.h;
-import ah.k;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
@@ -14,33 +12,35 @@ import android.view.ViewGroup;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.view.h0;
+import bh.h;
+import bh.k;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import qh.g;
-import qh.i;
+import rh.g;
+import rh.i;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class d extends ConstraintLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Runnable f15606d;
+    private final Runnable f15746d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f15607e;
+    private int f15747e;
 
     /* renamed from: i  reason: collision with root package name */
-    private g f15608i;
+    private g f15748i;
 
     public d(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        LayoutInflater.from(context).inflate(h.f759i, this);
+        LayoutInflater.from(context).inflate(h.f6747i, this);
         h0.r0(this, i());
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f889g5, i10, 0);
-        this.f15607e = obtainStyledAttributes.getDimensionPixelSize(k.f899h5, 0);
-        this.f15606d = new Runnable() { // from class: com.google.android.material.timepicker.c
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f6877g5, i10, 0);
+        this.f15747e = obtainStyledAttributes.getDimensionPixelSize(k.f6887h5, 0);
+        this.f15746d = new Runnable() { // from class: com.google.android.material.timepicker.c
             @Override // java.lang.Runnable
             public final void run() {
                 d.this.n();
@@ -53,17 +53,17 @@ public abstract class d extends ConstraintLayout {
         Iterator it = list.iterator();
         float f10 = 0.0f;
         while (it.hasNext()) {
-            constraintSet.i(((View) it.next()).getId(), ah.f.f722c, i10, f10);
+            constraintSet.i(((View) it.next()).getId(), bh.f.f6710c, i10, f10);
             f10 += 360.0f / list.size();
         }
     }
 
     private Drawable i() {
         g gVar = new g();
-        this.f15608i = gVar;
+        this.f15748i = gVar;
         gVar.V(new i(0.5f));
-        this.f15608i.X(ColorStateList.valueOf(-1));
-        return this.f15608i;
+        this.f15748i.X(ColorStateList.valueOf(-1));
+        return this.f15748i;
     }
 
     private static boolean m(View view) {
@@ -73,8 +73,8 @@ public abstract class d extends ConstraintLayout {
     private void o() {
         Handler handler = getHandler();
         if (handler != null) {
-            handler.removeCallbacks(this.f15606d);
-            handler.post(this.f15606d);
+            handler.removeCallbacks(this.f15746d);
+            handler.post(this.f15746d);
         }
     }
 
@@ -89,17 +89,17 @@ public abstract class d extends ConstraintLayout {
 
     int j(int i10) {
         if (i10 == 2) {
-            return Math.round(this.f15607e * 0.66f);
+            return Math.round(this.f15747e * 0.66f);
         }
-        return this.f15607e;
+        return this.f15747e;
     }
 
     public int k() {
-        return this.f15607e;
+        return this.f15747e;
     }
 
     public void l(int i10) {
-        this.f15607e = i10;
+        this.f15747e = i10;
         n();
     }
 
@@ -110,8 +110,8 @@ public abstract class d extends ConstraintLayout {
         HashMap hashMap = new HashMap();
         for (int i10 = 0; i10 < getChildCount(); i10++) {
             View childAt = getChildAt(i10);
-            if (childAt.getId() != ah.f.f722c && !m(childAt)) {
-                int i11 = (Integer) childAt.getTag(ah.f.f732m);
+            if (childAt.getId() != bh.f.f6710c && !m(childAt)) {
+                int i11 = (Integer) childAt.getTag(bh.f.f6720m);
                 if (i11 == null) {
                     i11 = 1;
                 }
@@ -141,6 +141,6 @@ public abstract class d extends ConstraintLayout {
 
     @Override // android.view.View
     public void setBackgroundColor(int i10) {
-        this.f15608i.X(ColorStateList.valueOf(i10));
+        this.f15748i.X(ColorStateList.valueOf(i10));
     }
 }

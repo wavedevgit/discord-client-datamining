@@ -66,11 +66,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18 = var9;
     var12 = copyDataProperties(var18, var17);
     var6.label = var9;
-    var9 = {
-        'width': 24,
-        'height': 24
-    };
-    var6.icon = var9;
     var9 = {};
     var10 = var5[var10];
     var10 = var11.bind(var0)(var10);
@@ -115,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.style = var5;
         var5 = var6.map;
         var4 = function(arg0, arg1) { // Environment: var4
-            _fun62269: for (var _fun62269_ip = 0;;) switch (_fun62269_ip) {
+            _fun62106: for (var _fun62106_ip = 0;;) switch (_fun62106_ip) {
                 case 0:
                     var8 = arg0;
                     var4 = arg1;
@@ -178,23 +173,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9 != var6;
                     var6 = null;
                     if (!var10) {
-                        _fun62269_ip = 284;
-                        continue _fun62269
+                        _fun62106_ip = 284;
+                        continue _fun62106
                     }
                 case 253:
                     var11 = _closure2_slot0;
                     var10 = '';
                     var6 = null;
                     if (!(var10 !== var11)) {
-                        _fun62269_ip = 284;
-                        continue _fun62269
+                        _fun62106_ip = 284;
+                        continue _fun62106
                     }
                 case 267:
                     var8 = var8.renderSeparatorBelow;
                     var6 = null;
                     if (!var8) {
-                        _fun62269_ip = 284;
-                        continue _fun62269
+                        _fun62106_ip = 284;
+                        continue _fun62106
                     }
                 case 280:
                     var6 = _closure2_slot0;
@@ -212,4 +207,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 4682, 671, 5430, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 4682, 671, 5431, 2]);

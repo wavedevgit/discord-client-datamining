@@ -19,19 +19,19 @@ public abstract class o {
     class a implements v {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ c f15181d;
+        final /* synthetic */ c f15321d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ d f15182e;
+        final /* synthetic */ d f15322e;
 
         a(c cVar, d dVar) {
-            this.f15181d = cVar;
-            this.f15182e = dVar;
+            this.f15321d = cVar;
+            this.f15322e = dVar;
         }
 
         @Override // androidx.core.view.v
         public WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat) {
-            return this.f15181d.a(view, windowInsetsCompat, new d(this.f15182e));
+            return this.f15321d.a(view, windowInsetsCompat, new d(this.f15322e));
         }
     }
 
@@ -162,29 +162,29 @@ public abstract class o {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f15183a;
+        public int f15323a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f15184b;
+        public int f15324b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f15185c;
+        public int f15325c;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f15186d;
+        public int f15326d;
 
         public d(int i10, int i11, int i12, int i13) {
-            this.f15183a = i10;
-            this.f15184b = i11;
-            this.f15185c = i12;
-            this.f15186d = i13;
+            this.f15323a = i10;
+            this.f15324b = i11;
+            this.f15325c = i12;
+            this.f15326d = i13;
         }
 
         public d(d dVar) {
-            this.f15183a = dVar.f15183a;
-            this.f15184b = dVar.f15184b;
-            this.f15185c = dVar.f15185c;
-            this.f15186d = dVar.f15186d;
+            this.f15323a = dVar.f15323a;
+            this.f15324b = dVar.f15324b;
+            this.f15325c = dVar.f15325c;
+            this.f15326d = dVar.f15326d;
         }
     }
 }

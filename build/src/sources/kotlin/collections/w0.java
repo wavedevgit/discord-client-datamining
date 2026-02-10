@@ -9,50 +9,50 @@ import kotlin.jvm.internal.Intrinsics;
 public final class w0 extends d implements RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object[] f32116e;
+    private final Object[] f31825e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f32117i;
+    private final int f31826i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f32118o;
+    private int f31827o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f32119p;
+    private int f31828p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends c {
 
         /* renamed from: i  reason: collision with root package name */
-        private int f32120i;
+        private int f31829i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f32121o;
+        private int f31830o;
 
         a() {
-            this.f32120i = w0.this.size();
-            this.f32121o = w0.this.f32118o;
+            this.f31829i = w0.this.size();
+            this.f31830o = w0.this.f31827o;
         }
 
         @Override // kotlin.collections.c
         protected void a() {
-            if (this.f32120i == 0) {
+            if (this.f31829i == 0) {
                 b();
                 return;
             }
-            c(w0.this.f32116e[this.f32121o]);
-            this.f32121o = (this.f32121o + 1) % w0.this.f32117i;
-            this.f32120i--;
+            c(w0.this.f31825e[this.f31830o]);
+            this.f31830o = (this.f31830o + 1) % w0.this.f31826i;
+            this.f31829i--;
         }
     }
 
     public w0(Object[] buffer, int i10) {
         Intrinsics.checkNotNullParameter(buffer, "buffer");
-        this.f32116e = buffer;
+        this.f31825e = buffer;
         if (i10 >= 0) {
             if (i10 <= buffer.length) {
-                this.f32117i = buffer.length;
-                this.f32119p = i10;
+                this.f31826i = buffer.length;
+                this.f31828p = i10;
                 return;
             }
             throw new IllegalArgumentException(("ring buffer filled size: " + i10 + " cannot be larger than the buffer size: " + buffer.length).toString());
@@ -62,19 +62,19 @@ public final class w0 extends d implements RandomAccess {
 
     @Override // kotlin.collections.b
     public int c() {
-        return this.f32119p;
+        return this.f31828p;
     }
 
     @Override // kotlin.collections.d, java.util.List
     public Object get(int i10) {
-        d.f32090d.b(i10, size());
-        return this.f32116e[(this.f32118o + i10) % this.f32117i];
+        d.f31799d.b(i10, size());
+        return this.f31825e[(this.f31827o + i10) % this.f31826i];
     }
 
     public final void h(Object obj) {
         if (!j()) {
-            this.f32116e[(this.f32118o + size()) % this.f32117i] = obj;
-            this.f32119p = size() + 1;
+            this.f31825e[(this.f31827o + size()) % this.f31826i] = obj;
+            this.f31828p = size() + 1;
             return;
         }
         throw new IllegalStateException("ring buffer is full");
@@ -82,10 +82,10 @@ public final class w0 extends d implements RandomAccess {
 
     public final w0 i(int i10) {
         Object[] array;
-        int i11 = this.f32117i;
+        int i11 = this.f31826i;
         int i12 = kotlin.ranges.d.i(i11 + (i11 >> 1) + 1, i10);
-        if (this.f32118o == 0) {
-            array = Arrays.copyOf(this.f32116e, i12);
+        if (this.f31827o == 0) {
+            array = Arrays.copyOf(this.f31825e, i12);
             Intrinsics.checkNotNullExpressionValue(array, "copyOf(...)");
         } else {
             array = toArray(new Object[i12]);
@@ -99,7 +99,7 @@ public final class w0 extends d implements RandomAccess {
     }
 
     public final boolean j() {
-        if (size() == this.f32117i) {
+        if (size() == this.f31826i) {
             return true;
         }
         return false;
@@ -109,16 +109,16 @@ public final class w0 extends d implements RandomAccess {
         if (i10 >= 0) {
             if (i10 <= size()) {
                 if (i10 > 0) {
-                    int i11 = this.f32118o;
-                    int i12 = (i11 + i10) % this.f32117i;
+                    int i11 = this.f31827o;
+                    int i12 = (i11 + i10) % this.f31826i;
                     if (i11 > i12) {
-                        l.v(this.f32116e, null, i11, this.f32117i);
-                        l.v(this.f32116e, null, 0, i12);
+                        l.v(this.f31825e, null, i11, this.f31826i);
+                        l.v(this.f31825e, null, 0, i12);
                     } else {
-                        l.v(this.f32116e, null, i11, i12);
+                        l.v(this.f31825e, null, i11, i12);
                     }
-                    this.f32118o = i12;
-                    this.f32119p = size() - i10;
+                    this.f31827o = i12;
+                    this.f31828p = size() - i10;
                     return;
                 }
                 return;
@@ -138,12 +138,12 @@ public final class w0 extends d implements RandomAccess {
         int size = size();
         int i10 = 0;
         int i11 = 0;
-        for (int i12 = this.f32118o; i11 < size && i12 < this.f32117i; i12++) {
-            array[i11] = this.f32116e[i12];
+        for (int i12 = this.f31827o; i11 < size && i12 < this.f31826i; i12++) {
+            array[i11] = this.f31825e[i12];
             i11++;
         }
         while (i11 < size) {
-            array[i11] = this.f32116e[i10];
+            array[i11] = this.f31825e[i10];
             i11++;
             i10++;
         }

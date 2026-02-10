@@ -100,7 +100,7 @@ public class SurfaceMountingManager {
             return;
         }
         this.mTagToViewState.put(Integer.valueOf(this.mSurfaceId), new ViewState(this.mSurfaceId, view, this.mRootViewManager, true));
-        GuardedRunnable guardedRunnable = new GuardedRunnable((ReactContext) db.a.c(this.mThemedReactContext)) { // from class: com.facebook.react.fabric.mounting.SurfaceMountingManager.1
+        GuardedRunnable guardedRunnable = new GuardedRunnable((ReactContext) eb.a.c(this.mThemedReactContext)) { // from class: com.facebook.react.fabric.mounting.SurfaceMountingManager.1
             @Override // com.facebook.react.bridge.GuardedRunnable
             public void runGuarded() {
                 if (SurfaceMountingManager.this.isStopped()) {
@@ -111,7 +111,7 @@ public class SurfaceMountingManager {
                     ReactSoftExceptionLogger.logSoftException(str, new IllegalViewOperationException("Race condition in addRootView detected. Trying to set an id of [" + SurfaceMountingManager.this.mSurfaceId + "] on the RootView, but that id has already been set. "));
                 } else if (view.getId() != -1) {
                     String str2 = SurfaceMountingManager.TAG;
-                    p8.a.o(str2, "Trying to add RootTag to RootView that already has a tag: existing tag: [%d] new tag: [%d]", Integer.valueOf(view.getId()), Integer.valueOf(SurfaceMountingManager.this.mSurfaceId));
+                    q8.a.o(str2, "Trying to add RootTag to RootView that already has a tag: existing tag: [%d] new tag: [%d]", Integer.valueOf(view.getId()), Integer.valueOf(SurfaceMountingManager.this.mSurfaceId));
                     ReactSoftExceptionLogger.logSoftException(str2, new IllegalViewOperationException("Trying to add a root view with an explicit id already set. React Native uses the id field to track react tags and will overwrite this field. If that is fine, explicitly overwrite the id field to View.NO_ID before calling addRootView."));
                 }
                 view.setId(SurfaceMountingManager.this.mSurfaceId);
@@ -137,7 +137,7 @@ public class SurfaceMountingManager {
                 boolean z10 = SHOW_CHANGED_VIEW_HIERARCHIES;
                 if (z10) {
                     String str = TAG;
-                    p8.a.m(str, "addViewAt: [" + view.getId() + "] -> [" + viewGroup.getId() + "] idx: " + i10 + " BEFORE");
+                    q8.a.m(str, "addViewAt: [" + view.getId() + "] -> [" + viewGroup.getId() + "] idx: " + i10 + " BEFORE");
                     logViewHierarchy(viewGroup, false);
                 }
                 try {
@@ -147,7 +147,7 @@ public class SurfaceMountingManager {
                             @Override // java.lang.Runnable
                             public void run() {
                                 String str2 = SurfaceMountingManager.TAG;
-                                p8.a.m(str2, "addViewAt: [" + view.getId() + "] -> [" + viewGroup.getId() + "] idx: " + i10 + " AFTER");
+                                q8.a.m(str2, "addViewAt: [" + view.getId() + "] -> [" + viewGroup.getId() + "] idx: " + i10 + " AFTER");
                                 SurfaceMountingManager.logViewHierarchy(viewGroup, false);
                             }
                         });
@@ -232,7 +232,7 @@ public class SurfaceMountingManager {
         this.mThemedReactContext = null;
         this.mOnViewAttachMountItems.clear();
         String str = TAG;
-        p8.a.m(str, "Surface [" + this.mSurfaceId + "] was stopped on SurfaceMountingManager.");
+        q8.a.m(str, "Surface [" + this.mSurfaceId + "] was stopped on SurfaceMountingManager.");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -241,15 +241,15 @@ public class SurfaceMountingManager {
         int id2;
         int id3 = viewGroup.getId();
         String str = TAG;
-        p8.a.m(str, "  <ViewGroup tag=" + id3 + " class=" + viewGroup.getClass().toString() + ">");
+        q8.a.m(str, "  <ViewGroup tag=" + id3 + " class=" + viewGroup.getClass().toString() + ">");
         for (int i10 = 0; i10 < viewGroup.getChildCount(); i10++) {
             String str2 = TAG;
-            p8.a.m(str2, "     <View idx=" + i10 + " tag=" + viewGroup.getChildAt(i10).getId() + " class=" + viewGroup.getChildAt(i10).getClass().toString() + ">");
+            q8.a.m(str2, "     <View idx=" + i10 + " tag=" + viewGroup.getChildAt(i10).getId() + " class=" + viewGroup.getChildAt(i10).getClass().toString() + ">");
         }
         String str3 = TAG;
-        p8.a.m(str3, "  </ViewGroup tag=" + id3 + ">");
+        q8.a.m(str3, "  </ViewGroup tag=" + id3 + ">");
         if (z10) {
-            p8.a.m(str3, "Displaying Ancestors:");
+            q8.a.m(str3, "Displaying Ancestors:");
             for (ViewParent parent = viewGroup.getParent(); parent != null; parent = parent.getParent()) {
                 if (parent instanceof ViewGroup) {
                     viewGroup2 = (ViewGroup) parent;
@@ -262,7 +262,7 @@ public class SurfaceMountingManager {
                     id2 = viewGroup2.getId();
                 }
                 String str4 = TAG;
-                p8.a.m(str4, "<ViewParent tag=" + id2 + " class=" + parent.getClass().toString() + ">");
+                q8.a.m(str4, "<ViewParent tag=" + id2 + " class=" + parent.getClass().toString() + ">");
             }
         }
     }
@@ -289,7 +289,7 @@ public class SurfaceMountingManager {
         final int i14;
         int i15 = 0;
         if (SHOW_CHANGED_VIEW_HIERARCHIES) {
-            p8.a.m(TAG, "removeViewAt: [" + i11 + "] -> [" + i10 + "] idx: " + i12 + " BEFORE");
+            q8.a.m(TAG, "removeViewAt: [" + i11 + "] -> [" + i10 + "] idx: " + i12 + " BEFORE");
             logViewHierarchy(viewGroup, false);
         }
         IViewGroupManager<ViewGroup> viewGroupManager = getViewGroupManager(getViewState(i10));
@@ -313,7 +313,7 @@ public class SurfaceMountingManager {
                 }
             }
             if (i15 == -1) {
-                p8.a.m(TAG, "removeViewAt: [" + i11 + "] -> [" + i10 + "] @" + i12 + ": view already removed from parent! Children in parent: " + childCount);
+                q8.a.m(TAG, "removeViewAt: [" + i11 + "] -> [" + i10 + "] @" + i12 + ": view already removed from parent! Children in parent: " + childCount);
                 return;
             }
             logViewHierarchy(viewGroup, true);
@@ -329,7 +329,7 @@ public class SurfaceMountingManager {
                     @Override // java.lang.Runnable
                     public void run() {
                         String str = SurfaceMountingManager.TAG;
-                        p8.a.m(str, "removeViewAt: [" + i11 + "] -> [" + i10 + "] idx: " + i14 + " AFTER");
+                        q8.a.m(str, "removeViewAt: [" + i11 + "] -> [" + i10 + "] idx: " + i14 + " AFTER");
                         SurfaceMountingManager.logViewHierarchy(viewGroup, false);
                     }
                 });
@@ -365,7 +365,7 @@ public class SurfaceMountingManager {
                             SurfaceMountingManager.this.lambda$addViewAt$2(i11);
                         }
                     });
-                    p8.a.J(TAG, "addViewAt: View with tag [" + i11 + "] already has a parent [" + ((ViewGroup) parent).getId() + "], enqueuing add operation into ViewTransitionCoordinator");
+                    q8.a.J(TAG, "addViewAt: View with tag [" + i11 + "] already has a parent [" + ((ViewGroup) parent).getId() + "], enqueuing add operation into ViewTransitionCoordinator");
                 }
                 this.mViewTransitionCoordinator.enqueueOperation(new AddViewOperation(i11, i10, i12, viewGroup, view2));
                 return;
@@ -373,7 +373,7 @@ public class SurfaceMountingManager {
             throw new IllegalStateException("Unable to find view for viewState " + viewState + " and tag " + i11);
         }
         String str = "Unable to add a view into a view that is not a ViewGroup. ParentTag: " + i10 + " - Tag: " + i11 + " - Index: " + i12;
-        p8.a.m(TAG, str);
+        q8.a.m(TAG, str);
         throw new IllegalStateException(str);
     }
 
@@ -395,7 +395,7 @@ public class SurfaceMountingManager {
 
     /* JADX WARN: Type inference failed for: r6v1, types: [android.view.View] */
     public void createViewUnsafe(@NonNull String str, int i10, ReadableMap readableMap, StateWrapper stateWrapper, EventEmitterWrapper eventEmitterWrapper, boolean z10) {
-        qb.a.c(0L, "SurfaceMountingManager::createViewUnsafe(" + str + ")");
+        rb.a.c(0L, "SurfaceMountingManager::createViewUnsafe(" + str + ")");
         try {
             ReactStylesDiffMap reactStylesDiffMap = new ReactStylesDiffMap(readableMap);
             ViewState viewState = new ViewState(i10);
@@ -408,9 +408,9 @@ public class SurfaceMountingManager {
                 viewState.mView = viewManager.createView(i10, this.mThemedReactContext, reactStylesDiffMap, stateWrapper, this.mJSResponderHandler);
                 viewState.mViewManager = viewManager;
             }
-            qb.a.i(0L);
+            rb.a.i(0L);
         } catch (Throwable th2) {
-            qb.a.i(0L);
+            rb.a.i(0L);
             throw th2;
         }
     }
@@ -553,7 +553,7 @@ public class SurfaceMountingManager {
         String str;
         View view;
         if (ReactBuildConfig.DEBUG) {
-            p8.a.o(TAG, "Views created for surface {%d}:", Integer.valueOf(getSurfaceId()));
+            q8.a.o(TAG, "Views created for surface {%d}:", Integer.valueOf(getSurfaceId()));
             for (ViewState viewState : this.mTagToViewState.values()) {
                 ViewManager viewManager = viewState.mViewManager;
                 Integer num = null;
@@ -571,7 +571,7 @@ public class SurfaceMountingManager {
                 if (view != null) {
                     num = Integer.valueOf(view.getId());
                 }
-                p8.a.o(TAG, "<%s id=%d parentTag=%s isRoot=%b />", str, Integer.valueOf(viewState.mReactTag), num, Boolean.valueOf(viewState.mIsRoot));
+                q8.a.o(TAG, "<%s id=%d parentTag=%s isRoot=%b />", str, Integer.valueOf(viewState.mReactTag), num, Boolean.valueOf(viewState.mIsRoot));
             }
         }
     }
@@ -621,7 +621,7 @@ public class SurfaceMountingManager {
             throw new IllegalStateException("Unable to find view for tag [" + i11 + "]");
         }
         String str = "Unable to remove a view from a view that is not a ViewGroup. ParentTag: " + i11 + " - Tag: " + i10 + " - Index: " + i12;
-        p8.a.m(TAG, str);
+        q8.a.m(TAG, str);
         throw new IllegalStateException(str);
     }
 
@@ -670,7 +670,7 @@ public class SurfaceMountingManager {
 
     public void stopSurface() {
         String str = TAG;
-        p8.a.m(str, "Stopping surface [" + this.mSurfaceId + "]");
+        q8.a.m(str, "Stopping surface [" + this.mSurfaceId + "]");
         if (isStopped()) {
             return;
         }
@@ -878,7 +878,7 @@ public class SurfaceMountingManager {
                     SoftAssertions.assertUnreachable("Unable to find view for tag [" + i10 + "] when updating props. view not present on viewState");
                     return;
                 }
-                ((ViewManager) db.a.c(nullableViewState.mViewManager)).updateProperties(view, nullableViewState.mCurrentProps);
+                ((ViewManager) eb.a.c(nullableViewState.mViewManager)).updateProperties(view, nullableViewState.mCurrentProps);
                 return;
             }
             SoftAssertions.assertUnreachable("Unable to find view for tag [" + i10 + "] when updating props. viewState not found");
@@ -888,7 +888,7 @@ public class SurfaceMountingManager {
         viewState.mCurrentProps = new ReactStylesDiffMap(readableMap);
         View view2 = viewState.mView;
         if (view2 != null) {
-            ((ViewManager) db.a.c(viewState.mViewManager)).updateProperties(view2, viewState.mCurrentProps);
+            ((ViewManager) eb.a.c(viewState.mViewManager)).updateProperties(view2, viewState.mCurrentProps);
             return;
         }
         throw new IllegalStateException("Unable to find view for tag [" + i10 + "]");

@@ -10,11 +10,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {
         '__packager_asset': true,
         'httpServerLocation': '/assets/modules/icymi/native/images',
-        'width': 24.5,
-        'height': 24,
+        'width': 77,
+        'height': 95.5,
         'scales': null,
-        'hash': '684bf0782561b9ed2466dcb8144cf582',
-        'name': 'emoji-neutral',
+        'hash': 'ebbb7db0461de915440e3bdd6a8249c9',
+        'name': 'flash',
         'type': 'png'
     };
     var4 = [2, 3];

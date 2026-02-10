@@ -1,90 +1,108 @@
 package mu;
 
+import java.security.KeyStore;
+import java.security.Provider;
+import java.util.Arrays;
 import java.util.List;
+import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import mu.j;
-import org.bouncycastle.jsse.BCSSLParameters;
-import org.bouncycastle.jsse.BCSSLSocket;
+import org.openjsse.net.ssl.OpenJSSE;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements k {
+public final class g extends h {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f38362a = new b(null);
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f37652e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final j.a f38363b = new a();
+    /* renamed from: f  reason: collision with root package name */
+    private static final boolean f37653f;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements j.a {
-        a() {
-        }
-
-        @Override // mu.j.a
-        public boolean b(SSLSocket sslSocket) {
-            Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-            lu.c.f36804e.b();
-            return false;
-        }
-
-        @Override // mu.j.a
-        public k c(SSLSocket sslSocket) {
-            Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-            return new g();
-        }
-    }
+    /* renamed from: d  reason: collision with root package name */
+    private final Provider f37654d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b {
-        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        public final j.a a() {
-            return g.f38363b;
+        public final g a() {
+            if (!b()) {
+                return null;
+            }
+            return new g(null);
         }
 
-        private b() {
+        public final boolean b() {
+            return g.f37653f;
+        }
+
+        private a() {
         }
     }
 
-    @Override // mu.k
-    public boolean a() {
-        return lu.c.f36804e.b();
-    }
-
-    @Override // mu.k
-    public boolean b(SSLSocket sslSocket) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        return false;
-    }
-
-    @Override // mu.k
-    public String c(SSLSocket sslSocket) {
-        boolean areEqual;
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        String applicationProtocol = ((BCSSLSocket) sslSocket).getApplicationProtocol();
-        if (applicationProtocol == null) {
-            areEqual = true;
-        } else {
-            areEqual = Intrinsics.areEqual(applicationProtocol, "");
+    static {
+        a aVar = new a(null);
+        f37652e = aVar;
+        boolean z10 = false;
+        try {
+            Class.forName("org.openjsse.net.ssl.OpenJSSE", false, aVar.getClass().getClassLoader());
+            z10 = true;
+        } catch (ClassNotFoundException unused) {
         }
-        if (areEqual) {
-            return null;
-        }
-        return applicationProtocol;
+        f37653f = z10;
     }
 
-    @Override // mu.k
-    public void d(SSLSocket sslSocket, String str, List protocols) {
+    public /* synthetic */ g(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    @Override // mu.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
         Intrinsics.checkNotNullParameter(protocols, "protocols");
-        if (b(sslSocket)) {
-            BCSSLSocket bCSSLSocket = (BCSSLSocket) sslSocket;
-            BCSSLParameters parameters = bCSSLSocket.getParameters();
-            parameters.setApplicationProtocols((String[]) lu.h.f36825a.b(protocols).toArray(new String[0]));
-            bCSSLSocket.setParameters(parameters);
+        super.e(sslSocket, str, protocols);
+    }
+
+    @Override // mu.h
+    public String h(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        return super.h(sslSocket);
+    }
+
+    @Override // mu.h
+    public SSLContext n() {
+        SSLContext sSLContext = SSLContext.getInstance("TLSv1.3", this.f37654d);
+        Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLSv1.3\", provider)");
+        return sSLContext;
+    }
+
+    @Override // mu.h
+    public X509TrustManager p() {
+        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm(), this.f37654d);
+        trustManagerFactory.init((KeyStore) null);
+        TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
+        Intrinsics.checkNotNull(trustManagers);
+        if (trustManagers.length == 1) {
+            TrustManager trustManager = trustManagers[0];
+            if (trustManager instanceof X509TrustManager) {
+                Intrinsics.checkNotNull(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
+                return (X509TrustManager) trustManager;
+            }
         }
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Unexpected default trust managers: ");
+        String arrays = Arrays.toString(trustManagers);
+        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
+        sb2.append(arrays);
+        throw new IllegalStateException(sb2.toString().toString());
+    }
+
+    private g() {
+        this.f37654d = new OpenJSSE();
     }
 }

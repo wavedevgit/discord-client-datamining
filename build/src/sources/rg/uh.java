@@ -1,0 +1,26 @@
+package rg;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public enum uh implements x1 {
+    TYPE_UNKNOWN(0),
+    LATIN(1),
+    LATIN_AND_CHINESE(2),
+    LATIN_AND_DEVANAGARI(3),
+    LATIN_AND_JAPANESE(4),
+    LATIN_AND_KOREAN(5),
+    CREDIT_CARD(6),
+    DOCUMENT(7),
+    PIXEL_AI(8);
+    
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f48745d;
+
+    uh(int i10) {
+        this.f48745d = i10;
+    }
+
+    @Override // rg.x1
+    public final int zza() {
+        return this.f48745d;
+    }
+}

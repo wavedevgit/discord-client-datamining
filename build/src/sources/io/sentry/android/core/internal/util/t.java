@@ -11,32 +11,32 @@ import java.nio.charset.Charset;
 public final class t {
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Charset f27259g = Charset.forName("UTF-8");
+    private static final Charset f27459g = Charset.forName("UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f27260a;
+    private final Context f27460a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final x0 f27261b;
+    private final x0 f27461b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ILogger f27262c;
+    private final ILogger f27462c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String[] f27263d;
+    private final String[] f27463d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String[] f27264e;
+    private final String[] f27464e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Runtime f27265f;
+    private final Runtime f27465f;
 
     public t(Context context, x0 x0Var, ILogger iLogger) {
         this(context, x0Var, iLogger, new String[]{"/sbin/su", "/data/local/xbin/su", "/system/bin/su", "/system/xbin/su", "/data/local/bin/su", "/system/app/Superuser.apk", "/system/sd/xbin/su", "/system/bin/failsafe/su", "/data/local/su", "/su/bin/su", "/su/bin", "/system/xbin/daemonsu"}, new String[]{"com.devadvance.rootcloak", "com.devadvance.rootcloakplus", "com.koushikdutta.superuser", "com.thirdparty.superuser", "eu.chainfire.supersu", "com.noshufou.android.su"}, Runtime.getRuntime());
     }
 
     private boolean a() {
-        String a10 = this.f27261b.a();
+        String a10 = this.f27461b.a();
         if (a10 != null && a10.contains("test-keys")) {
             return true;
         }
@@ -45,10 +45,10 @@ public final class t {
 
     private boolean b() {
         String[] strArr;
-        for (String str : this.f27263d) {
+        for (String str : this.f27463d) {
             try {
             } catch (RuntimeException e10) {
-                this.f27262c.a(SentryLevel.ERROR, e10, "Error when trying to check if root file %s exists.", str);
+                this.f27462c.a(SentryLevel.ERROR, e10, "Error when trying to check if root file %s exists.", str);
             }
             if (new File(str).exists()) {
                 return true;
@@ -75,12 +75,12 @@ public final class t {
             java.lang.String[] r0 = new java.lang.String[]{r0, r1}
             r1 = 0
             r2 = 0
-            java.lang.Runtime r3 = r6.f27265f     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
+            java.lang.Runtime r3 = r6.f27465f     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
             java.lang.Process r2 = r3.exec(r0)     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
             java.io.BufferedReader r0 = new java.io.BufferedReader     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
             java.io.InputStreamReader r3 = new java.io.InputStreamReader     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
             java.io.InputStream r4 = r2.getInputStream()     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
-            java.nio.charset.Charset r5 = io.sentry.android.core.internal.util.t.f27259g     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
+            java.nio.charset.Charset r5 = io.sentry.android.core.internal.util.t.f27459g     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
             r3.<init>(r4, r5)     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
             r0.<init>(r3)     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
             java.lang.String r3 = r0.readLine()     // Catch: java.lang.Throwable -> L32
@@ -106,7 +106,7 @@ public final class t {
         L3b:
             throw r3     // Catch: java.lang.Throwable -> L30 java.io.IOException -> L4d
         L3c:
-            io.sentry.ILogger r3 = r6.f27262c     // Catch: java.lang.Throwable -> L4b
+            io.sentry.ILogger r3 = r6.f27462c     // Catch: java.lang.Throwable -> L4b
             io.sentry.SentryLevel r4 = io.sentry.SentryLevel.DEBUG     // Catch: java.lang.Throwable -> L4b
             java.lang.String r5 = "Error when trying to check if SU exists."
             r3.b(r4, r5, r0)     // Catch: java.lang.Throwable -> L4b
@@ -118,7 +118,7 @@ public final class t {
             r0 = move-exception
             goto L5c
         L4d:
-            io.sentry.ILogger r0 = r6.f27262c     // Catch: java.lang.Throwable -> L4b
+            io.sentry.ILogger r0 = r6.f27462c     // Catch: java.lang.Throwable -> L4b
             io.sentry.SentryLevel r3 = io.sentry.SentryLevel.DEBUG     // Catch: java.lang.Throwable -> L4b
             java.lang.String r4 = "SU isn't found on this Device."
             java.lang.Object[] r5 = new java.lang.Object[r1]     // Catch: java.lang.Throwable -> L4b
@@ -139,9 +139,9 @@ public final class t {
     private boolean d(ILogger iLogger) {
         String[] strArr;
         x0 x0Var = new x0(iLogger);
-        PackageManager packageManager = this.f27260a.getPackageManager();
+        PackageManager packageManager = this.f27460a.getPackageManager();
         if (packageManager != null) {
-            for (String str : this.f27264e) {
+            for (String str : this.f27464e) {
                 try {
                     if (x0Var.d() >= 33) {
                         packageManager.getPackageInfo(str, PackageManager.PackageInfoFlags.of(0L));
@@ -157,18 +157,18 @@ public final class t {
     }
 
     public boolean e() {
-        if (!a() && !b() && !c() && !d(this.f27262c)) {
+        if (!a() && !b() && !c() && !d(this.f27462c)) {
             return false;
         }
         return true;
     }
 
     t(Context context, x0 x0Var, ILogger iLogger, String[] strArr, String[] strArr2, Runtime runtime) {
-        this.f27260a = (Context) io.sentry.util.y.c(context, "The application context is required.");
-        this.f27261b = (x0) io.sentry.util.y.c(x0Var, "The BuildInfoProvider is required.");
-        this.f27262c = (ILogger) io.sentry.util.y.c(iLogger, "The Logger is required.");
-        this.f27263d = (String[]) io.sentry.util.y.c(strArr, "The root Files are required.");
-        this.f27264e = (String[]) io.sentry.util.y.c(strArr2, "The root packages are required.");
-        this.f27265f = (Runtime) io.sentry.util.y.c(runtime, "The Runtime is required.");
+        this.f27460a = (Context) io.sentry.util.y.c(context, "The application context is required.");
+        this.f27461b = (x0) io.sentry.util.y.c(x0Var, "The BuildInfoProvider is required.");
+        this.f27462c = (ILogger) io.sentry.util.y.c(iLogger, "The Logger is required.");
+        this.f27463d = (String[]) io.sentry.util.y.c(strArr, "The root Files are required.");
+        this.f27464e = (String[]) io.sentry.util.y.c(strArr2, "The root packages are required.");
+        this.f27465f = (Runtime) io.sentry.util.y.c(runtime, "The Runtime is required.");
     }
 }

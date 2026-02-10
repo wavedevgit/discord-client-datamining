@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guilds_bar/native/hooks/useGuildsBarBottomRightBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun101487: for (var _fun101487_ip = 0;;) switch (_fun101487_ip) {
+        _fun101465: for (var _fun101465_ip = 0;;) switch (_fun101465_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.mentionCount;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var1.shouldShowInvitesDisabled;
                 var9 = undefined;
                 if (!(var7 === var9)) {
-                    _fun101487_ip = 49;
-                    continue _fun101487
+                    _fun101465_ip = 49;
+                    continue _fun101465
                 }
             case 47:
                 var7 = false;
@@ -87,18 +87,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot4;
                 var8 = var3.useState;
                 var2 = function() { // Environment: var0
-                    _fun101488: for (var _fun101488_ip = 0;;) switch (_fun101488_ip) {
+                    _fun101466: for (var _fun101466_ip = 0;;) switch (_fun101466_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var0 = 0;
                             if (!(!(var1 > var0))) {
-                                _fun101488_ip = 22;
-                                continue _fun101488
+                                _fun101466_ip = 22;
+                                continue _fun101466
                             }
                         case 13:
                             var0 = _closure1_slot6;
-                            _fun101488_ip = 29;
-                            continue _fun101488;
+                            _fun101466_ip = 29;
+                            continue _fun101466;
                         case 22:
                             var0 = _closure1_slot5;
                         case 29:
@@ -123,26 +123,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[3] = var5;
                 var1[4] = var4;
                 var0 = function() { // Environment: var0
-                    _fun101489: for (var _fun101489_ip = 0;;) switch (_fun101489_ip) {
+                    _fun101467: for (var _fun101467_ip = 0;;) switch (_fun101467_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var0 = 0;
                             if (!(!(var1 > var0))) {
-                                _fun101489_ip = 280;
-                                continue _fun101489
+                                _fun101467_ip = 280;
+                                continue _fun101467
                             }
                         case 16:
                             var0 = _closure2_slot2;
                             var1 = null;
                             if (!(var1 == var0)) {
-                                _fun101489_ip = 164;
-                                continue _fun101489
+                                _fun101467_ip = 164;
+                                continue _fun101467
                             }
                         case 29:
                             var0 = _closure2_slot3;
                             if (var0) {
-                                _fun101489_ip = 57;
-                                continue _fun101489
+                                _fun101467_ip = 57;
+                                continue _fun101467
                             }
                         case 36:
                             var0 = {};
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = 'no-hide-descendants';
                             var1.importantForAccessibility = var6;
                             var6 = function arg0() {
-                                _fun101490: for (var _fun101490_ip = 0;;) switch (_fun101490_ip) {
+                                _fun101468: for (var _fun101468_ip = 0;;) switch (_fun101468_ip) {
                                     case 0:
                                         var0 = arg0;
                                         var0 = var0.nativeEvent;
@@ -252,8 +252,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var3 = _closure2_slot4;
                                         var2 = var0.width;
                                         if (!(var3 !== var2)) {
-                                            _fun101490_ip = 47;
-                                            continue _fun101490
+                                            _fun101468_ip = 47;
+                                            continue _fun101468
                                         }
                                     case 31:
                                         var2 = _closure2_slot5;
@@ -281,4 +281,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 8714, 33, 13210, 8713, 13211, 13215, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 8692, 33, 13197, 8691, 13198, 13202, 2]);

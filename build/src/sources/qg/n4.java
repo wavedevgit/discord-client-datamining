@@ -1,54 +1,43 @@
 package qg;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class n4 implements yi.d {
+final class n4 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n4 f47452a = new n4();
+    static final n4 f46070a = new n4();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f46071b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f46072c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f46073d;
 
     static {
-        c.b a10 = yi.c.a("errorCode");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("imageInfo");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = yi.c.a("isColdCall");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
-        c.b a13 = yi.c.a("options");
-        v1 v1Var4 = new v1();
-        v1Var4.a(4);
-        a13.b(v1Var4.b()).a();
-        c.b a14 = yi.c.a("documentPresenceConfidence");
-        v1 v1Var5 = new v1();
-        v1Var5.a(5);
-        a14.b(v1Var5.b()).a();
-        c.b a15 = yi.c.a("documentCornerConfidence");
-        v1 v1Var6 = new v1();
-        v1Var6.a(6);
-        a15.b(v1Var6.b()).a();
-        c.b a16 = yi.c.a("documentRotationSuggestionDegrees");
-        v1 v1Var7 = new v1();
-        v1Var7.a(7);
-        a16.b(v1Var7.b()).a();
-        c.b a17 = yi.c.a("documentRotationSuggestionConfidence");
-        v1 v1Var8 = new v1();
-        v1Var8.a(8);
-        a17.b(v1Var8.b()).a();
+        c.b a10 = zi.c.a("inferenceCommonLogEvent");
+        s1 s1Var = new s1();
+        s1Var.a(1);
+        f46071b = a10.b(s1Var.b()).a();
+        c.b a11 = zi.c.a("options");
+        s1 s1Var2 = new s1();
+        s1Var2.a(2);
+        f46072c = a11.b(s1Var2.b()).a();
+        c.b a12 = zi.c.a("imageInfo");
+        s1 s1Var3 = new s1();
+        s1Var3.a(3);
+        f46073d = a12.b(s1Var3.b()).a();
     }
 
     private n4() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
+        zi.e eVar = (zi.e) obj2;
         throw null;
     }
 }

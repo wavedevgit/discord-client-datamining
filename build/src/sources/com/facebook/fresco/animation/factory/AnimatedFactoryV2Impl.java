@@ -8,99 +8,99 @@ import com.facebook.fresco.animation.factory.AnimatedFactoryV2Impl;
 import com.facebook.imagepipeline.bitmaps.PlatformBitmapFactory;
 import com.facebook.imagepipeline.common.ImageDecodeOptions;
 import java.util.concurrent.ExecutorService;
-import m8.g;
-import m8.i;
-import na.n;
-import o8.d;
-import o8.m;
-import sa.e;
-import sa.k;
-import sa.o;
+import n8.g;
+import n8.i;
+import oa.n;
+import p8.d;
+import p8.m;
+import ta.e;
+import ta.k;
+import ta.o;
 @d
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class AnimatedFactoryV2Impl implements ha.a {
+public class AnimatedFactoryV2Impl implements ia.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final PlatformBitmapFactory f10079a;
+    private final PlatformBitmapFactory f10219a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final n f10080b;
+    private final n f10220b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final la.n f10081c;
+    private final ma.n f10221c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f10082d;
+    private final boolean f10222d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ha.d f10083e;
+    private ia.d f10223e;
 
     /* renamed from: f  reason: collision with root package name */
-    private ia.b f10084f;
+    private ja.b f10224f;
 
     /* renamed from: g  reason: collision with root package name */
-    private ja.a f10085g;
+    private ka.a f10225g;
 
     /* renamed from: h  reason: collision with root package name */
-    private ra.a f10086h;
+    private sa.a f10226h;
 
     /* renamed from: i  reason: collision with root package name */
-    private g f10087i;
+    private g f10227i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f10088j;
+    private int f10228j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f10089k;
+    private final boolean f10229k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f10090l;
+    private int f10230l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class a implements qa.c {
+    class a implements ra.c {
         a() {
         }
 
-        @Override // qa.c
+        @Override // ra.c
         public e a(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
-            return AnimatedFactoryV2Impl.this.n().a(kVar, imageDecodeOptions, imageDecodeOptions.f10335i);
+            return AnimatedFactoryV2Impl.this.n().a(kVar, imageDecodeOptions, imageDecodeOptions.f10475i);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public class b implements ia.b {
+    public class b implements ja.b {
         b() {
         }
 
-        @Override // ia.b
-        public ga.a a(ga.e eVar, Rect rect) {
-            return new ia.a(AnimatedFactoryV2Impl.this.m(), eVar, rect, AnimatedFactoryV2Impl.this.f10082d);
+        @Override // ja.b
+        public ha.a a(ha.e eVar, Rect rect) {
+            return new ja.a(AnimatedFactoryV2Impl.this.m(), eVar, rect, AnimatedFactoryV2Impl.this.f10222d);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public class c implements ia.b {
+    public class c implements ja.b {
         c() {
         }
 
-        @Override // ia.b
-        public ga.a a(ga.e eVar, Rect rect) {
-            return new ia.a(AnimatedFactoryV2Impl.this.m(), eVar, rect, AnimatedFactoryV2Impl.this.f10082d);
+        @Override // ja.b
+        public ha.a a(ha.e eVar, Rect rect) {
+            return new ja.a(AnimatedFactoryV2Impl.this.m(), eVar, rect, AnimatedFactoryV2Impl.this.f10222d);
         }
     }
 
     @d
-    public AnimatedFactoryV2Impl(PlatformBitmapFactory platformBitmapFactory, n nVar, la.n nVar2, boolean z10, boolean z11, int i10, int i11, g gVar) {
-        this.f10079a = platformBitmapFactory;
-        this.f10080b = nVar;
-        this.f10081c = nVar2;
-        this.f10088j = i10;
-        this.f10089k = z11;
-        this.f10082d = z10;
-        this.f10087i = gVar;
-        this.f10090l = i11;
+    public AnimatedFactoryV2Impl(PlatformBitmapFactory platformBitmapFactory, n nVar, ma.n nVar2, boolean z10, boolean z11, int i10, int i11, g gVar) {
+        this.f10219a = platformBitmapFactory;
+        this.f10220b = nVar;
+        this.f10221c = nVar2;
+        this.f10228j = i10;
+        this.f10229k = z11;
+        this.f10222d = z10;
+        this.f10227i = gVar;
+        this.f10230l = i11;
     }
 
     public static /* synthetic */ Integer e() {
@@ -111,76 +111,76 @@ public class AnimatedFactoryV2Impl implements ha.a {
         return 3;
     }
 
-    private ha.d j() {
-        return new ha.e(new c(), this.f10079a, this.f10089k);
+    private ia.d j() {
+        return new ia.e(new c(), this.f10219a, this.f10229k);
     }
 
-    private w9.d k() {
-        Supplier supplier = new Supplier() { // from class: w9.b
+    private x9.d k() {
+        Supplier supplier = new Supplier() { // from class: x9.b
             @Override // com.facebook.common.internal.Supplier
             public final Object get() {
                 return AnimatedFactoryV2Impl.e();
             }
         };
-        ExecutorService executorService = this.f10087i;
+        ExecutorService executorService = this.f10227i;
         if (executorService == null) {
-            executorService = new m8.d(this.f10080b.d());
+            executorService = new n8.d(this.f10220b.d());
         }
-        Supplier supplier2 = new Supplier() { // from class: w9.c
+        Supplier supplier2 = new Supplier() { // from class: x9.c
             @Override // com.facebook.common.internal.Supplier
             public final Object get() {
                 return AnimatedFactoryV2Impl.f();
             }
         };
-        Supplier supplier3 = m.f41605b;
-        return new w9.d(l(), i.y(), executorService, RealtimeSinceBootClock.get(), this.f10079a, this.f10081c, supplier, supplier2, supplier3, m.a(Boolean.valueOf(this.f10089k)), m.a(Boolean.valueOf(this.f10082d)), m.a(Integer.valueOf(this.f10088j)), m.a(Integer.valueOf(this.f10090l)));
+        Supplier supplier3 = m.f43065b;
+        return new x9.d(l(), i.y(), executorService, RealtimeSinceBootClock.get(), this.f10219a, this.f10221c, supplier, supplier2, supplier3, m.a(Boolean.valueOf(this.f10229k)), m.a(Boolean.valueOf(this.f10222d)), m.a(Integer.valueOf(this.f10228j)), m.a(Integer.valueOf(this.f10230l)));
     }
 
-    private ia.b l() {
-        if (this.f10084f == null) {
-            this.f10084f = new b();
+    private ja.b l() {
+        if (this.f10224f == null) {
+            this.f10224f = new b();
         }
-        return this.f10084f;
+        return this.f10224f;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public ja.a m() {
-        if (this.f10085g == null) {
-            this.f10085g = new ja.a();
+    public ka.a m() {
+        if (this.f10225g == null) {
+            this.f10225g = new ka.a();
         }
-        return this.f10085g;
+        return this.f10225g;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public ha.d n() {
-        if (this.f10083e == null) {
-            this.f10083e = j();
+    public ia.d n() {
+        if (this.f10223e == null) {
+            this.f10223e = j();
         }
-        return this.f10083e;
+        return this.f10223e;
     }
 
-    @Override // ha.a
-    public ra.a a(Context context) {
-        if (this.f10086h == null) {
-            this.f10086h = k();
+    @Override // ia.a
+    public sa.a a(Context context) {
+        if (this.f10226h == null) {
+            this.f10226h = k();
         }
-        return this.f10086h;
+        return this.f10226h;
     }
 
-    @Override // ha.a
-    public qa.c b() {
-        return new qa.c() { // from class: w9.a
-            @Override // qa.c
+    @Override // ia.a
+    public ra.c b() {
+        return new ra.c() { // from class: x9.a
+            @Override // ra.c
             public final e a(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
                 e b10;
-                b10 = AnimatedFactoryV2Impl.this.n().b(kVar, imageDecodeOptions, imageDecodeOptions.f10335i);
+                b10 = AnimatedFactoryV2Impl.this.n().b(kVar, imageDecodeOptions, imageDecodeOptions.f10475i);
                 return b10;
             }
         };
     }
 
-    @Override // ha.a
-    public qa.c c() {
+    @Override // ia.a
+    public ra.c c() {
         return new a();
     }
 }

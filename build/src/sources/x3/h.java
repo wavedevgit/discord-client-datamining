@@ -18,24 +18,24 @@ public interface h extends Closeable {
     public static abstract class a {
 
         /* renamed from: b  reason: collision with root package name */
-        public static final C0728a f54490b = new C0728a(null);
+        public static final C0761a f54582b = new C0761a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f54491a;
+        public final int f54583a;
 
         /* renamed from: x3.h$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0728a {
-            public /* synthetic */ C0728a(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0761a {
+            public /* synthetic */ C0761a(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
-            private C0728a() {
+            private C0761a() {
             }
         }
 
         public a(int i10) {
-            this.f54491a = i10;
+            this.f54583a = i10;
         }
 
         private final void a(String str) {
@@ -136,84 +136,84 @@ public interface h extends Closeable {
     public static final class b {
 
         /* renamed from: f  reason: collision with root package name */
-        public static final C0729b f54492f = new C0729b(null);
+        public static final C0762b f54584f = new C0762b(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public final Context f54493a;
+        public final Context f54585a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f54494b;
+        public final String f54586b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final a f54495c;
+        public final a f54587c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final boolean f54496d;
+        public final boolean f54588d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f54497e;
+        public final boolean f54589e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final Context f54498a;
+            private final Context f54590a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f54499b;
+            private String f54591b;
 
             /* renamed from: c  reason: collision with root package name */
-            private a f54500c;
+            private a f54592c;
 
             /* renamed from: d  reason: collision with root package name */
-            private boolean f54501d;
+            private boolean f54593d;
 
             /* renamed from: e  reason: collision with root package name */
-            private boolean f54502e;
+            private boolean f54594e;
 
             public a(Context context) {
                 Intrinsics.checkNotNullParameter(context, "context");
-                this.f54498a = context;
+                this.f54590a = context;
             }
 
             public a a(boolean z10) {
-                this.f54502e = z10;
+                this.f54594e = z10;
                 return this;
             }
 
             public b b() {
                 String str;
-                a aVar = this.f54500c;
+                a aVar = this.f54592c;
                 if (aVar != null) {
-                    if (this.f54501d && ((str = this.f54499b) == null || str.length() == 0)) {
+                    if (this.f54593d && ((str = this.f54591b) == null || str.length() == 0)) {
                         throw new IllegalArgumentException("Must set a non-null database name to a configuration that uses the no backup directory.");
                     }
-                    return new b(this.f54498a, this.f54499b, aVar, this.f54501d, this.f54502e);
+                    return new b(this.f54590a, this.f54591b, aVar, this.f54593d, this.f54594e);
                 }
                 throw new IllegalArgumentException("Must set a callback to create the configuration.");
             }
 
             public a c(a callback) {
                 Intrinsics.checkNotNullParameter(callback, "callback");
-                this.f54500c = callback;
+                this.f54592c = callback;
                 return this;
             }
 
             public a d(String str) {
-                this.f54499b = str;
+                this.f54591b = str;
                 return this;
             }
 
             public a e(boolean z10) {
-                this.f54501d = z10;
+                this.f54593d = z10;
                 return this;
             }
         }
 
         /* renamed from: x3.h$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0729b {
-            public /* synthetic */ C0729b(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0762b {
+            public /* synthetic */ C0762b(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
@@ -222,22 +222,22 @@ public interface h extends Closeable {
                 return new a(context);
             }
 
-            private C0729b() {
+            private C0762b() {
             }
         }
 
         public b(Context context, String str, a callback, boolean z10, boolean z11) {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(callback, "callback");
-            this.f54493a = context;
-            this.f54494b = str;
-            this.f54495c = callback;
-            this.f54496d = z10;
-            this.f54497e = z11;
+            this.f54585a = context;
+            this.f54586b = str;
+            this.f54587c = callback;
+            this.f54588d = z10;
+            this.f54589e = z11;
         }
 
         public static final a a(Context context) {
-            return f54492f.a(context);
+            return f54584f.a(context);
         }
     }
 

@@ -1,35 +1,29 @@
 package mf;
 
+import android.app.PendingIntent;
 import android.os.Parcel;
-import com.google.android.gms.common.api.Status;
+import android.os.Parcelable;
+import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class e extends fg.b implements f {
-    public e() {
-        super("com.google.android.gms.common.moduleinstall.internal.IModuleInstallCallbacks");
+public class e extends jf.a {
+    @NonNull
+    public static final Parcelable.Creator<e> CREATOR = new i();
+
+    /* renamed from: d  reason: collision with root package name */
+    private final PendingIntent f37070d;
+
+    public e(PendingIntent pendingIntent) {
+        this.f37070d = pendingIntent;
     }
 
-    @Override // fg.b
-    protected final boolean W0(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (i10 != 1) {
-            if (i10 != 2) {
-                if (i10 != 3) {
-                    if (i10 != 4) {
-                        return false;
-                    }
-                    fg.c.b(parcel);
-                    Q0((Status) fg.c.a(parcel, Status.CREATOR));
-                } else {
-                    fg.c.b(parcel);
-                    u((Status) fg.c.a(parcel, Status.CREATOR), (lf.e) fg.c.a(parcel, lf.e.CREATOR));
-                }
-            } else {
-                fg.c.b(parcel);
-                N((Status) fg.c.a(parcel, Status.CREATOR), (lf.g) fg.c.a(parcel, lf.g.CREATOR));
-            }
-        } else {
-            fg.c.b(parcel);
-            J0((Status) fg.c.a(parcel, Status.CREATOR), (lf.b) fg.c.a(parcel, lf.b.CREATOR));
-        }
-        return true;
+    public PendingIntent b() {
+        return this.f37070d;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        int a10 = jf.c.a(parcel);
+        jf.c.q(parcel, 1, b(), i10, false);
+        jf.c.b(parcel, a10);
     }
 }

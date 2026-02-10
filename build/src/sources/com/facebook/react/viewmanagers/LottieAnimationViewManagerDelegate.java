@@ -1,6 +1,7 @@
 package com.facebook.react.viewmanagers;
 
 import android.view.View;
+import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.uimanager.BaseViewManager;
@@ -150,33 +151,39 @@ public class LottieAnimationViewManagerDelegate<T extends View, U extends BaseVi
                     break;
                 }
                 break;
+            case 1192042876:
+                if (str.equals("enableSafeModeAndroid")) {
+                    c10 = '\r';
+                    break;
+                }
+                break;
             case 1193882713:
                 if (str.equals("renderMode")) {
-                    c10 = '\r';
+                    c10 = 14;
                     break;
                 }
                 break;
             case 1410565912:
                 if (str.equals("colorFilters")) {
-                    c10 = 14;
+                    c10 = 15;
                     break;
                 }
                 break;
             case 1438608771:
                 if (str.equals("autoPlay")) {
-                    c10 = 15;
+                    c10 = 16;
                     break;
                 }
                 break;
             case 2049757303:
                 if (str.equals(ViewProps.RESIZE_MODE)) {
-                    c10 = 16;
+                    c10 = 17;
                     break;
                 }
                 break;
             case 2111299681:
                 if (str.equals("enableMergePathsAndroidForKitKatAndAbove")) {
-                    c10 = 17;
+                    c10 = 18;
                     break;
                 }
                 break;
@@ -269,33 +276,40 @@ public class LottieAnimationViewManagerDelegate<T extends View, U extends BaseVi
             case '\r':
                 LottieAnimationViewManagerInterface lottieAnimationViewManagerInterface11 = (LottieAnimationViewManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    str2 = (String) obj;
-                }
-                lottieAnimationViewManagerInterface11.setRenderMode(t10, str2);
-                return;
-            case 14:
-                ((LottieAnimationViewManagerInterface) this.mViewManager).setColorFilters(t10, (ReadableArray) obj);
-                return;
-            case 15:
-                LottieAnimationViewManagerInterface lottieAnimationViewManagerInterface12 = (LottieAnimationViewManagerInterface) this.mViewManager;
-                if (obj != null) {
                     z10 = ((Boolean) obj).booleanValue();
                 }
-                lottieAnimationViewManagerInterface12.setAutoPlay(t10, z10);
+                lottieAnimationViewManagerInterface11.setEnableSafeModeAndroid(t10, z10);
+                return;
+            case 14:
+                LottieAnimationViewManagerInterface lottieAnimationViewManagerInterface12 = (LottieAnimationViewManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    str2 = (String) obj;
+                }
+                lottieAnimationViewManagerInterface12.setRenderMode(t10, str2);
+                return;
+            case 15:
+                ((LottieAnimationViewManagerInterface) this.mViewManager).setColorFilters(t10, (ReadableArray) obj);
                 return;
             case 16:
                 LottieAnimationViewManagerInterface lottieAnimationViewManagerInterface13 = (LottieAnimationViewManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    str2 = (String) obj;
+                    z10 = ((Boolean) obj).booleanValue();
                 }
-                lottieAnimationViewManagerInterface13.setResizeMode(t10, str2);
+                lottieAnimationViewManagerInterface13.setAutoPlay(t10, z10);
                 return;
             case 17:
                 LottieAnimationViewManagerInterface lottieAnimationViewManagerInterface14 = (LottieAnimationViewManagerInterface) this.mViewManager;
                 if (obj != null) {
+                    str2 = (String) obj;
+                }
+                lottieAnimationViewManagerInterface14.setResizeMode(t10, str2);
+                return;
+            case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
+                LottieAnimationViewManagerInterface lottieAnimationViewManagerInterface15 = (LottieAnimationViewManagerInterface) this.mViewManager;
+                if (obj != null) {
                     z10 = ((Boolean) obj).booleanValue();
                 }
-                lottieAnimationViewManagerInterface14.setEnableMergePathsAndroidForKitKatAndAbove(t10, z10);
+                lottieAnimationViewManagerInterface15.setEnableMergePathsAndroidForKitKatAndAbove(t10, z10);
                 return;
             default:
                 super.kotlinCompat$setProperty(t10, str, obj);

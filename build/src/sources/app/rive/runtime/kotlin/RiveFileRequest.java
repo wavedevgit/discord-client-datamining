@@ -3,11 +3,11 @@ package app.rive.runtime.kotlin;
 import app.rive.runtime.kotlin.core.File;
 import app.rive.runtime.kotlin.core.FileAssetLoader;
 import app.rive.runtime.kotlin.core.RendererType;
-import c6.e;
 import com.android.volley.k;
 import com.android.volley.m;
 import com.android.volley.n;
 import com.android.volley.p;
+import d6.e;
 import java.io.UnsupportedEncodingException;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -34,7 +34,7 @@ public final class RiveFileRequest extends n {
         byte[] bArr;
         if (kVar != null) {
             try {
-                bArr = kVar.f8074b;
+                bArr = kVar.f8214b;
             } catch (UnsupportedEncodingException e10) {
                 p a10 = p.a(new m(e10));
                 Intrinsics.checkNotNull(a10);

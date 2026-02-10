@@ -4,16 +4,16 @@ package com.google.android.gms.internal.play_billing;
 public final class h extends d {
 
     /* renamed from: i  reason: collision with root package name */
-    private final j f14203i;
+    private final j f14343i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(j jVar, int i10) {
         super(jVar.size(), i10);
-        this.f14203i = jVar;
+        this.f14343i = jVar;
     }
 
     @Override // com.google.android.gms.internal.play_billing.d
     protected final Object a(int i10) {
-        return this.f14203i.get(i10);
+        return this.f14343i.get(i10);
     }
 }

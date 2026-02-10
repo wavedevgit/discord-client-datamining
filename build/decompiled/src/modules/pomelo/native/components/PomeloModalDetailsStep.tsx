@@ -66,10 +66,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 16;
     var3.marginBottom = var9;
     var6.marginBottom16 = var3;
-    var3 = {};
-    var9 = 8;
-    var3.marginBottom = var9;
-    var6.marginBottom8 = var3;
     var3 = {
         'flexDirection': 'row',
         'alignItems': 'center',
@@ -449,4 +445,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10407, 660, 33, 1297, 671, 4086, 3942, 3237, 1469, 4875, 1234, 10410, 10411, 10412, 5384, 1686, 10413, 10414, 10415, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10386, 660, 33, 1297, 671, 4086, 3942, 3237, 1469, 4875, 1234, 10389, 10390, 10391, 5385, 1686, 10392, 10393, 10394, 2]);

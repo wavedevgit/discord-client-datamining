@@ -5,17 +5,17 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AtomicReference f4914a;
+    private final AtomicReference f4611a;
 
     public b(Object obj) {
-        this.f4914a = new AtomicReference(obj);
+        this.f4611a = new AtomicReference(obj);
     }
 
     public final boolean a(Object obj, Object obj2) {
-        return p0.d.a(this.f4914a, obj, obj2);
+        return p0.d.a(this.f4611a, obj, obj2);
     }
 
     public final Object b() {
-        return this.f4914a.get();
+        return this.f4611a.get();
     }
 }

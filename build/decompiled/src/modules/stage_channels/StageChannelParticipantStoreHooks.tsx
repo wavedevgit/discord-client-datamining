@@ -202,4 +202,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActualStageSpeakerCount = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 4245, 566, 8483, 5713, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 4245, 566, 8458, 5714, 2]);

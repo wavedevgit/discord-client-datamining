@@ -1,75 +1,136 @@
 package kd;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.exoplayer2.MediaMetadata;
 import com.google.android.exoplayer2.metadata.Metadata;
-import gd.e;
-import java.nio.ByteBuffer;
-import java.nio.charset.CharacterCodingException;
-import java.nio.charset.CharsetDecoder;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import mi.d;
+import java.util.Arrays;
+import ni.d;
+import oe.h0;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a extends e {
+public final class a implements Metadata.b {
+    public static final Parcelable.Creator<a> CREATOR = new C0464a();
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f31584c = Pattern.compile("(.+?)='(.*?)';", 32);
+    /* renamed from: d  reason: collision with root package name */
+    public final int f30827d;
 
-    /* renamed from: a  reason: collision with root package name */
-    private final CharsetDecoder f31585a = d.f37219c.newDecoder();
+    /* renamed from: e  reason: collision with root package name */
+    public final String f30828e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final CharsetDecoder f31586b = d.f37218b.newDecoder();
+    /* renamed from: i  reason: collision with root package name */
+    public final String f30829i;
 
-    private String c(ByteBuffer byteBuffer) {
-        try {
-            return this.f31585a.decode(byteBuffer).toString();
-        } catch (CharacterCodingException unused) {
-            try {
-                String charBuffer = this.f31586b.decode(byteBuffer).toString();
-                this.f31586b.reset();
-                byteBuffer.rewind();
-                return charBuffer;
-            } catch (CharacterCodingException unused2) {
-                this.f31586b.reset();
-                byteBuffer.rewind();
-                return null;
-            } catch (Throwable th2) {
-                this.f31586b.reset();
-                byteBuffer.rewind();
-                throw th2;
-            }
-        } finally {
-            this.f31585a.reset();
-            byteBuffer.rewind();
+    /* renamed from: o  reason: collision with root package name */
+    public final int f30830o;
+
+    /* renamed from: p  reason: collision with root package name */
+    public final int f30831p;
+
+    /* renamed from: q  reason: collision with root package name */
+    public final int f30832q;
+
+    /* renamed from: r  reason: collision with root package name */
+    public final int f30833r;
+
+    /* renamed from: s  reason: collision with root package name */
+    public final byte[] f30834s;
+
+    /* renamed from: kd.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    class C0464a implements Parcelable.Creator {
+        C0464a() {
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public a createFromParcel(Parcel parcel) {
+            return new a(parcel);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public a[] newArray(int i10) {
+            return new a[i10];
         }
     }
 
-    @Override // gd.e
-    protected Metadata b(gd.c cVar, ByteBuffer byteBuffer) {
-        String c10 = c(byteBuffer);
-        byte[] bArr = new byte[byteBuffer.limit()];
-        byteBuffer.get(bArr);
-        String str = null;
-        if (c10 == null) {
-            return new Metadata(new c(bArr, null, null));
+    public a(int i10, String str, String str2, int i11, int i12, int i13, int i14, byte[] bArr) {
+        this.f30827d = i10;
+        this.f30828e = str;
+        this.f30829i = str2;
+        this.f30830o = i11;
+        this.f30831p = i12;
+        this.f30832q = i13;
+        this.f30833r = i14;
+        this.f30834s = bArr;
+    }
+
+    public static a a(h0 h0Var) {
+        int q10 = h0Var.q();
+        String F = h0Var.F(h0Var.q(), d.f38902a);
+        String E = h0Var.E(h0Var.q());
+        int q11 = h0Var.q();
+        int q12 = h0Var.q();
+        int q13 = h0Var.q();
+        int q14 = h0Var.q();
+        int q15 = h0Var.q();
+        byte[] bArr = new byte[q15];
+        h0Var.l(bArr, 0, q15);
+        return new a(q10, F, E, q11, q12, q13, q14, bArr);
+    }
+
+    @Override // com.google.android.exoplayer2.metadata.Metadata.b
+    public void a1(MediaMetadata.b bVar) {
+        bVar.I(this.f30834s, this.f30827d);
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        Matcher matcher = f31584c.matcher(c10);
-        String str2 = null;
-        for (int i10 = 0; matcher.find(i10); i10 = matcher.end()) {
-            String group = matcher.group(1);
-            String group2 = matcher.group(2);
-            if (group != null) {
-                String e10 = mi.b.e(group);
-                e10.getClass();
-                if (!e10.equals("streamurl")) {
-                    if (e10.equals("streamtitle")) {
-                        str = group2;
-                    }
-                } else {
-                    str2 = group2;
-                }
+        if (obj != null && a.class == obj.getClass()) {
+            a aVar = (a) obj;
+            if (this.f30827d == aVar.f30827d && this.f30828e.equals(aVar.f30828e) && this.f30829i.equals(aVar.f30829i) && this.f30830o == aVar.f30830o && this.f30831p == aVar.f30831p && this.f30832q == aVar.f30832q && this.f30833r == aVar.f30833r && Arrays.equals(this.f30834s, aVar.f30834s)) {
+                return true;
             }
         }
-        return new Metadata(new c(bArr, str, str2));
+        return false;
+    }
+
+    public int hashCode() {
+        return ((((((((((((((527 + this.f30827d) * 31) + this.f30828e.hashCode()) * 31) + this.f30829i.hashCode()) * 31) + this.f30830o) * 31) + this.f30831p) * 31) + this.f30832q) * 31) + this.f30833r) * 31) + Arrays.hashCode(this.f30834s);
+    }
+
+    public String toString() {
+        return "Picture: mimeType=" + this.f30828e + ", description=" + this.f30829i;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        parcel.writeInt(this.f30827d);
+        parcel.writeString(this.f30828e);
+        parcel.writeString(this.f30829i);
+        parcel.writeInt(this.f30830o);
+        parcel.writeInt(this.f30831p);
+        parcel.writeInt(this.f30832q);
+        parcel.writeInt(this.f30833r);
+        parcel.writeByteArray(this.f30834s);
+    }
+
+    a(Parcel parcel) {
+        this.f30827d = parcel.readInt();
+        this.f30828e = (String) w0.j(parcel.readString());
+        this.f30829i = (String) w0.j(parcel.readString());
+        this.f30830o = parcel.readInt();
+        this.f30831p = parcel.readInt();
+        this.f30832q = parcel.readInt();
+        this.f30833r = parcel.readInt();
+        this.f30834s = (byte[]) w0.j(parcel.createByteArray());
     }
 }

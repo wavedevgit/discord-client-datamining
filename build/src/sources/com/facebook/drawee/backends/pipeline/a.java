@@ -1,5 +1,7 @@
 package com.facebook.drawee.backends.pipeline;
 
+import aa.g;
+import aa.l;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -22,36 +24,34 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.Executor;
-import la.w;
-import o8.e;
-import o8.h;
-import o8.j;
-import ya.b;
-import z9.g;
-import z9.l;
+import ma.w;
+import p8.e;
+import p8.h;
+import p8.j;
+import za.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class a extends com.facebook.drawee.controller.a {
     private static final Class M = a.class;
-    private final ra.a A;
+    private final sa.a A;
     private final e B;
     private final w C;
     private CacheKey D;
     private Supplier E;
     private boolean F;
     private e G;
-    private f9.a H;
+    private g9.a H;
     private Set I;
     private ImageRequest J;
     private ImageRequest[] K;
     private ImageRequest L;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Resources f9850z;
+    private final Resources f9990z;
 
-    public a(Resources resources, h9.a aVar, ra.a aVar2, ra.a aVar3, Executor executor, w wVar, e eVar) {
+    public a(Resources resources, i9.a aVar, sa.a aVar2, sa.a aVar3, Executor executor, w wVar, e eVar) {
         super(aVar, executor, null, null);
-        this.f9850z = resources;
-        this.A = new e9.a(resources, aVar2, aVar3);
+        this.f9990z = resources;
+        this.A = new f9.a(resources, aVar2, aVar3);
         this.B = eVar;
         this.C = wVar;
     }
@@ -84,38 +84,38 @@ public class a extends com.facebook.drawee.controller.a {
         p0(null);
     }
 
-    private Drawable o0(e eVar, sa.e eVar2) {
-        Drawable a10;
+    private Drawable o0(e eVar, ta.e eVar2) {
+        Drawable b10;
         if (eVar == null) {
             return null;
         }
         Iterator<E> it = eVar.iterator();
         while (it.hasNext()) {
-            ra.a aVar = (ra.a) it.next();
-            if (aVar.b(eVar2) && (a10 = aVar.a(eVar2)) != null) {
-                return a10;
+            sa.a aVar = (sa.a) it.next();
+            if (aVar.a(eVar2) && (b10 = aVar.b(eVar2)) != null) {
+                return b10;
             }
         }
         return null;
     }
 
-    private void p0(sa.e eVar) {
+    private void p0(ta.e eVar) {
         if (this.F) {
             if (l() == null) {
-                j9.a aVar = new j9.a();
-                e(new k9.a(aVar));
+                k9.a aVar = new k9.a();
+                e(new l9.a(aVar));
                 U(aVar);
             }
-            if (l() instanceof j9.a) {
-                w0(eVar, (j9.a) l());
+            if (l() instanceof k9.a) {
+                w0(eVar, (k9.a) l());
             }
         }
     }
 
     @Override // com.facebook.drawee.controller.a
     protected void J(Drawable drawable) {
-        if (drawable instanceof c9.a) {
-            ((c9.a) drawable).a();
+        if (drawable instanceof d9.a) {
+            ((d9.a) drawable).a();
         }
     }
 
@@ -138,8 +138,8 @@ public class a extends com.facebook.drawee.controller.a {
             if (b.d()) {
                 b.a("PipelineDraweeController#createDrawable");
             }
-            j.i(CloseableReference.I0(closeableReference));
-            sa.e eVar = (sa.e) closeableReference.J();
+            j.i(CloseableReference.G0(closeableReference));
+            ta.e eVar = (ta.e) closeableReference.J();
             p0(eVar);
             Drawable o02 = o0(this.G, eVar);
             if (o02 != null) {
@@ -155,12 +155,12 @@ public class a extends com.facebook.drawee.controller.a {
                 }
                 return o03;
             }
-            Drawable a10 = this.A.a(eVar);
-            if (a10 != null) {
+            Drawable b10 = this.A.b(eVar);
+            if (b10 != null) {
                 if (b.d()) {
                     b.b();
                 }
-                return a10;
+                return b10;
             }
             throw new UnsupportedOperationException("Unrecognized image class: " + eVar);
         } catch (Throwable th2) {
@@ -187,7 +187,7 @@ public class a extends com.facebook.drawee.controller.a {
             w wVar = this.C;
             if (wVar != null && (cacheKey = this.D) != null) {
                 CloseableReference closeableReference = wVar.get(cacheKey);
-                if (closeableReference != null && !((sa.e) closeableReference.J()).I1().a()) {
+                if (closeableReference != null && !((ta.e) closeableReference.J()).F1().a()) {
                     closeableReference.close();
                     return null;
                 }
@@ -220,7 +220,7 @@ public class a extends com.facebook.drawee.controller.a {
     /* renamed from: i0 */
     public int r(CloseableReference closeableReference) {
         if (closeableReference != null) {
-            return closeableReference.Y();
+            return closeableReference.Z();
         }
         return 0;
     }
@@ -238,14 +238,14 @@ public class a extends com.facebook.drawee.controller.a {
     @Override // com.facebook.drawee.controller.a
     /* renamed from: j0 */
     public ImageInfo s(CloseableReference closeableReference) {
-        j.i(CloseableReference.I0(closeableReference));
-        return ((sa.e) closeableReference.J()).E();
+        j.i(CloseableReference.G0(closeableReference));
+        return ((ta.e) closeableReference.J()).E();
     }
 
     public synchronized RequestListener k0() {
         Set set = this.I;
         if (set != null) {
-            return new ua.c(set);
+            return new va.c(set);
         }
         return null;
     }
@@ -255,8 +255,8 @@ public class a extends com.facebook.drawee.controller.a {
         if (b.d()) {
             b.a("PipelineDraweeController#getDataSource");
         }
-        if (p8.a.w(2)) {
-            p8.a.z(M, "controller %x: getDataSource", Integer.valueOf(System.identityHashCode(this)));
+        if (q8.a.w(2)) {
+            q8.a.z(M, "controller %x: getDataSource", Integer.valueOf(System.identityHashCode(this)));
         }
         DataSource dataSource = (DataSource) this.E.get();
         if (b.d()) {
@@ -282,13 +282,13 @@ public class a extends com.facebook.drawee.controller.a {
     /* JADX INFO: Access modifiers changed from: protected */
     public synchronized void n0(g gVar, AbstractDraweeControllerBuilder abstractDraweeControllerBuilder) {
         try {
-            f9.a aVar = this.H;
+            g9.a aVar = this.H;
             if (aVar != null) {
                 aVar.f();
             }
             if (gVar != null) {
                 if (this.H == null) {
-                    this.H = new f9.a(AwakeTimeSinceBootClock.get(), this);
+                    this.H = new g9.a(AwakeTimeSinceBootClock.get(), this);
                 }
                 this.H.c(gVar);
                 this.H.g(true);
@@ -358,7 +358,7 @@ public class a extends com.facebook.drawee.controller.a {
         this.F = z10;
     }
 
-    protected void w0(sa.e eVar, j9.a aVar) {
+    protected void w0(ta.e eVar, k9.a aVar) {
         n e02;
         aVar.j(p());
         DraweeHierarchy hierarchy = getHierarchy();

@@ -1,19 +1,176 @@
 package p9;
 
-import com.facebook.common.references.CloseableReference;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import p9.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface b {
-    void a(int i10, CloseableReference closeableReference, int i11);
+public abstract class b implements p9.a {
 
-    void b(int i10, CloseableReference closeableReference, int i11);
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f43068e = new a(null);
 
-    CloseableReference c(int i10);
+    /* renamed from: a  reason: collision with root package name */
+    private p9.a f43069a;
 
-    void clear();
+    /* renamed from: b  reason: collision with root package name */
+    private int f43070b = -1;
 
-    boolean contains(int i10);
+    /* renamed from: c  reason: collision with root package name */
+    private ColorFilter f43071c;
 
-    CloseableReference d(int i10, int i11, int i12);
+    /* renamed from: d  reason: collision with root package name */
+    private Rect f43072d;
 
-    CloseableReference e(int i10);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private a() {
+        }
+    }
+
+    public b(p9.a aVar) {
+        this.f43069a = aVar;
+    }
+
+    @Override // p9.d
+    public int a() {
+        p9.a aVar = this.f43069a;
+        if (aVar == null) {
+            return 0;
+        }
+        Intrinsics.checkNotNull(aVar);
+        return aVar.a();
+    }
+
+    @Override // p9.d
+    public int b() {
+        p9.a aVar = this.f43069a;
+        if (aVar == null) {
+            return 0;
+        }
+        Intrinsics.checkNotNull(aVar);
+        return aVar.b();
+    }
+
+    @Override // p9.a
+    public int c() {
+        p9.a aVar = this.f43069a;
+        if (aVar == null) {
+            return -1;
+        }
+        Intrinsics.checkNotNull(aVar);
+        return aVar.c();
+    }
+
+    @Override // p9.a
+    public void clear() {
+        p9.a aVar = this.f43069a;
+        if (aVar != null) {
+            aVar.clear();
+        }
+    }
+
+    @Override // p9.a
+    public void d(Rect bounds) {
+        Intrinsics.checkNotNullParameter(bounds, "bounds");
+        p9.a aVar = this.f43069a;
+        if (aVar != null) {
+            aVar.d(bounds);
+        }
+        this.f43072d = bounds;
+    }
+
+    @Override // p9.a
+    public int e() {
+        p9.a aVar = this.f43069a;
+        if (aVar == null) {
+            return -1;
+        }
+        Intrinsics.checkNotNull(aVar);
+        return aVar.e();
+    }
+
+    @Override // p9.a
+    public void f(ColorFilter colorFilter) {
+        p9.a aVar = this.f43069a;
+        if (aVar != null) {
+            aVar.f(colorFilter);
+        }
+        this.f43071c = colorFilter;
+    }
+
+    @Override // p9.d
+    public int g() {
+        p9.a aVar = this.f43069a;
+        if (aVar == null) {
+            return 0;
+        }
+        Intrinsics.checkNotNull(aVar);
+        return aVar.g();
+    }
+
+    @Override // p9.a
+    public boolean h(Drawable parent, Canvas canvas, int i10) {
+        Intrinsics.checkNotNullParameter(parent, "parent");
+        Intrinsics.checkNotNullParameter(canvas, "canvas");
+        p9.a aVar = this.f43069a;
+        if (aVar == null || !aVar.h(parent, canvas, i10)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override // p9.d
+    public int j() {
+        p9.a aVar = this.f43069a;
+        if (aVar == null) {
+            return 0;
+        }
+        Intrinsics.checkNotNull(aVar);
+        return aVar.j();
+    }
+
+    @Override // p9.d
+    public int k(int i10) {
+        p9.a aVar = this.f43069a;
+        if (aVar == null) {
+            return 0;
+        }
+        Intrinsics.checkNotNull(aVar);
+        return aVar.k(i10);
+    }
+
+    @Override // p9.a
+    public void l(int i10) {
+        p9.a aVar = this.f43069a;
+        if (aVar != null) {
+            aVar.l(i10);
+        }
+        this.f43070b = i10;
+    }
+
+    @Override // p9.d
+    public int m() {
+        p9.a aVar = this.f43069a;
+        if (aVar == null) {
+            return 0;
+        }
+        Intrinsics.checkNotNull(aVar);
+        return aVar.m();
+    }
+
+    @Override // p9.a
+    public void n(a.InterfaceC0610a interfaceC0610a) {
+        p9.a aVar = this.f43069a;
+        if (aVar != null) {
+            aVar.n(interfaceC0610a);
+        }
+    }
 }

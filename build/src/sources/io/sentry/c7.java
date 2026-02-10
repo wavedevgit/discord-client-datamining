@@ -5,17 +5,17 @@ import java.util.Date;
 public final class c7 extends j5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Date f27978d;
+    private final Date f28178d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f27979e;
+    private final long f28179e;
 
     public c7() {
         this(k.d(), System.nanoTime());
     }
 
     private long i(c7 c7Var, c7 c7Var2) {
-        return c7Var.h() + (c7Var2.f27979e - c7Var.f27979e);
+        return c7Var.h() + (c7Var2.f28179e - c7Var.f28179e);
     }
 
     @Override // io.sentry.j5, java.lang.Comparable
@@ -23,10 +23,10 @@ public final class c7 extends j5 {
     public int compareTo(j5 j5Var) {
         if (j5Var instanceof c7) {
             c7 c7Var = (c7) j5Var;
-            long time = this.f27978d.getTime();
-            long time2 = c7Var.f27978d.getTime();
+            long time = this.f28178d.getTime();
+            long time2 = c7Var.f28178d.getTime();
             if (time == time2) {
-                return Long.valueOf(this.f27979e).compareTo(Long.valueOf(c7Var.f27979e));
+                return Long.valueOf(this.f28179e).compareTo(Long.valueOf(c7Var.f28179e));
             }
             return Long.valueOf(time).compareTo(Long.valueOf(time2));
         }
@@ -36,7 +36,7 @@ public final class c7 extends j5 {
     @Override // io.sentry.j5
     public long d(j5 j5Var) {
         if (j5Var instanceof c7) {
-            return this.f27979e - ((c7) j5Var).f27979e;
+            return this.f28179e - ((c7) j5Var).f28179e;
         }
         return super.d(j5Var);
     }
@@ -55,11 +55,11 @@ public final class c7 extends j5 {
 
     @Override // io.sentry.j5
     public long h() {
-        return k.a(this.f27978d);
+        return k.a(this.f28178d);
     }
 
     public c7(Date date, long j10) {
-        this.f27978d = date;
-        this.f27979e = j10;
+        this.f28178d = date;
+        this.f28179e = j10;
     }
 }

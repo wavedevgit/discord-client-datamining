@@ -1,6 +1,6 @@
 package com.google.android.gms.internal.gtm;
 
-import gf.q;
+import hf.q;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 /* JADX INFO: Access modifiers changed from: package-private */

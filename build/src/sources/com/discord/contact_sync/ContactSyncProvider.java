@@ -8,7 +8,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.provider.ContactsContract;
 import android.util.Base64;
-import bs.c;
+import cs.c;
 import java.io.ByteArrayOutputStream;
 import java.io.FileDescriptor;
 import java.util.LinkedHashMap;

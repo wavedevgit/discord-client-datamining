@@ -1,10 +1,45 @@
 package l5;
-
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffColorFilter;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class h0 extends PorterDuffColorFilter {
-    public h0(int i10) {
-        super(i10, PorterDuff.Mode.SRC_ATOP);
+public enum h0 {
+    AUTOMATIC,
+    HARDWARE,
+    SOFTWARE;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    static /* synthetic */ class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f35725a;
+
+        static {
+            int[] iArr = new int[h0.values().length];
+            f35725a = iArr;
+            try {
+                iArr[h0.HARDWARE.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f35725a[h0.SOFTWARE.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f35725a[h0.AUTOMATIC.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+        }
+    }
+
+    public boolean d(int i10, boolean z10, int i11) {
+        int i12 = a.f35725a[ordinal()];
+        if (i12 == 1) {
+            return false;
+        }
+        if (i12 == 2) {
+            return true;
+        }
+        if ((!z10 || i10 >= 28) && i11 <= 4 && i10 > 25) {
+            return false;
+        }
+        return true;
     }
 }

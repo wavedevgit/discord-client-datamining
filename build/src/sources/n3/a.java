@@ -14,32 +14,32 @@ import w1.h;
 public abstract class a extends b {
 
     /* renamed from: i  reason: collision with root package name */
-    private Executor f38476i;
+    private Executor f37773i;
 
     /* renamed from: j  reason: collision with root package name */
-    private volatile RunnableC0528a f38477j;
+    private volatile RunnableC0546a f37774j;
 
     /* renamed from: k  reason: collision with root package name */
-    private volatile RunnableC0528a f38478k;
+    private volatile RunnableC0546a f37775k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f38479l;
+    private long f37776l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f38480m;
+    private long f37777m;
 
     /* renamed from: n  reason: collision with root package name */
-    private Handler f38481n;
+    private Handler f37778n;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: n3.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public final class RunnableC0528a extends c implements Runnable {
+    public final class RunnableC0546a extends c implements Runnable {
 
         /* renamed from: q  reason: collision with root package name */
-        boolean f38482q;
+        boolean f37779q;
 
-        RunnableC0528a() {
+        RunnableC0546a() {
         }
 
         @Override // n3.c
@@ -66,31 +66,31 @@ public abstract class a extends b {
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f38482q = false;
+            this.f37779q = false;
             a.this.A();
         }
     }
 
     public a(Context context) {
         super(context);
-        this.f38480m = -10000L;
+        this.f37777m = -10000L;
     }
 
     void A() {
-        if (this.f38478k == null && this.f38477j != null) {
-            if (this.f38477j.f38482q) {
-                this.f38477j.f38482q = false;
-                this.f38481n.removeCallbacks(this.f38477j);
+        if (this.f37775k == null && this.f37774j != null) {
+            if (this.f37774j.f37779q) {
+                this.f37774j.f37779q = false;
+                this.f37778n.removeCallbacks(this.f37774j);
             }
-            if (this.f38479l > 0 && SystemClock.uptimeMillis() < this.f38480m + this.f38479l) {
-                this.f38477j.f38482q = true;
-                this.f38481n.postAtTime(this.f38477j, this.f38480m + this.f38479l);
+            if (this.f37776l > 0 && SystemClock.uptimeMillis() < this.f37777m + this.f37776l) {
+                this.f37774j.f37779q = true;
+                this.f37778n.postAtTime(this.f37774j, this.f37777m + this.f37776l);
                 return;
             }
-            if (this.f38476i == null) {
-                this.f38476i = B();
+            if (this.f37773i == null) {
+                this.f37773i = B();
             }
-            this.f38477j.c(this.f38476i);
+            this.f37774j.c(this.f37773i);
         }
     }
 
@@ -109,29 +109,29 @@ public abstract class a extends b {
         TimeUnit timeUnit;
         String str2;
         super.g(str, fileDescriptor, printWriter, strArr);
-        if (this.f38477j != null) {
+        if (this.f37774j != null) {
             printWriter.print(str);
             printWriter.print("mTask=");
-            printWriter.print(this.f38477j);
+            printWriter.print(this.f37774j);
             printWriter.print(" waiting=");
-            printWriter.println(this.f38477j.f38482q);
+            printWriter.println(this.f37774j.f37779q);
         }
-        if (this.f38478k != null) {
+        if (this.f37775k != null) {
             printWriter.print(str);
             printWriter.print("mCancellingTask=");
-            printWriter.print(this.f38478k);
+            printWriter.print(this.f37775k);
             printWriter.print(" waiting=");
-            printWriter.println(this.f38478k.f38482q);
+            printWriter.println(this.f37775k.f37779q);
         }
-        if (this.f38479l != 0) {
+        if (this.f37776l != 0) {
             printWriter.print(str);
             printWriter.print("mUpdateThrottle=");
-            printWriter.print(DateUtils.formatElapsedTime(TimeUnit.MILLISECONDS.toSeconds(this.f38479l)));
+            printWriter.print(DateUtils.formatElapsedTime(TimeUnit.MILLISECONDS.toSeconds(this.f37776l)));
             printWriter.print(" mLastLoadCompleteTime=");
-            if (this.f38480m == -10000) {
+            if (this.f37777m == -10000) {
                 str2 = "--";
             } else {
-                str2 = "-" + DateUtils.formatElapsedTime(timeUnit.toSeconds(SystemClock.uptimeMillis() - this.f38480m));
+                str2 = "-" + DateUtils.formatElapsedTime(timeUnit.toSeconds(SystemClock.uptimeMillis() - this.f37777m));
             }
             printWriter.print(str2);
             printWriter.println();
@@ -140,31 +140,31 @@ public abstract class a extends b {
 
     @Override // n3.b
     protected boolean l() {
-        if (this.f38477j == null) {
+        if (this.f37774j == null) {
             return false;
         }
         if (!j()) {
             m();
         }
-        if (this.f38478k != null) {
-            if (this.f38477j.f38482q) {
-                this.f38477j.f38482q = false;
-                this.f38481n.removeCallbacks(this.f38477j);
+        if (this.f37775k != null) {
+            if (this.f37774j.f37779q) {
+                this.f37774j.f37779q = false;
+                this.f37778n.removeCallbacks(this.f37774j);
             }
-            this.f38477j = null;
+            this.f37774j = null;
             return false;
-        } else if (this.f38477j.f38482q) {
-            this.f38477j.f38482q = false;
-            this.f38481n.removeCallbacks(this.f38477j);
-            this.f38477j = null;
+        } else if (this.f37774j.f37779q) {
+            this.f37774j.f37779q = false;
+            this.f37778n.removeCallbacks(this.f37774j);
+            this.f37774j = null;
             return false;
         } else {
-            boolean a10 = this.f38477j.a(false);
+            boolean a10 = this.f37774j.a(false);
             if (a10) {
-                this.f38478k = this.f38477j;
+                this.f37775k = this.f37774j;
                 x();
             }
-            this.f38477j = null;
+            this.f37774j = null;
             return a10;
         }
     }
@@ -174,30 +174,30 @@ public abstract class a extends b {
     public void n() {
         super.n();
         b();
-        this.f38477j = new RunnableC0528a();
+        this.f37774j = new RunnableC0546a();
         A();
     }
 
-    void y(RunnableC0528a runnableC0528a, Object obj) {
+    void y(RunnableC0546a runnableC0546a, Object obj) {
         D(obj);
-        if (this.f38478k == runnableC0528a) {
+        if (this.f37775k == runnableC0546a) {
             t();
-            this.f38480m = SystemClock.uptimeMillis();
-            this.f38478k = null;
+            this.f37777m = SystemClock.uptimeMillis();
+            this.f37775k = null;
             e();
             A();
         }
     }
 
-    void z(RunnableC0528a runnableC0528a, Object obj) {
-        if (this.f38477j != runnableC0528a) {
-            y(runnableC0528a, obj);
+    void z(RunnableC0546a runnableC0546a, Object obj) {
+        if (this.f37774j != runnableC0546a) {
+            y(runnableC0546a, obj);
         } else if (i()) {
             D(obj);
         } else {
             c();
-            this.f38480m = SystemClock.uptimeMillis();
-            this.f38477j = null;
+            this.f37777m = SystemClock.uptimeMillis();
+            this.f37774j = null;
             f(obj);
         }
     }

@@ -1,36 +1,34 @@
 package og;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class x5 implements yi.d {
+final class x5 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x5 f42735a = new x5();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42736b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42737c;
+    static final x5 f41467a = new x5();
 
     static {
-        c.b a10 = yi.c.a("stageId");
-        f fVar = new f();
-        fVar.a(1);
-        f42736b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("device");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42737c = a11.b(fVar2.b()).a();
+        c.b a10 = zi.c.a("logEventKey");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("eventCount");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("inferenceDurationStats");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
     private x5() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
+        zi.e eVar = (zi.e) obj2;
         throw null;
     }
 }

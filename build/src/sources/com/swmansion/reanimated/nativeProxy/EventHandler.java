@@ -5,14 +5,14 @@ import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
-@fb.a
+@gb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class EventHandler implements RCTEventEmitter {
     UIManagerModule.CustomEventNamesResolver mCustomEventNamesResolver;
-    @fb.a
+    @gb.a
     private final HybridData mHybridData;
 
-    @fb.a
+    @gb.a
     private EventHandler(HybridData hybridData) {
         this.mHybridData = hybridData;
     }

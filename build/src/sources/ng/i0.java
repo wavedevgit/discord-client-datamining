@@ -1,105 +1,76 @@
 package ng;
 
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.RandomAccess;
-import java.util.Set;
+import android.content.Context;
+import com.google.android.gms.dynamite.DynamiteModule;
+import com.google.android.gms.tasks.Task;
+import java.util.HashMap;
+import java.util.Objects;
+import java.util.concurrent.Callable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class i0 extends k0 implements Serializable {
+public final class i0 {
 
-    /* renamed from: i */
-    private final transient Map f39923i;
+    /* renamed from: i  reason: collision with root package name */
+    private static final i f38850i = i.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
 
-    /* renamed from: o */
-    private transient int f39924o;
+    /* renamed from: a  reason: collision with root package name */
+    private final String f38851a;
 
-    public i0(Map map) {
-        t.c(map.isEmpty());
-        this.f39923i = map;
-    }
+    /* renamed from: b  reason: collision with root package name */
+    private final String f38852b;
 
-    public static /* bridge */ /* synthetic */ int i(i0 i0Var) {
-        return i0Var.f39924o;
-    }
+    /* renamed from: c  reason: collision with root package name */
+    private final b0 f38853c;
 
-    public static /* bridge */ /* synthetic */ Map l(i0 i0Var) {
-        return i0Var.f39923i;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    private final uj.m f38854d;
 
-    public static /* bridge */ /* synthetic */ void m(i0 i0Var, int i10) {
-        i0Var.f39924o = i10;
-    }
+    /* renamed from: e  reason: collision with root package name */
+    private final Task f38855e;
 
-    public static /* bridge */ /* synthetic */ void n(i0 i0Var, Object obj) {
-        Object obj2;
-        try {
-            obj2 = i0Var.f39923i.remove(obj);
-        } catch (ClassCastException | NullPointerException unused) {
-            obj2 = null;
-        }
-        Collection collection = (Collection) obj2;
-        if (collection != null) {
-            int size = collection.size();
-            collection.clear();
-            i0Var.f39924o -= size;
-        }
-    }
+    /* renamed from: f  reason: collision with root package name */
+    private final Task f38856f;
 
-    @Override // ng.u1
-    public final boolean c(Object obj, Object obj2) {
-        Collection collection = (Collection) this.f39923i.get(obj);
-        if (collection == null) {
-            Collection g10 = g();
-            if (g10.add(obj2)) {
-                this.f39924o++;
-                this.f39923i.put(obj, g10);
-                return true;
+    /* renamed from: g  reason: collision with root package name */
+    private final String f38857g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final int f38858h;
+
+    public i0(Context context, final uj.m mVar, b0 b0Var, String str) {
+        int i10;
+        new HashMap();
+        new HashMap();
+        this.f38851a = context.getPackageName();
+        this.f38852b = uj.c.a(context);
+        this.f38854d = mVar;
+        this.f38853c = b0Var;
+        s0.a();
+        this.f38857g = str;
+        this.f38855e = uj.g.a().b(new Callable() { // from class: ng.g0
+            @Override // java.util.concurrent.Callable
+            public final Object call() {
+                return i0.this.a();
             }
-            throw new AssertionError("New Collection violated the Collection spec");
-        } else if (collection.add(obj2)) {
-            this.f39924o++;
-            return true;
+        });
+        uj.g a10 = uj.g.a();
+        Objects.requireNonNull(mVar);
+        this.f38856f = a10.b(new Callable() { // from class: ng.h0
+            @Override // java.util.concurrent.Callable
+            public final Object call() {
+                return uj.m.this.a();
+            }
+        });
+        i iVar = f38850i;
+        if (iVar.containsKey(str)) {
+            i10 = DynamiteModule.c(context, (String) iVar.get(str));
         } else {
-            return false;
+            i10 = -1;
         }
+        this.f38858h = i10;
     }
 
-    @Override // ng.k0
-    final Map e() {
-        return new a0(this, this.f39923i);
-    }
-
-    @Override // ng.k0
-    final Set f() {
-        return new c0(this, this.f39923i);
-    }
-
-    public abstract Collection g();
-
-    public abstract Collection h(Object obj, Collection collection);
-
-    public final Collection j(Object obj) {
-        Collection collection = (Collection) this.f39923i.get(obj);
-        if (collection == null) {
-            collection = g();
-        }
-        return h(obj, collection);
-    }
-
-    public final List k(Object obj, List list, f0 f0Var) {
-        if (list instanceof RandomAccess) {
-            return new d0(this, obj, list, f0Var);
-        }
-        return new h0(this, obj, list, f0Var);
-    }
-
-    public final void o() {
-        for (Collection collection : this.f39923i.values()) {
-            collection.clear();
-        }
-        this.f39923i.clear();
-        this.f39924o = 0;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ String a() {
+        return hf.m.a().b(this.f38857g);
     }
 }

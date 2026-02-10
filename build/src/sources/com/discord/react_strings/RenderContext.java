@@ -73,7 +73,7 @@ public final class RenderContext {
         public final String replace(@NotNull CharSequence input, @NotNull final Function3 onMatch) {
             Intrinsics.checkNotNullParameter(input, "input");
             Intrinsics.checkNotNullParameter(onMatch, "onMatch");
-            return argumentRegex.j(input, new Function1() { // from class: x7.g
+            return argumentRegex.j(input, new Function1() { // from class: y7.g
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     CharSequence replace$lambda$0;

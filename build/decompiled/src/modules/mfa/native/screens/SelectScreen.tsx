@@ -32,15 +32,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var9 = var3.Fonts;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
     var6 = var3.jsx;
     var _closure1_slot4 = var6;
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
-    var3 = 5;
+    var3 = 4;
     var3 = var5[var3];
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
@@ -51,34 +47,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.container = var8;
     var8 = {
-        'height': 48,
-        'width': 48
-    };
-    var3.icon = var8;
-    var8 = {
         'marginTop': null,
         'marginLeft': 16,
         'marginRight': 16,
         'display': 'flex',
         'alignItems': 'center'
     };
-    var10 = 6;
-    var11 = var5[var10];
-    var11 = var4.bind(var0)(var11);
-    var11 = var11.NAV_BAR_HEIGHT;
-    var10 = var5[var10];
+    var9 = 5;
+    var10 = var5[var9];
     var10 = var4.bind(var0)(var10);
-    var10 = var10.STATUS_BAR_HEIGHT;
-    var10 = var11 - var10;
-    var8.marginTop = var10;
+    var10 = var10.NAV_BAR_HEIGHT;
+    var9 = var5[var9];
+    var9 = var4.bind(var0)(var9);
+    var9 = var9.STATUS_BAR_HEIGHT;
+    var9 = var10 - var9;
+    var8.marginTop = var9;
     var3.selectContainer = var8;
-    var8 = {};
-    var9 = var9.PRIMARY_BOLD;
-    var8.fontFamily = var9;
-    var3.title = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = 12;
+    var3 = 11;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -92,14 +79,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var0.bind(var3)();
         var15 = _closure1_slot0;
         var16 = _closure1_slot1;
-        var0 = 8;
+        var0 = 7;
         var0 = var16[var0];
         var1 = var15.bind(var3)(var0);
         var0 = var1.useNavigation;
         var0 = var0.bind(var1)();
         var _closure2_slot1 = var0;
         var2 = _closure1_slot5;
-        var0 = 9;
+        var0 = 8;
         var0 = var16[var0];
         var0 = var15.bind(var3)(var0);
         var1 = var0.SafeAreaPaddingView;
@@ -113,14 +100,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.selectContainer;
         var4.style = var6;
         var6 = _closure1_slot4;
-        var10 = 10;
+        var10 = 9;
         var5 = var16[var10];
         var5 = var15.bind(var3)(var5);
         var11 = var5.Text;
         var5 = {};
         var12 = 'heading-xl/extrabold';
         var5.variant = var12;
-        var12 = 11;
+        var12 = 10;
         var13 = var16[var12];
         var13 = var15.bind(var3)(var13);
         var17 = var13.intl;
@@ -178,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot4;
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
-                var1 = 7;
+                var1 = 6;
                 var1 = var3[var1];
                 var3 = undefined;
                 var1 = var2.bind(var3)(var1);
@@ -218,4 +205,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11277, 483, 33, 1297, 4703, 5432, 1469, 4736, 3942, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11272, 33, 1297, 4703, 5433, 1469, 4736, 3942, 1234, 2]);

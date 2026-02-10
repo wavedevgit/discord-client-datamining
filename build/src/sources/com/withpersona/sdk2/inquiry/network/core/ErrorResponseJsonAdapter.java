@@ -37,8 +37,8 @@ public final class ErrorResponseJsonAdapter extends h {
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0) {
                 list = (List) this.nullableListOfErrorAdapter.fromJson(mVar);
             }

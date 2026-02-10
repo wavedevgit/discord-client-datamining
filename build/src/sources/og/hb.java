@@ -1,28 +1,26 @@
 package og;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class hb extends jb {
+final class hb implements zi.d {
 
-    /* renamed from: t  reason: collision with root package name */
-    private static final hb f42150t = new hb("unusedTag");
+    /* renamed from: a  reason: collision with root package name */
+    static final hb f40933a = new hb();
 
-    private hb(String str) {
-        super();
+    static {
+        c.b a10 = zi.c.a("userSelectedArea");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
     }
 
-    @Override // og.jb, java.io.Closeable, java.lang.AutoCloseable
-    public final void close() {
+    private hb() {
     }
 
-    @Override // og.jb
-    public final /* bridge */ /* synthetic */ jb g() {
-        return this;
-    }
-
-    @Override // og.jb
-    public final void k(long j10) {
-    }
-
-    @Override // og.jb
-    public final void m(long j10) {
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

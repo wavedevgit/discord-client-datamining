@@ -1,58 +1,70 @@
 package le;
-
-import java.io.IOException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class m extends IOException {
+public abstract class m {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static int f35866a = 2131951745;
+
+    /* renamed from: b  reason: collision with root package name */
+    public static int f35867b = 2131951753;
+
+    /* renamed from: c  reason: collision with root package name */
+    public static int f35868c = 2131951754;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f36171d;
+    public static int f35869d = 2131951755;
 
-    public m(int i10) {
-        this.f36171d = i10;
-    }
+    /* renamed from: e  reason: collision with root package name */
+    public static int f35870e = 2131951759;
 
-    /* JADX WARN: Code restructure failed: missing block: B:0:?, code lost:
-        r2 = r2;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static boolean a(java.io.IOException r2) {
-        /*
-        L0:
-            if (r2 == 0) goto L16
-            boolean r0 = r2 instanceof le.m
-            if (r0 == 0) goto L11
-            r0 = r2
-            le.m r0 = (le.m) r0
-            int r0 = r0.f36171d
-            r1 = 2008(0x7d8, float:2.814E-42)
-            if (r0 != r1) goto L11
-            r2 = 1
-            return r2
-        L11:
-            java.lang.Throwable r2 = r2.getCause()
-            goto L0
-        L16:
-            r2 = 0
-            return r2
-        */
-        throw new UnsupportedOperationException("Method not decompiled: le.m.a(java.io.IOException):boolean");
-    }
+    /* renamed from: f  reason: collision with root package name */
+    public static int f35871f = 2131951760;
 
-    public m(Throwable th2, int i10) {
-        super(th2);
-        this.f36171d = i10;
-    }
+    /* renamed from: g  reason: collision with root package name */
+    public static int f35872g = 2131951761;
 
-    public m(String str, int i10) {
-        super(str);
-        this.f36171d = i10;
-    }
+    /* renamed from: h  reason: collision with root package name */
+    public static int f35873h = 2131951774;
 
-    public m(String str, Throwable th2, int i10) {
-        super(str, th2);
-        this.f36171d = i10;
-    }
+    /* renamed from: i  reason: collision with root package name */
+    public static int f35874i = 2131951775;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f35875j = 2131951776;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f35876k = 2131951777;
+
+    /* renamed from: l  reason: collision with root package name */
+    public static int f35877l = 2131951778;
+
+    /* renamed from: m  reason: collision with root package name */
+    public static int f35878m = 2131951779;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static int f35879n = 2131951780;
+
+    /* renamed from: o  reason: collision with root package name */
+    public static int f35880o = 2131951781;
+
+    /* renamed from: p  reason: collision with root package name */
+    public static int f35881p = 2131951782;
+
+    /* renamed from: q  reason: collision with root package name */
+    public static int f35882q = 2131951783;
+
+    /* renamed from: r  reason: collision with root package name */
+    public static int f35883r = 2131951787;
+
+    /* renamed from: s  reason: collision with root package name */
+    public static int f35884s = 2131951788;
+
+    /* renamed from: t  reason: collision with root package name */
+    public static int f35885t = 2131951789;
+
+    /* renamed from: u  reason: collision with root package name */
+    public static int f35886u = 2131951790;
+
+    /* renamed from: v  reason: collision with root package name */
+    public static int f35887v = 2131951791;
 }

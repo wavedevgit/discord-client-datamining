@@ -13,73 +13,73 @@ import java.util.TimeZone;
 public class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private Calendar f16683a = null;
+    private Calendar f16823a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private final gl.a f16684b = new gl.a();
+    private final hl.a f16824b = new hl.a();
 
     /* renamed from: c  reason: collision with root package name */
-    private final gl.j f16685c = new gl.j();
+    private final hl.j f16825c = new hl.j();
 
     /* renamed from: d  reason: collision with root package name */
-    private final gl.f f16686d = new gl.f();
+    private final hl.f f16826d = new hl.f();
 
     /* renamed from: e  reason: collision with root package name */
-    private final gl.l f16687e = new gl.l();
+    private final hl.l f16827e = new hl.l();
 
     /* renamed from: f  reason: collision with root package name */
-    private final gl.i f16688f = new gl.i();
+    private final hl.i f16828f = new hl.i();
 
     /* renamed from: g  reason: collision with root package name */
-    private final gl.h f16689g = new gl.h();
+    private final hl.h f16829g = new hl.h();
 
     /* renamed from: h  reason: collision with root package name */
-    private final gl.g f16690h = new gl.g();
+    private final hl.g f16830h = new hl.g();
 
     /* renamed from: i  reason: collision with root package name */
-    private final gl.m f16691i = new gl.m();
+    private final hl.m f16831i = new hl.m();
 
     /* renamed from: j  reason: collision with root package name */
-    private final gl.c f16692j = new gl.c();
+    private final hl.c f16832j = new hl.c();
 
     /* renamed from: k  reason: collision with root package name */
-    private final gl.e f16693k = new gl.e();
+    private final hl.e f16833k = new hl.e();
 
     /* renamed from: l  reason: collision with root package name */
-    private final gl.d f16694l = new gl.d();
+    private final hl.d f16834l = new hl.d();
 
     /* renamed from: m  reason: collision with root package name */
-    private final gl.b f16695m = new gl.b();
+    private final hl.b f16835m = new hl.b();
 
     /* renamed from: n  reason: collision with root package name */
-    private final HashMap f16696n = new a();
+    private final HashMap f16836n = new a();
 
     /* renamed from: o  reason: collision with root package name */
-    public d f16697o = new d(this);
+    public d f16837o = new d(this);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends HashMap {
         a() {
-            put(InquiryField.DateField.TYPE, n.this.f16684b);
-            put("mode", n.this.f16685c);
-            put("locale", n.this.f16686d);
-            put("textColor", n.this.f16687e);
-            put("minuteInterval", n.this.f16688f);
-            put("minimumDate", n.this.f16689g);
-            put("maximumDate", n.this.f16690h);
-            put("timezoneOffsetInMinutes", n.this.f16691i);
-            put("height", n.this.f16692j);
-            put("is24hourSource", n.this.f16693k);
-            put(StackTraceHelper.ID_KEY, n.this.f16694l);
-            put("dividerColor", n.this.f16695m);
+            put(InquiryField.DateField.TYPE, n.this.f16824b);
+            put("mode", n.this.f16825c);
+            put("locale", n.this.f16826d);
+            put("textColor", n.this.f16827e);
+            put("minuteInterval", n.this.f16828f);
+            put("minimumDate", n.this.f16829g);
+            put("maximumDate", n.this.f16830h);
+            put("timezoneOffsetInMinutes", n.this.f16831i);
+            put("height", n.this.f16832j);
+            put("is24hourSource", n.this.f16833k);
+            put(StackTraceHelper.ID_KEY, n.this.f16834l);
+            put("dividerColor", n.this.f16835m);
         }
     }
 
-    private gl.k B(String str) {
-        return (gl.k) this.f16696n.get(str);
+    private hl.k B(String str) {
+        return (hl.k) this.f16836n.get(str);
     }
 
-    private Calendar m(gl.k kVar) {
+    private Calendar m(hl.k kVar) {
         Calendar g10 = o.g((String) kVar.a(), D());
         n(g10);
         return g10;
@@ -108,13 +108,13 @@ public class n {
     }
 
     public String C() {
-        return (String) this.f16687e.a();
+        return (String) this.f16827e.a();
     }
 
     public TimeZone D() {
         char c10;
         try {
-            String str = (String) this.f16691i.a();
+            String str = (String) this.f16831i.a();
             if (str != null && !str.equals("")) {
                 int parseInt = Integer.parseInt(str);
                 int abs = Math.abs(parseInt);
@@ -134,7 +134,7 @@ public class n {
     }
 
     public void E(Calendar calendar) {
-        this.f16683a = calendar;
+        this.f16823a = calendar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -143,46 +143,46 @@ public class n {
     }
 
     public String p() {
-        return (String) this.f16695m.a();
+        return (String) this.f16835m.a();
     }
 
     public String q() {
-        return (String) this.f16694l.a();
+        return (String) this.f16834l.a();
     }
 
-    public fl.a r() {
-        return (fl.a) this.f16693k.a();
+    public gl.a r() {
+        return (gl.a) this.f16833k.a();
     }
 
     public String s() {
-        return (String) this.f16684b.a();
+        return (String) this.f16824b.a();
     }
 
     public Calendar t() {
-        return this.f16683a;
+        return this.f16823a;
     }
 
     public Locale u() {
-        return (Locale) this.f16686d.a();
+        return (Locale) this.f16826d.a();
     }
 
     public String v() {
-        return this.f16686d.f();
+        return this.f16826d.f();
     }
 
     public Calendar w() {
-        return m(this.f16690h);
+        return m(this.f16830h);
     }
 
     public Calendar x() {
-        return m(this.f16689g);
+        return m(this.f16829g);
     }
 
     public int y() {
-        return ((Integer) this.f16688f.a()).intValue();
+        return ((Integer) this.f16828f.a()).intValue();
     }
 
-    public fl.b z() {
-        return (fl.b) this.f16685c.a();
+    public gl.b z() {
+        return (gl.b) this.f16825c.a();
     }
 }

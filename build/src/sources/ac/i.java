@@ -1,27 +1,92 @@
 package ac;
 
-import android.content.Context;
+import ac.b;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-class i {
+public abstract class i {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Context f462a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static abstract class a {
+        public final a a(String str, int i10) {
+            e().put(str, String.valueOf(i10));
+            return this;
+        }
 
-    /* renamed from: b  reason: collision with root package name */
-    private final jc.a f463b;
+        public final a b(String str, long j10) {
+            e().put(str, String.valueOf(j10));
+            return this;
+        }
 
-    /* renamed from: c  reason: collision with root package name */
-    private final jc.a f464c;
+        public final a c(String str, String str2) {
+            e().put(str, str2);
+            return this;
+        }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public i(Context context, jc.a aVar, jc.a aVar2) {
-        this.f462a = context;
-        this.f463b = aVar;
-        this.f464c = aVar2;
+        public abstract i d();
+
+        protected abstract Map e();
+
+        protected abstract a f(Map map);
+
+        public abstract a g(Integer num);
+
+        public abstract a h(h hVar);
+
+        public abstract a i(long j10);
+
+        public abstract a j(String str);
+
+        public abstract a k(long j10);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public h a(String str) {
-        return h.a(this.f462a, this.f463b, this.f464c, str);
+    public static a a() {
+        return new b.C0007b().f(new HashMap());
+    }
+
+    public final String b(String str) {
+        String str2 = (String) c().get(str);
+        if (str2 == null) {
+            return "";
+        }
+        return str2;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public abstract Map c();
+
+    public abstract Integer d();
+
+    public abstract h e();
+
+    public abstract long f();
+
+    public final int g(String str) {
+        String str2 = (String) c().get(str);
+        if (str2 == null) {
+            return 0;
+        }
+        return Integer.valueOf(str2).intValue();
+    }
+
+    public final long h(String str) {
+        String str2 = (String) c().get(str);
+        if (str2 == null) {
+            return 0L;
+        }
+        return Long.valueOf(str2).longValue();
+    }
+
+    public final Map i() {
+        return Collections.unmodifiableMap(c());
+    }
+
+    public abstract String j();
+
+    public abstract long k();
+
+    public a l() {
+        return new b.C0007b().j(j()).g(d()).h(e()).i(f()).k(k()).f(new HashMap(c()));
     }
 }

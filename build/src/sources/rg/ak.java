@@ -1,0 +1,82 @@
+package rg;
+
+import java.io.UnsupportedEncodingException;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class ak implements lj {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final ke f48109a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private ki f48110b = new ki();
+
+    /* renamed from: c  reason: collision with root package name */
+    private final int f48111c;
+
+    private ak(ke keVar, int i10) {
+        this.f48109a = keVar;
+        jk.a();
+        this.f48111c = i10;
+    }
+
+    public static lj e(ke keVar) {
+        return new ak(keVar, 0);
+    }
+
+    public static lj f(ke keVar, int i10) {
+        return new ak(keVar, 1);
+    }
+
+    @Override // rg.lj
+    public final byte[] a(int i10, boolean z10) {
+        boolean z11;
+        int i11 = i10 ^ 1;
+        ki kiVar = this.f48110b;
+        if (1 != i11) {
+            z11 = false;
+        } else {
+            z11 = true;
+        }
+        kiVar.f(Boolean.valueOf(z11));
+        this.f48110b.e(Boolean.FALSE);
+        this.f48109a.i(this.f48110b.m());
+        try {
+            jk.a();
+            if (i10 == 0) {
+                return new bj.d().j(cc.f48160a).k(true).i().b(this.f48109a.j()).getBytes("utf-8");
+            }
+            me j10 = this.f48109a.j();
+            e2 e2Var = new e2();
+            cc.f48160a.a(e2Var);
+            return e2Var.b().a(j10);
+        } catch (UnsupportedEncodingException e10) {
+            throw new UnsupportedOperationException("Failed to covert logging to UTF-8 byte array", e10);
+        }
+    }
+
+    @Override // rg.lj
+    public final String b() {
+        mi f10 = this.f48109a.j().f();
+        if (f10 != null && !fl.b(f10.k())) {
+            return (String) hf.q.l(f10.k());
+        }
+        return "NA";
+    }
+
+    @Override // rg.lj
+    public final lj c(ki kiVar) {
+        this.f48110b = kiVar;
+        return this;
+    }
+
+    @Override // rg.lj
+    public final lj d(je jeVar) {
+        this.f48109a.f(jeVar);
+        return this;
+    }
+
+    @Override // rg.lj
+    public final int zza() {
+        return this.f48111c;
+    }
+}

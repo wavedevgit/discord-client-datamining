@@ -1,19 +1,33 @@
 package og;
+
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class f {
-
-    /* renamed from: a  reason: collision with root package name */
-    private int f42059a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final i f42060b = i.DEFAULT;
-
-    public final f a(int i10) {
-        this.f42059a = i10;
-        return this;
+public final class f implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
+        String str = null;
+        String str2 = null;
+        while (parcel.dataPosition() < A) {
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
+            if (l10 != 2) {
+                if (l10 != 3) {
+                    jf.b.z(parcel, r10);
+                } else {
+                    str2 = jf.b.f(parcel, r10);
+                }
+            } else {
+                str = jf.b.f(parcel, r10);
+            }
+        }
+        jf.b.k(parcel, A);
+        return new ve(str, str2);
     }
 
-    public final j b() {
-        return new e(this.f42059a, this.f42060b);
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new ve[i10];
     }
 }

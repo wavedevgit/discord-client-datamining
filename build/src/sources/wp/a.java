@@ -1,18 +1,39 @@
 package wp;
-
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public interface a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final c f54098a;
+    /* renamed from: wp.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0752a implements a {
 
-    public a(c sdkFilesManager) {
-        Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
-        this.f54098a = sdkFilesManager;
-    }
+        /* renamed from: a  reason: collision with root package name */
+        private final boolean f53887a;
 
-    public final c a() {
-        return this.f54098a;
+        public C0752a(boolean z10) {
+            this.f53887a = z10;
+        }
+
+        public final boolean a() {
+            return this.f53887a;
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if ((obj instanceof C0752a) && this.f53887a == ((C0752a) obj).f53887a) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return Boolean.hashCode(this.f53887a);
+        }
+
+        public String toString() {
+            boolean z10 = this.f53887a;
+            return "CancelRequest(force=" + z10 + ")";
+        }
     }
 }

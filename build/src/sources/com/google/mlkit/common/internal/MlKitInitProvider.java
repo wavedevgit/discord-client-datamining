@@ -7,8 +7,8 @@ import android.content.pm.ProviderInfo;
 import android.database.Cursor;
 import android.net.Uri;
 import android.util.Log;
-import gf.q;
-import tj.i;
+import hf.q;
+import uj.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class MlKitInitProvider extends ContentProvider {
     @Override // android.content.ContentProvider

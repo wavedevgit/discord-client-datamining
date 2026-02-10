@@ -86,7 +86,7 @@ public final class ReactDrawerLayout extends DrawerLayout {
             }
             return false;
         } catch (IllegalArgumentException e10) {
-            p8.a.K(ReactConstants.TAG, "Error intercepting touch event.", e10);
+            q8.a.K(ReactConstants.TAG, "Error intercepting touch event.", e10);
             return false;
         }
     }
@@ -117,7 +117,7 @@ public final class ReactDrawerLayout extends DrawerLayout {
             ViewGroup.LayoutParams layoutParams = childAt.getLayoutParams();
             Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type androidx.drawerlayout.widget.DrawerLayout.LayoutParams");
             DrawerLayout.d dVar = (DrawerLayout.d) layoutParams;
-            dVar.f4317a = this.drawerPosition;
+            dVar.f4014a = this.drawerPosition;
             ((ViewGroup.MarginLayoutParams) dVar).width = this.drawerWidth;
             childAt.setLayoutParams(dVar);
             childAt.setClickable(true);

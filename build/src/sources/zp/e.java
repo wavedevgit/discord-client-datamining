@@ -1,53 +1,72 @@
 package zp;
 
-import android.view.View;
-import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
-import rp.m;
+import org.jetbrains.annotations.NotNull;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class e {
+public final class e implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<e> CREATOR;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    /* renamed from: d  reason: collision with root package name */
+    public static final e f56620d = new e("ROUGH", 0);
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f56482a;
+    /* renamed from: e  reason: collision with root package name */
+    public static final e f56621e = new e("PRECISE", 1);
 
-        a(Function0 function0) {
-            this.f56482a = function0;
-        }
-    }
+    /* renamed from: i  reason: collision with root package name */
+    private static final /* synthetic */ e[] f56622i;
 
-    public static final void b(final zp.a navigationState, final Function0 back, final Function0 cancel, Pi2NavigationBar navigationBar, View backPressHandler) {
-        Intrinsics.checkNotNullParameter(navigationState, "navigationState");
-        Intrinsics.checkNotNullParameter(back, "back");
-        Intrinsics.checkNotNullParameter(cancel, "cancel");
-        Intrinsics.checkNotNullParameter(navigationBar, "navigationBar");
-        Intrinsics.checkNotNullParameter(backPressHandler, "backPressHandler");
-        navigationBar.l(navigationState, back, cancel);
-        Function0 function0 = new Function0() { // from class: zp.d
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                Unit c10;
-                c10 = e.c(a.this, back, cancel);
-                return c10;
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f56623o;
+
+    static {
+        e[] a10 = a();
+        f56622i = a10;
+        f56623o = yr.a.a(a10);
+        CREATOR = new Parcelable.Creator() { // from class: zp.e.a
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final e createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return e.valueOf(parcel.readString());
+            }
+
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final e[] newArray(int i10) {
+                return new e[i10];
             }
         };
-        backPressHandler.setTag(m.f49142h, new a(function0));
-        if (navigationState.a()) {
-            dn.e.c(backPressHandler, function0);
-        }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit c(zp.a aVar, Function0 function0, Function0 function02) {
-        if (aVar.b()) {
-            function0.invoke();
-        } else {
-            function02.invoke();
-        }
-        return Unit.f32056a;
+    private e(String str, int i10) {
+    }
+
+    private static final /* synthetic */ e[] a() {
+        return new e[]{f56620d, f56621e};
+    }
+
+    public static e valueOf(String str) {
+        return (e) Enum.valueOf(e.class, str);
+    }
+
+    public static e[] values() {
+        return (e[]) f56622i.clone();
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(name());
     }
 }

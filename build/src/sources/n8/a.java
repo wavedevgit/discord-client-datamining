@@ -1,38 +1,54 @@
 package n8;
 
-import java.io.File;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.AbstractExecutorService;
+import java.util.concurrent.TimeUnit;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a {
-    public static boolean a(File file) {
-        File[] listFiles = file.listFiles();
-        boolean z10 = true;
-        if (listFiles != null) {
-            for (File file2 : listFiles) {
-                z10 &= b(file2);
-            }
-        }
-        return z10;
+public class a extends AbstractExecutorService implements AutoCloseable {
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final a f37976d = new a();
+
+    private a() {
     }
 
-    public static boolean b(File file) {
-        if (file.isDirectory()) {
-            a(file);
-        }
-        return file.delete();
+    public static a a() {
+        return f37976d;
     }
 
-    public static void c(File file, b bVar) {
-        bVar.c(file);
-        File[] listFiles = file.listFiles();
-        if (listFiles != null) {
-            for (File file2 : listFiles) {
-                if (file2.isDirectory()) {
-                    c(file2, bVar);
-                } else {
-                    bVar.b(file2);
-                }
-            }
-        }
-        bVar.a(file);
+    @Override // java.util.concurrent.ExecutorService
+    public boolean awaitTermination(long j10, TimeUnit timeUnit) {
+        return true;
+    }
+
+    @Override // java.lang.AutoCloseable
+    public /* synthetic */ void close() {
+        c0.c.a(this);
+    }
+
+    @Override // java.util.concurrent.Executor
+    public void execute(Runnable runnable) {
+        runnable.run();
+    }
+
+    @Override // java.util.concurrent.ExecutorService
+    public boolean isShutdown() {
+        return false;
+    }
+
+    @Override // java.util.concurrent.ExecutorService
+    public boolean isTerminated() {
+        return false;
+    }
+
+    @Override // java.util.concurrent.ExecutorService
+    public List shutdownNow() {
+        shutdown();
+        return Collections.EMPTY_LIST;
+    }
+
+    @Override // java.util.concurrent.ExecutorService
+    public void shutdown() {
     }
 }

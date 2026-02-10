@@ -9,12 +9,12 @@ import p.a;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f49660a = new b();
+    public static final b f49463a = new b();
 
     private b() {
     }
 
-    public static final void a(a.C0575a options, r0.c priority) {
+    public static final void a(a.C0606a options, r0.c priority) {
         CaptureRequest.Key key;
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(priority, "priority");

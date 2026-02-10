@@ -46,15 +46,15 @@ public final class NextStep_Selfie_PendingPageJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw an.c.x("title", "title", reader);
+                    throw bn.c.x("title", "title", reader);
                 }
             } else if (J == 1 && (str2 = (String) this.stringAdapter.fromJson(reader)) == null) {
-                throw an.c.x("description", "description", reader);
+                throw bn.c.x("description", "description", reader);
             }
         }
         reader.D();
@@ -62,9 +62,9 @@ public final class NextStep_Selfie_PendingPageJsonAdapter extends h {
             if (str2 != null) {
                 return new NextStep.Selfie.PendingPage(str, str2);
             }
-            throw an.c.o("description", "description", reader);
+            throw bn.c.o("description", "description", reader);
         }
-        throw an.c.o("title", "title", reader);
+        throw bn.c.o("title", "title", reader);
     }
 
     @Override // com.squareup.moshi.h

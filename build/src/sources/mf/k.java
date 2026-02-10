@@ -1,13 +1,33 @@
 package mf;
 
-import android.content.Context;
-import android.os.Looper;
-import ef.a;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class k extends a.AbstractC0286a {
-    @Override // ef.a.AbstractC0286a
-    public final /* synthetic */ a.f b(Context context, Looper looper, gf.d dVar, Object obj, ff.d dVar2, ff.k kVar) {
-        a.d.C0287a c0287a = (a.d.C0287a) obj;
-        return new o(context, looper, dVar, dVar2, kVar);
+public final class k implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
+        int i10 = 0;
+        boolean z10 = false;
+        while (parcel.dataPosition() < A) {
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
+            if (l10 != 1) {
+                if (l10 != 2) {
+                    jf.b.z(parcel, r10);
+                } else {
+                    z10 = jf.b.m(parcel, r10);
+                }
+            } else {
+                i10 = jf.b.t(parcel, r10);
+            }
+        }
+        jf.b.k(parcel, A);
+        return new g(i10, z10);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new g[i10];
     }
 }

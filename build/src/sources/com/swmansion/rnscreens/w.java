@@ -28,28 +28,28 @@ import kotlin.jvm.internal.SourceDebugExtension;
 public class w extends Fragment implements ScreenFragmentWrapper {
 
     /* renamed from: s  reason: collision with root package name */
-    public static final a f18377s = new a(null);
+    public static final a f18517s = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    public Screen f18378d;
+    public Screen f18518d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f18379e;
+    private final List f18519e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f18380i;
+    private boolean f18520i;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f18381o;
+    private float f18521o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f18382p;
+    private boolean f18522p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f18383q;
+    private boolean f18523q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f18384r;
+    private boolean f18524r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -71,34 +71,34 @@ public class w extends Fragment implements ScreenFragmentWrapper {
     public static final class b {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f18385d = new b("DID_APPEAR", 0);
+        public static final b f18525d = new b("DID_APPEAR", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f18386e = new b("WILL_APPEAR", 1);
+        public static final b f18526e = new b("WILL_APPEAR", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final b f18387i = new b("DID_DISAPPEAR", 2);
+        public static final b f18527i = new b("DID_DISAPPEAR", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final b f18388o = new b("WILL_DISAPPEAR", 3);
+        public static final b f18528o = new b("WILL_DISAPPEAR", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ b[] f18389p;
+        private static final /* synthetic */ b[] f18529p;
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f18390q;
+        private static final /* synthetic */ EnumEntries f18530q;
 
         static {
             b[] a10 = a();
-            f18389p = a10;
-            f18390q = xr.a.a(a10);
+            f18529p = a10;
+            f18530q = yr.a.a(a10);
         }
 
         private b(String str, int i10) {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f18385d, f18386e, f18387i, f18388o};
+            return new b[]{f18525d, f18526e, f18527i, f18528o};
         }
 
         public static b valueOf(String str) {
@@ -106,7 +106,7 @@ public class w extends Fragment implements ScreenFragmentWrapper {
         }
 
         public static b[] values() {
-            return (b[]) f18389p.clone();
+            return (b[]) f18529p.clone();
         }
     }
 
@@ -130,62 +130,62 @@ public class w extends Fragment implements ScreenFragmentWrapper {
     public /* synthetic */ class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f18391a;
+        public static final /* synthetic */ int[] f18531a;
 
         static {
             int[] iArr = new int[b.values().length];
             try {
-                iArr[b.f18386e.ordinal()] = 1;
+                iArr[b.f18526e.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[b.f18385d.ordinal()] = 2;
+                iArr[b.f18525d.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[b.f18388o.ordinal()] = 3;
+                iArr[b.f18528o.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[b.f18387i.ordinal()] = 4;
+                iArr[b.f18527i.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
-            f18391a = iArr;
+            f18531a = iArr;
         }
     }
 
     public w() {
-        this.f18379e = new ArrayList();
-        this.f18381o = -1.0f;
-        this.f18382p = true;
-        this.f18383q = true;
+        this.f18519e = new ArrayList();
+        this.f18521o = -1.0f;
+        this.f18522p = true;
+        this.f18523q = true;
         throw new IllegalStateException("Screen fragments should never be restored. Follow instructions from https://github.com/software-mansion/react-native-screens/issues/17#issuecomment-424704067 to properly configure your main activity.");
     }
 
     private final void B() {
-        A(b.f18385d, this);
+        A(b.f18525d, this);
         F(1.0f, false);
     }
 
     private final void C() {
-        A(b.f18387i, this);
+        A(b.f18527i, this);
         F(1.0f, true);
     }
 
     private final void D() {
-        A(b.f18386e, this);
+        A(b.f18526e, this);
         F(0.0f, false);
     }
 
     private final void E() {
-        A(b.f18388o, this);
+        A(b.f18528o, this);
         F(0.0f, true);
     }
 
     private final void G(final boolean z10) {
-        this.f18384r = !z10;
+        this.f18524r = !z10;
         Fragment parentFragment = getParentFragment();
-        if (parentFragment != null && (!(parentFragment instanceof w) || ((w) parentFragment).f18384r)) {
+        if (parentFragment != null && (!(parentFragment instanceof w) || ((w) parentFragment).f18524r)) {
             return;
         }
         if (isResumed()) {
@@ -214,9 +214,9 @@ public class w extends Fragment implements ScreenFragmentWrapper {
     private final void L() {
         FragmentActivity activity = getActivity();
         if (activity == null) {
-            this.f18380i = true;
+            this.f18520i = true;
         } else {
-            v0.f18365a.x(g(), activity, o());
+            v0.f18505a.x(g(), activity, o());
         }
     }
 
@@ -231,23 +231,23 @@ public class w extends Fragment implements ScreenFragmentWrapper {
                 Screen g10 = n0Var.g();
                 fragmentWrapper.f(event);
                 int surfaceId = UIManagerHelper.getSurfaceId(g10);
-                int i10 = d.f18391a[event.ordinal()];
+                int i10 = d.f18531a[event.ordinal()];
                 if (i10 != 1) {
                     if (i10 != 2) {
                         if (i10 != 3) {
                             if (i10 == 4) {
-                                kVar = new nn.g(surfaceId, g10.getId());
+                                kVar = new on.g(surfaceId, g10.getId());
                             } else {
-                                throw new qr.p();
+                                throw new rr.p();
                             }
                         } else {
-                            kVar = new nn.l(surfaceId, g10.getId());
+                            kVar = new on.l(surfaceId, g10.getId());
                         }
                     } else {
-                        kVar = new nn.f(surfaceId, g10.getId());
+                        kVar = new on.f(surfaceId, g10.getId());
                     }
                 } else {
-                    kVar = new nn.k(surfaceId, g10.getId());
+                    kVar = new on.k(surfaceId, g10.getId());
                 }
                 Context context = g().getContext();
                 Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
@@ -262,12 +262,12 @@ public class w extends Fragment implements ScreenFragmentWrapper {
 
     public void F(float f10, boolean z10) {
         boolean z11;
-        if (!(this instanceof n0) || this.f18381o == f10) {
+        if (!(this instanceof n0) || this.f18521o == f10) {
             return;
         }
         float max = Math.max(0.0f, Math.min(1.0f, f10));
-        this.f18381o = max;
-        short a10 = f18377s.a(max);
+        this.f18521o = max;
+        short a10 = f18517s.a(max);
         n0 n0Var = (n0) this;
         ScreenContainer container = n0Var.g().getContainer();
         if (container instanceof ScreenStack) {
@@ -281,7 +281,7 @@ public class w extends Fragment implements ScreenFragmentWrapper {
         ReactContext reactContext = (ReactContext) context;
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(reactContext, n0Var.g().getId());
         if (eventDispatcherForReactTag != null) {
-            eventDispatcherForReactTag.dispatchEvent(new nn.j(UIManagerHelper.getSurfaceId(reactContext), n0Var.g().getId(), this.f18381o, z10, z12, a10));
+            eventDispatcherForReactTag.dispatchEvent(new on.j(UIManagerHelper.getSurfaceId(reactContext), n0Var.g().getId(), this.f18521o, z10, z12, a10));
         }
     }
 
@@ -295,7 +295,7 @@ public class w extends Fragment implements ScreenFragmentWrapper {
 
     public void K(Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "<set-?>");
-        this.f18378d = screen;
+        this.f18518d = screen;
     }
 
     @Override // com.swmansion.rnscreens.i
@@ -324,28 +324,28 @@ public class w extends Fragment implements ScreenFragmentWrapper {
     @Override // com.swmansion.rnscreens.u
     public void f(b event) {
         Intrinsics.checkNotNullParameter(event, "event");
-        int i10 = d.f18391a[event.ordinal()];
+        int i10 = d.f18531a[event.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 == 4) {
-                        this.f18383q = true;
+                        this.f18523q = true;
                         return;
                     }
-                    throw new qr.p();
+                    throw new rr.p();
                 }
-                this.f18382p = true;
+                this.f18522p = true;
                 return;
             }
-            this.f18383q = false;
+            this.f18523q = false;
             return;
         }
-        this.f18382p = false;
+        this.f18522p = false;
     }
 
     @Override // com.swmansion.rnscreens.ScreenFragmentWrapper
     public Screen g() {
-        Screen screen = this.f18378d;
+        Screen screen = this.f18518d;
         if (screen != null) {
             return screen;
         }
@@ -382,7 +382,7 @@ public class w extends Fragment implements ScreenFragmentWrapper {
 
     @Override // com.swmansion.rnscreens.ScreenFragmentWrapper
     public List j() {
-        return this.f18379e;
+        return this.f18519e;
     }
 
     @Override // com.swmansion.rnscreens.ScreenFragmentWrapper
@@ -433,7 +433,7 @@ public class w extends Fragment implements ScreenFragmentWrapper {
         Context context = getContext();
         if (context != null) {
             c cVar = new c(context);
-            cVar.addView(on.c.b(g()));
+            cVar.addView(pn.c.b(g()));
             return cVar;
         }
         return null;
@@ -449,7 +449,7 @@ public class w extends Fragment implements ScreenFragmentWrapper {
                 int surfaceId = UIManagerHelper.getSurfaceId(context);
                 EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag((ReactContext) context, g().getId());
                 if (eventDispatcherForReactTag != null) {
-                    eventDispatcherForReactTag.dispatchEvent(new nn.h(surfaceId, g().getId()));
+                    eventDispatcherForReactTag.dispatchEvent(new on.h(surfaceId, g().getId()));
                 }
             }
         }
@@ -459,34 +459,34 @@ public class w extends Fragment implements ScreenFragmentWrapper {
     @Override // androidx.fragment.app.Fragment
     public void onResume() {
         super.onResume();
-        if (this.f18380i) {
-            this.f18380i = false;
-            v0.f18365a.x(g(), i(), o());
+        if (this.f18520i) {
+            this.f18520i = false;
+            v0.f18505a.x(g(), i(), o());
         }
     }
 
     public boolean y(b event) {
         Intrinsics.checkNotNullParameter(event, "event");
-        int i10 = d.f18391a[event.ordinal()];
+        int i10 = d.f18531a[event.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 == 4) {
-                        if (!this.f18383q) {
+                        if (!this.f18523q) {
                             return true;
                         }
                         return false;
                     }
-                    throw new qr.p();
-                } else if (!this.f18382p) {
+                    throw new rr.p();
+                } else if (!this.f18522p) {
                     return true;
                 } else {
                     return false;
                 }
             }
-            return this.f18383q;
+            return this.f18523q;
         }
-        return this.f18382p;
+        return this.f18522p;
     }
 
     public void z() {
@@ -496,16 +496,16 @@ public class w extends Fragment implements ScreenFragmentWrapper {
         int surfaceId = UIManagerHelper.getSurfaceId(reactContext);
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(reactContext, g().getId());
         if (eventDispatcherForReactTag != null) {
-            eventDispatcherForReactTag.dispatchEvent(new nn.b(surfaceId, g().getId()));
+            eventDispatcherForReactTag.dispatchEvent(new on.b(surfaceId, g().getId()));
         }
     }
 
     public w(Screen screenView) {
         Intrinsics.checkNotNullParameter(screenView, "screenView");
-        this.f18379e = new ArrayList();
-        this.f18381o = -1.0f;
-        this.f18382p = true;
-        this.f18383q = true;
+        this.f18519e = new ArrayList();
+        this.f18521o = -1.0f;
+        this.f18522p = true;
+        this.f18523q = true;
         K(screenView);
     }
 }

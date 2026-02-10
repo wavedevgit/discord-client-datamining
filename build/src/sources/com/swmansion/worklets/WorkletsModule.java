@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class WorkletsModule extends NativeWorkletsModuleSpec {
     private final AndroidUIScheduler mAndroidUIScheduler;
-    @fb.a
+    @gb.a
     private HybridData mHybridData;
     private final AtomicBoolean mInvalidated;
     private final WorkletsMessageQueueThread mMessageQueueThread;

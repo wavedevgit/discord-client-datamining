@@ -2,9 +2,9 @@ package com.discord.analytics.touch;
 
 import android.os.Debug;
 import android.os.Process;
-import bs.r;
 import com.discord.logging.Log;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import cs.r;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -65,12 +65,12 @@ public final class TouchLoggerMemory {
                     } else {
                         j10 = 0;
                     }
-                    bs.c.a(bufferedReader, null);
+                    cs.c.a(bufferedReader, null);
                     return j10;
                 }
             }
-            Unit unit = Unit.f32056a;
-            bs.c.a(bufferedReader, null);
+            Unit unit = Unit.f31765a;
+            cs.c.a(bufferedReader, null);
             return 0L;
         } catch (Exception e10) {
             Log.INSTANCE.e(str, "Error reading VmRSS", e10);

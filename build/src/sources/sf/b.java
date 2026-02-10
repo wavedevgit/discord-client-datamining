@@ -1,55 +1,45 @@
 package sf;
 
 import android.os.IBinder;
-import gf.q;
-import java.lang.reflect.Field;
-import sf.a;
+import android.os.IInterface;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b extends a.AbstractBinderC0648a {
+public interface b extends IInterface {
 
-    /* renamed from: c  reason: collision with root package name */
-    private final Object f50009c;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static abstract class a extends kg.b implements b {
 
-    private b(Object obj) {
-        this.f50009c = obj;
-    }
-
-    public static a W0(Object obj) {
-        return new b(obj);
-    }
-
-    public static Object h(a aVar) {
-        if (aVar instanceof b) {
-            return ((b) aVar).f50009c;
-        }
-        IBinder asBinder = aVar.asBinder();
-        Field[] declaredFields = asBinder.getClass().getDeclaredFields();
-        Field field = null;
-        int i10 = 0;
-        for (Field field2 : declaredFields) {
-            if (!field2.isSynthetic()) {
-                i10++;
-                field = field2;
+        /* renamed from: sf.b$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+        public static class C0668a extends kg.a implements b {
+            C0668a(IBinder iBinder) {
+                super(iBinder, "com.google.android.gms.deviceperformance.internal.IDevicePerformanceService");
             }
-        }
-        if (i10 == 1) {
-            q.l(field);
-            if (!field.isAccessible()) {
-                field.setAccessible(true);
-                try {
-                    return field.get(asBinder);
-                } catch (IllegalAccessException e10) {
-                    throw new IllegalArgumentException("Could not access the field in remoteBinder.", e10);
-                } catch (NullPointerException e11) {
-                    throw new IllegalArgumentException("Binder object is null.", e11);
+
+            @Override // sf.b
+            public void z0(sf.a aVar) {
+                Parcel e10 = e();
+                int i10 = kg.c.f30877b;
+                if (aVar == null) {
+                    e10.writeStrongBinder(null);
+                } else {
+                    e10.writeStrongBinder(aVar.asBinder());
                 }
+                f(1, e10);
             }
-            throw new IllegalArgumentException("IObjectWrapper declared field not private!");
         }
-        int length = declaredFields.length;
-        StringBuilder sb2 = new StringBuilder(String.valueOf(length).length() + 53);
-        sb2.append("Unexpected number of IObjectWrapper declared fields: ");
-        sb2.append(length);
-        throw new IllegalArgumentException(sb2.toString());
+
+        public static b f(IBinder iBinder) {
+            if (iBinder == null) {
+                return null;
+            }
+            IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.deviceperformance.internal.IDevicePerformanceService");
+            if (queryLocalInterface instanceof b) {
+                return (b) queryLocalInterface;
+            }
+            return new C0668a(iBinder);
+        }
     }
+
+    void z0(sf.a aVar);
 }

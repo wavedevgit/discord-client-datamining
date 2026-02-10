@@ -16,38 +16,38 @@ import kotlin.collections.o0;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import qr.v;
+import rr.v;
 import u3.f;
 import u3.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class b {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final a f52154i = new a(null);
+    private static final a f52075i = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f52155a;
+    private final f f52076a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function0 f52156b;
+    private final Function0 f52077b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f52157c;
+    private final c f52078c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f52158d;
+    private final Map f52079d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f52159e;
+    private boolean f52080e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Bundle f52160f;
+    private Bundle f52081f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f52161g;
+    private boolean f52082g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f52162h;
+    private boolean f52083h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a {
@@ -62,11 +62,11 @@ public final class b {
     public b(f owner, Function0 onAttach) {
         Intrinsics.checkNotNullParameter(owner, "owner");
         Intrinsics.checkNotNullParameter(onAttach, "onAttach");
-        this.f52155a = owner;
-        this.f52156b = onAttach;
-        this.f52157c = new c();
-        this.f52158d = new LinkedHashMap();
-        this.f52162h = true;
+        this.f52076a = owner;
+        this.f52077b = onAttach;
+        this.f52078c = new c();
+        this.f52079d = new LinkedHashMap();
+        this.f52083h = true;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -74,17 +74,17 @@ public final class b {
         Intrinsics.checkNotNullParameter(lifecycleOwner, "<unused var>");
         Intrinsics.checkNotNullParameter(event, "event");
         if (event == Lifecycle.a.ON_START) {
-            bVar.f52162h = true;
+            bVar.f52083h = true;
         } else if (event == Lifecycle.a.ON_STOP) {
-            bVar.f52162h = false;
+            bVar.f52083h = false;
         }
     }
 
     public final Bundle c(String key) {
         Bundle bundle;
         Intrinsics.checkNotNullParameter(key, "key");
-        if (this.f52161g) {
-            Bundle bundle2 = this.f52160f;
+        if (this.f52082g) {
+            Bundle bundle2 = this.f52081f;
             if (bundle2 == null) {
                 return null;
             }
@@ -96,7 +96,7 @@ public final class b {
             }
             g.e(g.a(bundle2), key);
             if (u3.b.f(u3.b.a(bundle2))) {
-                this.f52160f = null;
+                this.f52081f = null;
             }
             return bundle;
         }
@@ -106,8 +106,8 @@ public final class b {
     public final SavedStateRegistry.b d(String key) {
         SavedStateRegistry.b bVar;
         Intrinsics.checkNotNullParameter(key, "key");
-        synchronized (this.f52157c) {
-            Iterator it = this.f52158d.entrySet().iterator();
+        synchronized (this.f52078c) {
+            Iterator it = this.f52079d.entrySet().iterator();
             do {
                 bVar = null;
                 if (!it.hasNext()) {
@@ -125,20 +125,20 @@ public final class b {
     }
 
     public final boolean e() {
-        return this.f52162h;
+        return this.f52083h;
     }
 
     public final void f() {
-        if (this.f52155a.getLifecycle().b() == Lifecycle.State.f4847e) {
-            if (!this.f52159e) {
-                this.f52156b.invoke();
-                this.f52155a.getLifecycle().a(new m() { // from class: v3.a
+        if (this.f52076a.getLifecycle().b() == Lifecycle.State.f4544e) {
+            if (!this.f52080e) {
+                this.f52077b.invoke();
+                this.f52076a.getLifecycle().a(new m() { // from class: v3.a
                     @Override // androidx.lifecycle.m
                     public final void k(LifecycleOwner lifecycleOwner, Lifecycle.a aVar) {
                         b.g(b.this, lifecycleOwner, aVar);
                     }
                 });
-                this.f52159e = true;
+                this.f52080e = true;
                 return;
             }
             throw new IllegalStateException("SavedStateRegistry was already attached.");
@@ -147,11 +147,11 @@ public final class b {
     }
 
     public final void h(Bundle bundle) {
-        if (!this.f52159e) {
+        if (!this.f52080e) {
             f();
         }
-        if (!this.f52155a.getLifecycle().b().d(Lifecycle.State.f4849o)) {
-            if (!this.f52161g) {
+        if (!this.f52076a.getLifecycle().b().d(Lifecycle.State.f4546o)) {
+            if (!this.f52082g) {
                 Bundle bundle2 = null;
                 if (bundle != null) {
                     Bundle a10 = u3.b.a(bundle);
@@ -159,13 +159,13 @@ public final class b {
                         bundle2 = u3.b.c(a10, "androidx.lifecycle.BundlableSavedStateRegistry.key");
                     }
                 }
-                this.f52160f = bundle2;
-                this.f52161g = true;
+                this.f52081f = bundle2;
+                this.f52082g = true;
                 return;
             }
             throw new IllegalStateException("SavedStateRegistry was already restored.");
         }
-        throw new IllegalStateException(("performRestore cannot be called when owner is " + this.f52155a.getLifecycle().b()).toString());
+        throw new IllegalStateException(("performRestore cannot be called when owner is " + this.f52076a.getLifecycle().b()).toString());
     }
 
     public final void i(Bundle outBundle) {
@@ -183,16 +183,16 @@ public final class b {
         }
         Bundle a10 = w1.c.a((Pair[]) Arrays.copyOf(pairArr, pairArr.length));
         Bundle a11 = g.a(a10);
-        Bundle bundle = this.f52160f;
+        Bundle bundle = this.f52081f;
         if (bundle != null) {
             g.b(a11, bundle);
         }
-        synchronized (this.f52157c) {
+        synchronized (this.f52078c) {
             try {
-                for (Map.Entry entry2 : this.f52158d.entrySet()) {
+                for (Map.Entry entry2 : this.f52079d.entrySet()) {
                     g.c(a11, (String) entry2.getKey(), ((SavedStateRegistry.b) entry2.getValue()).a());
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -205,10 +205,10 @@ public final class b {
     public final void j(String key, SavedStateRegistry.b provider) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(provider, "provider");
-        synchronized (this.f52157c) {
-            if (!this.f52158d.containsKey(key)) {
-                this.f52158d.put(key, provider);
-                Unit unit = Unit.f32056a;
+        synchronized (this.f52078c) {
+            if (!this.f52079d.containsKey(key)) {
+                this.f52079d.put(key, provider);
+                Unit unit = Unit.f31765a;
             } else {
                 throw new IllegalArgumentException("SavedStateProvider with the given key is already registered");
             }
@@ -217,8 +217,8 @@ public final class b {
 
     public final void k(String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        synchronized (this.f52157c) {
-            SavedStateRegistry.b bVar = (SavedStateRegistry.b) this.f52158d.remove(key);
+        synchronized (this.f52078c) {
+            SavedStateRegistry.b bVar = (SavedStateRegistry.b) this.f52079d.remove(key);
         }
     }
 }

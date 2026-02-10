@@ -10,7 +10,7 @@ public class DatePickerModule extends NativeRNDatePickerSpec {
     /* JADX INFO: Access modifiers changed from: package-private */
     public DatePickerModule(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
-        ot.a.b(reactApplicationContext, false);
+        pt.a.b(reactApplicationContext, false);
         this.module = new b(reactApplicationContext);
     }
 

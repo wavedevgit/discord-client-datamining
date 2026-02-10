@@ -387,7 +387,7 @@ public class ReactTextView extends AppCompatTextView implements ReactCompoundVie
                         return id2;
                     }
                 } catch (ArrayIndexOutOfBoundsException e10) {
-                    p8.a.m(ReactConstants.TAG, "Crash in HorizontalMeasurementProvider: " + e10.getMessage());
+                    q8.a.m(ReactConstants.TAG, "Crash in HorizontalMeasurementProvider: " + e10.getMessage());
                 }
             }
         }

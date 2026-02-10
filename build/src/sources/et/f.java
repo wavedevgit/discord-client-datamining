@@ -1,41 +1,37 @@
 package et;
 
-import ht.e;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import ys.f;
+import et.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f implements KSerializer {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final f f22119a = new f();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f22120b = ht.j.b("kotlinx.datetime.LocalDate", e.i.f26526a);
-
-    private f() {
+public abstract class f {
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int d(CharSequence charSequence, int i10, int i11) {
+        int i12 = 0;
+        while (i10 < i11) {
+            i12 = (i12 * 10) + bt.d.a(charSequence.charAt(i10));
+            i10++;
+        }
+        return i12;
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public ys.f deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return f.a.b(ys.f.Companion, decoder.z(), null, 2, null);
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Integer e(CharSequence charSequence, int i10, int i11) {
+        int i12 = 0;
+        while (i10 < i11) {
+            i12 = (i12 * 10) + bt.d.a(charSequence.charAt(i10));
+            if (i12 < 0) {
+                return null;
+            }
+            i10++;
+        }
+        return Integer.valueOf(i12);
     }
 
-    @Override // ft.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, ys.f value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.F(value.toString());
-    }
-
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f22120b;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final g f(a aVar, Object obj, Object obj2) {
+        Object c10 = aVar.c(obj, obj2);
+        if (c10 == null) {
+            return null;
+        }
+        return new g.a(c10);
     }
 }

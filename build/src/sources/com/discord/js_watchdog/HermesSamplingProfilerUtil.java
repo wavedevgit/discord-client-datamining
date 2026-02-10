@@ -1,7 +1,7 @@
 package com.discord.js_watchdog;
 
-import bs.b;
-import bs.c;
+import cs.b;
+import cs.c;
 import java.io.File;
 import java.io.FileInputStream;
 import kotlin.Metadata;

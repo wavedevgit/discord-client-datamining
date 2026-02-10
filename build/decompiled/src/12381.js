@@ -5,28 +5,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0, arg1() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var3 = var2.bind(var0)(var1);
-        var0 = var3.prototype;
-        var1 = Object.create(var0, {
-            constructor: {
-                value: var3
-            }
-        });
-        var5 = arg0;
-        var4 = arg1;
-        var6 = var1;
-        var0 = new var6[var3](var5, var4, var3);
-        var0 = var0 instanceof Object ? var0 : var1;
-        var0 = var0.patch;
+        var2 = arg0;
+        var1 = arg1;
+        var _closure2_slot0 = var1;
+        var1 = var2.sort;
+        var0 = function(arg0, arg1) { // Environment: var0
+            var1 = _closure1_slot0;
+            var2 = _closure1_slot1;
+            var0 = 0;
+            var0 = var2[var0];
+            var4 = undefined;
+            var3 = var1.bind(var4)(var0);
+            var2 = _closure2_slot0;
+            var1 = arg0;
+            var0 = arg1;
+            var0 = var3.bind(var4)(var1, var0, var2);
+            return var0;
+        };
+        var0 = var1.bind(var2)(var0);
         return var0;
     };
     var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12369]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12380]);

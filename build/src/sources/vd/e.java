@@ -1,51 +1,52 @@
 package vd;
 
-import android.net.Uri;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class e {
+public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinkedHashMap f52491a;
+    public final String f52252a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class a extends LinkedHashMap {
+    /* renamed from: b  reason: collision with root package name */
+    public final String f52253b;
 
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f52492d;
+    /* renamed from: c  reason: collision with root package name */
+    public final String f52254c;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        a(int i10, float f10, boolean z10, int i11) {
-            super(i10, f10, z10);
-            this.f52492d = i11;
+    public e(String str, String str2, String str3) {
+        this.f52252a = str;
+        this.f52253b = str2;
+        this.f52254c = str3;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-
-        @Override // java.util.LinkedHashMap
-        protected boolean removeEldestEntry(Map.Entry entry) {
-            if (size() > this.f52492d) {
+        if (obj != null && e.class == obj.getClass()) {
+            e eVar = (e) obj;
+            if (w0.c(this.f52252a, eVar.f52252a) && w0.c(this.f52253b, eVar.f52253b) && w0.c(this.f52254c, eVar.f52254c)) {
                 return true;
             }
-            return false;
         }
+        return false;
     }
 
-    public e(int i10) {
-        this.f52491a = new a(i10 + 1, 1.0f, false, i10);
-    }
-
-    public byte[] a(Uri uri) {
-        if (uri == null) {
-            return null;
+    public int hashCode() {
+        int i10;
+        int hashCode = this.f52252a.hashCode() * 31;
+        String str = this.f52253b;
+        int i11 = 0;
+        if (str != null) {
+            i10 = str.hashCode();
+        } else {
+            i10 = 0;
         }
-        return (byte[]) this.f52491a.get(uri);
-    }
-
-    public byte[] b(Uri uri, byte[] bArr) {
-        return (byte[]) this.f52491a.put((Uri) ne.a.e(uri), (byte[]) ne.a.e(bArr));
-    }
-
-    public byte[] c(Uri uri) {
-        return (byte[]) this.f52491a.remove(ne.a.e(uri));
+        int i12 = (hashCode + i10) * 31;
+        String str2 = this.f52254c;
+        if (str2 != null) {
+            i11 = str2.hashCode();
+        }
+        return i12 + i11;
     }
 }

@@ -8,13 +8,13 @@ import org.jetbrains.annotations.NotNull;
 public final class StarProjectionForAbsentTypeParameter extends TypeProjectionBase {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinType f34638a;
+    private final KotlinType f34347a;
 
     public StarProjectionForAbsentTypeParameter(@NotNull KotlinBuiltIns kotlinBuiltIns) {
         Intrinsics.checkNotNullParameter(kotlinBuiltIns, "kotlinBuiltIns");
         SimpleType nullableAnyType = kotlinBuiltIns.getNullableAnyType();
         Intrinsics.checkNotNullExpressionValue(nullableAnyType, "getNullableAnyType(...)");
-        this.f34638a = nullableAnyType;
+        this.f34347a = nullableAnyType;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeProjection
@@ -26,7 +26,7 @@ public final class StarProjectionForAbsentTypeParameter extends TypeProjectionBa
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeProjection
     @NotNull
     public KotlinType getType() {
-        return this.f34638a;
+        return this.f34347a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeProjection

@@ -1,30 +1,30 @@
 package com.facebook.imagepipeline.nativecode;
-@o8.d
+@p8.d
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class NativeJpegTranscoderFactory implements za.d {
+public class NativeJpegTranscoderFactory implements ab.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f10544a;
+    private final int f10684a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f10545b;
+    private final boolean f10685b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f10546c;
+    private final boolean f10686c;
 
-    @o8.d
+    @p8.d
     public NativeJpegTranscoderFactory(int i10, boolean z10, boolean z11) {
-        this.f10544a = i10;
-        this.f10545b = z10;
-        this.f10546c = z11;
+        this.f10684a = i10;
+        this.f10685b = z10;
+        this.f10686c = z11;
     }
 
-    @Override // za.d
-    @o8.d
-    public za.c createImageTranscoder(fa.c cVar, boolean z10) {
-        if (cVar != fa.b.f22997b) {
+    @Override // ab.d
+    @p8.d
+    public ab.c createImageTranscoder(ga.c cVar, boolean z10) {
+        if (cVar != ga.b.f24082b) {
             return null;
         }
-        return new NativeJpegTranscoder(z10, this.f10544a, this.f10545b, this.f10546c);
+        return new NativeJpegTranscoder(z10, this.f10684a, this.f10685b, this.f10686c);
     }
 }

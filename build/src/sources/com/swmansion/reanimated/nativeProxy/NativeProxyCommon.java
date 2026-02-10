@@ -31,7 +31,7 @@ import java.util.Objects;
 import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class NativeProxyCommon {
-    private final in.a gestureHandlerStateManager;
+    private final jn.a gestureHandlerStateManager;
     private final KeyboardAnimationManager keyboardAnimationManager;
     protected final WeakReference<ReactApplicationContext> mContext;
     protected NodesManager mNodesManager;
@@ -48,7 +48,7 @@ public abstract class NativeProxyCommon {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public NativeProxyCommon(ReactApplicationContext reactApplicationContext) {
-        in.a aVar = null;
+        jn.a aVar = null;
         ReanimatedModule reanimatedModule = (ReanimatedModule) reactApplicationContext.getNativeModule(ReanimatedModule.class);
         Objects.requireNonNull(reanimatedModule);
         this.mWorkletsModule = reanimatedModule.getWorkletsModule();
@@ -59,7 +59,7 @@ public abstract class NativeProxyCommon {
         addDevMenuOption();
         try {
             RNGestureHandlerModule.a aVar2 = RNGestureHandlerModule.Companion;
-            aVar = (in.a) reactApplicationContext.getNativeModule(RNGestureHandlerModule.class);
+            aVar = (jn.a) reactApplicationContext.getNativeModule(RNGestureHandlerModule.class);
         } catch (ClassCastException | ClassNotFoundException unused) {
         }
         this.gestureHandlerStateManager = aVar;
@@ -104,17 +104,17 @@ public abstract class NativeProxyCommon {
         throw new RuntimeException("[Reanimated] Java side failed to resolve C++ code version. See https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#java-side-failed-to-resolve-c-code-version for more information.");
     }
 
-    @fb.a
+    @gb.a
     public void configureProps(ReadableNativeArray readableNativeArray, ReadableNativeArray readableNativeArray2) {
         this.mNodesManager.configureProps(convertProps(readableNativeArray), convertProps(readableNativeArray2));
     }
 
-    @fb.a
+    @gb.a
     public void dispatchCommand(int i10, String str, ReadableArray readableArray) {
         this.mNodesManager.dispatchCommand(i10, str, readableArray);
     }
 
-    @fb.a
+    @gb.a
     public long getAnimationTimestamp() {
         if (this.slowAnimationsEnabled) {
             return this.firstUptime.longValue() + ((SystemClock.uptimeMillis() - this.firstUptime.longValue()) / 10);
@@ -124,7 +124,7 @@ public abstract class NativeProxyCommon {
 
     protected abstract HybridData getHybridData();
 
-    @fb.a
+    @gb.a
     public boolean getIsReducedMotion() {
         float f10;
         String string = Settings.Global.getString(this.mContext.get().getContentResolver(), "transition_animation_scale");
@@ -139,7 +139,7 @@ public abstract class NativeProxyCommon {
         return false;
     }
 
-    @fb.a
+    @gb.a
     public String getReanimatedJavaVersion() {
         return BuildConfig.REANIMATED_VERSION_JAVA;
     }
@@ -147,19 +147,19 @@ public abstract class NativeProxyCommon {
     /* JADX INFO: Access modifiers changed from: protected */
     public native void installJSIBindings();
 
-    @fb.a
+    @gb.a
     void maybeFlushUIUpdatesQueue() {
         if (!this.mNodesManager.isAnimationRunning()) {
             this.mNodesManager.performOperations(false, false);
         }
     }
 
-    @fb.a
+    @gb.a
     public float[] measure(int i10) {
         return this.mNodesManager.measure(i10);
     }
 
-    @fb.a
+    @gb.a
     public String obtainProp(int i10, String str) {
         return this.mNodesManager.obtainProp(i10, str);
     }
@@ -177,61 +177,61 @@ public abstract class NativeProxyCommon {
         reanimatedModule2.getNodesManager().getAnimationsManager().setNativeMethods(NativeProxy.createNativeMethodsHolder(layoutAnimations));
     }
 
-    @fb.a
+    @gb.a
     public void registerEventHandler(EventHandler eventHandler) {
         eventHandler.mCustomEventNamesResolver = this.mNodesManager.getEventNameResolver();
         this.mNodesManager.registerEventHandler(eventHandler);
     }
 
-    @fb.a
+    @gb.a
     public int registerSensor(int i10, int i11, SensorSetter sensorSetter) {
         return this.reanimatedSensorContainer.registerSensor(ReanimatedSensorType.getInstanceById(i10), i11, sensorSetter);
     }
 
-    @fb.a
+    @gb.a
     public void requestRender(AnimationFrameCallback animationFrameCallback) {
         this.mNodesManager.postOnAnimation(animationFrameCallback);
     }
 
-    @fb.a
+    @gb.a
     public void scrollTo(int i10, double d10, double d11, boolean z10) {
         this.mNodesManager.scrollTo(i10, d10, d11, z10);
     }
 
-    @fb.a
+    @gb.a
     protected void setCppVersion(String str) {
         this.cppVersion = str;
     }
 
-    @fb.a
+    @gb.a
     public void setGestureState(int i10, int i11) {
-        in.a aVar = this.gestureHandlerStateManager;
+        jn.a aVar = this.gestureHandlerStateManager;
         if (aVar != null) {
             aVar.setGestureHandlerState(i10, i11);
         }
     }
 
-    @fb.a
+    @gb.a
     public int subscribeForKeyboardEvents(KeyboardWorkletWrapper keyboardWorkletWrapper, boolean z10, boolean z11) {
         return this.keyboardAnimationManager.subscribeForKeyboardUpdates(keyboardWorkletWrapper, z10, z11);
     }
 
-    @fb.a
+    @gb.a
     public void synchronouslyUpdateUIProps(int i10, ReadableMap readableMap) {
         this.mNodesManager.synchronouslyUpdateUIProps(i10, readableMap);
     }
 
-    @fb.a
+    @gb.a
     public void unregisterSensor(int i10) {
         this.reanimatedSensorContainer.unregisterSensor(i10);
     }
 
-    @fb.a
+    @gb.a
     public void unsubscribeFromKeyboardEvents(int i10) {
         this.keyboardAnimationManager.unsubscribeFromKeyboardUpdates(i10);
     }
 
-    @fb.a
+    @gb.a
     public void updateProps(int i10, Map<String, Object> map) {
         this.mNodesManager.updateProps(i10, map);
     }

@@ -1,5 +1,7 @@
 package j8;
+
+import java.io.OutputStream;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface i {
-    h get();
+    void a(OutputStream outputStream);
 }

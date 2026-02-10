@@ -1,12 +1,12 @@
 package com.facebook.imagepipeline.memory;
 
-import va.a0;
-import va.z;
-@o8.d
+import wa.a0;
+import wa.z;
+@p8.d
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class NativeMemoryChunkPool extends f {
-    @o8.d
-    public NativeMemoryChunkPool(r8.d dVar, z zVar, a0 a0Var) {
+    @p8.d
+    public NativeMemoryChunkPool(s8.d dVar, z zVar, a0 a0Var) {
         super(dVar, zVar, a0Var);
     }
 

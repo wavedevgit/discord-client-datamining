@@ -11,93 +11,93 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f17596e;
+    public static final a f17736e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final c f17597i = new c("TopLeft", 0, "topLeft");
+    public static final c f17737i = new c("TopLeft", 0, "topLeft");
 
     /* renamed from: o  reason: collision with root package name */
-    public static final c f17598o = new c("TopCenter", 1, "topCenter");
+    public static final c f17738o = new c("TopCenter", 1, "topCenter");
 
     /* renamed from: p  reason: collision with root package name */
-    public static final c f17599p = new c("TopRight", 2, "topRight");
+    public static final c f17739p = new c("TopRight", 2, "topRight");
 
     /* renamed from: q  reason: collision with root package name */
-    public static final c f17600q = new c("CenterLeft", 3, "centerLeft");
+    public static final c f17740q = new c("CenterLeft", 3, "centerLeft");
 
     /* renamed from: r  reason: collision with root package name */
-    public static final c f17601r = new c("Center", 4, "center");
+    public static final c f17741r = new c("Center", 4, "center");
 
     /* renamed from: s  reason: collision with root package name */
-    public static final c f17602s = new c("CenterRight", 5, "centerRight");
+    public static final c f17742s = new c("CenterRight", 5, "centerRight");
 
     /* renamed from: t  reason: collision with root package name */
-    public static final c f17603t = new c("BottomLeft", 6, "bottomLeft");
+    public static final c f17743t = new c("BottomLeft", 6, "bottomLeft");
 
     /* renamed from: u  reason: collision with root package name */
-    public static final c f17604u = new c("BottomCenter", 7, "bottomCenter");
+    public static final c f17744u = new c("BottomCenter", 7, "bottomCenter");
 
     /* renamed from: v  reason: collision with root package name */
-    public static final c f17605v = new c("BottomRight", 8, "bottomRight");
+    public static final c f17745v = new c("BottomRight", 8, "bottomRight");
 
     /* renamed from: w  reason: collision with root package name */
-    private static final /* synthetic */ c[] f17606w;
+    private static final /* synthetic */ c[] f17746w;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f17607x;
+    private static final /* synthetic */ EnumEntries f17747x;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f17608d;
+    private final String f17748d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: com.rivereactnative.c$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public /* synthetic */ class C0209a {
+        public /* synthetic */ class C0236a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f17609a;
+            public static final /* synthetic */ int[] f17749a;
 
             static {
                 int[] iArr = new int[c.values().length];
                 try {
-                    iArr[c.f17597i.ordinal()] = 1;
+                    iArr[c.f17737i.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[c.f17598o.ordinal()] = 2;
+                    iArr[c.f17738o.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[c.f17599p.ordinal()] = 3;
+                    iArr[c.f17739p.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
                 try {
-                    iArr[c.f17600q.ordinal()] = 4;
+                    iArr[c.f17740q.ordinal()] = 4;
                 } catch (NoSuchFieldError unused4) {
                 }
                 try {
-                    iArr[c.f17601r.ordinal()] = 5;
+                    iArr[c.f17741r.ordinal()] = 5;
                 } catch (NoSuchFieldError unused5) {
                 }
                 try {
-                    iArr[c.f17602s.ordinal()] = 6;
+                    iArr[c.f17742s.ordinal()] = 6;
                 } catch (NoSuchFieldError unused6) {
                 }
                 try {
-                    iArr[c.f17603t.ordinal()] = 7;
+                    iArr[c.f17743t.ordinal()] = 7;
                 } catch (NoSuchFieldError unused7) {
                 }
                 try {
-                    iArr[c.f17604u.ordinal()] = 8;
+                    iArr[c.f17744u.ordinal()] = 8;
                 } catch (NoSuchFieldError unused8) {
                 }
                 try {
-                    iArr[c.f17605v.ordinal()] = 9;
+                    iArr[c.f17745v.ordinal()] = 9;
                 } catch (NoSuchFieldError unused9) {
                 }
-                f17609a = iArr;
+                f17749a = iArr;
             }
         }
 
@@ -118,7 +118,7 @@ public final class c {
 
         public final Alignment b(c v10) {
             Intrinsics.checkNotNullParameter(v10, "v");
-            switch (C0209a.f17609a[v10.ordinal()]) {
+            switch (C0236a.f17749a[v10.ordinal()]) {
                 case 1:
                     return Alignment.TOP_LEFT;
                 case 2:
@@ -148,17 +148,17 @@ public final class c {
 
     static {
         c[] a10 = a();
-        f17606w = a10;
-        f17607x = xr.a.a(a10);
-        f17596e = new a(null);
+        f17746w = a10;
+        f17747x = yr.a.a(a10);
+        f17736e = new a(null);
     }
 
     private c(String str, int i10, String str2) {
-        this.f17608d = str2;
+        this.f17748d = str2;
     }
 
     private static final /* synthetic */ c[] a() {
-        return new c[]{f17597i, f17598o, f17599p, f17600q, f17601r, f17602s, f17603t, f17604u, f17605v};
+        return new c[]{f17737i, f17738o, f17739p, f17740q, f17741r, f17742s, f17743t, f17744u, f17745v};
     }
 
     public static c valueOf(String str) {
@@ -166,11 +166,11 @@ public final class c {
     }
 
     public static c[] values() {
-        return (c[]) f17606w.clone();
+        return (c[]) f17746w.clone();
     }
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f17608d;
+        return this.f17748d;
     }
 }

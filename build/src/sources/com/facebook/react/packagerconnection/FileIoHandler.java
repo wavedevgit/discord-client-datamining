@@ -110,7 +110,7 @@ public final class FileIoHandler implements Runnable {
                                 if (optString2 != null) {
                                     if (Intrinsics.areEqual(optString, "r")) {
                                         responder.respond(Integer.valueOf(fileIoHandler.addOpenFile(optString2)));
-                                        Unit unit = Unit.f32056a;
+                                        Unit unit = Unit.f31765a;
                                     } else {
                                         throw new IllegalArgumentException(("unsupported mode: " + optString).toString());
                                     }
@@ -147,7 +147,7 @@ public final class FileIoHandler implements Runnable {
                                 TypeIntrinsics.asMutableMap(fileIoHandler.openFiles).remove(obj);
                                 ttlFileInputStream.close();
                                 responder.respond("");
-                                Unit unit = Unit.f32056a;
+                                Unit unit = Unit.f31765a;
                             } else {
                                 throw new Exception("invalid file handle, it might have timed out");
                             }
@@ -182,7 +182,7 @@ public final class FileIoHandler implements Runnable {
                                     TtlFileInputStream ttlFileInputStream = (TtlFileInputStream) fileIoHandler.openFiles.get(Integer.valueOf(optInt));
                                     if (ttlFileInputStream != null) {
                                         responder.respond(ttlFileInputStream.read(optInt2));
-                                        Unit unit = Unit.f32056a;
+                                        Unit unit = Unit.f31765a;
                                     } else {
                                         throw new Exception("invalid file handle, it might have timed out");
                                     }
@@ -223,7 +223,7 @@ public final class FileIoHandler implements Runnable {
                 ttlFileInputStream.close();
                 return true;
             } catch (IOException e10) {
-                p8.a.n(TAG, "Failed to close expired file", e10);
+                q8.a.n(TAG, "Failed to close expired file", e10);
                 return true;
             }
         }
@@ -250,7 +250,7 @@ public final class FileIoHandler implements Runnable {
                 if (!this.openFiles.isEmpty()) {
                     this.handler.postDelayed(this, FILE_TTL);
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }

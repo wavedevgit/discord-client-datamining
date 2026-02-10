@@ -1,35 +1,32 @@
 package eg;
 
+import android.os.Binder;
+import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class d {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f21525a = 0;
-
-    static {
-        d.class.getClassLoader();
+public abstract class d extends Binder implements IInterface {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public d(String str) {
+        attachInterface(this, str);
     }
 
-    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
-        if (parcel.readInt() == 0) {
-            return null;
+    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
+
+    @Override // android.os.Binder
+    public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (i10 > 16777215) {
+            if (super.onTransact(i10, parcel, parcel2, i11)) {
+                return true;
+            }
+        } else {
+            parcel.enforceInterface(getInterfaceDescriptor());
         }
-        return (Parcelable) creator.createFromParcel(parcel);
+        return e(i10, parcel, parcel2, i11);
     }
 
-    public static void b(Parcel parcel, Parcelable parcelable) {
-        if (parcelable == null) {
-            parcel.writeInt(0);
-            return;
-        }
-        parcel.writeInt(1);
-        parcelable.writeToParcel(parcel, 0);
-    }
-
-    public static void c(Parcel parcel, IInterface iInterface) {
-        parcel.writeStrongBinder(iInterface.asBinder());
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        return this;
     }
 }

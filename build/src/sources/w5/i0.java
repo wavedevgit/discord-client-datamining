@@ -1,0 +1,61 @@
+package w5;
+
+import android.graphics.Path;
+import java.util.Collections;
+import x5.c;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+abstract class i0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final c.a f53272a = c.a.a("nm", "c", "o", "fillEnabled", "r", "hd");
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static t5.p a(x5.c cVar, l5.i iVar) {
+        Path.FillType fillType;
+        s5.d dVar = null;
+        String str = null;
+        s5.a aVar = null;
+        boolean z10 = false;
+        boolean z11 = false;
+        int i10 = 1;
+        while (cVar.hasNext()) {
+            int p10 = cVar.p(f53272a);
+            if (p10 != 0) {
+                if (p10 != 1) {
+                    if (p10 != 2) {
+                        if (p10 != 3) {
+                            if (p10 != 4) {
+                                if (p10 != 5) {
+                                    cVar.s();
+                                    cVar.T();
+                                } else {
+                                    z11 = cVar.g();
+                                }
+                            } else {
+                                i10 = cVar.nextInt();
+                            }
+                        } else {
+                            z10 = cVar.g();
+                        }
+                    } else {
+                        dVar = d.h(cVar, iVar);
+                    }
+                } else {
+                    aVar = d.c(cVar, iVar);
+                }
+            } else {
+                str = cVar.b1();
+            }
+        }
+        if (dVar == null) {
+            dVar = new s5.d(Collections.singletonList(new z5.a(100)));
+        }
+        s5.d dVar2 = dVar;
+        if (i10 == 1) {
+            fillType = Path.FillType.WINDING;
+        } else {
+            fillType = Path.FillType.EVEN_ODD;
+        }
+        return new t5.p(str, z10, fillType, aVar, dVar2, z11);
+    }
+}

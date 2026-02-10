@@ -1,73 +1,189 @@
 package el;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
+import ik.k;
+import ik.q;
+import java.util.ArrayList;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
+final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[][] f21623a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f21624b;
+    private final mk.b f21746a;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f21625c;
+    private final int f21748c;
 
-    public b(int i10, int i11) {
-        this.f21623a = (byte[][]) Array.newInstance(Byte.TYPE, i11, i10);
-        this.f21624b = i10;
-        this.f21625c = i11;
+    /* renamed from: d  reason: collision with root package name */
+    private final int f21749d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f21750e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final int f21751f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final float f21752g;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final List f21747b = new ArrayList(5);
+
+    /* renamed from: h  reason: collision with root package name */
+    private final int[] f21753h = new int[3];
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b(mk.b bVar, int i10, int i11, int i12, int i13, float f10, q qVar) {
+        this.f21746a = bVar;
+        this.f21748c = i10;
+        this.f21749d = i11;
+        this.f21750e = i12;
+        this.f21751f = i13;
+        this.f21752g = f10;
     }
 
-    public void a(byte b10) {
-        for (byte[] bArr : this.f21623a) {
-            Arrays.fill(bArr, b10);
+    private static float a(int[] iArr, int i10) {
+        return (i10 - iArr[2]) - (iArr[1] / 2.0f);
+    }
+
+    private float b(int i10, int i11, int i12, int i13) {
+        mk.b bVar = this.f21746a;
+        int i14 = bVar.i();
+        int[] iArr = this.f21753h;
+        iArr[0] = 0;
+        iArr[1] = 0;
+        iArr[2] = 0;
+        int i15 = i10;
+        while (i15 >= 0 && bVar.e(i11, i15)) {
+            int i16 = iArr[1];
+            if (i16 > i12) {
+                break;
+            }
+            iArr[1] = i16 + 1;
+            i15--;
         }
-    }
-
-    public byte b(int i10, int i11) {
-        return this.f21623a[i11][i10];
-    }
-
-    public byte[][] c() {
-        return this.f21623a;
-    }
-
-    public int d() {
-        return this.f21625c;
-    }
-
-    public int e() {
-        return this.f21624b;
-    }
-
-    public void f(int i10, int i11, int i12) {
-        this.f21623a[i11][i10] = (byte) i12;
-    }
-
-    public void g(int i10, int i11, boolean z10) {
-        this.f21623a[i11][i10] = z10 ? (byte) 1 : (byte) 0;
-    }
-
-    public String toString() {
-        StringBuilder sb2 = new StringBuilder((this.f21624b * 2 * this.f21625c) + 2);
-        for (int i10 = 0; i10 < this.f21625c; i10++) {
-            byte[] bArr = this.f21623a[i10];
-            for (int i11 = 0; i11 < this.f21624b; i11++) {
-                byte b10 = bArr[i11];
-                if (b10 != 0) {
-                    if (b10 != 1) {
-                        sb2.append("  ");
-                    } else {
-                        sb2.append(" 1");
+        if (i15 >= 0 && iArr[1] <= i12) {
+            while (i15 >= 0 && !bVar.e(i11, i15)) {
+                int i17 = iArr[0];
+                if (i17 > i12) {
+                    break;
+                }
+                iArr[0] = i17 + 1;
+                i15--;
+            }
+            if (iArr[0] > i12) {
+                return Float.NaN;
+            }
+            int i18 = i10 + 1;
+            while (i18 < i14 && bVar.e(i11, i18)) {
+                int i19 = iArr[1];
+                if (i19 > i12) {
+                    break;
+                }
+                iArr[1] = i19 + 1;
+                i18++;
+            }
+            if (i18 != i14 && iArr[1] <= i12) {
+                while (i18 < i14 && !bVar.e(i11, i18)) {
+                    int i20 = iArr[2];
+                    if (i20 > i12) {
+                        break;
                     }
-                } else {
-                    sb2.append(" 0");
+                    iArr[2] = i20 + 1;
+                    i18++;
+                }
+                int i21 = iArr[2];
+                if (i21 <= i12 && Math.abs(((iArr[0] + iArr[1]) + i21) - i13) * 5 < i13 * 2 && d(iArr)) {
+                    return a(iArr, i18);
                 }
             }
-            sb2.append('\n');
         }
-        return sb2.toString();
+        return Float.NaN;
+    }
+
+    private boolean d(int[] iArr) {
+        float f10 = this.f21752g;
+        float f11 = f10 / 2.0f;
+        for (int i10 = 0; i10 < 3; i10++) {
+            if (Math.abs(f10 - iArr[i10]) >= f11) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private a e(int[] iArr, int i10, int i11) {
+        int i12 = iArr[0] + iArr[1] + iArr[2];
+        float a10 = a(iArr, i11);
+        float b10 = b(i10, (int) a10, iArr[1] * 2, i12);
+        if (!Float.isNaN(b10)) {
+            float f10 = ((iArr[0] + iArr[1]) + iArr[2]) / 3.0f;
+            for (a aVar : this.f21747b) {
+                if (aVar.f(f10, b10, a10)) {
+                    return aVar.g(b10, a10, f10);
+                }
+            }
+            this.f21747b.add(new a(a10, b10, f10));
+            return null;
+        }
+        return null;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public a c() {
+        int i10;
+        a e10;
+        a e11;
+        int i11 = this.f21748c;
+        int i12 = this.f21751f;
+        int i13 = this.f21750e + i11;
+        int i14 = this.f21749d + (i12 / 2);
+        int[] iArr = new int[3];
+        for (int i15 = 0; i15 < i12; i15++) {
+            if ((i15 & 1) == 0) {
+                i10 = (i15 + 1) / 2;
+            } else {
+                i10 = -((i15 + 1) / 2);
+            }
+            int i16 = i10 + i14;
+            iArr[0] = 0;
+            iArr[1] = 0;
+            iArr[2] = 0;
+            int i17 = i11;
+            while (i17 < i13 && !this.f21746a.e(i17, i16)) {
+                i17++;
+            }
+            int i18 = 0;
+            while (i17 < i13) {
+                if (this.f21746a.e(i17, i16)) {
+                    if (i18 == 1) {
+                        iArr[1] = iArr[1] + 1;
+                    } else if (i18 == 2) {
+                        if (d(iArr) && (e11 = e(iArr, i16, i17)) != null) {
+                            return e11;
+                        }
+                        iArr[0] = iArr[2];
+                        iArr[1] = 1;
+                        iArr[2] = 0;
+                        i18 = 1;
+                    } else {
+                        i18++;
+                        iArr[i18] = iArr[i18] + 1;
+                    }
+                } else {
+                    if (i18 == 1) {
+                        i18++;
+                    }
+                    iArr[i18] = iArr[i18] + 1;
+                }
+                i17++;
+            }
+            if (d(iArr) && (e10 = e(iArr, i16, i13)) != null) {
+                return e10;
+            }
+        }
+        if (!this.f21747b.isEmpty()) {
+            return (a) this.f21747b.get(0);
+        }
+        throw k.a();
     }
 }

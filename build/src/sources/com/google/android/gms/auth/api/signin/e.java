@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public final class e implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
+        int A = jf.b.A(parcel);
         ArrayList arrayList = null;
         Account account = null;
         String str = null;
@@ -21,44 +21,44 @@ public final class e implements Parcelable.Creator {
         boolean z11 = false;
         boolean z12 = false;
         while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            switch (hf.b.l(r10)) {
+            int r10 = jf.b.r(parcel);
+            switch (jf.b.l(r10)) {
                 case 1:
-                    i10 = hf.b.t(parcel, r10);
+                    i10 = jf.b.t(parcel, r10);
                     break;
                 case 2:
-                    arrayList = hf.b.j(parcel, r10, Scope.CREATOR);
+                    arrayList = jf.b.j(parcel, r10, Scope.CREATOR);
                     break;
                 case 3:
-                    account = (Account) hf.b.e(parcel, r10, Account.CREATOR);
+                    account = (Account) jf.b.e(parcel, r10, Account.CREATOR);
                     break;
                 case 4:
-                    z10 = hf.b.m(parcel, r10);
+                    z10 = jf.b.m(parcel, r10);
                     break;
                 case 5:
-                    z11 = hf.b.m(parcel, r10);
+                    z11 = jf.b.m(parcel, r10);
                     break;
                 case 6:
-                    z12 = hf.b.m(parcel, r10);
+                    z12 = jf.b.m(parcel, r10);
                     break;
                 case 7:
-                    str = hf.b.f(parcel, r10);
+                    str = jf.b.f(parcel, r10);
                     break;
                 case 8:
-                    str2 = hf.b.f(parcel, r10);
+                    str2 = jf.b.f(parcel, r10);
                     break;
                 case 9:
-                    arrayList2 = hf.b.j(parcel, r10, ze.a.CREATOR);
+                    arrayList2 = jf.b.j(parcel, r10, af.a.CREATOR);
                     break;
                 case 10:
-                    str3 = hf.b.f(parcel, r10);
+                    str3 = jf.b.f(parcel, r10);
                     break;
                 default:
-                    hf.b.z(parcel, r10);
+                    jf.b.z(parcel, r10);
                     break;
             }
         }
-        hf.b.k(parcel, A);
+        jf.b.k(parcel, A);
         return new GoogleSignInOptions(i10, arrayList, account, z10, z11, z12, str, str2, arrayList2, str3);
     }
 

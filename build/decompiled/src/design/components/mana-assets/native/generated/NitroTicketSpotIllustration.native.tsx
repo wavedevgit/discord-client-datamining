@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/NitroTicketSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53257: for (var _fun53257_ip = 0;;) switch (_fun53257_ip) {
+        _fun53260: for (var _fun53260_ip = 0;;) switch (_fun53260_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun53257_ip = 35;
-                    continue _fun53257
+                    _fun53260_ip = 35;
+                    continue _fun53260
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun53257_ip = 47;
-                    continue _fun53257
+                    _fun53260_ip = 47;
+                    continue _fun53260
                 }
             case 44:
                 var7 = 162;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NitroTicketSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6309, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6310, 2]);

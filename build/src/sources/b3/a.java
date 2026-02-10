@@ -9,32 +9,32 @@ public abstract class a {
 
     /* renamed from: b3.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0095a extends c {
+    public static final class C0128a extends c {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Function0 f6388b;
+        final /* synthetic */ Function0 f6313b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Function1 f6389c;
+        final /* synthetic */ Function1 f6314c;
 
-        C0095a(Function0 function0, Function1 function1) {
-            this.f6388b = function0;
-            this.f6389c = function1;
+        C0128a(Function0 function0, Function1 function1) {
+            this.f6313b = function0;
+            this.f6314c = function1;
         }
 
         @Override // b3.c
         public float a() {
-            return ((Number) this.f6388b.invoke()).floatValue();
+            return ((Number) this.f6313b.invoke()).floatValue();
         }
 
         @Override // b3.c
         public void b(float f10) {
-            this.f6389c.invoke(Float.valueOf(f10));
+            this.f6314c.invoke(Float.valueOf(f10));
         }
     }
 
     private static final c a(Function1 function1, Function0 function0) {
-        return new C0095a(function0, function1);
+        return new C0128a(function0, function1);
     }
 
     public static final SpringAnimation b(Function1 setter, Function0 getter, float f10) {

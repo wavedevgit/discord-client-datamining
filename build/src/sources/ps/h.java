@@ -1,47 +1,46 @@
 package ps;
 
-import android.os.Build;
-import android.os.Handler;
-import android.os.Looper;
-import android.view.Choreographer;
-import kotlin.Result;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class h {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final g f45707a;
-    private static volatile Choreographer choreographer;
-
-    static {
-        Object b10;
-        g gVar = null;
-        try {
-            Result.a aVar = Result.f32053e;
-            b10 = Result.b(new f(a(Looper.getMainLooper(), true), null, 2, null));
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32053e;
-            b10 = Result.b(kotlin.c.a(th2));
+public abstract /* synthetic */ class h {
+    public static final Object a(CoroutineContext coroutineContext, Function2 function2) {
+        p0 p0Var;
+        p0 a10;
+        CoroutineContext k10;
+        Thread currentThread = Thread.currentThread();
+        kotlin.coroutines.d dVar = (kotlin.coroutines.d) coroutineContext.m(kotlin.coroutines.d.f31837g);
+        if (dVar == null) {
+            a10 = l1.f44513a.b();
+            k10 = x.k(v0.f44543d, coroutineContext.V0(a10));
+        } else {
+            p0 p0Var2 = null;
+            if (dVar instanceof p0) {
+                p0Var = (p0) dVar;
+            } else {
+                p0Var = null;
+            }
+            if (p0Var != null) {
+                if (p0Var.v2()) {
+                    p0Var2 = p0Var;
+                }
+                if (p0Var2 != null) {
+                    a10 = p0Var2;
+                    k10 = x.k(v0.f44543d, coroutineContext);
+                }
+            }
+            a10 = l1.f44513a.a();
+            k10 = x.k(v0.f44543d, coroutineContext);
         }
-        if (!Result.g(b10)) {
-            gVar = b10;
-        }
-        f45707a = gVar;
+        e eVar = new e(k10, currentThread, a10);
+        eVar.X0(c0.f44496d, eVar, function2);
+        return eVar.Y0();
     }
 
-    public static final Handler a(Looper looper, boolean z10) {
-        if (z10) {
-            if (Build.VERSION.SDK_INT >= 28) {
-                Object invoke = Handler.class.getDeclaredMethod("createAsync", Looper.class).invoke(null, looper);
-                Intrinsics.checkNotNull(invoke, "null cannot be cast to non-null type android.os.Handler");
-                return (Handler) invoke;
-            }
-            try {
-                return (Handler) Handler.class.getDeclaredConstructor(Looper.class, Handler.Callback.class, Boolean.TYPE).newInstance(looper, null, Boolean.TRUE);
-            } catch (NoSuchMethodException unused) {
-                return new Handler(looper);
-            }
+    public static /* synthetic */ Object b(CoroutineContext coroutineContext, Function2 function2, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f31839d;
         }
-        return new Handler(looper);
+        return g.e(coroutineContext, function2);
     }
 }

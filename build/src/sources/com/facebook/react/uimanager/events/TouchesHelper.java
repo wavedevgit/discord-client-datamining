@@ -87,7 +87,7 @@ public final class TouchesHelper {
         return writableMapArr;
     }
 
-    @qr.c
+    @rr.c
     public static /* synthetic */ void getTARGET_KEY$annotations() {
     }
 

@@ -34,25 +34,25 @@ import java.util.Set;
 public final class NotificationManagerCompat {
 
     /* renamed from: d  reason: collision with root package name */
-    private static String f3464d;
+    private static String f3161d;
 
     /* renamed from: g  reason: collision with root package name */
-    private static f f3467g;
+    private static f f3164g;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f3468a;
+    private final Context f3165a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final NotificationManager f3469b;
+    private final NotificationManager f3166b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f3463c = new Object();
+    private static final Object f3160c = new Object();
 
     /* renamed from: e  reason: collision with root package name */
-    private static Set f3465e = new HashSet();
+    private static Set f3162e = new HashSet();
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Object f3466f = new Object();
+    private static final Object f3163f = new Object();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -106,31 +106,31 @@ public final class NotificationManagerCompat {
     public static class d implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f3470a;
+        final String f3167a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f3471b;
+        final int f3168b;
 
         /* renamed from: c  reason: collision with root package name */
-        final String f3472c;
+        final String f3169c;
 
         /* renamed from: d  reason: collision with root package name */
-        final Notification f3473d;
+        final Notification f3170d;
 
         d(String str, int i10, String str2, Notification notification) {
-            this.f3470a = str;
-            this.f3471b = i10;
-            this.f3472c = str2;
-            this.f3473d = notification;
+            this.f3167a = str;
+            this.f3168b = i10;
+            this.f3169c = str2;
+            this.f3170d = notification;
         }
 
         @Override // androidx.core.app.NotificationManagerCompat.g
         public void a(b.a aVar) {
-            aVar.T0(this.f3470a, this.f3471b, this.f3472c, this.f3473d);
+            aVar.S0(this.f3167a, this.f3168b, this.f3169c, this.f3170d);
         }
 
         public String toString() {
-            return "NotifyTask[packageName:" + this.f3470a + ", id:" + this.f3471b + ", tag:" + this.f3472c + "]";
+            return "NotifyTask[packageName:" + this.f3167a + ", id:" + this.f3168b + ", tag:" + this.f3169c + "]";
         }
     }
 
@@ -138,14 +138,14 @@ public final class NotificationManagerCompat {
     private static class e {
 
         /* renamed from: a  reason: collision with root package name */
-        final ComponentName f3474a;
+        final ComponentName f3171a;
 
         /* renamed from: b  reason: collision with root package name */
-        final IBinder f3475b;
+        final IBinder f3172b;
 
         e(ComponentName componentName, IBinder iBinder) {
-            this.f3474a = componentName;
-            this.f3475b = iBinder;
+            this.f3171a = componentName;
+            this.f3172b = iBinder;
         }
     }
 
@@ -154,101 +154,101 @@ public final class NotificationManagerCompat {
     public static class f implements Handler.Callback, ServiceConnection {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Context f3476d;
+        private final Context f3173d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final HandlerThread f3477e;
+        private final HandlerThread f3174e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Handler f3478i;
+        private final Handler f3175i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final Map f3479o = new HashMap();
+        private final Map f3176o = new HashMap();
 
         /* renamed from: p  reason: collision with root package name */
-        private Set f3480p = new HashSet();
+        private Set f3177p = new HashSet();
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            final ComponentName f3481a;
+            final ComponentName f3178a;
 
             /* renamed from: c  reason: collision with root package name */
-            b.a f3483c;
+            b.a f3180c;
 
             /* renamed from: b  reason: collision with root package name */
-            boolean f3482b = false;
+            boolean f3179b = false;
 
             /* renamed from: d  reason: collision with root package name */
-            ArrayDeque f3484d = new ArrayDeque();
+            ArrayDeque f3181d = new ArrayDeque();
 
             /* renamed from: e  reason: collision with root package name */
-            int f3485e = 0;
+            int f3182e = 0;
 
             a(ComponentName componentName) {
-                this.f3481a = componentName;
+                this.f3178a = componentName;
             }
         }
 
         f(Context context) {
-            this.f3476d = context;
+            this.f3173d = context;
             HandlerThread handlerThread = new HandlerThread("NotificationManagerCompat");
-            this.f3477e = handlerThread;
+            this.f3174e = handlerThread;
             handlerThread.start();
-            this.f3478i = new Handler(handlerThread.getLooper(), this);
+            this.f3175i = new Handler(handlerThread.getLooper(), this);
         }
 
         private boolean a(a aVar) {
-            if (aVar.f3482b) {
+            if (aVar.f3179b) {
                 return true;
             }
-            boolean bindService = this.f3476d.bindService(new Intent("android.support.BIND_NOTIFICATION_SIDE_CHANNEL").setComponent(aVar.f3481a), this, 33);
-            aVar.f3482b = bindService;
+            boolean bindService = this.f3173d.bindService(new Intent("android.support.BIND_NOTIFICATION_SIDE_CHANNEL").setComponent(aVar.f3178a), this, 33);
+            aVar.f3179b = bindService;
             if (bindService) {
-                aVar.f3485e = 0;
+                aVar.f3182e = 0;
             } else {
-                Log.w("NotifManCompat", "Unable to bind to listener " + aVar.f3481a);
-                this.f3476d.unbindService(this);
+                Log.w("NotifManCompat", "Unable to bind to listener " + aVar.f3178a);
+                this.f3173d.unbindService(this);
             }
-            return aVar.f3482b;
+            return aVar.f3179b;
         }
 
         private void b(a aVar) {
-            if (aVar.f3482b) {
-                this.f3476d.unbindService(this);
-                aVar.f3482b = false;
+            if (aVar.f3179b) {
+                this.f3173d.unbindService(this);
+                aVar.f3179b = false;
             }
-            aVar.f3483c = null;
+            aVar.f3180c = null;
         }
 
         private void c(g gVar) {
             j();
-            for (a aVar : this.f3479o.values()) {
-                aVar.f3484d.add(gVar);
+            for (a aVar : this.f3176o.values()) {
+                aVar.f3181d.add(gVar);
                 g(aVar);
             }
         }
 
         private void d(ComponentName componentName) {
-            a aVar = (a) this.f3479o.get(componentName);
+            a aVar = (a) this.f3176o.get(componentName);
             if (aVar != null) {
                 g(aVar);
             }
         }
 
         private void e(ComponentName componentName, IBinder iBinder) {
-            a aVar = (a) this.f3479o.get(componentName);
+            a aVar = (a) this.f3176o.get(componentName);
             if (aVar != null) {
-                aVar.f3483c = a.AbstractBinderC0090a.e(iBinder);
-                aVar.f3485e = 0;
+                aVar.f3180c = a.AbstractBinderC0123a.e(iBinder);
+                aVar.f3182e = 0;
                 g(aVar);
             }
         }
 
         private void f(ComponentName componentName) {
-            a aVar = (a) this.f3479o.get(componentName);
+            a aVar = (a) this.f3176o.get(componentName);
             if (aVar != null) {
                 b(aVar);
             }
@@ -256,12 +256,12 @@ public final class NotificationManagerCompat {
 
         private void g(a aVar) {
             if (Log.isLoggable("NotifManCompat", 3)) {
-                Log.d("NotifManCompat", "Processing component " + aVar.f3481a + ", " + aVar.f3484d.size() + " queued tasks");
+                Log.d("NotifManCompat", "Processing component " + aVar.f3178a + ", " + aVar.f3181d.size() + " queued tasks");
             }
-            if (!aVar.f3484d.isEmpty()) {
-                if (a(aVar) && aVar.f3483c != null) {
+            if (!aVar.f3181d.isEmpty()) {
+                if (a(aVar) && aVar.f3180c != null) {
                     while (true) {
-                        g gVar = (g) aVar.f3484d.peek();
+                        g gVar = (g) aVar.f3181d.peek();
                         if (gVar == null) {
                             break;
                         }
@@ -269,17 +269,17 @@ public final class NotificationManagerCompat {
                             if (Log.isLoggable("NotifManCompat", 3)) {
                                 Log.d("NotifManCompat", "Sending task " + gVar);
                             }
-                            gVar.a(aVar.f3483c);
-                            aVar.f3484d.remove();
+                            gVar.a(aVar.f3180c);
+                            aVar.f3181d.remove();
                         } catch (DeadObjectException unused) {
                             if (Log.isLoggable("NotifManCompat", 3)) {
-                                Log.d("NotifManCompat", "Remote service has died: " + aVar.f3481a);
+                                Log.d("NotifManCompat", "Remote service has died: " + aVar.f3178a);
                             }
                         } catch (RemoteException e10) {
-                            Log.w("NotifManCompat", "RemoteException communicating with " + aVar.f3481a, e10);
+                            Log.w("NotifManCompat", "RemoteException communicating with " + aVar.f3178a, e10);
                         }
                     }
-                    if (!aVar.f3484d.isEmpty()) {
+                    if (!aVar.f3181d.isEmpty()) {
                         i(aVar);
                         return;
                     }
@@ -290,29 +290,29 @@ public final class NotificationManagerCompat {
         }
 
         private void i(a aVar) {
-            if (this.f3478i.hasMessages(3, aVar.f3481a)) {
+            if (this.f3175i.hasMessages(3, aVar.f3178a)) {
                 return;
             }
-            int i10 = aVar.f3485e;
+            int i10 = aVar.f3182e;
             int i11 = i10 + 1;
-            aVar.f3485e = i11;
+            aVar.f3182e = i11;
             if (i11 > 6) {
-                Log.w("NotifManCompat", "Giving up on delivering " + aVar.f3484d.size() + " tasks to " + aVar.f3481a + " after " + aVar.f3485e + " retries");
-                aVar.f3484d.clear();
+                Log.w("NotifManCompat", "Giving up on delivering " + aVar.f3181d.size() + " tasks to " + aVar.f3178a + " after " + aVar.f3182e + " retries");
+                aVar.f3181d.clear();
                 return;
             }
             int i12 = (1 << i10) * 1000;
             if (Log.isLoggable("NotifManCompat", 3)) {
                 Log.d("NotifManCompat", "Scheduling retry for " + i12 + " ms");
             }
-            this.f3478i.sendMessageDelayed(this.f3478i.obtainMessage(3, aVar.f3481a), i12);
+            this.f3175i.sendMessageDelayed(this.f3175i.obtainMessage(3, aVar.f3178a), i12);
         }
 
         private void j() {
-            Set h10 = NotificationManagerCompat.h(this.f3476d);
-            if (!h10.equals(this.f3480p)) {
-                this.f3480p = h10;
-                List<ResolveInfo> queryIntentServices = this.f3476d.getPackageManager().queryIntentServices(new Intent().setAction("android.support.BIND_NOTIFICATION_SIDE_CHANNEL"), 0);
+            Set h10 = NotificationManagerCompat.h(this.f3173d);
+            if (!h10.equals(this.f3177p)) {
+                this.f3177p = h10;
+                List<ResolveInfo> queryIntentServices = this.f3173d.getPackageManager().queryIntentServices(new Intent().setAction("android.support.BIND_NOTIFICATION_SIDE_CHANNEL"), 0);
                 HashSet<ComponentName> hashSet = new HashSet();
                 for (ResolveInfo resolveInfo : queryIntentServices) {
                     if (h10.contains(resolveInfo.serviceInfo.packageName)) {
@@ -326,14 +326,14 @@ public final class NotificationManagerCompat {
                     }
                 }
                 for (ComponentName componentName2 : hashSet) {
-                    if (!this.f3479o.containsKey(componentName2)) {
+                    if (!this.f3176o.containsKey(componentName2)) {
                         if (Log.isLoggable("NotifManCompat", 3)) {
                             Log.d("NotifManCompat", "Adding listener record for " + componentName2);
                         }
-                        this.f3479o.put(componentName2, new a(componentName2));
+                        this.f3176o.put(componentName2, new a(componentName2));
                     }
                 }
-                Iterator it = this.f3479o.entrySet().iterator();
+                Iterator it = this.f3176o.entrySet().iterator();
                 while (it.hasNext()) {
                     Map.Entry entry = (Map.Entry) it.next();
                     if (!hashSet.contains(entry.getKey())) {
@@ -348,7 +348,7 @@ public final class NotificationManagerCompat {
         }
 
         public void h(g gVar) {
-            this.f3478i.obtainMessage(0, gVar).sendToTarget();
+            this.f3175i.obtainMessage(0, gVar).sendToTarget();
         }
 
         @Override // android.os.Handler.Callback
@@ -367,7 +367,7 @@ public final class NotificationManagerCompat {
                     return true;
                 }
                 e eVar = (e) message.obj;
-                e(eVar.f3474a, eVar.f3475b);
+                e(eVar.f3171a, eVar.f3172b);
                 return true;
             }
             c((g) message.obj);
@@ -379,7 +379,7 @@ public final class NotificationManagerCompat {
             if (Log.isLoggable("NotifManCompat", 3)) {
                 Log.d("NotifManCompat", "Connected to service " + componentName);
             }
-            this.f3478i.obtainMessage(1, new e(componentName, iBinder)).sendToTarget();
+            this.f3175i.obtainMessage(1, new e(componentName, iBinder)).sendToTarget();
         }
 
         @Override // android.content.ServiceConnection
@@ -387,7 +387,7 @@ public final class NotificationManagerCompat {
             if (Log.isLoggable("NotifManCompat", 3)) {
                 Log.d("NotifManCompat", "Disconnected from service " + componentName);
             }
-            this.f3478i.obtainMessage(2, componentName).sendToTarget();
+            this.f3175i.obtainMessage(2, componentName).sendToTarget();
         }
     }
 
@@ -398,8 +398,8 @@ public final class NotificationManagerCompat {
     }
 
     private NotificationManagerCompat(Context context) {
-        this.f3468a = context;
-        this.f3469b = (NotificationManager) context.getSystemService("notification");
+        this.f3165a = context;
+        this.f3166b = (NotificationManager) context.getSystemService("notification");
     }
 
     public static NotificationManagerCompat g(Context context) {
@@ -409,10 +409,10 @@ public final class NotificationManagerCompat {
     public static Set h(Context context) {
         Set set;
         String string = Settings.Secure.getString(context.getContentResolver(), "enabled_notification_listeners");
-        synchronized (f3463c) {
+        synchronized (f3160c) {
             if (string != null) {
                 try {
-                    if (!string.equals(f3464d)) {
+                    if (!string.equals(f3161d)) {
                         String[] split = string.split(":", -1);
                         HashSet hashSet = new HashSet(split.length);
                         for (String str : split) {
@@ -421,25 +421,25 @@ public final class NotificationManagerCompat {
                                 hashSet.add(unflattenFromString.getPackageName());
                             }
                         }
-                        f3465e = hashSet;
-                        f3464d = string;
+                        f3162e = hashSet;
+                        f3161d = string;
                     }
                 } catch (Throwable th2) {
                     throw th2;
                 }
             }
-            set = f3465e;
+            set = f3162e;
         }
         return set;
     }
 
     private void q(g gVar) {
-        synchronized (f3466f) {
+        synchronized (f3163f) {
             try {
-                if (f3467g == null) {
-                    f3467g = new f(this.f3468a.getApplicationContext());
+                if (f3164g == null) {
+                    f3164g = new f(this.f3165a.getApplicationContext());
                 }
-                f3467g.h(gVar);
+                f3164g.h(gVar);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -455,15 +455,15 @@ public final class NotificationManagerCompat {
     }
 
     public boolean a() {
-        return a.a(this.f3469b);
+        return a.a(this.f3166b);
     }
 
     public void b(String str, int i10) {
-        this.f3469b.cancel(str, i10);
+        this.f3166b.cancel(str, i10);
     }
 
     public void c() {
-        this.f3469b.cancelAll();
+        this.f3166b.cancelAll();
     }
 
     public void d(List list) {
@@ -473,7 +473,7 @@ public final class NotificationManagerCompat {
             while (it.hasNext()) {
                 arrayList.add(((k) it.next()).c());
             }
-            b.a(this.f3469b, arrayList);
+            b.a(this.f3166b, arrayList);
         }
     }
 
@@ -484,19 +484,19 @@ public final class NotificationManagerCompat {
             while (it.hasNext()) {
                 arrayList.add(((NotificationChannelCompat) it.next()).e());
             }
-            b.b(this.f3469b, arrayList);
+            b.b(this.f3166b, arrayList);
         }
     }
 
     public void f(String str) {
         if (Build.VERSION.SDK_INT >= 26) {
-            b.c(this.f3469b, str);
+            b.c(this.f3166b, str);
         }
     }
 
     public NotificationChannel i(String str) {
         if (Build.VERSION.SDK_INT >= 26) {
-            return b.e(this.f3469b, str);
+            return b.e(this.f3166b, str);
         }
         return null;
     }
@@ -512,7 +512,7 @@ public final class NotificationManagerCompat {
     public NotificationChannelGroup k(String str) {
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 28) {
-            return c.a(this.f3469b, str);
+            return c.a(this.f3166b, str);
         }
         if (i10 >= 26) {
             for (Object obj : l()) {
@@ -527,14 +527,14 @@ public final class NotificationManagerCompat {
 
     public List l() {
         if (Build.VERSION.SDK_INT >= 26) {
-            return b.f(this.f3469b);
+            return b.f(this.f3166b);
         }
         return Collections.EMPTY_LIST;
     }
 
     public List m() {
         if (Build.VERSION.SDK_INT >= 26) {
-            return b.g(this.f3469b);
+            return b.g(this.f3166b);
         }
         return Collections.EMPTY_LIST;
     }
@@ -559,10 +559,10 @@ public final class NotificationManagerCompat {
 
     public void p(String str, int i10, Notification notification) {
         if (r(notification)) {
-            q(new d(this.f3468a.getPackageName(), i10, str, notification));
-            this.f3469b.cancel(str, i10);
+            q(new d(this.f3165a.getPackageName(), i10, str, notification));
+            this.f3166b.cancel(str, i10);
             return;
         }
-        this.f3469b.notify(str, i10, notification);
+        this.f3166b.notify(str, i10, notification);
     }
 }

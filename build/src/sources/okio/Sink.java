@@ -11,5 +11,5 @@ public interface Sink extends Closeable, Flushable {
 
     Timeout timeout();
 
-    void w0(Buffer buffer, long j10);
+    void u0(Buffer buffer, long j10);
 }

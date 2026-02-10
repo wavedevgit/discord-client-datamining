@@ -6,49 +6,47 @@ import java.util.Map;
 import java.util.Queue;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface IScope {
-    void A(String str, Object obj);
+    void A(e1 e1Var);
 
-    void B(e1 e1Var);
+    List B();
 
-    List C();
+    io.sentry.protocol.h0 C();
 
-    io.sentry.protocol.h0 D();
+    String D();
 
-    String E();
+    void E();
 
-    void F();
+    io.sentry.featureflags.b F();
 
-    io.sentry.featureflags.b G();
+    void G(y0 y0Var);
 
-    void H(y0 y0Var);
+    void H(String str);
 
-    void I(String str);
+    z7 I();
 
-    z7 J();
+    io.sentry.protocol.x J();
 
-    io.sentry.protocol.x K();
+    s3 K();
 
-    s3 L();
+    void L(String str);
 
-    void M(String str);
+    y0 M();
 
-    y0 N();
+    List N();
 
-    List O();
+    void O(SentryEvent sentryEvent);
 
-    void P(SentryEvent sentryEvent);
+    void P();
 
-    void Q();
+    s3 Q(z3.a aVar);
 
-    s3 R(z3.a aVar);
+    void R(z3.c cVar);
 
-    void S(z3.c cVar);
+    void S(io.sentry.protocol.x xVar);
 
-    void T(io.sentry.protocol.x xVar);
+    List T();
 
-    List U();
-
-    void V(s3 s3Var);
+    void U(s3 s3Var);
 
     void a(String str, String str2);
 
@@ -70,37 +68,39 @@ public interface IScope {
 
     void h(Breadcrumb breadcrumb, Hint hint);
 
-    void j(Throwable th2, ISpan iSpan, String str);
+    void i(Throwable th2, ISpan iSpan, String str);
 
-    void k(io.sentry.protocol.h0 h0Var);
+    void j(io.sentry.protocol.h0 h0Var);
 
-    e1 l();
+    e1 k();
 
-    z7 m();
+    z7 l();
 
-    SentryLevel n();
+    SentryLevel m();
 
-    io.sentry.protocol.g o();
+    io.sentry.protocol.g n();
 
-    void p(io.sentry.protocol.x xVar);
+    void o(io.sentry.protocol.x xVar);
 
-    z3.d q();
+    z3.d p();
 
-    void r(k7 k7Var);
+    void q(k7 k7Var);
 
-    ISpan s();
+    ISpan r();
 
-    Queue t();
+    Queue s();
 
-    void u(List list);
+    void t(List list);
 
-    z7 v(z3.b bVar);
+    z7 u(z3.b bVar);
 
-    Map w();
+    Map v();
 
-    void x();
+    void w();
 
-    List y();
+    List x();
 
-    io.sentry.protocol.c z();
+    io.sentry.protocol.c y();
+
+    void z(String str, Object obj);
 }

@@ -34,8 +34,8 @@ public final class RedBoxDialogSurfaceDelegate$show$2 extends Dialog {
         Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type android.widget.FrameLayout.LayoutParams");
-        ((FrameLayout.LayoutParams) layoutParams).setMargins(f10.f3604a, f10.f3605b, f10.f3606c, f10.f3607d);
-        return WindowInsetsCompat.f3705b;
+        ((FrameLayout.LayoutParams) layoutParams).setMargins(f10.f3301a, f10.f3302b, f10.f3303c, f10.f3304d);
+        return WindowInsetsCompat.f3402b;
     }
 
     @Override // android.app.Dialog

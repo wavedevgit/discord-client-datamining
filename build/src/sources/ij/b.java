@@ -1,119 +1,143 @@
 package ij;
 
-import ij.f;
+import android.content.SharedPreferences;
+import android.util.Base64;
+import android.util.Log;
+import com.facebook.react.views.text.internal.span.SetSpanOperation;
+import java.security.KeyFactory;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.security.PublicKey;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.X509EncodedKeySpec;
+import org.json.JSONException;
+import org.json.JSONObject;
+import si.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class b extends f {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final String f26806a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final long f26807b;
+public class b {
 
     /* renamed from: c  reason: collision with root package name */
-    private final f.b f26808c;
+    private static final String[] f26901c = {"*", "FCM", "GCM", ""};
 
-    /* renamed from: ij.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class C0380b extends f.a {
+    /* renamed from: a  reason: collision with root package name */
+    private final SharedPreferences f26902a;
 
-        /* renamed from: a  reason: collision with root package name */
-        private String f26809a;
+    /* renamed from: b  reason: collision with root package name */
+    private final String f26903b;
 
-        /* renamed from: b  reason: collision with root package name */
-        private Long f26810b;
+    public b(e eVar) {
+        this.f26902a = eVar.j().getSharedPreferences("com.google.android.gms.appid", 0);
+        this.f26903b = b(eVar);
+    }
 
-        /* renamed from: c  reason: collision with root package name */
-        private f.b f26811c;
+    private String a(String str, String str2) {
+        return "|T|" + str + "|" + str2;
+    }
 
-        @Override // ij.f.a
-        public f a() {
-            String str = "";
-            if (this.f26810b == null) {
-                str = " tokenExpirationTimestamp";
-            }
-            if (str.isEmpty()) {
-                return new b(this.f26809a, this.f26810b.longValue(), this.f26811c);
-            }
-            throw new IllegalStateException("Missing required properties:" + str);
+    private static String b(e eVar) {
+        String d10 = eVar.m().d();
+        if (d10 != null) {
+            return d10;
         }
-
-        @Override // ij.f.a
-        public f.a b(f.b bVar) {
-            this.f26811c = bVar;
-            return this;
+        String c10 = eVar.m().c();
+        if (!c10.startsWith("1:") && !c10.startsWith("2:")) {
+            return c10;
         }
-
-        @Override // ij.f.a
-        public f.a c(String str) {
-            this.f26809a = str;
-            return this;
+        String[] split = c10.split(":");
+        if (split.length != 4) {
+            return null;
         }
+        String str = split[1];
+        if (str.isEmpty()) {
+            return null;
+        }
+        return str;
+    }
 
-        @Override // ij.f.a
-        public f.a d(long j10) {
-            this.f26810b = Long.valueOf(j10);
-            return this;
+    private static String c(PublicKey publicKey) {
+        try {
+            byte[] digest = MessageDigest.getInstance("SHA1").digest(publicKey.getEncoded());
+            digest[0] = (byte) (((digest[0] & 15) + 112) & SetSpanOperation.SPAN_MAX_PRIORITY);
+            return Base64.encodeToString(digest, 0, 8, 11);
+        } catch (NoSuchAlgorithmException unused) {
+            Log.w("ContentValues", "Unexpected error, device missing required algorithms");
+            return null;
         }
     }
 
-    @Override // ij.f
-    public f.b b() {
-        return this.f26808c;
-    }
-
-    @Override // ij.f
-    public String c() {
-        return this.f26806a;
-    }
-
-    @Override // ij.f
-    public long d() {
-        return this.f26807b;
-    }
-
-    public boolean equals(Object obj) {
-        f.b bVar;
-        if (obj == this) {
-            return true;
+    private String d(String str) {
+        try {
+            return new JSONObject(str).getString("token");
+        } catch (JSONException unused) {
+            return null;
         }
-        if (obj instanceof f) {
-            f fVar = (f) obj;
-            String str = this.f26806a;
-            if (str != null ? str.equals(fVar.c()) : fVar.c() == null) {
-                if (this.f26807b == fVar.d() && ((bVar = this.f26808c) != null ? bVar.equals(fVar.b()) : fVar.b() == null)) {
-                    return true;
+    }
+
+    private PublicKey e(String str) {
+        try {
+            return KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(Base64.decode(str, 8)));
+        } catch (IllegalArgumentException | NoSuchAlgorithmException | InvalidKeySpecException e10) {
+            Log.w("ContentValues", "Invalid key stored " + e10);
+            return null;
+        }
+    }
+
+    private String g() {
+        String string;
+        synchronized (this.f26902a) {
+            string = this.f26902a.getString("|S|id", null);
+        }
+        return string;
+    }
+
+    private String h() {
+        synchronized (this.f26902a) {
+            try {
+                String string = this.f26902a.getString("|S||P|", null);
+                if (string == null) {
+                    return null;
                 }
+                PublicKey e10 = e(string);
+                if (e10 == null) {
+                    return null;
+                }
+                return c(e10);
+            } catch (Throwable th2) {
+                throw th2;
             }
         }
-        return false;
     }
 
-    public int hashCode() {
-        int hashCode;
-        String str = this.f26806a;
-        int i10 = 0;
-        if (str == null) {
-            hashCode = 0;
-        } else {
-            hashCode = str.hashCode();
+    public String f() {
+        synchronized (this.f26902a) {
+            try {
+                String g10 = g();
+                if (g10 != null) {
+                    return g10;
+                }
+                return h();
+            } catch (Throwable th2) {
+                throw th2;
+            }
         }
-        long j10 = this.f26807b;
-        int i11 = (((hashCode ^ 1000003) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003;
-        f.b bVar = this.f26808c;
-        if (bVar != null) {
-            i10 = bVar.hashCode();
+    }
+
+    public String i() {
+        synchronized (this.f26902a) {
+            try {
+                for (String str : f26901c) {
+                    String string = this.f26902a.getString(a(this.f26903b, str), null);
+                    if (string != null && !string.isEmpty()) {
+                        if (string.startsWith("{")) {
+                            string = d(string);
+                        }
+                        return string;
+                    }
+                }
+                return null;
+            } catch (Throwable th2) {
+                throw th2;
+            }
         }
-        return i11 ^ i10;
-    }
-
-    public String toString() {
-        return "TokenResult{token=" + this.f26806a + ", tokenExpirationTimestamp=" + this.f26807b + ", responseCode=" + this.f26808c + "}";
-    }
-
-    private b(String str, long j10, f.b bVar) {
-        this.f26806a = str;
-        this.f26807b = j10;
-        this.f26808c = bVar;
     }
 }

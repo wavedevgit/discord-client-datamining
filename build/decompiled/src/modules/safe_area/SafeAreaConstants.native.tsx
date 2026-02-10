@@ -29,31 +29,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var8 != var3;
             var3 = undefined;
             if (!var5) {
-                _fun17576_ip = 96;
+                _fun17576_ip = 100;
                 continue _fun17576
             }
-        case 81:
+        case 85:
             var1 = var7[var1];
             var1 = var6.bind(var0)(var1);
             var3 = var1.initialWindowMetrics;
-        case 96:
+        case 100:
             var1 = var8 == var3;
             var5 = undefined;
             if (var1) {
-                _fun17576_ip = 111;
+                _fun17576_ip = 115;
                 continue _fun17576
             }
-        case 105:
+        case 109:
             var5 = var3.insets;
-        case 111:
+        case 115:
             var1 = var4;
             if (!(var8 != var5)) {
-                _fun17576_ip = 121;
+                _fun17576_ip = 125;
                 continue _fun17576
             }
-        case 118:
+        case 122:
             var1 = var5;
-        case 121:
+        case 125:
             var5 = 1;
             var5 = var7[var5];
             var7 = var6.bind(var0)(var5);

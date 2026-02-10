@@ -1,36 +1,45 @@
 package og;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class w4 implements yi.d {
+final class w4 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w4 f42670a = new w4();
+    static final w4 f41430a = new w4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42671b;
+    private static final zi.c f41431b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42672c;
+    private static final zi.c f41432c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f41433d;
 
     static {
-        c.b a10 = yi.c.a("options");
-        f fVar = new f();
-        fVar.a(1);
-        f42671b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("errorCode");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42672c = a11.b(fVar2.b()).a();
+        c.b a10 = zi.c.a("logEventKey");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        f41431b = a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("eventCount");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        f41432c = a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("inferenceDurationStats");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        f41433d = a12.b(l2Var3.b()).a();
     }
 
     private w4() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+        g3 g3Var = (g3) obj;
+        zi.e eVar = (zi.e) obj2;
+        eVar.d(f41431b, g3Var.a());
+        eVar.d(f41432c, g3Var.c());
+        eVar.d(f41433d, g3Var.b());
     }
 }

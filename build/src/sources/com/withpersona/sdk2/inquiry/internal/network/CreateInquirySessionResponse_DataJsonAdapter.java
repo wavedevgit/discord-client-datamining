@@ -14,25 +14,25 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19167a;
+    private final m.b f19307a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19168b;
+    private final com.squareup.moshi.h f19308b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f19169c;
+    private final com.squareup.moshi.h f19309c;
 
     public CreateInquirySessionResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19167a = a10;
+        this.f19307a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19168b = f10;
+        this.f19308b = f10;
         com.squareup.moshi.h f11 = moshi.f(CreateInquirySessionResponse.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19169c = f11;
+        this.f19309c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -43,21 +43,21 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
         String str = null;
         CreateInquirySessionResponse.Attributes attributes = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19167a);
+            int J = reader.J(this.f19307a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f19169c.fromJson(reader)) == null) {
-                        throw an.c.x("attributes", "attributes", reader);
+                    if (J == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f19309c.fromJson(reader)) == null) {
+                        throw bn.c.x("attributes", "attributes", reader);
                     }
                 } else {
-                    str = (String) this.f19168b.fromJson(reader);
+                    str = (String) this.f19308b.fromJson(reader);
                     if (str == null) {
-                        throw an.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+                        throw bn.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -65,9 +65,9 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
             if (attributes != null) {
                 return new CreateInquirySessionResponse.Data(str, attributes);
             }
-            throw an.c.o("attributes", "attributes", reader);
+            throw bn.c.o("attributes", "attributes", reader);
         }
-        throw an.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+        throw bn.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -77,9 +77,9 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
         if (data != null) {
             writer.k();
             writer.J(StackTraceHelper.ID_KEY);
-            this.f19168b.toJson(writer, data.b());
+            this.f19308b.toJson(writer, data.b());
             writer.J("attributes");
-            this.f19169c.toJson(writer, data.a());
+            this.f19309c.toJson(writer, data.a());
             writer.s();
             return;
         }

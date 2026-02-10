@@ -41,15 +41,15 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Disabled
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw an.c.x("uploadedFileType", "uploaded_file_type", mVar);
+                    throw bn.c.x("uploadedFileType", "uploaded_file_type", mVar);
                 }
             } else if (J == 1 && (list = (List) this.listOfStringAdapter.fromJson(mVar)) == null) {
-                throw an.c.x("enabledFileTypes", "enabled_file_types", mVar);
+                throw bn.c.x("enabledFileTypes", "enabled_file_types", mVar);
             }
         }
         mVar.D();
@@ -57,9 +57,9 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Disabled
             if (list != null) {
                 return new GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError.Details(str, list);
             }
-            throw an.c.o("enabledFileTypes", "enabled_file_types", mVar);
+            throw bn.c.o("enabledFileTypes", "enabled_file_types", mVar);
         }
-        throw an.c.o("uploadedFileType", "uploaded_file_type", mVar);
+        throw bn.c.o("uploadedFileType", "uploaded_file_type", mVar);
     }
 
     @Override // com.squareup.moshi.h

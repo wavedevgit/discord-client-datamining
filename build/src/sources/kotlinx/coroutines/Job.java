@@ -6,12 +6,12 @@ import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.sequences.Sequence;
-import os.n0;
+import ps.n0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface Job extends CoroutineContext.Element {
 
     /* renamed from: h  reason: collision with root package name */
-    public static final b f35065h = b.f35066d;
+    public static final b f34774h = b.f34775d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -47,7 +47,7 @@ public interface Job extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f35066d = new b();
+        static final /* synthetic */ b f34775d = new b();
 
         private b() {
         }
@@ -55,13 +55,13 @@ public interface Job extends CoroutineContext.Element {
 
     CancellationException C();
 
-    os.n E0(os.o oVar);
+    n0 Q(Function1 function1);
 
-    n0 P(Function1 function1);
+    Object W0(Continuation continuation);
 
     boolean a();
 
-    Object d1(Continuation continuation);
+    ps.n a1(ps.o oVar);
 
     Sequence getChildren();
 

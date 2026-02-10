@@ -1,30 +1,48 @@
 package qg;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class ua implements yi.d {
+public final class ua {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ua f47615a = new ua();
+    private v9 f46347a;
 
-    static {
-        c.b a10 = yi.c.a("errorCode");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("subjectSegmenterOptions");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
+    /* renamed from: b  reason: collision with root package name */
+    private r9 f46348b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private n9 f46349c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private Integer f46350d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private Integer f46351e;
+
+    public final ua d(Integer num) {
+        this.f46350d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        return this;
     }
 
-    private ua() {
+    public final ua e(n9 n9Var) {
+        this.f46349c = n9Var;
+        return this;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    public final ua f(r9 r9Var) {
+        this.f46348b = r9Var;
+        return this;
+    }
+
+    public final ua g(v9 v9Var) {
+        this.f46347a = v9Var;
+        return this;
+    }
+
+    public final ua h(Integer num) {
+        this.f46351e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        return this;
+    }
+
+    public final wa i() {
+        return new wa(this, null);
     }
 }

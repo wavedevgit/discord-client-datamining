@@ -10,27 +10,27 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f46521a;
+    private static final String f45276a;
 
     static {
         String i10 = k4.m.i("WakeLocks");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"WakeLocks\")");
-        f46521a = i10;
+        f45276a = i10;
     }
 
     public static final void a() {
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        u uVar = u.f46522a;
+        u uVar = u.f45277a;
         synchronized (uVar) {
             linkedHashMap.putAll(uVar.a());
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
         }
         for (Map.Entry entry : linkedHashMap.entrySet()) {
             PowerManager.WakeLock wakeLock = (PowerManager.WakeLock) entry.getKey();
             String str = (String) entry.getValue();
             if (wakeLock != null && wakeLock.isHeld()) {
                 k4.m e10 = k4.m.e();
-                String str2 = f46521a;
+                String str2 = f45276a;
                 e10.k(str2, "WakeLock held for " + str);
             }
         }
@@ -43,7 +43,7 @@ public abstract class t {
         Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.os.PowerManager");
         String str = "WorkManager: " + tag;
         PowerManager.WakeLock wakeLock = ((PowerManager) systemService).newWakeLock(1, str);
-        u uVar = u.f46522a;
+        u uVar = u.f45277a;
         synchronized (uVar) {
             String str2 = (String) uVar.a().put(wakeLock, str);
         }

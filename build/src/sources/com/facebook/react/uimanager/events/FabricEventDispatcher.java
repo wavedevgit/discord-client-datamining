@@ -71,7 +71,7 @@ public final class FabricEventDispatcher implements EventDispatcher, LifecycleEv
             } else {
                 dispatchBatchedEvents();
             }
-            qb.a.c(0L, "BatchEventDispatchedListeners");
+            rb.a.c(0L, "BatchEventDispatchedListeners");
             try {
                 Iterator it = FabricEventDispatcher.this.postEventDispatchListeners.iterator();
                 Intrinsics.checkNotNullExpressionValue(it, "iterator(...)");
@@ -79,7 +79,7 @@ public final class FabricEventDispatcher implements EventDispatcher, LifecycleEv
                     ((BatchEventDispatchedListener) it.next()).onBatchEventDispatched();
                 }
             } finally {
-                qb.a.i(0L);
+                rb.a.i(0L);
             }
         }
 
@@ -148,7 +148,7 @@ public final class FabricEventDispatcher implements EventDispatcher, LifecycleEv
     /* JADX INFO: Access modifiers changed from: private */
     public static final void dispatchEventsRunnable$lambda$0(FabricEventDispatcher fabricEventDispatcher) {
         fabricEventDispatcher.isDispatchScheduled = false;
-        qb.a.c(0L, "BatchEventDispatchedListeners");
+        rb.a.c(0L, "BatchEventDispatchedListeners");
         try {
             Iterator<BatchEventDispatchedListener> it = fabricEventDispatcher.postEventDispatchListeners.iterator();
             Intrinsics.checkNotNullExpressionValue(it, "iterator(...)");
@@ -156,13 +156,13 @@ public final class FabricEventDispatcher implements EventDispatcher, LifecycleEv
                 it.next().onBatchEventDispatched();
             }
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
         }
     }
 
     private final void dispatchSynchronous(Event<?> event) {
         String eventName = event.getEventName();
-        qb.a.c(0L, "FabricEventDispatcher.dispatchSynchronous('" + eventName + "')");
+        rb.a.c(0L, "FabricEventDispatcher.dispatchSynchronous('" + eventName + "')");
         try {
             UIManager uIManager = UIManagerHelper.getUIManager(this.reactContext, 2);
             if (uIManager instanceof SynchronousEventReceiver) {
@@ -170,9 +170,9 @@ public final class FabricEventDispatcher implements EventDispatcher, LifecycleEv
             } else {
                 ReactSoftExceptionLogger.logSoftException("FabricEventDispatcher", new IllegalStateException("Fabric UIManager expected to implement SynchronousEventReceiver."));
             }
-            qb.a.i(0L);
+            rb.a.i(0L);
         } catch (Throwable th2) {
-            qb.a.i(0L);
+            rb.a.i(0L);
             throw th2;
         }
     }
@@ -234,7 +234,7 @@ public final class FabricEventDispatcher implements EventDispatcher, LifecycleEv
     }
 
     @Override // com.facebook.react.uimanager.events.EventDispatcher
-    @qr.c
+    @rr.c
     public void onCatalystInstanceDestroyed() {
         invalidate();
     }

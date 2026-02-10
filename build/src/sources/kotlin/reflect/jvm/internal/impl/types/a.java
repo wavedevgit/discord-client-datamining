@@ -11,28 +11,28 @@ import kotlin.reflect.jvm.internal.impl.types.model.TypeSystemContext;
 public class a implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Collection f34695d;
+    private final Collection f34404d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TypeCheckerState f34696e;
+    private final TypeCheckerState f34405e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final TypeSystemContext f34697i;
+    private final TypeSystemContext f34406i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final RigidTypeMarker f34698o;
+    private final RigidTypeMarker f34407o;
 
     public a(Collection collection, TypeCheckerState typeCheckerState, TypeSystemContext typeSystemContext, RigidTypeMarker rigidTypeMarker) {
-        this.f34695d = collection;
-        this.f34696e = typeCheckerState;
-        this.f34697i = typeSystemContext;
-        this.f34698o = rigidTypeMarker;
+        this.f34404d = collection;
+        this.f34405e = typeCheckerState;
+        this.f34406i = typeSystemContext;
+        this.f34407o = rigidTypeMarker;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Unit q10;
-        q10 = AbstractTypeChecker.q(this.f34695d, this.f34696e, this.f34697i, this.f34698o, (TypeCheckerState.ForkPointContext) obj);
+        q10 = AbstractTypeChecker.q(this.f34404d, this.f34405e, this.f34406i, this.f34407o, (TypeCheckerState.ForkPointContext) obj);
         return q10;
     }
 }

@@ -1,31 +1,31 @@
 package b9;
 
-import android.graphics.Color;
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a {
+public final class a implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f6497a = new a();
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final z8.a f6498b = new z8.a("Performance", "Markers for Performance", -16711936);
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final z8.a f6499c = new z8.a("Navigation", "Tag for navigation", Color.rgb(156, 39, 176));
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final z8.a f6500d = new z8.a("RN Core", "Tag for React Native Core", -16777216);
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final z8.a f6501e = new z8.a("Bridge Calls", "JS to Java calls (warning: this is spammy)", -65281);
-
-    /* renamed from: f  reason: collision with root package name */
-    public static final z8.a f6502f = new z8.a("Native Module", "Native Module init", Color.rgb((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 0, (int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT));
-
-    /* renamed from: g  reason: collision with root package name */
-    public static final z8.a f6503g = new z8.a("UI Manager", "UI Manager View Operations (requires restart\nwarning: this is spammy)", -16711681);
+    public static final a f6428a = new a();
 
     private a() {
+    }
+
+    @Override // b9.b
+    public boolean a(a9.a tag) {
+        Intrinsics.checkNotNullParameter(tag, "tag");
+        return false;
+    }
+
+    @Override // b9.b
+    public void b(a9.a tag, String message) {
+        Intrinsics.checkNotNullParameter(tag, "tag");
+        Intrinsics.checkNotNullParameter(message, "message");
+    }
+
+    @Override // b9.b
+    public void c(a9.a tag, String message, Object... args) {
+        Intrinsics.checkNotNullParameter(tag, "tag");
+        Intrinsics.checkNotNullParameter(message, "message");
+        Intrinsics.checkNotNullParameter(args, "args");
     }
 }

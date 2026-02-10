@@ -1,54 +1,54 @@
 package com.google.android.datatransport.cct;
 
+import ac.g;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Pattern;
-import zb.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a implements g {
 
     /* renamed from: c  reason: collision with root package name */
-    static final String f11514c;
+    static final String f11654c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final String f11515d;
+    static final String f11655d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f11516e;
+    private static final String f11656e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Set f11517f;
+    private static final Set f11657f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f11518g;
+    public static final a f11658g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final a f11519h;
+    public static final a f11659h;
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f11520a;
+    private final String f11660a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f11521b;
+    private final String f11661b;
 
     static {
         String a10 = e.a("hts/frbslgiggolai.o/0clgbthfra=snpoo", "tp:/ieaeogn.ogepscmvc/o/ac?omtjo_rt3");
-        f11514c = a10;
+        f11654c = a10;
         String a11 = e.a("hts/frbslgigp.ogepscmv/ieo/eaybtho", "tp:/ieaeogn-agolai.o/1frlglgc/aclg");
-        f11515d = a11;
+        f11655d = a11;
         String a12 = e.a("AzSCki82AwsLzKd5O8zo", "IayckHiZRO1EFl1aGoK");
-        f11516e = a12;
-        f11517f = Collections.unmodifiableSet(new HashSet(Arrays.asList(xb.c.b("proto"), xb.c.b("json"))));
-        f11518g = new a(a10, null);
-        f11519h = new a(a11, a12);
+        f11656e = a12;
+        f11657f = Collections.unmodifiableSet(new HashSet(Arrays.asList(yb.c.b("proto"), yb.c.b("json"))));
+        f11658g = new a(a10, null);
+        f11659h = new a(a11, a12);
     }
 
     public a(String str, String str2) {
-        this.f11520a = str;
-        this.f11521b = str2;
+        this.f11660a = str;
+        this.f11661b = str2;
     }
 
     public static a c(byte[] bArr) {
@@ -71,17 +71,17 @@ public final class a implements g {
         throw new IllegalArgumentException("Version marker missing from extras");
     }
 
-    @Override // zb.g
+    @Override // ac.g
     public Set a() {
-        return f11517f;
+        return f11657f;
     }
 
     public byte[] b() {
-        String str = this.f11521b;
-        if (str == null && this.f11520a == null) {
+        String str = this.f11661b;
+        if (str == null && this.f11660a == null) {
             return null;
         }
-        String str2 = this.f11520a;
+        String str2 = this.f11660a;
         if (str == null) {
             str = "";
         }
@@ -89,19 +89,19 @@ public final class a implements g {
     }
 
     public String d() {
-        return this.f11521b;
+        return this.f11661b;
     }
 
     public String e() {
-        return this.f11520a;
+        return this.f11660a;
     }
 
-    @Override // zb.f
+    @Override // ac.f
     public byte[] getExtras() {
         return b();
     }
 
-    @Override // zb.f
+    @Override // ac.f
     public String getName() {
         return "cct";
     }

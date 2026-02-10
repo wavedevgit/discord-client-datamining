@@ -3,15 +3,15 @@ package com.google.android.exoplayer2.upstream;
 import android.net.Uri;
 import com.google.android.exoplayer2.upstream.DataSource;
 import java.io.IOException;
-import le.c0;
+import me.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class l implements DataSource {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f13452a = new l();
+    public static final l f13592a = new l();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final DataSource.Factory f13453b = new DataSource.Factory() { // from class: le.v
+    public static final DataSource.Factory f13593b = new DataSource.Factory() { // from class: me.v
         @Override // com.google.android.exoplayer2.upstream.DataSource.Factory
         public final DataSource createDataSource() {
             return com.google.android.exoplayer2.upstream.l.o();
@@ -39,12 +39,12 @@ public final class l implements DataSource {
         return null;
     }
 
-    @Override // le.j
+    @Override // me.j
     public int read(byte[] bArr, int i10, int i11) {
         throw new UnsupportedOperationException();
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
-    public void j(c0 c0Var) {
+    public void i(c0 c0Var) {
     }
 }

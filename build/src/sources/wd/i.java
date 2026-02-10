@@ -1,883 +1,399 @@
 package wd;
 
 import android.net.Uri;
-import android.text.TextUtils;
-import android.util.Base64;
-import androidx.recyclerview.widget.RecyclerView;
-import bd.l;
-import com.facebook.react.animated.InterpolationAnimatedNode;
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.metadata.Metadata;
-import com.google.android.exoplayer2.upstream.k;
-import java.io.BufferedReader;
+import com.google.android.exoplayer2.upstream.DataSource;
+import com.google.android.exoplayer2.upstream.a;
+import java.io.EOFException;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.math.BigDecimal;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.io.InterruptedIOException;
+import java.math.BigInteger;
 import java.util.List;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Queue;
-import java.util.UUID;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import lc.l0;
-import ne.c0;
-import ne.u0;
-import ne.w0;
-import ne.y;
-import rc.m;
-import vd.q;
+import java.util.concurrent.TimeoutException;
+import java.util.concurrent.atomic.AtomicInteger;
+import nc.t1;
+import oe.h0;
+import oe.s0;
+import oe.u0;
 import wd.f;
-import wd.g;
+import xd.f;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class i implements k.a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final g f53706a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final f f53707b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f53682c = Pattern.compile("AVERAGE-BANDWIDTH=(\\d+)\\b");
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final Pattern f53683d = Pattern.compile("VIDEO=\"(.+?)\"");
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final Pattern f53684e = Pattern.compile("AUDIO=\"(.+?)\"");
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final Pattern f53685f = Pattern.compile("SUBTITLES=\"(.+?)\"");
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final Pattern f53686g = Pattern.compile("CLOSED-CAPTIONS=\"(.+?)\"");
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final Pattern f53687h = Pattern.compile("[^-]BANDWIDTH=(\\d+)\\b");
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final Pattern f53688i = Pattern.compile("CHANNELS=\"(.+?)\"");
-
-    /* renamed from: j  reason: collision with root package name */
-    private static final Pattern f53689j = Pattern.compile("CODECS=\"(.+?)\"");
+public final class i extends td.n {
+    private static final AtomicInteger N = new AtomicInteger();
+    private final boolean A;
+    private final boolean B;
+    private final t1 C;
+    private final long D;
+    private j E;
+    private p F;
+    private int G;
+    private boolean H;
+    private volatile boolean I;
+    private boolean J;
+    private oi.s K;
+    private boolean L;
+    private boolean M;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Pattern f53690k = Pattern.compile("RESOLUTION=(\\d+x\\d+)");
+    public final int f53554k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final Pattern f53691l = Pattern.compile("FRAME-RATE=([\\d\\.]+)\\b");
+    public final int f53555l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Pattern f53692m = Pattern.compile("#EXT-X-TARGETDURATION:(\\d+)\\b");
+    public final Uri f53556m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final Pattern f53693n = Pattern.compile("DURATION=([\\d\\.]+)\\b");
+    public final boolean f53557n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Pattern f53694o = Pattern.compile("PART-TARGET=([\\d\\.]+)\\b");
+    public final int f53558o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Pattern f53695p = Pattern.compile("#EXT-X-VERSION:(\\d+)\\b");
+    private final DataSource f53559p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Pattern f53696q = Pattern.compile("#EXT-X-PLAYLIST-TYPE:(.+)\\b");
+    private final com.google.android.exoplayer2.upstream.a f53560q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f53697r = Pattern.compile("CAN-SKIP-UNTIL=([\\d\\.]+)\\b");
+    private final j f53561r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Pattern f53698s = c("CAN-SKIP-DATERANGES");
+    private final boolean f53562s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Pattern f53699t = Pattern.compile("SKIPPED-SEGMENTS=(\\d+)\\b");
+    private final boolean f53563t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Pattern f53700u = Pattern.compile("[:|,]HOLD-BACK=([\\d\\.]+)\\b");
+    private final s0 f53564u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Pattern f53701v = Pattern.compile("PART-HOLD-BACK=([\\d\\.]+)\\b");
+    private final h f53565v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final Pattern f53702w = c("CAN-BLOCK-RELOAD");
+    private final List f53566w;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final Pattern f53703x = Pattern.compile("#EXT-X-MEDIA-SEQUENCE:(\\d+)\\b");
+    private final sc.m f53567x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final Pattern f53704y = Pattern.compile("#EXTINF:([\\d\\.]+)\\b");
+    private final md.h f53568y;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final Pattern f53705z = Pattern.compile("#EXTINF:[\\d\\.]+\\b,(.+)");
-    private static final Pattern A = Pattern.compile("LAST-MSN=(\\d+)\\b");
-    private static final Pattern B = Pattern.compile("LAST-PART=(\\d+)\\b");
-    private static final Pattern C = Pattern.compile("TIME-OFFSET=(-?[\\d\\.]+)\\b");
-    private static final Pattern D = Pattern.compile("#EXT-X-BYTERANGE:(\\d+(?:@\\d+)?)\\b");
-    private static final Pattern E = Pattern.compile("BYTERANGE=\"(\\d+(?:@\\d+)?)\\b\"");
-    private static final Pattern F = Pattern.compile("BYTERANGE-START=(\\d+)\\b");
-    private static final Pattern G = Pattern.compile("BYTERANGE-LENGTH=(\\d+)\\b");
-    private static final Pattern H = Pattern.compile("METHOD=(NONE|AES-128|SAMPLE-AES|SAMPLE-AES-CENC|SAMPLE-AES-CTR)\\s*(?:,|$)");
-    private static final Pattern I = Pattern.compile("KEYFORMAT=\"(.+?)\"");
-    private static final Pattern J = Pattern.compile("KEYFORMATVERSIONS=\"(.+?)\"");
-    private static final Pattern K = Pattern.compile("URI=\"(.+?)\"");
-    private static final Pattern L = Pattern.compile("IV=([^,.*]+)");
-    private static final Pattern M = Pattern.compile("TYPE=(AUDIO|VIDEO|SUBTITLES|CLOSED-CAPTIONS)");
-    private static final Pattern N = Pattern.compile("TYPE=(PART|MAP)");
-    private static final Pattern O = Pattern.compile("LANGUAGE=\"(.+?)\"");
-    private static final Pattern P = Pattern.compile("NAME=\"(.+?)\"");
-    private static final Pattern Q = Pattern.compile("GROUP-ID=\"(.+?)\"");
-    private static final Pattern R = Pattern.compile("CHARACTERISTICS=\"(.+?)\"");
-    private static final Pattern S = Pattern.compile("INSTREAM-ID=\"((?:CC|SERVICE)\\d+)\"");
-    private static final Pattern T = c("AUTOSELECT");
-    private static final Pattern U = c("DEFAULT");
-    private static final Pattern V = c("FORCED");
-    private static final Pattern W = c("INDEPENDENT");
-    private static final Pattern X = c("GAP");
-    private static final Pattern Y = c("PRECISE");
-    private static final Pattern Z = Pattern.compile("VALUE=\"(.+?)\"");
+    private final h0 f53569z;
 
-    /* renamed from: a0  reason: collision with root package name */
-    private static final Pattern f53680a0 = Pattern.compile("IMPORT=\"(.+?)\"");
-
-    /* renamed from: b0  reason: collision with root package name */
-    private static final Pattern f53681b0 = Pattern.compile("\\{\\$([a-zA-Z0-9\\-_]+)\\}");
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a extends IOException {
+    private i(h hVar, DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, Format format, boolean z10, DataSource dataSource2, com.google.android.exoplayer2.upstream.a aVar2, boolean z11, Uri uri, List list, int i10, Object obj, long j10, long j11, long j12, int i11, boolean z12, int i12, boolean z13, boolean z14, s0 s0Var, long j13, sc.m mVar, j jVar, md.h hVar2, h0 h0Var, boolean z15, t1 t1Var) {
+        super(dataSource, aVar, format, i10, obj, j10, j11, j12);
+        this.A = z10;
+        this.f53558o = i11;
+        this.M = z12;
+        this.f53555l = i12;
+        this.f53560q = aVar2;
+        this.f53559p = dataSource2;
+        this.H = aVar2 != null;
+        this.B = z11;
+        this.f53556m = uri;
+        this.f53562s = z14;
+        this.f53564u = s0Var;
+        this.D = j13;
+        this.f53563t = z13;
+        this.f53565v = hVar;
+        this.f53566w = list;
+        this.f53567x = mVar;
+        this.f53561r = jVar;
+        this.f53568y = hVar2;
+        this.f53569z = h0Var;
+        this.f53557n = z15;
+        this.C = t1Var;
+        this.K = oi.s.t();
+        this.f53554k = N.getAndIncrement();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class b {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final BufferedReader f53708a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private final Queue f53709b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private String f53710c;
-
-        public b(Queue queue, BufferedReader bufferedReader) {
-            this.f53709b = queue;
-            this.f53708a = bufferedReader;
+    private static DataSource i(DataSource dataSource, byte[] bArr, byte[] bArr2) {
+        if (bArr != null) {
+            oe.a.e(bArr2);
+            return new a(dataSource, bArr, bArr2);
         }
+        return dataSource;
+    }
 
-        public boolean a() {
-            String trim;
-            if (this.f53710c != null) {
-                return true;
+    public static i j(h hVar, DataSource dataSource, Format format, long j10, xd.f fVar, f.e eVar, Uri uri, List list, int i10, Object obj, boolean z10, s sVar, long j11, i iVar, byte[] bArr, byte[] bArr2, boolean z11, t1 t1Var, me.h hVar2) {
+        boolean z12;
+        com.google.android.exoplayer2.upstream.a aVar;
+        DataSource dataSource2;
+        boolean z13;
+        Uri uri2;
+        md.h hVar3;
+        h0 h0Var;
+        j jVar;
+        f.e eVar2 = eVar.f53549a;
+        com.google.android.exoplayer2.upstream.a a10 = new a.b().i(u0.e(fVar.f54840a, eVar2.f54803d)).h(eVar2.f54811t).g(eVar2.f54812u).b(eVar.f53552d ? 8 : 0).e(oi.t.j()).a();
+        boolean z14 = bArr != null;
+        DataSource i11 = i(dataSource, bArr, z14 ? l((String) oe.a.e(eVar2.f54810s)) : null);
+        f.d dVar = eVar2.f54804e;
+        if (dVar != null) {
+            boolean z15 = bArr2 != null;
+            byte[] l10 = z15 ? l((String) oe.a.e(dVar.f54810s)) : null;
+            z12 = true;
+            aVar = new a.b().i(u0.e(fVar.f54840a, dVar.f54803d)).h(dVar.f54811t).g(dVar.f54812u).e(oi.t.j()).a();
+            z13 = z15;
+            dataSource2 = i(dataSource, bArr2, l10);
+        } else {
+            z12 = true;
+            aVar = null;
+            dataSource2 = null;
+            z13 = false;
+        }
+        long j12 = j10 + eVar2.f54807p;
+        long j13 = j12 + eVar2.f54805i;
+        int i12 = fVar.f54783j + eVar2.f54806o;
+        if (iVar != null) {
+            com.google.android.exoplayer2.upstream.a aVar2 = iVar.f53560q;
+            boolean z16 = (aVar == aVar2 || (aVar != null && aVar2 != null && aVar.f13405a.equals(aVar2.f13405a) && aVar.f13411g == iVar.f53560q.f13411g)) ? z12 : false;
+            uri2 = uri;
+            boolean z17 = (uri2.equals(iVar.f53556m) && iVar.J) ? z12 : false;
+            hVar3 = iVar.f53568y;
+            h0Var = iVar.f53569z;
+            jVar = (z16 && z17 && !iVar.L && iVar.f53555l == i12) ? iVar.E : null;
+        } else {
+            uri2 = uri;
+            hVar3 = new md.h();
+            h0Var = new h0(10);
+            jVar = null;
+        }
+        return new i(hVar, i11, a10, format, z14, dataSource2, aVar, z13, uri2, list, i10, obj, j12, j13, eVar.f53550b, eVar.f53551c, !eVar.f53552d, i12, eVar2.f54813v, z10, sVar.a(i12), j11, eVar2.f54808q, jVar, hVar3, h0Var, z11, t1Var);
+    }
+
+    private void k(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, boolean z10, boolean z11) {
+        com.google.android.exoplayer2.upstream.a e10;
+        long position;
+        boolean z12 = false;
+        if (z10) {
+            if (this.G != 0) {
+                z12 = true;
             }
-            if (!this.f53709b.isEmpty()) {
-                this.f53710c = (String) ne.a.e((String) this.f53709b.poll());
-                return true;
+            e10 = aVar;
+        } else {
+            e10 = aVar.e(this.G);
+        }
+        try {
+            uc.e u10 = u(dataSource, e10, z11);
+            if (z12) {
+                u10.k(this.G);
             }
             do {
-                String readLine = this.f53708a.readLine();
-                this.f53710c = readLine;
-                if (readLine != null) {
-                    trim = readLine.trim();
-                    this.f53710c = trim;
-                } else {
+                try {
+                    if (this.I) {
+                        break;
+                    }
+                } catch (EOFException e11) {
+                    if ((this.f50777d.f11720p & 16384) != 0) {
+                        this.E.b();
+                        position = u10.getPosition();
+                    } else {
+                        throw e11;
+                    }
+                }
+            } while (this.E.a(u10));
+            position = u10.getPosition();
+            this.G = (int) (position - aVar.f13411g);
+        } finally {
+            me.o.a(dataSource);
+        }
+    }
+
+    private static byte[] l(String str) {
+        int i10;
+        if (ni.b.e(str).startsWith("0x")) {
+            str = str.substring(2);
+        }
+        byte[] byteArray = new BigInteger(str, 16).toByteArray();
+        byte[] bArr = new byte[16];
+        if (byteArray.length > 16) {
+            i10 = byteArray.length - 16;
+        } else {
+            i10 = 0;
+        }
+        System.arraycopy(byteArray, i10, bArr, (16 - byteArray.length) + i10, byteArray.length - i10);
+        return bArr;
+    }
+
+    private static boolean p(f.e eVar, xd.f fVar) {
+        f.e eVar2 = eVar.f53549a;
+        if (eVar2 instanceof f.b) {
+            if (!((f.b) eVar2).f54796w) {
+                if (eVar.f53551c != 0 || !fVar.f54842c) {
                     return false;
                 }
-            } while (trim.isEmpty());
+                return true;
+            }
             return true;
         }
+        return fVar.f54842c;
+    }
 
-        public String b() {
-            if (a()) {
-                String str = this.f53710c;
-                this.f53710c = null;
-                return str;
-            }
-            throw new NoSuchElementException();
+    private void r() {
+        k(this.f50782i, this.f50775b, this.A, true);
+    }
+
+    private void s() {
+        if (!this.H) {
+            return;
         }
+        oe.a.e(this.f53559p);
+        oe.a.e(this.f53560q);
+        k(this.f53559p, this.f53560q, this.B, false);
+        this.G = 0;
+        this.H = false;
     }
 
-    public i() {
-        this(g.f53656n, null);
-    }
-
-    private static long A(String str, Pattern pattern) {
-        return new BigDecimal(z(str, pattern, Collections.EMPTY_MAP)).multiply(new BigDecimal(1000000L)).longValue();
-    }
-
-    private static String B(String str, Map map) {
-        Matcher matcher = f53681b0.matcher(str);
-        StringBuffer stringBuffer = new StringBuffer();
-        while (matcher.find()) {
-            String group = matcher.group(1);
-            if (map.containsKey(group)) {
-                matcher.appendReplacement(stringBuffer, Matcher.quoteReplacement((String) map.get(group)));
-            }
+    private long t(uc.l lVar) {
+        lVar.e();
+        try {
+            this.f53569z.Q(10);
+            lVar.n(this.f53569z.e(), 0, 10);
+        } catch (EOFException unused) {
         }
-        matcher.appendTail(stringBuffer);
-        return stringBuffer.toString();
-    }
-
-    private static int C(BufferedReader bufferedReader, boolean z10, int i10) {
-        while (i10 != -1 && Character.isWhitespace(i10) && (z10 || !w0.F0(i10))) {
-            i10 = bufferedReader.read();
+        if (this.f53569z.K() != 4801587) {
+            return -9223372036854775807L;
         }
-        return i10;
-    }
-
-    private static boolean b(BufferedReader bufferedReader) {
-        int read = bufferedReader.read();
-        if (read == 239) {
-            if (bufferedReader.read() != 187 || bufferedReader.read() != 191) {
-                return false;
-            }
-            read = bufferedReader.read();
+        this.f53569z.V(3);
+        int G = this.f53569z.G();
+        int i10 = G + 10;
+        if (i10 > this.f53569z.b()) {
+            byte[] e10 = this.f53569z.e();
+            this.f53569z.Q(i10);
+            System.arraycopy(e10, 0, this.f53569z.e(), 0, 10);
         }
-        int C2 = C(bufferedReader, true, read);
-        for (int i10 = 0; i10 < 7; i10++) {
-            if (C2 != "#EXTM3U".charAt(i10)) {
-                return false;
-            }
-            C2 = bufferedReader.read();
+        lVar.n(this.f53569z.e(), 10, G);
+        Metadata e11 = this.f53568y.e(this.f53569z.e(), G);
+        if (e11 == null) {
+            return -9223372036854775807L;
         }
-        return w0.F0(C(bufferedReader, false, C2));
-    }
-
-    private static Pattern c(String str) {
-        return Pattern.compile(str + "=(NO|YES)");
-    }
-
-    private static m d(String str, m.b[] bVarArr) {
-        m.b[] bVarArr2 = new m.b[bVarArr.length];
-        for (int i10 = 0; i10 < bVarArr.length; i10++) {
-            bVarArr2[i10] = bVarArr[i10].b(null);
-        }
-        return new m(str, bVarArr2);
-    }
-
-    private static String e(long j10, String str, String str2) {
-        if (str == null) {
-            return null;
-        }
-        if (str2 != null) {
-            return str2;
-        }
-        return Long.toHexString(j10);
-    }
-
-    private static g.b f(ArrayList arrayList, String str) {
-        for (int i10 = 0; i10 < arrayList.size(); i10++) {
-            g.b bVar = (g.b) arrayList.get(i10);
-            if (str.equals(bVar.f53674d)) {
-                return bVar;
-            }
-        }
-        return null;
-    }
-
-    private static g.b g(ArrayList arrayList, String str) {
-        for (int i10 = 0; i10 < arrayList.size(); i10++) {
-            g.b bVar = (g.b) arrayList.get(i10);
-            if (str.equals(bVar.f53675e)) {
-                return bVar;
-            }
-        }
-        return null;
-    }
-
-    private static g.b h(ArrayList arrayList, String str) {
-        for (int i10 = 0; i10 < arrayList.size(); i10++) {
-            g.b bVar = (g.b) arrayList.get(i10);
-            if (str.equals(bVar.f53673c)) {
-                return bVar;
-            }
-        }
-        return null;
-    }
-
-    private static double j(String str, Pattern pattern) {
-        return Double.parseDouble(z(str, pattern, Collections.EMPTY_MAP));
-    }
-
-    private static m.b k(String str, String str2, Map map) {
-        String u10 = u(str, J, "1", map);
-        if ("urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed".equals(str2)) {
-            String z10 = z(str, K, map);
-            return new m.b(lc.d.f36023d, "video/mp4", Base64.decode(z10.substring(z10.indexOf(44)), 0));
-        } else if ("com.widevine".equals(str2)) {
-            return new m.b(lc.d.f36023d, "hls", w0.s0(str));
-        } else {
-            if ("com.microsoft.playready".equals(str2) && "1".equals(u10)) {
-                String z11 = z(str, K, map);
-                byte[] decode = Base64.decode(z11.substring(z11.indexOf(44)), 0);
-                UUID uuid = lc.d.f36024e;
-                return new m.b(uuid, "video/mp4", l.a(uuid, decode));
-            }
-            return null;
-        }
-    }
-
-    private static String l(String str) {
-        if (!"SAMPLE-AES-CENC".equals(str) && !"SAMPLE-AES-CTR".equals(str)) {
-            return "cbcs";
-        }
-        return "cenc";
-    }
-
-    private static int m(String str, Pattern pattern) {
-        return Integer.parseInt(z(str, pattern, Collections.EMPTY_MAP));
-    }
-
-    private static long n(String str, Pattern pattern) {
-        return Long.parseLong(z(str, pattern, Collections.EMPTY_MAP));
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:228:0x0624  */
-    /* JADX WARN: Removed duplicated region for block: B:230:0x0631  */
-    /* JADX WARN: Removed duplicated region for block: B:233:0x0647  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private static wd.f o(wd.g r89, wd.f r90, wd.i.b r91, java.lang.String r92) {
-        /*
-            Method dump skipped, instructions count: 1838
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: wd.i.o(wd.g, wd.f, wd.i$b, java.lang.String):wd.f");
-    }
-
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Multi-variable type inference failed */
-    private static g p(b bVar, String str) {
-        ArrayList arrayList;
-        Uri e10;
-        char c10;
-        ArrayList arrayList2;
-        String str2;
-        ArrayList arrayList3;
-        int parseInt;
-        String str3;
-        ArrayList arrayList4;
-        g.b bVar2;
-        String str4;
-        boolean z10;
-        int i10;
-        ArrayList arrayList5;
-        ArrayList arrayList6;
-        boolean z11;
-        int i11;
-        int i12;
-        ArrayList arrayList7;
-        float f10;
-        ArrayList arrayList8;
-        Uri e11;
-        int i13;
-        String str5 = str;
-        HashMap hashMap = new HashMap();
-        HashMap hashMap2 = new HashMap();
-        ArrayList arrayList9 = new ArrayList();
-        ArrayList arrayList10 = new ArrayList();
-        ArrayList arrayList11 = new ArrayList();
-        ArrayList arrayList12 = new ArrayList();
-        ArrayList arrayList13 = new ArrayList();
-        ArrayList arrayList14 = new ArrayList();
-        ArrayList arrayList15 = new ArrayList();
-        ArrayList arrayList16 = new ArrayList();
-        boolean z12 = false;
-        boolean z13 = false;
-        while (true) {
-            int i14 = 1;
-            if (bVar.a()) {
-                String b10 = bVar.b();
-                if (b10.startsWith("#EXT")) {
-                    arrayList16.add(b10);
+        int e12 = e11.e();
+        for (int i11 = 0; i11 < e12; i11++) {
+            Metadata.b d10 = e11.d(i11);
+            if (d10 instanceof md.l) {
+                md.l lVar2 = (md.l) d10;
+                if ("com.apple.streaming.transportStreamTimestamp".equals(lVar2.f36948e)) {
+                    System.arraycopy(lVar2.f36949i, 0, this.f53569z.e(), 0, 8);
+                    this.f53569z.U(0);
+                    this.f53569z.T(8);
+                    return this.f53569z.A() & 8589934591L;
                 }
-                boolean startsWith = b10.startsWith("#EXT-X-I-FRAME-STREAM-INF");
-                ArrayList arrayList17 = arrayList13;
-                if (b10.startsWith("#EXT-X-DEFINE")) {
-                    hashMap2.put(z(b10, P, hashMap2), z(b10, Z, hashMap2));
-                } else {
-                    if (b10.equals("#EXT-X-INDEPENDENT-SEGMENTS")) {
-                        arrayList8 = arrayList11;
-                        arrayList7 = arrayList12;
-                        arrayList5 = arrayList16;
-                        arrayList6 = arrayList15;
-                        z13 = true;
-                    } else if (b10.startsWith("#EXT-X-MEDIA")) {
-                        arrayList14.add(b10);
-                    } else if (b10.startsWith("#EXT-X-SESSION-KEY")) {
-                        m.b k10 = k(b10, u(b10, I, InterpolationAnimatedNode.EXTRAPOLATE_TYPE_IDENTITY, hashMap2), hashMap2);
-                        if (k10 != null) {
-                            arrayList15.add(new m(l(z(b10, H, hashMap2)), k10));
-                        }
-                    } else if (b10.startsWith("#EXT-X-STREAM-INF") || startsWith) {
-                        boolean contains = z12 | b10.contains("CLOSED-CAPTIONS=NONE");
-                        if (startsWith) {
-                            i10 = 16384;
-                        } else {
-                            i10 = 0;
-                        }
-                        arrayList5 = arrayList16;
-                        int m10 = m(b10, f53687h);
-                        int s10 = s(b10, f53682c, -1);
-                        String v10 = v(b10, f53689j, hashMap2);
-                        arrayList6 = arrayList15;
-                        String v11 = v(b10, f53690k, hashMap2);
-                        if (v11 != null) {
-                            z11 = z13;
-                            String[] d12 = w0.d1(v11, "x");
-                            int parseInt2 = Integer.parseInt(d12[0]);
-                            int parseInt3 = Integer.parseInt(d12[1]);
-                            if (parseInt2 > 0 && parseInt3 > 0) {
-                                i13 = parseInt2;
-                            } else {
-                                parseInt3 = -1;
-                                i13 = -1;
-                            }
-                            i12 = parseInt3;
-                            i11 = i13;
-                        } else {
-                            z11 = z13;
-                            i11 = -1;
-                            i12 = -1;
-                        }
-                        arrayList7 = arrayList12;
-                        String v12 = v(b10, f53691l, hashMap2);
-                        if (v12 != null) {
-                            f10 = Float.parseFloat(v12);
-                        } else {
-                            f10 = -1.0f;
-                        }
-                        arrayList8 = arrayList11;
-                        String v13 = v(b10, f53683d, hashMap2);
-                        String v14 = v(b10, f53684e, hashMap2);
-                        String v15 = v(b10, f53685f, hashMap2);
-                        String v16 = v(b10, f53686g, hashMap2);
-                        if (startsWith) {
-                            e11 = u0.e(str5, z(b10, K, hashMap2));
-                        } else if (bVar.a()) {
-                            e11 = u0.e(str5, B(bVar.b(), hashMap2));
-                        } else {
-                            throw l0.c("#EXT-X-STREAM-INF must be followed by another line", null);
-                        }
-                        Uri uri = e11;
-                        arrayList9.add(new g.b(uri, new Format.b().T(arrayList9.size()).M("application/x-mpegURL").K(v10).I(s10).b0(m10).n0(i11).S(i12).R(f10).e0(i10).G(), v13, v14, v15, v16));
-                        ArrayList arrayList18 = (ArrayList) hashMap.get(uri);
-                        if (arrayList18 == null) {
-                            arrayList18 = new ArrayList();
-                            hashMap.put(uri, arrayList18);
-                        }
-                        arrayList18.add(new q.b(s10, m10, v13, v14, v15, v16));
-                        z12 = contains;
-                        z13 = z11;
-                    }
-                    arrayList13 = arrayList17;
-                    arrayList16 = arrayList5;
-                    arrayList15 = arrayList6;
-                    arrayList12 = arrayList7;
-                    arrayList11 = arrayList8;
-                }
-                arrayList8 = arrayList11;
-                arrayList7 = arrayList12;
-                arrayList5 = arrayList16;
-                arrayList6 = arrayList15;
-                arrayList13 = arrayList17;
-                arrayList16 = arrayList5;
-                arrayList15 = arrayList6;
-                arrayList12 = arrayList7;
-                arrayList11 = arrayList8;
+            }
+        }
+        return -9223372036854775807L;
+    }
+
+    private uc.e u(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, boolean z10) {
+        j a10;
+        long j10;
+        long b10 = dataSource.b(aVar);
+        if (z10) {
+            try {
+                this.f53564u.i(this.f53562s, this.f50780g, this.D);
+            } catch (InterruptedException unused) {
+                throw new InterruptedIOException();
+            } catch (TimeoutException e10) {
+                throw new IOException(e10);
+            }
+        }
+        uc.e eVar = new uc.e(dataSource, aVar.f13411g, b10);
+        if (this.E == null) {
+            long t10 = t(eVar);
+            eVar.e();
+            j jVar = this.f53561r;
+            if (jVar != null) {
+                a10 = jVar.f();
             } else {
-                ArrayList arrayList19 = arrayList11;
-                ArrayList arrayList20 = arrayList12;
-                ArrayList arrayList21 = arrayList13;
-                ArrayList arrayList22 = arrayList16;
-                boolean z14 = z12;
-                ArrayList arrayList23 = arrayList15;
-                boolean z15 = z13;
-                ArrayList arrayList24 = new ArrayList();
-                HashSet hashSet = new HashSet();
-                int i15 = 0;
-                while (i15 < arrayList9.size()) {
-                    g.b bVar3 = (g.b) arrayList9.get(i15);
-                    if (hashSet.add(bVar3.f53671a)) {
-                        if (bVar3.f53672b.f11585u == null) {
-                            z10 = i14;
-                        } else {
-                            z10 = 0;
-                        }
-                        ne.a.g(z10);
-                        Metadata.b[] bVarArr = new Metadata.b[i14];
-                        bVarArr[0] = new q(null, null, (List) ne.a.e((ArrayList) hashMap.get(bVar3.f53671a)));
-                        arrayList24.add(bVar3.a(bVar3.f53672b.b().Z(new Metadata(bVarArr)).G()));
-                    }
-                    i15++;
-                    i14 = 1;
-                }
-                int i16 = 0;
-                ArrayList arrayList25 = null;
-                Format format = null;
-                while (i16 < arrayList14.size()) {
-                    String str6 = (String) arrayList14.get(i16);
-                    String z16 = z(str6, Q, hashMap2);
-                    String z17 = z(str6, P, hashMap2);
-                    Format.b bVar4 = new Format.b();
-                    StringBuilder sb2 = new StringBuilder();
-                    sb2.append(z16);
-                    ArrayList arrayList26 = arrayList25;
-                    sb2.append(":");
-                    sb2.append(z17);
-                    Format.b X2 = bVar4.U(sb2.toString()).W(z17).M("application/x-mpegURL").i0(x(str6)).e0(w(str6, hashMap2)).X(v(str6, O, hashMap2));
-                    String v17 = v(str6, K, hashMap2);
-                    if (v17 == null) {
-                        e10 = null;
-                    } else {
-                        e10 = u0.e(str5, v17);
-                    }
-                    ArrayList arrayList27 = arrayList14;
-                    Metadata metadata = new Metadata(new q(z16, z17, Collections.EMPTY_LIST));
-                    String z18 = z(str6, M, hashMap2);
-                    z18.getClass();
-                    switch (z18.hashCode()) {
-                        case -959297733:
-                            if (z18.equals("SUBTITLES")) {
-                                c10 = 0;
-                                break;
-                            }
-                            c10 = 65535;
-                            break;
-                        case -333210994:
-                            if (z18.equals("CLOSED-CAPTIONS")) {
-                                c10 = 1;
-                                break;
-                            }
-                            c10 = 65535;
-                            break;
-                        case 62628790:
-                            if (z18.equals("AUDIO")) {
-                                c10 = 2;
-                                break;
-                            }
-                            c10 = 65535;
-                            break;
-                        case 81665115:
-                            if (z18.equals("VIDEO")) {
-                                c10 = 3;
-                                break;
-                            }
-                            c10 = 65535;
-                            break;
-                        default:
-                            c10 = 65535;
-                            break;
-                    }
-                    switch (c10) {
-                        case 0:
-                            arrayList2 = arrayList19;
-                            g.b g10 = g(arrayList9, z16);
-                            if (g10 != null) {
-                                String M2 = w0.M(g10.f53672b.f11584t, 3);
-                                X2.K(M2);
-                                str2 = c0.g(M2);
-                            } else {
-                                str2 = null;
-                            }
-                            if (str2 == null) {
-                                str2 = "text/vtt";
-                            }
-                            X2.g0(str2).Z(metadata);
-                            if (e10 != null) {
-                                g.a aVar = new g.a(e10, X2.G(), z16, z17);
-                                arrayList3 = arrayList20;
-                                arrayList3.add(aVar);
-                            } else {
-                                arrayList3 = arrayList20;
-                                y.i("HlsPlaylistParser", "EXT-X-MEDIA tag with missing mandatory URI attribute: skipping");
-                            }
-                            arrayList4 = arrayList26;
-                            i16++;
-                            str5 = str;
-                            arrayList20 = arrayList3;
-                            arrayList19 = arrayList2;
-                            arrayList25 = arrayList4;
-                            arrayList14 = arrayList27;
-                        case 1:
-                            arrayList2 = arrayList19;
-                            String z19 = z(str6, S, hashMap2);
-                            if (z19.startsWith("CC")) {
-                                parseInt = Integer.parseInt(z19.substring(2));
-                                str3 = "application/cea-608";
-                            } else {
-                                parseInt = Integer.parseInt(z19.substring(7));
-                                str3 = "application/cea-708";
-                            }
-                            if (arrayList26 == null) {
-                                arrayList4 = new ArrayList();
-                            } else {
-                                arrayList4 = arrayList26;
-                            }
-                            X2.g0(str3).H(parseInt);
-                            arrayList4.add(X2.G());
-                            arrayList3 = arrayList20;
-                            i16++;
-                            str5 = str;
-                            arrayList20 = arrayList3;
-                            arrayList19 = arrayList2;
-                            arrayList25 = arrayList4;
-                            arrayList14 = arrayList27;
-                        case 2:
-                            g.b f11 = f(arrayList9, z16);
-                            if (f11 != null) {
-                                bVar2 = f11;
-                                String M3 = w0.M(f11.f53672b.f11584t, 1);
-                                X2.K(M3);
-                                str4 = c0.g(M3);
-                            } else {
-                                bVar2 = f11;
-                                str4 = null;
-                            }
-                            String v18 = v(str6, f53688i, hashMap2);
-                            if (v18 != null) {
-                                X2.J(Integer.parseInt(w0.e1(v18, "/")[0]));
-                                if ("audio/eac3".equals(str4) && v18.endsWith("/JOC")) {
-                                    X2.K("ec+3");
-                                    str4 = "audio/eac3-joc";
-                                }
-                            }
-                            X2.g0(str4);
-                            if (e10 != null) {
-                                X2.Z(metadata);
-                                arrayList2 = arrayList19;
-                                arrayList2.add(new g.a(e10, X2.G(), z16, z17));
-                            } else {
-                                arrayList2 = arrayList19;
-                                if (bVar2 != null) {
-                                    arrayList4 = arrayList26;
-                                    format = X2.G();
-                                    arrayList3 = arrayList20;
-                                    i16++;
-                                    str5 = str;
-                                    arrayList20 = arrayList3;
-                                    arrayList19 = arrayList2;
-                                    arrayList25 = arrayList4;
-                                    arrayList14 = arrayList27;
-                                }
-                            }
-                            arrayList3 = arrayList20;
-                            arrayList4 = arrayList26;
-                            i16++;
-                            str5 = str;
-                            arrayList20 = arrayList3;
-                            arrayList19 = arrayList2;
-                            arrayList25 = arrayList4;
-                            arrayList14 = arrayList27;
-                            break;
-                        case 3:
-                            g.b h10 = h(arrayList9, z16);
-                            if (h10 != null) {
-                                Format format2 = h10.f53672b;
-                                String M4 = w0.M(format2.f11584t, 2);
-                                X2.K(M4).g0(c0.g(M4)).n0(format2.B).S(format2.C).R(format2.D);
-                            }
-                            if (e10 != null) {
-                                X2.Z(metadata);
-                                arrayList10.add(new g.a(e10, X2.G(), z16, z17));
-                            }
-                            arrayList3 = arrayList20;
-                            arrayList2 = arrayList19;
-                            arrayList4 = arrayList26;
-                            i16++;
-                            str5 = str;
-                            arrayList20 = arrayList3;
-                            arrayList19 = arrayList2;
-                            arrayList25 = arrayList4;
-                            arrayList14 = arrayList27;
-                        default:
-                            arrayList3 = arrayList20;
-                            arrayList2 = arrayList19;
-                            arrayList4 = arrayList26;
-                            i16++;
-                            str5 = str;
-                            arrayList20 = arrayList3;
-                            arrayList19 = arrayList2;
-                            arrayList25 = arrayList4;
-                            arrayList14 = arrayList27;
-                    }
-                }
-                ArrayList arrayList28 = arrayList25;
-                ArrayList arrayList29 = arrayList20;
-                ArrayList arrayList30 = arrayList19;
-                if (z14) {
-                    arrayList = Collections.EMPTY_LIST;
-                } else {
-                    arrayList = arrayList28;
-                }
-                return new g(str, arrayList22, arrayList24, arrayList10, arrayList30, arrayList29, arrayList21, format, arrayList, z15, hashMap2, arrayList23);
+                a10 = this.f53565v.a(aVar.f13405a, this.f50777d, this.f53566w, this.f53564u, dataSource.d(), eVar, this.C);
+                eVar = eVar;
             }
+            this.E = a10;
+            if (a10.e()) {
+                p pVar = this.F;
+                if (t10 != -9223372036854775807L) {
+                    j10 = this.f53564u.b(t10);
+                } else {
+                    j10 = this.f50780g;
+                }
+                pVar.n0(j10);
+            } else {
+                this.F.n0(0L);
+            }
+            this.F.Z();
+            this.E.c(this.F);
+        }
+        this.F.k0(this.f53567x);
+        return eVar;
+    }
+
+    public static boolean w(i iVar, Uri uri, xd.f fVar, f.e eVar, long j10) {
+        if (iVar == null) {
+            return false;
+        }
+        if (uri.equals(iVar.f53556m) && iVar.J) {
+            return false;
+        }
+        long j11 = j10 + eVar.f53549a.f54807p;
+        if (p(eVar, fVar) && j11 >= iVar.f50781h) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.j.e
+    public void a() {
+        j jVar;
+        oe.a.e(this.F);
+        if (this.E == null && (jVar = this.f53561r) != null && jVar.d()) {
+            this.E = this.f53561r;
+            this.H = false;
+        }
+        s();
+        if (!this.I) {
+            if (!this.f53563t) {
+                r();
+            }
+            this.J = !this.I;
         }
     }
 
-    private static boolean q(String str, Pattern pattern, boolean z10) {
-        Matcher matcher = pattern.matcher(str);
-        if (matcher.find()) {
-            return "YES".equals(matcher.group(1));
-        }
-        return z10;
+    @Override // com.google.android.exoplayer2.upstream.j.e
+    public void c() {
+        this.I = true;
     }
 
-    private static double r(String str, Pattern pattern, double d10) {
-        Matcher matcher = pattern.matcher(str);
-        if (matcher.find()) {
-            return Double.parseDouble((String) ne.a.e(matcher.group(1)));
-        }
-        return d10;
+    @Override // td.n
+    public boolean h() {
+        return this.J;
     }
 
-    private static int s(String str, Pattern pattern, int i10) {
-        Matcher matcher = pattern.matcher(str);
-        if (matcher.find()) {
-            return Integer.parseInt((String) ne.a.e(matcher.group(1)));
-        }
-        return i10;
-    }
-
-    private static long t(String str, Pattern pattern, long j10) {
-        Matcher matcher = pattern.matcher(str);
-        if (matcher.find()) {
-            return Long.parseLong((String) ne.a.e(matcher.group(1)));
-        }
-        return j10;
-    }
-
-    private static String u(String str, Pattern pattern, String str2, Map map) {
-        Matcher matcher = pattern.matcher(str);
-        if (matcher.find()) {
-            str2 = (String) ne.a.e(matcher.group(1));
-        }
-        if (!map.isEmpty() && str2 != null) {
-            return B(str2, map);
-        }
-        return str2;
-    }
-
-    private static String v(String str, Pattern pattern, Map map) {
-        return u(str, pattern, null, map);
-    }
-
-    private static int w(String str, Map map) {
-        String v10 = v(str, R, map);
-        int i10 = 0;
-        if (TextUtils.isEmpty(v10)) {
+    public int m(int i10) {
+        oe.a.g(!this.f53557n);
+        if (i10 >= this.K.size()) {
             return 0;
         }
-        String[] d12 = w0.d1(v10, ",");
-        if (w0.s(d12, "public.accessibility.describes-video")) {
-            i10 = IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-        }
-        if (w0.s(d12, "public.accessibility.transcribes-spoken-dialog")) {
-            i10 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-        }
-        if (w0.s(d12, "public.accessibility.describes-music-and-sound")) {
-            i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-        }
-        if (w0.s(d12, "public.easy-to-read")) {
-            return i10 | 8192;
-        }
-        return i10;
+        return ((Integer) this.K.get(i10)).intValue();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v2, types: [int] */
-    /* JADX WARN: Type inference failed for: r0v5 */
-    /* JADX WARN: Type inference failed for: r0v6 */
-    private static int x(String str) {
-        boolean q10 = q(str, U, false);
-        ?? r02 = q10;
-        if (q(str, V, false)) {
-            r02 = (q10 ? 1 : 0) | true;
-        }
-        if (q(str, T, false)) {
-            return r02 | 4;
-        }
-        return r02;
+    public void n(p pVar, oi.s sVar) {
+        this.F = pVar;
+        this.K = sVar;
     }
 
-    private static f.C0718f y(String str) {
-        long j10;
-        long j11;
-        double r10 = r(str, f53697r, -9.223372036854776E18d);
-        long j12 = -9223372036854775807L;
-        if (r10 == -9.223372036854776E18d) {
-            j10 = -9223372036854775807L;
-        } else {
-            j10 = (long) (r10 * 1000000.0d);
-        }
-        boolean q10 = q(str, f53698s, false);
-        double r11 = r(str, f53700u, -9.223372036854776E18d);
-        if (r11 == -9.223372036854776E18d) {
-            j11 = -9223372036854775807L;
-        } else {
-            j11 = (long) (r11 * 1000000.0d);
-        }
-        double r12 = r(str, f53701v, -9.223372036854776E18d);
-        if (r12 != -9.223372036854776E18d) {
-            j12 = (long) (r12 * 1000000.0d);
-        }
-        return new f.C0718f(j10, q10, j11, j12, q(str, f53702w, false));
+    public void o() {
+        this.L = true;
     }
 
-    private static String z(String str, Pattern pattern, Map map) {
-        String v10 = v(str, pattern, map);
-        if (v10 != null) {
-            return v10;
-        }
-        throw l0.c("Couldn't match " + pattern.pattern() + " in " + str, null);
+    public boolean q() {
+        return this.M;
     }
 
-    @Override // com.google.android.exoplayer2.upstream.k.a
-    /* renamed from: i */
-    public h a(Uri uri, InputStream inputStream) {
-        String trim;
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-        ArrayDeque arrayDeque = new ArrayDeque();
-        try {
-            if (b(bufferedReader)) {
-                while (true) {
-                    String readLine = bufferedReader.readLine();
-                    if (readLine != null) {
-                        trim = readLine.trim();
-                        if (!trim.isEmpty()) {
-                            if (trim.startsWith("#EXT-X-STREAM-INF")) {
-                                arrayDeque.add(trim);
-                                return p(new b(arrayDeque, bufferedReader), uri.toString());
-                            } else if (trim.startsWith("#EXT-X-TARGETDURATION") || trim.startsWith("#EXT-X-MEDIA-SEQUENCE") || trim.startsWith("#EXTINF") || trim.startsWith("#EXT-X-KEY") || trim.startsWith("#EXT-X-BYTERANGE") || trim.equals("#EXT-X-DISCONTINUITY") || trim.equals("#EXT-X-DISCONTINUITY-SEQUENCE") || trim.equals("#EXT-X-ENDLIST")) {
-                                break;
-                            } else {
-                                arrayDeque.add(trim);
-                            }
-                        }
-                    } else {
-                        w0.n(bufferedReader);
-                        throw l0.c("Failed to parse the playlist, could not identify any tags.", null);
-                    }
-                }
-                arrayDeque.add(trim);
-                return o(this.f53706a, this.f53707b, new b(arrayDeque, bufferedReader), uri.toString());
-            }
-            throw l0.c("Input does not start with the #EXTM3U header.", null);
-        } finally {
-            w0.n(bufferedReader);
-        }
-    }
-
-    public i(g gVar, f fVar) {
-        this.f53706a = gVar;
-        this.f53707b = fVar;
+    public void v() {
+        this.M = true;
     }
 }

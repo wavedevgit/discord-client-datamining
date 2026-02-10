@@ -3,7 +3,7 @@ package com.discord.misc.utilities.intent;
 import android.content.Intent;
 import android.os.Parcelable;
 import androidx.core.content.b;
-import ds.a;
+import es.a;
 import java.util.ArrayList;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;

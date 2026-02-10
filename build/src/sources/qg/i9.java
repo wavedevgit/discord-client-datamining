@@ -1,30 +1,20 @@
 package qg;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class i9 implements yi.d {
+public enum i9 implements u1 {
+    UNKNOWN_CONTOURS(0),
+    NO_CONTOURS(1),
+    ALL_CONTOURS(2);
+    
 
-    /* renamed from: a  reason: collision with root package name */
-    static final i9 f47148a = new i9();
+    /* renamed from: d  reason: collision with root package name */
+    private final int f45906d;
 
-    static {
-        c.b a10 = yi.c.a("errorCode");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("durationMs");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
+    i9(int i10) {
+        this.f45906d = i10;
     }
 
-    private i9() {
-    }
-
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // qg.u1
+    public final int zza() {
+        return this.f45906d;
     }
 }

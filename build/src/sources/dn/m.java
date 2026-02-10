@@ -1,74 +1,160 @@
 package dn;
 
-import android.content.Context;
-import android.view.View;
-import android.view.ViewGroup;
+import cn.q;
+import cn.t;
+import java.util.concurrent.CancellationException;
 import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
+import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import kotlin.reflect.KClass;
+import kotlinx.coroutines.CoroutineScope;
+import rs.v;
+import ss.j0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class m implements c0 {
+public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f20915a;
+    private final cn.k f20908a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f20916b;
+    private final d f20909b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function1 f20917c;
+    private Object f20910c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final v f20911d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final j f20912e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class a extends Lambda implements Function2 {
+    static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ k f20918d;
+        int f20913d;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        a(k kVar) {
-            super(2);
-            this.f20918d = kVar;
+        /* renamed from: e  reason: collision with root package name */
+        /* synthetic */ Object f20914e;
+
+        a(Continuation continuation) {
+            super(2, continuation);
         }
 
-        public final void a(Object rendering, a0 environment) {
-            Intrinsics.checkNotNullParameter(rendering, "rendering");
-            Intrinsics.checkNotNullParameter(environment, "environment");
-            this.f20918d.a(rendering, environment);
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            a aVar = new a(continuation);
+            aVar.f20914e = obj;
+            return aVar;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            a(obj, (a0) obj2);
-            return Unit.f32056a;
+            return j(((rs.k) obj).k(), (Continuation) obj2);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            xr.b.f();
+            if (this.f20913d == 0) {
+                kotlin.c.b(obj);
+                Object k10 = ((rs.k) this.f20914e).k();
+                Throwable e10 = rs.k.e(k10);
+                if (e10 == null) {
+                    Object f10 = rs.k.f(k10);
+                    if (f10 != null) {
+                        m mVar = m.this;
+                        if (!Intrinsics.areEqual(mVar.f20910c, f10)) {
+                            mVar.f20910c = f10;
+                            return null;
+                        }
+                        return null;
+                    }
+                    return null;
+                }
+                throw e10;
+            }
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        public final Object j(Object obj, Continuation continuation) {
+            return ((a) create(rs.k.b(obj), continuation)).invokeSuspend(Unit.f31765a);
         }
     }
 
-    public m(KClass type, int i10, Function1 runnerConstructor) {
-        Intrinsics.checkNotNullParameter(type, "type");
-        Intrinsics.checkNotNullParameter(runnerConstructor, "runnerConstructor");
-        this.f20915a = type;
-        this.f20916b = i10;
-        this.f20917c = runnerConstructor;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        int f20916d;
+
+        /* renamed from: e  reason: collision with root package name */
+        /* synthetic */ Object f20917e;
+
+        b(Continuation continuation) {
+            super(2, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            b bVar = new b(continuation);
+            bVar.f20917e = obj;
+            return bVar;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            xr.b.f();
+            if (this.f20916d == 0) {
+                kotlin.c.b(obj);
+                return kotlin.coroutines.jvm.internal.b.a(Intrinsics.areEqual(this.f20917e, m.this.f20910c));
+            }
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        /* renamed from: j */
+        public final Object invoke(Object obj, Continuation continuation) {
+            return ((b) create(obj, continuation)).invokeSuspend(Unit.f31765a);
+        }
     }
 
-    @Override // dn.c0
-    public View a(Object initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
-        Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-        Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-        Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        View view = l.a(contextForNewView, viewGroup).inflate(this.f20916b, viewGroup, false);
-        Function1 function1 = this.f20917c;
-        Intrinsics.checkNotNullExpressionValue(view, "view");
-        g0.a(view, initialRendering, initialViewEnvironment, new a((k) function1.invoke(view)));
-        Intrinsics.checkNotNullExpressionValue(view, "contextForNewView.viewBi…onment)\n        }\n      }");
-        return view;
+    public m(CoroutineScope scope, q protoWorkflow, j0 props, cn.m mVar, t interceptor) {
+        Intrinsics.checkNotNullParameter(scope, "scope");
+        Intrinsics.checkNotNullParameter(protoWorkflow, "protoWorkflow");
+        Intrinsics.checkNotNullParameter(props, "props");
+        Intrinsics.checkNotNullParameter(interceptor, "interceptor");
+        cn.k b10 = protoWorkflow.b();
+        this.f20908a = b10;
+        d dVar = new d();
+        this.f20909b = dVar;
+        this.f20910c = props.getValue();
+        this.f20911d = ss.g.E(ss.g.n(props, new b(null)), scope);
+        this.f20912e = new j(l.b(b10, null, 1, null), b10, this.f20910c, mVar, scope.getCoroutineContext(), null, null, interceptor, dVar, 96, null);
     }
 
-    @Override // dn.c0
-    public KClass getType() {
-        return this.f20915a;
+    public final void e(CancellationException cancellationException) {
+        this.f20912e.d(cancellationException);
+    }
+
+    public final Object f(Continuation continuation) {
+        xs.e eVar = new xs.e(continuation);
+        try {
+            if (!this.f20911d.b()) {
+                eVar.f(this.f20911d.l(), new a(null));
+            }
+            this.f20912e.p(eVar);
+        } catch (Throwable th2) {
+            eVar.C(th2);
+        }
+        Object B = eVar.B();
+        if (B == xr.b.f()) {
+            kotlin.coroutines.jvm.internal.g.c(continuation);
+        }
+        return B;
+    }
+
+    public final cn.g g() {
+        return new cn.g(this.f20912e.m(this.f20908a, this.f20910c), this.f20912e.o(this.f20908a));
     }
 }

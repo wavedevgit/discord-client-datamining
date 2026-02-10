@@ -35,28 +35,28 @@ import x.z;
 public final class f extends x1 {
 
     /* renamed from: v  reason: collision with root package name */
-    public static final d f2401v = new d();
+    public static final d f2098v = new d();
 
     /* renamed from: w  reason: collision with root package name */
-    private static final Boolean f2402w = null;
+    private static final Boolean f2099w = null;
 
     /* renamed from: p  reason: collision with root package name */
-    final i f2403p;
+    final i f2100p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Object f2404q;
+    private final Object f2101q;
 
     /* renamed from: r  reason: collision with root package name */
-    private a f2405r;
+    private a f2102r;
 
     /* renamed from: s  reason: collision with root package name */
-    i2.b f2406s;
+    i2.b f2103s;
 
     /* renamed from: t  reason: collision with root package name */
-    private w0 f2407t;
+    private w0 f2104t;
 
     /* renamed from: u  reason: collision with root package name */
-    private i2.c f2408u;
+    private i2.c f2105u;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -64,7 +64,7 @@ public final class f extends x1 {
             return null;
         }
 
-        void h(n nVar);
+        void f(n nVar);
     }
 
     @Retention(RetentionPolicy.SOURCE)
@@ -76,7 +76,7 @@ public final class f extends x1 {
     public static final class c implements x2.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final r1 f2409a;
+        private final r1 f2106a;
 
         public c() {
             this(r1.Z());
@@ -88,7 +88,7 @@ public final class f extends x1 {
 
         @Override // x.a0
         public q1 a() {
-            return this.f2409a;
+            return this.f2106a;
         }
 
         public f c() {
@@ -100,7 +100,7 @@ public final class f extends x1 {
         @Override // a0.x2.a
         /* renamed from: e */
         public f1 b() {
-            return new f1(w1.Y(this.f2409a));
+            return new f1(w1.Y(this.f2106a));
         }
 
         public c f(y2.b bVar) {
@@ -114,7 +114,7 @@ public final class f extends x1 {
         }
 
         public c h(z zVar) {
-            if (Objects.equals(z.f54450d, zVar)) {
+            if (Objects.equals(z.f54542d, zVar)) {
                 a().V(h1.f77i, zVar);
                 return this;
             }
@@ -168,7 +168,7 @@ public final class f extends x1 {
         }
 
         private c(r1 r1Var) {
-            this.f2409a = r1Var;
+            this.f2106a = r1Var;
             Class cls = (Class) r1Var.e(e0.m.G, null);
             if (cls != null && !cls.equals(f.class)) {
                 throw new IllegalArgumentException("Invalid target class configuration for " + this + ": " + cls);
@@ -182,29 +182,29 @@ public final class f extends x1 {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final Size f2410a;
+        private static final Size f2107a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static final z f2411b;
+        private static final z f2108b;
 
         /* renamed from: c  reason: collision with root package name */
-        private static final m0.c f2412c;
+        private static final m0.c f2109c;
 
         /* renamed from: d  reason: collision with root package name */
-        private static final f1 f2413d;
+        private static final f1 f2110d;
 
         static {
             Size size = new Size(DiscordVideoMediaSource.DEFAULT_WIDTH, DiscordVideoMediaSource.DEFAULT_HEIGHT);
-            f2410a = size;
-            z zVar = z.f54450d;
-            f2411b = zVar;
-            m0.c a10 = new c.a().d(m0.a.f36856c).f(new m0.d(i0.d.f26583c, 1)).a();
-            f2412c = a10;
-            f2413d = new c().g(size).k(1).l(0).j(a10).h(zVar).b();
+            f2107a = size;
+            z zVar = z.f54542d;
+            f2108b = zVar;
+            m0.c a10 = new c.a().d(m0.a.f36715c).f(new m0.d(i0.d.f26625c, 1)).a();
+            f2109c = a10;
+            f2110d = new c().g(size).k(1).l(0).j(a10).h(zVar).b();
         }
 
         public f1 a() {
-            return f2413d;
+            return f2110d;
         }
     }
 
@@ -215,14 +215,14 @@ public final class f extends x1 {
 
     f(f1 f1Var) {
         super(f1Var);
-        this.f2404q = new Object();
+        this.f2101q = new Object();
         if (((f1) j()).W(0) == 1) {
-            this.f2403p = new j();
+            this.f2100p = new j();
         } else {
-            this.f2403p = new k(f1Var.S(c0.a.b()));
+            this.f2100p = new k(f1Var.S(c0.a.b()));
         }
-        this.f2403p.r(h0());
-        this.f2403p.s(j0());
+        this.f2100p.r(h0());
+        this.f2100p.s(j0());
     }
 
     public static /* synthetic */ void Y(f fVar, i2 i2Var, i2.g gVar) {
@@ -231,9 +231,9 @@ public final class f extends x1 {
             return;
         }
         fVar.c0();
-        fVar.f2403p.g();
+        fVar.f2100p.g();
         i2.b d02 = fVar.d0(fVar.i(), (f1) fVar.j(), (m2) b2.e.g(fVar.e()));
-        fVar.f2406s = d02;
+        fVar.f2103s = d02;
         a10 = d0.a(new Object[]{d02.o()});
         fVar.V(a10);
         fVar.G();
@@ -265,13 +265,13 @@ public final class f extends x1 {
     private void l0() {
         e0 g10 = g();
         if (g10 != null) {
-            this.f2403p.u(q(g10));
+            this.f2100p.u(q(g10));
         }
     }
 
     @Override // x.x1
     public void I() {
-        this.f2403p.f();
+        this.f2100p.f();
     }
 
     @Override // x.x1
@@ -280,14 +280,14 @@ public final class f extends x1 {
         c.a b10;
         Boolean g02 = g0();
         boolean a10 = d0Var.e().a(OnePixelShiftQuirk.class);
-        i iVar = this.f2403p;
+        i iVar = this.f2100p;
         if (g02 != null) {
             a10 = g02.booleanValue();
         }
         iVar.q(a10);
-        synchronized (this.f2404q) {
+        synchronized (this.f2101q) {
             try {
-                a aVar2 = this.f2405r;
+                a aVar2 = this.f2102r;
                 if (aVar2 != null) {
                     size = aVar2.c();
                 } else {
@@ -336,8 +336,8 @@ public final class f extends x1 {
     @Override // x.x1
     protected m2 N(r0 r0Var) {
         List a10;
-        this.f2406s.g(r0Var);
-        a10 = d0.a(new Object[]{this.f2406s.o()});
+        this.f2103s.g(r0Var);
+        a10 = d0.a(new Object[]{this.f2103s.o()});
         V(a10);
         return e().g().d(r0Var).a();
     }
@@ -346,7 +346,7 @@ public final class f extends x1 {
     protected m2 O(m2 m2Var, m2 m2Var2) {
         List a10;
         i2.b d02 = d0(i(), (f1) j(), m2Var);
-        this.f2406s = d02;
+        this.f2103s = d02;
         a10 = d0.a(new Object[]{d02.o()});
         V(a10);
         return m2Var;
@@ -355,32 +355,32 @@ public final class f extends x1 {
     @Override // x.x1
     public void P() {
         c0();
-        this.f2403p.j();
+        this.f2100p.j();
     }
 
     @Override // x.x1
     public void S(Matrix matrix) {
         super.S(matrix);
-        this.f2403p.v(matrix);
+        this.f2100p.v(matrix);
     }
 
     @Override // x.x1
     public void T(Rect rect) {
         super.T(rect);
-        this.f2403p.w(rect);
+        this.f2100p.w(rect);
     }
 
     void c0() {
         b0.p.a();
-        i2.c cVar = this.f2408u;
+        i2.c cVar = this.f2105u;
         if (cVar != null) {
             cVar.b();
-            this.f2408u = null;
+            this.f2105u = null;
         }
-        w0 w0Var = this.f2407t;
+        w0 w0Var = this.f2104t;
         if (w0Var != null) {
             w0Var.d();
-            this.f2407t = null;
+            this.f2104t = null;
         }
     }
 
@@ -437,20 +437,20 @@ public final class f extends x1 {
             qVar = new q(o.a(width, height, i11, qVar2.f()));
         }
         if (qVar != null) {
-            this.f2403p.t(qVar);
+            this.f2100p.t(qVar);
         }
         l0();
-        qVar2.e(this.f2403p, executor);
+        qVar2.e(this.f2100p, executor);
         i2.b p10 = i2.b.p(f1Var, m2Var.e());
         if (m2Var.d() != null) {
             p10.g(m2Var.d());
         }
-        w0 w0Var = this.f2407t;
+        w0 w0Var = this.f2104t;
         if (w0Var != null) {
             w0Var.d();
         }
         k1 k1Var = new k1(qVar2.getSurface(), e10, m());
-        this.f2407t = k1Var;
+        this.f2104t = k1Var;
         k1Var.k().a(new Runnable() { // from class: x.h0
             @Override // java.lang.Runnable
             public final void run() {
@@ -458,8 +458,8 @@ public final class f extends x1 {
             }
         }, c0.a.d());
         p10.s(m2Var.c());
-        p10.m(this.f2407t, m2Var.b(), null, -1);
-        i2.c cVar = this.f2408u;
+        p10.m(this.f2104t, m2Var.b(), null, -1);
+        i2.c cVar = this.f2105u;
         if (cVar != null) {
             cVar.b();
         }
@@ -469,7 +469,7 @@ public final class f extends x1 {
                 androidx.camera.core.f.Y(androidx.camera.core.f.this, i2Var, gVar);
             }
         });
-        this.f2408u = cVar2;
+        this.f2105u = cVar2;
         p10.r(cVar2);
         return p10;
     }
@@ -483,7 +483,7 @@ public final class f extends x1 {
     }
 
     public Boolean g0() {
-        return ((f1) j()).Z(f2402w);
+        return ((f1) j()).Z(f2099w);
     }
 
     public int h0() {
@@ -496,7 +496,7 @@ public final class f extends x1 {
 
     @Override // x.x1
     public x2 k(boolean z10, y2 y2Var) {
-        d dVar = f2401v;
+        d dVar = f2098v;
         r0 a10 = y2Var.a(dVar.a().L(), 1);
         if (z10) {
             a10 = r0.E(a10, dVar.a());
@@ -508,18 +508,18 @@ public final class f extends x1 {
     }
 
     public void k0(Executor executor, final a aVar) {
-        synchronized (this.f2404q) {
+        synchronized (this.f2101q) {
             try {
-                this.f2403p.p(executor, new a() { // from class: x.f0
+                this.f2100p.p(executor, new a() { // from class: x.f0
                     @Override // androidx.camera.core.f.a
-                    public final void h(androidx.camera.core.n nVar) {
-                        f.a.this.h(nVar);
+                    public final void f(androidx.camera.core.n nVar) {
+                        f.a.this.f(nVar);
                     }
                 });
-                if (this.f2405r == null) {
+                if (this.f2102r == null) {
                     E();
                 }
-                this.f2405r = aVar;
+                this.f2102r = aVar;
             } catch (Throwable th2) {
                 throw th2;
             }

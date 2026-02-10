@@ -1,42 +1,54 @@
 package qg;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class r9 implements yi.d {
+public final class r9 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r9 f47533a = new r9();
+    private final p9 f46251a;
 
-    static {
-        c.b a10 = yi.c.a("inferenceCommonLogEvent");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = yi.c.a("imageInfo");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = yi.c.a("captionCount");
-        v1 v1Var3 = new v1();
-        v1Var3.a(4);
-        a12.b(v1Var3.b()).a();
-        c.b a13 = yi.c.a("highestScore");
-        v1 v1Var4 = new v1();
-        v1Var4.a(5);
-        a13.b(v1Var4.b()).a();
-        c.b a14 = yi.c.a("imageType");
-        v1 v1Var5 = new v1();
-        v1Var5.a(6);
-        a14.b(v1Var5.b()).a();
+    /* renamed from: b  reason: collision with root package name */
+    private final Integer f46252b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final Integer f46253c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Boolean f46254d;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public /* synthetic */ r9(o9 o9Var, q9 q9Var) {
+        p9 p9Var;
+        Integer num;
+        p9Var = o9Var.f46128a;
+        this.f46251a = p9Var;
+        num = o9Var.f46129b;
+        this.f46252b = num;
+        this.f46253c = null;
+        this.f46254d = null;
     }
 
-    private r9() {
+    public final p9 a() {
+        return this.f46251a;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    public final Integer b() {
+        return this.f46252b;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof r9)) {
+            return false;
+        }
+        r9 r9Var = (r9) obj;
+        if (hf.o.a(this.f46251a, r9Var.f46251a) && hf.o.a(this.f46252b, r9Var.f46252b) && hf.o.a(null, null) && hf.o.a(null, null)) {
+            return true;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return hf.o.b(this.f46251a, this.f46252b, null, null);
     }
 }

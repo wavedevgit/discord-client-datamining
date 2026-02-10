@@ -5,43 +5,43 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f17835a;
+    private boolean f17975a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f17836b;
+    private int f17976b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f17837c;
+    private int f17977c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f17838d;
+    private int f17978d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f17839e;
+    private int f17979e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f17840f;
+    private int f17980f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f17841g;
+    private int f17981g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f17842h;
+    private int f17982h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f17843i;
+    private int f17983i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f17844j;
+    private int f17984j;
 
     private final boolean g(d dVar) {
-        int i10 = this.f17836b - this.f17837c;
-        if (!this.f17835a) {
-            if ((dVar.getTop() >= i10 - this.f17839e || dVar.getBottom() >= i10 - this.f17839e) && (dVar.getTop() <= this.f17838d + i10 || dVar.getBottom() <= i10 + this.f17838d)) {
+        int i10 = this.f17976b - this.f17977c;
+        if (!this.f17975a) {
+            if ((dVar.getTop() >= i10 - this.f17979e || dVar.getBottom() >= i10 - this.f17979e) && (dVar.getTop() <= this.f17978d + i10 || dVar.getBottom() <= i10 + this.f17978d)) {
                 return true;
             }
             return false;
-        } else if ((dVar.getLeft() >= i10 - this.f17839e || dVar.getRight() >= i10 - this.f17839e) && (dVar.getLeft() <= this.f17838d + i10 || dVar.getRight() <= i10 + this.f17838d)) {
+        } else if ((dVar.getLeft() >= i10 - this.f17979e || dVar.getRight() >= i10 - this.f17979e) && (dVar.getLeft() <= this.f17978d + i10 || dVar.getRight() <= i10 + this.f17978d)) {
             return true;
         } else {
             return false;
@@ -54,7 +54,7 @@ public final class a {
         int bottom;
         int bottom2;
         Intrinsics.checkNotNullParameter(sortedItems, "sortedItems");
-        this.f17842h = 0;
+        this.f17982h = 0;
         int length = sortedItems.length - 1;
         int i10 = Integer.MAX_VALUE;
         int i11 = 0;
@@ -70,7 +70,7 @@ public final class a {
                 z10 = false;
             }
             if (g(dVar) || g(dVar2)) {
-                if (!this.f17835a) {
+                if (!this.f17975a) {
                     i12 = Math.max(i13, dVar.getBottom());
                     i10 = Math.min(i10, dVar.getTop());
                     if (z10) {
@@ -122,71 +122,71 @@ public final class a {
                     i13 = i12;
                 }
             }
-            int i15 = this.f17842h;
-            if (this.f17835a) {
+            int i15 = this.f17982h;
+            if (this.f17975a) {
                 bottom = dVar.getRight();
             } else {
                 bottom = dVar.getBottom();
             }
             int max2 = Math.max(i15, bottom);
-            this.f17842h = max2;
-            if (this.f17835a) {
+            this.f17982h = max2;
+            if (this.f17975a) {
                 bottom2 = dVar2.getRight();
             } else {
                 bottom2 = dVar2.getBottom();
             }
-            this.f17842h = Math.max(max2, bottom2);
+            this.f17982h = Math.max(max2, bottom2);
         }
-        this.f17843i = i12;
-        this.f17844j = i10;
+        this.f17983i = i12;
+        this.f17984j = i10;
     }
 
     public final int b(int i10, int i11, int i12) {
-        int i13 = i10 - this.f17837c;
-        int i14 = (this.f17844j - i13) - i11;
-        this.f17840f = i14;
-        int i15 = (((i13 + this.f17838d) - this.f17839e) - this.f17843i) - i12;
-        this.f17841g = i15;
+        int i13 = i10 - this.f17977c;
+        int i14 = (this.f17984j - i13) - i11;
+        this.f17980f = i14;
+        int i15 = (((i13 + this.f17978d) - this.f17979e) - this.f17983i) - i12;
+        this.f17981g = i15;
         return Math.max(i14, i15);
     }
 
     public final int c() {
-        return this.f17841g;
+        return this.f17981g;
     }
 
     public final int d() {
-        return this.f17840f;
+        return this.f17980f;
     }
 
     public final boolean e() {
-        return this.f17835a;
+        return this.f17975a;
     }
 
     public final int f() {
-        return this.f17842h;
+        return this.f17982h;
     }
 
     public final void h(boolean z10) {
-        this.f17835a = z10;
+        this.f17975a = z10;
     }
 
     public final void i(int i10) {
-        this.f17842h = i10;
+        this.f17982h = i10;
     }
 
     public final void j(int i10) {
-        this.f17837c = i10;
+        this.f17977c = i10;
     }
 
     public final void k(int i10) {
-        this.f17839e = i10;
+        this.f17979e = i10;
     }
 
     public final void l(int i10) {
-        this.f17836b = i10;
+        this.f17976b = i10;
     }
 
     public final void m(int i10) {
-        this.f17838d = i10;
+        this.f17978d = i10;
     }
 }

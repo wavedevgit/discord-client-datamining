@@ -101,7 +101,7 @@ public final class ImageStoreManager extends NativeImageStoreAndroidSpec {
         Intrinsics.checkNotNullParameter(uri, "uri");
         Intrinsics.checkNotNullParameter(success, "success");
         Intrinsics.checkNotNullParameter(error, "error");
-        Executors.newSingleThreadExecutor().execute(new Runnable() { // from class: jb.a
+        Executors.newSingleThreadExecutor().execute(new Runnable() { // from class: kb.a
             @Override // java.lang.Runnable
             public final void run() {
                 ImageStoreManager.getBase64ForTag$lambda$0(ImageStoreManager.this, uri, success, error);

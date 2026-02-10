@@ -2,8 +2,8 @@ package com.discord.react_fork_overrides.forks;
 
 import android.net.Uri;
 import androidx.arch.core.util.Function;
-import bs.j;
 import com.facebook.react.views.imagehelper.ImageSource;
+import cs.j;
 import java.io.File;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
@@ -48,6 +48,6 @@ public final class ImageSourceOverride {
                 return override$lambda$0;
             }
         });
-        com.airbnb.android.react.lottie.h.f7677r.a(new ImageSourceOverride$override$2(this));
+        com.airbnb.android.react.lottie.h.f7814t.a(new ImageSourceOverride$override$2(this));
     }
 }

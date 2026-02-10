@@ -50,7 +50,7 @@ public final class ViewGroupDrawingOrderHelper {
     public final int getChildDrawingOrder(int i10, int i11) {
         int[] iArr = this.drawingOrderIndices;
         if (iArr != null && (i11 >= iArr.length || iArr[i11] >= i10)) {
-            p8.a.L(ReactConstants.TAG, "getChildDrawingOrder index out of bounds! Please check any custom view manipulations you may have done. childCount = %d, index = %d", Integer.valueOf(i10), Integer.valueOf(i11));
+            q8.a.L(ReactConstants.TAG, "getChildDrawingOrder index out of bounds! Please check any custom view manipulations you may have done. childCount = %d, index = %d", Integer.valueOf(i10), Integer.valueOf(i11));
             update();
         }
         if (iArr == null) {

@@ -1,9 +1,13 @@
 package le;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface l {
-    void b(com.google.android.exoplayer2.upstream.a aVar);
+public abstract class l {
 
-    void close();
+    /* renamed from: a  reason: collision with root package name */
+    public static int f35863a = 2131558476;
 
-    void write(byte[] bArr, int i10, int i11);
+    /* renamed from: b  reason: collision with root package name */
+    public static int f35864b = 2131558477;
+
+    /* renamed from: c  reason: collision with root package name */
+    public static int f35865c = 2131558478;
 }

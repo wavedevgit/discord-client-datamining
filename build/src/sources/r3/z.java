@@ -8,28 +8,28 @@ import x3.h;
 public final class z implements h.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f48689a;
+    private final String f47663a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final File f48690b;
+    private final File f47664b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Callable f48691c;
+    private final Callable f47665c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h.c f48692d;
+    private final h.c f47666d;
 
     public z(String str, File file, Callable callable, h.c mDelegate) {
         Intrinsics.checkNotNullParameter(mDelegate, "mDelegate");
-        this.f48689a = str;
-        this.f48690b = file;
-        this.f48691c = callable;
-        this.f48692d = mDelegate;
+        this.f47663a = str;
+        this.f47664b = file;
+        this.f47665c = callable;
+        this.f47666d = mDelegate;
     }
 
     @Override // x3.h.c
     public x3.h a(h.b configuration) {
         Intrinsics.checkNotNullParameter(configuration, "configuration");
-        return new y(configuration.f54493a, this.f48689a, this.f48690b, this.f48691c, configuration.f54495c.f54491a, this.f48692d.a(configuration));
+        return new y(configuration.f54585a, this.f47663a, this.f47664b, this.f47665c, configuration.f54587c.f54583a, this.f47666d.a(configuration));
     }
 }

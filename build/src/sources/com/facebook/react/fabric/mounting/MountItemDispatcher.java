@@ -89,7 +89,7 @@ public final class MountItemDispatcher {
             l10 = CollectionsKt.l();
             Iterator it = l10.iterator();
             while (it.hasNext()) {
-                p8.a.m(MountItemDispatcher.TAG, str + ": " + ((String) it.next()));
+                q8.a.m(MountItemDispatcher.TAG, str + ": " + ((String) it.next()));
             }
         }
 
@@ -120,7 +120,7 @@ public final class MountItemDispatcher {
     /* JADX WARN: Finally extract failed */
     private final void dispatchPreMountItemsImpl(long j10) {
         MountItem poll;
-        qb.a.c(0L, "MountItemDispatcher::premountViews");
+        rb.a.c(0L, "MountItemDispatcher::premountViews");
         this.inDispatch = true;
         while (System.nanoTime() <= j10 && (poll = this.preMountItems.poll()) != null) {
             try {
@@ -134,13 +134,13 @@ public final class MountItemDispatcher {
             }
         }
         this.inDispatch = false;
-        qb.a.i(0L);
+        rb.a.i(0L);
     }
 
     private final void executeOrEnqueue(MountItem mountItem) {
         if (this.mountingManager.isWaitingForViewAttach(mountItem.getSurfaceId())) {
             if (ReactNativeFeatureFlags.enableFabricLogs()) {
-                p8.a.o(TAG, "executeOrEnqueue: Item execution delayed, surface %s is not ready yet", Integer.valueOf(mountItem.getSurfaceId()));
+                q8.a.o(TAG, "executeOrEnqueue: Item execution delayed, surface %s is not ready yet", Integer.valueOf(mountItem.getSurfaceId()));
             }
             this.mountingManager.getSurfaceManagerEnforced(mountItem.getSurfaceId(), "MountItemDispatcher::executeOrEnqueue").scheduleMountItemOnViewAttach(mountItem);
             return;
@@ -170,7 +170,7 @@ public final class MountItemDispatcher {
         if (!this.mountingManager.surfaceIsStopped(mountItem.getSurfaceId())) {
             this.preMountItems.add(mountItem);
         } else if (FabricUIManager.IS_DEVELOPMENT_ENVIRONMENT) {
-            p8.a.o(TAG, "Not queueing PreAllocateMountItem: surfaceId stopped: [%d] - %s", Integer.valueOf(mountItem.getSurfaceId()), mountItem.toString());
+            q8.a.o(TAG, "Not queueing PreAllocateMountItem: surfaceId stopped: [%d] - %s", Integer.valueOf(mountItem.getSurfaceId()), mountItem.toString());
         }
     }
 
@@ -248,7 +248,7 @@ public final class MountItemDispatcher {
         }
         this.itemDispatchListener.willMountItems(andResetMountItems);
         if (andResetViewCommandMountItems != null) {
-            qb.a.c(0L, "MountItemDispatcher::mountViews viewCommandMountItems");
+            rb.a.c(0L, "MountItemDispatcher::mountViews viewCommandMountItems");
             for (DispatchCommandMountItem dispatchCommandMountItem : andResetViewCommandMountItems) {
                 if (ReactNativeFeatureFlags.enableFabricLogs()) {
                     Companion.printMountItem(dispatchCommandMountItem, "dispatchMountItems: Executing viewCommandMountItem");
@@ -266,21 +266,21 @@ public final class MountItemDispatcher {
                     ReactSoftExceptionLogger.logSoftException(TAG, new RuntimeException("Caught exception executing ViewCommand: " + dispatchCommandMountItem, th2));
                 }
             }
-            qb.a.i(0L);
+            rb.a.i(0L);
         }
         List<MountItem> andResetPreMountItems = getAndResetPreMountItems();
         if (andResetPreMountItems != null) {
-            qb.a.c(0L, "MountItemDispatcher::mountViews preMountItems");
+            rb.a.c(0L, "MountItemDispatcher::mountViews preMountItems");
             for (MountItem mountItem : andResetPreMountItems) {
                 if (ReactNativeFeatureFlags.enableFabricLogs()) {
                     Companion.printMountItem(mountItem, "dispatchMountItems: Executing preMountItem");
                 }
                 executeOrEnqueue(mountItem);
             }
-            qb.a.i(0L);
+            rb.a.i(0L);
         }
         if (andResetMountItems != null) {
-            qb.a.c(0L, "MountItemDispatcher::mountViews mountItems to execute");
+            rb.a.c(0L, "MountItemDispatcher::mountViews mountItems to execute");
             long uptimeMillis = SystemClock.uptimeMillis();
             Iterator<MountItem> it = andResetMountItems.iterator();
             while (it.hasNext()) {
@@ -296,7 +296,7 @@ public final class MountItemDispatcher {
                 }
             }
             this.batchedExecutionTime += SystemClock.uptimeMillis() - uptimeMillis;
-            qb.a.i(0L);
+            rb.a.i(0L);
         }
         this.itemDispatchListener.didMountItems(andResetMountItems);
     }

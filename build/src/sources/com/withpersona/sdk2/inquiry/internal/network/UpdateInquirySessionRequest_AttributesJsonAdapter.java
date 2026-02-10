@@ -16,34 +16,34 @@ import org.jetbrains.annotations.NotNull;
 public final class UpdateInquirySessionRequest_AttributesJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19228a;
+    private final m.b f19368a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19229b;
+    private final com.squareup.moshi.h f19369b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f19230c;
+    private final com.squareup.moshi.h f19370c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.squareup.moshi.h f19231d;
+    private final com.squareup.moshi.h f19371d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Constructor f19232e;
+    private volatile Constructor f19372e;
 
     public UpdateInquirySessionRequest_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("gpsLongitude", "gpsLatitude", "gpsPrecision", "appdomeThreatEvents");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19228a = a10;
+        this.f19368a = a10;
         com.squareup.moshi.h f10 = moshi.f(Double.class, x0.d(), "gpsLongitude");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19229b = f10;
+        this.f19369b = f10;
         com.squareup.moshi.h f11 = moshi.f(String.class, x0.d(), "gpsPrecision");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19230c = f11;
+        this.f19370c = f11;
         com.squareup.moshi.h f12 = moshi.f(a0.j(List.class, UpdateInquirySessionRequest.AppdomeThreatEvent.class), x0.d(), "appdomeThreatEvents");
         Intrinsics.checkNotNullExpressionValue(f12, "adapter(...)");
-        this.f19231d = f12;
+        this.f19371d = f12;
     }
 
     @Override // com.squareup.moshi.h
@@ -57,40 +57,40 @@ public final class UpdateInquirySessionRequest_AttributesJsonAdapter extends com
         List list = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19228a);
+            int J = reader.J(this.f19368a);
             if (J != -1) {
                 if (J != 0) {
                     if (J != 1) {
                         if (J != 2) {
                             if (J == 3) {
-                                list = (List) this.f19231d.fromJson(reader);
+                                list = (List) this.f19371d.fromJson(reader);
                                 i10 &= -9;
                             }
                         } else {
-                            str = (String) this.f19230c.fromJson(reader);
+                            str = (String) this.f19370c.fromJson(reader);
                             i10 &= -5;
                         }
                     } else {
-                        d11 = (Double) this.f19229b.fromJson(reader);
+                        d11 = (Double) this.f19369b.fromJson(reader);
                         i10 &= -3;
                     }
                 } else {
-                    d10 = (Double) this.f19229b.fromJson(reader);
+                    d10 = (Double) this.f19369b.fromJson(reader);
                     i10 &= -2;
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
         if (i10 == -16) {
             return new UpdateInquirySessionRequest.Attributes(d10, d11, str, list);
         }
-        Constructor constructor = this.f19232e;
+        Constructor constructor = this.f19372e;
         if (constructor == null) {
-            constructor = UpdateInquirySessionRequest.Attributes.class.getDeclaredConstructor(Double.class, Double.class, String.class, List.class, Integer.TYPE, an.c.f1164c);
-            this.f19232e = constructor;
+            constructor = UpdateInquirySessionRequest.Attributes.class.getDeclaredConstructor(Double.class, Double.class, String.class, List.class, Integer.TYPE, bn.c.f7152c);
+            this.f19372e = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         Object newInstance = constructor.newInstance(d10, d11, str, list, Integer.valueOf(i10), null);
@@ -105,13 +105,13 @@ public final class UpdateInquirySessionRequest_AttributesJsonAdapter extends com
         if (attributes != null) {
             writer.k();
             writer.J("gpsLongitude");
-            this.f19229b.toJson(writer, attributes.c());
+            this.f19369b.toJson(writer, attributes.c());
             writer.J("gpsLatitude");
-            this.f19229b.toJson(writer, attributes.b());
+            this.f19369b.toJson(writer, attributes.b());
             writer.J("gpsPrecision");
-            this.f19230c.toJson(writer, attributes.d());
+            this.f19370c.toJson(writer, attributes.d());
             writer.J("appdomeThreatEvents");
-            this.f19231d.toJson(writer, attributes.a());
+            this.f19371d.toJson(writer, attributes.a());
             writer.s();
             return;
         }

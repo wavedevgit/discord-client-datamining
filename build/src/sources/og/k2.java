@@ -1,43 +1,56 @@
 package og;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class k2 implements yi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final k2 f42237a = new k2();
+final class k2 implements p2 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42238b;
+    private final int f41004b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42239c;
+    private final o2 f41005c;
 
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42240d;
-
-    static {
-        c.b a10 = yi.c.a("inferenceCommonLogEvent");
-        f fVar = new f();
-        fVar.a(1);
-        f42238b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("options");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42239c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("imageInfo");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42240d = a12.b(fVar3.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public k2(int i10, o2 o2Var) {
+        this.f41004b = i10;
+        this.f41005c = o2Var;
     }
 
-    private k2() {
+    @Override // java.lang.annotation.Annotation
+    public final Class annotationType() {
+        return p2.class;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // java.lang.annotation.Annotation
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof p2)) {
+            return false;
+        }
+        p2 p2Var = (p2) obj;
+        if (this.f41004b == p2Var.zza() && this.f41005c.equals(p2Var.zzb())) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // java.lang.annotation.Annotation
+    public final int hashCode() {
+        return (this.f41004b ^ 14552422) + (this.f41005c.hashCode() ^ 2041407134);
+    }
+
+    @Override // java.lang.annotation.Annotation
+    public final String toString() {
+        return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f41004b + "intEncoding=" + this.f41005c + ')';
+    }
+
+    @Override // og.p2
+    public final int zza() {
+        return this.f41004b;
+    }
+
+    @Override // og.p2
+    public final o2 zzb() {
+        return this.f41005c;
     }
 }

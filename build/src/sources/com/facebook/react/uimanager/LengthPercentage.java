@@ -50,7 +50,7 @@ public final class LengthPercentage {
             if (i10 != 1) {
                 if (i10 != 2) {
                     ReadableType type = dynamic.getType();
-                    p8.a.J(ReactConstants.TAG, "Unsupported type for radius property: " + type);
+                    q8.a.J(ReactConstants.TAG, "Unsupported type for radius property: " + type);
                     return null;
                 }
                 String asString = dynamic.asString();
@@ -64,11 +64,11 @@ public final class LengthPercentage {
                         }
                         return new LengthPercentage(parseFloat, LengthPercentageType.PERCENT);
                     } catch (NumberFormatException unused) {
-                        p8.a.J(ReactConstants.TAG, "Invalid percentage format: " + asString);
+                        q8.a.J(ReactConstants.TAG, "Invalid percentage format: " + asString);
                         return null;
                     }
                 }
-                p8.a.J(ReactConstants.TAG, "Invalid string value: " + asString);
+                q8.a.J(ReactConstants.TAG, "Invalid string value: " + asString);
                 return null;
             }
             double asDouble = dynamic.asDouble();

@@ -7,28 +7,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d0 implements m, AutoCloseable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f4929d;
+    private final String f4626d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b0 f4930e;
+    private final b0 f4627e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f4931i;
+    private boolean f4628i;
 
     public d0(String key, b0 handle) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(handle, "handle");
-        this.f4929d = key;
-        this.f4930e = handle;
+        this.f4626d = key;
+        this.f4627e = handle;
     }
 
     public final void a(SavedStateRegistry registry, Lifecycle lifecycle) {
         Intrinsics.checkNotNullParameter(registry, "registry");
         Intrinsics.checkNotNullParameter(lifecycle, "lifecycle");
-        if (!this.f4931i) {
-            this.f4931i = true;
+        if (!this.f4628i) {
+            this.f4628i = true;
             lifecycle.a(this);
-            registry.c(this.f4929d, this.f4930e.g());
+            registry.c(this.f4626d, this.f4627e.g());
             return;
         }
         throw new IllegalStateException("Already attached to lifecycleOwner");
@@ -39,7 +39,7 @@ public final class d0 implements m, AutoCloseable {
     }
 
     public final b0 g() {
-        return this.f4930e;
+        return this.f4627e;
     }
 
     @Override // androidx.lifecycle.m
@@ -47,12 +47,12 @@ public final class d0 implements m, AutoCloseable {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
         if (event == Lifecycle.a.ON_DESTROY) {
-            this.f4931i = false;
+            this.f4628i = false;
             source.getLifecycle().d(this);
         }
     }
 
     public final boolean m() {
-        return this.f4931i;
+        return this.f4628i;
     }
 }

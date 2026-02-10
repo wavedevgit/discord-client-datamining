@@ -43,19 +43,19 @@ import java.util.WeakHashMap;
 public abstract class h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static WeakHashMap f3803a = null;
+    private static WeakHashMap f3500a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Field f3804b = null;
+    private static Field f3501b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f3805c = false;
+    private static boolean f3502c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f3806d = {o1.e.f41374b, o1.e.f41375c, o1.e.f41386n, o1.e.f41397y, o1.e.B, o1.e.C, o1.e.D, o1.e.E, o1.e.F, o1.e.G, o1.e.f41376d, o1.e.f41377e, o1.e.f41378f, o1.e.f41379g, o1.e.f41380h, o1.e.f41381i, o1.e.f41382j, o1.e.f41383k, o1.e.f41384l, o1.e.f41385m, o1.e.f41387o, o1.e.f41388p, o1.e.f41389q, o1.e.f41390r, o1.e.f41391s, o1.e.f41392t, o1.e.f41393u, o1.e.f41394v, o1.e.f41395w, o1.e.f41396x, o1.e.f41398z, o1.e.A};
+    private static final int[] f3503d = {o1.e.f40104b, o1.e.f40105c, o1.e.f40116n, o1.e.f40127y, o1.e.B, o1.e.C, o1.e.D, o1.e.E, o1.e.F, o1.e.G, o1.e.f40106d, o1.e.f40107e, o1.e.f40108f, o1.e.f40109g, o1.e.f40110h, o1.e.f40111i, o1.e.f40112j, o1.e.f40113k, o1.e.f40114l, o1.e.f40115m, o1.e.f40117o, o1.e.f40118p, o1.e.f40119q, o1.e.f40120r, o1.e.f40121s, o1.e.f40122t, o1.e.f40123u, o1.e.f40124v, o1.e.f40125w, o1.e.f40126x, o1.e.f40128z, o1.e.A};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final x f3807e = new x() { // from class: androidx.core.view.g0
+    private static final x f3504e = new x() { // from class: androidx.core.view.g0
         @Override // androidx.core.view.x
         public final ContentInfoCompat onReceiveContent(ContentInfoCompat contentInfoCompat) {
             return h0.a(contentInfoCompat);
@@ -63,7 +63,7 @@ public abstract class h0 {
     };
 
     /* renamed from: f  reason: collision with root package name */
-    private static final e f3808f = new e();
+    private static final e f3505f = new e();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -185,7 +185,7 @@ public abstract class h0 {
     static class e implements ViewTreeObserver.OnGlobalLayoutListener, View.OnAttachStateChangeListener {
 
         /* renamed from: d  reason: collision with root package name */
-        private final WeakHashMap f3809d = new WeakHashMap();
+        private final WeakHashMap f3506d = new WeakHashMap();
 
         e() {
         }
@@ -221,7 +221,7 @@ public abstract class h0 {
 
         void a(View view) {
             boolean z10;
-            WeakHashMap weakHashMap = this.f3809d;
+            WeakHashMap weakHashMap = this.f3506d;
             if (view.isShown() && view.getWindowVisibility() == 0) {
                 z10 = true;
             } else {
@@ -235,7 +235,7 @@ public abstract class h0 {
         }
 
         void d(View view) {
-            this.f3809d.remove(view);
+            this.f3506d.remove(view);
             view.removeOnAttachStateChangeListener(this);
             e(view);
         }
@@ -243,7 +243,7 @@ public abstract class h0 {
         @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
         public void onGlobalLayout() {
             if (Build.VERSION.SDK_INT < 28) {
-                for (Map.Entry entry : this.f3809d.entrySet()) {
+                for (Map.Entry entry : this.f3506d.entrySet()) {
                     b(entry);
                 }
             }
@@ -264,23 +264,23 @@ public abstract class h0 {
     public static abstract class f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f3810a;
+        private final int f3507a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f3811b;
+        private final Class f3508b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f3812c;
+        private final int f3509c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f3813d;
+        private final int f3510d;
 
         f(int i10, Class cls, int i11) {
             this(i10, cls, 0, i11);
         }
 
         private boolean b() {
-            if (Build.VERSION.SDK_INT >= this.f3812c) {
+            if (Build.VERSION.SDK_INT >= this.f3509c) {
                 return true;
             }
             return false;
@@ -313,8 +313,8 @@ public abstract class h0 {
             if (b()) {
                 return c(view);
             }
-            Object tag = view.getTag(this.f3810a);
-            if (this.f3811b.isInstance(tag)) {
+            Object tag = view.getTag(this.f3507a);
+            if (this.f3508b.isInstance(tag)) {
                 return tag;
             }
             return null;
@@ -325,18 +325,18 @@ public abstract class h0 {
                 d(view, obj);
             } else if (g(e(view), obj)) {
                 h0.j(view);
-                view.setTag(this.f3810a, obj);
-                h0.W(view, this.f3813d);
+                view.setTag(this.f3507a, obj);
+                h0.W(view, this.f3510d);
             }
         }
 
         abstract boolean g(Object obj, Object obj2);
 
         f(int i10, Class cls, int i11, int i12) {
-            this.f3810a = i10;
-            this.f3811b = cls;
-            this.f3813d = i11;
-            this.f3812c = i12;
+            this.f3507a = i10;
+            this.f3508b = cls;
+            this.f3510d = i11;
+            this.f3509c = i12;
         }
     }
 
@@ -344,7 +344,7 @@ public abstract class h0 {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class g {
         static WindowInsets a(View view, WindowInsets windowInsets) {
-            if (m0.f3833b) {
+            if (m0.f3530b) {
                 return m0.b(view, windowInsets);
             }
             return view.dispatchApplyWindowInsets(windowInsets);
@@ -367,17 +367,17 @@ public abstract class h0 {
         public class a implements View.OnApplyWindowInsetsListener {
 
             /* renamed from: a  reason: collision with root package name */
-            WindowInsetsCompat f3814a = null;
+            WindowInsetsCompat f3511a = null;
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ View f3815b;
+            final /* synthetic */ View f3512b;
 
             /* renamed from: c  reason: collision with root package name */
-            final /* synthetic */ v f3816c;
+            final /* synthetic */ v f3513c;
 
             a(View view, v vVar) {
-                this.f3815b = view;
-                this.f3816c = vVar;
+                this.f3512b = view;
+                this.f3513c = vVar;
             }
 
             @Override // android.view.View.OnApplyWindowInsetsListener
@@ -385,13 +385,13 @@ public abstract class h0 {
                 WindowInsetsCompat D = WindowInsetsCompat.D(windowInsets, view);
                 int i10 = Build.VERSION.SDK_INT;
                 if (i10 < 30) {
-                    h.a(windowInsets, this.f3815b);
-                    if (D.equals(this.f3814a)) {
-                        return this.f3816c.a(view, D).B();
+                    h.a(windowInsets, this.f3512b);
+                    if (D.equals(this.f3511a)) {
+                        return this.f3513c.a(view, D).B();
                     }
                 }
-                this.f3814a = D;
-                WindowInsetsCompat a10 = this.f3816c.a(view, D);
+                this.f3511a = D;
+                WindowInsetsCompat a10 = this.f3513c.a(view, D);
                 if (i10 >= 30) {
                     return a10.B();
                 }
@@ -626,15 +626,15 @@ public abstract class h0 {
     public static final class o implements OnReceiveContentListener {
 
         /* renamed from: a  reason: collision with root package name */
-        private final w f3817a;
+        private final w f3514a;
 
         o(w wVar) {
-            this.f3817a = wVar;
+            this.f3514a = wVar;
         }
 
         public ContentInfo onReceiveContent(View view, ContentInfo contentInfo) {
             ContentInfoCompat l10 = ContentInfoCompat.l(contentInfo);
-            ContentInfoCompat a10 = this.f3817a.a(view, l10);
+            ContentInfoCompat a10 = this.f3514a.a(view, l10);
             if (a10 == null) {
                 return null;
             }
@@ -649,16 +649,16 @@ public abstract class h0 {
     static class p {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final ArrayList f3818d = new ArrayList();
+        private static final ArrayList f3515d = new ArrayList();
 
         /* renamed from: a  reason: collision with root package name */
-        private WeakHashMap f3819a = null;
+        private WeakHashMap f3516a = null;
 
         /* renamed from: b  reason: collision with root package name */
-        private SparseArray f3820b = null;
+        private SparseArray f3517b = null;
 
         /* renamed from: c  reason: collision with root package name */
-        private WeakReference f3821c = null;
+        private WeakReference f3518c = null;
 
         p() {
         }
@@ -674,7 +674,7 @@ public abstract class h0 {
         }
 
         private View c(View view, KeyEvent keyEvent) {
-            WeakHashMap weakHashMap = this.f3819a;
+            WeakHashMap weakHashMap = this.f3516a;
             if (weakHashMap != null && weakHashMap.containsKey(view)) {
                 if (view instanceof ViewGroup) {
                     ViewGroup viewGroup = (ViewGroup) view;
@@ -693,10 +693,10 @@ public abstract class h0 {
         }
 
         private SparseArray d() {
-            if (this.f3820b == null) {
-                this.f3820b = new SparseArray();
+            if (this.f3517b == null) {
+                this.f3517b = new SparseArray();
             }
-            return this.f3820b;
+            return this.f3517b;
         }
 
         private boolean e(View view, KeyEvent keyEvent) {
@@ -710,28 +710,28 @@ public abstract class h0 {
         }
 
         private void g() {
-            WeakHashMap weakHashMap = this.f3819a;
+            WeakHashMap weakHashMap = this.f3516a;
             if (weakHashMap != null) {
                 weakHashMap.clear();
             }
-            ArrayList arrayList = f3818d;
+            ArrayList arrayList = f3515d;
             if (arrayList.isEmpty()) {
                 return;
             }
             synchronized (arrayList) {
                 try {
-                    if (this.f3819a == null) {
-                        this.f3819a = new WeakHashMap();
+                    if (this.f3516a == null) {
+                        this.f3516a = new WeakHashMap();
                     }
                     for (int size = arrayList.size() - 1; size >= 0; size--) {
-                        ArrayList arrayList2 = f3818d;
+                        ArrayList arrayList2 = f3515d;
                         View view = (View) ((WeakReference) arrayList2.get(size)).get();
                         if (view == null) {
                             arrayList2.remove(size);
                         } else {
-                            this.f3819a.put(view, Boolean.TRUE);
+                            this.f3516a.put(view, Boolean.TRUE);
                             for (ViewParent parent = view.getParent(); parent instanceof View; parent = parent.getParent()) {
-                                this.f3819a.put((View) parent, Boolean.TRUE);
+                                this.f3516a.put((View) parent, Boolean.TRUE);
                             }
                         }
                     }
@@ -761,11 +761,11 @@ public abstract class h0 {
         boolean f(KeyEvent keyEvent) {
             WeakReference weakReference;
             int indexOfKey;
-            WeakReference weakReference2 = this.f3821c;
+            WeakReference weakReference2 = this.f3518c;
             if (weakReference2 != null && weakReference2.get() == keyEvent) {
                 return false;
             }
-            this.f3821c = new WeakReference(keyEvent);
+            this.f3518c = new WeakReference(keyEvent);
             SparseArray d10 = d();
             if (keyEvent.getAction() == 1 && (indexOfKey = d10.indexOfKey(keyEvent.getKeyCode())) >= 0) {
                 weakReference = (WeakReference) d10.valueAt(indexOfKey);
@@ -1114,13 +1114,13 @@ public abstract class h0 {
     }
 
     public static r0 e(View view) {
-        if (f3803a == null) {
-            f3803a = new WeakHashMap();
+        if (f3500a == null) {
+            f3500a = new WeakHashMap();
         }
-        r0 r0Var = (r0) f3803a.get(view);
+        r0 r0Var = (r0) f3500a.get(view);
         if (r0Var == null) {
             r0 r0Var2 = new r0(view);
-            f3803a.put(view, r0Var2);
+            f3500a.put(view, r0Var2);
             return r0Var2;
         }
         return r0Var;
@@ -1219,8 +1219,8 @@ public abstract class h0 {
         if (m10 == null) {
             return null;
         }
-        if (m10 instanceof a.C0037a) {
-            return ((a.C0037a) m10).f3747a;
+        if (m10 instanceof a.C0039a) {
+            return ((a.C0039a) m10).f3444a;
         }
         return new androidx.core.view.a(m10);
     }
@@ -1243,34 +1243,34 @@ public abstract class h0 {
     }
 
     private static View.AccessibilityDelegate n(View view) {
-        if (f3805c) {
+        if (f3502c) {
             return null;
         }
-        if (f3804b == null) {
+        if (f3501b == null) {
             try {
                 Field declaredField = View.class.getDeclaredField("mAccessibilityDelegate");
-                f3804b = declaredField;
+                f3501b = declaredField;
                 declaredField.setAccessible(true);
             } catch (Throwable unused) {
-                f3805c = true;
+                f3502c = true;
                 return null;
             }
         }
         try {
-            Object obj = f3804b.get(view);
+            Object obj = f3501b.get(view);
             if (!(obj instanceof View.AccessibilityDelegate)) {
                 return null;
             }
             return (View.AccessibilityDelegate) obj;
         } catch (Throwable unused2) {
-            f3805c = true;
+            f3502c = true;
             return null;
         }
     }
 
     public static void n0(View view, androidx.core.view.a aVar) {
         View.AccessibilityDelegate bridge;
-        if (aVar == null && (m(view) instanceof a.C0037a)) {
+        if (aVar == null && (m(view) instanceof a.C0039a)) {
             aVar = new androidx.core.view.a();
         }
         y0(view);
@@ -1315,7 +1315,7 @@ public abstract class h0 {
         int i11 = -1;
         int i12 = 0;
         while (true) {
-            int[] iArr = f3806d;
+            int[] iArr = f3503d;
             if (i12 >= iArr.length || i11 != -1) {
                 break;
             }
@@ -1340,9 +1340,9 @@ public abstract class h0 {
     public static void q0(View view, CharSequence charSequence) {
         b0().f(view, charSequence);
         if (charSequence != null) {
-            f3808f.a(view);
+            f3505f.a(view);
         } else {
-            f3808f.d(view);
+            f3505f.d(view);
         }
     }
 
@@ -1382,7 +1382,7 @@ public abstract class h0 {
         if (view instanceof x) {
             return (x) view;
         }
-        return f3807e;
+        return f3504e;
     }
 
     public static void v0(View view, float f10) {

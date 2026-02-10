@@ -65,28 +65,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.colors;
     var11 = var11.BACKGROUND_BASE_LOWEST;
     var8.backgroundColor = var11;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.radii;
-    var11 = var11.round;
-    var8.borderRadius = var11;
-    var3.channelItem = var8;
-    var8 = {
-        'marginLeft': 8,
-        'paddingHorizontal': 8,
-        'paddingVertical': 8
-    };
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.BACKGROUND_BASE_LOWEST;
-    var8.backgroundColor = var11;
     var9 = var5[var9];
     var9 = var10.bind(var0)(var9);
     var9 = var9.radii;
     var9 = var9.round;
     var8.borderRadius = var9;
-    var3.overflowItem = var8;
+    var3.channelItem = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
     var3 = 14;
@@ -96,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_onboarding_home/native/ResourcesRow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun105373: for (var _fun105373_ip = 0;;) switch (_fun105373_ip) {
+        _fun105353: for (var _fun105353_ip = 0;;) switch (_fun105353_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guildId;
@@ -177,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var5;
                 var5 = null;
                 if (!var7) {
-                    _fun105373_ip = 310;
-                    continue _fun105373
+                    _fun105353_ip = 310;
+                    continue _fun105353
                 }
             case 140:
                 var8 = _closure1_slot5;
@@ -250,4 +234,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13736, 33, 1297, 671, 13737, 11725, 3279, 13738, 1307, 4904, 3942, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13723, 33, 1297, 671, 13724, 11720, 3279, 13725, 1307, 4904, 3942, 1234, 2]);

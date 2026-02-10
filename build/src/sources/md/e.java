@@ -2,16 +2,19 @@ package md;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.google.android.exoplayer2.metadata.Metadata;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class e implements Metadata.b {
+public final class e extends i {
     public static final Parcelable.Creator<e> CREATOR = new a();
 
-    /* renamed from: d  reason: collision with root package name */
-    public final float f37111d;
-
     /* renamed from: e  reason: collision with root package name */
-    public final int f37112e;
+    public final String f36927e;
+
+    /* renamed from: i  reason: collision with root package name */
+    public final String f36928i;
+
+    /* renamed from: o  reason: collision with root package name */
+    public final String f36929o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -21,7 +24,7 @@ public final class e implements Metadata.b {
         @Override // android.os.Parcelable.Creator
         /* renamed from: a */
         public e createFromParcel(Parcel parcel) {
-            return new e(parcel, (a) null);
+            return new e(parcel);
         }
 
         @Override // android.os.Parcelable.Creator
@@ -31,13 +34,11 @@ public final class e implements Metadata.b {
         }
     }
 
-    /* synthetic */ e(Parcel parcel, a aVar) {
-        this(parcel);
-    }
-
-    @Override // android.os.Parcelable
-    public int describeContents() {
-        return 0;
+    public e(String str, String str2, String str3) {
+        super("COMM");
+        this.f36927e = str;
+        this.f36928i = str2;
+        this.f36929o = str3;
     }
 
     public boolean equals(Object obj) {
@@ -46,7 +47,7 @@ public final class e implements Metadata.b {
         }
         if (obj != null && e.class == obj.getClass()) {
             e eVar = (e) obj;
-            if (this.f37111d == eVar.f37111d && this.f37112e == eVar.f37112e) {
+            if (w0.c(this.f36928i, eVar.f36928i) && w0.c(this.f36927e, eVar.f36927e) && w0.c(this.f36929o, eVar.f36929o)) {
                 return true;
             }
         }
@@ -54,26 +55,46 @@ public final class e implements Metadata.b {
     }
 
     public int hashCode() {
-        return ((527 + pi.c.a(this.f37111d)) * 31) + this.f37112e;
+        int i10;
+        int i11;
+        String str = this.f36927e;
+        int i12 = 0;
+        if (str != null) {
+            i10 = str.hashCode();
+        } else {
+            i10 = 0;
+        }
+        int i13 = (527 + i10) * 31;
+        String str2 = this.f36928i;
+        if (str2 != null) {
+            i11 = str2.hashCode();
+        } else {
+            i11 = 0;
+        }
+        int i14 = (i13 + i11) * 31;
+        String str3 = this.f36929o;
+        if (str3 != null) {
+            i12 = str3.hashCode();
+        }
+        return i14 + i12;
     }
 
+    @Override // md.i
     public String toString() {
-        return "smta: captureFrameRate=" + this.f37111d + ", svcTemporalLayerCount=" + this.f37112e;
+        return this.f36939d + ": language=" + this.f36927e + ", description=" + this.f36928i;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeFloat(this.f37111d);
-        parcel.writeInt(this.f37112e);
+        parcel.writeString(this.f36939d);
+        parcel.writeString(this.f36927e);
+        parcel.writeString(this.f36929o);
     }
 
-    public e(float f10, int i10) {
-        this.f37111d = f10;
-        this.f37112e = i10;
-    }
-
-    private e(Parcel parcel) {
-        this.f37111d = parcel.readFloat();
-        this.f37112e = parcel.readInt();
+    e(Parcel parcel) {
+        super("COMM");
+        this.f36927e = (String) w0.j(parcel.readString());
+        this.f36928i = (String) w0.j(parcel.readString());
+        this.f36929o = (String) w0.j(parcel.readString());
     }
 }

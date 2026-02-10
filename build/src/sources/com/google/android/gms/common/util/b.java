@@ -23,7 +23,7 @@ public abstract class b {
         while (true) {
             if (i11 >= i10) {
                 break;
-            } else if (gf.o.a(objArr[i11], obj)) {
+            } else if (hf.o.a(objArr[i11], obj)) {
                 if (i11 >= 0) {
                     return true;
                 }

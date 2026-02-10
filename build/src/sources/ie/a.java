@@ -1,66 +1,212 @@
 package ie;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import ne.h0;
-import ne.w0;
-import zd.b;
+import ae.b;
+import ae.f;
+import ae.g;
+import ae.i;
+import android.text.SpannableStringBuilder;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.StyleSpan;
+import android.text.style.TypefaceSpan;
+import android.text.style.UnderlineSpan;
+import com.facebook.react.views.text.internal.span.SetSpanOperation;
+import java.nio.charset.Charset;
+import java.util.List;
+import ni.d;
+import oe.h0;
+import oe.w0;
+import oe.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a extends zd.f {
+public final class a extends f {
 
     /* renamed from: o  reason: collision with root package name */
-    private final h0 f26706o;
+    private final h0 f26804o;
 
-    public a() {
-        super("Mp4WebvttDecoder");
-        this.f26706o = new h0();
-    }
+    /* renamed from: p  reason: collision with root package name */
+    private final boolean f26805p;
 
-    private static zd.b B(h0 h0Var, int i10) {
-        CharSequence charSequence = null;
-        b.C0770b c0770b = null;
-        while (i10 > 0) {
-            if (i10 >= 8) {
-                int q10 = h0Var.q();
-                int q11 = h0Var.q();
-                int i11 = q10 - 8;
-                String F = w0.F(h0Var.e(), h0Var.f(), i11);
-                h0Var.V(i11);
-                i10 = (i10 - 8) - i11;
-                if (q11 == 1937011815) {
-                    c0770b = f.o(F);
-                } else if (q11 == 1885436268) {
-                    charSequence = f.q(null, F.trim(), Collections.EMPTY_LIST);
-                }
+    /* renamed from: q  reason: collision with root package name */
+    private final int f26806q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private final int f26807r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private final String f26808s;
+
+    /* renamed from: t  reason: collision with root package name */
+    private final float f26809t;
+
+    /* renamed from: u  reason: collision with root package name */
+    private final int f26810u;
+
+    public a(List list) {
+        super("Tx3gDecoder");
+        this.f26804o = new h0();
+        if (list.size() == 1 && (((byte[]) list.get(0)).length == 48 || ((byte[]) list.get(0)).length == 53)) {
+            byte[] bArr = (byte[]) list.get(0);
+            this.f26806q = bArr[24];
+            this.f26807r = ((bArr[26] & 255) << 24) | ((bArr[27] & 255) << 16) | ((bArr[28] & 255) << 8) | (bArr[29] & 255);
+            this.f26808s = "Serif".equals(w0.F(bArr, 43, bArr.length - 43)) ? "serif" : "sans-serif";
+            int i10 = bArr[25] * 20;
+            this.f26810u = i10;
+            boolean z10 = (bArr[0] & 32) != 0;
+            this.f26805p = z10;
+            if (z10) {
+                this.f26809t = w0.p(((bArr[11] & 255) | ((bArr[10] & 255) << 8)) / i10, 0.0f, 0.95f);
+                return;
             } else {
-                throw new zd.i("Incomplete vtt cue box header found.");
+                this.f26809t = 0.85f;
+                return;
             }
         }
-        if (charSequence == null) {
-            charSequence = "";
-        }
-        if (c0770b != null) {
-            return c0770b.o(charSequence).a();
-        }
-        return f.l(charSequence);
+        this.f26806q = 0;
+        this.f26807r = -1;
+        this.f26808s = "sans-serif";
+        this.f26805p = false;
+        this.f26809t = 0.85f;
+        this.f26810u = -1;
     }
 
-    @Override // zd.f
-    protected zd.g z(byte[] bArr, int i10, boolean z10) {
-        this.f26706o.S(bArr, i10);
-        ArrayList arrayList = new ArrayList();
-        while (this.f26706o.a() > 0) {
-            if (this.f26706o.a() >= 8) {
-                int q10 = this.f26706o.q();
-                if (this.f26706o.q() == 1987343459) {
-                    arrayList.add(B(this.f26706o, q10 - 8));
+    private void B(h0 h0Var, SpannableStringBuilder spannableStringBuilder) {
+        boolean z10;
+        if (h0Var.a() >= 12) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        C(z10);
+        int N = h0Var.N();
+        int N2 = h0Var.N();
+        h0Var.V(2);
+        int H = h0Var.H();
+        h0Var.V(1);
+        int q10 = h0Var.q();
+        if (N2 > spannableStringBuilder.length()) {
+            y.i("Tx3gDecoder", "Truncating styl end (" + N2 + ") to cueText.length() (" + spannableStringBuilder.length() + ").");
+            N2 = spannableStringBuilder.length();
+        }
+        int i10 = N2;
+        if (N >= i10) {
+            y.i("Tx3gDecoder", "Ignoring styl with start (" + N + ") >= end (" + i10 + ").");
+            return;
+        }
+        E(spannableStringBuilder, H, this.f26806q, N, i10, 0);
+        D(spannableStringBuilder, q10, this.f26807r, N, i10, 0);
+    }
+
+    private static void C(boolean z10) {
+        if (z10) {
+            return;
+        }
+        throw new i("Unexpected subtitle format.");
+    }
+
+    private static void D(SpannableStringBuilder spannableStringBuilder, int i10, int i11, int i12, int i13, int i14) {
+        if (i10 != i11) {
+            spannableStringBuilder.setSpan(new ForegroundColorSpan((i10 >>> 8) | ((i10 & SetSpanOperation.SPAN_MAX_PRIORITY) << 24)), i12, i13, i14 | 33);
+        }
+    }
+
+    private static void E(SpannableStringBuilder spannableStringBuilder, int i10, int i11, int i12, int i13, int i14) {
+        boolean z10;
+        boolean z11;
+        if (i10 != i11) {
+            int i15 = i14 | 33;
+            boolean z12 = true;
+            if ((i10 & 1) != 0) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            if ((i10 & 2) != 0) {
+                z11 = true;
+            } else {
+                z11 = false;
+            }
+            if (z10) {
+                if (z11) {
+                    spannableStringBuilder.setSpan(new StyleSpan(3), i12, i13, i15);
                 } else {
-                    this.f26706o.V(q10 - 8);
+                    spannableStringBuilder.setSpan(new StyleSpan(1), i12, i13, i15);
                 }
-            } else {
-                throw new zd.i("Incomplete Mp4Webvtt Top Level box header found.");
+            } else if (z11) {
+                spannableStringBuilder.setSpan(new StyleSpan(2), i12, i13, i15);
+            }
+            if ((i10 & 4) == 0) {
+                z12 = false;
+            }
+            if (z12) {
+                spannableStringBuilder.setSpan(new UnderlineSpan(), i12, i13, i15);
+            }
+            if (!z12 && !z10 && !z11) {
+                spannableStringBuilder.setSpan(new StyleSpan(0), i12, i13, i15);
             }
         }
-        return new b(arrayList);
+    }
+
+    private static void F(SpannableStringBuilder spannableStringBuilder, String str, int i10, int i11) {
+        if (str != "sans-serif") {
+            spannableStringBuilder.setSpan(new TypefaceSpan(str), i10, i11, 16711713);
+        }
+    }
+
+    private static String G(h0 h0Var) {
+        boolean z10;
+        if (h0Var.a() >= 2) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        C(z10);
+        int N = h0Var.N();
+        if (N == 0) {
+            return "";
+        }
+        int f10 = h0Var.f();
+        Charset P = h0Var.P();
+        int f11 = N - (h0Var.f() - f10);
+        if (P == null) {
+            P = d.f38904c;
+        }
+        return h0Var.F(f11, P);
+    }
+
+    @Override // ae.f
+    protected g z(byte[] bArr, int i10, boolean z10) {
+        this.f26804o.S(bArr, i10);
+        String G = G(this.f26804o);
+        if (G.isEmpty()) {
+            return b.f26811e;
+        }
+        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(G);
+        E(spannableStringBuilder, this.f26806q, 0, 0, spannableStringBuilder.length(), 16711680);
+        D(spannableStringBuilder, this.f26807r, -1, 0, spannableStringBuilder.length(), 16711680);
+        F(spannableStringBuilder, this.f26808s, 0, spannableStringBuilder.length());
+        float f10 = this.f26809t;
+        while (this.f26804o.a() >= 8) {
+            int f11 = this.f26804o.f();
+            int q10 = this.f26804o.q();
+            int q11 = this.f26804o.q();
+            boolean z11 = true;
+            if (q11 == 1937013100) {
+                if (this.f26804o.a() < 2) {
+                    z11 = false;
+                }
+                C(z11);
+                int N = this.f26804o.N();
+                for (int i11 = 0; i11 < N; i11++) {
+                    B(this.f26804o, spannableStringBuilder);
+                }
+            } else if (q11 == 1952608120 && this.f26805p) {
+                if (this.f26804o.a() < 2) {
+                    z11 = false;
+                }
+                C(z11);
+                f10 = w0.p(this.f26804o.N() / this.f26810u, 0.0f, 0.95f);
+            }
+            this.f26804o.U(f11 + q10);
+        }
+        return new b(new b.C0009b().o(spannableStringBuilder).h(f10, 0).i(0).a());
     }
 }

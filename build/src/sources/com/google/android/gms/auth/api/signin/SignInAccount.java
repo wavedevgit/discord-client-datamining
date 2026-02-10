@@ -4,39 +4,39 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.annotation.NonNull;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import gf.q;
+import hf.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class SignInAccount extends hf.a implements ReflectedParcelable {
+public class SignInAccount extends jf.a implements ReflectedParcelable {
     @NonNull
     public static final Parcelable.Creator<SignInAccount> CREATOR = new g();
 
     /* renamed from: d  reason: collision with root package name */
-    final String f13689d;
+    final String f13829d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final GoogleSignInAccount f13690e;
+    private final GoogleSignInAccount f13830e;
 
     /* renamed from: i  reason: collision with root package name */
-    final String f13691i;
+    final String f13831i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public SignInAccount(String str, GoogleSignInAccount googleSignInAccount, String str2) {
-        this.f13690e = googleSignInAccount;
-        this.f13689d = q.g(str, "8.3 and 8.4 SDKs require non-null email");
-        this.f13691i = q.g(str2, "8.3 and 8.4 SDKs require non-null userId");
+        this.f13830e = googleSignInAccount;
+        this.f13829d = q.g(str, "8.3 and 8.4 SDKs require non-null email");
+        this.f13831i = q.g(str2, "8.3 and 8.4 SDKs require non-null userId");
     }
 
     public final GoogleSignInAccount b() {
-        return this.f13690e;
+        return this.f13830e;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        String str = this.f13689d;
-        int a10 = hf.c.a(parcel);
-        hf.c.s(parcel, 4, str, false);
-        hf.c.q(parcel, 7, this.f13690e, i10, false);
-        hf.c.s(parcel, 8, this.f13691i, false);
-        hf.c.b(parcel, a10);
+        String str = this.f13829d;
+        int a10 = jf.c.a(parcel);
+        jf.c.s(parcel, 4, str, false);
+        jf.c.q(parcel, 7, this.f13830e, i10, false);
+        jf.c.s(parcel, 8, this.f13831i, false);
+        jf.c.b(parcel, a10);
     }
 }

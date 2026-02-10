@@ -1,48 +1,38 @@
 package vl;
-
-import android.media.MediaFormat;
-import android.util.Log;
-import ol.e;
-import org.webrtc.MediaStreamTrack;
-import tl.f;
-import ul.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class d {
+public final class d implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f52775a = "d";
+    private final double f52515a;
 
-    public c a(int i10, int i11, tl.e eVar, nl.a aVar, i iVar, nl.b bVar, f fVar, MediaFormat mediaFormat) {
-        if (mediaFormat == null) {
-            return new b(eVar, i10, fVar, i11);
+    /* renamed from: b  reason: collision with root package name */
+    private final double f52516b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private double f52517c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private int f52518d;
+
+    public d(int i10, int i11) {
+        this.f52515a = 1.0d / i10;
+        this.f52516b = 1.0d / i11;
+    }
+
+    @Override // vl.e
+    public boolean a() {
+        double d10 = this.f52517c + this.f52515a;
+        this.f52517c = d10;
+        int i10 = this.f52518d;
+        this.f52518d = i10 + 1;
+        if (i10 == 0) {
+            return true;
         }
-        String string = mediaFormat.getString("mime");
-        if (string != null) {
-            if (string.startsWith(MediaStreamTrack.VIDEO_TRACK_KIND) || string.startsWith(MediaStreamTrack.AUDIO_TRACK_KIND)) {
-                if (aVar != null) {
-                    if (bVar == null) {
-                        throw new ol.e(e.a.ENCODER_NOT_PROVIDED, mediaFormat, null, null);
-                    }
-                } else {
-                    throw new ol.e(e.a.DECODER_NOT_PROVIDED, mediaFormat, null, null);
-                }
-            }
-            if (string.startsWith(MediaStreamTrack.VIDEO_TRACK_KIND)) {
-                if (iVar != null) {
-                    return new e(eVar, i10, fVar, i11, mediaFormat, iVar, aVar, bVar);
-                }
-                throw new ol.e(e.a.RENDERER_NOT_PROVIDED, mediaFormat, null, null);
-            } else if (string.startsWith(MediaStreamTrack.AUDIO_TRACK_KIND)) {
-                if (iVar == null) {
-                    iVar = new ul.c(bVar);
-                }
-                return new a(eVar, i10, fVar, i11, mediaFormat, iVar, aVar, bVar);
-            } else {
-                String str = f52775a;
-                Log.i(str, "Unsupported track mime type: " + string + ", will use passthrough transcoder");
-                return new b(eVar, i10, fVar, i11);
-            }
+        double d11 = this.f52516b;
+        if (d10 > d11) {
+            this.f52517c = d10 - d11;
+            return true;
         }
-        throw new ol.e(e.a.SOURCE_TRACK_MIME_TYPE_NOT_FOUND, mediaFormat, null, null);
+        return false;
     }
 }

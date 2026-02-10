@@ -1,50 +1,93 @@
 package hu;
 
-import okhttp3.Interceptor;
+import java.io.IOException;
+import java.io.InterruptedIOException;
+import java.net.ProtocolException;
+import java.net.UnknownServiceException;
+import java.security.cert.CertificateException;
+import java.util.Arrays;
+import java.util.List;
+import javax.net.ssl.SSLException;
+import javax.net.ssl.SSLHandshakeException;
+import javax.net.ssl.SSLPeerUnverifiedException;
+import javax.net.ssl.SSLSocket;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements Interceptor {
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f26542a;
+    private final List f26511a;
 
-    public b(boolean z10) {
-        this.f26542a = z10;
+    /* renamed from: b  reason: collision with root package name */
+    private int f26512b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private boolean f26513c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private boolean f26514d;
+
+    public b(List connectionSpecs) {
+        Intrinsics.checkNotNullParameter(connectionSpecs, "connectionSpecs");
+        this.f26511a = connectionSpecs;
     }
 
-    private final boolean a(int i10) {
-        if (i10 == 100) {
-            return true;
-        }
-        if (102 <= i10 && i10 < 200) {
-            return true;
+    private final boolean c(SSLSocket sSLSocket) {
+        int size = this.f26511a.size();
+        for (int i10 = this.f26512b; i10 < size; i10++) {
+            if (((okhttp3.d) this.f26511a.get(i10)).e(sSLSocket)) {
+                return true;
+            }
         }
         return false;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Removed duplicated region for block: B:46:0x00e5 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:39:0x00aa, B:41:0x00b3, B:44:0x00bb, B:46:0x00e5, B:48:0x00ee, B:49:0x00f1, B:50:0x0115, B:54:0x0120, B:56:0x013f, B:58:0x014d, B:65:0x0163, B:67:0x0169, B:71:0x0176, B:73:0x0190, B:74:0x0198, B:75:0x01a2, B:60:0x0158, B:55:0x012f), top: B:87:0x00aa }] */
-    /* JADX WARN: Removed duplicated region for block: B:67:0x0169 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:39:0x00aa, B:41:0x00b3, B:44:0x00bb, B:46:0x00e5, B:48:0x00ee, B:49:0x00f1, B:50:0x0115, B:54:0x0120, B:56:0x013f, B:58:0x014d, B:65:0x0163, B:67:0x0169, B:71:0x0176, B:73:0x0190, B:74:0x0198, B:75:0x01a2, B:60:0x0158, B:55:0x012f), top: B:87:0x00aa }] */
-    /* JADX WARN: Removed duplicated region for block: B:68:0x016e  */
-    /* JADX WARN: Removed duplicated region for block: B:71:0x0176 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:39:0x00aa, B:41:0x00b3, B:44:0x00bb, B:46:0x00e5, B:48:0x00ee, B:49:0x00f1, B:50:0x0115, B:54:0x0120, B:56:0x013f, B:58:0x014d, B:65:0x0163, B:67:0x0169, B:71:0x0176, B:73:0x0190, B:74:0x0198, B:75:0x01a2, B:60:0x0158, B:55:0x012f), top: B:87:0x00aa }] */
-    /* JADX WARN: Removed duplicated region for block: B:87:0x00aa A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Type inference failed for: r9v13, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r9v14 */
-    /* JADX WARN: Type inference failed for: r9v15 */
-    /* JADX WARN: Type inference failed for: r9v16 */
-    /* JADX WARN: Type inference failed for: r9v23 */
-    /* JADX WARN: Type inference failed for: r9v24 */
-    /* JADX WARN: Type inference failed for: r9v25 */
-    /* JADX WARN: Type inference failed for: r9v26 */
-    @Override // okhttp3.Interceptor
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public okhttp3.Response intercept(okhttp3.Interceptor.Chain r14) {
-        /*
-            Method dump skipped, instructions count: 429
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: hu.b.intercept(okhttp3.Interceptor$Chain):okhttp3.Response");
+    public final okhttp3.d a(SSLSocket sslSocket) {
+        okhttp3.d dVar;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        int i10 = this.f26512b;
+        int size = this.f26511a.size();
+        while (true) {
+            if (i10 < size) {
+                dVar = (okhttp3.d) this.f26511a.get(i10);
+                if (dVar.e(sslSocket)) {
+                    this.f26512b = i10 + 1;
+                    break;
+                }
+                i10++;
+            } else {
+                dVar = null;
+                break;
+            }
+        }
+        if (dVar != null) {
+            this.f26513c = c(sslSocket);
+            dVar.c(sslSocket, this.f26514d);
+            return dVar;
+        }
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Unable to find acceptable protocols. isFallback=");
+        sb2.append(this.f26514d);
+        sb2.append(", modes=");
+        sb2.append(this.f26511a);
+        sb2.append(", supported protocols=");
+        String[] enabledProtocols = sslSocket.getEnabledProtocols();
+        Intrinsics.checkNotNull(enabledProtocols);
+        String arrays = Arrays.toString(enabledProtocols);
+        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
+        sb2.append(arrays);
+        throw new UnknownServiceException(sb2.toString());
+    }
+
+    public final boolean b(IOException e10) {
+        Intrinsics.checkNotNullParameter(e10, "e");
+        this.f26514d = true;
+        if (!this.f26513c || (e10 instanceof ProtocolException) || (e10 instanceof InterruptedIOException)) {
+            return false;
+        }
+        if ((!(e10 instanceof SSLHandshakeException) || !(e10.getCause() instanceof CertificateException)) && !(e10 instanceof SSLPeerUnverifiedException) && (e10 instanceof SSLException)) {
+            return true;
+        }
+        return false;
     }
 }

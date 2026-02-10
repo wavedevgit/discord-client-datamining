@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19199a;
+    private final m.b f19339a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19200b;
+    private final com.squareup.moshi.h f19340b;
 
     public ExchangeOneTimeLinkCodeResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("relationships");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19199a = a10;
+        this.f19339a = a10;
         com.squareup.moshi.h f10 = moshi.f(a0.j(Map.class, String.class, ExchangeOneTimeLinkCodeResponse.Relationship.class), x0.d(), "relationships");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19200b = f10;
+        this.f19340b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,14 +37,14 @@ public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.s
         reader.u();
         Map map = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19199a);
+            int J = reader.J(this.f19339a);
             if (J != -1) {
                 if (J == 0) {
-                    map = (Map) this.f19200b.fromJson(reader);
+                    map = (Map) this.f19340b.fromJson(reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -58,7 +58,7 @@ public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.s
         if (data != null) {
             writer.k();
             writer.J("relationships");
-            this.f19200b.toJson(writer, data.a());
+            this.f19340b.toJson(writer, data.a());
             writer.s();
             return;
         }

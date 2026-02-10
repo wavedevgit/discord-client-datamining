@@ -3,7 +3,7 @@ package net.time4j.calendar;
 import java.text.ParsePosition;
 import java.util.Locale;
 import net.time4j.a0;
-import rt.v;
+import st.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public enum p {
     MINOR_01_LICHUN_315,
@@ -45,23 +45,23 @@ public enum p {
         a() {
         }
 
-        @Override // rt.v
+        @Override // st.v
         /* renamed from: a */
         public f apply(f fVar) {
-            return p.this.k(fVar.U().b(p.i(fVar)));
+            return p.this.l(fVar.U().b(p.i(fVar)));
         }
     }
 
     private a0 d(a0 a0Var) {
         double f10 = f();
-        double c10 = qt.c.g(a0Var).c();
+        double c10 = rt.c.g(a0Var).c();
         double h10 = ((h(f10 - o(c10)) * 365.242189d) / 360.0d) + c10;
         double max = Math.max(c10, h10 - 5.0d);
         double d10 = h10 + 5.0d;
         while (true) {
             double d11 = (max + d10) / 2.0d;
             if (d10 - max < 1.0E-5d) {
-                return qt.c.f(d11).h();
+                return rt.c.f(d11).h();
             }
             if (h(o(d11) - f10) < 180.0d) {
                 d10 = d11;
@@ -102,8 +102,8 @@ public enum p {
         return fVar.U().q(fVar.V(), fVar.f0().getNumber());
     }
 
-    public static p j(a0 a0Var) {
-        return J[(((int) Math.floor(o(qt.c.g(a0Var).c()) / 15.0d)) + 3) % 24];
+    public static p k(a0 a0Var) {
+        return J[(((int) Math.floor(o(rt.c.g(a0Var).c()) / 15.0d)) + 3) % 24];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -128,7 +128,7 @@ public enum p {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static double o(double d10) {
-        return qt.e.f48221o.h(d10, "solar-longitude");
+        return rt.e.f49339o.h(d10, "solar-longitude");
     }
 
     public String e(Locale locale) {
@@ -139,7 +139,7 @@ public enum p {
         return ((ordinal() + 21) % 24) * 15;
     }
 
-    public f k(f fVar) {
+    public f l(f fVar) {
         d U = fVar.U();
         long i10 = fVar.i();
         return U.b(d(U.n(i10)).t0(U.i(i10)).f0().i());

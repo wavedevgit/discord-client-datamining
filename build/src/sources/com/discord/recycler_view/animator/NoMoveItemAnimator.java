@@ -35,7 +35,7 @@ public class NoMoveItemAnimator extends DefaultItemAnimator {
             function0.invoke();
         }
         noMoveItemAnimator.onAnimationFinishedEventPending = false;
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     private final void setActiveAnimations(int i10) {
@@ -47,7 +47,7 @@ public class NoMoveItemAnimator extends DefaultItemAnimator {
             }
         }
         if (i10 == 0 && this.activeAnimations == 1) {
-            this.onAnimationsFinishedEvents.tryEmit(Unit.f32056a);
+            this.onAnimationsFinishedEvents.tryEmit(Unit.f31765a);
         }
         this.activeAnimations = i10;
     }
@@ -67,7 +67,7 @@ public class NoMoveItemAnimator extends DefaultItemAnimator {
     @Override // androidx.recyclerview.widget.DefaultItemAnimator, androidx.recyclerview.widget.q
     public boolean animateMove(RecyclerView.ViewHolder viewHolder, int i10, int i11, int i12, int i13) {
         dispatchMoveFinished(viewHolder);
-        Unit unit = Unit.f32056a;
+        Unit unit = Unit.f31765a;
         return false;
     }
 
@@ -91,7 +91,7 @@ public class NoMoveItemAnimator extends DefaultItemAnimator {
     public NoMoveItemAnimator(Function0<Unit> function0, Function0<Unit> function02) {
         this.onAnimationsStarted = function0;
         this.onAnimationsFinished = function02;
-        this.onAnimationsFinishedEvents = new DebouncedFlow<>(250L, new Function1() { // from class: y7.a
+        this.onAnimationsFinishedEvents = new DebouncedFlow<>(250L, new Function1() { // from class: z7.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit onAnimationsFinishedEvents$lambda$0;

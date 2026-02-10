@@ -1,7 +1,7 @@
 package com.google.android.gms.internal.gtm;
 
 import android.content.SharedPreferences;
-import se.n;
+import te.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class zzfh extends zzbs {
     private SharedPreferences zza;

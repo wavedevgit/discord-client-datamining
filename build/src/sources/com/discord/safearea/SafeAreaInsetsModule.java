@@ -20,7 +20,7 @@ import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
-import qr.v;
+import rr.v;
 @Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\b\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016J\n\u0010\f\u001a\u0004\u0018\u00010\rH\u0016J\u0010\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000bH\u0016J\u0010\u0010\u0011\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000bH\u0016J\u0010\u0010\u0012\u001a\u00020\u000f2\u0006\u0010\u0013\u001a\u00020\u000bH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\u0014"}, d2 = {"Lcom/discord/safearea/SafeAreaInsetsModule;", "Lcom/discord/codegen/NativeSafeAreaInsetsModuleSpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getReactContext", "()Lcom/facebook/react/bridge/ReactApplicationContext;", "getImeInsets", "", "exludeSytemBars", "", "getStableSafeAreaInsets", "Lcom/facebook/react/bridge/WritableMap;", "setStatusBarVisible", "", ViewProps.VISIBLE, "setNavigationBarVisible", "setNavigationBarContrastEnforced", "enforced", "safe_area_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nSafeAreaInsetsModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SafeAreaInsetsModule.kt\ncom/discord/safearea/SafeAreaInsetsModule\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,112:1\n1#2:113\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -95,7 +95,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
         }
         int i11 = 0;
         if (windowInsetsCompat != null && (imeInsets$default = WindowInsetsCompatExtensionsKt.getImeInsets$default(windowInsetsCompat, false, 1, null)) != null) {
-            i10 = imeInsets$default.f3607d;
+            i10 = imeInsets$default.f3304d;
         } else {
             i10 = 0;
         }
@@ -108,7 +108,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
                 insets = WindowInsetsCompatExtensionsKt.getSystemBarInsets$default(windowInsetsCompat, currentActivity2, false, 2, null);
             }
             if (insets != null) {
-                i11 = insets.f3607d;
+                i11 = insets.f3304d;
             }
         }
         if (i11 == i10 && Build.VERSION.SDK_INT <= 29) {
@@ -130,7 +130,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
     @Override // com.discord.codegen.NativeSafeAreaInsetsModuleSpec
     public WritableMap getStableSafeAreaInsets() {
         WindowInsetsCompat windowInsetsCompat;
-        Function4 function4 = new Function4() { // from class: b8.c
+        Function4 function4 = new Function4() { // from class: c8.c
             @Override // kotlin.jvm.functions.Function4
             public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                 WritableNativeMap stableSafeAreaInsets$lambda$1;
@@ -144,12 +144,12 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
         }
         Insets displayCutoutInsets = WindowInsetsCompatExtensionsKt.getDisplayCutoutInsets(windowInsetsCompat, true);
         Insets systemBarInsets = WindowInsetsCompatExtensionsKt.getSystemBarInsets(windowInsetsCompat, currentActivity, true);
-        return (WritableMap) function4.invoke(Integer.valueOf(Math.max(displayCutoutInsets.f3604a, systemBarInsets.f3604a)), Integer.valueOf(Math.max(displayCutoutInsets.f3605b, systemBarInsets.f3605b)), Integer.valueOf(Math.max(displayCutoutInsets.f3606c, systemBarInsets.f3606c)), Integer.valueOf(Math.max(displayCutoutInsets.f3607d, systemBarInsets.f3607d)));
+        return (WritableMap) function4.invoke(Integer.valueOf(Math.max(displayCutoutInsets.f3301a, systemBarInsets.f3301a)), Integer.valueOf(Math.max(displayCutoutInsets.f3302b, systemBarInsets.f3302b)), Integer.valueOf(Math.max(displayCutoutInsets.f3303c, systemBarInsets.f3303c)), Integer.valueOf(Math.max(displayCutoutInsets.f3304d, systemBarInsets.f3304d)));
     }
 
     @Override // com.discord.codegen.NativeSafeAreaInsetsModuleSpec
     public void setNavigationBarContrastEnforced(final boolean z10) {
-        UiThreadUtil.runOnUiThread(new Runnable() { // from class: b8.a
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: c8.a
             @Override // java.lang.Runnable
             public final void run() {
                 SafeAreaInsetsModule.setNavigationBarContrastEnforced$lambda$4(SafeAreaInsetsModule.this, z10);
@@ -159,7 +159,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
 
     @Override // com.discord.codegen.NativeSafeAreaInsetsModuleSpec
     public void setNavigationBarVisible(final boolean z10) {
-        UiThreadUtil.runOnUiThread(new Runnable() { // from class: b8.d
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: c8.d
             @Override // java.lang.Runnable
             public final void run() {
                 SafeAreaInsetsModule.setNavigationBarVisible$lambda$3(SafeAreaInsetsModule.this, z10);
@@ -169,7 +169,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
 
     @Override // com.discord.codegen.NativeSafeAreaInsetsModuleSpec
     public void setStatusBarVisible(final boolean z10) {
-        UiThreadUtil.runOnUiThread(new Runnable() { // from class: b8.b
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: c8.b
             @Override // java.lang.Runnable
             public final void run() {
                 SafeAreaInsetsModule.setStatusBarVisible$lambda$2(SafeAreaInsetsModule.this, z10);

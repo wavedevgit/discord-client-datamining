@@ -25,7 +25,7 @@ public interface Included {
 
         @NotNull
         public final h.e createAdapter() {
-            zm.b e10 = zm.b.b(Included.class, "type").c(Unknown.INSTANCE).e(Font.class, "theme-variable/font");
+            an.b e10 = an.b.b(Included.class, "type").c(Unknown.INSTANCE).e(Font.class, "theme-variable/font");
             Intrinsics.checkNotNullExpressionValue(e10, "withSubtype(...)");
             return e10;
         }

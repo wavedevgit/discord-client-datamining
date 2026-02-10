@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var10;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -16,8 +16,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var3);
-    var12 = 0;
-    var6 = var5[var12];
+    var9 = 0;
+    var6 = var5[var9];
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
@@ -29,15 +29,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var11 = var3.Fonts;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
     var6 = var3.jsx;
     var _closure1_slot4 = var6;
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
-    var3 = 4;
+    var3 = 3;
     var3 = var5[var3];
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
@@ -47,57 +43,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'flexDirection': 'column'
     };
     var3.container = var8;
-    var8 = {
-        'flexDirection': 'row',
-        'alignItems': 'stretch',
-        'justifyContent': 'space-between',
-        'paddingTop': 0,
-        'paddingBottom': 0,
-        'paddingHorizontal': 0
-    };
-    var9 = 5;
-    var13 = var5[var9];
-    var13 = var10.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.BACKGROUND_BASE_LOW;
-    var8.backgroundColor = var13;
-    var3.checkboxContainer = var8;
     var8 = {};
-    var8.marginLeft = var12;
+    var8.marginLeft = var9;
     var3.checkboxText = var8;
-    var8 = {};
-    var12 = 6;
-    var12 = var5[var12];
-    var13 = var10.bind(var0)(var12);
-    var12 = var11.DISPLAY_SEMIBOLD;
-    var9 = var5[var9];
-    var9 = var10.bind(var0)(var9);
-    var9 = var9.colors;
-    var16 = var9.MOBILE_TEXT_HEADING_PRIMARY;
-    var9 = {};
-    var10 = false;
-    var9.uppercase = var10;
-    var10 = 16;
-    var18 = undefined;
-    var17 = var12;
-    var15 = var10;
-    var14 = var9;
-    var16 = var18[var13](var17, var16, var15, var14, var13);
-    var17 = var8;
-    var9 = copyDataProperties(var17, var16);
-    var9 = 'paddingBottom';
-    var8[var9] = var10;
-    var3.formHeader = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = 11;
+    var3 = 8;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_member_verification/native/components/form_fields/TermsField.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61043: for (var _fun61043_ip = 0;;) switch (_fun61043_ip) {
+        _fun60889: for (var _fun60889_ip = 0;;) switch (_fun60889_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.field;
@@ -113,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var10 = var1 != var0;
                 if (!var10) {
-                    _fun61043_ip = 67;
-                    continue _fun61043
+                    _fun60889_ip = 67;
+                    continue _fun60889
                 }
             case 64:
                 var10 = var0;
@@ -128,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot4;
                 var6 = _closure1_slot1;
                 var11 = _closure1_slot2;
-                var4 = 7;
+                var4 = 4;
                 var4 = var11[var4];
                 var6 = var6.bind(var3)(var4);
                 var4 = {};
@@ -138,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var6;
                 var9 = _closure1_slot0;
-                var8 = 8;
+                var8 = 5;
                 var5 = var11[var8];
                 var5 = var9.bind(var3)(var5);
                 var6 = var5.FormRow;
@@ -150,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = {};
                 var13.checked = var10;
                 var5.accessibilityState = var13;
-                var13 = 9;
+                var13 = 6;
                 var13 = var11[var13];
                 var13 = var9.bind(var3)(var13);
                 var14 = var13.Text;
@@ -161,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var15 = var15.checkboxText;
                 var13.style = var15;
-                var15 = 10;
+                var15 = 7;
                 var16 = var11[var15];
                 var16 = var9.bind(var3)(var16);
                 var17 = var16.intl;
@@ -200,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 483, 33, 1297, 671, 4682, 4782, 5430, 3942, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4782, 5431, 3942, 1234, 2]);

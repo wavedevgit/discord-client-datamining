@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var12 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var12;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -16,21 +16,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var3);
-    var10 = 0;
-    var6 = var5[var10];
+    var0 = 0;
+    var6 = var5[var0];
     var3 = metroImportAll;
     var0 = undefined;
     var7 = var3.bind(var0)(var6);
     var _closure1_slot3 = var7;
     var3 = 1;
     var3 = var5[var3];
-    var3 = var12.bind(var0)(var3);
+    var3 = var11.bind(var0)(var3);
     var _closure1_slot4 = var3;
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var13 = var3.DEV_WIDGET_SIZE;
-    var _closure1_slot5 = var13;
+    var12 = var3.DEV_WIDGET_SIZE;
+    var _closure1_slot5 = var12;
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
@@ -46,46 +46,34 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var8.createStyles;
     var3 = {};
     var9 = {};
-    var11 = 'absolute';
-    var9.position = var11;
+    var10 = 'absolute';
+    var9.position = var10;
     var3.widgetContainer = var9;
     var9 = {
         'backgroundColor': null,
         'justifyContent': 'center',
         'alignItems': 'center'
     };
-    var11 = 5;
-    var14 = var5[var11];
-    var14 = var12.bind(var0)(var14);
-    var14 = var14.colors;
-    var14 = var14.BACKGROUND_BRAND;
-    var9.backgroundColor = var14;
-    var9.height = var13;
-    var9.width = var13;
-    var13 = var5[var11];
-    var13 = var12.bind(var0)(var13);
-    var13 = var13.radii;
-    var13 = var13.xl;
-    var9.borderRadius = var13;
-    var13 = var5[var11];
-    var13 = var12.bind(var0)(var13);
-    var13 = var13.shadows;
-    var16 = var13.SHADOW_MOBILE_NAVIGATOR_X;
-    var17 = var9;
-    var13 = copyDataProperties(var17, var16);
+    var10 = 5;
+    var13 = var5[var10];
+    var13 = var11.bind(var0)(var13);
+    var13 = var13.colors;
+    var13 = var13.BACKGROUND_BRAND;
+    var9.backgroundColor = var13;
+    var9.height = var12;
+    var9.width = var12;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.xl;
+    var9.borderRadius = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.shadows;
+    var15 = var10.SHADOW_MOBILE_NAVIGATOR_X;
+    var16 = var9;
+    var10 = copyDataProperties(var16, var15);
     var3.widget = var9;
-    var9 = {};
-    var13 = '#fff';
-    var9.tintColor = var13;
-    var3.icon = var9;
-    var9 = {};
-    var11 = var5[var11];
-    var11 = var12.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.BACKGROUND_BASE_LOWEST;
-    var9.backgroundColor = var11;
-    var9.paddingHorizontal = var10;
-    var3.formRow = var9;
     var3 = var6.bind(var8)(var3);
     var _closure1_slot9 = var3;
     var3 = {};
@@ -109,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot14 = var3;
     var3 = function arg0() {
-        _fun100532: for (var _fun100532_ip = 0;;) switch (_fun100532_ip) {
+        _fun100510: for (var _fun100510_ip = 0;;) switch (_fun100510_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.x;
@@ -123,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var0.dragBoundsPadding;
                 var3 = undefined;
                 if (!(var20 === var3)) {
-                    _fun100532_ip = 57;
-                    continue _fun100532
+                    _fun100510_ip = 57;
+                    continue _fun100510
                 }
             case 55:
                 var20 = 0;
@@ -556,4 +544,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5314, 807, 33, 1297, 671, 3721, 5352, 13092, 4963, 4081, 4087, 4904, 11438, 11174, 13093, 11173, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5315, 807, 33, 1297, 671, 3721, 5353, 13079, 4963, 4081, 4087, 4904, 11433, 11169, 13080, 11168, 2]);

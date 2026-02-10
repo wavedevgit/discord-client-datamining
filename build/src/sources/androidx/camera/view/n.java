@@ -24,10 +24,10 @@ import x.y0;
 public final class n extends i {
 
     /* renamed from: e  reason: collision with root package name */
-    SurfaceView f2575e;
+    SurfaceView f2272e;
 
     /* renamed from: f  reason: collision with root package name */
-    final b f2576f;
+    final b f2273f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a {
@@ -41,25 +41,25 @@ public final class n extends i {
     public class b implements SurfaceHolder.Callback {
 
         /* renamed from: d  reason: collision with root package name */
-        private Size f2577d;
+        private Size f2274d;
 
         /* renamed from: e  reason: collision with root package name */
-        private w1 f2578e;
+        private w1 f2275e;
 
         /* renamed from: i  reason: collision with root package name */
-        private w1 f2579i;
+        private w1 f2276i;
 
         /* renamed from: o  reason: collision with root package name */
-        private i.a f2580o;
+        private i.a f2277o;
 
         /* renamed from: p  reason: collision with root package name */
-        private Size f2581p;
+        private Size f2278p;
 
         /* renamed from: q  reason: collision with root package name */
-        private boolean f2582q = false;
+        private boolean f2279q = false;
 
         /* renamed from: r  reason: collision with root package name */
-        private boolean f2583r = false;
+        private boolean f2280r = false;
 
         b() {
         }
@@ -72,40 +72,40 @@ public final class n extends i {
         }
 
         private boolean b() {
-            if (!this.f2582q && this.f2578e != null && Objects.equals(this.f2577d, this.f2581p)) {
+            if (!this.f2279q && this.f2275e != null && Objects.equals(this.f2274d, this.f2278p)) {
                 return true;
             }
             return false;
         }
 
         private void c() {
-            if (this.f2578e != null) {
-                y0.a("SurfaceViewImpl", "Request canceled: " + this.f2578e);
-                this.f2578e.v();
+            if (this.f2275e != null) {
+                y0.a("SurfaceViewImpl", "Request canceled: " + this.f2275e);
+                this.f2275e.v();
             }
         }
 
         private void d() {
-            if (this.f2578e != null) {
-                y0.a("SurfaceViewImpl", "Surface closed " + this.f2578e);
-                this.f2578e.m().d();
+            if (this.f2275e != null) {
+                y0.a("SurfaceViewImpl", "Surface closed " + this.f2275e);
+                this.f2275e.m().d();
             }
         }
 
         private boolean f() {
-            Surface surface = n.this.f2575e.getHolder().getSurface();
+            Surface surface = n.this.f2272e.getHolder().getSurface();
             if (b()) {
                 y0.a("SurfaceViewImpl", "Surface set on Preview.");
-                final i.a aVar = this.f2580o;
-                w1 w1Var = this.f2578e;
+                final i.a aVar = this.f2277o;
+                w1 w1Var = this.f2275e;
                 Objects.requireNonNull(w1Var);
-                w1Var.s(surface, androidx.core.content.a.h(n.this.f2575e.getContext()), new Consumer() { // from class: androidx.camera.view.o
+                w1Var.s(surface, androidx.core.content.a.h(n.this.f2272e.getContext()), new Consumer() { // from class: androidx.camera.view.o
                     @Override // androidx.core.util.Consumer
                     public final void accept(Object obj) {
                         n.b.a(i.a.this, (w1.g) obj);
                     }
                 });
-                this.f2582q = true;
+                this.f2279q = true;
                 n.this.f();
                 return true;
             }
@@ -115,26 +115,26 @@ public final class n extends i {
         /* JADX INFO: Access modifiers changed from: package-private */
         public void e(w1 w1Var, i.a aVar) {
             c();
-            if (this.f2583r) {
-                this.f2583r = false;
+            if (this.f2280r) {
+                this.f2280r = false;
                 w1Var.q();
                 return;
             }
-            this.f2578e = w1Var;
-            this.f2580o = aVar;
+            this.f2275e = w1Var;
+            this.f2277o = aVar;
             Size o10 = w1Var.o();
-            this.f2577d = o10;
-            this.f2582q = false;
+            this.f2274d = o10;
+            this.f2279q = false;
             if (!f()) {
                 y0.a("SurfaceViewImpl", "Wait for new Surface creation.");
-                n.this.f2575e.getHolder().setFixedSize(o10.getWidth(), o10.getHeight());
+                n.this.f2272e.getHolder().setFixedSize(o10.getWidth(), o10.getHeight());
             }
         }
 
         @Override // android.view.SurfaceHolder.Callback
         public void surfaceChanged(SurfaceHolder surfaceHolder, int i10, int i11, int i12) {
             y0.a("SurfaceViewImpl", "Surface changed. Size: " + i11 + "x" + i12);
-            this.f2581p = new Size(i11, i12);
+            this.f2278p = new Size(i11, i12);
             f();
         }
 
@@ -142,38 +142,38 @@ public final class n extends i {
         public void surfaceCreated(SurfaceHolder surfaceHolder) {
             w1 w1Var;
             y0.a("SurfaceViewImpl", "Surface created.");
-            if (this.f2583r && (w1Var = this.f2579i) != null) {
+            if (this.f2280r && (w1Var = this.f2276i) != null) {
                 w1Var.q();
-                this.f2579i = null;
-                this.f2583r = false;
+                this.f2276i = null;
+                this.f2280r = false;
             }
         }
 
         @Override // android.view.SurfaceHolder.Callback
         public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
             y0.a("SurfaceViewImpl", "Surface destroyed.");
-            if (this.f2582q) {
+            if (this.f2279q) {
                 d();
             } else {
                 c();
             }
-            this.f2583r = true;
-            w1 w1Var = this.f2578e;
+            this.f2280r = true;
+            w1 w1Var = this.f2275e;
             if (w1Var != null) {
-                this.f2579i = w1Var;
+                this.f2276i = w1Var;
             }
-            this.f2582q = false;
-            this.f2578e = null;
-            this.f2580o = null;
-            this.f2581p = null;
-            this.f2577d = null;
+            this.f2279q = false;
+            this.f2275e = null;
+            this.f2277o = null;
+            this.f2278p = null;
+            this.f2274d = null;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(FrameLayout frameLayout, e eVar) {
         super(frameLayout, eVar);
-        this.f2576f = new b();
+        this.f2273f = new b();
     }
 
     public static /* synthetic */ void k(Semaphore semaphore, int i10) {
@@ -195,18 +195,18 @@ public final class n extends i {
 
     @Override // androidx.camera.view.i
     View b() {
-        return this.f2575e;
+        return this.f2272e;
     }
 
     @Override // androidx.camera.view.i
     Bitmap c() {
-        SurfaceView surfaceView = this.f2575e;
-        if (surfaceView != null && surfaceView.getHolder().getSurface() != null && this.f2575e.getHolder().getSurface().isValid()) {
+        SurfaceView surfaceView = this.f2272e;
+        if (surfaceView != null && surfaceView.getHolder().getSurface() != null && this.f2272e.getHolder().getSurface().isValid()) {
             final Semaphore semaphore = new Semaphore(0);
-            Bitmap createBitmap = Bitmap.createBitmap(this.f2575e.getWidth(), this.f2575e.getHeight(), Bitmap.Config.ARGB_8888);
+            Bitmap createBitmap = Bitmap.createBitmap(this.f2272e.getWidth(), this.f2272e.getHeight(), Bitmap.Config.ARGB_8888);
             HandlerThread handlerThread = new HandlerThread("pixelCopyRequest Thread");
             handlerThread.start();
-            a.a(this.f2575e, createBitmap, new PixelCopy.OnPixelCopyFinishedListener() { // from class: androidx.camera.view.m
+            a.a(this.f2272e, createBitmap, new PixelCopy.OnPixelCopyFinishedListener() { // from class: androidx.camera.view.m
                 @Override // android.view.PixelCopy.OnPixelCopyFinishedListener
                 public final void onPixelCopyFinished(int i10) {
                     n.k(semaphore, i10);
@@ -240,22 +240,22 @@ public final class n extends i {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // androidx.camera.view.i
     public void g(final w1 w1Var, final i.a aVar) {
-        if (!m(this.f2575e, this.f2561a, w1Var)) {
-            this.f2561a = w1Var.o();
+        if (!m(this.f2272e, this.f2258a, w1Var)) {
+            this.f2258a = w1Var.o();
             l();
         }
         if (aVar != null) {
-            w1Var.j(androidx.core.content.a.h(this.f2575e.getContext()), new Runnable() { // from class: androidx.camera.view.k
+            w1Var.j(androidx.core.content.a.h(this.f2272e.getContext()), new Runnable() { // from class: androidx.camera.view.k
                 @Override // java.lang.Runnable
                 public final void run() {
                     i.a.this.a();
                 }
             });
         }
-        this.f2575e.post(new Runnable() { // from class: androidx.camera.view.l
+        this.f2272e.post(new Runnable() { // from class: androidx.camera.view.l
             @Override // java.lang.Runnable
             public final void run() {
-                n.this.f2576f.e(w1Var, aVar);
+                n.this.f2273f.e(w1Var, aVar);
             }
         });
     }
@@ -267,13 +267,13 @@ public final class n extends i {
     }
 
     void l() {
-        b2.e.g(this.f2562b);
-        b2.e.g(this.f2561a);
-        SurfaceView surfaceView = new SurfaceView(this.f2562b.getContext());
-        this.f2575e = surfaceView;
-        surfaceView.setLayoutParams(new FrameLayout.LayoutParams(this.f2561a.getWidth(), this.f2561a.getHeight()));
-        this.f2562b.removeAllViews();
-        this.f2562b.addView(this.f2575e);
-        this.f2575e.getHolder().addCallback(this.f2576f);
+        b2.e.g(this.f2259b);
+        b2.e.g(this.f2258a);
+        SurfaceView surfaceView = new SurfaceView(this.f2259b.getContext());
+        this.f2272e = surfaceView;
+        surfaceView.setLayoutParams(new FrameLayout.LayoutParams(this.f2258a.getWidth(), this.f2258a.getHeight()));
+        this.f2259b.removeAllViews();
+        this.f2259b.addView(this.f2272e);
+        this.f2272e.getHolder().addCallback(this.f2273f);
     }
 }

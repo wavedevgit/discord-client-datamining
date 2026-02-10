@@ -18,26 +18,26 @@ import android.widget.ProgressBar;
 import androidx.core.app.NotificationCompat;
 import androidx.fragment.app.FragmentActivity;
 import com.google.android.gms.common.api.GoogleApiActivity;
-import ff.k0;
-import ff.l0;
-import gf.e0;
+import gf.k0;
+import gf.l0;
+import hf.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class f extends g {
 
     /* renamed from: c  reason: collision with root package name */
-    private String f13774c;
+    private String f13914c;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Object f13772e = new Object();
+    private static final Object f13912e = new Object();
 
     /* renamed from: f  reason: collision with root package name */
-    private static final f f13773f = new f();
+    private static final f f13913f = new f();
 
     /* renamed from: d  reason: collision with root package name */
-    public static final int f13771d = g.f13775a;
+    public static final int f13911d = g.f13915a;
 
     public static f n() {
-        return f13773f;
+        return f13913f;
     }
 
     @Override // com.google.android.gms.common.g
@@ -108,18 +108,18 @@ public class f extends g {
         if (builder == null) {
             builder = new AlertDialog.Builder(context);
         }
-        builder.setMessage(gf.b0.c(context, i10));
+        builder.setMessage(hf.b0.c(context, i10));
         if (onCancelListener != null) {
             builder.setOnCancelListener(onCancelListener);
         }
-        String b10 = gf.b0.b(context, i10);
+        String b10 = hf.b0.b(context, i10);
         if (b10 != null) {
             if (e0Var == null) {
                 e0Var = onClickListener;
             }
             builder.setPositiveButton(b10, e0Var);
         }
-        String f10 = gf.b0.f(context, i10);
+        String f10 = hf.b0.f(context, i10);
         if (f10 != null) {
             builder.setTitle(f10);
         }
@@ -133,7 +133,7 @@ public class f extends g {
         progressBar.setVisibility(0);
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setView(progressBar);
-        builder.setMessage(gf.b0.c(activity, 18));
+        builder.setMessage(hf.b0.c(activity, 18));
         builder.setPositiveButton("", (DialogInterface.OnClickListener) null);
         AlertDialog create = builder.create();
         t(activity, create, "GooglePlayServicesUpdatingDialog", onCancelListener);
@@ -144,7 +144,7 @@ public class f extends g {
         IntentFilter intentFilter = new IntentFilter("android.intent.action.PACKAGE_ADDED");
         intentFilter.addDataScheme("package");
         l0 l0Var = new l0(k0Var);
-        fg.f.q(context, l0Var, intentFilter);
+        gg.f.q(context, l0Var, intentFilter);
         l0Var.a(context);
         if (!i(context, "com.google.android.gms")) {
             k0Var.a();
@@ -176,31 +176,31 @@ public class f extends g {
                 Log.w("GoogleApiAvailability", "Missing resolution for ConnectionResult.RESOLUTION_REQUIRED. Call GoogleApiAvailability#showErrorNotification(Context, ConnectionResult) instead.");
             }
         } else {
-            String e10 = gf.b0.e(context, i10);
-            String d10 = gf.b0.d(context, i10);
+            String e10 = hf.b0.e(context, i10);
+            String d10 = hf.b0.d(context, i10);
             Resources resources = context.getResources();
-            NotificationManager notificationManager = (NotificationManager) gf.q.l(context.getSystemService("notification"));
+            NotificationManager notificationManager = (NotificationManager) hf.q.l(context.getSystemService("notification"));
             NotificationCompat.Builder Z = new NotificationCompat.Builder(context).H(true).m(true).x(e10).Z(new NotificationCompat.f().o(d10));
             if (com.google.android.gms.common.util.g.c(context)) {
-                gf.q.n(com.google.android.gms.common.util.k.b());
+                hf.q.n(com.google.android.gms.common.util.k.b());
                 Z.U(context.getApplicationInfo().icon).M(2);
                 if (com.google.android.gms.common.util.g.d(context)) {
-                    Z.a(cf.a.f7418a, resources.getString(cf.b.f7433o), pendingIntent);
+                    Z.a(df.a.f20697a, resources.getString(df.b.f20712o), pendingIntent);
                 } else {
                     Z.v(pendingIntent);
                 }
             } else {
-                Z.U(17301642).b0(resources.getString(cf.b.f7426h)).g0(System.currentTimeMillis()).v(pendingIntent).w(d10);
+                Z.U(17301642).b0(resources.getString(df.b.f20705h)).g0(System.currentTimeMillis()).v(pendingIntent).w(d10);
             }
             if (com.google.android.gms.common.util.k.e()) {
-                gf.q.n(com.google.android.gms.common.util.k.e());
-                synchronized (f13772e) {
-                    str2 = this.f13774c;
+                hf.q.n(com.google.android.gms.common.util.k.e());
+                synchronized (f13912e) {
+                    str2 = this.f13914c;
                 }
                 if (str2 == null) {
                     str2 = "com.google.android.gms.availability";
                     NotificationChannel notificationChannel = notificationManager.getNotificationChannel("com.google.android.gms.availability");
-                    String string = context.getResources().getString(cf.b.f7425g);
+                    String string = context.getResources().getString(df.b.f20704g);
                     if (notificationChannel == null) {
                         notificationManager.createNotificationChannel(e.a("com.google.android.gms.availability", string, 4));
                     } else if (!string.contentEquals(notificationChannel.getName())) {
@@ -214,7 +214,7 @@ public class f extends g {
             if (i10 != 1 && i10 != 2 && i10 != 3) {
                 i11 = 39789;
             } else {
-                k.f13781b.set(false);
+                k.f13921b.set(false);
                 i11 = 10436;
             }
             notificationManager.notify(i11, g10);
@@ -225,7 +225,7 @@ public class f extends g {
         new p(this, context).sendEmptyMessageDelayed(1, 120000L);
     }
 
-    public final boolean w(Activity activity, ff.h hVar, int i10, int i11, DialogInterface.OnCancelListener onCancelListener) {
+    public final boolean w(Activity activity, gf.h hVar, int i10, int i11, DialogInterface.OnCancelListener onCancelListener) {
         Dialog q10 = q(activity, i10, e0.c(hVar, b(activity, i10, "d"), 2), onCancelListener, null);
         if (q10 == null) {
             return false;
@@ -236,10 +236,10 @@ public class f extends g {
 
     public final boolean x(Context context, b bVar, int i10) {
         PendingIntent m10;
-        if (pf.a.a(context) || (m10 = m(context, bVar)) == null) {
+        if (qf.a.a(context) || (m10 = m(context, bVar)) == null) {
             return false;
         }
-        u(context, bVar.c(), null, PendingIntent.getActivity(context, 0, GoogleApiActivity.a(context, m10, i10, true), fg.g.f23312a | 134217728));
+        u(context, bVar.c(), null, PendingIntent.getActivity(context, 0, GoogleApiActivity.a(context, m10, i10, true), gg.g.f24397a | 134217728));
         return true;
     }
 }

@@ -4,27 +4,27 @@ import android.os.Bundle;
 import android.os.IInterface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface k6 extends IInterface {
-    Bundle J(int i10, String str, String str2, String str3, String str4, Bundle bundle);
+    void C0(int i10, String str, Bundle bundle, h6 h6Var);
 
-    int R0(int i10, String str, String str2, Bundle bundle);
+    Bundle N(int i10, String str, String str2, String str3, String str4, Bundle bundle);
 
-    Bundle U0(int i10, String str, String str2, Bundle bundle);
+    int Q0(int i10, String str, String str2, Bundle bundle);
+
+    Bundle T0(int i10, String str, String str2, Bundle bundle);
 
     Bundle X(int i10, String str, String str2, String str3, Bundle bundle);
 
     Bundle g0(int i10, String str, String str2, Bundle bundle, Bundle bundle2);
 
-    Bundle h0(int i10, String str, String str2, Bundle bundle);
+    Bundle i0(int i10, String str, String str2, Bundle bundle);
 
-    int l(int i10, String str, String str2);
+    int m(int i10, String str, String str2);
 
-    int l0(int i10, String str, String str2);
+    int m0(int i10, String str, String str2);
 
-    Bundle n0(int i10, String str, String str2, String str3, Bundle bundle);
+    Bundle o0(int i10, String str, String str2, String str3, Bundle bundle);
 
-    Bundle t0(int i10, String str, String str2, String str3, String str4);
+    Bundle v0(int i10, String str, String str2, String str3, String str4);
 
-    Bundle v(int i10, String str, String str2, String str3);
-
-    void z0(int i10, String str, Bundle bundle, h6 h6Var);
+    Bundle z(int i10, String str, String str2, String str3);
 }

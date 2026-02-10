@@ -35,17 +35,17 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_PageLimi
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0 && (num = (Integer) this.intAdapter.fromJson(mVar)) == null) {
-                throw an.c.x("pageLimit", "page_limit", mVar);
+                throw bn.c.x("pageLimit", "page_limit", mVar);
             }
         }
         mVar.D();
         if (num != null) {
             return new GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError.Details(num.intValue());
         }
-        throw an.c.o("pageLimit", "page_limit", mVar);
+        throw bn.c.o("pageLimit", "page_limit", mVar);
     }
 
     @Override // com.squareup.moshi.h

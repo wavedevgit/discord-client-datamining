@@ -11,21 +11,40 @@ public interface a extends IInterface {
 
     /* renamed from: com.msc.sa.aidl.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static abstract class AbstractBinderC0200a extends Binder implements a {
+    public static abstract class AbstractBinderC0227a extends Binder implements a {
 
         /* renamed from: com.msc.sa.aidl.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        private static class C0201a implements a {
+        private static class C0228a implements a {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f17252c;
+            private IBinder f17392c;
 
-            C0201a(IBinder iBinder) {
-                this.f17252c = iBinder;
+            C0228a(IBinder iBinder) {
+                this.f17392c = iBinder;
             }
 
             @Override // com.msc.sa.aidl.a
-            public boolean K0(int i10, String str, Bundle bundle) {
+            public String A0(String str, String str2, String str3, ISACallback iSACallback) {
+                Parcel obtain = Parcel.obtain();
+                Parcel obtain2 = Parcel.obtain();
+                try {
+                    obtain.writeInterfaceToken("com.msc.sa.aidl.ISAService");
+                    obtain.writeString(str);
+                    obtain.writeString(str2);
+                    obtain.writeString(str3);
+                    obtain.writeStrongInterface(iSACallback);
+                    this.f17392c.transact(1, obtain, obtain2, 0);
+                    obtain2.readException();
+                    return obtain2.readString();
+                } finally {
+                    obtain2.recycle();
+                    obtain.recycle();
+                }
+            }
+
+            @Override // com.msc.sa.aidl.a
+            public boolean I0(int i10, String str, Bundle bundle) {
                 Parcel obtain = Parcel.obtain();
                 Parcel obtain2 = Parcel.obtain();
                 try {
@@ -34,7 +53,7 @@ public interface a extends IInterface {
                     obtain.writeString(str);
                     boolean z10 = false;
                     b.b(obtain, bundle, 0);
-                    this.f17252c.transact(6, obtain, obtain2, 0);
+                    this.f17392c.transact(6, obtain, obtain2, 0);
                     obtain2.readException();
                     if (obtain2.readInt() != 0) {
                         z10 = true;
@@ -48,26 +67,7 @@ public interface a extends IInterface {
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f17252c;
-            }
-
-            @Override // com.msc.sa.aidl.a
-            public String w0(String str, String str2, String str3, ISACallback iSACallback) {
-                Parcel obtain = Parcel.obtain();
-                Parcel obtain2 = Parcel.obtain();
-                try {
-                    obtain.writeInterfaceToken("com.msc.sa.aidl.ISAService");
-                    obtain.writeString(str);
-                    obtain.writeString(str2);
-                    obtain.writeString(str3);
-                    obtain.writeStrongInterface(iSACallback);
-                    this.f17252c.transact(1, obtain, obtain2, 0);
-                    obtain2.readException();
-                    return obtain2.readString();
-                } finally {
-                    obtain2.recycle();
-                    obtain.recycle();
-                }
+                return this.f17392c;
             }
         }
 
@@ -79,7 +79,7 @@ public interface a extends IInterface {
             if (queryLocalInterface != null && (queryLocalInterface instanceof a)) {
                 return (a) queryLocalInterface;
             }
-            return new C0201a(iBinder);
+            return new C0228a(iBinder);
         }
     }
 
@@ -96,7 +96,7 @@ public interface a extends IInterface {
         }
     }
 
-    boolean K0(int i10, String str, Bundle bundle);
+    String A0(String str, String str2, String str3, ISACallback iSACallback);
 
-    String w0(String str, String str2, String str3, ISACallback iSACallback);
+    boolean I0(int i10, String str, Bundle bundle);
 }

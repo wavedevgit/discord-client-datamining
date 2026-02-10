@@ -3,15 +3,15 @@ package net.time4j.tz;
 import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface m {
-    q a(pt.a aVar, pt.g gVar);
+    List a(qt.a aVar, qt.g gVar);
 
-    q b(pt.f fVar);
+    boolean b();
 
-    List c(pt.a aVar, pt.g gVar);
+    p c();
 
-    boolean d();
+    q d(qt.f fVar);
 
-    p e();
+    q e(qt.a aVar, qt.g gVar);
 
     boolean isEmpty();
 }

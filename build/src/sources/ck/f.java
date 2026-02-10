@@ -1,29 +1,32 @@
 package ck;
 
-import android.content.Context;
-import pg.be;
-import pg.qd;
+import android.graphics.PointF;
+import com.facebook.react.uimanager.ViewProps;
+import qg.xe;
+import qg.ye;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f extends tj.e {
+public class f {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final int f7676a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tj.i f7476b;
+    private final PointF f7677b;
 
-    public f(tj.i iVar) {
-        this.f7476b = iVar;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public f(int i10, PointF pointF) {
+        this.f7676a = i10;
+        this.f7677b = pointF;
     }
 
-    @Override // tj.e
-    protected final /* bridge */ /* synthetic */ Object a(Object obj) {
-        c bVar;
-        bk.e eVar = (bk.e) obj;
-        Context b10 = this.f7476b.b();
-        qd b11 = be.b(k.b());
-        if (!b.a(b10) && com.google.android.gms.common.g.f().a(b10) < 204500000) {
-            bVar = new n(b10, eVar, b11);
-        } else {
-            bVar = new b(b10, eVar, b11);
-        }
-        return new i(be.b(k.b()), eVar, bVar);
+    public PointF a() {
+        return this.f7677b;
+    }
+
+    public String toString() {
+        xe a10 = ye.a("FaceLandmark");
+        a10.b("type", this.f7676a);
+        a10.c(ViewProps.POSITION, this.f7677b);
+        return a10.toString();
     }
 }

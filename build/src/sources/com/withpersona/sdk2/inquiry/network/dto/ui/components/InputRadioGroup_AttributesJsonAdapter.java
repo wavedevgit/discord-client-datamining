@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import an.c;
+import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
@@ -69,8 +69,8 @@ public final class InputRadioGroup_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
             } else if (J == 1) {
@@ -107,7 +107,7 @@ public final class InputRadioGroup_AttributesJsonAdapter extends h {
         String str6 = str;
         Constructor<InputRadioGroup.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InputRadioGroup.Attributes.class.getDeclaredConstructor(String.class, String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f1164c);
+            constructor = InputRadioGroup.Attributes.class.getDeclaredConstructor(String.class, String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f7152c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

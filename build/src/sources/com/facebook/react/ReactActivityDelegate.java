@@ -80,7 +80,7 @@ public class ReactActivityDelegate {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public Context getContext() {
-        return (Context) db.a.c(this.mActivity);
+        return (Context) eb.a.c(this.mActivity);
     }
 
     public ReactContext getCurrentReactContext() {
@@ -163,7 +163,7 @@ public class ReactActivityDelegate {
     }
 
     public void onCreate(Bundle bundle) {
-        qb.a.o(0L, "ReactActivityDelegate.onCreate::init", new Runnable() { // from class: com.facebook.react.f
+        rb.a.o(0L, "ReactActivityDelegate.onCreate::init", new Runnable() { // from class: com.facebook.react.f
             @Override // java.lang.Runnable
             public final void run() {
                 ReactActivityDelegate.this.lambda$onCreate$0();

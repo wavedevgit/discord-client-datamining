@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun45089: for (var _fun45089_ip = 0;;) switch (_fun45089_ip) {
+        _fun45082: for (var _fun45082_ip = 0;;) switch (_fun45082_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45089_ip = 74;
-                continue _fun45089;
+                _fun45082_ip = 74;
+                continue _fun45082;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -82,14 +82,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
         var0 = function arg0, arg1() {
-            _fun45093: for (var _fun45093_ip = 0;;) switch (_fun45093_ip) {
+            _fun45086: for (var _fun45086_ip = 0;;) switch (_fun45086_ip) {
                 case 0:
                     var4 = arg0;
                     var0 = arg1;
                     var1 = undefined;
                     if (!(var1 !== var0)) {
-                        _fun45093_ip = 58;
-                        continue _fun45093
+                        _fun45086_ip = 58;
+                        continue _fun45086
                     }
                 case 12:
                     var3 = {};
@@ -101,8 +101,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.translationY;
                     var0 = var1 - var0;
                     var3.changeY = var0;
-                    _fun45093_ip = 85;
-                    continue _fun45093;
+                    _fun45086_ip = 85;
+                    continue _fun45086;
                 case 58:
                     var0 = {};
                     var1 = var4.translationX;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.ContinousBaseGesture;
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun45095: for (var _fun45095_ip = 0;;) switch (_fun45095_ip) {
+            _fun45088: for (var _fun45088_ip = 0;;) switch (_fun45088_ip) {
                 case 0:
                     var3 = this;
                     var0 = _closure1_slot0;
@@ -149,14 +149,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun45095_ip = 62;
-                        continue _fun45095
+                        _fun45088_ip = 62;
+                        continue _fun45088
                     }
                 case 49:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var2);
-                    _fun45095_ip = 100;
-                    continue _fun45095;
+                    _fun45088_ip = 100;
+                    continue _fun45088;
                 case 62:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = 'activeOffsetY';
         var4.key = var0;
         var0 = function arg0() {
-            _fun45096: for (var _fun45096_ip = 0;;) switch (_fun45096_ip) {
+            _fun45089: for (var _fun45089_ip = 0;;) switch (_fun45089_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = this;
@@ -195,24 +195,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var1.bind(var2)(var3);
                     var1 = 0;
                     if (var2) {
-                        _fun45096_ip = 59;
-                        continue _fun45096
+                        _fun45089_ip = 59;
+                        continue _fun45089
                     }
                 case 29:
                     if (!(!(var3 < var1))) {
-                        _fun45096_ip = 46;
-                        continue _fun45096
+                        _fun45089_ip = 46;
+                        continue _fun45089
                     }
                 case 33:
                     var2 = var0.config;
                     var2.activeOffsetYEnd = var3;
-                    _fun45096_ip = 92;
-                    continue _fun45096;
+                    _fun45089_ip = 92;
+                    continue _fun45089;
                 case 46:
                     var2 = var0.config;
                     var2.activeOffsetYStart = var3;
-                    _fun45096_ip = 92;
-                    continue _fun45096;
+                    _fun45089_ip = 92;
+                    continue _fun45089;
                 case 59:
                     var2 = var0.config;
                     var1 = var3[var1];
@@ -232,7 +232,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'activeOffsetX';
         var4.key = var6;
         var6 = function arg0() {
-            _fun45097: for (var _fun45097_ip = 0;;) switch (_fun45097_ip) {
+            _fun45090: for (var _fun45090_ip = 0;;) switch (_fun45090_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = this;
@@ -242,24 +242,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var1.bind(var2)(var3);
                     var1 = 0;
                     if (var2) {
-                        _fun45097_ip = 59;
-                        continue _fun45097
+                        _fun45090_ip = 59;
+                        continue _fun45090
                     }
                 case 29:
                     if (!(!(var3 < var1))) {
-                        _fun45097_ip = 46;
-                        continue _fun45097
+                        _fun45090_ip = 46;
+                        continue _fun45090
                     }
                 case 33:
                     var2 = var0.config;
                     var2.activeOffsetXEnd = var3;
-                    _fun45097_ip = 92;
-                    continue _fun45097;
+                    _fun45090_ip = 92;
+                    continue _fun45090;
                 case 46:
                     var2 = var0.config;
                     var2.activeOffsetXStart = var3;
-                    _fun45097_ip = 92;
-                    continue _fun45097;
+                    _fun45090_ip = 92;
+                    continue _fun45090;
                 case 59:
                     var2 = var0.config;
                     var1 = var3[var1];
@@ -278,7 +278,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'failOffsetY';
         var4.key = var6;
         var6 = function arg0() {
-            _fun45098: for (var _fun45098_ip = 0;;) switch (_fun45098_ip) {
+            _fun45091: for (var _fun45091_ip = 0;;) switch (_fun45091_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = this;
@@ -288,24 +288,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var1.bind(var2)(var3);
                     var1 = 0;
                     if (var2) {
-                        _fun45098_ip = 59;
-                        continue _fun45098
+                        _fun45091_ip = 59;
+                        continue _fun45091
                     }
                 case 29:
                     if (!(!(var3 < var1))) {
-                        _fun45098_ip = 46;
-                        continue _fun45098
+                        _fun45091_ip = 46;
+                        continue _fun45091
                     }
                 case 33:
                     var2 = var0.config;
                     var2.failOffsetYEnd = var3;
-                    _fun45098_ip = 92;
-                    continue _fun45098;
+                    _fun45091_ip = 92;
+                    continue _fun45091;
                 case 46:
                     var2 = var0.config;
                     var2.failOffsetYStart = var3;
-                    _fun45098_ip = 92;
-                    continue _fun45098;
+                    _fun45091_ip = 92;
+                    continue _fun45091;
                 case 59:
                     var2 = var0.config;
                     var1 = var3[var1];
@@ -324,7 +324,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'failOffsetX';
         var4.key = var6;
         var6 = function arg0() {
-            _fun45099: for (var _fun45099_ip = 0;;) switch (_fun45099_ip) {
+            _fun45092: for (var _fun45092_ip = 0;;) switch (_fun45092_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = this;
@@ -334,24 +334,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var1.bind(var2)(var3);
                     var1 = 0;
                     if (var2) {
-                        _fun45099_ip = 59;
-                        continue _fun45099
+                        _fun45092_ip = 59;
+                        continue _fun45092
                     }
                 case 29:
                     if (!(!(var3 < var1))) {
-                        _fun45099_ip = 46;
-                        continue _fun45099
+                        _fun45092_ip = 46;
+                        continue _fun45092
                     }
                 case 33:
                     var2 = var0.config;
                     var2.failOffsetXEnd = var3;
-                    _fun45099_ip = 92;
-                    continue _fun45099;
+                    _fun45092_ip = 92;
+                    continue _fun45092;
                 case 46:
                     var2 = var0.config;
                     var2.failOffsetXStart = var3;
-                    _fun45099_ip = 92;
-                    continue _fun45099;
+                    _fun45092_ip = 92;
+                    continue _fun45092;
                 case 59:
                     var2 = var0.config;
                     var1 = var3[var1];
@@ -484,7 +484,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1.changeEventCalculator = var0;
             var9 = _closure2_slot0;
             var3 = function arg0, arg1, arg2, arg3() {
-                _fun45110: for (var _fun45110_ip = 0;;) switch (_fun45110_ip) {
+                _fun45103: for (var _fun45103_ip = 0;;) switch (_fun45103_ip) {
                     case 0:
                         var4 = arg0;
                         var6 = arg2;
@@ -496,8 +496,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var7 = var0 & var2;
                         var0 = var4;
                         if (!var7) {
-                            _fun45110_ip = 44;
-                            continue _fun45110
+                            _fun45103_ip = 44;
+                            continue _fun45103
                         }
                     case 39:
                         var0 = var4.prototype;
@@ -511,16 +511,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var0 & var2;
                         var0 = var4;
                         if (!var2) {
-                            _fun45110_ip = 98;
-                            continue _fun45110
+                            _fun45103_ip = 98;
+                            continue _fun45103
                         }
                     case 79:
                         var3 = 'function';
                         var2 = typeof var4;
                         var0 = var4;
                         if (!(var3 === var2)) {
-                            _fun45110_ip = 98;
-                            continue _fun45110
+                            _fun45103_ip = 98;
+                            continue _fun45103
                         }
                     case 93:
                         var0 = function(arg0) { // Environment: var1

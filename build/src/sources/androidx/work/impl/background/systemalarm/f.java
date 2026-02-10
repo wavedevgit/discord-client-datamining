@@ -17,79 +17,79 @@ import q4.z;
 public class f implements m4.d, z.a {
 
     /* renamed from: z */
-    private static final String f5999z = m.i("DelayMetCommandHandler");
+    private static final String f5696z = m.i("DelayMetCommandHandler");
 
     /* renamed from: d */
-    private final Context f6000d;
+    private final Context f5697d;
 
     /* renamed from: e */
-    private final int f6001e;
+    private final int f5698e;
 
     /* renamed from: i */
-    private final p4.m f6002i;
+    private final p4.m f5699i;
 
     /* renamed from: o */
-    private final g f6003o;
+    private final g f5700o;
 
     /* renamed from: p */
-    private final m4.e f6004p;
+    private final m4.e f5701p;
 
     /* renamed from: q */
-    private final Object f6005q;
+    private final Object f5702q;
 
     /* renamed from: r */
-    private int f6006r;
+    private int f5703r;
 
     /* renamed from: s */
-    private final Executor f6007s;
+    private final Executor f5704s;
 
     /* renamed from: t */
-    private final Executor f6008t;
+    private final Executor f5705t;
 
     /* renamed from: u */
-    private PowerManager.WakeLock f6009u;
+    private PowerManager.WakeLock f5706u;
 
     /* renamed from: v */
-    private boolean f6010v;
+    private boolean f5707v;
 
     /* renamed from: w */
-    private final a0 f6011w;
+    private final a0 f5708w;
 
     /* renamed from: x */
-    private final CoroutineDispatcher f6012x;
+    private final CoroutineDispatcher f5709x;
 
     /* renamed from: y */
-    private volatile Job f6013y;
+    private volatile Job f5710y;
 
     public f(Context context, int i10, g gVar, a0 a0Var) {
-        this.f6000d = context;
-        this.f6001e = i10;
-        this.f6003o = gVar;
-        this.f6002i = a0Var.a();
-        this.f6011w = a0Var;
+        this.f5697d = context;
+        this.f5698e = i10;
+        this.f5700o = gVar;
+        this.f5699i = a0Var.a();
+        this.f5708w = a0Var;
         n o10 = gVar.g().o();
-        this.f6007s = gVar.f().c();
-        this.f6008t = gVar.f().a();
-        this.f6012x = gVar.f().b();
-        this.f6004p = new m4.e(o10);
-        this.f6010v = false;
-        this.f6006r = 0;
-        this.f6005q = new Object();
+        this.f5704s = gVar.f().c();
+        this.f5705t = gVar.f().a();
+        this.f5709x = gVar.f().b();
+        this.f5701p = new m4.e(o10);
+        this.f5707v = false;
+        this.f5703r = 0;
+        this.f5702q = new Object();
     }
 
     private void e() {
-        synchronized (this.f6005q) {
+        synchronized (this.f5702q) {
             try {
-                if (this.f6013y != null) {
-                    this.f6013y.k(null);
+                if (this.f5710y != null) {
+                    this.f5710y.k(null);
                 }
-                this.f6003o.h().b(this.f6002i);
-                PowerManager.WakeLock wakeLock = this.f6009u;
+                this.f5700o.h().b(this.f5699i);
+                PowerManager.WakeLock wakeLock = this.f5706u;
                 if (wakeLock != null && wakeLock.isHeld()) {
                     m e10 = m.e();
-                    String str = f5999z;
-                    e10.a(str, "Releasing wakelock " + this.f6009u + "for WorkSpec " + this.f6002i);
-                    this.f6009u.release();
+                    String str = f5696z;
+                    e10.a(str, "Releasing wakelock " + this.f5706u + "for WorkSpec " + this.f5699i);
+                    this.f5706u.release();
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -98,13 +98,13 @@ public class f implements m4.d, z.a {
     }
 
     public void h() {
-        if (this.f6006r == 0) {
-            this.f6006r = 1;
+        if (this.f5703r == 0) {
+            this.f5703r = 1;
             m e10 = m.e();
-            String str = f5999z;
-            e10.a(str, "onAllConstraintsMet for " + this.f6002i);
-            if (this.f6003o.e().o(this.f6011w)) {
-                this.f6003o.h().a(this.f6002i, 600000L, this);
+            String str = f5696z;
+            e10.a(str, "onAllConstraintsMet for " + this.f5699i);
+            if (this.f5700o.e().o(this.f5708w)) {
+                this.f5700o.h().a(this.f5699i, 600000L, this);
                 return;
             } else {
                 e();
@@ -112,22 +112,22 @@ public class f implements m4.d, z.a {
             }
         }
         m e11 = m.e();
-        String str2 = f5999z;
-        e11.a(str2, "Already started work for " + this.f6002i);
+        String str2 = f5696z;
+        e11.a(str2, "Already started work for " + this.f5699i);
     }
 
     public void i() {
-        String b10 = this.f6002i.b();
-        if (this.f6006r < 2) {
-            this.f6006r = 2;
+        String b10 = this.f5699i.b();
+        if (this.f5703r < 2) {
+            this.f5703r = 2;
             m e10 = m.e();
-            String str = f5999z;
+            String str = f5696z;
             e10.a(str, "Stopping work for WorkSpec " + b10);
-            this.f6008t.execute(new g.b(this.f6003o, b.f(this.f6000d, this.f6002i), this.f6001e));
-            if (this.f6003o.e().k(this.f6002i.b())) {
+            this.f5705t.execute(new g.b(this.f5700o, b.f(this.f5697d, this.f5699i), this.f5698e));
+            if (this.f5700o.e().k(this.f5699i.b())) {
                 m e11 = m.e();
                 e11.a(str, "WorkSpec " + b10 + " needs to be rescheduled");
-                this.f6008t.execute(new g.b(this.f6003o, b.e(this.f6000d, this.f6002i), this.f6001e));
+                this.f5705t.execute(new g.b(this.f5700o, b.e(this.f5697d, this.f5699i), this.f5698e));
                 return;
             }
             m e12 = m.e();
@@ -135,61 +135,61 @@ public class f implements m4.d, z.a {
             return;
         }
         m e13 = m.e();
-        String str2 = f5999z;
+        String str2 = f5696z;
         e13.a(str2, "Already stopped work for " + b10);
     }
 
     @Override // m4.d
     public void a(u uVar, m4.b bVar) {
         if (bVar instanceof b.a) {
-            this.f6007s.execute(new e(this));
+            this.f5704s.execute(new e(this));
         } else {
-            this.f6007s.execute(new d(this));
+            this.f5704s.execute(new d(this));
         }
     }
 
     @Override // q4.z.a
     public void b(p4.m mVar) {
         m e10 = m.e();
-        String str = f5999z;
+        String str = f5696z;
         e10.a(str, "Exceeded time limits on execution for " + mVar);
-        this.f6007s.execute(new d(this));
+        this.f5704s.execute(new d(this));
     }
 
     public void f() {
-        String b10 = this.f6002i.b();
-        Context context = this.f6000d;
-        this.f6009u = t.b(context, b10 + " (" + this.f6001e + ")");
+        String b10 = this.f5699i.b();
+        Context context = this.f5697d;
+        this.f5706u = t.b(context, b10 + " (" + this.f5698e + ")");
         m e10 = m.e();
-        String str = f5999z;
-        e10.a(str, "Acquiring wakelock " + this.f6009u + "for WorkSpec " + b10);
-        this.f6009u.acquire();
-        u i10 = this.f6003o.g().p().H().i(b10);
+        String str = f5696z;
+        e10.a(str, "Acquiring wakelock " + this.f5706u + "for WorkSpec " + b10);
+        this.f5706u.acquire();
+        u i10 = this.f5700o.g().p().H().i(b10);
         if (i10 == null) {
-            this.f6007s.execute(new d(this));
+            this.f5704s.execute(new d(this));
             return;
         }
         boolean k10 = i10.k();
-        this.f6010v = k10;
+        this.f5707v = k10;
         if (!k10) {
             m e11 = m.e();
             e11.a(str, "No constraints for " + b10);
-            this.f6007s.execute(new e(this));
+            this.f5704s.execute(new e(this));
             return;
         }
-        this.f6013y = m4.f.b(this.f6004p, i10, this.f6012x, this);
+        this.f5710y = m4.f.b(this.f5701p, i10, this.f5709x, this);
     }
 
     public void g(boolean z10) {
         m e10 = m.e();
-        String str = f5999z;
-        e10.a(str, "onExecuted " + this.f6002i + ", " + z10);
+        String str = f5696z;
+        e10.a(str, "onExecuted " + this.f5699i + ", " + z10);
         e();
         if (z10) {
-            this.f6008t.execute(new g.b(this.f6003o, b.e(this.f6000d, this.f6002i), this.f6001e));
+            this.f5705t.execute(new g.b(this.f5700o, b.e(this.f5697d, this.f5699i), this.f5698e));
         }
-        if (this.f6010v) {
-            this.f6008t.execute(new g.b(this.f6003o, b.a(this.f6000d), this.f6001e));
+        if (this.f5707v) {
+            this.f5705t.execute(new g.b(this.f5700o, b.a(this.f5697d), this.f5698e));
         }
     }
 }

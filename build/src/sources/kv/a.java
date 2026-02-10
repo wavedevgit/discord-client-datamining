@@ -1,100 +1,126 @@
 package kv;
+
+import hk.j0;
+import hk.q0;
+import hk.s;
+import hk.u;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+public final class a extends s implements j0 {
+
+    /* renamed from: q  reason: collision with root package name */
+    private static final a f35444q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private static volatile q0 f35445r;
+
+    /* renamed from: p  reason: collision with root package name */
+    private u.b f35446p = s.k();
 
     /* renamed from: kv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0473a {
+    static /* synthetic */ class C0502a {
 
         /* renamed from: a  reason: collision with root package name */
-        public long f35587a;
+        static final /* synthetic */ int[] f35447a;
 
-        /* renamed from: b  reason: collision with root package name */
-        public EnumC0474a f35588b;
-
-        /* renamed from: c  reason: collision with root package name */
-        public int f35589c = -1;
-
-        /* renamed from: d  reason: collision with root package name */
-        public b f35590d = b.CRONET_SOURCE_UNSPECIFIED;
-
-        /* renamed from: e  reason: collision with root package name */
-        public Boolean f35591e;
-
-        /* renamed from: f  reason: collision with root package name */
-        public c f35592f;
-
-        /* renamed from: g  reason: collision with root package name */
-        public c f35593g;
-
-        /* renamed from: h  reason: collision with root package name */
-        public int f35594h;
-
-        /* renamed from: kv.a$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public enum EnumC0474a {
-            API,
-            IMPL
+        static {
+            int[] iArr = new int[s.d.values().length];
+            f35447a = iArr;
+            try {
+                iArr[s.d.NEW_MUTABLE_INSTANCE.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f35447a[s.d.NEW_BUILDER.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f35447a[s.d.BUILD_MESSAGE_INFO.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f35447a[s.d.GET_DEFAULT_INSTANCE.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                f35447a[s.d.GET_PARSER.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
+            try {
+                f35447a[s.d.GET_MEMOIZED_IS_INITIALIZED.ordinal()] = 6;
+            } catch (NoSuchFieldError unused6) {
+            }
+            try {
+                f35447a[s.d.SET_MEMOIZED_IS_INITIALIZED.ordinal()] = 7;
+            } catch (NoSuchFieldError unused7) {
+            }
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public enum b {
-        CRONET_SOURCE_UNSPECIFIED,
-        CRONET_SOURCE_STATICALLY_LINKED,
-        CRONET_SOURCE_PLAY_SERVICES,
-        CRONET_SOURCE_FALLBACK,
-        CRONET_SOURCE_PLATFORM,
-        CRONET_SOURCE_FAKE
+    public static final class b extends s.a implements j0 {
+        private b() {
+            super(a.f35444q);
+        }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class c {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final int f35605a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private final int f35606b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private final int f35607c;
-
-        /* renamed from: d  reason: collision with root package name */
-        private final int f35608d;
-
-        public c(String str) {
-            String[] split = str.split("\\.");
-            this.f35605a = Integer.parseInt(split[0]);
-            this.f35606b = Integer.parseInt(split[1]);
-            this.f35607c = Integer.parseInt(split[2]);
-            this.f35608d = Integer.parseInt(split[3]);
-        }
-
-        public int a() {
-            return this.f35607c;
-        }
-
-        public int b() {
-            return this.f35605a;
-        }
-
-        public int c() {
-            return this.f35606b;
-        }
-
-        public int d() {
-            return this.f35608d;
-        }
-
-        public String toString() {
-            int i10 = this.f35605a;
-            int i11 = this.f35606b;
-            int i12 = this.f35607c;
-            int i13 = this.f35608d;
-            return i10 + "." + i11 + "." + i12 + "." + i13;
-        }
+    public static final class c extends s implements j0 {
     }
 
-    public abstract void a(C0473a c0473a);
+    static {
+        a aVar = new a();
+        f35444q = aVar;
+        s.C(a.class, aVar);
+    }
+
+    private a() {
+    }
+
+    public static a H() {
+        return f35444q;
+    }
+
+    public List G() {
+        return this.f35446p;
+    }
+
+    @Override // hk.s
+    protected final Object j(s.d dVar, Object obj, Object obj2) {
+        q0 q0Var;
+        switch (C0502a.f35447a[dVar.ordinal()]) {
+            case 1:
+                return new a();
+            case 2:
+                return new b();
+            case 3:
+                return s.x(f35444q, "\u0001\u0001\u0000\u0000\b\b\u0001\u0000\u0001\u0000\b\u001b", new Object[]{"constrainedValues_", c.class});
+            case 4:
+                return f35444q;
+            case 5:
+                q0 q0Var2 = f35445r;
+                if (q0Var2 == null) {
+                    synchronized (a.class) {
+                        try {
+                            q0Var = f35445r;
+                            if (q0Var == null) {
+                                q0Var = new s.b(f35444q);
+                                f35445r = q0Var;
+                            }
+                        } catch (Throwable th2) {
+                            throw th2;
+                        }
+                    }
+                    return q0Var;
+                }
+                return q0Var2;
+            case 6:
+                return (byte) 1;
+            case 7:
+                return null;
+            default:
+                throw new UnsupportedOperationException();
+        }
+    }
 }

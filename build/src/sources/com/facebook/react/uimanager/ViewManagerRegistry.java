@@ -50,7 +50,7 @@ public final class ViewManagerRegistry implements ComponentCallbacks2 {
         while (it.hasNext()) {
             ((ViewManager) it.next()).invalidate();
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -59,7 +59,7 @@ public final class ViewManagerRegistry implements ComponentCallbacks2 {
         while (it.hasNext()) {
             ((ViewManager) it.next()).onSurfaceStopped(i10);
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -68,7 +68,7 @@ public final class ViewManagerRegistry implements ComponentCallbacks2 {
         while (it.hasNext()) {
             ((ViewManager) it.next()).trimMemory();
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @NotNull
@@ -147,7 +147,7 @@ public final class ViewManagerRegistry implements ComponentCallbacks2 {
     }
 
     @Override // android.content.ComponentCallbacks
-    @qr.c
+    @rr.c
     public void onLowMemory() {
         onTrimMemory(40);
     }

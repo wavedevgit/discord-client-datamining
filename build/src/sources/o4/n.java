@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f41522a;
+    private final h f40252a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f41523b;
+    private final c f40253b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f41524c;
+    private final h f40254c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f41525d;
+    private final h f40255d;
 
     public n(Context context, r4.b taskExecutor, h batteryChargingTracker, c batteryNotLowTracker, h networkStateTracker, h storageNotLowTracker) {
         Intrinsics.checkNotNullParameter(context, "context");
@@ -25,26 +25,26 @@ public final class n {
         Intrinsics.checkNotNullParameter(batteryNotLowTracker, "batteryNotLowTracker");
         Intrinsics.checkNotNullParameter(networkStateTracker, "networkStateTracker");
         Intrinsics.checkNotNullParameter(storageNotLowTracker, "storageNotLowTracker");
-        this.f41522a = batteryChargingTracker;
-        this.f41523b = batteryNotLowTracker;
-        this.f41524c = networkStateTracker;
-        this.f41525d = storageNotLowTracker;
+        this.f40252a = batteryChargingTracker;
+        this.f40253b = batteryNotLowTracker;
+        this.f40254c = networkStateTracker;
+        this.f40255d = storageNotLowTracker;
     }
 
     public final h a() {
-        return this.f41522a;
+        return this.f40252a;
     }
 
     public final c b() {
-        return this.f41523b;
+        return this.f40253b;
     }
 
     public final h c() {
-        return this.f41524c;
+        return this.f40254c;
     }
 
     public final h d() {
-        return this.f41525d;
+        return this.f40255d;
     }
 
     public /* synthetic */ n(Context context, r4.b bVar, h hVar, c cVar, h hVar2, h hVar3, int i10, DefaultConstructorMarker defaultConstructorMarker) {

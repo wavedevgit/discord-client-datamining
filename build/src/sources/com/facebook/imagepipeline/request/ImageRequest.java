@@ -14,9 +14,9 @@ import com.facebook.imagepipeline.core.DownsampleMode;
 import com.facebook.imagepipeline.listener.RequestListener;
 import java.io.File;
 import java.util.HashMap;
-import o8.h;
-import o8.j;
-import w8.f;
+import p8.h;
+import p8.j;
+import x8.f;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class ImageRequest {
     public static final Fn REQUEST_TO_URI_FN = new a();
@@ -63,10 +63,10 @@ public class ImageRequest {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private int f10887d;
+        private int f11027d;
 
         RequestLevel(int i10) {
-            this.f10887d = i10;
+            this.f11027d = i10;
         }
 
         public static RequestLevel a(RequestLevel requestLevel, RequestLevel requestLevel2) {
@@ -77,7 +77,7 @@ public class ImageRequest {
         }
 
         public int d() {
-            return this.f10887d;
+            return this.f11027d;
         }
     }
 
@@ -146,7 +146,7 @@ public class ImageRequest {
             return 0;
         }
         if (uri.getPath() != null && f.n(uri)) {
-            if (q8.a.c(q8.a.b(uri.getPath()))) {
+            if (r8.a.c(r8.a.b(uri.getPath()))) {
                 return 2;
             }
             return 3;
@@ -278,7 +278,7 @@ public class ImageRequest {
     public int getPreferredHeight() {
         ResizeOptions resizeOptions = this.mResizeOptions;
         if (resizeOptions != null) {
-            return resizeOptions.f10347b;
+            return resizeOptions.f10487b;
         }
         return RecyclerView.ItemAnimator.FLAG_MOVED;
     }
@@ -286,7 +286,7 @@ public class ImageRequest {
     public int getPreferredWidth() {
         ResizeOptions resizeOptions = this.mResizeOptions;
         if (resizeOptions != null) {
-            return resizeOptions.f10346a;
+            return resizeOptions.f10486a;
         }
         return RecyclerView.ItemAnimator.FLAG_MOVED;
     }
@@ -351,7 +351,7 @@ public class ImageRequest {
             } else {
                 cacheKey = null;
             }
-            int a10 = eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(eb.a.a(0, this.mCacheChoice), this.mSourceUri), Boolean.valueOf(this.mLocalThumbnailPreviewsEnabled)), this.mBytesRange), this.mRequestPriority), this.mLowestPermittedRequestLevel), Integer.valueOf(this.mCachesDisabled)), Boolean.valueOf(this.mIsDiskCacheEnabled)), Boolean.valueOf(this.mIsMemoryCacheEnabled)), this.mImageDecodeOptions), this.mDecodePrefetches), this.mResizeOptions), this.mRotationOptions), cacheKey), this.mResizingAllowedOverride), this.mDownsampleOverride), Integer.valueOf(this.mDelayMs)), Boolean.valueOf(this.mLoadThumbnailOnly));
+            int a10 = fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(fb.a.a(0, this.mCacheChoice), this.mSourceUri), Boolean.valueOf(this.mLocalThumbnailPreviewsEnabled)), this.mBytesRange), this.mRequestPriority), this.mLowestPermittedRequestLevel), Integer.valueOf(this.mCachesDisabled)), Boolean.valueOf(this.mIsDiskCacheEnabled)), Boolean.valueOf(this.mIsMemoryCacheEnabled)), this.mImageDecodeOptions), this.mDecodePrefetches), this.mResizeOptions), this.mRotationOptions), cacheKey), this.mResizingAllowedOverride), this.mDownsampleOverride), Integer.valueOf(this.mDelayMs)), Boolean.valueOf(this.mLoadThumbnailOnly));
             if (z10) {
                 this.mHashcode = a10;
             }

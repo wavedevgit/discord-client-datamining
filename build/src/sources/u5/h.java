@@ -1,190 +1,126 @@
 package u5;
 
-import android.content.Context;
-import android.util.Pair;
-import java.io.Closeable;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.zip.GZIPInputStream;
-import java.util.zip.ZipInputStream;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.Matrix;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.RectF;
+import com.airbnb.lottie.n;
 import l5.b0;
-import l5.i;
-import l5.s;
+import o5.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class h {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final g f51292a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final f f51293b;
+public class h extends b {
+    private final RectF E;
+    private final Paint F;
+    private final float[] G;
+    private final Path H;
+    private final e I;
+    private o5.a J;
+    private o5.a K;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static /* synthetic */ class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f51294a;
-
-        static {
-            int[] iArr = new int[c.values().length];
-            f51294a = iArr;
-            try {
-                iArr[c.ZIP.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                f51294a[c.GZIP.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-        }
+    public h(n nVar, e eVar) {
+        super(nVar, eVar);
+        this.E = new RectF();
+        m5.a aVar = new m5.a();
+        this.F = aVar;
+        this.G = new float[8];
+        this.H = new Path();
+        this.I = eVar;
+        aVar.setAlpha(0);
+        aVar.setStyle(Paint.Style.FILL);
+        aVar.setColor(eVar.p());
     }
 
-    public h(g gVar, f fVar) {
-        this.f51292a = gVar;
-        this.f51293b = fVar;
-    }
-
-    private i a(Context context, String str, String str2) {
-        g gVar;
-        Pair a10;
-        b0 C;
-        if (str2 == null || (gVar = this.f51292a) == null || (a10 = gVar.a(str)) == null) {
-            return null;
-        }
-        InputStream inputStream = (InputStream) a10.second;
-        int i10 = a.f51294a[((c) a10.first).ordinal()];
-        if (i10 != 1) {
-            if (i10 != 2) {
-                C = s.q(inputStream, str2);
+    @Override // u5.b, r5.f
+    public void d(Object obj, z5.c cVar) {
+        super.d(obj, cVar);
+        if (obj == b0.K) {
+            if (cVar == null) {
+                this.J = null;
             } else {
-                try {
-                    C = s.q(new GZIPInputStream(inputStream), str2);
-                } catch (IOException e10) {
-                    C = new b0((Throwable) e10);
-                }
+                this.J = new q(cVar);
             }
-        } else {
-            C = s.C(context, new ZipInputStream(inputStream), str2);
-        }
-        if (C.b() != null) {
-            return (i) C.b();
-        }
-        return null;
-    }
-
-    private b0 b(Context context, String str, String str2) {
-        b0 b0Var;
-        boolean z10;
-        x5.d.a("Fetching " + str);
-        Closeable closeable = null;
-        try {
-            try {
-                d a10 = this.f51293b.a(str);
-                if (a10.isSuccessful()) {
-                    b0Var = e(context, str, a10.x0(), a10.p0(), str2);
-                    StringBuilder sb2 = new StringBuilder();
-                    sb2.append("Completed fetch from network. Success: ");
-                    if (b0Var.b() != null) {
-                        z10 = true;
-                    } else {
-                        z10 = false;
-                    }
-                    sb2.append(z10);
-                    x5.d.a(sb2.toString());
-                } else {
-                    b0Var = new b0((Throwable) new IllegalArgumentException(a10.F1()));
-                }
-                try {
-                    a10.close();
-                    return b0Var;
-                } catch (IOException e10) {
-                    x5.d.d("LottieFetchResult close failed ", e10);
-                    return b0Var;
-                }
-            } catch (Exception e11) {
-                b0 b0Var2 = new b0((Throwable) e11);
-                if (0 != 0) {
-                    try {
-                        closeable.close();
-                    } catch (IOException e12) {
-                        x5.d.d("LottieFetchResult close failed ", e12);
-                    }
-                }
-                return b0Var2;
+        } else if (obj == b0.f35648a) {
+            if (cVar == null) {
+                this.K = null;
+                this.F.setColor(this.I.p());
+                return;
             }
-        } catch (Throwable th2) {
-            if (0 != 0) {
-                try {
-                    closeable.close();
-                } catch (IOException e13) {
-                    x5.d.d("LottieFetchResult close failed ", e13);
-                }
-            }
-            throw th2;
+            this.K = new q(cVar);
         }
     }
 
-    private b0 d(String str, InputStream inputStream, String str2) {
-        g gVar;
-        if (str2 != null && (gVar = this.f51292a) != null) {
-            return s.q(new GZIPInputStream(new FileInputStream(gVar.g(str, inputStream, c.GZIP))), str);
-        }
-        return s.q(new GZIPInputStream(inputStream), null);
+    @Override // u5.b, n5.e
+    public void f(RectF rectF, Matrix matrix, boolean z10) {
+        super.f(rectF, matrix, z10);
+        this.E.set(0.0f, 0.0f, this.I.r(), this.I.q());
+        this.f51270o.mapRect(this.E);
+        rectF.set(this.E);
     }
 
-    private b0 e(Context context, String str, InputStream inputStream, String str2, String str3) {
-        b0 g10;
-        c cVar;
-        g gVar;
-        if (str2 == null) {
-            str2 = "application/json";
-        }
-        if (!str2.contains("application/zip") && !str2.contains("application/x-zip") && !str2.contains("application/x-zip-compressed") && !str.split("\\?")[0].endsWith(".lottie")) {
-            if (!str2.contains("application/gzip") && !str2.contains("application/x-gzip") && !str.split("\\?")[0].endsWith(".tgs")) {
-                x5.d.a("Received json response.");
-                cVar = c.JSON;
-                g10 = f(str, inputStream, str3);
+    @Override // u5.b
+    public void u(Canvas canvas, Matrix matrix, int i10) {
+        Integer num;
+        int intValue;
+        int alpha = Color.alpha(this.I.p());
+        if (alpha != 0) {
+            o5.a aVar = this.K;
+            if (aVar == null) {
+                num = null;
             } else {
-                x5.d.a("Handling gzip response.");
-                cVar = c.GZIP;
-                g10 = d(str, inputStream, str3);
+                num = (Integer) aVar.h();
             }
-        } else {
-            x5.d.a("Handling zip response.");
-            c cVar2 = c.ZIP;
-            g10 = g(context, str, inputStream, str3);
-            cVar = cVar2;
+            if (num != null) {
+                this.F.setColor(num.intValue());
+            } else {
+                this.F.setColor(this.I.p());
+            }
+            if (this.f51279x.h() == null) {
+                intValue = 100;
+            } else {
+                intValue = ((Integer) this.f51279x.h().h()).intValue();
+            }
+            int i11 = (int) ((i10 / 255.0f) * (((alpha / 255.0f) * intValue) / 100.0f) * 255.0f);
+            this.F.setAlpha(i11);
+            o5.a aVar2 = this.J;
+            if (aVar2 != null) {
+                this.F.setColorFilter((ColorFilter) aVar2.h());
+            }
+            if (i11 > 0) {
+                float[] fArr = this.G;
+                fArr[0] = 0.0f;
+                fArr[1] = 0.0f;
+                fArr[2] = this.I.r();
+                float[] fArr2 = this.G;
+                fArr2[3] = 0.0f;
+                fArr2[4] = this.I.r();
+                this.G[5] = this.I.q();
+                float[] fArr3 = this.G;
+                fArr3[6] = 0.0f;
+                fArr3[7] = this.I.q();
+                matrix.mapPoints(this.G);
+                this.H.reset();
+                Path path = this.H;
+                float[] fArr4 = this.G;
+                path.moveTo(fArr4[0], fArr4[1]);
+                Path path2 = this.H;
+                float[] fArr5 = this.G;
+                path2.lineTo(fArr5[2], fArr5[3]);
+                Path path3 = this.H;
+                float[] fArr6 = this.G;
+                path3.lineTo(fArr6[4], fArr6[5]);
+                Path path4 = this.H;
+                float[] fArr7 = this.G;
+                path4.lineTo(fArr7[6], fArr7[7]);
+                Path path5 = this.H;
+                float[] fArr8 = this.G;
+                path5.lineTo(fArr8[0], fArr8[1]);
+                this.H.close();
+                canvas.drawPath(this.H, this.F);
+            }
         }
-        if (str3 != null && g10.b() != null && (gVar = this.f51292a) != null) {
-            gVar.f(str, cVar);
-        }
-        return g10;
-    }
-
-    private b0 f(String str, InputStream inputStream, String str2) {
-        g gVar;
-        if (str2 != null && (gVar = this.f51292a) != null) {
-            return s.q(new FileInputStream(gVar.g(str, inputStream, c.JSON).getAbsolutePath()), str);
-        }
-        return s.q(inputStream, null);
-    }
-
-    private b0 g(Context context, String str, InputStream inputStream, String str2) {
-        g gVar;
-        if (str2 != null && (gVar = this.f51292a) != null) {
-            return s.C(context, new ZipInputStream(new FileInputStream(gVar.g(str, inputStream, c.ZIP))), str);
-        }
-        return s.C(context, new ZipInputStream(inputStream), null);
-    }
-
-    public b0 c(Context context, String str, String str2) {
-        i a10 = a(context, str, str2);
-        if (a10 != null) {
-            return new b0(a10);
-        }
-        x5.d.a("Animation for " + str + " not found in cache. Fetching from network.");
-        return b(context, str, str2);
     }
 }

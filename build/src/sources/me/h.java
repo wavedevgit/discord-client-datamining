@@ -1,81 +1,30 @@
 package me;
-
-import java.util.Comparator;
-import java.util.TreeSet;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class h implements com.google.android.exoplayer2.upstream.cache.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final long f37125a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final TreeSet f37126b = new TreeSet(new Comparator() { // from class: me.g
-        @Override // java.util.Comparator
-        public final int compare(Object obj, Object obj2) {
-            int h10;
-            h10 = h.h((c) obj, (c) obj2);
-            return h10;
+public abstract class h {
+    public static String b(com.google.android.exoplayer2.trackselection.g gVar) {
+        boolean z10;
+        if (gVar != null) {
+            z10 = true;
+        } else {
+            z10 = false;
         }
-    });
-
-    /* renamed from: c  reason: collision with root package name */
-    private long f37127c;
-
-    public h(long j10) {
-        this.f37125a = j10;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static int h(c cVar, c cVar2) {
-        long j10 = cVar.f37119q;
-        long j11 = cVar2.f37119q;
-        if (j10 - j11 == 0) {
-            return cVar.compareTo(cVar2);
+        oe.a.a(z10);
+        int k10 = oe.c0.k(gVar.q().f11727w);
+        if (k10 == -1) {
+            k10 = oe.c0.k(gVar.q().f11726v);
         }
-        if (j10 < j11) {
-            return -1;
+        if (k10 == 1) {
+            return "a";
         }
-        return 1;
-    }
-
-    private void i(com.google.android.exoplayer2.upstream.cache.a aVar, long j10) {
-        while (this.f37127c + j10 > this.f37125a && !this.f37126b.isEmpty()) {
-            aVar.d((c) this.f37126b.first());
+        if (k10 == 2) {
+            return "v";
         }
+        return null;
     }
 
-    @Override // com.google.android.exoplayer2.upstream.cache.a.b
-    public void a(com.google.android.exoplayer2.upstream.cache.a aVar, c cVar, c cVar2) {
-        d(aVar, cVar);
-        c(aVar, cVar2);
-    }
+    public abstract oi.t a();
 
-    @Override // com.google.android.exoplayer2.upstream.cache.d
-    public boolean b() {
-        return true;
-    }
+    public abstract h c(long j10);
 
-    @Override // com.google.android.exoplayer2.upstream.cache.a.b
-    public void c(com.google.android.exoplayer2.upstream.cache.a aVar, c cVar) {
-        this.f37126b.add(cVar);
-        this.f37127c += cVar.f37116i;
-        i(aVar, 0L);
-    }
-
-    @Override // com.google.android.exoplayer2.upstream.cache.a.b
-    public void d(com.google.android.exoplayer2.upstream.cache.a aVar, c cVar) {
-        this.f37126b.remove(cVar);
-        this.f37127c -= cVar.f37116i;
-    }
-
-    @Override // com.google.android.exoplayer2.upstream.cache.d
-    public void e(com.google.android.exoplayer2.upstream.cache.a aVar, String str, long j10, long j11) {
-        if (j11 != -1) {
-            i(aVar, j11);
-        }
-    }
-
-    @Override // com.google.android.exoplayer2.upstream.cache.d
-    public void f() {
-    }
+    public abstract h d(String str);
 }

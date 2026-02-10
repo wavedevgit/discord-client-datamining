@@ -1,64 +1,18 @@
 package og;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class g1 implements yi.d {
+final class g1 extends w {
 
-    /* renamed from: a  reason: collision with root package name */
-    static final g1 f42090a = new g1();
+    /* renamed from: i  reason: collision with root package name */
+    private final i1 f40888i;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42091b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42092c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42093d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42094e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f42095f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final yi.c f42096g;
-
-    static {
-        c.b a10 = yi.c.a("errorCode");
-        f fVar = new f();
-        fVar.a(1);
-        f42091b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("isColdCall");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42092c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("imageInfo");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42093d = a12.b(fVar3.b()).a();
-        c.b a13 = yi.c.a("detectorOptions");
-        f fVar4 = new f();
-        fVar4.a(4);
-        f42094e = a13.b(fVar4.b()).a();
-        c.b a14 = yi.c.a("contourDetectedFaces");
-        f fVar5 = new f();
-        fVar5.a(5);
-        f42095f = a14.b(fVar5.b()).a();
-        c.b a15 = yi.c.a("nonContourDetectedFaces");
-        f fVar6 = new f();
-        fVar6.a(6);
-        f42096g = a15.b(fVar6.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public g1(i1 i1Var, int i10) {
+        super(i1Var.size(), i10);
+        this.f40888i = i1Var;
     }
 
-    private g1() {
-    }
-
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // og.w
+    protected final Object a(int i10) {
+        return this.f40888i.get(i10);
     }
 }

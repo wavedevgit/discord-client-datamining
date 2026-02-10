@@ -1,84 +1,41 @@
 package vd;
-
-import com.google.android.exoplayer2.Format;
-import dd.h0;
-import ne.s0;
-import tc.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements j {
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final y f52483d = new y();
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    final tc.k f52484a;
+    public final String f52221a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Format f52485b;
+    public final String f52222b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s0 f52486c;
+    public final int f52223c;
 
-    public b(tc.k kVar, Format format, s0 s0Var) {
-        this.f52484a = kVar;
-        this.f52485b = format;
-        this.f52486c = s0Var;
+    /* renamed from: d  reason: collision with root package name */
+    public final int f52224d;
+
+    public b(String str, String str2, int i10, int i11) {
+        this.f52221a = str;
+        this.f52222b = str2;
+        this.f52223c = i10;
+        this.f52224d = i11;
     }
 
-    @Override // vd.j
-    public boolean a(tc.l lVar) {
-        if (this.f52484a.d(lVar, f52483d) == 0) {
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        if (this.f52223c == bVar.f52223c && this.f52224d == bVar.f52224d && ni.j.a(this.f52221a, bVar.f52221a) && ni.j.a(this.f52222b, bVar.f52222b)) {
             return true;
         }
         return false;
     }
 
-    @Override // vd.j
-    public void b() {
-        this.f52484a.a(0L, 0L);
-    }
-
-    @Override // vd.j
-    public void c(tc.m mVar) {
-        this.f52484a.c(mVar);
-    }
-
-    @Override // vd.j
-    public boolean d() {
-        tc.k kVar = this.f52484a;
-        if (!(kVar instanceof h0) && !(kVar instanceof bd.g)) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override // vd.j
-    public boolean e() {
-        tc.k kVar = this.f52484a;
-        if (!(kVar instanceof dd.h) && !(kVar instanceof dd.b) && !(kVar instanceof dd.e) && !(kVar instanceof ad.f)) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override // vd.j
-    public j f() {
-        tc.k fVar;
-        ne.a.g(!d());
-        tc.k kVar = this.f52484a;
-        if (kVar instanceof t) {
-            fVar = new t(this.f52485b.f11578i, this.f52486c);
-        } else if (kVar instanceof dd.h) {
-            fVar = new dd.h();
-        } else if (kVar instanceof dd.b) {
-            fVar = new dd.b();
-        } else if (kVar instanceof dd.e) {
-            fVar = new dd.e();
-        } else if (kVar instanceof ad.f) {
-            fVar = new ad.f();
-        } else {
-            throw new IllegalStateException("Unexpected extractor type for recreation: " + this.f52484a.getClass().getSimpleName());
-        }
-        return new b(fVar, this.f52485b, this.f52486c);
+    public int hashCode() {
+        return ni.j.b(this.f52221a, this.f52222b, Integer.valueOf(this.f52223c), Integer.valueOf(this.f52224d));
     }
 }

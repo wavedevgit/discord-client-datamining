@@ -1,41 +1,41 @@
 package defpackage;
 
-import er.a;
+import aw.c;
+import fr.a;
 import java.util.Map;
 import kotlin.collections.o0;
-import qr.v;
+import rr.v;
 import t4.h;
-import yv.b;
-import yv.d;
-import yv.e;
-import yv.f;
-import yv.g;
-import yv.m;
-import yv.p;
-import yv.q;
-import yv.t;
-import zv.c;
+import zv.b;
+import zv.d;
+import zv.e;
+import zv.f;
+import zv.g;
+import zv.m;
+import zv.p;
+import zv.q;
+import zv.t;
 /* renamed from: i  reason: default package */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f26568a = new i();
+    public static final i f26610a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f26569b = o0.n(v.a("capitalize", b.f55684a), v.a("isBlank", d.f55687a), v.a("length", e.f55688a), v.a("lowercase", f.f55689a), v.a("replace", yv.i.f55694a), v.a("uppercase", t.f55710a), v.a("toArray", p.f55702a), v.a("decimalFormat", a.f22105a), v.a("encode", cr.a.f20013a), v.a("match", g.f55690a), v.a("compareToDate", c.f56699a), v.a("split", m.f55699a), v.a("currentTime", b.f6306a), v.a("size", t4.e.f50344a), v.a("sort", h.f50347a), v.a("distinct", t4.a.f50335a), v.a("joinToString", t4.c.f50337a), v.a("drop", c.f7133a), v.a("reverse", j.f29419a), v.a("trim", q.f55703a));
+    private static final Map f26611b = o0.n(v.a("capitalize", b.f56709a), v.a("isBlank", d.f56712a), v.a("length", e.f56713a), v.a("lowercase", f.f56714a), v.a("replace", zv.i.f56719a), v.a("uppercase", t.f56735a), v.a("toArray", p.f56727a), v.a("decimalFormat", a.f23181a), v.a("encode", dr.a.f20957a), v.a("match", g.f56715a), v.a("compareToDate", c.f6229a), v.a("split", m.f56724a), v.a("currentTime", b.f6231a), v.a("size", t4.e.f50544a), v.a("sort", h.f50547a), v.a("distinct", t4.a.f50535a), v.a("joinToString", t4.c.f50537a), v.a("drop", c.f7232a), v.a("reverse", j.f29673a), v.a("trim", q.f56728a));
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f26570c = o0.n(v.a("find", t4.b.f50336a));
+    private static final Map f26612c = o0.n(v.a("find", t4.b.f50536a));
 
     private i() {
     }
 
     public final Map a() {
-        return f26570c;
+        return f26612c;
     }
 
     public final Map b() {
-        return f26569b;
+        return f26611b;
     }
 }

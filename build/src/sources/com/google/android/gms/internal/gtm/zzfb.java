@@ -2,7 +2,7 @@ package com.google.android.gms.internal.gtm;
 
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.google.android.gms.common.util.VisibleForTesting;
-import gf.q;
+import hf.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class zzfb extends zzbs {
     private static zzfb zza;

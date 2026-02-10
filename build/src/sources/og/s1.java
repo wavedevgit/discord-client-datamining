@@ -1,50 +1,38 @@
 package og;
 
-import yi.c;
+import java.util.AbstractMap;
+import java.util.Collection;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class s1 implements yi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final s1 f42476a = new s1();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42477b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42478c;
+abstract class s1 extends AbstractMap {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42479d;
+    private transient Set f41315d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42480e;
+    private transient Collection f41316e;
 
-    static {
-        c.b a10 = yi.c.a("errorCode");
-        f fVar = new f();
-        fVar.a(1);
-        f42477b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("isColdCall");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42478c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("imageInfo");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42479d = a12.b(fVar3.b()).a();
-        c.b a13 = yi.c.a("detectorOptions");
-        f fVar4 = new f();
-        fVar4.a(4);
-        f42480e = a13.b(fVar4.b()).a();
+    abstract Set a();
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final Set entrySet() {
+        Set set = this.f41315d;
+        if (set == null) {
+            Set a10 = a();
+            this.f41315d = a10;
+            return a10;
+        }
+        return set;
     }
 
-    private s1() {
-    }
-
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // java.util.AbstractMap, java.util.Map
+    public final Collection values() {
+        Collection collection = this.f41316e;
+        if (collection == null) {
+            r1 r1Var = new r1(this);
+            this.f41316e = r1Var;
+            return r1Var;
+        }
+        return collection;
     }
 }

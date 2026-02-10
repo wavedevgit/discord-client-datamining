@@ -29,21 +29,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/changelog/openChangelog.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun113397: for (var _fun113397_ip = 0;;) switch (_fun113397_ip) {
+        _fun113377: for (var _fun113377_ip = 0;;) switch (_fun113377_ip) {
             case 0:
                 var1 = arguments[0];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun113397_ip = 11;
-                    continue _fun113397
+                    _fun113377_ip = 11;
+                    continue _fun113377
                 }
             case 9:
                 var1 = false;
             case 11:
                 var1 = !var1;
                 if (!var1) {
-                    _fun113397_ip = 50;
-                    continue _fun113397
+                    _fun113377_ip = 50;
+                    continue _fun113377
                 }
             case 17:
                 var3 = _closure1_slot0;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)();
             case 50:
                 if (var1) {
-                    _fun113397_ip = 129;
-                    continue _fun113397
+                    _fun113377_ip = 129;
+                    continue _fun113377
                 }
             case 53:
                 var4 = _closure1_slot1;
@@ -82,4 +82,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openChangelog = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1671, 3920, 4561, 11143, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1671, 3920, 4561, 11138, 1307, 2]);

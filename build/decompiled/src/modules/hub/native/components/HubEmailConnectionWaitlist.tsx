@@ -81,11 +81,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'width': '100%'
     };
     var3.redesignButton = var8;
-    var8 = {
-        'marginHorizontal': 16,
-        'flexGrow': 0
-    };
-    var3.button = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
     var3 = 13;
@@ -247,4 +242,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 1469, 5374, 1234, 10369, 4878, 3942, 4084, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 1469, 5375, 1234, 10348, 4878, 3942, 4084, 2]);

@@ -62,7 +62,7 @@ public final class ScreensModule extends NativeScreensModuleSpec {
         }
     }
 
-    @fb.a
+    @gb.a
     private final void finishTransition(Integer num, boolean z10) {
         View view;
         UiThreadUtil.assertOnUiThread();
@@ -91,7 +91,7 @@ public final class ScreensModule extends NativeScreensModuleSpec {
 
     private final native void nativeUninstall();
 
-    @fb.a
+    @gb.a
     private final int[] startTransition(Integer num) {
         View view;
         ScreenStack screenStack;
@@ -120,15 +120,15 @@ public final class ScreensModule extends NativeScreensModuleSpec {
         return new int[]{-1, -1};
     }
 
-    @fb.a
+    @gb.a
     private final void updateTransition(double d10) {
         UiThreadUtil.assertOnUiThread();
         if (this.topScreenId != -1) {
             float f10 = (float) d10;
-            short a10 = w.f18377s.a(f10);
+            short a10 = w.f18517s.a(f10);
             EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(this.reactContext, this.topScreenId);
             if (eventDispatcherForReactTag != null) {
-                eventDispatcherForReactTag.dispatchEvent(new nn.j(UIManagerHelper.getSurfaceId(this.reactContext), this.topScreenId, f10, true, true, a10));
+                eventDispatcherForReactTag.dispatchEvent(new on.j(UIManagerHelper.getSurfaceId(this.reactContext), this.topScreenId, f10, true, true, a10));
             }
         }
     }

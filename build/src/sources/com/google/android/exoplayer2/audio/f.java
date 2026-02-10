@@ -4,7 +4,7 @@ import android.media.AudioDeviceInfo;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.PlaybackParameters;
 import java.nio.ByteBuffer;
-import mc.t1;
+import nc.t1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface f {
 
@@ -12,13 +12,13 @@ public interface f {
     public static final class b extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f12127d;
+        public final int f12267d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f12128e;
+        public final boolean f12268e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final Format f12129i;
+        public final Format f12269i;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -56,9 +56,9 @@ public interface f {
                 r0.append(r5)
                 java.lang.String r5 = r0.toString()
                 r3.<init>(r5, r10)
-                r3.f12127d = r4
-                r3.f12128e = r9
-                r3.f12129i = r8
+                r3.f12267d = r4
+                r3.f12268e = r9
+                r3.f12269i = r8
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: com.google.android.exoplayer2.audio.f.b.<init>(int, int, int, int, com.google.android.exoplayer2.Format, boolean, java.lang.Exception):void");
@@ -88,15 +88,15 @@ public interface f {
     public static final class d extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        public final long f12130d;
+        public final long f12270d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final long f12131e;
+        public final long f12271e;
 
         public d(long j10, long j11) {
             super("Unexpected audio track timestamp discontinuity: expected " + j11 + ", got " + j10);
-            this.f12130d = j10;
-            this.f12131e = j11;
+            this.f12270d = j10;
+            this.f12271e = j11;
         }
     }
 
@@ -104,19 +104,19 @@ public interface f {
     public static final class e extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f12132d;
+        public final int f12272d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f12133e;
+        public final boolean f12273e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final Format f12134i;
+        public final Format f12274i;
 
         public e(int i10, Format format, boolean z10) {
             super("AudioTrack write failed: " + i10);
-            this.f12133e = z10;
-            this.f12132d = i10;
-            this.f12134i = format;
+            this.f12273e = z10;
+            this.f12272d = i10;
+            this.f12274i = format;
         }
     }
 
@@ -138,40 +138,40 @@ public interface f {
 
     void h(int i10);
 
-    void i();
+    void i(t1 t1Var);
 
-    void j(AudioAttributes audioAttributes);
+    void j();
 
-    boolean k(ByteBuffer byteBuffer, long j10, int i10);
+    void k(AudioAttributes audioAttributes);
 
-    void l(c cVar);
+    void l(oc.p pVar);
 
-    int m(Format format);
+    boolean m(ByteBuffer byteBuffer, long j10, int i10);
 
-    void n();
+    void n(c cVar);
 
-    void o();
+    int o(Format format);
 
-    long p(boolean z10);
+    void p();
 
-    void q(t1 t1Var);
+    void q();
 
-    default void r(long j10) {
-    }
+    long r(boolean z10);
 
     void release();
 
     void reset();
 
-    void s();
+    default void s(long j10) {
+    }
 
     void setPreferredDevice(AudioDeviceInfo audioDeviceInfo);
 
-    void t(float f10);
+    void t();
 
-    void u();
+    void u(float f10);
 
-    void v(nc.p pVar);
+    void v();
 
     void w(Format format, int i10, int[] iArr);
 
@@ -181,16 +181,16 @@ public interface f {
     public static final class a extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        public final Format f12126d;
+        public final Format f12266d;
 
         public a(Throwable th2, Format format) {
             super(th2);
-            this.f12126d = format;
+            this.f12266d = format;
         }
 
         public a(String str, Format format) {
             super(str);
-            this.f12126d = format;
+            this.f12266d = format;
         }
     }
 }

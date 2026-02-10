@@ -8,14 +8,14 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.util.AttributeSet;
+import ar.g;
 import com.yalantis.ucrop.task.BitmapCropTask;
 import com.yalantis.ucrop.view.b;
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
-import vq.h;
-import wq.c;
-import xq.d;
-import zq.g;
+import wq.h;
+import xq.c;
+import yq.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a extends com.yalantis.ucrop.view.b {
     private final RectF A;
@@ -34,63 +34,63 @@ public abstract class a extends com.yalantis.ucrop.view.b {
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: com.yalantis.ucrop.view.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class RunnableC0260a implements Runnable {
+    public static class RunnableC0287a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final WeakReference f19923d;
+        private final WeakReference f20063d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f19924e;
+        private final long f20064e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final long f19925i = System.currentTimeMillis();
+        private final long f20065i = System.currentTimeMillis();
 
         /* renamed from: o  reason: collision with root package name */
-        private final float f19926o;
+        private final float f20066o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final float f19927p;
+        private final float f20067p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final float f19928q;
+        private final float f20068q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final float f19929r;
+        private final float f20069r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final float f19930s;
+        private final float f20070s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final float f19931t;
+        private final float f20071t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final boolean f19932u;
+        private final boolean f20072u;
 
-        public RunnableC0260a(a aVar, long j10, float f10, float f11, float f12, float f13, float f14, float f15, boolean z10) {
-            this.f19923d = new WeakReference(aVar);
-            this.f19924e = j10;
-            this.f19926o = f10;
-            this.f19927p = f11;
-            this.f19928q = f12;
-            this.f19929r = f13;
-            this.f19930s = f14;
-            this.f19931t = f15;
-            this.f19932u = z10;
+        public RunnableC0287a(a aVar, long j10, float f10, float f11, float f12, float f13, float f14, float f15, boolean z10) {
+            this.f20063d = new WeakReference(aVar);
+            this.f20064e = j10;
+            this.f20066o = f10;
+            this.f20067p = f11;
+            this.f20068q = f12;
+            this.f20069r = f13;
+            this.f20070s = f14;
+            this.f20071t = f15;
+            this.f20072u = z10;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            a aVar = (a) this.f19923d.get();
+            a aVar = (a) this.f20063d.get();
             if (aVar != null) {
-                float min = (float) Math.min(this.f19924e, System.currentTimeMillis() - this.f19925i);
-                float b10 = zq.b.b(min, 0.0f, this.f19928q, (float) this.f19924e);
-                float b11 = zq.b.b(min, 0.0f, this.f19929r, (float) this.f19924e);
-                float a10 = zq.b.a(min, 0.0f, this.f19931t, (float) this.f19924e);
-                if (min < ((float) this.f19924e)) {
-                    float[] fArr = aVar.f19941e;
-                    aVar.m(b10 - (fArr[0] - this.f19926o), b11 - (fArr[1] - this.f19927p));
-                    if (!this.f19932u) {
-                        aVar.D(this.f19930s + a10, aVar.A.centerX(), aVar.A.centerY());
+                float min = (float) Math.min(this.f20064e, System.currentTimeMillis() - this.f20065i);
+                float b10 = ar.b.b(min, 0.0f, this.f20068q, (float) this.f20064e);
+                float b11 = ar.b.b(min, 0.0f, this.f20069r, (float) this.f20064e);
+                float a10 = ar.b.a(min, 0.0f, this.f20071t, (float) this.f20064e);
+                if (min < ((float) this.f20064e)) {
+                    float[] fArr = aVar.f20081e;
+                    aVar.m(b10 - (fArr[0] - this.f20066o), b11 - (fArr[1] - this.f20067p));
+                    if (!this.f20072u) {
+                        aVar.D(this.f20070s + a10, aVar.A.centerX(), aVar.A.centerY());
                     }
                     if (!aVar.v()) {
                         aVar.post(this);
@@ -104,45 +104,45 @@ public abstract class a extends com.yalantis.ucrop.view.b {
     private static class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final WeakReference f19933d;
+        private final WeakReference f20073d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f19934e;
+        private final long f20074e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final long f19935i = System.currentTimeMillis();
+        private final long f20075i = System.currentTimeMillis();
 
         /* renamed from: o  reason: collision with root package name */
-        private final float f19936o;
+        private final float f20076o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final float f19937p;
+        private final float f20077p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final float f19938q;
+        private final float f20078q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final float f19939r;
+        private final float f20079r;
 
         public b(a aVar, long j10, float f10, float f11, float f12, float f13) {
-            this.f19933d = new WeakReference(aVar);
-            this.f19934e = j10;
-            this.f19936o = f10;
-            this.f19937p = f11;
-            this.f19938q = f12;
-            this.f19939r = f13;
+            this.f20073d = new WeakReference(aVar);
+            this.f20074e = j10;
+            this.f20076o = f10;
+            this.f20077p = f11;
+            this.f20078q = f12;
+            this.f20079r = f13;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            a aVar = (a) this.f19933d.get();
+            a aVar = (a) this.f20073d.get();
             if (aVar == null) {
                 return;
             }
-            float min = (float) Math.min(this.f19934e, System.currentTimeMillis() - this.f19935i);
-            float a10 = zq.b.a(min, 0.0f, this.f19937p, (float) this.f19934e);
-            if (min < ((float) this.f19934e)) {
-                aVar.D(this.f19936o + a10, this.f19938q, this.f19939r);
+            float min = (float) Math.min(this.f20074e, System.currentTimeMillis() - this.f20075i);
+            float a10 = ar.b.a(min, 0.0f, this.f20077p, (float) this.f20074e);
+            if (min < ((float) this.f20074e)) {
+                aVar.D(this.f20076o + a10, this.f20078q, this.f20079r);
                 aVar.post(this);
                 return;
             }
@@ -167,16 +167,16 @@ public abstract class a extends com.yalantis.ucrop.view.b {
         float max = Math.max(this.A.width() / f10, this.A.height() / f11);
         RectF rectF = this.A;
         float f12 = ((height - (f11 * max)) / 2.0f) + rectF.top;
-        this.f19943o.reset();
-        this.f19943o.postScale(max, max);
-        this.f19943o.postTranslate(((width - (f10 * max)) / 2.0f) + rectF.left, f12);
-        setImageMatrix(this.f19943o);
+        this.f20083o.reset();
+        this.f20083o.postScale(max, max);
+        this.f20083o.postTranslate(((width - (f10 * max)) / 2.0f) + rectF.left, f12);
+        setImageMatrix(this.f20083o);
     }
 
     private float[] q() {
         this.B.reset();
         this.B.setRotate(-getCurrentAngle());
-        float[] fArr = this.f19940d;
+        float[] fArr = this.f20080d;
         float[] copyOf = Arrays.copyOf(fArr, fArr.length);
         float[] b10 = g.b(this.A);
         this.B.mapPoints(copyOf);
@@ -281,10 +281,10 @@ public abstract class a extends com.yalantis.ucrop.view.b {
             if (this.C == 0.0f) {
                 this.C = intrinsicWidth / intrinsicHeight;
             }
-            int i13 = this.f19944p;
+            int i13 = this.f20084p;
             float f10 = this.C;
             int i14 = (int) (i13 / f10);
-            int i15 = this.f19945q;
+            int i15 = this.f20085q;
             if (i14 > i15) {
                 this.A.set((i13 - ((int) (i15 * f10))) / 2, 0.0f, i11 + i12, i15);
             } else {
@@ -296,10 +296,10 @@ public abstract class a extends com.yalantis.ucrop.view.b {
             if (cVar != null) {
                 cVar.a(this.C);
             }
-            b.InterfaceC0261b interfaceC0261b = this.f19946r;
-            if (interfaceC0261b != null) {
-                interfaceC0261b.c(getCurrentScale());
-                this.f19946r.d(getCurrentAngle());
+            b.InterfaceC0288b interfaceC0288b = this.f20086r;
+            if (interfaceC0288b != null) {
+                interfaceC0288b.c(getCurrentScale());
+                this.f20086r.d(getCurrentAngle());
             }
         }
     }
@@ -327,8 +327,8 @@ public abstract class a extends com.yalantis.ucrop.view.b {
     public void setImageToWrapCropBounds(boolean z10) {
         float f10;
         float max;
-        if (this.f19950v && !v()) {
-            float[] fArr = this.f19941e;
+        if (this.f20090v && !v()) {
+            float[] fArr = this.f20081e;
             float f11 = fArr[0];
             float f12 = fArr[1];
             float currentScale = getCurrentScale();
@@ -336,7 +336,7 @@ public abstract class a extends com.yalantis.ucrop.view.b {
             float centerY = this.A.centerY() - f12;
             this.B.reset();
             this.B.setTranslate(centerX, centerY);
-            float[] fArr2 = this.f19940d;
+            float[] fArr2 = this.f20080d;
             float[] copyOf = Arrays.copyOf(fArr2, fArr2.length);
             this.B.mapPoints(copyOf);
             boolean w10 = w(copyOf);
@@ -350,15 +350,15 @@ public abstract class a extends com.yalantis.ucrop.view.b {
                 this.B.reset();
                 this.B.setRotate(getCurrentAngle());
                 this.B.mapRect(rectF);
-                float[] c10 = g.c(this.f19940d);
+                float[] c10 = g.c(this.f20080d);
                 f10 = centerX;
                 max = (Math.max(rectF.width() / c10[0], rectF.height() / c10[1]) * currentScale) - currentScale;
             }
             float f13 = centerY;
             if (z10) {
-                RunnableC0260a runnableC0260a = new RunnableC0260a(this, this.L, f11, f12, f10, f13, currentScale, max, w10);
-                this.F = runnableC0260a;
-                post(runnableC0260a);
+                RunnableC0287a runnableC0287a = new RunnableC0287a(this, this.L, f11, f12, f10, f13, currentScale, max, w10);
+                this.F = runnableC0287a;
+                post(runnableC0287a);
                 return;
             }
             m(f10, f13);
@@ -410,14 +410,14 @@ public abstract class a extends com.yalantis.ucrop.view.b {
         removeCallbacks(this.G);
     }
 
-    public void u(Bitmap.CompressFormat compressFormat, int i10, wq.a aVar) {
+    public void u(Bitmap.CompressFormat compressFormat, int i10, xq.a aVar) {
         t();
         setImageToWrapCropBounds(false);
-        new BitmapCropTask(getViewBitmap(), new d(this.A, g.d(this.f19940d), getCurrentScale(), getCurrentAngle()), new xq.b(this.J, this.K, compressFormat, i10, getImageInputPath(), getImageOutputPath(), getExifInfo()), aVar).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
+        new BitmapCropTask(getViewBitmap(), new d(this.A, g.d(this.f20080d), getCurrentScale(), getCurrentAngle()), new yq.b(this.J, this.K, compressFormat, i10, getImageInputPath(), getImageOutputPath(), getExifInfo()), aVar).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
     }
 
     protected boolean v() {
-        return w(this.f19940d);
+        return w(this.f20080d);
     }
 
     protected boolean w(float[] fArr) {
@@ -436,8 +436,8 @@ public abstract class a extends com.yalantis.ucrop.view.b {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void y(TypedArray typedArray) {
-        float abs = Math.abs(typedArray.getFloat(h.f52963f, 0.0f));
-        float abs2 = Math.abs(typedArray.getFloat(h.f52964g, 0.0f));
+        float abs = Math.abs(typedArray.getFloat(h.f53990f, 0.0f));
+        float abs2 = Math.abs(typedArray.getFloat(h.f53991g, 0.0f));
         if (abs != 0.0f && abs2 != 0.0f) {
             this.C = abs / abs2;
         } else {

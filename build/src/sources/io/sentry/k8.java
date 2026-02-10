@@ -3,56 +3,56 @@ package io.sentry;
 public class k8 {
 
     /* renamed from: a  reason: collision with root package name */
-    private j5 f28312a = null;
+    private j5 f28512a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private a4 f28313b = a4.AUTO;
+    private a4 f28513b = a4.AUTO;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f28314c = false;
+    private boolean f28514c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f28315d = false;
+    private boolean f28515d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f28316e = false;
+    private boolean f28516e = false;
 
     /* renamed from: f  reason: collision with root package name */
-    protected String f28317f = "manual";
+    protected String f28517f = "manual";
 
     public String a() {
-        return this.f28317f;
+        return this.f28517f;
     }
 
     public a4 b() {
-        return this.f28313b;
+        return this.f28513b;
     }
 
     public j5 c() {
-        return this.f28312a;
+        return this.f28512a;
     }
 
     public boolean d() {
-        return this.f28316e;
+        return this.f28516e;
     }
 
     public boolean e() {
-        return this.f28315d;
+        return this.f28515d;
     }
 
     public boolean f() {
-        return this.f28314c;
+        return this.f28514c;
     }
 
     public void g(String str) {
-        this.f28317f = str;
+        this.f28517f = str;
     }
 
     public void h(j5 j5Var) {
-        this.f28312a = j5Var;
+        this.f28512a = j5Var;
     }
 
     public void i(boolean z10) {
-        this.f28315d = z10;
+        this.f28515d = z10;
     }
 }

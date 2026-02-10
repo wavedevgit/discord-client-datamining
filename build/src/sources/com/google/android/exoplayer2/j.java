@@ -8,39 +8,39 @@ import com.reactnativecommunity.webview.RNCWebViewManager;
 import java.io.IOException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class j extends PlaybackException {
-    public static final g.a A = new g.a() { // from class: lc.h
+    public static final g.a A = new g.a() { // from class: mc.h
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             return com.google.android.exoplayer2.j.d(bundle);
         }
     };
-    private static final String B = ne.w0.B0(RNCWebViewManager.COMMAND_CLEAR_CACHE);
-    private static final String C = ne.w0.B0(RNCWebViewManager.COMMAND_CLEAR_HISTORY);
-    private static final String D = ne.w0.B0(1003);
-    private static final String E = ne.w0.B0(1004);
-    private static final String F = ne.w0.B0(1005);
-    private static final String G = ne.w0.B0(1006);
+    private static final String B = oe.w0.B0(RNCWebViewManager.COMMAND_CLEAR_CACHE);
+    private static final String C = oe.w0.B0(RNCWebViewManager.COMMAND_CLEAR_HISTORY);
+    private static final String D = oe.w0.B0(1003);
+    private static final String E = oe.w0.B0(1004);
+    private static final String F = oe.w0.B0(1005);
+    private static final String G = oe.w0.B0(1006);
 
     /* renamed from: t  reason: collision with root package name */
-    public final int f12565t;
+    public final int f12705t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final String f12566u;
+    public final String f12706u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final int f12567v;
+    public final int f12707v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final Format f12568w;
+    public final Format f12708w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final int f12569x;
+    public final int f12709x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final qd.q f12570y;
+    public final rd.q f12710y;
 
     /* renamed from: z  reason: collision with root package name */
-    final boolean f12571z;
+    final boolean f12711z;
 
     private j(int i10, Throwable th2, int i11) {
         this(i10, th2, null, i11, null, -1, null, 4, false);
@@ -79,7 +79,7 @@ public final class j extends PlaybackException {
                     str3 = "Remote error";
                 }
             } else {
-                str3 = str2 + " error, index=" + i11 + ", format=" + format + ", format_supported=" + ne.w0.a0(i12);
+                str3 = str2 + " error, index=" + i11 + ", format=" + format + ", format_supported=" + oe.w0.a0(i12);
             }
         } else {
             str3 = "Source error";
@@ -91,28 +91,28 @@ public final class j extends PlaybackException {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public j e(qd.q qVar) {
-        return new j((String) ne.w0.j(getMessage()), getCause(), this.f11830d, this.f12565t, this.f12566u, this.f12567v, this.f12568w, this.f12569x, qVar, this.f11831e, this.f12571z);
+    public j e(rd.q qVar) {
+        return new j((String) oe.w0.j(getMessage()), getCause(), this.f11970d, this.f12705t, this.f12706u, this.f12707v, this.f12708w, this.f12709x, qVar, this.f11971e, this.f12711z);
     }
 
     public Exception k() {
         boolean z10 = true;
-        if (this.f12565t != 1) {
+        if (this.f12705t != 1) {
             z10 = false;
         }
-        ne.a.g(z10);
-        return (Exception) ne.a.e(getCause());
+        oe.a.g(z10);
+        return (Exception) oe.a.e(getCause());
     }
 
     public IOException l() {
         boolean z10;
-        if (this.f12565t == 0) {
+        if (this.f12705t == 0) {
             z10 = true;
         } else {
             z10 = false;
         }
-        ne.a.g(z10);
-        return (IOException) ne.a.e(getCause());
+        oe.a.g(z10);
+        return (IOException) oe.a.e(getCause());
     }
 
     private j(int i10, Throwable th2, String str, int i11, String str2, int i12, Format format, int i13, boolean z10) {
@@ -121,27 +121,27 @@ public final class j extends PlaybackException {
 
     private j(Bundle bundle) {
         super(bundle);
-        this.f12565t = bundle.getInt(B, 2);
-        this.f12566u = bundle.getString(C);
-        this.f12567v = bundle.getInt(D, -1);
+        this.f12705t = bundle.getInt(B, 2);
+        this.f12706u = bundle.getString(C);
+        this.f12707v = bundle.getInt(D, -1);
         Bundle bundle2 = bundle.getBundle(E);
-        this.f12568w = bundle2 == null ? null : (Format) Format.A0.a(bundle2);
-        this.f12569x = bundle.getInt(F, 4);
-        this.f12571z = bundle.getBoolean(G, false);
-        this.f12570y = null;
+        this.f12708w = bundle2 == null ? null : (Format) Format.A0.a(bundle2);
+        this.f12709x = bundle.getInt(F, 4);
+        this.f12711z = bundle.getBoolean(G, false);
+        this.f12710y = null;
     }
 
-    private j(String str, Throwable th2, int i10, int i11, String str2, int i12, Format format, int i13, qd.q qVar, long j10, boolean z10) {
+    private j(String str, Throwable th2, int i10, int i11, String str2, int i12, Format format, int i13, rd.q qVar, long j10, boolean z10) {
         super(str, th2, i10, j10);
         boolean z11 = false;
-        ne.a.a(!z10 || i11 == 1);
-        ne.a.a((th2 != null || i11 == 3) ? true : z11);
-        this.f12565t = i11;
-        this.f12566u = str2;
-        this.f12567v = i12;
-        this.f12568w = format;
-        this.f12569x = i13;
-        this.f12570y = qVar;
-        this.f12571z = z10;
+        oe.a.a(!z10 || i11 == 1);
+        oe.a.a((th2 != null || i11 == 3) ? true : z11);
+        this.f12705t = i11;
+        this.f12706u = str2;
+        this.f12707v = i12;
+        this.f12708w = format;
+        this.f12709x = i13;
+        this.f12710y = qVar;
+        this.f12711z = z10;
     }
 }

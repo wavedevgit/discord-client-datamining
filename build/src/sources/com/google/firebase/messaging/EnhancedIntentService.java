@@ -30,7 +30,7 @@ public abstract class EnhancedIntentService extends Service {
         }
     }
 
-    public static /* synthetic */ void a(EnhancedIntentService enhancedIntentService, Intent intent, yg.k kVar) {
+    public static /* synthetic */ void a(EnhancedIntentService enhancedIntentService, Intent intent, zg.k kVar) {
         enhancedIntentService.getClass();
         try {
             enhancedIntentService.handleIntent(intent);
@@ -60,9 +60,9 @@ public abstract class EnhancedIntentService extends Service {
     /* JADX INFO: Access modifiers changed from: private */
     public Task d(final Intent intent) {
         if (handleIntentOnMainThread(intent)) {
-            return yg.m.f(null);
+            return zg.m.f(null);
         }
-        final yg.k kVar = new yg.k();
+        final zg.k kVar = new zg.k();
         this.executor.execute(new Runnable() { // from class: com.google.firebase.messaging.h
             @Override // java.lang.Runnable
             public final void run() {

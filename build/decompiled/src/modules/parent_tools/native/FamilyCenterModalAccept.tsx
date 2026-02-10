@@ -314,20 +314,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.marginBottom = var11;
     var3.headerText = var8;
     var8 = {};
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.spacing;
-    var11 = var11.PX_24;
-    var8.paddingHorizontal = var11;
-    var3.body = var8;
-    var8 = {};
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.spacing;
-    var11 = var11.PX_4;
-    var8.marginBottom = var11;
-    var3.noticeHeader = var8;
-    var8 = {};
     var12 = {};
     var11 = '45deg';
     var12.rotate = var11;
@@ -438,4 +424,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4561, 3149, 1234, 10551, 6506, 6507, 10609, 3256, 3942, 1860, 10584, 10557, 10553, 6510, 4084, 4705, 7573, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4561, 3149, 1234, 10529, 6507, 6508, 10587, 3256, 3942, 1860, 10562, 10535, 10531, 6511, 4084, 4705, 7549, 2]);

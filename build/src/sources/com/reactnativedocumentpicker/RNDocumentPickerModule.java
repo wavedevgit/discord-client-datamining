@@ -21,15 +21,15 @@ import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
-import im.f;
-import im.g;
-import im.h;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import jm.f;
+import jm.g;
+import jm.h;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -44,8 +44,8 @@ import kotlin.text.Charsets;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.i;
 import org.jetbrains.annotations.NotNull;
-import os.m0;
-@Metadata(d1 = {"\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 A2\u00020\u00012\u00020\u0002:\u0001BB\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u0017\u0010\n\u001a\u00020\t2\u0006\u0010\b\u001a\u00020\u0007H\u0003¢\u0006\u0004\b\n\u0010\u000bJ\u0017\u0010\f\u001a\u00020\t2\u0006\u0010\b\u001a\u00020\u0007H\u0002¢\u0006\u0004\b\f\u0010\u000bJ\u000f\u0010\r\u001a\u00020\tH\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u001f\u0010\u0013\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0017¢\u0006\u0004\b\u0013\u0010\u0014J\u001f\u0010\u0016\u001a\u00020\t2\u0006\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b\u0016\u0010\u0014J\u001f\u0010\u0017\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0017¢\u0006\u0004\b\u0017\u0010\u0014J\u001f\u0010\u0018\u001a\u00020\t2\u0006\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0017¢\u0006\u0004\b\u0018\u0010\u0014J\u001f\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u001b\u001a\u00020\u0019H\u0016¢\u0006\u0004\b\u001d\u0010\u001eJ\u001f\u0010!\u001a\u00020\t2\u0006\u0010 \u001a\u00020\u001f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b!\u0010\"J\u001f\u0010#\u001a\u00020\t2\u0006\u0010 \u001a\u00020\u001f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b#\u0010\"J\u001f\u0010$\u001a\u00020\t2\u0006\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b$\u0010\u0014J\u0015\u0010%\u001a\u00020\t2\u0006\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b%\u0010\u000bJ\u000f\u0010&\u001a\u00020\tH\u0016¢\u0006\u0004\b&\u0010\u000eJ\u000f\u0010'\u001a\u00020\tH\u0016¢\u0006\u0004\b'\u0010\u000eJ\u000f\u0010(\u001a\u00020\tH\u0016¢\u0006\u0004\b(\u0010\u000eR\u0018\u0010*\u001a\u0004\u0018\u00010)8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b*\u0010+R\u0018\u0010-\u001a\u0004\u0018\u00010,8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b-\u0010.R\u0014\u00100\u001a\u00020/8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b0\u00101R \u00103\u001a\u000e\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020,028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b3\u00104R\u0014\u00106\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b6\u00107R\u0014\u00109\u001a\u0002088\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b9\u0010:R\u0014\u0010<\u001a\u00020;8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b<\u0010=R\u0014\u0010?\u001a\u00020>8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b?\u0010@¨\u0006C"}, d2 = {"Lcom/reactnativedocumentpicker/RNDocumentPickerModule;", "Lcom/reactnativedocumentpicker/NativeDocumentPickerSpec;", "Lcom/facebook/react/bridge/LifecycleEventListener;", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "Landroid/content/Intent;", "intent", "", "processDirectoryPickerResult", "(Landroid/content/Intent;)V", "processSaveAsResult", "invalidate", "()V", "Lcom/facebook/react/bridge/ReadableMap;", "opts", "Lcom/facebook/react/bridge/Promise;", BaseJavaModule.METHOD_TYPE_PROMISE, "pick", "(Lcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/Promise;)V", "options", "saveDocument", "pickDirectory", "keepLocalCopy", "", "kind", "value", "Lcom/facebook/react/bridge/WritableMap;", "isKnownType", "(Ljava/lang/String;Ljava/lang/String;)Lcom/facebook/react/bridge/WritableMap;", "Lcom/facebook/react/bridge/ReadableArray;", "uris", "releaseSecureAccess", "(Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/Promise;)V", "releaseLongTermAccess", "writeDocuments", "processFilePickerResult", "onHostResume", "onHostPause", "onHostDestroy", "Lim/f;", "currentPickOptions", "Lim/f;", "Landroid/net/Uri;", "currentUriOfFileBeingExported", "Landroid/net/Uri;", "Lim/h;", "promiseWrapper", "Lim/h;", "", "pickedFilesUriMap", "Ljava/util/Map;", "Lim/e;", "metadataGetter", "Lim/e;", "Lim/c;", "fileOps", "Lim/c;", "Lkotlinx/coroutines/CoroutineScope;", "fileCopyingCoroutine", "Lkotlinx/coroutines/CoroutineScope;", "Lcom/facebook/react/bridge/ActivityEventListener;", "activityEventListener", "Lcom/facebook/react/bridge/ActivityEventListener;", "Companion", "a", "react-native-documents_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+import ps.m0;
+@Metadata(d1 = {"\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 A2\u00020\u00012\u00020\u0002:\u0001BB\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u0017\u0010\n\u001a\u00020\t2\u0006\u0010\b\u001a\u00020\u0007H\u0003¢\u0006\u0004\b\n\u0010\u000bJ\u0017\u0010\f\u001a\u00020\t2\u0006\u0010\b\u001a\u00020\u0007H\u0002¢\u0006\u0004\b\f\u0010\u000bJ\u000f\u0010\r\u001a\u00020\tH\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u001f\u0010\u0013\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0017¢\u0006\u0004\b\u0013\u0010\u0014J\u001f\u0010\u0016\u001a\u00020\t2\u0006\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b\u0016\u0010\u0014J\u001f\u0010\u0017\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0017¢\u0006\u0004\b\u0017\u0010\u0014J\u001f\u0010\u0018\u001a\u00020\t2\u0006\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0017¢\u0006\u0004\b\u0018\u0010\u0014J\u001f\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u001b\u001a\u00020\u0019H\u0016¢\u0006\u0004\b\u001d\u0010\u001eJ\u001f\u0010!\u001a\u00020\t2\u0006\u0010 \u001a\u00020\u001f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b!\u0010\"J\u001f\u0010#\u001a\u00020\t2\u0006\u0010 \u001a\u00020\u001f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b#\u0010\"J\u001f\u0010$\u001a\u00020\t2\u0006\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b$\u0010\u0014J\u0015\u0010%\u001a\u00020\t2\u0006\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b%\u0010\u000bJ\u000f\u0010&\u001a\u00020\tH\u0016¢\u0006\u0004\b&\u0010\u000eJ\u000f\u0010'\u001a\u00020\tH\u0016¢\u0006\u0004\b'\u0010\u000eJ\u000f\u0010(\u001a\u00020\tH\u0016¢\u0006\u0004\b(\u0010\u000eR\u0018\u0010*\u001a\u0004\u0018\u00010)8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b*\u0010+R\u0018\u0010-\u001a\u0004\u0018\u00010,8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b-\u0010.R\u0014\u00100\u001a\u00020/8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b0\u00101R \u00103\u001a\u000e\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020,028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b3\u00104R\u0014\u00106\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b6\u00107R\u0014\u00109\u001a\u0002088\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b9\u0010:R\u0014\u0010<\u001a\u00020;8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b<\u0010=R\u0014\u0010?\u001a\u00020>8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b?\u0010@¨\u0006C"}, d2 = {"Lcom/reactnativedocumentpicker/RNDocumentPickerModule;", "Lcom/reactnativedocumentpicker/NativeDocumentPickerSpec;", "Lcom/facebook/react/bridge/LifecycleEventListener;", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "Landroid/content/Intent;", "intent", "", "processDirectoryPickerResult", "(Landroid/content/Intent;)V", "processSaveAsResult", "invalidate", "()V", "Lcom/facebook/react/bridge/ReadableMap;", "opts", "Lcom/facebook/react/bridge/Promise;", BaseJavaModule.METHOD_TYPE_PROMISE, "pick", "(Lcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/Promise;)V", "options", "saveDocument", "pickDirectory", "keepLocalCopy", "", "kind", "value", "Lcom/facebook/react/bridge/WritableMap;", "isKnownType", "(Ljava/lang/String;Ljava/lang/String;)Lcom/facebook/react/bridge/WritableMap;", "Lcom/facebook/react/bridge/ReadableArray;", "uris", "releaseSecureAccess", "(Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/Promise;)V", "releaseLongTermAccess", "writeDocuments", "processFilePickerResult", "onHostResume", "onHostPause", "onHostDestroy", "Ljm/f;", "currentPickOptions", "Ljm/f;", "Landroid/net/Uri;", "currentUriOfFileBeingExported", "Landroid/net/Uri;", "Ljm/h;", "promiseWrapper", "Ljm/h;", "", "pickedFilesUriMap", "Ljava/util/Map;", "Ljm/e;", "metadataGetter", "Ljm/e;", "Ljm/c;", "fileOps", "Ljm/c;", "Lkotlinx/coroutines/CoroutineScope;", "fileCopyingCoroutine", "Lkotlinx/coroutines/CoroutineScope;", "Lcom/facebook/react/bridge/ActivityEventListener;", "activityEventListener", "Lcom/facebook/react/bridge/ActivityEventListener;", "Companion", "a", "react-native-documents_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nRNDocumentPickerModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RNDocumentPickerModule.kt\ncom/reactnativedocumentpicker/RNDocumentPickerModule\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,352:1\n1#2:353\n1563#3:354\n1634#3,3:355\n*S KotlinDebug\n*F\n+ 1 RNDocumentPickerModule.kt\ncom/reactnativedocumentpicker/RNDocumentPickerModule\n*L\n309#1:354\n309#1:355,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class RNDocumentPickerModule extends NativeDocumentPickerSpec implements LifecycleEventListener {
@@ -69,9 +69,9 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     @NotNull
     private final CoroutineScope fileCopyingCoroutine;
     @NotNull
-    private final im.c fileOps;
+    private final jm.c fileOps;
     @NotNull
-    private final im.e metadataGetter;
+    private final jm.e metadataGetter;
     @NotNull
     private final Map<String, Uri> pickedFilesUriMap;
     @NotNull
@@ -136,34 +136,34 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f17550d;
+        int f17690d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ReadableArray f17552i;
+        final /* synthetic */ ReadableArray f17692i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ String f17553o;
+        final /* synthetic */ String f17693o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Promise f17554p;
+        final /* synthetic */ Promise f17694p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(ReadableArray readableArray, String str, Promise promise, Continuation continuation) {
             super(2, continuation);
-            this.f17552i = readableArray;
-            this.f17553o = str;
-            this.f17554p = promise;
+            this.f17692i = readableArray;
+            this.f17693o = str;
+            this.f17694p = promise;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f17552i, this.f17553o, this.f17554p, continuation);
+            return new c(this.f17692i, this.f17693o, this.f17694p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = wr.b.f();
-            int i10 = this.f17550d;
+            Object f10 = xr.b.f();
+            int i10 = this.f17690d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -172,24 +172,24 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
                 }
             } else {
                 kotlin.c.b(obj);
-                im.c cVar = RNDocumentPickerModule.this.fileOps;
+                jm.c cVar = RNDocumentPickerModule.this.fileOps;
                 ReactApplicationContext reactApplicationContext = RNDocumentPickerModule.this.getReactApplicationContext();
                 Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "access$getReactApplicationContext(...)");
-                ReadableArray readableArray = this.f17552i;
-                com.reactnativedocumentpicker.a a10 = com.reactnativedocumentpicker.a.f17562e.a(this.f17553o);
-                this.f17550d = 1;
+                ReadableArray readableArray = this.f17692i;
+                com.reactnativedocumentpicker.a a10 = com.reactnativedocumentpicker.a.f17702e.a(this.f17693o);
+                this.f17690d = 1;
                 obj = cVar.f(reactApplicationContext, readableArray, a10, this);
                 if (obj == f10) {
                     return f10;
                 }
             }
-            this.f17554p.resolve((ReadableArray) obj);
-            return Unit.f32056a;
+            this.f17694p.resolve((ReadableArray) obj);
+            return Unit.f31765a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
         }
     }
 
@@ -198,26 +198,26 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     public static final class d extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f17555d;
+        int f17695d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ List f17557i;
+        final /* synthetic */ List f17697i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(List list, Continuation continuation) {
             super(2, continuation);
-            this.f17557i = list;
+            this.f17697i = list;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new d(this.f17557i, continuation);
+            return new d(this.f17697i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = wr.b.f();
-            int i10 = this.f17555d;
+            Object f10 = xr.b.f();
+            int i10 = this.f17695d;
             try {
                 if (i10 != 0) {
                     if (i10 == 1) {
@@ -229,11 +229,11 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
                     kotlin.c.b(obj);
                     f fVar = RNDocumentPickerModule.this.currentPickOptions;
                     if (fVar != null) {
-                        im.e eVar = RNDocumentPickerModule.this.metadataGetter;
+                        jm.e eVar = RNDocumentPickerModule.this.metadataGetter;
                         ReactApplicationContext reactApplicationContext = RNDocumentPickerModule.this.getReactApplicationContext();
                         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "access$getReactApplicationContext(...)");
-                        List list = this.f17557i;
-                        this.f17555d = 1;
+                        List list = this.f17697i;
+                        this.f17695d = 1;
                         obj = eVar.e(reactApplicationContext, list, fVar, this);
                         if (obj == f10) {
                             return f10;
@@ -246,12 +246,12 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
             } catch (Exception e10) {
                 RNDocumentPickerModule.this.promiseWrapper.b(e10);
             }
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
         }
     }
 
@@ -259,66 +259,66 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     static final class e extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f17558d;
+        int f17698d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ReadableMap f17559e;
+        final /* synthetic */ ReadableMap f17699e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ RNDocumentPickerModule f17560i;
+        final /* synthetic */ RNDocumentPickerModule f17700i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Promise f17561o;
+        final /* synthetic */ Promise f17701o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(ReadableMap readableMap, RNDocumentPickerModule rNDocumentPickerModule, Promise promise, Continuation continuation) {
             super(2, continuation);
-            this.f17559e = readableMap;
-            this.f17560i = rNDocumentPickerModule;
-            this.f17561o = promise;
+            this.f17699e = readableMap;
+            this.f17700i = rNDocumentPickerModule;
+            this.f17701o = promise;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f17559e, this.f17560i, this.f17561o, continuation);
+            return new e(this.f17699e, this.f17700i, this.f17701o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             String str;
-            wr.b.f();
-            if (this.f17558d == 0) {
+            xr.b.f();
+            if (this.f17698d == 0) {
                 kotlin.c.b(obj);
                 try {
-                    if (this.f17559e.hasKey("uri")) {
-                        str = this.f17559e.getString("uri");
+                    if (this.f17699e.hasKey("uri")) {
+                        str = this.f17699e.getString("uri");
                     } else {
                         str = null;
                     }
-                    im.c cVar = this.f17560i.fileOps;
-                    Uri uri = this.f17560i.currentUriOfFileBeingExported;
-                    ReactApplicationContext reactApplicationContext = this.f17560i.getReactApplicationContext();
+                    jm.c cVar = this.f17700i.fileOps;
+                    Uri uri = this.f17700i.currentUriOfFileBeingExported;
+                    ReactApplicationContext reactApplicationContext = this.f17700i.getReactApplicationContext();
                     Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "access$getReactApplicationContext(...)");
-                    im.a k10 = cVar.k(uri, str, reactApplicationContext);
-                    im.e eVar = this.f17560i.metadataGetter;
-                    ContentResolver contentResolver = this.f17560i.getReactApplicationContext().getContentResolver();
+                    jm.a k10 = cVar.k(uri, str, reactApplicationContext);
+                    jm.e eVar = this.f17700i.metadataGetter;
+                    ContentResolver contentResolver = this.f17700i.getReactApplicationContext().getContentResolver();
                     Intrinsics.checkNotNullExpressionValue(contentResolver, "getContentResolver(...)");
                     eVar.f(contentResolver, k10, false);
                     WritableArray createArray = Arguments.createArray();
                     createArray.pushMap(k10.c());
                     Intrinsics.checkNotNullExpressionValue(createArray, "apply(...)");
-                    this.f17561o.resolve(createArray);
+                    this.f17701o.resolve(createArray);
                 } catch (Exception e10) {
-                    this.f17561o.reject(e10);
+                    this.f17701o.reject(e10);
                 }
-                return Unit.f32056a;
+                return Unit.f31765a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
         }
     }
 
@@ -329,8 +329,8 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
         this.promiseWrapper = new h(NativeDocumentPickerSpec.NAME);
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         this.pickedFilesUriMap = linkedHashMap;
-        this.metadataGetter = new im.e(linkedHashMap);
-        this.fileOps = new im.c(linkedHashMap);
+        this.metadataGetter = new jm.e(linkedHashMap);
+        this.fileOps = new jm.c(linkedHashMap);
         this.fileCopyingCoroutine = i.a(m0.b());
         b bVar = new b();
         this.activityEventListener = bVar;
@@ -397,7 +397,7 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     public WritableMap isKnownType(@NotNull String kind, @NotNull String value) {
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(value, "value");
-        return com.reactnativedocumentpicker.b.f17568a.b(kind, value);
+        return com.reactnativedocumentpicker.b.f17708a.b(kind, value);
     }
 
     @Override // com.reactnativedocumentpicker.NativeDocumentPickerSpec
@@ -408,7 +408,7 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
         ReadableArray array = options.getArray("files");
         String string = options.getString("destination");
         if (string != null && array != null) {
-            os.i.d(this.fileCopyingCoroutine, null, null, new c(array, string, promise, null), 3, null);
+            ps.i.d(this.fileCopyingCoroutine, null, null, new c(array, string, promise, null), 3, null);
             return;
         }
         Set<String> keySet = options.toHashMap().keySet();
@@ -440,7 +440,7 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
             f a10 = g.a(opts);
             this.currentPickOptions = a10;
             try {
-                currentActivity.startActivityForResult(im.d.f26863a.a(a10), 41);
+                currentActivity.startActivityForResult(jm.d.f30267a.a(a10), 41);
             } catch (ActivityNotFoundException e10) {
                 promise.reject(UNABLE_TO_OPEN_FILE_TYPE, e10);
             } catch (Exception e11) {
@@ -491,7 +491,7 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
         } else {
             l10 = CollectionsKt.l();
         }
-        os.i.d(i.a(m0.b()), null, null, new d(l10, null), 3, null);
+        ps.i.d(i.a(m0.b()), null, null, new d(l10, null), 3, null);
     }
 
     @Override // com.reactnativedocumentpicker.NativeDocumentPickerSpec
@@ -580,6 +580,6 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     public void writeDocuments(@NotNull ReadableMap options, @NotNull Promise promise) {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        os.i.d(this.fileCopyingCoroutine, null, null, new e(options, this, promise, null), 3, null);
+        ps.i.d(this.fileCopyingCoroutine, null, null, new e(options, this, promise, null), 3, null);
     }
 }

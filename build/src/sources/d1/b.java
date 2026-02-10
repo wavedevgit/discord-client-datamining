@@ -5,19 +5,19 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f20142a = new a(null);
+    public static final a f20375a = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f20143b;
+    private static final long f20376b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final long f20144c;
+    private static final long f20377c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final long f20145d;
+    private static final long f20378d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final long f20146e;
+    private static final long f20379e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -26,15 +26,15 @@ public abstract class b {
         }
 
         public final long a() {
-            return b.f20145d;
+            return b.f20378d;
         }
 
         public final long b() {
-            return b.f20143b;
+            return b.f20376b;
         }
 
         public final long c() {
-            return b.f20144c;
+            return b.f20377c;
         }
 
         private a() {
@@ -44,10 +44,10 @@ public abstract class b {
     static {
         long j10 = 3;
         long j11 = j10 << 32;
-        f20143b = d((0 & 4294967295L) | j11);
-        f20144c = d((1 & 4294967295L) | j11);
-        f20145d = d(j11 | (2 & 4294967295L));
-        f20146e = d((j10 & 4294967295L) | (4 << 32));
+        f20376b = d((0 & 4294967295L) | j11);
+        f20377c = d((1 & 4294967295L) | j11);
+        f20378d = d(j11 | (2 & 4294967295L));
+        f20379e = d((j10 & 4294967295L) | (4 << 32));
     }
 
     public static final boolean e(long j10, long j11) {
@@ -66,16 +66,16 @@ public abstract class b {
     }
 
     public static String h(long j10) {
-        if (e(j10, f20143b)) {
+        if (e(j10, f20376b)) {
             return "Rgb";
         }
-        if (e(j10, f20144c)) {
+        if (e(j10, f20377c)) {
             return "Xyz";
         }
-        if (e(j10, f20145d)) {
+        if (e(j10, f20378d)) {
             return "Lab";
         }
-        if (e(j10, f20146e)) {
+        if (e(j10, f20379e)) {
             return "Cmyk";
         }
         return "Unknown";

@@ -1,43 +1,50 @@
 package yo;
 
-import androidx.lifecycle.b0;
-import com.withpersona.sdk2.inquiry.FallbackMode;
+import android.content.Context;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FallbackMode f55543a;
+    private static b f55720a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final uo.f f55544b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final b0 f55545c;
-
-    public c(FallbackMode fallbackMode, uo.f environment, b0 savedStateHandle) {
-        Intrinsics.checkNotNullParameter(fallbackMode, "fallbackMode");
-        Intrinsics.checkNotNullParameter(environment, "environment");
-        Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
-        this.f55543a = fallbackMode;
-        this.f55544b = environment;
-        this.f55545c = savedStateHandle;
+    public static final void a(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        c(context).b();
     }
 
-    public final uo.f a() {
-        return this.f55544b;
+    private static final synchronized b b(Context context) {
+        synchronized (c.class) {
+            b bVar = f55720a;
+            if (bVar != null) {
+                return bVar;
+            }
+            b bVar2 = new b(context);
+            f55720a = bVar2;
+            return bVar2;
+        }
     }
 
-    public final FallbackMode b() {
-        return this.f55543a;
+    public static final b c(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        b bVar = f55720a;
+        if (bVar == null) {
+            return b(context);
+        }
+        return bVar;
     }
 
-    public final io.a c(i fallbackModeManager) {
-        Intrinsics.checkNotNullParameter(fallbackModeManager, "fallbackModeManager");
-        return fallbackModeManager;
+    public static final void d(Context context, List directoriesToDeleteOnError) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(directoriesToDeleteOnError, "directoriesToDeleteOnError");
+        b c10 = c(context);
+        c10.d();
+        c10.f(directoriesToDeleteOnError);
     }
 
-    public final b0 d() {
-        return this.f55545c;
+    public static final void e(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        c(context).g();
     }
 }

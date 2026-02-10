@@ -1,38 +1,38 @@
 package og;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class h8 {
+final class h8 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ma f42147a;
+    static final h8 f40930a = new h8();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final e8 f42148b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final z7 f42149c;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ h8(f8 f8Var, g8 g8Var) {
-        ma maVar;
-        e8 e8Var;
-        z7 z7Var;
-        maVar = f8Var.f42085a;
-        this.f42147a = maVar;
-        e8Var = f8Var.f42086b;
-        this.f42148b = e8Var;
-        z7Var = f8Var.f42087c;
-        this.f42149c = z7Var;
+    static {
+        c.b a10 = zi.c.a("options");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("latencyMs");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("frameCount");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
+        c.b a13 = zi.c.a("errorCode");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        a13.b(l2Var4.b()).a();
     }
 
-    public final z7 a() {
-        return this.f42149c;
+    private h8() {
     }
 
-    public final e8 b() {
-        return this.f42148b;
-    }
-
-    public final ma c() {
-        return this.f42147a;
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

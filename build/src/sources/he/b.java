@@ -1,55 +1,66 @@
 package he;
 
-import java.util.Collections;
-import java.util.List;
-import zd.g;
+import android.text.TextUtils;
+import com.facebook.react.uimanager.ViewProps;
+import java.util.regex.Pattern;
+import oi.u;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class b implements g {
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final b f25996e = new b();
+final class b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f25997d;
+    private static final Pattern f25889d = Pattern.compile("\\s+");
 
-    public b(zd.b bVar) {
-        this.f25997d = Collections.singletonList(bVar);
+    /* renamed from: e  reason: collision with root package name */
+    private static final u f25890e = u.v("auto", ViewProps.NONE);
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final u f25891f = u.w("dot", "sesame", "circle");
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final u f25892g = u.v("filled", "open");
+
+    /* renamed from: h  reason: collision with root package name */
+    private static final u f25893h = u.w("after", "before", "outside");
+
+    /* renamed from: a  reason: collision with root package name */
+    public final int f25894a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final int f25895b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final int f25896c;
+
+    private b(int i10, int i11, int i12) {
+        this.f25894a = i10;
+        this.f25895b = i11;
+        this.f25896c = i12;
     }
 
-    @Override // zd.g
-    public int a(long j10) {
-        if (j10 < 0) {
-            return 0;
+    public static b a(String str) {
+        if (str == null) {
+            return null;
         }
-        return -1;
-    }
-
-    @Override // zd.g
-    public List d(long j10) {
-        if (j10 >= 0) {
-            return this.f25997d;
+        String e10 = ni.b.e(str.trim());
+        if (e10.isEmpty()) {
+            return null;
         }
-        return Collections.EMPTY_LIST;
+        return b(u.p(TextUtils.split(e10, f25889d)));
     }
 
-    @Override // zd.g
-    public long e(int i10) {
-        boolean z10;
-        if (i10 == 0) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        ne.a.a(z10);
-        return 0L;
-    }
-
-    @Override // zd.g
-    public int f() {
-        return 1;
-    }
-
-    private b() {
-        this.f25997d = Collections.EMPTY_LIST;
+    /* JADX WARN: Removed duplicated region for block: B:19:0x004b  */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x007a  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x00cf  */
+    /* JADX WARN: Removed duplicated region for block: B:59:0x00ee  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static he.b b(oi.u r7) {
+        /*
+            Method dump skipped, instructions count: 248
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: he.b.b(oi.u):he.b");
     }
 }

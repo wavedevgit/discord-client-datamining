@@ -39,14 +39,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'getConstants';
     var3[var9] = var10;
     var10 = function arg0() {
-        _fun30591: for (var _fun30591_ip = 0;;) switch (_fun30591_ip) {
+        _fun30583: for (var _fun30583_ip = 0;;) switch (_fun30583_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'string';
                 var0 = typeof var3;
                 if (!(var1 !== var0)) {
-                    _fun30591_ip = 52;
-                    continue _fun30591
+                    _fun30583_ip = 52;
+                    continue _fun30583
                 }
             case 14:
                 var2 = _closure1_slot0;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var0)(var1);
                 var0 = var1.setInputDevice;
                 var0 = var0.bind(var1)(var3);
-                _fun30591_ip = 90;
-                continue _fun30591;
+                _fun30583_ip = 90;
+                continue _fun30583;
             case 52:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -75,14 +75,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'setInputDevice';
     var3[var9] = var10;
     var10 = function arg0() {
-        _fun30592: for (var _fun30592_ip = 0;;) switch (_fun30592_ip) {
+        _fun30584: for (var _fun30584_ip = 0;;) switch (_fun30584_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'string';
                 var0 = typeof var3;
                 if (!(var1 !== var0)) {
-                    _fun30592_ip = 52;
-                    continue _fun30592
+                    _fun30584_ip = 52;
+                    continue _fun30584
                 }
             case 14:
                 var2 = _closure1_slot0;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var0)(var1);
                 var0 = var1.setOutputDevice;
                 var0 = var0.bind(var1)(var3);
-                _fun30592_ip = 90;
-                continue _fun30592;
+                _fun30584_ip = 90;
+                continue _fun30584;
             case 52:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -111,14 +111,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'setOutputDevice';
     var3[var9] = var10;
     var10 = function arg0() {
-        _fun30593: for (var _fun30593_ip = 0;;) switch (_fun30593_ip) {
+        _fun30585: for (var _fun30585_ip = 0;;) switch (_fun30585_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'string';
                 var0 = typeof var3;
                 if (!(var1 !== var0)) {
-                    _fun30593_ip = 52;
-                    continue _fun30593
+                    _fun30585_ip = 52;
+                    continue _fun30585
                 }
             case 14:
                 var2 = _closure1_slot0;
@@ -129,8 +129,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var0)(var1);
                 var0 = var1.setVideoInputDevice;
                 var0 = var0.bind(var1)(var3);
-                _fun30593_ip = 90;
-                continue _fun30593;
+                _fun30585_ip = 90;
+                continue _fun30585;
             case 52:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;

@@ -20,40 +20,40 @@ import java.util.ArrayList;
 public class j implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Format f10295a;
+    private Format f10435a;
 
     /* renamed from: b  reason: collision with root package name */
-    private android.icu.text.NumberFormat f10296b;
+    private android.icu.text.NumberFormat f10436b;
 
     /* renamed from: c  reason: collision with root package name */
-    private da.h f10297c;
+    private ea.h f10437c;
 
     /* renamed from: d  reason: collision with root package name */
-    private c.h f10298d;
+    private c.h f10438d;
 
     /* renamed from: e  reason: collision with root package name */
-    private MeasureUnit f10299e;
+    private MeasureUnit f10439e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f10300a;
+        static final /* synthetic */ int[] f10440a;
 
         static {
             int[] iArr = new int[c.g.values().length];
-            f10300a = iArr;
+            f10440a = iArr;
             try {
                 iArr[c.g.NEVER.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f10300a[c.g.ALWAYS.ordinal()] = 2;
+                f10440a[c.g.ALWAYS.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f10300a[c.g.EXCEPTZERO.ordinal()] = 3;
+                f10440a[c.g.EXCEPTZERO.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -63,15 +63,15 @@ public class j implements c {
         try {
             return Currency.getInstance(str).getDefaultFractionDigits();
         } catch (IllegalArgumentException unused) {
-            throw new da.f("Invalid currency code !");
+            throw new ea.f("Invalid currency code !");
         }
     }
 
-    private void o(android.icu.text.NumberFormat numberFormat, da.b bVar, c.h hVar) {
-        this.f10296b = numberFormat;
-        this.f10295a = numberFormat;
-        this.f10297c = (da.h) bVar;
-        this.f10298d = hVar;
+    private void o(android.icu.text.NumberFormat numberFormat, ea.b bVar, c.h hVar) {
+        this.f10436b = numberFormat;
+        this.f10435a = numberFormat;
+        this.f10437c = (ea.h) bVar;
+        this.f10438d = hVar;
         numberFormat.setRoundingMode(4);
     }
 
@@ -84,16 +84,16 @@ public class j implements c {
             }
             return measureUnit;
         }
-        throw new da.f("Unknown unit: " + str);
+        throw new ea.f("Unknown unit: " + str);
     }
 
     @Override // com.facebook.hermes.intl.c
     public AttributedCharacterIterator a(double d10) {
         try {
             try {
-                Format format = this.f10295a;
-                if ((format instanceof MeasureFormat) && this.f10299e != null) {
-                    return format.formatToCharacterIterator(new Measure(Double.valueOf(d10), this.f10299e));
+                Format format = this.f10435a;
+                if ((format instanceof MeasureFormat) && this.f10439e != null) {
+                    return format.formatToCharacterIterator(new Measure(Double.valueOf(d10), this.f10439e));
                 }
                 return format.formatToCharacterIterator(Double.valueOf(d10));
             } catch (RuntimeException unused) {
@@ -107,12 +107,17 @@ public class j implements c {
     }
 
     @Override // com.facebook.hermes.intl.c
-    public String b(double d10) {
+    public String b(ea.b bVar) {
+        return NumberingSystem.getInstance((ULocale) bVar.h()).getName();
+    }
+
+    @Override // com.facebook.hermes.intl.c
+    public String c(double d10) {
         try {
             try {
-                Format format = this.f10295a;
-                if ((format instanceof MeasureFormat) && this.f10299e != null) {
-                    return format.format(new Measure(Double.valueOf(d10), this.f10299e));
+                Format format = this.f10435a;
+                if ((format instanceof MeasureFormat) && this.f10439e != null) {
+                    return format.format(new Measure(Double.valueOf(d10), this.f10439e));
                 }
                 return format.format(Double.valueOf(d10));
             } catch (NumberFormatException unused) {
@@ -121,11 +126,6 @@ public class j implements c {
         } catch (RuntimeException unused2) {
             return android.icu.text.NumberFormat.getInstance(ULocale.forLanguageTag("en")).format(d10);
         }
-    }
-
-    @Override // com.facebook.hermes.intl.c
-    public String c(da.b bVar) {
-        return NumberingSystem.getInstance((ULocale) bVar.h()).getName();
     }
 
     @Override // com.facebook.hermes.intl.c
@@ -179,19 +179,19 @@ public class j implements c {
 
     @Override // com.facebook.hermes.intl.c
     /* renamed from: m */
-    public j k(da.b bVar, String str, c.h hVar, c.d dVar, c.e eVar, c.b bVar2) {
+    public j k(ea.b bVar, String str, c.h hVar, c.d dVar, c.e eVar, c.b bVar2) {
         CompactDecimalFormat.CompactStyle compactStyle;
         if (!str.isEmpty()) {
             try {
-                if (NumberingSystem.getInstanceByName(da.d.h(str)) != null) {
+                if (NumberingSystem.getInstanceByName(ea.d.h(str)) != null) {
                     ArrayList arrayList = new ArrayList();
-                    arrayList.add(da.d.h(str));
+                    arrayList.add(ea.d.h(str));
                     bVar.f("nu", arrayList);
                 } else {
-                    throw new da.f("Invalid numbering system: " + str);
+                    throw new ea.f("Invalid numbering system: " + str);
                 }
             } catch (RuntimeException unused) {
-                throw new da.f("Invalid numbering system: " + str);
+                throw new ea.f("Invalid numbering system: " + str);
             }
         }
         if (eVar == c.e.COMPACT && (hVar == c.h.DECIMAL || hVar == c.h.UNIT)) {
@@ -213,14 +213,14 @@ public class j implements c {
 
     @Override // com.facebook.hermes.intl.c
     /* renamed from: q */
-    public j d(String str, c.EnumC0149c enumC0149c) {
-        if (this.f10298d == c.h.CURRENCY) {
+    public j d(String str, c.EnumC0176c enumC0176c) {
+        if (this.f10438d == c.h.CURRENCY) {
             Currency currency = Currency.getInstance(str);
-            this.f10296b.setCurrency(currency);
-            if (enumC0149c != c.EnumC0149c.CODE) {
-                str = currency.getName(this.f10297c.h(), enumC0149c.d(), (boolean[]) null);
+            this.f10436b.setCurrency(currency);
+            if (enumC0176c != c.EnumC0176c.CODE) {
+                str = currency.getName(this.f10437c.h(), enumC0176c.d(), (boolean[]) null);
             }
-            android.icu.text.NumberFormat numberFormat = this.f10296b;
+            android.icu.text.NumberFormat numberFormat = this.f10436b;
             if (numberFormat instanceof DecimalFormat) {
                 DecimalFormat decimalFormat = (DecimalFormat) numberFormat;
                 DecimalFormatSymbols decimalFormatSymbols = decimalFormat.getDecimalFormatSymbols();
@@ -236,12 +236,12 @@ public class j implements c {
     public j h(c.f fVar, int i10, int i11) {
         if (fVar == c.f.FRACTION_DIGITS) {
             if (i10 >= 0) {
-                this.f10296b.setMinimumFractionDigits(i10);
+                this.f10436b.setMinimumFractionDigits(i10);
             }
             if (i11 >= 0) {
-                this.f10296b.setMaximumFractionDigits(i11);
+                this.f10436b.setMaximumFractionDigits(i11);
             }
-            android.icu.text.NumberFormat numberFormat = this.f10296b;
+            android.icu.text.NumberFormat numberFormat = this.f10436b;
             if (numberFormat instanceof DecimalFormat) {
                 ((DecimalFormat) numberFormat).setSignificantDigitsUsed(false);
             }
@@ -252,7 +252,7 @@ public class j implements c {
     @Override // com.facebook.hermes.intl.c
     /* renamed from: s */
     public j g(boolean z10) {
-        this.f10296b.setGroupingUsed(z10);
+        this.f10436b.setGroupingUsed(z10);
         return this;
     }
 
@@ -260,7 +260,7 @@ public class j implements c {
     /* renamed from: t */
     public j f(int i10) {
         if (i10 != -1) {
-            this.f10296b.setMinimumIntegerDigits(i10);
+            this.f10436b.setMinimumIntegerDigits(i10);
         }
         return this;
     }
@@ -268,12 +268,12 @@ public class j implements c {
     @Override // com.facebook.hermes.intl.c
     /* renamed from: u */
     public j j(c.g gVar) {
-        android.icu.text.NumberFormat numberFormat = this.f10296b;
+        android.icu.text.NumberFormat numberFormat = this.f10436b;
         if (numberFormat instanceof DecimalFormat) {
             DecimalFormat decimalFormat = (DecimalFormat) numberFormat;
             DecimalFormatSymbols decimalFormatSymbols = decimalFormat.getDecimalFormatSymbols();
             if (Build.VERSION.SDK_INT >= 31) {
-                int i10 = a.f10300a[gVar.ordinal()];
+                int i10 = a.f10440a[gVar.ordinal()];
                 if (i10 != 1) {
                     if (i10 == 2 || i10 == 3) {
                         decimalFormat.setSignAlwaysShown(true);
@@ -284,7 +284,7 @@ public class j implements c {
                     return this;
                 }
             } else {
-                int i11 = a.f10300a[gVar.ordinal()];
+                int i11 = a.f10440a[gVar.ordinal()];
                 if (i11 != 1) {
                     if (i11 == 2 || i11 == 3) {
                         if (!decimalFormat.getNegativePrefix().isEmpty()) {
@@ -309,7 +309,7 @@ public class j implements c {
     @Override // com.facebook.hermes.intl.c
     /* renamed from: v */
     public j e(c.f fVar, int i10, int i11) {
-        android.icu.text.NumberFormat numberFormat = this.f10296b;
+        android.icu.text.NumberFormat numberFormat = this.f10436b;
         if ((numberFormat instanceof DecimalFormat) && fVar == c.f.SIGNIFICANT_DIGITS) {
             DecimalFormat decimalFormat = (DecimalFormat) numberFormat;
             if (i10 >= 0) {
@@ -319,7 +319,7 @@ public class j implements c {
                 if (i11 >= decimalFormat.getMinimumSignificantDigits()) {
                     decimalFormat.setMaximumSignificantDigits(i11);
                 } else {
-                    throw new da.f("maximumSignificantDigits should be at least equal to minimumSignificantDigits");
+                    throw new ea.f("maximumSignificantDigits should be at least equal to minimumSignificantDigits");
                 }
             }
             decimalFormat.setSignificantDigitsUsed(true);
@@ -330,9 +330,9 @@ public class j implements c {
     @Override // com.facebook.hermes.intl.c
     /* renamed from: w */
     public j i(String str, c.i iVar) {
-        if (this.f10298d == c.h.UNIT) {
-            this.f10299e = p(str);
-            this.f10295a = MeasureFormat.getInstance(this.f10297c.h(), iVar.d(), this.f10296b);
+        if (this.f10438d == c.h.UNIT) {
+            this.f10439e = p(str);
+            this.f10435a = MeasureFormat.getInstance(this.f10437c.h(), iVar.d(), this.f10436b);
         }
         return this;
     }

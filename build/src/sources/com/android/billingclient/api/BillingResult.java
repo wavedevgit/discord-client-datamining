@@ -3,37 +3,37 @@ package com.android.billingclient.api;
 public final class BillingResult {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f7826a;
+    private int f7966a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f7827b;
+    private String f7967b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f7828a;
+        private int f7968a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f7829b = "";
+        private String f7969b = "";
 
-        /* synthetic */ a(a6.z zVar) {
+        /* synthetic */ a(b6.z zVar) {
         }
 
         public BillingResult a() {
             BillingResult billingResult = new BillingResult();
-            billingResult.f7826a = this.f7828a;
-            billingResult.f7827b = this.f7829b;
+            billingResult.f7966a = this.f7968a;
+            billingResult.f7967b = this.f7969b;
             return billingResult;
         }
 
         public a b(String str) {
-            this.f7829b = str;
+            this.f7969b = str;
             return this;
         }
 
         public a c(int i10) {
-            this.f7828a = i10;
+            this.f7968a = i10;
             return this;
         }
     }
@@ -43,16 +43,16 @@ public final class BillingResult {
     }
 
     public String a() {
-        return this.f7827b;
+        return this.f7967b;
     }
 
     public int b() {
-        return this.f7826a;
+        return this.f7966a;
     }
 
     public String toString() {
-        String f10 = com.google.android.gms.internal.play_billing.a0.f(this.f7826a);
-        String str = this.f7827b;
+        String f10 = com.google.android.gms.internal.play_billing.a0.f(this.f7966a);
+        String str = this.f7967b;
         return "Response Code: " + f10 + ", Debug Message: " + str;
     }
 }

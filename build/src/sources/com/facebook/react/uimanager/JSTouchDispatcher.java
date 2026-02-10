@@ -37,17 +37,17 @@ public final class JSTouchDispatcher {
 
     private final void dispatchCancelEvent(MotionEvent motionEvent, EventDispatcher eventDispatcher) {
         if (this.targetTag == -1) {
-            p8.a.J(ReactConstants.TAG, "Can't cancel already finished gesture. Is a child View trying to start a gesture from an UP/CANCEL event?");
+            q8.a.J(ReactConstants.TAG, "Can't cancel already finished gesture. Is a child View trying to start a gesture from an UP/CANCEL event?");
             return;
         }
-        db.a.b(!this.childIsHandlingNativeGesture, "Expected to not have already sent a cancel for this gesture");
+        eb.a.b(!this.childIsHandlingNativeGesture, "Expected to not have already sent a cancel for this gesture");
         TouchEvent.Companion companion = TouchEvent.Companion;
         int surfaceId = UIManagerHelper.getSurfaceId(this.viewGroup);
         int i10 = this.targetTag;
         TouchEventType touchEventType = TouchEventType.CANCEL;
         long j10 = this.gestureStartTime;
         float[] fArr = this.targetCoordinates;
-        ((EventDispatcher) db.a.c(eventDispatcher)).dispatchEvent(companion.obtain(surfaceId, i10, touchEventType, motionEvent, j10, fArr[0], fArr[1], this.touchEventCoalescingKeyHelper));
+        ((EventDispatcher) eb.a.c(eventDispatcher)).dispatchEvent(companion.obtain(surfaceId, i10, touchEventType, motionEvent, j10, fArr[0], fArr[1], this.touchEventCoalescingKeyHelper));
     }
 
     private final int findTargetTagAndSetCoordinates(MotionEvent motionEvent) {
@@ -98,7 +98,7 @@ public final class JSTouchDispatcher {
         int action = ev2.getAction() & SetSpanOperation.SPAN_MAX_PRIORITY;
         if (action == 0) {
             if (this.targetTag != -1) {
-                p8.a.m(ReactConstants.TAG, "Got DOWN touch before receiving UP or CANCEL from last gesture");
+                q8.a.m(ReactConstants.TAG, "Got DOWN touch before receiving UP or CANCEL from last gesture");
             }
             this.childIsHandlingNativeGesture = false;
             this.gestureStartTime = ev2.getEventTime();
@@ -115,7 +115,7 @@ public final class JSTouchDispatcher {
         } else {
             int i11 = this.targetTag;
             if (i11 == -1) {
-                p8.a.m(ReactConstants.TAG, "Unexpected state: received touch event but didn't get starting ACTION_DOWN for this gesture before");
+                q8.a.m(ReactConstants.TAG, "Unexpected state: received touch event but didn't get starting ACTION_DOWN for this gesture before");
             } else if (action == 1) {
                 findTargetTagAndSetCoordinates(ev2);
                 int surfaceId2 = UIManagerHelper.getSurfaceId(this.viewGroup);
@@ -157,13 +157,13 @@ public final class JSTouchDispatcher {
                 if (this.touchEventCoalescingKeyHelper.hasCoalescingKey(ev2.getDownTime())) {
                     dispatchCancelEvent(ev2, eventDispatcher);
                 } else {
-                    p8.a.m(ReactConstants.TAG, "Received an ACTION_CANCEL touch event for which we have no corresponding ACTION_DOWN");
+                    q8.a.m(ReactConstants.TAG, "Received an ACTION_CANCEL touch event for which we have no corresponding ACTION_DOWN");
                 }
                 sweepActiveTouchForTag(UIManagerHelper.getSurfaceId(this.viewGroup), this.targetTag, reactContext);
                 this.targetTag = -1;
                 this.gestureStartTime = Long.MIN_VALUE;
             } else {
-                p8.a.J(ReactConstants.TAG, "Warning : touch event was ignored. Action=" + action + " Target=" + i11);
+                q8.a.J(ReactConstants.TAG, "Warning : touch event was ignored. Action=" + action + " Target=" + i11);
             }
         }
     }

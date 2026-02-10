@@ -1,7 +1,6 @@
 package com.withpersona.sdk2.inquiry.internal.network;
 
-import ap.r;
-import bq.n;
+import bp.r;
 import com.squareup.workflow1.ui.backstack.BackStackContainer;
 import com.withpersona.sdk2.inquiry.internal.InquiryFieldMap;
 import com.withpersona.sdk2.inquiry.internal.fallbackmode.FallbackModeService;
@@ -21,29 +20,30 @@ import com.withpersona.sdk2.inquiry.network.dto.ui.components.RemoteImage;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements;
 import com.withpersona.sdk2.inquiry.steps.ui.network.NumberAdapter;
 import com.withpersona.sdk2.inquiry.ui.network.ComponentParam;
-import dn.c0;
-import dn.e0;
-import dn.f0;
+import cq.n;
+import en.c0;
+import en.e0;
+import en.f0;
 import java.util.Arrays;
 import java.util.Set;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import vv.a0;
+import wv.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class f {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f19316d = new a(null);
+    public static final a f19456d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f19317a;
+    private final String f19457a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f19318b;
+    private final String f19458b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f19319c;
+    private final String f19459c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -52,7 +52,7 @@ public final class f {
         }
 
         public final Set a() {
-            return x0.i(CreateInquiryRequest.Data.f19124c, CreateInquirySessionResponse.GpsCollectionRequirement.Companion, CreateInquirySessionResponse.GpsPrecisionRequirement.Companion, ComponentParam.Adapter.f19775a, InquiryFieldMap.f18678b, NextStep.GovernmentId.SelectPage.Companion, NextStep.GovernmentId.PassportNfcOption.Companion, NextStep.GovernmentId.CaptureFileType.Companion, NextStep.GovernmentId.VideoCaptureMethod.Companion, NextStep.Selfie.CaptureFileType.Companion, NextStep.Selfie.VideoCaptureMethod.Companion, Button.ButtonType.Companion, InputText.InputType.Companion, InputText.AutofillHint.Companion, RemoteImage.ContentType.Companion, GovernmentIdNfcScan.DataGroupTypes.Companion, UiComponentError.Companion, StyleElements.PositionType.Companion, StyleElements.DPSize.Companion, StyleElements.Size.Companion, StyleElements.FontName.Companion, StyleElements.FontWeight.Companion, StyleElements.Axis.Companion, JsonLogicBoolean.Companion, NumberAdapter.f19752a, RgbaHexColorAdapter.INSTANCE, PendingPageTextPosition.Companion);
+            return x0.i(CreateInquiryRequest.Data.f19264c, CreateInquirySessionResponse.GpsCollectionRequirement.Companion, CreateInquirySessionResponse.GpsPrecisionRequirement.Companion, ComponentParam.Adapter.f19915a, InquiryFieldMap.f18818b, NextStep.GovernmentId.SelectPage.Companion, NextStep.GovernmentId.PassportNfcOption.Companion, NextStep.GovernmentId.CaptureFileType.Companion, NextStep.GovernmentId.VideoCaptureMethod.Companion, NextStep.Selfie.CaptureFileType.Companion, NextStep.Selfie.VideoCaptureMethod.Companion, Button.ButtonType.Companion, InputText.InputType.Companion, InputText.AutofillHint.Companion, RemoteImage.ContentType.Companion, GovernmentIdNfcScan.DataGroupTypes.Companion, UiComponentError.Companion, StyleElements.PositionType.Companion, StyleElements.DPSize.Companion, StyleElements.Size.Companion, StyleElements.FontName.Companion, StyleElements.FontWeight.Companion, StyleElements.Axis.Companion, JsonLogicBoolean.Companion, NumberAdapter.f19892a, RgbaHexColorAdapter.INSTANCE, PendingPageTextPosition.Companion);
         }
 
         public final Set b() {
@@ -64,7 +64,7 @@ public final class f {
         }
 
         public final Set d() {
-            return x0.i(k.f18940f, com.withpersona.sdk2.inquiry.internal.i.f18900c, BackStackContainer.f18050i, bp.c.f6960i, n.f6994i);
+            return x0.i(k.f19080f, com.withpersona.sdk2.inquiry.internal.i.f19040c, BackStackContainer.f18190i, cp.c.f20115i, n.f20149i);
         }
 
         public final String e() {
@@ -85,41 +85,41 @@ public final class f {
         Intrinsics.checkNotNullParameter(serverEndpoint, "serverEndpoint");
         Intrinsics.checkNotNullParameter(webRtcServerEndpoint, "webRtcServerEndpoint");
         Intrinsics.checkNotNullParameter(fallbackModeServerEndpoint, "fallbackModeServerEndpoint");
-        this.f19317a = serverEndpoint;
-        this.f19318b = webRtcServerEndpoint;
-        this.f19319c = fallbackModeServerEndpoint;
+        this.f19457a = serverEndpoint;
+        this.f19458b = webRtcServerEndpoint;
+        this.f19459c = fallbackModeServerEndpoint;
     }
 
     public static final Set e() {
-        return f19316d.a();
+        return f19456d.a();
     }
 
     public static final Set f() {
-        return f19316d.b();
+        return f19456d.b();
     }
 
     public static final Set g() {
-        return f19316d.c();
+        return f19456d.c();
     }
 
     public static final Set h() {
-        return f19316d.d();
+        return f19456d.d();
     }
 
     public static final e0 l(Set set) {
-        return f19316d.f(set);
+        return f19456d.f(set);
     }
 
-    public final go.b a(a0 retrofit) {
+    public final ho.b a(a0 retrofit) {
         Intrinsics.checkNotNullParameter(retrofit, "retrofit");
-        Object b10 = retrofit.b(go.b.class);
+        Object b10 = retrofit.b(ho.b.class);
         Intrinsics.checkNotNullExpressionValue(b10, "create(...)");
-        return (go.b) b10;
+        return (ho.b) b10;
     }
 
     public final FallbackModeService b(a0 fallbackModeRetrofit) {
         Intrinsics.checkNotNullParameter(fallbackModeRetrofit, "fallbackModeRetrofit");
-        Object b10 = fallbackModeRetrofit.d().b(this.f19319c).d().b(FallbackModeService.class);
+        Object b10 = fallbackModeRetrofit.d().b(this.f19459c).d().b(FallbackModeService.class);
         Intrinsics.checkNotNullExpressionValue(b10, "create(...)");
         return (FallbackModeService) b10;
     }
@@ -138,28 +138,28 @@ public final class f {
         return (r) b10;
     }
 
-    public final op.a i(a0 retrofit) {
+    public final pp.a i(a0 retrofit) {
         Intrinsics.checkNotNullParameter(retrofit, "retrofit");
-        Object b10 = retrofit.b(op.a.class);
+        Object b10 = retrofit.b(pp.a.class);
         Intrinsics.checkNotNullExpressionValue(b10, "create(...)");
-        return (op.a) b10;
+        return (pp.a) b10;
     }
 
     public final String j() {
-        return this.f19317a;
+        return this.f19457a;
     }
 
-    public final rq.b k(a0 retrofit) {
+    public final sq.b k(a0 retrofit) {
         Intrinsics.checkNotNullParameter(retrofit, "retrofit");
-        Object b10 = retrofit.b(rq.b.class);
+        Object b10 = retrofit.b(sq.b.class);
         Intrinsics.checkNotNullExpressionValue(b10, "create(...)");
-        return (rq.b) b10;
+        return (sq.b) b10;
     }
 
-    public final sq.a m(a0 webRtcRetrofit) {
+    public final tq.a m(a0 webRtcRetrofit) {
         Intrinsics.checkNotNullParameter(webRtcRetrofit, "webRtcRetrofit");
-        Object b10 = webRtcRetrofit.d().b(this.f19318b).d().b(sq.a.class);
+        Object b10 = webRtcRetrofit.d().b(this.f19458b).d().b(tq.a.class);
         Intrinsics.checkNotNullExpressionValue(b10, "create(...)");
-        return (sq.a) b10;
+        return (tq.a) b10;
     }
 }

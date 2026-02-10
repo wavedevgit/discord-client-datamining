@@ -1,76 +1,61 @@
 package gf;
 
-import android.accounts.Account;
-import android.content.Context;
-import android.os.Looper;
-import com.google.android.gms.common.api.Scope;
-import ef.a;
-import ef.e;
-import java.util.Collections;
-import java.util.Set;
-import java.util.concurrent.Executor;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class g extends c implements a.f {
-    private final d Q;
-    private final Set R;
-    private final Account S;
+public abstract class g {
+
+    /* renamed from: d  reason: collision with root package name */
+    protected final h f24318d;
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public g(Context context, Looper looper, int i10, d dVar, e.a aVar, e.b bVar) {
-        this(context, looper, i10, dVar, (ff.d) aVar, (ff.k) bVar);
+    public g(h hVar) {
+        this.f24318d = hVar;
     }
 
-    private final Set j0(Set set) {
-        Set<Scope> i02 = i0(set);
-        for (Scope scope : i02) {
-            if (!set.contains(scope)) {
-                throw new IllegalStateException("Expanding scopes is not permitted, use implied scopes instead");
-            }
+    public static h c(Activity activity) {
+        return d(new f(activity));
+    }
+
+    protected static h d(f fVar) {
+        if (fVar.a()) {
+            return j1.x(fVar.d());
         }
-        return i02;
-    }
-
-    @Override // gf.c
-    protected final Set B() {
-        return this.R;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final d h0() {
-        return this.Q;
-    }
-
-    @Override // ef.a.f
-    public Set i() {
-        if (g()) {
-            return this.R;
+        if (fVar.b()) {
+            return g1.a(fVar.c());
         }
-        return Collections.EMPTY_SET;
+        throw new IllegalArgumentException("Can't get fragment for unexpected activity.");
     }
 
-    @Override // gf.c
-    public final Account t() {
-        return this.S;
+    public Activity b() {
+        Activity n10 = this.f24318d.n();
+        hf.q.l(n10);
+        return n10;
     }
 
-    @Override // gf.c
-    protected Executor v() {
-        return null;
+    public abstract void e(int i10, int i11, Intent intent);
+
+    public void g() {
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public g(Context context, Looper looper, int i10, d dVar, ff.d dVar2, ff.k kVar) {
-        this(context, looper, h.a(context), com.google.android.gms.common.f.n(), i10, dVar, (ff.d) q.l(dVar2), (ff.k) q.l(kVar));
+    public void h() {
     }
 
-    protected g(Context context, Looper looper, h hVar, com.google.android.gms.common.f fVar, int i10, d dVar, ff.d dVar2, ff.k kVar) {
-        super(context, looper, hVar, fVar, i10, dVar2 == null ? null : new f0(dVar2), kVar != null ? new g0(kVar) : null, dVar.j());
-        this.Q = dVar;
-        this.S = dVar.a();
-        this.R = j0(dVar.d());
+    public void j() {
     }
 
-    protected Set i0(Set set) {
-        return set;
+    public void k() {
+    }
+
+    public void f(Bundle bundle) {
+    }
+
+    public void i(Bundle bundle) {
+    }
+
+    public void a(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
     }
 }

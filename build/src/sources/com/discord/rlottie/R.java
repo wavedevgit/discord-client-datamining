@@ -629,20 +629,20 @@ public final class R {
         public static int btn_radio_off_to_on_mtrl_animation = 0x7f0800a5;
         public static int btn_radio_on_mtrl = 0x7f0800a6;
         public static int btn_radio_on_to_off_mtrl_animation = 0x7f0800a7;
-        public static int notification_action_background = 0x7f0806d0;
-        public static int notification_bg = 0x7f0806d1;
-        public static int notification_bg_low = 0x7f0806d2;
-        public static int notification_bg_low_normal = 0x7f0806d3;
-        public static int notification_bg_low_pressed = 0x7f0806d4;
-        public static int notification_bg_normal = 0x7f0806d5;
-        public static int notification_bg_normal_pressed = 0x7f0806d6;
-        public static int notification_icon_background = 0x7f0806d7;
-        public static int notification_template_icon_bg = 0x7f0806d9;
-        public static int notification_template_icon_low_bg = 0x7f0806da;
-        public static int notification_tile_bg = 0x7f0806db;
-        public static int notify_panel_notification_icon_bg = 0x7f0806dc;
-        public static int tooltip_frame_dark = 0x7f080741;
-        public static int tooltip_frame_light = 0x7f080742;
+        public static int notification_action_background = 0x7f0806cd;
+        public static int notification_bg = 0x7f0806ce;
+        public static int notification_bg_low = 0x7f0806cf;
+        public static int notification_bg_low_normal = 0x7f0806d0;
+        public static int notification_bg_low_pressed = 0x7f0806d1;
+        public static int notification_bg_normal = 0x7f0806d2;
+        public static int notification_bg_normal_pressed = 0x7f0806d3;
+        public static int notification_icon_background = 0x7f0806d4;
+        public static int notification_template_icon_bg = 0x7f0806d6;
+        public static int notification_template_icon_low_bg = 0x7f0806d7;
+        public static int notification_tile_bg = 0x7f0806d8;
+        public static int notify_panel_notification_icon_bg = 0x7f0806d9;
+        public static int tooltip_frame_dark = 0x7f08073e;
+        public static int tooltip_frame_light = 0x7f08073f;
 
         private drawable() {
         }
@@ -742,7 +742,7 @@ public final class R {
         public static int off = 0x7f0a039c;
 
         /* renamed from: on  reason: collision with root package name */
-        public static int f9677on = 0x7f0a039d;
+        public static int f9817on = 0x7f0a039d;
         public static int parentPanel = 0x7f0a03d2;
         public static int progress_circular = 0x7f0a0412;
         public static int progress_horizontal = 0x7f0a0413;
@@ -794,7 +794,7 @@ public final class R {
         public static int uniform = 0x7f0a057e;
 
         /* renamed from: up  reason: collision with root package name */
-        public static int f9678up = 0x7f0a0580;
+        public static int f9818up = 0x7f0a0580;
         public static int wrap_content = 0x7f0a05c8;
 
         private id() {

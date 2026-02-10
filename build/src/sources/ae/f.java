@@ -1,48 +1,70 @@
 package ae;
 
-import java.util.Collections;
-import java.util.List;
-import zd.g;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import java.nio.ByteBuffer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class f implements g {
+public abstract class f extends rc.h implements h {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final List f598d;
+    /* renamed from: n  reason: collision with root package name */
+    private final String f746n;
 
-    public f(List list) {
-        this.f598d = list;
-    }
-
-    @Override // zd.g
-    public int a(long j10) {
-        if (j10 < 0) {
-            return 0;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public class a extends l {
+        a() {
         }
-        return -1;
-    }
 
-    @Override // zd.g
-    public List d(long j10) {
-        if (j10 >= 0) {
-            return this.f598d;
+        @Override // rc.g
+        public void t() {
+            f.this.r(this);
         }
-        return Collections.EMPTY_LIST;
     }
 
-    @Override // zd.g
-    public long e(int i10) {
-        boolean z10;
-        if (i10 == 0) {
-            z10 = true;
-        } else {
-            z10 = false;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public f(String str) {
+        super(new k[2], new l[2]);
+        this.f746n = str;
+        u(IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // rc.h
+    /* renamed from: A */
+    public final i j(k kVar, l lVar, boolean z10) {
+        try {
+            ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(kVar.f47775i);
+            lVar.u(kVar.f47777p, z(byteBuffer.array(), byteBuffer.limit(), z10), kVar.f749t);
+            lVar.i(Integer.MIN_VALUE);
+            return null;
+        } catch (i e10) {
+            return e10;
         }
-        ne.a.a(z10);
-        return 0L;
     }
 
-    @Override // zd.g
-    public int f() {
-        return 1;
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // rc.h
+    /* renamed from: w */
+    public final k g() {
+        return new k();
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // rc.h
+    /* renamed from: x */
+    public final l h() {
+        return new a();
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // rc.h
+    /* renamed from: y */
+    public final i i(Throwable th2) {
+        return new i("Unexpected decode error", th2);
+    }
+
+    protected abstract g z(byte[] bArr, int i10, boolean z10);
+
+    @Override // ae.h
+    public void a(long j10) {
     }
 }

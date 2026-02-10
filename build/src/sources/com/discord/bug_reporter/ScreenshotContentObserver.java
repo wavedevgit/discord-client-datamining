@@ -7,9 +7,9 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
-import bs.c;
 import com.discord.logging.Log;
 import com.facebook.react.devsupport.StackTraceHelper;
+import cs.c;
 import java.util.Locale;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -64,7 +64,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         private final String fileName;
 
         /* renamed from: id  reason: collision with root package name */
-        private final long f8487id;
+        private final long f8627id;
         @NotNull
         private final String path;
         @NotNull
@@ -76,7 +76,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
             Intrinsics.checkNotNullParameter(fileName, "fileName");
             Intrinsics.checkNotNullParameter(relativePath, "relativePath");
             Intrinsics.checkNotNullParameter(uri, "uri");
-            this.f8487id = j10;
+            this.f8627id = j10;
             this.fileName = fileName;
             this.relativePath = relativePath;
             this.uri = uri;
@@ -86,7 +86,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
 
         public static /* synthetic */ ScreenshotData copy$default(ScreenshotData screenshotData, long j10, String str, String str2, Uri uri, long j11, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                j10 = screenshotData.f8487id;
+                j10 = screenshotData.f8627id;
             }
             long j12 = j10;
             if ((i10 & 2) != 0) {
@@ -108,7 +108,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long component1() {
-            return this.f8487id;
+            return this.f8627id;
         }
 
         @NotNull
@@ -144,7 +144,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
             }
             if (obj instanceof ScreenshotData) {
                 ScreenshotData screenshotData = (ScreenshotData) obj;
-                return this.f8487id == screenshotData.f8487id && Intrinsics.areEqual(this.fileName, screenshotData.fileName) && Intrinsics.areEqual(this.relativePath, screenshotData.relativePath) && Intrinsics.areEqual(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
+                return this.f8627id == screenshotData.f8627id && Intrinsics.areEqual(this.fileName, screenshotData.fileName) && Intrinsics.areEqual(this.relativePath, screenshotData.relativePath) && Intrinsics.areEqual(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
             }
             return false;
         }
@@ -159,7 +159,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long getId() {
-            return this.f8487id;
+            return this.f8627id;
         }
 
         @NotNull
@@ -178,12 +178,12 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public int hashCode() {
-            return (((((((Long.hashCode(this.f8487id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + Long.hashCode(this.dateAdded);
+            return (((((((Long.hashCode(this.f8627id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + Long.hashCode(this.dateAdded);
         }
 
         @NotNull
         public String toString() {
-            long j10 = this.f8487id;
+            long j10 = this.f8627id;
             String str = this.fileName;
             String str2 = this.relativePath;
             Uri uri = this.uri;

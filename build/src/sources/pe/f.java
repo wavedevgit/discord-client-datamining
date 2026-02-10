@@ -1,200 +1,137 @@
 package pe;
 
-import java.util.ArrayList;
-import java.util.zip.Inflater;
-import ne.g0;
-import ne.h0;
-import ne.w0;
-import pe.e;
+import java.util.Collections;
+import java.util.List;
+import mc.l0;
+import oe.d0;
+import oe.h0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class f {
-    public static e a(byte[] bArr, int i10) {
-        ArrayList arrayList;
-        h0 h0Var = new h0(bArr);
+public final class f {
+
+    /* renamed from: a  reason: collision with root package name */
+    public final List f43132a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final int f43133b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final int f43134c;
+
+    /* renamed from: d  reason: collision with root package name */
+    public final int f43135d;
+
+    /* renamed from: e  reason: collision with root package name */
+    public final int f43136e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public final int f43137f;
+
+    /* renamed from: g  reason: collision with root package name */
+    public final int f43138g;
+
+    /* renamed from: h  reason: collision with root package name */
+    public final float f43139h;
+
+    /* renamed from: i  reason: collision with root package name */
+    public final String f43140i;
+
+    private f(List list, int i10, int i11, int i12, int i13, int i14, int i15, float f10, String str) {
+        this.f43132a = list;
+        this.f43133b = i10;
+        this.f43134c = i11;
+        this.f43135d = i12;
+        this.f43136e = i13;
+        this.f43137f = i14;
+        this.f43138g = i15;
+        this.f43139h = f10;
+        this.f43140i = str;
+    }
+
+    public static f a(h0 h0Var) {
+        boolean z10;
+        List singletonList;
+        int i10;
         try {
-            if (c(h0Var)) {
-                arrayList = f(h0Var);
+            h0Var.V(21);
+            int H = h0Var.H() & 3;
+            int H2 = h0Var.H();
+            int f10 = h0Var.f();
+            int i11 = 0;
+            int i12 = 0;
+            int i13 = 0;
+            while (true) {
+                z10 = true;
+                if (i12 >= H2) {
+                    break;
+                }
+                h0Var.V(1);
+                int N = h0Var.N();
+                for (int i14 = 0; i14 < N; i14++) {
+                    int N2 = h0Var.N();
+                    i13 += N2 + 4;
+                    h0Var.V(N2);
+                }
+                i12++;
+            }
+            h0Var.U(f10);
+            byte[] bArr = new byte[i13];
+            int i15 = -1;
+            int i16 = -1;
+            int i17 = -1;
+            int i18 = -1;
+            int i19 = -1;
+            float f11 = 1.0f;
+            String str = null;
+            int i20 = 0;
+            int i21 = 0;
+            while (i20 < H2) {
+                int H3 = h0Var.H() & 63;
+                int N3 = h0Var.N();
+                int i22 = i11;
+                while (i22 < N3) {
+                    int N4 = h0Var.N();
+                    boolean z11 = z10;
+                    byte[] bArr2 = d0.f40564a;
+                    int i23 = H;
+                    System.arraycopy(bArr2, i11, bArr, i21, bArr2.length);
+                    int length = i21 + bArr2.length;
+                    System.arraycopy(h0Var.e(), h0Var.f(), bArr, length, N4);
+                    if (H3 == 33 && i22 == 0) {
+                        d0.a h10 = d0.h(bArr, length, length + N4);
+                        i15 = h10.f40578k;
+                        i16 = h10.f40579l;
+                        i17 = h10.f40581n;
+                        int i24 = h10.f40582o;
+                        int i25 = h10.f40583p;
+                        i10 = H2;
+                        float f12 = h10.f40580m;
+                        str = oe.f.c(h10.f40568a, h10.f40569b, h10.f40570c, h10.f40571d, h10.f40575h, h10.f40576i);
+                        i19 = i25;
+                        f11 = f12;
+                        i18 = i24;
+                    } else {
+                        i10 = H2;
+                    }
+                    i21 = length + N4;
+                    h0Var.V(N4);
+                    i22++;
+                    z10 = z11;
+                    H = i23;
+                    H2 = i10;
+                    i11 = 0;
+                }
+                i20++;
+                i11 = 0;
+            }
+            int i26 = H;
+            if (i13 == 0) {
+                singletonList = Collections.EMPTY_LIST;
             } else {
-                arrayList = e(h0Var);
+                singletonList = Collections.singletonList(bArr);
             }
-        } catch (ArrayIndexOutOfBoundsException unused) {
-            arrayList = null;
+            return new f(singletonList, i26 + 1, i15, i16, i17, i18, i19, f11, str);
+        } catch (ArrayIndexOutOfBoundsException e10) {
+            throw l0.a("Error parsing HEVC config", e10);
         }
-        if (arrayList == null) {
-            return null;
-        }
-        int size = arrayList.size();
-        if (size != 1) {
-            if (size != 2) {
-                return null;
-            }
-            return new e((e.a) arrayList.get(0), (e.a) arrayList.get(1), i10);
-        }
-        return new e((e.a) arrayList.get(0), i10);
-    }
-
-    private static int b(int i10) {
-        return (-(i10 & 1)) ^ (i10 >> 1);
-    }
-
-    private static boolean c(h0 h0Var) {
-        h0Var.V(4);
-        int q10 = h0Var.q();
-        h0Var.U(0);
-        if (q10 != 1886547818) {
-            return false;
-        }
-        return true;
-    }
-
-    private static e.a d(h0 h0Var) {
-        int q10 = h0Var.q();
-        e.a aVar = null;
-        if (q10 > 10000) {
-            return null;
-        }
-        float[] fArr = new float[q10];
-        for (int i10 = 0; i10 < q10; i10++) {
-            fArr[i10] = h0Var.p();
-        }
-        int q11 = h0Var.q();
-        if (q11 > 32000) {
-            return null;
-        }
-        double d10 = 2.0d;
-        double log = Math.log(2.0d);
-        int ceil = (int) Math.ceil(Math.log(q10 * 2.0d) / log);
-        g0 g0Var = new g0(h0Var.e());
-        int i11 = 8;
-        g0Var.p(h0Var.f() * 8);
-        float[] fArr2 = new float[q11 * 5];
-        int[] iArr = new int[5];
-        int i12 = 0;
-        int i13 = 0;
-        while (i12 < q11) {
-            e.a aVar2 = aVar;
-            int i14 = 0;
-            while (i14 < 5) {
-                int b10 = iArr[i14] + b(g0Var.h(ceil));
-                if (b10 < q10 && b10 >= 0) {
-                    fArr2[i13] = fArr[b10];
-                    iArr[i14] = b10;
-                    i14++;
-                    i13++;
-                } else {
-                    return aVar2;
-                }
-            }
-            i12++;
-            aVar = aVar2;
-        }
-        e.a aVar3 = aVar;
-        g0Var.p((g0Var.e() + 7) & (-8));
-        int i15 = 32;
-        int h10 = g0Var.h(32);
-        e.b[] bVarArr = new e.b[h10];
-        int i16 = 0;
-        while (i16 < h10) {
-            int h11 = g0Var.h(i11);
-            int h12 = g0Var.h(i11);
-            int h13 = g0Var.h(i15);
-            if (h13 > 128000) {
-                return aVar3;
-            }
-            int i17 = h10;
-            int ceil2 = (int) Math.ceil(Math.log(q11 * d10) / log);
-            float[] fArr3 = new float[h13 * 3];
-            float[] fArr4 = new float[h13 * 2];
-            int i18 = 0;
-            int i19 = 0;
-            while (i18 < h13) {
-                int b11 = i19 + b(g0Var.h(ceil2));
-                if (b11 >= 0 && b11 < q11) {
-                    int i20 = i18 * 3;
-                    int i21 = b11 * 5;
-                    fArr3[i20] = fArr2[i21];
-                    fArr3[i20 + 1] = fArr2[i21 + 1];
-                    fArr3[i20 + 2] = fArr2[i21 + 2];
-                    int i22 = i18 * 2;
-                    fArr4[i22] = fArr2[i21 + 3];
-                    fArr4[i22 + 1] = fArr2[i21 + 4];
-                    i18++;
-                    i19 = b11;
-                } else {
-                    return aVar3;
-                }
-            }
-            bVarArr[i16] = new e.b(h11, fArr3, fArr4, h12);
-            i16++;
-            h10 = i17;
-            i15 = 32;
-            d10 = 2.0d;
-            i11 = 8;
-        }
-        return new e.a(bVarArr);
-    }
-
-    private static ArrayList e(h0 h0Var) {
-        if (h0Var.H() != 0) {
-            return null;
-        }
-        h0Var.V(7);
-        int q10 = h0Var.q();
-        if (q10 == 1684433976) {
-            h0 h0Var2 = new h0();
-            Inflater inflater = new Inflater(true);
-            try {
-                if (!w0.A0(h0Var, h0Var2, inflater)) {
-                    return null;
-                }
-                inflater.end();
-                h0Var = h0Var2;
-            } finally {
-                inflater.end();
-            }
-        } else if (q10 != 1918990112) {
-            return null;
-        }
-        return g(h0Var);
-    }
-
-    private static ArrayList f(h0 h0Var) {
-        int q10;
-        h0Var.V(8);
-        int f10 = h0Var.f();
-        int g10 = h0Var.g();
-        while (f10 < g10 && (q10 = h0Var.q() + f10) > f10 && q10 <= g10) {
-            int q11 = h0Var.q();
-            if (q11 != 2037673328 && q11 != 1836279920) {
-                h0Var.U(q10);
-                f10 = q10;
-            } else {
-                h0Var.T(q10);
-                return e(h0Var);
-            }
-        }
-        return null;
-    }
-
-    private static ArrayList g(h0 h0Var) {
-        ArrayList arrayList = new ArrayList();
-        int f10 = h0Var.f();
-        int g10 = h0Var.g();
-        while (f10 < g10) {
-            int q10 = h0Var.q() + f10;
-            if (q10 <= f10 || q10 > g10) {
-                return null;
-            }
-            if (h0Var.q() == 1835365224) {
-                e.a d10 = d(h0Var);
-                if (d10 == null) {
-                    return null;
-                }
-                arrayList.add(d10);
-            }
-            h0Var.U(q10);
-            f10 = q10;
-        }
-        return arrayList;
     }
 }

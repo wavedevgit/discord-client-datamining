@@ -1,22 +1,48 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0) { // Environment: var0
-        _fun94930: for (var _fun94930_ip = 0;;) switch (_fun94930_ip) {
+        _fun94917: for (var _fun94917_ip = 0;;) switch (_fun94917_ip) {
             case 0:
-                var2 = arg0;
-                var1 = '+';
-                if (!(var1 !== var2)) {
-                    _fun94930_ip = 23;
-                    continue _fun94930
+                var11 = arg0;
+                var1 = this;
+                if (var11) {
+                    _fun94917_ip = 11;
+                    continue _fun94917
                 }
+            case 9:
+                var11 = {};
             case 11:
-                var0 = var2.split;
-                var0 = var0.bind(var2)(var1);
-                _fun94930_ip = 33;
-                continue _fun94930;
-            case 23:
-                var0 = ['+'];
-            case 33:
+                var9 = var1.sequenceLevels;
+                var0 = false;
+                var5 = 0;
+                var3 = false;
+                var2 = false;
+                for (var6 in var9)
+                    case 33: {
+                        var12 = var3;
+                        var2 = var12;
+                        case 48: var14 = var6;
+                        var13 = var11[var14];
+                        var3 = true;
+                        if (var13) {
+                            _fun94917_ip = 33;
+                            continue _fun94917
+                        }
+                        case 60: var13 = var1.sequenceLevels;
+                        var13[var14] = var5;
+                        var3 = var12;
+                        _fun94917_ip = 33;
+                        continue _fun94917;
+                    }
+            case 75:
+                if (var2) {
+                    _fun94917_ip = 84;
+                    continue _fun94917
+                }
+            case 78:
+                var1.nextExpectedAction = var0;
+            case 84:
+                var0 = undefined;
                 return var0;
         }
     };

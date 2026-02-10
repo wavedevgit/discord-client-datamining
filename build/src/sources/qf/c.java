@@ -1,40 +1,30 @@
 package qf;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import android.content.Context;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c extends hf.a {
+public class c {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final int f46972d;
+    /* renamed from: b  reason: collision with root package name */
+    private static final c f45452b = new c();
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f46971e = new a(null);
-    @NotNull
-    public static final Parcelable.Creator<c> CREATOR = new d();
+    /* renamed from: a  reason: collision with root package name */
+    private b f45453a = null;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static b a(Context context) {
+        return f45452b.b(context);
+    }
+
+    public final synchronized b b(Context context) {
+        try {
+            if (this.f45453a == null) {
+                if (context.getApplicationContext() != null) {
+                    context = context.getApplicationContext();
+                }
+                this.f45453a = new b(context);
+            }
+        } catch (Throwable th2) {
+            throw th2;
         }
-    }
-
-    public c(int i10) {
-        this.f46972d = i10;
-    }
-
-    public final int b() {
-        return this.f46972d;
-    }
-
-    @Override // android.os.Parcelable
-    public void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        int a10 = hf.c.a(dest);
-        hf.c.l(dest, 1, b());
-        hf.c.b(dest, a10);
+        return this.f45453a;
     }
 }

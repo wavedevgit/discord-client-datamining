@@ -68,7 +68,7 @@ public abstract class ReactContext extends ContextWrapper {
         }
     }
 
-    @fb.a
+    @gb.a
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface RCTDeviceEventEmitter extends JavaScriptModule {
         void emit(@NonNull String str, Object obj);
@@ -129,19 +129,19 @@ public abstract class ReactContext extends ContextWrapper {
     }
 
     public void assertOnJSQueueThread() {
-        ((MessageQueueThread) db.a.c(this.mJSMessageQueueThread)).assertIsOnThread();
+        ((MessageQueueThread) eb.a.c(this.mJSMessageQueueThread)).assertIsOnThread();
     }
 
     public void assertOnNativeModulesQueueThread() {
         if (this.mIsInitialized) {
-            ((MessageQueueThread) db.a.c(this.mNativeModulesMessageQueueThread)).assertIsOnThread();
+            ((MessageQueueThread) eb.a.c(this.mNativeModulesMessageQueueThread)).assertIsOnThread();
             return;
         }
         throw new IllegalStateException("Tried to call assertOnNativeModulesQueueThread() on an uninitialized ReactContext");
     }
 
     public void assertOnUiQueueThread() {
-        ((MessageQueueThread) db.a.c(this.mUiMessageQueueThread)).assertIsOnThread();
+        ((MessageQueueThread) eb.a.c(this.mUiMessageQueueThread)).assertIsOnThread();
     }
 
     public abstract void destroy();
@@ -254,7 +254,7 @@ public abstract class ReactContext extends ContextWrapper {
     }
 
     public synchronized void initializeMessageQueueThreads(ReactQueueConfiguration reactQueueConfiguration) {
-        p8.a.b(TAG, "initializeMessageQueueThreads() is called.");
+        q8.a.b(TAG, "initializeMessageQueueThreads() is called.");
         if (this.mUiMessageQueueThread == null && this.mNativeModulesMessageQueueThread == null && this.mJSMessageQueueThread == null) {
             this.mQueueConfig = reactQueueConfiguration;
             this.mUiMessageQueueThread = reactQueueConfiguration.getUIQueueThread();
@@ -290,15 +290,15 @@ public abstract class ReactContext extends ContextWrapper {
     public abstract boolean isBridgeless();
 
     public boolean isOnJSQueueThread() {
-        return ((MessageQueueThread) db.a.c(this.mJSMessageQueueThread)).isOnThread();
+        return ((MessageQueueThread) eb.a.c(this.mJSMessageQueueThread)).isOnThread();
     }
 
     public boolean isOnNativeModulesQueueThread() {
-        return ((MessageQueueThread) db.a.c(this.mNativeModulesMessageQueueThread)).isOnThread();
+        return ((MessageQueueThread) eb.a.c(this.mNativeModulesMessageQueueThread)).isOnThread();
     }
 
     public boolean isOnUiQueueThread() {
-        return ((MessageQueueThread) db.a.c(this.mUiMessageQueueThread)).isOnThread();
+        return ((MessageQueueThread) eb.a.c(this.mUiMessageQueueThread)).isOnThread();
     }
 
     public void onActivityResult(Activity activity, int i10, int i11, Intent intent) {
@@ -410,15 +410,15 @@ public abstract class ReactContext extends ContextWrapper {
     }
 
     public boolean runOnJSQueueThread(Runnable runnable) {
-        return ((MessageQueueThread) db.a.c(this.mJSMessageQueueThread)).runOnQueue(runnable);
+        return ((MessageQueueThread) eb.a.c(this.mJSMessageQueueThread)).runOnQueue(runnable);
     }
 
     public void runOnNativeModulesQueueThread(Runnable runnable) {
-        ((MessageQueueThread) db.a.c(this.mNativeModulesMessageQueueThread)).runOnQueue(runnable);
+        ((MessageQueueThread) eb.a.c(this.mNativeModulesMessageQueueThread)).runOnQueue(runnable);
     }
 
     public void runOnUiQueueThread(Runnable runnable) {
-        ((MessageQueueThread) db.a.c(this.mUiMessageQueueThread)).runOnQueue(runnable);
+        ((MessageQueueThread) eb.a.c(this.mUiMessageQueueThread)).runOnQueue(runnable);
     }
 
     public void setJSExceptionHandler(JSExceptionHandler jSExceptionHandler) {
@@ -448,7 +448,7 @@ public abstract class ReactContext extends ContextWrapper {
 
     public void assertOnNativeModulesQueueThread(String str) {
         if (this.mIsInitialized) {
-            ((MessageQueueThread) db.a.c(this.mNativeModulesMessageQueueThread)).assertIsOnThread(str);
+            ((MessageQueueThread) eb.a.c(this.mNativeModulesMessageQueueThread)).assertIsOnThread(str);
             return;
         }
         throw new IllegalStateException("Tried to call assertOnNativeModulesQueueThread(message) on an uninitialized ReactContext");

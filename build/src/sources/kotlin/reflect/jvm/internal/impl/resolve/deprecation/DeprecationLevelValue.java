@@ -1,25 +1,25 @@
 package kotlin.reflect.jvm.internal.impl.resolve.deprecation;
 
 import kotlin.enums.EnumEntries;
-import xr.a;
+import yr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class DeprecationLevelValue {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ DeprecationLevelValue[] f34210d;
+    private static final /* synthetic */ DeprecationLevelValue[] f33919d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34211e;
+    private static final /* synthetic */ EnumEntries f33920e;
     public static final DeprecationLevelValue WARNING = new DeprecationLevelValue("WARNING", 0);
     public static final DeprecationLevelValue ERROR = new DeprecationLevelValue("ERROR", 1);
     public static final DeprecationLevelValue HIDDEN = new DeprecationLevelValue("HIDDEN", 2);
 
     static {
         DeprecationLevelValue[] a10 = a();
-        f34210d = a10;
-        f34211e = a.a(a10);
+        f33919d = a10;
+        f33920e = a.a(a10);
     }
 
     private DeprecationLevelValue(String str, int i10) {
@@ -34,6 +34,6 @@ public final class DeprecationLevelValue {
     }
 
     public static DeprecationLevelValue[] values() {
-        return (DeprecationLevelValue[]) f34210d.clone();
+        return (DeprecationLevelValue[]) f33919d.clone();
     }
 }

@@ -1,35 +1,52 @@
 package ka;
 
-import android.graphics.Bitmap;
-import com.facebook.common.references.CloseableReference;
-import com.facebook.imagepipeline.bitmaps.PlatformBitmapFactory;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a extends PlatformBitmapFactory {
+public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final va.d f31569a;
+    public static final C0463a f30820a = new C0463a(null);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final na.a f31570b;
+    /* renamed from: ka.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class C0463a {
+        public /* synthetic */ C0463a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-    public a(va.d bitmapPool, na.a closeableReferenceFactory) {
-        Intrinsics.checkNotNullParameter(bitmapPool, "bitmapPool");
-        Intrinsics.checkNotNullParameter(closeableReferenceFactory, "closeableReferenceFactory");
-        this.f31569a = bitmapPool;
-        this.f31570b = closeableReferenceFactory;
+        private C0463a() {
+        }
     }
 
-    @Override // com.facebook.imagepipeline.bitmaps.PlatformBitmapFactory
-    public CloseableReference d(int i10, int i11, Bitmap.Config bitmapConfig) {
-        Intrinsics.checkNotNullParameter(bitmapConfig, "bitmapConfig");
-        Bitmap bitmap = (Bitmap) this.f31569a.get(cb.d.i(i10, i11, bitmapConfig));
-        if (bitmap.getAllocationByteCount() >= i10 * i11 * cb.d.h(bitmapConfig)) {
-            bitmap.reconfigure(i10, i11, bitmapConfig);
-            CloseableReference c10 = this.f31570b.c(bitmap, this.f31569a);
-            Intrinsics.checkNotNullExpressionValue(c10, "create(...)");
-            return c10;
+    public final void a(int[] frameDurationMs) {
+        Intrinsics.checkNotNullParameter(frameDurationMs, "frameDurationMs");
+        int length = frameDurationMs.length;
+        for (int i10 = 0; i10 < length; i10++) {
+            if (frameDurationMs[i10] < 11) {
+                frameDurationMs[i10] = 100;
+            }
         }
-        throw new IllegalStateException("Check failed.");
+    }
+
+    public final int[] b(int[] frameDurationsMs) {
+        Intrinsics.checkNotNullParameter(frameDurationsMs, "frameDurationsMs");
+        int[] iArr = new int[frameDurationsMs.length];
+        int length = frameDurationsMs.length;
+        int i10 = 0;
+        for (int i11 = 0; i11 < length; i11++) {
+            iArr[i11] = i10;
+            i10 += frameDurationsMs[i11];
+        }
+        return iArr;
+    }
+
+    public final int c(int[] frameDurationMs) {
+        Intrinsics.checkNotNullParameter(frameDurationMs, "frameDurationMs");
+        int i10 = 0;
+        for (int i11 : frameDurationMs) {
+            i10 += i11;
+        }
+        return i10;
     }
 }

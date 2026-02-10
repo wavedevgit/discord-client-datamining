@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.governmentid.network;
 
-import an.c;
+import bn.c;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -17,19 +17,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AutoClassifyResponse_IdRejectedResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18621a;
+    private final m.b f18761a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18622b;
+    private final h f18762b;
 
     public AutoClassifyResponse_IdRejectedResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18621a = a10;
+        this.f18761a = a10;
         h f10 = moshi.f(a0.j(List.class, AutoClassifyResponse.IdClassesForCountry.class), x0.d(), "idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18622b = f10;
+        this.f18762b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -39,14 +39,14 @@ public final class AutoClassifyResponse_IdRejectedResponseJsonAdapter extends h 
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18621a);
+            int J = reader.J(this.f18761a);
             if (J != -1) {
-                if (J == 0 && (list = (List) this.f18622b.fromJson(reader)) == null) {
+                if (J == 0 && (list = (List) this.f18762b.fromJson(reader)) == null) {
                     throw c.x("idClassesByCountries", "idClassesByCountries", reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -63,7 +63,7 @@ public final class AutoClassifyResponse_IdRejectedResponseJsonAdapter extends h 
         if (idRejectedResponse != null) {
             writer.k();
             writer.J("idClassesByCountries");
-            this.f18622b.toJson(writer, idRejectedResponse.a());
+            this.f18762b.toJson(writer, idRejectedResponse.a());
             writer.s();
             return;
         }

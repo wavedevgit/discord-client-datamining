@@ -5,125 +5,125 @@ import java.io.Writer;
 public final class u1 implements f3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final io.sentry.vendor.gson.stream.c f28976a;
+    private final io.sentry.vendor.gson.stream.c f29176a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final t1 f28977b;
+    private final t1 f29177b;
 
     public u1(Writer writer, int i10) {
-        this.f28976a = new io.sentry.vendor.gson.stream.c(writer);
-        this.f28977b = new t1(i10);
+        this.f29176a = new io.sentry.vendor.gson.stream.c(writer);
+        this.f29177b = new t1(i10);
     }
 
     @Override // io.sentry.f3
     public void A(boolean z10) {
-        this.f28976a.A(z10);
+        this.f29176a.A(z10);
     }
 
     @Override // io.sentry.f3
     /* renamed from: B */
     public u1 f(String str) {
-        this.f28976a.Y0(str);
+        this.f29176a.W0(str);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: C */
     public u1 d(boolean z10) {
-        this.f28976a.d1(z10);
+        this.f29176a.a1(z10);
         return this;
     }
 
     @Override // io.sentry.f3
     public String a() {
-        return this.f28976a.y();
+        return this.f29176a.y();
     }
 
     @Override // io.sentry.f3
     public f3 g(String str) {
-        this.f28976a.z(str);
+        this.f29176a.z(str);
         return this;
     }
 
     @Override // io.sentry.f3
     public void h(String str) {
-        this.f28976a.I0(str);
+        this.f29176a.G0(str);
     }
 
     @Override // io.sentry.f3
     /* renamed from: m */
     public u1 x() {
-        this.f28976a.k();
+        this.f29176a.k();
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: n */
     public u1 u() {
-        this.f28976a.m();
+        this.f29176a.m();
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: o */
     public u1 v() {
-        this.f28976a.p();
+        this.f29176a.p();
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: p */
     public u1 D() {
-        this.f28976a.s();
+        this.f29176a.s();
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: q */
     public u1 e(String str) {
-        this.f28976a.C(str);
+        this.f29176a.C(str);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: r */
     public u1 l() {
-        this.f28976a.J();
+        this.f29176a.J();
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: s */
     public u1 c(double d10) {
-        this.f28976a.K0(d10);
+        this.f29176a.J0(d10);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: t */
     public u1 b(long j10) {
-        this.f28976a.L0(j10);
+        this.f29176a.O0(j10);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: w */
     public u1 j(ILogger iLogger, Object obj) {
-        this.f28977b.a(this, iLogger, obj);
+        this.f29177b.a(this, iLogger, obj);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: y */
     public u1 k(Boolean bool) {
-        this.f28976a.O0(bool);
+        this.f29176a.R0(bool);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: z */
     public u1 i(Number number) {
-        this.f28976a.V0(number);
+        this.f29176a.V0(number);
         return this;
     }
 }

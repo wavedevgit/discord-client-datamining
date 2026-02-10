@@ -3,7 +3,7 @@ package com.otaliastudios.zoom;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f17298a = new a();
+    public static final a f17438a = new a();
 
     private a() {
     }

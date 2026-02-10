@@ -1,5 +1,6 @@
 package com.facebook.drawee.backends.pipeline;
 
+import aa.g;
 import android.content.Context;
 import android.net.Uri;
 import com.facebook.cache.common.CacheKey;
@@ -11,44 +12,43 @@ import com.facebook.imagepipeline.core.ImagePipeline;
 import com.facebook.imagepipeline.listener.RequestListener;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
-import e9.f;
+import f9.f;
 import java.util.Set;
-import la.k;
-import o8.e;
-import ya.b;
-import z9.g;
+import ma.k;
+import p8.e;
+import za.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBuilder {
 
     /* renamed from: t  reason: collision with root package name */
-    private final ImagePipeline f9846t;
+    private final ImagePipeline f9986t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final f f9847u;
+    private final f f9987u;
 
     /* renamed from: v  reason: collision with root package name */
-    private e f9848v;
+    private e f9988v;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f9849a;
+        static final /* synthetic */ int[] f9989a;
 
         static {
             int[] iArr = new int[AbstractDraweeControllerBuilder.c.values().length];
-            f9849a = iArr;
+            f9989a = iArr;
             try {
                 iArr[AbstractDraweeControllerBuilder.c.FULL_FETCH.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f9849a[AbstractDraweeControllerBuilder.c.DISK_CACHE.ordinal()] = 2;
+                f9989a[AbstractDraweeControllerBuilder.c.DISK_CACHE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f9849a[AbstractDraweeControllerBuilder.c.BITMAP_MEMORY_CACHE.ordinal()] = 3;
+                f9989a[AbstractDraweeControllerBuilder.c.BITMAP_MEMORY_CACHE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -56,12 +56,12 @@ public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBui
 
     public PipelineDraweeControllerBuilder(Context context, f fVar, ImagePipeline imagePipeline, Set set, Set set2) {
         super(context, set, set2);
-        this.f9846t = imagePipeline;
-        this.f9847u = fVar;
+        this.f9986t = imagePipeline;
+        this.f9987u = fVar;
     }
 
     public static ImageRequest.RequestLevel I(AbstractDraweeControllerBuilder.c cVar) {
-        int i10 = a.f9849a[cVar.ordinal()];
+        int i10 = a.f9989a[cVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -76,7 +76,7 @@ public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBui
 
     private CacheKey J() {
         ImageRequest imageRequest = (ImageRequest) n();
-        k r10 = this.f9846t.r();
+        k r10 = this.f9986t.r();
         if (r10 != null && imageRequest != null) {
             if (imageRequest.getPostprocessor() != null) {
                 return r10.getPostprocessedBitmapCacheKey(imageRequest, f());
@@ -90,7 +90,7 @@ public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBui
     @Override // com.facebook.drawee.controller.AbstractDraweeControllerBuilder
     /* renamed from: K */
     public DataSource i(DraweeController draweeController, String str, ImageRequest imageRequest, Object obj, AbstractDraweeControllerBuilder.c cVar) {
-        return this.f9846t.m(imageRequest, obj, I(cVar), L(draweeController), str);
+        return this.f9986t.m(imageRequest, obj, I(cVar), L(draweeController), str);
     }
 
     protected RequestListener L(DraweeController draweeController) {
@@ -114,10 +114,10 @@ public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBui
             if (p10 instanceof com.facebook.drawee.backends.pipeline.a) {
                 c10 = (com.facebook.drawee.backends.pipeline.a) p10;
             } else {
-                c10 = this.f9847u.c();
+                c10 = this.f9987u.c();
             }
             com.facebook.drawee.backends.pipeline.a aVar = c10;
-            aVar.m0(y(aVar, e10), e10, J(), f(), this.f9848v);
+            aVar.m0(y(aVar, e10), e10, J(), f(), this.f9988v);
             aVar.n0(null, this);
             if (b.d()) {
                 b.b();
@@ -135,7 +135,7 @@ public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBui
         return (PipelineDraweeControllerBuilder) r();
     }
 
-    @Override // n9.b
+    @Override // o9.b
     /* renamed from: O */
     public PipelineDraweeControllerBuilder a(Uri uri) {
         if (uri == null) {

@@ -12,14 +12,14 @@ public abstract class b extends a {
     }
 
     protected void inflateHierarchy(Context context, AttributeSet attributeSet) {
-        if (ya.b.d()) {
-            ya.b.a("GenericDraweeView#inflateHierarchy");
+        if (za.b.d()) {
+            za.b.a("GenericDraweeView#inflateHierarchy");
         }
-        GenericDraweeHierarchyBuilder d10 = l9.a.d(context, attributeSet);
+        GenericDraweeHierarchyBuilder d10 = m9.a.d(context, attributeSet);
         setAspectRatio(d10.f());
         setHierarchy(d10.a());
-        if (ya.b.d()) {
-            ya.b.b();
+        if (za.b.d()) {
+            za.b.b();
         }
     }
 

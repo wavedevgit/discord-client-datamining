@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import an.c;
+import bn.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -63,8 +63,8 @@ public final class LocalImageJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
@@ -86,7 +86,7 @@ public final class LocalImageJsonAdapter extends h {
         }
         Constructor<LocalImage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = LocalImage.class.getDeclaredConstructor(String.class, LocalImage.Attributes.class, LocalImageComponentStyle.class, Integer.TYPE, c.f1164c);
+            constructor = LocalImage.class.getDeclaredConstructor(String.class, LocalImage.Attributes.class, LocalImageComponentStyle.class, Integer.TYPE, c.f7152c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

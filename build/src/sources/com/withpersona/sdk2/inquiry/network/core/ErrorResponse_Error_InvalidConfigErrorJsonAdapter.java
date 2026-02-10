@@ -36,8 +36,8 @@ public final class ErrorResponse_Error_InvalidConfigErrorJsonAdapter extends h {
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
             } else if (J == 1) {

@@ -21,14 +21,14 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
-import qr.p;
-@Metadata(d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b@\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u000f\u0018\u0000 \u009a\u00012\u00020\u0001:\n\u009b\u0001F\u009c\u0001\u009d\u0001C\u009e\u0001B\u001b\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\u0006\u0010\u0007J/\u0010\u000e\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\b2\u0006\u0010\n\u001a\u00020\b2\u0006\u0010\u000b\u001a\u00020\b2\u0006\u0010\f\u001a\u00020\bH\u0014¢\u0006\u0004\b\u000e\u0010\u000fJ\u0015\u0010\u0012\u001a\u00020\r2\u0006\u0010\u0011\u001a\u00020\u0010¢\u0006\u0004\b\u0012\u0010\u0013J\u001f\u0010\u0017\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\u00142\b\b\u0002\u0010\u0016\u001a\u00020\u0010¢\u0006\u0004\b\u0017\u0010\u0018J\u0017\u0010\u001b\u001a\u00020\r2\b\u0010\u001a\u001a\u0004\u0018\u00010\u0019¢\u0006\u0004\b\u001b\u0010\u001cJ\u0015\u0010\u001f\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\u001d¢\u0006\u0004\b\u001f\u0010 J\u0017\u0010#\u001a\u00020\r2\u0006\u0010\"\u001a\u00020!H\u0014¢\u0006\u0004\b#\u0010$J\u001f\u0010\t\u001a\u00020\r2\u0006\u0010%\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0014H\u0002¢\u0006\u0004\b\t\u0010&J\u000f\u0010'\u001a\u00020\rH\u0002¢\u0006\u0004\b'\u0010(JS\u00102\u001a\u00020\r*\u00020)2\u0006\u0010*\u001a\u00020\u001d2\u0006\u0010+\u001a\u00020\u001d2\u0006\u0010,\u001a\u00020\u001d2\u0006\u0010-\u001a\u00020\u001d2\u0006\u0010.\u001a\u00020\u001d2\u0006\u0010/\u001a\u00020\u001d2\u0006\u00100\u001a\u00020\b2\u0006\u00101\u001a\u00020\u001dH\u0002¢\u0006\u0004\b2\u00103J\u000f\u00104\u001a\u00020\rH\u0002¢\u0006\u0004\b4\u0010(J\u000f\u00106\u001a\u000205H\u0002¢\u0006\u0004\b6\u00107J\u000f\u00108\u001a\u000205H\u0002¢\u0006\u0004\b8\u00107J\u000f\u00109\u001a\u000205H\u0002¢\u0006\u0004\b9\u00107J+\u0010>\u001a\u00020\r*\u00020:2\u0006\u0010;\u001a\u00020:2\u0006\u0010<\u001a\u00020:2\u0006\u0010=\u001a\u00020\u001dH\u0002¢\u0006\u0004\b>\u0010?J\u001b\u0010@\u001a\u00020:*\u00020:2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002¢\u0006\u0004\b@\u0010AJ\u000f\u0010B\u001a\u00020\rH\u0002¢\u0006\u0004\bB\u0010(R\u0016\u0010E\u001a\u00020\u00148\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bC\u0010DR\u0016\u0010H\u001a\u00020\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bF\u0010GR\u0014\u0010J\u001a\u00020\b8\u0002X\u0082D¢\u0006\u0006\n\u0004\bI\u0010'R\u0014\u0010K\u001a\u00020\b8\u0002X\u0082D¢\u0006\u0006\n\u0004\b4\u0010'R\u0014\u0010L\u001a\u00020\b8\u0002X\u0082D¢\u0006\u0006\n\u0004\b@\u0010'R\u0014\u0010N\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bM\u0010'R\u0014\u0010O\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b>\u0010'R\u0014\u0010Q\u001a\u00020\u001d8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bP\u0010GR\u0014\u0010R\u001a\u00020\u001d8\u0002X\u0082D¢\u0006\u0006\n\u0004\b8\u0010GR\u0014\u0010S\u001a\u00020\u001d8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b6\u0010GR\u0014\u0010T\u001a\u00020\u001d8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b9\u0010GR\u0014\u0010U\u001a\u00020\u001d8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\t\u0010GR\u0014\u0010X\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bV\u0010WR\u0014\u0010Z\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bY\u0010WR\u0014\u0010\\\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b[\u0010WR\u0014\u0010^\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b]\u0010WR\u0014\u0010`\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b_\u0010WR\u0014\u0010b\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\ba\u0010WR\u0014\u0010d\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bc\u0010WR\u0014\u0010e\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010WR\u0014\u0010g\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bG\u0010fR\u0014\u0010i\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bh\u0010fR\u0014\u0010j\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bB\u0010fR\u0014\u0010k\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b'\u0010fR\u0014\u0010m\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bl\u0010fR\u0014\u0010o\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bn\u0010fR\u0014\u0010q\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bp\u0010fR\u0014\u0010s\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\br\u0010fR\u0016\u0010u\u001a\u00020\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bt\u0010GR\u0016\u0010w\u001a\u00020\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bv\u0010GR\u0014\u0010z\u001a\u00020:8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bx\u0010yR\u0018\u0010~\u001a\u0004\u0018\u00010{8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b|\u0010}R\u001b\u0010\u0082\u0001\u001a\u0004\u0018\u00010\u007f8\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0080\u0001\u0010\u0081\u0001R\u001a\u0010\u0084\u0001\u001a\u0004\u0018\u00010{8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u0083\u0001\u0010}R\u001c\u0010\u0088\u0001\u001a\u0005\u0018\u00010\u0085\u00018\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0086\u0001\u0010\u0087\u0001R\u001a\u0010\u008a\u0001\u001a\u0004\u0018\u00010{8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u0089\u0001\u0010}R\u0018\u0010\u001a\u001a\u00020\u00198\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u008b\u0001\u0010\u008c\u0001R\u0019\u0010\u008f\u0001\u001a\u00020\u00108\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u008d\u0001\u0010\u008e\u0001R\u001b\u0010\u0092\u0001\u001a\u00030\u0090\u0001*\u00020\u00148BX\u0082\u0004¢\u0006\u0007\u001a\u0005\bM\u0010\u0091\u0001R\u001a\u0010\u0094\u0001\u001a\u00020\u0010*\u00020:8BX\u0082\u0004¢\u0006\u0007\u001a\u0005\bP\u0010\u0093\u0001R-\u0010\u0099\u0001\u001a\u00020\b*\u0002052\u0007\u0010\u0095\u0001\u001a\u00020\b8B@BX\u0082\u000e¢\u0006\u000f\u001a\u0006\b\u0096\u0001\u0010\u0097\u0001\"\u0005\bc\u0010\u0098\u0001¨\u0006\u009f\u0001"}, d2 = {"Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView;", "Landroid/widget/FrameLayout;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "", "w", "h", "oldw", "oldh", "", "onSizeChanged", "(IIII)V", "", "mirrored", "setIsPreviewMirrored", "(Z)V", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;", "newState", "animate", "E", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;Z)V", "Lyn/a;", "brightnessInfo", "setCameraStreamBrightnessInfo", "(Lyn/a;)V", "", "intensity", "setIntensity", "(F)V", "Landroid/graphics/Canvas;", "canvas", "onDraw", "(Landroid/graphics/Canvas;)V", "oldState", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;)V", "I", "()V", "Landroid/graphics/Path;", ViewProps.LEFT, ViewProps.TOP, ViewProps.RIGHT, ViewProps.BOTTOM, "startAngle", "sweepAngle", "numTicks", "tickLength", "n", "(Landroid/graphics/Path;FFFFFFIF)V", "o", "Landroid/graphics/Paint;", "u", "()Landroid/graphics/Paint;", "t", "v", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;", ViewProps.START, ViewProps.END, "percent", "r", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;F)V", "p", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;F)Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;", "H", "d", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;", "state", "e", "F", "currentIntensity", "i", "colorOnSurface", ViewProps.SHADOW_COLOR, "accentColor", "q", "arcBaseColor", "arcHighlightColor", "s", "arcInset", "arcGapDegrees", "arcStrokeWidth", "arcDialStrokeWidth", "arcTickLength", "x", "Landroid/graphics/Path;", "arcTop", "y", "arcBottom", "z", "arcLeft", "A", "arcRight", "B", "arcDialLeft", "C", "arcDialRight", "D", "arcDialHighlightClipPathRight", "arcDialHighlightClipPathLeft", "Landroid/graphics/Paint;", "arcTopPaint", "G", "arcBottomPaint", "arcLeftPaint", "arcRightPaint", "J", "shadowPaint", "K", "arcDialLeftPaint", "L", "arcDialRightPaint", "M", "filledArcDialPaint", "N", "arcDialLeftIntensity", "O", "arcDialRightIntensity", "P", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;", "arcHoverState", "Landroid/animation/ValueAnimator;", "Q", "Landroid/animation/ValueAnimator;", "stateAnimator", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$f;", "R", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$f;", "stateAnimationState", "S", "intensityAnimator", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$d;", "T", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$d;", "intensityAnimationState", "U", "directionHintAnimator", "V", "Lyn/a;", "W", "Z", "isPreviewMirrored", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$c;", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;)Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$c;", "endState", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;)Z", "isIdentity", "value", "getShadowAlpha", "(Landroid/graphics/Paint;)I", "(Landroid/graphics/Paint;I)V", "shadowAlpha", "a0", "b", "c", "f", "a", "selfie_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import rr.p;
+@Metadata(d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b@\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u000f\u0018\u0000 \u009a\u00012\u00020\u0001:\n\u009b\u0001F\u009c\u0001\u009d\u0001C\u009e\u0001B\u001b\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\u0006\u0010\u0007J/\u0010\u000e\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\b2\u0006\u0010\n\u001a\u00020\b2\u0006\u0010\u000b\u001a\u00020\b2\u0006\u0010\f\u001a\u00020\bH\u0014¢\u0006\u0004\b\u000e\u0010\u000fJ\u0015\u0010\u0012\u001a\u00020\r2\u0006\u0010\u0011\u001a\u00020\u0010¢\u0006\u0004\b\u0012\u0010\u0013J\u001f\u0010\u0017\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\u00142\b\b\u0002\u0010\u0016\u001a\u00020\u0010¢\u0006\u0004\b\u0017\u0010\u0018J\u0017\u0010\u001b\u001a\u00020\r2\b\u0010\u001a\u001a\u0004\u0018\u00010\u0019¢\u0006\u0004\b\u001b\u0010\u001cJ\u0015\u0010\u001f\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\u001d¢\u0006\u0004\b\u001f\u0010 J\u0017\u0010#\u001a\u00020\r2\u0006\u0010\"\u001a\u00020!H\u0014¢\u0006\u0004\b#\u0010$J\u001f\u0010\t\u001a\u00020\r2\u0006\u0010%\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0014H\u0002¢\u0006\u0004\b\t\u0010&J\u000f\u0010'\u001a\u00020\rH\u0002¢\u0006\u0004\b'\u0010(JS\u00102\u001a\u00020\r*\u00020)2\u0006\u0010*\u001a\u00020\u001d2\u0006\u0010+\u001a\u00020\u001d2\u0006\u0010,\u001a\u00020\u001d2\u0006\u0010-\u001a\u00020\u001d2\u0006\u0010.\u001a\u00020\u001d2\u0006\u0010/\u001a\u00020\u001d2\u0006\u00100\u001a\u00020\b2\u0006\u00101\u001a\u00020\u001dH\u0002¢\u0006\u0004\b2\u00103J\u000f\u00104\u001a\u00020\rH\u0002¢\u0006\u0004\b4\u0010(J\u000f\u00106\u001a\u000205H\u0002¢\u0006\u0004\b6\u00107J\u000f\u00108\u001a\u000205H\u0002¢\u0006\u0004\b8\u00107J\u000f\u00109\u001a\u000205H\u0002¢\u0006\u0004\b9\u00107J+\u0010>\u001a\u00020\r*\u00020:2\u0006\u0010;\u001a\u00020:2\u0006\u0010<\u001a\u00020:2\u0006\u0010=\u001a\u00020\u001dH\u0002¢\u0006\u0004\b>\u0010?J\u001b\u0010@\u001a\u00020:*\u00020:2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002¢\u0006\u0004\b@\u0010AJ\u000f\u0010B\u001a\u00020\rH\u0002¢\u0006\u0004\bB\u0010(R\u0016\u0010E\u001a\u00020\u00148\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bC\u0010DR\u0016\u0010H\u001a\u00020\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bF\u0010GR\u0014\u0010J\u001a\u00020\b8\u0002X\u0082D¢\u0006\u0006\n\u0004\bI\u0010'R\u0014\u0010K\u001a\u00020\b8\u0002X\u0082D¢\u0006\u0006\n\u0004\b4\u0010'R\u0014\u0010L\u001a\u00020\b8\u0002X\u0082D¢\u0006\u0006\n\u0004\b@\u0010'R\u0014\u0010N\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bM\u0010'R\u0014\u0010O\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b>\u0010'R\u0014\u0010Q\u001a\u00020\u001d8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bP\u0010GR\u0014\u0010R\u001a\u00020\u001d8\u0002X\u0082D¢\u0006\u0006\n\u0004\b8\u0010GR\u0014\u0010S\u001a\u00020\u001d8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b6\u0010GR\u0014\u0010T\u001a\u00020\u001d8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b9\u0010GR\u0014\u0010U\u001a\u00020\u001d8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\t\u0010GR\u0014\u0010X\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bV\u0010WR\u0014\u0010Z\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bY\u0010WR\u0014\u0010\\\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b[\u0010WR\u0014\u0010^\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b]\u0010WR\u0014\u0010`\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b_\u0010WR\u0014\u0010b\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\ba\u0010WR\u0014\u0010d\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bc\u0010WR\u0014\u0010e\u001a\u00020)8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010WR\u0014\u0010g\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bG\u0010fR\u0014\u0010i\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bh\u0010fR\u0014\u0010j\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bB\u0010fR\u0014\u0010k\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b'\u0010fR\u0014\u0010m\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bl\u0010fR\u0014\u0010o\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bn\u0010fR\u0014\u0010q\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bp\u0010fR\u0014\u0010s\u001a\u0002058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\br\u0010fR\u0016\u0010u\u001a\u00020\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bt\u0010GR\u0016\u0010w\u001a\u00020\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bv\u0010GR\u0014\u0010z\u001a\u00020:8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bx\u0010yR\u0018\u0010~\u001a\u0004\u0018\u00010{8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b|\u0010}R\u001b\u0010\u0082\u0001\u001a\u0004\u0018\u00010\u007f8\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0080\u0001\u0010\u0081\u0001R\u001a\u0010\u0084\u0001\u001a\u0004\u0018\u00010{8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u0083\u0001\u0010}R\u001c\u0010\u0088\u0001\u001a\u0005\u0018\u00010\u0085\u00018\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0086\u0001\u0010\u0087\u0001R\u001a\u0010\u008a\u0001\u001a\u0004\u0018\u00010{8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u0089\u0001\u0010}R\u0018\u0010\u001a\u001a\u00020\u00198\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u008b\u0001\u0010\u008c\u0001R\u0019\u0010\u008f\u0001\u001a\u00020\u00108\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u008d\u0001\u0010\u008e\u0001R\u001b\u0010\u0092\u0001\u001a\u00030\u0090\u0001*\u00020\u00148BX\u0082\u0004¢\u0006\u0007\u001a\u0005\bM\u0010\u0091\u0001R\u001a\u0010\u0094\u0001\u001a\u00020\u0010*\u00020:8BX\u0082\u0004¢\u0006\u0007\u001a\u0005\bP\u0010\u0093\u0001R-\u0010\u0099\u0001\u001a\u00020\b*\u0002052\u0007\u0010\u0095\u0001\u001a\u00020\b8B@BX\u0082\u000e¢\u0006\u000f\u001a\u0006\b\u0096\u0001\u0010\u0097\u0001\"\u0005\bc\u0010\u0098\u0001¨\u0006\u009f\u0001"}, d2 = {"Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView;", "Landroid/widget/FrameLayout;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "", "w", "h", "oldw", "oldh", "", "onSizeChanged", "(IIII)V", "", "mirrored", "setIsPreviewMirrored", "(Z)V", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;", "newState", "animate", "E", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;Z)V", "Lzn/a;", "brightnessInfo", "setCameraStreamBrightnessInfo", "(Lzn/a;)V", "", "intensity", "setIntensity", "(F)V", "Landroid/graphics/Canvas;", "canvas", "onDraw", "(Landroid/graphics/Canvas;)V", "oldState", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;)V", "I", "()V", "Landroid/graphics/Path;", ViewProps.LEFT, ViewProps.TOP, ViewProps.RIGHT, ViewProps.BOTTOM, "startAngle", "sweepAngle", "numTicks", "tickLength", "n", "(Landroid/graphics/Path;FFFFFFIF)V", "o", "Landroid/graphics/Paint;", "u", "()Landroid/graphics/Paint;", "t", "v", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;", ViewProps.START, ViewProps.END, "percent", "r", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;F)V", "p", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;F)Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;", "H", "d", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;", "state", "e", "F", "currentIntensity", "i", "colorOnSurface", ViewProps.SHADOW_COLOR, "accentColor", "q", "arcBaseColor", "arcHighlightColor", "s", "arcInset", "arcGapDegrees", "arcStrokeWidth", "arcDialStrokeWidth", "arcTickLength", "x", "Landroid/graphics/Path;", "arcTop", "y", "arcBottom", "z", "arcLeft", "A", "arcRight", "B", "arcDialLeft", "C", "arcDialRight", "D", "arcDialHighlightClipPathRight", "arcDialHighlightClipPathLeft", "Landroid/graphics/Paint;", "arcTopPaint", "G", "arcBottomPaint", "arcLeftPaint", "arcRightPaint", "J", "shadowPaint", "K", "arcDialLeftPaint", "L", "arcDialRightPaint", "M", "filledArcDialPaint", "N", "arcDialLeftIntensity", "O", "arcDialRightIntensity", "P", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;", "arcHoverState", "Landroid/animation/ValueAnimator;", "Q", "Landroid/animation/ValueAnimator;", "stateAnimator", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$f;", "R", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$f;", "stateAnimationState", "S", "intensityAnimator", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$d;", "T", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$d;", "intensityAnimationState", "U", "directionHintAnimator", "V", "Lzn/a;", "W", "Z", "isPreviewMirrored", "Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$c;", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$e;)Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$c;", "endState", "(Lcom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView$a;)Z", "isIdentity", "value", "getShadowAlpha", "(Landroid/graphics/Paint;)I", "(Landroid/graphics/Paint;I)V", "shadowAlpha", "a0", "b", "c", "f", "a", "selfie_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nSelfieOverlayView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SelfieOverlayView.kt\ncom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView\n+ 2 Animator.kt\nandroidx/core/animation/AnimatorKt\n+ 3 Canvas.kt\nandroidx/core/graphics/CanvasKt\n*L\n1#1,891:1\n890#1:952\n890#1:960\n890#1:967\n890#1:975\n890#1:982\n890#1:990\n890#1:994\n890#1:995\n890#1:996\n890#1:997\n890#1:998\n890#1:999\n890#1:1000\n890#1:1001\n890#1:1002\n890#1:1003\n890#1:1004\n890#1:1005\n890#1:1006\n890#1:1007\n890#1:1008\n29#2:892\n85#2,18:893\n29#2:911\n85#2,18:912\n85#2,18:930\n44#3,4:948\n49#3,3:953\n44#3,4:956\n49#3,3:961\n27#3,3:964\n31#3,3:968\n44#3,4:971\n49#3,3:976\n27#3,3:979\n31#3,3:983\n44#3,4:986\n49#3,3:991\n*S KotlinDebug\n*F\n+ 1 SelfieOverlayView.kt\ncom/withpersona/sdk2/inquiry/selfie/view/SelfieOverlayView\n*L\n552#1:952\n561#1:960\n589#1:967\n608#1:975\n626#1:982\n644#1:990\n678#1:994\n679#1:995\n680#1:996\n681#1:997\n682#1:998\n686#1:999\n787#1:1000\n788#1:1001\n790#1:1002\n791#1:1003\n793#1:1004\n794#1:1005\n796#1:1006\n797#1:1007\n799#1:1008\n222#1:892\n222#1:893,18\n298#1:911\n298#1:912,18\n394#1:930,18\n549#1:948,4\n549#1:953,3\n558#1:956,4\n558#1:961,3\n584#1:964,3\n584#1:968,3\n605#1:971,4\n605#1:976,3\n621#1:979,3\n621#1:983,3\n641#1:986,4\n641#1:991,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class SelfieOverlayView extends FrameLayout {
 
     /* renamed from: a0  reason: collision with root package name */
-    public static final b f19469a0 = new b(null);
+    public static final b f19609a0 = new b(null);
     private final Path A;
     private final Path B;
     private final Path C;
@@ -50,53 +50,53 @@ public final class SelfieOverlayView extends FrameLayout {
     private ValueAnimator S;
     private d T;
     private ValueAnimator U;
-    private yn.a V;
+    private zn.a V;
     private boolean W;
 
     /* renamed from: d  reason: collision with root package name */
-    private e f19470d;
+    private e f19610d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f19471e;
+    private float f19611e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f19472i;
+    private final int f19612i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f19473o;
+    private final int f19613o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f19474p;
+    private final int f19614p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f19475q;
+    private final int f19615q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f19476r;
+    private final int f19616r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final float f19477s;
+    private final float f19617s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final float f19478t;
+    private final float f19618t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final float f19479u;
+    private final float f19619u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final float f19480v;
+    private final float f19620v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final float f19481w;
+    private final float f19621w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Path f19482x;
+    private final Path f19622x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Path f19483y;
+    private final Path f19623y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Path f19484z;
+    private final Path f19624z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b {
@@ -115,61 +115,61 @@ public final class SelfieOverlayView extends FrameLayout {
     public static final class c {
 
         /* renamed from: r  reason: collision with root package name */
-        public static final c f19494r = new c("Center", 0, 1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f);
+        public static final c f19634r = new c("Center", 0, 1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f);
 
         /* renamed from: s  reason: collision with root package name */
-        public static final c f19495s = new c("Left", 1, 0.1f, 0.1f, 0.0f, 0.1f, 1.0f, 0.0f);
+        public static final c f19635s = new c("Left", 1, 0.1f, 0.1f, 0.0f, 0.1f, 1.0f, 0.0f);
 
         /* renamed from: t  reason: collision with root package name */
-        public static final c f19496t = new c("Right", 2, 0.1f, 0.1f, 0.1f, 0.0f, 0.0f, 1.0f);
+        public static final c f19636t = new c("Right", 2, 0.1f, 0.1f, 0.1f, 0.0f, 0.0f, 1.0f);
 
         /* renamed from: u  reason: collision with root package name */
-        public static final c f19497u = new c("None", 3, 0.1f, 0.1f, 0.1f, 0.1f, 0.0f, 0.0f);
+        public static final c f19637u = new c("None", 3, 0.1f, 0.1f, 0.1f, 0.1f, 0.0f, 0.0f);
 
         /* renamed from: v  reason: collision with root package name */
-        public static final c f19498v = new c("Finalizing", 4, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+        public static final c f19638v = new c("Finalizing", 4, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
 
         /* renamed from: w  reason: collision with root package name */
-        private static final /* synthetic */ c[] f19499w;
+        private static final /* synthetic */ c[] f19639w;
 
         /* renamed from: x  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f19500x;
+        private static final /* synthetic */ EnumEntries f19640x;
 
         /* renamed from: d  reason: collision with root package name */
-        private final float f19501d;
+        private final float f19641d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final float f19502e;
+        private final float f19642e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final float f19503i;
+        private final float f19643i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final float f19504o;
+        private final float f19644o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final float f19505p;
+        private final float f19645p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final float f19506q;
+        private final float f19646q;
 
         static {
             c[] a10 = a();
-            f19499w = a10;
-            f19500x = xr.a.a(a10);
+            f19639w = a10;
+            f19640x = yr.a.a(a10);
         }
 
         private c(String str, int i10, float f10, float f11, float f12, float f13, float f14, float f15) {
-            this.f19501d = f10;
-            this.f19502e = f11;
-            this.f19503i = f12;
-            this.f19504o = f13;
-            this.f19505p = f14;
-            this.f19506q = f15;
+            this.f19641d = f10;
+            this.f19642e = f11;
+            this.f19643i = f12;
+            this.f19644o = f13;
+            this.f19645p = f14;
+            this.f19646q = f15;
         }
 
         private static final /* synthetic */ c[] a() {
-            return new c[]{f19494r, f19495s, f19496t, f19497u, f19498v};
+            return new c[]{f19634r, f19635s, f19636t, f19637u, f19638v};
         }
 
         public static c valueOf(String str) {
@@ -177,31 +177,31 @@ public final class SelfieOverlayView extends FrameLayout {
         }
 
         public static c[] values() {
-            return (c[]) f19499w.clone();
+            return (c[]) f19639w.clone();
         }
 
         public final float d() {
-            return this.f19502e;
+            return this.f19642e;
         }
 
         public final float e() {
-            return this.f19505p;
+            return this.f19645p;
         }
 
         public final float f() {
-            return this.f19506q;
+            return this.f19646q;
         }
 
         public final float g() {
-            return this.f19503i;
+            return this.f19643i;
         }
 
         public final float h() {
-            return this.f19504o;
+            return this.f19644o;
         }
 
         public final float i() {
-            return this.f19501d;
+            return this.f19641d;
         }
     }
 
@@ -210,34 +210,34 @@ public final class SelfieOverlayView extends FrameLayout {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private float f19507a;
+        private float f19647a;
 
         /* renamed from: b  reason: collision with root package name */
-        private float f19508b;
+        private float f19648b;
 
         /* renamed from: c  reason: collision with root package name */
-        private float f19509c;
+        private float f19649c;
 
         public d(float f10, float f11, float f12) {
-            this.f19507a = f10;
-            this.f19508b = f11;
-            this.f19509c = f12;
+            this.f19647a = f10;
+            this.f19648b = f11;
+            this.f19649c = f12;
         }
 
         public final float a() {
-            return this.f19509c;
+            return this.f19649c;
         }
 
         public final float b() {
-            return this.f19507a;
+            return this.f19647a;
         }
 
         public final float c() {
-            return this.f19508b;
+            return this.f19648b;
         }
 
         public final void d(float f10) {
-            this.f19507a = f10;
+            this.f19647a = f10;
         }
 
         public boolean equals(Object obj) {
@@ -246,19 +246,19 @@ public final class SelfieOverlayView extends FrameLayout {
             }
             if (obj instanceof d) {
                 d dVar = (d) obj;
-                return Float.compare(this.f19507a, dVar.f19507a) == 0 && Float.compare(this.f19508b, dVar.f19508b) == 0 && Float.compare(this.f19509c, dVar.f19509c) == 0;
+                return Float.compare(this.f19647a, dVar.f19647a) == 0 && Float.compare(this.f19648b, dVar.f19648b) == 0 && Float.compare(this.f19649c, dVar.f19649c) == 0;
             }
             return false;
         }
 
         public int hashCode() {
-            return (((Float.hashCode(this.f19507a) * 31) + Float.hashCode(this.f19508b)) * 31) + Float.hashCode(this.f19509c);
+            return (((Float.hashCode(this.f19647a) * 31) + Float.hashCode(this.f19648b)) * 31) + Float.hashCode(this.f19649c);
         }
 
         public String toString() {
-            float f10 = this.f19507a;
-            float f11 = this.f19508b;
-            float f12 = this.f19509c;
+            float f10 = this.f19647a;
+            float f11 = this.f19648b;
+            float f12 = this.f19649c;
             return "IntensityAnimationState(progress=" + f10 + ", startIntensity=" + f11 + ", endIntensity=" + f12 + ")";
         }
     }
@@ -269,37 +269,37 @@ public final class SelfieOverlayView extends FrameLayout {
     public static final class e {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final e f19510d = new e("Center", 0);
+        public static final e f19650d = new e("Center", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final e f19511e = new e("Left", 1);
+        public static final e f19651e = new e("Left", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final e f19512i = new e("Right", 2);
+        public static final e f19652i = new e("Right", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final e f19513o = new e("None", 3);
+        public static final e f19653o = new e("None", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final e f19514p = new e("Finalizing", 4);
+        public static final e f19654p = new e("Finalizing", 4);
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ e[] f19515q;
+        private static final /* synthetic */ e[] f19655q;
 
         /* renamed from: r  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f19516r;
+        private static final /* synthetic */ EnumEntries f19656r;
 
         static {
             e[] a10 = a();
-            f19515q = a10;
-            f19516r = xr.a.a(a10);
+            f19655q = a10;
+            f19656r = yr.a.a(a10);
         }
 
         private e(String str, int i10) {
         }
 
         private static final /* synthetic */ e[] a() {
-            return new e[]{f19510d, f19511e, f19512i, f19513o, f19514p};
+            return new e[]{f19650d, f19651e, f19652i, f19653o, f19654p};
         }
 
         public static e valueOf(String str) {
@@ -307,7 +307,7 @@ public final class SelfieOverlayView extends FrameLayout {
         }
 
         public static e[] values() {
-            return (e[]) f19515q.clone();
+            return (e[]) f19655q.clone();
         }
     }
 
@@ -316,68 +316,68 @@ public final class SelfieOverlayView extends FrameLayout {
     public static final class f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f19517a;
+        private final boolean f19657a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final e f19518b;
+        private final e f19658b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final e f19519c;
+        private final e f19659c;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f19520d;
+        private float f19660d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final float f19521e;
+        private final float f19661e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final float f19522f;
+        private final float f19662f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final float f19523g;
+        private final float f19663g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final float f19524h;
+        private final float f19664h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final float f19525i;
+        private final float f19665i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final float f19526j;
+        private final float f19666j;
 
         public f(boolean z10, e startState, e endState, float f10, float f11, float f12, float f13, float f14, float f15, float f16) {
             Intrinsics.checkNotNullParameter(startState, "startState");
             Intrinsics.checkNotNullParameter(endState, "endState");
-            this.f19517a = z10;
-            this.f19518b = startState;
-            this.f19519c = endState;
-            this.f19520d = f10;
-            this.f19521e = f11;
-            this.f19522f = f12;
-            this.f19523g = f13;
-            this.f19524h = f14;
-            this.f19525i = f15;
-            this.f19526j = f16;
+            this.f19657a = z10;
+            this.f19658b = startState;
+            this.f19659c = endState;
+            this.f19660d = f10;
+            this.f19661e = f11;
+            this.f19662f = f12;
+            this.f19663g = f13;
+            this.f19664h = f14;
+            this.f19665i = f15;
+            this.f19666j = f16;
         }
 
         public final boolean a() {
-            return this.f19517a;
+            return this.f19657a;
         }
 
         public final e b() {
-            return this.f19519c;
+            return this.f19659c;
         }
 
         public final float c() {
-            return this.f19520d;
+            return this.f19660d;
         }
 
         public final float d() {
-            return this.f19522f;
+            return this.f19662f;
         }
 
         public final float e() {
-            return this.f19525i;
+            return this.f19665i;
         }
 
         public boolean equals(Object obj) {
@@ -386,46 +386,46 @@ public final class SelfieOverlayView extends FrameLayout {
             }
             if (obj instanceof f) {
                 f fVar = (f) obj;
-                return this.f19517a == fVar.f19517a && this.f19518b == fVar.f19518b && this.f19519c == fVar.f19519c && Float.compare(this.f19520d, fVar.f19520d) == 0 && Float.compare(this.f19521e, fVar.f19521e) == 0 && Float.compare(this.f19522f, fVar.f19522f) == 0 && Float.compare(this.f19523g, fVar.f19523g) == 0 && Float.compare(this.f19524h, fVar.f19524h) == 0 && Float.compare(this.f19525i, fVar.f19525i) == 0 && Float.compare(this.f19526j, fVar.f19526j) == 0;
+                return this.f19657a == fVar.f19657a && this.f19658b == fVar.f19658b && this.f19659c == fVar.f19659c && Float.compare(this.f19660d, fVar.f19660d) == 0 && Float.compare(this.f19661e, fVar.f19661e) == 0 && Float.compare(this.f19662f, fVar.f19662f) == 0 && Float.compare(this.f19663g, fVar.f19663g) == 0 && Float.compare(this.f19664h, fVar.f19664h) == 0 && Float.compare(this.f19665i, fVar.f19665i) == 0 && Float.compare(this.f19666j, fVar.f19666j) == 0;
             }
             return false;
         }
 
         public final float f() {
-            return this.f19526j;
+            return this.f19666j;
         }
 
         public final float g() {
-            return this.f19523g;
+            return this.f19663g;
         }
 
         public final float h() {
-            return this.f19524h;
+            return this.f19664h;
         }
 
         public int hashCode() {
-            return (((((((((((((((((Boolean.hashCode(this.f19517a) * 31) + this.f19518b.hashCode()) * 31) + this.f19519c.hashCode()) * 31) + Float.hashCode(this.f19520d)) * 31) + Float.hashCode(this.f19521e)) * 31) + Float.hashCode(this.f19522f)) * 31) + Float.hashCode(this.f19523g)) * 31) + Float.hashCode(this.f19524h)) * 31) + Float.hashCode(this.f19525i)) * 31) + Float.hashCode(this.f19526j);
+            return (((((((((((((((((Boolean.hashCode(this.f19657a) * 31) + this.f19658b.hashCode()) * 31) + this.f19659c.hashCode()) * 31) + Float.hashCode(this.f19660d)) * 31) + Float.hashCode(this.f19661e)) * 31) + Float.hashCode(this.f19662f)) * 31) + Float.hashCode(this.f19663g)) * 31) + Float.hashCode(this.f19664h)) * 31) + Float.hashCode(this.f19665i)) * 31) + Float.hashCode(this.f19666j);
         }
 
         public final float i() {
-            return this.f19521e;
+            return this.f19661e;
         }
 
         public final void j(float f10) {
-            this.f19520d = f10;
+            this.f19660d = f10;
         }
 
         public String toString() {
-            boolean z10 = this.f19517a;
-            e eVar = this.f19518b;
-            e eVar2 = this.f19519c;
-            float f10 = this.f19520d;
-            float f11 = this.f19521e;
-            float f12 = this.f19522f;
-            float f13 = this.f19523g;
-            float f14 = this.f19524h;
-            float f15 = this.f19525i;
-            float f16 = this.f19526j;
+            boolean z10 = this.f19657a;
+            e eVar = this.f19658b;
+            e eVar2 = this.f19659c;
+            float f10 = this.f19660d;
+            float f11 = this.f19661e;
+            float f12 = this.f19662f;
+            float f13 = this.f19663g;
+            float f14 = this.f19664h;
+            float f15 = this.f19665i;
+            float f16 = this.f19666j;
             return "StateAnimationState(animating=" + z10 + ", startState=" + eVar + ", endState=" + eVar2 + ", progress=" + f10 + ", startArcTopAlpha=" + f11 + ", startArcBottomAlpha=" + f12 + ", startArcLeftAlpha=" + f13 + ", startArcRightAlpha=" + f14 + ", startArcDialLeftAlpha=" + f15 + ", startArcDialRightAlpha=" + f16 + ")";
         }
     }
@@ -434,31 +434,31 @@ public final class SelfieOverlayView extends FrameLayout {
     public /* synthetic */ class g {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f19527a;
+        public static final /* synthetic */ int[] f19667a;
 
         static {
             int[] iArr = new int[e.values().length];
             try {
-                iArr[e.f19510d.ordinal()] = 1;
+                iArr[e.f19650d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[e.f19511e.ordinal()] = 2;
+                iArr[e.f19651e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[e.f19512i.ordinal()] = 3;
+                iArr[e.f19652i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[e.f19513o.ordinal()] = 4;
+                iArr[e.f19653o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[e.f19514p.ordinal()] = 5;
+                iArr[e.f19654p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
-            f19527a = iArr;
+            f19667a = iArr;
         }
     }
 
@@ -466,33 +466,33 @@ public final class SelfieOverlayView extends FrameLayout {
     public static final class h implements Animator.AnimatorListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Ref.BooleanRef f19528a;
+        final /* synthetic */ Ref.BooleanRef f19668a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ e f19529b;
+        final /* synthetic */ e f19669b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ SelfieOverlayView f19530c;
+        final /* synthetic */ SelfieOverlayView f19670c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Ref.BooleanRef f19531d;
+        final /* synthetic */ Ref.BooleanRef f19671d;
 
         public h(Ref.BooleanRef booleanRef, e eVar, SelfieOverlayView selfieOverlayView, Ref.BooleanRef booleanRef2) {
-            this.f19528a = booleanRef;
-            this.f19529b = eVar;
-            this.f19530c = selfieOverlayView;
-            this.f19531d = booleanRef2;
+            this.f19668a = booleanRef;
+            this.f19669b = eVar;
+            this.f19670c = selfieOverlayView;
+            this.f19671d = booleanRef2;
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animator) {
-            this.f19531d.element = true;
+            this.f19671d.element = true;
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            if (!this.f19528a.element) {
-                SelfieOverlayView.y(this.f19529b, this.f19530c);
+            if (!this.f19668a.element) {
+                SelfieOverlayView.y(this.f19669b, this.f19670c);
             }
         }
 
@@ -541,8 +541,8 @@ public final class SelfieOverlayView extends FrameLayout {
         public void onAnimationEnd(Animator animator) {
             f fVar = SelfieOverlayView.this.R;
             if (fVar != null) {
-                e eVar = SelfieOverlayView.this.f19470d;
-                SelfieOverlayView.this.f19470d = fVar.b();
+                e eVar = SelfieOverlayView.this.f19610d;
+                SelfieOverlayView.this.f19610d = fVar.b();
                 SelfieOverlayView.this.w(eVar, fVar.b());
             }
             SelfieOverlayView.this.R = null;
@@ -561,20 +561,20 @@ public final class SelfieOverlayView extends FrameLayout {
     public SelfieOverlayView(@NotNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f19470d = e.f19510d;
-        this.f19472i = -1;
-        this.f19473o = -16777216;
-        this.f19474p = -13910906;
-        this.f19475q = -1;
-        this.f19476r = -13910906;
-        this.f19477s = (float) rp.h.a(48.0d);
-        this.f19478t = 20.0f;
-        this.f19479u = (float) rp.h.a(4.0d);
-        this.f19480v = (float) rp.h.a(2.0d);
-        this.f19481w = (float) rp.h.a(24.0d);
-        this.f19482x = new Path();
-        this.f19483y = new Path();
-        this.f19484z = new Path();
+        this.f19610d = e.f19650d;
+        this.f19612i = -1;
+        this.f19613o = -16777216;
+        this.f19614p = -13910906;
+        this.f19615q = -1;
+        this.f19616r = -13910906;
+        this.f19617s = (float) sp.h.a(48.0d);
+        this.f19618t = 20.0f;
+        this.f19619u = (float) sp.h.a(4.0d);
+        this.f19620v = (float) sp.h.a(2.0d);
+        this.f19621w = (float) sp.h.a(24.0d);
+        this.f19622x = new Path();
+        this.f19623y = new Path();
+        this.f19624z = new Path();
         this.A = new Path();
         this.B = new Path();
         this.C = new Path();
@@ -594,8 +594,8 @@ public final class SelfieOverlayView extends FrameLayout {
         Paint t12 = t();
         t12.setColor(-13910906);
         this.M = t12;
-        this.P = p(new a(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 511, null), this.f19471e);
-        this.V = new yn.a(null, 1, null);
+        this.P = p(new a(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 511, null), this.f19611e);
+        this.V = new zn.a(null, 1, null);
         setWillNotDraw(false);
     }
 
@@ -631,7 +631,7 @@ public final class SelfieOverlayView extends FrameLayout {
         if (paint.getAlpha() == i10) {
             return;
         }
-        paint.setShadowLayer(this.f19479u * 2, 0.0f, 0.0f, r1.c.l(this.f19473o, i10));
+        paint.setShadowLayer(this.f19619u * 2, 0.0f, 0.0f, r1.c.l(this.f19613o, i10));
         paint.setAlpha(i10);
     }
 
@@ -674,35 +674,35 @@ public final class SelfieOverlayView extends FrameLayout {
     private final void I() {
         int measuredWidth = getMeasuredWidth();
         int measuredHeight = getMeasuredHeight();
-        float f10 = this.f19478t / 2.0f;
-        this.f19482x.reset();
-        Path path = this.f19482x;
-        float f11 = this.f19477s;
+        float f10 = this.f19618t / 2.0f;
+        this.f19622x.reset();
+        Path path = this.f19622x;
+        float f11 = this.f19617s;
         float f12 = measuredWidth;
         float f13 = measuredHeight;
-        path.addArc(f11, f11, f12 - f11, f13 - f11, f10 + 225.0f, 90.0f - this.f19478t);
-        this.f19483y.reset();
-        Path path2 = this.f19483y;
-        float f14 = this.f19477s;
-        path2.addArc(f14, f14, f12 - f14, f13 - f14, f10 + 45.0f, 90.0f - this.f19478t);
-        this.f19484z.reset();
-        Path path3 = this.f19484z;
-        float f15 = this.f19477s;
+        path.addArc(f11, f11, f12 - f11, f13 - f11, f10 + 225.0f, 90.0f - this.f19618t);
+        this.f19623y.reset();
+        Path path2 = this.f19623y;
+        float f14 = this.f19617s;
+        path2.addArc(f14, f14, f12 - f14, f13 - f14, f10 + 45.0f, 90.0f - this.f19618t);
+        this.f19624z.reset();
+        Path path3 = this.f19624z;
+        float f15 = this.f19617s;
         float f16 = f10 + 135.0f;
-        path3.addArc(f15, f15, f12 - f15, f13 - f15, f16, 90.0f - this.f19478t);
+        path3.addArc(f15, f15, f12 - f15, f13 - f15, f16, 90.0f - this.f19618t);
         this.A.reset();
         Path path4 = this.A;
-        float f17 = this.f19477s;
+        float f17 = this.f19617s;
         float f18 = f10 + 315.0f;
-        path4.addArc(f17, f17, f12 - f17, f13 - f17, f18, 90.0f - this.f19478t);
+        path4.addArc(f17, f17, f12 - f17, f13 - f17, f18, 90.0f - this.f19618t);
         this.B.reset();
         Path path5 = this.B;
-        float f19 = this.f19477s;
-        n(path5, f19, f19, f12 - f19, f13 - f19, f16, 90.0f - this.f19478t, 30, this.f19481w);
+        float f19 = this.f19617s;
+        n(path5, f19, f19, f12 - f19, f13 - f19, f16, 90.0f - this.f19618t, 30, this.f19621w);
         this.C.reset();
         Path path6 = this.C;
-        float f20 = this.f19477s;
-        n(path6, f20, f20, f12 - f20, f13 - f20, f18, 90.0f - this.f19478t, 30, this.f19481w);
+        float f20 = this.f19617s;
+        n(path6, f20, f20, f12 - f20, f13 - f20, f18, 90.0f - this.f19618t, 30, this.f19621w);
         invalidate();
     }
 
@@ -763,30 +763,30 @@ public final class SelfieOverlayView extends FrameLayout {
             float f13 = fVar.f();
             f10 = ((q10.f() - f13) * c10) + f13;
         } else {
-            i10 = q(this.f19470d).i();
-            d10 = q(this.f19470d).d();
-            g10 = q(this.f19470d).g();
-            h10 = q(this.f19470d).h();
-            e10 = q(this.f19470d).e();
-            f10 = q(this.f19470d).f();
+            i10 = q(this.f19610d).i();
+            d10 = q(this.f19610d).d();
+            g10 = q(this.f19610d).g();
+            h10 = q(this.f19610d).h();
+            e10 = q(this.f19610d).e();
+            f10 = q(this.f19610d).f();
         }
         if (dVar != null) {
             f12 = ((dVar.a() - dVar.c()) * dVar.b()) + dVar.c();
-            this.f19471e = f12;
+            this.f19611e = f12;
             f11 = (i10 - 0.1f) / 1.0f;
         } else {
             f11 = (i10 - 0.1f) / 1.0f;
-            f12 = this.f19471e;
+            f12 = this.f19611e;
         }
         float f14 = ((d10 - 0.1f) / 1.0f) * f12;
         float f15 = ((g10 - 0.1f) / 1.0f) * f12;
         float f16 = ((h10 - 0.1f) / 1.0f) * f12;
         float f17 = ((e10 - 0.1f) / 1.0f) * f12;
         float f18 = ((f10 - 0.1f) / 1.0f) * f12;
-        this.F.setColor(r1.c.c(this.f19475q, this.f19476r, f11 * f12));
-        this.G.setColor(r1.c.c(this.f19475q, this.f19476r, f14));
-        this.H.setColor(r1.c.c(this.f19475q, this.f19476r, f15));
-        this.I.setColor(r1.c.c(this.f19475q, this.f19476r, f16));
+        this.F.setColor(r1.c.c(this.f19615q, this.f19616r, f11 * f12));
+        this.G.setColor(r1.c.c(this.f19615q, this.f19616r, f14));
+        this.H.setColor(r1.c.c(this.f19615q, this.f19616r, f15));
+        this.I.setColor(r1.c.c(this.f19615q, this.f19616r, f16));
         if (this.N == f17 && this.O == f18) {
             z10 = false;
         } else {
@@ -802,10 +802,10 @@ public final class SelfieOverlayView extends FrameLayout {
         this.I.setAlpha((int) (h10 * f19));
         this.K.setAlpha((int) (e10 * f19));
         this.L.setAlpha((int) (f10 * f19));
-        this.F.setStrokeWidth(this.f19479u * this.P.i());
-        this.G.setStrokeWidth(this.f19479u * this.P.i());
-        this.H.setStrokeWidth(this.f19479u * this.P.i());
-        this.I.setStrokeWidth(this.f19479u * this.P.i());
+        this.F.setStrokeWidth(this.f19619u * this.P.i());
+        this.G.setStrokeWidth(this.f19619u * this.P.i());
+        this.H.setStrokeWidth(this.f19619u * this.P.i());
+        this.I.setStrokeWidth(this.f19619u * this.P.i());
         if (z10) {
             H();
         }
@@ -813,7 +813,7 @@ public final class SelfieOverlayView extends FrameLayout {
     }
 
     private final a p(a aVar, float f10) {
-        float c10 = (float) rp.h.c(48.0d);
+        float c10 = (float) sp.h.c(48.0d);
         aVar.s(0.0f);
         float f11 = c10 * f10;
         aVar.t(f11);
@@ -829,23 +829,23 @@ public final class SelfieOverlayView extends FrameLayout {
     }
 
     private final c q(e eVar) {
-        int i10 = g.f19527a[eVar.ordinal()];
+        int i10 = g.f19667a[eVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 != 4) {
                         if (i10 == 5) {
-                            return c.f19498v;
+                            return c.f19638v;
                         }
                         throw new p();
                     }
-                    return c.f19497u;
+                    return c.f19637u;
                 }
-                return c.f19496t;
+                return c.f19636t;
             }
-            return c.f19495s;
+            return c.f19635s;
         }
-        return c.f19494r;
+        return c.f19634r;
     }
 
     private final void r(a aVar, a aVar2, a aVar3, float f10) {
@@ -878,25 +878,25 @@ public final class SelfieOverlayView extends FrameLayout {
 
     private final Paint t() {
         Paint u10 = u();
-        u10.setStrokeWidth(this.f19480v);
+        u10.setStrokeWidth(this.f19620v);
         return u10;
     }
 
     private final Paint u() {
         Paint paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setColor(this.f19472i);
+        paint.setColor(this.f19612i);
         paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(this.f19479u);
+        paint.setStrokeWidth(this.f19619u);
         paint.setStrokeCap(Paint.Cap.ROUND);
         return paint;
     }
 
     private final Paint v() {
         Paint u10 = u();
-        u10.setStrokeWidth(this.f19479u);
-        u10.setColor(this.f19473o);
-        u10.setShadowLayer(this.f19479u * 2, 0.0f, 0.0f, this.f19473o);
+        u10.setStrokeWidth(this.f19619u);
+        u10.setColor(this.f19613o);
+        u10.setShadowLayer(this.f19619u * 2, 0.0f, 0.0f, this.f19613o);
         return u10;
     }
 
@@ -943,7 +943,7 @@ public final class SelfieOverlayView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void y(e eVar, final SelfieOverlayView selfieOverlayView) {
-        int i10 = g.f19527a[eVar.ordinal()];
+        int i10 = g.f19667a[eVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -960,7 +960,7 @@ public final class SelfieOverlayView extends FrameLayout {
                 ofFloat.setDuration(700L);
                 final a b10 = a.b(selfieOverlayView.P, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 511, null);
                 final a aVar = new a(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 511, null);
-                aVar.p((float) rp.h.c(48.0d));
+                aVar.p((float) sp.h.c(48.0d));
                 ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.withpersona.sdk2.inquiry.selfie.view.d
                     @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                     public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -979,7 +979,7 @@ public final class SelfieOverlayView extends FrameLayout {
             ofFloat2.setDuration(700L);
             final a b11 = a.b(selfieOverlayView.P, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 511, null);
             final a aVar2 = new a(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 511, null);
-            aVar2.n(-((float) rp.h.c(48.0d)));
+            aVar2.n(-((float) sp.h.c(48.0d)));
             ofFloat2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.withpersona.sdk2.inquiry.selfie.view.c
                 @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -1014,7 +1014,7 @@ public final class SelfieOverlayView extends FrameLayout {
             }
         }
         f fVar3 = this.R;
-        if ((fVar3 == null || !fVar3.a()) && this.f19470d == newState) {
+        if ((fVar3 == null || !fVar3.a()) && this.f19610d == newState) {
             return;
         }
         ValueAnimator valueAnimator = this.Q;
@@ -1023,13 +1023,13 @@ public final class SelfieOverlayView extends FrameLayout {
             valueAnimator.removeAllUpdateListeners();
         }
         if (z10) {
-            this.R = new f(true, this.f19470d, newState, 0.0f, this.F.getAlpha() / 255.0f, this.G.getAlpha() / 255.0f, this.H.getAlpha() / 255.0f, this.I.getAlpha() / 255.0f, this.K.getAlpha() / 255.0f, this.L.getAlpha() / 255.0f);
+            this.R = new f(true, this.f19610d, newState, 0.0f, this.F.getAlpha() / 255.0f, this.G.getAlpha() / 255.0f, this.H.getAlpha() / 255.0f, this.I.getAlpha() / 255.0f, this.K.getAlpha() / 255.0f, this.L.getAlpha() / 255.0f);
             ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
             ofFloat.setInterpolator(new LinearInterpolator());
             ofFloat.setStartDelay(0L);
             ofFloat.setRepeatCount(0);
             ofFloat.setDuration(400L);
-            ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: qp.q
+            ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: rp.q
                 @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                 public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
                     SelfieOverlayView.G(SelfieOverlayView.this, valueAnimator2);
@@ -1041,8 +1041,8 @@ public final class SelfieOverlayView extends FrameLayout {
             this.Q = ofFloat;
             return;
         }
-        e eVar2 = this.f19470d;
-        this.f19470d = newState;
+        e eVar2 = this.f19610d;
+        this.f19610d = newState;
         this.R = null;
         o();
         w(eVar2, newState);
@@ -1062,9 +1062,9 @@ public final class SelfieOverlayView extends FrameLayout {
         try {
             if (this.V.d() > 0.5f) {
                 D(this.J, (int) (this.F.getAlpha() * (((this.V.d() - 0.5f) * 0.66f) + 0.0f)));
-                canvas.drawPath(this.f19482x, this.J);
+                canvas.drawPath(this.f19622x, this.J);
             }
-            canvas.drawPath(this.f19482x, this.F);
+            canvas.drawPath(this.f19622x, this.F);
             canvas.restoreToCount(save2);
             float c11 = this.P.c();
             float d10 = this.P.d();
@@ -1073,9 +1073,9 @@ public final class SelfieOverlayView extends FrameLayout {
             try {
                 if (this.V.a() > 0.5f) {
                     D(this.J, (int) (this.G.getAlpha() * (((this.V.a() - 0.5f) * 0.66f) + 0.0f)));
-                    canvas.drawPath(this.f19483y, this.J);
+                    canvas.drawPath(this.f19623y, this.J);
                 }
-                canvas.drawPath(this.f19483y, this.G);
+                canvas.drawPath(this.f19623y, this.G);
                 canvas.restoreToCount(save3);
                 if (this.W) {
                     b10 = this.V.c();
@@ -1110,11 +1110,11 @@ public final class SelfieOverlayView extends FrameLayout {
                     if (b10 > 0.5f) {
                         try {
                             D(this.J, (int) (this.H.getAlpha() * (((b10 - 0.5f) * 0.66f) + 0.0f)));
-                            canvas.drawPath(this.f19484z, this.J);
+                            canvas.drawPath(this.f19624z, this.J);
                         } finally {
                         }
                     }
-                    canvas.drawPath(this.f19484z, this.H);
+                    canvas.drawPath(this.f19624z, this.H);
                     canvas.restoreToCount(save2);
                 }
                 if (this.L.getAlpha() > 0) {
@@ -1163,16 +1163,16 @@ public final class SelfieOverlayView extends FrameLayout {
         I();
     }
 
-    public final void setCameraStreamBrightnessInfo(yn.a aVar) {
+    public final void setCameraStreamBrightnessInfo(zn.a aVar) {
         if (aVar == null) {
-            aVar = new yn.a(null, 1, null);
+            aVar = new zn.a(null, 1, null);
         }
         this.V = aVar;
         invalidate();
     }
 
     public final void setIntensity(float f10) {
-        if (this.f19471e == f10) {
+        if (this.f19611e == f10) {
             return;
         }
         float l10 = kotlin.ranges.d.l(f10, 0.0f, 1.0f);
@@ -1181,13 +1181,13 @@ public final class SelfieOverlayView extends FrameLayout {
             valueAnimator.cancel();
             valueAnimator.removeAllUpdateListeners();
         }
-        this.T = new d(0.0f, this.f19471e, l10);
+        this.T = new d(0.0f, this.f19611e, l10);
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
         ofFloat.setInterpolator(new LinearInterpolator());
         ofFloat.setStartDelay(0L);
         ofFloat.setRepeatCount(0);
         ofFloat.setDuration(200L);
-        if (this.f19470d == e.f19510d) {
+        if (this.f19610d == e.f19650d) {
             final a b10 = a.b(this.P, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 511, null);
             final a p10 = p(new a(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 511, null), l10);
             ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.withpersona.sdk2.inquiry.selfie.view.a
@@ -1197,7 +1197,7 @@ public final class SelfieOverlayView extends FrameLayout {
                 }
             });
         } else {
-            ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: qp.p
+            ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: rp.p
                 @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                 public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
                     SelfieOverlayView.B(SelfieOverlayView.this, valueAnimator2);
@@ -1223,71 +1223,71 @@ public final class SelfieOverlayView extends FrameLayout {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private float f19485a;
+        private float f19625a;
 
         /* renamed from: b  reason: collision with root package name */
-        private float f19486b;
+        private float f19626b;
 
         /* renamed from: c  reason: collision with root package name */
-        private float f19487c;
+        private float f19627c;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f19488d;
+        private float f19628d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f19489e;
+        private float f19629e;
 
         /* renamed from: f  reason: collision with root package name */
-        private float f19490f;
+        private float f19630f;
 
         /* renamed from: g  reason: collision with root package name */
-        private float f19491g;
+        private float f19631g;
 
         /* renamed from: h  reason: collision with root package name */
-        private float f19492h;
+        private float f19632h;
 
         /* renamed from: i  reason: collision with root package name */
-        private float f19493i;
+        private float f19633i;
 
         public a(float f10, float f11, float f12, float f13, float f14, float f15, float f16, float f17, float f18) {
-            this.f19485a = f10;
-            this.f19486b = f11;
-            this.f19487c = f12;
-            this.f19488d = f13;
-            this.f19489e = f14;
-            this.f19490f = f15;
-            this.f19491g = f16;
-            this.f19492h = f17;
-            this.f19493i = f18;
+            this.f19625a = f10;
+            this.f19626b = f11;
+            this.f19627c = f12;
+            this.f19628d = f13;
+            this.f19629e = f14;
+            this.f19630f = f15;
+            this.f19631g = f16;
+            this.f19632h = f17;
+            this.f19633i = f18;
         }
 
         public static /* synthetic */ a b(a aVar, float f10, float f11, float f12, float f13, float f14, float f15, float f16, float f17, float f18, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                f10 = aVar.f19485a;
+                f10 = aVar.f19625a;
             }
             if ((i10 & 2) != 0) {
-                f11 = aVar.f19486b;
+                f11 = aVar.f19626b;
             }
             if ((i10 & 4) != 0) {
-                f12 = aVar.f19487c;
+                f12 = aVar.f19627c;
             }
             if ((i10 & 8) != 0) {
-                f13 = aVar.f19488d;
+                f13 = aVar.f19628d;
             }
             if ((i10 & 16) != 0) {
-                f14 = aVar.f19489e;
+                f14 = aVar.f19629e;
             }
             if ((i10 & 32) != 0) {
-                f15 = aVar.f19490f;
+                f15 = aVar.f19630f;
             }
             if ((i10 & 64) != 0) {
-                f16 = aVar.f19491g;
+                f16 = aVar.f19631g;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                f17 = aVar.f19492h;
+                f17 = aVar.f19632h;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                f18 = aVar.f19493i;
+                f18 = aVar.f19633i;
             }
             float f19 = f17;
             float f20 = f18;
@@ -1303,15 +1303,15 @@ public final class SelfieOverlayView extends FrameLayout {
         }
 
         public final float c() {
-            return this.f19487c;
+            return this.f19627c;
         }
 
         public final float d() {
-            return this.f19488d;
+            return this.f19628d;
         }
 
         public final float e() {
-            return this.f19489e;
+            return this.f19629e;
         }
 
         public boolean equals(Object obj) {
@@ -1320,85 +1320,85 @@ public final class SelfieOverlayView extends FrameLayout {
             }
             if (obj instanceof a) {
                 a aVar = (a) obj;
-                return Float.compare(this.f19485a, aVar.f19485a) == 0 && Float.compare(this.f19486b, aVar.f19486b) == 0 && Float.compare(this.f19487c, aVar.f19487c) == 0 && Float.compare(this.f19488d, aVar.f19488d) == 0 && Float.compare(this.f19489e, aVar.f19489e) == 0 && Float.compare(this.f19490f, aVar.f19490f) == 0 && Float.compare(this.f19491g, aVar.f19491g) == 0 && Float.compare(this.f19492h, aVar.f19492h) == 0 && Float.compare(this.f19493i, aVar.f19493i) == 0;
+                return Float.compare(this.f19625a, aVar.f19625a) == 0 && Float.compare(this.f19626b, aVar.f19626b) == 0 && Float.compare(this.f19627c, aVar.f19627c) == 0 && Float.compare(this.f19628d, aVar.f19628d) == 0 && Float.compare(this.f19629e, aVar.f19629e) == 0 && Float.compare(this.f19630f, aVar.f19630f) == 0 && Float.compare(this.f19631g, aVar.f19631g) == 0 && Float.compare(this.f19632h, aVar.f19632h) == 0 && Float.compare(this.f19633i, aVar.f19633i) == 0;
             }
             return false;
         }
 
         public final float f() {
-            return this.f19490f;
+            return this.f19630f;
         }
 
         public final float g() {
-            return this.f19491g;
+            return this.f19631g;
         }
 
         public final float h() {
-            return this.f19492h;
+            return this.f19632h;
         }
 
         public int hashCode() {
-            return (((((((((((((((Float.hashCode(this.f19485a) * 31) + Float.hashCode(this.f19486b)) * 31) + Float.hashCode(this.f19487c)) * 31) + Float.hashCode(this.f19488d)) * 31) + Float.hashCode(this.f19489e)) * 31) + Float.hashCode(this.f19490f)) * 31) + Float.hashCode(this.f19491g)) * 31) + Float.hashCode(this.f19492h)) * 31) + Float.hashCode(this.f19493i);
+            return (((((((((((((((Float.hashCode(this.f19625a) * 31) + Float.hashCode(this.f19626b)) * 31) + Float.hashCode(this.f19627c)) * 31) + Float.hashCode(this.f19628d)) * 31) + Float.hashCode(this.f19629e)) * 31) + Float.hashCode(this.f19630f)) * 31) + Float.hashCode(this.f19631g)) * 31) + Float.hashCode(this.f19632h)) * 31) + Float.hashCode(this.f19633i);
         }
 
         public final float i() {
-            return this.f19493i;
+            return this.f19633i;
         }
 
         public final float j() {
-            return this.f19485a;
+            return this.f19625a;
         }
 
         public final float k() {
-            return this.f19486b;
+            return this.f19626b;
         }
 
         public final void l(float f10) {
-            this.f19487c = f10;
+            this.f19627c = f10;
         }
 
         public final void m(float f10) {
-            this.f19488d = f10;
+            this.f19628d = f10;
         }
 
         public final void n(float f10) {
-            this.f19489e = f10;
+            this.f19629e = f10;
         }
 
         public final void o(float f10) {
-            this.f19490f = f10;
+            this.f19630f = f10;
         }
 
         public final void p(float f10) {
-            this.f19491g = f10;
+            this.f19631g = f10;
         }
 
         public final void q(float f10) {
-            this.f19492h = f10;
+            this.f19632h = f10;
         }
 
         public final void r(float f10) {
-            this.f19493i = f10;
+            this.f19633i = f10;
         }
 
         public final void s(float f10) {
-            this.f19485a = f10;
+            this.f19625a = f10;
         }
 
         public final void t(float f10) {
-            this.f19486b = f10;
+            this.f19626b = f10;
         }
 
         public String toString() {
-            float f10 = this.f19485a;
-            float f11 = this.f19486b;
-            float f12 = this.f19487c;
-            float f13 = this.f19488d;
-            float f14 = this.f19489e;
-            float f15 = this.f19490f;
-            float f16 = this.f19491g;
-            float f17 = this.f19492h;
-            float f18 = this.f19493i;
+            float f10 = this.f19625a;
+            float f11 = this.f19626b;
+            float f12 = this.f19627c;
+            float f13 = this.f19628d;
+            float f14 = this.f19629e;
+            float f15 = this.f19630f;
+            float f16 = this.f19631g;
+            float f17 = this.f19632h;
+            float f18 = this.f19633i;
             return "ArcHoverState(arcTopTranslateX=" + f10 + ", arcTopTranslateY=" + f11 + ", arcBottomTranslateX=" + f12 + ", arcBottomTranslateY=" + f13 + ", arcLeftTranslateX=" + f14 + ", arcLeftTranslateY=" + f15 + ", arcRightTranslateX=" + f16 + ", arcRightTranslateY=" + f17 + ", arcThicknessMultiplier=" + f18 + ")";
         }
 

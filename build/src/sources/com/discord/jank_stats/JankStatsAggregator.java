@@ -19,7 +19,7 @@ public final class JankStatsAggregator {
     @NotNull
     public static final JankStatsAggregator INSTANCE = new JankStatsAggregator();
     @NotNull
-    private static final JankStats.OnFrameListener listener = new JankStats.OnFrameListener() { // from class: j7.a
+    private static final JankStats.OnFrameListener listener = new JankStats.OnFrameListener() { // from class: k7.a
         @Override // androidx.metrics.performance.JankStats.OnFrameListener
         public final void a(FrameData frameData) {
             JankStatsAggregator.listener$lambda$0(frameData);
@@ -76,9 +76,9 @@ public final class JankStatsAggregator {
     public final void initialize(@NotNull Window window) {
         Intrinsics.checkNotNullParameter(window, "window");
         synchronized (this) {
-            jankStats = JankStats.f5052f.a(window, listener);
+            jankStats = JankStats.f4749f.a(window, listener);
             INSTANCE.setJankHeuristicMultiplier(1.0f);
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
         }
     }
 

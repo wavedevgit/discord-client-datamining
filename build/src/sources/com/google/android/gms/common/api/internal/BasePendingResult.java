@@ -8,11 +8,11 @@ import androidx.annotation.NonNull;
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.android.gms.common.api.Status;
 import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
-import ef.e;
-import ef.g;
-import ef.k;
-import fg.h;
-import gf.q;
+import ff.e;
+import ff.g;
+import ff.k;
+import gg.h;
+import hf.q;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.concurrent.CountDownLatch;
@@ -51,7 +51,7 @@ public abstract class BasePendingResult<R extends k> extends g {
                     Log.wtf("BasePendingResult", "Don't know how to handle message: " + i10, new Exception());
                     return;
                 }
-                ((BasePendingResult) message.obj).forceFailureUnlessReady(Status.f13737t);
+                ((BasePendingResult) message.obj).forceFailureUnlessReady(Status.f13877t);
                 return;
             }
             Pair pair = (Pair) message.obj;
@@ -106,7 +106,7 @@ public abstract class BasePendingResult<R extends k> extends g {
     /* JADX INFO: Access modifiers changed from: protected */
     public abstract k a(Status status);
 
-    @Override // ef.g
+    @Override // ff.g
     public final void addStatusListener(@NonNull g.a aVar) {
         boolean z10;
         if (aVar != null) {
@@ -128,7 +128,7 @@ public abstract class BasePendingResult<R extends k> extends g {
         }
     }
 
-    @Override // ef.g
+    @Override // ff.g
     @NonNull
     @ResultIgnorabilityUnspecified
     public final R await(long j10, @NonNull TimeUnit timeUnit) {
@@ -139,10 +139,10 @@ public abstract class BasePendingResult<R extends k> extends g {
         q.o(true, "Cannot await if then() has been called.");
         try {
             if (!this.zaf.await(j10, timeUnit)) {
-                forceFailureUnlessReady(Status.f13737t);
+                forceFailureUnlessReady(Status.f13877t);
             }
         } catch (InterruptedException unused) {
-            forceFailureUnlessReady(Status.f13735r);
+            forceFailureUnlessReady(Status.f13875r);
         }
         q.o(isReady(), "Result is not ready.");
         return (R) b();

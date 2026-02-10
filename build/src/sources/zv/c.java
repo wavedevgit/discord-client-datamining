@@ -1,78 +1,33 @@
 package zv;
 
-import java.util.List;
-import kotlin.Result;
-import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
-import ys.e;
-import yv.o;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements su.b, o {
+public final class c extends k {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final c f56699a = new c();
+    /* renamed from: e  reason: collision with root package name */
+    private final j f56710e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final b f56700b = new b();
+    /* renamed from: i  reason: collision with root package name */
+    private final int f56711i;
 
-    private c() {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public c(j replaceData, int i10) {
+        super(null);
+        Intrinsics.checkNotNullParameter(replaceData, "replaceData");
+        this.f56710e = replaceData;
+        this.f56711i = i10;
     }
 
-    private final Integer a(List list) {
-        Object b10;
-        try {
-            Result.a aVar = Result.f32053e;
-            b10 = Result.b(Integer.valueOf(((e) CollectionsKt.o0(list)).compareTo((e) CollectionsKt.z0(list))));
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32053e;
-            b10 = Result.b(kotlin.c.a(th2));
-        }
-        if (Result.h(b10)) {
-            int intValue = ((Number) b10).intValue();
-            if (intValue > 0) {
-                return 1;
-            }
-            if (intValue < 0) {
-                return -1;
-            }
-            return 0;
-        }
-        if (Result.g(b10)) {
-            b10 = null;
-        }
-        return (Integer) b10;
+    public j a() {
+        return this.f56710e;
     }
 
-    private final List b(List list) {
-        Object b10;
-        try {
-            Result.a aVar = Result.f32053e;
-            Object obj = list.get(2);
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.String");
-            a valueOf = a.valueOf((String) obj);
-            b bVar = f56700b;
-            Object obj2 = list.get(0);
-            Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.String");
-            e a10 = bVar.a((String) obj2, valueOf);
-            Object obj3 = list.get(1);
-            Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type kotlin.String");
-            b10 = Result.b(CollectionsKt.o(a10, bVar.a((String) obj3, valueOf)));
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32053e;
-            b10 = Result.b(kotlin.c.a(th2));
-        }
-        if (Result.g(b10)) {
-            b10 = null;
-        }
-        return (List) b10;
-    }
-
-    @Override // su.b
-    public Object f(Object obj, Object obj2) {
-        List b10 = b(cw.a.c(obj));
-        if (b10 != null) {
-            return a(b10);
-        }
-        return null;
+    @Override // kotlin.jvm.functions.Function0
+    /* renamed from: b */
+    public String invoke() {
+        String b10;
+        b10 = l.b(a().c(), a().b(), a().a(), this.f56711i);
+        return b10;
     }
 }

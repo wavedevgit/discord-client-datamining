@@ -1,81 +1,47 @@
 package uu;
 
 import java.util.List;
-import java.util.Map;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.collections.CollectionsKt;
+import kotlin.text.StringsKt;
+import uu.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b {
+public interface b extends uu.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f52136a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final Map f52137b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Object f52138c;
-
-    public b(List list, Map map, Object obj) {
-        this.f52136a = list;
-        this.f52137b = map;
-        this.f52138c = obj;
-    }
-
-    public final Map a() {
-        return this.f52137b;
-    }
-
-    public final List b() {
-        return this.f52136a;
-    }
-
-    public final Object c() {
-        return this.f52138c;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static List a(b bVar, Comparable comparable, Comparable comparable2) {
+            boolean z10 = comparable instanceof Number;
+            if (z10 && (comparable2 instanceof Number)) {
+                return CollectionsKt.o(Double.valueOf(((Number) comparable).doubleValue()), Double.valueOf(((Number) comparable2).doubleValue()));
+            }
+            if ((comparable instanceof String) && (comparable2 instanceof Number)) {
+                return CollectionsKt.o(StringsKt.p((String) comparable), Double.valueOf(((Number) comparable2).doubleValue()));
+            }
+            if (z10 && (comparable2 instanceof String)) {
+                return CollectionsKt.o(Double.valueOf(((Number) comparable).doubleValue()), StringsKt.p((String) comparable2));
+            }
+            if (!(comparable instanceof Boolean) && !(comparable2 instanceof Boolean)) {
+                return bVar.d(comparable, comparable2);
+            }
+            return CollectionsKt.o(bVar.c(comparable), bVar.c(comparable2));
         }
-        if (!(obj instanceof b)) {
-            return false;
+
+        public static List b(b bVar, Comparable comparable, Comparable comparable2) {
+            if (comparable != null && comparable2 != null && comparable.getClass() == comparable2.getClass()) {
+                return CollectionsKt.o(comparable, comparable2);
+            }
+            if (comparable == null && comparable2 == null) {
+                return CollectionsKt.o((Void) comparable, (Void) comparable2);
+            }
+            return null;
         }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f52136a, bVar.f52136a) && Intrinsics.areEqual(this.f52137b, bVar.f52137b) && Intrinsics.areEqual(this.f52138c, bVar.f52138c)) {
-            return true;
+
+        public static Boolean c(b bVar, Object obj) {
+            return a.C0720a.a(bVar, obj);
         }
-        return false;
     }
 
-    public int hashCode() {
-        int hashCode;
-        int hashCode2;
-        List list = this.f52136a;
-        int i10 = 0;
-        if (list == null) {
-            hashCode = 0;
-        } else {
-            hashCode = list.hashCode();
-        }
-        int i11 = hashCode * 31;
-        Map map = this.f52137b;
-        if (map == null) {
-            hashCode2 = 0;
-        } else {
-            hashCode2 = map.hashCode();
-        }
-        int i12 = (i11 + hashCode2) * 31;
-        Object obj = this.f52138c;
-        if (obj != null) {
-            i10 = obj.hashCode();
-        }
-        return i12 + i10;
-    }
+    List d(Comparable comparable, Comparable comparable2);
 
-    public String toString() {
-        List list = this.f52136a;
-        Map map = this.f52137b;
-        Object obj = this.f52138c;
-        return "ArrayOperationInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
-    }
+    List g(Comparable comparable, Comparable comparable2);
 }

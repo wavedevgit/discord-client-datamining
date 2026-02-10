@@ -20,32 +20,32 @@ import java.util.concurrent.TimeUnit;
 public final class e implements q {
 
     /* renamed from: d  reason: collision with root package name */
-    private final w f28928d;
+    private final w f29128d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.cache.g f28929e;
+    private final io.sentry.cache.g f29129e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final k7 f28930i;
+    private final k7 f29130i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final a0 f28931o;
+    private final a0 f29131o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final r f28932p;
+    private final r f29132p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final o f28933q;
+    private final o f29133q;
 
     /* renamed from: r  reason: collision with root package name */
-    private volatile Runnable f28934r;
+    private volatile Runnable f29134r;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f28935a;
+        private int f29135a;
 
         private b() {
         }
@@ -54,8 +54,8 @@ public final class e implements q {
         public Thread newThread(Runnable runnable) {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("SentryAsyncConnection-");
-            int i10 = this.f28935a;
-            this.f28935a = i10 + 1;
+            int i10 = this.f29135a;
+            this.f29135a = i10 + 1;
             sb2.append(i10);
             Thread thread = new Thread(runnable, sb2.toString());
             thread.setDaemon(true);
@@ -68,41 +68,41 @@ public final class e implements q {
     public final class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final l5 f28936d;
+        private final l5 f29136d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Hint f28937e;
+        private final Hint f29137e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final io.sentry.cache.g f28938i;
+        private final io.sentry.cache.g f29138i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final c0 f28939o = c0.a();
+        private final c0 f29139o = c0.a();
 
         c(l5 l5Var, Hint hint, io.sentry.cache.g gVar) {
-            this.f28936d = (l5) io.sentry.util.y.c(l5Var, "Envelope is required.");
-            this.f28937e = hint;
-            this.f28938i = (io.sentry.cache.g) io.sentry.util.y.c(gVar, "EnvelopeCache is required.");
+            this.f29136d = (l5) io.sentry.util.y.c(l5Var, "Envelope is required.");
+            this.f29137e = hint;
+            this.f29138i = (io.sentry.cache.g) io.sentry.util.y.c(gVar, "EnvelopeCache is required.");
         }
 
         public static /* synthetic */ void a(c cVar, c0 c0Var, io.sentry.hints.p pVar) {
-            e.this.f28930i.getLogger().c(SentryLevel.DEBUG, "Marking envelope submission result: %s", Boolean.valueOf(c0Var.d()));
+            e.this.f29130i.getLogger().c(SentryLevel.DEBUG, "Marking envelope submission result: %s", Boolean.valueOf(c0Var.d()));
             pVar.c(c0Var.d());
         }
 
         public static /* synthetic */ void b(c cVar, io.sentry.hints.f fVar) {
-            if (fVar.b(cVar.f28936d.b().a())) {
+            if (fVar.b(cVar.f29136d.b().a())) {
                 fVar.d();
-                e.this.f28930i.getLogger().c(SentryLevel.DEBUG, "Disk flush envelope fired", new Object[0]);
+                e.this.f29130i.getLogger().c(SentryLevel.DEBUG, "Disk flush envelope fired", new Object[0]);
                 return;
             }
-            e.this.f28930i.getLogger().c(SentryLevel.DEBUG, "Not firing envelope flush as there's an ongoing transaction", new Object[0]);
+            e.this.f29130i.getLogger().c(SentryLevel.DEBUG, "Not firing envelope flush as there's an ongoing transaction", new Object[0]);
         }
 
         public static /* synthetic */ void d(c cVar, boolean z10, l5 l5Var, Object obj, Class cls) {
             if (!z10) {
-                io.sentry.util.v.a(cls, obj, e.this.f28930i.getLogger());
-                e.this.f28930i.getClientReportRecorder().b(io.sentry.clientreport.f.NETWORK_ERROR, l5Var);
+                io.sentry.util.v.a(cls, obj, e.this.f29130i.getLogger());
+                e.this.f29130i.getClientReportRecorder().b(io.sentry.clientreport.f.NETWORK_ERROR, l5Var);
                 return;
             }
             cVar.getClass();
@@ -110,45 +110,45 @@ public final class e implements q {
 
         public static /* synthetic */ void e(c cVar, boolean z10, Object obj, Class cls) {
             if (!z10) {
-                io.sentry.util.v.a(cls, obj, e.this.f28930i.getLogger());
-                e.this.f28930i.getClientReportRecorder().b(io.sentry.clientreport.f.NETWORK_ERROR, cVar.f28936d);
+                io.sentry.util.v.a(cls, obj, e.this.f29130i.getLogger());
+                e.this.f29130i.getClientReportRecorder().b(io.sentry.clientreport.f.NETWORK_ERROR, cVar.f29136d);
                 return;
             }
             cVar.getClass();
         }
 
         private c0 j() {
-            c0 c0Var = this.f28939o;
-            this.f28936d.b().d(null);
-            final boolean K0 = this.f28938i.K0(this.f28936d, this.f28937e);
-            io.sentry.util.n.k(this.f28937e, io.sentry.hints.f.class, new n.a() { // from class: io.sentry.transport.g
+            c0 c0Var = this.f29139o;
+            this.f29136d.b().d(null);
+            final boolean H0 = this.f29138i.H0(this.f29136d, this.f29137e);
+            io.sentry.util.n.k(this.f29137e, io.sentry.hints.f.class, new n.a() { // from class: io.sentry.transport.g
                 @Override // io.sentry.util.n.a
                 public final void accept(Object obj) {
                     e.c.b(e.c.this, (io.sentry.hints.f) obj);
                 }
             });
-            if (e.this.f28932p.a()) {
-                final l5 e10 = e.this.f28930i.getClientReportRecorder().e(this.f28936d);
+            if (e.this.f29132p.a()) {
+                final l5 e10 = e.this.f29130i.getClientReportRecorder().e(this.f29136d);
                 try {
-                    e10.b().d(io.sentry.k.k(e.this.f28930i.getDateProvider().now().h()));
-                    c0 h10 = e.this.f28933q.h(e10);
+                    e10.b().d(io.sentry.k.k(e.this.f29130i.getDateProvider().now().h()));
+                    c0 h10 = e.this.f29133q.h(e10);
                     if (h10.d()) {
-                        this.f28938i.I(this.f28936d);
+                        this.f29138i.I(this.f29136d);
                         return h10;
                     }
                     String str = "The transport failed to send the envelope with response code " + h10.c();
-                    e.this.f28930i.getLogger().c(SentryLevel.ERROR, str, new Object[0]);
-                    if (h10.c() >= 400 && h10.c() != 429 && !K0) {
-                        io.sentry.util.n.j(this.f28937e, io.sentry.hints.k.class, new n.c() { // from class: io.sentry.transport.h
+                    e.this.f29130i.getLogger().c(SentryLevel.ERROR, str, new Object[0]);
+                    if (h10.c() >= 400 && h10.c() != 429 && !H0) {
+                        io.sentry.util.n.j(this.f29137e, io.sentry.hints.k.class, new n.c() { // from class: io.sentry.transport.h
                             @Override // io.sentry.util.n.c
                             public final void accept(Object obj) {
-                                e.this.f28930i.getClientReportRecorder().b(io.sentry.clientreport.f.NETWORK_ERROR, e10);
+                                e.this.f29130i.getClientReportRecorder().b(io.sentry.clientreport.f.NETWORK_ERROR, e10);
                             }
                         });
                     }
                     throw new IllegalStateException(str);
                 } catch (IOException e11) {
-                    io.sentry.util.n.l(this.f28937e, io.sentry.hints.k.class, new n.a() { // from class: io.sentry.transport.i
+                    io.sentry.util.n.l(this.f29137e, io.sentry.hints.k.class, new n.a() { // from class: io.sentry.transport.i
                         @Override // io.sentry.util.n.a
                         public final void accept(Object obj) {
                             ((io.sentry.hints.k) obj).d(true);
@@ -156,13 +156,13 @@ public final class e implements q {
                     }, new n.b() { // from class: io.sentry.transport.j
                         @Override // io.sentry.util.n.b
                         public final void a(Object obj, Class cls) {
-                            e.c.d(e.c.this, K0, e10, obj, cls);
+                            e.c.d(e.c.this, H0, e10, obj, cls);
                         }
                     });
                     throw new IllegalStateException("Sending the event failed.", e11);
                 }
             }
-            io.sentry.util.n.l(this.f28937e, io.sentry.hints.k.class, new n.a() { // from class: io.sentry.transport.k
+            io.sentry.util.n.l(this.f29137e, io.sentry.hints.k.class, new n.a() { // from class: io.sentry.transport.k
                 @Override // io.sentry.util.n.a
                 public final void accept(Object obj) {
                     ((io.sentry.hints.k) obj).d(true);
@@ -170,7 +170,7 @@ public final class e implements q {
             }, new n.b() { // from class: io.sentry.transport.l
                 @Override // io.sentry.util.n.b
                 public final void a(Object obj, Class cls) {
-                    e.c.e(e.c.this, K0, obj, cls);
+                    e.c.e(e.c.this, H0, obj, cls);
                 }
             });
             return c0Var;
@@ -178,11 +178,11 @@ public final class e implements q {
 
         @Override // java.lang.Runnable
         public void run() {
-            e.this.f28934r = this;
-            final c0 c0Var = this.f28939o;
+            e.this.f29134r = this;
+            final c0 c0Var = this.f29139o;
             try {
                 c0Var = j();
-                e.this.f28930i.getLogger().c(SentryLevel.DEBUG, "Envelope flushed", new Object[0]);
+                e.this.f29130i.getLogger().c(SentryLevel.DEBUG, "Envelope flushed", new Object[0]);
             } finally {
             }
         }
@@ -210,16 +210,16 @@ public final class e implements q {
     public static /* synthetic */ void g(e eVar, io.sentry.hints.g gVar) {
         eVar.getClass();
         gVar.b();
-        eVar.f28930i.getLogger().c(SentryLevel.DEBUG, "Envelope enqueued", new Object[0]);
+        eVar.f29130i.getLogger().c(SentryLevel.DEBUG, "Envelope enqueued", new Object[0]);
     }
 
     public static /* synthetic */ void m(io.sentry.cache.g gVar, ILogger iLogger, Runnable runnable, ThreadPoolExecutor threadPoolExecutor) {
         if (runnable instanceof c) {
             c cVar = (c) runnable;
-            if (!io.sentry.util.n.h(cVar.f28937e, io.sentry.hints.e.class)) {
-                gVar.K0(cVar.f28936d, cVar.f28937e);
+            if (!io.sentry.util.n.h(cVar.f29137e, io.sentry.hints.e.class)) {
+                gVar.H0(cVar.f29136d, cVar.f29137e);
             }
-            C(cVar.f28937e, true);
+            C(cVar.f29137e, true);
             iLogger.c(SentryLevel.WARNING, "Envelope rejected", new Object[0]);
         }
     }
@@ -235,58 +235,25 @@ public final class e implements q {
 
     @Override // io.sentry.transport.q
     public void c(boolean z10) {
-        this.f28931o.close();
-        this.f28928d.shutdown();
-        this.f28930i.getLogger().c(SentryLevel.DEBUG, "Shutting down", new Object[0]);
+        this.f29131o.close();
+        this.f29128d.shutdown();
+        this.f29130i.getLogger().c(SentryLevel.DEBUG, "Shutting down", new Object[0]);
         if (!z10) {
             try {
-                long flushTimeoutMillis = this.f28930i.getFlushTimeoutMillis();
-                if (!this.f28928d.awaitTermination(flushTimeoutMillis, TimeUnit.MILLISECONDS)) {
-                    ILogger logger = this.f28930i.getLogger();
+                long flushTimeoutMillis = this.f29130i.getFlushTimeoutMillis();
+                if (!this.f29128d.awaitTermination(flushTimeoutMillis, TimeUnit.MILLISECONDS)) {
+                    ILogger logger = this.f29130i.getLogger();
                     SentryLevel sentryLevel = SentryLevel.WARNING;
                     logger.c(sentryLevel, "Failed to shutdown the async connection async sender  within " + flushTimeoutMillis + " ms. Trying to force it now.", new Object[0]);
-                    this.f28928d.shutdownNow();
-                    if (this.f28934r != null) {
-                        this.f28928d.getRejectedExecutionHandler().rejectedExecution(this.f28934r, this.f28928d);
+                    this.f29128d.shutdownNow();
+                    if (this.f29134r != null) {
+                        this.f29128d.getRejectedExecutionHandler().rejectedExecution(this.f29134r, this.f29128d);
                     }
                 }
             } catch (InterruptedException unused) {
-                this.f28930i.getLogger().c(SentryLevel.DEBUG, "Thread interrupted while closing the connection.", new Object[0]);
+                this.f29130i.getLogger().c(SentryLevel.DEBUG, "Thread interrupted while closing the connection.", new Object[0]);
                 Thread.currentThread().interrupt();
             }
-        }
-    }
-
-    @Override // io.sentry.transport.q
-    public void c0(l5 l5Var, Hint hint) {
-        io.sentry.cache.g gVar = this.f28929e;
-        boolean z10 = false;
-        if (io.sentry.util.n.h(hint, io.sentry.hints.e.class)) {
-            gVar = s.b();
-            this.f28930i.getLogger().c(SentryLevel.DEBUG, "Captured Envelope is already cached", new Object[0]);
-            z10 = true;
-        }
-        l5 s10 = this.f28931o.s(l5Var, hint);
-        if (s10 == null) {
-            if (z10) {
-                this.f28929e.I(l5Var);
-                return;
-            }
-            return;
-        }
-        if (io.sentry.util.n.h(hint, UncaughtExceptionHandlerIntegration.a.class)) {
-            s10 = this.f28930i.getClientReportRecorder().e(s10);
-        }
-        Future submit = this.f28928d.submit(new c(s10, hint, gVar));
-        if (submit != null && submit.isCancelled()) {
-            this.f28930i.getClientReportRecorder().b(io.sentry.clientreport.f.QUEUE_OVERFLOW, s10);
-        } else {
-            io.sentry.util.n.k(hint, io.sentry.hints.g.class, new n.a() { // from class: io.sentry.transport.b
-                @Override // io.sentry.util.n.a
-                public final void accept(Object obj) {
-                    e.g(e.this, (io.sentry.hints.g) obj);
-                }
-            });
         }
     }
 
@@ -297,13 +264,46 @@ public final class e implements q {
 
     @Override // io.sentry.transport.q
     public void d(long j10) {
-        this.f28928d.m(j10);
+        this.f29128d.m(j10);
+    }
+
+    @Override // io.sentry.transport.q
+    public void d0(l5 l5Var, Hint hint) {
+        io.sentry.cache.g gVar = this.f29129e;
+        boolean z10 = false;
+        if (io.sentry.util.n.h(hint, io.sentry.hints.e.class)) {
+            gVar = s.b();
+            this.f29130i.getLogger().c(SentryLevel.DEBUG, "Captured Envelope is already cached", new Object[0]);
+            z10 = true;
+        }
+        l5 s10 = this.f29131o.s(l5Var, hint);
+        if (s10 == null) {
+            if (z10) {
+                this.f29129e.I(l5Var);
+                return;
+            }
+            return;
+        }
+        if (io.sentry.util.n.h(hint, UncaughtExceptionHandlerIntegration.a.class)) {
+            s10 = this.f29130i.getClientReportRecorder().e(s10);
+        }
+        Future submit = this.f29128d.submit(new c(s10, hint, gVar));
+        if (submit != null && submit.isCancelled()) {
+            this.f29130i.getClientReportRecorder().b(io.sentry.clientreport.f.QUEUE_OVERFLOW, s10);
+        } else {
+            io.sentry.util.n.k(hint, io.sentry.hints.g.class, new n.a() { // from class: io.sentry.transport.b
+                @Override // io.sentry.util.n.a
+                public final void accept(Object obj) {
+                    e.g(e.this, (io.sentry.hints.g) obj);
+                }
+            });
+        }
     }
 
     @Override // io.sentry.transport.q
     public boolean f() {
-        boolean C = this.f28931o.C();
-        boolean a10 = this.f28928d.a();
+        boolean C = this.f29131o.C();
+        boolean a10 = this.f29128d.a();
         if (!C && !a10) {
             return true;
         }
@@ -311,17 +311,17 @@ public final class e implements q {
     }
 
     @Override // io.sentry.transport.q
-    public a0 i() {
-        return this.f28931o;
+    public a0 j() {
+        return this.f29131o;
     }
 
     public e(w wVar, k7 k7Var, a0 a0Var, r rVar, o oVar) {
-        this.f28934r = null;
-        this.f28928d = (w) io.sentry.util.y.c(wVar, "executor is required");
-        this.f28929e = (io.sentry.cache.g) io.sentry.util.y.c(k7Var.getEnvelopeDiskCache(), "envelopeCache is required");
-        this.f28930i = (k7) io.sentry.util.y.c(k7Var, "options is required");
-        this.f28931o = (a0) io.sentry.util.y.c(a0Var, "rateLimiter is required");
-        this.f28932p = (r) io.sentry.util.y.c(rVar, "transportGate is required");
-        this.f28933q = (o) io.sentry.util.y.c(oVar, "httpConnection is required");
+        this.f29134r = null;
+        this.f29128d = (w) io.sentry.util.y.c(wVar, "executor is required");
+        this.f29129e = (io.sentry.cache.g) io.sentry.util.y.c(k7Var.getEnvelopeDiskCache(), "envelopeCache is required");
+        this.f29130i = (k7) io.sentry.util.y.c(k7Var, "options is required");
+        this.f29131o = (a0) io.sentry.util.y.c(a0Var, "rateLimiter is required");
+        this.f29132p = (r) io.sentry.util.y.c(rVar, "transportGate is required");
+        this.f29133q = (o) io.sentry.util.y.c(oVar, "httpConnection is required");
     }
 }

@@ -1,39 +1,67 @@
 package rg;
 
-import android.os.IBinder;
 import java.util.List;
-import java.util.Objects;
-import vh.a;
+import java.util.ListIterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class k extends e {
+final class k extends i implements ListIterator {
 
-    /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ IBinder f48959e;
-
-    /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ m f48960i;
+    /* renamed from: o  reason: collision with root package name */
+    final /* synthetic */ l f48470o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public k(m mVar, IBinder iBinder) {
-        this.f48959e = iBinder;
-        Objects.requireNonNull(mVar);
-        this.f48960i = mVar;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public k(l lVar) {
+        super(lVar);
+        this.f48470o = lVar;
     }
 
-    @Override // rg.e
-    public final void b() {
-        List<Runnable> list;
-        List list2;
-        vh.a f10 = a.AbstractBinderC0695a.f(this.f48959e);
-        o oVar = this.f48960i.f48962d;
-        oVar.f48976m = f10;
-        o.r(oVar);
-        oVar.f48970g = false;
-        list = oVar.f48967d;
-        for (Runnable runnable : list) {
-            runnable.run();
+    @Override // java.util.ListIterator
+    public final void add(Object obj) {
+        int i10;
+        boolean isEmpty = this.f48470o.isEmpty();
+        a();
+        ((ListIterator) this.f48254d).add(obj);
+        m mVar = this.f48470o.f48518q;
+        i10 = mVar.f48541o;
+        mVar.f48541o = i10 + 1;
+        if (isEmpty) {
+            this.f48470o.b();
         }
-        list2 = oVar.f48967d;
-        list2.clear();
+    }
+
+    @Override // java.util.ListIterator
+    public final boolean hasPrevious() {
+        a();
+        return ((ListIterator) this.f48254d).hasPrevious();
+    }
+
+    @Override // java.util.ListIterator
+    public final int nextIndex() {
+        a();
+        return ((ListIterator) this.f48254d).nextIndex();
+    }
+
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        a();
+        return ((ListIterator) this.f48254d).previous();
+    }
+
+    @Override // java.util.ListIterator
+    public final int previousIndex() {
+        a();
+        return ((ListIterator) this.f48254d).previousIndex();
+    }
+
+    @Override // java.util.ListIterator
+    public final void set(Object obj) {
+        a();
+        ((ListIterator) this.f48254d).set(obj);
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public k(l lVar, int i10) {
+        super(lVar, ((List) lVar.f48305e).listIterator(i10));
+        this.f48470o = lVar;
     }
 }

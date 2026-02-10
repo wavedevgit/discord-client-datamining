@@ -16,29 +16,29 @@ import com.google.android.material.datepicker.i;
 public class o extends RecyclerView.Adapter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.google.android.material.datepicker.a f14957a;
+    private final com.google.android.material.datepicker.a f15097a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i.m f14958b;
+    private final i.m f15098b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f14959c;
+    private final int f15099c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements AdapterView.OnItemClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ MaterialCalendarGridView f14960d;
+        final /* synthetic */ MaterialCalendarGridView f15100d;
 
         a(MaterialCalendarGridView materialCalendarGridView) {
-            this.f14960d = materialCalendarGridView;
+            this.f15100d = materialCalendarGridView;
         }
 
         @Override // android.widget.AdapterView.OnItemClickListener
         public void onItemClick(AdapterView adapterView, View view, int i10, long j10) {
-            if (this.f14960d.getAdapter2().p(i10)) {
-                o.this.f14958b.a(this.f14960d.getAdapter2().getItem(i10).longValue());
+            if (this.f15100d.getAdapter2().p(i10)) {
+                o.this.f15098b.a(this.f15100d.getAdapter2().getItem(i10).longValue());
             }
         }
     }
@@ -47,17 +47,17 @@ public class o extends RecyclerView.Adapter {
     public static class b extends RecyclerView.ViewHolder {
 
         /* renamed from: d  reason: collision with root package name */
-        final TextView f14962d;
+        final TextView f15102d;
 
         /* renamed from: e  reason: collision with root package name */
-        final MaterialCalendarGridView f14963e;
+        final MaterialCalendarGridView f15103e;
 
         b(LinearLayout linearLayout, boolean z10) {
             super(linearLayout);
-            TextView textView = (TextView) linearLayout.findViewById(ah.f.f742w);
-            this.f14962d = textView;
+            TextView textView = (TextView) linearLayout.findViewById(bh.f.f6730w);
+            this.f15102d = textView;
             h0.o0(textView, true);
-            this.f14963e = (MaterialCalendarGridView) linearLayout.findViewById(ah.f.f738s);
+            this.f15103e = (MaterialCalendarGridView) linearLayout.findViewById(bh.f.f6726s);
             if (!z10) {
                 textView.setVisibility(8);
             }
@@ -72,15 +72,15 @@ public class o extends RecyclerView.Adapter {
         m l10 = aVar.l();
         if (o10.compareTo(l10) <= 0) {
             if (l10.compareTo(h10) <= 0) {
-                int K = n.f14951p * i.K(context);
+                int K = n.f15091p * i.K(context);
                 if (k.J(context)) {
                     i10 = i.K(context);
                 } else {
                     i10 = 0;
                 }
-                this.f14959c = K + i10;
-                this.f14957a = aVar;
-                this.f14958b = mVar;
+                this.f15099c = K + i10;
+                this.f15097a = aVar;
+                this.f15098b = mVar;
                 setHasStableIds(true);
                 return;
             }
@@ -91,7 +91,7 @@ public class o extends RecyclerView.Adapter {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m b(int i10) {
-        return this.f14957a.o().r(i10);
+        return this.f15097a.o().r(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -101,21 +101,21 @@ public class o extends RecyclerView.Adapter {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int d(m mVar) {
-        return this.f14957a.o().t(mVar);
+        return this.f15097a.o().t(mVar);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     /* renamed from: e */
     public void onBindViewHolder(b bVar, int i10) {
-        m r10 = this.f14957a.o().r(i10);
-        bVar.f14962d.setText(r10.o());
-        MaterialCalendarGridView materialCalendarGridView = (MaterialCalendarGridView) bVar.f14963e.findViewById(ah.f.f738s);
-        if (materialCalendarGridView.getAdapter2() != null && r10.equals(materialCalendarGridView.getAdapter2().f14953d)) {
+        m r10 = this.f15097a.o().r(i10);
+        bVar.f15102d.setText(r10.o());
+        MaterialCalendarGridView materialCalendarGridView = (MaterialCalendarGridView) bVar.f15103e.findViewById(bh.f.f6726s);
+        if (materialCalendarGridView.getAdapter2() != null && r10.equals(materialCalendarGridView.getAdapter2().f15093d)) {
             materialCalendarGridView.invalidate();
             materialCalendarGridView.getAdapter2().o(materialCalendarGridView);
         } else {
-            n nVar = new n(r10, null, this.f14957a, null);
-            materialCalendarGridView.setNumColumns(r10.f14947o);
+            n nVar = new n(r10, null, this.f15097a, null);
+            materialCalendarGridView.setNumColumns(r10.f15087o);
             materialCalendarGridView.setAdapter((ListAdapter) nVar);
         }
         materialCalendarGridView.setOnItemClickListener(new a(materialCalendarGridView));
@@ -124,9 +124,9 @@ public class o extends RecyclerView.Adapter {
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     /* renamed from: f */
     public b onCreateViewHolder(ViewGroup viewGroup, int i10) {
-        LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(viewGroup.getContext()).inflate(ah.h.f767q, viewGroup, false);
+        LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(viewGroup.getContext()).inflate(bh.h.f6755q, viewGroup, false);
         if (k.J(viewGroup.getContext())) {
-            linearLayout.setLayoutParams(new RecyclerView.LayoutParams(-1, this.f14959c));
+            linearLayout.setLayoutParams(new RecyclerView.LayoutParams(-1, this.f15099c));
             return new b(linearLayout, true);
         }
         return new b(linearLayout, false);
@@ -134,11 +134,11 @@ public class o extends RecyclerView.Adapter {
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     public int getItemCount() {
-        return this.f14957a.j();
+        return this.f15097a.j();
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     public long getItemId(int i10) {
-        return this.f14957a.o().r(i10).q();
+        return this.f15097a.o().r(i10).q();
     }
 }

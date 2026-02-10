@@ -61,11 +61,11 @@ public final class ChatListViewManager extends ViewGroupManager<ChatListView> im
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f32056a;
+                unit = Unit.f31765a;
                 return unit;
             }
         });
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     private final ComponentProvider getExistingProvider(Context context) {
@@ -91,7 +91,7 @@ public final class ChatListViewManager extends ViewGroupManager<ChatListView> im
                 return existingProvider2;
             }
             ComponentProvider componentProvider = new ComponentProvider(context, true);
-            this.weakProvider = qr.v.a(new WeakReference(context), componentProvider);
+            this.weakProvider = rr.v.a(new WeakReference(context), componentProvider);
             return componentProvider;
         }
     }

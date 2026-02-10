@@ -99,24 +99,24 @@ public final class d0 extends e5 implements w1 {
                                 break;
                             }
                         } catch (NumberFormatException unused) {
-                            Date u02 = e3Var.u0(iLogger);
-                            if (u02 == null) {
+                            Date s02 = e3Var.s0(iLogger);
+                            if (s02 == null) {
                                 break;
                             } else {
-                                d0Var.B = Double.valueOf(io.sentry.k.b(u02));
+                                d0Var.B = Double.valueOf(io.sentry.k.b(s02));
                                 break;
                             }
                         }
                     case 1:
-                        Map t12 = e3Var.t1(iLogger, new k.a());
-                        if (t12 == null) {
+                        Map o12 = e3Var.o1(iLogger, new k.a());
+                        if (o12 == null) {
                             break;
                         } else {
-                            d0Var.F.putAll(t12);
+                            d0Var.F.putAll(o12);
                             break;
                         }
                     case 2:
-                        e3Var.e1();
+                        e3Var.b1();
                         break;
                     case 3:
                         try {
@@ -128,34 +128,34 @@ public final class d0 extends e5 implements w1 {
                                 break;
                             }
                         } catch (NumberFormatException unused2) {
-                            Date u03 = e3Var.u0(iLogger);
-                            if (u03 == null) {
+                            Date s03 = e3Var.s0(iLogger);
+                            if (s03 == null) {
                                 break;
                             } else {
-                                d0Var.C = Double.valueOf(io.sentry.k.b(u03));
+                                d0Var.C = Double.valueOf(io.sentry.k.b(s03));
                                 break;
                             }
                         }
                     case 4:
-                        List g22 = e3Var.g2(iLogger, new a0.a());
-                        if (g22 == null) {
+                        List f22 = e3Var.f2(iLogger, new a0.a());
+                        if (f22 == null) {
                             break;
                         } else {
-                            d0Var.D.addAll(g22);
+                            d0Var.D.addAll(f22);
                             break;
                         }
                     case 5:
                         d0Var.G = new f0.a().a(e3Var, iLogger);
                         break;
                     case 6:
-                        d0Var.A = e3Var.q1();
+                        d0Var.A = e3Var.m1();
                         break;
                     default:
                         if (!aVar.a(d0Var, o02, e3Var, iLogger)) {
                             if (concurrentHashMap == null) {
                                 concurrentHashMap = new ConcurrentHashMap();
                             }
-                            e3Var.u1(iLogger, concurrentHashMap, o02);
+                            e3Var.p1(iLogger, concurrentHashMap, o02);
                             break;
                         } else {
                             break;
@@ -195,9 +195,9 @@ public final class d0 extends e5 implements w1 {
                 e8Var.q((String) entry2.getKey(), entry2.getValue());
             }
         }
-        g o10 = q10.d().o();
-        if (o10 != null) {
-            for (f fVar : o10.a()) {
+        g n10 = q10.d().n();
+        if (n10 != null) {
+            for (f fVar : n10.a()) {
                 e8Var.q("flag.evaluation." + fVar.a(), fVar.b());
             }
         }

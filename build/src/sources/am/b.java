@@ -1,511 +1,376 @@
 package am;
 
-import am.c;
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.PropertyValuesHolder;
-import android.animation.ValueAnimator;
-import android.graphics.Matrix;
-import android.graphics.RectF;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import com.otaliastudios.zoom.AbsolutePoint;
+import android.content.Context;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.widget.OverScroller;
+import bm.c;
+import cm.b;
 import com.otaliastudios.zoom.ScaledPoint;
 import com.otaliastudios.zoom.ZoomLogger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.Set;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
-import kotlin.jvm.internal.TypeIntrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
+public final class b implements GestureDetector.OnGestureListener {
+    private static final ZoomLogger A;
 
-    /* renamed from: q  reason: collision with root package name */
-    public static final C0010b f1113q = new C0010b(null);
+    /* renamed from: y  reason: collision with root package name */
+    public static final a f831y = new a(null);
 
-    /* renamed from: r  reason: collision with root package name */
-    private static final String f1114r;
-
-    /* renamed from: s  reason: collision with root package name */
-    private static final ZoomLogger f1115s;
-
-    /* renamed from: t  reason: collision with root package name */
-    private static final AccelerateDecelerateInterpolator f1116t;
-
-    /* renamed from: a  reason: collision with root package name */
-    private final bm.c f1117a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final bm.b f1118b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final yl.a f1119c;
+    /* renamed from: z  reason: collision with root package name */
+    private static final String f832z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f1120d;
+    private final cm.b f833d;
 
     /* renamed from: e  reason: collision with root package name */
-    private RectF f1121e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private RectF f1122f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private Matrix f1123g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private boolean f1124h;
+    private final zl.a f834e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Matrix f1125i;
-
-    /* renamed from: j  reason: collision with root package name */
-    private float f1126j;
-
-    /* renamed from: k  reason: collision with root package name */
-    private float f1127k;
-
-    /* renamed from: l  reason: collision with root package name */
-    private final ScaledPoint f1128l;
-
-    /* renamed from: m  reason: collision with root package name */
-    private final AbsolutePoint f1129m;
-
-    /* renamed from: n  reason: collision with root package name */
-    private long f1130n;
+    private final bm.b f835i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Set f1131o;
+    private final GestureDetector f836o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final d f1132p;
+    private final OverScroller f837p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private final b.C0153b f838q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private final b.C0153b f839r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private boolean f840s;
+
+    /* renamed from: t  reason: collision with root package name */
+    private boolean f841t;
+
+    /* renamed from: u  reason: collision with root package name */
+    private boolean f842u;
+
+    /* renamed from: v  reason: collision with root package name */
+    private boolean f843v;
+
+    /* renamed from: w  reason: collision with root package name */
+    private boolean f844w;
+
+    /* renamed from: x  reason: collision with root package name */
+    private boolean f845x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface a {
-        void c(float f10, boolean z10);
-
-        void d(Runnable runnable);
-
-        void i();
-
-        boolean post(Runnable runnable);
-    }
-
-    /* renamed from: am.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0010b {
-        public /* synthetic */ C0010b(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0010b() {
+        private a() {
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: am.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c extends Lambda implements Function1 {
+    public static final class C0012b extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ am.c f1133d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ValueAnimator f1134e;
+        final /* synthetic */ ScaledPoint f846d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        c(am.c cVar, ValueAnimator valueAnimator) {
+        C0012b(ScaledPoint scaledPoint) {
             super(1);
-            this.f1133d = cVar;
-            this.f1134e = valueAnimator;
+            this.f846d = scaledPoint;
         }
 
-        public final void a(c.a applyUpdate) {
-            Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
-            if (this.f1133d.d()) {
-                Object animatedValue = this.f1134e.getAnimatedValue("zoom");
-                if (animatedValue != null) {
-                    applyUpdate.i(((Float) animatedValue).floatValue(), this.f1133d.b());
-                } else {
-                    throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
-                }
-            }
-            if (this.f1133d.f() != null) {
-                Object animatedValue2 = this.f1134e.getAnimatedValue("panX");
-                if (animatedValue2 != null) {
-                    float floatValue = ((Float) animatedValue2).floatValue();
-                    Object animatedValue3 = this.f1134e.getAnimatedValue("panY");
-                    if (animatedValue3 != null) {
-                        applyUpdate.d(new AbsolutePoint(floatValue, ((Float) animatedValue3).floatValue()), this.f1133d.a());
-                    } else {
-                        throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
-                    }
-                } else {
-                    throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
-                }
-            } else if (this.f1133d.i() != null) {
-                Object animatedValue4 = this.f1134e.getAnimatedValue("panX");
-                if (animatedValue4 != null) {
-                    float floatValue2 = ((Float) animatedValue4).floatValue();
-                    Object animatedValue5 = this.f1134e.getAnimatedValue("panY");
-                    if (animatedValue5 != null) {
-                        applyUpdate.e(new ScaledPoint(floatValue2, ((Float) animatedValue5).floatValue()), this.f1133d.a());
-                    } else {
-                        throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
-                    }
-                } else {
-                    throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
-                }
-            }
-            applyUpdate.f(this.f1133d.g(), this.f1133d.h());
-            applyUpdate.g(this.f1133d.e());
+        public final void a(c.a animateUpdate) {
+            Intrinsics.checkNotNullParameter(animateUpdate, "$this$animateUpdate");
+            animateUpdate.c(this.f846d, true);
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f32056a;
+            return Unit.f31765a;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d extends AnimatorListenerAdapter {
-        d() {
-        }
+    public static final class c implements Runnable {
 
-        private final void a(Animator animator) {
-            animator.removeListener(this);
-            Set set = b.this.f1131o;
-            if (set != null) {
-                TypeIntrinsics.asMutableCollection(set).remove(animator);
-                if (b.this.f1131o.isEmpty()) {
-                    b.this.f1119c.f();
-                    return;
-                }
-                return;
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        static final class a extends Lambda implements Function1 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ ScaledPoint f848d;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            a(ScaledPoint scaledPoint) {
+                super(1);
+                this.f848d = scaledPoint;
             }
-            throw new NullPointerException("null cannot be cast to non-null type kotlin.collections.MutableCollection<T>");
+
+            public final void a(c.a applyUpdate) {
+                Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
+                applyUpdate.e(this.f848d, true);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((c.a) obj);
+                return Unit.f31765a;
+            }
         }
 
-        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
-        public void onAnimationCancel(Animator animator) {
-            Intrinsics.checkNotNullParameter(animator, "animator");
-            a(animator);
+        c() {
         }
 
-        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
-        public void onAnimationEnd(Animator animator) {
-            Intrinsics.checkNotNullParameter(animator, "animator");
-            a(animator);
+        @Override // java.lang.Runnable
+        public void run() {
+            if (b.this.f837p.isFinished()) {
+                b.this.f834e.f();
+                b.this.f836o.setIsLongpressEnabled(true);
+            } else if (b.this.f837p.computeScrollOffset()) {
+                b.this.f835i.h(new a(new ScaledPoint(b.this.f837p.getCurrX(), b.this.f837p.getCurrY())));
+                b.this.f835i.C(this);
+            }
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class d extends Lambda implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ ScaledPoint f849d;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        d(ScaledPoint scaledPoint) {
+            super(1);
+            this.f849d = scaledPoint;
+        }
+
+        public final void a(c.a applyUpdate) {
+            Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
+            applyUpdate.c(this.f849d, true);
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((c.a) obj);
+            return Unit.f31765a;
         }
     }
 
     static {
         String TAG = b.class.getSimpleName();
-        f1114r = TAG;
-        ZoomLogger.a aVar = ZoomLogger.f17293b;
+        f832z = TAG;
+        ZoomLogger.a aVar = ZoomLogger.f17433b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f1115s = aVar.a(TAG);
-        f1116t = new AccelerateDecelerateInterpolator();
+        A = aVar.a(TAG);
     }
 
-    public b(bm.c zoomManager, bm.b panManager, yl.a stateController, a callback) {
-        Intrinsics.checkNotNullParameter(zoomManager, "zoomManager");
+    public b(Context context, cm.b panManager, zl.a stateController, bm.b matrixController) {
+        Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(panManager, "panManager");
         Intrinsics.checkNotNullParameter(stateController, "stateController");
-        Intrinsics.checkNotNullParameter(callback, "callback");
-        this.f1117a = zoomManager;
-        this.f1118b = panManager;
-        this.f1119c = stateController;
-        this.f1120d = callback;
-        this.f1121e = new RectF();
-        this.f1122f = new RectF();
-        this.f1123g = new Matrix();
-        this.f1125i = new Matrix();
-        this.f1128l = new ScaledPoint(0.0f, 0.0f, 3, null);
-        this.f1129m = new AbsolutePoint(0.0f, 0.0f, 3, null);
-        this.f1130n = 280L;
-        this.f1131o = new LinkedHashSet();
-        this.f1132p = new d();
+        Intrinsics.checkNotNullParameter(matrixController, "matrixController");
+        this.f833d = panManager;
+        this.f834e = stateController;
+        this.f835i = matrixController;
+        GestureDetector gestureDetector = new GestureDetector(context, this);
+        gestureDetector.setOnDoubleTapListener(null);
+        Unit unit = Unit.f31765a;
+        this.f836o = gestureDetector;
+        this.f837p = new OverScroller(context);
+        this.f838q = new b.C0153b();
+        this.f839r = new b.C0153b();
+        this.f840s = true;
+        this.f841t = true;
+        this.f842u = true;
+        this.f843v = true;
+        this.f844w = true;
     }
 
-    private final void A(float f10, boolean z10) {
+    private final boolean g() {
+        if (this.f833d.n()) {
+            ScaledPoint f10 = this.f833d.f();
+            if (f10.c() != 0.0f || f10.d() != 0.0f) {
+                this.f835i.f(new C0012b(f10));
+                return true;
+            }
+            return false;
+        }
+        return false;
+    }
+
+    public final void e() {
+        this.f837p.forceFinished(true);
+    }
+
+    public final void f() {
+        if (!g()) {
+            this.f834e.f();
+        }
+    }
+
+    public final boolean h(MotionEvent event) {
+        Intrinsics.checkNotNullParameter(event, "event");
+        return this.f836o.onTouchEvent(event);
+    }
+
+    public final void i(boolean z10) {
+        this.f840s = z10;
+    }
+
+    public final void j(boolean z10) {
+        this.f845x = z10;
+    }
+
+    public final void k(boolean z10) {
+        this.f842u = z10;
+    }
+
+    public final void l(boolean z10) {
+        this.f841t = z10;
+    }
+
+    public final void m(boolean z10) {
+        this.f844w = z10;
+    }
+
+    public final void n(boolean z10) {
+        this.f843v = z10;
+    }
+
+    @Override // android.view.GestureDetector.OnGestureListener
+    public boolean onDown(MotionEvent e10) {
+        Intrinsics.checkNotNullParameter(e10, "e");
+        e();
+        return true;
+    }
+
+    @Override // android.view.GestureDetector.OnGestureListener
+    public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f10, float f11) {
+        float f12;
+        float f13;
+        float f14;
+        if (!this.f840s || !this.f833d.m()) {
+            return false;
+        }
+        float f15 = 0.0f;
+        if (this.f833d.h()) {
+            f12 = f10;
+        } else {
+            f12 = 0.0f;
+        }
+        int i10 = (int) f12;
+        if (this.f833d.l()) {
+            f13 = f11;
+        } else {
+            f13 = 0.0f;
+        }
+        int i11 = (int) f13;
+        this.f833d.d(true, this.f838q);
+        this.f833d.d(false, this.f839r);
+        int c10 = this.f838q.c();
+        int a10 = this.f838q.a();
+        int b10 = this.f838q.b();
+        int c11 = this.f839r.c();
+        int a11 = this.f839r.a();
+        int b11 = this.f839r.b();
+        if (!this.f845x && (this.f838q.d() || this.f839r.d())) {
+            return false;
+        }
+        if ((c10 >= b10 && c11 >= b11 && !this.f833d.n()) || !this.f834e.l()) {
+            return false;
+        }
+        this.f836o.setIsLongpressEnabled(false);
+        if (this.f833d.g()) {
+            f14 = this.f833d.i();
+        } else {
+            f14 = 0.0f;
+        }
+        if (this.f833d.k()) {
+            f15 = this.f833d.j();
+        }
+        ZoomLogger zoomLogger = A;
+        zoomLogger.b("startFling", "velocityX:", Integer.valueOf(i10), "velocityY:", Integer.valueOf(i11));
+        zoomLogger.b("startFling", "flingX:", "min:", Integer.valueOf(c10), "max:", Integer.valueOf(b10), "start:", Integer.valueOf(a10), "overScroll:", Float.valueOf(f15));
+        zoomLogger.b("startFling", "flingY:", "min:", Integer.valueOf(c11), "max:", Integer.valueOf(b11), "start:", Integer.valueOf(a11), "overScroll:", Float.valueOf(f14));
+        this.f837p.fling(a10, a11, i10, i11, c10, b10, c11, b11, (int) f14, (int) f15);
+        this.f835i.B(new c());
+        return true;
+    }
+
+    @Override // android.view.GestureDetector.OnGestureListener
+    public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent2, float f10, float f11) {
+        boolean z10;
         boolean z11;
-        G();
-        if (q() > 0.0f && n() > 0.0f) {
-            float f11 = this.f1126j;
-            if (f11 > 0.0f && this.f1127k > 0.0f) {
-                f1115s.h("onSizeChanged:", "containerWidth:", Float.valueOf(f11), "containerHeight:", Float.valueOf(this.f1127k), "contentWidth:", Float.valueOf(q()), "contentHeight:", Float.valueOf(n()));
-                if (this.f1124h && !z10) {
-                    z11 = false;
-                } else {
-                    z11 = true;
-                }
-                this.f1124h = true;
-                this.f1120d.c(f10, z11);
-            }
+        boolean z12;
+        if (!this.f841t) {
+            return false;
         }
-    }
-
-    private final void G() {
-        this.f1123g.mapRect(this.f1121e, this.f1122f);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void d(b this$0, am.c update, ValueAnimator valueAnimator) {
-        Intrinsics.checkNotNullParameter(this$0, "this$0");
-        Intrinsics.checkNotNullParameter(update, "$update");
-        this$0.h(new c(update, valueAnimator));
-    }
-
-    private final void j() {
-        this.f1120d.i();
-    }
-
-    private final void k(boolean z10) {
-        float c10 = this.f1118b.c(true, z10);
-        float c11 = this.f1118b.c(false, z10);
-        if (c10 == 0.0f && c11 == 0.0f) {
-            return;
+        if (motionEvent2 == null || motionEvent2.getPointerCount() != 1) {
+            z10 = false;
+        } else {
+            z10 = true;
         }
-        this.f1123g.postTranslate(c10, c11);
-        G();
-    }
-
-    public final boolean B(Runnable action) {
-        Intrinsics.checkNotNullParameter(action, "action");
-        return this.f1120d.post(action);
-    }
-
-    public final void C(Runnable action) {
-        Intrinsics.checkNotNullParameter(action, "action");
-        this.f1120d.d(action);
-    }
-
-    public final void D(long j10) {
-        this.f1130n = j10;
-    }
-
-    public final void E(float f10, float f11, boolean z10) {
-        if (f10 > 0.0f && f11 > 0.0f) {
-            if (f10 != this.f1126j || f11 != this.f1127k || z10) {
-                this.f1126j = f10;
-                this.f1127k = f11;
-                A(y(), z10);
-            }
+        if (motionEvent2 == null || motionEvent2.getPointerCount() != 2) {
+            z11 = false;
+        } else {
+            z11 = true;
         }
-    }
-
-    public final void F(float f10, float f11, boolean z10) {
-        if (f10 > 0.0f && f11 > 0.0f) {
-            if (q() != f10 || n() != f11 || z10) {
-                float y10 = y();
-                this.f1122f.set(0.0f, 0.0f, f10, f11);
-                A(y10, z10);
-            }
+        if (motionEvent2 == null || motionEvent2.getPointerCount() != 3) {
+            z12 = false;
+        } else {
+            z12 = true;
         }
-    }
-
-    public final void e(final am.c update) {
-        ScaledPoint i10;
-        float j10;
-        AbsolutePoint f10;
-        Intrinsics.checkNotNullParameter(update, "update");
-        if (!this.f1124h || !this.f1119c.k()) {
-            return;
+        if (!this.f842u && z10) {
+            return false;
         }
-        ArrayList arrayList = new ArrayList();
-        if (update.f() != null) {
-            if (update.k()) {
-                f10 = s().f(update.f());
-            } else {
-                f10 = update.f();
-            }
-            PropertyValuesHolder ofFloat = PropertyValuesHolder.ofFloat("panX", t(), f10.c());
-            Intrinsics.checkNotNullExpressionValue(ofFloat, "ofFloat(\"panX\", panX, target.x)");
-            arrayList.add(ofFloat);
-            PropertyValuesHolder ofFloat2 = PropertyValuesHolder.ofFloat("panY", u(), f10.d());
-            Intrinsics.checkNotNullExpressionValue(ofFloat2, "ofFloat(\"panY\", panY, target.y)");
-            arrayList.add(ofFloat2);
-        } else if (update.i() != null) {
-            if (update.k()) {
-                i10 = v().f(update.i());
-            } else {
-                i10 = update.i();
-            }
-            PropertyValuesHolder ofFloat3 = PropertyValuesHolder.ofFloat("panX", w(), i10.c());
-            Intrinsics.checkNotNullExpressionValue(ofFloat3, "ofFloat(\"panX\", scaledPanX, target.x)");
-            arrayList.add(ofFloat3);
-            PropertyValuesHolder ofFloat4 = PropertyValuesHolder.ofFloat("panY", x(), i10.d());
-            Intrinsics.checkNotNullExpressionValue(ofFloat4, "ofFloat(\"panY\", scaledPanY, target.y)");
-            arrayList.add(ofFloat4);
+        if (!this.f843v && z11) {
+            return false;
         }
-        if (update.d()) {
-            if (update.l()) {
-                j10 = y() * update.j();
-            } else {
-                j10 = update.j();
-            }
-            PropertyValuesHolder ofFloat5 = PropertyValuesHolder.ofFloat("zoom", y(), this.f1117a.b(j10, update.b()));
-            Intrinsics.checkNotNullExpressionValue(ofFloat5, "ofFloat(\"zoom\", zoom, newZoom)");
-            arrayList.add(ofFloat5);
+        if ((!this.f844w && z12) || !this.f833d.m() || !this.f834e.n()) {
+            return false;
         }
-        Object[] array = arrayList.toArray(new PropertyValuesHolder[0]);
-        if (array != null) {
-            PropertyValuesHolder[] propertyValuesHolderArr = (PropertyValuesHolder[]) array;
-            ValueAnimator animator = ValueAnimator.ofPropertyValuesHolder((PropertyValuesHolder[]) Arrays.copyOf(propertyValuesHolderArr, propertyValuesHolderArr.length));
-            animator.setDuration(this.f1130n);
-            animator.setInterpolator(f1116t);
-            animator.addListener(this.f1132p);
-            animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: am.a
-                @Override // android.animation.ValueAnimator.AnimatorUpdateListener
-                public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    b.d(b.this, update, valueAnimator);
-                }
-            });
-            animator.start();
-            Set set = this.f1131o;
-            Intrinsics.checkNotNullExpressionValue(animator, "animator");
-            set.add(animator);
-            return;
+        ScaledPoint scaledPoint = new ScaledPoint(-f10, -f11);
+        ScaledPoint f12 = this.f833d.f();
+        if ((f12.c() < 0.0f && scaledPoint.c() > 0.0f) || (f12.c() > 0.0f && scaledPoint.c() < 0.0f)) {
+            float pow = (1.0f - ((float) Math.pow(Math.abs(f12.c()) / this.f833d.i(), 0.4d))) * 0.6f;
+            A.b("onScroll", "applying friction X:", Float.valueOf(pow));
+            scaledPoint.h(scaledPoint.c() * pow);
         }
-        throw new NullPointerException("null cannot be cast to non-null type kotlin.Array<T>");
-    }
-
-    public final void f(Function1 update) {
-        Intrinsics.checkNotNullParameter(update, "update");
-        e(am.c.f1136l.a(update));
-    }
-
-    public final void g(am.c update) {
-        ScaledPoint e10;
-        float j10;
-        float f10;
-        AbsolutePoint e11;
-        Intrinsics.checkNotNullParameter(update, "update");
-        if (this.f1124h) {
-            if (update.f() != null) {
-                if (update.k()) {
-                    e11 = update.f();
-                } else {
-                    e11 = update.f().e(s());
-                }
-                this.f1123g.preTranslate(e11.c(), e11.d());
-                G();
-            } else if (update.i() != null) {
-                if (update.k()) {
-                    e10 = update.i();
-                } else {
-                    e10 = update.i().e(v());
-                }
-                this.f1123g.postTranslate(e10.c(), e10.d());
-                G();
-            }
-            if (update.d()) {
-                if (update.l()) {
-                    j10 = y() * update.j();
-                } else {
-                    j10 = update.j();
-                }
-                float b10 = this.f1117a.b(j10, update.b()) / y();
-                float f11 = 0.0f;
-                if (update.g() != null) {
-                    f10 = update.g().floatValue();
-                } else if (update.c()) {
-                    f10 = 0.0f;
-                } else {
-                    f10 = this.f1126j / 2.0f;
-                }
-                if (update.h() != null) {
-                    f11 = update.h().floatValue();
-                } else if (!update.c()) {
-                    f11 = this.f1127k / 2.0f;
-                }
-                this.f1123g.postScale(b10, b10, f10, f11);
-                G();
-            }
-            k(update.a());
-            if (update.e()) {
-                j();
-            }
+        if ((f12.d() < 0.0f && scaledPoint.d() > 0.0f) || (f12.d() > 0.0f && scaledPoint.d() < 0.0f)) {
+            float pow2 = (1.0f - ((float) Math.pow(Math.abs(f12.d()) / this.f833d.j(), 0.4d))) * 0.6f;
+            A.b("onScroll", "applying friction Y:", Float.valueOf(pow2));
+            scaledPoint.i(scaledPoint.d() * pow2);
         }
-    }
-
-    public final void h(Function1 update) {
-        Intrinsics.checkNotNullParameter(update, "update");
-        g(am.c.f1136l.a(update));
-    }
-
-    public final void i() {
-        for (ValueAnimator valueAnimator : this.f1131o) {
-            valueAnimator.cancel();
+        if (!this.f833d.h()) {
+            scaledPoint.h(0.0f);
         }
-        this.f1131o.clear();
+        if (!this.f833d.l()) {
+            scaledPoint.i(0.0f);
+        }
+        if (scaledPoint.c() != 0.0f || scaledPoint.d() != 0.0f) {
+            this.f835i.h(new d(scaledPoint));
+        }
+        return true;
     }
 
-    public final float l() {
-        return this.f1127k;
+    @Override // android.view.GestureDetector.OnGestureListener
+    public boolean onSingleTapUp(MotionEvent motionEvent) {
+        return false;
     }
 
-    public final float m() {
-        return this.f1126j;
+    @Override // android.view.GestureDetector.OnGestureListener
+    public void onLongPress(MotionEvent motionEvent) {
     }
 
-    public final float n() {
-        return this.f1122f.height();
-    }
-
-    public final float o() {
-        return this.f1121e.height();
-    }
-
-    public final float p() {
-        return this.f1121e.width();
-    }
-
-    public final float q() {
-        return this.f1122f.width();
-    }
-
-    public final Matrix r() {
-        this.f1125i.set(this.f1123g);
-        return this.f1125i;
-    }
-
-    public final AbsolutePoint s() {
-        this.f1129m.h(Float.valueOf(t()), Float.valueOf(u()));
-        return this.f1129m;
-    }
-
-    public final float t() {
-        return w() / y();
-    }
-
-    public final float u() {
-        return x() / y();
-    }
-
-    public final ScaledPoint v() {
-        this.f1128l.g(Float.valueOf(w()), Float.valueOf(x()));
-        return this.f1128l;
-    }
-
-    public final float w() {
-        return this.f1121e.left;
-    }
-
-    public final float x() {
-        return this.f1121e.top;
-    }
-
-    public final float y() {
-        return this.f1121e.width() / this.f1122f.width();
-    }
-
-    public final boolean z() {
-        return this.f1124h;
+    @Override // android.view.GestureDetector.OnGestureListener
+    public void onShowPress(MotionEvent motionEvent) {
     }
 }

@@ -3,43 +3,38 @@ package af;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a extends hf.a {
+public class a extends jf.a {
+    @NonNull
+    public static final Parcelable.Creator<a> CREATOR = new d();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Bundle f600d;
+    final int f752d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0009a f599e = new C0009a(null);
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new b();
+    private int f753e;
 
-    /* renamed from: af.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0009a {
-        private C0009a() {
-        }
+    /* renamed from: i  reason: collision with root package name */
+    private Bundle f754i;
 
-        public /* synthetic */ C0009a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public a(int i10, int i11, Bundle bundle) {
+        this.f752d = i10;
+        this.f753e = i11;
+        this.f754i = bundle;
     }
 
-    public a(Bundle requestBundle) {
-        Intrinsics.checkNotNullParameter(requestBundle, "requestBundle");
-        this.f600d = requestBundle;
-    }
-
-    public final Bundle b() {
-        return this.f600d;
+    public int b() {
+        return this.f753e;
     }
 
     @Override // android.os.Parcelable
-    public void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        b.c(this, dest, i10);
+    public final void writeToParcel(Parcel parcel, int i10) {
+        int a10 = jf.c.a(parcel);
+        jf.c.l(parcel, 1, this.f752d);
+        jf.c.l(parcel, 2, b());
+        jf.c.e(parcel, 3, this.f754i, false);
+        jf.c.b(parcel, a10);
     }
 }

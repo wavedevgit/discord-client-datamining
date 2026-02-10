@@ -12,73 +12,73 @@ import f.i;
 public class ContextThemeWrapper extends ContextWrapper {
 
     /* renamed from: f  reason: collision with root package name */
-    private static Configuration f1597f;
+    private static Configuration f1294f;
 
     /* renamed from: a  reason: collision with root package name */
-    private int f1598a;
+    private int f1295a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Resources.Theme f1599b;
+    private Resources.Theme f1296b;
 
     /* renamed from: c  reason: collision with root package name */
-    private LayoutInflater f1600c;
+    private LayoutInflater f1297c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Configuration f1601d;
+    private Configuration f1298d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Resources f1602e;
+    private Resources f1299e;
 
     public ContextThemeWrapper(Context context, int i10) {
         super(context);
-        this.f1598a = i10;
+        this.f1295a = i10;
     }
 
     private Resources b() {
-        if (this.f1602e == null) {
-            Configuration configuration = this.f1601d;
+        if (this.f1299e == null) {
+            Configuration configuration = this.f1298d;
             if (configuration != null && (Build.VERSION.SDK_INT < 26 || !e(configuration))) {
-                this.f1602e = createConfigurationContext(this.f1601d).getResources();
+                this.f1299e = createConfigurationContext(this.f1298d).getResources();
             } else {
-                this.f1602e = super.getResources();
+                this.f1299e = super.getResources();
             }
         }
-        return this.f1602e;
+        return this.f1299e;
     }
 
     private void d() {
         boolean z10;
-        if (this.f1599b == null) {
+        if (this.f1296b == null) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            this.f1599b = getResources().newTheme();
+            this.f1296b = getResources().newTheme();
             Resources.Theme theme = getBaseContext().getTheme();
             if (theme != null) {
-                this.f1599b.setTo(theme);
+                this.f1296b.setTo(theme);
             }
         }
-        f(this.f1599b, this.f1598a, z10);
+        f(this.f1296b, this.f1295a, z10);
     }
 
     private static boolean e(Configuration configuration) {
         if (configuration == null) {
             return true;
         }
-        if (f1597f == null) {
+        if (f1294f == null) {
             Configuration configuration2 = new Configuration();
             configuration2.fontScale = 0.0f;
-            f1597f = configuration2;
+            f1294f = configuration2;
         }
-        return configuration.equals(f1597f);
+        return configuration.equals(f1294f);
     }
 
     public void a(Configuration configuration) {
-        if (this.f1602e == null) {
-            if (this.f1601d == null) {
-                this.f1601d = new Configuration(configuration);
+        if (this.f1299e == null) {
+            if (this.f1298d == null) {
+                this.f1298d = new Configuration(configuration);
                 return;
             }
             throw new IllegalStateException("Override configuration has already been set");
@@ -92,7 +92,7 @@ public class ContextThemeWrapper extends ContextWrapper {
     }
 
     public int c() {
-        return this.f1598a;
+        return this.f1295a;
     }
 
     protected void f(Resources.Theme theme, int i10, boolean z10) {
@@ -112,37 +112,37 @@ public class ContextThemeWrapper extends ContextWrapper {
     @Override // android.content.ContextWrapper, android.content.Context
     public Object getSystemService(String str) {
         if ("layout_inflater".equals(str)) {
-            if (this.f1600c == null) {
-                this.f1600c = LayoutInflater.from(getBaseContext()).cloneInContext(this);
+            if (this.f1297c == null) {
+                this.f1297c = LayoutInflater.from(getBaseContext()).cloneInContext(this);
             }
-            return this.f1600c;
+            return this.f1297c;
         }
         return getBaseContext().getSystemService(str);
     }
 
     @Override // android.content.ContextWrapper, android.content.Context
     public Resources.Theme getTheme() {
-        Resources.Theme theme = this.f1599b;
+        Resources.Theme theme = this.f1296b;
         if (theme != null) {
             return theme;
         }
-        if (this.f1598a == 0) {
-            this.f1598a = i.f22335d;
+        if (this.f1295a == 0) {
+            this.f1295a = i.f22290d;
         }
         d();
-        return this.f1599b;
+        return this.f1296b;
     }
 
     @Override // android.content.ContextWrapper, android.content.Context
     public void setTheme(int i10) {
-        if (this.f1598a != i10) {
-            this.f1598a = i10;
+        if (this.f1295a != i10) {
+            this.f1295a = i10;
             d();
         }
     }
 
     public ContextThemeWrapper(Context context, Resources.Theme theme) {
         super(context);
-        this.f1599b = theme;
+        this.f1296b = theme;
     }
 }

@@ -1,7 +1,7 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
 import com.squareup.moshi.i;
-import fq.k5;
+import gq.k5;
 import java.util.Map;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -11,13 +11,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class TransitionInquiryRequest {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f19827c = new a(null);
+    public static final a f19967c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f19828a;
+    private final Data f19968a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Meta f19829b;
+    private final Meta f19969b;
 
     @i(generateAdapter = true)
     @kotlin.Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B\u001d\u0012\u0014\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0004\b\u0006\u0010\u0007R%\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\b\u0010\n¨\u0006\u000b"}, d2 = {"Lcom/withpersona/sdk2/inquiry/ui/network/TransitionInquiryRequest$Attributes;", "", "", "", "Lcom/withpersona/sdk2/inquiry/ui/network/ComponentParam;", "componentParams", "<init>", "(Ljava/util/Map;)V", "a", "Ljava/util/Map;", "()Ljava/util/Map;", "ui_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -25,14 +25,14 @@ public final class TransitionInquiryRequest {
     public static final class Attributes {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f19830a;
+        private final Map f19970a;
 
         public Attributes(Map map) {
-            this.f19830a = map;
+            this.f19970a = map;
         }
 
         public final Map a() {
-            return this.f19830a;
+            return this.f19970a;
         }
     }
 
@@ -42,15 +42,15 @@ public final class TransitionInquiryRequest {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Attributes f19831a;
+        private final Attributes f19971a;
 
         public Data(Attributes attributes) {
             Intrinsics.checkNotNullParameter(attributes, "attributes");
-            this.f19831a = attributes;
+            this.f19971a = attributes;
         }
 
         public final Attributes a() {
-            return this.f19831a;
+            return this.f19971a;
         }
     }
 
@@ -60,24 +60,24 @@ public final class TransitionInquiryRequest {
     public static final class Meta {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19832a;
+        private final String f19972a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f19833b;
+        private final String f19973b;
 
         public Meta(String fromComponent, String fromStep) {
             Intrinsics.checkNotNullParameter(fromComponent, "fromComponent");
             Intrinsics.checkNotNullParameter(fromStep, "fromStep");
-            this.f19832a = fromComponent;
-            this.f19833b = fromStep;
+            this.f19972a = fromComponent;
+            this.f19973b = fromStep;
         }
 
         public final String a() {
-            return this.f19832a;
+            return this.f19972a;
         }
 
         public final String b() {
-            return this.f19833b;
+            return this.f19973b;
         }
     }
 
@@ -101,15 +101,15 @@ public final class TransitionInquiryRequest {
     public TransitionInquiryRequest(Data data, Meta meta) {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(meta, "meta");
-        this.f19828a = data;
-        this.f19829b = meta;
+        this.f19968a = data;
+        this.f19969b = meta;
     }
 
     public final Data a() {
-        return this.f19828a;
+        return this.f19968a;
     }
 
     public final Meta b() {
-        return this.f19829b;
+        return this.f19969b;
     }
 }

@@ -1,20 +1,20 @@
 package net.time4j.tz;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class i implements pt.f {
+class i implements qt.f {
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f39622d;
+    private final long f38714d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f39623e;
+    private final int f38715e;
 
     private i(long j10, int i10) {
-        this.f39622d = j10;
-        this.f39623e = i10;
+        this.f38714d = j10;
+        this.f38715e = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static pt.f b(long j10, int i10) {
+    public static qt.f b(long j10, int i10) {
         int i11;
         if (i10 == 0) {
             j10--;
@@ -27,13 +27,13 @@ class i implements pt.f {
         return new i(j10, i11);
     }
 
-    @Override // pt.f
+    @Override // qt.f
     public int a() {
-        return this.f39623e;
+        return this.f38715e;
     }
 
-    @Override // pt.f
-    public long m() {
-        return this.f39622d;
+    @Override // qt.f
+    public long o() {
+        return this.f38714d;
     }
 }

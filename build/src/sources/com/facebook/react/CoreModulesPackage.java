@@ -72,7 +72,7 @@ public final class CoreModulesPackage extends BaseReactPackage implements ReactP
 
     private final UIManagerModule createUIManager(ReactApplicationContext reactApplicationContext) {
         ReactMarker.logMarker(ReactMarkerConstants.CREATE_UI_MANAGER_MODULE_START);
-        qb.a.c(0L, "createUIManagerModule");
+        rb.a.c(0L, "createUIManagerModule");
         try {
             if (this.lazyViewManagersEnabled) {
                 return new UIManagerModule(reactApplicationContext, new ViewManagerResolver() { // from class: com.facebook.react.CoreModulesPackage$createUIManager$resolver$1
@@ -96,7 +96,7 @@ public final class CoreModulesPackage extends BaseReactPackage implements ReactP
             }
             return new UIManagerModule(reactApplicationContext, this.reactInstanceManager.getOrCreateViewManagers(reactApplicationContext), this.minTimeLeftInFrameForNonBatchedOperationMs);
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
             ReactMarker.logMarker(ReactMarkerConstants.CREATE_UI_MANAGER_MODULE_END);
         }
     }

@@ -1,29 +1,33 @@
 package r5;
 
-import java.util.List;
+import androidx.collection.LruCache;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class g extends n {
-    public g(List list) {
-        super(list);
+public class g {
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final g f47706b = new g();
+
+    /* renamed from: a  reason: collision with root package name */
+    private final LruCache f47707a = new LruCache(20);
+
+    g() {
     }
 
-    @Override // r5.m
-    public o5.a a() {
-        return new o5.l(this.f48715a);
+    public static g b() {
+        return f47706b;
     }
 
-    @Override // r5.n, r5.m
-    public /* bridge */ /* synthetic */ List b() {
-        return super.b();
+    public l5.i a(String str) {
+        if (str == null) {
+            return null;
+        }
+        return (l5.i) this.f47707a.d(str);
     }
 
-    @Override // r5.n, r5.m
-    public /* bridge */ /* synthetic */ boolean isStatic() {
-        return super.isStatic();
-    }
-
-    @Override // r5.n
-    public /* bridge */ /* synthetic */ String toString() {
-        return super.toString();
+    public void c(String str, l5.i iVar) {
+        if (str == null) {
+            return;
+        }
+        this.f47707a.f(str, iVar);
     }
 }

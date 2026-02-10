@@ -31,7 +31,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000\u0084\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0010\r\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0005\b\u0001\u0018\u0000 O2\u00020\u00012\u00020\u0002:\u0003MNOB\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0004\b\u0005\u0010\u0006J\b\u0010$\u001a\u00020%H\u0002J\u0006\u0010&\u001a\u00020%J\u0010\u0010'\u001a\u00020%2\u0006\u0010(\u001a\u00020)H\u0014J0\u0010*\u001a\u00020%2\u0006\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020\u001a2\u0006\u0010.\u001a\u00020\u001a2\u0006\u0010/\u001a\u00020\u001a2\u0006\u00100\u001a\u00020\u001aH\u0014J\u0016\u00101\u001a\u00020%2\u0006\u00102\u001a\u00020\u001a2\u0006\u00103\u001a\u00020\u001aJ\u0006\u00104\u001a\u00020%J\u0010\u00105\u001a\u00020,2\u0006\u00106\u001a\u000207H\u0016J3\u00108\u001a\u0004\u0018\u0001H9\"\u0004\b\u0000\u001092\u0006\u0010:\u001a\u00020\u001a2\u0006\u0010;\u001a\u00020\u001a2\f\u0010<\u001a\b\u0012\u0004\u0012\u0002H90=H\u0002¢\u0006\u0002\u0010>J\u0018\u0010?\u001a\u00020\u001a2\u0006\u0010:\u001a\u00020\u001a2\u0006\u0010;\u001a\u00020\u001aH\u0002J\u0010\u0010@\u001a\u00020,2\u0006\u00106\u001a\u000207H\u0016J\"\u0010A\u001a\u00020%2\u0006\u0010B\u001a\u00020,2\u0006\u0010C\u001a\u00020\u001a2\b\u0010D\u001a\u0004\u0018\u00010EH\u0016J\u0010\u0010F\u001a\u00020,2\u0006\u00106\u001a\u00020GH\u0016J\b\u0010H\u001a\u00020,H\u0016J\u0018\u0010I\u001a\u00020\u001a2\u0006\u0010J\u001a\u00020K2\u0006\u0010L\u001a\u00020KH\u0016R\u0014\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R(\u0010\u000e\u001a\u0004\u0018\u00010\r2\b\u0010\f\u001a\u0004\u0018\u00010\r@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R$\u0010\u0014\u001a\u00020\u00132\u0006\u0010\f\u001a\u00020\u0013@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\"\u0010\u0019\u001a\u0004\u0018\u00010\u001a8\u0006@\u0006X\u0087\u000e¢\u0006\u0010\n\u0002\u0010\u001f\u001a\u0004\b\u001b\u0010\u001c\"\u0004\b\u001d\u0010\u001eR\u0013\u0010 \u001a\u0004\u0018\u00010!8G¢\u0006\u0006\u001a\u0004\b\"\u0010#¨\u0006P"}, d2 = {"Lcom/facebook/react/views/text/PreparedLayoutTextView;", "Landroid/view/ViewGroup;", "Lcom/facebook/react/uimanager/ReactCompoundView;", "context", "Landroid/content/Context;", "<init>", "(Landroid/content/Context;)V", "clickableSpans", "", "Landroid/text/style/ClickableSpan;", "selection", "Lcom/facebook/react/views/text/PreparedLayoutTextView$TextSelection;", "value", "Lcom/facebook/react/views/text/PreparedLayout;", "preparedLayout", "getPreparedLayout", "()Lcom/facebook/react/views/text/PreparedLayout;", "setPreparedLayout", "(Lcom/facebook/react/views/text/PreparedLayout;)V", "Lcom/facebook/react/uimanager/style/Overflow;", ViewProps.OVERFLOW, "getOverflow", "()Lcom/facebook/react/uimanager/style/Overflow;", "setOverflow", "(Lcom/facebook/react/uimanager/style/Overflow;)V", "selectionColor", "", "getSelectionColor", "()Ljava/lang/Integer;", "setSelectionColor", "(Ljava/lang/Integer;)V", "Ljava/lang/Integer;", "text", "", "getText", "()Ljava/lang/CharSequence;", "initView", "", "recycleView", "onDraw", "canvas", "Landroid/graphics/Canvas;", "onLayout", "changed", "", "l", "t", "r", "b", "setSelection", ViewProps.START, ViewProps.END, "clearSelection", "onTouchEvent", "event", "Landroid/view/MotionEvent;", "getSpanInCoords", "T", "x", "y", "clazz", "Ljava/lang/Class;", "(IILjava/lang/Class;)Ljava/lang/Object;", "getTextOffsetAt", "dispatchHoverEvent", "onFocusChanged", "gainFocus", "direction", "previouslyFocusedRect", "Landroid/graphics/Rect;", "dispatchKeyEvent", "Landroid/view/KeyEvent;", "hasOverlappingRendering", "reactTagForTouch", "touchX", "", "touchY", "Api34Utils", "TextSelection", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@fb.a
+@gb.a
 @SourceDebugExtension({"SMAP\nPreparedLayoutTextView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PreparedLayoutTextView.kt\ncom/facebook/react/views/text/PreparedLayoutTextView\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,374:1\n1#2:375\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class PreparedLayoutTextView extends ViewGroup implements ReactCompoundView {
@@ -216,7 +216,7 @@ public final class PreparedLayoutTextView extends ViewGroup implements ReactComp
         PreparedLayout preparedLayout = this.preparedLayout;
         boolean z10 = false;
         if (preparedLayout != null) {
-            i12 = fs.a.c(preparedLayout.getVerticalOffset());
+            i12 = gs.a.c(preparedLayout.getVerticalOffset());
         } else {
             i12 = 0;
         }
@@ -315,7 +315,7 @@ public final class PreparedLayoutTextView extends ViewGroup implements ReactComp
         return this.selectionColor;
     }
 
-    @fb.a
+    @gb.a
     public final CharSequence getText() {
         Layout layout;
         PreparedLayout preparedLayout = this.preparedLayout;
@@ -448,7 +448,7 @@ public final class PreparedLayoutTextView extends ViewGroup implements ReactComp
 
     @Override // com.facebook.react.uimanager.ReactCompoundView
     public int reactTagForTouch(float f10, float f11) {
-        ReactTagSpan reactTagSpan = (ReactTagSpan) getSpanInCoords(fs.a.c(f10), fs.a.c(f11), ReactTagSpan.class);
+        ReactTagSpan reactTagSpan = (ReactTagSpan) getSpanInCoords(gs.a.c(f10), gs.a.c(f11), ReactTagSpan.class);
         if (reactTagSpan != null) {
             return reactTagSpan.getReactTag();
         }

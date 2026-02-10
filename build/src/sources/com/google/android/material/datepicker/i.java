@@ -21,46 +21,46 @@ import java.util.Calendar;
 public final class i<S> extends q {
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14887e;
+    private int f15027e;
 
     /* renamed from: i  reason: collision with root package name */
-    private com.google.android.material.datepicker.a f14888i;
+    private com.google.android.material.datepicker.a f15028i;
 
     /* renamed from: o  reason: collision with root package name */
-    private com.google.android.material.datepicker.m f14889o;
+    private com.google.android.material.datepicker.m f15029o;
 
     /* renamed from: p  reason: collision with root package name */
-    private l f14890p;
+    private l f15030p;
 
     /* renamed from: q  reason: collision with root package name */
-    private com.google.android.material.datepicker.c f14891q;
+    private com.google.android.material.datepicker.c f15031q;
 
     /* renamed from: r  reason: collision with root package name */
-    private RecyclerView f14892r;
+    private RecyclerView f15032r;
 
     /* renamed from: s  reason: collision with root package name */
-    private RecyclerView f14893s;
+    private RecyclerView f15033s;
 
     /* renamed from: t  reason: collision with root package name */
-    private View f14894t;
+    private View f15034t;
 
     /* renamed from: u  reason: collision with root package name */
-    private View f14895u;
+    private View f15035u;
 
     /* renamed from: v  reason: collision with root package name */
-    private View f14896v;
+    private View f15036v;
 
     /* renamed from: w  reason: collision with root package name */
-    private View f14897w;
+    private View f15037w;
 
     /* renamed from: x  reason: collision with root package name */
-    static final Object f14884x = "MONTHS_VIEW_GROUP_TAG";
+    static final Object f15024x = "MONTHS_VIEW_GROUP_TAG";
 
     /* renamed from: y  reason: collision with root package name */
-    static final Object f14885y = "NAVIGATION_PREV_TAG";
+    static final Object f15025y = "NAVIGATION_PREV_TAG";
 
     /* renamed from: z  reason: collision with root package name */
-    static final Object f14886z = "NAVIGATION_NEXT_TAG";
+    static final Object f15026z = "NAVIGATION_NEXT_TAG";
     static final Object A = "SELECTOR_TOGGLE_TAG";
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -68,17 +68,17 @@ public final class i<S> extends q {
     public class a implements View.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ o f14898d;
+        final /* synthetic */ o f15038d;
 
         a(o oVar) {
-            this.f14898d = oVar;
+            this.f15038d = oVar;
         }
 
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             int findLastVisibleItemPosition = i.this.M().findLastVisibleItemPosition() - 1;
             if (findLastVisibleItemPosition >= 0) {
-                i.this.P(this.f14898d.b(findLastVisibleItemPosition));
+                i.this.P(this.f15038d.b(findLastVisibleItemPosition));
             }
         }
     }
@@ -88,15 +88,15 @@ public final class i<S> extends q {
     public class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f14900d;
+        final /* synthetic */ int f15040d;
 
         b(int i10) {
-            this.f14900d = i10;
+            this.f15040d = i10;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            i.this.f14893s.smoothScrollToPosition(this.f14900d);
+            i.this.f15033s.smoothScrollToPosition(this.f15040d);
         }
     }
 
@@ -116,23 +116,23 @@ public final class i<S> extends q {
     class d extends r {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f14903d;
+        final /* synthetic */ int f15043d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(Context context, int i10, boolean z10, int i11) {
             super(context, i10, z10);
-            this.f14903d = i11;
+            this.f15043d = i11;
         }
 
         @Override // androidx.recyclerview.widget.LinearLayoutManager
         protected void calculateExtraLayoutSpace(RecyclerView.State state, int[] iArr) {
-            if (this.f14903d == 0) {
-                iArr[0] = i.this.f14893s.getWidth();
-                iArr[1] = i.this.f14893s.getWidth();
+            if (this.f15043d == 0) {
+                iArr[0] = i.this.f15033s.getWidth();
+                iArr[1] = i.this.f15033s.getWidth();
                 return;
             }
-            iArr[0] = i.this.f14893s.getHeight();
-            iArr[1] = i.this.f14893s.getHeight();
+            iArr[0] = i.this.f15033s.getHeight();
+            iArr[1] = i.this.f15033s.getHeight();
         }
     }
 
@@ -143,7 +143,7 @@ public final class i<S> extends q {
 
         @Override // com.google.android.material.datepicker.i.m
         public void a(long j10) {
-            if (!i.this.f14888i.f().Y(j10)) {
+            if (!i.this.f15028i.f().Z(j10)) {
                 return;
             }
             i.B(i.this);
@@ -169,10 +169,10 @@ public final class i<S> extends q {
     public class g extends RecyclerView.ItemDecoration {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Calendar f14907a = t.i();
+        private final Calendar f15047a = t.i();
 
         /* renamed from: b  reason: collision with root package name */
-        private final Calendar f14908b = t.i();
+        private final Calendar f15048b = t.i();
 
         g() {
         }
@@ -198,10 +198,10 @@ public final class i<S> extends q {
         public void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
             String string;
             super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
-            if (i.this.f14897w.getVisibility() == 0) {
-                string = i.this.getString(ah.i.f794u);
+            if (i.this.f15037w.getVisibility() == 0) {
+                string = i.this.getString(bh.i.f6782u);
             } else {
-                string = i.this.getString(ah.i.f792s);
+                string = i.this.getString(bh.i.f6780s);
             }
             accessibilityNodeInfoCompat.I0(string);
         }
@@ -210,23 +210,23 @@ public final class i<S> extends q {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.google.android.material.datepicker.i$i  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class C0175i extends RecyclerView.OnScrollListener {
+    public class C0202i extends RecyclerView.OnScrollListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ o f14911a;
+        final /* synthetic */ o f15051a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ MaterialButton f14912b;
+        final /* synthetic */ MaterialButton f15052b;
 
-        C0175i(o oVar, MaterialButton materialButton) {
-            this.f14911a = oVar;
-            this.f14912b = materialButton;
+        C0202i(o oVar, MaterialButton materialButton) {
+            this.f15051a = oVar;
+            this.f15052b = materialButton;
         }
 
         @Override // androidx.recyclerview.widget.RecyclerView.OnScrollListener
         public void onScrollStateChanged(RecyclerView recyclerView, int i10) {
             if (i10 == 0) {
-                recyclerView.announceForAccessibility(this.f14912b.getText());
+                recyclerView.announceForAccessibility(this.f15052b.getText());
             }
         }
 
@@ -238,8 +238,8 @@ public final class i<S> extends q {
             } else {
                 findLastVisibleItemPosition = i.this.M().findLastVisibleItemPosition();
             }
-            i.this.f14889o = this.f14911a.b(findLastVisibleItemPosition);
-            this.f14912b.setText(this.f14911a.c(findLastVisibleItemPosition));
+            i.this.f15029o = this.f15051a.b(findLastVisibleItemPosition);
+            this.f15052b.setText(this.f15051a.c(findLastVisibleItemPosition));
         }
     }
 
@@ -260,17 +260,17 @@ public final class i<S> extends q {
     public class k implements View.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ o f14915d;
+        final /* synthetic */ o f15055d;
 
         k(o oVar) {
-            this.f14915d = oVar;
+            this.f15055d = oVar;
         }
 
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             int findFirstVisibleItemPosition = i.this.M().findFirstVisibleItemPosition() + 1;
-            if (findFirstVisibleItemPosition < i.this.f14893s.getAdapter().getItemCount()) {
-                i.this.P(this.f14915d.b(findFirstVisibleItemPosition));
+            if (findFirstVisibleItemPosition < i.this.f15033s.getAdapter().getItemCount()) {
+                i.this.P(this.f15055d.b(findFirstVisibleItemPosition));
             }
         }
     }
@@ -294,23 +294,23 @@ public final class i<S> extends q {
     }
 
     private void E(View view, o oVar) {
-        MaterialButton materialButton = (MaterialButton) view.findViewById(ah.f.f739t);
+        MaterialButton materialButton = (MaterialButton) view.findViewById(bh.f.f6727t);
         materialButton.setTag(A);
         h0.n0(materialButton, new h());
-        View findViewById = view.findViewById(ah.f.f741v);
-        this.f14894t = findViewById;
-        findViewById.setTag(f14885y);
-        View findViewById2 = view.findViewById(ah.f.f740u);
-        this.f14895u = findViewById2;
-        findViewById2.setTag(f14886z);
-        this.f14896v = view.findViewById(ah.f.C);
-        this.f14897w = view.findViewById(ah.f.f743x);
+        View findViewById = view.findViewById(bh.f.f6729v);
+        this.f15034t = findViewById;
+        findViewById.setTag(f15025y);
+        View findViewById2 = view.findViewById(bh.f.f6728u);
+        this.f15035u = findViewById2;
+        findViewById2.setTag(f15026z);
+        this.f15036v = view.findViewById(bh.f.C);
+        this.f15037w = view.findViewById(bh.f.f6731x);
         Q(l.DAY);
-        materialButton.setText(this.f14889o.o());
-        this.f14893s.addOnScrollListener(new C0175i(oVar, materialButton));
+        materialButton.setText(this.f15029o.o());
+        this.f15033s.addOnScrollListener(new C0202i(oVar, materialButton));
         materialButton.setOnClickListener(new j());
-        this.f14895u.setOnClickListener(new k(oVar));
-        this.f14894t.setOnClickListener(new a(oVar));
+        this.f15035u.setOnClickListener(new k(oVar));
+        this.f15034t.setOnClickListener(new a(oVar));
     }
 
     private RecyclerView.ItemDecoration F() {
@@ -319,15 +319,15 @@ public final class i<S> extends q {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int K(Context context) {
-        return context.getResources().getDimensionPixelSize(ah.d.M);
+        return context.getResources().getDimensionPixelSize(bh.d.M);
     }
 
     private static int L(Context context) {
         Resources resources = context.getResources();
-        int dimensionPixelSize = resources.getDimensionPixelSize(ah.d.T) + resources.getDimensionPixelOffset(ah.d.U) + resources.getDimensionPixelOffset(ah.d.S);
-        int dimensionPixelSize2 = resources.getDimensionPixelSize(ah.d.O);
-        int i10 = n.f14951p;
-        return dimensionPixelSize + dimensionPixelSize2 + (resources.getDimensionPixelSize(ah.d.M) * i10) + ((i10 - 1) * resources.getDimensionPixelOffset(ah.d.R)) + resources.getDimensionPixelOffset(ah.d.K);
+        int dimensionPixelSize = resources.getDimensionPixelSize(bh.d.T) + resources.getDimensionPixelOffset(bh.d.U) + resources.getDimensionPixelOffset(bh.d.S);
+        int dimensionPixelSize2 = resources.getDimensionPixelSize(bh.d.O);
+        int i10 = n.f15091p;
+        return dimensionPixelSize + dimensionPixelSize2 + (resources.getDimensionPixelSize(bh.d.M) * i10) + ((i10 - 1) * resources.getDimensionPixelOffset(bh.d.R)) + resources.getDimensionPixelOffset(bh.d.K);
     }
 
     public static i N(com.google.android.material.datepicker.d dVar, int i10, com.google.android.material.datepicker.a aVar, com.google.android.material.datepicker.g gVar) {
@@ -343,26 +343,26 @@ public final class i<S> extends q {
     }
 
     private void O(int i10) {
-        this.f14893s.post(new b(i10));
+        this.f15033s.post(new b(i10));
     }
 
     private void R() {
-        h0.n0(this.f14893s, new f());
+        h0.n0(this.f15033s, new f());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public com.google.android.material.datepicker.a G() {
-        return this.f14888i;
+        return this.f15028i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public com.google.android.material.datepicker.c H() {
-        return this.f14891q;
+        return this.f15031q;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public com.google.android.material.datepicker.m I() {
-        return this.f14889o;
+        return this.f15029o;
     }
 
     public com.google.android.material.datepicker.d J() {
@@ -370,14 +370,14 @@ public final class i<S> extends q {
     }
 
     LinearLayoutManager M() {
-        return (LinearLayoutManager) this.f14893s.getLayoutManager();
+        return (LinearLayoutManager) this.f15033s.getLayoutManager();
     }
 
     void P(com.google.android.material.datepicker.m mVar) {
         boolean z10;
-        o oVar = (o) this.f14893s.getAdapter();
+        o oVar = (o) this.f15033s.getAdapter();
         int d10 = oVar.d(mVar);
-        int d11 = d10 - oVar.d(this.f14889o);
+        int d11 = d10 - oVar.d(this.f15029o);
         boolean z11 = false;
         if (Math.abs(d11) > 3) {
             z10 = true;
@@ -387,12 +387,12 @@ public final class i<S> extends q {
         if (d11 > 0) {
             z11 = true;
         }
-        this.f14889o = mVar;
+        this.f15029o = mVar;
         if (z10 && z11) {
-            this.f14893s.scrollToPosition(d10 - 3);
+            this.f15033s.scrollToPosition(d10 - 3);
             O(d10);
         } else if (z10) {
-            this.f14893s.scrollToPosition(d10 + 3);
+            this.f15033s.scrollToPosition(d10 + 3);
             O(d10);
         } else {
             O(d10);
@@ -400,24 +400,24 @@ public final class i<S> extends q {
     }
 
     void Q(l lVar) {
-        this.f14890p = lVar;
+        this.f15030p = lVar;
         if (lVar == l.YEAR) {
-            this.f14892r.getLayoutManager().scrollToPosition(((u) this.f14892r.getAdapter()).a(this.f14889o.f14946i));
-            this.f14896v.setVisibility(0);
-            this.f14897w.setVisibility(8);
-            this.f14894t.setVisibility(8);
-            this.f14895u.setVisibility(8);
+            this.f15032r.getLayoutManager().scrollToPosition(((u) this.f15032r.getAdapter()).a(this.f15029o.f15086i));
+            this.f15036v.setVisibility(0);
+            this.f15037w.setVisibility(8);
+            this.f15034t.setVisibility(8);
+            this.f15035u.setVisibility(8);
         } else if (lVar == l.DAY) {
-            this.f14896v.setVisibility(8);
-            this.f14897w.setVisibility(0);
-            this.f14894t.setVisibility(0);
-            this.f14895u.setVisibility(0);
-            P(this.f14889o);
+            this.f15036v.setVisibility(8);
+            this.f15037w.setVisibility(0);
+            this.f15034t.setVisibility(0);
+            this.f15035u.setVisibility(0);
+            P(this.f15029o);
         }
     }
 
     void S() {
-        l lVar = this.f14890p;
+        l lVar = this.f15030p;
         l lVar2 = l.YEAR;
         if (lVar == lVar2) {
             Q(l.DAY);
@@ -432,11 +432,11 @@ public final class i<S> extends q {
         if (bundle == null) {
             bundle = getArguments();
         }
-        this.f14887e = bundle.getInt("THEME_RES_ID_KEY");
+        this.f15027e = bundle.getInt("THEME_RES_ID_KEY");
         android.support.v4.media.session.b.a(bundle.getParcelable("GRID_SELECTOR_KEY"));
-        this.f14888i = (com.google.android.material.datepicker.a) bundle.getParcelable("CALENDAR_CONSTRAINTS_KEY");
+        this.f15028i = (com.google.android.material.datepicker.a) bundle.getParcelable("CALENDAR_CONSTRAINTS_KEY");
         android.support.v4.media.session.b.a(bundle.getParcelable("DAY_VIEW_DECORATOR_KEY"));
-        this.f14889o = (com.google.android.material.datepicker.m) bundle.getParcelable("CURRENT_MONTH_KEY");
+        this.f15029o = (com.google.android.material.datepicker.m) bundle.getParcelable("CURRENT_MONTH_KEY");
     }
 
     @Override // androidx.fragment.app.Fragment
@@ -444,51 +444,51 @@ public final class i<S> extends q {
         int i10;
         int i11;
         com.google.android.material.datepicker.h hVar;
-        ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(getContext(), this.f14887e);
-        this.f14891q = new com.google.android.material.datepicker.c(contextThemeWrapper);
+        ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(getContext(), this.f15027e);
+        this.f15031q = new com.google.android.material.datepicker.c(contextThemeWrapper);
         LayoutInflater cloneInContext = layoutInflater.cloneInContext(contextThemeWrapper);
-        com.google.android.material.datepicker.m o10 = this.f14888i.o();
+        com.google.android.material.datepicker.m o10 = this.f15028i.o();
         if (com.google.android.material.datepicker.k.J(contextThemeWrapper)) {
-            i10 = ah.h.f768r;
+            i10 = bh.h.f6756r;
             i11 = 1;
         } else {
-            i10 = ah.h.f766p;
+            i10 = bh.h.f6754p;
             i11 = 0;
         }
         View inflate = cloneInContext.inflate(i10, viewGroup, false);
         inflate.setMinimumHeight(L(requireContext()));
-        GridView gridView = (GridView) inflate.findViewById(ah.f.f744y);
+        GridView gridView = (GridView) inflate.findViewById(bh.f.f6732y);
         h0.n0(gridView, new c());
-        int i12 = this.f14888i.i();
+        int i12 = this.f15028i.i();
         if (i12 > 0) {
             hVar = new com.google.android.material.datepicker.h(i12);
         } else {
             hVar = new com.google.android.material.datepicker.h();
         }
         gridView.setAdapter((ListAdapter) hVar);
-        gridView.setNumColumns(o10.f14947o);
+        gridView.setNumColumns(o10.f15087o);
         gridView.setEnabled(false);
-        this.f14893s = (RecyclerView) inflate.findViewById(ah.f.B);
-        this.f14893s.setLayoutManager(new d(getContext(), i11, false, i11));
-        this.f14893s.setTag(f14884x);
-        o oVar = new o(contextThemeWrapper, null, this.f14888i, null, new e());
-        this.f14893s.setAdapter(oVar);
-        int integer = contextThemeWrapper.getResources().getInteger(ah.g.f750e);
-        RecyclerView recyclerView = (RecyclerView) inflate.findViewById(ah.f.C);
-        this.f14892r = recyclerView;
+        this.f15033s = (RecyclerView) inflate.findViewById(bh.f.B);
+        this.f15033s.setLayoutManager(new d(getContext(), i11, false, i11));
+        this.f15033s.setTag(f15024x);
+        o oVar = new o(contextThemeWrapper, null, this.f15028i, null, new e());
+        this.f15033s.setAdapter(oVar);
+        int integer = contextThemeWrapper.getResources().getInteger(bh.g.f6738e);
+        RecyclerView recyclerView = (RecyclerView) inflate.findViewById(bh.f.C);
+        this.f15032r = recyclerView;
         if (recyclerView != null) {
             recyclerView.setHasFixedSize(true);
-            this.f14892r.setLayoutManager(new GridLayoutManager((Context) contextThemeWrapper, integer, 1, false));
-            this.f14892r.setAdapter(new u(this));
-            this.f14892r.addItemDecoration(F());
+            this.f15032r.setLayoutManager(new GridLayoutManager((Context) contextThemeWrapper, integer, 1, false));
+            this.f15032r.setAdapter(new u(this));
+            this.f15032r.addItemDecoration(F());
         }
-        if (inflate.findViewById(ah.f.f739t) != null) {
+        if (inflate.findViewById(bh.f.f6727t) != null) {
             E(inflate, oVar);
         }
         if (!com.google.android.material.datepicker.k.J(contextThemeWrapper)) {
-            new androidx.recyclerview.widget.o().a(this.f14893s);
+            new androidx.recyclerview.widget.o().a(this.f15033s);
         }
-        this.f14893s.scrollToPosition(oVar.d(this.f14889o));
+        this.f15033s.scrollToPosition(oVar.d(this.f15029o));
         R();
         return inflate;
     }
@@ -496,11 +496,11 @@ public final class i<S> extends q {
     @Override // androidx.fragment.app.Fragment
     public void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        bundle.putInt("THEME_RES_ID_KEY", this.f14887e);
+        bundle.putInt("THEME_RES_ID_KEY", this.f15027e);
         bundle.putParcelable("GRID_SELECTOR_KEY", null);
-        bundle.putParcelable("CALENDAR_CONSTRAINTS_KEY", this.f14888i);
+        bundle.putParcelable("CALENDAR_CONSTRAINTS_KEY", this.f15028i);
         bundle.putParcelable("DAY_VIEW_DECORATOR_KEY", null);
-        bundle.putParcelable("CURRENT_MONTH_KEY", this.f14889o);
+        bundle.putParcelable("CURRENT_MONTH_KEY", this.f15029o);
     }
 
     @Override // com.google.android.material.datepicker.q

@@ -79,11 +79,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.gap = var12;
     var8.flex = var11;
     var3.getStartedContainer = var8;
-    var8 = {
-        'width': 73,
-        'height': 85
-    };
-    var3.getStartedSafetyShieldIcon = var8;
     var8 = {};
     var11 = 'center';
     var8.alignItems = var11;
@@ -144,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_assurance/native/AgeVerificationIntroScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52744: for (var _fun52744_ip = 0;;) switch (_fun52744_ip) {
+        _fun52747: for (var _fun52747_ip = 0;;) switch (_fun52747_ip) {
             case 0:
                 var0 = arg0;
                 var20 = var0.modalSessionId;
@@ -267,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var19.bind(var3)(var20);
                 var20 = var23.map;
                 var19 = function(arg0, arg1) { // Environment: var14
-                    _fun52745: for (var _fun52745_ip = 0;;) switch (_fun52745_ip) {
+                    _fun52748: for (var _fun52748_ip = 0;;) switch (_fun52748_ip) {
                         case 0:
                             var0 = arg0;
                             var4 = arg1;
@@ -299,8 +294,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = null;
                             var7 = var5 != var9;
                             if (!var7) {
-                                _fun52745_ip = 167;
-                                continue _fun52745
+                                _fun52748_ip = 167;
+                                continue _fun52748
                             }
                         case 117:
                             var8 = _closure1_slot10;
@@ -401,8 +396,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.style = var8;
                 var8 = !var7;
                 if (!var8) {
-                    _fun52744_ip = 887;
-                    continue _fun52744
+                    _fun52747_ip = 887;
+                    continue _fun52747
                 }
             case 740:
                 var10 = _closure1_slot10;
@@ -495,13 +490,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = _closure1_slot3;
                 var14 = function*() { // Environment: var14
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun52749: for (var _fun52749_ip = 0;;) switch (_fun52749_ip) {
+                        _fun52752: for (var _fun52752_ip = 0;;) switch (_fun52752_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun52749_ip = 118;
-                                    continue _fun52749
+                                    _fun52752_ip = 118;
+                                    continue _fun52752
                                 }
                             case 7:
                                 var8 = _closure1_slot0;
@@ -529,8 +524,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 106:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                                 if (var3) {
-                                    _fun52749_ip = 115;
-                                    continue _fun52749
+                                    _fun52752_ip = 115;
+                                    continue _fun52752
                                 }
                             case 112:
                                 return var2;
@@ -575,4 +570,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 5984, 660, 5992, 33, 1297, 671, 1568, 6008, 1358, 4248, 6012, 6013, 3942, 5415, 6498, 1234, 5983, 1686, 4555, 4084, 6499, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 5985, 660, 5993, 33, 1297, 671, 1568, 6009, 1358, 4248, 6013, 6014, 3942, 5416, 6499, 1234, 5984, 1686, 4555, 4084, 6500, 2]);

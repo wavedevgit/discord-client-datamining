@@ -11,19 +11,19 @@ import java.util.Map;
 public final class m5 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.protocol.x f28382d;
+    private final io.sentry.protocol.x f28582d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.protocol.r f28383e;
+    private final io.sentry.protocol.r f28583e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final q8 f28384i;
+    private final q8 f28584i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Date f28385o;
+    private Date f28585o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f28386p;
+    private Map f28586p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -68,22 +68,22 @@ public final class m5 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        rVar = (io.sentry.protocol.r) e3Var.G0(iLogger, new r.a());
+                        rVar = (io.sentry.protocol.r) e3Var.E0(iLogger, new r.a());
                         break;
                     case 1:
-                        q8Var = (q8) e3Var.G0(iLogger, new q8.a());
+                        q8Var = (q8) e3Var.E0(iLogger, new q8.a());
                         break;
                     case 2:
-                        xVar = (io.sentry.protocol.x) e3Var.G0(iLogger, new x.a());
+                        xVar = (io.sentry.protocol.x) e3Var.E0(iLogger, new x.a());
                         break;
                     case 3:
-                        date = e3Var.u0(iLogger);
+                        date = e3Var.s0(iLogger);
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.u1(iLogger, hashMap, o02);
+                        e3Var.p1(iLogger, hashMap, o02);
                         break;
                 }
             }
@@ -100,44 +100,44 @@ public final class m5 implements w1 {
     }
 
     public io.sentry.protocol.x a() {
-        return this.f28382d;
+        return this.f28582d;
     }
 
     public io.sentry.protocol.r b() {
-        return this.f28383e;
+        return this.f28583e;
     }
 
     public q8 c() {
-        return this.f28384i;
+        return this.f28584i;
     }
 
     public void d(Date date) {
-        this.f28385o = date;
+        this.f28585o = date;
     }
 
     public void e(Map map) {
-        this.f28386p = map;
+        this.f28586p = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28382d != null) {
-            f3Var.e("event_id").j(iLogger, this.f28382d);
+        if (this.f28582d != null) {
+            f3Var.e("event_id").j(iLogger, this.f28582d);
         }
-        if (this.f28383e != null) {
-            f3Var.e("sdk").j(iLogger, this.f28383e);
+        if (this.f28583e != null) {
+            f3Var.e("sdk").j(iLogger, this.f28583e);
         }
-        if (this.f28384i != null) {
-            f3Var.e(SharedPreferencesKey.TRACE).j(iLogger, this.f28384i);
+        if (this.f28584i != null) {
+            f3Var.e(SharedPreferencesKey.TRACE).j(iLogger, this.f28584i);
         }
-        if (this.f28385o != null) {
-            f3Var.e("sent_at").j(iLogger, k.h(this.f28385o));
+        if (this.f28585o != null) {
+            f3Var.e("sent_at").j(iLogger, k.h(this.f28585o));
         }
-        Map map = this.f28386p;
+        Map map = this.f28586p;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28386p.get(str);
+                Object obj = this.f28586p.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -146,8 +146,8 @@ public final class m5 implements w1 {
     }
 
     public m5(io.sentry.protocol.x xVar, io.sentry.protocol.r rVar, q8 q8Var) {
-        this.f28382d = xVar;
-        this.f28383e = rVar;
-        this.f28384i = q8Var;
+        this.f28582d = xVar;
+        this.f28583e = rVar;
+        this.f28584i = q8Var;
     }
 }

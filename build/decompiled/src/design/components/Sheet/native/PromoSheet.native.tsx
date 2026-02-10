@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Sheet/native/PromoSheet.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun46956: for (var _fun46956_ip = 0;;) switch (_fun46956_ip) {
+        _fun46949: for (var _fun46949_ip = 0;;) switch (_fun46949_ip) {
             case 0:
                 var2 = arg0;
                 var20 = var2.title;
@@ -112,10 +112,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var13 != var15;
                 var10 = null;
                 if (!var7) {
-                    _fun46956_ip = 209;
-                    continue _fun46956
+                    _fun46949_ip = 205;
+                    continue _fun46949
                 }
-            case 179:
+            case 175:
                 var12 = _closure1_slot3;
                 var11 = _closure1_slot2;
                 var7 = {};
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.style = var16;
                 var7.children = var15;
                 var10 = var12.bind(var3)(var11, var7);
-            case 209:
+            case 205:
                 var7 = new Array(3);
                 var7[0] = var10;
                 var11 = _closure1_slot4;
@@ -151,10 +151,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var13 != var17;
                 var13 = null;
                 if (!var15) {
-                    _fun46956_ip = 372;
-                    continue _fun46956
+                    _fun46949_ip = 370;
+                    continue _fun46949
                 }
-            case 317:
+            case 313:
                 var16 = _closure1_slot3;
                 var15 = _closure1_slot0;
                 var14 = _closure1_slot1;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.style = var18;
                 var14.children = var17;
                 var13 = var16.bind(var3)(var15, var14);
-            case 372:
+            case 370:
                 var12[1] = var13;
                 var9.children = var12;
                 var9 = var11.bind(var3)(var10, var9);

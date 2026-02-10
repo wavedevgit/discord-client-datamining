@@ -7,29 +7,29 @@ import com.facebook.drawee.drawable.b0;
 import com.facebook.drawee.drawable.c0;
 import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.interfaces.DraweeHierarchy;
-import h9.c;
-import o8.h;
-import o8.j;
+import i9.c;
+import p8.h;
+import p8.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class DraweeHolder implements c0 {
 
     /* renamed from: o  reason: collision with root package name */
-    private DraweeHierarchy f10076o;
+    private DraweeHierarchy f10216o;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f10073d = false;
+    private boolean f10213d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f10074e = false;
+    private boolean f10214e = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f10075i = true;
+    private boolean f10215i = true;
 
     /* renamed from: p  reason: collision with root package name */
-    private DraweeController f10077p = null;
+    private DraweeController f10217p = null;
 
     /* renamed from: q  reason: collision with root package name */
-    private final c f10078q = c.a();
+    private final c f10218q = c.a();
 
     public DraweeHolder(DraweeHierarchy draweeHierarchy) {
         if (draweeHierarchy != null) {
@@ -38,18 +38,18 @@ public class DraweeHolder implements c0 {
     }
 
     private void a() {
-        if (!this.f10073d) {
-            this.f10078q.b(c.a.ON_ATTACH_CONTROLLER);
-            this.f10073d = true;
-            DraweeController draweeController = this.f10077p;
+        if (!this.f10213d) {
+            this.f10218q.b(c.a.ON_ATTACH_CONTROLLER);
+            this.f10213d = true;
+            DraweeController draweeController = this.f10217p;
             if (draweeController != null && draweeController.getHierarchy() != null) {
-                this.f10077p.onAttach();
+                this.f10217p.onAttach();
             }
         }
     }
 
     private void b() {
-        if (this.f10074e && this.f10075i) {
+        if (this.f10214e && this.f10215i) {
             a();
         } else {
             d();
@@ -58,16 +58,16 @@ public class DraweeHolder implements c0 {
 
     public static DraweeHolder c(DraweeHierarchy draweeHierarchy, Context context) {
         DraweeHolder draweeHolder = new DraweeHolder(draweeHierarchy);
-        draweeHolder.n(context);
+        draweeHolder.m(context);
         return draweeHolder;
     }
 
     private void d() {
-        if (this.f10073d) {
-            this.f10078q.b(c.a.ON_DETACH_CONTROLLER);
-            this.f10073d = false;
+        if (this.f10213d) {
+            this.f10218q.b(c.a.ON_DETACH_CONTROLLER);
+            this.f10213d = false;
             if (i()) {
-                this.f10077p.onDetach();
+                this.f10217p.onDetach();
             }
         }
     }
@@ -80,15 +80,15 @@ public class DraweeHolder implements c0 {
     }
 
     public DraweeController e() {
-        return this.f10077p;
+        return this.f10217p;
     }
 
     public DraweeHierarchy f() {
-        return (DraweeHierarchy) j.g(this.f10076o);
+        return (DraweeHierarchy) j.g(this.f10216o);
     }
 
     public Drawable g() {
-        DraweeHierarchy draweeHierarchy = this.f10076o;
+        DraweeHierarchy draweeHierarchy = this.f10216o;
         if (draweeHierarchy == null) {
             return null;
         }
@@ -96,29 +96,29 @@ public class DraweeHolder implements c0 {
     }
 
     public boolean h() {
-        if (this.f10076o != null) {
+        if (this.f10216o != null) {
             return true;
         }
         return false;
     }
 
     public boolean i() {
-        DraweeController draweeController = this.f10077p;
-        if (draweeController != null && draweeController.getHierarchy() == this.f10076o) {
+        DraweeController draweeController = this.f10217p;
+        if (draweeController != null && draweeController.getHierarchy() == this.f10216o) {
             return true;
         }
         return false;
     }
 
     public void j() {
-        this.f10078q.b(c.a.ON_HOLDER_ATTACH);
-        this.f10074e = true;
+        this.f10218q.b(c.a.ON_HOLDER_ATTACH);
+        this.f10214e = true;
         b();
     }
 
     public void k() {
-        this.f10078q.b(c.a.ON_HOLDER_DETACH);
-        this.f10074e = false;
+        this.f10218q.b(c.a.ON_HOLDER_DETACH);
+        this.f10214e = false;
         b();
     }
 
@@ -126,27 +126,27 @@ public class DraweeHolder implements c0 {
         if (!i()) {
             return false;
         }
-        return this.f10077p.onTouchEvent(motionEvent);
+        return this.f10217p.onTouchEvent(motionEvent);
+    }
+
+    public void m(Context context) {
     }
 
     @Override // com.facebook.drawee.drawable.c0
-    public void m(boolean z10) {
+    public void n(boolean z10) {
         c.a aVar;
-        if (this.f10075i == z10) {
+        if (this.f10215i == z10) {
             return;
         }
-        c cVar = this.f10078q;
+        c cVar = this.f10218q;
         if (z10) {
             aVar = c.a.ON_DRAWABLE_SHOW;
         } else {
             aVar = c.a.ON_DRAWABLE_HIDE;
         }
         cVar.b(aVar);
-        this.f10075i = z10;
+        this.f10215i = z10;
         b();
-    }
-
-    public void n(Context context) {
     }
 
     public void o() {
@@ -155,30 +155,30 @@ public class DraweeHolder implements c0 {
 
     @Override // com.facebook.drawee.drawable.c0
     public void onDraw() {
-        if (this.f10073d) {
+        if (this.f10213d) {
             return;
         }
-        p8.a.H(c.class, "%x: Draw requested for a non-attached controller %x. %s", Integer.valueOf(System.identityHashCode(this)), Integer.valueOf(System.identityHashCode(this.f10077p)), toString());
-        this.f10074e = true;
-        this.f10075i = true;
+        q8.a.H(c.class, "%x: Draw requested for a non-attached controller %x. %s", Integer.valueOf(System.identityHashCode(this)), Integer.valueOf(System.identityHashCode(this.f10217p)), toString());
+        this.f10214e = true;
+        this.f10215i = true;
         b();
     }
 
     public void p(DraweeController draweeController) {
-        boolean z10 = this.f10073d;
+        boolean z10 = this.f10213d;
         if (z10) {
             d();
         }
         if (i()) {
-            this.f10078q.b(c.a.ON_CLEAR_OLD_CONTROLLER);
-            this.f10077p.setHierarchy(null);
+            this.f10218q.b(c.a.ON_CLEAR_OLD_CONTROLLER);
+            this.f10217p.setHierarchy(null);
         }
-        this.f10077p = draweeController;
+        this.f10217p = draweeController;
         if (draweeController != null) {
-            this.f10078q.b(c.a.ON_SET_CONTROLLER);
-            this.f10077p.setHierarchy(this.f10076o);
+            this.f10218q.b(c.a.ON_SET_CONTROLLER);
+            this.f10217p.setHierarchy(this.f10216o);
         } else {
-            this.f10078q.b(c.a.ON_CLEAR_CONTROLLER);
+            this.f10218q.b(c.a.ON_CLEAR_CONTROLLER);
         }
         if (z10) {
             a();
@@ -187,25 +187,25 @@ public class DraweeHolder implements c0 {
 
     public void q(DraweeHierarchy draweeHierarchy) {
         boolean z10;
-        this.f10078q.b(c.a.ON_SET_HIERARCHY);
+        this.f10218q.b(c.a.ON_SET_HIERARCHY);
         boolean i10 = i();
         r(null);
         DraweeHierarchy draweeHierarchy2 = (DraweeHierarchy) j.g(draweeHierarchy);
-        this.f10076o = draweeHierarchy2;
+        this.f10216o = draweeHierarchy2;
         Drawable d10 = draweeHierarchy2.d();
         if (d10 != null && !d10.isVisible()) {
             z10 = false;
         } else {
             z10 = true;
         }
-        m(z10);
+        n(z10);
         r(this);
         if (i10) {
-            this.f10077p.setHierarchy(draweeHierarchy);
+            this.f10217p.setHierarchy(draweeHierarchy);
         }
     }
 
     public String toString() {
-        return h.b(this).c("controllerAttached", this.f10073d).c("holderAttached", this.f10074e).c("drawableVisible", this.f10075i).b("events", this.f10078q.toString()).toString();
+        return h.b(this).c("controllerAttached", this.f10213d).c("holderAttached", this.f10214e).c("drawableVisible", this.f10215i).b("events", this.f10218q.toString()).toString();
     }
 }

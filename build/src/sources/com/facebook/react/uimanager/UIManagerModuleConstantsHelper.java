@@ -32,7 +32,7 @@ public final class UIManagerModuleConstantsHelper {
 
     @NotNull
     public static final Map<String, Object> getDefaultExportableEventTypes() {
-        return o0.m(qr.v.a(BUBBLING_EVENTS_KEY, UIManagerModuleConstants.bubblingEventTypeConstants), qr.v.a(DIRECT_EVENTS_KEY, UIManagerModuleConstants.directEventTypeConstants));
+        return o0.m(rr.v.a(BUBBLING_EVENTS_KEY, UIManagerModuleConstants.bubblingEventTypeConstants), rr.v.a(DIRECT_EVENTS_KEY, UIManagerModuleConstants.directEventTypeConstants));
     }
 
     public static /* synthetic */ void getDefaultExportableEventTypes$annotations() {
@@ -41,7 +41,7 @@ public final class UIManagerModuleConstantsHelper {
     @NotNull
     public static final Map<String, Object> internal_createConstants(@NotNull ViewManagerResolver resolver) {
         Intrinsics.checkNotNullParameter(resolver, "resolver");
-        return o0.q(UIManagerModuleConstants.constants, o0.m(qr.v.a("ViewManagerNames", new ArrayList(resolver.getViewManagerNames())), qr.v.a("LazyViewManagersEnabled", Boolean.TRUE)));
+        return o0.q(UIManagerModuleConstants.constants, o0.m(rr.v.a("ViewManagerNames", new ArrayList(resolver.getViewManagerNames())), rr.v.a("LazyViewManagersEnabled", Boolean.TRUE)));
     }
 
     @NotNull
@@ -125,7 +125,7 @@ public final class UIManagerModuleConstantsHelper {
                     String substring2 = str2.substring(2);
                     Intrinsics.checkNotNullExpressionValue(substring2, "substring(...)");
                     if (!Intrinsics.areEqual(substring, substring2)) {
-                        p8.a.m(TAG, "Direct event name for '" + str + "' doesn't correspond to the naming convention, expected 'topEventName'->'onEventName', got '" + key + "'->'" + str2 + "'");
+                        q8.a.m(TAG, "Direct event name for '" + str + "' doesn't correspond to the naming convention, expected 'topEventName'->'onEventName', got '" + key + "'->'" + str2 + "'");
                     }
                 }
             }

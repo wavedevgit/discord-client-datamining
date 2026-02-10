@@ -1,9 +1,9 @@
 package com.discord.chatreplay.logger;
 
-import bs.c;
-import bs.r;
 import com.discord.chatreplay.logger.DebugRowLogger;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
+import cs.c;
+import cs.r;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -46,7 +46,7 @@ public final class DebugRowLogger implements RowLogger {
             try {
                 outputStreamWriter.write(str + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
                 outputStreamWriter.flush();
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
                 c.a(outputStreamWriter, null);
                 writeJson();
             } finally {
@@ -70,7 +70,7 @@ public final class DebugRowLogger implements RowLogger {
         final OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, charset);
         try {
             outputStreamWriter.write("[\n");
-            r.d(new InputStreamReader(new FileInputStream(this.replayFile), charset), new Function1() { // from class: f7.a
+            r.d(new InputStreamReader(new FileInputStream(this.replayFile), charset), new Function1() { // from class: g7.a
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit writeJson$lambda$3$lambda$2;
@@ -80,7 +80,7 @@ public final class DebugRowLogger implements RowLogger {
             });
             outputStreamWriter.write("\n]");
             outputStreamWriter.flush();
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
             c.a(outputStreamWriter, null);
         } finally {
         }
@@ -94,7 +94,7 @@ public final class DebugRowLogger implements RowLogger {
         }
         outputStreamWriter.write(line);
         booleanRef.element = true;
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @Override // com.discord.chatreplay.logger.RowLogger

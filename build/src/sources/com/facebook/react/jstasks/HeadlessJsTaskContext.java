@@ -7,7 +7,7 @@ import com.facebook.react.bridge.UiThreadUtil;
 import com.facebook.react.common.LifecycleState;
 import com.facebook.react.jstasks.HeadlessJsTaskContext;
 import com.facebook.react.modules.appregistry.AppRegistry;
-import db.a;
+import eb.a;
 import java.lang.ref.WeakReference;
 import java.util.Map;
 import java.util.Set;
@@ -90,7 +90,7 @@ public final class HeadlessJsTaskContext {
     }
 
     private final void scheduleTaskTimeout(final int i10, long j10) {
-        Runnable runnable = new Runnable() { // from class: hb.b
+        Runnable runnable = new Runnable() { // from class: ib.b
             @Override // java.lang.Runnable
             public final void run() {
                 HeadlessJsTaskContext.this.finishTask(i10);
@@ -113,7 +113,7 @@ public final class HeadlessJsTaskContext {
         this.activeTaskConfigs.remove(Integer.valueOf(i10));
         removeTimeout(i10);
         if (remove) {
-            UiThreadUtil.runOnUiThread(new Runnable() { // from class: hb.c
+            UiThreadUtil.runOnUiThread(new Runnable() { // from class: ib.c
                 @Override // java.lang.Runnable
                 public final void run() {
                     HeadlessJsTaskContext.finishTask$lambda$4(HeadlessJsTaskContext.this, i10);
@@ -142,7 +142,7 @@ public final class HeadlessJsTaskContext {
             if (retryPolicy != null && retryPolicy.canRetry()) {
                 removeTimeout(i10);
                 final HeadlessJsTaskConfig headlessJsTaskConfig2 = new HeadlessJsTaskConfig(headlessJsTaskConfig.getTaskKey(), headlessJsTaskConfig.getData(), headlessJsTaskConfig.getTimeout(), headlessJsTaskConfig.isAllowedInForeground(), retryPolicy.update());
-                UiThreadUtil.runOnUiThread(new Runnable() { // from class: hb.a
+                UiThreadUtil.runOnUiThread(new Runnable() { // from class: ib.a
                     @Override // java.lang.Runnable
                     public final void run() {
                         HeadlessJsTaskContext.this.startTask(headlessJsTaskConfig2, i10);

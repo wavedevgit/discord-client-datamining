@@ -1,11 +1,28 @@
 package bg;
 
-import android.os.IBinder;
 import android.os.IInterface;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c extends a implements IInterface {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c(IBinder iBinder) {
-        super(iBinder, "com.google.android.gms.auth.api.internal.IAuthService");
+public abstract class c {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final ClassLoader f6594a = c.class.getClassLoader();
+
+    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
+        if (parcel.readInt() == 0) {
+            return null;
+        }
+        return (Parcelable) creator.createFromParcel(parcel);
+    }
+
+    public static void b(Parcel parcel, Parcelable parcelable) {
+        parcel.writeInt(1);
+        parcelable.writeToParcel(parcel, 0);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public static void c(Parcel parcel, IInterface iInterface) {
+        parcel.writeStrongBinder(iInterface);
     }
 }

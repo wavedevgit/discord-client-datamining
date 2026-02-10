@@ -82,7 +82,7 @@ public abstract class ReactTextAnchorViewManager<C extends ReactBaseTextShadowNo
             r1.append(r5)
             java.lang.String r5 = r1.toString()
             java.lang.String r1 = "ReactNative"
-            p8.a.J(r1, r5)
+            q8.a.J(r1, r5)
             r4.setHyphenationFrequency(r0)
             return
         L55:
@@ -231,7 +231,7 @@ public abstract class ReactTextAnchorViewManager<C extends ReactBaseTextShadowNo
             r0.append(r4)
             java.lang.String r4 = r0.toString()
             java.lang.String r0 = "ReactNative"
-            p8.a.J(r0, r4)
+            q8.a.J(r0, r4)
             android.text.TextUtils$TruncateAt r4 = android.text.TextUtils.TruncateAt.END
             r3.setEllipsizeLocation(r4)
             return
@@ -351,7 +351,7 @@ public abstract class ReactTextAnchorViewManager<C extends ReactBaseTextShadowNo
             r1.append(r5)
             java.lang.String r5 = r1.toString()
             java.lang.String r1 = "ReactNative"
-            p8.a.J(r1, r5)
+            q8.a.J(r1, r5)
             r4.setGravityVertical(r0)
             return
         L59:

@@ -1,16 +1,16 @@
 package kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure;
 
 import com.withpersona.sdk2.inquiry.network.dto.InquiryField;
-import es.f;
-import es.g;
-import es.h;
-import es.i;
-import es.j;
-import es.k;
-import es.l;
-import es.m;
-import es.n;
-import es.o;
+import fs.f;
+import fs.g;
+import fs.h;
+import fs.i;
+import fs.j;
+import fs.k;
+import fs.l;
+import fs.m;
+import fs.n;
+import fs.o;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -36,40 +36,40 @@ import kotlin.reflect.jvm.internal.impl.name.Name;
 import kotlin.sequences.Sequence;
 import kotlin.text.StringsKt;
 import org.jetbrains.annotations.NotNull;
-import qr.v;
+import rr.v;
 @SourceDebugExtension({"SMAP\nreflectClassUtil.kt\nKotlin\n*S Kotlin\n*F\n+ 1 reflectClassUtil.kt\norg/jetbrains/kotlin/descriptors/runtime/structure/ReflectClassUtilKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,99:1\n1563#2:100\n1634#2,3:101\n1563#2:104\n1634#2,3:105\n1573#2:108\n1604#2,4:109\n*S KotlinDebug\n*F\n+ 1 reflectClassUtil.kt\norg/jetbrains/kotlin/descriptors/runtime/structure/ReflectClassUtilKt\n*L\n34#1:100\n34#1:101,3\n35#1:104\n35#1:105,3\n50#1:108\n50#1:109,4\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class ReflectClassUtilKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f32677a;
+    private static final List f32386a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f32678b;
+    private static final Map f32387b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f32679c;
+    private static final Map f32388c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f32680d;
+    private static final Map f32389d;
 
     static {
         int i10 = 0;
         List o10 = CollectionsKt.o(Reflection.getOrCreateKotlinClass(Boolean.TYPE), Reflection.getOrCreateKotlinClass(Byte.TYPE), Reflection.getOrCreateKotlinClass(Character.TYPE), Reflection.getOrCreateKotlinClass(Double.TYPE), Reflection.getOrCreateKotlinClass(Float.TYPE), Reflection.getOrCreateKotlinClass(Integer.TYPE), Reflection.getOrCreateKotlinClass(Long.TYPE), Reflection.getOrCreateKotlinClass(Short.TYPE));
-        f32677a = o10;
+        f32386a = o10;
         List<KClass> list = o10;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (KClass kClass : list) {
-            arrayList.add(v.a(ds.a.c(kClass), ds.a.d(kClass)));
+            arrayList.add(v.a(es.a.c(kClass), es.a.d(kClass)));
         }
-        f32678b = o0.u(arrayList);
-        List<KClass> list2 = f32677a;
+        f32387b = o0.u(arrayList);
+        List<KClass> list2 = f32386a;
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list2, 10));
         for (KClass kClass2 : list2) {
-            arrayList2.add(v.a(ds.a.d(kClass2), ds.a.c(kClass2)));
+            arrayList2.add(v.a(es.a.d(kClass2), es.a.c(kClass2)));
         }
-        f32679c = o0.u(arrayList2);
-        List o11 = CollectionsKt.o(Function0.class, Function1.class, Function2.class, Function3.class, Function4.class, Function5.class, Function6.class, n.class, Function8.class, o.class, es.a.class, es.b.class, es.c.class, es.d.class, es.e.class, f.class, g.class, h.class, i.class, j.class, k.class, l.class, m.class);
+        f32388c = o0.u(arrayList2);
+        List o11 = CollectionsKt.o(Function0.class, Function1.class, Function2.class, Function3.class, Function4.class, Function5.class, Function6.class, n.class, Function8.class, o.class, fs.a.class, fs.b.class, fs.c.class, fs.d.class, fs.e.class, f.class, g.class, h.class, i.class, j.class, k.class, l.class, m.class);
         ArrayList arrayList3 = new ArrayList(CollectionsKt.w(o11, 10));
         for (Object obj : o11) {
             int i11 = i10 + 1;
@@ -79,7 +79,7 @@ public final class ReflectClassUtilKt {
             arrayList3.add(v.a((Class) obj, Integer.valueOf(i10)));
             i10 = i11;
         }
-        f32680d = o0.u(arrayList3);
+        f32389d = o0.u(arrayList3);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -205,7 +205,7 @@ public final class ReflectClassUtilKt {
 
     public static final Integer getFunctionClassArity(@NotNull Class<?> cls) {
         Intrinsics.checkNotNullParameter(cls, "<this>");
-        return (Integer) f32680d.get(cls);
+        return (Integer) f32389d.get(cls);
     }
 
     @NotNull
@@ -220,12 +220,12 @@ public final class ReflectClassUtilKt {
             Intrinsics.checkNotNullExpressionValue(actualTypeArguments, "getActualTypeArguments(...)");
             return kotlin.collections.i.R0(actualTypeArguments);
         }
-        return kotlin.sequences.k.Y(kotlin.sequences.k.L(kotlin.sequences.k.q(type, a.f32716d), b.f32717d));
+        return kotlin.sequences.k.Y(kotlin.sequences.k.L(kotlin.sequences.k.q(type, a.f32425d), b.f32426d));
     }
 
     public static final Class<?> getPrimitiveByWrapper(@NotNull Class<?> cls) {
         Intrinsics.checkNotNullParameter(cls, "<this>");
-        return (Class) f32678b.get(cls);
+        return (Class) f32387b.get(cls);
     }
 
     @NotNull
@@ -242,7 +242,7 @@ public final class ReflectClassUtilKt {
 
     public static final Class<?> getWrapperByPrimitive(@NotNull Class<?> cls) {
         Intrinsics.checkNotNullParameter(cls, "<this>");
-        return (Class) f32679c.get(cls);
+        return (Class) f32388c.get(cls);
     }
 
     public static final boolean isEnumClassOrSpecializedEnumEntryClass(@NotNull Class<?> cls) {

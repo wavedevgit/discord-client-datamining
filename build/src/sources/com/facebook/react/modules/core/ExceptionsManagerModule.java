@@ -72,9 +72,9 @@ public class ExceptionsManagerModule extends NativeExceptionsManagerSpec {
         }
         String extraDataAsJson = ExceptionDataHelper.getExtraDataAsJson(data);
         if (!z10) {
-            p8.a.m(ReactConstants.TAG, JSStackTrace.format(string, array));
+            q8.a.m(ReactConstants.TAG, JSStackTrace.format(string, array));
             if (extraDataAsJson != null) {
-                p8.a.c(ReactConstants.TAG, "extraData: %s", extraDataAsJson);
+                q8.a.c(ReactConstants.TAG, "extraData: %s", extraDataAsJson);
                 return;
             }
             return;

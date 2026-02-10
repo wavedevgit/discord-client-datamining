@@ -1,29 +1,73 @@
 package zn;
 
-import android.content.Context;
-import br.d;
-import br.h;
+import vn.y0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements d {
+public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f56410a;
+    private final y0 f56560a;
 
-    public c(h hVar) {
-        this.f56410a = hVar;
+    /* renamed from: b  reason: collision with root package name */
+    private final b f56561b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final int f56562c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final boolean f56563d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f56564e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final boolean f56565f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final float f56566g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final a f56567h;
+
+    public c(y0 y0Var, b bVar, int i10, boolean z10, boolean z11, boolean z12, float f10, a aVar) {
+        this.f56560a = y0Var;
+        this.f56561b = bVar;
+        this.f56562c = i10;
+        this.f56563d = z10;
+        this.f56564e = z11;
+        this.f56565f = z12;
+        this.f56566g = f10;
+        this.f56567h = aVar;
     }
 
-    public static c a(h hVar) {
-        return new c(hVar);
+    public final a a() {
+        return this.f56567h;
     }
 
-    public static b c(Context context) {
-        return new b(context);
+    public final b b() {
+        return this.f56561b;
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public b get() {
-        return c((Context) this.f56410a.get());
+    public final float c() {
+        return this.f56566g;
+    }
+
+    public final int d() {
+        return this.f56562c;
+    }
+
+    public final y0 e() {
+        return this.f56560a;
+    }
+
+    public final boolean f() {
+        return this.f56565f;
+    }
+
+    public final boolean g() {
+        return this.f56563d;
+    }
+
+    public final boolean h() {
+        return this.f56564e;
     }
 }

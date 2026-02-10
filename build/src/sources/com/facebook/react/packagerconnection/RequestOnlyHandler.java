@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class RequestOnlyHandler implements RequestHandler {
     @Override // com.facebook.react.packagerconnection.RequestHandler
     public final void onNotification(Object obj) {
-        p8.a.m(JSPackagerClient.class.getSimpleName(), "Notification is not supported");
+        q8.a.m(JSPackagerClient.class.getSimpleName(), "Notification is not supported");
     }
 
     @Override // com.facebook.react.packagerconnection.RequestHandler

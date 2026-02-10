@@ -1,48 +1,55 @@
 package tp;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.viewbinding.ViewBinding;
-import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import rp.n;
+import androidx.lifecycle.b0;
+import java.util.ArrayList;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e implements ViewBinding {
+public final class e implements tp.a {
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f50895d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ThemeableLottieAnimationView f50851a;
+    private final b0 f50896a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f50852b;
+    private final ArrayList f50897b;
 
-    private e(ThemeableLottieAnimationView themeableLottieAnimationView, ThemeableLottieAnimationView themeableLottieAnimationView2) {
-        this.f50851a = themeableLottieAnimationView;
-        this.f50852b = themeableLottieAnimationView2;
-    }
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f50898c;
 
-    public static e a(View view) {
-        if (view != null) {
-            ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) view;
-            return new e(themeableLottieAnimationView, themeableLottieAnimationView);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        throw new NullPointerException("rootView");
-    }
 
-    public static e c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
-    }
-
-    public static e d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n.f49152e, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+        private a() {
         }
-        return a(inflate);
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ThemeableLottieAnimationView getRoot() {
-        return this.f50851a;
+    public e(b0 savedStateHandle) {
+        Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
+        this.f50896a = savedStateHandle;
+        ArrayList arrayList = (ArrayList) savedStateHandle.b("com.withpersona.sdk2.inquiry.shared.data_collection.RealDataCollector.collectedData");
+        this.f50897b = arrayList == null ? new ArrayList() : arrayList;
+        this.f50898c = true;
+    }
+
+    @Override // tp.a
+    public boolean a() {
+        return this.f50898c;
+    }
+
+    @Override // tp.a
+    public void b(f stepData) {
+        Intrinsics.checkNotNullParameter(stepData, "stepData");
+        this.f50897b.add(stepData);
+        this.f50896a.h("com.withpersona.sdk2.inquiry.shared.data_collection.RealDataCollector.collectedData", this.f50897b);
+    }
+
+    public ArrayList c() {
+        return new ArrayList(this.f50897b);
     }
 }

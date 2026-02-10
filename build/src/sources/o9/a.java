@@ -1,30 +1,18 @@
 package o9;
 
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+import com.facebook.drawee.interfaces.DraweeHierarchy;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface a extends d {
+public interface a extends DraweeHierarchy {
+    void a(Throwable th2);
 
-    /* renamed from: o9.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface InterfaceC0557a {
-    }
+    void b(Throwable th2);
 
-    int c();
+    void c(float f10, boolean z10);
 
-    void clear();
+    void e(Drawable drawable, float f10, boolean z10);
 
-    void d(Rect rect);
+    void f(Drawable drawable);
 
-    int e();
-
-    void f(ColorFilter colorFilter);
-
-    boolean h(Drawable drawable, Canvas canvas, int i10);
-
-    void k(InterfaceC0557a interfaceC0557a);
-
-    void m(int i10);
+    void reset();
 }

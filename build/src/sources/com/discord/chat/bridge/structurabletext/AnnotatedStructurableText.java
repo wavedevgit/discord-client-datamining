@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.structurabletext;
 
 import com.discord.chat.bridge.contentnode.ContentNode;
-import ft.m;
+import gt.m;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;

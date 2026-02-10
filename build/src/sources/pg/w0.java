@@ -1,68 +1,43 @@
 package pg;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Map;
-/* JADX INFO: Access modifiers changed from: package-private */
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class w0 extends k1 {
-    abstract Map b();
+final class w0 implements zi.d {
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final void clear() {
-        b().clear();
+    /* renamed from: a  reason: collision with root package name */
+    static final w0 f44111a = new w0();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f44112b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f44113c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f44114d;
+
+    static {
+        c.b a10 = zi.c.a("logEventKey");
+        f fVar = new f();
+        fVar.a(1);
+        f44112b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("eventCount");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f44113c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("inferenceDurationStats");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f44114d = a12.b(fVar3.b()).a();
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public abstract boolean contains(Object obj);
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean isEmpty() {
-        return b().isEmpty();
+    private w0() {
     }
 
-    @Override // pg.k1, java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean removeAll(Collection collection) {
-        try {
-            if (collection != null) {
-                return l1.b(this, collection);
-            }
-            throw null;
-        } catch (UnsupportedOperationException unused) {
-            return l1.c(this, collection.iterator());
-        }
-    }
-
-    @Override // pg.k1, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean retainAll(Collection collection) {
-        int i10;
-        try {
-            if (collection != null) {
-                return super.retainAll(collection);
-            }
-            throw null;
-        } catch (UnsupportedOperationException unused) {
-            int size = collection.size();
-            if (size < 3) {
-                v.a(size, "expectedSize");
-                i10 = size + 1;
-            } else if (size < 1073741824) {
-                i10 = (int) Math.ceil(size / 0.75d);
-            } else {
-                i10 = Integer.MAX_VALUE;
-            }
-            HashSet hashSet = new HashSet(i10);
-            for (Object obj : collection) {
-                if (contains(obj) && (obj instanceof Map.Entry)) {
-                    hashSet.add(((Map.Entry) obj).getKey());
-                }
-            }
-            return ((i) b()).f44364o.c().retainAll(hashSet);
-        }
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final int size() {
-        return b().size();
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

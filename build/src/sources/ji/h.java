@@ -1,10 +1,20 @@
 package ji;
 
-import java.io.File;
-import java.util.Set;
+import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface h {
-    boolean a(ClassLoader classLoader, File file, File file2, boolean z10);
+public enum h implements e {
+    INSTANCE;
+    
 
-    void b(ClassLoader classLoader, Set set);
+    /* renamed from: e  reason: collision with root package name */
+    private static final AtomicReference f30183e = new AtomicReference(null);
+
+    public final void a(f fVar) {
+        f30183e.set(fVar);
+    }
+
+    @Override // ji.e
+    public final f zza() {
+        return (f) f30183e.get();
+    }
 }

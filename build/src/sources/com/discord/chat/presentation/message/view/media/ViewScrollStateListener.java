@@ -1,8 +1,8 @@
 package com.discord.chat.presentation.message.view.media;
 
-import ah.g;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import bh.g;
 import com.discord.chat.presentation.message.view.media.ViewScrollStateListener;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -26,8 +26,8 @@ public final class ViewScrollStateListener implements ViewTreeObserver.OnScrollC
         Intrinsics.checkNotNullParameter(viewScrolling, "viewScrolling");
         this.view = view;
         this.viewScrolling = viewScrolling;
-        this.isScrollingDuration = view.getResources().getInteger(g.f748c);
-        this.isScrollingStoppedRunnable = new Runnable() { // from class: a7.d
+        this.isScrollingDuration = view.getResources().getInteger(g.f6736c);
+        this.isScrollingStoppedRunnable = new Runnable() { // from class: b7.d
             @Override // java.lang.Runnable
             public final void run() {
                 ViewScrollStateListener.isScrollingStoppedRunnable$lambda$0(ViewScrollStateListener.this);

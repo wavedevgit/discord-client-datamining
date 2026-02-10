@@ -1,115 +1,66 @@
 package i9;
 
-import android.graphics.drawable.Animatable;
-import android.util.Log;
-import com.facebook.drawee.controller.ControllerListener;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class c implements ControllerListener {
+public class c {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final List f26663d = new ArrayList(2);
+    /* renamed from: b  reason: collision with root package name */
+    private static final c f26682b = new c();
 
-    private synchronized void c(String str, Throwable th2) {
-        Log.e("FdingControllerListener", str, th2);
+    /* renamed from: c  reason: collision with root package name */
+    private static boolean f26683c = true;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Queue f26684a = new ArrayBlockingQueue(20);
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public enum a {
+        ON_SET_HIERARCHY,
+        ON_CLEAR_HIERARCHY,
+        ON_SET_CONTROLLER,
+        ON_CLEAR_OLD_CONTROLLER,
+        ON_CLEAR_CONTROLLER,
+        ON_INIT_CONTROLLER,
+        ON_ATTACH_CONTROLLER,
+        ON_DETACH_CONTROLLER,
+        ON_RELEASE_CONTROLLER,
+        ON_DATASOURCE_SUBMIT,
+        ON_DATASOURCE_RESULT,
+        ON_DATASOURCE_RESULT_INT,
+        ON_DATASOURCE_FAILURE,
+        ON_DATASOURCE_FAILURE_INT,
+        ON_HOLDER_ATTACH,
+        ON_HOLDER_DETACH,
+        ON_DRAWABLE_SHOW,
+        ON_DRAWABLE_HIDE,
+        ON_ACTIVITY_START,
+        ON_ACTIVITY_STOP,
+        ON_RUN_CLEAR_CONTROLLER,
+        ON_SCHEDULE_CLEAR_CONTROLLER,
+        ON_SAME_CONTROLLER_SKIPPED,
+        ON_SUBMIT_CACHE_HIT
     }
 
-    public synchronized void a(ControllerListener controllerListener) {
-        this.f26663d.add(controllerListener);
+    private c() {
     }
 
-    public synchronized void b() {
-        this.f26663d.clear();
+    public static c a() {
+        if (f26683c) {
+            return new c();
+        }
+        return f26682b;
     }
 
-    @Override // com.facebook.drawee.controller.ControllerListener
-    public synchronized void onFailure(String str, Throwable th2) {
-        int size = this.f26663d.size();
-        for (int i10 = 0; i10 < size; i10++) {
-            try {
-                ControllerListener controllerListener = (ControllerListener) this.f26663d.get(i10);
-                if (controllerListener != null) {
-                    controllerListener.onFailure(str, th2);
-                }
-            } catch (Exception e10) {
-                c("InternalListener exception in onFailure", e10);
+    public void b(a aVar) {
+        if (f26683c) {
+            for (int i10 = 5; !this.f26684a.offer(aVar) && i10 > 0; i10--) {
+                this.f26684a.poll();
             }
         }
     }
 
-    @Override // com.facebook.drawee.controller.ControllerListener
-    public synchronized void onFinalImageSet(String str, Object obj, Animatable animatable) {
-        int size = this.f26663d.size();
-        for (int i10 = 0; i10 < size; i10++) {
-            try {
-                ControllerListener controllerListener = (ControllerListener) this.f26663d.get(i10);
-                if (controllerListener != null) {
-                    controllerListener.onFinalImageSet(str, obj, animatable);
-                }
-            } catch (Exception e10) {
-                c("InternalListener exception in onFinalImageSet", e10);
-            }
-        }
-    }
-
-    @Override // com.facebook.drawee.controller.ControllerListener
-    public void onIntermediateImageFailed(String str, Throwable th2) {
-        int size = this.f26663d.size();
-        for (int i10 = 0; i10 < size; i10++) {
-            try {
-                ControllerListener controllerListener = (ControllerListener) this.f26663d.get(i10);
-                if (controllerListener != null) {
-                    controllerListener.onIntermediateImageFailed(str, th2);
-                }
-            } catch (Exception e10) {
-                c("InternalListener exception in onIntermediateImageFailed", e10);
-            }
-        }
-    }
-
-    @Override // com.facebook.drawee.controller.ControllerListener
-    public void onIntermediateImageSet(String str, Object obj) {
-        int size = this.f26663d.size();
-        for (int i10 = 0; i10 < size; i10++) {
-            try {
-                ControllerListener controllerListener = (ControllerListener) this.f26663d.get(i10);
-                if (controllerListener != null) {
-                    controllerListener.onIntermediateImageSet(str, obj);
-                }
-            } catch (Exception e10) {
-                c("InternalListener exception in onIntermediateImageSet", e10);
-            }
-        }
-    }
-
-    @Override // com.facebook.drawee.controller.ControllerListener
-    public synchronized void onRelease(String str) {
-        int size = this.f26663d.size();
-        for (int i10 = 0; i10 < size; i10++) {
-            try {
-                ControllerListener controllerListener = (ControllerListener) this.f26663d.get(i10);
-                if (controllerListener != null) {
-                    controllerListener.onRelease(str);
-                }
-            } catch (Exception e10) {
-                c("InternalListener exception in onRelease", e10);
-            }
-        }
-    }
-
-    @Override // com.facebook.drawee.controller.ControllerListener
-    public synchronized void onSubmit(String str, Object obj) {
-        int size = this.f26663d.size();
-        for (int i10 = 0; i10 < size; i10++) {
-            try {
-                ControllerListener controllerListener = (ControllerListener) this.f26663d.get(i10);
-                if (controllerListener != null) {
-                    controllerListener.onSubmit(str, obj);
-                }
-            } catch (Exception e10) {
-                c("InternalListener exception in onSubmit", e10);
-            }
-        }
+    public String toString() {
+        return this.f26684a.toString();
     }
 }

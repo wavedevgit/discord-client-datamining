@@ -5,33 +5,33 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f18447a;
+    private final a f18587a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final o f18448b;
+    private final o f18588b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final m f18449c;
+    private final m f18589c;
 
     public n(a insets, o mode, m edges) {
         Intrinsics.checkNotNullParameter(insets, "insets");
         Intrinsics.checkNotNullParameter(mode, "mode");
         Intrinsics.checkNotNullParameter(edges, "edges");
-        this.f18447a = insets;
-        this.f18448b = mode;
-        this.f18449c = edges;
+        this.f18587a = insets;
+        this.f18588b = mode;
+        this.f18589c = edges;
     }
 
     public final m a() {
-        return this.f18449c;
+        return this.f18589c;
     }
 
     public final a b() {
-        return this.f18447a;
+        return this.f18587a;
     }
 
     public final o c() {
-        return this.f18448b;
+        return this.f18588b;
     }
 
     public boolean equals(Object obj) {
@@ -40,19 +40,19 @@ public final class n {
         }
         if (obj instanceof n) {
             n nVar = (n) obj;
-            return Intrinsics.areEqual(this.f18447a, nVar.f18447a) && this.f18448b == nVar.f18448b && Intrinsics.areEqual(this.f18449c, nVar.f18449c);
+            return Intrinsics.areEqual(this.f18587a, nVar.f18587a) && this.f18588b == nVar.f18588b && Intrinsics.areEqual(this.f18589c, nVar.f18589c);
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f18447a.hashCode() * 31) + this.f18448b.hashCode()) * 31) + this.f18449c.hashCode();
+        return (((this.f18587a.hashCode() * 31) + this.f18588b.hashCode()) * 31) + this.f18589c.hashCode();
     }
 
     public String toString() {
-        a aVar = this.f18447a;
-        o oVar = this.f18448b;
-        m mVar = this.f18449c;
+        a aVar = this.f18587a;
+        o oVar = this.f18588b;
+        m mVar = this.f18589c;
         return "SafeAreaViewLocalData(insets=" + aVar + ", mode=" + oVar + ", edges=" + mVar + ")";
     }
 }

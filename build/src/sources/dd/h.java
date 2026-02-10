@@ -1,260 +1,83 @@
 package dd;
 
-import androidx.recyclerview.widget.RecyclerView;
-import dd.i0;
-import java.io.EOFException;
-import lc.l0;
-import tc.z;
+import com.google.android.exoplayer2.Format;
+import com.google.android.exoplayer2.metadata.Metadata;
+import dd.i;
+import java.util.Arrays;
+import java.util.List;
+import oc.w;
+import oe.h0;
+import oi.s;
+import uc.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class h implements tc.k {
+final class h extends i {
 
-    /* renamed from: m  reason: collision with root package name */
-    public static final tc.p f20421m = new tc.p() { // from class: dd.g
-        @Override // tc.p
-        public final tc.k[] b() {
-            return h.b();
+    /* renamed from: o  reason: collision with root package name */
+    private static final byte[] f20655o = {79, 112, 117, 115, 72, 101, 97, 100};
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final byte[] f20656p = {79, 112, 117, 115, 84, 97, 103, 115};
+
+    /* renamed from: n  reason: collision with root package name */
+    private boolean f20657n;
+
+    private static boolean n(h0 h0Var, byte[] bArr) {
+        if (h0Var.a() < bArr.length) {
+            return false;
         }
-    };
-
-    /* renamed from: a  reason: collision with root package name */
-    private final int f20422a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final i f20423b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final ne.h0 f20424c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final ne.h0 f20425d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final ne.g0 f20426e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private tc.m f20427f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private long f20428g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private long f20429h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private int f20430i;
-
-    /* renamed from: j  reason: collision with root package name */
-    private boolean f20431j;
-
-    /* renamed from: k  reason: collision with root package name */
-    private boolean f20432k;
-
-    /* renamed from: l  reason: collision with root package name */
-    private boolean f20433l;
-
-    public h() {
-        this(0);
+        int f10 = h0Var.f();
+        byte[] bArr2 = new byte[bArr.length];
+        h0Var.l(bArr2, 0, bArr.length);
+        h0Var.U(f10);
+        return Arrays.equals(bArr2, bArr);
     }
 
-    public static /* synthetic */ tc.k[] b() {
-        return new tc.k[]{new h()};
+    public static boolean o(h0 h0Var) {
+        return n(h0Var, f20655o);
     }
 
-    private void e(tc.l lVar) {
-        int h10;
-        if (this.f20431j) {
-            return;
-        }
-        this.f20430i = -1;
-        lVar.e();
-        long j10 = 0;
-        if (lVar.getPosition() == 0) {
-            j(lVar);
-        }
-        int i10 = 0;
-        int i11 = 0;
-        do {
-            try {
-                if (!lVar.c(this.f20425d.e(), 0, 2, true)) {
-                    break;
-                }
-                this.f20425d.U(0);
-                if (!i.m(this.f20425d.N())) {
-                    break;
-                } else if (!lVar.c(this.f20425d.e(), 0, 4, true)) {
-                    break;
-                } else {
-                    this.f20426e.p(14);
-                    h10 = this.f20426e.h(13);
-                    if (h10 > 6) {
-                        j10 += h10;
-                        i11++;
-                        if (i11 == 1000) {
-                            break;
-                        }
-                    } else {
-                        this.f20431j = true;
-                        throw l0.a("Malformed ADTS stream", null);
-                    }
-                }
-            } catch (EOFException unused) {
+    @Override // dd.i
+    protected long f(h0 h0Var) {
+        return c(w.e(h0Var.e()));
+    }
+
+    @Override // dd.i
+    protected boolean h(h0 h0Var, long j10, i.b bVar) {
+        if (n(h0Var, f20655o)) {
+            byte[] copyOf = Arrays.copyOf(h0Var.e(), h0Var.g());
+            int c10 = w.c(copyOf);
+            List a10 = w.a(copyOf);
+            if (bVar.f20671a != null) {
+                return true;
             }
-        } while (lVar.l(h10 - 6, true));
-        i10 = i11;
-        lVar.e();
-        if (i10 > 0) {
-            this.f20430i = (int) (j10 / i10);
-        } else {
-            this.f20430i = -1;
+            bVar.f20671a = new Format.b().g0("audio/opus").J(c10).h0(48000).V(a10).G();
+            return true;
         }
-        this.f20431j = true;
-    }
-
-    private static int g(int i10, long j10) {
-        return (int) ((i10 * 8000000) / j10);
-    }
-
-    private tc.z h(long j10, boolean z10) {
-        return new tc.d(j10, this.f20429h, g(this.f20430i, this.f20423b.k()), this.f20430i, z10);
-    }
-
-    private void i(long j10, boolean z10) {
-        boolean z11;
-        if (!this.f20433l) {
-            boolean z12 = false;
-            if ((this.f20422a & 1) != 0 && this.f20430i > 0) {
-                z11 = true;
-            } else {
-                z11 = false;
+        byte[] bArr = f20656p;
+        if (n(h0Var, bArr)) {
+            oe.a.i(bVar.f20671a);
+            if (this.f20657n) {
+                return true;
             }
-            if (z11 && this.f20423b.k() == -9223372036854775807L && !z10) {
-                return;
+            this.f20657n = true;
+            h0Var.V(bArr.length);
+            Metadata c11 = e0.c(s.p(e0.i(h0Var, false, false).f51470b));
+            if (c11 == null) {
+                return true;
             }
-            if (z11 && this.f20423b.k() != -9223372036854775807L) {
-                tc.m mVar = this.f20427f;
-                if ((this.f20422a & 2) != 0) {
-                    z12 = true;
-                }
-                mVar.q(h(j10, z12));
-            } else {
-                this.f20427f.q(new z.b(-9223372036854775807L));
-            }
-            this.f20433l = true;
+            bVar.f20671a = bVar.f20671a.b().Z(c11.b(bVar.f20671a.f11725u)).G();
+            return true;
         }
-    }
-
-    private int j(tc.l lVar) {
-        int i10 = 0;
-        while (true) {
-            lVar.n(this.f20425d.e(), 0, 10);
-            this.f20425d.U(0);
-            if (this.f20425d.K() != 4801587) {
-                break;
-            }
-            this.f20425d.V(3);
-            int G = this.f20425d.G();
-            i10 += G + 10;
-            lVar.h(G);
-        }
-        lVar.e();
-        lVar.h(i10);
-        if (this.f20429h == -1) {
-            this.f20429h = i10;
-        }
-        return i10;
-    }
-
-    @Override // tc.k
-    public void a(long j10, long j11) {
-        this.f20432k = false;
-        this.f20423b.c();
-        this.f20428g = j11;
-    }
-
-    @Override // tc.k
-    public void c(tc.m mVar) {
-        this.f20427f = mVar;
-        this.f20423b.f(mVar, new i0.d(0, 1));
-        mVar.s();
-    }
-
-    @Override // tc.k
-    public int d(tc.l lVar, tc.y yVar) {
-        boolean z10;
-        ne.a.i(this.f20427f);
-        long length = lVar.getLength();
-        int i10 = this.f20422a;
-        if ((i10 & 2) != 0 || ((i10 & 1) != 0 && length != -1)) {
-            e(lVar);
-        }
-        int read = lVar.read(this.f20424c.e(), 0, RecyclerView.ItemAnimator.FLAG_MOVED);
-        if (read == -1) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        i(length, z10);
-        if (z10) {
-            return -1;
-        }
-        this.f20424c.U(0);
-        this.f20424c.T(read);
-        if (!this.f20432k) {
-            this.f20423b.e(this.f20428g, 4);
-            this.f20432k = true;
-        }
-        this.f20423b.b(this.f20424c);
-        return 0;
-    }
-
-    @Override // tc.k
-    public boolean f(tc.l lVar) {
-        int j10 = j(lVar);
-        int i10 = j10;
-        int i11 = 0;
-        int i12 = 0;
-        do {
-            lVar.n(this.f20425d.e(), 0, 2);
-            this.f20425d.U(0);
-            if (!i.m(this.f20425d.N())) {
-                i10++;
-                lVar.e();
-                lVar.h(i10);
-            } else {
-                i11++;
-                if (i11 >= 4 && i12 > 188) {
-                    return true;
-                }
-                lVar.n(this.f20425d.e(), 0, 4);
-                this.f20426e.p(14);
-                int h10 = this.f20426e.h(13);
-                if (h10 <= 6) {
-                    i10++;
-                    lVar.e();
-                    lVar.h(i10);
-                } else {
-                    lVar.h(h10 - 6);
-                    i12 += h10;
-                }
-            }
-            i11 = 0;
-            i12 = 0;
-        } while (i10 - j10 < 8192);
+        oe.a.i(bVar.f20671a);
         return false;
     }
 
-    public h(int i10) {
-        this.f20422a = (i10 & 2) != 0 ? i10 | 1 : i10;
-        this.f20423b = new i(true);
-        this.f20424c = new ne.h0((int) RecyclerView.ItemAnimator.FLAG_MOVED);
-        this.f20430i = -1;
-        this.f20429h = -1L;
-        ne.h0 h0Var = new ne.h0(10);
-        this.f20425d = h0Var;
-        this.f20426e = new ne.g0(h0Var.e());
-    }
-
-    @Override // tc.k
-    public void release() {
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // dd.i
+    public void l(boolean z10) {
+        super.l(z10);
+        if (z10) {
+            this.f20657n = false;
+        }
     }
 }

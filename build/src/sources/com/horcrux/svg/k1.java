@@ -13,31 +13,31 @@ import com.facebook.react.common.ReactConstants;
 public class k1 extends RenderableView {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f16944d;
+    private String f17084d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SVGLength f16945e;
+    private SVGLength f17085e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SVGLength f16946i;
+    private SVGLength f17086i;
 
     /* renamed from: o  reason: collision with root package name */
-    private SVGLength f16947o;
+    private SVGLength f17087o;
 
     /* renamed from: p  reason: collision with root package name */
-    private SVGLength f16948p;
+    private SVGLength f17088p;
 
     public k1(ReactContext reactContext) {
         super(reactContext);
     }
 
     public void c(Dynamic dynamic) {
-        this.f16948p = SVGLength.b(dynamic);
+        this.f17088p = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void d(String str) {
-        this.f16944d = str;
+        this.f17084d = str;
         invalidate();
     }
 
@@ -46,13 +46,13 @@ public class k1 extends RenderableView {
     public void draw(Canvas canvas, Paint paint, float f10) {
         Canvas canvas2;
         Paint paint2;
-        VirtualView definedTemplate = getSvgView().getDefinedTemplate(this.f16944d);
+        VirtualView definedTemplate = getSvgView().getDefinedTemplate(this.f17084d);
         if (definedTemplate == null) {
-            p8.a.J(ReactConstants.TAG, "`Use` element expected a pre-defined svg template as `href` prop, template named: " + this.f16944d + " is not defined.");
+            q8.a.J(ReactConstants.TAG, "`Use` element expected a pre-defined svg template as `href` prop, template named: " + this.f17084d + " is not defined.");
             return;
         }
         definedTemplate.clearCache();
-        canvas.translate((float) relativeOnWidth(this.f16945e), (float) relativeOnHeight(this.f16946i));
+        canvas.translate((float) relativeOnWidth(this.f17085e), (float) relativeOnHeight(this.f17086i));
         boolean z10 = definedTemplate instanceof RenderableView;
         if (z10) {
             ((RenderableView) definedTemplate).mergeProperties(this);
@@ -62,7 +62,7 @@ public class k1 extends RenderableView {
         if (definedTemplate instanceof t0) {
             canvas2 = canvas;
             paint2 = paint;
-            ((t0) definedTemplate).n(canvas2, paint2, f10, (float) relativeOnWidth(this.f16947o), (float) relativeOnHeight(this.f16948p));
+            ((t0) definedTemplate).n(canvas2, paint2, f10, (float) relativeOnWidth(this.f17087o), (float) relativeOnHeight(this.f17088p));
         } else {
             canvas2 = canvas;
             paint2 = paint;
@@ -79,32 +79,32 @@ public class k1 extends RenderableView {
     }
 
     public void e(Dynamic dynamic) {
-        this.f16947o = SVGLength.b(dynamic);
+        this.f17087o = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void f(Dynamic dynamic) {
-        this.f16945e = SVGLength.b(dynamic);
+        this.f17085e = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void g(Dynamic dynamic) {
-        this.f16946i = SVGLength.b(dynamic);
+        this.f17086i = SVGLength.b(dynamic);
         invalidate();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     public Path getPath(Canvas canvas, Paint paint) {
-        VirtualView definedTemplate = getSvgView().getDefinedTemplate(this.f16944d);
+        VirtualView definedTemplate = getSvgView().getDefinedTemplate(this.f17084d);
         if (definedTemplate == null) {
-            p8.a.J(ReactConstants.TAG, "`Use` element expected a pre-defined svg template as `href` prop, template named: " + this.f16944d + " is not defined.");
+            q8.a.J(ReactConstants.TAG, "`Use` element expected a pre-defined svg template as `href` prop, template named: " + this.f17084d + " is not defined.");
             return null;
         }
         Path path = definedTemplate.getPath(canvas, paint);
         Path path2 = new Path();
         Matrix matrix = new Matrix();
-        matrix.setTranslate((float) relativeOnWidth(this.f16945e), (float) relativeOnHeight(this.f16946i));
+        matrix.setTranslate((float) relativeOnWidth(this.f17085e), (float) relativeOnHeight(this.f17086i));
         path.transform(matrix, path2);
         return path2;
     }
@@ -118,9 +118,9 @@ public class k1 extends RenderableView {
         float[] fArr2 = new float[2];
         this.mInvMatrix.mapPoints(fArr2, fArr);
         this.mInvTransform.mapPoints(fArr2);
-        VirtualView definedTemplate = getSvgView().getDefinedTemplate(this.f16944d);
+        VirtualView definedTemplate = getSvgView().getDefinedTemplate(this.f17084d);
         if (definedTemplate == null) {
-            p8.a.J(ReactConstants.TAG, "`Use` element expected a pre-defined svg template as `href` prop, template named: " + this.f16944d + " is not defined.");
+            q8.a.J(ReactConstants.TAG, "`Use` element expected a pre-defined svg template as `href` prop, template named: " + this.f17084d + " is not defined.");
             return -1;
         }
         int hitTest = definedTemplate.hitTest(fArr2);

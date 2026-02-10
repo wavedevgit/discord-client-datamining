@@ -40,7 +40,7 @@ public interface ReactHost {
 
     /* JADX INFO: Access modifiers changed from: private */
     static Unit destroy$lambda$0(boolean z10) {
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     void addBeforeDestroyListener(@NotNull Function0<Unit> function0);

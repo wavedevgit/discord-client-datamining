@@ -1,13 +1,87 @@
 package v8;
 
-import java.util.concurrent.TimeUnit;
+import java.io.FilterInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface b {
-    @o8.d
-    default long now() {
-        return TimeUnit.NANOSECONDS.toMillis(nowNanos());
+public class b extends FilterInputStream {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final byte[] f52159d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private int f52160e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private int f52161i;
+
+    public b(InputStream inputStream, byte[] bArr) {
+        super(inputStream);
+        inputStream.getClass();
+        bArr.getClass();
+        this.f52159d = bArr;
     }
 
-    @o8.d
-    long nowNanos();
+    private int a() {
+        int i10 = this.f52160e;
+        byte[] bArr = this.f52159d;
+        if (i10 >= bArr.length) {
+            return -1;
+        }
+        this.f52160e = i10 + 1;
+        return bArr[i10] & 255;
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public void mark(int i10) {
+        if (((FilterInputStream) this).in.markSupported()) {
+            super.mark(i10);
+            this.f52161i = this.f52160e;
+        }
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public int read() {
+        int read = ((FilterInputStream) this).in.read();
+        return read != -1 ? read : a();
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public void reset() {
+        if (((FilterInputStream) this).in.markSupported()) {
+            ((FilterInputStream) this).in.reset();
+            this.f52160e = this.f52161i;
+            return;
+        }
+        throw new IOException("mark is not supported");
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public int read(byte[] bArr) {
+        return read(bArr, 0, bArr.length);
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public int read(byte[] bArr, int i10, int i11) {
+        int read = ((FilterInputStream) this).in.read(bArr, i10, i11);
+        if (read != -1) {
+            return read;
+        }
+        int i12 = 0;
+        if (i11 == 0) {
+            return 0;
+        }
+        while (i12 < i11) {
+            int a10 = a();
+            if (a10 == -1) {
+                break;
+            }
+            bArr[i10 + i12] = (byte) a10;
+            i12++;
+        }
+        if (i12 > 0) {
+            return i12;
+        }
+        return -1;
+    }
 }

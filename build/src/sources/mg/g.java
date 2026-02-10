@@ -1,32 +1,22 @@
 package mg;
+
+import ff.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class g {
+public abstract class g extends ff.d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Object f37154a;
+    /* renamed from: k  reason: collision with root package name */
+    static final a.g f37082k;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Object f37155b;
+    /* renamed from: l  reason: collision with root package name */
+    public static final ff.a f37083l;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final Object f37156c;
+    /* renamed from: m  reason: collision with root package name */
+    private static final Object f37084m;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public g(Object obj, Object obj2, Object obj3) {
-        this.f37154a = obj;
-        this.f37155b = obj2;
-        this.f37156c = obj3;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final IllegalArgumentException a() {
-        Object obj = this.f37156c;
-        Object obj2 = this.f37155b;
-        Object obj3 = this.f37154a;
-        String valueOf = String.valueOf(obj3);
-        String valueOf2 = String.valueOf(obj2);
-        String valueOf3 = String.valueOf(obj3);
-        String valueOf4 = String.valueOf(obj);
-        return new IllegalArgumentException("Multiple entries with same key: " + valueOf + "=" + valueOf2 + " and " + valueOf3 + "=" + valueOf4);
+    static {
+        a.g gVar = new a.g();
+        f37082k = gVar;
+        f37083l = new ff.a("LocationServices.API", new f(), gVar);
+        f37084m = new Object();
     }
 }

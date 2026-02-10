@@ -171,16 +171,16 @@ public abstract class EmojiPickerViewHolder extends RecyclerView.ViewHolder {
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\b\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J-\u0010\r\u001a\u00020\f2\b\u0010\b\u001a\u0004\u0018\u00010\u00072\b\u0010\t\u001a\u0004\u0018\u00010\u00022\b\u0010\u000b\u001a\u0004\u0018\u00010\nH\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u001f\u0010\u000f\u001a\u00020\f2\u0006\u0010\u0004\u001a\u00020\u00032\b\u0010\u000b\u001a\u0004\u0018\u00010\n¢\u0006\u0004\b\u000f\u0010\u0010R\u0016\u0010\u0004\u001a\u00020\u00038\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0004\u0010\u0011¨\u0006\u0012"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerViewHolder$Emoji$EmojiLoadListener;", "Li9/a;", "", "", ReactProgressBarViewManager.PROP_ANIMATING, "<init>", "(Z)V", "", StackTraceHelper.ID_KEY, "imageInfo", "Landroid/graphics/drawable/Animatable;", "animatable", "", "onFinalImageSet", "(Ljava/lang/String;Ljava/lang/Object;Landroid/graphics/drawable/Animatable;)V", "setAnimating", "(ZLandroid/graphics/drawable/Animatable;)V", "Z", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+        @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\b\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J-\u0010\r\u001a\u00020\f2\b\u0010\b\u001a\u0004\u0018\u00010\u00072\b\u0010\t\u001a\u0004\u0018\u00010\u00022\b\u0010\u000b\u001a\u0004\u0018\u00010\nH\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u001f\u0010\u000f\u001a\u00020\f2\u0006\u0010\u0004\u001a\u00020\u00032\b\u0010\u000b\u001a\u0004\u0018\u00010\n¢\u0006\u0004\b\u000f\u0010\u0010R\u0016\u0010\u0004\u001a\u00020\u00038\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0004\u0010\u0011¨\u0006\u0012"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerViewHolder$Emoji$EmojiLoadListener;", "Lj9/a;", "", "", ReactProgressBarViewManager.PROP_ANIMATING, "<init>", "(Z)V", "", StackTraceHelper.ID_KEY, "imageInfo", "Landroid/graphics/drawable/Animatable;", "animatable", "", "onFinalImageSet", "(Ljava/lang/String;Ljava/lang/Object;Landroid/graphics/drawable/Animatable;)V", "setAnimating", "(ZLandroid/graphics/drawable/Animatable;)V", "Z", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class EmojiLoadListener extends i9.a {
+        public static final class EmojiLoadListener extends j9.a {
             private boolean animating;
 
             public EmojiLoadListener(boolean z10) {
                 this.animating = z10;
             }
 
-            @Override // i9.a, com.facebook.drawee.controller.ControllerListener
+            @Override // j9.a, com.facebook.drawee.controller.ControllerListener
             public void onFinalImageSet(String str, Object obj, Animatable animatable) {
                 setAnimating(this.animating, animatable);
             }
@@ -201,7 +201,7 @@ public abstract class EmojiPickerViewHolder extends RecyclerView.ViewHolder {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(onPressEmoji, "onPressEmoji");
             Intrinsics.checkNotNullParameter(onLongPressEmoji, "onLongPressEmoji");
-            this.placeholder$delegate = qr.l.a(new Function0() { // from class: com.discord.emoji_picker.c0
+            this.placeholder$delegate = rr.l.a(new Function0() { // from class: com.discord.emoji_picker.c0
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Drawable placeholder_delegate$lambda$0;
@@ -216,7 +216,7 @@ public abstract class EmojiPickerViewHolder extends RecyclerView.ViewHolder {
             this.emojiLoadListener = new EmojiLoadListener(false);
             RippleUtilsKt.addCircleRipple(simpleDraweeView, true);
             ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).w(context.getResources().getInteger(com.discord.image.fresco.R.integer.image_fade_duration) / 3);
-            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f9918e);
+            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f10058e);
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView, false, new View.OnClickListener() { // from class: com.discord.emoji_picker.d0
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {

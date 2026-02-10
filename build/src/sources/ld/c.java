@@ -2,29 +2,21 @@ package ld;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import com.google.android.exoplayer2.MediaMetadata;
+import com.google.android.exoplayer2.metadata.Metadata;
 import java.util.Arrays;
-import ne.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c extends i {
+public final class c implements Metadata.b {
     public static final Parcelable.Creator<c> CREATOR = new a();
 
+    /* renamed from: d  reason: collision with root package name */
+    public final byte[] f35813d;
+
     /* renamed from: e  reason: collision with root package name */
-    public final String f36086e;
+    public final String f35814e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f36087i;
-
-    /* renamed from: o  reason: collision with root package name */
-    public final int f36088o;
-
-    /* renamed from: p  reason: collision with root package name */
-    public final long f36089p;
-
-    /* renamed from: q  reason: collision with root package name */
-    public final long f36090q;
-
-    /* renamed from: r  reason: collision with root package name */
-    private final i[] f36091r;
+    public final String f35815i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -44,17 +36,21 @@ public final class c extends i {
         }
     }
 
-    public c(String str, int i10, int i11, long j10, long j11, i[] iVarArr) {
-        super("CHAP");
-        this.f36086e = str;
-        this.f36087i = i10;
-        this.f36088o = i11;
-        this.f36089p = j10;
-        this.f36090q = j11;
-        this.f36091r = iVarArr;
+    public c(byte[] bArr, String str, String str2) {
+        this.f35813d = bArr;
+        this.f35814e = str;
+        this.f35815i = str2;
     }
 
-    @Override // ld.i, android.os.Parcelable
+    @Override // com.google.android.exoplayer2.metadata.Metadata.b
+    public void a1(MediaMetadata.b bVar) {
+        String str = this.f35814e;
+        if (str != null) {
+            bVar.m0(str);
+        }
+    }
+
+    @Override // android.os.Parcelable
     public int describeContents() {
         return 0;
     }
@@ -64,50 +60,29 @@ public final class c extends i {
             return true;
         }
         if (obj != null && c.class == obj.getClass()) {
-            c cVar = (c) obj;
-            if (this.f36087i == cVar.f36087i && this.f36088o == cVar.f36088o && this.f36089p == cVar.f36089p && this.f36090q == cVar.f36090q && w0.c(this.f36086e, cVar.f36086e) && Arrays.equals(this.f36091r, cVar.f36091r)) {
-                return true;
-            }
+            return Arrays.equals(this.f35813d, ((c) obj).f35813d);
         }
         return false;
     }
 
     public int hashCode() {
-        int i10;
-        int i11 = (((((((527 + this.f36087i) * 31) + this.f36088o) * 31) + ((int) this.f36089p)) * 31) + ((int) this.f36090q)) * 31;
-        String str = this.f36086e;
-        if (str != null) {
-            i10 = str.hashCode();
-        } else {
-            i10 = 0;
-        }
-        return i11 + i10;
+        return Arrays.hashCode(this.f35813d);
+    }
+
+    public String toString() {
+        return String.format("ICY: title=\"%s\", url=\"%s\", rawMetadata.length=\"%s\"", this.f35814e, this.f35815i, Integer.valueOf(this.f35813d.length));
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f36086e);
-        parcel.writeInt(this.f36087i);
-        parcel.writeInt(this.f36088o);
-        parcel.writeLong(this.f36089p);
-        parcel.writeLong(this.f36090q);
-        parcel.writeInt(this.f36091r.length);
-        for (i iVar : this.f36091r) {
-            parcel.writeParcelable(iVar, 0);
-        }
+        parcel.writeByteArray(this.f35813d);
+        parcel.writeString(this.f35814e);
+        parcel.writeString(this.f35815i);
     }
 
     c(Parcel parcel) {
-        super("CHAP");
-        this.f36086e = (String) w0.j(parcel.readString());
-        this.f36087i = parcel.readInt();
-        this.f36088o = parcel.readInt();
-        this.f36089p = parcel.readLong();
-        this.f36090q = parcel.readLong();
-        int readInt = parcel.readInt();
-        this.f36091r = new i[readInt];
-        for (int i10 = 0; i10 < readInt; i10++) {
-            this.f36091r[i10] = (i) parcel.readParcelable(i.class.getClassLoader());
-        }
+        this.f35813d = (byte[]) oe.a.e(parcel.createByteArray());
+        this.f35814e = parcel.readString();
+        this.f35815i = parcel.readString();
     }
 }

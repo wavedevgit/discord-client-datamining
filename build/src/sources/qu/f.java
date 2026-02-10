@@ -1,180 +1,52 @@
 package qu;
 
-import java.io.Closeable;
-import java.util.concurrent.locks.ReentrantLock;
-import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
 import okio.Buffer;
-import okio.Source;
-import okio.Timeout;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class f implements Closeable {
+public final class f {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f48252d;
+    /* renamed from: a  reason: collision with root package name */
+    public static final f f47281a = new f();
 
-    /* renamed from: e  reason: collision with root package name */
-    private boolean f48253e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private int f48254i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private final ReentrantLock f48255o = m0.b();
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static final class a implements Source {
-
-        /* renamed from: d  reason: collision with root package name */
-        private final f f48256d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private long f48257e;
-
-        /* renamed from: i  reason: collision with root package name */
-        private boolean f48258i;
-
-        public a(f fileHandle, long j10) {
-            Intrinsics.checkNotNullParameter(fileHandle, "fileHandle");
-            this.f48256d = fileHandle;
-            this.f48257e = j10;
-        }
-
-        @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
-        public void close() {
-            if (this.f48258i) {
-                return;
-            }
-            this.f48258i = true;
-            ReentrantLock n10 = this.f48256d.n();
-            n10.lock();
-            try {
-                f fVar = this.f48256d;
-                fVar.f48254i--;
-                if (this.f48256d.f48254i == 0 && this.f48256d.f48253e) {
-                    Unit unit = Unit.f32056a;
-                    n10.unlock();
-                    this.f48256d.p();
-                }
-            } finally {
-                n10.unlock();
-            }
-        }
-
-        @Override // okio.Source
-        public long read(Buffer sink, long j10) {
-            Intrinsics.checkNotNullParameter(sink, "sink");
-            if (!this.f48258i) {
-                long z10 = this.f48256d.z(this.f48257e, sink, j10);
-                if (z10 != -1) {
-                    this.f48257e += z10;
-                }
-                return z10;
-            }
-            throw new IllegalStateException("closed");
-        }
-
-        @Override // okio.Source
-        public Timeout timeout() {
-            return Timeout.f43220e;
-        }
+    private f() {
     }
 
-    public f(boolean z10) {
-        this.f48252d = z10;
+    public final String a(int i10) {
+        if (i10 >= 1000 && i10 < 5000) {
+            if ((1004 <= i10 && i10 < 1007) || (1015 <= i10 && i10 < 3000)) {
+                return "Code " + i10 + " is reserved and may not be used.";
+            }
+            return null;
+        }
+        return "Code must be in range [1000,5000): " + i10;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public final long z(long j10, Buffer buffer, long j11) {
-        int i10;
-        if (j11 >= 0) {
-            long j12 = j11 + j10;
-            long j13 = j10;
-            while (true) {
-                if (j13 >= j12) {
-                    break;
-                }
-                g0 x12 = buffer.x1(1);
-                int s10 = s(j13, x12.f48272a, x12.f48274c, (int) Math.min(j12 - j13, 8192 - i10));
-                if (s10 == -1) {
-                    if (x12.f48273b == x12.f48274c) {
-                        buffer.f43203d = x12.b();
-                        h0.b(x12);
-                    }
-                    if (j10 == j13) {
-                        return -1L;
-                    }
-                } else {
-                    x12.f48274c += s10;
-                    long j14 = s10;
-                    j13 += j14;
-                    buffer.Y0(buffer.size() + j14);
+    public final void b(Buffer.a cursor, byte[] key) {
+        Intrinsics.checkNotNullParameter(cursor, "cursor");
+        Intrinsics.checkNotNullParameter(key, "key");
+        int length = key.length;
+        int i10 = 0;
+        do {
+            byte[] bArr = cursor.f42336p;
+            int i11 = cursor.f42337q;
+            int i12 = cursor.f42338r;
+            if (bArr != null) {
+                while (i11 < i12) {
+                    int i13 = i10 % length;
+                    bArr[i11] = (byte) (bArr[i11] ^ key[i13]);
+                    i11++;
+                    i10 = i13 + 1;
                 }
             }
-            return j13 - j10;
+        } while (cursor.g() != -1);
+    }
+
+    public final void c(int i10) {
+        String a10 = a(i10);
+        if (a10 == null) {
+            return;
         }
-        throw new IllegalArgumentException(("byteCount < 0: " + j11).toString());
+        Intrinsics.checkNotNull(a10);
+        throw new IllegalArgumentException(a10.toString());
     }
-
-    public final Source C(long j10) {
-        ReentrantLock reentrantLock = this.f48255o;
-        reentrantLock.lock();
-        try {
-            if (!this.f48253e) {
-                this.f48254i++;
-                reentrantLock.unlock();
-                return new a(this, j10);
-            }
-            throw new IllegalStateException("closed");
-        } catch (Throwable th2) {
-            reentrantLock.unlock();
-            throw th2;
-        }
-    }
-
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public final void close() {
-        ReentrantLock reentrantLock = this.f48255o;
-        reentrantLock.lock();
-        try {
-            if (this.f48253e) {
-                return;
-            }
-            this.f48253e = true;
-            if (this.f48254i != 0) {
-                return;
-            }
-            Unit unit = Unit.f32056a;
-            reentrantLock.unlock();
-            p();
-        } finally {
-            reentrantLock.unlock();
-        }
-    }
-
-    public final ReentrantLock n() {
-        return this.f48255o;
-    }
-
-    protected abstract void p();
-
-    protected abstract int s(long j10, byte[] bArr, int i10, int i11);
-
-    public final long size() {
-        ReentrantLock reentrantLock = this.f48255o;
-        reentrantLock.lock();
-        try {
-            if (!this.f48253e) {
-                Unit unit = Unit.f32056a;
-                reentrantLock.unlock();
-                return y();
-            }
-            throw new IllegalStateException("closed");
-        } catch (Throwable th2) {
-            reentrantLock.unlock();
-            throw th2;
-        }
-    }
-
-    protected abstract long y();
 }

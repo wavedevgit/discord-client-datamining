@@ -13,29 +13,29 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaTypeEnhancement {
 
     /* renamed from: a  reason: collision with root package name */
-    private final JavaResolverSettings f33102a;
+    private final JavaResolverSettings f32811a;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final KotlinType f33103a;
+        private final KotlinType f32812a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f33104b;
+        private final int f32813b;
 
         public a(KotlinType kotlinType, int i10) {
-            this.f33103a = kotlinType;
-            this.f33104b = i10;
+            this.f32812a = kotlinType;
+            this.f32813b = i10;
         }
 
         public final int a() {
-            return this.f33104b;
+            return this.f32813b;
         }
 
         public final KotlinType b() {
-            return this.f33103a;
+            return this.f32812a;
         }
     }
 
@@ -44,36 +44,36 @@ public final class JavaTypeEnhancement {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final SimpleType f33105a;
+        private final SimpleType f32814a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f33106b;
+        private final int f32815b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f33107c;
+        private final boolean f32816c;
 
         public b(SimpleType simpleType, int i10, boolean z10) {
-            this.f33105a = simpleType;
-            this.f33106b = i10;
-            this.f33107c = z10;
+            this.f32814a = simpleType;
+            this.f32815b = i10;
+            this.f32816c = z10;
         }
 
         public final boolean a() {
-            return this.f33107c;
+            return this.f32816c;
         }
 
         public final int b() {
-            return this.f33106b;
+            return this.f32815b;
         }
 
         public final SimpleType c() {
-            return this.f33105a;
+            return this.f32814a;
         }
     }
 
     public JavaTypeEnhancement(@NotNull JavaResolverSettings javaResolverSettings) {
         Intrinsics.checkNotNullParameter(javaResolverSettings, "javaResolverSettings");
-        this.f33102a = javaResolverSettings;
+        this.f32811a = javaResolverSettings;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:109:0x01e4 A[SYNTHETIC] */
@@ -223,7 +223,7 @@ public final class JavaTypeEnhancement {
             r2.<init>(r0, r1)
             return r2
         Lea:
-            qr.p r0 = new qr.p
+            rr.p r0 = new rr.p
             r0.<init>()
             throw r0
         */
@@ -231,7 +231,7 @@ public final class JavaTypeEnhancement {
     }
 
     private final SimpleType d(SimpleType simpleType) {
-        if (this.f33102a.getCorrectNullabilityForNotNullTypeParameter()) {
+        if (this.f32811a.getCorrectNullabilityForNotNullTypeParameter()) {
             return SpecialTypesKt.makeSimpleTypeDefinitelyNotNullOrNotNull(simpleType, true);
         }
         return new NotNullTypeParameterImpl(simpleType);

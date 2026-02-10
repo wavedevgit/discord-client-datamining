@@ -1,102 +1,155 @@
 package ok;
 
-import com.google.zxing.Result;
-import hk.c;
-import hk.k;
-import hk.m;
-import hk.o;
-import hk.p;
-import java.util.List;
-import java.util.Map;
-import lk.b;
-import lk.e;
-import lk.g;
-import pk.d;
+import androidx.recyclerview.widget.RecyclerView;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements m {
+public final class a {
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final p[] f42837b = new p[0];
+    /* renamed from: h  reason: collision with root package name */
+    public static final a f41946h = new a(4201, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 1);
+
+    /* renamed from: i  reason: collision with root package name */
+    public static final a f41947i = new a(1033, IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, 1);
+
+    /* renamed from: j  reason: collision with root package name */
+    public static final a f41948j;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static final a f41949k;
+
+    /* renamed from: l  reason: collision with root package name */
+    public static final a f41950l;
+
+    /* renamed from: m  reason: collision with root package name */
+    public static final a f41951m;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static final a f41952n;
+
+    /* renamed from: o  reason: collision with root package name */
+    public static final a f41953o;
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f42838a = new d();
+    private final int[] f41954a;
 
-    private static b b(b bVar) {
-        int[] k10 = bVar.k();
-        int[] f10 = bVar.f();
-        if (k10 != null && f10 != null) {
-            int c10 = c(k10, bVar);
-            int i10 = k10[1];
-            int i11 = f10[1];
-            int i12 = k10[0];
-            int i13 = ((f10[0] - i12) + 1) / c10;
-            int i14 = ((i11 - i10) + 1) / c10;
-            if (i13 > 0 && i14 > 0) {
-                int i15 = c10 / 2;
-                int i16 = i10 + i15;
-                int i17 = i12 + i15;
-                b bVar2 = new b(i13, i14);
-                for (int i18 = 0; i18 < i14; i18++) {
-                    int i19 = (i18 * c10) + i16;
-                    for (int i20 = 0; i20 < i13; i20++) {
-                        if (bVar.e((i20 * c10) + i17, i19)) {
-                            bVar2.q(i20, i18);
-                        }
-                    }
-                }
-                return bVar2;
+    /* renamed from: b  reason: collision with root package name */
+    private final int[] f41955b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final b f41956c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final b f41957d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f41958e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final int f41959f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final int f41960g;
+
+    static {
+        a aVar = new a(67, 64, 1);
+        f41948j = aVar;
+        f41949k = new a(19, 16, 1);
+        f41950l = new a(285, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 0);
+        a aVar2 = new a(301, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 1);
+        f41951m = aVar2;
+        f41952n = aVar2;
+        f41953o = aVar;
+    }
+
+    public a(int i10, int i11, int i12) {
+        this.f41959f = i10;
+        this.f41958e = i11;
+        this.f41960g = i12;
+        this.f41954a = new int[i11];
+        this.f41955b = new int[i11];
+        int i13 = 1;
+        for (int i14 = 0; i14 < i11; i14++) {
+            this.f41954a[i14] = i13;
+            i13 *= 2;
+            if (i13 >= i11) {
+                i13 = (i13 ^ i10) & (i11 - 1);
             }
-            throw k.a();
         }
-        throw k.a();
+        for (int i15 = 0; i15 < i11 - 1; i15++) {
+            this.f41955b[this.f41954a[i15]] = i15;
+        }
+        this.f41956c = new b(this, new int[]{0});
+        this.f41957d = new b(this, new int[]{1});
     }
 
-    private static int c(int[] iArr, b bVar) {
-        int l10 = bVar.l();
-        int i10 = iArr[0];
-        int i11 = iArr[1];
-        while (i10 < l10 && bVar.e(i10, i11)) {
-            i10++;
-        }
-        if (i10 != l10) {
-            int i12 = i10 - iArr[0];
-            if (i12 != 0) {
-                return i12;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int a(int i10, int i11) {
+        return i10 ^ i11;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b b(int i10, int i11) {
+        if (i10 >= 0) {
+            if (i11 == 0) {
+                return this.f41956c;
             }
-            throw k.a();
+            int[] iArr = new int[i10 + 1];
+            iArr[0] = i11;
+            return new b(this, iArr);
         }
-        throw k.a();
+        throw new IllegalArgumentException();
     }
 
-    @Override // hk.m
-    public Result a(c cVar, Map map) {
-        p[] b10;
-        e eVar;
-        if (map != null && map.containsKey(hk.e.PURE_BARCODE)) {
-            eVar = this.f42838a.b(b(cVar.a()));
-            b10 = f42837b;
-        } else {
-            g b11 = new qk.a(cVar.a()).b();
-            e b12 = this.f42838a.b(b11.a());
-            b10 = b11.b();
-            eVar = b12;
-        }
-        Result result = new Result(eVar.k(), eVar.g(), b10, hk.a.DATA_MATRIX);
-        List a10 = eVar.a();
-        if (a10 != null) {
-            result.h(o.BYTE_SEGMENTS, a10);
-        }
-        String b13 = eVar.b();
-        if (b13 != null) {
-            result.h(o.ERROR_CORRECTION_LEVEL, b13);
-        }
-        result.h(o.ERRORS_CORRECTED, eVar.d());
-        o oVar = o.SYMBOLOGY_IDENTIFIER;
-        result.h(oVar, "]d" + eVar.j());
-        return result;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int c(int i10) {
+        return this.f41954a[i10];
     }
 
-    @Override // hk.m
-    public void reset() {
+    public int d() {
+        return this.f41960g;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b e() {
+        return this.f41957d;
+    }
+
+    public int f() {
+        return this.f41958e;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b g() {
+        return this.f41956c;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int h(int i10) {
+        if (i10 != 0) {
+            return this.f41954a[(this.f41958e - this.f41955b[i10]) - 1];
+        }
+        throw new ArithmeticException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int i(int i10) {
+        if (i10 != 0) {
+            return this.f41955b[i10];
+        }
+        throw new IllegalArgumentException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int j(int i10, int i11) {
+        if (i10 != 0 && i11 != 0) {
+            int[] iArr = this.f41954a;
+            int[] iArr2 = this.f41955b;
+            return iArr[(iArr2[i10] + iArr2[i11]) % (this.f41958e - 1)];
+        }
+        return 0;
+    }
+
+    public String toString() {
+        return "GF(0x" + Integer.toHexString(this.f41959f) + ',' + this.f41958e + ')';
     }
 }

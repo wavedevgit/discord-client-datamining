@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import an.c;
+import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
@@ -69,8 +69,8 @@ public final class InputCheckboxGroup_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 list = (List) this.nullableListOfStringAdapter.fromJson(reader);
             } else if (J == 1) {

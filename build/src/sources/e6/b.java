@@ -1,19 +1,19 @@
 package e6;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public interface b {
+public abstract class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static int f21167a = 2131951735;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f21371b = new a();
+    public static int f21168b = 2131951736;
 
-    void g();
+    /* renamed from: c  reason: collision with root package name */
+    public static int f21169c = 2131951737;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class a implements b {
-        a() {
-        }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f21170d = 2131951738;
 
-        @Override // e6.b
-        public void g() {
-        }
-    }
+    /* renamed from: e  reason: collision with root package name */
+    public static int f21171e = 2131952049;
 }

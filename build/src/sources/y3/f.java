@@ -7,6 +7,6 @@ public final class f implements h.c {
     @Override // x3.h.c
     public x3.h a(h.b configuration) {
         Intrinsics.checkNotNullParameter(configuration, "configuration");
-        return new d(configuration.f54493a, configuration.f54494b, configuration.f54495c, configuration.f54496d, configuration.f54497e);
+        return new d(configuration.f54585a, configuration.f54586b, configuration.f54587c, configuration.f54588d, configuration.f54589e);
     }
 }

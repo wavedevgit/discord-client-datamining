@@ -8,47 +8,47 @@ import java.util.Map;
 public final class v3 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Integer f29030d;
+    private Integer f29230d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f29031e;
+    private List f29231e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29032i;
+    private Map f29232i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f29033a;
+        static final /* synthetic */ int[] f29233a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f29034b;
+        static final /* synthetic */ int[] f29234b;
 
         static {
             int[] iArr = new int[io.sentry.rrweb.c.values().length];
-            f29034b = iArr;
+            f29234b = iArr;
             try {
                 iArr[io.sentry.rrweb.c.IncrementalSnapshot.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f29034b[io.sentry.rrweb.c.Meta.ordinal()] = 2;
+                f29234b[io.sentry.rrweb.c.Meta.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f29034b[io.sentry.rrweb.c.Custom.ordinal()] = 3;
+                f29234b[io.sentry.rrweb.c.Custom.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             int[] iArr2 = new int[d.b.values().length];
-            f29033a = iArr2;
+            f29233a = iArr2;
             try {
                 iArr2[d.b.MouseInteraction.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f29033a[d.b.TouchMove.ordinal()] = 2;
+                f29233a[d.b.TouchMove.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -76,19 +76,19 @@ public final class v3 implements w1 {
     }
 
     public List a() {
-        return this.f29031e;
+        return this.f29231e;
     }
 
     public void b(List list) {
-        this.f29031e = list;
+        this.f29231e = list;
     }
 
     public void c(Integer num) {
-        this.f29030d = num;
+        this.f29230d = num;
     }
 
     public void d(Map map) {
-        this.f29032i = map;
+        this.f29232i = map;
     }
 
     public boolean equals(Object obj) {
@@ -97,7 +97,7 @@ public final class v3 implements w1 {
         }
         if (obj != null && v3.class == obj.getClass()) {
             v3 v3Var = (v3) obj;
-            if (io.sentry.util.y.a(this.f29030d, v3Var.f29030d) && io.sentry.util.y.a(this.f29031e, v3Var.f29031e)) {
+            if (io.sentry.util.y.a(this.f29230d, v3Var.f29230d) && io.sentry.util.y.a(this.f29231e, v3Var.f29231e)) {
                 return true;
             }
         }
@@ -105,27 +105,27 @@ public final class v3 implements w1 {
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f29030d, this.f29031e);
+        return io.sentry.util.y.b(this.f29230d, this.f29231e);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f29030d != null) {
-            f3Var.e("segment_id").i(this.f29030d);
+        if (this.f29230d != null) {
+            f3Var.e("segment_id").i(this.f29230d);
         }
-        Map map = this.f29032i;
+        Map map = this.f29232i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29032i.get(str));
+                f3Var.e(str).j(iLogger, this.f29232i.get(str));
             }
         }
         f3Var.D();
         f3Var.A(true);
-        if (this.f29030d != null) {
+        if (this.f29230d != null) {
             f3Var.g(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
         }
-        List list = this.f29031e;
+        List list = this.f29231e;
         if (list != null) {
             f3Var.j(iLogger, list);
         }

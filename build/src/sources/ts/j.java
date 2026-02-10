@@ -1,121 +1,96 @@
 package ts;
 
-import java.util.concurrent.CancellationException;
-import kotlin.Result;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
-import kotlinx.coroutines.CoroutineDispatcher;
-import kotlinx.coroutines.Job;
-import os.l1;
-import os.u1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.channels.ProducerScope;
+import kotlinx.coroutines.flow.Flow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class j {
+public final class j extends e {
 
-    /* renamed from: a */
-    private static final e0 f50879a = new e0("UNDEFINED");
+    /* renamed from: o  reason: collision with root package name */
+    private final Iterable f50957o;
 
-    /* renamed from: b */
-    public static final e0 f50880b = new e0("REUSABLE_CLAIMED");
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
-    public static final /* synthetic */ e0 a() {
-        return f50879a;
-    }
+        /* renamed from: d  reason: collision with root package name */
+        int f50958d;
 
-    public static final void b(Continuation continuation, Object obj) {
-        u1 u1Var;
-        if (continuation instanceof i) {
-            i iVar = (i) continuation;
-            Object b10 = os.t.b(obj);
-            if (d(iVar.f50875o, iVar.getContext())) {
-                iVar.f50877q = b10;
-                iVar.f35117i = 1;
-                c(iVar.f50875o, iVar.getContext(), iVar);
-                return;
-            }
-            os.p0 b11 = l1.f43556a.b();
-            if (b11.r2()) {
-                iVar.f50877q = b10;
-                iVar.f35117i = 1;
-                b11.j2(iVar);
-                return;
-            }
-            b11.p2(true);
-            try {
-                Job job = (Job) iVar.getContext().m(Job.f35065h);
-                if (job != null && !job.a()) {
-                    CancellationException C = job.C();
-                    iVar.b(b10, C);
-                    Result.a aVar = Result.f32053e;
-                    iVar.resumeWith(Result.b(kotlin.c.a(C)));
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Flow f50959e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ z f50960i;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(Flow flow, z zVar, Continuation continuation) {
+            super(2, continuation);
+            this.f50959e = flow;
+            this.f50960i = zVar;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new a(this.f50959e, this.f50960i, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            Object f10 = xr.b.f();
+            int i10 = this.f50958d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    kotlin.c.b(obj);
                 } else {
-                    Continuation continuation2 = iVar.f50876p;
-                    Object obj2 = iVar.f50878r;
-                    CoroutineContext context = continuation2.getContext();
-                    Object i10 = l0.i(context, obj2);
-                    if (i10 != l0.f50890a) {
-                        u1Var = os.x.m(continuation2, context, i10);
-                    } else {
-                        u1Var = null;
-                    }
-                    iVar.f50876p.resumeWith(obj);
-                    Unit unit = Unit.f32056a;
-                    if (u1Var == null || u1Var.Z0()) {
-                        l0.f(context, i10);
-                    }
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                do {
-                } while (b11.u2());
-            } finally {
-                try {
-                    return;
-                } finally {
+            } else {
+                kotlin.c.b(obj);
+                Flow flow = this.f50959e;
+                z zVar = this.f50960i;
+                this.f50958d = 1;
+                if (flow.collect(zVar, this) == f10) {
+                    return f10;
                 }
             }
-            return;
+            return Unit.f31765a;
         }
-        continuation.resumeWith(obj);
-    }
 
-    public static final void c(CoroutineDispatcher coroutineDispatcher, CoroutineContext coroutineContext, Runnable runnable) {
-        try {
-            coroutineDispatcher.D1(coroutineContext, runnable);
-        } catch (Throwable th2) {
-            throw new os.j0(th2, coroutineDispatcher, coroutineContext);
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
         }
     }
 
-    public static final boolean d(CoroutineDispatcher coroutineDispatcher, CoroutineContext coroutineContext) {
-        try {
-            return coroutineDispatcher.V1(coroutineContext);
-        } catch (Throwable th2) {
-            throw new os.j0(th2, coroutineDispatcher, coroutineContext);
-        }
+    public /* synthetic */ j(Iterable iterable, CoroutineContext coroutineContext, int i10, rs.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this(iterable, (i11 & 2) != 0 ? kotlin.coroutines.e.f31839d : coroutineContext, (i11 & 4) != 0 ? -2 : i10, (i11 & 8) != 0 ? rs.a.f49232d : aVar);
     }
 
-    public static final boolean e(i iVar) {
-        Unit unit = Unit.f32056a;
-        os.p0 b10 = l1.f43556a.b();
-        if (b10.s2()) {
-            return false;
+    @Override // ts.e
+    protected Object e(ProducerScope producerScope, Continuation continuation) {
+        z zVar = new z(producerScope);
+        for (Flow flow : this.f50957o) {
+            ps.i.d(producerScope, null, null, new a(flow, zVar, null), 3, null);
         }
-        if (b10.r2()) {
-            iVar.f50877q = unit;
-            iVar.f35117i = 1;
-            b10.j2(iVar);
-            return true;
-        }
-        b10.p2(true);
-        try {
-            iVar.run();
-            do {
-            } while (b10.u2());
-        } finally {
-            try {
-                return false;
-            } finally {
-            }
-        }
-        return false;
+        return Unit.f31765a;
+    }
+
+    @Override // ts.e
+    protected e f(CoroutineContext coroutineContext, int i10, rs.a aVar) {
+        return new j(this.f50957o, coroutineContext, i10, aVar);
+    }
+
+    @Override // ts.e
+    public rs.v m(CoroutineScope coroutineScope) {
+        return rs.s.b(coroutineScope, this.f50924d, this.f50925e, k());
+    }
+
+    public j(Iterable iterable, CoroutineContext coroutineContext, int i10, rs.a aVar) {
+        super(coroutineContext, i10, aVar);
+        this.f50957o = iterable;
     }
 }

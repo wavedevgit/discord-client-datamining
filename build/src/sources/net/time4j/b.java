@@ -1,18 +1,18 @@
 package net.time4j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-abstract class b extends st.d implements c {
+abstract class b extends tt.d implements c {
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient o f39160e;
+    private final transient o f38252e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient o f39161i;
+    private final transient o f38253i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(String str) {
         super(str);
-        this.f39160e = new s0(this, 0);
-        this.f39161i = new s0(this, 1);
+        this.f38252e = new s0(this, 0);
+        this.f38253i = new s0(this, 1);
     }
 
     public o F(Comparable comparable) {

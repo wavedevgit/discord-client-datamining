@@ -1,137 +1,123 @@
 package oe;
 
+import android.util.Pair;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import lc.l0;
-import ne.d0;
-import ne.h0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class f {
+public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public final List f41672a;
+    private static final byte[] f40607a = {0, 0, 0, 1};
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f41673b;
+    private static final String[] f40608b = {"", "A", "B", "C"};
 
-    /* renamed from: c  reason: collision with root package name */
-    public final int f41674c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public final int f41675d;
-
-    /* renamed from: e  reason: collision with root package name */
-    public final int f41676e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public final int f41677f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final int f41678g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final float f41679h;
-
-    /* renamed from: i  reason: collision with root package name */
-    public final String f41680i;
-
-    private f(List list, int i10, int i11, int i12, int i13, int i14, int i15, float f10, String str) {
-        this.f41672a = list;
-        this.f41673b = i10;
-        this.f41674c = i11;
-        this.f41675d = i12;
-        this.f41676e = i13;
-        this.f41677f = i14;
-        this.f41678g = i15;
-        this.f41679h = f10;
-        this.f41680i = str;
+    public static String a(int i10, int i11, int i12) {
+        return String.format("avc1.%02X%02X%02X", Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12));
     }
 
-    public static f a(h0 h0Var) {
-        boolean z10;
-        List singletonList;
-        int i10;
-        try {
-            h0Var.V(21);
-            int H = h0Var.H() & 3;
-            int H2 = h0Var.H();
-            int f10 = h0Var.f();
-            int i11 = 0;
-            int i12 = 0;
-            int i13 = 0;
-            while (true) {
-                z10 = true;
-                if (i12 >= H2) {
-                    break;
-                }
-                h0Var.V(1);
-                int N = h0Var.N();
-                for (int i14 = 0; i14 < N; i14++) {
-                    int N2 = h0Var.N();
-                    i13 += N2 + 4;
-                    h0Var.V(N2);
-                }
-                i12++;
-            }
-            h0Var.U(f10);
-            byte[] bArr = new byte[i13];
-            int i15 = -1;
-            int i16 = -1;
-            int i17 = -1;
-            int i18 = -1;
-            int i19 = -1;
-            float f11 = 1.0f;
-            String str = null;
-            int i20 = 0;
-            int i21 = 0;
-            while (i20 < H2) {
-                int H3 = h0Var.H() & 63;
-                int N3 = h0Var.N();
-                int i22 = i11;
-                while (i22 < N3) {
-                    int N4 = h0Var.N();
-                    boolean z11 = z10;
-                    byte[] bArr2 = d0.f38913a;
-                    int i23 = H;
-                    System.arraycopy(bArr2, i11, bArr, i21, bArr2.length);
-                    int length = i21 + bArr2.length;
-                    System.arraycopy(h0Var.e(), h0Var.f(), bArr, length, N4);
-                    if (H3 == 33 && i22 == 0) {
-                        d0.a h10 = d0.h(bArr, length, length + N4);
-                        i15 = h10.f38927k;
-                        i16 = h10.f38928l;
-                        i17 = h10.f38930n;
-                        int i24 = h10.f38931o;
-                        int i25 = h10.f38932p;
-                        i10 = H2;
-                        float f12 = h10.f38929m;
-                        str = ne.f.c(h10.f38917a, h10.f38918b, h10.f38919c, h10.f38920d, h10.f38924h, h10.f38925i);
-                        i19 = i25;
-                        f11 = f12;
-                        i18 = i24;
-                    } else {
-                        i10 = H2;
-                    }
-                    i21 = length + N4;
-                    h0Var.V(N4);
-                    i22++;
-                    z10 = z11;
-                    H = i23;
-                    H2 = i10;
-                    i11 = 0;
-                }
-                i20++;
-                i11 = 0;
-            }
-            int i26 = H;
-            if (i13 == 0) {
-                singletonList = Collections.EMPTY_LIST;
-            } else {
-                singletonList = Collections.singletonList(bArr);
-            }
-            return new f(singletonList, i26 + 1, i15, i16, i17, i18, i19, f11, str);
-        } catch (ArrayIndexOutOfBoundsException e10) {
-            throw l0.a("Error parsing HEVC config", e10);
+    public static List b(boolean z10) {
+        return Collections.singletonList(z10 ? new byte[]{1} : new byte[]{0});
+    }
+
+    public static String c(int i10, boolean z10, int i11, int i12, int[] iArr, int i13) {
+        char c10;
+        String str = f40608b[i10];
+        Integer valueOf = Integer.valueOf(i11);
+        Integer valueOf2 = Integer.valueOf(i12);
+        if (z10) {
+            c10 = 'H';
+        } else {
+            c10 = 'L';
         }
+        StringBuilder sb2 = new StringBuilder(w0.D("hvc1.%s%d.%X.%c%d", str, valueOf, valueOf2, Character.valueOf(c10), Integer.valueOf(i13)));
+        int length = iArr.length;
+        while (length > 0 && iArr[length - 1] == 0) {
+            length--;
+        }
+        for (int i14 = 0; i14 < length; i14++) {
+            sb2.append(String.format(".%02X", Integer.valueOf(iArr[i14])));
+        }
+        return sb2.toString();
+    }
+
+    public static byte[] d(byte[] bArr, int i10, int i11) {
+        byte[] bArr2 = f40607a;
+        byte[] bArr3 = new byte[bArr2.length + i11];
+        System.arraycopy(bArr2, 0, bArr3, 0, bArr2.length);
+        System.arraycopy(bArr, i10, bArr3, bArr2.length, i11);
+        return bArr3;
+    }
+
+    private static int e(byte[] bArr, int i10) {
+        int length = bArr.length - f40607a.length;
+        while (i10 <= length) {
+            if (f(bArr, i10)) {
+                return i10;
+            }
+            i10++;
+        }
+        return -1;
+    }
+
+    private static boolean f(byte[] bArr, int i10) {
+        if (bArr.length - i10 <= f40607a.length) {
+            return false;
+        }
+        int i11 = 0;
+        while (true) {
+            byte[] bArr2 = f40607a;
+            if (i11 < bArr2.length) {
+                if (bArr[i10 + i11] != bArr2[i11]) {
+                    return false;
+                }
+                i11++;
+            } else {
+                return true;
+            }
+        }
+    }
+
+    public static Pair g(byte[] bArr) {
+        h0 h0Var = new h0(bArr);
+        h0Var.U(9);
+        int H = h0Var.H();
+        h0Var.U(20);
+        return Pair.create(Integer.valueOf(h0Var.L()), Integer.valueOf(H));
+    }
+
+    public static boolean h(List list) {
+        if (list.size() != 1 || ((byte[]) list.get(0)).length != 1 || ((byte[]) list.get(0))[0] != 1) {
+            return false;
+        }
+        return true;
+    }
+
+    public static byte[][] i(byte[] bArr) {
+        int length;
+        if (!f(bArr, 0)) {
+            return null;
+        }
+        ArrayList arrayList = new ArrayList();
+        int i10 = 0;
+        do {
+            arrayList.add(Integer.valueOf(i10));
+            i10 = e(bArr, i10 + f40607a.length);
+        } while (i10 != -1);
+        byte[][] bArr2 = new byte[arrayList.size()];
+        for (int i11 = 0; i11 < arrayList.size(); i11++) {
+            int intValue = ((Integer) arrayList.get(i11)).intValue();
+            if (i11 < arrayList.size() - 1) {
+                length = ((Integer) arrayList.get(i11 + 1)).intValue();
+            } else {
+                length = bArr.length;
+            }
+            int i12 = length - intValue;
+            byte[] bArr3 = new byte[i12];
+            System.arraycopy(bArr, intValue, bArr3, 0, i12);
+            bArr2[i11] = bArr3;
+        }
+        return bArr2;
     }
 }

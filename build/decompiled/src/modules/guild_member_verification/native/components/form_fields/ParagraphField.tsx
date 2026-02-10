@@ -51,8 +51,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'flexDirection': 'column'
     };
     var3.container = var8;
-    var8 = {};
-    var3.fieldDescription = var8;
     var8 = {
         'padding': 8,
         'width': '100%',
@@ -103,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member_verification/native/components/form_fields/ParagraphField.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61741: for (var _fun61741_ip = 0;;) switch (_fun61741_ip) {
+        _fun61587: for (var _fun61587_ip = 0;;) switch (_fun61587_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.field;
@@ -156,8 +154,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var10 != var11;
                 var10 = '';
                 if (!var12) {
-                    _fun61741_ip = 200;
-                    continue _fun61741
+                    _fun61587_ip = 200;
+                    continue _fun61587
                 }
             case 197:
                 var10 = var11;
@@ -186,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4828, 483, 33, 1297, 671, 4682, 3942, 5430, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4828, 483, 33, 1297, 671, 4682, 3942, 5431, 1234, 2]);

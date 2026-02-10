@@ -1,26 +1,29 @@
 package qg;
 
-import yi.c;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class v5 implements yi.d {
+final class v5 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v5 f47634a = new v5();
+    static final v5 f46366a = new v5();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f46367b;
 
     static {
-        c.b a10 = yi.c.a("format");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
+        c.b a10 = zi.c.a("api");
+        s1 s1Var = new s1();
+        s1Var.a(1);
+        f46367b = a10.b(s1Var.b()).a();
     }
 
     private v5() {
     }
 
-    @Override // yi.d
+    @Override // zi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
+        zi.e eVar = (zi.e) obj2;
         throw null;
     }
 }

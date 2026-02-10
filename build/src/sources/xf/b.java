@@ -2,35 +2,66 @@ package xf;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import androidx.annotation.NonNull;
+import xf.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements Parcelable.Creator {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void c(a aVar, Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.c(parcel, 1, aVar.b());
-        hf.c.b(parcel, a10);
-    }
-
-    @Override // android.os.Parcelable.Creator
-    /* renamed from: a */
-    public a createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        boolean z10 = false;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            if (hf.b.l(r10) != 1) {
-                hf.b.z(parcel, r10);
-            } else {
-                z10 = hf.b.m(parcel, r10);
+public enum b implements Parcelable {
+    PLATFORM("platform"),
+    CROSS_PLATFORM("cross-platform");
+    
+    @NonNull
+    public static final Parcelable.Creator<b> CREATOR = new Parcelable.Creator() { // from class: xf.e0
+        @Override // android.os.Parcelable.Creator
+        public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+            try {
+                return b.a(parcel.readString());
+            } catch (b.a e10) {
+                throw new RuntimeException(e10);
             }
         }
-        hf.b.k(parcel, A);
-        return new a(z10);
+
+        @Override // android.os.Parcelable.Creator
+        public final /* synthetic */ Object[] newArray(int i10) {
+            return new b[i10];
+        }
+    };
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f54883d;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static class a extends Exception {
+        public a(String str) {
+            super(String.format("Attachment %s not supported", str));
+        }
     }
 
-    @Override // android.os.Parcelable.Creator
-    /* renamed from: b */
-    public a[] newArray(int i10) {
-        return new a[i10];
+    b(String str) {
+        this.f54883d = str;
+    }
+
+    public static b a(String str) {
+        b[] values;
+        for (b bVar : values()) {
+            if (str.equals(bVar.f54883d)) {
+                return bVar;
+            }
+        }
+        throw new a(str);
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override // java.lang.Enum
+    public String toString() {
+        return this.f54883d;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        parcel.writeString(this.f54883d);
     }
 }

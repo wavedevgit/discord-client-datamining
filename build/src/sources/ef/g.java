@@ -1,16 +1,18 @@
 package ef;
 
-import com.google.android.gms.common.api.Status;
-import java.util.concurrent.TimeUnit;
+import android.util.Log;
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class g {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface a {
-        void a(Status status);
+public final class g extends ClassLoader {
+    @Override // java.lang.ClassLoader
+    protected final Class loadClass(String str, boolean z10) {
+        if (Objects.equals(str, "com.google.android.gms.iid.MessengerCompat")) {
+            if (Log.isLoggable("CloudMessengerCompat", 3)) {
+                Log.d("CloudMessengerCompat", "Using renamed FirebaseIidMessengerCompat class");
+                return h.class;
+            }
+            return h.class;
+        }
+        return super.loadClass(str, z10);
     }
-
-    public abstract void addStatusListener(a aVar);
-
-    public abstract k await(long j10, TimeUnit timeUnit);
 }

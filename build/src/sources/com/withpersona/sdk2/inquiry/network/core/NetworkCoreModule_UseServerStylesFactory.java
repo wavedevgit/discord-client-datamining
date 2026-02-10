@@ -1,8 +1,8 @@
 package com.withpersona.sdk2.inquiry.network.core;
 
-import br.g;
+import cr.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_UseServerStylesFactory implements br.d {
+public final class NetworkCoreModule_UseServerStylesFactory implements cr.d {
     private final NetworkCoreModule module;
 
     public NetworkCoreModule_UseServerStylesFactory(NetworkCoreModule networkCoreModule) {

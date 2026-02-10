@@ -24,34 +24,34 @@ import kotlin.text.StringsKt;
 public class a implements t3 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b f27551d = new b(null);
+    public static final b f27751d = new b(null);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final int f27552e = 8;
+    public static final int f27752e = 8;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Lazy f27553f = qr.l.b(qr.o.f48093i, C0384a.f27558d);
+    private static final Lazy f27753f = rr.l.b(rr.o.f49211i, C0410a.f27758d);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final HashSet f27554g;
+    private static final HashSet f27754g;
 
     /* renamed from: a  reason: collision with root package name */
-    private k7 f27555a;
+    private k7 f27755a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f27556b;
+    private String f27756b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f27557c;
+    private final Map f27757c;
 
     /* renamed from: io.sentry.android.replay.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class C0384a extends Lambda implements Function0 {
+    static final class C0410a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0384a f27558d = new C0384a();
+        public static final C0410a f27758d = new C0410a();
 
-        C0384a() {
+        C0410a() {
             super(0);
         }
 
@@ -70,7 +70,7 @@ public class a implements t3 {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final Regex b() {
-            return (Regex) a.f27553f.getValue();
+            return (Regex) a.f27753f.getValue();
         }
 
         private b() {
@@ -81,10 +81,10 @@ public class a implements t3 {
     private final class c implements k7.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final k7.a f27559a;
+        private final k7.a f27759a;
 
         public c(k7.a aVar) {
-            this.f27559a = aVar;
+            this.f27759a = aVar;
         }
 
         private final io.sentry.util.network.a b(Breadcrumb breadcrumb, Hint hint) {
@@ -99,7 +99,7 @@ public class a implements t3 {
         public Breadcrumb a(Breadcrumb breadcrumb, Hint hint) {
             Intrinsics.checkNotNullParameter(breadcrumb, "breadcrumb");
             Intrinsics.checkNotNullParameter(hint, "hint");
-            k7.a aVar = this.f27559a;
+            k7.a aVar = this.f27759a;
             if (aVar != null) {
                 breadcrumb = aVar.a(breadcrumb, hint);
             }
@@ -230,7 +230,7 @@ public class a implements t3 {
     public static final class e extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final e f27561d = new e();
+        public static final e f27761d = new e();
 
         e() {
             super(1);
@@ -254,11 +254,11 @@ public class a implements t3 {
         hashSet.add("request_content_length");
         hashSet.add("http.response_content_length");
         hashSet.add("http.request_content_length");
-        f27554g = hashSet;
+        f27754g = hashSet;
     }
 
     public a() {
-        this.f27557c = Collections.synchronizedMap(new d());
+        this.f27757c = Collections.synchronizedMap(new d());
     }
 
     private final boolean c(Breadcrumb breadcrumb) {
@@ -286,7 +286,7 @@ public class a implements t3 {
     }
 
     private final String d(String str) {
-        return f27551d.b().j(str, e.f27561d);
+        return f27751d.b().j(str, e.f27761d);
     }
 
     private final io.sentry.rrweb.i e(Breadcrumb breadcrumb) {
@@ -315,13 +315,13 @@ public class a implements t3 {
         }
         iVar.r(longValue2 / 1000.0d);
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        android.support.v4.media.session.b.a(this.f27557c.remove(breadcrumb));
+        android.support.v4.media.session.b.a(this.f27757c.remove(breadcrumb));
         Map o10 = breadcrumb.o();
         Intrinsics.checkNotNullExpressionValue(o10, "getData(...)");
         for (Map.Entry entry : o10.entrySet()) {
             String str = (String) entry.getKey();
             Object value = entry.getValue();
-            if (f27554g.contains(str)) {
+            if (f27754g.contains(str)) {
                 Intrinsics.checkNotNull(str);
                 linkedHashMap.put(d(StringsKt.W0(StringsKt.J(str, "content_length", "body_size", false, 4, null), ".", null, 2, null)), value);
             }
@@ -349,7 +349,7 @@ public class a implements t3 {
     public a(k7 options) {
         this();
         Intrinsics.checkNotNullParameter(options, "options");
-        this.f27555a = options;
+        this.f27755a = options;
         if (options == null) {
             return;
         }

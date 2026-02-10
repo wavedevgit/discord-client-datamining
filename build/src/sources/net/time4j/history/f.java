@@ -1,35 +1,35 @@
 package net.time4j.history;
 
 import net.time4j.f0;
-import rt.a0;
+import st.a0;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    final long f39440a;
+    final long f38532a;
 
     /* renamed from: b  reason: collision with root package name */
-    final c f39441b;
+    final c f38533b;
 
     /* renamed from: c  reason: collision with root package name */
-    final h f39442c;
+    final h f38534c;
 
     /* renamed from: d  reason: collision with root package name */
-    final h f39443d;
+    final h f38535d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(long j10, c cVar, c cVar2) {
-        this.f39440a = j10;
-        this.f39441b = cVar2;
+        this.f38532a = j10;
+        this.f38533b = cVar2;
         if (j10 == Long.MIN_VALUE) {
             h hVar = new h(j.BC, 1000000000, 1, 1);
-            this.f39442c = hVar;
-            this.f39443d = hVar;
+            this.f38534c = hVar;
+            this.f38535d = hVar;
             return;
         }
-        this.f39442c = cVar2.e(j10);
-        this.f39443d = cVar.e(j10 - 1);
+        this.f38534c = cVar2.e(j10);
+        this.f38535d = cVar.e(j10 - 1);
     }
 
     public boolean equals(Object obj) {
@@ -38,7 +38,7 @@ public final class f {
         }
         if (obj instanceof f) {
             f fVar = (f) obj;
-            if (this.f39440a == fVar.f39440a && this.f39441b == fVar.f39441b && this.f39443d.equals(fVar.f39443d)) {
+            if (this.f38532a == fVar.f38532a && this.f38533b == fVar.f38533b && this.f38535d.equals(fVar.f38535d)) {
                 return true;
             }
         }
@@ -46,11 +46,11 @@ public final class f {
     }
 
     public int hashCode() {
-        long j10 = this.f39440a;
+        long j10 = this.f38532a;
         return (int) (j10 ^ (j10 >>> 32));
     }
 
     public String toString() {
-        return f.class.getName() + "[start=" + this.f39440a + " (" + f0.M0(this.f39440a, a0.MODIFIED_JULIAN_DATE) + "),algorithm=" + this.f39441b + ",date-before-cutover=" + this.f39443d + ",date-at-cutover=" + this.f39442c + ']';
+        return f.class.getName() + "[start=" + this.f38532a + " (" + f0.M0(this.f38532a, a0.MODIFIED_JULIAN_DATE) + "),algorithm=" + this.f38533b + ",date-before-cutover=" + this.f38535d + ",date-at-cutover=" + this.f38534c + ']';
     }
 }

@@ -1,18 +1,30 @@
 package og;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class kc extends h6 {
+final class kc implements zi.d {
 
-    /* renamed from: i  reason: collision with root package name */
-    private final mc f42260i;
+    /* renamed from: a  reason: collision with root package name */
+    static final kc f41089a = new kc();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public kc(mc mcVar, int i10) {
-        super(mcVar.size(), i10);
-        this.f42260i = mcVar;
+    static {
+        c.b a10 = zi.c.a("language");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("inferenceCommonLogEvent");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
     }
 
-    @Override // og.h6
-    protected final Object a(int i10) {
-        return this.f42260i.get(i10);
+    private kc() {
+    }
+
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

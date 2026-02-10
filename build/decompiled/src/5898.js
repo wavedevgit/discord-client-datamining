@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
     var1 = function() {
-        _fun52005: for (var _fun52005_ip = 0;;) switch (_fun52005_ip) {
+        _fun52006: for (var _fun52006_ip = 0;;) switch (_fun52006_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.useContext;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var4.bind(var1)(var0);
                 var0 = var2.bind(var3)(var0);
                 if (!(var1 !== var0)) {
-                    _fun52005_ip = 46;
-                    continue _fun52005
+                    _fun52006_ip = 46;
+                    continue _fun52006
                 }
             case 44:
                 return var0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         value: var2
                     }
                 });
-                var5 = "Couldn't find a ref for gesture handler. Are you inside a screen in Stack?";
+                var5 = "Couldn't find values for card animation. Are you inside a screen in Stack?";
                 var6 = var1;
                 var0 = new var6[var2](var5, var4);
                 var0 = var0 instanceof Object ? var0 : var1;
@@ -55,4 +55,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5844]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5888]);

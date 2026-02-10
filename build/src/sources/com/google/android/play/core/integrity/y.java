@@ -3,15 +3,15 @@ package com.google.android.play.core.integrity;
 final class y extends m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f16222a;
+    private String f16362a;
 
     /* renamed from: b  reason: collision with root package name */
-    private h1 f16223b;
+    private h1 f16363b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.integrity.m0
     public final m0 a(h1 h1Var) {
-        this.f16223b = h1Var;
+        this.f16363b = h1Var;
         return this;
     }
 
@@ -19,7 +19,7 @@ final class y extends m0 {
     @Override // com.google.android.play.core.integrity.m0
     public final m0 b(String str) {
         if (str != null) {
-            this.f16222a = str;
+            this.f16362a = str;
             return this;
         }
         throw new NullPointerException("Null token");
@@ -29,15 +29,15 @@ final class y extends m0 {
     @Override // com.google.android.play.core.integrity.m0
     public final n0 c() {
         h1 h1Var;
-        String str = this.f16222a;
-        if (str != null && (h1Var = this.f16223b) != null) {
+        String str = this.f16362a;
+        if (str != null && (h1Var = this.f16363b) != null) {
             return new n0(str, h1Var);
         }
         StringBuilder sb2 = new StringBuilder();
-        if (this.f16222a == null) {
+        if (this.f16362a == null) {
             sb2.append(" token");
         }
-        if (this.f16223b == null) {
+        if (this.f16363b == null) {
             sb2.append(" integrityDialogWrapper");
         }
         throw new IllegalStateException("Missing required properties:".concat(sb2.toString()));

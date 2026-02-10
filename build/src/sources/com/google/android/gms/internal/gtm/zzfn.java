@@ -10,8 +10,8 @@ import android.content.pm.ServiceInfo;
 import android.os.Handler;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.google.android.gms.internal.gtm.zzfm;
-import gf.q;
-import xg.a;
+import hf.q;
+import yg.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class zzfn<T extends Context & zzfm> {
     private static Boolean zza;

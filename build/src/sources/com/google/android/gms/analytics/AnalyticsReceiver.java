@@ -8,12 +8,12 @@ import com.google.android.gms.internal.gtm.zzfi;
 public final class AnalyticsReceiver extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private zzfi f13649a;
+    private zzfi f13789a;
 
     @Override // android.content.BroadcastReceiver
     public void onReceive(Context context, Intent intent) {
-        if (this.f13649a == null) {
-            this.f13649a = new zzfi();
+        if (this.f13789a == null) {
+            this.f13789a = new zzfi();
         }
         zzfi.zzb(context, intent);
     }

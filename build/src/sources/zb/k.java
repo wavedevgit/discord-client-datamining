@@ -1,27 +1,37 @@
 package zb;
 
-import java.util.concurrent.Executor;
+import zb.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class k implements bc.b {
+public abstract class k {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class a {
+    public static abstract class a {
+        public abstract k a();
 
-        /* renamed from: a  reason: collision with root package name */
-        private static final k f56139a = new k();
+        public abstract a b(zb.a aVar);
+
+        public abstract a c(b bVar);
     }
 
-    public static k a() {
-        return a.f56139a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public enum b {
+        UNKNOWN(0),
+        ANDROID_FIREBASE(23);
+        
+
+        /* renamed from: d  reason: collision with root package name */
+        private final int f56256d;
+
+        b(int i10) {
+            this.f56256d = i10;
+        }
     }
 
-    public static Executor b() {
-        return (Executor) bc.d.c(j.a(), "Cannot return null from a non-@Nullable @Provides method");
+    public static a a() {
+        return new e.b();
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: c */
-    public Executor get() {
-        return b();
-    }
+    public abstract zb.a b();
+
+    public abstract b c();
 }

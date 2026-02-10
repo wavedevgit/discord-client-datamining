@@ -23,24 +23,24 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final AtomicInteger f16438a = new AtomicInteger((int) SystemClock.elapsedRealtime());
+    private static final AtomicInteger f16578a = new AtomicInteger((int) SystemClock.elapsedRealtime());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final NotificationCompat.Builder f16439a;
+        public final NotificationCompat.Builder f16579a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f16440b;
+        public final String f16580b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f16441c;
+        public final int f16581c;
 
         a(NotificationCompat.Builder builder, String str, int i10) {
-            this.f16439a = builder;
-            this.f16440b = str;
-            this.f16441c = i10;
+            this.f16579a = builder;
+            this.f16580b = str;
+            this.f16581c = i10;
         }
     }
 
@@ -160,7 +160,7 @@ public abstract class d {
     }
 
     private static int g() {
-        return f16438a.incrementAndGet();
+        return f16578a.incrementAndGet();
     }
 
     private static Integer h(Context context, String str, Bundle bundle) {

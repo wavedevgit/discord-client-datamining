@@ -80,7 +80,7 @@ public final class RedBoxDialogSurfaceDelegate implements SurfaceDelegate {
         if (lastErrorTitle == null) {
             lastErrorTitle = "N/A";
         }
-        p8.a.m(ReactConstants.TAG, "Unable to launch redbox because react activity is not available, here is the error that redbox would've displayed: " + lastErrorTitle);
+        q8.a.m(ReactConstants.TAG, "Unable to launch redbox because react activity is not available, here is the error that redbox would've displayed: " + lastErrorTitle);
     }
 
     @Override // com.facebook.react.common.SurfaceDelegate
@@ -96,7 +96,7 @@ public final class RedBoxDialogSurfaceDelegate implements SurfaceDelegate {
                 dialog.dismiss();
             }
         } catch (IllegalArgumentException e10) {
-            p8.a.n(ReactConstants.TAG, "RedBoxDialogSurfaceDelegate: error while dismissing dialog: ", e10);
+            q8.a.n(ReactConstants.TAG, "RedBoxDialogSurfaceDelegate: error while dismissing dialog: ", e10);
         }
         destroyContentView();
         this.dialog = null;
@@ -169,6 +169,6 @@ public final class RedBoxDialogSurfaceDelegate implements SurfaceDelegate {
         if (lastErrorTitle == null) {
             lastErrorTitle = "N/A";
         }
-        p8.a.m(ReactConstants.TAG, "Unable to launch redbox because react activity and react context is not available, here is the error that redbox would've displayed: " + lastErrorTitle);
+        q8.a.m(ReactConstants.TAG, "Unable to launch redbox because react activity and react context is not available, here is the error that redbox would've displayed: " + lastErrorTitle);
     }
 }

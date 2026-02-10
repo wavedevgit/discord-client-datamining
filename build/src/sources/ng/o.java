@@ -1,42 +1,42 @@
 package ng;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import java.util.Iterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class o extends hf.a {
-    public static final Parcelable.Creator<o> CREATOR = new p();
-
-    /* renamed from: d  reason: collision with root package name */
-    public int f40179d;
-
-    /* renamed from: e  reason: collision with root package name */
-    public int f40180e;
+final class o extends j {
 
     /* renamed from: i  reason: collision with root package name */
-    public int f40181i;
+    private final transient i f38872i;
 
     /* renamed from: o  reason: collision with root package name */
-    public long f40182o;
+    private final transient f f38873o;
 
-    /* renamed from: p  reason: collision with root package name */
-    public int f40183p;
-
-    public o(int i10, int i11, int i12, long j10, int i13) {
-        this.f40179d = i10;
-        this.f40180e = i11;
-        this.f40181i = i12;
-        this.f40182o = j10;
-        this.f40183p = i13;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public o(i iVar, f fVar) {
+        this.f38872i = iVar;
+        this.f38873o = fVar;
     }
 
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 2, this.f40179d);
-        hf.c.l(parcel, 3, this.f40180e);
-        hf.c.l(parcel, 4, this.f40181i);
-        hf.c.o(parcel, 5, this.f40182o);
-        hf.c.l(parcel, 6, this.f40183p);
-        hf.c.b(parcel, a10);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // ng.c
+    public final int b(Object[] objArr, int i10) {
+        return this.f38873o.b(objArr, 0);
+    }
+
+    @Override // ng.c, java.util.AbstractCollection, java.util.Collection
+    public final boolean contains(Object obj) {
+        if (this.f38872i.get(obj) != null) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    public final /* synthetic */ Iterator iterator() {
+        return this.f38873o.listIterator(0);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final int size() {
+        return this.f38872i.size();
     }
 }

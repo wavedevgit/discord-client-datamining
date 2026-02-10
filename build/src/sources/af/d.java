@@ -5,33 +5,35 @@ import android.os.Parcel;
 import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class d implements Parcelable.Creator {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void c(c cVar, Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.e(parcel, 1, cVar.b(), false);
-        hf.c.b(parcel, a10);
-    }
-
     @Override // android.os.Parcelable.Creator
-    /* renamed from: a */
-    public c createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
         Bundle bundle = null;
+        int i10 = 0;
+        int i11 = 0;
         while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            if (hf.b.l(r10) != 1) {
-                hf.b.z(parcel, r10);
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
+            if (l10 != 1) {
+                if (l10 != 2) {
+                    if (l10 != 3) {
+                        jf.b.z(parcel, r10);
+                    } else {
+                        bundle = jf.b.a(parcel, r10);
+                    }
+                } else {
+                    i11 = jf.b.t(parcel, r10);
+                }
             } else {
-                bundle = hf.b.a(parcel, r10);
+                i10 = jf.b.t(parcel, r10);
             }
         }
-        hf.b.k(parcel, A);
-        return new c(bundle);
+        jf.b.k(parcel, A);
+        return new a(i10, i11, bundle);
     }
 
     @Override // android.os.Parcelable.Creator
-    /* renamed from: b */
-    public c[] newArray(int i10) {
-        return new c[i10];
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new a[i10];
     }
 }

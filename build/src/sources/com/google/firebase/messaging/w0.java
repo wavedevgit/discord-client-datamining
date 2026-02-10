@@ -18,54 +18,54 @@ import java.util.concurrent.TimeUnit;
 public class w0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f16524d;
+    private final long f16664d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final PowerManager.WakeLock f16525e;
+    private final PowerManager.WakeLock f16665e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final FirebaseMessaging f16526i;
+    private final FirebaseMessaging f16666i;
 
     /* renamed from: o  reason: collision with root package name */
-    ExecutorService f16527o = new ThreadPoolExecutor(0, 1, 30, TimeUnit.SECONDS, new LinkedBlockingQueue(), new of.a("firebase-iid-executor"));
+    ExecutorService f16667o = new ThreadPoolExecutor(0, 1, 30, TimeUnit.SECONDS, new LinkedBlockingQueue(), new pf.a("firebase-iid-executor"));
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static class a extends BroadcastReceiver {
 
         /* renamed from: a  reason: collision with root package name */
-        private w0 f16528a;
+        private w0 f16668a;
 
         public a(w0 w0Var) {
-            this.f16528a = w0Var;
+            this.f16668a = w0Var;
         }
 
         public void a() {
             if (w0.c()) {
                 Log.d("FirebaseMessaging", "Connectivity change received registered");
             }
-            this.f16528a.b().registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
+            this.f16668a.b().registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
         }
 
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
-            w0 w0Var = this.f16528a;
+            w0 w0Var = this.f16668a;
             if (w0Var == null || !w0Var.d()) {
                 return;
             }
             if (w0.c()) {
                 Log.d("FirebaseMessaging", "Connectivity changed. Starting background sync.");
             }
-            this.f16528a.f16526i.l(this.f16528a, 0L);
-            this.f16528a.b().unregisterReceiver(this);
-            this.f16528a = null;
+            this.f16668a.f16666i.l(this.f16668a, 0L);
+            this.f16668a.b().unregisterReceiver(this);
+            this.f16668a = null;
         }
     }
 
     public w0(FirebaseMessaging firebaseMessaging, long j10) {
-        this.f16526i = firebaseMessaging;
-        this.f16524d = j10;
+        this.f16666i = firebaseMessaging;
+        this.f16664d = j10;
         PowerManager.WakeLock newWakeLock = ((PowerManager) b().getSystemService("power")).newWakeLock(1, "fiid-sync");
-        this.f16525e = newWakeLock;
+        this.f16665e = newWakeLock;
         newWakeLock.setReferenceCounted(false);
     }
 
@@ -77,7 +77,7 @@ public class w0 implements Runnable {
     }
 
     Context b() {
-        return this.f16526i.m();
+        return this.f16666i.m();
     }
 
     boolean d() {
@@ -96,7 +96,7 @@ public class w0 implements Runnable {
 
     boolean e() {
         try {
-            if (this.f16526i.k() == null) {
+            if (this.f16666i.k() == null) {
                 Log.e("FirebaseMessaging", "Token retrieval failed: null");
                 return false;
             } else if (Log.isLoggable("FirebaseMessaging", 3)) {
@@ -124,13 +124,13 @@ public class w0 implements Runnable {
     @Override // java.lang.Runnable
     public void run() {
         if (s0.b().e(b())) {
-            this.f16525e.acquire();
+            this.f16665e.acquire();
         }
         try {
             try {
-                this.f16526i.y(true);
-                if (!this.f16526i.x()) {
-                    this.f16526i.y(false);
+                this.f16666i.y(true);
+                if (!this.f16666i.x()) {
+                    this.f16666i.y(false);
                     if (!s0.b().e(b())) {
                         return;
                     }
@@ -141,25 +141,25 @@ public class w0 implements Runnable {
                     }
                 } else {
                     if (e()) {
-                        this.f16526i.y(false);
+                        this.f16666i.y(false);
                     } else {
-                        this.f16526i.C(this.f16524d);
+                        this.f16666i.C(this.f16664d);
                     }
                     if (!s0.b().e(b())) {
                         return;
                     }
                 }
-                this.f16525e.release();
+                this.f16665e.release();
             } catch (IOException e10) {
                 Log.e("FirebaseMessaging", "Topic sync or token retrieval failed on hard failure exceptions: " + e10.getMessage() + ". Won't retry the operation.");
-                this.f16526i.y(false);
+                this.f16666i.y(false);
                 if (s0.b().e(b())) {
-                    this.f16525e.release();
+                    this.f16665e.release();
                 }
             }
         } catch (Throwable th2) {
             if (s0.b().e(b())) {
-                this.f16525e.release();
+                this.f16665e.release();
             }
             throw th2;
         }

@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun84600: for (var _fun84600_ip = 0;;) switch (_fun84600_ip) {
+        _fun84603: for (var _fun84603_ip = 0;;) switch (_fun84603_ip) {
             case 0:
                 var1 = arg0;
                 var6 = var1.animatedStyle;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'dark';
                 var3 = undefined;
                 if (!(var3 !== var1)) {
-                    _fun84600_ip = 36;
-                    continue _fun84600
+                    _fun84603_ip = 36;
+                    continue _fun84603
                 }
             case 33:
                 var9 = var1;
@@ -54,14 +54,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var9;
                 var1 = function() { // Environment: var0
-                    _fun84601: for (var _fun84601_ip = 0;;) switch (_fun84601_ip) {
+                    _fun84604: for (var _fun84604_ip = 0;;) switch (_fun84604_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = 'rgba(255, 255, 255, 0.1)';
                             var1 = 'dark';
                             if (!(var1 === var2)) {
-                                _fun84601_ip = 27;
-                                continue _fun84601
+                                _fun84604_ip = 27;
+                                continue _fun84604
                             }
                         case 21:
                             var0 = 'rgba(38, 39, 50, 0.65)';
@@ -74,14 +74,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var9;
                 var0 = function() { // Environment: var0
-                    _fun84602: for (var _fun84602_ip = 0;;) switch (_fun84602_ip) {
+                    _fun84605: for (var _fun84605_ip = 0;;) switch (_fun84605_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = 'rgba(255, 255, 255, 0.1)';
                             var1 = 'dark';
                             if (!(var1 === var2)) {
-                                _fun84602_ip = 27;
-                                continue _fun84602
+                                _fun84605_ip = 27;
+                                continue _fun84605
                             }
                         case 21:
                             var0 = 'rgba(38, 39, 50, 0.1)';

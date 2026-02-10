@@ -1,52 +1,35 @@
 package ua;
 
-import com.facebook.imagepipeline.listener.RequestListener;
-import java.util.Map;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a implements RequestListener {
-    @Override // com.facebook.imagepipeline.producers.z0
-    public void onProducerEvent(String requestId, String producerName, String eventName) {
-        Intrinsics.checkNotNullParameter(requestId, "requestId");
-        Intrinsics.checkNotNullParameter(producerName, "producerName");
-        Intrinsics.checkNotNullParameter(eventName, "eventName");
+public final class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f51394a = new a();
+
+    private a() {
     }
 
-    @Override // com.facebook.imagepipeline.producers.z0
-    public void onProducerFinishWithCancellation(String requestId, String producerName, Map map) {
-        Intrinsics.checkNotNullParameter(requestId, "requestId");
-        Intrinsics.checkNotNullParameter(producerName, "producerName");
-    }
-
-    @Override // com.facebook.imagepipeline.producers.z0
-    public void onProducerFinishWithFailure(String requestId, String producerName, Throwable t10, Map map) {
-        Intrinsics.checkNotNullParameter(requestId, "requestId");
-        Intrinsics.checkNotNullParameter(producerName, "producerName");
-        Intrinsics.checkNotNullParameter(t10, "t");
-    }
-
-    @Override // com.facebook.imagepipeline.producers.z0
-    public void onProducerFinishWithSuccess(String requestId, String producerName, Map map) {
-        Intrinsics.checkNotNullParameter(requestId, "requestId");
-        Intrinsics.checkNotNullParameter(producerName, "producerName");
-    }
-
-    @Override // com.facebook.imagepipeline.producers.z0
-    public void onProducerStart(String requestId, String producerName) {
-        Intrinsics.checkNotNullParameter(requestId, "requestId");
-        Intrinsics.checkNotNullParameter(producerName, "producerName");
-    }
-
-    @Override // com.facebook.imagepipeline.producers.z0
-    public void onUltimateProducerReached(@NotNull String requestId, @NotNull String producerName, boolean z10) {
-        Intrinsics.checkNotNullParameter(requestId, "requestId");
-        Intrinsics.checkNotNullParameter(producerName, "producerName");
-    }
-
-    @Override // com.facebook.imagepipeline.producers.z0
-    public boolean requiresExtraMap(String requestId) {
-        Intrinsics.checkNotNullParameter(requestId, "requestId");
+    public static final boolean b() {
         return false;
+    }
+
+    public static final void c(Object obj, Throwable th2) {
+        Intrinsics.checkNotNullParameter(th2, "th");
+    }
+
+    public static final Object d(String str) {
+        return null;
+    }
+
+    public static final Object e(Object obj, String str) {
+        return null;
+    }
+
+    public static final void f(Object obj) {
+    }
+
+    public static final Runnable a(Runnable runnable, String str) {
+        return runnable;
     }
 }

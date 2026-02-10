@@ -1,45 +1,52 @@
 package sc;
 
-import com.google.android.exoplayer2.ext.okhttp.OkHttpDataSource;
-import com.google.android.exoplayer2.upstream.h;
-import le.c0;
-import okhttp3.CacheControl;
-import okhttp3.Call;
+import oe.w0;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a extends h.a {
-
-    /* renamed from: b  reason: collision with root package name */
-    private final Call.Factory f49902b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final String f49903c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final c0 f49904d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final CacheControl f49905e;
-
-    public a(Call.Factory factory, String str, c0 c0Var) {
-        this(factory, str, c0Var, null);
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // com.google.android.exoplayer2.upstream.h.a
-    /* renamed from: c */
-    public OkHttpDataSource a(h.g gVar) {
-        OkHttpDataSource okHttpDataSource = new OkHttpDataSource(this.f49902b, this.f49903c, this.f49905e, gVar);
-        c0 c0Var = this.f49904d;
-        if (c0Var != null) {
-            okHttpDataSource.j(c0Var);
+abstract class a {
+    public static byte[] a(byte[] bArr) {
+        if (w0.f40711a >= 27) {
+            return bArr;
         }
-        return okHttpDataSource;
+        return w0.s0(c(w0.E(bArr)));
     }
 
-    public a(Call.Factory factory, String str, c0 c0Var, CacheControl cacheControl) {
-        this.f49902b = factory;
-        this.f49903c = str;
-        this.f49904d = c0Var;
-        this.f49905e = cacheControl;
+    public static byte[] b(byte[] bArr) {
+        if (w0.f40711a >= 27) {
+            return bArr;
+        }
+        try {
+            JSONObject jSONObject = new JSONObject(w0.E(bArr));
+            StringBuilder sb2 = new StringBuilder("{\"keys\":[");
+            JSONArray jSONArray = jSONObject.getJSONArray("keys");
+            for (int i10 = 0; i10 < jSONArray.length(); i10++) {
+                if (i10 != 0) {
+                    sb2.append(",");
+                }
+                JSONObject jSONObject2 = jSONArray.getJSONObject(i10);
+                sb2.append("{\"k\":\"");
+                sb2.append(d(jSONObject2.getString("k")));
+                sb2.append("\",\"kid\":\"");
+                sb2.append(d(jSONObject2.getString("kid")));
+                sb2.append("\",\"kty\":\"");
+                sb2.append(jSONObject2.getString("kty"));
+                sb2.append("\"}");
+            }
+            sb2.append("]}");
+            return w0.s0(sb2.toString());
+        } catch (JSONException e10) {
+            oe.y.d("ClearKeyUtil", "Failed to adjust response data: " + w0.E(bArr), e10);
+            return bArr;
+        }
+    }
+
+    private static String c(String str) {
+        return str.replace('+', '-').replace('/', '_');
+    }
+
+    private static String d(String str) {
+        return str.replace('-', '+').replace('_', '/');
     }
 }

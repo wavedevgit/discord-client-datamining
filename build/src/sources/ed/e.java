@@ -1,59 +1,106 @@
 package ed;
 
-import ne.w0;
-import tc.a0;
-import tc.z;
+import ed.i0;
+import uc.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class e implements z {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final c f21442a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f21443b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final long f21444c;
+public final class e implements uc.k {
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f21445d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final long f21446e;
-
-    public e(c cVar, int i10, long j10, long j11) {
-        this.f21442a = cVar;
-        this.f21443b = i10;
-        this.f21444c = j10;
-        long j12 = (j11 - j10) / cVar.f21437e;
-        this.f21445d = j12;
-        this.f21446e = a(j12);
-    }
-
-    private long a(long j10) {
-        return w0.X0(j10 * this.f21443b, 1000000L, this.f21442a.f21435c);
-    }
-
-    @Override // tc.z
-    public z.a e(long j10) {
-        long r10 = w0.r((this.f21442a.f21435c * j10) / (this.f21443b * 1000000), 0L, this.f21445d - 1);
-        long j11 = this.f21444c + (this.f21442a.f21437e * r10);
-        long a10 = a(r10);
-        a0 a0Var = new a0(a10, j11);
-        if (a10 < j10 && r10 != this.f21445d - 1) {
-            long j12 = r10 + 1;
-            return new z.a(a0Var, new a0(a(j12), this.f21444c + (this.f21442a.f21437e * j12)));
+    public static final uc.p f21280d = new uc.p() { // from class: ed.d
+        @Override // uc.p
+        public final uc.k[] b() {
+            return e.b();
         }
-        return new z.a(a0Var);
+    };
+
+    /* renamed from: a  reason: collision with root package name */
+    private final f f21281a = new f();
+
+    /* renamed from: b  reason: collision with root package name */
+    private final oe.h0 f21282b = new oe.h0(16384);
+
+    /* renamed from: c  reason: collision with root package name */
+    private boolean f21283c;
+
+    public static /* synthetic */ uc.k[] b() {
+        return new uc.k[]{new e()};
     }
 
-    @Override // tc.z
-    public boolean h() {
-        return true;
+    @Override // uc.k
+    public void a(long j10, long j11) {
+        this.f21283c = false;
+        this.f21281a.b();
     }
 
-    @Override // tc.z
-    public long i() {
-        return this.f21446e;
+    @Override // uc.k
+    public void c(uc.m mVar) {
+        this.f21281a.c(mVar, new i0.d(0, 1));
+        mVar.q();
+        mVar.j(new z.b(-9223372036854775807L));
+    }
+
+    @Override // uc.k
+    public boolean d(uc.l lVar) {
+        oe.h0 h0Var = new oe.h0(10);
+        int i10 = 0;
+        while (true) {
+            lVar.n(h0Var.e(), 0, 10);
+            h0Var.U(0);
+            if (h0Var.K() != 4801587) {
+                break;
+            }
+            h0Var.V(3);
+            int G = h0Var.G();
+            i10 += G + 10;
+            lVar.h(G);
+        }
+        lVar.e();
+        lVar.h(i10);
+        int i11 = 0;
+        int i12 = i10;
+        while (true) {
+            lVar.n(h0Var.e(), 0, 7);
+            h0Var.U(0);
+            int N = h0Var.N();
+            if (N != 44096 && N != 44097) {
+                lVar.e();
+                i12++;
+                if (i12 - i10 >= 8192) {
+                    return false;
+                }
+                lVar.h(i12);
+                i11 = 0;
+            } else {
+                i11++;
+                if (i11 >= 4) {
+                    return true;
+                }
+                int e10 = oc.c.e(h0Var.e(), N);
+                if (e10 == -1) {
+                    return false;
+                }
+                lVar.h(e10 - 7);
+            }
+        }
+    }
+
+    @Override // uc.k
+    public int h(uc.l lVar, uc.y yVar) {
+        int read = lVar.read(this.f21282b.e(), 0, 16384);
+        if (read == -1) {
+            return -1;
+        }
+        this.f21282b.U(0);
+        this.f21282b.T(read);
+        if (!this.f21283c) {
+            this.f21281a.e(0L, 4);
+            this.f21283c = true;
+        }
+        this.f21281a.a(this.f21282b);
+        return 0;
+    }
+
+    @Override // uc.k
+    public void release() {
     }
 }

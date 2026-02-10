@@ -8,25 +8,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class OneTimeLinkCodeResponse {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Metadata f19824a;
+    private final Metadata f19964a;
 
     public OneTimeLinkCodeResponse(Metadata metadata) {
-        this.f19824a = metadata;
+        this.f19964a = metadata;
     }
 
     public final Metadata a() {
-        return this.f19824a;
+        return this.f19964a;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof OneTimeLinkCodeResponse) && Intrinsics.areEqual(this.f19824a, ((OneTimeLinkCodeResponse) obj).f19824a);
+        return (obj instanceof OneTimeLinkCodeResponse) && Intrinsics.areEqual(this.f19964a, ((OneTimeLinkCodeResponse) obj).f19964a);
     }
 
     public int hashCode() {
-        Metadata metadata = this.f19824a;
+        Metadata metadata = this.f19964a;
         if (metadata == null) {
             return 0;
         }
@@ -34,7 +34,7 @@ public final class OneTimeLinkCodeResponse {
     }
 
     public String toString() {
-        Metadata metadata = this.f19824a;
+        Metadata metadata = this.f19964a;
         return "OneTimeLinkCodeResponse(meta=" + metadata + ")";
     }
 }

@@ -16,13 +16,13 @@ public interface n extends AutoCloseable {
         int g();
     }
 
-    void C0(Rect rect);
+    void A0(Rect rect);
 
     p0 E();
 
     Image F();
 
-    a[] c1();
+    a[] Z0();
 
     @Override // java.lang.AutoCloseable
     void close();

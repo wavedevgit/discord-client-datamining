@@ -1,18 +1,28 @@
 package il;
 
-import java.util.Calendar;
+import android.view.View;
+import android.widget.LinearLayout;
+import com.henninghall.date_picker.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b implements h {
+class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private Calendar f26836a;
+    private final LinearLayout f26995a;
 
-    public b(Calendar calendar) {
-        this.f26836a = calendar;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b(View view) {
+        LinearLayout linearLayout = (LinearLayout) view.findViewById(k.f16808h);
+        this.f26995a = linearLayout;
+        linearLayout.setWillNotDraw(false);
     }
 
-    @Override // il.h
-    public void a(jl.g gVar) {
-        gVar.a(this.f26836a);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void a(View view) {
+        this.f26995a.addView(view);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void b() {
+        this.f26995a.removeAllViews();
     }
 }

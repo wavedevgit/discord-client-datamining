@@ -9,18 +9,18 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaClassObjectAnnotationArgument extends ReflectJavaAnnotationArgument implements JavaClassObjectAnnotationArgument {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Class f32695b;
+    private final Class f32404b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ReflectJavaClassObjectAnnotationArgument(Name name, @NotNull Class<?> klass) {
         super(name, null);
         Intrinsics.checkNotNullParameter(klass, "klass");
-        this.f32695b = klass;
+        this.f32404b = klass;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClassObjectAnnotationArgument
     @NotNull
     public JavaType getReferencedType() {
-        return ReflectJavaType.Factory.create(this.f32695b);
+        return ReflectJavaType.Factory.create(this.f32404b);
     }
 }

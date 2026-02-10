@@ -9,15 +9,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/premium/native/images/perks',
-        'width': 300.5,
-        'height': 175,
+        'httpServerLocation': '/assets/modules/premium/tiered_tenure_badging/native/images',
+        'width': 57,
+        'height': 56.666666666666664,
         'scales': null,
-        'hash': 'c407143bbf75b6a7311c87db68c9cbca',
-        'name': 'custom_profile',
+        'hash': '1df6ee7cceb670ae2dfd3feed8d2acfc',
+        'name': 'asset_bronze_badge_small',
         'type': 'png'
     };
-    var4 = [2, 3];
+    var4 = [3];
     var1.scales = var4;
     var2 = var2.bind(var3)(var1);
     var1 = module;

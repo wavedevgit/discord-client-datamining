@@ -1,58 +1,32 @@
 package mg;
 
-import java.util.Objects;
-/* JADX INFO: Access modifiers changed from: package-private */
+import android.content.Context;
+import com.google.android.gms.tasks.Task;
+import ff.a;
+import ff.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class l extends f {
-
-    /* renamed from: q  reason: collision with root package name */
-    static final f f37176q = new l(new Object[0], 0);
-
-    /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f37177o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private final transient int f37178p;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public l(Object[] objArr, int i10) {
-        this.f37177o = objArr;
-        this.f37178p = i10;
+public final class l extends ff.d implements vg.i {
+    public l(Context context) {
+        super(context, g.f37083l, a.d.f22598c, d.a.f22610c);
     }
 
-    @Override // mg.f, mg.c
-    final int b(Object[] objArr, int i10) {
-        System.arraycopy(this.f37177o, 0, objArr, 0, this.f37178p);
-        return this.f37178p;
-    }
-
-    @Override // mg.c
-    final int c() {
-        return this.f37178p;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // mg.c
-    public final int d() {
-        return 0;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // mg.c
-    public final Object[] e() {
-        return this.f37177o;
-    }
-
-    @Override // java.util.List
-    public final Object get(int i10) {
-        t0.a(i10, this.f37178p, "index");
-        Object obj = this.f37177o[i10];
-        Objects.requireNonNull(obj);
-        return obj;
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
-    public final int size() {
-        return this.f37178p;
+    @Override // vg.i
+    public final Task l(final vg.d dVar) {
+        return p(gf.q.a().b(new gf.m() { // from class: mg.m
+            @Override // gf.m
+            public final /* synthetic */ void accept(Object obj, Object obj2) {
+                boolean z10;
+                zg.k kVar = (zg.k) obj2;
+                o oVar = (o) obj;
+                vg.d dVar2 = vg.d.this;
+                if (dVar2 != null) {
+                    z10 = true;
+                } else {
+                    z10 = false;
+                }
+                hf.q.b(z10, "locationSettingsRequest can't be null");
+                ((f0) oVar.C()).L0(dVar2, new n(kVar), null);
+            }
+        }).e(2426).a());
     }
 }

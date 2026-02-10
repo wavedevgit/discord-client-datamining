@@ -1,45 +1,15 @@
 package ml;
 
-import android.media.MediaFormat;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a {
+public interface a {
+    void onCancelled(String str, List list);
 
-    /* renamed from: a  reason: collision with root package name */
-    private MediaFormat f37261a;
+    void onCompleted(String str, List list);
 
-    /* renamed from: b  reason: collision with root package name */
-    private MediaFormat f37262b;
+    void onError(String str, Throwable th2, List list);
 
-    /* renamed from: c  reason: collision with root package name */
-    private String f37263c;
+    void onProgress(String str, float f10);
 
-    /* renamed from: d  reason: collision with root package name */
-    private String f37264d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private long f37265e = -1;
-
-    public long a() {
-        return this.f37265e;
-    }
-
-    public void b(String str) {
-        this.f37263c = str;
-    }
-
-    public void c(long j10) {
-        this.f37265e = j10;
-    }
-
-    public void d(String str) {
-        this.f37264d = str;
-    }
-
-    public void e(MediaFormat mediaFormat) {
-        this.f37261a = mediaFormat;
-    }
-
-    public void f(MediaFormat mediaFormat) {
-        this.f37262b = mediaFormat;
-    }
+    void onStarted(String str);
 }

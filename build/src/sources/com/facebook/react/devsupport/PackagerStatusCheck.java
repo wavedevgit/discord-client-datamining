@@ -57,35 +57,35 @@ public final class PackagerStatusCheck {
     public final void run(@NotNull String host, @NotNull final PackagerStatusCallback callback) {
         Intrinsics.checkNotNullParameter(host, "host");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        this.client.a(new Request.Builder().l(Companion.createPackagerStatusURL(host)).b()).J0(new bu.b() { // from class: com.facebook.react.devsupport.PackagerStatusCheck$run$1
-            @Override // bu.b
+        this.client.a(new Request.Builder().l(Companion.createPackagerStatusURL(host)).b()).J0(new cu.b() { // from class: com.facebook.react.devsupport.PackagerStatusCheck$run$1
+            @Override // cu.b
             public void onFailure(Call call, IOException e10) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(e10, "e");
                 String message = e10.getMessage();
-                p8.a.J(ReactConstants.TAG, "The packager does not seem to be running as we got an IOException requesting its status: " + message);
+                q8.a.J(ReactConstants.TAG, "The packager does not seem to be running as we got an IOException requesting its status: " + message);
                 PackagerStatusCallback.this.onPackagerStatusFetched(false);
             }
 
-            @Override // bu.b
+            @Override // cu.b
             public void onResponse(Call call, Response response) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(response, "response");
                 if (!response.isSuccessful()) {
                     int g10 = response.g();
-                    p8.a.m(ReactConstants.TAG, "Got non-success http code from packager when requesting status: " + g10);
+                    q8.a.m(ReactConstants.TAG, "Got non-success http code from packager when requesting status: " + g10);
                     PackagerStatusCallback.this.onPackagerStatusFetched(false);
                     return;
                 }
                 ResponseBody a10 = response.a();
                 if (a10 == null) {
-                    p8.a.m(ReactConstants.TAG, "Got null body response from packager when requesting status");
+                    q8.a.m(ReactConstants.TAG, "Got null body response from packager when requesting status");
                     PackagerStatusCallback.this.onPackagerStatusFetched(false);
                     return;
                 }
                 String string = a10.string();
                 if (!Intrinsics.areEqual("packager-status:running", string)) {
-                    p8.a.m(ReactConstants.TAG, "Got unexpected response from packager when requesting status: " + string);
+                    q8.a.m(ReactConstants.TAG, "Got unexpected response from packager when requesting status: " + string);
                     PackagerStatusCallback.this.onPackagerStatusFetched(false);
                     return;
                 }

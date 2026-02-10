@@ -6,24 +6,24 @@ import android.os.Parcelable;
 import com.google.firebase.messaging.e;
 import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class RemoteMessage extends hf.a {
+public final class RemoteMessage extends jf.a {
     public static final Parcelable.Creator<RemoteMessage> CREATOR = new o0();
 
     /* renamed from: d  reason: collision with root package name */
-    Bundle f16385d;
+    Bundle f16525d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f16386e;
+    private Map f16526e;
 
     public RemoteMessage(Bundle bundle) {
-        this.f16385d = bundle;
+        this.f16525d = bundle;
     }
 
     public Map b() {
-        if (this.f16386e == null) {
-            this.f16386e = e.a.a(this.f16385d);
+        if (this.f16526e == null) {
+            this.f16526e = e.a.a(this.f16525d);
         }
-        return this.f16386e;
+        return this.f16526e;
     }
 
     @Override // android.os.Parcelable

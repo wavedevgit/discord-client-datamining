@@ -156,21 +156,21 @@ public abstract class SwipeRefreshLayout extends ViewGroup implements u, t, s {
     public class d extends Animation {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f5569d;
+        final /* synthetic */ int f5266d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f5570e;
+        final /* synthetic */ int f5267e;
 
         d(int i10, int i11) {
-            this.f5569d = i10;
-            this.f5570e = i11;
+            this.f5266d = i10;
+            this.f5267e = i11;
         }
 
         @Override // android.view.animation.Animation
         public void applyTransformation(float f10, Transformation transformation) {
             CircularProgressDrawable circularProgressDrawable = SwipeRefreshLayout.this.mProgress;
-            int i10 = this.f5569d;
-            circularProgressDrawable.setAlpha((int) (i10 + ((this.f5570e - i10) * f10)));
+            int i10 = this.f5266d;
+            circularProgressDrawable.setAlpha((int) (i10 + ((this.f5267e - i10) * f10)));
         }
     }
 
@@ -672,7 +672,7 @@ public abstract class SwipeRefreshLayout extends ViewGroup implements u, t, s {
     protected void onRestoreInstanceState(Parcelable parcelable) {
         i iVar = (i) parcelable;
         super.onRestoreInstanceState(iVar.getSuperState());
-        setRefreshing(iVar.f5576d);
+        setRefreshing(iVar.f5273d);
     }
 
     @Override // android.view.View
@@ -922,7 +922,7 @@ public abstract class SwipeRefreshLayout extends ViewGroup implements u, t, s {
         public static final Parcelable.Creator<i> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        final boolean f5576d;
+        final boolean f5273d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.Creator {
@@ -944,18 +944,18 @@ public abstract class SwipeRefreshLayout extends ViewGroup implements u, t, s {
 
         i(Parcelable parcelable, boolean z10) {
             super(parcelable);
-            this.f5576d = z10;
+            this.f5273d = z10;
         }
 
         @Override // android.view.View.BaseSavedState, android.view.AbsSavedState, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeByte(this.f5576d ? (byte) 1 : (byte) 0);
+            parcel.writeByte(this.f5273d ? (byte) 1 : (byte) 0);
         }
 
         i(Parcel parcel) {
             super(parcel);
-            this.f5576d = parcel.readByte() != 0;
+            this.f5273d = parcel.readByte() != 0;
         }
     }
 

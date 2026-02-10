@@ -28,7 +28,7 @@ public final class CollectWithLeadingDebounceKt {
             r0.<init>(r14)
         L18:
             java.lang.Object r14 = r0.result
-            java.lang.Object r1 = wr.b.f()
+            java.lang.Object r1 = xr.b.f()
             int r2 = r0.label
             r3 = 1
             if (r2 == 0) goto L31
@@ -54,7 +54,7 @@ public final class CollectWithLeadingDebounceKt {
             if (r10 != r1) goto L4a
             return r1
         L4a:
-            qr.h r10 = new qr.h
+            rr.h r10 = new rr.h
             r10.<init>()
             throw r10
         */

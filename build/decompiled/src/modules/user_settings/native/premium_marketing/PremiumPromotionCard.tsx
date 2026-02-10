@@ -121,25 +121,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.radii;
     var11 = var11.none;
     var8.borderBottomRightRadius = var11;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.radii;
-    var11 = var11.none;
-    var8.borderBottomLeftRadius = var11;
-    var11 = '110%';
-    var8.width = var11;
-    var11 = 95;
-    var8.height = var11;
-    var3.image = var8;
-    var8 = {};
     var9 = var5[var9];
     var9 = var10.bind(var0)(var9);
-    var9 = var9.spacing;
-    var9 = var9.PX_8;
-    var8.marginVertical = var9;
-    var9 = 'uppercase';
-    var8.textTransform = var9;
-    var3.countdown = var8;
+    var9 = var9.radii;
+    var9 = var9.none;
+    var8.borderBottomLeftRadius = var9;
+    var9 = '110%';
+    var8.width = var9;
+    var9 = 95;
+    var8.height = var9;
+    var3.image = var8;
     var8 = {
         'bottom': 4294967295,
         'width': 22,
@@ -369,4 +360,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 660, 1623, 33, 1297, 671, 566, 5777, 7122, 4704, 3942, 1234, 1686, 4084, 5800, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 660, 1623, 33, 1297, 671, 566, 5778, 7123, 4704, 3942, 1234, 1686, 4084, 5801, 2]);

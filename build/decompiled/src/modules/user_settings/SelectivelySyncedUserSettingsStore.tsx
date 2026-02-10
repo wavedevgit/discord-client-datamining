@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6[var1];
                 var3 = false;
                 if (!(var3 === var1)) {
-                    _fun15505_ip = 216;
+                    _fun15505_ip = 214;
                     continue _fun15505
                 }
             case 156:
@@ -311,15 +311,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.bind(var9)(var5, var7);
                 var1.settings = var7;
                 var0.text = var1;
-            case 216:
+            case 214:
                 var1 = _closure1_slot8;
                 var1 = var1.APPEARANCE;
                 var1 = var6[var1];
                 if (!(var3 === var1)) {
-                    _fun15505_ip = 294;
+                    _fun15505_ip = 292;
                     continue _fun15505
                 }
-            case 234:
+            case 232:
                 var1 = {};
                 var1.shouldSync = var3;
                 var3 = _closure1_slot1;
@@ -332,7 +332,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var5, var2);
                 var1.settings = var2;
                 var0.appearance = var1;
-            case 294:
+            case 292:
                 return var0;
         }
     };

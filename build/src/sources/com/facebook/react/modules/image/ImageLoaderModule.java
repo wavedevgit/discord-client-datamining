@@ -23,16 +23,16 @@ import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.fresco.ReactNetworkImageRequest;
 import com.facebook.react.views.image.ReactCallerContextFactory;
 import com.facebook.react.views.imagehelper.ImageSource;
-import e9.d;
+import f9.d;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import m8.a;
+import n8.a;
 import org.jetbrains.annotations.NotNull;
-import sa.e;
-import y8.b;
+import ta.e;
+import z8.b;
 @ReactModule(name = "ImageLoader")
 @Metadata(d1 = {"\u0000n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0007\b\u0001\u0018\u0000 42\u00020\u00012\u00020\u0002:\u00014B\u0011\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0004\b\u0005\u0010\u0006B\u001b\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\u0004\b\u0005\u0010\tB!\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\f\u001a\u00020\r¢\u0006\u0004\b\u0005\u0010\u000eJ\u001a\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001f2\u0006\u0010 \u001a\u00020!H\u0017J$\u0010\"\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001f2\b\u0010#\u001a\u0004\u0018\u00010$2\u0006\u0010 \u001a\u00020!H\u0017J\"\u0010%\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001f2\u0006\u0010&\u001a\u00020'2\u0006\u0010 \u001a\u00020!H\u0016J\u0010\u0010(\u001a\u00020\u001d2\u0006\u0010)\u001a\u00020'H\u0016J\u0018\u0010*\u001a\u00020\u001d2\u0006\u0010+\u001a\u00020,2\u0006\u0010 \u001a\u00020!H\u0017J \u0010-\u001a\u00020\u001d2\u0006\u0010)\u001a\u00020.2\u000e\u0010/\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00140\u0013H\u0002J\u001a\u00100\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0014\u0018\u00010\u00132\u0006\u0010)\u001a\u00020.H\u0002J\b\u00101\u001a\u00020\u001dH\u0016J\b\u00102\u001a\u00020\u001dH\u0016J\b\u00103\u001a\u00020\u001dH\u0016R\u0010\u0010\u000f\u001a\u0004\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010\u0011\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00140\u00130\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010\u0007\u001a\u0004\u0018\u00010\b8BX\u0082\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R$\u0010\n\u001a\u00020\u000b2\u0006\u0010\u0017\u001a\u00020\u000b8B@BX\u0082\u000e¢\u0006\f\u001a\u0004\b\u0018\u0010\u0019\"\u0004\b\u001a\u0010\u001b¨\u00065"}, d2 = {"Lcom/facebook/react/modules/image/ImageLoaderModule;", "Lcom/facebook/fbreact/specs/NativeImageLoaderAndroidSpec;", "Lcom/facebook/react/bridge/LifecycleEventListener;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "callerContext", "", "(Lcom/facebook/react/bridge/ReactApplicationContext;Ljava/lang/Object;)V", "imagePipeline", "Lcom/facebook/imagepipeline/core/ImagePipeline;", "callerContextFactory", "Lcom/facebook/react/views/image/ReactCallerContextFactory;", "(Lcom/facebook/react/bridge/ReactApplicationContext;Lcom/facebook/imagepipeline/core/ImagePipeline;Lcom/facebook/react/views/image/ReactCallerContextFactory;)V", "_imagePipeline", "enqueuedRequestMonitor", "enqueuedRequests", "Landroid/util/SparseArray;", "Lcom/facebook/datasource/DataSource;", "Ljava/lang/Void;", "getCallerContext", "()Ljava/lang/Object;", "value", "getImagePipeline", "()Lcom/facebook/imagepipeline/core/ImagePipeline;", "setImagePipeline", "(Lcom/facebook/imagepipeline/core/ImagePipeline;)V", "getSize", "", "uriString", "", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "getSizeWithHeaders", "headers", "Lcom/facebook/react/bridge/ReadableMap;", "prefetchImage", "requestIdAsDouble", "", "abortRequest", "requestId", "queryCache", "uris", "Lcom/facebook/react/bridge/ReadableArray;", "registerRequest", "", "request", "removeRequest", "onHostResume", "onHostPause", "onHostDestroy", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nImageLoaderModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ImageLoaderModule.kt\ncom/facebook/react/modules/image/ImageLoaderModule\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,289:1\n1#2:290\n*E\n"})
@@ -99,7 +99,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
     private final void registerRequest(int i10, DataSource dataSource) {
         synchronized (this.enqueuedRequestMonitor) {
             this.enqueuedRequests.put(i10, dataSource);
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
         }
     }
 
@@ -135,13 +135,13 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
             ImageRequest a10 = ImageRequestBuilder.x(new ImageSource(reactApplicationContext, str, 0.0d, 0.0d, null, false, 60, null).getUri()).a();
             Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
             getImagePipeline().k(a10, getCallerContext()).c(new b() { // from class: com.facebook.react.modules.image.ImageLoaderModule$getSize$dataSubscriber$1
-                @Override // y8.b
+                @Override // z8.b
                 protected void onFailureImpl(DataSource dataSource) {
                     Intrinsics.checkNotNullParameter(dataSource, "dataSource");
                     Promise.this.reject("E_GET_SIZE_FAILURE", dataSource.b());
                 }
 
-                @Override // y8.b
+                @Override // z8.b
                 protected void onNewResultImpl(DataSource dataSource) {
                     Intrinsics.checkNotNullParameter(dataSource, "dataSource");
                     if (!dataSource.isFinished()) {
@@ -185,13 +185,13 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
             ImageRequestBuilder x10 = ImageRequestBuilder.x(new ImageSource(reactApplicationContext, str, 0.0d, 0.0d, null, false, 60, null).getUri());
             Intrinsics.checkNotNullExpressionValue(x10, "newBuilderWithSource(...)");
             getImagePipeline().k(ReactNetworkImageRequest.Companion.fromBuilderWithHeaders$default(ReactNetworkImageRequest.Companion, x10, readableMap, null, 4, null), getCallerContext()).c(new b() { // from class: com.facebook.react.modules.image.ImageLoaderModule$getSizeWithHeaders$dataSubscriber$1
-                @Override // y8.b
+                @Override // z8.b
                 protected void onFailureImpl(DataSource dataSource) {
                     Intrinsics.checkNotNullParameter(dataSource, "dataSource");
                     Promise.this.reject("E_GET_SIZE_FAILURE", dataSource.b());
                 }
 
-                @Override // y8.b
+                @Override // z8.b
                 protected void onNewResultImpl(DataSource dataSource) {
                     Intrinsics.checkNotNullParameter(dataSource, "dataSource");
                     if (!dataSource.isFinished()) {
@@ -236,7 +236,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                     valueAt.close();
                 }
                 this.enqueuedRequests.clear();
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -260,7 +260,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
             Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
             DataSource B = getImagePipeline().B(a10, getCallerContext());
             b bVar = new b() { // from class: com.facebook.react.modules.image.ImageLoaderModule$prefetchImage$prefetchSubscriber$1
-                @Override // y8.b
+                @Override // z8.b
                 protected void onFailureImpl(DataSource dataSource) {
                     Intrinsics.checkNotNullParameter(dataSource, "dataSource");
                     try {
@@ -271,7 +271,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                     }
                 }
 
-                @Override // y8.b
+                @Override // z8.b
                 protected void onNewResultImpl(DataSource dataSource) {
                     Intrinsics.checkNotNullParameter(dataSource, "dataSource");
                     if (dataSource.isFinished()) {

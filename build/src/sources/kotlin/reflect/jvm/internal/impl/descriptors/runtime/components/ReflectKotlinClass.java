@@ -15,10 +15,10 @@ public final class ReflectKotlinClass implements KotlinJvmBinaryClass {
     public static final Factory Factory = new Factory(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f32653a;
+    private final Class f32362a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KotlinClassHeader f32654b;
+    private final KotlinClassHeader f32363b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Factory {
@@ -29,7 +29,7 @@ public final class ReflectKotlinClass implements KotlinJvmBinaryClass {
         public final ReflectKotlinClass create(@NotNull Class<?> klass) {
             Intrinsics.checkNotNullParameter(klass, "klass");
             ReadKotlinClassHeaderAnnotationVisitor readKotlinClassHeaderAnnotationVisitor = new ReadKotlinClassHeaderAnnotationVisitor();
-            a.f32661a.b(klass, readKotlinClassHeaderAnnotationVisitor);
+            a.f32370a.b(klass, readKotlinClassHeaderAnnotationVisitor);
             KotlinClassHeader createHeaderWithDefaultMetadataVersion = readKotlinClassHeaderAnnotationVisitor.createHeaderWithDefaultMetadataVersion();
             if (createHeaderWithDefaultMetadataVersion == null) {
                 return null;
@@ -46,7 +46,7 @@ public final class ReflectKotlinClass implements KotlinJvmBinaryClass {
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof ReflectKotlinClass) && Intrinsics.areEqual(this.f32653a, ((ReflectKotlinClass) obj).f32653a)) {
+        if ((obj instanceof ReflectKotlinClass) && Intrinsics.areEqual(this.f32362a, ((ReflectKotlinClass) obj).f32362a)) {
             return true;
         }
         return false;
@@ -55,25 +55,25 @@ public final class ReflectKotlinClass implements KotlinJvmBinaryClass {
     @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass
     @NotNull
     public KotlinClassHeader getClassHeader() {
-        return this.f32654b;
+        return this.f32363b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass
     @NotNull
     public ClassId getClassId() {
-        return ReflectClassUtilKt.getClassId(this.f32653a);
+        return ReflectClassUtilKt.getClassId(this.f32362a);
     }
 
     @NotNull
     public final Class<?> getKlass() {
-        return this.f32653a;
+        return this.f32362a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass
     @NotNull
     public String getLocation() {
         StringBuilder sb2 = new StringBuilder();
-        String name = this.f32653a.getName();
+        String name = this.f32362a.getName();
         Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
         sb2.append(StringsKt.I(name, '.', '/', false, 4, null));
         sb2.append(".class");
@@ -81,28 +81,28 @@ public final class ReflectKotlinClass implements KotlinJvmBinaryClass {
     }
 
     public int hashCode() {
-        return this.f32653a.hashCode();
+        return this.f32362a.hashCode();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass
     public void loadClassAnnotations(@NotNull KotlinJvmBinaryClass.AnnotationVisitor visitor, byte[] bArr) {
         Intrinsics.checkNotNullParameter(visitor, "visitor");
-        a.f32661a.b(this.f32653a, visitor);
+        a.f32370a.b(this.f32362a, visitor);
     }
 
     @NotNull
     public String toString() {
-        return ReflectKotlinClass.class.getName() + ": " + this.f32653a;
+        return ReflectKotlinClass.class.getName() + ": " + this.f32362a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass
     public void visitMembers(@NotNull KotlinJvmBinaryClass.MemberVisitor visitor, byte[] bArr) {
         Intrinsics.checkNotNullParameter(visitor, "visitor");
-        a.f32661a.i(this.f32653a, visitor);
+        a.f32370a.i(this.f32362a, visitor);
     }
 
     private ReflectKotlinClass(Class cls, KotlinClassHeader kotlinClassHeader) {
-        this.f32653a = cls;
-        this.f32654b = kotlinClassHeader;
+        this.f32362a = cls;
+        this.f32363b = kotlinClassHeader;
     }
 }

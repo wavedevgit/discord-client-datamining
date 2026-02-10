@@ -1,26 +1,23 @@
 package gf;
 
-import android.content.Intent;
+import android.os.Handler;
+import hf.c;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class d0 extends e0 {
+public final class d0 implements c.e {
 
-    /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ Intent f25091d;
-
-    /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ ff.h f25092e;
+    /* renamed from: a  reason: collision with root package name */
+    final /* synthetic */ e0 f24280a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public d0(Intent intent, ff.h hVar, int i10) {
-        this.f25091d = intent;
-        this.f25092e = hVar;
+    public d0(e0 e0Var) {
+        this.f24280a = e0Var;
     }
 
-    @Override // gf.e0
+    @Override // hf.c.e
     public final void a() {
-        Intent intent = this.f25091d;
-        if (intent != null) {
-            this.f25092e.startActivityForResult(intent, 2);
-        }
+        Handler handler;
+        handler = this.f24280a.f24310o.f24296y;
+        handler.post(new c0(this));
     }
 }

@@ -1,43 +1,43 @@
 package com.google.android.gms.auth.api.signin;
 
+import af.o;
 import android.content.Context;
 import com.google.android.gms.common.k;
 import com.google.android.gms.dynamite.DynamiteModule;
 import com.google.android.gms.tasks.Task;
-import ef.d;
-import gf.p;
-import ze.o;
+import ff.d;
+import hf.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class b extends ef.d {
+public class b extends ff.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final f f13692k = new f(null);
+    private static final f f13832k = new f(null);
 
     /* renamed from: l  reason: collision with root package name */
-    static int f13693l = 1;
+    static int f13833l = 1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context, GoogleSignInOptions googleSignInOptions) {
-        super(context, ue.a.f51458b, googleSignInOptions, new d.a.C0288a().c(new ff.a()).a());
+        super(context, ve.a.f52318b, googleSignInOptions, new d.a.C0333a().c(new gf.a()).a());
     }
 
     private final synchronized int E() {
         int i10;
         try {
-            i10 = f13693l;
+            i10 = f13833l;
             if (i10 == 1) {
                 Context u10 = u();
                 com.google.android.gms.common.f n10 = com.google.android.gms.common.f.n();
-                int h10 = n10.h(u10, k.f13780a);
+                int h10 = n10.h(u10, k.f13920a);
                 if (h10 == 0) {
                     i10 = 4;
-                    f13693l = 4;
+                    f13833l = 4;
                 } else if (n10.b(u10, h10, null) == null && DynamiteModule.a(u10, "com.google.android.gms.auth.api.fallback") != 0) {
                     i10 = 3;
-                    f13693l = 3;
+                    f13833l = 3;
                 } else {
                     i10 = 2;
-                    f13693l = 2;
+                    f13833l = 2;
                 }
             }
         } catch (Throwable th2) {
@@ -48,7 +48,7 @@ public class b extends ef.d {
 
     public Task C() {
         boolean z10;
-        ef.e m10 = m();
+        ff.e m10 = m();
         Context u10 = u();
         if (E() == 3) {
             z10 = true;
@@ -60,7 +60,7 @@ public class b extends ef.d {
 
     public Task D() {
         boolean z10;
-        ef.e m10 = m();
+        ff.e m10 = m();
         Context u10 = u();
         if (E() == 3) {
             z10 = true;

@@ -16,13 +16,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot2 = var4;
     var3 = function() {
-        _fun33213: for (var _fun33213_ip = 0;;) switch (_fun33213_ip) {
+        _fun33205: for (var _fun33205_ip = 0;;) switch (_fun33205_ip) {
             case 0:
                 var0 = _closure1_slot0;
                 var0 = var0.nativeCallSyncHook;
                 if (!var0) {
-                    _fun33213_ip = 29;
-                    continue _fun33213
+                    _fun33205_ip = 29;
+                    continue _fun33205
                 }
             case 16:
                 var2 = _closure1_slot0;
@@ -30,8 +30,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = !var2;
             case 29:
                 if (var0) {
-                    _fun33213_ip = 42;
-                    continue _fun33213
+                    _fun33205_ip = 42;
+                    continue _fun33205
                 }
             case 32:
                 var1 = _closure1_slot0;
@@ -83,22 +83,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.isMacOS = var3;
     var3 = function() {
-        _fun33218: for (var _fun33218_ip = 0;;) switch (_fun33218_ip) {
+        _fun33210: for (var _fun33210_ip = 0;;) switch (_fun33210_ip) {
             case 0:
                 var0 = _closure1_slot2;
                 var2 = undefined;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun33218_ip = 24;
-                    continue _fun33218
+                    _fun33210_ip = 24;
+                    continue _fun33210
                 }
             case 16:
                 var1 = _closure1_slot3;
                 var0 = var1.bind(var2)();
             case 24:
                 if (var0) {
-                    _fun33218_ip = 29;
-                    continue _fun33218
+                    _fun33210_ip = 29;
+                    continue _fun33210
                 }
             case 27:
                 var0 = false;

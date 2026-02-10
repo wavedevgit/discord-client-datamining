@@ -107,8 +107,8 @@ public final class ClickableStack_ClickableStackComponentStyleJsonAdapter extend
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.E0();
-                    reader.S();
+                    reader.C0();
+                    reader.T();
                     break;
                 case 0:
                     clickableStackBackgroundColorStyle = (AttributeStyles.ClickableStackBackgroundColorStyle) this.nullableClickableStackBackgroundColorStyleAdapter.fromJson(reader);

@@ -28,14 +28,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var _closure1_slot3 = var3;
     var1 = function arg0() {
-        _fun45467: for (var _fun45467_ip = 0;;) switch (_fun45467_ip) {
+        _fun45460: for (var _fun45460_ip = 0;;) switch (_fun45460_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.gestureEventsHandlersHook;
                 var3 = undefined;
                 if (!(var3 === var9)) {
-                    _fun45467_ip = 46;
-                    continue _fun45467
+                    _fun45460_ip = 46;
+                    continue _fun45460
                 }
             case 17:
                 var4 = _closure1_slot0;

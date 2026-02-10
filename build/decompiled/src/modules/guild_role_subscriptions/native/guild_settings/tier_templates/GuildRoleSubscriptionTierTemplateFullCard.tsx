@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var12 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var12;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = function() {
         var0 = _closure1_slot7;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var0 = function arg0() {
-        _fun117725: for (var _fun117725_ip = 0;;) switch (_fun117725_ip) {
+        _fun117684: for (var _fun117684_ip = 0;;) switch (_fun117684_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.title;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = null;
                 var11 = var9 != var13;
                 if (!var11) {
-                    _fun117725_ip = 204;
-                    continue _fun117725
+                    _fun117684_ip = 204;
+                    continue _fun117684
                 }
             case 139:
                 var12 = _closure1_slot4;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.View;
     var _closure1_slot3 = var3;
-    var10 = 2;
-    var3 = var5[var10];
+    var9 = 2;
+    var3 = var5[var9];
     var3 = var4.bind(var0)(var3);
     var6 = var3.jsx;
     var _closure1_slot4 = var6;
@@ -188,64 +188,45 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'flex': 1,
         'padding': 16
     };
-    var11 = 4;
-    var9 = var5[var11];
-    var9 = var12.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.BACKGROUND_SURFACE_HIGH;
-    var8.backgroundColor = var9;
+    var10 = 4;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.BACKGROUND_SURFACE_HIGH;
+    var8.backgroundColor = var12;
     var3.container = var8;
     var8 = {};
-    var9 = var5[var11];
-    var9 = var12.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.MOBILE_TEXT_HEADING_PRIMARY;
-    var8.color = var9;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.MOBILE_TEXT_HEADING_PRIMARY;
+    var8.color = var12;
     var3.subscriptionPlanTextStyle = var8;
     var8 = {
         'color': null,
         'paddingTop': 16,
         'paddingBottom': 24
     };
-    var9 = var5[var11];
-    var9 = var12.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.TEXT_DEFAULT;
-    var8.color = var9;
-    var9 = 24;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.TEXT_DEFAULT;
+    var8.color = var12;
+    var12 = 24;
     var3.descriptionPlanTextStyle = var8;
     var8 = {};
-    var8.paddingTop = var9;
+    var8.paddingTop = var12;
     var3.content = var8;
-    var8 = {
-        'flexDirection': 'row',
-        'alignItems': 'center'
-    };
-    var3.headerText = var8;
-    var8 = {
-        'width': 3,
-        'height': 3,
-        'borderRadius': 1.5,
-        'backgroundColor': null,
-        'marginHorizontal': 8
-    };
-    var9 = var5[var11];
-    var9 = var12.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.INTERACTIVE_TEXT_DEFAULT;
-    var8.backgroundColor = var9;
-    var9 = 8;
-    var3.headerDot = var8;
     var8 = {
         'borderBottomWidth': 1,
         'marginLeft': 4294967280,
         'marginRight': 4294967280
     };
-    var11 = var5[var11];
-    var11 = var12.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.INTERACTIVE_BACKGROUND_HOVER;
-    var8.borderColor = var11;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.colors;
+    var10 = var10.INTERACTIVE_BACKGROUND_HOVER;
+    var8.borderColor = var10;
     var3.separator = var8;
     var8 = {
         'flexDirection': 'row',
@@ -259,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.benefitTextContainer = var8;
     var8 = {};
-    var8.marginTop = var10;
+    var8.marginTop = var9;
     var3.benefitDescription = var8;
     var8 = {
         'flexDirection': 'row',
@@ -267,6 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.channelTitle = var8;
     var8 = {};
+    var9 = 8;
     var8.marginEnd = var9;
     var3.channelIcon = var8;
     var3 = var6.bind(var7)(var3);
@@ -610,4 +592,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 9352, 13357, 3942, 10892, 1568, 4933, 15027, 4935, 1234, 15028, 9414, 15029, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 9330, 13344, 3942, 10888, 1568, 4933, 15014, 4935, 1234, 15015, 9392, 15016, 2]);

@@ -1,9 +1,7 @@
 package ys;
-
-import ys.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class j {
-    public static final zs.n a() {
-        return i.b.f55650a.a();
+final class j extends i implements g {
+    public j(int i10, int i11) {
+        super(i10, i11);
     }
 }

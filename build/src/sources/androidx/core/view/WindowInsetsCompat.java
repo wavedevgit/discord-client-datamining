@@ -16,10 +16,10 @@ import java.util.Objects;
 public class WindowInsetsCompat {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final WindowInsetsCompat f3705b;
+    public static final WindowInsetsCompat f3402b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final o f3706a;
+    private final o f3403a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class d extends c {
@@ -28,7 +28,7 @@ public class WindowInsetsCompat {
 
         @Override // androidx.core.view.WindowInsetsCompat.g
         void c(int i10, Insets insets) {
-            this.f3714c.setInsets(q.a(i10), insets.g());
+            this.f3411c.setInsets(q.a(i10), insets.g());
         }
 
         d(WindowInsetsCompat windowInsetsCompat) {
@@ -53,7 +53,7 @@ public class WindowInsetsCompat {
 
         @Override // androidx.core.view.WindowInsetsCompat.d, androidx.core.view.WindowInsetsCompat.g
         void c(int i10, Insets insets) {
-            this.f3714c.setInsets(r.a(i10), insets.g());
+            this.f3411c.setInsets(r.a(i10), insets.g());
         }
 
         f(WindowInsetsCompat windowInsetsCompat) {
@@ -66,36 +66,36 @@ public class WindowInsetsCompat {
     public static class g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final WindowInsetsCompat f3715a;
+        private final WindowInsetsCompat f3412a;
 
         /* renamed from: b  reason: collision with root package name */
-        Insets[] f3716b;
+        Insets[] f3413b;
 
         g() {
             this(new WindowInsetsCompat((WindowInsetsCompat) null));
         }
 
         protected final void a() {
-            Insets[] insetsArr = this.f3716b;
+            Insets[] insetsArr = this.f3413b;
             if (insetsArr != null) {
                 Insets insets = insetsArr[p.d(1)];
-                Insets insets2 = this.f3716b[p.d(2)];
+                Insets insets2 = this.f3413b[p.d(2)];
                 if (insets2 == null) {
-                    insets2 = this.f3715a.f(2);
+                    insets2 = this.f3412a.f(2);
                 }
                 if (insets == null) {
-                    insets = this.f3715a.f(1);
+                    insets = this.f3412a.f(1);
                 }
                 g(Insets.b(insets, insets2));
-                Insets insets3 = this.f3716b[p.d(16)];
+                Insets insets3 = this.f3413b[p.d(16)];
                 if (insets3 != null) {
                     f(insets3);
                 }
-                Insets insets4 = this.f3716b[p.d(32)];
+                Insets insets4 = this.f3413b[p.d(32)];
                 if (insets4 != null) {
                     d(insets4);
                 }
-                Insets insets5 = this.f3716b[p.d(64)];
+                Insets insets5 = this.f3413b[p.d(64)];
                 if (insets5 != null) {
                     h(insets5);
                 }
@@ -105,12 +105,12 @@ public class WindowInsetsCompat {
         abstract WindowInsetsCompat b();
 
         void c(int i10, Insets insets) {
-            if (this.f3716b == null) {
-                this.f3716b = new Insets[10];
+            if (this.f3413b == null) {
+                this.f3413b = new Insets[10];
             }
             for (int i11 = 1; i11 <= 512; i11 <<= 1) {
                 if ((i10 & i11) != 0) {
-                    this.f3716b[p.d(i11)] = insets;
+                    this.f3413b[p.d(i11)] = insets;
                 }
             }
         }
@@ -129,7 +129,7 @@ public class WindowInsetsCompat {
         }
 
         g(WindowInsetsCompat windowInsetsCompat) {
-            this.f3715a = windowInsetsCompat;
+            this.f3412a = windowInsetsCompat;
         }
     }
 
@@ -141,7 +141,7 @@ public class WindowInsetsCompat {
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         WindowInsetsCompat a() {
-            return WindowInsetsCompat.C(this.f3722c.consumeDisplayCutout());
+            return WindowInsetsCompat.C(this.f3419c.consumeDisplayCutout());
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.h, androidx.core.view.WindowInsetsCompat.o
@@ -153,7 +153,7 @@ public class WindowInsetsCompat {
                 return false;
             }
             j jVar = (j) obj;
-            if (Objects.equals(this.f3722c, jVar.f3722c) && Objects.equals(this.f3726g, jVar.f3726g) && h.C(this.f3727h, jVar.f3727h)) {
+            if (Objects.equals(this.f3419c, jVar.f3419c) && Objects.equals(this.f3423g, jVar.f3423g) && h.C(this.f3424h, jVar.f3424h)) {
                 return true;
             }
             return false;
@@ -161,12 +161,12 @@ public class WindowInsetsCompat {
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         androidx.core.view.i f() {
-            return androidx.core.view.i.e(this.f3722c.getDisplayCutout());
+            return androidx.core.view.i.e(this.f3419c.getDisplayCutout());
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         public int hashCode() {
-            return this.f3722c.hashCode();
+            return this.f3419c.hashCode();
         }
 
         j(WindowInsetsCompat windowInsetsCompat, j jVar) {
@@ -178,12 +178,12 @@ public class WindowInsetsCompat {
     private static class l extends k {
 
         /* renamed from: r  reason: collision with root package name */
-        static final WindowInsetsCompat f3732r;
+        static final WindowInsetsCompat f3429r;
 
         static {
             WindowInsets windowInsets;
             windowInsets = WindowInsets.CONSUMED;
-            f3732r = WindowInsetsCompat.C(windowInsets);
+            f3429r = WindowInsetsCompat.C(windowInsets);
         }
 
         l(WindowInsetsCompat windowInsetsCompat, WindowInsets windowInsets) {
@@ -196,17 +196,17 @@ public class WindowInsetsCompat {
 
         @Override // androidx.core.view.WindowInsetsCompat.h, androidx.core.view.WindowInsetsCompat.o
         public Insets g(int i10) {
-            return Insets.f(this.f3722c.getInsets(q.a(i10)));
+            return Insets.f(this.f3419c.getInsets(q.a(i10)));
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.h, androidx.core.view.WindowInsetsCompat.o
         public Insets h(int i10) {
-            return Insets.f(this.f3722c.getInsetsIgnoringVisibility(q.a(i10)));
+            return Insets.f(this.f3419c.getInsetsIgnoringVisibility(q.a(i10)));
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.h, androidx.core.view.WindowInsetsCompat.o
         public boolean q(int i10) {
-            return this.f3722c.isVisible(q.a(i10));
+            return this.f3419c.isVisible(q.a(i10));
         }
 
         l(WindowInsetsCompat windowInsetsCompat, l lVar) {
@@ -229,12 +229,12 @@ public class WindowInsetsCompat {
     private static class n extends m {
 
         /* renamed from: s  reason: collision with root package name */
-        static final WindowInsetsCompat f3733s;
+        static final WindowInsetsCompat f3430s;
 
         static {
             WindowInsets windowInsets;
             windowInsets = WindowInsets.CONSUMED;
-            f3733s = WindowInsetsCompat.C(windowInsets);
+            f3430s = WindowInsetsCompat.C(windowInsets);
         }
 
         n(WindowInsetsCompat windowInsetsCompat, WindowInsets windowInsets) {
@@ -243,17 +243,17 @@ public class WindowInsetsCompat {
 
         @Override // androidx.core.view.WindowInsetsCompat.l, androidx.core.view.WindowInsetsCompat.h, androidx.core.view.WindowInsetsCompat.o
         public Insets g(int i10) {
-            return Insets.f(this.f3722c.getInsets(r.a(i10)));
+            return Insets.f(this.f3419c.getInsets(r.a(i10)));
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.l, androidx.core.view.WindowInsetsCompat.h, androidx.core.view.WindowInsetsCompat.o
         public Insets h(int i10) {
-            return Insets.f(this.f3722c.getInsetsIgnoringVisibility(r.a(i10)));
+            return Insets.f(this.f3419c.getInsetsIgnoringVisibility(r.a(i10)));
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.l, androidx.core.view.WindowInsetsCompat.h, androidx.core.view.WindowInsetsCompat.o
         public boolean q(int i10) {
-            return this.f3722c.isVisible(r.a(i10));
+            return this.f3419c.isVisible(r.a(i10));
         }
 
         n(WindowInsetsCompat windowInsetsCompat, n nVar) {
@@ -266,25 +266,25 @@ public class WindowInsetsCompat {
     public static class o {
 
         /* renamed from: b  reason: collision with root package name */
-        static final WindowInsetsCompat f3734b = new a().a().a().b().c();
+        static final WindowInsetsCompat f3431b = new a().a().a().b().c();
 
         /* renamed from: a  reason: collision with root package name */
-        final WindowInsetsCompat f3735a;
+        final WindowInsetsCompat f3432a;
 
         o(WindowInsetsCompat windowInsetsCompat) {
-            this.f3735a = windowInsetsCompat;
+            this.f3432a = windowInsetsCompat;
         }
 
         WindowInsetsCompat a() {
-            return this.f3735a;
+            return this.f3432a;
         }
 
         WindowInsetsCompat b() {
-            return this.f3735a;
+            return this.f3432a;
         }
 
         WindowInsetsCompat c() {
-            return this.f3735a;
+            return this.f3432a;
         }
 
         void d(View view) {
@@ -312,12 +312,12 @@ public class WindowInsetsCompat {
         }
 
         Insets g(int i10) {
-            return Insets.f3603e;
+            return Insets.f3300e;
         }
 
         Insets h(int i10) {
             if ((i10 & 8) == 0) {
-                return Insets.f3603e;
+                return Insets.f3300e;
             }
             throw new IllegalArgumentException("Unable to query the maximum insets for IME");
         }
@@ -331,7 +331,7 @@ public class WindowInsetsCompat {
         }
 
         Insets j() {
-            return Insets.f3603e;
+            return Insets.f3300e;
         }
 
         Insets k() {
@@ -339,7 +339,7 @@ public class WindowInsetsCompat {
         }
 
         Insets l() {
-            return Insets.f3603e;
+            return Insets.f3300e;
         }
 
         Insets m() {
@@ -347,7 +347,7 @@ public class WindowInsetsCompat {
         }
 
         WindowInsetsCompat n(int i10, int i11, int i12, int i13) {
-            return f3734b;
+            return f3431b;
         }
 
         boolean o() {
@@ -548,28 +548,28 @@ public class WindowInsetsCompat {
     static {
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 34) {
-            f3705b = n.f3733s;
+            f3402b = n.f3430s;
         } else if (i10 >= 30) {
-            f3705b = l.f3732r;
+            f3402b = l.f3429r;
         } else {
-            f3705b = o.f3734b;
+            f3402b = o.f3431b;
         }
     }
 
     private WindowInsetsCompat(WindowInsets windowInsets) {
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 34) {
-            this.f3706a = new n(this, windowInsets);
+            this.f3403a = new n(this, windowInsets);
         } else if (i10 >= 31) {
-            this.f3706a = new m(this, windowInsets);
+            this.f3403a = new m(this, windowInsets);
         } else if (i10 >= 30) {
-            this.f3706a = new l(this, windowInsets);
+            this.f3403a = new l(this, windowInsets);
         } else if (i10 >= 29) {
-            this.f3706a = new k(this, windowInsets);
+            this.f3403a = new k(this, windowInsets);
         } else if (i10 >= 28) {
-            this.f3706a = new j(this, windowInsets);
+            this.f3403a = new j(this, windowInsets);
         } else {
-            this.f3706a = new i(this, windowInsets);
+            this.f3403a = new i(this, windowInsets);
         }
     }
 
@@ -589,10 +589,10 @@ public class WindowInsetsCompat {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Insets s(Insets insets, int i10, int i11, int i12, int i13) {
-        int max = Math.max(0, insets.f3604a - i10);
-        int max2 = Math.max(0, insets.f3605b - i11);
-        int max3 = Math.max(0, insets.f3606c - i12);
-        int max4 = Math.max(0, insets.f3607d - i13);
+        int max = Math.max(0, insets.f3301a - i10);
+        int max2 = Math.max(0, insets.f3302b - i11);
+        int max3 = Math.max(0, insets.f3303c - i12);
+        int max4 = Math.max(0, insets.f3304d - i13);
         if (max == i10 && max2 == i11 && max3 == i12 && max4 == i13) {
             return insets;
         }
@@ -600,36 +600,36 @@ public class WindowInsetsCompat {
     }
 
     void A(int i10) {
-        this.f3706a.v(i10);
+        this.f3403a.v(i10);
     }
 
     public WindowInsets B() {
-        o oVar = this.f3706a;
+        o oVar = this.f3403a;
         if (oVar instanceof h) {
-            return ((h) oVar).f3722c;
+            return ((h) oVar).f3419c;
         }
         return null;
     }
 
     public WindowInsetsCompat a() {
-        return this.f3706a.a();
+        return this.f3403a.a();
     }
 
     public WindowInsetsCompat b() {
-        return this.f3706a.b();
+        return this.f3403a.b();
     }
 
     public WindowInsetsCompat c() {
-        return this.f3706a.c();
+        return this.f3403a.c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(View view) {
-        this.f3706a.d(view);
+        this.f3403a.d(view);
     }
 
     public androidx.core.view.i e() {
-        return this.f3706a.f();
+        return this.f3403a.f();
     }
 
     public boolean equals(Object obj) {
@@ -639,23 +639,23 @@ public class WindowInsetsCompat {
         if (!(obj instanceof WindowInsetsCompat)) {
             return false;
         }
-        return b2.b.a(this.f3706a, ((WindowInsetsCompat) obj).f3706a);
+        return b2.b.a(this.f3403a, ((WindowInsetsCompat) obj).f3403a);
     }
 
     public Insets f(int i10) {
-        return this.f3706a.g(i10);
+        return this.f3403a.g(i10);
     }
 
     public Insets g(int i10) {
-        return this.f3706a.h(i10);
+        return this.f3403a.h(i10);
     }
 
     public int h() {
-        return this.f3706a.j().f3607d;
+        return this.f3403a.j().f3304d;
     }
 
     public int hashCode() {
-        o oVar = this.f3706a;
+        o oVar = this.f3403a;
         if (oVar == null) {
             return 0;
         }
@@ -663,51 +663,51 @@ public class WindowInsetsCompat {
     }
 
     public int i() {
-        return this.f3706a.j().f3604a;
+        return this.f3403a.j().f3301a;
     }
 
     public int j() {
-        return this.f3706a.j().f3606c;
+        return this.f3403a.j().f3303c;
     }
 
     public int k() {
-        return this.f3706a.j().f3605b;
+        return this.f3403a.j().f3302b;
     }
 
     public Insets l() {
-        return this.f3706a.j();
+        return this.f3403a.j();
     }
 
     public Insets m() {
-        return this.f3706a.k();
+        return this.f3403a.k();
     }
 
     public int n() {
-        return this.f3706a.l().f3607d;
+        return this.f3403a.l().f3304d;
     }
 
     public int o() {
-        return this.f3706a.l().f3604a;
+        return this.f3403a.l().f3301a;
     }
 
     public int p() {
-        return this.f3706a.l().f3606c;
+        return this.f3403a.l().f3303c;
     }
 
     public int q() {
-        return this.f3706a.l().f3605b;
+        return this.f3403a.l().f3302b;
     }
 
     public WindowInsetsCompat r(int i10, int i11, int i12, int i13) {
-        return this.f3706a.n(i10, i11, i12, i13);
+        return this.f3403a.n(i10, i11, i12, i13);
     }
 
     public boolean t() {
-        return this.f3706a.o();
+        return this.f3403a.o();
     }
 
     public boolean u(int i10) {
-        return this.f3706a.q(i10);
+        return this.f3403a.q(i10);
     }
 
     public WindowInsetsCompat v(int i10, int i11, int i12, int i13) {
@@ -715,57 +715,57 @@ public class WindowInsetsCompat {
     }
 
     void w(Insets[] insetsArr) {
-        this.f3706a.r(insetsArr);
+        this.f3403a.r(insetsArr);
     }
 
     void x(Insets insets) {
-        this.f3706a.s(insets);
+        this.f3403a.s(insets);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void y(WindowInsetsCompat windowInsetsCompat) {
-        this.f3706a.t(windowInsetsCompat);
+        this.f3403a.t(windowInsetsCompat);
     }
 
     void z(Insets insets) {
-        this.f3706a.u(insets);
+        this.f3403a.u(insets);
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class b extends g {
 
         /* renamed from: e  reason: collision with root package name */
-        private static Field f3708e = null;
+        private static Field f3405e = null;
 
         /* renamed from: f  reason: collision with root package name */
-        private static boolean f3709f = false;
+        private static boolean f3406f = false;
 
         /* renamed from: g  reason: collision with root package name */
-        private static Constructor f3710g = null;
+        private static Constructor f3407g = null;
 
         /* renamed from: h  reason: collision with root package name */
-        private static boolean f3711h = false;
+        private static boolean f3408h = false;
 
         /* renamed from: c  reason: collision with root package name */
-        private WindowInsets f3712c;
+        private WindowInsets f3409c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Insets f3713d;
+        private Insets f3410d;
 
         b() {
-            this.f3712c = i();
+            this.f3409c = i();
         }
 
         private static WindowInsets i() {
-            if (!f3709f) {
+            if (!f3406f) {
                 try {
-                    f3708e = WindowInsets.class.getDeclaredField("CONSUMED");
+                    f3405e = WindowInsets.class.getDeclaredField("CONSUMED");
                 } catch (ReflectiveOperationException e10) {
                     Log.i("WindowInsetsCompat", "Could not retrieve WindowInsets.CONSUMED field", e10);
                 }
-                f3709f = true;
+                f3406f = true;
             }
-            Field field = f3708e;
+            Field field = f3405e;
             if (field != null) {
                 try {
                     WindowInsets windowInsets = (WindowInsets) field.get(null);
@@ -776,15 +776,15 @@ public class WindowInsetsCompat {
                     Log.i("WindowInsetsCompat", "Could not get value from WindowInsets.CONSUMED field", e11);
                 }
             }
-            if (!f3711h) {
+            if (!f3408h) {
                 try {
-                    f3710g = WindowInsets.class.getConstructor(Rect.class);
+                    f3407g = WindowInsets.class.getConstructor(Rect.class);
                 } catch (ReflectiveOperationException e12) {
                     Log.i("WindowInsetsCompat", "Could not retrieve WindowInsets(Rect) constructor", e12);
                 }
-                f3711h = true;
+                f3408h = true;
             }
-            Constructor constructor = f3710g;
+            Constructor constructor = f3407g;
             if (constructor != null) {
                 try {
                     return (WindowInsets) constructor.newInstance(new Rect());
@@ -798,28 +798,28 @@ public class WindowInsetsCompat {
         @Override // androidx.core.view.WindowInsetsCompat.g
         WindowInsetsCompat b() {
             a();
-            WindowInsetsCompat C = WindowInsetsCompat.C(this.f3712c);
-            C.w(this.f3716b);
-            C.z(this.f3713d);
+            WindowInsetsCompat C = WindowInsetsCompat.C(this.f3409c);
+            C.w(this.f3413b);
+            C.z(this.f3410d);
             return C;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.g
         void e(Insets insets) {
-            this.f3713d = insets;
+            this.f3410d = insets;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.g
         void g(Insets insets) {
-            WindowInsets windowInsets = this.f3712c;
+            WindowInsets windowInsets = this.f3409c;
             if (windowInsets != null) {
-                this.f3712c = windowInsets.replaceSystemWindowInsets(insets.f3604a, insets.f3605b, insets.f3606c, insets.f3607d);
+                this.f3409c = windowInsets.replaceSystemWindowInsets(insets.f3301a, insets.f3302b, insets.f3303c, insets.f3304d);
             }
         }
 
         b(WindowInsetsCompat windowInsetsCompat) {
             super(windowInsetsCompat);
-            this.f3712c = windowInsetsCompat.B();
+            this.f3409c = windowInsetsCompat.B();
         }
     }
 
@@ -827,43 +827,43 @@ public class WindowInsetsCompat {
     private static class c extends g {
 
         /* renamed from: c  reason: collision with root package name */
-        final WindowInsets.Builder f3714c;
+        final WindowInsets.Builder f3411c;
 
         c() {
-            this.f3714c = f1.a();
+            this.f3411c = f1.a();
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.g
         WindowInsetsCompat b() {
             a();
-            WindowInsetsCompat C = WindowInsetsCompat.C(this.f3714c.build());
-            C.w(this.f3716b);
+            WindowInsetsCompat C = WindowInsetsCompat.C(this.f3411c.build());
+            C.w(this.f3413b);
             return C;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.g
         void d(Insets insets) {
-            this.f3714c.setMandatorySystemGestureInsets(insets.g());
+            this.f3411c.setMandatorySystemGestureInsets(insets.g());
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.g
         void e(Insets insets) {
-            this.f3714c.setStableInsets(insets.g());
+            this.f3411c.setStableInsets(insets.g());
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.g
         void f(Insets insets) {
-            this.f3714c.setSystemGestureInsets(insets.g());
+            this.f3411c.setSystemGestureInsets(insets.g());
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.g
         void g(Insets insets) {
-            this.f3714c.setSystemWindowInsets(insets.g());
+            this.f3411c.setSystemWindowInsets(insets.g());
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.g
         void h(Insets insets) {
-            this.f3714c.setTappableElementInsets(insets.g());
+            this.f3411c.setTappableElementInsets(insets.g());
         }
 
         c(WindowInsetsCompat windowInsetsCompat) {
@@ -875,7 +875,7 @@ public class WindowInsetsCompat {
             } else {
                 a10 = f1.a();
             }
-            this.f3714c = a10;
+            this.f3411c = a10;
         }
     }
 
@@ -883,45 +883,45 @@ public class WindowInsetsCompat {
     private static class i extends h {
 
         /* renamed from: n  reason: collision with root package name */
-        private Insets f3728n;
+        private Insets f3425n;
 
         i(WindowInsetsCompat windowInsetsCompat, WindowInsets windowInsets) {
             super(windowInsetsCompat, windowInsets);
-            this.f3728n = null;
+            this.f3425n = null;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         WindowInsetsCompat b() {
-            return WindowInsetsCompat.C(this.f3722c.consumeStableInsets());
+            return WindowInsetsCompat.C(this.f3419c.consumeStableInsets());
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         WindowInsetsCompat c() {
-            return WindowInsetsCompat.C(this.f3722c.consumeSystemWindowInsets());
+            return WindowInsetsCompat.C(this.f3419c.consumeSystemWindowInsets());
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         final Insets j() {
-            if (this.f3728n == null) {
-                this.f3728n = Insets.c(this.f3722c.getStableInsetLeft(), this.f3722c.getStableInsetTop(), this.f3722c.getStableInsetRight(), this.f3722c.getStableInsetBottom());
+            if (this.f3425n == null) {
+                this.f3425n = Insets.c(this.f3419c.getStableInsetLeft(), this.f3419c.getStableInsetTop(), this.f3419c.getStableInsetRight(), this.f3419c.getStableInsetBottom());
             }
-            return this.f3728n;
+            return this.f3425n;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         boolean o() {
-            return this.f3722c.isConsumed();
+            return this.f3419c.isConsumed();
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         public void u(Insets insets) {
-            this.f3728n = insets;
+            this.f3425n = insets;
         }
 
         i(WindowInsetsCompat windowInsetsCompat, i iVar) {
             super(windowInsetsCompat, iVar);
-            this.f3728n = null;
-            this.f3728n = iVar.f3728n;
+            this.f3425n = null;
+            this.f3425n = iVar.f3425n;
         }
     }
 
@@ -930,58 +930,58 @@ public class WindowInsetsCompat {
     public static class h extends o {
 
         /* renamed from: i  reason: collision with root package name */
-        private static boolean f3717i = false;
+        private static boolean f3414i = false;
 
         /* renamed from: j  reason: collision with root package name */
-        private static Method f3718j;
+        private static Method f3415j;
 
         /* renamed from: k  reason: collision with root package name */
-        private static Class f3719k;
+        private static Class f3416k;
 
         /* renamed from: l  reason: collision with root package name */
-        private static Field f3720l;
+        private static Field f3417l;
 
         /* renamed from: m  reason: collision with root package name */
-        private static Field f3721m;
+        private static Field f3418m;
 
         /* renamed from: c  reason: collision with root package name */
-        final WindowInsets f3722c;
+        final WindowInsets f3419c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Insets[] f3723d;
+        private Insets[] f3420d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Insets f3724e;
+        private Insets f3421e;
 
         /* renamed from: f  reason: collision with root package name */
-        private WindowInsetsCompat f3725f;
+        private WindowInsetsCompat f3422f;
 
         /* renamed from: g  reason: collision with root package name */
-        Insets f3726g;
+        Insets f3423g;
 
         /* renamed from: h  reason: collision with root package name */
-        int f3727h;
+        int f3424h;
 
         h(WindowInsetsCompat windowInsetsCompat, WindowInsets windowInsets) {
             super(windowInsetsCompat);
-            this.f3724e = null;
-            this.f3722c = windowInsets;
+            this.f3421e = null;
+            this.f3419c = windowInsets;
         }
 
         @SuppressLint({"PrivateApi"})
         private static void B() {
             try {
-                f3718j = View.class.getDeclaredMethod("getViewRootImpl", null);
+                f3415j = View.class.getDeclaredMethod("getViewRootImpl", null);
                 Class<?> cls = Class.forName("android.view.View$AttachInfo");
-                f3719k = cls;
-                f3720l = cls.getDeclaredField("mVisibleInsets");
-                f3721m = Class.forName("android.view.ViewRootImpl").getDeclaredField("mAttachInfo");
-                f3720l.setAccessible(true);
-                f3721m.setAccessible(true);
+                f3416k = cls;
+                f3417l = cls.getDeclaredField("mVisibleInsets");
+                f3418m = Class.forName("android.view.ViewRootImpl").getDeclaredField("mAttachInfo");
+                f3417l.setAccessible(true);
+                f3418m.setAccessible(true);
             } catch (ReflectiveOperationException e10) {
                 Log.e("WindowInsetsCompat", "Failed to get visible insets. (Reflection error). " + e10.getMessage(), e10);
             }
-            f3717i = true;
+            f3414i = true;
         }
 
         static boolean C(int i10, int i11) {
@@ -990,7 +990,7 @@ public class WindowInsetsCompat {
 
         @SuppressLint({"WrongConstant"})
         private Insets w(int i10, boolean z10) {
-            Insets insets = Insets.f3603e;
+            Insets insets = Insets.f3300e;
             for (int i11 = 1; i11 <= 512; i11 <<= 1) {
                 if ((i10 & i11) != 0) {
                     insets = Insets.b(insets, x(i11, z10));
@@ -1000,27 +1000,27 @@ public class WindowInsetsCompat {
         }
 
         private Insets y() {
-            WindowInsetsCompat windowInsetsCompat = this.f3725f;
+            WindowInsetsCompat windowInsetsCompat = this.f3422f;
             if (windowInsetsCompat != null) {
                 return windowInsetsCompat.l();
             }
-            return Insets.f3603e;
+            return Insets.f3300e;
         }
 
         private Insets z(View view) {
             if (Build.VERSION.SDK_INT < 30) {
-                if (!f3717i) {
+                if (!f3414i) {
                     B();
                 }
-                Method method = f3718j;
-                if (method != null && f3719k != null && f3720l != null) {
+                Method method = f3415j;
+                if (method != null && f3416k != null && f3417l != null) {
                     try {
                         Object invoke = method.invoke(view, null);
                         if (invoke == null) {
                             Log.w("WindowInsetsCompat", "Failed to get visible insets. getViewRootImpl() returned null from the provided view. This means that the view is either not attached or the method has been overridden", new NullPointerException());
                             return null;
                         }
-                        Rect rect = (Rect) f3720l.get(f3721m.get(invoke));
+                        Rect rect = (Rect) f3417l.get(f3418m.get(invoke));
                         if (rect == null) {
                             return null;
                         }
@@ -1043,23 +1043,23 @@ public class WindowInsetsCompat {
                     return true;
                 }
             }
-            return !x(i10, false).equals(Insets.f3603e);
+            return !x(i10, false).equals(Insets.f3300e);
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         void d(View view) {
             Insets z10 = z(view);
             if (z10 == null) {
-                z10 = Insets.f3603e;
+                z10 = Insets.f3300e;
             }
             s(z10);
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         void e(WindowInsetsCompat windowInsetsCompat) {
-            windowInsetsCompat.y(this.f3725f);
-            windowInsetsCompat.x(this.f3726g);
-            windowInsetsCompat.A(this.f3727h);
+            windowInsetsCompat.y(this.f3422f);
+            windowInsetsCompat.x(this.f3423g);
+            windowInsetsCompat.A(this.f3424h);
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
@@ -1068,7 +1068,7 @@ public class WindowInsetsCompat {
                 return false;
             }
             h hVar = (h) obj;
-            if (!Objects.equals(this.f3726g, hVar.f3726g) || !C(this.f3727h, hVar.f3727h)) {
+            if (!Objects.equals(this.f3423g, hVar.f3423g) || !C(this.f3424h, hVar.f3424h)) {
                 return false;
             }
             return true;
@@ -1086,15 +1086,15 @@ public class WindowInsetsCompat {
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         final Insets l() {
-            if (this.f3724e == null) {
-                this.f3724e = Insets.c(this.f3722c.getSystemWindowInsetLeft(), this.f3722c.getSystemWindowInsetTop(), this.f3722c.getSystemWindowInsetRight(), this.f3722c.getSystemWindowInsetBottom());
+            if (this.f3421e == null) {
+                this.f3421e = Insets.c(this.f3419c.getSystemWindowInsetLeft(), this.f3419c.getSystemWindowInsetTop(), this.f3419c.getSystemWindowInsetRight(), this.f3419c.getSystemWindowInsetBottom());
             }
-            return this.f3724e;
+            return this.f3421e;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         WindowInsetsCompat n(int i10, int i11, int i12, int i13) {
-            a aVar = new a(WindowInsetsCompat.C(this.f3722c));
+            a aVar = new a(WindowInsetsCompat.C(this.f3419c));
             aVar.d(WindowInsetsCompat.s(l(), i10, i11, i12, i13));
             aVar.c(WindowInsetsCompat.s(j(), i10, i11, i12, i13));
             return aVar.a();
@@ -1102,7 +1102,7 @@ public class WindowInsetsCompat {
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         boolean p() {
-            return this.f3722c.isRound();
+            return this.f3419c.isRound();
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
@@ -1118,22 +1118,22 @@ public class WindowInsetsCompat {
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         public void r(Insets[] insetsArr) {
-            this.f3723d = insetsArr;
+            this.f3420d = insetsArr;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         void s(Insets insets) {
-            this.f3726g = insets;
+            this.f3423g = insets;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         void t(WindowInsetsCompat windowInsetsCompat) {
-            this.f3725f = windowInsetsCompat;
+            this.f3422f = windowInsetsCompat;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         void v(int i10) {
-            this.f3727h = i10;
+            this.f3424h = i10;
         }
 
         protected Insets x(int i10, boolean z10) {
@@ -1147,9 +1147,9 @@ public class WindowInsetsCompat {
                             if (i10 != 32) {
                                 if (i10 != 64) {
                                     if (i10 != 128) {
-                                        return Insets.f3603e;
+                                        return Insets.f3300e;
                                     }
-                                    WindowInsetsCompat windowInsetsCompat = this.f3725f;
+                                    WindowInsetsCompat windowInsetsCompat = this.f3422f;
                                     if (windowInsetsCompat != null) {
                                         f10 = windowInsetsCompat.e();
                                     } else {
@@ -1158,7 +1158,7 @@ public class WindowInsetsCompat {
                                     if (f10 != null) {
                                         return Insets.c(f10.b(), f10.d(), f10.c(), f10.a());
                                     }
-                                    return Insets.f3603e;
+                                    return Insets.f3300e;
                                 }
                                 return m();
                             }
@@ -1166,7 +1166,7 @@ public class WindowInsetsCompat {
                         }
                         return k();
                     }
-                    Insets[] insetsArr = this.f3723d;
+                    Insets[] insetsArr = this.f3420d;
                     if (insetsArr != null) {
                         insets = insetsArr[p.d(8)];
                     }
@@ -1175,45 +1175,45 @@ public class WindowInsetsCompat {
                     }
                     Insets l10 = l();
                     Insets y10 = y();
-                    int i12 = l10.f3607d;
-                    if (i12 > y10.f3607d) {
+                    int i12 = l10.f3304d;
+                    if (i12 > y10.f3304d) {
                         return Insets.c(0, 0, 0, i12);
                     }
-                    Insets insets2 = this.f3726g;
-                    if (insets2 != null && !insets2.equals(Insets.f3603e) && (i11 = this.f3726g.f3607d) > y10.f3607d) {
+                    Insets insets2 = this.f3423g;
+                    if (insets2 != null && !insets2.equals(Insets.f3300e) && (i11 = this.f3423g.f3304d) > y10.f3304d) {
                         return Insets.c(0, 0, 0, i11);
                     }
-                    return Insets.f3603e;
+                    return Insets.f3300e;
                 } else if (z10) {
                     Insets y11 = y();
                     Insets j10 = j();
-                    return Insets.c(Math.max(y11.f3604a, j10.f3604a), 0, Math.max(y11.f3606c, j10.f3606c), Math.max(y11.f3607d, j10.f3607d));
-                } else if ((this.f3727h & 2) != 0) {
-                    return Insets.f3603e;
+                    return Insets.c(Math.max(y11.f3301a, j10.f3301a), 0, Math.max(y11.f3303c, j10.f3303c), Math.max(y11.f3304d, j10.f3304d));
+                } else if ((this.f3424h & 2) != 0) {
+                    return Insets.f3300e;
                 } else {
                     Insets l11 = l();
-                    WindowInsetsCompat windowInsetsCompat2 = this.f3725f;
+                    WindowInsetsCompat windowInsetsCompat2 = this.f3422f;
                     if (windowInsetsCompat2 != null) {
                         insets = windowInsetsCompat2.l();
                     }
-                    int i13 = l11.f3607d;
+                    int i13 = l11.f3304d;
                     if (insets != null) {
-                        i13 = Math.min(i13, insets.f3607d);
+                        i13 = Math.min(i13, insets.f3304d);
                     }
-                    return Insets.c(l11.f3604a, 0, l11.f3606c, i13);
+                    return Insets.c(l11.f3301a, 0, l11.f3303c, i13);
                 }
             } else if (z10) {
-                return Insets.c(0, Math.max(y().f3605b, l().f3605b), 0, 0);
+                return Insets.c(0, Math.max(y().f3302b, l().f3302b), 0, 0);
             } else {
-                if ((this.f3727h & 4) != 0) {
-                    return Insets.f3603e;
+                if ((this.f3424h & 4) != 0) {
+                    return Insets.f3300e;
                 }
-                return Insets.c(0, l().f3605b, 0, 0);
+                return Insets.c(0, l().f3302b, 0, 0);
             }
         }
 
         h(WindowInsetsCompat windowInsetsCompat, h hVar) {
-            this(windowInsetsCompat, new WindowInsets(hVar.f3722c));
+            this(windowInsetsCompat, new WindowInsets(hVar.f3419c));
         }
     }
 
@@ -1221,48 +1221,48 @@ public class WindowInsetsCompat {
     private static class k extends j {
 
         /* renamed from: o  reason: collision with root package name */
-        private Insets f3729o;
+        private Insets f3426o;
 
         /* renamed from: p  reason: collision with root package name */
-        private Insets f3730p;
+        private Insets f3427p;
 
         /* renamed from: q  reason: collision with root package name */
-        private Insets f3731q;
+        private Insets f3428q;
 
         k(WindowInsetsCompat windowInsetsCompat, WindowInsets windowInsets) {
             super(windowInsetsCompat, windowInsets);
-            this.f3729o = null;
-            this.f3730p = null;
-            this.f3731q = null;
+            this.f3426o = null;
+            this.f3427p = null;
+            this.f3428q = null;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         Insets i() {
-            if (this.f3730p == null) {
-                this.f3730p = Insets.f(this.f3722c.getMandatorySystemGestureInsets());
+            if (this.f3427p == null) {
+                this.f3427p = Insets.f(this.f3419c.getMandatorySystemGestureInsets());
             }
-            return this.f3730p;
+            return this.f3427p;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         Insets k() {
-            if (this.f3729o == null) {
-                this.f3729o = Insets.f(this.f3722c.getSystemGestureInsets());
+            if (this.f3426o == null) {
+                this.f3426o = Insets.f(this.f3419c.getSystemGestureInsets());
             }
-            return this.f3729o;
+            return this.f3426o;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.o
         Insets m() {
-            if (this.f3731q == null) {
-                this.f3731q = Insets.f(this.f3722c.getTappableElementInsets());
+            if (this.f3428q == null) {
+                this.f3428q = Insets.f(this.f3419c.getTappableElementInsets());
             }
-            return this.f3731q;
+            return this.f3428q;
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.h, androidx.core.view.WindowInsetsCompat.o
         WindowInsetsCompat n(int i10, int i11, int i12, int i13) {
-            return WindowInsetsCompat.C(this.f3722c.inset(i10, i11, i12, i13));
+            return WindowInsetsCompat.C(this.f3419c.inset(i10, i11, i12, i13));
         }
 
         @Override // androidx.core.view.WindowInsetsCompat.i, androidx.core.view.WindowInsetsCompat.o
@@ -1271,9 +1271,9 @@ public class WindowInsetsCompat {
 
         k(WindowInsetsCompat windowInsetsCompat, k kVar) {
             super(windowInsetsCompat, kVar);
-            this.f3729o = null;
-            this.f3730p = null;
-            this.f3731q = null;
+            this.f3426o = null;
+            this.f3427p = null;
+            this.f3428q = null;
         }
     }
 
@@ -1281,82 +1281,82 @@ public class WindowInsetsCompat {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final g f3707a;
+        private final g f3404a;
 
         public a() {
             int i10 = Build.VERSION.SDK_INT;
             if (i10 >= 34) {
-                this.f3707a = new f();
+                this.f3404a = new f();
             } else if (i10 >= 31) {
-                this.f3707a = new e();
+                this.f3404a = new e();
             } else if (i10 >= 30) {
-                this.f3707a = new d();
+                this.f3404a = new d();
             } else if (i10 >= 29) {
-                this.f3707a = new c();
+                this.f3404a = new c();
             } else {
-                this.f3707a = new b();
+                this.f3404a = new b();
             }
         }
 
         public WindowInsetsCompat a() {
-            return this.f3707a.b();
+            return this.f3404a.b();
         }
 
         public a b(int i10, Insets insets) {
-            this.f3707a.c(i10, insets);
+            this.f3404a.c(i10, insets);
             return this;
         }
 
         public a c(Insets insets) {
-            this.f3707a.e(insets);
+            this.f3404a.e(insets);
             return this;
         }
 
         public a d(Insets insets) {
-            this.f3707a.g(insets);
+            this.f3404a.g(insets);
             return this;
         }
 
         public a(WindowInsetsCompat windowInsetsCompat) {
             int i10 = Build.VERSION.SDK_INT;
             if (i10 >= 34) {
-                this.f3707a = new f(windowInsetsCompat);
+                this.f3404a = new f(windowInsetsCompat);
             } else if (i10 >= 31) {
-                this.f3707a = new e(windowInsetsCompat);
+                this.f3404a = new e(windowInsetsCompat);
             } else if (i10 >= 30) {
-                this.f3707a = new d(windowInsetsCompat);
+                this.f3404a = new d(windowInsetsCompat);
             } else if (i10 >= 29) {
-                this.f3707a = new c(windowInsetsCompat);
+                this.f3404a = new c(windowInsetsCompat);
             } else {
-                this.f3707a = new b(windowInsetsCompat);
+                this.f3404a = new b(windowInsetsCompat);
             }
         }
     }
 
     public WindowInsetsCompat(WindowInsetsCompat windowInsetsCompat) {
         if (windowInsetsCompat != null) {
-            o oVar = windowInsetsCompat.f3706a;
+            o oVar = windowInsetsCompat.f3403a;
             int i10 = Build.VERSION.SDK_INT;
             if (i10 >= 34 && (oVar instanceof n)) {
-                this.f3706a = new n(this, (n) oVar);
+                this.f3403a = new n(this, (n) oVar);
             } else if (i10 >= 31 && (oVar instanceof m)) {
-                this.f3706a = new m(this, (m) oVar);
+                this.f3403a = new m(this, (m) oVar);
             } else if (i10 >= 30 && (oVar instanceof l)) {
-                this.f3706a = new l(this, (l) oVar);
+                this.f3403a = new l(this, (l) oVar);
             } else if (i10 >= 29 && (oVar instanceof k)) {
-                this.f3706a = new k(this, (k) oVar);
+                this.f3403a = new k(this, (k) oVar);
             } else if (i10 >= 28 && (oVar instanceof j)) {
-                this.f3706a = new j(this, (j) oVar);
+                this.f3403a = new j(this, (j) oVar);
             } else if (oVar instanceof i) {
-                this.f3706a = new i(this, (i) oVar);
+                this.f3403a = new i(this, (i) oVar);
             } else if (oVar instanceof h) {
-                this.f3706a = new h(this, (h) oVar);
+                this.f3403a = new h(this, (h) oVar);
             } else {
-                this.f3706a = new o(this);
+                this.f3403a = new o(this);
             }
             oVar.e(this);
             return;
         }
-        this.f3706a = new o(this);
+        this.f3403a = new o(this);
     }
 }

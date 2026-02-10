@@ -7,7 +7,7 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 public abstract class p1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final b f4175a;
+    private static final b f3872a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a {
@@ -687,17 +687,17 @@ public abstract class p1 {
         } else {
             cVar = new c();
         }
-        f4175a = cVar;
+        f3872a = cVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static String e(byte[] bArr, int i10, int i11) {
-        return f4175a.a(bArr, i10, i11);
+        return f3872a.a(bArr, i10, i11);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int f(CharSequence charSequence, byte[] bArr, int i10, int i11) {
-        return f4175a.b(charSequence, bArr, i10, i11);
+        return f3872a.b(charSequence, bArr, i10, i11);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -791,10 +791,10 @@ public abstract class p1 {
     }
 
     public static boolean m(byte[] bArr) {
-        return f4175a.c(bArr, 0, bArr.length);
+        return f3872a.c(bArr, 0, bArr.length);
     }
 
     public static boolean n(byte[] bArr, int i10, int i11) {
-        return f4175a.c(bArr, i10, i11);
+        return f3872a.c(bArr, i10, i11);
     }
 }

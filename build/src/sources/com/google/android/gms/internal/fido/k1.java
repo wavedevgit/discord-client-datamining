@@ -5,11 +5,11 @@ import java.util.Iterator;
 final class k1 extends g1 {
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ l1 f13998i;
+    final /* synthetic */ l1 f14138i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k1(l1 l1Var) {
-        this.f13998i = l1Var;
+        this.f14138i = l1Var;
     }
 
     @Override // com.google.android.gms.internal.fido.h1, com.google.android.gms.internal.fido.z0
@@ -29,6 +29,6 @@ final class k1 extends g1 {
 
     @Override // com.google.android.gms.internal.fido.g1
     final f1 r() {
-        return this.f13998i;
+        return this.f14138i;
     }
 }

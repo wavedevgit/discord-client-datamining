@@ -31,65 +31,65 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.GuildFeatures;
     var _closure1_slot5 = var3;
-    var3 = 20;
+    var3 = 18;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/guild_sidebar/useGuildActionRows.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun103311: for (var _fun103311_ip = 0;;) switch (_fun103311_ip) {
+        _fun103291: for (var _fun103291_ip = 0;;) switch (_fun103291_ip) {
             case 0:
                 var7 = arg0;
                 var _closure2_slot0 = var7;
                 var4 = _closure1_slot1;
-                var24 = _closure1_slot2;
+                var23 = _closure1_slot2;
                 var2 = 3;
-                var2 = var24[var2];
-                var22 = undefined;
-                var3 = var4.bind(var22)(var2);
+                var2 = var23[var2];
+                var21 = undefined;
+                var3 = var4.bind(var21)(var2);
                 var2 = var7.id;
-                var15 = var3.bind(var22)(var2);
-                var21 = _closure1_slot0;
+                var14 = var3.bind(var21)(var2);
+                var20 = _closure1_slot0;
                 var2 = 4;
-                var2 = var24[var2];
-                var5 = var21.bind(var22)(var2);
+                var2 = var23[var2];
+                var5 = var20.bind(var21)(var2);
                 var3 = var5.useCanReviewGuildMemberApplications;
                 var2 = var7.id;
                 var6 = var3.bind(var5)(var2);
                 var2 = 5;
-                var2 = var24[var2];
-                var5 = var21.bind(var22)(var2);
+                var2 = var23[var2];
+                var5 = var20.bind(var21)(var2);
                 var3 = var5.useShowRoleSubscriptionsInChannelList;
                 var2 = var7.id;
                 var11 = var3.bind(var5)(var2);
                 var2 = 6;
-                var2 = var24[var2];
-                var3 = var21.bind(var22)(var2);
+                var2 = var23[var2];
+                var3 = var20.bind(var21)(var2);
                 var2 = var3.useGuildShopVisibleInGuild;
                 var10 = var2.bind(var3)(var7);
                 var2 = 7;
-                var2 = var24[var2];
-                var3 = var21.bind(var22)(var2);
+                var2 = var23[var2];
+                var3 = var20.bind(var21)(var2);
                 var2 = var3.hasSocialLayerStorefront;
                 var8 = var2.bind(var3)(var7);
                 var2 = 8;
-                var2 = var24[var2];
-                var5 = var21.bind(var22)(var2);
+                var2 = var23[var2];
+                var5 = var20.bind(var21)(var2);
                 var3 = var5.useIsEligibleForSocialLayerStorefrontUserExperiment;
                 var2 = {};
-                var23 = 'guild-action-rows';
-                var2.location = var23;
+                var22 = 'guild-action-rows';
+                var2.location = var22;
                 var9 = var3.bind(var5)(var2);
                 var2 = 9;
-                var2 = var24[var2];
-                var5 = var21.bind(var22)(var2);
+                var2 = var23[var2];
+                var5 = var20.bind(var21)(var2);
                 var3 = var5.useCanSeeOnboardingHome;
                 var2 = var7.id;
-                var17 = var3.bind(var5)(var2);
+                var16 = var3.bind(var5)(var2);
                 var2 = 10;
-                var2 = var24[var2];
-                var12 = var21.bind(var22)(var2);
+                var2 = var23[var2];
+                var12 = var20.bind(var21)(var2);
                 var5 = var12.useStateFromStores;
                 var2 = _closure1_slot3;
                 var3 = new Array(1);
@@ -105,21 +105,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     return var0;
                 };
-                var18 = var5.bind(var12)(var3, var0, var2);
+                var17 = var5.bind(var12)(var3, var0, var2);
                 var0 = 11;
-                var0 = var24[var0];
-                var2 = var4.bind(var22)(var0);
+                var0 = var23[var0];
+                var2 = var4.bind(var21)(var0);
                 var0 = var7.id;
-                var19 = var2.bind(var22)(var0);
+                var18 = var2.bind(var21)(var0);
                 var0 = 12;
-                var0 = var24[var0];
-                var3 = var21.bind(var22)(var0);
+                var0 = var23[var0];
+                var3 = var20.bind(var21)(var0);
                 var2 = var3.useAllActionsCompleted;
                 var0 = var7.id;
-                var16 = var2.bind(var3)(var0);
+                var15 = var2.bind(var3)(var0);
                 var0 = 13;
-                var0 = var24[var0];
-                var3 = var21.bind(var22)(var0);
+                var0 = var23[var0];
+                var3 = var20.bind(var21)(var0);
                 var2 = var3.useCanAccessMemberSafetyPage;
                 var0 = var7.id;
                 var0 = var2.bind(var3)(var0);
@@ -132,251 +132,232 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var7.features;
                 var5 = var13.has;
                 var2 = var3.COMMUNITY;
-                var14 = var5.bind(var13)(var2);
-                var2 = 14;
-                var2 = var24[var2];
-                var13 = var21.bind(var22)(var2);
-                var5 = var13.useShowBrowseChannelsExperiment;
-                var2 = 15;
-                var2 = var24[var2];
-                var25 = var21.bind(var22)(var2);
-                var20 = var25.isOptInEnabledForGuild;
-                var2 = var7.id;
-                var2 = var20.bind(var25)(var2);
-                var2 = !var2;
                 var13 = var5.bind(var13)(var2);
-                var20 = var7.features;
-                var5 = var20.has;
+                var19 = var7.features;
+                var5 = var19.has;
                 var2 = var3.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY;
-                var2 = var5.bind(var20)(var2);
-                var2 = 16;
-                var2 = var24[var2];
-                var4 = var4.bind(var22)(var2);
+                var2 = var5.bind(var19)(var2);
+                var2 = 14;
+                var2 = var23[var2];
+                var4 = var4.bind(var21)(var2);
                 var2 = var7.id;
-                var4 = var4.bind(var22)(var2);
-                var2 = 17;
-                var2 = var24[var2];
-                var5 = var21.bind(var22)(var2);
+                var4 = var4.bind(var21)(var2);
+                var2 = 15;
+                var2 = var23[var2];
+                var5 = var20.bind(var21)(var2);
                 var2 = var5.useGuildPowerupsMobileEnabledExperiment;
-                var26 = 'useGuildActionRows';
-                var5 = var2.bind(var5)(var26);
-                var2 = 18;
-                var2 = var24[var2];
-                var25 = var21.bind(var22)(var2);
-                var20 = var25.useGameServerEnabled;
+                var25 = 'useGuildActionRows';
+                var5 = var2.bind(var5)(var25);
+                var2 = 16;
+                var2 = var23[var2];
+                var24 = var20.bind(var21)(var2);
+                var19 = var24.useGameServerEnabled;
                 var2 = var7.id;
-                var2 = var20.bind(var25)(var2, var26);
-                var25 = var7.features;
-                var20 = var25.has;
+                var2 = var19.bind(var24)(var2, var25);
+                var24 = var7.features;
+                var19 = var24.has;
                 var3 = var3.GAME_SERVERS;
-                var3 = var20.bind(var25)(var3);
-                var20 = 19;
-                var20 = var24[var20];
-                var22 = var21.bind(var22)(var20);
-                var21 = var22.useIsBoostProgressBarEnabled;
-                var20 = {};
-                var20.location = var23;
-                var20 = var21.bind(var22)(var7, var20);
+                var3 = var19.bind(var24)(var3);
+                var19 = 17;
+                var19 = var23[var19];
+                var21 = var20.bind(var21)(var19);
+                var20 = var21.useIsBoostProgressBarEnabled;
+                var19 = {};
+                var19.location = var22;
+                var19 = var20.bind(var21)(var7, var19);
                 if (!var12) {
-                    _fun103311_ip = 630;
-                    continue _fun103311
+                    _fun103291_ip = 576;
+                    continue _fun103291
                 }
-            case 610:
-                var21 = var0.push;
-                var20 = _closure1_slot4;
-                var20 = var20.GUILD_HUB_HEADER_OPTIONS;
-                var20 = var21.bind(var0)(var20);
-            case 630:
-                var16 = !var16;
-                if (!var16) {
-                    _fun103311_ip = 639;
-                    continue _fun103311
-                }
-            case 636:
-                var16 = var17;
-            case 639:
-                if (!var16) {
-                    _fun103311_ip = 645;
-                    continue _fun103311
-                }
-            case 642:
-                var16 = var19;
-            case 645:
-                if (!var16) {
-                    _fun103311_ip = 654;
-                    continue _fun103311
-                }
-            case 648:
-                var19 = null;
-                var16 = var19 != var18;
-            case 654:
-                if (!var16) {
-                    _fun103311_ip = 668;
-                    continue _fun103311
-                }
-            case 657:
-                var19 = var18.length;
-                var18 = 0;
-                var16 = var19 > var18;
-            case 668:
-                if (!var16) {
-                    _fun103311_ip = 691;
-                    continue _fun103311
-                }
-            case 671:
-                var18 = var0.push;
-                var16 = _closure1_slot4;
-                var16 = var16.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR;
-                var16 = var18.bind(var0)(var16);
-            case 691:
-                var16 = !var12;
-                if (!var16) {
-                    _fun103311_ip = 700;
-                    continue _fun103311
-                }
-            case 697:
-                var16 = var17;
-            case 700:
-                if (!var16) {
-                    _fun103311_ip = 723;
-                    continue _fun103311
-                }
-            case 703:
-                var17 = var0.push;
-                var16 = _closure1_slot4;
-                var16 = var16.GUILD_HOME;
-                var16 = var17.bind(var0)(var16);
-            case 723:
+            case 556:
+                var20 = var0.push;
+                var19 = _closure1_slot4;
+                var19 = var19.GUILD_HUB_HEADER_OPTIONS;
+                var19 = var20.bind(var0)(var19);
+            case 576:
+                var15 = !var15;
                 if (!var15) {
-                    _fun103311_ip = 746;
-                    continue _fun103311
+                    _fun103291_ip = 585;
+                    continue _fun103291
                 }
-            case 726:
+            case 582:
+                var15 = var16;
+            case 585:
+                if (!var15) {
+                    _fun103291_ip = 591;
+                    continue _fun103291
+                }
+            case 588:
+                var15 = var18;
+            case 591:
+                if (!var15) {
+                    _fun103291_ip = 600;
+                    continue _fun103291
+                }
+            case 594:
+                var18 = null;
+                var15 = var18 != var17;
+            case 600:
+                if (!var15) {
+                    _fun103291_ip = 614;
+                    continue _fun103291
+                }
+            case 603:
+                var18 = var17.length;
+                var17 = 0;
+                var15 = var18 > var17;
+            case 614:
+                if (!var15) {
+                    _fun103291_ip = 637;
+                    continue _fun103291
+                }
+            case 617:
+                var17 = var0.push;
+                var15 = _closure1_slot4;
+                var15 = var15.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR;
+                var15 = var17.bind(var0)(var15);
+            case 637:
+                var15 = !var12;
+                if (!var15) {
+                    _fun103291_ip = 646;
+                    continue _fun103291
+                }
+            case 643:
+                var15 = var16;
+            case 646:
+                if (!var15) {
+                    _fun103291_ip = 669;
+                    continue _fun103291
+                }
+            case 649:
                 var16 = var0.push;
                 var15 = _closure1_slot4;
-                var15 = var15.GUILD_SCHEDULED_EVENTS;
+                var15 = var15.GUILD_HOME;
                 var15 = var16.bind(var0)(var15);
-            case 746:
+            case 669:
+                if (!var14) {
+                    _fun103291_ip = 692;
+                    continue _fun103291
+                }
+            case 672:
+                var15 = var0.push;
+                var14 = _closure1_slot4;
+                var14 = var14.GUILD_SCHEDULED_EVENTS;
+                var14 = var15.bind(var0)(var14);
+            case 692:
                 var12 = !var12;
                 if (!var12) {
-                    _fun103311_ip = 755;
-                    continue _fun103311
+                    _fun103291_ip = 701;
+                    continue _fun103291
                 }
-            case 752:
-                var12 = var14;
-            case 755:
-                if (!var12) {
-                    _fun103311_ip = 761;
-                    continue _fun103311
-                }
-            case 758:
+            case 698:
                 var12 = var13;
-            case 761:
+            case 701:
                 if (!var12) {
-                    _fun103311_ip = 784;
-                    continue _fun103311
+                    _fun103291_ip = 724;
+                    continue _fun103291
                 }
-            case 764:
+            case 704:
                 var13 = var0.push;
                 var12 = _closure1_slot4;
                 var12 = var12.CHANNELS_AND_ROLES;
                 var12 = var13.bind(var0)(var12);
-            case 784:
+            case 724:
                 if (!var11) {
-                    _fun103311_ip = 807;
-                    continue _fun103311
+                    _fun103291_ip = 747;
+                    continue _fun103291
                 }
-            case 787:
+            case 727:
                 var12 = var0.push;
                 var11 = _closure1_slot4;
                 var11 = var11.GUILD_ROLE_SUBSCRIPTIONS;
                 var11 = var12.bind(var0)(var11);
-            case 807:
+            case 747:
                 if (!var10) {
-                    _fun103311_ip = 830;
-                    continue _fun103311
+                    _fun103291_ip = 770;
+                    continue _fun103291
                 }
-            case 810:
+            case 750:
                 var11 = var0.push;
                 var10 = _closure1_slot4;
                 var10 = var10.GUILD_SHOP;
                 var10 = var11.bind(var0)(var10);
-            case 830:
+            case 770:
                 if (!var8) {
-                    _fun103311_ip = 836;
-                    continue _fun103311
+                    _fun103291_ip = 776;
+                    continue _fun103291
                 }
-            case 833:
+            case 773:
                 var8 = var9;
-            case 836:
+            case 776:
                 if (!var8) {
-                    _fun103311_ip = 859;
-                    continue _fun103311
+                    _fun103291_ip = 799;
+                    continue _fun103291
                 }
-            case 839:
+            case 779:
                 var9 = var0.push;
                 var8 = _closure1_slot4;
                 var8 = var8.GUILD_GAME_SHOP;
                 var8 = var9.bind(var0)(var8);
-            case 859:
+            case 799:
                 if (!var6) {
-                    _fun103311_ip = 888;
-                    continue _fun103311
+                    _fun103291_ip = 828;
+                    continue _fun103291
                 }
-            case 862:
+            case 802:
                 var9 = var7.features;
                 var8 = var9.has;
                 var7 = _closure1_slot5;
                 var7 = var7.MEMBER_VERIFICATION_MANUAL_APPROVAL;
                 var6 = var8.bind(var9)(var7);
-            case 888:
+            case 828:
                 if (!var6) {
-                    _fun103311_ip = 911;
-                    continue _fun103311
+                    _fun103291_ip = 851;
+                    continue _fun103291
                 }
-            case 891:
+            case 831:
                 var7 = var0.push;
                 var6 = _closure1_slot4;
                 var6 = var6.GUILD_MOD_DASH_MEMBER_SAFETY;
                 var6 = var7.bind(var0)(var6);
-            case 911:
+            case 851:
                 if (!var4) {
-                    _fun103311_ip = 917;
-                    continue _fun103311
+                    _fun103291_ip = 857;
+                    continue _fun103291
                 }
-            case 914:
+            case 854:
                 var4 = var5;
-            case 917:
+            case 857:
                 if (!var4) {
-                    _fun103311_ip = 940;
-                    continue _fun103311
+                    _fun103291_ip = 880;
+                    continue _fun103291
                 }
-            case 920:
+            case 860:
                 var5 = var0.push;
                 var4 = _closure1_slot4;
                 var4 = var4.GUILD_BOOSTS;
                 var4 = var5.bind(var0)(var4);
-            case 940:
+            case 880:
                 if (!var2) {
-                    _fun103311_ip = 946;
-                    continue _fun103311
+                    _fun103291_ip = 886;
+                    continue _fun103291
                 }
-            case 943:
+            case 883:
                 var2 = var3;
-            case 946:
+            case 886:
                 if (!var2) {
-                    _fun103311_ip = 969;
-                    continue _fun103311
+                    _fun103291_ip = 909;
+                    continue _fun103291
                 }
-            case 949:
+            case 889:
                 var2 = var0.push;
                 var1 = _closure1_slot4;
                 var1 = var1.GAME_SERVERS;
                 var1 = var2.bind(var0)(var1);
-            case 969:
+            case 909:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4308, 4578, 660, 11756, 5691, 5670, 5689, 3495, 3497, 4580, 632, 4581, 11729, 5692, 12527, 4579, 10050, 13460, 5693, 8227, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4308, 4578, 660, 11751, 5692, 5671, 5690, 3495, 3497, 4580, 632, 4581, 11724, 5693, 10028, 13447, 5694, 8202, 2]);

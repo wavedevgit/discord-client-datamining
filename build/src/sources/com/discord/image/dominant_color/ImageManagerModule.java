@@ -43,7 +43,7 @@ public final class ImageManagerModule extends ReactContextBaseJavaModule {
         } else {
             promise.reject(new Exception("Unable to decode image source."));
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -64,7 +64,7 @@ public final class ImageManagerModule extends ReactContextBaseJavaModule {
         } else {
             promise.reject(new Exception("Unable to decode image source."));
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @ReactMethod
@@ -73,7 +73,7 @@ public final class ImageManagerModule extends ReactContextBaseJavaModule {
         Intrinsics.checkNotNullParameter(promise, "promise");
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "getReactApplicationContext(...)");
-        FrescoFetchDecodedImageKt.fetchDecodedImage$default(reactApplicationContext, imageSource.getString("uri"), (PostProcessor) null, new Function1() { // from class: i7.b
+        FrescoFetchDecodedImageKt.fetchDecodedImage$default(reactApplicationContext, imageSource.getString("uri"), (PostProcessor) null, new Function1() { // from class: j7.b
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit avatarBase64$lambda$0;
@@ -106,7 +106,7 @@ public final class ImageManagerModule extends ReactContextBaseJavaModule {
     private final void getDominantColors(String str, final Promise promise) {
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "getReactApplicationContext(...)");
-        FrescoFetchDecodedImageKt.fetchDecodedImage$default(reactApplicationContext, str, (PostProcessor) null, new Function1() { // from class: i7.a
+        FrescoFetchDecodedImageKt.fetchDecodedImage$default(reactApplicationContext, str, (PostProcessor) null, new Function1() { // from class: j7.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit dominantColors$lambda$2;

@@ -62,8 +62,8 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                 String str17 = str7;
                 switch (reader.J(this.options)) {
                     case -1:
-                        reader.E0();
-                        reader.S();
+                        reader.C0();
+                        reader.T();
                         str7 = str17;
                         str = str11;
                         str2 = str12;
@@ -81,7 +81,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw an.c.x("titleFront", "titleFront", reader);
+                            throw bn.c.x("titleFront", "titleFront", reader);
                         }
                     case 1:
                         str2 = (String) this.stringAdapter.fromJson(reader);
@@ -93,7 +93,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw an.c.x("titleBack", "titleBack", reader);
+                            throw bn.c.x("titleBack", "titleBack", reader);
                         }
                     case 2:
                         str3 = (String) this.stringAdapter.fromJson(reader);
@@ -105,7 +105,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw an.c.x("titlePdf417", "titlePdf417", reader);
+                            throw bn.c.x("titlePdf417", "titlePdf417", reader);
                         }
                     case 3:
                         str4 = (String) this.stringAdapter.fromJson(reader);
@@ -117,7 +117,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw an.c.x("titlePassportSignature", "titlePassportSignature", reader);
+                            throw bn.c.x("titlePassportSignature", "titlePassportSignature", reader);
                         }
                     case 4:
                         str5 = (String) this.stringAdapter.fromJson(reader);
@@ -129,7 +129,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str4 = str14;
                             break;
                         } else {
-                            throw an.c.x("descriptionFront", "descriptionFront", reader);
+                            throw bn.c.x("descriptionFront", "descriptionFront", reader);
                         }
                     case 5:
                         str6 = (String) this.stringAdapter.fromJson(reader);
@@ -142,12 +142,12 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             continue;
                         } else {
-                            throw an.c.x("descriptionBack", "descriptionBack", reader);
+                            throw bn.c.x("descriptionBack", "descriptionBack", reader);
                         }
                     case 6:
                         str7 = (String) this.stringAdapter.fromJson(reader);
                         if (str7 == null) {
-                            throw an.c.x("descriptionPdf417", "descriptionPdf417", reader);
+                            throw bn.c.x("descriptionPdf417", "descriptionPdf417", reader);
                         }
                         str = str11;
                         str2 = str12;
@@ -158,7 +158,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                     case 7:
                         str8 = (String) this.stringAdapter.fromJson(reader);
                         if (str8 == null) {
-                            throw an.c.x("descriptionPassportSignature", "descriptionPassportSignature", reader);
+                            throw bn.c.x("descriptionPassportSignature", "descriptionPassportSignature", reader);
                         }
                         str7 = str17;
                         str = str11;
@@ -170,7 +170,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                     case 8:
                         str9 = (String) this.stringAdapter.fromJson(reader);
                         if (str9 == null) {
-                            throw an.c.x("choosePhotoButtonText", "choosePhotoButtonText", reader);
+                            throw bn.c.x("choosePhotoButtonText", "choosePhotoButtonText", reader);
                         }
                         str7 = str17;
                         str = str11;
@@ -182,7 +182,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                     case 9:
                         str10 = (String) this.stringAdapter.fromJson(reader);
                         if (str10 == null) {
-                            throw an.c.x("liveUploadButtonText", "liveUploadButtonText", reader);
+                            throw bn.c.x("liveUploadButtonText", "liveUploadButtonText", reader);
                         }
                         str7 = str17;
                         str = str11;
@@ -216,25 +216,25 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                                                     if (str10 != null) {
                                                         return new NextStep.GovernmentId.RequestPage(str11, str12, str13, str14, str15, str16, str18, str8, str9, str10);
                                                     }
-                                                    throw an.c.o("liveUploadButtonText", "liveUploadButtonText", reader);
+                                                    throw bn.c.o("liveUploadButtonText", "liveUploadButtonText", reader);
                                                 }
-                                                throw an.c.o("choosePhotoButtonText", "choosePhotoButtonText", reader);
+                                                throw bn.c.o("choosePhotoButtonText", "choosePhotoButtonText", reader);
                                             }
-                                            throw an.c.o("descriptionPassportSignature", "descriptionPassportSignature", reader);
+                                            throw bn.c.o("descriptionPassportSignature", "descriptionPassportSignature", reader);
                                         }
-                                        throw an.c.o("descriptionPdf417", "descriptionPdf417", reader);
+                                        throw bn.c.o("descriptionPdf417", "descriptionPdf417", reader);
                                     }
-                                    throw an.c.o("descriptionBack", "descriptionBack", reader);
+                                    throw bn.c.o("descriptionBack", "descriptionBack", reader);
                                 }
-                                throw an.c.o("descriptionFront", "descriptionFront", reader);
+                                throw bn.c.o("descriptionFront", "descriptionFront", reader);
                             }
-                            throw an.c.o("titlePassportSignature", "titlePassportSignature", reader);
+                            throw bn.c.o("titlePassportSignature", "titlePassportSignature", reader);
                         }
-                        throw an.c.o("titlePdf417", "titlePdf417", reader);
+                        throw bn.c.o("titlePdf417", "titlePdf417", reader);
                     }
-                    throw an.c.o("titleBack", "titleBack", reader);
+                    throw bn.c.o("titleBack", "titleBack", reader);
                 }
-                throw an.c.o("titleFront", "titleFront", reader);
+                throw bn.c.o("titleFront", "titleFront", reader);
             }
         }
     }

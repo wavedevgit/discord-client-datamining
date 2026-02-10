@@ -1,74 +1,95 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97371: for (var _fun97371_ip = 0;;) switch (_fun97371_ip) {
+    _fun97375: for (var _fun97375_ip = 0;;) switch (_fun97375_ip) {
         case 0:
             var4 = require;
-            var5 = dependencyMap;
+            var3 = dependencyMap;
             var _closure1_slot0 = var4;
-            var _closure1_slot1 = var5;
-            var0 = global;
-            var2 = var0.Object;
-            var _closure1_slot2 = var2;
-            var0 = 0;
-            var3 = var5[var0];
-            var0 = undefined;
-            var6 = var4.bind(var0)(var3);
-            var3 = '';
-            var3 = var3.split;
-            var3 = var6.bind(var0)(var3);
-            var _closure1_slot3 = var3;
-            var3 = 1;
-            var3 = var5[var3];
-            var4 = var4.bind(var0)(var3);
-            var3 = function() { // Environment: var1
-                var2 = _closure1_slot2;
-                var1 = undefined;
-                var0 = 'z';
-                var2 = var2.bind(var1)(var0);
-                var1 = var2.propertyIsEnumerable;
-                var0 = 0;
-                var0 = var1.bind(var2)(var0);
-                var0 = !var0;
-                return var0;
-            };
-            var3 = var4.bind(var0)(var3);
-            if (!var3) {
-                _fun97371_ip = 93;
-                continue _fun97371
+            var _closure1_slot1 = var3;
+            var1 = global;
+            var1 = var1.Object;
+            var1 = var1.getOwnPropertySymbols;
+            var2 = !var1;
+            var1 = !var2;
+            if (var2) {
+                _fun97375_ip = 67;
+                continue _fun97375
             }
-        case 86:
-            var2 = function(arg0) { // Environment: var1
-                _fun97373: for (var _fun97373_ip = 0;;) switch (_fun97373_ip) {
+        case 39:
+            var2 = 0;
+            var2 = var3[var2];
+            var3 = undefined;
+            var2 = var4.bind(var3)(var2);
+            var0 = function() { // Environment: var0
+                _fun97376: for (var _fun97376_ip = 0;;) switch (_fun97376_ip) {
                     case 0:
-                        var4 = arg0;
-                        var2 = _closure1_slot0;
-                        var3 = _closure1_slot1;
-                        var0 = 2;
-                        var0 = var3[var0];
-                        var3 = undefined;
-                        var0 = var2.bind(var3)(var0);
-                        var2 = var0.bind(var3)(var4);
-                        var0 = 'String';
-                        if (!(var0 !== var2)) {
-                            _fun97373_ip = 52;
-                            continue _fun97373
+                        var1 = global;
+                        var2 = var1.Symbol;
+                        var4 = undefined;
+                        var0 = 'symbol detection';
+                        var5 = var2.bind(var4)(var0);
+                        var3 = _closure1_slot0;
+                        var6 = _closure1_slot1;
+                        var0 = 1;
+                        var0 = var6[var0];
+                        var3 = var3.bind(var4)(var0);
+                        var0 = var3.String;
+                        var0 = var0.bind(var3)(var5);
+                        var0 = !var0;
+                        if (var0) {
+                            _fun97376_ip = 84;
+                            continue _fun97376
                         }
-                    case 41:
-                        var0 = _closure1_slot2;
-                        var0 = var0.bind(var3)(var4);
-                        _fun97373_ip = 66;
-                        continue _fun97373;
-                    case 52:
-                        var2 = _closure1_slot3;
-                        var1 = '';
-                        var0 = var2.bind(var3)(var4, var1);
-                    case 66:
+                    case 60:
+                        var3 = var1.Object;
+                        var5 = var3.bind(var4)(var5);
+                        var3 = var1.Symbol;
+                        var3 = var5 instanceof var3;
+                        var0 = !var3;
+                    case 84:
+                        if (var0) {
+                            _fun97376_ip = 158;
+                            continue _fun97376
+                        }
+                    case 87:
+                        var1 = var1.Symbol;
+                        var1 = var1.sham;
+                        var1 = !var1;
+                        if (!var1) {
+                            _fun97376_ip = 125;
+                            continue _fun97376
+                        }
+                    case 105:
+                        var5 = _closure1_slot0;
+                        var6 = _closure1_slot1;
+                        var3 = 2;
+                        var3 = var6[var3];
+                        var1 = var5.bind(var4)(var3);
+                    case 125:
+                        if (!var1) {
+                            _fun97376_ip = 155;
+                            continue _fun97376
+                        }
+                    case 128:
+                        var3 = _closure1_slot0;
+                        var5 = _closure1_slot1;
+                        var2 = 2;
+                        var2 = var5[var2];
+                        var3 = var3.bind(var4)(var2);
+                        var2 = 41;
+                        var1 = var3 < var2;
+                    case 155:
+                        var0 = var1;
+                    case 158:
                         return var0;
                 }
             };
-        case 93:
-            var1 = arg4;
-            var1.exports = var2;
+            var0 = var2.bind(var3)(var0);
+            var1 = !var0;
+        case 67:
+            var0 = arg4;
+            var0.exports = var1;
+            var0 = undefined;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12712, 12709, 12714]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12696, 12692, 12712]);

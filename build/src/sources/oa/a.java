@@ -1,151 +1,61 @@
 package oa;
 
-import com.facebook.imagepipeline.producers.Consumer;
-import com.facebook.imagepipeline.producers.ProducerContext;
-import com.facebook.imagepipeline.producers.d1;
-import com.facebook.imagepipeline.producers.w0;
-import java.util.Map;
-import kotlin.Unit;
-import kotlin.jvm.internal.Intrinsics;
-import o8.j;
+import android.util.Log;
+import com.facebook.common.references.CloseableReference;
+import java.io.Closeable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a extends y8.a {
+public class a {
 
-    /* renamed from: h  reason: collision with root package name */
-    private final d1 f41622h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final ua.d f41623i;
+    /* renamed from: a  reason: collision with root package name */
+    private final CloseableReference.c f40329a;
 
     /* renamed from: oa.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0558a extends com.facebook.imagepipeline.producers.c {
-        C0558a() {
+    class C0584a implements CloseableReference.c {
+
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ qa.a f40330a;
+
+        C0584a(qa.a aVar) {
+            this.f40330a = aVar;
         }
 
-        @Override // com.facebook.imagepipeline.producers.c
-        protected void f() {
-            a.this.B();
+        @Override // com.facebook.common.references.CloseableReference.c
+        public void a(t8.d dVar, Throwable th2) {
+            String str;
+            this.f40330a.a(dVar, th2);
+            Object f10 = dVar.f();
+            if (f10 != null) {
+                str = f10.getClass().getName();
+            } else {
+                str = "<value is null>";
+            }
+            q8.a.L("Fresco", "Finalized without closing: %x %x (type = %s).\nStack:\n%s", Integer.valueOf(System.identityHashCode(this)), Integer.valueOf(System.identityHashCode(dVar)), str, a.d(th2));
         }
 
-        @Override // com.facebook.imagepipeline.producers.c
-        protected void g(Throwable throwable) {
-            Intrinsics.checkNotNullParameter(throwable, "throwable");
-            a.this.C(throwable);
-        }
-
-        @Override // com.facebook.imagepipeline.producers.c
-        protected void h(Object obj, int i10) {
-            a aVar = a.this;
-            aVar.D(obj, i10, aVar.A());
-        }
-
-        @Override // com.facebook.imagepipeline.producers.c
-        protected void i(float f10) {
-            a.this.q(f10);
+        @Override // com.facebook.common.references.CloseableReference.c
+        public boolean b() {
+            return this.f40330a.b();
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public a(w0 producer, d1 settableProducerContext, ua.d requestListener) {
-        Intrinsics.checkNotNullParameter(producer, "producer");
-        Intrinsics.checkNotNullParameter(settableProducerContext, "settableProducerContext");
-        Intrinsics.checkNotNullParameter(requestListener, "requestListener");
-        this.f41622h = settableProducerContext;
-        this.f41623i = requestListener;
-        if (!ya.b.d()) {
-            m(settableProducerContext.getExtras());
-            if (!ya.b.d()) {
-                requestListener.a(settableProducerContext);
-            } else {
-                ya.b.a("AbstractProducerToDataSourceAdapter()->onRequestStart");
-                try {
-                    requestListener.a(settableProducerContext);
-                    Unit unit = Unit.f32056a;
-                } finally {
-                }
-            }
-            if (!ya.b.d()) {
-                producer.b(y(), settableProducerContext);
-                return;
-            }
-            ya.b.a("AbstractProducerToDataSourceAdapter()->produceResult");
-            try {
-                producer.b(y(), settableProducerContext);
-                Unit unit2 = Unit.f32056a;
-                return;
-            } finally {
-            }
-        }
-        ya.b.a("AbstractProducerToDataSourceAdapter()");
-        try {
-            m(settableProducerContext.getExtras());
-            if (!ya.b.d()) {
-                requestListener.a(settableProducerContext);
-            } else {
-                ya.b.a("AbstractProducerToDataSourceAdapter()->onRequestStart");
-                requestListener.a(settableProducerContext);
-                Unit unit3 = Unit.f32056a;
-                ya.b.b();
-            }
-            if (!ya.b.d()) {
-                producer.b(y(), settableProducerContext);
-            } else {
-                ya.b.a("AbstractProducerToDataSourceAdapter()->produceResult");
-                producer.b(y(), settableProducerContext);
-                Unit unit4 = Unit.f32056a;
-                ya.b.b();
-            }
-            Unit unit5 = Unit.f32056a;
-        } catch (Throwable th2) {
-            throw th2;
-        }
+    public a(qa.a aVar) {
+        this.f40329a = new C0584a(aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final synchronized void B() {
-        j.i(i());
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final void C(Throwable th2) {
-        if (super.o(th2, z(this.f41622h))) {
-            this.f41623i.i(this.f41622h, th2);
+    public static String d(Throwable th2) {
+        if (th2 == null) {
+            return "";
         }
+        return Log.getStackTraceString(th2);
     }
 
-    private final Consumer y() {
-        return new C0558a();
+    public CloseableReference b(Closeable closeable) {
+        return CloseableReference.O0(closeable, this.f40329a);
     }
 
-    public final d1 A() {
-        return this.f41622h;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public void D(Object obj, int i10, ProducerContext producerContext) {
-        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
-        boolean d10 = com.facebook.imagepipeline.producers.c.d(i10);
-        if (super.s(obj, d10, z(producerContext)) && d10) {
-            this.f41623i.e(this.f41622h);
-        }
-    }
-
-    @Override // y8.a, com.facebook.datasource.DataSource
-    public boolean close() {
-        if (!super.close()) {
-            return false;
-        }
-        if (!super.isFinished()) {
-            this.f41623i.g(this.f41622h);
-            this.f41622h.f();
-            return true;
-        }
-        return true;
-    }
-
-    protected final Map z(ProducerContext producerContext) {
-        Intrinsics.checkNotNullParameter(producerContext, "producerContext");
-        return producerContext.getExtras();
+    public CloseableReference c(Object obj, t8.c cVar) {
+        return CloseableReference.V0(obj, cVar, this.f40329a);
     }
 }

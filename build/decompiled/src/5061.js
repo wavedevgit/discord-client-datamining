@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.code = var5;
     var _closure1_slot6 = var4;
     var1 = function arg0() {
-        _fun45477: for (var _fun45477_ip = 0;;) switch (_fun45477_ip) {
+        _fun45470: for (var _fun45470_ip = 0;;) switch (_fun45470_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.style;
@@ -48,8 +48,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var0.BodyComponent;
                 var2 = undefined;
                 if (!(var2 === var3)) {
-                    _fun45477_ip = 59;
-                    continue _fun45477
+                    _fun45470_ip = 59;
+                    continue _fun45470
                 }
             case 31:
                 var5 = _closure1_slot1;
@@ -75,7 +75,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var6.bind(var2)(var5);
                 var7 = var9.useAnimatedStyle;
                 var6 = function() {
-                    _fun45478: for (var _fun45478_ip = 0;;) switch (_fun45478_ip) {
+                    _fun45471: for (var _fun45471_ip = 0;;) switch (_fun45471_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure2_slot1;
@@ -84,8 +84,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = 1;
                             var3 = -1;
                             if (!(var3 === var4)) {
-                                _fun45478_ip = 33;
-                                continue _fun45478
+                                _fun45471_ip = 33;
+                                continue _fun45471
                             }
                         case 31:
                             var2 = 0;

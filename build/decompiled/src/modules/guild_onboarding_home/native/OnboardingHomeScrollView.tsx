@@ -53,15 +53,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_onboarding_home/native/OnboardingHomeScrollView.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun105353: for (var _fun105353_ip = 0;;) switch (_fun105353_ip) {
+        _fun105333: for (var _fun105333_ip = 0;;) switch (_fun105333_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.guildId;
                 var1 = var0.headerOffset;
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun105353_ip = 26;
-                    continue _fun105353
+                    _fun105333_ip = 26;
+                    continue _fun105333
                 }
             case 24:
                 var1 = 0;
@@ -112,23 +112,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var2;
                 var2 = function() { // Environment: var7
-                    _fun105355: for (var _fun105355_ip = 0;;) switch (_fun105355_ip) {
+                    _fun105335: for (var _fun105335_ip = 0;;) switch (_fun105335_ip) {
                         case 0:
                             var1 = _closure2_slot3;
                             var2 = var1.current;
                             var1 = null;
                             var1 = var1 == var2;
                             if (var1) {
-                                _fun105355_ip = 30;
-                                continue _fun105355
+                                _fun105335_ip = 30;
+                                continue _fun105335
                             }
                         case 21:
                             var2 = _closure2_slot5;
                             var1 = var2.current;
                         case 30:
                             if (var1) {
-                                _fun105355_ip = 63;
-                                continue _fun105355
+                                _fun105335_ip = 67;
+                                continue _fun105335
                             }
                         case 33:
                             var1 = _closure2_slot3;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'y': 0
                             };
                             var1 = var2.bind(var3)(var1);
-                        case 63:
+                        case 67:
                             var1 = _closure2_slot5;
                             var0 = false;
                             var1.current = var0;

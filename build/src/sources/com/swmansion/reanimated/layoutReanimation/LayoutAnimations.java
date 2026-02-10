@@ -10,7 +10,7 @@ import java.util.Map;
 public class LayoutAnimations {
     private final WeakReference<ReactApplicationContext> mContext;
     private WeakReference<AnimationsManager> mWeakAnimationsManager = new WeakReference<>(null);
-    @fb.a
+    @gb.a
     private final HybridData mHybridData = initHybrid();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */

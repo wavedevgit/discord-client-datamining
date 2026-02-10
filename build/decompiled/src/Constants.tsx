@@ -14513,6 +14513,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var91.EMOJI_STUDIO_ENDED = var43;
             var43 = 'password_reset_action';
             var91.PASSWORD_RESET_ACTION = var43;
+            var43 = 'hardware_mute_guessed';
+            var91.HARDWARE_MUTE_GUESSED = var43;
             var43 = 'guild_channel_resync_requested';
             var91.GUILD_CHANNEL_RESYNC_REQUESTED = var43;
             var43 = 'guild_channel_resync_executed';
@@ -16757,28 +16759,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var232 = var222[var237];
             var235 = var221.bind(var0)(var232);
             for (var232 in var235)
-                case 62413: {
-                    case 62422: var239 = var232;
+                case 62425: {
+                    case 62434: var239 = var232;
                     var238 = var222[var237];
                     var238 = var221.bind(var0)(var238);
                     var238 = var238[var239];
                     var2[var239] = var238;
-                    _fun7396_ip = 62413;
+                    _fun7396_ip = 62425;
                     continue _fun7396;
                 }
-        case 62444:
+        case 62456:
             var231 = var222[var231];
             var236 = var221.bind(var0)(var231);
             var234 = var236;
             for (var231 in var234)
-                case 62464: {
-                    case 62473: var238 = var231;
+                case 62476: {
+                    case 62485: var238 = var231;
                     var237 = var236[var238];
                     var2[var238] = var237;
-                    _fun7396_ip = 62464;
+                    _fun7396_ip = 62476;
                     continue _fun7396;
                 }
-        case 62486:
+        case 62498:
             var2.Routes = var230;
             var2.ME = var229;
             var2.FAVORITES = var228;

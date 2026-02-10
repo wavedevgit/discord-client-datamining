@@ -1,7 +1,7 @@
 // modules/double_tap_to_react/native/DoubleTapToReactChatInputBanner.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun90291: for (var _fun90291_ip = 0;;) switch (_fun90291_ip) {
+    _fun90292: for (var _fun90292_ip = 0;;) switch (_fun90292_ip) {
         case 0:
             var4 = require;
             var10 = metroImportDefault;
@@ -11,7 +11,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot1 = var10;
             var _closure1_slot2 = var5;
             var0 = function arg0() {
-                _fun90292: for (var _fun90292_ip = 0;;) switch (_fun90292_ip) {
+                _fun90293: for (var _fun90293_ip = 0;;) switch (_fun90293_ip) {
                     case 0:
                         var0 = arg0;
                         var23 = var0.emoji;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var14 == var13;
                         var13 = '';
                         if (!var15) {
-                            _fun90292_ip = 196;
-                            continue _fun90292
+                            _fun90293_ip = 196;
+                            continue _fun90293
                         }
                     case 191:
                         var13 = var23.surrogates;
@@ -70,13 +70,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7.name = var13;
                         var13 = var23.id;
                         if (!(var14 == var13)) {
-                            _fun90292_ip = 216;
-                            continue _fun90292
+                            _fun90293_ip = 216;
+                            continue _fun90293
                         }
                     case 209:
                         var13 = var23.url;
-                        _fun90292_ip = 283;
-                        continue _fun90292;
+                        _fun90293_ip = 283;
+                        continue _fun90293;
                     case 216:
                         var15 = _closure1_slot1;
                         var16 = _closure1_slot2;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var14.id = var18;
                         var17 = !var17;
                         if (!var17) {
-                            _fun90292_ip = 265;
-                            continue _fun90292
+                            _fun90293_ip = 265;
+                            continue _fun90293
                         }
                     case 259:
                         var17 = var23.animated;
@@ -411,8 +411,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var15 = var13.bind(var15)();
             var13 = 22;
             if (!var15) {
-                _fun90291_ip = 570;
-                continue _fun90291
+                _fun90292_ip = 570;
+                continue _fun90292
             }
         case 567:
             var13 = var14;
@@ -425,26 +425,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var11.bind(var12)();
             var11 = undefined;
             if (!var12) {
-                _fun90291_ip = 606;
-                continue _fun90291
+                _fun90292_ip = 606;
+                continue _fun90292
             }
         case 603:
             var11 = 32;
         case 606:
             var8.lineHeight = var11;
-            var11 = var5[var9];
-            var11 = var10.bind(var0)(var11);
-            var11 = var11.colors;
-            var11 = var11.INTERACTIVE_TEXT_DEFAULT;
-            var8.color = var11;
-            var3.textEmoji = var8;
-            var8 = {};
             var9 = var5[var9];
             var9 = var10.bind(var0)(var9);
             var9 = var9.colors;
-            var9 = var9.WHITE;
-            var8.tintColor = var9;
-            var3.icon = var8;
+            var9 = var9.INTERACTIVE_TEXT_DEFAULT;
+            var8.color = var9;
+            var3.textEmoji = var8;
             var8 = {
                 'flexDirection': 'row',
                 'alignItems': 'center',
@@ -468,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/double_tap_to_react/native/DoubleTapToReactChatInputBanner.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function() {
-                _fun90296: for (var _fun90296_ip = 0;;) switch (_fun90296_ip) {
+                _fun90297: for (var _fun90297_ip = 0;;) switch (_fun90297_ip) {
                     case 0:
                         var1 = _closure1_slot13;
                         var4 = undefined;
@@ -544,20 +537,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2[1] = var8;
                         var2[2] = var1;
                         var1 = function() { // Environment: var0
-                            _fun90299: for (var _fun90299_ip = 0;;) switch (_fun90299_ip) {
+                            _fun90300: for (var _fun90300_ip = 0;;) switch (_fun90300_ip) {
                                 case 0:
                                     var3 = _closure2_slot1;
                                     var2 = _closure2_slot4;
                                     var1 = var2.set;
                                     if (var3) {
-                                        _fun90299_ip = 28;
-                                        continue _fun90299
+                                        _fun90300_ip = 28;
+                                        continue _fun90300
                                     }
                                 case 19:
                                     var3 = 0;
                                     var3 = var1.bind(var2)(var3);
-                                    _fun90299_ip = 37;
-                                    continue _fun90299;
+                                    _fun90300_ip = 37;
+                                    continue _fun90300;
                                 case 28:
                                     var0 = _closure2_slot2;
                                     var0 = var1.bind(var2)(var0);
@@ -571,13 +564,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var10.bind(var4)(var1);
                         var2 = var7.useAnimatedStyle;
                         var1 = function() {
-                            _fun90300: for (var _fun90300_ip = 0;;) switch (_fun90300_ip) {
+                            _fun90301: for (var _fun90301_ip = 0;;) switch (_fun90301_ip) {
                                 case 0:
                                     var0 = _closure2_slot3;
                                     var1 = {};
                                     if (var0) {
-                                        _fun90300_ip = 132;
-                                        continue _fun90300
+                                        _fun90301_ip = 132;
+                                        continue _fun90301
                                     }
                                 case 12:
                                     var10 = _closure1_slot0;
@@ -607,8 +600,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var0 = var4.bind(var5)(var0, var3);
                                     var1.height = var0;
                                     var0 = var1;
-                                    _fun90300_ip = 152;
-                                    continue _fun90300;
+                                    _fun90301_ip = 152;
+                                    continue _fun90301;
                                 case 132:
                                     var3 = _closure2_slot4;
                                     var2 = var3.get;
@@ -664,7 +657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = new Array(1);
                         var2[0] = var16;
                         var1 = function() { // Environment: var0
-                            _fun90302: for (var _fun90302_ip = 0;;) switch (_fun90302_ip) {
+                            _fun90303: for (var _fun90303_ip = 0;;) switch (_fun90303_ip) {
                                 case 0:
                                     var3 = _closure1_slot0;
                                     var1 = _closure1_slot2;
@@ -677,8 +670,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = _closure2_slot0;
                                     var3 = null;
                                     if (!(var3 != var4)) {
-                                        _fun90302_ip = 155;
-                                        continue _fun90302
+                                        _fun90303_ip = 155;
+                                        continue _fun90303
                                     }
                                 case 48:
                                     var4 = _closure1_slot1;
@@ -742,8 +735,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = null;
                         var1 = var0 == var16;
                         if (var1) {
-                            _fun90296_ip = 738;
-                            continue _fun90296
+                            _fun90297_ip = 738;
+                            continue _fun90297
                         }
                     case 502:
                         var3 = _closure1_slot10;
@@ -808,4 +801,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.DoubleTapToReactChatInputBanner = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 11670, 1369, 1624, 33, 1297, 671, 478, 632, 5820, 1417, 3942, 1234, 11732, 4904, 4734, 5264, 481, 3721, 4097, 4886, 7078, 3279, 11733, 1307, 7071, 7097, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 11665, 1369, 1624, 33, 1297, 671, 478, 632, 5821, 1417, 3942, 1234, 11727, 4904, 4734, 5264, 481, 3721, 4097, 4886, 7079, 3279, 11728, 1307, 7072, 7098, 2]);

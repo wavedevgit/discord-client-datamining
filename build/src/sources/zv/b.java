@@ -1,115 +1,39 @@
 package zv;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.Locale;
 import kotlin.jvm.internal.Intrinsics;
-import qr.p;
-import ys.e;
+import zv.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b {
+public final class b implements tu.b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f56697a = new a(null);
+    public static final b f56709a = new b();
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private a() {
-        }
+    private b() {
     }
 
-    /* renamed from: zv.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public /* synthetic */ class C0808b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f56698a;
-
-        static {
-            int[] iArr = new int[zv.a.values().length];
-            try {
-                iArr[zv.a.MILLISECOND.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                iArr[zv.a.SECOND.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            try {
-                iArr[zv.a.MINUTE.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
-            try {
-                iArr[zv.a.HOUR.ordinal()] = 4;
-            } catch (NoSuchFieldError unused4) {
-            }
-            try {
-                iArr[zv.a.DAY.ordinal()] = 5;
-            } catch (NoSuchFieldError unused5) {
-            }
-            try {
-                iArr[zv.a.MONTH.ordinal()] = 6;
-            } catch (NoSuchFieldError unused6) {
-            }
-            try {
-                iArr[zv.a.YEAR.ordinal()] = 7;
-            } catch (NoSuchFieldError unused7) {
-            }
-            f56698a = iArr;
-        }
+    public String a(Object obj) {
+        return o.a.a(this, obj);
     }
 
-    private final String b(zv.a aVar) {
-        switch (C0808b.f56698a[aVar.ordinal()]) {
-            case 1:
-                return "";
-            case 2:
-                return ".001Z";
-            case 3:
-                return ":00.001Z";
-            case 4:
-                return ":00:00.001Z";
-            case 5:
-                return "T00:00:00.001Z";
-            case 6:
-                return "-01T00:00:00.001Z";
-            case 7:
-                return "-01-01T00:00:00.001Z";
-            default:
-                throw new p();
+    @Override // tu.b
+    public Object f(Object obj, Object obj2) {
+        String a10 = a(obj);
+        if (a10 != null) {
+            if (a10.length() > 0) {
+                StringBuilder sb2 = new StringBuilder();
+                String valueOf = String.valueOf(a10.charAt(0));
+                Intrinsics.checkNotNull(valueOf, "null cannot be cast to non-null type java.lang.String");
+                String upperCase = valueOf.toUpperCase(Locale.ROOT);
+                Intrinsics.checkNotNullExpressionValue(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
+                sb2.append((Object) upperCase);
+                String substring = a10.substring(1);
+                Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
+                sb2.append(substring);
+                return sb2.toString();
+            }
+            return a10;
         }
-    }
-
-    private final int c(zv.a aVar) {
-        switch (C0808b.f56698a[aVar.ordinal()]) {
-            case 1:
-                return 24;
-            case 2:
-                return 19;
-            case 3:
-                return 16;
-            case 4:
-                return 13;
-            case 5:
-                return 10;
-            case 6:
-                return 7;
-            case 7:
-                return 4;
-            default:
-                throw new p();
-        }
-    }
-
-    public final e a(String isoDate, zv.a precision) {
-        Intrinsics.checkNotNullParameter(isoDate, "isoDate");
-        Intrinsics.checkNotNullParameter(precision, "precision");
-        e.a aVar = e.Companion;
-        String substring = isoDate.substring(0, c(precision));
-        Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
-        String b10 = b(precision);
-        return aVar.f(substring + b10);
+        return null;
     }
 }

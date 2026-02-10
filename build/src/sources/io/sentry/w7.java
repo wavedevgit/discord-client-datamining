@@ -13,58 +13,58 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class w7 implements e1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final d8 f29102b;
+    private final d8 f29302b;
 
     /* renamed from: d  reason: collision with root package name */
-    private final w0 f29104d;
+    private final w0 f29304d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29105e;
+    private String f29305e;
 
     /* renamed from: g  reason: collision with root package name */
-    private volatile TimerTask f29107g;
+    private volatile TimerTask f29307g;
 
     /* renamed from: h  reason: collision with root package name */
-    private volatile TimerTask f29108h;
+    private volatile TimerTask f29308h;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile Timer f29109i;
+    private volatile Timer f29309i;
 
     /* renamed from: n  reason: collision with root package name */
-    private io.sentry.protocol.g0 f29114n;
+    private io.sentry.protocol.g0 f29314n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final j1 f29115o;
+    private final j1 f29315o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final io.sentry.protocol.c f29116p;
+    private final io.sentry.protocol.c f29316p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final h f29117q;
+    private final h f29317q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final v8 f29118r;
+    private final v8 f29318r;
 
     /* renamed from: a  reason: collision with root package name */
-    private final io.sentry.protocol.x f29101a = new io.sentry.protocol.x();
+    private final io.sentry.protocol.x f29301a = new io.sentry.protocol.x();
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f29103c = new CopyOnWriteArrayList();
+    private final List f29303c = new CopyOnWriteArrayList();
 
     /* renamed from: f  reason: collision with root package name */
-    private c f29106f = c.f29121c;
+    private c f29306f = c.f29321c;
 
     /* renamed from: j  reason: collision with root package name */
-    private final io.sentry.util.a f29110j = new io.sentry.util.a();
+    private final io.sentry.util.a f29310j = new io.sentry.util.a();
 
     /* renamed from: k  reason: collision with root package name */
-    private final io.sentry.util.a f29111k = new io.sentry.util.a();
+    private final io.sentry.util.a f29311k = new io.sentry.util.a();
 
     /* renamed from: l  reason: collision with root package name */
-    private final AtomicBoolean f29112l = new AtomicBoolean(false);
+    private final AtomicBoolean f29312l = new AtomicBoolean(false);
 
     /* renamed from: m  reason: collision with root package name */
-    private final AtomicBoolean f29113m = new AtomicBoolean(false);
+    private final AtomicBoolean f29313m = new AtomicBoolean(false);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -95,17 +95,17 @@ public final class w7 implements e1 {
     public static final class c {
 
         /* renamed from: c  reason: collision with root package name */
-        static final c f29121c = d();
+        static final c f29321c = d();
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f29122a;
+        private final boolean f29322a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final l8 f29123b;
+        private final l8 f29323b;
 
         private c(boolean z10, l8 l8Var) {
-            this.f29122a = z10;
-            this.f29123b = l8Var;
+            this.f29322a = z10;
+            this.f29323b = l8Var;
         }
 
         static c c(l8 l8Var) {
@@ -119,24 +119,24 @@ public final class w7 implements e1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w7(t8 t8Var, w0 w0Var, v8 v8Var, h hVar) {
-        this.f29109i = null;
+        this.f29309i = null;
         io.sentry.protocol.c cVar = new io.sentry.protocol.c();
-        this.f29116p = cVar;
+        this.f29316p = cVar;
         io.sentry.util.y.c(t8Var, "context is required");
         io.sentry.util.y.c(w0Var, "scopes are required");
         d8 d8Var = new d8(t8Var, this, w0Var, v8Var);
-        this.f29102b = d8Var;
-        this.f29105e = t8Var.y();
-        this.f29115o = t8Var.e();
-        this.f29104d = w0Var;
+        this.f29302b = d8Var;
+        this.f29305e = t8Var.y();
+        this.f29315o = t8Var.e();
+        this.f29304d = w0Var;
         Boolean bool = Boolean.TRUE;
         hVar = bool.equals(c()) ? hVar : null;
-        this.f29117q = hVar;
-        this.f29114n = t8Var.A();
-        this.f29118r = v8Var;
+        this.f29317q = hVar;
+        this.f29314n = t8Var.A();
+        this.f29318r = v8Var;
         V(d8Var);
         io.sentry.protocol.x L = L();
-        if (!L.equals(io.sentry.protocol.x.f28663e) && bool.equals(c())) {
+        if (!L.equals(io.sentry.protocol.x.f28863e) && bool.equals(c())) {
             cVar.v(new n3(L));
         }
         if (hVar != null) {
@@ -145,18 +145,18 @@ public final class w7 implements e1 {
         if (v8Var.l() == null && v8Var.k() == null) {
             return;
         }
-        this.f29109i = new Timer(true);
+        this.f29309i = new Timer(true);
         U();
         p();
     }
 
     private void C() {
-        a1 a10 = this.f29110j.a();
+        a1 a10 = this.f29310j.a();
         try {
-            if (this.f29108h != null) {
-                this.f29108h.cancel();
-                this.f29113m.set(false);
-                this.f29108h = null;
+            if (this.f29308h != null) {
+                this.f29308h.cancel();
+                this.f29313m.set(false);
+                this.f29308h = null;
             }
             if (a10 != null) {
                 a10.close();
@@ -174,12 +174,12 @@ public final class w7 implements e1 {
     }
 
     private void D() {
-        a1 a10 = this.f29110j.a();
+        a1 a10 = this.f29310j.a();
         try {
-            if (this.f29107g != null) {
-                this.f29107g.cancel();
-                this.f29112l.set(false);
-                this.f29107g = null;
+            if (this.f29307g != null) {
+                this.f29307g.cancel();
+                this.f29312l.set(false);
+                this.f29307g = null;
             }
             if (a10 != null) {
                 a10.close();
@@ -197,37 +197,37 @@ public final class w7 implements e1 {
     }
 
     private ISpan E(e8 e8Var, k8 k8Var) {
-        if (this.f29102b.isFinished()) {
+        if (this.f29302b.isFinished()) {
             return y2.u();
         }
-        if (!this.f29115o.equals(e8Var.e())) {
+        if (!this.f29315o.equals(e8Var.e())) {
             return y2.u();
         }
-        if (io.sentry.util.e0.b(this.f29104d.b().getIgnoredSpanOrigins(), k8Var.a())) {
+        if (io.sentry.util.e0.b(this.f29304d.b().getIgnoredSpanOrigins(), k8Var.a())) {
             return y2.u();
         }
         j8 h10 = e8Var.h();
         String f10 = e8Var.f();
         String c10 = e8Var.c();
-        if (this.f29103c.size() < this.f29104d.b().getMaxSpans()) {
+        if (this.f29303c.size() < this.f29304d.b().getMaxSpans()) {
             io.sentry.util.y.c(h10, "parentSpanId is required");
             io.sentry.util.y.c(f10, "operation is required");
             D();
-            d8 d8Var = new d8(this, this.f29104d, e8Var, k8Var, new g8() { // from class: io.sentry.s7
+            d8 d8Var = new d8(this, this.f29304d, e8Var, k8Var, new g8() { // from class: io.sentry.s7
                 @Override // io.sentry.g8
                 public final void a(d8 d8Var2) {
                     w7.y(w7.this, d8Var2);
                 }
             });
             V(d8Var);
-            this.f29103c.add(d8Var);
-            h hVar = this.f29117q;
+            this.f29303c.add(d8Var);
+            h hVar = this.f29317q;
             if (hVar != null) {
                 hVar.b(d8Var);
             }
             return d8Var;
         }
-        this.f29104d.b().getLogger().c(SentryLevel.WARNING, "Span operation: %s, description: %s dropped due to limit reached. Returning NoOpSpan.", f10, c10);
+        this.f29304d.b().getLogger().c(SentryLevel.WARNING, "Span operation: %s, description: %s dropped due to limit reached. Returning NoOpSpan.", f10, c10);
         return y2.u();
     }
 
@@ -239,28 +239,28 @@ public final class w7 implements e1 {
     }
 
     private ISpan G(String str, String str2, j5 j5Var, j1 j1Var, k8 k8Var) {
-        if (this.f29102b.isFinished()) {
+        if (this.f29302b.isFinished()) {
             return y2.u();
         }
-        if (!this.f29115o.equals(j1Var)) {
+        if (!this.f29315o.equals(j1Var)) {
             return y2.u();
         }
-        if (this.f29103c.size() < this.f29104d.b().getMaxSpans()) {
-            return this.f29102b.o(str, str2, j5Var, j1Var, k8Var);
+        if (this.f29303c.size() < this.f29304d.b().getMaxSpans()) {
+            return this.f29302b.o(str, str2, j5Var, j1Var, k8Var);
         }
-        this.f29104d.b().getLogger().c(SentryLevel.WARNING, "Span operation: %s, description: %s dropped due to limit reached. Returning NoOpSpan.", str, str2);
+        this.f29304d.b().getLogger().c(SentryLevel.WARNING, "Span operation: %s, description: %s dropped due to limit reached. Returning NoOpSpan.", str, str2);
         return y2.u();
     }
 
     private io.sentry.protocol.x L() {
-        if (!this.f29102b.q().j().equals(io.sentry.protocol.x.f28663e)) {
-            return this.f29102b.q().j();
+        if (!this.f29302b.q().j().equals(io.sentry.protocol.x.f28863e)) {
+            return this.f29302b.q().j();
         }
-        return this.f29104d.b().getContinuousProfiler().h();
+        return this.f29304d.b().getContinuousProfiler().h();
     }
 
     private boolean Q() {
-        ListIterator listIterator = this.f29103c.listIterator();
+        ListIterator listIterator = this.f29303c.listIterator();
         while (listIterator.hasNext()) {
             d8 d8Var = (d8) listIterator.next();
             if (!d8Var.isFinished() && d8Var.r() == null) {
@@ -277,13 +277,13 @@ public final class w7 implements e1 {
         if (a10 == null) {
             a10 = l8.DEADLINE_EXCEEDED;
         }
-        if (this.f29118r.l() != null) {
+        if (this.f29318r.l() != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         b(a10, z10, null);
-        this.f29113m.set(false);
+        this.f29313m.set(false);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -293,19 +293,19 @@ public final class w7 implements e1 {
             a10 = l8.OK;
         }
         k(a10);
-        this.f29112l.set(false);
+        this.f29312l.set(false);
     }
 
     private void U() {
-        Long k10 = this.f29118r.k();
+        Long k10 = this.f29318r.k();
         if (k10 != null) {
-            a1 a10 = this.f29110j.a();
+            a1 a10 = this.f29310j.a();
             try {
-                if (this.f29109i != null) {
+                if (this.f29309i != null) {
                     C();
-                    this.f29113m.set(true);
-                    this.f29108h = new b();
-                    this.f29109i.schedule(this.f29108h, k10.longValue());
+                    this.f29313m.set(true);
+                    this.f29308h = new b();
+                    this.f29309i.schedule(this.f29308h, k10.longValue());
                 }
                 if (a10 != null) {
                     a10.close();
@@ -324,9 +324,9 @@ public final class w7 implements e1 {
     }
 
     private void V(ISpan iSpan) {
-        io.sentry.util.thread.a threadChecker = this.f29104d.b().getThreadChecker();
+        io.sentry.util.thread.a threadChecker = this.f29304d.b().getThreadChecker();
         io.sentry.protocol.x L = L();
-        if (!L.equals(io.sentry.protocol.x.f28663e) && Boolean.TRUE.equals(iSpan.c())) {
+        if (!L.equals(io.sentry.protocol.x.f28863e) && Boolean.TRUE.equals(iSpan.c())) {
             iSpan.j("profiler_id", L.toString());
         }
         iSpan.j("thread.id", String.valueOf(threadChecker.c()));
@@ -334,17 +334,17 @@ public final class w7 implements e1 {
     }
 
     private void c0(d dVar) {
-        a1 a10 = this.f29111k.a();
+        a1 a10 = this.f29311k.a();
         try {
             if (dVar.q()) {
                 final AtomicReference atomicReference = new AtomicReference();
-                this.f29104d.o(new b4() { // from class: io.sentry.v7
+                this.f29304d.o(new b4() { // from class: io.sentry.v7
                     @Override // io.sentry.b4
                     public final void a(IScope iScope) {
-                        atomicReference.set(iScope.K());
+                        atomicReference.set(iScope.J());
                     }
                 });
-                dVar.I(q().p(), (io.sentry.protocol.x) atomicReference.get(), this.f29104d.b(), N(), getName(), P());
+                dVar.I(q().p(), (io.sentry.protocol.x) atomicReference.get(), this.f29304d.b(), N(), getName(), P());
                 dVar.b();
             }
             if (a10 != null) {
@@ -365,13 +365,13 @@ public final class w7 implements e1 {
     public static /* synthetic */ void v(w7 w7Var, IScope iScope, e1 e1Var) {
         w7Var.getClass();
         if (e1Var == w7Var) {
-            iScope.F();
+            iScope.E();
         }
     }
 
     public static /* synthetic */ void w(final w7 w7Var, final IScope iScope) {
         w7Var.getClass();
-        iScope.S(new z3.c() { // from class: io.sentry.u7
+        iScope.R(new z3.c() { // from class: io.sentry.u7
             @Override // io.sentry.z3.c
             public final void a(e1 e1Var) {
                 w7.v(w7.this, iScope, e1Var);
@@ -381,21 +381,21 @@ public final class w7 implements e1 {
 
     public static /* synthetic */ void x(w7 w7Var, IScope iScope) {
         w7Var.getClass();
-        iScope.B(w7Var);
+        iScope.A(w7Var);
     }
 
     public static /* synthetic */ void y(w7 w7Var, d8 d8Var) {
-        h hVar = w7Var.f29117q;
+        h hVar = w7Var.f29317q;
         if (hVar != null) {
             hVar.a(d8Var);
         }
-        c cVar = w7Var.f29106f;
-        if (w7Var.f29118r.l() != null) {
-            if (!w7Var.f29118r.q() || w7Var.Q()) {
+        c cVar = w7Var.f29306f;
+        if (w7Var.f29318r.l() != null) {
+            if (!w7Var.f29318r.q() || w7Var.Q()) {
                 w7Var.p();
             }
-        } else if (cVar.f29122a) {
-            w7Var.k(cVar.f29123b);
+        } else if (cVar.f29322a) {
+            w7Var.k(cVar.f29323b);
         }
     }
 
@@ -404,11 +404,11 @@ public final class w7 implements e1 {
             w7Var.getClass();
             g8Var.a(d8Var);
         }
-        u8 n10 = w7Var.f29118r.n();
+        u8 n10 = w7Var.f29318r.n();
         if (n10 != null) {
             n10.a(w7Var);
         }
-        h hVar = w7Var.f29117q;
+        h hVar = w7Var.f29317q;
         if (hVar != null) {
             atomicReference.set(hVar.d(w7Var));
         }
@@ -417,66 +417,66 @@ public final class w7 implements e1 {
     public void H(l8 l8Var, j5 j5Var, boolean z10, Hint hint) {
         q3 q3Var;
         l8 l8Var2;
-        j5 r10 = this.f29102b.r();
+        j5 r10 = this.f29302b.r();
         if (j5Var == null) {
             j5Var = r10;
         }
         if (j5Var == null) {
-            j5Var = this.f29104d.b().getDateProvider().now();
+            j5Var = this.f29304d.b().getDateProvider().now();
         }
-        for (d8 d8Var : this.f29103c) {
+        for (d8 d8Var : this.f29303c) {
             if (d8Var.y().d()) {
                 if (l8Var != null) {
                     l8Var2 = l8Var;
                 } else {
-                    l8Var2 = q().f28160r;
+                    l8Var2 = q().f28360r;
                 }
                 d8Var.s(l8Var2, j5Var);
             }
         }
-        this.f29106f = c.c(l8Var);
-        if (!this.f29102b.isFinished()) {
-            if (!this.f29118r.q() || Q()) {
+        this.f29306f = c.c(l8Var);
+        if (!this.f29302b.isFinished()) {
+            if (!this.f29318r.q() || Q()) {
                 final AtomicReference atomicReference = new AtomicReference();
-                final g8 B = this.f29102b.B();
-                this.f29102b.G(new g8() { // from class: io.sentry.q7
+                final g8 B = this.f29302b.B();
+                this.f29302b.G(new g8() { // from class: io.sentry.q7
                     @Override // io.sentry.g8
                     public final void a(d8 d8Var2) {
                         w7.z(w7.this, B, atomicReference, d8Var2);
                     }
                 });
-                this.f29102b.s(this.f29106f.f29123b, j5Var);
+                this.f29302b.s(this.f29306f.f29323b, j5Var);
                 Boolean bool = Boolean.TRUE;
                 if (bool.equals(c()) && bool.equals(R())) {
-                    q3Var = this.f29104d.b().getTransactionProfiler().b(this, (List) atomicReference.get(), this.f29104d.b());
+                    q3Var = this.f29304d.b().getTransactionProfiler().b(this, (List) atomicReference.get(), this.f29304d.b());
                 } else {
                     q3Var = null;
                 }
-                if (this.f29104d.b().isContinuousProfilingEnabled()) {
-                    o3 profileLifecycle = this.f29104d.b().getProfileLifecycle();
+                if (this.f29304d.b().isContinuousProfilingEnabled()) {
+                    o3 profileLifecycle = this.f29304d.b().getProfileLifecycle();
                     o3 o3Var = o3.TRACE;
-                    if (profileLifecycle == o3Var && this.f29102b.q().j().equals(io.sentry.protocol.x.f28663e)) {
-                        this.f29104d.b().getContinuousProfiler().g(o3Var);
+                    if (profileLifecycle == o3Var && this.f29302b.q().j().equals(io.sentry.protocol.x.f28863e)) {
+                        this.f29304d.b().getContinuousProfiler().g(o3Var);
                     }
                 }
                 if (atomicReference.get() != null) {
                     ((List) atomicReference.get()).clear();
                 }
-                this.f29104d.o(new b4() { // from class: io.sentry.r7
+                this.f29304d.o(new b4() { // from class: io.sentry.r7
                     @Override // io.sentry.b4
                     public final void a(IScope iScope) {
                         w7.w(w7.this, iScope);
                     }
                 });
                 io.sentry.protocol.d0 d0Var = new io.sentry.protocol.d0(this);
-                if (this.f29109i != null) {
-                    a1 a10 = this.f29110j.a();
+                if (this.f29309i != null) {
+                    a1 a10 = this.f29310j.a();
                     try {
-                        if (this.f29109i != null) {
+                        if (this.f29309i != null) {
                             D();
                             C();
-                            this.f29109i.cancel();
-                            this.f29109i = null;
+                            this.f29309i.cancel();
+                            this.f29309i = null;
                         }
                         if (a10 != null) {
                             a10.close();
@@ -492,57 +492,57 @@ public final class w7 implements e1 {
                         throw th2;
                     }
                 }
-                if (z10 && this.f29103c.isEmpty() && this.f29118r.l() != null) {
-                    this.f29104d.b().getLogger().c(SentryLevel.DEBUG, "Dropping idle transaction %s because it has no child spans", this.f29105e);
+                if (z10 && this.f29303c.isEmpty() && this.f29318r.l() != null) {
+                    this.f29304d.b().getLogger().c(SentryLevel.DEBUG, "Dropping idle transaction %s because it has no child spans", this.f29305e);
                     return;
                 }
-                d0Var.o0().putAll(this.f29102b.w());
-                this.f29104d.G(d0Var, i(), hint, q3Var);
+                d0Var.o0().putAll(this.f29302b.w());
+                this.f29304d.G(d0Var, i(), hint, q3Var);
             }
         }
     }
 
     public List I() {
-        return this.f29103c;
+        return this.f29303c;
     }
 
     public io.sentry.protocol.c J() {
-        return this.f29116p;
+        return this.f29316p;
     }
 
     public Map K() {
-        return this.f29102b.u();
+        return this.f29302b.u();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d8 M() {
-        return this.f29102b;
+        return this.f29302b;
     }
 
     public s8 N() {
-        return this.f29102b.A();
+        return this.f29302b.A();
     }
 
     public List O() {
-        return this.f29103c;
+        return this.f29303c;
     }
 
     public io.sentry.protocol.g0 P() {
-        return this.f29114n;
+        return this.f29314n;
     }
 
     public Boolean R() {
-        return this.f29102b.F();
+        return this.f29302b.F();
     }
 
     public void W(String str, Number number) {
-        if (!this.f29102b.w().containsKey(str)) {
+        if (!this.f29302b.w().containsKey(str)) {
             h(str, number);
         }
     }
 
     public void X(String str, Number number, a2 a2Var) {
-        if (!this.f29102b.w().containsKey(str)) {
+        if (!this.f29302b.w().containsKey(str)) {
             m(str, number, a2Var);
         }
     }
@@ -563,7 +563,7 @@ public final class w7 implements e1 {
 
     @Override // io.sentry.ISpan
     public l8 a() {
-        return this.f29102b.a();
+        return this.f29302b.a();
     }
 
     ISpan a0(j8 j8Var, String str, String str2, k8 k8Var) {
@@ -575,8 +575,8 @@ public final class w7 implements e1 {
         if (isFinished()) {
             return;
         }
-        j5 now = this.f29104d.b().getDateProvider().now();
-        ListIterator d10 = io.sentry.util.c.d((CopyOnWriteArrayList) this.f29103c);
+        j5 now = this.f29304d.b().getDateProvider().now();
+        ListIterator d10 = io.sentry.util.c.d((CopyOnWriteArrayList) this.f29303c);
         while (d10.hasPrevious()) {
             d8 d8Var = (d8) d10.previous();
             d8Var.G(null);
@@ -591,7 +591,7 @@ public final class w7 implements e1 {
 
     @Override // io.sentry.ISpan
     public Boolean c() {
-        return this.f29102b.c();
+        return this.f29302b.c();
     }
 
     @Override // io.sentry.ISpan
@@ -601,16 +601,16 @@ public final class w7 implements e1 {
 
     @Override // io.sentry.ISpan
     public void e(String str) {
-        if (this.f29102b.isFinished()) {
-            this.f29104d.b().getLogger().c(SentryLevel.DEBUG, "The transaction is already finished. Description %s cannot be set", str);
+        if (this.f29302b.isFinished()) {
+            this.f29304d.b().getLogger().c(SentryLevel.DEBUG, "The transaction is already finished. Description %s cannot be set", str);
         } else {
-            this.f29102b.e(str);
+            this.f29302b.e(str);
         }
     }
 
     @Override // io.sentry.e1
     public io.sentry.protocol.x f() {
-        return this.f29101a;
+        return this.f29301a;
     }
 
     @Override // io.sentry.ISpan
@@ -620,23 +620,23 @@ public final class w7 implements e1 {
 
     @Override // io.sentry.ISpan
     public String getDescription() {
-        return this.f29102b.getDescription();
+        return this.f29302b.getDescription();
     }
 
     @Override // io.sentry.e1
     public String getName() {
-        return this.f29105e;
+        return this.f29305e;
     }
 
     @Override // io.sentry.ISpan
     public void h(String str, Number number) {
-        this.f29102b.h(str, number);
+        this.f29302b.h(str, number);
     }
 
     @Override // io.sentry.ISpan
     public q8 i() {
         d b10;
-        if (this.f29104d.b().isTraceSampling() && (b10 = q().b()) != null) {
+        if (this.f29304d.b().isTraceSampling() && (b10 = q().b()) != null) {
             c0(b10);
             return b10.J();
         }
@@ -645,15 +645,15 @@ public final class w7 implements e1 {
 
     @Override // io.sentry.ISpan
     public boolean isFinished() {
-        return this.f29102b.isFinished();
+        return this.f29302b.isFinished();
     }
 
     @Override // io.sentry.ISpan
     public void j(String str, Object obj) {
-        if (this.f29102b.isFinished()) {
-            this.f29104d.b().getLogger().c(SentryLevel.DEBUG, "The transaction is already finished. Data %s cannot be set", str);
+        if (this.f29302b.isFinished()) {
+            this.f29304d.b().getLogger().c(SentryLevel.DEBUG, "The transaction is already finished. Data %s cannot be set", str);
         } else {
-            this.f29102b.j(str, obj);
+            this.f29302b.j(str, obj);
         }
     }
 
@@ -669,12 +669,12 @@ public final class w7 implements e1 {
 
     @Override // io.sentry.ISpan
     public void m(String str, Number number, a2 a2Var) {
-        this.f29102b.m(str, number, a2Var);
+        this.f29302b.m(str, number, a2Var);
     }
 
     @Override // io.sentry.ISpan
     public a1 makeCurrent() {
-        this.f29104d.o(new b4() { // from class: io.sentry.t7
+        this.f29304d.o(new b4() { // from class: io.sentry.t7
             @Override // io.sentry.b4
             public final void a(IScope iScope) {
                 w7.x(w7.this, iScope);
@@ -685,7 +685,7 @@ public final class w7 implements e1 {
 
     @Override // io.sentry.e1
     public ISpan n() {
-        ListIterator d10 = io.sentry.util.c.d((CopyOnWriteArrayList) this.f29103c);
+        ListIterator d10 = io.sentry.util.c.d((CopyOnWriteArrayList) this.f29303c);
         while (d10.hasPrevious()) {
             d8 d8Var = (d8) d10.previous();
             if (!d8Var.isFinished()) {
@@ -703,13 +703,13 @@ public final class w7 implements e1 {
     @Override // io.sentry.e1
     public void p() {
         Long l10;
-        a1 a10 = this.f29110j.a();
+        a1 a10 = this.f29310j.a();
         try {
-            if (this.f29109i != null && (l10 = this.f29118r.l()) != null) {
+            if (this.f29309i != null && (l10 = this.f29318r.l()) != null) {
                 D();
-                this.f29112l.set(true);
-                this.f29107g = new a();
-                this.f29109i.schedule(this.f29107g, l10.longValue());
+                this.f29312l.set(true);
+                this.f29307g = new a();
+                this.f29309i.schedule(this.f29307g, l10.longValue());
             }
             if (a10 != null) {
                 a10.close();
@@ -728,12 +728,12 @@ public final class w7 implements e1 {
 
     @Override // io.sentry.ISpan
     public e8 q() {
-        return this.f29102b.q();
+        return this.f29302b.q();
     }
 
     @Override // io.sentry.ISpan
     public j5 r() {
-        return this.f29102b.r();
+        return this.f29302b.r();
     }
 
     @Override // io.sentry.ISpan
@@ -743,6 +743,6 @@ public final class w7 implements e1 {
 
     @Override // io.sentry.ISpan
     public j5 t() {
-        return this.f29102b.t();
+        return this.f29302b.t();
     }
 }

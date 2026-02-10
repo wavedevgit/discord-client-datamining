@@ -35,19 +35,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = 4;
     var8.marginVertical = var11;
     var3.actionBarCTAContainer = var8;
-    var8 = {};
-    var9 = 3;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.WHITE;
-    var8.tintColor = var12;
-    var3.imageStyle = var8;
     var8 = {
         'tintColor': null,
         'width': 20,
         'height': 20
     };
+    var9 = 3;
     var12 = var5[var9];
     var12 = var10.bind(var0)(var12);
     var12 = var12.colors;
@@ -83,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun65893: for (var _fun65893_ip = 0;;) switch (_fun65893_ip) {
+        _fun65730: for (var _fun65730_ip = 0;;) switch (_fun65730_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guild;
@@ -104,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.canCreateGuildEvent;
                 var0 = null;
                 if (!var1) {
-                    _fun65893_ip = 296;
-                    continue _fun65893
+                    _fun65730_ip = 296;
+                    continue _fun65730
                 }
             case 87:
                 var3 = _closure1_slot3;
@@ -172,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ScheduleEventPrompt = var3;
     var1 = function arg0() {
-        _fun65895: for (var _fun65895_ip = 0;;) switch (_fun65895_ip) {
+        _fun65732: for (var _fun65732_ip = 0;;) switch (_fun65732_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.event;
@@ -197,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var4)(var1);
                 var0 = null;
                 if (!var1) {
-                    _fun65895_ip = 395;
-                    continue _fun65895
+                    _fun65732_ip = 395;
+                    continue _fun65732
                 }
             case 110:
                 var3 = _closure1_slot3;
@@ -280,4 +273,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.StartEventPrompt = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8161, 5430, 8167, 8250, 1234, 3134, 3047, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8136, 5431, 8142, 8225, 1234, 3134, 3047, 2]);

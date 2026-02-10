@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/profile_customization/native/EditIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80872: for (var _fun80872_ip = 0;;) switch (_fun80872_ip) {
+        _fun80737: for (var _fun80737_ip = 0;;) switch (_fun80737_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.style;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1.size;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun80872_ip = 29;
-                    continue _fun80872
+                    _fun80737_ip = 29;
+                    continue _fun80737
                 }
             case 25:
                 var6 = 'xs';
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[1] = var7;
                 var1[2] = var6;
                 var0 = function() { // Environment: var0
-                    _fun80873: for (var _fun80873_ip = 0;;) switch (_fun80873_ip) {
+                    _fun80738: for (var _fun80738_ip = 0;;) switch (_fun80738_ip) {
                         case 0:
                             var0 = {};
                             var1 = _closure2_slot2;
@@ -112,14 +112,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot1;
                             var3 = 'sm';
                             if (!(var3 !== var4)) {
-                                _fun80873_ip = 47;
-                                continue _fun80873
+                                _fun80738_ip = 47;
+                                continue _fun80738
                             }
                         case 35:
                             var3 = _closure2_slot2;
                             var3 = var3.xs;
-                            _fun80873_ip = 57;
-                            continue _fun80873;
+                            _fun80738_ip = 57;
+                            continue _fun80738;
                         case 47:
                             var4 = _closure2_slot2;
                             var3 = var4.sm;
@@ -153,4 +153,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7584, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7560, 2]);

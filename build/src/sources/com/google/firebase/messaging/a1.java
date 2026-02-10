@@ -16,39 +16,39 @@ import java.util.concurrent.TimeoutException;
 public class a1 {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final long f16409i = TimeUnit.HOURS.toSeconds(8);
+    private static final long f16549i = TimeUnit.HOURS.toSeconds(8);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f16410a;
+    private final Context f16550a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h0 f16411b;
+    private final h0 f16551b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c0 f16412c;
+    private final c0 f16552c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final FirebaseMessaging f16413d;
+    private final FirebaseMessaging f16553d;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ScheduledExecutorService f16415f;
+    private final ScheduledExecutorService f16555f;
 
     /* renamed from: h  reason: collision with root package name */
-    private final y0 f16417h;
+    private final y0 f16557h;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f16414e = new u0.a();
+    private final Map f16554e = new u0.a();
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f16416g = false;
+    private boolean f16556g = false;
 
     private a1(FirebaseMessaging firebaseMessaging, h0 h0Var, y0 y0Var, c0 c0Var, Context context, ScheduledExecutorService scheduledExecutorService) {
-        this.f16413d = firebaseMessaging;
-        this.f16411b = h0Var;
-        this.f16417h = y0Var;
-        this.f16412c = c0Var;
-        this.f16410a = context;
-        this.f16415f = scheduledExecutorService;
+        this.f16553d = firebaseMessaging;
+        this.f16551b = h0Var;
+        this.f16557h = y0Var;
+        this.f16552c = c0Var;
+        this.f16550a = context;
+        this.f16555f = scheduledExecutorService;
     }
 
     public static /* synthetic */ a1 a(Context context, ScheduledExecutorService scheduledExecutorService, FirebaseMessaging firebaseMessaging, h0 h0Var, c0 c0Var) {
@@ -57,7 +57,7 @@ public class a1 {
 
     private static void b(Task task) {
         try {
-            yg.m.b(task, 30L, TimeUnit.SECONDS);
+            zg.m.b(task, 30L, TimeUnit.SECONDS);
         } catch (InterruptedException | TimeoutException e10) {
             throw new IOException("SERVICE_NOT_AVAILABLE", e10);
         } catch (ExecutionException e11) {
@@ -73,16 +73,16 @@ public class a1 {
     }
 
     private void c(String str) {
-        b(this.f16412c.l(this.f16413d.k(), str));
+        b(this.f16552c.l(this.f16553d.k(), str));
     }
 
     private void d(String str) {
-        b(this.f16412c.m(this.f16413d.k(), str));
+        b(this.f16552c.m(this.f16553d.k(), str));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Task e(final FirebaseMessaging firebaseMessaging, final h0 h0Var, final c0 c0Var, final Context context, final ScheduledExecutorService scheduledExecutorService) {
-        return yg.m.c(scheduledExecutorService, new Callable() { // from class: com.google.firebase.messaging.z0
+        return zg.m.c(scheduledExecutorService, new Callable() { // from class: com.google.firebase.messaging.z0
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return a1.a(context, scheduledExecutorService, firebaseMessaging, h0Var, c0Var);
@@ -98,19 +98,19 @@ public class a1 {
     }
 
     private void i(x0 x0Var) {
-        synchronized (this.f16414e) {
+        synchronized (this.f16554e) {
             try {
                 String e10 = x0Var.e();
-                if (!this.f16414e.containsKey(e10)) {
+                if (!this.f16554e.containsKey(e10)) {
                     return;
                 }
-                ArrayDeque arrayDeque = (ArrayDeque) this.f16414e.get(e10);
-                yg.k kVar = (yg.k) arrayDeque.poll();
+                ArrayDeque arrayDeque = (ArrayDeque) this.f16554e.get(e10);
+                zg.k kVar = (zg.k) arrayDeque.poll();
                 if (kVar != null) {
                     kVar.c(null);
                 }
                 if (arrayDeque.isEmpty()) {
-                    this.f16414e.remove(e10);
+                    this.f16554e.remove(e10);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -125,14 +125,14 @@ public class a1 {
     }
 
     boolean f() {
-        if (this.f16417h.b() != null) {
+        if (this.f16557h.b() != null) {
             return true;
         }
         return false;
     }
 
     synchronized boolean h() {
-        return this.f16416g;
+        return this.f16556g;
     }
 
     boolean j(x0 x0Var) {
@@ -176,12 +176,12 @@ public class a1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void k(Runnable runnable, long j10) {
-        this.f16415f.schedule(runnable, j10, TimeUnit.SECONDS);
+        this.f16555f.schedule(runnable, j10, TimeUnit.SECONDS);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void l(boolean z10) {
-        this.f16416g = z10;
+        this.f16556g = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -210,7 +210,7 @@ public class a1 {
             r2 = this;
         L0:
             monitor-enter(r2)
-            com.google.firebase.messaging.y0 r0 = r2.f16417h     // Catch: java.lang.Throwable -> L17
+            com.google.firebase.messaging.y0 r0 = r2.f16557h     // Catch: java.lang.Throwable -> L17
             com.google.firebase.messaging.x0 r0 = r0.b()     // Catch: java.lang.Throwable -> L17
             if (r0 != 0) goto L1c
             boolean r0 = g()     // Catch: java.lang.Throwable -> L17
@@ -233,7 +233,7 @@ public class a1 {
             r0 = 0
             return r0
         L25:
-            com.google.firebase.messaging.y0 r1 = r2.f16417h
+            com.google.firebase.messaging.y0 r1 = r2.f16557h
             r1.d(r0)
             r2.i(r0)
             goto L0
@@ -246,7 +246,7 @@ public class a1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(long j10) {
-        k(new b1(this, this.f16410a, this.f16411b, Math.min(Math.max(30L, 2 * j10), f16409i)), j10);
+        k(new b1(this, this.f16550a, this.f16551b, Math.min(Math.max(30L, 2 * j10), f16549i)), j10);
         l(true);
     }
 }

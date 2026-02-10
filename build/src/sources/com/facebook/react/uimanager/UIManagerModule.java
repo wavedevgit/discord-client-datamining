@@ -86,7 +86,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
     static {
         LegacyArchitectureLogger.assertLegacyArchitecture("UIManagerModule", LegacyArchitectureLogLevel.ERROR);
         TAG = UIManagerModule.class.getSimpleName();
-        DEBUG = a9.c.a().a(b9.a.f6503g);
+        DEBUG = b9.c.a().a(c9.a.f7344g);
     }
 
     public UIManagerModule(ReactApplicationContext reactApplicationContext, ViewManagerResolver viewManagerResolver, int i10) {
@@ -108,11 +108,11 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
 
     private static Map<String, Object> createConstants(ViewManagerResolver viewManagerResolver) {
         ReactMarker.logMarker(ReactMarkerConstants.CREATE_UI_MANAGER_MODULE_CONSTANTS_START);
-        qb.b.a(0L, "CreateUIManagerConstants").b("Lazy", Boolean.TRUE).c();
+        rb.b.a(0L, "CreateUIManagerConstants").b("Lazy", Boolean.TRUE).c();
         try {
             return UIManagerModuleConstantsHelper.internal_createConstants(viewManagerResolver);
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
             ReactMarker.logMarker(ReactMarkerConstants.CREATE_UI_MANAGER_MODULE_CONSTANTS_END);
         }
     }
@@ -149,8 +149,8 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
     public void createView(int i10, String str, int i11, ReadableMap readableMap) {
         if (DEBUG) {
             String str2 = "(UIManager.createView) tag: " + i10 + ", class: " + str + ", props: " + readableMap;
-            p8.a.b(ReactConstants.TAG, str2);
-            a9.c.a().c(b9.a.f6503g, str2);
+            q8.a.b(ReactConstants.TAG, str2);
+            b9.c.a().b(c9.a.f7344g, str2);
         }
         this.mUIImplementation.createView(i10, str, i11, readableMap);
     }
@@ -254,7 +254,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
     public void invalidateNodeLayout(int i10) {
         ReactShadowNode resolveShadowNode = this.mUIImplementation.resolveShadowNode(i10);
         if (resolveShadowNode == null) {
-            p8.a.J(ReactConstants.TAG, "Warning : attempted to dirty a non-existent react shadow node. reactTag=" + i10);
+            q8.a.J(ReactConstants.TAG, "Warning : attempted to dirty a non-existent react shadow node. reactTag=" + i10);
             return;
         }
         resolveShadowNode.dirty();
@@ -265,8 +265,8 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
     public void manageChildren(int i10, ReadableArray readableArray, ReadableArray readableArray2, ReadableArray readableArray3, ReadableArray readableArray4, ReadableArray readableArray5) {
         if (DEBUG) {
             String str = "(UIManager.manageChildren) tag: " + i10 + ", moveFrom: " + readableArray + ", moveTo: " + readableArray2 + ", addTags: " + readableArray3 + ", atIndices: " + readableArray4 + ", removeFrom: " + readableArray5;
-            p8.a.b(ReactConstants.TAG, str);
-            a9.c.a().c(b9.a.f6503g, str);
+            q8.a.b(ReactConstants.TAG, str);
+            b9.c.a().b(c9.a.f7344g, str);
         }
         this.mUIImplementation.manageChildren(i10, readableArray, readableArray2, readableArray3, readableArray4, readableArray5);
     }
@@ -297,7 +297,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
     public void onBatchComplete() {
         int i10 = this.mBatchId;
         this.mBatchId = i10 + 1;
-        qb.b.a(0L, "onBatchCompleteUI").a("BatchId", i10).c();
+        rb.b.a(0L, "onBatchCompleteUI").a("BatchId", i10).c();
         for (UIManagerModuleListener uIManagerModuleListener : this.mListeners) {
             uIManagerModuleListener.willDispatchViewUpdates(this);
         }
@@ -310,7 +310,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
                 this.mUIImplementation.dispatchViewUpdates(i10);
             }
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
         }
     }
 
@@ -400,8 +400,8 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
     public void setChildren(int i10, ReadableArray readableArray) {
         if (DEBUG) {
             String str = "(UIManager.setChildren) tag: " + i10 + ", children: " + readableArray;
-            p8.a.b(ReactConstants.TAG, str);
-            a9.c.a().c(b9.a.f6503g, str);
+            q8.a.b(ReactConstants.TAG, str);
+            b9.c.a().b(c9.a.f7344g, str);
         }
         this.mUIImplementation.setChildren(i10, readableArray);
     }
@@ -476,8 +476,8 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
     public void updateView(int i10, String str, ReadableMap readableMap) {
         if (DEBUG) {
             String str2 = "(UIManager.updateView) tag: " + i10 + ", class: " + str + ", props: " + readableMap;
-            p8.a.b(ReactConstants.TAG, str2);
-            a9.c.a().c(b9.a.f6503g, str2);
+            q8.a.b(ReactConstants.TAG, str2);
+            b9.c.a().b(c9.a.f7344g, str2);
         }
         this.mUIImplementation.updateView(i10, str, readableMap);
     }
@@ -490,10 +490,10 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
 
     @Override // com.facebook.react.bridge.UIManager
     public <T extends View> int addRootView(T t10, WritableMap writableMap) {
-        qb.a.c(0L, "UIManagerModule.addRootView");
+        rb.a.c(0L, "UIManagerModule.addRootView");
         int nextRootViewTag = ReactRootViewTagGenerator.getNextRootViewTag();
         this.mUIImplementation.registerRootView(t10, nextRootViewTag, new ThemedReactContext(getReactApplicationContext(), t10.getContext(), ((ReactRoot) t10).getSurfaceID(), -1));
-        qb.a.i(0L);
+        rb.a.i(0L);
         return nextRootViewTag;
     }
 
@@ -508,7 +508,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
     }
 
     public static WritableMap getConstantsForViewManager(ViewManager viewManager, Map<String, Object> map) {
-        qb.b.a(0L, "UIManagerModule.getConstantsForViewManager").b("ViewManager", viewManager.getName()).b("Lazy", Boolean.TRUE).c();
+        rb.b.a(0L, "UIManagerModule.getConstantsForViewManager").b("ViewManager", viewManager.getName()).b("Lazy", Boolean.TRUE).c();
         try {
             Map<String, Object> internal_createConstantsForViewManager = UIManagerModuleConstantsHelper.internal_createConstantsForViewManager(viewManager, null, null, null, map);
             if (internal_createConstantsForViewManager != null) {
@@ -516,13 +516,13 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
             }
             return null;
         } finally {
-            qb.b.b(0L).c();
+            rb.b.b(0L).c();
         }
     }
 
     public static Map<String, Object> createConstants(List<ViewManager> list, Map<String, Object> map, Map<String, Object> map2) {
         ReactMarker.logMarker(ReactMarkerConstants.CREATE_UI_MANAGER_MODULE_CONSTANTS_START);
-        qb.b.a(0L, "CreateUIManagerConstants").b("Lazy", Boolean.FALSE).c();
+        rb.b.a(0L, "CreateUIManagerConstants").b("Lazy", Boolean.FALSE).c();
         try {
             Map<String, Object> cachedConstants = UIManagerConstantsCache.getInstance().getCachedConstants();
             Map<String, Object> cachedBubblingEventsTypes = UIManagerConstantsCache.getInstance().getCachedBubblingEventsTypes();
@@ -536,7 +536,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
             UIManagerConstantsCache.getInstance().saveConstantsAndBubblingEventsTypes(internal_createConstants, map);
             return internal_createConstants;
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
             ReactMarker.logMarker(ReactMarkerConstants.CREATE_UI_MANAGER_MODULE_CONSTANTS_END);
         }
     }
@@ -547,7 +547,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
         this.mListeners = new ArrayList();
         this.mUIManagerListeners = new CopyOnWriteArrayList<>();
         this.mBatchId = 0;
-        qb.a.c(0L, "UIManagerModule.init");
+        rb.a.c(0L, "UIManagerModule.init");
         DisplayMetricsHolder.initDisplayMetricsIfNotInitialized(reactApplicationContext);
         EventDispatcherImpl eventDispatcherImpl = new EventDispatcherImpl(reactApplicationContext);
         this.mEventDispatcher = eventDispatcherImpl;

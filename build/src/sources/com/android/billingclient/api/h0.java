@@ -15,18 +15,18 @@ import java.util.Objects;
 public final class h0 extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f7949a;
+    private boolean f8089a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f7950b;
+    private final boolean f8090b;
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ i0 f7951c;
+    final /* synthetic */ i0 f8091c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h0(i0 i0Var, boolean z10) {
-        this.f7951c = i0Var;
-        this.f7950b = z10;
+        this.f8091c = i0Var;
+        this.f8090b = z10;
     }
 
     private final void d(Bundle bundle, BillingResult billingResult, int i10) {
@@ -34,7 +34,7 @@ public final class h0 extends BroadcastReceiver {
         t tVar2;
         if (bundle.getByteArray("FAILURE_LOGGING_PAYLOAD") != null) {
             try {
-                tVar = this.f7951c.f7956c;
+                tVar = this.f8091c.f8096c;
                 tVar.e(r4.B(bundle.getByteArray("FAILURE_LOGGING_PAYLOAD"), e1.a()));
                 return;
             } catch (Throwable unused) {
@@ -42,18 +42,18 @@ public final class h0 extends BroadcastReceiver {
                 return;
             }
         }
-        tVar2 = this.f7951c.f7956c;
+        tVar2 = this.f8091c.f8096c;
         tVar2.e(s.a(23, i10, billingResult));
     }
 
     public final synchronized void a(Context context, IntentFilter intentFilter) {
         int i10;
         try {
-            if (this.f7949a) {
+            if (this.f8089a) {
                 return;
             }
             if (Build.VERSION.SDK_INT >= 33) {
-                if (true != this.f7950b) {
+                if (true != this.f8090b) {
                     i10 = 4;
                 } else {
                     i10 = 2;
@@ -62,7 +62,7 @@ public final class h0 extends BroadcastReceiver {
             } else {
                 context.registerReceiver(this, intentFilter);
             }
-            this.f7949a = true;
+            this.f8089a = true;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -73,11 +73,11 @@ public final class h0 extends BroadcastReceiver {
         int i10;
         try {
             try {
-                if (this.f7949a) {
+                if (this.f8089a) {
                     return;
                 }
                 if (Build.VERSION.SDK_INT >= 33) {
-                    if (true != this.f7950b) {
+                    if (true != this.f8090b) {
                         i10 = 4;
                     } else {
                         i10 = 2;
@@ -88,7 +88,7 @@ public final class h0 extends BroadcastReceiver {
                     h0Var = this;
                     context.registerReceiver(this, intentFilter, "com.google.android.finsky.permission.PLAY_BILLING_LIBRARY_BROADCAST", null);
                 }
-                h0Var.f7949a = true;
+                h0Var.f8089a = true;
             } catch (Throwable th2) {
                 th = th2;
                 throw th;
@@ -100,9 +100,9 @@ public final class h0 extends BroadcastReceiver {
     }
 
     public final synchronized void c(Context context) {
-        if (this.f7949a) {
+        if (this.f8089a) {
             context.unregisterReceiver(this);
-            this.f7949a = false;
+            this.f8089a = false;
             return;
         }
         com.google.android.gms.internal.play_billing.a0.i("BillingBroadcastManager", "Receiver is not registered.");
@@ -110,25 +110,25 @@ public final class h0 extends BroadcastReceiver {
 
     @Override // android.content.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        a6.k kVar;
+        b6.k kVar;
         t tVar;
         t tVar2;
-        a6.k kVar2;
-        a6.k kVar3;
+        b6.k kVar2;
+        b6.k kVar3;
         t tVar3;
-        a6.k kVar4;
-        a6.k kVar5;
+        b6.k kVar4;
+        b6.k kVar5;
         Bundle extras = intent.getExtras();
         int i10 = 1;
         if (extras == null) {
             com.google.android.gms.internal.play_billing.a0.i("BillingBroadcastManager", "Bundle is null.");
-            tVar3 = this.f7951c.f7956c;
-            BillingResult billingResult = u.f8011j;
+            tVar3 = this.f8091c.f8096c;
+            BillingResult billingResult = u.f8151j;
             tVar3.e(s.a(11, 1, billingResult));
-            i0 i0Var = this.f7951c;
-            kVar4 = i0Var.f7955b;
+            i0 i0Var = this.f8091c;
+            kVar4 = i0Var.f8095b;
             if (kVar4 != null) {
-                kVar5 = i0Var.f7955b;
+                kVar5 = i0Var.f8095b;
                 kVar5.onPurchasesUpdated(billingResult, null);
                 return;
             }
@@ -143,18 +143,18 @@ public final class h0 extends BroadcastReceiver {
             if (action.equals("com.android.vending.billing.ALTERNATIVE_BILLING")) {
                 if (d10.b() != 0) {
                     d(extras, d10, i10);
-                    kVar3 = this.f7951c.f7955b;
+                    kVar3 = this.f8091c.f8095b;
                     kVar3.onPurchasesUpdated(d10, com.google.android.gms.internal.play_billing.j.l());
                     return;
                 }
-                i0 i0Var2 = this.f7951c;
+                i0 i0Var2 = this.f8091c;
                 i0.a(i0Var2);
                 i0.e(i0Var2);
                 com.google.android.gms.internal.play_billing.a0.i("BillingBroadcastManager", "AlternativeBillingListener and UserChoiceBillingListener is null.");
-                tVar2 = this.f7951c.f7956c;
-                BillingResult billingResult2 = u.f8011j;
+                tVar2 = this.f8091c.f8096c;
+                BillingResult billingResult2 = u.f8151j;
                 tVar2.e(s.a(77, i10, billingResult2));
-                kVar2 = this.f7951c.f7955b;
+                kVar2 = this.f8091c.f8095b;
                 kVar2.onPurchasesUpdated(billingResult2, com.google.android.gms.internal.play_billing.j.l());
                 return;
             }
@@ -162,12 +162,12 @@ public final class h0 extends BroadcastReceiver {
         }
         List g10 = com.google.android.gms.internal.play_billing.a0.g(extras);
         if (d10.b() == 0) {
-            tVar = this.f7951c.f7956c;
+            tVar = this.f8091c.f8096c;
             tVar.b(s.c(i10));
         } else {
             d(extras, d10, i10);
         }
-        kVar = this.f7951c.f7955b;
+        kVar = this.f8091c.f8095b;
         kVar.onPurchasesUpdated(d10, g10);
     }
 }

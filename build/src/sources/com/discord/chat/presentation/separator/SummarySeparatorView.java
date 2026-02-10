@@ -150,7 +150,7 @@ public final class SummarySeparatorView extends ChatListConstraintLayout {
         ColorUtilsKt.setTintColor(moreButton2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()));
         FrameLayout buttonWrapper = inflate.buttonWrapper;
         Intrinsics.checkNotNullExpressionValue(buttonWrapper, "buttonWrapper");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(buttonWrapper, false, new View.OnClickListener() { // from class: d7.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(buttonWrapper, false, new View.OnClickListener() { // from class: e7.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 SummarySeparatorView.h(SeparatorSummaryViewBinding.this, view);

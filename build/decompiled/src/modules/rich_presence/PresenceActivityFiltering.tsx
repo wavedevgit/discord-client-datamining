@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rich_presence/PresenceActivityFiltering.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun51061: for (var _fun51061_ip = 0;;) switch (_fun51061_ip) {
+        _fun51064: for (var _fun51064_ip = 0;;) switch (_fun51064_ip) {
             case 0:
                 var0 = arg0;
                 var2 = arg1;
@@ -35,15 +35,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.id;
                 var5 = null;
                 if (!(var5 !== var2)) {
-                    _fun51061_ip = 124;
-                    continue _fun51061
+                    _fun51064_ip = 124;
+                    continue _fun51064
                 }
             case 23:
                 var3 = var0.id;
                 var2 = undefined;
                 if (!(var2 !== var3)) {
-                    _fun51061_ip = 124;
-                    continue _fun51061
+                    _fun51064_ip = 124;
+                    continue _fun51064
                 }
             case 34:
                 var4 = _closure1_slot2;
@@ -52,16 +52,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var4)(var0);
                 var0 = var5 != var3;
                 if (!var0) {
-                    _fun51061_ip = 74;
-                    continue _fun51061
+                    _fun51064_ip = 74;
+                    continue _fun51064
                 }
             case 64:
                 var4 = var3.linkedGames;
                 var0 = var5 != var4;
             case 74:
                 if (!var0) {
-                    _fun51061_ip = 94;
-                    continue _fun51061
+                    _fun51064_ip = 94;
+                    continue _fun51064
                 }
             case 77:
                 var4 = var3.linkedGames;
@@ -70,14 +70,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5 > var4;
             case 94:
                 if (!var0) {
-                    _fun51061_ip = 122;
-                    continue _fun51061
+                    _fun51064_ip = 122;
+                    continue _fun51064
                 }
             case 97:
                 var4 = var3.linkedGames;
                 var3 = var4.find;
                 var1 = function(arg0) { // Environment: var1
-                    _fun51062: for (var _fun51062_ip = 0;;) switch (_fun51062_ip) {
+                    _fun51065: for (var _fun51065_ip = 0;;) switch (_fun51065_ip) {
                         case 0:
                             var1 = arg0;
                             var2 = var1.type;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.LINKED;
                             var0 = var2 === var0;
                             if (!var0) {
-                                _fun51062_ip = 77;
-                                continue _fun51062
+                                _fun51065_ip = 77;
+                                continue _fun51065
                             }
                         case 52:
                             var3 = var1.id;

@@ -24,7 +24,7 @@ public class BridgeReactContext extends ReactApplicationContext {
     private CatalystInstance mCatalystInstance;
     private volatile boolean mDestroyed;
 
-    @fb.a
+    @gb.a
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface RCTDeviceEventEmitter extends JavaScriptModule {
         void emit(@NonNull String str, Object obj);
@@ -61,7 +61,7 @@ public class BridgeReactContext extends ReactApplicationContext {
 
     @Override // com.facebook.react.bridge.ReactContext
     public CatalystInstance getCatalystInstance() {
-        return (CatalystInstance) db.a.c(this.mCatalystInstance);
+        return (CatalystInstance) eb.a.c(this.mCatalystInstance);
     }
 
     @Override // com.facebook.react.bridge.ReactContext
@@ -113,7 +113,7 @@ public class BridgeReactContext extends ReactApplicationContext {
         if (this.mCatalystInstance == null) {
             raiseCatalystInstanceMissingException();
         }
-        db.a.c(this.mCatalystInstance);
+        eb.a.c(this.mCatalystInstance);
         return (T) this.mCatalystInstance.getNativeModule(cls);
     }
 
@@ -122,7 +122,7 @@ public class BridgeReactContext extends ReactApplicationContext {
         if (this.mCatalystInstance == null) {
             raiseCatalystInstanceMissingException();
         }
-        db.a.c(this.mCatalystInstance);
+        eb.a.c(this.mCatalystInstance);
         return this.mCatalystInstance.getNativeModules();
     }
 
@@ -158,7 +158,7 @@ public class BridgeReactContext extends ReactApplicationContext {
             getJSExceptionHandler().handleException(exc);
             return;
         }
-        p8.a.n(ReactConstants.TAG, "Unable to handle Exception - catalystInstanceVariableExists: " + z10 + " - isCatalystInstanceAlive: " + z11 + " - hasExceptionHandler: " + z12, exc);
+        q8.a.n(ReactConstants.TAG, "Unable to handle Exception - catalystInstanceVariableExists: " + z10 + " - isCatalystInstanceAlive: " + z11 + " - hasExceptionHandler: " + z12, exc);
         throw new IllegalStateException(exc);
     }
 
@@ -191,7 +191,7 @@ public class BridgeReactContext extends ReactApplicationContext {
         if (this.mCatalystInstance == null) {
             raiseCatalystInstanceMissingException();
         }
-        db.a.c(this.mCatalystInstance);
+        eb.a.c(this.mCatalystInstance);
         return this.mCatalystInstance.hasNativeModule(cls);
     }
 
@@ -227,8 +227,8 @@ public class BridgeReactContext extends ReactApplicationContext {
 
     @Override // com.facebook.react.bridge.ReactContext
     public void registerSegment(int i10, String str, Callback callback) {
-        ((CatalystInstance) db.a.c(this.mCatalystInstance)).registerSegment(i10, str);
-        ((Callback) db.a.c(callback)).invoke(new Object[0]);
+        ((CatalystInstance) eb.a.c(this.mCatalystInstance)).registerSegment(i10, str);
+        ((Callback) eb.a.c(callback)).invoke(new Object[0]);
     }
 
     @Override // com.facebook.react.bridge.ReactContext
@@ -236,7 +236,7 @@ public class BridgeReactContext extends ReactApplicationContext {
         if (this.mCatalystInstance == null) {
             raiseCatalystInstanceMissingException();
         }
-        db.a.c(this.mCatalystInstance);
+        eb.a.c(this.mCatalystInstance);
         return this.mCatalystInstance.getNativeModule(str);
     }
 }

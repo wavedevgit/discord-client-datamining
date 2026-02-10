@@ -1,40 +1,20 @@
 package vq;
+
+import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.withpersona.sdk2.reactnative.PersonaInquiryModule2;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+public class a implements ReactPackage {
+    @Override // com.facebook.react.ReactPackage
+    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
+        return Arrays.asList(new PersonaInquiryModule2(reactApplicationContext));
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    public static int f52898a = 2131101193;
-
-    /* renamed from: b  reason: collision with root package name */
-    public static int f52899b = 2131101196;
-
-    /* renamed from: c  reason: collision with root package name */
-    public static int f52900c = 2131101197;
-
-    /* renamed from: d  reason: collision with root package name */
-    public static int f52901d = 2131101198;
-
-    /* renamed from: e  reason: collision with root package name */
-    public static int f52902e = 2131101199;
-
-    /* renamed from: f  reason: collision with root package name */
-    public static int f52903f = 2131101200;
-
-    /* renamed from: g  reason: collision with root package name */
-    public static int f52904g = 2131101205;
-
-    /* renamed from: h  reason: collision with root package name */
-    public static int f52905h = 2131101206;
-
-    /* renamed from: i  reason: collision with root package name */
-    public static int f52906i = 2131101207;
-
-    /* renamed from: j  reason: collision with root package name */
-    public static int f52907j = 2131101209;
-
-    /* renamed from: k  reason: collision with root package name */
-    public static int f52908k = 2131101210;
-
-    /* renamed from: l  reason: collision with root package name */
-    public static int f52909l = 2131101213;
+    @Override // com.facebook.react.ReactPackage
+    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
+        return Collections.EMPTY_LIST;
+    }
 }

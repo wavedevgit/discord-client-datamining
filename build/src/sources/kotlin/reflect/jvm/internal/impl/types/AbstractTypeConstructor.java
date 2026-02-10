@@ -22,38 +22,38 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstructor {
 
     /* renamed from: b  reason: collision with root package name */
-    private final NotNullLazyValue f34592b;
+    private final NotNullLazyValue f34301b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f34593c;
+    private final boolean f34302c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public final class a implements TypeConstructor {
 
         /* renamed from: a  reason: collision with root package name */
-        private final KotlinTypeRefiner f34594a;
+        private final KotlinTypeRefiner f34303a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Lazy f34595b;
+        private final Lazy f34304b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ AbstractTypeConstructor f34596c;
+        final /* synthetic */ AbstractTypeConstructor f34305c;
 
         public a(AbstractTypeConstructor abstractTypeConstructor, KotlinTypeRefiner kotlinTypeRefiner) {
             Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
-            this.f34596c = abstractTypeConstructor;
-            this.f34594a = kotlinTypeRefiner;
-            this.f34595b = qr.l.b(qr.o.f48092e, new j(this, abstractTypeConstructor));
+            this.f34305c = abstractTypeConstructor;
+            this.f34303a = kotlinTypeRefiner;
+            this.f34304b = rr.l.b(rr.o.f49210e, new j(this, abstractTypeConstructor));
         }
 
         private final List b() {
-            return (List) this.f34595b.getValue();
+            return (List) this.f34304b.getValue();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final List d(a aVar, AbstractTypeConstructor abstractTypeConstructor) {
-            return KotlinTypeRefinerKt.refineTypes(aVar.f34594a, abstractTypeConstructor.getSupertypes());
+            return KotlinTypeRefinerKt.refineTypes(aVar.f34303a, abstractTypeConstructor.getSupertypes());
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -63,12 +63,12 @@ public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
         }
 
         public boolean equals(Object obj) {
-            return this.f34596c.equals(obj);
+            return this.f34305c.equals(obj);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         public KotlinBuiltIns getBuiltIns() {
-            KotlinBuiltIns builtIns = this.f34596c.getBuiltIns();
+            KotlinBuiltIns builtIns = this.f34305c.getBuiltIns();
             Intrinsics.checkNotNullExpressionValue(builtIns, "getBuiltIns(...)");
             return builtIns;
         }
@@ -76,33 +76,33 @@ public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         /* renamed from: getDeclarationDescriptor */
         public ClassifierDescriptor mo1199getDeclarationDescriptor() {
-            return this.f34596c.mo1199getDeclarationDescriptor();
+            return this.f34305c.mo1199getDeclarationDescriptor();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         public List getParameters() {
-            List<TypeParameterDescriptor> parameters = this.f34596c.getParameters();
+            List<TypeParameterDescriptor> parameters = this.f34305c.getParameters();
             Intrinsics.checkNotNullExpressionValue(parameters, "getParameters(...)");
             return parameters;
         }
 
         public int hashCode() {
-            return this.f34596c.hashCode();
+            return this.f34305c.hashCode();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         public boolean isDenotable() {
-            return this.f34596c.isDenotable();
+            return this.f34305c.isDenotable();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         public TypeConstructor refine(KotlinTypeRefiner kotlinTypeRefiner) {
             Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
-            return this.f34596c.refine(kotlinTypeRefiner);
+            return this.f34305c.refine(kotlinTypeRefiner);
         }
 
         public String toString() {
-            return this.f34596c.toString();
+            return this.f34305c.toString();
         }
     }
 
@@ -111,34 +111,34 @@ public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Collection f34597a;
+        private final Collection f34306a;
 
         /* renamed from: b  reason: collision with root package name */
-        private List f34598b;
+        private List f34307b;
 
         public b(Collection allSupertypes) {
             Intrinsics.checkNotNullParameter(allSupertypes, "allSupertypes");
-            this.f34597a = allSupertypes;
-            this.f34598b = CollectionsKt.e(ErrorUtils.INSTANCE.getErrorTypeForLoopInSupertypes());
+            this.f34306a = allSupertypes;
+            this.f34307b = CollectionsKt.e(ErrorUtils.INSTANCE.getErrorTypeForLoopInSupertypes());
         }
 
         public final Collection a() {
-            return this.f34597a;
+            return this.f34306a;
         }
 
         public final List b() {
-            return this.f34598b;
+            return this.f34307b;
         }
 
         public final void c(List list) {
             Intrinsics.checkNotNullParameter(list, "<set-?>");
-            this.f34598b = list;
+            this.f34307b = list;
         }
     }
 
     public AbstractTypeConstructor(@NotNull StorageManager storageManager) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
-        this.f34592b = storageManager.createLazyValueWithPostCompute(new c(this), d.f34740d, new e(this));
+        this.f34301b = storageManager.createLazyValueWithPostCompute(new c(this), d.f34449d, new e(this));
     }
 
     private final Collection k(TypeConstructor typeConstructor, boolean z10) {
@@ -149,7 +149,7 @@ public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
         } else {
             abstractTypeConstructor = null;
         }
-        if (abstractTypeConstructor != null && (L0 = CollectionsKt.L0(((b) abstractTypeConstructor.f34592b.invoke()).a(), abstractTypeConstructor.n(z10))) != null) {
+        if (abstractTypeConstructor != null && (L0 = CollectionsKt.L0(((b) abstractTypeConstructor.f34301b.invoke()).a(), abstractTypeConstructor.n(z10))) != null) {
             return L0;
         }
         Collection<KotlinType> supertypes = typeConstructor.getSupertypes();
@@ -195,7 +195,7 @@ public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
             list2 = CollectionsKt.h1(findLoopsInSupertypesAndDisconnect);
         }
         supertypes.c(abstractTypeConstructor.q(list2));
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -208,7 +208,7 @@ public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
     public static final Unit x(AbstractTypeConstructor abstractTypeConstructor, KotlinType it) {
         Intrinsics.checkNotNullParameter(it, "it");
         abstractTypeConstructor.s(it);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -221,7 +221,7 @@ public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
     public static final Unit z(AbstractTypeConstructor abstractTypeConstructor, KotlinType it) {
         Intrinsics.checkNotNullParameter(it, "it");
         abstractTypeConstructor.r(it);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     protected abstract Collection l();
@@ -235,7 +235,7 @@ public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
     }
 
     protected boolean o() {
-        return this.f34593c;
+        return this.f34302c;
     }
 
     protected abstract SupertypeLoopChecker p();
@@ -263,6 +263,6 @@ public abstract class AbstractTypeConstructor extends ClassifierBasedTypeConstru
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public List<KotlinType> getSupertypes() {
-        return ((b) this.f34592b.invoke()).b();
+        return ((b) this.f34301b.invoke()).b();
     }
 }

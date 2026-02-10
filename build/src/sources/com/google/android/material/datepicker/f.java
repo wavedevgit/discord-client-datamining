@@ -9,7 +9,7 @@ public class f implements a.c {
     public static final Parcelable.Creator<f> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f14879d;
+    private final long f15019d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Parcelable.Creator {
@@ -38,8 +38,8 @@ public class f implements a.c {
     }
 
     @Override // com.google.android.material.datepicker.a.c
-    public boolean Y(long j10) {
-        if (j10 >= this.f14879d) {
+    public boolean Z(long j10) {
+        if (j10 >= this.f15019d) {
             return true;
         }
         return false;
@@ -54,22 +54,22 @@ public class f implements a.c {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof f) && this.f14879d == ((f) obj).f14879d) {
+        if ((obj instanceof f) && this.f15019d == ((f) obj).f15019d) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{Long.valueOf(this.f14879d)});
+        return Arrays.hashCode(new Object[]{Long.valueOf(this.f15019d)});
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeLong(this.f14879d);
+        parcel.writeLong(this.f15019d);
     }
 
     private f(long j10) {
-        this.f14879d = j10;
+        this.f15019d = j10;
     }
 }

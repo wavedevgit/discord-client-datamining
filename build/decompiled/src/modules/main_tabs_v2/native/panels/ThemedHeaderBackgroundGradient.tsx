@@ -49,14 +49,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun105216: for (var _fun105216_ip = 0;;) switch (_fun105216_ip) {
+        _fun105196: for (var _fun105196_ip = 0;;) switch (_fun105196_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.baseColor;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun105216_ip = 49;
-                    continue _fun105216
+                    _fun105196_ip = 49;
+                    continue _fun105196
                 }
             case 15:
                 var2 = _closure1_slot1;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 49:
                 var5 = var0.minHeight;
                 if (!(var5 === var3)) {
-                    _fun105216_ip = 62;
-                    continue _fun105216
+                    _fun105196_ip = 62;
+                    continue _fun105196
                 }
             case 59:
                 var5 = 16;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var1;
                 var7 = 'transparent';
                 if (!var2) {
-                    _fun105216_ip = 166;
-                    continue _fun105216
+                    _fun105196_ip = 166;
+                    continue _fun105196
                 }
             case 163:
                 var7 = var1;

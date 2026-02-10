@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var12 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var12;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -21,13 +21,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
-    var10 = 1;
-    var3 = var5[var10];
+    var9 = 1;
+    var3 = var5[var9];
     var3 = var4.bind(var0)(var3);
     var3 = var3.View;
     var _closure1_slot3 = var3;
-    var9 = 2;
-    var3 = var5[var9];
+    var3 = 2;
+    var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.ChannelNotificationSettingsFlags;
     var _closure1_slot4 = var3;
@@ -50,36 +50,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'paddingHorizontal': null,
         'borderBottomWidth': 1
     };
-    var11 = 5;
-    var13 = var5[var11];
-    var13 = var12.bind(var0)(var13);
-    var13 = var13.spacing;
-    var13 = var13.PX_12;
-    var8.paddingVertical = var13;
-    var13 = var5[var11];
-    var13 = var12.bind(var0)(var13);
-    var13 = var13.spacing;
-    var13 = var13.PX_16;
-    var8.paddingHorizontal = var13;
-    var13 = var5[var11];
-    var13 = var12.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.BORDER_SUBTLE;
-    var8.borderBottomColor = var13;
-    var13 = var5[var11];
-    var13 = var12.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.BACKGROUND_BASE_LOW;
-    var8.backgroundColor = var13;
-    var11 = var5[var11];
-    var11 = var12.bind(var0)(var11);
-    var11 = var11.shadows;
-    var15 = var11.SHADOW_LOW;
-    var16 = var8;
-    var11 = copyDataProperties(var16, var15);
+    var10 = 5;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_12;
+    var8.paddingVertical = var12;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_16;
+    var8.paddingHorizontal = var12;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.BORDER_SUBTLE;
+    var8.borderBottomColor = var12;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.BACKGROUND_BASE_LOW;
+    var8.backgroundColor = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.shadows;
+    var14 = var10.SHADOW_LOW;
+    var15 = var8;
+    var10 = copyDataProperties(var15, var14);
     var3.content = var8;
     var8 = {};
-    var8.flex = var10;
+    var8.flex = var9;
     var3.informations = var8;
     var8 = {
         'display': 'flex',
@@ -94,9 +94,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'alignItems': 'center'
     };
     var3.inlineTextWithIcon = var8;
-    var8 = {};
-    var8.marginTop = var9;
-    var3.icon = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
     var3 = 11;
@@ -216,4 +213,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 665, 33, 1297, 671, 9910, 3942, 1234, 4904, 9911, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 665, 33, 1297, 671, 9888, 3942, 1234, 4904, 9889, 2]);

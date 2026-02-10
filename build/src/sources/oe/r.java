@@ -1,0 +1,57 @@
+package oe;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public class r {
+
+    /* renamed from: a  reason: collision with root package name */
+    public final int f40674a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final int f40675b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final float f40676c;
+
+    /* renamed from: d  reason: collision with root package name */
+    public final long f40677d;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        private int f40678a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private int f40679b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private float f40680c = 1.0f;
+
+        /* renamed from: d  reason: collision with root package name */
+        private long f40681d;
+
+        public b(int i10, int i11) {
+            this.f40678a = i10;
+            this.f40679b = i11;
+        }
+
+        public r a() {
+            return new r(this.f40678a, this.f40679b, this.f40680c, this.f40681d);
+        }
+
+        public b b(float f10) {
+            this.f40680c = f10;
+            return this;
+        }
+    }
+
+    private r(int i10, int i11, float f10, long j10) {
+        boolean z10 = i10 > 0;
+        oe.a.b(z10, "width must be positive, but is: " + i10);
+        boolean z11 = i11 > 0;
+        oe.a.b(z11, "height must be positive, but is: " + i11);
+        this.f40674a = i10;
+        this.f40675b = i11;
+        this.f40676c = f10;
+        this.f40677d = j10;
+    }
+}

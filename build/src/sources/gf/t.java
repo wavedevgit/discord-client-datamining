@@ -1,31 +1,29 @@
 package gf;
 
-import android.content.Context;
-import android.content.res.Resources;
-import com.withpersona.sdk2.inquiry.network.dto.InquiryField;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.common.api.internal.BasePendingResult;
+import ff.g;
+import java.util.Map;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class t {
+public final class t implements g.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f25194a;
+    final /* synthetic */ BasePendingResult f24367a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f25195b;
+    final /* synthetic */ v f24368b;
 
-    public t(Context context) {
-        q.l(context);
-        Resources resources = context.getResources();
-        this.f25194a = resources;
-        this.f25195b = resources.getResourcePackageName(com.google.android.gms.common.m.f13787a);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public t(v vVar, BasePendingResult basePendingResult) {
+        this.f24368b = vVar;
+        this.f24367a = basePendingResult;
     }
 
-    public String a(String str) {
-        String str2 = this.f25195b;
-        Resources resources = this.f25194a;
-        int identifier = resources.getIdentifier(str, InquiryField.StringField.TYPE, str2);
-        if (identifier == 0) {
-            return null;
-        }
-        return resources.getString(identifier);
+    @Override // ff.g.a
+    public final void a(Status status) {
+        Map map;
+        map = this.f24368b.f24379a;
+        map.remove(this.f24367a);
     }
 }

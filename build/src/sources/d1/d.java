@@ -29,7 +29,7 @@ public abstract class d {
         Intrinsics.checkNotNullParameter(cVar, "<this>");
         Intrinsics.checkNotNullParameter(whitePoint, "whitePoint");
         Intrinsics.checkNotNullParameter(adaptation, "adaptation");
-        if (b.e(cVar.e(), b.f20142a.b())) {
+        if (b.e(cVar.e(), b.f20375a.b())) {
             w wVar = (w) cVar;
             if (!f(wVar.J(), whitePoint)) {
                 return new w(wVar, k(e(adaptation.b(), wVar.J().c(), whitePoint.c()), wVar.I()), whitePoint);
@@ -40,7 +40,7 @@ public abstract class d {
 
     public static /* synthetic */ c d(c cVar, y yVar, a aVar, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            aVar = a.f20137b.a();
+            aVar = a.f20370b.a();
         }
         return c(cVar, yVar, aVar);
     }
@@ -84,22 +84,22 @@ public abstract class d {
     public static final h h(c connect, c destination, int i10) {
         Intrinsics.checkNotNullParameter(connect, "$this$connect");
         Intrinsics.checkNotNullParameter(destination, "destination");
-        g gVar = g.f20151a;
+        g gVar = g.f20384a;
         if (connect == gVar.h()) {
             if (destination == gVar.h()) {
-                return h.f20175g.d();
+                return h.f20408g.d();
             }
-            if (destination == gVar.g() && m.e(i10, m.f20205a.b())) {
-                return h.f20175g.e();
+            if (destination == gVar.g() && m.e(i10, m.f20438a.b())) {
+                return h.f20408g.e();
             }
-        } else if (connect == gVar.g() && destination == gVar.h() && m.e(i10, m.f20205a.b())) {
-            return h.f20175g.c();
+        } else if (connect == gVar.g() && destination == gVar.h() && m.e(i10, m.f20438a.b())) {
+            return h.f20408g.c();
         }
         if (connect == destination) {
-            return h.f20175g.f(connect);
+            return h.f20408g.f(connect);
         }
         long e10 = connect.e();
-        b.a aVar = b.f20142a;
+        b.a aVar = b.f20375a;
         if (b.e(e10, aVar.b()) && b.e(destination.e(), aVar.b())) {
             return new h.b((w) connect, (w) destination, i10, null);
         }
@@ -108,10 +108,10 @@ public abstract class d {
 
     public static /* synthetic */ h i(c cVar, c cVar2, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            cVar2 = g.f20151a.h();
+            cVar2 = g.f20384a.h();
         }
         if ((i11 & 2) != 0) {
-            i10 = m.f20205a.b();
+            i10 = m.f20438a.b();
         }
         return h(cVar, cVar2, i10);
     }

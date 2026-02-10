@@ -14,11 +14,11 @@ public abstract class NativeRNDatePickerSpec extends ReactContextBaseJavaModule 
     }
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void addListener(String str);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void closePicker();
 
     @Override // com.facebook.react.bridge.NativeModule
@@ -27,10 +27,10 @@ public abstract class NativeRNDatePickerSpec extends ReactContextBaseJavaModule 
     }
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void openPicker(ReadableMap readableMap);
 
     @ReactMethod
-    @fb.a
+    @gb.a
     public abstract void removeListeners(double d10);
 }

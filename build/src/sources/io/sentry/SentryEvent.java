@@ -94,7 +94,7 @@ public final class SentryEvent extends e5 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        List list = (List) e3Var.U1();
+                        List list = (List) e3Var.T1();
                         if (list == null) {
                             break;
                         } else {
@@ -104,44 +104,44 @@ public final class SentryEvent extends e5 implements w1 {
                     case 1:
                         e3Var.u();
                         e3Var.o0();
-                        sentryEvent.D = new y7(e3Var.g2(iLogger, new c0.a()));
+                        sentryEvent.D = new y7(e3Var.f2(iLogger, new c0.a()));
                         e3Var.D();
                         break;
                     case 2:
-                        sentryEvent.C = e3Var.q1();
+                        sentryEvent.C = e3Var.m1();
                         break;
                     case 3:
-                        Date u02 = e3Var.u0(iLogger);
-                        if (u02 == null) {
+                        Date s02 = e3Var.s0(iLogger);
+                        if (s02 == null) {
                             break;
                         } else {
-                            sentryEvent.A = u02;
+                            sentryEvent.A = s02;
                             break;
                         }
                     case 4:
-                        sentryEvent.F = (SentryLevel) e3Var.G0(iLogger, new SentryLevel.a());
+                        sentryEvent.F = (SentryLevel) e3Var.E0(iLogger, new SentryLevel.a());
                         break;
                     case 5:
-                        sentryEvent.B = (io.sentry.protocol.m) e3Var.G0(iLogger, new m.a());
+                        sentryEvent.B = (io.sentry.protocol.m) e3Var.E0(iLogger, new m.a());
                         break;
                     case 6:
-                        sentryEvent.J = io.sentry.util.c.b((Map) e3Var.U1());
+                        sentryEvent.J = io.sentry.util.c.b((Map) e3Var.T1());
                         break;
                     case 7:
                         e3Var.u();
                         e3Var.o0();
-                        sentryEvent.E = new y7(e3Var.g2(iLogger, new s.a()));
+                        sentryEvent.E = new y7(e3Var.f2(iLogger, new s.a()));
                         e3Var.D();
                         break;
                     case '\b':
-                        sentryEvent.G = e3Var.q1();
+                        sentryEvent.G = e3Var.m1();
                         break;
                     default:
                         if (!aVar.a(sentryEvent, o02, e3Var, iLogger)) {
                             if (concurrentHashMap == null) {
                                 concurrentHashMap = new ConcurrentHashMap();
                             }
-                            e3Var.u1(iLogger, concurrentHashMap, o02);
+                            e3Var.p1(iLogger, concurrentHashMap, o02);
                             break;
                         } else {
                             break;
@@ -320,7 +320,7 @@ public final class SentryEvent extends e5 implements w1 {
 
     public SentryEvent(Throwable th2) {
         this();
-        this.f28144u = th2;
+        this.f28344u = th2;
     }
 
     public SentryEvent() {

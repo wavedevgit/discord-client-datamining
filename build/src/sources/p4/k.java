@@ -9,16 +9,16 @@ import p4.j;
 public final class k implements j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f43709a;
+    private final r3.u f42964a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f43710b;
+    private final r3.i f42965b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r3.a0 f43711c;
+    private final r3.a0 f42966c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r3.a0 f43712d;
+    private final r3.a0 f42967d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -34,14 +34,14 @@ public final class k implements j {
         @Override // r3.i
         /* renamed from: k */
         public void i(x3.k kVar, i iVar) {
-            String str = iVar.f43706a;
+            String str = iVar.f42961a;
             if (str == null) {
-                kVar.O1(1);
+                kVar.N1(1);
             } else {
-                kVar.g1(1, str);
+                kVar.d1(1, str);
             }
-            kVar.v1(2, iVar.a());
-            kVar.v1(3, iVar.f43708c);
+            kVar.q1(2, iVar.a());
+            kVar.q1(3, iVar.f42963c);
         }
     }
 
@@ -70,10 +70,10 @@ public final class k implements j {
     }
 
     public k(r3.u uVar) {
-        this.f43709a = uVar;
-        this.f43710b = new a(uVar);
-        this.f43711c = new b(uVar);
-        this.f43712d = new c(uVar);
+        this.f42964a = uVar;
+        this.f42965b = new a(uVar);
+        this.f42966c = new b(uVar);
+        this.f42967d = new c(uVar);
     }
 
     public static List j() {
@@ -89,15 +89,15 @@ public final class k implements j {
     public i b(String str, int i10) {
         r3.x k10 = r3.x.k("SELECT * FROM SystemIdInfo WHERE work_spec_id=? AND generation=?", 2);
         if (str == null) {
-            k10.O1(1);
+            k10.N1(1);
         } else {
-            k10.g1(1, str);
+            k10.d1(1, str);
         }
-        k10.v1(2, i10);
-        this.f43709a.d();
+        k10.q1(2, i10);
+        this.f42964a.d();
         i iVar = null;
         String string = null;
-        Cursor b10 = t3.b.b(this.f43709a, k10, false, null);
+        Cursor b10 = t3.b.b(this.f42964a, k10, false, null);
         try {
             int e10 = t3.a.e(b10, "work_spec_id");
             int e11 = t3.a.e(b10, "generation");
@@ -119,8 +119,8 @@ public final class k implements j {
     public List c() {
         String string;
         r3.x k10 = r3.x.k("SELECT DISTINCT work_spec_id FROM SystemIdInfo", 0);
-        this.f43709a.d();
-        Cursor b10 = t3.b.b(this.f43709a, k10, false, null);
+        this.f42964a.d();
+        Cursor b10 = t3.b.b(this.f42964a, k10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -145,52 +145,52 @@ public final class k implements j {
 
     @Override // p4.j
     public void e(i iVar) {
-        this.f43709a.d();
-        this.f43709a.e();
+        this.f42964a.d();
+        this.f42964a.e();
         try {
-            this.f43710b.j(iVar);
-            this.f43709a.A();
+            this.f42965b.j(iVar);
+            this.f42964a.A();
         } finally {
-            this.f43709a.i();
+            this.f42964a.i();
         }
     }
 
     @Override // p4.j
     public void f(String str, int i10) {
-        this.f43709a.d();
-        x3.k b10 = this.f43711c.b();
+        this.f42964a.d();
+        x3.k b10 = this.f42966c.b();
         if (str == null) {
-            b10.O1(1);
+            b10.N1(1);
         } else {
-            b10.g1(1, str);
+            b10.d1(1, str);
         }
-        b10.v1(2, i10);
-        this.f43709a.e();
+        b10.q1(2, i10);
+        this.f42964a.e();
         try {
-            b10.U();
-            this.f43709a.A();
+            b10.V();
+            this.f42964a.A();
         } finally {
-            this.f43709a.i();
-            this.f43711c.h(b10);
+            this.f42964a.i();
+            this.f42966c.h(b10);
         }
     }
 
     @Override // p4.j
     public void h(String str) {
-        this.f43709a.d();
-        x3.k b10 = this.f43712d.b();
+        this.f42964a.d();
+        x3.k b10 = this.f42967d.b();
         if (str == null) {
-            b10.O1(1);
+            b10.N1(1);
         } else {
-            b10.g1(1, str);
+            b10.d1(1, str);
         }
-        this.f43709a.e();
+        this.f42964a.e();
         try {
-            b10.U();
-            this.f43709a.A();
+            b10.V();
+            this.f42964a.A();
         } finally {
-            this.f43709a.i();
-            this.f43712d.h(b10);
+            this.f42964a.i();
+            this.f42967d.h(b10);
         }
     }
 }

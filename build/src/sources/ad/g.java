@@ -1,27 +1,78 @@
 package ad;
 
-import tc.z;
+import uc.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-interface g extends z {
+final class g {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class a extends z.b implements g {
-        public a() {
-            super(-9223372036854775807L);
+    /* renamed from: d  reason: collision with root package name */
+    private static final long[] f702d = {128, 64, 32, 16, 8, 4, 2, 1};
+
+    /* renamed from: a  reason: collision with root package name */
+    private final byte[] f703a = new byte[8];
+
+    /* renamed from: b  reason: collision with root package name */
+    private int f704b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private int f705c;
+
+    public static long a(byte[] bArr, int i10, boolean z10) {
+        long j10 = bArr[0] & 255;
+        if (z10) {
+            j10 &= ~f702d[i10 - 1];
         }
-
-        @Override // ad.g
-        public long b(long j10) {
-            return 0L;
+        for (int i11 = 1; i11 < i10; i11++) {
+            j10 = (j10 << 8) | (bArr[i11] & 255);
         }
+        return j10;
+    }
 
-        @Override // ad.g
-        public long g() {
-            return -1L;
+    public static int c(int i10) {
+        int i11 = 0;
+        while (true) {
+            long[] jArr = f702d;
+            if (i11 < jArr.length) {
+                if ((jArr[i11] & i10) != 0) {
+                    return i11 + 1;
+                }
+                i11++;
+            } else {
+                return -1;
+            }
         }
     }
 
-    long b(long j10);
+    public int b() {
+        return this.f705c;
+    }
 
-    long g();
+    public long d(l lVar, boolean z10, boolean z11, int i10) {
+        if (this.f704b == 0) {
+            if (!lVar.f(this.f703a, 0, 1, z10)) {
+                return -1L;
+            }
+            int c10 = c(this.f703a[0] & 255);
+            this.f705c = c10;
+            if (c10 != -1) {
+                this.f704b = 1;
+            } else {
+                throw new IllegalStateException("No valid varint length mask found");
+            }
+        }
+        int i11 = this.f705c;
+        if (i11 > i10) {
+            this.f704b = 0;
+            return -2L;
+        }
+        if (i11 != 1) {
+            lVar.readFully(this.f703a, 1, i11 - 1);
+        }
+        this.f704b = 0;
+        return a(this.f703a, this.f705c, z11);
+    }
+
+    public void e() {
+        this.f704b = 0;
+        this.f705c = 0;
+    }
 }

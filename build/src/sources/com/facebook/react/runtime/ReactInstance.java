@@ -70,9 +70,9 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import qb.b;
+import rb.b;
 @Metadata(d1 = {"\u0000\u0080\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u001e\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\b\b\u0001\u0018\u0000 w2\u00020\u0001:\u0003uvwBA\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\u0010\u0010\u0011J\u0006\u0010(\u001a\u00020)J\u000e\u0010*\u001a\u00020)2\u0006\u0010+\u001a\u00020,J\u001e\u0010-\u001a\u00020\r\"\b\b\u0000\u0010.*\u00020/2\f\u00100\u001a\b\u0012\u0004\u0012\u0002H.01J%\u00106\u001a\u0004\u0018\u0001H.\"\b\b\u0000\u0010.*\u00020/2\f\u00100\u001a\b\u0012\u0004\u0012\u0002H.01¢\u0006\u0002\u00107J\u001f\u00106\u001a\u0004\u0018\u0001H.\"\b\b\u0000\u0010.*\u00020/2\u0006\u00108\u001a\u000209¢\u0006\u0002\u0010:J\u0010\u0010;\u001a\u00020)2\u0006\u0010<\u001a\u00020=H\u0007J\u0010\u0010>\u001a\u00020)2\u0006\u0010<\u001a\u00020=H\u0007J\u0010\u0010?\u001a\u00020)2\u0006\u0010<\u001a\u00020=H\u0007J\b\u0010@\u001a\u00020)H\u0007JU\u0010A\u001a\u00020\u00132\u0006\u0010B\u001a\u00020C2\u0006\u0010D\u001a\u00020E2\u0006\u0010F\u001a\u00020E2\u0006\u0010G\u001a\u00020\u00192\u0006\u0010H\u001a\u00020I2\u0006\u0010J\u001a\u00020K2\b\u0010L\u001a\u0004\u0018\u00010M2\u0006\u0010N\u001a\u00020\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u0083 J\u0019\u0010O\u001a\u00020)2\u0006\u0010P\u001a\u0002092\u0006\u0010Q\u001a\u000209H\u0082 J\u0019\u0010R\u001a\u00020)2\u0006\u0010S\u001a\u00020T2\u0006\u0010U\u001a\u000209H\u0082 J\t\u0010V\u001a\u00020WH\u0086 J\t\u0010X\u001a\u00020YH\u0082 J\t\u0010Z\u001a\u00020[H\u0082 J\t\u0010\\\u001a\u00020[H\u0086 J\t\u0010]\u001a\u00020^H\u0082 J\t\u0010_\u001a\u00020`H\u0082 J!\u0010a\u001a\u00020)2\u0006\u0010b\u001a\u0002092\u0006\u0010c\u001a\u0002092\u0006\u0010d\u001a\u00020eH\u0086 J\u0019\u0010f\u001a\u00020)2\u0006\u0010g\u001a\u00020h2\u0006\u0010i\u001a\u000209H\u0082 J\u0011\u0010j\u001a\u00020)2\u0006\u0010k\u001a\u00020hH\u0082 J\t\u0010l\u001a\u00020)H\u0087 J\u000e\u0010m\u001a\u00020)2\u0006\u0010n\u001a\u00020hJ\u0016\u0010s\u001a\u00020)2\u0006\u0010g\u001a\u00020h2\u0006\u0010t\u001a\u000209R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0012\u001a\u00020\u00138\u0002X\u0083\u0004¢\u0006\b\n\u0000\u0012\u0004\b\u0014\u0010\u0015R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u001c\u001a\u00020\u001d¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0011\u0010 \u001a\u00020!¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u0011\u0010$\u001a\u00020%¢\u0006\b\n\u0000\u001a\u0004\b&\u0010'R\u0017\u00102\u001a\b\u0012\u0004\u0012\u00020/038F¢\u0006\u0006\u001a\u0004\b4\u00105R\u0011\u0010o\u001a\u00020p8F¢\u0006\u0006\u001a\u0004\bq\u0010r¨\u0006x"}, d2 = {"Lcom/facebook/react/runtime/ReactInstance;", "", "context", "Lcom/facebook/react/runtime/BridgelessReactContext;", "delegate", "Lcom/facebook/react/runtime/ReactHostDelegate;", "componentFactory", "Lcom/facebook/react/fabric/ComponentFactory;", "devSupportManager", "Lcom/facebook/react/devsupport/interfaces/DevSupportManager;", "exceptionHandler", "Lcom/facebook/react/bridge/queue/QueueThreadExceptionHandler;", "useDevSupport", "", "reactHostInspectorTarget", "Lcom/facebook/react/runtime/ReactHostInspectorTarget;", "<init>", "(Lcom/facebook/react/runtime/BridgelessReactContext;Lcom/facebook/react/runtime/ReactHostDelegate;Lcom/facebook/react/fabric/ComponentFactory;Lcom/facebook/react/devsupport/interfaces/DevSupportManager;Lcom/facebook/react/bridge/queue/QueueThreadExceptionHandler;ZLcom/facebook/react/runtime/ReactHostInspectorTarget;)V", "mHybridData", "Lcom/facebook/jni/HybridData;", "getMHybridData$annotations", "()V", "turboModuleManager", "Lcom/facebook/react/internal/turbomodule/core/TurboModuleManager;", "javaTimerManager", "Lcom/facebook/react/modules/core/JavaTimerManager;", "viewManagerResolver", "Lcom/facebook/react/runtime/ReactInstance$BridgelessViewManagerResolver;", "reactQueueConfiguration", "Lcom/facebook/react/bridge/queue/ReactQueueConfiguration;", "getReactQueueConfiguration", "()Lcom/facebook/react/bridge/queue/ReactQueueConfiguration;", "fabricUIManager", "Lcom/facebook/react/fabric/FabricUIManager;", "getFabricUIManager", "()Lcom/facebook/react/fabric/FabricUIManager;", "javaScriptContextHolder", "Lcom/facebook/react/bridge/JavaScriptContextHolder;", "getJavaScriptContextHolder", "()Lcom/facebook/react/bridge/JavaScriptContextHolder;", "initializeEagerTurboModules", "", "loadJSBundle", "bundleLoader", "Lcom/facebook/react/bridge/JSBundleLoader;", "hasNativeModule", "T", "Lcom/facebook/react/bridge/NativeModule;", "nativeModuleInterface", "Ljava/lang/Class;", "nativeModules", "", "getNativeModules", "()Ljava/util/Collection;", "getNativeModule", "(Ljava/lang/Class;)Lcom/facebook/react/bridge/NativeModule;", "nativeModuleName", "", "(Ljava/lang/String;)Lcom/facebook/react/bridge/NativeModule;", "prerenderSurface", "surface", "Lcom/facebook/react/runtime/ReactSurfaceImpl;", "startSurface", "stopSurface", "destroy", "initHybrid", "jsRuntimeFactory", "Lcom/facebook/react/runtime/JSRuntimeFactory;", "jsMessageQueueThread", "Lcom/facebook/react/bridge/queue/MessageQueueThread;", "nativeModulesMessageQueueThread", "timerManager", "jsTimerExecutor", "Lcom/facebook/react/runtime/JSTimerExecutor;", "jReactExceptionsManager", "Lcom/facebook/react/interfaces/exceptionmanager/ReactJsExceptionHandler;", "jBindingsInstaller", "Lcom/facebook/react/runtime/BindingsInstaller;", "isProfiling", "loadJSBundleFromFile", "fileName", "sourceURL", "loadJSBundleFromAssets", "assetManager", "Landroid/content/res/AssetManager;", "assetURL", "getJSCallInvokerHolder", "Lcom/facebook/react/turbomodule/core/CallInvokerHolderImpl;", "getNativeMethodCallInvokerHolder", "Lcom/facebook/react/turbomodule/core/NativeMethodCallInvokerHolderImpl;", "getUnbufferedRuntimeExecutor", "Lcom/facebook/react/bridge/RuntimeExecutor;", "getBufferedRuntimeExecutor", "getRuntimeScheduler", "Lcom/facebook/react/bridge/RuntimeScheduler;", "getJavaScriptContext", "", "callFunctionOnModule", "moduleName", "methodName", "args", "Lcom/facebook/react/bridge/NativeArray;", "registerSegmentNative", "segmentId", "", "segmentPath", "handleMemoryPressureJs", "pressureLevel", "unregisterFromInspector", "handleMemoryPressure", "level", "eventDispatcher", "Lcom/facebook/react/uimanager/events/EventDispatcher;", "getEventDispatcher", "()Lcom/facebook/react/uimanager/events/EventDispatcher;", "registerSegment", "path", "ReactJsExceptionHandlerImpl", "BridgelessViewManagerResolver", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@fb.a
+@gb.a
 @FrameworkAPI
 @UnstableReactNativeAPI
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -89,7 +89,7 @@ public final class ReactInstance {
     private final JavaScriptContextHolder javaScriptContextHolder;
     @NotNull
     private final JavaTimerManager javaTimerManager;
-    @fb.a
+    @gb.a
     @NotNull
     private final HybridData mHybridData;
     @NotNull
@@ -212,24 +212,24 @@ public final class ReactInstance {
         /* JADX INFO: Access modifiers changed from: private */
         public final Map<String, Object> createConstants(List<? extends ViewManager> list, Map<String, Object> map) {
             ReactMarker.logMarker(ReactMarkerConstants.CREATE_UI_MANAGER_MODULE_CONSTANTS_START);
-            qb.b.a(0L, "CreateUIManagerConstants").b("Lazy", Boolean.FALSE).c();
+            rb.b.a(0L, "CreateUIManagerConstants").b("Lazy", Boolean.FALSE).c();
             try {
                 return UIManagerModuleConstantsHelper.internal_createConstants(list, null, map);
             } finally {
-                qb.a.i(0L);
+                rb.a.i(0L);
                 ReactMarker.logMarker(ReactMarkerConstants.CREATE_UI_MANAGER_MODULE_CONSTANTS_END);
             }
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        @fb.a
+        @gb.a
         public final JSTimerExecutor createJSTimerExecutor() {
             return ReactInstance.access$createJSTimerExecutor();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public final NativeMap getConstantsForViewManager(ViewManager<?, ?> viewManager, Map<String, Object> map) {
-            b.a a10 = qb.b.a(0L, "ReactInstance.getConstantsForViewManager");
+            b.a a10 = rb.b.a(0L, "ReactInstance.getConstantsForViewManager");
             String name = viewManager.getName();
             Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
             a10.b("ViewManager", name).b("Lazy", Boolean.TRUE).c();
@@ -238,7 +238,7 @@ public final class ReactInstance {
                 Intrinsics.checkNotNullExpressionValue(makeNativeMap, "makeNativeMap(...)");
                 return makeNativeMap;
             } finally {
-                qb.b.b(0L).c();
+                rb.b.b(0L).c();
             }
         }
 
@@ -291,11 +291,11 @@ public final class ReactInstance {
         Intrinsics.checkNotNullParameter(devSupportManager, "devSupportManager");
         Intrinsics.checkNotNullParameter(exceptionHandler, "exceptionHandler");
         this.context = context;
-        qb.a.c(0L, "ReactInstance.initialize");
+        rb.a.c(0L, "ReactInstance.initialize");
         MessageQueueThreadSpec.Companion companion = MessageQueueThreadSpec.Companion;
         ReactQueueConfigurationImpl create = ReactQueueConfigurationImpl.Companion.create(new ReactQueueConfigurationSpec(companion.newBackgroundThreadSpec("v_native"), companion.newBackgroundThreadSpec("v_js")), exceptionHandler);
         this.reactQueueConfiguration = create;
-        p8.a.b(TAG, "Calling initializeMessageQueueThreads()");
+        q8.a.b(TAG, "Calling initializeMessageQueueThreads()");
         context.initializeMessageQueueThreads(create);
         MessageQueueThread jSQueueThread = create.getJSQueueThread();
         MessageQueueThread nativeModulesQueueThread = create.getNativeModulesQueueThread();
@@ -305,14 +305,14 @@ public final class ReactInstance {
         JSTimerExecutor createJSTimerExecutor = Companion.createJSTimerExecutor();
         JavaTimerManager javaTimerManager = new JavaTimerManager(context, createJSTimerExecutor, companion2.getInstance(), devSupportManager);
         this.javaTimerManager = javaTimerManager;
-        if (!qb.a.j(0L) && !InspectorFlags.getIsProfilingBuild()) {
+        if (!rb.a.j(0L) && !InspectorFlags.getIsProfilingBuild()) {
             z11 = false;
         } else {
             z11 = true;
         }
         this.mHybridData = initHybrid(delegate.getJsRuntimeFactory(), jSQueueThread, nativeModulesQueueThread, javaTimerManager, createJSTimerExecutor, new ReactJsExceptionHandlerImpl(this, exceptionHandler), delegate.getBindingsInstaller(), z11, reactHostInspectorTarget);
         this.javaScriptContextHolder = new JavaScriptContextHolder(getJavaScriptContext());
-        qb.a.c(0L, "ReactInstance.initialize#initTurboModules");
+        rb.a.c(0L, "ReactInstance.initialize#initTurboModules");
         ArrayList arrayList = new ArrayList();
         arrayList.add(new CoreReactPackage(context.getDevSupportManager(), context.getDefaultHardwareBackBtnHandler()));
         if (z10) {
@@ -322,8 +322,8 @@ public final class ReactInstance {
         ReactPackageTurboModuleManagerDelegate build = delegate.getTurboModuleManagerDelegateBuilder().setPackages(arrayList).setReactApplicationContext(context).build();
         RuntimeExecutor unbufferedRuntimeExecutor = getUnbufferedRuntimeExecutor();
         this.turboModuleManager = new TurboModuleManager(unbufferedRuntimeExecutor, build, getJSCallInvokerHolder(), getNativeMethodCallInvokerHolder());
-        qb.a.i(0L);
-        qb.a.c(0L, "ReactInstance.initialize#initFabric");
+        rb.a.i(0L);
+        rb.a.c(0L, "ReactInstance.initialize#initFabric");
         BridgelessViewManagerResolver bridgelessViewManagerResolver = new BridgelessViewManagerResolver(arrayList, context);
         this.viewManagerResolver = bridgelessViewManagerResolver;
         ComponentNameResolverBinding.install(unbufferedRuntimeExecutor, new ComponentNameResolver() { // from class: com.facebook.react.runtime.ReactInstance.1
@@ -331,7 +331,7 @@ public final class ReactInstance {
             public String[] getComponentNames() {
                 Collection<String> viewManagerNames = ReactInstance.this.viewManagerResolver.getViewManagerNames();
                 if (viewManagerNames.isEmpty()) {
-                    p8.a.m(ReactInstance.TAG, "No ViewManager names found");
+                    q8.a.m(ReactInstance.TAG, "No ViewManager names found");
                     return new String[0];
                 }
                 return (String[]) viewManagerNames.toArray(new String[0]);
@@ -368,8 +368,8 @@ public final class ReactInstance {
         DisplayMetricsHolder.initDisplayMetricsIfNotInitialized(context);
         new FabricUIManagerBinding().register(getBufferedRuntimeExecutor(), getRuntimeScheduler(), fabricUIManager, eventBeatManager, componentFactory);
         fabricUIManager.initialize();
-        qb.a.i(0L);
-        qb.a.i(0L);
+        rb.a.i(0L);
+        rb.a.i(0L);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -410,7 +410,7 @@ public final class ReactInstance {
         return createJSTimerExecutor();
     }
 
-    @fb.a
+    @gb.a
     private static final native JSTimerExecutor createJSTimerExecutor();
 
     private final native long getJavaScriptContext();
@@ -426,16 +426,16 @@ public final class ReactInstance {
 
     private final native void handleMemoryPressureJs(int i10);
 
-    @fb.a
+    @gb.a
     private final native HybridData initHybrid(JSRuntimeFactory jSRuntimeFactory, MessageQueueThread messageQueueThread, MessageQueueThread messageQueueThread2, JavaTimerManager javaTimerManager, JSTimerExecutor jSTimerExecutor, ReactJsExceptionHandler reactJsExceptionHandler, BindingsInstaller bindingsInstaller, boolean z10, ReactHostInspectorTarget reactHostInspectorTarget);
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void initializeEagerTurboModules$lambda$4(ReactInstance reactInstance) {
-        qb.a.c(0L, "initializeEagerTurboModules");
+        rb.a.c(0L, "initializeEagerTurboModules");
         for (String str : reactInstance.turboModuleManager.getEagerInitModuleNames()) {
             reactInstance.turboModuleManager.getModule(str);
         }
-        qb.a.i(0L);
+        rb.a.i(0L);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -449,7 +449,7 @@ public final class ReactInstance {
     public final native void callFunctionOnModule(@NotNull String str, @NotNull String str2, @NotNull NativeArray nativeArray);
 
     public final void destroy() {
-        p8.a.b(TAG, "ReactInstance.destroy() is called.");
+        q8.a.b(TAG, "ReactInstance.destroy() is called.");
         this.reactQueueConfiguration.destroy();
         this.turboModuleManager.invalidate();
         this.fabricUIManager.invalidate();
@@ -528,7 +528,7 @@ public final class ReactInstance {
 
     public final void loadJSBundle(@NotNull JSBundleLoader bundleLoader) {
         Intrinsics.checkNotNullParameter(bundleLoader, "bundleLoader");
-        qb.a.c(0L, "ReactInstance.loadJSBundle");
+        rb.a.c(0L, "ReactInstance.loadJSBundle");
         bundleLoader.loadScript(new JSBundleLoaderDelegate() { // from class: com.facebook.react.runtime.ReactInstance$loadJSBundle$1
             @Override // com.facebook.react.bridge.JSBundleLoaderDelegate
             public void loadScriptFromAssets(AssetManager assetManager, String assetURL, boolean z10) {
@@ -566,17 +566,17 @@ public final class ReactInstance {
                 bridgelessReactContext.setSourceURL(deviceURL);
             }
         });
-        qb.a.i(0L);
+        rb.a.i(0L);
     }
 
     public final void prerenderSurface(@NotNull ReactSurfaceImpl surface) {
         Intrinsics.checkNotNullParameter(surface, "surface");
-        qb.a.c(0L, "ReactInstance.prerenderSurface");
+        rb.a.c(0L, "ReactInstance.prerenderSurface");
         String str = TAG;
         String moduleName = surface.getModuleName();
-        p8.a.b(str, "call prerenderSurface with surface: " + moduleName);
+        q8.a.b(str, "call prerenderSurface with surface: " + moduleName);
         this.fabricUIManager.startSurface(surface.getSurfaceHandler(), surface.getContext(), null);
-        qb.a.i(0L);
+        rb.a.i(0L);
     }
 
     public final void registerSegment(int i10, @NotNull String path) {
@@ -588,8 +588,8 @@ public final class ReactInstance {
         Intrinsics.checkNotNullParameter(surface, "surface");
         String str = TAG;
         int surfaceID = surface.getSurfaceID();
-        p8.a.b(str, "startSurface() is called with surface: " + surfaceID);
-        qb.a.c(0L, "ReactInstance.startSurface");
+        q8.a.b(str, "startSurface() is called with surface: " + surfaceID);
+        rb.a.c(0L, "ReactInstance.startSurface");
         ViewGroup view = surface.getView();
         if (view != null) {
             if (view.getId() != -1) {
@@ -601,7 +601,7 @@ public final class ReactInstance {
             } else {
                 this.fabricUIManager.startSurface(surface.getSurfaceHandler(), surface.getContext(), view);
             }
-            qb.a.i(0L);
+            rb.a.i(0L);
             return;
         }
         throw new IllegalStateException("Starting surface without a view is not supported, use prerenderSurface instead.");
@@ -611,7 +611,7 @@ public final class ReactInstance {
         Intrinsics.checkNotNullParameter(surface, "surface");
         String str = TAG;
         int surfaceID = surface.getSurfaceID();
-        p8.a.b(str, "stopSurface() is called with surface: " + surfaceID);
+        q8.a.b(str, "stopSurface() is called with surface: " + surfaceID);
         this.fabricUIManager.stopSurface(surface.getSurfaceHandler());
     }
 

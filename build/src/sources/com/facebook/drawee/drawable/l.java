@@ -17,49 +17,49 @@ public abstract class l extends Drawable implements h, a0 {
     private TransformCallback N;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Drawable f9986d;
+    private final Drawable f10126d;
 
     /* renamed from: v  reason: collision with root package name */
-    float[] f9996v;
+    float[] f10136v;
 
     /* renamed from: e  reason: collision with root package name */
-    protected boolean f9987e = false;
+    protected boolean f10127e = false;
 
     /* renamed from: i  reason: collision with root package name */
-    protected boolean f9988i = false;
+    protected boolean f10128i = false;
 
     /* renamed from: o  reason: collision with root package name */
-    protected float f9989o = 0.0f;
+    protected float f10129o = 0.0f;
 
     /* renamed from: p  reason: collision with root package name */
-    protected final Path f9990p = new Path();
+    protected final Path f10130p = new Path();
 
     /* renamed from: q  reason: collision with root package name */
-    protected boolean f9991q = true;
+    protected boolean f10131q = true;
 
     /* renamed from: r  reason: collision with root package name */
-    protected int f9992r = 0;
+    protected int f10132r = 0;
 
     /* renamed from: s  reason: collision with root package name */
-    protected final Path f9993s = new Path();
+    protected final Path f10133s = new Path();
 
     /* renamed from: t  reason: collision with root package name */
-    private final float[] f9994t = new float[8];
+    private final float[] f10134t = new float[8];
 
     /* renamed from: u  reason: collision with root package name */
-    final float[] f9995u = new float[8];
+    final float[] f10135u = new float[8];
 
     /* renamed from: w  reason: collision with root package name */
-    final RectF f9997w = new RectF();
+    final RectF f10137w = new RectF();
 
     /* renamed from: x  reason: collision with root package name */
-    final RectF f9998x = new RectF();
+    final RectF f10138x = new RectF();
 
     /* renamed from: y  reason: collision with root package name */
-    final RectF f9999y = new RectF();
+    final RectF f10139y = new RectF();
 
     /* renamed from: z  reason: collision with root package name */
-    final RectF f10000z = new RectF();
+    final RectF f10140z = new RectF();
     final Matrix B = new Matrix();
     final Matrix C = new Matrix();
     final Matrix D = new Matrix();
@@ -73,7 +73,7 @@ public abstract class l extends Drawable implements h, a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(Drawable drawable) {
-        this.f9986d = drawable;
+        this.f10126d = drawable;
     }
 
     private static Matrix g(Matrix matrix) {
@@ -95,7 +95,7 @@ public abstract class l extends Drawable implements h, a0 {
 
     @Override // com.facebook.drawee.drawable.h
     public void a(boolean z10) {
-        this.f9987e = z10;
+        this.f10127e = z10;
         this.M = true;
         invalidateSelf();
     }
@@ -119,19 +119,19 @@ public abstract class l extends Drawable implements h, a0 {
         } else {
             z10 = false;
         }
-        o8.j.i(z10);
-        Arrays.fill(this.f9994t, f10);
+        p8.j.i(z10);
+        Arrays.fill(this.f10134t, f10);
         if (i10 != 0) {
             z11 = true;
         }
-        this.f9988i = z11;
+        this.f10128i = z11;
         this.M = true;
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void clearColorFilter() {
-        this.f9986d.clearColorFilter();
+        this.f10126d.clearColorFilter();
     }
 
     public void d(boolean z10) {
@@ -139,12 +139,12 @@ public abstract class l extends Drawable implements h, a0 {
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        if (ya.b.d()) {
-            ya.b.a("RoundedDrawable#draw");
+        if (za.b.d()) {
+            za.b.a("RoundedDrawable#draw");
         }
-        this.f9986d.draw(canvas);
-        if (ya.b.d()) {
-            ya.b.b();
+        this.f10126d.draw(canvas);
+        if (za.b.d()) {
+            za.b.b();
         }
     }
 
@@ -167,27 +167,27 @@ public abstract class l extends Drawable implements h, a0 {
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.f9986d.getAlpha();
+        return this.f10126d.getAlpha();
     }
 
     @Override // android.graphics.drawable.Drawable
     public ColorFilter getColorFilter() {
-        return this.f9986d.getColorFilter();
+        return this.f10126d.getColorFilter();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        return this.f9986d.getIntrinsicHeight();
+        return this.f10126d.getIntrinsicHeight();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        return this.f9986d.getIntrinsicWidth();
+        return this.f10126d.getIntrinsicWidth();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        return this.f9986d.getOpacity();
+        return this.f10126d.getOpacity();
     }
 
     @Override // com.facebook.drawee.drawable.h
@@ -195,25 +195,25 @@ public abstract class l extends Drawable implements h, a0 {
         boolean z10;
         boolean z11;
         if (fArr == null) {
-            Arrays.fill(this.f9994t, 0.0f);
-            this.f9988i = false;
+            Arrays.fill(this.f10134t, 0.0f);
+            this.f10128i = false;
         } else {
             if (fArr.length == 8) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            o8.j.c(z10, "radii should have exactly 8 values");
-            System.arraycopy(fArr, 0, this.f9994t, 0, 8);
-            this.f9988i = false;
+            p8.j.c(z10, "radii should have exactly 8 values");
+            System.arraycopy(fArr, 0, this.f10134t, 0, 8);
+            this.f10128i = false;
             for (int i10 = 0; i10 < 8; i10++) {
-                boolean z12 = this.f9988i;
+                boolean z12 = this.f10128i;
                 if (fArr[i10] > 0.0f) {
                     z11 = true;
                 } else {
                     z11 = false;
                 }
-                this.f9988i = z12 | z11;
+                this.f10128i = z12 | z11;
             }
         }
         this.M = true;
@@ -226,7 +226,7 @@ public abstract class l extends Drawable implements h, a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean k() {
-        if (!this.f9987e && !this.f9988i && this.f9989o <= 0.0f) {
+        if (!this.f10127e && !this.f10128i && this.f10129o <= 0.0f) {
             return false;
         }
         return true;
@@ -237,52 +237,52 @@ public abstract class l extends Drawable implements h, a0 {
         float[] fArr;
         float f10;
         if (this.M) {
-            this.f9993s.reset();
-            RectF rectF = this.f9997w;
-            float f11 = this.f9989o;
+            this.f10133s.reset();
+            RectF rectF = this.f10137w;
+            float f11 = this.f10129o;
             rectF.inset(f11 / 2.0f, f11 / 2.0f);
-            if (this.f9987e) {
-                this.f9993s.addCircle(this.f9997w.centerX(), this.f9997w.centerY(), Math.min(this.f9997w.width(), this.f9997w.height()) / 2.0f, Path.Direction.CW);
+            if (this.f10127e) {
+                this.f10133s.addCircle(this.f10137w.centerX(), this.f10137w.centerY(), Math.min(this.f10137w.width(), this.f10137w.height()) / 2.0f, Path.Direction.CW);
             } else {
                 int i10 = 0;
                 while (true) {
-                    fArr = this.f9995u;
+                    fArr = this.f10135u;
                     if (i10 >= fArr.length) {
                         break;
                     }
-                    fArr[i10] = (this.f9994t[i10] + this.J) - (this.f9989o / 2.0f);
+                    fArr[i10] = (this.f10134t[i10] + this.J) - (this.f10129o / 2.0f);
                     i10++;
                 }
-                this.f9993s.addRoundRect(this.f9997w, fArr, Path.Direction.CW);
+                this.f10133s.addRoundRect(this.f10137w, fArr, Path.Direction.CW);
             }
-            RectF rectF2 = this.f9997w;
-            float f12 = this.f9989o;
+            RectF rectF2 = this.f10137w;
+            float f12 = this.f10129o;
             rectF2.inset((-f12) / 2.0f, (-f12) / 2.0f);
-            this.f9990p.reset();
+            this.f10130p.reset();
             float f13 = this.J;
             if (this.K) {
-                f10 = this.f9989o;
+                f10 = this.f10129o;
             } else {
                 f10 = 0.0f;
             }
             float f14 = f13 + f10;
-            this.f9997w.inset(f14, f14);
-            if (this.f9987e) {
-                this.f9990p.addCircle(this.f9997w.centerX(), this.f9997w.centerY(), Math.min(this.f9997w.width(), this.f9997w.height()) / 2.0f, Path.Direction.CW);
+            this.f10137w.inset(f14, f14);
+            if (this.f10127e) {
+                this.f10130p.addCircle(this.f10137w.centerX(), this.f10137w.centerY(), Math.min(this.f10137w.width(), this.f10137w.height()) / 2.0f, Path.Direction.CW);
             } else if (this.K) {
-                if (this.f9996v == null) {
-                    this.f9996v = new float[8];
+                if (this.f10136v == null) {
+                    this.f10136v = new float[8];
                 }
-                for (int i11 = 0; i11 < this.f9995u.length; i11++) {
-                    this.f9996v[i11] = this.f9994t[i11] - this.f9989o;
+                for (int i11 = 0; i11 < this.f10135u.length; i11++) {
+                    this.f10136v[i11] = this.f10134t[i11] - this.f10129o;
                 }
-                this.f9990p.addRoundRect(this.f9997w, this.f9996v, Path.Direction.CW);
+                this.f10130p.addRoundRect(this.f10137w, this.f10136v, Path.Direction.CW);
             } else {
-                this.f9990p.addRoundRect(this.f9997w, this.f9994t, Path.Direction.CW);
+                this.f10130p.addRoundRect(this.f10137w, this.f10134t, Path.Direction.CW);
             }
             float f15 = -f14;
-            this.f9997w.inset(f15, f15);
-            this.f9990p.setFillType(Path.FillType.WINDING);
+            this.f10137w.inset(f15, f15);
+            this.f10130p.setFillType(Path.FillType.WINDING);
             this.M = false;
         }
     }
@@ -294,32 +294,32 @@ public abstract class l extends Drawable implements h, a0 {
         TransformCallback transformCallback = this.N;
         if (transformCallback != null) {
             transformCallback.getTransform(this.D);
-            this.N.getRootBounds(this.f9997w);
+            this.N.getRootBounds(this.f10137w);
         } else {
             this.D.reset();
-            this.f9997w.set(getBounds());
+            this.f10137w.set(getBounds());
         }
-        this.f9999y.set(0.0f, 0.0f, getIntrinsicWidth(), getIntrinsicHeight());
-        this.f10000z.set(this.f9986d.getBounds());
+        this.f10139y.set(0.0f, 0.0f, getIntrinsicWidth(), getIntrinsicHeight());
+        this.f10140z.set(this.f10126d.getBounds());
         Matrix matrix3 = this.B;
-        RectF rectF = this.f9999y;
-        RectF rectF2 = this.f10000z;
+        RectF rectF = this.f10139y;
+        RectF rectF2 = this.f10140z;
         Matrix.ScaleToFit scaleToFit = Matrix.ScaleToFit.FILL;
         matrix3.setRectToRect(rectF, rectF2, scaleToFit);
         if (this.K) {
             RectF rectF3 = this.A;
             if (rectF3 == null) {
-                this.A = new RectF(this.f9997w);
+                this.A = new RectF(this.f10137w);
             } else {
-                rectF3.set(this.f9997w);
+                rectF3.set(this.f10137w);
             }
             RectF rectF4 = this.A;
-            float f10 = this.f9989o;
+            float f10 = this.f10129o;
             rectF4.inset(f10, f10);
             if (this.G == null) {
                 this.G = new Matrix();
             }
-            this.G.setRectToRect(this.f9997w, this.A, scaleToFit);
+            this.G.setRectToRect(this.f10137w, this.A, scaleToFit);
         } else {
             Matrix matrix4 = this.G;
             if (matrix4 != null) {
@@ -327,7 +327,7 @@ public abstract class l extends Drawable implements h, a0 {
             }
         }
         if (!this.D.equals(this.E) || !this.B.equals(this.C) || ((matrix2 = this.G) != null && !j(matrix2, this.H))) {
-            this.f9991q = true;
+            this.f10131q = true;
             this.D.invert(this.F);
             this.I.set(this.D);
             if (this.K && (matrix = this.G) != null) {
@@ -350,36 +350,36 @@ public abstract class l extends Drawable implements h, a0 {
                 }
             }
         }
-        if (!this.f9997w.equals(this.f9998x)) {
+        if (!this.f10137w.equals(this.f10138x)) {
             this.M = true;
-            this.f9998x.set(this.f9997w);
+            this.f10138x.set(this.f10137w);
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect rect) {
-        this.f9986d.setBounds(rect);
+        this.f10126d.setBounds(rect);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f9986d.setAlpha(i10);
+        this.f10126d.setAlpha(i10);
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void setBorder(int i10, float f10) {
-        if (this.f9992r == i10 && this.f9989o == f10) {
+        if (this.f10132r == i10 && this.f10129o == f10) {
             return;
         }
-        this.f9992r = i10;
-        this.f9989o = f10;
+        this.f10132r = i10;
+        this.f10129o = f10;
         this.M = true;
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(int i10, PorterDuff.Mode mode) {
-        this.f9986d.setColorFilter(i10, mode);
+        this.f10126d.setColorFilter(i10, mode);
     }
 
     @Override // com.facebook.drawee.drawable.a0
@@ -389,6 +389,6 @@ public abstract class l extends Drawable implements h, a0 {
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f9986d.setColorFilter(colorFilter);
+        this.f10126d.setColorFilter(colorFilter);
     }
 }

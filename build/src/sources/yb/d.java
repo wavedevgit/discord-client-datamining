@@ -1,41 +1,23 @@
 package yb;
-
-import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class d extends j {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final List f55190a;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public d(List list) {
-        if (list != null) {
-            this.f55190a = list;
-            return;
-        }
-        throw new NullPointerException("Null logRequests");
+public abstract class d {
+    public static d e(Object obj) {
+        return new a(null, obj, e.DEFAULT, null);
     }
 
-    @Override // yb.j
-    public List c() {
-        return this.f55190a;
+    public static d f(Object obj, f fVar) {
+        return new a(null, obj, e.DEFAULT, fVar);
     }
 
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof j) {
-            return this.f55190a.equals(((j) obj).c());
-        }
-        return false;
+    public static d g(Object obj) {
+        return new a(null, obj, e.VERY_LOW, null);
     }
 
-    public int hashCode() {
-        return this.f55190a.hashCode() ^ 1000003;
-    }
+    public abstract Integer a();
 
-    public String toString() {
-        return "BatchedLogRequest{logRequests=" + this.f55190a + "}";
-    }
+    public abstract Object b();
+
+    public abstract e c();
+
+    public abstract f d();
 }

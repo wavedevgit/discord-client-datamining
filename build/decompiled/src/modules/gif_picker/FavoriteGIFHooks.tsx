@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var3 = function() {
-        _fun73763: for (var _fun73763_ip = 0;;) switch (_fun73763_ip) {
+        _fun73628: for (var _fun73628_ip = 0;;) switch (_fun73628_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -23,15 +23,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var2 == var3;
                 if (var4) {
-                    _fun73763_ip = 56;
-                    continue _fun73763
+                    _fun73628_ip = 56;
+                    continue _fun73628
                 }
             case 50:
                 var0 = var3.gifs;
             case 56:
                 if (!(var2 == var0)) {
-                    _fun73763_ip = 64;
-                    continue _fun73763
+                    _fun73628_ip = 64;
+                    continue _fun73628
                 }
             case 60:
                 var0 = _closure1_slot4;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var1.bind(var2)(var0);
             var1 = var2.map;
             var0 = function(arg0, arg1) { // Environment: var0
-                _fun73766: for (var _fun73766_ip = 0;;) switch (_fun73766_ip) {
+                _fun73631: for (var _fun73631_ip = 0;;) switch (_fun73631_ip) {
                     case 0:
                         var1 = arg0;
                         var7 = arg1;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = undefined;
                         var2 = undefined;
                         if (var5) {
-                            _fun73766_ip = 63;
-                            continue _fun73766
+                            _fun73631_ip = 63;
+                            continue _fun73631
                         }
                     case 47:
                         var5 = _closure2_slot0;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var5.bind(var6)(var4, var7);
                     case 63:
                         if (!(var3 == var2)) {
-                            _fun73766_ip = 73;
-                            continue _fun73766
+                            _fun73631_ip = 73;
+                            continue _fun73631
                         }
                     case 67:
                         var2 = var1.src;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSortedFavoriteGIFs = var3;
     var3 = function() {
-        _fun73767: for (var _fun73767_ip = 0;;) switch (_fun73767_ip) {
+        _fun73632: for (var _fun73632_ip = 0;;) switch (_fun73632_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
@@ -151,16 +151,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var3 = var0 == var2;
                 if (var3) {
-                    _fun73767_ip = 56;
-                    continue _fun73767
+                    _fun73632_ip = 56;
+                    continue _fun73632
                 }
             case 50:
                 var1 = var2.hideTooltip;
             case 56:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun73767_ip = 66;
-                    continue _fun73767
+                    _fun73632_ip = 66;
+                    continue _fun73632
                 }
             case 63:
                 var0 = var1;
@@ -181,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsFavoriteGIF = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9163, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9141, 22, 2]);

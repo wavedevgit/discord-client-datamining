@@ -1,47 +1,31 @@
 package eg;
-
-import android.os.BadParcelableException;
-import android.os.Binder;
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c extends Binder implements IInterface {
-    /* JADX INFO: Access modifiers changed from: protected */
-    public c(String str) {
-        attachInterface(this, str);
-    }
+public abstract class c {
 
-    private boolean h(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (i10 > 16777215) {
-            return super.onTransact(i10, parcel, parcel2, i11);
-        }
-        parcel.enforceInterface(getInterfaceDescriptor());
-        return false;
-    }
+    /* renamed from: a  reason: collision with root package name */
+    public static final com.google.android.gms.common.d f21647a;
 
-    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
+    /* renamed from: b  reason: collision with root package name */
+    public static final com.google.android.gms.common.d f21648b;
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public void f(Parcel parcel) {
-        int i10 = d.f21525a;
-        int dataAvail = parcel.dataAvail();
-        if (dataAvail <= 0) {
-            return;
-        }
-        throw new BadParcelableException("Parcel data not fully consumed, unread size: " + dataAvail);
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static final com.google.android.gms.common.d f21649c;
 
-    @Override // android.os.Binder
-    public boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (h(i10, parcel, parcel2, i11)) {
-            return true;
-        }
-        return e(i10, parcel, parcel2, i11);
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static final com.google.android.gms.common.d f21650d;
 
-    @Override // android.os.IInterface
-    public IBinder asBinder() {
-        return this;
+    /* renamed from: e  reason: collision with root package name */
+    public static final com.google.android.gms.common.d[] f21651e;
+
+    static {
+        com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("sms_code_autofill", 2L);
+        f21647a = dVar;
+        com.google.android.gms.common.d dVar2 = new com.google.android.gms.common.d("sms_code_browser", 2L);
+        f21648b = dVar2;
+        com.google.android.gms.common.d dVar3 = new com.google.android.gms.common.d("sms_retrieve", 1L);
+        f21649c = dVar3;
+        com.google.android.gms.common.d dVar4 = new com.google.android.gms.common.d("user_consent", 3L);
+        f21650d = dVar4;
+        f21651e = new com.google.android.gms.common.d[]{dVar, dVar2, dVar3, dVar4};
     }
 }

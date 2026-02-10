@@ -49,7 +49,7 @@ public final class InviteToSpeakView extends LinearLayout {
     public final void setProps(@NotNull final Message message, @NotNull final Function1<? super MessageId, Unit> onInviteToSpeakClicked) {
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(onInviteToSpeakClicked, "onInviteToSpeakClicked");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { // from class: t6.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { // from class: u6.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 InviteToSpeakView.setProps$lambda$1(Function1.this, message, view);

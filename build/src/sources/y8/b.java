@@ -1,38 +1,17 @@
 package y8;
 
-import com.facebook.datasource.DataSource;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Rect;
+import java.io.FileDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class b implements e {
-    @Override // y8.e
-    public void onFailure(DataSource dataSource) {
-        try {
-            onFailureImpl(dataSource);
-        } finally {
-            dataSource.close();
-        }
+public interface b {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public interface a {
     }
 
-    protected abstract void onFailureImpl(DataSource dataSource);
+    Bitmap a(FileDescriptor fileDescriptor, Rect rect, BitmapFactory.Options options);
 
-    @Override // y8.e
-    public void onNewResult(DataSource dataSource) {
-        boolean isFinished = dataSource.isFinished();
-        try {
-            onNewResultImpl(dataSource);
-        } finally {
-            if (isFinished) {
-                dataSource.close();
-            }
-        }
-    }
-
-    protected abstract void onNewResultImpl(DataSource dataSource);
-
-    @Override // y8.e
-    public void onCancellation(DataSource dataSource) {
-    }
-
-    @Override // y8.e
-    public void onProgressUpdate(DataSource dataSource) {
-    }
+    void b(y8.a aVar);
 }

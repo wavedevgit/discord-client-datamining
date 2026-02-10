@@ -10,18 +10,18 @@ import java.util.concurrent.ConcurrentMap;
 public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Comparable<Instant>, Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f29426a;
+    public final long f29680a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f29427b;
+    public final int f29681b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Instant f29425c = new Instant(0, 0);
+    public static final Instant f29679c = new Instant(0, 0);
     public static final Instant MIN = ofEpochSecond(-31557014167219200L, 0);
     public static final Instant MAX = ofEpochSecond(31556889864403199L, 999999999);
 
     public static Instant now() {
-        ConcurrentMap concurrentMap = ZoneOffset.f29445c;
+        ConcurrentMap concurrentMap = ZoneOffset.f29699c;
         long currentTimeMillis = System.currentTimeMillis();
         return r(Math.floorDiv(currentTimeMillis, 1000L), ((int) Math.floorMod(currentTimeMillis, 1000L)) * 1000000);
     }
@@ -32,7 +32,7 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
 
     public static Instant r(long j10, int i10) {
         if ((i10 | j10) == 0) {
-            return f29425c;
+            return f29679c;
         }
         if (j10 < -31557014167219200L || j10 > 31556889864403199L) {
             throw new DateTimeException("Instant exceeds minimum or maximum instant");
@@ -41,8 +41,8 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
     }
 
     public Instant(long j10, int i10) {
-        this.f29426a = j10;
-        this.f29427b = i10;
+        this.f29680a = j10;
+        this.f29681b = i10;
     }
 
     @Override // j$.time.temporal.TemporalAccessor
@@ -53,21 +53,21 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
     @Override // j$.time.temporal.TemporalAccessor
     public final int g(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            int i10 = a.f29451a[((j$.time.temporal.a) nVar).ordinal()];
+            int i10 = a.f29705a[((j$.time.temporal.a) nVar).ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        return this.f29427b / 1000000;
+                        return this.f29681b / 1000000;
                     }
                     if (i10 == 4) {
                         j$.time.temporal.a aVar = j$.time.temporal.a.INSTANT_SECONDS;
-                        aVar.f29553b.a(this.f29426a, aVar);
+                        aVar.f29807b.a(this.f29680a, aVar);
                     }
                     throw new DateTimeException("Unsupported field: " + nVar);
                 }
-                return this.f29427b / 1000;
+                return this.f29681b / 1000;
             }
-            return this.f29427b;
+            return this.f29681b;
         }
         return super.i(nVar).a(nVar.B(this), nVar);
     }
@@ -76,18 +76,18 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
     public final long m(n nVar) {
         int i10;
         if (nVar instanceof j$.time.temporal.a) {
-            int i11 = a.f29451a[((j$.time.temporal.a) nVar).ordinal()];
+            int i11 = a.f29705a[((j$.time.temporal.a) nVar).ordinal()];
             if (i11 == 1) {
-                i10 = this.f29427b;
+                i10 = this.f29681b;
             } else if (i11 == 2) {
-                i10 = this.f29427b / 1000;
+                i10 = this.f29681b / 1000;
             } else if (i11 != 3) {
                 if (i11 == 4) {
-                    return this.f29426a;
+                    return this.f29680a;
                 }
                 throw new DateTimeException("Unsupported field: " + nVar);
             } else {
-                i10 = this.f29427b / 1000000;
+                i10 = this.f29681b / 1000000;
             }
             return i10;
         }
@@ -95,11 +95,11 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
     }
 
     public long getEpochSecond() {
-        return this.f29426a;
+        return this.f29680a;
     }
 
     public int getNano() {
-        return this.f29427b;
+        return this.f29681b;
     }
 
     @Override // j$.time.temporal.k
@@ -112,27 +112,27 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
         if (nVar instanceof j$.time.temporal.a) {
             j$.time.temporal.a aVar = (j$.time.temporal.a) nVar;
             aVar.E(j10);
-            int i10 = a.f29451a[aVar.ordinal()];
+            int i10 = a.f29705a[aVar.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     int i11 = ((int) j10) * 1000;
-                    if (i11 != this.f29427b) {
-                        return r(this.f29426a, i11);
+                    if (i11 != this.f29681b) {
+                        return r(this.f29680a, i11);
                     }
                 } else if (i10 == 3) {
                     int i12 = ((int) j10) * 1000000;
-                    if (i12 != this.f29427b) {
-                        return r(this.f29426a, i12);
+                    if (i12 != this.f29681b) {
+                        return r(this.f29680a, i12);
                     }
                 } else if (i10 == 4) {
-                    if (j10 != this.f29426a) {
-                        return r(j10, this.f29427b);
+                    if (j10 != this.f29680a) {
+                        return r(j10, this.f29681b);
                     }
                 } else {
                     throw new DateTimeException("Unsupported field: " + nVar);
                 }
-            } else if (j10 != this.f29427b) {
-                return r(this.f29426a, (int) j10);
+            } else if (j10 != this.f29681b) {
+                return r(this.f29680a, (int) j10);
             }
             return this;
         }
@@ -145,7 +145,7 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
             bVar.getClass();
             return (Instant) h(j10, bVar);
         }
-        switch (a.f29452b[bVar.ordinal()]) {
+        switch (a.f29706b[bVar.ordinal()]) {
             case 1:
                 return t(0L, j10);
             case 2:
@@ -171,15 +171,15 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
         if ((j10 | j11) == 0) {
             return this;
         }
-        return ofEpochSecond(Math.addExact(Math.addExact(this.f29426a, j10), j11 / 1000000000), this.f29427b + (j11 % 1000000000));
+        return ofEpochSecond(Math.addExact(Math.addExact(this.f29680a, j10), j11 / 1000000000), this.f29681b + (j11 % 1000000000));
     }
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f29567c) {
+        if (temporalQuery == o.f29821c) {
             return j$.time.temporal.b.NANOS;
         }
-        if (temporalQuery == o.f29566b || temporalQuery == o.f29565a || temporalQuery == o.f29569e || temporalQuery == o.f29568d || temporalQuery == o.f29570f || temporalQuery == o.f29571g) {
+        if (temporalQuery == o.f29820b || temporalQuery == o.f29819a || temporalQuery == o.f29823e || temporalQuery == o.f29822d || temporalQuery == o.f29824f || temporalQuery == o.f29825g) {
             return null;
         }
         return temporalQuery.queryFrom(this);
@@ -187,7 +187,7 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
 
     @Override // j$.time.temporal.l
     public final j$.time.temporal.k d(j$.time.temporal.k kVar) {
-        return kVar.b(this.f29426a, j$.time.temporal.a.INSTANT_SECONDS).b(this.f29427b, j$.time.temporal.a.NANO_OF_SECOND);
+        return kVar.b(this.f29680a, j$.time.temporal.a.INSTANT_SECONDS).b(this.f29681b, j$.time.temporal.a.NANO_OF_SECOND);
     }
 
     public OffsetDateTime atOffset(ZoneOffset zoneOffset) {
@@ -196,8 +196,8 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
 
     @Override // java.lang.Comparable
     public int compareTo(Instant instant) {
-        int compare = Long.compare(this.f29426a, instant.f29426a);
-        return compare != 0 ? compare : this.f29427b - instant.f29427b;
+        int compare = Long.compare(this.f29680a, instant.f29680a);
+        return compare != 0 ? compare : this.f29681b - instant.f29681b;
     }
 
     public final boolean equals(Object obj) {
@@ -206,7 +206,7 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
         }
         if (obj instanceof Instant) {
             Instant instant = (Instant) obj;
-            if (this.f29426a == instant.f29426a && this.f29427b == instant.f29427b) {
+            if (this.f29680a == instant.f29680a && this.f29681b == instant.f29681b) {
                 return true;
             }
         }
@@ -214,11 +214,11 @@ public final class Instant implements j$.time.temporal.k, j$.time.temporal.l, Co
     }
 
     public int hashCode() {
-        long j10 = this.f29426a;
-        return (this.f29427b * 51) + ((int) (j10 ^ (j10 >>> 32)));
+        long j10 = this.f29680a;
+        return (this.f29681b * 51) + ((int) (j10 ^ (j10 >>> 32)));
     }
 
     public String toString() {
-        return DateTimeFormatter.f29470g.a(this);
+        return DateTimeFormatter.f29724g.a(this);
     }
 }

@@ -142,16 +142,16 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
     /* JADX INFO: Access modifiers changed from: private */
     public void disableFpsListener() {
         if (isScrollPerfLoggingEnabled()) {
-            db.a.c(this.mFpsListener);
-            db.a.c(this.mScrollPerfTag);
+            eb.a.c(this.mFpsListener);
+            eb.a.c(this.mScrollPerfTag);
             this.mFpsListener.disable(this.mScrollPerfTag);
         }
     }
 
     private void enableFpsListener() {
         if (isScrollPerfLoggingEnabled()) {
-            db.a.c(this.mFpsListener);
-            db.a.c(this.mScrollPerfTag);
+            eb.a.c(this.mFpsListener);
+            eb.a.c(this.mScrollPerfTag);
             this.mFpsListener.enable(this.mScrollPerfTag);
         }
     }
@@ -171,7 +171,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
         int i15;
         OverScroller overScroller;
         if (DEBUG_MODE) {
-            p8.a.t(TAG, "smoothScrollAndSnap[%d] velocityX %d", Integer.valueOf(getId()), Integer.valueOf(i10));
+            q8.a.t(TAG, "smoothScrollAndSnap[%d] velocityX %d", Integer.valueOf(getId()), Integer.valueOf(i10));
         }
         if (getChildCount() <= 0) {
             return;
@@ -347,7 +347,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
                 sScrollerField = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException unused) {
-                p8.a.J(TAG, "Failed to get mScroller field for HorizontalScrollView! This app will exhibit the bounce-back scrolling bug :(");
+                q8.a.J(TAG, "Failed to get mScroller field for HorizontalScrollView! This app will exhibit the bounce-back scrolling bug :(");
             }
         }
         Field field = sScrollerField;
@@ -358,7 +358,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
                 if (obj instanceof OverScroller) {
                     overScroller = (OverScroller) obj;
                 } else {
-                    p8.a.J(TAG, "Failed to cast mScroller field in HorizontalScrollView (probably due to OEM changes to AOSP)! This app will exhibit the bounce-back scrolling bug :(");
+                    q8.a.J(TAG, "Failed to cast mScroller field in HorizontalScrollView (probably due to OEM changes to AOSP)! This app will exhibit the bounce-back scrolling bug :(");
                 }
             } catch (IllegalAccessException e10) {
                 throw new RuntimeException("Failed to get mScroller from HorizontalScrollView!", e10);
@@ -384,7 +384,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
     /* JADX INFO: Access modifiers changed from: private */
     public void handlePostTouchScrolling(int i10, int i11) {
         if (DEBUG_MODE) {
-            p8.a.u(TAG, "handlePostTouchScrolling[%d] velocityX %d velocityY %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11));
+            q8.a.u(TAG, "handlePostTouchScrolling[%d] velocityX %d velocityY %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11));
         }
         if (this.mPostTouchRunnable != null) {
             return;
@@ -498,7 +498,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
 
     private void setPendingContentOffsets(int i10, int i11) {
         if (DEBUG_MODE) {
-            p8.a.u(TAG, "setPendingContentOffsets[%d] x %d y %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11));
+            q8.a.u(TAG, "setPendingContentOffsets[%d] x %d y %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11));
         }
         if (isContentReady()) {
             this.pendingContentOffsetX = -1;
@@ -511,7 +511,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
 
     private void smoothScrollAndSnap(int i10) {
         if (DEBUG_MODE) {
-            p8.a.t(TAG, "smoothScrollAndSnap[%d] velocity %d", Integer.valueOf(getId()), Integer.valueOf(i10));
+            q8.a.t(TAG, "smoothScrollAndSnap[%d] velocity %d", Integer.valueOf(getId()), Integer.valueOf(i10));
         }
         double snapInterval = getSnapInterval();
         double nextFlingStartValue = ReactScrollViewHelper.getNextFlingStartValue(this, getScrollX(), getReactScrollViewScrollState().getFinalAnimatedPositionScroll().x, i10);
@@ -540,7 +540,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
     private void smoothScrollToNextPage(int i10) {
         int i11;
         if (DEBUG_MODE) {
-            p8.a.t(TAG, "smoothScrollToNextPage[%d] direction %d", Integer.valueOf(getId()), Integer.valueOf(i10));
+            q8.a.t(TAG, "smoothScrollToNextPage[%d] direction %d", Integer.valueOf(getId()), Integer.valueOf(i10));
         }
         int width = getWidth();
         int scrollX = getScrollX();
@@ -672,7 +672,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
     @Override // android.widget.HorizontalScrollView
     public void fling(int i10) {
         if (DEBUG_MODE) {
-            p8.a.t(TAG, "fling[%d] velocityX %d", Integer.valueOf(getId()), Integer.valueOf(i10));
+            q8.a.t(TAG, "fling[%d] velocityX %d", Integer.valueOf(getId()), Integer.valueOf(i10));
         }
         if (Build.VERSION.SDK_INT == 28) {
             i10 = (int) (Math.abs(i10) * Math.signum(this.mOnScrollDispatchHelper.getXFlingVelocity()));
@@ -711,7 +711,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
 
     @Override // com.facebook.react.uimanager.ReactClippingViewGroup
     public void getClippingRect(Rect rect) {
-        rect.set((Rect) db.a.c(this.mClippingRect));
+        rect.set((Rect) eb.a.c(this.mClippingRect));
     }
 
     public int getFadingEdgeLengthEnd() {
@@ -898,7 +898,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
                 return true;
             }
         } catch (IllegalArgumentException e10) {
-            p8.a.K(ReactConstants.TAG, "Error intercepting touch event.", e10);
+            q8.a.K(ReactConstants.TAG, "Error intercepting touch event.", e10);
         }
         return false;
     }
@@ -907,12 +907,12 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         OverScroller overScroller;
         if (DEBUG_MODE) {
-            p8.a.v(TAG, "onLayout[%d] l %d t %d r %d b %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12), Integer.valueOf(i13));
+            q8.a.v(TAG, "onLayout[%d] l %d t %d r %d b %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12), Integer.valueOf(i13));
         }
         int i14 = this.mScrollXAfterMeasure;
         if (i14 != NO_SCROLL_POSITION && (overScroller = this.mScroller) != null && i14 != overScroller.getFinalX() && !this.mScroller.isFinished()) {
             if (DEBUG_MODE) {
-                p8.a.t(TAG, "onLayout[%d] scroll hack enabled: reset to previous scrollX position of %d", Integer.valueOf(getId()), Integer.valueOf(this.mScrollXAfterMeasure));
+                q8.a.t(TAG, "onLayout[%d] scroll hack enabled: reset to previous scrollX position of %d", Integer.valueOf(getId()), Integer.valueOf(this.mScrollXAfterMeasure));
             }
             OverScroller overScroller2 = this.mScroller;
             overScroller2.startScroll(this.mScrollXAfterMeasure, overScroller2.getFinalY(), 0, 0);
@@ -957,7 +957,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
         int size = View.MeasureSpec.getSize(i10);
         int size2 = View.MeasureSpec.getSize(i11);
         if (DEBUG_MODE) {
-            p8.a.u(TAG, "onMeasure[%d] measured width: %d measured height: %d", Integer.valueOf(getId()), Integer.valueOf(size), Integer.valueOf(size2));
+            q8.a.u(TAG, "onMeasure[%d] measured width: %d measured height: %d", Integer.valueOf(getId()), Integer.valueOf(size), Integer.valueOf(size2));
         }
         if (getMeasuredHeight() != size2) {
             z10 = true;
@@ -974,7 +974,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
     protected void onOverScrolled(int i10, int i11, boolean z10, boolean z11) {
         int max;
         if (DEBUG_MODE) {
-            p8.a.v(TAG, "onOverScrolled[%d] scrollX %d scrollY %d clampedX %b clampedY %b", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11), Boolean.valueOf(z10), Boolean.valueOf(z11));
+            q8.a.v(TAG, "onOverScrolled[%d] scrollX %d scrollY %d clampedX %b clampedY %b", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11), Boolean.valueOf(z10), Boolean.valueOf(z11));
         }
         OverScroller overScroller = this.mScroller;
         if (overScroller != null && !overScroller.isFinished() && this.mScroller.getCurrX() != this.mScroller.getFinalX() && i10 >= (max = Math.max(computeHorizontalScrollRange() - getWidth(), 0))) {
@@ -987,9 +987,9 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
     @Override // android.view.View
     protected void onScrollChanged(int i10, int i11, int i12, int i13) {
         if (DEBUG_MODE) {
-            p8.a.v(TAG, "onScrollChanged[%d] x %d y %d oldx %d oldy %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12), Integer.valueOf(i13));
+            q8.a.v(TAG, "onScrollChanged[%d] x %d y %d oldx %d oldy %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12), Integer.valueOf(i13));
         }
-        qb.a.c(0L, "ReactHorizontalScrollView.onScrollChanged");
+        rb.a.c(0L, "ReactHorizontalScrollView.onScrollChanged");
         try {
             super.onScrollChanged(i10, i11, i12, i13);
             this.mActivelyScrolling = true;
@@ -999,9 +999,9 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
                 }
                 ReactScrollViewHelper.updateStateOnScrollChanged(this, this.mOnScrollDispatchHelper.getXFlingVelocity(), this.mOnScrollDispatchHelper.getYFlingVelocity(), false);
             }
-            qb.a.i(0L);
+            rb.a.i(0L);
         } catch (Throwable th2) {
-            qb.a.i(0L);
+            rb.a.i(0L);
             throw th2;
         }
     }
@@ -1062,7 +1062,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
     @Override // android.widget.HorizontalScrollView, android.view.View
     public void scrollTo(int i10, int i11) {
         if (DEBUG_MODE) {
-            p8.a.u(TAG, "scrollTo[%d] x %d y %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11));
+            q8.a.u(TAG, "scrollTo[%d] x %d y %d", Integer.valueOf(getId()), Integer.valueOf(i10), Integer.valueOf(i11));
         }
         super.scrollTo(i10, i11);
         ReactScrollViewHelper.updateFabricScrollState(this);
@@ -1322,16 +1322,16 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
     @Override // com.facebook.react.uimanager.ReactClippingViewGroup
     public void updateClippingRect(Set<Integer> set) {
         if (this.mRemoveClippedSubviews) {
-            qb.a.c(0L, "ReactHorizontalScrollView.updateClippingRect");
+            rb.a.c(0L, "ReactHorizontalScrollView.updateClippingRect");
             try {
-                db.a.c(this.mClippingRect);
+                eb.a.c(this.mClippingRect);
                 ReactClippingViewGroupHelper.calculateClippingRect(this, this.mClippingRect);
                 View contentView = getContentView();
                 if (contentView instanceof ReactClippingViewGroup) {
                     ((ReactClippingViewGroup) contentView).updateClippingRect(set);
                 }
             } finally {
-                qb.a.i(0L);
+                rb.a.i(0L);
             }
         }
     }

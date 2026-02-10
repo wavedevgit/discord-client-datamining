@@ -69,12 +69,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.padding = var11;
     var11 = 'center';
     var3.container = var8;
-    var8 = {
-        'height': 190,
-        'width': 220,
-        'resizeMode': 'contain'
-    };
-    var3.image = var8;
     var8 = {};
     var12 = var5[var9];
     var12 = var10.bind(var0)(var12);
@@ -113,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/verification/native/components/ChangeEmailWarning.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61101: for (var _fun61101_ip = 0;;) switch (_fun61101_ip) {
+        _fun60947: for (var _fun60947_ip = 0;;) switch (_fun60947_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.changeEmailReason;
@@ -177,8 +171,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var1;
                 if (var1) {
-                    _fun61101_ip = 799;
-                    continue _fun61101
+                    _fun60947_ip = 799;
+                    continue _fun60947
                 }
             case 146:
                 var3 = _closure1_slot9;
@@ -350,4 +344,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 7538, 660, 33, 1297, 671, 1469, 566, 795, 670, 4899, 6013, 3942, 1234, 5384, 4084, 7534, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 7514, 660, 33, 1297, 671, 1469, 566, 795, 670, 4899, 6014, 3942, 1234, 5385, 4084, 7510, 2]);

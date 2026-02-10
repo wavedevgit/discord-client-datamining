@@ -23,7 +23,7 @@ public final class OnDemandResourceModule extends NativeOnDemandResourceModuleSp
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit fetchOnDemandResource$lambda$1$lambda$0(Promise promise, boolean z10) {
         promise.resolve(Boolean.valueOf(z10));
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @Override // com.discord.codegen.NativeOnDemandResourceModuleSpec
@@ -31,7 +31,7 @@ public final class OnDemandResourceModule extends NativeOnDemandResourceModuleSp
         Function1<? super Boolean, Unit> function1;
         if (str != null) {
             if (promise != null) {
-                function1 = new Function1() { // from class: u7.a
+                function1 = new Function1() { // from class: v7.a
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
                         Unit fetchOnDemandResource$lambda$1$lambda$0;

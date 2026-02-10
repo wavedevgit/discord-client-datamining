@@ -12,26 +12,26 @@ import java.util.Map;
 import java.util.NavigableMap;
 import java.util.TreeMap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class q0 extends xh.o {
+final class q0 extends yh.o {
 
     /* renamed from: d  reason: collision with root package name */
-    private final File f15947d;
+    private final File f16087d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final File f15948e;
+    private final File f16088e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final NavigableMap f15949i = new TreeMap();
+    private final NavigableMap f16089i = new TreeMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q0(File file, File file2) {
-        this.f15947d = file;
-        this.f15948e = file2;
+        this.f16087d = file;
+        this.f16088e = file2;
         List<File> a10 = d4.a(file, file2);
         if (!a10.isEmpty()) {
             long j10 = 0;
             for (File file3 : a10) {
-                this.f15949i.put(Long.valueOf(j10), file3);
+                this.f16089i.put(Long.valueOf(j10), file3);
                 j10 += file3.length();
             }
             return;
@@ -40,16 +40,16 @@ final class q0 extends xh.o {
     }
 
     private final InputStream m(long j10, Long l10) {
-        FileInputStream fileInputStream = new FileInputStream((File) this.f15949i.get(l10));
+        FileInputStream fileInputStream = new FileInputStream((File) this.f16089i.get(l10));
         if (fileInputStream.skip(j10 - l10.longValue()) == j10 - l10.longValue()) {
             return fileInputStream;
         }
         throw new w1(String.format("Virtualized slice archive corrupt, could not skip in file with key %s", l10));
     }
 
-    @Override // xh.o
+    @Override // yh.o
     public final long a() {
-        Map.Entry lastEntry = this.f15949i.lastEntry();
+        Map.Entry lastEntry = this.f16089i.lastEntry();
         return ((Long) lastEntry.getKey()).longValue() + ((File) lastEntry.getValue()).length();
     }
 
@@ -58,23 +58,23 @@ final class q0 extends xh.o {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // xh.o
+    @Override // yh.o
     public final InputStream g(long j10, long j11) {
         if (j10 >= 0 && j11 >= 0) {
             long j12 = j10 + j11;
             if (j12 <= a()) {
-                Long l10 = (Long) this.f15949i.floorKey(Long.valueOf(j10));
-                Long l11 = (Long) this.f15949i.floorKey(Long.valueOf(j12));
+                Long l10 = (Long) this.f16089i.floorKey(Long.valueOf(j10));
+                Long l11 = (Long) this.f16089i.floorKey(Long.valueOf(j12));
                 if (l10.equals(l11)) {
                     return new p0(m(j10, l10), j11);
                 }
                 ArrayList arrayList = new ArrayList();
                 arrayList.add(m(j10, l10));
-                Collection values = this.f15949i.subMap(l10, false, l11, false).values();
+                Collection values = this.f16089i.subMap(l10, false, l11, false).values();
                 if (!values.isEmpty()) {
-                    arrayList.add(new wh.d(Collections.enumeration(values)));
+                    arrayList.add(new xh.d(Collections.enumeration(values)));
                 }
-                arrayList.add(new p0(new FileInputStream((File) this.f15949i.get(l11)), j11 - (l11.longValue() - j10)));
+                arrayList.add(new p0(new FileInputStream((File) this.f16089i.get(l11)), j11 - (l11.longValue() - j10)));
                 return new SequenceInputStream(Collections.enumeration(arrayList));
             }
             throw new w1(String.format("Trying to access archive out of bounds. Archive ends at: %s. Tried accessing: %s", Long.valueOf(a()), Long.valueOf(j12)));

@@ -1,34 +1,23 @@
 package la;
 
-import java.util.LinkedHashSet;
+import com.facebook.imagepipeline.bitmaps.PlatformBitmapFactory;
+import kotlin.jvm.internal.Intrinsics;
+import wa.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f35961a;
+    public static final d f35797a = new d();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final LinkedHashSet f35962b;
-
-    public d(int i10) {
-        this.f35961a = i10;
-        this.f35962b = new LinkedHashSet(i10);
+    private d() {
     }
 
-    public final synchronized boolean a(Object obj) {
-        try {
-            if (this.f35962b.size() == this.f35961a) {
-                LinkedHashSet linkedHashSet = this.f35962b;
-                linkedHashSet.remove(linkedHashSet.iterator().next());
-            }
-            this.f35962b.remove(obj);
-        } catch (Throwable th2) {
-            throw th2;
-        }
-        return this.f35962b.add(obj);
-    }
-
-    public final synchronized boolean b(Object obj) {
-        return this.f35962b.contains(obj);
+    public static final PlatformBitmapFactory a(y poolFactory, xa.d platformDecoder, oa.a closeableReferenceFactory) {
+        Intrinsics.checkNotNullParameter(poolFactory, "poolFactory");
+        Intrinsics.checkNotNullParameter(platformDecoder, "platformDecoder");
+        Intrinsics.checkNotNullParameter(closeableReferenceFactory, "closeableReferenceFactory");
+        wa.d b10 = poolFactory.b();
+        Intrinsics.checkNotNullExpressionValue(b10, "getBitmapPool(...)");
+        return new a(b10, closeableReferenceFactory);
     }
 }

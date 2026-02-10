@@ -38,7 +38,7 @@ public final class ReactSafeAreaView extends ViewGroup {
         Insets f10 = windowInsets.f(WindowInsetsCompat.p.h() | WindowInsetsCompat.p.b());
         Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
         reactSafeAreaView.updateState(f10);
-        return WindowInsetsCompat.f3705b;
+        return WindowInsetsCompat.f3402b;
     }
 
     private final void updateState(final Insets insets) {
@@ -46,10 +46,10 @@ public final class ReactSafeAreaView extends ViewGroup {
         if (stateWrapper != null) {
             WritableNativeMap writableNativeMap = new WritableNativeMap();
             PixelUtil pixelUtil = PixelUtil.INSTANCE;
-            writableNativeMap.putDouble(ViewProps.LEFT, pixelUtil.pxToDp(insets.f3604a));
-            writableNativeMap.putDouble(ViewProps.TOP, pixelUtil.pxToDp(insets.f3605b));
-            writableNativeMap.putDouble(ViewProps.BOTTOM, pixelUtil.pxToDp(insets.f3607d));
-            writableNativeMap.putDouble(ViewProps.RIGHT, pixelUtil.pxToDp(insets.f3606c));
+            writableNativeMap.putDouble(ViewProps.LEFT, pixelUtil.pxToDp(insets.f3301a));
+            writableNativeMap.putDouble(ViewProps.TOP, pixelUtil.pxToDp(insets.f3302b));
+            writableNativeMap.putDouble(ViewProps.BOTTOM, pixelUtil.pxToDp(insets.f3304d));
+            writableNativeMap.putDouble(ViewProps.RIGHT, pixelUtil.pxToDp(insets.f3303c));
             stateWrapper.updateState(writableNativeMap);
         } else if (!ReactBuildConfig.UNSTABLE_ENABLE_MINIFY_LEGACY_ARCHITECTURE) {
             final ThemedReactContext themedReactContext = this.reactContext;
@@ -60,7 +60,7 @@ public final class ReactSafeAreaView extends ViewGroup {
                     if (uIManagerModule != null) {
                         int id2 = ReactSafeAreaView.this.getId();
                         Insets insets2 = insets;
-                        uIManagerModule.updateInsetsPadding(id2, insets2.f3605b, insets2.f3604a, insets2.f3607d, insets2.f3606c);
+                        uIManagerModule.updateInsetsPadding(id2, insets2.f3302b, insets2.f3301a, insets2.f3304d, insets2.f3303c);
                     }
                 }
             });

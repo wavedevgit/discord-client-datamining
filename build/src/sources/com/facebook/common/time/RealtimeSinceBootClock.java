@@ -2,29 +2,29 @@ package com.facebook.common.time;
 
 import android.os.SystemClock;
 import java.util.concurrent.TimeUnit;
-import o8.d;
-import v8.b;
+import p8.d;
+import w8.b;
 @d
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class RealtimeSinceBootClock implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final RealtimeSinceBootClock f9845a = new RealtimeSinceBootClock();
+    private static final RealtimeSinceBootClock f9985a = new RealtimeSinceBootClock();
 
     private RealtimeSinceBootClock() {
     }
 
     @d
     public static RealtimeSinceBootClock get() {
-        return f9845a;
+        return f9985a;
     }
 
-    @Override // v8.b
+    @Override // w8.b
     public long now() {
         return SystemClock.elapsedRealtime();
     }
 
-    @Override // v8.b
+    @Override // w8.b
     public long nowNanos() {
         return TimeUnit.MILLISECONDS.toNanos(now());
     }

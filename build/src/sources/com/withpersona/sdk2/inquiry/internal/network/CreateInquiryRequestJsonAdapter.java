@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquiryRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19136a;
+    private final m.b f19276a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19137b;
+    private final com.squareup.moshi.h f19277b;
 
     public CreateInquiryRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19136a = a10;
+        this.f19276a = a10;
         com.squareup.moshi.h f10 = moshi.f(CreateInquiryRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19137b = f10;
+        this.f19277b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,21 +35,21 @@ public final class CreateInquiryRequestJsonAdapter extends com.squareup.moshi.h 
         reader.u();
         CreateInquiryRequest.Data data = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19136a);
+            int J = reader.J(this.f19276a);
             if (J != -1) {
-                if (J == 0 && (data = (CreateInquiryRequest.Data) this.f19137b.fromJson(reader)) == null) {
-                    throw an.c.x("data_", "data", reader);
+                if (J == 0 && (data = (CreateInquiryRequest.Data) this.f19277b.fromJson(reader)) == null) {
+                    throw bn.c.x("data_", "data", reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
         if (data != null) {
             return new CreateInquiryRequest(data);
         }
-        throw an.c.o("data_", "data", reader);
+        throw bn.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -59,7 +59,7 @@ public final class CreateInquiryRequestJsonAdapter extends com.squareup.moshi.h 
         if (createInquiryRequest != null) {
             writer.k();
             writer.J("data");
-            this.f19137b.toJson(writer, createInquiryRequest.a());
+            this.f19277b.toJson(writer, createInquiryRequest.a());
             writer.s();
             return;
         }

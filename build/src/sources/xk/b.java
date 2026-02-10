@@ -1,74 +1,25 @@
 package xk;
-
-import com.google.zxing.Result;
-import hk.k;
-import hk.m;
-import hk.o;
-import hk.p;
-import java.util.ArrayList;
-import java.util.Map;
-import lk.e;
-import yk.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements m {
+final class b extends f {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b(mk.a aVar) {
+        super(aVar);
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final Result[] f54751a = new Result[0];
-
-    private static Result[] b(hk.c cVar, Map map, boolean z10) {
-        ArrayList arrayList = new ArrayList();
-        al.b c10 = al.a.c(cVar, map, z10);
-        for (p[] pVarArr : c10.b()) {
-            e i10 = j.i(c10.a(), pVarArr[4], pVarArr[5], pVarArr[6], pVarArr[7], e(pVarArr), c(pVarArr));
-            Result result = new Result(i10.k(), i10.g(), pVarArr, hk.a.PDF_417);
-            result.h(o.ERROR_CORRECTION_LEVEL, i10.b());
-            result.h(o.ERRORS_CORRECTED, i10.d());
-            result.h(o.ERASURES_CORRECTED, i10.c());
-            c cVar2 = (c) i10.f();
-            if (cVar2 != null) {
-                result.h(o.PDF417_EXTRA_METADATA, cVar2);
-            }
-            result.h(o.ORIENTATION, Integer.valueOf(c10.c()));
-            o oVar = o.SYMBOLOGY_IDENTIFIER;
-            result.h(oVar, "]L" + i10.j());
-            arrayList.add(result);
+    @Override // xk.i
+    protected void h(StringBuilder sb2, int i10) {
+        if (i10 < 10000) {
+            sb2.append("(3202)");
+        } else {
+            sb2.append("(3203)");
         }
-        return (Result[]) arrayList.toArray(f54751a);
     }
 
-    private static int c(p[] pVarArr) {
-        return Math.max(Math.max(d(pVarArr[0], pVarArr[4]), (d(pVarArr[6], pVarArr[2]) * 17) / 18), Math.max(d(pVarArr[1], pVarArr[5]), (d(pVarArr[7], pVarArr[3]) * 17) / 18));
-    }
-
-    private static int d(p pVar, p pVar2) {
-        if (pVar != null && pVar2 != null) {
-            return (int) Math.abs(pVar.c() - pVar2.c());
+    @Override // xk.i
+    protected int i(int i10) {
+        if (i10 < 10000) {
+            return i10;
         }
-        return 0;
-    }
-
-    private static int e(p[] pVarArr) {
-        return Math.min(Math.min(f(pVarArr[0], pVarArr[4]), (f(pVarArr[6], pVarArr[2]) * 17) / 18), Math.min(f(pVarArr[1], pVarArr[5]), (f(pVarArr[7], pVarArr[3]) * 17) / 18));
-    }
-
-    private static int f(p pVar, p pVar2) {
-        if (pVar != null && pVar2 != null) {
-            return (int) Math.abs(pVar.c() - pVar2.c());
-        }
-        return Integer.MAX_VALUE;
-    }
-
-    @Override // hk.m
-    public Result a(hk.c cVar, Map map) {
-        Result result;
-        Result[] b10 = b(cVar, map, false);
-        if (b10.length != 0 && (result = b10[0]) != null) {
-            return result;
-        }
-        throw k.a();
-    }
-
-    @Override // hk.m
-    public void reset() {
+        return i10 - 10000;
     }
 }

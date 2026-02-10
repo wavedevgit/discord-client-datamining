@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun109936: for (var _fun109936_ip = 0;;) switch (_fun109936_ip) {
+        _fun109916: for (var _fun109916_ip = 0;;) switch (_fun109916_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.channel;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = null;
                 var8 = var10;
                 if (!(var11 == var8)) {
-                    _fun109936_ip = 255;
-                    continue _fun109936
+                    _fun109916_ip = 255;
+                    continue _fun109916
                 }
             case 223:
                 var12 = _closure1_slot0;
@@ -224,8 +224,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.ForumLayout;
                 var8 = var8.GRID;
                 if (!(var10 !== var8)) {
-                    _fun109936_ip = 850;
-                    continue _fun109936
+                    _fun109916_ip = 850;
+                    continue _fun109916
                 }
             case 828:
                 var10 = _closure1_slot1;
@@ -233,8 +233,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 18;
                 var8 = var11[var8];
                 var8 = var10.bind(var3)(var8);
-                _fun109936_ip = 870;
-                continue _fun109936;
+                _fun109916_ip = 870;
+                continue _fun109916;
             case 850:
                 var10 = _closure1_slot1;
                 var11 = _closure1_slot2;
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'components_native/channel_settings/ChannelSettingsChangeDefaultForumLayout.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun109938: for (var _fun109938_ip = 0;;) switch (_fun109938_ip) {
+        _fun109918: for (var _fun109918_ip = 0;;) switch (_fun109918_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.channelId;
@@ -360,8 +360,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var5;
                 if (var2) {
-                    _fun109938_ip = 98;
-                    continue _fun109938
+                    _fun109918_ip = 98;
+                    continue _fun109918
                 }
             case 78:
                 var3 = _closure1_slot7;
@@ -376,4 +376,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.ChannelSettingsChangeDefaultForumLayout = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 33, 1297, 671, 6532, 5474, 1234, 1382, 5473, 14099, 7663, 3942, 5415, 4704, 14135, 14136, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 33, 1297, 671, 6533, 5475, 1234, 1382, 5474, 14086, 7639, 3942, 5416, 4704, 14122, 14123, 566, 2]);

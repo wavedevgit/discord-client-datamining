@@ -18,31 +18,31 @@ import org.webrtc.PeerConnection;
 public class m extends g0 {
 
     /* renamed from: f  reason: collision with root package name */
-    protected final File f11351f;
+    protected final File f11491f;
 
     /* renamed from: g  reason: collision with root package name */
-    protected final String f11352g;
+    protected final String f11492g;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends g0.c implements Comparable {
 
         /* renamed from: i  reason: collision with root package name */
-        final ZipEntry f11353i;
+        final ZipEntry f11493i;
 
         /* renamed from: o  reason: collision with root package name */
-        final int f11354o;
+        final int f11494o;
 
         a(String str, ZipEntry zipEntry, int i10) {
             super(str, String.valueOf(zipEntry.getCrc()));
-            this.f11353i = zipEntry;
-            this.f11354o = i10;
+            this.f11493i = zipEntry;
+            this.f11494o = i10;
         }
 
         @Override // java.lang.Comparable
         /* renamed from: a */
         public int compareTo(a aVar) {
-            return this.f11335d.compareTo(aVar.f11335d);
+            return this.f11475d.compareTo(aVar.f11475d);
         }
 
         public boolean equals(Object obj) {
@@ -51,7 +51,7 @@ public class m extends g0 {
             }
             if (obj != null && a.class == obj.getClass()) {
                 a aVar = (a) obj;
-                if (this.f11353i.equals(aVar.f11353i) && this.f11354o == aVar.f11354o) {
+                if (this.f11493i.equals(aVar.f11493i) && this.f11494o == aVar.f11494o) {
                     return true;
                 }
             }
@@ -59,7 +59,7 @@ public class m extends g0 {
         }
 
         public int hashCode() {
-            return (this.f11354o * 31) + this.f11353i.hashCode();
+            return (this.f11494o * 31) + this.f11493i.hashCode();
         }
     }
 
@@ -67,22 +67,22 @@ public class m extends g0 {
     protected class b extends g0.e {
 
         /* renamed from: d  reason: collision with root package name */
-        protected a[] f11355d;
+        protected a[] f11495d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ZipFile f11356e;
+        private final ZipFile f11496e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final g0 f11357i;
+        private final g0 f11497i;
 
         b(g0 g0Var) {
-            this.f11356e = new ZipFile(m.this.f11351f);
-            this.f11357i = g0Var;
+            this.f11496e = new ZipFile(m.this.f11491f);
+            this.f11497i = g0Var;
         }
 
         @Override // com.facebook.soloader.g0.e, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            this.f11356e.close();
+            this.f11496e.close();
         }
 
         @Override // com.facebook.soloader.g0.e
@@ -95,7 +95,7 @@ public class m extends g0 {
             a[] n10 = n();
             byte[] bArr = new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS];
             for (a aVar : n10) {
-                InputStream inputStream = this.f11356e.getInputStream(aVar.f11353i);
+                InputStream inputStream = this.f11496e.getInputStream(aVar.f11493i);
                 try {
                     g0.d dVar = new g0.d(aVar, inputStream);
                     a(dVar, bArr, file);
@@ -112,9 +112,9 @@ public class m extends g0 {
         a[] m() {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
             HashMap hashMap = new HashMap();
-            Pattern compile = Pattern.compile(m.this.f11352g);
+            Pattern compile = Pattern.compile(m.this.f11492g);
             String[] j10 = SysUtil.j();
-            Enumeration<? extends ZipEntry> entries = this.f11356e.entries();
+            Enumeration<? extends ZipEntry> entries = this.f11496e.entries();
             while (entries.hasMoreElements()) {
                 ZipEntry nextElement = entries.nextElement();
                 Matcher matcher = compile.matcher(nextElement.getName());
@@ -126,33 +126,33 @@ public class m extends g0 {
                     if (e10 >= 0) {
                         linkedHashSet.add(group);
                         a aVar = (a) hashMap.get(group2);
-                        if (aVar == null || e10 < aVar.f11354o) {
+                        if (aVar == null || e10 < aVar.f11494o) {
                             hashMap.put(group2, new a(group2, nextElement, e10));
                         }
                     }
                 }
             }
-            this.f11357i.t((String[]) linkedHashSet.toArray(new String[linkedHashSet.size()]));
+            this.f11497i.t((String[]) linkedHashSet.toArray(new String[linkedHashSet.size()]));
             a[] aVarArr = (a[]) hashMap.values().toArray(new a[hashMap.size()]);
             Arrays.sort(aVarArr);
             return aVarArr;
         }
 
         a[] n() {
-            a[] aVarArr = this.f11355d;
+            a[] aVarArr = this.f11495d;
             if (aVarArr != null) {
                 return aVarArr;
             }
             a[] m10 = m();
-            this.f11355d = m10;
+            this.f11495d = m10;
             return m10;
         }
     }
 
     public m(Context context, String str, File file, String str2) {
         super(context, str);
-        this.f11351f = file;
-        this.f11352g = str2;
+        this.f11491f = file;
+        this.f11492g = str2;
     }
 
     @Override // com.facebook.soloader.f, com.facebook.soloader.e0
@@ -169,9 +169,9 @@ public class m extends g0 {
     @Override // com.facebook.soloader.f, com.facebook.soloader.e0
     public String toString() {
         try {
-            return this.f11351f.getCanonicalPath();
+            return this.f11491f.getCanonicalPath();
         } catch (IOException unused) {
-            return this.f11351f.getName();
+            return this.f11491f.getName();
         }
     }
 

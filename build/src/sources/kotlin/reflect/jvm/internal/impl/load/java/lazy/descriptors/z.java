@@ -9,24 +9,24 @@ import kotlin.reflect.jvm.internal.impl.storage.NullableLazyValue;
 public class z implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaScope f33066d;
+    private final LazyJavaScope f32775d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JavaField f33067e;
+    private final JavaField f32776e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Ref.ObjectRef f33068i;
+    private final Ref.ObjectRef f32777i;
 
     public z(LazyJavaScope lazyJavaScope, JavaField javaField, Ref.ObjectRef objectRef) {
-        this.f33066d = lazyJavaScope;
-        this.f33067e = javaField;
-        this.f33068i = objectRef;
+        this.f32775d = lazyJavaScope;
+        this.f32776e = javaField;
+        this.f32777i = objectRef;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         NullableLazyValue R;
-        R = LazyJavaScope.R(this.f33066d, this.f33067e, this.f33068i);
+        R = LazyJavaScope.R(this.f32775d, this.f32776e, this.f32777i);
         return R;
     }
 }

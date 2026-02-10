@@ -5,21 +5,21 @@ import android.os.Bundle;
 final class w extends o {
 
     /* renamed from: e  reason: collision with root package name */
-    private final b2 f16052e;
+    private final b2 f16192e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final o3 f16053f;
+    private final o3 f16193f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public w(x xVar, yg.k kVar, b2 b2Var, o3 o3Var) {
+    public w(x xVar, zg.k kVar, b2 b2Var, o3 o3Var) {
         super(xVar, kVar);
-        this.f16052e = b2Var;
-        this.f16053f = o3Var;
+        this.f16192e = b2Var;
+        this.f16193f = o3Var;
     }
 
-    @Override // com.google.android.play.core.assetpacks.o, xh.d0
-    public final void q(int i10, Bundle bundle) {
-        super.q(i10, bundle);
-        this.f15916c.e(d.a(bundle, this.f16052e, this.f16053f));
+    @Override // com.google.android.play.core.assetpacks.o, yh.d0
+    public final void s(int i10, Bundle bundle) {
+        super.s(i10, bundle);
+        this.f16056c.e(d.a(bundle, this.f16192e, this.f16193f));
     }
 }

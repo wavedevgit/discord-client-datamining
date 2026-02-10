@@ -54,14 +54,14 @@ public final class InquiryField_BooleanFieldJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
             } else if (J == 1) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw an.c.x("type", "type", reader);
+                    throw bn.c.x("type", "type", reader);
                 }
                 i10 = -3;
             } else {
@@ -75,7 +75,7 @@ public final class InquiryField_BooleanFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.BooleanField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.BooleanField.class.getDeclaredConstructor(Boolean.class, String.class, Integer.TYPE, an.c.f1164c);
+            constructor = InquiryField.BooleanField.class.getDeclaredConstructor(Boolean.class, String.class, Integer.TYPE, bn.c.f7152c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

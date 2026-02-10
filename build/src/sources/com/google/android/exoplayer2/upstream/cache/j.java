@@ -3,18 +3,18 @@ package com.google.android.exoplayer2.upstream.cache;
 import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ne.w0;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class j extends me.c {
+final class j extends ne.c {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f13378r = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v1\\.exo$", 32);
+    private static final Pattern f13518r = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v1\\.exo$", 32);
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Pattern f13379s = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v2\\.exo$", 32);
+    private static final Pattern f13519s = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v2\\.exo$", 32);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Pattern f13380t = Pattern.compile("^(\\d+)\\.(\\d+)\\.(\\d+)\\.v3\\.exo$", 32);
+    private static final Pattern f13520t = Pattern.compile("^(\\d+)\\.(\\d+)\\.(\\d+)\\.v3\\.exo$", 32);
 
     private j(String str, long j10, long j11, long j12, File file) {
         super(str, j10, j11, j12, file);
@@ -32,8 +32,8 @@ final class j extends me.c {
             name = file.getName();
         }
         File file2 = file;
-        Matcher matcher = f13380t.matcher(name);
-        if (!matcher.matches() || (k10 = hVar.k(Integer.parseInt((String) ne.a.e(matcher.group(1))))) == null) {
+        Matcher matcher = f13520t.matcher(name);
+        if (!matcher.matches() || (k10 = hVar.k(Integer.parseInt((String) oe.a.e(matcher.group(1))))) == null) {
             return null;
         }
         if (j10 == -1) {
@@ -43,9 +43,9 @@ final class j extends me.c {
         if (j13 == 0) {
             return null;
         }
-        long parseLong = Long.parseLong((String) ne.a.e(matcher.group(2)));
+        long parseLong = Long.parseLong((String) oe.a.e(matcher.group(2)));
         if (j11 == -9223372036854775807L) {
-            j12 = Long.parseLong((String) ne.a.e(matcher.group(3)));
+            j12 = Long.parseLong((String) oe.a.e(matcher.group(3)));
         } else {
             j12 = j11;
         }
@@ -60,24 +60,24 @@ final class j extends me.c {
         return new j(str, j10, j11, -9223372036854775807L, null);
     }
 
-    public static j j(String str, long j10) {
+    public static j k(String str, long j10) {
         return new j(str, j10, -1L, -9223372036854775807L, null);
     }
 
-    public static File k(File file, int i10, long j10, long j11) {
+    public static File l(File file, int i10, long j10, long j11) {
         return new File(file, i10 + "." + j10 + "." + j11 + ".v3.exo");
     }
 
     private static File m(File file, h hVar) {
         String str;
         String name = file.getName();
-        Matcher matcher = f13379s.matcher(name);
+        Matcher matcher = f13519s.matcher(name);
         if (matcher.matches()) {
-            str = w0.o1((String) ne.a.e(matcher.group(1)));
+            str = w0.o1((String) oe.a.e(matcher.group(1)));
         } else {
-            matcher = f13378r.matcher(name);
+            matcher = f13518r.matcher(name);
             if (matcher.matches()) {
-                str = (String) ne.a.e(matcher.group(1));
+                str = (String) oe.a.e(matcher.group(1));
             } else {
                 str = null;
             }
@@ -85,15 +85,15 @@ final class j extends me.c {
         if (str == null) {
             return null;
         }
-        File k10 = k((File) ne.a.i(file.getParentFile()), hVar.f(str), Long.parseLong((String) ne.a.e(matcher.group(2))), Long.parseLong((String) ne.a.e(matcher.group(3))));
-        if (!file.renameTo(k10)) {
+        File l10 = l((File) oe.a.i(file.getParentFile()), hVar.f(str), Long.parseLong((String) oe.a.e(matcher.group(2))), Long.parseLong((String) oe.a.e(matcher.group(3))));
+        if (!file.renameTo(l10)) {
             return null;
         }
-        return k10;
+        return l10;
     }
 
     public j f(File file, long j10) {
-        ne.a.g(this.f37117o);
-        return new j(this.f37114d, this.f37115e, this.f37116i, j10, file);
+        oe.a.g(this.f38176o);
+        return new j(this.f38173d, this.f38174e, this.f38175i, j10, file);
     }
 }

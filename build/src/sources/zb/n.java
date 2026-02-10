@@ -1,45 +1,33 @@
 package zb;
 
-import zb.c;
-/* JADX INFO: Access modifiers changed from: package-private */
+import android.util.JsonReader;
+import android.util.JsonToken;
+import java.io.IOException;
+import java.io.Reader;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class n {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class a {
-        public abstract n a();
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        public abstract a b(xb.c cVar);
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        public abstract a c(xb.d dVar);
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        public abstract a d(xb.g gVar);
-
-        public abstract a e(o oVar);
-
-        public abstract a f(String str);
+    static n a(long j10) {
+        return new h(j10);
     }
 
-    public static a a() {
-        return new c.b();
+    public static n b(Reader reader) {
+        JsonReader jsonReader = new JsonReader(reader);
+        try {
+            jsonReader.beginObject();
+            while (jsonReader.hasNext()) {
+                if (jsonReader.nextName().equals("nextRequestWaitMillis")) {
+                    if (jsonReader.peek() == JsonToken.STRING) {
+                        return a(Long.parseLong(jsonReader.nextString()));
+                    }
+                    return a(jsonReader.nextLong());
+                }
+                jsonReader.skipValue();
+            }
+            throw new IOException("Response is missing nextRequestWaitMillis field.");
+        } finally {
+            jsonReader.close();
+        }
     }
 
-    public abstract xb.c b();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract xb.d c();
-
-    public byte[] d() {
-        return (byte[]) e().apply(c().b());
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract xb.g e();
-
-    public abstract o f();
-
-    public abstract String g();
+    public abstract long c();
 }

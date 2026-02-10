@@ -1,36 +1,74 @@
 package yk;
 
+import com.google.zxing.Result;
+import ik.k;
+import ik.m;
+import ik.o;
+import ik.p;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
+import mk.e;
+import zk.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class b {
+public final class b implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f55481a = new HashMap();
+    private static final Result[] f55686a = new Result[0];
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int[] a() {
+    private static Result[] b(ik.c cVar, Map map, boolean z10) {
         ArrayList arrayList = new ArrayList();
-        int i10 = -1;
-        for (Map.Entry entry : this.f55481a.entrySet()) {
-            if (((Integer) entry.getValue()).intValue() > i10) {
-                i10 = ((Integer) entry.getValue()).intValue();
-                arrayList.clear();
-                arrayList.add(entry.getKey());
-            } else if (((Integer) entry.getValue()).intValue() == i10) {
-                arrayList.add(entry.getKey());
+        bl.b c10 = bl.a.c(cVar, map, z10);
+        for (p[] pVarArr : c10.b()) {
+            e i10 = j.i(c10.a(), pVarArr[4], pVarArr[5], pVarArr[6], pVarArr[7], e(pVarArr), c(pVarArr));
+            Result result = new Result(i10.k(), i10.g(), pVarArr, ik.a.PDF_417);
+            result.h(o.ERROR_CORRECTION_LEVEL, i10.b());
+            result.h(o.ERRORS_CORRECTED, i10.d());
+            result.h(o.ERASURES_CORRECTED, i10.c());
+            c cVar2 = (c) i10.f();
+            if (cVar2 != null) {
+                result.h(o.PDF417_EXTRA_METADATA, cVar2);
             }
+            result.h(o.ORIENTATION, Integer.valueOf(c10.c()));
+            o oVar = o.SYMBOLOGY_IDENTIFIER;
+            result.h(oVar, "]L" + i10.j());
+            arrayList.add(result);
         }
-        return xk.a.b(arrayList);
+        return (Result[]) arrayList.toArray(f55686a);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void b(int i10) {
-        Integer num = (Integer) this.f55481a.get(Integer.valueOf(i10));
-        if (num == null) {
-            num = 0;
+    private static int c(p[] pVarArr) {
+        return Math.max(Math.max(d(pVarArr[0], pVarArr[4]), (d(pVarArr[6], pVarArr[2]) * 17) / 18), Math.max(d(pVarArr[1], pVarArr[5]), (d(pVarArr[7], pVarArr[3]) * 17) / 18));
+    }
+
+    private static int d(p pVar, p pVar2) {
+        if (pVar != null && pVar2 != null) {
+            return (int) Math.abs(pVar.c() - pVar2.c());
         }
-        this.f55481a.put(Integer.valueOf(i10), Integer.valueOf(num.intValue() + 1));
+        return 0;
+    }
+
+    private static int e(p[] pVarArr) {
+        return Math.min(Math.min(f(pVarArr[0], pVarArr[4]), (f(pVarArr[6], pVarArr[2]) * 17) / 18), Math.min(f(pVarArr[1], pVarArr[5]), (f(pVarArr[7], pVarArr[3]) * 17) / 18));
+    }
+
+    private static int f(p pVar, p pVar2) {
+        if (pVar != null && pVar2 != null) {
+            return (int) Math.abs(pVar.c() - pVar2.c());
+        }
+        return Integer.MAX_VALUE;
+    }
+
+    @Override // ik.m
+    public Result a(ik.c cVar, Map map) {
+        Result result;
+        Result[] b10 = b(cVar, map, false);
+        if (b10.length != 0 && (result = b10[0]) != null) {
+            return result;
+        }
+        throw k.a();
+    }
+
+    @Override // ik.m
+    public void reset() {
     }
 }

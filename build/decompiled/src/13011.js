@@ -13,104 +13,108 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function arg0() {
-        _fun99838: for (var _fun99838_ip = 0;;) switch (_fun99838_ip) {
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
+        _fun100019: for (var _fun100019_ip = 0;;) switch (_fun100019_ip) {
             case 0:
-                var2 = arg0;
-                var7 = typeof var2;
-                var0 = 'boolean';
-                if (!(var0 !== var7)) {
-                    _fun99838_ip = 228;
-                    continue _fun99838
-                }
-            case 17:
-                var1 = 'string';
-                var0 = var2;
-                if (!(var1 === var7)) {
-                    _fun99838_ip = 43;
-                    continue _fun99838
-                }
-            case 28:
+                var2 = arg1;
+                var5 = arg2;
+                var0 = arg3;
+                var4 = arg4;
+                var3 = {};
                 var1 = global;
-                var3 = var1.parseFloat;
-                var1 = undefined;
-                var0 = var3.bind(var1)(var2);
-            case 43:
-                var3 = 'number';
-                var1 = typeof var0;
-                if (!(var3 === var1)) {
-                    _fun99838_ip = 87;
-                    continue _fun99838
+                var1 = var1.Date;
+                var6 = var1.prototype;
+                var6 = Object.create(var6, {
+                    constructor: {
+                        value: var1
+                    }
+                });
+                var9 = var6;
+                var1 = new var9[var1](var8);
+                var6 = var1 instanceof Object ? var1 : var6;
+                var1 = var6.toISOString;
+                var1 = var1.bind(var6)();
+                var3.sent_at = var1;
+                var1 = var5;
+                if (!var1) {
+                    _fun100019_ip = 69;
+                    continue _fun100019
                 }
-            case 54:
-                var1 = global;
-                var3 = var1.isNaN;
-                var1 = undefined;
-                var1 = var3.bind(var1)(var0);
-                if (var1) {
-                    _fun99838_ip = 87;
-                    continue _fun99838
+            case 63:
+                var1 = var5.sdk;
+            case 69:
+                if (!var1) {
+                    _fun100019_ip = 112;
+                    continue _fun100019
                 }
             case 72:
-                var1 = 0;
-                if (!(!(var0 < var1))) {
-                    _fun99838_ip = 87;
-                    continue _fun99838
+                var1 = {};
+                var6 = var5.sdk;
+                var6 = var6.name;
+                var1.name = var6;
+                var5 = var5.sdk;
+                var5 = var5.version;
+                var1.version = var5;
+                var3.sdk = var1;
+            case 112:
+                if (!var0) {
+                    _fun100019_ip = 118;
+                    continue _fun100019
                 }
-            case 78:
-                var1 = 1;
-                if (!(!(var0 > var1))) {
-                    _fun99838_ip = 87;
-                    continue _fun99838
+            case 115:
+                var0 = var4;
+            case 118:
+                if (!var0) {
+                    _fun100019_ip = 162;
+                    continue _fun100019
                 }
-            case 85:
-                return var0;
-            case 87:
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
+            case 121:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
                 var0 = 0;
-                var3 = var3[var0];
+                var1 = var1[var0];
                 var0 = undefined;
-                var3 = var4.bind(var0)(var3);
-                var3 = var3.DEBUG_BUILD;
-                if (!var3) {
-                    _fun99838_ip = 226;
-                    continue _fun99838
+                var1 = var5.bind(var0)(var1);
+                var0 = var1.dsnToString;
+                var0 = var0.bind(var1)(var4);
+                var3.dsn = var0;
+            case 162:
+                if (!var2) {
+                    _fun100019_ip = 206;
+                    continue _fun100019
                 }
-            case 120:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 1;
-                var1 = var4[var1];
-                var1 = var3.bind(var0)(var1);
-                var4 = var1.logger;
-                var3 = var4.warn;
-                var1 = global;
-                var6 = var1.JSON;
-                var5 = var6.stringify;
-                var9 = var5.bind(var6)(var2);
-                var6 = var1.JSON;
-                var5 = var6.stringify;
-                var11 = var5.bind(var6)(var7);
-                var1 = var1.HermesInternal;
-                var7 = var1.concat;
-                var14 = '[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got ';
-                var12 = ' of type ';
-                var10 = '.';
-                var13 = var9;
-                var1 = var14[var7](var13, var12, var11, var10, var9);
-                var1 = var3.bind(var4)(var1);
-            case 226:
-                return var0;
-            case 228:
-                var0 = global;
-                var1 = var0.Number;
+            case 165:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
                 var0 = undefined;
-                var0 = var1.bind(var0)(var2);
+                var1 = var4.bind(var0)(var1);
+                var0 = var1.dropUndefinedKeys;
+                var0 = var0.bind(var1)(var2);
+                var3.trace = var0;
+            case 206:
+                var0 = {};
+                var1 = 'check_in';
+                var0.type = var1;
+                var4 = new Array(2);
+                var4[0] = var0;
+                var0 = arg0;
+                var4[1] = var0;
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var2 = var2.bind(var0)(var1);
+                var1 = var2.createEnvelope;
+                var0 = new Array(1);
+                var0[0] = var4;
+                var0 = var1.bind(var2)(var3, var0);
                 return var0;
         }
     };
-    var1.parseSampleRate = var0;
+    var1.createCheckInEnvelope = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12999, 12933]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12920]);

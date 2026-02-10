@@ -1,30 +1,42 @@
 package og;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class fc {
+final class fc implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ec f42088a;
+    static final fc f40880a = new fc();
 
-    public static synchronized wb a(rb rbVar) {
-        wb wbVar;
-        synchronized (fc.class) {
-            try {
-                if (f42088a == null) {
-                    f42088a = new ec(null);
-                }
-                wbVar = (wb) f42088a.b(rbVar);
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-        return wbVar;
+    static {
+        c.b a10 = zi.c.a("isForegroundConfidenceMaskEnabled");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("isForegroundBitmapEnabled");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("isMultipleSubjectsEnabled");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
+        c.b a13 = zi.c.a("isSubjectConfidenceMaskEnabled");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        a13.b(l2Var4.b()).a();
+        c.b a14 = zi.c.a("isSubjectBitmapEnabled");
+        l2 l2Var5 = new l2();
+        l2Var5.a(5);
+        a14.b(l2Var5.b()).a();
     }
 
-    public static synchronized wb b(String str) {
-        wb a10;
-        synchronized (fc.class) {
-            a10 = a(rb.d("vision-common").c());
-        }
-        return a10;
+    private fc() {
+    }
+
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

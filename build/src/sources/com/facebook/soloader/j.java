@@ -9,29 +9,29 @@ import java.util.zip.ZipFile;
 public class j implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private InputStream f11342d;
+    private InputStream f11482d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ZipEntry f11343e;
+    private final ZipEntry f11483e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ZipFile f11344i;
+    private final ZipFile f11484i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final long f11345o;
+    private final long f11485o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f11346p = true;
+    private boolean f11486p = true;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f11347q = 0;
+    private long f11487q = 0;
 
     public j(ZipFile zipFile, ZipEntry zipEntry) {
-        this.f11344i = zipFile;
-        this.f11343e = zipEntry;
-        this.f11345o = zipEntry.getSize();
+        this.f11484i = zipFile;
+        this.f11483e = zipEntry;
+        this.f11485o = zipEntry.getSize();
         InputStream inputStream = zipFile.getInputStream(zipEntry);
-        this.f11342d = inputStream;
+        this.f11482d = inputStream;
         if (inputStream != null) {
             return;
         }
@@ -39,13 +39,13 @@ public class j implements h {
     }
 
     public h a(long j10) {
-        InputStream inputStream = this.f11342d;
+        InputStream inputStream = this.f11482d;
         if (inputStream != null) {
-            long j11 = this.f11347q;
+            long j11 = this.f11487q;
             if (j10 == j11) {
                 return this;
             }
-            long j12 = this.f11345o;
+            long j12 = this.f11485o;
             if (j10 > j12) {
                 j10 = j12;
             }
@@ -53,34 +53,39 @@ public class j implements h {
                 inputStream.skip(j10 - j11);
             } else {
                 inputStream.close();
-                InputStream inputStream2 = this.f11344i.getInputStream(this.f11343e);
-                this.f11342d = inputStream2;
+                InputStream inputStream2 = this.f11484i.getInputStream(this.f11483e);
+                this.f11482d = inputStream2;
                 if (inputStream2 != null) {
                     inputStream2.skip(j10);
                 } else {
-                    throw new IOException(this.f11343e.getName() + "'s InputStream is null");
+                    throw new IOException(this.f11483e.getName() + "'s InputStream is null");
                 }
             }
-            this.f11347q = j10;
+            this.f11487q = j10;
             return this;
         }
-        throw new IOException(this.f11343e.getName() + "'s InputStream is null");
+        throw new IOException(this.f11483e.getName() + "'s InputStream is null");
     }
 
     @Override // java.nio.channels.Channel, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        InputStream inputStream = this.f11342d;
+        InputStream inputStream = this.f11482d;
         if (inputStream != null) {
             inputStream.close();
-            this.f11346p = false;
+            this.f11486p = false;
         }
     }
 
+    @Override // java.nio.channels.Channel
+    public boolean isOpen() {
+        return this.f11486p;
+    }
+
     @Override // com.facebook.soloader.h
-    public int i0(ByteBuffer byteBuffer, long j10) {
-        if (this.f11342d != null) {
+    public int j0(ByteBuffer byteBuffer, long j10) {
+        if (this.f11482d != null) {
             int remaining = byteBuffer.remaining();
-            long j11 = this.f11345o - j10;
+            long j11 = this.f11485o - j10;
             if (j11 <= 0) {
                 return -1;
             }
@@ -90,27 +95,22 @@ public class j implements h {
             }
             a(j10);
             if (byteBuffer.hasArray()) {
-                this.f11342d.read(byteBuffer.array(), 0, remaining);
+                this.f11482d.read(byteBuffer.array(), 0, remaining);
                 byteBuffer.position(byteBuffer.position() + remaining);
             } else {
                 byte[] bArr = new byte[remaining];
-                this.f11342d.read(bArr, 0, remaining);
+                this.f11482d.read(bArr, 0, remaining);
                 byteBuffer.put(bArr, 0, remaining);
             }
-            this.f11347q += remaining;
+            this.f11487q += remaining;
             return remaining;
         }
         throw new IOException("InputStream is null");
     }
 
-    @Override // java.nio.channels.Channel
-    public boolean isOpen() {
-        return this.f11346p;
-    }
-
     @Override // java.nio.channels.ReadableByteChannel
     public int read(ByteBuffer byteBuffer) {
-        return i0(byteBuffer, this.f11347q);
+        return j0(byteBuffer, this.f11487q);
     }
 
     @Override // java.nio.channels.WritableByteChannel

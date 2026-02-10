@@ -1,24 +1,32 @@
 package el;
+
+import ik.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class a {
+public final class a extends p {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final byte[] f21621a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final byte[] f21622b;
+    /* renamed from: c  reason: collision with root package name */
+    private final float f21745c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public a(byte[] bArr, byte[] bArr2) {
-        this.f21621a = bArr;
-        this.f21622b = bArr2;
+    public a(float f10, float f11, float f12) {
+        super(f10, f11);
+        this.f21745c = f12;
     }
 
-    public byte[] a() {
-        return this.f21621a;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public boolean f(float f10, float f11, float f12) {
+        if (Math.abs(f11 - d()) > f10 || Math.abs(f12 - c()) > f10) {
+            return false;
+        }
+        float abs = Math.abs(f10 - this.f21745c);
+        if (abs > 1.0f && abs > this.f21745c) {
+            return false;
+        }
+        return true;
     }
 
-    public byte[] b() {
-        return this.f21622b;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public a g(float f10, float f11, float f12) {
+        return new a((c() + f11) / 2.0f, (d() + f10) / 2.0f, (this.f21745c + f12) / 2.0f);
     }
 }

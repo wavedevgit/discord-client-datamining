@@ -1,7 +1,7 @@
 package com.facebook.react.devsupport.inspector;
 
 import com.facebook.jni.HybridData;
-import fb.a;
+import gb.a;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;

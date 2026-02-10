@@ -1,0 +1,23 @@
+package xd;
+
+import java.util.Collections;
+import java.util.List;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public abstract class h implements qd.a {
+
+    /* renamed from: a  reason: collision with root package name */
+    public final String f54840a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final List f54841b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final boolean f54842c;
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public h(String str, List list, boolean z10) {
+        this.f54840a = str;
+        this.f54841b = Collections.unmodifiableList(list);
+        this.f54842c = z10;
+    }
+}

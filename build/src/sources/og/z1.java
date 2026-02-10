@@ -1,50 +1,56 @@
 package og;
 
-import yi.c;
+import java.util.Iterator;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class z1 implements yi.d {
+final class z1 extends l1 {
 
-    /* renamed from: a  reason: collision with root package name */
-    static final z1 f42780a = new z1();
+    /* renamed from: i  reason: collision with root package name */
+    private final transient k1 f41705i;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42781b;
+    /* renamed from: o  reason: collision with root package name */
+    private final transient Object[] f41706o;
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42782c;
+    /* renamed from: p  reason: collision with root package name */
+    private final transient int f41707p = 1;
 
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42783d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42784e;
-
-    static {
-        c.b a10 = yi.c.a("remoteModelOptions");
-        f fVar = new f();
-        fVar.a(1);
-        f42781b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("localModelOptions");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42782c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("errorCodes");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42783d = a12.b(fVar3.b()).a();
-        c.b a13 = yi.c.a("modelInitializationMs");
-        f fVar4 = new f();
-        fVar4.a(4);
-        f42784e = a13.b(fVar4.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public z1(k1 k1Var, Object[] objArr, int i10, int i11) {
+        this.f41705i = k1Var;
+        this.f41706o = objArr;
     }
 
-    private z1() {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // og.d1
+    public final int b(Object[] objArr, int i10) {
+        return f().b(objArr, i10);
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    @Override // og.d1, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        if (obj instanceof Map.Entry) {
+            Map.Entry entry = (Map.Entry) obj;
+            Object key = entry.getKey();
+            Object value = entry.getValue();
+            if (value != null && value.equals(this.f41705i.get(key))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override // og.l1
+    final i1 g() {
+        return new y1(this);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    public final /* synthetic */ Iterator iterator() {
+        return f().listIterator(0);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final int size() {
+        return this.f41707p;
     }
 }

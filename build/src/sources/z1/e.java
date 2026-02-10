@@ -6,28 +6,28 @@ import java.util.List;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f55879a;
+    private final String f55975a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f55880b;
+    private final String f55976b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f55881c;
+    private final String f55977c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f55882d;
+    private final List f55978d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f55883e;
+    private final int f55979e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f55884f;
+    private final String f55980f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f55885g;
+    private final String f55981g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f55886h;
+    private final String f55982h;
 
     public e(String str, String str2, String str3, List list) {
         this(str, str2, str3, list, null, null);
@@ -38,44 +38,44 @@ public final class e {
     }
 
     public List b() {
-        return this.f55882d;
+        return this.f55978d;
     }
 
     public int c() {
-        return this.f55883e;
+        return this.f55979e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String d() {
-        return this.f55886h;
+        return this.f55982h;
     }
 
     public String e() {
-        return this.f55879a;
+        return this.f55975a;
     }
 
     public String f() {
-        return this.f55880b;
+        return this.f55976b;
     }
 
     public String g() {
-        return this.f55881c;
+        return this.f55977c;
     }
 
     public String h() {
-        return this.f55884f;
+        return this.f55980f;
     }
 
     public String i() {
-        return this.f55885g;
+        return this.f55981g;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append("FontRequest {mProviderAuthority: " + this.f55879a + ", mProviderPackage: " + this.f55880b + ", mQuery: " + this.f55881c + ", mSystemFont: " + this.f55884f + ", mVariationSettings: " + this.f55885g + ", mCertificates:");
-        for (int i10 = 0; i10 < this.f55882d.size(); i10++) {
+        sb2.append("FontRequest {mProviderAuthority: " + this.f55975a + ", mProviderPackage: " + this.f55976b + ", mQuery: " + this.f55977c + ", mSystemFont: " + this.f55980f + ", mVariationSettings: " + this.f55981g + ", mCertificates:");
+        for (int i10 = 0; i10 < this.f55978d.size(); i10++) {
             sb2.append(" [");
-            List list = (List) this.f55882d.get(i10);
+            List list = (List) this.f55978d.get(i10);
             for (int i11 = 0; i11 < list.size(); i11++) {
                 sb2.append(" \"");
                 sb2.append(Base64.encodeToString((byte[]) list.get(i11), 0));
@@ -84,18 +84,18 @@ public final class e {
             sb2.append(" ]");
         }
         sb2.append("}");
-        sb2.append("mCertificatesArray: " + this.f55883e);
+        sb2.append("mCertificatesArray: " + this.f55979e);
         return sb2.toString();
     }
 
     public e(String str, String str2, String str3, List list, String str4, String str5) {
-        this.f55879a = (String) b2.e.g(str);
-        this.f55880b = (String) b2.e.g(str2);
-        this.f55881c = (String) b2.e.g(str3);
-        this.f55882d = (List) b2.e.g(list);
-        this.f55883e = 0;
-        this.f55884f = str4;
-        this.f55885g = str5;
-        this.f55886h = a(str, str2, str3, str4, str5);
+        this.f55975a = (String) b2.e.g(str);
+        this.f55976b = (String) b2.e.g(str2);
+        this.f55977c = (String) b2.e.g(str3);
+        this.f55978d = (List) b2.e.g(list);
+        this.f55979e = 0;
+        this.f55980f = str4;
+        this.f55981g = str5;
+        this.f55982h = a(str, str2, str3, str4, str5);
     }
 }

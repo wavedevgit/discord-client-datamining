@@ -2,24 +2,24 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var9 = 0;
-    var3 = var5[var9];
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
     var0 = undefined;
-    var3 = var11.bind(var0)(var3);
+    var3 = var6.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var3 = 1;
     var6 = var5[var3];
@@ -51,41 +51,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.createStyles;
     var3 = {};
     var8 = {};
-    var10 = 'center';
-    var8.textAlign = var10;
+    var9 = 'center';
+    var8.textAlign = var9;
     var3.text = var8;
-    var8 = {
-        'marginTop': 16,
-        'alignSelf': 'stretch',
-        'backgroundColor': null,
-        'padding': 12,
-        'borderWidth': 1,
-        'borderColor': 'transparent'
-    };
-    var10 = 6;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.colors;
-    var10 = var10.BACKGROUND_BASE_LOWEST;
-    var8.backgroundColor = var10;
-    var3.input = var8;
-    var8 = {};
-    var10 = 'flex-start';
-    var8.alignSelf = var10;
-    var3.errorText = var8;
-    var8 = {};
-    var8.flexGrow = var9;
-    var3.button = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot10 = var3;
-    var3 = 13;
+    var3 = 12;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/activate_device/native/UserCodeInput.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun96857: for (var _fun96857_ip = 0;;) switch (_fun96857_ip) {
+        _fun96835: for (var _fun96835_ip = 0;;) switch (_fun96835_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.onClose;
@@ -101,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0 != var6;
                 var0 = '';
                 if (!var7) {
-                    _fun96857_ip = 65;
-                    continue _fun96857
+                    _fun96835_ip = 65;
+                    continue _fun96835
                 }
             case 62:
                 var0 = var6;
@@ -118,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot0 = var0;
                 var16 = _closure1_slot0;
                 var17 = _closure1_slot2;
-                var0 = 7;
+                var0 = 6;
                 var0 = var17[var0];
                 var1 = var16.bind(var3)(var0);
                 var0 = var1.useUserCodeSubmit;
@@ -132,13 +110,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot5;
                 var4 = {};
                 var7 = _closure1_slot1;
-                var6 = 8;
+                var6 = 7;
                 var6 = var17[var6];
                 var6 = var7.bind(var3)(var6);
                 var6 = var6.innerContent;
                 var4.style = var6;
                 var7 = _closure1_slot7;
-                var15 = 9;
+                var15 = 8;
                 var6 = var17[var15];
                 var6 = var16.bind(var3)(var6);
                 var18 = var6.Text;
@@ -148,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var13 = var19.text;
                 var6.style = var13;
-                var13 = 10;
+                var13 = 9;
                 var20 = var17[var13];
                 var20 = var16.bind(var3)(var20);
                 var22 = var20.intl;
@@ -187,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.bind(var3)(var5, var4);
                 var4 = new Array(3);
                 var4[0] = var5;
-                var5 = 11;
+                var5 = 10;
                 var5 = var17[var5];
                 var5 = var16.bind(var3)(var5);
                 var6 = var5.TextInput;
@@ -224,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.errorMessage = var14;
                 var5 = var7.bind(var3)(var6, var5);
                 var4[1] = var5;
-                var5 = 12;
+                var5 = 11;
                 var5 = var17[var5];
                 var5 = var16.bind(var3)(var5);
                 var6 = var5.Button;
@@ -257,4 +235,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.UserCodeInput = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 12614, 33, 1297, 671, 12615, 12616, 3942, 1234, 5453, 4084, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 12601, 33, 1297, 12602, 12603, 3942, 1234, 5454, 4084, 2]);

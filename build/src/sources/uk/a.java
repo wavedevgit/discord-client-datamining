@@ -1,122 +1,269 @@
 package uk;
 
-import tk.k;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import com.google.zxing.Result;
+import java.util.Arrays;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a extends k {
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int[] f51617b;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final int[] f51620e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final int[] f51621f;
-
-    /* renamed from: a  reason: collision with root package name */
-    private final int[] f51616a = new int[4];
-
-    /* renamed from: c  reason: collision with root package name */
-    private final float[] f51618c = new float[4];
+public final class a extends k {
 
     /* renamed from: d  reason: collision with root package name */
-    private final float[] f51619d = new float[4];
+    static final char[] f51639d = "0123456789-$:/.+ABCD".toCharArray();
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public a() {
-        int[] iArr = new int[8];
-        this.f51617b = iArr;
-        this.f51620e = new int[iArr.length / 2];
-        this.f51621f = new int[iArr.length / 2];
-    }
+    /* renamed from: e  reason: collision with root package name */
+    static final int[] f51640e = {3, 6, 9, 96, 18, 66, 33, 36, 48, 72, 12, 24, 69, 81, 84, 21, 26, 41, 11, 14};
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public static void g(int[] iArr, float[] fArr) {
-        int i10 = 0;
-        float f10 = fArr[0];
-        for (int i11 = 1; i11 < iArr.length; i11++) {
-            float f11 = fArr[i11];
-            if (f11 < f10) {
-                i10 = i11;
-                f10 = f11;
-            }
-        }
-        iArr[i10] = iArr[i10] - 1;
-    }
+    /* renamed from: f  reason: collision with root package name */
+    private static final char[] f51641f = {'A', 'B', 'C', 'D'};
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public static void n(int[] iArr, float[] fArr) {
-        int i10 = 0;
-        float f10 = fArr[0];
-        for (int i11 = 1; i11 < iArr.length; i11++) {
-            float f11 = fArr[i11];
-            if (f11 > f10) {
-                i10 = i11;
-                f10 = f11;
-            }
-        }
-        iArr[i10] = iArr[i10] + 1;
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private final StringBuilder f51642a = new StringBuilder(20);
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public static boolean o(int[] iArr) {
-        int i10;
-        float f10 = (iArr[0] + iArr[1]) / ((iArr[2] + i10) + iArr[3]);
-        if (f10 >= 0.7916667f && f10 <= 0.89285713f) {
-            int i11 = Integer.MAX_VALUE;
-            int i12 = Integer.MIN_VALUE;
-            for (int i13 : iArr) {
-                if (i13 > i12) {
-                    i12 = i13;
+    /* renamed from: b  reason: collision with root package name */
+    private int[] f51643b = new int[80];
+
+    /* renamed from: c  reason: collision with root package name */
+    private int f51644c = 0;
+
+    static boolean g(char[] cArr, char c10) {
+        if (cArr != null) {
+            for (char c11 : cArr) {
+                if (c11 == c10) {
+                    return true;
                 }
-                if (i13 < i11) {
-                    i11 = i13;
-                }
-            }
-            if (i12 < i11 * 10) {
-                return true;
             }
         }
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public static int p(int[] iArr, int[][] iArr2) {
-        for (int i10 = 0; i10 < iArr2.length; i10++) {
-            if (k.d(iArr, iArr2[i10], 0.45f) < 0.2f) {
-                return i10;
+    private void h(int i10) {
+        int[] iArr = this.f51643b;
+        int i11 = this.f51644c;
+        iArr[i11] = i10;
+        int i12 = i11 + 1;
+        this.f51644c = i12;
+        if (i12 >= iArr.length) {
+            int[] iArr2 = new int[i12 * 2];
+            System.arraycopy(iArr, 0, iArr2, 0, i12);
+            this.f51643b = iArr2;
+        }
+    }
+
+    private int i() {
+        for (int i10 = 1; i10 < this.f51644c; i10 += 2) {
+            int k10 = k(i10);
+            if (k10 != -1 && g(f51641f, f51639d[k10])) {
+                int i11 = 0;
+                for (int i12 = i10; i12 < i10 + 7; i12++) {
+                    i11 += this.f51643b[i12];
+                }
+                if (i10 == 1 || this.f51643b[i10 - 1] >= i11 / 2) {
+                    return i10;
+                }
             }
         }
-        throw hk.k.a();
+        throw ik.k.a();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final int[] h() {
-        return this.f51617b;
+    private void j(mk.a aVar) {
+        int i10 = 0;
+        this.f51644c = 0;
+        int k10 = aVar.k(0);
+        int l10 = aVar.l();
+        if (k10 < l10) {
+            boolean z10 = true;
+            while (k10 < l10) {
+                if (aVar.h(k10) != z10) {
+                    i10++;
+                } else {
+                    h(i10);
+                    z10 = !z10;
+                    i10 = 1;
+                }
+                k10++;
+            }
+            h(i10);
+            return;
+        }
+        throw ik.k.a();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final int[] i() {
-        return this.f51616a;
+    private int k(int i10) {
+        int i11;
+        int i12 = i10 + 7;
+        if (i12 >= this.f51644c) {
+            return -1;
+        }
+        int[] iArr = this.f51643b;
+        int i13 = Integer.MAX_VALUE;
+        int i14 = 0;
+        int i15 = Integer.MAX_VALUE;
+        int i16 = 0;
+        for (int i17 = i10; i17 < i12; i17 += 2) {
+            int i18 = iArr[i17];
+            if (i18 < i15) {
+                i15 = i18;
+            }
+            if (i18 > i16) {
+                i16 = i18;
+            }
+        }
+        int i19 = (i15 + i16) / 2;
+        int i20 = 0;
+        for (int i21 = i10 + 1; i21 < i12; i21 += 2) {
+            int i22 = iArr[i21];
+            if (i22 < i13) {
+                i13 = i22;
+            }
+            if (i22 > i20) {
+                i20 = i22;
+            }
+        }
+        int i23 = (i13 + i20) / 2;
+        int i24 = IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        int i25 = 0;
+        for (int i26 = 0; i26 < 7; i26++) {
+            if ((i26 & 1) == 0) {
+                i11 = i19;
+            } else {
+                i11 = i23;
+            }
+            i24 >>= 1;
+            if (iArr[i10 + i26] > i11) {
+                i25 |= i24;
+            }
+        }
+        while (true) {
+            int[] iArr2 = f51640e;
+            if (i14 >= iArr2.length) {
+                return -1;
+            }
+            if (iArr2[i14] == i25) {
+                return i14;
+            }
+            i14++;
+        }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final int[] j() {
-        return this.f51621f;
+    private void l(int i10) {
+        int[] iArr = new int[4];
+        iArr[0] = 0;
+        iArr[1] = 0;
+        iArr[2] = 0;
+        iArr[3] = 0;
+        int[] iArr2 = new int[4];
+        iArr2[0] = 0;
+        iArr2[1] = 0;
+        iArr2[2] = 0;
+        iArr2[3] = 0;
+        int length = this.f51642a.length() - 1;
+        int i11 = i10;
+        int i12 = 0;
+        while (true) {
+            if (i12 > length) {
+                break;
+            }
+            int i13 = f51640e[this.f51642a.charAt(i12)];
+            for (int i14 = 6; i14 >= 0; i14--) {
+                int i15 = (i14 & 1) + ((i13 & 1) * 2);
+                iArr[i15] = iArr[i15] + this.f51643b[i11 + i14];
+                iArr2[i15] = iArr2[i15] + 1;
+                i13 >>= 1;
+            }
+            i11 += 8;
+            i12++;
+        }
+        float[] fArr = new float[4];
+        float[] fArr2 = new float[4];
+        for (int i16 = 0; i16 < 2; i16++) {
+            fArr2[i16] = 0.0f;
+            int i17 = i16 + 2;
+            int i18 = iArr[i17];
+            int i19 = iArr2[i17];
+            float f10 = ((iArr[i16] / iArr2[i16]) + (i18 / i19)) / 2.0f;
+            fArr2[i17] = f10;
+            fArr[i16] = f10;
+            fArr[i17] = ((i18 * 2.0f) + 1.5f) / i19;
+        }
+        int i20 = i10;
+        for (int i21 = 0; i21 <= length; i21++) {
+            int i22 = f51640e[this.f51642a.charAt(i21)];
+            for (int i23 = 6; i23 >= 0; i23--) {
+                int i24 = (i23 & 1) + ((i22 & 1) * 2);
+                float f11 = this.f51643b[i20 + i23];
+                if (f11 >= fArr2[i24] && f11 <= fArr[i24]) {
+                    i22 >>= 1;
+                } else {
+                    throw ik.k.a();
+                }
+            }
+            i20 += 8;
+        }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final float[] k() {
-        return this.f51619d;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final int[] l() {
-        return this.f51620e;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final float[] m() {
-        return this.f51618c;
+    @Override // uk.k
+    public Result b(int i10, mk.a aVar, Map map) {
+        int i11;
+        Arrays.fill(this.f51643b, 0);
+        j(aVar);
+        int i12 = i();
+        this.f51642a.setLength(0);
+        int i13 = i12;
+        while (true) {
+            int k10 = k(i13);
+            if (k10 != -1) {
+                this.f51642a.append((char) k10);
+                i11 = i13 + 8;
+                if ((this.f51642a.length() <= 1 || !g(f51641f, f51639d[k10])) && i11 < this.f51644c) {
+                    i13 = i11;
+                }
+            } else {
+                throw ik.k.a();
+            }
+        }
+        int i14 = i13 + 7;
+        int i15 = this.f51643b[i14];
+        int i16 = 0;
+        for (int i17 = -8; i17 < -1; i17++) {
+            i16 += this.f51643b[i11 + i17];
+        }
+        if (i11 < this.f51644c && i15 < i16 / 2) {
+            throw ik.k.a();
+        }
+        l(i12);
+        for (int i18 = 0; i18 < this.f51642a.length(); i18++) {
+            StringBuilder sb2 = this.f51642a;
+            sb2.setCharAt(i18, f51639d[sb2.charAt(i18)]);
+        }
+        char charAt = this.f51642a.charAt(0);
+        char[] cArr = f51641f;
+        if (g(cArr, charAt)) {
+            StringBuilder sb3 = this.f51642a;
+            if (g(cArr, sb3.charAt(sb3.length() - 1))) {
+                if (this.f51642a.length() > 3) {
+                    if (map == null || !map.containsKey(ik.e.RETURN_CODABAR_START_END)) {
+                        StringBuilder sb4 = this.f51642a;
+                        sb4.deleteCharAt(sb4.length() - 1);
+                        this.f51642a.deleteCharAt(0);
+                    }
+                    int i19 = 0;
+                    for (int i20 = 0; i20 < i12; i20++) {
+                        i19 += this.f51643b[i20];
+                    }
+                    float f10 = i19;
+                    while (i12 < i14) {
+                        i19 += this.f51643b[i12];
+                        i12++;
+                    }
+                    float f11 = i10;
+                    Result result = new Result(this.f51642a.toString(), null, new ik.p[]{new ik.p(f10, f11), new ik.p(i19, f11)}, ik.a.CODABAR);
+                    result.h(ik.o.SYMBOLOGY_IDENTIFIER, "]F0");
+                    return result;
+                }
+                throw ik.k.a();
+            }
+            throw ik.k.a();
+        }
+        throw ik.k.a();
     }
 }

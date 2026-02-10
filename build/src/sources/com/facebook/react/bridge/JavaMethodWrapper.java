@@ -12,7 +12,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
-import qb.b;
+import rb.b;
 @Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u0000 32\u00020\u0001:\u000223B\u001f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007¢\u0006\u0004\b\b\u0010\tJ\b\u0010!\u001a\u00020\"H\u0002J/\u0010%\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00052\u0010\u0010&\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u000e0\r2\u0006\u0010\u0006\u001a\u00020\u0007H\u0002¢\u0006\u0002\u0010'J)\u0010(\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u001a0\r2\u0010\u0010&\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u000e0\rH\u0002¢\u0006\u0002\u0010)J\b\u0010*\u001a\u00020\u0011H\u0002J\u0018\u0010+\u001a\u00020\u00132\u0006\u0010,\u001a\u00020\u00112\u0006\u0010 \u001a\u00020\u0011H\u0002J\u0018\u0010-\u001a\u00020\"2\u0006\u0010.\u001a\u00020/2\u0006\u00100\u001a\u000201H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u001a\u0010\f\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u000e0\rX\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u000fR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0012\u001a\u00020\u0013X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R\u000e\u0010\u0018\u001a\u00020\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u0019\u001a\u000e\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u001a\u0018\u00010\rX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u001bR\u0010\u0010\u001c\u001a\u0004\u0018\u00010\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u001d\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u001e\u0018\u00010\rX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u001fR\u000e\u0010 \u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u0013\u0010#\u001a\u0004\u0018\u00010\u00138F¢\u0006\u0006\u001a\u0004\b$\u0010\u0015¨\u00064"}, d2 = {"Lcom/facebook/react/bridge/JavaMethodWrapper;", "Lcom/facebook/react/bridge/JavaModuleWrapper$NativeMethod;", "moduleWrapper", "Lcom/facebook/react/bridge/JavaModuleWrapper;", "method", "Ljava/lang/reflect/Method;", "isSync", "", "<init>", "(Lcom/facebook/react/bridge/JavaModuleWrapper;Ljava/lang/reflect/Method;Z)V", "getMethod", "()Ljava/lang/reflect/Method;", "parameterTypes", "", "Ljava/lang/Class;", "[Ljava/lang/Class;", "paramLength", "", "type", "", "getType", "()Ljava/lang/String;", "setType", "(Ljava/lang/String;)V", "argumentsProcessed", "argumentExtractors", "Lcom/facebook/react/bridge/JavaMethodWrapper$ArgumentExtractor;", "[Lcom/facebook/react/bridge/JavaMethodWrapper$ArgumentExtractor;", "internalSignature", "arguments", "", "[Ljava/lang/Object;", "jsArgumentsNeeded", "processArguments", "", "signature", "getSignature", "buildSignature", "paramTypes", "(Ljava/lang/reflect/Method;[Ljava/lang/Class;Z)Ljava/lang/String;", "buildArgumentExtractors", "([Ljava/lang/Class;)[Lcom/facebook/react/bridge/JavaMethodWrapper$ArgumentExtractor;", "calculateJSArgumentsNeeded", "getAffectedRange", "startIndex", "invoke", "jsInstance", "Lcom/facebook/react/bridge/JSInstance;", "parameters", "Lcom/facebook/react/bridge/ReadableArray;", "ArgumentExtractor", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nJavaMethodWrapper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JavaMethodWrapper.kt\ncom/facebook/react/bridge/JavaMethodWrapper\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,400:1\n1#2:401\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -260,7 +260,7 @@ public final class JavaMethodWrapper implements JavaModuleWrapper.NativeMethod {
                 return new PromiseImpl((Callback) argumentExtractor.extractArgument(jsInstance, jsArguments, i10), (Callback) argumentExtractor2.extractArgument(jsInstance, jsArguments, i10 + 1));
             }
         };
-        DEBUG = a9.c.a().a(b9.a.f6501e);
+        DEBUG = b9.c.a().a(c9.a.f7342e);
     }
 
     public JavaMethodWrapper(@NotNull JavaModuleWrapper moduleWrapper, @NotNull Method method, boolean z10) {
@@ -375,7 +375,7 @@ public final class JavaMethodWrapper implements JavaModuleWrapper.NativeMethod {
         if (this.argumentsProcessed) {
             return;
         }
-        b.a a10 = qb.b.a(0L, "processArguments");
+        b.a a10 = rb.b.a(0L, "processArguments");
         String name = this.moduleWrapper.getName();
         String name2 = this.method.getName();
         a10.b("method", name + "." + name2).c();
@@ -386,7 +386,7 @@ public final class JavaMethodWrapper implements JavaModuleWrapper.NativeMethod {
             this.arguments = new Object[this.parameterTypes.length];
             this.jsArgumentsNeeded = calculateJSArgumentsNeeded();
         } finally {
-            qb.b.b(0L).c();
+            rb.b.b(0L).c();
         }
     }
 
@@ -417,9 +417,9 @@ public final class JavaMethodWrapper implements JavaModuleWrapper.NativeMethod {
         Intrinsics.checkNotNullParameter(jsInstance, "jsInstance");
         Intrinsics.checkNotNullParameter(parameters, "parameters");
         String str = this.moduleWrapper.getName() + "." + this.method.getName();
-        qb.b.a(0L, "callJavaModuleMethod").b("method", str).c();
+        rb.b.a(0L, "callJavaModuleMethod").b("method", str).c();
         if (DEBUG) {
-            a9.c.a().b(b9.a.f6501e, "JS->Java: %s.%s()", this.moduleWrapper.getName(), this.method.getName());
+            b9.c.a().c(c9.a.f7342e, "JS->Java: %s.%s()", this.moduleWrapper.getName(), this.method.getName());
         }
         try {
             if (!this.argumentsProcessed) {
@@ -443,7 +443,7 @@ public final class JavaMethodWrapper implements JavaModuleWrapper.NativeMethod {
                         }
                         try {
                             this.method.invoke(this.moduleWrapper.getModule(), Arrays.copyOf(objArr, objArr.length));
-                            qb.b.b(0L).c();
+                            rb.b.b(0L).c();
                             return;
                         } catch (IllegalAccessException e12) {
                             throw new RuntimeException(Companion.createInvokeExceptionMessage(str), e12);
@@ -464,7 +464,7 @@ public final class JavaMethodWrapper implements JavaModuleWrapper.NativeMethod {
             }
             throw new IllegalArgumentException("processArguments failed: 'arguments' is null.");
         } catch (Throwable th2) {
-            qb.b.b(0L).c();
+            rb.b.b(0L).c();
             throw th2;
         }
     }

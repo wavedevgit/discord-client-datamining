@@ -1,43 +1,25 @@
 package y5;
+
+import l5.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class d {
+public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f55053a;
+    private static z f55508a = new c();
 
-    /* renamed from: b  reason: collision with root package name */
-    private float f55054b;
-
-    public d(float f10, float f11) {
-        this.f55053a = f10;
-        this.f55054b = f11;
+    public static void a(String str) {
+        f55508a.c(str);
     }
 
-    public boolean a(float f10, float f11) {
-        if (this.f55053a == f10 && this.f55054b == f11) {
-            return true;
-        }
-        return false;
+    public static void b(String str, Throwable th2) {
+        f55508a.b(str, th2);
     }
 
-    public float b() {
-        return this.f55053a;
+    public static void c(String str) {
+        f55508a.a(str);
     }
 
-    public float c() {
-        return this.f55054b;
-    }
-
-    public void d(float f10, float f11) {
-        this.f55053a = f10;
-        this.f55054b = f11;
-    }
-
-    public String toString() {
-        return b() + "x" + c();
-    }
-
-    public d() {
-        this(1.0f, 1.0f);
+    public static void d(String str, Throwable th2) {
+        f55508a.d(str, th2);
     }
 }

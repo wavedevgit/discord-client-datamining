@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/native/components/FormSeparator.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun84997: for (var _fun84997_ip = 0;;) switch (_fun84997_ip) {
+        _fun85001: for (var _fun85001_ip = 0;;) switch (_fun85001_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.style;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var8;
                 var8 = undefined;
                 if (var9) {
-                    _fun84997_ip = 61;
-                    continue _fun84997
+                    _fun85001_ip = 61;
+                    continue _fun85001
                 }
             case 55:
                 var8 = var7.margins;

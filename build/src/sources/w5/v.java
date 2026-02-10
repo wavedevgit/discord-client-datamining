@@ -1,0 +1,302 @@
+package w5;
+
+import android.graphics.Color;
+import android.graphics.Rect;
+import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import u5.e;
+import x5.c;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public abstract class v {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final c.a f53308a = c.a.a("nm", "ind", "refId", "ty", "parent", "sw", "sh", "sc", "ks", "tt", "masksProperties", "shapes", "t", "ef", "sr", "st", "w", "h", "ip", "op", "tm", "cl", "hd", "ao", "bm");
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final c.a f53309b = c.a.a("d", "a");
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final c.a f53310c = c.a.a("ty", "nm");
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    public static /* synthetic */ class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f53311a;
+
+        static {
+            int[] iArr = new int[e.b.values().length];
+            f53311a = iArr;
+            try {
+                iArr[e.b.LUMA.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f53311a[e.b.LUMA_INVERTED.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+        }
+    }
+
+    public static u5.e a(l5.i iVar) {
+        Rect b10 = iVar.b();
+        List list = Collections.EMPTY_LIST;
+        return new u5.e(list, iVar, "__container", -1L, e.a.PRE_COMP, -1L, null, list, new s5.n(), 0, 0, 0, 0.0f, 0.0f, b10.width(), b10.height(), null, null, list, e.b.NONE, null, false, null, null, t5.h.NORMAL);
+    }
+
+    public static u5.e b(x5.c cVar, l5.i iVar) {
+        Float f10;
+        boolean z10;
+        float f11;
+        Float valueOf = Float.valueOf(0.0f);
+        Float valueOf2 = Float.valueOf(1.0f);
+        e.b bVar = e.b.NONE;
+        t5.h hVar = t5.h.NORMAL;
+        ArrayList arrayList = new ArrayList();
+        ArrayList arrayList2 = new ArrayList();
+        cVar.u();
+        boolean z11 = false;
+        e.b bVar2 = bVar;
+        t5.h hVar2 = hVar;
+        float f12 = 0.0f;
+        float f13 = 0.0f;
+        float f14 = 0.0f;
+        float f15 = 0.0f;
+        float f16 = 0.0f;
+        String str = null;
+        s5.j jVar = null;
+        s5.k kVar = null;
+        s5.b bVar3 = null;
+        t5.a aVar = null;
+        j jVar2 = null;
+        long j10 = 0;
+        int i10 = 0;
+        int i11 = 0;
+        int i12 = 0;
+        boolean z12 = false;
+        long j11 = -1;
+        float f17 = 1.0f;
+        String str2 = "UNSET";
+        String str3 = null;
+        s5.n nVar = null;
+        e.a aVar2 = null;
+        boolean z13 = false;
+        while (cVar.hasNext()) {
+            switch (cVar.p(f53308a)) {
+                case 0:
+                    str2 = cVar.b1();
+                    break;
+                case 1:
+                    j10 = cVar.nextInt();
+                    break;
+                case 2:
+                    str = cVar.b1();
+                    break;
+                case 3:
+                    f11 = f17;
+                    int nextInt = cVar.nextInt();
+                    aVar2 = e.a.UNKNOWN;
+                    if (nextInt < aVar2.ordinal()) {
+                        aVar2 = e.a.values()[nextInt];
+                    }
+                    f17 = f11;
+                    break;
+                case 4:
+                    j11 = cVar.nextInt();
+                    break;
+                case 5:
+                    i10 = (int) (cVar.nextInt() * y5.j.e());
+                    break;
+                case 6:
+                    i11 = (int) (cVar.nextInt() * y5.j.e());
+                    break;
+                case 7:
+                    i12 = Color.parseColor(cVar.b1());
+                    break;
+                case 8:
+                    nVar = c.g(cVar, iVar);
+                    break;
+                case 9:
+                    f11 = f17;
+                    int nextInt2 = cVar.nextInt();
+                    if (nextInt2 >= e.b.values().length) {
+                        iVar.a("Unsupported matte type: " + nextInt2);
+                    } else {
+                        bVar2 = e.b.values()[nextInt2];
+                        int i13 = a.f53311a[bVar2.ordinal()];
+                        if (i13 != 1) {
+                            if (i13 == 2) {
+                                iVar.a("Unsupported matte type: Luma Inverted");
+                            }
+                        } else {
+                            iVar.a("Unsupported matte type: Luma");
+                        }
+                        iVar.r(1);
+                    }
+                    f17 = f11;
+                    break;
+                case 10:
+                    f11 = f17;
+                    cVar.x();
+                    while (cVar.hasNext()) {
+                        arrayList.add(x.a(cVar, iVar));
+                    }
+                    iVar.r(arrayList.size());
+                    cVar.v();
+                    f17 = f11;
+                    break;
+                case 11:
+                    f11 = f17;
+                    cVar.x();
+                    while (cVar.hasNext()) {
+                        t5.c a10 = h.a(cVar, iVar);
+                        if (a10 != null) {
+                            arrayList2.add(a10);
+                        }
+                    }
+                    cVar.v();
+                    f17 = f11;
+                    break;
+                case 12:
+                    f11 = f17;
+                    cVar.u();
+                    while (cVar.hasNext()) {
+                        int p10 = cVar.p(f53309b);
+                        if (p10 != 0) {
+                            if (p10 != 1) {
+                                cVar.s();
+                                cVar.T();
+                            } else {
+                                cVar.x();
+                                if (cVar.hasNext()) {
+                                    kVar = b.a(cVar, iVar);
+                                }
+                                while (cVar.hasNext()) {
+                                    cVar.T();
+                                }
+                                cVar.v();
+                            }
+                        } else {
+                            jVar = d.d(cVar, iVar);
+                        }
+                    }
+                    cVar.D();
+                    f17 = f11;
+                    break;
+                case 13:
+                    f11 = f17;
+                    cVar.x();
+                    ArrayList arrayList3 = new ArrayList();
+                    while (cVar.hasNext()) {
+                        cVar.u();
+                        while (cVar.hasNext()) {
+                            int p11 = cVar.p(f53310c);
+                            if (p11 != 0) {
+                                if (p11 != 1) {
+                                    cVar.s();
+                                    cVar.T();
+                                } else {
+                                    arrayList3.add(cVar.b1());
+                                }
+                            } else {
+                                int nextInt3 = cVar.nextInt();
+                                if (nextInt3 == 29) {
+                                    aVar = e.b(cVar, iVar);
+                                } else if (nextInt3 == 25) {
+                                    jVar2 = new k().b(cVar, iVar);
+                                }
+                            }
+                        }
+                        cVar.D();
+                    }
+                    cVar.v();
+                    iVar.a("Lottie doesn't support layer effects. If you are using them for  fills, strokes, trim paths etc. then try adding them directly as contents  in your shape. Found: " + arrayList3);
+                    f17 = f11;
+                    break;
+                case 14:
+                    f17 = (float) cVar.nextDouble();
+                    break;
+                case 15:
+                    f16 = (float) cVar.nextDouble();
+                    break;
+                case 16:
+                    f11 = f17;
+                    f14 = (float) (cVar.nextDouble() * y5.j.e());
+                    f17 = f11;
+                    break;
+                case 17:
+                    f11 = f17;
+                    f15 = (float) (cVar.nextDouble() * y5.j.e());
+                    f17 = f11;
+                    break;
+                case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
+                    f12 = (float) cVar.nextDouble();
+                    continue;
+                case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
+                    f13 = (float) cVar.nextDouble();
+                    continue;
+                case 20:
+                    bVar3 = d.f(cVar, iVar, z11);
+                    continue;
+                case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
+                    str3 = cVar.b1();
+                    continue;
+                case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
+                    z12 = cVar.g();
+                    continue;
+                case 23:
+                    if (cVar.nextInt() == 1) {
+                        z13 = true;
+                    } else {
+                        z13 = z11;
+                        continue;
+                    }
+                case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
+                    int nextInt4 = cVar.nextInt();
+                    if (nextInt4 >= t5.h.values().length) {
+                        iVar.a("Unsupported Blend Mode: " + nextInt4);
+                        hVar2 = t5.h.NORMAL;
+                    } else {
+                        hVar2 = t5.h.values()[nextInt4];
+                        continue;
+                    }
+                default:
+                    cVar.s();
+                    cVar.T();
+                    f11 = f17;
+                    f17 = f11;
+                    break;
+            }
+            z11 = false;
+        }
+        float f18 = f17;
+        cVar.D();
+        ArrayList arrayList4 = new ArrayList();
+        if (f12 > 0.0f) {
+            z10 = z13;
+            f10 = valueOf;
+            arrayList4.add(new z5.a(iVar, valueOf, valueOf, null, 0.0f, Float.valueOf(f12)));
+        } else {
+            f10 = valueOf;
+            z10 = z13;
+        }
+        if (f13 <= 0.0f) {
+            f13 = iVar.f();
+        }
+        arrayList4.add(new z5.a(iVar, valueOf2, valueOf2, null, f12, Float.valueOf(f13)));
+        arrayList4.add(new z5.a(iVar, f10, f10, null, f13, Float.valueOf(Float.MAX_VALUE)));
+        if (str2.endsWith(".ai") || "ai".equals(str3)) {
+            iVar.a("Convert your Illustrator layers to shape layers.");
+        }
+        if (z10) {
+            if (nVar == null) {
+                nVar = new s5.n();
+            }
+            nVar.m(z10);
+        }
+        return new u5.e(arrayList2, iVar, str2, j10, aVar2, j11, str, arrayList, nVar, i10, i11, i12, f18, f16, f14, f15, jVar, kVar, arrayList4, bVar2, bVar3, z12, aVar, jVar2, hVar2);
+    }
+}

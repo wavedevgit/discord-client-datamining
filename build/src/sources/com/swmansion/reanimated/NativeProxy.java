@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class NativeProxy extends NativeProxyCommon {
     private final FabricUIManager mFabricUIManager;
-    @fb.a
+    @gb.a
     private final HybridData mHybridData;
     private final AtomicBoolean mInvalidated;
 
@@ -102,7 +102,7 @@ public class NativeProxy extends NativeProxyCommon {
 
     public native void performOperations(boolean z10, boolean z11);
 
-    @fb.a
+    @gb.a
     public boolean preserveMountedTags(int[] iArr) {
         for (int i10 = 0; i10 < iArr.length; i10++) {
             try {

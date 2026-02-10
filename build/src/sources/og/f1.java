@@ -1,43 +1,28 @@
 package og;
-
-import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class f1 implements yi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final f1 f42061a = new f1();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42062b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42063c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42064d;
-
-    static {
-        c.b a10 = yi.c.a("logEventKey");
-        f fVar = new f();
-        fVar.a(1);
-        f42062b = a10.b(fVar.b()).a();
-        c.b a11 = yi.c.a("eventCount");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f42063c = a11.b(fVar2.b()).a();
-        c.b a12 = yi.c.a("inferenceDurationStats");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f42064d = a12.b(fVar3.b()).a();
+public final class f1 extends b1 {
+    public f1() {
+        super(4);
     }
 
-    private f1() {
+    @Override // og.c1
+    public final /* synthetic */ c1 a(Object obj) {
+        super.b(obj);
+        return this;
     }
 
-    @Override // yi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        yi.e eVar = (yi.e) obj2;
-        throw null;
+    public final f1 e(Object obj) {
+        super.b(obj);
+        return this;
+    }
+
+    public final f1 f(Iterable iterable) {
+        super.c(iterable);
+        return this;
+    }
+
+    public final i1 g() {
+        this.f40780c = true;
+        return i1.g(this.f40778a, this.f40779b);
     }
 }

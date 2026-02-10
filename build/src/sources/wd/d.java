@@ -1,0 +1,158 @@
+package wd;
+
+import android.net.Uri;
+import android.text.TextUtils;
+import com.google.android.exoplayer2.Format;
+import com.google.android.exoplayer2.metadata.Metadata;
+import ed.h0;
+import java.io.EOFException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import nc.t1;
+import oe.c0;
+import oe.s0;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class d implements h {
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final int[] f53515d = {8, 13, 11, 2, 0, 1, 7};
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int f53516b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f53517c;
+
+    public d() {
+        this(0, true);
+    }
+
+    private static void b(int i10, List list) {
+        if (qi.e.h(f53515d, i10) != -1 && !list.contains(Integer.valueOf(i10))) {
+            list.add(Integer.valueOf(i10));
+        }
+    }
+
+    private uc.k d(int i10, Format format, List list, s0 s0Var) {
+        if (i10 != 0) {
+            if (i10 != 1) {
+                if (i10 != 2) {
+                    if (i10 != 7) {
+                        if (i10 != 8) {
+                            if (i10 != 11) {
+                                if (i10 != 13) {
+                                    return null;
+                                }
+                                return new t(format.f11718i, s0Var);
+                            }
+                            return f(this.f53516b, this.f53517c, format, list, s0Var);
+                        }
+                        return e(s0Var, format, list);
+                    }
+                    return new bd.f(0, 0L);
+                }
+                return new ed.h();
+            }
+            return new ed.e();
+        }
+        return new ed.b();
+    }
+
+    private static cd.g e(s0 s0Var, Format format, List list) {
+        int i10;
+        if (g(format)) {
+            i10 = 4;
+        } else {
+            i10 = 0;
+        }
+        if (list == null) {
+            list = Collections.EMPTY_LIST;
+        }
+        return new cd.g(i10, s0Var, null, list);
+    }
+
+    private static h0 f(int i10, boolean z10, Format format, List list, s0 s0Var) {
+        int i11 = i10 | 16;
+        if (list != null) {
+            i11 = i10 | 48;
+        } else if (z10) {
+            list = Collections.singletonList(new Format.b().g0("application/cea-608").G());
+        } else {
+            list = Collections.EMPTY_LIST;
+        }
+        String str = format.f11724t;
+        if (!TextUtils.isEmpty(str)) {
+            if (!c0.b(str, "audio/mp4a-latm")) {
+                i11 |= 2;
+            }
+            if (!c0.b(str, "video/avc")) {
+                i11 |= 4;
+            }
+        }
+        return new h0(2, s0Var, new ed.j(i11, list));
+    }
+
+    private static boolean g(Format format) {
+        Metadata.b d10;
+        Metadata metadata = format.f11725u;
+        if (metadata == null) {
+            return false;
+        }
+        for (int i10 = 0; i10 < metadata.e(); i10++) {
+            if (metadata.d(i10) instanceof q) {
+                return !((q) d10).f53627i.isEmpty();
+            }
+        }
+        return false;
+    }
+
+    private static boolean h(uc.k kVar, uc.l lVar) {
+        try {
+            boolean d10 = kVar.d(lVar);
+            lVar.e();
+            return d10;
+        } catch (EOFException unused) {
+            lVar.e();
+            return false;
+        } catch (Throwable th2) {
+            lVar.e();
+            throw th2;
+        }
+    }
+
+    @Override // wd.h
+    /* renamed from: c */
+    public b a(Uri uri, Format format, List list, s0 s0Var, Map map, uc.l lVar, t1 t1Var) {
+        int a10 = oe.p.a(format.f11727w);
+        int b10 = oe.p.b(map);
+        int c10 = oe.p.c(uri);
+        int[] iArr = f53515d;
+        ArrayList arrayList = new ArrayList(iArr.length);
+        b(a10, arrayList);
+        b(b10, arrayList);
+        b(c10, arrayList);
+        for (int i10 : iArr) {
+            b(i10, arrayList);
+        }
+        lVar.e();
+        uc.k kVar = null;
+        for (int i11 = 0; i11 < arrayList.size(); i11++) {
+            int intValue = ((Integer) arrayList.get(i11)).intValue();
+            uc.k kVar2 = (uc.k) oe.a.e(d(intValue, format, list, s0Var));
+            if (h(kVar2, lVar)) {
+                return new b(kVar2, format, s0Var);
+            }
+            if (kVar == null && (intValue == a10 || intValue == b10 || intValue == c10 || intValue == 11)) {
+                kVar = kVar2;
+            }
+        }
+        return new b((uc.k) oe.a.e(kVar), format, s0Var);
+    }
+
+    public d(int i10, boolean z10) {
+        this.f53516b = i10;
+        this.f53517c = z10;
+    }
+}

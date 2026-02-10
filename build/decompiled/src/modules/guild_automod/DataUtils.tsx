@@ -22,15 +22,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/guild_automod/DataUtils.tsx';
     var1 = var4.bind(var5)(var1);
     var1 = function arg0() {
-        _fun115805: for (var _fun115805_ip = 0;;) switch (_fun115805_ip) {
+        _fun115767: for (var _fun115767_ip = 0;;) switch (_fun115767_ip) {
             case 0:
                 var4 = arg0;
                 var _closure2_slot0 = var4;
                 var2 = null;
                 var0 = var4;
                 if (!(var2 != var0)) {
-                    _fun115805_ip = 57;
-                    continue _fun115805
+                    _fun115767_ip = 57;
+                    continue _fun115767
                 }
             case 18:
                 var2 = global;
@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.bind(var3)(var4);
                 var3 = var4.reduce;
                 var2 = function(arg0, arg1) { // Environment: var1
-                    _fun115806: for (var _fun115806_ip = 0;;) switch (_fun115806_ip) {
+                    _fun115768: for (var _fun115768_ip = 0;;) switch (_fun115768_ip) {
                         case 0:
                             var0 = arg0;
                             var3 = arg1;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = 'object';
                             var5 = typeof var5;
                             if (!(var7 === var5)) {
-                                _fun115806_ip = 115;
-                                continue _fun115806
+                                _fun115768_ip = 115;
+                                continue _fun115768
                             }
                         case 63:
                             var5 = global;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5[var3];
                             var5 = var7.bind(var8)(var5);
                             if (var5) {
-                                _fun115806_ip = 115;
-                                continue _fun115806
+                                _fun115768_ip = 115;
+                                continue _fun115768
                             }
                         case 92:
                             var5 = _closure1_slot2;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var4[var3];
                             var4 = var5.bind(var6)(var4);
                             var0[var2] = var4;
-                            _fun115806_ip = 127;
-                            continue _fun115806;
+                            _fun115768_ip = 127;
+                            continue _fun115768;
                         case 115:
                             var1 = _closure2_slot0;
                             var1 = var1[var3];
@@ -95,15 +95,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var1;
     var2._transformMetadataToCamelCase = var1;
     var1 = function arg0() {
-        _fun115807: for (var _fun115807_ip = 0;;) switch (_fun115807_ip) {
+        _fun115769: for (var _fun115769_ip = 0;;) switch (_fun115769_ip) {
             case 0:
                 var4 = arg0;
                 var _closure2_slot0 = var4;
                 var2 = null;
                 var0 = var4;
                 if (!(var2 != var0)) {
-                    _fun115807_ip = 57;
-                    continue _fun115807
+                    _fun115769_ip = 57;
+                    continue _fun115769
                 }
             case 18:
                 var2 = global;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.bind(var3)(var4);
                 var3 = var4.reduce;
                 var2 = function(arg0, arg1) { // Environment: var1
-                    _fun115808: for (var _fun115808_ip = 0;;) switch (_fun115808_ip) {
+                    _fun115770: for (var _fun115770_ip = 0;;) switch (_fun115770_ip) {
                         case 0:
                             var0 = arg0;
                             var3 = arg1;
@@ -129,8 +129,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = 'object';
                             var5 = typeof var5;
                             if (!(var7 === var5)) {
-                                _fun115808_ip = 115;
-                                continue _fun115808
+                                _fun115770_ip = 115;
+                                continue _fun115770
                             }
                         case 63:
                             var5 = global;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5[var3];
                             var5 = var7.bind(var8)(var5);
                             if (var5) {
-                                _fun115808_ip = 115;
-                                continue _fun115808
+                                _fun115770_ip = 115;
+                                continue _fun115770
                             }
                         case 92:
                             var5 = _closure1_slot3;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var4[var3];
                             var4 = var5.bind(var6)(var4);
                             var0[var2] = var4;
-                            _fun115808_ip = 127;
-                            continue _fun115808;
+                            _fun115770_ip = 127;
+                            continue _fun115770;
                         case 115:
                             var4 = _closure2_slot0;
                             var4 = var4[var3];

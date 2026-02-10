@@ -3,10 +3,10 @@ package com.swmansion.gesturehandler.react;
 import com.facebook.jni.HybridData;
 import com.facebook.react.fabric.ComponentFactory;
 import com.facebook.soloader.SoLoader;
-@fb.a
+@gb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class RNGestureHandlerComponentsRegistry {
-    @fb.a
+    @gb.a
     private final HybridData mHybridData;
 
     static {
@@ -14,15 +14,15 @@ public class RNGestureHandlerComponentsRegistry {
         SoLoader.t("gesturehandler");
     }
 
-    @fb.a
+    @gb.a
     private RNGestureHandlerComponentsRegistry(ComponentFactory componentFactory) {
         this.mHybridData = initHybrid(componentFactory);
     }
 
-    @fb.a
+    @gb.a
     private native HybridData initHybrid(ComponentFactory componentFactory);
 
-    @fb.a
+    @gb.a
     public static RNGestureHandlerComponentsRegistry register(ComponentFactory componentFactory) {
         return new RNGestureHandlerComponentsRegistry(componentFactory);
     }

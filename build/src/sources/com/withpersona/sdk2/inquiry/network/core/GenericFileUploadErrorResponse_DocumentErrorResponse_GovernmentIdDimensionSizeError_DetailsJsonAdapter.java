@@ -36,15 +36,15 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Governme
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0) {
                 num = (Integer) this.intAdapter.fromJson(mVar);
                 if (num == null) {
-                    throw an.c.x("minDimensionSize", "min_dimension_size", mVar);
+                    throw bn.c.x("minDimensionSize", "min_dimension_size", mVar);
                 }
             } else if (J == 1 && (num2 = (Integer) this.intAdapter.fromJson(mVar)) == null) {
-                throw an.c.x("maxDimensionSize", "max_dimension_size", mVar);
+                throw bn.c.x("maxDimensionSize", "max_dimension_size", mVar);
             }
         }
         mVar.D();
@@ -53,9 +53,9 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Governme
             if (num2 != null) {
                 return new GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError.Details(intValue, num2.intValue());
             }
-            throw an.c.o("maxDimensionSize", "max_dimension_size", mVar);
+            throw bn.c.o("maxDimensionSize", "max_dimension_size", mVar);
         }
-        throw an.c.o("minDimensionSize", "min_dimension_size", mVar);
+        throw bn.c.o("minDimensionSize", "min_dimension_size", mVar);
     }
 
     @Override // com.squareup.moshi.h

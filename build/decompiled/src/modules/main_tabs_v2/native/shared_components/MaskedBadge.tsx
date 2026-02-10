@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun71684: for (var _fun71684_ip = 0;;) switch (_fun71684_ip) {
+        _fun71549: for (var _fun71549_ip = 0;;) switch (_fun71549_ip) {
             case 0:
                 var1 = arg0;
                 var12 = var1.backgroundColor;
@@ -96,14 +96,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7.bind(var9)(var0, var3);
                 var0 = 0;
                 if (!(!(var6 > var0))) {
-                    _fun71684_ip = 154;
-                    continue _fun71684
+                    _fun71549_ip = 154;
+                    continue _fun71549
                 }
             case 96:
                 var0 = null;
                 if (!var2) {
-                    _fun71684_ip = 152;
-                    continue _fun71684
+                    _fun71549_ip = 152;
+                    continue _fun71549
                 }
             case 101:
                 var7 = _closure1_slot4;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.style = var12;
                 var0 = var7.bind(var4)(var3, var2);
             case 152:
-                _fun71684_ip = 272;
-                continue _fun71684;
+                _fun71549_ip = 272;
+                continue _fun71549;
             case 154:
                 var3 = _closure1_slot4;
                 var2 = _closure1_slot0;
@@ -142,8 +142,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var9;
                 var9 = null;
                 if (!var11) {
-                    _fun71684_ip = 245;
-                    continue _fun71684
+                    _fun71549_ip = 245;
+                    continue _fun71549
                 }
             case 239:
                 var9 = var10.lowPriorityBadge;
@@ -160,4 +160,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8713, 8978, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8691, 8956, 2]);

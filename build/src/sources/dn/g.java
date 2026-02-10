@@ -1,53 +1,44 @@
 package dn;
 
+import dn.e;
 import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.Job;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface g {
+public final class g implements e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f20875a = a.f20876a;
+    private final String f20873a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    /* renamed from: b  reason: collision with root package name */
+    private final Job f20874b;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f20876a = new a();
+    /* renamed from: c  reason: collision with root package name */
+    private g f20875c;
 
-        private a() {
-        }
-
-        public static /* synthetic */ String b(a aVar, Object obj, String str, int i10, Object obj2) {
-            if ((i10 & 2) != 0) {
-                str = "";
-            }
-            return aVar.a(obj, str);
-        }
-
-        public final String a(Object value, String name) {
-            g gVar;
-            String stringPlus;
-            Intrinsics.checkNotNullParameter(value, "value");
-            Intrinsics.checkNotNullParameter(name, "name");
-            String str = null;
-            if (value instanceof g) {
-                gVar = (g) value;
-            } else {
-                gVar = null;
-            }
-            if (gVar != null) {
-                str = gVar.c();
-            }
-            if (str == null) {
-                str = value.getClass().getName();
-            }
-            if (name.length() == 0) {
-                stringPlus = "";
-            } else {
-                stringPlus = Intrinsics.stringPlus("+", name);
-            }
-            return Intrinsics.stringPlus(str, stringPlus);
-        }
+    public g(String key, Job job) {
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(job, "job");
+        this.f20873a = key;
+        this.f20874b = job;
     }
 
-    String c();
+    public final Job c() {
+        return this.f20874b;
+    }
+
+    public final String d() {
+        return this.f20873a;
+    }
+
+    @Override // dn.e.a
+    /* renamed from: e */
+    public g a() {
+        return this.f20875c;
+    }
+
+    @Override // dn.e.a
+    /* renamed from: f */
+    public void b(g gVar) {
+        this.f20875c = gVar;
+    }
 }

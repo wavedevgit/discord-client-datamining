@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_settings/native/showMembersManagementActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun105472: for (var _fun105472_ip = 0;;) switch (_fun105472_ip) {
+        _fun105452: for (var _fun105452_ip = 0;;) switch (_fun105452_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.guild;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var9.bind(var11)(var8, var2);
                 var2 = var3.bind(var6)(var2, var7);
                 if (!var2) {
-                    _fun105472_ip = 268;
-                    continue _fun105472
+                    _fun105452_ip = 268;
+                    continue _fun105452
                 }
             case 182:
                 var3 = var4.push;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun105475: for (var _fun105475_ip = 0;;) switch (_fun105475_ip) {
+        _fun105455: for (var _fun105455_ip = 0;;) switch (_fun105455_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.guild;
@@ -231,8 +231,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10.bind(var11)(var7, var1);
                 var1 = var2.bind(var5)(var1, var6);
                 if (!var1) {
-                    _fun105475_ip = 271;
-                    continue _fun105475
+                    _fun105455_ip = 271;
+                    continue _fun105455
                 }
             case 182:
                 var2 = var0.push;
@@ -282,4 +282,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMembersManagementActions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3093, 660, 1234, 3279, 13750, 1307, 484, 13751, 7800, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3093, 660, 1234, 3279, 13737, 1307, 484, 13738, 7775, 2]);

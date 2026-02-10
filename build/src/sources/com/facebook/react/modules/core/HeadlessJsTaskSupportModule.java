@@ -44,7 +44,7 @@ public class HeadlessJsTaskSupportModule extends NativeHeadlessJsTaskSupportSpec
         if (companion2.isTaskRunning(i10)) {
             companion2.finishTask(i10);
         } else {
-            p8.a.H(HeadlessJsTaskSupportModule.class, "Tried to finish non-active task with id %d. Did it time out?", Integer.valueOf(i10));
+            q8.a.H(HeadlessJsTaskSupportModule.class, "Tried to finish non-active task with id %d. Did it time out?", Integer.valueOf(i10));
         }
     }
 
@@ -60,7 +60,7 @@ public class HeadlessJsTaskSupportModule extends NativeHeadlessJsTaskSupportSpec
             promise.resolve(Boolean.valueOf(companion2.retryTask(i10)));
             return;
         }
-        p8.a.H(HeadlessJsTaskSupportModule.class, "Tried to retry non-active task with id %d. Did it time out?", Integer.valueOf(i10));
+        q8.a.H(HeadlessJsTaskSupportModule.class, "Tried to retry non-active task with id %d. Did it time out?", Integer.valueOf(i10));
         promise.resolve(Boolean.FALSE);
     }
 }

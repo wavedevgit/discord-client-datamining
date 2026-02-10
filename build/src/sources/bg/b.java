@@ -1,67 +1,32 @@
 package bg;
 
-import android.content.Context;
-import android.os.Bundle;
+import android.os.Binder;
 import android.os.IBinder;
 import android.os.IInterface;
-import android.os.Looper;
-import android.text.TextUtils;
-import ff.k;
-import gf.g;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b extends g {
-    private final Bundle T;
-
-    public b(Context context, Looper looper, gf.d dVar, ue.c cVar, ff.d dVar2, k kVar) {
-        super(context, looper, 16, dVar, dVar2, kVar);
-        this.T = new Bundle();
-    }
-
+public abstract class b extends Binder implements IInterface {
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gf.c
-    public final String D() {
-        return "com.google.android.gms.auth.api.internal.IAuthService";
+    public b(String str) {
+        attachInterface(this, "com.google.android.gms.appset.internal.IAppSetIdCallback");
     }
 
-    @Override // gf.c
-    protected final String E() {
-        return "com.google.android.gms.auth.service.START";
-    }
+    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
 
-    @Override // gf.c
-    public final boolean Q() {
-        return true;
-    }
-
-    @Override // gf.c, ef.a.f
-    public final boolean g() {
-        gf.d h02 = h0();
-        if (!TextUtils.isEmpty(h02.b()) && !h02.e(ue.b.f51467a).isEmpty()) {
-            return true;
+    @Override // android.os.Binder
+    public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (i10 > 16777215) {
+            if (super.onTransact(i10, parcel, parcel2, i11)) {
+                return true;
+            }
+        } else {
+            parcel.enforceInterface(getInterfaceDescriptor());
         }
-        return false;
+        return e(i10, parcel, parcel2, i11);
     }
 
-    @Override // gf.c, ef.a.f
-    public final int n() {
-        return com.google.android.gms.common.k.f13780a;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gf.c
-    public final /* synthetic */ IInterface r(IBinder iBinder) {
-        if (iBinder == null) {
-            return null;
-        }
-        IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.auth.api.internal.IAuthService");
-        if (queryLocalInterface instanceof c) {
-            return (c) queryLocalInterface;
-        }
-        return new c(iBinder);
-    }
-
-    @Override // gf.c
-    protected final Bundle z() {
-        return this.T;
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        return this;
     }
 }

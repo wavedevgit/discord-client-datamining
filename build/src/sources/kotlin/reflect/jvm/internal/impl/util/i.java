@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function1;
 public class i implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeRegistry f34864d;
+    private final TypeRegistry f34573d;
 
     public i(TypeRegistry typeRegistry) {
-        this.f34864d = typeRegistry;
+        this.f34573d = typeRegistry;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         int b10;
-        b10 = TypeRegistry.b(this.f34864d, (String) obj);
+        b10 = TypeRegistry.b(this.f34573d, (String) obj);
         return Integer.valueOf(b10);
     }
 }

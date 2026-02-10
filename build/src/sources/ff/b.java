@@ -1,54 +1,53 @@
 package ff;
 
-import ef.a;
+import com.google.android.gms.common.api.Status;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final int f23180a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final ef.a f23181b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final a.d f23182c;
+public class b extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f23183d;
+    protected final Status f22599d;
 
-    private b(ef.a aVar, a.d dVar, String str) {
-        this.f23181b = aVar;
-        this.f23182c = dVar;
-        this.f23183d = str;
-        this.f23180a = gf.o.b(aVar, dVar, str);
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public b(com.google.android.gms.common.api.Status r6) {
+        /*
+            r5 = this;
+            int r0 = r6.d()
+            java.lang.String r1 = r6.e()
+            if (r1 == 0) goto Lf
+            java.lang.String r1 = r6.e()
+            goto L11
+        Lf:
+            java.lang.String r1 = ""
+        L11:
+            java.lang.String r2 = java.lang.String.valueOf(r0)
+            int r2 = r2.length()
+            java.lang.String r3 = java.lang.String.valueOf(r1)
+            int r2 = r2 + 2
+            int r3 = r3.length()
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            int r2 = r2 + r3
+            r4.<init>(r2)
+            r4.append(r0)
+            java.lang.String r0 = ": "
+            r4.append(r0)
+            r4.append(r1)
+            java.lang.String r0 = r4.toString()
+            r5.<init>(r0)
+            r5.f22599d = r6
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ff.b.<init>(com.google.android.gms.common.api.Status):void");
     }
 
-    public static b a(ef.a aVar, a.d dVar, String str) {
-        return new b(aVar, dVar, str);
+    public Status a() {
+        return this.f22599d;
     }
 
-    public final String b() {
-        return this.f23181b.c();
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == null) {
-            return false;
-        }
-        if (obj == this) {
-            return true;
-        }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (!gf.o.a(this.f23181b, bVar.f23181b) || !gf.o.a(this.f23182c, bVar.f23182c) || !gf.o.a(this.f23183d, bVar.f23183d)) {
-            return false;
-        }
-        return true;
-    }
-
-    public final int hashCode() {
-        return this.f23180a;
+    public int b() {
+        return this.f22599d.d();
     }
 }

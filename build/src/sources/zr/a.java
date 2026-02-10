@@ -1,64 +1,81 @@
 package zr;
 
+import java.lang.reflect.Method;
+import kotlin.collections.i;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends yr.a {
+public class a {
 
-    /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: zr.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0787a {
+    private static final class C0806a {
         @NotNull
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0787a f56503a = new C0787a();
+        public static final C0806a f56638a = new C0806a();
 
         /* renamed from: b  reason: collision with root package name */
-        public static final Integer f56504b;
+        public static final Method f56639b;
+
+        /* renamed from: c  reason: collision with root package name */
+        public static final Method f56640c;
 
         static {
-            Integer num;
-            Object obj;
-            Integer num2 = null;
-            try {
-                obj = Class.forName("android.os.Build$VERSION").getField("SDK_INT").get(null);
-            } catch (Throwable unused) {
-            }
-            if (obj instanceof Integer) {
-                num = (Integer) obj;
-                if (num != null && num.intValue() > 0) {
-                    num2 = num;
+            Method method;
+            Method method2;
+            Method[] methods = Throwable.class.getMethods();
+            Intrinsics.checkNotNull(methods);
+            int length = methods.length;
+            int i10 = 0;
+            int i11 = 0;
+            while (true) {
+                method = null;
+                if (i11 < length) {
+                    method2 = methods[i11];
+                    if (Intrinsics.areEqual(method2.getName(), "addSuppressed")) {
+                        Class<?>[] parameterTypes = method2.getParameterTypes();
+                        Intrinsics.checkNotNullExpressionValue(parameterTypes, "getParameterTypes(...)");
+                        if (Intrinsics.areEqual(i.D0(parameterTypes), Throwable.class)) {
+                            break;
+                        }
+                    }
+                    i11++;
+                } else {
+                    method2 = null;
+                    break;
                 }
-                f56504b = num2;
             }
-            num = null;
-            if (num != null) {
-                num2 = num;
+            f56639b = method2;
+            int length2 = methods.length;
+            while (true) {
+                if (i10 >= length2) {
+                    break;
+                }
+                Method method3 = methods[i10];
+                if (Intrinsics.areEqual(method3.getName(), "getSuppressed")) {
+                    method = method3;
+                    break;
+                }
+                i10++;
             }
-            f56504b = num2;
+            f56640c = method;
         }
 
-        private C0787a() {
+        private C0806a() {
         }
     }
 
-    private final boolean c(int i10) {
-        Integer num = C0787a.f56504b;
-        if (num != null && num.intValue() < i10) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override // yr.a
     public void a(Throwable cause, Throwable exception) {
         Intrinsics.checkNotNullParameter(cause, "cause");
         Intrinsics.checkNotNullParameter(exception, "exception");
-        if (c(19)) {
-            cause.addSuppressed(exception);
-        } else {
-            super.a(cause, exception);
+        Method method = C0806a.f56639b;
+        if (method != null) {
+            method.invoke(cause, exception);
         }
+    }
+
+    public kotlin.random.c b() {
+        return new kotlin.random.b();
     }
 }

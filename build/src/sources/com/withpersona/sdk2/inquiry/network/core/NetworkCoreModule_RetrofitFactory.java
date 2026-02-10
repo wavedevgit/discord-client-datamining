@@ -1,14 +1,14 @@
 package com.withpersona.sdk2.inquiry.network.core;
 
-import br.g;
-import br.h;
-import br.i;
 import com.squareup.moshi.w;
+import cr.g;
+import cr.h;
+import cr.i;
 import javax.inject.Provider;
 import okhttp3.OkHttpClient;
-import vv.a0;
+import wv.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_RetrofitFactory implements br.d {
+public final class NetworkCoreModule_RetrofitFactory implements cr.d {
     private final NetworkCoreModule module;
     private final h moshiProvider;
     private final h okHttpClientProvider;

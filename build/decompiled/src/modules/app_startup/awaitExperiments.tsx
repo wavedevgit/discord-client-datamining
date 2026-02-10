@@ -55,13 +55,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.beginLoadedExperimentsTimeout = var3;
     var3 = function() {
-        _fun97234: for (var _fun97234_ip = 0;;) switch (_fun97234_ip) {
+        _fun97212: for (var _fun97212_ip = 0;;) switch (_fun97212_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun97234_ip = 46;
-                    continue _fun97234
+                    _fun97212_ip = 46;
+                    continue _fun97212
                 }
             case 13:
                 var2 = _closure1_slot0;

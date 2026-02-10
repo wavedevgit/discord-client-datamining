@@ -1,63 +1,60 @@
 package mg;
+
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class a0 extends e0 {
+final class a0 extends z {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final String f37143a;
+    /* renamed from: p  reason: collision with root package name */
+    static final z f37079p = new a0(new Object[0], 0);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final boolean f37144b;
+    /* renamed from: i  reason: collision with root package name */
+    final transient Object[] f37080i;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final int f37145c;
+    /* renamed from: o  reason: collision with root package name */
+    private final transient int f37081o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ a0(String str, boolean z10, int i10, z zVar) {
-        this.f37143a = str;
-        this.f37144b = z10;
-        this.f37145c = i10;
+    public a0(Object[] objArr, int i10) {
+        this.f37080i = objArr;
+        this.f37081o = i10;
     }
 
-    @Override // mg.e0
-    public final int a() {
-        return this.f37145c;
+    @Override // mg.w
+    final Object[] b() {
+        return this.f37080i;
     }
 
-    @Override // mg.e0
-    public final String b() {
-        return this.f37143a;
+    @Override // mg.w
+    final int c() {
+        return 0;
     }
 
-    @Override // mg.e0
-    public final boolean c() {
-        return this.f37144b;
+    @Override // mg.w
+    final int d() {
+        return this.f37081o;
     }
 
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof e0) {
-            e0 e0Var = (e0) obj;
-            if (this.f37143a.equals(e0Var.b()) && this.f37144b == e0Var.c() && this.f37145c == e0Var.a()) {
-                return true;
-            }
-        }
+    @Override // mg.w
+    final boolean f() {
         return false;
     }
 
-    public final int hashCode() {
-        int i10;
-        int hashCode = this.f37143a.hashCode() ^ 1000003;
-        if (true != this.f37144b) {
-            i10 = 1237;
-        } else {
-            i10 = 1231;
-        }
-        return (((hashCode * 1000003) ^ i10) * 1000003) ^ this.f37145c;
+    @Override // mg.z, mg.w
+    final int g(Object[] objArr, int i10) {
+        System.arraycopy(this.f37080i, 0, objArr, 0, this.f37081o);
+        return this.f37081o;
     }
 
-    public final String toString() {
-        return "MLKitLoggingOptions{libraryName=" + this.f37143a + ", enableFirelog=" + this.f37144b + ", firelogEventType=" + this.f37145c + "}";
+    @Override // java.util.List
+    public final Object get(int i10) {
+        t.a(i10, this.f37081o, "index");
+        Object obj = this.f37080i[i10];
+        Objects.requireNonNull(obj);
+        return obj;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.f37081o;
     }
 }

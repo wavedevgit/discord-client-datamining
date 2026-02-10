@@ -1,6 +1,6 @@
 package com.squareup.moshi;
 
-import an.c;
+import bn.c;
 import java.lang.reflect.Array;
 import java.lang.reflect.GenericArrayType;
 import java.lang.reflect.ParameterizedType;
@@ -57,12 +57,12 @@ public abstract class a0 {
             ParameterizedType parameterizedType = (ParameterizedType) type;
             ParameterizedType parameterizedType2 = (ParameterizedType) type2;
             if (parameterizedType instanceof c.b) {
-                actualTypeArguments = ((c.b) parameterizedType).f1170i;
+                actualTypeArguments = ((c.b) parameterizedType).f7158i;
             } else {
                 actualTypeArguments = parameterizedType.getActualTypeArguments();
             }
             if (parameterizedType2 instanceof c.b) {
-                actualTypeArguments2 = ((c.b) parameterizedType2).f1170i;
+                actualTypeArguments2 = ((c.b) parameterizedType2).f7158i;
             } else {
                 actualTypeArguments2 = parameterizedType2.getActualTypeArguments();
             }
@@ -107,7 +107,7 @@ public abstract class a0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Type f(Type type) {
         Class g10 = g(type);
-        return an.c.q(type, g10, g10.getGenericSuperclass());
+        return bn.c.q(type, g10, g10.getGenericSuperclass());
     }
 
     public static Class g(Type type) {
@@ -137,7 +137,7 @@ public abstract class a0 {
 
     static Type h(Type type, Class cls, Class cls2) {
         if (cls2.isAssignableFrom(cls)) {
-            return an.c.q(type, cls, an.c.e(type, cls, cls2));
+            return bn.c.q(type, cls, bn.c.e(type, cls, cls2));
         }
         throw new IllegalArgumentException();
     }
@@ -165,7 +165,7 @@ public abstract class a0 {
         } else {
             typeArr = new Type[]{type};
         }
-        return new c.C0011c(typeArr, an.c.f1163b);
+        return new c.C0137c(typeArr, bn.c.f7151b);
     }
 
     public static WildcardType l(Type type) {
@@ -175,6 +175,6 @@ public abstract class a0 {
         } else {
             typeArr = new Type[]{type};
         }
-        return new c.C0011c(new Type[]{Object.class}, typeArr);
+        return new c.C0137c(new Type[]{Object.class}, typeArr);
     }
 }

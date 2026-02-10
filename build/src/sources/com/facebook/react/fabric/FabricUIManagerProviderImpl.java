@@ -31,12 +31,12 @@ public final class FabricUIManagerProviderImpl implements UIManagerProvider {
     public UIManager createUIManager(@NotNull ReactApplicationContext context) {
         RuntimeExecutor runtimeExecutor;
         Intrinsics.checkNotNullParameter(context, "context");
-        qb.a.c(0L, "FabricUIManagerProviderImpl.create");
+        rb.a.c(0L, "FabricUIManagerProviderImpl.create");
         EventBeatManager eventBeatManager = new EventBeatManager();
-        qb.a.c(0L, "FabricUIManagerProviderImpl.createUIManager");
+        rb.a.c(0L, "FabricUIManagerProviderImpl.createUIManager");
         FabricUIManager fabricUIManager = new FabricUIManager(context, this.viewManagerRegistry, eventBeatManager);
-        qb.a.i(0L);
-        qb.a.c(0L, "FabricUIManagerProviderImpl.registerBinding");
+        rb.a.i(0L);
+        rb.a.c(0L, "FabricUIManagerProviderImpl.registerBinding");
         FabricUIManagerBinding fabricUIManagerBinding = new FabricUIManagerBinding();
         CatalystInstance catalystInstance = context.getCatalystInstance();
         RuntimeScheduler runtimeScheduler = null;
@@ -51,8 +51,8 @@ public final class FabricUIManagerProviderImpl implements UIManagerProvider {
         RuntimeScheduler runtimeScheduler2 = runtimeScheduler;
         if (runtimeExecutor != null && runtimeScheduler2 != null) {
             fabricUIManagerBinding.register(runtimeExecutor, runtimeScheduler2, fabricUIManager, eventBeatManager, this.componentFactory);
-            qb.a.i(0L);
-            qb.a.i(0L);
+            rb.a.i(0L);
+            rb.a.i(0L);
             return fabricUIManager;
         }
         throw new IllegalStateException("Unable to register FabricUIManager with CatalystInstance, runtimeExecutor and runtimeScheduler must not be null");

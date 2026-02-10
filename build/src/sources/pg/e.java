@@ -1,67 +1,56 @@
 package pg;
-
-import java.util.NoSuchElementException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class e extends o1 {
+final class e implements j {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final int f44193d;
+    /* renamed from: b  reason: collision with root package name */
+    private final int f43385b;
 
-    /* renamed from: e  reason: collision with root package name */
-    private int f44194e;
+    /* renamed from: c  reason: collision with root package name */
+    private final i f43386c;
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public e(int i10, int i11) {
-        c.b(i11, i10, "index");
-        this.f44193d = i10;
-        this.f44194e = i11;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public e(int i10, i iVar) {
+        this.f43385b = i10;
+        this.f43386c = iVar;
     }
 
-    protected abstract Object a(int i10);
+    @Override // java.lang.annotation.Annotation
+    public final Class annotationType() {
+        return j.class;
+    }
 
-    @Override // java.util.Iterator, java.util.ListIterator
-    public final boolean hasNext() {
-        if (this.f44194e < this.f44193d) {
+    @Override // java.lang.annotation.Annotation
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof j)) {
+            return false;
+        }
+        j jVar = (j) obj;
+        if (this.f43385b == jVar.zza() && this.f43386c.equals(jVar.zzb())) {
             return true;
         }
         return false;
     }
 
-    @Override // java.util.ListIterator
-    public final boolean hasPrevious() {
-        if (this.f44194e > 0) {
-            return true;
-        }
-        return false;
+    @Override // java.lang.annotation.Annotation
+    public final int hashCode() {
+        return (this.f43385b ^ 14552422) + (this.f43386c.hashCode() ^ 2041407134);
     }
 
-    @Override // java.util.Iterator, java.util.ListIterator
-    public final Object next() {
-        if (hasNext()) {
-            int i10 = this.f44194e;
-            this.f44194e = i10 + 1;
-            return a(i10);
-        }
-        throw new NoSuchElementException();
+    @Override // java.lang.annotation.Annotation
+    public final String toString() {
+        return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f43385b + "intEncoding=" + this.f43386c + ')';
     }
 
-    @Override // java.util.ListIterator
-    public final int nextIndex() {
-        return this.f44194e;
+    @Override // pg.j
+    public final int zza() {
+        return this.f43385b;
     }
 
-    @Override // java.util.ListIterator
-    public final Object previous() {
-        if (hasPrevious()) {
-            int i10 = this.f44194e - 1;
-            this.f44194e = i10;
-            return a(i10);
-        }
-        throw new NoSuchElementException();
-    }
-
-    @Override // java.util.ListIterator
-    public final int previousIndex() {
-        return this.f44194e - 1;
+    @Override // pg.j
+    public final i zzb() {
+        return this.f43386c;
     }
 }

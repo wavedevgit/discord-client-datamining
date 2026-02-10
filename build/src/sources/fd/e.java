@@ -1,296 +1,59 @@
 package fd;
 
-import android.media.MediaCodec;
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.os.Looper;
-import android.os.Message;
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicReference;
-import ne.w0;
+import oe.w0;
+import uc.a0;
+import uc.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-class e {
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final ArrayDeque f23062g = new ArrayDeque();
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final Object f23063h = new Object();
+final class e implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MediaCodec f23064a;
+    private final c f22550a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final HandlerThread f23065b;
+    private final int f22551b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Handler f23066c;
+    private final long f22552c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AtomicReference f23067d;
+    private final long f22553d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ne.h f23068e;
+    private final long f22554e;
 
-    /* renamed from: f  reason: collision with root package name */
-    private boolean f23069f;
+    public e(c cVar, int i10, long j10, long j11) {
+        this.f22550a = cVar;
+        this.f22551b = i10;
+        this.f22552c = j10;
+        long j12 = (j11 - j10) / cVar.f22545e;
+        this.f22553d = j12;
+        this.f22554e = a(j12);
+    }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class a extends Handler {
-        a(Looper looper) {
-            super(looper);
+    private long a(long j10) {
+        return w0.X0(j10 * this.f22551b, 1000000L, this.f22550a.f22543c);
+    }
+
+    @Override // uc.z
+    public z.a e(long j10) {
+        long r10 = w0.r((this.f22550a.f22543c * j10) / (this.f22551b * 1000000), 0L, this.f22553d - 1);
+        long j11 = this.f22552c + (this.f22550a.f22545e * r10);
+        long a10 = a(r10);
+        a0 a0Var = new a0(a10, j11);
+        if (a10 < j10 && r10 != this.f22553d - 1) {
+            long j12 = r10 + 1;
+            return new z.a(a0Var, new a0(a(j12), this.f22552c + (this.f22550a.f22545e * j12)));
         }
-
-        @Override // android.os.Handler
-        public void handleMessage(Message message) {
-            e.this.f(message);
-        }
+        return new z.a(a0Var);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public int f23071a;
-
-        /* renamed from: b  reason: collision with root package name */
-        public int f23072b;
-
-        /* renamed from: c  reason: collision with root package name */
-        public int f23073c;
-
-        /* renamed from: d  reason: collision with root package name */
-        public final MediaCodec.CryptoInfo f23074d = new MediaCodec.CryptoInfo();
-
-        /* renamed from: e  reason: collision with root package name */
-        public long f23075e;
-
-        /* renamed from: f  reason: collision with root package name */
-        public int f23076f;
-
-        b() {
-        }
-
-        public void a(int i10, int i11, int i12, long j10, int i13) {
-            this.f23071a = i10;
-            this.f23072b = i11;
-            this.f23073c = i12;
-            this.f23075e = j10;
-            this.f23076f = i13;
-        }
+    @Override // uc.z
+    public boolean g() {
+        return true;
     }
 
-    public e(MediaCodec mediaCodec, HandlerThread handlerThread) {
-        this(mediaCodec, handlerThread, new ne.h());
-    }
-
-    private void b() {
-        this.f23068e.d();
-        ((Handler) ne.a.e(this.f23066c)).obtainMessage(2).sendToTarget();
-        this.f23068e.a();
-    }
-
-    private static void c(qc.c cVar, MediaCodec.CryptoInfo cryptoInfo) {
-        cryptoInfo.numSubSamples = cVar.f46649f;
-        cryptoInfo.numBytesOfClearData = e(cVar.f46647d, cryptoInfo.numBytesOfClearData);
-        cryptoInfo.numBytesOfEncryptedData = e(cVar.f46648e, cryptoInfo.numBytesOfEncryptedData);
-        cryptoInfo.key = (byte[]) ne.a.e(d(cVar.f46645b, cryptoInfo.key));
-        cryptoInfo.iv = (byte[]) ne.a.e(d(cVar.f46644a, cryptoInfo.iv));
-        cryptoInfo.mode = cVar.f46646c;
-        if (w0.f39060a >= 24) {
-            cryptoInfo.setPattern(new MediaCodec.CryptoInfo.Pattern(cVar.f46650g, cVar.f46651h));
-        }
-    }
-
-    private static byte[] d(byte[] bArr, byte[] bArr2) {
-        if (bArr == null) {
-            return bArr2;
-        }
-        if (bArr2 != null && bArr2.length >= bArr.length) {
-            System.arraycopy(bArr, 0, bArr2, 0, bArr.length);
-            return bArr2;
-        }
-        return Arrays.copyOf(bArr, bArr.length);
-    }
-
-    private static int[] e(int[] iArr, int[] iArr2) {
-        if (iArr == null) {
-            return iArr2;
-        }
-        if (iArr2 != null && iArr2.length >= iArr.length) {
-            System.arraycopy(iArr, 0, iArr2, 0, iArr.length);
-            return iArr2;
-        }
-        return Arrays.copyOf(iArr, iArr.length);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Removed duplicated region for block: B:14:0x004d  */
-    /* JADX WARN: Removed duplicated region for block: B:16:? A[RETURN, SYNTHETIC] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public void f(android.os.Message r9) {
-        /*
-            r8 = this;
-            int r2 = r9.what
-            if (r2 == 0) goto L37
-            r3 = 1
-            if (r2 == r3) goto L22
-            r3 = 2
-            r4 = 0
-            if (r2 == r3) goto L1c
-            java.util.concurrent.atomic.AtomicReference r2 = r8.f23067d
-            java.lang.IllegalStateException r3 = new java.lang.IllegalStateException
-            int r1 = r9.what
-            java.lang.String r1 = java.lang.String.valueOf(r1)
-            r3.<init>(r1)
-            p0.d.a(r2, r4, r3)
-            goto L4b
-        L1c:
-            ne.h r1 = r8.f23068e
-            r1.f()
-            goto L4b
-        L22:
-            java.lang.Object r1 = r9.obj
-            r7 = r1
-            fd.e$b r7 = (fd.e.b) r7
-            int r1 = r7.f23071a
-            int r2 = r7.f23072b
-            android.media.MediaCodec$CryptoInfo r3 = r7.f23074d
-            long r4 = r7.f23075e
-            int r6 = r7.f23076f
-            r0 = r8
-            r0.h(r1, r2, r3, r4, r6)
-        L35:
-            r4 = r7
-            goto L4b
-        L37:
-            java.lang.Object r0 = r9.obj
-            r7 = r0
-            fd.e$b r7 = (fd.e.b) r7
-            int r1 = r7.f23071a
-            int r2 = r7.f23072b
-            int r3 = r7.f23073c
-            long r4 = r7.f23075e
-            int r6 = r7.f23076f
-            r0 = r8
-            r0.g(r1, r2, r3, r4, r6)
-            goto L35
-        L4b:
-            if (r4 == 0) goto L50
-            o(r4)
-        L50:
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: fd.e.f(android.os.Message):void");
-    }
-
-    private void g(int i10, int i11, int i12, long j10, int i13) {
-        try {
-            this.f23064a.queueInputBuffer(i10, i11, i12, j10, i13);
-        } catch (RuntimeException e10) {
-            p0.d.a(this.f23067d, null, e10);
-        }
-    }
-
-    private void h(int i10, int i11, MediaCodec.CryptoInfo cryptoInfo, long j10, int i12) {
-        try {
-            synchronized (f23063h) {
-                this.f23064a.queueSecureInputBuffer(i10, i11, cryptoInfo, j10, i12);
-            }
-        } catch (RuntimeException e10) {
-            p0.d.a(this.f23067d, null, e10);
-        }
-    }
-
-    private void j() {
-        ((Handler) ne.a.e(this.f23066c)).removeCallbacksAndMessages(null);
-        b();
-    }
-
-    private static b k() {
-        ArrayDeque arrayDeque = f23062g;
-        synchronized (arrayDeque) {
-            try {
-                if (arrayDeque.isEmpty()) {
-                    return new b();
-                }
-                return (b) arrayDeque.removeFirst();
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-    }
-
-    private static void o(b bVar) {
-        ArrayDeque arrayDeque = f23062g;
-        synchronized (arrayDeque) {
-            arrayDeque.add(bVar);
-        }
-    }
-
-    public void i() {
-        if (this.f23069f) {
-            try {
-                j();
-            } catch (InterruptedException e10) {
-                Thread.currentThread().interrupt();
-                throw new IllegalStateException(e10);
-            }
-        }
-    }
-
-    public void l() {
-        RuntimeException runtimeException = (RuntimeException) this.f23067d.getAndSet(null);
-        if (runtimeException == null) {
-            return;
-        }
-        throw runtimeException;
-    }
-
-    public void m(int i10, int i11, int i12, long j10, int i13) {
-        l();
-        b k10 = k();
-        k10.a(i10, i11, i12, j10, i13);
-        ((Handler) w0.j(this.f23066c)).obtainMessage(0, k10).sendToTarget();
-    }
-
-    public void n(int i10, int i11, qc.c cVar, long j10, int i12) {
-        l();
-        b k10 = k();
-        k10.a(i10, i11, 0, j10, i12);
-        c(cVar, k10.f23074d);
-        ((Handler) w0.j(this.f23066c)).obtainMessage(1, k10).sendToTarget();
-    }
-
-    public void p() {
-        if (this.f23069f) {
-            i();
-            this.f23065b.quit();
-        }
-        this.f23069f = false;
-    }
-
-    public void q() {
-        if (!this.f23069f) {
-            this.f23065b.start();
-            this.f23066c = new a(this.f23065b.getLooper());
-            this.f23069f = true;
-        }
-    }
-
-    public void r() {
-        b();
-    }
-
-    e(MediaCodec mediaCodec, HandlerThread handlerThread, ne.h hVar) {
-        this.f23064a = mediaCodec;
-        this.f23065b = handlerThread;
-        this.f23068e = hVar;
-        this.f23067d = new AtomicReference();
+    @Override // uc.z
+    public long i() {
+        return this.f22554e;
     }
 }

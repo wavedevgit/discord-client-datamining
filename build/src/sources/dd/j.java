@@ -1,167 +1,174 @@
 package dd;
 
-import android.util.SparseArray;
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import com.facebook.react.views.text.internal.span.SetSpanOperation;
 import com.google.android.exoplayer2.Format;
-import dd.i0;
+import dd.i;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
+import mc.l0;
+import oe.h0;
+import oi.s;
+import uc.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class j implements i0.c {
+final class j extends i {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final int f20495a;
+    /* renamed from: n  reason: collision with root package name */
+    private a f20673n;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final List f20496b;
+    /* renamed from: o  reason: collision with root package name */
+    private int f20674o;
 
-    public j(int i10) {
-        this(i10, ni.s.t());
+    /* renamed from: p  reason: collision with root package name */
+    private boolean f20675p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private e0.c f20676q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private e0.a f20677r;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        public final e0.c f20678a;
+
+        /* renamed from: b  reason: collision with root package name */
+        public final e0.a f20679b;
+
+        /* renamed from: c  reason: collision with root package name */
+        public final byte[] f20680c;
+
+        /* renamed from: d  reason: collision with root package name */
+        public final e0.b[] f20681d;
+
+        /* renamed from: e  reason: collision with root package name */
+        public final int f20682e;
+
+        public a(e0.c cVar, e0.a aVar, byte[] bArr, e0.b[] bVarArr, int i10) {
+            this.f20678a = cVar;
+            this.f20679b = aVar;
+            this.f20680c = bArr;
+            this.f20681d = bVarArr;
+            this.f20682e = i10;
+        }
     }
 
-    private d0 c(i0.b bVar) {
-        return new d0(e(bVar));
+    static void n(h0 h0Var, long j10) {
+        if (h0Var.b() < h0Var.g() + 4) {
+            h0Var.R(Arrays.copyOf(h0Var.e(), h0Var.g() + 4));
+        } else {
+            h0Var.T(h0Var.g() + 4);
+        }
+        byte[] e10 = h0Var.e();
+        e10[h0Var.g() - 4] = (byte) (j10 & 255);
+        e10[h0Var.g() - 3] = (byte) ((j10 >>> 8) & 255);
+        e10[h0Var.g() - 2] = (byte) ((j10 >>> 16) & 255);
+        e10[h0Var.g() - 1] = (byte) ((j10 >>> 24) & 255);
     }
 
-    private k0 d(i0.b bVar) {
-        return new k0(e(bVar));
+    private static int o(byte b10, a aVar) {
+        if (!aVar.f20681d[p(b10, aVar.f20682e, 1)].f51472a) {
+            return aVar.f20678a.f51482g;
+        }
+        return aVar.f20678a.f51483h;
     }
 
-    private List e(i0.b bVar) {
+    static int p(byte b10, int i10, int i11) {
+        return (b10 >> i11) & (SetSpanOperation.SPAN_MAX_PRIORITY >>> (8 - i10));
+    }
+
+    public static boolean r(h0 h0Var) {
+        try {
+            return e0.m(1, h0Var, true);
+        } catch (l0 unused) {
+            return false;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // dd.i
+    public void e(long j10) {
         boolean z10;
-        String str;
-        int i10;
-        List list;
-        if (f(32)) {
-            return this.f20496b;
+        super.e(j10);
+        int i10 = 0;
+        if (j10 != 0) {
+            z10 = true;
+        } else {
+            z10 = false;
         }
-        ne.h0 h0Var = new ne.h0(bVar.f20489d);
-        List list2 = this.f20496b;
-        while (h0Var.a() > 0) {
-            int H = h0Var.H();
-            int f10 = h0Var.f() + h0Var.H();
-            if (H == 134) {
-                list2 = new ArrayList();
-                int H2 = h0Var.H() & 31;
-                for (int i11 = 0; i11 < H2; i11++) {
-                    String E = h0Var.E(3);
-                    int H3 = h0Var.H();
-                    boolean z11 = true;
-                    if ((H3 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                        z10 = true;
-                    } else {
-                        z10 = false;
-                    }
-                    if (z10) {
-                        i10 = H3 & 63;
-                        str = "application/cea-708";
-                    } else {
-                        str = "application/cea-608";
-                        i10 = 1;
-                    }
-                    byte H4 = (byte) h0Var.H();
-                    h0Var.V(1);
-                    if (z10) {
-                        if ((H4 & 64) == 0) {
-                            z11 = false;
-                        }
-                        list = ne.f.b(z11);
-                    } else {
-                        list = null;
-                    }
-                    list2.add(new Format.b().g0(str).X(E).H(i10).V(list).G());
-                }
-            }
-            h0Var.U(f10);
+        this.f20675p = z10;
+        e0.c cVar = this.f20676q;
+        if (cVar != null) {
+            i10 = cVar.f51482g;
         }
-        return list2;
+        this.f20674o = i10;
     }
 
-    private boolean f(int i10) {
-        if ((i10 & this.f20495a) != 0) {
+    @Override // dd.i
+    protected long f(h0 h0Var) {
+        int i10 = 0;
+        if ((h0Var.e()[0] & 1) == 1) {
+            return -1L;
+        }
+        int o10 = o(h0Var.e()[0], (a) oe.a.i(this.f20673n));
+        if (this.f20675p) {
+            i10 = (this.f20674o + o10) / 4;
+        }
+        long j10 = i10;
+        n(h0Var, j10);
+        this.f20675p = true;
+        this.f20674o = o10;
+        return j10;
+    }
+
+    @Override // dd.i
+    protected boolean h(h0 h0Var, long j10, i.b bVar) {
+        if (this.f20673n != null) {
+            oe.a.e(bVar.f20671a);
+            return false;
+        }
+        a q10 = q(h0Var);
+        this.f20673n = q10;
+        if (q10 == null) {
             return true;
         }
-        return false;
+        e0.c cVar = q10.f20678a;
+        ArrayList arrayList = new ArrayList();
+        arrayList.add(cVar.f51485j);
+        arrayList.add(q10.f20680c);
+        bVar.f20671a = new Format.b().g0("audio/vorbis").I(cVar.f51480e).b0(cVar.f51479d).J(cVar.f51477b).h0(cVar.f51478c).V(arrayList).Z(e0.c(s.p(q10.f20679b.f51470b))).G();
+        return true;
     }
 
-    @Override // dd.i0.c
-    public SparseArray a() {
-        return new SparseArray();
-    }
-
-    @Override // dd.i0.c
-    public i0 b(int i10, i0.b bVar) {
-        if (i10 != 2) {
-            if (i10 != 3 && i10 != 4) {
-                if (i10 != 21) {
-                    if (i10 != 27) {
-                        if (i10 != 36) {
-                            if (i10 != 89) {
-                                if (i10 != 138) {
-                                    if (i10 != 172) {
-                                        if (i10 != 257) {
-                                            if (i10 != 134) {
-                                                if (i10 != 135) {
-                                                    switch (i10) {
-                                                        case 15:
-                                                            if (f(2)) {
-                                                                return null;
-                                                            }
-                                                            return new w(new i(false, bVar.f20487b));
-                                                        case 16:
-                                                            return new w(new o(d(bVar)));
-                                                        case 17:
-                                                            if (f(2)) {
-                                                                return null;
-                                                            }
-                                                            return new w(new s(bVar.f20487b));
-                                                        default:
-                                                            switch (i10) {
-                                                                case IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT /* 128 */:
-                                                                    break;
-                                                                case 129:
-                                                                    break;
-                                                                case 130:
-                                                                    if (!f(64)) {
-                                                                        return null;
-                                                                    }
-                                                                    break;
-                                                                default:
-                                                                    return null;
-                                                            }
-                                                    }
-                                                }
-                                                return new w(new c(bVar.f20487b));
-                                            } else if (f(16)) {
-                                                return null;
-                                            } else {
-                                                return new c0(new v("application/x-scte35"));
-                                            }
-                                        }
-                                        return new c0(new v("application/vnd.dvb.ait"));
-                                    }
-                                    return new w(new f(bVar.f20487b));
-                                }
-                                return new w(new k(bVar.f20487b));
-                            }
-                            return new w(new l(bVar.f20488c));
-                        }
-                        return new w(new q(c(bVar)));
-                    } else if (f(4)) {
-                        return null;
-                    } else {
-                        return new w(new p(c(bVar), f(1), f(8)));
-                    }
-                }
-                return new w(new r());
-            }
-            return new w(new t(bVar.f20487b));
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // dd.i
+    public void l(boolean z10) {
+        super.l(z10);
+        if (z10) {
+            this.f20673n = null;
+            this.f20676q = null;
+            this.f20677r = null;
         }
-        return new w(new n(d(bVar)));
+        this.f20674o = 0;
+        this.f20675p = false;
     }
 
-    public j(int i10, List list) {
-        this.f20495a = i10;
-        this.f20496b = list;
+    a q(h0 h0Var) {
+        e0.c cVar = this.f20676q;
+        if (cVar == null) {
+            this.f20676q = e0.j(h0Var);
+            return null;
+        }
+        e0.a aVar = this.f20677r;
+        if (aVar == null) {
+            this.f20677r = e0.h(h0Var);
+            return null;
+        }
+        byte[] bArr = new byte[h0Var.g()];
+        System.arraycopy(h0Var.e(), 0, bArr, 0, h0Var.g());
+        e0.b[] k10 = e0.k(h0Var, cVar.f51477b);
+        return new a(cVar, aVar, bArr, k10, e0.a(k10.length - 1));
     }
 }

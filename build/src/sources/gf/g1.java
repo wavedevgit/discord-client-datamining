@@ -1,107 +1,102 @@
 package gf;
 
-import android.accounts.Account;
+import android.app.Activity;
+import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.IBinder;
-import android.os.Parcel;
-import android.os.Parcelable;
-import com.google.android.gms.common.api.Scope;
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
+import java.lang.ref.WeakReference;
+import java.util.WeakHashMap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class g1 implements Parcelable.Creator {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void a(f fVar, Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, fVar.f25104d);
-        hf.c.l(parcel, 2, fVar.f25105e);
-        hf.c.l(parcel, 3, fVar.f25106i);
-        hf.c.s(parcel, 4, fVar.f25107o, false);
-        hf.c.k(parcel, 5, fVar.f25108p, false);
-        hf.c.v(parcel, 6, fVar.f25109q, i10, false);
-        hf.c.e(parcel, 7, fVar.f25110r, false);
-        hf.c.q(parcel, 8, fVar.f25111s, i10, false);
-        hf.c.v(parcel, 10, fVar.f25112t, i10, false);
-        hf.c.v(parcel, 11, fVar.f25113u, i10, false);
-        hf.c.c(parcel, 12, fVar.f25114v);
-        hf.c.l(parcel, 13, fVar.f25115w);
-        hf.c.c(parcel, 14, fVar.f25116x);
-        hf.c.s(parcel, 15, fVar.b(), false);
-        hf.c.b(parcel, a10);
-    }
+public final class g1 extends Fragment implements h {
 
-    @Override // android.os.Parcelable.Creator
-    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        Scope[] scopeArr = f.f25103z;
-        Bundle bundle = new Bundle();
-        com.google.android.gms.common.d[] dVarArr = f.A;
-        com.google.android.gms.common.d[] dVarArr2 = dVarArr;
-        String str = null;
-        IBinder iBinder = null;
-        Account account = null;
-        String str2 = null;
-        int i10 = 0;
-        int i11 = 0;
-        int i12 = 0;
-        boolean z10 = false;
-        int i13 = 0;
-        boolean z11 = false;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            switch (hf.b.l(r10)) {
-                case 1:
-                    i10 = hf.b.t(parcel, r10);
-                    break;
-                case 2:
-                    i11 = hf.b.t(parcel, r10);
-                    break;
-                case 3:
-                    i12 = hf.b.t(parcel, r10);
-                    break;
-                case 4:
-                    str = hf.b.f(parcel, r10);
-                    break;
-                case 5:
-                    iBinder = hf.b.s(parcel, r10);
-                    break;
-                case 6:
-                    scopeArr = (Scope[]) hf.b.i(parcel, r10, Scope.CREATOR);
-                    break;
-                case 7:
-                    bundle = hf.b.a(parcel, r10);
-                    break;
-                case 8:
-                    account = (Account) hf.b.e(parcel, r10, Account.CREATOR);
-                    break;
-                case 9:
-                default:
-                    hf.b.z(parcel, r10);
-                    break;
-                case 10:
-                    dVarArr = (com.google.android.gms.common.d[]) hf.b.i(parcel, r10, com.google.android.gms.common.d.CREATOR);
-                    break;
-                case 11:
-                    dVarArr2 = (com.google.android.gms.common.d[]) hf.b.i(parcel, r10, com.google.android.gms.common.d.CREATOR);
-                    break;
-                case 12:
-                    z10 = hf.b.m(parcel, r10);
-                    break;
-                case 13:
-                    i13 = hf.b.t(parcel, r10);
-                    break;
-                case 14:
-                    z11 = hf.b.m(parcel, r10);
-                    break;
-                case 15:
-                    str2 = hf.b.f(parcel, r10);
-                    break;
-            }
+    /* renamed from: e  reason: collision with root package name */
+    private static final WeakHashMap f24321e = new WeakHashMap();
+
+    /* renamed from: d  reason: collision with root package name */
+    private final i1 f24322d = new i1();
+
+    public static g1 a(Activity activity) {
+        g1 g1Var;
+        WeakHashMap weakHashMap = f24321e;
+        WeakReference weakReference = (WeakReference) weakHashMap.get(activity);
+        if (weakReference != null && (g1Var = (g1) weakReference.get()) != null) {
+            return g1Var;
         }
-        hf.b.k(parcel, A);
-        return new f(i10, i11, i12, str, iBinder, scopeArr, bundle, account, dVarArr, dVarArr2, z10, i13, z11, str2);
+        try {
+            g1 g1Var2 = (g1) activity.getFragmentManager().findFragmentByTag("LifecycleFragmentImpl");
+            if (g1Var2 == null || g1Var2.isRemoving()) {
+                g1Var2 = new g1();
+                activity.getFragmentManager().beginTransaction().add(g1Var2, "LifecycleFragmentImpl").commitAllowingStateLoss();
+            }
+            weakHashMap.put(activity, new WeakReference(g1Var2));
+            return g1Var2;
+        } catch (ClassCastException e10) {
+            throw new IllegalStateException("Fragment with tag LifecycleFragmentImpl is not a LifecycleFragmentImpl", e10);
+        }
     }
 
-    @Override // android.os.Parcelable.Creator
-    public final /* synthetic */ Object[] newArray(int i10) {
-        return new f[i10];
+    @Override // gf.h
+    public final g b(String str, Class cls) {
+        return this.f24322d.a(str, cls);
+    }
+
+    @Override // gf.h
+    public final void d(String str, g gVar) {
+        this.f24322d.b(str, gVar);
+    }
+
+    @Override // android.app.Fragment
+    public final void dump(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
+        super.dump(str, fileDescriptor, printWriter, strArr);
+        this.f24322d.j(str, fileDescriptor, printWriter, strArr);
+    }
+
+    @Override // gf.h
+    public final Activity n() {
+        return getActivity();
+    }
+
+    @Override // android.app.Fragment
+    public final void onActivityResult(int i10, int i11, Intent intent) {
+        super.onActivityResult(i10, i11, intent);
+        this.f24322d.f(i10, i11, intent);
+    }
+
+    @Override // android.app.Fragment
+    public final void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        this.f24322d.c(bundle);
+    }
+
+    @Override // android.app.Fragment
+    public final void onDestroy() {
+        super.onDestroy();
+        this.f24322d.i();
+    }
+
+    @Override // android.app.Fragment
+    public final void onResume() {
+        super.onResume();
+        this.f24322d.e();
+    }
+
+    @Override // android.app.Fragment
+    public final void onSaveInstanceState(Bundle bundle) {
+        super.onSaveInstanceState(bundle);
+        this.f24322d.g(bundle);
+    }
+
+    @Override // android.app.Fragment
+    public final void onStart() {
+        super.onStart();
+        this.f24322d.d();
+    }
+
+    @Override // android.app.Fragment
+    public final void onStop() {
+        super.onStop();
+        this.f24322d.h();
     }
 }

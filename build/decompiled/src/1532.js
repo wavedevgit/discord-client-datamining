@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var4.isFocused;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun17415_ip = 41;
+                        _fun17415_ip = 45;
                         continue _fun17415
                     }
                 case 29:
@@ -60,43 +60,43 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         'result': null
                     };
                     return var0;
-                case 41:
+                case 45:
                     var7 = _closure2_slot1;
                     var0 = var7;
                     var4 = var0[Symbol.iterator];
                     var0 = var4().next;
-                case 51:
+                case 55:
                     var8 = var0().value;
                     var7 = var4;
                     if (!(var7 !== var3)) {
-                        _fun17415_ip = 114;
+                        _fun17415_ip = 118;
                         continue _fun17415
                     }
-                case 62: // try_start_0
+                case 66: // try_start_0
                     var7 = var2;
                     var8 = var8.bind(var3)(var7);
                     var7 = var8.handled;
                     var6 = var7;
                     var5 = var8.result;
                     if (var7) {
-                        _fun17415_ip = 90;
+                        _fun17415_ip = 94;
                         continue _fun17415
                     }
-                case 88: // try_end0
-                    _fun17415_ip = 51;
+                case 92: // try_end0
+                    _fun17415_ip = 55;
                     continue _fun17415;
-                case 90: // try_start_1
+                case 94: // try_start_1
                     var0 = {};
                     var0.handled = var6;
                     var0.result = var5;
-                case 102: // try_end1
+                case 106: // try_end1
                     var4.return();
                     return var0;
-                case 107: // catch_target0 // catch_target1
+                case 111: // catch_target0 // catch_target1
                     CatchBlockStart(arg_register = 0);
                     var4.return();
                     throw var0;
-                case 114:
+                case 118:
                     var0 = {};
                     var4 = true;
                     var0.handled = var4;

@@ -7,7 +7,7 @@ import java.util.Set;
 public abstract class h1 extends z0 implements Set {
 
     /* renamed from: e  reason: collision with root package name */
-    private transient e1 f13973e;
+    private transient e1 f14113e;
 
     private static h1 g(int i10, Object... objArr) {
         if (i10 != 0) {
@@ -54,7 +54,7 @@ public abstract class h1 extends z0 implements Set {
             Objects.requireNonNull(obj4);
             return new z1(obj4);
         }
-        return u1.f14088t;
+        return u1.f14228t;
     }
 
     static int i(int i10) {
@@ -73,7 +73,7 @@ public abstract class h1 extends z0 implements Set {
     }
 
     public static h1 o() {
-        return u1.f14088t;
+        return u1.f14228t;
     }
 
     public static h1 p(Object obj) {
@@ -123,10 +123,10 @@ public abstract class h1 extends z0 implements Set {
     }
 
     public e1 j() {
-        e1 e1Var = this.f13973e;
+        e1 e1Var = this.f14113e;
         if (e1Var == null) {
             e1 l10 = l();
-            this.f13973e = l10;
+            this.f14113e = l10;
             return l10;
         }
         return e1Var;
@@ -134,7 +134,7 @@ public abstract class h1 extends z0 implements Set {
 
     e1 l() {
         Object[] array = toArray();
-        int i10 = e1.f13950i;
+        int i10 = e1.f14090i;
         return e1.i(array, array.length);
     }
 }

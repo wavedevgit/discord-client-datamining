@@ -1,35 +1,108 @@
 package pb;
 
-import android.content.Context;
 import com.facebook.soloader.e0;
-import com.facebook.soloader.p;
-import com.facebook.soloader.v;
-import java.io.File;
+import com.facebook.soloader.x;
+import java.util.concurrent.atomic.AtomicReference;
+import qb.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class b implements h {
+public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f43830a;
+    private static final AtomicReference f43086a = new AtomicReference();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final a f43831b;
-
-    public b(Context context, a aVar) {
-        this.f43830a = context;
-        this.f43831b = aVar;
+    public static void a(Throwable th2) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
     }
 
-    @Override // pb.h
-    public boolean a(UnsatisfiedLinkError unsatisfiedLinkError, e0[] e0VarArr) {
-        String str = this.f43830a.getApplicationInfo().sourceDir;
-        if (new File(str).exists()) {
-            p.g("soloader.recovery.CheckBaseApkExists", "Base apk exists: " + str);
-            return false;
+    public static void b() {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
         }
-        StringBuilder sb2 = new StringBuilder("Base apk does not exist: ");
-        sb2.append(str);
-        sb2.append(". ");
-        this.f43831b.b(sb2);
-        throw new v(sb2.toString(), unsatisfiedLinkError);
+    }
+
+    public static void c(Throwable th2, boolean z10) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
+    }
+
+    public static void d(String str, int i10) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
+    }
+
+    public static void e(Throwable th2, boolean z10) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
+    }
+
+    public static void f(String str, String str2, int i10) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
+    }
+
+    public static void g(Throwable th2) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
+    }
+
+    public static void h(h hVar) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
+    }
+
+    public static void i(Throwable th2) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
+    }
+
+    public static void j(x xVar, String str, int i10) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
+    }
+
+    public static void k(Throwable th2) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
+    }
+
+    public static void l(e0 e0Var) {
+        a[] aVarArr = (a[]) f43086a.get();
+        if (aVarArr != null && aVarArr.length > 0) {
+            a aVar = aVarArr[0];
+            throw null;
+        }
     }
 }

@@ -25,30 +25,30 @@ import org.jetbrains.annotations.NotNull;
 public class ClassDeclaredMemberIndex implements DeclaredMemberIndex {
 
     /* renamed from: a  reason: collision with root package name */
-    private final JavaClass f32937a;
+    private final JavaClass f32646a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f32938b;
+    private final Function1 f32647b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function1 f32939c;
+    private final Function1 f32648c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f32940d;
+    private final Map f32649d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f32941e;
+    private final Map f32650e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Map f32942f;
+    private final Map f32651f;
 
     public ClassDeclaredMemberIndex(@NotNull JavaClass jClass, @NotNull Function1<? super JavaMember, Boolean> memberFilter) {
         Intrinsics.checkNotNullParameter(jClass, "jClass");
         Intrinsics.checkNotNullParameter(memberFilter, "memberFilter");
-        this.f32937a = jClass;
-        this.f32938b = memberFilter;
+        this.f32646a = jClass;
+        this.f32647b = memberFilter;
         a aVar = new a(this);
-        this.f32939c = aVar;
+        this.f32648c = aVar;
         Sequence F = kotlin.sequences.k.F(CollectionsKt.b0(jClass.getMethods()), aVar);
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         for (Object obj : F) {
@@ -60,16 +60,16 @@ public class ClassDeclaredMemberIndex implements DeclaredMemberIndex {
             }
             ((List) obj2).add(obj);
         }
-        this.f32940d = linkedHashMap;
-        Sequence F2 = kotlin.sequences.k.F(CollectionsKt.b0(this.f32937a.getFields()), this.f32938b);
+        this.f32649d = linkedHashMap;
+        Sequence F2 = kotlin.sequences.k.F(CollectionsKt.b0(this.f32646a.getFields()), this.f32647b);
         LinkedHashMap linkedHashMap2 = new LinkedHashMap();
         for (Object obj3 : F2) {
             linkedHashMap2.put(((JavaField) obj3).getName(), obj3);
         }
-        this.f32941e = linkedHashMap2;
-        Function1 function1 = this.f32938b;
+        this.f32650e = linkedHashMap2;
+        Function1 function1 = this.f32647b;
         ArrayList arrayList = new ArrayList();
-        for (Object obj4 : this.f32937a.getRecordComponents()) {
+        for (Object obj4 : this.f32646a.getRecordComponents()) {
             if (((Boolean) function1.invoke(obj4)).booleanValue()) {
                 arrayList.add(obj4);
             }
@@ -78,13 +78,13 @@ public class ClassDeclaredMemberIndex implements DeclaredMemberIndex {
         for (Object obj5 : arrayList) {
             linkedHashMap3.put(((JavaRecordComponent) obj5).getName(), obj5);
         }
-        this.f32942f = linkedHashMap3;
+        this.f32651f = linkedHashMap3;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean b(ClassDeclaredMemberIndex classDeclaredMemberIndex, JavaMethod m10) {
         Intrinsics.checkNotNullParameter(m10, "m");
-        if (((Boolean) classDeclaredMemberIndex.f32938b.invoke(m10)).booleanValue() && !JavaLoadingKt.isObjectMethodInInterface(m10)) {
+        if (((Boolean) classDeclaredMemberIndex.f32647b.invoke(m10)).booleanValue() && !JavaLoadingKt.isObjectMethodInInterface(m10)) {
             return true;
         }
         return false;
@@ -93,14 +93,14 @@ public class ClassDeclaredMemberIndex implements DeclaredMemberIndex {
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.DeclaredMemberIndex
     public JavaField findFieldByName(@NotNull Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return (JavaField) this.f32941e.get(name);
+        return (JavaField) this.f32650e.get(name);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.DeclaredMemberIndex
     @NotNull
     public Collection<JavaMethod> findMethodsByName(@NotNull Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        List list = (List) this.f32940d.get(name);
+        List list = (List) this.f32649d.get(name);
         if (list != null) {
             return list;
         }
@@ -110,13 +110,13 @@ public class ClassDeclaredMemberIndex implements DeclaredMemberIndex {
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.DeclaredMemberIndex
     public JavaRecordComponent findRecordComponentByName(@NotNull Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return (JavaRecordComponent) this.f32942f.get(name);
+        return (JavaRecordComponent) this.f32651f.get(name);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.DeclaredMemberIndex
     @NotNull
     public Set<Name> getFieldNames() {
-        Sequence<JavaField> F = kotlin.sequences.k.F(CollectionsKt.b0(this.f32937a.getFields()), this.f32938b);
+        Sequence<JavaField> F = kotlin.sequences.k.F(CollectionsKt.b0(this.f32646a.getFields()), this.f32647b);
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (JavaField javaField : F) {
             linkedHashSet.add(javaField.getName());
@@ -127,7 +127,7 @@ public class ClassDeclaredMemberIndex implements DeclaredMemberIndex {
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.DeclaredMemberIndex
     @NotNull
     public Set<Name> getMethodNames() {
-        Sequence<JavaMethod> F = kotlin.sequences.k.F(CollectionsKt.b0(this.f32937a.getMethods()), this.f32939c);
+        Sequence<JavaMethod> F = kotlin.sequences.k.F(CollectionsKt.b0(this.f32646a.getMethods()), this.f32648c);
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (JavaMethod javaMethod : F) {
             linkedHashSet.add(javaMethod.getName());
@@ -138,6 +138,6 @@ public class ClassDeclaredMemberIndex implements DeclaredMemberIndex {
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.DeclaredMemberIndex
     @NotNull
     public Set<Name> getRecordComponentNames() {
-        return this.f32942f.keySet();
+        return this.f32651f.keySet();
     }
 }

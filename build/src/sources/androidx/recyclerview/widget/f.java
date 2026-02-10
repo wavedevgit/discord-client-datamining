@@ -12,21 +12,21 @@ import androidx.recyclerview.widget.RecyclerView;
 public class f extends RecyclerView.ItemDecoration {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f5439d = {16843284};
+    private static final int[] f5136d = {16843284};
 
     /* renamed from: a  reason: collision with root package name */
-    private Drawable f5440a;
+    private Drawable f5137a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f5441b;
+    private int f5138b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Rect f5442c = new Rect();
+    private final Rect f5139c = new Rect();
 
     public f(Context context, int i10) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(f5439d);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(f5136d);
         Drawable drawable = obtainStyledAttributes.getDrawable(0);
-        this.f5440a = drawable;
+        this.f5137a = drawable;
         if (drawable == null) {
             Log.w("DividerItem", "@android:attr/listDivider was not set in the theme used for this DividerItemDecoration. Please set that attribute all call setDrawable()");
         }
@@ -49,10 +49,10 @@ public class f extends RecyclerView.ItemDecoration {
         int childCount = recyclerView.getChildCount();
         for (int i11 = 0; i11 < childCount; i11++) {
             View childAt = recyclerView.getChildAt(i11);
-            recyclerView.getLayoutManager().getDecoratedBoundsWithMargins(childAt, this.f5442c);
-            int round = this.f5442c.right + Math.round(childAt.getTranslationX());
-            this.f5440a.setBounds(round - this.f5440a.getIntrinsicWidth(), i10, round, height);
-            this.f5440a.draw(canvas);
+            recyclerView.getLayoutManager().getDecoratedBoundsWithMargins(childAt, this.f5139c);
+            int round = this.f5139c.right + Math.round(childAt.getTranslationX());
+            this.f5137a.setBounds(round - this.f5137a.getIntrinsicWidth(), i10, round, height);
+            this.f5137a.draw(canvas);
         }
         canvas.restore();
     }
@@ -72,21 +72,21 @@ public class f extends RecyclerView.ItemDecoration {
         int childCount = recyclerView.getChildCount();
         for (int i11 = 0; i11 < childCount; i11++) {
             View childAt = recyclerView.getChildAt(i11);
-            recyclerView.getDecoratedBoundsWithMargins(childAt, this.f5442c);
-            int round = this.f5442c.bottom + Math.round(childAt.getTranslationY());
-            this.f5440a.setBounds(i10, round - this.f5440a.getIntrinsicHeight(), width, round);
-            this.f5440a.draw(canvas);
+            recyclerView.getDecoratedBoundsWithMargins(childAt, this.f5139c);
+            int round = this.f5139c.bottom + Math.round(childAt.getTranslationY());
+            this.f5137a.setBounds(i10, round - this.f5137a.getIntrinsicHeight(), width, round);
+            this.f5137a.draw(canvas);
         }
         canvas.restore();
     }
 
     public Drawable c() {
-        return this.f5440a;
+        return this.f5137a;
     }
 
     public void d(Drawable drawable) {
         if (drawable != null) {
-            this.f5440a = drawable;
+            this.f5137a = drawable;
             return;
         }
         throw new IllegalArgumentException("Drawable cannot be null.");
@@ -96,15 +96,15 @@ public class f extends RecyclerView.ItemDecoration {
         if (i10 != 0 && i10 != 1) {
             throw new IllegalArgumentException("Invalid orientation. It should be either HORIZONTAL or VERTICAL");
         }
-        this.f5441b = i10;
+        this.f5138b = i10;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration
     public void getItemOffsets(Rect rect, View view, RecyclerView recyclerView, RecyclerView.State state) {
-        Drawable drawable = this.f5440a;
+        Drawable drawable = this.f5137a;
         if (drawable == null) {
             rect.set(0, 0, 0, 0);
-        } else if (this.f5441b == 1) {
+        } else if (this.f5138b == 1) {
             rect.set(0, 0, 0, drawable.getIntrinsicHeight());
         } else {
             rect.set(0, 0, drawable.getIntrinsicWidth(), 0);
@@ -113,8 +113,8 @@ public class f extends RecyclerView.ItemDecoration {
 
     @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration
     public void onDraw(Canvas canvas, RecyclerView recyclerView, RecyclerView.State state) {
-        if (recyclerView.getLayoutManager() != null && this.f5440a != null) {
-            if (this.f5441b == 1) {
+        if (recyclerView.getLayoutManager() != null && this.f5137a != null) {
+            if (this.f5138b == 1) {
                 b(canvas, recyclerView);
             } else {
                 a(canvas, recyclerView);

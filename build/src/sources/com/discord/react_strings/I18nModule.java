@@ -38,7 +38,7 @@ public final class I18nModule extends NativeI18nModuleSpec {
     @Override // com.discord.codegen.NativeI18nModuleSpec
     public void keysRequest(@NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        callback.invoke(NativeArrayExtensionsKt.toNativeArray(I18nMessage.getEntries(), new Function1() { // from class: x7.a
+        callback.invoke(NativeArrayExtensionsKt.toNativeArray(I18nMessage.getEntries(), new Function1() { // from class: y7.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Object keysRequest$lambda$0;
@@ -66,7 +66,7 @@ public final class I18nModule extends NativeI18nModuleSpec {
             hashMap.put(name, string);
             i10 = i11;
         }
-        Unit unit = Unit.f32056a;
+        Unit unit = Unit.f31765a;
         i18nCache.set(reactApplicationContext, hashMap);
     }
 }

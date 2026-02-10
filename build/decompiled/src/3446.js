@@ -1831,7 +1831,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = _closure3_slot3;
                                         var1 = var1.elements;
                                         if (!var1) {
-                                            _fun29512_ip = 74;
+                                            _fun29512_ip = 72;
                                             continue _fun29512
                                         }
                                     case 16:
@@ -1842,15 +1842,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = ['clientSecret', 'fonts'];
                                         var2 = var5.bind(var2)(var4, var3, var1);
                                         if (!var2) {
-                                            _fun29512_ip = 74;
+                                            _fun29512_ip = 72;
                                             continue _fun29512
                                         }
-                                    case 53:
+                                    case 51:
                                         var0 = _closure3_slot3;
                                         var1 = var0.elements;
                                         var0 = var1.update;
                                         var0 = var0.bind(var1)(var2);
-                                    case 74:
+                                    case 72:
                                         var0 = undefined;
                                         return var0;
                                 }

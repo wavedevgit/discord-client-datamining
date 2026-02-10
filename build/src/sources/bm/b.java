@@ -1,344 +1,511 @@
 package bm;
 
-import com.otaliastudios.zoom.OverPanRangeProvider;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.PropertyValuesHolder;
+import android.animation.ValueAnimator;
+import android.graphics.Matrix;
+import android.graphics.RectF;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import bm.c;
+import com.otaliastudios.zoom.AbsolutePoint;
 import com.otaliastudios.zoom.ScaledPoint;
-import com.otaliastudios.zoom.ZoomEngine;
 import com.otaliastudios.zoom.ZoomLogger;
-import kotlin.jvm.functions.Function0;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.ranges.d;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.TypeIntrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends bm.a {
+public final class b {
 
-    /* renamed from: j  reason: collision with root package name */
-    public static final a f6840j = new a(null);
+    /* renamed from: q  reason: collision with root package name */
+    public static final C0136b f7101q = new C0136b(null);
 
-    /* renamed from: k  reason: collision with root package name */
-    private static final String f6841k;
+    /* renamed from: r  reason: collision with root package name */
+    private static final String f7102r;
 
-    /* renamed from: l  reason: collision with root package name */
-    private static final ZoomLogger f6842l;
+    /* renamed from: s  reason: collision with root package name */
+    private static final ZoomLogger f7103s;
+
+    /* renamed from: t  reason: collision with root package name */
+    private static final AccelerateDecelerateInterpolator f7104t;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final cm.c f7105a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ZoomEngine f6843b;
+    private final cm.b f7106b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f6844c;
+    private final zl.a f7107c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f6845d;
+    private final a f7108d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f6846e;
+    private RectF f7109e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f6847f;
+    private RectF f7110f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f6848g;
+    private Matrix f7111g;
 
     /* renamed from: h  reason: collision with root package name */
-    private OverPanRangeProvider f6849h;
+    private boolean f7112h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ScaledPoint f6850i;
+    private final Matrix f7113i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private float f7114j;
+
+    /* renamed from: k  reason: collision with root package name */
+    private float f7115k;
+
+    /* renamed from: l  reason: collision with root package name */
+    private final ScaledPoint f7116l;
+
+    /* renamed from: m  reason: collision with root package name */
+    private final AbsolutePoint f7117m;
+
+    /* renamed from: n  reason: collision with root package name */
+    private long f7118n;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final Set f7119o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final d f7120p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    public interface a {
+        void c(float f10, boolean z10);
 
-        private a() {
-        }
+        void d(Runnable runnable);
+
+        void i();
+
+        boolean post(Runnable runnable);
     }
 
     /* renamed from: bm.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0103b {
+    public static final class C0136b {
+        public /* synthetic */ C0136b(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-        /* renamed from: a  reason: collision with root package name */
-        private int f6851a;
+        private C0136b() {
+        }
+    }
 
-        /* renamed from: b  reason: collision with root package name */
-        private int f6852b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private int f6853c;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f6854d;
+        final /* synthetic */ bm.c f7121d;
 
-        public final int a() {
-            return this.f6852b;
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ ValueAnimator f7122e;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        c(bm.c cVar, ValueAnimator valueAnimator) {
+            super(1);
+            this.f7121d = cVar;
+            this.f7122e = valueAnimator;
         }
 
-        public final int b() {
-            return this.f6853c;
+        public final void a(c.a applyUpdate) {
+            Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
+            if (this.f7121d.d()) {
+                Object animatedValue = this.f7122e.getAnimatedValue("zoom");
+                if (animatedValue != null) {
+                    applyUpdate.i(((Float) animatedValue).floatValue(), this.f7121d.b());
+                } else {
+                    throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
+                }
+            }
+            if (this.f7121d.f() != null) {
+                Object animatedValue2 = this.f7122e.getAnimatedValue("panX");
+                if (animatedValue2 != null) {
+                    float floatValue = ((Float) animatedValue2).floatValue();
+                    Object animatedValue3 = this.f7122e.getAnimatedValue("panY");
+                    if (animatedValue3 != null) {
+                        applyUpdate.d(new AbsolutePoint(floatValue, ((Float) animatedValue3).floatValue()), this.f7121d.a());
+                    } else {
+                        throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
+                    }
+                } else {
+                    throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
+                }
+            } else if (this.f7121d.i() != null) {
+                Object animatedValue4 = this.f7122e.getAnimatedValue("panX");
+                if (animatedValue4 != null) {
+                    float floatValue2 = ((Float) animatedValue4).floatValue();
+                    Object animatedValue5 = this.f7122e.getAnimatedValue("panY");
+                    if (animatedValue5 != null) {
+                        applyUpdate.e(new ScaledPoint(floatValue2, ((Float) animatedValue5).floatValue()), this.f7121d.a());
+                    } else {
+                        throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
+                    }
+                } else {
+                    throw new NullPointerException("null cannot be cast to non-null type kotlin.Float");
+                }
+            }
+            applyUpdate.f(this.f7121d.g(), this.f7121d.h());
+            applyUpdate.g(this.f7121d.e());
         }
 
-        public final int c() {
-            return this.f6851a;
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((c.a) obj);
+            return Unit.f31765a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d extends AnimatorListenerAdapter {
+        d() {
         }
 
-        public final boolean d() {
-            return this.f6854d;
+        private final void a(Animator animator) {
+            animator.removeListener(this);
+            Set set = b.this.f7119o;
+            if (set != null) {
+                TypeIntrinsics.asMutableCollection(set).remove(animator);
+                if (b.this.f7119o.isEmpty()) {
+                    b.this.f7107c.f();
+                    return;
+                }
+                return;
+            }
+            throw new NullPointerException("null cannot be cast to non-null type kotlin.collections.MutableCollection<T>");
         }
 
-        public final void e(int i10) {
-            this.f6852b = i10;
+        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+        public void onAnimationCancel(Animator animator) {
+            Intrinsics.checkNotNullParameter(animator, "animator");
+            a(animator);
         }
 
-        public final void f(boolean z10) {
-            this.f6854d = z10;
-        }
-
-        public final void g(int i10) {
-            this.f6853c = i10;
-        }
-
-        public final void h(int i10) {
-            this.f6851a = i10;
+        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+        public void onAnimationEnd(Animator animator) {
+            Intrinsics.checkNotNullParameter(animator, "animator");
+            a(animator);
         }
     }
 
     static {
         String TAG = b.class.getSimpleName();
-        f6841k = TAG;
-        ZoomLogger.a aVar = ZoomLogger.f17293b;
+        f7102r = TAG;
+        ZoomLogger.a aVar = ZoomLogger.f17433b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f6842l = aVar.a(TAG);
+        f7103s = aVar.a(TAG);
+        f7104t = new AccelerateDecelerateInterpolator();
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b(ZoomEngine engine, Function0 provider) {
-        super(provider);
-        Intrinsics.checkNotNullParameter(engine, "engine");
-        Intrinsics.checkNotNullParameter(provider, "provider");
-        this.f6843b = engine;
-        this.f6844c = true;
-        this.f6845d = true;
-        this.f6846e = true;
-        this.f6847f = true;
-        this.f6848g = 51;
-        this.f6849h = OverPanRangeProvider.f17256b;
-        this.f6850i = new ScaledPoint(0.0f, 0.0f, 3, null);
+    public b(cm.c zoomManager, cm.b panManager, zl.a stateController, a callback) {
+        Intrinsics.checkNotNullParameter(zoomManager, "zoomManager");
+        Intrinsics.checkNotNullParameter(panManager, "panManager");
+        Intrinsics.checkNotNullParameter(stateController, "stateController");
+        Intrinsics.checkNotNullParameter(callback, "callback");
+        this.f7105a = zoomManager;
+        this.f7106b = panManager;
+        this.f7107c = stateController;
+        this.f7108d = callback;
+        this.f7109e = new RectF();
+        this.f7110f = new RectF();
+        this.f7111g = new Matrix();
+        this.f7113i = new Matrix();
+        this.f7116l = new ScaledPoint(0.0f, 0.0f, 3, null);
+        this.f7117m = new AbsolutePoint(0.0f, 0.0f, 3, null);
+        this.f7118n = 280L;
+        this.f7119o = new LinkedHashSet();
+        this.f7120p = new d();
     }
 
-    public final float b(int i10, float f10, boolean z10) {
-        int i11;
-        if (z10) {
-            i11 = i10 & 7;
-        } else {
-            i11 = i10 & 112;
-        }
-        if (i11 != 1) {
-            if (i11 != 3) {
-                if (i11 != 5) {
-                    if (i11 != 16) {
-                        if (i11 == 48 || i11 != 80) {
-                            return 0.0f;
-                        }
-                    }
+    private final void A(float f10, boolean z10) {
+        boolean z11;
+        G();
+        if (q() > 0.0f && n() > 0.0f) {
+            float f11 = this.f7114j;
+            if (f11 > 0.0f && this.f7115k > 0.0f) {
+                f7103s.h("onSizeChanged:", "containerWidth:", Float.valueOf(f11), "containerHeight:", Float.valueOf(this.f7115k), "contentWidth:", Float.valueOf(q()), "contentHeight:", Float.valueOf(n()));
+                if (this.f7112h && !z10) {
+                    z11 = false;
+                } else {
+                    z11 = true;
                 }
-                return f10;
+                this.f7112h = true;
+                this.f7108d.c(f10, z11);
             }
-            return 0.0f;
         }
-        return f10 * 0.5f;
     }
 
-    public final float c(boolean z10, boolean z11) {
-        float x10;
-        float l10;
-        float o10;
-        boolean z12;
-        float f10;
-        int e10;
-        float f11;
-        am.b a10 = a();
-        if (z10) {
-            x10 = a10.w();
-        } else {
-            x10 = a10.x();
+    private final void G() {
+        this.f7111g.mapRect(this.f7109e, this.f7110f);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void d(b this$0, bm.c update, ValueAnimator valueAnimator) {
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        Intrinsics.checkNotNullParameter(update, "$update");
+        this$0.h(new c(update, valueAnimator));
+    }
+
+    private final void j() {
+        this.f7108d.i();
+    }
+
+    private final void k(boolean z10) {
+        float c10 = this.f7106b.c(true, z10);
+        float c11 = this.f7106b.c(false, z10);
+        if (c10 == 0.0f && c11 == 0.0f) {
+            return;
         }
-        am.b a11 = a();
-        if (z10) {
-            l10 = a11.m();
-        } else {
-            l10 = a11.l();
+        this.f7111g.postTranslate(c10, c11);
+        G();
+    }
+
+    public final boolean B(Runnable action) {
+        Intrinsics.checkNotNullParameter(action, "action");
+        return this.f7108d.post(action);
+    }
+
+    public final void C(Runnable action) {
+        Intrinsics.checkNotNullParameter(action, "action");
+        this.f7108d.d(action);
+    }
+
+    public final void D(long j10) {
+        this.f7118n = j10;
+    }
+
+    public final void E(float f10, float f11, boolean z10) {
+        if (f10 > 0.0f && f11 > 0.0f) {
+            if (f10 != this.f7114j || f11 != this.f7115k || z10) {
+                this.f7114j = f10;
+                this.f7115k = f11;
+                A(y(), z10);
+            }
         }
-        am.b a12 = a();
-        if (z10) {
-            o10 = a12.p();
-        } else {
-            o10 = a12.o();
+    }
+
+    public final void F(float f10, float f11, boolean z10) {
+        if (f10 > 0.0f && f11 > 0.0f) {
+            if (q() != f10 || n() != f11 || z10) {
+                float y10 = y();
+                this.f7110f.set(0.0f, 0.0f, f10, f11);
+                A(y10, z10);
+            }
         }
-        if (z10) {
-            z12 = this.f6844c;
-        } else {
-            z12 = this.f6845d;
+    }
+
+    public final void e(final bm.c update) {
+        ScaledPoint i10;
+        float j10;
+        AbsolutePoint f10;
+        Intrinsics.checkNotNullParameter(update, "update");
+        if (!this.f7112h || !this.f7107c.k()) {
+            return;
         }
-        float f12 = 0.0f;
-        if (z12 && z11) {
-            if (z10) {
-                f10 = i();
+        ArrayList arrayList = new ArrayList();
+        if (update.f() != null) {
+            if (update.k()) {
+                f10 = s().f(update.f());
             } else {
-                f10 = j();
+                f10 = update.f();
             }
-        } else {
-            f10 = 0.0f;
-        }
-        if (z10) {
-            e10 = com.otaliastudios.zoom.a.f17298a.d(this.f6848g, 0);
-        } else {
-            e10 = com.otaliastudios.zoom.a.f17298a.e(this.f6848g, 0);
-        }
-        if (o10 <= l10) {
-            f11 = l10 - o10;
-            if (e10 != 0) {
-                f12 = b(e10, f11, z10);
-                f11 = f12;
+            PropertyValuesHolder ofFloat = PropertyValuesHolder.ofFloat("panX", t(), f10.c());
+            Intrinsics.checkNotNullExpressionValue(ofFloat, "ofFloat(\"panX\", panX, target.x)");
+            arrayList.add(ofFloat);
+            PropertyValuesHolder ofFloat2 = PropertyValuesHolder.ofFloat("panY", u(), f10.d());
+            Intrinsics.checkNotNullExpressionValue(ofFloat2, "ofFloat(\"panY\", panY, target.y)");
+            arrayList.add(ofFloat2);
+        } else if (update.i() != null) {
+            if (update.k()) {
+                i10 = v().f(update.i());
+            } else {
+                i10 = update.i();
             }
-        } else {
-            f12 = l10 - o10;
-            f11 = 0.0f;
+            PropertyValuesHolder ofFloat3 = PropertyValuesHolder.ofFloat("panX", w(), i10.c());
+            Intrinsics.checkNotNullExpressionValue(ofFloat3, "ofFloat(\"panX\", scaledPanX, target.x)");
+            arrayList.add(ofFloat3);
+            PropertyValuesHolder ofFloat4 = PropertyValuesHolder.ofFloat("panY", x(), i10.d());
+            Intrinsics.checkNotNullExpressionValue(ofFloat4, "ofFloat(\"panY\", scaledPanY, target.y)");
+            arrayList.add(ofFloat4);
         }
-        return d.l(x10, f12 - f10, f11 + f10) - x10;
-    }
-
-    public final void d(boolean z10, C0103b output) {
-        float x10;
-        float l10;
-        float o10;
-        int b10;
-        Intrinsics.checkNotNullParameter(output, "output");
-        am.b a10 = a();
-        if (z10) {
-            x10 = a10.w();
-        } else {
-            x10 = a10.x();
+        if (update.d()) {
+            if (update.l()) {
+                j10 = y() * update.j();
+            } else {
+                j10 = update.j();
+            }
+            PropertyValuesHolder ofFloat5 = PropertyValuesHolder.ofFloat("zoom", y(), this.f7105a.b(j10, update.b()));
+            Intrinsics.checkNotNullExpressionValue(ofFloat5, "ofFloat(\"zoom\", zoom, newZoom)");
+            arrayList.add(ofFloat5);
         }
-        int i10 = (int) x10;
-        am.b a11 = a();
-        if (z10) {
-            l10 = a11.m();
-        } else {
-            l10 = a11.l();
+        Object[] array = arrayList.toArray(new PropertyValuesHolder[0]);
+        if (array != null) {
+            PropertyValuesHolder[] propertyValuesHolderArr = (PropertyValuesHolder[]) array;
+            ValueAnimator animator = ValueAnimator.ofPropertyValuesHolder((PropertyValuesHolder[]) Arrays.copyOf(propertyValuesHolderArr, propertyValuesHolderArr.length));
+            animator.setDuration(this.f7118n);
+            animator.setInterpolator(f7104t);
+            animator.addListener(this.f7120p);
+            animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: bm.a
+                @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+                public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                    b.d(b.this, update, valueAnimator);
+                }
+            });
+            animator.start();
+            Set set = this.f7119o;
+            Intrinsics.checkNotNullExpressionValue(animator, "animator");
+            set.add(animator);
+            return;
         }
-        int i11 = (int) l10;
-        am.b a12 = a();
-        if (z10) {
-            o10 = a12.p();
-        } else {
-            o10 = a12.o();
+        throw new NullPointerException("null cannot be cast to non-null type kotlin.Array<T>");
+    }
+
+    public final void f(Function1 update) {
+        Intrinsics.checkNotNullParameter(update, "update");
+        e(bm.c.f7124l.a(update));
+    }
+
+    public final void g(bm.c update) {
+        ScaledPoint e10;
+        float j10;
+        float f10;
+        AbsolutePoint e11;
+        Intrinsics.checkNotNullParameter(update, "update");
+        if (this.f7112h) {
+            if (update.f() != null) {
+                if (update.k()) {
+                    e11 = update.f();
+                } else {
+                    e11 = update.f().e(s());
+                }
+                this.f7111g.preTranslate(e11.c(), e11.d());
+                G();
+            } else if (update.i() != null) {
+                if (update.k()) {
+                    e10 = update.i();
+                } else {
+                    e10 = update.i().e(v());
+                }
+                this.f7111g.postTranslate(e10.c(), e10.d());
+                G();
+            }
+            if (update.d()) {
+                if (update.l()) {
+                    j10 = y() * update.j();
+                } else {
+                    j10 = update.j();
+                }
+                float b10 = this.f7105a.b(j10, update.b()) / y();
+                float f11 = 0.0f;
+                if (update.g() != null) {
+                    f10 = update.g().floatValue();
+                } else if (update.c()) {
+                    f10 = 0.0f;
+                } else {
+                    f10 = this.f7114j / 2.0f;
+                }
+                if (update.h() != null) {
+                    f11 = update.h().floatValue();
+                } else if (!update.c()) {
+                    f11 = this.f7115k / 2.0f;
+                }
+                this.f7111g.postScale(b10, b10, f10, f11);
+                G();
+            }
+            k(update.a());
+            if (update.e()) {
+                j();
+            }
         }
-        int i12 = (int) o10;
-        boolean z11 = false;
-        int c10 = (int) c(z10, false);
-        if (z10) {
-            b10 = com.otaliastudios.zoom.a.f17298a.a(this.f6848g);
-        } else {
-            b10 = com.otaliastudios.zoom.a.f17298a.b(this.f6848g);
+    }
+
+    public final void h(Function1 update) {
+        Intrinsics.checkNotNullParameter(update, "update");
+        g(bm.c.f7124l.a(update));
+    }
+
+    public final void i() {
+        for (ValueAnimator valueAnimator : this.f7119o) {
+            valueAnimator.cancel();
         }
-        if (i12 > i11) {
-            output.h(-(i12 - i11));
-            output.g(0);
-        } else if (com.otaliastudios.zoom.a.f17298a.c(b10)) {
-            output.h(0);
-            output.g(i11 - i12);
-        } else {
-            int i13 = i10 + c10;
-            output.h(i13);
-            output.g(i13);
-        }
-        output.e(i10);
-        if (c10 != 0) {
-            z11 = true;
-        }
-        output.f(z11);
+        this.f7119o.clear();
     }
 
-    public final int e() {
-        return this.f6848g;
+    public final float l() {
+        return this.f7115k;
     }
 
-    public final ScaledPoint f() {
-        this.f6850i.g(Float.valueOf(c(true, false)), Float.valueOf(c(false, false)));
-        return this.f6850i;
+    public final float m() {
+        return this.f7114j;
     }
 
-    public final boolean g() {
-        return this.f6844c;
+    public final float n() {
+        return this.f7110f.height();
     }
 
-    public final boolean h() {
-        return this.f6846e;
+    public final float o() {
+        return this.f7109e.height();
     }
 
-    public final float i() {
-        float a10 = this.f6849h.a(this.f6843b, true);
-        if (a10 < 0.0f) {
-            f6842l.g("Received negative maxHorizontalOverPan value, coercing to 0");
-            return d.c(a10, 0.0f);
-        }
-        return a10;
+    public final float p() {
+        return this.f7109e.width();
     }
 
-    public final float j() {
-        float a10 = this.f6849h.a(this.f6843b, false);
-        if (a10 < 0.0f) {
-            f6842l.g("Received negative maxVerticalOverPan value, coercing to 0");
-            return d.c(a10, 0.0f);
-        }
-        return a10;
+    public final float q() {
+        return this.f7110f.width();
     }
 
-    public final boolean k() {
-        return this.f6845d;
+    public final Matrix r() {
+        this.f7113i.set(this.f7111g);
+        return this.f7113i;
     }
 
-    public final boolean l() {
-        return this.f6847f;
+    public final AbsolutePoint s() {
+        this.f7117m.h(Float.valueOf(t()), Float.valueOf(u()));
+        return this.f7117m;
     }
 
-    public boolean m() {
-        if (!this.f6846e && !this.f6847f) {
-            return false;
-        }
-        return true;
+    public final float t() {
+        return w() / y();
     }
 
-    public boolean n() {
-        if (!this.f6844c && !this.f6845d) {
-            return false;
-        }
-        return true;
+    public final float u() {
+        return x() / y();
     }
 
-    public final void o(int i10) {
-        this.f6848g = i10;
+    public final ScaledPoint v() {
+        this.f7116l.g(Float.valueOf(w()), Float.valueOf(x()));
+        return this.f7116l;
     }
 
-    public final void p(boolean z10) {
-        this.f6844c = z10;
+    public final float w() {
+        return this.f7109e.left;
     }
 
-    public final void q(boolean z10) {
-        this.f6846e = z10;
+    public final float x() {
+        return this.f7109e.top;
     }
 
-    public final void r(OverPanRangeProvider overPanRangeProvider) {
-        Intrinsics.checkNotNullParameter(overPanRangeProvider, "<set-?>");
-        this.f6849h = overPanRangeProvider;
+    public final float y() {
+        return this.f7109e.width() / this.f7110f.width();
     }
 
-    public final void s(boolean z10) {
-        this.f6845d = z10;
-    }
-
-    public final void t(boolean z10) {
-        this.f6847f = z10;
+    public final boolean z() {
+        return this.f7112h;
     }
 }

@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 public class p implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DescriptorRendererImpl f34136d;
+    private final DescriptorRendererImpl f33845d;
 
     public p(DescriptorRendererImpl descriptorRendererImpl) {
-        this.f34136d = descriptorRendererImpl;
+        this.f33845d = descriptorRendererImpl;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         CharSequence H0;
-        H0 = DescriptorRendererImpl.H0(this.f34136d, (KotlinType) obj);
+        H0 = DescriptorRendererImpl.H0(this.f33845d, (KotlinType) obj);
         return H0;
     }
 }

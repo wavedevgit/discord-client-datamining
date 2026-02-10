@@ -52,21 +52,21 @@ public final class CheckInquiryResponse_WaitForTransitionConfigJsonAdapter exten
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 l10 = (Long) this.nullableLongAdapter.fromJson(reader);
             } else if (J == 1) {
                 l11 = (Long) this.nullableLongAdapter.fromJson(reader);
             } else if (J == 2 && (pollingMode = (CheckInquiryResponse.PollingMode) this.pollingModeAdapter.fromJson(reader)) == null) {
-                throw an.c.x("pollingMode", "pollingMode", reader);
+                throw bn.c.x("pollingMode", "pollingMode", reader);
             }
         }
         reader.D();
         if (pollingMode != null) {
             return new CheckInquiryResponse.WaitForTransitionConfig(l10, l11, pollingMode);
         }
-        throw an.c.o("pollingMode", "pollingMode", reader);
+        throw bn.c.o("pollingMode", "pollingMode", reader);
     }
 
     @Override // com.squareup.moshi.h

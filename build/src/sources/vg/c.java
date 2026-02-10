@@ -1,15 +1,22 @@
 package vg;
 
 import android.content.Context;
-import android.os.Looper;
-import ef.a;
-import ef.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c extends a.AbstractC0286a {
-    @Override // ef.a.AbstractC0286a
-    public final /* bridge */ /* synthetic */ a.f a(Context context, Looper looper, gf.d dVar, Object obj, e.a aVar, e.b bVar) {
-        android.support.v4.media.session.b.a(obj);
-        int i10 = wg.a.X;
-        throw null;
+public abstract class c {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final ff.a f52342a = mg.g.f37083l;
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final a f52343b = new mg.e();
+
+    /* renamed from: c  reason: collision with root package name */
+    public static final b f52344c = new mg.i();
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final h f52345d = new mg.j();
+
+    public static i a(Context context) {
+        return new mg.l(context);
     }
 }

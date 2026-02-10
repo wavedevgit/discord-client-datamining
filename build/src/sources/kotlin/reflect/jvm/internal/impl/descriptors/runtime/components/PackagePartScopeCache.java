@@ -23,27 +23,27 @@ import org.jetbrains.annotations.NotNull;
 public final class PackagePartScopeCache {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DeserializedDescriptorResolver f32648a;
+    private final DeserializedDescriptorResolver f32357a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ReflectKotlinClassFinder f32649b;
+    private final ReflectKotlinClassFinder f32358b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ConcurrentHashMap f32650c;
+    private final ConcurrentHashMap f32359c;
 
     public PackagePartScopeCache(@NotNull DeserializedDescriptorResolver resolver, @NotNull ReflectKotlinClassFinder kotlinClassFinder) {
         Intrinsics.checkNotNullParameter(resolver, "resolver");
         Intrinsics.checkNotNullParameter(kotlinClassFinder, "kotlinClassFinder");
-        this.f32648a = resolver;
-        this.f32649b = kotlinClassFinder;
-        this.f32650c = new ConcurrentHashMap();
+        this.f32357a = resolver;
+        this.f32358b = kotlinClassFinder;
+        this.f32359c = new ConcurrentHashMap();
     }
 
     @NotNull
     public final MemberScope getPackagePartScope(@NotNull ReflectKotlinClass fileClass) {
         Collection<KotlinJvmBinaryClass> e10;
         Intrinsics.checkNotNullParameter(fileClass, "fileClass");
-        ConcurrentHashMap concurrentHashMap = this.f32650c;
+        ConcurrentHashMap concurrentHashMap = this.f32359c;
         ClassId classId = fileClass.getClassId();
         Object obj = concurrentHashMap.get(classId);
         if (obj == null) {
@@ -54,7 +54,7 @@ public final class PackagePartScopeCache {
                     ClassId.Companion companion = ClassId.Companion;
                     FqName fqNameForTopLevelClassMaybeWithDollars = JvmClassName.byInternalName(str).getFqNameForTopLevelClassMaybeWithDollars();
                     Intrinsics.checkNotNullExpressionValue(fqNameForTopLevelClassMaybeWithDollars, "getFqNameForTopLevelClassMaybeWithDollars(...)");
-                    KotlinJvmBinaryClass findKotlinClass = KotlinClassFinderKt.findKotlinClass(this.f32649b, companion.topLevel(fqNameForTopLevelClassMaybeWithDollars), this.f32648a.getComponents().getConfiguration().getMetadataVersion());
+                    KotlinJvmBinaryClass findKotlinClass = KotlinClassFinderKt.findKotlinClass(this.f32358b, companion.topLevel(fqNameForTopLevelClassMaybeWithDollars), this.f32357a.getComponents().getConfiguration().getMetadataVersion());
                     if (findKotlinClass != null) {
                         e10.add(findKotlinClass);
                     }
@@ -62,10 +62,10 @@ public final class PackagePartScopeCache {
             } else {
                 e10 = CollectionsKt.e(fileClass);
             }
-            EmptyPackageFragmentDescriptor emptyPackageFragmentDescriptor = new EmptyPackageFragmentDescriptor(this.f32648a.getComponents().getModuleDescriptor(), packageFqName);
+            EmptyPackageFragmentDescriptor emptyPackageFragmentDescriptor = new EmptyPackageFragmentDescriptor(this.f32357a.getComponents().getModuleDescriptor(), packageFqName);
             ArrayList arrayList = new ArrayList();
             for (KotlinJvmBinaryClass kotlinJvmBinaryClass : e10) {
-                MemberScope createKotlinPackagePartScope = this.f32648a.createKotlinPackagePartScope(emptyPackageFragmentDescriptor, kotlinJvmBinaryClass);
+                MemberScope createKotlinPackagePartScope = this.f32357a.createKotlinPackagePartScope(emptyPackageFragmentDescriptor, kotlinJvmBinaryClass);
                 if (createKotlinPackagePartScope != null) {
                     arrayList.add(createKotlinPackagePartScope);
                 }

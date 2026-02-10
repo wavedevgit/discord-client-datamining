@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun109475: for (var _fun109475_ip = 0;;) switch (_fun109475_ip) {
+        _fun109455: for (var _fun109455_ip = 0;;) switch (_fun109455_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.title;
@@ -51,16 +51,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var1 = var1 != var11;
                 if (!var1) {
-                    _fun109475_ip = 90;
-                    continue _fun109475
+                    _fun109455_ip = 90;
+                    continue _fun109455
                 }
             case 80:
                 var2 = var11.isForumPost;
                 var1 = var2.bind(var11)();
             case 90:
                 if (!var1) {
-                    _fun109475_ip = 114;
-                    continue _fun109475
+                    _fun109455_ip = 114;
+                    continue _fun109455
                 }
             case 93:
                 var10 = var11.hasFlag;
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AutoArchiveDurationOptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1379, 33, 7677, 5474, 1234, 5473, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1379, 33, 7653, 5475, 1234, 5474, 2]);

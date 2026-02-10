@@ -2,16 +2,16 @@ package com.google.android.exoplayer2.audio;
 
 import com.google.android.exoplayer2.audio.d;
 import java.nio.ByteBuffer;
-import ne.w0;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class q extends i {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final int f12319i = Float.floatToIntBits(Float.NaN);
+    private static final int f12459i = Float.floatToIntBits(Float.NaN);
 
     private static void m(int i10, ByteBuffer byteBuffer) {
         int floatToIntBits = Float.floatToIntBits((float) (i10 * 4.656612875245797E-10d));
-        if (floatToIntBits == f12319i) {
+        if (floatToIntBits == f12459i) {
             floatToIntBits = Float.floatToIntBits(0.0f);
         }
         byteBuffer.putInt(floatToIntBits);
@@ -23,7 +23,7 @@ final class q extends i {
         int position = byteBuffer.position();
         int limit = byteBuffer.limit();
         int i10 = limit - position;
-        int i11 = this.f12172b.f12122c;
+        int i11 = this.f12312b.f12262c;
         if (i11 != 536870912) {
             if (i11 == 805306368) {
                 l10 = l(i10);
@@ -47,12 +47,12 @@ final class q extends i {
 
     @Override // com.google.android.exoplayer2.audio.i
     public d.a h(d.a aVar) {
-        int i10 = aVar.f12122c;
+        int i10 = aVar.f12262c;
         if (w0.D0(i10)) {
             if (i10 != 4) {
-                return new d.a(aVar.f12120a, aVar.f12121b, 4);
+                return new d.a(aVar.f12260a, aVar.f12261b, 4);
             }
-            return d.a.f12119e;
+            return d.a.f12259e;
         }
         throw new d.b(aVar);
     }

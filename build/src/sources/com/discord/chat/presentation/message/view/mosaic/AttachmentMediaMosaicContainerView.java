@@ -57,7 +57,7 @@ public final class AttachmentMediaMosaicContainerView extends ConstraintLayout {
         if (function3 != null) {
             function3.invoke(Integer.valueOf(attachmentMediaMosaicContainerView.getAttachmentIndex(item)), item, viewHolder);
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -67,7 +67,7 @@ public final class AttachmentMediaMosaicContainerView extends ConstraintLayout {
         if (function1 != null) {
             function1.invoke(Integer.valueOf(attachmentMediaMosaicContainerView.getAttachmentIndex(item)));
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -77,7 +77,7 @@ public final class AttachmentMediaMosaicContainerView extends ConstraintLayout {
         if (function0 != null) {
             function0.invoke();
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -86,7 +86,7 @@ public final class AttachmentMediaMosaicContainerView extends ConstraintLayout {
         if (function1 != null) {
             function1.invoke(Boolean.valueOf(z10));
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     private final int getAttachmentIndex(MessageAttachmentAccessory messageAttachmentAccessory) {
@@ -130,28 +130,28 @@ public final class AttachmentMediaMosaicContainerView extends ConstraintLayout {
         this.binding = inflate;
         MosaicLayoutManager mosaicLayoutManager = new MosaicLayoutManager(context);
         this.mosaicLayoutManager = mosaicLayoutManager;
-        AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter = new AttachmentMediaMosaicAdapter(context, new Function2() { // from class: b7.a
+        AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter = new AttachmentMediaMosaicAdapter(context, new Function2() { // from class: c7.a
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit attachmentAdapter$lambda$0;
                 attachmentAdapter$lambda$0 = AttachmentMediaMosaicContainerView.attachmentAdapter$lambda$0(AttachmentMediaMosaicContainerView.this, (MessageAttachmentAccessory) obj, (MessagePartViewHolder) obj2);
                 return attachmentAdapter$lambda$0;
             }
-        }, new Function1() { // from class: b7.b
+        }, new Function1() { // from class: c7.b
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit attachmentAdapter$lambda$1;
                 attachmentAdapter$lambda$1 = AttachmentMediaMosaicContainerView.attachmentAdapter$lambda$1(AttachmentMediaMosaicContainerView.this, (MessageAttachmentAccessory) obj);
                 return attachmentAdapter$lambda$1;
             }
-        }, new Function1() { // from class: b7.c
+        }, new Function1() { // from class: c7.c
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit attachmentAdapter$lambda$2;
                 attachmentAdapter$lambda$2 = AttachmentMediaMosaicContainerView.attachmentAdapter$lambda$2(AttachmentMediaMosaicContainerView.this, (MessageAttachmentAccessory) obj);
                 return attachmentAdapter$lambda$2;
             }
-        }, new Function1() { // from class: b7.d
+        }, new Function1() { // from class: c7.d
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit attachmentAdapter$lambda$3;

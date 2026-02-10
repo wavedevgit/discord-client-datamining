@@ -1,39 +1,43 @@
 package pg;
 
-import java.util.AbstractMap;
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class f1 extends p0 {
+final class f1 implements zi.d {
 
-    /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ g1 f44252i;
+    /* renamed from: a  reason: collision with root package name */
+    static final f1 f43521a = new f1();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public f1(g1 g1Var) {
-        this.f44252i = g1Var;
+    /* renamed from: b  reason: collision with root package name */
+    private static final zi.c f43522b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final zi.c f43523c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final zi.c f43524d;
+
+    static {
+        c.b a10 = zi.c.a("logEventKey");
+        f fVar = new f();
+        fVar.a(1);
+        f43522b = a10.b(fVar.b()).a();
+        c.b a11 = zi.c.a("eventCount");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f43523c = a11.b(fVar2.b()).a();
+        c.b a12 = zi.c.a("inferenceDurationStats");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f43524d = a12.b(fVar3.b()).a();
     }
 
-    @Override // java.util.List
-    public final /* bridge */ /* synthetic */ Object get(int i10) {
-        int i11;
-        Object[] objArr;
-        Object[] objArr2;
-        i11 = this.f44252i.f44283p;
-        c.a(i10, i11, "index");
-        g1 g1Var = this.f44252i;
-        int i12 = i10 + i10;
-        objArr = g1Var.f44282o;
-        Object obj = objArr[i12];
-        obj.getClass();
-        objArr2 = g1Var.f44282o;
-        Object obj2 = objArr2[i12 + 1];
-        obj2.getClass();
-        return new AbstractMap.SimpleImmutableEntry(obj, obj2);
+    private f1() {
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
-    public final int size() {
-        int i10;
-        i10 = this.f44252i.f44283p;
-        return i10;
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

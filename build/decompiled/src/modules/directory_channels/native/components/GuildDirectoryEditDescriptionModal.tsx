@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = undefined;
             var1 = function*(arg0, arg1) { // Environment: var0
                 var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                    _fun72062: for (var _fun72062_ip = 0;;) switch (_fun72062_ip) {
+                    _fun71927: for (var _fun71927_ip = 0;;) switch (_fun71927_ip) {
                         case 0:
                             StartGenerator();
                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                             if (var1) {
-                                _fun72062_ip = 114;
-                                continue _fun72062
+                                _fun71927_ip = 114;
+                                continue _fun71927
                             }
                         case 7:
                             var4 = _closure1_slot2;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 72:
                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                             if (var4) {
-                                _fun72062_ip = 111;
-                                continue _fun72062
+                                _fun71927_ip = 111;
+                                continue _fun71927
                             }
                         case 78:
                             var4 = _closure1_slot1;
@@ -260,7 +260,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = {};
     var8.flex = var9;
     var3.container = var8;
-    var9 = 8;
     var8 = {
         'marginBottom': 8,
         'textAlign': 'center'
@@ -272,14 +271,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'padding': 16
     };
     var3.header = var8;
-    var8 = {};
-    var8.marginLeft = var9;
-    var3.closeIcon = var8;
-    var8 = {
-        'backgroundColor': 'transparent',
-        'borderBottomWidth': 0
-    };
-    var3.navbar = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
     var3 = 'EDIT_DESCRIPTION';
@@ -311,4 +302,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 33, 1297, 4703, 9012, 9010, 4736, 3942, 1234, 9013, 4705, 5837, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 33, 1297, 4703, 8990, 8988, 4736, 3942, 1234, 8991, 4705, 5838, 2]);

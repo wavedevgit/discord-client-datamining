@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var4 = var7.memo;
     var3 = function arg0() {
-        _fun101860: for (var _fun101860_ip = 0;;) switch (_fun101860_ip) {
+        _fun101838: for (var _fun101838_ip = 0;;) switch (_fun101838_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.channelId;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0 == var6;
                 var2 = undefined;
                 if (var0) {
-                    _fun101860_ip = 102;
-                    continue _fun101860
+                    _fun101838_ip = 102;
+                    continue _fun101838
                 }
             case 92:
                 var0 = var6.isPrivate;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 102:
                 var0 = true;
                 if (!(var0 !== var2)) {
-                    _fun101860_ip = 151;
-                    continue _fun101860
+                    _fun101838_ip = 151;
+                    continue _fun101838
                 }
             case 108:
                 var3 = _closure1_slot4;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.height = var5;
                 var0.row = var7;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun101860_ip = 191;
-                continue _fun101860;
+                _fun101838_ip = 191;
+                continue _fun101838;
             case 151:
                 var3 = _closure1_slot4;
                 var2 = _closure1_slot1;
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMessagesItemChannelSizes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 33, 7049, 671, 13270, 566, 13277, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 33, 7050, 671, 13257, 566, 13264, 2]);

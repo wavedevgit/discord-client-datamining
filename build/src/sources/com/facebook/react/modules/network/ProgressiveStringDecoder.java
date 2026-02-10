@@ -72,7 +72,7 @@ public final class ProgressiveStringDecoder {
         }
         this.remainder = bArr3;
         if (!z10) {
-            p8.a.J(ReactConstants.TAG, "failed to decode string from byte array");
+            q8.a.J(ReactConstants.TAG, "failed to decode string from byte array");
             return "";
         } else if (charBuffer == null) {
             return "";

@@ -1,9 +1,41 @@
 package lc;
 
-import android.media.AudioFocusRequest;
+import android.util.SparseArray;
+import java.util.HashMap;
+import yb.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract /* synthetic */ class a {
-    public static /* synthetic */ AudioFocusRequest.Builder a(AudioFocusRequest audioFocusRequest) {
-        return new AudioFocusRequest.Builder(audioFocusRequest);
+public abstract class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static SparseArray f35802a = new SparseArray();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static HashMap f35803b;
+
+    static {
+        HashMap hashMap = new HashMap();
+        f35803b = hashMap;
+        hashMap.put(e.DEFAULT, 0);
+        f35803b.put(e.VERY_LOW, 1);
+        f35803b.put(e.HIGHEST, 2);
+        for (e eVar : f35803b.keySet()) {
+            f35802a.append(((Integer) f35803b.get(eVar)).intValue(), eVar);
+        }
+    }
+
+    public static int a(e eVar) {
+        Integer num = (Integer) f35803b.get(eVar);
+        if (num != null) {
+            return num.intValue();
+        }
+        throw new IllegalStateException("PriorityMapping is missing known Priority value " + eVar);
+    }
+
+    public static e b(int i10) {
+        e eVar = (e) f35802a.get(i10);
+        if (eVar != null) {
+            return eVar;
+        }
+        throw new IllegalArgumentException("Unknown Priority for value " + i10);
     }
 }

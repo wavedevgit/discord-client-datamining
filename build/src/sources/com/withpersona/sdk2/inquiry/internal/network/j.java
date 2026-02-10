@@ -10,32 +10,32 @@ public abstract class j {
     public static final class a extends j {
 
         /* renamed from: a  reason: collision with root package name */
-        private final InternalErrorInfo f19325a;
+        private final InternalErrorInfo f19465a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(InternalErrorInfo cause) {
             super(null);
             Intrinsics.checkNotNullParameter(cause, "cause");
-            this.f19325a = cause;
+            this.f19465a = cause;
         }
 
         public final InternalErrorInfo a() {
-            return this.f19325a;
+            return this.f19465a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof a) && Intrinsics.areEqual(this.f19325a, ((a) obj).f19325a);
+            return (obj instanceof a) && Intrinsics.areEqual(this.f19465a, ((a) obj).f19465a);
         }
 
         public int hashCode() {
-            return this.f19325a.hashCode();
+            return this.f19465a.hashCode();
         }
 
         public String toString() {
-            InternalErrorInfo internalErrorInfo = this.f19325a;
+            InternalErrorInfo internalErrorInfo = this.f19465a;
             return "Error(cause=" + internalErrorInfo + ")";
         }
     }
@@ -44,7 +44,7 @@ public abstract class j {
     public static final class b extends j {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f19326a = new b();
+        public static final b f19466a = new b();
 
         private b() {
             super(null);

@@ -77,38 +77,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[2] = var6;
         var2[3] = var5;
         var1 = function() { // Environment: var1
-            _fun65418: for (var _fun65418_ip = 0;;) switch (_fun65418_ip) {
+            _fun65255: for (var _fun65255_ip = 0;;) switch (_fun65255_ip) {
                 case 0:
                     var0 = _closure2_slot3;
                     var1 = null;
                     if (!(var1 != var0)) {
-                        _fun65418_ip = 149;
-                        continue _fun65418
+                        _fun65255_ip = 149;
+                        continue _fun65255
                     }
                 case 16:
                     var0 = _closure2_slot2;
                     if (!(var1 != var0)) {
-                        _fun65418_ip = 149;
-                        continue _fun65418
+                        _fun65255_ip = 149;
+                        continue _fun65255
                     }
                 case 27:
                     var1 = _closure2_slot1;
                     var0 = _closure2_slot2;
                     if (!(var1 !== var0)) {
-                        _fun65418_ip = 149;
-                        continue _fun65418
+                        _fun65255_ip = 149;
+                        continue _fun65255
                     }
                 case 39:
                     var2 = _closure2_slot1;
                     var1 = _closure1_slot5;
                     if (var2) {
-                        _fun65418_ip = 61;
-                        continue _fun65418
+                        _fun65255_ip = 61;
+                        continue _fun65255
                     }
                 case 53:
                     var3 = var1.ACTIVITY_VIDEO_PIP_HIDDEN;
-                    _fun65418_ip = 67;
-                    continue _fun65418;
+                    _fun65255_ip = 67;
+                    continue _fun65255;
                 case 61:
                     var3 = var1.ACTIVITY_VIDEO_PIP_SHOWN;
                 case 67:
@@ -141,4 +141,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7966, 660, 632, 5358, 8125, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7941, 660, 632, 5359, 8100, 795, 2]);

@@ -7,8 +7,8 @@ import android.util.AttributeSet;
 import com.facebook.common.internal.Supplier;
 import com.facebook.drawee.controller.AbstractDraweeControllerBuilder;
 import com.facebook.imagepipeline.request.ImageRequest;
-import o8.j;
-import w8.f;
+import p8.j;
+import x8.f;
 @Deprecated
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class SimpleDraweeView extends b {
@@ -23,8 +23,8 @@ public class SimpleDraweeView extends b {
     private void c(Context context, AttributeSet attributeSet) {
         int resourceId;
         try {
-            if (ya.b.d()) {
-                ya.b.a("SimpleDraweeView#init");
+            if (za.b.d()) {
+                za.b.a("SimpleDraweeView#init");
             }
             if (isInEditMode()) {
                 getTopLevelDrawable().setVisible(true, false);
@@ -34,10 +34,10 @@ public class SimpleDraweeView extends b {
                 this.mControllerBuilder = (AbstractDraweeControllerBuilder) sDraweecontrollerbuildersupplier.get();
             }
             if (attributeSet != null) {
-                TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, d9.a.E);
-                if (obtainStyledAttributes.hasValue(d9.a.G)) {
-                    setImageURI(Uri.parse(obtainStyledAttributes.getString(d9.a.G)), (Object) null);
-                } else if (obtainStyledAttributes.hasValue(d9.a.F) && (resourceId = obtainStyledAttributes.getResourceId(d9.a.F, -1)) != -1) {
+                TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, e9.a.E);
+                if (obtainStyledAttributes.hasValue(e9.a.G)) {
+                    setImageURI(Uri.parse(obtainStyledAttributes.getString(e9.a.G)), (Object) null);
+                } else if (obtainStyledAttributes.hasValue(e9.a.F) && (resourceId = obtainStyledAttributes.getResourceId(e9.a.F, -1)) != -1) {
                     if (isInEditMode()) {
                         setImageResource(resourceId);
                     } else {
@@ -46,12 +46,12 @@ public class SimpleDraweeView extends b {
                 }
                 obtainStyledAttributes.recycle();
             }
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
             }
         } catch (Throwable th2) {
-            if (ya.b.d()) {
-                ya.b.b();
+            if (za.b.d()) {
+                za.b.b();
             }
             throw th2;
         }

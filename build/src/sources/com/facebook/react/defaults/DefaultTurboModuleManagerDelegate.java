@@ -103,7 +103,7 @@ public final class DefaultTurboModuleManagerDelegate extends ReactPackageTurboMo
             this();
         }
 
-        @fb.a
+        @gb.a
         @NotNull
         public final HybridData initHybrid(@NotNull List<? extends CxxReactPackage> list) {
             return DefaultTurboModuleManagerDelegate.initHybrid(list);
@@ -121,7 +121,7 @@ public final class DefaultTurboModuleManagerDelegate extends ReactPackageTurboMo
         this(reactApplicationContext, list, list2);
     }
 
-    @fb.a
+    @gb.a
     @NotNull
     public static final native HybridData initHybrid(@NotNull List<? extends CxxReactPackage> list);
 

@@ -1,23 +1,40 @@
 package rf;
 
-import ef.a;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c {
+public final class c extends jf.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final a.g f48943a;
+    /* renamed from: d  reason: collision with root package name */
+    private final int f48090d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final i f48944b;
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f48089e = new a(null);
+    @NotNull
+    public static final Parcelable.Creator<c> CREATOR = new d();
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final ef.a f48945c;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+        }
+    }
 
-    static {
-        a.g gVar = new a.g();
-        f48943a = gVar;
-        i iVar = new i();
-        f48944b = iVar;
-        f48945c = new ef.a("DevicePerformance.API", iVar, gVar);
+    public c(int i10) {
+        this.f48090d = i10;
+    }
+
+    public final int b() {
+        return this.f48090d;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        int a10 = jf.c.a(dest);
+        jf.c.l(dest, 1, b());
+        jf.c.b(dest, a10);
     }
 }

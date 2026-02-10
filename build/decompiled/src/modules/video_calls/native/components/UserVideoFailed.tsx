@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -47,13 +47,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'backgroundColor': null,
         'padding': 8
     };
-    var9 = 'center';
-    var10 = 4;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.unsafe_rawColors;
-    var10 = var10.PRIMARY_700;
-    var8.backgroundColor = var10;
+    var9 = 4;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.unsafe_rawColors;
+    var9 = var9.PRIMARY_700;
+    var8.backgroundColor = var9;
     var3.container = var8;
     var8 = {
         'marginBottom': 8,
@@ -61,9 +60,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'resizeMode': 'contain'
     };
     var3.placeholderImage = var8;
-    var8 = {};
-    var8.textAlign = var9;
-    var3.placeholderText = var8;
     var8 = {
         'marginTop': 16,
         'alignSelf': 'center'
@@ -78,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/components/UserVideoFailed.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111902: for (var _fun111902_ip = 0;;) switch (_fun111902_ip) {
+        _fun111882: for (var _fun111882_ip = 0;;) switch (_fun111882_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.userId;
@@ -127,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var4 = !var4;
                 if (!var4) {
-                    _fun111902_ip = 225;
-                    continue _fun111902
+                    _fun111882_ip = 225;
+                    continue _fun111882
                 }
             case 177:
                 var13 = _closure1_slot5;
@@ -201,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var10;
                 var8 = !var8;
                 if (!var8) {
-                    _fun111902_ip = 580;
-                    continue _fun111902
+                    _fun111882_ip = 580;
+                    continue _fun111882
                 }
             case 473:
                 var11 = _closure1_slot5;
@@ -298,4 +294,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 33, 1297, 671, 8076, 8081, 3942, 1234, 4084, 8107, 3634, 8280, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 33, 1297, 671, 8051, 8056, 3942, 1234, 4084, 8082, 3634, 8255, 2]);

@@ -13,28 +13,70 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function() {
-        var0 = {};
-        var3 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var1 = 0;
-        var5 = var4[var1];
-        var2 = undefined;
-        var6 = var3.bind(var2)(var5);
-        var5 = var6.uuid4;
-        var5 = var5.bind(var6)();
-        var0.traceId = var5;
-        var1 = var4[var1];
-        var2 = var3.bind(var2)(var1);
-        var1 = var2.uuid4;
-        var3 = var1.bind(var2)();
-        var2 = var3.substring;
-        var1 = 16;
-        var1 = var2.bind(var3)(var1);
-        var0.spanId = var1;
+    var2 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.getGlobalSingleton;
+        var1 = 'defaultCurrentScope';
+        var0 = function() { // Environment: var0
+            var2 = _closure1_slot0;
+            var1 = _closure1_slot1;
+            var0 = 1;
+            var1 = var1[var0];
+            var0 = undefined;
+            var0 = var2.bind(var0)(var1);
+            var0 = var0.Scope;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var4 = var1;
+            var0 = new var4[var0](var3);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var1.generatePropagationContext = var0;
+    var1.getDefaultCurrentScope = var2;
+    var0 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.getGlobalSingleton;
+        var1 = 'defaultIsolationScope';
+        var0 = function() { // Environment: var0
+            var2 = _closure1_slot0;
+            var1 = _closure1_slot1;
+            var0 = 1;
+            var1 = var1[var0];
+            var0 = undefined;
+            var0 = var2.bind(var0)(var1);
+            var0 = var0.Scope;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var4 = var1;
+            var0 = new var4[var0](var3);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var1.getDefaultIsolationScope = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12958]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12920, 12981]);

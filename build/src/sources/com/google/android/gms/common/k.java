@@ -11,25 +11,25 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.UserManager;
 import android.util.Log;
-import gf.t0;
+import hf.t0;
 import java.util.concurrent.atomic.AtomicBoolean;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int f13780a = 12451000;
+    public static final int f13920a = 12451000;
 
     /* renamed from: c  reason: collision with root package name */
-    public static boolean f13782c = false;
+    public static boolean f13922c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    public static boolean f13783d = false;
+    public static boolean f13923d = false;
 
     /* renamed from: b  reason: collision with root package name */
-    static final AtomicBoolean f13781b = new AtomicBoolean();
+    static final AtomicBoolean f13921b = new AtomicBoolean();
 
     /* renamed from: e  reason: collision with root package name */
-    private static final AtomicBoolean f13784e = new AtomicBoolean();
+    private static final AtomicBoolean f13924e = new AtomicBoolean();
 
     public static void a(Context context, int i10) {
         int h10 = g.f().h(context, i10);
@@ -70,9 +70,9 @@ public abstract class k {
     public static boolean e(Context context) {
         int i10;
         try {
-            if (!f13783d) {
+            if (!f13923d) {
                 try {
-                    pf.b a10 = pf.c.a(context);
+                    qf.b a10 = qf.c.a(context);
                     if (Build.VERSION.SDK_INT >= 28) {
                         i10 = 134217792;
                     } else {
@@ -81,22 +81,22 @@ public abstract class k {
                     PackageInfo e10 = a10.e("com.google.android.gms", i10);
                     l.a(context);
                     if (e10 != null && !l.c(e10, false) && l.c(e10, true)) {
-                        f13782c = true;
+                        f13922c = true;
                     } else {
-                        f13782c = false;
+                        f13922c = false;
                     }
-                    f13783d = true;
+                    f13923d = true;
                 } catch (PackageManager.NameNotFoundException e11) {
                     Log.w("GooglePlayServicesUtil", "Cannot find Google Play services package name.", e11);
-                    f13783d = true;
+                    f13923d = true;
                 }
             }
-            if (!f13782c && com.google.android.gms.common.util.g.b()) {
+            if (!f13922c && com.google.android.gms.common.util.g.b()) {
                 return false;
             }
             return true;
         } catch (Throwable th2) {
-            f13783d = true;
+            f13923d = true;
             throw th2;
         }
     }
@@ -108,14 +108,14 @@ public abstract class k {
         PackageInfo packageInfo;
         int i12;
         try {
-            context.getResources().getString(m.f13787a);
+            context.getResources().getString(m.f13927a);
         } catch (Throwable unused) {
             Log.e("GooglePlayServicesUtil", "The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.");
         }
-        if (!"com.google.android.gms".equals(context.getPackageName()) && !f13784e.get()) {
+        if (!"com.google.android.gms".equals(context.getPackageName()) && !f13924e.get()) {
             int a10 = t0.a(context);
             if (a10 != 0) {
-                if (a10 != f13780a) {
+                if (a10 != f13920a) {
                     throw new GooglePlayServicesIncorrectManifestValueException(a10);
                 }
             } else {
@@ -132,7 +132,7 @@ public abstract class k {
         } else {
             z11 = false;
         }
-        gf.q.a(z11);
+        hf.q.a(z11);
         String packageName = context.getPackageName();
         PackageManager packageManager = context.getPackageManager();
         if (z10) {
@@ -161,7 +161,7 @@ public abstract class k {
                 Log.w("GooglePlayServicesUtil", String.valueOf(packageName).concat(" requires Google Play services, but their signature is invalid."));
             } else {
                 if (z10) {
-                    gf.q.l(packageInfo);
+                    hf.q.l(packageInfo);
                     if (!l.c(packageInfo, true)) {
                         Log.w("GooglePlayServicesUtil", String.valueOf(packageName).concat(" requires Google Play Store, but its signature is invalid."));
                     }
@@ -214,7 +214,7 @@ public abstract class k {
 
     public static boolean h(Context context) {
         Object systemService = context.getSystemService("user");
-        gf.q.l(systemService);
+        hf.q.l(systemService);
         Bundle applicationRestrictions = ((UserManager) systemService).getApplicationRestrictions(context.getPackageName());
         if (applicationRestrictions != null && "true".equals(applicationRestrictions.getString("restricted_profile"))) {
             return true;

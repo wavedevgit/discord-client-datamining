@@ -1,47 +1,24 @@
 package gf;
+
+import com.google.android.gms.common.api.Status;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class r {
-
-    /* renamed from: b  reason: collision with root package name */
-    private static r f25182b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final s f25183c = new s(0, false, false, 0, 0);
-
-    /* renamed from: a  reason: collision with root package name */
-    private s f25184a;
-
-    private r() {
+public abstract class r {
+    public static void a(Status status, Object obj, zg.k kVar) {
+        if (status.h()) {
+            kVar.c(obj);
+        } else {
+            kVar.b(hf.b.a(status));
+        }
     }
 
-    public static synchronized r b() {
-        r rVar;
-        synchronized (r.class) {
-            try {
-                if (f25182b == null) {
-                    f25182b = new r();
-                }
-                rVar = f25182b;
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-        return rVar;
+    public static void b(Status status, zg.k kVar) {
+        a(status, null, kVar);
     }
 
-    public s a() {
-        return this.f25184a;
-    }
-
-    public final synchronized void c(s sVar) {
-        if (sVar == null) {
-            this.f25184a = f25183c;
-            return;
+    public static boolean c(Status status, Object obj, zg.k kVar) {
+        if (status.h()) {
+            return kVar.e(obj);
         }
-        s sVar2 = this.f25184a;
-        if (sVar2 != null && sVar2.f() >= sVar.f()) {
-            return;
-        }
-        this.f25184a = sVar;
+        return kVar.d(hf.b.a(status));
     }
 }

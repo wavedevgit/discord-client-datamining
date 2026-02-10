@@ -2,24 +2,24 @@ package com.facebook.imagepipeline.memory;
 
 import android.util.SparseIntArray;
 import com.facebook.imagepipeline.memory.a;
-import o8.j;
-import va.a0;
-import va.q;
-import va.z;
+import p8.j;
+import wa.a0;
+import wa.q;
+import wa.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class f extends a {
 
     /* renamed from: k  reason: collision with root package name */
-    private final int[] f10533k;
+    private final int[] f10673k;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public f(r8.d dVar, z zVar, a0 a0Var) {
+    public f(s8.d dVar, z zVar, a0 a0Var) {
         super(dVar, zVar, a0Var);
-        SparseIntArray sparseIntArray = (SparseIntArray) j.g(zVar.f52411c);
-        this.f10533k = new int[sparseIntArray.size()];
+        SparseIntArray sparseIntArray = (SparseIntArray) j.g(zVar.f53438c);
+        this.f10673k = new int[sparseIntArray.size()];
         int i10 = 0;
         while (true) {
-            int[] iArr = this.f10533k;
+            int[] iArr = this.f10673k;
             if (i10 < iArr.length) {
                 iArr[i10] = sparseIntArray.keyAt(i10);
                 i10++;
@@ -48,7 +48,7 @@ public abstract class f extends a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int C() {
-        return this.f10533k[0];
+        return this.f10673k[0];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -63,7 +63,7 @@ public abstract class f extends a {
     protected int n(int i10) {
         int[] iArr;
         if (i10 > 0) {
-            for (int i11 : this.f10533k) {
+            for (int i11 : this.f10673k) {
                 if (i11 >= i10) {
                     return i11;
                 }

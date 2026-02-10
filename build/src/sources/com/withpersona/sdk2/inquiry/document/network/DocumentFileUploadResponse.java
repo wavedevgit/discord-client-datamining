@@ -9,14 +9,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class DocumentFileUploadResponse {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DocumentFileData f18500a;
+    private final DocumentFileData f18640a;
 
     public DocumentFileUploadResponse(DocumentFileData data) {
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f18500a = data;
+        this.f18640a = data;
     }
 
     public final DocumentFileData a() {
-        return this.f18500a;
+        return this.f18640a;
     }
 }

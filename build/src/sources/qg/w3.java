@@ -1,64 +1,43 @@
 package qg;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class w3 {
+final class w3 implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ie f47659a;
+    static final w3 f46379a = new w3();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Boolean f47660b;
+    private static final zi.c f46380b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Boolean f47661c;
+    private static final zi.c f46381c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final rd f47662d;
+    private static final zi.c f46382d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final wh f47663e;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ w3(u3 u3Var, v3 v3Var) {
-        ie ieVar;
-        Boolean bool;
-        wh whVar;
-        ieVar = u3Var.f47606a;
-        this.f47659a = ieVar;
-        this.f47660b = null;
-        bool = u3Var.f47607b;
-        this.f47661c = bool;
-        this.f47662d = null;
-        whVar = u3Var.f47608c;
-        this.f47663e = whVar;
+    static {
+        c.b a10 = zi.c.a("logEventKey");
+        s1 s1Var = new s1();
+        s1Var.a(1);
+        f46380b = a10.b(s1Var.b()).a();
+        c.b a11 = zi.c.a("eventCount");
+        s1 s1Var2 = new s1();
+        s1Var2.a(2);
+        f46381c = a11.b(s1Var2.b()).a();
+        c.b a12 = zi.c.a("inferenceDurationStats");
+        s1 s1Var3 = new s1();
+        s1Var3.a(3);
+        f46382d = a12.b(s1Var3.b()).a();
     }
 
-    public final ie a() {
-        return this.f47659a;
+    private w3() {
     }
 
-    public final wh b() {
-        return this.f47663e;
-    }
-
-    public final Boolean c() {
-        return this.f47661c;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (!(obj instanceof w3)) {
-            return false;
-        }
-        w3 w3Var = (w3) obj;
-        if (gf.o.a(this.f47659a, w3Var.f47659a) && gf.o.a(null, null) && gf.o.a(this.f47661c, w3Var.f47661c) && gf.o.a(null, null) && gf.o.a(this.f47663e, w3Var.f47663e)) {
-            return true;
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        return gf.o.b(this.f47659a, null, this.f47661c, null, this.f47663e);
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

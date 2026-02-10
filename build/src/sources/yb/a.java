@@ -1,64 +1,89 @@
 package yb;
-
-import yb.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a {
+final class a extends d {
 
-    /* renamed from: yb.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractC0746a {
-        public abstract a a();
+    /* renamed from: a  reason: collision with root package name */
+    private final Integer f55552a;
 
-        public abstract AbstractC0746a b(String str);
+    /* renamed from: b  reason: collision with root package name */
+    private final Object f55553b;
 
-        public abstract AbstractC0746a c(String str);
+    /* renamed from: c  reason: collision with root package name */
+    private final e f55554c;
 
-        public abstract AbstractC0746a d(String str);
+    /* renamed from: d  reason: collision with root package name */
+    private final f f55555d;
 
-        public abstract AbstractC0746a e(String str);
-
-        public abstract AbstractC0746a f(String str);
-
-        public abstract AbstractC0746a g(String str);
-
-        public abstract AbstractC0746a h(String str);
-
-        public abstract AbstractC0746a i(String str);
-
-        public abstract AbstractC0746a j(String str);
-
-        public abstract AbstractC0746a k(String str);
-
-        public abstract AbstractC0746a l(String str);
-
-        public abstract AbstractC0746a m(Integer num);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public a(Integer num, Object obj, e eVar, f fVar) {
+        this.f55552a = num;
+        if (obj != null) {
+            this.f55553b = obj;
+            if (eVar != null) {
+                this.f55554c = eVar;
+                this.f55555d = fVar;
+                return;
+            }
+            throw new NullPointerException("Null priority");
+        }
+        throw new NullPointerException("Null payload");
     }
 
-    public static AbstractC0746a a() {
-        return new c.b();
+    @Override // yb.d
+    public Integer a() {
+        return this.f55552a;
     }
 
-    public abstract String b();
+    @Override // yb.d
+    public Object b() {
+        return this.f55553b;
+    }
 
-    public abstract String c();
+    @Override // yb.d
+    public e c() {
+        return this.f55554c;
+    }
 
-    public abstract String d();
+    @Override // yb.d
+    public f d() {
+        return this.f55555d;
+    }
 
-    public abstract String e();
+    public boolean equals(Object obj) {
+        f fVar;
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof d) {
+            d dVar = (d) obj;
+            Integer num = this.f55552a;
+            if (num != null ? num.equals(dVar.a()) : dVar.a() == null) {
+                if (this.f55553b.equals(dVar.b()) && this.f55554c.equals(dVar.c()) && ((fVar = this.f55555d) != null ? fVar.equals(dVar.d()) : dVar.d() == null)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
-    public abstract String f();
+    public int hashCode() {
+        int hashCode;
+        Integer num = this.f55552a;
+        int i10 = 0;
+        if (num == null) {
+            hashCode = 0;
+        } else {
+            hashCode = num.hashCode();
+        }
+        int hashCode2 = (((((hashCode ^ 1000003) * 1000003) ^ this.f55553b.hashCode()) * 1000003) ^ this.f55554c.hashCode()) * 1000003;
+        f fVar = this.f55555d;
+        if (fVar != null) {
+            i10 = fVar.hashCode();
+        }
+        return hashCode2 ^ i10;
+    }
 
-    public abstract String g();
-
-    public abstract String h();
-
-    public abstract String i();
-
-    public abstract String j();
-
-    public abstract String k();
-
-    public abstract String l();
-
-    public abstract Integer m();
+    public String toString() {
+        return "Event{code=" + this.f55552a + ", payload=" + this.f55553b + ", priority=" + this.f55554c + ", productData=" + this.f55555d + "}";
+    }
 }

@@ -108,7 +108,7 @@ public class JavaTimerManager implements LifecycleEventListener, HeadlessJsTaskE
                     JavaTimerManager javaTimerManager = JavaTimerManager.this;
                     synchronized (obj) {
                         z10 = javaTimerManager.sendIdleEvents;
-                        Unit unit = Unit.f32056a;
+                        Unit unit = Unit.f31765a;
                     }
                     if (z10) {
                         JavaTimerManager.this.javaScriptTimerExecutor.callIdleCallbacks(currentTimeMillis);
@@ -221,7 +221,7 @@ public class JavaTimerManager implements LifecycleEventListener, HeadlessJsTaskE
                         throw th2;
                     }
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             }
             WritableArray writableArray2 = this.timersToCall;
             if (writableArray2 != null) {
@@ -295,7 +295,7 @@ public class JavaTimerManager implements LifecycleEventListener, HeadlessJsTaskE
                 if (this.sendIdleEvents) {
                     setChoreographerIdleCallback();
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -325,7 +325,7 @@ public class JavaTimerManager implements LifecycleEventListener, HeadlessJsTaskE
                 } else {
                     javaTimerManager.clearChoreographerIdleCallback();
                 }
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -334,7 +334,7 @@ public class JavaTimerManager implements LifecycleEventListener, HeadlessJsTaskE
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final int timers$lambda$0(Timer timer, Timer timer2) {
-        return fs.a.a(timer.getTargetTime() - timer2.getTargetTime());
+        return gs.a.a(timer.getTargetTime() - timer2.getTargetTime());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -359,17 +359,17 @@ public class JavaTimerManager implements LifecycleEventListener, HeadlessJsTaskE
         createTimer(i10, max, z10);
     }
 
-    @fb.a
+    @gb.a
     public void createTimer(int i10, long j10, boolean z10) {
         Timer timer = new Timer(i10, (SystemClock.nanoTime() / 1000000) + j10, (int) j10, z10);
         synchronized (this.timerGuard) {
             this.timers.add(timer);
             this.timerIdsToTimers.put(i10, timer);
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
         }
     }
 
-    @fb.a
+    @gb.a
     public void deleteTimer(int i10) {
         synchronized (this.timerGuard) {
             Timer timer = this.timerIdsToTimers.get(i10);
@@ -400,7 +400,7 @@ public class JavaTimerManager implements LifecycleEventListener, HeadlessJsTaskE
                     return true;
                 }
             }
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
             return false;
         }
     }
@@ -449,11 +449,11 @@ public class JavaTimerManager implements LifecycleEventListener, HeadlessJsTaskE
         clearChoreographerIdleCallback();
     }
 
-    @fb.a
+    @gb.a
     public void setSendIdleEvents(final boolean z10) {
         synchronized (this.idleCallbackGuard) {
             this.sendIdleEvents = z10;
-            Unit unit = Unit.f32056a;
+            Unit unit = Unit.f31765a;
         }
         UiThreadUtil.runOnUiThread(new Runnable() { // from class: com.facebook.react.modules.core.d
             @Override // java.lang.Runnable

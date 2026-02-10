@@ -1,19 +1,58 @@
 package qg;
+
+import java.util.Map;
+import java.util.Set;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class s extends x {
+public abstract class s implements c1 {
 
-    /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ c0 f47554p;
+    /* renamed from: d  reason: collision with root package name */
+    private transient Set f46257d;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public s(c0 c0Var) {
-        super(c0Var, null);
-        this.f47554p = c0Var;
+    /* renamed from: e  reason: collision with root package name */
+    private transient Map f46258e;
+
+    @Override // qg.c1
+    public final Map b() {
+        Map map = this.f46258e;
+        if (map == null) {
+            Map e10 = e();
+            this.f46258e = e10;
+            return e10;
+        }
+        return map;
     }
 
-    @Override // qg.x
-    final Object a(int i10) {
-        return c0.j(this.f47554p, i10);
+    @Override // qg.c1
+    public final Set c() {
+        Set set = this.f46257d;
+        if (set == null) {
+            Set f10 = f();
+            this.f46257d = f10;
+            return f10;
+        }
+        return set;
+    }
+
+    abstract Map e();
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof c1)) {
+            return false;
+        }
+        return b().equals(((c1) obj).b());
+    }
+
+    abstract Set f();
+
+    public final int hashCode() {
+        return b().hashCode();
+    }
+
+    public final String toString() {
+        return ((i) b()).f45877i.toString();
     }
 }

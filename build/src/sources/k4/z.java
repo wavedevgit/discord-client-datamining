@@ -9,64 +9,64 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class z {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b f31514d = new b(null);
+    public static final b f30682d = new b(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final UUID f31515a;
+    private final UUID f30683a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p4.u f31516b;
+    private final p4.u f30684b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f31517c;
+    private final Set f30685c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static abstract class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Class f31518a;
+        private final Class f30686a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f31519b;
+        private boolean f30687b;
 
         /* renamed from: c  reason: collision with root package name */
-        private UUID f31520c;
+        private UUID f30688c;
 
         /* renamed from: d  reason: collision with root package name */
-        private p4.u f31521d;
+        private p4.u f30689d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Set f31522e;
+        private final Set f30690e;
 
         public a(Class workerClass) {
             Intrinsics.checkNotNullParameter(workerClass, "workerClass");
-            this.f31518a = workerClass;
+            this.f30686a = workerClass;
             UUID randomUUID = UUID.randomUUID();
             Intrinsics.checkNotNullExpressionValue(randomUUID, "randomUUID()");
-            this.f31520c = randomUUID;
-            String uuid = this.f31520c.toString();
+            this.f30688c = randomUUID;
+            String uuid = this.f30688c.toString();
             Intrinsics.checkNotNullExpressionValue(uuid, "id.toString()");
             String name = workerClass.getName();
             Intrinsics.checkNotNullExpressionValue(name, "workerClass.name");
-            this.f31521d = new p4.u(uuid, name);
+            this.f30689d = new p4.u(uuid, name);
             String name2 = workerClass.getName();
             Intrinsics.checkNotNullExpressionValue(name2, "workerClass.name");
-            this.f31522e = x0.g(name2);
+            this.f30690e = x0.g(name2);
         }
 
         public final z a() {
             boolean z10;
             z b10 = b();
-            d dVar = this.f31521d.f43742j;
+            d dVar = this.f30689d.f42997j;
             if (!dVar.e() && !dVar.f() && !dVar.g() && !dVar.h()) {
                 z10 = false;
             } else {
                 z10 = true;
             }
-            p4.u uVar = this.f31521d;
-            if (uVar.f43749q) {
+            p4.u uVar = this.f30689d;
+            if (uVar.f43004q) {
                 if (!z10) {
-                    if (uVar.f43739g > 0) {
+                    if (uVar.f42994g > 0) {
                         throw new IllegalArgumentException("Expedited jobs cannot be delayed");
                     }
                 } else {
@@ -82,43 +82,43 @@ public abstract class z {
         public abstract z b();
 
         public final boolean c() {
-            return this.f31519b;
+            return this.f30687b;
         }
 
         public final UUID d() {
-            return this.f31520c;
+            return this.f30688c;
         }
 
         public final Set e() {
-            return this.f31522e;
+            return this.f30690e;
         }
 
         public abstract a f();
 
         public final p4.u g() {
-            return this.f31521d;
+            return this.f30689d;
         }
 
         public a h(r policy) {
             Intrinsics.checkNotNullParameter(policy, "policy");
-            p4.u uVar = this.f31521d;
-            uVar.f43749q = true;
-            uVar.f43750r = policy;
+            p4.u uVar = this.f30689d;
+            uVar.f43004q = true;
+            uVar.f43005r = policy;
             return f();
         }
 
         public final a i(UUID id2) {
             Intrinsics.checkNotNullParameter(id2, "id");
-            this.f31520c = id2;
+            this.f30688c = id2;
             String uuid = id2.toString();
             Intrinsics.checkNotNullExpressionValue(uuid, "id.toString()");
-            this.f31521d = new p4.u(uuid, this.f31521d);
+            this.f30689d = new p4.u(uuid, this.f30689d);
             return f();
         }
 
         public final a j(androidx.work.b inputData) {
             Intrinsics.checkNotNullParameter(inputData, "inputData");
-            this.f31521d.f43737e = inputData;
+            this.f30689d.f42992e = inputData;
             return f();
         }
     }
@@ -137,13 +137,13 @@ public abstract class z {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
         Intrinsics.checkNotNullParameter(tags, "tags");
-        this.f31515a = id2;
-        this.f31516b = workSpec;
-        this.f31517c = tags;
+        this.f30683a = id2;
+        this.f30684b = workSpec;
+        this.f30685c = tags;
     }
 
     public UUID a() {
-        return this.f31515a;
+        return this.f30683a;
     }
 
     public final String b() {
@@ -153,10 +153,10 @@ public abstract class z {
     }
 
     public final Set c() {
-        return this.f31517c;
+        return this.f30685c;
     }
 
     public final p4.u d() {
-        return this.f31516b;
+        return this.f30684b;
     }
 }

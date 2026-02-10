@@ -1,65 +1,49 @@
 package gf;
 
 import android.util.Log;
-import java.util.Objects;
+import com.google.android.gms.common.api.Status;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class y0 {
-
-    /* renamed from: a  reason: collision with root package name */
-    private Object f25208a;
+public final class y0 extends b1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f25209b;
+    protected final com.google.android.gms.common.api.internal.a f24387b;
 
-    /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ c f25210c;
-
-    public y0(c cVar, Object obj) {
-        Objects.requireNonNull(cVar);
-        this.f25210c = cVar;
-        this.f25208a = obj;
-        this.f25209b = false;
+    public y0(int i10, com.google.android.gms.common.api.internal.a aVar) {
+        super(i10);
+        this.f24387b = (com.google.android.gms.common.api.internal.a) hf.q.m(aVar, "Null methods are not runnable.");
     }
 
-    protected abstract void a(Object obj);
-
-    public final void b() {
-        Object obj;
-        synchronized (this) {
-            try {
-                obj = this.f25208a;
-                if (this.f25209b) {
-                    String obj2 = toString();
-                    StringBuilder sb2 = new StringBuilder(obj2.length() + 47);
-                    sb2.append("Callback proxy ");
-                    sb2.append(obj2);
-                    sb2.append(" being reused. This is not safe.");
-                    Log.w("GmsClient", sb2.toString());
-                }
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-        if (obj != null) {
-            a(obj);
-        }
-        synchronized (this) {
-            this.f25209b = true;
-        }
-        c();
-    }
-
-    public final void c() {
-        d();
-        c cVar = this.f25210c;
-        synchronized (cVar.a0()) {
-            cVar.a0().remove(this);
+    @Override // gf.b1
+    public final void a(Status status) {
+        try {
+            this.f24387b.h(status);
+        } catch (IllegalStateException e10) {
+            Log.w("ApiCallRunner", "Exception reporting failure", e10);
         }
     }
 
-    public final void d() {
-        synchronized (this) {
-            this.f25208a = null;
+    @Override // gf.b1
+    public final void b(Exception exc) {
+        String simpleName = exc.getClass().getSimpleName();
+        String localizedMessage = exc.getLocalizedMessage();
+        try {
+            this.f24387b.h(new Status(10, simpleName + ": " + localizedMessage));
+        } catch (IllegalStateException e10) {
+            Log.w("ApiCallRunner", "Exception reporting failure", e10);
         }
+    }
+
+    @Override // gf.b1
+    public final void c(e0 e0Var) {
+        try {
+            this.f24387b.f(e0Var.v());
+        } catch (RuntimeException e10) {
+            b(e10);
+        }
+    }
+
+    @Override // gf.b1
+    public final void d(v vVar, boolean z10) {
+        vVar.c(this.f24387b, z10);
     }
 }

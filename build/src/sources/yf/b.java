@@ -1,42 +1,36 @@
 package yf;
 
-import android.os.IBinder;
-import android.os.IInterface;
 import android.os.Parcel;
-import com.google.android.gms.identitycredentials.GetCredentialRequest;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public interface b extends IInterface {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class a extends kg.b implements b {
-
-        /* renamed from: yf.b$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0751a extends kg.a implements b {
-            C0751a(IBinder iBinder) {
-                super(iBinder, "com.google.android.gms.identitycredentials.internal.IIdentityCredentialService");
-            }
-
-            @Override // yf.b
-            public void A0(yf.a aVar, GetCredentialRequest getCredentialRequest) {
-                Parcel e10 = e();
-                kg.c.c(e10, aVar);
-                kg.c.b(e10, getCredentialRequest);
-                f(1, e10);
-            }
-        }
-
-        public static b W0(IBinder iBinder) {
-            if (iBinder == null) {
-                return null;
-            }
-            IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.identitycredentials.internal.IIdentityCredentialService");
-            if (queryLocalInterface instanceof b) {
-                return (b) queryLocalInterface;
-            }
-            return new C0751a(iBinder);
-        }
+public final class b implements Parcelable.Creator {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static void c(a aVar, Parcel parcel, int i10) {
+        int a10 = jf.c.a(parcel);
+        jf.c.c(parcel, 1, aVar.b());
+        jf.c.b(parcel, a10);
     }
 
-    void A0(yf.a aVar, GetCredentialRequest getCredentialRequest);
+    @Override // android.os.Parcelable.Creator
+    /* renamed from: a */
+    public a createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
+        boolean z10 = false;
+        while (parcel.dataPosition() < A) {
+            int r10 = jf.b.r(parcel);
+            if (jf.b.l(r10) != 1) {
+                jf.b.z(parcel, r10);
+            } else {
+                z10 = jf.b.m(parcel, r10);
+            }
+        }
+        jf.b.k(parcel, A);
+        return new a(z10);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    /* renamed from: b */
+    public a[] newArray(int i10) {
+        return new a[i10];
+    }
 }

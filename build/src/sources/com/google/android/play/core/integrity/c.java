@@ -10,13 +10,13 @@ public interface c {
 
         /* renamed from: com.google.android.play.core.integrity.c$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static abstract class AbstractC0182a {
+        public static abstract class AbstractC0209a {
             public abstract a a();
 
-            public abstract AbstractC0182a b(long j10);
+            public abstract AbstractC0209a b(long j10);
         }
 
-        public static AbstractC0182a c() {
+        public static AbstractC0209a c() {
             r0 r0Var = new r0();
             r0Var.c(0);
             return r0Var;
@@ -35,7 +35,7 @@ public interface c {
 
     /* renamed from: com.google.android.play.core.integrity.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0183c {
+    public interface InterfaceC0210c {
         Task a(d dVar);
     }
 
@@ -51,7 +51,7 @@ public interface c {
 
         public static a a() {
             t0 t0Var = new t0();
-            t0Var.c(ki.t.h());
+            t0Var.c(li.t.h());
             return t0Var;
         }
 

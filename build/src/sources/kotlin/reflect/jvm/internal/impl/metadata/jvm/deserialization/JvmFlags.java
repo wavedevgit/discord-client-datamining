@@ -8,24 +8,24 @@ public final class JvmFlags {
     public static final JvmFlags INSTANCE = new JvmFlags();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Flags.BooleanFlagField f33850a = Flags.FlagField.booleanFirst();
+    private static final Flags.BooleanFlagField f33559a = Flags.FlagField.booleanFirst();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Flags.BooleanFlagField f33851b;
+    private static final Flags.BooleanFlagField f33560b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Flags.BooleanFlagField f33852c;
+    private static final Flags.BooleanFlagField f33561c;
 
     static {
         Flags.BooleanFlagField booleanFirst = Flags.FlagField.booleanFirst();
-        f33851b = booleanFirst;
-        f33852c = Flags.FlagField.booleanAfter(booleanFirst);
+        f33560b = booleanFirst;
+        f33561c = Flags.FlagField.booleanAfter(booleanFirst);
     }
 
     private JvmFlags() {
     }
 
     public final Flags.BooleanFlagField getIS_MOVED_FROM_INTERFACE_COMPANION() {
-        return f33850a;
+        return f33559a;
     }
 }

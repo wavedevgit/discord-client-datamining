@@ -1,0 +1,76 @@
+// modules/messages/getAdaptiveMessageLimit.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.Accessibility;
+    var3 = var3.MAX_MESSAGES_PER_CHANNEL;
+    var _closure1_slot3 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/messages/getAdaptiveMessageLimit.tsx';
+    var3 = var4.bind(var5)(var3);
+    var3 = function() {
+        var0 = _closure1_slot3;
+        return var0;
+    };
+    var2.getMessageLimit = var3;
+    var1 = function arg0, arg1() {
+        var4 = _closure1_slot0;
+        var5 = _closure1_slot1;
+        var1 = 3;
+        var1 = var5[var1];
+        var3 = undefined;
+        var1 = var4.bind(var3)(var1);
+        var6 = var1.AdaptiveMessageLimitExperiment;
+        var2 = var6.useConfig;
+        var1 = {};
+        var7 = 'useMessageLimit';
+        var1.location = var7;
+        var1 = var2.bind(var6)(var1);
+        var1 = var1.strategy;
+        var2 = 5;
+        var2 = var5[var2];
+        var5 = var4.bind(var3)(var2);
+        var4 = var5.useStateFromStores;
+        var2 = _closure1_slot2;
+        var3 = new Array(1);
+        var3[0] = var2;
+        var2 = new Array(1);
+        var2[0] = var1;
+        var1 = function() { // Environment: var1
+            var0 = 0;
+            return var0;
+        };
+        var1 = var4.bind(var5)(var3, var1, var2);
+        var0 = _closure1_slot3;
+        return var0;
+    };
+    var2.useMessageLimit = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 8496, 660, 8497, 1348, 566, 2]);

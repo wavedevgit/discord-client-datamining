@@ -59,12 +59,12 @@ public final class CheckInquiryResponseJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             } else if (J == 0) {
                 data = (CheckInquiryResponse.Data) this.dataAdapter.fromJson(reader);
                 if (data == null) {
-                    throw an.c.x("data_", "data", reader);
+                    throw bn.c.x("data_", "data", reader);
                 }
             } else if (J == 1) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -76,7 +76,7 @@ public final class CheckInquiryResponseJsonAdapter extends h {
         if (data != null) {
             return new CheckInquiryResponse(data, str, list);
         }
-        throw an.c.o("data_", "data", reader);
+        throw bn.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h

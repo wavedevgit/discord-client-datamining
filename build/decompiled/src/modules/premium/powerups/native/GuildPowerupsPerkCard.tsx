@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsPerkCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun103029: for (var _fun103029_ip = 0;;) switch (_fun103029_ip) {
+        _fun103009: for (var _fun103009_ip = 0;;) switch (_fun103009_ip) {
             case 0:
                 var2 = arg0;
                 var21 = var2.title;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var2.isImageAnimated;
                 var3 = undefined;
                 if (!(var14 === var3)) {
-                    _fun103029_ip = 33;
-                    continue _fun103029
+                    _fun103009_ip = 33;
+                    continue _fun103009
                 }
             case 31:
                 var14 = true;
@@ -160,13 +160,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.isThemeDark;
                 var0 = var0.bind(var1)(var2);
                 if (var0) {
-                    _fun103029_ip = 174;
-                    continue _fun103029
+                    _fun103009_ip = 174;
+                    continue _fun103009
                 }
             case 162:
                 var12 = ['#0f101100', '#0f10111a'];
-                _fun103029_ip = 184;
-                continue _fun103029;
+                _fun103009_ip = 184;
+                continue _fun103009;
             case 174:
                 var12 = ['#0f101100', '#0f101166'];
             case 184:
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.imageContainer;
                 var4.style = var8;
                 if (!(var17 == var10)) {
-                    _fun103029_ip = 326;
-                    continue _fun103029
+                    _fun103009_ip = 326;
+                    continue _fun103009
                 }
             case 270:
                 var13 = _closure1_slot4;
@@ -205,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var17 != var18;
                 var17 = '';
                 if (!var19) {
-                    _fun103029_ip = 310;
-                    continue _fun103029
+                    _fun103009_ip = 310;
+                    continue _fun103009
                 }
             case 307:
                 var17 = var18;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[1] = var10;
                 var4.children = var8;
                 var5 = var2.bind(var3)(var5, var4);
-                var4 = new Array(3);
+                var4 = new Array(4);
                 var4[0] = var5;
                 var10 = _closure1_slot5;
                 var8 = _closure1_slot3;
@@ -284,34 +284,70 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'new';
                 var5 = var5 === var7;
                 if (!var5) {
-                    _fun103029_ip = 712;
-                    continue _fun103029
+                    _fun103009_ip = 712;
+                    continue _fun103009
                 }
             case 613:
+                var11 = _closure1_slot4;
+                var15 = _closure1_slot0;
+                var16 = _closure1_slot2;
+                var8 = 12;
+                var8 = var16[var8];
+                var8 = var15.bind(var3)(var8);
+                var10 = var8.TextBadge;
+                var8 = {};
+                var12 = 13;
+                var13 = var16[var12];
+                var13 = var15.bind(var3)(var13);
+                var14 = var13.intl;
+                var13 = var14.string;
+                var12 = var16[var12];
+                var12 = var15.bind(var3)(var12);
+                var12 = var12.t;
+                var12 = var12.y2b7CA;
+                var12 = var13.bind(var14)(var12);
+                var8.text = var12;
+                var12 = var9.badge;
+                var8.style = var12;
+                var5 = var11.bind(var3)(var10, var8);
+            case 712:
+                var4[2] = var5;
+                var5 = 'beta';
+                var5 = var5 === var7;
+                if (!var5) {
+                    _fun103009_ip = 854;
+                    continue _fun103009
+                }
+            case 730:
                 var8 = _closure1_slot4;
-                var13 = _closure1_slot0;
-                var14 = _closure1_slot2;
-                var6 = 12;
-                var6 = var14[var6];
-                var6 = var13.bind(var3)(var6);
+                var11 = _closure1_slot0;
+                var12 = _closure1_slot2;
+                var10 = 12;
+                var6 = var12[var10];
+                var6 = var11.bind(var3)(var6);
                 var7 = var6.TextBadge;
                 var6 = {};
-                var10 = 13;
-                var11 = var14[var10];
-                var11 = var13.bind(var3)(var11);
-                var12 = var11.intl;
-                var11 = var12.string;
-                var10 = var14[var10];
-                var10 = var13.bind(var3)(var10);
-                var10 = var10.t;
-                var10 = var10.y2b7CA;
-                var10 = var11.bind(var12)(var10);
-                var6.text = var10;
+                var13 = 13;
+                var14 = var12[var13];
+                var14 = var11.bind(var3)(var14);
+                var15 = var14.intl;
+                var14 = var15.string;
+                var13 = var12[var13];
+                var13 = var11.bind(var3)(var13);
+                var13 = var13.t;
+                var13 = var13.oW0eUd;
+                var13 = var14.bind(var15)(var13);
+                var6.text = var13;
+                var10 = var12[var10];
+                var10 = var11.bind(var3)(var10);
+                var10 = var10.BadgeColors;
+                var10 = var10.BRAND;
+                var6.color = var10;
                 var9 = var9.badge;
                 var6.style = var9;
                 var5 = var8.bind(var3)(var7, var6);
-            case 712:
-                var4[2] = var5;
+            case 854:
+                var4[3] = var5;
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
@@ -319,4 +355,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3247, 3207, 13442, 13426, 4098, 3942, 13427, 8346, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3247, 3207, 13429, 13413, 4098, 3942, 13414, 8321, 1234, 2]);

@@ -1,19 +1,30 @@
 package ng;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class q0 extends u0 {
+public abstract class q0 {
 
-    /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ y0 f40237p;
+    /* renamed from: a  reason: collision with root package name */
+    private static p0 f38881a;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public q0(y0 y0Var) {
-        super(y0Var, null);
-        this.f40237p = y0Var;
+    public static synchronized i0 a(e0 e0Var) {
+        i0 i0Var;
+        synchronized (q0.class) {
+            try {
+                if (f38881a == null) {
+                    f38881a = new p0(null);
+                }
+                i0Var = (i0) f38881a.b(e0Var);
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        return i0Var;
     }
 
-    @Override // ng.u0
-    final /* bridge */ /* synthetic */ Object a(int i10) {
-        return new w0(this.f40237p, i10);
+    public static synchronized i0 b(String str) {
+        i0 a10;
+        synchronized (q0.class) {
+            a10 = a(e0.d("common").c());
+        }
+        return a10;
     }
 }

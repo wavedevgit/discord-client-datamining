@@ -65,7 +65,7 @@ public class PackagerConnectionSettings {
         if (Intrinsics.areEqual(serverHost, AndroidInfoHelpers.DEVICE_LOCALHOST)) {
             String str = TAG;
             String adbReverseTcpCommand = AndroidInfoHelpers.getAdbReverseTcpCommand(this.appContext);
-            p8.a.J(str, "You seem to be running on device. Run '" + adbReverseTcpCommand + "' to forward the debug server's port to the device.");
+            q8.a.J(str, "You seem to be running on device. Run '" + adbReverseTcpCommand + "' to forward the debug server's port to the device.");
         }
         return serverHost;
     }

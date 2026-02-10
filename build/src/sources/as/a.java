@@ -1,6 +1,6 @@
 package as;
 
-import kotlin.random.c;
+import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class a extends zr.a {
@@ -8,14 +8,14 @@ public class a extends zr.a {
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: as.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0087a {
+    public static final class C0101a {
         @NotNull
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0087a f6282a = new C0087a();
+        public static final C0101a f6033a = new C0101a();
 
         /* renamed from: b  reason: collision with root package name */
-        public static final Integer f6283b;
+        public static final Integer f6034b;
 
         static {
             Integer num;
@@ -30,32 +30,35 @@ public class a extends zr.a {
                 if (num != null && num.intValue() > 0) {
                     num2 = num;
                 }
-                f6283b = num2;
+                f6034b = num2;
             }
             num = null;
             if (num != null) {
                 num2 = num;
             }
-            f6283b = num2;
+            f6034b = num2;
         }
 
-        private C0087a() {
+        private C0101a() {
         }
     }
 
     private final boolean c(int i10) {
-        Integer num = C0087a.f6283b;
+        Integer num = C0101a.f6034b;
         if (num != null && num.intValue() < i10) {
             return false;
         }
         return true;
     }
 
-    @Override // yr.a
-    public c b() {
-        if (c(34)) {
-            return new gs.a();
+    @Override // zr.a
+    public void a(Throwable cause, Throwable exception) {
+        Intrinsics.checkNotNullParameter(cause, "cause");
+        Intrinsics.checkNotNullParameter(exception, "exception");
+        if (c(19)) {
+            cause.addSuppressed(exception);
+        } else {
+            super.a(cause, exception);
         }
-        return super.b();
     }
 }

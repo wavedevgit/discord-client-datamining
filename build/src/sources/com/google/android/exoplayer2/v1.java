@@ -11,13 +11,13 @@ public interface v1 extends s1.b {
         void b();
     }
 
-    void A(lc.r0 r0Var, Format[] formatArr, qd.m0 m0Var, long j10, boolean z10, boolean z11, long j11, long j12);
+    long A();
 
-    long B();
+    void B(long j10);
 
-    void C(long j10);
+    oe.a0 C();
 
-    ne.a0 D();
+    void E(mc.r0 r0Var, Format[] formatArr, rd.m0 m0Var, long j10, boolean z10, boolean z11, long j11, long j12);
 
     boolean d();
 
@@ -33,19 +33,19 @@ public interface v1 extends s1.b {
 
     boolean isReady();
 
-    void j();
+    void j(Format[] formatArr, rd.m0 m0Var, long j10, long j11);
 
-    void o();
+    void k();
 
-    boolean p();
+    void p(int i10, nc.t1 t1Var);
 
-    void q(int i10, mc.t1 t1Var);
+    void q();
+
+    boolean r();
 
     void release();
 
     void reset();
-
-    void s(Format[] formatArr, qd.m0 m0Var, long j10, long j11);
 
     void start();
 
@@ -58,5 +58,5 @@ public interface v1 extends s1.b {
 
     void y(long j10, long j11);
 
-    qd.m0 z();
+    rd.m0 z();
 }

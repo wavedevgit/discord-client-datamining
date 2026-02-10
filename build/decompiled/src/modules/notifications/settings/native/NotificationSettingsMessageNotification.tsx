@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var3 = function arg0() {
-        _fun70611: for (var _fun70611_ip = 0;;) switch (_fun70611_ip) {
+        _fun70476: for (var _fun70476_ip = 0;;) switch (_fun70476_ip) {
             case 0:
                 var17 = arg0;
                 var _closure2_slot0 = var17;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var17.context;
                 var11 = 'guild';
                 if (!(var11 !== var12)) {
-                    _fun70611_ip = 318;
-                    continue _fun70611
+                    _fun70476_ip = 318;
+                    continue _fun70476
                 }
             case 262:
                 var14 = _closure1_slot0;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.t;
                 var11 = var11["R1j5+4"];
                 var11 = var12.bind(var13)(var11);
-                _fun70611_ip = 372;
-                continue _fun70611;
+                _fun70476_ip = 372;
+                continue _fun70476;
             case 318:
                 var18 = _closure1_slot0;
                 var12 = _closure1_slot2;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var20 == var23;
                 var21 = undefined;
                 if (var24) {
-                    _fun70611_ip = 581;
-                    continue _fun70611
+                    _fun70476_ip = 581;
+                    continue _fun70476
                 }
             case 576:
                 var21 = var23.label;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var20 != var21;
                 var20 = 'unset';
                 if (!var23) {
-                    _fun70611_ip = 595;
-                    continue _fun70611
+                    _fun70476_ip = 595;
+                    continue _fun70476
                 }
             case 592:
                 var20 = var21;
@@ -269,18 +269,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.BACKGROUND_MOD_SUBTLE;
     var9.borderColor = var11;
     var4.card = var9;
-    var11 = 8;
-    var9 = {
-        'flex': 1,
-        'marginTop': 8,
-        'alignItems': 'center'
-    };
-    var4.information = var9;
     var9 = {
         'textAlign': 'center',
         'marginTop': 4
     };
     var4.cta = var9;
+    var11 = 8;
     var9 = {
         'textAlign': 'center',
         'marginTop': 8
@@ -402,4 +396,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NotificationSettingsChannelMessageNotification = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8843, 3942, 1234, 4904, 8844, 8841, 3279, 8846, 1307, 8833, 8848, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8821, 3942, 1234, 4904, 8822, 8819, 3279, 8824, 1307, 8811, 8826, 2]);

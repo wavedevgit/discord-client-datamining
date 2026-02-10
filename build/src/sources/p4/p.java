@@ -8,10 +8,10 @@ import java.util.List;
 public final class p implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f43720a;
+    private final r3.u f42975a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f43721b;
+    private final r3.i f42976b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -28,21 +28,21 @@ public final class p implements o {
         /* renamed from: k */
         public void i(x3.k kVar, n nVar) {
             if (nVar.a() == null) {
-                kVar.O1(1);
+                kVar.N1(1);
             } else {
-                kVar.g1(1, nVar.a());
+                kVar.d1(1, nVar.a());
             }
             if (nVar.b() == null) {
-                kVar.O1(2);
+                kVar.N1(2);
             } else {
-                kVar.g1(2, nVar.b());
+                kVar.d1(2, nVar.b());
             }
         }
     }
 
     public p(r3.u uVar) {
-        this.f43720a = uVar;
-        this.f43721b = new a(uVar);
+        this.f42975a = uVar;
+        this.f42976b = new a(uVar);
     }
 
     public static List c() {
@@ -54,12 +54,12 @@ public final class p implements o {
         String string;
         r3.x k10 = r3.x.k("SELECT name FROM workname WHERE work_spec_id=?", 1);
         if (str == null) {
-            k10.O1(1);
+            k10.N1(1);
         } else {
-            k10.g1(1, str);
+            k10.d1(1, str);
         }
-        this.f43720a.d();
-        Cursor b10 = t3.b.b(this.f43720a, k10, false, null);
+        this.f42975a.d();
+        Cursor b10 = t3.b.b(this.f42975a, k10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -79,13 +79,13 @@ public final class p implements o {
 
     @Override // p4.o
     public void b(n nVar) {
-        this.f43720a.d();
-        this.f43720a.e();
+        this.f42975a.d();
+        this.f42975a.e();
         try {
-            this.f43721b.j(nVar);
-            this.f43720a.A();
+            this.f42976b.j(nVar);
+            this.f42975a.A();
         } finally {
-            this.f43720a.i();
+            this.f42975a.i();
         }
     }
 }

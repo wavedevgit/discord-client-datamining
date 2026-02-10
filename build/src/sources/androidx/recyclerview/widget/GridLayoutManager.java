@@ -245,7 +245,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         this.mPositionTargetedByScrollInDirection = -1;
         this.mRowWithAccessibilityFocus = -1;
         this.mColumnWithAccessibilityFocus = -1;
-        setSpanCount(RecyclerView.LayoutManager.getProperties(context, attributeSet, i10, i11).f5257b);
+        setSpanCount(RecyclerView.LayoutManager.getProperties(context, attributeSet, i10, i11).f4954b);
     }
 
     private void K(RecyclerView.Recycler recycler, RecyclerView.State state, int i10, boolean z10) {
@@ -266,8 +266,8 @@ public class GridLayoutManager extends LinearLayoutManager {
             View view = this.mSet[i11];
             c cVar = (c) view.getLayoutParams();
             int e02 = e0(recycler, state, getPosition(view));
-            cVar.f5219q = e02;
-            cVar.f5218p = i14;
+            cVar.f4916q = e02;
+            cVar.f4915p = i14;
             i14 += e02;
             i11 += i13;
         }
@@ -343,13 +343,13 @@ public class GridLayoutManager extends LinearLayoutManager {
         } else {
             z10 = false;
         }
-        int d02 = d0(recycler, state, anchorInfo.f5221b);
+        int d02 = d0(recycler, state, anchorInfo.f4918b);
         if (z10) {
             while (d02 > 0) {
-                int i11 = anchorInfo.f5221b;
+                int i11 = anchorInfo.f4918b;
                 if (i11 > 0) {
                     int i12 = i11 - 1;
-                    anchorInfo.f5221b = i12;
+                    anchorInfo.f4918b = i12;
                     d02 = d0(recycler, state, i12);
                 } else {
                     return;
@@ -358,7 +358,7 @@ public class GridLayoutManager extends LinearLayoutManager {
             return;
         }
         int b10 = state.b() - 1;
-        int i13 = anchorInfo.f5221b;
+        int i13 = anchorInfo.f4918b;
         while (i13 < b10) {
             int i14 = i13 + 1;
             int d03 = d0(recycler, state, i14);
@@ -368,7 +368,7 @@ public class GridLayoutManager extends LinearLayoutManager {
             i13 = i14;
             d02 = d03;
         }
-        anchorInfo.f5221b = i13;
+        anchorInfo.f4918b = i13;
     }
 
     private void R() {
@@ -591,10 +591,10 @@ public class GridLayoutManager extends LinearLayoutManager {
         int i11;
         int i12;
         c cVar = (c) view.getLayoutParams();
-        Rect rect = cVar.f5263e;
+        Rect rect = cVar.f4960e;
         int i13 = rect.top + rect.bottom + ((ViewGroup.MarginLayoutParams) cVar).topMargin + ((ViewGroup.MarginLayoutParams) cVar).bottomMargin;
         int i14 = rect.left + rect.right + ((ViewGroup.MarginLayoutParams) cVar).leftMargin + ((ViewGroup.MarginLayoutParams) cVar).rightMargin;
-        int spaceForSpanRange = getSpaceForSpanRange(cVar.f5218p, cVar.f5219q);
+        int spaceForSpanRange = getSpaceForSpanRange(cVar.f4915p, cVar.f4916q);
         if (this.mOrientation == 1) {
             i12 = RecyclerView.LayoutManager.getChildMeasureSpec(spaceForSpanRange, i10, i14, ((ViewGroup.MarginLayoutParams) cVar).width, false);
             i11 = RecyclerView.LayoutManager.getChildMeasureSpec(this.mOrientationHelper.n(), getHeightMode(), i13, ((ViewGroup.MarginLayoutParams) cVar).height, true);
@@ -642,10 +642,10 @@ public class GridLayoutManager extends LinearLayoutManager {
     void collectPrefetchPositionsForLayoutState(RecyclerView.State state, LinearLayoutManager.LayoutState layoutState, RecyclerView.LayoutManager.LayoutPrefetchRegistry layoutPrefetchRegistry) {
         int i10 = this.mSpanCount;
         for (int i11 = 0; i11 < this.mSpanCount && layoutState.c(state) && i10 > 0; i11++) {
-            int i12 = layoutState.f5232d;
-            layoutPrefetchRegistry.a(i12, Math.max(0, layoutState.f5235g));
+            int i12 = layoutState.f4929d;
+            layoutPrefetchRegistry.a(i12, Math.max(0, layoutState.f4932g));
             i10 -= this.mSpanSizeLookup.getSpanSize(i12);
-            layoutState.f5232d += layoutState.f5233e;
+            layoutState.f4929d += layoutState.f4930e;
         }
     }
 
@@ -835,7 +835,7 @@ public class GridLayoutManager extends LinearLayoutManager {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:37:0x009f, code lost:
-        r21.f5226b = true;
+        r21.f4923b = true;
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x00a1, code lost:
         return;
@@ -1147,41 +1147,41 @@ public class GridLayoutManager extends LinearLayoutManager {
     public static class c extends RecyclerView.LayoutParams {
 
         /* renamed from: p  reason: collision with root package name */
-        int f5218p;
+        int f4915p;
 
         /* renamed from: q  reason: collision with root package name */
-        int f5219q;
+        int f4916q;
 
         public c(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            this.f5218p = -1;
-            this.f5219q = 0;
+            this.f4915p = -1;
+            this.f4916q = 0;
         }
 
         public int e() {
-            return this.f5218p;
+            return this.f4915p;
         }
 
         public int f() {
-            return this.f5219q;
+            return this.f4916q;
         }
 
         public c(int i10, int i11) {
             super(i10, i11);
-            this.f5218p = -1;
-            this.f5219q = 0;
+            this.f4915p = -1;
+            this.f4916q = 0;
         }
 
         public c(ViewGroup.MarginLayoutParams marginLayoutParams) {
             super(marginLayoutParams);
-            this.f5218p = -1;
-            this.f5219q = 0;
+            this.f4915p = -1;
+            this.f4916q = 0;
         }
 
         public c(ViewGroup.LayoutParams layoutParams) {
             super(layoutParams);
-            this.f5218p = -1;
-            this.f5219q = 0;
+            this.f4915p = -1;
+            this.f4916q = 0;
         }
     }
 

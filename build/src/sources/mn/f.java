@@ -1,24 +1,25 @@
 package mn;
 
-import com.facebook.react.uimanager.PointerEvents;
-import com.facebook.react.uimanager.ReactPointerEventsView;
+import com.facebook.react.bridge.WritableMap;
 import kotlin.jvm.internal.Intrinsics;
+import ln.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements ReactPointerEventsView {
+public final class f extends b {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final b f37296d;
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f37272e;
 
-    public f(b dimmingView) {
-        Intrinsics.checkNotNullParameter(dimmingView, "dimmingView");
-        this.f37296d = dimmingView;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public f(q handler) {
+        super(handler);
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f37272e = handler.f0();
     }
 
-    @Override // com.facebook.react.uimanager.ReactPointerEventsView
-    public PointerEvents getPointerEvents() {
-        if (this.f37296d.getBlockGestures$react_native_screens_release()) {
-            return PointerEvents.AUTO;
-        }
-        return PointerEvents.NONE;
+    @Override // mn.b
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        super.a(eventData);
+        eventData.putBoolean("pointerInside", this.f37272e);
     }
 }

@@ -3,7 +3,7 @@ package com.discord.chat.bridge;
 import com.discord.chat.bridge.MessageType;
 import com.discord.serialization.IntEnum;
 import com.discord.serialization.IntEnumSerializer;
-import ft.m;
+import gt.m;
 import java.util.EnumSet;
 import java.util.Set;
 import kotlin.Lazy;
@@ -15,9 +15,9 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlinx.serialization.KSerializer;
 import org.jetbrains.annotations.NotNull;
-import qr.c;
-import qr.l;
-import xr.a;
+import rr.c;
+import rr.l;
+import yr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @m(with = Serializer.class)
@@ -92,7 +92,7 @@ public final class MessageType implements IntEnum {
     public static final MessageType VOICE_SESSION;
     private final int serialNumber;
     @NotNull
-    private final Lazy isSystem$delegate = l.a(new Function0() { // from class: j6.m
+    private final Lazy isSystem$delegate = l.a(new Function0() { // from class: k6.m
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             boolean isSystem_delegate$lambda$0;
@@ -101,7 +101,7 @@ public final class MessageType implements IntEnum {
         }
     });
     @NotNull
-    private final Lazy isAutomodSystem$delegate = l.a(new Function0() { // from class: j6.n
+    private final Lazy isAutomodSystem$delegate = l.a(new Function0() { // from class: k6.n
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             boolean isAutomodSystem_delegate$lambda$1;
@@ -110,7 +110,7 @@ public final class MessageType implements IntEnum {
         }
     });
     @NotNull
-    private final Lazy isCall$delegate = l.a(new Function0() { // from class: j6.o
+    private final Lazy isCall$delegate = l.a(new Function0() { // from class: k6.o
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             boolean isCall_delegate$lambda$2;

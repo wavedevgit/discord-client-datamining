@@ -123,11 +123,11 @@ public abstract class ReactBaseTextShadowNode extends LayoutShadowNode {
                 int reactTag = childAt.getReactTag();
                 YogaValue styleWidth = childAt.getStyleWidth();
                 YogaValue styleHeight = childAt.getStyleHeight();
-                YogaUnit yogaUnit = styleWidth.f11459b;
+                YogaUnit yogaUnit = styleWidth.f11599b;
                 YogaUnit yogaUnit2 = YogaUnit.POINT;
-                if (yogaUnit == yogaUnit2 && styleHeight.f11459b == yogaUnit2) {
-                    layoutWidth = styleWidth.f11458a;
-                    layoutHeight = styleHeight.f11458a;
+                if (yogaUnit == yogaUnit2 && styleHeight.f11599b == yogaUnit2) {
+                    layoutWidth = styleWidth.f11598a;
+                    layoutHeight = styleHeight.f11598a;
                 } else {
                     childAt.calculateLayout();
                     layoutWidth = childAt.getLayoutWidth();
@@ -135,7 +135,7 @@ public abstract class ReactBaseTextShadowNode extends LayoutShadowNode {
                 }
                 spannableStringBuilder.append(INLINE_VIEW_PLACEHOLDER);
                 list.add(new SetSpanOperation(spannableStringBuilder.length() - 1, spannableStringBuilder.length(), new TextInlineViewPlaceholderSpan(reactTag, (int) layoutWidth, (int) layoutHeight)));
-                ((Map) db.a.c(map)).put(Integer.valueOf(reactTag), childAt);
+                ((Map) eb.a.c(map)).put(Integer.valueOf(reactTag), childAt);
             } else {
                 throw new IllegalViewOperationException("Unexpected view type nested under a <Text> or <TextInput> node: " + childAt.getClass());
             }
@@ -397,7 +397,7 @@ public abstract class ReactBaseTextShadowNode extends LayoutShadowNode {
                 } else if ("center".equals(str)) {
                     this.mTextAlign = 1;
                 } else {
-                    p8.a.J(ReactConstants.TAG, "Invalid textAlign: " + str);
+                    q8.a.J(ReactConstants.TAG, "Invalid textAlign: " + str);
                     this.mTextAlign = 0;
                 }
             } else {
@@ -415,7 +415,7 @@ public abstract class ReactBaseTextShadowNode extends LayoutShadowNode {
             } else if ("balanced".equals(str)) {
                 this.mTextBreakStrategy = 2;
             } else {
-                p8.a.J(ReactConstants.TAG, "Invalid textBreakStrategy: " + str);
+                q8.a.J(ReactConstants.TAG, "Invalid textBreakStrategy: " + str);
                 this.mTextBreakStrategy = 1;
             }
         } else {
@@ -502,7 +502,7 @@ public abstract class ReactBaseTextShadowNode extends LayoutShadowNode {
             } else if ("capitalize".equals(str)) {
                 textTransform = TextTransform.CAPITALIZE;
             } else {
-                p8.a.J(ReactConstants.TAG, "Invalid textTransform: " + str);
+                q8.a.J(ReactConstants.TAG, "Invalid textTransform: " + str);
             }
         }
         this.mTextAttributes.textTransform = textTransform;
@@ -520,7 +520,7 @@ public abstract class ReactBaseTextShadowNode extends LayoutShadowNode {
         } else {
             z11 = true;
         }
-        db.a.b(z11, "nativeViewHierarchyOptimizer is required when inline views are supported");
+        eb.a.b(z11, "nativeViewHierarchyOptimizer is required when inline views are supported");
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
         ArrayList arrayList = new ArrayList();
         if (z10) {
@@ -547,9 +547,9 @@ public abstract class ReactBaseTextShadowNode extends LayoutShadowNode {
                 } else {
                     TextInlineViewPlaceholderSpan textInlineViewPlaceholderSpan = (TextInlineViewPlaceholderSpan) reactSpan;
                     int height = textInlineViewPlaceholderSpan.getHeight();
-                    ReactShadowNode reactShadowNode = (ReactShadowNode) ((Map) db.a.c(hashMap2)).get(Integer.valueOf(textInlineViewPlaceholderSpan.getReactTag()));
-                    db.a.c(reactShadowNode);
-                    db.a.c(nativeViewHierarchyOptimizer);
+                    ReactShadowNode reactShadowNode = (ReactShadowNode) ((Map) eb.a.c(hashMap2)).get(Integer.valueOf(textInlineViewPlaceholderSpan.getReactTag()));
+                    eb.a.c(reactShadowNode);
+                    eb.a.c(nativeViewHierarchyOptimizer);
                     nativeViewHierarchyOptimizer.handleForceViewToBeNonLayoutOnly(reactShadowNode);
                     reactShadowNode.setLayoutParent(reactBaseTextShadowNode);
                     i10 = height;

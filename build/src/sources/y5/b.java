@@ -1,64 +1,36 @@
 package y5;
+
+import com.facebook.react.views.text.internal.span.SetSpanOperation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private float f55043a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private float f55044b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private Object f55045c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private Object f55046d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private float f55047e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private float f55048f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private float f55049g;
-
-    public float a() {
-        return this.f55044b;
+public abstract class b {
+    private static float a(float f10) {
+        if (f10 <= 0.04045f) {
+            return f10 / 12.92f;
+        }
+        return (float) Math.pow((f10 + 0.055f) / 1.055f, 2.4000000953674316d);
     }
 
-    public Object b() {
-        return this.f55046d;
+    private static float b(float f10) {
+        if (f10 <= 0.0031308f) {
+            return f10 * 12.92f;
+        }
+        return (float) ((Math.pow(f10, 0.4166666567325592d) * 1.0549999475479126d) - 0.054999999701976776d);
     }
 
-    public float c() {
-        return this.f55048f;
-    }
-
-    public float d() {
-        return this.f55047e;
-    }
-
-    public float e() {
-        return this.f55049g;
-    }
-
-    public float f() {
-        return this.f55043a;
-    }
-
-    public Object g() {
-        return this.f55045c;
-    }
-
-    public b h(float f10, float f11, Object obj, Object obj2, float f12, float f13, float f14) {
-        this.f55043a = f10;
-        this.f55044b = f11;
-        this.f55045c = obj;
-        this.f55046d = obj2;
-        this.f55047e = f12;
-        this.f55048f = f13;
-        this.f55049g = f14;
-        return this;
+    public static int c(float f10, int i10, int i11) {
+        if (i10 == i11 || f10 <= 0.0f) {
+            return i10;
+        }
+        if (f10 >= 1.0f) {
+            return i11;
+        }
+        float f11 = ((i10 >> 24) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f;
+        float a10 = a(((i10 >> 16) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f);
+        float a11 = a(((i10 >> 8) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f);
+        float a12 = a((i10 & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f);
+        float a13 = a(((i11 >> 16) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f);
+        float a14 = a(((i11 >> 8) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f);
+        float a15 = a12 + (f10 * (a((i11 & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f) - a12));
+        return (Math.round(b(a10 + ((a13 - a10) * f10)) * 255.0f) << 16) | (Math.round((f11 + (((((i11 >> 24) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f) - f11) * f10)) * 255.0f) << 24) | (Math.round(b(a11 + ((a14 - a11) * f10)) * 255.0f) << 8) | Math.round(b(a15) * 255.0f);
     }
 }

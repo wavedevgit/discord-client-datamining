@@ -7,7 +7,7 @@ import java.util.concurrent.FutureTask;
 final class v2 implements z0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final v2 f29029a = new v2();
+    private static final v2 f29229a = new v2();
 
     private v2() {
     }
@@ -21,7 +21,7 @@ final class v2 implements z0 {
     }
 
     public static z0 f() {
-        return f29029a;
+        return f29229a;
     }
 
     @Override // io.sentry.z0

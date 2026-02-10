@@ -1,105 +1,147 @@
 package dd;
 
-import dd.i0;
-import tc.z;
+import dd.i;
+import java.util.Arrays;
+import kotlin.jvm.internal.ByteCompanionObject;
+import oe.h0;
+import oe.w0;
+import uc.l;
+import uc.q;
+import uc.r;
+import uc.s;
+import uc.t;
+import uc.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements tc.k {
+final class b extends i {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final tc.p f20367d = new tc.p() { // from class: dd.a
-        @Override // tc.p
-        public final tc.k[] b() {
-            return b.b();
+    /* renamed from: n  reason: collision with root package name */
+    private t f20629n;
+
+    /* renamed from: o  reason: collision with root package name */
+    private a f20630o;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    private static final class a implements g {
+
+        /* renamed from: a  reason: collision with root package name */
+        private t f20631a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private t.a f20632b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private long f20633c = -1;
+
+        /* renamed from: d  reason: collision with root package name */
+        private long f20634d = -1;
+
+        public a(t tVar, t.a aVar) {
+            this.f20631a = tVar;
+            this.f20632b = aVar;
         }
-    };
 
-    /* renamed from: a  reason: collision with root package name */
-    private final c f20368a = new c();
-
-    /* renamed from: b  reason: collision with root package name */
-    private final ne.h0 f20369b = new ne.h0(2786);
-
-    /* renamed from: c  reason: collision with root package name */
-    private boolean f20370c;
-
-    public static /* synthetic */ tc.k[] b() {
-        return new tc.k[]{new b()};
-    }
-
-    @Override // tc.k
-    public void a(long j10, long j11) {
-        this.f20370c = false;
-        this.f20368a.c();
-    }
-
-    @Override // tc.k
-    public void c(tc.m mVar) {
-        this.f20368a.f(mVar, new i0.d(0, 1));
-        mVar.s();
-        mVar.q(new z.b(-9223372036854775807L));
-    }
-
-    @Override // tc.k
-    public int d(tc.l lVar, tc.y yVar) {
-        int read = lVar.read(this.f20369b.e(), 0, 2786);
-        if (read == -1) {
-            return -1;
-        }
-        this.f20369b.U(0);
-        this.f20369b.T(read);
-        if (!this.f20370c) {
-            this.f20368a.e(0L, 4);
-            this.f20370c = true;
-        }
-        this.f20368a.b(this.f20369b);
-        return 0;
-    }
-
-    @Override // tc.k
-    public boolean f(tc.l lVar) {
-        ne.h0 h0Var = new ne.h0(10);
-        int i10 = 0;
-        while (true) {
-            lVar.n(h0Var.e(), 0, 10);
-            h0Var.U(0);
-            if (h0Var.K() != 4801587) {
-                break;
+        @Override // dd.g
+        public long a(l lVar) {
+            long j10 = this.f20634d;
+            if (j10 < 0) {
+                return -1L;
             }
-            h0Var.V(3);
-            int G = h0Var.G();
-            i10 += G + 10;
-            lVar.h(G);
+            long j11 = -(j10 + 2);
+            this.f20634d = -1L;
+            return j11;
         }
-        lVar.e();
-        lVar.h(i10);
-        int i11 = 0;
-        int i12 = i10;
-        while (true) {
-            lVar.n(h0Var.e(), 0, 6);
-            h0Var.U(0);
-            if (h0Var.N() != 2935) {
-                lVar.e();
-                i12++;
-                if (i12 - i10 >= 8192) {
-                    return false;
-                }
-                lVar.h(i12);
-                i11 = 0;
+
+        @Override // dd.g
+        public z b() {
+            boolean z10;
+            if (this.f20633c != -1) {
+                z10 = true;
             } else {
-                i11++;
-                if (i11 >= 4) {
-                    return true;
-                }
-                int g10 = nc.b.g(h0Var.e());
-                if (g10 == -1) {
-                    return false;
-                }
-                lVar.h(g10 - 6);
+                z10 = false;
             }
+            oe.a.g(z10);
+            return new s(this.f20631a, this.f20633c);
+        }
+
+        @Override // dd.g
+        public void c(long j10) {
+            long[] jArr = this.f20632b.f51524a;
+            this.f20634d = jArr[w0.i(jArr, j10, true, true)];
+        }
+
+        public void d(long j10) {
+            this.f20633c = j10;
         }
     }
 
-    @Override // tc.k
-    public void release() {
+    private int n(h0 h0Var) {
+        int i10 = (h0Var.e()[2] & 255) >> 4;
+        if (i10 == 6 || i10 == 7) {
+            h0Var.V(4);
+            h0Var.O();
+        }
+        int j10 = q.j(h0Var, i10);
+        h0Var.U(0);
+        return j10;
+    }
+
+    private static boolean o(byte[] bArr) {
+        if (bArr[0] != -1) {
+            return false;
+        }
+        return true;
+    }
+
+    public static boolean p(h0 h0Var) {
+        if (h0Var.a() >= 5 && h0Var.H() == 127 && h0Var.J() == 1179402563) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // dd.i
+    protected long f(h0 h0Var) {
+        if (!o(h0Var.e())) {
+            return -1L;
+        }
+        return n(h0Var);
+    }
+
+    @Override // dd.i
+    protected boolean h(h0 h0Var, long j10, i.b bVar) {
+        byte[] e10 = h0Var.e();
+        t tVar = this.f20629n;
+        if (tVar == null) {
+            t tVar2 = new t(e10, 17);
+            this.f20629n = tVar2;
+            bVar.f20671a = tVar2.g(Arrays.copyOfRange(e10, 9, h0Var.g()), null);
+            return true;
+        } else if ((e10[0] & ByteCompanionObject.MAX_VALUE) == 3) {
+            t.a f10 = r.f(h0Var);
+            t b10 = tVar.b(f10);
+            this.f20629n = b10;
+            this.f20630o = new a(b10, f10);
+            return true;
+        } else if (!o(e10)) {
+            return true;
+        } else {
+            a aVar = this.f20630o;
+            if (aVar != null) {
+                aVar.d(j10);
+                bVar.f20672b = this.f20630o;
+            }
+            oe.a.e(bVar.f20671a);
+            return false;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // dd.i
+    public void l(boolean z10) {
+        super.l(z10);
+        if (z10) {
+            this.f20629n = null;
+            this.f20630o = null;
+        }
     }
 }

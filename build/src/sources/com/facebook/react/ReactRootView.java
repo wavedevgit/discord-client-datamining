@@ -122,7 +122,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
                     i11 = insets2.bottom;
                     int i13 = i10 - i11;
                     ViewGroup.LayoutParams layoutParams = ReactRootView.this.getRootView().getLayoutParams();
-                    db.a.a(layoutParams instanceof WindowManager.LayoutParams);
+                    eb.a.a(layoutParams instanceof WindowManager.LayoutParams);
                     if (((WindowManager.LayoutParams) layoutParams).softInputMode == 48) {
                         i12 = this.mVisibleViewArea.bottom - i13;
                     } else {
@@ -250,7 +250,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
     }
 
     private void attachToReactInstanceManager() {
-        qb.a.c(0L, "attachToReactInstanceManager");
+        rb.a.c(0L, "attachToReactInstanceManager");
         ReactMarker.logMarker(ReactMarkerConstants.ROOT_VIEW_ATTACH_TO_REACT_INSTANCE_MANAGER_START);
         if (getId() != -1) {
             ReactSoftExceptionLogger.logSoftException(TAG, new IllegalViewOperationException("Trying to attach a ReactRootView with an explicit id already set to [" + getId() + "]. React Native uses the id field to track react tags and will overwrite this field. If that is fine, explicitly overwrite the id field to View.NO_ID."));
@@ -258,12 +258,12 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
         try {
             if (!this.mIsAttachedToInstance) {
                 this.mIsAttachedToInstance = true;
-                ((ReactInstanceManager) db.a.c(this.mReactInstanceManager)).attachRootView(this);
+                ((ReactInstanceManager) eb.a.c(this.mReactInstanceManager)).attachRootView(this);
                 getViewTreeObserver().addOnGlobalLayoutListener(getCustomGlobalLayoutListener());
             }
         } finally {
             ReactMarker.logMarker(ReactMarkerConstants.ROOT_VIEW_ATTACH_TO_REACT_INSTANCE_MANAGER_END);
-            qb.a.i(0L);
+            rb.a.i(0L);
         }
     }
 
@@ -283,16 +283,16 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
     private boolean isDispatcherReady() {
         if (hasActiveReactContext() && isViewAttachedToReactInstance()) {
             if (this.mJSTouchDispatcher == null) {
-                p8.a.J(TAG, "Unable to dispatch touch to JS before the dispatcher is available");
+                q8.a.J(TAG, "Unable to dispatch touch to JS before the dispatcher is available");
                 return false;
             } else if (ReactFeatureFlags.dispatchPointerEvents && this.mJSPointerDispatcher == null) {
-                p8.a.J(TAG, "Unable to dispatch pointer events to JS before the dispatcher is available");
+                q8.a.J(TAG, "Unable to dispatch pointer events to JS before the dispatcher is available");
                 return false;
             } else {
                 return true;
             }
         }
-        p8.a.J(TAG, "Unable to dispatch touch to JS as the catalyst instance has not been attached");
+        q8.a.J(TAG, "Unable to dispatch touch to JS as the catalyst instance has not been attached");
         return false;
     }
 
@@ -328,13 +328,13 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
         ReactMarker.logMarker(ReactMarkerConstants.ROOT_VIEW_UPDATE_LAYOUT_SPECS_START);
         if (!hasActiveReactInstance()) {
             ReactMarker.logMarker(ReactMarkerConstants.ROOT_VIEW_UPDATE_LAYOUT_SPECS_END);
-            p8.a.J(TAG, "Unable to update root layout specs for uninitialized ReactInstanceManager");
+            q8.a.J(TAG, "Unable to update root layout specs for uninitialized ReactInstanceManager");
             return;
         }
         boolean isFabric = isFabric();
         if (isFabric && !isRootViewTagSet()) {
             ReactMarker.logMarker(ReactMarkerConstants.ROOT_VIEW_UPDATE_LAYOUT_SPECS_END);
-            p8.a.m(TAG, "Unable to update root layout specs for ReactRootView: no rootViewTag set yet");
+            q8.a.m(TAG, "Unable to update root layout specs for ReactRootView: no rootViewTag set yet");
             return;
         }
         ReactContext currentReactContext = getCurrentReactContext();
@@ -371,7 +371,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
         if (hasActiveReactContext() && isViewAttachedToReactInstance()) {
             if (this.mJSPointerDispatcher == null) {
                 if (ReactFeatureFlags.dispatchPointerEvents) {
-                    p8.a.J(TAG, "Unable to dispatch pointer events to JS before the dispatcher is available");
+                    q8.a.J(TAG, "Unable to dispatch pointer events to JS before the dispatcher is available");
                     return;
                 }
                 return;
@@ -383,13 +383,13 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
             }
             return;
         }
-        p8.a.J(TAG, "Unable to dispatch touch to JS as the catalyst instance has not been attached");
+        q8.a.J(TAG, "Unable to dispatch touch to JS as the catalyst instance has not been attached");
     }
 
     protected void dispatchJSTouchEvent(MotionEvent motionEvent) {
         if (hasActiveReactContext() && isViewAttachedToReactInstance()) {
             if (this.mJSTouchDispatcher == null) {
-                p8.a.J(TAG, "Unable to dispatch touch to JS before the dispatcher is available");
+                q8.a.J(TAG, "Unable to dispatch touch to JS before the dispatcher is available");
                 return;
             }
             EventDispatcher eventDispatcher = UIManagerHelper.getEventDispatcher(getCurrentReactContext(), getUIManagerType());
@@ -399,7 +399,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
             }
             return;
         }
-        p8.a.J(TAG, "Unable to dispatch touch to JS as the catalyst instance has not been attached");
+        q8.a.J(TAG, "Unable to dispatch touch to JS as the catalyst instance has not been attached");
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -408,7 +408,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
             this.mAndroidHWInputDeviceHelper.handleKeyEvent(keyEvent);
             return super.dispatchKeyEvent(keyEvent);
         }
-        p8.a.J(TAG, "Unable to handle key event as the catalyst instance has not been attached");
+        q8.a.J(TAG, "Unable to handle key event as the catalyst instance has not been attached");
         return super.dispatchKeyEvent(keyEvent);
     }
 
@@ -439,7 +439,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
 
     protected void finalize() {
         super.finalize();
-        db.a.b(!this.mIsAttachedToInstance, "The application this ReactRootView was rendering was not unmounted before the ReactRootView was garbage collected. This usually means that your application is leaking large amounts of memory. To solve this, make sure to call ReactRootView#unmountReactApplication in the onDestroy() of your hosting Activity or in the onDestroyView() of your hosting Fragment.");
+        eb.a.b(!this.mIsAttachedToInstance, "The application this ReactRootView was rendering was not unmounted before the ReactRootView was garbage collected. This usually means that your application is leaking large amounts of memory. To solve this, make sure to call ReactRootView#unmountReactApplication in the onDestroy() of your hosting Activity or in the onDestroyView() of your hosting Fragment.");
     }
 
     @Override // com.facebook.react.uimanager.ReactRoot
@@ -462,7 +462,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
 
     @Override // com.facebook.react.uimanager.ReactRoot
     public String getJSModuleName() {
-        return (String) db.a.c(this.mJSModuleName);
+        return (String) eb.a.c(this.mJSModuleName);
     }
 
     public ReactInstanceManager getReactInstanceManager() {
@@ -590,7 +590,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
             super.onFocusChanged(z10, i10, rect);
             return;
         }
-        p8.a.J(TAG, "Unable to handle focus changed event as the catalyst instance has not been attached");
+        q8.a.J(TAG, "Unable to handle focus changed event as the catalyst instance has not been attached");
         super.onFocusChanged(z10, i10, rect);
     }
 
@@ -637,7 +637,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
             r10 = this;
             java.lang.String r0 = "ReactRootView.onMeasure"
             r1 = 0
-            qb.a.c(r1, r0)
+            rb.a.c(r1, r0)
             com.facebook.react.bridge.ReactMarkerConstants r0 = com.facebook.react.bridge.ReactMarkerConstants.ROOT_VIEW_ON_MEASURE_START
             com.facebook.react.bridge.ReactMarker.logMarker(r0)
             int r0 = r10.mWidthMeasureSpec     // Catch: java.lang.Throwable -> L19
@@ -731,12 +731,12 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
             r10.mLastHeight = r12     // Catch: java.lang.Throwable -> L19
             com.facebook.react.bridge.ReactMarkerConstants r11 = com.facebook.react.bridge.ReactMarkerConstants.ROOT_VIEW_ON_MEASURE_END
             com.facebook.react.bridge.ReactMarker.logMarker(r11)
-            qb.a.i(r1)
+            rb.a.i(r1)
             return
         Lbd:
             com.facebook.react.bridge.ReactMarkerConstants r12 = com.facebook.react.bridge.ReactMarkerConstants.ROOT_VIEW_ON_MEASURE_END
             com.facebook.react.bridge.ReactMarker.logMarker(r12)
-            qb.a.i(r1)
+            rb.a.i(r1)
             throw r11
         */
         throw new UnsupportedOperationException("Method not decompiled: com.facebook.react.ReactRootView.onMeasure(int, int):void");
@@ -786,7 +786,7 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
             super.requestChildFocus(view, view2);
             return;
         }
-        p8.a.J(TAG, "Unable to handle child focus changed event as the catalyst instance has not been attached");
+        q8.a.J(TAG, "Unable to handle child focus changed event as the catalyst instance has not been attached");
         super.requestChildFocus(view, view2);
     }
 
@@ -799,12 +799,12 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
 
     @Override // com.facebook.react.uimanager.ReactRoot
     public void runApplication() {
-        qb.a.c(0L, "ReactRootView.runApplication");
+        rb.a.c(0L, "ReactRootView.runApplication");
         try {
             if (hasActiveReactInstance() && isViewAttachedToReactInstance()) {
                 ReactContext currentReactContext = getCurrentReactContext();
                 if (currentReactContext == null) {
-                    qb.a.i(0L);
+                    rb.a.i(0L);
                     return;
                 }
                 CatalystInstance catalystInstance = currentReactContext.getCatalystInstance();
@@ -820,10 +820,10 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
                 }
                 this.mShouldLogContentAppeared = true;
                 ((AppRegistry) catalystInstance.getJSModule(AppRegistry.class)).runApplication(jSModuleName, writableNativeMap);
-                qb.a.i(0L);
+                rb.a.i(0L);
             }
         } finally {
-            qb.a.i(0L);
+            rb.a.i(0L);
         }
     }
 
@@ -904,10 +904,10 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
     }
 
     public void startReactApplication(ReactInstanceManager reactInstanceManager, String str, Bundle bundle) {
-        qb.a.c(0L, "startReactApplication");
+        rb.a.c(0L, "startReactApplication");
         try {
             UiThreadUtil.assertOnUiThread();
-            db.a.b(this.mReactInstanceManager == null, "This root view has already been attached to a catalyst instance manager");
+            eb.a.b(this.mReactInstanceManager == null, "This root view has already been attached to a catalyst instance manager");
             this.mReactInstanceManager = reactInstanceManager;
             this.mJSModuleName = str;
             this.mAppProperties = bundle;
@@ -918,9 +918,9 @@ public class ReactRootView extends FrameLayout implements RootView, ReactRoot {
                 }
                 attachToReactInstanceManager();
             }
-            qb.a.i(0L);
+            rb.a.i(0L);
         } catch (Throwable th2) {
-            qb.a.i(0L);
+            rb.a.i(0L);
             throw th2;
         }
     }

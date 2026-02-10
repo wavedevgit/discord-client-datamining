@@ -1,16 +1,43 @@
 package ub;
+
+import android.os.Build;
+import ub.c;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class e {
+public final class e implements c.b {
+    @Override // ub.c.b
+    public void a(String str) {
+        System.loadLibrary(str);
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    public long f51325a;
+    @Override // ub.c.b
+    public String b(String str) {
+        if (str.startsWith("lib") && str.endsWith(".so")) {
+            return str;
+        }
+        return System.mapLibraryName(str);
+    }
 
-    /* renamed from: b  reason: collision with root package name */
-    public long f51326b;
+    @Override // ub.c.b
+    public String c(String str) {
+        return str.substring(3, str.length() - 3);
+    }
 
-    /* renamed from: c  reason: collision with root package name */
-    public long f51327c;
+    @Override // ub.c.b
+    public String[] d() {
+        String[] strArr = Build.SUPPORTED_ABIS;
+        if (strArr.length > 0) {
+            return strArr;
+        }
+        String str = Build.CPU_ABI2;
+        if (!f.a(str)) {
+            return new String[]{Build.CPU_ABI, str};
+        }
+        return new String[]{Build.CPU_ABI};
+    }
 
-    /* renamed from: d  reason: collision with root package name */
-    public long f51328d;
+    @Override // ub.c.b
+    public void e(String str) {
+        System.load(str);
+    }
 }

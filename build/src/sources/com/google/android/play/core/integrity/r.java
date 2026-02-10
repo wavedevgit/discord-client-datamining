@@ -3,14 +3,14 @@ package com.google.android.play.core.integrity;
 final class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ki.e0 f16206a;
+    private final li.e0 f16346a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ki.e0 f16207b;
+    private final li.e0 f16347b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public r(ki.e0 e0Var, ki.e0 e0Var2) {
-        this.f16206a = e0Var;
-        this.f16207b = e0Var2;
+    public r(li.e0 e0Var, li.e0 e0Var2) {
+        this.f16346a = e0Var;
+        this.f16347b = e0Var2;
     }
 }

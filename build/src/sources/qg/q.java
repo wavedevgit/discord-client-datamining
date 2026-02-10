@@ -1,10 +1,126 @@
 package qg;
 
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.List;
 import java.util.Map;
+import java.util.RandomAccess;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class q extends b {
-    /* JADX INFO: Access modifiers changed from: package-private */
+public abstract class q extends s implements Serializable {
+
+    /* renamed from: i */
+    private transient Map f46176i;
+
+    /* renamed from: o */
+    private transient int f46177o;
+
     public q(Map map) {
-        super(map);
+        if (map.isEmpty()) {
+            this.f46176i = map;
+            return;
+        }
+        throw new IllegalArgumentException();
+    }
+
+    public static /* synthetic */ int i(q qVar) {
+        int i10 = qVar.f46177o;
+        qVar.f46177o = i10 + 1;
+        return i10;
+    }
+
+    public static /* synthetic */ int j(q qVar) {
+        int i10 = qVar.f46177o;
+        qVar.f46177o = i10 - 1;
+        return i10;
+    }
+
+    public static /* synthetic */ int k(q qVar, int i10) {
+        int i11 = qVar.f46177o + i10;
+        qVar.f46177o = i11;
+        return i11;
+    }
+
+    public static /* synthetic */ int l(q qVar, int i10) {
+        int i11 = qVar.f46177o - i10;
+        qVar.f46177o = i11;
+        return i11;
+    }
+
+    public static /* synthetic */ Map o(q qVar) {
+        return qVar.f46176i;
+    }
+
+    public static /* synthetic */ void p(q qVar, Object obj) {
+        Object obj2;
+        Map map = qVar.f46176i;
+        map.getClass();
+        try {
+            obj2 = map.remove(obj);
+        } catch (ClassCastException | NullPointerException unused) {
+            obj2 = null;
+        }
+        Collection collection = (Collection) obj2;
+        if (collection != null) {
+            int size = collection.size();
+            collection.clear();
+            qVar.f46177o -= size;
+        }
+    }
+
+    @Override // qg.c1
+    public final boolean d(Object obj, Object obj2) {
+        Collection collection = (Collection) this.f46176i.get(obj);
+        if (collection == null) {
+            Collection g10 = g();
+            if (g10.add(obj2)) {
+                this.f46177o++;
+                this.f46176i.put(obj, g10);
+                return true;
+            }
+            throw new AssertionError("New Collection violated the Collection spec");
+        } else if (collection.add(obj2)) {
+            this.f46177o++;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override // qg.s
+    final Map e() {
+        return new i(this, this.f46176i);
+    }
+
+    @Override // qg.s
+    final Set f() {
+        return new k(this, this.f46176i);
+    }
+
+    public abstract Collection g();
+
+    public abstract Collection h(Object obj, Collection collection);
+
+    public final Collection m(Object obj) {
+        Collection collection = (Collection) this.f46176i.get(obj);
+        if (collection == null) {
+            collection = g();
+        }
+        return h(obj, collection);
+    }
+
+    public final List n(Object obj, List list, n nVar) {
+        if (list instanceof RandomAccess) {
+            return new l(this, obj, list, nVar);
+        }
+        return new p(this, obj, list, nVar);
+    }
+
+    public final void q() {
+        for (Collection collection : this.f46176i.values()) {
+            collection.clear();
+        }
+        this.f46176i.clear();
+        this.f46177o = 0;
     }
 }

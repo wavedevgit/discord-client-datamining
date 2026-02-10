@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var12 = metroImportDefault;
+    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var12;
+    var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -24,7 +24,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var9 = var3.StyleSheet;
     var8 = var3.Pressable;
     var3 = 2;
     var3 = var5[var3];
@@ -35,12 +34,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = 3;
     var6 = var5[var3];
-    var7 = var12.bind(var0)(var6);
+    var7 = var10.bind(var0)(var6);
     var6 = var7.createAnimatedComponent;
     var6 = var6.bind(var7)(var8);
     var _closure1_slot5 = var6;
     var3 = var5[var3];
-    var7 = var12.bind(var0)(var3);
+    var7 = var10.bind(var0)(var3);
     var6 = var7.createAnimatedComponent;
     var3 = 4;
     var3 = var5[var3];
@@ -64,23 +63,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'width': '100%',
         'height': '100%'
     };
-    var10 = 'center';
-    var11 = 6;
-    var11 = var5[var11];
-    var11 = var12.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.VOICE_VIDEO_VIDEO_TILE_BACKGROUND;
-    var8.backgroundColor = var11;
+    var9 = 6;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.colors;
+    var9 = var9.VOICE_VIDEO_VIDEO_TILE_BACKGROUND;
+    var8.backgroundColor = var9;
     var3.roundedCard = var8;
-    var8 = {};
-    var14 = var9.absoluteFillObject;
-    var15 = var8;
-    var9 = copyDataProperties(var15, var14);
-    var9 = 'alignItems';
-    var8[var9] = var10;
-    var9 = 'justifyContent';
-    var8[var9] = var10;
-    var3.streamPreviewImageContainer = var8;
     var8 = {
         'position': 'absolute',
         'width': '100%',
@@ -107,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/shared/VoicePanelStreamPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun92261: for (var _fun92261_ip = 0;;) switch (_fun92261_ip) {
+        _fun92262: for (var _fun92262_ip = 0;;) switch (_fun92262_ip) {
             case 0:
                 var1 = arg0;
                 var6 = var1.mode;
@@ -128,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9 == var7;
                 var4 = undefined;
                 if (var1) {
-                    _fun92261_ip = 85;
-                    continue _fun92261
+                    _fun92262_ip = 85;
+                    continue _fun92262
                 }
             case 80:
                 var4 = var7.guildId;
@@ -137,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9 == var7;
                 var2 = undefined;
                 if (var1) {
-                    _fun92261_ip = 99;
-                    continue _fun92261
+                    _fun92262_ip = 99;
+                    continue _fun92262
                 }
             case 94:
                 var2 = var7.channelId;
@@ -146,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9 == var7;
                 var1 = undefined;
                 if (var8) {
-                    _fun92261_ip = 114;
-                    continue _fun92261
+                    _fun92262_ip = 114;
+                    continue _fun92262
                 }
             case 108:
                 var1 = var7.ownerId;
@@ -161,13 +150,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var8.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() {
-                    _fun92262: for (var _fun92262_ip = 0;;) switch (_fun92262_ip) {
+                    _fun92263: for (var _fun92263_ip = 0;;) switch (_fun92263_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun92262_ip = 87;
-                                continue _fun92262
+                                _fun92263_ip = 87;
+                                continue _fun92263
                             }
                         case 13:
                             var0 = {};
@@ -184,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = 1;
                             var5 = 'pip';
                             if (!(var5 === var6)) {
-                                _fun92262_ip = 71;
-                                continue _fun92262
+                                _fun92263_ip = 71;
+                                continue _fun92263
                             }
                         case 69:
                             var2 = 0;
@@ -193,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure1_slot7;
                             var1 = var3.bind(var4)(var2, var1);
                             var0.opacity = var1;
-                            _fun92262_ip = 99;
-                            continue _fun92262;
+                            _fun92263_ip = 99;
+                            continue _fun92263;
                         case 87:
                             var1 = {};
                             var2 = 1;
@@ -237,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var4.layout = var13;
                 if (!(var9 == var7)) {
-                    _fun92261_ip = 328;
-                    continue _fun92261
+                    _fun92262_ip = 328;
+                    continue _fun92262
                 }
             case 306:
                 var16 = _closure1_slot1;
@@ -246,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = 9;
                 var14 = var17[var14];
                 var14 = var16.bind(var3)(var14);
-                _fun92261_ip = 337;
-                continue _fun92261;
+                _fun92262_ip = 337;
+                continue _fun92262;
             case 328:
                 var16 = {};
                 var16.uri = var7;
@@ -255,13 +244,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 337:
                 var4.source = var14;
                 if (!(var9 == var7)) {
-                    _fun92261_ip = 353;
-                    continue _fun92261
+                    _fun92262_ip = 353;
+                    continue _fun92262
                 }
             case 345:
                 var14 = var15.streamPreviewImagePlaceholder;
-                _fun92261_ip = 359;
-                continue _fun92261;
+                _fun92262_ip = 359;
+                continue _fun92262;
             case 353:
                 var14 = var15.streamPreviewImage;
             case 359:
@@ -269,8 +258,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9 != var7;
                 var7 = 'contain';
                 if (!var9) {
-                    _fun92261_ip = 378;
-                    continue _fun92261
+                    _fun92262_ip = 378;
+                    continue _fun92262
                 }
             case 374:
                 var7 = 'cover';
@@ -320,4 +309,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.VoicePanelStreamPreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3721, 4084, 1297, 671, 8753, 4097, 8751, 6525, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3721, 4084, 1297, 671, 8731, 4097, 8729, 6526, 1234, 2]);

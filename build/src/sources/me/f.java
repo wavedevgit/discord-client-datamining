@@ -1,120 +1,66 @@
 package me;
 
-import java.nio.ByteBuffer;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import com.google.android.exoplayer2.upstream.DataSource;
+import java.util.ArrayList;
+import oe.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class f implements d {
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final f f37122c = new f(Collections.EMPTY_MAP);
+public abstract class f implements DataSource {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f37123a;
+    private final boolean f36987a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f37124b;
+    private final ArrayList f36988b = new ArrayList(1);
 
-    public f(Map map) {
-        this.f37124b = Collections.unmodifiableMap(map);
+    /* renamed from: c  reason: collision with root package name */
+    private int f36989c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private com.google.android.exoplayer2.upstream.a f36990d;
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public f(boolean z10) {
+        this.f36987a = z10;
     }
 
-    private static void e(HashMap hashMap, Map map) {
-        for (Map.Entry entry : map.entrySet()) {
-            hashMap.put((String) entry.getKey(), i(entry.getValue()));
-        }
-    }
-
-    private static Map f(Map map, e eVar) {
-        HashMap hashMap = new HashMap(map);
-        k(hashMap, eVar.c());
-        e(hashMap, eVar.b());
-        return hashMap;
-    }
-
-    private static byte[] i(Object obj) {
-        if (obj instanceof Long) {
-            return ByteBuffer.allocate(8).putLong(((Long) obj).longValue()).array();
-        }
-        if (obj instanceof String) {
-            return ((String) obj).getBytes(mi.d.f37219c);
-        }
-        if (obj instanceof byte[]) {
-            return (byte[]) obj;
-        }
-        throw new IllegalArgumentException();
-    }
-
-    private static boolean j(Map map, Map map2) {
-        if (map.size() != map2.size()) {
-            return false;
-        }
-        for (Map.Entry entry : map.entrySet()) {
-            if (!Arrays.equals((byte[]) entry.getValue(), (byte[]) map2.get(entry.getKey()))) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private static void k(HashMap hashMap, List list) {
-        for (int i10 = 0; i10 < list.size(); i10++) {
-            hashMap.remove(list.get(i10));
+    @Override // com.google.android.exoplayer2.upstream.DataSource
+    public final void i(c0 c0Var) {
+        oe.a.e(c0Var);
+        if (!this.f36988b.contains(c0Var)) {
+            this.f36988b.add(c0Var);
+            this.f36989c++;
         }
     }
 
-    @Override // me.d
-    public final long a(String str, long j10) {
-        byte[] bArr = (byte[]) this.f37124b.get(str);
-        if (bArr != null) {
-            return ByteBuffer.wrap(bArr).getLong();
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void o(int i10) {
+        com.google.android.exoplayer2.upstream.a aVar = (com.google.android.exoplayer2.upstream.a) w0.j(this.f36990d);
+        for (int i11 = 0; i11 < this.f36989c; i11++) {
+            ((c0) this.f36988b.get(i11)).g(this, aVar, this.f36987a, i10);
         }
-        return j10;
     }
 
-    @Override // me.d
-    public final String b(String str, String str2) {
-        byte[] bArr = (byte[]) this.f37124b.get(str);
-        if (bArr != null) {
-            return new String(bArr, mi.d.f37219c);
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void p() {
+        com.google.android.exoplayer2.upstream.a aVar = (com.google.android.exoplayer2.upstream.a) w0.j(this.f36990d);
+        for (int i10 = 0; i10 < this.f36989c; i10++) {
+            ((c0) this.f36988b.get(i10)).c(this, aVar, this.f36987a);
         }
-        return str2;
+        this.f36990d = null;
     }
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void q(com.google.android.exoplayer2.upstream.a aVar) {
+        for (int i10 = 0; i10 < this.f36989c; i10++) {
+            ((c0) this.f36988b.get(i10)).i(this, aVar, this.f36987a);
         }
-        if (obj != null && f.class == obj.getClass()) {
-            return j(this.f37124b, ((f) obj).f37124b);
-        }
-        return false;
     }
 
-    public f g(e eVar) {
-        Map f10 = f(this.f37124b, eVar);
-        if (j(this.f37124b, f10)) {
-            return this;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void r(com.google.android.exoplayer2.upstream.a aVar) {
+        this.f36990d = aVar;
+        for (int i10 = 0; i10 < this.f36989c; i10++) {
+            ((c0) this.f36988b.get(i10)).h(this, aVar, this.f36987a);
         }
-        return new f(f10);
-    }
-
-    public Set h() {
-        return this.f37124b.entrySet();
-    }
-
-    public int hashCode() {
-        if (this.f37123a == 0) {
-            int i10 = 0;
-            for (Map.Entry entry : this.f37124b.entrySet()) {
-                i10 += Arrays.hashCode((byte[]) entry.getValue()) ^ ((String) entry.getKey()).hashCode();
-            }
-            this.f37123a = i10;
-        }
-        return this.f37123a;
     }
 }

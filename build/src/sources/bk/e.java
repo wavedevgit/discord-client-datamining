@@ -1,136 +1,104 @@
 package bk;
 
-import gf.o;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.o;
+import androidx.lifecycle.w;
+import com.google.android.gms.tasks.Task;
+import hf.i;
+import hf.q;
+import java.io.Closeable;
+import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
-import pg.xe;
-import pg.ye;
+import java.util.concurrent.atomic.AtomicBoolean;
+import pg.jb;
+import zg.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class e {
+public abstract class e implements Closeable, o {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final int f6821a;
+    /* renamed from: q  reason: collision with root package name */
+    private static final i f7080q = new i("MobileVisionBase", "");
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f6822b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f6823c;
+    /* renamed from: r  reason: collision with root package name */
+    public static final /* synthetic */ int f7081r = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f6824d;
+    private final AtomicBoolean f7082d = new AtomicBoolean(false);
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f6825e;
+    private final uj.f f7083e;
 
-    /* renamed from: f  reason: collision with root package name */
-    private final float f6826f;
+    /* renamed from: i  reason: collision with root package name */
+    private final zg.b f7084i;
 
-    /* renamed from: g  reason: collision with root package name */
-    private final Executor f6827g;
+    /* renamed from: o  reason: collision with root package name */
+    private final Executor f7085o;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class a {
+    /* renamed from: p  reason: collision with root package name */
+    private final Task f7086p;
 
-        /* renamed from: a  reason: collision with root package name */
-        private int f6828a = 1;
+    public e(uj.f fVar, Executor executor) {
+        this.f7083e = fVar;
+        zg.b bVar = new zg.b();
+        this.f7084i = bVar;
+        this.f7085o = executor;
+        fVar.c();
+        this.f7086p = fVar.a(executor, new Callable() { // from class: bk.g
+            @Override // java.util.concurrent.Callable
+            public final Object call() {
+                int i10 = e.f7081r;
+                return null;
+            }
+        }, bVar.b()).e(new zg.f() { // from class: bk.h
+            @Override // zg.f
+            public final void onFailure(Exception exc) {
+                e.f7080q.d("MobileVisionBase", "Error preloading model resource", exc);
+            }
+        });
+    }
 
-        /* renamed from: b  reason: collision with root package name */
-        private int f6829b = 1;
-
-        /* renamed from: c  reason: collision with root package name */
-        private int f6830c = 1;
-
-        /* renamed from: d  reason: collision with root package name */
-        private int f6831d = 1;
-
-        /* renamed from: e  reason: collision with root package name */
-        private boolean f6832e = false;
-
-        /* renamed from: f  reason: collision with root package name */
-        private float f6833f = 0.1f;
-
-        /* renamed from: g  reason: collision with root package name */
-        private Executor f6834g;
-
-        public e a() {
-            return new e(this.f6828a, this.f6829b, this.f6830c, this.f6831d, this.f6832e, this.f6833f, this.f6834g, null);
-        }
-
-        public a b(int i10) {
-            this.f6828a = i10;
-            return this;
-        }
-
-        public a c(float f10) {
-            this.f6833f = f10;
-            return this;
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    @w(Lifecycle.a.ON_DESTROY)
+    public synchronized void close() {
+        if (!this.f7082d.getAndSet(true)) {
+            this.f7084i.a();
+            this.f7083e.e(this.f7085o);
         }
     }
 
-    /* synthetic */ e(int i10, int i11, int i12, int i13, boolean z10, float f10, Executor executor, g gVar) {
-        this.f6821a = i10;
-        this.f6822b = i11;
-        this.f6823c = i12;
-        this.f6824d = i13;
-        this.f6825e = z10;
-        this.f6826f = f10;
-        this.f6827g = executor;
-    }
-
-    public final float a() {
-        return this.f6826f;
-    }
-
-    public final int b() {
-        return this.f6823c;
-    }
-
-    public final int c() {
-        return this.f6822b;
-    }
-
-    public final int d() {
-        return this.f6821a;
-    }
-
-    public final int e() {
-        return this.f6824d;
-    }
-
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
+    public synchronized Task g(final ak.a aVar) {
+        q.m(aVar, "InputImage can not be null");
+        if (this.f7082d.get()) {
+            return m.e(new qj.a("This detector is already closed!", 14));
+        } else if (aVar.l() >= 32 && aVar.h() >= 32) {
+            return this.f7083e.a(this.f7085o, new Callable() { // from class: bk.f
+                @Override // java.util.concurrent.Callable
+                public final Object call() {
+                    return e.this.m(aVar);
+                }
+            }, this.f7084i.b());
+        } else {
+            return m.e(new qj.a("InputImage width and height should be at least 32!", 3));
         }
-        if (!(obj instanceof e)) {
-            return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ Object m(ak.a aVar) {
+        jb n10 = jb.n("detectorTaskWithResource#run");
+        n10.g();
+        try {
+            Object i10 = this.f7083e.i(aVar);
+            n10.close();
+            return i10;
+        } catch (Throwable th2) {
+            try {
+                n10.close();
+            } catch (Throwable th3) {
+                try {
+                    Throwable.class.getDeclaredMethod("addSuppressed", Throwable.class).invoke(th2, th3);
+                } catch (Exception unused) {
+                }
+            }
+            throw th2;
         }
-        e eVar = (e) obj;
-        if (Float.floatToIntBits(this.f6826f) == Float.floatToIntBits(eVar.f6826f) && o.a(Integer.valueOf(this.f6821a), Integer.valueOf(eVar.f6821a)) && o.a(Integer.valueOf(this.f6822b), Integer.valueOf(eVar.f6822b)) && o.a(Integer.valueOf(this.f6824d), Integer.valueOf(eVar.f6824d)) && o.a(Boolean.valueOf(this.f6825e), Boolean.valueOf(eVar.f6825e)) && o.a(Integer.valueOf(this.f6823c), Integer.valueOf(eVar.f6823c)) && o.a(this.f6827g, eVar.f6827g)) {
-            return true;
-        }
-        return false;
-    }
-
-    public final Executor f() {
-        return this.f6827g;
-    }
-
-    public final boolean g() {
-        return this.f6825e;
-    }
-
-    public int hashCode() {
-        return o.b(Integer.valueOf(Float.floatToIntBits(this.f6826f)), Integer.valueOf(this.f6821a), Integer.valueOf(this.f6822b), Integer.valueOf(this.f6824d), Boolean.valueOf(this.f6825e), Integer.valueOf(this.f6823c), this.f6827g);
-    }
-
-    public String toString() {
-        xe a10 = ye.a("FaceDetectorOptions");
-        a10.b("landmarkMode", this.f6821a);
-        a10.b("contourMode", this.f6822b);
-        a10.b("classificationMode", this.f6823c);
-        a10.b("performanceMode", this.f6824d);
-        a10.d("trackingEnabled", this.f6825e);
-        a10.a("minFaceSize", this.f6826f);
-        return a10.toString();
     }
 }

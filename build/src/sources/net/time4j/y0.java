@@ -1,6 +1,6 @@
 package net.time4j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum y0 implements rt.n, rt.v {
+public enum y0 implements st.n, st.v {
     MONDAY,
     TUESDAY,
     WEDNESDAY,
@@ -11,16 +11,16 @@ public enum y0 implements rt.n, rt.v {
     
 
     /* renamed from: s  reason: collision with root package name */
-    private static final y0[] f39715s = values();
+    private static final y0[] f38807s = values();
 
     public static y0 h(int i10) {
         if (i10 >= 1 && i10 <= 7) {
-            return f39715s[i10 - 1];
+            return f38807s[i10 - 1];
         }
         throw new IllegalArgumentException("Out of range: " + i10);
     }
 
-    @Override // rt.v
+    @Override // st.v
     /* renamed from: a */
     public f0 apply(f0 f0Var) {
         return (f0) f0Var.E(f0.G, this);
@@ -38,10 +38,10 @@ public enum y0 implements rt.n, rt.v {
         return h(((ordinal() + ((i10 % 7) + 7)) % 7) + 1);
     }
 
-    @Override // rt.n
+    @Override // st.n
     /* renamed from: g */
-    public boolean test(pt.a aVar) {
-        if (pt.b.c(aVar.f(), aVar.r(), aVar.g()) == d()) {
+    public boolean test(qt.a aVar) {
+        if (qt.b.c(aVar.f(), aVar.r(), aVar.g()) == d()) {
             return true;
         }
         return false;

@@ -1,75 +1,81 @@
 package ne;
+
+import java.util.Comparator;
+import java.util.TreeSet;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class h {
+public final class h implements com.google.android.exoplayer2.upstream.cache.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f38973a;
+    private final long f38184a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f38974b;
+    private final TreeSet f38185b = new TreeSet(new Comparator() { // from class: ne.g
+        @Override // java.util.Comparator
+        public final int compare(Object obj, Object obj2) {
+            int h10;
+            h10 = h.h((c) obj, (c) obj2);
+            return h10;
+        }
+    });
 
-    public h() {
-        this(e.f38953a);
+    /* renamed from: c  reason: collision with root package name */
+    private long f38186c;
+
+    public h(long j10) {
+        this.f38184a = j10;
     }
 
-    public synchronized void a() {
-        while (!this.f38974b) {
-            wait();
+    /* JADX INFO: Access modifiers changed from: private */
+    public static int h(c cVar, c cVar2) {
+        long j10 = cVar.f38178q;
+        long j11 = cVar2.f38178q;
+        if (j10 - j11 == 0) {
+            return cVar.compareTo(cVar2);
+        }
+        if (j10 < j11) {
+            return -1;
+        }
+        return 1;
+    }
+
+    private void i(com.google.android.exoplayer2.upstream.cache.a aVar, long j10) {
+        while (this.f38186c + j10 > this.f38184a && !this.f38185b.isEmpty()) {
+            aVar.e((c) this.f38185b.first());
         }
     }
 
-    public synchronized boolean b(long j10) {
-        if (j10 <= 0) {
-            return this.f38974b;
-        }
-        long b10 = this.f38973a.b();
-        long j11 = j10 + b10;
-        if (j11 < b10) {
-            a();
-        } else {
-            while (!this.f38974b && b10 < j11) {
-                wait(j11 - b10);
-                b10 = this.f38973a.b();
-            }
-        }
-        return this.f38974b;
-    }
-
-    public synchronized void c() {
-        boolean z10 = false;
-        while (!this.f38974b) {
-            try {
-                wait();
-            } catch (InterruptedException unused) {
-                z10 = true;
-            }
-        }
-        if (z10) {
-            Thread.currentThread().interrupt();
-        }
-    }
-
-    public synchronized boolean d() {
-        boolean z10;
-        z10 = this.f38974b;
-        this.f38974b = false;
-        return z10;
-    }
-
-    public synchronized boolean e() {
-        return this.f38974b;
-    }
-
-    public synchronized boolean f() {
-        if (this.f38974b) {
-            return false;
-        }
-        this.f38974b = true;
-        notifyAll();
+    @Override // com.google.android.exoplayer2.upstream.cache.d
+    public boolean a() {
         return true;
     }
 
-    public h(e eVar) {
-        this.f38973a = eVar;
+    @Override // com.google.android.exoplayer2.upstream.cache.a.b
+    public void b(com.google.android.exoplayer2.upstream.cache.a aVar, c cVar) {
+        this.f38185b.remove(cVar);
+        this.f38186c -= cVar.f38175i;
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.cache.a.b
+    public void c(com.google.android.exoplayer2.upstream.cache.a aVar, c cVar, c cVar2) {
+        b(aVar, cVar);
+        f(aVar, cVar2);
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.cache.d
+    public void d(com.google.android.exoplayer2.upstream.cache.a aVar, String str, long j10, long j11) {
+        if (j11 != -1) {
+            i(aVar, j11);
+        }
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.cache.a.b
+    public void f(com.google.android.exoplayer2.upstream.cache.a aVar, c cVar) {
+        this.f38185b.add(cVar);
+        this.f38186c += cVar.f38175i;
+        i(aVar, 0L);
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.cache.d
+    public void e() {
     }
 }

@@ -6,18 +6,18 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f10548a = new d();
+    public static final d f10688a = new d();
 
     private d() {
     }
 
-    public static final za.d a(int i10, boolean z10, boolean z11) {
+    public static final ab.d a(int i10, boolean z10, boolean z11) {
         try {
             Class cls = Integer.TYPE;
             Class cls2 = Boolean.TYPE;
             Object newInstance = NativeJpegTranscoderFactory.class.getConstructor(cls, cls2, cls2).newInstance(Integer.valueOf(i10), Boolean.valueOf(z10), Boolean.valueOf(z11));
             Intrinsics.checkNotNull(newInstance, "null cannot be cast to non-null type com.facebook.imagepipeline.transcoder.ImageTranscoderFactory");
-            return (za.d) newInstance;
+            return (ab.d) newInstance;
         } catch (ClassNotFoundException e10) {
             throw new RuntimeException("Dependency ':native-imagetranscoder' is needed to use the default native image transcoder.", e10);
         } catch (IllegalAccessException e11) {

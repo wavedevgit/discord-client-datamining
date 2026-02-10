@@ -5,12 +5,12 @@ import android.content.pm.ApplicationInfo;
 import android.os.Build;
 import com.google.firebase.FirebaseCommonRegistrar;
 import com.google.firebase.components.ComponentRegistrar;
-import dj.f;
+import ej.f;
 import java.util.ArrayList;
 import java.util.List;
-import nj.c;
-import nj.e;
-import nj.h;
+import oj.c;
+import oj.e;
+import oj.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class FirebaseCommonRegistrar implements ComponentRegistrar {
     public static /* synthetic */ String a(Context context) {
@@ -68,26 +68,26 @@ public class FirebaseCommonRegistrar implements ComponentRegistrar {
         arrayList.add(h.b("device-name", e(Build.PRODUCT)));
         arrayList.add(h.b("device-model", e(Build.DEVICE)));
         arrayList.add(h.b("device-brand", e(Build.BRAND)));
-        arrayList.add(h.c("android-target-sdk", new h.a() { // from class: ri.f
-            @Override // nj.h.a
+        arrayList.add(h.c("android-target-sdk", new h.a() { // from class: si.f
+            @Override // oj.h.a
             public final String a(Object obj) {
                 return FirebaseCommonRegistrar.c((Context) obj);
             }
         }));
-        arrayList.add(h.c("android-min-sdk", new h.a() { // from class: ri.g
-            @Override // nj.h.a
+        arrayList.add(h.c("android-min-sdk", new h.a() { // from class: si.g
+            @Override // oj.h.a
             public final String a(Object obj) {
                 return FirebaseCommonRegistrar.b((Context) obj);
             }
         }));
-        arrayList.add(h.c("android-platform", new h.a() { // from class: ri.h
-            @Override // nj.h.a
+        arrayList.add(h.c("android-platform", new h.a() { // from class: si.h
+            @Override // oj.h.a
             public final String a(Object obj) {
                 return FirebaseCommonRegistrar.d((Context) obj);
             }
         }));
-        arrayList.add(h.c("android-installer", new h.a() { // from class: ri.i
-            @Override // nj.h.a
+        arrayList.add(h.c("android-installer", new h.a() { // from class: si.i
+            @Override // oj.h.a
             public final String a(Object obj) {
                 return FirebaseCommonRegistrar.a((Context) obj);
             }

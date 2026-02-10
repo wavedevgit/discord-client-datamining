@@ -1,0 +1,273 @@
+package oa;
+
+import com.facebook.cache.disk.DiskCacheConfig;
+import com.facebook.common.internal.Supplier;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.concurrent.Executor;
+import kotlin.Lazy;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
+import oa.j;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class j implements Supplier {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final o f40352a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final wa.y f40353b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final n f40354c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final ma.s f40355d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f40356e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final DiskCacheConfig f40357f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final DiskCacheConfig f40358g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final Map f40359h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Lazy f40360i;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final Lazy f40361a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final Lazy f40362b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final Lazy f40363c;
+
+        /* renamed from: d  reason: collision with root package name */
+        private final Lazy f40364d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private final Lazy f40365e;
+
+        /* renamed from: f  reason: collision with root package name */
+        private final Lazy f40366f;
+
+        a(final j jVar) {
+            rr.o oVar = rr.o.f49209d;
+            this.f40361a = rr.l.b(oVar, new Function0() { // from class: oa.d
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    k8.j p10;
+                    p10 = j.a.p(j.this);
+                    return p10;
+                }
+            });
+            this.f40362b = rr.l.b(oVar, new Function0() { // from class: oa.e
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    ma.j o10;
+                    o10 = j.a.o(j.a.this, jVar);
+                    return o10;
+                }
+            });
+            this.f40363c = rr.l.b(oVar, new Function0() { // from class: oa.f
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    k8.j r10;
+                    r10 = j.a.r(j.this);
+                    return r10;
+                }
+            });
+            this.f40364d = rr.l.b(oVar, new Function0() { // from class: oa.g
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    ma.j q10;
+                    q10 = j.a.q(j.a.this, jVar);
+                    return q10;
+                }
+            });
+            this.f40365e = rr.l.b(oVar, new Function0() { // from class: oa.h
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    Map k10;
+                    k10 = j.a.k(j.this, this);
+                    return k10;
+                }
+            });
+            this.f40366f = rr.l.b(oVar, new Function0() { // from class: oa.i
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    p8.f j10;
+                    j10 = j.a.j(j.a.this, jVar);
+                    return j10;
+                }
+            });
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final p8.f j(a this$0, j this$1) {
+            Intrinsics.checkNotNullParameter(this$0, "this$0");
+            Intrinsics.checkNotNullParameter(this$1, "this$1");
+            Map l10 = this$0.l();
+            LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.collections.o0.e(l10.size()));
+            for (Map.Entry entry : l10.entrySet()) {
+                Object key = entry.getKey();
+                k8.j jVar = (k8.j) entry.getValue();
+                s8.i i10 = this$1.f40353b.i(this$1.f40356e);
+                Intrinsics.checkNotNullExpressionValue(i10, "getPooledByteBufferFactory(...)");
+                s8.l j10 = this$1.f40353b.j();
+                Intrinsics.checkNotNullExpressionValue(j10, "getPooledByteStreams(...)");
+                Executor f10 = this$1.f40354c.f();
+                Intrinsics.checkNotNullExpressionValue(f10, "forLocalStorageRead(...)");
+                Executor b10 = this$1.f40354c.b();
+                Intrinsics.checkNotNullExpressionValue(b10, "forLocalStorageWrite(...)");
+                linkedHashMap.put(key, new ma.j(jVar, i10, j10, f10, b10, this$1.f40355d));
+            }
+            return p8.f.a(linkedHashMap);
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final Map k(j this$0, a this$1) {
+            Intrinsics.checkNotNullParameter(this$0, "this$0");
+            Intrinsics.checkNotNullParameter(this$1, "this$1");
+            Map map = this$0.f40359h;
+            if (map != null) {
+                LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.collections.o0.e(map.size()));
+                for (Map.Entry entry : map.entrySet()) {
+                    linkedHashMap.put(entry.getKey(), this$0.f40352a.a((DiskCacheConfig) entry.getValue()));
+                }
+                return linkedHashMap;
+            }
+            return kotlin.collections.o0.i();
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final ma.j o(a this$0, j this$1) {
+            Intrinsics.checkNotNullParameter(this$0, "this$0");
+            Intrinsics.checkNotNullParameter(this$1, "this$1");
+            k8.j m10 = this$0.m();
+            s8.i i10 = this$1.f40353b.i(this$1.f40356e);
+            Intrinsics.checkNotNullExpressionValue(i10, "getPooledByteBufferFactory(...)");
+            s8.l j10 = this$1.f40353b.j();
+            Intrinsics.checkNotNullExpressionValue(j10, "getPooledByteStreams(...)");
+            Executor f10 = this$1.f40354c.f();
+            Intrinsics.checkNotNullExpressionValue(f10, "forLocalStorageRead(...)");
+            Executor b10 = this$1.f40354c.b();
+            Intrinsics.checkNotNullExpressionValue(b10, "forLocalStorageWrite(...)");
+            return new ma.j(m10, i10, j10, f10, b10, this$1.f40355d);
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final k8.j p(j this$0) {
+            Intrinsics.checkNotNullParameter(this$0, "this$0");
+            return this$0.f40352a.a(this$0.f40357f);
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final ma.j q(a this$0, j this$1) {
+            Intrinsics.checkNotNullParameter(this$0, "this$0");
+            Intrinsics.checkNotNullParameter(this$1, "this$1");
+            k8.j n10 = this$0.n();
+            s8.i i10 = this$1.f40353b.i(this$1.f40356e);
+            Intrinsics.checkNotNullExpressionValue(i10, "getPooledByteBufferFactory(...)");
+            s8.l j10 = this$1.f40353b.j();
+            Intrinsics.checkNotNullExpressionValue(j10, "getPooledByteStreams(...)");
+            Executor f10 = this$1.f40354c.f();
+            Intrinsics.checkNotNullExpressionValue(f10, "forLocalStorageRead(...)");
+            Executor b10 = this$1.f40354c.b();
+            Intrinsics.checkNotNullExpressionValue(b10, "forLocalStorageWrite(...)");
+            return new ma.j(n10, i10, j10, f10, b10, this$1.f40355d);
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final k8.j r(j this$0) {
+            Intrinsics.checkNotNullParameter(this$0, "this$0");
+            return this$0.f40352a.a(this$0.f40358g);
+        }
+
+        @Override // oa.b
+        public ma.j a() {
+            return (ma.j) this.f40364d.getValue();
+        }
+
+        @Override // oa.b
+        public ma.j b() {
+            return (ma.j) this.f40362b.getValue();
+        }
+
+        @Override // oa.b
+        public p8.f c() {
+            Object value = this.f40366f.getValue();
+            Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
+            return (p8.f) value;
+        }
+
+        public Map l() {
+            return (Map) this.f40365e.getValue();
+        }
+
+        public k8.j m() {
+            return (k8.j) this.f40361a.getValue();
+        }
+
+        public k8.j n() {
+            return (k8.j) this.f40363c.getValue();
+        }
+    }
+
+    public j(o fileCacheFactory, wa.y poolFactory, n executorSupplier, ma.s imageCacheStatsTracker, int i10, DiskCacheConfig mainDiskCacheConfig, DiskCacheConfig smallImageDiskCacheConfig, Map map) {
+        Intrinsics.checkNotNullParameter(fileCacheFactory, "fileCacheFactory");
+        Intrinsics.checkNotNullParameter(poolFactory, "poolFactory");
+        Intrinsics.checkNotNullParameter(executorSupplier, "executorSupplier");
+        Intrinsics.checkNotNullParameter(imageCacheStatsTracker, "imageCacheStatsTracker");
+        Intrinsics.checkNotNullParameter(mainDiskCacheConfig, "mainDiskCacheConfig");
+        Intrinsics.checkNotNullParameter(smallImageDiskCacheConfig, "smallImageDiskCacheConfig");
+        this.f40352a = fileCacheFactory;
+        this.f40353b = poolFactory;
+        this.f40354c = executorSupplier;
+        this.f40355d = imageCacheStatsTracker;
+        this.f40356e = i10;
+        this.f40357f = mainDiskCacheConfig;
+        this.f40358g = smallImageDiskCacheConfig;
+        this.f40359h = map;
+        this.f40360i = rr.l.b(rr.o.f49209d, new Function0() { // from class: oa.c
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                j.a j10;
+                j10 = j.j(j.this);
+                return j10;
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final a j(j this$0) {
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        return new a(this$0);
+    }
+
+    private final b l() {
+        return (b) this.f40360i.getValue();
+    }
+
+    @Override // com.facebook.common.internal.Supplier
+    /* renamed from: k */
+    public b get() {
+        return l();
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public j(o fileCacheFactory, r config) {
+        this(fileCacheFactory, config.t(), config.H(), config.B(), config.u(), config.d(), config.j(), config.i());
+        Intrinsics.checkNotNullParameter(fileCacheFactory, "fileCacheFactory");
+        Intrinsics.checkNotNullParameter(config, "config");
+    }
+}

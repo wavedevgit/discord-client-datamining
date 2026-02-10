@@ -11,29 +11,29 @@ import android.os.Bundle;
 public class c extends DialogFragment {
 
     /* renamed from: d  reason: collision with root package name */
-    private Dialog f13756d;
+    private Dialog f13896d;
 
     /* renamed from: e  reason: collision with root package name */
-    private DialogInterface.OnCancelListener f13757e;
+    private DialogInterface.OnCancelListener f13897e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Dialog f13758i;
+    private Dialog f13898i;
 
     public static c a(Dialog dialog, DialogInterface.OnCancelListener onCancelListener) {
         c cVar = new c();
-        Dialog dialog2 = (Dialog) gf.q.m(dialog, "Cannot display null dialog");
+        Dialog dialog2 = (Dialog) hf.q.m(dialog, "Cannot display null dialog");
         dialog2.setOnCancelListener(null);
         dialog2.setOnDismissListener(null);
-        cVar.f13756d = dialog2;
+        cVar.f13896d = dialog2;
         if (onCancelListener != null) {
-            cVar.f13757e = onCancelListener;
+            cVar.f13897e = onCancelListener;
         }
         return cVar;
     }
 
     @Override // android.app.DialogFragment, android.content.DialogInterface.OnCancelListener
     public void onCancel(DialogInterface dialogInterface) {
-        DialogInterface.OnCancelListener onCancelListener = this.f13757e;
+        DialogInterface.OnCancelListener onCancelListener = this.f13897e;
         if (onCancelListener != null) {
             onCancelListener.onCancel(dialogInterface);
         }
@@ -41,13 +41,13 @@ public class c extends DialogFragment {
 
     @Override // android.app.DialogFragment
     public Dialog onCreateDialog(Bundle bundle) {
-        Dialog dialog = this.f13756d;
+        Dialog dialog = this.f13896d;
         if (dialog == null) {
             setShowsDialog(false);
-            if (this.f13758i == null) {
-                this.f13758i = new AlertDialog.Builder((Context) gf.q.l(getActivity())).create();
+            if (this.f13898i == null) {
+                this.f13898i = new AlertDialog.Builder((Context) hf.q.l(getActivity())).create();
             }
-            return this.f13758i;
+            return this.f13898i;
         }
         return dialog;
     }

@@ -36,7 +36,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     private final Boolean underlineText;
 
     public /* synthetic */ ClickableSpan(NestedClickableSpan.TouchPriority touchPriority, Integer num, Integer num2, Integer num3, float f10, Boolean bool, Function1 function1, Function1 function12, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? NestedClickableSpan.TouchPriority.DEFAULT : touchPriority, (i10 & 2) != 0 ? null : num, (i10 & 4) != 0 ? null : num2, (i10 & 8) != 0 ? null : num3, (i10 & 16) != 0 ? 150.0f : f10, (i10 & 32) != 0 ? Boolean.FALSE : bool, (i10 & 64) != 0 ? new Function1() { // from class: e8.a
+        this((i10 & 1) != 0 ? NestedClickableSpan.TouchPriority.DEFAULT : touchPriority, (i10 & 2) != 0 ? null : num, (i10 & 4) != 0 ? null : num2, (i10 & 8) != 0 ? null : num3, (i10 & 16) != 0 ? 150.0f : f10, (i10 & 32) != 0 ? Boolean.FALSE : bool, (i10 & 64) != 0 ? new Function1() { // from class: f8.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 boolean _init_$lambda$0;
@@ -182,7 +182,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     public void onClick(@NotNull View view) {
         Intrinsics.checkNotNullParameter(view, "view");
         this.onClickListener.invoke(view);
-        Unit unit = Unit.f32056a;
+        Unit unit = Unit.f31765a;
         setSpanView(null);
     }
 
@@ -226,7 +226,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
                     intValue = this.primaryColor.intValue();
                 }
                 textPaint.setColor(intValue);
-                Unit unit = Unit.f32056a;
+                Unit unit = Unit.f31765a;
             }
         } else {
             textPaint.setShader(null);

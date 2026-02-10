@@ -1,0 +1,81 @@
+package wa;
+
+import java.io.IOException;
+import java.io.InputStream;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class t implements s8.i {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final com.facebook.imagepipeline.memory.f f53398a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final s8.l f53399b;
+
+    public t(com.facebook.imagepipeline.memory.f pool, s8.l pooledByteStreams) {
+        Intrinsics.checkNotNullParameter(pool, "pool");
+        Intrinsics.checkNotNullParameter(pooledByteStreams, "pooledByteStreams");
+        this.f53398a = pool;
+        this.f53399b = pooledByteStreams;
+    }
+
+    public final s f(InputStream inputStream, com.facebook.imagepipeline.memory.g outputStream) {
+        Intrinsics.checkNotNullParameter(inputStream, "inputStream");
+        Intrinsics.checkNotNullParameter(outputStream, "outputStream");
+        this.f53399b.a(inputStream, outputStream);
+        return outputStream.a();
+    }
+
+    @Override // s8.i
+    /* renamed from: g */
+    public s a(InputStream inputStream) {
+        Intrinsics.checkNotNullParameter(inputStream, "inputStream");
+        com.facebook.imagepipeline.memory.g gVar = new com.facebook.imagepipeline.memory.g(this.f53398a, 0, 2, null);
+        try {
+            return f(inputStream, gVar);
+        } finally {
+            gVar.close();
+        }
+    }
+
+    @Override // s8.i
+    /* renamed from: h */
+    public s b(InputStream inputStream, int i10) {
+        Intrinsics.checkNotNullParameter(inputStream, "inputStream");
+        com.facebook.imagepipeline.memory.g gVar = new com.facebook.imagepipeline.memory.g(this.f53398a, i10);
+        try {
+            return f(inputStream, gVar);
+        } finally {
+            gVar.close();
+        }
+    }
+
+    @Override // s8.i
+    /* renamed from: i */
+    public s d(byte[] bytes) {
+        Intrinsics.checkNotNullParameter(bytes, "bytes");
+        com.facebook.imagepipeline.memory.g gVar = new com.facebook.imagepipeline.memory.g(this.f53398a, bytes.length);
+        try {
+            try {
+                gVar.write(bytes, 0, bytes.length);
+                return gVar.a();
+            } catch (IOException e10) {
+                throw p8.n.a(e10);
+            }
+        } finally {
+            gVar.close();
+        }
+    }
+
+    @Override // s8.i
+    /* renamed from: j */
+    public com.facebook.imagepipeline.memory.g c() {
+        return new com.facebook.imagepipeline.memory.g(this.f53398a, 0, 2, null);
+    }
+
+    @Override // s8.i
+    /* renamed from: k */
+    public com.facebook.imagepipeline.memory.g e(int i10) {
+        return new com.facebook.imagepipeline.memory.g(this.f53398a, i10);
+    }
+}

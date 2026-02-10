@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun82980: for (var _fun82980_ip = 0;;) switch (_fun82980_ip) {
+        _fun82850: for (var _fun82850_ip = 0;;) switch (_fun82850_ip) {
             case 0:
                 var0 = arg0;
                 var28 = var0.otherUser;
@@ -323,8 +323,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.variant = var20;
                 var17 = !var17;
                 if (var17) {
-                    _fun82980_ip = 1167;
-                    continue _fun82980
+                    _fun82850_ip = 1167;
+                    continue _fun82850
                 }
             case 1164:
                 var17 = var16;
@@ -459,19 +459,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.backgroundColor = var11;
     var3.body = var8;
     var8 = {};
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.spacing;
-    var11 = var11.PX_4;
-    var8.marginBottom = var11;
-    var3.noticeHeader = var8;
-    var8 = {};
     var9 = var5[var9];
     var9 = var10.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.ICON_FEEDBACK_CRITICAL;
-    var8.tintColor = var9;
-    var3.icon = var8;
+    var9 = var9.spacing;
+    var9 = var9.PX_4;
+    var8.marginBottom = var9;
+    var3.noticeHeader = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
     var3 = 26;
@@ -563,4 +556,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 4561, 6577, 3149, 1234, 10551, 10558, 1860, 6506, 6507, 10609, 5375, 3942, 10584, 5430, 4920, 10553, 6510, 4084, 4705, 7573, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 4561, 6578, 3149, 1234, 10529, 10536, 1860, 6507, 6508, 10587, 5376, 3942, 10562, 5431, 4920, 10531, 6511, 4084, 4705, 7549, 2]);

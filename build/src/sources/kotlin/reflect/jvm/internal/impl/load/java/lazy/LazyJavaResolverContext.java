@@ -11,58 +11,58 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaResolverContext {
 
     /* renamed from: a  reason: collision with root package name */
-    private final JavaResolverComponents f32921a;
+    private final JavaResolverComponents f32630a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TypeParameterResolver f32922b;
+    private final TypeParameterResolver f32631b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lazy f32923c;
+    private final Lazy f32632c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final JavaTypeResolver f32924d;
+    private final JavaTypeResolver f32633d;
 
     public LazyJavaResolverContext(@NotNull JavaResolverComponents components, @NotNull TypeParameterResolver typeParameterResolver, @NotNull Lazy delegateForDefaultTypeQualifiers) {
         Intrinsics.checkNotNullParameter(components, "components");
         Intrinsics.checkNotNullParameter(typeParameterResolver, "typeParameterResolver");
         Intrinsics.checkNotNullParameter(delegateForDefaultTypeQualifiers, "delegateForDefaultTypeQualifiers");
-        this.f32921a = components;
-        this.f32922b = typeParameterResolver;
-        this.f32923c = delegateForDefaultTypeQualifiers;
-        this.f32924d = new JavaTypeResolver(this, typeParameterResolver);
+        this.f32630a = components;
+        this.f32631b = typeParameterResolver;
+        this.f32632c = delegateForDefaultTypeQualifiers;
+        this.f32633d = new JavaTypeResolver(this, typeParameterResolver);
     }
 
     @NotNull
     public final JavaResolverComponents getComponents() {
-        return this.f32921a;
+        return this.f32630a;
     }
 
     public final JavaTypeQualifiersByElementType getDefaultTypeQualifiers() {
-        return (JavaTypeQualifiersByElementType) this.f32923c.getValue();
+        return (JavaTypeQualifiersByElementType) this.f32632c.getValue();
     }
 
     @NotNull
     public final Lazy getDelegateForDefaultTypeQualifiers$descriptors_jvm() {
-        return this.f32923c;
+        return this.f32632c;
     }
 
     @NotNull
     public final ModuleDescriptor getModule() {
-        return this.f32921a.getModule();
+        return this.f32630a.getModule();
     }
 
     @NotNull
     public final StorageManager getStorageManager() {
-        return this.f32921a.getStorageManager();
+        return this.f32630a.getStorageManager();
     }
 
     @NotNull
     public final TypeParameterResolver getTypeParameterResolver() {
-        return this.f32922b;
+        return this.f32631b;
     }
 
     @NotNull
     public final JavaTypeResolver getTypeResolver() {
-        return this.f32924d;
+        return this.f32633d;
     }
 }

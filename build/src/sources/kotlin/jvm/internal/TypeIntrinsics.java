@@ -1,19 +1,19 @@
 package kotlin.jvm.internal;
 
-import es.b;
-import es.c;
-import es.d;
-import es.e;
-import es.f;
-import es.g;
-import es.h;
-import es.i;
-import es.j;
-import es.k;
-import es.l;
-import es.m;
-import es.n;
-import es.o;
+import fs.b;
+import fs.c;
+import fs.d;
+import fs.e;
+import fs.f;
+import fs.g;
+import fs.h;
+import fs.i;
+import fs.j;
+import fs.k;
+import fs.l;
+import fs.m;
+import fs.n;
+import fs.o;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -200,7 +200,7 @@ public class TypeIntrinsics {
         if (obj instanceof o) {
             return 9;
         }
-        if (obj instanceof es.a) {
+        if (obj instanceof fs.a) {
             return 10;
         }
         if (obj instanceof b) {

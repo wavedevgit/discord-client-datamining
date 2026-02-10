@@ -73,7 +73,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.ranges.d;
 import org.jetbrains.annotations.NotNull;
-import qr.v;
+import rr.v;
 @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u001e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u0015\b\u0007\u0012\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\u0005\u0010\u0006J\u001a\u0010\u0007\u001a\u0004\u0018\u00010\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0016J\u001e\u0010\r\u001a\u0010\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u000f0\u000e2\u0006\u0010\u000b\u001a\u00020\fH\u0016J\u0016\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00120\u000e2\u0006\u0010\u000b\u001a\u00020\fH\u0016J\u0016\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\n0\u00172\u0006\u0010\u000b\u001a\u00020\fH\u0016J\"\u0010\u0018\u001a\f\u0012\u0002\b\u0003\u0012\u0002\b\u0003\u0018\u00010\u000f2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0019\u001a\u00020\nH\u0016J\b\u0010\u001a\u001a\u00020\u001bH\u0016J\b\u0010\u001c\u001a\u00020\u001bH\u0002R\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\"\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00120\u00118\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014¨\u0006\u001d"}, d2 = {"Lcom/facebook/react/shell/MainReactPackage;", "Lcom/facebook/react/BaseReactPackage;", "Lcom/facebook/react/ViewManagerOnDemandReactPackage;", "config", "Lcom/facebook/react/shell/MainPackageConfig;", "<init>", "(Lcom/facebook/react/shell/MainPackageConfig;)V", "getModule", "Lcom/facebook/react/bridge/NativeModule;", StackTraceHelper.NAME_KEY, "", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "createViewManagers", "", "Lcom/facebook/react/uimanager/ViewManager;", "viewManagersMap", "", "Lcom/facebook/react/bridge/ModuleSpec;", "getViewManagersMap", "()Ljava/util/Map;", "getViewManagers", "getViewManagerNames", "", "createViewManager", "viewManagerName", "getReactModuleInfoProvider", "Lcom/facebook/react/module/model/ReactModuleInfoProvider;", "fallbackForMissingClass", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nMainReactPackage.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MainReactPackage.kt\ncom/facebook/react/shell/MainReactPackage\n+ 2 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,286:1\n37#2:287\n36#2,3:288\n3829#3:291\n4344#3,2:292\n1193#4,2:294\n1267#4,4:296\n*S KotlinDebug\n*F\n+ 1 MainReactPackage.kt\ncom/facebook/react/shell/MainReactPackage\n*L\n267#1:287\n267#1:288,3\n271#1:291\n271#1:292,2\n272#1:294,2\n272#1:296,4\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -116,7 +116,7 @@ public final class MainReactPackage extends BaseReactPackage implements ViewMana
                 throw new IllegalStateException("Required value was null.");
             }
         }
-        return new ReactModuleInfoProvider() { // from class: mb.a
+        return new ReactModuleInfoProvider() { // from class: nb.a
             @Override // com.facebook.react.module.model.ReactModuleInfoProvider
             public final Map getReactModuleInfos() {
                 Map fallbackForMissingClass$lambda$18;
@@ -401,112 +401,112 @@ public final class MainReactPackage extends BaseReactPackage implements ViewMana
     public MainReactPackage(MainPackageConfig mainPackageConfig) {
         this.config = mainPackageConfig;
         ModuleSpec.Companion companion = ModuleSpec.Companion;
-        this.viewManagersMap = o0.m(v.a(ReactDrawerLayoutManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.i
+        this.viewManagersMap = o0.m(v.a(ReactDrawerLayoutManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.i
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$0;
                 viewManagersMap$lambda$0 = MainReactPackage.viewManagersMap$lambda$0();
                 return viewManagersMap$lambda$0;
             }
-        })), v.a(ReactHorizontalScrollViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.p
+        })), v.a(ReactHorizontalScrollViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.p
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$1;
                 viewManagersMap$lambda$1 = MainReactPackage.viewManagersMap$lambda$1();
                 return viewManagersMap$lambda$1;
             }
-        })), v.a(ReactHorizontalScrollContainerViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.q
+        })), v.a(ReactHorizontalScrollContainerViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.q
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$2;
                 viewManagersMap$lambda$2 = MainReactPackage.viewManagersMap$lambda$2();
                 return viewManagersMap$lambda$2;
             }
-        })), v.a(ReactProgressBarViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.b
+        })), v.a(ReactProgressBarViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.b
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$3;
                 viewManagersMap$lambda$3 = MainReactPackage.viewManagersMap$lambda$3();
                 return viewManagersMap$lambda$3;
             }
-        })), v.a(ReactSafeAreaViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.c
+        })), v.a(ReactSafeAreaViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.c
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$4;
                 viewManagersMap$lambda$4 = MainReactPackage.viewManagersMap$lambda$4();
                 return viewManagersMap$lambda$4;
             }
-        })), v.a(ReactSwitchManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.d
+        })), v.a(ReactSwitchManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.d
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$5;
                 viewManagersMap$lambda$5 = MainReactPackage.viewManagersMap$lambda$5();
                 return viewManagersMap$lambda$5;
             }
-        })), v.a(SwipeRefreshLayoutManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.e
+        })), v.a(SwipeRefreshLayoutManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.e
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$6;
                 viewManagersMap$lambda$6 = MainReactPackage.viewManagersMap$lambda$6();
                 return viewManagersMap$lambda$6;
             }
-        })), v.a(FrescoBasedReactTextInlineImageViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.f
+        })), v.a(FrescoBasedReactTextInlineImageViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.f
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$7;
                 viewManagersMap$lambda$7 = MainReactPackage.viewManagersMap$lambda$7();
                 return viewManagersMap$lambda$7;
             }
-        })), v.a(ReactImageManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.g
+        })), v.a(ReactImageManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.g
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$8;
                 viewManagersMap$lambda$8 = MainReactPackage.viewManagersMap$lambda$8();
                 return viewManagersMap$lambda$8;
             }
-        })), v.a(ReactModalHostManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.h
+        })), v.a(ReactModalHostManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.h
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$9;
                 viewManagersMap$lambda$9 = MainReactPackage.viewManagersMap$lambda$9();
                 return viewManagersMap$lambda$9;
             }
-        })), v.a(ReactRawTextManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.j
+        })), v.a(ReactRawTextManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.j
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$10;
                 viewManagersMap$lambda$10 = MainReactPackage.viewManagersMap$lambda$10();
                 return viewManagersMap$lambda$10;
             }
-        })), v.a(ReactTextInputManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.k
+        })), v.a(ReactTextInputManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.k
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$11;
                 viewManagersMap$lambda$11 = MainReactPackage.viewManagersMap$lambda$11();
                 return viewManagersMap$lambda$11;
             }
-        })), v.a("RCTText", companion.viewManagerSpec(new Provider() { // from class: mb.l
+        })), v.a("RCTText", companion.viewManagerSpec(new Provider() { // from class: nb.l
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$12;
                 viewManagersMap$lambda$12 = MainReactPackage.viewManagersMap$lambda$12();
                 return viewManagersMap$lambda$12;
             }
-        })), v.a("RCTView", companion.viewManagerSpec(new Provider() { // from class: mb.m
+        })), v.a("RCTView", companion.viewManagerSpec(new Provider() { // from class: nb.m
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$13;
                 viewManagersMap$lambda$13 = MainReactPackage.viewManagersMap$lambda$13();
                 return viewManagersMap$lambda$13;
             }
-        })), v.a(ReactVirtualTextViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.n
+        })), v.a(ReactVirtualTextViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.n
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$14;
                 viewManagersMap$lambda$14 = MainReactPackage.viewManagersMap$lambda$14();
                 return viewManagersMap$lambda$14;
             }
-        })), v.a(ReactUnimplementedViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: mb.o
+        })), v.a(ReactUnimplementedViewManager.REACT_CLASS, companion.viewManagerSpec(new Provider() { // from class: nb.o
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap$lambda$15;

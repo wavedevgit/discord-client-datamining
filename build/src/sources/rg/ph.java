@@ -1,0 +1,32 @@
+package rg;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class ph {
+
+    /* renamed from: a  reason: collision with root package name */
+    private xd f48620a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private rd f48621b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private wh f48622c;
+
+    public final ph c(rd rdVar) {
+        this.f48621b = rdVar;
+        return this;
+    }
+
+    public final ph d(xd xdVar) {
+        this.f48620a = xdVar;
+        return this;
+    }
+
+    public final ph e(wh whVar) {
+        this.f48622c = whVar;
+        return this;
+    }
+
+    public final rh f() {
+        return new rh(this, null);
+    }
+}

@@ -8,16 +8,16 @@ import kotlin.sequences.Sequence;
 public class d implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f34220d;
+    private final boolean f33929d;
 
     public d(boolean z10) {
-        this.f34220d = z10;
+        this.f33929d = z10;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Sequence h10;
-        h10 = DescriptorUtilsKt.h(this.f34220d, (CallableMemberDescriptor) obj);
+        h10 = DescriptorUtilsKt.h(this.f33929d, (CallableMemberDescriptor) obj);
         return h10;
     }
 }

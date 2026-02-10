@@ -30,11 +30,11 @@ public final class BlackHoleEventDispatcher implements EventDispatcher {
     public void dispatchEvent(@NotNull Event<?> event) {
         Intrinsics.checkNotNullParameter(event, "event");
         String eventName = event.getEventName();
-        p8.a.b("BlackHoleEventDispatcher", "Trying to emit event to JS, but the React instance isn't ready. Event: " + eventName);
+        q8.a.b("BlackHoleEventDispatcher", "Trying to emit event to JS, but the React instance isn't ready. Event: " + eventName);
     }
 
     @Override // com.facebook.react.uimanager.events.EventDispatcher
-    @qr.c
+    @rr.c
     public void onCatalystInstanceDestroyed() {
     }
 

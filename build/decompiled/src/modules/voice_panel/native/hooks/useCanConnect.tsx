@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun111731: for (var _fun111731_ip = 0;;) switch (_fun111731_ip) {
+            _fun111711: for (var _fun111711_ip = 0;;) switch (_fun111711_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var1 = var3.getChannel;
@@ -75,15 +75,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = null;
                     var3 = var1 != var6;
                     if (!var3) {
-                        _fun111731_ip = 77;
-                        continue _fun111731
+                        _fun111711_ip = 77;
+                        continue _fun111711
                     }
                 case 35:
                     var4 = var6.isPrivate;
                     var4 = var4.bind(var6)();
                     if (var4) {
-                        _fun111731_ip = 74;
-                        continue _fun111731
+                        _fun111711_ip = 74;
+                        continue _fun111711
                     }
                 case 48:
                     var8 = _closure1_slot4;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.canConnect = var3;
                     var1 = var1 == var6;
                     if (var1) {
-                        _fun111731_ip = 132;
-                        continue _fun111731
+                        _fun111711_ip = 132;
+                        continue _fun111711
                     }
                 case 89:
                     var5 = _closure1_slot0;

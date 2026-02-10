@@ -5,13 +5,13 @@ import android.os.Message;
 import android.util.Log;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class p extends fg.h {
+public final class p extends gg.h {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f13792b;
+    private final Context f13932b;
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ f f13793c;
+    final /* synthetic */ f f13933c;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -21,7 +21,7 @@ public final class p extends fg.h {
     public p(com.google.android.gms.common.f r1, android.content.Context r2) {
         /*
             r0 = this;
-            r0.f13793c = r1
+            r0.f13933c = r1
             android.os.Looper r1 = android.os.Looper.myLooper()
             if (r1 != 0) goto Ld
             android.os.Looper r1 = android.os.Looper.getMainLooper()
@@ -31,7 +31,7 @@ public final class p extends fg.h {
         L11:
             r0.<init>(r1)
             android.content.Context r1 = r2.getApplicationContext()
-            r0.f13792b = r1
+            r0.f13932b = r1
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.common.p.<init>(com.google.android.gms.common.f, android.content.Context):void");
@@ -44,10 +44,10 @@ public final class p extends fg.h {
             Log.w("GoogleApiAvailability", "Don't know how to handle this message: " + i10);
             return;
         }
-        f fVar = this.f13793c;
-        int g10 = fVar.g(this.f13792b);
+        f fVar = this.f13933c;
+        int g10 = fVar.g(this.f13932b);
         if (fVar.j(g10)) {
-            this.f13793c.p(this.f13792b, g10);
+            this.f13933c.p(this.f13932b, g10);
         }
     }
 }

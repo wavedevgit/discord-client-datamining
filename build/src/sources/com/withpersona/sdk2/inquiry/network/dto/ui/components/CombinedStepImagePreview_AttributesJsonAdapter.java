@@ -37,8 +37,8 @@ public final class CombinedStepImagePreview_AttributesJsonAdapter extends h {
         reader.u();
         while (reader.hasNext()) {
             if (reader.J(this.options) == -1) {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();

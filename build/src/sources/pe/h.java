@@ -1,0 +1,1768 @@
+package pe;
+
+import android.content.Context;
+import android.graphics.Point;
+import android.hardware.display.DisplayManager;
+import android.media.MediaCrypto;
+import android.media.MediaFormat;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.os.SystemClock;
+import android.util.Pair;
+import android.view.Display;
+import android.view.Surface;
+import com.discord.media.utils.DiscordVideoMediaSource;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import com.facebook.react.uimanager.ViewProps;
+import com.google.android.exoplayer2.Format;
+import com.google.android.exoplayer2.decoder.DecoderCounters;
+import com.google.android.exoplayer2.decoder.DecoderReuseEvaluation;
+import com.google.android.exoplayer2.video.VideoSize;
+import com.google.android.exoplayer2.w1;
+import gd.l;
+import gd.y;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.nio.ByteBuffer;
+import java.util.ArrayDeque;
+import java.util.List;
+import java.util.Objects;
+import java.util.concurrent.CopyOnWriteArrayList;
+import kotlin.jvm.internal.LongCompanionObject;
+import oe.b0;
+import oe.c0;
+import oe.l0;
+import oe.o0;
+import oe.r;
+import oe.t0;
+import oe.w0;
+import oe.x0;
+import pe.y;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public class h extends gd.r {
+    private static boolean A1;
+    private static boolean B1;
+
+    /* renamed from: z1  reason: collision with root package name */
+    private static final int[] f43143z1 = {1920, 1600, 1440, 1280, 960, 854, DiscordVideoMediaSource.DEFAULT_WIDTH, 540, DiscordVideoMediaSource.DEFAULT_HEIGHT};
+    private final Context R0;
+    private final n S0;
+    private final y.a T0;
+    private final d U0;
+    private final long V0;
+    private final int W0;
+    private final boolean X0;
+    private b Y0;
+    private boolean Z0;
+
+    /* renamed from: a1  reason: collision with root package name */
+    private boolean f43144a1;
+
+    /* renamed from: b1  reason: collision with root package name */
+    private Surface f43145b1;
+
+    /* renamed from: c1  reason: collision with root package name */
+    private i f43146c1;
+
+    /* renamed from: d1  reason: collision with root package name */
+    private boolean f43147d1;
+
+    /* renamed from: e1  reason: collision with root package name */
+    private int f43148e1;
+
+    /* renamed from: f1  reason: collision with root package name */
+    private boolean f43149f1;
+
+    /* renamed from: g1  reason: collision with root package name */
+    private boolean f43150g1;
+
+    /* renamed from: h1  reason: collision with root package name */
+    private boolean f43151h1;
+
+    /* renamed from: i1  reason: collision with root package name */
+    private long f43152i1;
+
+    /* renamed from: j1  reason: collision with root package name */
+    private long f43153j1;
+
+    /* renamed from: k1  reason: collision with root package name */
+    private long f43154k1;
+
+    /* renamed from: l1  reason: collision with root package name */
+    private int f43155l1;
+
+    /* renamed from: m1  reason: collision with root package name */
+    private int f43156m1;
+
+    /* renamed from: n1  reason: collision with root package name */
+    private int f43157n1;
+
+    /* renamed from: o1  reason: collision with root package name */
+    private long f43158o1;
+
+    /* renamed from: p1  reason: collision with root package name */
+    private long f43159p1;
+
+    /* renamed from: q1  reason: collision with root package name */
+    private long f43160q1;
+
+    /* renamed from: r1  reason: collision with root package name */
+    private int f43161r1;
+
+    /* renamed from: s1  reason: collision with root package name */
+    private long f43162s1;
+
+    /* renamed from: t1  reason: collision with root package name */
+    private VideoSize f43163t1;
+
+    /* renamed from: u1  reason: collision with root package name */
+    private VideoSize f43164u1;
+
+    /* renamed from: v1  reason: collision with root package name */
+    private boolean f43165v1;
+
+    /* renamed from: w1  reason: collision with root package name */
+    private int f43166w1;
+
+    /* renamed from: x1  reason: collision with root package name */
+    c f43167x1;
+
+    /* renamed from: y1  reason: collision with root package name */
+    private l f43168y1;
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a {
+        public static boolean a(Context context) {
+            Display display;
+            DisplayManager displayManager = (DisplayManager) context.getSystemService(ViewProps.DISPLAY);
+            if (displayManager != null) {
+                display = displayManager.getDisplay(0);
+            } else {
+                display = null;
+            }
+            if (display != null && display.isHdr()) {
+                for (int i10 : display.getHdrCapabilities().getSupportedHdrTypes()) {
+                    if (i10 == 1) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public final int f43169a;
+
+        /* renamed from: b  reason: collision with root package name */
+        public final int f43170b;
+
+        /* renamed from: c  reason: collision with root package name */
+        public final int f43171c;
+
+        public b(int i10, int i11, int i12) {
+            this.f43169a = i10;
+            this.f43170b = i11;
+            this.f43171c = i12;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public final class c implements l.c, Handler.Callback {
+
+        /* renamed from: d  reason: collision with root package name */
+        private final Handler f43172d;
+
+        public c(gd.l lVar) {
+            Handler x10 = w0.x(this);
+            this.f43172d = x10;
+            lVar.e(this, x10);
+        }
+
+        private void b(long j10) {
+            h hVar = h.this;
+            if (this == hVar.f43167x1 && hVar.y0() != null) {
+                if (j10 == LongCompanionObject.MAX_VALUE) {
+                    h.this.o2();
+                    return;
+                }
+                try {
+                    h.this.n2(j10);
+                } catch (com.google.android.exoplayer2.j e10) {
+                    h.this.q1(e10);
+                }
+            }
+        }
+
+        @Override // gd.l.c
+        public void a(gd.l lVar, long j10, long j11) {
+            if (w0.f40711a < 30) {
+                this.f43172d.sendMessageAtFrontOfQueue(Message.obtain(this.f43172d, 0, (int) (j10 >> 32), (int) j10));
+                return;
+            }
+            b(j10);
+        }
+
+        @Override // android.os.Handler.Callback
+        public boolean handleMessage(Message message) {
+            if (message.what != 0) {
+                return false;
+            }
+            b(w0.m1(message.arg1, message.arg2));
+            return true;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class d {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final n f43174a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final h f43175b;
+
+        /* renamed from: e  reason: collision with root package name */
+        private Handler f43178e;
+
+        /* renamed from: f  reason: collision with root package name */
+        private CopyOnWriteArrayList f43179f;
+
+        /* renamed from: g  reason: collision with root package name */
+        private Pair f43180g;
+
+        /* renamed from: h  reason: collision with root package name */
+        private Pair f43181h;
+
+        /* renamed from: k  reason: collision with root package name */
+        private boolean f43184k;
+
+        /* renamed from: l  reason: collision with root package name */
+        private boolean f43185l;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final ArrayDeque f43176c = new ArrayDeque();
+
+        /* renamed from: d  reason: collision with root package name */
+        private final ArrayDeque f43177d = new ArrayDeque();
+
+        /* renamed from: i  reason: collision with root package name */
+        private int f43182i = -1;
+
+        /* renamed from: j  reason: collision with root package name */
+        private boolean f43183j = true;
+
+        /* renamed from: m  reason: collision with root package name */
+        private long f43186m = -9223372036854775807L;
+
+        /* renamed from: n  reason: collision with root package name */
+        private VideoSize f43187n = VideoSize.f13596p;
+
+        /* renamed from: o  reason: collision with root package name */
+        private long f43188o = -9223372036854775807L;
+
+        /* renamed from: p  reason: collision with root package name */
+        private long f43189p = -9223372036854775807L;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+        public class a {
+
+            /* renamed from: a  reason: collision with root package name */
+            final /* synthetic */ Format f43190a;
+
+            a(Format format) {
+                this.f43190a = format;
+            }
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+        public static final class b {
+
+            /* renamed from: a  reason: collision with root package name */
+            private static Constructor f43192a;
+
+            /* renamed from: b  reason: collision with root package name */
+            private static Method f43193b;
+
+            /* renamed from: c  reason: collision with root package name */
+            private static Method f43194c;
+
+            /* renamed from: d  reason: collision with root package name */
+            private static Constructor f43195d;
+
+            /* renamed from: e  reason: collision with root package name */
+            private static Method f43196e;
+
+            public static oe.n a(float f10) {
+                c();
+                Object newInstance = f43192a.newInstance(null);
+                f43193b.invoke(newInstance, Float.valueOf(f10));
+                android.support.v4.media.session.b.a(oe.a.e(f43194c.invoke(newInstance, null)));
+                return null;
+            }
+
+            public static x0 b() {
+                c();
+                android.support.v4.media.session.b.a(oe.a.e(f43196e.invoke(f43195d.newInstance(null), null)));
+                return null;
+            }
+
+            private static void c() {
+                if (f43192a == null || f43193b == null || f43194c == null) {
+                    Class<?> cls = Class.forName("com.google.android.exoplayer2.effect.ScaleAndRotateTransformation$Builder");
+                    f43192a = cls.getConstructor(null);
+                    f43193b = cls.getMethod("setRotationDegrees", Float.TYPE);
+                    f43194c = cls.getMethod("build", null);
+                }
+                if (f43195d != null && f43196e != null) {
+                    return;
+                }
+                Class<?> cls2 = Class.forName("com.google.android.exoplayer2.effect.DefaultVideoFrameProcessor$Factory$Builder");
+                f43195d = cls2.getConstructor(null);
+                f43196e = cls2.getMethod("build", null);
+            }
+        }
+
+        public d(n nVar, h hVar) {
+            this.f43174a = nVar;
+            this.f43175b = hVar;
+        }
+
+        private void k(long j10, boolean z10) {
+            oe.a.i(null);
+            throw null;
+        }
+
+        public MediaFormat a(MediaFormat mediaFormat) {
+            if (w0.f40711a >= 29 && this.f43175b.R0.getApplicationContext().getApplicationInfo().targetSdkVersion >= 29) {
+                mediaFormat.setInteger("allow-frame-drop", 0);
+            }
+            return mediaFormat;
+        }
+
+        public void b() {
+            android.support.v4.media.session.b.a(oe.a.e(null));
+            throw null;
+        }
+
+        public void c() {
+            oe.a.i(null);
+            throw null;
+        }
+
+        public long d(long j10, long j11) {
+            boolean z10;
+            if (this.f43189p != -9223372036854775807L) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            oe.a.g(z10);
+            return (j10 + j11) - this.f43189p;
+        }
+
+        public Surface e() {
+            android.support.v4.media.session.b.a(oe.a.e(null));
+            throw null;
+        }
+
+        public boolean f() {
+            return false;
+        }
+
+        public boolean g() {
+            Pair pair = this.f43181h;
+            if (pair != null && ((l0) pair.second).equals(l0.f40641c)) {
+                return false;
+            }
+            return true;
+        }
+
+        public boolean h(Format format, long j10) {
+            int i10;
+            oe.a.g(!f());
+            if (!this.f43183j) {
+                return false;
+            }
+            if (this.f43179f == null) {
+                this.f43183j = false;
+                return false;
+            }
+            this.f43178e = w0.w();
+            Pair V1 = this.f43175b.V1(format.I);
+            try {
+                if (!h.B1() && (i10 = format.E) != 0) {
+                    CopyOnWriteArrayList copyOnWriteArrayList = this.f43179f;
+                    b.a(i10);
+                    copyOnWriteArrayList.add(0, null);
+                }
+                b.b();
+                Context unused = this.f43175b.R0;
+                List list = (List) oe.a.e(this.f43179f);
+                oe.l lVar = oe.l.f40640a;
+                pe.c cVar = (pe.c) V1.first;
+                pe.c cVar2 = (pe.c) V1.second;
+                Handler handler = this.f43178e;
+                Objects.requireNonNull(handler);
+                new oc.s(handler);
+                new a(format);
+                throw null;
+            } catch (Exception e10) {
+                throw this.f43175b.G(e10, format, 7000);
+            }
+        }
+
+        public boolean i(Format format, long j10, boolean z10) {
+            boolean z11;
+            oe.a.i(null);
+            if (this.f43182i != -1) {
+                z11 = true;
+            } else {
+                z11 = false;
+            }
+            oe.a.g(z11);
+            throw null;
+        }
+
+        public void j(String str) {
+            this.f43182i = w0.d0(this.f43175b.R0, str, false);
+        }
+
+        public void l(long j10, long j11) {
+            boolean z10;
+            oe.a.i(null);
+            while (!this.f43176c.isEmpty()) {
+                boolean z11 = false;
+                if (this.f43175b.getState() == 2) {
+                    z10 = true;
+                } else {
+                    z10 = false;
+                }
+                long longValue = ((Long) oe.a.e((Long) this.f43176c.peek())).longValue();
+                long j12 = longValue + this.f43189p;
+                long M1 = this.f43175b.M1(j10, j11, SystemClock.elapsedRealtime() * 1000, j12, z10);
+                if (this.f43184k && this.f43176c.size() == 1) {
+                    z11 = true;
+                }
+                if (this.f43175b.z2(j10, M1)) {
+                    k(-1L, z11);
+                    return;
+                } else if (z10 && j10 != this.f43175b.f43152i1 && M1 <= 50000) {
+                    this.f43174a.h(j12);
+                    long b10 = this.f43174a.b(System.nanoTime() + (M1 * 1000));
+                    if (this.f43175b.y2((b10 - System.nanoTime()) / 1000, j11, z11)) {
+                        k(-2L, z11);
+                    } else {
+                        if (!this.f43177d.isEmpty() && j12 > ((Long) ((Pair) this.f43177d.peek()).first).longValue()) {
+                            this.f43180g = (Pair) this.f43177d.remove();
+                        }
+                        this.f43175b.m2(longValue, b10, (Format) this.f43180g.second);
+                        if (this.f43188o >= j12) {
+                            this.f43188o = -9223372036854775807L;
+                            this.f43175b.j2(this.f43187n);
+                        }
+                        k(b10, z11);
+                    }
+                } else {
+                    return;
+                }
+            }
+        }
+
+        public boolean m() {
+            return this.f43185l;
+        }
+
+        public void n() {
+            android.support.v4.media.session.b.a(oe.a.e(null));
+            throw null;
+        }
+
+        public void o(Format format) {
+            android.support.v4.media.session.b.a(oe.a.e(null));
+            new r.b(format.B, format.C).b(format.F).a();
+            throw null;
+        }
+
+        public void p(Surface surface, l0 l0Var) {
+            Pair pair = this.f43181h;
+            if (pair == null || !((Surface) pair.first).equals(surface) || !((l0) this.f43181h.second).equals(l0Var)) {
+                this.f43181h = Pair.create(surface, l0Var);
+                if (!f()) {
+                    return;
+                }
+                android.support.v4.media.session.b.a(oe.a.e(null));
+                new o0(surface, l0Var.b(), l0Var.a());
+                throw null;
+            }
+        }
+
+        public void q(List list) {
+            CopyOnWriteArrayList copyOnWriteArrayList = this.f43179f;
+            if (copyOnWriteArrayList == null) {
+                this.f43179f = new CopyOnWriteArrayList(list);
+                return;
+            }
+            copyOnWriteArrayList.clear();
+            this.f43179f.addAll(list);
+        }
+    }
+
+    public h(Context context, l.b bVar, gd.t tVar, long j10, boolean z10, Handler handler, y yVar, int i10) {
+        this(context, bVar, tVar, j10, z10, handler, yVar, i10, 30.0f);
+    }
+
+    static /* synthetic */ boolean B1() {
+        return P1();
+    }
+
+    private boolean B2(gd.q qVar) {
+        if (w0.f40711a >= 23 && !this.f43165v1 && !Q1(qVar.f24197a)) {
+            if (!qVar.f24203g || i.b(this.R0)) {
+                return true;
+            }
+            return false;
+        }
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public long M1(long j10, long j11, long j12, long j13, boolean z10) {
+        long G0 = (long) ((j13 - j10) / G0());
+        if (z10) {
+            return G0 - (j12 - j11);
+        }
+        return G0;
+    }
+
+    private void N1() {
+        gd.l y02;
+        this.f43149f1 = false;
+        if (w0.f40711a >= 23 && this.f43165v1 && (y02 = y0()) != null) {
+            this.f43167x1 = new c(y02);
+        }
+    }
+
+    private void O1() {
+        this.f43164u1 = null;
+    }
+
+    private static boolean P1() {
+        if (w0.f40711a >= 21) {
+            return true;
+        }
+        return false;
+    }
+
+    private static void R1(MediaFormat mediaFormat, int i10) {
+        mediaFormat.setFeatureEnabled("tunneled-playback", true);
+        mediaFormat.setInteger("audio-session-id", i10);
+    }
+
+    private static boolean S1() {
+        return "NVIDIA".equals(w0.f40713c);
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* JADX WARN: Code restructure failed: missing block: B:621:0x0844, code lost:
+        if (r0.equals("PGN528") == false) goto L46;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static boolean U1() {
+        /*
+            Method dump skipped, instructions count: 3182
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: pe.h.U1():boolean");
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* JADX WARN: Code restructure failed: missing block: B:40:0x007a, code lost:
+        if (r3.equals("video/av01") == false) goto L16;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static int W1(gd.q r9, com.google.android.exoplayer2.Format r10) {
+        /*
+            Method dump skipped, instructions count: 272
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: pe.h.W1(gd.q, com.google.android.exoplayer2.Format):int");
+    }
+
+    private static Point X1(gd.q qVar, Format format) {
+        boolean z10;
+        int i10;
+        int[] iArr;
+        int i11;
+        int i12;
+        int i13 = format.C;
+        int i14 = format.B;
+        if (i13 > i14) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        if (z10) {
+            i10 = i13;
+        } else {
+            i10 = i14;
+        }
+        if (z10) {
+            i13 = i14;
+        }
+        float f10 = i13 / i10;
+        for (int i15 : f43143z1) {
+            int i16 = (int) (i15 * f10);
+            if (i15 <= i10 || i16 <= i13) {
+                break;
+            }
+            if (w0.f40711a >= 21) {
+                if (z10) {
+                    i12 = i16;
+                } else {
+                    i12 = i15;
+                }
+                if (!z10) {
+                    i15 = i16;
+                }
+                Point c10 = qVar.c(i12, i15);
+                if (qVar.w(c10.x, c10.y, format.D)) {
+                    return c10;
+                }
+            } else {
+                try {
+                    int l10 = w0.l(i15, 16) * 16;
+                    int l11 = w0.l(i16, 16) * 16;
+                    if (l10 * l11 <= gd.y.L()) {
+                        if (z10) {
+                            i11 = l11;
+                        } else {
+                            i11 = l10;
+                        }
+                        if (!z10) {
+                            l10 = l11;
+                        }
+                        return new Point(i11, l10);
+                    }
+                } catch (y.c unused) {
+                }
+            }
+        }
+        return null;
+    }
+
+    private static List Z1(Context context, gd.t tVar, Format format, boolean z10, boolean z11) {
+        String str = format.f11727w;
+        if (str == null) {
+            return oi.s.t();
+        }
+        if (w0.f40711a >= 26 && "video/dolby-vision".equals(str) && !a.a(context)) {
+            List n10 = gd.y.n(tVar, format, z10, z11);
+            if (!n10.isEmpty()) {
+                return n10;
+            }
+        }
+        return gd.y.v(tVar, format, z10, z11);
+    }
+
+    protected static int a2(gd.q qVar, Format format) {
+        if (format.f11728x != -1) {
+            int size = format.f11729y.size();
+            int i10 = 0;
+            for (int i11 = 0; i11 < size; i11++) {
+                i10 += ((byte[]) format.f11729y.get(i11)).length;
+            }
+            return format.f11728x + i10;
+        }
+        return W1(qVar, format);
+    }
+
+    private static int b2(int i10, int i11) {
+        return (i10 * 3) / (i11 * 2);
+    }
+
+    private static boolean d2(long j10) {
+        if (j10 < -30000) {
+            return true;
+        }
+        return false;
+    }
+
+    private static boolean e2(long j10) {
+        if (j10 < -500000) {
+            return true;
+        }
+        return false;
+    }
+
+    private void g2() {
+        if (this.f43155l1 > 0) {
+            long elapsedRealtime = SystemClock.elapsedRealtime();
+            this.T0.n(this.f43155l1, elapsedRealtime - this.f43154k1);
+            this.f43155l1 = 0;
+            this.f43154k1 = elapsedRealtime;
+        }
+    }
+
+    private void i2() {
+        int i10 = this.f43161r1;
+        if (i10 != 0) {
+            this.T0.r(this.f43160q1, i10);
+            this.f43160q1 = 0L;
+            this.f43161r1 = 0;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void j2(VideoSize videoSize) {
+        if (!videoSize.equals(VideoSize.f13596p) && !videoSize.equals(this.f43164u1)) {
+            this.f43164u1 = videoSize;
+            this.T0.t(videoSize);
+        }
+    }
+
+    private void k2() {
+        if (this.f43147d1) {
+            this.T0.q(this.f43145b1);
+        }
+    }
+
+    private void l2() {
+        VideoSize videoSize = this.f43164u1;
+        if (videoSize != null) {
+            this.T0.t(videoSize);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void m2(long j10, long j11, Format format) {
+        l lVar = this.f43168y1;
+        if (lVar != null) {
+            lVar.a(j10, j11, format, C0());
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void o2() {
+        p1();
+    }
+
+    private void p2() {
+        Surface surface = this.f43145b1;
+        i iVar = this.f43146c1;
+        if (surface == iVar) {
+            this.f43145b1 = null;
+        }
+        iVar.release();
+        this.f43146c1 = null;
+    }
+
+    private void r2(gd.l lVar, Format format, int i10, long j10, boolean z10) {
+        long nanoTime;
+        long j11;
+        if (this.U0.f()) {
+            nanoTime = this.U0.d(j10, F0()) * 1000;
+        } else {
+            nanoTime = System.nanoTime();
+        }
+        long j12 = nanoTime;
+        if (z10) {
+            j11 = j10;
+            m2(j11, j12, format);
+        } else {
+            j11 = j10;
+        }
+        if (w0.f40711a >= 21) {
+            s2(lVar, i10, j11, j12);
+        } else {
+            q2(lVar, i10, j11);
+        }
+    }
+
+    private static void t2(gd.l lVar, byte[] bArr) {
+        Bundle bundle = new Bundle();
+        bundle.putByteArray("hdr10-plus-info", bArr);
+        lVar.setParameters(bundle);
+    }
+
+    private void u2() {
+        long j10;
+        if (this.V0 > 0) {
+            j10 = SystemClock.elapsedRealtime() + this.V0;
+        } else {
+            j10 = -9223372036854775807L;
+        }
+        this.f43153j1 = j10;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r4v0, types: [gd.r, com.google.android.exoplayer2.f, pe.h] */
+    /* JADX WARN: Type inference failed for: r5v10, types: [android.view.Surface] */
+    private void v2(Object obj) {
+        i iVar;
+        if (obj instanceof Surface) {
+            iVar = (Surface) obj;
+        } else {
+            iVar = null;
+        }
+        if (iVar == null) {
+            i iVar2 = this.f43146c1;
+            if (iVar2 != null) {
+                iVar = iVar2;
+            } else {
+                gd.q z02 = z0();
+                if (z02 != null && B2(z02)) {
+                    iVar = i.c(this.R0, z02.f24203g);
+                    this.f43146c1 = iVar;
+                }
+            }
+        }
+        if (this.f43145b1 != iVar) {
+            this.f43145b1 = iVar;
+            this.S0.m(iVar);
+            this.f43147d1 = false;
+            int state = getState();
+            gd.l y02 = y0();
+            if (y02 != null && !this.U0.f()) {
+                if (w0.f40711a >= 23 && iVar != null && !this.Z0) {
+                    w2(y02, iVar);
+                } else {
+                    h1();
+                    Q0();
+                }
+            }
+            if (iVar != null && iVar != this.f43146c1) {
+                l2();
+                N1();
+                if (state == 2) {
+                    u2();
+                }
+                if (this.U0.f()) {
+                    this.U0.p(iVar, l0.f40641c);
+                    return;
+                }
+                return;
+            }
+            O1();
+            N1();
+            if (this.U0.f()) {
+                this.U0.b();
+            }
+        } else if (iVar != null && iVar != this.f43146c1) {
+            l2();
+            k2();
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public boolean z2(long j10, long j11) {
+        boolean z10;
+        boolean z11;
+        if (getState() == 2) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        if (this.f43151h1 ? this.f43149f1 : !z10 && !this.f43150g1) {
+            z11 = false;
+        } else {
+            z11 = true;
+        }
+        long elapsedRealtime = (SystemClock.elapsedRealtime() * 1000) - this.f43159p1;
+        if (this.f43153j1 != -9223372036854775807L || j10 < F0() || (!z11 && (!z10 || !A2(j11, elapsedRealtime)))) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override // gd.r
+    protected boolean A0() {
+        if (this.f43165v1 && w0.f40711a < 23) {
+            return true;
+        }
+        return false;
+    }
+
+    protected boolean A2(long j10, long j11) {
+        if (d2(j10) && j11 > 100000) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // gd.r
+    protected float B0(float f10, Format format, Format[] formatArr) {
+        float f11 = -1.0f;
+        for (Format format2 : formatArr) {
+            float f12 = format2.D;
+            if (f12 != -1.0f) {
+                f11 = Math.max(f11, f12);
+            }
+        }
+        if (f11 == -1.0f) {
+            return -1.0f;
+        }
+        return f11 * f10;
+    }
+
+    protected void C2(gd.l lVar, int i10, long j10) {
+        t0.a("skipVideoBuffer");
+        lVar.releaseOutputBuffer(i10, false);
+        t0.c();
+        this.M0.f12511f++;
+    }
+
+    @Override // gd.r
+    protected List D0(gd.t tVar, Format format, boolean z10) {
+        return gd.y.w(Z1(this.R0, tVar, format, z10, this.f43165v1), format);
+    }
+
+    protected void D2(int i10, int i11) {
+        DecoderCounters decoderCounters = this.M0;
+        decoderCounters.f12513h += i10;
+        int i12 = i10 + i11;
+        decoderCounters.f12512g += i12;
+        this.f43155l1 += i12;
+        int i13 = this.f43156m1 + i12;
+        this.f43156m1 = i13;
+        decoderCounters.f12514i = Math.max(i13, decoderCounters.f12514i);
+        int i14 = this.W0;
+        if (i14 > 0 && this.f43155l1 >= i14) {
+            g2();
+        }
+    }
+
+    @Override // gd.r
+    protected l.a E0(gd.q qVar, Format format, MediaCrypto mediaCrypto, float f10) {
+        int i10;
+        Surface surface;
+        i iVar = this.f43146c1;
+        if (iVar != null && iVar.f43199d != qVar.f24203g) {
+            p2();
+        }
+        String str = qVar.f24199c;
+        b Y1 = Y1(qVar, format, M());
+        this.Y0 = Y1;
+        boolean z10 = this.X0;
+        if (this.f43165v1) {
+            i10 = this.f43166w1;
+        } else {
+            i10 = 0;
+        }
+        MediaFormat c22 = c2(format, str, Y1, f10, z10, i10);
+        if (this.f43145b1 == null) {
+            if (B2(qVar)) {
+                if (this.f43146c1 == null) {
+                    this.f43146c1 = i.c(this.R0, qVar.f24203g);
+                }
+                this.f43145b1 = this.f43146c1;
+            } else {
+                throw new IllegalStateException();
+            }
+        }
+        if (this.U0.f()) {
+            c22 = this.U0.a(c22);
+        }
+        if (this.U0.f()) {
+            surface = this.U0.e();
+        } else {
+            surface = this.f43145b1;
+        }
+        return l.a.b(qVar, c22, format, surface, mediaCrypto);
+    }
+
+    protected void E2(long j10) {
+        this.M0.a(j10);
+        this.f43160q1 += j10;
+        this.f43161r1++;
+    }
+
+    @Override // gd.r
+    protected void H0(rc.f fVar) {
+        if (this.f43144a1) {
+            ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(fVar.f47778q);
+            if (byteBuffer.remaining() >= 7) {
+                byte b10 = byteBuffer.get();
+                short s10 = byteBuffer.getShort();
+                short s11 = byteBuffer.getShort();
+                byte b11 = byteBuffer.get();
+                byte b12 = byteBuffer.get();
+                byteBuffer.position(0);
+                if (b10 == -75 && s10 == 60 && s11 == 1 && b11 == 4) {
+                    if (b12 == 0 || b12 == 1) {
+                        byte[] bArr = new byte[byteBuffer.remaining()];
+                        byteBuffer.get(bArr);
+                        byteBuffer.position(0);
+                        t2(y0(), bArr);
+                    }
+                }
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r, com.google.android.exoplayer2.f
+    public void O() {
+        O1();
+        N1();
+        this.f43147d1 = false;
+        this.f43167x1 = null;
+        try {
+            super.O();
+        } finally {
+            this.T0.m(this.M0);
+            this.T0.t(VideoSize.f13596p);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r, com.google.android.exoplayer2.f
+    public void P(boolean z10, boolean z11) {
+        boolean z12;
+        super.P(z10, z11);
+        boolean z13 = I().f36895a;
+        if (z13 && this.f43166w1 == 0) {
+            z12 = false;
+        } else {
+            z12 = true;
+        }
+        oe.a.g(z12);
+        if (this.f43165v1 != z13) {
+            this.f43165v1 = z13;
+            h1();
+        }
+        this.T0.o(this.M0);
+        this.f43150g1 = z11;
+        this.f43151h1 = false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r, com.google.android.exoplayer2.f
+    public void Q(long j10, boolean z10) {
+        super.Q(j10, z10);
+        if (this.U0.f()) {
+            this.U0.c();
+        }
+        N1();
+        this.S0.j();
+        this.f43158o1 = -9223372036854775807L;
+        this.f43152i1 = -9223372036854775807L;
+        this.f43156m1 = 0;
+        if (z10) {
+            u2();
+        } else {
+            this.f43153j1 = -9223372036854775807L;
+        }
+    }
+
+    protected boolean Q1(String str) {
+        if (str.startsWith("OMX.google")) {
+            return false;
+        }
+        synchronized (h.class) {
+            try {
+                if (!A1) {
+                    B1 = U1();
+                    A1 = true;
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        return B1;
+    }
+
+    @Override // gd.r
+    protected void S0(Exception exc) {
+        oe.y.d("MediaCodecVideoRenderer", "Video codec error", exc);
+        this.T0.s(exc);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r, com.google.android.exoplayer2.f
+    public void T() {
+        try {
+            super.T();
+        } finally {
+            if (this.U0.f()) {
+                this.U0.n();
+            }
+            if (this.f43146c1 != null) {
+                p2();
+            }
+        }
+    }
+
+    @Override // gd.r
+    protected void T0(String str, l.a aVar, long j10, long j11) {
+        this.T0.k(str, j10, j11);
+        this.Z0 = Q1(str);
+        this.f43144a1 = ((gd.q) oe.a.e(z0())).p();
+        if (w0.f40711a >= 23 && this.f43165v1) {
+            this.f43167x1 = new c((gd.l) oe.a.e(y0()));
+        }
+        this.U0.j(str);
+    }
+
+    protected void T1(gd.l lVar, int i10, long j10) {
+        t0.a("dropVideoBuffer");
+        lVar.releaseOutputBuffer(i10, false);
+        t0.c();
+        D2(0, 1);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r, com.google.android.exoplayer2.f
+    public void U() {
+        super.U();
+        this.f43155l1 = 0;
+        this.f43154k1 = SystemClock.elapsedRealtime();
+        this.f43159p1 = SystemClock.elapsedRealtime() * 1000;
+        this.f43160q1 = 0L;
+        this.f43161r1 = 0;
+        this.S0.k();
+    }
+
+    @Override // gd.r
+    protected void U0(String str) {
+        this.T0.l(str);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r, com.google.android.exoplayer2.f
+    public void V() {
+        this.f43153j1 = -9223372036854775807L;
+        g2();
+        i2();
+        this.S0.l();
+        super.V();
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r
+    public DecoderReuseEvaluation V0(mc.x xVar) {
+        DecoderReuseEvaluation V0 = super.V0(xVar);
+        this.T0.p(xVar.f36907b, V0);
+        return V0;
+    }
+
+    protected Pair V1(pe.c cVar) {
+        if (!pe.c.f(cVar)) {
+            pe.c cVar2 = pe.c.f43099q;
+            return Pair.create(cVar2, cVar2);
+        } else if (cVar.f43108i == 7) {
+            return Pair.create(cVar, cVar.b().d(6).a());
+        } else {
+            return Pair.create(cVar, cVar);
+        }
+    }
+
+    @Override // gd.r
+    protected void W0(Format format, MediaFormat mediaFormat) {
+        boolean z10;
+        int integer;
+        int integer2;
+        int i10;
+        int i11;
+        gd.l y02 = y0();
+        if (y02 != null) {
+            y02.b(this.f43148e1);
+        }
+        int i12 = 0;
+        if (this.f43165v1) {
+            i11 = format.B;
+            i10 = format.C;
+        } else {
+            oe.a.e(mediaFormat);
+            if (mediaFormat.containsKey("crop-right") && mediaFormat.containsKey("crop-left") && mediaFormat.containsKey("crop-bottom") && mediaFormat.containsKey("crop-top")) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            if (z10) {
+                integer = (mediaFormat.getInteger("crop-right") - mediaFormat.getInteger("crop-left")) + 1;
+            } else {
+                integer = mediaFormat.getInteger("width");
+            }
+            if (z10) {
+                integer2 = (mediaFormat.getInteger("crop-bottom") - mediaFormat.getInteger("crop-top")) + 1;
+            } else {
+                integer2 = mediaFormat.getInteger("height");
+            }
+            int i13 = integer;
+            i10 = integer2;
+            i11 = i13;
+        }
+        float f10 = format.F;
+        if (P1()) {
+            int i14 = format.E;
+            if (i14 == 90 || i14 == 270) {
+                f10 = 1.0f / f10;
+                int i15 = i10;
+                i10 = i11;
+                i11 = i15;
+            }
+        } else if (!this.U0.f()) {
+            i12 = format.E;
+        }
+        this.f43163t1 = new VideoSize(i11, i10, i12, f10);
+        this.S0.g(format.D);
+        if (this.U0.f()) {
+            this.U0.o(format.b().n0(i11).S(i10).f0(i12).c0(f10).G());
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r
+    public void Y0(long j10) {
+        super.Y0(j10);
+        if (!this.f43165v1) {
+            this.f43157n1--;
+        }
+    }
+
+    protected b Y1(gd.q qVar, Format format, Format[] formatArr) {
+        boolean z10;
+        int W1;
+        int i10 = format.B;
+        int i11 = format.C;
+        int a22 = a2(qVar, format);
+        if (formatArr.length == 1) {
+            if (a22 != -1 && (W1 = W1(qVar, format)) != -1) {
+                a22 = Math.min((int) (a22 * 1.5f), W1);
+            }
+            return new b(i10, i11, a22);
+        }
+        int length = formatArr.length;
+        boolean z11 = false;
+        for (int i12 = 0; i12 < length; i12++) {
+            Format format2 = formatArr[i12];
+            if (format.I != null && format2.I == null) {
+                format2 = format2.b().L(format.I).G();
+            }
+            if (qVar.f(format, format2).f12521d != 0) {
+                int i13 = format2.B;
+                if (i13 != -1 && format2.C != -1) {
+                    z10 = false;
+                } else {
+                    z10 = true;
+                }
+                z11 |= z10;
+                i10 = Math.max(i10, i13);
+                i11 = Math.max(i11, format2.C);
+                a22 = Math.max(a22, a2(qVar, format2));
+            }
+        }
+        if (z11) {
+            oe.y.i("MediaCodecVideoRenderer", "Resolutions unknown. Codec max resolution: " + i10 + "x" + i11);
+            Point X1 = X1(qVar, format);
+            if (X1 != null) {
+                i10 = Math.max(i10, X1.x);
+                i11 = Math.max(i11, X1.y);
+                a22 = Math.max(a22, W1(qVar, format.b().n0(i10).S(i11).G()));
+                oe.y.i("MediaCodecVideoRenderer", "Codec max resolution adjusted to: " + i10 + "x" + i11);
+            }
+        }
+        return new b(i10, i11, a22);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r
+    public void Z0() {
+        super.Z0();
+        N1();
+    }
+
+    @Override // gd.r
+    protected void a1(rc.f fVar) {
+        boolean z10 = this.f43165v1;
+        if (!z10) {
+            this.f43157n1++;
+        }
+        if (w0.f40711a < 23 && z10) {
+            n2(fVar.f47777p);
+        }
+    }
+
+    @Override // gd.r
+    protected void b1(Format format) {
+        if (!this.U0.f()) {
+            this.U0.h(format, F0());
+        }
+    }
+
+    @Override // gd.r
+    protected DecoderReuseEvaluation c0(gd.q qVar, Format format, Format format2) {
+        int i10;
+        DecoderReuseEvaluation f10 = qVar.f(format, format2);
+        int i11 = f10.f12522e;
+        int i12 = format2.B;
+        b bVar = this.Y0;
+        if (i12 > bVar.f43169a || format2.C > bVar.f43170b) {
+            i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+        }
+        if (a2(qVar, format2) > this.Y0.f43171c) {
+            i11 |= 64;
+        }
+        int i13 = i11;
+        String str = qVar.f24197a;
+        if (i13 != 0) {
+            i10 = 0;
+        } else {
+            i10 = f10.f12521d;
+        }
+        return new DecoderReuseEvaluation(str, format, format2, i10, i13);
+    }
+
+    protected MediaFormat c2(Format format, String str, b bVar, float f10, boolean z10, int i10) {
+        Pair r10;
+        MediaFormat mediaFormat = new MediaFormat();
+        mediaFormat.setString("mime", str);
+        mediaFormat.setInteger("width", format.B);
+        mediaFormat.setInteger("height", format.C);
+        b0.e(mediaFormat, format.f11729y);
+        b0.c(mediaFormat, "frame-rate", format.D);
+        b0.d(mediaFormat, "rotation-degrees", format.E);
+        b0.b(mediaFormat, format.I);
+        if ("video/dolby-vision".equals(format.f11727w) && (r10 = gd.y.r(format)) != null) {
+            b0.d(mediaFormat, "profile", ((Integer) r10.first).intValue());
+        }
+        mediaFormat.setInteger("max-width", bVar.f43169a);
+        mediaFormat.setInteger("max-height", bVar.f43170b);
+        b0.d(mediaFormat, "max-input-size", bVar.f43171c);
+        if (w0.f40711a >= 23) {
+            mediaFormat.setInteger("priority", 0);
+            if (f10 != -1.0f) {
+                mediaFormat.setFloat("operating-rate", f10);
+            }
+        }
+        if (z10) {
+            mediaFormat.setInteger("no-post-process", 1);
+            mediaFormat.setInteger("auto-frc", 0);
+        }
+        if (i10 != 0) {
+            R1(mediaFormat, i10);
+        }
+        return mediaFormat;
+    }
+
+    @Override // gd.r, com.google.android.exoplayer2.v1
+    public boolean d() {
+        boolean d10 = super.d();
+        if (this.U0.f()) {
+            return d10 & this.U0.m();
+        }
+        return d10;
+    }
+
+    @Override // gd.r
+    protected boolean d1(long j10, long j11, gd.l lVar, ByteBuffer byteBuffer, int i10, int i11, int i12, long j12, boolean z10, boolean z11, Format format) {
+        boolean z12;
+        long j13;
+        boolean z13;
+        long j14;
+        boolean z14;
+        oe.a.e(lVar);
+        if (this.f43152i1 == -9223372036854775807L) {
+            this.f43152i1 = j10;
+        }
+        if (j12 != this.f43158o1) {
+            if (!this.U0.f()) {
+                this.S0.h(j12);
+            }
+            this.f43158o1 = j12;
+        }
+        long F0 = j12 - F0();
+        if (z10 && !z11) {
+            C2(lVar, i10, F0);
+            return true;
+        }
+        if (getState() == 2) {
+            z12 = true;
+        } else {
+            z12 = false;
+        }
+        long M1 = M1(j10, j11, SystemClock.elapsedRealtime() * 1000, j12, z12);
+        if (this.f43145b1 == this.f43146c1) {
+            if (!d2(M1)) {
+                return false;
+            }
+            C2(lVar, i10, F0);
+            E2(M1);
+            return true;
+        } else if (z2(j10, M1)) {
+            if (this.U0.f()) {
+                if (!this.U0.i(format, F0, z11)) {
+                    return false;
+                }
+                z14 = false;
+            } else {
+                z14 = true;
+            }
+            r2(lVar, format, i10, F0, z14);
+            E2(M1);
+            return true;
+        } else {
+            if (z12 && j10 != this.f43152i1) {
+                long nanoTime = System.nanoTime();
+                long b10 = this.S0.b((M1 * 1000) + nanoTime);
+                if (!this.U0.f()) {
+                    M1 = (b10 - nanoTime) / 1000;
+                }
+                if (this.f43153j1 != -9223372036854775807L) {
+                    j13 = M1;
+                    z13 = true;
+                } else {
+                    j13 = M1;
+                    z13 = false;
+                }
+                long j15 = j13;
+                if (x2(j15, j11, z11) && f2(j10, z13)) {
+                    return false;
+                }
+                if (y2(j15, j11, z11)) {
+                    if (z13) {
+                        C2(lVar, i10, F0);
+                    } else {
+                        T1(lVar, i10, F0);
+                    }
+                    E2(j15);
+                    return true;
+                } else if (this.U0.f()) {
+                    this.U0.l(j10, j11);
+                    if (!this.U0.i(format, F0, z11)) {
+                        return false;
+                    }
+                    r2(lVar, format, i10, F0, false);
+                    return true;
+                } else if (w0.f40711a >= 21) {
+                    if (j15 < 50000) {
+                        if (b10 == this.f43162s1) {
+                            C2(lVar, i10, F0);
+                            j14 = b10;
+                        } else {
+                            m2(F0, b10, format);
+                            s2(lVar, i10, F0, b10);
+                            j14 = b10;
+                        }
+                        E2(j15);
+                        this.f43162s1 = j14;
+                        return true;
+                    }
+                } else if (j15 < 30000) {
+                    if (j15 > 11000) {
+                        try {
+                            Thread.sleep((j15 - 10000) / 1000);
+                        } catch (InterruptedException unused) {
+                            Thread.currentThread().interrupt();
+                            return false;
+                        }
+                    }
+                    m2(F0, b10, format);
+                    q2(lVar, i10, F0);
+                    E2(j15);
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+
+    protected boolean f2(long j10, boolean z10) {
+        int Z = Z(j10);
+        if (Z == 0) {
+            return false;
+        }
+        if (z10) {
+            DecoderCounters decoderCounters = this.M0;
+            decoderCounters.f12509d += Z;
+            decoderCounters.f12511f += this.f43157n1;
+        } else {
+            this.M0.f12515j++;
+            D2(Z, this.f43157n1);
+        }
+        v0();
+        if (this.U0.f()) {
+            this.U0.c();
+        }
+        return true;
+    }
+
+    @Override // com.google.android.exoplayer2.v1, com.google.android.exoplayer2.w1
+    public String getName() {
+        return "MediaCodecVideoRenderer";
+    }
+
+    void h2() {
+        this.f43151h1 = true;
+        if (!this.f43149f1) {
+            this.f43149f1 = true;
+            this.T0.q(this.f43145b1);
+            this.f43147d1 = true;
+        }
+    }
+
+    @Override // gd.r, com.google.android.exoplayer2.v1
+    public boolean isReady() {
+        i iVar;
+        if (super.isReady() && ((!this.U0.f() || this.U0.g()) && (this.f43149f1 || (((iVar = this.f43146c1) != null && this.f43145b1 == iVar) || y0() == null || this.f43165v1)))) {
+            this.f43153j1 = -9223372036854775807L;
+            return true;
+        } else if (this.f43153j1 == -9223372036854775807L) {
+            return false;
+        } else {
+            if (SystemClock.elapsedRealtime() < this.f43153j1) {
+                return true;
+            }
+            this.f43153j1 = -9223372036854775807L;
+            return false;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gd.r
+    public void j1() {
+        super.j1();
+        this.f43157n1 = 0;
+    }
+
+    @Override // gd.r
+    protected gd.m m0(Throwable th2, gd.q qVar) {
+        return new g(th2, qVar, this.f43145b1);
+    }
+
+    protected void n2(long j10) {
+        A1(j10);
+        j2(this.f43163t1);
+        this.M0.f12510e++;
+        h2();
+        Y0(j10);
+    }
+
+    @Override // com.google.android.exoplayer2.f, com.google.android.exoplayer2.s1.b
+    public void o(int i10, Object obj) {
+        Surface surface;
+        if (i10 != 1) {
+            if (i10 != 7) {
+                if (i10 != 10) {
+                    if (i10 != 4) {
+                        if (i10 != 5) {
+                            if (i10 != 13) {
+                                if (i10 != 14) {
+                                    super.o(i10, obj);
+                                    return;
+                                }
+                                l0 l0Var = (l0) oe.a.e(obj);
+                                if (l0Var.b() != 0 && l0Var.a() != 0 && (surface = this.f43145b1) != null) {
+                                    this.U0.p(surface, l0Var);
+                                    return;
+                                }
+                                return;
+                            }
+                            this.U0.q((List) oe.a.e(obj));
+                            return;
+                        }
+                        this.S0.o(((Integer) obj).intValue());
+                        return;
+                    }
+                    this.f43148e1 = ((Integer) obj).intValue();
+                    gd.l y02 = y0();
+                    if (y02 != null) {
+                        y02.b(this.f43148e1);
+                        return;
+                    }
+                    return;
+                }
+                int intValue = ((Integer) obj).intValue();
+                if (this.f43166w1 != intValue) {
+                    this.f43166w1 = intValue;
+                    if (this.f43165v1) {
+                        h1();
+                        return;
+                    }
+                    return;
+                }
+                return;
+            }
+            this.f43168y1 = (l) obj;
+            return;
+        }
+        v2(obj);
+    }
+
+    protected void q2(gd.l lVar, int i10, long j10) {
+        t0.a("releaseOutputBuffer");
+        lVar.releaseOutputBuffer(i10, true);
+        t0.c();
+        this.M0.f12510e++;
+        this.f43156m1 = 0;
+        if (!this.U0.f()) {
+            this.f43159p1 = SystemClock.elapsedRealtime() * 1000;
+            j2(this.f43163t1);
+            h2();
+        }
+    }
+
+    protected void s2(gd.l lVar, int i10, long j10, long j11) {
+        t0.a("releaseOutputBuffer");
+        lVar.f(i10, j11);
+        t0.c();
+        this.M0.f12510e++;
+        this.f43156m1 = 0;
+        if (!this.U0.f()) {
+            this.f43159p1 = SystemClock.elapsedRealtime() * 1000;
+            j2(this.f43163t1);
+            h2();
+        }
+    }
+
+    @Override // gd.r
+    protected boolean t1(gd.q qVar) {
+        if (this.f43145b1 == null && !B2(qVar)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override // gd.r, com.google.android.exoplayer2.v1
+    public void w(float f10, float f11) {
+        super.w(f10, f11);
+        this.S0.i(f10);
+    }
+
+    @Override // gd.r
+    protected int w1(gd.t tVar, Format format) {
+        boolean z10;
+        boolean z11;
+        int i10;
+        int i11;
+        int i12;
+        int i13;
+        int i14 = 0;
+        if (!c0.s(format.f11727w)) {
+            return w1.b(0);
+        }
+        if (format.f11730z != null) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        List Z1 = Z1(this.R0, tVar, format, z10, false);
+        if (z10 && Z1.isEmpty()) {
+            Z1 = Z1(this.R0, tVar, format, false, false);
+        }
+        if (Z1.isEmpty()) {
+            return w1.b(1);
+        }
+        if (!gd.r.x1(format)) {
+            return w1.b(2);
+        }
+        gd.q qVar = (gd.q) Z1.get(0);
+        boolean o10 = qVar.o(format);
+        if (!o10) {
+            for (int i15 = 1; i15 < Z1.size(); i15++) {
+                gd.q qVar2 = (gd.q) Z1.get(i15);
+                if (qVar2.o(format)) {
+                    z11 = false;
+                    o10 = true;
+                    qVar = qVar2;
+                    break;
+                }
+            }
+        }
+        z11 = true;
+        if (o10) {
+            i10 = 4;
+        } else {
+            i10 = 3;
+        }
+        if (qVar.r(format)) {
+            i11 = 16;
+        } else {
+            i11 = 8;
+        }
+        if (qVar.f24204h) {
+            i12 = 64;
+        } else {
+            i12 = 0;
+        }
+        if (z11) {
+            i13 = IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        } else {
+            i13 = 0;
+        }
+        if (w0.f40711a >= 26 && "video/dolby-vision".equals(format.f11727w) && !a.a(this.R0)) {
+            i13 = IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+        }
+        if (o10) {
+            List Z12 = Z1(this.R0, tVar, format, z10, true);
+            if (!Z12.isEmpty()) {
+                gd.q qVar3 = (gd.q) gd.y.w(Z12, format).get(0);
+                if (qVar3.o(format) && qVar3.r(format)) {
+                    i14 = 32;
+                }
+            }
+        }
+        return w1.l(i10, i11, i14, i12, i13);
+    }
+
+    protected void w2(gd.l lVar, Surface surface) {
+        lVar.c(surface);
+    }
+
+    protected boolean x2(long j10, long j11, boolean z10) {
+        if (e2(j10) && !z10) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // gd.r, com.google.android.exoplayer2.v1
+    public void y(long j10, long j11) {
+        super.y(j10, j11);
+        if (this.U0.f()) {
+            this.U0.l(j10, j11);
+        }
+    }
+
+    protected boolean y2(long j10, long j11, boolean z10) {
+        if (d2(j10) && !z10) {
+            return true;
+        }
+        return false;
+    }
+
+    public h(Context context, l.b bVar, gd.t tVar, long j10, boolean z10, Handler handler, y yVar, int i10, float f10) {
+        super(2, bVar, tVar, z10, f10);
+        this.V0 = j10;
+        this.W0 = i10;
+        Context applicationContext = context.getApplicationContext();
+        this.R0 = applicationContext;
+        n nVar = new n(applicationContext);
+        this.S0 = nVar;
+        this.T0 = new y.a(handler, yVar);
+        this.U0 = new d(nVar, this);
+        this.X0 = S1();
+        this.f43153j1 = -9223372036854775807L;
+        this.f43148e1 = 1;
+        this.f43163t1 = VideoSize.f13596p;
+        this.f43166w1 = 0;
+        O1();
+    }
+}

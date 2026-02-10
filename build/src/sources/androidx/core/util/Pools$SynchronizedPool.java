@@ -5,17 +5,17 @@ import kotlin.jvm.internal.Intrinsics;
 public class Pools$SynchronizedPool extends Pools$SimplePool {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f3667c;
+    private final Object f3364c;
 
     public Pools$SynchronizedPool(int i10) {
         super(i10);
-        this.f3667c = new Object();
+        this.f3364c = new Object();
     }
 
     @Override // androidx.core.util.Pools$SimplePool, b2.d
     public Object acquire() {
         Object acquire;
-        synchronized (this.f3667c) {
+        synchronized (this.f3364c) {
             acquire = super.acquire();
         }
         return acquire;
@@ -25,7 +25,7 @@ public class Pools$SynchronizedPool extends Pools$SimplePool {
     public boolean release(Object instance) {
         boolean release;
         Intrinsics.checkNotNullParameter(instance, "instance");
-        synchronized (this.f3667c) {
+        synchronized (this.f3364c) {
             release = super.release(instance);
         }
         return release;

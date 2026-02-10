@@ -25,14 +25,14 @@ import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class w1 {
     public static /* synthetic */ void c(z7.b bVar, boolean z10, AtomicReference atomicReference, k7 k7Var, IScope iScope) {
-        z7 J = iScope.J();
-        if (J != null) {
-            if (J.q(bVar, null, z10, null)) {
-                if (J.l() == z7.b.Crashed) {
-                    J.c();
-                    iScope.Q();
+        z7 I = iScope.I();
+        if (I != null) {
+            if (I.q(bVar, null, z10, null)) {
+                if (I.l() == z7.b.Crashed) {
+                    I.c();
+                    iScope.P();
                 }
-                atomicReference.set(J);
+                atomicReference.set(I);
                 return;
             }
             return;
@@ -48,7 +48,7 @@ public abstract class w1 {
         } else {
             HashMap hashMap = new HashMap();
             hashMap.put("description", iVar.d());
-            hashMap.put("start_timestamp_ms", Long.valueOf(iVar.j()));
+            hashMap.put("start_timestamp_ms", Long.valueOf(iVar.k()));
             hashMap.put("end_timestamp_ms", Long.valueOf(iVar.g()));
             list.add(hashMap);
         }
@@ -86,7 +86,7 @@ public abstract class w1 {
                 arrayList.add(l6.G(serializer, l10));
                 h(b10, (z10 && g10.b().getThreadChecker().a()) ? true : true);
                 if (z10) {
-                    g10.q();
+                    g10.p();
                 }
             }
             io.sentry.protocol.x w10 = g10.w(new l5(a10.b(), arrayList));
@@ -144,7 +144,7 @@ public abstract class w1 {
         hashMap.put("spans", arrayList);
         hashMap.put("type", q10.n().toString().toLowerCase(Locale.ROOT));
         if (q10.l().q()) {
-            hashMap.put("app_start_timestamp_ms", Long.valueOf(q10.l().j()));
+            hashMap.put("app_start_timestamp_ms", Long.valueOf(q10.l().k()));
         }
         return hashMap;
     }
@@ -167,17 +167,17 @@ public abstract class w1 {
                 ILogger logger = sentryAndroidOptions.getLogger();
                 io.sentry.util.x xVar = new io.sentry.util.x(hashMap);
                 m1 k10 = m1.k(context, sentryAndroidOptions);
-                iScope.z().q(k10.c(true, true));
-                iScope.z().u(k10.l());
-                io.sentry.protocol.h0 D = iScope.D();
-                if (D == null) {
-                    D = new io.sentry.protocol.h0();
-                    iScope.k(D);
+                iScope.y().q(k10.c(true, true));
+                iScope.y().u(k10.l());
+                io.sentry.protocol.h0 C = iScope.C();
+                if (C == null) {
+                    C = new io.sentry.protocol.h0();
+                    iScope.j(C);
                 }
-                if (D.i() == null) {
+                if (C.i() == null) {
                     try {
-                        D.o((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.s1
-                            @Override // io.sentry.util.runtime.a.InterfaceC0408a
+                        C.o((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0434a() { // from class: io.sentry.android.core.s1
+                            @Override // io.sentry.util.runtime.a.InterfaceC0434a
                             public final Object run() {
                                 String a10;
                                 a10 = r1.a(context);
@@ -188,7 +188,7 @@ public abstract class w1 {
                         logger.b(SentryLevel.ERROR, "Could not retrieve installation ID", e10);
                     }
                 }
-                io.sentry.protocol.a d10 = iScope.z().d();
+                io.sentry.protocol.a d10 = iScope.y().d();
                 if (d10 == null) {
                     d10 = new io.sentry.protocol.a();
                 }
@@ -202,14 +202,14 @@ public abstract class w1 {
                 if (o10 != null) {
                     e1.x(o10, x0Var, k10, d10);
                 }
-                iScope.z().o(d10);
-                xVar.e("user").j(logger, iScope.D());
-                xVar.e("contexts").j(logger, iScope.z());
-                xVar.e("tags").j(logger, iScope.w());
+                iScope.y().o(d10);
+                xVar.e("user").j(logger, iScope.C());
+                xVar.e("contexts").j(logger, iScope.y());
+                xVar.e("tags").j(logger, iScope.v());
                 xVar.e("extras").j(logger, iScope.getExtras());
-                xVar.e("fingerprint").j(logger, iScope.C());
-                xVar.e("level").j(logger, iScope.n());
-                xVar.e("breadcrumbs").j(logger, iScope.t());
+                xVar.e("fingerprint").j(logger, iScope.B());
+                xVar.e("level").j(logger, iScope.m());
+                xVar.e("breadcrumbs").j(logger, iScope.s());
             } catch (Throwable th2) {
                 sentryAndroidOptions.getLogger().b(SentryLevel.ERROR, "Could not serialize scope.", th2);
                 return new HashMap();

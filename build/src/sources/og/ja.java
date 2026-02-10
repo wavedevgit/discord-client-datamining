@@ -1,96 +1,42 @@
 package og;
+
+import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class ja {
+final class ja implements zi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f42212a;
+    static final ja f40976a = new ja();
 
-    /* renamed from: b  reason: collision with root package name */
-    private String f42213b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private String f42214c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private String f42215d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private mc f42216e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private String f42217f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private Boolean f42218g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private Boolean f42219h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private Boolean f42220i;
-
-    /* renamed from: j  reason: collision with root package name */
-    private Integer f42221j;
-
-    /* renamed from: k  reason: collision with root package name */
-    private Integer f42222k;
-
-    public final ja b(String str) {
-        this.f42212a = str;
-        return this;
+    static {
+        c.b a10 = zi.c.a("detectorOptions");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = zi.c.a("errorCodes");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = zi.c.a("totalInitializationMs");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
+        c.b a13 = zi.c.a("loggingInitializationMs");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        a13.b(l2Var4.b()).a();
+        c.b a14 = zi.c.a("otherErrors");
+        l2 l2Var5 = new l2();
+        l2Var5.a(5);
+        a14.b(l2Var5.b()).a();
     }
 
-    public final ja c(String str) {
-        this.f42213b = str;
-        return this;
+    private ja() {
     }
 
-    public final ja d(Integer num) {
-        this.f42221j = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
-    }
-
-    public final ja e(Boolean bool) {
-        this.f42218g = bool;
-        return this;
-    }
-
-    public final ja f(Boolean bool) {
-        this.f42220i = bool;
-        return this;
-    }
-
-    public final ja g(Boolean bool) {
-        this.f42219h = bool;
-        return this;
-    }
-
-    public final ja h(mc mcVar) {
-        this.f42216e = mcVar;
-        return this;
-    }
-
-    public final ja i(String str) {
-        this.f42217f = str;
-        return this;
-    }
-
-    public final ja j(String str) {
-        this.f42214c = str;
-        return this;
-    }
-
-    public final ja k(Integer num) {
-        this.f42222k = num;
-        return this;
-    }
-
-    public final ja l(String str) {
-        this.f42215d = str;
-        return this;
-    }
-
-    public final ma m() {
-        return new ma(this, null);
+    @Override // zi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        zi.e eVar = (zi.e) obj2;
+        throw null;
     }
 }

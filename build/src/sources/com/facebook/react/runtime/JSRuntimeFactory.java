@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class JSRuntimeFactory {
     @NotNull
     private static final Companion Companion = new Companion(null);
-    @fb.a
+    @gb.a
     @NotNull
     private final HybridData mHybridData;
 

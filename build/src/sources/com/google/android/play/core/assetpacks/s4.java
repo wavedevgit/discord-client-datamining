@@ -4,5 +4,5 @@ package com.google.android.play.core.assetpacks;
 public abstract class s4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final wh.j f16002a = new wh.j();
+    private static final xh.j f16142a = new xh.j();
 }

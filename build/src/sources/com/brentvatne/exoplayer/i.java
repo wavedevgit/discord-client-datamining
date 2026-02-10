@@ -6,28 +6,28 @@ import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 import com.google.android.exoplayer2.metadata.Metadata;
-import ld.m;
+import md.m;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class i {
 
     /* renamed from: c  reason: collision with root package name */
-    static final String[] f8267c = {"onVideoLoadStart", "onVideoLoad", "onVideoError", "onVideoProgress", "onVideoSeek", "onVideoEnd", "onVideoFullscreenPlayerWillPresent", "onVideoFullscreenPlayerDidPresent", "onVideoFullscreenPlayerWillDismiss", "onVideoFullscreenPlayerDidDismiss", "onPlaybackStalled", "onPlaybackResume", "onReadyForDisplay", "onVideoBuffer", "onVideoIdle", "onTimedMetadata", "onVideoAudioBecomingNoisy", "onAudioFocusChanged", "onPlaybackRateChange", "onVideoBandwidthUpdate"};
+    static final String[] f8407c = {"onVideoLoadStart", "onVideoLoad", "onVideoError", "onVideoProgress", "onVideoSeek", "onVideoEnd", "onVideoFullscreenPlayerWillPresent", "onVideoFullscreenPlayerDidPresent", "onVideoFullscreenPlayerWillDismiss", "onVideoFullscreenPlayerDidDismiss", "onPlaybackStalled", "onPlaybackResume", "onReadyForDisplay", "onVideoBuffer", "onVideoIdle", "onTimedMetadata", "onVideoAudioBecomingNoisy", "onAudioFocusChanged", "onPlaybackRateChange", "onVideoBandwidthUpdate"};
 
     /* renamed from: a  reason: collision with root package name */
-    private final RCTEventEmitter f8268a;
+    private final RCTEventEmitter f8408a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f8269b = -1;
+    private int f8409b = -1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(ReactContext reactContext) {
-        this.f8268a = (RCTEventEmitter) reactContext.getJSModule(RCTEventEmitter.class);
+        this.f8408a = (RCTEventEmitter) reactContext.getJSModule(RCTEventEmitter.class);
     }
 
     private void q(String str, WritableMap writableMap) {
-        RCTEventEmitter rCTEventEmitter = this.f8268a;
-        int i10 = this.f8269b;
+        RCTEventEmitter rCTEventEmitter = this.f8408a;
+        int i10 = this.f8409b;
         if (writableMap == null) {
             writableMap = Arguments.createMap();
         }
@@ -168,7 +168,7 @@ public class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void s(int i10) {
-        this.f8269b = i10;
+        this.f8409b = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -177,23 +177,23 @@ public class i {
         WritableArray createArray = Arguments.createArray();
         for (int i10 = 0; i10 < metadata.e(); i10++) {
             Metadata.b d10 = metadata.d(i10);
-            if (d10 instanceof ld.i) {
-                ld.i iVar = (ld.i) d10;
+            if (d10 instanceof md.i) {
+                md.i iVar = (md.i) d10;
                 if (iVar instanceof m) {
-                    str = ((m) iVar).f36121i;
+                    str = ((m) iVar).f36951i;
                 } else {
                     str = "";
                 }
-                String str2 = iVar.f36109d;
+                String str2 = iVar.f36939d;
                 WritableMap createMap = Arguments.createMap();
                 createMap.putString("identifier", str2);
                 createMap.putString("value", str);
                 createArray.pushMap(createMap);
-            } else if (d10 instanceof id.a) {
-                id.a aVar = (id.a) d10;
+            } else if (d10 instanceof jd.a) {
+                jd.a aVar = (jd.a) d10;
                 WritableMap createMap2 = Arguments.createMap();
-                createMap2.putString("identifier", aVar.f26697d);
-                createMap2.putString("value", aVar.f26698e);
+                createMap2.putString("identifier", aVar.f30102d);
+                createMap2.putString("value", aVar.f30103e);
                 createArray.pushMap(createMap2);
             }
         }

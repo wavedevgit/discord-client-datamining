@@ -2,9 +2,9 @@ package com.discord.crash_reporting.system_logs;
 
 import android.app.ActivityManager;
 import android.content.Context;
-import bs.r;
 import com.discord.misc.utilities.collections.CircularByteBuffer;
 import com.facebook.react.uimanager.ViewProps;
+import cs.r;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
@@ -86,8 +86,8 @@ public final class SystemLogCapture {
                         return readFromLogcat$lambda$2$lambda$1;
                     }
                 });
-                Unit unit = Unit.f32056a;
-                bs.c.a(bufferedReader, null);
+                Unit unit = Unit.f31765a;
+                cs.c.a(bufferedReader, null);
             } finally {
                 start.destroy();
             }
@@ -107,7 +107,7 @@ public final class SystemLogCapture {
         if (SystemLogUtils.INSTANCE.getRegexExtractTombstone$crash_reporting_release().i(line)) {
             systemLogCapture.tombstoneBuffer.addLine(line);
         }
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     private final void start() {
@@ -139,7 +139,7 @@ public final class SystemLogCapture {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit startThread$lambda$0(SystemLogCapture systemLogCapture) {
         systemLogCapture.start();
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     public final void appendOutput(@NotNull StringBuilder sb2) {
@@ -151,7 +151,7 @@ public final class SystemLogCapture {
     public final void startThread(@NotNull Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         this.activityManager = (ActivityManager) context.getSystemService(ActivityManager.class);
-        ur.a.b(true, true, null, SystemLogCapture.class.getSimpleName(), 0, new Function0() { // from class: com.discord.crash_reporting.system_logs.b
+        vr.a.b(true, true, null, SystemLogCapture.class.getSimpleName(), 0, new Function0() { // from class: com.discord.crash_reporting.system_logs.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit startThread$lambda$0;

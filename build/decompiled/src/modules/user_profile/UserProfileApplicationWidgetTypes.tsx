@@ -89,14 +89,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'isEqual';
         var0.key = var5;
         var5 = function arg0() {
-            _fun88008: for (var _fun88008_ip = 0;;) switch (_fun88008_ip) {
+            _fun88009: for (var _fun88009_ip = 0;;) switch (_fun88009_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = _closure2_slot0;
                     var0 = var1 instanceof var0;
                     if (!var0) {
-                        _fun88008_ip = 34;
-                        continue _fun88008
+                        _fun88009_ip = 34;
+                        continue _fun88009
                     }
                 case 17:
                     var2 = var1.applicationId;

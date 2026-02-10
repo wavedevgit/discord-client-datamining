@@ -1,28 +1,49 @@
 package df;
-
-import android.content.Intent;
-import android.os.Parcel;
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements Parcelable.Creator {
-    @Override // android.os.Parcelable.Creator
-    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        Intent intent = null;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            if (hf.b.l(r10) != 1) {
-                hf.b.z(parcel, r10);
-            } else {
-                intent = (Intent) hf.b.e(parcel, r10, Intent.CREATOR);
-            }
-        }
-        hf.b.k(parcel, A);
-        return new com.google.android.gms.cloudmessaging.a(intent);
-    }
+public abstract class b {
 
-    @Override // android.os.Parcelable.Creator
-    public final /* synthetic */ Object[] newArray(int i10) {
-        return new com.google.android.gms.cloudmessaging.a[i10];
-    }
+    /* renamed from: a  reason: collision with root package name */
+    public static int f20698a = 2131951703;
+
+    /* renamed from: b  reason: collision with root package name */
+    public static int f20699b = 2131951704;
+
+    /* renamed from: c  reason: collision with root package name */
+    public static int f20700c = 2131951705;
+
+    /* renamed from: d  reason: collision with root package name */
+    public static int f20701d = 2131951706;
+
+    /* renamed from: e  reason: collision with root package name */
+    public static int f20702e = 2131951707;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static int f20703f = 2131951708;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static int f20704g = 2131951709;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static int f20705h = 2131951710;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f20706i = 2131951712;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f20707j = 2131951713;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f20708k = 2131951714;
+
+    /* renamed from: l  reason: collision with root package name */
+    public static int f20709l = 2131951715;
+
+    /* renamed from: m  reason: collision with root package name */
+    public static int f20710m = 2131951716;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static int f20711n = 2131951717;
+
+    /* renamed from: o  reason: collision with root package name */
+    public static int f20712o = 2131951718;
 }

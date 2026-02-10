@@ -6,33 +6,33 @@ import android.os.Parcelable;
 public final class i implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
+        int A = jf.b.A(parcel);
         byte[] bArr = null;
         byte[] bArr2 = null;
         byte[] bArr3 = null;
         long j10 = 0;
         while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            int l10 = hf.b.l(r10);
+            int r10 = jf.b.r(parcel);
+            int l10 = jf.b.l(r10);
             if (l10 != 1) {
                 if (l10 != 2) {
                     if (l10 != 3) {
                         if (l10 != 4) {
-                            hf.b.z(parcel, r10);
+                            jf.b.z(parcel, r10);
                         } else {
-                            bArr3 = hf.b.b(parcel, r10);
+                            bArr3 = jf.b.b(parcel, r10);
                         }
                     } else {
-                        bArr2 = hf.b.b(parcel, r10);
+                        bArr2 = jf.b.b(parcel, r10);
                     }
                 } else {
-                    bArr = hf.b.b(parcel, r10);
+                    bArr = jf.b.b(parcel, r10);
                 }
             } else {
-                j10 = hf.b.v(parcel, r10);
+                j10 = jf.b.v(parcel, r10);
             }
         }
-        hf.b.k(parcel, A);
+        jf.b.k(parcel, A);
         return new h(j10, bArr, bArr2, bArr3);
     }
 

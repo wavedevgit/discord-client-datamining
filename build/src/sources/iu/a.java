@@ -1,52 +1,99 @@
 package iu;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.Headers;
-import okio.BufferedSource;
+import kotlin.text.StringsKt;
+import okhttp3.Cookie;
+import okhttp3.CookieJar;
+import okhttp3.Interceptor;
+import okhttp3.MediaType;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
+import ru.m;
+import ru.x;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a {
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final C0410a f29385c = new C0410a(null);
+public final class a implements Interceptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final BufferedSource f29386a;
+    private final CookieJar f29646a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private long f29387b;
-
-    /* renamed from: iu.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0410a {
-        public /* synthetic */ C0410a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private C0410a() {
-        }
+    public a(CookieJar cookieJar) {
+        Intrinsics.checkNotNullParameter(cookieJar, "cookieJar");
+        this.f29646a = cookieJar;
     }
 
-    public a(BufferedSource source) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        this.f29386a = source;
-        this.f29387b = 262144L;
-    }
-
-    public final Headers a() {
-        Headers.a aVar = new Headers.a();
-        while (true) {
-            String b10 = b();
-            if (b10.length() == 0) {
-                return aVar.f();
+    private final String a(List list) {
+        StringBuilder sb2 = new StringBuilder();
+        int i10 = 0;
+        for (Object obj : list) {
+            int i11 = i10 + 1;
+            if (i10 < 0) {
+                CollectionsKt.v();
             }
-            aVar.c(b10);
+            Cookie cookie = (Cookie) obj;
+            if (i10 > 0) {
+                sb2.append("; ");
+            }
+            sb2.append(cookie.g());
+            sb2.append('=');
+            sb2.append(cookie.i());
+            i10 = i11;
         }
+        String sb3 = sb2.toString();
+        Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");
+        return sb3;
     }
 
-    public final String b() {
-        String h02 = this.f29386a.h0(this.f29387b);
-        this.f29387b -= h02.length();
-        return h02;
+    @Override // okhttp3.Interceptor
+    public Response intercept(Interceptor.Chain chain) {
+        ResponseBody n10;
+        Intrinsics.checkNotNullParameter(chain, "chain");
+        Request g10 = chain.g();
+        Request.Builder k10 = g10.k();
+        RequestBody c10 = g10.c();
+        if (c10 != null) {
+            MediaType contentType = c10.contentType();
+            if (contentType != null) {
+                k10.e("Content-Type", contentType.toString());
+            }
+            long contentLength = c10.contentLength();
+            if (contentLength != -1) {
+                k10.e("Content-Length", String.valueOf(contentLength));
+                k10.i("Transfer-Encoding");
+            } else {
+                k10.e("Transfer-Encoding", "chunked");
+                k10.i("Content-Length");
+            }
+        }
+        boolean z10 = false;
+        if (g10.f("Host") == null) {
+            k10.e("Host", du.e.U(g10.n(), false, 1, null));
+        }
+        if (g10.f("Connection") == null) {
+            k10.e("Connection", "Keep-Alive");
+        }
+        if (g10.f("Accept-Encoding") == null && g10.f("Range") == null) {
+            k10.e("Accept-Encoding", "gzip");
+            z10 = true;
+        }
+        List loadForRequest = this.f29646a.loadForRequest(g10.n());
+        if (!loadForRequest.isEmpty()) {
+            k10.e("Cookie", a(loadForRequest));
+        }
+        if (g10.f("User-Agent") == null) {
+            k10.e("User-Agent", "okhttp/4.12.0");
+        }
+        Response a10 = chain.a(k10.b());
+        e.f(this.f29646a, g10.n(), a10.C0());
+        Response.a r10 = a10.J0().r(g10);
+        if (z10 && StringsKt.A("gzip", Response.Z(a10, "Content-Encoding", null, 2, null), true) && e.b(a10) && (n10 = a10.n()) != null) {
+            m mVar = new m(n10.source());
+            r10.k(a10.C0().g().i("Content-Encoding").i("Content-Length").f());
+            r10.b(new h(Response.Z(a10, "Content-Type", null, 2, null), -1L, x.d(mVar)));
+        }
+        return r10.c();
     }
 }

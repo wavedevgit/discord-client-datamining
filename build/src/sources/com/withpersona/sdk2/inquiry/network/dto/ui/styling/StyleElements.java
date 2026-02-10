@@ -18,7 +18,7 @@ import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import xr.a;
+import yr.a;
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0014\u0018\u0000 \u00042\u00020\u0001:\u0011\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0015"}, d2 = {"Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements;", "", "<init>", "()V", "Companion", "Size", "Measurement", "MeasurementSet", "Position", "DPSize", "SizeSet", "SimpleElementColor", "SimpleElementColorValue", "ComplexElementColor", "PositionType", "FontName", "FontWeightContainer", "FontWeight", "ChildSizes", "AxisContainer", "Axis", "network-inquiry_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class StyleElements {
@@ -200,16 +200,16 @@ public final class StyleElements {
             if (mVar.s() != m.c.NULL) {
                 return Double.valueOf(mVar.nextDouble());
             }
-            mVar.S();
+            mVar.T();
             return null;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public final String getStringFromJsonReader(m mVar) {
             if (mVar.s() != m.c.NULL) {
-                return mVar.e1();
+                return mVar.b1();
             }
-            mVar.S();
+            mVar.T();
             return null;
         }
 
@@ -366,7 +366,7 @@ public final class StyleElements {
     public static final class DPSize implements Parcelable, Size {
 
         /* renamed from: dp  reason: collision with root package name */
-        private final Double f19408dp;
+        private final Double f19548dp;
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
@@ -407,14 +407,14 @@ public final class StyleElements {
                         } else if (Intrinsics.areEqual(o02, "value")) {
                             obj = StyleElements.Companion.getDoubleFromJsonReader(reader);
                         } else {
-                            reader.S();
+                            reader.T();
                         }
                     }
                     reader.D();
                     d10 = obj;
                     obj = str;
                 } else {
-                    reader.S();
+                    reader.T();
                     d10 = null;
                 }
                 Double d11 = d10;
@@ -445,7 +445,7 @@ public final class StyleElements {
         }
 
         public DPSize(Double d10) {
-            this.f19408dp = d10;
+            this.f19548dp = d10;
         }
 
         @Override // android.os.Parcelable
@@ -455,13 +455,13 @@ public final class StyleElements {
 
         @Override // com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements.Size
         public Double getDp() {
-            return this.f19408dp;
+            return this.f19548dp;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(@NotNull Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            Double d10 = this.f19408dp;
+            Double d10 = this.f19548dp;
             if (d10 == null) {
                 dest.writeInt(0);
                 return;
@@ -509,12 +509,12 @@ public final class StyleElements {
                         if (Intrinsics.areEqual(reader.o0(), "base")) {
                             str = StyleElements.Companion.getStringFromJsonReader(reader);
                         } else {
-                            reader.S();
+                            reader.T();
                         }
                     }
                     reader.D();
                 } else {
-                    reader.S();
+                    reader.T();
                 }
                 return new FontName(str);
             }
@@ -1049,14 +1049,14 @@ public final class StyleElements {
                         } else if (Intrinsics.areEqual(o02, "value")) {
                             str = StyleElements.Companion.getDoubleFromJsonReader(reader);
                         } else {
-                            reader.S();
+                            reader.T();
                         }
                     }
                     reader.D();
                     d10 = str;
                     str = str2;
                 } else {
-                    reader.S();
+                    reader.T();
                     d10 = 0;
                 }
                 if (Intrinsics.areEqual(str, "%") && d10 != 0) {

@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/native/components/ModeratorStartStageView.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun65489: for (var _fun65489_ip = 0;;) switch (_fun65489_ip) {
+        _fun65326: for (var _fun65326_ip = 0;;) switch (_fun65326_ip) {
             case 0:
                 var1 = arg0;
                 var17 = var1.channel;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10 != var0;
                 var20 = undefined;
                 if (!var1) {
-                    _fun65489_ip = 291;
-                    continue _fun65489
+                    _fun65326_ip = 291;
+                    continue _fun65326
                 }
             case 288:
                 var20 = var0;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10 == var15;
                 var0 = null;
                 if (var1) {
-                    _fun65489_ip = 712;
-                    continue _fun65489
+                    _fun65326_ip = 712;
+                    continue _fun65326
                 }
             case 303:
                 var3 = _closure1_slot5;
@@ -165,15 +165,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var13 = null;
                 if (!var8) {
-                    _fun65489_ip = 521;
-                    continue _fun65489
+                    _fun65326_ip = 521;
+                    continue _fun65326
                 }
             case 451:
                 var8 = var10 != var21;
                 var13 = null;
                 if (!var8) {
-                    _fun65489_ip = 521;
-                    continue _fun65489
+                    _fun65326_ip = 521;
+                    continue _fun65326
                 }
             case 460:
                 var19 = _closure1_slot5;
@@ -195,8 +195,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[0] = var13;
                 var13 = null;
                 if (!var14) {
-                    _fun65489_ip = 581;
-                    continue _fun65489
+                    _fun65326_ip = 581;
+                    continue _fun65326
                 }
             case 534:
                 var19 = _closure1_slot5;
@@ -214,8 +214,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[1] = var13;
                 var10 = null;
                 if (!var11) {
-                    _fun65489_ip = 641;
-                    continue _fun65489
+                    _fun65326_ip = 641;
+                    continue _fun65326
                 }
             case 590:
                 var14 = _closure1_slot5;
@@ -253,4 +253,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1410, 33, 566, 8152, 8160, 8161, 8163, 8164, 8155, 8165, 1234, 8166, 8473, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1410, 33, 566, 8127, 8135, 8136, 8138, 8139, 8130, 8140, 1234, 8141, 8448, 2]);

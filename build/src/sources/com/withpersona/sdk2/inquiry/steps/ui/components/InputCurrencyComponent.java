@@ -7,42 +7,42 @@ import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.g;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.TextBasedComponentStyle;
-import fq.e0;
-import fq.k5;
-import fq.v;
-import fq.v4;
-import gq.i;
+import gq.e0;
+import gq.k5;
+import gq.v;
+import gq.v4;
+import hq.i;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0004\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\b\b\u0087\b\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004B7\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\r\u001a\u0004\u0018\u00010\f¢\u0006\u0004\b\u000e\u0010\u000fB\u0011\b\u0016\u0012\u0006\u0010\u0011\u001a\u00020\u0010¢\u0006\u0004\b\u000e\u0010\u0012J\u0019\u0010\u0014\u001a\u00020\u00002\b\u0010\u0013\u001a\u0004\u0018\u00010\u0007H\u0016¢\u0006\u0004\b\u0014\u0010\u0015J\u001d\u0010\u001b\u001a\u00020\u001a2\u0006\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0019\u001a\u00020\u0018¢\u0006\u0004\b\u001b\u0010\u001cJ\r\u0010\u001d\u001a\u00020\u0018¢\u0006\u0004\b\u001d\u0010\u001eJJ\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\fHÆ\u0001¢\u0006\u0004\b\u001f\u0010 J\u0010\u0010!\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b!\u0010\"J\u0010\u0010#\u001a\u00020\u0018HÖ\u0001¢\u0006\u0004\b#\u0010\u001eJ\u001a\u0010'\u001a\u00020&2\b\u0010%\u001a\u0004\u0018\u00010$HÖ\u0003¢\u0006\u0004\b'\u0010(R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b)\u0010*\u001a\u0004\b+\u0010\"R\u0019\u0010\b\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\f\n\u0004\b,\u0010-\u001a\u0004\b.\u0010/R\u001c\u0010\n\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b0\u00101\u001a\u0004\b2\u00103R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b4\u00101\u001a\u0004\b5\u00103R\u0019\u0010\r\u001a\u0004\u0018\u00010\f8\u0006¢\u0006\f\n\u0004\b6\u00107\u001a\u0004\b8\u00109R&\u0010A\u001a\b\u0012\u0004\u0012\u00020;0:8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b<\u0010=\u0012\u0004\b?\u0010@\u001a\u0004\b)\u0010>R(\u0010I\u001a\u00020B8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\bC\u0010D\u0012\u0004\bH\u0010@\u001a\u0004\bE\u0010F\"\u0004\b0\u0010G¨\u0006J"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCurrencyComponent;", "Lfq/k5;", "Lfq/v4;", "Lfq/v;", "Lfq/e0;", "", StackTraceHelper.NAME_KEY, "", "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "errorTextStyle", "<init>", "(Ljava/lang/String;Ljava/lang/Number;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputCurrency;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputCurrency;)V", "newValue", "j", "(Ljava/lang/Number;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCurrencyComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "c", "(Ljava/lang/String;Ljava/lang/Number;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCurrencyComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "Ljava/lang/Number;", "h", "()Ljava/lang/Number;", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "p", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "f", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "", "Lnq/a;", "q", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "Lgq/i;", "r", "Lgq/i;", "b", "()Lgq/i;", "(Lgq/i;)V", "getNumberController$annotations", "numberController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+@Metadata(d1 = {"\u0000n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0004\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\b\b\u0087\b\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004B7\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\r\u001a\u0004\u0018\u00010\f¢\u0006\u0004\b\u000e\u0010\u000fB\u0011\b\u0016\u0012\u0006\u0010\u0011\u001a\u00020\u0010¢\u0006\u0004\b\u000e\u0010\u0012J\u0019\u0010\u0014\u001a\u00020\u00002\b\u0010\u0013\u001a\u0004\u0018\u00010\u0007H\u0016¢\u0006\u0004\b\u0014\u0010\u0015J\u001d\u0010\u001b\u001a\u00020\u001a2\u0006\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0019\u001a\u00020\u0018¢\u0006\u0004\b\u001b\u0010\u001cJ\r\u0010\u001d\u001a\u00020\u0018¢\u0006\u0004\b\u001d\u0010\u001eJJ\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\fHÆ\u0001¢\u0006\u0004\b\u001f\u0010 J\u0010\u0010!\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b!\u0010\"J\u0010\u0010#\u001a\u00020\u0018HÖ\u0001¢\u0006\u0004\b#\u0010\u001eJ\u001a\u0010'\u001a\u00020&2\b\u0010%\u001a\u0004\u0018\u00010$HÖ\u0003¢\u0006\u0004\b'\u0010(R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b)\u0010*\u001a\u0004\b+\u0010\"R\u0019\u0010\b\u001a\u0004\u0018\u00010\u00078\u0006¢\u0006\f\n\u0004\b,\u0010-\u001a\u0004\b.\u0010/R\u001c\u0010\n\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b0\u00101\u001a\u0004\b2\u00103R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b4\u00101\u001a\u0004\b5\u00103R\u0019\u0010\r\u001a\u0004\u0018\u00010\f8\u0006¢\u0006\f\n\u0004\b6\u00107\u001a\u0004\b8\u00109R&\u0010A\u001a\b\u0012\u0004\u0012\u00020;0:8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b<\u0010=\u0012\u0004\b?\u0010@\u001a\u0004\b)\u0010>R(\u0010I\u001a\u00020B8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\bC\u0010D\u0012\u0004\bH\u0010@\u001a\u0004\bE\u0010F\"\u0004\b0\u0010G¨\u0006J"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCurrencyComponent;", "Lgq/k5;", "Lgq/v4;", "Lgq/v;", "Lgq/e0;", "", StackTraceHelper.NAME_KEY, "", "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "errorTextStyle", "<init>", "(Ljava/lang/String;Ljava/lang/Number;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputCurrency;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputCurrency;)V", "newValue", "j", "(Ljava/lang/Number;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCurrencyComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "c", "(Ljava/lang/String;Ljava/lang/Number;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCurrencyComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "Ljava/lang/Number;", "h", "()Ljava/lang/Number;", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "p", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "f", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "", "Loq/a;", "q", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "Lhq/i;", "r", "Lhq/i;", "b", "()Lhq/i;", "(Lhq/i;)V", "getNumberController$annotations", "numberController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class InputCurrencyComponent implements k5, v4, v, e0 {
     @NotNull
     public static final Parcelable.Creator<InputCurrencyComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19628d;
+    private final String f19768d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Number f19629e;
+    private final Number f19769e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f19630i;
+    private final JsonLogicBoolean f19770i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f19631o;
+    private final JsonLogicBoolean f19771o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TextBasedComponentStyle f19632p;
+    private final TextBasedComponentStyle f19772p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f19633q;
+    private final List f19773q;
 
     /* renamed from: r  reason: collision with root package name */
-    private i f19634r;
+    private i f19774r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -62,30 +62,30 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
 
     public InputCurrencyComponent(String name, Number number, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f19628d = name;
-        this.f19629e = number;
-        this.f19630i = jsonLogicBoolean;
-        this.f19631o = jsonLogicBoolean2;
-        this.f19632p = textBasedComponentStyle;
-        this.f19633q = new ArrayList();
-        this.f19634r = new i(number);
+        this.f19768d = name;
+        this.f19769e = number;
+        this.f19770i = jsonLogicBoolean;
+        this.f19771o = jsonLogicBoolean2;
+        this.f19772p = textBasedComponentStyle;
+        this.f19773q = new ArrayList();
+        this.f19774r = new i(number);
     }
 
     public static /* synthetic */ InputCurrencyComponent e(InputCurrencyComponent inputCurrencyComponent, String str, Number number, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputCurrencyComponent.f19628d;
+            str = inputCurrencyComponent.f19768d;
         }
         if ((i10 & 2) != 0) {
-            number = inputCurrencyComponent.f19629e;
+            number = inputCurrencyComponent.f19769e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputCurrencyComponent.f19630i;
+            jsonLogicBoolean = inputCurrencyComponent.f19770i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputCurrencyComponent.f19631o;
+            jsonLogicBoolean2 = inputCurrencyComponent.f19771o;
         }
         if ((i10 & 16) != 0) {
-            textBasedComponentStyle = inputCurrencyComponent.f19632p;
+            textBasedComponentStyle = inputCurrencyComponent.f19772p;
         }
         TextBasedComponentStyle textBasedComponentStyle2 = textBasedComponentStyle;
         JsonLogicBoolean jsonLogicBoolean3 = jsonLogicBoolean;
@@ -96,9 +96,9 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
     public static /* synthetic */ void getNumberController$annotations() {
     }
 
-    @Override // fq.v4
+    @Override // gq.v4
     public i b() {
-        return this.f19634r;
+        return this.f19774r;
     }
 
     public final InputCurrencyComponent c(String name, Number number, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle) {
@@ -106,9 +106,9 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
         return new InputCurrencyComponent(name, number, jsonLogicBoolean, jsonLogicBoolean2, textBasedComponentStyle);
     }
 
-    @Override // fq.e0
+    @Override // gq.e0
     public List d() {
-        return this.f19633q;
+        return this.f19773q;
     }
 
     @Override // android.os.Parcelable
@@ -122,52 +122,52 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
         }
         if (obj instanceof InputCurrencyComponent) {
             InputCurrencyComponent inputCurrencyComponent = (InputCurrencyComponent) obj;
-            return Intrinsics.areEqual(this.f19628d, inputCurrencyComponent.f19628d) && Intrinsics.areEqual(this.f19629e, inputCurrencyComponent.f19629e) && Intrinsics.areEqual(this.f19630i, inputCurrencyComponent.f19630i) && Intrinsics.areEqual(this.f19631o, inputCurrencyComponent.f19631o) && Intrinsics.areEqual(this.f19632p, inputCurrencyComponent.f19632p);
+            return Intrinsics.areEqual(this.f19768d, inputCurrencyComponent.f19768d) && Intrinsics.areEqual(this.f19769e, inputCurrencyComponent.f19769e) && Intrinsics.areEqual(this.f19770i, inputCurrencyComponent.f19770i) && Intrinsics.areEqual(this.f19771o, inputCurrencyComponent.f19771o) && Intrinsics.areEqual(this.f19772p, inputCurrencyComponent.f19772p);
         }
         return false;
     }
 
     public final TextBasedComponentStyle f() {
-        return this.f19632p;
+        return this.f19772p;
     }
 
-    @Override // fq.v
+    @Override // gq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f19631o;
+        return this.f19771o;
     }
 
-    @Override // fq.e0
+    @Override // gq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f19630i;
+        return this.f19770i;
     }
 
-    @Override // fq.k5
+    @Override // gq.k5
     public String getName() {
-        return this.f19628d;
+        return this.f19768d;
     }
 
     public final Number h() {
-        return this.f19629e;
+        return this.f19769e;
     }
 
     public int hashCode() {
-        int hashCode = this.f19628d.hashCode() * 31;
-        Number number = this.f19629e;
+        int hashCode = this.f19768d.hashCode() * 31;
+        Number number = this.f19769e;
         int hashCode2 = (hashCode + (number == null ? 0 : number.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f19630i;
+        JsonLogicBoolean jsonLogicBoolean = this.f19770i;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19631o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f19771o;
         int hashCode4 = (hashCode3 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        TextBasedComponentStyle textBasedComponentStyle = this.f19632p;
+        TextBasedComponentStyle textBasedComponentStyle = this.f19772p;
         return hashCode4 + (textBasedComponentStyle != null ? textBasedComponentStyle.hashCode() : 0);
     }
 
     public void i(i iVar) {
         Intrinsics.checkNotNullParameter(iVar, "<set-?>");
-        this.f19634r = iVar;
+        this.f19774r = iVar;
     }
 
-    @Override // fq.v4
+    @Override // gq.v4
     /* renamed from: j */
     public InputCurrencyComponent a(Number number) {
         InputCurrencyComponent e10 = e(this, null, number, null, null, null, 29, null);
@@ -176,22 +176,22 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
     }
 
     public String toString() {
-        String str = this.f19628d;
-        Number number = this.f19629e;
-        JsonLogicBoolean jsonLogicBoolean = this.f19630i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19631o;
-        TextBasedComponentStyle textBasedComponentStyle = this.f19632p;
+        String str = this.f19768d;
+        Number number = this.f19769e;
+        JsonLogicBoolean jsonLogicBoolean = this.f19770i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f19771o;
+        TextBasedComponentStyle textBasedComponentStyle = this.f19772p;
         return "InputCurrencyComponent(name=" + str + ", value=" + number + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", errorTextStyle=" + textBasedComponentStyle + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f19628d);
-        dest.writeSerializable(this.f19629e);
-        dest.writeParcelable(this.f19630i, i10);
-        dest.writeParcelable(this.f19631o, i10);
-        dest.writeParcelable(this.f19632p, i10);
+        dest.writeString(this.f19768d);
+        dest.writeSerializable(this.f19769e);
+        dest.writeParcelable(this.f19770i, i10);
+        dest.writeParcelable(this.f19771o, i10);
+        dest.writeParcelable(this.f19772p, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

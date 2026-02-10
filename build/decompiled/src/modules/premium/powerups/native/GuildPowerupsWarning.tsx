@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsWarning.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102879: for (var _fun102879_ip = 0;;) switch (_fun102879_ip) {
+        _fun102859: for (var _fun102859_ip = 0;;) switch (_fun102859_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.guildId;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var0 = null;
                 if (!var1) {
-                    _fun102879_ip = 358;
-                    continue _fun102879
+                    _fun102859_ip = 358;
+                    continue _fun102859
                 }
             case 91:
                 var3 = _closure1_slot4;
@@ -186,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var8 == var11;
                 var8 = undefined;
                 if (var10) {
-                    _fun102879_ip = 334;
-                    continue _fun102879
+                    _fun102859_ip = 334;
+                    continue _fun102859
                 }
             case 317:
                 var10 = var11.map;
@@ -235,4 +235,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 13413, 5443, 3942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 13400, 5444, 3942, 2]);

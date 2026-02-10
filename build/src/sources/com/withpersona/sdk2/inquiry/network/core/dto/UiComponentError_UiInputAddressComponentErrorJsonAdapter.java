@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.core.dto;
 
-import an.c;
+import bn.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
@@ -44,8 +44,8 @@ public final class UiComponentError_UiInputAddressComponentErrorJsonAdapter exte
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {

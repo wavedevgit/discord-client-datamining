@@ -1,6 +1,6 @@
 package kotlinx.serialization.encoding;
 
-import ft.n;
+import gt.n;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlinx.serialization.DeserializationStrategy;

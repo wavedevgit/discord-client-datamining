@@ -13,16 +13,16 @@ import java.util.Map;
 public final class b implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private double f28634d;
+    private double f28834d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f28635e;
+    private int f28835e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28636i;
+    private String f28836i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f28637o;
+    private Map f28837o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -58,19 +58,19 @@ public final class b implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        bVar.f28636i = e3Var.q1();
+                        bVar.f28836i = e3Var.m1();
                         break;
                     case 1:
-                        bVar.f28634d = e3Var.nextDouble();
+                        bVar.f28834d = e3Var.nextDouble();
                         break;
                     case 2:
-                        bVar.f28635e = e3Var.nextInt();
+                        bVar.f28835e = e3Var.nextInt();
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.u1(iLogger, hashMap, o02);
+                        e3Var.p1(iLogger, hashMap, o02);
                         break;
                 }
             }
@@ -85,21 +85,21 @@ public final class b implements w1 {
     }
 
     public void e(Map map) {
-        this.f28637o = map;
+        this.f28837o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28634d)));
-        f3Var.e("stack_id").j(iLogger, Integer.valueOf(this.f28635e));
-        if (this.f28636i != null) {
-            f3Var.e("thread_id").j(iLogger, this.f28636i);
+        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28834d)));
+        f3Var.e("stack_id").j(iLogger, Integer.valueOf(this.f28835e));
+        if (this.f28836i != null) {
+            f3Var.e("thread_id").j(iLogger, this.f28836i);
         }
-        Map map = this.f28637o;
+        Map map = this.f28837o;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28637o.get(str));
+                f3Var.e(str).j(iLogger, this.f28837o.get(str));
             }
         }
         f3Var.D();

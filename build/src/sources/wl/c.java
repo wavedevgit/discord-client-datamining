@@ -1,149 +1,119 @@
 package wl;
 
-import android.media.MediaCodec;
-import android.media.MediaCodecInfo;
-import android.media.MediaCodecList;
-import android.media.MediaCrypto;
 import android.media.MediaFormat;
-import android.os.Build;
-import android.view.Surface;
-import androidx.recyclerview.widget.RecyclerView;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Callable;
-import ol.e;
-import org.webrtc.PeerConnection;
+import com.linkedin.android.litr.io.MediaRange;
+import ul.f;
+import vl.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static Map f53914a = new HashMap();
+    protected final ul.e f53790a;
 
-    static {
-        int i10 = Build.VERSION.SDK_INT;
-        f53914a.put("video/avc", i10 >= 27 ? new int[]{65536, 1, 4, 2, 524288, 8, 16, 32, 64} : new int[]{1, 4, 2, 8, 16, 32, 64});
-        f53914a.put("video/x-vnd.on2.vp8", new int[]{1});
-        f53914a.put("video/hevc", i10 >= 29 ? new int[]{1, 2, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 8192} : new int[]{1, 2, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT});
-        f53914a.put("video/x-vnd.on2.vp9", i10 >= 29 ? new int[]{1, 2, 4, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 16384, 8, 8192, PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS} : new int[]{1, 2, 4, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 8, 8192});
-        if (i10 >= 29) {
-            f53914a.put("video/av01", new int[]{1, 2, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 8192});
-        }
-    }
+    /* renamed from: b  reason: collision with root package name */
+    protected final f f53791b;
 
-    private static void b(MediaCodec mediaCodec, MediaFormat mediaFormat, Surface surface, boolean z10) {
-        mediaCodec.configure(mediaFormat, surface, (MediaCrypto) null, z10 ? 1 : 0);
-    }
+    /* renamed from: c  reason: collision with root package name */
+    protected final i f53792c;
 
-    private static MediaCodec c(MediaFormat mediaFormat, Surface surface, boolean z10, List list) {
-        MediaCodec mediaCodec;
-        Exception e10;
-        Iterator it = list.iterator();
-        MediaCodec mediaCodec2 = null;
-        IOException iOException = null;
-        while (true) {
-            if (!it.hasNext()) {
-                break;
-            }
-            try {
-                mediaCodec = (MediaCodec) ((Callable) it.next()).call();
-            } catch (Exception e11) {
-                mediaCodec = mediaCodec2;
-                e10 = e11;
-            }
-            if (mediaCodec != null) {
-                try {
-                    b(mediaCodec, mediaFormat, surface, z10);
-                    mediaCodec2 = mediaCodec;
-                    break;
-                } catch (Exception e12) {
-                    e10 = e12;
-                    if (mediaCodec != null) {
-                        mediaCodec.release();
-                        mediaCodec = null;
-                    }
-                    if (e10 instanceof IOException) {
-                        iOException = (IOException) e10;
-                    }
-                    mediaCodec2 = mediaCodec;
-                }
-            } else {
-                continue;
-                mediaCodec2 = mediaCodec;
-            }
-        }
-        if (mediaCodec2 == null) {
-            if (iOException != null) {
-                throw iOException;
-            }
-            throw new IllegalStateException();
-        }
-        return mediaCodec2;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    protected final ol.a f53793d;
 
-    private static List d(boolean z10, String str, MediaFormat mediaFormat) {
-        MediaCodecInfo[] codecInfos;
-        ArrayList arrayList = new ArrayList();
-        for (final MediaCodecInfo mediaCodecInfo : new MediaCodecList(1).getCodecInfos()) {
-            if (mediaCodecInfo.isEncoder() == z10) {
-                try {
-                    MediaCodecInfo.CodecCapabilities capabilitiesForType = mediaCodecInfo.getCapabilitiesForType(str);
-                    if (capabilitiesForType != null && (mediaFormat == null || capabilitiesForType.isFormatSupported(mediaFormat))) {
-                        arrayList.add(new Callable() { // from class: wl.b
-                            @Override // java.util.concurrent.Callable
-                            public final Object call() {
-                                MediaCodec createByCodecName;
-                                createByCodecName = MediaCodec.createByCodecName(mediaCodecInfo.getName());
-                                return createByCodecName;
-                            }
-                        });
-                    }
-                } catch (IllegalArgumentException unused) {
-                }
+    /* renamed from: e  reason: collision with root package name */
+    protected final ol.b f53794e;
+
+    /* renamed from: f  reason: collision with root package name */
+    protected final MediaRange f53795f;
+
+    /* renamed from: g  reason: collision with root package name */
+    protected int f53796g;
+
+    /* renamed from: h  reason: collision with root package name */
+    protected int f53797h;
+
+    /* renamed from: i  reason: collision with root package name */
+    protected boolean f53798i;
+
+    /* renamed from: j  reason: collision with root package name */
+    protected MediaFormat f53799j;
+
+    /* renamed from: k  reason: collision with root package name */
+    protected long f53800k;
+
+    /* renamed from: l  reason: collision with root package name */
+    protected float f53801l;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c(ul.e eVar, int i10, f fVar, int i11, MediaFormat mediaFormat, i iVar, ol.a aVar, ol.b bVar) {
+        this.f53800k = -1L;
+        this.f53790a = eVar;
+        this.f53796g = i10;
+        this.f53797h = i11;
+        this.f53791b = fVar;
+        this.f53799j = mediaFormat;
+        this.f53792c = iVar;
+        this.f53793d = aVar;
+        this.f53794e = bVar;
+        MediaRange selection = eVar.getSelection();
+        this.f53795f = selection;
+        MediaFormat trackFormat = eVar.getTrackFormat(i10);
+        if (trackFormat.containsKey("durationUs")) {
+            long j10 = trackFormat.getLong("durationUs");
+            this.f53800k = j10;
+            if (mediaFormat != null) {
+                mediaFormat.setLong("durationUs", j10);
             }
         }
-        return arrayList;
+        if (selection.a() >= selection.b()) {
+            long min = Math.min(this.f53800k, selection.a());
+            this.f53800k = min;
+            this.f53800k = min - selection.b();
+            return;
+        }
+        throw new IllegalArgumentException("Range end should be greater than range start");
     }
 
-    public static MediaCodec e(MediaFormat mediaFormat, Surface surface, boolean z10, e.a aVar, e.a aVar2, e.a aVar3) {
-        try {
-            try {
-                MediaCodec f10 = f(mediaFormat, surface, z10);
-                if (f10 != null) {
-                    return f10;
-                }
-                throw new IllegalStateException("Try fallbackToGetCodecByType");
-            } catch (IOException | IllegalStateException unused) {
-                MediaCodec g10 = g(mediaFormat, surface, z10);
-                if (g10 != null) {
-                    return g10;
-                }
-                throw new ol.e(aVar, mediaFormat, null, null);
+    /* JADX INFO: Access modifiers changed from: protected */
+    public MediaFormat a(MediaFormat mediaFormat, MediaFormat mediaFormat2) {
+        if (!mediaFormat2.containsKey("durationUs") && mediaFormat.containsKey("durationUs")) {
+            mediaFormat2.setLong("durationUs", mediaFormat.getLong("durationUs"));
+        }
+        if (!mediaFormat2.containsKey("language") && mediaFormat.containsKey("language")) {
+            mediaFormat2.setString("language", mediaFormat.getString("language"));
+        }
+        return mediaFormat2;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public int b() {
+        while (this.f53790a.getSampleTrackIndex() == this.f53796g) {
+            this.f53790a.advance();
+            if ((this.f53790a.getSampleFlags() & 4) != 0) {
+                return 4;
             }
-        } catch (IOException | IllegalStateException e10) {
-            if (e10 instanceof IOException) {
-                throw new ol.e(aVar2, mediaFormat, null, null, e10);
-            }
-            throw new ol.e(aVar3, mediaFormat, null, null, e10);
         }
+        return 5;
     }
 
-    private static MediaCodec f(MediaFormat mediaFormat, Surface surface, boolean z10) {
-        List d10 = d(z10, mediaFormat.getString("mime"), mediaFormat);
-        if (!d10.isEmpty()) {
-            return c(mediaFormat, surface, z10, d10);
-        }
-        return null;
+    public String c() {
+        return this.f53793d.getName();
     }
 
-    private static MediaCodec g(MediaFormat mediaFormat, Surface surface, boolean z10) {
-        List d10 = d(z10, mediaFormat.getString("mime"), null);
-        if (d10.isEmpty()) {
-            return null;
-        }
-        return c(mediaFormat, surface, z10, d10);
+    public String d() {
+        return this.f53794e.getName();
     }
+
+    public float e() {
+        return this.f53801l;
+    }
+
+    public MediaFormat f() {
+        return this.f53799j;
+    }
+
+    public abstract int g();
+
+    public abstract void h();
+
+    public abstract void i();
 }

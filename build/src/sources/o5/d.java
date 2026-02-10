@@ -11,20 +11,20 @@ public class d extends g {
         return r(b(), d());
     }
 
-    float r(y5.a aVar, float f10) {
+    float r(z5.a aVar, float f10) {
         float f11;
-        if (aVar.f55028b != null && aVar.f55029c != null) {
-            y5.c cVar = this.f41530e;
+        if (aVar.f56053b != null && aVar.f56054c != null) {
+            z5.c cVar = this.f40260e;
             if (cVar != null) {
                 f11 = f10;
-                Float f12 = (Float) cVar.b(aVar.f55033g, aVar.f55034h.floatValue(), (Float) aVar.f55028b, (Float) aVar.f55029c, f11, e(), f());
+                Float f12 = (Float) cVar.b(aVar.f56058g, aVar.f56059h.floatValue(), (Float) aVar.f56053b, (Float) aVar.f56054c, f11, e(), f());
                 if (f12 != null) {
                     return f12.floatValue();
                 }
             } else {
                 f11 = f10;
             }
-            return x5.i.i(aVar.g(), aVar.d(), f11);
+            return y5.i.i(aVar.g(), aVar.d(), f11);
         }
         throw new IllegalStateException("Missing values for keyframe.");
     }
@@ -32,7 +32,7 @@ public class d extends g {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // o5.a
     /* renamed from: s */
-    public Float i(y5.a aVar, float f10) {
+    public Float i(z5.a aVar, float f10) {
         return Float.valueOf(r(aVar, f10));
     }
 }

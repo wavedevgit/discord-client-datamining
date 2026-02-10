@@ -21,49 +21,49 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class e implements k0, w0.a {
 
     /* renamed from: y  reason: collision with root package name */
-    private static volatile ConnectivityManager f27221y;
+    private static volatile ConnectivityManager f27421y;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f27223d;
+    private final Context f27423d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final k7 f27224e;
+    private final k7 f27424e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final x0 f27225i;
+    private final x0 f27425i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final io.sentry.transport.p f27226o;
+    private final io.sentry.transport.p f27426o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f27227p;
+    private final List f27427p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Handler f27228q;
+    private final Handler f27428q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final io.sentry.util.a f27229r;
+    private final io.sentry.util.a f27429r;
 
     /* renamed from: s  reason: collision with root package name */
-    private volatile ConnectivityManager.NetworkCallback f27230s;
+    private volatile ConnectivityManager.NetworkCallback f27430s;
 
     /* renamed from: t  reason: collision with root package name */
-    private volatile NetworkCapabilities f27231t;
+    private volatile NetworkCapabilities f27431t;
 
     /* renamed from: u  reason: collision with root package name */
-    private volatile Network f27232u;
+    private volatile Network f27432u;
 
     /* renamed from: v  reason: collision with root package name */
-    private volatile long f27233v;
+    private volatile long f27433v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final AtomicBoolean f27234w;
+    private final AtomicBoolean f27434w;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final io.sentry.util.a f27220x = new io.sentry.util.a();
+    private static final io.sentry.util.a f27420x = new io.sentry.util.a();
 
     /* renamed from: z  reason: collision with root package name */
-    private static final io.sentry.util.a f27222z = new io.sentry.util.a();
+    private static final io.sentry.util.a f27422z = new io.sentry.util.a();
     private static final List A = new ArrayList();
     private static final int[] B = {1, 0, 3, 2};
     private static final int[] C = new int[2];
@@ -75,15 +75,15 @@ public final class e implements k0, w0.a {
         }
 
         private void a() {
-            e.this.f27234w.set(false);
-            a1 a10 = e.this.f27229r.a();
+            e.this.f27434w.set(false);
+            a1 a10 = e.this.f27429r.a();
             try {
-                e.this.f27231t = null;
-                e.this.f27232u = null;
+                e.this.f27431t = null;
+                e.this.f27432u = null;
                 e eVar = e.this;
-                eVar.f27233v = eVar.f27226o.a();
-                e.this.f27224e.getLogger().c(SentryLevel.DEBUG, "Cache cleared - network lost/unavailable", new Object[0]);
-                for (k0.b bVar : e.this.f27227p) {
+                eVar.f27433v = eVar.f27426o.a();
+                e.this.f27424e.getLogger().c(SentryLevel.DEBUG, "Cache cleared - network lost/unavailable", new Object[0]);
+                for (k0.b bVar : e.this.f27427p) {
                     bVar.a(k0.a.DISCONNECTED);
                 }
                 if (a10 != null) {
@@ -124,7 +124,7 @@ public final class e implements k0, w0.a {
         private boolean d(NetworkCapabilities networkCapabilities) {
             boolean z10;
             boolean z11;
-            NetworkCapabilities networkCapabilities2 = e.this.f27231t;
+            NetworkCapabilities networkCapabilities2 = e.this.f27431t;
             if (networkCapabilities2 == null) {
                 z10 = true;
             } else {
@@ -150,11 +150,11 @@ public final class e implements k0, w0.a {
         private void e(Network network, NetworkCapabilities networkCapabilities) {
             if (d(networkCapabilities)) {
                 e.this.j2(networkCapabilities);
-                k0.a x12 = e.this.x1();
-                a1 a10 = e.this.f27229r.a();
+                k0.a s12 = e.this.s1();
+                a1 a10 = e.this.f27429r.a();
                 try {
-                    for (k0.b bVar : e.this.f27227p) {
-                        bVar.a(x12);
+                    for (k0.b bVar : e.this.f27427p) {
+                        bVar.a(s12);
                     }
                     if (a10 != null) {
                         a10.close();
@@ -174,9 +174,9 @@ public final class e implements k0, w0.a {
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onAvailable(Network network) {
-            e.this.f27232u = network;
-            if (!e.this.f27234w.getAndSet(true)) {
-                a1 a10 = e.f27222z.a();
+            e.this.f27432u = network;
+            if (!e.this.f27434w.getAndSet(true)) {
+                a1 a10 = e.f27422z.a();
                 try {
                     for (ConnectivityManager.NetworkCallback networkCallback : e.A) {
                         networkCallback.onAvailable(network);
@@ -199,9 +199,9 @@ public final class e implements k0, w0.a {
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onCapabilitiesChanged(Network network, NetworkCapabilities networkCapabilities) {
-            if (network.equals(e.this.f27232u)) {
+            if (network.equals(e.this.f27432u)) {
                 e(network, networkCapabilities);
-                a1 a10 = e.f27222z.a();
+                a1 a10 = e.f27422z.a();
                 try {
                     for (ConnectivityManager.NetworkCallback networkCallback : e.A) {
                         networkCallback.onCapabilitiesChanged(network, networkCapabilities);
@@ -224,9 +224,9 @@ public final class e implements k0, w0.a {
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onLost(Network network) {
-            if (network.equals(e.this.f27232u)) {
+            if (network.equals(e.this.f27432u)) {
                 a();
-                a1 a10 = e.f27222z.a();
+                a1 a10 = e.f27422z.a();
                 try {
                     for (ConnectivityManager.NetworkCallback networkCallback : e.A) {
                         networkCallback.onLost(network);
@@ -250,7 +250,7 @@ public final class e implements k0, w0.a {
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onUnavailable() {
             a();
-            a1 a10 = e.f27222z.a();
+            a1 a10 = e.f27422z.a();
             try {
                 for (ConnectivityManager.NetworkCallback networkCallback : e.A) {
                     networkCallback.onUnavailable();
@@ -275,45 +275,24 @@ public final class e implements k0, w0.a {
         this(context, k7Var, x0Var, pVar, null);
     }
 
-    public static String A1(NetworkCapabilities networkCapabilities) {
-        if (networkCapabilities.hasTransport(3)) {
-            return "ethernet";
+    private static ConnectivityManager S1(Context context, ILogger iLogger) {
+        if (f27421y != null) {
+            return f27421y;
         }
-        if (networkCapabilities.hasTransport(1)) {
-            return "wifi";
-        }
-        if (networkCapabilities.hasTransport(0)) {
-            return "cellular";
-        }
-        return null;
-    }
-
-    private String D1() {
-        NetworkCapabilities networkCapabilities = this.f27231t;
-        if (networkCapabilities != null) {
-            return A1(networkCapabilities);
-        }
-        return z1(this.f27223d, this.f27224e.getLogger(), this.f27225i);
-    }
-
-    private static ConnectivityManager T1(Context context, ILogger iLogger) {
-        if (f27221y != null) {
-            return f27221y;
-        }
-        a1 a10 = f27220x.a();
+        a1 a10 = f27420x.a();
         try {
-            if (f27221y != null) {
-                ConnectivityManager connectivityManager = f27221y;
+            if (f27421y != null) {
+                ConnectivityManager connectivityManager = f27421y;
                 if (a10 != null) {
                     a10.close();
                 }
                 return connectivityManager;
             }
-            f27221y = (ConnectivityManager) context.getSystemService("connectivity");
-            if (f27221y == null) {
+            f27421y = (ConnectivityManager) context.getSystemService("connectivity");
+            if (f27421y == null) {
                 iLogger.c(SentryLevel.INFO, "ConnectivityManager is null and cannot check network status", new Object[0]);
             }
-            ConnectivityManager connectivityManager2 = f27221y;
+            ConnectivityManager connectivityManager2 = f27421y;
             if (a10 != null) {
                 a10.close();
             }
@@ -330,37 +309,14 @@ public final class e implements k0, w0.a {
         }
     }
 
-    private boolean V1() {
-        if (this.f27226o.a() - this.f27233v < 120000) {
+    private boolean U1() {
+        if (this.f27426o.a() - this.f27433v < 120000) {
             return true;
         }
         return false;
     }
 
-    private boolean X1(NetworkCapabilities networkCapabilities) {
-        if (networkCapabilities == null) {
-            return false;
-        }
-        boolean hasCapability = networkCapabilities.hasCapability(12);
-        if (this.f27225i.d() >= 23) {
-            if (hasCapability && networkCapabilities.hasCapability(16)) {
-                hasCapability = true;
-            } else {
-                hasCapability = false;
-            }
-        }
-        if (!hasCapability) {
-            return false;
-        }
-        for (int i10 : B) {
-            if (networkCapabilities.hasTransport(i10)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public static boolean Y0(Context context, ILogger iLogger, x0 x0Var, ConnectivityManager.NetworkCallback networkCallback) {
+    public static boolean W0(Context context, ILogger iLogger, x0 x0Var, ConnectivityManager.NetworkCallback networkCallback) {
         if (x0Var.d() < 24) {
             iLogger.c(SentryLevel.DEBUG, "NetworkCallbacks need Android N+.", new Object[0]);
             return false;
@@ -368,7 +324,7 @@ public final class e implements k0, w0.a {
             iLogger.c(SentryLevel.INFO, "No permission (ACCESS_NETWORK_STATE) to check network status.", new Object[0]);
             return false;
         } else {
-            a1 a10 = f27222z.a();
+            a1 a10 = f27422z.a();
             try {
                 A.add(networkCallback);
                 if (a10 != null) {
@@ -389,13 +345,36 @@ public final class e implements k0, w0.a {
         }
     }
 
-    static boolean a2(Context context, ILogger iLogger, x0 x0Var, Handler handler, ConnectivityManager.NetworkCallback networkCallback) {
+    private boolean W1(NetworkCapabilities networkCapabilities) {
+        if (networkCapabilities == null) {
+            return false;
+        }
+        boolean hasCapability = networkCapabilities.hasCapability(12);
+        if (this.f27425i.d() >= 23) {
+            if (hasCapability && networkCapabilities.hasCapability(16)) {
+                hasCapability = true;
+            } else {
+                hasCapability = false;
+            }
+        }
+        if (!hasCapability) {
+            return false;
+        }
+        for (int i10 : B) {
+            if (networkCapabilities.hasTransport(i10)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    static boolean Z1(Context context, ILogger iLogger, x0 x0Var, Handler handler, ConnectivityManager.NetworkCallback networkCallback) {
         if (x0Var.d() < 24) {
             iLogger.c(SentryLevel.DEBUG, "NetworkCallbacks need Android N+.", new Object[0]);
             return false;
         }
-        ConnectivityManager T1 = T1(context, iLogger);
-        if (T1 == null) {
+        ConnectivityManager S1 = S1(context, iLogger);
+        if (S1 == null) {
             return false;
         }
         if (!s.a(context, "android.permission.ACCESS_NETWORK_STATE")) {
@@ -404,10 +383,10 @@ public final class e implements k0, w0.a {
         }
         try {
             if (handler != null) {
-                T1.registerDefaultNetworkCallback(networkCallback, handler);
+                S1.registerDefaultNetworkCallback(networkCallback, handler);
                 return true;
             }
-            T1.registerDefaultNetworkCallback(networkCallback);
+            S1.registerDefaultNetworkCallback(networkCallback);
             return true;
         } catch (Throwable th2) {
             iLogger.b(SentryLevel.WARNING, "registerDefaultNetworkCallback failed", th2);
@@ -415,8 +394,43 @@ public final class e implements k0, w0.a {
         }
     }
 
-    public static void b2(ConnectivityManager.NetworkCallback networkCallback) {
-        a1 a10 = f27222z.a();
+    /* JADX INFO: Access modifiers changed from: private */
+    public void a1() {
+        if (e1.s() && this.f27430s == null) {
+            a1 a10 = this.f27429r.a();
+            try {
+                if (this.f27430s != null) {
+                    if (a10 != null) {
+                        a10.close();
+                        return;
+                    }
+                    return;
+                }
+                a aVar = new a();
+                if (Z1(this.f27423d, this.f27424e.getLogger(), this.f27425i, this.f27428q, aVar)) {
+                    this.f27430s = aVar;
+                    this.f27424e.getLogger().c(SentryLevel.DEBUG, "Network callback registered successfully", new Object[0]);
+                } else {
+                    this.f27424e.getLogger().c(SentryLevel.WARNING, "Failed to register network callback", new Object[0]);
+                }
+                if (a10 != null) {
+                    a10.close();
+                }
+            } catch (Throwable th2) {
+                if (a10 != null) {
+                    try {
+                        a10.close();
+                    } catch (Throwable th3) {
+                        th2.addSuppressed(th3);
+                    }
+                }
+                throw th2;
+            }
+        }
+    }
+
+    public static void a2(ConnectivityManager.NetworkCallback networkCallback) {
+        a1 a10 = f27422z.a();
         try {
             A.remove(networkCallback);
             if (a10 != null) {
@@ -434,67 +448,32 @@ public final class e implements k0, w0.a {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public void d1() {
-        if (e1.s() && this.f27230s == null) {
-            a1 a10 = this.f27229r.a();
-            try {
-                if (this.f27230s != null) {
-                    if (a10 != null) {
-                        a10.close();
-                        return;
-                    }
-                    return;
-                }
-                a aVar = new a();
-                if (a2(this.f27223d, this.f27224e.getLogger(), this.f27225i, this.f27228q, aVar)) {
-                    this.f27230s = aVar;
-                    this.f27224e.getLogger().c(SentryLevel.DEBUG, "Network callback registered successfully", new Object[0]);
-                } else {
-                    this.f27224e.getLogger().c(SentryLevel.WARNING, "Failed to register network callback", new Object[0]);
-                }
-                if (a10 != null) {
-                    a10.close();
-                }
-            } catch (Throwable th2) {
-                if (a10 != null) {
-                    try {
-                        a10.close();
-                    } catch (Throwable th3) {
-                        th2.addSuppressed(th3);
-                    }
-                }
-                throw th2;
-            }
-        }
-    }
-
-    private void f2(Runnable runnable) {
+    private void e2(Runnable runnable) {
         try {
-            this.f27224e.getExecutorService().submit(runnable);
+            this.f27424e.getExecutorService().submit(runnable);
         } catch (Throwable th2) {
-            this.f27224e.getLogger().b(SentryLevel.ERROR, "AndroidConnectionStatusProvider submit failed", th2);
+            this.f27424e.getLogger().b(SentryLevel.ERROR, "AndroidConnectionStatusProvider submit failed", th2);
         }
     }
 
-    static void h2(Context context, ILogger iLogger, ConnectivityManager.NetworkCallback networkCallback) {
-        ConnectivityManager T1 = T1(context, iLogger);
-        if (T1 == null) {
+    static void g2(Context context, ILogger iLogger, ConnectivityManager.NetworkCallback networkCallback) {
+        ConnectivityManager S1 = S1(context, iLogger);
+        if (S1 == null) {
             return;
         }
         try {
-            T1.unregisterNetworkCallback(networkCallback);
+            S1.unregisterNetworkCallback(networkCallback);
         } catch (Throwable th2) {
             iLogger.b(SentryLevel.WARNING, "unregisterNetworkCallback failed", th2);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void i2(boolean z10) {
-        a1 a10 = this.f27229r.a();
+    public void h2(boolean z10) {
+        a1 a10 = this.f27429r.a();
         if (z10) {
             try {
-                this.f27227p.clear();
+                this.f27427p.clear();
             } catch (Throwable th2) {
                 if (a10 != null) {
                     try {
@@ -506,65 +485,65 @@ public final class e implements k0, w0.a {
                 throw th2;
             }
         }
-        ConnectivityManager.NetworkCallback networkCallback = this.f27230s;
-        this.f27230s = null;
+        ConnectivityManager.NetworkCallback networkCallback = this.f27430s;
+        this.f27430s = null;
         if (networkCallback != null) {
-            h2(this.f27223d, this.f27224e.getLogger(), networkCallback);
+            g2(this.f27423d, this.f27424e.getLogger(), networkCallback);
         }
-        this.f27231t = null;
-        this.f27232u = null;
-        this.f27233v = 0L;
+        this.f27431t = null;
+        this.f27432u = null;
+        this.f27433v = 0L;
         if (a10 != null) {
             a10.close();
         }
-        this.f27224e.getLogger().c(SentryLevel.DEBUG, "Network callback unregistered", new Object[0]);
+        this.f27424e.getLogger().c(SentryLevel.DEBUG, "Network callback unregistered", new Object[0]);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void j2(NetworkCapabilities networkCapabilities) {
         NetworkCapabilities networkCapabilities2;
-        a1 a10 = this.f27229r.a();
+        a1 a10 = this.f27429r.a();
         try {
             if (networkCapabilities != null) {
-                this.f27231t = networkCapabilities;
-            } else if (!s.a(this.f27223d, "android.permission.ACCESS_NETWORK_STATE")) {
-                this.f27224e.getLogger().c(SentryLevel.INFO, "No permission (ACCESS_NETWORK_STATE) to check network status.", new Object[0]);
-                this.f27231t = null;
-                this.f27233v = this.f27226o.a();
+                this.f27431t = networkCapabilities;
+            } else if (!s.a(this.f27423d, "android.permission.ACCESS_NETWORK_STATE")) {
+                this.f27424e.getLogger().c(SentryLevel.INFO, "No permission (ACCESS_NETWORK_STATE) to check network status.", new Object[0]);
+                this.f27431t = null;
+                this.f27433v = this.f27426o.a();
                 if (a10 != null) {
                     a10.close();
                     return;
                 }
                 return;
-            } else if (this.f27225i.d() < 23) {
-                this.f27231t = null;
-                this.f27233v = this.f27226o.a();
+            } else if (this.f27425i.d() < 23) {
+                this.f27431t = null;
+                this.f27433v = this.f27426o.a();
                 if (a10 != null) {
                     a10.close();
                     return;
                 }
                 return;
             } else {
-                ConnectivityManager T1 = T1(this.f27223d, this.f27224e.getLogger());
-                if (T1 != null) {
-                    Network activeNetwork = T1.getActiveNetwork();
+                ConnectivityManager S1 = S1(this.f27423d, this.f27424e.getLogger());
+                if (S1 != null) {
+                    Network activeNetwork = S1.getActiveNetwork();
                     if (activeNetwork != null) {
-                        networkCapabilities2 = T1.getNetworkCapabilities(activeNetwork);
+                        networkCapabilities2 = S1.getNetworkCapabilities(activeNetwork);
                     } else {
                         networkCapabilities2 = null;
                     }
-                    this.f27231t = networkCapabilities2;
+                    this.f27431t = networkCapabilities2;
                 } else {
-                    this.f27231t = null;
+                    this.f27431t = null;
                 }
             }
-            this.f27233v = this.f27226o.a();
-            this.f27224e.getLogger().c(SentryLevel.DEBUG, "Cache updated - Status: " + x1() + ", Type: " + D1(), new Object[0]);
+            this.f27433v = this.f27426o.a();
+            this.f27424e.getLogger().c(SentryLevel.DEBUG, "Cache updated - Status: " + s1() + ", Type: " + z1(), new Object[0]);
         } catch (Throwable th2) {
             try {
-                this.f27224e.getLogger().b(SentryLevel.WARNING, "Failed to update connection status cache", th2);
-                this.f27231t = null;
-                this.f27233v = this.f27226o.a();
+                this.f27424e.getLogger().b(SentryLevel.WARNING, "Failed to update connection status cache", th2);
+                this.f27431t = null;
+                this.f27433v = this.f27426o.a();
             } catch (Throwable th3) {
                 if (a10 != null) {
                     try {
@@ -582,16 +561,16 @@ public final class e implements k0, w0.a {
     }
 
     public static /* synthetic */ void n(e eVar) {
-        eVar.i2(true);
-        a1 a10 = f27222z.a();
+        eVar.h2(true);
+        a1 a10 = f27422z.a();
         try {
             A.clear();
             if (a10 != null) {
                 a10.close();
             }
-            a10 = f27220x.a();
+            a10 = f27420x.a();
             try {
-                f27221y = null;
+                f27421y = null;
                 if (a10 != null) {
                     a10.close();
                 }
@@ -605,10 +584,10 @@ public final class e implements k0, w0.a {
     public static /* synthetic */ void p(e eVar) {
         a1 a10;
         eVar.j2(null);
-        k0.a x12 = eVar.x1();
-        if (x12 == k0.a.DISCONNECTED) {
-            eVar.f27234w.set(false);
-            a10 = f27222z.a();
+        k0.a s12 = eVar.s1();
+        if (s12 == k0.a.DISCONNECTED) {
+            eVar.f27434w.set(false);
+            a10 = f27422z.a();
             try {
                 for (ConnectivityManager.NetworkCallback networkCallback : A) {
                     networkCallback.onLost(null);
@@ -619,20 +598,20 @@ public final class e implements k0, w0.a {
             } finally {
             }
         }
-        a10 = eVar.f27229r.a();
+        a10 = eVar.f27429r.a();
         try {
-            for (k0.b bVar : eVar.f27227p) {
-                bVar.a(x12);
+            for (k0.b bVar : eVar.f27427p) {
+                bVar.a(s12);
             }
             if (a10 != null) {
                 a10.close();
             }
-            eVar.d1();
+            eVar.a1();
         } finally {
         }
     }
 
-    private static k0.a w1(Context context, ConnectivityManager connectivityManager, ILogger iLogger) {
+    private static k0.a r1(Context context, ConnectivityManager connectivityManager, ILogger iLogger) {
         if (!s.a(context, "android.permission.ACCESS_NETWORK_STATE")) {
             iLogger.c(SentryLevel.INFO, "No permission (ACCESS_NETWORK_STATE) to check network status.", new Object[0]);
             return k0.a.NO_PERMISSION;
@@ -654,25 +633,25 @@ public final class e implements k0, w0.a {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public k0.a x1() {
-        if (this.f27231t != null) {
-            if (X1(this.f27231t)) {
+    public k0.a s1() {
+        if (this.f27431t != null) {
+            if (W1(this.f27431t)) {
                 return k0.a.CONNECTED;
             }
             return k0.a.DISCONNECTED;
         }
-        ConnectivityManager T1 = T1(this.f27223d, this.f27224e.getLogger());
-        if (T1 != null) {
-            return w1(this.f27223d, T1, this.f27224e.getLogger());
+        ConnectivityManager S1 = S1(this.f27423d, this.f27424e.getLogger());
+        if (S1 != null) {
+            return r1(this.f27423d, S1, this.f27424e.getLogger());
         }
         return k0.a.UNKNOWN;
     }
 
-    public static String z1(Context context, ILogger iLogger, x0 x0Var) {
+    public static String u1(Context context, ILogger iLogger, x0 x0Var) {
         boolean z10;
         boolean z11;
-        ConnectivityManager T1 = T1(context, iLogger);
-        if (T1 == null) {
+        ConnectivityManager S1 = S1(context, iLogger);
+        if (S1 == null) {
             return null;
         }
         boolean z12 = false;
@@ -683,12 +662,12 @@ public final class e implements k0, w0.a {
         try {
             z10 = true;
             if (x0Var.d() >= 23) {
-                Network activeNetwork = T1.getActiveNetwork();
+                Network activeNetwork = S1.getActiveNetwork();
                 if (activeNetwork == null) {
                     iLogger.c(SentryLevel.INFO, "Network is null and cannot check network status", new Object[0]);
                     return null;
                 }
-                NetworkCapabilities networkCapabilities = T1.getNetworkCapabilities(activeNetwork);
+                NetworkCapabilities networkCapabilities = S1.getNetworkCapabilities(activeNetwork);
                 if (networkCapabilities == null) {
                     iLogger.c(SentryLevel.INFO, "NetworkCapabilities is null and cannot check network type", new Object[0]);
                     return null;
@@ -698,7 +677,7 @@ public final class e implements k0, w0.a {
                 z10 = networkCapabilities.hasTransport(0);
                 z12 = hasTransport;
             } else {
-                NetworkInfo activeNetworkInfo = T1.getActiveNetworkInfo();
+                NetworkInfo activeNetworkInfo = S1.getActiveNetworkInfo();
                 if (activeNetworkInfo == null) {
                     iLogger.c(SentryLevel.INFO, "NetworkInfo is null, there's no active network.", new Object[0]);
                     return null;
@@ -736,24 +715,37 @@ public final class e implements k0, w0.a {
         return "cellular";
     }
 
-    @Override // io.sentry.k0
-    public k0.a A0() {
-        if (!V1()) {
-            j2(null);
+    public static String w1(NetworkCapabilities networkCapabilities) {
+        if (networkCapabilities.hasTransport(3)) {
+            return "ethernet";
         }
-        return x1();
+        if (networkCapabilities.hasTransport(1)) {
+            return "wifi";
+        }
+        if (networkCapabilities.hasTransport(0)) {
+            return "cellular";
+        }
+        return null;
+    }
+
+    private String z1() {
+        NetworkCapabilities networkCapabilities = this.f27431t;
+        if (networkCapabilities != null) {
+            return w1(networkCapabilities);
+        }
+        return u1(this.f27423d, this.f27424e.getLogger(), this.f27425i);
     }
 
     @Override // io.sentry.k0
-    public boolean L1(k0.b bVar) {
-        a1 a10 = this.f27229r.a();
+    public boolean K1(k0.b bVar) {
+        a1 a10 = this.f27429r.a();
         try {
-            this.f27227p.add(bVar);
+            this.f27427p.add(bVar);
             if (a10 != null) {
                 a10.close();
             }
-            d1();
-            if (this.f27230s != null) {
+            a1();
+            if (this.f27430s != null) {
                 return true;
             }
             return false;
@@ -770,18 +762,18 @@ public final class e implements k0, w0.a {
     }
 
     @Override // io.sentry.k0
-    public String V() {
-        if (!V1()) {
+    public String W() {
+        if (!U1()) {
             j2(null);
         }
-        return D1();
+        return z1();
     }
 
     @Override // io.sentry.k0
-    public void Y1(k0.b bVar) {
-        a1 a10 = this.f27229r.a();
+    public void X1(k0.b bVar) {
+        a1 a10 = this.f27429r.a();
         try {
-            this.f27227p.remove(bVar);
+            this.f27427p.remove(bVar);
             if (a10 != null) {
                 a10.close();
             }
@@ -799,10 +791,10 @@ public final class e implements k0, w0.a {
 
     @Override // io.sentry.android.core.w0.a
     public void a() {
-        if (this.f27230s != null) {
+        if (this.f27430s != null) {
             return;
         }
-        f2(new Runnable() { // from class: io.sentry.android.core.internal.util.d
+        e2(new Runnable() { // from class: io.sentry.android.core.internal.util.d
             @Override // java.lang.Runnable
             public final void run() {
                 e.p(e.this);
@@ -812,7 +804,7 @@ public final class e implements k0, w0.a {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        f2(new Runnable() { // from class: io.sentry.android.core.internal.util.a
+        e2(new Runnable() { // from class: io.sentry.android.core.internal.util.a
             @Override // java.lang.Runnable
             public final void run() {
                 e.n(e.this);
@@ -822,36 +814,44 @@ public final class e implements k0, w0.a {
 
     @Override // io.sentry.android.core.w0.a
     public void k() {
-        if (this.f27230s == null) {
+        if (this.f27430s == null) {
             return;
         }
-        f2(new Runnable() { // from class: io.sentry.android.core.internal.util.c
+        e2(new Runnable() { // from class: io.sentry.android.core.internal.util.c
             @Override // java.lang.Runnable
             public final void run() {
-                e.this.i2(false);
+                e.this.h2(false);
             }
         });
     }
 
+    @Override // io.sentry.k0
+    public k0.a y0() {
+        if (!U1()) {
+            j2(null);
+        }
+        return s1();
+    }
+
     public e(Context context, k7 k7Var, x0 x0Var, io.sentry.transport.p pVar, Handler handler) {
-        this.f27229r = new io.sentry.util.a();
-        this.f27233v = 0L;
-        this.f27234w = new AtomicBoolean(false);
-        this.f27223d = e1.g(context);
-        this.f27224e = k7Var;
-        this.f27225i = x0Var;
-        this.f27226o = pVar;
-        this.f27228q = handler;
-        this.f27227p = new ArrayList();
+        this.f27429r = new io.sentry.util.a();
+        this.f27433v = 0L;
+        this.f27434w = new AtomicBoolean(false);
+        this.f27423d = e1.g(context);
+        this.f27424e = k7Var;
+        this.f27425i = x0Var;
+        this.f27426o = pVar;
+        this.f27428q = handler;
+        this.f27427p = new ArrayList();
         int[] iArr = C;
         iArr[0] = 12;
         if (x0Var.d() >= 23) {
             iArr[1] = 16;
         }
-        f2(new Runnable() { // from class: io.sentry.android.core.internal.util.b
+        e2(new Runnable() { // from class: io.sentry.android.core.internal.util.b
             @Override // java.lang.Runnable
             public final void run() {
-                e.this.d1();
+                e.this.a1();
             }
         });
         w0.s().m(this);

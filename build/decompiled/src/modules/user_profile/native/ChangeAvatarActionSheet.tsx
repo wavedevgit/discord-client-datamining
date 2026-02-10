@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var10 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var10;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -16,8 +16,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var3);
-    var11 = 0;
-    var6 = var5[var11];
+    var9 = 0;
+    var6 = var5[var9];
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = 2;
     var3 = var5[var3];
-    var3 = var10.bind(var0)(var3);
+    var3 = var11.bind(var0)(var3);
     var _closure1_slot4 = var3;
     var3 = 3;
     var3 = var5[var3];
@@ -50,16 +50,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.createStyles;
     var3 = {};
     var8 = {};
-    var9 = 6;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var10 = 6;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.spacing;
     var12 = var12.PX_8;
     var8.marginLeft = var12;
     var3.nitroWheel = var8;
     var8 = {};
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.colors;
     var12 = var12.TEXT_DEFAULT;
     var8.color = var12;
@@ -70,30 +70,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'alignItems': 'center',
         'flexDirection': 'row'
     };
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.colors;
     var12 = var12.INTERACTIVE_TEXT_ACTIVE;
     var8.color = var12;
     var3.label = var8;
     var8 = {};
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.colors;
     var12 = var12.TEXT_FEEDBACK_CRITICAL;
     var8.color = var12;
     var3.remove = var8;
     var8 = {};
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.spacing;
     var12 = var12.PX_12;
     var8.marginTop = var12;
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_8;
-    var8.marginBottom = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.spacing;
+    var10 = var10.PX_8;
+    var8.marginBottom = var10;
     var3.upsellButton = var8;
     var8 = {
         'flexDirection': 'row',
@@ -101,19 +101,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.upsellTitleContainer = var8;
     var8 = {};
-    var8.flex = var11;
+    var8.flex = var9;
     var3.titleWrapper = var8;
     var8 = {};
-    var11 = 'flex-start';
-    var8.justifyContent = var11;
+    var9 = 'flex-start';
+    var8.justifyContent = var9;
     var3.titleContainer = var8;
-    var8 = {};
-    var9 = var5[var9];
-    var9 = var10.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.TEXT_MUTED;
-    var8.tintColor = var9;
-    var3.disabledNitroWheel = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
     var3 = 17;
@@ -123,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/ChangeAvatarActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80860: for (var _fun80860_ip = 0;;) switch (_fun80860_ip) {
+        _fun80725: for (var _fun80725_ip = 0;;) switch (_fun80725_ip) {
             case 0:
                 var0 = arg0;
                 var16 = var0.handleUploadAvatarSelect;
@@ -133,16 +126,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var0.showAnimatedAvatarUpsell;
                 var3 = undefined;
                 if (!(var14 === var3)) {
-                    _fun80860_ip = 41;
-                    continue _fun80860
+                    _fun80725_ip = 41;
+                    continue _fun80725
                 }
             case 39:
                 var14 = false;
             case 41:
                 var9 = var0.showRemoveAvatar;
                 if (!(var9 === var3)) {
-                    _fun80860_ip = 53;
-                    continue _fun80860
+                    _fun80725_ip = 53;
+                    continue _fun80725
                 }
             case 51:
                 var9 = false;
@@ -195,8 +188,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var10.bind(var12)(var8);
                 var4.title = var8;
                 if (!var7) {
-                    _fun80860_ip = 283;
-                    continue _fun80860
+                    _fun80725_ip = 283;
+                    continue _fun80725
                 }
             case 245:
                 var12 = _closure1_slot6;
@@ -258,15 +251,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = null;
                 var15 = var12 != var22;
                 if (!var15) {
-                    _fun80860_ip = 509;
-                    continue _fun80860
+                    _fun80725_ip = 509;
+                    continue _fun80725
                 }
             case 506:
                 var15 = !var14;
             case 509:
                 if (!var15) {
-                    _fun80860_ip = 599;
-                    continue _fun80860
+                    _fun80725_ip = 599;
+                    continue _fun80725
                 }
             case 512:
                 var21 = _closure1_slot6;
@@ -291,8 +284,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 599:
                 var8[1] = var15;
                 if (!var14) {
-                    _fun80860_ip = 1043;
-                    continue _fun80860
+                    _fun80725_ip = 1043;
+                    continue _fun80725
                 }
             case 609:
                 var19 = _closure1_slot6;
@@ -395,8 +388,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[2] = var14;
                 var12 = var12 != var17;
                 if (!var12) {
-                    _fun80860_ip = 1200;
-                    continue _fun80860
+                    _fun80725_ip = 1200;
+                    continue _fun80725
                 }
             case 1057:
                 var16 = _closure1_slot6;
@@ -434,8 +427,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1200:
                 var8[3] = var12;
                 if (!var9) {
-                    _fun80860_ip = 1356;
-                    continue _fun80860
+                    _fun80725_ip = 1356;
+                    continue _fun80725
                 }
             case 1210:
                 var12 = _closure1_slot6;
@@ -482,4 +475,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 671, 566, 3111, 5258, 5261, 1234, 5800, 5415, 4900, 5430, 10275, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 671, 566, 3111, 5258, 5261, 1234, 5801, 5416, 4900, 5431, 10253, 2]);

@@ -51,21 +51,21 @@ public final class OverlayViewProvider<T extends OverlayView> {
     public static final Unit removeViewFromOverlay$lambda$0(OverlayView v10) {
         Intrinsics.checkNotNullParameter(v10, "v");
         v10.removeFromWindowManager();
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setAssets$lambda$1(MobileVoiceOverlayAssets mobileVoiceOverlayAssets, OverlayView view) {
         Intrinsics.checkNotNullParameter(view, "view");
         view.setAssets(mobileVoiceOverlayAssets);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setData$lambda$2(MobileVoiceOverlayData mobileVoiceOverlayData, OverlayView view) {
         Intrinsics.checkNotNullParameter(view, "view");
         view.setData(mobileVoiceOverlayData);
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     private final void withViewOptional(Function1<? super T, Unit> function1) {
@@ -83,7 +83,7 @@ public final class OverlayViewProvider<T extends OverlayView> {
     }
 
     public final void removeViewFromOverlay() {
-        withViewOptional(new Function1() { // from class: o7.a
+        withViewOptional(new Function1() { // from class: p7.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit removeViewFromOverlay$lambda$0;
@@ -97,7 +97,7 @@ public final class OverlayViewProvider<T extends OverlayView> {
     public final void setAssets(@NotNull final MobileVoiceOverlayAssets assets) {
         Intrinsics.checkNotNullParameter(assets, "assets");
         this.assets = assets;
-        withViewOptional(new Function1() { // from class: o7.c
+        withViewOptional(new Function1() { // from class: p7.c
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit assets$lambda$1;
@@ -110,7 +110,7 @@ public final class OverlayViewProvider<T extends OverlayView> {
     public final void setData(@NotNull final MobileVoiceOverlayData data) {
         Intrinsics.checkNotNullParameter(data, "data");
         this.data = data;
-        withViewOptional(new Function1() { // from class: o7.b
+        withViewOptional(new Function1() { // from class: p7.b
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit data$lambda$2;

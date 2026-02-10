@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/base_components/UsernameText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun108787: for (var _fun108787_ip = 0;;) switch (_fun108787_ip) {
+        _fun108767: for (var _fun108767_ip = 0;;) switch (_fun108767_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.user;
@@ -43,20 +43,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.variant;
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun108787_ip = 28;
-                    continue _fun108787
+                    _fun108767_ip = 30;
+                    continue _fun108767
                 }
             case 24:
                 var2 = 'text-md/medium';
-            case 28:
+            case 30:
                 var0 = var0.color;
                 if (!(var0 === var3)) {
-                    _fun108787_ip = 43;
-                    continue _fun108787
+                    _fun108767_ip = 45;
+                    continue _fun108767
                 }
-            case 37:
+            case 39:
                 var0 = 'text-default';
-            case 43:
+            case 45:
                 var12 = {};
                 var12.variant = var2;
                 var12.color = var0;
@@ -70,21 +70,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var2.bind(var4)(var5, var0, var1);
                 var4 = var0 != var10;
                 if (!var4) {
-                    _fun108787_ip = 111;
-                    continue _fun108787
+                    _fun108767_ip = 113;
+                    continue _fun108767
                 }
-            case 98:
+            case 100:
                 var0 = var1.toString;
                 var0 = var0.bind(var1)();
                 var4 = var10 !== var0;
-            case 111:
+            case 113:
                 var0 = var1.hasUniqueUsername;
                 var0 = var0.bind(var1)();
                 if (var0) {
-                    _fun108787_ip = 257;
-                    continue _fun108787
+                    _fun108767_ip = 259;
+                    continue _fun108767
                 }
-            case 127:
+            case 129:
                 var5 = _closure1_slot2;
                 var2 = _closure1_slot3;
                 var0 = {};
@@ -114,12 +114,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[1] = var7;
                 var0.children = var6;
                 var11 = var5.bind(var3)(var2, var0);
-                _fun108787_ip = 266;
-                continue _fun108787;
-            case 257:
+                _fun108767_ip = 268;
+                continue _fun108767;
+            case 259:
                 var0 = var1.toString;
                 var11 = var0.bind(var1)();
-            case 266:
+            case 268:
                 var2 = _closure1_slot4;
                 var1 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -133,10 +133,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = copyDataProperties(var16, var15);
                 var5 = var11;
                 if (!var4) {
-                    _fun108787_ip = 444;
-                    continue _fun108787
+                    _fun108767_ip = 446;
+                    continue _fun108767
                 }
-            case 316:
+            case 318:
                 var7 = _closure1_slot2;
                 var6 = _closure1_slot3;
                 var4 = {};
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[2] = var9;
                 var4.children = var8;
                 var5 = var7.bind(var3)(var6, var4);
-            case 444:
+            case 446:
                 var4 = 'children';
                 var0[var4] = var5;
                 var0 = var2.bind(var3)(var1, var0);

@@ -1,40 +1,49 @@
 package ha;
-
-import com.facebook.fresco.animation.factory.AnimatedFactoryV2Impl;
-import com.facebook.imagepipeline.bitmaps.PlatformBitmapFactory;
-import java.util.concurrent.ExecutorService;
-import kotlin.jvm.internal.Intrinsics;
-import m8.g;
-import na.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b {
+public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f25889a = new b();
+    public final int f25791a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f25890b;
+    public final int f25792b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static a f25891c;
+    public final int f25793c;
 
-    private b() {
+    /* renamed from: d  reason: collision with root package name */
+    public final int f25794d;
+
+    /* renamed from: e  reason: collision with root package name */
+    public final int f25795e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public final a f25796f;
+
+    /* renamed from: g  reason: collision with root package name */
+    public final EnumC0380b f25797g;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public enum a {
+        BLEND_WITH_PREVIOUS,
+        NO_BLEND
     }
 
-    public static final a a(PlatformBitmapFactory platformBitmapFactory, n nVar, la.n nVar2, boolean z10, boolean z11, int i10, int i11, ExecutorService executorService) {
-        if (!f25890b) {
-            try {
-                Class cls = Boolean.TYPE;
-                Class cls2 = Integer.TYPE;
-                Object newInstance = AnimatedFactoryV2Impl.class.getConstructor(PlatformBitmapFactory.class, n.class, la.n.class, cls, cls, cls2, cls2, g.class).newInstance(platformBitmapFactory, nVar, nVar2, Boolean.valueOf(z10), Boolean.valueOf(z11), Integer.valueOf(i10), Integer.valueOf(i11), executorService);
-                Intrinsics.checkNotNull(newInstance, "null cannot be cast to non-null type com.facebook.imagepipeline.animated.factory.AnimatedFactory");
-                f25891c = (a) newInstance;
-            } catch (Throwable unused) {
-            }
-            if (f25891c != null) {
-                f25890b = true;
-            }
-        }
-        return f25891c;
+    /* renamed from: ha.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public enum EnumC0380b {
+        DISPOSE_DO_NOT,
+        DISPOSE_TO_BACKGROUND,
+        DISPOSE_TO_PREVIOUS
+    }
+
+    public b(int i10, int i11, int i12, int i13, int i14, a aVar, EnumC0380b enumC0380b) {
+        this.f25791a = i10;
+        this.f25792b = i11;
+        this.f25793c = i12;
+        this.f25794d = i13;
+        this.f25795e = i14;
+        this.f25796f = aVar;
+        this.f25797g = enumC0380b;
     }
 }

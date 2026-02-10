@@ -120,26 +120,26 @@ public abstract class j {
     public static class f implements ActionMode.Callback {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ActionMode.Callback f3935a;
+        private final ActionMode.Callback f3632a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final TextView f3936b;
+        private final TextView f3633b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Class f3937c;
+        private Class f3634c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Method f3938d;
+        private Method f3635d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f3939e;
+        private boolean f3636e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f3940f = false;
+        private boolean f3637f = false;
 
         f(ActionMode.Callback callback, TextView textView) {
-            this.f3935a = callback;
-            this.f3936b = textView;
+            this.f3632a = callback;
+            this.f3633b = textView;
         }
 
         private Intent a() {
@@ -188,26 +188,26 @@ public abstract class j {
 
         private void g(Menu menu) {
             Method declaredMethod;
-            Context context = this.f3936b.getContext();
+            Context context = this.f3633b.getContext();
             PackageManager packageManager = context.getPackageManager();
-            boolean z10 = this.f3940f;
+            boolean z10 = this.f3637f;
             Class cls = Integer.TYPE;
             if (!z10) {
-                this.f3940f = true;
+                this.f3637f = true;
                 try {
                     Class<?> cls2 = Class.forName("com.android.internal.view.menu.MenuBuilder");
-                    this.f3937c = cls2;
-                    this.f3938d = cls2.getDeclaredMethod("removeItemAt", cls);
-                    this.f3939e = true;
+                    this.f3634c = cls2;
+                    this.f3635d = cls2.getDeclaredMethod("removeItemAt", cls);
+                    this.f3636e = true;
                 } catch (ClassNotFoundException | NoSuchMethodException unused) {
-                    this.f3937c = null;
-                    this.f3938d = null;
-                    this.f3939e = false;
+                    this.f3634c = null;
+                    this.f3635d = null;
+                    this.f3636e = false;
                 }
             }
             try {
-                if (this.f3939e && this.f3937c.isInstance(menu)) {
-                    declaredMethod = this.f3938d;
+                if (this.f3636e && this.f3634c.isInstance(menu)) {
+                    declaredMethod = this.f3635d;
                 } else {
                     declaredMethod = menu.getClass().getDeclaredMethod("removeItemAt", cls);
                 }
@@ -220,35 +220,35 @@ public abstract class j {
                 List c10 = c(context, packageManager);
                 for (int i10 = 0; i10 < c10.size(); i10++) {
                     ResolveInfo resolveInfo = (ResolveInfo) c10.get(i10);
-                    menu.add(0, 0, i10 + 100, resolveInfo.loadLabel(packageManager)).setIntent(b(resolveInfo, this.f3936b)).setShowAsAction(1);
+                    menu.add(0, 0, i10 + 100, resolveInfo.loadLabel(packageManager)).setIntent(b(resolveInfo, this.f3633b)).setShowAsAction(1);
                 }
             } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException unused2) {
             }
         }
 
         ActionMode.Callback d() {
-            return this.f3935a;
+            return this.f3632a;
         }
 
         @Override // android.view.ActionMode.Callback
         public boolean onActionItemClicked(ActionMode actionMode, MenuItem menuItem) {
-            return this.f3935a.onActionItemClicked(actionMode, menuItem);
+            return this.f3632a.onActionItemClicked(actionMode, menuItem);
         }
 
         @Override // android.view.ActionMode.Callback
         public boolean onCreateActionMode(ActionMode actionMode, Menu menu) {
-            return this.f3935a.onCreateActionMode(actionMode, menu);
+            return this.f3632a.onCreateActionMode(actionMode, menu);
         }
 
         @Override // android.view.ActionMode.Callback
         public void onDestroyActionMode(ActionMode actionMode) {
-            this.f3935a.onDestroyActionMode(actionMode);
+            this.f3632a.onDestroyActionMode(actionMode);
         }
 
         @Override // android.view.ActionMode.Callback
         public boolean onPrepareActionMode(ActionMode actionMode, Menu menu) {
             g(menu);
-            return this.f3935a.onPrepareActionMode(actionMode, menu);
+            return this.f3632a.onPrepareActionMode(actionMode, menu);
         }
     }
 

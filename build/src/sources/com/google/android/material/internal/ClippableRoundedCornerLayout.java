@@ -10,10 +10,10 @@ import androidx.annotation.NonNull;
 public class ClippableRoundedCornerLayout extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private Path f15093d;
+    private Path f15233d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f15094e;
+    private float f15234e;
 
     public ClippableRoundedCornerLayout(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -21,17 +21,17 @@ public class ClippableRoundedCornerLayout extends FrameLayout {
 
     @Override // android.view.ViewGroup, android.view.View
     protected void dispatchDraw(Canvas canvas) {
-        if (this.f15093d == null) {
+        if (this.f15233d == null) {
             super.dispatchDraw(canvas);
             return;
         }
         int save = canvas.save();
-        canvas.clipPath(this.f15093d);
+        canvas.clipPath(this.f15233d);
         super.dispatchDraw(canvas);
         canvas.restoreToCount(save);
     }
 
     public float getCornerRadius() {
-        return this.f15094e;
+        return this.f15234e;
     }
 }

@@ -56,8 +56,8 @@ public final class ScrollEvent extends Event<ScrollEvent> {
         private Companion() {
         }
 
+        @rr.c
         @NotNull
-        @qr.c
         public final ScrollEvent obtain(int i10, ScrollEventType scrollEventType, float f10, float f11, float f12, float f13, int i11, int i12, int i13, int i14) {
             return obtain(-1, i10, scrollEventType, f10, f11, f12, f13, i11, i12, i13, i14);
         }
@@ -143,7 +143,7 @@ public final class ScrollEvent extends Event<ScrollEvent> {
     @NotNull
     public String getEventName() {
         ScrollEventType.Companion companion = ScrollEventType.Companion;
-        Object c10 = db.a.c(this.scrollEventType);
+        Object c10 = eb.a.c(this.scrollEventType);
         Intrinsics.checkNotNullExpressionValue(c10, "assertNotNull(...)");
         return companion.getJSEventName((ScrollEventType) c10);
     }
@@ -162,8 +162,8 @@ public final class ScrollEvent extends Event<ScrollEvent> {
     private ScrollEvent() {
     }
 
+    @rr.c
     @NotNull
-    @qr.c
     public static final ScrollEvent obtain(int i10, ScrollEventType scrollEventType, float f10, float f11, float f12, float f13, int i11, int i12, int i13, int i14) {
         return Companion.obtain(i10, scrollEventType, f10, f11, f12, f13, i11, i12, i13, i14);
     }

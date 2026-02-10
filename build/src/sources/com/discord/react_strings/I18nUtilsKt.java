@@ -27,7 +27,7 @@ public final class I18nUtilsKt {
 
     public static /* synthetic */ void i18nContentDescription$default(TextView textView, I18nMessage i18nMessage, Function1 function1, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            function1 = new Function1() { // from class: x7.d
+            function1 = new Function1() { // from class: y7.d
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     Unit i18nContentDescription$lambda$0;
@@ -42,13 +42,13 @@ public final class I18nUtilsKt {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i18nContentDescription$lambda$0(RenderContext renderContext) {
         Intrinsics.checkNotNullParameter(renderContext, "<this>");
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i18nContentDescription$lambda$2(RenderContext renderContext) {
         Intrinsics.checkNotNullParameter(renderContext, "<this>");
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     @NotNull
@@ -58,7 +58,7 @@ public final class I18nUtilsKt {
         Intrinsics.checkNotNullParameter(initializer, "initializer");
         final RenderContext renderContext = new RenderContext();
         initializer.invoke(renderContext);
-        return RenderContext.Argument.INSTANCE.replace(i18nMessage.format$react_strings_release(context), new Function3() { // from class: x7.e
+        return RenderContext.Argument.INSTANCE.replace(i18nMessage.format$react_strings_release(context), new Function3() { // from class: y7.e
             @Override // kotlin.jvm.functions.Function3
             public final Object invoke(Object obj, Object obj2, Object obj3) {
                 CharSequence i18nFormat$lambda$5;
@@ -70,7 +70,7 @@ public final class I18nUtilsKt {
 
     public static /* synthetic */ CharSequence i18nFormat$default(Context context, I18nMessage i18nMessage, Function1 function1, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            function1 = new Function1() { // from class: x7.b
+            function1 = new Function1() { // from class: y7.b
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     Unit i18nFormat$lambda$3;
@@ -85,7 +85,7 @@ public final class I18nUtilsKt {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i18nFormat$lambda$3(RenderContext renderContext) {
         Intrinsics.checkNotNullParameter(renderContext, "<this>");
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -109,7 +109,7 @@ public final class I18nUtilsKt {
 
     public static /* synthetic */ void i18nSetText$default(TextView textView, I18nMessage i18nMessage, Function1 function1, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            function1 = new Function1() { // from class: x7.f
+            function1 = new Function1() { // from class: y7.f
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     Unit i18nSetText$lambda$1;
@@ -124,7 +124,7 @@ public final class I18nUtilsKt {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i18nSetText$lambda$1(RenderContext renderContext) {
         Intrinsics.checkNotNullParameter(renderContext, "<this>");
-        return Unit.f32056a;
+        return Unit.f31765a;
     }
 
     public static final void i18nContentDescription(@NotNull ImageView imageView, @NotNull I18nMessage i18nMessage, @NotNull Function1<? super RenderContext, Unit> initializer) {
@@ -138,7 +138,7 @@ public final class I18nUtilsKt {
 
     public static /* synthetic */ void i18nContentDescription$default(ImageView imageView, I18nMessage i18nMessage, Function1 function1, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            function1 = new Function1() { // from class: x7.c
+            function1 = new Function1() { // from class: y7.c
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     Unit i18nContentDescription$lambda$2;

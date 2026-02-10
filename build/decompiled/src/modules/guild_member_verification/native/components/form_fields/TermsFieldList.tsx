@@ -152,16 +152,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'lineHeight': 20
     };
     var3.termsRowContent = var8;
-    var10 = 8;
     var8 = {
         'paddingRight': 8,
         'width': 20,
         'height': 20
     };
     var3.termsRowNumber = var8;
-    var8 = {};
-    var8.marginBottom = var10;
-    var3.countText = var8;
     var8 = {};
     var8.marginBottom = var9;
     var3.title = var8;
@@ -217,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4[0] = var6;
         var6 = var7.map;
         var5 = function(arg0, arg1) { // Environment: var5
-            _fun44092: for (var _fun44092_ip = 0;;) switch (_fun44092_ip) {
+            _fun44085: for (var _fun44085_ip = 0;;) switch (_fun44085_ip) {
                 case 0:
                     var8 = arg0;
                     var7 = arg1;
@@ -235,8 +231,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var13 = 0;
                     var10 = null;
                     if (!(var13 === var7)) {
-                        _fun44092_ip = 74;
-                        continue _fun44092
+                        _fun44085_ip = 74;
+                        continue _fun44085
                     }
                 case 64:
                     var13 = _closure2_slot2;
@@ -249,8 +245,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = var13 - var10;
                     var13 = null;
                     if (!(var7 === var14)) {
-                        _fun44092_ip = 110;
-                        continue _fun44092
+                        _fun44085_ip = 110;
+                        continue _fun44085
                     }
                 case 100:
                     var14 = _closure2_slot2;
@@ -277,8 +273,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = var9 - var10;
                     var5 = null;
                     if (!(var7 !== var9)) {
-                        _fun44092_ip = 234;
-                        continue _fun44092
+                        _fun44085_ip = 234;
+                        continue _fun44085
                     }
                 case 196:
                     var10 = _closure1_slot5;

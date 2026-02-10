@@ -1,8 +1,10 @@
 package ei;
-
-import android.os.Bundle;
-import android.os.IInterface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface h extends IInterface {
-    void H0(Bundle bundle);
+public final /* synthetic */ class h {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final /* synthetic */ h f21662a = new h();
+
+    private /* synthetic */ h() {
+    }
 }

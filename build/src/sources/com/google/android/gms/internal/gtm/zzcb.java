@@ -5,9 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import com.google.android.gms.common.util.VisibleForTesting;
-import gf.q;
-import nf.a;
-import se.n;
+import hf.q;
+import of.a;
+import te.n;
 @VisibleForTesting
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class zzcb implements ServiceConnection {
@@ -31,7 +31,7 @@ public final class zzcb implements ServiceConnection {
         /*
             r2 = this;
             java.lang.String r3 = "AnalyticsServiceConnection.onServiceConnected"
-            gf.q.e(r3)
+            hf.q.e(r3)
             monitor-enter(r2)
             if (r4 != 0) goto L1a
             com.google.android.gms.internal.gtm.zzcc r3 = r2.zza     // Catch: java.lang.Throwable -> L17
@@ -80,7 +80,7 @@ public final class zzcb implements ServiceConnection {
             r4.zzJ(r1)     // Catch: java.lang.Throwable -> L17
         L52:
             if (r0 != 0) goto L68
-            nf.a r3 = nf.a.b()     // Catch: java.lang.Throwable -> L17 java.lang.IllegalArgumentException -> L84
+            of.a r3 = of.a.b()     // Catch: java.lang.Throwable -> L17 java.lang.IllegalArgumentException -> L84
             com.google.android.gms.internal.gtm.zzcc r4 = r2.zza     // Catch: java.lang.Throwable -> L17 java.lang.IllegalArgumentException -> L84
             android.content.Context r4 = r4.zzo()     // Catch: java.lang.Throwable -> L17 java.lang.IllegalArgumentException -> L84
             com.google.android.gms.internal.gtm.zzcc r0 = r2.zza     // Catch: java.lang.Throwable -> L17 java.lang.IllegalArgumentException -> L84
@@ -94,7 +94,7 @@ public final class zzcb implements ServiceConnection {
             java.lang.String r1 = "onServiceConnected received after the timeout limit"
             r4.zzR(r1)     // Catch: java.lang.Throwable -> L17
             com.google.android.gms.internal.gtm.zzcc r4 = r2.zza     // Catch: java.lang.Throwable -> L17
-            se.n r4 = r4.zzq()     // Catch: java.lang.Throwable -> L17
+            te.n r4 = r4.zzq()     // Catch: java.lang.Throwable -> L17
             com.google.android.gms.internal.gtm.zzbz r1 = new com.google.android.gms.internal.gtm.zzbz     // Catch: java.lang.Throwable -> L17
             r1.<init>(r2, r0, r3)     // Catch: java.lang.Throwable -> L17
             r4.e(r1)     // Catch: java.lang.Throwable -> L17

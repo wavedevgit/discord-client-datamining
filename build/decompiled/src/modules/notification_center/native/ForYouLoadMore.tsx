@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notification_center/native/ForYouLoadMore.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun104055: for (var _fun104055_ip = 0;;) switch (_fun104055_ip) {
+        _fun104035: for (var _fun104035_ip = 0;;) switch (_fun104035_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.onPressLoad;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var6;
                 var7 = _closure1_slot5;
                 if (var4) {
-                    _fun104055_ip = 205;
-                    continue _fun104055
+                    _fun104035_ip = 205;
+                    continue _fun104035
                 }
             case 100:
                 var12 = _closure1_slot0;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.text = var9;
                 var4.onPress = var8;
                 var4 = var7.bind(var3)(var6, var4);
-                _fun104055_ip = 217;
-                continue _fun104055;
+                _fun104035_ip = 217;
+                continue _fun104035;
             case 205:
                 var6 = _closure1_slot2;
                 var5 = {};

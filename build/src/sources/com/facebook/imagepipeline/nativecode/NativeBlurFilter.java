@@ -1,8 +1,8 @@
 package com.facebook.imagepipeline.nativecode;
 
 import android.graphics.Bitmap;
-import o8.j;
-@o8.d
+import p8.j;
+@p8.d
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class NativeBlurFilter {
     static {
@@ -26,6 +26,6 @@ public class NativeBlurFilter {
         nativeIterativeBoxBlur(bitmap, i10, i11);
     }
 
-    @o8.d
+    @p8.d
     private static native void nativeIterativeBoxBlur(Bitmap bitmap, int i10, int i11);
 }

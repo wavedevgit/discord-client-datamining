@@ -42,7 +42,7 @@ public class NativeViewHierarchyOptimizer {
         } else {
             z10 = false;
         }
-        db.a.a(z10);
+        eb.a.a(z10);
         for (int i11 = 0; i11 < reactShadowNode2.getChildCount(); i11++) {
             ReactShadowNode childAt = reactShadowNode2.getChildAt(i11);
             if (childAt.getNativeParent() == null) {
@@ -50,7 +50,7 @@ public class NativeViewHierarchyOptimizer {
             } else {
                 z11 = false;
             }
-            db.a.a(z11);
+            eb.a.a(z11);
             int nativeChildCount = reactShadowNode.getNativeChildCount();
             if (childAt.getNativeKind() == NativeKind.NONE) {
                 addNonNativeChild(reactShadowNode, childAt, i10);
@@ -130,7 +130,7 @@ public class NativeViewHierarchyOptimizer {
         } else {
             z10 = false;
         }
-        db.a.b(z10, "Nodes with NativeKind.LEAF are not supported when the optimizer is disabled");
+        eb.a.b(z10, "Nodes with NativeKind.LEAF are not supported when the optimizer is disabled");
     }
 
     public static void handleRemoveNode(ReactShadowNode reactShadowNode) {
@@ -199,11 +199,11 @@ public class NativeViewHierarchyOptimizer {
         sb2.append(z10);
         sb2.append(" - tagsWithLayout.size: ");
         sb2.append(this.mTagsWithLayoutVisited.size());
-        p8.a.s(TAG, sb2.toString());
+        q8.a.s(TAG, sb2.toString());
         if (this.mTagsWithLayoutVisited.size() != 0) {
             z11 = false;
         }
-        db.a.a(z11);
+        eb.a.a(z11);
         applyLayoutBase(reactShadowNode);
         for (int i11 = 0; i11 < reactShadowNode.getChildCount(); i11++) {
             applyLayoutBase(reactShadowNode.getChildAt(i11));

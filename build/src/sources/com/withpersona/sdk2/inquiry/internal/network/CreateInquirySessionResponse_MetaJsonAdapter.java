@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionResponse_MetaJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19170a;
+    private final m.b f19310a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19171b;
+    private final com.squareup.moshi.h f19311b;
 
     public CreateInquirySessionResponse_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("accessToken");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19170a = a10;
+        this.f19310a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "accessToken");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19171b = f10;
+        this.f19311b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,21 +35,21 @@ public final class CreateInquirySessionResponse_MetaJsonAdapter extends com.squa
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19170a);
+            int J = reader.J(this.f19310a);
             if (J != -1) {
-                if (J == 0 && (str = (String) this.f19171b.fromJson(reader)) == null) {
-                    throw an.c.x("accessToken", "accessToken", reader);
+                if (J == 0 && (str = (String) this.f19311b.fromJson(reader)) == null) {
+                    throw bn.c.x("accessToken", "accessToken", reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
         if (str != null) {
             return new CreateInquirySessionResponse.Meta(str);
         }
-        throw an.c.o("accessToken", "accessToken", reader);
+        throw bn.c.o("accessToken", "accessToken", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -59,7 +59,7 @@ public final class CreateInquirySessionResponse_MetaJsonAdapter extends com.squa
         if (meta != null) {
             writer.k();
             writer.J("accessToken");
-            this.f19171b.toJson(writer, meta.a());
+            this.f19311b.toJson(writer, meta.a());
             writer.s();
             return;
         }

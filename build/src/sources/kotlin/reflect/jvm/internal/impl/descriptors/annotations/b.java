@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.SimpleType;
 public class b implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final BuiltInAnnotationDescriptor f32431d;
+    private final BuiltInAnnotationDescriptor f32140d;
 
     public b(BuiltInAnnotationDescriptor builtInAnnotationDescriptor) {
-        this.f32431d = builtInAnnotationDescriptor;
+        this.f32140d = builtInAnnotationDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         SimpleType b10;
-        b10 = BuiltInAnnotationDescriptor.b(this.f32431d);
+        b10 = BuiltInAnnotationDescriptor.b(this.f32140d);
         return b10;
     }
 }

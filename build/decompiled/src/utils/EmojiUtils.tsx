@@ -1327,4 +1327,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAllEmojiNamesString = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1376, 3093, 1621, 660, 1624, 3109, 3111, 4744, 3086, 6622, 1461, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1376, 3093, 1621, 660, 1624, 3109, 3111, 4744, 3086, 6623, 1461, 1417, 2]);

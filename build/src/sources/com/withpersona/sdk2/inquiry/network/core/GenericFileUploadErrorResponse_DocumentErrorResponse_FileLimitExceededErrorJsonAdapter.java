@@ -40,20 +40,20 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_FileLimi
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.E0();
-                mVar.S();
+                mVar.C0();
+                mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw an.c.x("title", "title", mVar);
+                    throw bn.c.x("title", "title", mVar);
                 }
             } else if (J == 1) {
                 str2 = (String) this.stringAdapter.fromJson(mVar);
                 if (str2 == null) {
-                    throw an.c.x("code", "code", mVar);
+                    throw bn.c.x("code", "code", mVar);
                 }
             } else if (J == 2 && (details = (GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError.Details) this.detailsAdapter.fromJson(mVar)) == null) {
-                throw an.c.x("details", "details", mVar);
+                throw bn.c.x("details", "details", mVar);
             }
         }
         mVar.D();
@@ -62,11 +62,11 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_FileLimi
                 if (details != null) {
                     return new GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError(str, str2, details);
                 }
-                throw an.c.o("details", "details", mVar);
+                throw bn.c.o("details", "details", mVar);
             }
-            throw an.c.o("code", "code", mVar);
+            throw bn.c.o("code", "code", mVar);
         }
-        throw an.c.o("title", "title", mVar);
+        throw bn.c.o("title", "title", mVar);
     }
 
     @Override // com.squareup.moshi.h

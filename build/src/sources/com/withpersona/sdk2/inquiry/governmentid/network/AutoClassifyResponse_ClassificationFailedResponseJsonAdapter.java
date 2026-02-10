@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry.governmentid.network;
 
-import an.c;
+import bn.c;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -17,19 +17,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AutoClassifyResponse_ClassificationFailedResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18613a;
+    private final m.b f18753a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18614b;
+    private final h f18754b;
 
     public AutoClassifyResponse_ClassificationFailedResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18613a = a10;
+        this.f18753a = a10;
         h f10 = moshi.f(a0.j(List.class, AutoClassifyResponse.IdClassesForCountry.class), x0.d(), "idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18614b = f10;
+        this.f18754b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -39,14 +39,14 @@ public final class AutoClassifyResponse_ClassificationFailedResponseJsonAdapter 
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18613a);
+            int J = reader.J(this.f18753a);
             if (J != -1) {
-                if (J == 0 && (list = (List) this.f18614b.fromJson(reader)) == null) {
+                if (J == 0 && (list = (List) this.f18754b.fromJson(reader)) == null) {
                     throw c.x("idClassesByCountries", "idClassesByCountries", reader);
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -63,7 +63,7 @@ public final class AutoClassifyResponse_ClassificationFailedResponseJsonAdapter 
         if (classificationFailedResponse != null) {
             writer.k();
             writer.J("idClassesByCountries");
-            this.f18614b.toJson(writer, classificationFailedResponse.a());
+            this.f18754b.toJson(writer, classificationFailedResponse.a());
             writer.s();
             return;
         }

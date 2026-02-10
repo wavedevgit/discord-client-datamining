@@ -6,28 +6,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f implements j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f25841a;
+    private final i f24975a;
 
     public f(i iVar) {
-        this.f25841a = iVar;
+        this.f24975a = iVar;
     }
 
     @Override // h5.j
     public Object a(Continuation continuation) {
-        return this.f25841a;
+        return this.f24975a;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof f) && Intrinsics.areEqual(this.f25841a, ((f) obj).f25841a)) {
+        if ((obj instanceof f) && Intrinsics.areEqual(this.f24975a, ((f) obj).f24975a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f25841a.hashCode();
+        return this.f24975a.hashCode();
     }
 }

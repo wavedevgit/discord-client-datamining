@@ -2,10 +2,10 @@ package com.discord.serialization;
 
 import com.discord.serialization.IntEnum;
 import com.withpersona.sdk2.inquiry.network.dto.InquiryField;
-import ds.a;
-import ht.e;
-import ht.j;
+import es.a;
 import java.util.ArrayList;
+import jt.e;
+import jt.j;
 import kotlin.Metadata;
 import kotlin.collections.i;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -49,7 +49,7 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer {
         }
         Integer[] numArr = (Integer[]) arrayList.toArray(new Integer[0]);
         this.choicesNumbers = numArr;
-        this.descriptor = j.b(this.serialName, e.f.f26523a);
+        this.descriptor = j.b(this.serialName, e.f.f30481a);
         if (numArr.length == this.choices.length) {
             if (i.P(numArr).size() != numArr.length) {
                 throw new IllegalArgumentException("There must be no duplicates of serial numbers.");
@@ -63,14 +63,14 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer {
         return this.f1default;
     }
 
-    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
         return this.descriptor;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // ft.o
+    @Override // gt.o
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
         serialize(encoder, (Encoder) ((IntEnum) obj));
     }
@@ -108,9 +108,9 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer {
         Intrinsics.checkNotNullParameter(value, "value");
         int h02 = i.h0(this.choices, value);
         if (h02 == -1 && (t10 = this.f1default) != null) {
-            encoder.B(t10.getSerialNumber());
+            encoder.A(t10.getSerialNumber());
         } else if (h02 != -1) {
-            encoder.B(this.choicesNumbers[h02].intValue());
+            encoder.A(this.choicesNumbers[h02].intValue());
         } else {
             String str = this.serialName;
             T[] tArr = this.choices;

@@ -51,7 +51,7 @@ public final class DebugOverlayController {
                 String packageName = context.getPackageName();
                 Intent intent = new Intent("android.settings.action.MANAGE_OVERLAY_PERMISSION", Uri.parse("package:" + packageName));
                 intent.setFlags(268435456);
-                p8.a.J(ReactConstants.TAG, "Overlay permissions needs to be granted in order for react native apps to run in dev mode");
+                q8.a.J(ReactConstants.TAG, "Overlay permissions needs to be granted in order for react native apps to run in dev mode");
                 if (canHandleIntent(context, intent)) {
                     context.startActivity(intent);
                 }
@@ -79,7 +79,7 @@ public final class DebugOverlayController {
         FrameLayout frameLayout;
         if (z10 && debugOverlayController.fpsDebugViewContainer == null) {
             if (!Companion.permissionCheck(debugOverlayController.reactContext)) {
-                p8.a.b(ReactConstants.TAG, "Wait for overlay permission to be set");
+                q8.a.b(ReactConstants.TAG, "Wait for overlay permission to be set");
                 return;
             }
             debugOverlayController.fpsDebugViewContainer = new FpsView(debugOverlayController.reactContext);

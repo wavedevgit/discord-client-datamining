@@ -1,56 +1,72 @@
 package qg;
+
+import android.graphics.Rect;
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.ArrayList;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class ke {
-
-    /* renamed from: a  reason: collision with root package name */
-    private mi f47375a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private je f47376b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private he f47377c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private rh f47378d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private oh f47379e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private y3 f47380f;
-
-    public final ke d(y3 y3Var) {
-        this.f47380f = y3Var;
-        return this;
+public final class ke implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = jf.b.A(parcel);
+        int i10 = 0;
+        Rect rect = null;
+        ArrayList arrayList = null;
+        ArrayList arrayList2 = null;
+        float f10 = 0.0f;
+        float f11 = 0.0f;
+        float f12 = 0.0f;
+        float f13 = 0.0f;
+        float f14 = 0.0f;
+        float f15 = 0.0f;
+        float f16 = 0.0f;
+        while (parcel.dataPosition() < A) {
+            int r10 = jf.b.r(parcel);
+            switch (jf.b.l(r10)) {
+                case 1:
+                    i10 = jf.b.t(parcel, r10);
+                    break;
+                case 2:
+                    rect = (Rect) jf.b.e(parcel, r10, Rect.CREATOR);
+                    break;
+                case 3:
+                    f10 = jf.b.q(parcel, r10);
+                    break;
+                case 4:
+                    f11 = jf.b.q(parcel, r10);
+                    break;
+                case 5:
+                    f12 = jf.b.q(parcel, r10);
+                    break;
+                case 6:
+                    f13 = jf.b.q(parcel, r10);
+                    break;
+                case 7:
+                    f14 = jf.b.q(parcel, r10);
+                    break;
+                case 8:
+                    f15 = jf.b.q(parcel, r10);
+                    break;
+                case 9:
+                    f16 = jf.b.q(parcel, r10);
+                    break;
+                case 10:
+                    arrayList = jf.b.j(parcel, r10, qe.CREATOR);
+                    break;
+                case 11:
+                    arrayList2 = jf.b.j(parcel, r10, fe.CREATOR);
+                    break;
+                default:
+                    jf.b.z(parcel, r10);
+                    break;
+            }
+        }
+        jf.b.k(parcel, A);
+        return new je(i10, rect, f10, f11, f12, f13, f14, f15, f16, arrayList, arrayList2);
     }
 
-    public final ke e(he heVar) {
-        this.f47377c = heVar;
-        return this;
-    }
-
-    public final ke f(je jeVar) {
-        this.f47376b = jeVar;
-        return this;
-    }
-
-    public final ke g(oh ohVar) {
-        this.f47379e = ohVar;
-        return this;
-    }
-
-    public final ke h(rh rhVar) {
-        this.f47378d = rhVar;
-        return this;
-    }
-
-    public final ke i(mi miVar) {
-        this.f47375a = miVar;
-        return this;
-    }
-
-    public final me j() {
-        return new me(this, null);
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new je[i10];
     }
 }

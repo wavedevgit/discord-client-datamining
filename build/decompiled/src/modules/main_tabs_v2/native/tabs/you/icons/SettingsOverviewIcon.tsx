@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun103555: for (var _fun103555_ip = 0;;) switch (_fun103555_ip) {
+        _fun103535: for (var _fun103535_ip = 0;;) switch (_fun103535_ip) {
             case 0:
                 var0 = arg0;
                 var16 = var0.color;
@@ -23,8 +23,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var12.container;
                 var0.style = var5;
                 if (var4) {
-                    _fun103555_ip = 104;
-                    continue _fun103555
+                    _fun103535_ip = 104;
+                    continue _fun103535
                 }
             case 49:
                 var6 = _closure1_slot4;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.size = var7;
                 var4.color = var16;
                 var4 = var6.bind(var3)(var5, var4);
-                _fun103555_ip = 261;
-                continue _fun103555;
+                _fun103535_ip = 261;
+                continue _fun103535;
             case 104:
                 var7 = _closure1_slot5;
                 var6 = _closure1_slot3;
@@ -137,14 +137,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var3);
     var7 = var8.createStyles;
     var3 = {};
-    var9 = {};
-    var10 = 6;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.WHITE;
-    var9.color = var12;
-    var3.icon = var9;
     var9 = {
         'height': 20,
         'width': 20,
@@ -163,6 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'right': 0.1,
         'top': 0.7
     };
+    var10 = 6;
     var12 = var5[var10];
     var12 = var11.bind(var0)(var12);
     var12 = var12.colors;
@@ -199,4 +192,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5509, 13525, 1297, 671, 5421, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5510, 13512, 1297, 671, 5422, 2]);

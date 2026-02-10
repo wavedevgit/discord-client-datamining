@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18516a;
+    private final m.b f18656a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18517b;
+    private final h f18657b;
 
     public SubmitDocumentRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("fromStep", "fromComponent");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18516a = a10;
+        this.f18656a = a10;
         h f10 = moshi.f(String.class, x0.d(), "fromStep");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18517b = f10;
+        this.f18657b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,21 +37,21 @@ public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18516a);
+            int J = reader.J(this.f18656a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f18517b.fromJson(reader)) == null) {
-                        throw an.c.x("fromComponent", "fromComponent", reader);
+                    if (J == 1 && (str2 = (String) this.f18657b.fromJson(reader)) == null) {
+                        throw bn.c.x("fromComponent", "fromComponent", reader);
                     }
                 } else {
-                    str = (String) this.f18517b.fromJson(reader);
+                    str = (String) this.f18657b.fromJson(reader);
                     if (str == null) {
-                        throw an.c.x("fromStep", "fromStep", reader);
+                        throw bn.c.x("fromStep", "fromStep", reader);
                     }
                 }
             } else {
-                reader.E0();
-                reader.S();
+                reader.C0();
+                reader.T();
             }
         }
         reader.D();
@@ -59,9 +59,9 @@ public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
             if (str2 != null) {
                 return new SubmitDocumentRequest.Meta(str, str2);
             }
-            throw an.c.o("fromComponent", "fromComponent", reader);
+            throw bn.c.o("fromComponent", "fromComponent", reader);
         }
-        throw an.c.o("fromStep", "fromStep", reader);
+        throw bn.c.o("fromStep", "fromStep", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -71,9 +71,9 @@ public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
         if (meta != null) {
             writer.k();
             writer.J("fromStep");
-            this.f18517b.toJson(writer, meta.b());
+            this.f18657b.toJson(writer, meta.b());
             writer.J("fromComponent");
-            this.f18517b.toJson(writer, meta.a());
+            this.f18657b.toJson(writer, meta.a());
             writer.s();
             return;
         }

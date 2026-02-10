@@ -23,36 +23,36 @@ import java.io.InputStreamReader;
 public final class SentryPerformanceProvider extends n1 {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final long f27015q = SystemClock.uptimeMillis();
+    private static final long f27215q = SystemClock.uptimeMillis();
 
     /* renamed from: e  reason: collision with root package name */
-    private Application f27016e;
+    private Application f27216e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ILogger f27017i;
+    private final ILogger f27217i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final x0 f27018o;
+    private final x0 f27218o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final io.sentry.util.a f27019p = new io.sentry.util.a();
+    private final io.sentry.util.a f27219p = new io.sentry.util.a();
 
     public SentryPerformanceProvider() {
         z zVar = new z();
-        this.f27017i = zVar;
-        this.f27018o = new x0(zVar);
+        this.f27217i = zVar;
+        this.f27218o = new x0(zVar);
     }
 
     private void b(Context context, c5 c5Var, io.sentry.android.core.performance.h hVar) {
         double d10;
         if (!c5Var.f()) {
-            this.f27017i.c(SentryLevel.DEBUG, "App start profiling was not sampled. It will not start.", new Object[0]);
+            this.f27217i.c(SentryLevel.DEBUG, "App start profiling was not sampled. It will not start.", new Object[0]);
             return;
         }
-        v vVar = new v(this.f27018o, new io.sentry.android.core.internal.util.c0(context.getApplicationContext(), this.f27017i, this.f27018o), this.f27017i, c5Var.c(), c5Var.d(), new q6());
+        v vVar = new v(this.f27218o, new io.sentry.android.core.internal.util.c0(context.getApplicationContext(), this.f27217i, this.f27218o), this.f27217i, c5Var.c(), c5Var.d(), new q6());
         hVar.x(null);
         hVar.w(vVar);
-        this.f27017i.c(SentryLevel.DEBUG, "App start continuous profiling started.", new Object[0]);
+        this.f27217i.c(SentryLevel.DEBUG, "App start continuous profiling started.", new Object[0]);
         k7 empty = k7.empty();
         if (c5Var.f()) {
             d10 = 1.0d;
@@ -67,24 +67,24 @@ public final class SentryPerformanceProvider extends n1 {
         s8 s8Var = new s8(Boolean.valueOf(c5Var.l()), c5Var.e(), Boolean.valueOf(c5Var.i()), c5Var.b());
         hVar.y(s8Var);
         if (s8Var.b().booleanValue() && s8Var.e().booleanValue()) {
-            l0 l0Var = new l0(context, this.f27018o, new io.sentry.android.core.internal.util.c0(context, this.f27017i, this.f27018o), this.f27017i, c5Var.c(), c5Var.j(), c5Var.d(), new q6());
+            l0 l0Var = new l0(context, this.f27218o, new io.sentry.android.core.internal.util.c0(context, this.f27217i, this.f27218o), this.f27217i, c5Var.c(), c5Var.j(), c5Var.d(), new q6());
             hVar.w(null);
             hVar.x(l0Var);
-            this.f27017i.c(SentryLevel.DEBUG, "App start profiling started.", new Object[0]);
+            this.f27217i.c(SentryLevel.DEBUG, "App start profiling started.", new Object[0]);
             l0Var.start();
             return;
         }
-        this.f27017i.c(SentryLevel.DEBUG, "App start profiling was not sampled. It will not start.", new Object[0]);
+        this.f27217i.c(SentryLevel.DEBUG, "App start profiling was not sampled. It will not start.", new Object[0]);
     }
 
     private void d(io.sentry.android.core.performance.h hVar) {
         final Context context = getContext();
         if (context == null) {
-            this.f27017i.c(SentryLevel.FATAL, "App. Context from ContentProvider is null", new Object[0]);
+            this.f27217i.c(SentryLevel.FATAL, "App. Context from ContentProvider is null", new Object[0]);
             return;
         }
-        File file = new File((File) new io.sentry.android.core.internal.util.h().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.n2
-            @Override // io.sentry.util.runtime.a.InterfaceC0408a
+        File file = new File((File) new io.sentry.android.core.internal.util.h().a(new a.InterfaceC0434a() { // from class: io.sentry.android.core.n2
+            @Override // io.sentry.util.runtime.a.InterfaceC0434a
             public final Object run() {
                 File f10;
                 f10 = g0.f(context);
@@ -96,32 +96,32 @@ public final class SentryPerformanceProvider extends n1 {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
                 c5 c5Var = (c5) new io.sentry.x1(k7.empty()).c(bufferedReader, c5.class);
                 if (c5Var == null) {
-                    this.f27017i.c(SentryLevel.WARNING, "Unable to deserialize the SentryAppStartProfilingOptions. App start profiling will not start.", new Object[0]);
+                    this.f27217i.c(SentryLevel.WARNING, "Unable to deserialize the SentryAppStartProfilingOptions. App start profiling will not start.", new Object[0]);
                 } else if (c5Var.g() && c5Var.k()) {
                     b(context, c5Var, hVar);
                 } else if (!c5Var.j()) {
-                    this.f27017i.c(SentryLevel.INFO, "Profiling is not enabled. App start profiling will not start.", new Object[0]);
+                    this.f27217i.c(SentryLevel.INFO, "Profiling is not enabled. App start profiling will not start.", new Object[0]);
                 } else if (c5Var.h()) {
                     c(context, c5Var, hVar);
                 }
                 bufferedReader.close();
             } catch (FileNotFoundException e10) {
-                this.f27017i.b(SentryLevel.ERROR, "App start profiling config file not found. ", e10);
+                this.f27217i.b(SentryLevel.ERROR, "App start profiling config file not found. ", e10);
             } catch (Throwable th2) {
-                this.f27017i.b(SentryLevel.ERROR, "Error reading app start profiling config file. ", th2);
+                this.f27217i.b(SentryLevel.ERROR, "Error reading app start profiling config file. ", th2);
             }
         }
     }
 
     private void e(Context context, io.sentry.android.core.performance.h hVar) {
-        hVar.r().t(f27015q);
-        if (this.f27018o.d() >= 24) {
+        hVar.r().t(f27215q);
+        if (this.f27218o.d() >= 24) {
             hVar.l().t(Process.getStartUptimeMillis());
         }
         if (context instanceof Application) {
-            this.f27016e = (Application) context;
+            this.f27216e = (Application) context;
         }
-        Application application = this.f27016e;
+        Application application = this.f27216e;
         if (application == null) {
             return;
         }
