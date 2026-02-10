@@ -1,6 +1,7 @@
 package xk;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class b extends f {
+public final class b extends f {
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(mk.a aVar) {
         super(aVar);
