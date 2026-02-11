@@ -1,6 +1,7 @@
 package zk;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class i extends h {
+public abstract class i extends h {
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(ok.a aVar) {
         super(aVar);
