@@ -61,4 +61,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hideGuildsBarFolderModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4571, 13197, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4567, 13178, 1307, 2]);

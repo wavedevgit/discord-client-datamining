@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/PhoneCallIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun62530: for (var _fun62530_ip = 0;;) switch (_fun62530_ip) {
+        _fun62536: for (var _fun62536_ip = 0;;) switch (_fun62536_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun62530_ip = 53;
-                    continue _fun62530
+                    _fun62536_ip = 53;
+                    continue _fun62536
                 }
             case 19:
                 var1 = _closure1_slot1;

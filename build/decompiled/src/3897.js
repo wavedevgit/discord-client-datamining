@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun35144: for (var _fun35144_ip = 0;;) switch (_fun35144_ip) {
+    _fun35164: for (var _fun35164_ip = 0;;) switch (_fun35164_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -18,69 +18,40 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = '__esModule';
             var0 = var3.bind(var7)(var2, var0, var1);
             var0 = {};
-            var1 = 'function dispatchCommandFabric_Pnpm_dispatchCommandTs1(animatedRef,commandName,args=[]){const{logger}=this.__closure;if(!_WORKLET){return;}const shadowNodeWrapper=animatedRef();if(!shadowNodeWrapper){logger.warn("Tried to dispatch command \\""+commandName+"\\" with an uninitialized ref. Make sure to pass the animated ref to the component before using it.");return;}global._dispatchCommandFabric(shadowNodeWrapper,commandName,args);}';
+            var1 = "function setGestureStateNative_Pnpm_setGestureStateTs1(handlerTag,newState){const{logger}=this.__closure;if(!_WORKLET){logger.warn('You can not use setGestureState in non-worklet function.');return;}global._setGestureState(handlerTag,newState);}";
             var0.code = var1;
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
                 var0 = function arg0, arg1() {
-                    _fun35146: for (var _fun35146_ip = 0;;) switch (_fun35146_ip) {
+                    _fun35166: for (var _fun35166_ip = 0;;) switch (_fun35166_ip) {
                         case 0:
-                            var5 = arg1;
-                            var0 = undefined;
-                            var2 = undefined;
-                            var3 = arguments.length;
-                            var1 = 2;
-                            if (!(var3 > var1)) {
-                                _fun35146_ip = 25;
-                                continue _fun35146
+                            var0 = global;
+                            var1 = var0._WORKLET;
+                            if (var1) {
+                                _fun35166_ip = 59;
+                                continue _fun35166
                             }
-                        case 17:
-                            var3 = arguments[var1];
-                            if (!(var0 === var3)) {
-                                _fun35146_ip = 31;
-                                continue _fun35146
-                            }
-                        case 25:
-                            var4 = new Array(0);
-                            _fun35146_ip = 35;
-                            continue _fun35146;
-                        case 31:
-                            var4 = arguments[var1];
-                        case 35:
-                            var2 = global;
-                            var1 = var2._WORKLET;
-                            if (!var1) {
-                                _fun35146_ip = 144;
-                                continue _fun35146
-                            }
-                        case 46:
-                            var1 = arg0;
-                            var3 = var1.bind(var0)();
-                            if (var3) {
-                                _fun35146_ip = 125;
-                                continue _fun35146
-                            }
+                        case 14:
+                            var3 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var1 = 0;
+                            var2 = var2[var1];
+                            var1 = undefined;
+                            var1 = var3.bind(var1)(var2);
+                            var3 = var1.logger;
+                            var2 = var3.warn;
+                            var1 = 'You can not use setGestureState in non-worklet function.';
+                            var1 = var2.bind(var3)(var1);
+                            _fun35166_ip = 83;
+                            continue _fun35166;
                         case 59:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var0)(var6);
-                            var7 = var6.logger;
-                            var6 = var7.warn;
-                            var2 = var2.HermesInternal;
-                            var9 = var2.concat;
-                            var8 = 'Tried to dispatch command "';
-                            var2 = '" with an uninitialized ref. Make sure to pass the animated ref to the component before using it.';
-                            var2 = var9.bind(var8)(var5, var2);
-                            var2 = var6.bind(var7)(var2);
-                            _fun35146_ip = 144;
-                            continue _fun35146;
-                        case 125:
-                            var2 = _closure1_slot0;
-                            var1 = var2._dispatchCommandFabric;
-                            var1 = var1.bind(var2)(var3, var5, var4);
-                        case 144:
+                            var3 = _closure1_slot0;
+                            var2 = var3._setGestureState;
+                            var1 = arg0;
+                            var0 = arg1;
+                            var0 = var2.bind(var3)(var1, var0);
+                        case 83:
+                            var0 = undefined;
                             return var0;
                     }
                 };
@@ -94,138 +65,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.logger;
                 var2.logger = var3;
                 var0.__closure = var2;
-                var2 = 9994297174981.0;
+                var2 = 13301434022691.0;
                 var0.__workletHash = var2;
                 var1 = _closure1_slot3;
                 var0.__initData = var1;
                 return var0;
             };
             var0 = undefined;
-            var7 = var1.bind(var0)();
-            var1 = {};
-            var3 = 'function dispatchCommandPaper_Pnpm_dispatchCommandTs2(animatedRef,commandName,args=[]){const{logger}=this.__closure;if(!_WORKLET){return;}const viewTag=animatedRef();if(viewTag<0){logger.warn("Tried to dispatch command \\""+commandName+"\\" with an uninitialized ref. Make sure to pass the animated ref to the component before using it.");return;}global._dispatchCommandPaper(viewTag,commandName,args);}';
-            var1.code = var3;
-            var _closure1_slot4 = var1;
-            var1 = function() { // Environment: var4
-                var0 = function arg0, arg1() {
-                    _fun35148: for (var _fun35148_ip = 0;;) switch (_fun35148_ip) {
-                        case 0:
-                            var6 = arg1;
-                            var0 = undefined;
-                            var2 = undefined;
-                            var3 = arguments.length;
-                            var1 = 2;
-                            if (!(var3 > var1)) {
-                                _fun35148_ip = 25;
-                                continue _fun35148
-                            }
-                        case 17:
-                            var3 = arguments[var1];
-                            if (!(var0 === var3)) {
-                                _fun35148_ip = 31;
-                                continue _fun35148
-                            }
-                        case 25:
-                            var7 = new Array(0);
-                            _fun35148_ip = 35;
-                            continue _fun35148;
-                        case 31:
-                            var7 = arguments[var1];
-                        case 35:
-                            var1 = global;
-                            var2 = var1._WORKLET;
-                            if (!var2) {
-                                _fun35148_ip = 148;
-                                continue _fun35148
-                            }
-                        case 46:
-                            var2 = arg0;
-                            var5 = var2.bind(var0)();
-                            var4 = 0;
-                            if (!(!(var5 < var4))) {
-                                _fun35148_ip = 83;
-                                continue _fun35148
-                            }
-                        case 59:
-                            var3 = _closure1_slot0;
-                            var2 = var3._dispatchCommandPaper;
-                            var2 = var2.bind(var3)(var5, var6, var7);
-                            _fun35148_ip = 148;
-                            continue _fun35148;
-                        case 83:
-                            var3 = _closure1_slot1;
-                            var2 = _closure1_slot2;
-                            var2 = var2[var4];
-                            var2 = var3.bind(var0)(var2);
-                            var3 = var2.logger;
-                            var2 = var3.warn;
-                            var1 = var1.HermesInternal;
-                            var5 = var1.concat;
-                            var4 = 'Tried to dispatch command "';
-                            var1 = '" with an uninitialized ref. Make sure to pass the animated ref to the component before using it.';
-                            var1 = var5.bind(var4)(var6, var1);
-                            var1 = var2.bind(var3)(var1);
-                        case 148:
-                            return var0;
-                    }
-                };
-                var2 = {};
-                var5 = _closure1_slot1;
-                var4 = _closure1_slot2;
-                var3 = 0;
-                var4 = var4[var3];
-                var3 = undefined;
-                var3 = var5.bind(var3)(var4);
-                var3 = var3.logger;
-                var2.logger = var3;
-                var0.__closure = var2;
-                var2 = 16962176072769.0;
-                var0.__workletHash = var2;
-                var1 = _closure1_slot4;
-                var0.__initData = var1;
-                return var0;
-            };
             var1 = var1.bind(var0)();
             var3 = 1;
-            var8 = var6[var3];
-            var9 = var5.bind(var0)(var8);
-            var8 = var9.shouldBeUseWeb;
-            var9 = var8.bind(var9)();
-            var8 = var6[var3];
-            var8 = var5.bind(var0)(var8);
-            if (var9) {
-                _fun35144_ip = 162;
-                continue _fun35144
+            var7 = var6[var3];
+            var8 = var5.bind(var0)(var7);
+            var7 = var8.shouldBeUseWeb;
+            var7 = var7.bind(var8)();
+            if (!var7) {
+                _fun35164_ip = 176;
+                continue _fun35164
             }
-        case 144:
-            var9 = var8.isFabric;
-            var9 = var9.bind(var8)();
-            if (!var9) {
-                _fun35144_ip = 160;
-                continue _fun35144
-            }
-        case 157:
-            var1 = var7;
-        case 160:
-            _fun35144_ip = 219;
-            continue _fun35144;
-        case 162:
+        case 110:
+            var7 = var6[var3];
+            var8 = var5.bind(var0)(var7);
             var7 = var8.isJest;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun35144_ip = 211;
-                continue _fun35144
+                _fun35164_ip = 168;
+                continue _fun35164
             }
-        case 175:
+        case 132:
             var3 = var6[var3];
             var5 = var5.bind(var0)(var3);
             var3 = var5.isChromeDebugger;
             var3 = var3.bind(var5)();
             if (var3) {
-                _fun35144_ip = 204;
-                continue _fun35144
+                _fun35164_ip = 161;
+                continue _fun35164
             }
-        case 197:
+        case 154:
             var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
@@ -235,13 +110,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.bind(var0)(var1);
                 var3 = var1.logger;
                 var2 = var3.warn;
-                var1 = 'dispatchCommand() is not supported on this configuration.';
+                var1 = 'setGestureState() is not supported on this configuration.';
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-            _fun35144_ip = 209;
-            continue _fun35144;
-        case 204:
+            _fun35164_ip = 166;
+            continue _fun35164;
+        case 161:
             var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
@@ -251,14 +126,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.bind(var0)(var1);
                 var3 = var1.logger;
                 var2 = var3.warn;
-                var1 = 'dispatchCommand() is not supported with Chrome Debugger.';
+                var1 = 'setGestureState() cannot be used with Chrome Debugger.';
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-        case 209:
-            _fun35144_ip = 216;
-            continue _fun35144;
-        case 211:
+        case 166:
+            _fun35164_ip = 173;
+            continue _fun35164;
+        case 168:
             var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
@@ -268,14 +143,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.bind(var0)(var1);
                 var3 = var1.logger;
                 var2 = var3.warn;
-                var1 = 'dispatchCommand() is not supported with Jest.';
+                var1 = 'setGestureState() cannot be used with Jest.';
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-        case 216:
+        case 173:
             var1 = var3;
-        case 219:
-            var2.dispatchCommand = var1;
+        case 176:
+            var2.setGestureState = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3726, 3725]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3722, 3721]);

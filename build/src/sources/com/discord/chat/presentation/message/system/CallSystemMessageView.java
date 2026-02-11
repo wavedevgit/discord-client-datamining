@@ -70,9 +70,9 @@ public final class CallSystemMessageView extends ChatListConstraintLayout {
         Boolean missed = message.getMissed();
         Boolean bool = Boolean.TRUE;
         if (Intrinsics.areEqual(missed, bool)) {
-            reactAsset = ReactAsset.CallDisconnect;
+            reactAsset = ReactAsset.PhoneHangUpIcon;
         } else {
-            reactAsset = ReactAsset.CallConnect;
+            reactAsset = ReactAsset.PhoneCallIcon;
         }
         ReactAssetUtilsKt.setReactAsset(icon, reactAsset);
         SimpleDraweeView icon2 = this.binding.icon;

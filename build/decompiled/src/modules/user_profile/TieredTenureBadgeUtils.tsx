@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.getTieredTenureBadgeData = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun60006: for (var _fun60006_ip = 0;;) switch (_fun60006_ip) {
+        _fun60012: for (var _fun60012_ip = 0;;) switch (_fun60012_ip) {
             case 0:
                 var1 = arg0;
                 var2 = _closure1_slot3;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var2;
                 if (var2) {
-                    _fun60006_ip = 29;
-                    continue _fun60006
+                    _fun60012_ip = 29;
+                    continue _fun60012
                 }
             case 26:
                 var0 = var1;
@@ -56,13 +56,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getTieredTenureBadge = var3;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun60007: for (var _fun60007_ip = 0;;) switch (_fun60007_ip) {
+        _fun60013: for (var _fun60013_ip = 0;;) switch (_fun60013_ip) {
             case 0:
                 var5 = arg1;
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun60007_ip = 105;
-                    continue _fun60007
+                    _fun60013_ip = 105;
+                    continue _fun60013
                 }
             case 9:
                 var4 = _closure1_slot3;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var4.bind(var3)(var1);
                 if (!(var0 != var1)) {
-                    _fun60007_ip = 103;
-                    continue _fun60007
+                    _fun60013_ip = 103;
+                    continue _fun60013
                 }
             case 30:
                 var6 = _closure1_slot0;

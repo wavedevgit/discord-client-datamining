@@ -204,7 +204,7 @@ public final class MediaVisualPlaceholderView extends FrameLayout implements Mos
             ColorUtilsKt.setTintColor(imageInvalid2, Integer.valueOf(ThemeManagerKt.getTheme().getBackgroundModMuted()));
             SimpleDraweeView imageInvalid3 = this.binding.imageInvalid;
             Intrinsics.checkNotNullExpressionValue(imageInvalid3, "imageInvalid");
-            ReactAssetUtilsKt.setReactAsset(imageInvalid3, ReactAsset.BrokenImage);
+            ReactAssetUtilsKt.setReactAsset(imageInvalid3, ReactAsset.ImageBrokenIcon);
         }
     }
 

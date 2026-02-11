@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/QuestDock/QuestDockContextMenuActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun47979: for (var _fun47979_ip = 0;;) switch (_fun47979_ip) {
+        _fun47975: for (var _fun47975_ip = 0;;) switch (_fun47975_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.quest;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = new Array(2);
                 var7[0] = var9;
                 if (!var8) {
-                    _fun47979_ip = 513;
-                    continue _fun47979
+                    _fun47975_ip = 513;
+                    continue _fun47975
                 }
             case 336:
                 var12 = _closure1_slot6;
@@ -458,13 +458,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = _closure1_slot3;
                 var17 = function*() { // Environment: var13
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun47985: for (var _fun47985_ip = 0;;) switch (_fun47985_ip) {
+                        _fun47981: for (var _fun47981_ip = 0;;) switch (_fun47981_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun47985_ip = 271;
-                                    continue _fun47985
+                                    _fun47981_ip = 271;
+                                    continue _fun47981
                                 }
                             case 10:
                                 var8 = _closure1_slot0;
@@ -518,8 +518,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 229:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                                 if (var4) {
-                                    _fun47985_ip = 268;
-                                    continue _fun47985
+                                    _fun47981_ip = 268;
+                                    continue _fun47981
                                 }
                             case 235:
                                 var4 = _closure1_slot0;
@@ -547,8 +547,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[1] = var6;
                 var5 = var5.preview;
                 if (!var5) {
-                    _fun47979_ip = 2337;
-                    continue _fun47979
+                    _fun47975_ip = 2337;
+                    continue _fun47975
                 }
             case 1165:
                 var8 = _closure1_slot7;
@@ -781,8 +781,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.location = var17;
                 var11 = var12.bind(var16)(var11);
                 if (!var11) {
-                    _fun47979_ip = 2143;
-                    continue _fun47979
+                    _fun47975_ip = 2143;
+                    continue _fun47975
                 }
             case 1969:
                 var17 = _closure1_slot6;
@@ -918,4 +918,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 5291, 660, 33, 5329, 5376, 5353, 5268, 7788, 12217, 5441, 5380, 5293, 5340, 3279, 3259, 1234, 12219, 5324, 10099, 9626, 10820, 4744, 5321, 12221, 7917, 12222, 12224, 12226, 5334, 7597, 5984, 5354, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 5289, 660, 33, 5327, 5374, 5351, 5266, 7788, 12197, 5440, 5378, 5291, 5338, 3279, 3259, 1234, 12199, 5322, 10067, 9626, 10791, 4742, 5319, 12201, 7917, 12202, 12204, 12206, 5332, 7597, 5983, 5352, 2]);

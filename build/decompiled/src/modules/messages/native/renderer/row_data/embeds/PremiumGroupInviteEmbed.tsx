@@ -31,14 +31,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun56548: for (var _fun56548_ip = 0;;) switch (_fun56548_ip) {
+        _fun56553: for (var _fun56553_ip = 0;;) switch (_fun56553_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.author;
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun56548_ip = 371;
-                    continue _fun56548
+                    _fun56553_ip = 371;
+                    continue _fun56553
                 }
             case 18:
                 var3 = _closure1_slot0;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.inviteState = var9;
                 var0 = var3.bind(var6)(var0);
                 if (!(var1 == var0)) {
-                    _fun56548_ip = 375;
-                    continue _fun56548
+                    _fun56553_ip = 375;
+                    continue _fun56553
                 }
             case 371:
                 var1 = undefined;

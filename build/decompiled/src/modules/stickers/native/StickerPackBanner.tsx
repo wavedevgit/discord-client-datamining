@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stickers/native/StickerPackBanner.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun74974: for (var _fun74974_ip = 0;;) switch (_fun74974_ip) {
+        _fun74980: for (var _fun74980_ip = 0;;) switch (_fun74980_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.containerStyle;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var9;
                 if (var1) {
-                    _fun74974_ip = 130;
-                    continue _fun74974
+                    _fun74980_ip = 130;
+                    continue _fun74980
                 }
             case 72:
                 var3 = _closure1_slot4;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3998, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3994, 2]);

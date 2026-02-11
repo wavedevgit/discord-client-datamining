@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStore;
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun19216: for (var _fun19216_ip = 0;;) switch (_fun19216_ip) {
+        _fun19213: for (var _fun19213_ip = 0;;) switch (_fun19213_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.bind(var4)(var2);
                 var2 = null;
                 if (!(var2 == var4)) {
-                    _fun19216_ip = 73;
-                    continue _fun19216
+                    _fun19213_ip = 73;
+                    continue _fun19213
                 }
             case 69:
                 var4 = new Array(0);
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.dismissNotification = var2;
                 var1 = function arg0() {
-                    _fun19219: for (var _fun19219_ip = 0;;) switch (_fun19219_ip) {
+                    _fun19216: for (var _fun19216_ip = 0;;) switch (_fun19216_ip) {
                         case 0:
                             var3 = arg0;
                             var2 = _closure2_slot1;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var7.has;
                             var2 = var2.bind(var7)(var3);
                             if (!var2) {
-                                _fun19219_ip = 123;
-                                continue _fun19219
+                                _fun19216_ip = 123;
+                                continue _fun19216
                             }
                         case 41:
                             var2 = var7.delete;

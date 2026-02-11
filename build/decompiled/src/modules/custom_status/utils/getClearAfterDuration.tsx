@@ -28,14 +28,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/utils/getClearAfterDuration.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57907: for (var _fun57907_ip = 0;;) switch (_fun57907_ip) {
+        _fun57912: for (var _fun57912_ip = 0;;) switch (_fun57912_ip) {
             case 0:
                 var0 = arg0;
                 var2 = _closure1_slot2;
                 var2 = var2.TODAY;
                 if (!(var0 !== var2)) {
-                    _fun57907_ip = 67;
-                    continue _fun57907
+                    _fun57912_ip = 67;
+                    continue _fun57912
                 }
             case 20:
                 var2 = _closure1_slot0;

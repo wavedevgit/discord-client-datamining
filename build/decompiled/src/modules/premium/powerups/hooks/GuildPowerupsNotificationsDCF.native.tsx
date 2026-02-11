@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/hooks/GuildPowerupsNotificationsDCF.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun102867: for (var _fun102867_ip = 0;;) switch (_fun102867_ip) {
+        _fun102844: for (var _fun102844_ip = 0;;) switch (_fun102844_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -33,13 +33,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useSelectedDismissibleContent;
                 var0 = arg0;
                 if (var0) {
-                    _fun102867_ip = 42;
-                    continue _fun102867
+                    _fun102844_ip = 42;
+                    continue _fun102844
                 }
             case 36:
                 var0 = new Array(0);
-                _fun102867_ip = 85;
-                continue _fun102867;
+                _fun102844_ip = 85;
+                continue _fun102844;
             case 42:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePerksCoachmarkDCF = var3;
     var3 = function arg0, arg1() {
-        _fun102868: for (var _fun102868_ip = 0;;) switch (_fun102868_ip) {
+        _fun102845: for (var _fun102845_ip = 0;;) switch (_fun102845_ip) {
             case 0:
                 var3 = arg1;
                 var1 = _closure1_slot0;
@@ -71,15 +71,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = arg0;
                 var0 = null;
                 if (!var8) {
-                    _fun102868_ip = 82;
-                    continue _fun102868
+                    _fun102845_ip = 82;
+                    continue _fun102845
                 }
             case 41:
                 var5 = var3 > var5;
                 var0 = null;
                 if (!var5) {
-                    _fun102868_ip = 82;
-                    continue _fun102868
+                    _fun102845_ip = 82;
+                    continue _fun102845
                 }
             case 50:
                 var5 = _closure1_slot0;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useNewPerkAvailableCoachmarkDCF = var3;
-    var1 = function arg0() {
-        _fun102869: for (var _fun102869_ip = 0;;) switch (_fun102869_ip) {
+    var3 = function arg0() {
+        _fun102846: for (var _fun102846_ip = 0;;) switch (_fun102846_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arg0;
                 var1 = null;
                 if (!var0) {
-                    _fun102869_ip = 70;
-                    continue _fun102869
+                    _fun102846_ip = 70;
+                    continue _fun102846
                 }
             case 38:
                 var5 = _closure1_slot0;
@@ -132,6 +132,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.useGuildPowerupNotificationDCF = var1;
+    var2.useGuildPowerupNotificationDCF = var3;
+    var1 = function() {
+        var0 = [null];
+        var1 = function() { // Environment: var1
+            var0 = undefined;
+            return var0;
+        };
+        var0[1] = var1;
+        return var0;
+    };
+    var2.useBoostToUnlockCoachmarkDCF = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6019, 1358, 13382, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6018, 1358, 13366, 2]);

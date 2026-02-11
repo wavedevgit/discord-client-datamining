@@ -1,7 +1,7 @@
 // uikit-native/ThumbnailImage.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun70860: for (var _fun70860_ip = 0;;) switch (_fun70860_ip) {
+    _fun70866: for (var _fun70866_ip = 0;;) switch (_fun70866_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var7.isAndroid;
             var6 = var6.bind(var7)();
             if (!var6) {
-                _fun70860_ip = 140;
-                continue _fun70860
+                _fun70866_ip = 140;
+                continue _fun70866
             }
         case 123:
             var6 = 4;

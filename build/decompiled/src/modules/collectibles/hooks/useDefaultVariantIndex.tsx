@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/hooks/useDefaultVariantIndex.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun87856: for (var _fun87856_ip = 0;;) switch (_fun87856_ip) {
+        _fun87828: for (var _fun87828_ip = 0;;) switch (_fun87828_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 0;
                 var0 = 0;
                 if (!var3) {
-                    _fun87856_ip = 156;
-                    continue _fun87856
+                    _fun87828_ip = 156;
+                    continue _fun87828
                 }
             case 77:
                 var3 = _closure1_slot0;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var5);
                 var0 = 0;
                 if (!var2) {
-                    _fun87856_ip = 156;
-                    continue _fun87856
+                    _fun87828_ip = 156;
+                    continue _fun87828
                 }
             case 113:
                 var2 = global;
@@ -91,4 +91,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDefaultVariantIndex = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4626, 566, 4623, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4622, 566, 4619, 2]);

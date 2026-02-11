@@ -1,267 +1,210 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var3 = dependencyMap;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var _closure1_slot1 = var3;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var0 = true;
-    var4.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var4);
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = metroImportDefault;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot2 = var3;
-    var1 = function arg0() {
-        _fun75477: for (var _fun75477_ip = 0;;) switch (_fun75477_ip) {
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = {};
+    var3 = 'function pnpm_parallaxTs1(value){const{interpolate,size,parallaxScrollingOffset,Extrapolation,parallaxAdjacentItemScale,parallaxScrollingScale,vertical}=this.__closure;const translate=interpolate(value,[-1,0,1],[-size+parallaxScrollingOffset,0,size-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,size,0],Extrapolation.CLAMP));const scale=interpolate(value,[-1,0,1],[parallaxAdjacentItemScale,parallaxScrollingScale,parallaxAdjacentItemScale],Extrapolation.CLAMP);return{transform:[vertical?{translateY:translate}:{translateX:translate},{scale:scale}],zIndex:zIndex};}';
+    var2.code = var3;
+    var _closure1_slot2 = var2;
+    var0 = function arg0() {
+        _fun75476: for (var _fun75476_ip = 0;;) switch (_fun75476_ip) {
             case 0:
-                var4 = arg0;
-                var0 = var4.defaultIndex;
-                var17 = 0;
-                var3 = undefined;
-                var19 = 0;
-                if (!(var3 !== var0)) {
-                    _fun75477_ip = 24;
-                    continue _fun75477
+                var2 = arg0;
+                var8 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var3 = 1;
+                if (!(var1 > var3)) {
+                    _fun75476_ip = 27;
+                    continue _fun75476
                 }
-            case 21:
-                var19 = var0;
-            case 24:
-                var15 = var4.data;
-                if (!(var3 === var15)) {
-                    _fun75477_ip = 37;
-                    continue _fun75477
+            case 19:
+                var1 = arguments[var3];
+                if (!(var8 === var1)) {
+                    _fun75476_ip = 31;
+                    continue _fun75476
                 }
-            case 33:
-                var15 = new Array(0);
-            case 37:
-                var _closure2_slot0 = var15;
-                var0 = var4.loop;
-                var13 = var3 === var0;
-                if (var13) {
-                    _fun75477_ip = 57;
-                    continue _fun75477
-                }
-            case 54:
-                var13 = var0;
-            case 57:
-                var _closure2_slot1 = var13;
-                var0 = var4.autoPlayInterval;
-                var16 = 1000;
-                if (!(var3 !== var0)) {
-                    _fun75477_ip = 80;
-                    continue _fun75477
-                }
-            case 77:
-                var16 = var0;
-            case 80:
-                var0 = var4.scrollAnimationDuration;
-                var10 = 500;
-                if (!(var3 !== var0)) {
-                    _fun75477_ip = 99;
-                    continue _fun75477
-                }
-            case 96:
-                var10 = var0;
-            case 99:
-                var9 = var4.style;
-                if (!(var3 === var9)) {
-                    _fun75477_ip = 110;
-                    continue _fun75477
-                }
-            case 108:
-                var9 = {};
-            case 110:
-                var0 = var4.autoFillData;
-                var18 = var3 === var0;
-                if (var18) {
-                    _fun75477_ip = 126;
-                    continue _fun75477
-                }
-            case 123:
-                var18 = var0;
-            case 126:
-                var _closure2_slot2 = var18;
-                var0 = var4.enabled;
-                var12 = var3 === var0;
-                if (var12) {
-                    _fun75477_ip = 145;
-                    continue _fun75477
-                }
-            case 142:
-                var12 = var0;
-            case 145:
-                var0 = var4.pagingEnabled;
-                var8 = var3 === var0;
-                if (var8) {
-                    _fun75477_ip = 161;
-                    continue _fun75477
-                }
-            case 158:
-                var8 = var0;
-            case 161:
-                var0 = var4.overscrollEnabled;
-                var6 = var3 === var0;
-                if (var6) {
-                    _fun75477_ip = 177;
-                    continue _fun75477
-                }
-            case 174:
-                var6 = var0;
-            case 177:
-                var7 = var4.snapEnabled;
-                if (!(var3 === var7)) {
-                    _fun75477_ip = 208;
-                    continue _fun75477
-                }
-            case 187:
-                var1 = var4.enableSnap;
-                var0 = null;
-                var0 = var0 == var1;
-                if (var0) {
-                    _fun75477_ip = 205;
-                    continue _fun75477
-                }
-            case 202:
-                var0 = var1;
-            case 205:
-                var7 = var0;
-            case 208:
-                var11 = var4.width;
-                var14 = var4.height;
-                var1 = global;
-                var5 = var1.Math;
-                var0 = var5.round;
-                if (var11) {
-                    _fun75477_ip = 236;
-                    continue _fun75477
-                }
-            case 234:
-                var11 = 0;
-            case 236:
-                var5 = var0.bind(var5)(var11);
-                var11 = var1.Math;
-                var0 = var11.round;
-                if (var14) {
-                    _fun75477_ip = 257;
-                    continue _fun75477
-                }
-            case 255:
-                var14 = 0;
-            case 257:
-                var0 = var0.bind(var11)(var14);
-                var14 = var1.Math;
-                var11 = var14.max;
-                var11 = var11.bind(var14)(var16, var17);
-                var17 = _closure1_slot2;
-                var16 = var17.useMemo;
-                var14 = new Array(3);
-                var14[0] = var15;
-                var14[1] = var13;
-                var14[2] = var18;
-                var2 = function() { // Environment: var2
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 1;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var2 = var2.bind(var0)(var1);
-                    var1 = var2.computedFillDataWithAutoFillData;
-                    var0 = {};
-                    var4 = _closure2_slot1;
-                    var0.loop = var4;
-                    var4 = _closure2_slot2;
-                    var0.autoFillData = var4;
-                    var4 = _closure2_slot0;
-                    var0.data = var4;
-                    var3 = _closure2_slot0;
-                    var3 = var3.length;
-                    var0.dataLength = var3;
-                    var0 = var1.bind(var2)(var0);
-                    return var0;
-                };
-                var17 = var16.bind(var17)(var2, var14);
-                var16 = var17.length;
-                var14 = var15.length;
-                var20 = var4.mode;
-                var2 = 'vertical-stack';
-                var2 = var2 !== var20;
-                if (!var2) {
-                    _fun75477_ip = 363;
-                    continue _fun75477
-                }
-            case 348:
-                var21 = var4.mode;
-                var20 = 'horizontal-stack';
-                var2 = var20 !== var21;
-            case 363:
-                if (var2) {
-                    _fun75477_ip = 429;
-                    continue _fun75477
-                }
-            case 366:
-                var2 = var4.modeConfig;
-                if (var2) {
-                    _fun75477_ip = 383;
-                    continue _fun75477
-                }
-            case 375:
-                var2 = {};
-                var4.modeConfig = var2;
-            case 383:
-                var2 = var4.modeConfig;
-                var21 = var4.modeConfig;
-                var20 = null;
-                var22 = var20 == var21;
-                var3 = undefined;
-                if (var22) {
-                    _fun75477_ip = 412;
-                    continue _fun75477
-                }
-            case 406:
-                var3 = var21.showLength;
-            case 412:
-                if (!(var20 == var3)) {
-                    _fun75477_ip = 423;
-                    continue _fun75477
-                }
-            case 416:
-                var20 = 1;
-                var3 = var16 - var20;
-            case 423:
-                var2.showLength = var3;
-            case 429:
-                var3 = var1.Object;
-                var2 = var3.assign;
+            case 27:
                 var1 = {};
-                var1.defaultIndex = var19;
-                var1.autoFillData = var18;
-                var1.data = var17;
-                var1.dataLength = var16;
-                var1.rawData = var15;
-                var1.rawDataLength = var14;
-                var1.loop = var13;
-                var1.enabled = var12;
-                var1.autoPlayInterval = var11;
-                var1.scrollAnimationDuration = var10;
-                var1.style = var9;
-                var1.pagingEnabled = var8;
-                var1.snapEnabled = var7;
-                var1.overscrollEnabled = var6;
-                var1.width = var5;
-                var1.height = var0;
-                var0 = {};
-                var0 = var2.bind(var3)(var0, var4, var1);
+                _fun75476_ip = 35;
+                continue _fun75476;
+            case 31:
+                var1 = arguments[var3];
+            case 35:
+                var11 = var2.size;
+                var _closure2_slot0 = var11;
+                var3 = var2.vertical;
+                var _closure2_slot1 = var3;
+                var2 = var1.parallaxScrollingOffset;
+                var10 = 100;
+                if (!(var8 !== var2)) {
+                    _fun75476_ip = 70;
+                    continue _fun75476
+                }
+            case 67:
+                var10 = var2;
+            case 70:
+                var _closure2_slot2 = var10;
+                var2 = var1.parallaxScrollingScale;
+                var4 = 0.8;
+                if (!(var8 !== var2)) {
+                    _fun75476_ip = 97;
+                    continue _fun75476
+                }
+            case 94:
+                var4 = var2;
+            case 97:
+                var _closure2_slot3 = var4;
+                var5 = var1.parallaxAdjacentItemScale;
+                if (!(var8 === var5)) {
+                    _fun75476_ip = 121;
+                    continue _fun75476
+                }
+            case 111:
+                var13 = 2;
+                var14 = var4;
+                var5 = exponentiationOperator(var14, var13);
+            case 121:
+                var _closure2_slot4 = var5;
+                var0 = function arg0() {
+                    _fun75477: for (var _fun75477_ip = 0;;) switch (_fun75477_ip) {
+                        case 0:
+                            var8 = arg0;
+                            var10 = _closure1_slot0;
+                            var11 = _closure1_slot1;
+                            var0 = 0;
+                            var1 = var11[var0];
+                            var9 = undefined;
+                            var6 = var10.bind(var9)(var1);
+                            var5 = var6.interpolate;
+                            var4 = new Array(3);
+                            var12 = -1;
+                            var4[0] = var12;
+                            var4[1] = var0;
+                            var3 = 1;
+                            var4[2] = var3;
+                            var1 = _closure2_slot0;
+                            var7 = -var1;
+                            var1 = _closure2_slot2;
+                            var7 = var7 + var1;
+                            var1 = new Array(3);
+                            var1[0] = var7;
+                            var1[1] = var0;
+                            var13 = _closure2_slot0;
+                            var7 = _closure2_slot2;
+                            var7 = var13 - var7;
+                            var1[2] = var7;
+                            var5 = var5.bind(var6)(var8, var4, var1);
+                            var1 = global;
+                            var6 = var1.Math;
+                            var4 = var6.round;
+                            var1 = var11[var0];
+                            var15 = var10.bind(var9)(var1);
+                            var14 = var15.interpolate;
+                            var13 = new Array(3);
+                            var13[0] = var12;
+                            var13[1] = var0;
+                            var13[2] = var3;
+                            var1 = _closure2_slot0;
+                            var7 = [0];
+                            var7[1] = var1;
+                            var7[2] = var0;
+                            var1 = var11[var0];
+                            var1 = var10.bind(var9)(var1);
+                            var1 = var1.Extrapolation;
+                            var16 = var1.CLAMP;
+                            var20 = var15;
+                            var19 = var8;
+                            var18 = var13;
+                            var17 = var7;
+                            var1 = var20[var14](var19, var18, var17, var16, var15);
+                            var1 = var4.bind(var6)(var1);
+                            var4 = var11[var0];
+                            var7 = var10.bind(var9)(var4);
+                            var6 = var7.interpolate;
+                            var4 = new Array(3);
+                            var4[0] = var12;
+                            var4[1] = var0;
+                            var4[2] = var3;
+                            var12 = _closure2_slot4;
+                            var3 = new Array(3);
+                            var3[0] = var12;
+                            var12 = _closure2_slot3;
+                            var3[1] = var12;
+                            var12 = _closure2_slot4;
+                            var3[2] = var12;
+                            var0 = var11[var0];
+                            var0 = var10.bind(var9)(var0);
+                            var0 = var0.Extrapolation;
+                            var16 = var0.CLAMP;
+                            var20 = var7;
+                            var19 = var8;
+                            var18 = var4;
+                            var17 = var3;
+                            var4 = var20[var6](var19, var18, var17, var16, var15);
+                            var0 = {};
+                            var3 = _closure2_slot1;
+                            var2 = {};
+                            if (var3) {
+                                _fun75477_ip = 336;
+                                continue _fun75477
+                            }
+                        case 326:
+                            var2.translateX = var5;
+                            var3 = var2;
+                            _fun75477_ip = 344;
+                            continue _fun75477;
+                        case 336:
+                            var2.translateY = var5;
+                            var3 = var2;
+                        case 344:
+                            var2 = new Array(2);
+                            var2[0] = var3;
+                            var3 = {};
+                            var3.scale = var4;
+                            var2[1] = var3;
+                            var0.transform = var2;
+                            var0.zIndex = var1;
+                            return var0;
+                    }
+                };
+                var2 = {};
+                var7 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var6 = 0;
+                var12 = var9[var6];
+                var12 = var7.bind(var8)(var12);
+                var12 = var12.interpolate;
+                var2.interpolate = var12;
+                var2.size = var11;
+                var2.parallaxScrollingOffset = var10;
+                var6 = var9[var6];
+                var6 = var7.bind(var8)(var6);
+                var6 = var6.Extrapolation;
+                var2.Extrapolation = var6;
+                var2.parallaxAdjacentItemScale = var5;
+                var2.parallaxScrollingScale = var4;
+                var2.vertical = var3;
+                var0.__closure = var2;
+                var2 = 8790326555138.0;
+                var0.__workletHash = var2;
+                var1 = _closure1_slot2;
+                var0.__initData = var1;
                 return var0;
         }
     };
-    var2.useInitProps = var1;
+    var1.parallaxLayout = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9515]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3718]);

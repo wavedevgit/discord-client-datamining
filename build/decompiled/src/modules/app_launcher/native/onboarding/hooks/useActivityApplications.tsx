@@ -56,12 +56,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var6;
         var2[1] = var5;
         var1 = function() { // Environment: var1
-            _fun90960: for (var _fun90960_ip = 0;;) switch (_fun90960_ip) {
+            _fun90932: for (var _fun90932_ip = 0;;) switch (_fun90932_ip) {
                 case 0:
                     var0 = _closure2_slot1;
                     if (!var0) {
-                        _fun90960_ip = 56;
-                        continue _fun90960
+                        _fun90932_ip = 56;
+                        continue _fun90932
                     }
                 case 10:
                     var2 = _closure1_slot0;
@@ -85,4 +85,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActivityApplications = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11809, 7968, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11789, 7968, 2]);

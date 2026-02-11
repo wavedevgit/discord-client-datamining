@@ -1,41 +1,31 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function arg0, arg1, arg2() {
-        _fun94747: for (var _fun94747_ip = 0;;) switch (_fun94747_ip) {
+    var1 = function(arg0, arg1, arg2) { // Environment: var0
+        _fun94900: for (var _fun94900_ip = 0;;) switch (_fun94900_ip) {
             case 0:
-                var0 = arg0;
-                var1 = arg1;
-                var2 = arg2;
-            case 9: // try_start_0
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var3 = 0;
-                var4 = var4[var3];
-                var3 = undefined;
-                var5 = var5.bind(var3)(var4);
-                var7 = var1;
-                var6 = var2;
-                var3 = var5.prototype;
-                var3 = Object.create(var3, {
-                    constructor: {
-                        value: var5
-                    }
-                });
-                var8 = var3;
-                var2 = new var8[var5](var7, var6, var5);
-                var1 = var2 instanceof Object ? var2 : var3;
-            case 59: // try_end0
-                var2 = var1;
-                var1 = var2.test;
-                var0 = var1.bind(var2)(var0);
-                return var0;
-            case 74: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = false;
+                var5 = arg0;
+                var4 = arg1;
+                var3 = arg2;
+                var2 = this;
+                var0 = var5.length;
+                var1 = 0;
+                var0 = var1 < var0;
+                if (!var0) {
+                    _fun94900_ip = 55;
+                    continue _fun94900
+                }
+            case 26:
+                var6 = var2.bindSingle;
+                var0 = var5[var1];
+                var0 = var6.bind(var2)(var0, var4, var3);
+                var1 = var1 + 1;
+                var0 = var5.length;
+                if (var1 < var0) {
+                    _fun94900_ip = 26;
+                    continue _fun94900
+                }
+            case 55:
+                var0 = undefined;
                 return var0;
         }
     };
@@ -43,4 +33,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12403]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

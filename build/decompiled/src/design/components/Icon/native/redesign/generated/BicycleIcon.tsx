@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/BicycleIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun74738: for (var _fun74738_ip = 0;;) switch (_fun74738_ip) {
+        _fun74744: for (var _fun74744_ip = 0;;) switch (_fun74744_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun74738_ip = 53;
-                    continue _fun74738
+                    _fun74744_ip = 53;
+                    continue _fun74744
                 }
             case 19:
                 var1 = _closure1_slot1;

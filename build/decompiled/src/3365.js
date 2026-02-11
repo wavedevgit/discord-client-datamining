@@ -1,40 +1,29 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function() {
-        _fun29059: for (var _fun29059_ip = 0;;) switch (_fun29059_ip) {
+    var1 = function arg0() {
+        _fun29063: for (var _fun29063_ip = 0;;) switch (_fun29063_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var1 = 0;
-                var1 = var3[var1];
-                var3 = undefined;
-                var1 = var2.bind(var3)(var1);
-                var1 = var1.bind(var3)();
-                var1 = global;
-                var2 = var1.Promise;
-                var2 = var2.allSettled;
-                var4 = 'function';
-                var2 = typeof var2;
-                if (!(var4 !== var2)) {
-                    _fun29059_ip = 75;
-                    continue _fun29059
+                var1 = arg0;
+                var2 = !var1;
+                var0 = !var2;
+                if (var2) {
+                    _fun29063_ip = 37;
+                    continue _fun29063
                 }
-            case 53:
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 1;
-                var0 = var4[var0];
-                var0 = var2.bind(var3)(var0);
-                _fun29059_ip = 87;
-                continue _fun29059;
-            case 75:
-                var1 = var1.Promise;
-                var0 = var1.allSettled;
-            case 87:
+            case 12:
+                var3 = typeof var1;
+                var1 = 'function';
+                var1 = var1 === var3;
+                if (var1) {
+                    _fun29063_ip = 34;
+                    continue _fun29063
+                }
+            case 26:
+                var2 = 'object';
+                var1 = var2 === var3;
+            case 34:
+                var0 = var1;
+            case 37:
                 return var0;
         }
     };
@@ -42,4 +31,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3364, 3366]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

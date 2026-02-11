@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/useIsStickerReplyEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun56165: for (var _fun56165_ip = 0;;) switch (_fun56165_ip) {
+        _fun56170: for (var _fun56170_ip = 0;;) switch (_fun56170_ip) {
             case 0:
                 var6 = arg1;
                 var1 = arg3;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var3 = var2 != var4;
                 if (!var3) {
-                    _fun56165_ip = 73;
-                    continue _fun56165
+                    _fun56170_ip = 73;
+                    continue _fun56170
                 }
             case 31:
                 var8 = _closure1_slot2;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 == var4;
                 var2 = undefined;
                 if (var5) {
-                    _fun56165_ip = 70;
-                    continue _fun56165
+                    _fun56170_ip = 70;
+                    continue _fun56170
                 }
             case 64:
                 var2 = var4.isPending;
@@ -87,29 +87,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.author;
                 var2 = var2.bot;
                 if (!var0) {
-                    _fun56165_ip = 153;
-                    continue _fun56165
+                    _fun56170_ip = 153;
+                    continue _fun56170
                 }
             case 150:
                 var0 = !var4;
             case 153:
                 if (!var0) {
-                    _fun56165_ip = 159;
-                    continue _fun56165
+                    _fun56170_ip = 159;
+                    continue _fun56170
                 }
             case 156:
                 var0 = !var3;
             case 159:
                 if (!var0) {
-                    _fun56165_ip = 165;
-                    continue _fun56165
+                    _fun56170_ip = 165;
+                    continue _fun56170
                 }
             case 162:
                 var0 = !var2;
             case 165:
                 if (!var0) {
-                    _fun56165_ip = 171;
-                    continue _fun56165
+                    _fun56170_ip = 171;
+                    continue _fun56170
                 }
             case 168:
                 var0 = var1;

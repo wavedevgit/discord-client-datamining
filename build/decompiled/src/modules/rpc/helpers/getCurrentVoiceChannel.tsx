@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rpc/helpers/getCurrentVoiceChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun51358: for (var _fun51358_ip = 0;;) switch (_fun51358_ip) {
+        _fun51357: for (var _fun51357_ip = 0;;) switch (_fun51357_ip) {
             case 0:
                 var4 = _closure1_slot2;
                 var3 = var4.getVoiceStateForSession;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 == var1;
                 var2 = undefined;
                 if (var3) {
-                    _fun51358_ip = 59;
-                    continue _fun51358
+                    _fun51357_ip = 59;
+                    continue _fun51357
                 }
             case 54:
                 var2 = var1.channelId;
@@ -61,4 +61,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 1372, 3522, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 1372, 3518, 2]);

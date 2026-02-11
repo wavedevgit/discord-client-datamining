@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var6.bind(var8)(var7, var1);
     var1 = {};
     var6 = function arg0() {
-        _fun17605: for (var _fun17605_ip = 0;;) switch (_fun17605_ip) {
+        _fun17602: for (var _fun17602_ip = 0;;) switch (_fun17602_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isIOS;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun17605_ip = 70;
-                    continue _fun17605
+                    _fun17602_ip = 70;
+                    continue _fun17602
                 }
             case 38:
                 var4 = _closure1_slot2;
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.channelSafeAreaBottomLayoutHeightChanged = var6;
     var6 = function arg0, arg1() {
-        _fun17606: for (var _fun17606_ip = 0;;) switch (_fun17606_ip) {
+        _fun17603: for (var _fun17603_ip = 0;;) switch (_fun17603_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isIOS;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun17606_ip = 77;
-                    continue _fun17606
+                    _fun17603_ip = 77;
+                    continue _fun17603
                 }
             case 38:
                 var4 = _closure1_slot2;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.channelSafeAreaBottomLayoutHeightMismatch = var6;
     var6 = function arg0() {
-        _fun17607: for (var _fun17607_ip = 0;;) switch (_fun17607_ip) {
+        _fun17604: for (var _fun17604_ip = 0;;) switch (_fun17604_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isIOS;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun17607_ip = 69;
-                    continue _fun17607
+                    _fun17604_ip = 69;
+                    continue _fun17604
                 }
             case 38:
                 var4 = _closure1_slot2;
@@ -136,13 +136,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.keyboardControllerKeyboardWillShow = var6;
     var6 = function arg0() {
-        _fun17608: for (var _fun17608_ip = 0;;) switch (_fun17608_ip) {
+        _fun17605: for (var _fun17605_ip = 0;;) switch (_fun17605_ip) {
             case 0:
                 var1 = arguments[1];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun17608_ip = 11;
-                    continue _fun17608
+                    _fun17605_ip = 11;
+                    continue _fun17605
                 }
             case 9:
                 var1 = false;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.isIOS;
                 var3 = var3.bind(var4)();
                 if (var3) {
-                    _fun17608_ip = 83;
-                    continue _fun17608
+                    _fun17605_ip = 83;
+                    continue _fun17605
                 }
             case 47:
                 var4 = _closure1_slot2;
@@ -173,13 +173,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.keyboardControllerKeyboardDidShow = var6;
     var6 = function arg0, arg1() {
-        _fun17609: for (var _fun17609_ip = 0;;) switch (_fun17609_ip) {
+        _fun17606: for (var _fun17606_ip = 0;;) switch (_fun17606_ip) {
             case 0:
                 var5 = arguments[2];
                 var0 = undefined;
                 if (!(var5 === var0)) {
-                    _fun17609_ip = 11;
-                    continue _fun17609
+                    _fun17606_ip = 11;
+                    continue _fun17606
                 }
             case 9:
                 var5 = false;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isIOS;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun17609_ip = 109;
-                    continue _fun17609
+                    _fun17606_ip = 109;
+                    continue _fun17606
                 }
             case 47:
                 var4 = _closure1_slot2;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.keyboardControllerWorkletEvent = var6;
     var6 = function() {
-        _fun17610: for (var _fun17610_ip = 0;;) switch (_fun17610_ip) {
+        _fun17607: for (var _fun17607_ip = 0;;) switch (_fun17607_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -227,8 +227,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isIOS;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun17610_ip = 59;
-                    continue _fun17610
+                    _fun17607_ip = 59;
+                    continue _fun17607
                 }
             case 38:
                 var3 = _closure1_slot2;
@@ -241,13 +241,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.keyboardControllerKeyboardWillHide = var6;
     var6 = function() {
-        _fun17611: for (var _fun17611_ip = 0;;) switch (_fun17611_ip) {
+        _fun17608: for (var _fun17608_ip = 0;;) switch (_fun17608_ip) {
             case 0:
                 var1 = arguments[0];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun17611_ip = 11;
-                    continue _fun17611
+                    _fun17608_ip = 11;
+                    continue _fun17608
                 }
             case 9:
                 var1 = false;
@@ -260,8 +260,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.isIOS;
                 var3 = var3.bind(var4)();
                 if (var3) {
-                    _fun17611_ip = 76;
-                    continue _fun17611
+                    _fun17608_ip = 76;
+                    continue _fun17608
                 }
             case 47:
                 var4 = _closure1_slot2;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.keyboardControllerKeyboardDidHide = var6;
     var6 = function arg0, arg1() {
-        _fun17612: for (var _fun17612_ip = 0;;) switch (_fun17612_ip) {
+        _fun17609: for (var _fun17609_ip = 0;;) switch (_fun17609_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -287,8 +287,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isIOS;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun17612_ip = 92;
-                    continue _fun17612
+                    _fun17609_ip = 92;
+                    continue _fun17609
                 }
             case 38:
                 var3 = _closure1_slot2;
@@ -308,6 +308,94 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1.keyboardControllerMountEvent = var6;
+    var6 = function arg0, arg1() {
+        _fun17610: for (var _fun17610_ip = 0;;) switch (_fun17610_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 2;
+                var2 = var2[var0];
+                var0 = undefined;
+                var3 = var3.bind(var0)(var2);
+                var2 = var3.isIOS;
+                var2 = var2.bind(var3)();
+                if (var2) {
+                    _fun17610_ip = 77;
+                    continue _fun17610
+                }
+            case 38:
+                var4 = _closure1_slot2;
+                var3 = var4.warn;
+                var2 = {};
+                var1 = arg0;
+                var2.keyboardOpen = var1;
+                var1 = arg1;
+                var2.reportedKeyboardOpen = var1;
+                var1 = 'KeyboardController state mismatch: ';
+                var1 = var3.bind(var4)(var1, var2);
+            case 77:
+                return var0;
+        }
+    };
+    var1.keyboardControllerPeriodicHealthCheck = var6;
+    var6 = function arg0, arg1() {
+        _fun17611: for (var _fun17611_ip = 0;;) switch (_fun17611_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 2;
+                var2 = var2[var0];
+                var0 = undefined;
+                var3 = var3.bind(var0)(var2);
+                var2 = var3.isIOS;
+                var2 = var2.bind(var3)();
+                if (var2) {
+                    _fun17611_ip = 76;
+                    continue _fun17611
+                }
+            case 38:
+                var4 = _closure1_slot2;
+                var3 = var4.info;
+                var2 = {};
+                var1 = arg0;
+                var2.height = var1;
+                var1 = arg1;
+                var2.location = var1;
+                var1 = 'ReactNativeKeyboard didShow.';
+                var1 = var3.bind(var4)(var1, var2);
+            case 76:
+                return var0;
+        }
+    };
+    var1.reactNativeKeyboardDidShow = var6;
+    var6 = function arg0() {
+        _fun17612: for (var _fun17612_ip = 0;;) switch (_fun17612_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 2;
+                var2 = var2[var0];
+                var0 = undefined;
+                var3 = var3.bind(var0)(var2);
+                var2 = var3.isIOS;
+                var2 = var2.bind(var3)();
+                if (var2) {
+                    _fun17612_ip = 69;
+                    continue _fun17612
+                }
+            case 38:
+                var4 = _closure1_slot2;
+                var3 = var4.info;
+                var2 = {};
+                var1 = arg0;
+                var2.location = var1;
+                var1 = 'ReactNativeKeyboard didHide.';
+                var1 = var3.bind(var4)(var1, var2);
+            case 69:
+                return var0;
+        }
+    };
+    var1.reactNativeKeyboardDidHide = var6;
     var6 = function arg0, arg1() {
         _fun17613: for (var _fun17613_ip = 0;;) switch (_fun17613_ip) {
             case 0:
@@ -331,14 +419,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.keyboardOpen = var1;
                 var1 = arg1;
                 var2.reportedKeyboardOpen = var1;
-                var1 = 'KeyboardController state mismatch: ';
+                var1 = 'ReactNative state mismatch: ';
                 var1 = var3.bind(var4)(var1, var2);
             case 77:
                 return var0;
         }
     };
-    var1.keyboardControllerPeriodicHealthCheck = var6;
-    var6 = function arg0, arg1() {
+    var1.reactNativePeriodicHealthCheck = var6;
+    var3 = function() {
         _fun17614: for (var _fun17614_ip = 0;;) switch (_fun17614_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -350,96 +438,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isIOS;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun17614_ip = 76;
+                    _fun17614_ip = 58;
                     continue _fun17614
-                }
-            case 38:
-                var4 = _closure1_slot2;
-                var3 = var4.info;
-                var2 = {};
-                var1 = arg0;
-                var2.height = var1;
-                var1 = arg1;
-                var2.location = var1;
-                var1 = 'ReactNativeKeyboard didShow.';
-                var1 = var3.bind(var4)(var1, var2);
-            case 76:
-                return var0;
-        }
-    };
-    var1.reactNativeKeyboardDidShow = var6;
-    var6 = function arg0() {
-        _fun17615: for (var _fun17615_ip = 0;;) switch (_fun17615_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 2;
-                var2 = var2[var0];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var2);
-                var2 = var3.isIOS;
-                var2 = var2.bind(var3)();
-                if (var2) {
-                    _fun17615_ip = 69;
-                    continue _fun17615
-                }
-            case 38:
-                var4 = _closure1_slot2;
-                var3 = var4.info;
-                var2 = {};
-                var1 = arg0;
-                var2.location = var1;
-                var1 = 'ReactNativeKeyboard didHide.';
-                var1 = var3.bind(var4)(var1, var2);
-            case 69:
-                return var0;
-        }
-    };
-    var1.reactNativeKeyboardDidHide = var6;
-    var6 = function arg0, arg1() {
-        _fun17616: for (var _fun17616_ip = 0;;) switch (_fun17616_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 2;
-                var2 = var2[var0];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var2);
-                var2 = var3.isIOS;
-                var2 = var2.bind(var3)();
-                if (var2) {
-                    _fun17616_ip = 77;
-                    continue _fun17616
-                }
-            case 38:
-                var4 = _closure1_slot2;
-                var3 = var4.warn;
-                var2 = {};
-                var1 = arg0;
-                var2.keyboardOpen = var1;
-                var1 = arg1;
-                var2.reportedKeyboardOpen = var1;
-                var1 = 'ReactNative state mismatch: ';
-                var1 = var3.bind(var4)(var1, var2);
-            case 77:
-                return var0;
-        }
-    };
-    var1.reactNativePeriodicHealthCheck = var6;
-    var3 = function() {
-        _fun17617: for (var _fun17617_ip = 0;;) switch (_fun17617_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 2;
-                var2 = var2[var0];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var2);
-                var2 = var3.isIOS;
-                var2 = var2.bind(var3)();
-                if (var2) {
-                    _fun17617_ip = 58;
-                    continue _fun17617
                 }
             case 38:
                 var3 = _closure1_slot2;

@@ -17,13 +17,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var5.bind(var0)(var1);
     var1 = var1.codegenNativeComponent;
     var1 = {};
-    var6 = 'RNSScreenStackHeaderSubview';
+    var6 = 'RNSScreenContainer';
     var1.uiViewClassName = var6;
-    var4 = {
-        'type': true,
-        'hidesSharedBackground': true,
-        'synchronousShadowStateUpdatesEnabled': true
-    };
+    var4 = {};
     var1.validAttributes = var4;
     var _closure1_slot0 = var1;
     var4 = 1;

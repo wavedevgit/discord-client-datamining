@@ -21,13 +21,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
     var3 = function arg0, arg1, arg2, arg3() {
-        _fun64499: for (var _fun64499_ip = 0;;) switch (_fun64499_ip) {
+        _fun64505: for (var _fun64505_ip = 0;;) switch (_fun64505_ip) {
             case 0:
                 var3 = arg0;
                 var0 = arg1;
                 if (!var0) {
-                    _fun64499_ip = 15;
-                    continue _fun64499
+                    _fun64505_ip = 15;
+                    continue _fun64505
                 }
             case 9:
                 var1 = arg3;
@@ -35,23 +35,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 15:
                 var0 = !var0;
                 if (!var0) {
-                    _fun64499_ip = 51;
-                    continue _fun64499
+                    _fun64505_ip = 51;
+                    continue _fun64505
                 }
             case 21:
                 var2 = false;
                 var1 = arg2;
                 var1 = var2 !== var1;
                 if (!var1) {
-                    _fun64499_ip = 48;
-                    continue _fun64499
+                    _fun64505_ip = 48;
+                    continue _fun64505
                 }
             case 33:
                 var2 = null;
                 var2 = var2 != var3;
                 if (!var2) {
-                    _fun64499_ip = 45;
-                    continue _fun64499
+                    _fun64505_ip = 45;
+                    continue _fun64505
                 }
             case 42:
                 var2 = var3;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.resolveNsfwTogglesWithDefaults = var3;
     var3 = function() { // Environment: var1
-        _fun64500: for (var _fun64500_ip = 0;;) switch (_fun64500_ip) {
+        _fun64506: for (var _fun64506_ip = 0;;) switch (_fun64506_ip) {
             case 0:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var7.bind(var8)(var0);
                 var1 = _closure1_slot3;
                 if (var0) {
-                    _fun64500_ip = 169;
-                    continue _fun64500
+                    _fun64506_ip = 169;
+                    continue _fun64506
                 }
             case 166:
                 var0 = var6;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useViewNsfwCommandsOrDefault = var3;
     var3 = function() { // Environment: var1
-        _fun64501: for (var _fun64501_ip = 0;;) switch (_fun64501_ip) {
+        _fun64507: for (var _fun64507_ip = 0;;) switch (_fun64507_ip) {
             case 0:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var7.bind(var8)(var0);
                 var1 = _closure1_slot3;
                 if (var0) {
-                    _fun64501_ip = 171;
-                    continue _fun64501
+                    _fun64507_ip = 171;
+                    continue _fun64507
                 }
             case 168:
                 var0 = var6;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useViewNsfwGuildsOrDefault = var3;
     var3 = function() { // Environment: var1
-        _fun64502: for (var _fun64502_ip = 0;;) switch (_fun64502_ip) {
+        _fun64508: for (var _fun64508_ip = 0;;) switch (_fun64508_ip) {
             case 0:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
@@ -221,8 +221,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7.bind(var8)(var1);
                 var2 = _closure1_slot3;
                 if (var1) {
-                    _fun64502_ip = 160;
-                    continue _fun64502
+                    _fun64508_ip = 160;
+                    continue _fun64508
                 }
             case 157:
                 var1 = var0;
@@ -231,8 +231,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0 == var6;
                 var0 = undefined;
                 if (var7) {
-                    _fun64502_ip = 177;
-                    continue _fun64502
+                    _fun64508_ip = 177;
+                    continue _fun64508
                 }
             case 171:
                 var0 = var6.nsfwAllowed;
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getViewNsfwCommandsOrDefault = var3;
     var1 = function() { // Environment: var1
-        _fun64503: for (var _fun64503_ip = 0;;) switch (_fun64503_ip) {
+        _fun64509: for (var _fun64509_ip = 0;;) switch (_fun64509_ip) {
             case 0:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
@@ -285,8 +285,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7.bind(var8)(var1);
                 var2 = _closure1_slot3;
                 if (var1) {
-                    _fun64503_ip = 160;
-                    continue _fun64503
+                    _fun64509_ip = 160;
+                    continue _fun64509
                 }
             case 157:
                 var1 = var0;
@@ -295,8 +295,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0 == var6;
                 var0 = undefined;
                 if (var7) {
-                    _fun64503_ip = 177;
-                    continue _fun64503
+                    _fun64509_ip = 177;
+                    continue _fun64509
                 }
             case 171:
                 var0 = var6.nsfwAllowed;
@@ -312,4 +312,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getViewNsfwGuildsOrDefault = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 1348, 4258, 8011, 4288, 4310, 4287, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 1348, 4254, 8011, 4284, 4306, 4283, 2]);

@@ -6,6 +6,61 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var3 = function arg0() {
+        _fun37974: for (var _fun37974_ip = 0;;) switch (_fun37974_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'm4v';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37974_ip = 111;
+                    continue _fun37974
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isftypStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var _closure1_slot2 = var3;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = undefined;
+    var2.isAVI = var0;
+    var2.isFLV = var0;
+    var2.isM4V = var0;
+    var2.isMKV = var0;
+    var2.isMOV = var0;
+    var2.isMP4 = var0;
+    var2.isOGG = var0;
+    var2.isSWF = var0;
+    var2.isWEBM = var0;
+    var4 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -20,28 +75,110 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'm4a';
+        var0 = 'avi';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var _closure1_slot2 = var3;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var0 = true;
-    var4.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var4);
-    var0 = undefined;
-    var2.isAAC = var0;
-    var2.isAMR = var0;
-    var2.isFLAC = var0;
-    var2.isM4A = var0;
-    var2.isMP3 = var0;
-    var2.isWAV = var0;
-    var4 = function arg0, arg1() {
-        _fun37942: for (var _fun37942_ip = 0;;) switch (_fun37942_ip) {
+    var2.isAVI = var4;
+    var4 = function arg0() {
+        _fun37976: for (var _fun37976_ip = 0;;) switch (_fun37976_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'flv';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37976_ip = 111;
+                    continue _fun37976
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isFlvStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var2.isFLV = var4;
+    var2.isM4V = var3;
+    var3 = function arg0() {
+        _fun37977: for (var _fun37977_ip = 0;;) switch (_fun37977_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var6 = 0;
+                var0 = var5[var6];
+                var4 = undefined;
+                var0 = var2.bind(var4)(var0);
+                var7 = var0.getFileChunk;
+                var3 = arg0;
+                var0 = 64;
+                var3 = var7.bind(var4)(var3, var0);
+                var0 = 1;
+                var0 = var5[var0];
+                var0 = var2.bind(var4)(var0);
+                var5 = var0.FileTypes;
+                var0 = var5.checkByFileType;
+                var2 = 'mkv';
+                var0 = var0.bind(var5)(var3, var2);
+                var5 = !var0;
+                var0 = !var5;
+                if (var5) {
+                    _fun37977_ip = 119;
+                    continue _fun37977
+                }
+            case 87:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var6];
+                var1 = var5.bind(var4)(var1);
+                var1 = var1.findMatroskaDocTypeElements;
+                var1 = var1.bind(var4)(var3);
+                var0 = var2 === var1;
+            case 119:
+                return var0;
+        }
+    };
+    var2.isMKV = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'mov';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isMOV = var3;
+    var3 = function arg0, arg1() {
+        _fun37979: for (var _fun37979_ip = 0;;) switch (_fun37979_ip) {
             case 0:
                 var5 = arg1;
                 var1 = _closure1_slot0;
@@ -58,29 +195,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var1.bind(var4)(var0);
                 var6 = var0.FileTypes;
                 var1 = var6.checkByFileType;
-                var0 = 'aac';
+                var0 = 'mp4';
                 var0 = var1.bind(var6)(var3, var0);
                 var1 = !var0;
                 var0 = !var1;
                 if (!var1) {
-                    _fun37942_ip = 121;
-                    continue _fun37942
+                    _fun37979_ip = 121;
+                    continue _fun37979
                 }
             case 86:
                 var1 = null;
                 var6 = var1 == var5;
                 var1 = undefined;
                 if (var6) {
-                    _fun37942_ip = 103;
-                    continue _fun37942
+                    _fun37979_ip = 103;
+                    continue _fun37979
                 }
             case 97:
                 var1 = var5.excludeSimilarTypes;
             case 103:
                 var1 = !var1;
                 if (!var1) {
-                    _fun37942_ip = 118;
-                    continue _fun37942
+                    _fun37979_ip = 118;
+                    continue _fun37979
                 }
             case 109:
                 var2 = _closure1_slot2;
@@ -91,48 +228,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var2.isAAC = var4;
-    var4 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'amr';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isAMR = var4;
-    var4 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'flac';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isFLAC = var4;
-    var2.isM4A = var3;
+    var2.isMP4 = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -148,12 +244,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'mp3';
+        var0 = 'ogg';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isMP3 = var3;
-    var1 = function arg0() {
+    var2.isOGG = var3;
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
         var0 = 0;
@@ -168,10 +264,49 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'wav';
+        var0 = 'swf';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isWAV = var1;
+    var2.isSWF = var3;
+    var1 = function arg0() {
+        _fun37982: for (var _fun37982_ip = 0;;) switch (_fun37982_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var6 = 0;
+                var0 = var5[var6];
+                var4 = undefined;
+                var0 = var2.bind(var4)(var0);
+                var7 = var0.getFileChunk;
+                var3 = arg0;
+                var0 = 64;
+                var3 = var7.bind(var4)(var3, var0);
+                var0 = 1;
+                var0 = var5[var0];
+                var0 = var2.bind(var4)(var0);
+                var5 = var0.FileTypes;
+                var0 = var5.checkByFileType;
+                var2 = 'webm';
+                var0 = var0.bind(var5)(var3, var2);
+                var5 = !var0;
+                var0 = !var5;
+                if (var5) {
+                    _fun37982_ip = 119;
+                    continue _fun37982
+                }
+            case 87:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var6];
+                var1 = var5.bind(var4)(var1);
+                var1 = var1.findMatroskaDocTypeElements;
+                var1 = var1.bind(var4)(var3);
+                var0 = var2 === var1;
+            case 119:
+                return var0;
+        }
+    };
+    var2.isWEBM = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4147, 4148]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4143, 4144]);

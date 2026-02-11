@@ -178,23 +178,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.cleanupGuildChannelTab = var6;
     var6 = function arg0, arg1() {
-        _fun105924: for (var _fun105924_ip = 0;;) switch (_fun105924_ip) {
+        _fun105914: for (var _fun105914_ip = 0;;) switch (_fun105914_ip) {
             case 0:
                 var5 = arg0;
                 var2 = var5.type;
                 var1 = _closure1_slot3;
                 var1 = var1.DMS;
                 if (!(var2 !== var1)) {
-                    _fun105924_ip = 44;
-                    continue _fun105924
+                    _fun105914_ip = 44;
+                    continue _fun105914
                 }
             case 25:
                 var2 = var5.type;
                 var1 = _closure1_slot3;
                 var1 = var1.GUILD;
                 if (!(var2 === var1)) {
-                    _fun105924_ip = 126;
-                    continue _fun105924
+                    _fun105914_ip = 126;
+                    continue _fun105914
                 }
             case 44:
                 var3 = _closure1_slot0;

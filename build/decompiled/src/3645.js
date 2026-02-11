@@ -1,79 +1,57 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
+    var1 = global;
+    var1 = var1.Object;
+    var1 = var1.prototype;
+    var1 = var1.hasOwnProperty;
     var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function arg0, arg1, arg2() {
-        _fun32624: for (var _fun32624_ip = 0;;) switch (_fun32624_ip) {
+    var1 = function arg0() {
+        _fun32628: for (var _fun32628_ip = 0;;) switch (_fun32628_ip) {
             case 0:
-                var0 = arg1;
-                var2 = arg2;
-                var4 = undefined;
-                var5 = var0;
-                if (!(var4 === var2)) {
-                    _fun32624_ip = 20;
-                    continue _fun32624
-                }
-            case 15:
-                var5 = undefined;
-                var2 = var0;
-            case 20:
-                var3 = var2;
-                if (!(var4 !== var3)) {
-                    _fun32624_ip = 67;
-                    continue _fun32624
-                }
-            case 27:
-                var6 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var1 = var6.bind(var4)(var1);
-                var1 = var1.bind(var4)(var2);
-                var2 = var1 == var1;
+                var1 = arg0;
+                var2 = var1.length;
+                var0 = var1.constructor;
+                var3 = var0.prototype;
+                var3 = Object.create(var3, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var8 = var3;
+                var7 = var2;
+                var0 = new var8[var0](var7, var6);
+                var0 = var0 instanceof Object ? var0 : var3;
                 if (!var2) {
-                    _fun32624_ip = 64;
-                    continue _fun32624
+                    _fun32628_ip = 56;
+                    continue _fun32628
                 }
-            case 61:
-                var0 = var1;
-            case 64:
-                var3 = var0;
-            case 67:
-                var2 = var5;
-                if (!(var4 !== var2)) {
-                    _fun32624_ip = 114;
-                    continue _fun32624
+            case 39:
+                var3 = 0;
+                var3 = var1[var3];
+                var4 = 'string';
+                var3 = typeof var3;
+                var2 = var4 === var3;
+            case 56:
+                if (!var2) {
+                    _fun32628_ip = 81;
+                    continue _fun32628
                 }
-            case 74:
-                var6 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var1 = var6.bind(var4)(var1);
-                var1 = var1.bind(var4)(var5);
-                var5 = var1 == var1;
-                if (!var5) {
-                    _fun32624_ip = 111;
-                    continue _fun32624
-                }
-            case 108:
-                var0 = var1;
-            case 111:
-                var2 = var0;
-            case 114:
+            case 59:
                 var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var0 = 1;
-                var0 = var6[var0];
-                var1 = var5.bind(var4)(var0);
-                var0 = 0;
-                var0 = var6[var0];
-                var5 = var5.bind(var4)(var0);
-                var0 = arg0;
-                var0 = var5.bind(var4)(var0);
-                var0 = var1.bind(var4)(var0, var2, var3);
+                var4 = var5.call;
+                var3 = 'index';
+                var2 = var4.bind(var5)(var1, var3);
+            case 81:
+                if (!var2) {
+                    _fun32628_ip = 107;
+                    continue _fun32628
+                }
+            case 84:
+                var2 = var1.index;
+                var0.index = var2;
+                var1 = var1.input;
+                var0.input = var1;
+            case 107:
                 return var0;
         }
     };
@@ -81,4 +59,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [575, 3646]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

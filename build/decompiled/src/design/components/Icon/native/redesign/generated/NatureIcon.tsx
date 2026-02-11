@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/NatureIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun74735: for (var _fun74735_ip = 0;;) switch (_fun74735_ip) {
+        _fun74741: for (var _fun74741_ip = 0;;) switch (_fun74741_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun74735_ip = 53;
-                    continue _fun74735
+                    _fun74741_ip = 53;
+                    continue _fun74741
                 }
             case 19:
                 var1 = _closure1_slot1;

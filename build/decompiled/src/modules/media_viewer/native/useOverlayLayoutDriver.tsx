@@ -205,4 +205,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFooterLayoutAnimation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3721, 1464, 4107, 4896, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3717, 1464, 4103, 4894, 2]);

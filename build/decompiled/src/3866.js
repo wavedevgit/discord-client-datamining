@@ -1,304 +1,207 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
+    var4 = require;
+    var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var0 = true;
+    var5.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var4 = var3.useEffect;
+    var _closure1_slot2 = var4;
+    var3 = var3.useRef;
+    var _closure1_slot3 = var3;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = {
-        'UNDETERMINED': 0,
-        'FAILED': 1,
-        'BEGAN': 2,
-        'CANCELLED': 3,
-        'ACTIVE': 4,
-        'END': 5
-    };
-    var _closure1_slot2 = var2;
-    var2 = {};
-    var3 = 'function pnpm_useAnimatedGestureHandlerTs1(e){const{useWeb,EVENT_TYPE,handlers,context}=this.__closure;const event=useWeb?e.nativeEvent:e;if(event.state===EVENT_TYPE.BEGAN&&handlers.onStart){handlers.onStart(event,context);}if(event.state===EVENT_TYPE.ACTIVE&&handlers.onActive){handlers.onActive(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.END&&handlers.onEnd){handlers.onEnd(event,context);}if(event.oldState===EVENT_TYPE.BEGAN&&event.state===EVENT_TYPE.FAILED&&handlers.onFail){handlers.onFail(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.CANCELLED&&handlers.onCancel){handlers.onCancel(event,context);}if((event.oldState===EVENT_TYPE.BEGAN||event.oldState===EVENT_TYPE.ACTIVE)&&event.state!==EVENT_TYPE.BEGAN&&event.state!==EVENT_TYPE.ACTIVE&&handlers.onFinish){handlers.onFinish(event,context,event.state===EVENT_TYPE.CANCELLED||event.state===EVENT_TYPE.FAILED);}}';
-    var2.code = var3;
-    var _closure1_slot3 = var2;
-    var0 = function arg0, arg1() {
-        _fun34879: for (var _fun34879_ip = 0;;) switch (_fun34879_ip) {
+    var4 = 'function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}';
+    var3.code = var4;
+    var _closure1_slot4 = var3;
+    var3 = {};
+    var4 = 'function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}';
+    var3.code = var4;
+    var _closure1_slot5 = var3;
+    var1 = function() {
+        _fun34895: for (var _fun34895_ip = 0;;) switch (_fun34895_ip) {
             case 0:
-                var7 = arg0;
-                var _closure2_slot0 = var7;
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = 0;
-                var2 = var3[var2];
-                var3 = undefined;
-                var5 = var4.bind(var3)(var2);
-                var4 = var5.useHandler;
-                var2 = arg1;
-                var2 = var4.bind(var5)(var7, var2);
-                var6 = var2.context;
-                var _closure2_slot1 = var6;
-                var5 = var2.doDependenciesDiffer;
-                var2 = var2.useWeb;
-                var _closure2_slot2 = var2;
-                var4 = function arg0() {
-                    _fun34880: for (var _fun34880_ip = 0;;) switch (_fun34880_ip) {
+                var4 = undefined;
+                var0 = undefined;
+                var2 = arguments.length;
+                var13 = 0;
+                if (!(var2 > var13)) {
+                    _fun34895_ip = 23;
+                    continue _fun34895
+                }
+            case 15:
+                var2 = arguments[var13];
+                if (!(var4 === var2)) {
+                    _fun34895_ip = 37;
+                    continue _fun34895
+                }
+            case 23:
+                var10 = {};
+                var10.isStatusBarTranslucentAndroid = var4;
+                var10.isNavigationBarTranslucentAndroid = var4;
+                _fun34895_ip = 41;
+                continue _fun34895;
+            case 37:
+                var10 = arguments[var13];
+            case 41:
+                var _closure2_slot0 = var10;
+                var5 = _closure1_slot3;
+                var6 = null;
+                var0 = var5.bind(var4)(var6);
+                var _closure2_slot1 = var0;
+                var3 = -1;
+                var7 = var5.bind(var4)(var3);
+                var _closure2_slot2 = var7;
+                var3 = false;
+                var5 = var5.bind(var4)(var3);
+                var _closure2_slot3 = var5;
+                var3 = var0.current;
+                if (!(var6 === var3)) {
+                    _fun34895_ip = 277;
+                    continue _fun34895
+                }
+            case 101:
+                var3 = {};
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var6 = 1;
+                var11 = var9[var6];
+                var14 = var8.bind(var4)(var11);
+                var12 = var14.makeMutable;
+                var11 = 2;
+                var11 = var9[var11];
+                var11 = var8.bind(var4)(var11);
+                var11 = var11.KeyboardState;
+                var11 = var11.UNKNOWN;
+                var11 = var12.bind(var14)(var11);
+                var3.state = var11;
+                var11 = var9[var6];
+                var12 = var8.bind(var4)(var11);
+                var11 = var12.makeMutable;
+                var11 = var11.bind(var12)(var13);
+                var3.height = var11;
+                var _closure2_slot4 = var3;
+                var6 = var9[var6];
+                var9 = var8.bind(var4)(var6);
+                var8 = var9.subscribeForKeyboardEvents;
+                var6 = function arg0, arg1() {
+                    var1 = _closure2_slot4;
+                    var2 = var1.state;
+                    var1 = arg0;
+                    var2.value = var1;
+                    var0 = _closure2_slot4;
+                    var1 = var0.height;
+                    var0 = arg1;
+                    var1.value = var0;
+                    var0 = undefined;
+                    return var0;
+                };
+                var11 = {};
+                var11.keyboardEventData = var3;
+                var6.__closure = var11;
+                var11 = 4393537867728.0;
+                var6.__workletHash = var11;
+                var11 = _closure1_slot4;
+                var6.__initData = var11;
+                var6 = var8.bind(var9)(var6, var10);
+                var7.current = var6;
+                var0.current = var3;
+                var3 = true;
+                var5.current = var3;
+            case 277:
+                var3 = _closure1_slot2;
+                var2 = function() { // Environment: var1
+                    _fun34897: for (var _fun34897_ip = 0;;) switch (_fun34897_ip) {
                         case 0:
-                            var1 = arg0;
-                            var2 = _closure2_slot2;
-                            var4 = var1;
-                            if (!var2) {
-                                _fun34880_ip = 21;
-                                continue _fun34880
+                            var2 = _closure2_slot3;
+                            var3 = var2.current;
+                            var2 = false;
+                            if (!(var2 === var3)) {
+                                _fun34897_ip = 163;
+                                continue _fun34897
                             }
-                        case 16:
-                            var4 = var1.nativeEvent;
-                        case 21:
-                            var2 = var4.state;
-                            var1 = _closure1_slot2;
-                            var1 = var1.BEGAN;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34880_ip = 56;
-                                continue _fun34880
+                        case 23:
+                            var2 = _closure2_slot1;
+                            var3 = var2.current;
+                            var2 = null;
+                            if (!(var2 !== var3)) {
+                                _fun34897_ip = 163;
+                                continue _fun34897
                             }
-                        case 46:
+                        case 41:
+                            var2 = _closure2_slot1;
+                            var8 = var2.current;
+                            var _closure3_slot0 = var8;
+                            var3 = _closure2_slot2;
+                            var6 = _closure1_slot0;
+                            var5 = _closure1_slot1;
+                            var4 = 1;
+                            var5 = var5[var4];
+                            var4 = undefined;
+                            var6 = var6.bind(var4)(var5);
+                            var5 = var6.subscribeForKeyboardEvents;
+                            var4 = function arg0, arg1() {
+                                var1 = _closure3_slot0;
+                                var2 = var1.state;
+                                var1 = arg0;
+                                var2.value = var1;
+                                var0 = _closure3_slot0;
+                                var1 = var0.height;
+                                var0 = arg1;
+                                var1.value = var0;
+                                var0 = undefined;
+                                return var0;
+                            };
+                            var7 = {};
+                            var7._keyboardEventData = var8;
+                            var4.__closure = var7;
+                            var7 = 5041909921996.0;
+                            var4.__workletHash = var7;
+                            var2 = _closure1_slot5;
+                            var4.__initData = var2;
                             var2 = _closure2_slot0;
-                            var1 = var2.onStart;
-                        case 56:
-                            if (!var1) {
-                                _fun34880_ip = 79;
-                                continue _fun34880
-                            }
-                        case 59:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onStart;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 79:
-                            var2 = var4.state;
-                            var1 = _closure1_slot2;
-                            var1 = var1.ACTIVE;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34880_ip = 111;
-                                continue _fun34880
-                            }
-                        case 101:
-                            var2 = _closure2_slot0;
-                            var1 = var2.onActive;
-                        case 111:
-                            if (!var1) {
-                                _fun34880_ip = 134;
-                                continue _fun34880
-                            }
-                        case 114:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onActive;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 134:
-                            var2 = var4.oldState;
-                            var1 = _closure1_slot2;
-                            var1 = var1.ACTIVE;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34880_ip = 176;
-                                continue _fun34880
-                            }
-                        case 157:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.END;
-                            var1 = var3 === var2;
-                        case 176:
-                            if (!var1) {
-                                _fun34880_ip = 189;
-                                continue _fun34880
-                            }
-                        case 179:
-                            var2 = _closure2_slot0;
-                            var1 = var2.onEnd;
-                        case 189:
-                            if (!var1) {
-                                _fun34880_ip = 212;
-                                continue _fun34880
-                            }
-                        case 192:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onEnd;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 212:
-                            var2 = var4.oldState;
-                            var1 = _closure1_slot2;
-                            var1 = var1.BEGAN;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34880_ip = 254;
-                                continue _fun34880
-                            }
-                        case 235:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.FAILED;
-                            var1 = var3 === var2;
-                        case 254:
-                            if (!var1) {
-                                _fun34880_ip = 267;
-                                continue _fun34880
-                            }
-                        case 257:
-                            var2 = _closure2_slot0;
-                            var1 = var2.onFail;
-                        case 267:
-                            if (!var1) {
-                                _fun34880_ip = 290;
-                                continue _fun34880
-                            }
-                        case 270:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onFail;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 290:
-                            var2 = var4.oldState;
-                            var1 = _closure1_slot2;
-                            var1 = var1.ACTIVE;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34880_ip = 332;
-                                continue _fun34880
-                            }
-                        case 313:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.CANCELLED;
-                            var1 = var3 === var2;
-                        case 332:
-                            if (!var1) {
-                                _fun34880_ip = 345;
-                                continue _fun34880
-                            }
-                        case 335:
-                            var2 = _closure2_slot0;
-                            var1 = var2.onCancel;
-                        case 345:
-                            if (!var1) {
-                                _fun34880_ip = 368;
-                                continue _fun34880
-                            }
-                        case 348:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onCancel;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 368:
-                            var2 = var4.oldState;
-                            var1 = _closure1_slot2;
-                            var1 = var1.BEGAN;
-                            var1 = var2 !== var1;
-                            if (!var1) {
-                                _fun34880_ip = 411;
-                                continue _fun34880
-                            }
-                        case 391:
-                            var3 = var4.oldState;
-                            var2 = _closure1_slot2;
-                            var2 = var2.ACTIVE;
-                            var1 = var3 !== var2;
-                        case 411:
-                            if (var1) {
-                                _fun34880_ip = 433;
-                                continue _fun34880
-                            }
-                        case 414:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.BEGAN;
-                            var1 = var3 === var2;
-                        case 433:
-                            if (var1) {
-                                _fun34880_ip = 455;
-                                continue _fun34880
-                            }
-                        case 436:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.ACTIVE;
-                            var1 = var3 === var2;
-                        case 455:
-                            if (var1) {
-                                _fun34880_ip = 471;
-                                continue _fun34880
-                            }
-                        case 458:
-                            var2 = _closure2_slot0;
-                            var2 = var2.onFinish;
-                            var1 = !var2;
-                        case 471:
-                            if (var1) {
-                                _fun34880_ip = 536;
-                                continue _fun34880
-                            }
-                        case 474:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onFinish;
-                            var1 = _closure2_slot1;
-                            var6 = var4.state;
-                            var0 = _closure1_slot2;
-                            var0 = var0.CANCELLED;
-                            var0 = var6 === var0;
-                            if (var0) {
-                                _fun34880_ip = 529;
-                                continue _fun34880
-                            }
-                        case 510:
-                            var6 = var4.state;
-                            var5 = _closure1_slot2;
-                            var5 = var5.FAILED;
-                            var0 = var6 === var5;
-                        case 529:
-                            var0 = var2.bind(var3)(var4, var1, var0);
-                        case 536:
-                            var0 = undefined;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var3.current = var2;
+                            var2 = _closure2_slot3;
+                            var1 = true;
+                            var2.current = var1;
+                        case 163:
+                            var0 = function() { // Environment: var0
+                                var2 = _closure1_slot0;
+                                var1 = _closure1_slot1;
+                                var0 = 1;
+                                var1 = var1[var0];
+                                var0 = undefined;
+                                var4 = var2.bind(var0)(var1);
+                                var3 = var4.unsubscribeFromKeyboardEvents;
+                                var2 = _closure2_slot2;
+                                var2 = var2.current;
+                                var2 = var3.bind(var4)(var2);
+                                var2 = _closure2_slot3;
+                                var1 = false;
+                                var2.current = var1;
+                                return var0;
+                            };
                             return var0;
                     }
                 };
-                var0 = {};
-                var0.useWeb = var2;
-                var8 = _closure1_slot2;
-                var0.EVENT_TYPE = var8;
-                var0.handlers = var7;
-                var0.context = var6;
-                var4.__closure = var0;
-                var0 = 2401621621985.0;
-                var4.__workletHash = var0;
-                var0 = _closure1_slot3;
-                var4.__initData = var0;
-                var0 = var4;
-                if (var2) {
-                    _fun34879_ip = 186;
-                    continue _fun34879
-                }
-            case 143:
-                var2 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var1 = 1;
-                var1 = var6[var1];
-                var3 = var2.bind(var3)(var1);
-                var2 = var3.useEvent;
-                var1 = ['onGestureHandlerStateChange', 'onGestureHandlerEvent'];
-                var0 = var2.bind(var3)(var4, var1, var5);
-            case 186:
+                var1 = new Array(0);
+                var1 = var3.bind(var4)(var2, var1);
+                var0 = var0.current;
                 return var0;
         }
     };
-    var1.useAnimatedGestureHandler = var0;
-    var0 = undefined;
+    var2.useAnimatedKeyboard = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3867, 3869]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3762, 3743]);

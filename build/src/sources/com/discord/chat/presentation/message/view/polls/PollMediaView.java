@@ -102,7 +102,7 @@ public final class PollMediaView extends FrameLayout {
     private final void setImageURL(String str, ImageView.ScaleType scaleType, boolean z10) {
         hideViews();
         getDraweeView().setScaleType(scaleType);
-        SetOptionalImageUrlKt.setOptionalImageUrl$default(getDraweeView(), str, Boolean.valueOf(z10), null, null, 12, null);
+        SetOptionalImageUrlKt.setOptionalImageUrl$default(getDraweeView(), str, Boolean.valueOf(z10), null, null, null, null, 60, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

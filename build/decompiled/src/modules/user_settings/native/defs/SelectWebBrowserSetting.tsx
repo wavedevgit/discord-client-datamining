@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.onValueChange = var8;
     var7 = function() {
-        _fun86104: for (var _fun86104_ip = 0;;) switch (_fun86104_ip) {
+        _fun86072: for (var _fun86072_ip = 0;;) switch (_fun86072_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.isAndroid;
                 var2 = var2.bind(var4)();
                 if (var2) {
-                    _fun86104_ip = 250;
-                    continue _fun86104
+                    _fun86072_ip = 250;
+                    continue _fun86072
                 }
             case 157:
                 var4 = var0.push;
@@ -135,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var0)(var2);
             case 250:
                 if (!var1) {
-                    _fun86104_ip = 402;
-                    continue _fun86104
+                    _fun86072_ip = 402;
+                    continue _fun86072
                 }
             case 256:
                 var2 = var0.push;
@@ -157,14 +157,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var10.bind(var5)(var7);
                 var7 = var7.t;
                 if (var4) {
-                    _fun86104_ip = 349;
-                    continue _fun86104
+                    _fun86072_ip = 349;
+                    continue _fun86072
                 }
             case 334:
                 var4 = var7.FfjVVt;
                 var4 = var8.bind(var9)(var4);
-                _fun86104_ip = 360;
-                continue _fun86104;
+                _fun86072_ip = 360;
+                continue _fun86072;
             case 349:
                 var7 = var7.kEfv89;
                 var4 = var8.bind(var9)(var7);

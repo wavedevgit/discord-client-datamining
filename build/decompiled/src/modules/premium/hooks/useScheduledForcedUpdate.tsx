@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/hooks/useScheduledForcedUpdate.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun58776: for (var _fun58776_ip = 0;;) switch (_fun58776_ip) {
+        _fun58782: for (var _fun58782_ip = 0;;) switch (_fun58782_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.delay;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.disable;
                 var0 = undefined;
                 if (!(var6 === var0)) {
-                    _fun58776_ip = 29;
-                    continue _fun58776
+                    _fun58782_ip = 29;
+                    continue _fun58782
                 }
             case 27:
                 var6 = false;
@@ -58,19 +58,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var6;
                 var2[2] = var5;
                 var1 = function() { // Environment: var1
-                    _fun58777: for (var _fun58777_ip = 0;;) switch (_fun58777_ip) {
+                    _fun58783: for (var _fun58783_ip = 0;;) switch (_fun58783_ip) {
                         case 0:
                             var3 = _closure2_slot0;
                             var2 = 0;
                             if (!(!(var3 <= var2))) {
-                                _fun58777_ip = 58;
-                                continue _fun58777
+                                _fun58783_ip = 58;
+                                continue _fun58783
                             }
                         case 15:
                             var2 = _closure2_slot1;
                             if (var2) {
-                                _fun58777_ip = 58;
-                                continue _fun58777
+                                _fun58783_ip = 58;
+                                continue _fun58783
                             }
                         case 22:
                             var2 = global;

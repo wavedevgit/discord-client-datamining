@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0() {
-        _fun72902: for (var _fun72902_ip = 0;;) switch (_fun72902_ip) {
+        _fun72908: for (var _fun72908_ip = 0;;) switch (_fun72908_ip) {
             case 0:
                 var3 = arg0;
                 var2 = var3.filter;
@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 0;
                 var0 = var2 > var0;
                 if (!var0) {
-                    _fun72902_ip = 54;
-                    continue _fun72902
+                    _fun72908_ip = 54;
+                    continue _fun72908
                 }
             case 36:
                 var2 = var3.every;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/self_mod/inappropriate_conversation/InappropriateConversationUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function() {
-        _fun72905: for (var _fun72905_ip = 0;;) switch (_fun72905_ip) {
+        _fun72911: for (var _fun72911_ip = 0;;) switch (_fun72911_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getCurrentUser;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var3 = undefined;
                 if (var2) {
-                    _fun72905_ip = 39;
-                    continue _fun72905
+                    _fun72911_ip = 39;
+                    continue _fun72911
                 }
             case 29:
                 var2 = var5.isStaff;
@@ -100,24 +100,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1 == var5;
                 var3 = undefined;
                 if (var6) {
-                    _fun72905_ip = 90;
-                    continue _fun72905
+                    _fun72911_ip = 90;
+                    continue _fun72911
                 }
             case 70:
                 var5 = var5.inappropriateConversationWarnings;
                 var6 = var1 == var5;
                 var3 = undefined;
                 if (var6) {
-                    _fun72905_ip = 90;
-                    continue _fun72905
+                    _fun72911_ip = 90;
+                    continue _fun72911
                 }
             case 85:
                 var3 = var5.value;
             case 90:
                 var1 = var1 == var3;
                 if (var1) {
-                    _fun72905_ip = 100;
-                    continue _fun72905
+                    _fun72911_ip = 100;
+                    continue _fun72911
                 }
             case 97:
                 var1 = var3;
@@ -130,15 +130,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.getUserIsTeen;
                 var0 = var0.bind(var3)();
                 if (var0) {
-                    _fun72905_ip = 136;
-                    continue _fun72905
+                    _fun72911_ip = 136;
+                    continue _fun72911
                 }
             case 133:
                 var0 = var2;
             case 136:
                 if (!var0) {
-                    _fun72905_ip = 142;
-                    continue _fun72905
+                    _fun72911_ip = 142;
+                    continue _fun72911
                 }
             case 139:
                 var0 = var1;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSafetyAlertsSettingOrDefault = var4;
     var4 = function arg0() {
-        _fun72906: for (var _fun72906_ip = 0;;) switch (_fun72906_ip) {
+        _fun72912: for (var _fun72912_ip = 0;;) switch (_fun72912_ip) {
             case 0:
                 var3 = function arg0() {
                     var2 = _closure1_slot4;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.length;
                 var2 = 0;
                 if (!(!(var1 > var2))) {
-                    _fun72906_ip = 84;
-                    continue _fun72906
+                    _fun72912_ip = 84;
+                    continue _fun72912
                 }
             case 47:
                 var1 = var3.filter;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 1;
                 var0 = null;
                 if (!(var3 === var4)) {
-                    _fun72906_ip = 82;
-                    continue _fun72906
+                    _fun72912_ip = 82;
+                    continue _fun72912
                 }
             case 78:
                 var0 = var1[var2];
@@ -213,15 +213,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getInappropriateConversationTakeoverForChannel = var4;
     var3 = function arg0() {
-        _fun72911: for (var _fun72911_ip = 0;;) switch (_fun72911_ip) {
+        _fun72917: for (var _fun72917_ip = 0;;) switch (_fun72917_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.safetyWarnings;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun72911_ip = 38;
-                    continue _fun72911
+                    _fun72917_ip = 38;
+                    continue _fun72917
                 }
             case 18:
                 var3 = _closure1_slot6;

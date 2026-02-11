@@ -366,7 +366,7 @@ public final class AudioPlayerView extends FrameLayout {
             view.setContentDescription(I18nUtilsKt.i18nFormat$default(context, I18nMessage.PAUSE, null, 2, null));
             SimpleDraweeView button = this.binding.button;
             Intrinsics.checkNotNullExpressionValue(button, "button");
-            ReactAssetUtilsKt.setReactAsset(button, ReactAsset.Pause);
+            ReactAssetUtilsKt.setReactAsset(button, ReactAsset.PauseIcon);
             this.binding.button.setPadding(0, 0, 0, 0);
         } else {
             View view2 = this.binding.buttonContainer;
@@ -375,7 +375,7 @@ public final class AudioPlayerView extends FrameLayout {
             view2.setContentDescription(I18nUtilsKt.i18nFormat$default(context2, I18nMessage.PLAY, null, 2, null));
             SimpleDraweeView button2 = this.binding.button;
             Intrinsics.checkNotNullExpressionValue(button2, "button");
-            ReactAssetUtilsKt.setReactAsset(button2, ReactAsset.Play);
+            ReactAssetUtilsKt.setReactAsset(button2, ReactAsset.PlayIcon);
             this.binding.button.setPadding(2, 0, 0, 0);
         }
         getAnimatorManager().startAnimator(isPlaying$chat_release, this.shouldAnimate);

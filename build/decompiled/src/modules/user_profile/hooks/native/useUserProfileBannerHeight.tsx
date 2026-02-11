@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/hooks/native/useUserProfileBannerHeight.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun60120: for (var _fun60120_ip = 0;;) switch (_fun60120_ip) {
+        _fun60126: for (var _fun60126_ip = 0;;) switch (_fun60126_ip) {
             case 0:
                 var5 = arg0;
                 var2 = _closure1_slot0;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var3 = var4;
                 if (!(var1 != var5)) {
-                    _fun60120_ip = 49;
-                    continue _fun60120
+                    _fun60126_ip = 49;
+                    continue _fun60126
                 }
             case 30:
                 var1 = global;

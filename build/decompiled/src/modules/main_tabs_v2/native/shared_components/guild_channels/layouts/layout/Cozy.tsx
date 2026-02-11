@@ -257,4 +257,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CHANNEL_LIST_STYLES_COZY = var3;
     var2.CHANNEL_LIST_STYLES_COZY_LAUNCHPAD = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8864, 8865, 671, 5517, 4096, 7450, 6977, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8864, 8865, 671, 5516, 4092, 7450, 6977, 2]);

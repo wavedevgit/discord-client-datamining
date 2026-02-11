@@ -66,153 +66,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'utils/UserSettingsUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var5 = function() {
-        _fun59760: for (var _fun59760_ip = 0;;) switch (_fun59760_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot2;
-                var1 = 3;
-                var2 = var2[var1];
-                var1 = undefined;
-                var1 = var3.bind(var1)(var2);
-                var2 = var1.RestrictedGuildIds;
-                var1 = var2.getSetting;
-                var3 = var1.bind(var2)();
-                var0 = _closure1_slot3;
-                var1 = var0.totalUnavailableGuilds;
-                var0 = 0;
-                var2 = var3;
-                if (!(var0 === var1)) {
-                    _fun59760_ip = 77;
-                    continue _fun59760
-                }
-            case 60:
-                var1 = var3.filter;
-                var0 = function(arg0) { // Environment: var0
-                    var2 = _closure1_slot4;
-                    var1 = var2.getGuild;
-                    var0 = arg0;
-                    var1 = var1.bind(var2)(var0);
-                    var0 = null;
-                    var0 = var0 != var1;
-                    return var0;
-                };
-                var2 = var1.bind(var3)(var0);
-            case 77:
-                var0 = global;
-                var0 = var0.Set;
-                var1 = var0.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var0
-                    }
-                });
-                var5 = var1;
-                var4 = var2;
-                var0 = new var5[var0](var4, var3);
-                var0 = var0 instanceof Object ? var0 : var1;
-                return var0;
-        }
-    };
-    var2.getSanitizedRestrictedGuilds = var5;
-    var5 = function() {
-        _fun59762: for (var _fun59762_ip = 0;;) switch (_fun59762_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot2;
-                var1 = 3;
-                var2 = var2[var1];
-                var1 = undefined;
-                var1 = var3.bind(var1)(var2);
-                var2 = var1.MessageRequestRestrictedGuildIds;
-                var1 = var2.getSetting;
-                var3 = var1.bind(var2)();
-                var0 = _closure1_slot3;
-                var1 = var0.totalUnavailableGuilds;
-                var0 = 0;
-                var2 = var3;
-                if (!(var0 === var1)) {
-                    _fun59762_ip = 77;
-                    continue _fun59762
-                }
-            case 60:
-                var1 = var3.filter;
-                var0 = function(arg0) { // Environment: var0
-                    var2 = _closure1_slot4;
-                    var1 = var2.getGuild;
-                    var0 = arg0;
-                    var1 = var1.bind(var2)(var0);
-                    var0 = null;
-                    var0 = var0 != var1;
-                    return var0;
-                };
-                var2 = var1.bind(var3)(var0);
-            case 77:
-                var0 = global;
-                var0 = var0.Set;
-                var1 = var0.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var0
-                    }
-                });
-                var5 = var1;
-                var4 = var2;
-                var0 = new var5[var0](var4, var3);
-                var0 = var0 instanceof Object ? var0 : var1;
-                return var0;
-        }
-    };
-    var2.getSanitizedMessageRequestRestrictedGuilds = var5;
-    var5 = function() {
-        _fun59764: for (var _fun59764_ip = 0;;) switch (_fun59764_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot2;
-                var1 = 3;
-                var2 = var2[var1];
-                var1 = undefined;
-                var1 = var3.bind(var1)(var2);
-                var2 = var1.ActivityRestrictedGuilds;
-                var1 = var2.getSetting;
-                var3 = var1.bind(var2)();
-                var0 = _closure1_slot3;
-                var1 = var0.totalUnavailableGuilds;
-                var0 = 0;
-                var2 = var3;
-                if (!(var0 === var1)) {
-                    _fun59764_ip = 77;
-                    continue _fun59764
-                }
-            case 60:
-                var1 = var3.filter;
-                var0 = function(arg0) { // Environment: var0
-                    var2 = _closure1_slot4;
-                    var1 = var2.getGuild;
-                    var0 = arg0;
-                    var1 = var1.bind(var2)(var0);
-                    var0 = null;
-                    var0 = var0 != var1;
-                    return var0;
-                };
-                var2 = var1.bind(var3)(var0);
-            case 77:
-                var0 = global;
-                var0 = var0.Set;
-                var1 = var0.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var0
-                    }
-                });
-                var5 = var1;
-                var4 = var2;
-                var0 = new var5[var0](var4, var3);
-                var0 = var0 instanceof Object ? var0 : var1;
-                return var0;
-        }
-    };
-    var2.getSanitizedActivityRestrictedGuilds = var5;
-    var5 = function() {
         _fun59766: for (var _fun59766_ip = 0;;) switch (_fun59766_ip) {
             case 0:
                 var3 = _closure1_slot0;
@@ -221,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2[var1];
                 var1 = undefined;
                 var1 = var3.bind(var1)(var2);
-                var2 = var1.ActivityJoiningRestrictedGuilds;
+                var2 = var1.RestrictedGuildIds;
                 var1 = var2.getSetting;
                 var3 = var1.bind(var2)();
                 var0 = _closure1_slot3;
@@ -260,16 +113,163 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
+    var2.getSanitizedRestrictedGuilds = var5;
+    var5 = function() {
+        _fun59768: for (var _fun59768_ip = 0;;) switch (_fun59768_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot2;
+                var1 = 3;
+                var2 = var2[var1];
+                var1 = undefined;
+                var1 = var3.bind(var1)(var2);
+                var2 = var1.MessageRequestRestrictedGuildIds;
+                var1 = var2.getSetting;
+                var3 = var1.bind(var2)();
+                var0 = _closure1_slot3;
+                var1 = var0.totalUnavailableGuilds;
+                var0 = 0;
+                var2 = var3;
+                if (!(var0 === var1)) {
+                    _fun59768_ip = 77;
+                    continue _fun59768
+                }
+            case 60:
+                var1 = var3.filter;
+                var0 = function(arg0) { // Environment: var0
+                    var2 = _closure1_slot4;
+                    var1 = var2.getGuild;
+                    var0 = arg0;
+                    var1 = var1.bind(var2)(var0);
+                    var0 = null;
+                    var0 = var0 != var1;
+                    return var0;
+                };
+                var2 = var1.bind(var3)(var0);
+            case 77:
+                var0 = global;
+                var0 = var0.Set;
+                var1 = var0.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var5 = var1;
+                var4 = var2;
+                var0 = new var5[var0](var4, var3);
+                var0 = var0 instanceof Object ? var0 : var1;
+                return var0;
+        }
+    };
+    var2.getSanitizedMessageRequestRestrictedGuilds = var5;
+    var5 = function() {
+        _fun59770: for (var _fun59770_ip = 0;;) switch (_fun59770_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot2;
+                var1 = 3;
+                var2 = var2[var1];
+                var1 = undefined;
+                var1 = var3.bind(var1)(var2);
+                var2 = var1.ActivityRestrictedGuilds;
+                var1 = var2.getSetting;
+                var3 = var1.bind(var2)();
+                var0 = _closure1_slot3;
+                var1 = var0.totalUnavailableGuilds;
+                var0 = 0;
+                var2 = var3;
+                if (!(var0 === var1)) {
+                    _fun59770_ip = 77;
+                    continue _fun59770
+                }
+            case 60:
+                var1 = var3.filter;
+                var0 = function(arg0) { // Environment: var0
+                    var2 = _closure1_slot4;
+                    var1 = var2.getGuild;
+                    var0 = arg0;
+                    var1 = var1.bind(var2)(var0);
+                    var0 = null;
+                    var0 = var0 != var1;
+                    return var0;
+                };
+                var2 = var1.bind(var3)(var0);
+            case 77:
+                var0 = global;
+                var0 = var0.Set;
+                var1 = var0.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var5 = var1;
+                var4 = var2;
+                var0 = new var5[var0](var4, var3);
+                var0 = var0 instanceof Object ? var0 : var1;
+                return var0;
+        }
+    };
+    var2.getSanitizedActivityRestrictedGuilds = var5;
+    var5 = function() {
+        _fun59772: for (var _fun59772_ip = 0;;) switch (_fun59772_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot2;
+                var1 = 3;
+                var2 = var2[var1];
+                var1 = undefined;
+                var1 = var3.bind(var1)(var2);
+                var2 = var1.ActivityJoiningRestrictedGuilds;
+                var1 = var2.getSetting;
+                var3 = var1.bind(var2)();
+                var0 = _closure1_slot3;
+                var1 = var0.totalUnavailableGuilds;
+                var0 = 0;
+                var2 = var3;
+                if (!(var0 === var1)) {
+                    _fun59772_ip = 77;
+                    continue _fun59772
+                }
+            case 60:
+                var1 = var3.filter;
+                var0 = function(arg0) { // Environment: var0
+                    var2 = _closure1_slot4;
+                    var1 = var2.getGuild;
+                    var0 = arg0;
+                    var1 = var1.bind(var2)(var0);
+                    var0 = null;
+                    var0 = var0 != var1;
+                    return var0;
+                };
+                var2 = var1.bind(var3)(var0);
+            case 77:
+                var0 = global;
+                var0 = var0.Set;
+                var1 = var0.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var5 = var1;
+                var4 = var2;
+                var0 = new var5[var0](var4, var3);
+                var0 = var0 instanceof Object ? var0 : var1;
+                return var0;
+        }
+    };
     var2.getSanitizedActivityJoiningRestrictedGuilds = var5;
     var5 = function arg0() {
-        _fun59768: for (var _fun59768_ip = 0;;) switch (_fun59768_ip) {
+        _fun59774: for (var _fun59774_ip = 0;;) switch (_fun59774_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot7;
                 var0 = var3 & var2;
                 if (!(var0 !== var2)) {
-                    _fun59768_ip = 83;
-                    continue _fun59768
+                    _fun59774_ip = 83;
+                    continue _fun59774
                 }
             case 18:
                 var0 = {};
@@ -286,8 +286,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.MUTUAL_GUILDS;
                 var1 = var2 === var1;
                 var0.mutualGuilds = var1;
-                _fun59768_ip = 97;
-                continue _fun59768;
+                _fun59774_ip = 97;
+                continue _fun59774;
             case 83:
                 var0 = {
                     'all': true,
@@ -300,15 +300,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.computeFlags = var5;
     var5 = function arg0, arg1() {
-        _fun59769: for (var _fun59769_ip = 0;;) switch (_fun59769_ip) {
+        _fun59775: for (var _fun59775_ip = 0;;) switch (_fun59775_ip) {
             case 0:
                 var3 = arg0;
                 var2 = arg1;
                 var0 = var2.verified;
                 var0 = !var0;
                 if (var0) {
-                    _fun59769_ip = 126;
-                    continue _fun59769
+                    _fun59775_ip = 126;
+                    continue _fun59775
                 }
             case 18:
                 var1 = var2.isStaff;
@@ -316,15 +316,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = !var1;
                 var1 = !var2;
                 if (!var2) {
-                    _fun59769_ip = 123;
-                    continue _fun59769
+                    _fun59775_ip = 123;
+                    continue _fun59775
                 }
             case 37:
                 var2 = null;
                 var2 = var2 != var3;
                 if (!var2) {
-                    _fun59769_ip = 120;
-                    continue _fun59769
+                    _fun59775_ip = 120;
+                    continue _fun59775
                 }
             case 46:
                 var4 = _closure1_slot9;
@@ -487,4 +487,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shakeUserSettings = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4001, 1410, 660, 1348, 4312, 1234, 1229, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3997, 1410, 660, 1348, 4308, 1234, 1229, 2]);

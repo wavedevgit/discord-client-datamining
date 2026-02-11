@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/inappropriate_conversation/takeover_modal/showTakeoverModal.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun113496: for (var _fun113496_ip = 0;;) switch (_fun113496_ip) {
+        _fun113486: for (var _fun113486_ip = 0;;) switch (_fun113486_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.warningId;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.location = var5;
                 var2 = var3.bind(var4)(var2);
                 if (!var2) {
-                    _fun113496_ip = 169;
-                    continue _fun113496
+                    _fun113486_ip = 169;
+                    continue _fun113486
                 }
             case 77:
                 var4 = _closure1_slot1;
@@ -79,4 +79,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showTakeoverModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9118, 9067, 4571, 11442, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9118, 9067, 4567, 11423, 1307, 2]);

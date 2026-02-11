@@ -1,113 +1,202 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = {};
-    var3 = 'function determine_Pnpm_installWorkletsSupportTs1(value){const{boxedNitroProxy}=this.__closure;const nitroProxy=boxedNitroProxy.unbox();return nitroProxy.isHybridObject(value);}';
-    var2.code = var3;
-    var _closure1_slot2 = var2;
-    var2 = {};
-    var3 = 'function pack_Pnpm_installWorkletsSupportTs2(value){const{boxedNitroProxy}=this.__closure;const nitroProxy=boxedNitroProxy.unbox();return nitroProxy.box(value);}';
-    var2.code = var3;
-    var _closure1_slot3 = var2;
-    var2 = {};
-    var3 = 'function unpack_Pnpm_installWorkletsSupportTs3(value){return value.unbox();}';
-    var2.code = var3;
-    var _closure1_slot4 = var2;
-    var0 = function() {
-        _fun114700: for (var _fun114700_ip = 0;;) switch (_fun114700_ip) {
-            case 0:
-            case 2: // try_start_0
-                var7 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var0 = 0;
-                var0 = var8[var0];
-                var2 = undefined;
-                var0 = var7.bind(var2)(var0);
-                var1 = var0.registerCustomSerializable;
-                var0 = 1;
-                var5 = var8[var0];
-                var5 = var7.bind(var2)(var5);
-                var6 = var5.NitroModules;
-                var5 = var6.box;
-                var0 = var8[var0];
-                var0 = var7.bind(var2)(var0);
-                var0 = var0.NitroModules;
-                var7 = var5.bind(var6)(var0);
-                var _closure2_slot0 = var7;
-                var0 = {};
-                var5 = 'nitro.HybridObject';
-                var0.name = var5;
-                var5 = function arg0() {
-                    var1 = _closure2_slot0;
-                    var0 = var1.unbox;
-                    var2 = var0.bind(var1)();
-                    var1 = var2.isHybridObject;
-                    var0 = arg0;
-                    var0 = var1.bind(var2)(var0);
-                    return var0;
-                };
-                var6 = {};
-                var6.boxedNitroProxy = var7;
-                var5.__closure = var6;
-                var6 = 17379885884344.0;
-                var5.__workletHash = var6;
-                var6 = _closure1_slot2;
-                var5.__initData = var6;
-                var0.determine = var5;
-                var5 = function arg0() {
-                    var1 = _closure2_slot0;
-                    var0 = var1.unbox;
-                    var2 = var0.bind(var1)();
-                    var1 = var2.box;
-                    var0 = arg0;
-                    var0 = var1.bind(var2)(var0);
-                    return var0;
-                };
-                var6 = {};
-                var6.boxedNitroProxy = var7;
-                var5.__closure = var6;
-                var6 = 15686149812025.0;
-                var5.__workletHash = var6;
-                var6 = _closure1_slot3;
-                var5.__initData = var6;
-                var0.pack = var5;
-                var3 = function arg0() {
-                    var1 = arg0;
-                    var0 = var1.unbox;
-                    var0 = var0.bind(var1)();
-                    return var0;
-                };
-                var5 = {};
-                var3.__closure = var5;
-                var5 = 16222078380838.0;
-                var3.__workletHash = var5;
-                var4 = _closure1_slot4;
-                var3.__initData = var4;
-                var0.unpack = var3;
-                var0 = var1.bind(var2)(var0);
-            case 249: // try_end0
-                _fun114700_ip = 253;
-                continue _fun114700;
-            case 251: // catch_target0
-                CatchBlockStart(arg_register = 0);
-            case 253:
-                var0 = undefined;
-                return var0;
-        }
-    };
-    var1.installWorkletsSupport = var0;
+    var2 = exports;
+    var3 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var3;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = metroImportDefault;
     var0 = undefined;
+    var3 = var3.bind(var0)(var4);
+    var _closure1_slot2 = var3;
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0, arg1) { // Environment: var0
+            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
+                _fun114730: for (var _fun114730_ip = 0;;) switch (_fun114730_ip) {
+                    case 0:
+                        StartGenerator();
+                        var2 = arg0;
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun114730_ip = 62;
+                            continue _fun114730
+                        }
+                    case 10:
+                        var1 = var2.isEligible;
+                        var1 = !var1;
+                        if (var1) {
+                            _fun114730_ip = 59;
+                            continue _fun114730
+                        }
+                    case 22:
+                        var3 = global;
+                        var4 = var3.Boolean;
+                        var3 = var2.lowerBound;
+                        if (!var3) {
+                            _fun114730_ip = 52;
+                            continue _fun114730
+                        }
+                    case 39:
+                        var5 = var2.lowerBound;
+                        var2 = arg1;
+                        var3 = var5 >= var2;
+                    case 52:
+                        var2 = undefined;
+                        var1 = var4.bind(var2)(var3);
+                    case 59:
+                        return var1;
+                    case 62:
+                        return var0;
+                }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function arg0, arg1() {
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0, arg1) { // Environment: var0
+            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
+                _fun114734: for (var _fun114734_ip = 0;;) switch (_fun114734_ip) {
+                    case 0:
+                        StartGenerator();
+                        var4 = arg0;
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun114734_ip = 253;
+                            continue _fun114734
+                        }
+                    case 13:
+                        var1 = var4.isEligible;
+                        if (var1) {
+                            _fun114734_ip = 27;
+                            continue _fun114734
+                        }
+                    case 22:
+                        var1 = true;
+                        return var1;
+                    case 27:
+                        var6 = var4.userStatus;
+                        var7 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var5 = 1;
+                        var2 = var2[var5];
+                        var3 = undefined;
+                        var2 = var7.bind(var3)(var2);
+                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
+                        var2 = var2.VERIFIED;
+                        if (!(var2 !== var6)) {
+                            _fun114734_ip = 248;
+                            continue _fun114734
+                        }
+                    case 77:
+                        var7 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var2 = var2[var5];
+                        var2 = var7.bind(var3)(var2);
+                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
+                        var2 = var2.SUPERVISED;
+                        if (!(var2 !== var6)) {
+                            _fun114734_ip = 210;
+                            continue _fun114734
+                        }
+                    case 110:
+                        var7 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var2 = var2[var5];
+                        var2 = var7.bind(var3)(var2);
+                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
+                        var2 = var2.SUPERVISED_APPROVAL_PENDING;
+                        if (!(var2 !== var6)) {
+                            _fun114734_ip = 210;
+                            continue _fun114734
+                        }
+                    case 143:
+                        var7 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var2 = var2[var5];
+                        var2 = var7.bind(var3)(var2);
+                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
+                        var2 = var2.SUPERVISED_APPROVAL_DENIED;
+                        if (!(var2 !== var6)) {
+                            _fun114734_ip = 210;
+                            continue _fun114734
+                        }
+                    case 176:
+                        var2 = _closure1_slot0;
+                        var1 = _closure1_slot1;
+                        var1 = var1[var5];
+                        var1 = var2.bind(var3)(var1);
+                        var1 = var1.PlayAgeRangeDeclarationUserStatus;
+                        var1 = var1.UNKNOWN;
+                        var1 = false;
+                        return var1;
+                    case 210:
+                        var1 = global;
+                        var2 = var1.Boolean;
+                        var1 = var4.ageLower;
+                        if (!var1) {
+                            _fun114734_ip = 240;
+                            continue _fun114734
+                        }
+                    case 227:
+                        var5 = var4.ageLower;
+                        var4 = arg1;
+                        var1 = var5 >= var4;
+                    case 240:
+                        var1 = var2.bind(var3)(var1);
+                        return var1;
+                    case 248:
+                        var1 = true;
+                        return var1;
+                    case 253:
+                        return var0;
+                }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function arg0, arg1() {
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var2.getIsConsideredOlderThaniOS = var3;
+    var2.getIsConsideredOlderThanAndroid = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [null, 14685]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 14685]);

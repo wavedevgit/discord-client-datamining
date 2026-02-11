@@ -667,12 +667,12 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         };
         SimpleDraweeView simpleDraweeView = inflate.uploadCancel;
         Intrinsics.checkNotNull(simpleDraweeView);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Cancel);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.XSmallIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(Color.argb((int) SetSpanOperation.SPAN_MAX_PRIORITY, (int) SetSpanOperation.SPAN_MAX_PRIORITY, (int) SetSpanOperation.SPAN_MAX_PRIORITY, (int) SetSpanOperation.SPAN_MAX_PRIORITY)));
         I18nUtilsKt.i18nContentDescription$default(simpleDraweeView, I18nMessage.CANCEL, (Function1) null, 2, (Object) null);
         SimpleDraweeView simpleDraweeView2 = inflate.uploadComplete;
         Intrinsics.checkNotNull(simpleDraweeView2);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.Checkmark);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.CheckmarkLargeIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(Color.argb((int) SetSpanOperation.SPAN_MAX_PRIORITY, 88, 101, 242)));
         I18nUtilsKt.i18nContentDescription$default(simpleDraweeView2, I18nMessage.UPLOAD_COMPLETE, (Function1) null, 2, (Object) null);
     }

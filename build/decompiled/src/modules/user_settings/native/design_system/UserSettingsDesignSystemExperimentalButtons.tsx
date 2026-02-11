@@ -31,13 +31,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
+    var3 = var3.TABLE_ROW_PADDING;
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
     var6 = var3.jsx;
-    var _closure1_slot5 = var6;
-    var6 = var3.jsxs;
     var _closure1_slot6 = var6;
-    var3 = var3.Fragment;
+    var3 = var3.jsxs;
     var _closure1_slot7 = var3;
-    var3 = 15;
+    var3 = 17;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -46,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = function() {
         var6 = _closure1_slot0;
         var12 = _closure1_slot2;
-        var5 = 3;
+        var5 = 4;
         var0 = var12[var5];
         var3 = undefined;
         var1 = var6.bind(var3)(var0);
@@ -56,56 +59,56 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var6.bind(var3)(var0);
         var0 = var1.useCollapsibleFloatingActionButtonScroll;
         var10 = var0.bind(var1)(var8);
-        var2 = _closure1_slot6;
+        var2 = _closure1_slot7;
         var1 = _closure1_slot3;
         var0 = {};
-        var7 = _closure1_slot5;
+        var7 = _closure1_slot6;
         var13 = _closure1_slot4;
         var4 = {};
         var4.onScroll = var10;
-        var14 = {};
-        var18 = 4;
-        var10 = var12[var18];
+        var19 = 5;
+        var10 = var12[var19];
         var10 = var6.bind(var3)(var10);
-        var15 = var10.FormSection;
-        var10 = {};
-        var11 = 'Header Button';
-        var10.title = var11;
-        var22 = 5;
-        var11 = var12[var22];
-        var11 = var6.bind(var3)(var11);
-        var19 = var11.Text;
-        var16 = {
-            'variant': 'text-sm/normal',
-            'style': null,
-            'children': "A specialized version of the 'secondary-overlay' Button which functions as both a Header and a button."
-        };
-        var20 = {};
+        var15 = var10.Stack;
+        var14 = {};
         var11 = _closure1_slot1;
-        var26 = 6;
-        var21 = var12[var26];
-        var21 = var11.bind(var3)(var21);
-        var21 = var21.spacing;
-        var21 = var21.PX_16;
-        var20.padding = var21;
-        var25 = 0;
-        var20.paddingTop = var25;
-        var16.style = var20;
-        var16 = var7.bind(var3)(var19, var16);
-        var10.description = var16;
-        var16 = var12[var18];
-        var16 = var6.bind(var3)(var16);
-        var19 = var16.FormRow;
-        var16 = {};
+        var22 = 6;
+        var10 = var12[var22];
+        var10 = var11.bind(var3)(var10);
+        var10 = var10.spacing;
+        var10 = var10.PX_24;
+        var14.spacing = var10;
+        var10 = {};
+        var21 = _closure1_slot5;
+        var10.paddingHorizontal = var21;
+        var14.style = var10;
+        var17 = 7;
+        var10 = var12[var17];
+        var10 = var6.bind(var3)(var10);
+        var16 = var10.TableRowGroup;
+        var10 = {
+            'title': 'Header Button',
+            'description': "A specialized version of the 'secondary-overlay' Button which functions as both a Header and a button."
+        };
+        var18 = {};
         var20 = {};
-        var21 = {};
         var23 = 'center';
-        var21.alignItems = var23;
-        var20.style = var21;
-        var21 = var12[var5];
-        var21 = var6.bind(var3)(var21);
-        var23 = var21.HeaderButton;
-        var21 = {
+        var20.alignItems = var23;
+        var23 = var12[var22];
+        var23 = var11.bind(var3)(var23);
+        var23 = var23.unsafe_rawColors;
+        var23 = var23.BG_GRADIENT_CHROMA_GLOW_1;
+        var20.backgroundColor = var23;
+        var23 = var12[var22];
+        var23 = var11.bind(var3)(var23);
+        var23 = var23.spacing;
+        var23 = var23.PX_48;
+        var20.paddingVertical = var23;
+        var18.style = var20;
+        var20 = var12[var5];
+        var20 = var6.bind(var3)(var20);
+        var23 = var20.HeaderButton;
+        var20 = {
             'onPress': null,
             'text': 'Channel Name',
             'icon': null,
@@ -117,64 +120,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             return var0;
         };
-        var21.onPress = var24;
-        var24 = 7;
+        var20.onPress = var24;
+        var24 = 8;
         var24 = var12[var24];
         var24 = var11.bind(var3)(var24);
-        var21.icon = var24;
-        var21 = var7.bind(var3)(var23, var21);
-        var20.children = var21;
-        var20 = var7.bind(var3)(var1, var20);
-        var16.label = var20;
-        var20 = {};
-        var21 = var12[var26];
-        var21 = var11.bind(var3)(var21);
-        var21 = var21.unsafe_rawColors;
-        var21 = var21.BG_GRADIENT_CHROMA_GLOW_1;
-        var20.backgroundColor = var21;
-        var21 = var12[var26];
-        var21 = var11.bind(var3)(var21);
-        var21 = var21.spacing;
-        var21 = var21.PX_48;
-        var20.paddingVertical = var21;
-        var16.style = var20;
-        var16 = var7.bind(var3)(var19, var16);
-        var10.children = var16;
-        var10 = var7.bind(var3)(var15, var10);
-        var15 = new Array(7);
-        var15[0] = var10;
-        var10 = var12[var18];
+        var20.icon = var24;
+        var20 = var7.bind(var3)(var23, var20);
+        var18.children = var20;
+        var18 = var7.bind(var3)(var1, var18);
+        var10.children = var18;
+        var10 = var7.bind(var3)(var16, var10);
+        var16 = new Array(7);
+        var16[0] = var10;
+        var10 = var12[var17];
         var10 = var6.bind(var3)(var10);
-        var16 = var10.FormSection;
-        var10 = {};
-        var19 = 'Input Button';
-        var10.title = var19;
-        var19 = var12[var22];
-        var19 = var6.bind(var3)(var19);
-        var20 = var19.Text;
-        var19 = {
-            'variant': 'text-sm/normal',
-            'style': null,
-            'children': 'A specialized button which looks like a text field, but functions as a button.'
+        var18 = var10.TableRowGroup;
+        var10 = {
+            'title': 'Input Button',
+            'description': 'A specialized button which looks like a text field, but functions as a button.'
         };
-        var21 = {};
-        var23 = var12[var26];
-        var23 = var11.bind(var3)(var23);
-        var23 = var23.spacing;
-        var23 = var23.PX_16;
-        var21.padding = var23;
-        var21.paddingTop = var25;
-        var19.style = var21;
-        var19 = var7.bind(var3)(var20, var19);
-        var10.description = var19;
-        var19 = var12[var18];
+        var19 = var12[var19];
         var19 = var6.bind(var3)(var19);
-        var20 = var19.FormRow;
+        var20 = var19.Stack;
         var19 = {};
-        var21 = var12[var5];
-        var21 = var6.bind(var3)(var21);
-        var23 = var21.InputButton;
-        var21 = {
+        var22 = var12[var22];
+        var22 = var11.bind(var3)(var22);
+        var22 = var22.spacing;
+        var22 = var22.PX_24;
+        var19.spacing = var22;
+        var22 = var12[var5];
+        var22 = var6.bind(var3)(var22);
+        var23 = var22.InputButton;
+        var22 = {
             'onPress': null,
             'size': 'lg',
             'text': 'Search',
@@ -185,20 +162,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             return var0;
         };
-        var21.onPress = var24;
-        var24 = 8;
+        var22.onPress = var24;
+        var24 = 9;
         var24 = var12[var24];
         var24 = var11.bind(var3)(var24);
-        var21.icon = var24;
-        var21 = var7.bind(var3)(var23, var21);
-        var19.label = var21;
-        var20 = var7.bind(var3)(var20, var19);
-        var19 = new Array(2);
-        var19[0] = var20;
-        var20 = var12[var18];
-        var20 = var6.bind(var3)(var20);
-        var21 = var20.FormRow;
-        var20 = {};
+        var22.icon = var24;
+        var23 = var7.bind(var3)(var23, var22);
+        var22 = new Array(2);
+        var22[0] = var23;
         var23 = var12[var5];
         var23 = var6.bind(var3)(var23);
         var24 = var23.InputButton;
@@ -210,320 +181,193 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'iconPosition': 'end',
             'accessibilityLabel': 'Copy, http://discord.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
         };
-        var27 = function() {
+        var25 = function() {
             var0 = undefined;
             return var0;
         };
-        var23.onPress = var27;
-        var27 = 9;
-        var27 = var12[var27];
-        var27 = var11.bind(var3)(var27);
-        var23.icon = var27;
+        var23.onPress = var25;
+        var25 = 10;
+        var25 = var12[var25];
+        var25 = var11.bind(var3)(var25);
+        var23.icon = var25;
         var23 = var7.bind(var3)(var24, var23);
-        var20.label = var23;
-        var20 = var7.bind(var3)(var21, var20);
-        var19[1] = var20;
+        var22[1] = var23;
+        var19.children = var22;
+        var19 = var2.bind(var3)(var20, var19);
         var10.children = var19;
-        var10 = var2.bind(var3)(var16, var10);
-        var15[1] = var10;
-        var10 = var12[var18];
+        var10 = var7.bind(var3)(var18, var10);
+        var16[1] = var10;
+        var10 = var12[var17];
         var10 = var6.bind(var3)(var10);
-        var16 = var10.FormSection;
-        var10 = {};
-        var19 = 'Twin Buttons';
-        var10.title = var19;
-        var20 = _closure1_slot7;
-        var17 = {};
-        var19 = var12[var22];
-        var19 = var6.bind(var3)(var19);
-        var21 = var19.Text;
-        var19 = {
-            'variant': 'text-sm/normal',
-            'style': null,
-            'children': 'TwinButtons is a specialized layout component, which renders two text buttons horizontally next to each other.'
-        };
-        var23 = {};
-        var24 = var12[var26];
-        var24 = var11.bind(var3)(var24);
-        var24 = var24.spacing;
-        var24 = var24.PX_16;
-        var23.padding = var24;
-        var23.paddingTop = var25;
-        var19.style = var23;
-        var21 = var7.bind(var3)(var21, var19);
-        var19 = new Array(2);
-        var19[0] = var21;
-        var21 = var12[var22];
-        var21 = var6.bind(var3)(var21);
-        var23 = var21.Text;
-        var21 = {
-            'variant': 'text-sm/normal',
-            'style': null,
-            'children': 'A horizontal layout for text buttons is often problematic, since internationalization and font size settings can easily render these buttons unreadable. But TwinButtons will force the two buttons to stack vertically under certain conditions to avoid these issues.'
-        };
-        var24 = {};
-        var27 = var12[var26];
-        var27 = var11.bind(var3)(var27);
-        var27 = var27.spacing;
-        var27 = var27.PX_16;
-        var24.padding = var27;
-        var24.paddingTop = var25;
-        var21.style = var24;
-        var21 = var7.bind(var3)(var23, var21);
-        var19[1] = var21;
-        var17.children = var19;
-        var17 = var2.bind(var3)(var20, var17);
-        var10.description = var17;
-        var17 = var12[var18];
-        var17 = var6.bind(var3)(var17);
-        var19 = var17.FormRow;
-        var17 = {};
-        var21 = var12[var5];
-        var21 = var6.bind(var3)(var21);
-        var23 = var21.TwinButtons;
-        var21 = {};
-        var27 = 10;
-        var24 = var12[var27];
-        var24 = var6.bind(var3)(var24);
-        var28 = var24.Button;
-        var24 = {};
-        var29 = function() {
-            var0 = undefined;
-            return var0;
-        };
-        var24.onPress = var29;
-        var29 = 'Add Status';
-        var24.text = var29;
-        var28 = var7.bind(var3)(var28, var24);
-        var24 = new Array(2);
-        var24[0] = var28;
-        var27 = var12[var27];
-        var27 = var6.bind(var3)(var27);
-        var28 = var27.Button;
-        var27 = {};
-        var29 = function() {
-            var0 = undefined;
-            return var0;
-        };
-        var27.onPress = var29;
-        var29 = 'Edit Profile';
-        var27.text = var29;
-        var27 = var7.bind(var3)(var28, var27);
-        var24[1] = var27;
-        var21.children = var24;
-        var21 = var2.bind(var3)(var23, var21);
-        var17.label = var21;
-        var17 = var7.bind(var3)(var19, var17);
-        var10.children = var17;
-        var10 = var7.bind(var3)(var16, var10);
-        var15[2] = var10;
-        var10 = var12[var18];
-        var10 = var6.bind(var3)(var10);
-        var17 = var10.FormSection;
-        var16 = {};
-        var10 = 'PressableScale';
-        var16.title = var10;
-        var10 = var12[var22];
-        var10 = var6.bind(var3)(var10);
-        var19 = var10.Text;
+        var18 = var10.TableRowGroup;
         var10 = {
-            'variant': 'text-sm/normal',
-            'style': null,
-            'children': 'If no button in our catelog of components is compatible with a particular design, then PressableScale can fill some gaps. It will apply the same onPress animation to a custom button.'
+            'title': 'Twin Buttons',
+            'description': 'TwinButtons is a specialized layout component, which renders two text buttons horizontally next to each other. A horizontal layout for text buttons is often problematic, since internationalization and font size settings can easily render these buttons unreadable. But TwinButtons will force the two buttons to stack vertically under certain conditions to avoid these issues.'
         };
-        var21 = {};
-        var23 = var12[var26];
-        var23 = var11.bind(var3)(var23);
-        var23 = var23.spacing;
-        var23 = var23.PX_16;
-        var21.padding = var23;
-        var21.paddingTop = var25;
-        var10.style = var21;
-        var10 = var7.bind(var3)(var19, var10);
-        var16.description = var10;
-        var10 = var12[var18];
-        var10 = var6.bind(var3)(var10);
-        var21 = var10.FormRow;
+        var19 = var12[var5];
+        var19 = var6.bind(var3)(var19);
+        var20 = var19.TwinButtons;
         var19 = {};
-        var10 = var12[var5];
-        var10 = var6.bind(var3)(var10);
-        var24 = var10.PressableScale;
-        var23 = {};
-        var10 = function() {
+        var23 = 11;
+        var22 = var12[var23];
+        var22 = var6.bind(var3)(var22);
+        var24 = var22.Button;
+        var22 = {};
+        var25 = function() {
             var0 = undefined;
             return var0;
         };
-        var23.onPress = var10;
-        var27 = {};
-        var10 = 12;
-        var28 = {
+        var22.onPress = var25;
+        var25 = 'Add Status';
+        var22.text = var25;
+        var24 = var7.bind(var3)(var24, var22);
+        var22 = new Array(2);
+        var22[0] = var24;
+        var23 = var12[var23];
+        var23 = var6.bind(var3)(var23);
+        var24 = var23.Button;
+        var23 = {};
+        var25 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var23.onPress = var25;
+        var25 = 'Edit Profile';
+        var23.text = var25;
+        var23 = var7.bind(var3)(var24, var23);
+        var22[1] = var23;
+        var19.children = var22;
+        var19 = var2.bind(var3)(var20, var19);
+        var10.children = var19;
+        var10 = var7.bind(var3)(var18, var10);
+        var16[2] = var10;
+        var10 = var12[var17];
+        var10 = var6.bind(var3)(var10);
+        var18 = var10.TableRowGroup;
+        var10 = {
+            'title': 'PressableScale',
+            'description': 'If no button in our catelog of components is compatible with a particular design, then PressableScale can fill some gaps. It will apply the same onPress animation to a custom button.'
+        };
+        var19 = {};
+        var20 = {};
+        var20.padding = var21;
+        var19.style = var20;
+        var20 = var12[var5];
+        var20 = var6.bind(var3)(var20);
+        var21 = var20.PressableScale;
+        var20 = {};
+        var22 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var20.onPress = var22;
+        var22 = {};
+        var23 = 12;
+        var24 = {
             'borderColor': 'pink',
             'borderWidth': 1,
             'borderRadius': 8,
             'padding': 12
         };
-        var27.style = var28;
-        var28 = var12[var22];
-        var28 = var6.bind(var3)(var28);
-        var29 = var28.Text;
-        var28 = {
+        var22.style = var24;
+        var23 = var12[var23];
+        var23 = var6.bind(var3)(var23);
+        var24 = var23.Text;
+        var23 = {
             'variant': 'text-md/semibold',
             'children': 'This is a custom button'
         };
-        var28 = var7.bind(var3)(var29, var28);
-        var27.children = var28;
-        var27 = var7.bind(var3)(var1, var27);
-        var23.children = var27;
         var23 = var7.bind(var3)(var24, var23);
-        var19.label = var23;
-        var19 = var7.bind(var3)(var21, var19);
-        var16.children = var19;
-        var16 = var7.bind(var3)(var17, var16);
-        var15[3] = var16;
-        var16 = var12[var18];
-        var16 = var6.bind(var3)(var16);
-        var17 = var16.FormSection;
-        var16 = {};
-        var19 = 'Experimental Blur Background Row Button';
-        var16.title = var19;
-        var19 = var12[var22];
-        var19 = var6.bind(var3)(var19);
-        var21 = var19.Text;
-        var19 = {
-            'variant': 'text-sm/normal',
-            'style': null,
-            'children': 'Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page.'
+        var22.children = var23;
+        var22 = var7.bind(var3)(var1, var22);
+        var20.children = var22;
+        var20 = var7.bind(var3)(var21, var20);
+        var19.children = var20;
+        var19 = var7.bind(var3)(var1, var19);
+        var10.children = var19;
+        var10 = var7.bind(var3)(var18, var10);
+        var16[3] = var10;
+        var10 = var12[var17];
+        var10 = var6.bind(var3)(var10);
+        var18 = var10.TableRowGroup;
+        var10 = {
+            'title': 'Experimental Blur Background Row Button',
+            'description': 'Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page.'
         };
-        var23 = {};
-        var24 = var12[var26];
-        var24 = var11.bind(var3)(var24);
-        var24 = var24.spacing;
-        var24 = var24.PX_16;
-        var23.padding = var24;
-        var23.paddingTop = var25;
-        var19.style = var23;
-        var19 = var7.bind(var3)(var21, var19);
-        var16.description = var19;
         var19 = {};
         var19 = var7.bind(var3)(var1, var19);
-        var16.children = var19;
-        var16 = var7.bind(var3)(var17, var16);
-        var15[4] = var16;
-        var16 = 11;
-        var16 = var12[var16];
-        var16 = var6.bind(var3)(var16);
-        var17 = var16.ThemeContextProvider;
-        var16 = {};
-        var19 = 'darker';
-        var16.theme = var19;
-        var10 = var12[var10];
-        var21 = var11.bind(var3)(var10);
-        var19 = {};
-        var10 = {};
-        var23 = 16;
-        var10.padding = var23;
-        var19.style = var10;
-        var10 = {
-            'x': 0,
-            'y': 0
-        };
-        var19.start = var10;
-        var10 = {
-            'x': 1,
-            'y': 0
-        };
-        var19.end = var10;
-        var10 = ['red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple'];
-        var19.colors = var10;
+        var10.children = var19;
+        var10 = var7.bind(var3)(var18, var10);
+        var16[4] = var10;
         var10 = 13;
         var10 = var12[var10];
         var10 = var6.bind(var3)(var10);
-        var24 = var10.RowButton;
-        var23 = {
+        var19 = var10.ThemeContextProvider;
+        var18 = {};
+        var10 = 'darker';
+        var18.theme = var10;
+        var10 = 14;
+        var10 = var12[var10];
+        var21 = var11.bind(var3)(var10);
+        var20 = {};
+        var22 = {};
+        var10 = 16;
+        var22.padding = var10;
+        var20.style = var22;
+        var22 = {
+            'x': 0,
+            'y': 0
+        };
+        var20.start = var22;
+        var22 = {
+            'x': 1,
+            'y': 0
+        };
+        var20.end = var22;
+        var22 = ['red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple'];
+        var20.colors = var22;
+        var22 = 15;
+        var22 = var12[var22];
+        var22 = var6.bind(var3)(var22);
+        var23 = var22.RowButton;
+        var22 = {
             'icon': null,
             'label': 'Row Button',
             'subLabel': 'With a blur background',
             'experimental_withBlurBackground': true
         };
-        var10 = 14;
-        var27 = var12[var10];
-        var27 = var11.bind(var3)(var27);
-        var23.icon = var27;
-        var27 = function() {
+        var24 = var12[var10];
+        var24 = var11.bind(var3)(var24);
+        var22.icon = var24;
+        var24 = function() {
             var0 = undefined;
             return var0;
         };
-        var23.onPress = var27;
-        var23 = var7.bind(var3)(var24, var23);
-        var19.children = var23;
-        var19 = var7.bind(var3)(var21, var19);
-        var16.children = var19;
-        var16 = var7.bind(var3)(var17, var16);
-        var15[5] = var16;
-        var16 = var12[var18];
-        var16 = var6.bind(var3)(var16);
-        var17 = var16.FormSection;
-        var16 = {};
-        var19 = 'Collapsible Floating Action Button';
-        var16.title = var19;
-        var19 = {};
-        var21 = var12[var22];
-        var21 = var6.bind(var3)(var21);
-        var23 = var21.Text;
-        var21 = {
-            'variant': 'text-sm/normal',
-            'style': null,
-            'children': 'A variation of the FloatingActionButton which will display some text until the user scrolls.'
-        };
-        var24 = {};
-        var27 = var12[var26];
-        var27 = var11.bind(var3)(var27);
-        var27 = var27.spacing;
-        var27 = var27.PX_16;
-        var24.padding = var27;
-        var24.paddingTop = var25;
-        var21.style = var24;
-        var23 = var7.bind(var3)(var23, var21);
-        var21 = new Array(2);
-        var21[0] = var23;
-        var22 = var12[var22];
-        var22 = var6.bind(var3)(var22);
-        var23 = var22.Text;
-        var22 = {
-            'variant': 'text-sm/normal',
-            'style': null,
-            'children': 'We currently recommend the use of the FloatingActionButton over the CollapsibleFloatingActionButton, as a singular icon button without animation is more compact, understandable, and predictable.'
-        };
-        var24 = {};
-        var26 = var12[var26];
-        var26 = var11.bind(var3)(var26);
-        var26 = var26.spacing;
-        var26 = var26.PX_16;
-        var24.padding = var26;
-        var24.paddingTop = var25;
-        var22.style = var24;
+        var22.onPress = var24;
         var22 = var7.bind(var3)(var23, var22);
-        var21[1] = var22;
-        var19.children = var21;
-        var19 = var2.bind(var3)(var20, var19);
-        var16.description = var19;
-        var18 = var12[var18];
-        var18 = var6.bind(var3)(var18);
-        var19 = var18.FormRow;
-        var18 = {};
-        var20 = {};
-        var21 = {};
-        var22 = 48;
-        var21.padding = var22;
-        var20.style = var21;
-        var20 = var7.bind(var3)(var1, var20);
-        var18.label = var20;
+        var20.children = var22;
+        var20 = var7.bind(var3)(var21, var20);
+        var18.children = var20;
         var18 = var7.bind(var3)(var19, var18);
-        var16.children = var18;
-        var16 = var7.bind(var3)(var17, var16);
-        var15[6] = var16;
-        var14.children = var15;
-        var14 = var2.bind(var3)(var1, var14);
+        var16[5] = var18;
+        var17 = var12[var17];
+        var17 = var6.bind(var3)(var17);
+        var18 = var17.TableRowGroup;
+        var17 = {
+            'title': 'Collapsible Floating Action Button',
+            'description': 'A variation of the FloatingActionButton which will display some text until the user scrolls. We currently recommend the use of the FloatingActionButton over the CollapsibleFloatingActionButton, as a singular icon button without animation is more compact, understandable, and predictable.'
+        };
+        var19 = {};
+        var20 = {};
+        var21 = 48;
+        var20.padding = var21;
+        var19.style = var20;
+        var19 = var7.bind(var3)(var1, var19);
+        var17.children = var19;
+        var17 = var7.bind(var3)(var18, var17);
+        var16[6] = var17;
+        var14.children = var16;
+        var14 = var2.bind(var3)(var15, var14);
         var4.children = var14;
         var13 = var7.bind(var3)(var13, var4);
         var4 = new Array(2);
@@ -553,4 +397,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7108, 5441, 3942, 671, 7797, 7094, 3260, 4094, 3161, 4108, 5443, 5433, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4880, 33, 7108, 4086, 671, 5425, 7797, 7094, 3260, 4090, 3938, 3161, 4104, 5442, 5432, 2]);

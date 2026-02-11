@@ -52,7 +52,7 @@ public final class ReactAssetUtilsKt {
         Intrinsics.checkNotNullParameter(asset, "asset");
         Context context = simpleDraweeView.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        setReactImageUrl(simpleDraweeView, asset.getUri(context));
+        setReactImageUrl(simpleDraweeView, ReactAssetExtensionsKt.getUri(asset, context));
     }
 
     public static final void setReactIcon(@NotNull MaterialButton materialButton, @NotNull String assetUrl, int i10) {

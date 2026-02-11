@@ -3,15 +3,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = require;
     var3 = dependencyMap;
     var0 = function arg0() {
-        _fun62717: for (var _fun62717_ip = 0;;) switch (_fun62717_ip) {
+        _fun62723: for (var _fun62723_ip = 0;;) switch (_fun62723_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.hasOwnProperty;
                 var2 = _closure1_slot4;
                 var2 = var3.bind(var1)(var2);
                 if (var2) {
-                    _fun62717_ip = 101;
-                    continue _fun62717
+                    _fun62723_ip = 101;
+                    continue _fun62723
                 }
             case 24:
                 var2 = global;
@@ -19,8 +19,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.isExtensible;
                 var3 = var3.bind(var4)(var1);
                 if (var3) {
-                    _fun62717_ip = 54;
-                    continue _fun62717
+                    _fun62723_ip = 54;
+                    continue _fun62723
                 }
             case 48:
                 var3 = 'F';
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.addOrientationDegreesChangeListener = var3;
     var3 = function arg0() {
-        _fun62732: for (var _fun62732_ip = 0;;) switch (_fun62732_ip) {
+        _fun62738: for (var _fun62738_ip = 0;;) switch (_fun62738_ip) {
             case 0:
                 var3 = _closure1_slot5;
                 var0 = undefined;
@@ -205,8 +205,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = _closure1_slot2;
                 var2 = var2[var3];
                 if (!var2) {
-                    _fun62732_ip = 52;
-                    continue _fun62732
+                    _fun62738_ip = 52;
+                    continue _fun62738
                 }
             case 28:
                 var2 = _closure1_slot2;
@@ -244,7 +244,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.addSpecificOrientationListener = var3;
     var3 = function arg0() {
-        _fun62735: for (var _fun62735_ip = 0;;) switch (_fun62735_ip) {
+        _fun62741: for (var _fun62741_ip = 0;;) switch (_fun62741_ip) {
             case 0:
                 var3 = _closure1_slot5;
                 var0 = undefined;
@@ -253,8 +253,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = _closure1_slot2;
                 var2 = var2[var3];
                 if (!var2) {
-                    _fun62735_ip = 52;
-                    continue _fun62735
+                    _fun62741_ip = 52;
+                    continue _fun62741
                 }
             case 28:
                 var2 = _closure1_slot2;

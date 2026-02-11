@@ -50,15 +50,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.setSystemTheme = var3;
     var3 = function() {
-        _fun28110: for (var _fun28110_ip = 0;;) switch (_fun28110_ip) {
+        _fun28107: for (var _fun28107_ip = 0;;) switch (_fun28107_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var2 = var1.useSystemTheme;
                 var1 = _closure1_slot3;
                 var1 = var1.OFF;
                 if (!(var2 !== var1)) {
-                    _fun28110_ip = 62;
-                    continue _fun28110
+                    _fun28107_ip = 62;
+                    continue _fun28107
                 }
             case 27:
                 var2 = _closure1_slot4;

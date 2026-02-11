@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot2;
         var1 = var2.addConditionalChangeListener;
         var0 = function() { // Environment: var0
-            _fun81480: for (var _fun81480_ip = 0;;) switch (_fun81480_ip) {
+            _fun81440: for (var _fun81440_ip = 0;;) switch (_fun81440_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getDefaultChannel;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 == var2;
                     if (var0) {
-                        _fun81480_ip = 64;
-                        continue _fun81480
+                        _fun81440_ip = 64;
+                        continue _fun81440
                     }
                 case 40:
                     var2 = global;

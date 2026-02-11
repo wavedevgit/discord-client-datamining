@@ -351,7 +351,7 @@ public abstract class EmojiPickerViewHolder extends RecyclerView.ViewHolder {
                 this.emojiUrl = emojiUrl;
                 ((GenericDraweeHierarchy) this.emojiView.getHierarchy()).z(getPlaceholder());
                 this.emojiView.setBackground(null);
-                SetOptionalImageUrlKt.setOptionalImageUrl$default(this.emojiView, this.emojiUrl, Boolean.FALSE, null, this.emojiLoadListener, 4, null);
+                SetOptionalImageUrlKt.setOptionalImageUrl$default(this.emojiView, this.emojiUrl, Boolean.FALSE, null, this.emojiLoadListener, null, null, 52, null);
             }
             EmojiLoadListener emojiLoadListener = this.emojiLoadListener;
             DraweeController controller = this.emojiView.getController();

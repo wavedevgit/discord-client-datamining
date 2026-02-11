@@ -85,7 +85,7 @@ public final class RoleSubscriptionPurchaseView extends ConstraintLayout {
         ReactAssetUtilsKt.setReactAsset(roleSubscriptionPurchaseLanyard, ReactAsset.RoleSubscriptionLanyard);
         SimpleDraweeView roleSubscriptionPurchaseCardBg = inflate.roleSubscriptionPurchaseCardBg;
         Intrinsics.checkNotNullExpressionValue(roleSubscriptionPurchaseCardBg, "roleSubscriptionPurchaseCardBg");
-        ReactAssetUtilsKt.setReactAsset(roleSubscriptionPurchaseCardBg, ReactAsset.RoleSubscriptionPurchaseCardBg);
+        ReactAssetUtilsKt.setReactAsset(roleSubscriptionPurchaseCardBg, ReactAsset.RoleSubscriptionPurchaseCard);
         SimpleDraweeView roleSubscriptionPurchaserAvatar = inflate.roleSubscriptionPurchaserAvatar;
         Intrinsics.checkNotNullExpressionValue(roleSubscriptionPurchaserAvatar, "roleSubscriptionPurchaserAvatar");
         ViewClippingUtilsKt.clipToCircle(roleSubscriptionPurchaserAvatar);

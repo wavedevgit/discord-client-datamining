@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun22723: for (var _fun22723_ip = 0;;) switch (_fun22723_ip) {
+        _fun22720: for (var _fun22720_ip = 0;;) switch (_fun22720_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun22723_ip = 18;
-                    continue _fun22723
+                    _fun22720_ip = 18;
+                    continue _fun22720
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun22723_ip = 27;
-                    continue _fun22723
+                    _fun22720_ip = 27;
+                    continue _fun22720
                 }
             case 18:
                 var1 = {};

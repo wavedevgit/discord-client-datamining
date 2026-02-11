@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/TreasureChestSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53553: for (var _fun53553_ip = 0;;) switch (_fun53553_ip) {
+        _fun53554: for (var _fun53554_ip = 0;;) switch (_fun53554_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun53553_ip = 35;
-                    continue _fun53553
+                    _fun53554_ip = 35;
+                    continue _fun53554
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun53553_ip = 47;
-                    continue _fun53553
+                    _fun53554_ip = 47;
+                    continue _fun53554
                 }
             case 44:
                 var7 = 192;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TreasureChestSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4714, 6480, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4712, 6479, 2]);

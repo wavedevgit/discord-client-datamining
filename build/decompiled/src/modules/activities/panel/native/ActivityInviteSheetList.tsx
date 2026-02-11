@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var5.PressableOpacity;
         var5 = {};
         var9 = function() {
-            _fun111042: for (var _fun111042_ip = 0;;) switch (_fun111042_ip) {
+            _fun111032: for (var _fun111032_ip = 0;;) switch (_fun111032_ip) {
                 case 0:
                     var4 = _closure1_slot1;
                     var3 = _closure1_slot2;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var1.bind(var2)();
                     var1 = null;
                     if (!(var1 != var4)) {
-                        _fun111042_ip = 114;
-                        continue _fun111042
+                        _fun111032_ip = 114;
+                        continue _fun111032
                     }
                 case 67:
                     var3 = var4.navigate;
@@ -357,4 +357,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 4692, 671, 8412, 1234, 8450, 4914, 3279, 3921, 3942, 14282, 4905, 4945, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 4690, 671, 8412, 1234, 8450, 4912, 3279, 3917, 3938, 14268, 4903, 4943, 2]);

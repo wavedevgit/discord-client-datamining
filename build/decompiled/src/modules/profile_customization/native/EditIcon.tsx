@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/profile_customization/native/EditIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80793: for (var _fun80793_ip = 0;;) switch (_fun80793_ip) {
+        _fun80753: for (var _fun80753_ip = 0;;) switch (_fun80753_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.style;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1.size;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun80793_ip = 29;
-                    continue _fun80793
+                    _fun80753_ip = 29;
+                    continue _fun80753
                 }
             case 25:
                 var6 = 'xs';
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[1] = var7;
                 var1[2] = var6;
                 var0 = function() { // Environment: var0
-                    _fun80794: for (var _fun80794_ip = 0;;) switch (_fun80794_ip) {
+                    _fun80754: for (var _fun80754_ip = 0;;) switch (_fun80754_ip) {
                         case 0:
                             var0 = {};
                             var1 = _closure2_slot2;
@@ -112,14 +112,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot1;
                             var3 = 'sm';
                             if (!(var3 !== var4)) {
-                                _fun80794_ip = 47;
-                                continue _fun80794
+                                _fun80754_ip = 47;
+                                continue _fun80754
                             }
                         case 35:
                             var3 = _closure2_slot2;
                             var3 = var3.xs;
-                            _fun80794_ip = 57;
-                            continue _fun80794;
+                            _fun80754_ip = 57;
+                            continue _fun80754;
                         case 47:
                             var4 = _closure2_slot2;
                             var3 = var4.sm;

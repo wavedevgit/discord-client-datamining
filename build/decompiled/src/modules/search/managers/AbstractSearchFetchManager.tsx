@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'cancel';
         var0.key = var5;
         var5 = function arg0() {
-            _fun72519: for (var _fun72519_ip = 0;;) switch (_fun72519_ip) {
+            _fun72525: for (var _fun72525_ip = 0;;) switch (_fun72525_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.searchFetchers;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var2)(var0);
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun72519_ip = 38;
-                        continue _fun72519
+                        _fun72525_ip = 38;
+                        continue _fun72525
                     }
                 case 28:
                     var0 = var1.cancel;

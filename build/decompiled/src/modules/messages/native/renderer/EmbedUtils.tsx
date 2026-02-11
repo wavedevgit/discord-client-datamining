@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getAssetUriForEmbed = var4;
     var2.SUPPORTED_VIDEO_PARTNERS = var3;
     var1 = function arg0() {
-        _fun55932: for (var _fun55932_ip = 0;;) switch (_fun55932_ip) {
+        _fun55937: for (var _fun55937_ip = 0;;) switch (_fun55937_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot1;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0 != var3;
                 var0 = '';
                 if (!var4) {
-                    _fun55932_ip = 31;
-                    continue _fun55932
+                    _fun55937_ip = 31;
+                    continue _fun55937
                 }
             case 28:
                 var0 = var3;

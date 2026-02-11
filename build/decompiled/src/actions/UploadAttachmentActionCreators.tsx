@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.update = var4;
     var4 = function arg0() {
-        _fun61928: for (var _fun61928_ip = 0;;) switch (_fun61928_ip) {
+        _fun61934: for (var _fun61934_ip = 0;;) switch (_fun61934_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.uploads;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.channelId = var5;
                 var5 = var8;
                 if (!var6) {
-                    _fun61928_ip = 94;
-                    continue _fun61928
+                    _fun61934_ip = 94;
+                    continue _fun61934
                 }
             case 77:
                 var7 = var8.map;

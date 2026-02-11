@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/creator_monetization_eligibility/guild_settings/useIsMFAEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun117129: for (var _fun117129_ip = 0;;) switch (_fun117129_ip) {
+        _fun117119: for (var _fun117119_ip = 0;;) switch (_fun117119_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 == var3;
                 if (var5) {
-                    _fun117129_ip = 113;
-                    continue _fun117129
+                    _fun117119_ip = 113;
+                    continue _fun117119
                 }
             case 107:
                 var4 = var3.mfaEnabled;

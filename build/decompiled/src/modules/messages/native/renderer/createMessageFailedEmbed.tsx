@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/createMessageFailedEmbed.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun56745: for (var _fun56745_ip = 0;;) switch (_fun56745_ip) {
+        _fun56750: for (var _fun56750_ip = 0;;) switch (_fun56750_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.uploaderFile;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0.colors;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun56745_ip = 145;
-                    continue _fun56745
+                    _fun56750_ip = 145;
+                    continue _fun56750
                 }
             case 26:
                 var0 = {};
@@ -71,12 +71,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.disableBackgroundColor = var2;
                 var2 = var4.failedMessageBodyTextColor;
                 var0.bodyTextColor = var2;
-                _fun56745_ip = 533;
-                continue _fun56745;
+                _fun56750_ip = 533;
+                continue _fun56750;
             case 145:
                 if (var1) {
-                    _fun56745_ip = 369;
-                    continue _fun56745
+                    _fun56750_ip = 369;
+                    continue _fun56750
                 }
             case 151:
                 var1 = {};
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = '';
                 var6 = 0;
                 if (!(var6 !== var8)) {
-                    _fun56745_ip = 343;
-                    continue _fun56745
+                    _fun56750_ip = 343;
+                    continue _fun56750
                 }
             case 277:
                 var6 = _closure1_slot0;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.attachmentsSize = var2;
                 var2 = var4.embedBodyTextColor;
                 var1.bodyTextColor = var2;
-                _fun56745_ip = 530;
-                continue _fun56745;
+                _fun56750_ip = 530;
+                continue _fun56750;
             case 369:
                 var2 = {};
                 var5 = _closure1_slot4;
@@ -209,4 +209,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createAutomodBlockedMessageEmbed = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6595, 660, 6723, 6872, 1234, 6873, 4008, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6594, 660, 6723, 6872, 1234, 6873, 4004, 2]);

@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/EndEventActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun66766: for (var _fun66766_ip = 0;;) switch (_fun66766_ip) {
+        _fun66772: for (var _fun66772_ip = 0;;) switch (_fun66772_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.channel;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var1;
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun66766_ip = 599;
-                    continue _fun66766
+                    _fun66772_ip = 599;
+                    continue _fun66772
                 }
             case 80:
                 var18 = function() {
@@ -266,4 +266,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1378, 660, 33, 1297, 671, 8137, 3279, 8259, 6525, 4888, 1234, 3942, 4885, 8157, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1378, 660, 33, 1297, 671, 8137, 3279, 8259, 6524, 4886, 1234, 3938, 4883, 8157, 2]);

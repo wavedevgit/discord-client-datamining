@@ -55,7 +55,7 @@ public final class AddReactionView extends LinearLayout {
 
     public static /* synthetic */ void configure$default(AddReactionView addReactionView, ReactionView.ReactionsTheme reactionsTheme, boolean z10, ReactAsset reactAsset, boolean z11, String str, int i10, Object obj) {
         if ((i10 & 4) != 0) {
-            reactAsset = ReactAsset.AddReaction;
+            reactAsset = ReactAsset.ReactionIcon;
         }
         ReactAsset reactAsset2 = reactAsset;
         if ((i10 & 8) != 0) {
@@ -110,7 +110,7 @@ public final class AddReactionView extends LinearLayout {
         SimpleDraweeView addReactionImage = this.binding.addReactionImage;
         Intrinsics.checkNotNullExpressionValue(addReactionImage, "addReactionImage");
         if (z10) {
-            imageAsset = ReactAsset.AddBurstReaction;
+            imageAsset = ReactAsset.SuperReactionIcon;
         }
         ReactAssetUtilsKt.setReactAsset(addReactionImage, imageAsset);
         SimpleDraweeView addReactionImage2 = this.binding.addReactionImage;

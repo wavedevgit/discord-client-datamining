@@ -79,7 +79,7 @@ public final class ObscureOverlayView extends FrameLayout implements SpoilerView
         Intrinsics.checkNotNullParameter(onHide, "onHide");
         handleRevealedState(z10);
         this.binding.blurView.setupWith(parent).g(24.0f).a(Color.argb(80, 0, 0, 0)).d(parent.getBackground()).c(true);
-        this.binding.hideButton.configure(ReactAsset.HideMedia, I18nMessage.OBSCURED_CONTENT_HIDE_CONTENT_ALT, new Function0() { // from class: com.discord.chat.presentation.message.view.w2
+        this.binding.hideButton.configure(ReactAsset.EyeSlashIcon, I18nMessage.OBSCURED_CONTENT_HIDE_CONTENT_ALT, new Function0() { // from class: com.discord.chat.presentation.message.view.w2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit configure$lambda$2;
@@ -87,7 +87,7 @@ public final class ObscureOverlayView extends FrameLayout implements SpoilerView
                 return configure$lambda$2;
             }
         });
-        this.binding.revealButton.configure(ReactAsset.ShowMedia, I18nMessage.OBSCURED_CONTENT_SHOW_CONTENT_ALT, onReveal);
+        this.binding.revealButton.configure(ReactAsset.EyeIcon, I18nMessage.OBSCURED_CONTENT_SHOW_CONTENT_ALT, onReveal);
         this.binding.descriptionLabel.setText(header);
         this.binding.descriptionLabel.setContentDescription(description);
     }
@@ -175,7 +175,7 @@ public final class ObscureOverlayView extends FrameLayout implements SpoilerView
         }, 1, null);
         SimpleDraweeView simpleDraweeView = inflate.mediaWarningIcon;
         Intrinsics.checkNotNull(simpleDraweeView);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.MediaChannelNSFW);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.ImageWarningIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getWhite()));
         ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).w(0);
         TextView descriptionLabel = inflate.descriptionLabel;

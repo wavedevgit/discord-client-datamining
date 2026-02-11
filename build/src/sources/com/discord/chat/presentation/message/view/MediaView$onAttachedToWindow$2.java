@@ -10,7 +10,7 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
-@kotlin.coroutines.jvm.internal.e(c = "com.discord.chat.presentation.message.view.MediaView$onAttachedToWindow$2", f = "MediaView.kt", l = {165}, m = "invokeSuspend")
+@kotlin.coroutines.jvm.internal.e(c = "com.discord.chat.presentation.message.view.MediaView$onAttachedToWindow$2", f = "MediaView.kt", l = {166}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 final class MediaView$onAttachedToWindow$2 extends kotlin.coroutines.jvm.internal.k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int label;

@@ -56,12 +56,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var3.bind(var0)(var2);
         var2 = var3.wait;
         var1 = function() { // Environment: var1
-            _fun28285: for (var _fun28285_ip = 0;;) switch (_fun28285_ip) {
+            _fun28282: for (var _fun28282_ip = 0;;) switch (_fun28282_ip) {
                 case 0:
                     var0 = _closure2_slot6;
                     if (var0) {
-                        _fun28285_ip = 68;
-                        continue _fun28285
+                        _fun28282_ip = 68;
+                        continue _fun28282
                     }
                 case 10:
                     var2 = _closure1_slot0;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var1;
     var3 = {};
     var7 = function arg0, arg1, arg2, arg3() {
-        _fun28286: for (var _fun28286_ip = 0;;) switch (_fun28286_ip) {
+        _fun28283: for (var _fun28283_ip = 0;;) switch (_fun28283_ip) {
             case 0:
                 var4 = arg0;
                 var1 = arg1;
@@ -123,14 +123,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.Promise;
                 var1 = var4 instanceof var1;
                 if (var1) {
-                    _fun28286_ip = 49;
-                    continue _fun28286
+                    _fun28283_ip = 49;
+                    continue _fun28283
                 }
             case 41:
                 var1 = undefined;
                 var2 = var4.bind(var1)();
-                _fun28286_ip = 64;
-                continue _fun28286;
+                _fun28283_ip = 64;
+                continue _fun28283;
             case 49:
                 var3 = var4.then;
                 var1 = function(arg0) { // Environment: var0
@@ -142,18 +142,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 64:
                 var1 = var2.then;
                 var0 = function(arg0) { // Environment: var0
-                    _fun28288: for (var _fun28288_ip = 0;;) switch (_fun28288_ip) {
+                    _fun28285: for (var _fun28285_ip = 0;;) switch (_fun28285_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             var0 = null;
                             if (!(var0 == var1)) {
-                                _fun28288_ip = 17;
-                                continue _fun28288
+                                _fun28285_ip = 17;
+                                continue _fun28285
                             }
                         case 13:
                             var9 = {};
-                            _fun28288_ip = 21;
-                            continue _fun28288;
+                            _fun28285_ip = 21;
+                            continue _fun28285;
                         case 17:
                             var9 = _closure2_slot1;
                         case 21:

@@ -77,17 +77,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var7.bind(var8)(var2);
         var4 = var5.useDerivedValue;
         var2 = function() {
-            _fun69822: for (var _fun69822_ip = 0;;) switch (_fun69822_ip) {
+            _fun69828: for (var _fun69828_ip = 0;;) switch (_fun69828_ip) {
                 case 0:
                     var0 = _closure2_slot1;
                     if (var0) {
-                        _fun69822_ip = 16;
-                        continue _fun69822
+                        _fun69828_ip = 16;
+                        continue _fun69828
                     }
                 case 10:
                     var0 = _closure2_slot0;
-                    _fun69822_ip = 35;
-                    continue _fun69822;
+                    _fun69828_ip = 35;
+                    continue _fun69828;
                 case 16:
                     var3 = _closure2_slot2;
                     var2 = 10;
@@ -151,4 +151,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useStageActionBarAnimation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3721, 8677, 8559, 1568, 4107, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3717, 8677, 8559, 1568, 4103, 2]);

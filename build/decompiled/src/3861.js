@@ -1,194 +1,101 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var7 = metroImportDefault;
+    var3 = require;
     var2 = exports;
-    var5 = dependencyMap;
-    var0 = function() {
-        _fun34868: for (var _fun34868_ip = 0;;) switch (_fun34868_ip) {
-            case 0:
-                var0 = _closure1_slot2;
-                var2 = var0.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
-                var3 = null;
-                var5 = var3 == var2;
-                var0 = undefined;
-                if (var5) {
-                    _fun34868_ip = 64;
-                    continue _fun34868
-                }
-            case 24:
-                var5 = var2.A;
-                var2 = var3 == var5;
-                var0 = undefined;
-                if (var2) {
-                    _fun34868_ip = 64;
-                    continue _fun34868
-                }
-            case 39:
-                var2 = var5.getOwner;
-                var2 = var3 == var2;
-                var0 = undefined;
-                if (var2) {
-                    _fun34868_ip = 64;
-                    continue _fun34868
-                }
-            case 54:
-                var2 = var5.getOwner;
-                var0 = var2.bind(var5)();
-            case 64:
-                if (var0) {
-                    _fun34868_ip = 111;
-                    continue _fun34868
-                }
-            case 67:
-                var2 = _closure1_slot2;
-                var5 = var2.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-                var6 = var3 == var5;
-                var2 = undefined;
-                if (var6) {
-                    _fun34868_ip = 108;
-                    continue _fun34868
-                }
-            case 88:
-                var5 = var5.ReactCurrentOwner;
-                var6 = var3 == var5;
-                var2 = undefined;
-                if (var6) {
-                    _fun34868_ip = 108;
-                    continue _fun34868
-                }
-            case 103:
-                var2 = var5.current;
-            case 108:
-                var0 = var2;
-            case 111:
-                if (var0) {
-                    _fun34868_ip = 158;
-                    continue _fun34868
-                }
-            case 114:
-                var1 = _closure1_slot2;
-                var2 = var1.__SERVER_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
-                var5 = var3 == var2;
-                var1 = undefined;
-                if (var5) {
-                    _fun34868_ip = 155;
-                    continue _fun34868
-                }
-            case 135:
-                var2 = var2.ReactCurrentOwner;
-                var3 = var3 == var2;
-                var1 = undefined;
-                if (var3) {
-                    _fun34868_ip = 155;
-                    continue _fun34868
-                }
-            case 150:
-                var1 = var2.current;
-            case 155:
-                var0 = var1;
-            case 158:
-                return var0;
-        }
-    };
-    var _closure1_slot5 = var0;
-    var0 = ['ref'];
-    var _closure1_slot0 = var0;
+    var4 = dependencyMap;
     var0 = global;
-    var8 = var0.Object;
-    var6 = var8.defineProperty;
-    var3 = {};
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
     var0 = true;
-    var3.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var8)(var2, var0, var3);
+    var0 = var5.bind(var6)(var2, var0, var1);
     var0 = 0;
-    var3 = var5[var0];
+    var1 = var4[var0];
     var0 = undefined;
-    var3 = var7.bind(var0)(var3);
-    var _closure1_slot1 = var3;
-    var3 = 1;
-    var6 = var5[var3];
-    var6 = var7.bind(var0)(var6);
-    var _closure1_slot2 = var6;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.forwardRef;
-    var _closure1_slot3 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var4 = var4.bind(var0)(var3);
-    var3 = var4.isReact19;
-    var3 = var3.bind(var4)();
-    var _closure1_slot4 = var3;
-    var3 = function() {
-        var1 = _closure1_slot5;
-        var0 = undefined;
-        var0 = var1.bind(var0)();
-        var0 = !var0;
-        var0 = !var0;
-        return var0;
-    };
-    var2.isReactRendering = var3;
-    var3 = function() {
-        _fun34870: for (var _fun34870_ip = 0;;) switch (_fun34870_ip) {
-            case 0:
-                var1 = _closure1_slot5;
-                var0 = undefined;
-                var2 = var1.bind(var0)();
-                var0 = var2;
-                if (!var0) {
-                    _fun34870_ip = 37;
-                    continue _fun34870
-                }
-            case 19:
-                var1 = null;
-                var1 = var1 != var2;
-                if (!var1) {
-                    _fun34870_ip = 34;
-                    continue _fun34870
-                }
-            case 28:
-                var1 = var2.alternate;
-            case 34:
-                var0 = !var1;
-            case 37:
-                return var0;
-        }
-    };
-    var2.isFirstReactRender = var3;
-    var1 = function arg0() {
-        _fun34871: for (var _fun34871_ip = 0;;) switch (_fun34871_ip) {
-            case 0:
-                var3 = arg0;
-                var _closure2_slot0 = var3;
-                var2 = _closure1_slot4;
-                if (var2) {
-                    _fun34871_ip = 32;
-                    continue _fun34871
-                }
-            case 19:
-                var2 = _closure1_slot3;
-                var0 = undefined;
-                var0 = var2.bind(var0)(var3);
-                _fun34871_ip = 37;
-                continue _fun34871;
-            case 32:
-                var0 = function(arg0) { // Environment: var1
-                    var4 = arg0;
-                    var3 = var4.ref;
-                    var1 = _closure1_slot1;
-                    var0 = _closure1_slot0;
-                    var2 = undefined;
-                    var1 = var1.bind(var2)(var4, var0);
-                    var0 = _closure2_slot0;
-                    var0 = var0.bind(var2)(var1, var3);
-                    return var0;
-                };
-            case 37:
-                return var0;
-        }
-    };
-    var2.componentWithRef = var1;
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedGestureHandler;
+    var2.useAnimatedGestureHandler = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedKeyboard;
+    var2.useAnimatedKeyboard = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedProps;
+    var2.useAnimatedProps = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedReaction;
+    var2.useAnimatedReaction = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedRef;
+    var2.useAnimatedRef = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedScrollHandler;
+    var2.useAnimatedScrollHandler = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedSensor;
+    var2.useAnimatedSensor = var1;
+    var1 = 7;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedStyle;
+    var2.useAnimatedStyle = var1;
+    var1 = 8;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useComposedEventHandler;
+    var2.useComposedEventHandler = var1;
+    var1 = 9;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useDerivedValue;
+    var2.useDerivedValue = var1;
+    var1 = 10;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useEvent;
+    var2.useEvent = var1;
+    var1 = 11;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useFrameCallback;
+    var2.useFrameCallback = var1;
+    var1 = 12;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useHandler;
+    var2.useHandler = var1;
+    var1 = 13;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useReducedMotion;
+    var2.useReducedMotion = var1;
+    var1 = 14;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useScrollViewOffset;
+    var2.useScrollViewOffset = var1;
+    var1 = 15;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useSharedValue;
+    var2.useSharedValue = var1;
+    var1 = 16;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useWorkletCallback;
+    var2.useWorkletCallback = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 3725]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3862, 3866, 3867, 3871, 3872, 3873, 3874, 3868, 3875, 3876, 3865, 3877, 3863, 3880, 3881, 3870, 3882]);

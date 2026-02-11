@@ -401,65 +401,65 @@ public final class SystemMessageView extends ChatListConstraintLayout implements
             case 6:
             case 7:
             case 8:
-                return v.a(ReactAsset.ArrowForward, Integer.valueOf(this.greenIconColor));
+                return v.a(ReactAsset.ArrowLargeRightIcon, Integer.valueOf(this.greenIconColor));
             case 9:
             case 10:
-                return v.a(ReactAsset.ArrowBack, Integer.valueOf(this.redIconColor));
+                return v.a(ReactAsset.ArrowLargeLeftIcon, Integer.valueOf(this.redIconColor));
             case 11:
             case 12:
             case 13:
             case 14:
-                return v.a(ReactAsset.Pencil, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.PencilIcon, Integer.valueOf(this.normalIconColor));
             case 15:
-                return v.a(ReactAsset.AddReaction, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.ReactionIcon, Integer.valueOf(this.normalIconColor));
             case 16:
-                return v.a(ReactAsset.Pin, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.PinIcon, Integer.valueOf(this.normalIconColor));
             case 17:
-                return v.a(ReactAsset.Ticket, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.TicketIcon, Integer.valueOf(this.normalIconColor));
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
             case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
             case 20:
             case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                return v.a(ReactAsset.MemberListBadge, Integer.valueOf(this.pinkIconColor));
+                return v.a(ReactAsset.BoostGemIcon, Integer.valueOf(this.pinkIconColor));
             case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                return v.a(ReactAsset.AnnouncementThread, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.AnnouncementsIcon, Integer.valueOf(this.normalIconColor));
             case 23:
-                return v.a(ReactAsset.Close, Integer.valueOf(this.redIconColor));
+                return v.a(ReactAsset.XSmallIcon, Integer.valueOf(this.redIconColor));
             case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                return v.a(ReactAsset.Check, Integer.valueOf(this.greenIconColor));
+                return v.a(ReactAsset.CheckmarkSmallIcon, Integer.valueOf(this.greenIconColor));
             case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
             case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
-                return v.a(ReactAsset.Alert, Integer.valueOf(this.warnIconColor));
+                return v.a(ReactAsset.CircleErrorIcon, Integer.valueOf(this.warnIconColor));
             case 27:
             case 28:
-                return v.a(ReactAsset.Thread, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.ThreadIcon, Integer.valueOf(this.normalIconColor));
             case 29:
-                return v.a(ReactAsset.StageChannel, Integer.valueOf(this.greenIconColor));
+                return v.a(ReactAsset.StageIcon, Integer.valueOf(this.greenIconColor));
             case 30:
             case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
-                return v.a(ReactAsset.StageChannel, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.StageIcon, Integer.valueOf(this.normalIconColor));
             case 32:
-                return v.a(ReactAsset.MoveToSpeaker, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.MicrophoneArrowRightIcon, Integer.valueOf(this.normalIconColor));
             case ChatViewRecyclerTypes.AUTO_MODERATION_NOTIFICATION_EMBED /* 33 */:
-                return v.a(ReactAsset.RaisedHand, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.HandRequestSpeakIcon, Integer.valueOf(this.normalIconColor));
             case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
-                return v.a(ReactAsset.LockClosed, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.LockIcon, Integer.valueOf(this.normalIconColor));
             case ChatViewRecyclerTypes.INFO_LINK /* 35 */:
-                return v.a(ReactAsset.LockOpen, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.LockUnlockedIcon, Integer.valueOf(this.normalIconColor));
             case ChatViewRecyclerTypes.SAFETY_POLICY_NOTICE /* 36 */:
                 return v.a(ReactAsset.PollsIcon, Integer.valueOf(this.normalIconColor));
             case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
-                return v.a(ReactAsset.Refresh, Integer.valueOf(this.greenIconColor));
+                return v.a(ReactAsset.RefreshIcon, Integer.valueOf(this.greenIconColor));
             case ChatViewRecyclerTypes.POLL_IMAGE_ONLY /* 38 */:
-                return v.a(ReactAsset.GameController, Integer.valueOf(this.mutedIconColor));
+                return v.a(ReactAsset.GameControllerIcon, Integer.valueOf(this.mutedIconColor));
             case ChatViewRecyclerTypes.SAFETY_SYSTEM_NOTIFICATION /* 39 */:
-                return v.a(ReactAsset.Check, Integer.valueOf(this.greenIconColor));
+                return v.a(ReactAsset.CheckmarkSmallIcon, Integer.valueOf(this.greenIconColor));
             case 40:
-                return v.a(ReactAsset.Close, Integer.valueOf(this.redIconColor));
+                return v.a(ReactAsset.XSmallIcon, Integer.valueOf(this.redIconColor));
             case 41:
-                return v.a(ReactAsset.ArrowBack, Integer.valueOf(this.normalIconColor));
+                return v.a(ReactAsset.ArrowLargeLeftIcon, Integer.valueOf(this.normalIconColor));
             case 42:
-                return v.a(ReactAsset.Speaker, Integer.valueOf(this.greenIconColor));
+                return v.a(ReactAsset.VoiceNormalIcon, Integer.valueOf(this.greenIconColor));
             default:
                 throw new IllegalArgumentException("Unhandled message type: " + messageType);
         }

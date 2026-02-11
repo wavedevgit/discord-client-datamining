@@ -16,15 +16,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.bind(var2)(var0);
                 var1 = var2.filter;
                 var0 = function(arg0) { // Environment: var0
-                    _fun59526: for (var _fun59526_ip = 0;;) switch (_fun59526_ip) {
+                    _fun59532: for (var _fun59532_ip = 0;;) switch (_fun59532_ip) {
                         case 0:
                             var2 = arg0;
                             var1 = var2.length;
                             var0 = 0;
                             var0 = var1 > var0;
                             if (!var0) {
-                                _fun59526_ip = 25;
-                                continue _fun59526
+                                _fun59532_ip = 25;
+                                continue _fun59532
                             }
                         case 17:
                             var1 = ',';
@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var1.getNumberOfUrlSegments = var2;
             var2 = function arg0() {
-                _fun59527: for (var _fun59527_ip = 0;;) switch (_fun59527_ip) {
+                _fun59533: for (var _fun59533_ip = 0;;) switch (_fun59533_ip) {
                     case 0:
                         var0 = arg0;
                         var5 = var0.protocol;
@@ -48,8 +48,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = '';
                         var2 = var3;
                         if (!var5) {
-                            _fun59527_ip = 56;
-                            continue _fun59527
+                            _fun59533_ip = 56;
+                            continue _fun59533
                         }
                     case 31:
                         var0 = global;
@@ -60,8 +60,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 56:
                         var1 = var7;
                         if (!var1) {
-                            _fun59527_ip = 143;
-                            continue _fun59527
+                            _fun59533_ip = 143;
+                            continue _fun59533
                         }
                     case 62:
                         var6 = var7.replace;
@@ -76,8 +76,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var5.bind(var6)(var0, var3);
                     case 143:
                         if (var1) {
-                            _fun59527_ip = 149;
-                            continue _fun59527
+                            _fun59533_ip = 149;
+                            continue _fun59533
                         }
                     case 146:
                         var1 = var3;
@@ -91,12 +91,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var1.getSanitizedUrlString = var2;
             var2 = function arg0() {
-                _fun59528: for (var _fun59528_ip = 0;;) switch (_fun59528_ip) {
+                _fun59534: for (var _fun59534_ip = 0;;) switch (_fun59534_ip) {
                     case 0:
                         var2 = arg0;
                         if (var2) {
-                            _fun59528_ip = 10;
-                            continue _fun59528
+                            _fun59534_ip = 10;
+                            continue _fun59534
                         }
                     case 6:
                         var0 = {};
@@ -106,8 +106,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = /^(([^:\/?#]+):)?(\\/\\ / ([ ^ \/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/;
                                 var4 = var1.bind(var2)(var0);
                                 if (var4) {
-                                    _fun59528_ip = 42;
-                                    continue _fun59528
+                                    _fun59534_ip = 42;
+                                    continue _fun59534
                                 }
                                 case 38:
                                 var0 = {};
@@ -116,8 +116,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var0 = 6;
                                 var3 = var4[var0];
                                 if (var3) {
-                                    _fun59528_ip = 56;
-                                    continue _fun59528
+                                    _fun59534_ip = 56;
+                                    continue _fun59534
                                 }
                                 case 52:
                                 var3 = '';
@@ -125,8 +125,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var0 = 8;
                                 var2 = var4[var0];
                                 if (var2) {
-                                    _fun59528_ip = 70;
-                                    continue _fun59528
+                                    _fun59534_ip = 70;
+                                    continue _fun59534
                                 }
                                 case 66:
                                 var2 = '';

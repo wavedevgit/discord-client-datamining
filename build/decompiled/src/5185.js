@@ -1,29 +1,50 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function arg0() {
+    var _closure1_slot0 = var0;
+    var1 = function() {
         _fun46264: for (var _fun46264_ip = 0;;) switch (_fun46264_ip) {
             case 0:
-                var0 = arg0;
-            case 3: // try_start_0
+            case 2: // try_start_0
                 var1 = global;
-                var1 = var1.Function;
-                var3 = var1.toString;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
                 var2 = var3.call;
-                var1 = var0;
-                var3 = var2.bind(var3)(var1);
-                var2 = var3.indexOf;
-                var1 = '[native code]';
-                var2 = var2.bind(var3)(var1);
-            case 46: // try_end0
-                var1 = -1;
-                var1 = var1 !== var2;
-                return var1;
-            case 58: // catch_target0
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun46264_ip = 74;
+                continue _fun46264;
+            case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
-                var1 = 'function';
-                var0 = typeof var0;
-                var0 = var1 === var0;
+            case 74:
+                var1 = _closure1_slot0;
+                var0 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                var1.exports = var0;
+                var2 = var1.exports;
+                var0 = true;
+                var2.__esModule = var0;
+                var0 = var1.exports;
+                var1 = var1.exports;
+                var0.default = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
                 return var0;
         }
     };

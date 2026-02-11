@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/connections/two_way_link/TwoWayLinkLanding.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun48240: for (var _fun48240_ip = 0;;) switch (_fun48240_ip) {
+        _fun48236: for (var _fun48236_ip = 0;;) switch (_fun48236_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.platformType;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var0;
                 var0 = function() { // Environment: var15
-                    _fun48241: for (var _fun48241_ip = 0;;) switch (_fun48241_ip) {
+                    _fun48237: for (var _fun48237_ip = 0;;) switch (_fun48237_ip) {
                         case 0:
                             var3 = _closure1_slot5;
                             var2 = var3.getAccount;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1 == var0;
                             var1 = undefined;
                             if (var2) {
-                                _fun48241_ip = 43;
-                                continue _fun48241
+                                _fun48237_ip = 43;
+                                continue _fun48237
                             }
                         case 37:
                             var1 = var0.twoWayLink;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var20 = var8 != var21;
                 if (!var20) {
-                    _fun48240_ip = 232;
-                    continue _fun48240
+                    _fun48236_ip = 232;
+                    continue _fun48236
                 }
             case 229:
                 var20 = var21;
@@ -167,14 +167,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.style = var21;
                 var21 = var23;
                 if (!var24) {
-                    _fun48240_ip = 324;
-                    continue _fun48240
+                    _fun48236_ip = 324;
+                    continue _fun48236
                 }
             case 314:
                 var21 = var23;
                 if (!(var8 != var22)) {
-                    _fun48240_ip = 324;
-                    continue _fun48240
+                    _fun48236_ip = 324;
+                    continue _fun48236
                 }
             case 321:
                 var21 = var22;
@@ -260,8 +260,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8 != var18;
                 var8 = null;
                 if (!var9) {
-                    _fun48240_ip = 593;
-                    continue _fun48240
+                    _fun48236_ip = 593;
+                    continue _fun48236
                 }
             case 473:
                 var13 = _closure1_slot6;
@@ -352,4 +352,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TwoWayLinkLanding = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4529, 33, 1297, 5394, 566, 3942, 4910, 5395, 1234, 4746, 4090, 4094, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4525, 33, 1297, 5392, 566, 3938, 4908, 5393, 1234, 4744, 4086, 4090, 2]);

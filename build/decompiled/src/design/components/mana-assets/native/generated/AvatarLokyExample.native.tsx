@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/AvatarLokyExample.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52902: for (var _fun52902_ip = 0;;) switch (_fun52902_ip) {
+        _fun52903: for (var _fun52903_ip = 0;;) switch (_fun52903_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52902_ip = 32;
-                    continue _fun52902
+                    _fun52903_ip = 32;
+                    continue _fun52903
                 }
             case 29:
                 var9 = 100;
             case 32:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52902_ip = 44;
-                    continue _fun52902
+                    _fun52903_ip = 44;
+                    continue _fun52903
                 }
             case 41:
                 var7 = 100;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AvatarLokyExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4714, 6046, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4712, 6045, 2]);

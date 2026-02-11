@@ -164,15 +164,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var3)(var1);
         var2 = var3.then;
         var1 = function(arg0) { // Environment: var1
-            _fun69813: for (var _fun69813_ip = 0;;) switch (_fun69813_ip) {
+            _fun69819: for (var _fun69819_ip = 0;;) switch (_fun69819_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = var1.length;
                     var4 = '';
                     var0 = 0;
                     if (!(var0 !== var2)) {
-                        _fun69813_ip = 22;
-                        continue _fun69813
+                        _fun69819_ip = 22;
+                        continue _fun69819
                     }
                 case 18:
                     var4 = var1[var0];

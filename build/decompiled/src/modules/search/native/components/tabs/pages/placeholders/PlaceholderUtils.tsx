@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/search/native/components/tabs/pages/placeholders/PlaceholderUtils.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun106508: for (var _fun106508_ip = 0;;) switch (_fun106508_ip) {
+        _fun106498: for (var _fun106498_ip = 0;;) switch (_fun106498_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.numColumns;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.placeholderCount;
                 var0 = 0;
                 if (!(var0 !== var2)) {
-                    _fun106508_ip = 39;
-                    continue _fun106508
+                    _fun106498_ip = 39;
+                    continue _fun106498
                 }
             case 27:
                 var1 = var1 % var3;

@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'https://my.account.sony.com';
     var2.PLAYSTATION_LINK_DEST_ORIGIN = var7;
     var7 = function(arg0) { // Environment: var7
-        _fun48273: for (var _fun48273_ip = 0;;) switch (_fun48273_ip) {
+        _fun48269: for (var _fun48269_ip = 0;;) switch (_fun48269_ip) {
             case 0:
                 var1 = arg0;
                 var4 = var1.guildId;
@@ -215,8 +215,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.deafened = var3;
                 var3 = null;
                 if (!(var3 != var1)) {
-                    _fun48273_ip = 121;
-                    continue _fun48273
+                    _fun48269_ip = 121;
+                    continue _fun48269
                 }
             case 115:
                 var2.nonce = var1;
@@ -244,4 +244,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'console error alert';
     var2.GAME_CONSOLE_ALERT_MODAL_LOCATION = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3340, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3336, 2]);

@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ArrowSmallLeftIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun62744: for (var _fun62744_ip = 0;;) switch (_fun62744_ip) {
+        _fun62750: for (var _fun62750_ip = 0;;) switch (_fun62750_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun62744_ip = 53;
-                    continue _fun62744
+                    _fun62750_ip = 53;
+                    continue _fun62750
                 }
             case 19:
                 var1 = _closure1_slot1;

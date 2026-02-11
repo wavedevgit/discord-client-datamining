@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun118156: for (var _fun118156_ip = 0;;) switch (_fun118156_ip) {
+        _fun118147: for (var _fun118147_ip = 0;;) switch (_fun118147_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun118156_ip = 76;
-                continue _fun118156;
+                _fun118147_ip = 76;
+                continue _fun118147;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -48,23 +48,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var0 = function() {
-        _fun118159: for (var _fun118159_ip = 0;;) switch (_fun118159_ip) {
+        _fun118150: for (var _fun118150_ip = 0;;) switch (_fun118150_ip) {
             case 0:
                 var1 = _closure1_slot7;
                 var3 = var1.NSUserDefaultsBridge;
                 var4 = null;
                 var1 = var4 == var3;
                 if (var1) {
-                    _fun118159_ip = 32;
-                    continue _fun118159
+                    _fun118150_ip = 32;
+                    continue _fun118150
                 }
             case 22:
                 var2 = var3.setShouldClearChannelNotificationsOnPushAck;
                 var1 = var4 == var2;
             case 32:
                 if (var1) {
-                    _fun118159_ip = 91;
-                    continue _fun118159
+                    _fun118150_ip = 91;
+                    continue _fun118150
                 }
             case 35:
                 var2 = var3.setShouldClearChannelNotificationsOnPushAck;
@@ -85,16 +85,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.NSUserDefaultsBridge;
                 var1 = var4 == var3;
                 if (var1) {
-                    _fun118159_ip = 118;
-                    continue _fun118159
+                    _fun118150_ip = 118;
+                    continue _fun118150
                 }
             case 108:
                 var2 = var3.setShouldEnableAnimatedReactionUpdates;
                 var1 = var4 == var2;
             case 118:
                 if (var1) {
-                    _fun118159_ip = 177;
-                    continue _fun118159
+                    _fun118150_ip = 177;
+                    continue _fun118150
                 }
             case 121:
                 var2 = var3.setShouldEnableAnimatedReactionUpdates;
@@ -115,16 +115,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.NSUserDefaultsBridge;
                 var1 = var4 == var3;
                 if (var1) {
-                    _fun118159_ip = 204;
-                    continue _fun118159
+                    _fun118150_ip = 204;
+                    continue _fun118150
                 }
             case 194:
                 var2 = var3.setShouldFixPushNotificationRawPayload;
                 var1 = var4 == var2;
             case 204:
                 if (var1) {
-                    _fun118159_ip = 250;
-                    continue _fun118159
+                    _fun118150_ip = 250;
+                    continue _fun118150
                 }
             case 207:
                 var2 = var3.setShouldFixPushNotificationRawPayload;
@@ -142,16 +142,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.NSUserDefaultsBridge;
                 var1 = var4 == var2;
                 if (var1) {
-                    _fun118159_ip = 277;
-                    continue _fun118159
+                    _fun118150_ip = 277;
+                    continue _fun118150
                 }
             case 267:
                 var3 = var2.setShouldEnableYYTextReplacement;
                 var1 = var4 == var3;
             case 277:
                 if (var1) {
-                    _fun118159_ip = 336;
-                    continue _fun118159
+                    _fun118150_ip = 336;
+                    continue _fun118150
                 }
             case 280:
                 var1 = var2.setShouldEnableYYTextReplacement;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var2 = function arg0() {
-            _fun118162: for (var _fun118162_ip = 0;;) switch (_fun118162_ip) {
+            _fun118153: for (var _fun118153_ip = 0;;) switch (_fun118153_ip) {
                 case 0:
                     var3 = this;
                     var12 = 0;
@@ -237,14 +237,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun118162_ip = 84;
-                        continue _fun118162
+                        _fun118153_ip = 84;
+                        continue _fun118153
                     }
                 case 71:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var9);
-                    _fun118162_ip = 118;
-                    continue _fun118162;
+                    _fun118153_ip = 118;
+                    continue _fun118153;
                 case 84:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -263,8 +263,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.isIOS;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun118162_ip = 204;
-                        continue _fun118162
+                        _fun118153_ip = 204;
+                        continue _fun118153
                     }
                 case 157:
                     var3 = _closure1_slot0;
@@ -274,21 +274,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.isAndroid;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun118162_ip = 198;
-                        continue _fun118162
+                        _fun118153_ip = 198;
+                        continue _fun118153
                     }
                 case 187:
                     var1 = function() { // Environment: var1
                         var0 = undefined;
                         return var0;
                     };
-                    _fun118162_ip = 202;
-                    continue _fun118162;
+                    _fun118153_ip = 202;
+                    continue _fun118153;
                 case 198:
                     var1 = _closure1_slot10;
                 case 202:
-                    _fun118162_ip = 208;
-                    continue _fun118162;
+                    _fun118153_ip = 208;
+                    continue _fun118153;
                 case 204:
                     var1 = _closure1_slot9;
                 case 208:
@@ -327,4 +327,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 27, 15057, 15058, 4265, 15059, 478, 4309, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 27, 15045, 15046, 4261, 15047, 478, 4305, 2]);

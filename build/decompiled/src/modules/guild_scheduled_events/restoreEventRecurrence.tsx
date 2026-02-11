@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/restoreEventRecurrence.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun68159: for (var _fun68159_ip = 0;;) switch (_fun68159_ip) {
+        _fun68165: for (var _fun68165_ip = 0;;) switch (_fun68165_ip) {
             case 0:
                 var0 = arg0;
                 var5 = arg1;
@@ -33,13 +33,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.scheduled_end_time;
                 var0 = null;
                 if (!(var0 == var7)) {
-                    _fun68159_ip = 34;
-                    continue _fun68159
+                    _fun68165_ip = 34;
+                    continue _fun68165
                 }
             case 30:
                 if (!(var0 != var6)) {
-                    _fun68159_ip = 104;
-                    continue _fun68159
+                    _fun68165_ip = 104;
+                    continue _fun68165
                 }
             case 34:
                 var2 = _closure1_slot0;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var4;
                 var8 = var3;
                 var0 = var12[var1](var11, var10, var9, var8, var7);
-                _fun68159_ip = 141;
-                continue _fun68159;
+                _fun68165_ip = 141;
+                continue _fun68165;
             case 104:
                 var6 = _closure1_slot0;
                 var2 = _closure1_slot1;

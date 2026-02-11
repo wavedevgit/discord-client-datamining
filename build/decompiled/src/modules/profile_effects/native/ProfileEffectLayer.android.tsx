@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun57484: for (var _fun57484_ip = 0;;) switch (_fun57484_ip) {
+        _fun57489: for (var _fun57489_ip = 0;;) switch (_fun57489_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.layerConfig;
@@ -59,19 +59,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var9;
                 var2[1] = var15;
                 var1 = function() { // Environment: var1
-                    _fun57485: for (var _fun57485_ip = 0;;) switch (_fun57485_ip) {
+                    _fun57490: for (var _fun57490_ip = 0;;) switch (_fun57490_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var1 = _closure2_slot1;
                             if (var0) {
-                                _fun57485_ip = 26;
-                                continue _fun57485
+                                _fun57490_ip = 26;
+                                continue _fun57490
                             }
                         case 14:
                             var0 = var1.stop;
                             var0 = var0.bind(var1)();
-                            _fun57485_ip = 49;
-                            continue _fun57485;
+                            _fun57490_ip = 49;
+                            continue _fun57490;
                         case 26:
                             var2 = var1.seek;
                             var0 = 0;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.height = var8;
                 var8 = 0;
                 if (!var9) {
-                    _fun57484_ip = 231;
-                    continue _fun57484
+                    _fun57489_ip = 231;
+                    continue _fun57489
                 }
             case 228:
                 var8 = 1;

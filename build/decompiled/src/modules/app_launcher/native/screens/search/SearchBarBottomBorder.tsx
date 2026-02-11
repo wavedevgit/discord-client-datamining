@@ -54,15 +54,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/search/SearchBarBottomBorder.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun108308: for (var _fun108308_ip = 0;;) switch (_fun108308_ip) {
+        _fun108298: for (var _fun108298_ip = 0;;) switch (_fun108298_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.key;
                 var11 = var1.triggerScrollHeight;
                 var4 = undefined;
                 if (!(var11 === var4)) {
-                    _fun108308_ip = 25;
-                    continue _fun108308
+                    _fun108298_ip = 25;
+                    continue _fun108298
                 }
             case 22:
                 var11 = 1;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var12.bind(var4)(var7);
                 var7 = var9.useAnimatedStyle;
                 var0 = function() {
-                    _fun108311: for (var _fun108311_ip = 0;;) switch (_fun108311_ip) {
+                    _fun108301: for (var _fun108301_ip = 0;;) switch (_fun108301_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5 > var2;
                             var2 = 0;
                             if (!var5) {
-                                _fun108311_ip = 64;
-                                continue _fun108311
+                                _fun108301_ip = 64;
+                                continue _fun108301
                             }
                         case 61:
                             var2 = 1;
@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePinnedSearchBarBottomBorder = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 3721, 4091, 4097, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 3717, 4087, 4093, 2]);

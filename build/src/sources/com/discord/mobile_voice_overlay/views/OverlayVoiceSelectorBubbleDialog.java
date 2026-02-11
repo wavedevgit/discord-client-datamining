@@ -99,7 +99,7 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
             ColorUtilsKt.setTintColor(close, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()));
             SimpleDraweeView close2 = this.binding.close;
             Intrinsics.checkNotNullExpressionValue(close2, "close");
-            ReactAssetUtilsKt.setReactAsset(close2, ReactAsset.Close);
+            ReactAssetUtilsKt.setReactAsset(close2, ReactAsset.XSmallIcon);
         }
     }
 

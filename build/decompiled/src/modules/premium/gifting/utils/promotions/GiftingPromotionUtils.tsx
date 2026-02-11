@@ -6,17 +6,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
-    var _closure1_slot1 = var7;
-    var _closure1_slot2 = var6;
+    var _closure1_slot1 = var6;
     var3 = function arg0() {
-        _fun75363: for (var _fun75363_ip = 0;;) switch (_fun75363_ip) {
+        _fun75370: for (var _fun75370_ip = 0;;) switch (_fun75370_ip) {
             case 0:
                 var3 = arg0;
-                var1 = _closure1_slot6;
+                var1 = _closure1_slot5;
                 var1 = var1.PREMIUM_YEAR_TIER_2;
                 var2 = new Array(2);
                 var2[0] = var1;
-                var0 = _closure1_slot6;
+                var0 = _closure1_slot5;
                 var0 = var0.PREMIUM_MONTH_TIER_2;
                 var2[1] = var0;
                 var1 = var2.includes;
@@ -24,8 +23,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0 == var3;
                 var0 = undefined;
                 if (var4) {
-                    _fun75363_ip = 59;
-                    continue _fun75363
+                    _fun75370_ip = 59;
+                    continue _fun75370
                 }
             case 54:
                 var0 = var3.id;
@@ -34,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot7 = var3;
+    var _closure1_slot6 = var3;
     var0 = global;
     var9 = var0.Object;
     var8 = var9.defineProperty;
@@ -47,184 +46,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var6[var0];
     var0 = undefined;
     var4 = var7.bind(var0)(var4);
-    var _closure1_slot3 = var4;
+    var _closure1_slot2 = var4;
     var4 = 1;
     var8 = var6[var4];
     var4 = arg3;
     var4 = var4.bind(var0)(var8);
-    var _closure1_slot4 = var4;
+    var _closure1_slot3 = var4;
     var4 = 2;
     var4 = var6[var4];
     var4 = var7.bind(var0)(var4);
-    var _closure1_slot5 = var4;
+    var _closure1_slot4 = var4;
     var4 = 3;
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
     var4 = var4.SubscriptionPlans;
-    var _closure1_slot6 = var4;
-    var4 = 7;
+    var _closure1_slot5 = var4;
+    var4 = 6;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/premium/gifting/utils/promotions/GiftingPromotionUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function() {
-        _fun75364: for (var _fun75364_ip = 0;;) switch (_fun75364_ip) {
-            case 0:
-                var1 = _closure1_slot4;
-                var0 = var1.useState;
-                var5 = var0.bind(var1)();
-                var2 = _closure1_slot3;
-                var0 = undefined;
-                var1 = 2;
-                var5 = var2.bind(var0)(var5, var1);
-                var1 = 0;
-                var1 = var5[var1];
-                var2 = 1;
-                var2 = var5[var2];
-                var _closure2_slot0 = var2;
-                var5 = _closure1_slot1;
-                var6 = _closure1_slot2;
-                var2 = 4;
-                var2 = var6[var2];
-                var2 = var5.bind(var0)(var2);
-                var5 = var2.bind(var0)();
-                var2 = null;
-                var6 = var2 == var5;
-                var10 = undefined;
-                if (var6) {
-                    _fun75364_ip = 91;
-                    continue _fun75364
-                }
-            case 85:
-                var10 = var5.rewards;
-            case 91:
-                var _closure2_slot1 = var10;
-                var6 = var2 == var5;
-                var7 = undefined;
-                if (var6) {
-                    _fun75364_ip = 110;
-                    continue _fun75364
-                }
-            case 104:
-                var7 = var5.variants;
-            case 110:
-                if (!(var2 != var7)) {
-                    _fun75364_ip = 139;
-                    continue _fun75364
-                }
-            case 114:
-                var6 = var7.flatMap;
-                var5 = function(arg0) { // Environment: var3
-                    var0 = arg0;
-                    var0 = var0.variants;
-                    return var0;
-                };
-                var5 = var6.bind(var7)(var5);
-                _closure2_slot1 = var5;
-                var10 = var5;
-            case 139:
-                var6 = _closure1_slot0;
-                var7 = _closure1_slot2;
-                var5 = 5;
-                var5 = var7[var5];
-                var6 = var6.bind(var0)(var5);
-                var5 = var6.useFetchPurchases;
-                var5 = var5.bind(var6)();
-                var9 = var5.purchases;
-                var _closure2_slot2 = var9;
-                var8 = var5.hasPreviouslyFetched;
-                var _closure2_slot3 = var8;
-                var7 = var5.fetchPurchasesError;
-                var _closure2_slot4 = var7;
-                var6 = _closure1_slot4;
-                var5 = var6.useRef;
-                var4 = false;
-                var4 = var5.bind(var6)(var4);
-                var _closure2_slot5 = var4;
-                var5 = var6.useEffect;
-                var4 = new Array(4);
-                var4[0] = var10;
-                var4[1] = var9;
-                var4[2] = var8;
-                var4[3] = var7;
-                var3 = function() { // Environment: var3
-                    _fun75366: for (var _fun75366_ip = 0;;) switch (_fun75366_ip) {
-                        case 0:
-                            var1 = _closure2_slot3;
-                            if (!var1) {
-                                _fun75366_ip = 92;
-                                continue _fun75366
-                            }
-                        case 10:
-                            var1 = _closure2_slot5;
-                            var1 = var1.current;
-                            if (var1) {
-                                _fun75366_ip = 92;
-                                continue _fun75366
-                            }
-                        case 22:
-                            var1 = _closure2_slot1;
-                            var2 = null;
-                            if (!(var2 != var1)) {
-                                _fun75366_ip = 92;
-                                continue _fun75366
-                            }
-                        case 32:
-                            var1 = _closure2_slot4;
-                            if (!(var2 != var1)) {
-                                _fun75366_ip = 46;
-                                continue _fun75366
-                            }
-                        case 40:
-                            var3 = new Array(0);
-                            _fun75366_ip = 69;
-                            continue _fun75366;
-                        case 46:
-                            var4 = _closure2_slot1;
-                            var2 = var4.filter;
-                            var1 = function(arg0) { // Environment: var1
-                                var2 = _closure2_slot2;
-                                var1 = var2.get;
-                                var0 = arg0;
-                                var0 = var0.skuId;
-                                var1 = var1.bind(var2)(var0);
-                                var0 = null;
-                                var0 = var0 == var1;
-                                return var0;
-                            };
-                            var3 = var2.bind(var4)(var1);
-                        case 69:
-                            var2 = _closure2_slot0;
-                            var1 = undefined;
-                            var1 = var2.bind(var1)(var3);
-                            var1 = _closure2_slot5;
-                            var0 = true;
-                            var1.current = var0;
-                        case 92:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var3 = var5.bind(var6)(var3, var4);
-                var2 = var2 != var1;
-                var0 = undefined;
-                if (!var2) {
-                    _fun75364_ip = 269;
-                    continue _fun75364
-                }
-            case 266:
-                var0 = var1;
-            case 269:
-                return var0;
-        }
-    };
-    var2.useFetchClaimableGiftingPromotionRewards = var4;
-    var4 = function() {
-        var4 = _closure1_slot4;
+        var4 = _closure1_slot3;
         var0 = var4.useState;
         var6 = var0.bind(var4)();
-        var3 = _closure1_slot3;
+        var3 = _closure1_slot2;
         var5 = undefined;
         var0 = 2;
         var6 = var3.bind(var5)(var6, var0);
@@ -234,16 +81,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var6[var3];
         var _closure2_slot0 = var3;
         var3 = _closure1_slot0;
-        var6 = _closure1_slot2;
-        var7 = 6;
+        var6 = _closure1_slot1;
+        var7 = 4;
         var7 = var6[var7];
         var9 = var3.bind(var5)(var7);
         var8 = var9.useStateFromStores;
-        var2 = _closure1_slot5;
+        var2 = _closure1_slot4;
         var7 = new Array(1);
         var7[0] = var2;
         var2 = function() { // Environment: var1
-            var1 = _closure1_slot5;
+            var1 = _closure1_slot4;
             var0 = var1.getGiftPromotionRewardSkuIds;
             var0 = var0.bind(var1)();
             return var0;
@@ -272,39 +119,39 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[2] = var6;
         var2[3] = var5;
         var1 = function() { // Environment: var1
-            _fun75370: for (var _fun75370_ip = 0;;) switch (_fun75370_ip) {
+            _fun75373: for (var _fun75373_ip = 0;;) switch (_fun75373_ip) {
                 case 0:
                     var1 = _closure2_slot3;
                     if (!var1) {
-                        _fun75370_ip = 99;
-                        continue _fun75370
+                        _fun75373_ip = 99;
+                        continue _fun75373
                     }
                 case 10:
                     var1 = _closure2_slot5;
                     var1 = var1.current;
                     if (var1) {
-                        _fun75370_ip = 99;
-                        continue _fun75370
+                        _fun75373_ip = 99;
+                        continue _fun75373
                     }
                 case 22:
                     var1 = _closure2_slot1;
                     var2 = var1.length;
                     var1 = 0;
                     if (!(var2 > var1)) {
-                        _fun75370_ip = 99;
-                        continue _fun75370
+                        _fun75373_ip = 99;
+                        continue _fun75373
                     }
                 case 37:
                     var2 = _closure2_slot4;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun75370_ip = 53;
-                        continue _fun75370
+                        _fun75373_ip = 53;
+                        continue _fun75373
                     }
                 case 47:
                     var3 = new Array(0);
-                    _fun75370_ip = 76;
-                    continue _fun75370;
+                    _fun75373_ip = 76;
+                    continue _fun75373;
                 case 53:
                     var4 = _closure2_slot1;
                     var2 = var4.filter;
@@ -334,92 +181,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useFetchClaimableGiftingPromotionRewardSkuIds = var4;
-    var4 = function() {
-        _fun75372: for (var _fun75372_ip = 0;;) switch (_fun75372_ip) {
-            case 0:
-                var2 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var0 = 4;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var2.bind(var0)(var1);
-                var3 = var1.bind(var0)();
-                var2 = null;
-                var4 = var2 == var3;
-                var1 = undefined;
-                if (var4) {
-                    _fun75372_ip = 46;
-                    continue _fun75372
-                }
-            case 40:
-                var1 = var3.variants;
-            case 46:
-                var2 = var2 != var1;
-                var0 = undefined;
-                if (!var2) {
-                    _fun75372_ip = 58;
-                    continue _fun75372
-                }
-            case 55:
-                var0 = var1;
-            case 58:
-                return var0;
-        }
-    };
-    var2.useClaimableGiftingPromotionVariantsRewards = var4;
-    var4 = function() {
-        _fun75373: for (var _fun75373_ip = 0;;) switch (_fun75373_ip) {
-            case 0:
-                var1 = _closure1_slot1;
-                var2 = _closure1_slot2;
-                var0 = 4;
-                var0 = var2[var0];
-                var4 = undefined;
-                var0 = var1.bind(var4)(var0);
-                var2 = var0.bind(var4)();
-                var1 = null;
-                var3 = var1 == var2;
-                var0 = undefined;
-                if (var3) {
-                    _fun75373_ip = 46;
-                    continue _fun75373
-                }
-            case 40:
-                var0 = var2.rewards;
-            case 46:
-                var3 = var1 == var2;
-                var4 = undefined;
-                if (var3) {
-                    _fun75373_ip = 61;
-                    continue _fun75373
-                }
-            case 55:
-                var4 = var2.variants;
-            case 61:
-                if (!(var1 != var4)) {
-                    _fun75373_ip = 85;
-                    continue _fun75373
-                }
-            case 65:
-                var3 = var4.flatMap;
-                var2 = function(arg0) { // Environment: var2
-                    var0 = arg0;
-                    var0 = var0.variants;
-                    return var0;
-                };
-                var0 = var3.bind(var4)(var2);
-            case 85:
-                if (!(var1 == var0)) {
-                    _fun75373_ip = 93;
-                    continue _fun75373
-                }
-            case 89:
-                var0 = new Array(0);
-            case 93:
-                return var0;
-        }
-    };
-    var2.useAllGiftingPromotionRewards = var4;
     var4 = function arg0() {
         var3 = arg0;
         var0 = global;
@@ -453,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 0:
                 var0 = arg1;
                 var3 = arg2;
-                var4 = _closure1_slot7;
+                var4 = _closure1_slot6;
                 var2 = undefined;
                 var1 = arg0;
                 var2 = var4.bind(var2)(var1);
@@ -491,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 0:
                 var1 = arg1;
                 var3 = arg2;
-                var4 = _closure1_slot7;
+                var4 = _closure1_slot6;
                 var2 = undefined;
                 var0 = arg0;
                 var2 = var4.bind(var2)(var0);
@@ -753,4 +514,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.combinePromotionStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 7157, 1623, 9489, 5789, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 7157, 1623, 566, 5788, 2]);

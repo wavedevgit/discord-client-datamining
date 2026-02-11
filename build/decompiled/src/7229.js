@@ -31,18 +31,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = !var4;
     var _closure1_slot6 = var4;
     var5 = function() {
-        _fun59058: for (var _fun59058_ip = 0;;) switch (_fun59058_ip) {
+        _fun59064: for (var _fun59064_ip = 0;;) switch (_fun59064_ip) {
             case 0:
                 var1 = _closure1_slot4;
                 if (var1) {
-                    _fun59058_ip = 81;
-                    continue _fun59058
+                    _fun59064_ip = 81;
+                    continue _fun59064
                 }
             case 10:
                 var1 = _closure1_slot5;
                 if (var1) {
-                    _fun59058_ip = 81;
-                    continue _fun59058
+                    _fun59064_ip = 81;
+                    continue _fun59064
                 }
             case 17:
                 var1 = global;
@@ -72,21 +72,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot7 = var5;
     var4 = function() {
-        _fun59059: for (var _fun59059_ip = 0;;) switch (_fun59059_ip) {
+        _fun59065: for (var _fun59065_ip = 0;;) switch (_fun59065_ip) {
             case 0:
                 var1 = _closure1_slot7;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 var0 = _closure1_slot6;
                 if (var0) {
-                    _fun59059_ip = 34;
-                    continue _fun59059
+                    _fun59065_ip = 34;
+                    continue _fun59065
                 }
             case 20:
                 var1 = _closure1_slot4;
                 if (var1) {
-                    _fun59059_ip = 31;
-                    continue _fun59059
+                    _fun59065_ip = 31;
+                    continue _fun59065
                 }
             case 27:
                 var1 = _closure1_slot5;
@@ -120,21 +120,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.checkNativeAndroidAvailable = var5;
     var2.getAndroidModule = var4;
     var4 = function() {
-        _fun59062: for (var _fun59062_ip = 0;;) switch (_fun59062_ip) {
+        _fun59068: for (var _fun59068_ip = 0;;) switch (_fun59068_ip) {
             case 0:
                 var2 = _closure1_slot8;
                 var1 = undefined;
                 var1 = var2.bind(var1)();
                 var2 = _closure1_slot4;
                 if (!(var2 !== var1)) {
-                    _fun59062_ip = 39;
-                    continue _fun59062
+                    _fun59068_ip = 39;
+                    continue _fun59068
                 }
             case 21:
                 var0 = _closure1_slot5;
                 if (!(var0 !== var1)) {
-                    _fun59062_ip = 33;
-                    continue _fun59062
+                    _fun59068_ip = 33;
+                    continue _fun59068
                 }
             case 29:
                 var0 = null;
@@ -204,12 +204,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.storekitHybridMode = var3;
     var1 = function() {
-        _fun59069: for (var _fun59069_ip = 0;;) switch (_fun59069_ip) {
+        _fun59075: for (var _fun59075_ip = 0;;) switch (_fun59075_ip) {
             case 0:
                 var0 = _closure1_slot2;
                 if (var0) {
-                    _fun59069_ip = 82;
-                    continue _fun59069
+                    _fun59075_ip = 82;
+                    continue _fun59075
                 }
             case 10:
                 var0 = _closure1_slot10;
@@ -237,14 +237,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 82:
                 var0 = _closure1_slot9;
                 if (var0) {
-                    _fun59069_ip = 103;
-                    continue _fun59069
+                    _fun59075_ip = 103;
+                    continue _fun59075
                 }
             case 89:
                 var1 = _closure1_slot3;
                 if (var1) {
-                    _fun59069_ip = 100;
-                    continue _fun59069
+                    _fun59075_ip = 100;
+                    continue _fun59075
                 }
             case 96:
                 var1 = _closure1_slot2;

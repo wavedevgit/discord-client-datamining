@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot3;
         var5 = var6.useEffect;
         var4 = function() { // Environment: var0
-            _fun88862: for (var _fun88862_ip = 0;;) switch (_fun88862_ip) {
+            _fun88838: for (var _fun88838_ip = 0;;) switch (_fun88838_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var3 = _closure1_slot0;
@@ -33,14 +33,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var3 = var3.bind(var0)(var2);
                     if (var1) {
-                        _fun88862_ip = 47;
-                        continue _fun88862
+                        _fun88838_ip = 47;
+                        continue _fun88838
                     }
                 case 35:
                     var1 = var3.lockOrientationForiOS;
                     var1 = var1.bind(var3)();
-                    _fun88862_ip = 67;
-                    continue _fun88862;
+                    _fun88838_ip = 67;
+                    continue _fun88838;
                 case 47:
                     var2 = var3.unlockOrientation;
                     var1 = {};
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot10 = var3;
     var0 = function() {
-        _fun88865: for (var _fun88865_ip = 0;;) switch (_fun88865_ip) {
+        _fun88841: for (var _fun88841_ip = 0;;) switch (_fun88841_ip) {
             case 0:
                 var0 = _closure1_slot8;
                 var3 = undefined;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var1[var2];
                 var17 = 'Show tooltip';
                 if (!var0) {
-                    _fun88865_ip = 142;
-                    continue _fun88865
+                    _fun88841_ip = 142;
+                    continue _fun88841
                 }
             case 136:
                 var17 = 'Hide tooltip';
@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var10;
                 var1[1] = var0;
                 var0 = function() { // Environment: var18
-                    _fun88866: for (var _fun88866_ip = 0;;) switch (_fun88866_ip) {
+                    _fun88842: for (var _fun88842_ip = 0;;) switch (_fun88842_ip) {
                         case 0:
                             var0 = {};
                             var1 = 'NEW';
@@ -135,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot2;
                             var2 = 'top';
                             if (!var3) {
-                                _fun88866_ip = 28;
-                                continue _fun88866
+                                _fun88842_ip = 28;
+                                continue _fun88842
                             }
                         case 24:
                             var2 = 'bottom';
@@ -358,4 +358,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useCanRotate = var3;
     var2.TooltipNote = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 7873, 7100, 4094, 5479, 3942, 4746, 5265, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 7873, 7100, 4090, 5478, 3938, 4744, 5263, 2]);

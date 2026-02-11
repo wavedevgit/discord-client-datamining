@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.ExpandVoiceInviteSuggestionsExperiment;
-    var7 = new Array(4);
+    var7 = new Array(5);
     var7[0] = var3;
     var3 = 3;
     var6 = var5[var3];
@@ -42,6 +42,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.VoiceChannelHoistingExperiment;
     var7[3] = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.VoiceInviteSuggestionActivityExperiment;
+    var7[4] = var3;
     var10 = var1.VOICE_CALL;
     var1 = {};
     var3 = 'voice call initiated';
@@ -57,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var1;
     var1 = new var12[var8](var11, var10, var9, var8);
     var1 = var1 instanceof Object ? var1 : var3;
-    var3 = 6;
+    var3 = 7;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -65,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.VoiceCallTriggerPoint = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 7186, 14554, 3962, 3615, 14555, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 7186, 14540, 3958, 3611, 14541, 14542, 2]);

@@ -117,7 +117,7 @@ public final class ActionRowComponentView extends LinearLayout implements Compon
         if (errorText != null) {
             SimpleDraweeView viewInteractionFailedLabelIcon = this.binding.actionRowComponentViewGroupErrorRow.viewInteractionFailedLabelIcon;
             Intrinsics.checkNotNullExpressionValue(viewInteractionFailedLabelIcon, "viewInteractionFailedLabelIcon");
-            ReactAssetUtilsKt.setReactAsset(viewInteractionFailedLabelIcon, ReactAsset.Warning);
+            ReactAssetUtilsKt.setReactAsset(viewInteractionFailedLabelIcon, ReactAsset.CircleErrorIcon);
             SimpleDraweeView viewInteractionFailedLabelIcon2 = this.binding.actionRowComponentViewGroupErrorRow.viewInteractionFailedLabelIcon;
             Intrinsics.checkNotNullExpressionValue(viewInteractionFailedLabelIcon2, "viewInteractionFailedLabelIcon");
             ColorUtilsKt.setTintColor(viewInteractionFailedLabelIcon2, Integer.valueOf(ThemeManagerKt.getTheme().getIconFeedbackCritical()));

@@ -1,61 +1,34 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
     var1 = function arg0() {
-        _fun29090: for (var _fun29090_ip = 0;;) switch (_fun29090_ip) {
+        _fun29091: for (var _fun29091_ip = 0;;) switch (_fun29091_ip) {
             case 0:
-                var3 = arg0;
-                var5 = undefined;
-                var4 = undefined;
+                var1 = arg0;
                 var0 = null;
-                if (!(var0 != var3)) {
-                    _fun29090_ip = 15;
-                    continue _fun29090
-                }
-            case 13:
-                return var3;
-            case 15:
-                var2 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var1 = 0;
-                var0 = var0[var1];
-                var2 = var2.bind(var5)(var0);
-                var0 = arguments.length;
-                var0 = var0 > var1;
-                if (!var0) {
-                    _fun29090_ip = 54;
-                    continue _fun29090
-                }
-            case 47:
-                var1 = 1;
-                var0 = arguments[var1];
-            case 54:
+                var0 = var0 === var1;
                 if (var0) {
-                    _fun29090_ip = 67;
-                    continue _fun29090
+                    _fun29091_ip = 37;
+                    continue _fun29091
                 }
-            case 57:
-                var1 = 'Cannot call method on ';
-                var0 = var1 + var3;
-            case 67:
-                var1 = var2.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var7 = var1;
-                var6 = var0;
-                var0 = new var7[var2](var6, var5);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
+            case 12:
+                var3 = typeof var1;
+                var1 = 'function';
+                var1 = var1 !== var3;
+                if (!var1) {
+                    _fun29091_ip = 34;
+                    continue _fun29091
+                }
+            case 26:
+                var2 = 'object';
+                var1 = var2 !== var3;
+            case 34:
+                var0 = var1;
+            case 37:
+                return var0;
         }
     };
     var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [518]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

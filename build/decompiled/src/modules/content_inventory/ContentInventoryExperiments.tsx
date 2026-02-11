@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.HotwheelsHoldoutTheSequel = var5;
     var2.HotwheelsActivityFeedNvidiaExperiment = var4;
     var4 = function arg0() {
-        _fun95950: for (var _fun95950_ip = 0;;) switch (_fun95950_ip) {
+        _fun95922: for (var _fun95922_ip = 0;;) switch (_fun95922_ip) {
             case 0:
                 var4 = arg0;
                 var5 = _closure1_slot2;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = false;
                 var1 = var2.bind(var3)(var4, var1);
                 if (var0) {
-                    _fun95950_ip = 84;
-                    continue _fun95950
+                    _fun95922_ip = 84;
+                    continue _fun95922
                 }
             case 81:
                 var0 = var1;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEligibleForContentInventoryV1 = var4;
     var4 = function arg0() {
-        _fun95951: for (var _fun95951_ip = 0;;) switch (_fun95951_ip) {
+        _fun95923: for (var _fun95923_ip = 0;;) switch (_fun95923_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.getCurrentConfig;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.enabled;
                 var2 = var1.impressionCappingEnabled;
                 if (!var0) {
-                    _fun95951_ip = 57;
-                    continue _fun95951
+                    _fun95923_ip = 57;
+                    continue _fun95923
                 }
             case 51:
                 var1 = true;

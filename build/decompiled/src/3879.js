@@ -1,179 +1,279 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
+    var2 = exports;
+    var0 = global;
+    var _closure1_slot0 = var0;
+    var0 = global;
+    var5 = var0.Object;
     var4 = var5.defineProperty;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = {};
-    var3 = 'function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}';
-    var2.code = var3;
-    var _closure1_slot2 = var2;
-    var0 = function arg0() {
-        var4 = arg0;
-        var10 = {};
-        var _closure2_slot0 = var10;
-        var0 = global;
-        var2 = var0.Set;
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var5 = {};
+    var0 = 'function pnpm_FrameCallbackRegistryUITs1(){const frameCallbackRegistry={frameCallbackRegistry:new Map(),activeFrameCallbacks:new Set(),previousFrameTimestamp:null,nextCallId:0,runCallbacks:function(callId){var _this=this;const loop=function(timestamp){if(callId!==_this.nextCallId){return;}if(_this.previousFrameTimestamp===null){_this.previousFrameTimestamp=timestamp;}const delta=timestamp-_this.previousFrameTimestamp;_this.activeFrameCallbacks.forEach(function(callbackId){const callbackDetails=_this.frameCallbackRegistry.get(callbackId);const{startTime:startTime}=callbackDetails;if(startTime===null){callbackDetails.startTime=timestamp;callbackDetails.callback({timestamp:timestamp,timeSincePreviousFrame:null,timeSinceFirstFrame:0});}else{callbackDetails.callback({timestamp:timestamp,timeSincePreviousFrame:delta,timeSinceFirstFrame:timestamp-startTime});}});if(_this.activeFrameCallbacks.size>0){_this.previousFrameTimestamp=timestamp;requestAnimationFrame(loop);}else{_this.previousFrameTimestamp=null;}};if(this.activeFrameCallbacks.size===1&&callId===this.nextCallId){requestAnimationFrame(loop);}},registerFrameCallback:function(callback,callbackId){this.frameCallbackRegistry.set(callbackId,{callback:callback,startTime:null});},unregisterFrameCallback:function(callbackId){this.manageStateFrameCallback(callbackId,false);this.frameCallbackRegistry.delete(callbackId);},manageStateFrameCallback:function(callbackId,state){if(callbackId===-1){return;}if(state){this.activeFrameCallbacks.add(callbackId);this.runCallbacks(this.nextCallId);}else{const callback=this.frameCallbackRegistry.get(callbackId);callback.startTime=null;this.activeFrameCallbacks.delete(callbackId);if(this.activeFrameCallbacks.size===0){this.nextCallId+=1;}}}};global._frameCallbackRegistry=frameCallbackRegistry;}';
+    var5.code = var0;
+    var3 = dependencyMap;
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = require;
+    var0 = undefined;
+    var4 = var3.bind(var0)(var4);
+    var3 = var4.runOnUIImmediately;
+    var1 = function() {
+        var1 = {};
+        var2 = global;
+        var3 = var2.Map;
+        var4 = var3.prototype;
+        var4 = Object.create(var4, {
+            constructor: {
+                value: var3
+            }
+        });
+        var5 = var4;
+        var3 = new var5[var3](var4);
+        var3 = var3 instanceof Object ? var3 : var4;
+        var1.frameCallbackRegistry = var3;
+        var2 = var2.Set;
         var3 = var2.prototype;
         var3 = Object.create(var3, {
             constructor: {
                 value: var2
             }
         });
-        var14 = var3;
-        var2 = new var14[var2](var13);
-        var6 = var2 instanceof Object ? var2 : var3;
-        var _closure2_slot1 = var6;
-        var8 = {};
-        var _closure2_slot2 = var8;
-        var3 = var4.filter;
-        var2 = function(arg0) { // Environment: var1
-            var1 = null;
-            var0 = arg0;
-            var0 = var1 !== var0;
-            return var0;
-        };
-        var4 = var3.bind(var4)(var2);
-        var3 = var4.forEach;
-        var2 = function(arg0) { // Environment: var1
-            _fun35001: for (var _fun35001_ip = 0;;) switch (_fun35001_ip) {
+        var5 = var3;
+        var2 = new var5[var2](var4);
+        var2 = var2 instanceof Object ? var2 : var3;
+        var1.activeFrameCallbacks = var2;
+        var2 = null;
+        var1.previousFrameTimestamp = var2;
+        var2 = 0;
+        var1.nextCallId = var2;
+        var2 = function arg0() {
+            _fun35019: for (var _fun35019_ip = 0;;) switch (_fun35019_ip) {
                 case 0:
-                    var0 = arg0;
-                    var2 = var0.workletEventHandler;
-                    var _closure3_slot0 = var2;
-                    var4 = _closure1_slot0;
-                    var3 = _closure1_slot1;
-                    var0 = 0;
-                    var3 = var3[var0];
-                    var0 = undefined;
-                    var3 = var4.bind(var0)(var3);
-                    var3 = var3.WorkletEventHandler;
-                    var3 = var2 instanceof var3;
-                    if (!var3) {
-                        _fun35001_ip = 73;
-                        continue _fun35001
-                    }
-                case 52:
-                    var3 = var2.eventNames;
-                    var2 = var3.forEach;
-                    var1 = function(arg0) { // Environment: var1
-                        _fun35002: for (var _fun35002_ip = 0;;) switch (_fun35002_ip) {
+                    var3 = arg0;
+                    var1 = this;
+                    var _closure3_slot0 = var3;
+                    var _closure3_slot1 = var1;
+                    var2 = function arg0() {
+                        _fun35020: for (var _fun35020_ip = 0;;) switch (_fun35020_ip) {
                             case 0:
-                                var3 = arg0;
-                                var2 = _closure2_slot1;
-                                var0 = var2.add;
-                                var0 = var0.bind(var2)(var3);
-                                var0 = _closure2_slot2;
-                                var4 = var0[var3];
-                                var2 = _closure2_slot2;
-                                if (var4) {
-                                    _fun35002_ip = 62;
-                                    continue _fun35002
+                                var2 = arg0;
+                                var _closure4_slot0 = var2;
+                                var3 = _closure3_slot0;
+                                var1 = _closure3_slot1;
+                                var1 = var1.nextCallId;
+                                if (!(var3 === var1)) {
+                                    _fun35020_ip = 156;
+                                    continue _fun35020
                                 }
-                            case 38:
-                                var4 = _closure3_slot0;
-                                var5 = var4.worklet;
-                                var4 = new Array(1);
-                                var4[0] = var5;
-                                var2[var3] = var4;
-                                _fun35002_ip = 86;
-                                continue _fun35002;
-                            case 62:
-                                var5 = var2[var3];
-                                var4 = var5.push;
-                                var2 = _closure3_slot0;
-                                var2 = var2.worklet;
-                                var2 = var4.bind(var5)(var2);
-                            case 86:
-                                var2 = _closure2_slot2;
-                                var2 = var2[var3];
-                                var5 = var2.length;
-                                var2 = global;
-                                var2 = var2.HermesInternal;
-                                var4 = var2.concat;
-                                var2 = '';
-                                var2 = var4.bind(var2)(var5);
-                                var2 = var3 + var2;
-                                var1 = _closure2_slot0;
-                                var0 = _closure3_slot0;
-                                var0 = var0.worklet;
-                                var1[var2] = var0;
+                            case 33:
+                                var1 = _closure3_slot1;
+                                var1 = var1.previousFrameTimestamp;
+                                var3 = null;
+                                if (!(var3 === var1)) {
+                                    _fun35020_ip = 59;
+                                    continue _fun35020
+                                }
+                            case 49:
+                                var1 = _closure3_slot1;
+                                var1.previousFrameTimestamp = var2;
+                            case 59:
+                                var1 = _closure3_slot1;
+                                var5 = var1.previousFrameTimestamp;
+                                var5 = var2 - var5;
+                                var _closure4_slot1 = var5;
+                                var6 = var1.activeFrameCallbacks;
+                                var5 = var6.forEach;
+                                var4 = function(arg0) { // Environment: var4
+                                    _fun35021: for (var _fun35021_ip = 0;;) switch (_fun35021_ip) {
+                                        case 0:
+                                            var0 = _closure3_slot1;
+                                            var2 = var0.frameCallbackRegistry;
+                                            var1 = var2.get;
+                                            var0 = arg0;
+                                            var2 = var1.bind(var2)(var0);
+                                            var4 = var2.startTime;
+                                            var0 = null;
+                                            if (!(var0 !== var4)) {
+                                                _fun35021_ip = 83;
+                                                continue _fun35021
+                                            }
+                                        case 38:
+                                            var1 = var2.callback;
+                                            var0 = {};
+                                            var3 = _closure4_slot0;
+                                            var0.timestamp = var3;
+                                            var5 = _closure4_slot1;
+                                            var0.timeSincePreviousFrame = var5;
+                                            var3 = var3 - var4;
+                                            var0.timeSinceFirstFrame = var3;
+                                            var0 = var1.bind(var2)(var0);
+                                            _fun35021_ip = 127;
+                                            continue _fun35021;
+                                        case 83:
+                                            var3 = _closure4_slot0;
+                                            var2.startTime = var3;
+                                            var1 = var2.callback;
+                                            var0 = {
+                                                'timestamp': null,
+                                                'timeSincePreviousFrame': null,
+                                                'timeSinceFirstFrame': 0
+                                            };
+                                            var0.timestamp = var3;
+                                            var0 = var1.bind(var2)(var0);
+                                        case 127:
+                                            var0 = undefined;
+                                            return var0;
+                                    }
+                                };
+                                var4 = var5.bind(var6)(var4);
+                                var1 = var1.activeFrameCallbacks;
+                                var4 = var1.size;
+                                var1 = 0;
+                                if (!(!(var4 > var1))) {
+                                    _fun35020_ip = 127;
+                                    continue _fun35020
+                                }
+                            case 115:
+                                var1 = _closure3_slot1;
+                                var1.previousFrameTimestamp = var3;
+                                _fun35020_ip = 156;
+                                continue _fun35020;
+                            case 127:
+                                var1 = _closure3_slot1;
+                                var1.previousFrameTimestamp = var2;
+                                var1 = global;
+                                var2 = var1.requestAnimationFrame;
+                                var1 = _closure3_slot2;
+                                var0 = undefined;
+                                var0 = var2.bind(var0)(var1);
+                            case 156:
                                 var0 = undefined;
                                 return var0;
                         }
                     };
-                    var1 = var2.bind(var3)(var1);
-                case 73:
-                    return var0;
-            }
-        };
-        var2 = var3.bind(var4)(var2);
-        var7 = _closure1_slot0;
-        var9 = _closure1_slot1;
-        var2 = 1;
-        var2 = var9[var2];
-        var3 = undefined;
-        var4 = var7.bind(var3)(var2);
-        var2 = var4.useHandler;
-        var2 = var2.bind(var4)(var10);
-        var4 = var2.doDependenciesDiffer;
-        var2 = 2;
-        var2 = var9[var2];
-        var3 = var7.bind(var3)(var2);
-        var2 = var3.useEvent;
-        var1 = function arg0() {
-            _fun35003: for (var _fun35003_ip = 0;;) switch (_fun35003_ip) {
-                case 0:
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var4 = _closure2_slot2;
-                    var3 = var1.eventName;
-                    var3 = var4[var3];
-                    if (!var3) {
-                        _fun35003_ip = 58;
-                        continue _fun35003
+                    var _closure3_slot2 = var2;
+                    var0 = var1.activeFrameCallbacks;
+                    var4 = var0.size;
+                    var0 = 1;
+                    var0 = var0 === var4;
+                    if (!var0) {
+                        _fun35019_ip = 56;
+                        continue _fun35019
                     }
-                case 29:
-                    var2 = _closure2_slot2;
-                    var1 = var1.eventName;
-                    var2 = var2[var1];
-                    var1 = var2.forEach;
-                    var0 = function(arg0) { // Environment: var0
-                        var2 = _closure3_slot0;
-                        var1 = arg0;
-                        var0 = undefined;
-                        var0 = var1.bind(var0)(var2);
-                        return var0;
-                    };
-                    var0 = var1.bind(var2)(var0);
-                case 58:
+                case 46:
+                    var1 = var1.nextCallId;
+                    var0 = var3 === var1;
+                case 56:
+                    if (!var0) {
+                        _fun35019_ip = 74;
+                        continue _fun35019
+                    }
+                case 59:
+                    var0 = global;
+                    var1 = var0.requestAnimationFrame;
+                    var0 = undefined;
+                    var0 = var1.bind(var0)(var2);
+                case 74:
                     var0 = undefined;
                     return var0;
             }
         };
-        var7 = {};
-        var7.workletsMap = var8;
-        var1.__closure = var7;
-        var7 = 14960316830945.0;
-        var1.__workletHash = var7;
-        var5 = _closure1_slot2;
-        var1.__initData = var5;
-        var5 = var0.Array;
-        var0 = var5.from;
-        var0 = var0.bind(var5)(var6);
-        var0 = var2.bind(var3)(var1, var0, var4);
+        var1.runCallbacks = var2;
+        var2 = function arg0, arg1() {
+            var0 = this;
+            var3 = var0.frameCallbackRegistry;
+            var2 = var3.set;
+            var1 = {};
+            var0 = arg0;
+            var1.callback = var0;
+            var0 = null;
+            var1.startTime = var0;
+            var0 = arg1;
+            var0 = var2.bind(var3)(var0, var1);
+            var0 = undefined;
+            return var0;
+        };
+        var1.registerFrameCallback = var2;
+        var2 = function arg0() {
+            var2 = arg0;
+            var0 = this;
+            var3 = var0.manageStateFrameCallback;
+            var1 = false;
+            var1 = var3.bind(var0)(var2, var1);
+            var1 = var0.frameCallbackRegistry;
+            var0 = var1.delete;
+            var0 = var0.bind(var1)(var2);
+            var0 = undefined;
+            return var0;
+        };
+        var1.unregisterFrameCallback = var2;
+        var0 = function arg0, arg1() {
+            _fun35024: for (var _fun35024_ip = 0;;) switch (_fun35024_ip) {
+                case 0:
+                    var3 = arg0;
+                    var2 = this;
+                    var0 = -1;
+                    if (!(var0 !== var3)) {
+                        _fun35024_ip = 133;
+                        continue _fun35024
+                    }
+                case 16:
+                    var0 = arg1;
+                    if (var0) {
+                        _fun35024_ip = 100;
+                        continue _fun35024
+                    }
+                case 22:
+                    var1 = var2.frameCallbackRegistry;
+                    var0 = var1.get;
+                    var1 = var0.bind(var1)(var3);
+                    var0 = null;
+                    var1.startTime = var0;
+                    var1 = var2.activeFrameCallbacks;
+                    var0 = var1.delete;
+                    var0 = var0.bind(var1)(var3);
+                    var0 = var2.activeFrameCallbacks;
+                    var1 = var0.size;
+                    var0 = 0;
+                    if (!(var0 === var1)) {
+                        _fun35024_ip = 133;
+                        continue _fun35024
+                    }
+                case 79:
+                    var1 = var2.nextCallId;
+                    var0 = 1;
+                    var0 = var1 + var0;
+                    var2.nextCallId = var0;
+                    _fun35024_ip = 133;
+                    continue _fun35024;
+                case 100:
+                    var1 = var2.activeFrameCallbacks;
+                    var0 = var1.add;
+                    var0 = var0.bind(var1)(var3);
+                    var1 = var2.runCallbacks;
+                    var0 = var2.nextCallId;
+                    var0 = var1.bind(var2)(var0);
+                case 133:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var1.manageStateFrameCallback = var0;
+        var0 = _closure1_slot0;
+        var0._frameCallbackRegistry = var1;
+        var0 = undefined;
         return var0;
     };
-    var1.useComposedEventHandler = var0;
-    var0 = undefined;
+    var6 = {};
+    var1.__closure = var6;
+    var6 = 12487935997347.0;
+    var1.__workletHash = var6;
+    var1.__initData = var5;
+    var1 = var3.bind(var4)(var1);
+    var2.prepareUIRegistry = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3827, 3867, 3869]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3725]);

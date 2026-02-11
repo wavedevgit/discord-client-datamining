@@ -53,13 +53,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.PaymentFlowStartedTriggerPoint = var3;
     var1 = function arg0() {
-        _fun58790: for (var _fun58790_ip = 0;;) switch (_fun58790_ip) {
+        _fun58796: for (var _fun58796_ip = 0;;) switch (_fun58796_ip) {
             case 0:
                 var6 = arguments[1];
                 var0 = undefined;
                 if (!(var6 === var0)) {
-                    _fun58790_ip = 11;
-                    continue _fun58790
+                    _fun58796_ip = 11;
+                    continue _fun58796
                 }
             case 9:
                 var6 = {};

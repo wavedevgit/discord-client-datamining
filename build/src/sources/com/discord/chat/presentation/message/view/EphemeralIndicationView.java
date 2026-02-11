@@ -121,11 +121,11 @@ public final class EphemeralIndicationView extends ConstraintLayout {
         simpleDraweeSpanTextView.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         SimpleDraweeView simpleDraweeView = this.binding.chatListAdapterItemIconHelp;
         Intrinsics.checkNotNull(simpleDraweeView);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Help);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.CircleQuestionIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));
         SimpleDraweeView simpleDraweeView2 = this.binding.chatListAdapterItemVisibilityIcon;
         Intrinsics.checkNotNull(simpleDraweeView2);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.ShowPassword);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.EyeIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));
     }
 }

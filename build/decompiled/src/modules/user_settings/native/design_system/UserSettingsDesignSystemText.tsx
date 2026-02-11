@@ -5,7 +5,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -23,58 +25,79 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.ScrollView;
-    var _closure1_slot2 = var3;
+    var _closure1_slot3 = var3;
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
+    var3 = var3.TABLE_ROW_PADDING;
+    var _closure1_slot4 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
-    var _closure1_slot3 = var3;
-    var3 = 6;
+    var _closure1_slot5 = var3;
+    var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        var3 = _closure1_slot3;
-        var2 = _closure1_slot2;
+        var3 = _closure1_slot5;
+        var2 = _closure1_slot3;
         var1 = {};
-        var7 = _closure1_slot0;
-        var8 = _closure1_slot1;
-        var0 = 3;
-        var4 = var8[var0];
+        var9 = _closure1_slot0;
+        var10 = _closure1_slot2;
+        var0 = 4;
+        var4 = var10[var0];
         var0 = undefined;
-        var4 = var7.bind(var0)(var4);
-        var5 = var4.FormSection;
+        var4 = var9.bind(var0)(var4);
+        var5 = var4.Stack;
         var4 = {};
-        var6 = 'Text Variants';
-        var4.title = var6;
-        var6 = 4;
-        var6 = var8[var6];
-        var6 = var7.bind(var0)(var6);
-        var8 = var6.TEXT_VARIANT;
-        var7 = var8.map;
-        var6 = function(arg0) { // Environment: var6
-            _fun88655: for (var _fun88655_ip = 0;;) switch (_fun88655_ip) {
+        var8 = _closure1_slot1;
+        var6 = 5;
+        var6 = var10[var6];
+        var6 = var8.bind(var0)(var6);
+        var6 = var6.spacing;
+        var6 = var6.PX_24;
+        var4.spacing = var6;
+        var6 = {};
+        var7 = _closure1_slot4;
+        var6.paddingHorizontal = var7;
+        var4.style = var6;
+        var6 = 6;
+        var6 = var10[var6];
+        var6 = var9.bind(var0)(var6);
+        var7 = var6.TableRowGroup;
+        var6 = {};
+        var8 = 'Text Variants';
+        var6.title = var8;
+        var8 = 7;
+        var8 = var10[var8];
+        var8 = var9.bind(var0)(var8);
+        var10 = var8.TEXT_VARIANT;
+        var9 = var10.map;
+        var8 = function(arg0) { // Environment: var8
+            _fun88631: for (var _fun88631_ip = 0;;) switch (_fun88631_ip) {
                 case 0:
                     var5 = arg0;
                     var1 = 'code';
                     var0 = null;
                     if (!(var1 !== var5)) {
-                        _fun88655_ip = 95;
-                        continue _fun88655
+                        _fun88631_ip = 95;
+                        continue _fun88631
                     }
                 case 13:
-                    var4 = _closure1_slot3;
+                    var4 = _closure1_slot5;
                     var7 = _closure1_slot0;
-                    var8 = _closure1_slot1;
-                    var1 = 3;
+                    var8 = _closure1_slot2;
+                    var1 = 8;
                     var1 = var8[var1];
                     var3 = undefined;
                     var1 = var7.bind(var3)(var1);
-                    var2 = var1.FormRow;
+                    var2 = var1.TableRow;
                     var1 = {};
-                    var6 = 5;
+                    var6 = 9;
                     var6 = var8[var6];
                     var6 = var7.bind(var3)(var6);
                     var7 = var6.Text;
@@ -88,7 +111,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
             }
         };
-        var6 = var7.bind(var8)(var6);
+        var8 = var9.bind(var10)(var8);
+        var6.children = var8;
+        var6 = var3.bind(var0)(var7, var6);
         var4.children = var6;
         var4 = var3.bind(var0)(var5, var4);
         var1.children = var4;
@@ -97,4 +122,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5441, 3943, 3942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4880, 33, 4086, 671, 5425, 3939, 4908, 3938, 2]);

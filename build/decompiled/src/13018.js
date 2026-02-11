@@ -5,264 +5,311 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var2 = function arg0() {
-        _fun99979: for (var _fun99979_ip = 0;;) switch (_fun99979_ip) {
+    var2 = function arg0, arg1() {
+        _fun100149: for (var _fun100149_ip = 0;;) switch (_fun100149_ip) {
             case 0:
-                var0 = arg0;
-                var1 = var0.protocol;
-                var7 = '';
-                var6 = var7;
-                if (!var1) {
-                    _fun99979_ip = 48;
-                    continue _fun99979
-                }
-            case 19:
-                var3 = var0.protocol;
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var2 = var1.concat;
-                var1 = ':';
-                var6 = var2.bind(var7)(var3, var1);
-            case 48:
-                var1 = var0.port;
-                var5 = var7;
-                if (!var1) {
-                    _fun99979_ip = 88;
-                    continue _fun99979
-                }
-            case 60:
-                var3 = var0.port;
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var2 = var1.concat;
-                var1 = ':';
-                var5 = var2.bind(var1)(var3);
-            case 88:
-                var4 = var0.host;
-                var1 = var0.path;
-                var3 = var7;
-                if (!var1) {
-                    _fun99979_ip = 134;
-                    continue _fun99979
-                }
-            case 106:
-                var2 = var0.path;
-                var0 = global;
-                var0 = var0.HermesInternal;
-                var1 = var0.concat;
-                var0 = '/';
-                var3 = var1.bind(var0)(var2);
-            case 134:
-                var0 = global;
-                var0 = var0.HermesInternal;
-                var2 = var0.concat;
-                var12 = '//';
-                var8 = '/api/';
-                var14 = var7;
-                var13 = var6;
-                var11 = var4;
-                var10 = var5;
-                var9 = var3;
-                var0 = var14[var2](var13, var12, var11, var10, var9, var8, var7);
-                return var0;
-        }
-    };
-    var _closure1_slot2 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function arg0, arg1, arg2() {
-        _fun99980: for (var _fun99980_ip = 0;;) switch (_fun99980_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = arg1;
-                var11 = arg2;
-                if (var0) {
-                    _fun99980_ip = 207;
-                    continue _fun99980
-                }
-            case 15:
-                var1 = _closure1_slot2;
+                var5 = arg0;
+                var4 = undefined;
+                var6 = undefined;
                 var7 = undefined;
-                var9 = var1.bind(var7)(var2);
-                var8 = var2.projectId;
-                var1 = global;
-                var4 = var1.HermesInternal;
-                var6 = var4.concat;
-                var5 = '';
-                var4 = '/envelope/';
-                var4 = var6.bind(var5)(var9, var8, var4);
-                var6 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var3 = 0;
-                var3 = var8[var3];
-                var6 = var6.bind(var7)(var3);
-                var3 = var6.urlEncode;
-                var9 = var1.Object;
-                var8 = var9.assign;
-                var7 = {};
-                var2 = var2.publicKey;
-                var7.sentry_key = var2;
-                var2 = '7';
-                var7.sentry_version = var2;
-                var2 = var11;
-                if (!var2) {
-                    _fun99980_ip = 174;
-                    continue _fun99980
-                }
-            case 131:
-                var10 = {};
-                var14 = var11.name;
-                var13 = var11.version;
-                var11 = var1.HermesInternal;
-                var12 = var11.concat;
-                var11 = '/';
-                var11 = var12.bind(var5)(var14, var11, var13);
-                var10.sentry_client = var11;
-                var2 = var10;
-            case 174:
-                var2 = var8.bind(var9)(var7, var2);
-                var3 = var3.bind(var6)(var2);
-                var1 = var1.HermesInternal;
-                var2 = var1.concat;
-                var1 = '?';
-                var0 = var2.bind(var5)(var4, var1, var3);
-            case 207:
-                return var0;
-        }
-    };
-    var1.getEnvelopeEndpointWithUrlEncodedAuth = var2;
-    var0 = function arg0, arg1() {
-        _fun99981: for (var _fun99981_ip = 0;;) switch (_fun99981_ip) {
-            case 0:
-                var19 = arg1;
-                var2 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var6 = 0;
-                var0 = var0[var6];
-                var18 = undefined;
-                var3 = var2.bind(var18)(var0);
-                var2 = var3.makeDsn;
-                var0 = arg0;
-                var5 = var2.bind(var3)(var0);
-                if (var5) {
-                    _fun99981_ip = 50;
-                    continue _fun99981
-                }
-            case 44:
-                var0 = '';
-                return var0;
-            case 50:
-                var0 = _closure1_slot2;
-                var7 = var0.bind(var18)(var5);
-                var0 = global;
-                var2 = var0.HermesInternal;
-                var3 = var2.concat;
-                var4 = '';
-                var2 = 'embed/error-page/';
-                var3 = var3.bind(var4)(var7, var2);
+                var8 = undefined;
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
-                var1 = var1[var6];
-                var2 = var2.bind(var18)(var1);
-                var1 = var2.dsnToString;
-                var5 = var1.bind(var2)(var5);
-                var1 = var0.HermesInternal;
-                var2 = var1.concat;
-                var1 = 'dsn=';
-                var5 = var2.bind(var1)(var5);
-                var16 = var19;
-                var12 = '&email=';
-                var11 = '&name=';
-                var10 = '&';
-                var9 = '=';
-                var8 = 'user';
-                var7 = 'onClose';
-                var6 = 'dsn';
-                var1 = undefined;
-                var2 = var5;
-                for (var13 in var16)
-                    case 189: {
-                        var23 = var5;
-                        var2 = var23;
-                        case 207: var20 = var13;
-                        var5 = var23;
-                        if (var6 === var20) {
-                            _fun99981_ip = 189;
-                            continue _fun99981
-                        }
-                        case 217: var5 = var23;
-                        if (var7 === var20) {
-                            _fun99981_ip = 189;
-                            continue _fun99981
-                        }
-                        case 224: if (!(var8 !== var20)) {
-                            _fun99981_ip = 278;
-                            continue _fun99981
-                        }
-                        case 228: var21 = var0.encodeURIComponent;
-                        var22 = var21.bind(var18)(var20);
-                        var21 = var0.encodeURIComponent;
-                        var20 = var19[var20];
-                        var21 = var21.bind(var18)(var20);
-                        var20 = var0.HermesInternal;
-                        var20 = var20.concat;
-                        var20 = var20.bind(var10)(var22, var9, var21);
-                        var5 = var23 + var20;
-                        _fun99981_ip = 189;
-                        continue _fun99981;
-                        case 278: var20 = var19.user;
-                        var5 = var23;
-                        var1 = var20;
-                        if (!var1) {
-                            _fun99981_ip = 189;
-                            continue _fun99981
-                        }
-                        case 292: var21 = var20.name;
-                        var22 = var23;
-                        if (!var21) {
-                            _fun99981_ip = 339;
-                            continue _fun99981
-                        }
-                        case 303: var24 = var0.encodeURIComponent;
-                        var21 = var20.name;
-                        var24 = var24.bind(var18)(var21);
-                        var21 = var0.HermesInternal;
-                        var21 = var21.concat;
-                        var21 = var21.bind(var11)(var24);
-                        var22 = var23 + var21;
-                        case 339: var21 = var20.email;
-                        var5 = var22;
-                        var1 = var20;
-                        if (!var21) {
-                            _fun99981_ip = 189;
-                            continue _fun99981
-                        }
-                        case 357: var23 = var0.encodeURIComponent;
-                        var21 = var20.email;
-                        var23 = var23.bind(var18)(var21);
-                        var21 = var0.HermesInternal;
-                        var21 = var21.concat;
-                        var21 = var21.bind(var12)(var23);
-                        var5 = var22 + var21;
-                        var1 = var20;
-                        _fun99981_ip = 189;
-                        continue _fun99981;
-                    }
-            case 402:
-                var0 = var0.HermesInternal;
-                var1 = var0.concat;
-                var0 = '?';
-                var0 = var1.bind(var4)(var3, var0, var2);
+                var3 = 0;
+                var1 = var1[var3];
+                var1 = var2.bind(var4)(var1);
+                var1 = var1.GLOBAL_OBJ;
+                var1 = var1._sentryModuleMetadata;
+                if (!var1) {
+                    _fun100149_ip = 288;
+                    continue _fun100149
+                }
+            case 51:
+                var1 = global;
+                var9 = var1.Object;
+                var2 = var9.keys;
+                var10 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var3];
+                var1 = var10.bind(var4)(var1);
+                var1 = var1.GLOBAL_OBJ;
+                var1 = var1._sentryModuleMetadata;
+                var9 = var2.bind(var9)(var1);
+                var1 = var9;
+                var2 = var1[Symbol.iterator];
+                var1 = var2().next;
+            case 104:
+                var11 = var1().value;
+                var9 = var2;
+                if (!(var9 !== var4)) {
+                    _fun100149_ip = 288;
+                    continue _fun100149
+                }
+            case 118: // try_start_2
+                var6 = var11;
+                var10 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var9 = var9[var3];
+                var9 = var10.bind(var4)(var9);
+                var9 = var9.GLOBAL_OBJ;
+                var9 = var9._sentryModuleMetadata;
+                var7 = var9[var11];
+                var10 = _closure1_slot3;
+                var9 = var10.has;
+                var9 = var9.bind(var10)(var11);
+                if (var9) {
+                    _fun100149_ip = 276;
+                    continue _fun100149
+                }
+            case 171:
+                var11 = _closure1_slot3;
+                var9 = var11.add;
+                var10 = var6;
+                var9 = var9.bind(var11)(var10);
+                var9 = var5;
+                var10 = var9.bind(var4)(var10);
+                var9 = var10.reverse;
+                var11 = var9.bind(var10)();
+                var9 = var11;
+                var10 = var9[Symbol.iterator];
+                var9 = var10().next;
+            case 212:
+                var11 = var9().value;
+                var12 = var10;
+                if (!(var12 !== var4)) {
+                    _fun100149_ip = 276;
+                    continue _fun100149
+                }
+            case 223: // try_start_0
+                var8 = var11;
+                var11 = var11.filename;
+                if (var11) {
+                    _fun100149_ip = 237;
+                    continue _fun100149
+                }
+            case 235: // try_end0
+                _fun100149_ip = 212;
+                continue _fun100149;
+            case 237: // try_start_1
+                var13 = _closure1_slot2;
+                var12 = var13.set;
+                var9 = var8;
+                var11 = var9.filename;
+                var9 = var7;
+                var9 = var12.bind(var13)(var11, var9);
+            case 264: // try_end1
+                var10.return();
+                _fun100149_ip = 276;
+                continue _fun100149;
+            case 269: // catch_target0 // catch_target1
+                CatchBlockStart(arg_register = 9);
+                var10.return();
+                throw var9;
+            case 276: // try_end2
+                _fun100149_ip = 104;
+                continue _fun100149;
+            case 281: // catch_target2
+                CatchBlockStart(arg_register = 1);
+                var2.return();
+                throw var1;
+            case 288:
+                var2 = _closure1_slot2;
+                var1 = var2.get;
+                var0 = arg1;
+                var0 = var1.bind(var2)(var0);
                 return var0;
         }
     };
-    var1.getReportDialogEndpoint = var0;
+    var _closure1_slot4 = var2;
+    var3 = global;
+    var7 = var3.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var4 = true;
+    var5.value = var4;
+    var4 = '__esModule';
+    var4 = var6.bind(var7)(var1, var4, var5);
+    var4 = var3.Map;
+    var5 = var4.prototype;
+    var5 = Object.create(var5, {
+        constructor: {
+            value: var4
+        }
+    });
+    var11 = var5;
+    var4 = new var11[var4](var10);
+    var4 = var4 instanceof Object ? var4 : var5;
+    var _closure1_slot2 = var4;
+    var3 = var3.Set;
+    var4 = var3.prototype;
+    var4 = Object.create(var4, {
+        constructor: {
+            value: var3
+        }
+    });
+    var11 = var4;
+    var3 = new var11[var3](var10);
+    var3 = var3 instanceof Object ? var3 : var4;
+    var _closure1_slot3 = var3;
+    var3 = function arg0, arg1() {
+        _fun100150: for (var _fun100150_ip = 0;;) switch (_fun100150_ip) {
+            case 0:
+                var2 = arg0;
+                var _closure2_slot0 = var2;
+                var1 = arg1;
+            case 12: // try_start_0
+                var1 = var1.exception;
+                var2 = var1.values;
+                var1 = var2.forEach;
+                var0 = function(arg0) { // Environment: var0
+                    _fun100151: for (var _fun100151_ip = 0;;) switch (_fun100151_ip) {
+                        case 0:
+                            var1 = arg0;
+                            var0 = undefined;
+                            var5 = undefined;
+                            var6 = undefined;
+                            var2 = var1.stacktrace;
+                            if (!var2) {
+                                _fun100151_ip = 134;
+                                continue _fun100151
+                            }
+                        case 18:
+                            var1 = var1.stacktrace;
+                            var1 = var1.frames;
+                            if (var1) {
+                                _fun100151_ip = 37;
+                                continue _fun100151
+                            }
+                        case 33:
+                            var1 = new Array(0);
+                        case 37:
+                            var4 = var1;
+                            var2 = var4[Symbol.iterator];
+                            var4 = var2().next;
+                        case 49:
+                            var7 = var4().value;
+                            var8 = var2;
+                            if (!(var8 !== var0)) {
+                                _fun100151_ip = 134;
+                                continue _fun100151
+                            }
+                        case 60: // try_start_0
+                            var5 = var7;
+                            var7 = var7.filename;
+                            if (!var7) {
+                                _fun100151_ip = 125;
+                                continue _fun100151
+                            }
+                        case 72:
+                            var7 = var5;
+                            var7 = var7.module_metadata;
+                            if (var7) {
+                                _fun100151_ip = 125;
+                                continue _fun100151
+                            }
+                        case 84:
+                            var9 = _closure1_slot4;
+                            var8 = _closure2_slot0;
+                            var7 = var5;
+                            var7 = var7.filename;
+                            var7 = var9.bind(var0)(var8, var7);
+                            var6 = var7;
+                            if (!var7) {
+                                _fun100151_ip = 125;
+                                continue _fun100151
+                            }
+                        case 113:
+                            var8 = var5;
+                            var7 = var6;
+                            var8.module_metadata = var7;
+                        case 125: // try_end0
+                            _fun100151_ip = 49;
+                            continue _fun100151;
+                        case 127: // catch_target0
+                            CatchBlockStart(arg_register = 1);
+                            var2.return();
+                            throw var1;
+                        case 134:
+                            return var0;
+                    }
+                };
+                var0 = var1.bind(var2)(var0);
+            case 40: // try_end0
+                _fun100150_ip = 44;
+                continue _fun100150;
+            case 42: // catch_target0
+                CatchBlockStart(arg_register = 0);
+            case 44:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var1.addMetadataToStackFrames = var3;
+    var1.getMetadataForUrl = var2;
+    var0 = function arg0() {
+        _fun100152: for (var _fun100152_ip = 0;;) switch (_fun100152_ip) {
+            case 0:
+                var0 = arg0;
+            case 3: // try_start_0
+                var0 = var0.exception;
+                var2 = var0.values;
+                var1 = var2.forEach;
+                var0 = function(arg0) { // Environment: var0
+                    _fun100153: for (var _fun100153_ip = 0;;) switch (_fun100153_ip) {
+                        case 0:
+                            var0 = arg0;
+                            var1 = var0.stacktrace;
+                            if (!var1) {
+                                _fun100153_ip = 64;
+                                continue _fun100153
+                            }
+                        case 12:
+                            var0 = var0.stacktrace;
+                            var0 = var0.frames;
+                            if (var0) {
+                                _fun100153_ip = 31;
+                                continue _fun100153
+                            }
+                        case 27:
+                            var0 = new Array(0);
+                        case 31:
+                            var2 = var0;
+                            var1 = var2[Symbol.iterator];
+                            var2 = var1().next;
+                            var0 = undefined;
+                        case 39:
+                            var3 = var2().value;
+                            var4 = var1;
+                            if (!(var4 !== var0)) {
+                                _fun100153_ip = 64;
+                                continue _fun100153
+                            }
+                        case 50: // try_start_0
+                            var3 = delete var3.module_metadata;
+                        case 55: // try_end0
+                            _fun100153_ip = 39;
+                            continue _fun100153;
+                        case 57: // catch_target0
+                            CatchBlockStart(arg_register = 0);
+                            var1.return();
+                            throw var0;
+                        case 64:
+                            var0 = undefined;
+                            return var0;
+                    }
+                };
+                var0 = var1.bind(var2)(var0);
+            case 33: // try_end0
+                _fun100152_ip = 37;
+                continue _fun100152;
+            case 35: // catch_target0
+                CatchBlockStart(arg_register = 0);
+            case 37:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var1.stripMetadataFromStackFrames = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12931]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12912]);

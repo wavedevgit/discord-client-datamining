@@ -94,7 +94,7 @@ public final class InteractionStatusView extends ConstraintLayout {
         this.binding = inflate;
         SimpleDraweeView simpleDraweeView = inflate.viewInteractionStatusDangerIcon;
         Intrinsics.checkNotNull(simpleDraweeView);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Warning);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.CircleErrorIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getTextFeedbackCritical()));
     }
 }

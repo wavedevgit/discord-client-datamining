@@ -1,75 +1,160 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = {
-        'name': 'react-native-url-polyfill',
-        'version': '2.0.0',
-        'description': 'A lightweight and trustworthy URL polyfill for React Native',
-        'keywords': null,
-        'bugs': null,
-        'homepage': 'https://github.com/charpeni/react-native-url-polyfill',
-        'readme': 'https://github.com/charpeni/react-native-url-polyfill#readme',
-        'repository': null,
-        'main': 'index.js',
-        'types': 'index.d.ts'
+    var1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 62, 0, 63, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 0, 0, 0, 0, 63, 0, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51];
+    var _closure1_slot0 = var1;
+    var1 = function arg0, arg1() {
+        _fun97875: for (var _fun97875_ip = 0;;) switch (_fun97875_ip) {
+            case 0:
+                var8 = arg0;
+                var2 = arg1;
+                var0 = var8.length;
+                var7 = 2;
+                var1 = var0 - var7;
+                var1 = var8[var1];
+                var5 = '=';
+                var6 = var7;
+                if (!(var5 !== var1)) {
+                    _fun97875_ip = 56;
+                    continue _fun97875
+                }
+            case 33:
+                var3 = 1;
+                var1 = var0 - var3;
+                var4 = var8[var1];
+                var1 = 0;
+                if (!(var5 === var4)) {
+                    _fun97875_ip = 53;
+                    continue _fun97875
+                }
+            case 50:
+                var1 = var3;
+            case 53:
+                var6 = var1;
+            case 56:
+                var1 = var0 - var6;
+                var0 = 4294967292.0;
+                var18 = var1 & var0;
+                var11 = 0;
+                var17 = 18;
+                var9 = 1;
+                var16 = 12;
+                var15 = 6;
+                var14 = 3;
+                var13 = 16;
+                var3 = 255;
+                var12 = 8;
+                var5 = 4;
+                var1 = 0;
+                var10 = 0;
+                var0 = 0;
+                if (!(var0 < var18)) {
+                    _fun97875_ip = 286;
+                    continue _fun97875
+                }
+            case 119:
+                var23 = _closure1_slot0;
+                var19 = var8.charCodeAt;
+                var19 = var19.bind(var8)(var1);
+                var19 = var23[var19];
+                var22 = var19 << var17;
+                var20 = var8.charCodeAt;
+                var19 = var1 + var9;
+                var19 = var20.bind(var8)(var19);
+                var19 = var23[var19];
+                var19 = var19 << var16;
+                var21 = var8.charCodeAt;
+                var20 = var1 + var7;
+                var20 = var21.bind(var8)(var20);
+                var20 = var23[var20];
+                var21 = var20 << var15;
+                var24 = var8.charCodeAt;
+                var20 = var1 + var14;
+                var20 = var24.bind(var8)(var20);
+                var20 = var23[var20];
+                var19 = var22 | var19;
+                var19 = var19 | var21;
+                var19 = var19 | var20;
+                var20 = parseFloat(var11);
+                var21 = var19 >> var13;
+                var21 = var21 & var3;
+                var2[var20] = var21;
+                var20 = var20 + 1;
+                var20 = parseFloat(var20);
+                var21 = var19 >> var12;
+                var21 = var21 & var3;
+                var2[var20] = var21;
+                var20 = var20 + 1;
+                var21 = parseFloat(var20);
+                var11 = var21 + 1;
+                var19 = var3 & var19;
+                var2[var21] = var19;
+                var1 = var1 + var5;
+                var10 = var11;
+                var0 = var1;
+                if (var0 < var18) {
+                    _fun97875_ip = 119;
+                    continue _fun97875
+                }
+            case 286:
+                var1 = var10;
+                if (!(var9 === var6)) {
+                    _fun97875_ip = 405;
+                    continue _fun97875
+                }
+            case 293:
+                var15 = _closure1_slot0;
+                var11 = var8.charCodeAt;
+                var11 = var11.bind(var8)(var0);
+                var13 = var15[var11];
+                var11 = 10;
+                var14 = var13 << var11;
+                var13 = var8.charCodeAt;
+                var11 = var0 + var9;
+                var11 = var13.bind(var8)(var11);
+                var11 = var15[var11];
+                var11 = var11 << var5;
+                var16 = var8.charCodeAt;
+                var13 = var0 + var7;
+                var13 = var16.bind(var8)(var13);
+                var13 = var15[var13];
+                var13 = var13 >> var7;
+                var11 = var14 | var11;
+                var11 = var11 | var13;
+                var10 = parseFloat(var10);
+                var12 = var11 >> var12;
+                var12 = var12 & var3;
+                var2[var10] = var12;
+                var10 = var10 + 1;
+                var12 = parseFloat(var10);
+                var1 = var12 + 1;
+                var11 = var3 & var11;
+                var2[var12] = var11;
+            case 405:
+                if (!(var7 === var6)) {
+                    _fun97875_ip = 470;
+                    continue _fun97875
+                }
+            case 409:
+                var6 = _closure1_slot0;
+                var4 = var8.charCodeAt;
+                var4 = var4.bind(var8)(var0);
+                var4 = var6[var4];
+                var4 = var4 << var7;
+                var7 = var8.charCodeAt;
+                var0 = var0 + var9;
+                var0 = var7.bind(var8)(var0);
+                var0 = var6[var0];
+                var0 = var0 >> var5;
+                var1 = parseFloat(var1);
+                var0 = var4 | var0;
+                var0 = var3 & var0;
+                var2[var1] = var0;
+            case 470:
+                var0 = undefined;
+                return var0;
+        }
     };
-    var0 = ['URL', 'URLSearchParams', 'polyfill', 'react native', 'whatwg-url'];
-    var1.keywords = var0;
-    var0 = {};
-    var2 = 'https://github.com/charpeni/react-native-url-polyfill/issues';
-    var0.url = var2;
-    var1.bugs = var0;
-    var0 = {
-        'type': 'git',
-        'url': 'https://github.com/charpeni/react-native-url-polyfill.git'
-    };
-    var1.repository = var0;
-    var0 = {
-        'test': 'jest',
-        'lint': 'eslint .',
-        'prepare': 'husky install',
-        'bundle-size': 'node scripts/bundle-size'
-    };
-    var1.scripts = var0;
-    var0 = 'Nicolas Charpentier <nicolas.charpentier079@gmail.com>';
-    var1.author = var0;
-    var0 = 'MIT';
-    var1.license = var0;
-    var0 = {};
-    var2 = '8.0.0-3';
-    var0['whatwg-url-without-unicode'] = var2;
-    var1.dependencies = var0;
-    var0 = {
-        '@react-native-community/eslint-config': '3.2.0',
-        'detox': '20.9.1',
-        'eslint': '8.44.0',
-        'eslint-plugin-prettier': '4.2.1',
-        'husky': '8.0.3',
-        'jest': '29.5.0',
-        'lint-staged': '13.2.3',
-        'metro-react-native-babel-preset': '0.76.7',
-        'nanoid': '3.3.6',
-        'prettier': '2.8.8',
-        'react': '18.2.0',
-        'react-native': '0.72.1',
-        'react-native-bundle-scale': '1.1.0',
-        'typescript': '5.1.6'
-    };
-    var1.devDependencies = var0;
-    var0 = {};
-    var2 = '*';
-    var0['react-native'] = var2;
-    var1.peerDependencies = var0;
-    var0 = {};
-    var2 = 'react-native';
-    var0.preset = var2;
-    var2 = ['/node_modules/', './platforms/'];
-    var0.testPathIgnorePatterns = var2;
-    var1.jest = var0;
-    var0 = {};
-    var2 = ['eslint --fix'];
-    var0['*.js'] = var2;
-    var1['lint-staged'] = var0;
-    var0 = module;
+    var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;

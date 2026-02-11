@@ -1,30 +1,25 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun29161: for (var _fun29161_ip = 0;;) switch (_fun29161_ip) {
-        case 0:
-            var0 = global;
-            var1 = var0.Reflect;
-            var2 = 'undefined';
-            var1 = typeof var1;
-            var1 = var2 !== var1;
-            if (!var1) {
-                _fun29161_ip = 33;
-                continue _fun29161
-            }
-        case 21:
-            var0 = var0.Reflect;
-            var1 = var0.setPrototypeOf;
-        case 33:
-            if (var1) {
-                _fun29161_ip = 38;
-                continue _fun29161
-            }
-        case 36:
-            var1 = null;
-        case 38:
-            var0 = module;
-            var0.exports = var1;
-            var0 = undefined;
-            return var0;
-    }
+    var1 = function arg0() {
+        _fun29161: for (var _fun29161_ip = 0;;) switch (_fun29161_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = typeof var0;
+                var0 = 'string';
+                var0 = var0 === var2;
+                if (var0) {
+                    _fun29161_ip = 25;
+                    continue _fun29161
+                }
+            case 17:
+                var1 = 'symbol';
+                var0 = var1 === var2;
+            case 25:
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -43,11 +43,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'justifyContent': 'center'
     };
     var3.container = var8;
-    var8 = {
-        'fontSize': 16,
-        'textAlign': 'center'
-    };
-    var3.totpFormLabel = var8;
     var8 = {};
     var9 = 4;
     var9 = var5[var9];
@@ -65,11 +60,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/account/mfa_modal_flow/TwoFASetupScan.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81985: for (var _fun81985_ip = 0;;) switch (_fun81985_ip) {
+        _fun81945: for (var _fun81945_ip = 0;;) switch (_fun81945_ip) {
             case 0:
                 var1 = arg0;
-                var20 = var1.totpSecret;
-                var _closure2_slot0 = var20;
+                var18 = var1.totpSecret;
+                var _closure2_slot0 = var18;
                 var1 = _closure1_slot6;
                 var3 = undefined;
                 var14 = var1.bind(var3)();
@@ -87,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var1;
                 var2 = var4.useCallback;
                 var1 = new Array(1);
-                var1[0] = var20;
+                var1[0] = var18;
                 var0 = function() { // Environment: var0
                     var3 = _closure2_slot1;
                     var0 = undefined;
@@ -114,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var15[var0];
                 var1 = var11.bind(var3)(var0);
                 var0 = var1.useTwoFASetupStyles;
-                var19 = var0.bind(var1)();
+                var20 = var0.bind(var1)();
                 var2 = _closure1_slot4;
                 var0 = 7;
                 var0 = var15[var0];
@@ -136,22 +131,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var11.bind(var3)(var7);
                 var8 = var7.LegacyText;
                 var7 = {};
-                var17 = var19.modalHeader;
+                var17 = var20.modalHeader;
                 var9 = new Array(2);
                 var9[0] = var17;
-                var17 = var19.text;
+                var17 = var20.text;
                 var9[1] = var17;
                 var7.style = var9;
                 var17 = 10;
                 var9 = var15[var17];
                 var9 = var11.bind(var3)(var9);
                 var21 = var9.intl;
-                var18 = var21.string;
+                var19 = var21.string;
                 var9 = var15[var17];
                 var9 = var11.bind(var3)(var9);
                 var9 = var9.t;
                 var9 = var9["hg/+aT"];
-                var9 = var18.bind(var21)(var9);
+                var9 = var19.bind(var21)(var9);
                 var7.children = var9;
                 var8 = var2.bind(var3)(var8, var7);
                 var7 = new Array(4);
@@ -160,39 +155,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var11.bind(var3)(var8);
                 var9 = var8.LegacyText;
                 var8 = {};
-                var21 = var19.modalBody;
-                var18 = new Array(2);
-                var18[0] = var21;
-                var19 = var19.text;
-                var18[1] = var19;
-                var8.style = var18;
-                var18 = var15[var17];
-                var18 = var11.bind(var3)(var18);
-                var21 = var18.intl;
-                var19 = var21.string;
-                var18 = var15[var17];
-                var18 = var11.bind(var3)(var18);
-                var18 = var18.t;
-                var18 = var18["UQR+Qy"];
-                var18 = var19.bind(var21)(var18);
-                var8.children = var18;
+                var21 = var20.modalBody;
+                var19 = new Array(2);
+                var19[0] = var21;
+                var20 = var20.text;
+                var19[1] = var20;
+                var8.style = var19;
+                var19 = var15[var17];
+                var19 = var11.bind(var3)(var19);
+                var21 = var19.intl;
+                var20 = var21.string;
+                var19 = var15[var17];
+                var19 = var11.bind(var3)(var19);
+                var19 = var19.t;
+                var19 = var19["UQR+Qy"];
+                var19 = var20.bind(var21)(var19);
+                var8.children = var19;
                 var8 = var2.bind(var3)(var9, var8);
                 var7[1] = var8;
-                var18 = 11;
-                var8 = var15[var18];
+                var8 = 11;
+                var8 = var15[var8];
                 var8 = var11.bind(var3)(var8);
-                var9 = var8.FormRow;
+                var9 = var8.Text;
                 var8 = {};
-                var18 = var15[var18];
-                var18 = var11.bind(var3)(var18);
-                var18 = var18.FormRow;
-                var19 = var18.Label;
-                var18 = {};
-                var21 = var14.totpFormLabel;
-                var18.style = var21;
-                var18.text = var20;
-                var18 = var2.bind(var3)(var19, var18);
-                var8.label = var18;
+                var19 = 'text-md/bold';
+                var8.variant = var19;
+                var19 = {};
+                var20 = 'center';
+                var19.textAlign = var20;
+                var8.style = var19;
+                var8.children = var18;
                 var8 = var2.bind(var3)(var9, var8);
                 var7[2] = var8;
                 var8 = 12;
@@ -219,18 +211,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var16.bind(var3)(var13);
                 var13 = var13.t;
                 if (var12) {
-                    _fun81985_ip = 604;
-                    continue _fun81985
+                    _fun81945_ip = 584;
+                    continue _fun81945
                 }
-            case 591:
+            case 571:
                 var12 = var13.OpuAlK;
                 var12 = var14.bind(var15)(var12);
-                _fun81985_ip = 615;
-                continue _fun81985;
-            case 604:
+                _fun81945_ip = 595;
+                continue _fun81945;
+            case 584:
                 var13 = var13.mGZ66D;
                 var12 = var14.bind(var15)(var13);
-            case 615:
+            case 595:
                 var10.children = var12;
                 var10 = var2.bind(var3)(var11, var10);
                 var8.children = var10;
@@ -245,4 +237,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1297, 671, 5354, 10443, 10439, 4746, 4888, 1234, 5441, 4914, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1297, 671, 5352, 10412, 10408, 4744, 4886, 1234, 3938, 4912, 2]);

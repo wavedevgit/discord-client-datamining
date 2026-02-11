@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/nuf/native/components/DiscoverabilityLanding.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81588: for (var _fun81588_ip = 0;;) switch (_fun81588_ip) {
+        _fun81548: for (var _fun81548_ip = 0;;) switch (_fun81548_ip) {
             case 0:
                 var0 = _closure1_slot9;
                 var3 = undefined;
@@ -325,8 +325,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15.toggleDiscoverabilityForUser;
                 var7.onPress = var15;
                 if (var13) {
-                    _fun81588_ip = 666;
-                    continue _fun81588
+                    _fun81548_ip = 666;
+                    continue _fun81548
                 }
             case 663:
                 var13 = var14;
@@ -440,4 +440,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10369, 660, 33, 1297, 671, 4692, 1568, 3279, 10382, 1307, 4713, 4714, 10383, 3942, 1234, 4888, 5441, 10368, 4885, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10338, 660, 33, 1297, 671, 4690, 1568, 3279, 10351, 1307, 4711, 4712, 10352, 3938, 1234, 4886, 5440, 10337, 4883, 2]);

@@ -27,48 +27,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/applications/isSocialLayerApplication.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun83028: for (var _fun83028_ip = 0;;) switch (_fun83028_ip) {
+        _fun82988: for (var _fun82988_ip = 0;;) switch (_fun82988_ip) {
             case 0:
-                var3 = arg0;
-                var1 = var3.flags;
-                var0 = null;
-                var0 = var0 != var1;
-                if (!var0) {
-                    _fun83028_ip = 119;
-                    continue _fun83028
+                var4 = arg0;
+                var2 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var6 = 1;
+                var0 = var0[var6];
+                var5 = undefined;
+                var3 = var2.bind(var5)(var0);
+                var2 = var3.hasApplicationFlag;
+                var0 = _closure1_slot2;
+                var0 = var0.SOCIAL_LAYER_INTEGRATION_LIMITED;
+                var0 = var2.bind(var3)(var4, var0);
+                if (var0) {
+                    _fun82988_ip = 92;
+                    continue _fun82988
                 }
-            case 17:
-                var4 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var7 = 1;
-                var1 = var1[var7];
-                var6 = undefined;
-                var8 = var4.bind(var6)(var1);
-                var5 = var8.hasFlag;
-                var4 = var3.flags;
+            case 53:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var2 = var2[var6];
+                var3 = var3.bind(var5)(var2);
+                var2 = var3.hasApplicationFlag;
                 var1 = _closure1_slot2;
-                var1 = var1.SOCIAL_LAYER_INTEGRATION_LIMITED;
-                var1 = var5.bind(var8)(var4, var1);
-                if (var1) {
-                    _fun83028_ip = 116;
-                    continue _fun83028
-                }
-            case 72:
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var4 = var4[var7];
-                var5 = var5.bind(var6)(var4);
-                var4 = var5.hasFlag;
-                var3 = var3.flags;
-                var2 = _closure1_slot2;
-                var2 = var2.SOCIAL_LAYER_INTEGRATION;
-                var1 = var4.bind(var5)(var3, var2);
-            case 116:
-                var0 = var1;
-            case 119:
+                var1 = var1.SOCIAL_LAYER_INTEGRATION;
+                var0 = var2.bind(var3)(var4, var1);
+            case 92:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1384, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5407, 2]);

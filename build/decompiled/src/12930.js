@@ -1,125 +1,191 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var3 = function() {
-        _fun99263: for (var _fun99263_ip = 0;;) switch (_fun99263_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var6 = 1;
-                var1 = var0[var6];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.getActiveSpan;
-                var5 = var1.bind(var2)();
-                var3 = var5;
-                if (!var3) {
-                    _fun99263_ip = 69;
-                    continue _fun99263
-                }
-            case 41:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var1 = var1[var6];
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.getRootSpan;
-                var3 = var1.bind(var2)(var5);
-            case 69:
-                if (!var3) {
-                    _fun99263_ip = 230;
-                    continue _fun99263
-                }
-            case 75:
-                var2 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 2;
-                var1 = var5[var1];
-                var1 = var2.bind(var0)(var1);
-                var1 = var1.DEBUG_BUILD;
-                if (!var1) {
-                    _fun99263_ip = 177;
-                    continue _fun99263
-                }
-            case 104:
-                var2 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 0;
-                var1 = var5[var1];
-                var1 = var2.bind(var0)(var1);
-                var5 = var1.logger;
-                var2 = var5.log;
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var8 = var1.concat;
-                var7 = '[Tracing] Root span: ';
-                var6 = 'internal_error';
-                var1 = ' -> Global error occured';
-                var1 = var8.bind(var7)(var6, var1);
-                var1 = var2.bind(var5)(var1);
-            case 177:
-                var2 = var3.setStatus;
-                var1 = {};
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var4 = 3;
-                var4 = var6[var4];
-                var4 = var5.bind(var0)(var4);
-                var4 = var4.SPAN_STATUS_ERROR;
-                var1.code = var4;
-                var4 = 'internal_error';
-                var1.message = var4;
-                var1 = var2.bind(var3)(var1);
-            case 230:
+    _fun99404: for (var _fun99404_ip = 0;;) switch (_fun99404_ip) {
+        case 0:
+            var5 = require;
+            var2 = exports;
+            var6 = dependencyMap;
+            var _closure1_slot0 = var5;
+            var _closure1_slot1 = var6;
+            var3 = function() {
+                var0 = global;
+                var1 = var0.Date;
+                var0 = var1.now;
+                var1 = var0.bind(var1)();
+                var0 = 1000;
+                var0 = var1 / var0;
                 return var0;
-        }
-    };
-    var _closure1_slot3 = var3;
-    var2 = global;
-    var6 = var2.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var2 = true;
-    var4.value = var2;
-    var2 = '__esModule';
-    var2 = var5.bind(var6)(var1, var2, var4);
-    var2 = false;
-    var _closure1_slot2 = var2;
-    var2 = 'sentry_tracingErrorCallback';
-    var3.tag = var2;
-    var0 = function() {
-        _fun99264: for (var _fun99264_ip = 0;;) switch (_fun99264_ip) {
-            case 0:
-                var0 = _closure1_slot2;
-                if (var0) {
-                    _fun99264_ip = 72;
-                    continue _fun99264
+            };
+            var _closure1_slot2 = var3;
+            var13 = global;
+            var8 = var13.Object;
+            var7 = var8.defineProperty;
+            var4 = {};
+            var1 = true;
+            var4.value = var1;
+            var1 = '__esModule';
+            var1 = var7.bind(var8)(var2, var1, var4);
+            var1 = function() {
+                _fun99406: for (var _fun99406_ip = 0;;) switch (_fun99406_ip) {
+                    case 0:
+                        var4 = _closure1_slot0;
+                        var3 = _closure1_slot1;
+                        var2 = 0;
+                        var3 = var3[var2];
+                        var2 = undefined;
+                        var2 = var4.bind(var2)(var3);
+                        var2 = var2.GLOBAL_OBJ;
+                        var2 = var2.performance;
+                        var _closure2_slot0 = var2;
+                        if (!var2) {
+                            _fun99406_ip = 53;
+                            continue _fun99406
+                        }
+                    case 45:
+                        var3 = var2.now;
+                        if (var3) {
+                            _fun99406_ip = 59;
+                            continue _fun99406
+                        }
+                    case 53:
+                        var1 = _closure1_slot2;
+                        return var1;
+                    case 59:
+                        var1 = global;
+                        var3 = var1.Date;
+                        var1 = var3.now;
+                        var3 = var1.bind(var3)();
+                        var1 = var2.now;
+                        var1 = var1.bind(var2)();
+                        var1 = var3 - var1;
+                        var4 = var2.timeOrigin;
+                        var3 = null;
+                        if (!(var3 != var4)) {
+                            _fun99406_ip = 107;
+                            continue _fun99406
+                        }
+                    case 101:
+                        var1 = var2.timeOrigin;
+                    case 107:
+                        var _closure2_slot1 = var1;
+                        var0 = function() { // Environment: var0
+                            var1 = _closure2_slot1;
+                            var2 = _closure2_slot0;
+                            var0 = var2.now;
+                            var0 = var0.bind(var2)();
+                            var1 = var1 + var0;
+                            var0 = 1000;
+                            var0 = var1 / var0;
+                            return var0;
+                        };
+                        return var0;
                 }
-            case 10:
-                var0 = true;
-                _closure1_slot2 = var0;
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 0;
-                var5 = var4[var0];
-                var1 = undefined;
-                var6 = var3.bind(var1)(var5);
-                var5 = var6.addGlobalErrorInstrumentationHandler;
-                var2 = _closure1_slot3;
-                var5 = var5.bind(var6)(var2);
-                var0 = var4[var0];
-                var1 = var3.bind(var1)(var0);
-                var0 = var1.addGlobalUnhandledRejectionInstrumentationHandler;
-                var0 = var0.bind(var1)(var2);
-            case 72:
-                var0 = undefined;
-                return var0;
-        }
-    };
-    var1.registerSpanErrorInstrumentation = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12931, 12985, 12997, 12988]);
+            };
+            var0 = undefined;
+            var1 = var1.bind(var0)();
+            var2._browserPerformanceTimeOriginMode = var0;
+            var4 = 0;
+            var4 = var6[var4];
+            var4 = var5.bind(var0)(var4);
+            var4 = var4.GLOBAL_OBJ;
+            var7 = var4.performance;
+            if (!var7) {
+                _fun99404_ip = 115;
+                continue _fun99404
+            }
+        case 107:
+            var4 = var7.now;
+            if (var4) {
+                _fun99404_ip = 132;
+                continue _fun99404
+            }
+        case 115:
+            var4 = 'none';
+            var2._browserPerformanceTimeOriginMode = var4;
+            var4 = undefined;
+            _fun99404_ip = 328;
+            continue _fun99404;
+        case 132:
+            var5 = var7.now;
+            var12 = var5.bind(var7)();
+            var6 = var13.Date;
+            var5 = var6.now;
+            var5 = var5.bind(var6)();
+            var6 = var7.timeOrigin;
+            var10 = 3600000;
+            var9 = var10;
+            if (!var6) {
+                _fun99404_ip = 205;
+                continue _fun99404
+            }
+        case 174:
+            var11 = var13.Math;
+            var8 = var11.abs;
+            var6 = var7.timeOrigin;
+            var6 = var6 + var12;
+            var6 = var6 - var5;
+            var9 = var8.bind(var11)(var6);
+        case 205:
+            var11 = var9 < var10;
+            var6 = var7.timing;
+            if (!var6) {
+                _fun99404_ip = 230;
+                continue _fun99404
+            }
+        case 218:
+            var8 = var7.timing;
+            var6 = var8.navigationStart;
+        case 230:
+            var15 = 'number';
+            var14 = typeof var6;
+            var8 = var10;
+            if (!(var15 === var14)) {
+                _fun99404_ip = 269;
+                continue _fun99404
+            }
+        case 244:
+            var14 = var13.Math;
+            var13 = var14.abs;
+            var12 = var6 + var12;
+            var12 = var12 - var5;
+            var8 = var13.bind(var14)(var12);
+        case 269:
+            if (var11) {
+                _fun99404_ip = 290;
+                continue _fun99404
+            }
+        case 272:
+            if (!(!(var8 < var10))) {
+                _fun99404_ip = 290;
+                continue _fun99404
+            }
+        case 276:
+            var10 = 'dateNow';
+            var2._browserPerformanceTimeOriginMode = var10;
+            _fun99404_ip = 325;
+            continue _fun99404;
+        case 290:
+            if (!(!(var9 <= var8))) {
+                _fun99404_ip = 306;
+                continue _fun99404
+            }
+        case 294:
+            var8 = 'navigationStart';
+            var2._browserPerformanceTimeOriginMode = var8;
+            _fun99404_ip = 322;
+            continue _fun99404;
+        case 306:
+            var8 = 'timeOrigin';
+            var2._browserPerformanceTimeOriginMode = var8;
+            var6 = var7.timeOrigin;
+        case 322:
+            var5 = var6;
+        case 325:
+            var4 = var5;
+        case 328:
+            var2.browserPerformanceTimeOrigin = var4;
+            var2.dateTimestampInSeconds = var3;
+            var2.timestampInSeconds = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12918]);

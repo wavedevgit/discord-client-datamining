@@ -88,4 +88,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showGuildSettingsStickerSuccess = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3150, 5454, 1234, 3267, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3150, 5453, 1234, 3267, 2]);

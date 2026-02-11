@@ -19,23 +19,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var2.bind(var3)(var0);
     var1.errorCodes = var0;
     var0 = function arg0() {
-        _fun76118: for (var _fun76118_ip = 0;;) switch (_fun76118_ip) {
+        _fun76110: for (var _fun76110_ip = 0;;) switch (_fun76110_ip) {
             case 0:
                 var2 = arg0;
                 var0 = global;
                 var0 = var0.Error;
                 var0 = var2 instanceof var0;
                 if (var0) {
-                    _fun76118_ip = 41;
-                    continue _fun76118
+                    _fun76110_ip = 41;
+                    continue _fun76110
                 }
             case 18:
                 var3 = 'object';
                 var1 = typeof var2;
                 var1 = var3 === var1;
                 if (!var1) {
-                    _fun76118_ip = 38;
-                    continue _fun76118
+                    _fun76110_ip = 38;
+                    continue _fun76110
                 }
             case 32:
                 var3 = null;
@@ -44,8 +44,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var1;
             case 41:
                 if (!var0) {
-                    _fun76118_ip = 52;
-                    continue _fun76118
+                    _fun76110_ip = 52;
+                    continue _fun76110
                 }
             case 44:
                 var1 = 'code';

@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot14 = var3;
     var3 = function arg0() {
-        _fun100562: for (var _fun100562_ip = 0;;) switch (_fun100562_ip) {
+        _fun100536: for (var _fun100536_ip = 0;;) switch (_fun100536_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.x;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var0.dragBoundsPadding;
                 var3 = undefined;
                 if (!(var20 === var3)) {
-                    _fun100562_ip = 57;
-                    continue _fun100562
+                    _fun100536_ip = 57;
+                    continue _fun100536
                 }
             case 55:
                 var20 = 0;
@@ -544,4 +544,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5325, 807, 33, 1297, 671, 3721, 5363, 13088, 4973, 4091, 4097, 4914, 11444, 11180, 13089, 11179, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5323, 807, 33, 1297, 671, 3717, 5361, 13069, 4971, 4087, 4093, 4912, 11425, 11158, 13070, 11157, 2]);

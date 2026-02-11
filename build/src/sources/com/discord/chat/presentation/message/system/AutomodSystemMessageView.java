@@ -160,7 +160,7 @@ public final class AutomodSystemMessageView extends ChatListConstraintLayout imp
         }
         simpleDraweeView.setVisibility(i10);
         if (z10) {
-            ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.ClockTimeout);
+            ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.ClockWarningIcon);
         }
         SimpleDraweeView simpleDraweeView2 = this.binding.authorAvatar;
         if (z10) {

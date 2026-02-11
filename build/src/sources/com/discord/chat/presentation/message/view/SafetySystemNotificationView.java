@@ -124,7 +124,7 @@ public final class SafetySystemNotificationView extends LinearLayout {
     private final void setTitleIcon(String str) {
         SimpleDraweeView icon = this.binding.icon;
         Intrinsics.checkNotNullExpressionValue(icon, "icon");
-        SetOptionalImageUrlKt.setOptionalImageUrl$default(icon, str, null, null, null, 14, null);
+        SetOptionalImageUrlKt.setOptionalImageUrl$default(icon, str, null, null, null, null, null, 62, null);
     }
 
     @NotNull

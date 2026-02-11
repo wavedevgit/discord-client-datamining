@@ -10,14 +10,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var7 = function() {
-        _fun118869: for (var _fun118869_ip = 0;;) switch (_fun118869_ip) {
+        _fun118877: for (var _fun118877_ip = 0;;) switch (_fun118877_ip) {
             case 0:
                 var0 = _closure1_slot5;
                 var2 = var0.length;
                 var0 = 0;
                 if (!(var0 !== var2)) {
-                    _fun118869_ip = 161;
-                    continue _fun118869
+                    _fun118877_ip = 161;
+                    continue _fun118877
                 }
             case 21:
                 var4 = _closure1_slot4;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var7;
     var0 = function arg0, arg1, arg2, arg3() {
-        _fun118870: for (var _fun118870_ip = 0;;) switch (_fun118870_ip) {
+        _fun118878: for (var _fun118878_ip = 0;;) switch (_fun118878_ip) {
             case 0:
                 var3 = _closure1_slot5;
                 var2 = var3.push;
@@ -75,15 +75,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.length;
                 var1 = 10;
                 if (!(!(var2 >= var1))) {
-                    _fun118870_ip = 85;
-                    continue _fun118870
+                    _fun118878_ip = 85;
+                    continue _fun118878
                 }
             case 73:
                 var2 = _closure1_slot6;
                 var1 = undefined;
                 var1 = var2.bind(var1)();
-                _fun118870_ip = 95;
-                continue _fun118870;
+                _fun118878_ip = 95;
+                continue _fun118878;
             case 85:
                 var1 = _closure1_slot7;
                 var0 = undefined;
@@ -150,4 +150,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setupLibdiscoreTimersMonitor = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3, 795, 5749, 1620, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3, 795, 5748, 1620, 2]);

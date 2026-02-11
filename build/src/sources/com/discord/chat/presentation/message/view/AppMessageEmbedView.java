@@ -23,6 +23,7 @@ import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.misc.utilities.view.ViewBackgroundUtilsKt;
 import com.discord.overlapping_circles.OverlappingCirclesView;
 import com.discord.react_asset_fetcher.ReactAsset;
+import com.discord.react_asset_fetcher.ReactAssetExtensionsKt;
 import com.discord.react_asset_fetcher.ReactAssetUtilsKt;
 import com.discord.theme.R;
 import com.discord.theme.ThemeManagerKt;
@@ -38,7 +39,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B'\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0004\b\b\u0010\tJ&\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u0007J#\u0010\u001c\u001a\u0004\u0018\u00010\u00072\u0012\u0010\u001d\u001a\u000e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\u00070\u001eH\u0002¢\u0006\u0002\u0010 J\u000e\u0010!\u001a\u00020\u00142\u0006\u0010\n\u001a\u00020\"J\u0016\u0010#\u001a\u00020\u00142\u0006\u0010\n\u001a\u00020\"2\u0006\u0010\u0017\u001a\u00020\u0018J \u0010$\u001a\u00020\u00142\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010%\u001a\u00020\u001fH\u0002R\u001a\u0010\n\u001a\u00020\u000bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006&"}, d2 = {"Lcom/discord/chat/presentation/message/view/AppMessageEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "view", "Lcom/discord/chat/databinding/AppMessageEmbedViewBinding;", "getView", "()Lcom/discord/chat/databinding/AppMessageEmbedViewBinding;", "setView", "(Lcom/discord/chat/databinding/AppMessageEmbedViewBinding;)V", "gradientDrawable", "Landroid/graphics/drawable/GradientDrawable;", "textColor", "initView", "", "margins", "Lcom/discord/chat/presentation/message/messagepart/MessageMargins;", "data", "Lcom/discord/chat/bridge/codedlinks/AppMessageEmbedImpl;", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "constrainedWidth", "rgbToColorInt", "map", "", "", "(Ljava/util/Map;)Ljava/lang/Integer;", "setDefaultBackground", "Landroid/view/View;", "setBackgroundGradient", "handleTap", "actionId", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@SourceDebugExtension({"SMAP\nAppMessageEmbedView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AppMessageEmbedView.kt\ncom/discord/chat/presentation/message/view/AppMessageEmbedView\n+ 2 View.kt\nandroidx/core/view/ViewKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,291:1\n257#2,2:292\n257#2,2:294\n257#2,2:296\n257#2,2:298\n257#2,2:300\n257#2,2:302\n257#2,2:304\n257#2,2:306\n257#2,2:308\n257#2,2:310\n257#2,2:312\n257#2,2:314\n257#2,2:316\n257#2,2:318\n257#2,2:323\n257#2,2:325\n1878#3,3:320\n*S KotlinDebug\n*F\n+ 1 AppMessageEmbedView.kt\ncom/discord/chat/presentation/message/view/AppMessageEmbedView\n*L\n91#1:292,2\n92#1:294,2\n102#1:296,2\n105#1:298,2\n108#1:300,2\n109#1:302,2\n113#1:304,2\n129#1:306,2\n136#1:308,2\n143#1:310,2\n150#1:312,2\n151#1:314,2\n155#1:316,2\n160#1:318,2\n222#1:323,2\n224#1:325,2\n176#1:320,3\n*E\n"})
+@SourceDebugExtension({"SMAP\nAppMessageEmbedView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AppMessageEmbedView.kt\ncom/discord/chat/presentation/message/view/AppMessageEmbedView\n+ 2 View.kt\nandroidx/core/view/ViewKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,292:1\n257#2,2:293\n257#2,2:295\n257#2,2:297\n257#2,2:299\n257#2,2:301\n257#2,2:303\n257#2,2:305\n257#2,2:307\n257#2,2:309\n257#2,2:311\n257#2,2:313\n257#2,2:315\n257#2,2:317\n257#2,2:319\n257#2,2:324\n257#2,2:326\n1878#3,3:321\n*S KotlinDebug\n*F\n+ 1 AppMessageEmbedView.kt\ncom/discord/chat/presentation/message/view/AppMessageEmbedView\n*L\n92#1:293,2\n93#1:295,2\n103#1:297,2\n106#1:299,2\n109#1:301,2\n110#1:303,2\n114#1:305,2\n130#1:307,2\n137#1:309,2\n144#1:311,2\n151#1:313,2\n152#1:315,2\n156#1:317,2\n161#1:319,2\n223#1:324,2\n225#1:326,2\n177#1:321,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class AppMessageEmbedView extends ConstraintLayout {
     private GradientDrawable gradientDrawable;
@@ -124,10 +125,10 @@ public final class AppMessageEmbedView extends ConstraintLayout {
         Context context = dCDButton.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         dCDButton.setBackgroundColor(ColorUtilsKt.getColorCompat(context, R.color.transparent));
-        ReactAsset reactAsset = ReactAsset.Link;
+        ReactAsset reactAsset = ReactAsset.LinkIcon;
         Context context2 = dCDButton.getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        dCDButton.setIcon(reactAsset.getUri(context2), SizeUtilsKt.getDpToPx(16));
+        dCDButton.setIcon(ReactAssetExtensionsKt.getUri(reactAsset, context2), SizeUtilsKt.getDpToPx(16));
         dCDButton.setTextColor(Integer.valueOf(this.textColor));
         DCDButton dCDButton2 = appMessageEmbedViewBinding.linkIconTitle;
         Context context3 = dCDButton2.getContext();
@@ -135,11 +136,11 @@ public final class AppMessageEmbedView extends ConstraintLayout {
         dCDButton2.setBackgroundColor(ColorUtilsKt.getColorCompat(context3, R.color.transparent));
         Context context4 = dCDButton2.getContext();
         Intrinsics.checkNotNullExpressionValue(context4, "getContext(...)");
-        dCDButton2.setIcon(reactAsset.getUri(context4), SizeUtilsKt.getDpToPx(16));
+        dCDButton2.setIcon(ReactAssetExtensionsKt.getUri(reactAsset, context4), SizeUtilsKt.getDpToPx(16));
         dCDButton2.setTextColor(Integer.valueOf(this.textColor));
         SimpleDraweeView simpleDraweeView = appMessageEmbedViewBinding.playerIcon;
         Intrinsics.checkNotNull(simpleDraweeView);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Members);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.GroupIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(this.textColor));
         OverlappingCirclesView participants = appMessageEmbedViewBinding.participants;
         Intrinsics.checkNotNullExpressionValue(participants, "participants");

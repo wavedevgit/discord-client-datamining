@@ -98,12 +98,12 @@ public final class OverlayMenuView extends LinearLayout {
         SimpleDraweeView simpleDraweeView = this.binding.muteToggle;
         simpleDraweeView.setContentDescription(assets.getMute());
         Intrinsics.checkNotNull(simpleDraweeView);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Mic);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.MicrophoneIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()));
         SimpleDraweeView simpleDraweeView2 = this.binding.disconnectBtn;
         simpleDraweeView2.setContentDescription(assets.getDisconnectFromVoice());
         Intrinsics.checkNotNull(simpleDraweeView2);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.Disconnect);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.PhoneHangUpIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()));
         this.binding.overlayInviteLink.setText(assets.getGetInvite());
         this.binding.overlaySwitchChannels.setText(assets.getSwitchChannels());
@@ -126,9 +126,9 @@ public final class OverlayMenuView extends LinearLayout {
         SimpleDraweeView muteToggle = this.binding.muteToggle;
         Intrinsics.checkNotNullExpressionValue(muteToggle, "muteToggle");
         if (data.getMuted()) {
-            reactAsset = ReactAsset.MicMutedDark;
+            reactAsset = ReactAsset.MicrophoneSlashIcon;
         } else {
-            reactAsset = ReactAsset.Mic;
+            reactAsset = ReactAsset.MicrophoneIcon;
         }
         ReactAssetUtilsKt.setReactAsset(muteToggle, reactAsset);
         SimpleDraweeView overlayNetworkIcon = this.binding.overlayNetworkIcon;
@@ -138,18 +138,18 @@ public final class OverlayMenuView extends LinearLayout {
             if (i11 != 2) {
                 if (i11 != 3) {
                     if (i11 == 4) {
-                        reactAsset2 = ReactAsset.CallStatusUnknown;
+                        reactAsset2 = ReactAsset.ConnectionUnknownIcon;
                     } else {
                         throw new as.p();
                     }
                 } else {
-                    reactAsset2 = ReactAsset.CallStatusRed;
+                    reactAsset2 = ReactAsset.ConnectionBadIcon;
                 }
             } else {
-                reactAsset2 = ReactAsset.CallStatusYellow;
+                reactAsset2 = ReactAsset.ConnectionAverageIcon;
             }
         } else {
-            reactAsset2 = ReactAsset.CallStatusGreen;
+            reactAsset2 = ReactAsset.ConnectionFineIcon;
         }
         ReactAssetUtilsKt.setReactAsset(overlayNetworkIcon, reactAsset2);
         this.binding.overlayGuildName.setText(data.getGuildName());

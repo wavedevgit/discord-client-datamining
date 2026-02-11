@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/NewUserIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun63006: for (var _fun63006_ip = 0;;) switch (_fun63006_ip) {
+        _fun63012: for (var _fun63012_ip = 0;;) switch (_fun63012_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun63006_ip = 53;
-                    continue _fun63006
+                    _fun63012_ip = 53;
+                    continue _fun63012
                 }
             case 19:
                 var1 = _closure1_slot1;

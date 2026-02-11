@@ -13,10 +13,12 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.databinding.MediaImageViewBinding;
 import com.discord.chat.presentation.media.MediaContainingViewResizer;
+import com.discord.chat.presentation.message.utils.GetMediaImagePlaceholderStatesListenerKt;
 import com.discord.chat.presentation.message.view.mosaic_recycler.MosaicView;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.image.fresco.R;
+import com.discord.image.fresco.SetOptionalImageUrlKt;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.misc.utilities.view.ViewUtilsKt;
 import com.discord.theme.ThemeManagerKt;
@@ -32,8 +34,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000\u0084\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0007\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0016\u0018\u0000 R2\u00020\u00012\u00020\u0002:\u0002SRB\u001d\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0007\u0010\bJ\u001f\u0010\r\u001a\u00020\u000b2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\r\u0010\u000eJ\u001f\u0010\u0010\u001a\u00020\u000b2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000f\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0010\u0010\u000eJ)\u0010\u0015\u001a\u00020\t2\u0006\u0010\u0011\u001a\u00020\t2\b\u0010\u0013\u001a\u0004\u0018\u00010\u00122\u0006\u0010\u0014\u001a\u00020\tH\u0002¢\u0006\u0004\b\u0015\u0010\u0016J)\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0011\u001a\u00020\t2\b\u0010\u0013\u001a\u0004\u0018\u00010\u00122\u0006\u0010\u0014\u001a\u00020\tH\u0002¢\u0006\u0004\b\u0018\u0010\u0019J§\u0001\u0010*\u001a\u00020\u00172\u0006\u0010\u001a\u001a\u00020\u00122\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u000f\u001a\u00020\u000b2\u0006\u0010\u001c\u001a\u00020\u001b2\b\u0010\u001d\u001a\u0004\u0018\u00010\u00122\b\u0010\u001e\u001a\u0004\u0018\u00010\u000b2\u0006\u0010\u001f\u001a\u00020\t2\b\u0010!\u001a\u0004\u0018\u00010 2\u0006\u0010\"\u001a\u00020\u000b2\b\u0010$\u001a\u0004\u0018\u00010#2\u0006\u0010%\u001a\u00020\t2\u0006\u0010&\u001a\u00020\t2\u0006\u0010'\u001a\u00020\t2\u0006\u0010(\u001a\u00020\t2\u0006\u0010)\u001a\u00020\t2\u0006\u0010\u0011\u001a\u00020\t2\b\u0010\u0013\u001a\u0004\u0018\u00010\u00122\u0006\u0010\u0014\u001a\u00020\t¢\u0006\u0004\b*\u0010+J\u000f\u0010-\u001a\u00020,H\u0016¢\u0006\u0004\b-\u0010.J\u001f\u0010/\u001a\u00020\u00172\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u000f\u001a\u00020\u000bH\u0016¢\u0006\u0004\b/\u00100J!\u00103\u001a\u00020\u00172\b\u00101\u001a\u0004\u0018\u00010\u00122\b\u00102\u001a\u0004\u0018\u00010\u0012¢\u0006\u0004\b3\u00104J\u001f\u00106\u001a\u00020\u00172\u0006\u00105\u001a\u00020\t2\b\u00101\u001a\u0004\u0018\u00010\u0012¢\u0006\u0004\b6\u00107J;\u0010;\u001a\u00020\u00172\u0006\u00105\u001a\u00020\t2\b\u00101\u001a\u0004\u0018\u00010\u00122\u001a\u0010:\u001a\u0016\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0017\u0018\u000108j\u0004\u0018\u0001`9¢\u0006\u0004\b;\u0010<J\u0017\u0010>\u001a\u00020\u00172\b\u0010=\u001a\u0004\u0018\u00010\u0012¢\u0006\u0004\b>\u0010?R\u0017\u0010A\u001a\u00020@8\u0006¢\u0006\f\n\u0004\bA\u0010B\u001a\u0004\bC\u0010DR\u0014\u0010F\u001a\u00020E8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bF\u0010GR\u0014\u0010I\u001a\u00020H8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bI\u0010JR\u0014\u0010K\u001a\u00020\u000b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bK\u0010LR\u0016\u0010N\u001a\u00020M8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bN\u0010OR\u0016\u0010P\u001a\u00020\u00128\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bP\u0010Q¨\u0006T"}, d2 = {"Lcom/discord/chat/presentation/message/view/MediaImageView;", "Landroid/widget/FrameLayout;", "Lcom/discord/chat/presentation/message/view/mosaic_recycler/MosaicView;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "", "isEligibleForMinConstraints", "", "width", "getWidth", "(ZI)I", "height", "getHeight", "shouldAutoPlayGif", "", "filename", "srcIsAnimated", "shouldShowGifIndicator", "(ZLjava/lang/String;Z)Z", "", "configureGifIndicator", "(ZLjava/lang/String;Z)V", "url", "Lcom/discord/chat/presentation/media/MediaContainingViewResizer$ResizeMode;", ViewProps.RESIZE_MODE, ReactTextInputShadowNode.PROP_PLACEHOLDER, "placeholderVersion", "isSpoiler", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "spoilerConfig", "radiusPx", "Lcom/discord/chat/presentation/message/view/UploadItemProps;", "uploadItemProps", "isObscure", "isObscureAwaitingScan", "obscureHideControls", "obscureIsOpaque", "isPartOfMosaic", "setContent", "(Ljava/lang/String;IILcom/discord/chat/presentation/media/MediaContainingViewResizer$ResizeMode;Ljava/lang/String;Ljava/lang/Integer;ZLcom/discord/chat/bridge/spoiler/SpoilerConfig;ILcom/discord/chat/presentation/message/view/UploadItemProps;ZZZZZZLjava/lang/String;Z)V", "", "getSingleAspectRatio", "()F", "setMosaicSize", "(II)V", "description", "hint", "setDescription", "(Ljava/lang/String;Ljava/lang/String;)V", "show", "showDescription", "(ZLjava/lang/String;)V", "Lkotlin/Function1;", "Lcom/discord/chat/presentation/events/MessageTapShowAltText;", "onAltTextButtonClicked", "showAltTextButton", "(ZLjava/lang/String;Lkotlin/jvm/functions/Function1;)V", ViewProps.ROLE, "setRole", "(Ljava/lang/String;)V", "Lcom/discord/chat/databinding/MediaImageViewBinding;", "binding", "Lcom/discord/chat/databinding/MediaImageViewBinding;", "getBinding", "()Lcom/discord/chat/databinding/MediaImageViewBinding;", "Lcom/discord/chat/presentation/message/view/SpoilerViewManager;", "spoilerViewManager", "Lcom/discord/chat/presentation/message/view/SpoilerViewManager;", "Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayViewManager;", "attachmentUploadOverlay", "Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayViewManager;", "imageFadeDuration", "I", "Lcom/discord/chat/presentation/message/view/MediaImageView$TargetSize;", "targetSize", "Lcom/discord/chat/presentation/message/view/MediaImageView$TargetSize;", "targetUrl", "Ljava/lang/String;", "Companion", "TargetSize", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@SourceDebugExtension({"SMAP\nMediaImageView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaImageView.kt\ncom/discord/chat/presentation/message/view/MediaImageView\n+ 2 ColorDrawable.kt\nandroidx/core/graphics/drawable/ColorDrawableKt\n+ 3 View.kt\nandroidx/core/view/ViewKt\n*L\n1#1,258:1\n27#2:259\n311#3:260\n327#3,4:261\n312#3:265\n257#3,2:266\n257#3,2:268\n*S KotlinDebug\n*F\n+ 1 MediaImageView.kt\ncom/discord/chat/presentation/message/view/MediaImageView\n*L\n61#1:259\n155#1:260\n155#1:261,4\n155#1:265\n189#1:266,2\n249#1:268,2\n*E\n"})
+@Metadata(d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0007\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\n\b\u0016\u0018\u0000 Y2\u00020\u00012\u00020\u0002:\u0002ZYB\u001d\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0007\u0010\bJ'\u0010\r\u001a\u00020\f2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\tH\u0002¢\u0006\u0004\b\r\u0010\u000eJ\u001f\u0010\u0012\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\tH\u0002¢\u0006\u0004\b\u0012\u0010\u0013J\u001f\u0010\u0015\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0014\u001a\u00020\tH\u0002¢\u0006\u0004\b\u0015\u0010\u0013J)\u0010\u001a\u001a\u00020\u000f2\u0006\u0010\u0016\u001a\u00020\u000f2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0019\u001a\u00020\u000fH\u0002¢\u0006\u0004\b\u001a\u0010\u001bJ)\u0010\u001c\u001a\u00020\f2\u0006\u0010\u0016\u001a\u00020\u000f2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0019\u001a\u00020\u000fH\u0002¢\u0006\u0004\b\u001c\u0010\u001dJ§\u0001\u0010.\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u00172\u0006\u0010\u0011\u001a\u00020\t2\u0006\u0010\u0014\u001a\u00020\t2\u0006\u0010 \u001a\u00020\u001f2\b\u0010!\u001a\u0004\u0018\u00010\u00172\b\u0010\"\u001a\u0004\u0018\u00010\t2\u0006\u0010#\u001a\u00020\u000f2\b\u0010%\u001a\u0004\u0018\u00010$2\u0006\u0010&\u001a\u00020\t2\b\u0010(\u001a\u0004\u0018\u00010'2\u0006\u0010)\u001a\u00020\u000f2\u0006\u0010*\u001a\u00020\u000f2\u0006\u0010+\u001a\u00020\u000f2\u0006\u0010,\u001a\u00020\u000f2\u0006\u0010-\u001a\u00020\u000f2\u0006\u0010\u0016\u001a\u00020\u000f2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0019\u001a\u00020\u000f¢\u0006\u0004\b.\u0010/J\u000f\u00101\u001a\u000200H\u0016¢\u0006\u0004\b1\u00102J\u001f\u00103\u001a\u00020\f2\u0006\u0010\u0011\u001a\u00020\t2\u0006\u0010\u0014\u001a\u00020\tH\u0016¢\u0006\u0004\b3\u00104J!\u00107\u001a\u00020\f2\b\u00105\u001a\u0004\u0018\u00010\u00172\b\u00106\u001a\u0004\u0018\u00010\u0017¢\u0006\u0004\b7\u00108J\u001f\u0010:\u001a\u00020\f2\u0006\u00109\u001a\u00020\u000f2\b\u00105\u001a\u0004\u0018\u00010\u0017¢\u0006\u0004\b:\u0010;J;\u0010?\u001a\u00020\f2\u0006\u00109\u001a\u00020\u000f2\b\u00105\u001a\u0004\u0018\u00010\u00172\u001a\u0010>\u001a\u0016\u0012\u0004\u0012\u00020\u0017\u0012\u0004\u0012\u00020\f\u0018\u00010<j\u0004\u0018\u0001`=¢\u0006\u0004\b?\u0010@J\u0017\u0010B\u001a\u00020\f2\b\u0010A\u001a\u0004\u0018\u00010\u0017¢\u0006\u0004\bB\u0010CR\u0017\u0010E\u001a\u00020D8\u0006¢\u0006\f\n\u0004\bE\u0010F\u001a\u0004\bG\u0010HR\u0014\u0010J\u001a\u00020I8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bJ\u0010KR\u0014\u0010M\u001a\u00020L8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bM\u0010NR\u0014\u0010O\u001a\u00020\t8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bO\u0010PR\u0016\u0010R\u001a\u00020Q8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bR\u0010SR\u0016\u0010T\u001a\u00020\u000f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bT\u0010UR\u0018\u0010V\u001a\u0004\u0018\u00010\u00178\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bV\u0010WR\u0016\u0010\u0019\u001a\u00020\u000f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0019\u0010UR\u0018\u0010!\u001a\u0004\u0018\u00010\u00178\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b!\u0010WR\u0018\u0010\"\u001a\u0004\u0018\u00010\t8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\"\u0010X¨\u0006["}, d2 = {"Lcom/discord/chat/presentation/message/view/MediaImageView;", "Landroid/widget/FrameLayout;", "Lcom/discord/chat/presentation/message/view/mosaic_recycler/MosaicView;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "", "resizeWidthPx", "resizeHeightPx", "", "loadImage", "(Ljava/lang/Integer;Ljava/lang/Integer;)V", "", "isEligibleForMinConstraints", "width", "getWidth", "(ZI)I", "height", "getHeight", "shouldAutoPlayGif", "", "filename", "srcIsAnimated", "shouldShowGifIndicator", "(ZLjava/lang/String;Z)Z", "configureGifIndicator", "(ZLjava/lang/String;Z)V", "url", "Lcom/discord/chat/presentation/media/MediaContainingViewResizer$ResizeMode;", ViewProps.RESIZE_MODE, ReactTextInputShadowNode.PROP_PLACEHOLDER, "placeholderVersion", "isSpoiler", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "spoilerConfig", "radiusPx", "Lcom/discord/chat/presentation/message/view/UploadItemProps;", "uploadItemProps", "isObscure", "isObscureAwaitingScan", "obscureHideControls", "obscureIsOpaque", "isPartOfMosaic", "setContent", "(Ljava/lang/String;IILcom/discord/chat/presentation/media/MediaContainingViewResizer$ResizeMode;Ljava/lang/String;Ljava/lang/Integer;ZLcom/discord/chat/bridge/spoiler/SpoilerConfig;ILcom/discord/chat/presentation/message/view/UploadItemProps;ZZZZZZLjava/lang/String;Z)V", "", "getSingleAspectRatio", "()F", "setMosaicSize", "(II)V", "description", "hint", "setDescription", "(Ljava/lang/String;Ljava/lang/String;)V", "show", "showDescription", "(ZLjava/lang/String;)V", "Lkotlin/Function1;", "Lcom/discord/chat/presentation/events/MessageTapShowAltText;", "onAltTextButtonClicked", "showAltTextButton", "(ZLjava/lang/String;Lkotlin/jvm/functions/Function1;)V", ViewProps.ROLE, "setRole", "(Ljava/lang/String;)V", "Lcom/discord/chat/databinding/MediaImageViewBinding;", "binding", "Lcom/discord/chat/databinding/MediaImageViewBinding;", "getBinding", "()Lcom/discord/chat/databinding/MediaImageViewBinding;", "Lcom/discord/chat/presentation/message/view/SpoilerViewManager;", "spoilerViewManager", "Lcom/discord/chat/presentation/message/view/SpoilerViewManager;", "Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayViewManager;", "attachmentUploadOverlay", "Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayViewManager;", "imageFadeDuration", "I", "Lcom/discord/chat/presentation/message/view/MediaImageView$TargetSize;", "targetSize", "Lcom/discord/chat/presentation/message/view/MediaImageView$TargetSize;", "imageLoaded", "Z", "imageUrl", "Ljava/lang/String;", "Ljava/lang/Integer;", "Companion", "TargetSize", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@SourceDebugExtension({"SMAP\nMediaImageView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaImageView.kt\ncom/discord/chat/presentation/message/view/MediaImageView\n+ 2 ColorDrawable.kt\nandroidx/core/graphics/drawable/ColorDrawableKt\n+ 3 View.kt\nandroidx/core/view/ViewKt\n*L\n1#1,287:1\n27#2:288\n311#3:289\n327#3,4:290\n312#3:294\n257#3,2:295\n257#3,2:297\n*S KotlinDebug\n*F\n+ 1 MediaImageView.kt\ncom/discord/chat/presentation/message/view/MediaImageView\n*L\n66#1:288\n163#1:289\n163#1:290,4\n163#1:294\n218#1:295,2\n278#1:297,2\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class MediaImageView extends FrameLayout implements MosaicView {
     @NotNull
@@ -41,10 +43,14 @@ public class MediaImageView extends FrameLayout implements MosaicView {
     @NotNull
     private final MediaImageViewBinding binding;
     private final int imageFadeDuration;
+    private boolean imageLoaded;
+    private String imageUrl;
+    private String placeholder;
+    private Integer placeholderVersion;
     @NotNull
     private final SpoilerViewManager spoilerViewManager;
+    private boolean srcIsAnimated;
     private TargetSize targetSize;
-    private String targetUrl;
     @NotNull
     public static final Companion Companion = new Companion(null);
     private static final int GIF_INDICATOR_HEIGHT = SizeUtilsKt.getDpToPx(22);
@@ -190,6 +196,35 @@ public class MediaImageView extends FrameLayout implements MosaicView {
         return i10;
     }
 
+    private final void loadImage(Integer num, Integer num2) {
+        String str = this.imageUrl;
+        if (str == null) {
+            return;
+        }
+        SimpleDraweeView image = this.binding.image;
+        Intrinsics.checkNotNullExpressionValue(image, "image");
+        Boolean bool = Boolean.TRUE;
+        Boolean valueOf = Boolean.valueOf(this.srcIsAnimated);
+        SimpleDraweeView image2 = this.binding.image;
+        Intrinsics.checkNotNullExpressionValue(image2, "image");
+        SetOptionalImageUrlKt.setOptionalImageUrl(image, str, bool, valueOf, GetMediaImagePlaceholderStatesListenerKt.getMediaImagePlaceholderStatesListener(image2, this.placeholder, this.placeholderVersion), num, num2);
+        this.imageLoaded = true;
+    }
+
+    static /* synthetic */ void loadImage$default(MediaImageView mediaImageView, Integer num, Integer num2, int i10, Object obj) {
+        if (obj == null) {
+            if ((i10 & 1) != 0) {
+                num = null;
+            }
+            if ((i10 & 2) != 0) {
+                num2 = null;
+            }
+            mediaImageView.loadImage(num, num2);
+            return;
+        }
+        throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: loadImage");
+    }
+
     private final boolean shouldShowGifIndicator(boolean z10, String str, boolean z11) {
         if (z10) {
             return false;
@@ -229,19 +264,16 @@ public class MediaImageView extends FrameLayout implements MosaicView {
         return width / targetSize2.getHeight();
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:25:0x0082, code lost:
-        if (kotlin.jvm.internal.Intrinsics.areEqual(r2, r5) == false) goto L31;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:7:0x0022, code lost:
-        if (kotlin.jvm.internal.Intrinsics.areEqual(r1, r14) == false) goto L34;
+    /* JADX WARN: Code restructure failed: missing block: B:25:0x0075, code lost:
+        if (kotlin.jvm.internal.Intrinsics.areEqual(r0, r4) == false) goto L28;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final void setContent(@org.jetbrains.annotations.NotNull java.lang.String r14, int r15, int r16, @org.jetbrains.annotations.NotNull com.discord.chat.presentation.media.MediaContainingViewResizer.ResizeMode r17, java.lang.String r18, java.lang.Integer r19, boolean r20, com.discord.chat.bridge.spoiler.SpoilerConfig r21, int r22, com.discord.chat.presentation.message.view.UploadItemProps r23, boolean r24, boolean r25, boolean r26, boolean r27, boolean r28, boolean r29, java.lang.String r30, boolean r31) {
+    public final void setContent(@org.jetbrains.annotations.NotNull java.lang.String r15, int r16, int r17, @org.jetbrains.annotations.NotNull com.discord.chat.presentation.media.MediaContainingViewResizer.ResizeMode r18, java.lang.String r19, java.lang.Integer r20, boolean r21, com.discord.chat.bridge.spoiler.SpoilerConfig r22, int r23, com.discord.chat.presentation.message.view.UploadItemProps r24, boolean r25, boolean r26, boolean r27, boolean r28, boolean r29, boolean r30, java.lang.String r31, boolean r32) {
         /*
-            Method dump skipped, instructions count: 246
+            Method dump skipped, instructions count: 239
             To view this dump add '--comments-level debug' option
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.MediaImageView.setContent(java.lang.String, int, int, com.discord.chat.presentation.media.MediaContainingViewResizer$ResizeMode, java.lang.String, java.lang.Integer, boolean, com.discord.chat.bridge.spoiler.SpoilerConfig, int, com.discord.chat.presentation.message.view.UploadItemProps, boolean, boolean, boolean, boolean, boolean, boolean, java.lang.String, boolean):void");
@@ -260,13 +292,35 @@ public class MediaImageView extends FrameLayout implements MosaicView {
 
     @Override // com.discord.chat.presentation.message.view.mosaic_recycler.MosaicView
     public void setMosaicSize(int i10, int i11) {
+        Integer num;
+        boolean z10;
+        ViewGroup.LayoutParams layoutParams = this.binding.container.getLayoutParams();
+        Integer num2 = null;
+        if (layoutParams != null) {
+            num = Integer.valueOf(layoutParams.width);
+        } else {
+            num = null;
+        }
+        ViewGroup.LayoutParams layoutParams2 = this.binding.container.getLayoutParams();
+        if (layoutParams2 != null) {
+            num2 = Integer.valueOf(layoutParams2.height);
+        }
+        if (num != null && num.intValue() == i10 && num2 != null && num2.intValue() == i11) {
+            z10 = false;
+        } else {
+            z10 = true;
+        }
         ConstraintLayout container = this.binding.container;
         Intrinsics.checkNotNullExpressionValue(container, "container");
-        ViewGroup.LayoutParams layoutParams = container.getLayoutParams();
-        if (layoutParams != null) {
-            layoutParams.width = i10;
-            layoutParams.height = i11;
-            container.setLayoutParams(layoutParams);
+        ViewGroup.LayoutParams layoutParams3 = container.getLayoutParams();
+        if (layoutParams3 != null) {
+            layoutParams3.width = i10;
+            layoutParams3.height = i11;
+            container.setLayoutParams(layoutParams3);
+            if (this.imageLoaded && !z10) {
+                return;
+            }
+            loadImage(Integer.valueOf(i10), Integer.valueOf(i11));
             return;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");

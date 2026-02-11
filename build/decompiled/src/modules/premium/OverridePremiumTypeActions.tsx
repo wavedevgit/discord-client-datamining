@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/OverridePremiumTypeActions.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun87420: for (var _fun87420_ip = 0;;) switch (_fun87420_ip) {
+        _fun87392: for (var _fun87392_ip = 0;;) switch (_fun87392_ip) {
             case 0:
                 var4 = arg1;
                 var5 = _closure1_slot0;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var6)(var2);
                 var2 = null;
                 if (!(var2 == var4)) {
-                    _fun87420_ip = 77;
-                    continue _fun87420
+                    _fun87392_ip = 77;
+                    continue _fun87392
                 }
             case 64:
                 var6 = _closure1_slot2;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)();
             case 77:
                 if (!(var2 != var4)) {
-                    _fun87420_ip = 124;
-                    continue _fun87420
+                    _fun87392_ip = 124;
+                    continue _fun87392
                 }
             case 81:
                 var2 = _closure1_slot0;

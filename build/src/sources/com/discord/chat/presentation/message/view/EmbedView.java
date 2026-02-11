@@ -103,7 +103,7 @@ public final class EmbedView extends FrameLayout {
         ViewUtilsKt.setOptionalText(authorName, null);
         SimpleDraweeView authorAvatar = this.binding.authorAvatar;
         Intrinsics.checkNotNullExpressionValue(authorAvatar, "authorAvatar");
-        SetOptionalImageUrlKt.setOptionalImageUrl$default(authorAvatar, null, null, null, null, 14, null);
+        SetOptionalImageUrlKt.setOptionalImageUrl$default(authorAvatar, null, null, null, null, null, null, 62, null);
         LinearLayout authorContainer = this.binding.authorContainer;
         Intrinsics.checkNotNullExpressionValue(authorContainer, "authorContainer");
         authorContainer.setVisibility(8);
@@ -142,7 +142,7 @@ public final class EmbedView extends FrameLayout {
         ViewUtilsKt.setOptionalText(footerText, null);
         SimpleDraweeView footerAvatar = this.binding.footerAvatar;
         Intrinsics.checkNotNullExpressionValue(footerAvatar, "footerAvatar");
-        SetOptionalImageUrlKt.setOptionalImageUrl$default(footerAvatar, null, null, null, null, 14, null);
+        SetOptionalImageUrlKt.setOptionalImageUrl$default(footerAvatar, null, null, null, null, null, null, 62, null);
         LinearLayout footerContainer = this.binding.footerContainer;
         Intrinsics.checkNotNullExpressionValue(footerContainer, "footerContainer");
         footerContainer.setVisibility(8);
@@ -179,7 +179,7 @@ public final class EmbedView extends FrameLayout {
     private final void clearThumbnail() {
         SimpleDraweeView thumbnail = this.binding.thumbnail;
         Intrinsics.checkNotNullExpressionValue(thumbnail, "thumbnail");
-        SetOptionalImageUrlKt.setOptionalImageUrl$default(thumbnail, null, null, null, null, 14, null);
+        SetOptionalImageUrlKt.setOptionalImageUrl$default(thumbnail, null, null, null, null, null, null, 62, null);
     }
 
     private final void clearTitle() {
@@ -240,7 +240,7 @@ public final class EmbedView extends FrameLayout {
         ViewUtilsKt.setOptionalText(authorName, str2);
         SimpleDraweeView authorAvatar = this.binding.authorAvatar;
         Intrinsics.checkNotNullExpressionValue(authorAvatar, "authorAvatar");
-        SetOptionalImageUrlKt.setOptionalImageUrl$default(authorAvatar, str, Boolean.valueOf(z10), null, null, 12, null);
+        SetOptionalImageUrlKt.setOptionalImageUrl$default(authorAvatar, str, Boolean.valueOf(z10), null, null, null, null, 60, null);
     }
 
     private final void setAuthorOnClickListener(View.OnClickListener onClickListener, final Function1<? super CharSequence, Unit> function1) {
@@ -553,7 +553,7 @@ public final class EmbedView extends FrameLayout {
         footerContainer.setVisibility(i10);
         SimpleDraweeView footerAvatar = this.binding.footerAvatar;
         Intrinsics.checkNotNullExpressionValue(footerAvatar, "footerAvatar");
-        SetOptionalImageUrlKt.setOptionalImageUrl$default(footerAvatar, str, Boolean.valueOf(z10), null, null, 12, null);
+        SetOptionalImageUrlKt.setOptionalImageUrl$default(footerAvatar, str, Boolean.valueOf(z10), null, null, null, null, 60, null);
         TextView textView = this.binding.footerText;
         Intrinsics.checkNotNull(textView);
         ViewUtilsKt.setOptionalText(textView, str2);
@@ -694,7 +694,7 @@ public final class EmbedView extends FrameLayout {
         if (embedThumbnail != null) {
             num = embedThumbnail.getPlaceholderVersion();
         }
-        SetOptionalImageUrlKt.setOptionalImageUrl(simpleDraweeView, str, valueOf, valueOf2, GetMediaImagePlaceholderStatesListenerKt.getMediaImagePlaceholderStatesListener(thumbnail, str2, num));
+        SetOptionalImageUrlKt.setOptionalImageUrl$default(simpleDraweeView, str, valueOf, valueOf2, GetMediaImagePlaceholderStatesListenerKt.getMediaImagePlaceholderStatesListener(thumbnail, str2, num), null, null, 48, null);
     }
 
     private final void setTitle(final String str, DraweeSpanStringBuilder draweeSpanStringBuilder, Integer num, View.OnClickListener onClickListener, final Function1<? super String, Unit> function1) {
@@ -995,7 +995,7 @@ public final class EmbedView extends FrameLayout {
         SetTextSizeSpKt.setTextSizeSp(error2, 12.0f);
         SimpleDraweeView errorIcon = inflate.errorIcon;
         Intrinsics.checkNotNullExpressionValue(errorIcon, "errorIcon");
-        ReactAssetUtilsKt.setReactAsset(errorIcon, ReactAsset.Alert);
+        ReactAssetUtilsKt.setReactAsset(errorIcon, ReactAsset.CircleErrorIcon);
         inflate.imageBlurBg.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundBaseLower());
     }
 }

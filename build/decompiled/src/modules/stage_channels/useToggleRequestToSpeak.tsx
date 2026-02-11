@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/useToggleRequestToSpeak.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun68354: for (var _fun68354_ip = 0;;) switch (_fun68354_ip) {
+        _fun68360: for (var _fun68360_ip = 0;;) switch (_fun68360_ip) {
             case 0:
                 var4 = arg0;
                 var _closure2_slot0 = var4;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.REQUESTED_TO_SPEAK;
                 var0 = var4 === var0;
                 if (var0) {
-                    _fun68354_ip = 156;
-                    continue _fun68354
+                    _fun68360_ip = 156;
+                    continue _fun68360
                 }
             case 123:
                 var5 = _closure1_slot0;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = new Array(2);
                 var0[0] = var2;
                 var1 = function() { // Environment: var1
-                    _fun68357: for (var _fun68357_ip = 0;;) switch (_fun68357_ip) {
+                    _fun68363: for (var _fun68363_ip = 0;;) switch (_fun68363_ip) {
                         case 0:
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot2;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.id;
                             var2 = var3.bind(var5)(var2);
                             if (var2) {
-                                _fun68357_ip = 195;
-                                continue _fun68357
+                                _fun68363_ip = 195;
+                                continue _fun68363
                             }
                         case 54:
                             var3 = _closure2_slot1;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.RequestToSpeakStates;
                             var2 = var2.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
                             if (!(var3 !== var2)) {
-                                _fun68357_ip = 139;
-                                continue _fun68357
+                                _fun68363_ip = 139;
+                                continue _fun68363
                             }
                         case 94:
                             var3 = _closure1_slot0;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot3;
                             var2 = !var2;
                             var2 = var5.bind(var6)(var3, var2);
-                            _fun68357_ip = 177;
-                            continue _fun68357;
+                            _fun68363_ip = 177;
+                            continue _fun68363;
                         case 139:
                             var3 = _closure1_slot0;
                             var5 = _closure1_slot2;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot3;
                             var1 = !var1;
                             var1 = var2.bind(var0)(var1);
-                            _fun68357_ip = 261;
-                            continue _fun68357;
+                            _fun68363_ip = 261;
+                            continue _fun68363;
                         case 195:
                             var2 = _closure1_slot1;
                             var6 = _closure1_slot2;
@@ -195,4 +195,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1216, 566, 4248, 4257, 5994, 4565, 5978, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1216, 566, 4244, 4253, 5993, 4561, 5977, 2]);

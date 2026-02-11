@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/oauth2/native/BotPermissions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun48878: for (var _fun48878_ip = 0;;) switch (_fun48878_ip) {
+        _fun48877: for (var _fun48877_ip = 0;;) switch (_fun48877_ip) {
             case 0:
                 var2 = arg0;
                 var21 = var2.application;
@@ -347,8 +347,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5 > var6;
                 var5 = null;
                 if (!var6) {
-                    _fun48878_ip = 701;
-                    continue _fun48878
+                    _fun48877_ip = 701;
+                    continue _fun48877
                 }
             case 518:
                 var8 = _closure1_slot7;
@@ -401,4 +401,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 3098, 484, 5417, 5502, 4090, 4744, 3942, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 3098, 484, 5416, 5501, 4086, 4742, 3938, 1234, 2]);

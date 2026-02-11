@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.android = var4;
     var _closure1_slot3 = var3;
     var1 = function() {
-        _fun65970: for (var _fun65970_ip = 0;;) switch (_fun65970_ip) {
+        _fun65976: for (var _fun65976_ip = 0;;) switch (_fun65976_ip) {
             case 0: // try_start_0
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;

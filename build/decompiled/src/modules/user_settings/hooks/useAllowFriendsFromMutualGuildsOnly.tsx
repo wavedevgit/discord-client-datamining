@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/hooks/useAllowFriendsFromMutualGuildsOnly.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun89422: for (var _fun89422_ip = 0;;) switch (_fun89422_ip) {
+        _fun89394: for (var _fun89394_ip = 0;;) switch (_fun89394_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var0, var1);
                 var0 = var1.mutualGuilds;
                 if (!var0) {
-                    _fun89422_ip = 95;
-                    continue _fun89422
+                    _fun89394_ip = 95;
+                    continue _fun89394
                 }
             case 86:
                 var1 = var1.all;

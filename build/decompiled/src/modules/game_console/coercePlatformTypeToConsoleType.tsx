@@ -30,28 +30,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_console/coercePlatformTypeToConsoleType.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun68669: for (var _fun68669_ip = 0;;) switch (_fun68669_ip) {
+        _fun68675: for (var _fun68675_ip = 0;;) switch (_fun68675_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot1;
                 var1 = var1.XBOX;
                 if (!(var1 !== var2)) {
-                    _fun68669_ip = 64;
-                    continue _fun68669
+                    _fun68675_ip = 64;
+                    continue _fun68675
                 }
             case 20:
                 var1 = _closure1_slot1;
                 var1 = var1.PLAYSTATION;
                 if (!(var1 !== var2)) {
-                    _fun68669_ip = 52;
-                    continue _fun68669
+                    _fun68675_ip = 52;
+                    continue _fun68675
                 }
             case 34:
                 var1 = _closure1_slot1;
                 var1 = var1.PLAYSTATION_STAGING;
                 if (!(var1 !== var2)) {
-                    _fun68669_ip = 52;
-                    continue _fun68669
+                    _fun68675_ip = 52;
+                    continue _fun68675
                 }
             case 48:
                 var1 = null;
@@ -68,22 +68,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.coercePlatformTypeToConsoleType = var3;
     var1 = function arg0, arg1() {
-        _fun68670: for (var _fun68670_ip = 0;;) switch (_fun68670_ip) {
+        _fun68676: for (var _fun68676_ip = 0;;) switch (_fun68676_ip) {
             case 0:
                 var3 = arg0;
                 var4 = arg1;
                 var1 = _closure1_slot0;
                 var1 = var1.XBOX;
                 if (!(var1 !== var3)) {
-                    _fun68670_ip = 109;
-                    continue _fun68670
+                    _fun68676_ip = 109;
+                    continue _fun68676
                 }
             case 25:
                 var1 = _closure1_slot0;
                 var1 = var1.PLAYSTATION;
                 if (!(var1 !== var3)) {
-                    _fun68670_ip = 43;
-                    continue _fun68670
+                    _fun68676_ip = 43;
+                    continue _fun68676
                 }
             case 39:
                 var1 = null;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 43:
                 var3 = var4.some;
                 var1 = function(arg0) { // Environment: var2
-                    _fun68671: for (var _fun68671_ip = 0;;) switch (_fun68671_ip) {
+                    _fun68677: for (var _fun68677_ip = 0;;) switch (_fun68677_ip) {
                         case 0:
                             var0 = arg0;
                             var2 = var0.type;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.PLAYSTATION_STAGING;
                             var0 = var2 === var0;
                             if (!var0) {
-                                _fun68671_ip = 37;
-                                continue _fun68671
+                                _fun68677_ip = 37;
+                                continue _fun68677
                             }
                         case 34:
                             var0 = var1;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)(var1);
                 var3 = var4.some;
                 var2 = function(arg0) { // Environment: var2
-                    _fun68672: for (var _fun68672_ip = 0;;) switch (_fun68672_ip) {
+                    _fun68678: for (var _fun68678_ip = 0;;) switch (_fun68678_ip) {
                         case 0:
                             var0 = arg0;
                             var2 = var0.type;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.PLAYSTATION;
                             var0 = var2 === var0;
                             if (!var0) {
-                                _fun68672_ip = 37;
-                                continue _fun68672
+                                _fun68678_ip = 37;
+                                continue _fun68678
                             }
                         case 34:
                             var0 = var1;
@@ -132,19 +132,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var2 = var3.bind(var4)(var2);
                 if (var2) {
-                    _fun68670_ip = 97;
-                    continue _fun68670
+                    _fun68676_ip = 97;
+                    continue _fun68676
                 }
             case 82:
                 if (!var1) {
-                    _fun68670_ip = 97;
-                    continue _fun68670
+                    _fun68676_ip = 97;
+                    continue _fun68676
                 }
             case 85:
                 var1 = _closure1_slot1;
                 var1 = var1.PLAYSTATION_STAGING;
-                _fun68670_ip = 107;
-                continue _fun68670;
+                _fun68676_ip = 107;
+                continue _fun68676;
             case 97:
                 var2 = _closure1_slot1;
                 var1 = var2.PLAYSTATION;
@@ -158,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.coerceConsoleTypeToPlatformType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5402, 660, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5400, 660, 2]);

@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/PlusLargeIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun73494: for (var _fun73494_ip = 0;;) switch (_fun73494_ip) {
+        _fun73500: for (var _fun73500_ip = 0;;) switch (_fun73500_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun73494_ip = 53;
-                    continue _fun73494
+                    _fun73500_ip = 53;
+                    continue _fun73500
                 }
             case 19:
                 var1 = _closure1_slot1;

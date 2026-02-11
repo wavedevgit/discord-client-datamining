@@ -32,13 +32,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun59102: for (var _fun59102_ip = 0;;) switch (_fun59102_ip) {
+                _fun59108: for (var _fun59108_ip = 0;;) switch (_fun59108_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun59102_ip = 55;
-                            continue _fun59102
+                            _fun59108_ip = 55;
+                            continue _fun59108
                         }
                     case 7:
                         var3 = _closure1_slot0;
@@ -78,13 +78,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun59106: for (var _fun59106_ip = 0;;) switch (_fun59106_ip) {
+                _fun59112: for (var _fun59112_ip = 0;;) switch (_fun59112_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun59106_ip = 113;
-                            continue _fun59106
+                            _fun59112_ip = 113;
+                            continue _fun59112
                         }
                     case 7:
                         var1 = arg0;
@@ -98,8 +98,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var3.isIosStorekit2;
                         var2 = var2.bind(var3)();
                         if (var2) {
-                            _fun59106_ip = 85;
-                            continue _fun59106
+                            _fun59112_ip = 85;
+                            continue _fun59112
                         }
                     case 54:
                         var3 = _closure1_slot4;
@@ -107,15 +107,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = null;
                         var1 = var1 != var4;
                         if (!var1) {
-                            _fun59106_ip = 78;
-                            continue _fun59106
+                            _fun59112_ip = 78;
+                            continue _fun59112
                         }
                     case 75:
                         var1 = var4;
                     case 78:
                         var1 = var2.bind(var3)(var1);
-                        _fun59106_ip = 110;
-                        continue _fun59106;
+                        _fun59112_ip = 110;
+                        continue _fun59112;
                     case 85:
                         var2 = global;
                         var4 = var2.Promise;
@@ -150,13 +150,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun59110: for (var _fun59110_ip = 0;;) switch (_fun59110_ip) {
+                _fun59116: for (var _fun59116_ip = 0;;) switch (_fun59116_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun59110_ip = 57;
-                            continue _fun59110
+                            _fun59116_ip = 57;
+                            continue _fun59116
                         }
                     case 7:
                         var3 = _closure1_slot0;
@@ -196,13 +196,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0, arg1) { // Environment: var0
             var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun59114: for (var _fun59114_ip = 0;;) switch (_fun59114_ip) {
+                _fun59120: for (var _fun59120_ip = 0;;) switch (_fun59120_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun59114_ip = 183;
-                            continue _fun59114
+                            _fun59120_ip = 183;
+                            continue _fun59120
                         }
                     case 10:
                         var2 = global;
@@ -229,14 +229,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 89:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun59114_ip = 180;
-                            continue _fun59114
+                            _fun59120_ip = 180;
+                            continue _fun59120
                         }
                     case 95:
                         var3 = var1.ok;
                         if (var3) {
-                            _fun59114_ip = 167;
-                            continue _fun59114
+                            _fun59120_ip = 167;
+                            continue _fun59120
                         }
                     case 104:
                         var5 = var2.Object;
@@ -290,14 +290,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun59118: for (var _fun59118_ip = 0;;) switch (_fun59118_ip) {
+                _fun59124: for (var _fun59124_ip = 0;;) switch (_fun59124_ip) {
                     case 0:
                         StartGenerator();
                         var6 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun59118_ip = 103;
-                            continue _fun59118
+                            _fun59124_ip = 103;
+                            continue _fun59124
                         }
                     case 10:
                         var3 = _closure1_slot5;
@@ -310,22 +310,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 35:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun59118_ip = 100;
-                            continue _fun59118
+                            _fun59124_ip = 100;
+                            continue _fun59124
                         }
                     case 41:
                         var3 = var1;
                         if (!var1) {
-                            _fun59118_ip = 94;
-                            continue _fun59118
+                            _fun59124_ip = 94;
+                            continue _fun59124
                         }
                     case 47:
                         var7 = var1.status;
                         var4 = 21007;
                         var3 = var1;
                         if (!(var4 === var7)) {
-                            _fun59118_ip = 94;
-                            continue _fun59118
+                            _fun59124_ip = 94;
+                            continue _fun59124
                         }
                     case 65:
                         var4 = _closure1_slot5;
@@ -338,8 +338,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 4);
                         var3 = var2;
                         if (var4) {
-                            _fun59118_ip = 97;
-                            continue _fun59118
+                            _fun59124_ip = 97;
+                            continue _fun59124
                         }
                     case 94:
                         return var3;
@@ -374,28 +374,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun59122: for (var _fun59122_ip = 0;;) switch (_fun59122_ip) {
+                _fun59128: for (var _fun59128_ip = 0;;) switch (_fun59128_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun59122_ip = 108;
-                            continue _fun59122
+                            _fun59128_ip = 108;
+                            continue _fun59128
                         }
                     case 10:
                         var3 = var1.receiptBody;
                         var1 = var1.isTest;
                         var2 = null;
                         if (!(var2 != var1)) {
-                            _fun59122_ip = 78;
-                            continue _fun59122
+                            _fun59128_ip = 78;
+                            continue _fun59128
                         }
                     case 32:
                         var4 = 'https://buy.itunes.apple.com/verifyReceipt';
                         if (!var1) {
-                            _fun59122_ip = 47;
-                            continue _fun59122
+                            _fun59128_ip = 47;
+                            continue _fun59128
                         }
                     case 41:
                         var4 = 'https://sandbox.itunes.apple.com/verifyReceipt';
@@ -409,8 +409,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 66:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun59122_ip = 75;
-                            continue _fun59122
+                            _fun59128_ip = 75;
+                            continue _fun59128
                         }
                     case 72:
                         return var1;
@@ -426,8 +426,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 96:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun59122_ip = 105;
-                            continue _fun59122
+                            _fun59128_ip = 105;
+                            continue _fun59128
                         }
                     case 102:
                         return var1;
@@ -458,7 +458,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.getReceiptIOS = var5;
     var2.presentCodeRedemptionSheetIOS = var4;
     var4 = function() {
-        _fun59124: for (var _fun59124_ip = 0;;) switch (_fun59124_ip) {
+        _fun59130: for (var _fun59130_ip = 0;;) switch (_fun59130_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -469,15 +469,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.isIosStorekit2;
                 var1 = var1.bind(var2)();
                 if (var1) {
-                    _fun59124_ip = 56;
-                    continue _fun59124
+                    _fun59130_ip = 56;
+                    continue _fun59130
                 }
             case 38:
                 var1 = _closure1_slot4;
                 var0 = var1.promotedProduct;
                 var0 = var0.bind(var1)();
-                _fun59124_ip = 81;
-                continue _fun59124;
+                _fun59130_ip = 81;
+                continue _fun59130;
             case 56:
                 var1 = global;
                 var3 = var1.Promise;

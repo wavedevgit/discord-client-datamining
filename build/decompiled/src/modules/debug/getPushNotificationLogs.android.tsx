@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var1.bind(var2)(var0);
         var1 = var2.then;
         var0 = function(arg0) { // Environment: var0
-            _fun70802: for (var _fun70802_ip = 0;;) switch (_fun70802_ip) {
+            _fun70808: for (var _fun70808_ip = 0;;) switch (_fun70808_ip) {
                 case 0:
                     var0 = global;
                     var2 = var0.JSON;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.pushNotifications;
                     var1 = null;
                     if (!(var1 == var0)) {
-                        _fun70802_ip = 40;
-                        continue _fun70802
+                        _fun70808_ip = 40;
+                        continue _fun70808
                     }
                 case 36:
                     var0 = new Array(0);

@@ -196,7 +196,7 @@ public final class OverlayTrashWrap extends OverlayView {
         super.setAssets(assets);
         SimpleDraweeView trashWrapIcon = this.binding.trashWrapIcon;
         Intrinsics.checkNotNullExpressionValue(trashWrapIcon, "trashWrapIcon");
-        ReactAssetUtilsKt.setReactAsset(trashWrapIcon, ReactAsset.Close);
+        ReactAssetUtilsKt.setReactAsset(trashWrapIcon, ReactAsset.XSmallIcon);
         SimpleDraweeView trashWrapIcon2 = this.binding.trashWrapIcon;
         Intrinsics.checkNotNullExpressionValue(trashWrapIcon2, "trashWrapIcon");
         ColorUtilsKt.setTintColor(trashWrapIcon2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()));

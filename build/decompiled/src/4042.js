@@ -1,235 +1,131 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
     var2 = exports;
-    var0 = global;
-    var6 = var0.Object;
-    var3 = var6.defineProperty;
+    var7 = dependencyMap;
+    var8 = global;
+    var9 = var8.Object;
+    var6 = var9.defineProperty;
     var1 = {};
-    var5 = true;
-    var1.value = var5;
+    var4 = true;
+    var1.value = var4;
     var0 = '__esModule';
-    var0 = var3.bind(var6)(var2, var0, var1);
-    var0 = {};
-    var3 = false;
-    var1 = {
-        'controlledBottomTabs': false,
-        'synchronousScreenUpdatesEnabled': false,
-        'synchronousHeaderConfigUpdatesEnabled': false,
-        'synchronousHeaderSubviewUpdatesEnabled': false,
-        'androidResetScreenShadowStateOnOrientationChangeEnabled': true,
-        'iosPreventReattachmentOfDismissedScreens': false
-    };
-    var0.experiment = var1;
-    var1 = {};
-    var0.stable = var1;
-    var _closure1_slot0 = var0;
-    var1 = function arg0, arg1() {
-        var0 = arg0;
-        var _closure2_slot0 = var0;
-        var0 = arg1;
-        var _closure2_slot1 = var0;
-        var0 = {};
-        var2 = function() {
-            var0 = _closure1_slot0;
-            var1 = var0.experiment;
-            var0 = _closure2_slot0;
-            var0 = var1[var0];
-            return var0;
-        };
-        var0.get = var2;
-        var1 = function arg0() {
-            _fun37414: for (var _fun37414_ip = 0;;) switch (_fun37414_ip) {
-                case 0:
-                    var2 = arg0;
-                    var0 = _closure1_slot0;
-                    var4 = var0.experiment;
-                    var3 = _closure2_slot0;
-                    var3 = var4[var3];
-                    var3 = var2 !== var3;
-                    if (!var3) {
-                        _fun37414_ip = 60;
-                        continue _fun37414
-                    }
-                case 34:
-                    var4 = _closure1_slot0;
-                    var5 = var4.experiment;
-                    var4 = _closure2_slot0;
-                    var5 = var5[var4];
-                    var4 = _closure2_slot1;
-                    var3 = var5 !== var4;
-                case 60:
-                    if (!var3) {
-                        _fun37414_ip = 114;
-                        continue _fun37414
-                    }
-                case 63:
-                    var3 = global;
-                    var5 = var3.console;
-                    var4 = var5.error;
-                    var8 = _closure2_slot0;
-                    var3 = var3.HermesInternal;
-                    var7 = var3.concat;
-                    var6 = '[RNScreens] ';
-                    var3 = ' feature flag modified for a second time; this might lead to unexpected effects';
-                    var3 = var7.bind(var6)(var8, var3);
-                    var3 = var4.bind(var5)(var3);
-                case 114:
-                    var1 = _closure1_slot0;
-                    var1 = var1.experiment;
-                    var0 = _closure2_slot0;
-                    var1[var0] = var2;
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var0.set = var1;
-        return var0;
-    };
+    var0 = var6.bind(var9)(var2, var0, var1);
+    var0 = 0;
+    var1 = var7[var0];
     var0 = undefined;
-    var12 = 'controlledBottomTabs';
-    var6 = var1.bind(var0)(var12, var3);
-    var _closure1_slot1 = var6;
-    var11 = 'synchronousScreenUpdatesEnabled';
-    var6 = var1.bind(var0)(var11, var3);
-    var _closure1_slot2 = var6;
-    var10 = 'synchronousHeaderConfigUpdatesEnabled';
-    var6 = var1.bind(var0)(var10, var3);
-    var _closure1_slot3 = var6;
-    var9 = 'synchronousHeaderSubviewUpdatesEnabled';
-    var6 = var1.bind(var0)(var9, var3);
-    var _closure1_slot4 = var6;
-    var8 = 'androidResetScreenShadowStateOnOrientationChangeEnabled';
-    var5 = var1.bind(var0)(var8, var5);
-    var _closure1_slot5 = var5;
-    var6 = 'iosPreventReattachmentOfDismissedScreens';
-    var1 = var1.bind(var0)(var6, var3);
-    var _closure1_slot6 = var1;
+    var1 = var5.bind(var0)(var1);
+    var1 = var1.codegenNativeComponent;
     var1 = {};
-    var3 = {};
-    var7 = function() {
-        var1 = _closure1_slot1;
-        var0 = var1.get;
-        var0 = var0.bind(var1)();
+    var6 = 'RNSScreenStackHeaderConfig';
+    var1.uiViewClassName = var6;
+    var9 = {};
+    var10 = {};
+    var11 = 'onAttached';
+    var10.registrationName = var11;
+    var9.topAttached = var10;
+    var10 = {};
+    var11 = 'onDetached';
+    var10.registrationName = var11;
+    var9.topDetached = var10;
+    var10 = {};
+    var11 = 'onPressHeaderBarButtonItem';
+    var10.registrationName = var11;
+    var9.topPressHeaderBarButtonItem = var10;
+    var10 = {};
+    var11 = 'onPressHeaderBarButtonMenuItem';
+    var10.registrationName = var11;
+    var9.topPressHeaderBarButtonMenuItem = var10;
+    var1.directEventTypes = var9;
+    var10 = var8.Object;
+    var9 = var10.assign;
+    var8 = {
+        'backgroundColor': null,
+        'backTitle': true,
+        'backTitleFontFamily': true,
+        'backTitleFontSize': true,
+        'backTitleVisible': true,
+        'color': null,
+        'direction': true,
+        'hidden': true,
+        'hideShadow': true,
+        'largeTitle': true,
+        'largeTitleFontFamily': true,
+        'largeTitleFontSize': true,
+        'largeTitleFontWeight': true,
+        'largeTitleBackgroundColor': null,
+        'largeTitleHideShadow': true
+    };
+    var11 = {};
+    var12 = 1;
+    var13 = var7[var12];
+    var13 = var5.bind(var0)(var13);
+    var13 = var13.default;
+    var11.process = var13;
+    var8.backgroundColor = var11;
+    var11 = {};
+    var13 = var7[var12];
+    var13 = var5.bind(var0)(var13);
+    var13 = var13.default;
+    var11.process = var13;
+    var8.color = var11;
+    var11 = {};
+    var13 = var7[var12];
+    var13 = var5.bind(var0)(var13);
+    var13 = var13.default;
+    var11.process = var13;
+    var8.largeTitleBackgroundColor = var11;
+    var11 = {};
+    var13 = var7[var12];
+    var13 = var5.bind(var0)(var13);
+    var13 = var13.default;
+    var11.process = var13;
+    var8.largeTitleColor = var11;
+    var8.translucent = var4;
+    var8.title = var4;
+    var8.titleFontFamily = var4;
+    var8.titleFontSize = var4;
+    var8.titleFontWeight = var4;
+    var11 = {};
+    var12 = var7[var12];
+    var12 = var5.bind(var0)(var12);
+    var12 = var12.default;
+    var11.process = var12;
+    var8.titleColor = var11;
+    var8.disableBackButtonMenu = var4;
+    var8.backButtonDisplayMode = var4;
+    var8.hideBackButton = var4;
+    var8.backButtonInCustomView = var4;
+    var8.blurEffect = var4;
+    var8.topInsetEnabled = var4;
+    var8.headerLeftBarButtonItems = var4;
+    var8.headerRightBarButtonItems = var4;
+    var8.synchronousShadowStateUpdatesEnabled = var4;
+    var8.userInterfaceStyle = var4;
+    var4 = 2;
+    var4 = var7[var4];
+    var12 = var5.bind(var0)(var4);
+    var11 = var12.ConditionallyIgnoredEventHandlers;
+    var4 = {
+        'onAttached': true,
+        'onDetached': true,
+        'onPressHeaderBarButtonItem': true,
+        'onPressHeaderBarButtonMenuItem': true
+    };
+    var4 = var11.bind(var12)(var4);
+    var4 = var9.bind(var10)(var8, var4);
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 3;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
         return var0;
     };
-    var5 = function arg0() {
-        var2 = _closure1_slot1;
-        var1 = var2.set;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    Object.defineProperty(var3, var12, {
-        get: var7,
-        set: var5,
-        enumerable: true
-    });
-    var7 = function() {
-        var1 = _closure1_slot2;
-        var0 = var1.get;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var5 = function arg0() {
-        var2 = _closure1_slot2;
-        var1 = var2.set;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    Object.defineProperty(var3, var11, {
-        get: var7,
-        set: var5,
-        enumerable: true
-    });
-    var7 = function() {
-        var1 = _closure1_slot3;
-        var0 = var1.get;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var5 = function arg0() {
-        var2 = _closure1_slot3;
-        var1 = var2.set;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    Object.defineProperty(var3, var10, {
-        get: var7,
-        set: var5,
-        enumerable: true
-    });
-    var7 = function() {
-        var1 = _closure1_slot4;
-        var0 = var1.get;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var5 = function arg0() {
-        var2 = _closure1_slot4;
-        var1 = var2.set;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    Object.defineProperty(var3, var9, {
-        get: var7,
-        set: var5,
-        enumerable: true
-    });
-    var7 = function() {
-        var1 = _closure1_slot5;
-        var0 = var1.get;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var5 = function arg0() {
-        var2 = _closure1_slot5;
-        var1 = var2.set;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    Object.defineProperty(var3, var8, {
-        get: var7,
-        set: var5,
-        enumerable: true
-    });
-    var5 = function() {
-        var1 = _closure1_slot6;
-        var0 = var1.get;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var4 = function arg0() {
-        var2 = _closure1_slot6;
-        var1 = var2.set;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    Object.defineProperty(var3, var6, {
-        get: var5,
-        set: var4,
-        enumerable: true
-    });
-    var1.experiment = var3;
-    var3 = {};
-    var1.stable = var3;
-    var2.default = var1;
-    var3 = {
-        'isNewBackTitleImplementation': true,
-        'usesHeaderFlexboxImplementation': true,
-        'usesNewAndroidHeaderHeightImplementation': true
-    };
-    var2.compatibilityFlags = var3;
-    var2.featureFlags = var1;
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 38, 110, 42]);

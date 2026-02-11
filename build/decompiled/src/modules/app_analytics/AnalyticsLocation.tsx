@@ -221,6 +221,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE = var0;
     var0 = 'guild powerups - coachmark - game server hosting available';
     var1.GUILD_POWERUPS_COACHMARK_GAME_SERVER_HOSTING_AVAILABLE = var0;
+    var0 = 'guild powerups - coachmark - boost to unlock';
+    var1.GUILD_POWERUPS_COACHMARK_BOOST_TO_UNLOCK = var0;
     var0 = 'guild powerups - marketing';
     var1.GUILD_POWERUPS_MARKETING = var0;
     var0 = 'guild boosting premium upsell';

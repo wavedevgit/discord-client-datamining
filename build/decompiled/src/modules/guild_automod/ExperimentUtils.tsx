@@ -41,13 +41,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isInMentionRaidExperiment = var3;
     var1 = function arg0() {
-        _fun70352: for (var _fun70352_ip = 0;;) switch (_fun70352_ip) {
+        _fun70358: for (var _fun70358_ip = 0;;) switch (_fun70358_ip) {
             case 0:
                 var4 = arguments[1];
                 var2 = undefined;
                 if (!(var4 === var2)) {
-                    _fun70352_ip = 11;
-                    continue _fun70352
+                    _fun70358_ip = 11;
+                    continue _fun70358
                 }
             case 9:
                 var4 = true;

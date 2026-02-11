@@ -5,48 +5,50 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var6;
     var3 = function arg0() {
-        _fun51365: for (var _fun51365_ip = 0;;) switch (_fun51365_ip) {
+        _fun51364: for (var _fun51364_ip = 0;;) switch (_fun51364_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun51365_ip = 120;
-                    continue _fun51365
+                    _fun51364_ip = 120;
+                    continue _fun51364
                 }
             case 9:
-                var1 = _closure1_slot3;
+                var1 = _closure1_slot5;
                 var4 = var1.CALLABLE;
                 var2 = var4.has;
                 var1 = var3.type;
                 var1 = var2.bind(var4)(var1);
                 if (var1) {
-                    _fun51365_ip = 116;
-                    continue _fun51365
+                    _fun51364_ip = 116;
+                    continue _fun51364
                 }
             case 40:
-                var4 = _closure1_slot1;
+                var4 = _closure1_slot3;
                 var2 = var4.can;
-                var1 = _closure1_slot4;
+                var1 = _closure1_slot6;
                 var1 = var1.USE_SOUNDBOARD;
                 var2 = var2.bind(var4)(var1, var3);
-                var4 = _closure1_slot1;
+                var4 = _closure1_slot3;
                 var1 = var4.can;
-                var0 = _closure1_slot4;
+                var0 = _closure1_slot6;
                 var0 = var0.SPEAK;
                 var1 = var1.bind(var4)(var0, var3);
                 var0 = var3.isGuildVoiceOrThread;
                 var0 = var0.bind(var3)();
                 if (!var0) {
-                    _fun51365_ip = 108;
-                    continue _fun51365
+                    _fun51364_ip = 108;
+                    continue _fun51364
                 }
             case 105:
                 var0 = var2;
             case 108:
                 if (!var0) {
-                    _fun51365_ip = 114;
-                    continue _fun51365
+                    _fun51364_ip = 114;
+                    continue _fun51364
                 }
             case 111:
                 var0 = var1;
@@ -60,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot5 = var3;
+    var _closure1_slot7 = var3;
     var0 = global;
     var9 = var0.Object;
     var8 = var9.defineProperty;
@@ -73,41 +75,67 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var6[var0];
     var0 = undefined;
     var4 = var7.bind(var0)(var4);
-    var _closure1_slot0 = var4;
+    var _closure1_slot2 = var4;
     var4 = 1;
     var4 = var6[var4];
     var4 = var7.bind(var0)(var4);
-    var _closure1_slot1 = var4;
+    var _closure1_slot3 = var4;
     var4 = 2;
     var4 = var6[var4];
     var4 = var7.bind(var0)(var4);
-    var _closure1_slot2 = var4;
+    var _closure1_slot4 = var4;
     var4 = 3;
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
     var7 = var4.ChannelTypesSets;
-    var _closure1_slot3 = var7;
+    var _closure1_slot5 = var7;
     var4 = var4.Permissions;
-    var _closure1_slot4 = var4;
-    var4 = 4;
+    var _closure1_slot6 = var4;
+    var4 = 5;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/soundboard/canChannelUseSoundboard.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() {
-        var2 = _closure1_slot2;
+    var3 = function() {
+        var2 = _closure1_slot4;
         var1 = var2.getVoiceChannelId;
         var3 = var1.bind(var2)();
-        var2 = _closure1_slot5;
-        var1 = _closure1_slot0;
+        var2 = _closure1_slot7;
+        var1 = _closure1_slot2;
         var0 = var1.getChannel;
         var1 = var0.bind(var1)(var3);
         var0 = undefined;
         var0 = var2.bind(var0)(var1);
         return var0;
     };
-    var2.canSelectedVoiceChannelUseSoundboard = var1;
+    var2.canSelectedVoiceChannelUseSoundboard = var3;
+    var1 = function arg0() {
+        var5 = arg0;
+        var _closure2_slot0 = var5;
+        var4 = _closure1_slot0;
+        var3 = _closure1_slot1;
+        var2 = 4;
+        var3 = var3[var2];
+        var2 = undefined;
+        var4 = var4.bind(var2)(var3);
+        var3 = var4.useStateFromStores;
+        var1 = _closure1_slot3;
+        var2 = new Array(1);
+        var2[0] = var1;
+        var1 = new Array(1);
+        var1[0] = var5;
+        var0 = function() { // Environment: var0
+            var2 = _closure1_slot7;
+            var1 = _closure2_slot0;
+            var0 = undefined;
+            var0 = var2.bind(var0)(var1);
+            return var0;
+        };
+        var0 = var3.bind(var4)(var2, var0, var1);
+        return var0;
+    };
+    var2.useCanChannelUseSoundboard = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3093, 1672, 660, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3093, 1672, 660, 566, 2]);

@@ -1,159 +1,159 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = function arg0() {
-        _fun34261: for (var _fun34261_ip = 0;;) switch (_fun34261_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = {};
-                var3 = null;
-                var5 = var3 == var2;
-                var4 = undefined;
-                if (var5) {
-                    _fun34261_ip = 37;
-                    continue _fun34261
+    _fun34266: for (var _fun34266_ip = 0;;) switch (_fun34266_ip) {
+        case 0:
+            var9 = require;
+            var8 = exports;
+            var7 = dependencyMap;
+            var0 = global;
+            var10 = var0.Object;
+            var2 = var10.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var2.bind(var10)(var8, var0, var1);
+            var2 = 0;
+            var1 = var7[var2];
+            var0 = undefined;
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 62: {
+                    case 71: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 62;
+                    continue _fun34266;
                 }
-            case 16:
-                var5 = var2.viewConfig;
-                var6 = var3 == var5;
-                var4 = undefined;
-                if (var6) {
-                    _fun34261_ip = 37;
-                    continue _fun34261
+        case 93:
+            var2 = 1;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 113: {
+                    case 122: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 113;
+                    continue _fun34266;
                 }
-            case 31:
-                var4 = var5.uiViewClassName;
-            case 37:
-                var0.viewName = var4;
-                var5 = var3 == var2;
-                var4 = undefined;
-                if (var5) {
-                    _fun34261_ip = 57;
-                    continue _fun34261
+        case 144:
+            var2 = 2;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 164: {
+                    case 173: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 164;
+                    continue _fun34266;
                 }
-            case 51:
-                var4 = var2._nativeTag;
-            case 57:
-                var0.viewTag = var4;
-                var3 = var3 == var2;
-                var1 = undefined;
-                if (var3) {
-                    _fun34261_ip = 77;
-                    continue _fun34261
+        case 195:
+            var2 = 3;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 215: {
+                    case 224: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 215;
+                    continue _fun34266;
                 }
-            case 71:
-                var1 = var2.viewConfig;
-            case 77:
-                var0.viewConfig = var1;
-                return var0;
-        }
-    };
-    var _closure1_slot0 = var2;
-    var2 = function arg0() {
-        _fun34262: for (var _fun34262_ip = 0;;) switch (_fun34262_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = {};
-                var3 = null;
-                var5 = var3 == var2;
-                var4 = undefined;
-                if (var5) {
-                    _fun34262_ip = 37;
-                    continue _fun34262
+        case 246:
+            var2 = 4;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 266: {
+                    case 275: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 266;
+                    continue _fun34266;
                 }
-            case 16:
-                var5 = var2._viewConfig;
-                var6 = var3 == var5;
-                var4 = undefined;
-                if (var6) {
-                    _fun34262_ip = 37;
-                    continue _fun34262
+        case 297:
+            var2 = 5;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 317: {
+                    case 326: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 317;
+                    continue _fun34266;
                 }
-            case 31:
-                var4 = var5.uiViewClassName;
-            case 37:
-                var0.viewName = var4;
-                var5 = var3 == var2;
-                var4 = undefined;
-                if (var5) {
-                    _fun34262_ip = 57;
-                    continue _fun34262
+        case 348:
+            var2 = 6;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 368: {
+                    case 377: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 368;
+                    continue _fun34266;
                 }
-            case 51:
-                var4 = var2.__nativeTag;
-            case 57:
-                var0.viewTag = var4;
-                var3 = var3 == var2;
-                var1 = undefined;
-                if (var3) {
-                    _fun34262_ip = 77;
-                    continue _fun34262
+        case 399:
+            var2 = 7;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 419: {
+                    case 428: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 419;
+                    continue _fun34266;
                 }
-            case 71:
-                var1 = var2._viewConfig;
-            case 77:
-                var0.viewConfig = var1;
-                return var0;
-        }
-    };
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function arg0() {
-        _fun34263: for (var _fun34263_ip = 0;;) switch (_fun34263_ip) {
-            case 0:
-                var3 = arg0;
-                var0 = var3._nativeTag;
-                var2 = undefined;
-                if (!(var2 !== var0)) {
-                    _fun34263_ip = 27;
-                    continue _fun34263
+        case 450:
+            var2 = 8;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 470: {
+                    case 479: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 470;
+                    continue _fun34266;
                 }
-            case 15:
-                var1 = var3.__nativeTag;
-                var0 = null;
-                if (!(var0 === var1)) {
-                    _fun34263_ip = 77;
-                    continue _fun34263
+        case 501:
+            var2 = 9;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 521: {
+                    case 530: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun34266_ip = 521;
+                    continue _fun34266;
                 }
-            case 27:
-                var0 = var3.__nativeTag;
-                if (!(var2 !== var0)) {
-                    _fun34263_ip = 49;
-                    continue _fun34263
-                }
-            case 37:
-                var1 = var3.__nativeTag;
-                var0 = null;
-                if (!(var0 === var1)) {
-                    _fun34263_ip = 63;
-                    continue _fun34263
-                }
-            case 49:
-                var0 = _closure1_slot0;
-                var0 = var0.bind(var2)(var3);
-                _fun34263_ip = 75;
-                continue _fun34263;
-            case 63:
-                var1 = _closure1_slot1;
-                var0 = var1.bind(var2)(var3);
-            case 75:
-                _fun34263_ip = 89;
-                continue _fun34263;
-            case 77:
-                var1 = _closure1_slot0;
-                var0 = var1.bind(var2)(var3);
-            case 89:
-                return var0;
-        }
-    };
-    var1.getViewInfo = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+        case 552:
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3836, 3837, 3838, 3839, 3840, 3841, 3842, 3843, 3844, 3845]);

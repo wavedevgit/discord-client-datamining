@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 8;
         var0 = var12[var0];
         var1 = var10.bind(var3)(var0);
-        var0 = var1.useDismissGuildPowerupsNotifications;
+        var0 = var1.useAutoDismissGuildPowerupsNotifications;
         var0 = var0.bind(var1)(var11);
         var0 = 9;
         var0 = var12[var0];
@@ -312,22 +312,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15[1] = var18;
         var18 = var19.map;
         var16 = function(arg0) { // Environment: var16
-            _fun102748: for (var _fun102748_ip = 0;;) switch (_fun102748_ip) {
+            _fun102725: for (var _fun102725_ip = 0;;) switch (_fun102725_ip) {
                 case 0:
                     var0 = arg0;
                     var3 = var0.type;
                     var2 = _closure1_slot7;
                     var2 = var2.LEVEL;
                     if (!(var2 !== var3)) {
-                        _fun102748_ip = 107;
-                        continue _fun102748
+                        _fun102725_ip = 107;
+                        continue _fun102725
                     }
                 case 25:
                     var2 = _closure1_slot7;
                     var2 = var2.PERK;
                     if (!(var2 !== var3)) {
-                        _fun102748_ip = 43;
-                        continue _fun102748
+                        _fun102725_ip = 43;
+                        continue _fun102725
                     }
                 case 39:
                     var2 = null;
@@ -404,4 +404,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6795, 33, 1297, 671, 5704, 13385, 13391, 1568, 5788, 13400, 4571, 6791, 4719, 1234, 1892, 8961, 4715, 13401, 13403, 13410, 13440, 13452, 13454, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6795, 33, 1297, 671, 5703, 13369, 13375, 1568, 5787, 13386, 4567, 6791, 4717, 1234, 1892, 8961, 4713, 13387, 13389, 13396, 13426, 13438, 13440, 2]);

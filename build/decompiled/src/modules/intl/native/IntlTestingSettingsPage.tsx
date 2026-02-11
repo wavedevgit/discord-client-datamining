@@ -32,14 +32,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = undefined;
             var1 = function*(arg0) { // Environment: var0
                 var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                    _fun87048: for (var _fun87048_ip = 0;;) switch (_fun87048_ip) {
+                    _fun87020: for (var _fun87020_ip = 0;;) switch (_fun87020_ip) {
                         case 0:
                             StartGenerator();
                             var5 = arg0;
                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                             if (var1) {
-                                _fun87048_ip = 71;
-                                continue _fun87048
+                                _fun87020_ip = 71;
+                                continue _fun87020
                             }
                         case 10:
                             var1 = _closure1_slot8;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 28:
                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                             if (var4) {
-                                _fun87048_ip = 68;
-                                continue _fun87048
+                                _fun87020_ip = 68;
+                                continue _fun87020
                             }
                         case 34:
                             var4 = _closure1_slot1;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot13 = var0;
     var0 = function() {
-        _fun87050: for (var _fun87050_ip = 0;;) switch (_fun87050_ip) {
+        _fun87022: for (var _fun87022_ip = 0;;) switch (_fun87022_ip) {
             case 0:
                 var11 = _closure1_slot0;
                 var13 = _closure1_slot2;
@@ -293,8 +293,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.trailing = var8;
                 var8 = 'Locale data does not match';
                 if (!(var10 === var9)) {
-                    _fun87050_ip = 678;
-                    continue _fun87050
+                    _fun87022_ip = 678;
+                    continue _fun87022
                 }
             case 672:
                 var8 = 'Locale data matches current locale';
@@ -622,4 +622,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 5, 31, 27, 1688, 1687, 33, 1297, 671, 5485, 1234, 7681, 5484, 566, 3047, 5426, 4910, 1272, 4090, 3942, 11239, 11271, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 5, 31, 27, 1688, 1687, 33, 1297, 671, 5484, 1234, 7681, 5483, 566, 3047, 5425, 4908, 1272, 4086, 3938, 11219, 11251, 2]);

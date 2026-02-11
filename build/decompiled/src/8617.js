@@ -22,15 +22,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot1 = var3;
     var2.ToolbarContext = var3;
     var1 = function() {
-        _fun69055: for (var _fun69055_ip = 0;;) switch (_fun69055_ip) {
+        _fun69061: for (var _fun69061_ip = 0;;) switch (_fun69061_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var0 = undefined;
                 var0 = var2.bind(var0)(var1);
                 if (var0) {
-                    _fun69055_ip = 57;
-                    continue _fun69055
+                    _fun69061_ip = 57;
+                    continue _fun69061
                 }
             case 21:
                 var1 = global;

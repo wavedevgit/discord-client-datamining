@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/inappropriate_conversation/hooks/useShouldShowInitialSafetyToolsButtonTooltip.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun72899: for (var _fun72899_ip = 0;;) switch (_fun72899_ip) {
+        _fun72905: for (var _fun72905_ip = 0;;) switch (_fun72905_ip) {
             case 0:
                 var7 = arg0;
                 var _closure2_slot0 = var7;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun72899_ip = 99;
-                    continue _fun72899
+                    _fun72905_ip = 99;
+                    continue _fun72905
                 }
             case 96:
                 var0 = !var1;

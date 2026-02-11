@@ -304,7 +304,7 @@ public final class ShortcutsFlexbox extends FlexboxLayout {
             Context context = getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             String obj2 = I18nUtilsKt.i18nFormat$default(context, I18nMessage.MESSAGE_ACTION_REPLY, null, 2, null).toString();
-            this.replyButtonView.configure(reactionsTheme, false, ReactAsset.Reply, true, obj2);
+            this.replyButtonView.configure(reactionsTheme, false, ReactAsset.ArrowAngleLeftUpIcon, true, obj2);
             this.replyButtonView.setContentDescription(obj2);
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this.replyButtonView, false, onReplyClick, 1, null);
             AddReactionView addReactionView = this.replyButtonView;

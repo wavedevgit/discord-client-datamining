@@ -512,9 +512,20 @@ class f {
     }
 
     public void e(long j10, long j11, List list, boolean z10, b bVar) {
+        i iVar;
+        int d10;
+        boolean z11;
         int i10;
-        i iVar = list.isEmpty() ? null : (i) v.c(list);
-        int d10 = iVar == null ? -1 : this.f52557h.d(iVar.f48709d);
+        if (list.isEmpty()) {
+            iVar = null;
+        } else {
+            iVar = (i) v.c(list);
+        }
+        if (iVar == null) {
+            d10 = -1;
+        } else {
+            d10 = this.f52557h.d(iVar.f48709d);
+        }
         long j12 = j11 - j10;
         long s10 = s(j10);
         if (iVar != null && !this.f52566q) {
@@ -526,7 +537,11 @@ class f {
         }
         this.f52567r.e(j10, j12, s10, list, a(iVar, j11));
         int p10 = this.f52567r.p();
-        boolean z11 = d10 != p10;
+        if (d10 != p10) {
+            z11 = true;
+        } else {
+            z11 = false;
+        }
         Uri uri = this.f52554e[p10];
         if (!this.f52556g.h(uri)) {
             bVar.f52573c = uri;
@@ -543,9 +558,7 @@ class f {
         long longValue = ((Long) f10.first).longValue();
         int intValue = ((Integer) f10.second).intValue();
         int i11 = d10;
-        if (longValue >= o10.f54516k || iVar == null || !z11) {
-            i10 = p10;
-        } else {
+        if (longValue < o10.f54516k && iVar != null && z11) {
             uri = this.f52554e[i11];
             o10 = this.f52556g.o(uri, true);
             oe.a.e(o10);
@@ -554,6 +567,8 @@ class f {
             longValue = ((Long) f11.first).longValue();
             intValue = ((Integer) f11.second).intValue();
             i10 = i11;
+        } else {
+            i10 = p10;
         }
         Uri uri2 = uri;
         xd.f fVar = o10;
@@ -580,21 +595,19 @@ class f {
         Uri d12 = d(fVar, g10.f52578a.f54536e);
         td.f l10 = l(d12, i10, true, null);
         bVar.f52571a = l10;
-        if (l10 != null) {
-            return;
+        if (l10 == null) {
+            Uri d13 = d(fVar, g10.f52578a);
+            td.f l11 = l(d13, i10, false, null);
+            bVar.f52571a = l11;
+            if (l11 == null) {
+                long j13 = c10;
+                boolean w10 = i.w(iVar, uri2, fVar, g10, j13);
+                if (w10 && g10.f52581d) {
+                    return;
+                }
+                bVar.f52571a = i.j(this.f52550a, this.f52551b, this.f52555f[i10], j13, fVar, g10, uri2, this.f52558i, this.f52567r.r(), this.f52567r.h(), this.f52562m, this.f52553d, this.f52561l, iVar, this.f52559j.a(d13), this.f52559j.a(d12), w10, this.f52560k, null);
+            }
         }
-        Uri d13 = d(fVar, g10.f52578a);
-        td.f l11 = l(d13, i10, false, null);
-        bVar.f52571a = l11;
-        if (l11 != null) {
-            return;
-        }
-        long j13 = c10;
-        boolean w10 = i.w(iVar, uri2, fVar, g10, j13);
-        if (w10 && g10.f52581d) {
-            return;
-        }
-        bVar.f52571a = i.j(this.f52550a, this.f52551b, this.f52555f[i10], j13, fVar, g10, uri2, this.f52558i, this.f52567r.r(), this.f52567r.h(), this.f52562m, this.f52553d, this.f52561l, iVar, this.f52559j.a(d13), this.f52559j.a(d12), w10, this.f52560k, null);
     }
 
     public int h(long j10, List list) {

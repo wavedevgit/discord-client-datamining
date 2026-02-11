@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var8;
     var14 = var9;
     var11 = copyDataProperties(var15, var14);
-    var12 = 3;
+    var12 = 10;
     var11 = 'resetSilenceWarningAfterNMinutes';
     var8[var11] = var12;
     var7[2] = var8;

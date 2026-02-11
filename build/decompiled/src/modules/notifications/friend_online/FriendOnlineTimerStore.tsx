@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun118014: for (var _fun118014_ip = 0;;) switch (_fun118014_ip) {
+        _fun118005: for (var _fun118005_ip = 0;;) switch (_fun118005_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun118014_ip = 76;
-                continue _fun118014;
+                _fun118005_ip = 76;
+                continue _fun118005;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
         var3 = function() {
-            _fun118018: for (var _fun118018_ip = 0;;) switch (_fun118018_ip) {
+            _fun118009: for (var _fun118009_ip = 0;;) switch (_fun118009_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -104,16 +104,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun118018_ip = 69;
-                        continue _fun118018
+                        _fun118009_ip = 69;
+                        continue _fun118009
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun118018_ip = 105;
-                    continue _fun118018;
+                    _fun118009_ip = 105;
+                    continue _fun118009;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -138,21 +138,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'initialize';
         var4.key = var0;
         var0 = function() {
-            _fun118019: for (var _fun118019_ip = 0;;) switch (_fun118019_ip) {
+            _fun118010: for (var _fun118010_ip = 0;;) switch (_fun118010_ip) {
                 case 0:
                     var2 = arguments[0];
                     var0 = undefined;
                     if (!(var2 === var0)) {
-                        _fun118019_ip = 16;
-                        continue _fun118019
+                        _fun118010_ip = 16;
+                        continue _fun118010
                     }
                 case 9:
                     var2 = _closure1_slot6;
                 case 16:
                     var1 = null;
                     if (!(var1 == var2)) {
-                        _fun118019_ip = 29;
-                        continue _fun118019
+                        _fun118010_ip = 29;
+                        continue _fun118010
                     }
                 case 22:
                     var2 = _closure1_slot6;
@@ -168,15 +168,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isCooldownElapsed';
         var4.key = var6;
         var6 = function() {
-            _fun118020: for (var _fun118020_ip = 0;;) switch (_fun118020_ip) {
+            _fun118011: for (var _fun118011_ip = 0;;) switch (_fun118011_ip) {
                 case 0:
                     var0 = _closure1_slot7;
                     var2 = var0.lastReportedAtMs;
                     var0 = null;
                     var0 = var0 == var2;
                     if (var0) {
-                        _fun118020_ip = 61;
-                        continue _fun118020
+                        _fun118011_ip = 61;
+                        continue _fun118011
                     }
                 case 22:
                     var2 = global;

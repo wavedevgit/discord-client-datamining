@@ -85,7 +85,7 @@ public final class ClanTagChipletView extends FrameLayout {
         if (str != null) {
             SimpleDraweeView badge = this.binding.badge;
             Intrinsics.checkNotNullExpressionValue(badge, "badge");
-            SetOptionalImageUrlKt.setOptionalImageUrl$default(badge, str, null, null, null, 14, null);
+            SetOptionalImageUrlKt.setOptionalImageUrl$default(badge, str, null, null, null, null, null, 62, null);
             ViewGroup.LayoutParams layoutParams = this.binding.badge.getLayoutParams();
             float f11 = f10 * BASE_BADGE_SIZE;
             layoutParams.width = SizeUtilsKt.getDpToPx(f11);
@@ -101,7 +101,7 @@ public final class ClanTagChipletView extends FrameLayout {
         this.binding.tag.setText(tagContent);
         TextView tag = this.binding.tag;
         Intrinsics.checkNotNullExpressionValue(tag, "tag");
-        SetTextSizeSpKt.setTextSizeSp(tag, f10 * BASE_BADGE_SIZE);
+        SetTextSizeSpKt.setTextSizeSp(tag, BASE_BADGE_SIZE * f10);
         if (chatEventHandler != null) {
             LinearLayout linearLayout = this.binding.container;
             Intrinsics.checkNotNull(linearLayout);

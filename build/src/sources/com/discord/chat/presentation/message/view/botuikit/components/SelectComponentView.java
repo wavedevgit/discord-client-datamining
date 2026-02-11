@@ -255,7 +255,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         DiscordFontUtilsKt.setDiscordFont(selectComponentSelectionText, DiscordFont.PrimaryMedium);
         SimpleDraweeView selectComponentChevron = this.binding.selectComponentChevron;
         Intrinsics.checkNotNullExpressionValue(selectComponentChevron, "selectComponentChevron");
-        ReactAssetUtilsKt.setReactAsset(selectComponentChevron, ReactAsset.ArrowRight);
+        ReactAssetUtilsKt.setReactAsset(selectComponentChevron, ReactAsset.ChevronSmallRightIcon);
         List<SelectItem> selectedItems = component.getSelectedItems();
         boolean z10 = false;
         if (!selectedItems.isEmpty()) {

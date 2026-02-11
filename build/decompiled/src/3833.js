@@ -1,48 +1,43 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun34258: for (var _fun34258_ip = 0;;) switch (_fun34258_ip) {
-        case 0:
-            var2 = exports;
-            var1 = global;
-            var6 = var1.Object;
-            var5 = var6.defineProperty;
-            var3 = {};
-            var4 = true;
-            var3.value = var4;
-            var0 = '__esModule';
-            var0 = var5.bind(var6)(var2, var0, var3);
-            var3 = dependencyMap;
-            var0 = 0;
-            var5 = var3[var0];
-            var3 = require;
-            var0 = undefined;
-            var3 = var3.bind(var0)(var5);
-            var3 = var3.Platform;
-            var3 = var1.process;
-            var3 = var3.env;
-            var3 = var3.JEST_WORKER_ID;
-            var6 = !var3;
-            var5 = !var6;
-            var3 = var1.window;
-            var1 = var5;
-            if (!var6) {
-                _fun34258_ip = 97;
-                continue _fun34258
-            }
-        case 95:
-            var1 = false;
-        case 97:
-            var2.IS_ANDROID = var4;
-            var4 = false;
-            var2.IS_IOS = var4;
-            var2.IS_WEB = var4;
-            var2.IS_JEST = var5;
-            var2.IS_WINDOWS = var4;
-            var4 = 'undefined';
-            var3 = typeof var3;
-            var3 = var4 !== var3;
-            var2.IS_WINDOW_AVAILABLE = var3;
-            var2.SHOULD_BE_USE_WEB = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1, arg2() {
+        _fun34264: for (var _fun34264_ip = 0;;) switch (_fun34264_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = 'build';
+                var1 = var0 in var2;
+                if (!var1) {
+                    _fun34264_ip = 31;
+                    continue _fun34264
+                }
+            case 14:
+                var0 = var2.build;
+                var3 = 'function';
+                var0 = typeof var0;
+                var1 = var3 === var0;
+            case 31:
+                var0 = var2;
+                if (!var1) {
+                    _fun34264_ip = 47;
+                    continue _fun34264
+                }
+            case 37:
+                var1 = var2.build;
+                var0 = var1.bind(var2)();
+            case 47:
+                return var0;
+        }
+    };
+    var1.maybeBuild = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

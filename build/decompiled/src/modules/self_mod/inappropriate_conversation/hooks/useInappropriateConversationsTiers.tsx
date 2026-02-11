@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun73517: for (var _fun73517_ip = 0;;) switch (_fun73517_ip) {
+        _fun73523: for (var _fun73523_ip = 0;;) switch (_fun73523_ip) {
             case 0:
                 var6 = arg0;
                 var4 = _closure1_slot0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5 == var7;
                 var8 = undefined;
                 if (var0) {
-                    _fun73517_ip = 145;
-                    continue _fun73517
+                    _fun73523_ip = 145;
+                    continue _fun73523
                 }
             case 135:
                 var0 = var7.isStaff;
@@ -80,30 +80,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = true;
                 var0 = null;
                 if (!(var7 === var8)) {
-                    _fun73517_ip = 244;
-                    continue _fun73517
+                    _fun73523_ip = 244;
+                    continue _fun73523
                 }
             case 153:
                 var0 = null;
                 if (!var1) {
-                    _fun73517_ip = 244;
-                    continue _fun73517
+                    _fun73523_ip = 244;
+                    continue _fun73523
                 }
             case 158:
                 var1 = var6.isDM;
                 var1 = var1.bind(var6)();
                 var0 = null;
                 if (!var1) {
-                    _fun73517_ip = 244;
-                    continue _fun73517
+                    _fun73523_ip = 244;
+                    continue _fun73523
                 }
             case 173:
                 var1 = {};
                 var6 = var5 == var4;
                 var7 = undefined;
                 if (var6) {
-                    _fun73517_ip = 189;
-                    continue _fun73517
+                    _fun73523_ip = 189;
+                    continue _fun73523
                 }
             case 184:
                 var7 = var4.type;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun73517_ip = 222;
-                    continue _fun73517
+                    _fun73523_ip = 222;
+                    continue _fun73523
                 }
             case 217:
                 var3 = var4.type;

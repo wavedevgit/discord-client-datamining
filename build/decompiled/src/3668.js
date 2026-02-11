@@ -4,42 +4,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0, arg1() {
+    var1 = function arg0() {
         _fun32674: for (var _fun32674_ip = 0;;) switch (_fun32674_ip) {
             case 0:
-                var0 = arg0;
-                var1 = arg1;
-                if (var1) {
-                    _fun32674_ip = 17;
+                var3 = arg0;
+                var4 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 0;
+                var0 = var2[var0];
+                var2 = undefined;
+                var0 = var4.bind(var2)(var0);
+                var0 = var0.bind(var2)(var3);
+                if (!var0) {
+                    _fun32674_ip = 68;
                     continue _fun32674
                 }
-            case 9:
-                var4 = var0.buffer;
-                _fun32674_ip = 52;
-                continue _fun32674;
-            case 17:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var1 = 0;
-                var1 = var3[var1];
-                var3 = undefined;
-                var2 = var2.bind(var3)(var1);
-                var1 = var0.buffer;
-                var4 = var2.bind(var3)(var1);
-            case 52:
-                var3 = var0.constructor;
-                var6 = var0.byteOffset;
-                var5 = var0.length;
-                var1 = var3.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var8 = var1;
-                var7 = var4;
-                var0 = new var8[var3](var7, var6, var5, var4);
-                var0 = var0 instanceof Object ? var0 : var1;
+            case 35:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 1;
+                var1 = var5[var1];
+                var1 = var4.bind(var2)(var1);
+                var2 = var1.bind(var2)(var3);
+                var1 = '[object Set]';
+                var0 = var1 == var2;
+            case 68:
                 return var0;
         }
     };
@@ -47,4 +36,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3666]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [577, 735]);

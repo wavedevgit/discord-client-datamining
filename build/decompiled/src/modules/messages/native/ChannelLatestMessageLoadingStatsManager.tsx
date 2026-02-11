@@ -78,22 +78,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'finish';
         var0.key = var5;
         var4 = function arg0() {
-            _fun78176: for (var _fun78176_ip = 0;;) switch (_fun78176_ip) {
+            _fun78134: for (var _fun78134_ip = 0;;) switch (_fun78134_ip) {
                 case 0:
                     var7 = arg0;
                     var1 = this;
                     var0 = var1.latestChannelMessagesLoad;
                     var2 = null;
                     if (!(var2 != var0)) {
-                        _fun78176_ip = 200;
-                        continue _fun78176
+                        _fun78134_ip = 200;
+                        continue _fun78134
                     }
                 case 21:
                     var3 = var0.channelId;
                     var2 = var7.channelId;
                     if (!(var3 === var2)) {
-                        _fun78176_ip = 200;
-                        continue _fun78176
+                        _fun78134_ip = 200;
+                        continue _fun78134
                     }
                 case 38:
                     var2 = global;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.bind(var4)(var2);
                     var6 = !var2;
                     if (!var6) {
-                        _fun78176_ip = 124;
-                        continue _fun78176
+                        _fun78134_ip = 124;
+                        continue _fun78134
                     }
                 case 99:
                     var0 = _closure2_slot0;
@@ -166,4 +166,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 660, 4326, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 660, 4322, 2]);

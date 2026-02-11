@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/common/ActionButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73207: for (var _fun73207_ip = 0;;) switch (_fun73207_ip) {
+        _fun73213: for (var _fun73213_ip = 0;;) switch (_fun73213_ip) {
             case 0:
                 var8 = arg0;
                 var10 = var8.IconComponent;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 'tertiary';
                 var0 = 'positive';
                 if (!(var0 === var1)) {
-                    _fun73207_ip = 29;
-                    continue _fun73207
+                    _fun73213_ip = 29;
+                    continue _fun73213
                 }
             case 25:
                 var7 = 'active';
@@ -89,4 +89,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4099, 7565, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4095, 7565, 2]);

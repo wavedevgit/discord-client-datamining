@@ -35,7 +35,7 @@ import kotlinx.serialization.json.JsonObject;
 import org.jetbrains.annotations.NotNull;
 import ys.m0;
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000  2\u00020\u0001:\u0002\u001f B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\b\u0010\u0013\u001a\u00020\u0012H\u0007J\u0014\u0010\u0014\u001a\u00020\u00122\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0005H\u0007J\u000e\u0010\u0016\u001a\u00020\u0012H\u0082@¢\u0006\u0002\u0010\u0017J\u000e\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u001a0\u0019H\u0002J\u001c\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u001a0\u00192\u0006\u0010\u001c\u001a\u00020\u001dH\u0082@¢\u0006\u0002\u0010\u001eR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00030\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006!"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerCache;", "", "listener", "Lcom/discord/emoji_picker/EmojiPickerCache$Listener;", "emojiCoreData", "Lcom/discord/emoji_picker/EmojiPickerItemData$CoreData;", "<init>", "(Lcom/discord/emoji_picker/EmojiPickerCache$Listener;Lcom/discord/emoji_picker/EmojiPickerItemData$CoreData;)V", "emojiPickerListener", "Ljava/lang/ref/WeakReference;", "emojiJsonConfig", "Lkotlinx/serialization/json/Json;", "emojiCoroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "emojiFetchJob", "Lkotlinx/coroutines/Job;", "emojiFetchEvents", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "", "invalidate", "refreshEmojis", "emojiCodeData", "refreshDatabaseEmojis", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "buildEmojis", "", "Lcom/discord/emoji_picker/EmojiPickerItem;", "buildEmojisUnicode", "context", "Landroid/content/Context;", "(Landroid/content/Context;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Listener", "Companion", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@SourceDebugExtension({"SMAP\nEmojiPickerCache.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EmojiPickerCache.kt\ncom/discord/emoji_picker/EmojiPickerCache\n+ 2 ThreadUtils.kt\ncom/discord/misc/utilities/threading/ThreadUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,186:1\n25#2,8:187\n1#3:195\n1878#4,2:196\n1563#4:198\n1634#4,3:199\n1056#4:202\n1869#4,2:203\n1880#4:205\n1878#4,2:206\n1869#4,2:208\n1880#4:210\n*S KotlinDebug\n*F\n+ 1 EmojiPickerCache.kt\ncom/discord/emoji_picker/EmojiPickerCache\n*L\n70#1:187,8\n90#1:196,2\n109#1:198\n109#1:199,3\n128#1:202\n133#1:203,2\n90#1:205\n156#1:206,2\n158#1:208,2\n156#1:210\n*E\n"})
+@SourceDebugExtension({"SMAP\nEmojiPickerCache.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EmojiPickerCache.kt\ncom/discord/emoji_picker/EmojiPickerCache\n+ 2 ThreadUtils.kt\ncom/discord/misc/utilities/threading/ThreadUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,190:1\n25#2,8:191\n1#3:199\n1#3:212\n1878#4,2:200\n1617#4,9:202\n1869#4:211\n1870#4:213\n1626#4:214\n1056#4:215\n1869#4,2:216\n1880#4:218\n1878#4,2:219\n1869#4,2:221\n1880#4:223\n*S KotlinDebug\n*F\n+ 1 EmojiPickerCache.kt\ncom/discord/emoji_picker/EmojiPickerCache\n*L\n70#1:191,8\n109#1:212\n90#1:200,2\n109#1:202,9\n109#1:211\n109#1:213\n109#1:214\n132#1:215\n137#1:216,2\n90#1:218\n160#1:219,2\n162#1:221,2\n160#1:223\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class EmojiPickerCache {
     @NotNull
@@ -153,13 +153,15 @@ public final class EmojiPickerCache {
         boolean z10;
         HashMap<String, ArrayList<String>> hashMap;
         boolean z11;
-        List list;
         boolean z12;
         boolean z13;
+        EmojiPickerItem.Emoji emoji;
+        HashMap<String, ArrayList<String>> hashMap2;
+        boolean z14;
+        ArrayList arrayList;
         EmojiPickerCache emojiPickerCache = this;
-        String item = Cache.Companion.get().getItem("_userIdKey");
         try {
-            HashMap<String, ArrayList<String>> guildEmojis = DiscordMobileApi.getGuildEmojis("@account." + item);
+            HashMap<String, ArrayList<String>> guildEmojis = DiscordMobileApi.getGuildEmojis("@account." + Cache.Companion.get().getItem("_userIdKey"));
             Collection<ArrayList<String>> values = guildEmojis.values();
             Intrinsics.checkNotNullExpressionValue(values, "<get-values>(...)");
             Iterator<T> it = values.iterator();
@@ -171,9 +173,9 @@ public final class EmojiPickerCache {
                 }
                 i10 += ((ArrayList) it.next()).size() + 1;
             }
-            ArrayList arrayList = new ArrayList(i10);
+            ArrayList arrayList2 = new ArrayList(i10);
             int i11 = 0;
-            boolean z14 = false;
+            boolean z15 = false;
             for (Object obj : emojiPickerCache.emojiCoreData.getNativeSectionsEmojis()) {
                 int i12 = i11 + 1;
                 if (i11 < 0) {
@@ -181,41 +183,54 @@ public final class EmojiPickerCache {
                 }
                 EmojiPickerItemData.CoreData.NativeSection.Guild guild = (EmojiPickerItemData.CoreData.NativeSection.Guild) obj;
                 if (guild.getHasPremiumInlineRoadblockHeader()) {
-                    String guildId = guild.getGuildId();
-                    arrayList.add(new EmojiPickerItem.PremiumInlineRoadblockHeader("premium-inline-roadblock-header-" + guildId));
-                    z14 = z10;
+                    arrayList2.add(new EmojiPickerItem.PremiumInlineRoadblockHeader("premium-inline-roadblock-header-" + guild.getGuildId()));
+                    z15 = z10;
                 }
-                arrayList.add(new EmojiPickerItem.Category(guild.getGuildName(), Long.parseLong(guild.getGuildId()), z14));
-                ArrayList<String> arrayList2 = guildEmojis.get(guild.getGuildId());
-                if (arrayList2 != null) {
-                    ArrayList arrayList3 = new ArrayList(CollectionsKt.w(arrayList2, 10));
-                    for (String str : arrayList2) {
+                arrayList2.add(new EmojiPickerItem.Category(guild.getGuildName(), Long.parseLong(guild.getGuildId()), z15));
+                ArrayList<String> arrayList3 = guildEmojis.get(guild.getGuildId());
+                List list = null;
+                if (arrayList3 != null) {
+                    ArrayList arrayList4 = new ArrayList();
+                    for (String str : arrayList3) {
                         Json json = emojiPickerCache.emojiJsonConfig;
                         Intrinsics.checkNotNull(str);
                         JsonObject n10 = ut.h.n(json.g(str));
                         Object obj2 = n10.get(StackTraceHelper.ID_KEY);
                         Intrinsics.checkNotNull(obj2);
                         long q10 = ut.h.q(ut.h.o((JsonElement) obj2));
-                        Object obj3 = n10.get(StackTraceHelper.NAME_KEY);
-                        Intrinsics.checkNotNull(obj3);
-                        String b10 = ut.h.o((JsonElement) obj3).b();
-                        Object obj4 = n10.get("animated");
-                        Intrinsics.checkNotNull(obj4);
-                        boolean f10 = ut.h.f(ut.h.o((JsonElement) obj4));
-                        if (!guild.isNitroLocked() && !guild.getEmojisDisabled().contains(Long.valueOf(q10))) {
-                            z13 = false;
+                        if (guild.getEmojisHidden().contains(Long.valueOf(q10))) {
+                            hashMap2 = guildEmojis;
+                            z14 = z15;
+                            arrayList = arrayList4;
+                            emoji = null;
                         } else {
-                            z13 = true;
+                            Object obj3 = n10.get(StackTraceHelper.NAME_KEY);
+                            Intrinsics.checkNotNull(obj3);
+                            String b10 = ut.h.o((JsonElement) obj3).b();
+                            Object obj4 = n10.get("animated");
+                            Intrinsics.checkNotNull(obj4);
+                            boolean f10 = ut.h.f(ut.h.o((JsonElement) obj4));
+                            if (!guild.isNitroLocked() && !guild.getEmojisDisabled().contains(Long.valueOf(q10))) {
+                                z13 = false;
+                            } else {
+                                z13 = true;
+                            }
+                            hashMap2 = guildEmojis;
+                            z14 = z15;
+                            arrayList = arrayList4;
+                            emoji = new EmojiPickerItem.Emoji(q10, b10, f10, EmojiPickerItem.Emoji.DisabledType.Companion.create(z13, guild.isNitroLocked()), null, z14, 16, null);
                         }
-                        ArrayList arrayList4 = arrayList3;
-                        arrayList4.add(new EmojiPickerItem.Emoji(q10, b10, f10, EmojiPickerItem.Emoji.DisabledType.Companion.create(z13, guild.isNitroLocked()), null, z14, 16, null));
+                        if (emoji != null) {
+                            arrayList.add(emoji);
+                        }
                         emojiPickerCache = this;
-                        arrayList3 = arrayList4;
-                        guildEmojis = guildEmojis;
+                        arrayList4 = arrayList;
+                        z15 = z14;
+                        guildEmojis = hashMap2;
                     }
                     hashMap = guildEmojis;
-                    z11 = z14;
-                    list = CollectionsKt.W0(arrayList3, new Comparator() { // from class: com.discord.emoji_picker.EmojiPickerCache$buildEmojis$lambda$7$$inlined$sortedBy$1
+                    z11 = z15;
+                    list = CollectionsKt.W0(arrayList4, new Comparator() { // from class: com.discord.emoji_picker.EmojiPickerCache$buildEmojis$lambda$7$$inlined$sortedBy$1
                         @Override // java.util.Comparator
                         public final int compare(T t10, T t11) {
                             return ds.a.d(((EmojiPickerItem.Emoji) t10).getName(), ((EmojiPickerItem.Emoji) t11).getName());
@@ -223,32 +238,30 @@ public final class EmojiPickerCache {
                     });
                 } else {
                     hashMap = guildEmojis;
-                    z11 = z14;
-                    list = null;
+                    z11 = z15;
                 }
                 if (list != null) {
-                    arrayList.addAll(list);
+                    arrayList2.addAll(list);
                     z12 = false;
                 } else {
                     z12 = false;
                     Iterator it2 = kotlin.ranges.d.u(0, guild.getEmojiCount()).iterator();
                     while (it2.hasNext()) {
-                        arrayList.add(new EmojiPickerItem.EmojiPlaceholder((i11 * 1000) + ((kotlin.collections.m0) it2).nextInt()));
+                        arrayList2.add(new EmojiPickerItem.EmojiPlaceholder((i11 * 1000) + ((kotlin.collections.m0) it2).nextInt()));
                     }
                 }
                 if (guild.getHasPremiumInlineRoadblockFooter()) {
-                    String guildId2 = guild.getGuildId();
-                    arrayList.add(new EmojiPickerItem.PremiumInlineRoadblockFooter("premium-inline-roadblock-footer-" + guildId2));
-                    z14 = z12;
+                    arrayList2.add(new EmojiPickerItem.PremiumInlineRoadblockFooter("premium-inline-roadblock-footer-" + guild.getGuildId()));
+                    z15 = z12;
                 } else {
-                    z14 = z11;
+                    z15 = z11;
                 }
                 emojiPickerCache = this;
                 i11 = i12;
                 guildEmojis = hashMap;
                 z10 = true;
             }
-            return arrayList;
+            return arrayList2;
         } catch (Exception e10) {
             CrashReporting.INSTANCE.captureMessage("Unable to read guild emojis from cache.", e10);
             return CollectionsKt.l();

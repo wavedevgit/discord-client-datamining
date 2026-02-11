@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Environment: var1
-        _fun72626: for (var _fun72626_ip = 0;;) switch (_fun72626_ip) {
+        _fun72632: for (var _fun72632_ip = 0;;) switch (_fun72632_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getCurrentUser;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var0;
                 var0 = function() { // Environment: var0
-                    _fun72627: for (var _fun72627_ip = 0;;) switch (_fun72627_ip) {
+                    _fun72633: for (var _fun72633_ip = 0;;) switch (_fun72633_ip) {
                         case 0:
                             var0 = _closure1_slot2;
                             var0 = var0.settings;
@@ -56,24 +56,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var0 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun72627_ip = 50;
-                                continue _fun72627
+                                _fun72633_ip = 50;
+                                continue _fun72633
                             }
                         case 30:
                             var2 = var2.inappropriateConversationWarnings;
                             var3 = var0 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun72627_ip = 50;
-                                continue _fun72627
+                                _fun72633_ip = 50;
+                                continue _fun72633
                             }
                         case 45:
                             var1 = var2.value;
                         case 50:
                             var0 = var0 == var1;
                             if (var0) {
-                                _fun72627_ip = 60;
-                                continue _fun72627
+                                _fun72633_ip = 60;
+                                continue _fun72633
                             }
                         case 57:
                             var0 = var1;
@@ -97,29 +97,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var6)(var0);
                 var3 = !var1;
                 if (var3) {
-                    _fun72626_ip = 134;
-                    continue _fun72626
+                    _fun72632_ip = 134;
+                    continue _fun72632
                 }
             case 131:
                 var3 = !var0;
             case 134:
                 var0 = !var3;
                 if (!var3) {
-                    _fun72626_ip = 179;
-                    continue _fun72626
+                    _fun72632_ip = 179;
+                    continue _fun72632
                 }
             case 140:
                 if (var1) {
-                    _fun72626_ip = 170;
-                    continue _fun72626
+                    _fun72632_ip = 170;
+                    continue _fun72632
                 }
             case 143:
                 var3 = null;
                 var3 = var3 == var5;
                 var4 = undefined;
                 if (var3) {
-                    _fun72626_ip = 164;
-                    continue _fun72626
+                    _fun72632_ip = 164;
+                    continue _fun72632
                 }
             case 154:
                 var3 = var5.isStaff;
@@ -129,8 +129,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 === var4;
             case 170:
                 if (!var1) {
-                    _fun72626_ip = 176;
-                    continue _fun72626
+                    _fun72632_ip = 176;
+                    continue _fun72632
                 }
             case 173:
                 var1 = var2;
@@ -142,4 +142,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSafetyAlertsSettingOrDefault = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 1621, 566, 6586, 9069, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 1621, 566, 6585, 9069, 2]);

@@ -4,37 +4,37 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0, arg1, arg2() {
-        _fun31692: for (var _fun31692_ip = 0;;) switch (_fun31692_ip) {
-            case 0:
-                var5 = arg0;
-                var1 = arg2;
-                var0 = null;
-                var3 = var0 == var5;
-                var2 = undefined;
-                var0 = undefined;
-                if (var3) {
-                    _fun31692_ip = 50;
-                    continue _fun31692
-                }
-            case 19:
-                var4 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var3 = 0;
-                var3 = var6[var3];
-                var4 = var4.bind(var2)(var3);
-                var3 = arg1;
-                var0 = var4.bind(var2)(var5, var3);
-            case 50:
-                if (!(var2 === var0)) {
-                    _fun31692_ip = 57;
-                    continue _fun31692
-                }
-            case 54:
-                var0 = var1;
-            case 57:
-                return var0;
-        }
+    var1 = function arg0() {
+        var1 = _closure1_slot0;
+        var3 = _closure1_slot1;
+        var0 = 0;
+        var0 = var3[var0];
+        var4 = undefined;
+        var3 = var1.bind(var4)(var0);
+        var1 = arg0;
+        var0 = function(arg0) { // Environment: var2
+            _fun31695: for (var _fun31695_ip = 0;;) switch (_fun31695_ip) {
+                case 0:
+                    var1 = _closure2_slot0;
+                    var2 = var1.size;
+                    var1 = 500;
+                    if (!(var1 === var2)) {
+                        _fun31695_ip = 36;
+                        continue _fun31695
+                    }
+                case 22:
+                    var1 = _closure2_slot0;
+                    var0 = var1.clear;
+                    var0 = var0.bind(var1)();
+                case 36:
+                    var0 = arg0;
+                    return var0;
+            }
+        };
+        var0 = var3.bind(var4)(var1, var0);
+        var1 = var0.cache;
+        var _closure2_slot0 = var1;
+        return var0;
     };
     var0 = arg4;
     var0.exports = var1;

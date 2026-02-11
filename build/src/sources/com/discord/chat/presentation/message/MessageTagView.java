@@ -45,7 +45,7 @@ public final class MessageTagView extends FrameLayout {
         DiscordFontUtilsKt.setDiscordFont(tag, DiscordFont.PrimarySemibold);
         SimpleDraweeView verifiedBotIcon = inflate.verifiedBotIcon;
         Intrinsics.checkNotNullExpressionValue(verifiedBotIcon, "verifiedBotIcon");
-        ReactAssetUtilsKt.setReactAsset(verifiedBotIcon, ReactAsset.Check);
+        ReactAssetUtilsKt.setReactAsset(verifiedBotIcon, ReactAsset.CheckmarkSmallIcon);
         SimpleDraweeView verifiedBotIcon2 = inflate.verifiedBotIcon;
         Intrinsics.checkNotNullExpressionValue(verifiedBotIcon2, "verifiedBotIcon");
         ColorUtilsKt.setTintColor(verifiedBotIcon2, (Integer) (-1));
@@ -122,7 +122,7 @@ public final class MessageTagView extends FrameLayout {
             } else {
                 SimpleDraweeView verifiedBotIcon3 = this.binding.verifiedBotIcon;
                 Intrinsics.checkNotNullExpressionValue(verifiedBotIcon3, "verifiedBotIcon");
-                ReactAssetUtilsKt.setReactAsset(verifiedBotIcon3, ReactAsset.Check);
+                ReactAssetUtilsKt.setReactAsset(verifiedBotIcon3, ReactAsset.CheckmarkSmallIcon);
             }
             SimpleDraweeView verifiedBotIcon4 = this.binding.verifiedBotIcon;
             Intrinsics.checkNotNullExpressionValue(verifiedBotIcon4, "verifiedBotIcon");

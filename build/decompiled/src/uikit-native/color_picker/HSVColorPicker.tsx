@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/color_picker/HSVColorPicker.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80732: for (var _fun80732_ip = 0;;) switch (_fun80732_ip) {
+        _fun80692: for (var _fun80692_ip = 0;;) switch (_fun80692_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.hue;
@@ -92,24 +92,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = null;
                 var16 = var9;
                 if (!(var11 != var10)) {
-                    _fun80732_ip = 169;
-                    continue _fun80732
+                    _fun80692_ip = 169;
+                    continue _fun80692
                 }
             case 166:
                 var16 = var10;
             case 169:
                 var4.hue = var16;
                 if (!(var11 != var15)) {
-                    _fun80732_ip = 181;
-                    continue _fun80732
+                    _fun80692_ip = 181;
+                    continue _fun80692
                 }
             case 178:
                 var14 = var15;
             case 181:
                 var4.saturation = var14;
                 if (!(var11 != var13)) {
-                    _fun80732_ip = 193;
-                    continue _fun80732
+                    _fun80692_ip = 193;
+                    continue _fun80692
                 }
             case 190:
                 var12 = var13;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var3)(var5);
                 var5 = {};
                 if (!(var11 != var10)) {
-                    _fun80732_ip = 249;
-                    continue _fun80732
+                    _fun80692_ip = 249;
+                    continue _fun80692
                 }
             case 246:
                 var9 = var10;
@@ -144,4 +144,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3721, 10271, 10272, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3717, 10240, 10241, 2]);

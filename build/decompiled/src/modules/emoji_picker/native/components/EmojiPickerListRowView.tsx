@@ -1,7 +1,7 @@
 // modules/emoji_picker/native/components/EmojiPickerListRowView.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun74569: for (var _fun74569_ip = 0;;) switch (_fun74569_ip) {
+    _fun74575: for (var _fun74575_ip = 0;;) switch (_fun74575_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var6.isAndroid;
             var3 = var3.bind(var6)();
             if (!var3) {
-                _fun74569_ip = 99;
-                continue _fun74569
+                _fun74575_ip = 99;
+                continue _fun74575
             }
         case 84:
             var3 = 2;

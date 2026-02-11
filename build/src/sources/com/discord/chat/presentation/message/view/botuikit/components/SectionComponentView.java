@@ -174,7 +174,7 @@ public final class SectionComponentView extends LinearLayout implements Componen
             if (errorText != null) {
                 SimpleDraweeView viewInteractionFailedLabelIcon = this.binding.sectionComponentViewGroupErrorRow.viewInteractionFailedLabelIcon;
                 Intrinsics.checkNotNullExpressionValue(viewInteractionFailedLabelIcon, "viewInteractionFailedLabelIcon");
-                ReactAssetUtilsKt.setReactAsset(viewInteractionFailedLabelIcon, ReactAsset.Warning);
+                ReactAssetUtilsKt.setReactAsset(viewInteractionFailedLabelIcon, ReactAsset.CircleErrorIcon);
                 SimpleDraweeView viewInteractionFailedLabelIcon2 = this.binding.sectionComponentViewGroupErrorRow.viewInteractionFailedLabelIcon;
                 Intrinsics.checkNotNullExpressionValue(viewInteractionFailedLabelIcon2, "viewInteractionFailedLabelIcon");
                 ColorUtilsKt.setTintColor(viewInteractionFailedLabelIcon2, Integer.valueOf(ThemeManagerKt.getTheme().getIconFeedbackCritical()));

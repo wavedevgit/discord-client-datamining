@@ -201,7 +201,7 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
     }
 
     private final void configureLinkIcon(SimpleDraweeView simpleDraweeView) {
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Launch);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.WindowLaunchIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, (Integer) (-1));
     }
 

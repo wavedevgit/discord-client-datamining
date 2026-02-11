@@ -1,33 +1,44 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun114704: for (var _fun114704_ip = 0;;) switch (_fun114704_ip) {
-        case 0:
-            var9 = require;
-            var8 = exports;
-            var7 = dependencyMap;
-            var0 = global;
-            var10 = var0.Object;
-            var2 = var10.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var2.bind(var10)(var8, var0, var1);
-            var2 = 0;
-            var1 = var7[var2];
-            var0 = undefined;
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 62: {
-                    case 71: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun114704_ip = 62;
-                    continue _fun114704;
-                }
-        case 93:
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14686]);
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = dependencyMap;
+    var0 = 0;
+    var3 = var1[var0];
+    var1 = metroImportDefault;
+    var0 = undefined;
+    var6 = var1.bind(var0)(var3);
+    var3 = {
+        'VERIFIED': '0',
+        'SUPERVISED': '1',
+        'SUPERVISED_APPROVAL_PENDING': '2',
+        'SUPERVISED_APPROVAL_DENIED': '3',
+        'UNKNOWN': '4'
+    };
+    var5 = var3.VERIFIED;
+    var4 = {};
+    var1 = 'VERIFIED';
+    var5 = var6.bind(var0)(var4, var5, var1);
+    var4 = var3.SUPERVISED;
+    var1 = 'SUPERVISED';
+    var5 = var6.bind(var0)(var5, var4, var1);
+    var4 = var3.SUPERVISED_APPROVAL_PENDING;
+    var1 = 'SUPERVISED_APPROVAL_PENDING';
+    var5 = var6.bind(var0)(var5, var4, var1);
+    var4 = var3.SUPERVISED_APPROVAL_DENIED;
+    var1 = 'SUPERVISED_APPROVAL_DENIED';
+    var5 = var6.bind(var0)(var5, var4, var1);
+    var4 = var3.UNKNOWN;
+    var1 = 'UNKNOWN';
+    var1 = var6.bind(var0)(var5, var4, var1);
+    var2.PlayAgeRangeDeclarationUserStatus = var3;
+    var2.PlayAgeRangeDeclarationUserStatusString = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [77]);

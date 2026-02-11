@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/MicrophoneDenyIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun67048: for (var _fun67048_ip = 0;;) switch (_fun67048_ip) {
+        _fun67054: for (var _fun67054_ip = 0;;) switch (_fun67054_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun67048_ip = 53;
-                    continue _fun67048
+                    _fun67054_ip = 53;
+                    continue _fun67054
                 }
             case 19:
                 var1 = _closure1_slot1;

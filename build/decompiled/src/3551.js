@@ -1,36 +1,17 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0() {
-        _fun31716: for (var _fun31716_ip = 0;;) switch (_fun31716_ip) {
-            case 0:
-                var3 = arg0;
-                var2 = this;
-                var0 = var2.has;
-                var0 = var0.bind(var2)(var3);
-                if (!var0) {
-                    _fun31716_ip = 28;
-                    continue _fun31716
-                }
-            case 18:
-                var1 = var2.__data__;
-                var0 = delete var1[var3];
-            case 28:
-                var3 = var2.size;
-                var1 = 0;
-                if (!var0) {
-                    _fun31716_ip = 41;
-                    continue _fun31716
-                }
-            case 38:
-                var1 = 1;
-            case 41:
-                var1 = var3 - var1;
-                var2.size = var1;
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
+    var2 = require;
+    var4 = dependencyMap;
+    var0 = 0;
+    var1 = var4[var0];
     var0 = undefined;
+    var3 = var2.bind(var0)(var1);
+    var1 = 1;
+    var1 = var4[var1];
+    var2 = var2.bind(var0)(var1);
+    var1 = 'Map';
+    var2 = var3.bind(var0)(var2, var1);
+    var1 = module;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3292, 601]);

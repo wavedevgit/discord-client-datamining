@@ -97,7 +97,7 @@ public final class EmojiPickerRowView extends LinearLayout {
                 simpleDraweeView.setImageURI((String) null);
                 simpleDraweeView.setVisibility(4);
             } else {
-                SetOptionalImageUrlKt.setOptionalImageUrl$default(simpleDraweeView, emoji.getUrl(), Boolean.valueOf(emoji.getAnimated()), null, null, 12, null);
+                SetOptionalImageUrlKt.setOptionalImageUrl$default(simpleDraweeView, emoji.getUrl(), Boolean.valueOf(emoji.getAnimated()), null, null, null, null, 60, null);
                 simpleDraweeView.setVisibility(0);
                 simpleDraweeView.setContentDescription(emoji.getName());
                 boolean z11 = true;

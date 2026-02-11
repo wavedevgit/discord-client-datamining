@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var3 = function arg0() {
-        _fun83023: for (var _fun83023_ip = 0;;) switch (_fun83023_ip) {
+        _fun82983: for (var _fun82983_ip = 0;;) switch (_fun82983_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -20,8 +20,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.XBOX_APPLICATION_ID;
                 var0 = var0 === var3;
                 if (var0) {
-                    _fun83023_ip = 85;
-                    continue _fun83023
+                    _fun82983_ip = 85;
+                    continue _fun82983
                 }
             case 46:
                 var2 = _closure1_slot0;
@@ -62,4 +62,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShouldWarnAuthorizedAppTwoWay = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5835, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5834, 2]);

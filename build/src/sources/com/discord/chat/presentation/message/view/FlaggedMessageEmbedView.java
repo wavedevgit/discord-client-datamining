@@ -163,7 +163,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         guildCommunicationDisabledIcon.setVisibility(i10);
         SimpleDraweeView guildCommunicationDisabledIcon2 = this.binding.guildCommunicationDisabledIcon;
         Intrinsics.checkNotNullExpressionValue(guildCommunicationDisabledIcon2, "guildCommunicationDisabledIcon");
-        ReactAssetUtilsKt.setReactAsset(guildCommunicationDisabledIcon2, ReactAsset.ClockTimeout);
+        ReactAssetUtilsKt.setReactAsset(guildCommunicationDisabledIcon2, ReactAsset.ClockWarningIcon);
         SimpleDraweeView simpleDraweeView = this.binding.authorAvatar;
         float f12 = 1.0f;
         if (z10) {

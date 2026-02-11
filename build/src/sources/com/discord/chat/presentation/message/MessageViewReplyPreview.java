@@ -161,7 +161,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             Boolean bool2 = Boolean.TRUE;
             if (Intrinsics.areEqual(showAppsIcon, bool2)) {
                 if (Intrinsics.areEqual(executedCommand.getShowControllerIcon(), bool2)) {
-                    reactAsset = ReactAsset.GameController;
+                    reactAsset = ReactAsset.GameControllerIcon;
                 } else {
                     reactAsset = ReactAsset.AppsIcon;
                 }
@@ -216,11 +216,11 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         ReactAsset reactAsset;
         boolean z10;
         if (message.hasStickers()) {
-            reactAsset = ReactAsset.Sticker;
+            reactAsset = ReactAsset.StickerIcon;
         } else if (message.hasCommand()) {
-            reactAsset = ReactAsset.SlashBox;
+            reactAsset = ReactAsset.SlashBoxIcon;
         } else if (message.isVoiceMessage()) {
-            reactAsset = ReactAsset.Mic;
+            reactAsset = ReactAsset.MicrophoneIcon;
         } else if (message.hasAttachmentsOrEmbeds()) {
             reactAsset = ReactAsset.ImageIcon;
         } else {
@@ -617,7 +617,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         SimpleDraweeView simpleDraweeView = inflate.replyIcon;
         if (!simpleDraweeView.isInEditMode()) {
             Intrinsics.checkNotNull(simpleDraweeView);
-            ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Reply);
+            ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.ArrowAngleLeftUpIcon);
             ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()));
             ViewBackgroundUtilsKt.setBackgroundOval$default(simpleDraweeView, ThemeManagerKt.getTheme().getBackgroundBaseLowest(), 0, 2, null);
         }

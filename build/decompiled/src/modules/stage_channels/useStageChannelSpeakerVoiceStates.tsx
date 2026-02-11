@@ -89,21 +89,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var8.bind(var3)(var2);
         var10 = var2.isVersionEqual;
         var12 = function() { // Environment: var1
-            _fun103256: for (var _fun103256_ip = 0;;) switch (_fun103256_ip) {
+            _fun103246: for (var _fun103246_ip = 0;;) switch (_fun103246_ip) {
                 case 0:
                     var4 = _closure2_slot0;
                     var3 = _closure1_slot8;
                     if (!(var4 !== var3)) {
-                        _fun103256_ip = 41;
-                        continue _fun103256
+                        _fun103246_ip = 41;
+                        continue _fun103246
                     }
                 case 20:
                     var4 = _closure1_slot7;
                     var3 = var4.getChannels;
                     var2 = _closure2_slot0;
                     var4 = var3.bind(var4)(var2);
-                    _fun103256_ip = 153;
-                    continue _fun103256;
+                    _fun103246_ip = 153;
+                    continue _fun103246;
                 case 41:
                     var3 = _closure1_slot1;
                     var7 = _closure1_slot2;
@@ -215,4 +215,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.transformParticipantToSortedVoiceState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1375, 1372, 3527, 4255, 660, 566, 21, 1304, 5724, 8468, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1375, 1372, 3523, 4251, 660, 566, 21, 1304, 5723, 8468, 2]);

@@ -1,70 +1,31 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function() {
+    var1 = function arg0() {
         _fun31709: for (var _fun31709_ip = 0;;) switch (_fun31709_ip) {
             case 0:
+                var3 = arg0;
                 var2 = this;
-                var5 = 0;
-                var2.size = var5;
-                var1 = {};
-                var6 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var4 = var7[var5];
-                var0 = undefined;
-                var4 = var6.bind(var0)(var4);
-                var8 = var4.prototype;
-                var8 = Object.create(var8, {
-                    constructor: {
-                        value: var4
-                    }
-                });
-                var10 = var8;
-                var4 = new var10[var4](var9);
-                var4 = var4 instanceof Object ? var4 : var8;
-                var1.hash = var4;
-                var4 = 1;
-                var4 = var7[var4];
-                var4 = var6.bind(var0)(var4);
-                if (var4) {
-                    _fun31709_ip = 93;
+                var0 = var2.has;
+                var0 = var0.bind(var2)(var3);
+                if (!var0) {
+                    _fun31709_ip = 28;
                     continue _fun31709
                 }
-            case 73:
-                var7 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var6 = 2;
-                var6 = var8[var6];
-                var4 = var7.bind(var0)(var6);
-            case 93:
-                var6 = var4.prototype;
-                var6 = Object.create(var6, {
-                    constructor: {
-                        value: var4
-                    }
-                });
-                var10 = var6;
-                var4 = new var10[var4](var9);
-                var4 = var4 instanceof Object ? var4 : var6;
-                var1.map = var4;
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var3 = var3[var5];
-                var3 = var4.bind(var0)(var3);
-                var4 = var3.prototype;
-                var4 = Object.create(var4, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var10 = var4;
-                var3 = new var10[var3](var9);
-                var3 = var3 instanceof Object ? var3 : var4;
-                var1.string = var3;
-                var2.__data__ = var1;
+            case 18:
+                var1 = var2.__data__;
+                var0 = delete var1[var3];
+            case 28:
+                var3 = var2.size;
+                var1 = 0;
+                if (!var0) {
+                    _fun31709_ip = 41;
+                    continue _fun31709
+                }
+            case 38:
+                var1 = 1;
+            case 41:
+                var1 = var3 - var1;
+                var2.size = var1;
                 return var0;
         }
     };
@@ -72,4 +33,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3548, 3555, 3556]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -186,14 +186,14 @@ public class FileAttachmentView extends ConstraintLayout {
         this.binding = inflate;
         SimpleDraweeView fileAttachmentDownload = inflate.fileAttachmentDownload;
         Intrinsics.checkNotNullExpressionValue(fileAttachmentDownload, "fileAttachmentDownload");
-        ReactAssetUtilsKt.setReactAsset(fileAttachmentDownload, ReactAsset.Download);
+        ReactAssetUtilsKt.setReactAsset(fileAttachmentDownload, ReactAsset.DownloadIcon);
         SimpleDraweeView fileAttachmentDownload2 = inflate.fileAttachmentDownload;
         Intrinsics.checkNotNullExpressionValue(fileAttachmentDownload2, "fileAttachmentDownload");
         ColorUtilsKt.setTintColor(fileAttachmentDownload2, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));
         inflate.fileAttachmentDownload.setContentDescription(I18nUtilsKt.i18nFormat$default(context, I18nMessage.DOWNLOAD, null, 2, null));
         SimpleDraweeView fileAttachmentIcon = inflate.fileAttachmentIcon;
         Intrinsics.checkNotNullExpressionValue(fileAttachmentIcon, "fileAttachmentIcon");
-        ReactAssetUtilsKt.setReactAsset(fileAttachmentIcon, ReactAsset.File);
+        ReactAssetUtilsKt.setReactAsset(fileAttachmentIcon, ReactAsset.PaperIcon);
         SimpleDraweeView fileAttachmentIcon2 = inflate.fileAttachmentIcon;
         Intrinsics.checkNotNullExpressionValue(fileAttachmentIcon2, "fileAttachmentIcon");
         ColorUtilsKt.setTintColor(fileAttachmentIcon2, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));

@@ -43,6 +43,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.REWARD_HERO = var4;
     var0 = 'REWARD_HERO';
     var1[var4] = var0;
+    var4 = 8;
+    var1.MARVEL_RIVALS_PROMOTIONAL_BANNER = var4;
+    var0 = 'MARVEL_RIVALS_PROMOTIONAL_BANNER';
+    var1[var4] = var0;
     var0 = dependencyMap;
     var4 = var0[var3];
     var3 = require;

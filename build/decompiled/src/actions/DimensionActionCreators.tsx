@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var3.bind(var0)(var2);
         var2 = var3.wait;
         var1 = function() { // Environment: var1
-            _fun73090: for (var _fun73090_ip = 0;;) switch (_fun73090_ip) {
+            _fun73096: for (var _fun73096_ip = 0;;) switch (_fun73096_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot4;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun73090_ip = 100;
-                        continue _fun73090
+                        _fun73096_ip = 100;
+                        continue _fun73096
                     }
                 case 92:
                     var1 = _closure2_slot4;
@@ -73,13 +73,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.updateChannelDimensions = var4;
     var4 = function arg0, arg1() {
-        _fun73091: for (var _fun73091_ip = 0;;) switch (_fun73091_ip) {
+        _fun73097: for (var _fun73097_ip = 0;;) switch (_fun73097_ip) {
             case 0:
                 var4 = arguments[2];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun73091_ip = 13;
-                    continue _fun73091
+                    _fun73097_ip = 13;
+                    continue _fun73097
                 }
             case 9:
                 var4 = new Array(0);

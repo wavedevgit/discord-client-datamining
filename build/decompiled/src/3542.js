@@ -1,62 +1,75 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function arg0, arg1() {
-        _fun31696: for (var _fun31696_ip = 0;;) switch (_fun31696_ip) {
+    var4 = require;
+    var5 = dependencyMap;
+    var2 = function arg0() {
+        _fun31700: for (var _fun31700_ip = 0;;) switch (_fun31700_ip) {
             case 0:
-                var3 = arg0;
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
+                var5 = arg0;
+                var4 = this;
+                var0 = null;
+                var0 = var0 == var5;
+                var3 = 0;
+                var2 = 0;
+                if (var0) {
+                    _fun31700_ip = 23;
+                    continue _fun31700
+                }
+            case 18:
+                var2 = var5.length;
+            case 23:
+                var0 = var4.clear;
+                var0 = var0.bind(var4)();
+                var6 = var3 < var2;
+                var1 = 1;
                 var0 = 0;
-                var0 = var4[var0];
-                var4 = undefined;
-                var0 = var2.bind(var4)(var0);
-                var2 = var0.bind(var4)(var3);
-                var0 = var3;
-                if (var2) {
-                    _fun31696_ip = 128;
-                    continue _fun31696
+                if (!var6) {
+                    _fun31700_ip = 75;
+                    continue _fun31700
                 }
-            case 38:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var2 = 1;
-                var2 = var6[var2];
-                var5 = var5.bind(var4)(var2);
-                var2 = arg1;
-                var2 = var5.bind(var4)(var3, var2);
-                if (var2) {
-                    _fun31696_ip = 114;
-                    continue _fun31696
+            case 45:
+                var6 = var5[var0];
+                var8 = var4.set;
+                var7 = var6[var3];
+                var6 = var6[var1];
+                var6 = var8.bind(var4)(var7, var6);
+                var0 = var0 + 1;
+                if (var0 < var2) {
+                    _fun31700_ip = 45;
+                    continue _fun31700
                 }
-            case 70:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var1 = 2;
-                var1 = var6[var1];
-                var2 = var5.bind(var4)(var1);
-                var1 = 3;
-                var1 = var6[var1];
-                var1 = var5.bind(var4)(var1);
-                var1 = var1.bind(var4)(var3);
-                var1 = var2.bind(var4)(var1);
-                _fun31696_ip = 125;
-                continue _fun31696;
-            case 114:
-                var2 = new Array(1);
-                var2[0] = var3;
-                var1 = var2;
-            case 125:
-                var0 = var1;
-            case 128:
+            case 75:
+                var0 = undefined;
                 return var0;
         }
     };
-    var0 = arg4;
-    var0.exports = var1;
+    var3 = var2.prototype;
+    var0 = 0;
+    var1 = var5[var0];
     var0 = undefined;
+    var1 = var4.bind(var0)(var1);
+    var3.clear = var1;
+    var3 = var2.prototype;
+    var1 = 1;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3.delete = var1;
+    var3 = var2.prototype;
+    var1 = 2;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3.get = var1;
+    var3 = var2.prototype;
+    var1 = 3;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3.has = var1;
+    var3 = var2.prototype;
+    var1 = 4;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3.set = var1;
+    var1 = arg4;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [591, 3536, 3543, 3232]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3543, 3559, 3562, 3563, 3564]);

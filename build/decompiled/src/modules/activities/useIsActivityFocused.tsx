@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0() {
-        _fun63261: for (var _fun63261_ip = 0;;) switch (_fun63261_ip) {
+        _fun63267: for (var _fun63267_ip = 0;;) switch (_fun63267_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.channelId;
@@ -21,15 +21,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var0 = var7 != var1;
                 if (!var0) {
-                    _fun63261_ip = 54;
-                    continue _fun63261
+                    _fun63267_ip = 54;
+                    continue _fun63267
                 }
             case 50:
                 var0 = var7 != var6;
             case 54:
                 if (!var0) {
-                    _fun63261_ip = 131;
-                    continue _fun63261
+                    _fun63267_ip = 131;
+                    continue _fun63267
                 }
             case 57:
                 var2 = var1.id;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.applicationId = var8;
                 var7 = var7 == var6;
                 if (var7) {
-                    _fun63261_ip = 117;
-                    continue _fun63261
+                    _fun63267_ip = 117;
+                    continue _fun63267
                 }
             case 111:
                 var5 = var6.compositeInstanceId;
@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.isActivityFocused = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3949, 1371, 3953, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3945, 1371, 3949, 566, 2]);

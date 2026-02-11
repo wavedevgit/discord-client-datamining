@@ -29,23 +29,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var10;
     var9 = function arg0() {
-        _fun15581: for (var _fun15581_ip = 0;;) switch (_fun15581_ip) {
+        _fun15578: for (var _fun15578_ip = 0;;) switch (_fun15578_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot6;
                 var2 = undefined;
                 var0 = var0.bind(var2)(var3);
                 if (var0) {
-                    _fun15581_ip = 29;
-                    continue _fun15581
+                    _fun15578_ip = 29;
+                    continue _fun15578
                 }
             case 20:
                 var4 = _closure1_slot7;
                 var0 = var4.bind(var2)(var3);
             case 29:
                 if (var0) {
-                    _fun15581_ip = 41;
-                    continue _fun15581
+                    _fun15578_ip = 41;
+                    continue _fun15578
                 }
             case 32:
                 var1 = _closure1_slot8;
@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var20.bind(var0)(var13);
     var13 = var13.DismissibleContent;
     var13 = var13.COLLECTIBLES_SHOP_ENTRY_MARKETING;
-    var18 = new Array(9);
+    var18 = new Array(10);
     var18[0] = var13;
     var13 = var21[var1];
     var13 = var20.bind(var0)(var13);
@@ -143,6 +143,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var13.DismissibleContent;
     var13 = var13.GAME_SHOP_ANNOUNCEMENT_MODAL;
     var18[8] = var13;
+    var13 = var21[var1];
+    var13 = var20.bind(var0)(var13);
+    var13 = var13.DismissibleContent;
+    var13 = var13.COLLECTIBLES_SHOP_MARVEL_RIVALS_ORBS_REWARD;
+    var18[9] = var13;
     var _closure1_slot0 = var18;
     var13 = var21[var1];
     var13 = var20.bind(var0)(var13);
@@ -225,7 +230,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var20.bind(var0)(var13);
     var13 = var13.DismissibleContent;
     var13 = var13.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR;
-    var16 = new Array(7);
+    var16 = new Array(8);
     var16[0] = var13;
     var13 = var21[var1];
     var13 = var20.bind(var0)(var13);
@@ -257,6 +262,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var13.DismissibleContent;
     var13 = var13.PREMIUM_ORBS_REWARDS_DROP_POPOVER;
     var16[6] = var13;
+    var13 = var21[var1];
+    var13 = var20.bind(var0)(var13);
+    var13 = var13.DismissibleContent;
+    var13 = var13.QUEST_HOME_ENTRYPOINT_TAKEOVER_BADGE;
+    var16[7] = var13;
     var _closure1_slot2 = var16;
     var13 = var21[var1];
     var13 = var20.bind(var0)(var13);
@@ -359,23 +369,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isTimeRecurringGuildDismissibleContent = var6;
     var2.isSnowflakeBoundGuildDismissibleContent = var5;
     var4 = function arg0() {
-        _fun15588: for (var _fun15588_ip = 0;;) switch (_fun15588_ip) {
+        _fun15585: for (var _fun15585_ip = 0;;) switch (_fun15585_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot10;
                 var2 = undefined;
                 var0 = var0.bind(var2)(var3);
                 if (var0) {
-                    _fun15588_ip = 29;
-                    continue _fun15588
+                    _fun15585_ip = 29;
+                    continue _fun15585
                 }
             case 20:
                 var4 = _closure1_slot11;
                 var0 = var4.bind(var2)(var3);
             case 29:
                 if (var0) {
-                    _fun15588_ip = 41;
-                    continue _fun15588
+                    _fun15585_ip = 41;
+                    continue _fun15585
                 }
             case 32:
                 var1 = _closure1_slot12;

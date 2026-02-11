@@ -3,7 +3,6 @@ package com.discord.chat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,7 +20,7 @@ public final class MediaViewBinding implements ViewBinding {
     @NonNull
     public final ProgressBar inlineMediaLoadingIndicator;
     @NonNull
-    public final ImageView inlineMediaPlayButton;
+    public final SimpleDraweeView inlineMediaPlayButton;
     @NonNull
     public final SimpleDraweeView inlineMediaVolumeToggle;
     @NonNull
@@ -33,15 +32,15 @@ public final class MediaViewBinding implements ViewBinding {
     @NonNull
     private final View rootView;
 
-    private MediaViewBinding(@NonNull View view, @NonNull SimpleDraweeView simpleDraweeView, @NonNull SimpleDraweeView simpleDraweeView2, @NonNull ProgressBar progressBar, @NonNull ImageView imageView, @NonNull SimpleDraweeView simpleDraweeView3, @NonNull ConstraintLayout constraintLayout, @NonNull SimpleDraweeView simpleDraweeView4, @NonNull TextView textView) {
+    private MediaViewBinding(@NonNull View view, @NonNull SimpleDraweeView simpleDraweeView, @NonNull SimpleDraweeView simpleDraweeView2, @NonNull ProgressBar progressBar, @NonNull SimpleDraweeView simpleDraweeView3, @NonNull SimpleDraweeView simpleDraweeView4, @NonNull ConstraintLayout constraintLayout, @NonNull SimpleDraweeView simpleDraweeView5, @NonNull TextView textView) {
         this.rootView = view;
         this.inlineMediaGifIndicator = simpleDraweeView;
         this.inlineMediaImagePreview = simpleDraweeView2;
         this.inlineMediaLoadingIndicator = progressBar;
-        this.inlineMediaPlayButton = imageView;
-        this.inlineMediaVolumeToggle = simpleDraweeView3;
+        this.inlineMediaPlayButton = simpleDraweeView3;
+        this.inlineMediaVolumeToggle = simpleDraweeView4;
         this.overlayTag = constraintLayout;
-        this.overlayTagIcon = simpleDraweeView4;
+        this.overlayTagIcon = simpleDraweeView5;
         this.overlayTagText = textView;
     }
 
@@ -57,21 +56,21 @@ public final class MediaViewBinding implements ViewBinding {
                 ProgressBar progressBar = (ProgressBar) a.a(view, i10);
                 if (progressBar != null) {
                     i10 = R.id.inline_media_play_button;
-                    ImageView imageView = (ImageView) a.a(view, i10);
-                    if (imageView != null) {
+                    SimpleDraweeView simpleDraweeView3 = (SimpleDraweeView) a.a(view, i10);
+                    if (simpleDraweeView3 != null) {
                         i10 = R.id.inline_media_volume_toggle;
-                        SimpleDraweeView simpleDraweeView3 = (SimpleDraweeView) a.a(view, i10);
-                        if (simpleDraweeView3 != null) {
+                        SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) a.a(view, i10);
+                        if (simpleDraweeView4 != null) {
                             i10 = R.id.overlay_tag;
                             ConstraintLayout constraintLayout = (ConstraintLayout) a.a(view, i10);
                             if (constraintLayout != null) {
                                 i10 = R.id.overlay_tag_icon;
-                                SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) a.a(view, i10);
-                                if (simpleDraweeView4 != null) {
+                                SimpleDraweeView simpleDraweeView5 = (SimpleDraweeView) a.a(view, i10);
+                                if (simpleDraweeView5 != null) {
                                     i10 = R.id.overlay_tag_text;
                                     TextView textView = (TextView) a.a(view, i10);
                                     if (textView != null) {
-                                        return new MediaViewBinding(view, simpleDraweeView, simpleDraweeView2, progressBar, imageView, simpleDraweeView3, constraintLayout, simpleDraweeView4, textView);
+                                        return new MediaViewBinding(view, simpleDraweeView, simpleDraweeView2, progressBar, simpleDraweeView3, simpleDraweeView4, constraintLayout, simpleDraweeView5, textView);
                                     }
                                 }
                             }

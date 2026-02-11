@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'other': 'P'
     };
     var4 = function arg0() {
-        _fun22046: for (var _fun22046_ip = 0;;) switch (_fun22046_ip) {
+        _fun22043: for (var _fun22043_ip = 0;;) switch (_fun22043_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.getUTCDay;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = "'την προηγούμενη' eeee 'στις' p";
                 var1 = 6;
                 if (!(var1 === var2)) {
-                    _fun22046_ip = 32;
-                    continue _fun22046
+                    _fun22043_ip = 32;
+                    continue _fun22043
                 }
             case 26:
                 var0 = "'το προηγούμενο' eeee 'στις' p";
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.lastWeek = var4;
     var _closure1_slot0 = var3;
     var2 = function arg0, arg1() {
-        _fun22047: for (var _fun22047_ip = 0;;) switch (_fun22047_ip) {
+        _fun22044: for (var _fun22044_ip = 0;;) switch (_fun22044_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = arg0;
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = typeof var3;
                 var0 = var3;
                 if (!(var2 === var1)) {
-                    _fun22047_ip = 38;
-                    continue _fun22047
+                    _fun22044_ip = 38;
+                    continue _fun22044
                 }
             case 28:
                 var2 = undefined;

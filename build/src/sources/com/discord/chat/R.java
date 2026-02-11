@@ -81,13 +81,12 @@ public final class R {
         public static int ic_guild_icon_16dp = 0x7f080297;
         public static int ic_link_icon_24dp = 0x7f080299;
         public static int ic_microphone_icon_16dp = 0x7f08029d;
-        public static int ic_play_arrow = 0x7f0802ab;
-        public static int ic_reaction_icon_16dp = 0x7f0802ac;
-        public static int ic_swipe_edit = 0x7f0802b0;
-        public static int ic_swipe_reply = 0x7f0802b1;
-        public static int ic_unknown_game_icon_16dp = 0x7f0802b3;
-        public static int premium_tier2_gradient = 0x7f080735;
-        public static int rounded_pill_background = 0x7f08073b;
+        public static int ic_reaction_icon_16dp = 0x7f0802ab;
+        public static int ic_swipe_edit = 0x7f0802af;
+        public static int ic_swipe_reply = 0x7f0802b0;
+        public static int ic_unknown_game_icon_16dp = 0x7f0802b2;
+        public static int premium_tier2_gradient = 0x7f080734;
+        public static int rounded_pill_background = 0x7f08073a;
 
         private drawable() {
         }

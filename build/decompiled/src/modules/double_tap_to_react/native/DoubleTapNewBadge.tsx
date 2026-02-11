@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun90362: for (var _fun90362_ip = 0;;) switch (_fun90362_ip) {
+        _fun90334: for (var _fun90334_ip = 0;;) switch (_fun90334_ip) {
             case 0:
                 var0 = {};
                 var1 = {
@@ -64,14 +64,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = arg1;
                 var2 = var4.bind(var7)(var2);
                 if (!var2) {
-                    _fun90362_ip = 126;
-                    continue _fun90362
+                    _fun90334_ip = 126;
+                    continue _fun90334
                 }
             case 90:
                 var2 = arg0;
                 if (var2) {
-                    _fun90362_ip = 126;
-                    continue _fun90362
+                    _fun90334_ip = 126;
+                    continue _fun90334
                 }
             case 96:
                 var4 = _closure1_slot1;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var5)(var2);
                 var2 = var2.colors;
                 var2 = var2.BACKGROUND_BRAND;
-                _fun90362_ip = 154;
-                continue _fun90362;
+                _fun90334_ip = 154;
+                continue _fun90334;
             case 126:
                 var4 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/double_tap_to_react/native/DoubleTapNewBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun90363: for (var _fun90363_ip = 0;;) switch (_fun90363_ip) {
+        _fun90335: for (var _fun90335_ip = 0;;) switch (_fun90335_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var11 = _closure1_slot2;
@@ -144,14 +144,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var9.isThemeLight;
                 var7 = var7.bind(var9)(var10);
                 if (var7) {
-                    _fun90363_ip = 153;
-                    continue _fun90363
+                    _fun90335_ip = 153;
+                    continue _fun90335
                 }
             case 144:
                 var7 = 'text-brand';
                 if (!var8) {
-                    _fun90363_ip = 159;
-                    continue _fun90363
+                    _fun90335_ip = 159;
+                    continue _fun90335
                 }
             case 153:
                 var7 = 'always-white';
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.DoubleTapNewBadge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3159, 8785, 3247, 3942, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3159, 8785, 3247, 3938, 1234, 2]);

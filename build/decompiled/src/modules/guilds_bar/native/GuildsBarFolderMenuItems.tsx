@@ -63,13 +63,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = undefined;
             var0 = function*() { // Environment: var0
                 var0 = function*() { // Original name: ?anon_0_, environment: var0
-                    _fun101405: for (var _fun101405_ip = 0;;) switch (_fun101405_ip) {
+                    _fun101379: for (var _fun101379_ip = 0;;) switch (_fun101379_ip) {
                         case 0:
                             StartGenerator();
                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                             if (var1) {
-                                _fun101405_ip = 123;
-                                continue _fun101405
+                                _fun101379_ip = 123;
+                                continue _fun101379
                             }
                         case 7:
                             var4 = _closure1_slot3;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3.bind(var4)(var1);
                             var1 = null;
                             if (!(var1 != var3)) {
-                                _fun101405_ip = 115;
-                                continue _fun101405
+                                _fun101379_ip = 115;
+                                continue _fun101379
                             }
                         case 38:
                             var6 = _closure1_slot0;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 82:
                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                             if (var4) {
-                                _fun101405_ip = 120;
-                                continue _fun101405
+                                _fun101379_ip = 120;
+                                continue _fun101379
                             }
                         case 88:
                             var4 = var1.default;
@@ -146,13 +146,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = undefined;
             var0 = function*() { // Environment: var0
                 var0 = function*() { // Original name: ?anon_0_, environment: var0
-                    _fun101408: for (var _fun101408_ip = 0;;) switch (_fun101408_ip) {
+                    _fun101382: for (var _fun101382_ip = 0;;) switch (_fun101382_ip) {
                         case 0:
                             StartGenerator();
                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                             if (var1) {
-                                _fun101408_ip = 84;
-                                continue _fun101408
+                                _fun101382_ip = 84;
+                                continue _fun101382
                             }
                         case 7:
                             var4 = _closure1_slot0;
@@ -171,8 +171,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 54:
                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                             if (var3) {
-                                _fun101408_ip = 81;
-                                continue _fun101408
+                                _fun101382_ip = 81;
+                                continue _fun101382
                             }
                         case 60:
                             var4 = var1.showGuildsBarFolderModal;
@@ -197,4 +197,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildFolderMenuItems = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4386, 660, 7541, 1234, 12641, 1307, 5432, 13196, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4382, 660, 7541, 1234, 12622, 1307, 5431, 13177, 2]);

@@ -1,80 +1,69 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var4 = dependencyMap;
-    var2 = 0;
-    var5 = var4[var2];
-    var0 = undefined;
-    var6 = var3.bind(var0)(var5);
-    var5 = 'Date.prototype.getDay';
-    var5 = var6.bind(var0)(var5);
-    var _closure1_slot0 = var5;
-    var2 = var4[var2];
-    var5 = var3.bind(var0)(var2);
-    var2 = 'Object.prototype.toString';
-    var2 = var5.bind(var0)(var2);
-    var _closure1_slot1 = var2;
-    var2 = 1;
-    var2 = var4[var2];
-    var2 = var3.bind(var0)(var2);
-    var2 = var2.bind(var0)();
-    var _closure1_slot2 = var2;
-    var2 = function arg0() {
-        _fun29109: for (var _fun29109_ip = 0;;) switch (_fun29109_ip) {
-            case 0:
-                var4 = arg0;
-                var1 = 'object';
-                var0 = typeof var4;
-                var0 = var1 === var0;
-                if (!var0) {
-                    _fun29109_ip = 23;
-                    continue _fun29109
-                }
-            case 17:
-                var1 = null;
-                var0 = var1 !== var4;
-            case 23:
-                if (!var0) {
-                    _fun29109_ip = 88;
-                    continue _fun29109
-                }
-            case 26:
-                var1 = _closure1_slot2;
-                if (var1) {
-                    _fun29109_ip = 57;
-                    continue _fun29109
-                }
-            case 36:
-                var2 = _closure1_slot1;
-                var1 = undefined;
-                var2 = var2.bind(var1)(var4);
-                var1 = '[object Date]';
-                var1 = var1 === var2;
-                _fun29109_ip = 85;
-                continue _fun29109;
-            case 57:
-                var2 = var4;
-            case 60: // try_start_0
-                var4 = _closure1_slot0;
-                var3 = var2;
-                var2 = undefined;
-                var2 = var4.bind(var2)(var3);
-            case 74: // try_end0
-                var2 = true;
-                _fun29109_ip = 82;
-                continue _fun29109;
-            case 78: // catch_target0
-                CatchBlockStart(arg_register = 3);
-                var2 = false;
-            case 82:
-                var1 = var2;
-            case 85:
-                var0 = var1;
-            case 88:
+    _fun29109: for (var _fun29109_ip = 0;;) switch (_fun29109_ip) {
+        case 0:
+            var3 = require;
+            var2 = dependencyMap;
+            var _closure1_slot0 = var3;
+            var _closure1_slot1 = var2;
+            var0 = 0;
+            var2 = var2[var0];
+            var0 = undefined;
+            var3 = var3.bind(var0)(var2);
+            var2 = 'String.prototype.replace';
+            var2 = var3.bind(var0)(var2);
+            var _closure1_slot2 = var2;
+            var4 = /^\s$/;
+            var3 = var4.test;
+            var2 = '\u180e';
+            var2 = var3.bind(var4)(var2);
+            if (var2) {
+                _fun29109_ip = 93;
+                continue _fun29109
+            }
+        case 77:
+            var3 = /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/;
+            _fun29109_ip = 107;
+            continue _fun29109;
+        case 93:
+            var3 = /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/;
+        case 107:
+            var _closure1_slot3 = var3;
+            if (var2) {
+                _fun29109_ip = 130;
+                continue _fun29109
+            }
+        case 114:
+            var2 = /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/;
+            _fun29109_ip = 144;
+            continue _fun29109;
+        case 130:
+            var2 = /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/;
+        case 144:
+            var _closure1_slot4 = var2;
+            var2 = function() {
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 1;
+                var1 = var5[var1];
+                var4 = undefined;
+                var2 = var3.bind(var4)(var1);
+                var1 = 2;
+                var1 = var5[var1];
+                var3 = var3.bind(var4)(var1);
+                var1 = this;
+                var1 = var3.bind(var4)(var1);
+                var5 = var2.bind(var4)(var1);
+                var3 = _closure1_slot2;
+                var1 = _closure1_slot3;
+                var2 = '';
+                var1 = var3.bind(var4)(var5, var1, var2);
+                var0 = _closure1_slot4;
+                var0 = var3.bind(var4)(var1, var0, var2);
                 return var0;
-        }
-    };
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [551, 1393]);
+            };
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [551, 3388, 3374]);

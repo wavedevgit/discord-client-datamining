@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/premium_group/native/PremiumGroupFeaturesTableCard.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun83291: for (var _fun83291_ip = 0;;) switch (_fun83291_ip) {
+        _fun83257: for (var _fun83257_ip = 0;;) switch (_fun83257_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.style;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var2, var0);
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun83291_ip = 593;
-                    continue _fun83291
+                    _fun83257_ip = 593;
+                    continue _fun83257
                 }
             case 64:
                 var19 = var1.subheaderString;
@@ -309,4 +309,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.BetaPill = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 33, 1297, 671, 3942, 1234, 10677, 10301, 4108, 3241, 7737, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 33, 1297, 671, 3938, 1234, 10648, 10270, 4104, 3241, 7737, 2]);

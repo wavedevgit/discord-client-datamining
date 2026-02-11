@@ -9,23 +9,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun106085: for (var _fun106085_ip = 0;;) switch (_fun106085_ip) {
+        _fun106075: for (var _fun106075_ip = 0;;) switch (_fun106075_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.channel;
                 var9 = var0.size;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun106085_ip = 23;
-                    continue _fun106085
+                    _fun106075_ip = 23;
+                    continue _fun106075
                 }
             case 19:
                 var9 = 'sm';
             case 23:
                 var4 = var0.wrapperSize;
                 if (!(var4 === var3)) {
-                    _fun106085_ip = 36;
-                    continue _fun106085
+                    _fun106075_ip = 36;
+                    continue _fun106075
                 }
             case 33:
                 var4 = 32;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.TextIcon;
                 var1 = null;
                 if (!(var1 != var11)) {
-                    _fun106085_ip = 165;
-                    continue _fun106085
+                    _fun106075_ip = 165;
+                    continue _fun106075
                 }
             case 79:
                 var10 = _closure1_slot5;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.getChannelIconComponentWithGuild;
                 var0 = var0.bind(var2)(var11, var10);
                 if (!(var1 == var0)) {
-                    _fun106085_ip = 162;
-                    continue _fun106085
+                    _fun106075_ip = 162;
+                    continue _fun106075
                 }
             case 139:
                 var2 = _closure1_slot0;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/app_launcher/native/options/channel/AppLauncherChannelListActionSheet.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun106086: for (var _fun106086_ip = 0;;) switch (_fun106086_ip) {
+        _fun106076: for (var _fun106076_ip = 0;;) switch (_fun106076_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.onChannelPress;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4.AppLauncherListSearchBar;
                 var4 = {};
                 var14 = function arg0() {
-                    _fun106089: for (var _fun106089_ip = 0;;) switch (_fun106089_ip) {
+                    _fun106079: for (var _fun106079_ip = 0;;) switch (_fun106079_ip) {
                         case 0:
                             var2 = arg0;
                             var3 = _closure2_slot5;
@@ -262,8 +262,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1.current;
                             var1 = null;
                             if (!(var1 != var3)) {
-                                _fun106089_ip = 67;
-                                continue _fun106089
+                                _fun106079_ip = 63;
+                                continue _fun106079
                             }
                         case 42:
                             var2 = var3.scrollToOffset;
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'animated': false
                             };
                             var1 = var2.bind(var3)(var1);
-                        case 67:
+                        case 63:
                             return var0;
                     }
                 };
@@ -281,8 +281,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var8;
                 if (!(var7 !== var5)) {
-                    _fun106086_ip = 356;
-                    continue _fun106086
+                    _fun106076_ip = 356;
+                    continue _fun106076
                 }
             case 299:
                 var8 = _closure1_slot6;
@@ -353,8 +353,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var5.renderItem = var10;
                 var5 = var8.bind(var3)(var7, var5);
-                _fun106086_ip = 391;
-                continue _fun106086;
+                _fun106076_ip = 391;
+                continue _fun106076;
             case 356:
                 var8 = _closure1_slot6;
                 var7 = _closure1_slot0;
@@ -376,4 +376,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.APP_LAUNCHER_CHANNEL_LIST_ACTION_SHEET_KEY = var3;
     var2.ChannelIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1410, 33, 1297, 671, 4858, 4819, 13805, 5653, 3279, 13806, 13807, 4910, 3942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1410, 33, 1297, 671, 4856, 4817, 13791, 5652, 3279, 13792, 13793, 4908, 3938, 2]);

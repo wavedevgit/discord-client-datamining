@@ -18,31 +18,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot1 = var2;
     var3 = function arg0() {
-        _fun59269: for (var _fun59269_ip = 0;;) switch (_fun59269_ip) {
+        _fun59275: for (var _fun59275_ip = 0;;) switch (_fun59275_ip) {
             case 0:
                 var2 = arg0;
                 var1 = 'object';
                 var0 = typeof var2;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun59269_ip = 23;
-                    continue _fun59269
+                    _fun59275_ip = 23;
+                    continue _fun59275
                 }
             case 17:
                 var1 = null;
                 var0 = var1 !== var2;
             case 23:
                 if (!var0) {
-                    _fun59269_ip = 34;
-                    continue _fun59269
+                    _fun59275_ip = 34;
+                    continue _fun59275
                 }
             case 26:
                 var1 = '__sentry_template_string__';
                 var0 = var1 in var2;
             case 34:
                 if (!var0) {
-                    _fun59269_ip = 45;
-                    continue _fun59269
+                    _fun59275_ip = 45;
+                    continue _fun59275
                 }
             case 37:
                 var1 = '__sentry_template_values__';
@@ -62,7 +62,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot3 = var2;
     var4 = function arg0, arg1() {
-        _fun59271: for (var _fun59271_ip = 0;;) switch (_fun59271_ip) {
+        _fun59277: for (var _fun59277_ip = 0;;) switch (_fun59277_ip) {
             case 0:
                 var1 = arg0;
                 var0 = arg1;
@@ -108,7 +108,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isDOMException = var5;
     var5 = function arg0() {
-        _fun59274: for (var _fun59274_ip = 0;;) switch (_fun59274_ip) {
+        _fun59280: for (var _fun59280_ip = 0;;) switch (_fun59280_ip) {
             case 0:
                 var1 = global;
                 var0 = var1.Element;
@@ -116,8 +116,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var0;
                 var0 = var2 !== var0;
                 if (!var0) {
-                    _fun59274_ip = 46;
-                    continue _fun59274
+                    _fun59280_ip = 46;
+                    continue _fun59280
                 }
             case 22:
                 var4 = _closure1_slot4;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isElement = var5;
     var5 = function arg0() {
-        _fun59275: for (var _fun59275_ip = 0;;) switch (_fun59275_ip) {
+        _fun59281: for (var _fun59281_ip = 0;;) switch (_fun59281_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -139,20 +139,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.bind(var2)(var3);
                 var1 = '[object Error]';
                 if (!(var1 !== var2)) {
-                    _fun59275_ip = 70;
-                    continue _fun59275
+                    _fun59281_ip = 70;
+                    continue _fun59281
                 }
             case 28:
                 var1 = '[object Exception]';
                 if (!(var1 !== var2)) {
-                    _fun59275_ip = 70;
-                    continue _fun59275
+                    _fun59281_ip = 70;
+                    continue _fun59281
                 }
             case 38:
                 var1 = '[object DOMException]';
                 if (!(var1 !== var2)) {
-                    _fun59275_ip = 70;
-                    continue _fun59275
+                    _fun59281_ip = 70;
+                    continue _fun59281
                 }
             case 48:
                 var2 = _closure1_slot4;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isErrorEvent = var5;
     var5 = function arg0() {
-        _fun59277: for (var _fun59277_ip = 0;;) switch (_fun59277_ip) {
+        _fun59283: for (var _fun59283_ip = 0;;) switch (_fun59283_ip) {
             case 0:
                 var1 = global;
                 var0 = var1.Event;
@@ -185,8 +185,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var0;
                 var0 = var2 !== var0;
                 if (!var0) {
-                    _fun59277_ip = 46;
-                    continue _fun59277
+                    _fun59283_ip = 46;
+                    continue _fun59283
                 }
             case 22:
                 var4 = _closure1_slot4;
@@ -203,14 +203,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.isParameterizedString = var3;
     var1.isPlainObject = var2;
     var2 = function arg0() {
-        _fun59278: for (var _fun59278_ip = 0;;) switch (_fun59278_ip) {
+        _fun59284: for (var _fun59284_ip = 0;;) switch (_fun59284_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 === var1;
                 if (var0) {
-                    _fun59278_ip = 26;
-                    continue _fun59278
+                    _fun59284_ip = 26;
+                    continue _fun59284
                 }
             case 12:
                 var3 = _closure1_slot2;
@@ -218,16 +218,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3.bind(var2)(var1);
             case 26:
                 if (var0) {
-                    _fun59278_ip = 54;
-                    continue _fun59278
+                    _fun59284_ip = 54;
+                    continue _fun59284
                 }
             case 29:
                 var3 = typeof var1;
                 var1 = 'object';
                 var1 = var1 !== var3;
                 if (!var1) {
-                    _fun59278_ip = 51;
-                    continue _fun59278
+                    _fun59284_ip = 51;
+                    continue _fun59284
                 }
             case 43:
                 var2 = 'function';
@@ -258,31 +258,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isString = var2;
     var2 = function arg0() {
-        _fun59281: for (var _fun59281_ip = 0;;) switch (_fun59281_ip) {
+        _fun59287: for (var _fun59287_ip = 0;;) switch (_fun59287_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot3;
                 var0 = undefined;
                 var0 = var1.bind(var0)(var2);
                 if (!var0) {
-                    _fun59281_ip = 28;
-                    continue _fun59281
+                    _fun59287_ip = 28;
+                    continue _fun59287
                 }
             case 20:
                 var1 = 'nativeEvent';
                 var0 = var1 in var2;
             case 28:
                 if (!var0) {
-                    _fun59281_ip = 39;
-                    continue _fun59281
+                    _fun59287_ip = 39;
+                    continue _fun59287
                 }
             case 31:
                 var1 = 'preventDefault';
                 var0 = var1 in var2;
             case 39:
                 if (!var0) {
-                    _fun59281_ip = 50;
-                    continue _fun59281
+                    _fun59287_ip = 50;
+                    continue _fun59287
                 }
             case 42:
                 var1 = 'stopPropagation';
@@ -293,22 +293,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isSyntheticEvent = var2;
     var2 = function arg0() {
-        _fun59282: for (var _fun59282_ip = 0;;) switch (_fun59282_ip) {
+        _fun59288: for (var _fun59288_ip = 0;;) switch (_fun59288_ip) {
             case 0:
                 var0 = arg0;
                 var1 = global;
                 var2 = var1.Boolean;
                 var1 = var0;
                 if (!var1) {
-                    _fun59282_ip = 22;
-                    continue _fun59282
+                    _fun59288_ip = 22;
+                    continue _fun59288
                 }
             case 17:
                 var1 = var0.then;
             case 22:
                 if (!var1) {
-                    _fun59282_ip = 41;
-                    continue _fun59282
+                    _fun59288_ip = 41;
+                    continue _fun59288
                 }
             case 25:
                 var0 = var0.then;
@@ -323,30 +323,30 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isThenable = var2;
     var0 = function arg0() {
-        _fun59283: for (var _fun59283_ip = 0;;) switch (_fun59283_ip) {
+        _fun59289: for (var _fun59289_ip = 0;;) switch (_fun59289_ip) {
             case 0:
                 var2 = arg0;
                 var1 = 'object';
                 var0 = typeof var2;
                 var0 = var1 !== var0;
                 if (var0) {
-                    _fun59283_ip = 23;
-                    continue _fun59283
+                    _fun59289_ip = 23;
+                    continue _fun59289
                 }
             case 17:
                 var1 = null;
                 var0 = var1 === var2;
             case 23:
                 if (var0) {
-                    _fun59283_ip = 50;
-                    continue _fun59283
+                    _fun59289_ip = 50;
+                    continue _fun59289
                 }
             case 26:
                 var1 = var2.__isVue;
                 var1 = !var1;
                 if (!var1) {
-                    _fun59283_ip = 47;
-                    continue _fun59283
+                    _fun59289_ip = 47;
+                    continue _fun59289
                 }
             case 38:
                 var2 = var2._isVue;

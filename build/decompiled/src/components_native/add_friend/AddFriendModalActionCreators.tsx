@@ -43,15 +43,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.openAddFriendModalDeeplink = var6;
     var3 = function arg0() {
-        _fun96773: for (var _fun96773_ip = 0;;) switch (_fun96773_ip) {
+        _fun96747: for (var _fun96747_ip = 0;;) switch (_fun96747_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = var2.getCurrentUser;
                 var2 = var0.bind(var2)();
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun96773_ip = 100;
-                    continue _fun96773
+                    _fun96747_ip = 100;
+                    continue _fun96747
                 }
             case 22:
                 var3 = _closure1_slot1;
@@ -87,4 +87,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 4571, 12590, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 4567, 12571, 1307, 2]);

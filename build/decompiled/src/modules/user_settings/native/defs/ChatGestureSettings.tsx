@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
     var3 = function() {
-        _fun72559: for (var _fun72559_ip = 0;;) switch (_fun72559_ip) {
+        _fun72565: for (var _fun72565_ip = 0;;) switch (_fun72565_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.SwipeRightToLeftMode;
                 var2 = var2.SWIPE_RIGHT_TO_LEFT_UNSET;
                 if (!(var0 === var2)) {
-                    _fun72559_ip = 98;
-                    continue _fun72559
+                    _fun72565_ip = 98;
+                    continue _fun72565
                 }
             case 69:
                 var2 = _closure1_slot0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2.useSwipeToReplySettingValue = var3;
     var1 = function() {
-        _fun72564: for (var _fun72564_ip = 0;;) switch (_fun72564_ip) {
+        _fun72570: for (var _fun72570_ip = 0;;) switch (_fun72570_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -223,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.SwipeRightToLeftMode;
                 var2 = var2.SWIPE_RIGHT_TO_LEFT_UNSET;
                 if (!(var0 === var2)) {
-                    _fun72564_ip = 98;
-                    continue _fun72564
+                    _fun72570_ip = 98;
+                    continue _fun72570
                 }
             case 69:
                 var2 = _closure1_slot0;

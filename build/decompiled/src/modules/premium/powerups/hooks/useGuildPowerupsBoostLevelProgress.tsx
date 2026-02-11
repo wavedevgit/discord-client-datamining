@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupsBoostLevelProgress.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun56422: for (var _fun56422_ip = 0;;) switch (_fun56422_ip) {
+        _fun56427: for (var _fun56427_ip = 0;;) switch (_fun56427_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = new Array(1);
                 var9[0] = var7;
                 var3 = function() { // Environment: var1
-                    _fun56423: for (var _fun56423_ip = 0;;) switch (_fun56423_ip) {
+                    _fun56428: for (var _fun56428_ip = 0;;) switch (_fun56428_ip) {
                         case 0:
                             var3 = _closure1_slot3;
                             var2 = var3.getGuild;
@@ -67,15 +67,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var2 == var3;
                             var0 = undefined;
                             if (var4) {
-                                _fun56423_ip = 41;
-                                continue _fun56423
+                                _fun56428_ip = 41;
+                                continue _fun56428
                             }
                         case 35:
                             var0 = var3.premiumTier;
                         case 41:
                             if (!(var2 == var0)) {
-                                _fun56423_ip = 55;
-                                continue _fun56423
+                                _fun56428_ip = 55;
+                                continue _fun56428
                             }
                         case 45:
                             var1 = _closure1_slot5;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var7;
                 var1 = function() { // Environment: var1
-                    _fun56424: for (var _fun56424_ip = 0;;) switch (_fun56424_ip) {
+                    _fun56429: for (var _fun56429_ip = 0;;) switch (_fun56429_ip) {
                         case 0:
                             var3 = _closure1_slot3;
                             var2 = var3.getGuild;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun56424_ip = 61;
-                                continue _fun56424
+                                _fun56429_ip = 61;
+                                continue _fun56429
                             }
                         case 35:
                             var3 = var2.features;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)(var4, var1);
                 var1 = 0;
                 if (var4) {
-                    _fun56422_ip = 129;
-                    continue _fun56422
+                    _fun56427_ip = 129;
+                    continue _fun56427
                 }
             case 121:
                 var2 = _closure1_slot4;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun56425: for (var _fun56425_ip = 0;;) switch (_fun56425_ip) {
+        _fun56430: for (var _fun56430_ip = 0;;) switch (_fun56430_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -150,15 +150,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var5 = var3 == var4;
                 if (var5) {
-                    _fun56425_ip = 68;
-                    continue _fun56425
+                    _fun56430_ip = 68;
+                    continue _fun56430
                 }
             case 62:
                 var2 = var4.premiumTier;
             case 68:
                 if (!(var3 == var2)) {
-                    _fun56425_ip = 82;
-                    continue _fun56425
+                    _fun56430_ip = 82;
+                    continue _fun56430
                 }
             case 72:
                 var3 = _closure1_slot5;

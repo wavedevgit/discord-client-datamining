@@ -21,18 +21,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1._getSpanForScope = var2;
     var0 = function arg0, arg1() {
-        _fun8948: for (var _fun8948_ip = 0;;) switch (_fun8948_ip) {
+        _fun8945: for (var _fun8945_ip = 0;;) switch (_fun8945_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
                 if (var3) {
-                    _fun8948_ip = 16;
-                    continue _fun8948
+                    _fun8945_ip = 16;
+                    continue _fun8945
                 }
             case 9:
                 var0 = delete var4._sentrySpan;
-                _fun8948_ip = 57;
-                continue _fun8948;
+                _fun8945_ip = 57;
+                continue _fun8945;
             case 16:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;

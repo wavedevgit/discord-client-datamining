@@ -18,6 +18,7 @@ import com.discord.notifications.actions.intents.ContentAction;
 import com.discord.notifications.actions.intents.DismissCallAction;
 import com.discord.react_activities.ReactActivity;
 import com.discord.react_asset_fetcher.ReactAsset;
+import com.discord.react_asset_fetcher.ReactAssetExtensionsKt;
 import com.discord.react_asset_fetcher.ReactAssetUtilsKt;
 import com.discord.react_strings.I18nMessage;
 import com.discord.react_strings.I18nUtilsKt;
@@ -37,8 +38,8 @@ import ys.g0;
 import ys.i;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
-@e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureActions$1", f = "IncomingCallActivity.kt", l = {164}, m = "invokeSuspend")
-@SourceDebugExtension({"SMAP\nIncomingCallActivity.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IncomingCallActivity.kt\ncom/discord/notifications/renderer/IncomingCallActivity$configureActions$1\n+ 2 Bitmap.kt\nandroidx/core/graphics/BitmapKt\n*L\n1#1,274:1\n70#2,2:275\n70#2,2:277\n*S KotlinDebug\n*F\n+ 1 IncomingCallActivity.kt\ncom/discord/notifications/renderer/IncomingCallActivity$configureActions$1\n*L\n169#1:275,2\n173#1:277,2\n*E\n"})
+@e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureActions$1", f = "IncomingCallActivity.kt", l = {165}, m = "invokeSuspend")
+@SourceDebugExtension({"SMAP\nIncomingCallActivity.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IncomingCallActivity.kt\ncom/discord/notifications/renderer/IncomingCallActivity$configureActions$1\n+ 2 Bitmap.kt\nandroidx/core/graphics/BitmapKt\n*L\n1#1,275:1\n70#2,2:276\n70#2,2:278\n*S KotlinDebug\n*F\n+ 1 IncomingCallActivity.kt\ncom/discord/notifications/renderer/IncomingCallActivity$configureActions$1\n*L\n170#1:276,2\n174#1:278,2\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class IncomingCallActivity$configureActions$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     private /* synthetic */ Object L$0;
@@ -52,7 +53,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "Landroid/graphics/Bitmap;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
-    @e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureActions$1$1", f = "IncomingCallActivity.kt", l = {165}, m = "invokeSuspend")
+    @e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureActions$1$1", f = "IncomingCallActivity.kt", l = {166}, m = "invokeSuspend")
     /* renamed from: com.discord.notifications.renderer.IncomingCallActivity$configureActions$1$1  reason: invalid class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Bitmap>, Object> {
@@ -103,7 +104,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "Landroid/graphics/Bitmap;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
-    @e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureActions$1$2", f = "IncomingCallActivity.kt", l = {166}, m = "invokeSuspend")
+    @e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureActions$1$2", f = "IncomingCallActivity.kt", l = {167}, m = "invokeSuspend")
     /* renamed from: com.discord.notifications.renderer.IncomingCallActivity$configureActions$1$2  reason: invalid class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class AnonymousClass2 extends k implements Function2<CoroutineScope, Continuation<? super Bitmap>, Object> {
@@ -247,17 +248,17 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
             TextView textView4 = (TextView) this.this$0.findViewById(R.id.declineCallText);
             Context applicationContext = this.this$0.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            ReactAsset reactAsset = ReactAsset.CallDisconnect;
+            ReactAsset reactAsset = ReactAsset.PhoneHangUpIcon;
             i10 = 0;
             Context applicationContext2 = this.this$0.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext2, "getApplicationContext(...)");
-            String reactImageUrl = ReactAssetUtilsKt.getReactImageUrl(applicationContext, reactAsset.getUri(applicationContext2));
+            String reactImageUrl = ReactAssetUtilsKt.getReactImageUrl(applicationContext, ReactAssetExtensionsKt.getUri(reactAsset, applicationContext2));
             Context applicationContext3 = this.this$0.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext3, "getApplicationContext(...)");
-            ReactAsset reactAsset2 = ReactAsset.CallConnect;
+            ReactAsset reactAsset2 = ReactAsset.PhoneCallIcon;
             Context applicationContext4 = this.this$0.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext4, "getApplicationContext(...)");
-            String reactImageUrl2 = ReactAssetUtilsKt.getReactImageUrl(applicationContext3, reactAsset2.getUri(applicationContext4));
+            String reactImageUrl2 = ReactAssetUtilsKt.getReactImageUrl(applicationContext3, ReactAssetExtensionsKt.getUri(reactAsset2, applicationContext4));
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, reactImageUrl, null);
             imageButton = (ImageButton) this.this$0.findViewById(R.id.declineCallContainer);
             b10 = i.b(coroutineScope, null, null, anonymousClass1, 3, null);

@@ -9,7 +9,6 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
@@ -53,7 +52,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
 @Metadata(d1 = {"\u0000¹\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007*\u0001i\b\u0016\u0018\u00002\u00020\u0001B'\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tJ?\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u000b\u001a\u00020\n2\b\u0010\r\u001a\u0004\u0018\u00010\f2\b\u0010\u000f\u001a\u0004\u0018\u00010\u000e2\b\u0010\u0010\u001a\u0004\u0018\u00010\u00062\b\u0010\u0011\u001a\u0004\u0018\u00010\u0006H\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u000f\u0010\u0015\u001a\u00020\u0012H\u0002¢\u0006\u0004\b\u0015\u0010\u0016J\u000f\u0010\u0017\u001a\u00020\u0012H\u0002¢\u0006\u0004\b\u0017\u0010\u0016J\u000f\u0010\u0018\u001a\u00020\u0012H\u0002¢\u0006\u0004\b\u0018\u0010\u0016J\u0017\u0010\u0019\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\nH\u0002¢\u0006\u0004\b\u0019\u0010\u001aJ-\u0010!\u001a\u0010\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020 \u0018\u00010\u001e2\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001d\u001a\u00020\nH\u0002¢\u0006\u0004\b!\u0010\"J\u000f\u0010#\u001a\u00020\u0012H\u0002¢\u0006\u0004\b#\u0010\u0016J\u000f\u0010$\u001a\u00020\u0012H\u0002¢\u0006\u0004\b$\u0010\u0016J\u000f\u0010%\u001a\u00020\u0012H\u0014¢\u0006\u0004\b%\u0010\u0016J\u0019\u0010(\u001a\u00020\u00122\b\u0010'\u001a\u0004\u0018\u00010&H\u0014¢\u0006\u0004\b(\u0010)J\u000f\u0010*\u001a\u00020\u0012H\u0014¢\u0006\u0004\b*\u0010\u0016J×\u0001\u0010@\u001a\u00020\u00122\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u001b2\b\b\u0002\u0010+\u001a\u00020\n2\b\b\u0002\u0010,\u001a\u00020\n2\b\b\u0002\u0010-\u001a\u00020\n2\n\b\u0002\u0010/\u001a\u0004\u0018\u00010.2\b\b\u0002\u00100\u001a\u00020\n2\n\b\u0002\u00101\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u00103\u001a\u0004\u0018\u0001022\b\b\u0002\u00104\u001a\u00020\n2\b\b\u0002\u00105\u001a\u00020\n2\b\b\u0002\u00106\u001a\u00020\n2\b\b\u0002\u00107\u001a\u00020\u00062\u000e\b\u0002\u00109\u001a\b\u0012\u0004\u0012\u00020\u0012082\n\b\u0002\u0010:\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010;\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010<\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u00062\b\b\u0002\u0010?\u001a\u00020>¢\u0006\u0004\b@\u0010AJ!\u0010F\u001a\u00020\u00122\b\u0010C\u001a\u0004\u0018\u00010B2\b\u0010E\u001a\u0004\u0018\u00010D¢\u0006\u0004\bF\u0010GJ!\u0010K\u001a\u00020\u00122\u0012\u0010J\u001a\u000e\u0012\u0004\u0012\u00020I\u0012\u0004\u0012\u00020\u00120H¢\u0006\u0004\bK\u0010LR\u001a\u0010N\u001a\u00020M8\u0002X\u0082\u0004¢\u0006\f\n\u0004\bN\u0010O\u0012\u0004\bP\u0010\u0016R\u0018\u0010Q\u001a\u0004\u0018\u00010 8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bQ\u0010RR\u0018\u0010\u001c\u001a\u0004\u0018\u00010\u001b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001c\u0010SR\u0018\u0010T\u001a\u0004\u0018\u00010\u001f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bT\u0010UR\u0016\u0010,\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b,\u0010VR\u0016\u0010-\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b-\u0010VR\u0016\u0010+\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b+\u0010VR\u0018\u0010/\u001a\u0004\u0018\u00010.8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b/\u0010WR\u0016\u00100\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b0\u0010VR\u0016\u0010X\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bX\u0010VR\u0018\u00101\u001a\u0004\u0018\u00010\u00068\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b1\u0010YR\u0018\u00103\u001a\u0004\u0018\u0001028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b3\u0010ZR\u0016\u00104\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b4\u0010VR\u0016\u00105\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b5\u0010VR\u0016\u00106\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b6\u0010VR\u0016\u00107\u001a\u00020\u00068\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b7\u0010[R\u001c\u00109\u001a\b\u0012\u0004\u0012\u00020\u0012088\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b9\u0010\\R\u0018\u0010:\u001a\u0004\u0018\u00010\f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b:\u0010]R\u0018\u0010;\u001a\u0004\u0018\u00010\u000e8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b;\u0010^R\u0018\u0010=\u001a\u0004\u0018\u00010\u00068\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b=\u0010YR\u0018\u0010<\u001a\u0004\u0018\u00010\u00068\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b<\u0010YR\"\u0010J\u001a\u000e\u0012\u0004\u0012\u00020I\u0012\u0004\u0012\u00020\u00120H8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bJ\u0010_R\u0016\u0010?\u001a\u00020>8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b?\u0010`R\u0018\u0010a\u001a\u0004\u0018\u00010\f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\ba\u0010]R\u0016\u0010c\u001a\u0004\u0018\u00010b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bc\u0010dR\u001a\u0010f\u001a\u00020e8\u0002X\u0082\u0004¢\u0006\f\n\u0004\bf\u0010g\u0012\u0004\bh\u0010\u0016R\u0014\u0010j\u001a\u00020i8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bj\u0010kR\u0016\u0010o\u001a\u0004\u0018\u00010l8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bm\u0010nR\u0018\u0010r\u001a\u00020\n*\u00020\u001b8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bp\u0010q¨\u0006s"}, d2 = {"Lcom/discord/chat/presentation/message/view/MediaView;", "Landroid/widget/FrameLayout;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "", "isTagVisible", "", "content", "Lcom/discord/react_asset_fetcher/ReactAsset;", "icon", ViewProps.BACKGROUND_COLOR, "textColor", "", "setupTag", "(ZLjava/lang/String;Lcom/discord/react_asset_fetcher/ReactAsset;Ljava/lang/Integer;Ljava/lang/Integer;)V", "pause", "()V", "play", "prepareAndPlay", "togglePortalControl", "(Z)V", "Lcom/discord/media_player/MediaSource;", "mediaSource", "loopMedia", "Lkotlin/Pair;", "Lcom/discord/media_player/MediaPlayer;", "Lcom/discord/media_player/MediaPlayerView;", "prepareMediaPlayer", "(Lcom/discord/media_player/MediaSource;Z)Lkotlin/Pair;", "registerForPortal", "releasePlayer", "onDetachedFromWindow", "Landroid/content/res/Configuration;", "newConfig", "onConfigurationChanged", "(Landroid/content/res/Configuration;)V", "onAttachedToWindow", "mediaViewDetached", "mediaViewScrolling", "mediaViewFocused", "Lcom/discord/media_player/MediaPlayer$Event;", "mediaPlaybackState", "mediaVolumeOn", "mediaOrientation", "Lcom/discord/portals/from_native/PortalFromNativeContextManager$Event;", "mediaPortalEvent", "mediaCanPlayInline", "mediaPlayThirdParty", "mediaHidePlayButton", "mediaThumbnailFadeDuration", "Lkotlin/Function0;", "mediaOnPlayCallback", "overlayTagText", "overlayTagIcon", "overlayTagBackgroundColor", "overlayTagTextColor", "Lcom/discord/media_player/MediaPlayer$PlayerSettings;", "playerSettings", "setMediaData", "(Lcom/discord/media_player/MediaSource;ZZZLcom/discord/media_player/MediaPlayer$Event;ZLjava/lang/Integer;Lcom/discord/portals/from_native/PortalFromNativeContextManager$Event;ZZZILkotlin/jvm/functions/Function0;Ljava/lang/String;Lcom/discord/react_asset_fetcher/ReactAsset;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/discord/media_player/MediaPlayer$PlayerSettings;)V", "Landroid/view/View$OnClickListener;", "onClickListener", "Landroid/view/View$OnLongClickListener;", "onLongClickListener", "setOnMediaClickListeners", "(Landroid/view/View$OnClickListener;Landroid/view/View$OnLongClickListener;)V", "Lkotlin/Function1;", "Lcom/discord/media_player/reactevents/MediaPlayFinishedAnalytics;", "onMediaPlayFinishedAnalytics", "setAnalyticsListener", "(Lkotlin/jvm/functions/Function1;)V", "Lcom/discord/chat/databinding/MediaViewBinding;", "binding", "Lcom/discord/chat/databinding/MediaViewBinding;", "getBinding$annotations", "mediaPlayerView", "Lcom/discord/media_player/MediaPlayerView;", "Lcom/discord/media_player/MediaSource;", "mediaPlayer", "Lcom/discord/media_player/MediaPlayer;", "Z", "Lcom/discord/media_player/MediaPlayer$Event;", "mediaShouldResume", "Ljava/lang/Integer;", "Lcom/discord/portals/from_native/PortalFromNativeContextManager$Event;", "I", "Lkotlin/jvm/functions/Function0;", "Ljava/lang/String;", "Lcom/discord/react_asset_fetcher/ReactAsset;", "Lkotlin/jvm/functions/Function1;", "Lcom/discord/media_player/MediaPlayer$PlayerSettings;", "pauseId", "Lcom/discord/media_player/MediaPlayerManagerModule;", "managerModule", "Lcom/discord/media_player/MediaPlayerManagerModule;", "Lcom/discord/chat/presentation/message/view/media/ViewAttachedListener;", "attachStateChangeListener", "Lcom/discord/chat/presentation/message/view/media/ViewAttachedListener;", "getAttachStateChangeListener$annotations", "com/discord/chat/presentation/message/view/MediaView$lifecycleListener$1", "lifecycleListener", "Lcom/discord/chat/presentation/message/view/MediaView$lifecycleListener$1;", "Lcom/facebook/react/bridge/ReactContext;", "getReactContext", "()Lcom/facebook/react/bridge/ReactContext;", "reactContext", "getShouldShowGifIndicator", "(Lcom/discord/media_player/MediaSource;)Z", "shouldShowGifIndicator", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@SourceDebugExtension({"SMAP\nMediaView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaView.kt\ncom/discord/chat/presentation/message/view/MediaView\n+ 2 CastUtils.kt\ncom/discord/misc/utilities/kotlin/CastUtilsKt\n+ 3 ColorDrawable.kt\nandroidx/core/graphics/drawable/ColorDrawableKt\n+ 4 View.kt\nandroidx/core/view/ViewKt\n+ 5 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,623:1\n8#2:624\n27#3:625\n257#4,2:626\n257#4,2:628\n257#4,2:630\n257#4,2:632\n257#4,2:634\n255#4:636\n257#4,2:637\n255#4:639\n257#4,2:640\n257#4,2:642\n1#5:644\n*S KotlinDebug\n*F\n+ 1 MediaView.kt\ncom/discord/chat/presentation/message/view/MediaView\n*L\n84#1:624\n129#1:625\n257#1:626,2\n272#1:628,2\n276#1:630,2\n284#1:632,2\n296#1:634,2\n328#1:636\n452#1:637,2\n459#1:639\n465#1:640,2\n469#1:642,2\n*E\n"})
+@SourceDebugExtension({"SMAP\nMediaView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaView.kt\ncom/discord/chat/presentation/message/view/MediaView\n+ 2 CastUtils.kt\ncom/discord/misc/utilities/kotlin/CastUtilsKt\n+ 3 ColorDrawable.kt\nandroidx/core/graphics/drawable/ColorDrawableKt\n+ 4 View.kt\nandroidx/core/view/ViewKt\n+ 5 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,624:1\n8#2:625\n27#3:626\n257#4,2:627\n257#4,2:629\n257#4,2:631\n257#4,2:633\n257#4,2:635\n255#4:637\n257#4,2:638\n255#4:640\n257#4,2:641\n257#4,2:643\n1#5:645\n*S KotlinDebug\n*F\n+ 1 MediaView.kt\ncom/discord/chat/presentation/message/view/MediaView\n*L\n84#1:625\n130#1:626\n258#1:627,2\n273#1:629,2\n277#1:631,2\n285#1:633,2\n297#1:635,2\n329#1:637\n453#1:638,2\n460#1:640\n466#1:641,2\n470#1:643,2\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class MediaView extends FrameLayout {
     @NotNull
@@ -572,36 +571,36 @@ public class MediaView extends FrameLayout {
         this.onMediaPlayFinishedAnalytics = onMediaPlayFinishedAnalytics;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:119:0x01ee  */
-    /* JADX WARN: Removed duplicated region for block: B:120:0x01f0  */
-    /* JADX WARN: Removed duplicated region for block: B:132:0x021f  */
-    /* JADX WARN: Removed duplicated region for block: B:141:0x0234  */
-    /* JADX WARN: Removed duplicated region for block: B:142:0x0236  */
-    /* JADX WARN: Removed duplicated region for block: B:145:0x0244  */
-    /* JADX WARN: Removed duplicated region for block: B:146:0x0247  */
-    /* JADX WARN: Removed duplicated region for block: B:149:0x0264  */
-    /* JADX WARN: Removed duplicated region for block: B:150:0x0267  */
-    /* JADX WARN: Removed duplicated region for block: B:153:0x028c A[ADDED_TO_REGION] */
-    /* JADX WARN: Removed duplicated region for block: B:162:0x02ab  */
-    /* JADX WARN: Removed duplicated region for block: B:167:0x02b8 A[ADDED_TO_REGION] */
-    /* JADX WARN: Removed duplicated region for block: B:176:0x02cc  */
-    /* JADX WARN: Removed duplicated region for block: B:177:0x02d1  */
-    /* JADX WARN: Removed duplicated region for block: B:182:0x02f8  */
-    /* JADX WARN: Removed duplicated region for block: B:189:0x030a  */
-    /* JADX WARN: Removed duplicated region for block: B:202:0x032c A[ADDED_TO_REGION] */
-    /* JADX WARN: Removed duplicated region for block: B:210:0x033e  */
-    /* JADX WARN: Removed duplicated region for block: B:225:0x0366  */
-    /* JADX WARN: Removed duplicated region for block: B:230:0x0373  */
-    /* JADX WARN: Removed duplicated region for block: B:236:0x0388  */
-    /* JADX WARN: Removed duplicated region for block: B:98:0x01b7  */
-    /* JADX WARN: Removed duplicated region for block: B:99:0x01b9  */
+    /* JADX WARN: Removed duplicated region for block: B:119:0x01fd  */
+    /* JADX WARN: Removed duplicated region for block: B:120:0x01ff  */
+    /* JADX WARN: Removed duplicated region for block: B:132:0x022e  */
+    /* JADX WARN: Removed duplicated region for block: B:141:0x0243  */
+    /* JADX WARN: Removed duplicated region for block: B:142:0x0245  */
+    /* JADX WARN: Removed duplicated region for block: B:145:0x0253  */
+    /* JADX WARN: Removed duplicated region for block: B:146:0x0256  */
+    /* JADX WARN: Removed duplicated region for block: B:149:0x0273  */
+    /* JADX WARN: Removed duplicated region for block: B:150:0x0276  */
+    /* JADX WARN: Removed duplicated region for block: B:153:0x029b A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:162:0x02ba  */
+    /* JADX WARN: Removed duplicated region for block: B:167:0x02c7 A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:176:0x02db  */
+    /* JADX WARN: Removed duplicated region for block: B:177:0x02e0  */
+    /* JADX WARN: Removed duplicated region for block: B:182:0x0307  */
+    /* JADX WARN: Removed duplicated region for block: B:189:0x0319  */
+    /* JADX WARN: Removed duplicated region for block: B:202:0x033b A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:210:0x034d  */
+    /* JADX WARN: Removed duplicated region for block: B:225:0x0375  */
+    /* JADX WARN: Removed duplicated region for block: B:230:0x0382  */
+    /* JADX WARN: Removed duplicated region for block: B:236:0x0397  */
+    /* JADX WARN: Removed duplicated region for block: B:98:0x01c6  */
+    /* JADX WARN: Removed duplicated region for block: B:99:0x01c8  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final void setMediaData(final com.discord.media_player.MediaSource r22, boolean r23, boolean r24, boolean r25, com.discord.media_player.MediaPlayer.Event r26, final boolean r27, java.lang.Integer r28, com.discord.portals.from_native.PortalFromNativeContextManager.Event r29, boolean r30, boolean r31, boolean r32, int r33, @org.jetbrains.annotations.NotNull kotlin.jvm.functions.Function0<kotlin.Unit> r34, java.lang.String r35, com.discord.react_asset_fetcher.ReactAsset r36, java.lang.Integer r37, java.lang.Integer r38, @org.jetbrains.annotations.NotNull com.discord.media_player.MediaPlayer.PlayerSettings r39) {
+    public final void setMediaData(final com.discord.media_player.MediaSource r28, boolean r29, boolean r30, boolean r31, com.discord.media_player.MediaPlayer.Event r32, final boolean r33, java.lang.Integer r34, com.discord.portals.from_native.PortalFromNativeContextManager.Event r35, boolean r36, boolean r37, boolean r38, int r39, @org.jetbrains.annotations.NotNull kotlin.jvm.functions.Function0<kotlin.Unit> r40, java.lang.String r41, com.discord.react_asset_fetcher.ReactAsset r42, java.lang.Integer r43, java.lang.Integer r44, @org.jetbrains.annotations.NotNull com.discord.media_player.MediaPlayer.PlayerSettings r45) {
         /*
-            Method dump skipped, instructions count: 926
+            Method dump skipped, instructions count: 941
             To view this dump add '--comments-level debug' option
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.MediaView.setMediaData(com.discord.media_player.MediaSource, boolean, boolean, boolean, com.discord.media_player.MediaPlayer$Event, boolean, java.lang.Integer, com.discord.portals.from_native.PortalFromNativeContextManager$Event, boolean, boolean, boolean, int, kotlin.jvm.functions.Function0, java.lang.String, com.discord.react_asset_fetcher.ReactAsset, java.lang.Integer, java.lang.Integer, com.discord.media_player.MediaPlayer$PlayerSettings):void");
@@ -696,20 +695,21 @@ public class MediaView extends FrameLayout {
             }
         };
         addOnAttachStateChangeListener(viewAttachedListener);
-        ImageView imageView = inflate.inlineMediaPlayButton;
-        Intrinsics.checkNotNull(imageView);
-        ViewBackgroundUtilsKt.setBackgroundOval$default(imageView, -16777216, 0, 2, null);
-        ColorUtilsKt.setTintColor(imageView, (Integer) (-1));
-        I18nUtilsKt.i18nContentDescription$default(imageView, I18nMessage.PLAY_FULL_VIDEO, (Function1) null, 2, (Object) null);
+        SimpleDraweeView simpleDraweeView = inflate.inlineMediaPlayButton;
+        Intrinsics.checkNotNull(simpleDraweeView);
+        ViewBackgroundUtilsKt.setBackgroundOval$default(simpleDraweeView, -16777216, 0, 2, null);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.PlayIcon);
+        ColorUtilsKt.setTintColor(simpleDraweeView, (Integer) (-1));
+        I18nUtilsKt.i18nContentDescription$default(simpleDraweeView, I18nMessage.PLAY_FULL_VIDEO, (Function1) null, 2, (Object) null);
         SimpleDraweeView inlineMediaGifIndicator = inflate.inlineMediaGifIndicator;
         Intrinsics.checkNotNullExpressionValue(inlineMediaGifIndicator, "inlineMediaGifIndicator");
-        ReactAssetUtilsKt.setReactAsset(inlineMediaGifIndicator, ReactAsset.Gif);
-        SimpleDraweeView simpleDraweeView = inflate.inlineMediaImagePreview;
-        ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).z(new ColorDrawable(ThemeManagerKt.getTheme().getBackgroundModNormal()));
-        ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f10635e);
+        ReactAssetUtilsKt.setReactAsset(inlineMediaGifIndicator, ReactAsset.GifIcon);
+        SimpleDraweeView simpleDraweeView2 = inflate.inlineMediaImagePreview;
+        ((GenericDraweeHierarchy) simpleDraweeView2.getHierarchy()).z(new ColorDrawable(ThemeManagerKt.getTheme().getBackgroundModNormal()));
+        ((GenericDraweeHierarchy) simpleDraweeView2.getHierarchy()).t(ScalingUtils$ScaleType.f10635e);
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setShape(0);
-        gradientDrawable.setStroke(simpleDraweeView.getResources().getDimensionPixelSize(com.discord.chat.R.dimen.message_media_view_stroke), ColorUtilsKt.getColorCompat(context, com.discord.chat.R.color.chat_media_view_stroke));
-        ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).y(gradientDrawable);
+        gradientDrawable.setStroke(simpleDraweeView2.getResources().getDimensionPixelSize(com.discord.chat.R.dimen.message_media_view_stroke), ColorUtilsKt.getColorCompat(context, com.discord.chat.R.color.chat_media_view_stroke));
+        ((GenericDraweeHierarchy) simpleDraweeView2.getHierarchy()).y(gradientDrawable);
     }
 }

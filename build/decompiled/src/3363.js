@@ -1,57 +1,43 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var6 = dependencyMap;
-    var0 = 0;
-    var2 = var6[var0];
-    var0 = undefined;
-    var2 = var5.bind(var0)(var2);
-    var2 = var2.bind(var0)();
-    var2 = 1;
-    var2 = var6[var2];
-    var3 = var5.bind(var0)(var2);
-    var4 = 2;
-    var2 = var6[var4];
-    var2 = var5.bind(var0)(var2);
-    var2 = var2.bind(var0)();
-    var2 = var3.bind(var0)(var2);
-    var _closure1_slot0 = var2;
-    var2 = function arg0() {
-        _fun29055: for (var _fun29055_ip = 0;;) switch (_fun29055_ip) {
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0() {
+        _fun29059: for (var _fun29059_ip = 0;;) switch (_fun29059_ip) {
             case 0:
-                var3 = this;
-                var2 = _closure1_slot0;
-                var1 = undefined;
-                if (!(var1 === var3)) {
-                    _fun29055_ip = 24;
-                    continue _fun29055
+                var4 = arg0;
+                var3 = typeof var4;
+                var0 = 'Symbol';
+                var1 = 'symbol';
+                if (!(var1 !== var3)) {
+                    _fun29059_ip = 62;
+                    continue _fun29059
                 }
-            case 16:
-                var0 = global;
-                var3 = var0.Promise;
-            case 24:
-                var0 = arg0;
-                var0 = var2.bind(var1)(var3, var0);
+            case 18:
+                var1 = 'BigInt';
+                var2 = 'bigint';
+                if (!(var2 !== var3)) {
+                    _fun29059_ip = 59;
+                    continue _fun29059
+                }
+            case 30:
+                var5 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var2 = 0;
+                var2 = var3[var2];
+                var3 = undefined;
+                var2 = var5.bind(var3)(var2);
+                var1 = var2.bind(var3)(var4);
+            case 59:
+                var0 = var1;
+            case 62:
                 return var0;
         }
     };
-    var1 = 3;
-    var1 = var6[var1];
-    var3 = var5.bind(var0)(var1);
-    var1 = {};
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var1.getPolyfill = var4;
-    var4 = 4;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var1.implementation = var4;
-    var4 = 5;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var1.shim = var4;
-    var1 = var3.bind(var0)(var2, var1);
-    var1 = arg4;
-    var1.exports = var2;
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3364, 1403, 3365, 3393, 3366, 3441]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3364]);

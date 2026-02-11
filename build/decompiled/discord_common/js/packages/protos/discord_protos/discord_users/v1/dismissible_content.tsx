@@ -1931,6 +1931,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.GAME_CLAIM_COACHMARK = var1;
     var0 = 'GAME_CLAIM_COACHMARK';
     var3[var1] = var0;
+    var1 = 683;
+    var3.COLLECTIBLES_SHOP_MARVEL_RIVALS_ORBS_REWARD = var1;
+    var0 = 'COLLECTIBLES_SHOP_MARVEL_RIVALS_ORBS_REWARD';
+    var3[var1] = var0;
     var1 = {};
     var1.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = var4;
     var0 = 'DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE';

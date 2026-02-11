@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/posts/ForumPostAppliedTags.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun90153: for (var _fun90153_ip = 0;;) switch (_fun90153_ip) {
+        _fun90125: for (var _fun90125_ip = 0;;) switch (_fun90125_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.appliedTags;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var0.additionalTagsCount;
                 var3 = undefined;
                 if (!(var14 === var3)) {
-                    _fun90153_ip = 35;
-                    continue _fun90153
+                    _fun90125_ip = 35;
+                    continue _fun90125
                 }
             case 33:
                 var14 = 0;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 0;
                 var5 = var14 > var5;
                 if (!var5) {
-                    _fun90153_ip = 219;
-                    continue _fun90153
+                    _fun90125_ip = 219;
+                    continue _fun90125
                 }
             case 126:
                 var8 = _closure1_slot3;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForumPostAppliedTagPills = var3;
     var1 = function arg0() {
-        _fun90155: for (var _fun90155_ip = 0;;) switch (_fun90155_ip) {
+        _fun90127: for (var _fun90127_ip = 0;;) switch (_fun90127_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.appliedTags;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var0.additionalTagsCount;
                 var3 = undefined;
                 if (!(var17 === var3)) {
-                    _fun90155_ip = 39;
-                    continue _fun90155
+                    _fun90127_ip = 39;
+                    continue _fun90127
                 }
             case 37:
                 var17 = 0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var5;
                 var5 = var6.map;
                 var4 = function(arg0, arg1) { // Environment: var4
-                    _fun90156: for (var _fun90156_ip = 0;;) switch (_fun90156_ip) {
+                    _fun90128: for (var _fun90128_ip = 0;;) switch (_fun90128_ip) {
                         case 0:
                             var4 = arg0;
                             var3 = _closure1_slot4;
@@ -232,8 +232,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = arg1;
                             var5 = var5 !== var7;
                             if (!var5) {
-                                _fun90156_ip = 142;
-                                continue _fun90156
+                                _fun90128_ip = 142;
+                                continue _fun90128
                             }
                         case 112:
                             var8 = _closure1_slot3;
@@ -256,8 +256,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 0;
                 var5 = var17 > var5;
                 if (!var5) {
-                    _fun90155_ip = 270;
-                    continue _fun90155
+                    _fun90127_ip = 270;
+                    continue _fun90127
                 }
             case 133:
                 var8 = _closure1_slot4;

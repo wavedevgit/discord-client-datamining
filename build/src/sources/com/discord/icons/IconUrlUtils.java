@@ -8,6 +8,7 @@ import com.discord.primitives.ChannelId;
 import com.discord.primitives.GuildId;
 import com.discord.primitives.UserId;
 import com.discord.react_asset_fetcher.ReactAsset;
+import com.discord.react_asset_fetcher.ReactAssetExtensionsKt;
 import com.discord.react_asset_fetcher.ReactAssetUtilsKt;
 import com.discord.snowflake.SnowflakeUtils;
 import com.facebook.react.devsupport.StackTraceHelper;
@@ -139,21 +140,21 @@ public final class IconUrlUtils {
         } else {
             switch ((int) (SnowflakeUtils.INSTANCE.toTimestamp(channelId) % 8)) {
                 case 1:
-                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultGroup1.getUri(context));
+                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultGroup1, context));
                 case 2:
-                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultGroup2.getUri(context));
+                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultGroup2, context));
                 case 3:
-                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultGroup3.getUri(context));
+                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultGroup3, context));
                 case 4:
-                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultGroup4.getUri(context));
+                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultGroup4, context));
                 case 5:
-                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultGroup5.getUri(context));
+                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultGroup5, context));
                 case 6:
-                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultGroup6.getUri(context));
+                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultGroup6, context));
                 case 7:
-                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultGroup7.getUri(context));
+                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultGroup7, context));
                 default:
-                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultGroup0.getUri(context));
+                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultGroup0, context));
             }
         }
     }
@@ -221,18 +222,18 @@ public final class IconUrlUtils {
                     if (intValue != 2) {
                         if (intValue != 3) {
                             if (intValue != 4) {
-                                return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultAvatar0.getUri(context));
+                                return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultAvatar0, context));
                             }
-                            return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultAvatar4.getUri(context));
+                            return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultAvatar4, context));
                         }
-                        return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultAvatar3.getUri(context));
+                        return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultAvatar3, context));
                     }
-                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultAvatar2.getUri(context));
+                    return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultAvatar2, context));
                 }
-                return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultAvatar1.getUri(context));
+                return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultAvatar1, context));
             }
         }
-        return ReactAssetUtilsKt.getReactImageUrl(context, ReactAsset.DefaultAvatar0.getUri(context));
+        return ReactAssetUtilsKt.getReactImageUrl(context, ReactAssetExtensionsKt.getUri(ReactAsset.DefaultAvatar0, context));
     }
 
     public final void init(@NotNull Context context, String str, String str2) {

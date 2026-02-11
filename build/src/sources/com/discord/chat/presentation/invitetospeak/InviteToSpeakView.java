@@ -58,7 +58,7 @@ public final class InviteToSpeakView extends LinearLayout {
         this.binding.inviteToSpeakText.setText(message.getButtonLabel());
         SimpleDraweeView moveToSpeakerIcon = this.binding.moveToSpeakerIcon;
         Intrinsics.checkNotNullExpressionValue(moveToSpeakerIcon, "moveToSpeakerIcon");
-        ReactAssetUtilsKt.setReactAsset(moveToSpeakerIcon, ReactAsset.MoveToSpeaker);
+        ReactAssetUtilsKt.setReactAsset(moveToSpeakerIcon, ReactAsset.MicrophoneArrowRightIcon);
         SimpleDraweeView moveToSpeakerIcon2 = this.binding.moveToSpeakerIcon;
         Intrinsics.checkNotNullExpressionValue(moveToSpeakerIcon2, "moveToSpeakerIcon");
         ColorUtilsKt.setTintColor(moveToSpeakerIcon2, Integer.valueOf(ThemeManagerKt.getTheme().getMobileTextHeadingPrimary()));

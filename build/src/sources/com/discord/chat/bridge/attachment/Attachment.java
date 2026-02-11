@@ -704,7 +704,7 @@ public final class Attachment implements SpoilerableData {
 
     public final ReactAsset getAttachmentTagIcon() {
         if (Intrinsics.areEqual(this.attachmentTagIconType, "clip")) {
-            return ReactAsset.Clip;
+            return ReactAsset.ClipsIcon;
         }
         return null;
     }

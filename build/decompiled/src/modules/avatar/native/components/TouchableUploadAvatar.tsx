@@ -129,15 +129,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/avatar/native/components/TouchableUploadAvatar.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun114530: for (var _fun114530_ip = 0;;) switch (_fun114530_ip) {
+        _fun114519: for (var _fun114519_ip = 0;;) switch (_fun114519_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.avatarSource;
                 var0 = var2.showPendingAvatar;
                 var3 = undefined;
                 if (!(var0 === var3)) {
-                    _fun114530_ip = 23;
-                    continue _fun114530
+                    _fun114519_ip = 23;
+                    continue _fun114519
                 }
             case 21:
                 var0 = false;
@@ -146,15 +146,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot6;
                 var12 = var2.bind(var3)();
                 if (!var0) {
-                    _fun114530_ip = 52;
-                    continue _fun114530
+                    _fun114519_ip = 52;
+                    continue _fun114519
                 }
             case 43:
                 var2 = null;
                 var10 = var1;
                 if (!(var2 == var10)) {
-                    _fun114530_ip = 72;
-                    continue _fun114530
+                    _fun114519_ip = 72;
+                    continue _fun114519
                 }
             case 52:
                 var4 = _closure1_slot1;
@@ -164,19 +164,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var4.bind(var3)(var2);
             case 72:
                 if (!var0) {
-                    _fun114530_ip = 81;
-                    continue _fun114530
+                    _fun114519_ip = 81;
+                    continue _fun114519
                 }
             case 75:
                 var0 = null;
                 if (!(var0 == var1)) {
-                    _fun114530_ip = 89;
-                    continue _fun114530
+                    _fun114519_ip = 89;
+                    continue _fun114519
                 }
             case 81:
                 var11 = var12.defaultLogoStyle;
-                _fun114530_ip = 95;
-                continue _fun114530;
+                _fun114519_ip = 95;
+                continue _fun114519;
             case 89:
                 var11 = var12.uploadedAvatarStyle;
             case 95:
@@ -255,4 +255,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 10556, 4914, 1234, 4714, 4096, 11490, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 10525, 4912, 1234, 4712, 4092, 11471, 2]);

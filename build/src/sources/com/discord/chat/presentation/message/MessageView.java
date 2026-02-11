@@ -464,7 +464,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
         guildCommunicationDisabledIcon.setVisibility(i10);
         SimpleDraweeView guildCommunicationDisabledIcon2 = this.binding.guildCommunicationDisabledIcon;
         Intrinsics.checkNotNullExpressionValue(guildCommunicationDisabledIcon2, "guildCommunicationDisabledIcon");
-        ReactAssetUtilsKt.setReactAsset(guildCommunicationDisabledIcon2, ReactAsset.ClockTimeout);
+        ReactAssetUtilsKt.setReactAsset(guildCommunicationDisabledIcon2, ReactAsset.ClockWarningIcon);
         SimpleDraweeView simpleDraweeView = this.binding.authorAvatar;
         float f15 = 1.0f;
         if (z11) {
@@ -539,7 +539,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
         if (z11) {
             SimpleDraweeView suppressNotificationsIcon2 = this.binding.suppressNotificationsIcon;
             Intrinsics.checkNotNullExpressionValue(suppressNotificationsIcon2, "suppressNotificationsIcon");
-            ReactAssetUtilsKt.setReactAsset(suppressNotificationsIcon2, ReactAsset.BellSnooze);
+            ReactAssetUtilsKt.setReactAsset(suppressNotificationsIcon2, ReactAsset.BellZIcon);
             SimpleDraweeView suppressNotificationsIcon3 = this.binding.suppressNotificationsIcon;
             Intrinsics.checkNotNullExpressionValue(suppressNotificationsIcon3, "suppressNotificationsIcon");
             ColorUtilsKt.setTintColor(suppressNotificationsIcon3, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()));
@@ -722,7 +722,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                 } else {
                     str4 = obscureLearnMoreLabel;
                 }
-                arrayList8.add(new InfoLinkMessageAccessory(m238getId3Eiw7ao3, m235getChannelIdo4g7jtM2, null, null, str4, ReactAsset.Info, null));
+                arrayList8.add(new InfoLinkMessageAccessory(m238getId3Eiw7ao3, m235getChannelIdo4g7jtM2, null, null, str4, ReactAsset.CircleInformationIcon, null));
             }
         } else {
             i12 = i15;
@@ -770,7 +770,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                     } else {
                         str3 = obscureLearnMoreLabel2;
                     }
-                    arrayList9.add(new InfoLinkMessageAccessory(m238getId3Eiw7ao4, m235getChannelIdo4g7jtM3, null, str6, str3, ReactAsset.Info, null));
+                    arrayList9.add(new InfoLinkMessageAccessory(m238getId3Eiw7ao4, m235getChannelIdo4g7jtM3, null, str6, str3, ReactAsset.CircleInformationIcon, null));
                 }
                 i20 = i21;
             }

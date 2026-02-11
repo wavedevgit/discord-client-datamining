@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/GuildCapUpsellHooks.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun79716: for (var _fun79716_ip = 0;;) switch (_fun79716_ip) {
+        _fun79675: for (var _fun79675_ip = 0;;) switch (_fun79675_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -107,15 +107,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var5)(var3, var1);
                 if (!var0) {
-                    _fun79716_ip = 156;
-                    continue _fun79716
+                    _fun79675_ip = 156;
+                    continue _fun79675
                 }
             case 153:
                 var0 = var2;
             case 156:
                 if (!var0) {
-                    _fun79716_ip = 162;
-                    continue _fun79716
+                    _fun79675_ip = 162;
+                    continue _fun79675
                 }
             case 159:
                 var0 = var1;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hideInlineGuildCapUpsell = var3;
     var1 = function() {
-        _fun79721: for (var _fun79721_ip = 0;;) switch (_fun79721_ip) {
+        _fun79680: for (var _fun79680_ip = 0;;) switch (_fun79680_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = var2.getGuildCount;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)();
                 var1 = var2.bind(var3)(var1);
                 if (!var0) {
-                    _fun79721_ip = 77;
-                    continue _fun79721
+                    _fun79680_ip = 77;
+                    continue _fun79680
                 }
             case 74:
                 var0 = !var1;

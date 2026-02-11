@@ -117,4 +117,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MESSAGES_ITEM_HAPPENING_NOW_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10966, 33, 671, 13286, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10943, 33, 671, 13269, 2]);

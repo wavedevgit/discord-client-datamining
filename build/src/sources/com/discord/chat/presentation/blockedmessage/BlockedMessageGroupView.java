@@ -73,7 +73,7 @@ public final class BlockedMessageGroupView extends ChatListConstraintLayout {
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, i10, SizeUtilsKt.getDpToPx(8), null, 0, 12, null);
         SimpleDraweeView closeIcon = this.binding.closeIcon;
         Intrinsics.checkNotNullExpressionValue(closeIcon, "closeIcon");
-        ReactAssetUtilsKt.setReactAsset(closeIcon, ReactAsset.Close);
+        ReactAssetUtilsKt.setReactAsset(closeIcon, ReactAsset.XSmallIcon);
         SimpleDraweeView closeIcon2 = this.binding.closeIcon;
         Intrinsics.checkNotNullExpressionValue(closeIcon2, "closeIcon");
         ColorUtilsKt.setTintColor(closeIcon2, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));

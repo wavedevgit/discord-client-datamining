@@ -119,7 +119,7 @@ public final class ForwardBreadcrumbView extends ConstraintLayout {
         inflate.timestamp.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         SimpleDraweeView arrow = inflate.arrow;
         Intrinsics.checkNotNullExpressionValue(arrow, "arrow");
-        ReactAssetUtilsKt.setReactAsset(arrow, ReactAsset.ArrowRight);
+        ReactAssetUtilsKt.setReactAsset(arrow, ReactAsset.ChevronSmallRightIcon);
         SimpleDraweeView arrow2 = inflate.arrow;
         Intrinsics.checkNotNullExpressionValue(arrow2, "arrow");
         ColorUtilsKt.setTintColor(arrow2, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));

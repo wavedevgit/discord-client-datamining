@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/posts/grid/ForumPostGridHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90097: for (var _fun90097_ip = 0;;) switch (_fun90097_ip) {
+        _fun90069: for (var _fun90069_ip = 0;;) switch (_fun90069_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.thread;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var10;
                 var10 = var6;
                 if (!var10) {
-                    _fun90097_ip = 135;
-                    continue _fun90097
+                    _fun90069_ip = 135;
+                    continue _fun90069
                 }
             case 92:
                 var12 = _closure1_slot6;
@@ -143,8 +143,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var12.bind(var3)(var11, var10);
                 var6[2] = var10;
                 if (!var7) {
-                    _fun90097_ip = 293;
-                    continue _fun90097
+                    _fun90069_ip = 293;
+                    continue _fun90069
                 }
             case 261:
                 var12 = _closure1_slot6;
@@ -180,4 +180,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6556, 1379, 33, 1297, 11694, 11696, 11705, 11706, 11707, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6555, 1379, 33, 1297, 11674, 11676, 11685, 11686, 11687, 2]);

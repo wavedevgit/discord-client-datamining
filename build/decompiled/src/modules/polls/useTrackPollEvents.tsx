@@ -52,47 +52,47 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = _closure2_slot0;
             var1 = var9.forEach;
             var0 = function(arg0) { // Environment: var8
-                _fun109018: for (var _fun109018_ip = 0;;) switch (_fun109018_ip) {
+                _fun109008: for (var _fun109008_ip = 0;;) switch (_fun109008_ip) {
                     case 0:
                         var0 = arg0;
                         var0 = var0.image;
                         var1 = null;
                         if (!(var1 != var0)) {
-                            _fun109018_ip = 103;
-                            continue _fun109018
+                            _fun109008_ip = 103;
+                            continue _fun109008
                         }
                     case 15:
                         var2 = var0.emoji;
                         if (!(var1 == var2)) {
-                            _fun109018_ip = 85;
-                            continue _fun109018
+                            _fun109008_ip = 85;
+                            continue _fun109008
                         }
                     case 25:
                         var2 = var0.stickerId;
                         if (!(var1 == var2)) {
-                            _fun109018_ip = 65;
-                            continue _fun109018
+                            _fun109008_ip = 65;
+                            continue _fun109008
                         }
                     case 35:
                         var0 = var0.mediaAttachmentState;
                         if (!(var1 != var0)) {
-                            _fun109018_ip = 103;
-                            continue _fun109018
+                            _fun109008_ip = 103;
+                            continue _fun109008
                         }
                     case 45:
                         var2 = _closure3_slot0;
                         var0 = 1;
                         var0 = var2 + var0;
                         _closure3_slot0 = var0;
-                        _fun109018_ip = 103;
-                        continue _fun109018;
+                        _fun109008_ip = 103;
+                        continue _fun109008;
                     case 65:
                         var2 = _closure3_slot2;
                         var0 = 1;
                         var0 = var2 + var0;
                         _closure3_slot2 = var0;
-                        _fun109018_ip = 103;
-                        continue _fun109018;
+                        _fun109008_ip = 103;
+                        continue _fun109008;
                     case 85:
                         var2 = _closure3_slot1;
                         var0 = 1;
@@ -140,4 +140,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTrackPollCreationEvents = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 4312, 6890, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 4308, 6890, 2]);

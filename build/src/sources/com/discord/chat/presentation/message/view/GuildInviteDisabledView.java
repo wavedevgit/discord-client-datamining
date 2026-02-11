@@ -57,7 +57,7 @@ public final class GuildInviteDisabledView extends ConstraintLayout {
         GuildView.configure$default(this.binding.itemInviteImage, str, str2, num, null, null, 24, null);
         SimpleDraweeView itemInviteDisabledIcon = this.binding.itemInviteDisabledIcon;
         Intrinsics.checkNotNullExpressionValue(itemInviteDisabledIcon, "itemInviteDisabledIcon");
-        ReactAssetUtilsKt.setReactAsset(itemInviteDisabledIcon, ReactAsset.InvitesDisabled);
+        ReactAssetUtilsKt.setReactAsset(itemInviteDisabledIcon, ReactAsset.PauseIcon);
     }
 
     public final void setHeaderColor(Integer num) {
@@ -150,7 +150,7 @@ public final class GuildInviteDisabledView extends ConstraintLayout {
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimaryBold);
         SimpleDraweeView simpleDraweeView = inflate.itemInviteHelpIcon;
         Intrinsics.checkNotNull(simpleDraweeView);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Help);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.CircleQuestionIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));
         TextView textView2 = inflate.itemInviteTitle;
         textView2.setTextColor(ThemeManagerKt.getTheme().getMobileTextHeadingPrimary());

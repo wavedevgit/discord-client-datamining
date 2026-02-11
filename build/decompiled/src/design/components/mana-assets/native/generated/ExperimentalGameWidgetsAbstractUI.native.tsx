@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/ExperimentalGameWidgetsAbstractUI.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53130: for (var _fun53130_ip = 0;;) switch (_fun53130_ip) {
+        _fun53131: for (var _fun53131_ip = 0;;) switch (_fun53131_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun53130_ip = 35;
-                    continue _fun53130
+                    _fun53131_ip = 35;
+                    continue _fun53131
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun53130_ip = 47;
-                    continue _fun53130
+                    _fun53131_ip = 47;
+                    continue _fun53131
                 }
             case 44:
                 var7 = 162;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ExperimentalGameWidgetsAbstractUI = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4714, 6198, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4712, 6197, 2]);

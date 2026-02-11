@@ -1,153 +1,160 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
+    var4 = require;
     var2 = exports;
-    var7 = dependencyMap;
-    var4 = global;
-    var8 = var4.Object;
-    var6 = var8.defineProperty;
-    var1 = {};
+    var5 = dependencyMap;
+    var0 = function arg0() {
+        _fun37394: for (var _fun37394_ip = 0;;) switch (_fun37394_ip) {
+            case 0:
+                var0 = arg0;
+                var4 = var0.freeze;
+                var0 = var0.children;
+                var5 = _closure1_slot3;
+                var2 = var5.useRef;
+                var3 = null;
+                var2 = var2.bind(var5)(var3);
+                var7 = _closure1_slot3;
+                var5 = var7.useRef;
+                var5 = var5.bind(var7)(var3);
+                var _closure2_slot0 = var5;
+                var7 = var2.current;
+                var7 = var3 === var7;
+                if (!var7) {
+                    _fun37394_ip = 68;
+                    continue _fun37394
+                }
+            case 65:
+                var7 = var4;
+            case 68:
+                if (!var7) {
+                    _fun37394_ip = 110;
+                    continue _fun37394
+                }
+            case 71:
+                var7 = global;
+                var8 = var7.Promise;
+                var7 = var8.prototype;
+                var7 = Object.create(var7, {
+                    constructor: {
+                        value: var8
+                    }
+                });
+                var10 = function(arg0) { // Environment: var6
+                    var1 = _closure2_slot0;
+                    var0 = arg0;
+                    var1.current = var0;
+                    var0 = undefined;
+                    return var0;
+                };
+                var11 = var7;
+                var6 = new var11[var8](var10, var9);
+                var6 = var6 instanceof Object ? var6 : var7;
+                var2.current = var6;
+            case 110:
+                var6 = var4;
+                if (var6) {
+                    _fun37394_ip = 125;
+                    continue _fun37394
+                }
+            case 116:
+                var7 = var5.current;
+                var6 = var3 == var7;
+            case 125:
+                if (var6) {
+                    _fun37394_ip = 143;
+                    continue _fun37394
+                }
+            case 128:
+                var6 = var5.current;
+                var6 = var6.bind(var5)();
+                var5.current = var3;
+            case 143:
+                var5 = var2.current;
+                if (!(var3 !== var5)) {
+                    _fun37394_ip = 168;
+                    continue _fun37394
+                }
+            case 152:
+                var7 = _closure1_slot2;
+                var6 = var2.current;
+                var5 = undefined;
+                var5 = var7.bind(var5)(var6);
+            case 168:
+                if (var4) {
+                    _fun37394_ip = 177;
+                    continue _fun37394
+                }
+            case 171:
+                var2.current = var3;
+            case 177:
+                var3 = _closure1_slot4;
+                var2 = _closure1_slot1;
+                var1 = {};
+                var1.children = var0;
+                var0 = undefined;
+                var0 = var3.bind(var0)(var2, var1);
+                return var0;
+        }
+    };
+    var _closure1_slot5 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
     var0 = true;
-    var1.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var8)(var2, var0, var1);
-    var0 = 0;
-    var1 = var7[var0];
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var3 = 0;
+    var6 = var5[var3];
     var0 = undefined;
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.codegenNativeComponent;
-    var1 = {};
-    var6 = 'RNSModalScreen';
-    var1.uiViewClassName = var6;
-    var8 = {};
-    var9 = {};
-    var10 = 'onAppear';
-    var9.registrationName = var10;
-    var8.topAppear = var9;
-    var9 = {};
-    var10 = 'onDisappear';
-    var9.registrationName = var10;
-    var8.topDisappear = var9;
-    var9 = {};
-    var10 = 'onDismissed';
-    var9.registrationName = var10;
-    var8.topDismissed = var9;
-    var9 = {};
-    var10 = 'onNativeDismissCancelled';
-    var9.registrationName = var10;
-    var8.topNativeDismissCancelled = var9;
-    var9 = {};
-    var10 = 'onWillAppear';
-    var9.registrationName = var10;
-    var8.topWillAppear = var9;
-    var9 = {};
-    var10 = 'onWillDisappear';
-    var9.registrationName = var10;
-    var8.topWillDisappear = var9;
-    var9 = {};
-    var10 = 'onHeaderHeightChange';
-    var9.registrationName = var10;
-    var8.topHeaderHeightChange = var9;
-    var9 = {};
-    var10 = 'onTransitionProgress';
-    var9.registrationName = var10;
-    var8.topTransitionProgress = var9;
-    var9 = {};
-    var10 = 'onGestureCancel';
-    var9.registrationName = var10;
-    var8.topGestureCancel = var9;
-    var9 = {};
-    var10 = 'onHeaderBackButtonClicked';
-    var9.registrationName = var10;
-    var8.topHeaderBackButtonClicked = var9;
-    var9 = {};
-    var10 = 'onSheetDetentChanged';
-    var9.registrationName = var10;
-    var8.topSheetDetentChanged = var9;
-    var1.directEventTypes = var8;
-    var10 = var4.Object;
-    var9 = var10.assign;
-    var8 = {
-        'screenId': true,
-        'sheetAllowedDetents': true,
-        'sheetLargestUndimmedDetent': true,
-        'sheetGrabberVisible': true,
-        'sheetCornerRadius': true,
-        'sheetExpandsWhenScrolledToEdge': true,
-        'sheetInitialDetent': true,
-        'sheetElevation': true,
-        'sheetShouldOverflowTopInset': true,
-        'sheetDefaultResizeAnimationEnabled': true,
-        'customAnimationOnSwipe': true,
-        'fullScreenSwipeEnabled': true,
-        'fullScreenSwipeShadowEnabled': true,
-        'homeIndicatorHidden': true,
-        'preventNativeDismiss': true,
-        'gestureEnabled': true,
-        'statusBarColor': null,
-        'statusBarHidden': true,
-        'screenOrientation': true,
-        'statusBarAnimation': true,
-        'statusBarStyle': true,
-        'statusBarTranslucent': true,
-        'gestureResponseDistance': true,
-        'stackPresentation': true,
-        'stackAnimation': true,
-        'transitionDuration': true,
-        'replaceAnimation': true,
-        'swipeDirection': true,
-        'hideKeyboardOnSwipe': true,
-        'activityState': true,
-        'navigationBarColor': null,
-        'navigationBarTranslucent': true,
-        'navigationBarHidden': true,
-        'nativeBackButtonDismissalEnabled': true,
-        'synchronousShadowStateUpdatesEnabled': true
+    var6 = var4.bind(var0)(var6);
+    var7 = var6.Suspense;
+    var _closure1_slot0 = var7;
+    var7 = var6.Fragment;
+    var _closure1_slot1 = var7;
+    var6 = var6.use;
+    var _closure1_slot2 = var6;
+    var6 = var5[var3];
+    var3 = arg2;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot4 = var3;
+    var1 = function arg0() {
+        _fun37396: for (var _fun37396_ip = 0;;) switch (_fun37396_ip) {
+            case 0:
+                var0 = arg0;
+                var8 = var0.freeze;
+                var7 = var0.children;
+                var6 = var0.placeholder;
+                var3 = _closure1_slot4;
+                var2 = _closure1_slot0;
+                var1 = {};
+                var0 = undefined;
+                var5 = null;
+                if (!(var0 !== var6)) {
+                    _fun37396_ip = 44;
+                    continue _fun37396
+                }
+            case 41:
+                var5 = var6;
+            case 44:
+                var1.fallback = var5;
+                var6 = _closure1_slot4;
+                var5 = _closure1_slot5;
+                var4 = {};
+                var4.freeze = var8;
+                var4.children = var7;
+                var4 = var6.bind(var0)(var5, var4);
+                var1.children = var4;
+                var0 = var3.bind(var0)(var2, var1);
+                return var0;
+        }
     };
-    var4 = {};
-    var11 = 1;
-    var12 = var7[var11];
-    var12 = var5.bind(var0)(var12);
-    var12 = var12.default;
-    var4.process = var12;
-    var8.statusBarColor = var4;
-    var4 = {};
-    var11 = var7[var11];
-    var11 = var5.bind(var0)(var11);
-    var11 = var11.default;
-    var4.process = var11;
-    var8.navigationBarColor = var4;
-    var4 = 2;
-    var4 = var7[var4];
-    var12 = var5.bind(var0)(var4);
-    var11 = var12.ConditionallyIgnoredEventHandlers;
-    var4 = {
-        'onAppear': true,
-        'onDisappear': true,
-        'onDismissed': true,
-        'onNativeDismissCancelled': true,
-        'onWillAppear': true,
-        'onWillDisappear': true,
-        'onHeaderHeightChange': true,
-        'onTransitionProgress': true,
-        'onGestureCancel': true,
-        'onHeaderBackButtonClicked': true,
-        'onSheetDetentChanged': true
-    };
-    var4 = var11.bind(var12)(var4);
-    var4 = var9.bind(var10)(var8, var4);
-    var1.validAttributes = var4;
-    var _closure1_slot0 = var1;
-    var4 = 3;
-    var4 = var7[var4];
-    var5 = var5.bind(var0)(var4);
-    var4 = var5.get;
-    var3 = function() { // Environment: var3
-        var0 = _closure1_slot0;
-        return var0;
-    };
-    var3 = var4.bind(var5)(var6, var3);
-    var2.default = var3;
-    var2.__INTERNAL_VIEW_CONFIG = var1;
+    var2.Freeze = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 38, 110, 42]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33]);

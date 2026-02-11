@@ -2,25 +2,26 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
+    var6 = metroImportAll;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
+    var _closure1_slot1 = var6;
+    var _closure1_slot2 = var5;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = var7.bind(var8)(var2, var0, var3);
     var0 = 0;
-    var6 = var5[var0];
-    var3 = metroImportAll;
+    var3 = var5[var0];
     var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot2 = var3;
-    var3 = 3;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 5;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -28,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var1 = function() {
         var4 = _closure1_slot0;
-        var3 = _closure1_slot1;
+        var3 = _closure1_slot2;
         var0 = 1;
         var3 = var3[var0];
         var0 = undefined;
@@ -38,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var0.trackAppLauncherItemImpressionOnFirstView;
         var _closure2_slot0 = var5;
         var0 = {};
-        var4 = _closure1_slot2;
+        var4 = _closure1_slot3;
         var3 = var4.useCallback;
         var2 = new Array(1);
         var2[0] = var5;
@@ -47,177 +48,211 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var0.viewableItems;
             var1 = var2.forEach;
             var0 = function(arg0) { // Environment: var0
-                _fun108321: for (var _fun108321_ip = 0;;) switch (_fun108321_ip) {
+                _fun108311: for (var _fun108311_ip = 0;;) switch (_fun108311_ip) {
                     case 0:
                         var0 = arg0;
-                        var5 = var0.item;
-                        var3 = var5.type;
-                        var6 = _closure1_slot0;
-                        var0 = _closure1_slot1;
-                        var4 = 2;
-                        var2 = var0[var4];
+                        var9 = var0.item;
+                        var2 = var9.type;
+                        var3 = _closure1_slot0;
+                        var0 = _closure1_slot2;
+                        var5 = 2;
+                        var1 = var0[var5];
                         var0 = undefined;
-                        var2 = var6.bind(var0)(var2);
-                        var2 = var2.AppLauncherHomeListItemType;
-                        var2 = var2.RECOMMENDATION_APP;
-                        if (!(var3 !== var2)) {
-                            _fun108321_ip = 355;
-                            continue _fun108321
+                        var1 = var3.bind(var0)(var1);
+                        var1 = var1.AppLauncherHomeListItemType;
+                        var1 = var1.RECOMMENDATION_APP;
+                        if (!(var2 !== var1)) {
+                            _fun108311_ip = 387;
+                            continue _fun108311
                         }
                     case 57:
-                        var3 = var5.type;
-                        var6 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var2 = var2[var4];
-                        var2 = var6.bind(var0)(var2);
-                        var2 = var2.AppLauncherHomeListItemType;
-                        var2 = var2.RECOMMENDATION_BANNER_CARD;
-                        if (!(var3 !== var2)) {
-                            _fun108321_ip = 311;
-                            continue _fun108321
+                        var2 = var9.type;
+                        var3 = _closure1_slot0;
+                        var1 = _closure1_slot2;
+                        var1 = var1[var5];
+                        var1 = var3.bind(var0)(var1);
+                        var1 = var1.AppLauncherHomeListItemType;
+                        var1 = var1.RECOMMENDATION_BANNER_CARD;
+                        if (!(var2 !== var1)) {
+                            _fun108311_ip = 317;
+                            continue _fun108311
                         }
                     case 98:
-                        var3 = var5.type;
-                        var6 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var2 = var2[var4];
-                        var2 = var6.bind(var0)(var2);
-                        var2 = var2.AppLauncherHomeListItemType;
-                        var2 = var2.SHELF_ITEM;
-                        if (!(var3 !== var2)) {
-                            _fun108321_ip = 277;
-                            continue _fun108321
+                        var2 = var9.type;
+                        var3 = _closure1_slot0;
+                        var1 = _closure1_slot2;
+                        var1 = var1[var5];
+                        var1 = var3.bind(var0)(var1);
+                        var1 = var1.AppLauncherHomeListItemType;
+                        var1 = var1.SHELF_ITEM;
+                        if (!(var2 !== var1)) {
+                            _fun108311_ip = 280;
+                            continue _fun108311
                         }
                     case 139:
-                        var2 = var5.type;
+                        var2 = var9.type;
                         var3 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var1 = var1[var4];
+                        var1 = _closure1_slot2;
+                        var1 = var1[var5];
                         var1 = var3.bind(var0)(var1);
                         var1 = var1.AppLauncherHomeListItemType;
                         var1 = var1.SHELF_ITEM_TUPLE;
                         if (!(var2 === var1)) {
-                            _fun108321_ip = 275;
-                            continue _fun108321
+                            _fun108311_ip = 278;
+                            continue _fun108311
                         }
                     case 177:
-                        var13 = var5.shelfItem1SectionPosition;
-                        var6 = var5.shelfItem2SectionPosition;
-                        var1 = var5.shelfItem1;
+                        var8 = var9.shelfItem1SectionPosition;
+                        var10 = var9.shelfItem2SectionPosition;
+                        var1 = var9.shelfItem1;
                         var1 = var1.application;
-                        var12 = var1.id;
-                        var1 = var5.shelfItem2;
+                        var6 = var1.id;
+                        var1 = var9.shelfItem2;
                         var2 = null;
                         var3 = var2 == var1;
-                        var4 = undefined;
+                        var5 = undefined;
                         if (var3) {
-                            _fun108321_ip = 232;
-                            continue _fun108321
+                            _fun108311_ip = 232;
+                            continue _fun108311
                         }
                     case 222:
                         var1 = var1.application;
-                        var4 = var1.id;
+                        var5 = var1.id;
                     case 232:
-                        var1 = var5.shelfItem1;
+                        var1 = var9.shelfItem1;
                         var1 = var1.application;
-                        var11 = var1.flags;
-                        var1 = var5.shelfItem2;
+                        var16 = var1.flags;
+                        var1 = var9.shelfItem2;
                         var2 = var2 == var1;
-                        var3 = undefined;
+                        var7 = undefined;
                         if (var2) {
-                            _fun108321_ip = 273;
-                            continue _fun108321
+                            _fun108311_ip = 273;
+                            continue _fun108311
                         }
                     case 263:
                         var1 = var1.application;
-                        var3 = var1.flags;
+                        var7 = var1.flags;
                     case 273:
-                        _fun108321_ip = 387;
-                        continue _fun108321;
-                    case 275:
+                        _fun108311_ip = 445;
+                        continue _fun108311;
+                    case 278:
                         return var0;
-                    case 277:
-                        var13 = var5.sectionPosition;
-                        var12 = var5.applicationId;
-                        var1 = var5.section;
+                    case 280:
+                        var8 = var9.sectionPosition;
+                        var6 = var9.applicationId;
+                        var1 = var9.section;
                         var1 = var1.application;
-                        var11 = var1.flags;
-                        var4 = undefined;
-                        var6 = undefined;
-                        var3 = undefined;
-                        _fun108321_ip = 387;
-                        continue _fun108321;
-                    case 311:
-                        var13 = var5.sectionPosition;
-                        var1 = var5.item;
+                        var16 = var1.flags;
+                        var5 = undefined;
+                        var10 = undefined;
+                        var7 = undefined;
+                        _fun108311_ip = 445;
+                        continue _fun108311;
+                    case 317:
+                        var8 = var9.sectionPosition;
+                        var1 = var9.item;
                         var1 = var1.application;
-                        var12 = var1.id;
-                        var1 = var5.item;
+                        var6 = var1.id;
+                        var11 = _closure1_slot0;
+                        var12 = _closure1_slot2;
+                        var1 = 3;
+                        var1 = var12[var1];
+                        var12 = var11.bind(var0)(var1);
+                        var11 = var12.getApplicationFlags;
+                        var1 = var9.item;
                         var1 = var1.application;
-                        var11 = var1.flags;
-                        var4 = undefined;
-                        var6 = undefined;
-                        var3 = undefined;
-                        _fun108321_ip = 387;
-                        continue _fun108321;
-                    case 355:
-                        var13 = var5.sectionPosition;
-                        var1 = var5.application;
-                        var12 = var1.id;
-                        var1 = var5.application;
-                        var11 = var1.flags;
-                        var4 = undefined;
-                        var6 = undefined;
-                        var3 = undefined;
+                        var16 = var11.bind(var12)(var1);
+                        var5 = undefined;
+                        var10 = undefined;
+                        var7 = undefined;
+                        _fun108311_ip = 445;
+                        continue _fun108311;
                     case 387:
-                        var8 = _closure2_slot0;
+                        var8 = var9.sectionPosition;
+                        var1 = var9.application;
+                        var6 = var1.id;
+                        var11 = _closure1_slot0;
+                        var12 = _closure1_slot2;
+                        var1 = 3;
+                        var1 = var12[var1];
+                        var12 = var11.bind(var0)(var1);
+                        var11 = var12.getApplicationFlags;
+                        var1 = var9.application;
+                        var16 = var11.bind(var12)(var1);
+                        var5 = undefined;
+                        var10 = undefined;
+                        var7 = undefined;
+                    case 445:
+                        var3 = _closure2_slot0;
                         var2 = {};
-                        var15 = var5.sectionName;
-                        var7 = global;
-                        var9 = var7.HermesInternal;
-                        var14 = var9.concat;
-                        var10 = 'sectionName:';
-                        var9 = ' applicationId:';
-                        var14 = var14.bind(var10)(var15, var9, var12);
-                        var2.itemKey = var14;
-                        var14 = var5.sectionName;
-                        var2.sectionName = var14;
-                        var2.sectionPosition = var13;
-                        var13 = var5.sectionOverallPosition;
-                        var2.sectionOverallPosition = var13;
-                        var2.applicationId = var12;
-                        var2.applicationFlags = var11;
-                        var2 = var8.bind(var0)(var2);
-                        var8 = null;
-                        var2 = var8 != var4;
+                        var15 = var9.sectionName;
+                        var11 = global;
+                        var12 = var11.HermesInternal;
+                        var12 = var12.concat;
+                        var14 = 'sectionName:';
+                        var13 = ' applicationId:';
+                        var12 = var12.bind(var14)(var15, var13, var6);
+                        var2.itemKey = var12;
+                        var12 = var9.sectionName;
+                        var2.sectionName = var12;
+                        var2.sectionPosition = var8;
+                        var8 = var9.sectionOverallPosition;
+                        var2.sectionOverallPosition = var8;
+                        var2.applicationId = var6;
+                        var12 = _closure1_slot1;
+                        var6 = _closure1_slot2;
+                        var8 = 4;
+                        var6 = var6[var8];
+                        var15 = var12.bind(var0)(var6);
+                        var12 = var15.asUintN;
+                        var6 = 32;
+                        var12 = var12.bind(var15)(var6, var16);
+                        var2.applicationFlags = var12;
+                        var2 = var3.bind(var0)(var2);
+                        var3 = null;
+                        var2 = var3 != var5;
                         if (!var2) {
-                            _fun108321_ip = 493;
-                            continue _fun108321
+                            _fun108311_ip = 586;
+                            continue _fun108311
                         }
-                    case 489:
-                        var2 = var8 != var6;
-                    case 493:
+                    case 582:
+                        var2 = var3 != var10;
+                    case 586:
                         if (!var2) {
-                            _fun108321_ip = 572;
-                            continue _fun108321
+                            _fun108311_ip = 703;
+                            continue _fun108311
                         }
-                    case 496:
+                    case 589:
                         var2 = _closure2_slot0;
                         var1 = {};
-                        var8 = var5.sectionName;
-                        var7 = var7.HermesInternal;
-                        var7 = var7.concat;
-                        var7 = var7.bind(var10)(var8, var9, var4);
-                        var1.itemKey = var7;
-                        var7 = var5.sectionName;
-                        var1.sectionName = var7;
-                        var1.sectionPosition = var6;
-                        var5 = var5.sectionOverallPosition;
-                        var1.sectionOverallPosition = var5;
-                        var1.applicationId = var4;
+                        var12 = var9.sectionName;
+                        var11 = var11.HermesInternal;
+                        var11 = var11.concat;
+                        var11 = var11.bind(var14)(var12, var13, var5);
+                        var1.itemKey = var11;
+                        var11 = var9.sectionName;
+                        var1.sectionName = var11;
+                        var1.sectionPosition = var10;
+                        var9 = var9.sectionOverallPosition;
+                        var1.sectionOverallPosition = var9;
+                        var1.applicationId = var5;
+                        var5 = var3 != var7;
+                        var3 = undefined;
+                        if (!var5) {
+                            _fun108311_ip = 693;
+                            continue _fun108311
+                        }
+                    case 664:
+                        var5 = _closure1_slot1;
+                        var4 = _closure1_slot2;
+                        var4 = var4[var8];
+                        var5 = var5.bind(var0)(var4);
+                        var4 = var5.asUintN;
+                        var3 = var4.bind(var5)(var6, var7);
+                    case 693:
                         var1.applicationFlags = var3;
                         var1 = var2.bind(var0)(var1);
-                    case 572:
+                    case 703:
                         return var0;
                 }
             };
@@ -231,4 +266,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTrackAppLauncherHomeItemImpression = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13966, 13954, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13952, 13940, 5407, 484, 2]);

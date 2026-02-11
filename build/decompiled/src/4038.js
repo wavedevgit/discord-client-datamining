@@ -1,300 +1,235 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = function arg0, arg1, arg2() {
-        _fun37394: for (var _fun37394_ip = 0;;) switch (_fun37394_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = global;
-                var1 = var0.Number;
-                var0 = var1.isInteger;
-                var0 = var0.bind(var1)(var2);
-                if (!var0) {
-                    _fun37394_ip = 32;
-                    continue _fun37394
-                }
-            case 25:
-                var1 = arg1;
-                var0 = var2 >= var1;
-            case 32:
-                if (!var0) {
-                    _fun37394_ip = 42;
-                    continue _fun37394
-                }
-            case 35:
-                var1 = arg2;
-                var0 = var2 <= var1;
-            case 42:
-                return var0;
-        }
-    };
-    var _closure1_slot4 = var0;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
+    var6 = var0.Object;
+    var3 = var6.defineProperty;
+    var1 = {};
+    var5 = true;
+    var1.value = var5;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var3 = arg6;
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = arg1;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var3 = var3.Platform;
-    var7 = new Array(1);
-    var3 = -1;
-    var7[0] = var3;
-    var _closure1_slot0 = var7;
-    var6 = [1];
-    var _closure1_slot1 = var6;
-    var5 = [0.5];
-    var _closure1_slot2 = var5;
-    var4 = [0.5, 1];
-    var _closure1_slot3 = var4;
-    var2.SHEET_FIT_TO_CONTENTS = var7;
-    var2.SHEET_COMPAT_LARGE = var6;
-    var2.SHEET_COMPAT_MEDIUM = var5;
-    var2.SHEET_COMPAT_ALL = var4;
-    var2.SHEET_DIMMED_ALWAYS = var3;
-    var3 = function arg0() {
-        _fun37395: for (var _fun37395_ip = 0;;) switch (_fun37395_ip) {
-            case 0:
-                var3 = arg0;
-                var0 = var3.length;
-                var2 = 1;
-                var0 = var2 < var0;
-                var1 = var2;
-                if (!var0) {
-                    _fun37395_ip = 49;
-                    continue _fun37395
-                }
-            case 21:
-                var0 = var1 - var2;
-                var4 = var3[var0];
-                var0 = var3[var1];
-                if (!(!(var4 > var0))) {
-                    _fun37395_ip = 53;
-                    continue _fun37395
-                }
-            case 37:
-                var1 = var1 + 1;
-                var0 = var3.length;
-                if (var1 < var0) {
-                    _fun37395_ip = 21;
-                    continue _fun37395
-                }
-            case 49:
-                var0 = undefined;
-                return var0;
-            case 53:
-                var0 = global;
-                var2 = var0.Error;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var5 = '[RNScreens] The detent array is not sorted in ascending order!';
-                var6 = var1;
-                var0 = new var6[var2](var5, var4);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-        }
+    var0 = var3.bind(var6)(var2, var0, var1);
+    var0 = {};
+    var3 = false;
+    var1 = {
+        'controlledBottomTabs': false,
+        'synchronousScreenUpdatesEnabled': false,
+        'synchronousHeaderConfigUpdatesEnabled': false,
+        'synchronousHeaderSubviewUpdatesEnabled': false,
+        'androidResetScreenShadowStateOnOrientationChangeEnabled': true,
+        'iosPreventReattachmentOfDismissedScreens': false
     };
-    var2.assertDetentsArrayIsSorted = var3;
-    var3 = function arg0() {
-        _fun37396: for (var _fun37396_ip = 0;;) switch (_fun37396_ip) {
-            case 0:
-                var5 = arg0;
-                var0 = global;
-                var1 = var0.Array;
-                var0 = var1.isArray;
-                var0 = var0.bind(var1)(var5);
-                if (var0) {
-                    _fun37396_ip = 103;
-                    continue _fun37396
-                }
-            case 24:
-                var0 = 'fitToContents';
-                if (!(var0 !== var5)) {
-                    _fun37396_ip = 94;
-                    continue _fun37396
-                }
-            case 34:
-                var0 = 'large';
-                if (!(var0 !== var5)) {
-                    _fun37396_ip = 85;
-                    continue _fun37396
-                }
-            case 42:
-                var0 = 'medium';
-                if (!(var0 !== var5)) {
-                    _fun37396_ip = 76;
-                    continue _fun37396
-                }
-            case 50:
-                var0 = 'all';
-                if (!(var0 !== var5)) {
-                    _fun37396_ip = 67;
-                    continue _fun37396
-                }
-            case 58:
-                var0 = _closure1_slot1;
-                _fun37396_ip = 74;
-                continue _fun37396;
-            case 67:
-                var0 = _closure1_slot3;
-            case 74:
-                _fun37396_ip = 83;
-                continue _fun37396;
-            case 76:
-                var0 = _closure1_slot2;
-            case 83:
-                _fun37396_ip = 92;
-                continue _fun37396;
-            case 85:
-                var0 = _closure1_slot1;
-            case 92:
-                _fun37396_ip = 101;
-                continue _fun37396;
-            case 94:
-                var0 = _closure1_slot0;
-            case 101:
-                _fun37396_ip = 134;
-                continue _fun37396;
-            case 103:
-                var2 = var5.length;
-                var4 = 3;
-                var1 = var5;
-                if (!(var2 > var4)) {
-                    _fun37396_ip = 131;
-                    continue _fun37396
-                }
-            case 118:
-                var3 = var5.slice;
-                var2 = 0;
-                var1 = var3.bind(var5)(var2, var4);
-            case 131:
-                var0 = var1;
-            case 134:
-                return var0;
-        }
-    };
-    var2.resolveSheetAllowedDetents = var3;
-    var3 = function arg0, arg1() {
-        _fun37397: for (var _fun37397_ip = 0;;) switch (_fun37397_ip) {
-            case 0:
-                var2 = arg0;
-                var5 = arg1;
-                var1 = 'number';
-                var0 = typeof var2;
-                if (!(var1 !== var0)) {
-                    _fun37397_ip = 88;
-                    continue _fun37397
-                }
-            case 17:
-                var1 = 'last';
-                var0 = var5;
-                if (!(var1 !== var2)) {
-                    _fun37397_ip = 86;
-                    continue _fun37397
-                }
-            case 28:
-                var4 = -1;
-                var3 = 'none';
-                var1 = var4;
-                if (!(var3 !== var2)) {
-                    _fun37397_ip = 83;
-                    continue _fun37397
-                }
-            case 45:
-                var3 = 'all';
-                var1 = var4;
-                if (!(var3 !== var2)) {
-                    _fun37397_ip = 83;
-                    continue _fun37397
-                }
-            case 56:
-                var3 = 1;
-                var6 = 'large';
-                if (!(var6 !== var2)) {
-                    _fun37397_ip = 80;
-                    continue _fun37397
-                }
-            case 67:
-                var6 = 'medium';
-                if (!(var6 === var2)) {
-                    _fun37397_ip = 77;
-                    continue _fun37397
-                }
-            case 75:
-                var4 = 0;
-            case 77:
-                var3 = var4;
-            case 80:
-                var1 = var3;
-            case 83:
-                var0 = var1;
-            case 86:
-                _fun37397_ip = 119;
-                continue _fun37397;
-            case 88:
-                var4 = _closure1_slot4;
-                var3 = undefined;
-                var1 = -1;
-                var3 = var4.bind(var3)(var2, var1, var5);
-                if (!var3) {
-                    _fun37397_ip = 116;
-                    continue _fun37397
-                }
-            case 113:
-                var1 = var2;
-            case 116:
-                var0 = var1;
-            case 119:
-                return var0;
-        }
-    };
-    var2.resolveSheetLargestUndimmedDetent = var3;
+    var0.experiment = var1;
+    var1 = {};
+    var0.stable = var1;
+    var _closure1_slot0 = var0;
     var1 = function arg0, arg1() {
-        _fun37398: for (var _fun37398_ip = 0;;) switch (_fun37398_ip) {
-            case 0:
-                var2 = arg0;
-                var4 = arg1;
-                var0 = 'last';
-                var1 = var4;
-                if (!(var0 !== var2)) {
-                    _fun37398_ip = 28;
-                    continue _fun37398
-                }
-            case 17:
-                var0 = null;
-                var1 = var2;
-                if (!(var0 == var1)) {
-                    _fun37398_ip = 28;
-                    continue _fun37398
-                }
-            case 26:
-                var1 = 0;
-            case 28:
-                var3 = _closure1_slot4;
-                var2 = undefined;
-                var0 = 0;
-                var2 = var3.bind(var2)(var1, var0, var4);
-                if (!var2) {
-                    _fun37398_ip = 52;
-                    continue _fun37398
-                }
-            case 49:
-                var0 = var1;
-            case 52:
-                return var0;
-        }
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var0 = arg1;
+        var _closure2_slot1 = var0;
+        var0 = {};
+        var2 = function() {
+            var0 = _closure1_slot0;
+            var1 = var0.experiment;
+            var0 = _closure2_slot0;
+            var0 = var1[var0];
+            return var0;
+        };
+        var0.get = var2;
+        var1 = function arg0() {
+            _fun37403: for (var _fun37403_ip = 0;;) switch (_fun37403_ip) {
+                case 0:
+                    var2 = arg0;
+                    var0 = _closure1_slot0;
+                    var4 = var0.experiment;
+                    var3 = _closure2_slot0;
+                    var3 = var4[var3];
+                    var3 = var2 !== var3;
+                    if (!var3) {
+                        _fun37403_ip = 60;
+                        continue _fun37403
+                    }
+                case 34:
+                    var4 = _closure1_slot0;
+                    var5 = var4.experiment;
+                    var4 = _closure2_slot0;
+                    var5 = var5[var4];
+                    var4 = _closure2_slot1;
+                    var3 = var5 !== var4;
+                case 60:
+                    if (!var3) {
+                        _fun37403_ip = 114;
+                        continue _fun37403
+                    }
+                case 63:
+                    var3 = global;
+                    var5 = var3.console;
+                    var4 = var5.error;
+                    var8 = _closure2_slot0;
+                    var3 = var3.HermesInternal;
+                    var7 = var3.concat;
+                    var6 = '[RNScreens] ';
+                    var3 = ' feature flag modified for a second time; this might lead to unexpected effects';
+                    var3 = var7.bind(var6)(var8, var3);
+                    var3 = var4.bind(var5)(var3);
+                case 114:
+                    var1 = _closure1_slot0;
+                    var1 = var1.experiment;
+                    var0 = _closure2_slot0;
+                    var1[var0] = var2;
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.set = var1;
+        return var0;
     };
-    var2.resolveSheetInitialDetentIndex = var1;
+    var0 = undefined;
+    var12 = 'controlledBottomTabs';
+    var6 = var1.bind(var0)(var12, var3);
+    var _closure1_slot1 = var6;
+    var11 = 'synchronousScreenUpdatesEnabled';
+    var6 = var1.bind(var0)(var11, var3);
+    var _closure1_slot2 = var6;
+    var10 = 'synchronousHeaderConfigUpdatesEnabled';
+    var6 = var1.bind(var0)(var10, var3);
+    var _closure1_slot3 = var6;
+    var9 = 'synchronousHeaderSubviewUpdatesEnabled';
+    var6 = var1.bind(var0)(var9, var3);
+    var _closure1_slot4 = var6;
+    var8 = 'androidResetScreenShadowStateOnOrientationChangeEnabled';
+    var5 = var1.bind(var0)(var8, var5);
+    var _closure1_slot5 = var5;
+    var6 = 'iosPreventReattachmentOfDismissedScreens';
+    var1 = var1.bind(var0)(var6, var3);
+    var _closure1_slot6 = var1;
+    var1 = {};
+    var3 = {};
+    var7 = function() {
+        var1 = _closure1_slot1;
+        var0 = var1.get;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var5 = function arg0() {
+        var2 = _closure1_slot1;
+        var1 = var2.set;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        var0 = undefined;
+        return var0;
+    };
+    Object.defineProperty(var3, var12, {
+        get: var7,
+        set: var5,
+        enumerable: true
+    });
+    var7 = function() {
+        var1 = _closure1_slot2;
+        var0 = var1.get;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var5 = function arg0() {
+        var2 = _closure1_slot2;
+        var1 = var2.set;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        var0 = undefined;
+        return var0;
+    };
+    Object.defineProperty(var3, var11, {
+        get: var7,
+        set: var5,
+        enumerable: true
+    });
+    var7 = function() {
+        var1 = _closure1_slot3;
+        var0 = var1.get;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var5 = function arg0() {
+        var2 = _closure1_slot3;
+        var1 = var2.set;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        var0 = undefined;
+        return var0;
+    };
+    Object.defineProperty(var3, var10, {
+        get: var7,
+        set: var5,
+        enumerable: true
+    });
+    var7 = function() {
+        var1 = _closure1_slot4;
+        var0 = var1.get;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var5 = function arg0() {
+        var2 = _closure1_slot4;
+        var1 = var2.set;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        var0 = undefined;
+        return var0;
+    };
+    Object.defineProperty(var3, var9, {
+        get: var7,
+        set: var5,
+        enumerable: true
+    });
+    var7 = function() {
+        var1 = _closure1_slot5;
+        var0 = var1.get;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var5 = function arg0() {
+        var2 = _closure1_slot5;
+        var1 = var2.set;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        var0 = undefined;
+        return var0;
+    };
+    Object.defineProperty(var3, var8, {
+        get: var7,
+        set: var5,
+        enumerable: true
+    });
+    var5 = function() {
+        var1 = _closure1_slot6;
+        var0 = var1.get;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var4 = function arg0() {
+        var2 = _closure1_slot6;
+        var1 = var2.set;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        var0 = undefined;
+        return var0;
+    };
+    Object.defineProperty(var3, var6, {
+        get: var5,
+        set: var4,
+        enumerable: true
+    });
+    var1.experiment = var3;
+    var3 = {};
+    var1.stable = var3;
+    var2.default = var1;
+    var3 = {
+        'isNewBackTitleImplementation': true,
+        'usesHeaderFlexboxImplementation': true,
+        'usesNewAndroidHeaderHeightImplementation': true
+    };
+    var2.compatibilityFlags = var3;
+    var2.featureFlags = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

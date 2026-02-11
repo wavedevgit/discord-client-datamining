@@ -1,263 +1,277 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var2 = exports;
-    var6 = dependencyMap;
-    var _closure1_slot0 = var5;
-    var _closure1_slot1 = var6;
-    var1 = function arg0() {
-        _fun100141: for (var _fun100141_ip = 0;;) switch (_fun100141_ip) {
+    var1 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var0 = function arg0() {
+        _fun100230: for (var _fun100230_ip = 0;;) switch (_fun100230_ip) {
             case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun100141_ip = 14;
-                    continue _fun100141
+                var1 = arg0;
+                var2 = !var1;
+                var0 = !var2;
+                if (var2) {
+                    _fun100230_ip = 24;
+                    continue _fun100230
                 }
-            case 6:
-                var0 = var2.length;
-                if (var0) {
-                    _fun100141_ip = 18;
-                    continue _fun100141
+            case 12:
+                var3 = var1._profiler;
+                var2 = undefined;
+                var0 = var2 !== var3;
+            case 24:
+                if (!var0) {
+                    _fun100230_ip = 49;
+                    continue _fun100230
                 }
-            case 14:
-                var0 = false;
-                return var0;
-            case 18:
-                var0 = global;
-                var3 = var0.RegExp;
-                var0 = var0.HermesInternal;
-                var10 = var0.concat;
-                var26 = '^';
-                var8 = "[-!#$%&'*+.^_`|~A-Za-z0-9]+";
-                var7 = '\\s*';
-                var6 = '=';
-                var5 = '[!#-+-./0-9:<=>?@A-Z\\[\\]a-z{-}]+';
-                var20 = '(';
-                var18 = ',';
-                var11 = ')*$';
-                var25 = var8;
-                var24 = var7;
-                var23 = var6;
-                var22 = var7;
-                var21 = var5;
-                var19 = var7;
-                var17 = var7;
-                var16 = var8;
-                var15 = var7;
-                var14 = var6;
-                var13 = var7;
-                var12 = var5;
-                var25 = var26[var10](var25, var24, var23, var22, var21, var20, var19, var18, var17, var16, var15, var14, var13, var12, var11, var10);
-                var1 = var3.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var26 = var1;
-                var0 = new var26[var3](var25, var24);
-                var1 = var0 instanceof Object ? var0 : var1;
-                var0 = var1.test;
-                var0 = var0.bind(var1)(var2);
+            case 27:
+                var2 = var1._profiler;
+                var2 = var2.start;
+                var3 = 'function';
+                var2 = typeof var2;
+                var0 = var3 === var2;
+            case 49:
+                if (!var0) {
+                    _fun100230_ip = 75;
+                    continue _fun100230
+                }
+            case 52:
+                var1 = var1._profiler;
+                var1 = var1.stop;
+                var2 = 'function';
+                var1 = typeof var1;
+                var0 = var2 === var1;
+            case 75:
                 return var0;
         }
     };
-    var _closure1_slot2 = var1;
+    var _closure1_slot2 = var0;
     var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var4 = {};
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
     var0 = true;
-    var4.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var4);
-    var0 = 0;
-    var4 = var6[var0];
-    var0 = undefined;
-    var4 = var5.bind(var0)(var4);
-    var4 = 1;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = {};
     var3 = function() {
-        _fun100142: for (var _fun100142_ip = 0;;) switch (_fun100142_ip) {
+        _fun100231: for (var _fun100231_ip = 0;;) switch (_fun100231_ip) {
             case 0:
-                var1 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var0 = 2;
-                var0 = var5[var0];
-                var4 = undefined;
-                var3 = var1.bind(var4)(var0);
-                var0 = var3.getMainCarrier;
-                var3 = var0.bind(var3)();
-                var0 = 3;
-                var0 = var5[var0];
-                var1 = var1.bind(var4)(var0);
-                var0 = var1.getAsyncContextStrategy;
-                var1 = var0.bind(var1)(var3);
-                var0 = var1.getTraceData;
-                if (var0) {
-                    _fun100142_ip = 534;
-                    continue _fun100142
-                }
-            case 70:
-                var5 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var3 = 4;
-                var6 = var0[var3];
-                var7 = var5.bind(var4)(var6);
-                var6 = var7.getClient;
-                var10 = var6.bind(var7)();
-                var3 = var0[var3];
-                var6 = var5.bind(var4)(var3);
-                var3 = var6.getCurrentScope;
-                var3 = var3.bind(var6)();
-                var11 = 5;
-                var0 = var0[var11];
-                var5 = var5.bind(var4)(var0);
-                var0 = var5.getActiveSpan;
-                var7 = var0.bind(var5)();
-                var0 = var3.getPropagationContext;
-                var0 = var0.bind(var3)();
-                var9 = var0.dsc;
-                var13 = var0.sampled;
-                var8 = var0.traceId;
-                var6 = var7;
-                if (!var6) {
-                    _fun100142_ip = 203;
-                    continue _fun100142
-                }
-            case 175:
                 var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var0 = var0[var11];
-                var3 = var3.bind(var4)(var0);
-                var0 = var3.getRootSpan;
-                var6 = var0.bind(var3)(var7);
-            case 203:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                if (var7) {
-                    _fun100142_ip = 241;
-                    continue _fun100142
-                }
-            case 214:
-                var5 = 6;
-                var5 = var0[var5];
-                var12 = var3.bind(var4)(var5);
-                var5 = var12.generateSentryTraceHeader;
-                var5 = var5.bind(var12)(var8, var4, var13);
-                _fun100142_ip = 261;
-                continue _fun100142;
-            case 241:
-                var0 = var0[var11];
-                var3 = var3.bind(var4)(var0);
-                var0 = var3.spanToTraceHeader;
-                var5 = var0.bind(var3)(var7);
-            case 261:
-                if (var6) {
-                    _fun100142_ip = 309;
-                    continue _fun100142
-                }
-            case 264:
-                if (var9) {
-                    _fun100142_ip = 307;
-                    continue _fun100142
-                }
-            case 267:
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
                 var0 = undefined;
-                if (!var10) {
-                    _fun100142_ip = 304;
-                    continue _fun100142
+                var3 = var3.bind(var0)(var1);
+                var1 = var3.getClient;
+                var4 = var1.bind(var3)();
+                if (var4) {
+                    _fun100231_ip = 116;
+                    continue _fun100231
                 }
-            case 272:
-                var7 = _closure1_slot0;
-                var11 = _closure1_slot1;
-                var3 = 7;
-                var3 = var11[var3];
-                var7 = var7.bind(var4)(var3);
-                var3 = var7.getDynamicSamplingContextFromClient;
-                var0 = var3.bind(var7)(var8, var10);
-            case 304:
-                var9 = var0;
-            case 307:
-                _fun100142_ip = 340;
-                continue _fun100142;
-            case 309:
+            case 37:
                 var3 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var0 = 7;
-                var0 = var7[var0];
-                var3 = var3.bind(var4)(var0);
-                var0 = var3.getDynamicSamplingContextFromSpan;
-                var9 = var0.bind(var3)(var6);
-            case 340:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var7 = 6;
-                var6 = var0[var7];
-                var8 = var3.bind(var4)(var6);
-                var6 = var8.dynamicSamplingContextToSentryBaggageHeader;
-                var6 = var6.bind(var8)(var9);
-                var0 = var0[var7];
-                var0 = var3.bind(var4)(var0);
-                var3 = var0.TRACEPARENT_REGEXP;
-                var0 = var3.test;
-                var0 = var0.bind(var3)(var5);
-                if (var0) {
-                    _fun100142_ip = 442;
-                    continue _fun100142
+                var5 = _closure1_slot1;
+                var1 = 1;
+                var1 = var5[var1];
+                var1 = var3.bind(var0)(var1);
+                var1 = var1.DEBUG_BUILD;
+                if (!var1) {
+                    _fun100231_ip = 312;
+                    continue _fun100231
                 }
-            case 399:
+            case 69:
                 var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var0 = var0[var7];
-                var0 = var3.bind(var4)(var0);
-                var8 = var0.logger;
-                var3 = var8.warn;
-                var0 = 'Invalid sentry-trace data. Cannot generate trace data';
-                var0 = var3.bind(var8)(var0);
-                var0 = {};
-                return var0;
-            case 442:
-                var0 = _closure1_slot2;
-                var0 = var0.bind(var4)(var6);
-                if (var0) {
-                    _fun100142_ip = 493;
-                    continue _fun100142
+                var5 = _closure1_slot1;
+                var1 = 2;
+                var1 = var5[var1];
+                var1 = var3.bind(var0)(var1);
+                var5 = var1.logger;
+                var3 = var5.warn;
+                var1 = 'No Sentry client available, profiling is not started';
+                var1 = var3.bind(var5)(var1);
+                _fun100231_ip = 312;
+                continue _fun100231;
+            case 116:
+                var3 = var4.getIntegrationByName;
+                var1 = 'ProfilingIntegration';
+                var1 = var3.bind(var4)(var1);
+                if (var1) {
+                    _fun100231_ip = 212;
+                    continue _fun100231
                 }
-            case 454:
+            case 136:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 1;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var3 = var3.DEBUG_BUILD;
+                if (!var3) {
+                    _fun100231_ip = 312;
+                    continue _fun100231
+                }
+            case 168:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 2;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var5 = var3.logger;
+                var4 = var5.warn;
+                var3 = 'ProfilingIntegration is not available';
+                var3 = var4.bind(var5)(var3);
+                _fun100231_ip = 312;
+                continue _fun100231;
+            case 212:
+                var3 = _closure1_slot2;
+                var3 = var3.bind(var0)(var1);
+                if (var3) {
+                    _fun100231_ip = 297;
+                    continue _fun100231
+                }
+            case 224:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 1;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var3 = var3.DEBUG_BUILD;
+                if (!var3) {
+                    _fun100231_ip = 312;
+                    continue _fun100231
+                }
+            case 253:
                 var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var7];
-                var2 = var3.bind(var4)(var2);
+                var4 = _closure1_slot1;
+                var2 = 2;
+                var2 = var4[var2];
+                var2 = var3.bind(var0)(var2);
                 var4 = var2.logger;
                 var3 = var4.warn;
-                var2 = 'Invalid baggage data. Not returning "baggage" value';
+                var2 = 'Profiler is not available on profiling integration.';
                 var2 = var3.bind(var4)(var2);
-            case 493:
-                var2 = global;
-                var4 = var2.Object;
-                var3 = var4.assign;
-                var2 = {};
-                var2['sentry-trace'] = var5;
-                if (!var0) {
-                    _fun100142_ip = 526;
-                    continue _fun100142
-                }
-            case 516:
-                var5 = {};
-                var5.baggage = var6;
-                var0 = var5;
-            case 526:
-                var0 = var3.bind(var4)(var2, var0);
-                return var0;
-            case 534:
-                var0 = var1.getTraceData;
-                var0 = var0.bind(var1)();
+                _fun100231_ip = 312;
+                continue _fun100231;
+            case 297:
+                var2 = var1._profiler;
+                var1 = var2.start;
+                var1 = var1.bind(var2)();
+            case 312:
                 return var0;
         }
     };
-    var2.getTraceData = var3;
-    var2.isValidBaggageString = var1;
+    var0.startProfiler = var3;
+    var2 = function() {
+        _fun100232: for (var _fun100232_ip = 0;;) switch (_fun100232_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var3 = var3.bind(var0)(var1);
+                var1 = var3.getClient;
+                var4 = var1.bind(var3)();
+                if (var4) {
+                    _fun100232_ip = 116;
+                    continue _fun100232
+                }
+            case 37:
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 1;
+                var1 = var5[var1];
+                var1 = var3.bind(var0)(var1);
+                var1 = var1.DEBUG_BUILD;
+                if (!var1) {
+                    _fun100232_ip = 313;
+                    continue _fun100232
+                }
+            case 69:
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 2;
+                var1 = var5[var1];
+                var1 = var3.bind(var0)(var1);
+                var5 = var1.logger;
+                var3 = var5.warn;
+                var1 = 'No Sentry client available, profiling is not started';
+                var1 = var3.bind(var5)(var1);
+                _fun100232_ip = 313;
+                continue _fun100232;
+            case 116:
+                var3 = var4.getIntegrationByName;
+                var1 = 'ProfilingIntegration';
+                var1 = var3.bind(var4)(var1);
+                if (var1) {
+                    _fun100232_ip = 212;
+                    continue _fun100232
+                }
+            case 136:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 1;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var3 = var3.DEBUG_BUILD;
+                if (!var3) {
+                    _fun100232_ip = 313;
+                    continue _fun100232
+                }
+            case 168:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 2;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var5 = var3.logger;
+                var4 = var5.warn;
+                var3 = 'ProfilingIntegration is not available';
+                var3 = var4.bind(var5)(var3);
+                _fun100232_ip = 313;
+                continue _fun100232;
+            case 212:
+                var3 = _closure1_slot2;
+                var3 = var3.bind(var0)(var1);
+                if (var3) {
+                    _fun100232_ip = 297;
+                    continue _fun100232
+                }
+            case 224:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 1;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var3 = var3.DEBUG_BUILD;
+                if (!var3) {
+                    _fun100232_ip = 313;
+                    continue _fun100232
+                }
+            case 253:
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var2 = 2;
+                var2 = var4[var2];
+                var2 = var3.bind(var0)(var2);
+                var4 = var2.logger;
+                var3 = var4.warn;
+                var2 = 'Profiler is not available on profiling integration.';
+                var2 = var3.bind(var4)(var2);
+                _fun100232_ip = 313;
+                continue _fun100232;
+            case 297:
+                var2 = var1._profiler;
+                var1 = var2.stop;
+                var1 = var1.bind(var2)();
+            case 313:
+                return var0;
+        }
+    };
+    var0.stopProfiler = var2;
+    var1.profiler = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12930, 12997, 12989, 12990, 12996, 12985, 12931, 13005]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12977, 12978, 12912]);

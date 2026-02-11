@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'Use the transform prop instead.';
         var _closure2_slot1 = var1;
         var0 = function arg0, arg1, arg2() {
-            _fun62284: for (var _fun62284_ip = 0;;) switch (_fun62284_ip) {
+            _fun62290: for (var _fun62290_ip = 0;;) switch (_fun62290_ip) {
                 case 0:
                     var7 = arg0;
                     var6 = arg1;
@@ -17,8 +17,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var8 = undefined;
                     var1 = var7[var6];
                     if (!(var3 !== var1)) {
-                        _fun62284_ip = 83;
-                        continue _fun62284
+                        _fun62290_ip = 83;
+                        continue _fun62290
                     }
                 case 21:
                     var1 = global;
@@ -42,8 +42,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var4 > var2;
                     var1 = 0;
                     if (!var5) {
-                        _fun62284_ip = 110;
-                        continue _fun62284
+                        _fun62290_ip = 110;
+                        continue _fun62290
                     }
                 case 106:
                     var1 = var4 - var2;
@@ -61,8 +61,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var9 = var2 < var4;
                     var1 = var2;
                     if (!var9) {
-                        _fun62284_ip = 162;
-                        continue _fun62284
+                        _fun62290_ip = 162;
+                        continue _fun62290
                     }
                 case 143:
                     var10 = var1 - var2;
@@ -70,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5[var10] = var9;
                     var1 = var1 + 1;
                     if (var1 < var4) {
-                        _fun62284_ip = 143;
-                        continue _fun62284
+                        _fun62290_ip = 143;
+                        continue _fun62290
                     }
                 case 162:
                     var2 = _closure2_slot0;
@@ -222,14 +222,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = var8.bind(var9)(var7);
     var2.transform = var7;
     var7 = function arg0, arg1, arg2() {
-        _fun62285: for (var _fun62285_ip = 0;;) switch (_fun62285_ip) {
+        _fun62291: for (var _fun62291_ip = 0;;) switch (_fun62291_ip) {
             case 0:
                 var1 = arg0;
                 var0 = arg1;
                 var0 = var1[var0];
                 if (var0) {
-                    _fun62285_ip = 17;
-                    continue _fun62285
+                    _fun62291_ip = 17;
+                    continue _fun62291
                 }
             case 13:
                 var0 = undefined;
@@ -252,14 +252,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.transformMatrix = var7;
     var3 = function arg0, arg1, arg2() {
-        _fun62286: for (var _fun62286_ip = 0;;) switch (_fun62286_ip) {
+        _fun62292: for (var _fun62292_ip = 0;;) switch (_fun62292_ip) {
             case 0:
                 var1 = arg0;
                 var0 = arg1;
                 var0 = var1[var0];
                 if (var0) {
-                    _fun62286_ip = 17;
-                    continue _fun62286
+                    _fun62292_ip = 17;
+                    continue _fun62292
                 }
             case 13:
                 var0 = undefined;

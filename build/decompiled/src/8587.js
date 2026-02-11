@@ -76,14 +76,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun68898: for (var _fun68898_ip = 0;;) switch (_fun68898_ip) {
+                _fun68904: for (var _fun68904_ip = 0;;) switch (_fun68904_ip) {
                     case 0:
                         StartGenerator();
                         var4 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun68898_ip = 122;
-                            continue _fun68898
+                            _fun68904_ip = 122;
+                            continue _fun68904
                         }
                     case 12:
                         var3 = undefined;
@@ -93,16 +93,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var5 = var2 == var4;
                         var6 = undefined;
                         if (var5) {
-                            _fun68898_ip = 41;
-                            continue _fun68898
+                            _fun68904_ip = 41;
+                            continue _fun68904
                         }
                     case 33:
                         var6 = var4.keepFocus;
                     case 41:
                         var5 = var2 != var6;
                         if (!var5) {
-                            _fun68898_ip = 51;
-                            continue _fun68898
+                            _fun68904_ip = 51;
+                            continue _fun68904
                         }
                     case 48:
                         var5 = var6;
@@ -111,16 +111,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var5 = var2 == var4;
                         var3 = undefined;
                         if (var5) {
-                            _fun68898_ip = 70;
-                            continue _fun68898
+                            _fun68904_ip = 70;
+                            continue _fun68904
                         }
                     case 64:
                         var3 = var4.animated;
                     case 70:
                         var2 = var2 == var3;
                         if (var2) {
-                            _fun68898_ip = 80;
-                            continue _fun68898
+                            _fun68904_ip = 80;
+                            continue _fun68904
                         }
                     case 77:
                         var2 = var3;
@@ -135,14 +135,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             }
                         });
                         var8 = function(arg0) { // Environment: var1
-                            _fun68899: for (var _fun68899_ip = 0;;) switch (_fun68899_ip) {
+                            _fun68905: for (var _fun68905_ip = 0;;) switch (_fun68905_ip) {
                                 case 0:
                                     var1 = arg0;
                                     var _closure5_slot0 = var1;
                                     var2 = _closure1_slot3;
                                     if (var2) {
-                                        _fun68899_ip = 116;
-                                        continue _fun68899
+                                        _fun68905_ip = 116;
+                                        continue _fun68905
                                     }
                                 case 19:
                                     var3 = _closure1_slot0;
@@ -172,8 +172,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var2 = _closure4_slot0;
                                     var0 = _closure4_slot1;
                                     var0 = var3.bind(var4)(var2, var0);
-                                    _fun68899_ip = 122;
-                                    continue _fun68899;
+                                    _fun68905_ip = 122;
+                                    continue _fun68905;
                                 case 116:
                                     var0 = undefined;
                                     var0 = var1.bind(var0)();

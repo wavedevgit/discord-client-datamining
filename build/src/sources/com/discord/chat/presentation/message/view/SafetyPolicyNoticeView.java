@@ -112,7 +112,7 @@ public final class SafetyPolicyNoticeView extends ConstraintLayout {
         ViewClippingUtilsKt.clipToRoundedRectangle(root, SizeUtilsKt.getDpToPx(8));
         SimpleDraweeView simpleDraweeView = inflate.icon;
         Intrinsics.checkNotNull(simpleDraweeView);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.WarningTriangle);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.WarningIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getIconFeedbackCritical()));
     }
 }

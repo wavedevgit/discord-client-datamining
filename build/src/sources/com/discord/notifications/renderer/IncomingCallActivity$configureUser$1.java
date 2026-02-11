@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.discord.chat.presentation.message.view.MediaImageViewKt;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.primitives.GuildId;
@@ -24,8 +25,8 @@ import ys.g0;
 import ys.i;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
-@e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureUser$1", f = "IncomingCallActivity.kt", l = {144}, m = "invokeSuspend")
-@SourceDebugExtension({"SMAP\nIncomingCallActivity.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IncomingCallActivity.kt\ncom/discord/notifications/renderer/IncomingCallActivity$configureUser$1\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,274:1\n1#2:275\n*E\n"})
+@e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureUser$1", f = "IncomingCallActivity.kt", l = {145}, m = "invokeSuspend")
+@SourceDebugExtension({"SMAP\nIncomingCallActivity.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IncomingCallActivity.kt\ncom/discord/notifications/renderer/IncomingCallActivity$configureUser$1\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,275:1\n1#2:276\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class IncomingCallActivity$configureUser$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     private /* synthetic */ Object L$0;
@@ -34,7 +35,7 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "Landroid/graphics/Bitmap;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
-    @e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureUser$1$1", f = "IncomingCallActivity.kt", l = {145}, m = "invokeSuspend")
+    @e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureUser$1$1", f = "IncomingCallActivity.kt", l = {MediaImageViewKt.OBSCURED_IMAGE_MIN_WIDTH}, m = "invokeSuspend")
     /* renamed from: com.discord.notifications.renderer.IncomingCallActivity$configureUser$1$1  reason: invalid class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Bitmap>, Object> {

@@ -46,14 +46,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/applications/message_embed/native/utils/nativeAppMessageEmbedUtil.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun89798: for (var _fun89798_ip = 0;;) switch (_fun89798_ip) {
+        _fun89770: for (var _fun89770_ip = 0;;) switch (_fun89770_ip) {
             case 0:
                 var4 = arg0;
                 var0 = _closure1_slot3;
                 var1 = null;
                 if (!(var1 != var4)) {
-                    _fun89798_ip = 211;
-                    continue _fun89798
+                    _fun89770_ip = 211;
+                    continue _fun89770
                 }
             case 19:
                 var5 = _closure1_slot0;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot0;
                 var5 = _closure1_slot2;
                 if (var7) {
-                    _fun89798_ip = 85;
-                    continue _fun89798
+                    _fun89770_ip = 85;
+                    continue _fun89770
                 }
             case 63:
                 var1 = var5[var1];
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = '#000000';
                 var4 = var9 === var1;
                 if (!var4) {
-                    _fun89798_ip = 135;
-                    continue _fun89798
+                    _fun89770_ip = 135;
+                    continue _fun89770
                 }
             case 131:
                 var4 = var5 === var1;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = false;
                 var1 = var0;
                 if (!(var3 === var4)) {
-                    _fun89798_ip = 209;
-                    continue _fun89798
+                    _fun89770_ip = 209;
+                    continue _fun89770
                 }
             case 144:
                 var4 = _closure1_slot0;
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAppGradientColors = var3;
     var1 = function arg0, arg1, arg2() {
-        _fun89799: for (var _fun89799_ip = 0;;) switch (_fun89799_ip) {
+        _fun89771: for (var _fun89771_ip = 0;;) switch (_fun89771_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 != var1;
                 if (!var2) {
-                    _fun89799_ip = 79;
-                    continue _fun89799
+                    _fun89771_ip = 79;
+                    continue _fun89771
                 }
             case 76:
                 var0 = var1;

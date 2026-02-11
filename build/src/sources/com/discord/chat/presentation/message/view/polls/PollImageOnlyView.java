@@ -122,7 +122,7 @@ public final class PollImageOnlyView extends BasePollWithRecyclerView implements
                 } else {
                     str = null;
                 }
-                SetOptionalImageUrlKt.setOptionalImageUrl$default(simpleDraweeView, str, null, null, null, 14, null);
+                SetOptionalImageUrlKt.setOptionalImageUrl$default(simpleDraweeView, str, null, null, null, null, null, 62, null);
                 SimpleDraweeView simpleDraweeView2 = getBinding().selectedIcon;
                 Intrinsics.checkNotNull(simpleDraweeView2);
                 String selectedIcon = accessory.getResources().getSelectedIcon();

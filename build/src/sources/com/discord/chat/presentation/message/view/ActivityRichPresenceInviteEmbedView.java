@@ -414,7 +414,7 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
         if (!z12 && z13) {
             SimpleDraweeView activityIcon = this.binding.activityIcon;
             Intrinsics.checkNotNullExpressionValue(activityIcon, "activityIcon");
-            ReactAssetUtilsKt.setReactAsset(activityIcon, ReactAsset.SpotifyBrandNeutral);
+            ReactAssetUtilsKt.setReactAsset(activityIcon, ReactAsset.SpotifyNeutralIcon);
             SimpleDraweeView activityIcon2 = this.binding.activityIcon;
             Intrinsics.checkNotNullExpressionValue(activityIcon2, "activityIcon");
             activityIcon2.setVisibility(0);
@@ -441,11 +441,11 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
             if (z13) {
                 SimpleDraweeView subtitleIcon = this.binding.subtitleIcon;
                 Intrinsics.checkNotNullExpressionValue(subtitleIcon, "subtitleIcon");
-                ReactAssetUtilsKt.setReactAsset(subtitleIcon, ReactAsset.Music);
+                ReactAssetUtilsKt.setReactAsset(subtitleIcon, ReactAsset.MusicIcon);
             } else {
                 SimpleDraweeView subtitleIcon2 = this.binding.subtitleIcon;
                 Intrinsics.checkNotNullExpressionValue(subtitleIcon2, "subtitleIcon");
-                ReactAssetUtilsKt.setReactAsset(subtitleIcon2, ReactAsset.GameController);
+                ReactAssetUtilsKt.setReactAsset(subtitleIcon2, ReactAsset.GameControllerIcon);
             }
             SimpleDraweeView subtitleIcon3 = this.binding.subtitleIcon;
             Intrinsics.checkNotNullExpressionValue(subtitleIcon3, "subtitleIcon");
@@ -505,7 +505,7 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
             if (list3 != null && list3.contains("xbox")) {
                 SimpleDraweeView xboxIcon = this.binding.xboxIcon;
                 Intrinsics.checkNotNullExpressionValue(xboxIcon, "xboxIcon");
-                ReactAssetUtilsKt.setReactAsset(xboxIcon, ReactAsset.XboxNeutral);
+                ReactAssetUtilsKt.setReactAsset(xboxIcon, ReactAsset.XboxNeutralIcon);
                 SimpleDraweeView xboxIcon2 = this.binding.xboxIcon;
                 Intrinsics.checkNotNullExpressionValue(xboxIcon2, "xboxIcon");
                 ColorUtilsKt.setTintColor(xboxIcon2, Integer.valueOf(whiteAlpha70));
@@ -520,7 +520,7 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
             if (list3 != null && list3.contains("playstation")) {
                 SimpleDraweeView playstationIcon = this.binding.playstationIcon;
                 Intrinsics.checkNotNullExpressionValue(playstationIcon, "playstationIcon");
-                ReactAssetUtilsKt.setReactAsset(playstationIcon, ReactAsset.PlaystationNeutral);
+                ReactAssetUtilsKt.setReactAsset(playstationIcon, ReactAsset.PlaystationNeutralIcon);
                 SimpleDraweeView playstationIcon2 = this.binding.playstationIcon;
                 Intrinsics.checkNotNullExpressionValue(playstationIcon2, "playstationIcon");
                 ColorUtilsKt.setTintColor(playstationIcon2, Integer.valueOf(whiteAlpha70));
@@ -535,7 +535,7 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
             if (list3 != null && list3.contains("desktop")) {
                 SimpleDraweeView desktopIcon = this.binding.desktopIcon;
                 Intrinsics.checkNotNullExpressionValue(desktopIcon, "desktopIcon");
-                ReactAssetUtilsKt.setReactAsset(desktopIcon, ReactAsset.Screen);
+                ReactAssetUtilsKt.setReactAsset(desktopIcon, ReactAsset.ScreenIcon);
                 SimpleDraweeView desktopIcon2 = this.binding.desktopIcon;
                 Intrinsics.checkNotNullExpressionValue(desktopIcon2, "desktopIcon");
                 ColorUtilsKt.setTintColor(desktopIcon2, Integer.valueOf(whiteAlpha70));

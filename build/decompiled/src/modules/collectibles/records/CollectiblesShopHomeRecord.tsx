@@ -61,21 +61,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 9;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.RewardHeroBlockRecord;
+    var3 = var3.MarvelRivalsPromotionalBannerBlockRecord;
     var _closure1_slot11 = var3;
     var3 = 10;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.ShelfBlockRecord;
+    var3 = var3.RewardHeroBlockRecord;
     var _closure1_slot12 = var3;
     var3 = 11;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.WideBannerBlockRecord;
+    var3 = var3.ShelfBlockRecord;
     var _closure1_slot13 = var3;
+    var3 = 12;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.WideBannerBlockRecord;
+    var _closure1_slot14 = var3;
     var1 = function() { // Environment: var1
         var4 = function arg0() {
-            _fun42620: for (var _fun42620_ip = 0;;) switch (_fun42620_ip) {
+            _fun42609: for (var _fun42609_ip = 0;;) switch (_fun42609_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = this;
@@ -86,21 +91,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var1.shop_blocks;
                     var5 = var6.map;
                     var4 = function(arg0) { // Environment: var3
-                        _fun42621: for (var _fun42621_ip = 0;;) switch (_fun42621_ip) {
+                        _fun42610: for (var _fun42610_ip = 0;;) switch (_fun42610_ip) {
                             case 0:
                                 var2 = arg0;
                                 var4 = var2.type;
                                 var5 = _closure1_slot0;
                                 var1 = _closure1_slot1;
-                                var6 = 12;
+                                var6 = 13;
                                 var3 = var1[var6];
                                 var1 = undefined;
                                 var3 = var5.bind(var1)(var3);
                                 var3 = var3.ShopBlockType;
                                 var3 = var3.HERO;
                                 if (!(var3 !== var4)) {
-                                    _fun42621_ip = 416;
-                                    continue _fun42621
+                                    _fun42610_ip = 469;
+                                    continue _fun42610
                                 }
                             case 52:
                                 var5 = _closure1_slot0;
@@ -110,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.ShopBlockType;
                                 var3 = var3.FEATURED;
                                 if (!(var3 !== var4)) {
-                                    _fun42621_ip = 399;
-                                    continue _fun42621
+                                    _fun42610_ip = 452;
+                                    continue _fun42610
                                 }
                             case 88:
                                 var5 = _closure1_slot0;
@@ -121,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.ShopBlockType;
                                 var3 = var3.FEED;
                                 if (!(var3 !== var4)) {
-                                    _fun42621_ip = 382;
-                                    continue _fun42621
+                                    _fun42610_ip = 435;
+                                    continue _fun42610
                                 }
                             case 124:
                                 var5 = _closure1_slot0;
@@ -132,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.ShopBlockType;
                                 var3 = var3.WIDE_BANNER;
                                 if (!(var3 !== var4)) {
-                                    _fun42621_ip = 365;
-                                    continue _fun42621
+                                    _fun42610_ip = 418;
+                                    continue _fun42610
                                 }
                             case 160:
                                 var5 = _closure1_slot0;
@@ -143,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.ShopBlockType;
                                 var3 = var3.SHELF;
                                 if (!(var3 !== var4)) {
-                                    _fun42621_ip = 348;
-                                    continue _fun42621
+                                    _fun42610_ip = 401;
+                                    continue _fun42610
                                 }
                             case 196:
                                 var5 = _closure1_slot0;
@@ -154,10 +159,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.ShopBlockType;
                                 var3 = var3.COUNTDOWN_TIMER;
                                 if (!(var3 !== var4)) {
-                                    _fun42621_ip = 331;
-                                    continue _fun42621
+                                    _fun42610_ip = 384;
+                                    continue _fun42610
                                 }
-                            case 229:
+                            case 232:
                                 var5 = _closure1_slot0;
                                 var3 = _closure1_slot1;
                                 var3 = var3[var6];
@@ -165,10 +170,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.ShopBlockType;
                                 var3 = var3.IMMERSIVE_BANNER;
                                 if (!(var3 !== var4)) {
-                                    _fun42621_ip = 314;
-                                    continue _fun42621
+                                    _fun42610_ip = 367;
+                                    continue _fun42610
                                 }
-                            case 262:
+                            case 265:
                                 var5 = _closure1_slot0;
                                 var3 = _closure1_slot1;
                                 var3 = var3[var6];
@@ -176,47 +181,63 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.ShopBlockType;
                                 var3 = var3.REWARD_HERO;
                                 if (!(var3 !== var4)) {
-                                    _fun42621_ip = 297;
-                                    continue _fun42621
+                                    _fun42610_ip = 350;
+                                    continue _fun42610
                                 }
-                            case 295:
+                            case 298:
+                                var5 = _closure1_slot0;
+                                var3 = _closure1_slot1;
+                                var3 = var3[var6];
+                                var3 = var5.bind(var1)(var3);
+                                var3 = var3.ShopBlockType;
+                                var3 = var3.MARVEL_RIVALS_PROMOTIONAL_BANNER;
+                                if (!(var3 !== var4)) {
+                                    _fun42610_ip = 333;
+                                    continue _fun42610
+                                }
+                            case 331:
                                 return var1;
-                            case 297:
+                            case 333:
                                 var3 = _closure1_slot11;
                                 var1 = var3.fromServer;
                                 var1 = var1.bind(var3)(var2);
                                 return var1;
-                            case 314:
-                                var3 = _closure1_slot10;
-                                var1 = var3.fromServer;
-                                var1 = var1.bind(var3)(var2);
-                                return var1;
-                            case 331:
-                                var3 = _closure1_slot6;
-                                var1 = var3.fromServer;
-                                var1 = var1.bind(var3)(var2);
-                                return var1;
-                            case 348:
+                            case 350:
                                 var3 = _closure1_slot12;
                                 var1 = var3.fromServer;
                                 var1 = var1.bind(var3)(var2);
                                 return var1;
-                            case 365:
+                            case 367:
+                                var3 = _closure1_slot10;
+                                var1 = var3.fromServer;
+                                var1 = var1.bind(var3)(var2);
+                                return var1;
+                            case 384:
+                                var3 = _closure1_slot6;
+                                var1 = var3.fromServer;
+                                var1 = var1.bind(var3)(var2);
+                                return var1;
+                            case 401:
                                 var3 = _closure1_slot13;
                                 var1 = var3.fromServer;
                                 var1 = var1.bind(var3)(var2);
                                 return var1;
-                            case 382:
+                            case 418:
+                                var3 = _closure1_slot14;
+                                var1 = var3.fromServer;
+                                var1 = var1.bind(var3)(var2);
+                                return var1;
+                            case 435:
                                 var3 = _closure1_slot8;
                                 var1 = var3.fromServer;
                                 var1 = var1.bind(var3)(var2);
                                 return var1;
-                            case 399:
+                            case 452:
                                 var3 = _closure1_slot7;
                                 var1 = var3.fromServer;
                                 var1 = var1.bind(var3)(var2);
                                 return var1;
-                            case 416:
+                            case 469:
                                 var1 = _closure1_slot9;
                                 var0 = var1.fromServer;
                                 var0 = var0.bind(var1)(var2);
@@ -249,8 +270,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var1 == var5;
                     var1 = undefined;
                     if (var4) {
-                        _fun42620_ip = 133;
-                        continue _fun42620
+                        _fun42609_ip = 133;
+                        continue _fun42609
                     }
                 case 118:
                     var4 = var5.map;
@@ -295,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var1 = var1.bind(var0)();
-    var3 = 13;
+    var3 = 14;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -303,4 +324,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.CollectiblesShopHomeRecord = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4628, 4635, 4644, 4645, 4648, 4649, 4650, 4651, 4652, 4653, 3317, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4624, 4631, 4640, 4642, 4645, 4646, 4647, 4648, 4649, 4650, 4651, 4641, 2]);

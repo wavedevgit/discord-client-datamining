@@ -1,77 +1,127 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97518: for (var _fun97518_ip = 0;;) switch (_fun97518_ip) {
-        case 0:
-            var9 = require;
-            var10 = dependencyMap;
-            var1 = global;
-            var0 = var1.Function;
-            var8 = var0.prototype;
-            var5 = 0;
-            var2 = var10[var5];
-            var0 = undefined;
-            var7 = var9.bind(var0)(var2);
-            if (!var7) {
-                _fun97518_ip = 47;
-                continue _fun97518
-            }
-        case 35:
-            var1 = var1.Object;
-            var7 = var1.getOwnPropertyDescriptor;
-        case 47:
-            var1 = 1;
-            var1 = var10[var1];
-            var1 = var9.bind(var0)(var1);
-            var6 = 'name';
-            var4 = var1.bind(var0)(var8, var6);
-            var3 = var4;
-            if (!var4) {
-                _fun97518_ip = 99;
-                continue _fun97518
-            }
-        case 75:
-            var1 = function() {
-                var0 = undefined;
+    var3 = function arg0() {
+        _fun97663: for (var _fun97663_ip = 0;;) switch (_fun97663_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = 48;
+                var0 = var2 >= var0;
+                if (!var0) {
+                    _fun97663_ip = 20;
+                    continue _fun97663
+                }
+            case 13:
+                var1 = 57;
+                var0 = var2 <= var1;
+            case 20:
                 return var0;
-            };
-            var2 = var1.name;
-            var1 = 'something';
-            var3 = var1 === var2;
-        case 99:
-            var1 = var4;
-            if (!var1) {
-                _fun97518_ip = 150;
-                continue _fun97518
-            }
-        case 105:
-            var2 = var10[var5];
-            var2 = var9.bind(var0)(var2);
-            var2 = !var2;
-            if (var2) {
-                _fun97518_ip = 147;
-                continue _fun97518
-            }
-        case 120:
-            var5 = var10[var5];
-            var5 = var9.bind(var0)(var5);
-            if (!var5) {
-                _fun97518_ip = 144;
-                continue _fun97518
-            }
-        case 132:
-            var6 = var7.bind(var0)(var8, var6);
-            var5 = var6.configurable;
-        case 144:
-            var2 = var5;
-        case 147:
-            var1 = var2;
-        case 150:
-            var2 = {};
-            var2.EXISTS = var4;
-            var2.PROPER = var3;
-            var2.CONFIGURABLE = var1;
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12706, 12726]);
+        }
+    };
+    var _closure1_slot0 = var3;
+    var2 = function arg0() {
+        _fun97664: for (var _fun97664_ip = 0;;) switch (_fun97664_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = 65;
+                var0 = var3 >= var0;
+                if (!var0) {
+                    _fun97664_ip = 20;
+                    continue _fun97664
+                }
+            case 13:
+                var1 = 90;
+                var0 = var3 <= var1;
+            case 20:
+                if (var0) {
+                    _fun97664_ip = 43;
+                    continue _fun97664
+                }
+            case 23:
+                var1 = 97;
+                var1 = var3 >= var1;
+                if (!var1) {
+                    _fun97664_ip = 40;
+                    continue _fun97664
+                }
+            case 33:
+                var2 = 122;
+                var1 = var3 <= var2;
+            case 40:
+                var0 = var1;
+            case 43:
+                return var0;
+        }
+    };
+    var _closure1_slot1 = var2;
+    var1 = {};
+    var1.isASCIIDigit = var3;
+    var1.isASCIIAlpha = var2;
+    var2 = function arg0() {
+        _fun97665: for (var _fun97665_ip = 0;;) switch (_fun97665_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = _closure1_slot1;
+                var2 = undefined;
+                var0 = var0.bind(var2)(var3);
+                if (var0) {
+                    _fun97665_ip = 29;
+                    continue _fun97665
+                }
+            case 20:
+                var1 = _closure1_slot0;
+                var0 = var1.bind(var2)(var3);
+            case 29:
+                return var0;
+        }
+    };
+    var1.isASCIIAlphanumeric = var2;
+    var0 = function arg0() {
+        _fun97666: for (var _fun97666_ip = 0;;) switch (_fun97666_ip) {
+            case 0:
+                var3 = arg0;
+                var1 = _closure1_slot0;
+                var0 = undefined;
+                var0 = var1.bind(var0)(var3);
+                if (var0) {
+                    _fun97666_ip = 40;
+                    continue _fun97666
+                }
+            case 20:
+                var1 = 65;
+                var1 = var3 >= var1;
+                if (!var1) {
+                    _fun97666_ip = 37;
+                    continue _fun97666
+                }
+            case 30:
+                var2 = 70;
+                var1 = var3 <= var2;
+            case 37:
+                var0 = var1;
+            case 40:
+                if (var0) {
+                    _fun97666_ip = 63;
+                    continue _fun97666
+                }
+            case 43:
+                var1 = 97;
+                var1 = var3 >= var1;
+                if (!var1) {
+                    _fun97666_ip = 60;
+                    continue _fun97666
+                }
+            case 53:
+                var2 = 102;
+                var1 = var3 <= var2;
+            case 60:
+                var0 = var1;
+            case 63:
+                return var0;
+        }
+    };
+    var1.isASCIIHex = var0;
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/PurchaseNotificationSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56482: for (var _fun56482_ip = 0;;) switch (_fun56482_ip) {
+        _fun56487: for (var _fun56487_ip = 0;;) switch (_fun56487_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.message;
@@ -32,8 +32,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var5 = undefined;
                 if (var2) {
-                    _fun56482_ip = 32;
-                    continue _fun56482
+                    _fun56487_ip = 32;
+                    continue _fun56487
                 }
             case 27:
                 var5 = var1.type;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.GUILD_PRODUCT;
                 var0 = null;
                 if (!(var5 === var2)) {
-                    _fun56482_ip = 103;
-                    continue _fun56482
+                    _fun56487_ip = 103;
+                    continue _fun56487
                 }
             case 72:
                 var2 = _closure1_slot0;

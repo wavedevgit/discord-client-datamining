@@ -4,72 +4,130 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0, arg1() {
-        _fun29166: for (var _fun29166_ip = 0;;) switch (_fun29166_ip) {
+    var1 = function arg0, arg1, arg2() {
+        _fun29169: for (var _fun29169_ip = 0;;) switch (_fun29169_ip) {
             case 0:
-                var1 = arg0;
-                var0 = arg1;
-                var5 = _closure1_slot0;
+                var7 = arg0;
+                var6 = arg1;
+                var3 = arg2;
+                var1 = _closure1_slot0;
                 var4 = _closure1_slot1;
-                var3 = 0;
-                var4 = var4[var3];
-                var3 = undefined;
-                var4 = var5.bind(var3)(var4);
-                var4 = var4.bind(var3)(var1);
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                if (var4) {
-                    _fun29166_ip = 86;
-                    continue _fun29166
+                var0 = 0;
+                var0 = var4[var0];
+                var5 = undefined;
+                var0 = var1.bind(var5)(var0);
+                var0 = var0.bind(var5)(var7);
+                var1 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                if (var0) {
+                    _fun29169_ip = 89;
+                    continue _fun29169
                 }
-            case 46:
+            case 49:
+                var0 = 1;
+                var0 = var4[var0];
+                var9 = var1.bind(var5)(var0);
+                var0 = var9.prototype;
+                var8 = Object.create(var0, {
+                    constructor: {
+                        value: var9
+                    }
+                });
+                var15 = 'Assertion failed: Type(O) is not Object';
+                var16 = var8;
+                var0 = new var16[var9](var15, var14);
+                var0 = var0 instanceof Object ? var0 : var8;
+                throw var0;
+            case 89:
+                var0 = 2;
+                var0 = var4[var0];
+                var0 = var1.bind(var5)(var0);
+                var4 = var0.bind(var5)(var6);
+                var1 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                if (var4) {
+                    _fun29169_ip = 157;
+                    continue _fun29169
+                }
+            case 117:
                 var4 = 1;
-                var4 = var6[var4];
-                var8 = var5.bind(var3)(var4);
-                var4 = var8.prototype;
-                var7 = Object.create(var4, {
+                var4 = var0[var4];
+                var9 = var1.bind(var5)(var4);
+                var4 = var9.prototype;
+                var8 = Object.create(var4, {
                     constructor: {
-                        value: var8
+                        value: var9
                     }
                 });
-                var9 = 'Assertion failed: Type(O) is not Object';
-                var10 = var7;
-                var4 = new var10[var8](var9, var8);
-                var4 = var4 instanceof Object ? var4 : var7;
+                var15 = 'Assertion failed: P is not a Property Key';
+                var16 = var8;
+                var4 = new var16[var9](var15, var14);
+                var4 = var4 instanceof Object ? var4 : var8;
                 throw var4;
-            case 86:
-                var4 = 2;
-                var4 = var6[var4];
-                var4 = var5.bind(var3)(var4);
-                var4 = var4.bind(var3)(var0);
-                if (var4) {
-                    _fun29166_ip = 175;
-                    continue _fun29166
+            case 157:
+                var4 = 3;
+                var0 = var0[var4];
+                var0 = var1.bind(var5)(var0);
+                var0 = var0.bind(var5)(var3);
+                var1 = var3;
+                if (var0) {
+                    _fun29169_ip = 205;
+                    continue _fun29169
                 }
-            case 106:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var2 = 1;
-                var2 = var6[var2];
-                var4 = var5.bind(var3)(var2);
-                var2 = 3;
-                var2 = var6[var2];
-                var2 = var5.bind(var3)(var2);
-                var3 = var2.bind(var3)(var0);
-                var2 = 'Assertion failed: P is not a Property Key, got ';
-                var9 = var2 + var3;
-                var3 = var4.prototype;
-                var3 = Object.create(var3, {
+            case 180:
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var0 = 4;
+                var0 = var9[var0];
+                var0 = var8.bind(var5)(var0);
+                var1 = var0.bind(var5)(var3);
+            case 205:
+                var3 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var0 = var0[var4];
+                var0 = var3.bind(var5)(var0);
+                var0 = var0.bind(var5)(var1);
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var4 = var1;
+                if (var0) {
+                    _fun29169_ip = 281;
+                    continue _fun29169
+                }
+            case 241:
+                var0 = 1;
+                var0 = var9[var0];
+                var2 = var8.bind(var5)(var0);
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
                     constructor: {
-                        value: var4
+                        value: var2
                     }
                 });
-                var10 = var3;
-                var2 = new var10[var4](var9, var8);
-                var2 = var2 instanceof Object ? var2 : var3;
-                throw var2;
-            case 175:
-                var0 = var1[var0];
+                var15 = 'Assertion failed: Desc is not a valid Property Descriptor';
+                var16 = var1;
+                var0 = new var16[var2](var15, var14);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+            case 281:
+                var0 = 5;
+                var0 = var9[var0];
+                var3 = var8.bind(var5)(var0);
+                var0 = 6;
+                var0 = var9[var0];
+                var2 = var8.bind(var5)(var0);
+                var0 = 7;
+                var0 = var9[var0];
+                var14 = var8.bind(var5)(var0);
+                var0 = 8;
+                var0 = var9[var0];
+                var13 = var8.bind(var5)(var0);
+                var16 = undefined;
+                var15 = var2;
+                var12 = var7;
+                var11 = var6;
+                var10 = var4;
+                var0 = var16[var3](var15, var14, var13, var12, var11, var10, var9);
                 return var0;
         }
     };
@@ -77,4 +135,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3369, 518, 3416, 552]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3365, 518, 3412, 3416, 3417, 3419, 3420, 3421, 3422]);

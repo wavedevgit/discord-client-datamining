@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var6);
     var7 = var8.experimental_createToken;
     var6 = function(arg0) { // Environment: var1
-        _fun56101: for (var _fun56101_ip = 0;;) switch (_fun56101_ip) {
+        _fun56106: for (var _fun56106_ip = 0;;) switch (_fun56106_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.theme;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.bind(var2)(var3);
                 var0 = 'rgba(201,210,240,0.6)';
                 if (!var2) {
-                    _fun56101_ip = 123;
-                    continue _fun56101
+                    _fun56106_ip = 123;
+                    continue _fun56106
                 }
             case 54:
                 var3 = _closure1_slot0;

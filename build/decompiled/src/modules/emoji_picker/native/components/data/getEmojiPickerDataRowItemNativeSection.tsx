@@ -22,49 +22,55 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemNativeSection.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun74547: for (var _fun74547_ip = 0;;) switch (_fun74547_ip) {
+        _fun74553: for (var _fun74553_ip = 0;;) switch (_fun74553_ip) {
             case 0:
                 var0 = arg0;
-                var5 = var0.label;
-                var4 = var0.guildId;
-                var3 = var0.emojiCount;
-                var6 = var0.emojisDisabled;
+                var6 = var0.label;
+                var5 = var0.guildId;
+                var4 = var0.emojiCount;
+                var3 = var0.emojisDisabled;
+                var7 = var0.emojisHidden;
                 var1 = var0.isSectionNitroLocked;
-                var8 = undefined;
-                if (!(var1 === var8)) {
-                    _fun74547_ip = 39;
-                    continue _fun74547
+                var9 = undefined;
+                if (!(var1 === var9)) {
+                    _fun74553_ip = 45;
+                    continue _fun74553
                 }
-            case 37:
+            case 43:
                 var1 = false;
-            case 39:
+            case 45:
                 if (var1) {
-                    _fun74547_ip = 62;
-                    continue _fun74547
+                    _fun74553_ip = 68;
+                    continue _fun74553
                 }
-            case 42:
+            case 48:
                 var0 = global;
                 var2 = var0.Array;
                 var0 = var2.from;
-                var2 = var0.bind(var2)(var6);
-                _fun74547_ip = 66;
-                continue _fun74547;
-            case 62:
-                var2 = new Array(0);
-            case 66:
+                var3 = var0.bind(var2)(var3);
+                _fun74553_ip = 72;
+                continue _fun74553;
+            case 68:
+                var3 = new Array(0);
+            case 72:
+                var0 = global;
+                var2 = var0.Array;
+                var0 = var2.from;
+                var2 = var0.bind(var2)(var7);
                 var0 = {};
-                var7 = _closure1_slot0;
-                var9 = _closure1_slot1;
-                var6 = 0;
-                var6 = var9[var6];
-                var6 = var7.bind(var8)(var6);
-                var6 = var6.EmojiPickerItemType;
-                var6 = var6.NATIVE_SECTION;
-                var0.type = var6;
-                var0.title = var5;
-                var0.guildId = var4;
-                var0.emojiCount = var3;
-                var0.emojisDisabled = var2;
+                var8 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var7 = 0;
+                var7 = var10[var7];
+                var7 = var8.bind(var9)(var7);
+                var7 = var7.EmojiPickerItemType;
+                var7 = var7.NATIVE_SECTION;
+                var0.type = var7;
+                var0.title = var6;
+                var0.guildId = var5;
+                var0.emojiCount = var4;
+                var0.emojisDisabled = var3;
+                var0.emojisHidden = var2;
                 var0.isSectionNitroLocked = var1;
                 var1 = arg1;
                 var0.hasPremiumInlineRoadblockHeader = var1;

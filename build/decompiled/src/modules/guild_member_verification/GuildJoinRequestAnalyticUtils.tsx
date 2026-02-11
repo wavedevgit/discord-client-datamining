@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackMemberApplicationAction = var3;
     var3 = function arg0() {
-        _fun55777: for (var _fun55777_ip = 0;;) switch (_fun55777_ip) {
+        _fun55778: for (var _fun55778_ip = 0;;) switch (_fun55778_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.guildId;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var2 = undefined;
                 if (var7) {
-                    _fun55777_ip = 82;
-                    continue _fun55777
+                    _fun55778_ip = 82;
+                    continue _fun55778
                 }
             case 76:
                 var2 = var4.joinedAt;

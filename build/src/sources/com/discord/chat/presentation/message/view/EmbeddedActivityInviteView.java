@@ -284,7 +284,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         SetTextSizeSpKt.setTextSizeSp(messageContentView, 12.0f);
         SimpleDraweeView simpleDraweeView = inflate.subtitleIcon;
         Intrinsics.checkNotNull(simpleDraweeView);
-        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Speaker);
+        ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.VoiceNormalIcon);
         ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()));
         TextView textView3 = inflate.noParticipantsText;
         Intrinsics.checkNotNull(textView3);

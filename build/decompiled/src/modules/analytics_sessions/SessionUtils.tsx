@@ -46,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSessionExpired = var3;
     var1 = function arg0() {
-        _fun40012: for (var _fun40012_ip = 0;;) switch (_fun40012_ip) {
+        _fun40001: for (var _fun40001_ip = 0;;) switch (_fun40001_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var1 = var0 != var3;
                 var0 = 0;
                 if (!var1) {
-                    _fun40012_ip = 29;
-                    continue _fun40012
+                    _fun40001_ip = 29;
+                    continue _fun40001
                 }
             case 14:
                 var1 = global;

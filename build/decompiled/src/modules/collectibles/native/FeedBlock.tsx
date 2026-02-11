@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/FeedBlock.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun89217: for (var _fun89217_ip = 0;;) switch (_fun89217_ip) {
+        _fun89189: for (var _fun89189_ip = 0;;) switch (_fun89189_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.feedBlock;
@@ -232,9 +232,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var17[var8];
                 var5 = var22.bind(var3)(var5);
                 var6 = var5.Text;
-                var5 = {};
-                var19 = 'heading-lg/semibold';
-                var5.variant = var19;
+                var5 = {
+                    'variant': 'heading-lg/semibold',
+                    'accessibilityRole': 'header'
+                };
                 var21 = 15;
                 var19 = var17[var21];
                 var19 = var22.bind(var3)(var19);
@@ -251,10 +252,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var6;
                 var6 = !var11;
                 if (var11) {
-                    _fun89217_ip = 503;
-                    continue _fun89217
+                    _fun89189_ip = 505;
+                    continue _fun89189
                 }
-            case 395:
+            case 397:
                 var19 = _closure1_slot9;
                 var24 = _closure1_slot0;
                 var20 = _closure1_slot2;
@@ -279,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = 'md';
                 var15.size = var20;
                 var6 = var19.bind(var3)(var17, var15);
-            case 503:
+            case 505:
                 var5[1] = var6;
                 var4.children = var5;
                 var5 = var2.bind(var3)(var1, var4);
@@ -306,9 +307,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var17[var8];
                 var8 = var20.bind(var3)(var8);
                 var12 = var8.Text;
-                var8 = {};
-                var13 = 'text-lg/bold';
-                var8.variant = var13;
+                var8 = {
+                    'variant': 'text-lg/bold',
+                    'accessibilityRole': 'header'
+                };
                 var13 = var17[var21];
                 var13 = var20.bind(var3)(var13);
                 var22 = var13.intl;
@@ -346,19 +348,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[1] = var12;
                 var13 = _closure1_slot9;
                 if (var11) {
-                    _fun89217_ip = 885;
-                    continue _fun89217
+                    _fun89189_ip = 889;
+                    continue _fun89189
                 }
-            case 797:
+            case 801:
                 var11 = _closure1_slot4;
                 var12 = {};
                 var17 = _closure1_slot0;
                 var18 = _closure1_slot2;
                 if (var9) {
-                    _fun89217_ip = 845;
-                    continue _fun89217
+                    _fun89189_ip = 849;
+                    continue _fun89189
                 }
-            case 814:
+            case 818:
                 var9 = 22;
                 var9 = var18[var9];
                 var9 = var17.bind(var3)(var9);
@@ -366,9 +368,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var14.feedFooterImage;
                 var12.style = var9;
                 var9 = var12;
-                _fun89217_ip = 874;
-                continue _fun89217;
-            case 845:
+                _fun89189_ip = 878;
+                continue _fun89189;
+            case 849:
                 var15 = 21;
                 var15 = var18[var15];
                 var15 = var17.bind(var3)(var15);
@@ -376,16 +378,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var14.feedFooterImage;
                 var12.style = var15;
                 var9 = var12;
-            case 874:
+            case 878:
                 var9 = var13.bind(var3)(var11, var9);
-                _fun89217_ip = 1049;
-                continue _fun89217;
-            case 885:
+                _fun89189_ip = 1053;
+                continue _fun89189;
+            case 889:
                 if (var10) {
-                    _fun89217_ip = 994;
-                    continue _fun89217
+                    _fun89189_ip = 998;
+                    continue _fun89189
                 }
-            case 888:
+            case 892:
                 var11 = _closure1_slot0;
                 var17 = _closure1_slot2;
                 var10 = 19;
@@ -416,9 +418,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var15.bind(var3)(var12);
                 var10.poster = var12;
                 var10 = var13.bind(var3)(var11, var10);
-                _fun89217_ip = 1046;
-                continue _fun89217;
-            case 994:
+                _fun89189_ip = 1050;
+                continue _fun89189;
+            case 998:
                 var12 = _closure1_slot4;
                 var11 = {};
                 var15 = {};
@@ -432,9 +434,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var14.feedFooterOrbImage;
                 var11.style = var14;
                 var10 = var13.bind(var3)(var12, var11);
-            case 1046:
+            case 1050:
                 var9 = var10;
-            case 1049:
+            case 1053:
                 var8[2] = var9;
                 var5.children = var8;
                 var5 = var7.bind(var3)(var6, var5);
@@ -446,4 +448,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3198, 3284, 33, 1297, 671, 566, 3207, 11554, 11545, 4607, 5642, 4888, 1234, 4094, 11558, 11562, 8913, 11563, 11564, 11565, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3198, 3284, 33, 1297, 671, 566, 3207, 11534, 11526, 4603, 5641, 4886, 1234, 4090, 11538, 11542, 8913, 11543, 11544, 11545, 2]);

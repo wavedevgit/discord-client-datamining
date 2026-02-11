@@ -12,9 +12,9 @@ public final class R {
         public static int ic_notification_friends_24dp = 0x7f0802a5;
         public static int ic_notification_message_24dp = 0x7f0802a6;
         public static int ic_notifications_off_24dp = 0x7f0802a7;
-        public static int ic_send_white_24dp = 0x7f0802af;
-        public static int incoming_call_gradient = 0x7f080571;
-        public static int round_button = 0x7f08073a;
+        public static int ic_send_white_24dp = 0x7f0802ae;
+        public static int incoming_call_gradient = 0x7f080570;
+        public static int round_button = 0x7f080739;
 
         private drawable() {
         }

@@ -32,4 +32,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getClientHeartbeatPiggybackProperties = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3484, 4331, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3480, 4327, 2]);

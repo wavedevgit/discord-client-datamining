@@ -32,7 +32,7 @@ public final class GameIconView extends FrameLayout {
         this.binding = inflate;
         SimpleDraweeView gameControllerIcon = inflate.gameControllerIcon;
         Intrinsics.checkNotNullExpressionValue(gameControllerIcon, "gameControllerIcon");
-        ReactAssetUtilsKt.setReactAsset(gameControllerIcon, ReactAsset.GameController);
+        ReactAssetUtilsKt.setReactAsset(gameControllerIcon, ReactAsset.GameControllerIcon);
         SimpleDraweeView gameControllerIcon2 = inflate.gameControllerIcon;
         Intrinsics.checkNotNullExpressionValue(gameControllerIcon2, "gameControllerIcon");
         ColorUtilsKt.setTintColor(gameControllerIcon2, Integer.valueOf(ThemeManagerKt.getTheme().getTextMuted()));
